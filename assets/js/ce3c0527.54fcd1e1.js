@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcl_language_reference=self.webpackChunkcl_language_reference||[]).push([[5820],{2935:e=>{e.exports=JSON.parse('{"label":"hola","permalink":"/cl-language-reference/blog/tags/hola","allTagsPath":"/cl-language-reference/blog/tags","count":1,"unlisted":false}')}}]);
