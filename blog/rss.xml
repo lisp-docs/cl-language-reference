@@ -26,6 +26,7 @@
 <li>Change the <code>_category_.json</code> files to display position of chapters in sidebar correctly...</li>
 <li>Change the <code>_category_.json</code> contents to use double quotes instead of single quotes...</li>
 <li>Add search plugin</li>
+<li>"beach": "The description of each operator should probably be on a separate page, because for the language reference, more material will be added there"</li>
 </ol>
 <p>However, with that said, the project is actually ready for contributions!</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-the-project-is-structured">How The Project is Structured<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023-11-26-status#how-the-project-is-structured" class="hash-link" aria-label="Direct link to How The Project is Structured" title="Direct link to How The Project is Structured">​</a></h2>
