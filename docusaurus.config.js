@@ -80,8 +80,8 @@ const config = {
             position: 'left',
             label: 'The CL Reference',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/contribue', label: 'Contribute!', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'right'},
           {
             href: 'https://github.com/lisp-docs/cl-language-reference/',
             label: 'GitHub',
@@ -96,8 +96,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Cl Technical Reference',
                 to: '/docs/intro',
+              },
+              {
+                label: 'CL Tutorial',
+                to: 'https://lisp-docs.github.io/',
               },
             ],
           },
