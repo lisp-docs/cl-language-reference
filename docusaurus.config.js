@@ -65,11 +65,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      // image: 'img/docusaurus-social-card.jpg',
+      image: 'img/1024px-Lisp_logo.svg.png',
       navbar: {
-        title: 'My Site',
+        title: 'CL Technical Reference ',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'LISP Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -77,9 +78,10 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'The CL Reference',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/contribue', label: 'Contribute!', position: 'left'},
           {
             href: 'https://github.com/lisp-docs/cl-language-reference/',
             label: 'GitHub',

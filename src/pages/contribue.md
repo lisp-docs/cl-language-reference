@@ -1,0 +1,17 @@
+# Contribute to the CL Technical Reference
+
+## How To Contribute
+
+Please just do a regular contribution on our [GitHub Repository](https://github.com/lisp-docs/cl-language-reference). 
+
+## Contribution Requirements
+
+If there's an error in the dpANSr text that you are fixing, then change it right away in the relevant file.
+
+For adding examples and explanations, please create a separate file marked section-number-examples.md or section-number-explanations.md and add an import in the appropiate section. The purpose of this is to keep separate the community added explanations and examples from the original specification. That way it will be easier to modify and add things in the future without having to worry about modifying the original spec. It will also be clear what is the original vs. the new content.
+
+## What To Contribute
+
+1. Examples of any aspect mentioned in the reference
+2. Explanations of any aspect of the reference.
+3. Whatever you think will make this reference better!
