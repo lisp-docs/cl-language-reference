@@ -148,11 +148,11 @@ If *non-terminating-p* is *true*, the *dispatching macro character* is made a *n
 
 **Examples:** 
 
-(get-macro-character #\\{) *→* NIL, *false* 
+(get-macro-character #\\&#123;) *→* NIL, *false* 
 
-(make-dispatch-macro-character #\\{) *→* T 
+(make-dispatch-macro-character #\\&#123;) *→* T 
 
-(not (get-macro-character #\\{)) *→ false* 
+(not (get-macro-character #\\&#123;)) *→ false* 
 
 The *readtable* is altered. 
 
@@ -218,13 +218,13 @@ Both functions return the *object* read from *input-stream*. *Eof-value* is retu
 
 (defun skip-then-read-char (s c n) 
 
-(if (char= c #\\{) (read s t nil t) (read-preserving-whitespace s)) 
+(if (char= c #\\&#123;) (read s t nil t) (read-preserving-whitespace s)) 
 
 (read-char-no-hang s)) *→* SKIP-THEN-READ-CHAR 
 
 (let ((\*readtable\* (copy-readtable nil))) 
 
-(set-dispatch-macro-character #\# #\\{ #’skip-then-read-char) 
+(set-dispatch-macro-character #\# #\\&#123; #’skip-then-read-char) 
 
 (set-dispatch-macro-character #\# #\\} #’skip-then-read-char) 
 
@@ -340,7 +340,7 @@ This can be done by specifying a macro-character definition for #\{ that does tw
 
 (read-delimited-list #\\} stream t))) *→* |#\{-reader| 
 
-(set-dispatch-macro-character #\# #\\{ #’|#\{-reader|) *→* T 
+(set-dispatch-macro-character #\# #\\&#123; #’|#\{-reader|) *→* T 
 
 (set-macro-character #\\} (get-macro-character #\) **nil**)) 
 
@@ -546,9 +546,9 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 
 **Examples:** 
 
-(get-dispatch-macro-character #\# #\\{) *→* NIL 
+(get-dispatch-macro-character #\# #\\&#123;) *→* NIL 
 
-(set-dispatch-macro-character #\# #\\{ ;dispatch on #\{ 
+(set-dispatch-macro-character #\# #\\&#123; ;dispatch on #\{ 
 
 #’(lambda(s c n) 
 
@@ -644,7 +644,7 @@ It is necessary to use **make-dispatch-macro-character** to set up the dispatch 
 
 **Examples:** 
 
-(get-macro-character #\\{) *→* NIL, *false* 
+(get-macro-character #\\&#123;) *→* NIL, *false* 
 
 (not (get-macro-character #\;)) *→ false* 
 
