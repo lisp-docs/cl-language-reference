@@ -1,0 +1,1177 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-chap-6/g-b-the-loop-facility" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.0">
+<title data-rh="true">6.1 The LOOP Facility | Common Lisp (New) Language Reference</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://lisp-docs.github.io/cl-language-reference/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://lisp-docs.github.io/cl-language-reference/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://lisp-docs.github.io/cl-language-reference/docs/chap-6/g-b-the-loop-facility"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="6.1 The LOOP Facility | Common Lisp (New) Language Reference"><meta data-rh="true" name="description" content="6.1.1 Overview of the Loop Facility"><meta data-rh="true" property="og:description" content="6.1.1 Overview of the Loop Facility"><link data-rh="true" rel="icon" href="/cl-language-reference/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-6/g-b-the-loop-facility"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-6/g-b-the-loop-facility" hreflang="en"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-6/g-b-the-loop-facility" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/cl-language-reference/blog/rss.xml" title="Common Lisp (New) Language Reference RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/cl-language-reference/blog/atom.xml" title="Common Lisp (New) Language Reference Atom Feed"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.d3a7613c.css">
+<script src="/cl-language-reference/assets/js/runtime~main.a7e86bbf.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/main.89f4b5c9.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/cl-language-reference/"><div class="navbar__logo"><img src="/cl-language-reference/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/cl-language-reference/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">My Site</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/cl-language-reference/docs/intro">Tutorial</a><a class="navbar__item navbar__link" href="/cl-language-reference/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/intro">Tutorial Intro</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/tutorial---basics">Tutorial - Basics</a><button aria-label="Expand sidebar category &#x27;Tutorial - Basics&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/tutorial---extras">Tutorial - Extras</a><button aria-label="Expand sidebar category &#x27;Tutorial - Extras&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/chapter-3">Chapter 3</a><button aria-label="Expand sidebar category &#x27;Chapter 3&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/nil">NIL</a><button aria-label="Expand sidebar category &#x27;NIL&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/1-introduction">1. Introduction</a><button aria-label="Expand sidebar category &#x27;1. Introduction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/10-symbols">10. Symbols</a><button aria-label="Expand sidebar category &#x27;10. Symbols&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/11-packages">11. Packages</a><button aria-label="Expand sidebar category &#x27;11. Packages&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/12-numbers">12. Numbers</a><button aria-label="Expand sidebar category &#x27;12. Numbers&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/13-characters">13. Characters</a><button aria-label="Expand sidebar category &#x27;13. Characters&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/14-conses">14. Conses</a><button aria-label="Expand sidebar category &#x27;14. Conses&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/15-arrays">15. Arrays</a><button aria-label="Expand sidebar category &#x27;15. Arrays&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/16-strings">16. Strings</a><button aria-label="Expand sidebar category &#x27;16. Strings&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/17-sequences">17. Sequences</a><button aria-label="Expand sidebar category &#x27;17. Sequences&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/18-hash-tables">18. Hash Tables</a><button aria-label="Expand sidebar category &#x27;18. Hash Tables&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/19-filenames">19. Filenames</a><button aria-label="Expand sidebar category &#x27;19. Filenames&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/2-syntax">2. Syntax</a><button aria-label="Expand sidebar category &#x27;2. Syntax&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap-2">chap-2</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/20-files">20. Files</a><button aria-label="Expand sidebar category &#x27;20. Files&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/21-streams">21. Streams</a><button aria-label="Expand sidebar category &#x27;21. Streams&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/22-printer">22. Printer</a><button aria-label="Expand sidebar category &#x27;22. Printer&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/23-reader">23. Reader</a><button aria-label="Expand sidebar category &#x27;23. Reader&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/24-system-construction">24. System Construction</a><button aria-label="Expand sidebar category &#x27;24. System Construction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/25-environment">25. Environment</a><button aria-label="Expand sidebar category &#x27;25. Environment&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/26-glossary">26. Glossary</a><button aria-label="Expand sidebar category &#x27;26. Glossary&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/3-evaluation-and-compilation">3. Evaluation and Compilation</a><button aria-label="Expand sidebar category &#x27;3. Evaluation and Compilation&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap-3">chap-3</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/4-types-and-classes">4. Types and Classes</a><button aria-label="Expand sidebar category &#x27;4. Types and Classes&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/5-data-and-control-flow">5. Data and Control Flow</a><button aria-label="Expand sidebar category &#x27;5. Data and Control Flow&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/cl-language-reference/docs/category/6-iteration">6. Iteration</a><button aria-label="Collapse sidebar category &#x27;6. Iteration&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/cl-language-reference/docs/chap-6/g-b-the-loop-facility">6.1 The LOOP Facility</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cl-language-reference/docs/chap-6/intro">intro</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/7-objects">7. Objects</a><button aria-label="Expand sidebar category &#x27;7. Objects&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/8-structures">8. Structures</a><button aria-label="Expand sidebar category &#x27;8. Structures&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/9-conditions">9. Conditions</a><button aria-label="Expand sidebar category &#x27;9. Conditions&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/a-appendix">A. Appendix</a><button aria-label="Expand sidebar category &#x27;A. Appendix&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap2">chap2</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/cl-language-reference/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/cl-language-reference/docs/category/6-iteration"><span itemprop="name">6. Iteration</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">6.1 The LOOP Facility</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>6.1 The LOOP Facility</h1>
+<!-- -->
+<p><strong>6.1 The LOOP Facility</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="611-overview-of-the-loop-facility">6.1.1 Overview of the Loop Facility<a href="#611-overview-of-the-loop-facility" class="hash-link" aria-label="Direct link to 6.1.1 Overview of the Loop Facility" title="Direct link to 6.1.1 Overview of the Loop Facility">​</a></h2>
+<!-- -->
+<p><strong>6.1.1 Overview of the Loop Facility</strong></p>
+<p>The <strong>loop</strong> <em>macro</em> performs iteration.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6111-simple-vs-extended-loop">6.1.1.1 Simple vs Extended Loop<a href="#6111-simple-vs-extended-loop" class="hash-link" aria-label="Direct link to 6.1.1.1 Simple vs Extended Loop" title="Direct link to 6.1.1.1 Simple vs Extended Loop">​</a></h3>
+<!-- -->
+<p><strong>6.1.1.1 Simple vs Extended Loop</strong></p>
+<p><strong>loop</strong> <em>forms</em> are partitioned into two categories: simple <strong>loop</strong> <em>forms</em> and extended <strong>loop</strong> <em>forms</em>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61111-simple-loop">6.1.1.1.1 Simple Loop<a href="#61111-simple-loop" class="hash-link" aria-label="Direct link to 6.1.1.1.1 Simple Loop" title="Direct link to 6.1.1.1.1 Simple Loop">​</a></h4>
+<!-- -->
+<p><strong>6.1.1.1.1 Simple Loop</strong></p>
+<p>A simple <strong>loop</strong> <em>form</em> is one that has a body containing only <em>compound forms</em>. Each <em>form</em> is <em>evaluated</em> in turn from left to right. When the last <em>form</em> has been <em>evaluated</em>, then the first <em>form</em> is evaluated again, and so on, in a never-ending cycle. A simple <strong>loop</strong> <em>form</em> establishes an <em>implicit block</em> named</p>
+<p><strong>nil</strong>. The execution of a simple <strong>loop</strong> can be terminated by explicitly transfering control to the <em>implicit block</em> (using <strong>return</strong> or <strong>return-from</strong>) or to some <em>exit point</em> outside of the <em>block</em> (<em>e.g.</em>, using <strong>throw</strong>, <strong>go</strong>, or <strong>return-from</strong>).</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61112-extended-loop">6.1.1.1.2 Extended Loop<a href="#61112-extended-loop" class="hash-link" aria-label="Direct link to 6.1.1.1.2 Extended Loop" title="Direct link to 6.1.1.1.2 Extended Loop">​</a></h4>
+<!-- -->
+<p><strong>6.1.1.1.2 Extended Loop</strong></p>
+<p>An extended <strong>loop</strong> <em>form</em> is one that has a body containing <em>atomic expressions</em>. When the <strong>loop</strong> <em>macro</em> processes such a <em>form</em>, it invokes a facility that is commonly called “the Loop Facility.”</p>
+<p>The Loop Facility provides standardized access to mechanisms commonly used in iterations through Loop schemas, which are introduced by <em>loop keywords</em>.</p>
+<p>The body of an extended <strong>loop</strong> <em>form</em> is divided into <strong>loop</strong> clauses, each which is in turn made up of <em>loop keywords</em> and <em>forms</em>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6112-loop-keywords">6.1.1.2 Loop Keywords<a href="#6112-loop-keywords" class="hash-link" aria-label="Direct link to 6.1.1.2 Loop Keywords" title="Direct link to 6.1.1.2 Loop Keywords">​</a></h3>
+<!-- -->
+<p><strong>6.1.1.2 Loop Keywords</strong></p>
+<p><em>Loop keywords</em> are not true <em>keywords</em>&lt;sub&gt;1&lt;/sub&gt;; they are special <em>symbols</em>, recognized by <em>name</em> rather than <em>object</em> identity, that are meaningful only to the <strong>loop</strong> facility. A <em>loop keyword</em> is a <em>symbol</em> but is recognized by its <em>name</em> (not its identity), regardless of the <em>packages</em> in which it is <em>accessible</em>.</p>
+<p>In general, <em>loop keywords</em> are not <em>external symbols</em> of the COMMON-LISP <em>package</em>, except in the coincidental situation that a <em>symbol</em> with the same name as a <em>loop keyword</em> was needed for some other purpose in Common Lisp. For example, there is a <em>symbol</em> in the COMMON-LISP <em>package</em> whose <em>name</em> is &quot;UNLESS&quot; but not one whose <em>name</em> is &quot;UNTIL&quot;.</p>
+<p>If no <em>loop keywords</em> are supplied in a <strong>loop</strong> <em>form</em>, the Loop Facility executes the loop body repeatedly; see Section 6.1.1.1.1 (Simple Loop).</p>
+<p>Iteration <strong>6–1</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6113-parsing-loop-clauses">6.1.1.3 Parsing Loop Clauses<a href="#6113-parsing-loop-clauses" class="hash-link" aria-label="Direct link to 6.1.1.3 Parsing Loop Clauses" title="Direct link to 6.1.1.3 Parsing Loop Clauses">​</a></h3>
+<!-- -->
+<p><strong>6.1.1.3 Parsing Loop Clauses</strong></p>
+<p>The syntactic parts of an extended <strong>loop</strong> <em>form</em> are called clauses; the rules for parsing are determined by that clause’s keyword. The following example shows a <strong>loop</strong> <em>form</em> with six clauses:</p>
+<p>(loop for i from 1 to (compute-top-value) ; first clause</p>
+<p>while (not (unacceptable i)) ; second clause</p>
+<p>collect (square i) ; third clause</p>
+<p>do (format t &quot;Working on ~D now&quot; i) ; fourth clause</p>
+<p>when (evenp i) ; fifth clause</p>
+<p>do (format t &quot;~D is a non-odd number&quot; i)</p>
+<p>finally (format t &quot;About to exit!&quot;)) ; sixth clause</p>
+<p>Each <em>loop keyword</em> introduces either a compound loop clause or a simple loop clause that can consist of a <em>loop keyword</em> followed by a single <em>form</em>. The number of <em>forms</em> in a clause is determined by the <em>loop keyword</em> that begins the clause and by the auxiliary keywords in the clause. The keywords do, doing, initially, and finally are the only loop keywords that can take any number of <em>forms</em> and group them as an <em>implicit progn</em>.</p>
+<p>Loop clauses can contain auxiliary keywords, which are sometimes called prepositions. For example, the first clause in the code above includes the prepositions from and to, which mark the value from which stepping begins and the value at which stepping ends.</p>
+<p>For detailed information about <strong>loop</strong> syntax, see the <em>macro</em> <strong>loop</strong>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6114-expanding-loop-forms">6.1.1.4 Expanding Loop Forms<a href="#6114-expanding-loop-forms" class="hash-link" aria-label="Direct link to 6.1.1.4 Expanding Loop Forms" title="Direct link to 6.1.1.4 Expanding Loop Forms">​</a></h3>
+<!-- -->
+<p><strong>6.1.1.4 Expanding Loop Forms</strong></p>
+<p>A <strong>loop</strong> <em>macro form</em> expands into a <em>form</em> containing one or more binding forms (that <em>establish bindings</em> of loop variables) and a <strong>block</strong> and a <strong>tagbody</strong> (that express a looping control structure). The variables established in <strong>loop</strong> are bound as if by <strong>let</strong> or <strong>lambda</strong>.</p>
+<p>Implementations can interleave the setting of initial values with the <em>bindings</em>. However, the assignment of the initial values is always calculated in the order specified by the user. A variable is thus sometimes bound to a meaningless value of the correct <em>type</em>, and then later in the prologue it is set to the true initial value by using <strong>setq</strong>. One implication of this interleaving is that it is <em>implementation-dependent</em> whether the <em>lexical environment</em> in which the initial value <em>forms</em> (variously called the <em>form1</em>, <em>form2</em>, <em>form3</em>, <em>step-fun</em>, <em>vector</em>, <em>hash-table</em>, and <em>package</em>) in any <em>for-as-subclause</em>, except <em>for-as-equals-then</em>, are <em>evaluated</em> includes only the loop variables preceding that <em>form</em> or includes more or all of the loop variables; the <em>form1</em> and <em>form2</em> in a <em>for-as-equals-then</em> form includes the <em>lexical environment</em> of all the loop variables.</p>
+<p>After the <em>form</em> is expanded, it consists of three basic parts in the <strong>tagbody</strong>: the loop prologue, the loop body, and the loop epilogue.</p>
+<p><strong>Loop prologue</strong></p>
+<p>The loop prologue contains <em>forms</em> that are executed before iteration begins, such as any automatic variable initializations prescribed by the <em>variable</em> clauses, along with any</p>
+<p>initially clauses in the order they appear in the source.</p>
+<p><strong>Loop body</strong></p>
+<p>The loop body contains those <em>forms</em> that are executed during iteration, including application-specific calculations, termination tests, and variable <em>stepping</em>&lt;sub&gt;1&lt;/sub&gt;.</p>
+<p><strong>Loop epilogue</strong></p>
+<p>The loop epilogue contains <em>forms</em> that are executed after iteration terminates, such as finally clauses, if any, along with any implicit return value from an <em>accumulation</em> clause or an <em>termination-test</em> clause.</p>
+<p>Some clauses from the source <em>form</em> contribute code only to the loop prologue; these clauses must come before other clauses that are in the main body of the <strong>loop</strong> form. Others contribute code only to the loop epilogue. All other clauses contribute to the final translated <em>form</em> in the same order given in the original source <em>form</em> of the <strong>loop</strong>.</p>
+<p>Expansion of the <strong>loop</strong> macro produces an <em>implicit block</em> named <strong>nil</strong> unless named is supplied. Thus, <strong>return-from</strong> (and sometimes <strong>return</strong>) can be used to return values from <strong>loop</strong> or to exit <strong>loop</strong>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6115-summary-of-loop-clauses">6.1.1.5 Summary of Loop Clauses<a href="#6115-summary-of-loop-clauses" class="hash-link" aria-label="Direct link to 6.1.1.5 Summary of Loop Clauses" title="Direct link to 6.1.1.5 Summary of Loop Clauses">​</a></h3>
+<!-- -->
+<p><strong>6.1.1.5 Summary of Loop Clauses</strong></p>
+<p>Loop clauses fall into one of the following categories:</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61151-summary-of-variable-initialization-and-stepping-clauses">6.1.1.5.1 Summary of Variable Initialization and Stepping Clauses<a href="#61151-summary-of-variable-initialization-and-stepping-clauses" class="hash-link" aria-label="Direct link to 6.1.1.5.1 Summary of Variable Initialization and Stepping Clauses" title="Direct link to 6.1.1.5.1 Summary of Variable Initialization and Stepping Clauses">​</a></h4>
+<!-- -->
+<p><strong>6.1.1.5.1 Summary of Variable Initialization and Stepping Clauses</strong></p>
+<p>The for and as constructs provide iteration control clauses that establish a variable to be initialized. for and as clauses can be combined with the loop keyword and to get <em>parallel</em> initialization and <em>stepping</em>&lt;sub&gt;1&lt;/sub&gt;. Otherwise, the initialization and <em>stepping</em>&lt;sub&gt;1&lt;/sub&gt; are <em>sequential</em>.</p>
+<p>The with construct is similar to a single <strong>let</strong> clause. with clauses can be combined using the <em>loop keyword</em> and to get <em>parallel</em> initialization.</p>
+<p>For more information, see Section 6.1.2 (Variable Initialization and Stepping Clauses).</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61152-summary-of-value-accumulation-clauses">6.1.1.5.2 Summary of Value Accumulation Clauses<a href="#61152-summary-of-value-accumulation-clauses" class="hash-link" aria-label="Direct link to 6.1.1.5.2 Summary of Value Accumulation Clauses" title="Direct link to 6.1.1.5.2 Summary of Value Accumulation Clauses">​</a></h4>
+<!-- -->
+<p><strong>6.1.1.5.2 Summary of Value Accumulation Clauses</strong></p>
+<p>The collect (or collecting) construct takes one <em>form</em> in its clause and adds the value of that <em>form</em> to the end of a <em>list</em> of values. By default, the <em>list</em> of values is returned when the <strong>loop</strong> finishes.</p>
+<p>The append (or appending) construct takes one <em>form</em> in its clause and appends the value of that <em>form</em> to the end of a <em>list</em> of values. By default, the <em>list</em> of values is returned when the <strong>loop</strong> finishes.</p>
+<p>The nconc (or nconcing) construct is similar to the append construct, but its <em>list</em> values are concatenated as if by the function nconc. By default, the <em>list</em> of values is returned when the <strong>loop</strong> finishes.</p>
+<p>Iteration <strong>6–3</strong></p>
+<p>The sum (or summing) construct takes one <em>form</em> in its clause that must evaluate to a <em>number</em> and accumulates the sum of all these <em>numbers</em>. By default, the cumulative sum is returned when the <strong>loop</strong> finishes.</p>
+<p>The count (or counting) construct takes one <em>form</em> in its clause and counts the number of times that the <em>form</em> evaluates to <em>true</em>. By default, the count is returned when the <strong>loop</strong> finishes.</p>
+<p>The minimize (or minimizing) construct takes one <em>form</em> in its clause and determines the minimum value obtained by evaluating that <em>form</em>. By default, the minimum value is returned when the <strong>loop</strong> finishes.</p>
+<p>The maximize (or maximizing) construct takes one <em>form</em> in its clause and determines the maximum value obtained by evaluating that <em>form</em>. By default, the maximum value is returned when the <strong>loop</strong> finishes.</p>
+<p>For more information, see Section 6.1.3 (Value Accumulation Clauses).</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61153-summary-of-termination-test-clauses">6.1.1.5.3 Summary of Termination Test Clauses<a href="#61153-summary-of-termination-test-clauses" class="hash-link" aria-label="Direct link to 6.1.1.5.3 Summary of Termination Test Clauses" title="Direct link to 6.1.1.5.3 Summary of Termination Test Clauses">​</a></h4>
+<!-- -->
+<p><strong>6.1.1.5.3 Summary of Termination Test Clauses</strong></p>
+<p>The for and as constructs provide a termination test that is determined by the iteration control clause.</p>
+<p>The repeat construct causes termination after a specified number of iterations. (It uses an internal variable to keep track of the number of iterations.)</p>
+<p>The while construct takes one <em>form</em>, a <em>test</em>, and terminates the iteration if the <em>test</em> evaluates to <em>false</em>. A while clause is equivalent to the expression (if (not <em>test</em>) (loop-finish)).</p>
+<p>The until construct is the inverse of while; it terminates the iteration if the <em>test</em> evaluates to any <em>non-nil</em> value. An until clause is equivalent to the expression (if <em>test</em> (loop-finish)).</p>
+<p>The always construct takes one <em>form</em> and terminates the <strong>loop</strong> if the <em>form</em> ever evaluates to <em>false</em>; in this case, the <strong>loop</strong> <em>form</em> returns <strong>nil</strong>. Otherwise, it provides a default return value of <strong>t</strong>.</p>
+<p>The never construct takes one <em>form</em> and terminates the <strong>loop</strong> if the <em>form</em> ever evaluates to <em>true</em>; in this case, the <strong>loop</strong> <em>form</em> returns <strong>nil</strong>. Otherwise, it provides a default return value of <strong>t</strong>.</p>
+<p>The thereis construct takes one <em>form</em> and terminates the <strong>loop</strong> if the <em>form</em> ever evaluates to a <em>non-nil object</em>; in this case, the <strong>loop</strong> <em>form</em> returns that <em>object</em>. Otherwise, it provides a default return value of <strong>nil</strong>.</p>
+<p>If multiple termination test clauses are specified, the <strong>loop</strong> <em>form</em> terminates if any are satisfied. For more information, see Section 6.1.4 (Termination Test Clauses).</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61154-summary-of-unconditional-execution-clauses">6.1.1.5.4 Summary of Unconditional Execution Clauses<a href="#61154-summary-of-unconditional-execution-clauses" class="hash-link" aria-label="Direct link to 6.1.1.5.4 Summary of Unconditional Execution Clauses" title="Direct link to 6.1.1.5.4 Summary of Unconditional Execution Clauses">​</a></h4>
+<!-- -->
+<p><strong>6.1.1.5.4 Summary of Unconditional Execution Clauses</strong></p>
+<p>The do (or doing) construct evaluates all <em>forms</em> in its clause.</p>
+<p>The return construct takes one <em>form</em>. Any <em>values</em> returned by the <em>form</em> are immediately returned by the <strong>loop</strong> form. It is equivalent to the clause do (return-from <em>block-name value</em>), where <em>block-name</em> is the name specified in a named clause, or <strong>nil</strong> if there is no named clause.</p>
+<p>For more information, see Section 6.1.5 (Unconditional Execution Clauses).</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61155-summary-of-conditional-execution-clauses">6.1.1.5.5 Summary of Conditional Execution Clauses<a href="#61155-summary-of-conditional-execution-clauses" class="hash-link" aria-label="Direct link to 6.1.1.5.5 Summary of Conditional Execution Clauses" title="Direct link to 6.1.1.5.5 Summary of Conditional Execution Clauses">​</a></h4>
+<!-- -->
+<p><strong>6.1.1.5.5 Summary of Conditional Execution Clauses</strong></p>
+<p>The if and when constructs take one <em>form</em> as a test and a clause that is executed when the test <em>yields true</em>. The clause can be a value accumulation, unconditional, or another conditional clause; it can also be any combination of such clauses connected by the <strong>loop</strong> and keyword.</p>
+<p>The <strong>loop</strong> unless construct is similar to the <strong>loop</strong> when construct except that it complements the test result.</p>
+<p>The <strong>loop</strong> else construct provides an optional component of if, when, and unless clauses that is executed when an if or when test <em>yields false</em> or when an unless test <em>yields true</em>. The component is one of the clauses described under if.</p>
+<p>The <strong>loop</strong> end construct provides an optional component to mark the end of a conditional clause. For more information, see Section 6.1.6 (Conditional Execution Clauses).</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61156-summary-of-miscellaneous-clauses">6.1.1.5.6 Summary of Miscellaneous Clauses<a href="#61156-summary-of-miscellaneous-clauses" class="hash-link" aria-label="Direct link to 6.1.1.5.6 Summary of Miscellaneous Clauses" title="Direct link to 6.1.1.5.6 Summary of Miscellaneous Clauses">​</a></h4>
+<!-- -->
+<p><strong>6.1.1.5.6 Summary of Miscellaneous Clauses</strong></p>
+<p>The <strong>loop</strong> named construct gives a name for the <em>block</em> of the loop.</p>
+<p>The <strong>loop</strong> initially construct causes its <em>forms</em> to be evaluated in the loop prologue, which precedes all <strong>loop</strong> code except for initial settings supplied by the constructs with, for, or as.</p>
+<p>The <strong>loop</strong> finally construct causes its <em>forms</em> to be evaluated in the loop epilogue after normal iteration terminates.</p>
+<p>For more information, see Section 6.1.7 (Miscellaneous Clauses).</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6116-order-of-execution">6.1.1.6 Order of Execution<a href="#6116-order-of-execution" class="hash-link" aria-label="Direct link to 6.1.1.6 Order of Execution" title="Direct link to 6.1.1.6 Order of Execution">​</a></h3>
+<!-- -->
+<p><strong>6.1.1.6 Order of Execution</strong></p>
+<p>With the exceptions listed below, clauses are executed in the loop body in the order in which they appear in the source. Execution is repeated until a clause terminates the <strong>loop</strong> or until a <strong>return</strong>, <strong>go</strong>, or <strong>throw</strong> form is encountered which transfers control to a point outside of the loop. The following actions are exceptions to the linear order of execution:</p>
+<p><em>•</em> All variables are initialized first, regardless of where the establishing clauses appear in the source. The order of initialization follows the order of these clauses.</p>
+<p>Iteration <strong>6–5</strong></p>
+<p><em>•</em> The code for any initially clauses is collected into one <strong>progn</strong> in the order in which the clauses appear in the source. The collected code is executed once in the loop prologue after any implicit variable initializations.</p>
+<p><em>•</em> The code for any finally clauses is collected into one <strong>progn</strong> in the order in which the clauses appear in the source. The collected code is executed once in the loop epilogue before any implicit values from the accumulation clauses are returned. Explicit returns anywhere in the source, however, will exit the <strong>loop</strong> without executing the epilogue code.</p>
+<p><em>•</em> A with clause introduces a variable <em>binding</em> and an optional initial value. The initial values are calculated in the order in which the with clauses occur.</p>
+<p><em>•</em> Iteration control clauses implicitly perform the following actions:</p>
+<p>– initialize variables;</p>
+<p>– <em>step</em> variables, generally between each execution of the loop body;</p>
+<p>– perform termination tests, generally just before the execution of the loop body.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6117-destructuring">6.1.1.7 Destructuring<a href="#6117-destructuring" class="hash-link" aria-label="Direct link to 6.1.1.7 Destructuring" title="Direct link to 6.1.1.7 Destructuring">​</a></h3>
+<!-- -->
+<p><strong>6.1.1.7 Destructuring</strong></p>
+<p>The <em>d-type-spec</em> argument is used for destructuring. If the <em>d-type-spec</em> argument consists solely of the <em>type</em> <strong>fixnum</strong>, <strong>float</strong>, <strong>t</strong>, or <strong>nil</strong>, the of-type keyword is optional. The of-type construct is optional in these cases to provide backwards compatibility; thus, the following two expressions are the same:</p>
+<p>;;; This expression uses the old syntax for type specifiers.</p>
+<p>(loop for i fixnum upfrom 3 ...)</p>
+<p>;;; This expression uses the new syntax for type specifiers.</p>
+<p>(loop for i of-type fixnum upfrom 3 ...)</p>
+<p>;; Declare X and Y to be of type VECTOR and FIXNUM respectively.</p>
+<p>(loop for (x y) of-type (vector fixnum)</p>
+<p>in l do ...)</p>
+<p>A <em>type specifier</em> for a destructuring pattern is a <em>tree</em> of <em>type specifiers</em> with the same shape as the <em>tree</em> of <em>variable names</em>, with the following exceptions:</p>
+<p><em>•</em> When aligning the <em>trees</em>, an <em>atom</em> in the <em>tree</em> of <em>type specifiers</em> that matches a <em>cons</em> in the variable tree declares the same <em>type</em> for each variable in the subtree rooted at the <em>cons</em>.</p>
+<p><em>•</em> A <em>cons</em> in the <em>tree</em> of <em>type specifiers</em> that matches an <em>atom</em> in the <em>tree</em> of <em>variable names</em> is a <em>compound type specifer</em> .</p>
+<p>Destructuring allows <em>binding</em> of a set of variables to a corresponding set of values anywhere that a value can normally be bound to a single variable. During <strong>loop</strong> expansion, each variable in the</p>
+<p>variable list is matched with the values in the values list. If there are more variables in the variable list than there are values in the values list, the remaining variables are given a value of <strong>nil</strong>. If there are more values than variables listed, the extra values are discarded.</p>
+<p>To assign values from a list to the variables a, b, and c, the for clause could be used to bind the variable numlist to the <em>car</em> of the supplied <em>form</em>, and then another for clause could be used to bind the variables a, b, and c <em>sequentially</em>.</p>
+<p>;; Collect values by using FOR constructs.</p>
+<p>(loop for numlist in ’((1 2 4.0) (5 6 8.3) (8 9 10.4))</p>
+<p>for a of-type integer = (first numlist)</p>
+<p>and b of-type integer = (second numlist)</p>
+<p>and c of-type float = (third numlist)</p>
+<p>collect (list c b a))</p>
+<p><em>→</em> ((4.0 2 1) (8.3 6 5) (10.4 9 8))</p>
+<p>Destructuring makes this process easier by allowing the variables to be bound in each loop iteration. <em>Types</em> can be declared by using a list of <em>type-spec</em> arguments. If all the <em>types</em> are the same, a shorthand destructuring syntax can be used, as the second example illustrates.</p>
+<p>;; Destructuring simplifies the process.</p>
+<p>(loop for (a b c) of-type (integer integer float) in</p>
+<p>’((1 2 4.0) (5 6 8.3) (8 9 10.4))</p>
+<p>collect (list c b a))</p>
+<p><em>→</em> ((4.0 2 1) (8.3 6 5) (10.4 9 8))</p>
+<p>;; If all the types are the same, this way is even simpler.</p>
+<p>(loop for (a b c) of-type float in</p>
+<p>’((1.0 2.0 4.0) (5.0 6.0 8.3) (8.0 9.0 10.4))</p>
+<p>collect (list c b a))</p>
+<p><em>→</em> ((4.0 2.0 1.0) (8.3 6.0 5.0) (10.4 9.0 8.0))</p>
+<p>If destructuring is used to declare or initialize a number of groups of variables into <em>types</em>, the <em>loop keyword</em> and can be used to simplify the process further. ;; Initialize and declare variables in parallel by using the AND construct.</p>
+<p>(loop with (a b) of-type float = ’(1.0 2.0)</p>
+<p>and (c d) of-type integer = ’(3 4)</p>
+<p>and (e f)</p>
+<p>return (list a b c d e f))</p>
+<p><em>→</em> (1.0 2.0 3 4 NIL NIL)</p>
+<p>If <strong>nil</strong> is used in a destructuring list, no variable is provided for its place.</p>
+<p>(loop for (a nil b) = ’(1 2 3)</p>
+<p>do (return (list a b)))</p>
+<p><em>→</em> (1 3)</p>
+<p>Iteration <strong>6–7</strong></p>
+<p>Note that <em>dotted lists</em> can specify destructuring.</p>
+<p>(loop for (x . y) = ’(1 . 2)</p>
+<p>do (return y))</p>
+<p><em>→</em> 2</p>
+<p>(loop for ((a . b) (c . d)) of-type ((float . float) (integer . integer)) in</p>
+<p>’(((1.2 . 2.4) (3 . 4)) ((3.4 . 4.6) (5 . 6)))</p>
+<p>collect (list a b c d))</p>
+<p><em>→</em> ((1.2 2.4 3 4) (3.4 4.6 5 6))</p>
+<p>An error of <em>type</em> <strong>program-error</strong> is signaled (at macro expansion time) if the same variable is bound twice in any variable-binding clause of a single <strong>loop</strong> expression. Such variables include local variables, iteration control variables, and variables found by destructuring.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6118-restrictions-on-side">6.1.1.8 Restrictions on Side<a href="#6118-restrictions-on-side" class="hash-link" aria-label="Direct link to 6.1.1.8 Restrictions on Side" title="Direct link to 6.1.1.8 Restrictions on Side">​</a></h3>
+<!-- -->
+<p><strong>6.1.1.8 Restrictions on Side-Effects</strong></p>
+<p>See Section 3.6 (Traversal Rules and Side Effects).</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="612-variable-initialization-and-stepping-clauses">6.1.2 Variable Initialization and Stepping Clauses<a href="#612-variable-initialization-and-stepping-clauses" class="hash-link" aria-label="Direct link to 6.1.2 Variable Initialization and Stepping Clauses" title="Direct link to 6.1.2 Variable Initialization and Stepping Clauses">​</a></h2>
+<!-- -->
+<p><strong>6.1.2 Variable Initialization and Stepping Clauses</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6121-iteration-control">6.1.2.1 Iteration Control<a href="#6121-iteration-control" class="hash-link" aria-label="Direct link to 6.1.2.1 Iteration Control" title="Direct link to 6.1.2.1 Iteration Control">​</a></h3>
+<!-- -->
+<p><strong>6.1.2.1 Iteration Control</strong></p>
+<p>Iteration control clauses allow direction of <strong>loop</strong> iteration. The <em>loop keywords</em> for and as designate iteration control clauses. Iteration control clauses differ with respect to the specification of termination tests and to the initialization and <em>stepping</em>&lt;sub&gt;1&lt;/sub&gt; of loop variables. Iteration clauses by themselves do not cause the Loop Facility to return values, but they can be used in conjunction with value-accumulation clauses to return values.</p>
+<p>All variables are initialized in the loop prologue. A <em>variable binding</em> has <em>lexical scope</em> unless it is proclaimed <strong>special</strong>; thus, by default, the variable can be <em>accessed</em> only by <em>forms</em> that lie textually within the <strong>loop</strong>. Stepping assignments are made in the loop body before any other <em>forms</em> are evaluated in the body.</p>
+<p>The variable argument in iteration control clauses can be a destructuring list. A destructuring list is a <em>tree</em> whose <em>non-nil atoms</em> are <em>variable names</em>. See Section 6.1.1.7 (Destructuring).</p>
+<p>The iteration control clauses for, as, and repeat must precede any other loop clauses, except initially, with, and named, since they establish variable <em>bindings</em>. When iteration control clauses are used in a <strong>loop</strong>, the corresponding termination tests in the loop body are evaluated before any other loop body code is executed.</p>
+<p>If multiple iteration clauses are used to control iteration, variable initialization and <em>stepping</em>&lt;sub&gt;1&lt;/sub&gt; occur <em>sequentially</em> by default. The and construct can be used to connect two or more iteration clauses when <em>sequential binding</em> and <em>stepping</em>&lt;sub&gt;1&lt;/sub&gt; are not necessary. The iteration behavior of clauses joined by and is analogous to the behavior of the macro <strong>do</strong> with respect to <strong>do*</strong>.</p>
+<p>The for and as clauses iterate by using one or more local loop variables that are initialized to some value and that can be modified or <em>stepped</em> &lt;sub&gt;1&lt;/sub&gt; after each iteration. For these clauses, iteration terminates when a local variable reaches some supplied value or when some other loop clause terminates iteration. At each iteration, variables can be <em>stepped</em> &lt;sub&gt;1&lt;/sub&gt; by an increment or a decrement or can be assigned a new value by the evaluation of a <em>form</em>). Destructuring can be used to assign values to variables during iteration.</p>
+<p>The for and as keywords are synonyms; they can be used interchangeably. There are seven syntactic formats for these constructs. In each syntactic format, the <em>type</em> of <em>var</em> can be supplied by the optional <em>type-spec</em> argument. If <em>var</em> is a destructuring list, the <em>type</em> supplied by the <em>type-spec</em> argument must appropriately match the elements of the list. By convention, for introduces new iterations and as introduces iterations that depend on a previous iteration specification.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61211-the-for">6.1.2.1.1 The for<a href="#61211-the-for" class="hash-link" aria-label="Direct link to 6.1.2.1.1 The for" title="Direct link to 6.1.2.1.1 The for">​</a></h4>
+<!-- -->
+<p><strong>6.1.2.1.1 The for-as-arithmetic subclause</strong></p>
+<p>In the <em>for-as-arithmetic</em> subclause, the for or as construct iterates from the value supplied by <em>form1</em> to the value supplied by <em>form2</em> in increments or decrements denoted by <em>form3</em>. Each expression is evaluated only once and must evaluate to a <em>number</em> . The variable <em>var</em> is bound to the value of <em>form1</em> in the first iteration and is <em>stepped</em> &lt;sub&gt;1&lt;/sub&gt; by the value of <em>form3</em> in each succeeding iteration, or by 1 if <em>form3</em> is not provided. The following <em>loop keywords</em> serve as valid prepositions within this syntax. At least one of the prepositions must be used; and at most one from each line may be used in a single subclause.</p>
+<p>from | downfrom | upfrom</p>
+<p>to | downto | upto | below | above</p>
+<p>by</p>
+<p>The prepositional phrases in each subclause may appear in any order. For example, either “from x by y” or “by y from x” is permitted. However, because left-to-right order of evaluation is preserved, the effects will be different in the case of side effects. Consider:</p>
+<p>(let ((x 1)) (loop for i from x by (incf x) to 10 collect i))</p>
+<p><em>→</em> (1 3 5 7 9)</p>
+<p>(let ((x 1)) (loop for i by (incf x) from x to 10 collect i))</p>
+<p><em>→</em> (2 4 6 8 10)</p>
+<p>The descriptions of the prepositions follow:</p>
+<p>from</p>
+<p>The <em>loop keyword</em> from specifies the value from which <em>stepping</em>&lt;sub&gt;1&lt;/sub&gt; begins, as supplied by <em>form1</em>. <em>Stepping</em>&lt;sub&gt;1&lt;/sub&gt; is incremental by default. If decremental <em>stepping</em>&lt;sub&gt;1&lt;/sub&gt; is desired, the preposition downto or above must be used with <em>form2</em>. For incremental <em>stepping</em>&lt;sub&gt;1&lt;/sub&gt;, the default from value is 0.</p>
+<p>Iteration <strong>6–9</strong></p>
+<p>downfrom, upfrom</p>
+<p>The <em>loop keyword</em> downfrom indicates that the variable <em>var</em> is decreased in decrements supplied by <em>form3</em>; the <em>loop keyword</em> upfrom indicates that <em>var</em> is increased in increments supplied by <em>form3</em>.</p>
+<p>to</p>
+<p>The <em>loop keyword</em> to marks the end value for <em>stepping</em>&lt;sub&gt;1&lt;/sub&gt; supplied in <em>form2</em>. <em>Stepping</em>&lt;sub&gt;1&lt;/sub&gt; is incremental by default. If decremental <em>stepping</em>&lt;sub&gt;1&lt;/sub&gt; is desired, the preposition downfrom must be used with <em>form1</em>, or else the preposition downto or above should be used instead of to with <em>form2</em>.</p>
+<p>downto, upto</p>
+<p>The <em>loop keyword</em> downto specifies decremental <em>stepping</em>; the <em>loop keyword</em> upto specifies incremental <em>stepping</em>. In both cases, the amount of change on each step is specified by <em>form3</em>, and the <strong>loop</strong> terminates when the variable <em>var</em> passes the value of <em>form2</em>. Since there is no default for <em>form1</em> in decremental <em>stepping</em>&lt;sub&gt;1&lt;/sub&gt;, a <em>form1</em> value must be supplied (using from or downfrom) when downto is supplied.</p>
+<p>below, above</p>
+<p>The <em>loop keywords</em> below and above are analogous to upto and downto respectively. These keywords stop iteration just before the value of the variable <em>var</em> reaches the value supplied by <em>form2</em>; the end value of <em>form2</em> is not included. Since there is no default for <em>form1</em> in decremental <em>stepping</em>&lt;sub&gt;1&lt;/sub&gt;, a <em>form1</em> value must be supplied (using from or downfrom) when above is supplied.</p>
+<p>by</p>
+<p>The <em>loop keyword</em> by marks the increment or decrement supplied by <em>form3</em>. The value of <em>form3</em> can be any positive <em>number</em> . The default value is 1.</p>
+<p>In an iteration control clause, the for or as construct causes termination when the supplied limit is reached. That is, iteration continues until the value <em>var</em> is stepped to the exclusive or inclusive limit supplied by <em>form2</em>. The range is exclusive if <em>form3</em> increases or decreases <em>var</em> to the value of <em>form2</em> without reaching that value; the loop keywords below and above provide exclusive limits. An</p>
+<p>inclusive limit allows <em>var</em> to attain the value of <em>form2</em>; to, downto, and upto provide inclusive limits.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="612111-examples-of-for">6.1.2.1.1.1 Examples of for<a href="#612111-examples-of-for" class="hash-link" aria-label="Direct link to 6.1.2.1.1.1 Examples of for" title="Direct link to 6.1.2.1.1.1 Examples of for">​</a></h5>
+<!-- -->
+<p><strong>6.1.2.1.1.1 Examples of for-as-arithmetic subclause</strong></p>
+<p>;; Print some numbers.</p>
+<p>(loop for i from 1 to 3</p>
+<p>do (print i))</p>
+<p>▷ 1</p>
+<p>▷ 2</p>
+<p>▷ 3</p>
+<p><em>→</em> NIL</p>
+<p>;; Print every third number.</p>
+<p>(loop for i from 10 downto 1 by 3</p>
+<p>do (print i))</p>
+<p>▷ 10</p>
+<p>▷ 7</p>
+<p>▷ 4</p>
+<p>▷ 1</p>
+<p><em>→</em> NIL</p>
+<p>;; Step incrementally from the default starting value.</p>
+<p>(loop for i below 3</p>
+<p>do (print i))</p>
+<p>▷ 0</p>
+<p>▷ 1</p>
+<p>▷ 2</p>
+<p><em>→</em> NIL</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61212-the-for">6.1.2.1.2 The for<a href="#61212-the-for" class="hash-link" aria-label="Direct link to 6.1.2.1.2 The for" title="Direct link to 6.1.2.1.2 The for">​</a></h4>
+<!-- -->
+<p><strong>6.1.2.1.2 The for-as-in-list subclause</strong></p>
+<p>In the <em>for-as-in-list</em> subclause, the for or as construct iterates over the contents of a <em>list</em>. It checks for the end of the <em>list</em> as if by using <strong>endp</strong>. The variable <em>var</em> is bound to the successive elements of the <em>list</em> in <em>form1</em> before each iteration. At the end of each iteration, the function <em>step-fun</em> is applied to the <em>list</em>; the default value for <em>step-fun</em> is <strong>cdr</strong>. The <em>loop keywords</em> in and by serve as valid prepositions in this syntax. The for or as construct causes termination when the end of the <em>list</em> is reached.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="612121-examples-of-for">6.1.2.1.2.1 Examples of for<a href="#612121-examples-of-for" class="hash-link" aria-label="Direct link to 6.1.2.1.2.1 Examples of for" title="Direct link to 6.1.2.1.2.1 Examples of for">​</a></h5>
+<!-- -->
+<p><strong>6.1.2.1.2.1 Examples of for-as-in-list subclause</strong></p>
+<p>;; Print every item in a list.</p>
+<p>(loop for item in ’(1 2 3) do (print item))</p>
+<p>▷ 1</p>
+<p>▷ 2</p>
+<p>▷ 3</p>
+<p><em>→</em> NIL</p>
+<p>;; Print every other item in a list.</p>
+<p>(loop for item in ’(1 2 3 4 5) by #’cddr</p>
+<p>do (print item))</p>
+<p>▷ 1</p>
+<p>▷ 3</p>
+<p>▷ 5</p>
+<p><em>→</em> NIL</p>
+<p>Iteration <strong>6–11</strong></p>
+<p>;; Destructure a list, and sum the x values using fixnum arithmetic.</p>
+<p>(loop for (item . x) of-type (t . fixnum) in ’((A . 1) (B . 2) (C . 3))</p>
+<p>unless (eq item ’B) sum x)</p>
+<p><em>→</em> 4</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61213-the-for">6.1.2.1.3 The for<a href="#61213-the-for" class="hash-link" aria-label="Direct link to 6.1.2.1.3 The for" title="Direct link to 6.1.2.1.3 The for">​</a></h4>
+<!-- -->
+<p><strong>6.1.2.1.3 The for-as-on-list subclause</strong></p>
+<p>In the <em>for-as-on-list</em> subclause, the for or as construct iterates over a <em>list</em>. It checks for the end of the <em>list</em> as if by using <strong>atom</strong>. The variable <em>var</em> is bound to the successive tails of the <em>list</em> in <em>form1</em>. At the end of each iteration, the function <em>step-fun</em> is applied to the <em>list</em>; the default value for <em>step-fun</em> is <strong>cdr</strong>. The <em>loop keywords</em> on and by serve as valid prepositions in this syntax. The for or as construct causes termination when the end of the <em>list</em> is reached.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="612131-examples-of-for">6.1.2.1.3.1 Examples of for<a href="#612131-examples-of-for" class="hash-link" aria-label="Direct link to 6.1.2.1.3.1 Examples of for" title="Direct link to 6.1.2.1.3.1 Examples of for">​</a></h5>
+<!-- -->
+<p><strong>6.1.2.1.3.1 Examples of for-as-on-list subclause</strong></p>
+<p>;; Collect successive tails of a list.</p>
+<p>(loop for sublist on ’(a b c d)</p>
+<p>collect sublist)</p>
+<p><em>→</em> ((A B C D) (B C D) (C D) (D))</p>
+<p>;; Print a list by using destructuring with the loop keyword ON.</p>
+<p>(loop for (item) on ’(1 2 3)</p>
+<p>do (print item))</p>
+<p>▷ 1</p>
+<p>▷ 2</p>
+<p>▷ 3</p>
+<p><em>→</em> NIL</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61214-the-for">6.1.2.1.4 The for<a href="#61214-the-for" class="hash-link" aria-label="Direct link to 6.1.2.1.4 The for" title="Direct link to 6.1.2.1.4 The for">​</a></h4>
+<!-- -->
+<p><strong>6.1.2.1.4 The for-as-equals-then subclause</strong></p>
+<p>In the <em>for-as-equals-then</em> subclause the for or as construct initializes the variable <em>var</em> by setting it to the result of evaluating <em>form1</em> on the first iteration, then setting it to the result of evaluating <em>form2</em> on the second and subsequent iterations. If <em>form2</em> is omitted, the construct uses <em>form1</em> on the second and subsequent iterations. The <em>loop keywords</em> = and then serve as valid prepositions in this syntax. This construct does not provide any termination tests.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="612141-examples-of-for">6.1.2.1.4.1 Examples of for<a href="#612141-examples-of-for" class="hash-link" aria-label="Direct link to 6.1.2.1.4.1 Examples of for" title="Direct link to 6.1.2.1.4.1 Examples of for">​</a></h5>
+<!-- -->
+<p><strong>6.1.2.1.4.1 Examples of for-as-equals-then subclause</strong></p>
+<p>;; Collect some numbers.</p>
+<p>(loop for item = 1 then (+ item 10)</p>
+<p>for iteration from 1 to 5</p>
+<p>collect item)</p>
+<p><em>→</em> (1 11 21 31 41)</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61215-the-for">6.1.2.1.5 The for<a href="#61215-the-for" class="hash-link" aria-label="Direct link to 6.1.2.1.5 The for" title="Direct link to 6.1.2.1.5 The for">​</a></h4>
+<!-- -->
+<p><strong>6.1.2.1.5 The for-as-across subclause</strong></p>
+<p>In the <em>for-as-across</em> subclause the for or as construct binds the variable <em>var</em> to the value of each element in the array <em>vector</em>. The <em>loop keyword</em> across marks the array <em>vector</em>; across is used as a preposition in this syntax. Iteration stops when there are no more elements in the supplied <em>array</em></p>
+<p>that can be referenced. Some implementations might recognize a <strong>the</strong> special form in the <em>vector</em> form to produce more efficient code.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="612151-examples-of-for">6.1.2.1.5.1 Examples of for<a href="#612151-examples-of-for" class="hash-link" aria-label="Direct link to 6.1.2.1.5.1 Examples of for" title="Direct link to 6.1.2.1.5.1 Examples of for">​</a></h5>
+<!-- -->
+<p><strong>6.1.2.1.5.1 Examples of for-as-across subclause</strong></p>
+<p>(loop for char across (the simple-string (find-message channel))</p>
+<p>do (write-char char stream))</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61216-the-for">6.1.2.1.6 The for<a href="#61216-the-for" class="hash-link" aria-label="Direct link to 6.1.2.1.6 The for" title="Direct link to 6.1.2.1.6 The for">​</a></h4>
+<!-- -->
+<p><strong>6.1.2.1.6 The for-as-hash subclause</strong></p>
+<p>In the <em>for-as-hash</em> subclause the for or as construct iterates over the elements, keys, and values of a <em>hash-table</em>. In this syntax, a compound preposition is used to designate access to a <em>hash table</em>. The variable <em>var</em> takes on the value of each hash key or hash value in the supplied <em>hash-table</em>. The following <em>loop keywords</em> serve as valid prepositions within this syntax:</p>
+<p>being</p>
+<p>The keyword being introduces either the Loop schema hash-key or hash-value.</p>
+<p>each, the</p>
+<p>The <em>loop keyword</em> each follows the <em>loop keyword</em> being when hash-key or hash-value is used. The <em>loop keyword</em> the is used with hash-keys and hash-values only for ease of reading. This agreement isn’t required.</p>
+<p>hash-key, hash-keys</p>
+<p>These <em>loop keywords</em> access each key entry of the <em>hash table</em>. If the name hash-value is supplied in a using construct with one of these Loop schemas, the iteration can optionally access the keyed value. The order in which the keys are accessed is undefined; empty slots in the <em>hash table</em> are ignored.</p>
+<p>hash-value, hash-values</p>
+<p>These <em>loop keywords</em> access each value entry of a <em>hash table</em>. If the name hash-key is supplied in a using construct with one of these Loop schemas, the iteration can optionally access the key that corresponds to the value. The order in which the keys are accessed is undefined; empty slots in the <em>hash table</em> are ignored.</p>
+<p>using</p>
+<p>The <em>loop keyword</em> using introduces the optional key or the keyed value to be accessed. It allows access to the hash key if iteration is over the hash values, and the hash value if iteration is over the hash keys.</p>
+<p>Iteration <strong>6–13</strong></p>
+<p>in, of</p>
+<p>These loop prepositions introduce <em>hash-table</em>.</p>
+<p>In effect</p>
+<p>being <em>{<em>each <em>|</em> the</em>} {<em>hash-value <em>|</em> hash-values <em>|</em> hash-key <em>|</em> hash-keys</em>} {<em>in <em>|</em> of</em>}</em></p>
+<p>is a compound preposition.</p>
+<p>Iteration stops when there are no more hash keys or hash values to be referenced in the supplied <em>hash-table</em>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61217-the-for">6.1.2.1.7 The for<a href="#61217-the-for" class="hash-link" aria-label="Direct link to 6.1.2.1.7 The for" title="Direct link to 6.1.2.1.7 The for">​</a></h4>
+<!-- -->
+<p><strong>6.1.2.1.7 The for-as-package subclause</strong></p>
+<p>In the <em>for-as-package</em> subclause the for or as construct iterates over the <em>symbols</em> in a <em>package</em>. In this syntax, a compound preposition is used to designate access to a <em>package</em>. The variable <em>var</em> takes on the value of each <em>symbol</em> in the supplied <em>package</em>. The following <em>loop keywords</em> serve as valid prepositions within this syntax:</p>
+<p>being</p>
+<p>The keyword being introduces either the Loop schema symbol, present-symbol, or external-symbol.</p>
+<p>each, the</p>
+<p>The <em>loop keyword</em> each follows the <em>loop keyword</em> being when symbol, present-symbol, or external-symbol is used. The <em>loop keyword</em> the is used with symbols, present-symbols, and external-symbols only for ease of reading. This agreement isn’t required.</p>
+<p>present-symbol, present-symbols</p>
+<p>These Loop schemas iterate over the <em>symbols</em> that are <em>present</em> in a <em>package</em>. The <em>package</em> to be iterated over is supplied in the same way that <em>package</em> arguments to <strong>find-package</strong> are supplied. If the <em>package</em> for the iteration is not supplied, the <em>current package</em> is used. If a <em>package</em> that does not exist is supplied, an error of <em>type</em> <strong>package-error</strong> is signaled.</p>
+<p>symbol, symbols</p>
+<p>These Loop schemas iterate over <em>symbols</em> that are <em>accessible</em> in a given <em>package</em>. The <em>package</em> to be iterated over is supplied in the same way that <em>package</em> arguments to <strong>find-package</strong> are supplied. If the <em>package</em> for the iteration is not supplied, the <em>current package</em> is used. If a <em>package</em> that does not exist is supplied, an error of <em>type</em> <strong>package-error</strong> is signaled.</p>
+<p>external-symbol, external-symbols</p>
+<p>These Loop schemas iterate over the <em>external symbols</em> of a <em>package</em>. The <em>package</em> to be iterated over is supplied in the same way that <em>package</em> arguments to <strong>find-package</strong> are</p>
+<p>supplied. If the <em>package</em> for the iteration is not supplied, the <em>current package</em> is used. If a <em>package</em> that does not exist is supplied, an error of <em>type</em> <strong>package-error</strong> is signaled.</p>
+<p>in, of</p>
+<p>These loop prepositions introduce <em>package</em>.</p>
+<p>In effect</p>
+<p>being <em>{<em>each <em>|</em> the</em>} {<em>symbol <em>|</em> symbols <em>|</em> present-symbol <em>|</em> present-symbols <em>|</em> external-symbol <em>|</em> external-symbols</em>} {<em>in <em>|</em> of</em>}</em></p>
+<p>is a compound preposition.</p>
+<p>Iteration stops when there are no more <em>symbols</em> to be referenced in the supplied <em>package</em>.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="612171-examples-of-for">6.1.2.1.7.1 Examples of for<a href="#612171-examples-of-for" class="hash-link" aria-label="Direct link to 6.1.2.1.7.1 Examples of for" title="Direct link to 6.1.2.1.7.1 Examples of for">​</a></h5>
+<!-- -->
+<p><strong>6.1.2.1.7.1 Examples of for-as-package subclause</strong></p>
+<p>(let ((*package* (make-package &quot;TEST-PACKAGE-1&quot;)))</p>
+<p>;; For effect, intern some symbols</p>
+<p>(read-from-string &quot;(THIS IS A TEST)&quot;)</p>
+<p>(export (intern &quot;THIS&quot;))</p>
+<p>(loop for x being each present-symbol of *package*</p>
+<p>do (print x)))</p>
+<p>▷ A</p>
+<p>▷ TEST</p>
+<p>▷ THIS</p>
+<p>▷ IS</p>
+<p><em>→</em> NIL</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6122-local-variable-initializations">6.1.2.2 Local Variable Initializations<a href="#6122-local-variable-initializations" class="hash-link" aria-label="Direct link to 6.1.2.2 Local Variable Initializations" title="Direct link to 6.1.2.2 Local Variable Initializations">​</a></h3>
+<!-- -->
+<p><strong>6.1.2.2 Local Variable Initializations</strong></p>
+<p>When a <strong>loop</strong> <em>form</em> is executed, the local variables are bound and are initialized to some value. These local variables exist until <strong>loop</strong> iteration terminates, at which point they cease to exist. Implicit variables are also established by iteration control clauses and the into preposition of accumulation clauses.</p>
+<p>The with construct initializes variables that are local to a loop. The variables are initialized one time only. If the optional <em>type-spec</em> argument is supplied for the variable <em>var</em>, but there is no related expression to be evaluated, <em>var</em> is initialized to an appropriate default value for its <em>type</em>. For example, for the types <strong>t</strong>, <strong>number</strong>, and <strong>float</strong>, the default values are <strong>nil</strong>, 0, and 0.0 respectively. The consequences are undefined if a <em>type-spec</em> argument is supplied for <em>var</em> if the related expression returns a value that is not of the supplied <em>type</em>. By default, the with construct initializes variables <em>sequentially</em>; that is, one variable is assigned a value before the next expression is evaluated. However, by using the <em>loop keyword</em> and to join several with clauses, initializations can be forced to</p>
+<p>Iteration <strong>6–15</strong></p>
+<p>occur in <em>parallel</em>; that is, all of the supplied <em>forms</em> are evaluated, and the results are bound to the respective variables simultaneously.</p>
+<p><em>Sequential binding</em> is used when it is desireable for the initialization of some variables to depend on the values of previously bound variables. For example, suppose the variables a, b, and c are to be bound in sequence:</p>
+<p>(loop with a = 1</p>
+<p>with b = (+ a 2)</p>
+<p>with c = (+ b 3)</p>
+<p>return (list a b c))</p>
+<p><em>→</em> (1 3 6)</p>
+<p>The execution of the above <strong>loop</strong> is equivalent to the execution of the following code:</p>
+<p>(block nil</p>
+<p>(let* ((a 1)</p>
+<p>(b (+ a 2))</p>
+<p>(c (+ b 3)))</p>
+<p>(tagbody</p>
+<p>(next-loop (return (list a b c))</p>
+<p>(go next-loop)</p>
+<p>end-loop))))</p>
+<p>If the values of previously bound variables are not needed for the initialization of other local variables, an and clause can be used to specify that the bindings are to occur in <em>parallel</em>:</p>
+<p>(loop with a = 1</p>
+<p>and b = 2</p>
+<p>and c = 3</p>
+<p>return (list a b c))</p>
+<p><em>→</em> (1 2 3)</p>
+<p>The execution of the above loop is equivalent to the execution of the following code:</p>
+<p>(block nil</p>
+<p>(let ((a 1)</p>
+<p>(b 2)</p>
+<p>(c 3))</p>
+<p>(tagbody</p>
+<p>(next-loop (return (list a b c))</p>
+<p>(go next-loop)</p>
+<p>end-loop))))</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61221-examples-of-with-clause">6.1.2.2.1 Examples of WITH clause<a href="#61221-examples-of-with-clause" class="hash-link" aria-label="Direct link to 6.1.2.2.1 Examples of WITH clause" title="Direct link to 6.1.2.2.1 Examples of WITH clause">​</a></h4>
+<!-- -->
+<p><strong>6.1.2.2.1 Examples of WITH clause</strong></p>
+<p>;; These bindings occur in sequence.</p>
+<p>(loop with a = 1</p>
+<p>with b = (+ a 2)</p>
+<p>with c = (+ b 3)</p>
+<p>return (list a b c))</p>
+<p><em>→</em> (1 3 6)</p>
+<p>;; These bindings occur in parallel.</p>
+<p>(setq a 5 b 10)</p>
+<p><em>→</em> 10</p>
+<p>(loop with a = 1</p>
+<p>and b = (+ a 2)</p>
+<p>and c = (+ b 3)</p>
+<p>return (list a b c))</p>
+<p><em>→</em> (1 7 13)</p>
+<p>;; This example shows a shorthand way to declare local variables</p>
+<p>;; that are of different types.</p>
+<p>(loop with (a b c) of-type (float integer float)</p>
+<p>return (format nil &quot;~A ~A ~A&quot; a b c))</p>
+<p><em>→</em> &quot;0.0 0 0.0&quot;</p>
+<p>;; This example shows a shorthand way to declare local variables</p>
+<p>;; that are the same type.</p>
+<p>(loop with (a b c) of-type float</p>
+<p>return (format nil &quot;~A ~A ~A&quot; a b c))</p>
+<p><em>→</em> &quot;0.0 0.0 0.0&quot;</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="613-value-accumulation-clauses">6.1.3 Value Accumulation Clauses<a href="#613-value-accumulation-clauses" class="hash-link" aria-label="Direct link to 6.1.3 Value Accumulation Clauses" title="Direct link to 6.1.3 Value Accumulation Clauses">​</a></h2>
+<!-- -->
+<p><strong>6.1.3 Value Accumulation Clauses</strong></p>
+<p>The constructs collect, collecting, append, appending, nconc, nconcing, count, counting, maximize, maximizing, minimize, minimizing, sum, and summing, allow values to be accumulated in a <strong>loop</strong>.</p>
+<p>The constructs collect, collecting, append, appending, nconc, and nconcing, designate clauses that accumulate values in <em>lists</em> and return them. The constructs count, counting, maximize, maximizing, minimize, minimizing, sum, and summing designate clauses that accumulate and return numerical values.</p>
+<p>During each iteration, the constructs collect and collecting collect the value of the supplied <em>form</em> into a <em>list</em>. When iteration terminates, the <em>list</em> is returned. The argument <em>var</em> is set to the <em>list</em> of collected values; if <em>var</em> is supplied, the <strong>loop</strong> does not return the final <em>list</em> automatically. If <em>var</em> is not supplied, it is equivalent to supplying an internal name for <em>var</em> and returning its value in a finally clause. The <em>var</em> argument is bound as if by the construct with. No mechanism is provided for declaring the <em>type</em> of <em>var</em>; it must be of <em>type</em> <strong>list</strong>.</p>
+<p>The constructs append, appending, nconc, and nconcing are similar to collect except that the values of the supplied <em>form</em> must be <em>lists</em>.</p>
+<p>Iteration <strong>6–17</strong></p>
+<p><em>•</em> The append keyword causes its <em>list</em> values to be concatenated into a single <em>list</em>, as if they were arguments to the <em>function</em> <strong>append</strong>.</p>
+<p><em>•</em> The nconc keyword causes its <em>list</em> values to be concatenated into a single <em>list</em>, as if they were arguments to the <em>function</em> <strong>nconc</strong>.</p>
+<p>The argument <em>var</em> is set to the <em>list</em> of concatenated values; if <em>var</em> is supplied, <strong>loop</strong> does not return the final <em>list</em> automatically. The <em>var</em> argument is bound as if by the construct with. A <em>type</em> cannot be supplied for <em>var</em>; it must be of <em>type</em> <strong>list</strong>. The construct nconc destructively modifies its argument <em>lists</em>.</p>
+<p>The count construct counts the number of times that the supplied <em>form</em> returns <em>true</em>. The argument <em>var</em> accumulates the number of occurrences; if <em>var</em> is supplied, <strong>loop</strong> does not return the final count automatically. The <em>var</em> argument is bound as if by the construct with to a zero of the appropriate type. Subsequent values (including any necessary coercions) are computed as if by the function <strong>1+</strong>. If into <em>var</em> is used, a <em>type</em> can be supplied for <em>var</em> with the <em>type-spec</em> argument; the consequences are unspecified if a nonnumeric <em>type</em> is supplied. If there is no into variable, the optional <em>type-spec</em> argument applies to the internal variable that is keeping the count. The default <em>type</em> is <em>implementation-dependent</em>; but it must be a <em>supertype</em> of <em>type</em> <strong>fixnum</strong>.</p>
+<p>The maximize and minimize constructs compare the value of the supplied <em>form</em> obtained during the first iteration with values obtained in successive iterations. The maximum (for maximize) or minimum (for minimize) value encountered is determined (as if by the <em>function</em> <strong>max</strong> for maximize and as if by the <em>function</em> <strong>min</strong> for minimize) and returned. If the maximize or minimize clause is never executed, the accumulated value is unspecified. The argument <em>var</em> accumulates the maximum or minimum value; if <em>var</em> is supplied, <strong>loop</strong> does not return the maximum or minimum automatically. The <em>var</em> argument is bound as if by the construct with. If into <em>var</em> is used, a <em>type</em> can be supplied for <em>var</em> with the <em>type-spec</em> argument; the consequences are unspecified if a nonnumeric <em>type</em> is supplied. If there is no into variable, the optional <em>type-spec</em> argument applies to the internal variable that is keeping the maximum or minimum value. The default <em>type</em> is <em>implementation-dependent</em>; but it must be a <em>supertype</em> of <em>type</em> <strong>real</strong>.</p>
+<p>The sum construct forms a cumulative sum of the successive <em>primary values</em> of the supplied <em>form</em> at each iteration. The argument <em>var</em> is used to accumulate the sum; if <em>var</em> is supplied, <strong>loop</strong> does not return the final sum automatically. The <em>var</em> argument is bound as if by the construct with to a zero of the appropriate type. Subsequent values (including any necessary coercions) are computed as if by the <em>function</em> <strong>+</strong>. If into <em>var</em> is used, a <em>type</em> can be supplied for <em>var</em> with the <em>type-spec</em> argument; the consequences are unspecified if a nonnumeric <em>type</em> is supplied. If there is no into variable, the optional <em>type-spec</em> argument applies to the internal variable that is keeping the sum. The default <em>type</em> is <em>implementation-dependent</em>; but it must be a <em>supertype</em> of <em>type</em> <strong>number</strong>.</p>
+<p>If into is used, the construct does not provide a default return value; however, the variable is available for use in any finally clause.</p>
+<p>Certain kinds of accumulation clauses can be combined in a <strong>loop</strong> if their destination is the same (the result of <strong>loop</strong> or an into <em>var</em>) because they are considered to accumulate conceptually compatible quantities. In particular, any elements of following sets of accumulation clauses can be</p>
+<p>mixed with other elements of the same set for the same destination in a <strong>loop</strong> <em>form</em>: <em>•</em> collect, append, nconc</p>
+<p><em>•</em> sum, count</p>
+<p><em>•</em> maximize, minimize</p>
+<p>;; Collect every name and the kids in one list by using</p>
+<p>;; COLLECT and APPEND.</p>
+<p>(loop for name in ’(fred sue alice joe june)</p>
+<p>for kids in ’((bob ken) () () (kris sunshine) ())</p>
+<p>collect name</p>
+<p>append kids)</p>
+<p><em>→</em> (FRED BOB KEN SUE ALICE JOE KRIS SUNSHINE JUNE)</p>
+<p>Any two clauses that do not accumulate the same <em>type</em> of <em>object</em> can coexist in a <strong>loop</strong> only if each clause accumulates its values into a different <em>variable</em>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6131-examples-of-collect-clause">6.1.3.1 Examples of COLLECT clause<a href="#6131-examples-of-collect-clause" class="hash-link" aria-label="Direct link to 6.1.3.1 Examples of COLLECT clause" title="Direct link to 6.1.3.1 Examples of COLLECT clause">​</a></h3>
+<!-- -->
+<p><strong>6.1.3.1 Examples of COLLECT clause</strong></p>
+<p>;; Collect all the symbols in a list.</p>
+<p>(loop for i in ’(bird 3 4 turtle (1 . 4) horse cat)</p>
+<p>when (symbolp i) collect i)</p>
+<p><em>→</em> (BIRD TURTLE HORSE CAT)</p>
+<p>;; Collect and return odd numbers.</p>
+<p>(loop for i from 1 to 10</p>
+<p>if (oddp i) collect i)</p>
+<p><em>→</em> (1 3 5 7 9)</p>
+<p>;; Collect items into local variable, but don’t return them.</p>
+<p>(loop for i in ’(a b c d) by #’cddr</p>
+<p>collect i into my-list</p>
+<p>finally (print my-list))</p>
+<p>▷ (A C)</p>
+<p><em>→</em> NIL</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6132-examples-of-append-and-nconc-clauses">6.1.3.2 Examples of APPEND and NCONC clauses<a href="#6132-examples-of-append-and-nconc-clauses" class="hash-link" aria-label="Direct link to 6.1.3.2 Examples of APPEND and NCONC clauses" title="Direct link to 6.1.3.2 Examples of APPEND and NCONC clauses">​</a></h3>
+<!-- -->
+<p><strong>6.1.3.2 Examples of APPEND and NCONC clauses</strong></p>
+<p>;; Use APPEND to concatenate some sublists.</p>
+<p>(loop for x in ’((a) (b) ((c)))</p>
+<p>append x)</p>
+<p><em>→</em> (A B (C))</p>
+<p>Iteration <strong>6–19</strong></p>
+<p>;; NCONC some sublists together. Note that only lists made by the ;; call to LIST are modified.</p>
+<p>(loop for i upfrom 0</p>
+<p>as x in ’(a b (c))</p>
+<p>nconc (if (evenp i) (list x) nil))</p>
+<p><em>→</em> (A (C))</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6133-examples-of-count-clause">6.1.3.3 Examples of COUNT clause<a href="#6133-examples-of-count-clause" class="hash-link" aria-label="Direct link to 6.1.3.3 Examples of COUNT clause" title="Direct link to 6.1.3.3 Examples of COUNT clause">​</a></h3>
+<!-- -->
+<p><strong>6.1.3.3 Examples of COUNT clause</strong></p>
+<p>(loop for i in ’(a b nil c nil d e)</p>
+<p>count i)</p>
+<p><em>→</em> 5</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6134-examples-of-maximize-and-minimize-clauses">6.1.3.4 Examples of MAXIMIZE and MINIMIZE clauses<a href="#6134-examples-of-maximize-and-minimize-clauses" class="hash-link" aria-label="Direct link to 6.1.3.4 Examples of MAXIMIZE and MINIMIZE clauses" title="Direct link to 6.1.3.4 Examples of MAXIMIZE and MINIMIZE clauses">​</a></h3>
+<!-- -->
+<p><strong>6.1.3.4 Examples of MAXIMIZE and MINIMIZE clauses</strong></p>
+<p>(loop for i in ’(2 1 5 3 4)</p>
+<p>maximize i)</p>
+<p><em>→</em> 5</p>
+<p>(loop for i in ’(2 1 5 3 4)</p>
+<p>minimize i)</p>
+<p><em>→</em> 1</p>
+<p>;; In this example, FIXNUM applies to the internal variable that holds ;; the maximum value.</p>
+<p>(setq series ’(1.2 4.3 5.7))</p>
+<p><em>→</em> (1.2 4.3 5.7)</p>
+<p>(loop for v in series</p>
+<p>maximize (round v) of-type fixnum)</p>
+<p><em>→</em> 6</p>
+<p>;; In this example, FIXNUM applies to the variable RESULT.</p>
+<p>(loop for v of-type float in series</p>
+<p>minimize (round v) into result of-type fixnum</p>
+<p>finally (return result))</p>
+<p><em>→</em> 1</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6135-examples-of-sum-clause">6.1.3.5 Examples of SUM clause<a href="#6135-examples-of-sum-clause" class="hash-link" aria-label="Direct link to 6.1.3.5 Examples of SUM clause" title="Direct link to 6.1.3.5 Examples of SUM clause">​</a></h3>
+<!-- -->
+<p><strong>6.1.3.5 Examples of SUM clause</strong></p>
+<p>(loop for i of-type fixnum in ’(1 2 3 4 5)</p>
+<p>sum i)</p>
+<p><em>→</em> 15</p>
+<p>(setq series ’(1.2 4.3 5.7))</p>
+<p><em>→</em> (1.2 4.3 5.7)</p>
+<p>(loop for v in series</p>
+<p>sum (* 2.0 v))</p>
+<p><em>→</em> 22.4</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="614-termination-test-clauses">6.1.4 Termination Test Clauses<a href="#614-termination-test-clauses" class="hash-link" aria-label="Direct link to 6.1.4 Termination Test Clauses" title="Direct link to 6.1.4 Termination Test Clauses">​</a></h2>
+<!-- -->
+<p><strong>6.1.4 Termination Test Clauses</strong></p>
+<p>The repeat construct causes iteration to terminate after a specified number of times. The loop body executes <em>n</em> times, where <em>n</em> is the value of the expression <em>form</em>. The <em>form</em> argument is evaluated one time in the loop prologue. If the expression evaluates to 0 or to a negative <em>number</em> , the loop body is not evaluated.</p>
+<p>The constructs always, never, thereis, while, until, and the macro <strong>loop-finish</strong> allow conditional termination of iteration within a <strong>loop</strong>.</p>
+<p>The constructs always, never, and thereis provide specific values to be returned when a <strong>loop</strong> terminates. Using always, never, or thereis in a loop with value accumulation clauses that are not into causes an error of <em>type</em> <strong>program-error</strong> to be signaled (at macro expansion time). Since always, never, and thereis use the <strong>return-from</strong> <em>special operator</em> to terminate iteration, any finally clause that is supplied is not evaluated when exit occurs due to any of these constructs. In all other respects these constructs behave like the while and until constructs.</p>
+<p>The always construct takes one <em>form</em> and terminates the <strong>loop</strong> if the <em>form</em> ever evaluates to <strong>nil</strong>; in this case, it returns <strong>nil</strong>. Otherwise, it provides a default return value of <strong>t</strong>. If the value of the supplied <em>form</em> is never <strong>nil</strong>, some other construct can terminate the iteration.</p>
+<p>The never construct terminates iteration the first time that the value of the supplied <em>form</em> is <em>non-nil</em>; the <strong>loop</strong> returns <strong>nil</strong>. If the value of the supplied <em>form</em> is always <strong>nil</strong>, some other construct can terminate the iteration. Unless some other clause contributes a return value, the default value returned is <strong>t</strong>.</p>
+<p>The thereis construct terminates iteration the first time that the value of the supplied <em>form</em> is <em>non-nil</em>; the <strong>loop</strong> returns the value of the supplied <em>form</em>. If the value of the supplied <em>form</em> is always <strong>nil</strong>, some other construct can terminate the iteration. Unless some other clause contributes a return value, the default value returned is <strong>nil</strong>.</p>
+<p>There are two differences between the thereis and until constructs:</p>
+<p><em>•</em> The until construct does not return a value or <strong>nil</strong> based on the value of the supplied <em>form</em>. Iteration <strong>6–21</strong></p>
+<p><em>•</em> The until construct executes any finally clause. Since thereis uses the <strong>return-from</strong> <em>special operator</em> to terminate iteration, any finally clause that is supplied is not evaluated when exit occurs due to thereis.</p>
+<p>The while construct allows iteration to continue until the supplied <em>form</em> evaluates to <em>false</em>. The supplied <em>form</em> is reevaluated at the location of the while clause.</p>
+<p>The until construct is equivalent to while (not <em>form</em>)<em>. . .</em> . If the value of the supplied <em>form</em> is <em>non-nil</em>, iteration terminates.</p>
+<p>Termination-test control constructs can be used anywhere within the loop body. The termination tests are used in the order in which they appear. If an until or while clause causes termination, any clauses that precede it in the source are still evaluated. If the until and while constructs cause termination, control is passed to the loop epilogue, where any finally clauses will be executed.</p>
+<p>There are two differences between the never and until constructs:</p>
+<p><em>•</em> The until construct does not return <strong>t</strong> or <strong>nil</strong> based on the value of the supplied <em>form</em>.</p>
+<p><em>•</em> The until construct does not bypass any finally clauses. Since never uses the <strong>return-from</strong> <em>special operator</em> to terminate iteration, any finally clause that is supplied is not evaluated when exit occurs due to never.</p>
+<p>In most cases it is not necessary to use <strong>loop-finish</strong> because other loop control clauses terminate the <strong>loop</strong>. The macro <strong>loop-finish</strong> is used to provide a normal exit from a nested conditional inside a <strong>loop</strong>. Since <strong>loop-finish</strong> transfers control to the loop epilogue, using <strong>loop-finish</strong> within a finally expression can cause infinite looping.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6141-examples-of-repeat-clause">6.1.4.1 Examples of REPEAT clause<a href="#6141-examples-of-repeat-clause" class="hash-link" aria-label="Direct link to 6.1.4.1 Examples of REPEAT clause" title="Direct link to 6.1.4.1 Examples of REPEAT clause">​</a></h3>
+<!-- -->
+<p><strong>6.1.4.1 Examples of REPEAT clause</strong></p>
+<p>(loop repeat 3</p>
+<p>do (format t &quot;<del>&amp;What I say three times is true.</del>%&quot;))</p>
+<p>▷ What I say three times is true.</p>
+<p>▷ What I say three times is true.</p>
+<p>▷ What I say three times is true.</p>
+<p><em>→</em> NIL</p>
+<p>(loop repeat -15</p>
+<p>do (format t &quot;What you see is what you expect~%&quot;))</p>
+<p><em>→</em> NIL</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6142-examples-of-always">6.1.4.2 Examples of ALWAYS<a href="#6142-examples-of-always" class="hash-link" aria-label="Direct link to 6.1.4.2 Examples of ALWAYS" title="Direct link to 6.1.4.2 Examples of ALWAYS">​</a></h3>
+<!-- -->
+<p><strong>6.1.4.2 Examples of ALWAYS, NEVER, and THEREIS clauses</strong></p>
+<p>;; Make sure I is always less than 11 (two ways).</p>
+<p>;; The FOR construct terminates these loops.</p>
+<p>(loop for i from 0 to 10</p>
+<p>always (&lt; i 11))</p>
+<p><em>→</em> T</p>
+<p>(loop for i from 0 to 10</p>
+<p>never (&gt; i 11))</p>
+<p><em>→</em> T</p>
+<p>;; If I exceeds 10 return I; otherwise, return NIL.</p>
+<p>;; The THEREIS construct terminates this loop.</p>
+<p>(loop for i from 0</p>
+<p>thereis (when (&gt; i 10) i) )</p>
+<p><em>→</em> 11</p>
+<p>;;; The FINALLY clause is not evaluated in these examples.</p>
+<p>(loop for i from 0 to 10</p>
+<p>always (&lt; i 9)</p>
+<p>finally (print &quot;you won’t see this&quot;))</p>
+<p><em>→</em> NIL</p>
+<p>(loop never t</p>
+<p>finally (print &quot;you won’t see this&quot;))</p>
+<p><em>→</em> NIL</p>
+<p>(loop thereis &quot;Here is my value&quot;</p>
+<p>finally (print &quot;you won’t see this&quot;))</p>
+<p><em>→</em> &quot;Here is my value&quot;</p>
+<p>;; The FOR construct terminates this loop, so the FINALLY clause</p>
+<p>;; is evaluated.</p>
+<p>(loop for i from 1 to 10</p>
+<p>thereis (&gt; i 11)</p>
+<p>finally (prin1 ’got-here))</p>
+<p>▷ GOT-HERE</p>
+<p><em>→</em> NIL</p>
+<p>;; If this code could be used to find a counterexample to Fermat’s</p>
+<p>;; last theorem, it would still not return the value of the</p>
+<p>;; counterexample because all of the THEREIS clauses in this example</p>
+<p>;; only return T. But if Fermat is right, that won’t matter</p>
+<p>;; because this won’t terminate.</p>
+<p>(loop for z upfrom 2</p>
+<p>Iteration <strong>6–23</strong></p>
+<p>thereis</p>
+<p>(loop for n upfrom 3 below (log z 2)</p>
+<p>thereis</p>
+<p>(loop for x below z</p>
+<p>thereis</p>
+<p>(loop for y below z</p>
+<p>thereis (= (+ (expt x n) (expt y n))</p>
+<p>(expt z n))))))</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6143-examples-of-while-and-until-clauses">6.1.4.3 Examples of WHILE and UNTIL clauses<a href="#6143-examples-of-while-and-until-clauses" class="hash-link" aria-label="Direct link to 6.1.4.3 Examples of WHILE and UNTIL clauses" title="Direct link to 6.1.4.3 Examples of WHILE and UNTIL clauses">​</a></h3>
+<!-- -->
+<p><strong>6.1.4.3 Examples of WHILE and UNTIL clauses</strong></p>
+<p>(loop while (hungry-p) do (eat))</p>
+<p>;; UNTIL NOT is equivalent to WHILE.</p>
+<p>(loop until (not (hungry-p)) do (eat))</p>
+<p>;; Collect the length and the items of STACK.</p>
+<p>(let ((stack ’(a b c d e f)))</p>
+<p>(loop for item = (length stack) then (pop stack)</p>
+<p>collect item</p>
+<p>while stack))</p>
+<p><em>→</em> (6 A B C D E F)</p>
+<p>;; Use WHILE to terminate a loop that otherwise wouldn’t terminate.</p>
+<p>;; Note that WHILE occurs after the WHEN.</p>
+<p>(loop for i fixnum from 3</p>
+<p>when (oddp i) collect i</p>
+<p>while (&lt; i 5))</p>
+<p><em>→</em> (3 5)</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="615-unconditional-execution-clauses">6.1.5 Unconditional Execution Clauses<a href="#615-unconditional-execution-clauses" class="hash-link" aria-label="Direct link to 6.1.5 Unconditional Execution Clauses" title="Direct link to 6.1.5 Unconditional Execution Clauses">​</a></h2>
+<!-- -->
+<p><strong>6.1.5 Unconditional Execution Clauses</strong></p>
+<p>The do and doing constructs evaluate the supplied <em>forms</em> wherever they occur in the expanded form of <strong>loop</strong>. The <em>form</em> argument can be any <em>compound form</em>. Each <em>form</em> is evaluated in every iteration. Because every loop clause must begin with a <em>loop keyword</em>, the keyword do is used when no control action other than execution is required.</p>
+<p>The return construct takes one <em>form</em>. Any <em>values</em> returned by the <em>form</em> are immediately returned by the <strong>loop</strong> form. It is equivalent to the clause do (return-from <em>block-name value</em>), where <em>block-name</em> is the name specified in a named clause, or <strong>nil</strong> if there is no named clause.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6151-examples-of-unconditional-execution">6.1.5.1 Examples of unconditional execution<a href="#6151-examples-of-unconditional-execution" class="hash-link" aria-label="Direct link to 6.1.5.1 Examples of unconditional execution" title="Direct link to 6.1.5.1 Examples of unconditional execution">​</a></h3>
+<!-- -->
+<p><strong>6.1.5.1 Examples of unconditional execution</strong></p>
+<p>;; Print numbers and their squares.</p>
+<p>;; The DO construct applies to multiple forms.</p>
+<p>(loop for i from 1 to 3</p>
+<p>do (print i)</p>
+<p>(print (* i i)))</p>
+<p>▷ 1</p>
+<p>▷ 1</p>
+<p>▷ 2</p>
+<p>▷ 4</p>
+<p>▷ 3</p>
+<p>▷ 9</p>
+<p><em>→</em> NIL</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="616-conditional-execution-clauses">6.1.6 Conditional Execution Clauses<a href="#616-conditional-execution-clauses" class="hash-link" aria-label="Direct link to 6.1.6 Conditional Execution Clauses" title="Direct link to 6.1.6 Conditional Execution Clauses">​</a></h2>
+<!-- -->
+<p><strong>6.1.6 Conditional Execution Clauses</strong></p>
+<p>The if, when, and unless constructs establish conditional control in a <strong>loop</strong>. If the test passes, the succeeding loop clause is executed. If the test does not pass, the succeeding clause is skipped, and program control moves to the clause that follows the <em>loop keyword</em> else. If the test does not pass and no else clause is supplied, control is transferred to the clause or construct following the entire</p>
+<p>conditional clause.</p>
+<p>If conditional clauses are nested, each else is paired with the closest preceding conditional clause that has no associated else or end.</p>
+<p>In the if and when clauses, which are synonymous, the test passes if the value of <em>form</em> is <em>true</em>. In the unless clause, the test passes if the value of <em>form</em> is <em>false</em>.</p>
+<p>Clauses that follow the test expression can be grouped by using the <em>loop keyword</em> and to produce a conditional block consisting of a compound clause.</p>
+<p>The <em>loop keyword</em> it can be used to refer to the result of the test expression in a clause. Use the <em>loop keyword</em> it in place of the form in a return clause or an <em>accumulation</em> clause that is inside a conditional execution clause. If multiple clauses are connected with and, the it construct must be in the first clause in the block.</p>
+<p>The optional <em>loop keyword</em> end marks the end of the clause. If this keyword is not supplied, the next <em>loop keyword</em> marks the end. The construct end can be used to distinguish the scoping of compound clauses.</p>
+<p>Iteration <strong>6–25</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6161-examples-of-when-clause">6.1.6.1 Examples of WHEN clause<a href="#6161-examples-of-when-clause" class="hash-link" aria-label="Direct link to 6.1.6.1 Examples of WHEN clause" title="Direct link to 6.1.6.1 Examples of WHEN clause">​</a></h3>
+<!-- -->
+<p><strong>6.1.6.1 Examples of WHEN clause</strong></p>
+<p>;; Signal an exceptional condition.</p>
+<p>(loop for item in ’(1 2 3 a 4 5)</p>
+<p>when (not (numberp item))</p>
+<p>return (cerror &quot;enter new value&quot; &quot;non-numeric value: ~s&quot; item)) Error: non-numeric value: A</p>
+<p>;; The previous example is equivalent to the following one.</p>
+<p>(loop for item in ’(1 2 3 a 4 5)</p>
+<p>when (not (numberp item))</p>
+<p>do (return</p>
+<p>(cerror &quot;Enter new value&quot; &quot;non-numeric value: ~s&quot; item)))</p>
+<p>Error: non-numeric value: A</p>
+<p>;; This example parses a simple printed string representation from ;; BUFFER (which is itself a string) and returns the index of the ;; closing double-quote character.</p>
+<p>(let ((buffer &quot;&quot;a&quot; &quot;b&quot;&quot;))</p>
+<p>(loop initially (unless (char= (char buffer 0) #&quot;)</p>
+<p>(loop-finish))</p>
+<p>for i of-type fixnum from 1 below (length (the string buffer)) when (char= (char buffer i) #&quot;)</p>
+<p>return i))</p>
+<p><em>→</em> 2</p>
+<p>;; The collected value is returned.</p>
+<p>(loop for i from 1 to 10</p>
+<p>when (&gt; i 5)</p>
+<p>collect i</p>
+<p>finally (prin1 ’got-here))</p>
+<p>▷ GOT-HERE</p>
+<p><em>→</em> (6 7 8 9 10)</p>
+<p>;; Return both the count of collected numbers and the numbers. (loop for i from 1 to 10</p>
+<p>when (&gt; i 5)</p>
+<p>collect i into number-list</p>
+<p>and count i into number-count</p>
+<p>finally (return (values number-count number-list)))</p>
+<p><em>→</em> 5, (6 7 8 9 10)</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="617-miscellaneous-clauses">6.1.7 Miscellaneous Clauses<a href="#617-miscellaneous-clauses" class="hash-link" aria-label="Direct link to 6.1.7 Miscellaneous Clauses" title="Direct link to 6.1.7 Miscellaneous Clauses">​</a></h2>
+<!-- -->
+<p><strong>6.1.7 Miscellaneous Clauses</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6171-control-transfer-clauses">6.1.7.1 Control Transfer Clauses<a href="#6171-control-transfer-clauses" class="hash-link" aria-label="Direct link to 6.1.7.1 Control Transfer Clauses" title="Direct link to 6.1.7.1 Control Transfer Clauses">​</a></h3>
+<!-- -->
+<p><strong>6.1.7.1 Control Transfer Clauses</strong></p>
+<p>The named construct establishes a name for an <em>implicit block</em> surrounding the entire <strong>loop</strong> so that the <strong>return-from</strong> <em>special operator</em> can be used to return values from or to exit <strong>loop</strong>. Only one name per <strong>loop</strong> <em>form</em> can be assigned. If used, the named construct must be the first clause in the loop expression.</p>
+<p>The return construct takes one <em>form</em>. Any <em>values</em> returned by the <em>form</em> are immediately returned by the <strong>loop</strong> form. This construct is similar to the <strong>return-from</strong> <em>special operator</em> and the <strong>return</strong> <em>macro</em>. The return construct does not execute any finally clause that the <strong>loop</strong> <em>form</em> is given.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="61711-examples-of-named-clause">6.1.7.1.1 Examples of NAMED clause<a href="#61711-examples-of-named-clause" class="hash-link" aria-label="Direct link to 6.1.7.1.1 Examples of NAMED clause" title="Direct link to 6.1.7.1.1 Examples of NAMED clause">​</a></h4>
+<!-- -->
+<p><strong>6.1.7.1.1 Examples of NAMED clause</strong></p>
+<p>;; Just name and return.</p>
+<p>(loop named max</p>
+<p>for i from 1 to 10</p>
+<p>do (print i)</p>
+<p>do (return-from max ’done))</p>
+<p>▷ 1</p>
+<p><em>→</em> DONE</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6172-initial-and-final-execution">6.1.7.2 Initial and Final Execution<a href="#6172-initial-and-final-execution" class="hash-link" aria-label="Direct link to 6.1.7.2 Initial and Final Execution" title="Direct link to 6.1.7.2 Initial and Final Execution">​</a></h3>
+<!-- -->
+<p><strong>6.1.7.2 Initial and Final Execution</strong></p>
+<p>The initially and finally constructs evaluate forms that occur before and after the loop body.</p>
+<p>The initially construct causes the supplied <em>compound-forms</em> to be evaluated in the loop prologue, which precedes all loop code except for initial settings supplied by constructs with, for, or as. The code for any initially clauses is executed in the order in which the clauses appeared in the <strong>loop</strong>.</p>
+<p>The finally construct causes the supplied <em>compound-forms</em> to be evaluated in the loop epilogue after normal iteration terminates. The code for any finally clauses is executed in the order in which the clauses appeared in the <strong>loop</strong>. The collected code is executed once in the loop epilogue before any implicit values are returned from the accumulation clauses. An explicit transfer of control (<em>e.g.</em>, by <strong>return</strong>, <strong>go</strong>, or <strong>throw</strong>) from the loop body, however, will exit the <strong>loop</strong> without executing the epilogue code.</p>
+<p>Clauses such as return, always, never, and thereis can bypass the finally clause. <strong>return</strong> (or <strong>return-from</strong>, if the named option was supplied) can be used after finally to return values from a <strong>loop</strong>. Such an <em>explicit return</em> inside the finally clause takes precedence over returning the accumulation from clauses supplied by such keywords as collect, nconc, append, sum, count, maximize, and minimize; the accumulation values for these preempted clauses are not returned by <strong>loop</strong> if <strong>return</strong> or <strong>return-from</strong> is used.</p>
+<p>Iteration <strong>6–27</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="618-examples-of-miscellaneous-loop-features">6.1.8 Examples of Miscellaneous Loop Features<a href="#618-examples-of-miscellaneous-loop-features" class="hash-link" aria-label="Direct link to 6.1.8 Examples of Miscellaneous Loop Features" title="Direct link to 6.1.8 Examples of Miscellaneous Loop Features">​</a></h2>
+<!-- -->
+<p><strong>6.1.8 Examples of Miscellaneous Loop Features</strong></p>
+<p>(let ((i 0)) ; no loop keywords are used</p>
+<p>(loop (incf i) (if (= i 3) (return i)))) <em>→</em> 3</p>
+<p>(let ((i 0)(j 0))</p>
+<p>(tagbody</p>
+<p>(loop (incf j 3) (incf i) (if (= i 3) (go exit)))</p>
+<p>exit)</p>
+<p>j) <em>→</em> 9</p>
+<p>In the following example, the variable x is stepped before y is stepped; thus, the value of y reflects the updated value of x:</p>
+<p>(loop for x from 1 to 10</p>
+<p>for y = nil then x</p>
+<p>collect (list x y))</p>
+<p><em>→</em> ((1 NIL) (2 2) (3 3) (4 4) (5 5) (6 6) (7 7) (8 8) (9 9) (10 10))</p>
+<p>In this example, x and y are stepped in <em>parallel</em>:</p>
+<p>(loop for x from 1 to 10</p>
+<p>and y = nil then x</p>
+<p>collect (list x y))</p>
+<p><em>→</em> ((1 NIL) (2 1) (3 2) (4 3) (5 4) (6 5) (7 6) (8 7) (9 8) (10 9))</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6181-examples-of-clause-grouping">6.1.8.1 Examples of clause grouping<a href="#6181-examples-of-clause-grouping" class="hash-link" aria-label="Direct link to 6.1.8.1 Examples of clause grouping" title="Direct link to 6.1.8.1 Examples of clause grouping">​</a></h3>
+<!-- -->
+<p><strong>6.1.8.1 Examples of clause grouping</strong></p>
+<p>;; Group conditional clauses.</p>
+<p>(loop for i in ’(1 324 2345 323 2 4 235 252)</p>
+<p>when (oddp i)</p>
+<p>do (print i)</p>
+<p>and collect i into odd-numbers</p>
+<p>and do (terpri)</p>
+<p>else ; I is even.</p>
+<p>collect i into even-numbers</p>
+<p>finally</p>
+<p>(return (values odd-numbers even-numbers)))</p>
+<p>▷ 1</p>
+<p>▷</p>
+<p>▷ 2345</p>
+<p>▷</p>
+<p>▷ 323</p>
+<p>▷</p>
+<p>▷ 235</p>
+<p><em>→</em> (1 2345 323 235), (324 2 4 252)</p>
+<p>;; Collect numbers larger than 3.</p>
+<p>(loop for i in ’(1 2 3 4 5 6)</p>
+<p>when (and (&gt; i 3) i)</p>
+<p>collect it) ; IT refers to (and (&gt; i 3) i).</p>
+<p><em>→</em> (4 5 6)</p>
+<p>;; Find a number in a list.</p>
+<p>(loop for i in ’(1 2 3 4 5 6)</p>
+<p>when (and (&gt; i 3) i)</p>
+<p>return it)</p>
+<p><em>→</em> 4</p>
+<p>;; The above example is similar to the following one.</p>
+<p>(loop for i in ’(1 2 3 4 5 6)</p>
+<p>thereis (and (&gt; i 3) i))</p>
+<p><em>→</em> 4</p>
+<p>;; Nest conditional clauses.</p>
+<p>(let ((list ’(0 3.0 apple 4 5 9.8 orange banana)))</p>
+<p>(loop for i in list</p>
+<p>when (numberp i)</p>
+<p>when (floatp i)</p>
+<p>collect i into float-numbers</p>
+<p>else ; Not (floatp i)</p>
+<p>collect i into other-numbers</p>
+<p>else ; Not (numberp i)</p>
+<p>when (symbolp i)</p>
+<p>collect i into symbol-list</p>
+<p>else ; Not (symbolp i)</p>
+<p>do (error &quot;found a funny value in list ~S, value <del>S</del>%&quot; list i)</p>
+<p>finally (return (values float-numbers other-numbers symbol-list))))</p>
+<p><em>→</em> (3.0 9.8), (0 4 5), (APPLE ORANGE BANANA)</p>
+<p>;; Without the END preposition, the last AND would apply to the</p>
+<p>;; inner IF rather than the outer one.</p>
+<p>(loop for x from 0 to 3</p>
+<p>do (print x)</p>
+<p>if (zerop (mod x 2))</p>
+<p>do (princ &quot; a&quot;)</p>
+<p>and if (zerop (floor x 2))</p>
+<p>do (princ &quot; b&quot;)</p>
+<p>end</p>
+<p>Iteration <strong>6–29</strong></p>
+<p>and do (princ &quot; c&quot;))</p>
+<p>▷ 0 a b c</p>
+<p>▷ 1</p>
+<p>▷ 2 a c</p>
+<p>▷ 3</p>
+<p><em>→</em> NIL</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="619-notes-about-loop">6.1.9 Notes about Loop<a href="#619-notes-about-loop" class="hash-link" aria-label="Direct link to 6.1.9 Notes about Loop" title="Direct link to 6.1.9 Notes about Loop">​</a></h2>
+<!-- -->
+<!-- -->
+<p><strong>6.1.9 Notes about Loop</strong></p>
+<p><em>Types</em> can be supplied for loop variables. It is not necessary to supply a <em>type</em> for any variable, but supplying the <em>type</em> can ensure that the variable has a correctly typed initial value, and it can also enable compiler optimizations (depending on the <em>implementation</em>).</p>
+<p>The clause repeat <em>n</em> ... is roughly equivalent to a clause such as</p>
+<p>(loop for <em>internal-variable</em> downfrom (- <em>n</em> 1) to 0 ...)</p>
+<p>but in some <em>implementations</em>, the repeat construct might be more efficient.</p>
+<p>Within the executable parts of the loop clauses and around the entire <strong>loop</strong> form, variables can be bound by using <strong>let</strong>.</p>
+<p>Use caution when using a variable named IT (in any <em>package</em>) in connection with <strong>loop</strong>, since it is a <em>loop keyword</em> that can be used in place of a <em>form</em> in certain contexts.</p>
+<p>There is no <em>standardized</em> mechanism for users to add extensions to <strong>loop</strong>.</p>
+<p><strong>do, do</strong><em>∗ Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>do</strong> (<em>{var |</em> (<em>var</em> [<em>init-form</em> [<em>step-form</em>]])<em>}</em>*)</p>
+<p>(<em>end-test-form {result-form}</em>*)</p>
+<p><em>{declaration}</em>* <em>{tag | statement}</em>*</p>
+<p><em>→ {result}</em>*</p>
+<p><strong>do*</strong> (<em>{var |</em> (<em>var</em> [<em>init-form</em> [<em>step-form</em>]])<em>}</em>*)</p>
+<p>(<em>end-test-form {result-form}</em>*)</p>
+<p><em>{declaration}</em>* <em>{tag | statement}</em>*</p>
+<p><em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>var</em>—a <em>symbol</em>.</p>
+<p><em>init-form</em>—a <em>form</em>.</p>
+<p><em>step-form</em>—a <em>form</em>.</p>
+<p><em>end-test-form</em>—a <em>form</em>.</p>
+<p><em>result-forms</em>—an <em>implicit progn</em>.</p>
+<p><em>declaration</em>—a <strong>declare</strong> <em>expression</em>; not evaluated.</p>
+<p><em>tag</em>—a <em>go tag</em>; not evaluated.</p>
+<p><em>statement</em>—a <em>compound form</em>; evaluated as described below.</p>
+<p><em>results</em>—if a <strong>return</strong> or <strong>return-from</strong> form is executed, the <em>values</em> passed from that <em>form</em>; otherwise, the <em>values</em> returned by the <em>result-forms</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>do</strong> iterates over a group of <em>statements</em> while a test condition holds. <strong>do</strong> accepts an arbitrary number of iteration <em>vars</em> which are bound within the iteration and stepped in parallel. An initial value may be supplied for each iteration variable by use of an <em>init-form</em>. <em>Step-forms</em> may be used to specify how the <em>vars</em> should be updated on succeeding iterations through the loop. <em>Step-forms</em> may be used both to generate successive values or to accumulate results. If the <em>end-test-form</em> condition is met prior to an execution of the body, the iteration terminates. <em>Tags</em> label <em>statements</em>.</p>
+<p><strong>do*</strong> is exactly like <strong>do</strong> except that the <em>bindings</em> and steppings of the <em>vars</em> are performed sequentially rather than in parallel.</p>
+<p>Iteration <strong>6–31</strong></p>
+<p><strong>do, do</strong><em>∗</em></p>
+<p>Before the first iteration, all the <em>init-forms</em> are evaluated, and each <em>var</em> is bound to the value of its respective <em>init-form</em>, if supplied. This is a <em>binding</em>, not an assignment; when the loop terminates, the old values of those variables will be restored. For <strong>do</strong>, all of the <em>init-forms</em> are evaluated before</p>
+<p>any <em>var</em> is bound. The <em>init-forms</em> can refer to the <em>bindings</em> of the <em>vars</em> visible before beginning execution of <strong>do</strong>. For <strong>do*</strong>, the first <em>init-form</em> is evaluated, then the first <em>var</em> is bound to that value, then the second <em>init-form</em> is evaluated, then the second <em>var</em> is bound, and so on; in general, the <em>k</em>th <em>init-form</em> can refer to the new binding of the <em>j</em>th <em>var</em> if <em>j</em> &lt; <em>k</em>, and otherwise to the old binding of the <em>j</em>th <em>var</em>.</p>
+<p>At the beginning of each iteration, after processing the variables, the <em>end-test-form</em> is evaluated. If the result is <em>false</em>, execution proceeds with the body of the <strong>do</strong> (or <strong>do*</strong>) form. If the result is <em>true</em>, the <em>result-forms</em> are evaluated in order as an <em>implicit progn</em>, and then <strong>do</strong> or <strong>do*</strong> returns.</p>
+<p>At the beginning of each iteration other than the first, <em>vars</em> are updated as follows. All the <em>step-forms</em>, if supplied, are evaluated, from left to right, and the resulting values are assigned to the respective <em>vars</em>. Any <em>var</em> that has no associated <em>step-form</em> is not assigned to. For <strong>do</strong>, all the <em>step-forms</em> are evaluated before any <em>var</em> is updated; the assignment of values to <em>vars</em> is done in parallel, as if by <strong>psetq</strong>. Because all of the <em>step-forms</em> are evaluated before any of the <em>vars</em> are altered, a <em>step-form</em> when evaluated always has access to the old values of all the <em>vars</em>, even if other <em>step-forms</em> precede it. For <strong>do*</strong>, the first <em>step-form</em> is evaluated, then the value is assigned to the first <em>var</em>, then the second <em>step-form</em> is evaluated, then the value is assigned to the second <em>var</em>, and so on; the assignment of values to variables is done sequentially, as if by <strong>setq</strong>. For either <strong>do</strong> or <strong>do*</strong>, after the <em>vars</em> have been updated, the <em>end-test-form</em> is evaluated as described above, and the iteration continues.</p>
+<p>The remainder of the <strong>do</strong> (or <strong>do*</strong>) form constitutes an <em>implicit tagbody</em>. <em>Tags</em> may appear within the body of a <strong>do</strong> loop for use by <strong>go</strong> statements appearing in the body (but such <strong>go</strong> statements may not appear in the variable specifiers, the <em>end-test-form</em>, or the <em>result-forms</em>). When the end of a <strong>do</strong> body is reached, the next iteration cycle (beginning with the evaluation of <em>step-forms</em>) occurs.</p>
+<p>An <em>implicit block</em> named <strong>nil</strong> surrounds the entire <strong>do</strong> (or <strong>do*</strong>) form. A <strong>return</strong> statement may be used at any point to exit the loop immediately.</p>
+<p><em>Init-form</em> is an initial value for the <em>var</em> with which it is associated. If <em>init-form</em> is omitted, the initial value of <em>var</em> is <strong>nil</strong>. If a <em>declaration</em> is supplied for a <em>var</em>, <em>init-form</em> must be consistent with the <em>declaration</em>.</p>
+<p><em>Declarations</em> can appear at the beginning of a <strong>do</strong> (or <strong>do*</strong>) body. They apply to code in the <strong>do</strong> (or <strong>do*</strong>) body, to the <em>bindings</em> of the <strong>do</strong> (or <strong>do*</strong>) <em>vars</em>, to the <em>step-forms</em>, to the <em>end-test-form</em>, and to the <em>result-forms</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(do ((temp-one 1 (1+ temp-one))</p>
+<p>(temp-two 0 (1- temp-two)))</p>
+<p>((&gt; (- temp-one temp-two) 5) temp-one)) <em>→</em> 4</p>
+<p><strong>do, do</strong><em>∗</em></p>
+<p>(do ((temp-one 1 (1+ temp-one))</p>
+<p>(temp-two 0 (1+ temp-one)))</p>
+<p>((= 3 temp-two) temp-one)) <em>→</em> 3</p>
+<p>(do* ((temp-one 1 (1+ temp-one))</p>
+<p>(temp-two 0 (1+ temp-one)))</p>
+<p>((= 3 temp-two) temp-one)) <em>→</em> 2</p>
+<p>(do ((j 0 (+ j 1)))</p>
+<p>(nil) ;Do forever.</p>
+<p>(format t &quot;~%Input ~D:&quot; j)</p>
+<p>(let ((item (read)))</p>
+<p>(if (null item) (return) ;Process items until NIL seen.</p>
+<p>(format t &quot;~&amp;Output ~D: ~S&quot; j item))))</p>
+<p>▷ Input 0: banana</p>
+<p>▷ Output 0: BANANA</p>
+<p>▷ Input 1: (57 boxes)</p>
+<p>▷ Output 1: (57 BOXES)</p>
+<p>▷ Input 2: NIL</p>
+<p><em>→</em> NIL</p>
+<p>(setq a-vector (vector 1 nil 3 nil))</p>
+<p>(do ((i 0 (+ i 1)) ;Sets every null element of a-vector to zero.</p>
+<p>(n (array-dimension a-vector 0)))</p>
+<p>((= i n))</p>
+<p>(when (null (aref a-vector i))</p>
+<p>(setf (aref a-vector i) 0))) <em>→</em> NIL</p>
+<p>a-vector <em>→</em> #(1 0 3 0)</p>
+<p>(do ((x e (cdr x))</p>
+<p>(oldx x x))</p>
+<p>((null x))</p>
+<p>body)</p>
+<p>is an example of parallel assignment to index variables. On the first iteration, the value of oldx is whatever value x had before the <strong>do</strong> was entered. On succeeding iterations, oldx contains the value that x had on the previous iteration.</p>
+<p>(do ((x foo (cdr x))</p>
+<p>(y bar (cdr y))</p>
+<p>(z ’() (cons (f (car x) (car y)) z)))</p>
+<p>((or (null x) (null y))</p>
+<p>(nreverse z)))</p>
+<p>does the same thing as (mapcar #’f foo bar). The step computation for z is an example of the fact that variables are stepped in parallel. Also, the body of the loop is empty.</p>
+<p>Iteration <strong>6–33</strong></p>
+<p><strong>do, do</strong><em>∗</em></p>
+<p>(defun list-reverse (list)</p>
+<p>(do ((x list (cdr x))</p>
+<p>(y ’() (cons (car x) y)))</p>
+<p>((endp x) y)))</p>
+<p>As an example of nested iterations, consider a data structure that is a <em>list</em> of <em>conses</em>. The <em>car</em> of each <em>cons</em> is a <em>list</em> of <em>symbols</em>, and the <em>cdr</em> of each <em>cons</em> is a <em>list</em> of equal length containing corresponding values. Such a data structure is similar to an association list, but is divided into “frames”; the overall structure resembles a rib-cage. A lookup function on such a data structure might be:</p>
+<p>(defun ribcage-lookup (sym ribcage)</p>
+<p>(do ((r ribcage (cdr r)))</p>
+<p>((null r) nil)</p>
+<p>(do ((s (caar r) (cdr s))</p>
+<p>(v (cdar r) (cdr v)))</p>
+<p>((null s))</p>
+<p>(when (eq (car s) sym)</p>
+<p>(return-from ribcage-lookup (car v)))))) <em>→</em> RIBCAGE-LOOKUP</p>
+<p><strong>See Also:</strong></p>
+<p>other iteration functions (<strong>dolist</strong>, <strong>dotimes</strong>, and <strong>loop</strong>) and more primitive functionality (<strong>tagbody</strong>, <strong>go</strong>, <strong>block</strong>, <strong>return</strong>, <strong>let</strong>, and <strong>setq</strong>)</p>
+<p><strong>Notes:</strong></p>
+<p>If <em>end-test-form</em> is <strong>nil</strong>, the test will never succeed. This provides an idiom for “do forever”: the body of the <strong>do</strong> or <strong>do*</strong> is executed repeatedly. The infinite loop can be terminated by the use of <strong>return</strong>, <strong>return-from</strong>, <strong>go</strong> to an outer level, or <strong>throw</strong>.</p>
+<p>A <strong>do</strong> <em>form</em> may be explained in terms of the more primitive <em>forms</em> <strong>block</strong>, <strong>return</strong>, <strong>let</strong>, <strong>loop</strong>, <strong>tagbody</strong>, and <strong>psetq</strong> as follows:</p>
+<p>(block nil</p>
+<p>(let ((var1 init1)</p>
+<p>(var2 init2)</p>
+<p>...</p>
+<p>(varn initn))</p>
+<p><em>declarations</em></p>
+<p>(loop (when end-test (return (progn . result)))</p>
+<p>(tagbody . tagbody)</p>
+<p>(psetq var1 step1</p>
+<p>var2 step2</p>
+<p>...</p>
+<p>varn stepn))))</p>
+<p><strong>do*</strong> is similar, except that <strong>let*</strong> and <strong>setq</strong> replace the <strong>let</strong> and <strong>psetq</strong>, respectively.</p>
+<p><strong>dotimes</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>dotimes</strong> (<em>var count-form</em> [<em>result-form</em>]) <em>{declaration}</em>* <em>{tag | statement}</em>*</p>
+<p><em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>var</em>—a <em>symbol</em>.</p>
+<p><em>count-form</em>—a <em>form</em>.</p>
+<p><em>result-form</em>—a <em>form</em>.</p>
+<p><em>declaration</em>—a <strong>declare</strong> <em>expression</em>; not evaluated.</p>
+<p><em>tag</em>—a <em>go tag</em>; not evaluated.</p>
+<p><em>statement</em>—a <em>compound form</em>; evaluated as described below.</p>
+<p><em>results</em>—if a <strong>return</strong> or <strong>return-from</strong> form is executed, the <em>values</em> passed from that <em>form</em>; otherwise, the <em>values</em> returned by the <em>result-form</em> or <strong>nil</strong> if there is no <em>result-form</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>dotimes</strong> iterates over a series of <em>integers</em>.</p>
+<p><strong>dotimes</strong> evaluates <em>count-form</em>, which should produce an <em>integer</em> . If <em>count-form</em> is zero or negative, the body is not executed. <strong>dotimes</strong> then executes the body once for each <em>integer</em> from 0 up to but not including the value of <em>count-form</em>, in the order in which the <em>tags</em> and <em>statements</em> occur, with <em>var</em></p>
+<p>bound to each <em>integer</em> . Then <em>result-form</em> is evaluated. At the time <em>result-form</em> is processed, <em>var</em> is bound to the number of times the body was executed. <em>Tags</em> label <em>statements</em>.</p>
+<p>An <em>implicit block</em> named <strong>nil</strong> surrounds <strong>dotimes</strong>. <strong>return</strong> may be used to terminate the loop immediately without performing any further iterations, returning zero or more <em>values</em>.</p>
+<p>The body of the loop is an <em>implicit tagbody</em>; it may contain tags to serve as the targets of <strong>go</strong> statements. Declarations may appear before the body of the loop.</p>
+<p>The <em>scope</em> of the binding of <em>var</em> does not include the <em>count-form</em>, but the <em>result-form</em> is included.</p>
+<p>It is <em>implementation-dependent</em> whether <strong>dotimes</strong> <em>establishes</em> a new <em>binding</em> of <em>var</em> on each iteration or whether it <em>establishes</em> a binding for <em>var</em> once at the beginning and then <em>assigns</em> it on any subsequent iterations.</p>
+<p>Iteration <strong>6–35</strong></p>
+<p><strong>Examples:</strong></p>
+<p>(dotimes (temp-one 10 temp-one)) <em>→</em> 10</p>
+<p>(setq temp-two 0) <em>→</em> 0</p>
+<p>(dotimes (temp-one 10 t) (incf temp-two)) <em>→</em> T</p>
+<p>temp-two <em>→</em> 10</p>
+<p>Here is an example of the use of dotimes in processing strings:</p>
+<p>;;; True if the specified subsequence of the string is a</p>
+<p>;;; palindrome (reads the same forwards and backwards).</p>
+<p>(defun palindromep (string &amp;optional</p>
+<p>(start 0)</p>
+<p>(end (length string)))</p>
+<p>(dotimes (k (floor (- end start) 2) t)</p>
+<p>(unless (char-equal (char string (+ start k))</p>
+<p>(char string (- end k 1)))</p>
+<p>(return nil))))</p>
+<p>(palindromep &quot;Able was I ere I saw Elba&quot;) <em>→</em> T</p>
+<p>(palindromep &quot;A man, a plan, a canal–Panama!&quot;) <em>→</em> NIL</p>
+<p>(remove-if-not #’alpha-char-p ;Remove punctuation.</p>
+<p>&quot;A man, a plan, a canal–Panama!&quot;)</p>
+<p><em>→</em> &quot;AmanaplanacanalPanama&quot;</p>
+<p>(palindromep</p>
+<p>(remove-if-not #’alpha-char-p</p>
+<p>&quot;A man, a plan, a canal–Panama!&quot;)) <em>→</em> T</p>
+<p>(palindromep</p>
+<p>(remove-if-not</p>
+<p>#’alpha-char-p</p>
+<p>&quot;Unremarkable was I ere I saw Elba Kramer, nu?&quot;)) <em>→</em> T</p>
+<p>(palindromep</p>
+<p>(remove-if-not</p>
+<p>#’alpha-char-p</p>
+<p>&quot;A man, a plan, a cat, a ham, a yak,</p>
+<p>a yam, a hat, a canal–Panama!&quot;)) <em>→</em> T</p>
+<p><strong>See Also:</strong></p>
+<p><strong>do</strong>, <strong>dolist</strong>, <strong>tagbody</strong></p>
+<p><strong>Notes:</strong></p>
+<p><strong>go</strong> may be used within the body of <strong>dotimes</strong> to transfer control to a statement labeled by a <em>tag</em>.</p>
+<p><strong>dolist</strong></p>
+<p><strong>dolist</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>dolist</strong> (<em>var list-form</em> [<em>result-form</em>]) <em>{declaration}</em>* <em>{tag | statement}</em>*</p>
+<p><em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>var</em>—a <em>symbol</em>.</p>
+<p><em>list-form</em>—a <em>form</em>.</p>
+<p><em>result-form</em>—a <em>form</em>.</p>
+<p><em>declaration</em>—a <strong>declare</strong> <em>expression</em>; not evaluated.</p>
+<p><em>tag</em>—a <em>go tag</em>; not evaluated.</p>
+<p><em>statement</em>—a <em>compound form</em>; evaluated as described below.</p>
+<p><em>results</em>—if a <strong>return</strong> or <strong>return-from</strong> form is executed, the <em>values</em> passed from that <em>form</em>; otherwise, the <em>values</em> returned by the <em>result-form</em> or <strong>nil</strong> if there is no <em>result-form</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>dolist</strong> iterates over the elements of a <em>list</em>. The body of <strong>dolist</strong> is like a <strong>tagbody</strong>. It consists of a series of <em>tags</em> and <em>statements</em>.</p>
+<p><strong>dolist</strong> evaluates <em>list-form</em>, which should produce a <em>list</em>. It then executes the body once for each element in the <em>list</em>, in the order in which the <em>tags</em> and <em>statements</em> occur, with <em>var</em> bound to the element. Then <em>result-form</em> is evaluated. <em>tags</em> label <em>statements</em>.</p>
+<p>At the time <em>result-form</em> is processed, <em>var</em> is bound to <strong>nil</strong>.</p>
+<p>An <em>implicit block</em> named <strong>nil</strong> surrounds <strong>dolist</strong>. <strong>return</strong> may be used to terminate the loop immediately without performing any further iterations, returning zero or more <em>values</em>.</p>
+<p>The <em>scope</em> of the binding of <em>var</em> does not include the <em>list-form</em>, but the <em>result-form</em> is included.</p>
+<p>It is <em>implementation-dependent</em> whether <strong>dolist</strong> <em>establishes</em> a new <em>binding</em> of <em>var</em> on each iteration or whether it <em>establishes</em> a binding for <em>var</em> once at the beginning and then <em>assigns</em> it on any subsequent iterations.</p>
+<p><strong>Examples:</strong></p>
+<p>(setq temp-two ’()) <em>→</em> NIL</p>
+<p>(dolist (temp-one ’(1 2 3 4) temp-two) (push temp-one temp-two)) <em>→</em> (4 3 2 1) (setq temp-two 0) <em>→</em> 0</p>
+<p>Iteration <strong>6–37</strong></p>
+<p>(dolist (temp-one ’(1 2 3 4)) (incf temp-two)) <em>→</em> NIL</p>
+<p>temp-two <em>→</em> 4</p>
+<p>(dolist (x ’(a b c d)) (prin1 x) (princ &quot; &quot;))</p>
+<p>▷ A B C D</p>
+<p><em>→</em> NIL</p>
+<p><strong>See Also:</strong></p>
+<p><strong>do</strong>, <strong>dotimes</strong>, <strong>tagbody</strong>, Section 3.6 (Traversal Rules and Side Effects)</p>
+<p><strong>Notes:</strong></p>
+<p><strong>go</strong> may be used within the body of <strong>dolist</strong> to transfer control to a statement labeled by a <em>tag</em>. <strong>loop</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p>The “simple” <strong>loop</strong> <em>form</em>:</p>
+<p><strong>loop</strong> <em>{compound-form}</em>* <em>→ {result}</em>*</p>
+<p>The “extended” <strong>loop</strong> <em>form</em>:</p>
+<p><strong>loop</strong> [<em>↓name-clause</em>] <em>{↓variable-clause}</em>* <em>{↓main-clause}</em>* <em>→ {result}</em>*</p>
+<p><em>name-clause::</em>=named <em>name</em></p>
+<p><em>variable-clause::</em>=<em>↓with-clause | ↓initial-final | ↓for-as-clause</em></p>
+<p><em>with-clause::</em>=with <em>var1</em> [<em>type-spec</em>] [= <em>form1</em>] <em>{<em>and <em>var2</em> [<em>type-spec</em>] [= <em>form2</em>]</em>}</em>*</p>
+<p><em>main-clause::</em>=<em>↓unconditional | ↓accumulation | ↓conditional | ↓termination-test | ↓initial-final initial-final::</em>=initially <em>{compound-form}</em>&lt;sup&gt;+&lt;/sup&gt;<em>|</em> finally <em>{compound-form}</em>&lt;sup&gt;+&lt;/sup&gt;</p>
+<p><em>unconditional::</em>=<em>{<em>do <em>|</em> doing</em>} {compound-form}</em>&lt;sup&gt;+&lt;/sup&gt;<em>|</em> return <em>{form |</em> it*}*</p>
+<p><em>accumulation::</em>=<em>↓list-accumulation | ↓numeric-accumulation</em></p>
+<p><em>list-accumulation::</em>=<em>{<em>collect <em>|</em> collecting <em>|</em> append <em>|</em> appending <em>|</em> nconc <em>|</em> nconcing</em>} {form |</em> it*}* [into <em>simple-var</em>]</p>
+<p><strong>loop</strong></p>
+<p><em>numeric-accumulation::</em>=*{*count <em>|</em> counting <em>|</em> sum <em>|</em> summing <em>|</em></p>
+<p>maximize <em>|</em> maximizing <em>|</em> minimize <em>|</em> minimizing*} {form |* it*}*</p>
+<p>[into <em>simple-var</em>] [<em>type-spec</em>]</p>
+<p><em>conditional::</em>=*{<em>if <em>|</em> when <em>|</em> unless</em>} form ↓selectable-clause {*and <em>↓selectable-clause}</em>*</p>
+<p>[else *↓selectable-clause {*and <em>↓selectable-clause}</em>*]</p>
+<p>[end]</p>
+<p><em>selectable-clause::</em>=<em>↓unconditional | ↓accumulation | ↓conditional</em></p>
+<p><em>termination-test::</em>=while <em>form |</em> until <em>form |</em> repeat <em>form |</em> always <em>form |</em> never <em>form |</em> thereis <em>form for-as-clause::</em>=*{<em>for <em>|</em> as</em>} ↓for-as-subclause {*and <em>↓for-as-subclause}</em>*</p>
+<p><em>for-as-subclause::</em>=<em>↓for-as-arithmetic | ↓for-as-in-list | ↓for-as-on-list | ↓for-as-equals-then | ↓for-as-across | ↓for-as-hash | ↓for-as-package</em></p>
+<p><em>for-as-arithmetic::</em>=<em>var</em> [<em>type-spec</em>] <em>↓for-as-arithmetic-subclause</em></p>
+<p><em>for-as-arithmetic-subclause::</em>=<em>↓arithmetic-up | ↓arithmetic-downto | ↓arithmetic-downfrom arithmetic-up::</em>=[[ <em>{<em>from <em>|</em> upfrom</em>} form1 | {<em>to <em>|</em> upto <em>|</em> below</em>} form2 |</em> by <em>form3</em> ]]&lt;sup&gt;+&lt;/sup&gt;</p>
+<p><em>arithmetic-downto::</em>=[[ <em>{<em>from <em>form1}</em>&lt;sup&gt;1&lt;/sup&gt;</em>| {{<em>downto <em>|</em> above</em>} form2}</em>&lt;sup&gt;1&lt;/sup&gt;<em>|</em> by <em>form3</em> ]]</p>
+<p><em>arithmetic-downfrom::</em>=[[ <em>{<em>downfrom <em>form1}</em>&lt;sup&gt;1&lt;/sup&gt;</em>| {<em>to <em>|</em> downto <em>|</em> above</em>} form2 |</em> by <em>form3</em> ]] <em>for-as-in-list::</em>=<em>var</em> [<em>type-spec</em>] in <em>form1</em> [by <em>step-fun</em>]</p>
+<p><em>for-as-on-list::</em>=<em>var</em> [<em>type-spec</em>] on <em>form1</em> [by <em>step-fun</em>]</p>
+<p><em>for-as-equals-then::</em>=<em>var</em> [<em>type-spec</em>] = <em>form1</em> [then <em>form2</em>]</p>
+<p><em>for-as-across::</em>=<em>var</em> [<em>type-spec</em>] across <em>vector</em></p>
+<p><em>for-as-hash::</em>=<em>var</em> [<em>type-spec</em>] being <em>{<em>each <em>|</em> the</em>}</em></p>
+<p><em>{{<em>hash-key <em>|</em> hash-keys</em>} {<em>in <em>|</em> of</em>} hash-table</em></p>
+<p>[using (hash-value <em>other-var</em>)] <em>|</em></p>
+<p><em>{<em>hash-value <em>|</em> hash-values</em>} {<em>in <em>|</em> of</em>} hash-table</em></p>
+<p>[using (hash-key <em>other-var</em>)]<em>}</em></p>
+<p>Iteration <strong>6–39</strong></p>
+<p><strong>loop</strong></p>
+<p><em>for-as-package::</em>=<em>var</em> [<em>type-spec</em>] being <em>{<em>each <em>|</em> the</em>}</em></p>
+<p>*{*symbol <em>|</em> symbols <em>|</em></p>
+<p>present-symbol <em>|</em> present-symbols <em>|</em></p>
+<p>external-symbol <em>|</em> external-symbols*}*</p>
+<p>[<em>{<em>in <em>|</em> of</em>} package</em>]</p>
+<p><em>type-spec::</em>=<em>↓simple-type-spec | ↓destructured-type-spec</em></p>
+<p><em>simple-type-spec::</em>=<strong>fixnum</strong> <em>|</em> <strong>float</strong> <em>|</em> <strong>t</strong> <em>|</em> <strong>nil</strong></p>
+<p><em>destructured-type-spec::</em>=of-type <em>d-type-spec</em></p>
+<p><em>d-type-spec::</em>=<em>type-specifier |</em> (<em>d-type-spec</em> . <em>d-type-spec</em>)</p>
+<p><em>var::</em>=<em>↓d-var-spec</em></p>
+<p><em>var1::</em>=<em>↓d-var-spec</em></p>
+<p><em>var2::</em>=<em>↓d-var-spec</em></p>
+<p><em>other-var::</em>=<em>↓d-var-spec</em></p>
+<p><em>d-var-spec::</em>=<em>simple-var |</em> <strong>nil</strong> <em>|</em> (<em>↓d-var-spec</em> . <em>↓d-var-spec</em>)</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>compound-form</em>—a <em>compound form</em>.</p>
+<p><em>name</em>—a <em>symbol</em>.</p>
+<p><em>simple-var</em>—a <em>symbol</em> (a <em>variable</em> name).</p>
+<p><em>form</em>, <em>form1</em>, <em>form2</em>, <em>form3</em>—a <em>form</em>.</p>
+<p><em>step-fun</em>—a <em>form</em> that evaluates to a <em>function</em> of one <em>argument</em>.</p>
+<p><em>vector</em>—a <em>form</em> that evaluates to a <em>vector</em> .</p>
+<p><em>hash-table</em>—a <em>form</em> that evaluates to a <em>hash table</em>.</p>
+<p><em>package</em>—a <em>form</em> that evaluates to a <em>package designator</em> .</p>
+<p><em>type-specifier</em>—a <em>type specifier</em> . This might be either an <em>atomic type specifier</em> or a <em>compound type specifier</em> , which introduces some additional complications to proper parsing in the face of destructuring; for further information, see Section 6.1.1.7 (Destructuring).</p>
+<p><em>result</em>—an <em>object</em>.</p>
+<p><strong>loop</strong></p>
+<p><strong>Description:</strong></p>
+<p>For details, see Section 6.1 (The LOOP Facility).</p>
+<p><strong>Examples:</strong></p>
+<p>;; An example of the simple form of LOOP.</p>
+<p>(defun sqrt-advisor ()</p>
+<p>(loop (format t &quot;~&amp;Number: &quot;)</p>
+<p>(let ((n (parse-integer (read-line) <!-- -->:junk-allowed<!-- --> t)))</p>
+<p>(when (not n) (return))</p>
+<p>(format t &quot;~&amp;The square root of ~D is <del>D.</del>%&quot; n (sqrt n)))))</p>
+<p><em>→</em> SQRT-ADVISOR</p>
+<p>(sqrt-advisor)</p>
+<p>▷ Number: 5<em>←-</em></p>
+<p>▷ The square root of 5 is 2.236068.</p>
+<p>▷ Number: 4<em>←-</em></p>
+<p>▷ The square root of 4 is 2.</p>
+<p>▷ Number: done<em>←-</em></p>
+<p><em>→</em> NIL</p>
+<p>;; An example of the extended form of LOOP.</p>
+<p>(defun square-advisor ()</p>
+<p>(loop as n = (progn (format t &quot;~&amp;Number: &quot;)</p>
+<p>(parse-integer (read-line) <!-- -->:junk-allowed<!-- --> t))</p>
+<p>while n</p>
+<p>do (format t &quot;~&amp;The square of ~D is <del>D.</del>%&quot; n (* n n))))</p>
+<p><em>→</em> SQUARE-ADVISOR</p>
+<p>(square-advisor)</p>
+<p>▷ Number: 4<em>←-</em></p>
+<p>▷ The square of 4 is 16.</p>
+<p>▷ Number: 23<em>←-</em></p>
+<p>▷ The square of 23 is 529.</p>
+<p>▷ Number: done<em>←-</em></p>
+<p><em>→</em> NIL</p>
+<p>;; Another example of the extended form of LOOP.</p>
+<p>(loop for n from 1 to 10</p>
+<p>when (oddp n)</p>
+<p>collect n)</p>
+<p><em>→</em> (1 3 5 7 9)</p>
+<p><strong>See Also:</strong></p>
+<p><strong>do</strong>, <strong>dolist</strong>, <strong>dotimes</strong>, <strong>return</strong>, <strong>go</strong>, <strong>throw</strong>, Section 6.1.1.7 (Destructuring)</p>
+<p>Iteration <strong>6–41</strong></p>
+<p><strong>Notes:</strong></p>
+<p>Except that <strong>loop-finish</strong> cannot be used within a simple <strong>loop</strong> <em>form</em>, a simple <strong>loop</strong> <em>form</em> is related to an extended <strong>loop</strong> <em>form</em> in the following way:</p>
+<p>(loop <em>{compound-form}</em>*) <em>≡</em> (loop do <em>{compound-form}</em>*)</p>
+<p><strong>loop-finish</strong> <em>Local Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>loop-finish</strong> <em>hno argumentsi →</em></p>
+<p><strong>Description:</strong></p>
+<p>The <strong>loop-finish</strong> <em>macro</em> can be used lexically within an extended <strong>loop</strong> <em>form</em> to terminate that <em>form</em> “normally.” That is, it transfers control to the loop epilogue of the lexically innermost extended <strong>loop</strong> <em>form</em>. This permits execution of any <strong>finally</strong> clause (for effect) and the return of any accumulated result.</p>
+<p><strong>Examples:</strong></p>
+<p>;; Terminate the loop, but return the accumulated count.</p>
+<p>(loop for i in ’(1 2 3 stop-here 4 5 6)</p>
+<p>when (symbolp i) do (loop-finish)</p>
+<p>count i)</p>
+<p><em>→</em> 3</p>
+<p>;; The preceding loop is equivalent to:</p>
+<p>(loop for i in ’(1 2 3 stop-here 4 5 6)</p>
+<p>until (symbolp i)</p>
+<p>count i)</p>
+<p><em>→</em> 3</p>
+<p>;; While LOOP-FINISH can be used can be used in a variety of</p>
+<p>;; situations it is really most needed in a situation where a need</p>
+<p>;; to exit is detected at other than the loop’s ‘top level’</p>
+<p>;; (where UNTIL or WHEN often work just as well), or where some</p>
+<p>;; computation must occur between the point where a need to exit is</p>
+<p>;; detected and the point where the exit actually occurs. For example:</p>
+<p>(defun tokenize-sentence (string)</p>
+<p>(macrolet ((add-word (wvar svar)</p>
+<p>‘(when ,wvar</p>
+<p>(push (coerce (nreverse ,wvar) ’string) ,svar)</p>
+<p>(setq ,wvar nil))))</p>
+<p><strong>loop-finish</strong></p>
+<p>(loop with word = ’() and sentence = ’() and endpos = nil</p>
+<p>for i below (length string)</p>
+<p>do (let ((char (aref string i)))</p>
+<p>(case char</p>
+<p>(#\Space (add-word word sentence))</p>
+<p>(#. (setq endpos (1+ i)) (loop-finish))</p>
+<p>(otherwise (push char word))))</p>
+<p>finally (add-word word sentence)</p>
+<p>(return (values (nreverse sentence) endpos)))))</p>
+<p><em>→</em> TOKENIZE-SENTENCE</p>
+<p>(tokenize-sentence &quot;this is a sentence. this is another sentence.&quot;)</p>
+<p><em>→</em> (&quot;this&quot; &quot;is&quot; &quot;a&quot; &quot;sentence&quot;), 19</p>
+<p>(tokenize-sentence &quot;this is a sentence&quot;)</p>
+<p><em>→</em> (&quot;this&quot; &quot;is&quot; &quot;a&quot; &quot;sentence&quot;), NIL</p>
+<p><strong>Side Effects:</strong></p>
+<p>Transfers control.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Whether or not <strong>loop-finish</strong> is <em>fbound</em> in the <em>global environment</em> is <em>implementation-dependent</em>; however, the restrictions on redefinition and <em>shadowing</em> of <strong>loop-finish</strong> are the same as for <em>symbols</em> in the COMMON-LISP <em>package</em> which are <em>fbound</em> in the <em>global environment</em>. The consequences of attempting to use <strong>loop-finish</strong> outside of <strong>loop</strong> are undefined.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>loop</strong>, Section 6.1 (The LOOP Facility)</p>
+<p><strong>Notes:</strong></p>
+<p>Iteration <strong>6–43</strong></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/chap-6/g-b-the-loop-facility.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/cl-language-reference/docs/category/6-iteration"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">6. Iteration</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/cl-language-reference/docs/chap-6/intro"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">intro</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#611-overview-of-the-loop-facility" class="table-of-contents__link toc-highlight">6.1.1 Overview of the Loop Facility</a><ul><li><a href="#6111-simple-vs-extended-loop" class="table-of-contents__link toc-highlight">6.1.1.1 Simple vs Extended Loop</a></li><li><a href="#6112-loop-keywords" class="table-of-contents__link toc-highlight">6.1.1.2 Loop Keywords</a></li><li><a href="#6113-parsing-loop-clauses" class="table-of-contents__link toc-highlight">6.1.1.3 Parsing Loop Clauses</a></li><li><a href="#6114-expanding-loop-forms" class="table-of-contents__link toc-highlight">6.1.1.4 Expanding Loop Forms</a></li><li><a href="#6115-summary-of-loop-clauses" class="table-of-contents__link toc-highlight">6.1.1.5 Summary of Loop Clauses</a></li><li><a href="#6116-order-of-execution" class="table-of-contents__link toc-highlight">6.1.1.6 Order of Execution</a></li><li><a href="#6117-destructuring" class="table-of-contents__link toc-highlight">6.1.1.7 Destructuring</a></li><li><a href="#6118-restrictions-on-side" class="table-of-contents__link toc-highlight">6.1.1.8 Restrictions on Side</a></li></ul></li><li><a href="#612-variable-initialization-and-stepping-clauses" class="table-of-contents__link toc-highlight">6.1.2 Variable Initialization and Stepping Clauses</a><ul><li><a href="#6121-iteration-control" class="table-of-contents__link toc-highlight">6.1.2.1 Iteration Control</a></li><li><a href="#6122-local-variable-initializations" class="table-of-contents__link toc-highlight">6.1.2.2 Local Variable Initializations</a></li></ul></li><li><a href="#613-value-accumulation-clauses" class="table-of-contents__link toc-highlight">6.1.3 Value Accumulation Clauses</a><ul><li><a href="#6131-examples-of-collect-clause" class="table-of-contents__link toc-highlight">6.1.3.1 Examples of COLLECT clause</a></li><li><a href="#6132-examples-of-append-and-nconc-clauses" class="table-of-contents__link toc-highlight">6.1.3.2 Examples of APPEND and NCONC clauses</a></li><li><a href="#6133-examples-of-count-clause" class="table-of-contents__link toc-highlight">6.1.3.3 Examples of COUNT clause</a></li><li><a href="#6134-examples-of-maximize-and-minimize-clauses" class="table-of-contents__link toc-highlight">6.1.3.4 Examples of MAXIMIZE and MINIMIZE clauses</a></li><li><a href="#6135-examples-of-sum-clause" class="table-of-contents__link toc-highlight">6.1.3.5 Examples of SUM clause</a></li></ul></li><li><a href="#614-termination-test-clauses" class="table-of-contents__link toc-highlight">6.1.4 Termination Test Clauses</a><ul><li><a href="#6141-examples-of-repeat-clause" class="table-of-contents__link toc-highlight">6.1.4.1 Examples of REPEAT clause</a></li><li><a href="#6142-examples-of-always" class="table-of-contents__link toc-highlight">6.1.4.2 Examples of ALWAYS</a></li><li><a href="#6143-examples-of-while-and-until-clauses" class="table-of-contents__link toc-highlight">6.1.4.3 Examples of WHILE and UNTIL clauses</a></li></ul></li><li><a href="#615-unconditional-execution-clauses" class="table-of-contents__link toc-highlight">6.1.5 Unconditional Execution Clauses</a><ul><li><a href="#6151-examples-of-unconditional-execution" class="table-of-contents__link toc-highlight">6.1.5.1 Examples of unconditional execution</a></li></ul></li><li><a href="#616-conditional-execution-clauses" class="table-of-contents__link toc-highlight">6.1.6 Conditional Execution Clauses</a><ul><li><a href="#6161-examples-of-when-clause" class="table-of-contents__link toc-highlight">6.1.6.1 Examples of WHEN clause</a></li></ul></li><li><a href="#617-miscellaneous-clauses" class="table-of-contents__link toc-highlight">6.1.7 Miscellaneous Clauses</a><ul><li><a href="#6171-control-transfer-clauses" class="table-of-contents__link toc-highlight">6.1.7.1 Control Transfer Clauses</a></li><li><a href="#6172-initial-and-final-execution" class="table-of-contents__link toc-highlight">6.1.7.2 Initial and Final Execution</a></li></ul></li><li><a href="#618-examples-of-miscellaneous-loop-features" class="table-of-contents__link toc-highlight">6.1.8 Examples of Miscellaneous Loop Features</a><ul><li><a href="#6181-examples-of-clause-grouping" class="table-of-contents__link toc-highlight">6.1.8.1 Examples of clause grouping</a></li></ul></li><li><a href="#619-notes-about-loop" class="table-of-contents__link toc-highlight">6.1.9 Notes about Loop</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/docs/intro">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

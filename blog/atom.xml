@@ -2,11 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lisp-docs.github.io/cl-language-reference/blog</id>
     <title>Common Lisp (New) Language Reference Blog</title>
-    <updated>2021-08-26T00:00:00.000Z</updated>
+    <updated>2023-11-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/blog"/>
     <subtitle>Common Lisp (New) Language Reference Blog</subtitle>
     <icon>https://lisp-docs.github.io/cl-language-reference/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Mission]]></title>
+        <id>https://lisp-docs.github.io/cl-language-reference/blog/mission</id>
+        <link href="https://lisp-docs.github.io/cl-language-reference/blog/mission"/>
+        <updated>2023-11-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The mission of Lisp Docs and this website in particular is to provide LISP Documentation.]]></summary>
+        <content type="html"><![CDATA[<p>The mission of Lisp Docs and this website in particular is to provide LISP Documentation.</p>
+<p>The <a href="https://lisp-docs.github.io/cl-language-reference/docs/intro">Docs in this Website</a> are aimed to be a User Guide.</p>
+<p>The Docs</p>]]></content>
+        <author>
+            <name>Admin</name>
+            <uri>https://github.com/lisp-docs</uri>
+        </author>
+        <category label="mission" term="mission"/>
+        <category label="beginning" term="beginning"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://lisp-docs.github.io/cl-language-reference/blog/welcome</id>

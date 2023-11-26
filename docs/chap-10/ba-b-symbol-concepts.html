@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-chap-10/ba-b-symbol-concepts" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.0">
+<title data-rh="true">10.1 Symbol Concepts | Common Lisp (New) Language Reference</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://lisp-docs.github.io/cl-language-reference/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://lisp-docs.github.io/cl-language-reference/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://lisp-docs.github.io/cl-language-reference/docs/chap-10/ba-b-symbol-concepts"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="10.1 Symbol Concepts | Common Lisp (New) Language Reference"><link data-rh="true" rel="icon" href="/cl-language-reference/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-10/ba-b-symbol-concepts"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-10/ba-b-symbol-concepts" hreflang="en"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-10/ba-b-symbol-concepts" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/cl-language-reference/blog/rss.xml" title="Common Lisp (New) Language Reference RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/cl-language-reference/blog/atom.xml" title="Common Lisp (New) Language Reference Atom Feed"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.d3a7613c.css">
+<script src="/cl-language-reference/assets/js/runtime~main.a7e86bbf.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/main.89f4b5c9.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/cl-language-reference/"><div class="navbar__logo"><img src="/cl-language-reference/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/cl-language-reference/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">My Site</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/cl-language-reference/docs/intro">Tutorial</a><a class="navbar__item navbar__link" href="/cl-language-reference/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/intro">Tutorial Intro</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/tutorial---basics">Tutorial - Basics</a><button aria-label="Expand sidebar category &#x27;Tutorial - Basics&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/tutorial---extras">Tutorial - Extras</a><button aria-label="Expand sidebar category &#x27;Tutorial - Extras&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/chapter-3">Chapter 3</a><button aria-label="Expand sidebar category &#x27;Chapter 3&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/nil">NIL</a><button aria-label="Expand sidebar category &#x27;NIL&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/1-introduction">1. Introduction</a><button aria-label="Expand sidebar category &#x27;1. Introduction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/cl-language-reference/docs/category/10-symbols">10. Symbols</a><button aria-label="Collapse sidebar category &#x27;10. Symbols&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/cl-language-reference/docs/chap-10/ba-b-symbol-concepts">10.1 Symbol Concepts</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cl-language-reference/docs/chap-10/intro">intro</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/11-packages">11. Packages</a><button aria-label="Expand sidebar category &#x27;11. Packages&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/12-numbers">12. Numbers</a><button aria-label="Expand sidebar category &#x27;12. Numbers&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/13-characters">13. Characters</a><button aria-label="Expand sidebar category &#x27;13. Characters&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/14-conses">14. Conses</a><button aria-label="Expand sidebar category &#x27;14. Conses&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/15-arrays">15. Arrays</a><button aria-label="Expand sidebar category &#x27;15. Arrays&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/16-strings">16. Strings</a><button aria-label="Expand sidebar category &#x27;16. Strings&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/17-sequences">17. Sequences</a><button aria-label="Expand sidebar category &#x27;17. Sequences&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/18-hash-tables">18. Hash Tables</a><button aria-label="Expand sidebar category &#x27;18. Hash Tables&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/19-filenames">19. Filenames</a><button aria-label="Expand sidebar category &#x27;19. Filenames&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/2-syntax">2. Syntax</a><button aria-label="Expand sidebar category &#x27;2. Syntax&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap-2">chap-2</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/20-files">20. Files</a><button aria-label="Expand sidebar category &#x27;20. Files&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/21-streams">21. Streams</a><button aria-label="Expand sidebar category &#x27;21. Streams&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/22-printer">22. Printer</a><button aria-label="Expand sidebar category &#x27;22. Printer&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/23-reader">23. Reader</a><button aria-label="Expand sidebar category &#x27;23. Reader&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/24-system-construction">24. System Construction</a><button aria-label="Expand sidebar category &#x27;24. System Construction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/25-environment">25. Environment</a><button aria-label="Expand sidebar category &#x27;25. Environment&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/26-glossary">26. Glossary</a><button aria-label="Expand sidebar category &#x27;26. Glossary&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/3-evaluation-and-compilation">3. Evaluation and Compilation</a><button aria-label="Expand sidebar category &#x27;3. Evaluation and Compilation&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap-3">chap-3</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/4-types-and-classes">4. Types and Classes</a><button aria-label="Expand sidebar category &#x27;4. Types and Classes&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/5-data-and-control-flow">5. Data and Control Flow</a><button aria-label="Expand sidebar category &#x27;5. Data and Control Flow&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/6-iteration">6. Iteration</a><button aria-label="Expand sidebar category &#x27;6. Iteration&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/7-objects">7. Objects</a><button aria-label="Expand sidebar category &#x27;7. Objects&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/8-structures">8. Structures</a><button aria-label="Expand sidebar category &#x27;8. Structures&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/9-conditions">9. Conditions</a><button aria-label="Expand sidebar category &#x27;9. Conditions&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/a-appendix">A. Appendix</a><button aria-label="Expand sidebar category &#x27;A. Appendix&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap2">chap2</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/cl-language-reference/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/cl-language-reference/docs/category/10-symbols"><span itemprop="name">10. Symbols</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">10.1 Symbol Concepts</span><meta itemprop="position" content="2"></li></ul></nav><div class="theme-doc-markdown markdown"><h1>10.1 Symbol Concepts</h1>
+<!-- -->
+<!-- -->
+<p><strong>10.1 Symbol Concepts</strong></p>
+<p>Figure 10–1 lists some <em>defined names</em> that are applicable to the <em>property lists</em> of <em>symbols</em>.</p>
+<table><thead><tr><th style="text-align:left"><strong>get remprop symbol-plist</strong></th></tr></thead></table>
+<p><strong>Figure 10–1. Property list defined names</strong></p>
+<p>Figure 10–2 lists some <em>defined names</em> that are applicable to the creation of and inquiry about <em>symbols</em>.</p>
+<table><thead><tr><th style="text-align:left">&lt;p&gt;<strong>copy-symbol keywordp symbol-package gensym make-symbol symbol-value</strong> &lt;/p&gt;&lt;p&gt;<strong>gentemp symbol-name</strong>&lt;/p&gt;</th></tr></thead></table>
+<p><strong>Figure 10–2. Symbol creation and inquiry defined names</strong></p>
+<p>Symbols <strong>10–1</strong></p>
+<p><strong>symbol</strong> <em>System Class</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>symbol</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p><em>Symbols</em> are used for their <em>object</em> identity to name various entities in Common Lisp, including (but not limited to) linguistic entities such as <em>variables</em> and <em>functions</em>.</p>
+<p><em>Symbols</em> can be collected together into <em>packages</em>. A <em>symbol</em> is said to be <em>interned</em> in a <em>package</em> if it is <em>accessible</em> in that <em>package</em>; the same <em>symbol</em> can be <em>interned</em> in more than one <em>package</em>. If a <em>symbol</em> is not <em>interned</em> in any <em>package</em>, it is called <em>uninterned</em>.</p>
+<p>An <em>interned symbol</em> is uniquely identifiable by its <em>name</em> from any <em>package</em> in which it is <em>accessible</em>.</p>
+<p><em>Symbols</em> have the following attributes. For historical reasons, these are sometimes referred to as <em>cells</em>, although the actual internal representation of <em>symbols</em> and their attributes is <em>implementation-dependent</em>.</p>
+<p><strong>Name</strong></p>
+<p>The <em>name</em> of a <em>symbol</em> is a <em>string</em> used to identify the <em>symbol</em>. Every <em>symbol</em> has a <em>name</em>, and the consequences are undefined if that <em>name</em> is altered. The <em>name</em> is used as part of the external, printed representation of the <em>symbol</em>; see Section 2.1 (Character Syntax). The <em>function</em> <strong>symbol-name</strong> returns the <em>name</em> of a given <em>symbol</em>. A <em>symbol</em> may have any <em>character</em> in its <em>name</em>.</p>
+<p><strong>Package</strong></p>
+<p>The <em>object</em> in this <em>cell</em> is called the <em>home package</em> of the <em>symbol</em>. If the <em>home package</em> is <strong>nil</strong>, the <em>symbol</em> is sometimes said to have no <em>home package</em>.</p>
+<p>When a <em>symbol</em> is first created, it has no <em>home package</em>. When it is first <em>interned</em>, the <em>package</em> in which it is initially <em>interned</em> becomes its <em>home package</em>. The <em>home package</em> of a <em>symbol</em> can be <em>accessed</em> by using the <em>function</em> <strong>symbol-package</strong>.</p>
+<p>If a <em>symbol</em> is <em>uninterned</em> from the <em>package</em> which is its <em>home package</em>, its <em>home package</em> is set to <strong>nil</strong>. Depending on whether there is another <em>package</em> in which the <em>symbol</em> is <em>interned</em>, the symbol might or might not really be an <em>uninterned symbol</em>. A <em>symbol</em> with no <em>home package</em> is therefore called <em>apparently uninterned</em>.</p>
+<p>The consequences are undefined if an attempt is made to alter the <em>home package</em> of a <em>symbol</em> external in the COMMON-LISP <em>package</em> or the KEYWORD <em>package</em>.</p>
+<p><strong>Property list</strong></p>
+<p>The <em>property list</em> of a <em>symbol</em> provides a mechanism for associating named attributes</p>
+<p>with that <em>symbol</em>. The operations for adding and removing entries are <em>destructive</em> to the <em>property list</em>. Common Lisp provides <em>operators</em> both for direct manipulation of <em>property list objects</em> (<em>e.g.</em>, see <strong>getf</strong>, <strong>remf</strong>, and <strong>symbol-plist</strong>) and for implicit manipulation of a <em>symbol</em>’s <em>property list</em> by reference to the <em>symbol</em> (<em>e.g.</em>, see <strong>get</strong> and <strong>remprop</strong>). The <em>property list</em> associated with a <em>fresh symbol</em> is initially <em>null</em>.</p>
+<p><strong>Value</strong></p>
+<p>If a symbol has a value attribute, it is said to be <em>bound</em>, and that fact can be detected by the <em>function</em> <strong>boundp</strong>. The <em>object</em> contained in the <em>value cell</em> of a <em>bound symbol</em> is the <em>value</em> of the <em>global variable</em> named by that <em>symbol</em>, and can be <em>accessed</em> by the <em>function</em> <strong>symbol-value</strong>. A <em>symbol</em> can be made to be <em>unbound</em> by the <em>function</em> <strong>makunbound</strong>.</p>
+<p>The consequences are undefined if an attempt is made to change the <em>value</em> of a <em>symbol</em> that names a <em>constant variable</em>, or to make such a <em>symbol</em> be <em>unbound</em>.</p>
+<p><strong>Function</strong></p>
+<p>If a symbol has a function attribute, it is said to be <em>fbound</em>, and that fact can be detected by the <em>function</em> <strong>fboundp</strong>. If the <em>symbol</em> is the <em>name</em> of a <em>function</em> in the <em>global environment</em>, the <em>function cell</em> contains the <em>function</em>, and can be <em>accessed</em> by the <em>function</em> <strong>symbol-function</strong>. If the <em>symbol</em> is the <em>name</em> of either a <em>macro</em> in the <em>global environment</em> (see <strong>macro-function</strong>) or a <em>special operator</em> (see <strong>special-operator-p</strong>), the <em>symbol</em> is <em>fbound</em>, and can be <em>accessed</em> by the <em>function</em> <strong>symbol-function</strong>, but the <em>object</em> which the <em>function cell</em> contains is of <em>implementation-dependent type</em> and purpose. A <em>symbol</em> can be made to be <em>funbound</em> by the <em>function</em> <strong>fmakunbound</strong>.</p>
+<p>The consequences are undefined if an attempt is made to change the <em>functional value</em> of a <em>symbol</em> that names a <em>special form</em>.</p>
+<p>Operations on a <em>symbol</em>’s <em>value cell</em> and <em>function cell</em> are sometimes described in terms of their effect on the <em>symbol</em> itself, but the user should keep in mind that there is an intimate relationship between the contents of those <em>cells</em> and the <em>global variable</em> or global <em>function</em> definition, respectively.</p>
+<p><em>Symbols</em> are used as identifiers for <em>lexical variables</em> and lexical <em>function</em> definitions, but in that role, only their <em>object</em> identity is significant. Common Lisp provides no operation on a <em>symbol</em> that can have any effect on a <em>lexical variable</em> or on a lexical <em>function</em> definition.</p>
+<p><strong>See Also:</strong></p>
+<p>Section 2.3.4 (Symbols as Tokens), Section 2.3.1.1 (Potential Numbers as Tokens), Section 22.1.3.3 (Printing Symbols)</p>
+<p>Symbols <strong>10–3</strong></p>
+<p><strong>keyword</strong> <em>Type</em></p>
+<p><strong>Supertypes:</strong></p>
+<p><strong>keyword</strong>, <strong>symbol</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>The <em>type</em> <strong>keyword</strong> includes all <em>symbols interned</em> the KEYWORD <em>package</em>.</p>
+<p><em>Interning</em> a <em>symbol</em> in the KEYWORD <em>package</em> has three automatic effects:</p>
+<p>1. It causes the <em>symbol</em> to become <em>bound</em> to itself.</p>
+<p>2. It causes the <em>symbol</em> to become an <em>external symbol</em> of the KEYWORD <em>package</em>.</p>
+<p>3. It causes the <em>symbol</em> to become a <em>constant variable</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>keywordp</strong></p>
+<p><strong>symbolp</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>symbolp</strong> <em>object → generalized-boolean</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>object</em>—an <em>object</em>.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns <em>true</em> if <em>object</em> is of <em>type</em> <strong>symbol</strong>; otherwise, returns <em>false</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(symbolp ’elephant) <em>→ true</em></p>
+<p>(symbolp 12) <em>→ false</em></p>
+<p>(symbolp nil) <em>→ true</em></p>
+<p>(symbolp ’()) <em>→ true</em></p>
+<p>(symbolp <!-- -->:test<!-- -->) <em>→ true</em></p>
+<p>(symbolp &quot;hello&quot;) <em>→ false</em></p>
+<p><strong>See Also:</strong></p>
+<p><strong>keywordp</strong>, <strong>symbol</strong>, <strong>typep</strong></p>
+<p><strong>Notes:</strong></p>
+<p>(symbolp <em>object</em>) <em>≡</em> (typep <em>object</em> ’symbol)</p>
+<p><strong>keywordp</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>keywordp</strong> <em>object → generalized-boolean</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>object</em>—an <em>object</em>.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns <em>true</em> if <em>object</em> is a <em>keyword</em> &lt;sub&gt;1&lt;/sub&gt;; otherwise, returns <em>false</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(keywordp ’elephant) <em>→ false</em></p>
+<p>(keywordp 12) <em>→ false</em></p>
+<p>(keywordp <!-- -->:test<!-- -->) <em>→ true</em></p>
+<p>(keywordp ’<!-- -->:test<!-- -->) <em>→ true</em></p>
+<p>(keywordp nil) <em>→ false</em></p>
+<p>(keywordp <!-- -->:nil<!-- -->) <em>→ true</em></p>
+<p>(keywordp ’(<!-- -->:test<!-- -->)) <em>→ false</em></p>
+<p>(keywordp &quot;hello&quot;) <em>→ false</em></p>
+<p>(keywordp &quot;<!-- -->:hello<!-- -->&quot;) <em>→ false</em></p>
+<p>(keywordp ’&amp;optional) <em>→ false</em></p>
+<p><strong>See Also:</strong></p>
+<p><strong>constantp</strong>, <strong>keyword</strong>, <strong>symbolp</strong>, <strong>symbol-package</strong></p>
+<p>Symbols <strong>10–5</strong></p>
+<p><strong>make-symbol</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>make-symbol</strong> <em>name → new-symbol</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>name</em>—a <em>string</em>.</p>
+<p><em>new-symbol</em>—a <em>fresh</em>, <em>uninterned symbol</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>make-symbol</strong> creates and returns a <em>fresh</em>, <em>uninterned symbol</em> whose <em>name</em> is the given <em>name</em>. The <em>new-symbol</em> is neither <em>bound</em> nor <em>fbound</em> and has a <em>null property list</em>.</p>
+<p>It is <em>implementation-dependent</em> whether the <em>string</em> that becomes the <em>new-symbol</em>’s <em>name</em> is the given <em>name</em> or a copy of it. Once a <em>string</em> has been given as the <em>name argument</em> to <em>make-symbol</em>, the consequences are undefined if a subsequent attempt is made to alter that <em>string</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(setq temp-string &quot;temp&quot;) <em>→</em> &quot;temp&quot;</p>
+<p>(setq temp-symbol (make-symbol temp-string)) <em>→</em> #:|temp|</p>
+<p>(symbol-name temp-symbol) <em>→</em> &quot;temp&quot;</p>
+<p>(eq (symbol-name temp-symbol) temp-string) <em>→ implementation-dependent</em></p>
+<p>(find-symbol &quot;temp&quot;) <em>→</em> NIL, NIL</p>
+<p>(eq (make-symbol temp-string) (make-symbol temp-string)) <em>→ false</em></p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>name</em> is not a <em>string</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>copy-symbol</strong></p>
+<p><strong>Notes:</strong></p>
+<p>No attempt is made by <strong>make-symbol</strong> to convert the case of the <em>name</em> to uppercase. The only case conversion which ever occurs for <em>symbols</em> is done by the <em>Lisp reader</em> . The program interface to <em>symbol</em> creation retains case, and the program interface to interning symbols is case-sensitive.</p>
+<p><strong>copy-symbol</strong></p>
+<p><strong>copy-symbol</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>copy-symbol</strong> <em>symbol</em> &amp;optional <em>copy-properties → new-symbol</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbol</em>—a <em>symbol</em>.</p>
+<p><em>copy-properties</em>—a <em>generalized boolean</em>. The default is <em>false</em>.</p>
+<p><em>new-symbol</em>—a <em>fresh</em>, <em>uninterned symbol</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>copy-symbol</strong> returns a <em>fresh</em>, <em>uninterned symbol</em>, the <em>name</em> of which is <strong>string=</strong> to and possibly the <em>same</em> as the <em>name</em> of the given <em>symbol</em>.</p>
+<p>If <em>copy-properties</em> is <em>false</em>, the <em>new-symbol</em> is neither <em>bound</em> nor <em>fbound</em> and has a <em>null property list</em>. If <em>copy-properties</em> is <em>true</em>, then the initial <em>value</em> of <em>new-symbol</em> is the <em>value</em> of <em>symbol</em>, the initial <em>function</em> definition of <em>new-symbol</em> is the <em>functional value</em> of <em>symbol</em>, and the <em>property list</em> of <em>new-symbol</em> is a <em>copy</em>&lt;sub&gt;2&lt;/sub&gt; of the <em>property list</em> of <em>symbol</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(setq fred ’fred-smith) <em>→</em> FRED-SMITH</p>
+<p>(setf (symbol-value fred) 3) <em>→</em> 3</p>
+<p>(setq fred-clone-1a (copy-symbol fred nil)) <em>→</em> #<!-- -->:FRED-SMITH</p>
+<p>(setq fred-clone-1b (copy-symbol fred nil)) <em>→</em> #<!-- -->:FRED-SMITH</p>
+<p>(setq fred-clone-2a (copy-symbol fred t)) <em>→</em> #<!-- -->:FRED-SMITH</p>
+<p>(setq fred-clone-2b (copy-symbol fred t)) <em>→</em> #<!-- -->:FRED-SMITH</p>
+<p>(eq fred fred-clone-1a) <em>→ false</em></p>
+<p>(eq fred-clone-1a fred-clone-1b) <em>→ false</em></p>
+<p>(eq fred-clone-2a fred-clone-2b) <em>→ false</em></p>
+<p>(eq fred-clone-1a fred-clone-2a) <em>→ false</em></p>
+<p>(symbol-value fred) <em>→</em> 3</p>
+<p>(boundp fred-clone-1a) <em>→ false</em></p>
+<p>(symbol-value fred-clone-2a) <em>→</em> 3</p>
+<p>(setf (symbol-value fred-clone-2a) 4) <em>→</em> 4</p>
+<p>(symbol-value fred) <em>→</em> 3</p>
+<p>(symbol-value fred-clone-2a) <em>→</em> 4</p>
+<p>(symbol-value fred-clone-2b) <em>→</em> 3</p>
+<p>(boundp fred-clone-1a) <em>→ false</em></p>
+<p>(setf (symbol-function fred) #’(lambda (x) x)) <em>→</em> #&lt;FUNCTION anonymous&gt;</p>
+<p>(fboundp fred) <em>→ true</em></p>
+<p>(fboundp fred-clone-1a) <em>→ false</em></p>
+<p>(fboundp fred-clone-2a) <em>→ false</em></p>
+<p>Symbols <strong>10–7</strong></p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>symbol</em> is not a <em>symbol</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>make-symbol</strong></p>
+<p><strong>Notes:</strong></p>
+<p>Implementors are encouraged not to copy the <em>string</em> which is the <em>symbol</em>’s <em>name</em> unnecessarily. Unless there is a good reason to do so, the normal implementation strategy is for the <em>new-symbol</em>’s <em>name</em> to be <em>identical</em> to the given <em>symbol</em>’s <em>name</em>.</p>
+<p><strong>gensym</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>gensym</strong> &amp;optional <em>x → new-symbol</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>x</em>—a <em>string</em> or a non-negative <em>integer</em> . Complicated defaulting behavior; see below. <em>new-symbol</em>—a <em>fresh</em>, <em>uninterned symbol</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Creates and returns a <em>fresh</em>, <em>uninterned symbol</em>, as if by calling <strong>make-symbol</strong>. (The only difference between <strong>gensym</strong> and <strong>make-symbol</strong> is in how the <em>new-symbol</em>’s <em>name</em> is determined.)</p>
+<p>The <em>name</em> of the <em>new-symbol</em> is the concatenation of a prefix, which defaults to &quot;G&quot;, and a suffix, which is the decimal representation of a number that defaults to the <em>value</em> of <strong>*gensym-counter*</strong>.</p>
+<p>If <em>x</em> is supplied, and is a <em>string</em>, then that <em>string</em> is used as a prefix instead of &quot;G&quot; for this call to <strong>gensym</strong> only.</p>
+<p>If <em>x</em> is supplied, and is an <em>integer</em> , then that <em>integer</em> , instead of the <em>value</em> of <strong>*gensym-counter*</strong>, is used as the suffix for this call to <strong>gensym</strong> only.</p>
+<p>If and only if no explicit suffix is supplied, <strong>*gensym-counter*</strong> is incremented after it is used. <strong>Examples:</strong></p>
+<p>(setq sym1 (gensym)) <em>→</em> #<!-- -->:G3142</p>
+<p>(symbol-package sym1) <em>→</em> NIL</p>
+<p>(setq sym2 (gensym 100)) <em>→</em> #<!-- -->:G100</p>
+<p>(setq sym3 (gensym 100)) <em>→</em> #<!-- -->:G100</p>
+<p>(eq sym2 sym3) <em>→ false</em></p>
+<p>(find-symbol &quot;G100&quot;) <em>→</em> NIL, NIL</p>
+<p>(gensym &quot;T&quot;) <em>→</em> #<!-- -->:T3143</p>
+<p>(gensym) <em>→</em> #<!-- -->:G3144</p>
+<p><strong>Side Effects:</strong></p>
+<p>Might increment <strong>*gensym-counter*</strong>.</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*gensym-counter*</strong></p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>x</em> is not a <em>string</em> or a non-negative <em>integer</em> .</p>
+<p><strong>See Also:</strong></p>
+<p><strong>gentemp</strong>, <strong>*gensym-counter*</strong></p>
+<p><strong>Notes:</strong></p>
+<p>The ability to pass a numeric argument to <strong>gensym</strong> has been deprecated; explicitly <em>binding</em> <strong>*gensym-counter*</strong> is now stylistically preferred. (The somewhat baroque conventions for the optional argument are historical in nature, and supported primarily for compatibility with older dialects of Lisp. In modern code, it is recommended that the only kind of argument used be a string prefix. In general, though, to obtain more flexible control of the <em>new-symbol</em>’s <em>name</em>, consider using <strong>make-symbol</strong> instead.)</p>
+<p><em>∗</em><strong>gensym-counter</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a non-negative <em>integer</em> .</p>
+<p><strong>Initial Value:</strong></p>
+<p><em>implementation-dependent</em>.</p>
+<p><strong>Description:</strong></p>
+<p>A number which will be used in constructing the <em>name</em> of the next <em>symbol</em> generated by the <em>function</em> <strong>gensym</strong>.</p>
+<p><strong>*gensym-counter*</strong> can be either <em>assigned</em> or <em>bound</em> at any time, but its value must always be a non-negative <em>integer</em> .</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>gensym</strong>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>gensym</strong></p>
+<p>Symbols <strong>10–9</strong></p>
+<p><strong>Notes:</strong></p>
+<p>The ability to pass a numeric argument to <strong>gensym</strong> has been deprecated; explicitly <em>binding</em> <strong>*gensym-counter*</strong> is now stylistically preferred.</p>
+<p><strong>gentemp</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>gentemp</strong> &amp;optional <em>prefix package → new-symbol</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>prefix</em>—a <em>string</em>. The default is &quot;T&quot;.</p>
+<p><em>package</em>—a <em>package designator</em> . The default is the <em>current package</em>.</p>
+<p><em>new-symbol</em>—a <em>fresh</em>, <em>interned symbol</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>gentemp</strong> creates and returns a <em>fresh symbol</em>, <em>interned</em> in the indicated <em>package</em>. The <em>symbol</em> is guaranteed to be one that was not previously <em>accessible</em> in <em>package</em>. It is neither <em>bound</em> nor <em>fbound</em>, and has a <em>null property list</em>.</p>
+<p>The <em>name</em> of the <em>new-symbol</em> is the concatenation of the <em>prefix</em> and a suffix, which is taken from an internal counter used only by <strong>gentemp</strong>. (If a <em>symbol</em> by that name is already <em>accessible</em> in <em>package</em>, the counter is incremented as many times as is necessary to produce a <em>name</em> that is not already the <em>name</em> of a <em>symbol accessible</em> in <em>package</em>.)</p>
+<p><strong>Examples:</strong></p>
+<p>(gentemp) <em>→</em> T1298</p>
+<p>(gentemp &quot;FOO&quot;) <em>→</em> FOO1299</p>
+<p>(find-symbol &quot;FOO1300&quot;) <em>→</em> NIL, NIL</p>
+<p>(gentemp &quot;FOO&quot;) <em>→</em> FOO1300</p>
+<p>(find-symbol &quot;FOO1300&quot;) <em>→</em> FOO1300, <!-- -->:INTERNAL</p>
+<p>(intern &quot;FOO1301&quot;) <em>→</em> FOO1301, <!-- -->:INTERNAL</p>
+<p>(gentemp &quot;FOO&quot;) <em>→</em> FOO1302</p>
+<p>(gentemp) <em>→</em> T1303</p>
+<p><strong>Side Effects:</strong></p>
+<p>Its internal counter is incremented one or more times.</p>
+<p><em>Interns</em> the <em>new-symbol</em> in <em>package</em>.</p>
+<p><strong>Affected By:</strong></p>
+<p>The current state of its internal counter, and the current state of the <em>package</em>.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>prefix</em> is not a <em>string</em>. Should signal an error of <em>type</em> <strong>type-error</strong> if <em>package</em> is not a <em>package designator</em> .</p>
+<p><strong>See Also:</strong></p>
+<p><strong>gensym</strong></p>
+<p><strong>Notes:</strong></p>
+<p>The function <strong>gentemp</strong> is deprecated.</p>
+<p>If <em>package</em> is the KEYWORD <em>package</em>, the result is an <em>external symbol</em> of <em>package</em>. Otherwise, the result is an <em>internal symbol</em> of <em>package</em>.</p>
+<p>The <strong>gentemp</strong> internal counter is independent of <strong>*gensym-counter*</strong>, the counter used by <strong>gensym</strong>. There is no provision for accessing the <strong>gentemp</strong> internal counter.</p>
+<p>Just because <strong>gentemp</strong> creates a <em>symbol</em> which did not previously exist does not mean that such a <em>symbol</em> might not be seen in the future (<em>e.g.</em>, in a data file—perhaps even created by the same program in another session). As such, this symbol is not truly unique in the same sense as a <em>gensym</em> would be. In particular, programs which do automatic code generation should be careful not to attach global attributes to such generated <em>symbols</em> (<em>e.g.</em>, <strong>special</strong> <em>declarations</em>) and then write them into a file because such global attributes might, in a different session, end up applying to other <em>symbols</em> that were automatically generated on another day for some other purpose.</p>
+<p><strong>symbol-function</strong> <em>Accessor</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>symbol-function</strong> <em>symbol → contents</em></p>
+<p><strong>(setf (symbol-function</strong> <em>symbol</em>**)** <em>new-contents</em>**)**</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbol</em>—a <em>symbol</em>.</p>
+<p><em>contents</em>— If the <em>symbol</em> is globally defined as a <em>macro</em> or a <em>special operator</em> , an <em>object</em> of <em>implementation-dependent</em> nature and identity is returned. If the <em>symbol</em> is not globally defined as either a <em>macro</em> or a <em>special operator</em> , and if the <em>symbol</em> is <em>fbound</em>, a <em>function object</em> is returned.</p>
+<p><em>new-contents</em>—a <em>function</em>.</p>
+<p><strong>Description:</strong></p>
+<p><em>Accesses</em> the <em>symbol</em>’s <em>function cell</em>.</p>
+<p>Symbols <strong>10–11</strong></p>
+<p><strong>symbol-function</strong></p>
+<p><strong>Examples:</strong></p>
+<p>(symbol-function ’car) <em>→</em> #&lt;FUNCTION CAR&gt;</p>
+<p>(symbol-function ’twice) is an error ;because TWICE isn’t defined.</p>
+<p>(defun twice (n) (* n 2)) <em>→</em> TWICE</p>
+<p>(symbol-function ’twice) <em>→</em> #&lt;FUNCTION TWICE&gt;</p>
+<p>(list (twice 3)</p>
+<p>(funcall (function twice) 3)</p>
+<p>(funcall (symbol-function ’twice) 3))</p>
+<p><em>→</em> (6 6 6)</p>
+<p>(flet ((twice (x) (list x x)))</p>
+<p>(list (twice 3)</p>
+<p>(funcall (function twice) 3)</p>
+<p>(funcall (symbol-function ’twice) 3)))</p>
+<p><em>→</em> ((3 3) (3 3) 6)</p>
+<p>(setf (symbol-function ’twice) #’(lambda (x) (list x x)))</p>
+<p><em>→</em> #&lt;FUNCTION anonymous&gt;</p>
+<p>(list (twice 3)</p>
+<p>(funcall (function twice) 3)</p>
+<p>(funcall (symbol-function ’twice) 3))</p>
+<p><em>→</em> ((3 3) (3 3) (3 3))</p>
+<p>(fboundp ’defun) <em>→ true</em></p>
+<p>(symbol-function ’defun)</p>
+<p><em>→ implementation-dependent</em></p>
+<p>(functionp (symbol-function ’defun))</p>
+<p><em>→ implementation-dependent</em></p>
+<p>(defun symbol-function-or-nil (symbol)</p>
+<p>(if (and (fboundp symbol)</p>
+<p>(not (macro-function symbol))</p>
+<p>(not (special-operator-p symbol)))</p>
+<p>(symbol-function symbol)</p>
+<p>nil)) <em>→</em> SYMBOL-FUNCTION-OR-NIL</p>
+<p>(symbol-function-or-nil ’car) <em>→</em> #&lt;FUNCTION CAR&gt;</p>
+<p>(symbol-function-or-nil ’defun) <em>→</em> NIL</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>defun</strong></p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>symbol</em> is not a <em>symbol</em>.</p>
+<p>Should signal <strong>undefined-function</strong> if <em>symbol</em> is not <em>fbound</em> and an attempt is made to <em>read</em> its definition. (No such error is signaled on an attempt to <em>write</em> its definition.)</p>
+<p><strong>See Also:</strong></p>
+<p><strong>fboundp</strong>, <strong>fmakunbound</strong>, <strong>macro-function</strong>, <strong>special-operator-p</strong></p>
+<p><strong>Notes:</strong></p>
+<p><strong>symbol-function</strong> cannot <em>access</em> the value of a lexical function name produced by <strong>flet</strong> or <strong>labels</strong>; it can <em>access</em> only the global function value.</p>
+<p><strong>setf</strong> may be used with <strong>symbol-function</strong> to replace a global function definition when the <em>symbol</em>’s function definition does not represent a <em>special operator</em> .</p>
+<p>(symbol-function <em>symbol</em>) <em>≡</em> (fdefinition <em>symbol</em>)</p>
+<p>However, <strong>fdefinition</strong> accepts arguments other than just <em>symbols</em>.</p>
+<p><strong>symbol-name</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>symbol-name</strong> <em>symbol → name</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbol</em>—a <em>symbol</em>.</p>
+<p><em>name</em>—a <em>string</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>symbol-name</strong> returns the <em>name</em> of <em>symbol</em>. The consequences are undefined if <em>name</em> is ever modified.</p>
+<p><strong>Examples:</strong></p>
+<p>(symbol-name ’temp) <em>→</em> &quot;TEMP&quot;</p>
+<p>(symbol-name <!-- -->:start<!-- -->) <em>→</em> &quot;START&quot;</p>
+<p>(symbol-name (gensym)) <em>→</em> &quot;G1234&quot; ;for example</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>symbol</em> is not a <em>symbol</em>.</p>
+<p>Symbols <strong>10–13</strong></p>
+<p><strong>symbol-package</strong></p>
+<p><strong>symbol-package</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>symbol-package</strong> <em>symbol → contents</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbol</em>—a <em>symbol</em>.</p>
+<p><em>contents</em>—a <em>package object</em> or <strong>nil</strong>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns the <em>home package</em> of <em>symbol</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(in-package &quot;CL-USER&quot;) <em>→</em> #&lt;PACKAGE &quot;COMMON-LISP-USER&quot;&gt;</p>
+<p>(symbol-package ’car) <em>→</em> #&lt;PACKAGE &quot;COMMON-LISP&quot;&gt;</p>
+<p>(symbol-package ’bus) <em>→</em> #&lt;PACKAGE &quot;COMMON-LISP-USER&quot;&gt;</p>
+<p>(symbol-package <!-- -->:optional<!-- -->) <em>→</em> #&lt;PACKAGE &quot;KEYWORD&quot;&gt;</p>
+<p>;; Gensyms are uninterned, so have no home package.</p>
+<p>(symbol-package (gensym)) <em>→</em> NIL</p>
+<p>(make-package ’pk1) <em>→</em> #&lt;PACKAGE &quot;PK1&quot;&gt;</p>
+<p>(intern &quot;SAMPLE1&quot; &quot;PK1&quot;) <em>→</em> PK1::SAMPLE1, NIL</p>
+<p>(export (find-symbol &quot;SAMPLE1&quot; &quot;PK1&quot;) &quot;PK1&quot;) <em>→</em> T</p>
+<p>(make-package ’pk2 <!-- -->:use<!-- --> ’(pk1)) <em>→</em> #&lt;PACKAGE &quot;PK2&quot;&gt;</p>
+<p>(find-symbol &quot;SAMPLE1&quot; &quot;PK2&quot;) <em>→</em> PK1<!-- -->:SAMPLE1<!-- -->, <!-- -->:INHERITED</p>
+<p>(symbol-package ’pk1::sample1) <em>→</em> #&lt;PACKAGE &quot;PK1&quot;&gt;</p>
+<p>(symbol-package ’pk2::sample1) <em>→</em> #&lt;PACKAGE &quot;PK1&quot;&gt;</p>
+<p>(symbol-package ’pk1::sample2) <em>→</em> #&lt;PACKAGE &quot;PK1&quot;&gt;</p>
+<p>(symbol-package ’pk2::sample2) <em>→</em> #&lt;PACKAGE &quot;PK2&quot;&gt;</p>
+<p>;; The next several forms create a scenario in which a symbol</p>
+<p>;; is not really uninterned, but is &quot;apparently uninterned&quot;,</p>
+<p>;; and so SYMBOL-PACKAGE still returns NIL.</p>
+<p>(setq s3 ’pk1::sample3) <em>→</em> PK1::SAMPLE3</p>
+<p>(import s3 ’pk2) <em>→</em> T</p>
+<p>(unintern s3 ’pk1) <em>→</em> T</p>
+<p>(symbol-package s3) <em>→</em> NIL</p>
+<p>(eq s3 ’pk2::sample3) <em>→</em> T</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>import</strong>, <strong>intern</strong>, <strong>unintern</strong></p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>symbol</em> is not a <em>symbol</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>intern</strong></p>
+<p><strong>symbol-plist</strong> <em>Accessor</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>symbol-plist</strong> <em>symbol → plist</em></p>
+<p><strong>(setf (symbol-plist</strong> <em>symbol</em>**)** <em>new-plist</em>**)**</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbol</em>—a <em>symbol</em>.</p>
+<p><em>plist</em>, <em>new-plist</em>—a <em>property list</em>.</p>
+<p><strong>Description:</strong></p>
+<p><em>Accesses</em> the <em>property list</em> of <em>symbol</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(setq sym (gensym)) <em>→</em> #<!-- -->:G9723</p>
+<p>(symbol-plist sym) <em>→</em> ()</p>
+<p>(setf (get sym ’prop1) ’val1) <em>→</em> VAL1</p>
+<p>(symbol-plist sym) <em>→</em> (PROP1 VAL1)</p>
+<p>(setf (get sym ’prop2) ’val2) <em>→</em> VAL2</p>
+<p>(symbol-plist sym) <em>→</em> (PROP2 VAL2 PROP1 VAL1)</p>
+<p>(setf (symbol-plist sym) (list ’prop3 ’val3)) <em>→</em> (PROP3 VAL3)</p>
+<p>(symbol-plist sym) <em>→</em> (PROP3 VAL3)</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>symbol</em> is not a <em>symbol</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>get</strong>, <strong>remprop</strong></p>
+<p><strong>Notes:</strong></p>
+<p>The use of <strong>setf</strong> should be avoided, since a <em>symbol</em>’s <em>property list</em> is a global resource that can contain information established and depended upon by unrelated programs in the same <em>Lisp image</em>.</p>
+<p>Symbols <strong>10–15</strong></p>
+<p><strong>symbol-value</strong></p>
+<p><strong>symbol-value</strong> <em>Accessor</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>symbol-value</strong> <em>symbol → value</em></p>
+<p><strong>(setf (symbol-value</strong> <em>symbol</em>**)** <em>new-value</em>**)**</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbol</em>—a <em>symbol</em> that must have a <em>value</em>.</p>
+<p><em>value</em>, <em>new-value</em>—an <em>object</em>.</p>
+<p><strong>Description:</strong></p>
+<p><em>Accesses</em> the <em>symbol</em>’s <em>value cell</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(setf (symbol-value ’a) 1) <em>→</em> 1</p>
+<p>(symbol-value ’a) <em>→</em> 1</p>
+<p>;; SYMBOL-VALUE cannot see lexical variables.</p>
+<p>(let ((a 2)) (symbol-value ’a)) <em>→</em> 1</p>
+<p>(let ((a 2)) (setq a 3) (symbol-value ’a)) <em>→</em> 1</p>
+<p>;; SYMBOL-VALUE can see dynamic variables.</p>
+<p>(let ((a 2))</p>
+<p>(declare (special a))</p>
+<p>(symbol-value ’a)) <em>→</em> 2</p>
+<p>(let ((a 2))</p>
+<p>(declare (special a))</p>
+<p>(setq a 3)</p>
+<p>(symbol-value ’a)) <em>→</em> 3</p>
+<p>(let ((a 2))</p>
+<p>(setf (symbol-value ’a) 3)</p>
+<p>a) <em>→</em> 2</p>
+<p>a <em>→</em> 3</p>
+<p>(symbol-value ’a) <em>→</em> 3</p>
+<p>(let ((a 4))</p>
+<p>(declare (special a))</p>
+<p>(let ((b (symbol-value ’a)))</p>
+<p>(setf (symbol-value ’a) 5)</p>
+<p>(values a b))) <em>→</em> 5, 4</p>
+<p>a <em>→</em> 3</p>
+<p>(symbol-value <!-- -->:any-keyword<!-- -->) <em>→</em> <!-- -->:ANY-KEYWORD</p>
+<p>(symbol-value ’nil) <em>→</em> NIL</p>
+<p>(symbol-value ’()) <em>→</em> NIL</p>
+<p>;; The precision of this next one is <em>implementation-dependent</em>.</p>
+<p>(symbol-value ’pi) <em>→</em> 3.141592653589793d0</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>makunbound</strong>, <strong>set</strong>, <strong>setq</strong></p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>symbol</em> is not a <em>symbol</em>.</p>
+<p>Should signal <strong>unbound-variable</strong> if <em>symbol</em> is <em>unbound</em> and an attempt is made to <em>read</em> its <em>value</em>. (No such error is signaled on an attempt to <em>write</em> its <em>value</em>.)</p>
+<p><strong>See Also:</strong></p>
+<p><strong>boundp</strong>, <strong>makunbound</strong>, <strong>set</strong>, <strong>setq</strong></p>
+<p><strong>Notes:</strong></p>
+<p><strong>symbol-value</strong> can be used to get the value of a <em>constant variable</em>. <strong>symbol-value</strong> cannot <em>access</em> the value of a <em>lexical variable</em>.</p>
+<p><strong>get</strong> <em>Accessor</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>get</strong> <em>symbol indicator</em> &amp;optional <em>default → value</em></p>
+<p><strong>(setf (get</strong> <em>symbol indicator</em> &amp;optional <em>default</em>**)** <em>new-value</em>**)**</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbol</em>—a <em>symbol</em>.</p>
+<p><em>indicator</em>—an <em>object</em>.</p>
+<p><em>default</em>—an <em>object</em>. The default is <strong>nil</strong>.</p>
+<p><em>value</em>—if the indicated property exists, the <em>object</em> that is its <em>value</em>; otherwise, the specified <em>default</em>. <em>new-value</em>—an <em>object</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>get</strong> finds a <em>property</em> on the <em>property list</em> &lt;sub&gt;2&lt;/sub&gt; of <em>symbol</em> whose <em>property indicator</em> is <em>identical</em> to <em>indicator</em>, and returns its corresponding <em>property value</em>. If there are multiple <em>properties</em>&lt;sub&gt;1&lt;/sub&gt; with that <em>property indicator</em> , <strong>get</strong> uses the first such <em>property</em>. If there is no <em>property</em> with that <em>property indicator</em> , <em>default</em> is returned.</p>
+<p>Symbols <strong>10–17</strong></p>
+<p><strong>get</strong></p>
+<p><strong>setf</strong> of <strong>get</strong> may be used to associate a new <em>object</em> with an existing indicator already on the <em>symbol</em>’s <em>property list</em>, or to create a new assocation if none exists. If there are multiple <em>properties</em>&lt;sub&gt;1&lt;/sub&gt; with that <em>property indicator</em> , <strong>setf</strong> of <strong>get</strong> associates the <em>new-value</em> with the first such <em>property</em>. When a <strong>get</strong> <em>form</em> is used as a <strong>setf</strong> <em>place</em>, any <em>default</em> which is supplied is evaluated according to normal left-to-right evaluation rules, but its <em>value</em> is ignored.</p>
+<p><strong>Examples:</strong></p>
+<p>(defun make-person (first-name last-name)</p>
+<p>(let ((person (gensym &quot;PERSON&quot;)))</p>
+<p>(setf (get person ’first-name) first-name)</p>
+<p>(setf (get person ’last-name) last-name)</p>
+<p>person)) <em>→</em> MAKE-PERSON</p>
+<p>(defvar *john* (make-person &quot;John&quot; &quot;Dow&quot;)) <em>→</em> *JOHN*</p>
+<p>*john* <em>→</em> #<!-- -->:PERSON4603</p>
+<p>(defvar *sally* (make-person &quot;Sally&quot; &quot;Jones&quot;)) <em>→</em> *SALLY*</p>
+<p>(get *john* ’first-name) <em>→</em> &quot;John&quot;</p>
+<p>(get *sally* ’last-name) <em>→</em> &quot;Jones&quot;</p>
+<p>(defun marry (man woman married-name)</p>
+<p>(setf (get man ’wife) woman)</p>
+<p>(setf (get woman ’husband) man)</p>
+<p>(setf (get man ’last-name) married-name)</p>
+<p>(setf (get woman ’last-name) married-name)</p>
+<p>married-name) <em>→</em> MARRY</p>
+<p>(marry *john* *sally* &quot;Dow-Jones&quot;) <em>→</em> &quot;Dow-Jones&quot;</p>
+<p>(get *john* ’last-name) <em>→</em> &quot;Dow-Jones&quot;</p>
+<p>(get (get *john* ’wife) ’first-name) <em>→</em> &quot;Sally&quot;</p>
+<p>(symbol-plist *john*)</p>
+<p><em>→</em> (WIFE #<!-- -->:PERSON4604<!-- --> LAST-NAME &quot;Dow-Jones&quot; FIRST-NAME &quot;John&quot;)</p>
+<p>(defmacro age (person &amp;optional (default ”thirty-something))</p>
+<p>‘(get ,person ’age ,default)) <em>→</em> AGE</p>
+<p>(age *john*) <em>→</em> THIRTY-SOMETHING</p>
+<p>(age *john* 20) <em>→</em> 20</p>
+<p>(setf (age *john*) 25) <em>→</em> 25</p>
+<p>(age *john*) <em>→</em> 25</p>
+<p>(age *john* 20) <em>→</em> 25</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>symbol</em> is not a <em>symbol</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>getf</strong>, <strong>symbol-plist</strong>, <strong>remprop</strong></p>
+<p><strong>Notes:</strong></p>
+<p>(get x y) <em>≡</em> (getf (symbol-plist x) y)</p>
+<p><em>Numbers</em> and <em>characters</em> are not recommended for use as <em>indicators</em> in portable code since <strong>get</strong> tests with <strong>eq</strong> rather than <strong>eql</strong>, and consequently the effect of using such <em>indicators</em> is <em>implementation-dependent</em>.</p>
+<p>There is no way using <strong>get</strong> to distinguish an absent property from one whose value is <em>default</em>. However, see <strong>get-properties</strong>.</p>
+<p><strong>remprop</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>remprop</strong> <em>symbol indicator → generalized-boolean</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbol</em>—a <em>symbol</em>.</p>
+<p><em>indicator</em>—an <em>object</em>.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>remprop</strong> removes from the <em>property list</em> &lt;sub&gt;2&lt;/sub&gt; of <em>symbol</em> a <em>property</em>&lt;sub&gt;1&lt;/sub&gt; with a <em>property indicator identical</em> to <em>indicator</em>. If there are multiple <em>properties</em>&lt;sub&gt;1&lt;/sub&gt; with the <em>identical</em> key, <strong>remprop</strong> only removes the first such <em>property</em>. <strong>remprop</strong> returns <em>false</em> if no such <em>property</em> was found, or <em>true</em> if a property was found.</p>
+<p>The <em>property indicator</em> and the corresponding <em>property value</em> are removed in an undefined order by destructively splicing the property list. The permissible side-effects correspond to those permitted for <strong>remf</strong>, such that:</p>
+<p>(remprop <em>x y</em>) <em>≡</em> (remf (symbol-plist <em>x</em>) <em>y</em>)</p>
+<p><strong>Examples:</strong></p>
+<p>(setq test (make-symbol &quot;PSEUDO-PI&quot;)) <em>→</em> #<!-- -->:PSEUDO-PI</p>
+<p>(symbol-plist test) <em>→</em> ()</p>
+<p>(setf (get test ’constant) t) <em>→</em> T</p>
+<p>(setf (get test ’approximation) 3.14) <em>→</em> 3.14</p>
+<p>(setf (get test ’error-range) ’noticeable) <em>→</em> NOTICEABLE</p>
+<p>(symbol-plist test)</p>
+<p><em>→</em> (ERROR-RANGE NOTICEABLE APPROXIMATION 3.14 CONSTANT T)</p>
+<p>(setf (get test ’approximation) nil) <em>→</em> NIL</p>
+<p>(symbol-plist test)</p>
+<p><em>→</em> (ERROR-RANGE NOTICEABLE APPROXIMATION NIL CONSTANT T)</p>
+<p>(get test ’approximation) <em>→</em> NIL</p>
+<p>Symbols <strong>10–19</strong></p>
+<p>(remprop test ’approximation) <em>→ true</em></p>
+<p>(get test ’approximation) <em>→</em> NIL</p>
+<p>(symbol-plist test)</p>
+<p><em>→</em> (ERROR-RANGE NOTICEABLE CONSTANT T)</p>
+<p>(remprop test ’approximation) <em>→</em> NIL</p>
+<p>(symbol-plist test)</p>
+<p><em>→</em> (ERROR-RANGE NOTICEABLE CONSTANT T)</p>
+<p>(remprop test ’error-range) <em>→ true</em></p>
+<p>(setf (get test ’approximation) 3) <em>→</em> 3</p>
+<p>(symbol-plist test)</p>
+<p><em>→</em> (APPROXIMATION 3 CONSTANT T)</p>
+<p><strong>Side Effects:</strong></p>
+<p>The <em>property list</em> of <em>symbol</em> is modified.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>symbol</em> is not a <em>symbol</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>remf</strong>, <strong>symbol-plist</strong></p>
+<p><strong>Notes:</strong></p>
+<p><em>Numbers</em> and <em>characters</em> are not recommended for use as <em>indicators</em> in portable code since <strong>remprop</strong> tests with <strong>eq</strong> rather than <strong>eql</strong>, and consequently the effect of using such <em>indicators</em> is <em>implementation-dependent</em>. Of course, if you’ve gotten as far as needing to remove such a <em>property</em>, you don’t have much choice—the time to have been thinking about this was when you used <strong>setf</strong> of <strong>get</strong> to establish the <em>property</em>.</p>
+<p><strong>boundp</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>boundp</strong> <em>symbol → generalized-boolean</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbol</em>—a <em>symbol</em>.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns <em>true</em> if <em>symbol</em> is <em>bound</em>; otherwise, returns <em>false</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(setq x 1) <em>→</em> 1</p>
+<p>(boundp ’x) <em>→ true</em></p>
+<p>(makunbound ’x) <em>→</em> X</p>
+<p>(boundp ’x) <em>→ false</em></p>
+<p>(let ((x 2)) (boundp ’x)) <em>→ false</em></p>
+<p>(let ((x 2)) (declare (special x)) (boundp ’x)) <em>→ true</em></p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>symbol</em> is not a <em>symbol</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>set</strong>, <strong>setq</strong>, <strong>symbol-value</strong>, <strong>makunbound</strong></p>
+<p><strong>Notes:</strong></p>
+<p>The <em>function</em> <strong>bound</strong> determines only whether a <em>symbol</em> has a value in the <em>global environment</em>; any <em>lexical bindings</em> are ignored.</p>
+<p><strong>makunbound</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>makunbound</strong> <em>symbol → symbol</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbol</em>—a <em>symbol</em></p>
+<p><strong>Description:</strong></p>
+<p>Makes the <em>symbol</em> be <em>unbound</em>, regardless of whether it was previously <em>bound</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(setf (symbol-value ’a) 1)</p>
+<p>(boundp ’a) <em>→ true</em></p>
+<p>a <em>→</em> 1</p>
+<p>(makunbound ’a) <em>→</em> A</p>
+<p>(boundp ’a) <em>→ false</em></p>
+<p><strong>Side Effects:</strong></p>
+<p>The <em>value cell</em> of <em>symbol</em> is modified.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>symbol</em> is not a <em>symbol</em>.</p>
+<p>Symbols <strong>10–21</strong></p>
+<p><strong>See Also:</strong></p>
+<p><strong>boundp</strong>, <strong>fmakunbound</strong></p>
+<p><strong>set</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>set</strong> <em>symbol value → value</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbol</em>—a <em>symbol</em>.</p>
+<p><em>value</em>—an <em>object</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>set</strong> changes the contents of the <em>value cell</em> of <em>symbol</em> to the given <em>value</em>.</p>
+<p>(set <em>symbol value</em>) <em>≡</em> (setf (symbol-value <em>symbol</em>) <em>value</em>)</p>
+<p><strong>Examples:</strong></p>
+<p>(setf (symbol-value ’n) 1) <em>→</em> 1</p>
+<p>(set ’n 2) <em>→</em> 2</p>
+<p>(symbol-value ’n) <em>→</em> 2</p>
+<p>(let ((n 3))</p>
+<p>(declare (special n))</p>
+<p>(setq n (+ n 1))</p>
+<p>(setf (symbol-value ’n) (* n 10))</p>
+<p>(set ’n (+ (symbol-value ’n) n))</p>
+<p>n) <em>→</em> 80</p>
+<p>n <em>→</em> 2</p>
+<p>(let ((n 3))</p>
+<p>(setq n (+ n 1))</p>
+<p>(setf (symbol-value ’n) (* n 10))</p>
+<p>(set ’n (+ (symbol-value ’n) n))</p>
+<p>n) <em>→</em> 4</p>
+<p>n <em>→</em> 44</p>
+<p>(defvar *n* 2)</p>
+<p>(let ((*n* 3))</p>
+<p>(setq *n* (+ *n* 1))</p>
+<p>(setf (symbol-value ’*n*) (* *n* 10))</p>
+<p>(set ’*n* (+ (symbol-value ’*n*) *n*))</p>
+<p>*n*) <em>→</em> 80</p>
+<p>*n* <em>→</em> 2</p>
+<p>(defvar *even-count* 0) <em>→</em> *EVEN-COUNT*</p>
+<p>(defvar *odd-count* 0) <em>→</em> *ODD-COUNT*</p>
+<p>(defun tally-list (list)</p>
+<p>(dolist (element list)</p>
+<p>(set (if (evenp element) ’*even-count* ’*odd-count*)</p>
+<p>(+ element (if (evenp element) *even-count* *odd-count*)))))</p>
+<p>(tally-list ’(1 9 4 3 2 7)) <em>→</em> NIL</p>
+<p>*even-count* <em>→</em> 6</p>
+<p>*odd-count* <em>→</em> 20</p>
+<p><strong>Side Effects:</strong></p>
+<p>The <em>value</em> of <em>symbol</em> is changed.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>setq</strong>, <strong>progv</strong>, <strong>symbol-value</strong></p>
+<p><strong>Notes:</strong></p>
+<p>The function <strong>set</strong> is deprecated.</p>
+<p><strong>set</strong> cannot change the value of a <em>lexical variable</em>.</p>
+<p><strong>unbound-variable</strong> <em>Condition Type</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>unbound-variable</strong>, <strong>cell-error</strong>, <strong>error</strong>, <strong>serious-condition</strong>, <strong>condition</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>The <em>type</em> <strong>unbound-variable</strong> consists of <em>error conditions</em> that represent attempts to <em>read</em> the <em>value</em> of an <em>unbound variable</em>.</p>
+<p>The name of the cell (see <strong>cell-error</strong>) is the <em>name</em> of the <em>variable</em> that was <em>unbound</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>cell-error-name</strong></p>
+<p>Symbols <strong>10–23</strong></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/chap-10/ba-b-symbol-concepts.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/cl-language-reference/docs/category/10-symbols"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">10. Symbols</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/cl-language-reference/docs/chap-10/intro"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">intro</div></a></nav></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/docs/intro">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-chap-16/bg-b-string-concepts" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.0">
+<title data-rh="true">16.1 String Concepts | Common Lisp (New) Language Reference</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://lisp-docs.github.io/cl-language-reference/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://lisp-docs.github.io/cl-language-reference/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://lisp-docs.github.io/cl-language-reference/docs/chap-16/bg-b-string-concepts"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="16.1 String Concepts | Common Lisp (New) Language Reference"><meta data-rh="true" name="description" content="16.1.1 Implications of Strings Being Arrays"><meta data-rh="true" property="og:description" content="16.1.1 Implications of Strings Being Arrays"><link data-rh="true" rel="icon" href="/cl-language-reference/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-16/bg-b-string-concepts"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-16/bg-b-string-concepts" hreflang="en"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-16/bg-b-string-concepts" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/cl-language-reference/blog/rss.xml" title="Common Lisp (New) Language Reference RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/cl-language-reference/blog/atom.xml" title="Common Lisp (New) Language Reference Atom Feed"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.d3a7613c.css">
+<script src="/cl-language-reference/assets/js/runtime~main.a7e86bbf.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/main.89f4b5c9.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/cl-language-reference/"><div class="navbar__logo"><img src="/cl-language-reference/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/cl-language-reference/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">My Site</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/cl-language-reference/docs/intro">Tutorial</a><a class="navbar__item navbar__link" href="/cl-language-reference/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/intro">Tutorial Intro</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/tutorial---basics">Tutorial - Basics</a><button aria-label="Expand sidebar category &#x27;Tutorial - Basics&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/tutorial---extras">Tutorial - Extras</a><button aria-label="Expand sidebar category &#x27;Tutorial - Extras&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/chapter-3">Chapter 3</a><button aria-label="Expand sidebar category &#x27;Chapter 3&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/nil">NIL</a><button aria-label="Expand sidebar category &#x27;NIL&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/1-introduction">1. Introduction</a><button aria-label="Expand sidebar category &#x27;1. Introduction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/10-symbols">10. Symbols</a><button aria-label="Expand sidebar category &#x27;10. Symbols&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/11-packages">11. Packages</a><button aria-label="Expand sidebar category &#x27;11. Packages&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/12-numbers">12. Numbers</a><button aria-label="Expand sidebar category &#x27;12. Numbers&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/13-characters">13. Characters</a><button aria-label="Expand sidebar category &#x27;13. Characters&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/14-conses">14. Conses</a><button aria-label="Expand sidebar category &#x27;14. Conses&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/15-arrays">15. Arrays</a><button aria-label="Expand sidebar category &#x27;15. Arrays&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/cl-language-reference/docs/category/16-strings">16. Strings</a><button aria-label="Collapse sidebar category &#x27;16. Strings&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/cl-language-reference/docs/chap-16/bg-b-string-concepts">16.1 String Concepts</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cl-language-reference/docs/chap-16/intro">intro</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/17-sequences">17. Sequences</a><button aria-label="Expand sidebar category &#x27;17. Sequences&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/18-hash-tables">18. Hash Tables</a><button aria-label="Expand sidebar category &#x27;18. Hash Tables&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/19-filenames">19. Filenames</a><button aria-label="Expand sidebar category &#x27;19. Filenames&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/2-syntax">2. Syntax</a><button aria-label="Expand sidebar category &#x27;2. Syntax&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap-2">chap-2</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/20-files">20. Files</a><button aria-label="Expand sidebar category &#x27;20. Files&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/21-streams">21. Streams</a><button aria-label="Expand sidebar category &#x27;21. Streams&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/22-printer">22. Printer</a><button aria-label="Expand sidebar category &#x27;22. Printer&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/23-reader">23. Reader</a><button aria-label="Expand sidebar category &#x27;23. Reader&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/24-system-construction">24. System Construction</a><button aria-label="Expand sidebar category &#x27;24. System Construction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/25-environment">25. Environment</a><button aria-label="Expand sidebar category &#x27;25. Environment&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/26-glossary">26. Glossary</a><button aria-label="Expand sidebar category &#x27;26. Glossary&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/3-evaluation-and-compilation">3. Evaluation and Compilation</a><button aria-label="Expand sidebar category &#x27;3. Evaluation and Compilation&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap-3">chap-3</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/4-types-and-classes">4. Types and Classes</a><button aria-label="Expand sidebar category &#x27;4. Types and Classes&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/5-data-and-control-flow">5. Data and Control Flow</a><button aria-label="Expand sidebar category &#x27;5. Data and Control Flow&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/6-iteration">6. Iteration</a><button aria-label="Expand sidebar category &#x27;6. Iteration&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/7-objects">7. Objects</a><button aria-label="Expand sidebar category &#x27;7. Objects&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/8-structures">8. Structures</a><button aria-label="Expand sidebar category &#x27;8. Structures&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/9-conditions">9. Conditions</a><button aria-label="Expand sidebar category &#x27;9. Conditions&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/a-appendix">A. Appendix</a><button aria-label="Expand sidebar category &#x27;A. Appendix&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap2">chap2</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/cl-language-reference/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/cl-language-reference/docs/category/16-strings"><span itemprop="name">16. Strings</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">16.1 String Concepts</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>16.1 String Concepts</h1>
+<!-- -->
+<p><strong>16.1 String Concepts</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1611-implications-of-strings-being-arrays">16.1.1 Implications of Strings Being Arrays<a href="#1611-implications-of-strings-being-arrays" class="hash-link" aria-label="Direct link to 16.1.1 Implications of Strings Being Arrays" title="Direct link to 16.1.1 Implications of Strings Being Arrays">​</a></h2>
+<!-- -->
+<p><strong>16.1.1 Implications of Strings Being Arrays</strong></p>
+<p>Since all <em>strings</em> are <em>arrays</em>, all rules which apply generally to <em>arrays</em> also apply to <em>strings</em>. See Section 15.1 (Array Concepts).</p>
+<p>For example, <em>strings</em> can have <em>fill pointers</em>, and <em>strings</em> are also subject to the rules of <em>element type upgrading</em> that apply to <em>arrays</em>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1612-subtypes-of-string">16.1.2 Subtypes of STRING<a href="#1612-subtypes-of-string" class="hash-link" aria-label="Direct link to 16.1.2 Subtypes of STRING" title="Direct link to 16.1.2 Subtypes of STRING">​</a></h2>
+<!-- -->
+<!-- -->
+<p><strong>16.1.2 Subtypes of STRING</strong></p>
+<p>All functions that operate on <em>strings</em> will operate on <em>subtypes</em> of <em>string</em> as well.</p>
+<p>However, the consequences are undefined if a <em>character</em> is inserted into a <em>string</em> for which the <em>element type</em> of the <em>string</em> does not include that <em>character</em> .</p>
+<p>Strings <strong>16–1</strong></p>
+<p><strong>string</strong> <em>System Class</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>string</strong>, <strong>vector</strong>, <strong>array</strong>, <strong>sequence</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>A <em>string</em> is a <em>specialized vector</em> whose <em>elements</em> are of <em>type</em> <strong>character</strong> or a <em>subtype</em> of <em>type</em> <strong>character</strong>. When used as a <em>type specifier</em> for object creation, <strong>string</strong> means (vector character).</p>
+<p><strong>Compound Type Specifier Kind:</strong></p>
+<p>Abbreviating.</p>
+<p><strong>Compound Type Specifier Syntax:</strong></p>
+<p>(string [<em>size</em>])</p>
+<p><strong>Compound Type Specifier Arguments:</strong></p>
+<p><em>size</em>—a non-negative <em>fixnum</em>, or the <em>symbol</em> <strong>*</strong>.</p>
+<p><strong>Compound Type Specifier Description:</strong></p>
+<p>This denotes the union of all <em>types</em> (array <em>c</em> (<em>size</em>)) for all <em>subtypes c</em> of <strong>character</strong>; that is, the set of <em>strings</em> of size <em>size</em>.</p>
+<p><strong>See Also:</strong></p>
+<p>Section 16.1 (String Concepts), Section 2.4.5 (Double-Quote), Section 22.1.3.4 (Printing Strings) <strong>base-string</strong> <em>Type</em></p>
+<p><strong>Supertypes:</strong></p>
+<p><strong>base-string</strong>, <strong>string</strong>, <strong>vector</strong>, <strong>array</strong>, <strong>sequence</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>The <em>type</em> <strong>base-string</strong> is equivalent to (vector base-char). The <em>base string</em> representation is the most efficient <em>string</em> representation that can hold an arbitrary sequence of <em>standard characters</em>.</p>
+<p><strong>Compound Type Specifier Kind:</strong></p>
+<p>Abbreviating.</p>
+<p><strong>Compound Type Specifier Syntax:</strong></p>
+<p>(base-string [<em>size</em>])</p>
+<p><strong>Compound Type Specifier Arguments:</strong></p>
+<p><em>size</em>—a non-negative <em>fixnum</em>, or the <em>symbol</em> <strong>*</strong>.</p>
+<p><strong>Compound Type Specifier Description:</strong></p>
+<p>This is equivalent to the type (vector base-char <em>size</em>); that is, the set of <em>base strings</em> of size <em>size</em>. <strong>simple-string</strong> <em>Type</em></p>
+<p><strong>Supertypes:</strong></p>
+<p><strong>simple-string</strong>, <strong>string</strong>, <strong>vector</strong>, <strong>simple-array</strong>, <strong>array</strong>, <strong>sequence</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>A <em>simple string</em> is a specialized one-dimensional <em>simple array</em> whose <em>elements</em> are of <em>type</em> <strong>character</strong> or a <em>subtype</em> of <em>type</em> <strong>character</strong>. When used as a <em>type specifier</em> for object creation, <strong>simple-string</strong> means (simple-array character (<em>size</em>)).</p>
+<p><strong>Compound Type Specifier Kind:</strong></p>
+<p>Abbreviating.</p>
+<p><strong>Compound Type Specifier Syntax:</strong></p>
+<p>(simple-string [<em>size</em>])</p>
+<p><strong>Compound Type Specifier Arguments:</strong></p>
+<p><em>size</em>—a non-negative <em>fixnum</em>, or the <em>symbol</em> <strong>*</strong>.</p>
+<p><strong>Compound Type Specifier Description:</strong></p>
+<p>This denotes the union of all <em>types</em> (simple-array <em>c</em> (<em>size</em>)) for all <em>subtypes c</em> of <strong>character</strong>; that is, the set of <em>simple strings</em> of size <em>size</em>.</p>
+<p>Strings <strong>16–3</strong></p>
+<p><strong>simple-base-string</strong> <em>Type</em></p>
+<p><strong>Supertypes:</strong></p>
+<p><strong>simple-base-string</strong>, <strong>base-string</strong>, <strong>simple-string</strong>, <strong>string</strong>, <strong>vector</strong>, <strong>simple-array</strong>, <strong>array</strong>, <strong>sequence</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>The <em>type</em> <strong>simple-base-string</strong> is equivalent to (simple-array base-char (*)).</p>
+<p><strong>Compound Type Specifier Kind:</strong></p>
+<p>Abbreviating.</p>
+<p><strong>Compound Type Specifier Syntax:</strong></p>
+<p>(simple-base-string [<em>size</em>])</p>
+<p><strong>Compound Type Specifier Arguments:</strong></p>
+<p><em>size</em>—a non-negative <em>fixnum</em>, or the <em>symbol</em> <strong>*</strong>.</p>
+<p><strong>Compound Type Specifier Description:</strong></p>
+<p>This is equivalent to the type (simple-array base-char (<em>size</em>)); that is, the set of <em>simple base strings</em> of size <em>size</em>.</p>
+<p><strong>simple-string-p</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>simple-string-p</strong> <em>object → generalized-boolean</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>object</em>—an <em>object</em>.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns <em>true</em> if <em>object</em> is of <em>type</em> <strong>simple-string</strong>; otherwise, returns <em>false</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(simple-string-p &quot;aaaaaa&quot;) <em>→ true</em></p>
+<p>(simple-string-p (make-array 6</p>
+<p>:element-type<!-- --> ’character</p>
+<p>:fill-pointer<!-- --> t)) <em>→ false</em></p>
+<p><strong>Notes:</strong></p>
+<p>(simple-string-p <em>object</em>) <em>≡</em> (typep <em>object</em> ’simple-string)</p>
+<p><strong>char, schar</strong> <em>Accessor</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>char</strong> <em>string index → character</em></p>
+<p><strong>schar</strong> <em>string index → character</em></p>
+<p><strong>(setf (char</strong> <em>string index</em>**)** <em>new-character</em>**)**</p>
+<p><strong>(setf (schar</strong> <em>string index</em>**)** <em>new-character</em>**)**</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>string</em>—for <strong>char</strong>, a <em>string</em>; for <strong>schar</strong>, a <em>simple string</em>.</p>
+<p><em>index</em>—a <em>valid array index</em> for the <em>string</em>.</p>
+<p><em>character</em>, <em>new-character</em>—a <em>character</em> .</p>
+<p><strong>Description:</strong></p>
+<p><strong>char</strong> and <strong>schar</strong> <em>access</em> the <em>element</em> of <em>string</em> specified by <em>index</em>.</p>
+<p><strong>char</strong> ignores <em>fill pointers</em> when <em>accessing elements</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(setq my-simple-string (make-string 6 <!-- -->:initial-element<!-- --> #\A)) <em>→</em> &quot;AAAAAA&quot;</p>
+<p>(schar my-simple-string 4) <em>→</em> #\A</p>
+<p>(setf (schar my-simple-string 4) #\B) <em>→</em> #\B</p>
+<p>my-simple-string <em>→</em> &quot;AAAABA&quot;</p>
+<p>(setq my-filled-string</p>
+<p>(make-array 6 <!-- -->:element-type<!-- --> ’character</p>
+<p>:fill-pointer<!-- --> 5</p>
+<p>:initial-contents<!-- --> my-simple-string))</p>
+<p><em>→</em> &quot;AAAAB&quot;</p>
+<p>(char my-filled-string 4) <em>→</em> #\B</p>
+<p>(char my-filled-string 5) <em>→</em> #\A</p>
+<p>(setf (char my-filled-string 3) #\C) <em>→</em> #\C</p>
+<p>(setf (char my-filled-string 5) #\D) <em>→</em> #\D</p>
+<p>(setf (fill-pointer my-filled-string) 6) <em>→</em> 6</p>
+<p>my-filled-string <em>→</em> &quot;AAACBD&quot;</p>
+<p>Strings <strong>16–5</strong></p>
+<p><strong>See Also:</strong></p>
+<p><strong>aref</strong>, <strong>elt</strong>, Section 3.2.1 (Compiler Terminology)</p>
+<p><strong>Notes:</strong></p>
+<p>(char s j) <em>≡</em> (aref (the string s) j)</p>
+<p><strong>string</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>string</strong> <em>x → string</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>x</em>—a <em>string</em>, a <em>symbol</em>, or a <em>character</em> .</p>
+<p><em>string</em>—a <em>string</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns a <em>string</em> described by <em>x</em>; specifically:</p>
+<p><em>•</em> If <em>x</em> is a <em>string</em>, it is returned.</p>
+<p><em>•</em> If <em>x</em> is a <em>symbol</em>, its <em>name</em> is returned.</p>
+<p><em>•</em> If <em>x</em> is a <em>character</em> , then a <em>string</em> containing that one <em>character</em> is returned.</p>
+<p><em>•</em> <strong>string</strong> might perform additional, <em>implementation-defined</em> conversions.</p>
+<p><strong>Examples:</strong></p>
+<p>(string &quot;already a string&quot;) <em>→</em> &quot;already a string&quot;</p>
+<p>(string ’elm) <em>→</em> &quot;ELM&quot;</p>
+<p>(string #\c) <em>→</em> &quot;c&quot;</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>In the case where a conversion is defined neither by this specification nor by the <em>implementation</em>, an error of <em>type</em> <strong>type-error</strong> is signaled.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>coerce</strong>, <strong>string</strong> (<em>type</em>).</p>
+<p><strong>Notes:</strong></p>
+<p><strong>coerce</strong> can be used to convert a <em>sequence</em> of <em>characters</em> to a <em>string</em>.</p>
+<p><strong>prin1-to-string</strong>, <strong>princ-to-string</strong>, <strong>write-to-string</strong>, or <strong>format</strong> (with a first argument of <strong>nil</strong>) can be used to get a <em>string</em> representation of a <em>number</em> or any other <em>object</em>.</p>
+<p>&lt;b&gt;string-upcase, string-downcase, string-capitalize, &lt;sup&gt;nstring-upcase, nstring-downcase, nstring&lt;/sup&gt; capitalize&lt;/b&gt; &lt;i&gt;Function&lt;/i&gt;</p>
+<p><strong>Syntax:</strong></p>
+<p><strong>string-upcase</strong> <em>string</em> &amp;key <em>start end → cased-string</em></p>
+<p><strong>string-downcase</strong> <em>string</em> &amp;key <em>start end → cased-string</em></p>
+<p><strong>string-capitalize</strong> <em>string</em> &amp;key <em>start end → cased-string</em></p>
+<p><strong>nstring-upcase</strong> <em>string</em> &amp;key <em>start end → string</em></p>
+<p><strong>nstring-downcase</strong> <em>string</em> &amp;key <em>start end → string</em></p>
+<p><strong>nstring-capitalize</strong> <em>string</em> &amp;key <em>start end → string</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>string</em>—a <em>string designator</em> . For <strong>nstring-upcase</strong>, <strong>nstring-downcase</strong>, and <strong>nstring-capitalize</strong>, the <em>string designator</em> must be a <em>string</em>.</p>
+<p><em>start</em>, <em>end</em>—<em>bounding index designators</em> of <em>string</em>. The defaults for <em>start</em> and <em>end</em> are 0 and <strong>nil</strong>, respectively.</p>
+<p><em>cased-string</em>—a <em>string</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>string-upcase</strong>, <strong>string-downcase</strong>, <strong>string-capitalize</strong>, <strong>nstring-upcase</strong>, <strong>nstring-downcase</strong>, <strong>nstring-capitalize</strong> change the case of the subsequence of <em>string bounded</em> by <em>start</em> and <em>end</em> as follows:</p>
+<p><strong>string-upcase</strong></p>
+<p><strong>string-upcase</strong> returns a <em>string</em> just like <em>string</em> with all lowercase characters replaced by the corresponding uppercase characters. More precisely, each character of the result <em>string</em> is produced by applying the <em>function</em> <strong>char-upcase</strong> to the corresponding character of <em>string</em>.</p>
+<p><strong>string-downcase</strong></p>
+<p><strong>string-downcase</strong> is like <strong>string-upcase</strong> except that all uppercase characters are replaced by the corresponding lowercase characters (using <strong>char-downcase</strong>).</p>
+<p>Strings <strong>16–7</strong></p>
+<p><strong>string-upcase, string-downcase, string-capitalize,</strong> <em>. . .</em></p>
+<p><strong>string-capitalize</strong></p>
+<p><strong>string-capitalize</strong> produces a copy of <em>string</em> such that, for every word in the copy, the first <em>character</em> of the “word,” if it has <em>case</em>, is <em>uppercase</em> and any other <em>characters</em> with <em>case</em> in the word are <em>lowercase</em>. For the purposes of <strong>string-capitalize</strong>, a “word” is defined to be a consecutive subsequence consisting of <em>alphanumeric characters</em>, delimited at each end either by a non-<em>alphanumeric character</em> or by an end of the <em>string</em>.</p>
+<p><strong>nstring-upcase, nstring-downcase, nstring-capitalize</strong></p>
+<p><strong>nstring-upcase</strong>, <strong>nstring-downcase</strong>, and <strong>nstring-capitalize</strong> are identical to <strong>string-upcase</strong>, <strong>string-downcase</strong>, and <strong>string-capitalize</strong> respectively except that they modify <em>string</em>.</p>
+<p>For <strong>string-upcase</strong>, <strong>string-downcase</strong>, and <strong>string-capitalize</strong>, <em>string</em> is not modified. However, if no characters in <em>string</em> require conversion, the result may be either <em>string</em> or a copy of it, at the implementation’s discretion.</p>
+<p><strong>Examples:</strong></p>
+<p>(string-upcase &quot;abcde&quot;) <em>→</em> &quot;ABCDE&quot;</p>
+<p>(string-upcase &quot;Dr. Livingston, I presume?&quot;)</p>
+<p><em>→</em> &quot;DR. LIVINGSTON, I PRESUME?&quot;</p>
+<p>(string-upcase &quot;Dr. Livingston, I presume?&quot; <!-- -->:start<!-- --> 6 <!-- -->:end<!-- --> 10)</p>
+<p><em>→</em> &quot;Dr. LiVINGston, I presume?&quot;</p>
+<p>(string-downcase &quot;Dr. Livingston, I presume?&quot;)</p>
+<p><em>→</em> &quot;dr. livingston, i presume?&quot;</p>
+<p>(string-capitalize &quot;elm 13c arthur;fig don’t&quot;) <em>→</em> &quot;Elm 13c Arthur;Fig Don’T&quot;</p>
+<p>(string-capitalize &quot; hello &quot;) <em>→</em> &quot; Hello &quot;</p>
+<p>(string-capitalize &quot;occlUDeD cASEmenTs FOreSTAll iNADVertent DEFenestraTION&quot;) <em>→</em> &quot;Occluded Casements Forestall Inadvertent Defenestration&quot;</p>
+<p>(string-capitalize ’kludgy-hash-search) <em>→</em> &quot;Kludgy-Hash-Search&quot;</p>
+<p>(string-capitalize &quot;DON’T!&quot;) <em>→</em> &quot;Don’T!&quot; ;not &quot;Don’t!&quot;</p>
+<p>(string-capitalize &quot;pipe 13a, foo16c&quot;) <em>→</em> &quot;Pipe 13a, Foo16c&quot;</p>
+<p>(setq str (copy-seq &quot;0123ABCD890a&quot;)) <em>→</em> &quot;0123ABCD890a&quot;</p>
+<p>(nstring-downcase str <!-- -->:start<!-- --> 5 <!-- -->:end<!-- --> 7) <em>→</em> &quot;0123AbcD890a&quot;</p>
+<p>str <em>→</em> &quot;0123AbcD890a&quot;</p>
+<p><strong>Side Effects:</strong></p>
+<p><strong>nstring-upcase</strong>, <strong>nstring-downcase</strong>, and <strong>nstring-capitalize</strong> modify <em>string</em> as appropriate rather than constructing a new <em>string</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>char-upcase</strong>, <strong>char-downcase</strong></p>
+<p><strong>Notes:</strong></p>
+<p>The result is always of the same length as <em>string</em>.</p>
+<p><strong>string-trim, string-left-trim, string-right-trim</strong> <em>Func tion</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>string-trim</strong> <em>character-bag string → trimmed-string</em></p>
+<p><strong>string-left-trim</strong> <em>character-bag string → trimmed-string</em></p>
+<p><strong>string-right-trim</strong> <em>character-bag string → trimmed-string</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>character-bag</em>—a <em>sequence</em> containing <em>characters</em>.</p>
+<p><em>string</em>—a <em>string designator</em> .</p>
+<p><em>trimmed-string</em>—a <em>string</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>string-trim</strong> returns a substring of <em>string</em>, with all characters in <em>character-bag</em> stripped off the beginning and end. <strong>string-left-trim</strong> is similar but strips characters off only the beginning; <strong>string-right-trim</strong> strips off only the end.</p>
+<p>If no <em>characters</em> need to be trimmed from the <em>string</em>, then either <em>string</em> itself or a copy of it may be returned, at the discretion of the implementation.</p>
+<p>All of these <em>functions</em> observe the <em>fill pointer</em> .</p>
+<p><strong>Examples:</strong></p>
+<p>(string-trim &quot;abc&quot; &quot;abcaakaaakabcaaa&quot;) <em>→</em> &quot;kaaak&quot;</p>
+<p>(string-trim ’(#\Space #\Tab #\Newline) &quot; garbanzo beans</p>
+<p>&quot;) <em>→</em> &quot;garbanzo beans&quot;</p>
+<p>(string-trim &quot; (*)&quot; &quot; ( *three (silly) words* ) &quot;)</p>
+<p><em>→</em> &quot;three (silly) words&quot;</p>
+<p>(string-left-trim &quot;abc&quot; &quot;labcabcabc&quot;) <em>→</em> &quot;labcabcabc&quot;</p>
+<p>(string-left-trim &quot; (*)&quot; &quot; ( *three (silly) words* ) &quot;)</p>
+<p><em>→</em> &quot;three (silly) words* ) &quot;</p>
+<p>(string-right-trim &quot; (*)&quot; &quot; ( *three (silly) words* ) &quot;)</p>
+<p><em>→</em> &quot; ( *three (silly) words&quot;</p>
+<p>Strings <strong>16–9</strong></p>
+<p><strong>Affected By:</strong></p>
+<p>The <em>implementation</em>.</p>
+<p>&lt;b&gt;string=, string/=, string&lt;/b&gt;&lt;i&gt;&lt;&lt;/i&gt;&lt;b&gt;, string&lt;/b&gt;&lt;i&gt;&gt;&lt;/i&gt;&lt;b&gt;, string&lt;/b&gt;&lt;i&gt;&lt;&lt;/i&gt;&lt;b&gt;=, &lt;sup&gt;string&lt;/sup&gt;&lt;/b&gt;&gt;&lt;/i&gt;&lt;b&gt;=, string-equal, string-not-equal, string lessp, string-greaterp, string-not-greaterp, string not-lessp&lt;/b&gt; &lt;i&gt;Function&lt;/i&gt;</p>
+<p><strong>Syntax:</strong></p>
+<p><strong>string</strong>= <em>string1 string2</em> &amp;key <em>start1 end1 start2 end2 → generalized-boolean</em></p>
+<p><strong>string/</strong>= <em>string1 string2</em> &amp;key <em>start1 end1 start2 end2 → mismatch-index</em></p>
+<p><strong>string</strong>&lt; <em>string1 string2</em> &amp;key <em>start1 end1 start2 end2 → mismatch-index</em></p>
+<p><strong>string</strong>&gt; <em>string1 string2</em> &amp;key <em>start1 end1 start2 end2 → mismatch-index</em></p>
+<p><strong>string</strong>&lt;= <em>string1 string2</em> &amp;key <em>start1 end1 start2 end2 → mismatch-index</em></p>
+<p><strong>string</strong>&gt;= <em>string1 string2</em> &amp;key <em>start1 end1 start2 end2 → mismatch-index</em></p>
+<p><strong>string-equal</strong> <em>string1 string2</em> &amp;key <em>start1 end1 start2 end2 → generalized-boolean</em></p>
+<p><strong>string-not-equal</strong> <em>string1 string2</em> &amp;key <em>start1 end1 start2 end2 → mismatch-index</em> <strong>string-lessp</strong> <em>string1 string2</em> &amp;key <em>start1 end1 start2 end2 → mismatch-index</em> <strong>string-greaterp</strong> <em>string1 string2</em> &amp;key <em>start1 end1 start2 end2 → mismatch-index</em> <strong>string-not-greaterp</strong> <em>string1 string2</em> &amp;key <em>start1 end1 start2 end2 → mismatch-index</em> <strong>string-not-lessp</strong> <em>string1 string2</em> &amp;key <em>start1 end1 start2 end2 → mismatch-index</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>string1</em>—a <em>string designator</em> .</p>
+<p><em>string2</em>—a <em>string designator</em> .</p>
+<p><em>start1</em>, <em>end1</em>—<em>bounding index designators</em> of <em>string1</em>. The defaults for <em>start</em> and <em>end</em> are 0 and <strong>nil</strong>, respectively.</p>
+<p><em>start2</em>, <em>end2</em>—<em>bounding index designators</em> of <em>string2</em>. The defaults for <em>start</em> and <em>end</em> are 0 and <strong>nil</strong>, respectively.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><em>mismatch-index</em>—a <em>bounding index</em> of <em>string1</em>, or <strong>nil</strong>.</p>
+<p><strong>Description:</strong></p>
+<p>These functions perform lexicographic comparisons on <em>string1</em> and <em>string2</em>. <strong>string=</strong> and <strong>string-equal</strong> are called equality functions; the others are called inequality functions. The</p>
+<p><strong>string=, string/=, string</strong>*&lt;<em><strong>, string</strong></em>&gt;<em><strong>, string</strong></em>&lt;*<strong>=,</strong> <em>. . .</em></p>
+<p>comparison operations these <em>functions</em> perform are restricted to the subsequence of <em>string1 bounded</em> by <em>start1</em> and <em>end1</em> and to the subsequence of <em>string2 bounded</em> by <em>start2</em> and <em>end2</em>.</p>
+<p>A string <em>a</em> is equal to a string <em>b</em> if it contains the same number of characters, and the corresponding characters are the <em>same</em> under <strong>char=</strong> or <strong>char-equal</strong>, as appropriate.</p>
+<p>A string <em>a</em> is less than a string <em>b</em> if in the first position in which they differ the character of <em>a</em> is less than the corresponding character of <em>b</em> according to <strong>char</strong>&lt; or <strong>char-lessp</strong> as appropriate, or if string <em>a</em> is a proper prefix of string <em>b</em> (of shorter length and matching in all the characters of <em>a</em>).</p>
+<p>The equality functions return a <em>generalized boolean</em> that is <em>true</em> if the strings are equal, or <em>false</em> otherwise.</p>
+<p>The inequality functions return a <em>mismatch-index</em> that is <em>true</em> if the strings are not equal, or <em>false</em> otherwise. When the <em>mismatch-index</em> is <em>true</em>, it is an <em>integer</em> representing the first character position at which the two substrings differ, as an offset from the beginning of <em>string1</em>.</p>
+<p>The comparison has one of the following results:</p>
+<p><strong>string=</strong></p>
+<p><strong>string=</strong> is <em>true</em> if the supplied substrings are of the same length and contain the <em>same</em> characters in corresponding positions; otherwise it is <em>false</em>.</p>
+<p><strong>string/=</strong></p>
+<p><strong>string/=</strong> is <em>true</em> if the supplied substrings are different; otherwise it is <em>false</em>.</p>
+<p><strong>string-equal</strong></p>
+<p><strong>string-equal</strong> is just like <strong>string=</strong> except that differences in case are ignored; two characters are considered to be the same if <strong>char-equal</strong> is <em>true</em> of them.</p>
+<p><strong>string</strong>&lt;</p>
+<p><strong>string</strong>&lt; is <em>true</em> if substring1 is less than substring2; otherwise it is <em>false</em>.</p>
+<p><strong>string</strong>&gt;</p>
+<p><strong>string</strong>&gt; is <em>true</em> if substring1 is greater than substring2; otherwise it is <em>false</em>.</p>
+<p><strong>string-lessp</strong>, <strong>string-greaterp</strong></p>
+<p><strong>string-lessp</strong> and <strong>string-greaterp</strong> are exactly like <strong>string</strong>&lt; and <strong>string</strong>&gt;, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if <strong>char-lessp</strong> were used instead of <strong>char</strong>&lt; for comparing characters.</p>
+<p><strong>string</strong>&lt;<strong>=</strong></p>
+<p><strong>string</strong>&lt;<strong>=</strong> is <em>true</em> if substring1 is less than or equal to substring2; otherwise it is <em>false</em>. Strings <strong>16–11</strong></p>
+<p><strong>string</strong>&gt;<strong>=</strong></p>
+<p><strong>string</strong>&gt;<strong>=</strong> is <em>true</em> if substring1 is greater than or equal to substring2; otherwise it is <em>false</em>. <strong>string-not-greaterp</strong>, <strong>string-not-lessp</strong></p>
+<p><strong>string-not-greaterp</strong> and <strong>string-not-lessp</strong> are exactly like <strong>string</strong>&lt;<strong>=</strong> and <strong>string</strong>&gt;<strong>=</strong>, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if <strong>char-lessp</strong> were used instead of <strong>char</strong>&lt; for comparing characters.</p>
+<p><strong>Examples:</strong></p>
+<p>(string= &quot;foo&quot; &quot;foo&quot;) <em>→ true</em></p>
+<p>(string= &quot;foo&quot; &quot;Foo&quot;) <em>→ false</em></p>
+<p>(string= &quot;foo&quot; &quot;bar&quot;) <em>→ false</em></p>
+<p>(string= &quot;together&quot; &quot;frog&quot; <!-- -->:start1<!-- --> 1 <!-- -->:end1<!-- --> 3 <!-- -->:start2<!-- --> 2) <em>→ true</em></p>
+<p>(string-equal &quot;foo&quot; &quot;Foo&quot;) <em>→ true</em></p>
+<p>(string= &quot;abcd&quot; &quot;01234abcd9012&quot; <!-- -->:start2<!-- --> 5 <!-- -->:end2<!-- --> 9) <em>→ true</em></p>
+<p>(string&lt; &quot;aaaa&quot; &quot;aaab&quot;) <em>→</em> 3</p>
+<p>(string&gt;= &quot;aaaaa&quot; &quot;aaaa&quot;) <em>→</em> 4</p>
+<p>(string-not-greaterp &quot;Abcde&quot; &quot;abcdE&quot;) <em>→</em> 5</p>
+<p>(string-lessp &quot;012AAAA789&quot; &quot;01aaab6&quot; <!-- -->:start1<!-- --> 3 <!-- -->:end1<!-- --> 7</p>
+<p>:start2<!-- --> 2 <!-- -->:end2<!-- --> 6) <em>→</em> 6</p>
+<p>(string-not-equal &quot;AAAA&quot; &quot;aaaA&quot;) <em>→ false</em></p>
+<p><strong>See Also:</strong></p>
+<p><strong>char=</strong></p>
+<p><strong>Notes:</strong></p>
+<p><strong>equal</strong> calls <strong>string=</strong> if applied to two <em>strings</em>.</p>
+<p><strong>stringp</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>stringp</strong> <em>object → generalized-boolean</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>object</em>—an <em>object</em>.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns <em>true</em> if <em>object</em> is of <em>type</em> <strong>string</strong>; otherwise, returns <em>false</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(stringp &quot;aaaaaa&quot;) <em>→ true</em></p>
+<p>(stringp #\a) <em>→ false</em></p>
+<p><strong>See Also:</strong></p>
+<p><strong>typep</strong>, <strong>string</strong> (<em>type</em>)</p>
+<p><strong>Notes:</strong></p>
+<p>(stringp <em>object</em>) <em>≡</em> (typep <em>object</em> ’string)</p>
+<p><strong>make-string</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>make-string</strong> <em>size</em> &amp;key <em>initial-element element-type → string</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>size</em>—a <em>valid array dimension</em>.</p>
+<p><em>initial-element</em>—a <em>character</em> . The default is <em>implementation-dependent</em>.</p>
+<p><em>element-type</em>—a <em>type specifier</em> . The default is <strong>character</strong>.</p>
+<p><em>string</em>—a <em>simple string</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>make-string</strong> returns a <em>simple string</em> of length <em>size</em> whose elements have been initialized to <em>initial-element</em>.</p>
+<p>The <em>element-type</em> names the <em>type</em> of the <em>elements</em> of the <em>string</em>; a <em>string</em> is constructed of the most <em>specialized type</em> that can accommodate <em>elements</em> of the given <em>type</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(make-string 10 <!-- -->:initial-element<!-- --> #\5) <em>→</em> &quot;5555555555&quot;</p>
+<p>(length (make-string 10)) <em>→</em> 10</p>
+<p><strong>Affected By:</strong></p>
+<p>The <em>implementation</em>.</p>
+<p>Strings <strong>16–13</strong></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/chap-16/bg-b-string-concepts.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/cl-language-reference/docs/category/16-strings"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">16. Strings</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/cl-language-reference/docs/chap-16/intro"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">intro</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1611-implications-of-strings-being-arrays" class="table-of-contents__link toc-highlight">16.1.1 Implications of Strings Being Arrays</a></li><li><a href="#1612-subtypes-of-string" class="table-of-contents__link toc-highlight">16.1.2 Subtypes of STRING</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/docs/intro">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

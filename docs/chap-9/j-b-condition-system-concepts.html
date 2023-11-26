@@ -1,0 +1,1874 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-chap-9/j-b-condition-system-concepts" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.0">
+<title data-rh="true">9.1 Condition System Concepts | Common Lisp (New) Language Reference</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://lisp-docs.github.io/cl-language-reference/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://lisp-docs.github.io/cl-language-reference/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://lisp-docs.github.io/cl-language-reference/docs/chap-9/j-b-condition-system-concepts"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="9.1 Condition System Concepts | Common Lisp (New) Language Reference"><meta data-rh="true" name="description" content="9.1.1 Condition Types"><meta data-rh="true" property="og:description" content="9.1.1 Condition Types"><link data-rh="true" rel="icon" href="/cl-language-reference/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-9/j-b-condition-system-concepts"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-9/j-b-condition-system-concepts" hreflang="en"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-9/j-b-condition-system-concepts" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/cl-language-reference/blog/rss.xml" title="Common Lisp (New) Language Reference RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/cl-language-reference/blog/atom.xml" title="Common Lisp (New) Language Reference Atom Feed"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.d3a7613c.css">
+<script src="/cl-language-reference/assets/js/runtime~main.a7e86bbf.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/main.89f4b5c9.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/cl-language-reference/"><div class="navbar__logo"><img src="/cl-language-reference/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/cl-language-reference/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">My Site</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/cl-language-reference/docs/intro">Tutorial</a><a class="navbar__item navbar__link" href="/cl-language-reference/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/intro">Tutorial Intro</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/tutorial---basics">Tutorial - Basics</a><button aria-label="Expand sidebar category &#x27;Tutorial - Basics&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/tutorial---extras">Tutorial - Extras</a><button aria-label="Expand sidebar category &#x27;Tutorial - Extras&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/chapter-3">Chapter 3</a><button aria-label="Expand sidebar category &#x27;Chapter 3&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/nil">NIL</a><button aria-label="Expand sidebar category &#x27;NIL&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/1-introduction">1. Introduction</a><button aria-label="Expand sidebar category &#x27;1. Introduction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/10-symbols">10. Symbols</a><button aria-label="Expand sidebar category &#x27;10. Symbols&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/11-packages">11. Packages</a><button aria-label="Expand sidebar category &#x27;11. Packages&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/12-numbers">12. Numbers</a><button aria-label="Expand sidebar category &#x27;12. Numbers&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/13-characters">13. Characters</a><button aria-label="Expand sidebar category &#x27;13. Characters&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/14-conses">14. Conses</a><button aria-label="Expand sidebar category &#x27;14. Conses&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/15-arrays">15. Arrays</a><button aria-label="Expand sidebar category &#x27;15. Arrays&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/16-strings">16. Strings</a><button aria-label="Expand sidebar category &#x27;16. Strings&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/17-sequences">17. Sequences</a><button aria-label="Expand sidebar category &#x27;17. Sequences&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/18-hash-tables">18. Hash Tables</a><button aria-label="Expand sidebar category &#x27;18. Hash Tables&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/19-filenames">19. Filenames</a><button aria-label="Expand sidebar category &#x27;19. Filenames&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/2-syntax">2. Syntax</a><button aria-label="Expand sidebar category &#x27;2. Syntax&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap-2">chap-2</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/20-files">20. Files</a><button aria-label="Expand sidebar category &#x27;20. Files&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/21-streams">21. Streams</a><button aria-label="Expand sidebar category &#x27;21. Streams&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/22-printer">22. Printer</a><button aria-label="Expand sidebar category &#x27;22. Printer&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/23-reader">23. Reader</a><button aria-label="Expand sidebar category &#x27;23. Reader&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/24-system-construction">24. System Construction</a><button aria-label="Expand sidebar category &#x27;24. System Construction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/25-environment">25. Environment</a><button aria-label="Expand sidebar category &#x27;25. Environment&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/26-glossary">26. Glossary</a><button aria-label="Expand sidebar category &#x27;26. Glossary&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/3-evaluation-and-compilation">3. Evaluation and Compilation</a><button aria-label="Expand sidebar category &#x27;3. Evaluation and Compilation&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap-3">chap-3</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/4-types-and-classes">4. Types and Classes</a><button aria-label="Expand sidebar category &#x27;4. Types and Classes&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/5-data-and-control-flow">5. Data and Control Flow</a><button aria-label="Expand sidebar category &#x27;5. Data and Control Flow&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/6-iteration">6. Iteration</a><button aria-label="Expand sidebar category &#x27;6. Iteration&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/7-objects">7. Objects</a><button aria-label="Expand sidebar category &#x27;7. Objects&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/8-structures">8. Structures</a><button aria-label="Expand sidebar category &#x27;8. Structures&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/cl-language-reference/docs/category/9-conditions">9. Conditions</a><button aria-label="Collapse sidebar category &#x27;9. Conditions&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cl-language-reference/docs/chap-9/intro">intro</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/cl-language-reference/docs/chap-9/j-b-condition-system-concepts">9.1 Condition System Concepts</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/a-appendix">A. Appendix</a><button aria-label="Expand sidebar category &#x27;A. Appendix&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap2">chap2</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/cl-language-reference/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/cl-language-reference/docs/category/9-conditions"><span itemprop="name">9. Conditions</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">9.1 Condition System Concepts</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>9.1 Condition System Concepts</h1>
+<!-- -->
+<p><strong>9.1 Condition System Concepts</strong></p>
+<p>Common Lisp constructs are described not only in terms of their behavior in situations during which they are intended to be used (see the “Description” part of each <em>operator</em> specification), but in all other situations (see the “Exceptional Situations” part of each <em>operator</em> specification).</p>
+<p>A situation is the evaluation of an expression in a specific context. A <em>condition</em> is an <em>object</em> that represents a specific situation that has been detected. <em>Conditions</em> are <em>generalized instances</em> of the <em>class</em> <strong>condition</strong>. A hierarchy of <em>condition</em> classes is defined in Common Lisp. A <em>condition</em> has <em>slots</em> that contain data relevant to the situation that the <em>condition</em> represents.</p>
+<p>An error is a situation in which normal program execution cannot continue correctly without some form of intervention (either interactively by the user or under program control). Not all errors are detected. When an error goes undetected, the effects can be <em>implementation-dependent</em>, <em>implementation-defined</em>, unspecified, or undefined. See Section 1.4 (Definitions). All detected errors can be represented by <em>conditions</em>, but not all <em>conditions</em> represent errors.</p>
+<p>Signaling is the process by which a <em>condition</em> can alter the flow of control in a program by raising the <em>condition</em> which can then be <em>handled</em>. The functions <strong>error</strong>, <strong>cerror</strong>, <strong>signal</strong>, and <strong>warn</strong> are used to signal <em>conditions</em>.</p>
+<p>The process of signaling involves the selection and invocation of a <em>handler</em> from a set of <em>active handlers</em>. A <em>handler</em> is a <em>function</em> of one argument (the <em>condition</em>) that is invoked to handle a <em>condition</em>. Each <em>handler</em> is associated with a <em>condition type</em>, and a <em>handler</em> will be invoked only on a <em>condition</em> of the <em>handler</em> ’s associated <em>type</em>.</p>
+<p><em>Active handlers</em> are <em>established</em> dynamically (see <strong>handler-bind</strong> or <strong>handler-case</strong>). <em>Handlers</em> are invoked in a <em>dynamic environment</em> equivalent to that of the signaler, except that the set of <em>active handlers</em> is bound in such a way as to include only those that were <em>active</em> at the time the <em>handler</em> being invoked was <em>established</em>. Signaling a <em>condition</em> has no side-effect on the <em>condition</em>, and there is no dynamic state contained in a <em>condition</em>.</p>
+<p>If a <em>handler</em> is invoked, it can address the <em>situation</em> in one of three ways:</p>
+<p><strong>Decline</strong></p>
+<p>It can decline to <em>handle</em> the <em>condition</em>. It does this by simply returning rather than transferring control. When this happens, any values returned by the handler are ignored and the next most recently established handler is invoked. If there is no such handler and the signaling function is <strong>error</strong> or <strong>cerror</strong>, the debugger is entered in the <em>dynamic environment</em> of the signaler. If there is no such handler and the signaling function is either <strong>signal</strong> or <strong>warn</strong>, the signaling function simply returns <strong>nil</strong>.</p>
+<p><strong>Handle</strong></p>
+<p>It can <em>handle</em> the <em>condition</em> by performing a non-local transfer of control. This can be done either primitively by using <strong>go</strong>, <strong>return</strong>, <strong>throw</strong> or more abstractly by using a function such as <strong>abort</strong> or <strong>invoke-restart</strong>.</p>
+<p>Conditions <strong>9–1</strong></p>
+<p><strong>Defer</strong></p>
+<p>It can put off a decision about whether to <em>handle</em> or <em>decline</em>, by any of a number of actions, but most commonly by signaling another condition, resignaling the same condition, or forcing entry into the debugger.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="911-condition-types">9.1.1 Condition Types<a href="#911-condition-types" class="hash-link" aria-label="Direct link to 9.1.1 Condition Types" title="Direct link to 9.1.1 Condition Types">​</a></h2>
+<!-- -->
+<p><strong>9.1.1 Condition Types</strong></p>
+<p>Figure 9–1 lists the <em>standardized condition types</em>. Additional <em>condition types</em> can be defined by using <strong>define-condition</strong>.</p>
+<table><thead><tr><th style="text-align:left"><strong>arithmetic-error floating-point-overflow simple-type-error cell-error floating-point-underflow simple-warning condition package-error storage-condition control-error parse-error stream-error division-by-zero print-not-readable style-warning end-of-file program-error type-error error reader-error unbound-slot file-error serious-condition unbound-variable floating-point-inexact simple-condition undefined-function floating-point-invalid-operation simple-error warning</strong></th></tr></thead></table>
+<p><strong>Figure 9–1. Standardized Condition Types</strong></p>
+<p>All <em>condition</em> types are <em>subtypes</em> of <em>type</em> <strong>condition</strong>. That is,</p>
+<p>(typep <em>c</em> ’condition) <em>→ true</em></p>
+<p>if and only if <em>c</em> is a <em>condition</em>.</p>
+<p><em>Implementations</em> must define all specified <em>subtype</em> relationships. Except where noted, all <em>subtype</em> relationships indicated in this document are not mutually exclusive. A <em>condition</em> inherits the structure of its <em>supertypes</em>.</p>
+<p>The metaclass of the <em>class</em> <strong>condition</strong> is not specified. <em>Names</em> of <em>condition types</em> may be used to specify <em>supertype</em> relationships in <strong>define-condition</strong>, but the consequences are not specified if an attempt is made to use a <em>condition type</em> as a <em>superclass</em> in a <strong>defclass</strong> <em>form</em>.</p>
+<p>Figure 9–2 shows <em>operators</em> that define <em>condition types</em> and creating <em>conditions</em>.</p>
+<table><thead><tr><th style="text-align:left"><strong>define-condition make-condition</strong></th></tr></thead></table>
+<p><strong>Figure 9–2. Operators that define and create conditions.</strong></p>
+<p>Figure 9–3 shows <em>operators</em> that <em>read</em> the <em>value</em> of <em>condition slots</em>.</p>
+<table><thead><tr><th style="text-align:left">&lt;p&gt;<strong>arithmetic-error-operands simple-condition-format-arguments arithmetic-error-operation simple-condition-format-control cell-error-name stream-error-stream</strong> &lt;/p&gt;&lt;p&gt;<strong>file-error-pathname type-error-datum</strong> &lt;/p&gt;&lt;p&gt;<strong>package-error-package type-error-expected-type</strong> &lt;/p&gt;&lt;p&gt;<strong>print-not-readable-object unbound-slot-instance</strong>&lt;/p&gt;</th></tr></thead></table>
+<p><strong>Figure 9–3. Operators that read condition slots.</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="9111-serious-conditions">9.1.1.1 Serious Conditions<a href="#9111-serious-conditions" class="hash-link" aria-label="Direct link to 9.1.1.1 Serious Conditions" title="Direct link to 9.1.1.1 Serious Conditions">​</a></h3>
+<!-- -->
+<p><strong>9.1.1.1 Serious Conditions</strong></p>
+<p>A <em>serious condition</em> is a <em>condition</em> serious enough to require interactive intervention if not handled. <em>Serious conditions</em> are typically signaled with <strong>error</strong> or <strong>cerror</strong>; non-serious <em>conditions</em> are typically signaled with <strong>signal</strong> or <strong>warn</strong>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="912-creating-conditions">9.1.2 Creating Conditions<a href="#912-creating-conditions" class="hash-link" aria-label="Direct link to 9.1.2 Creating Conditions" title="Direct link to 9.1.2 Creating Conditions">​</a></h2>
+<!-- -->
+<p><strong>9.1.2 Creating Conditions</strong></p>
+<p>The function <strong>make-condition</strong> can be used to construct a <em>condition object</em> explicitly. Functions such as <strong>error</strong>, <strong>cerror</strong>, <strong>signal</strong>, and <strong>warn</strong> operate on <em>conditions</em> and might create <em>condition objects</em> implicitly. Macros such as <strong>ccase</strong>, <strong>ctypecase</strong>, <strong>ecase</strong>, <strong>etypecase</strong>, <strong>check-type</strong>, and <strong>assert</strong> might also implicitly create (and <em>signal</em>) <em>conditions</em>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="9121-condition-designators">9.1.2.1 Condition Designators<a href="#9121-condition-designators" class="hash-link" aria-label="Direct link to 9.1.2.1 Condition Designators" title="Direct link to 9.1.2.1 Condition Designators">​</a></h3>
+<!-- -->
+<p><strong>9.1.2.1 Condition Designators</strong></p>
+<p>A number of the functions in the condition system take arguments which are identified as <em>condition designators</em>. By convention, those arguments are notated as</p>
+<p><em>datum</em> &amp;rest <em>arguments</em></p>
+<p>Taken together, the <em>datum</em> and the <em>arguments</em> are “<em>designators</em> for a <em>condition</em> of default type <em>default-type</em>.” How the denoted <em>condition</em> is computed depends on the type of the <em>datum</em>:</p>
+<p><em>•</em> If the <em>datum</em> is a <em>symbol</em> naming a <em>condition type . . .</em></p>
+<p>The denoted <em>condition</em> is the result of</p>
+<p>(apply #’make-condition <em>datum arguments</em>)</p>
+<p>Conditions <strong>9–3</strong></p>
+<p><em>•</em> If the <em>datum</em> is a <em>format control . . .</em></p>
+<p>The denoted <em>condition</em> is the result of</p>
+<p>(make-condition <em>defaulted-type</em></p>
+<p>:format-control<!-- --> <em>datum</em></p>
+<p>:format-arguments<!-- --> <em>arguments</em>)</p>
+<p>where the <em>defaulted-type</em> is a <em>subtype</em> of <em>default-type</em>.</p>
+<p><em>•</em> If the <em>datum</em> is a <em>condition . . .</em></p>
+<p>The denoted <em>condition</em> is the <em>datum</em> itself. In this case, unless otherwise specified by the description of the <em>operator</em> in question, the <em>arguments</em> must be <em>null</em>; that is, the consequences are undefined if any <em>arguments</em> were supplied.</p>
+<p>Note that the <em>default-type</em> gets used only in the case where the <em>datum string</em> is supplied. In the other situations, the resulting condition is not necessarily of <em>type default-type</em>.</p>
+<p>Here are some illustrations of how different <em>condition designators</em> can denote equivalent <em>condition objects</em>:</p>
+<p>(let ((c (make-condition ’arithmetic-error <!-- -->:operator<!-- --> ’/ <!-- -->:operands<!-- --> ’(7 0))))</p>
+<p>(error c))</p>
+<p><em>≡</em> (error ’arithmetic-error <!-- -->:operator<!-- --> ’/ <!-- -->:operands<!-- --> ’(7 0))</p>
+<p>(error &quot;Bad luck.&quot;)</p>
+<p><em>≡</em> (error ’simple-error <!-- -->:format-control<!-- --> &quot;Bad luck.&quot; <!-- -->:format-arguments<!-- --> ’())</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="913-printing-conditions">9.1.3 Printing Conditions<a href="#913-printing-conditions" class="hash-link" aria-label="Direct link to 9.1.3 Printing Conditions" title="Direct link to 9.1.3 Printing Conditions">​</a></h2>
+<!-- -->
+<p><strong>9.1.3 Printing Conditions</strong></p>
+<p>If the <!-- -->:report<!-- --> argument to <strong>define-condition</strong> is used, a print function is defined that is called whenever the defined <em>condition</em> is printed while the <em>value</em> of <strong>*print-escape*</strong> is <em>false</em>. This function is called the <em>condition reporter</em>; the text which it outputs is called a <em>report message</em>.</p>
+<p>When a <em>condition</em> is printed and <strong>*print-escape*</strong> is <em>false</em>, the <em>condition reporter</em> for the <em>condition</em> is invoked. <em>Conditions</em> are printed automatically by functions such as <strong>invoke-debugger</strong>, <strong>break</strong>, and <strong>warn</strong>.</p>
+<p>When <strong>*print-escape*</strong> is <em>true</em>, the <em>object</em> should print in an abbreviated fashion according to the style of the implementation (<em>e.g.</em>, by <strong>print-unreadable-object</strong>). It is not required that a <em>condition</em> can be recreated by reading its printed representation.</p>
+<p>No <em>function</em> is provided for directly <em>accessing</em> or invoking <em>condition reporters</em>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="9131-recommended-style-in-condition-reporting">9.1.3.1 Recommended Style in Condition Reporting<a href="#9131-recommended-style-in-condition-reporting" class="hash-link" aria-label="Direct link to 9.1.3.1 Recommended Style in Condition Reporting" title="Direct link to 9.1.3.1 Recommended Style in Condition Reporting">​</a></h3>
+<!-- -->
+<p><strong>9.1.3.1 Recommended Style in Condition Reporting</strong></p>
+<p>In order to ensure a properly aesthetic result when presenting <em>report messages</em> to the user, certain stylistic conventions are recommended.</p>
+<p>There are stylistic recommendations for the content of the messages output by <em>condition reporters</em>, but there are no formal requirements on those <em>programs</em>. If a <em>program</em> violates the recommendations for some message, the display of that message might be less aesthetic than if the guideline had been observed, but the <em>program</em> is still considered a <em>conforming program</em>.</p>
+<p>The requirements on a <em>program</em> or <em>implementation</em> which invokes a <em>condition reporter</em> are somewhat stronger. A <em>conforming program</em> must be permitted to assume that if these style guidelines are followed, proper aesthetics will be maintained. Where appropriate, any specific requirements on such routines are explicitly mentioned below.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="91311-capitalization-and-punctuation-in-condition-reports">9.1.3.1.1 Capitalization and Punctuation in Condition Reports<a href="#91311-capitalization-and-punctuation-in-condition-reports" class="hash-link" aria-label="Direct link to 9.1.3.1.1 Capitalization and Punctuation in Condition Reports" title="Direct link to 9.1.3.1.1 Capitalization and Punctuation in Condition Reports">​</a></h4>
+<!-- -->
+<p><strong>9.1.3.1.1 Capitalization and Punctuation in Condition Reports</strong></p>
+<p>It is recommended that a <em>report message</em> be a complete sentences, in the proper case and correctly punctuated. In English, for example, this means the first letter should be uppercase, and there should be a trailing period.</p>
+<p>(error &quot;This is a message&quot;) ; Not recommended</p>
+<p>(error &quot;this is a message.&quot;) ; Not recommended</p>
+<p>(error &quot;This is a message.&quot;) ; Recommended instead</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="91312-leading-and-trailing-newlines-in-condition-reports">9.1.3.1.2 Leading and Trailing Newlines in Condition Reports<a href="#91312-leading-and-trailing-newlines-in-condition-reports" class="hash-link" aria-label="Direct link to 9.1.3.1.2 Leading and Trailing Newlines in Condition Reports" title="Direct link to 9.1.3.1.2 Leading and Trailing Newlines in Condition Reports">​</a></h4>
+<!-- -->
+<p><strong>9.1.3.1.2 Leading and Trailing Newlines in Condition Reports</strong></p>
+<p>It is recommended that a <em>report message</em> not begin with any introductory text, such as “Error: ” or “Warning: ” or even just <em>freshline</em> or <em>newline</em>. Such text is added, if appropriate to the context, by the routine invoking the <em>condition reporter</em> .</p>
+<p>It is recommended that a <em>report message</em> not be followed by a trailing <em>freshline</em> or <em>newline</em>. Such text is added, if appropriate to the context, by the routine invoking the <em>condition reporter</em> .</p>
+<p>(error &quot;This is a message.~%&quot;) ; Not recommended</p>
+<p>(error &quot;~&amp;This is a message.&quot;) ; Not recommended</p>
+<p>(error &quot;<del>&amp;This is a message.</del>%&quot;) ; Not recommended</p>
+<p>(error &quot;This is a message.&quot;) ; Recommended instead</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="91313-embedded-newlines-in-condition-reports">9.1.3.1.3 Embedded Newlines in Condition Reports<a href="#91313-embedded-newlines-in-condition-reports" class="hash-link" aria-label="Direct link to 9.1.3.1.3 Embedded Newlines in Condition Reports" title="Direct link to 9.1.3.1.3 Embedded Newlines in Condition Reports">​</a></h4>
+<!-- -->
+<p><strong>9.1.3.1.3 Embedded Newlines in Condition Reports</strong></p>
+<p>Especially if it is long, it is permissible and appropriate for a <em>report message</em> to contain one or more embedded <em>newlines</em>.</p>
+<p>If the calling routine conventionally inserts some additional prefix (such as “Error: ” or “;; Error: ”) on the first line of the message, it must also assure that an appropriate prefix will</p>
+<p>Conditions <strong>9–5</strong></p>
+<p>be added to each subsequent line of the output, so that the left edge of the message output by the <em>condition reporter</em> will still be properly aligned.</p>
+<p>(defun test ()</p>
+<p>(error &quot;This is an error message.~%It has two lines.&quot;))</p>
+<p>;; Implementation A</p>
+<p>(test)</p>
+<p>This is an error message.</p>
+<p>It has two lines.</p>
+<p>;; Implementation B</p>
+<p>(test)</p>
+<p>;; Error: This is an error message.</p>
+<p>;; It has two lines.</p>
+<p>;; Implementation C</p>
+<p>(test)</p>
+<p>» Error: This is an error message.</p>
+<p>It has two lines.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="91314-note-about-tabs-in-condition-reports">9.1.3.1.4 Note about Tabs in Condition Reports<a href="#91314-note-about-tabs-in-condition-reports" class="hash-link" aria-label="Direct link to 9.1.3.1.4 Note about Tabs in Condition Reports" title="Direct link to 9.1.3.1.4 Note about Tabs in Condition Reports">​</a></h4>
+<!-- -->
+<p><strong>9.1.3.1.4 Note about Tabs in Condition Reports</strong></p>
+<p>Because the indentation of a <em>report message</em> might be shifted to the right or left by an arbitrary amount, special care should be taken with the semi-standard <em>character hTabi</em> (in those <em>implementations</em> that support such a <em>character</em> ). Unless the <em>implementation</em> specifically defines its behavior in this context, its use should be avoided.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="91315-mentioning-containing-function-in-condition-reports">9.1.3.1.5 Mentioning Containing Function in Condition Reports<a href="#91315-mentioning-containing-function-in-condition-reports" class="hash-link" aria-label="Direct link to 9.1.3.1.5 Mentioning Containing Function in Condition Reports" title="Direct link to 9.1.3.1.5 Mentioning Containing Function in Condition Reports">​</a></h4>
+<!-- -->
+<p><strong>9.1.3.1.5 Mentioning Containing Function in Condition Reports</strong></p>
+<p>The name of the containing function should generally not be mentioned in <em>report messages</em>. It is assumed that the <em>debugger</em> will make this information accessible in situations where it is necessary and appropriate.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="914-signaling-and-handling-conditions">9.1.4 Signaling and Handling Conditions<a href="#914-signaling-and-handling-conditions" class="hash-link" aria-label="Direct link to 9.1.4 Signaling and Handling Conditions" title="Direct link to 9.1.4 Signaling and Handling Conditions">​</a></h2>
+<!-- -->
+<p><strong>9.1.4 Signaling and Handling Conditions</strong></p>
+<p>The operation of the condition system depends on the ordering of active <em>applicable handlers</em> from most recent to least recent.</p>
+<p>Each <em>handler</em> is associated with a <em>type specifier</em> that must designate a <em>subtype</em> of <em>type</em> <strong>condition</strong>. A <em>handler</em> is said to be <em>applicable</em> to a <em>condition</em> if that <em>condition</em> is of the <em>type</em> designated by the associated <em>type specifier</em> .</p>
+<p><em>Active handlers</em> are <em>established</em> by using <strong>handler-bind</strong> (or an abstraction based on <strong>handler-bind</strong>, such as <strong>handler-case</strong> or <strong>ignore-errors</strong>).</p>
+<p><em>Active handlers</em> can be <em>established</em> within the dynamic scope of other <em>active handlers</em>. At any point during program execution, there is a set of <em>active handlers</em>. When a <em>condition</em> is signaled, the <em>most</em></p>
+<p><em>recent</em> active <em>applicable handler</em> for that <em>condition</em> is selected from this set. Given a <em>condition</em>, the order of recentness of active <em>applicable handlers</em> is defined by the following two rules:</p>
+<p>1. Each handler in a set of active handlers <em>H</em>&lt;sub&gt;1&lt;/sub&gt; is more recent than every handler in a set <em>H</em>&lt;sub&gt;2&lt;/sub&gt; if the handlers in <em>H</em>&lt;sub&gt;2&lt;/sub&gt; were active when the handlers in <em>H</em>&lt;sub&gt;1&lt;/sub&gt; were established.</p>
+<p>2. Let <em>h</em>&lt;sub&gt;1&lt;/sub&gt; and <em>h</em>&lt;sub&gt;2&lt;/sub&gt; be two applicable active handlers established by the same <em>form</em>. Then <em>h</em>&lt;sub&gt;1&lt;/sub&gt; is more recent than <em>h</em>&lt;sub&gt;2&lt;/sub&gt; if <em>h</em>&lt;sub&gt;1&lt;/sub&gt; was defined to the left of <em>h</em>&lt;sub&gt;2&lt;/sub&gt; in the <em>form</em> that established them.</p>
+<p>Once a handler in a handler binding <em>form</em> (such as <strong>handler-bind</strong> or <strong>handler-case</strong>) has been selected, all handlers in that <em>form</em> become inactive for the remainder of the signaling process. While the selected <em>handler</em> runs, no other <em>handler</em> established by that <em>form</em> is active. That is, if the <em>handler</em> declines, no other handler established by that <em>form</em> will be considered for possible invocation.</p>
+<p>Figure 9–4 shows <em>operators</em> relating to the <em>handling</em> of <em>conditions</em>.</p>
+<table><thead><tr><th style="text-align:left"><strong>handler-bind handler-case ignore-errors</strong></th></tr></thead></table>
+<p><strong>Figure 9–4. Operators relating to handling conditions.</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="9141-signaling">9.1.4.1 Signaling<a href="#9141-signaling" class="hash-link" aria-label="Direct link to 9.1.4.1 Signaling" title="Direct link to 9.1.4.1 Signaling">​</a></h3>
+<!-- -->
+<p><strong>9.1.4.1 Signaling</strong></p>
+<p>When a <em>condition</em> is signaled, the most recent applicable <em>active handler</em> is invoked. Sometimes a handler will decline by simply returning without a transfer of control. In such cases, the next most recent applicable active handler is invoked.</p>
+<p>If there are no applicable handlers for a <em>condition</em> that has been signaled, or if all applicable handlers decline, the <em>condition</em> is unhandled.</p>
+<p>The functions <strong>cerror</strong> and <strong>error</strong> invoke the interactive <em>condition</em> handler (the debugger) rather than return if the <em>condition</em> being signaled, regardless of its <em>type</em>, is unhandled. In contrast, <strong>signal</strong> returns <strong>nil</strong> if the <em>condition</em> being signaled, regardless of its <em>type</em>, is unhandled.</p>
+<p>The <em>variable</em> <strong>*break-on-signals*</strong> can be used to cause the debugger to be entered before the signaling process begins.</p>
+<p>Figure 9–5 shows <em>defined names</em> relating to the <em>signaling</em> of <em>conditions</em>.</p>
+<table><thead><tr><th style="text-align:left">&lt;p&gt;<strong>*break-on-signals* error warn</strong> &lt;/p&gt;&lt;p&gt;<strong>cerror signal</strong>&lt;/p&gt;</th></tr></thead></table>
+<p><strong>Figure 9–5. Defined names relating to signaling conditions.</strong></p>
+<p>Conditions <strong>9–7</strong></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="91411-resignaling-a-condition">9.1.4.1.1 Resignaling a Condition<a href="#91411-resignaling-a-condition" class="hash-link" aria-label="Direct link to 9.1.4.1.1 Resignaling a Condition" title="Direct link to 9.1.4.1.1 Resignaling a Condition">​</a></h4>
+<!-- -->
+<p><strong>9.1.4.1.1 Resignaling a Condition</strong></p>
+<p>During the <em>dynamic extent</em> of the <em>signaling</em> process for a particular <em>condition object</em>, <strong>signaling</strong> the same <em>condition object</em> again is permitted if and only if the <em>situation</em> represented in both cases are the same.</p>
+<p>For example, a <em>handler</em> might legitimately <em>signal</em> the <em>condition object</em> that is its <em>argument</em> in order to allow outer <em>handlers</em> first opportunity to <em>handle</em> the condition. (Such a <em>handlers</em> is sometimes called a “default handler.”) This action is permitted because the <em>situation</em> which the second <em>signaling</em> process is addressing is really the same <em>situation</em>.</p>
+<p>On the other hand, in an <em>implementation</em> that implemented asynchronous keyboard events by interrupting the user process with a call to <strong>signal</strong>, it would not be permissible for two distinct asynchronous keyboard events to <em>signal identical condition objects</em> at the same time for different situations.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="9142-restarts">9.1.4.2 Restarts<a href="#9142-restarts" class="hash-link" aria-label="Direct link to 9.1.4.2 Restarts" title="Direct link to 9.1.4.2 Restarts">​</a></h3>
+<!-- -->
+<p><strong>9.1.4.2 Restarts</strong></p>
+<p>The interactive condition handler returns only through non-local transfer of control to specially defined <em>restarts</em> that can be set up either by the system or by user code. Transferring control to a restart is called “invoking” the restart. Like handlers, active <em>restarts</em> are <em>established</em> dynamically, and only active <em>restarts</em> can be invoked. An active <em>restart</em> can be invoked by the user from the debugger or by a program by using <strong>invoke-restart</strong>.</p>
+<p>A <em>restart</em> contains a <em>function</em> to be <em>called</em> when the <em>restart</em> is invoked, an optional name that can be used to find or invoke the <em>restart</em>, and an optional set of interaction information for the debugger to use to enable the user to manually invoke a <em>restart</em>.</p>
+<p>The name of a <em>restart</em> is used by <strong>invoke-restart</strong>. <em>Restarts</em> that can be invoked only within the debugger do not need names.</p>
+<p><em>Restarts</em> can be established by using <strong>restart-bind</strong>, <strong>restart-case</strong>, and <strong>with-simple-restart</strong>. A <em>restart</em> function can itself invoke any other <em>restart</em> that was active at the time of establishment of the <em>restart</em> of which the <em>function</em> is part.</p>
+<p>The <em>restarts established</em> by a <strong>restart-bind</strong> <em>form</em>, a <strong>restart-case</strong> <em>form</em>, or a <strong>with-simple-restart</strong> <em>form</em> have <em>dynamic extent</em> which extends for the duration of that <em>form</em>’s execution.</p>
+<p><em>Restarts</em> of the same name can be ordered from least recent to most recent according to the following two rules:</p>
+<p>1. Each <em>restart</em> in a set of active restarts <em>R</em>&lt;sub&gt;1&lt;/sub&gt; is more recent than every <em>restart</em> in a set <em>R</em>&lt;sub&gt;2&lt;/sub&gt; if the <em>restarts</em> in <em>R</em>&lt;sub&gt;2&lt;/sub&gt; were active when the <em>restarts</em> in <em>R</em>&lt;sub&gt;1&lt;/sub&gt; were established.</p>
+<p>2. Let <em>r</em>&lt;sub&gt;1&lt;/sub&gt; and <em>r</em>&lt;sub&gt;2&lt;/sub&gt; be two active <em>restarts</em> with the same name established by the same <em>form</em>. Then <em>r</em>&lt;sub&gt;1&lt;/sub&gt; is more recent than <em>r</em>&lt;sub&gt;2&lt;/sub&gt; if <em>r</em>&lt;sub&gt;1&lt;/sub&gt; was defined to the left of <em>r</em>&lt;sub&gt;2&lt;/sub&gt; in the <em>form</em> that established them.</p>
+<p>If a <em>restart</em> is invoked but does not transfer control, the values resulting from the <em>restart</em> function are returned by the function that invoked the restart, either <strong>invoke-restart</strong> or <strong>invoke-restart-interactively</strong>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="91421-interactive-use-of-restarts">9.1.4.2.1 Interactive Use of Restarts<a href="#91421-interactive-use-of-restarts" class="hash-link" aria-label="Direct link to 9.1.4.2.1 Interactive Use of Restarts" title="Direct link to 9.1.4.2.1 Interactive Use of Restarts">​</a></h4>
+<!-- -->
+<p><strong>9.1.4.2.1 Interactive Use of Restarts</strong></p>
+<p>For interactive handling, two pieces of information are needed from a <em>restart</em>: a report function and an interactive function.</p>
+<p>The report function is used by a program such as the debugger to present a description of the action the <em>restart</em> will take. The report function is specified and established by the <!-- -->:report-function<!-- --> keyword to <strong>restart-bind</strong> or the <!-- -->:report<!-- --> keyword to <strong>restart-case</strong>.</p>
+<p>The interactive function, which can be specified using the <!-- -->:interactive-function<!-- --> keyword to <strong>restart-bind</strong> or <!-- -->:interactive<!-- --> keyword to <strong>restart-case</strong>, is used when the <em>restart</em> is invoked interactively, such as from the debugger, to produce a suitable list of arguments.</p>
+<p><strong>invoke-restart</strong> invokes the most recently <em>established restart</em> whose name is the same as the first argument to <strong>invoke-restart</strong>. If a <em>restart</em> is invoked interactively by the debugger and does not transfer control but rather returns values, the precise action of the debugger on those values is <em>implementation-defined</em>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="91422-interfaces-to-restarts">9.1.4.2.2 Interfaces to Restarts<a href="#91422-interfaces-to-restarts" class="hash-link" aria-label="Direct link to 9.1.4.2.2 Interfaces to Restarts" title="Direct link to 9.1.4.2.2 Interfaces to Restarts">​</a></h4>
+<!-- -->
+<p><strong>9.1.4.2.2 Interfaces to Restarts</strong></p>
+<p>Some <em>restarts</em> have functional interfaces, such as <strong>abort</strong>, <strong>continue</strong>, <strong>muffle-warning</strong>, <strong>store-value</strong>, and <strong>use-value</strong>. They are ordinary functions that use <strong>find-restart</strong> and <strong>invoke-restart</strong> internally, that have the same name as the <em>restarts</em> they manipulate, and that are provided simply for notational convenience.</p>
+<p>Figure 9–6 shows <em>defined names</em> relating to <em>restarts</em>.</p>
+<table><thead><tr><th style="text-align:left">&lt;p&gt;<strong>abort invoke-restart-interactively store-value compute-restarts muffle-warning use-value</strong> &lt;/p&gt;&lt;p&gt;<strong>continue restart-bind with-simple-restart find-restart restart-case</strong> &lt;/p&gt;&lt;p&gt;<strong>invoke-restart restart-name</strong>&lt;/p&gt;</th></tr></thead></table>
+<p><strong>Figure 9–6. Defined names relating to restarts.</strong></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="91423-restart-tests">9.1.4.2.3 Restart Tests<a href="#91423-restart-tests" class="hash-link" aria-label="Direct link to 9.1.4.2.3 Restart Tests" title="Direct link to 9.1.4.2.3 Restart Tests">​</a></h4>
+<!-- -->
+<p><strong>9.1.4.2.3 Restart Tests</strong></p>
+<p>Each <em>restart</em> has an associated test, which is a function of one argument (a <em>condition</em> or <strong>nil</strong>) which returns <em>true</em> if the <em>restart</em> should be visible in the current <em>situation</em>. This test is created by the <!-- -->:test-function<!-- --> option to <strong>restart-bind</strong> or the <!-- -->:test<!-- --> option to <strong>restart-case</strong>.</p>
+<p>Conditions <strong>9–9</strong></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="91424-associating-a-restart-with-a-condition">9.1.4.2.4 Associating a Restart with a Condition<a href="#91424-associating-a-restart-with-a-condition" class="hash-link" aria-label="Direct link to 9.1.4.2.4 Associating a Restart with a Condition" title="Direct link to 9.1.4.2.4 Associating a Restart with a Condition">​</a></h4>
+<!-- -->
+<p><strong>9.1.4.2.4 Associating a Restart with a Condition</strong></p>
+<p>A <em>restart</em> can be “associated with” a <em>condition</em> explicitly by <strong>with-condition-restarts</strong>, or implicitly by <strong>restart-case</strong>. Such an assocation has <em>dynamic extent</em>.</p>
+<p>A single <em>restart</em> may be associated with several <em>conditions</em> at the same time. A single <em>condition</em> may have several associated <em>restarts</em> at the same time.</p>
+<p>Active restarts associated with a particular <em>condition</em> can be detected by <em>calling</em> a <em>function</em> such as <strong>find-restart</strong>, supplying that <em>condition</em> as the <em>condition argument</em>. Active restarts can also be detected without regard to any associated <em>condition</em> by calling such a function without a <em>condition argument</em>, or by supplying a value of <strong>nil</strong> for such an <em>argument</em>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="915-assertions">9.1.5 Assertions<a href="#915-assertions" class="hash-link" aria-label="Direct link to 9.1.5 Assertions" title="Direct link to 9.1.5 Assertions">​</a></h2>
+<!-- -->
+<p><strong>9.1.5 Assertions</strong></p>
+<p>Conditional signaling of <em>conditions</em> based on such things as key match, form evaluation, and <em>type</em> are handled by assertion <em>operators</em>. Figure 9–7 shows <em>operators</em> relating to assertions.</p>
+<table><thead><tr><th style="text-align:left">&lt;p&gt;<strong>assert check-type ecase</strong> &lt;/p&gt;&lt;p&gt;<strong>ccase ctypecase etypecase</strong>&lt;/p&gt;</th></tr></thead></table>
+<p><strong>Figure 9–7. Operators relating to assertions.</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="916-notes-about-the-condition-system">9.1.6 Notes about the Condition System<a href="#916-notes-about-the-condition-system" class="hash-link" aria-label="Direct link to 9.1.6 Notes about the Condition System" title="Direct link to 9.1.6 Notes about the Condition System">​</a></h2>
+<!-- -->
+<!-- -->
+<p><strong>9.1.6 Notes about the Condition System’s Background</strong></p>
+<p>For a background reference to the abstract concepts detailed in this section, see <em>Exceptional Situations in Lisp</em>. The details of that paper are not binding on this document, but may be helpful in establishing a conceptual basis for understanding this material.</p>
+<p><strong>condition</strong> <em>Condition Type</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>condition</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>All types of <em>conditions</em>, whether error or non-error, must inherit from this <em>type</em>.</p>
+<p>No additional <em>subtype</em> relationships among the specified <em>subtypes</em> of <em>type</em> <strong>condition</strong> are allowed, except when explicitly mentioned in the text; however implementations are permitted to introduce additional <em>types</em> and one of these <em>types</em> can be a <em>subtype</em> of any number of the <em>subtypes</em> of <em>type</em> <strong>condition</strong>.</p>
+<p>Whether a user-defined <em>condition type</em> has <em>slots</em> that are accessible by <em>with-slots</em> is <em>implementation dependent</em>. Furthermore, even in an <em>implementation</em> in which user-defined <em>condition types</em> would have <em>slots</em>, it is <em>implementation-dependent</em> whether any <em>condition types</em> defined in this document have such <em>slots</em> or, if they do, what their <em>names</em> might be; only the reader functions documented by this specification may be relied upon by portable code.</p>
+<p><em>Conforming code</em> must observe the following restrictions related to <em>conditions</em>:</p>
+<p><em>•</em> <strong>define-condition</strong>, not <strong>defclass</strong>, must be used to define new <em>condition types</em>.</p>
+<p><em>•</em> <strong>make-condition</strong>, not <strong>make-instance</strong>, must be used to create <em>condition objects</em> explicitly.</p>
+<p><em>•</em> The <!-- -->:report<!-- --> option of <strong>define-condition</strong>, not <strong>defmethod</strong> for <strong>print-object</strong>, must be used to define a condition reporter.</p>
+<p><em>•</em> <strong>slot-value</strong>, <strong>slot-boundp</strong>, <strong>slot-makunbound</strong>, and <strong>with-slots</strong> must not be used on <em>condition objects</em>. Instead, the appropriate accessor functions (defined by <strong>define-condition</strong>) should be used.</p>
+<p><strong>warning</strong> <em>Condition Type</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>warning</strong>, <strong>condition</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>The <em>type</em> <strong>warning</strong> consists of all types of warnings.</p>
+<p>Conditions <strong>9–11</strong></p>
+<p><strong>See Also:</strong></p>
+<p><strong>style-warning</strong></p>
+<p><strong>style-warning</strong> <em>Condition Type</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>style-warning</strong>, <strong>warning</strong>, <strong>condition</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>The <em>type</em> <strong>style-warning</strong> includes those <em>conditions</em> that represent <em>situations</em> involving <em>code</em> that is <em>conforming code</em> but that is nevertheless considered to be faulty or substandard.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>muffle-warning</strong></p>
+<p><strong>Notes:</strong></p>
+<p>An <em>implementation</em> might signal such a <em>condition</em> if it encounters <em>code</em> that uses deprecated features or that appears unaesthetic or inefficient.</p>
+<p>An ‘unused variable’ warning must be of <em>type</em> <strong>style-warning</strong>.</p>
+<p>In general, the question of whether <em>code</em> is faulty or substandard is a subjective decision to be made by the facility processing that <em>code</em>. The intent is that whenever such a facility wishes to complain about <em>code</em> on such subjective grounds, it should use this <em>condition type</em> so that any</p>
+<p>clients who wish to redirect or muffle superfluous warnings can do so without risking that they will be redirecting or muffling other, more serious warnings.</p>
+<p><strong>serious-condition</strong> <em>Condition Type</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>serious-condition</strong>, <strong>condition</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>All <em>conditions</em> serious enough to require interactive intervention if not handled should inherit from the <em>type</em> <strong>serious-condition</strong>. This condition type is provided primarily so that it may be included as a <em>superclass</em> of other <em>condition types</em>; it is not intended to be signaled directly.</p>
+<p><strong>Notes:</strong></p>
+<p>Signaling a <em>serious condition</em> does not itself force entry into the debugger. However, except in the unusual situation where the programmer can assure that no harm will come from failing to <em>handle</em></p>
+<p>a <em>serious condition</em>, such a <em>condition</em> is usually signaled with <strong>error</strong> rather than <strong>signal</strong> in order to assure that the program does not continue without <em>handling</em> the <em>condition</em>. (And conversely, it is conventional to use <strong>signal</strong> rather than <strong>error</strong> to signal conditions which are not <em>serious conditions</em>, since normally the failure to handle a non-serious condition is not reason enough for the debugger to be entered.)</p>
+<p><strong>error</strong> <em>Condition Type</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>error</strong>, <strong>serious-condition</strong>, <strong>condition</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>The <em>type</em> <strong>error</strong> consists of all <em>conditions</em> that represent <em>errors</em>.</p>
+<p><strong>cell-error</strong> <em>Condition Type</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>cell-error</strong>, <strong>error</strong>, <strong>serious-condition</strong>, <strong>condition</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>The <em>type</em> <strong>cell-error</strong> consists of error conditions that occur during a location <em>access</em>. The name of the offending cell is initialized by the <!-- -->:name<!-- --> initialization argument to <strong>make-condition</strong>, and is <em>accessed</em> by the <em>function</em> <strong>cell-error-name</strong>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>cell-error-name</strong></p>
+<p>Conditions <strong>9–13</strong></p>
+<p><strong>cell-error-name</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>cell-error-name</strong> <em>condition → name</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>condition</em>—a <em>condition</em> of <em>type</em> <strong>cell-error</strong>.</p>
+<p><em>name</em>—an <em>object</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns the <em>name</em> of the offending cell involved in the <em>situation</em> represented by <em>condition</em>.</p>
+<p>The nature of the result depends on the specific <em>type</em> of <em>condition</em>. For example, if the <em>condition</em> is of <em>type</em> <strong>unbound-variable</strong>, the result is the <em>name</em> of the <em>unbound variable</em> which was being <em>accessed</em>, if the <em>condition</em> is of <em>type</em> <strong>undefined-function</strong>, this is the <em>name</em> of the <em>undefined function</em> which was being <em>accessed</em>, and if the <em>condition</em> is of <em>type</em> <strong>unbound-slot</strong>, this is the <em>name</em> of the <em>slot</em> which was being <em>accessed</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>cell-error</strong>, <strong>unbound-slot</strong>, <strong>unbound-variable</strong>, <strong>undefined-function</strong>, Section 9.1 (Condition System Concepts)</p>
+<p><strong>parse-error</strong> <em>Condition Type</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>parse-error</strong>, <strong>error</strong>, <strong>serious-condition</strong>, <strong>condition</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>The <em>type</em> <strong>parse-error</strong> consists of error conditions that are related to parsing.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>parse-namestring</strong>, <strong>reader-error</strong></p>
+<p><strong>storage-condition</strong> <em>Condition Type</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>storage-condition</strong>, <strong>serious-condition</strong>, <strong>condition</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>The <em>type</em> <strong>storage-condition</strong> consists of serious conditions that relate to problems with memory management that are potentially due to <em>implementation-dependent</em> limits rather than semantic errors in <em>conforming programs</em>, and that typically warrant entry to the debugger if not handled.</p>
+<p>Depending on the details of the <em>implementation</em>, these might include such problems as stack overflow, memory region overflow, and storage exhausted.</p>
+<p><strong>Notes:</strong></p>
+<p>While some Common Lisp operations might signal <em>storage-condition</em> because they are defined to create <em>objects</em>, it is unspecified whether operations that are not defined to create <em>objects</em> create them anyway and so might also signal <strong>storage-condition</strong>. Likewise, the evaluator itself might create <em>objects</em> and so might signal <strong>storage-condition</strong>. (The natural assumption might be that such <em>object</em> creation is naturally inefficient, but even that is <em>implementation-dependent</em>.) In general, the entire question of how storage allocation is done is <em>implementation-dependent</em>, and so any operation might signal <strong>storage-condition</strong> at any time. Because such a <em>condition</em> is indicative of a limitation of the <em>implementation</em> or of the <em>image</em> rather than an error in a <em>program</em>, <em>objects</em> of <em>type</em> <strong>storage-condition</strong> are not of <em>type</em> <strong>error</strong>.</p>
+<p><strong>assert</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>assert</strong> <em>test-form</em> [(<em>{place}</em>*) [<em>datum-form {argument-form}</em>*]]</p>
+<p><em>→</em> <strong>nil</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>test-form</em>—a <em>form</em>; always evaluated.</p>
+<p><em>place</em>—a <em>place</em>; evaluated if an error is signaled.</p>
+<p><em>datum-form</em>—a <em>form</em> that evaluates to a <em>datum</em>. Evaluated each time an error is to be signaled, or not at all if no error is to be signaled.</p>
+<p><em>argument-form</em>—a <em>form</em> that evaluates to an <em>argument</em>. Evaluated each time an error is to be signaled, or not at all if no error is to be signaled.</p>
+<p><em>datum</em>, <em>arguments</em>—<em>designators</em> for a <em>condition</em> of default type <strong>error</strong>. (These <em>designators</em> are the result of evaluating <em>datum-form</em> and each of the <em>argument-forms</em>.)</p>
+<p>Conditions <strong>9–15</strong></p>
+<p><strong>assert</strong></p>
+<p><strong>Description:</strong></p>
+<p><strong>assert</strong> assures that <em>test-form</em> evaluates to <em>true</em>. If <em>test-form</em> evaluates to <em>false</em>, <strong>assert</strong> signals a <em>correctable error</em> (denoted by <em>datum</em> and <em>arguments</em>). Continuing from this error using the <strong>continue</strong> <em>restart</em> makes it possible for the user to alter the values of the <em>places</em> before <strong>assert</strong> evaluates <em>test-form</em> again. If the value of <em>test-form</em> is <em>non-nil</em>, <strong>assert</strong> returns <strong>nil</strong>.</p>
+<p>The <em>places</em> are <em>generalized references</em> to data upon which <em>test-form</em> depends, whose values can be changed by the user in attempting to correct the error. <em>Subforms</em> of each <em>place</em> are only evaluated if an error is signaled, and might be re-evaluated if the error is re-signaled (after continuing without actually fixing the problem). The order of evaluation of the <em>places</em> is not specified; see Section 5.1.1.1 (Evaluation of Subforms to Places). If a <em>place form</em> is supplied that produces more values than there are store variables, the extra values are ignored. If the supplied <em>form</em> produces fewer values than there are store variables, the missing values are set to <strong>nil</strong>.</p>
+<p><strong>Examples:</strong></p>
+<p>(setq x (make-array ’(3 5) <!-- -->:initial-element<!-- --> 3))</p>
+<p><em>→</em> #2A((3 3 3 3 3) (3 3 3 3 3) (3 3 3 3 3))</p>
+<p>(setq y (make-array ’(3 5) <!-- -->:initial-element<!-- --> 7))</p>
+<p><em>→</em> #2A((7 7 7 7 7) (7 7 7 7 7) (7 7 7 7 7))</p>
+<p>(defun matrix-multiply (a b)</p>
+<p>(let ((*print-array* nil))</p>
+<p>(assert (and (= (array-rank a) (array-rank b) 2)</p>
+<p>(= (array-dimension a 1) (array-dimension b 0)))</p>
+<p>(a b)</p>
+<p>&quot;Cannot multiply ~S by ~S.&quot; a b)</p>
+<p>(really-matrix-multiply a b))) <em>→</em> MATRIX-MULTIPLY</p>
+<p>(matrix-multiply x y)</p>
+<p>▷ Correctable error in MATRIX-MULTIPLY:</p>
+<p>▷ Cannot multiply #&lt;ARRAY ...&gt; by #&lt;ARRAY ...&gt;.</p>
+<p>▷ Restart options:</p>
+<p>▷ 1: You will be prompted for one or more new values.</p>
+<p>▷ 2: Top level.</p>
+<p>▷ Debug&gt; <!-- -->:continue<!-- --> 1</p>
+<p>▷ Value for A: x</p>
+<p>▷ Value for B: (make-array ’(5 3) <!-- -->:initial-element<!-- --> 6)</p>
+<p><em>→</em> #2A((54 54 54 54 54)</p>
+<p>(54 54 54 54 54)</p>
+<p>(54 54 54 54 54)</p>
+<p>(54 54 54 54 54)</p>
+<p>(54 54 54 54 54))</p>
+<p>(defun double-safely (x) (assert (numberp x) (x)) (+ x x))</p>
+<p>(double-safely 4)</p>
+<p><em>→</em> 8</p>
+<p>(double-safely t)</p>
+<p>▷ Correctable error in DOUBLE-SAFELY: The value of (NUMBERP X) must be non-NIL. ▷ Restart options:</p>
+<p>▷ 1: You will be prompted for one or more new values.</p>
+<p>▷ 2: Top level.</p>
+<p>▷ Debug&gt; <!-- -->:continue<!-- --> 1</p>
+<p>▷ Value for X: 7</p>
+<p><em>→</em> 14</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*break-on-signals*</strong></p>
+<p>The set of active <em>condition handlers</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>check-type</strong>, <strong>error</strong>, Section 5.1 (Generalized Reference)</p>
+<p><strong>Notes:</strong></p>
+<p>The debugger need not include the <em>test-form</em> in the error message, and the <em>places</em> should not be included in the message, but they should be made available for the user’s perusal. If the user gives the “continue” command, the values of any of the references can be altered. The details of this depend on the implementation’s style of user interface.</p>
+<p><strong>error</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>error</strong> <em>datum</em> &amp;rest <em>arguments →</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>datum</em>, <em>arguments</em>—<em>designators</em> for a <em>condition</em> of default type <strong>simple-error</strong>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>error</strong> effectively invokes <strong>signal</strong> on the denoted <em>condition</em>.</p>
+<p>If the <em>condition</em> is not handled, (invoke-debugger <em>condition</em>) is done. As a consequence of calling <strong>invoke-debugger</strong>, <strong>error</strong> cannot directly return; the only exit from <strong>error</strong> can come by non-local transfer of control in a handler or by use of an interactive debugging command.</p>
+<p><strong>Examples:</strong></p>
+<p>(defun factorial (x)</p>
+<p>(cond ((or (not (typep x ’integer)) (minusp x))</p>
+<p>(error &quot;~S is not a valid argument to FACTORIAL.&quot; x))</p>
+<p>((zerop x) 1)</p>
+<p>Conditions <strong>9–17</strong></p>
+<p><strong>error</strong></p>
+<p>(t (* x (factorial (- x 1))))))</p>
+<p><em>→</em> FACTORIAL</p>
+<p>(factorial 20)</p>
+<p><em>→</em> 2432902008176640000</p>
+<p>(factorial -1)</p>
+<p>▷ Error: -1 is not a valid argument to FACTORIAL.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>▷ 1: Return to Lisp Toplevel.</p>
+<p>▷ Debug&gt;</p>
+<p>(setq a ’fred)</p>
+<p><em>→</em> FRED</p>
+<p>(if (numberp a) (1+ a) (error &quot;~S is not a number.&quot; A))</p>
+<p>▷ Error: FRED is not a number.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>▷ 1: Return to Lisp Toplevel.</p>
+<p>▷ Debug&gt; <!-- -->:Continue<!-- --> 1</p>
+<p>▷ Return to Lisp Toplevel.</p>
+<p>(define-condition not-a-number (error)</p>
+<p>((argument <!-- -->:reader<!-- --> not-a-number-argument <!-- -->:initarg<!-- --> <!-- -->:argument<!-- -->))</p>
+<p>(<!-- -->:report<!-- --> (lambda (condition stream)</p>
+<p>(format stream &quot;~S is not a number.&quot;</p>
+<p>(not-a-number-argument condition)))))</p>
+<p><em>→</em> NOT-A-NUMBER</p>
+<p>(if (numberp a) (1+ a) (error ’not-a-number <!-- -->:argument<!-- --> a))</p>
+<p>▷ Error: FRED is not a number.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>▷ 1: Return to Lisp Toplevel.</p>
+<p>▷ Debug&gt; <!-- -->:Continue<!-- --> 1</p>
+<p>▷ Return to Lisp Toplevel.</p>
+<p><strong>Side Effects:</strong></p>
+<p><em>Handlers</em> for the specified condition, if any, are invoked and might have side effects. Program execution might stop, and the debugger might be entered.</p>
+<p><strong>Affected By:</strong></p>
+<p>Existing handler bindings.</p>
+<p><strong>*break-on-signals*</strong></p>
+<p>Signals an error of <em>type</em> <strong>type-error</strong> if <em>datum</em> and <em>arguments</em> are not <em>designators</em> for a <em>condition</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>cerror</strong>, <strong>signal</strong>, <strong>format</strong>, <strong>ignore-errors</strong>, <strong>*break-on-signals*</strong>, <strong>handler-bind</strong>, Section 9.1 (Condition</p>
+<p>System Concepts)</p>
+<p><strong>Notes:</strong></p>
+<p>Some implementations may provide debugger commands for interactively returning from individual stack frames. However, it should be possible for the programmer to feel confident about writing code like:</p>
+<p>(defun wargames<!-- -->:no-win-scenario<!-- --> ()</p>
+<p>(if (error &quot;pushing the button would be stupid.&quot;))</p>
+<p>(push-the-button))</p>
+<p>In this scenario, there should be no chance that <strong>error</strong> will return and the button will get pushed.</p>
+<p>While the meaning of this program is clear and it might be proven ‘safe’ by a formal theorem prover, such a proof is no guarantee that the program is safe to execute. Compilers have been known to have bugs, computers to have signal glitches, and human beings to manually intervene in ways that are not always possible to predict. Those kinds of errors, while beyond the scope of the condition system to formally model, are not beyond the scope of things that should seriously be considered when writing code that could have the kinds of sweeping effects hinted at by this example.</p>
+<p><strong>cerror</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>cerror</strong> <em>continue-format-control datum</em> &amp;rest <em>arguments →</em> <strong>nil</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>Continue-format-control</em>—a <em>format control</em>.</p>
+<p><em>datum</em>, <em>arguments</em>—<em>designators</em> for a <em>condition</em> of default type <strong>simple-error</strong>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>cerror</strong> effectively invokes <strong>error</strong> on the <em>condition</em> named by <em>datum</em>. As with any function that implicitly calls <strong>error</strong>, if the <em>condition</em> is not handled, (invoke-debugger <em>condition</em>) is executed. While signaling is going on, and while in the debugger if it is reached, it is possible to continue code execution (<em>i.e.</em>, to return from <strong>cerror</strong>) using the <strong>continue</strong> <em>restart</em>.</p>
+<p>If <em>datum</em> is a <em>condition</em>, <em>arguments</em> can be supplied, but are used only in conjunction with the <em>continue-format-control</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(defun real-sqrt (n)</p>
+<p>(when (minusp n)</p>
+<p>(setq n (- n))</p>
+<p>Conditions <strong>9–19</strong></p>
+<p><strong>cerror</strong></p>
+<p>(cerror &quot;Return sqrt(~D) instead.&quot; &quot;Tried to take sqrt(-~D).&quot; n)) (sqrt n))</p>
+<p>(real-sqrt 4)</p>
+<p><em>→</em> 2.0</p>
+<p>(real-sqrt -9)</p>
+<p>▷ Correctable error in REAL-SQRT: Tried to take sqrt(-9).</p>
+<p>▷ Restart options:</p>
+<p>▷ 1: Return sqrt(9) instead.</p>
+<p>▷ 2: Top level.</p>
+<p>▷ Debug&gt; <!-- -->:continue<!-- --> 1</p>
+<p><em>→</em> 3.0</p>
+<p>(define-condition not-a-number (error)</p>
+<p>((argument <!-- -->:reader<!-- --> not-a-number-argument <!-- -->:initarg<!-- --> <!-- -->:argument<!-- -->)) (<!-- -->:report<!-- --> (lambda (condition stream)</p>
+<p>(format stream &quot;~S is not a number.&quot;</p>
+<p>(not-a-number-argument condition)))))</p>
+<p>(defun assure-number (n)</p>
+<p>(loop (when (numberp n) (return n))</p>
+<p>(cerror &quot;Enter a number.&quot;</p>
+<p>’not-a-number <!-- -->:argument<!-- --> n)</p>
+<p>(format t &quot;~&amp;Type a number: &quot;)</p>
+<p>(setq n (read))</p>
+<p>(fresh-line)))</p>
+<p>(assure-number ’a)</p>
+<p>▷ Correctable error in ASSURE-NUMBER: A is not a number.</p>
+<p>▷ Restart options:</p>
+<p>▷ 1: Enter a number.</p>
+<p>▷ 2: Top level.</p>
+<p>▷ Debug&gt; <!-- -->:continue<!-- --> 1</p>
+<p>▷ Type a number: 1/2</p>
+<p><em>→</em> 1/2</p>
+<p>(defun assure-large-number (n)</p>
+<p>(loop (when (and (numberp n) (&gt; n 73)) (return n))</p>
+<p>(cerror &quot;Enter a number~:[~; a bit larger than <del>D</del>].&quot;</p>
+<p>&quot;~*~A is not a large number.&quot;</p>
+<p>(numberp n) n)</p>
+<p>(format t &quot;~&amp;Type a large number: &quot;)</p>
+<p>(setq n (read))</p>
+<p>(fresh-line)))</p>
+<p><strong>cerror</strong></p>
+<p>(assure-large-number 10000)</p>
+<p><em>→</em> 10000</p>
+<p>(assure-large-number ’a)</p>
+<p>▷ Correctable error in ASSURE-LARGE-NUMBER: A is not a large number.</p>
+<p>▷ Restart options:</p>
+<p>▷ 1: Enter a number.</p>
+<p>▷ 2: Top level.</p>
+<p>▷ Debug&gt; <!-- -->:continue<!-- --> 1</p>
+<p>▷ Type a large number: 88</p>
+<p><em>→</em> 88</p>
+<p>(assure-large-number 37)</p>
+<p>▷ Correctable error in ASSURE-LARGE-NUMBER: 37 is not a large number.</p>
+<p>▷ Restart options:</p>
+<p>▷ 1: Enter a number a bit larger than 37.</p>
+<p>▷ 2: Top level.</p>
+<p>▷ Debug&gt; <!-- -->:continue<!-- --> 1</p>
+<p>▷ Type a large number: 259</p>
+<p><em>→</em> 259</p>
+<p>(define-condition not-a-large-number (error)</p>
+<p>((argument <!-- -->:reader<!-- --> not-a-large-number-argument <!-- -->:initarg<!-- --> <!-- -->:argument<!-- -->))</p>
+<p>(<!-- -->:report<!-- --> (lambda (condition stream)</p>
+<p>(format stream &quot;~S is not a large number.&quot;</p>
+<p>(not-a-large-number-argument condition)))))</p>
+<p>(defun assure-large-number (n)</p>
+<p>(loop (when (and (numberp n) (&gt; n 73)) (return n))</p>
+<p>(cerror &quot;Enter a number<del>3*</del>:[~; a bit larger than ~*<del>D</del>].&quot;</p>
+<p>’not-a-large-number</p>
+<p>:argument<!-- --> n</p>
+<p>:ignore<!-- --> (numberp n)</p>
+<p>:ignore<!-- --> n</p>
+<p>:allow-other-keys<!-- --> t)</p>
+<p>(format t &quot;~&amp;Type a large number: &quot;)</p>
+<p>(setq n (read))</p>
+<p>(fresh-line)))</p>
+<p>(assure-large-number ’a)</p>
+<p>▷ Correctable error in ASSURE-LARGE-NUMBER: A is not a large number.</p>
+<p>▷ Restart options:</p>
+<p>▷ 1: Enter a number.</p>
+<p>Conditions <strong>9–21</strong></p>
+<p>▷ 2: Top level.</p>
+<p>▷ Debug&gt; <!-- -->:continue<!-- --> 1</p>
+<p>▷ Type a large number: 88</p>
+<p><em>→</em> 88</p>
+<p>(assure-large-number 37)</p>
+<p>▷ Correctable error in ASSURE-LARGE-NUMBER: A is not a large number.</p>
+<p>▷ Restart options:</p>
+<p>▷ 1: Enter a number a bit larger than 37.</p>
+<p>▷ 2: Top level.</p>
+<p>▷ Debug&gt; <!-- -->:continue<!-- --> 1</p>
+<p>▷ Type a large number: 259</p>
+<p><em>→</em> 259</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*break-on-signals*</strong>.</p>
+<p>Existing handler bindings.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>error</strong>, <strong>format</strong>, <strong>handler-bind</strong>, <strong>*break-on-signals*</strong>, <strong>simple-type-error</strong></p>
+<p><strong>Notes:</strong></p>
+<p>If <em>datum</em> is a <em>condition type</em> rather than a <em>string</em>, the <strong>format</strong> directive ~* may be especially useful in the <em>continue-format-control</em> in order to ignore the <em>keywords</em> in the <em>initialization argument list</em>. For example:</p>
+<p>(cerror &quot;enter a new value to replace ~*~s&quot;</p>
+<p>’not-a-number</p>
+<p>:argument<!-- --> a)</p>
+<p><strong>check-type</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>check-type</strong> <em>place typespec</em> [<em>string</em>] <em>→</em> <strong>nil</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>place</em>—a <em>place</em>.</p>
+<p><em>typespec</em>—a <em>type specifier</em> .</p>
+<p><em>string</em>—a <em>string</em>; evaluated.</p>
+<p><strong>check-type</strong></p>
+<p><strong>Description:</strong></p>
+<p><strong>check-type</strong> signals a <em>correctable error</em> of <em>type</em> <strong>type-error</strong> if the contents of <em>place</em> are not of the type <em>typespec</em>.</p>
+<p><strong>check-type</strong> can return only if the <strong>store-value</strong> <em>restart</em> is invoked, either explicitly from a handler or implicitly as one of the options offered by the debugger. If the <strong>store-value</strong> <em>restart</em> is invoked, <strong>check-type</strong> stores the new value that is the argument to the <em>restart</em> invocation (or that is prompted for interactively by the debugger) in <em>place</em> and starts over, checking the type of the new value and signaling another error if it is still not of the desired <em>type</em>.</p>
+<p>The first time <em>place</em> is <em>evaluated</em>, it is <em>evaluated</em> by normal evaluation rules. It is later <em>evaluated</em> as a <em>place</em> if the type check fails and the <strong>store-value</strong> <em>restart</em> is used; see Section 5.1.1.1 (Evaluation of Subforms to Places).</p>
+<p><em>string</em> should be an English description of the type, starting with an indefinite article (“a” or “an”). If <em>string</em> is not supplied, it is computed automatically from <em>typespec</em>. The automatically generated message mentions <em>place</em>, its contents, and the desired type. An implementation may choose to generate a somewhat differently worded error message if it recognizes that <em>place</em> is of a particular form, such as one of the arguments to the function that called <strong>check-type</strong>. <em>string</em> is allowed because some applications of <strong>check-type</strong> may require a more specific description of what is wanted than can be generated automatically from <em>typespec</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(setq aardvarks ’(sam harry fred))</p>
+<p><em>→</em> (SAM HARRY FRED)</p>
+<p>(check-type aardvarks (array * (3)))</p>
+<p>▷ Error: The value of AARDVARKS, (SAM HARRY FRED),</p>
+<p>▷ is not a 3-long array.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>▷ 1: Specify a value to use instead.</p>
+<p>▷ 2: Return to Lisp Toplevel.</p>
+<p>▷ Debug&gt; <!-- -->:CONTINUE<!-- --> 1</p>
+<p>▷ Use Value: #(SAM FRED HARRY)</p>
+<p><em>→</em> NIL</p>
+<p>aardvarks</p>
+<p><em>→</em> #&lt;ARRAY-T-3 13571&gt;</p>
+<p>(map ’list #’identity aardvarks)</p>
+<p><em>→</em> (SAM FRED HARRY)</p>
+<p>(setq aardvark-count ’foo)</p>
+<p><em>→</em> FOO</p>
+<p>(check-type aardvark-count (integer 0 *) &quot;A positive integer&quot;)</p>
+<p>▷ Error: The value of AARDVARK-COUNT, FOO, is not a positive integer.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>▷ 1: Specify a value to use instead.</p>
+<p>▷ 2: Top level.</p>
+<p>Conditions <strong>9–23</strong></p>
+<p><strong>check-type</strong></p>
+<p>▷ Debug&gt; <!-- -->:CONTINUE<!-- --> 2</p>
+<p>(defmacro define-adder (name amount)</p>
+<p>(check-type name (and symbol (not null)) &quot;a name for an adder function&quot;) (check-type amount integer)</p>
+<p>‘(defun ,name (x) (+ x ,amount)))</p>
+<p>(macroexpand ’(define-adder add3 3))</p>
+<p><em>→</em> (defun add3 (x) (+ x 3))</p>
+<p>(macroexpand ’(define-adder 7 7))</p>
+<p>▷ Error: The value of NAME, 7, is not a name for an adder function. ▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>▷ 1: Specify a value to use instead.</p>
+<p>▷ 2: Top level.</p>
+<p>▷ Debug&gt; <!-- -->:Continue<!-- --> 1</p>
+<p>▷ Specify a value to use instead.</p>
+<p>▷ Type a form to be evaluated and used instead: ’ADD7</p>
+<p><em>→</em> (defun add7 (x) (+ x 7))</p>
+<p>(macroexpand ’(define-adder add5 something))</p>
+<p>▷ Error: The value of AMOUNT, SOMETHING, is not an integer.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>▷ 1: Specify a value to use instead.</p>
+<p>▷ 2: Top level.</p>
+<p>▷ Debug&gt; <!-- -->:Continue<!-- --> 1</p>
+<p>▷ Type a form to be evaluated and used instead: 5</p>
+<p><em>→</em> (defun add5 (x) (+ x 5))</p>
+<p>Control is transferred to a handler.</p>
+<p><strong>Side Effects:</strong></p>
+<p>The debugger might be entered.</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*break-on-signals*</strong></p>
+<p>The implementation.</p>
+<p><strong>See Also:</strong></p>
+<p>Section 9.1 (Condition System Concepts)</p>
+<p><strong>Notes:</strong></p>
+<p>(check-type <em>place typespec</em>)</p>
+<p><em>≡</em> (assert (typep <em>place</em> ’<em>typespec</em>) (<em>place</em>)</p>
+<p>’type-error <!-- -->:datum<!-- --> <em>place</em> <!-- -->:expected-type<!-- --> ’<em>typespec</em>)</p>
+<p><strong>simple-error</strong> <em>Condition Type</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>simple-error</strong>, <strong>simple-condition</strong>, <strong>error</strong>, <strong>serious-condition</strong>, <strong>condition</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>The <em>type</em> <strong>simple-error</strong> consists of <em>conditions</em> that are signaled by <strong>error</strong> or <strong>cerror</strong> when a <em>format control</em> is supplied as the function’s first argument.</p>
+<p><strong>invalid-method-error</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>invalid-method-error</strong> <em>method format-control</em> &amp;rest <em>args → implementation-dependent</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>method</em>—a <em>method</em>.</p>
+<p><em>format-control</em>—a <em>format control</em>.</p>
+<p><em>args</em>—<em>format arguments</em> for the <em>format-control</em>.</p>
+<p><strong>Description:</strong></p>
+<p>The <em>function</em> <strong>invalid-method-error</strong> is used to signal an error of <em>type</em> <strong>error</strong> when there is an applicable <em>method</em> whose <em>qualifiers</em> are not valid for the method combination type. The error message is constructed by using the <em>format-control</em> suitable for <strong>format</strong> and any <em>args</em> to it. Because an implementation may need to add additional contextual information to the error message, <strong>invalid-method-error</strong> should be called only within the dynamic extent of a method combination function.</p>
+<p>The <em>function</em> <strong>invalid-method-error</strong> is called automatically when a <em>method</em> fails to satisfy every <em>qualifier</em> pattern and predicate in a <strong>define-method-combination</strong> <em>form</em>. A method combination function that imposes additional restrictions should call <strong>invalid-method-error</strong> explicitly if it encounters a <em>method</em> it cannot accept.</p>
+<p>Whether <strong>invalid-method-error</strong> returns to its caller or exits via <strong>throw</strong> is <em>implementation-dependent</em>. Conditions <strong>9–25</strong></p>
+<p><strong>Side Effects:</strong></p>
+<p>The debugger might be entered.</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*break-on-signals*</strong></p>
+<p><strong>See Also:</strong></p>
+<p><strong>define-method-combination</strong></p>
+<p><strong>method-combination-error</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>method-combination-error</strong> <em>format-control</em> &amp;rest <em>args → implementation-dependent</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>format-control</em>—a <em>format control</em>.</p>
+<p><em>args</em>—<em>format arguments</em> for <em>format-control</em>.</p>
+<p><strong>Description:</strong></p>
+<p>The <em>function</em> <strong>method-combination-error</strong> is used to signal an error in method combination.</p>
+<p>The error message is constructed by using a <em>format-control</em> suitable for <strong>format</strong> and any <em>args</em> to it. Because an implementation may need to add additional contextual information to the error message, <strong>method-combination-error</strong> should be called only within the dynamic extent of a method combination function.</p>
+<p>Whether <strong>method-combination-error</strong> returns to its caller or exits via <strong>throw</strong> is <em>implementation dependent</em>.</p>
+<p><strong>Side Effects:</strong></p>
+<p>The debugger might be entered.</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*break-on-signals*</strong></p>
+<p><strong>See Also:</strong></p>
+<p><strong>define-method-combination</strong></p>
+<p><strong>signal</strong></p>
+<p><strong>signal</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>signal</strong> <em>datum</em> &amp;rest <em>arguments →</em> <strong>nil</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>datum</em>, <em>arguments</em>—<em>designators</em> for a <em>condition</em> of default type <strong>simple-condition</strong>.</p>
+<p><strong>Description:</strong></p>
+<p><em>Signals</em> the <em>condition</em> denoted by the given <em>datum</em> and <em>arguments</em>. If the <em>condition</em> is not handled, <strong>signal</strong> returns <strong>nil</strong>.</p>
+<p><strong>Examples:</strong></p>
+<p>(defun handle-division-conditions (condition)</p>
+<p>(format t &quot;Considering condition for division condition handling~%&quot;)</p>
+<p>(when (and (typep condition ’arithmetic-error)</p>
+<p>(eq ’/ (arithmetic-error-operation condition)))</p>
+<p>(invoke-debugger condition)))</p>
+<p>HANDLE-DIVISION-CONDITIONS</p>
+<p>(defun handle-other-arithmetic-errors (condition)</p>
+<p>(format t &quot;Considering condition for arithmetic condition handling~%&quot;)</p>
+<p>(when (typep condition ’arithmetic-error)</p>
+<p>(abort)))</p>
+<p>HANDLE-OTHER-ARITHMETIC-ERRORS</p>
+<p>(define-condition a-condition-with-no-handler (condition) ())</p>
+<p>A-CONDITION-WITH-NO-HANDLER</p>
+<p>(signal ’a-condition-with-no-handler)</p>
+<p>NIL</p>
+<p>(handler-bind ((condition #’handle-division-conditions)</p>
+<p>(condition #’handle-other-arithmetic-errors))</p>
+<p>(signal ’a-condition-with-no-handler))</p>
+<p>Considering condition for division condition handling</p>
+<p>Considering condition for arithmetic condition handling</p>
+<p>NIL</p>
+<p>(handler-bind ((arithmetic-error #’handle-division-conditions)</p>
+<p>(arithmetic-error #’handle-other-arithmetic-errors))</p>
+<p>(signal ’arithmetic-error <!-- -->:operation<!-- --> ’* <!-- -->:operands<!-- --> ’(1.2 b)))</p>
+<p>Considering condition for division condition handling</p>
+<p>Considering condition for arithmetic condition handling</p>
+<p>Back to Lisp Toplevel</p>
+<p><strong>Side Effects:</strong></p>
+<p>The debugger might be entered due to <strong>*break-on-signals*</strong>.</p>
+<p>Conditions <strong>9–27</strong></p>
+<p>Handlers for the condition being signaled might transfer control.</p>
+<p><strong>Affected By:</strong></p>
+<p>Existing handler bindings.</p>
+<p><strong>*break-on-signals*</strong></p>
+<p><strong>See Also:</strong></p>
+<p><strong>*break-on-signals*</strong>, <strong>error</strong>, <strong>simple-condition</strong>, Section 9.1.4 (Signaling and Handling Conditions)</p>
+<p><strong>Notes:</strong></p>
+<p>If (typep <em>datum</em> *break-on-signals*) <em>yields true</em>, the debugger is entered prior to beginning the signaling process. The <strong>continue</strong> <em>restart</em> can be used to continue with the signaling process. This is also true for all other <em>functions</em> and <em>macros</em> that should, might, or must <em>signal conditions</em>.</p>
+<p><strong>simple-condition</strong> <em>Condition Type</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>simple-condition</strong>, <strong>condition</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>The <em>type</em> <strong>simple-condition</strong> represents <em>conditions</em> that are signaled by <strong>signal</strong> whenever a <em>format control</em> is supplied as the function’s first argument. The <em>format control</em> and <em>format arguments</em> are initialized with the initialization arguments named <!-- -->:format-control<!-- --> and <!-- -->:format-arguments<!-- --> to <strong>make-condition</strong>, and are <em>accessed</em> by the <em>functions</em> <strong>simple-condition-format-control</strong> and <strong>simple-condition-format-arguments</strong>. If format arguments are not supplied to <strong>make-condition</strong>, <strong>nil</strong> is used as a default.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>simple-condition-format-control</strong>, <strong>simple-condition-format-arguments</strong></p>
+<p>&lt;b&gt;&lt;sup&gt;simple-condition-format-control, simple&lt;/sup&gt; condition-format-arguments&lt;/b&gt; &lt;i&gt;Function&lt;/i&gt;</p>
+<p><strong>Syntax:</strong></p>
+<p><strong>simple-condition-format-control</strong> <em>condition → format-control</em></p>
+<p><strong>simple-condition-format-arguments</strong> <em>condition → format-arguments</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>condition</em>—a <em>condition</em> of <em>type</em> <strong>simple-condition</strong>.</p>
+<p><em>format-control</em>—a <em>format control</em>.</p>
+<p><em>format-arguments</em>—a <em>list</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>simple-condition-format-control</strong> returns the <em>format control</em> needed to process the <em>condition</em>’s <em>format arguments</em>.</p>
+<p><strong>simple-condition-format-arguments</strong> returns a <em>list</em> of <em>format arguments</em> needed to process the <em>condition</em>’s <em>format control</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(setq foo (make-condition ’simple-condition</p>
+<p>:format-control<!-- --> &quot;Hi ~S&quot;</p>
+<p>:format-arguments<!-- --> ’(ho)))</p>
+<p><em>→</em> #&lt;SIMPLE-CONDITION 26223553&gt;</p>
+<p>(apply #’format nil (simple-condition-format-control foo)</p>
+<p>(simple-condition-format-arguments foo))</p>
+<p><em>→</em> &quot;Hi HO&quot;</p>
+<p><strong>See Also:</strong></p>
+<p><strong>simple-condition</strong>, Section 9.1 (Condition System Concepts)</p>
+<p><strong>warn</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>warn</strong> <em>datum</em> &amp;rest <em>arguments →</em> <strong>nil</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>datum</em>, <em>arguments</em>—<em>designators</em> for a <em>condition</em> of default type <strong>simple-warning</strong>.</p>
+<p>Conditions <strong>9–29</strong></p>
+<p><strong>warn</strong></p>
+<p><strong>Description:</strong></p>
+<p><em>Signals</em> a <em>condition</em> of <em>type</em> <strong>warning</strong>. If the <em>condition</em> is not <em>handled</em>, reports the <em>condition</em> to <em>error output</em>.</p>
+<p>The precise mechanism for warning is as follows:</p>
+<p><strong>The warning condition is signaled</strong></p>
+<p>While the <strong>warning</strong> <em>condition</em> is being signaled, the <strong>muffle-warning</strong> <em>restart</em> is established for use by a <em>handler</em> . If invoked, this <em>restart</em> bypasses further action by <strong>warn</strong>, which in turn causes <strong>warn</strong> to immediately return <strong>nil</strong>.</p>
+<p><strong>If no handler for the warning condition is found</strong></p>
+<p>If no handlers for the warning condition are found, or if all such handlers decline, then the <em>condition</em> is reported to <em>error output</em> by <strong>warn</strong> in an <em>implementation-dependent</em> format.</p>
+<p><strong>nil is returned</strong></p>
+<p>The value returned by <strong>warn</strong> if it returns is <strong>nil</strong>.</p>
+<p><strong>Examples:</strong></p>
+<p>(defun foo (x)</p>
+<p>(let ((result (* x 2)))</p>
+<p>(if (not (typep result ’fixnum))</p>
+<p>(warn &quot;You’re using very big numbers.&quot;))</p>
+<p>result))</p>
+<p><em>→</em> FOO</p>
+<p>(foo 3)</p>
+<p><em>→</em> 6</p>
+<p>(foo most-positive-fixnum)</p>
+<p>▷ Warning: You’re using very big numbers.</p>
+<p><em>→</em> 4294967294</p>
+<p>(setq *break-on-signals* t)</p>
+<p><em>→</em> T</p>
+<p>(foo most-positive-fixnum)</p>
+<p>▷ Break: Caveat emptor.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number.</p>
+<p>▷ 1: Return from Break.</p>
+<p>▷ 2: Abort to Lisp Toplevel.</p>
+<p>▷ Debug&gt; <!-- -->:continue<!-- --> 1</p>
+<p>▷ Warning: You’re using very big numbers.</p>
+<p><em>→</em> 4294967294</p>
+<p><strong>Side Effects:</strong></p>
+<p>A warning is issued. The debugger might be entered.</p>
+<p><strong>Affected By:</strong></p>
+<p>Existing handler bindings.</p>
+<p><strong>*break-on-signals*</strong>, <strong>*error-output*</strong>.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>If <em>datum</em> is a <em>condition</em> and if the <em>condition</em> is not of <em>type</em> <strong>warning</strong>, or <em>arguments</em> is <em>non-nil</em>, an error of <em>type</em> <strong>type-error</strong> is signaled.</p>
+<p>If <em>datum</em> is a condition type, the result of (apply #’make-condition datum arguments) must be of <em>type</em> <strong>warning</strong> or an error of <em>type</em> <strong>type-error</strong> is signaled.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>*break-on-signals*</strong>, <strong>muffle-warning</strong>, <strong>signal</strong></p>
+<p><strong>simple-warning</strong> <em>Condition Type</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>simple-warning</strong>, <strong>simple-condition</strong>, <strong>warning</strong>, <strong>condition</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>The <em>type</em> <strong>simple-warning</strong> represents <em>conditions</em> that are signaled by <strong>warn</strong> whenever a <em>format control</em> is supplied as the function’s first argument.</p>
+<p>Conditions <strong>9–31</strong></p>
+<p><strong>invoke-debugger</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>invoke-debugger</strong> <em>condition →</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>condition</em>—a <em>condition object</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>invoke-debugger</strong> attempts to enter the debugger with <em>condition</em>.</p>
+<p>If <strong>*debugger-hook*</strong> is not <strong>nil</strong>, it should be a <em>function</em> (or the name of a <em>function</em>) to be called prior to entry to the standard debugger. The <em>function</em> is called with <strong>*debugger-hook*</strong> bound to <strong>nil</strong>, and the <em>function</em> must accept two arguments: the <em>condition</em> and the <em>value</em> of <strong>*debugger-hook*</strong> prior to binding it to <strong>nil</strong>. If the <em>function</em> returns normally, the standard debugger is entered.</p>
+<p>The standard debugger never directly returns. Return can occur only by a non-local transfer of control, such as the use of a restart function.</p>
+<p><strong>Examples:</strong></p>
+<p>(ignore-errors ;Normally, this would suppress debugger entry</p>
+<p>(handler-bind ((error #’invoke-debugger)) ;But this forces debugger entry</p>
+<p>(error &quot;Foo.&quot;)))</p>
+<p>Debug: Foo.</p>
+<p>To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>1: Return to Lisp Toplevel.</p>
+<p>Debug&gt;</p>
+<p><strong>Side Effects:</strong></p>
+<p><strong>*debugger-hook*</strong> is bound to <strong>nil</strong>, program execution is discontinued, and the debugger is entered.</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*debug-io*</strong> and <strong>*debugger-hook*</strong>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>error</strong>, <strong>break</strong></p>
+<p><strong>break</strong></p>
+<p><strong>break</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>break</strong> &amp;optional <em>format-control</em> &amp;rest <em>format-arguments →</em> <strong>nil</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>format-control</em>—a <em>format control</em>. The default is <em>implementation-dependent</em>.</p>
+<p><em>format-arguments</em>—<em>format arguments</em> for the <em>format-control</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>break</strong> <em>formats format-control</em> and <em>format-arguments</em> and then goes directly into the debugger without allowing any possibility of interception by programmed error-handling facilities.</p>
+<p>If the <strong>continue</strong> <em>restart</em> is used while in the debugger, <strong>break</strong> immediately returns <strong>nil</strong> without taking any unusual recovery action.</p>
+<p><strong>break</strong> binds <strong>*debugger-hook*</strong> to <strong>nil</strong> before attempting to enter the debugger.</p>
+<p><strong>Examples:</strong></p>
+<p>(break &quot;You got here with arguments: ~<!-- -->:S<!-- -->.&quot; ’(FOO 37 A))</p>
+<p>▷ BREAK: You got here with these arguments: FOO, 37, A.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>▷ 1: Return from BREAK.</p>
+<p>▷ 2: Top level.</p>
+<p>▷ Debug&gt; <!-- -->:CONTINUE<!-- --> 1</p>
+<p>▷ Return from BREAK.</p>
+<p><em>→</em> NIL</p>
+<p><strong>Side Effects:</strong></p>
+<p>The debugger is entered.</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*debug-io*</strong>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>error</strong>, <strong>invoke-debugger</strong>.</p>
+<p><strong>Notes:</strong></p>
+<p><strong>break</strong> is used as a way of inserting temporary debugging “breakpoints” in a program, not as a way of signaling errors. For this reason, <strong>break</strong> does not take the <em>continue-format-control argument</em> that <strong>cerror</strong> takes. This and the lack of any possibility of interception by <em>condition handling</em> are the only program-visible differences between <strong>break</strong> and <strong>cerror</strong>.</p>
+<p>Conditions <strong>9–33</strong></p>
+<p>The user interface aspects of <strong>break</strong> and <strong>cerror</strong> are permitted to vary more widely, in order to accomodate the interface needs of the <em>implementation</em>. For example, it is permissible for a <em>Lisp read-eval-print loop</em> to be entered by <strong>break</strong> rather than the conventional debugger.</p>
+<p><strong>break</strong> could be defined by:</p>
+<p>(defun break (&amp;optional (format-control &quot;Break&quot;) &amp;rest format-arguments)</p>
+<p>(with-simple-restart (continue &quot;Return from BREAK.&quot;)</p>
+<p>(let ((*debugger-hook* nil))</p>
+<p>(invoke-debugger</p>
+<p>(make-condition ’simple-condition</p>
+<p>:format-control<!-- --> format-control</p>
+<p>:format-arguments<!-- --> format-arguments))))</p>
+<p>nil)</p>
+<p><em>∗</em><strong>debugger-hook</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a <em>designator</em> for a <em>function</em> of two <em>arguments</em> (a <em>condition</em> and the <em>value</em> of <strong>*debugger-hook*</strong> at the time the debugger was entered), or <strong>nil</strong>.</p>
+<p><strong>Initial Value:</strong></p>
+<p><strong>nil</strong>.</p>
+<p><strong>Description:</strong></p>
+<p>When the <em>value</em> of <strong>*debugger-hook*</strong> is <em>non-nil</em>, it is called prior to normal entry into the debugger, either due to a call to <strong>invoke-debugger</strong> or due to automatic entry into the debugger from a call to <strong>error</strong> or <strong>cerror</strong> with a condition that is not handled. The <em>function</em> may either handle the <em>condition</em> (transfer control) or return normally (allowing the standard debugger to run). To minimize recursive errors while debugging, <strong>*debugger-hook*</strong> is bound to <strong>nil</strong> by <strong>invoke-debugger</strong> prior to calling the <em>function</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(defun one-of (choices &amp;optional (prompt &quot;Choice&quot;))</p>
+<p>(let ((n (length choices)) (i))</p>
+<p>(do ((c choices (cdr c)) (i 1 (+ i 1)))</p>
+<p>((null c))</p>
+<p>(format t &quot;~&amp;[~D] <del>A</del>%&quot; i (car c)))</p>
+<p>(do () ((typep i ‘(integer 1 ,n)))</p>
+<p>(format t &quot;~&amp;~A: &quot; prompt)</p>
+<p>(setq i (read))</p>
+<p>(fresh-line))</p>
+<p>(nth (- i 1) choices)))</p>
+<p>(defun my-debugger (condition me-or-my-encapsulation)</p>
+<p>(format t &quot;~&amp;Fooey: ~A&quot; condition)</p>
+<p>(let ((restart (one-of (compute-restarts))))</p>
+<p>(if (not restart) (error &quot;My debugger got an error.&quot;))</p>
+<p>(let ((*debugger-hook* me-or-my-encapsulation))</p>
+<p>(invoke-restart-interactively restart))))</p>
+<p>(let ((*debugger-hook* #’my-debugger))</p>
+<p>(+ 3 ’a))</p>
+<p>▷ Fooey: The argument to +, A, is not a number.</p>
+<p>▷ [1] Supply a replacement for A.</p>
+<p>▷ [2] Return to Cloe Toplevel.</p>
+<p>▷ Choice: 1</p>
+<p>▷ Form to evaluate and use: (+ 5 ’b)</p>
+<p>▷ Fooey: The argument to +, B, is not a number.</p>
+<p>▷ [1] Supply a replacement for B.</p>
+<p>▷ [2] Supply a replacement for A.</p>
+<p>▷ [3] Return to Cloe Toplevel.</p>
+<p>▷ Choice: 1</p>
+<p>▷ Form to evaluate and use: 1</p>
+<p><em>→</em> 9</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>invoke-debugger</strong></p>
+<p><strong>Notes:</strong></p>
+<p>When evaluating code typed in by the user interactively, it is sometimes useful to have the hook function bind <strong>*debugger-hook*</strong> to the <em>function</em> that was its second argument so that recursive errors can be handled using the same interactive facility.</p>
+<p><em>∗</em><strong>break-on-signals</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a <em>type specifier</em> .</p>
+<p><strong>Initial Value:</strong></p>
+<p><strong>nil</strong>.</p>
+<p>Conditions <strong>9–35</strong></p>
+<p><em>∗</em><strong>break-on-signals</strong><em>∗</em></p>
+<p><strong>Description:</strong></p>
+<p>When (typep <em>condition</em> *break-on-signals*) returns <em>true</em>, calls to <strong>signal</strong>, and to other <em>operators</em> such as <strong>error</strong> that implicitly call <strong>signal</strong>, enter the debugger prior to <em>signaling</em> the <em>condition</em>.</p>
+<p>The <strong>continue</strong> <em>restart</em> can be used to continue with the normal <em>signaling</em> process when a break occurs process due to <strong>*break-on-signals*</strong>.</p>
+<p><strong>Examples:</strong></p>
+<p>*break-on-signals* <em>→</em> NIL</p>
+<p>(ignore-errors (error ’simple-error <!-- -->:format-control<!-- --> &quot;Fooey!&quot;))</p>
+<p><em>→</em> NIL, #&lt;SIMPLE-ERROR 32207172&gt;</p>
+<p>(let ((*break-on-signals* ’error))</p>
+<p>(ignore-errors (error ’simple-error <!-- -->:format-control<!-- --> &quot;Fooey!&quot;)))</p>
+<p>▷ Break: Fooey!</p>
+<p>▷ BREAK entered because of *BREAK-ON-SIGNALS*.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>▷ 1: Continue to signal.</p>
+<p>▷ 2: Top level.</p>
+<p>▷ Debug&gt; <!-- -->:CONTINUE<!-- --> 1</p>
+<p>▷ Continue to signal.</p>
+<p><em>→</em> NIL, #&lt;SIMPLE-ERROR 32212257&gt;</p>
+<p>(let ((*break-on-signals* ’error))</p>
+<p>(error ’simple-error <!-- -->:format-control<!-- --> &quot;Fooey!&quot;))</p>
+<p>▷ Break: Fooey!</p>
+<p>▷ BREAK entered because of *BREAK-ON-SIGNALS*.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>▷ 1: Continue to signal.</p>
+<p>▷ 2: Top level.</p>
+<p>▷ Debug&gt; <!-- -->:CONTINUE<!-- --> 1</p>
+<p>▷ Continue to signal.</p>
+<p>▷ Error: Fooey!</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>▷ 1: Top level.</p>
+<p>▷ Debug&gt; <!-- -->:CONTINUE<!-- --> 1</p>
+<p>▷ Top level.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>break</strong>, <strong>signal</strong>, <strong>warn</strong>, <strong>error</strong>, <strong>typep</strong>, Section 9.1 (Condition System Concepts)</p>
+<p><strong>Notes:</strong></p>
+<p><strong>*break-on-signals*</strong> is intended primarily for use in debugging code that does signaling. When setting <strong>*break-on-signals*</strong>, the user is encouraged to choose the most restrictive specification</p>
+<p>that suffices. Setting <strong>*break-on-signals*</strong> effectively violates the modular handling of <em>condition</em> signaling. In practice, the complete effect of setting <strong>*break-on-signals*</strong> might be unpredictable in some cases since the user might not be aware of the variety or number of calls to <strong>signal</strong> that are used in code called only incidentally.</p>
+<p><strong>*break-on-signals*</strong> enables an early entry to the debugger but such an entry does not preclude an additional entry to the debugger in the case of operations such as <strong>error</strong> and <strong>cerror</strong>.</p>
+<p><strong>handler-bind</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>handler-bind</strong> (<em>{↓binding}</em>*) <em>{form}</em>* <em>→ {result}</em>*</p>
+<p><em>binding::</em>=(<em>type handler</em>)</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>type</em>—a <em>type specifier</em> .</p>
+<p><em>handler</em>—a <em>form</em>; evaluated to produce a <em>handler-function</em>.</p>
+<p><em>handler-function</em>—a <em>designator</em> for a <em>function</em> of one <em>argument</em>.</p>
+<p><em>forms</em>—an <em>implicit progn</em>.</p>
+<p><em>results</em>—the <em>values</em> returned by the <em>forms</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Executes <em>forms</em> in a <em>dynamic environment</em> where the indicated <em>handler bindings</em> are in effect.</p>
+<p>Each <em>handler</em> should evaluate to a <em>handler-function</em>, which is used to handle <em>conditions</em> of the given <em>type</em> during execution of the <em>forms</em>. This <em>function</em> should take a single argument, the <em>condition</em> being signaled.</p>
+<p>If more than one <em>handler binding</em> is supplied, the <em>handler bindings</em> are searched sequentially from top to bottom in search of a match (by visual analogy with <strong>typecase</strong>). If an appropriate <em>type</em> is found, the associated handler is run in a <em>dynamic environment</em> where none of these <em>handler</em> bindings are visible (to avoid recursive errors). If the <em>handler declines</em>, the search continues for another <em>handler</em> .</p>
+<p>If no appropriate <em>handler</em> is found, other <em>handlers</em> are sought from dynamically enclosing contours. If no <em>handler</em> is found outside, then <strong>signal</strong> returns or <strong>error</strong> enters the debugger.</p>
+<p><strong>Examples:</strong></p>
+<p>In the following code, if an unbound variable error is signaled in the body (and not handled by an intervening handler), the first function is called.</p>
+<p>Conditions <strong>9–37</strong></p>
+<p>(handler-bind ((unbound-variable #’(lambda ...))</p>
+<p>(error #’(lambda ...)))</p>
+<p>...)</p>
+<p>If any other kind of error is signaled, the second function is called. In either case, neither handler is active while executing the code in the associated function.</p>
+<p>(defun trap-error-handler (condition)</p>
+<p>(format *error-output* &quot;~&amp;<del>A</del>&amp;&quot; condition)</p>
+<p>(throw ’trap-errors nil))</p>
+<p>(defmacro trap-errors (&amp;rest forms)</p>
+<p>‘(catch ’trap-errors</p>
+<p>(handler-bind ((error #’trap-error-handler))</p>
+<p>,@forms)))</p>
+<p>(list (trap-errors (signal &quot;Foo.&quot;) 1)</p>
+<p>(trap-errors (error &quot;Bar.&quot;) 2)</p>
+<p>(+ 1 2))</p>
+<p>▷ Bar.</p>
+<p><em>→</em> (1 NIL 3)</p>
+<p>Note that “Foo.” is not printed because the condition made by <strong>signal</strong> is a <em>simple condition</em>, which is not of <em>type</em> <strong>error</strong>, so it doesn’t trigger the handler for <strong>error</strong> set up by trap-errors.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>handler-case</strong></p>
+<p><strong>handler-case</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>handler-case</strong> <em>expression</em> [[ <em>{↓error-clause}</em>* <em>| ↓no-error-clause</em> ]] <em>→ {result}</em>*</p>
+<p><em>clause::</em>=<em>↓error-clause | ↓no-error-clause</em></p>
+<p><em>error-clause::</em>=(<em>typespec</em> ([<em>var</em>]) <em>{declaration}</em>* <em>{form}</em>*)</p>
+<p><em>no-error-clause::</em>=(<!-- -->:no-error<!-- --> <em>lambda-list {declaration}</em>* <em>{form}</em>*)</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>expression</em>—a <em>form</em>.</p>
+<p><em>typespec</em>—a <em>type specifier</em> .</p>
+<p><strong>handler-case</strong></p>
+<p><em>var</em>—a <em>variable name</em>.</p>
+<p><em>lambda-list</em>—an <em>ordinary lambda list</em>.</p>
+<p><em>declaration</em>—a <strong>declare</strong> <em>expression</em>; not evaluated.</p>
+<p><em>form</em>—a <em>form</em>.</p>
+<p><em>results</em>—In the normal situation, the values returned are those that result from the evaluation of <em>expression</em>; in the exceptional situation when control is transferred to a <em>clause</em>, the value of the last <em>form</em> in that <em>clause</em> is returned.</p>
+<p><strong>Description:</strong></p>
+<p><strong>handler-case</strong> executes <em>expression</em> in a <em>dynamic environment</em> where various handlers are active. Each <em>error-clause</em> specifies how to handle a <em>condition</em> matching the indicated <em>typespec</em>. A <em>no-error-clause</em> allows the specification of a particular action if control returns normally.</p>
+<p>If a <em>condition</em> is signaled for which there is an appropriate <em>error-clause</em> during the execution of <em>expression</em> (<em>i.e.</em>, one for which (typep <em>condition</em> ’<em>typespec</em>) returns <em>true</em>) and if there is no intervening handler for a <em>condition</em> of that <em>type</em>, then control is transferred to the body of the relevant <em>error-clause</em>. In this case, the dynamic state is unwound appropriately (so that the handlers established around the <em>expression</em> are no longer active), and <em>var</em> is bound to the <em>condition</em> that had been signaled. If more than one case is provided, those cases are made accessible in parallel. That is, in</p>
+<p>(handler-case <em>form</em></p>
+<p>(<em>typespec1</em> (<em>var1</em>) <em>form1</em>)</p>
+<p>(<em>typespec2</em> (<em>var2</em>) <em>form2</em>))</p>
+<p>if the first <em>clause</em> (containing <em>form1</em>) has been selected, the handler for the second is no longer visible (or vice versa).</p>
+<p>The <em>clauses</em> are searched sequentially from top to bottom. If there is <em>type</em> overlap between <em>typespecs</em>, the earlier of the <em>clauses</em> is selected.</p>
+<p>If <em>var</em> is not needed, it can be omitted. That is, a <em>clause</em> such as:</p>
+<p>(<em>typespec</em> (<em>var</em>) (declare (ignore <em>var</em>)) <em>form</em>)</p>
+<p>can be written (<em>typespec</em> () <em>form</em>).</p>
+<p>If there are no <em>forms</em> in a selected <em>clause</em>, the case, and therefore <strong>handler-case</strong>, returns <strong>nil</strong>. If execution of <em>expression</em> returns normally and no <em>no-error-clause</em> exists, the values returned by <em>expression</em> are returned by <strong>handler-case</strong>. If execution of <em>expression</em> returns normally and a <em>no-error-clause</em> does exist, the values returned are used as arguments to the function described by constructing (lambda <em>lambda-list {form}</em>*) from the <em>no-error-clause</em>, and the <em>values</em> of that function call are returned by <strong>handler-case</strong>. The handlers which were established around the <em>expression</em> are no longer active at the time of this call.</p>
+<p>Conditions <strong>9–39</strong></p>
+<p><strong>handler-case</strong></p>
+<p><strong>Examples:</strong></p>
+<p>(defun assess-condition (condition)</p>
+<p>(handler-case (signal condition)</p>
+<p>(warning () &quot;Lots of smoke, but no fire.&quot;)</p>
+<p>((or arithmetic-error control-error cell-error stream-error)</p>
+<p>(condition)</p>
+<p>(format nil &quot;~S looks especially bad.&quot; condition))</p>
+<p>(serious-condition (condition)</p>
+<p>(format nil &quot;~S looks serious.&quot; condition))</p>
+<p>(condition () &quot;Hardly worth mentioning.&quot;)))</p>
+<p><em>→</em> ASSESS-CONDITION</p>
+<p>(assess-condition (make-condition ’stream-error <!-- -->:stream<!-- --> *terminal-io*)) <em>→</em> &quot;#&lt;STREAM-ERROR 12352256&gt; looks especially bad.&quot;</p>
+<p>(define-condition random-condition (condition) ()</p>
+<p>(<!-- -->:report<!-- --> (lambda (condition stream)</p>
+<p>(declare (ignore condition))</p>
+<p>(princ &quot;Yow&quot; stream))))</p>
+<p><em>→</em> RANDOM-CONDITION</p>
+<p>(assess-condition (make-condition ’random-condition))</p>
+<p><em>→</em> &quot;Hardly worth mentioning.&quot;</p>
+<p><strong>See Also:</strong></p>
+<p><strong>handler-bind</strong>, <strong>ignore-errors</strong>, Section 9.1 (Condition System Concepts) <strong>Notes:</strong></p>
+<p>(handler-case form</p>
+<p>(<em>type1</em> (<em>var1</em>) . <em>body1</em>)</p>
+<p>(<em>type2</em> (<em>var2</em>) . <em>body2</em>) ...)</p>
+<p>is approximately equivalent to:</p>
+<p>(block #1=#<!-- -->:g0001</p>
+<p>(let ((#2=#<!-- -->:g0002<!-- --> nil))</p>
+<p>(tagbody</p>
+<p>(handler-bind ((<em>type1</em> #’(lambda (temp)</p>
+<p>(setq #1# temp)</p>
+<p>(go #3=#<!-- -->:g0003<!-- -->)))</p>
+<p>(<em>type2</em> #’(lambda (temp)</p>
+<p>(setq #2# temp)</p>
+<p>(go #4=#<!-- -->:g0004<!-- -->))) ...)</p>
+<p>(return-from #1# form))</p>
+<p>#3# (return-from #1# (let ((<em>var1</em> #2#)) . <em>body1</em>))</p>
+<p>#4# (return-from #1# (let ((<em>var2</em> #2#)) . <em>body2</em>)) ...)))</p>
+<p>(handler-case form</p>
+<p>(<em>type1 (var1)</em> . <em>body1</em>)</p>
+<p>...</p>
+<p>(<!-- -->:no-error<!-- --> (<em>varN-1 varN-2</em> ...) . <em>bodyN</em>))</p>
+<p>is approximately equivalent to:</p>
+<p>(block #1=#<!-- -->:error-return</p>
+<p>(multiple-value-call #’(lambda (<em>varN-1 varN-2</em> ...) . <em>bodyN</em>)</p>
+<p>(block #2=#<!-- -->:normal-return</p>
+<p>(return-from #1#</p>
+<p>(handler-case (return-from #2# form)</p>
+<p>(<em>type1</em> (<em>var1</em>) . <em>body1</em>) ...)))))</p>
+<p><strong>ignore-errors</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>ignore-errors</strong> <em>{form}</em>* <em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>forms</em>—an <em>implicit progn</em>.</p>
+<p><em>results</em>—In the normal situation, the <em>values</em> of the <em>forms</em> are returned; in the exceptional situation, two values are returned: <strong>nil</strong> and the <em>condition</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>ignore-errors</strong> is used to prevent <em>conditions</em> of <em>type</em> <strong>error</strong> from causing entry into the debugger.</p>
+<p>Specifically, <strong>ignore-errors</strong> <em>executes forms</em> in a <em>dynamic environment</em> where a <em>handler</em> for <em>conditions</em> of <em>type</em> <strong>error</strong> has been established; if invoked, it <em>handles</em> such <em>conditions</em> by returning two <em>values</em>, <strong>nil</strong> and the <em>condition</em> that was <em>signaled</em>, from the <strong>ignore-errors</strong> <em>form</em>.</p>
+<p>If a <em>normal return</em> from the <em>forms</em> occurs, any <em>values</em> returned are returned by <strong>ignore-errors</strong>. <strong>Examples:</strong></p>
+<p>(defun load-init-file (program)</p>
+<p>(let ((win nil))</p>
+<p>(ignore-errors ;if this fails, don’t enter debugger</p>
+<p>(load (merge-pathnames (make-pathname <!-- -->:name<!-- --> program <!-- -->:type<!-- --> <!-- -->:lisp<!-- -->)</p>
+<p>(user-homedir-pathname)))</p>
+<p>(setq win t))</p>
+<p>(unless win (format t &quot;<del>&amp;Init file failed to load.</del>%&quot;))</p>
+<p>win))</p>
+<p>Conditions <strong>9–41</strong></p>
+<p>(load-init-file &quot;no-such-program&quot;)</p>
+<p>▷ Init file failed to load.</p>
+<p>NIL</p>
+<p><strong>See Also:</strong></p>
+<p><strong>handler-case</strong>, Section 9.1 (Condition System Concepts)</p>
+<p><strong>Notes:</strong></p>
+<p>(ignore-errors . <em>forms</em>)</p>
+<p>is equivalent to:</p>
+<p>(handler-case (progn . <em>forms</em>)</p>
+<p>(error (condition) (values nil condition)))</p>
+<p>Because the second return value is a <em>condition</em> in the exceptional case, it is common (but not required) to arrange for the second return value in the normal case to be missing or <strong>nil</strong> so that the two situations can be distinguished.</p>
+<p><strong>define-condition</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>define-condition</strong> <em>name</em> (<em>{parent-type}</em>*) (<em>{↓slot-spec}</em>*) <em>{option}</em>*</p>
+<p><em>→ name</em></p>
+<p><em>slot-spec::</em>=<em>slot-name |</em> (<em>slot-name ↓slot-option</em>)</p>
+<p><em>slot-option::</em>=[[ <em>{</em>:reader<!-- --> <em>symbol}</em>* <em>|</em></p>
+<p><em>{</em>:writer<!-- --> <em>↓function-name}</em>* <em>|</em></p>
+<p><em>{</em>:accessor<!-- --> <em>symbol}</em>* <em>|</em></p>
+<p><em>{</em>:allocation<!-- --> <em>↓allocation-type} |</em></p>
+<p><em>{</em>:initarg<!-- --> <em>symbol}</em>* <em>|</em></p>
+<p><em>{</em>:initform<!-- --> <em>form} |</em></p>
+<p><em>{</em>:type<!-- --> <em>type-specifier}</em> ]]</p>
+<p><em>option::</em>=[[(<!-- -->:default-initargs<!-- --> . <em>initarg-list</em>) <em>|</em></p>
+<p>(<!-- -->:documentation<!-- --> <em>string</em>) <em>|</em></p>
+<p>(<!-- -->:report<!-- --> <em>report-name</em>) ]]</p>
+<p><strong>define-condition</strong></p>
+<p><em>function-name::</em>=<em>{symbol |</em> (setf <em>symbol</em>)<em>}</em></p>
+<p><em>allocation-type::</em>=<!-- -->:instance<!-- --> <em>|</em> <!-- -->:class</p>
+<p><em>report-name::</em>=<em>string | symbol | lambda expression</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>name</em>—a <em>symbol</em>.</p>
+<p><em>parent-type</em>—a <em>symbol</em> naming a <em>condition type</em>. If no <em>parent-types</em> are supplied, the <em>parent-types</em> default to (condition).</p>
+<p><em>default-initargs</em>—a <em>list</em> of <em>keyword/value pairs</em>.</p>
+<p><em>Slot-spec</em> – the <em>name</em> of a <em>slot</em> or a <em>list</em> consisting of the <em>slot-name</em> followed by zero or more <em>slot-options</em>.</p>
+<p><em>Slot-name</em> – a slot name (a <em>symbol</em>), the <em>list</em> of a slot name, or the <em>list</em> of slot name/slot form pairs. <em>Option</em> – Any of the following:</p>
+<p>:reader</p>
+<p>:reader<!-- --> can be supplied more than once for a given <em>slot</em> and cannot be <strong>nil</strong>.</p>
+<p>:writer</p>
+<p>:writer<!-- --> can be supplied more than once for a given <em>slot</em> and must name a <em>generic function</em>. <!-- -->:accessor</p>
+<p>:accessor<!-- --> can be supplied more than once for a given <em>slot</em> and cannot be <strong>nil</strong>.</p>
+<p>:allocation</p>
+<p>:allocation<!-- --> can be supplied once at most for a given <em>slot</em>. The default if <!-- -->:allocation<!-- --> is not supplied is <!-- -->:instance<!-- -->.</p>
+<p>:initarg</p>
+<p>:initarg<!-- --> can be supplied more than once for a given <em>slot</em>.</p>
+<p>:initform</p>
+<p>:initform<!-- --> can be supplied once at most for a given <em>slot</em>.</p>
+<p>:type</p>
+<p>:type<!-- --> can be supplied once at most for a given <em>slot</em>.</p>
+<p>Conditions <strong>9–43</strong></p>
+<p><strong>define-condition</strong></p>
+<p>:documentation</p>
+<p>:documentation<!-- --> can be supplied once at most for a given <em>slot</em>.</p>
+<p>:report</p>
+<p>:report<!-- --> can be supplied once at most.</p>
+<p><strong>Description:</strong></p>
+<p><strong>define-condition</strong> defines a new condition type called <em>name</em>, which is a <em>subtype</em> of the <em>type</em> or <em>types</em> named by <em>parent-type</em>. Each <em>parent-type</em> argument specifies a direct <em>supertype</em> of the new <em>condition</em>. The new <em>condition</em> inherits <em>slots</em> and <em>methods</em> from each of its direct <em>supertypes</em>, and so on.</p>
+<p>If a slot name/slot form pair is supplied, the slot form is a <em>form</em> that can be evaluated by <strong>make-condition</strong> to produce a default value when an explicit value is not provided. If no slot form is supplied, the contents of the <em>slot</em> is initialized in an <em>implementation-dependent</em> way.</p>
+<p>If the <em>type</em> being defined and some other <em>type</em> from which it inherits have a slot by the same name, only one slot is allocated in the <em>condition</em>, but the supplied slot form overrides any slot form that might otherwise have been inherited from a <em>parent-type</em>. If no slot form is supplied, the inherited slot form (if any) is still visible.</p>
+<p>Accessors are created according to the same rules as used by <strong>defclass</strong>.</p>
+<p>A description of <em>slot-options</em> follows:</p>
+<p>:reader</p>
+<p>The <!-- -->:reader<!-- --> slot option specifies that an <em>unqualified method</em> is to be defined on the <em>generic function</em> named by the argument to <!-- -->:reader<!-- --> to read the value of the given <em>slot</em>.</p>
+<p><em>•</em> The <!-- -->:initform<!-- --> slot option is used to provide a default initial value form to be used in the initialization of the <em>slot</em>. This <em>form</em> is evaluated every time it is used to initialize the <em>slot</em>. The <em>lexical environment</em> in which this <em>form</em> is evaluated is the lexical <em>environment</em> in which the <strong>define-condition</strong> form was evaluated. Note that the <em>lexical environment</em> refers both to variables and to <em>functions</em>. For <em>local slots</em>, the <em>dynamic environment</em> is the dynamic <em>environment</em> in which <strong>make-condition</strong> was called; for <em>shared slots</em>, the <em>dynamic environment</em> is the <em>dynamic environment</em> in which the <strong>define-condition</strong> form was evaluated.</p>
+<p>No implementation is permitted to extend the syntax of <strong>define-condition</strong> to allow (<em>slot-name form</em>) as an abbreviation for (<em>slot-name</em> <!-- -->:initform<!-- --> <em>form</em>).</p>
+<p>:initarg</p>
+<p>The <!-- -->:initarg<!-- --> slot option declares an initialization argument named by its <em>symbol</em> argument and specifies that this initialization argument initializes the given <em>slot</em>. If the initialization</p>
+<p><strong>define-condition</strong></p>
+<p>argument has a value in the call to <strong>initialize-instance</strong>, the value is stored into the given <em>slot</em>, and the slot’s <!-- -->:initform<!-- --> slot option, if any, is not evaluated. If none of the initialization arguments specified for a given <em>slot</em> has a value, the <em>slot</em> is initialized according to the <!-- -->:initform<!-- --> slot option, if specified.</p>
+<p>:type</p>
+<p>The <!-- -->:type<!-- --> slot option specifies that the contents of the <em>slot</em> is always of the specified <em>type</em>. It effectively declares the result type of the reader generic function when applied to an <em>object</em> of this <em>condition</em> type. The consequences of attempting to store in a <em>slot</em> a value that does not satisfy the type of the <em>slot</em> is undefined.</p>
+<p>:default-initargs</p>
+<p>This option is treated the same as it would be <strong>defclass</strong>.</p>
+<p>:documentation</p>
+<p>The <!-- -->:documentation<!-- --> slot option provides a <em>documentation string</em> for the <em>slot</em>.</p>
+<p>:report</p>
+<p><em>Condition</em> reporting is mediated through the <strong>print-object</strong> method for the <em>condition</em> type in question, with <strong>*print-escape*</strong> always being <strong>nil</strong>. Specifying (<!-- -->:report<!-- --> <em>report-name</em>) in the definition of a condition type C is equivalent to:</p>
+<p>(defmethod print-object ((x c) stream)</p>
+<p>(if *print-escape* (call-next-method) (<em>report-name</em> x stream)))</p>
+<p>If the value supplied by the argument to <!-- -->:report<!-- --> (<em>report-name</em>) is a <em>symbol</em> or a <em>lambda expression</em>, it must be acceptable to <strong>function</strong>. (function <em>report-name</em>) is evaluated in the current <em>lexical environment</em>. It should return a <em>function</em> of two arguments, a <em>condition</em> and a <em>stream</em>, that prints on the <em>stream</em> a description of the <em>condition</em>. This <em>function</em> is called whenever the <em>condition</em> is printed while <strong>*print-escape*</strong> is <strong>nil</strong>.</p>
+<p>If <em>report-name</em> is a <em>string</em>, it is a shorthand for</p>
+<p>(lambda (condition stream)</p>
+<p>(declare (ignore condition))</p>
+<p>(write-string <em>report-name</em> stream))</p>
+<p>This option is processed after the new <em>condition</em> type has been defined, so use of the <em>slot</em> accessors within the <!-- -->:report<!-- --> function is permitted. If this option is not supplied, information about how to report this type of <em>condition</em> is inherited from the <em>parent-type</em>.</p>
+<p>The consequences are unspecifed if an attempt is made to <em>read</em> a <em>slot</em> that has not been explicitly initialized and that has not been given a default value.</p>
+<p>The consequences are unspecified if an attempt is made to assign the <em>slots</em> by using <strong>setf</strong>. Conditions <strong>9–45</strong></p>
+<p><strong>define-condition</strong></p>
+<p>If a <strong>define-condition</strong> <em>form</em> appears as a <em>top level form</em>, the <em>compiler</em> must make <em>name</em> recognizable as a valid <em>type</em> name, and it must be possible to reference the <em>condition type</em> as the <em>parent-type</em> of another <em>condition type</em> in a subsequent <strong>define-condition</strong> <em>form</em> in the <em>file</em> being compiled.</p>
+<p><strong>Examples:</strong></p>
+<p>The following form defines a condition of <em>type</em> peg/hole-mismatch which inherits from a condition type called blocks-world-error:</p>
+<p>(define-condition peg/hole-mismatch</p>
+<p>(blocks-world-error)</p>
+<p>((peg-shape <!-- -->:initarg<!-- --> <!-- -->:peg-shape</p>
+<p>:reader<!-- --> peg/hole-mismatch-peg-shape)</p>
+<p>(hole-shape <!-- -->:initarg<!-- --> <!-- -->:hole-shape</p>
+<p>:reader<!-- --> peg/hole-mismatch-hole-shape))</p>
+<p>(<!-- -->:report<!-- --> (lambda (condition stream)</p>
+<p>(format stream &quot;A ~A peg cannot go in a ~A hole.&quot;</p>
+<p>(peg/hole-mismatch-peg-shape condition)</p>
+<p>(peg/hole-mismatch-hole-shape condition)))))</p>
+<p>The new type has slots peg-shape and hole-shape, so <strong>make-condition</strong> accepts <!-- -->:peg-shape<!-- --> and <!-- -->:hole-shape<!-- --> keywords. The <em>readers</em> peg/hole-mismatch-peg-shape and peg/hole-mismatch-hole-shape apply to objects of this type, as illustrated in the <!-- -->:report<!-- --> information.</p>
+<p>The following form defines a <em>condition type</em> named machine-error which inherits from <strong>error</strong>:</p>
+<p>(define-condition machine-error</p>
+<p>(error)</p>
+<p>((machine-name <!-- -->:initarg<!-- --> <!-- -->:machine-name</p>
+<p>:reader<!-- --> machine-error-machine-name))</p>
+<p>(<!-- -->:report<!-- --> (lambda (condition stream)</p>
+<p>(format stream &quot;There is a problem with ~A.&quot;</p>
+<p>(machine-error-machine-name condition)))))</p>
+<p>Building on this definition, a new error condition can be defined which is a subtype of machine-error for use when machines are not available:</p>
+<p>(define-condition machine-not-available-error (machine-error) ()</p>
+<p>(<!-- -->:report<!-- --> (lambda (condition stream)</p>
+<p>(format stream &quot;The machine ~A is not available.&quot;</p>
+<p>(machine-error-machine-name condition)))))</p>
+<p>This defines a still more specific condition, built upon machine-not-available-error, which provides a slot initialization form for machine-name but which does not provide any new slots or report information. It just gives the machine-name slot a default initialization:</p>
+<p>(define-condition my-favorite-machine-not-available-error</p>
+<p>(machine-not-available-error)</p>
+<p>((machine-name <!-- -->:initform<!-- --> &quot;mc.lcs.mit.edu&quot;)))</p>
+<p>Note that since no <!-- -->:report<!-- --> clause was given, the information inherited from machine-not-available-error is used to report this type of condition.</p>
+<p>(define-condition ate-too-much (error)</p>
+<p>((person <!-- -->:initarg<!-- --> <!-- -->:person<!-- --> <!-- -->:reader<!-- --> ate-too-much-person)</p>
+<p>(weight <!-- -->:initarg<!-- --> <!-- -->:weight<!-- --> <!-- -->:reader<!-- --> ate-too-much-weight)</p>
+<p>(kind-of-food <!-- -->:initarg<!-- --> <!-- -->:kind-of-food</p>
+<p>:reader<!-- --> <!-- -->:ate-too-much-kind-of-food<!-- -->)))</p>
+<p><em>→</em> ATE-TOO-MUCH</p>
+<p>(define-condition ate-too-much-ice-cream (ate-too-much)</p>
+<p>((kind-of-food <!-- -->:initform<!-- --> ’ice-cream)</p>
+<p>(flavor <!-- -->:initarg<!-- --> <!-- -->:flavor</p>
+<p>:reader<!-- --> ate-too-much-ice-cream-flavor</p>
+<p>:initform<!-- --> ’vanilla ))</p>
+<p>(<!-- -->:report<!-- --> (lambda (condition stream)</p>
+<p>(format stream &quot;~A ate too much ~A ice-cream&quot;</p>
+<p>(ate-too-much-person condition)</p>
+<p>(ate-too-much-ice-cream-flavor condition)))))</p>
+<p><em>→</em> ATE-TOO-MUCH-ICE-CREAM</p>
+<p>(make-condition ’ate-too-much-ice-cream</p>
+<p>:person<!-- --> ’fred</p>
+<p>:weight<!-- --> 300</p>
+<p>:flavor<!-- --> ’chocolate)</p>
+<p><em>→</em> #&lt;ATE-TOO-MUCH-ICE-CREAM 32236101&gt;</p>
+<p>(format t &quot;~A&quot; *)</p>
+<p>▷ FRED ate too much CHOCOLATE ice-cream</p>
+<p><em>→</em> NIL</p>
+<p><strong>See Also:</strong></p>
+<p><strong>make-condition</strong>, <strong>defclass</strong>, Section 9.1 (Condition System Concepts)</p>
+<p><strong>make-condition</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>make-condition</strong> <em>type</em> &amp;rest <em>slot-initializations → condition</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>type</em>—a <em>type specifier</em> (for a <em>subtype</em> of <strong>condition</strong>).</p>
+<p><em>slot-initializations</em>—an <em>initialization argument list</em>.</p>
+<p><em>condition</em>—a <em>condition</em>.</p>
+<p>Conditions <strong>9–47</strong></p>
+<p><strong>Description:</strong></p>
+<p>Constructs and returns a <em>condition</em> of type <em>type</em> using <em>slot-initializations</em> for the initial values of the slots. The newly created <em>condition</em> is returned.</p>
+<p><strong>Examples:</strong></p>
+<p>(defvar *oops-count* 0)</p>
+<p>(setq a (make-condition ’simple-error</p>
+<p>:format-control<!-- --> &quot;This is your ~<!-- -->:R<!-- --> error.&quot;</p>
+<p>:format-arguments<!-- --> (list (incf *oops-count*))))</p>
+<p><em>→</em> #&lt;SIMPLE-ERROR 32245104&gt;</p>
+<p>(format t &quot;~&amp;<del>A</del>%&quot; a)</p>
+<p>▷ This is your first error.</p>
+<p><em>→</em> NIL</p>
+<p>(error a)</p>
+<p>▷ Error: This is your first error.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>▷ 1: Return to Lisp Toplevel.</p>
+<p>▷ Debug&gt;</p>
+<p><strong>Affected By:</strong></p>
+<p>The set of defined <em>condition types</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>define-condition</strong>, Section 9.1 (Condition System Concepts)</p>
+<p><strong>restart</strong> <em>System Class</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>restart</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>An <em>object</em> of <em>type</em> <strong>restart</strong> represents a <em>function</em> that can be called to perform some form of recovery action, usually a transfer of control to an outer point in the running program.</p>
+<p>An <em>implementation</em> is free to implement a <em>restart</em> in whatever manner is most convenient; a <em>restart</em> has only <em>dynamic extent</em> relative to the scope of the binding <em>form</em> which <em>establishes</em> it.</p>
+<p><strong>compute-restarts</strong></p>
+<p><strong>compute-restarts</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>compute-restarts</strong> &amp;optional <em>condition → restarts</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>condition</em>—a <em>condition object</em>, or <strong>nil</strong>.</p>
+<p><em>restarts</em>—a <em>list</em> of <em>restarts</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>compute-restarts</strong> uses the dynamic state of the program to compute a <em>list</em> of the <em>restarts</em> which are currently active.</p>
+<p>The resulting <em>list</em> is ordered so that the innermost (more-recently established) restarts are nearer the head of the <em>list</em>.</p>
+<p>When <em>condition</em> is <em>non-nil</em>, only those <em>restarts</em> are considered that are either explicitly associated with that <em>condition</em>, or not associated with any <em>condition</em>; that is, the excluded <em>restarts</em> are those that are associated with a non-empty set of <em>conditions</em> of which the given <em>condition</em> is not an <em>element</em>. If <em>condition</em> is <strong>nil</strong>, all <em>restarts</em> are considered.</p>
+<p><strong>compute-restarts</strong> returns all <em>applicable restarts</em>, including anonymous ones, even if some of them have the same name as others and would therefore not be found by <strong>find-restart</strong> when given a <em>symbol</em> argument.</p>
+<p>Implementations are permitted, but not required, to return <em>distinct lists</em> from repeated calls to <strong>compute-restarts</strong> while in the same dynamic environment. The consequences are undefined if the <em>list</em> returned by <strong>compute-restarts</strong> is every modified.</p>
+<p><strong>Examples:</strong></p>
+<p>;; One possible way in which an interactive debugger might present</p>
+<p>;; restarts to the user.</p>
+<p>(defun invoke-a-restart ()</p>
+<p>(let ((restarts (compute-restarts)))</p>
+<p>(do ((i 0 (+ i 1)) (r restarts (cdr r))) ((null r))</p>
+<p>(format t &quot;~&amp;~D: <del>A</del>%&quot; i (car r)))</p>
+<p>(let ((n nil) (k (length restarts)))</p>
+<p>(loop (when (and (typep n ’integer) (&gt;= n 0) (&lt; n k))</p>
+<p>(return t))</p>
+<p>(format t &quot;~&amp;Option: &quot;)</p>
+<p>(setq n (read))</p>
+<p>(fresh-line))</p>
+<p>(invoke-restart-interactively (nth n restarts)))))</p>
+<p>Conditions <strong>9–49</strong></p>
+<p>(restart-case (invoke-a-restart)</p>
+<p>(one () 1)</p>
+<p>(two () 2)</p>
+<p>(nil () <!-- -->:report<!-- --> &quot;Who knows?&quot; ’anonymous)</p>
+<p>(one () ’I)</p>
+<p>(two () ’II))</p>
+<p>▷ 0: ONE</p>
+<p>▷ 1: TWO</p>
+<p>▷ 2: Who knows?</p>
+<p>▷ 3: ONE</p>
+<p>▷ 4: TWO</p>
+<p>▷ 5: Return to Lisp Toplevel.</p>
+<p>▷ Option: 4</p>
+<p><em>→</em> II</p>
+<p>;; Note that in addition to user-defined restart points, COMPUTE-RESTARTS</p>
+<p>;; also returns information about any system-supplied restarts, such as</p>
+<p>;; the &quot;Return to Lisp Toplevel&quot; restart offered above.</p>
+<p><strong>Affected By:</strong></p>
+<p>Existing restarts.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>find-restart</strong>, <strong>invoke-restart</strong>, <strong>restart-bind</strong></p>
+<p><strong>find-restart</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>find-restart</strong> <em>identifier</em> &amp;optional <em>condition</em></p>
+<p>restart</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>identifier</em>—a <em>non-nil symbol</em>, or a <em>restart</em>.</p>
+<p><em>condition</em>—a <em>condition object</em>, or <strong>nil</strong>.</p>
+<p><em>restart</em>—a <em>restart</em> or <strong>nil</strong>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>find-restart</strong> searches for a particular <em>restart</em> in the current <em>dynamic environment</em>.</p>
+<p>When <em>condition</em> is <em>non-nil</em>, only those <em>restarts</em> are considered that are either explicitly associated with that <em>condition</em>, or not associated with any <em>condition</em>; that is, the excluded <em>restarts</em> are those that are associated with a non-empty set of <em>conditions</em> of which the given <em>condition</em> is not an <em>element</em>. If <em>condition</em> is <strong>nil</strong>, all <em>restarts</em> are considered.</p>
+<p>If <em>identifier</em> is a <em>symbol</em>, then the innermost (most recently established) <em>applicable restart</em> with that <em>name</em> is returned. <strong>nil</strong> is returned if no such restart is found.</p>
+<p>If <em>identifier</em> is a currently active restart, then it is returned. Otherwise, <strong>nil</strong> is returned. <strong>Examples:</strong></p>
+<p>(restart-case</p>
+<p>(let ((r (find-restart ’my-restart)))</p>
+<p>(format t &quot;~S is named ~S&quot; r (restart-name r)))</p>
+<p>(my-restart () nil))</p>
+<p>▷ #&lt;RESTART 32307325&gt; is named MY-RESTART</p>
+<p><em>→</em> NIL</p>
+<p>(find-restart ’my-restart)</p>
+<p><em>→</em> NIL</p>
+<p><strong>Affected By:</strong></p>
+<p>Existing restarts.</p>
+<p><strong>restart-case</strong>, <strong>restart-bind</strong>, <strong>with-condition-restarts</strong>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>compute-restarts</strong></p>
+<p><strong>Notes:</strong></p>
+<p>(find-restart <em>identifier</em>)</p>
+<p><em>≡</em> (find <em>identifier</em> (compute-restarts) <!-- -->:key<!-- --> <!-- -->:restart-name<!-- -->)</p>
+<p>Although anonymous restarts have a name of <strong>nil</strong>, the consequences are unspecified if <strong>nil</strong> is given as an <em>identifier</em>. Occasionally, programmers lament that <strong>nil</strong> is not permissible as an <em>identifier</em> argument. In most such cases, <strong>compute-restarts</strong> can probably be used to simulate the desired effect.</p>
+<p><strong>invoke-restart</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>invoke-restart</strong> <em>restart</em> &amp;rest <em>arguments → {result}</em>*</p>
+<p>Conditions <strong>9–51</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>restart</em>—a <em>restart designator</em> .</p>
+<p><em>argument</em>—an <em>object</em>.</p>
+<p><em>results</em>—the <em>values</em> returned by the <em>function</em> associated with <em>restart</em>, if that <em>function</em> returns.</p>
+<p><strong>Description:</strong></p>
+<p>Calls the <em>function</em> associated with <em>restart</em>, passing <em>arguments</em> to it. <em>Restart</em> must be valid in the current <em>dynamic environment</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(defun add3 (x) (check-type x number) (+ x 3))</p>
+<p>(foo ’seven)</p>
+<p>▷ Error: The value SEVEN was not of type NUMBER.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>▷ 1: Specify a different value to use.</p>
+<p>▷ 2: Return to Lisp Toplevel.</p>
+<p>▷ Debug&gt; (invoke-restart ’store-value 7)</p>
+<p><em>→</em> 10</p>
+<p><strong>Side Effects:</strong></p>
+<p>A non-local transfer of control might be done by the restart.</p>
+<p><strong>Affected By:</strong></p>
+<p>Existing restarts.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>If <em>restart</em> is not valid, an error of <em>type</em> <strong>control-error</strong> is signaled.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>find-restart</strong>, <strong>restart-bind</strong>, <strong>restart-case</strong>, <strong>invoke-restart-interactively</strong></p>
+<p><strong>Notes:</strong></p>
+<p>The most common use for <strong>invoke-restart</strong> is in a <em>handler</em> . It might be used explicitly, or implicitly through <strong>invoke-restart-interactively</strong> or a <em>restart function</em>.</p>
+<p><em>Restart functions</em> call <strong>invoke-restart</strong>, not vice versa. That is, <em>invoke-restart</em> provides primitive functionality, and <em>restart functions</em> are non-essential “syntactic sugar.”</p>
+<p><strong>invoke-restart-interactively</strong></p>
+<p><strong>invoke-restart-interactively</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>invoke-restart-interactively</strong> <em>restart → {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>restart</em>—a <em>restart designator</em> .</p>
+<p><em>results</em>—the <em>values</em> returned by the <em>function</em> associated with <em>restart</em>, if that <em>function</em> returns.</p>
+<p><strong>Description:</strong></p>
+<p><strong>invoke-restart-interactively</strong> calls the <em>function</em> associated with <em>restart</em>, prompting for any necessary arguments. If <em>restart</em> is a name, it must be valid in the current <em>dynamic environment</em>.</p>
+<p><strong>invoke-restart-interactively</strong> prompts for arguments by executing the code provided in the <!-- -->:interactive<!-- --> keyword to <strong>restart-case</strong> or <!-- -->:interactive-function<!-- --> keyword to <strong>restart-bind</strong>.</p>
+<p>If no such options have been supplied in the corresponding <strong>restart-bind</strong> or <strong>restart-case</strong>, then the consequences are undefined if the <em>restart</em> takes required arguments. If the arguments are optional, an argument list of <strong>nil</strong> is used.</p>
+<p>Once the arguments have been determined, <strong>invoke-restart-interactively</strong> executes the following: (apply #’invoke-restart <em>restart arguments</em>)</p>
+<p><strong>Examples:</strong></p>
+<p>(defun add3 (x) (check-type x number) (+ x 3))</p>
+<p>(add3 ’seven)</p>
+<p>▷ Error: The value SEVEN was not of type NUMBER.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>▷ 1: Specify a different value to use.</p>
+<p>▷ 2: Return to Lisp Toplevel.</p>
+<p>▷ Debug&gt; (invoke-restart-interactively ’store-value)</p>
+<p>▷ Type a form to evaluate and use: 7</p>
+<p><em>→</em> 10</p>
+<p><strong>Side Effects:</strong></p>
+<p>If prompting for arguments is necesary, some typeout may occur (on <em>query I/O</em>).</p>
+<p>A non-local transfer of control might be done by the restart.</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*query-io*</strong>, active <em>restarts</em></p>
+<p>Conditions <strong>9–53</strong></p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>If <em>restart</em> is not valid, an error of <em>type</em> <strong>control-error</strong> is signaled.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>find-restart</strong>, <strong>invoke-restart</strong>, <strong>restart-case</strong>, <strong>restart-bind</strong></p>
+<p><strong>Notes:</strong></p>
+<p><strong>invoke-restart-interactively</strong> is used internally by the debugger and may also be useful in implementing other portable, interactive debugging tools.</p>
+<p><strong>restart-bind</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>restart-bind</strong> (<em>{</em>(<em>name function {↓key-val-pair}</em>*)<em>}</em>) <em>{form}</em>*</p>
+<p><em>→ {result}</em>*</p>
+<p><em>key-val-pair::</em>=<!-- -->:interactive-function<!-- --> <em>interactive-function |</em></p>
+<p>:report-function<!-- --> <em>report-function |</em></p>
+<p>:test-function<!-- --> <em>test-function</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>name</em>—a <em>symbol</em>; not evaluated.</p>
+<p><em>function</em>—a <em>form</em>; evaluated.</p>
+<p><em>forms</em>—an <em>implicit progn</em>.</p>
+<p><em>interactive-function</em>—a <em>form</em>; evaluated.</p>
+<p><em>report-function</em>—a <em>form</em>; evaluated.</p>
+<p><em>test-function</em>—a <em>form</em>; evaluated.</p>
+<p><em>results</em>—the <em>values</em> returned by the <em>forms</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>restart-bind</strong> executes the body of <em>forms</em> in a <em>dynamic environment</em> where <em>restarts</em> with the given <em>names</em> are in effect.</p>
+<p>If a <em>name</em> is <strong>nil</strong>, it indicates an anonymous restart; if a <em>name</em> is a <em>non-nil symbol</em>, it indicates a named restart.</p>
+<p><strong>restart-bind</strong></p>
+<p>The <em>function</em>, <em>interactive-function</em>, and <em>report-function</em> are unconditionally evaluated in the current lexical and dynamic environment prior to evaluation of the body. Each of these <em>forms</em> must evaluate to a <em>function</em>.</p>
+<p>If <strong>invoke-restart</strong> is done on that restart, the <em>function</em> which resulted from evaluating <em>function</em> is called, in the <em>dynamic environment</em> of the <strong>invoke-restart</strong>, with the <em>arguments</em> given to <strong>invoke-restart</strong>. The <em>function</em> may either perform a non-local transfer of control or may return normally.</p>
+<p>If the restart is invoked interactively from the debugger (using <strong>invoke-restart-interactively</strong>), the arguments are defaulted by calling the <em>function</em> which resulted from evaluating <em>interactive-function</em>. That <em>function</em> may optionally prompt interactively on <em>query I/O</em>, and should return a <em>list</em> of arguments to be used by <strong>invoke-restart-interactively</strong> when invoking the restart.</p>
+<p>If a restart is invoked interactively but no <em>interactive-function</em> is used, then an argument list of <strong>nil</strong> is used. In that case, the <em>function</em> must be compatible with an empty argument list.</p>
+<p>If the restart is presented interactively (<em>e.g.</em>, by the debugger), the presentation is done by calling the <em>function</em> which resulted from evaluating <em>report-function</em>. This <em>function</em> must be a <em>function</em> of one argument, a <em>stream</em>. It is expected to print a description of the action that the restart takes to that <em>stream</em>. This <em>function</em> is called any time the restart is printed while <strong>*print-escape*</strong> is <strong>nil</strong>.</p>
+<p>In the case of interactive invocation, the result is dependent on the value of <!-- -->:interactive-function<!-- --> as follows.</p>
+<p>:interactive-function</p>
+<p><em>Value</em> is evaluated in the current lexical environment and should return a <em>function</em> of no arguments which constructs a <em>list</em> of arguments to be used by <strong>invoke-restart-interactively</strong> when invoking this restart. The <em>function</em> may prompt interactively using <em>query I/O</em> if necessary.</p>
+<p>:report-function</p>
+<p><em>Value</em> is evaluated in the current lexical environment and should return a <em>function</em> of one argument, a <em>stream</em>, which prints on the <em>stream</em> a summary of the action that this restart takes. This <em>function</em> is called whenever the restart is reported (printed while <strong>*print-escape*</strong> is <strong>nil</strong>). If no <!-- -->:report-function<!-- --> option is provided, the manner in which the <em>restart</em> is reported is <em>implementation-dependent</em>.</p>
+<p>:test-function</p>
+<p><em>Value</em> is evaluated in the current lexical environment and should return a <em>function</em> of one argument, a <em>condition</em>, which returns <em>true</em> if the restart is to be considered visible.</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*query-io*</strong>.</p>
+<p>Conditions <strong>9–55</strong></p>
+<p><strong>See Also:</strong></p>
+<p><strong>restart-case</strong>, <strong>with-simple-restart</strong></p>
+<p><strong>Notes:</strong></p>
+<p><strong>restart-bind</strong> is primarily intended to be used to implement <strong>restart-case</strong> and might be useful in implementing other macros. Programmers who are uncertain about whether to use <strong>restart-case</strong> or <strong>restart-bind</strong> should prefer <strong>restart-case</strong> for the cases where it is powerful enough, using <strong>restart-bind</strong> only in cases where its full generality is really needed.</p>
+<p><strong>restart-case</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>restart-case</strong> <em>restartable-form {↓clause} → {result}</em>*</p>
+<p><em>clause::</em>=(<em>case-name lambda-list</em></p>
+<p>[[ <!-- -->:interactive<!-- --> <em>interactive-expression |</em> <!-- -->:report<!-- --> <em>report-expression |</em> <!-- -->:test<!-- --> <em>test-expression</em> ]] <em>{declaration}</em>* <em>{form}</em>*)</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>restartable-form</em>—a <em>form</em>.</p>
+<p><em>case-name</em>—a <em>symbol</em> or <strong>nil</strong>.</p>
+<p><em>lambda-list</em>—an <em>ordinary lambda list</em>.</p>
+<p><em>interactive-expression</em>—a <em>symbol</em> or a <em>lambda expression</em>.</p>
+<p><em>report-expression</em>—a <em>string</em>, a <em>symbol</em>, or a <em>lambda expression</em>.</p>
+<p><em>test-expression</em>—a <em>symbol</em> or a <em>lambda expression</em>.</p>
+<p><em>declaration</em>—a <strong>declare</strong> <em>expression</em>; not evaluated.</p>
+<p><em>form</em>—a <em>form</em>.</p>
+<p><em>results</em>—the <em>values</em> resulting from the <em>evaluation</em> of <em>restartable-form</em>, or the <em>values</em> returned by the last <em>form</em> executed in a chosen <em>clause</em>, or <strong>nil</strong>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>restart-case</strong> evaluates <em>restartable-form</em> in a <em>dynamic environment</em> where the clauses have special meanings as points to which control may be transferred. If <em>restartable-form</em> finishes executing and returns any values, all values returned are returned by <strong>restart-case</strong> and processing has completed. While <em>restartable-form</em> is executing, any code may transfer control to one of the clauses (see</p>
+<p><strong>restart-case</strong></p>
+<p><strong>invoke-restart</strong>). If a transfer occurs, the forms in the body of that clause is evaluated and any values returned by the last such form are returned by <strong>restart-case</strong>. In this case, the dynamic state is unwound appropriately (so that the restarts established around the <em>restartable-form</em> are no longer active) prior to execution of the clause.</p>
+<p>If there are no <em>forms</em> in a selected clause, <strong>restart-case</strong> returns <strong>nil</strong>.</p>
+<p>If <em>case-name</em> is a <em>symbol</em>, it names this restart.</p>
+<p>It is possible to have more than one clause use the same <em>case-name</em>. In this case, the first clause with that name is found by <strong>find-restart</strong>. The other clauses are accessible using <strong>compute-restarts</strong>.</p>
+<p>Each <em>arglist</em> is an <em>ordinary lambda list</em> to be bound during the execution of its corresponding <em>forms</em>. These parameters are used by the <strong>restart-case</strong> clause to receive any necessary data from a call to <strong>invoke-restart</strong>.</p>
+<p>By default, <strong>invoke-restart-interactively</strong> passes no arguments and all arguments must be optional in order to accomodate interactive restarting. However, the arguments need not be optional if the <!-- -->:interactive<!-- --> keyword has been used to inform <strong>invoke-restart-interactively</strong> about how to compute a proper argument list.</p>
+<p><em>Keyword</em> options have the following meaning.</p>
+<p>:interactive</p>
+<p>The <em>value</em> supplied by <!-- -->:interactive<!-- --> <em>value</em> must be a suitable argument to <strong>function</strong>. (function <em>value</em>) is evaluated in the current lexical environment. It should return a <em>function</em> of no arguments which returns arguments to be used by <strong>invoke-restart-interactively</strong> when it is invoked. <strong>invoke-restart-interactively</strong> is called in the dynamic environment available prior to any restart attempt, and uses <em>query I/O</em> for user interaction.</p>
+<p>If a restart is invoked interactively but no <!-- -->:interactive<!-- --> option was supplied, the argument list used in the invocation is the empty list.</p>
+<p>:report</p>
+<p>If the <em>value</em> supplied by <!-- -->:report<!-- --> <em>value</em> is a <em>lambda expression</em> or a <em>symbol</em>, it must be acceptable to <strong>function</strong>. (function <em>value</em>) is evaluated in the current lexical environment. It should return a <em>function</em> of one argument, a <em>stream</em>, which prints on the <em>stream</em> a description of the restart. This <em>function</em> is called whenever the restart is printed while <strong>*print-escape*</strong> is <strong>nil</strong>.</p>
+<p>If <em>value</em> is a <em>string</em>, it is a shorthand for</p>
+<p>(lambda (stream) (write-string value stream))</p>
+<p>If a named restart is asked to report but no report information has been supplied, the name of the restart is used in generating default report text.</p>
+<p>Conditions <strong>9–57</strong></p>
+<p><strong>restart-case</strong></p>
+<p>When <strong>*print-escape*</strong> is <strong>nil</strong>, the printer uses the report information for a restart. For example, a debugger might announce the action of typing a “continue” command by:</p>
+<p>(format t &quot;~&amp;~S – <del>A</del>%&quot; ’<!-- -->:continue<!-- --> some-restart)</p>
+<p>which might then display as something like:</p>
+<p>:CONTINUE<!-- --> – Return to command level</p>
+<p>The consequences are unspecified if an unnamed restart is specified but no <!-- -->:report<!-- --> option is provided.</p>
+<p>:test</p>
+<p>The <em>value</em> supplied by <!-- -->:test<!-- --> <em>value</em> must be a suitable argument to <strong>function</strong>.</p>
+<p>(function <em>value</em>) is evaluated in the current lexical environment. It should return a <em>function</em> of one <em>argument</em>, the <em>condition</em>, that returns <em>true</em> if the restart is to be considered visible.</p>
+<p>The default for this option is equivalent to (lambda (c) (declare (ignore c)) t).</p>
+<p>If the <em>restartable-form</em> is a <em>list</em> whose <em>car</em> is any of the <em>symbols</em> <strong>signal</strong>, <strong>error</strong>, <strong>cerror</strong>, or <strong>warn</strong> (or is a <em>macro form</em> which macroexpands into such a <em>list</em>), then <strong>with-condition-restarts</strong> is used implicitly to associate the indicated <em>restarts</em> with the <em>condition</em> to be signaled.</p>
+<p><strong>Examples:</strong></p>
+<p>(restart-case</p>
+<p>(handler-bind ((error #’(lambda (c)</p>
+<p>(declare (ignore condition))</p>
+<p>(invoke-restart ’my-restart 7))))</p>
+<p>(error &quot;Foo.&quot;))</p>
+<p>(my-restart (&amp;optional v) v))</p>
+<p><em>→</em> 7</p>
+<p>(define-condition food-error (error) ())</p>
+<p><em>→</em> FOOD-ERROR</p>
+<p>(define-condition bad-tasting-sundae (food-error)</p>
+<p>((ice-cream <!-- -->:initarg<!-- --> <!-- -->:ice-cream<!-- --> <!-- -->:reader<!-- --> bad-tasting-sundae-ice-cream)</p>
+<p>(sauce <!-- -->:initarg<!-- --> <!-- -->:sauce<!-- --> <!-- -->:reader<!-- --> bad-tasting-sundae-sauce)</p>
+<p>(topping <!-- -->:initarg<!-- --> <!-- -->:topping<!-- --> <!-- -->:reader<!-- --> bad-tasting-sundae-topping))</p>
+<p>(<!-- -->:report<!-- --> (lambda (condition stream)</p>
+<p>(format stream &quot;Bad tasting sundae with ~S, ~S, and ~S&quot;</p>
+<p>(bad-tasting-sundae-ice-cream condition)</p>
+<p>(bad-tasting-sundae-sauce condition)</p>
+<p>(bad-tasting-sundae-topping condition)))))</p>
+<p><em>→</em> BAD-TASTING-SUNDAE</p>
+<p>(defun all-start-with-same-letter (symbol1 symbol2 symbol3)</p>
+<p><strong>restart-case</strong></p>
+<p>(let ((first-letter (char (symbol-name symbol1) 0)))</p>
+<p>(and (eql first-letter (char (symbol-name symbol2) 0))</p>
+<p>(eql first-letter (char (symbol-name symbol3) 0)))))</p>
+<p><em>→</em> ALL-START-WITH-SAME-LETTER</p>
+<p>(defun read-new-value ()</p>
+<p>(format t &quot;Enter a new value: &quot;)</p>
+<p>(multiple-value-list (eval (read))))</p>
+<p><em>→</em> READ-NEW-VALUE</p>
+<p>Conditions <strong>9–59</strong></p>
+<p><strong>restart-case</strong></p>
+<p>(defun verify-or-fix-perfect-sundae (ice-cream sauce topping) (do ()</p>
+<p>((all-start-with-same-letter ice-cream sauce topping))</p>
+<p>(restart-case</p>
+<p>(error ’bad-tasting-sundae</p>
+<p>:ice-cream<!-- --> ice-cream</p>
+<p>:sauce<!-- --> sauce</p>
+<p>:topping<!-- --> topping)</p>
+<p>(use-new-ice-cream (new-ice-cream)</p>
+<p>:report<!-- --> &quot;Use a new ice cream.&quot;</p>
+<p>:interactive<!-- --> read-new-value</p>
+<p>(setq ice-cream new-ice-cream))</p>
+<p>(use-new-sauce (new-sauce)</p>
+<p>:report<!-- --> &quot;Use a new sauce.&quot;</p>
+<p>:interactive<!-- --> read-new-value</p>
+<p>(setq sauce new-sauce))</p>
+<p>(use-new-topping (new-topping)</p>
+<p>:report<!-- --> &quot;Use a new topping.&quot;</p>
+<p>:interactive<!-- --> read-new-value</p>
+<p>(setq topping new-topping))))</p>
+<p>(values ice-cream sauce topping))</p>
+<p><em>→</em> VERIFY-OR-FIX-PERFECT-SUNDAE</p>
+<p>(verify-or-fix-perfect-sundae ’vanilla ’caramel ’cherry) ▷ Error: Bad tasting sundae with VANILLA, CARAMEL, and CHERRY. ▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number: ▷ 1: Use a new ice cream.</p>
+<p>▷ 2: Use a new sauce.</p>
+<p>▷ 3: Use a new topping.</p>
+<p>▷ 4: Return to Lisp Toplevel.</p>
+<p>▷ Debug&gt; <!-- -->:continue<!-- --> 1</p>
+<p>▷ Use a new ice cream.</p>
+<p>▷ Enter a new ice cream: ’chocolate</p>
+<p><em>→</em> CHOCOLATE, CARAMEL, CHERRY</p>
+<p><strong>See Also:</strong></p>
+<p><strong>restart-bind</strong>, <strong>with-simple-restart</strong>.</p>
+<p><strong>Notes:</strong></p>
+<p>(restart-case <em>expression</em></p>
+<p>(<em>name1 arglist1</em> ...<em>options1</em>... . <em>body1</em>)</p>
+<p>(<em>name2 arglist2</em> ...<em>options2</em>... . <em>body2</em>))</p>
+<p>is essentially equivalent to</p>
+<p>(block #1=#<!-- -->:g0001</p>
+<p>(let ((#2=#<!-- -->:g0002<!-- --> nil))</p>
+<p>(tagbody</p>
+<p>(restart-bind ((name1 #’(lambda (&amp;rest temp)</p>
+<p>(setq #2# temp)</p>
+<p>(go #3=#<!-- -->:g0003<!-- -->))</p>
+<p>...<em>slightly-transformed-options1</em>...)</p>
+<p>(name2 #’(lambda (&amp;rest temp)</p>
+<p>(setq #2# temp)</p>
+<p>(go #4=#<!-- -->:g0004<!-- -->))</p>
+<p>...<em>slightly-transformed-options2</em>...))</p>
+<p>(return-from #1# <em>expression</em>))</p>
+<p>#3# (return-from #1#</p>
+<p>(apply #’(lambda <em>arglist1</em> . <em>body1</em>) #2#))</p>
+<p>#4# (return-from #1#</p>
+<p>(apply #’(lambda <em>arglist2</em> . <em>body2</em>) #2#)))))</p>
+<p>Unnamed restarts are generally only useful interactively and an interactive option which has no description is of little value. Implementations are encouraged to warn if an unnamed restart is used and no report information is provided at compilation time. At runtime, this error might be noticed when entering the debugger. Since signaling an error would probably cause recursive entry into the debugger (causing yet another recursive error, etc.) it is suggested that the debugger print some indication of such problems when they occur but not actually signal errors.</p>
+<p>(restart-case (signal fred)</p>
+<p>(a ...)</p>
+<p>(b ...))</p>
+<p><em>≡</em></p>
+<p>(restart-case</p>
+<p>(with-condition-restarts fred</p>
+<p>(list (find-restart ’a)</p>
+<p>(find-restart ’b))</p>
+<p>(signal fred))</p>
+<p>(a ...)</p>
+<p>(b ...))</p>
+<p><strong>restart-name</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>restart-name</strong> <em>restart → name</em></p>
+<p>Conditions <strong>9–61</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>restart</em>—a <em>restart</em>.</p>
+<p><em>name</em>—a <em>symbol</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns the name of the <em>restart</em>, or <strong>nil</strong> if the <em>restart</em> is not named.</p>
+<p><strong>Examples:</strong></p>
+<p>(restart-case</p>
+<p>(loop for restart in (compute-restarts)</p>
+<p>collect (restart-name restart))</p>
+<p>(case1 () <!-- -->:report<!-- --> &quot;Return 1.&quot; 1)</p>
+<p>(nil () <!-- -->:report<!-- --> &quot;Return 2.&quot; 2)</p>
+<p>(case3 () <!-- -->:report<!-- --> &quot;Return 3.&quot; 3)</p>
+<p>(case1 () <!-- -->:report<!-- --> &quot;Return 4.&quot; 4))</p>
+<p><em>→</em> (CASE1 NIL CASE3 CASE1 ABORT)</p>
+<p>;; In the example above the restart named ABORT was not created</p>
+<p>;; explicitly, but was implicitly supplied by the system.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>compute-restarts find-restart</strong></p>
+<p><strong>with-condition-restarts</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>with-condition-restarts</strong> <em>condition-form restarts-form {form}</em>*</p>
+<p><em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>condition-form</em>—a <em>form</em>; <em>evaluated</em> to produce a <em>condition</em>.</p>
+<p><em>condition</em>—a <em>condition object</em> resulting from the <em>evaluation</em> of <em>condition-form</em>.</p>
+<p><em>restart-form</em>—a <em>form</em>; <em>evaluated</em> to produce a <em>restart-list</em>.</p>
+<p><em>restart-list</em>—a <em>list</em> of <em>restart objects</em> resulting from the <em>evaluation</em> of <em>restart-form</em>.</p>
+<p><em>forms</em>—an <em>implicit progn</em>; evaluated.</p>
+<p><em>results</em>—the <em>values</em> returned by <em>forms</em>.</p>
+<p><strong>Description:</strong></p>
+<p>First, the <em>condition-form</em> and <em>restarts-form</em> are <em>evaluated</em> in normal left-to-right order; the <em>primary values</em> yielded by these <em>evaluations</em> are respectively called the <em>condition</em> and the <em>restart-list</em>.</p>
+<p>Next, the <em>forms</em> are <em>evaluated</em> in a <em>dynamic environment</em> in which each <em>restart</em> in <em>restart-list</em> is associated with the <em>condition</em>. See Section 9.1.4.2.4 (Associating a Restart with a Condition).</p>
+<p><strong>See Also:</strong></p>
+<p><strong>restart-case</strong></p>
+<p><strong>Notes:</strong></p>
+<p>Usually this <em>macro</em> is not used explicitly in code, since <strong>restart-case</strong> handles most of the common cases in a way that is syntactically more concise.</p>
+<p><strong>with-simple-restart</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>with-simple-restart</strong> (<em>name format-control {format-argument}</em>*) <em>{form}</em>*</p>
+<p><em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>name</em>—a <em>symbol</em>.</p>
+<p><em>format-control</em>—a <em>format control</em>.</p>
+<p><em>format-argument</em>—an <em>object</em> (<em>i.e.</em>, a <em>format argument</em>).</p>
+<p><em>forms</em>—an <em>implicit progn</em>.</p>
+<p><em>results</em>—in the normal situation, the <em>values</em> returned by the <em>forms</em>; in the exceptional situation where the <em>restart</em> named <em>name</em> is invoked, two values—<strong>nil</strong> and <strong>t</strong>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>with-simple-restart</strong> establishes a restart.</p>
+<p>If the restart designated by <em>name</em> is not invoked while executing <em>forms</em>, all values returned by the last of <em>forms</em> are returned. If the restart designated by <em>name</em> is invoked, control is transferred to <strong>with-simple-restart</strong>, which returns two values, <strong>nil</strong> and <strong>t</strong>.</p>
+<p>If <em>name</em> is <strong>nil</strong>, an anonymous restart is established.</p>
+<p>The <em>format-control</em> and <em>format-arguments</em> are used report the <em>restart</em>.</p>
+<p>Conditions <strong>9–63</strong></p>
+<p><strong>with-simple-restart</strong></p>
+<p><strong>Examples:</strong></p>
+<p>(defun read-eval-print-loop (level)</p>
+<p>(with-simple-restart (abort &quot;Exit command level ~D.&quot; level)</p>
+<p>(loop</p>
+<p>(with-simple-restart (abort &quot;Return to command level ~D.&quot; level)</p>
+<p>(let ((form (prog2 (fresh-line) (read) (fresh-line))))</p>
+<p>(prin1 (eval form)))))))</p>
+<p><em>→</em> READ-EVAL-PRINT-LOOP</p>
+<p>(read-eval-print-loop 1)</p>
+<p>(+ ’a 3)</p>
+<p>▷ Error: The argument, A, to the function + was of the wrong type. ▷ The function expected a number.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>▷ 1: Specify a value to use this time.</p>
+<p>▷ 2: Return to command level 1.</p>
+<p>▷ 3: Exit command level 1.</p>
+<p>▷ 4: Return to Lisp Toplevel.</p>
+<p>(defun compute-fixnum-power-of-2 (x)</p>
+<p>(with-simple-restart (nil &quot;Give up on computing 2&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt;~D.&quot; x)</p>
+<p>(let ((result 1))</p>
+<p>(dotimes (i x result)</p>
+<p>(setq result (* 2 result))</p>
+<p>(unless (fixnump result)</p>
+<p>(error &quot;Power of 2 is too large.&quot;))))))</p>
+<p>COMPUTE-FIXNUM-POWER-OF-2</p>
+<p>(defun compute-power-of-2 (x)</p>
+<p>(or (compute-fixnum-power-of-2 x) ’something big))</p>
+<p>COMPUTE-POWER-OF-2</p>
+<p>(compute-power-of-2 10)</p>
+<p>1024</p>
+<p>(compute-power-of-2 10000)</p>
+<p>▷ Error: Power of 2 is too large.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number.</p>
+<p>&lt;i&gt;.&lt;/i&gt; 1: Give up on computing 2&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt;10000.</p>
+<p>▷ 2: Return to Lisp Toplevel</p>
+<p>▷ Debug&gt; <!-- -->:continue<!-- --> 1</p>
+<p><em>→</em> SOMETHING-BIG</p>
+<p><strong>See Also:</strong></p>
+<p><strong>restart-case</strong></p>
+<p><strong>Notes:</strong></p>
+<p><strong>with-simple-restart</strong> is shorthand for one of the most common uses of <strong>restart-case</strong>.</p>
+<p><strong>with-simple-restart</strong> could be defined by:</p>
+<p>(defmacro with-simple-restart ((restart-name format-control</p>
+<p>&amp;rest format-arguments)</p>
+<p>&amp;body forms)</p>
+<p>‘(restart-case (progn ,@forms)</p>
+<p>(,restart-name ()</p>
+<p>:report<!-- --> (lambda (stream)</p>
+<p>(format stream ,format-control ,@format-arguments))</p>
+<p>(values nil t))))</p>
+<p>Because the second return value is <strong>t</strong> in the exceptional case, it is common (but not required) to arrange for the second return value in the normal case to be missing or <strong>nil</strong> so that the two situations can be distinguished.</p>
+<p><strong>abort</strong> <em>Restart</em></p>
+<p><strong>Data Arguments Required:</strong></p>
+<p>None.</p>
+<p><strong>Description:</strong></p>
+<p>The intent of the <strong>abort</strong> restart is to allow return to the innermost “command level.” Implementors are encouraged to make sure that there is always a restart named <strong>abort</strong> around any user code so that user code can call <strong>abort</strong> at any time and expect something reasonable to happen; exactly what the reasonable thing is may vary somewhat. Typically, in an interactive listener, the invocation of</p>
+<p><strong>abort</strong> returns to the <em>Lisp reader</em> phase of the <em>Lisp read-eval-print loop</em>, though in some batch or multi-processing situations there may be situations in which having it kill the running process is more appropriate.</p>
+<p><strong>See Also:</strong></p>
+<p>Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <strong>invoke-restart</strong>, <strong>abort</strong> (<em>function</em>)</p>
+<p>Conditions <strong>9–65</strong></p>
+<p><strong>continue</strong> <em>Restart</em></p>
+<p><strong>Data Arguments Required:</strong></p>
+<p>None.</p>
+<p><strong>Description:</strong></p>
+<p>The <strong>continue</strong> <em>restart</em> is generally part of protocols where there is a single “obvious” way to continue, such as in <strong>break</strong> and <strong>cerror</strong>. Some user-defined protocols may also wish to incorporate it for similar reasons. In general, however, it is more reliable to design a special purpose restart with a name that more directly suits the particular application.</p>
+<p><strong>Examples:</strong></p>
+<p>(let ((x 3))</p>
+<p>(handler-bind ((error #’(lambda (c)</p>
+<p>(let ((r (find-restart ’continue c)))</p>
+<p>(when r (invoke-restart r))))))</p>
+<p>(cond ((not (floatp x))</p>
+<p>(cerror &quot;Try floating it.&quot; &quot;~D is not a float.&quot; x)</p>
+<p>(float x))</p>
+<p>(t x)))) <em>→</em> 3.0</p>
+<p><strong>See Also:</strong></p>
+<p>Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <strong>invoke-restart</strong>, <strong>continue</strong> (<em>function</em>), <strong>assert</strong>, <strong>cerror</strong></p>
+<p><strong>muffle-warning</strong> <em>Restart</em></p>
+<p><strong>Data Arguments Required:</strong></p>
+<p>None.</p>
+<p><strong>Description:</strong></p>
+<p>This <em>restart</em> is established by <strong>warn</strong> so that <em>handlers</em> of <strong>warning</strong> <em>conditions</em> have a way to tell <strong>warn</strong> that a warning has already been dealt with and that no further action is warranted.</p>
+<p><strong>Examples:</strong></p>
+<p>(defvar *all-quiet* nil) <em>→</em> *ALL-QUIET*</p>
+<p>(defvar *saved-warnings* ’()) <em>→</em> *SAVED-WARNINGS*</p>
+<p>(defun quiet-warning-handler (c)</p>
+<p>(when *all-quiet*</p>
+<p>(let ((r (find-restart ’muffle-warning c)))</p>
+<p>(when r</p>
+<p>(push c *saved-warnings*)</p>
+<p>(invoke-restart r)))))</p>
+<p><em>→</em> CUSTOM-WARNING-HANDLER</p>
+<p>(defmacro with-quiet-warnings (&amp;body forms)</p>
+<p>‘(let ((*all-quiet* t)</p>
+<p>(*saved-warnings* ’()))</p>
+<p>(handler-bind ((warning #’quiet-warning-handler))</p>
+<p>,@forms</p>
+<p>*saved-warnings*)))</p>
+<p><em>→</em> WITH-QUIET-WARNINGS</p>
+<p>(setq saved</p>
+<p>(with-quiet-warnings</p>
+<p>(warn &quot;Situation #1.&quot;)</p>
+<p>(let ((*all-quiet* nil))</p>
+<p>(warn &quot;Situation #2.&quot;))</p>
+<p>(warn &quot;Situation #3.&quot;)))</p>
+<p>▷ Warning: Situation #2.</p>
+<p><em>→</em> (#&lt;SIMPLE-WARNING 42744421&gt; #&lt;SIMPLE-WARNING 42744365&gt;)</p>
+<p>(dolist (s saved) (format t &quot;~&amp;<del>A</del>%&quot; s))</p>
+<p>▷ Situation #3.</p>
+<p>▷ Situation #1.</p>
+<p><em>→</em> NIL</p>
+<p><strong>See Also:</strong></p>
+<p>Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <strong>invoke-restart</strong>, <strong>muffle-warning</strong> (<em>function</em>), <strong>warn</strong></p>
+<p><strong>store-value</strong> <em>Restart</em></p>
+<p><strong>Data Arguments Required:</strong></p>
+<p>a value to use instead (on an ongoing basis).</p>
+<p><strong>Description:</strong></p>
+<p>The <strong>store-value</strong> <em>restart</em> is generally used by <em>handlers</em> trying to recover from errors of <em>types</em> such as <strong>cell-error</strong> or <strong>type-error</strong>, which may wish to supply a replacement datum to be stored permanently.</p>
+<p><strong>Examples:</strong></p>
+<p>(defun type-error-auto-coerce (c)</p>
+<p>(when (typep c ’type-error)</p>
+<p>(let ((r (find-restart ’store-value c)))</p>
+<p>(handler-case (let ((v (coerce (type-error-datum c)</p>
+<p>Conditions <strong>9–67</strong></p>
+<p>(type-error-expected-type c))))</p>
+<p>(invoke-restart r v))</p>
+<p>(error ()))))) <em>→</em> TYPE-ERROR-AUTO-COERCE</p>
+<p>(let ((x 3))</p>
+<p>(handler-bind ((type-error #’type-error-auto-coerce))</p>
+<p>(check-type x float)</p>
+<p>x)) <em>→</em> 3.0</p>
+<p><strong>See Also:</strong></p>
+<p>Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <strong>invoke-restart</strong>, <strong>store-value</strong> (<em>function</em>), <strong>ccase</strong>, <strong>check-type</strong>, <strong>ctypecase</strong>, <strong>use-value</strong> (<em>function</em> and <em>restart</em>)</p>
+<p><strong>use-value</strong> <em>Restart</em></p>
+<p><strong>Data Arguments Required:</strong></p>
+<p>a value to use instead (once).</p>
+<p><strong>Description:</strong></p>
+<p>The <strong>use-value</strong> <em>restart</em> is generally used by <em>handlers</em> trying to recover from errors of <em>types</em> such as <strong>cell-error</strong>, where the handler may wish to supply a replacement datum for one-time use.</p>
+<p><strong>See Also:</strong></p>
+<p>Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <strong>invoke-restart</strong>, <strong>use-value</strong> (<em>function</em>), <strong>store-value</strong> (<em>function</em> and <em>restart</em>)</p>
+<p>&lt;b&gt;&lt;sup&gt;abort, continue, muffle-warning, store-value, use&lt;/sup&gt; value&lt;/b&gt; &lt;i&gt;Function&lt;/i&gt;</p>
+<p><strong>Syntax:</strong></p>
+<p><strong>abort</strong> &amp;optional <em>condition →</em></p>
+<p><strong>continue</strong> &amp;optional <em>condition →</em> <strong>nil</strong></p>
+<p><strong>muffle-warning</strong> &amp;optional <em>condition →</em></p>
+<p><strong>store-value</strong> <em>value</em> &amp;optional <em>condition →</em> <strong>nil</strong></p>
+<p><strong>use-value</strong> <em>value</em> &amp;optional <em>condition →</em> <strong>nil</strong></p>
+<p><strong>abort, continue, muffle-warning, store-value, use-value</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>value</em>—an <em>object</em>.</p>
+<p><em>condition</em>—a <em>condition object</em>, or <strong>nil</strong>.</p>
+<p><strong>Description:</strong></p>
+<p>Transfers control to the most recently established <em>applicable restart</em> having the same name as the function. That is, the <em>function</em> <strong>abort</strong> searches for an <em>applicable</em> <strong>abort</strong> <em>restart</em>, the <em>function</em> <strong>continue</strong> searches for an <em>applicable</em> <strong>continue</strong> <em>restart</em>, and so on.</p>
+<p>If no such <em>restart</em> exists, the functions <strong>continue</strong>, <strong>store-value</strong>, and <strong>use-value</strong> return <strong>nil</strong>, and the functions <strong>abort</strong> and <strong>muffle-warning</strong> signal an error of <em>type</em> <strong>control-error</strong>.</p>
+<p>When <em>condition</em> is <em>non-nil</em>, only those <em>restarts</em> are considered that are either explicitly associated with that <em>condition</em>, or not associated with any <em>condition</em>; that is, the excluded <em>restarts</em> are those that are associated with a non-empty set of <em>conditions</em> of which the given <em>condition</em> is not an <em>element</em>. If <em>condition</em> is <strong>nil</strong>, all <em>restarts</em> are considered.</p>
+<p><strong>Examples:</strong></p>
+<p>;;; Example of the ABORT retart</p>
+<p>(defmacro abort-on-error (&amp;body forms)</p>
+<p>‘(handler-bind ((error #’abort))</p>
+<p>,@forms)) <em>→</em> ABORT-ON-ERROR</p>
+<p>(abort-on-error (+ 3 5)) <em>→</em> 8</p>
+<p>(abort-on-error (error &quot;You lose.&quot;))</p>
+<p>▷ Returned to Lisp Top Level.</p>
+<p>;;; Example of the CONTINUE restart</p>
+<p>(defun real-sqrt (n)</p>
+<p>(when (minusp n)</p>
+<p>(setq n (- n))</p>
+<p>(cerror &quot;Return sqrt(~D) instead.&quot; &quot;Tried to take sqrt(-~D).&quot; n))</p>
+<p>(sqrt n))</p>
+<p>(real-sqrt 4) <em>→</em> 2</p>
+<p>(real-sqrt -9)</p>
+<p>▷ Error: Tried to take sqrt(-9).</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>▷ 1: Return sqrt(9) instead.</p>
+<p>▷ 2: Return to Lisp Toplevel.</p>
+<p>▷ Debug&gt; (continue)</p>
+<p>▷ Return sqrt(9) instead.</p>
+<p><em>→</em> 3</p>
+<p>Conditions <strong>9–69</strong></p>
+<p><strong>abort, continue, muffle-warning, store-value, use-value</strong></p>
+<p>(handler-bind ((error #’(lambda (c) (continue))))</p>
+<p>(real-sqrt -9)) <em>→</em> 3</p>
+<p>;;; Example of the MUFFLE-WARNING restart</p>
+<p>(defun count-down (x)</p>
+<p>(do ((counter x (1- counter)))</p>
+<p>((= counter 0) ’done)</p>
+<p>(when (= counter 1)</p>
+<p>(warn &quot;Almost done&quot;))</p>
+<p>(format t &quot;~&amp;<del>D</del>%&quot; counter)))</p>
+<p><em>→</em> COUNT-DOWN</p>
+<p>(count-down 3)</p>
+<p>▷ 3</p>
+<p>▷ 2</p>
+<p>▷ Warning: Almost done</p>
+<p>▷ 1</p>
+<p><em>→</em> DONE</p>
+<p>(defun ignore-warnings-while-counting (x)</p>
+<p>(handler-bind ((warning #’ignore-warning))</p>
+<p>(count-down x)))</p>
+<p><em>→</em> IGNORE-WARNINGS-WHILE-COUNTING</p>
+<p>(defun ignore-warning (condition)</p>
+<p>(declare (ignore condition))</p>
+<p>(muffle-warning))</p>
+<p><em>→</em> IGNORE-WARNING</p>
+<p>(ignore-warnings-while-counting 3)</p>
+<p>▷ 3</p>
+<p>▷ 2</p>
+<p>▷ 1</p>
+<p><em>→</em> DONE</p>
+<p>;;; Example of the STORE-VALUE and USE-VALUE restarts</p>
+<p>(defun careful-symbol-value (symbol)</p>
+<p>(check-type symbol symbol)</p>
+<p>(restart-case (if (boundp symbol)</p>
+<p>(return-from careful-symbol-value</p>
+<p>(symbol-value symbol))</p>
+<p>(error ’unbound-variable</p>
+<p>:name<!-- --> symbol))</p>
+<p>(use-value (value)</p>
+<p>:report<!-- --> &quot;Specify a value to use this time.&quot;</p>
+<p>value)</p>
+<p><strong>abort, continue, muffle-warning, store-value, use-value</strong></p>
+<p>(store-value (value)</p>
+<p>:report<!-- --> &quot;Specify a value to store and use in the future.&quot;</p>
+<p>(setf (symbol-value symbol) value))))</p>
+<p>(setq a 1234) <em>→</em> 1234</p>
+<p>(careful-symbol-value ’a) <em>→</em> 1234</p>
+<p>(makunbound ’a) <em>→</em> A</p>
+<p>(careful-symbol-value ’a)</p>
+<p>▷ Error: A is not bound.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number.</p>
+<p>▷ 1: Specify a value to use this time.</p>
+<p>▷ 2: Specify a value to store and use in the future.</p>
+<p>▷ 3: Return to Lisp Toplevel.</p>
+<p>▷ Debug&gt; (use-value 12)</p>
+<p><em>→</em> 12</p>
+<p>(careful-symbol-value ’a)</p>
+<p>▷ Error: A is not bound.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number.</p>
+<p>▷ 1: Specify a value to use this time.</p>
+<p>▷ 2: Specify a value to store and use in the future.</p>
+<p>▷ 3: Return to Lisp Toplevel.</p>
+<p>▷ Debug&gt; (store-value 24)</p>
+<p><em>→</em> 24</p>
+<p>(careful-symbol-value ’a)</p>
+<p><em>→</em> 24</p>
+<p>;;; Example of the USE-VALUE restart</p>
+<p>(defun add-symbols-with-default (default &amp;rest symbols)</p>
+<p>(handler-bind ((sys<!-- -->:unbound-symbol</p>
+<p>#’(lambda (c)</p>
+<p>(declare (ignore c))</p>
+<p>(use-value default))))</p>
+<p>(apply #’+ (mapcar #’careful-symbol-value symbols))))</p>
+<p><em>→</em> ADD-SYMBOLS-WITH-DEFAULT</p>
+<p>(setq x 1 y 2) <em>→</em> 2</p>
+<p>(add-symbols-with-default 3 ’x ’y ’z) <em>→</em> 6</p>
+<p><strong>Side Effects:</strong></p>
+<p>A transfer of control may occur if an appropriate <em>restart</em> is available, or (in the case of the <em>function</em> <strong>abort</strong> or the <em>function</em> <strong>muffle-warning</strong>) execution may be stopped.</p>
+<p><strong>Affected By:</strong></p>
+<p>Each of these functions can be affected by the presence of a <em>restart</em> having the same name. Conditions <strong>9–71</strong></p>
+<p><strong>abort, continue, muffle-warning, store-value, use-value</strong></p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>If an appropriate <strong>abort</strong> <em>restart</em> is not available for the <em>function</em> <strong>abort</strong>, or an appropriate <strong>muffle-warning</strong> <em>restart</em> is not available for the <em>function</em> <strong>muffle-warning</strong>, an error of <em>type</em> <strong>control-error</strong> is signaled.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>invoke-restart</strong>, Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <strong>assert</strong>, <strong>ccase</strong>, <strong>cerror</strong>, <strong>check-type</strong>, <strong>ctypecase</strong>, <strong>use-value</strong>, <strong>warn</strong></p>
+<p><strong>Notes:</strong></p>
+<p>(abort condition) <em>≡</em> (invoke-restart ’abort)</p>
+<p>(muffle-warning) <em>≡</em> (invoke-restart ’muffle-warning)</p>
+<p>(continue) <em>≡</em> (let ((r (find-restart ’continue))) (if r (invoke-restart r))) (use-value <em>x</em>) <em>≡</em> (let ((r (find-restart ’use-value))) (if r (invoke-restart r <em>x</em>))) (store-value x) <em>≡</em> (let ((r (find-restart ’store-value))) (if r (invoke-restart r <em>x</em>)))</p>
+<p>No functions defined in this specification are required to provide a <strong>use-value</strong> <em>restart</em>.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/chap-9/j-b-condition-system-concepts.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/cl-language-reference/docs/chap-9/intro"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">intro</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/cl-language-reference/docs/category/a-appendix"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">A. Appendix</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#911-condition-types" class="table-of-contents__link toc-highlight">9.1.1 Condition Types</a><ul><li><a href="#9111-serious-conditions" class="table-of-contents__link toc-highlight">9.1.1.1 Serious Conditions</a></li></ul></li><li><a href="#912-creating-conditions" class="table-of-contents__link toc-highlight">9.1.2 Creating Conditions</a><ul><li><a href="#9121-condition-designators" class="table-of-contents__link toc-highlight">9.1.2.1 Condition Designators</a></li></ul></li><li><a href="#913-printing-conditions" class="table-of-contents__link toc-highlight">9.1.3 Printing Conditions</a><ul><li><a href="#9131-recommended-style-in-condition-reporting" class="table-of-contents__link toc-highlight">9.1.3.1 Recommended Style in Condition Reporting</a></li></ul></li><li><a href="#914-signaling-and-handling-conditions" class="table-of-contents__link toc-highlight">9.1.4 Signaling and Handling Conditions</a><ul><li><a href="#9141-signaling" class="table-of-contents__link toc-highlight">9.1.4.1 Signaling</a></li><li><a href="#9142-restarts" class="table-of-contents__link toc-highlight">9.1.4.2 Restarts</a></li></ul></li><li><a href="#915-assertions" class="table-of-contents__link toc-highlight">9.1.5 Assertions</a></li><li><a href="#916-notes-about-the-condition-system" class="table-of-contents__link toc-highlight">9.1.6 Notes about the Condition System</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/docs/intro">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

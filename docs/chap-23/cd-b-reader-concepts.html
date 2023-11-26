@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-chap-23/cd-b-reader-concepts" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.0">
+<title data-rh="true">23.1 Reader Concepts | Common Lisp (New) Language Reference</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://lisp-docs.github.io/cl-language-reference/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://lisp-docs.github.io/cl-language-reference/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://lisp-docs.github.io/cl-language-reference/docs/chap-23/cd-b-reader-concepts"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="23.1 Reader Concepts | Common Lisp (New) Language Reference"><meta data-rh="true" name="description" content="23.1.1 Dynamic Control of the Lisp Reader"><meta data-rh="true" property="og:description" content="23.1.1 Dynamic Control of the Lisp Reader"><link data-rh="true" rel="icon" href="/cl-language-reference/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-23/cd-b-reader-concepts"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-23/cd-b-reader-concepts" hreflang="en"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-23/cd-b-reader-concepts" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/cl-language-reference/blog/rss.xml" title="Common Lisp (New) Language Reference RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/cl-language-reference/blog/atom.xml" title="Common Lisp (New) Language Reference Atom Feed"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.d3a7613c.css">
+<script src="/cl-language-reference/assets/js/runtime~main.a7e86bbf.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/main.89f4b5c9.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/cl-language-reference/"><div class="navbar__logo"><img src="/cl-language-reference/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/cl-language-reference/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">My Site</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/cl-language-reference/docs/intro">Tutorial</a><a class="navbar__item navbar__link" href="/cl-language-reference/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/intro">Tutorial Intro</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/tutorial---basics">Tutorial - Basics</a><button aria-label="Expand sidebar category &#x27;Tutorial - Basics&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/tutorial---extras">Tutorial - Extras</a><button aria-label="Expand sidebar category &#x27;Tutorial - Extras&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/chapter-3">Chapter 3</a><button aria-label="Expand sidebar category &#x27;Chapter 3&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/nil">NIL</a><button aria-label="Expand sidebar category &#x27;NIL&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/1-introduction">1. Introduction</a><button aria-label="Expand sidebar category &#x27;1. Introduction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/10-symbols">10. Symbols</a><button aria-label="Expand sidebar category &#x27;10. Symbols&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/11-packages">11. Packages</a><button aria-label="Expand sidebar category &#x27;11. Packages&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/12-numbers">12. Numbers</a><button aria-label="Expand sidebar category &#x27;12. Numbers&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/13-characters">13. Characters</a><button aria-label="Expand sidebar category &#x27;13. Characters&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/14-conses">14. Conses</a><button aria-label="Expand sidebar category &#x27;14. Conses&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/15-arrays">15. Arrays</a><button aria-label="Expand sidebar category &#x27;15. Arrays&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/16-strings">16. Strings</a><button aria-label="Expand sidebar category &#x27;16. Strings&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/17-sequences">17. Sequences</a><button aria-label="Expand sidebar category &#x27;17. Sequences&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/18-hash-tables">18. Hash Tables</a><button aria-label="Expand sidebar category &#x27;18. Hash Tables&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/19-filenames">19. Filenames</a><button aria-label="Expand sidebar category &#x27;19. Filenames&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/2-syntax">2. Syntax</a><button aria-label="Expand sidebar category &#x27;2. Syntax&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap-2">chap-2</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/20-files">20. Files</a><button aria-label="Expand sidebar category &#x27;20. Files&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/21-streams">21. Streams</a><button aria-label="Expand sidebar category &#x27;21. Streams&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/22-printer">22. Printer</a><button aria-label="Expand sidebar category &#x27;22. Printer&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/cl-language-reference/docs/category/23-reader">23. Reader</a><button aria-label="Collapse sidebar category &#x27;23. Reader&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/cl-language-reference/docs/chap-23/cd-b-reader-concepts">23.1 Reader Concepts</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cl-language-reference/docs/chap-23/intro">intro</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/24-system-construction">24. System Construction</a><button aria-label="Expand sidebar category &#x27;24. System Construction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/25-environment">25. Environment</a><button aria-label="Expand sidebar category &#x27;25. Environment&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/26-glossary">26. Glossary</a><button aria-label="Expand sidebar category &#x27;26. Glossary&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/3-evaluation-and-compilation">3. Evaluation and Compilation</a><button aria-label="Expand sidebar category &#x27;3. Evaluation and Compilation&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap-3">chap-3</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/4-types-and-classes">4. Types and Classes</a><button aria-label="Expand sidebar category &#x27;4. Types and Classes&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/5-data-and-control-flow">5. Data and Control Flow</a><button aria-label="Expand sidebar category &#x27;5. Data and Control Flow&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/6-iteration">6. Iteration</a><button aria-label="Expand sidebar category &#x27;6. Iteration&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/7-objects">7. Objects</a><button aria-label="Expand sidebar category &#x27;7. Objects&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/8-structures">8. Structures</a><button aria-label="Expand sidebar category &#x27;8. Structures&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/9-conditions">9. Conditions</a><button aria-label="Expand sidebar category &#x27;9. Conditions&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/a-appendix">A. Appendix</a><button aria-label="Expand sidebar category &#x27;A. Appendix&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap2">chap2</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/cl-language-reference/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/cl-language-reference/docs/category/23-reader"><span itemprop="name">23. Reader</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">23.1 Reader Concepts</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>23.1 Reader Concepts</h1>
+<!-- -->
+<p><strong>23.1 Reader Concepts</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2311-dynamic-control-of-the-lisp-reader">23.1.1 Dynamic Control of the Lisp Reader<a href="#2311-dynamic-control-of-the-lisp-reader" class="hash-link" aria-label="Direct link to 23.1.1 Dynamic Control of the Lisp Reader" title="Direct link to 23.1.1 Dynamic Control of the Lisp Reader">​</a></h2>
+<!-- -->
+<p><strong>23.1.1 Dynamic Control of the Lisp Reader</strong></p>
+<p>Various aspects of the <em>Lisp reader</em> can be controlled dynamically. See Section 2.1.1 (Readtables) and Section 2.1.2 (Variables that affect the Lisp Reader).</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2312-effect-of-readtable-case-on-the-lisp-reader">23.1.2 Effect of Readtable Case on the Lisp Reader<a href="#2312-effect-of-readtable-case-on-the-lisp-reader" class="hash-link" aria-label="Direct link to 23.1.2 Effect of Readtable Case on the Lisp Reader" title="Direct link to 23.1.2 Effect of Readtable Case on the Lisp Reader">​</a></h2>
+<!-- -->
+<p><strong>23.1.2 Effect of Readtable Case on the Lisp Reader</strong> The <em>readtable case</em> of the <em>current readtable</em> affects the <em>Lisp reader</em> in the following ways: <!-- -->:upcase</p>
+<p>When the <em>readtable case</em> is <!-- -->:upcase<!-- -->, unescaped constituent <em>characters</em> are converted to <em>uppercase</em>, as specified in Section 2.2 (Reader Algorithm).</p>
+<p>:downcase</p>
+<p>When the <em>readtable case</em> is <!-- -->:downcase<!-- -->, unescaped constituent <em>characters</em> are converted to <em>lowercase</em>.</p>
+<p>:preserve</p>
+<p>When the <em>readtable case</em> is <!-- -->:preserve<!-- -->, the case of all <em>characters</em> remains unchanged.</p>
+<p>:invert</p>
+<p>When the <em>readtable case</em> is <!-- -->:invert<!-- -->, then if all of the unescaped letters in the extended token are of the same <em>case</em>, those (unescaped) letters are converted to the opposite <em>case</em>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="23121-examples-of-effect-of-readtable-case-on-the-lisp-reader">23.1.2.1 Examples of Effect of Readtable Case on the Lisp Reader<a href="#23121-examples-of-effect-of-readtable-case-on-the-lisp-reader" class="hash-link" aria-label="Direct link to 23.1.2.1 Examples of Effect of Readtable Case on the Lisp Reader" title="Direct link to 23.1.2.1 Examples of Effect of Readtable Case on the Lisp Reader">​</a></h3>
+<!-- -->
+<p><strong>23.1.2.1 Examples of Effect of Readtable Case on the Lisp Reader</strong></p>
+<p>(defun test-readtable-case-reading ()</p>
+<p>(let ((*readtable* (copy-readtable nil)))</p>
+<p>(format t &quot;READTABLE-CASE Input Symbol-name~</p>
+<p><del>%–––––––––––––––––-</del></p>
+<p>~%&quot;)</p>
+<p>(dolist (readtable-case ’(<!-- -->:upcase<!-- --> <!-- -->:downcase<!-- --> <!-- -->:preserve<!-- --> <!-- -->:invert<!-- -->))</p>
+<p>(setf (readtable-case *readtable*) readtable-case)</p>
+<p>(dolist (input ’(&quot;ZEBRA&quot; &quot;Zebra&quot; &quot;zebra&quot;))</p>
+<p>(format t &quot;<del>&amp;:<del>A</del>16T</del>A<del>24T</del>A&quot;</p>
+<p>(string-upcase readtable-case)</p>
+<p>input</p>
+<p>(symbol-name (read-from-string input)))))))</p>
+<p>Reader <strong>23–1</strong></p>
+<p>The output from (test-readtable-case-reading) should be as follows:</p>
+<p>READTABLE-CASE Input Symbol-name</p>
+<p>––––––––––––––––––-</p>
+<p>:UPCASE<!-- --> ZEBRA ZEBRA</p>
+<p>:UPCASE<!-- --> Zebra ZEBRA</p>
+<p>:UPCASE<!-- --> zebra ZEBRA</p>
+<p>:DOWNCASE<!-- --> ZEBRA zebra</p>
+<p>:DOWNCASE<!-- --> Zebra zebra</p>
+<p>:DOWNCASE<!-- --> zebra zebra</p>
+<p>:PRESERVE<!-- --> ZEBRA ZEBRA</p>
+<p>:PRESERVE<!-- --> Zebra Zebra</p>
+<p>:PRESERVE<!-- --> zebra zebra</p>
+<p>:INVERT<!-- --> ZEBRA zebra</p>
+<p>:INVERT<!-- --> Zebra Zebra</p>
+<p>:INVERT<!-- --> zebra ZEBRA</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2313-argument-conventions-of-some-reader-functions">23.1.3 Argument Conventions of Some Reader Functions<a href="#2313-argument-conventions-of-some-reader-functions" class="hash-link" aria-label="Direct link to 23.1.3 Argument Conventions of Some Reader Functions" title="Direct link to 23.1.3 Argument Conventions of Some Reader Functions">​</a></h2>
+<!-- -->
+<p><strong>23.1.3 Argument Conventions of Some Reader Functions</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="23131-the-eof">23.1.3.1 The EOF<a href="#23131-the-eof" class="hash-link" aria-label="Direct link to 23.1.3.1 The EOF" title="Direct link to 23.1.3.1 The EOF">​</a></h3>
+<!-- -->
+<p><strong>23.1.3.1 The EOF-ERROR-P argument</strong></p>
+<p><em>Eof-error-p</em> in input function calls controls what happens if input is from a file (or any other input source that has a definite end) and the end of the file is reached. If <em>eof-error-p</em> is <em>true</em> (the default), an error of <em>type</em> <strong>end-of-file</strong> is signaled at end of file. If it is <em>false</em>, then no error is signaled, and instead the function returns <em>eof-value</em>.</p>
+<p>Functions such as <strong>read</strong> that read the representation of an <em>object</em> rather than a single character always signals an error, regardless of <em>eof-error-p</em>, if the file ends in the middle of an object representation. For example, if a file does not contain enough right parentheses to balance the left parentheses in it, <strong>read</strong> signals an error. If a file ends in a <em>symbol</em> or a <em>number</em> immediately followed by end-of-file, <strong>read</strong> reads the <em>symbol</em> or <em>number</em> successfully and when called again will act according to <em>eof-error-p</em>. Similarly, the <em>function</em> <strong>read-line</strong> successfully reads the last line of a file even if that line is terminated by end-of-file rather than the newline character. Ignorable text, such as lines containing only <em>whitespace</em>&lt;sub&gt;2&lt;/sub&gt; or comments, are not considered to begin an <em>object</em>; if <strong>read</strong> begins to read an <em>expression</em> but sees only such ignorable text, it does not consider the file to end in the middle of an <em>object</em>. Thus an <em>eof-error-p</em> argument controls what happens when the file ends between <em>objects</em>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="23132-the-recursive">23.1.3.2 The RECURSIVE<a href="#23132-the-recursive" class="hash-link" aria-label="Direct link to 23.1.3.2 The RECURSIVE" title="Direct link to 23.1.3.2 The RECURSIVE">​</a></h3>
+<!-- -->
+<!-- -->
+<p><strong>23.1.3.2 The RECURSIVE-P argument</strong></p>
+<p>If <em>recursive-p</em> is supplied and not <strong>nil</strong>, it specifies that this function call is not an outermost call to <strong>read</strong> but an embedded call, typically from a <em>reader macro function</em>. It is important to distinguish such recursive calls for three reasons.</p>
+<p>1. An outermost call establishes the context within which the #<em>n</em>= and #<em>n</em># syntax is scoped. Consider, for example, the expression</p>
+<p>(cons ’#3=(p q r) ’(x y . #3#))</p>
+<p>If the <em>single-quote reader macro</em> were defined in this way:</p>
+<p>(set-macro-character #\’ ;incorrect</p>
+<p>#’(lambda (stream char)</p>
+<p>(declare (ignore char))</p>
+<p>(list ’quote (read stream))))</p>
+<p>then each call to the <em>single-quote reader macro function</em> would establish independent contexts for the scope of <strong>read</strong> information, including the scope of identifications between markers like “#3=” and “#3#”. However, for this expression, the scope was clearly intended to be determined by the outer set of parentheses, so such a definition would be incorrect. The correct way to define the <em>single-quote reader macro</em> uses <em>recursive-p</em>:</p>
+<p>(set-macro-character #\’ ;correct</p>
+<p>#’(lambda (stream char)</p>
+<p>(declare (ignore char))</p>
+<p>(list ’quote (read stream t nil t))))</p>
+<p>2. A recursive call does not alter whether the reading process is to preserve <em>whitespace</em>&lt;sub&gt;2&lt;/sub&gt; or not (as determined by whether the outermost call was to <strong>read</strong> or <strong>read-preserving-whitespace</strong>). Suppose again that <em>single-quote</em> were to be defined as shown above in the incorrect definition. Then a call to <strong>read-preserving-whitespace</strong> that read the expression ’foo<em>hSpacei</em> would fail to preserve the space character following the symbol foo because the <em>single-quote reader macro function</em> calls <strong>read</strong>, not <strong>read-preserving-whitespace</strong>, to read the following expression (in this case foo). The correct definition, which passes the value <em>true</em> for <em>recursive-p</em> to <strong>read</strong>, allows the outermost call to determine whether <em>whitespace</em>&lt;sub&gt;2&lt;/sub&gt; is preserved.</p>
+<p>3. When end-of-file is encountered and the <em>eof-error-p</em> argument is not <strong>nil</strong>, the kind of error that is signaled may depend on the value of <em>recursive-p</em>. If <em>recursive-p</em> is <em>true</em>, then the end-of-file is deemed to have occurred within the middle of a printed representation; if <em>recursive-p</em> is <em>false</em>, then the end-of-file may be deemed to have occurred between <em>objects</em> rather than within the middle of one.</p>
+<p>Reader <strong>23–3</strong></p>
+<p><strong>readtable</strong> <em>System Class</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>readtable</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>A <em>readtable</em> maps <em>characters</em> into <em>syntax types</em> for the <em>Lisp reader</em> ; see Chapter 2 (Syntax). A <em>readtable</em> also contains associations between <em>macro characters</em> and their <em>reader macro functions</em>, and records information about the case conversion rules to be used by the <em>Lisp reader</em> when parsing <em>symbols</em>.</p>
+<p>Each <em>simple character</em> must be representable in the <em>readtable</em>. It is <em>implementation-defined</em> whether <em>non-simple characters</em> can have syntax descriptions in the <em>readtable</em>.</p>
+<p><strong>See Also:</strong></p>
+<p>Section 2.1.1 (Readtables), Section 22.1.3.13 (Printing Other Objects)</p>
+<p><strong>copy-readtable</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>copy-readtable</strong> &amp;optional <em>from-readtable to-readtable → readtable</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>from-readtable</em>—a <em>readtable designator</em> . The default is the <em>current readtable</em>.</p>
+<p><em>to-readtable</em>—a <em>readtable</em> or <strong>nil</strong>. The default is <strong>nil</strong>.</p>
+<p><em>readtable</em>—the <em>to-readtable</em> if it is <em>non-nil</em>, or else a <em>fresh readtable</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>copy-readtable</strong> copies <em>from-readtable</em>.</p>
+<p>If <em>to-readtable</em> is <strong>nil</strong>, a new <em>readtable</em> is created and returned. Otherwise the <em>readtable</em> specified by <em>to-readtable</em> is modified and returned.</p>
+<p><strong>copy-readtable</strong> copies the setting of <strong>readtable-case</strong>.</p>
+<p><strong>Examples:</strong></p>
+<p>(setq zvar 123) <em>→</em> 123</p>
+<p>(set-syntax-from-char #\z #\’ (setq table2 (copy-readtable))) <em>→</em> T</p>
+<p>zvar <em>→</em> 123</p>
+<p>(copy-readtable table2 *readtable*) <em>→</em> #&lt;READTABLE 614000277&gt;</p>
+<p>zvar <em>→</em> VAR</p>
+<p>(setq *readtable* (copy-readtable)) <em>→</em> #&lt;READTABLE 46210223&gt;</p>
+<p>zvar <em>→</em> VAR</p>
+<p>(setq *readtable* (copy-readtable nil)) <em>→</em> #&lt;READTABLE 46302670&gt;</p>
+<p>zvar <em>→</em> 123</p>
+<p><strong>See Also:</strong></p>
+<p><strong>readtable</strong>, <strong>*readtable*</strong></p>
+<p><strong>Notes:</strong></p>
+<p>(setq *readtable* (copy-readtable nil))</p>
+<p>restores the input syntax to standard Common Lisp syntax, even if the <em>initial readtable</em> has been clobbered (assuming it is not so badly clobbered that you cannot type in the above expression).</p>
+<p>On the other hand,</p>
+<p>(setq *readtable* (copy-readtable))</p>
+<p>replaces the current <em>readtable</em> with a copy of itself. This is useful if you want to save a copy of a readtable for later use, protected from alteration in the meantime. It is also useful if you want to locally bind the readtable to a copy of itself, as in:</p>
+<p>(let ((*readtable* (copy-readtable))) ...)</p>
+<p><strong>make-dispatch-macro-character</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>make-dispatch-macro-character</strong> <em>char</em> &amp;optional <em>non-terminating-p readtable →</em> <strong>t</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>char</em>—a <em>character</em> .</p>
+<p><em>non-terminating-p</em>—a <em>generalized boolean</em>. The default is <em>false</em>.</p>
+<p><em>readtable</em>—a <em>readtable</em>. The default is the <em>current readtable</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>make-dispatch-macro-character</strong> makes <em>char</em> be a <em>dispatching macro character</em> in <em>readtable</em>.</p>
+<p>Initially, every <em>character</em> in the dispatch table associated with the <em>char</em> has an associated function that signals an error of <em>type</em> <strong>reader-error</strong>.</p>
+<p>Reader <strong>23–5</strong></p>
+<p>If <em>non-terminating-p</em> is <em>true</em>, the <em>dispatching macro character</em> is made a <em>non-terminating macro character</em> ; if <em>non-terminating-p</em> is <em>false</em>, the <em>dispatching macro character</em> is made a <em>terminating macro character</em> .</p>
+<p><strong>Examples:</strong></p>
+<p>(get-macro-character #\{) <em>→</em> NIL, <em>false</em></p>
+<p>(make-dispatch-macro-character #\{) <em>→</em> T</p>
+<p>(not (get-macro-character #\{)) <em>→ false</em></p>
+<p>The <em>readtable</em> is altered.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>*readtable*</strong>, <strong>set-dispatch-macro-character</strong></p>
+<p><strong>read, read-preserving-whitespace</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>read</strong> &amp;optional <em>input-stream eof-error-p eof-value recursive-p → object</em></p>
+<p><strong>read-preserving-whitespace</strong> &amp;optional <em>input-stream eof-error-p</em></p>
+<p><em>eof-value recursive-p</em></p>
+<p><em>→ object</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>input-stream</em>—an <em>input stream designator</em> .</p>
+<p><em>eof-error-p</em>—a <em>generalized boolean</em>. The default is <em>true</em>.</p>
+<p><em>eof-value</em>—an <em>object</em>. The default is <strong>nil</strong>.</p>
+<p><em>recursive-p</em>—a <em>generalized boolean</em>. The default is <em>false</em>.</p>
+<p><em>object</em>—an <em>object</em> (parsed by the <em>Lisp reader</em> ) or the <em>eof-value</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>read</strong> parses the printed representation of an <em>object</em> from <em>input-stream</em> and builds such an <em>object</em>.</p>
+<p><strong>read-preserving-whitespace</strong> is like <strong>read</strong> but preserves any <em>whitespace</em>&lt;sub&gt;2&lt;/sub&gt; <em>character</em> that delimits the printed representation of the <em>object</em>. <strong>read-preserving-whitespace</strong> is exactly like <strong>read</strong> when the <em>recursive-p argument</em> to <strong>read-preserving-whitespace</strong> is <em>true</em>.</p>
+<p><strong>read, read-preserving-whitespace</strong></p>
+<p>When <strong>*read-suppress*</strong> is <em>false</em>, <strong>read</strong> throws away the delimiting <em>character</em> required by certain printed representations if it is a <em>whitespace</em>&lt;sub&gt;2&lt;/sub&gt; <em>character</em> ; but <strong>read</strong> preserves the character (using <strong>unread-char</strong>) if it is syntactically meaningful, because it could be the start of the next expression.</p>
+<p>If a file ends in a <em>symbol</em> or a <em>number</em> immediately followed by an <em>end of file</em>&lt;sub&gt;1&lt;/sub&gt;, <strong>read</strong> reads the <em>symbol</em> or <em>number</em> successfully; when called again, it sees the <em>end of file</em>&lt;sub&gt;1&lt;/sub&gt; and only then acts according to <em>eof-error-p</em>. If a file contains ignorable text at the end, such as blank lines and comments, <strong>read</strong> does not consider it to end in the middle of an <em>object</em>.</p>
+<p>If <em>recursive-p</em> is <em>true</em>, the call to <strong>read</strong> is expected to be made from within some function that itself has been called from <strong>read</strong> or from a similar input function, rather than from the top level.</p>
+<p>Both functions return the <em>object</em> read from <em>input-stream</em>. <em>Eof-value</em> is returned if <em>eof-error-p</em> is <em>false</em> and end of file is reached before the beginning of an <em>object</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(read)</p>
+<p>▷ ’a</p>
+<p><em>→</em> (QUOTE A)</p>
+<p>(with-input-from-string (is &quot; &quot;) (read is nil ’the-end)) <em>→</em> THE-END</p>
+<p>(defun skip-then-read-char (s c n)</p>
+<p>(if (char= c #\{) (read s t nil t) (read-preserving-whitespace s))</p>
+<p>(read-char-no-hang s)) <em>→</em> SKIP-THEN-READ-CHAR</p>
+<p>(let ((*readtable* (copy-readtable nil)))</p>
+<p>(set-dispatch-macro-character ## #\{ #’skip-then-read-char)</p>
+<p>(set-dispatch-macro-character ## #\} #’skip-then-read-char)</p>
+<p>(with-input-from-string (is &quot;#{123 x #}123 y&quot;)</p>
+<p>(format t &quot;~S ~S&quot; (read is) (read is)))) <em>→</em> #\x, #\Space, NIL</p>
+<p>As an example, consider this <em>reader macro</em> definition:</p>
+<p>(defun slash-reader (stream char)</p>
+<p>(declare (ignore char))</p>
+<p>‘(path . ,(loop for dir = (read-preserving-whitespace stream t nil t)</p>
+<p>then (progn (read-char stream t nil t)</p>
+<p>(read-preserving-whitespace stream t nil t))</p>
+<p>collect dir</p>
+<p>while (eql (peek-char nil stream nil nil t) #/))))</p>
+<p>(set-macro-character #/ #’slash-reader)</p>
+<p>Consider now calling <strong>read</strong> on this expression:</p>
+<p>(zyedh /usr/games/zork /usr/games/boggle)</p>
+<p>The / macro reads objects separated by more / characters; thus /usr/games/zork is intended to read as (path usr games zork). The entire example expression should therefore be read as</p>
+<p>Reader <strong>23–7</strong></p>
+<p>(zyedh (path usr games zork) (path usr games boggle))</p>
+<p>However, if <strong>read</strong> had been used instead of <strong>read-preserving-whitespace</strong>, then after the reading of the symbol zork, the following space would be discarded; the next call to <strong>peek-char</strong> would see the following /, and the loop would continue, producing this interpretation:</p>
+<p>(zyedh (path usr games zork usr games boggle))</p>
+<p>There are times when <em>whitespace</em>&lt;sub&gt;2&lt;/sub&gt; &lt;sup&gt;should be discarded. If a command interpreter takes single&lt;/sup&gt; character commands, but occasionally reads an <em>object</em> then if the <em>whitespace</em>&lt;sub&gt;2&lt;/sub&gt; after a <em>symbol</em> is not discarded it might be interpreted as a command some time later after the <em>symbol</em> had been read.</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*standard-input*</strong>, <strong>*terminal-io*</strong>, <strong>*readtable*</strong>, <strong>*read-default-float-format*</strong>, <strong>*read-base*</strong>, <strong>*read-suppress*</strong>, <strong>*package*</strong>, <strong>*read-eval*</strong>.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p><strong>read</strong> signals an error of <em>type</em> <strong>end-of-file</strong>, regardless of <em>eof-error-p</em>, if the file ends in the middle of an <em>object</em> representation. For example, if a file does not contain enough right parentheses to balance the left parentheses in it, <strong>read</strong> signals an error. This is detected when <strong>read</strong> or <strong>read-preserving-whitespace</strong> is called with <em>recursive-p</em> and <em>eof-error-p non-nil</em>, and end-of-file is reached before the beginning of an <em>object</em>.</p>
+<p>If <em>eof-error-p</em> is <em>true</em>, an error of <em>type</em> <strong>end-of-file</strong> is signaled at the end of file.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>peek-char</strong>, <strong>read-char</strong>, <strong>unread-char</strong>, <strong>read-from-string</strong>, <strong>read-delimited-list</strong>, <strong>parse-integer</strong>, Chapter 2 (Syntax), Section 23.1 (Reader Concepts)</p>
+<p><strong>read-delimited-list</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>read-delimited-list</strong> <em>char</em> &amp;optional <em>input-stream recursive-p → list</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>char</em>—a <em>character</em> .</p>
+<p><em>input-stream</em>—an <em>input stream designator</em> . The default is <em>standard input</em>.</p>
+<p><em>recursive-p</em>—a <em>generalized boolean</em>. The default is <em>false</em>.</p>
+<p><em>list</em>—a <em>list</em> of the <em>objects</em> read.</p>
+<p><strong>read-delimited-list</strong></p>
+<p><strong>Description:</strong></p>
+<p><strong>read-delimited-list</strong> reads <em>objects</em> from <em>input-stream</em> until the next character after an <em>object</em>’s representation (ignoring <em>whitespace</em>&lt;sub&gt;2&lt;/sub&gt; characters and comments) is <em>char</em>.</p>
+<p><strong>read-delimited-list</strong> looks ahead at each step for the next non-<em>whitespace</em>&lt;sub&gt;2&lt;/sub&gt; <em>character</em> and peeks at it as if with <strong>peek-char</strong>. If it is <em>char</em>, then the <em>character</em> is consumed and the <em>list</em> of <em>objects</em> is returned. If it is a <em>constituent</em> or <em>escape character</em> , then <strong>read</strong> is used to read an <em>object</em>, which is added to the end of the <em>list</em>. If it is a <em>macro character</em> , its <em>reader macro function</em> is called; if the function returns a <em>value</em>, that <em>value</em> is added to the <em>list</em>. The peek-ahead process is then repeated.</p>
+<p>If <em>recursive-p</em> is <em>true</em>, this call is expected to be embedded in a higher-level call to <strong>read</strong> or a similar function.</p>
+<p>It is an error to reach end-of-file during the operation of <strong>read-delimited-list</strong>.</p>
+<p>The consequences are undefined if <em>char</em> has a <em>syntax type</em> of <em>whitespace</em>&lt;sub&gt;2&lt;/sub&gt; in the <em>current readtable</em>. <strong>Examples:</strong></p>
+<p>(read-delimited-list #]) 1 2 3 4 5 6 ]</p>
+<p><em>→</em> (1 2 3 4 5 6)</p>
+<p>Suppose you wanted #{<em>a b c . . . z</em>} to read as a list of all pairs of the elements <em>a</em>, <em>b</em>, <em>c</em>, <em>. . .</em>, <em>z</em>, for example.</p>
+<p>#{p q z a} reads as ((p q) (p z) (p a) (q z) (q a) (z a))</p>
+<p>This can be done by specifying a macro-character definition for #{ that does two things: reads in all the items up to the }, and constructs the pairs. <strong>read-delimited-list</strong> performs the first task.</p>
+<p>(defun |#{-reader| (stream char arg)</p>
+<p>(declare (ignore char arg))</p>
+<p>(mapcon #’(lambda (x)</p>
+<p>(mapcar #’(lambda (y) (list (car x) y)) (cdr x)))</p>
+<p>(read-delimited-list #\} stream t))) <em>→</em> |#{-reader|</p>
+<p>(set-dispatch-macro-character ## #\{ #’|#{-reader|) <em>→</em> T</p>
+<p>(set-macro-character #\} (get-macro-character #) <strong>nil</strong>))</p>
+<p>Note that <em>true</em> is supplied for the <em>recursive-p</em> argument.</p>
+<p>It is necessary here to give a definition to the character } as well to prevent it from being a constituent. If the line</p>
+<p>(set-macro-character #\} (get-macro-character #) <strong>nil</strong>))</p>
+<p>shown above were not included, then the } in</p>
+<p>#{ p q z a}</p>
+<p>Reader <strong>23–9</strong></p>
+<p>would be considered a constituent character, part of the symbol named a}. This could be corrected by putting a space before the }, but it is better to call <strong>set-macro-character</strong>.</p>
+<p>Giving } the same definition as the standard definition of the character ) has the twin benefit of making it terminate tokens for use with <strong>read-delimited-list</strong> and also making it invalid for use in any other context. Attempting to read a stray } will signal an error.</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*standard-input*</strong>, <strong>*readtable*</strong>, <strong>*terminal-io*</strong>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>read</strong>, <strong>peek-char</strong>, <strong>read-char</strong>, <strong>unread-char</strong>.</p>
+<p><strong>Notes:</strong></p>
+<p><strong>read-delimited-list</strong> is intended for use in implementing <em>reader macros</em>. Usually it is desirable for <em>char</em> to be a <em>terminating macro character</em> so that it can be used to delimit tokens; however, <strong>read-delimited-list</strong> makes no attempt to alter the syntax specified for <em>char</em> by the current readtable. The caller must make any necessary changes to the readtable syntax explicitly.</p>
+<p><strong>read-from-string</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>read-from-string</strong> <em>string</em> &amp;optional <em>eof-error-p eof-value</em></p>
+<p>&amp;key <em>start end preserve-whitespace</em></p>
+<p><em>→ object, position</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>string</em>—a <em>string</em>.</p>
+<p><em>eof-error-p</em>—a <em>generalized boolean</em>. The default is <em>true</em>.</p>
+<p><em>eof-value</em>—an <em>object</em>. The default is <strong>nil</strong>.</p>
+<p><em>start</em>, <em>end</em>—<em>bounding index designators</em> of <em>string</em>. The defaults for <em>start</em> and <em>end</em> are 0 and <strong>nil</strong>, respectively.</p>
+<p><em>preserve-whitespace</em>—a <em>generalized boolean</em>. The default is <em>false</em>.</p>
+<p><em>object</em>—an <em>object</em> (parsed by the <em>Lisp reader</em> ) or the <em>eof-value</em>.</p>
+<p><em>position</em>—an <em>integer</em> greater than or equal to zero, and less than or equal to one more than the <em>length</em> of the <em>string</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Parses the printed representation of an <em>object</em> from the subsequence of <em>string bounded</em> by <em>start</em> and <em>end</em>, as if <strong>read</strong> had been called on an <em>input stream</em> containing those same <em>characters</em>.</p>
+<p>If <em>preserve-whitespace</em> is <em>true</em>, the operation will preserve <em>whitespace</em>&lt;sub&gt;2&lt;/sub&gt; as <strong>read-preserving-whitespace</strong> would do.</p>
+<p>If an <em>object</em> is successfully parsed, the <em>primary value</em>, <em>object</em>, is the <em>object</em> that was parsed. If <em>eof-error-p</em> is <em>false</em> and if the end of the <em>substring</em> is reached, <em>eof-value</em> is returned.</p>
+<p>The <em>secondary value</em>, <em>position</em>, is the index of the first <em>character</em> in the <em>bounded string</em> that was not read. The <em>position</em> may depend upon the value of <em>preserve-whitespace</em>. If the entire <em>string</em> was read, the <em>position</em> returned is either the <em>length</em> of the <em>string</em> or one greater than the <em>length</em> of the <em>string</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(read-from-string &quot; 1 3 5&quot; t nil <!-- -->:start<!-- --> 2) <em>→</em> 3, 5</p>
+<p>(read-from-string &quot;(a b c)&quot;) <em>→</em> (A B C), 7</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>If the end of the supplied substring occurs before an <em>object</em> can be read, an error is signaled if <em>eof-error-p</em> is <em>true</em>. An error is signaled if the end of the <em>substring</em> occurs in the middle of an incomplete <em>object</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>read</strong>, <strong>read-preserving-whitespace</strong></p>
+<p><strong>Notes:</strong></p>
+<p>The reason that <em>position</em> is allowed to be beyond the <em>length</em> of the <em>string</em> is to permit (but not require) the <em>implementation</em> to work by simulating the effect of a trailing delimiter at the end of the <em>bounded string</em>. When <em>preserve-whitespace</em> is <em>true</em>, the <em>position</em> might count the simulated delimiter.</p>
+<p><strong>readtable-case</strong> <em>Accessor</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>readtable-case</strong> <em>readtable → mode</em></p>
+<p><strong>(setf (readtable-case</strong> <em>readtable</em>**)** <em>mode</em>**)**</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>readtable</em>—a <em>readtable</em>.</p>
+<p><em>mode</em>—a <em>case sensitivity mode</em>.</p>
+<p>Reader <strong>23–11</strong></p>
+<p><strong>Description:</strong></p>
+<p><em>Accesses</em> the <em>readtable case</em> of <em>readtable</em>, which affects the way in which the <em>Lisp Reader</em> reads <em>symbols</em> and the way in which the <em>Lisp Printer</em> writes <em>symbols</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>See Section 23.1.2.1 (Examples of Effect of Readtable Case on the Lisp Reader) and Section 22.1.3.3.2.1 (Examples of Effect of Readtable Case on the Lisp Printer).</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>readtable</em> is not a <em>readtable</em>. Should signal an error of <em>type</em> <strong>type-error</strong> if <em>mode</em> is not a <em>case sensitivity mode</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>*readtable*</strong>, <strong>*print-escape*</strong>, Section 2.2 (Reader Algorithm), Section 23.1.2 (Effect of Readtable Case on the Lisp Reader), Section 22.1.3.3.2 (Effect of Readtable Case on the Lisp Printer)</p>
+<p><strong>Notes:</strong></p>
+<p><strong>copy-readtable</strong> copies the <em>readtable case</em> of the <em>readtable</em>.</p>
+<p><strong>readtablep</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>readtablep</strong> <em>object → generalized-boolean</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>object</em>—an <em>object</em>.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns <em>true</em> if <em>object</em> is of <em>type</em> <strong>readtable</strong>; otherwise, returns <em>false</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(readtablep *readtable*) <em>→ true</em></p>
+<p>(readtablep (copy-readtable)) <em>→ true</em></p>
+<p>(readtablep ’*readtable*) <em>→ false</em></p>
+<p><strong>Notes:</strong></p>
+<p>(readtablep <em>object</em>) <em>≡</em> (typep <em>object</em> ’readtable)</p>
+<p><strong>set-dispatch-macro-character,</strong> <em>. . .</em></p>
+<p>&lt;b&gt;&lt;sup&gt;set-dispatch-macro-character, get-dispatch-macro&lt;/sup&gt; character&lt;/b&gt; &lt;i&gt;Function&lt;/i&gt;</p>
+<p><strong>Syntax:</strong></p>
+<p><strong>get-dispatch-macro-character</strong> <em>disp-char sub-char</em> &amp;optional <em>readtable → function</em></p>
+<p><strong>set-dispatch-macro-character</strong> <em>disp-char sub-char new-function</em> &amp;optional <em>readtable →</em> <strong>t</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>disp-char</em>—a <em>character</em> .</p>
+<p><em>sub-char</em>—a <em>character</em> .</p>
+<p><em>readtable</em>—a <em>readtable designator</em> . The default is the <em>current readtable</em>.</p>
+<p><em>function</em>—a <em>function designator</em> or <strong>nil</strong>.</p>
+<p><em>new-function</em>—a <em>function designator</em> .</p>
+<p><strong>Description:</strong></p>
+<p><strong>set-dispatch-macro-character</strong> causes <em>new-function</em> to be called when <em>disp-char</em> followed by <em>sub-char</em> is read. If <em>sub-char</em> is a lowercase letter, it is converted to its uppercase equivalent. It is an error if <em>sub-char</em> is one of the ten decimal digits.</p>
+<p><strong>set-dispatch-macro-character</strong> installs a <em>new-function</em> to be called when a particular <em>dispatching macro character</em> pair is read. <em>New-function</em> is installed as the dispatch function to be called when <em>readtable</em> is in use and when <em>disp-char</em> is followed by <em>sub-char</em>.</p>
+<p>For more information about how the <em>new-function</em> is invoked, see Section 2.1.4.4 (Macro Characters).</p>
+<p><strong>get-dispatch-macro-character</strong> retrieves the dispatch function associated with <em>disp-char</em> and <em>sub-char</em> in <em>readtable</em>.</p>
+<p><strong>get-dispatch-macro-character</strong> returns the macro-character function for <em>sub-char</em> under <em>disp char</em>, or <strong>nil</strong> if there is no function associated with <em>sub-char</em>. If <em>sub-char</em> is a decimal digit, <strong>get-dispatch-macro-character</strong> returns <strong>nil</strong>.</p>
+<p><strong>Examples:</strong></p>
+<p>(get-dispatch-macro-character ## #\{) <em>→</em> NIL</p>
+<p>(set-dispatch-macro-character ## #\{ ;dispatch on #{</p>
+<p>#’(lambda(s c n)</p>
+<p>(let ((list (read s nil (values) t))) ;list is object after #n{</p>
+<p>(when (consp list) ;return nth element of list</p>
+<p>(unless (and n (&lt; 0 n (length list))) (setq n 0))</p>
+<p>(setq list (nth n list)))</p>
+<p>Reader <strong>23–13</strong></p>
+<p>list))) <em>→</em> T</p>
+<p>#{(1 2 3 4) <em>→</em> 1</p>
+<p>#3{(0 1 2 3) <em>→</em> 3</p>
+<p>#{123 <em>→</em> 123</p>
+<p>If it is desired that #$<em>foo</em> : as if it were (dollars <em>foo</em>).</p>
+<p>(defun |#$-reader| (stream subchar arg)</p>
+<p>(declare (ignore subchar arg))</p>
+<p>(list ’dollars (read stream t nil t))) <em>→</em> |#$-reader|</p>
+<p>(set-dispatch-macro-character ## #$ #’|#$-reader|) <em>→</em> T</p>
+<p><strong>See Also:</strong></p>
+<p>Section 2.1.4.4 (Macro Characters)</p>
+<p><strong>Side Effects:</strong></p>
+<p>The <em>readtable</em> is modified.</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*readtable*</strong>.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>For either function, an error is signaled if <em>disp-char</em> is not a <em>dispatching macro character</em> in <em>readtable</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>*readtable*</strong></p>
+<p><strong>Notes:</strong></p>
+<p>It is necessary to use <strong>make-dispatch-macro-character</strong> to set up the dispatch character before specifying its sub-characters.</p>
+<p><strong>set-macro-character, get-macro-character</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>get-macro-character</strong> <em>char</em> &amp;optional <em>readtable → function, non-terminating-p</em></p>
+<p><strong>set-macro-character</strong> <em>char new-function</em> &amp;optional <em>non-terminating-p readtable →</em> <strong>t</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>char</em>—a <em>character</em> .</p>
+<p><em>non-terminating-p</em>—a <em>generalized boolean</em>. The default is <em>false</em>.</p>
+<p><strong>set-macro-character, get-macro-character</strong></p>
+<p><em>readtable</em>—a <em>readtable designator</em> . The default is the <em>current readtable</em>.</p>
+<p><em>function</em>—<strong>nil</strong>, or a <em>designator</em> for a <em>function</em> of two <em>arguments</em>.</p>
+<p><em>new-function</em>—a <em>function designator</em> .</p>
+<p><strong>Description:</strong></p>
+<p><strong>get-macro-character</strong> returns as its <em>primary value</em>, <em>function</em>, the <em>reader macro function</em> associated with <em>char</em> in <em>readtable</em> (if any), or else <strong>nil</strong> if <em>char</em> is not a <em>macro character</em> in <em>readtable</em>. The <em>secondary value</em>, <em>non-terminating-p</em>, is <em>true</em> if <em>char</em> is a <em>non-terminating macro character</em> ; otherwise, it is <em>false</em>.</p>
+<p><strong>set-macro-character</strong> causes <em>char</em> to be a <em>macro character</em> associated with the <em>reader macro function new-function</em> (or the <em>designator</em> for <em>new-function</em>) in <em>readtable</em>. If <em>non-terminating-p</em> is <em>true</em>, <em>char</em> becomes a <em>non-terminating macro character</em> ; otherwise it becomes a <em>terminating macro character</em> .</p>
+<p><strong>Examples:</strong></p>
+<p>(get-macro-character #\{) <em>→</em> NIL, <em>false</em></p>
+<p>(not (get-macro-character #;)) <em>→ false</em></p>
+<p>The following is a possible definition for the <em>single-quote reader macro</em> in <em>standard syntax</em> :</p>
+<p>(defun single-quote-reader (stream char)</p>
+<p>(declare (ignore char))</p>
+<p>(list ’quote (read stream t nil t))) <em>→</em> SINGLE-QUOTE-READER</p>
+<p>(set-macro-character #\’ #’single-quote-reader) <em>→</em> T</p>
+<p>Here single-quote-reader reads an <em>object</em> following the <em>single-quote</em> and returns a <em>list</em> of <strong>quote</strong> and that <em>object</em>. The <em>char</em> argument is ignored.</p>
+<p>The following is a possible definition for the <em>semicolon reader macro</em> in <em>standard syntax</em> :</p>
+<p>(defun semicolon-reader (stream char)</p>
+<p>(declare (ignore char))</p>
+<p>;; First swallow the rest of the current input line.</p>
+<p>;; End-of-file is acceptable for terminating the comment.</p>
+<p>(do () ((char= (read-char stream nil #\Newline t) #\Newline)))</p>
+<p>;; Return zero values.</p>
+<p>(values)) <em>→</em> SEMICOLON-READER</p>
+<p>(set-macro-character #; #’semicolon-reader) <em>→</em> T</p>
+<p><strong>Side Effects:</strong></p>
+<p>The <em>readtable</em> is modified.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>*readtable*</strong></p>
+<p>Reader <strong>23–15</strong></p>
+<p><strong>set-syntax-from-char</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>set-syntax-from-char</strong> <em>to-char from-char</em> &amp;optional <em>to-readtable from-readtable →</em> <strong>t</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>to-char</em>—a <em>character</em> .</p>
+<p><em>from-char</em>—a <em>character</em> .</p>
+<p><em>to-readtable</em>—a <em>readtable</em>. The default is the <em>current readtable</em>.</p>
+<p><em>from-readtable</em>—a <em>readtable designator</em> . The default is the <em>standard readtable</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>set-syntax-from-char</strong> makes the syntax of <em>to-char</em> in <em>to-readtable</em> be the same as the syntax of <em>from-char</em> in <em>from-readtable</em>.</p>
+<p><strong>set-syntax-from-char</strong> copies the <em>syntax types</em> of <em>from-char</em>. If <em>from-char</em> is a <em>macro character</em> , its <em>reader macro function</em> is copied also. If the character is a <em>dispatching macro character</em> , its entire dispatch table of <em>reader macro functions</em> is copied. The <em>constituent traits</em> of <em>from-char</em> are not copied.</p>
+<p>A macro definition from a character such as &quot; can be copied to another character; the standard definition for &quot; looks for another character that is the same as the character that invoked it. The definition of ( can not be meaningfully copied to {, on the other hand. The result is that <em>lists</em> are of the form {a b c), not {a b c}, because the definition always looks for a closing parenthesis, not a closing brace.</p>
+<p><strong>Examples:</strong></p>
+<p>(set-syntax-from-char #\7 #;) <em>→</em> T</p>
+<p>123579 <em>→</em> 1235</p>
+<p><strong>Side Effects:</strong></p>
+<p>The <em>to-readtable</em> is modified.</p>
+<p><strong>Affected By:</strong></p>
+<p>The existing values in the <em>from-readtable</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>set-macro-character</strong>, <strong>make-dispatch-macro-character</strong>, Section 2.1.4 (Character Syntax Types)</p>
+<p><strong>Notes:</strong></p>
+<p>The <em>constituent traits</em> of a <em>character</em> are “hard wired” into the parser for extended <em>tokens</em>. For example, if the definition of S is copied to *, then * will become a <em>constituent</em> that is <em>alphabetic</em>&lt;sub&gt;2&lt;/sub&gt; but that cannot be used as a <em>short float exponent marker</em> . For further information, see Section 2.1.4.2 (Constituent Traits).</p>
+<p><strong>with-standard-io-syntax</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>with-standard-io-syntax</strong> <em>{form}</em>* <em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>forms</em>—an <em>implicit progn</em>.</p>
+<p><em>results</em>—the <em>values</em> returned by the <em>forms</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Within the dynamic extent of the body of <em>forms</em>, all reader/printer control variables, including any <em>implementation-defined</em> ones not specified by this standard, are bound to values that produce standard read/print behavior. The values for the variables specified by this standard are listed in Figure 23–1.</p>
+<p>Reader <strong>23–17</strong></p>
+<table><thead><tr><th style="text-align:left"><strong>Variable Value</strong></th></tr></thead><tbody><tr><td style="text-align:left">&lt;p&gt;<strong>*package*</strong> The CL-USER <em>package</em> &lt;/p&gt;&lt;p&gt;<strong>*print-array* t</strong> &lt;/p&gt;&lt;p&gt;<strong>*print-base*</strong> 10 &lt;/p&gt;&lt;p&gt;<strong>*print-case*</strong> <!-- -->:upcase<!-- --> &lt;/p&gt;&lt;p&gt;<strong>*print-circle* nil</strong> &lt;/p&gt;&lt;p&gt;<strong>*print-escape* t</strong> &lt;/p&gt;&lt;p&gt;<strong>*print-gensym* t</strong> &lt;/p&gt;&lt;p&gt;<strong>*print-length* nil</strong> &lt;/p&gt;&lt;p&gt;<strong>*print-level* nil</strong> &lt;/p&gt;&lt;p&gt;<strong>*print-lines* nil</strong> &lt;/p&gt;&lt;p&gt;<strong>*print-miser-width* nil</strong> &lt;/p&gt;&lt;p&gt;<strong>*print-pprint-dispatch*</strong> The <em>standard pprint dispatch table</em> <strong>*print-pretty* nil</strong> &lt;/p&gt;&lt;p&gt;<strong>*print-radix* nil</strong> &lt;/p&gt;&lt;p&gt;<strong>*print-readably* t</strong> &lt;/p&gt;&lt;p&gt;<strong>*print-right-margin* nil</strong> &lt;/p&gt;&lt;p&gt;<strong>*read-base*</strong> 10 &lt;/p&gt;&lt;p&gt;<strong>*read-default-float-format* single-float</strong> &lt;/p&gt;&lt;p&gt;<strong>*read-eval* t</strong> &lt;/p&gt;&lt;p&gt;<strong>*read-suppress* nil</strong> &lt;/p&gt;&lt;p&gt;<strong>*readtable*</strong> The <em>standard readtable</em>&lt;/p&gt;</td></tr></tbody></table>
+<p><strong>Figure 23–1. Values of standard control variables</strong></p>
+<p><strong>Examples:</strong></p>
+<p>(with-open-file (file pathname <!-- -->:direction<!-- --> <!-- -->:output<!-- -->)</p>
+<p>(with-standard-io-syntax</p>
+<p>(print data file)))</p>
+<p>;;; ... Later, in another Lisp:</p>
+<p>(with-open-file (file pathname <!-- -->:direction<!-- --> <!-- -->:input<!-- -->)</p>
+<p>(with-standard-io-syntax</p>
+<p>(setq data (read file))))</p>
+<p><em>∗</em><strong>read-base</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a <em>radix</em> .</p>
+<p><strong>Initial Value:</strong></p>
+<p>10.</p>
+<p><strong>Description:</strong></p>
+<p>Controls the interpretation of tokens by <strong>read</strong> as being <em>integers</em> or <em>ratios</em>.</p>
+<p>The <em>value</em> of <strong>*read-base*</strong>, called the <em>current input base</em>, is the radix in which <em>integers</em> and <em>ratios</em> are to be read by the <em>Lisp reader</em> . The parsing of other numeric <em>types</em> (<em>e.g.</em>, <em>floats</em>) is not affected by this option.</p>
+<p>The effect of <strong>*read-base*</strong> on the reading of any particular <em>rational</em> number can be locally overridden by explicit use of the #O, #X, #B, or #<em>n</em>R syntax or by a trailing decimal point.</p>
+<p><strong>Examples:</strong></p>
+<p>(dotimes (i 6)</p>
+<p>(let ((*read-base* (+ 10. i)))</p>
+<p>(let ((object (read-from-string &quot;(\DAD DAD |BEE| BEE 123. 123)&quot;)))</p>
+<p>(print (list *read-base* object)))))</p>
+<p>▷ (10 (DAD DAD BEE BEE 123 123))</p>
+<p>▷ (11 (DAD DAD BEE BEE 123 146))</p>
+<p>▷ (12 (DAD DAD BEE BEE 123 171))</p>
+<p>▷ (13 (DAD DAD BEE BEE 123 198))</p>
+<p>▷ (14 (DAD 2701 BEE BEE 123 227))</p>
+<p>▷ (15 (DAD 3088 BEE 2699 123 258))</p>
+<p><em>→</em> NIL</p>
+<p><strong>Notes:</strong></p>
+<p>Altering the input radix can be useful when reading data files in special formats.</p>
+<p><em>∗</em><strong>read-default-float-format</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>one of the <em>atomic type specifiers</em> <strong>short-float</strong>, <strong>single-float</strong>, <strong>double-float</strong>, or <strong>long-float</strong>, or else some other <em>type specifier</em> defined by the <em>implementation</em> to be acceptable.</p>
+<p>Reader <strong>23–19</strong></p>
+<p><strong>Initial Value:</strong></p>
+<p>The <em>symbol</em> <strong>single-float</strong>.</p>
+<p><strong>Description:</strong></p>
+<p>Controls the floating-point format that is to be used when reading a floating-point number that has no <em>exponent marker</em> or that has e or E for an <em>exponent marker</em> . Other <em>exponent markers</em> explicitly prescribe the floating-point format to be used.</p>
+<p>The printer uses <strong>*read-default-float-format*</strong> to guide the choice of <em>exponent markers</em> when printing floating-point numbers.</p>
+<p><strong>Examples:</strong></p>
+<p>(let ((*read-default-float-format* ’double-float))</p>
+<p>(read-from-string &quot;(1.0 1.0e0 1.0s0 1.0f0 1.0d0 1.0L0)&quot;))</p>
+<p><em>→</em> (1.0 1.0 1.0 1.0 1.0 1.0) ;Implementation has float format F.</p>
+<p><em>→</em> (1.0 1.0 1.0s0 1.0 1.0 1.0) ;Implementation has float formats S and F. <em>→</em> (1.0d0 1.0d0 1.0 1.0 1.0d0 1.0d0) ;Implementation has float formats F and D. <em>→</em> (1.0d0 1.0d0 1.0s0 1.0 1.0d0 1.0d0) ;Implementation has float formats S, F, D. <em>→</em> (1.0d0 1.0d0 1.0 1.0 1.0d0 1.0L0) ;Implementation has float formats F, D, L. <em>→</em> (1.0d0 1.0d0 1.0s0 1.0 1.0d0 1.0L0) ;Implementation has formats S, F, D, L.</p>
+<p><em>∗</em><strong>read-eval</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a <em>generalized boolean</em>.</p>
+<p><strong>Initial Value:</strong></p>
+<p><em>true</em>.</p>
+<p><strong>Description:</strong></p>
+<p>If it is <em>true</em>, the #. <em>reader macro</em> has its normal effect. Otherwise, that <em>reader macro</em> signals an error of <em>type</em> <strong>reader-error</strong>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>*print-readably*</strong></p>
+<p><strong>Notes:</strong></p>
+<p>If <strong>*read-eval*</strong> is <em>false</em> and <strong>*print-readably*</strong> is <em>true</em>, any <em>method</em> for <strong>print-object</strong> that would output a reference to the #. <em>reader macro</em> either outputs something different or signals an error of <em>type</em> <strong>print-not-readable</strong>.</p>
+<p><em>∗</em><strong>read-suppress</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a <em>generalized boolean</em>.</p>
+<p><strong>Initial Value:</strong></p>
+<p><em>false</em>.</p>
+<p><strong>Description:</strong></p>
+<p>This variable is intended primarily to support the operation of the read-time conditional notations #+ and #-. It is important for the <em>reader macros</em> which implement these notations to be able to skip over the printed representation of an <em>expression</em> despite the possibility that the syntax of the skipped <em>expression</em> may not be entirely valid for the current implementation, since #+ and #- exist in order to allow the same program to be shared among several Lisp implementations (including dialects other than Common Lisp) despite small incompatibilities of syntax.</p>
+<p>If it is <em>false</em>, the <em>Lisp reader</em> operates normally.</p>
+<p>If the <em>value</em> of <strong>*read-suppress*</strong> is <em>true</em>, <strong>read</strong>, <strong>read-preserving-whitespace</strong>, <strong>read-delimited-list</strong>, and <strong>read-from-string</strong> all return a <em>primary value</em> of <strong>nil</strong> when they complete successfully; however, they continue to parse the representation of an <em>object</em> in the normal way, in order to skip over the <em>object</em>, and continue to indicate <em>end of file</em> in the normal way. Except as noted below, any <em>standardized reader macro</em>&lt;sub&gt;2&lt;/sub&gt; that is defined to <em>read</em> &lt;sub&gt;2&lt;/sub&gt; a following <em>object</em> or <em>token</em> will do so, but not signal an error if the <em>object</em> read is not of an appropriate type or syntax. The <em>standard syntax</em> and its associated <em>reader macros</em> will not construct any new <em>objects</em> (<em>e.g.</em>, when reading the representation of a <em>symbol</em>, no <em>symbol</em> will be constructed or interned).</p>
+<p>Extended tokens</p>
+<p>All extended tokens are completely uninterpreted. Errors such as those that might otherwise be signaled due to detection of invalid <em>potential numbers</em>, invalid patterns of <em>package markers</em>, and invalid uses of the <em>dot</em> character are suppressed.</p>
+<p>Dispatching macro characters (including <em>sharpsign</em>)</p>
+<p><em>Dispatching macro characters</em> continue to parse an infix numerical argument, and invoke the dispatch function. The <em>standardized sharpsign reader macros</em> do not enforce any constraints on either the presence of or the value of the numerical argument.</p>
+<p>#=</p>
+<p>The #= notation is totally ignored. It does not read a following <em>object</em>. It produces no <em>object</em>, but is treated as <em>whitespace</em>&lt;sub&gt;2&lt;/sub&gt;.</p>
+<p>Reader <strong>23–21</strong></p>
+<p>##</p>
+<p>The ## notation always produces <strong>nil</strong>.</p>
+<p>No matter what the <em>value</em> of <strong>*read-suppress*</strong>, parentheses still continue to delimit and construct <em>lists</em>; the #( notation continues to delimit <em>vectors</em>; and comments, <em>strings</em>, and the <em>single-quote</em> and <em>backquote</em> notations continue to be interpreted properly. Such situations as ’), #&lt;, #), and #<em>hSpacei</em> continue to signal errors.</p>
+<p><strong>Examples:</strong></p>
+<p>(let ((*read-suppress* t))</p>
+<p>(mapcar #’read-from-string</p>
+<p>’(&quot;#(foo bar baz)&quot; &quot;#P(<!-- -->:type<!-- --> <!-- -->:lisp<!-- -->)&quot; &quot;#c1.2&quot;</p>
+<p>&quot;#.(PRINT ’FOO)&quot; &quot;#3AHELLO&quot; &quot;#S(INTEGER)&quot;</p>
+<p>&quot;#*ABC&quot; &quot;#\GARBAGE&quot; &quot;#RALPHA&quot; &quot;#3R444&quot;)))</p>
+<p><em>→</em> (NIL NIL NIL NIL NIL NIL NIL NIL NIL NIL)</p>
+<p><strong>See Also:</strong></p>
+<p><strong>read</strong>, Chapter 2 (Syntax)</p>
+<p><strong>Notes:</strong></p>
+<p><em>Programmers</em> and <em>implementations</em> that define additional <em>macro characters</em> are strongly encouraged to make them respect <strong>*read-suppress*</strong> just as <em>standardized macro characters</em> do. That is, when the <em>value</em> of <strong>*read-suppress*</strong> is <em>true</em>, they should ignore type errors when reading a following <em>object</em> and the <em>functions</em> that implement <em>dispatching macro characters</em> should tolerate <strong>nil</strong> as their infix <em>parameter</em> value even if a numeric value would ordinarily be required.</p>
+<p><em>∗</em><strong>readtable</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a <em>readtable</em>.</p>
+<p><strong>Initial Value:</strong></p>
+<p>A <em>readtable</em> that conforms to the description of Common Lisp syntax in Chapter 2 (Syntax).</p>
+<p><strong>Description:</strong></p>
+<p>The <em>value</em> of <strong>*readtable*</strong> is called the <em>current readtable</em>. It controls the parsing behavior of the <em>Lisp reader</em> , and can also influence the <em>Lisp printer</em> (<em>e.g.</em>, see the <em>function</em> <strong>readtable-case</strong>).</p>
+<p><strong>Examples:</strong></p>
+<p>(readtablep *readtable*) <em>→ true</em></p>
+<p>(setq zvar 123) <em>→</em> 123</p>
+<p>(set-syntax-from-char #\z #\’ (setq table2 (copy-readtable))) <em>→</em> T</p>
+<p>zvar <em>→</em> 123</p>
+<p>(setq *readtable* table2) <em>→</em> #&lt;READTABLE&gt;</p>
+<p>zvar <em>→</em> VAR</p>
+<p>(setq *readtable* (copy-readtable nil)) <em>→</em> #&lt;READTABLE&gt;</p>
+<p>zvar <em>→</em> 123</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>compile-file</strong>, <strong>load</strong></p>
+<p><strong>See Also:</strong></p>
+<p><strong>compile-file</strong>, <strong>load</strong>, <strong>readtable</strong>, Section 2.1.1.1 (The Current Readtable)</p>
+<p><strong>reader-error</strong> <em>Condition Type</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>reader-error</strong>, <strong>parse-error</strong>, <strong>stream-error</strong>, <strong>error</strong>, <strong>serious-condition</strong>, <strong>condition</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>The <em>type</em> <strong>reader-error</strong> consists of error conditions that are related to tokenization and parsing done by the <em>Lisp reader</em> .</p>
+<p><strong>See Also:</strong></p>
+<p><strong>read</strong>, <strong>stream-error-stream</strong>, Section 23.1 (Reader Concepts)</p>
+<p>Reader <strong>23–23</strong></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/chap-23/cd-b-reader-concepts.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/cl-language-reference/docs/category/23-reader"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">23. Reader</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/cl-language-reference/docs/chap-23/intro"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">intro</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#2311-dynamic-control-of-the-lisp-reader" class="table-of-contents__link toc-highlight">23.1.1 Dynamic Control of the Lisp Reader</a></li><li><a href="#2312-effect-of-readtable-case-on-the-lisp-reader" class="table-of-contents__link toc-highlight">23.1.2 Effect of Readtable Case on the Lisp Reader</a><ul><li><a href="#23121-examples-of-effect-of-readtable-case-on-the-lisp-reader" class="table-of-contents__link toc-highlight">23.1.2.1 Examples of Effect of Readtable Case on the Lisp Reader</a></li></ul></li><li><a href="#2313-argument-conventions-of-some-reader-functions" class="table-of-contents__link toc-highlight">23.1.3 Argument Conventions of Some Reader Functions</a><ul><li><a href="#23131-the-eof" class="table-of-contents__link toc-highlight">23.1.3.1 The EOF</a></li><li><a href="#23132-the-recursive" class="table-of-contents__link toc-highlight">23.1.3.2 The RECURSIVE</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/docs/intro">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

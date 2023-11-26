@@ -1,0 +1,1007 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-chap-11/bb-b-package-concepts" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.0">
+<title data-rh="true">11.1 Package Concepts | Common Lisp (New) Language Reference</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://lisp-docs.github.io/cl-language-reference/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://lisp-docs.github.io/cl-language-reference/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://lisp-docs.github.io/cl-language-reference/docs/chap-11/bb-b-package-concepts"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="11.1 Package Concepts | Common Lisp (New) Language Reference"><meta data-rh="true" name="description" content="11.1.1 Introduction to Packages"><meta data-rh="true" property="og:description" content="11.1.1 Introduction to Packages"><link data-rh="true" rel="icon" href="/cl-language-reference/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-11/bb-b-package-concepts"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-11/bb-b-package-concepts" hreflang="en"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-11/bb-b-package-concepts" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/cl-language-reference/blog/rss.xml" title="Common Lisp (New) Language Reference RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/cl-language-reference/blog/atom.xml" title="Common Lisp (New) Language Reference Atom Feed"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.d3a7613c.css">
+<script src="/cl-language-reference/assets/js/runtime~main.a7e86bbf.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/main.89f4b5c9.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/cl-language-reference/"><div class="navbar__logo"><img src="/cl-language-reference/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/cl-language-reference/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">My Site</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/cl-language-reference/docs/intro">Tutorial</a><a class="navbar__item navbar__link" href="/cl-language-reference/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/intro">Tutorial Intro</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/tutorial---basics">Tutorial - Basics</a><button aria-label="Expand sidebar category &#x27;Tutorial - Basics&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/tutorial---extras">Tutorial - Extras</a><button aria-label="Expand sidebar category &#x27;Tutorial - Extras&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/chapter-3">Chapter 3</a><button aria-label="Expand sidebar category &#x27;Chapter 3&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/nil">NIL</a><button aria-label="Expand sidebar category &#x27;NIL&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/1-introduction">1. Introduction</a><button aria-label="Expand sidebar category &#x27;1. Introduction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/10-symbols">10. Symbols</a><button aria-label="Expand sidebar category &#x27;10. Symbols&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/cl-language-reference/docs/category/11-packages">11. Packages</a><button aria-label="Collapse sidebar category &#x27;11. Packages&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/cl-language-reference/docs/chap-11/bb-b-package-concepts">11.1 Package Concepts</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cl-language-reference/docs/chap-11/intro">intro</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/12-numbers">12. Numbers</a><button aria-label="Expand sidebar category &#x27;12. Numbers&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/13-characters">13. Characters</a><button aria-label="Expand sidebar category &#x27;13. Characters&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/14-conses">14. Conses</a><button aria-label="Expand sidebar category &#x27;14. Conses&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/15-arrays">15. Arrays</a><button aria-label="Expand sidebar category &#x27;15. Arrays&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/16-strings">16. Strings</a><button aria-label="Expand sidebar category &#x27;16. Strings&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/17-sequences">17. Sequences</a><button aria-label="Expand sidebar category &#x27;17. Sequences&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/18-hash-tables">18. Hash Tables</a><button aria-label="Expand sidebar category &#x27;18. Hash Tables&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/19-filenames">19. Filenames</a><button aria-label="Expand sidebar category &#x27;19. Filenames&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/2-syntax">2. Syntax</a><button aria-label="Expand sidebar category &#x27;2. Syntax&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap-2">chap-2</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/20-files">20. Files</a><button aria-label="Expand sidebar category &#x27;20. Files&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/21-streams">21. Streams</a><button aria-label="Expand sidebar category &#x27;21. Streams&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/22-printer">22. Printer</a><button aria-label="Expand sidebar category &#x27;22. Printer&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/23-reader">23. Reader</a><button aria-label="Expand sidebar category &#x27;23. Reader&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/24-system-construction">24. System Construction</a><button aria-label="Expand sidebar category &#x27;24. System Construction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/25-environment">25. Environment</a><button aria-label="Expand sidebar category &#x27;25. Environment&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/26-glossary">26. Glossary</a><button aria-label="Expand sidebar category &#x27;26. Glossary&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/3-evaluation-and-compilation">3. Evaluation and Compilation</a><button aria-label="Expand sidebar category &#x27;3. Evaluation and Compilation&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap-3">chap-3</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/4-types-and-classes">4. Types and Classes</a><button aria-label="Expand sidebar category &#x27;4. Types and Classes&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/5-data-and-control-flow">5. Data and Control Flow</a><button aria-label="Expand sidebar category &#x27;5. Data and Control Flow&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/6-iteration">6. Iteration</a><button aria-label="Expand sidebar category &#x27;6. Iteration&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/7-objects">7. Objects</a><button aria-label="Expand sidebar category &#x27;7. Objects&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/8-structures">8. Structures</a><button aria-label="Expand sidebar category &#x27;8. Structures&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/9-conditions">9. Conditions</a><button aria-label="Expand sidebar category &#x27;9. Conditions&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/a-appendix">A. Appendix</a><button aria-label="Expand sidebar category &#x27;A. Appendix&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap2">chap2</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/cl-language-reference/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/cl-language-reference/docs/category/11-packages"><span itemprop="name">11. Packages</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">11.1 Package Concepts</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>11.1 Package Concepts</h1>
+<!-- -->
+<p><strong>11.1 Package Concepts</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1111-introduction-to-packages">11.1.1 Introduction to Packages<a href="#1111-introduction-to-packages" class="hash-link" aria-label="Direct link to 11.1.1 Introduction to Packages" title="Direct link to 11.1.1 Introduction to Packages">​</a></h2>
+<!-- -->
+<p><strong>11.1.1 Introduction to Packages</strong></p>
+<p>A <em>package</em> establishes a mapping from names to <em>symbols</em>. At any given time, one <em>package</em> is current. The <em>current package</em> is the one that is the <em>value</em> of <strong>*package*</strong>. When using the <em>Lisp reader</em> , it is possible to refer to <em>symbols</em> in <em>packages</em> other than the current one through the use of <em>package prefixes</em> in the printed representation of the <em>symbol</em>.</p>
+<p>Figure 11–1 lists some <em>defined names</em> that are applicable to <em>packages</em>. Where an <em>operator</em> takes an argument that is either a <em>symbol</em> or a <em>list</em> of <em>symbols</em>, an argument of <strong>nil</strong> is treated as an empty <em>list</em> of <em>symbols</em>. Any <em>package</em> argument may be either a <em>string</em>, a <em>symbol</em>, or a <em>package</em>. If a <em>symbol</em> is supplied, its name will be used as the <em>package</em> name.</p>
+<table><thead><tr><th style="text-align:left"><strong>*modules* import provide *package* in-package rename-package defpackage intern require do-all-symbols list-all-packages shadow do-external-symbols make-package shadowing-import do-symbols package-name unexport export package-nicknames unintern find-all-symbols package-shadowing-symbols unuse-package find-package package-use-list use-package find-symbol package-used-by-list</strong></th></tr></thead></table>
+<p><strong>Figure 11–1. Some Defined Names related to Packages</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="11111-package-names-and-nicknames">11.1.1.1 Package Names and Nicknames<a href="#11111-package-names-and-nicknames" class="hash-link" aria-label="Direct link to 11.1.1.1 Package Names and Nicknames" title="Direct link to 11.1.1.1 Package Names and Nicknames">​</a></h3>
+<!-- -->
+<p><strong>11.1.1.1 Package Names and Nicknames</strong></p>
+<p>Each <em>package</em> has a <em>name</em> (a <em>string</em>) and perhaps some <em>nicknames</em> (also <em>strings</em>). These are assigned when the <em>package</em> is created and can be changed later.</p>
+<p>There is a single namespace for <em>packages</em>. The <em>function</em> <strong>find-package</strong> translates a package <em>name</em> or <em>nickname</em> into the associated <em>package</em>. The <em>function</em> <strong>package-name</strong> returns the <em>name</em> of a <em>package</em>. The <em>function</em> <strong>package-nicknames</strong> returns a <em>list</em> of all <em>nicknames</em> for a <em>package</em>. <strong>rename-package</strong></p>
+<p>removes a <em>package</em>’s current <em>name</em> and <em>nicknames</em> and replaces them with new ones specified by the caller.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="11112-symbols-in-a-package">11.1.1.2 Symbols in a Package<a href="#11112-symbols-in-a-package" class="hash-link" aria-label="Direct link to 11.1.1.2 Symbols in a Package" title="Direct link to 11.1.1.2 Symbols in a Package">​</a></h3>
+<!-- -->
+<p><strong>11.1.1.2 Symbols in a Package</strong></p>
+<p>Packages <strong>11–1</strong></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="111121-internal-and-external-symbols">11.1.1.2.1 Internal and External Symbols<a href="#111121-internal-and-external-symbols" class="hash-link" aria-label="Direct link to 11.1.1.2.1 Internal and External Symbols" title="Direct link to 11.1.1.2.1 Internal and External Symbols">​</a></h4>
+<!-- -->
+<p><strong>11.1.1.2.1 Internal and External Symbols</strong></p>
+<p>The mappings in a <em>package</em> are divided into two classes, external and internal. The <em>symbols</em> targeted by these different mappings are called <em>external symbols</em> and <em>internal symbols</em> of the <em>package</em>. Within a <em>package</em>, a name refers to one <em>symbol</em> or to none; if it does refer to a <em>symbol</em>, then it is either external or internal in that <em>package</em>, but not both. <em>External symbols</em> are part of the package’s public interface to other <em>packages</em>. <em>Symbols</em> become <em>external symbols</em> of a given <em>package</em> if they have been <em>exported</em> from that <em>package</em>.</p>
+<p>A <em>symbol</em> has the same <em>name</em> no matter what <em>package</em> it is <em>present</em> in, but it might be an <em>external symbol</em> of some <em>packages</em> and an <em>internal symbol</em> of others.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="111122-package-inheritance">11.1.1.2.2 Package Inheritance<a href="#111122-package-inheritance" class="hash-link" aria-label="Direct link to 11.1.1.2.2 Package Inheritance" title="Direct link to 11.1.1.2.2 Package Inheritance">​</a></h4>
+<!-- -->
+<p><strong>11.1.1.2.2 Package Inheritance</strong></p>
+<p><em>Packages</em> can be built up in layers. From one point of view, a <em>package</em> is a single collection of mappings from <em>strings</em> into <em>internal symbols</em> and <em>external symbols</em>. However, some of these mappings might be established within the <em>package</em> itself, while other mappings are inherited from other <em>packages</em> via <strong>use-package</strong>. A <em>symbol</em> is said to be <em>present</em> in a <em>package</em> if the mapping is in the <em>package</em> itself and is not inherited from somewhere else.</p>
+<p>There is no way to inherit the <em>internal symbols</em> of another <em>package</em>; to refer to an <em>internal symbol</em> using the <em>Lisp reader</em> , a <em>package</em> containing the <em>symbol</em> must be made to be the <em>current package</em>, a <em>package prefix</em> must be used, or the <em>symbol</em> must be <em>imported</em> into the <em>current package</em>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="111123-accessibility-of-symbols-in-a-package">11.1.1.2.3 Accessibility of Symbols in a Package<a href="#111123-accessibility-of-symbols-in-a-package" class="hash-link" aria-label="Direct link to 11.1.1.2.3 Accessibility of Symbols in a Package" title="Direct link to 11.1.1.2.3 Accessibility of Symbols in a Package">​</a></h4>
+<!-- -->
+<p><strong>11.1.1.2.3 Accessibility of Symbols in a Package</strong></p>
+<p>A <em>symbol</em> becomes <em>accessible</em> in a <em>package</em> if that is its <em>home package</em> when it is created, or if it is <em>imported</em> into that <em>package</em>, or by inheritance via <strong>use-package</strong>.</p>
+<p>If a <em>symbol</em> is <em>accessible</em> in a <em>package</em>, it can be referred to when using the <em>Lisp reader</em> without a <em>package prefix</em> when that <em>package</em> is the <em>current package</em>, regardless of whether it is <em>present</em> or inherited.</p>
+<p><em>Symbols</em> from one <em>package</em> can be made <em>accessible</em> in another <em>package</em> in two ways.</p>
+<p>– Any individual <em>symbol</em> can be added to a <em>package</em> by use of <strong>import</strong>. After the call to <strong>import</strong> the <em>symbol</em> is <em>present</em> in the importing <em>package</em>. The status of the <em>symbol</em> in the <em>package</em> it came from (if any) is unchanged, and the <em>home package</em> for this <em>symbol</em> is unchanged. Once <em>imported</em>, a <em>symbol</em> is <em>present</em> in the importing <em>package</em> and can be removed only by calling <strong>unintern</strong>.</p>
+<p>A <em>symbol</em> is <em>shadowed</em> &lt;sub&gt;3&lt;/sub&gt; by another <em>symbol</em> in some <em>package</em> if the first <em>symbol</em> would be <em>accessible</em> by inheritance if not for the presence of the second <em>symbol</em>. See <strong>shadowing-import</strong>.</p>
+<p>– The second mechanism for making <em>symbols</em> from one <em>package accessible</em> in another is provided by <strong>use-package</strong>. All of the <em>external symbols</em> of the used <em>package</em> are inherited</p>
+<p>by the using <em>package</em>. The <em>function</em> <strong>unuse-package</strong> undoes the effects of a previous <strong>use-package</strong>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="111124-locating-a-symbol-in-a-package">11.1.1.2.4 Locating a Symbol in a Package<a href="#111124-locating-a-symbol-in-a-package" class="hash-link" aria-label="Direct link to 11.1.1.2.4 Locating a Symbol in a Package" title="Direct link to 11.1.1.2.4 Locating a Symbol in a Package">​</a></h4>
+<!-- -->
+<p><strong>11.1.1.2.4 Locating a Symbol in a Package</strong></p>
+<p>When a <em>symbol</em> is to be located in a given <em>package</em> the following occurs:</p>
+<p>– The <em>external symbols</em> and <em>internal symbols</em> of the <em>package</em> are searched for the <em>symbol</em>.</p>
+<p>– The <em>external symbols</em> of the used <em>packages</em> are searched in some unspecified order. The order does not matter; see the rules for handling name conflicts listed below.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="111125-prevention-of-name-conflicts-in-packages">11.1.1.2.5 Prevention of Name Conflicts in Packages<a href="#111125-prevention-of-name-conflicts-in-packages" class="hash-link" aria-label="Direct link to 11.1.1.2.5 Prevention of Name Conflicts in Packages" title="Direct link to 11.1.1.2.5 Prevention of Name Conflicts in Packages">​</a></h4>
+<!-- -->
+<p><strong>11.1.1.2.5 Prevention of Name Conflicts in Packages</strong></p>
+<p>Within one <em>package</em>, any particular name can refer to at most one <em>symbol</em>. A name conflict is said to occur when there would be more than one candidate <em>symbol</em>. Any time a name conflict is about to occur, a <em>correctable error</em> is signaled.</p>
+<p>The following rules apply to name conflicts:</p>
+<p>– Name conflicts are detected when they become possible, that is, when the package structure is altered. Name conflicts are not checked during every name lookup.</p>
+<p>– If the <em>same symbol</em> is <em>accessible</em> to a <em>package</em> through more than one path, there is no name conflict. A <em>symbol</em> cannot conflict with itself. Name conflicts occur only between <em>distinct symbols</em> with the same name (under <strong>string=</strong>).</p>
+<p>– Every <em>package</em> has a list of shadowing <em>symbols</em>. A shadowing <em>symbol</em> takes precedence over any other <em>symbol</em> of the same name that would otherwise be <em>accessible</em> in the <em>package</em>. A name conflict involving a shadowing symbol is always resolved in favor of the shadowing <em>symbol</em>, without signaling an error (except for one exception involving <strong>import</strong>). See <strong>shadow</strong> and <strong>shadowing-import</strong>.</p>
+<p>– The functions <strong>use-package</strong>, <strong>import</strong>, and <strong>export</strong> check for name conflicts.</p>
+<p>– <strong>shadow</strong> and <strong>shadowing-import</strong> never signal a name-conflict error.</p>
+<p>– <strong>unuse-package</strong> and <strong>unexport</strong> do not need to do any name-conflict checking. <strong>unintern</strong> does name-conflict checking only when a <em>symbol</em> being <em>uninterned</em> is a <em>shadowing symbol</em>.</p>
+<p>– Giving a shadowing symbol to <strong>unintern</strong> can uncover a name conflict that had previously been resolved by the shadowing.</p>
+<p>– Package functions signal name-conflict errors of <em>type</em> <strong>package-error</strong> before making any change to the package structure. When multiple changes are to be made, it is permissible for the implementation to process each change separately. For example, when <strong>export</strong> is</p>
+<p>Packages <strong>11–3</strong></p>
+<p>given a <em>list</em> of <em>symbols</em>, aborting from a name conflict caused by the second <em>symbol</em> in the <em>list</em> might still export the first <em>symbol</em> in the <em>list</em>. However, a name-conflict error caused by <strong>export</strong> of a single <em>symbol</em> will be signaled before that <em>symbol</em>’s <em>accessibility</em> in any <em>package</em> is changed.</p>
+<p>– Continuing from a name-conflict error must offer the user a chance to resolve the name conflict in favor of either of the candidates. The <em>package</em> structure should be altered to reflect the resolution of the name conflict, via <strong>shadowing-import</strong>, <strong>unintern</strong>, or <strong>unexport</strong>.</p>
+<p>– A name conflict in <strong>use-package</strong> between a <em>symbol present</em> in the using <em>package</em> and an <em>external symbol</em> of the used <em>package</em> is resolved in favor of the first <em>symbol</em> by making it a shadowing <em>symbol</em>, or in favor of the second <em>symbol</em> by uninterning the first <em>symbol</em> from the using <em>package</em>.</p>
+<p>– A name conflict in <strong>export</strong> or <strong>unintern</strong> due to a <em>package</em>’s inheriting two <em>distinct symbols</em> with the <em>same name</em> (under <strong>string=</strong>) from two other <em>packages</em> can be resolved in favor of either <em>symbol</em> by importing it into the using <em>package</em> and making it a <em>shadowing symbol</em>, just as with <strong>use-package</strong>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1112-standardized-packages">11.1.2 Standardized Packages<a href="#1112-standardized-packages" class="hash-link" aria-label="Direct link to 11.1.2 Standardized Packages" title="Direct link to 11.1.2 Standardized Packages">​</a></h2>
+<!-- -->
+<p><strong>11.1.2 Standardized Packages</strong></p>
+<p>This section describes the <em>packages</em> that are available in every <em>conforming implementation</em>. A summary of the <em>names</em> and <em>nicknames</em> of those <em>standardized packages</em> is given in Figure 11–2.</p>
+<table><thead><tr><th style="text-align:left"><strong>Name Nicknames</strong></th></tr></thead><tbody><tr><td style="text-align:left">&lt;p&gt;COMMON-LISP CL &lt;/p&gt;&lt;p&gt;COMMON-LISP-USER CL-USER &lt;/p&gt;&lt;p&gt;KEYWORD <em>none</em>&lt;/p&gt;</td></tr></tbody></table>
+<p><strong>Figure 11–2. Standardized Package Names</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="11121-the-common">11.1.2.1 The COMMON<a href="#11121-the-common" class="hash-link" aria-label="Direct link to 11.1.2.1 The COMMON" title="Direct link to 11.1.2.1 The COMMON">​</a></h3>
+<!-- -->
+<p><strong>11.1.2.1 The COMMON-LISP Package</strong></p>
+<p>The COMMON-LISP <em>package</em> contains the primitives of the Common Lisp system as defined by this specification. Its <em>external symbols</em> include all of the <em>defined names</em> (except for <em>defined names</em> in the KEYWORD <em>package</em>) that are present in the Common Lisp system, such as <strong>car</strong>, <strong>cdr</strong>, <strong>*package*</strong>, etc. The COMMON-LISP <em>package</em> has the <em>nickname</em> CL.</p>
+<p>The COMMON-LISP <em>package</em> has as <em>external symbols</em> those symbols enumerated in the figures in Section 1.9 (Symbols in the COMMON-LISP Package), and no others. These <em>external symbols</em> are <em>present</em> in the COMMON-LISP <em>package</em> but their <em>home package</em> need not be the COMMON-LISP <em>package</em>.</p>
+<p>For example, the symbol HELP cannot be an <em>external symbol</em> of the COMMON-LISP <em>package</em> because it is not mentioned in Section 1.9 (Symbols in the COMMON-LISP Package). In contrast, the <em>symbol</em></p>
+<p><strong>variable</strong> must be an <em>external symbol</em> of the COMMON-LISP <em>package</em> even though it has no definition because it is listed in that section (to support its use as a valid second <em>argument</em> to the <em>function</em> <strong>documentation</strong>).</p>
+<p>The COMMON-LISP <em>package</em> can have additional <em>internal symbols</em>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="111211-constraints-on-the-common">11.1.2.1.1 Constraints on the COMMON<a href="#111211-constraints-on-the-common" class="hash-link" aria-label="Direct link to 11.1.2.1.1 Constraints on the COMMON" title="Direct link to 11.1.2.1.1 Constraints on the COMMON">​</a></h4>
+<!-- -->
+<p><strong>11.1.2.1.1 Constraints on the COMMON-LISP Package for Conforming Implementations</strong></p>
+<p>In a <em>conforming implementation</em>, an <em>external symbol</em> of the COMMON-LISP <em>package</em> can have a <em>function</em>, <em>macro</em>, or <em>special operator</em> definition, a <em>global variable</em> definition (or other status as a <em>dynamic variable</em> due to a <strong>special</strong> <em>proclamation</em>), or a <em>type</em> definition only if explicitly permitted in this standard. For example, <strong>fboundp</strong> <em>yields false</em> for any <em>external symbol</em> of the COMMON-LISP <em>package</em> that is not the <em>name</em> of a <em>standardized function</em>, <em>macro</em> or <em>special operator</em> , and <strong>boundp</strong> returns <em>false</em> for any <em>external symbol</em> of the COMMON-LISP <em>package</em> that is not the <em>name</em> of a <em>standardized global variable</em>. It also follows that <em>conforming programs</em> can use <em>external symbols</em> of the COMMON-LISP <em>package</em> as the <em>names</em> of local <em>lexical variables</em> with confidence that those <em>names</em> have not been <em>proclaimed</em> <strong>special</strong> by the <em>implementation</em> unless those <em>symbols</em> are <em>names</em> of <em>standardized global variables</em>.</p>
+<p>A <em>conforming implementation</em> must not place any <em>property</em> on an <em>external symbol</em> of the COMMON-LISP <em>package</em> using a <em>property indicator</em> that is either an <em>external symbol</em> of any <em>standardized package</em> or a <em>symbol</em> that is otherwise <em>accessible</em> in the COMMON-LISP-USER <em>package</em>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="111212-constraints-on-the-common">11.1.2.1.2 Constraints on the COMMON<a href="#111212-constraints-on-the-common" class="hash-link" aria-label="Direct link to 11.1.2.1.2 Constraints on the COMMON" title="Direct link to 11.1.2.1.2 Constraints on the COMMON">​</a></h4>
+<!-- -->
+<p><strong>11.1.2.1.2 Constraints on the COMMON-LISP Package for Conforming Programs</strong></p>
+<p>Except where explicitly allowed, the consequences are undefined if any of the following actions are performed on an <em>external symbol</em> of the COMMON-LISP <em>package</em>:</p>
+<p>1. <em>Binding</em> or altering its value (lexically or dynamically). (Some exceptions are noted below.) 2. Defining, undefining, or <em>binding</em> it as a <em>function</em>. (Some exceptions are noted below.)</p>
+<p>3. Defining, undefining, or <em>binding</em> it as a <em>macro</em> or <em>compiler macro</em>. (Some exceptions are noted below.)</p>
+<p>4. Defining it as a <em>type specifier</em> (via <strong>defstruct</strong>, <strong>defclass</strong>, <strong>deftype</strong>, <strong>define-condition</strong>). 5. Defining it as a structure (via <strong>defstruct</strong>).</p>
+<p>6. Defining it as a <em>declaration</em> with a <strong>declaration</strong> <em>proclamation</em>.</p>
+<p>7. Defining it as a <em>symbol macro</em>.</p>
+<p>8. Altering its <em>home package</em>.</p>
+<p>Packages <strong>11–5</strong></p>
+<p>9. Tracing it (via <strong>trace</strong>).</p>
+<p>10. Declaring or proclaiming it <strong>special</strong> (via <strong>declare</strong>, <strong>declaim</strong>, or <strong>proclaim</strong>).</p>
+<p>11. Declaring or proclaiming its <strong>type</strong> or <strong>ftype</strong> (via <strong>declare</strong>, <strong>declaim</strong>, or <strong>proclaim</strong>). (Some exceptions are noted below.)</p>
+<p>12. Removing it from the COMMON-LISP <em>package</em>.</p>
+<p>13. Defining a <em>setf expander</em> for it (via <strong>defsetf</strong> or <strong>define-setf-method</strong>).</p>
+<p>14. Defining, undefining, or binding its <em>setf function name</em>.</p>
+<p>15. Defining it as a <em>method combination</em> type (via <strong>define-method-combination</strong>).</p>
+<p>16. Using it as the class-name argument to <strong>setf</strong> of <strong>find-class</strong>.</p>
+<p>17. Binding it as a <em>catch tag</em>.</p>
+<p>18. Binding it as a <em>restart name</em>.</p>
+<p>19. Defining a <em>method</em> for a <em>standardized generic function</em> which is <em>applicable</em> when all of the <em>arguments</em> are <em>direct instances</em> of <em>standardized classes</em>.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="1112121-some-exceptions-to-constraints-on-the-common">11.1.2.1.2.1 Some Exceptions to Constraints on the COMMON<a href="#1112121-some-exceptions-to-constraints-on-the-common" class="hash-link" aria-label="Direct link to 11.1.2.1.2.1 Some Exceptions to Constraints on the COMMON" title="Direct link to 11.1.2.1.2.1 Some Exceptions to Constraints on the COMMON">​</a></h5>
+<!-- -->
+<p><strong>11.1.2.1.2.1 Some Exceptions to Constraints on the COMMON-LISP Package for Conforming Programs</strong></p>
+<p>If an <em>external symbol</em> of the COMMON-LISP <em>package</em> is not globally defined as a <em>standardized dynamic variable</em> or <em>constant variable</em>, it is allowed to lexically <em>bind</em> it and to declare the <strong>type</strong> of that <em>binding</em>, and it is allowed to locally <em>establish</em> it as a <em>symbol macro</em> (<em>e.g.</em>, with <strong>symbol-macrolet</strong>).</p>
+<p>Unless explicitly specified otherwise, if an <em>external symbol</em> of the COMMON-LISP <em>package</em> is globally defined as a <em>standardized dynamic variable</em>, it is permitted to <em>bind</em> or <em>assign</em> that <em>dynamic variable</em> provided that the “Value Type” constraints on the <em>dynamic variable</em> are maintained, and that the new <em>value</em> of the <em>variable</em> is consistent with the stated purpose of the <em>variable</em>.</p>
+<p>If an <em>external symbol</em> of the COMMON-LISP <em>package</em> is not defined as a <em>standardized function</em>, <em>macro</em>, or <em>special operator</em> , it is allowed to lexically <em>bind</em> it as a <em>function</em> (<em>e.g.</em>, with <strong>flet</strong>), to declare the <strong>ftype</strong> of that <em>binding</em>, and (in <em>implementations</em> which provide the ability to do so) to <strong>trace</strong> that <em>binding</em>.</p>
+<p>If an <em>external symbol</em> of the COMMON-LISP <em>package</em> is not defined as a <em>standardized function</em>, <em>macro</em>, or <em>special operator</em> , it is allowed to lexically <em>bind</em> it as a <em>macro</em> (<em>e.g.</em>, with <strong>macrolet</strong>).</p>
+<p>If an <em>external symbol</em> of the COMMON-LISP <em>package</em> is not defined as a <em>standardized function</em>, <em>macro</em>, or <em>special operator</em> , it is allowed to lexically <em>bind</em> its <em>setf function name</em> as a <em>function</em>, and to declare the <strong>ftype</strong> of that <em>binding</em>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="11122-the-common">11.1.2.2 The COMMON<a href="#11122-the-common" class="hash-link" aria-label="Direct link to 11.1.2.2 The COMMON" title="Direct link to 11.1.2.2 The COMMON">​</a></h3>
+<!-- -->
+<p><strong>11.1.2.2 The COMMON-LISP-USER Package</strong></p>
+<p>The COMMON-LISP-USER <em>package</em> is the <em>current package</em> when a Common Lisp system starts up. This <em>package uses</em> the COMMON-LISP <em>package</em>. The COMMON-LISP-USER <em>package</em> has the <em>nickname</em> CL-USER. The COMMON-LISP-USER <em>package</em> can have additional <em>symbols interned</em> within it; it can <em>use</em> other <em>implementation-defined packages</em>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="11123-the-keyword-package">11.1.2.3 The KEYWORD Package<a href="#11123-the-keyword-package" class="hash-link" aria-label="Direct link to 11.1.2.3 The KEYWORD Package" title="Direct link to 11.1.2.3 The KEYWORD Package">​</a></h3>
+<!-- -->
+<p><strong>11.1.2.3 The KEYWORD Package</strong></p>
+<p>The KEYWORD <em>package</em> contains <em>symbols</em>, called <em>keywords</em>&lt;sub&gt;1&lt;/sub&gt;, that are typically used as special markers in <em>programs</em> and their associated data <em>expressions</em>&lt;sub&gt;1&lt;/sub&gt;.</p>
+<p><em>Symbol tokens</em> that start with a <em>package marker</em> are parsed by the <em>Lisp reader</em> as <em>symbols</em> in the KEYWORD <em>package</em>; see Section 2.3.4 (Symbols as Tokens). This makes it notationally convenient to use <em>keywords</em> when communicating between programs in different <em>packages</em>. For example, the mechanism for passing <em>keyword parameters</em> in a <em>call</em> uses <em>keywords</em>&lt;sub&gt;1&lt;/sub&gt; to name the corresponding <em>arguments</em>; see Section 3.4.1 (Ordinary Lambda Lists).</p>
+<p><em>Symbols</em> in the KEYWORD <em>package</em> are, by definition, of <em>type</em> <strong>keyword</strong>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="111231-interning-a-symbol-in-the-keyword-package">11.1.2.3.1 Interning a Symbol in the KEYWORD Package<a href="#111231-interning-a-symbol-in-the-keyword-package" class="hash-link" aria-label="Direct link to 11.1.2.3.1 Interning a Symbol in the KEYWORD Package" title="Direct link to 11.1.2.3.1 Interning a Symbol in the KEYWORD Package">​</a></h4>
+<!-- -->
+<p><strong>11.1.2.3.1 Interning a Symbol in the KEYWORD Package</strong></p>
+<p>The KEYWORD <em>package</em> is treated differently than other <em>packages</em> in that special actions are taken when a <em>symbol</em> is <em>interned</em> in it. In particular, when a <em>symbol</em> is <em>interned</em> in the KEYWORD <em>package</em>, it is automatically made to be an <em>external symbol</em> and is automatically made to be a <em>constant variable</em> with itself as a <em>value</em>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="111232-notes-about-the-keyword-package">11.1.2.3.2 Notes about The KEYWORD Package<a href="#111232-notes-about-the-keyword-package" class="hash-link" aria-label="Direct link to 11.1.2.3.2 Notes about The KEYWORD Package" title="Direct link to 11.1.2.3.2 Notes about The KEYWORD Package">​</a></h4>
+<!-- -->
+<p><strong>11.1.2.3.2 Notes about The KEYWORD Package</strong></p>
+<p>It is generally best to confine the use of <em>keywords</em> to situations in which there are a finitely enumerable set of names to be selected between. For example, if there were two states of a light switch, they might be called <!-- -->:on<!-- --> and <!-- -->:off<!-- -->.</p>
+<p>In situations where the set of names is not finitely enumerable (<em>i.e.</em>, where name conflicts might arise) it is frequently best to use <em>symbols</em> in some <em>package</em> other than KEYWORD so that conflicts will be naturally avoided. For example, it is generally not wise for a <em>program</em> to use a <em>keyword</em> &lt;sub&gt;1&lt;/sub&gt; as a <em>property indicator</em> , since if there were ever another <em>program</em> that did the same thing, each would clobber the other’s data.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="11124-implementation">11.1.2.4 Implementation<a href="#11124-implementation" class="hash-link" aria-label="Direct link to 11.1.2.4 Implementation" title="Direct link to 11.1.2.4 Implementation">​</a></h3>
+<!-- -->
+<!-- -->
+<p><strong>11.1.2.4 Implementation-Defined Packages</strong></p>
+<p>Other, <em>implementation-defined packages</em> might be present in the initial Common Lisp environment.</p>
+<p>It is recommended, but not required, that the documentation for a <em>conforming implementation</em> contain a full list of all <em>package</em> names initially present in that <em>implementation</em> but not specified in this specification. (See also the <em>function</em> <strong>list-all-packages</strong>.)</p>
+<p>Packages <strong>11–7</strong></p>
+<p><strong>package</strong> <em>System Class</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>package</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>A <em>package</em> is a <em>namespace</em> that maps <em>symbol names</em> to <em>symbols</em>; see Section 11.1 (Package Concepts).</p>
+<p><strong>See Also:</strong></p>
+<p>Section 11.1 (Package Concepts), Section 22.1.3.13 (Printing Other Objects), Section 2.3.4 (Symbols as Tokens)</p>
+<p><strong>export</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>export</strong> <em>symbols</em> &amp;optional <em>package →</em> <strong>t</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbols</em>—a <em>designator</em> for a <em>list</em> of <em>symbols</em>.</p>
+<p><em>package</em>—a <em>package designator</em> . The default is the <em>current package</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>export</strong> makes one or more <em>symbols</em> that are <em>accessible</em> in <em>package</em> (whether directly or by inheritance) be <em>external symbols</em> of that <em>package</em>.</p>
+<p>If any of the <em>symbols</em> is already <em>accessible</em> as an <em>external symbol</em> of <em>package</em>, <strong>export</strong> has no effect on that <em>symbol</em>. If the <em>symbol</em> is <em>present</em> in <em>package</em> as an internal symbol, it is simply changed to external status. If it is <em>accessible</em> as an <em>internal symbol</em> via <strong>use-package</strong>, it is first <em>imported</em> into <em>package</em>, then <em>exported</em>. (The <em>symbol</em> is then <em>present</em> in the <em>package</em> whether or not <em>package</em> continues to use the <em>package</em> through which the <em>symbol</em> was originally inherited.)</p>
+<p><strong>export</strong> makes each <em>symbol accessible</em> to all the <em>packages</em> that use <em>package</em>. All of these <em>packages</em> are checked for name conflicts: (export <em>s p</em>) does (find-symbol (symbol-name <em>s</em>) <em>q</em>) for each package <em>q</em> in (package-used-by-list <em>p</em>). Note that in the usual case of an <strong>export</strong> during the initial definition of a <em>package</em>, the result of <strong>package-used-by-list</strong> is <strong>nil</strong> and the name-conflict checking takes negligible time. When multiple changes are to be made, for example when <strong>export</strong> is given a <em>list</em> of <em>symbols</em>, it is permissible for the implementation to process each change separately, so that aborting from a name conflict caused by any but the first <em>symbol</em> in the <em>list</em> does not unexport the first <em>symbol</em> in the <em>list</em>. However, aborting from a name-conflict error caused by <strong>export</strong> of one of <em>symbols</em> does not leave that <em>symbol accessible</em> to some <em>packages</em> and <em>inaccessible</em> to others; with respect to each of <em>symbols</em> processed, <strong>export</strong> behaves as if it were as an atomic operation.</p>
+<p>A name conflict in <strong>export</strong> between one of <em>symbols</em> being exported and a <em>symbol</em> already <em>present</em> in a <em>package</em> that would inherit the newly-exported <em>symbol</em> may be resolved in favor of the exported <em>symbol</em> by uninterning the other one, or in favor of the already-present <em>symbol</em> by making it a shadowing symbol.</p>
+<p><strong>Examples:</strong></p>
+<p>(make-package ’temp <!-- -->:use<!-- --> nil) <em>→</em> #&lt;PACKAGE &quot;TEMP&quot;&gt;</p>
+<p>(use-package ’temp) <em>→</em> T</p>
+<p>(intern &quot;TEMP-SYM&quot; ’temp) <em>→</em> TEMP::TEMP-SYM, NIL</p>
+<p>(find-symbol &quot;TEMP-SYM&quot;) <em>→</em> NIL, NIL</p>
+<p>(export (find-symbol &quot;TEMP-SYM&quot; ’temp) ’temp) <em>→</em> T</p>
+<p>(find-symbol &quot;TEMP-SYM&quot;) <em>→</em> TEMP-SYM, <!-- -->:INHERITED</p>
+<p><strong>Side Effects:</strong></p>
+<p>The package system is modified.</p>
+<p><strong>Affected By:</strong></p>
+<p><em>Accessible symbols</em>.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>If any of the <em>symbols</em> is not <em>accessible</em> at all in <em>package</em>, an error of <em>type</em> <strong>package-error</strong> is signaled that is <em>correctable</em> by permitting the <em>user</em> to interactively specify whether that <em>symbol</em> should be <em>imported</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>import</strong>, <strong>unexport</strong>, Section 11.1 (Package Concepts)</p>
+<p><strong>find-symbol</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>find-symbol</strong> <em>string</em> &amp;optional <em>package → symbol, status</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>string</em>—a <em>string</em>.</p>
+<p><em>package</em>—a <em>package designator</em> . The default is the <em>current package</em>.</p>
+<p><em>symbol</em>—a <em>symbol</em> accessible in the <em>package</em>, or <strong>nil</strong>.</p>
+<p><em>status</em>—one of <!-- -->:inherited<!-- -->, <!-- -->:external<!-- -->, <!-- -->:internal<!-- -->, or <strong>nil</strong>.</p>
+<p>Packages <strong>11–9</strong></p>
+<p><strong>find-symbol</strong></p>
+<p><strong>Description:</strong></p>
+<p><strong>find-symbol</strong> locates a <em>symbol</em> whose <em>name</em> is <em>string</em> in a <em>package</em>. If a <em>symbol</em> named <em>string</em> is found in <em>package</em>, directly or by inheritance, the <em>symbol</em> found is returned as the first value; the second value is as follows:</p>
+<p>:internal</p>
+<p>If the <em>symbol</em> is <em>present</em> in <em>package</em> as an <em>internal symbol</em>.</p>
+<p>:external</p>
+<p>If the <em>symbol</em> is <em>present</em> in <em>package</em> as an <em>external symbol</em>.</p>
+<p>:inherited</p>
+<p>If the <em>symbol</em> is inherited by <em>package</em> through <strong>use-package</strong>, but is not <em>present</em> in <em>package</em>. If no such <em>symbol</em> is <em>accessible</em> in <em>package</em>, both values are <strong>nil</strong>.</p>
+<p><strong>Examples:</strong></p>
+<p>(find-symbol &quot;NEVER-BEFORE-USED&quot;) <em>→</em> NIL, NIL</p>
+<p>(find-symbol &quot;NEVER-BEFORE-USED&quot;) <em>→</em> NIL, NIL</p>
+<p>(intern &quot;NEVER-BEFORE-USED&quot;) <em>→</em> NEVER-BEFORE-USED, NIL</p>
+<p>(intern &quot;NEVER-BEFORE-USED&quot;) <em>→</em> NEVER-BEFORE-USED, <!-- -->:INTERNAL</p>
+<p>(find-symbol &quot;NEVER-BEFORE-USED&quot;) <em>→</em> NEVER-BEFORE-USED, <!-- -->:INTERNAL</p>
+<p>(find-symbol &quot;never-before-used&quot;) <em>→</em> NIL, NIL</p>
+<p>(find-symbol &quot;CAR&quot; ’common-lisp-user) <em>→</em> CAR, <!-- -->:INHERITED</p>
+<p>(find-symbol &quot;CAR&quot; ’common-lisp) <em>→</em> CAR, <!-- -->:EXTERNAL</p>
+<p>(find-symbol &quot;NIL&quot; ’common-lisp-user) <em>→</em> NIL, <!-- -->:INHERITED</p>
+<p>(find-symbol &quot;NIL&quot; ’common-lisp) <em>→</em> NIL, <!-- -->:EXTERNAL</p>
+<p>(find-symbol &quot;NIL&quot; (prog1 (make-package &quot;JUST-TESTING&quot; <!-- -->:use<!-- --> ’())</p>
+<p>(intern &quot;NIL&quot; &quot;JUST-TESTING&quot;)))</p>
+<p><em>→</em> JUST-TESTING::NIL, <!-- -->:INTERNAL</p>
+<p>(export ’just-testing::nil ’just-testing)</p>
+<p>(find-symbol &quot;NIL&quot; ’just-testing) <em>→</em> JUST-TESTING<!-- -->:NIL<!-- -->, <!-- -->:EXTERNAL</p>
+<p>(find-symbol &quot;NIL&quot; &quot;KEYWORD&quot;)</p>
+<p><em>→</em> NIL, NIL</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; <!-- -->:NIL<!-- -->, <!-- -->:EXTERNAL</p>
+<p>(find-symbol (symbol-name <!-- -->:nil<!-- -->) &quot;KEYWORD&quot;) <em>→</em> <!-- -->:NIL<!-- -->, <!-- -->:EXTERNAL</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>intern</strong>, <strong>import</strong>, <strong>export</strong>, <strong>use-package</strong>, <strong>unintern</strong>, <strong>unexport</strong>, <strong>unuse-package</strong></p>
+<p><strong>See Also:</strong></p>
+<p><strong>intern</strong>, <strong>find-all-symbols</strong></p>
+<p><strong>Notes:</strong></p>
+<p><strong>find-symbol</strong> is operationally equivalent to <strong>intern</strong>, except that it never creates a new <em>symbol</em>. <strong>find-package</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>find-package</strong> <em>name → package</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>name</em>—a <em>string designator</em> or a <em>package object</em>.</p>
+<p><em>package</em>—a <em>package object</em> or <strong>nil</strong>.</p>
+<p><strong>Description:</strong></p>
+<p>If <em>name</em> is a <em>string designator</em> , <strong>find-package</strong> locates and returns the <em>package</em> whose name or nickname is <em>name</em>. This search is case sensitive. If there is no such <em>package</em>, <strong>find-package</strong> returns <strong>nil</strong>.</p>
+<p>If <em>name</em> is a <em>package object</em>, that <em>package object</em> is returned.</p>
+<p><strong>Examples:</strong></p>
+<p>(find-package ’common-lisp) <em>  →</em> #&lt;PACKAGE &quot;COMMON-LISP&quot;&gt;</p>
+<p>(find-package &quot;COMMON-LISP-USER&quot;) <em>→</em> #&lt;PACKAGE &quot;COMMON-LISP-USER&quot;&gt;</p>
+<p>(find-package ’not-there) <em>→</em> NIL</p>
+<p><strong>Affected By:</strong></p>
+<p>The set of <em>packages</em> created by the <em>implementation</em>.</p>
+<p><strong>defpackage</strong>, <strong>delete-package</strong>, <strong>make-package</strong>, <strong>rename-package</strong></p>
+<p><strong>See Also:</strong></p>
+<p><strong>make-package</strong></p>
+<p>Packages <strong>11–11</strong></p>
+<p><strong>find-all-symbols</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>find-all-symbols</strong> <em>string → symbols</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>string</em>—a <em>string designator</em> .</p>
+<p><em>symbols</em>—a <em>list</em> of <em>symbols</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>find-all-symbols</strong> searches every <em>registered package</em> for <em>symbols</em> that have a <em>name</em> that is the <em>same</em> (under <strong>string=</strong>) as <em>string</em>. A <em>list</em> of all such <em>symbols</em> is returned. Whether or how the <em>list</em> is ordered is <em>implementation-dependent</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(find-all-symbols ’car)</p>
+<p><em>→</em> (CAR)</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (CAR VEHICLES<!-- -->:CAR<!-- -->)</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (VEHICLES<!-- -->:CAR<!-- --> CAR)</p>
+<p>(intern &quot;CAR&quot; (make-package ’temp <!-- -->:use<!-- --> nil)) <em>→</em> TEMP::CAR, NIL</p>
+<p>(find-all-symbols ’car)</p>
+<p><em>→</em> (TEMP::CAR CAR)</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (CAR TEMP::CAR)</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (TEMP::CAR CAR VEHICLES<!-- -->:CAR<!-- -->)</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (CAR TEMP::CAR VEHICLES<!-- -->:CAR<!-- -->)</p>
+<p><strong>See Also:</strong></p>
+<p><strong>find-symbol</strong></p>
+<p><strong>import</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>import</strong> <em>symbols</em> &amp;optional <em>package →</em> <strong>t</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbols</em>—a <em>designator</em> for a <em>list</em> of <em>symbols</em>.</p>
+<p><em>package</em>—a <em>package designator</em> . The default is the <em>current package</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>import</strong> adds <em>symbol</em> or <em>symbols</em> to the internals of <em>package</em>, checking for name conflicts with existing <em>symbols</em> either <em>present</em> in <em>package</em> or <em>accessible</em> to it. Once the <em>symbols</em> have been <em>imported</em>, they may be referenced in the <em>importing package</em> without the use of a <em>package prefix</em> when using the <em>Lisp reader</em> .</p>
+<p>A name conflict in <strong>import</strong> between the <em>symbol</em> being imported and a symbol inherited from some other <em>package</em> can be resolved in favor of the <em>symbol</em> being <em>imported</em> by making it a shadowing symbol, or in favor of the <em>symbol</em> already <em>accessible</em> by not doing the <strong>import</strong>. A name conflict in <strong>import</strong> with a <em>symbol</em> already <em>present</em> in the <em>package</em> may be resolved by uninterning that <em>symbol</em>, or by not doing the <strong>import</strong>.</p>
+<p>The imported <em>symbol</em> is not automatically exported from the <em>current package</em>, but if it is already <em>present</em> and external, then the fact that it is external is not changed. If any <em>symbol</em> to be <em>imported</em> has no home package (<em>i.e.</em>, (symbol-package <em>symbol</em>) <em>→</em> nil), <strong>import</strong> sets the <em>home package</em> of the <em>symbol</em> to <em>package</em>.</p>
+<p>If the <em>symbol</em> is already <em>present</em> in the importing <em>package</em>, <strong>import</strong> has no effect.</p>
+<p><strong>Examples:</strong></p>
+<p>(import ’common-lisp::car (make-package ’temp <!-- -->:use<!-- --> nil)) <em>→</em> T</p>
+<p>(find-symbol &quot;CAR&quot; ’temp) <em>→</em> CAR, <!-- -->:INTERNAL</p>
+<p>(find-symbol &quot;CDR&quot; ’temp) <em>→</em> NIL, NIL</p>
+<p>The form (import ’editor<!-- -->:buffer<!-- -->) takes the external symbol named buffer in the EDITOR <em>package</em> (this symbol was located when the form was read by the <em>Lisp reader</em> ) and adds it to the <em>current package</em> as an <em>internal symbol</em>. The symbol buffer is then <em>present</em> in the <em>current package</em>.</p>
+<p><strong>Side Effects:</strong></p>
+<p>The package system is modified.</p>
+<p><strong>Affected By:</strong></p>
+<p>Current state of the package system.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p><strong>import</strong> signals a <em>correctable</em> error of <em>type</em> <strong>package-error</strong> if any of the <em>symbols</em> to be <em>imported</em> has the <em>same name</em> (under <strong>string=</strong>) as some distinct <em>symbol</em> (under <strong>eql</strong>) already <em>accessible</em> in the <em>package</em>, even if the conflict is with a <em>shadowing symbol</em> of the <em>package</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>shadow</strong>, <strong>export</strong></p>
+<p>Packages <strong>11–13</strong></p>
+<p><strong>list-all-packages</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>list-all-packages</strong> <em>hno argumentsi → packages</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>packages</em>—a <em>list</em> of <em>package objects</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>list-all-packages</strong> returns a <em>fresh list</em> of all <em>registered packages</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(let ((before (list-all-packages)))</p>
+<p>(make-package ’temp)</p>
+<p>(set-difference (list-all-packages) before)) <em>→</em> (#&lt;PACKAGE &quot;TEMP&quot;&gt;)</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>defpackage</strong>, <strong>delete-package</strong>, <strong>make-package</strong></p>
+<p><strong>rename-package</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>rename-package</strong> <em>package new-name</em> &amp;optional <em>new-nicknames → package-object</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>package</em>—a <em>package designator</em> .</p>
+<p><em>new-name</em>—a <em>package designator</em> .</p>
+<p><em>new-nicknames</em>—a <em>list</em> of <em>string designators</em>. The default is the <em>empty list</em>.</p>
+<p><em>package-object</em>—the renamed <em>package object</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Replaces the name and nicknames of <em>package</em>. The old name and all of the old nicknames of <em>package</em> are eliminated and are replaced by <em>new-name</em> and <em>new-nicknames</em>.</p>
+<p>The consequences are undefined if <em>new-name</em> or any <em>new-nickname</em> conflicts with any existing package names.</p>
+<p><strong>Examples:</strong></p>
+<p>(make-package ’temporary <!-- -->:nicknames<!-- --> ’(&quot;TEMP&quot;)) <em>→</em> #&lt;PACKAGE &quot;TEMPORARY&quot;&gt;</p>
+<p>(rename-package ’temp ’ephemeral) <em>→</em> #&lt;PACKAGE &quot;EPHEMERAL&quot;&gt;</p>
+<p>(package-nicknames (find-package ’ephemeral)) <em>→</em> ()</p>
+<p>(find-package ’temporary) <em>→</em> NIL</p>
+<p>(rename-package ’ephemeral ’temporary ’(temp fleeting))</p>
+<p><em>→</em> #&lt;PACKAGE &quot;TEMPORARY&quot;&gt;</p>
+<p>(package-nicknames (find-package ’temp)) <em>→</em> (&quot;TEMP&quot; &quot;FLEETING&quot;)</p>
+<p><strong>See Also:</strong></p>
+<p><strong>make-package</strong></p>
+<p><strong>shadow</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>shadow</strong> <em>symbol-names</em> &amp;optional <em>package →</em> <strong>t</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbol-names</em>—a <em>designator</em> for a <em>list</em> of <em>string designators</em>.</p>
+<p><em>package</em>—a <em>package designator</em> . The default is the <em>current package</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>shadow</strong> assures that <em>symbols</em> with names given by <em>symbol-names</em> are <em>present</em> in the <em>package</em>.</p>
+<p>Specifically, <em>package</em> is searched for <em>symbols</em> with the <em>names</em> supplied by <em>symbol-names</em>. For each such <em>name</em>, if a corresponding <em>symbol</em> is not <em>present</em> in <em>package</em> (directly, not by inheritance), then a corresponding <em>symbol</em> is created with that <em>name</em>, and inserted into <em>package</em> as an <em>internal symbol</em>. The corresponding <em>symbol</em>, whether pre-existing or newly created, is then added, if not already present, to the <em>shadowing symbols list</em> of <em>package</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(package-shadowing-symbols (make-package ’temp)) <em>→</em> NIL</p>
+<p>(find-symbol ’car ’temp) <em>→</em> CAR, <!-- -->:INHERITED</p>
+<p>(shadow ’car ’temp) <em>→</em> T</p>
+<p>(find-symbol ’car ’temp) <em>→</em> TEMP::CAR, <!-- -->:INTERNAL</p>
+<p>(package-shadowing-symbols ’temp) <em>→</em> (TEMP::CAR)</p>
+<p>(make-package ’test-1) <em>→</em> #&lt;PACKAGE &quot;TEST-1&quot;&gt;</p>
+<p>(intern &quot;TEST&quot; (find-package ’test-1)) <em>→</em> TEST-1::TEST, NIL</p>
+<p>(shadow ’test-1::test (find-package ’test-1)) <em>→</em> T</p>
+<p>Packages <strong>11–15</strong></p>
+<p>(shadow ’TEST (find-package ’test-1)) <em>→</em> T</p>
+<p>(assert (not (null (member ’test-1::test (package-shadowing-symbols</p>
+<p>(find-package ’test-1))))))</p>
+<p>(make-package ’test-2) <em>→</em> #&lt;PACKAGE &quot;TEST-2&quot;&gt;</p>
+<p>(intern &quot;TEST&quot; (find-package ’test-2)) <em>→</em> TEST-2::TEST, NIL</p>
+<p>(export ’test-2::test (find-package ’test-2)) <em>→</em> T</p>
+<p>(use-package ’test-2 (find-package ’test-1)) ;should not error</p>
+<p><strong>Side Effects:</strong></p>
+<p><strong>shadow</strong> changes the state of the package system in such a way that the package consistency rules do not hold across the change.</p>
+<p><strong>Affected By:</strong></p>
+<p>Current state of the package system.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>package-shadowing-symbols</strong>, Section 11.1 (Package Concepts)</p>
+<p><strong>Notes:</strong></p>
+<p>If a <em>symbol</em> with a name in <em>symbol-names</em> already exists in <em>package</em>, but by inheritance, the inherited symbol becomes <em>shadowed</em> &lt;sub&gt;3&lt;/sub&gt; by a newly created <em>internal symbol</em>.</p>
+<p><strong>shadowing-import</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>shadowing-import</strong> <em>symbols</em> &amp;optional <em>package →</em> <strong>t</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbols</em>—a <em>designator</em> for a <em>list</em> of <em>symbols</em>.</p>
+<p><em>package</em> —a <em>package designator</em> . The default is the <em>current package</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>shadowing-import</strong> is like <strong>import</strong>, but it does not signal an error even if the importation of a <em>symbol</em> would shadow some <em>symbol</em> already <em>accessible</em> in <em>package</em>.</p>
+<p><strong>shadowing-import</strong> inserts each of <em>symbols</em> into <em>package</em> as an internal symbol, regardless of whether another <em>symbol</em> of the same name is shadowed by this action. If a different <em>symbol</em> of the same name is already <em>present</em> in <em>package</em>, that <em>symbol</em> is first <em>uninterned</em> from <em>package</em>. The new <em>symbol</em> is added to <em>package</em>’s shadowing-symbols list.</p>
+<p><strong>shadowing-import</strong> does name-conflict checking to the extent that it checks whether a distinct existing <em>symbol</em> with the same name is <em>accessible</em>; if so, it is shadowed by the new <em>symbol</em>, which implies that it must be uninterned if it was <em>present</em> in <em>package</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(in-package &quot;COMMON-LISP-USER&quot;) <em>→</em> #&lt;PACKAGE &quot;COMMON-LISP-USER&quot;&gt;</p>
+<p>(setq sym (intern &quot;CONFLICT&quot;)) <em>→</em> CONFLICT</p>
+<p>(intern &quot;CONFLICT&quot; (make-package ’temp)) <em>→</em> TEMP::CONFLICT, NIL</p>
+<p>(package-shadowing-symbols ’temp) <em>→</em> NIL</p>
+<p>(shadowing-import sym ’temp) <em>→</em> T</p>
+<p>(package-shadowing-symbols ’temp) <em>→</em> (CONFLICT)</p>
+<p><strong>Side Effects:</strong></p>
+<p><strong>shadowing-import</strong> changes the state of the package system in such a way that the consistency rules do not hold across the change.</p>
+<p><em>package</em>’s shadowing-symbols list is modified.</p>
+<p><strong>Affected By:</strong></p>
+<p>Current state of the package system.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>import</strong>, <strong>unintern</strong>, <strong>package-shadowing-symbols</strong></p>
+<p><strong>delete-package</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>delete-package</strong> <em>package → generalized-boolean</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>package</em>—a <em>package designator</em> .</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>delete-package</strong> deletes <em>package</em> from all package system data structures. If the operation is successful, <strong>delete-package</strong> returns true, otherwise <strong>nil</strong>. The effect of <strong>delete-package</strong> is that the name and nicknames of <em>package</em> cease to be recognized package names. The package <em>object</em> is still a <em>package</em> (<em>i.e.</em>, <strong>packagep</strong> is <em>true</em> of it) but <strong>package-name</strong> returns <strong>nil</strong>. The consequences of deleting the COMMON-LISP <em>package</em> or the KEYWORD <em>package</em> are undefined. The consequences of invoking any other package operation on <em>package</em> once it has been deleted are unspecified. In particular, the consequences of invoking <strong>find-symbol</strong>, <strong>intern</strong> and other functions that look for a symbol name in</p>
+<p>Packages <strong>11–17</strong></p>
+<p><strong>delete-package</strong></p>
+<p>a <em>package</em> are unspecified if they are called with <strong>*package*</strong> bound to the deleted <em>package</em> or with the deleted <em>package</em> as an argument.</p>
+<p>If <em>package</em> is a <em>package object</em> that has already been deleted, <strong>delete-package</strong> immediately returns <strong>nil</strong>.</p>
+<p>After this operation completes, the <em>home package</em> of any <em>symbol</em> whose <em>home package</em> had previously been <em>package</em> is <em>implementation-dependent</em>. Except for this, <em>symbols accessible</em> in <em>package</em> are not modified in any other way; <em>symbols</em> whose <em>home package</em> is not <em>package</em> remain unchanged.</p>
+<p><strong>Examples:</strong></p>
+<p>(setq *foo-package* (make-package &quot;FOO&quot; <!-- -->:use<!-- --> nil))</p>
+<p>(setq *foo-symbol* (intern &quot;FOO&quot; *foo-package*))</p>
+<p>(export *foo-symbol* *foo-package*)</p>
+<p>(setq *bar-package* (make-package &quot;BAR&quot; <!-- -->:use<!-- --> ’(&quot;FOO&quot;)))</p>
+<p>(setq *bar-symbol* (intern &quot;BAR&quot; *bar-package*))</p>
+<p>(export *foo-symbol* *bar-package*)</p>
+<p>(export *bar-symbol* *bar-package*)</p>
+<p>(setq *baz-package* (make-package &quot;BAZ&quot; <!-- -->:use<!-- --> ’(&quot;BAR&quot;)))</p>
+<p>(symbol-package *foo-symbol*) <em>→</em> #&lt;PACKAGE &quot;FOO&quot;&gt;</p>
+<p>(symbol-package *bar-symbol*) <em>→</em> #&lt;PACKAGE &quot;BAR&quot;&gt;</p>
+<p>(prin1-to-string *foo-symbol*) <em>→</em> &quot;FOO<!-- -->:FOO<!-- -->&quot;</p>
+<p>(prin1-to-string *bar-symbol*) <em>→</em> &quot;BAR<!-- -->:BAR<!-- -->&quot;</p>
+<p>(find-symbol &quot;FOO&quot; *bar-package*) <em>→</em> FOO<!-- -->:FOO<!-- -->, <!-- -->:EXTERNAL</p>
+<p>(find-symbol &quot;FOO&quot; *baz-package*) <em>→</em> FOO<!-- -->:FOO<!-- -->, <!-- -->:INHERITED</p>
+<p>(find-symbol &quot;BAR&quot; *baz-package*) <em>→</em> BAR<!-- -->:BAR<!-- -->, <!-- -->:INHERITED</p>
+<p>(packagep *foo-package*) <em>→ true</em></p>
+<p>(packagep *bar-package*) <em>→ true</em></p>
+<p>(packagep *baz-package*) <em>→ true</em></p>
+<p>(package-name *foo-package*) <em>→</em> &quot;FOO&quot;</p>
+<p>(package-name *bar-package*) <em>→</em> &quot;BAR&quot;</p>
+<p>(package-name *baz-package*) <em>→</em> &quot;BAZ&quot;</p>
+<p>(package-use-list *foo-package*) <em>→</em> ()</p>
+<p>(package-use-list *bar-package*) <em>→</em> (#&lt;PACKAGE &quot;FOO&quot;&gt;)</p>
+<p>(package-use-list *baz-package*) <em>→</em> (#&lt;PACKAGE &quot;BAR&quot;&gt;)</p>
+<p><strong>delete-package</strong></p>
+<p>(package-used-by-list *foo-package*) <em>→</em> (#&lt;PACKAGE &quot;BAR&quot;&gt;)</p>
+<p>(package-used-by-list *bar-package*) <em>→</em> (#&lt;PACKAGE &quot;BAZ&quot;&gt;)</p>
+<p>(package-used-by-list *baz-package*) <em>→</em> ()</p>
+<p>(delete-package *bar-package*)</p>
+<p>▷ Error: Package BAZ uses package BAR.</p>
+<p>▷ If continued, BAZ will be made to unuse-package BAR,</p>
+<p>▷ and then BAR will be deleted.</p>
+<p>▷ Type <!-- -->:CONTINUE<!-- --> to continue.</p>
+<p>▷ Debug&gt; <!-- -->:CONTINUE</p>
+<p><em>→</em> T</p>
+<p>(symbol-package *foo-symbol*) <em>→</em> #&lt;PACKAGE &quot;FOO&quot;&gt;</p>
+<p>(symbol-package *bar-symbol*) is unspecified</p>
+<p>(prin1-to-string *foo-symbol*) <em>→</em> &quot;FOO<!-- -->:FOO<!-- -->&quot;</p>
+<p>(prin1-to-string *bar-symbol*) is unspecified</p>
+<p>(find-symbol &quot;FOO&quot; *bar-package*) is unspecified</p>
+<p>(find-symbol &quot;FOO&quot; *baz-package*) <em>→</em> NIL, NIL</p>
+<p>(find-symbol &quot;BAR&quot; *baz-package*) <em>→</em> NIL, NIL</p>
+<p>(packagep *foo-package*) <em>→</em> T</p>
+<p>(packagep *bar-package*) <em>→</em> T</p>
+<p>(packagep *baz-package*) <em>→</em> T</p>
+<p>(package-name *foo-package*) <em>→</em> &quot;FOO&quot;</p>
+<p>(package-name *bar-package*) <em>→</em> NIL</p>
+<p>(package-name *baz-package*) <em>→</em> &quot;BAZ&quot;</p>
+<p>(package-use-list *foo-package*) <em>→</em> ()</p>
+<p>(package-use-list *bar-package*) is unspecified</p>
+<p>(package-use-list *baz-package*) <em>→</em> ()</p>
+<p>(package-used-by-list *foo-package*) <em>→</em> ()</p>
+<p>(package-used-by-list *bar-package*) is unspecified</p>
+<p>(package-used-by-list *baz-package*) <em>→</em> ()</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>If the <em>package designator</em> is a <em>name</em> that does not currently name a <em>package</em>, a <em>correctable</em> error of <em>type</em> <strong>package-error</strong> is signaled. If correction is attempted, no deletion action is attempted; instead, <strong>delete-package</strong> immediately returns <strong>nil</strong>.</p>
+<p>If <em>package</em> is used by other <em>packages</em>, a <em>correctable</em> error of <em>type</em> <strong>package-error</strong> is signaled. Packages <strong>11–19</strong></p>
+<p>If correction is attempted, <strong>unuse-package</strong> is effectively called to remove any dependencies, causing <em>package</em>’s <em>external symbols</em> to cease being <em>accessible</em> to those <em>packages</em> that use <em>package</em>. <strong>delete-package</strong> then deletes <em>package</em> just as it would have had there been no <em>packages</em> that used it.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>unuse-package</strong></p>
+<p><strong>make-package</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>make-package</strong> <em>package-name</em> &amp;key <em>nicknames use → package</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>package-name</em>—a <em>string designator</em> .</p>
+<p><em>nicknames</em>—a <em>list</em> of <em>string designators</em>. The default is the <em>empty list</em>.</p>
+<p><em>use</em>—a <em>list</em> of <em>package designators</em>. The default is <em>implementation-defined</em>.</p>
+<p><em>package</em>—a <em>package</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Creates a new <em>package</em> with the name <em>package-name</em>.</p>
+<p><em>Nicknames</em> are additional <em>names</em> which may be used to refer to the new <em>package</em>.</p>
+<p><em>use</em> specifies zero or more <em>packages</em> the <em>external symbols</em> of which are to be inherited by the new <em>package</em>. See the <em>function</em> <strong>use-package</strong>.</p>
+<p><strong>Examples:</strong></p>
+<p>(make-package ’temporary <!-- -->:nicknames<!-- --> ’(&quot;TEMP&quot; &quot;temp&quot;)) <em>→</em> #&lt;PACKAGE &quot;TEMPORARY&quot;&gt; (make-package &quot;OWNER&quot; <!-- -->:use<!-- --> ’(&quot;temp&quot;)) <em>→</em> #&lt;PACKAGE &quot;OWNER&quot;&gt;</p>
+<p>(package-used-by-list ’temp) <em>→</em> (#&lt;PACKAGE &quot;OWNER&quot;&gt;)</p>
+<p>(package-use-list ’owner) <em>→</em> (#&lt;PACKAGE &quot;TEMPORARY&quot;&gt;)</p>
+<p><strong>Affected By:</strong></p>
+<p>The existence of other <em>packages</em> in the system.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>The consequences are unspecified if <em>packages</em> denoted by <em>use</em> do not exist.</p>
+<p>A <em>correctable</em> error is signaled if the <em>package-name</em> or any of the <em>nicknames</em> is already the <em>name</em> or <em>nickname</em> of an existing <em>package</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>defpackage</strong>, <strong>use-package</strong></p>
+<p><strong>Notes:</strong></p>
+<p>In situations where the <em>packages</em> to be used contain symbols which would conflict, it is necessary to first create the package with <!-- -->:use<!-- --> ’(), then to use <strong>shadow</strong> or <strong>shadowing-import</strong> to address the conflicts, and then after that to use <strong>use-package</strong> once the conflicts have been addressed.</p>
+<p>When packages are being created as part of the static definition of a program rather than dynamically by the program, it is generally considered more stylistically appropriate to use <strong>defpackage</strong> rather than <strong>make-package</strong>.</p>
+<p><strong>with-package-iterator</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>with-package-iterator</strong> (<em>name package-list-form</em> &amp;rest <em>symbol-types</em>) <em>{declaration}</em>* <em>{form}</em>* <em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>name</em>—a <em>symbol</em>.</p>
+<p><em>package-list-form</em>—a <em>form</em>; evaluated once to produce a <em>package-list</em>.</p>
+<p><em>package-list</em>—a <em>designator</em> for a list of <em>package designators</em>.</p>
+<p><em>symbol-type</em>—one of the <em>symbols</em> <!-- -->:internal<!-- -->, <!-- -->:external<!-- -->, or <!-- -->:inherited<!-- -->.</p>
+<p><em>declaration</em>—a <strong>declare</strong> <em>expression</em>; not evaluated.</p>
+<p><em>forms</em>—an <em>implicit progn</em>.</p>
+<p><em>results</em>—the <em>values</em> of the <em>forms</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Within the lexical scope of the body <em>forms</em>, the <em>name</em> is defined via <strong>macrolet</strong> such that successive invocations of (<em>name</em>) will return the <em>symbols</em>, one by one, from the <em>packages</em> in <em>package-list</em>.</p>
+<p>It is unspecified whether <em>symbols</em> inherited from multiple <em>packages</em> are returned more than once. The order of <em>symbols</em> returned does not necessarily reflect the order of <em>packages</em> in <em>package-list</em>. When <em>package-list</em> has more than one element, it is unspecified whether duplicate <em>symbols</em> are returned once or more than once.</p>
+<p><em>Symbol-types</em> controls which <em>symbols</em> that are <em>accessible</em> in a <em>package</em> are returned as follows: Packages <strong>11–21</strong></p>
+<p><strong>with-package-iterator</strong></p>
+<p>:internal</p>
+<p>The <em>symbols</em> that are <em>present</em> in the <em>package</em>, but that are not <em>exported</em>.</p>
+<p>:external</p>
+<p>The <em>symbols</em> that are <em>present</em> in the <em>package</em> and are <em>exported</em>.</p>
+<p>:inherited</p>
+<p>The <em>symbols</em> that are <em>exported</em> by used <em>packages</em> and that are not <em>shadowed</em>.</p>
+<p>When more than one argument is supplied for <em>symbol-types</em>, a <em>symbol</em> is returned if its <em>accessibility</em> matches any one of the <em>symbol-types</em> supplied. Implementations may extend this syntax by recognizing additional symbol accessibility types.</p>
+<p>An invocation of (<em>name</em>) returns four values as follows:</p>
+<p>1. A flag that indicates whether a <em>symbol</em> is returned (true means that a <em>symbol</em> is returned). 2. A <em>symbol</em> that is <em>accessible</em> in one the indicated <em>packages</em>.</p>
+<p>3. The accessibility type for that <em>symbol</em>; <em>i.e.</em>, one of the symbols <!-- -->:internal<!-- -->, <!-- -->:external<!-- -->, or <!-- -->:inherited<!-- -->.</p>
+<p>4. The <em>package</em> from which the <em>symbol</em> was obtained. The <em>package</em> is one of the <em>packages</em> present or named in <em>package-list</em>.</p>
+<p>After all <em>symbols</em> have been returned by successive invocations of (<em>name</em>), then only one value is returned, namely <strong>nil</strong>.</p>
+<p>The meaning of the second, third, and fourth <em>values</em> is that the returned <em>symbol</em> is <em>accessible</em> in the returned <em>package</em> in the way indicated by the second return value as follows:</p>
+<p>:internal</p>
+<p>Means <em>present</em> and not <em>exported</em>.</p>
+<p>:external</p>
+<p>Means <em>present</em> and <em>exported</em>.</p>
+<p>:inherited</p>
+<p>Means not <em>present</em> (thus not <em>shadowed</em>) but inherited from some used <em>package</em>.</p>
+<p>It is unspecified what happens if any of the implicit interior state of an iteration is returned outside the dynamic extent of the <strong>with-package-iterator</strong> form such as by returning some <em>closure</em> over the invocation <em>form</em>.</p>
+<p>Any number of invocations of <strong>with-package-iterator</strong> can be nested, and the body of the innermost one can invoke all of the locally <em>established macros</em>, provided all those <em>macros</em> have distinct names.</p>
+<p><strong>with-package-iterator</strong></p>
+<p><strong>Examples:</strong></p>
+<p>The following function should return <strong>t</strong> on any <em>package</em>, and signal an error if the usage of <strong>with-package-iterator</strong> does not agree with the corresponding usage of <strong>do-symbols</strong>.</p>
+<p>(defun test-package-iterator (package)</p>
+<p>(unless (packagep package)</p>
+<p>(setq package (find-package package)))</p>
+<p>(let ((all-entries ’())</p>
+<p>(generated-entries ’()))</p>
+<p>(do-symbols (x package)</p>
+<p>(multiple-value-bind (symbol accessibility)</p>
+<p>(find-symbol (symbol-name x) package)</p>
+<p>(push (list symbol accessibility) all-entries)))</p>
+<p>(with-package-iterator (generator-fn package</p>
+<p>:internal<!-- --> <!-- -->:external<!-- --> <!-- -->:inherited<!-- -->)</p>
+<p>(loop</p>
+<p>(multiple-value-bind (more? symbol accessibility pkg)</p>
+<p>(generator-fn)</p>
+<p>(unless more? (return))</p>
+<p>(let ((l (multiple-value-list (find-symbol (symbol-name symbol)</p>
+<p>package))))</p>
+<p>(unless (equal l (list symbol accessibility))</p>
+<p>(error &quot;Symbol ~S not found as ~S in package ~A [~S]&quot;</p>
+<p>symbol accessibility (package-name package) l))</p>
+<p>(push l generated-entries)))))</p>
+<p>(unless (and (subsetp all-entries generated-entries <!-- -->:test<!-- --> #’equal)</p>
+<p>(subsetp generated-entries all-entries <!-- -->:test<!-- --> #’equal))</p>
+<p>(error &quot;Generated entries and Do-Symbols entries don’t correspond&quot;))</p>
+<p>t))</p>
+<p>The following function prints out every <em>present symbol</em> (possibly more than once):</p>
+<p>(defun print-all-symbols ()</p>
+<p>(with-package-iterator (next-symbol (list-all-packages)</p>
+<p>:internal<!-- --> <!-- -->:external<!-- -->)</p>
+<p>(loop</p>
+<p>(multiple-value-bind (more? symbol) (next-symbol)</p>
+<p>(if more?</p>
+<p>(print symbol)</p>
+<p>(return))))))</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p><strong>with-package-iterator</strong> signals an error of <em>type</em> <strong>program-error</strong> if no <em>symbol-types</em> are supplied or if a <em>symbol-type</em> is not recognized by the implementation is supplied.</p>
+<p>The consequences are undefined if the local function named <em>name established</em> by Packages <strong>11–23</strong></p>
+<p><strong>with-package-iterator</strong> is called after it has returned <em>false</em> as its <em>primary value</em>.</p>
+<p><strong>See Also:</strong></p>
+<p>Section 3.6 (Traversal Rules and Side Effects)</p>
+<p><strong>unexport</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>unexport</strong> <em>symbols</em> &amp;optional <em>package →</em> <strong>t</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbols</em>—a <em>designator</em> for a <em>list</em> of <em>symbols</em>.</p>
+<p><em>package</em>—a <em>package designator</em> . The default is the <em>current package</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>unexport</strong> reverts external <em>symbols</em> in <em>package</em> to internal status; it undoes the effect of <strong>export</strong>.</p>
+<p><strong>unexport</strong> works only on <em>symbols present</em> in <em>package</em>, switching them back to internal status. If <strong>unexport</strong> is given a <em>symbol</em> that is already <em>accessible</em> as an <em>internal symbol</em> in <em>package</em>, it does nothing.</p>
+<p><strong>Examples:</strong></p>
+<p>(in-package &quot;COMMON-LISP-USER&quot;) <em>→</em> #&lt;PACKAGE &quot;COMMON-LISP-USER&quot;&gt;</p>
+<p>(export (intern &quot;CONTRABAND&quot; (make-package ’temp)) ’temp) <em>→</em> T</p>
+<p>(find-symbol &quot;CONTRABAND&quot;) <em>→</em> NIL, NIL</p>
+<p>(use-package ’temp) <em>→</em> T</p>
+<p>(find-symbol &quot;CONTRABAND&quot;) <em>→</em> CONTRABAND, <!-- -->:INHERITED</p>
+<p>(unexport ’contraband ’temp) <em>→</em> T</p>
+<p>(find-symbol &quot;CONTRABAND&quot;) <em>→</em> NIL, NIL</p>
+<p><strong>Side Effects:</strong></p>
+<p>Package system is modified.</p>
+<p><strong>Affected By:</strong></p>
+<p>Current state of the package system.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>If <strong>unexport</strong> is given a <em>symbol</em> not <em>accessible</em> in <em>package</em> at all, an error of <em>type</em> <strong>package-error</strong> is signaled.</p>
+<p>The consequences are undefined if <em>package</em> is the KEYWORD <em>package</em> or the COMMON-LISP <em>package</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>export</strong>, Section 11.1 (Package Concepts)</p>
+<p><strong>unintern</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>unintern</strong> <em>symbol</em> &amp;optional <em>package → generalized-boolean</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbol</em>—a <em>symbol</em>.</p>
+<p><em>package</em>—a <em>package designator</em> . The default is the <em>current package</em>.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>unintern</strong> removes <em>symbol</em> from <em>package</em>. If <em>symbol</em> is <em>present</em> in <em>package</em>, it is removed from <em>package</em> and also from <em>package</em>’s <em>shadowing symbols list</em> if it is present there. If <em>package</em> is the <em>home package</em> for <em>symbol</em>, <em>symbol</em> is made to have no <em>home package</em>. <em>Symbol</em> may continue to be <em>accessible</em> in <em>package</em> by inheritance.</p>
+<p>Use of <strong>unintern</strong> can result in a <em>symbol</em> that has no recorded <em>home package</em>, but that in fact is <em>accessible</em> in some <em>package</em>. Common Lisp does not check for this pathological case, and such <em>symbols</em> are always printed preceded by #:.</p>
+<p><strong>unintern</strong> returns <em>true</em> if it removes <em>symbol</em>, and <strong>nil</strong> otherwise.</p>
+<p><strong>Examples:</strong></p>
+<p>(in-package &quot;COMMON-LISP-USER&quot;) <em>→</em> #&lt;PACKAGE &quot;COMMON-LISP-USER&quot;&gt;</p>
+<p>(setq temps-unpack (intern &quot;UNPACK&quot; (make-package ’temp))) <em>→</em> TEMP::UNPACK</p>
+<p>(unintern temps-unpack ’temp) <em>→</em> T</p>
+<p>(find-symbol &quot;UNPACK&quot; ’temp) <em>→</em> NIL, NIL</p>
+<p>temps-unpack <em>→</em> #<!-- -->:UNPACK</p>
+<p><strong>Side Effects:</strong></p>
+<p><strong>unintern</strong> changes the state of the package system in such a way that the consistency rules do not hold across the change.</p>
+<p><strong>Affected By:</strong></p>
+<p>Current state of the package system.</p>
+<p>Packages <strong>11–25</strong></p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Giving a shadowing symbol to <strong>unintern</strong> can uncover a name conflict that had previously been resolved by the shadowing. If package A uses packages B and C, A contains a shadowing symbol x, and B and C each contain external symbols named x, then removing the shadowing symbol x from A will reveal a name conflict between b<!-- -->:x<!-- --> and c<!-- -->:x<!-- --> if those two <em>symbols</em> are distinct. In this case <strong>unintern</strong> will signal an error.</p>
+<p><strong>See Also:</strong></p>
+<p>Section 11.1 (Package Concepts)</p>
+<p><strong>in-package</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>in-package</strong> <em>name → package</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>name</em>—a <em>string designator</em> ; not evaluated.</p>
+<p><em>package</em>—the <em>package</em> named by <em>name</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Causes the the <em>package</em> named by <em>name</em> to become the <em>current package</em>—that is, the <em>value</em> of <strong>*package*</strong>. If no such <em>package</em> already exists, an error of <em>type</em> <strong>package-error</strong> is signaled.</p>
+<p>Everything <strong>in-package</strong> does is also performed at compile time if the call appears as a <em>top level form</em>.</p>
+<p><strong>Side Effects:</strong></p>
+<p>The <em>variable</em> <strong>*package*</strong> is assigned. If the <strong>in-package</strong> <em>form</em> is a <em>top level form</em>, this assignment also occurs at compile time.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>An error of <em>type</em> <strong>package-error</strong> is signaled if the specified <em>package</em> does not exist.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>*package*</strong></p>
+<p><strong>unuse-package</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>unuse-package</strong> <em>packages-to-unuse</em> &amp;optional <em>package →</em> <strong>t</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>packages-to-unuse</em>—a <em>designator</em> for a <em>list</em> of <em>package designators</em>.</p>
+<p><em>package</em>—a <em>package designator</em> . The default is the <em>current package</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>unuse-package</strong> causes <em>package</em> to cease inheriting all the <em>external symbols</em> of <em>packages-to-unuse</em>; <strong>unuse-package</strong> undoes the effects of <strong>use-package</strong>. The <em>packages-to-unuse</em> are removed from the <em>use list</em> of <em>package</em>.</p>
+<p>Any <em>symbols</em> that have been <em>imported</em> into <em>package</em> continue to be <em>present</em> in <em>package</em>. <strong>Examples:</strong></p>
+<p>(in-package &quot;COMMON-LISP-USER&quot;) <em>→</em> #&lt;PACKAGE &quot;COMMON-LISP-USER&quot;&gt;</p>
+<p>(export (intern &quot;SHOES&quot; (make-package ’temp)) ’temp) <em>→</em> T</p>
+<p>(find-symbol &quot;SHOES&quot;) <em>→</em> NIL, NIL</p>
+<p>(use-package ’temp) <em>→</em> T</p>
+<p>(find-symbol &quot;SHOES&quot;) <em>→</em> SHOES, <!-- -->:INHERITED</p>
+<p>(find (find-package ’temp) (package-use-list ’common-lisp-user)) <em>→</em> #&lt;PACKAGE &quot;TEMP&quot;&gt; (unuse-package ’temp) <em>→</em> T</p>
+<p>(find-symbol &quot;SHOES&quot;) <em>→</em> NIL, NIL</p>
+<p><strong>Side Effects:</strong></p>
+<p>The <em>use list</em> of <em>package</em> is modified.</p>
+<p><strong>Affected By:</strong></p>
+<p>Current state of the package system.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>use-package</strong>, <strong>package-use-list</strong></p>
+<p>Packages <strong>11–27</strong></p>
+<p><strong>use-package</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>use-package</strong> <em>packages-to-use</em> &amp;optional <em>package →</em> <strong>t</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>packages-to-use</em>—a <em>designator</em> for a <em>list</em> of <em>package designators</em>. The KEYWORD <em>package</em> may not be supplied.</p>
+<p><em>package</em>—a <em>package designator</em> . The default is the <em>current package</em>. The <em>package</em> cannot be the KEYWORD <em>package</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>use-package</strong> causes <em>package</em> to inherit all the <em>external symbols</em> of <em>packages-to-use</em>. The inherited <em>symbols</em> become <em>accessible</em> as <em>internal symbols</em> of <em>package</em>.</p>
+<p><em>Packages-to-use</em> are added to the <em>use list</em> of <em>package</em> if they are not there already. All <em>external symbols</em> in <em>packages-to-use</em> become <em>accessible</em> in <em>package</em> as <em>internal symbols</em>. <strong>use-package</strong> does not cause any new <em>symbols</em> to be <em>present</em> in <em>package</em> but only makes them <em>accessible</em> by inheritance.</p>
+<p><strong>use-package</strong> checks for name conflicts between the newly imported symbols and those already <em>accessible</em> in <em>package</em>. A name conflict in <strong>use-package</strong> between two external symbols inherited by <em>package</em> from <em>packages-to-use</em> may be resolved in favor of either <em>symbol</em> by <em>importing</em> one of them into <em>package</em> and making it a shadowing symbol.</p>
+<p><strong>Examples:</strong></p>
+<p>(export (intern &quot;LAND-FILL&quot; (make-package ’trash)) ’trash) <em>→</em> T</p>
+<p>(find-symbol &quot;LAND-FILL&quot; (make-package ’temp)) <em>→</em> NIL, NIL</p>
+<p>(package-use-list ’temp) <em>→</em> (#&lt;PACKAGE &quot;TEMP&quot;&gt;)</p>
+<p>(use-package ’trash ’temp) <em>→</em> T</p>
+<p>(package-use-list ’temp) <em>→</em> (#&lt;PACKAGE &quot;TEMP&quot;&gt; #&lt;PACKAGE &quot;TRASH&quot;&gt;)</p>
+<p>(find-symbol &quot;LAND-FILL&quot; ’temp) <em>→</em> TRASH<!-- -->:LAND-FILL<!-- -->, <!-- -->:INHERITED</p>
+<p><strong>Side Effects:</strong></p>
+<p>The <em>use list</em> of <em>package</em> may be modified.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>unuse-package</strong>, <strong>package-use-list</strong>, Section 11.1 (Package Concepts)</p>
+<p><strong>Notes:</strong></p>
+<p>It is permissible for a <em>package P</em>&lt;sub&gt;1&lt;/sub&gt; to <em>use</em> a <em>package P</em>&lt;sub&gt;2&lt;/sub&gt; even if <em>P</em>&lt;sub&gt;2&lt;/sub&gt; already uses <em>P</em>&lt;sub&gt;1&lt;/sub&gt;. The using of <em>packages</em> is not transitive, so no problem results from the apparent circularity.</p>
+<p><strong>defpackage</strong></p>
+<p><strong>defpackage</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>defpackage</strong> <em>defined-package-name</em> [[ <em>↓option</em> ]] <em>→ package</em></p>
+<p><em>option::</em>=<em>{</em>(<!-- -->:nicknames<!-- --> <em>{nickname}</em>*)<em>}</em>* <em>|</em></p>
+<p>(<!-- -->:documentation<!-- --> <em>string</em>) <em>|</em></p>
+<p><em>{</em>(<!-- -->:use<!-- --> <em>{package-name}</em>*)<em>}</em>* <em>|</em></p>
+<p><em>{</em>(<!-- -->:shadow<!-- --> <em>{↓symbol-name}</em>*)<em>}</em>* <em>|</em></p>
+<p><em>{</em>(<!-- -->:shadowing-import-from<!-- --> <em>package-name {↓symbol-name}</em>*)<em>}</em>* <em>|</em></p>
+<p><em>{</em>(<!-- -->:import-from<!-- --> <em>package-name {↓symbol-name}</em>*)<em>}</em>* <em>|</em></p>
+<p><em>{</em>(<!-- -->:export<!-- --> <em>{↓symbol-name}</em>*)<em>}</em>* <em>|</em></p>
+<p><em>{</em>(<!-- -->:intern<!-- --> <em>{↓symbol-name}</em>*)<em>}</em>* <em>|</em></p>
+<p>(<!-- -->:size<!-- --> <em>integer</em> )</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>defined-package-name</em>—a <em>string designator</em> .</p>
+<p><em>package-name</em>—a <em>package designator</em> .</p>
+<p><em>nickname</em>—a <em>string designator</em> .</p>
+<p><em>symbol-name</em>—a <em>string designator</em> .</p>
+<p><em>package</em>—the <em>package</em> named <em>package-name</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>defpackage</strong> creates a <em>package</em> as specified and returns the <em>package</em>.</p>
+<p>If <em>defined-package-name</em> already refers to an existing <em>package</em>, the name-to-package mapping for that name is not changed. If the new definition is at variance with the current state of that <em>package</em>, the consequences are undefined; an implementation might choose to modify the existing <em>package</em> to reflect the new definition. If <em>defined-package-name</em> is a <em>symbol</em>, its <em>name</em> is used.</p>
+<p>The standard <em>options</em> are described below.</p>
+<p>:nicknames</p>
+<p>The arguments to <!-- -->:nicknames<!-- --> set the <em>package</em>’s nicknames to the supplied names.</p>
+<p>:documentation</p>
+<p>The argument to <!-- -->:documentation<!-- --> specifies a <em>documentation string</em>; it is attached as a Packages <strong>11–29</strong></p>
+<p><strong>defpackage</strong></p>
+<p><em>documentation string</em> to the <em>package</em>. At most one <!-- -->:documentation<!-- --> option can appear in a single <strong>defpackage</strong> <em>form</em>.</p>
+<p>:use</p>
+<p>The arguments to <!-- -->:use<!-- --> set the <em>packages</em> that the <em>package</em> named by <em>package-name</em> will inherit from. If <!-- -->:use<!-- --> is not supplied, it defaults to the same <em>implementation-dependent</em> value as the <!-- -->:use<!-- --> <em>argument</em> to <strong>make-package</strong>.</p>
+<p>:shadow</p>
+<p>The arguments to <!-- -->:shadow<!-- -->, <em>symbol-names</em>, name <em>symbols</em> that are to be created in the <em>package</em> being defined. These <em>symbols</em> are added to the list of shadowing <em>symbols</em> effectively as if by <strong>shadow</strong>.</p>
+<p>:shadowing-import-from</p>
+<p>The <em>symbols</em> named by the argument <em>symbol-names</em> are found (involving a lookup as if by <strong>find-symbol</strong>) in the specified <em>package-name</em>. The resulting <em>symbols</em> are <em>imported</em> into the <em>package</em> being defined, and placed on the shadowing symbols list as if by <strong>shadowing-import</strong>. In no case are <em>symbols</em> created in any <em>package</em> other than the one being defined.</p>
+<p>:import-from</p>
+<p>The <em>symbols</em> named by the argument <em>symbol-names</em> are found in the <em>package</em> named by <em>package-name</em> and they are <em>imported</em> into the <em>package</em> being defined. In no case are <em>symbols</em> created in any <em>package</em> other than the one being defined.</p>
+<p>:export</p>
+<p>The <em>symbols</em> named by the argument <em>symbol-names</em> are found or created in the <em>package</em> being defined and <em>exported</em>. The <!-- -->:export<!-- --> option interacts with the <!-- -->:use<!-- --> option, since inherited <em>symbols</em> can be used rather than new ones created. The <!-- -->:export<!-- --> option interacts with the <!-- -->:import-from<!-- --> and <!-- -->:shadowing-import-from<!-- --> options, since <em>imported</em> symbols can be used rather than new ones created. If an argument to the <!-- -->:export<!-- --> option is <em>accessible</em> as an (inherited) <em>internal symbol</em> via <strong>use-package</strong>, that the <em>symbol</em> named by <em>symbol-name</em> is first <em>imported</em> into the <em>package</em> being defined, and is then <em>exported</em> from that <em>package</em>.</p>
+<p>:intern</p>
+<p>The <em>symbols</em> named by the argument <em>symbol-names</em> are found or created in the <em>package</em> being defined. The <!-- -->:intern<!-- --> option interacts with the <!-- -->:use<!-- --> option, since inherited <em>symbols</em> can be used rather than new ones created.</p>
+<p>:size</p>
+<p>The argument to the <!-- -->:size<!-- --> option declares the approximate number of <em>symbols</em> expected in the <em>package</em>. This is an efficiency hint only and might be ignored by an implementation.</p>
+<p><strong>defpackage</strong></p>
+<p>The order in which the options appear in a <strong>defpackage</strong> form is irrelevant. The order in which they are executed is as follows:</p>
+<p>1. <!-- -->:shadow<!-- --> and <!-- -->:shadowing-import-from<!-- -->.</p>
+<p>2. <!-- -->:use<!-- -->.</p>
+<p>3. <!-- -->:import-from<!-- --> and <!-- -->:intern<!-- -->.</p>
+<p>4. <!-- -->:export<!-- -->.</p>
+<p>Shadows are established first, since they might be necessary to block spurious name conflicts when the <!-- -->:use<!-- --> option is processed. The <!-- -->:use<!-- --> option is executed next so that <!-- -->:intern<!-- --> and <!-- -->:export<!-- --> options can refer to normally inherited <em>symbols</em>. The <!-- -->:export<!-- --> option is executed last so that it can refer to <em>symbols</em> created by any of the other options; in particular, <em>shadowing symbols</em> and <em>imported symbols</em> can be made external.</p>
+<p>If a defpackage <em>form</em> appears as a <em>top level form</em>, all of the actions normally performed by this <em>macro</em> at load time must also be performed at compile time.</p>
+<p><strong>Examples:</strong></p>
+<p>(defpackage &quot;MY-PACKAGE&quot;</p>
+<p>(<!-- -->:nicknames<!-- --> &quot;MYPKG&quot; &quot;MY-PKG&quot;)</p>
+<p>(<!-- -->:use<!-- --> &quot;COMMON-LISP&quot;)</p>
+<p>(<!-- -->:shadow<!-- --> &quot;CAR&quot; &quot;CDR&quot;)</p>
+<p>(<!-- -->:shadowing-import-from<!-- --> &quot;VENDOR-COMMON-LISP&quot; &quot;CONS&quot;)</p>
+<p>(<!-- -->:import-from<!-- --> &quot;VENDOR-COMMON-LISP&quot; &quot;GC&quot;)</p>
+<p>(<!-- -->:export<!-- --> &quot;EQ&quot; &quot;CONS&quot; &quot;FROBOLA&quot;)</p>
+<p>)</p>
+<p>(defpackage my-package</p>
+<p>(<!-- -->:nicknames<!-- --> mypkg <!-- -->:MY-PKG<!-- -->) ; remember Common Lisp conventions for case</p>
+<p>(<!-- -->:use<!-- --> common-lisp) ; conversion on symbols</p>
+<p>(<!-- -->:shadow<!-- --> CAR <!-- -->:cdr<!-- --> #<!-- -->:cons<!-- -->)</p>
+<p>(<!-- -->:export<!-- --> &quot;CONS&quot;) ; this is the shadowed one.</p>
+<p>)</p>
+<p><strong>Affected By:</strong></p>
+<p>Existing <em>packages</em>.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>If one of the supplied <!-- -->:nicknames<!-- --> already refers to an existing <em>package</em>, an error of <em>type</em> <strong>package-error</strong> is signaled.</p>
+<p>An error of <em>type</em> <strong>program-error</strong> should be signaled if <!-- -->:size<!-- --> or <!-- -->:documentation<!-- --> appears more than once.</p>
+<p>Packages <strong>11–31</strong></p>
+<p><strong>defpackage</strong></p>
+<p>Since <em>implementations</em> might allow extended <em>options</em> an error of <em>type</em> <strong>program-error</strong> should be signaled if an <em>option</em> is present that is not actually supported in the host <em>implementation</em>.</p>
+<p>The collection of <em>symbol-name</em> arguments given to the options <!-- -->:shadow<!-- -->, <!-- -->:intern<!-- -->, <!-- -->:import-from<!-- -->, and <!-- -->:shadowing-import-from<!-- --> must all be disjoint; additionally, the <em>symbol-name</em> arguments given to <!-- -->:export<!-- --> and <!-- -->:intern<!-- --> must be disjoint. Disjoint in this context is defined as no two of the <em>symbol-names</em> being <strong>string=</strong> with each other. If either condition is violated, an error of <em>type</em> <strong>program-error</strong> should be signaled.</p>
+<p>For the <!-- -->:shadowing-import-from<!-- --> and <!-- -->:import-from<!-- --> options, a <em>correctable error</em> of <em>type</em> <strong>package-error</strong> is signaled if no <em>symbol</em> is <em>accessible</em> in the <em>package</em> named by <em>package-name</em> for one of the argument <em>symbol-names</em>.</p>
+<p>Name conflict errors are handled by the underlying calls to <strong>make-package</strong>, <strong>use-package</strong>, <strong>import</strong>, and <strong>export</strong>. See Section 11.1 (Package Concepts).</p>
+<p><strong>See Also:</strong></p>
+<p><strong>documentation</strong>, Section 11.1 (Package Concepts), Section 3.2 (Compilation)</p>
+<p><strong>Notes:</strong></p>
+<p>The <!-- -->:intern<!-- --> option is useful if an <!-- -->:import-from<!-- --> or a <!-- -->:shadowing-import-from<!-- --> option in a subsequent call to <strong>defpackage</strong> (for some other <em>package</em>) expects to find these <em>symbols accessible</em> but not necessarily external.</p>
+<p>It is recommended that the entire <em>package</em> definition is put in a single place, and that all the <em>package</em> definitions of a program are in a single file. This file can be <em>loaded</em> before <em>loading</em> or compiling anything else that depends on those <em>packages</em>. Such a file can be read in the COMMON-LISP-USER <em>package</em>, avoiding any initial state issues.</p>
+<p><strong>defpackage</strong> cannot be used to create two “mutually recursive” packages, such as:</p>
+<p>(defpackage my-package</p>
+<p>(<!-- -->:use<!-- --> common-lisp your-package) ;requires your-package to exist first</p>
+<p>(<!-- -->:export<!-- --> &quot;MY-FUN&quot;))</p>
+<p>(defpackage your-package</p>
+<p>(<!-- -->:use<!-- --> common-lisp)</p>
+<p>(<!-- -->:import-from<!-- --> my-package &quot;MY-FUN&quot;) ;requires my-package to exist first</p>
+<p>(<!-- -->:export<!-- --> &quot;MY-FUN&quot;))</p>
+<p>However, nothing prevents the user from using the <em>package</em>-affecting functions such as <strong>use-package</strong>, <strong>import</strong>, and <strong>export</strong> to establish such links after a more standard use of <strong>defpackage</strong>.</p>
+<p>The macroexpansion of <strong>defpackage</strong> could usefully canonicalize the names into <em>strings</em>, so that even if a source file has random <em>symbols</em> in the <strong>defpackage</strong> form, the compiled file would only contain <em>strings</em>.</p>
+<p>Frequently additional <em>implementation-dependent</em> options take the form of a <em>keyword</em> standing by itself as an abbreviation for a list (keyword T); this syntax should be properly reported as an</p>
+<p>unrecognized option in implementations that do not support it.</p>
+<p><strong>do-symbols, do-external-symbols, do-all-symbols</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>do-symbols</strong> (<em>var</em> [<em>package</em> [<em>result-form</em>]])</p>
+<p><em>{declaration}</em>* <em>{tag | statement}</em>*</p>
+<p><em>→ {result}</em>*</p>
+<p><strong>do-external-symbols</strong> (<em>var</em> [<em>package</em> [<em>result-form</em>]])</p>
+<p><em>{declaration}</em>* <em>{tag | statement}</em>*</p>
+<p><em>→ {result}</em>*</p>
+<p><strong>do-all-symbols</strong> (<em>var</em> [<em>result-form</em>])</p>
+<p><em>{declaration}</em>* <em>{tag | statement}</em>*</p>
+<p><em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>var</em>—a <em>variable name</em>; not evaluated.</p>
+<p><em>package</em>—a <em>package designator</em> ; evaluated. The default in <strong>do-symbols</strong> and <strong>do-external-symbols</strong> is the <em>current package</em>.</p>
+<p><em>result-form</em>—a <em>form</em>; evaluated as described below. The default is <strong>nil</strong>.</p>
+<p><em>declaration</em>—a <strong>declare</strong> <em>expression</em>; not evaluated.</p>
+<p><em>tag</em>—a <em>go tag</em>; not evaluated.</p>
+<p><em>statement</em>—a <em>compound form</em>; evaluated as described below.</p>
+<p><em>results</em>—the <em>values</em> returned by the <em>result-form</em> if a <em>normal return</em> occurs, or else, if an <em>explicit return</em> occurs, the <em>values</em> that were transferred.</p>
+<p><strong>Description:</strong></p>
+<p><strong>do-symbols</strong>, <strong>do-external-symbols</strong>, and <strong>do-all-symbols</strong> iterate over the <em>symbols</em> of <em>packages</em>. For each <em>symbol</em> in the set of <em>packages</em> chosen, the <em>var</em> is bound to the <em>symbol</em>, and the <em>statements</em> in the body are executed. When all the <em>symbols</em> have been processed, <em>result-form</em> is evaluated and returned as the value of the macro.</p>
+<p>Packages <strong>11–33</strong></p>
+<p><strong>do-symbols, do-external-symbols, do-all-symbols</strong></p>
+<p><strong>do-symbols</strong> iterates over the <em>symbols accessible</em> in <em>package</em>. <em>Statements</em> may execute more than once for <em>symbols</em> that are inherited from multiple <em>packages</em>.</p>
+<p><strong>do-all-symbols</strong> iterates on every <em>registered package</em>. <strong>do-all-symbols</strong> will not process every <em>symbol</em> whatsoever, because a <em>symbol</em> not <em>accessible</em> in any <em>registered package</em> will not be processed. <strong>do-all-symbols</strong> may cause a <em>symbol</em> that is <em>present</em> in several <em>packages</em> to be processed more than once.</p>
+<p><strong>do-external-symbols</strong> iterates on the external symbols of <em>package</em>.</p>
+<p>When <em>result-form</em> is evaluated, <em>var</em> is bound and has the value <strong>nil</strong>.</p>
+<p>An <em>implicit block</em> named <strong>nil</strong> surrounds the entire <strong>do-symbols</strong>, <strong>do-external-symbols</strong>, or <strong>do-all-symbols</strong> <em>form</em>. <strong>return</strong> or <strong>return-from</strong> may be used to terminate the iteration prematurely.</p>
+<p>If execution of the body affects which <em>symbols</em> are contained in the set of <em>packages</em> over which iteration is occurring, other than to remove the <em>symbol</em> currently the value of <em>var</em> by using <strong>unintern</strong>, the consequences are undefined.</p>
+<p>For each of these macros, the <em>scope</em> of the name binding does not include any initial value form, but the optional result forms are included.</p>
+<p>Any <em>tag</em> in the body is treated as with <strong>tagbody</strong>.</p>
+<p><strong>Examples:</strong></p>
+<p>(make-package ’temp <!-- -->:use<!-- --> nil) <em>→</em> #&lt;PACKAGE &quot;TEMP&quot;&gt;</p>
+<p>(intern &quot;SHY&quot; ’temp) <em>→</em> TEMP::SHY, NIL ;SHY will be an internal symbol</p>
+<p>;in the package TEMP</p>
+<p>(export (intern &quot;BOLD&quot; ’temp) ’temp) <em>→</em> T ;BOLD will be external</p>
+<p>(let ((lst ()))</p>
+<p>(do-symbols (s (find-package ’temp)) (push s lst))</p>
+<p>lst)</p>
+<p><em>→</em> (TEMP::SHY TEMP<!-- -->:BOLD<!-- -->)</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (TEMP<!-- -->:BOLD<!-- --> TEMP::SHY)</p>
+<p>(let ((lst ()))</p>
+<p>(do-external-symbols (s (find-package ’temp) lst) (push s lst))</p>
+<p>lst)</p>
+<p><em>→</em> (TEMP<!-- -->:BOLD<!-- -->)</p>
+<p>(let ((lst ()))</p>
+<p>(do-all-symbols (s lst)</p>
+<p>(when (eq (find-package ’temp) (symbol-package s)) (push s lst)))</p>
+<p>lst)</p>
+<p><em>→</em> (TEMP::SHY TEMP<!-- -->:BOLD<!-- -->)</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (TEMP<!-- -->:BOLD<!-- --> TEMP::SHY)</p>
+<p><strong>See Also:</strong></p>
+<p><strong>intern</strong>, <strong>export</strong>, Section 3.6 (Traversal Rules and Side Effects)</p>
+<p><strong>intern</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>intern</strong> <em>string</em> &amp;optional <em>package → symbol, status</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>string</em>—a <em>string</em>.</p>
+<p><em>package</em>—a <em>package designator</em> . The default is the <em>current package</em>.</p>
+<p><em>symbol</em>—a <em>symbol</em>.</p>
+<p><em>status</em>—one of <!-- -->:inherited<!-- -->, <!-- -->:external<!-- -->, <!-- -->:internal<!-- -->, or <strong>nil</strong>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>intern</strong> enters a <em>symbol</em> named <em>string</em> into <em>package</em>. If a <em>symbol</em> whose name is the same as <em>string</em> is already <em>accessible</em> in <em>package</em>, it is returned. If no such <em>symbol</em> is <em>accessible</em> in <em>package</em>, a new <em>symbol</em> with the given name is created and entered into <em>package</em> as an <em>internal symbol</em>, or as an <em>external symbol</em> if the <em>package</em> is the KEYWORD <em>package</em>; <em>package</em> becomes the <em>home package</em> of the created <em>symbol</em>.</p>
+<p>The first value returned by <strong>intern</strong>, <em>symbol</em>, is the <em>symbol</em> that was found or created. The meaning of the <em>secondary value</em>, <em>status</em>, is as follows:</p>
+<p>:internal</p>
+<p>The <em>symbol</em> was found and is <em>present</em> in <em>package</em> as an <em>internal symbol</em>.</p>
+<p>:external</p>
+<p>The <em>symbol</em> was found and is <em>present</em> as an <em>external symbol</em>.</p>
+<p>:inherited</p>
+<p>The <em>symbol</em> was found and is inherited via <strong>use-package</strong> (which implies that the <em>symbol</em> is internal).</p>
+<p><strong>nil</strong></p>
+<p>No pre-existing <em>symbol</em> was found, so one was created.</p>
+<p>Packages <strong>11–35</strong></p>
+<p>It is <em>implementation-dependent</em> whether the <em>string</em> that becomes the new <em>symbol</em>’s <em>name</em> is the given <em>string</em> or a copy of it. Once a <em>string</em> has been given as the <em>string argument</em> to <em>intern</em> in this situation where a new <em>symbol</em> is created, the consequences are undefined if a subsequent attempt is made to alter that <em>string</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(in-package &quot;COMMON-LISP-USER&quot;) <em>→</em> #&lt;PACKAGE &quot;COMMON-LISP-USER&quot;&gt;</p>
+<p>(intern &quot;Never-Before&quot;) <em>→</em> |Never-Before|, NIL</p>
+<p>(intern &quot;Never-Before&quot;) <em>→</em> |Never-Before|, <!-- -->:INTERNAL</p>
+<p>(intern &quot;NEVER-BEFORE&quot; &quot;KEYWORD&quot;) <em>→</em> <!-- -->:NEVER-BEFORE<!-- -->, NIL</p>
+<p>(intern &quot;NEVER-BEFORE&quot; &quot;KEYWORD&quot;) <em>→</em> <!-- -->:NEVER-BEFORE<!-- -->, <!-- -->:EXTERNAL</p>
+<p><strong>See Also:</strong></p>
+<p><strong>find-symbol</strong>, <strong>read</strong>, <strong>symbol</strong>, <strong>unintern</strong>, Section 2.3.4 (Symbols as Tokens)</p>
+<p><strong>Notes:</strong></p>
+<p><strong>intern</strong> does not need to do any name conflict checking because it never creates a new <em>symbol</em> if there is already an <em>accessible symbol</em> with the name given.</p>
+<p><strong>package-name</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>package-name</strong> <em>package → name</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>package</em>—a <em>package designator</em> .</p>
+<p><em>name</em>—a <em>string</em> or <strong>nil</strong>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>package-name</strong> returns the <em>string</em> that names <em>package</em>, or <strong>nil</strong> if the <em>package designator</em> is a <em>package object</em> that has no name (see the <em>function</em> <strong>delete-package</strong>).</p>
+<p><strong>Examples:</strong></p>
+<p>(in-package &quot;COMMON-LISP-USER&quot;) <em>→</em> #&lt;PACKAGE &quot;COMMON-LISP-USER&quot;&gt;</p>
+<p>(package-name *package*) <em>→</em> &quot;COMMON-LISP-USER&quot;</p>
+<p>(package-name (symbol-package <!-- -->:test<!-- -->)) <em>→</em> &quot;KEYWORD&quot;</p>
+<p>(package-name (find-package ’common-lisp)) <em>→</em> &quot;COMMON-LISP&quot;</p>
+<p>(defvar *foo-package* (make-package &quot;FOO&quot;))</p>
+<p>(rename-package &quot;FOO&quot; &quot;FOO0&quot;)</p>
+<p>(package-name *foo-package*) <em>→</em> &quot;FOO0&quot;</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>package</em> is not a <em>package designator</em> .</p>
+<p><strong>package-nicknames</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>package-nicknames</strong> <em>package → nicknames</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>package</em>—a <em>package designator</em> .</p>
+<p><em>nicknames</em>—a <em>list</em> of <em>strings</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns the <em>list</em> of nickname <em>strings</em> for <em>package</em>, not including the name of <em>package</em>. <strong>Examples:</strong></p>
+<p>(package-nicknames (make-package ’temporary</p>
+<p>:nicknames<!-- --> ’(&quot;TEMP&quot; &quot;temp&quot;)))</p>
+<p><em>→</em> (&quot;temp&quot; &quot;TEMP&quot;)</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>package</em> is not a <em>package designator</em> .</p>
+<p>Packages <strong>11–37</strong></p>
+<p><strong>package-shadowing-symbols</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>package-shadowing-symbols</strong> <em>package → symbols</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>package</em>—a <em>package designator</em> .</p>
+<p><em>symbols</em>—a <em>list</em> of <em>symbols</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns a <em>list</em> of <em>symbols</em> that have been declared as <em>shadowing symbols</em> in <em>package</em> by <strong>shadow</strong> or <strong>shadowing-import</strong> (or the equivalent <strong>defpackage</strong> options). All <em>symbols</em> on this <em>list</em> are <em>present</em> in <em>package</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(package-shadowing-symbols (make-package ’temp)) <em>→</em> ()</p>
+<p>(shadow ’cdr ’temp) <em>→</em> T</p>
+<p>(package-shadowing-symbols ’temp) <em>→</em> (TEMP::CDR)</p>
+<p>(intern &quot;PILL&quot; ’temp) <em>→</em> TEMP::PILL, NIL</p>
+<p>(shadowing-import ’pill ’temp) <em>→</em> T</p>
+<p>(package-shadowing-symbols ’temp) <em>→</em> (PILL TEMP::CDR)</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>package</em> is not a <em>package designator</em> .</p>
+<p><strong>See Also:</strong></p>
+<p><strong>shadow</strong>, <strong>shadowing-import</strong></p>
+<p><strong>Notes:</strong></p>
+<p>Whether the list of <em>symbols</em> is <em>fresh</em> is <em>implementation-dependent</em>.</p>
+<p><strong>package-use-list</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>package-use-list</strong> <em>package → use-list</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>package</em>—a <em>package designator</em> .</p>
+<p><em>use-list</em>—a <em>list</em> of <em>package objects</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns a <em>list</em> of other <em>packages</em> used by <em>package</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(package-use-list (make-package ’temp)) <em>→</em> (#&lt;PACKAGE &quot;COMMON-LISP&quot;&gt;)</p>
+<p>(use-package ’common-lisp-user ’temp) <em>→</em> T</p>
+<p>(package-use-list ’temp) <em>→</em> (#&lt;PACKAGE &quot;COMMON-LISP&quot;&gt; #&lt;PACKAGE &quot;COMMON-LISP-USER&quot;&gt;)</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>package</em> is not a <em>package designator</em> .</p>
+<p><strong>See Also:</strong></p>
+<p><strong>use-package</strong>, <strong>unuse-package</strong></p>
+<p><strong>package-used-by-list</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>package-used-by-list</strong> <em>package → used-by-list</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>package</em>—a <em>package designator</em> .</p>
+<p><em>used-by-list</em>—a <em>list</em> of <em>package objects</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>package-used-by-list</strong> returns a <em>list</em> of other <em>packages</em> that use <em>package</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(package-used-by-list (make-package ’temp)) <em>→</em> ()</p>
+<p>(make-package ’trash <!-- -->:use<!-- --> ’(temp)) <em>→</em> #&lt;PACKAGE &quot;TRASH&quot;&gt;</p>
+<p>(package-used-by-list ’temp) <em>→</em> (#&lt;PACKAGE &quot;TRASH&quot;&gt;)</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>package</em> is not a <em>package</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>use-package</strong>, <strong>unuse-package</strong></p>
+<p>Packages <strong>11–39</strong></p>
+<p><strong>packagep</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>packagep</strong> <em>object → generalized-boolean</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>object</em>—an <em>object</em>.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns <em>true</em> if <em>object</em> is of <em>type</em> <strong>package</strong>; otherwise, returns <em>false</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(packagep *package*) <em>→ true</em></p>
+<p>(packagep ’common-lisp) <em>→ false</em></p>
+<p>(packagep (find-package ’common-lisp)) <em>→ true</em></p>
+<p><strong>Notes:</strong></p>
+<p>(packagep <em>object</em>) <em>≡</em> (typep <em>object</em> ’package)</p>
+<p><em>∗</em><strong>package</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a <em>package object</em>.</p>
+<p><strong>Initial Value:</strong></p>
+<p>the COMMON-LISP-USER <em>package</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Whatever <em>package object</em> is currently the <em>value</em> of <strong>*package*</strong> is referred to as the <em>current package</em>. <strong>Examples:</strong></p>
+<p>(in-package &quot;COMMON-LISP-USER&quot;) <em>→</em> #&lt;PACKAGE &quot;COMMON-LISP-USER&quot;&gt;</p>
+<p>*package* <em>→</em> #&lt;PACKAGE &quot;COMMON-LISP-USER&quot;&gt;</p>
+<p>(make-package &quot;SAMPLE-PACKAGE&quot; <!-- -->:use<!-- --> ’(&quot;COMMON-LISP&quot;))</p>
+<p><em>→</em> #&lt;PACKAGE &quot;SAMPLE-PACKAGE&quot;&gt;</p>
+<p>(list</p>
+<p>(symbol-package</p>
+<p>(let ((*package* (find-package ’sample-package)))</p>
+<p>(setq *some-symbol* (read-from-string &quot;just-testing&quot;))))</p>
+<p>*package*)</p>
+<p><em>→</em> (#&lt;PACKAGE &quot;SAMPLE-PACKAGE&quot;&gt; #&lt;PACKAGE &quot;COMMON-LISP-USER&quot;&gt;)</p>
+<p>(list (symbol-package (read-from-string &quot;just-testing&quot;))</p>
+<p>*package*)</p>
+<p><em>→</em> (#&lt;PACKAGE &quot;COMMON-LISP-USER&quot;&gt; #&lt;PACKAGE &quot;COMMON-LISP-USER&quot;&gt;)</p>
+<p>(eq ’foo (intern &quot;FOO&quot;)) <em>→ true</em></p>
+<p>(eq ’foo (let ((*package* (find-package ’sample-package)))</p>
+<p>(intern &quot;FOO&quot;)))</p>
+<p><em>→ false</em></p>
+<p><strong>Affected By:</strong></p>
+<p><strong>load</strong>, <strong>compile-file</strong>, <strong>in-package</strong></p>
+<p><strong>See Also:</strong></p>
+<p><strong>compile-file</strong>, <strong>in-package</strong>, <strong>load</strong>, <strong>package</strong></p>
+<p><strong>package-error</strong> <em>Condition Type</em></p>
+<p><strong>Class Precedence List:</strong></p>
+<p><strong>package-error</strong>, <strong>error</strong>, <strong>serious-condition</strong>, <strong>condition</strong>, <strong>t</strong></p>
+<p><strong>Description:</strong></p>
+<p>The <em>type</em> <strong>package-error</strong> consists of <em>error conditions</em> related to operations on <em>packages</em>. The offending <em>package</em> (or <em>package name</em>) is initialized by the <!-- -->:package<!-- --> initialization argument to <strong>make-condition</strong>, and is <em>accessed</em> by the <em>function</em> <strong>package-error-package</strong>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>package-error-package</strong>, Chapter 9 (Conditions)</p>
+<p>Packages <strong>11–41</strong></p>
+<p><strong>package-error-package</strong></p>
+<p><strong>package-error-package</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>package-error-package</strong> <em>condition → package</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>condition</em>—a <em>condition</em> of <em>type</em> <strong>package-error</strong>.</p>
+<p><em>package</em>—a <em>package designator</em> .</p>
+<p><strong>Description:</strong></p>
+<p>Returns a <em>designator</em> for the offending <em>package</em> in the <em>situation</em> represented by the <em>condition</em>. <strong>Examples:</strong></p>
+<p>(package-error-package</p>
+<p>(make-condition ’package-error</p>
+<p>:package<!-- --> (find-package &quot;COMMON-LISP&quot;)))</p>
+<p><em>→</em> #&lt;Package &quot;COMMON-LISP&quot;&gt;</p>
+<p><strong>See Also:</strong></p>
+<p><strong>package-error</strong></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/chap-11/bb-b-package-concepts.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/cl-language-reference/docs/category/11-packages"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">11. Packages</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/cl-language-reference/docs/chap-11/intro"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">intro</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1111-introduction-to-packages" class="table-of-contents__link toc-highlight">11.1.1 Introduction to Packages</a><ul><li><a href="#11111-package-names-and-nicknames" class="table-of-contents__link toc-highlight">11.1.1.1 Package Names and Nicknames</a></li><li><a href="#11112-symbols-in-a-package" class="table-of-contents__link toc-highlight">11.1.1.2 Symbols in a Package</a></li></ul></li><li><a href="#1112-standardized-packages" class="table-of-contents__link toc-highlight">11.1.2 Standardized Packages</a><ul><li><a href="#11121-the-common" class="table-of-contents__link toc-highlight">11.1.2.1 The COMMON</a></li><li><a href="#11122-the-common" class="table-of-contents__link toc-highlight">11.1.2.2 The COMMON</a></li><li><a href="#11123-the-keyword-package" class="table-of-contents__link toc-highlight">11.1.2.3 The KEYWORD Package</a></li><li><a href="#11124-implementation" class="table-of-contents__link toc-highlight">11.1.2.4 Implementation</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/docs/intro">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

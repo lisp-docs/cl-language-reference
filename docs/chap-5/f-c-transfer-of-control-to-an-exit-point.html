@@ -1,0 +1,1775 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-chap-5/f-c-transfer-of-control-to-an-exit-point" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.0">
+<title data-rh="true">5.2 Transfer of Control to an Exit Point | Common Lisp (New) Language Reference</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://lisp-docs.github.io/cl-language-reference/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://lisp-docs.github.io/cl-language-reference/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://lisp-docs.github.io/cl-language-reference/docs/chap-5/f-c-transfer-of-control-to-an-exit-point"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="5.2 Transfer of Control to an Exit Point | Common Lisp (New) Language Reference"><link data-rh="true" rel="icon" href="/cl-language-reference/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-5/f-c-transfer-of-control-to-an-exit-point"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-5/f-c-transfer-of-control-to-an-exit-point" hreflang="en"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-5/f-c-transfer-of-control-to-an-exit-point" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/cl-language-reference/blog/rss.xml" title="Common Lisp (New) Language Reference RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/cl-language-reference/blog/atom.xml" title="Common Lisp (New) Language Reference Atom Feed"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.d3a7613c.css">
+<script src="/cl-language-reference/assets/js/runtime~main.a7e86bbf.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/main.89f4b5c9.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/cl-language-reference/"><div class="navbar__logo"><img src="/cl-language-reference/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/cl-language-reference/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">My Site</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/cl-language-reference/docs/intro">Tutorial</a><a class="navbar__item navbar__link" href="/cl-language-reference/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/intro">Tutorial Intro</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/tutorial---basics">Tutorial - Basics</a><button aria-label="Expand sidebar category &#x27;Tutorial - Basics&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/tutorial---extras">Tutorial - Extras</a><button aria-label="Expand sidebar category &#x27;Tutorial - Extras&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/chapter-3">Chapter 3</a><button aria-label="Expand sidebar category &#x27;Chapter 3&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/nil">NIL</a><button aria-label="Expand sidebar category &#x27;NIL&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/1-introduction">1. Introduction</a><button aria-label="Expand sidebar category &#x27;1. Introduction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/10-symbols">10. Symbols</a><button aria-label="Expand sidebar category &#x27;10. Symbols&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/11-packages">11. Packages</a><button aria-label="Expand sidebar category &#x27;11. Packages&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/12-numbers">12. Numbers</a><button aria-label="Expand sidebar category &#x27;12. Numbers&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/13-characters">13. Characters</a><button aria-label="Expand sidebar category &#x27;13. Characters&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/14-conses">14. Conses</a><button aria-label="Expand sidebar category &#x27;14. Conses&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/15-arrays">15. Arrays</a><button aria-label="Expand sidebar category &#x27;15. Arrays&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/16-strings">16. Strings</a><button aria-label="Expand sidebar category &#x27;16. Strings&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/17-sequences">17. Sequences</a><button aria-label="Expand sidebar category &#x27;17. Sequences&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/18-hash-tables">18. Hash Tables</a><button aria-label="Expand sidebar category &#x27;18. Hash Tables&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/19-filenames">19. Filenames</a><button aria-label="Expand sidebar category &#x27;19. Filenames&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/2-syntax">2. Syntax</a><button aria-label="Expand sidebar category &#x27;2. Syntax&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap-2">chap-2</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/20-files">20. Files</a><button aria-label="Expand sidebar category &#x27;20. Files&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/21-streams">21. Streams</a><button aria-label="Expand sidebar category &#x27;21. Streams&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/22-printer">22. Printer</a><button aria-label="Expand sidebar category &#x27;22. Printer&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/23-reader">23. Reader</a><button aria-label="Expand sidebar category &#x27;23. Reader&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/24-system-construction">24. System Construction</a><button aria-label="Expand sidebar category &#x27;24. System Construction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/25-environment">25. Environment</a><button aria-label="Expand sidebar category &#x27;25. Environment&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/26-glossary">26. Glossary</a><button aria-label="Expand sidebar category &#x27;26. Glossary&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/3-evaluation-and-compilation">3. Evaluation and Compilation</a><button aria-label="Expand sidebar category &#x27;3. Evaluation and Compilation&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap-3">chap-3</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/4-types-and-classes">4. Types and Classes</a><button aria-label="Expand sidebar category &#x27;4. Types and Classes&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/cl-language-reference/docs/category/5-data-and-control-flow">5. Data and Control Flow</a><button aria-label="Collapse sidebar category &#x27;5. Data and Control Flow&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cl-language-reference/docs/chap-5/f-b-generalized-reference">5.1 Generalized Reference</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/cl-language-reference/docs/chap-5/f-c-transfer-of-control-to-an-exit-point">5.2 Transfer of Control to an Exit Point</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cl-language-reference/docs/chap-5/intro">intro</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/6-iteration">6. Iteration</a><button aria-label="Expand sidebar category &#x27;6. Iteration&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/7-objects">7. Objects</a><button aria-label="Expand sidebar category &#x27;7. Objects&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/8-structures">8. Structures</a><button aria-label="Expand sidebar category &#x27;8. Structures&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/9-conditions">9. Conditions</a><button aria-label="Expand sidebar category &#x27;9. Conditions&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/a-appendix">A. Appendix</a><button aria-label="Expand sidebar category &#x27;A. Appendix&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/chap2">chap2</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/cl-language-reference/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/cl-language-reference/docs/category/5-data-and-control-flow"><span itemprop="name">5. Data and Control Flow</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">5.2 Transfer of Control to an Exit Point</span><meta itemprop="position" content="2"></li></ul></nav><div class="theme-doc-markdown markdown"><h1>5.2 Transfer of Control to an Exit Point</h1>
+<!-- -->
+<!-- -->
+<p><strong>5.2 Transfer of Control to an Exit Point</strong></p>
+<p>When a transfer of control is initiated by <strong>go</strong>, <strong>return-from</strong>, or <strong>throw</strong> the following events occur in order to accomplish the transfer of control. Note that for <strong>go</strong>, the <em>exit point</em> is the <em>form</em> within the <strong>tagbody</strong> that is being executed at the time the <strong>go</strong> is performed; for <strong>return-from</strong>, the <em>exit point</em> is the corresponding <strong>block</strong> <em>form</em>; and for <strong>throw</strong>, the <em>exit point</em> is the corresponding <strong>catch</strong> <em>form</em>.</p>
+<p>1. Intervening <em>exit points</em> are “abandoned” (<em>i.e.</em>, their <em>extent</em> ends and it is no longer valid to attempt to transfer control through them).</p>
+<p>2. The cleanup clauses of any intervening <strong>unwind-protect</strong> clauses are evaluated.</p>
+<p>3. Intervening dynamic <em>bindings</em> of <strong>special</strong> variables, <em>catch tags</em>, <em>condition handlers</em>, and <em>restarts</em> are undone.</p>
+<p>4. The <em>extent</em> of the <em>exit point</em> being invoked ends, and control is passed to the target.</p>
+<p>The extent of an exit being “abandoned” because it is being passed over ends as soon as the transfer of control is initiated. That is, event 1 occurs at the beginning of the initiation of the transfer of control. The consequences are undefined if an attempt is made to transfer control to an <em>exit point</em> whose <em>dynamic extent</em> has ended.</p>
+<p>Events 2 and 3 are actually performed interleaved, in the order corresponding to the reverse order in which they were established. The effect of this is that the cleanup clauses of an <strong>unwind-protect</strong> see the same dynamic <em>bindings</em> of variables and <em>catch tags</em> as were visible when the <strong>unwind-protect</strong> was entered.</p>
+<p>Event 4 occurs at the end of the transfer of control.</p>
+<p>Data and Control Flow <strong>5–13</strong></p>
+<p><strong>apply</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>apply</strong> <em>function</em> &amp;rest <em>args</em>&lt;sup&gt;+&lt;/sup&gt; <em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>function</em>—a <em>function designator</em> .</p>
+<p><em>args</em>—a <em>spreadable argument list designator</em> .</p>
+<p><em>results</em>—the <em>values</em> returned by <em>function</em>.</p>
+<p><strong>Description:</strong></p>
+<p><em>Applies</em> the <em>function</em> to the <em>args</em>.</p>
+<p>When the <em>function</em> receives its arguments via <strong>&amp;rest</strong>, it is permissible (but not required) for the <em>implementation</em> to <em>bind</em> the <em>rest parameter</em> to an <em>object</em> that shares structure with the last argument to <strong>apply</strong>. Because a <em>function</em> can neither detect whether it was called via <strong>apply</strong> nor whether (if so) the last argument to <strong>apply</strong> was a <em>constant</em>, <em>conforming programs</em> must neither rely on the <em>list</em> structure of a <em>rest list</em> to be freshly consed, nor modify that <em>list</em> structure.</p>
+<p><strong>setf</strong> can be used with <strong>apply</strong> in certain circumstances; see Section 5.1.2.5 (APPLY Forms as Places). <strong>Examples:</strong></p>
+<p>(setq f ’+) <em>→</em> +</p>
+<p>(apply f ’(1 2)) <em>→</em> 3</p>
+<p>(setq f #’-) <em>→</em> #&lt;FUNCTION -&gt;</p>
+<p>(apply f ’(1 2)) <em>→</em> -1</p>
+<p>(apply #’max 3 5 ’(2 7 3)) <em>→</em> 7</p>
+<p>(apply ’cons ’((+ 2 3) 4)) <em>→</em> ((+ 2 3) . 4)</p>
+<p>(apply #’+ ’()) <em>→</em> 0</p>
+<p>(defparameter *some-list* ’(a b c))</p>
+<p>(defun strange-test (&amp;rest x) (eq x *some-list*))</p>
+<p>(apply #’strange-test *some-list*) <em>→ implementation-dependent</em></p>
+<p>(defun bad-boy (&amp;rest x) (rplacd x ’y))</p>
+<p>(bad-boy ’a ’b ’c) has undefined consequences.</p>
+<p>(apply #’bad-boy *some-list*) has undefined consequences.</p>
+<p>(defun foo (size &amp;rest keys &amp;key double &amp;allow-other-keys)</p>
+<p>(let ((v (apply #’make-array size <!-- -->:allow-other-keys<!-- --> t keys)))</p>
+<p>(if double (concatenate (type-of v) v v) v)))</p>
+<p>(foo 4 <!-- -->:initial-contents<!-- --> ’(a b c d) <!-- -->:double<!-- --> t)</p>
+<p><em>→</em> #(A B C D A B C D)</p>
+<p><strong>See Also:</strong></p>
+<p><strong>funcall</strong>, <strong>fdefinition</strong>, <strong>function</strong>, Section 3.1 (Evaluation), Section 5.1.2.5 (APPLY Forms as Places) <strong>defun</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>defun</strong> <em>function-name lambda-list</em> [[ <em>{declaration}</em>* <em>| documentation</em> ]] <em>{form}</em>*</p>
+<p><em>→ function-name</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>function-name</em>—a <em>function name</em>.</p>
+<p><em>lambda-list</em>—an <em>ordinary lambda list</em>.</p>
+<p><em>declaration</em>—a <strong>declare</strong> <em>expression</em>; not evaluated.</p>
+<p><em>documentation</em>—a <em>string</em>; not evaluated.</p>
+<p><em>forms</em>—an <em>implicit progn</em>.</p>
+<p><em>block-name</em>—the <em>function block name</em> of the <em>function-name</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Defines a new <em>function</em> named <em>function-name</em> in the <em>global environment</em>. The body of the <em>function</em> defined by <strong>defun</strong> consists of <em>forms</em>; they are executed as an <em>implicit progn</em> when the <em>function</em> is called. <strong>defun</strong> can be used to define a new <em>function</em>, to install a corrected version of an incorrect definition, to redefine an already-defined <em>function</em>, or to redefine a <em>macro</em> as a <em>function</em>.</p>
+<p><strong>defun</strong> implicitly puts a <strong>block</strong> named <em>block-name</em> around the body <em>forms</em> (but not the <em>forms</em> in the <em>lambda-list</em>) of the <em>function</em> defined.</p>
+<p><em>Documentation</em> is attached as a <em>documentation string</em> to <em>name</em> (as kind <strong>function</strong>) and to the <em>function object</em>.</p>
+<p>Evaluating <strong>defun</strong> causes <em>function-name</em> to be a global name for the <em>function</em> specified by the <em>lambda expression</em></p>
+<p>(lambda <em>lambda-list</em></p>
+<p>[[ <em>{declaration}</em>* <em>| documentation</em> ]]</p>
+<p>(block <em>block-name {form}</em>*))</p>
+<p>processed in the <em>lexical environment</em> in which <strong>defun</strong> was executed.</p>
+<p>Data and Control Flow <strong>5–15</strong></p>
+<p><strong>defun</strong></p>
+<p>(None of the arguments are evaluated at macro expansion time.)</p>
+<p><strong>defun</strong> is not required to perform any compile-time side effects. In particular, <strong>defun</strong> does not make the <em>function</em> definition available at compile time. An <em>implementation</em> may choose to store information about the <em>function</em> for the purposes of compile-time error-checking (such as checking the number of arguments on calls), or to enable the <em>function</em> to be expanded inline.</p>
+<p><strong>Examples:</strong></p>
+<p>(defun recur (x)</p>
+<p>(when (&gt; x 0)</p>
+<p>(recur (1- x)))) <em>→</em> RECUR</p>
+<p>(defun ex (a b &amp;optional c (d 66) &amp;rest keys &amp;key test (start 0))</p>
+<p>(list a b c d keys test start)) <em>→</em> EX</p>
+<p>(ex 1 2) <em>→</em> (1 2 NIL 66 NIL NIL 0)</p>
+<p>(ex 1 2 3 4 <!-- -->:test<!-- --> ’equal <!-- -->:start<!-- --> 50)</p>
+<p><em>→</em> (1 2 3 4 (<!-- -->:TEST<!-- --> EQUAL <!-- -->:START<!-- --> 50) EQUAL 50)</p>
+<p>(ex <!-- -->:test<!-- --> 1 <!-- -->:start<!-- --> 2) <em>→</em> (<!-- -->:TEST<!-- --> 1 <!-- -->:START<!-- --> 2 NIL NIL 0)</p>
+<p>;; This function assumes its callers have checked the types of the</p>
+<p>;; arguments, and authorizes the compiler to build in that assumption.</p>
+<p>(defun discriminant (a b c)</p>
+<p>(declare (number a b c))</p>
+<p>&quot;Compute the discriminant for a quadratic equation.&quot;</p>
+<p>(- (* b b) (* 4 a c))) <em>→</em> DISCRIMINANT</p>
+<p>(discriminant 1 2/3 -2) <em>→</em> 76/9</p>
+<p>;; This function assumes its callers have not checked the types of the</p>
+<p>;; arguments, and performs explicit type checks before making any assumptions. (defun careful-discriminant (a b c)</p>
+<p>&quot;Compute the discriminant for a quadratic equation.&quot;</p>
+<p>(check-type a number)</p>
+<p>(check-type b number)</p>
+<p>(check-type c number)</p>
+<p>(locally (declare (number a b c))</p>
+<p>(- (* b b) (* 4 a c)))) <em>→</em> CAREFUL-DISCRIMINANT</p>
+<p>(careful-discriminant 1 2/3 -2) <em>→</em> 76/9</p>
+<p><strong>See Also:</strong></p>
+<p><strong>flet</strong>, <strong>labels</strong>, <strong>block</strong>, <strong>return-from</strong>, <strong>declare</strong>, <strong>documentation</strong>, Section 3.1 (Evaluation), Section 3.4.1 (Ordinary Lambda Lists), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations)</p>
+<p><strong>Notes:</strong></p>
+<p><strong>return-from</strong> can be used to return prematurely from a <em>function</em> defined by <strong>defun</strong>.</p>
+<p>Additional side effects might take place when additional information (typically debugging information) about the function definition is recorded.</p>
+<p><strong>fdefinition</strong> <em>Accessor</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>fdefinition</strong> <em>function-name → definition</em></p>
+<p><strong>(setf (fdefinition</strong> <em>function-name</em>**)** <em>new-definition</em>**)**</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>function-name</em>—a <em>function name</em>. In the non-<strong>setf</strong> case, the <em>name</em> must be <em>fbound</em> in the <em>global environment</em>.</p>
+<p><em>definition</em>—Current global function definition named by <em>function-name</em>.</p>
+<p><em>new-definition</em>—a <em>function</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>fdefinition</strong> <em>accesses</em> the current global function definition named by <em>function-name</em>. The definition may be a <em>function</em> or may be an <em>object</em> representing a <em>special form</em> or <em>macro</em>. The value returned by <strong>fdefinition</strong> when <strong>fboundp</strong> returns true but the <em>function-name</em> denotes a <em>macro</em> or <em>special form</em> is not well-defined, but <strong>fdefinition</strong> does not signal an error.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>function-name</em> is not a <em>function name</em>.</p>
+<p>An error of <em>type</em> <strong>undefined-function</strong> is signaled in the non-<strong>setf</strong> case if <em>function-name</em> is not <em>fbound</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>fboundp</strong>, <strong>fmakunbound</strong>, <strong>macro-function</strong>, <strong>special-operator-p</strong>, <strong>symbol-function</strong></p>
+<p><strong>Notes:</strong></p>
+<p><strong>fdefinition</strong> cannot <em>access</em> the value of a lexical function name produced by <strong>flet</strong> or <strong>labels</strong>; it can <em>access</em> only the global function value.</p>
+<p><strong>setf</strong> can be used with <strong>fdefinition</strong> to replace a global function definition when the <em>function-name</em>’s function definition does not represent a <em>special form</em>. <strong>setf</strong> of <strong>fdefinition</strong> requires a <em>function</em> as the new value. It is an error to set the <strong>fdefinition</strong> of a <em>function-name</em> to a <em>symbol</em>, a <em>list</em>, or the value returned by <strong>fdefinition</strong> on the name of a <em>macro</em> or <em>special form</em>.</p>
+<p>Data and Control Flow <strong>5–17</strong></p>
+<p><strong>fboundp</strong></p>
+<p><strong>fboundp</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>fboundp</strong> <em>name → generalized-boolean</em></p>
+<p><strong>Pronunciation:</strong></p>
+<p>[ <strong>ef ba_undp—e</strong> ]</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>name</em>—a <em>function name</em>.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns <em>true</em> if <em>name</em> is <em>fbound</em>; otherwise, returns <em>false</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(fboundp ’car) <em>→ true</em></p>
+<p>(fboundp ’nth-value) <em>→ false</em></p>
+<p>(fboundp ’with-open-file) <em>→ true</em></p>
+<p>(fboundp ’unwind-protect) <em>→ true</em></p>
+<p>(defun my-function (x) x) <em>→</em> MY-FUNCTION</p>
+<p>(fboundp ’my-function) <em>→ true</em></p>
+<p>(let ((saved-definition (symbol-function ’my-function)))</p>
+<p>(unwind-protect (progn (fmakunbound ’my-function)</p>
+<p>(fboundp ’my-function))</p>
+<p>(setf (symbol-function ’my-function) saved-definition)))</p>
+<p><em>→ false</em></p>
+<p>(fboundp ’my-function) <em>→ true</em></p>
+<p>(defmacro my-macro (x) ‘’,x) <em>→</em> MY-MACRO</p>
+<p>(fboundp ’my-macro) <em>→ true</em></p>
+<p>(fmakunbound ’my-function) <em>→</em> MY-FUNCTION</p>
+<p>(fboundp ’my-function) <em>→ false</em></p>
+<p>(flet ((my-function (x) x))</p>
+<p>(fboundp ’my-function)) <em>→ false</em></p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>name</em> is not a <em>function name</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>symbol-function</strong>, <strong>fmakunbound</strong>, <strong>fdefinition</strong></p>
+<p><strong>Notes:</strong></p>
+<p>It is permissible to call <strong>symbol-function</strong> on any <em>symbol</em> that is <em>fbound</em>.</p>
+<p><strong>fboundp</strong> is sometimes used to “guard” an access to the <em>function cell</em>, as in: (if (fboundp x) (symbol-function x))</p>
+<p>Defining a <em>setf expander F</em> does not cause the <em>setf function</em> (setf <em>F</em>) to become defined. <strong>fmakunbound</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>fmakunbound</strong> <em>name → name</em></p>
+<p><strong>Pronunciation:</strong></p>
+<p>[ <strong>ef mak</strong>* <strong>n ba_und</strong> ] or [ <strong>ef m—ak</strong>* <strong>n ba_und</strong> ]</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>name</em>—a <em>function name</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Removes the <em>function</em> or <em>macro</em> definition, if any, of <em>name</em> in the <em>global environment</em>. <strong>Examples:</strong></p>
+<p>(defun add-some (x) (+ x 19)) <em>→</em> ADD-SOME</p>
+<p>(fboundp ’add-some) <em>→ true</em></p>
+<p>(flet ((add-some (x) (+ x 37)))</p>
+<p>(fmakunbound ’add-some)</p>
+<p>(add-some 1)) <em>→</em> 38</p>
+<p>(fboundp ’add-some) <em>→ false</em></p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>name</em> is not a <em>function name</em>.</p>
+<p>The consequences are undefined if <em>name</em> is a <em>special operator</em> .</p>
+<p><strong>See Also:</strong></p>
+<p><strong>fboundp</strong>, <strong>makunbound</strong></p>
+<p>Data and Control Flow <strong>5–19</strong></p>
+<p><strong>flet, labels, macrolet</strong></p>
+<p><strong>flet, labels, macrolet</strong> <em>Special Operator</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>flet</strong> (<em>{</em>(<em>function-name lambda-list</em> [[ <em>{local-declaration}</em>* <em>| local-documentation</em> ]] <em>{local-form}</em>*)<em>}</em>*) <em>{declaration}</em>* <em>{form}</em>*</p>
+<p><em>→ {result}</em>*</p>
+<p><strong>labels</strong> (<em>{</em>(<em>function-name lambda-list</em> [[ <em>{local-declaration}</em>* <em>| local-documentation</em> ]] <em>{local-form}</em>*)<em>}</em>*) <em>{declaration}</em>* <em>{form}</em>*</p>
+<p><em>→ {result}</em>*</p>
+<p><strong>macrolet</strong> (<em>{</em>(<em>name lambda-list</em> [[ <em>{local-declaration}</em>* <em>| local-documentation</em> ]] <em>{local-form}</em>*)<em>}</em>*) <em>{declaration}</em>* <em>{form}</em>*</p>
+<p><em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>function-name</em>—a <em>function name</em>.</p>
+<p><em>name</em>—a <em>symbol</em>.</p>
+<p><em>lambda-list</em>—a <em>lambda list</em>; for <strong>flet</strong> and <strong>labels</strong>, it is an <em>ordinary lambda list</em>; for <strong>macrolet</strong>, it is a <em>macro lambda list</em>.</p>
+<p><em>local-declaration</em>—a <strong>declare</strong> <em>expression</em>; not evaluated.</p>
+<p><em>declaration</em>—a <strong>declare</strong> <em>expression</em>; not evaluated.</p>
+<p><em>local-documentation</em>—a <em>string</em>; not evaluated.</p>
+<p><em>local-forms</em>, <em>forms</em>—an <em>implicit progn</em>.</p>
+<p><em>results</em>—the <em>values</em> of the <em>forms</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>flet</strong>, <strong>labels</strong>, and <strong>macrolet</strong> define local <em>functions</em> and <em>macros</em>, and execute <em>forms</em> using the local definitions. <em>Forms</em> are executed in order of occurrence.</p>
+<p>The body forms (but not the <em>lambda list</em>) of each <em>function</em> created by <strong>flet</strong> and <strong>labels</strong> and each <em>macro</em> created by <strong>macrolet</strong> are enclosed in an <em>implicit block</em> whose name is the <em>function block name</em> of the <em>function-name</em> or <em>name</em>, as appropriate.</p>
+<p>The scope of the <em>declarations</em> between the list of local function/macro definitions and the body <em>forms</em> in <strong>flet</strong> and <strong>labels</strong> does not include the bodies of the locally defined <em>functions</em>, except that</p>
+<p><strong>flet, labels, macrolet</strong></p>
+<p>for <strong>labels</strong>, any <strong>inline</strong>, <strong>notinline</strong>, or <strong>ftype</strong> declarations that refer to the locally defined functions do apply to the local function bodies. That is, their <em>scope</em> is the same as the function name that they affect. The scope of these <em>declarations</em> does not include the bodies of the macro expander functions defined by <strong>macrolet</strong>.</p>
+<p><strong>flet</strong></p>
+<p><strong>flet</strong> defines locally named <em>functions</em> and executes a series of <em>forms</em> with these definition <em>bindings</em>. Any number of such local <em>functions</em> can be defined.</p>
+<p>The <em>scope</em> of the name <em>binding</em> encompasses only the body. Within the body of <strong>flet</strong>, <em>function-names</em> matching those defined by <strong>flet</strong> refer to the locally defined <em>functions</em> rather than to the global function definitions of the same name. Also, within the scope of <strong>flet</strong>, global <em>setf expander</em> definitions of the <em>function-name</em> defined by <strong>flet</strong> do not apply. Note that this applies to (defsetf <em>f</em> ...), not (defmethod (setf <em>f</em>) ...).</p>
+<p>The names of <em>functions</em> defined by <strong>flet</strong> are in the <em>lexical environment</em>; they retain their local definitions only within the body of <strong>flet</strong>. The function definition bindings are visible only in the body of <strong>flet</strong>, not the definitions themselves. Within the function definitions,</p>
+<p>local function names that match those being defined refer to <em>functions</em> or <em>macros</em> defined outside the <strong>flet</strong>. <strong>flet</strong> can locally <em>shadow</em> a global function name, and the new definition can refer to the global definition.</p>
+<p>Any <em>local-documentation</em> is attached to the corresponding local <em>function</em> (if one is actually created) as a <em>documentation string</em>.</p>
+<p><strong>labels</strong></p>
+<p><strong>labels</strong> is equivalent to <strong>flet</strong> except that the scope of the defined function names for <strong>labels</strong> encompasses the function definitions themselves as well as the body.</p>
+<p><strong>macrolet</strong></p>
+<p><strong>macrolet</strong> establishes local <em>macro</em> definitions, using the same format used by <strong>defmacro</strong>.</p>
+<p>Within the body of <strong>macrolet</strong>, global <em>setf expander</em> definitions of the <em>names</em> defined by the <strong>macrolet</strong> do not apply; rather, <strong>setf</strong> expands the <em>macro form</em> and recursively process the resulting <em>form</em>.</p>
+<p>The macro-expansion functions defined by <strong>macrolet</strong> are defined in the <em>lexical environment</em> in which the <strong>macrolet</strong> form appears. Declarations and <strong>macrolet</strong> and <strong>symbol-macrolet</strong> definitions affect the local macro definitions in a <strong>macrolet</strong>, but the consequences are undefined if the local macro definitions reference any local <em>variable</em> or <em>function bindings</em> that are visible in that <em>lexical environment</em>.</p>
+<p>Any <em>local-documentation</em> is attached to the corresponding local <em>macro function</em> as a <em>documentation string</em>.</p>
+<p>Data and Control Flow <strong>5–21</strong></p>
+<p><strong>flet, labels, macrolet</strong></p>
+<p><strong>Examples:</strong></p>
+<p>(defun foo (x flag)</p>
+<p>(macrolet ((fudge (z)</p>
+<p>;The parameters x and flag are not accessible</p>
+<p>; at this point; a reference to flag would be to</p>
+<p>; the global variable of that name.</p>
+<p>‘(if flag (* ,z ,z) ,z)))</p>
+<p>;The parameters x and flag are accessible here.</p>
+<p>(+ x</p>
+<p>(fudge x)</p>
+<p>(fudge (+ x 1)))))</p>
+<p><em>≡</em></p>
+<p>(defun foo (x flag)</p>
+<p>(+ x</p>
+<p>(if flag (* x x) x)</p>
+<p>(if flag (* (+ x 1) (+ x 1)) (+ x 1))))</p>
+<p>after macro expansion. The occurrences of x and flag legitimately refer to the parameters of the function foo because those parameters are visible at the site of the macro call which produced the expansion.</p>
+<p>(flet ((flet1 (n) (+ n n)))</p>
+<p>(flet ((flet1 (n) (+ 2 (flet1 n))))</p>
+<p>(flet1 2))) <em>→</em> 6</p>
+<p>(defun dummy-function () ’top-level) <em>→</em> DUMMY-FUNCTION</p>
+<p>(funcall #’dummy-function) <em>→</em> TOP-LEVEL</p>
+<p>(flet ((dummy-function () ’shadow))</p>
+<p>(funcall #’dummy-function)) <em>→</em> SHADOW</p>
+<p>(eq (funcall #’dummy-function) (funcall ’dummy-function))</p>
+<p><em>→ true</em></p>
+<p>(flet ((dummy-function () ’shadow))</p>
+<p>(eq (funcall #’dummy-function)</p>
+<p>(funcall ’dummy-function)))</p>
+<p><em>→ false</em></p>
+<p>(defun recursive-times (k n)</p>
+<p>(labels ((temp (n)</p>
+<p>(if (zerop n) 0 (+ k (temp (1- n))))))</p>
+<p>(temp n))) <em>→</em> RECURSIVE-TIMES</p>
+<p>(recursive-times 2 3) <em>→</em> 6</p>
+<p>(defmacro mlets (x &amp;environment env)</p>
+<p>(let ((form ‘(babbit ,x)))</p>
+<p>(macroexpand form env))) <em>→</em> MLETS</p>
+<p><strong>flet, labels, macrolet</strong></p>
+<p>(macrolet ((babbit (z) ‘(+ ,z ,z))) (mlets 5)) <em>→</em> 10</p>
+<p>(flet ((safesqrt (x) (sqrt (abs x))))</p>
+<p>;; The safesqrt function is used in two places.</p>
+<p>(safesqrt (apply #’+ (map ’list #’safesqrt ’(1 2 3 4 5 6)))))</p>
+<p><em>→</em> 3.291173</p>
+<p>(defun integer-power (n k)</p>
+<p>(declare (integer n))</p>
+<p>(declare (type (integer 0 *) k))</p>
+<p>(labels ((expt0 (x k a)</p>
+<p>(declare (integer x a) (type (integer 0 *) k))</p>
+<p>(cond ((zerop k) a)</p>
+<p>((evenp k) (expt1 (* x x) (floor k 2) a))</p>
+<p>(t (expt0 (* x x) (floor k 2) (* x a)))))</p>
+<p>(expt1 (x k a)</p>
+<p>(declare (integer x a) (type (integer 0 *) k))</p>
+<p>(cond ((evenp k) (expt1 (* x x) (floor k 2) a))</p>
+<p>(t (expt0 (* x x) (floor k 2) (* x a))))))</p>
+<p>(expt0 n k 1))) <em>→</em> INTEGER-POWER</p>
+<p>(defun example (y l)</p>
+<p>(flet ((attach (x)</p>
+<p>(setq l (append l (list x)))))</p>
+<p>(declare (inline attach))</p>
+<p>(dolist (x y)</p>
+<p>(unless (null (cdr x))</p>
+<p>(attach x)))</p>
+<p>l))</p>
+<p>(example ’((a apple apricot) (b banana) (c cherry) (d) (e))</p>
+<p>’((1) (2) (3) (4 2) (5) (6 3 2)))</p>
+<p><em>→</em> ((1) (2) (3) (4 2) (5) (6 3 2) (A APPLE APRICOT) (B BANANA) (C CHERRY))</p>
+<p><strong>See Also:</strong></p>
+<p><strong>declare</strong>, <strong>defmacro</strong>, <strong>defun</strong>, <strong>documentation</strong>, <strong>let</strong>, Section 3.1 (Evaluation), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations)</p>
+<p><strong>Notes:</strong></p>
+<p>It is not possible to define recursive <em>functions</em> with <strong>flet</strong>. <strong>labels</strong> can be used to define mutually recursive <em>functions</em>.</p>
+<p>If a <strong>macrolet</strong> <em>form</em> is a <em>top level form</em>, the body <em>forms</em> are also processed as <em>top level forms</em>. See Section 3.2.3 (File Compilation).</p>
+<p>Data and Control Flow <strong>5–23</strong></p>
+<p><strong>funcall</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>funcall</strong> <em>function</em> &amp;rest <em>args → {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>function</em>—a <em>function designator</em> .</p>
+<p><em>args</em>—<em>arguments</em> to the <em>function</em>.</p>
+<p><em>results</em>—the <em>values</em> returned by the <em>function</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>funcall</strong> applies <em>function</em> to <em>args</em>. If <em>function</em> is a <em>symbol</em>, it is coerced to a <em>function</em> as if by finding its <em>functional value</em> in the <em>global environment</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(funcall #’+ 1 2 3) <em>→</em> 6</p>
+<p>(funcall ’car ’(1 2 3)) <em>→</em> 1</p>
+<p>(funcall ’position 1 ’(1 2 3 2 1) <!-- -->:start<!-- --> 1) <em>→</em> 4</p>
+<p>(cons 1 2) <em>→</em> (1 . 2)</p>
+<p>(flet ((cons (x y) ‘(kons ,x ,y)))</p>
+<p>(let ((cons (symbol-function ’+)))</p>
+<p>(funcall #’cons</p>
+<p>(funcall ’cons 1 2)</p>
+<p>(funcall cons 1 2))))</p>
+<p><em>→</em> (KONS (1 . 2) 3)</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>An error of <em>type</em> <strong>undefined-function</strong> should be signaled if <em>function</em> is a <em>symbol</em> that does not have a global definition as a <em>function</em> or that has a global definition as a <em>macro</em> or a <em>special operator</em> .</p>
+<p><strong>See Also:</strong></p>
+<p><strong>apply</strong>, <strong>function</strong>, Section 3.1 (Evaluation)</p>
+<p><strong>Notes:</strong></p>
+<p>(funcall <em>function arg1 arg2</em> ...)</p>
+<p><em>≡</em> (apply <em>function arg1 arg2</em> ... nil)</p>
+<p><em>≡</em> (apply <em>function</em> (list <em>arg1 arg2</em> ...))</p>
+<p>The difference between <strong>funcall</strong> and an ordinary function call is that in the former case the <em>function</em></p>
+<p>is obtained by ordinary <em>evaluation</em> of a <em>form</em>, and in the latter case it is obtained by the special interpretation of the function position that normally occurs.</p>
+<p><strong>function</strong> <em>Special Operator</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>function</strong> <em>name → function</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>name</em>—a <em>function name</em> or <em>lambda expression</em>.</p>
+<p><em>function</em>—a <em>function object</em>.</p>
+<p><strong>Description:</strong></p>
+<p>The <em>value</em> of <strong>function</strong> is the <em>functional value</em> of <em>name</em> in the current <em>lexical environment</em>.</p>
+<p>If <em>name</em> is a <em>function name</em>, the functional definition of that name is that established by the innermost lexically enclosing <strong>flet</strong>, <strong>labels</strong>, or <strong>macrolet</strong> <em>form</em>, if there is one. Otherwise the global functional definition of the <em>function name</em> is returned.</p>
+<p>If <em>name</em> is a <em>lambda expression</em>, then a <em>lexical closure</em> is returned. In situations where a <em>closure</em> over the same set of <em>bindings</em> might be produced more than once, the various resulting <em>closures</em> might or might not be <strong>eq</strong>.</p>
+<p>It is an error to use <strong>function</strong> on a <em>function name</em> that does not denote a <em>function</em> in the lexical environment in which the <strong>function</strong> form appears. Specifically, it is an error to use <strong>function</strong> on a <em>symbol</em> that denotes a <em>macro</em> or <em>special form</em>. An implementation may choose not to signal this</p>
+<p>error for performance reasons, but implementations are forbidden from defining the failure to signal an error as a useful behavior.</p>
+<p><strong>Examples:</strong></p>
+<p>(defun adder (x) (function (lambda (y) (+ x y))))</p>
+<p>The result of (adder 3) is a function that adds 3 to its argument:</p>
+<p>(setq add3 (adder 3))</p>
+<p>(funcall add3 5) <em>→</em> 8</p>
+<p>This works because <strong>function</strong> creates a <em>closure</em> of the <em>lambda expression</em> that is able to refer to the <em>value</em> 3 of the variable x even after control has returned from the function adder.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>defun</strong>, <strong>fdefinition</strong>, <strong>flet</strong>, <strong>labels</strong>, <strong>symbol-function</strong>, Section 3.1.2.1.1 (Symbols as Forms), Section 2.4.8.2 (Sharpsign Single-Quote), Section 22.1.3.13 (Printing Other Objects)</p>
+<p>Data and Control Flow <strong>5–25</strong></p>
+<p><strong>Notes:</strong></p>
+<p>The notation #’<em>name</em> may be used as an abbreviation for (function <em>name</em>).</p>
+<p><strong>function-lambda-expression</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>function-lambda-expression</strong> <em>function</em></p>
+<p><em>→ lambda-expression, closure-p, name</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>function</em>—a <em>function</em>.</p>
+<p><em>lambda-expression</em>—a <em>lambda expression</em> or <strong>nil</strong>.</p>
+<p><em>closure-p</em>—a <em>generalized boolean</em>.</p>
+<p><em>name</em>—an <em>object</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns information about <em>function</em> as follows:</p>
+<p>The <em>primary value</em>, <em>lambda-expression</em>, is <em>function</em>’s defining <em>lambda expression</em>, or <strong>nil</strong> if the information is not available. The <em>lambda expression</em> may have been pre-processed in some ways, but it should remain a suitable argument to <strong>compile</strong> or <strong>function</strong>. Any <em>implementation</em> may legitimately return <strong>nil</strong> as the <em>lambda-expression</em> of any <em>function</em>.</p>
+<p>The <em>secondary value</em>, <em>closure-p</em>, is <strong>nil</strong> if <em>function</em>’s definition was enclosed in the <em>null lexical environment</em> or something <em>non-nil</em> if <em>function</em>’s definition might have been enclosed in some <em>non-null lexical environment</em>. Any <em>implementation</em> may legitimately return <em>true</em> as the <em>closure-p</em> of any <em>function</em>.</p>
+<p>The <em>tertiary value</em>, <em>name</em>, is the “name” of <em>function</em>. The name is intended for debugging only and is not necessarily one that would be valid for use as a name in <strong>defun</strong> or <strong>function</strong>, for example. By convention, <strong>nil</strong> is used to mean that <em>function</em> has no name. Any <em>implementation</em> may legitimately return <strong>nil</strong> as the <em>name</em> of any <em>function</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>The following examples illustrate some possible return values, but are not intended to be exhaustive:</p>
+<p>(function-lambda-expression #’(lambda (x) x))</p>
+<p><em>→</em> NIL, <em>false</em>, NIL</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; NIL, &lt;i&gt;true&lt;/i&gt;, NIL</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (LAMBDA (X) X), &lt;i&gt;true&lt;/i&gt;, NIL</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (LAMBDA (X) X), &lt;i&gt;false&lt;/i&gt;, NIL</p>
+<p>(function-lambda-expression</p>
+<p>(funcall #’(lambda () #’(lambda (x) x))))</p>
+<p><em>→</em> NIL, <em>false</em>, NIL</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; NIL, &lt;i&gt;true&lt;/i&gt;, NIL</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (LAMBDA (X) X), &lt;i&gt;true&lt;/i&gt;, NIL</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (LAMBDA (X) X), &lt;i&gt;false&lt;/i&gt;, NIL</p>
+<p>(function-lambda-expression</p>
+<p>(funcall #’(lambda (x) #’(lambda () x)) nil))</p>
+<p><em>→</em> NIL, <em>true</em>, NIL</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (LAMBDA () X), &lt;i&gt;true&lt;/i&gt;, NIL</p>
+<p>&lt;i&gt;&lt;sup&gt;not&lt;/sup&gt; →&lt;/i&gt; NIL, &lt;i&gt;false&lt;/i&gt;, NIL</p>
+<p>&lt;i&gt;&lt;sup&gt;not&lt;/sup&gt; →&lt;/i&gt; (LAMBDA () X), &lt;i&gt;false&lt;/i&gt;, NIL</p>
+<p>(flet ((foo (x) x))</p>
+<p>(setf (symbol-function ’bar) #’foo)</p>
+<p>(function-lambda-expression #’bar))</p>
+<p><em>→</em> NIL, <em>false</em>, NIL</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; NIL, &lt;i&gt;true&lt;/i&gt;, NIL</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (LAMBDA (X) (BLOCK FOO X)), &lt;i&gt;true&lt;/i&gt;, NIL</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (LAMBDA (X) (BLOCK FOO X)), &lt;i&gt;false&lt;/i&gt;, FOO</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (SI::BLOCK-LAMBDA FOO (X) X), &lt;i&gt;false&lt;/i&gt;, FOO</p>
+<p>(defun foo ()</p>
+<p>(flet ((bar (x) x))</p>
+<p>#’bar))</p>
+<p>(function-lambda-expression (foo))</p>
+<p><em>→</em> NIL, <em>false</em>, NIL</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; NIL, &lt;i&gt;true&lt;/i&gt;, NIL</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (LAMBDA (X) (BLOCK BAR X)), &lt;i&gt;true&lt;/i&gt;, NIL</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (LAMBDA (X) (BLOCK BAR X)), &lt;i&gt;true&lt;/i&gt;, (<!-- -->:INTERNAL<!-- --> FOO 0 BAR)</p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; (LAMBDA (X) (BLOCK BAR X)), &lt;i&gt;false&lt;/i&gt;, &quot;BAR in FOO&quot;</p>
+<p><strong>Notes:</strong></p>
+<p>Although <em>implementations</em> are free to return “<strong>nil</strong>, <em>true</em>, <strong>nil</strong>” in all cases, they are encouraged to return a <em>lambda expression</em> as the <em>primary value</em> in the case where the argument was created by a call to <strong>compile</strong> or <strong>eval</strong> (as opposed to being created by <em>loading</em> a <em>compiled file</em>).</p>
+<p>Data and Control Flow <strong>5–27</strong></p>
+<p><strong>functionp</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>functionp</strong> <em>object → generalized-boolean</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>object</em>—an <em>object</em>.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns <em>true</em> if <em>object</em> is of <em>type</em> <strong>function</strong>; otherwise, returns <em>false</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(functionp ’append) <em>→ false</em></p>
+<p>(functionp #’append) <em>→ true</em></p>
+<p>(functionp (symbol-function ’append)) <em>→ true</em></p>
+<p>(flet ((f () 1)) (functionp #’f)) <em>→ true</em></p>
+<p>(functionp (compile nil ’(lambda () 259))) <em>→ true</em></p>
+<p>(functionp nil) <em>→ false</em></p>
+<p>(functionp 12) <em>→ false</em></p>
+<p>(functionp ’(lambda (x) (* x x))) <em>→ false</em></p>
+<p>(functionp #’(lambda (x) (* x x))) <em>→ true</em></p>
+<p><strong>Notes:</strong></p>
+<p>(functionp <em>object</em>) <em>≡</em> (typep <em>object</em> ’function)</p>
+<p><strong>compiled-function-p</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>compiled-function-p</strong> <em>object → generalized-boolean</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>object</em>—an <em>object</em>.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns <em>true</em> if <em>object</em> is of <em>type</em> <strong>compiled-function</strong>; otherwise, returns <em>false</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(defun f (x) x) <em>→</em> F</p>
+<p>(compiled-function-p #’f)</p>
+<p><em>→ false</em></p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→ true&lt;/i&gt;</p>
+<p>(compiled-function-p ’f) <em>→ false</em></p>
+<p>(compile ’f) <em>→</em> F</p>
+<p>(compiled-function-p #’f) <em>→ true</em></p>
+<p>(compiled-function-p ’f) <em>→ false</em></p>
+<p>(compiled-function-p (compile nil ’(lambda (x) x)))</p>
+<p><em>→ true</em></p>
+<p>(compiled-function-p #’(lambda (x) x))</p>
+<p><em>→ false</em></p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→ true&lt;/i&gt;</p>
+<p>(compiled-function-p ’(lambda (x) x)) <em>→ false</em></p>
+<p><strong>See Also:</strong></p>
+<p><strong>compile</strong>, <strong>compile-file</strong>, <strong>compiled-function</strong></p>
+<p><strong>Notes:</strong></p>
+<p>(compiled-function-p <em>object</em>) <em>≡</em> (typep <em>object</em> ’compiled-function)</p>
+<p><strong>call-arguments-limit</strong> <em>Constant Variable</em></p>
+<p><strong>Constant Value:</strong></p>
+<p>An integer not smaller than 50 and at least as great as the <em>value</em> of <strong>lambda-parameters-limit</strong>, the exact magnitude of which is <em>implementation-dependent</em>.</p>
+<p><strong>Description:</strong></p>
+<p>The upper exclusive bound on the number of <em>arguments</em> that may be passed to a <em>function</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>lambda-parameters-limit</strong>, <strong>multiple-values-limit</strong></p>
+<p>Data and Control Flow <strong>5–29</strong></p>
+<p><strong>lambda-list-keywords</strong> <em>Constant Variable</em></p>
+<p><strong>Constant Value:</strong></p>
+<p>a <em>list</em>, the <em>elements</em> of which are <em>implementation-dependent</em>, but which must contain at least the <em>symbols</em> <strong>&amp;allow-other-keys</strong>, <strong>&amp;aux</strong>, <strong>&amp;body</strong>, <strong>&amp;environment</strong>, <strong>&amp;key</strong>, <strong>&amp;optional</strong>, <strong>&amp;rest</strong>, and <strong>&amp;whole</strong>.</p>
+<p><strong>Description:</strong></p>
+<p>A <em>list</em> of all the <em>lambda list keywords</em> used in the <em>implementation</em>, including the additional ones used only by <em>macro</em> definition <em>forms</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>defun</strong>, <strong>flet</strong>, <strong>defmacro</strong>, <strong>macrolet</strong>, Section 3.1.2 (The Evaluation Model)</p>
+<p><strong>lambda-parameters-limit</strong> <em>Constant Variable</em></p>
+<p><strong>Constant Value:</strong></p>
+<p><em>implementation-dependent</em>, but not smaller than 50.</p>
+<p><strong>Description:</strong></p>
+<p>A positive <em>integer</em> that is the upper exclusive bound on the number of <em>parameter names</em> that can appear in a single <em>lambda list</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>call-arguments-limit</strong></p>
+<p><strong>Notes:</strong></p>
+<p>Implementors are encouraged to make the <em>value</em> of <strong>lambda-parameters-limit</strong> as large as possible.</p>
+<p><strong>defconstant</strong></p>
+<p><strong>defconstant</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>defconstant</strong> <em>name initial-value</em> [<em>documentation</em>] <em>→ name</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>name</em>—a <em>symbol</em>; not evaluated.</p>
+<p><em>initial-value</em>—a <em>form</em>; evaluated.</p>
+<p><em>documentation</em>—a <em>string</em>; not evaluated.</p>
+<p><strong>Description:</strong></p>
+<p><strong>defconstant</strong> causes the global variable named by <em>name</em> to be given a value that is the result of evaluating <em>initial-value</em>.</p>
+<p>A constant defined by <strong>defconstant</strong> can be redefined with <strong>defconstant</strong>. However, the consequences are undefined if an attempt is made to assign a <em>value</em> to the <em>symbol</em> using another operator, or to assign it to a <em>different value</em> using a subsequent <strong>defconstant</strong>.</p>
+<p>If <em>documentation</em> is supplied, it is attached to <em>name</em> as a <em>documentation string</em> of kind <strong>variable</strong>.</p>
+<p><strong>defconstant</strong> normally appears as a <em>top level form</em>, but it is meaningful for it to appear as a <em>non-top-level form</em>. However, the compile-time side effects described below only take place when <strong>defconstant</strong> appears as a <em>top level form</em>.</p>
+<p>The consequences are undefined if there are any <em>bindings</em> of the variable named by <em>name</em> at the time <strong>defconstant</strong> is executed or if the value is not <strong>eql</strong> to the value of <em>initial-value</em>.</p>
+<p>The consequences are undefined when constant <em>symbols</em> are rebound as either lexical or dynamic variables. In other words, a reference to a <em>symbol</em> declared with <strong>defconstant</strong> always refers to its global value.</p>
+<p>The side effects of the execution of <strong>defconstant</strong> must be equivalent to at least the side effects of the execution of the following code:</p>
+<p>(setf (symbol-value ’<em>name</em>) <em>initial-value</em>)</p>
+<p>(setf (documentation ’<em>name</em> ’variable) ’<em>documentation</em>)</p>
+<p>If a <strong>defconstant</strong> <em>form</em> appears as a <em>top level form</em>, the <em>compiler</em> must recognize that <em>name</em> names a <em>constant variable</em>. An implementation may choose to evaluate the value-form at compile time, load time, or both. Therefore, users must ensure that the <em>initial-value</em> can be <em>evaluated</em> at compile time (regardless of whether or not references to <em>name</em> appear in the file) and that it always <em>evaluates</em> to the same value.</p>
+<p>Data and Control Flow <strong>5–31</strong></p>
+<p><strong>Examples:</strong></p>
+<p>(defconstant this-is-a-constant ’never-changing &quot;for a test&quot;) <em>→</em> THIS-IS-A-CONSTANT this-is-a-constant <em>→</em> NEVER-CHANGING</p>
+<p>(documentation ’this-is-a-constant ’variable) <em>→</em> &quot;for a test&quot;</p>
+<p>(constantp ’this-is-a-constant) <em>→ true</em></p>
+<p><strong>See Also:</strong></p>
+<p><strong>declaim</strong>, <strong>defparameter</strong>, <strong>defvar</strong>, <strong>documentation</strong>, <strong>proclaim</strong>, Section 3.1.2.1.1.3 (Constant Variables), Section 3.2 (Compilation)</p>
+<p><strong>defparameter, defvar</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>defparameter</strong> <em>name initial-value</em> [<em>documentation</em>] <em>→ name</em></p>
+<p><strong>defvar</strong> <em>name</em> [<em>initial-value</em> [<em>documentation</em>]] <em>→ name</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>name</em>—a <em>symbol</em>; not evaluated.</p>
+<p><em>initial-value</em>—a <em>form</em>; for <strong>defparameter</strong>, it is always <em>evaluated</em>, but for <strong>defvar</strong> it is <em>evaluated</em> only if <em>name</em> is not already <em>bound</em>.</p>
+<p><em>documentation</em>—a <em>string</em>; not evaluated.</p>
+<p><strong>Description:</strong></p>
+<p><strong>defparameter</strong> and <strong>defvar</strong> <em>establish name</em> as a <em>dynamic variable</em>.</p>
+<p><strong>defparameter</strong> unconditionally <em>assigns</em> the <em>initial-value</em> to the <em>dynamic variable</em> named <em>name</em>. <strong>defvar</strong>, by contrast, <em>assigns initial-value</em> (if supplied) to the <em>dynamic variable</em> named <em>name</em> only if <em>name</em> is not already <em>bound</em>.</p>
+<p>If no <em>initial-value</em> is supplied, <strong>defvar</strong> leaves the <em>value cell</em> of the <em>dynamic variable</em> named <em>name</em> undisturbed; if <em>name</em> was previously <em>bound</em>, its old <em>value</em> persists, and if it was previously <em>unbound</em>, it remains <em>unbound</em>.</p>
+<p>If <em>documentation</em> is supplied, it is attached to <em>name</em> as a <em>documentation string</em> of kind <strong>variable</strong>.</p>
+<p><strong>defparameter</strong> and <strong>defvar</strong> normally appear as a <em>top level form</em>, but it is meaningful for them to appear as <em>non-top-level forms</em>. However, the compile-time side effects described below only take place when they appear as <em>top level forms</em>.</p>
+<p><strong>defparameter, defvar</strong></p>
+<p><strong>Examples:</strong></p>
+<p>(defparameter *p* 1) <em>→</em> *P*</p>
+<p>*p* <em>→</em> 1</p>
+<p>(constantp ’*p*) <em>→ false</em></p>
+<p>(setq *p* 2) <em>→</em> 2</p>
+<p>(defparameter *p* 3) <em>→</em> *P*</p>
+<p>*p* <em>→</em> 3</p>
+<p>(defvar *v* 1) <em>→</em> *V*</p>
+<p>*v* <em>→</em> 1</p>
+<p>(constantp ’*v*) <em>→ false</em></p>
+<p>(setq *v* 2) <em>→</em> 2</p>
+<p>(defvar *v* 3) <em>→</em> *V*</p>
+<p>*v* <em>→</em> 2</p>
+<p>(defun foo ()</p>
+<p>(let ((*p* ’p) (*v* ’v))</p>
+<p>(bar))) <em>→</em> FOO</p>
+<p>(defun bar () (list *p* *v*)) <em>→</em> BAR</p>
+<p>(foo) <em>→</em> (P V)</p>
+<p>The principal operational distinction between <strong>defparameter</strong> and <strong>defvar</strong> is that <strong>defparameter</strong> makes an unconditional assignment to <em>name</em>, while <strong>defvar</strong> makes a conditional one. In practice, this means that <strong>defparameter</strong> is useful in situations where loading or reloading the definition would want to pick up a new value of the variable, while <strong>defvar</strong> is used in situations where the old value would want to be retained if the file were loaded or reloaded. For example, one might create a file which contained:</p>
+<p>(defvar *the-interesting-numbers* ’())</p>
+<p>(defmacro define-interesting-number (name n)</p>
+<p>‘(progn (defvar ,name ,n)</p>
+<p>(pushnew ,name *the-interesting-numbers*)</p>
+<p>’,name))</p>
+<p>(define-interesting-number *my-height* 168) ;cm</p>
+<p>(define-interesting-number *my-weight* 13) ;stones</p>
+<p>Here the initial value, (), for the variable *the-interesting-numbers* is just a seed that we are never likely to want to reset to something else once something has been grown from it. As such, we have used <strong>defvar</strong> to avoid having the *interesting-numbers* information reset if the file is loaded a second time. It is true that the two calls to <strong>define-interesting-number</strong> here would be reprocessed, but if there were additional calls in another file, they would not be and that information would be lost. On the other hand, consider the following code:</p>
+<p>(defparameter *default-beep-count* 3)</p>
+<p>(defun beep (&amp;optional (n *default-beep-count*))</p>
+<p>(dotimes (i n) (si:%beep 1000. 100000.) (sleep 0.1)))</p>
+<p>Data and Control Flow <strong>5–33</strong></p>
+<p><strong>defparameter, defvar</strong></p>
+<p>Here we could easily imagine editing the code to change the initial value of *default-beep-count*, and then reloading the file to pick up the new value. In order to make value updating easy, we have used <strong>defparameter</strong>.</p>
+<p>On the other hand, there is potential value to using <strong>defvar</strong> in this situation. For example, suppose that someone had predefined an alternate value for *default-beep-count*, or had loaded the file and then manually changed the value. In both cases, if we had used <strong>defvar</strong> instead of <strong>defparameter</strong>, those user preferences would not be overridden by (re)loading the file.</p>
+<p>The choice of whether to use <strong>defparameter</strong> or <strong>defvar</strong> has visible consequences to programs, but is nevertheless often made for subjective reasons.</p>
+<p><strong>Side Effects:</strong></p>
+<p>If a <strong>defvar</strong> or <strong>defparameter</strong> <em>form</em> appears as a <em>top level form</em>, the <em>compiler</em> must recognize that the <em>name</em> has been proclaimed <strong>special</strong>. However, it must neither <em>evaluate</em> the <em>initial-value form</em> nor <em>assign</em> the <em>dynamic variable</em> named <em>name</em> at compile time.</p>
+<p>There may be additional (<em>implementation-defined</em>) compile-time or run-time side effects, as long as such effects do not interfere with the correct operation of <em>conforming programs</em>.</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>defvar</strong> is affected by whether <em>name</em> is already <em>bound</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>declaim</strong>, <strong>defconstant</strong>, <strong>documentation</strong>, Section 3.2 (Compilation)</p>
+<p><strong>Notes:</strong></p>
+<p>It is customary to name <em>dynamic variables</em> with an <em>asterisk</em> at the beginning and end of the name. e.g., *foo* is a good name for a <em>dynamic variable</em>, but not for a <em>lexical variable</em>; foo is a good name for a <em>lexical variable</em>, but not for a <em>dynamic variable</em>. This naming convention is observed for all <em>defined names</em> in Common Lisp; however, neither <em>conforming programs</em> nor <em>conforming implementations</em> are obliged to adhere to this convention.</p>
+<p>The intent of the permission for additional side effects is to allow <em>implementations</em> to do normal “bookkeeping” that accompanies definitions. For example, the <em>macro expansion</em> of a <strong>defvar</strong> or <strong>defparameter</strong> <em>form</em> might include code that arranges to record the name of the source file in which the definition occurs.</p>
+<p><strong>defparameter</strong> and <strong>defvar</strong> might be defined as follows:</p>
+<p>(defmacro defparameter (name initial-value</p>
+<p>&amp;optional (documentation nil documentation-p))</p>
+<p>‘(progn (declaim (special ,name))</p>
+<p>(setf (symbol-value ’,name) ,initial-value)</p>
+<p>,(when documentation-p</p>
+<p>‘(setf (documentation ’,name ’variable) ’,documentation))</p>
+<p>’,name))</p>
+<p>(defmacro defvar (name &amp;optional</p>
+<p>(initial-value nil initial-value-p)</p>
+<p>(documentation nil documentation-p))</p>
+<p>‘(progn (declaim (special ,name))</p>
+<p>,(when initial-value-p</p>
+<p>‘(unless (boundp ’,name)</p>
+<p>(setf (symbol-value ’,name) ,initial-value)))</p>
+<p>,(when documentation-p</p>
+<p>‘(setf (documentation ’,name ’variable) ’,documentation))</p>
+<p>’,name))</p>
+<p><strong>destructuring-bind</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>destructuring-bind</strong> <em>lambda-list expression {declaration}</em>* <em>{form}</em>*</p>
+<p><em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>lambda-list</em>—a <em>destructuring lambda list</em>.</p>
+<p><em>expression</em>—a <em>form</em>.</p>
+<p><em>declaration</em>—a <strong>declare</strong> <em>expression</em>; not evaluated.</p>
+<p><em>forms</em>—an <em>implicit progn</em>.</p>
+<p><em>results</em>—the <em>values</em> returned by the <em>forms</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>destructuring-bind</strong> binds the variables specified in <em>lambda-list</em> to the corresponding values in the tree structure resulting from the evaluation of <em>expression</em>; then <strong>destructuring-bind</strong> evaluates <em>forms</em>.</p>
+<p>The <em>lambda-list</em> supports destructuring as described in Section 3.4.5 (Destructuring Lambda Lists). <strong>Examples:</strong></p>
+<p>(defun iota (n) (loop for i from 1 to n collect i)) ;helper</p>
+<p>(destructuring-bind ((a &amp;optional (b ’bee)) one two three)</p>
+<p>‘((alpha) ,@(iota 3))</p>
+<p>(list a b three two one)) <em>→</em> (ALPHA BEE 3 2 1)</p>
+<p>Data and Control Flow <strong>5–35</strong></p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>If the result of evaluating the <em>expression</em> does not match the destructuring pattern, an error of <em>type</em> <strong>error</strong> should be signaled.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>macrolet</strong>, <strong>defmacro</strong></p>
+<p><strong>let, let</strong><em>∗ Special Operator</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>let</strong> (<em>{var |</em> (<em>var</em> [<em>init-form</em>])<em>}</em>*) <em>{declaration}</em>* <em>{form}</em>* <em>→ {result}</em>*</p>
+<p><strong>let*</strong> (<em>{var |</em> (<em>var</em> [<em>init-form</em>])<em>}</em>*) <em>{declaration}</em>* <em>{form}</em>* <em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>var</em>—a <em>symbol</em>.</p>
+<p><em>init-form</em>—a <em>form</em>.</p>
+<p><em>declaration</em>—a <strong>declare</strong> <em>expression</em>; not evaluated.</p>
+<p><em>form</em>—a <em>form</em>.</p>
+<p><em>results</em>—the <em>values</em> returned by the <em>forms</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>let</strong> and <strong>let*</strong> create new variable <em>bindings</em> and execute a series of <em>forms</em> that use these <em>bindings</em>. <strong>let</strong> performs the <em>bindings</em> in parallel and <strong>let*</strong> does them sequentially.</p>
+<p>The form</p>
+<p>(let ((<em>var1 init-form-1</em> )</p>
+<p>(<em>var2 init-form-2</em> )</p>
+<p>...</p>
+<p>(<em>varm init-form-m</em>))</p>
+<p><em>declaration1</em></p>
+<p><em>declaration2</em></p>
+<p>...</p>
+<p><em>declarationp</em></p>
+<p><em>form1</em></p>
+<p><em>form2</em></p>
+<p>...</p>
+<p><em>formn</em>)</p>
+<p><strong>let, let</strong><em>∗</em></p>
+<p>first evaluates the expressions <em>init-form-1</em>, <em>init-form-2</em>, and so on, in that order, saving the resulting values. Then all of the variables <em>varj</em> are bound to the corresponding values; each <em>binding</em> is lexical unless there is a <strong>special</strong> declaration to the contrary. The expressions <em>formk</em> are then evaluated in order; the values of all but the last are discarded (that is, the body of a <strong>let</strong> is an <em>implicit progn</em>).</p>
+<p><strong>let*</strong> is similar to <strong>let</strong>, but the <em>bindings</em> of variables are performed sequentially rather than in parallel. The expression for the <em>init-form</em> of a <em>var</em> can refer to <em>vars</em> previously bound in the <strong>let*</strong>.</p>
+<p>The form</p>
+<p>(let* ((<em>var1 init-form-1</em> )</p>
+<p>(<em>var2 init-form-2</em> )</p>
+<p>...</p>
+<p>(<em>varm init-form-m</em>))</p>
+<p><em>declaration1</em></p>
+<p><em>declaration2</em></p>
+<p>...</p>
+<p><em>declarationp</em></p>
+<p><em>form1</em></p>
+<p><em>form2</em></p>
+<p>...</p>
+<p><em>formn</em>)</p>
+<p>first evaluates the expression <em>init-form-1</em>, then binds the variable <em>var1</em> to that value; then it evaluates <em>init-form-2</em> and binds <em>var2</em>, and so on. The expressions <em>formj</em> are then evaluated in order; the values of all but the last are discarded (that is, the body of <strong>let*</strong> is an implicit <strong>progn</strong>).</p>
+<p>For both <strong>let</strong> and <strong>let*</strong>, if there is not an <em>init-form</em> associated with a <em>var</em>, <em>var</em> is initialized to <strong>nil</strong>.</p>
+<p>The special form <strong>let</strong> has the property that the <em>scope</em> of the name binding does not include any initial value form. For <strong>let*</strong>, a variable’s <em>scope</em> also includes the remaining initial value forms for subsequent variable bindings.</p>
+<p><strong>Examples:</strong></p>
+<p>(setq a ’top) <em>→</em> TOP</p>
+<p>(defun dummy-function () a) <em>→</em> DUMMY-FUNCTION</p>
+<p>(let ((a ’inside) (b a))</p>
+<p>(format nil &quot;~S ~S ~S&quot; a b (dummy-function))) <em>→</em> &quot;INSIDE TOP TOP&quot;</p>
+<p>(let* ((a ’inside) (b a))</p>
+<p>(format nil &quot;~S ~S ~S&quot; a b (dummy-function))) <em>→</em> &quot;INSIDE INSIDE TOP&quot;</p>
+<p>(let ((a ’inside) (b a))</p>
+<p>(declare (special a))</p>
+<p>(format nil &quot;~S ~S ~S&quot; a b (dummy-function))) <em>→</em> &quot;INSIDE TOP INSIDE&quot;</p>
+<p>The code</p>
+<p>(let (x)</p>
+<p>Data and Control Flow <strong>5–37</strong></p>
+<p>(declare (integer x))</p>
+<p>(setq x (gcd y z))</p>
+<p>...)</p>
+<p>is incorrect; although x is indeed set before it is used, and is set to a value of the declared type <em>integer</em> , nevertheless x initially takes on the value <strong>nil</strong> in violation of the type declaration.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>progv</strong></p>
+<p><strong>progv</strong> <em>Special Operator</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>progv</strong> <em>symbols values {form}</em>* <em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>symbols</em>—a <em>list</em> of <em>symbols</em>; evaluated.</p>
+<p><em>values</em>—a <em>list</em> of <em>objects</em>; evaluated.</p>
+<p><em>forms</em>—an <em>implicit progn</em>.</p>
+<p><em>results</em>—the <em>values</em> returned by the <em>forms</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>progv</strong> creates new dynamic variable <em>bindings</em> and executes each <em>form</em> using those <em>bindings</em>. Each <em>form</em> is evaluated in order.</p>
+<p><strong>progv</strong> allows <em>binding</em> one or more dynamic variables whose names may be determined at run time. Each <em>form</em> is evaluated in order with the dynamic variables whose names are in <em>symbols</em> bound to corresponding <em>values</em>. If too few <em>values</em> are supplied, the remaining <em>symbols</em> are bound and then made to have no value. If too many <em>values</em> are supplied, the excess values are ignored. The <em>bindings</em> of the dynamic variables are undone on exit from <strong>progv</strong>.</p>
+<p><strong>Examples:</strong></p>
+<p>(setq *x* 1) <em>→</em> 1</p>
+<p>(progv ’(*x*) ’(2) *x*) <em>→</em> 2</p>
+<p>*x* <em>→</em> 1</p>
+<p>Assuming *x* is not globally special,</p>
+<p>(let ((*x* 3))</p>
+<p>(progv ’(*x*) ’(4)</p>
+<p>(list *x* (symbol-value ’*x*)))) <em>→</em> (3 4)</p>
+<p><strong>See Also:</strong></p>
+<p><strong>let</strong>, Section 3.1 (Evaluation)</p>
+<p><strong>Notes:</strong></p>
+<p>Among other things, <strong>progv</strong> is useful when writing interpreters for languages embedded in Lisp; it provides a handle on the mechanism for <em>binding dynamic variables</em>.</p>
+<p><strong>setq</strong> <em>Special Form</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>setq</strong> <em>{↓pair}</em>* <em>→ result</em></p>
+<p><em>pair::</em>=<em>var form</em></p>
+<p><strong>Pronunciation:</strong></p>
+<p>[ <strong>set kyu-</strong> ]</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>var</em>—a <em>symbol</em> naming a <em>variable</em> other than a <em>constant variable</em>.</p>
+<p><em>form</em>—a <em>form</em>.</p>
+<p><em>result</em>—the <em>primary value</em> of the last <em>form</em>, or <strong>nil</strong> if no <em>pairs</em> were supplied.</p>
+<p><strong>Description:</strong></p>
+<p>Assigns values to <em>variables</em>.</p>
+<p>(setq <em>var1 form1 var2 form2</em> ...) is the simple variable assignment statement of Lisp. First <em>form1</em> is evaluated and the result is stored in the variable <em>var1</em>, then <em>form2</em> is evaluated and the result stored in <em>var2</em>, and so forth. <strong>setq</strong> may be used for assignment of both lexical and dynamic variables.</p>
+<p>If any <em>var</em> refers to a <em>binding</em> made by <strong>symbol-macrolet</strong>, then that <em>var</em> is treated as if <strong>setf</strong> (not <strong>setq</strong>) had been used.</p>
+<p><strong>Examples:</strong></p>
+<p>;; A simple use of SETQ to establish values for variables.</p>
+<p>(setq a 1 b 2 c 3) <em>→</em> 3</p>
+<p>a <em>→</em> 1</p>
+<p>b <em>→</em> 2</p>
+<p>c <em>→</em> 3</p>
+<p>;; Use of SETQ to update values by sequential assignment.</p>
+<p>Data and Control Flow <strong>5–39</strong></p>
+<p>(setq a (1+ b) b (1+ a) c (+ a b)) <em>→</em> 7</p>
+<p>a <em>→</em> 3</p>
+<p>b <em>→</em> 4</p>
+<p>c <em>→</em> 7</p>
+<p>;; This illustrates the use of SETQ on a symbol macro.</p>
+<p>(let ((x (list 10 20 30)))</p>
+<p>(symbol-macrolet ((y (car x)) (z (cadr x)))</p>
+<p>(setq y (1+ z) z (1+ y))</p>
+<p>(list x y z)))</p>
+<p><em>→</em> ((21 22 30) 21 22)</p>
+<p><strong>Side Effects:</strong></p>
+<p>The <em>primary value</em> of each <em>form</em> is assigned to the corresponding <em>var</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>psetq</strong>, <strong>set</strong>, <strong>setf</strong></p>
+<p><strong>psetq</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>psetq</strong> <em>{↓pair}</em>* <em>→</em> <strong>nil</strong></p>
+<p><em>pair::</em>=<em>var form</em></p>
+<p><strong>Pronunciation:</strong></p>
+<p><strong>psetq</strong>: [ <strong>p—e set kyu-</strong> ]</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>var</em>—a <em>symbol</em> naming a <em>variable</em> other than a <em>constant variable</em>.</p>
+<p><em>form</em>—a <em>form</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Assigns values to <em>variables</em>.</p>
+<p>This is just like <strong>setq</strong>, except that the assignments happen “in parallel.” That is, first all of the forms are evaluated, and only then are the variables set to the resulting values. In this way, the assignment to one variable does not affect the value computation of another in the way that would occur with <strong>setq</strong>’s sequential assignment.</p>
+<p>If any <em>var</em> refers to a <em>binding</em> made by <strong>symbol-macrolet</strong>, then that <em>var</em> is treated as if <strong>psetf</strong> (not <strong>psetq</strong>) had been used.</p>
+<p><strong>Examples:</strong></p>
+<p>;; A simple use of PSETQ to establish values for variables.</p>
+<p>;; As a matter of style, many programmers would prefer SETQ</p>
+<p>;; in a simple situation like this where parallel assignment</p>
+<p>;; is not needed, but the two have equivalent effect.</p>
+<p>(psetq a 1 b 2 c 3) <em>→</em> NIL</p>
+<p>a <em>→</em> 1</p>
+<p>b <em>→</em> 2</p>
+<p>c <em>→</em> 3</p>
+<p>;; Use of PSETQ to update values by parallel assignment.</p>
+<p>;; The effect here is very different than if SETQ had been used.</p>
+<p>(psetq a (1+ b) b (1+ a) c (+ a b)) <em>→</em> NIL</p>
+<p>a <em>→</em> 3</p>
+<p>b <em>→</em> 2</p>
+<p>c <em>→</em> 3</p>
+<p>;; Use of PSETQ on a symbol macro.</p>
+<p>(let ((x (list 10 20 30)))</p>
+<p>(symbol-macrolet ((y (car x)) (z (cadr x)))</p>
+<p>(psetq y (1+ z) z (1+ y))</p>
+<p>(list x y z)))</p>
+<p><em>→</em> ((21 11 30) 21 11)</p>
+<p>;; Use of parallel assignment to swap values of A and B.</p>
+<p>(let ((a 1) (b 2))</p>
+<p>(psetq a b b a)</p>
+<p>(values a b))</p>
+<p><em>→</em> 2, 1</p>
+<p><strong>Side Effects:</strong></p>
+<p>The values of <em>forms</em> are assigned to <em>vars</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>psetf</strong>, <strong>setq</strong></p>
+<p><strong>block</strong> <em>Special Operator</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>block</strong> <em>name form</em>* <em>→ {result}</em>*</p>
+<p>Data and Control Flow <strong>5–41</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>name</em>—a <em>symbol</em>.</p>
+<p><em>form</em>—a <em>form</em>.</p>
+<p><em>results</em>—the <em>values</em> of the <em>forms</em> if a <em>normal return</em> occurs, or else, if an <em>explicit return</em> occurs, the <em>values</em> that were transferred.</p>
+<p><strong>Description:</strong></p>
+<p><strong>block</strong> <em>establishes</em> a <em>block</em> named <em>name</em> and then evaluates <em>forms</em> as an <em>implicit progn</em>.</p>
+<p>The <em>special operators</em> <strong>block</strong> and <strong>return-from</strong> work together to provide a structured, lexical, non-local exit facility. At any point lexically contained within <em>forms</em>, <strong>return-from</strong> can be used with the given <em>name</em> to return control and values from the <strong>block</strong> <em>form</em>, except when an intervening <em>block</em> with the same name has been <em>established</em>, in which case the outer <em>block</em> is shadowed by the inner one.</p>
+<p>The <em>block</em> named <em>name</em> has <em>lexical scope</em> and <em>dynamic extent</em>.</p>
+<p>Once established, a <em>block</em> may only be exited once, whether by <em>normal return</em> or <em>explicit return</em>. <strong>Examples:</strong></p>
+<p>(block empty) <em>→</em> NIL</p>
+<p>(block whocares (values 1 2) (values 3 4)) <em>→</em> 3, 4</p>
+<p>(let ((x 1))</p>
+<p>(block stop (setq x 2) (return-from stop) (setq x 3))</p>
+<p>x) <em>→</em> 2</p>
+<p>(block early (return-from early (values 1 2)) (values 3 4)) <em>→</em> 1, 2</p>
+<p>(block outer (block inner (return-from outer 1)) 2) <em>→</em> 1</p>
+<p>(block twin (block twin (return-from twin 1)) 2) <em>→</em> 2</p>
+<p>;; Contrast behavior of this example with corresponding example of CATCH.</p>
+<p>(block b</p>
+<p>(flet ((b1 () (return-from b 1)))</p>
+<p>(block b (b1) (print ’unreachable))</p>
+<p>2)) <em>→</em> 1</p>
+<p><strong>See Also:</strong></p>
+<p><strong>return</strong>, <strong>return-from</strong>, Section 3.1 (Evaluation)</p>
+<p><strong>Notes:</strong></p>
+<p><strong>catch</strong></p>
+<p><strong>catch</strong> <em>Special Operator</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>catch</strong> <em>tag {form}</em>* <em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>tag</em>—a <em>catch tag</em>; evaluated.</p>
+<p><em>forms</em>—an <em>implicit progn</em>.</p>
+<p><em>results</em>—if the <em>forms</em> exit normally, the <em>values</em> returned by the <em>forms</em>; if a throw occurs to the <em>tag</em>, the <em>values</em> that are thrown.</p>
+<p><strong>Description:</strong></p>
+<p><strong>catch</strong> is used as the destination of a non-local control transfer by <strong>throw</strong>. <em>Tags</em> are used to find the <strong>catch</strong> to which a <strong>throw</strong> is transferring control. (catch ’foo <em>form</em>) catches a (throw ’foo <em>form</em>) but not a (throw ’bar <em>form</em>).</p>
+<p>The order of execution of <strong>catch</strong> follows:</p>
+<p>1. <em>Tag</em> is evaluated. It serves as the name of the <strong>catch</strong>.</p>
+<p>2. <em>Forms</em> are then evaluated as an implicit <strong>progn</strong>, and the results of the last <em>form</em> are returned unless a <strong>throw</strong> occurs.</p>
+<p>3. If a <strong>throw</strong> occurs during the execution of one of the <em>forms</em>, control is transferred to the <strong>catch</strong> <em>form</em> whose <em>tag</em> is <strong>eq</strong> to the tag argument of the <strong>throw</strong> and which is the most recently established <strong>catch</strong> with that <em>tag</em>. No further evaluation of <em>forms</em> occurs.</p>
+<p>4. The <em>tag established</em> by <strong>catch</strong> is <em>disestablished</em> just before the results are returned.</p>
+<p>If during the execution of one of the <em>forms</em>, a <strong>throw</strong> is executed whose tag is <strong>eq</strong> to the <strong>catch</strong> tag, then the values specified by the <strong>throw</strong> are returned as the result of the dynamically most recently established <strong>catch</strong> form with that tag.</p>
+<p>The mechanism for <strong>catch</strong> and <strong>throw</strong> works even if <strong>throw</strong> is not within the lexical scope of <strong>catch</strong>. <strong>throw</strong> must occur within the <em>dynamic extent</em> of the <em>evaluation</em> of the body of a <strong>catch</strong> with a corresponding <em>tag</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(catch ’dummy-tag 1 2 (throw ’dummy-tag 3) 4) <em>→</em> 3</p>
+<p>(catch ’dummy-tag 1 2 3 4) <em>→</em> 4</p>
+<p>(defun throw-back (tag) (throw tag t)) <em>→</em> THROW-BACK</p>
+<p>(catch ’dummy-tag (throw-back ’dummy-tag) 2) <em>→</em> T</p>
+<p>Data and Control Flow <strong>5–43</strong></p>
+<p>;; Contrast behavior of this example with corresponding example of BLOCK.</p>
+<p>(catch ’c</p>
+<p>(flet ((c1 () (throw ’c 1)))</p>
+<p>(catch ’c (c1) (print ’unreachable))</p>
+<p>2)) <em>→</em> 2</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>An error of <em>type</em> <strong>control-error</strong> is signaled if <strong>throw</strong> is done when there is no suitable <strong>catch</strong> <em>tag</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>throw</strong>, Section 3.1 (Evaluation)</p>
+<p><strong>Notes:</strong></p>
+<p>It is customary for <em>symbols</em> to be used as <em>tags</em>, but any <em>object</em> is permitted. However, numbers should not be used because the comparison is done using <strong>eq</strong>.</p>
+<p><strong>catch</strong> differs from <strong>block</strong> in that <strong>catch</strong> tags have dynamic <em>scope</em> while <strong>block</strong> names have <em>lexical scope</em>.</p>
+<p><strong>go</strong> <em>Special Operator</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>go</strong> <em>tag →</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>tag</em>—a <em>go tag</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>go</strong> transfers control to the point in the body of an enclosing <strong>tagbody</strong> form labeled by a tag <strong>eql</strong> to <em>tag</em>. If there is no such <em>tag</em> in the body, the bodies of lexically containing <strong>tagbody</strong> <em>forms</em> (if any) are examined as well. If several tags are <strong>eql</strong> to <em>tag</em>, control is transferred to whichever matching <em>tag</em> is contained in the innermost <strong>tagbody</strong> form that contains the <strong>go</strong>. The consequences are undefined if there is no matching <em>tag</em> lexically visible to the point of the <strong>go</strong>.</p>
+<p>The transfer of control initiated by <strong>go</strong> is performed as described in Section 5.2 (Transfer of Control to an Exit Point).</p>
+<p><strong>Examples:</strong></p>
+<p>(tagbody</p>
+<p>(setq val 2)</p>
+<p>(go lp)</p>
+<p>(incf val 3)</p>
+<p>lp (incf val 4)) <em>→</em> NIL</p>
+<p>val <em>→</em> 6</p>
+<p>The following is in error because there is a normal exit of the <strong>tagbody</strong> before the <strong>go</strong> is executed.</p>
+<p>(let ((a nil))</p>
+<p>(tagbody t (setq a #’(lambda () (go t))))</p>
+<p>(funcall a))</p>
+<p>The following is in error because the <strong>tagbody</strong> is passed over before the <strong>go</strong> <em>form</em> is executed.</p>
+<p>(funcall (block nil</p>
+<p>(tagbody a (return #’(lambda () (go a))))))</p>
+<p><strong>See Also:</strong></p>
+<p><strong>tagbody</strong></p>
+<p><strong>return-from</strong> <em>Special Operator</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>return-from</strong> <em>name</em> [<em>result</em>] <em>→</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>name</em>—a <em>block tag</em>; not evaluated.</p>
+<p><em>result</em>—a <em>form</em>; evaluated. The default is <strong>nil</strong>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns control and <em>multiple values</em>&lt;sub&gt;2&lt;/sub&gt; from a lexically enclosing <em>block</em>.</p>
+<p>A <strong>block</strong> <em>form</em> named <em>name</em> must lexically enclose the occurrence of <strong>return-from</strong>; any <em>values yielded</em> by the <em>evaluation</em> of <em>result</em> are immediately returned from the innermost such lexically enclosing <em>block</em>.</p>
+<p>The transfer of control initiated by <strong>return-from</strong> is performed as described in Section 5.2 (Transfer of Control to an Exit Point).</p>
+<p><strong>Examples:</strong></p>
+<p>(block alpha (return-from alpha) 1) <em>→</em> NIL</p>
+<p>(block alpha (return-from alpha 1) 2) <em>→</em> 1</p>
+<p>(block alpha (return-from alpha (values 1 2)) 3) <em>→</em> 1, 2</p>
+<p>(let ((a 0))</p>
+<p>(dotimes (i 10) (incf a) (when (oddp i) (return)))</p>
+<p>a) <em>→</em> 2</p>
+<p>Data and Control Flow <strong>5–45</strong></p>
+<p><strong>return-from</strong></p>
+<p>(defun temp (x)</p>
+<p>(if x (return-from temp ’dummy))</p>
+<p>\44) <em>→</em> TEMP</p>
+<p>(temp nil) <em>→</em> 44</p>
+<p>(temp t) <em>→</em> DUMMY</p>
+<p>(block out</p>
+<p>(flet ((exit (n) (return-from out n)))</p>
+<p>(block out (exit 1)))</p>
+<p>\2) <em>→</em> 1</p>
+<p>(block nil</p>
+<p>(unwind-protect (return-from nil 1)</p>
+<p>(return-from nil 2)))</p>
+<p><em>→</em> 2</p>
+<p>(dolist (flag ’(nil t))</p>
+<p>(block nil</p>
+<p>(let ((x 5))</p>
+<p>(declare (special x))</p>
+<p>(unwind-protect (return-from nil)</p>
+<p>(print x))))</p>
+<p>(print ’here))</p>
+<p>▷ 5</p>
+<p>▷ HERE</p>
+<p>▷ 5</p>
+<p>▷ HERE</p>
+<p><em>→</em> NIL</p>
+<p>(dolist (flag ’(nil t))</p>
+<p>(block nil</p>
+<p>(let ((x 5))</p>
+<p>(declare (special x))</p>
+<p>(unwind-protect</p>
+<p>(if flag (return-from nil))</p>
+<p>(print x))))</p>
+<p>(print ’here))</p>
+<p>▷ 5</p>
+<p>▷ HERE</p>
+<p>▷ 5</p>
+<p>▷ HERE</p>
+<p><em>→</em> NIL</p>
+<p>The following has undefined consequences because the <strong>block</strong> <em>form</em> exits normally before the <strong>return-from</strong> <em>form</em> is attempted.</p>
+<p>(funcall (block nil #’(lambda () (return-from nil)))) is an error.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>block</strong>, <strong>return</strong>, Section 3.1 (Evaluation)</p>
+<p><strong>return</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>return</strong> [<em>result</em>] <em>→</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>result</em>—a <em>form</em>; evaluated. The default is <strong>nil</strong>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns, as if by <strong>return-from</strong>, from the <em>block</em> named <strong>nil</strong>.</p>
+<p><strong>Examples:</strong></p>
+<p>(block nil (return) 1) <em>→</em> NIL</p>
+<p>(block nil (return 1) 2) <em>→</em> 1</p>
+<p>(block nil (return (values 1 2)) 3) <em>→</em> 1, 2</p>
+<p>(block nil (block alpha (return 1) 2)) <em>→</em> 1</p>
+<p>(block alpha (block nil (return 1)) 2) <em>→</em> 2</p>
+<p>(block nil (block nil (return 1) 2)) <em>→</em> 1</p>
+<p><strong>See Also:</strong></p>
+<p><strong>block</strong>, <strong>return-from</strong>, Section 3.1 (Evaluation)</p>
+<p><strong>Notes:</strong></p>
+<p>(return) <em>≡</em> (return-from nil)</p>
+<p>(return <em>form</em>) <em>≡</em> (return-from nil <em>form</em>)</p>
+<p>The <em>implicit blocks established</em> by <em>macros</em> such as <strong>do</strong> are often named <strong>nil</strong>, so that <strong>return</strong> can be used to exit from such <em>forms</em>.</p>
+<p>Data and Control Flow <strong>5–47</strong></p>
+<p><strong>tagbody</strong></p>
+<p><strong>tagbody</strong> <em>Special Operator</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>tagbody</strong> <em>{tag | statement}</em>* <em>→</em> <strong>nil</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>tag</em>—a <em>go tag</em>; not evaluated.</p>
+<p><em>statement</em>—a <em>compound form</em>; evaluated as described below.</p>
+<p><strong>Description:</strong></p>
+<p>Executes zero or more <em>statements</em> in a <em>lexical environment</em> that provides for control transfers to labels indicated by the <em>tags</em>.</p>
+<p>The <em>statements</em> in a <strong>tagbody</strong> are <em>evaluated</em> in order from left to right, and their <em>values</em> are discarded. If at any time there are no remaining <em>statements</em>, <strong>tagbody</strong> returns <strong>nil</strong>. However, if (go <em>tag</em>) is <em>evaluated</em>, control jumps to the part of the body labeled with the <em>tag</em>. (Tags are compared with <strong>eql</strong>.)</p>
+<p>A <em>tag</em> established by <strong>tagbody</strong> has <em>lexical scope</em> and has <em>dynamic extent</em>. Once <strong>tagbody</strong> has been exited, it is no longer valid to <strong>go</strong> to a <em>tag</em> in its body. It is permissible for <strong>go</strong> to jump to a <strong>tagbody</strong> that is not the innermost <strong>tagbody</strong> containing that <strong>go</strong>; the <em>tags</em> established by a <strong>tagbody</strong> only shadow other <em>tags</em> of like name.</p>
+<p>The determination of which elements of the body are <em>tags</em> and which are <em>statements</em> is made prior to any <em>macro expansion</em> of that element. If a <em>statement</em> is a <em>macro form</em> and its <em>macro expansion</em> is an <em>atom</em>, that <em>atom</em> is treated as a <em>statement</em>, not a <em>tag</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(let (val)</p>
+<p>(tagbody</p>
+<p>(setq val 1)</p>
+<p>(go point-a)</p>
+<p>(incf val 16)</p>
+<p>point-c</p>
+<p>(incf val 04)</p>
+<p>(go point-b)</p>
+<p>(incf val 32)</p>
+<p>point-a</p>
+<p>(incf val 02)</p>
+<p>(go point-c)</p>
+<p>(incf val 64)</p>
+<p>point-b</p>
+<p>(incf val 08))</p>
+<p>val)</p>
+<p><em>→</em> 15</p>
+<p>(defun f1 (flag)</p>
+<p>(let ((n 1))</p>
+<p>(tagbody</p>
+<p>(setq n (f2 flag #’(lambda () (go out))))</p>
+<p>out</p>
+<p>(prin1 n))))</p>
+<p><em>→</em> F1</p>
+<p>(defun f2 (flag escape)</p>
+<p>(if flag (funcall escape) 2))</p>
+<p><em>→</em> F2</p>
+<p>(f1 nil)</p>
+<p>▷ 2</p>
+<p><em>→</em> NIL</p>
+<p>(f1 t)</p>
+<p>▷ 1</p>
+<p><em>→</em> NIL</p>
+<p><strong>See Also:</strong></p>
+<p><strong>go</strong></p>
+<p><strong>Notes:</strong></p>
+<p>The <em>macros</em> in Figure 5–10 have <em>implicit tagbodies</em>.</p>
+<table><thead><tr><th style="text-align:left">&lt;p&gt;<strong>do do-external-symbols dotimes do* do-symbols prog</strong> &lt;/p&gt;&lt;p&gt;<strong>do-all-symbols dolist prog*</strong>&lt;/p&gt;</th></tr></thead></table>
+<p><strong>Figure 5–10. Macros that have implicit tagbodies.</strong></p>
+<p><strong>throw</strong> <em>Special Operator</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>throw</strong> <em>tag result-form →</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>tag</em>—a <em>catch tag</em>; evaluated.</p>
+<p><em>result-form</em>—a <em>form</em>; evaluated as described below.</p>
+<p>Data and Control Flow <strong>5–49</strong></p>
+<p><strong>throw</strong></p>
+<p><strong>Description:</strong></p>
+<p><strong>throw</strong> causes a non-local control transfer to a <strong>catch</strong> whose tag is <strong>eq</strong> to <em>tag</em>.</p>
+<p><em>Tag</em> is evaluated first to produce an <em>object</em> called the throw tag; then <em>result-form</em> is evaluated, and its results are saved. If the <em>result-form</em> produces multiple values, then all the values are saved. The most recent outstanding <strong>catch</strong> whose <em>tag</em> is <strong>eq</strong> to the throw tag is exited; the saved results are returned as the value or values of <strong>catch</strong>.</p>
+<p>The transfer of control initiated by <strong>throw</strong> is performed as described in Section 5.2 (Transfer of Control to an Exit Point).</p>
+<p><strong>Examples:</strong></p>
+<p>(catch ’result</p>
+<p>(setq i 0 j 0)</p>
+<p>(loop (incf j 3) (incf i)</p>
+<p>(if (= i 3) (throw ’result (values i j))))) <em>→</em> 3, 9</p>
+<p>(catch nil</p>
+<p>(unwind-protect (throw nil 1)</p>
+<p>(throw nil 2))) <em>→</em> 2</p>
+<p>The consequences of the following are undefined because the <strong>catch</strong> of b is passed over by the first <strong>throw</strong>, hence portable programs must assume that its <em>dynamic extent</em> is terminated. The <em>binding</em> of the <em>catch tag</em> is not yet <em>disestablished</em> and therefore it is the target of the second <strong>throw</strong>.</p>
+<p>(catch ’a</p>
+<p>(catch ’b</p>
+<p>(unwind-protect (throw ’a 1)</p>
+<p>(throw ’b 2))))</p>
+<p>The following prints “The inner catch returns <!-- -->:SECOND-THROW<!-- -->” and then returns <!-- -->:outer-catch<!-- -->.</p>
+<p>(catch ’foo</p>
+<p>(format t &quot;The inner catch returns <del>s.</del>%&quot;</p>
+<p>(catch ’foo</p>
+<p>(unwind-protect (throw ’foo <!-- -->:first-throw<!-- -->)</p>
+<p>(throw ’foo <!-- -->:second-throw<!-- -->))))</p>
+<p>:outer-catch<!-- -->)</p>
+<p>▷ The inner catch returns <!-- -->:SECOND-THROW</p>
+<p><em>→</em> <!-- -->:OUTER-CATCH</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>If there is no outstanding <em>catch tag</em> that matches the throw tag, no unwinding of the stack is</p>
+<p>performed, and an error of <em>type</em> <strong>control-error</strong> is signaled. When the error is signaled, the <em>dynamic environment</em> is that which was in force at the point of the <strong>throw</strong>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>block</strong>, <strong>catch</strong>, <strong>return-from</strong>, <strong>unwind-protect</strong>, Section 3.1 (Evaluation)</p>
+<p><strong>Notes:</strong></p>
+<p><strong>catch</strong> and <strong>throw</strong> are normally used when the <em>exit point</em> must have <em>dynamic scope</em> (<em>e.g.</em>, the <strong>throw</strong> is not lexically enclosed by the <strong>catch</strong>), while <strong>block</strong> and <strong>return</strong> are used when <em>lexical scope</em> is sufficient.</p>
+<p><strong>unwind-protect</strong> <em>Special Operator</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>unwind-protect</strong> <em>protected-form {cleanup-form}</em>* <em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>protected-form</em>—a <em>form</em>.</p>
+<p><em>cleanup-form</em>—a <em>form</em>.</p>
+<p><em>results</em>—the <em>values</em> of the <em>protected-form</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>unwind-protect</strong> evaluates <em>protected-form</em> and guarantees that <em>cleanup-forms</em> are executed before <strong>unwind-protect</strong> exits, whether it terminates normally or is aborted by a control transfer of some kind. <strong>unwind-protect</strong> is intended to be used to make sure that certain side effects take place after the evaluation of <em>protected-form</em>.</p>
+<p>If a <em>non-local exit</em> occurs during execution of <em>cleanup-forms</em>, no special action is taken. The <em>cleanup-forms</em> of <strong>unwind-protect</strong> are not protected by that <strong>unwind-protect</strong>.</p>
+<p><strong>unwind-protect</strong> protects against all attempts to exit from <em>protected-form</em>, including <strong>go</strong>, <strong>handler-case</strong>, <strong>ignore-errors</strong>, <strong>restart-case</strong>, <strong>return-from</strong>, <strong>throw</strong>, and <strong>with-simple-restart</strong>.</p>
+<p>Undoing of <em>handler</em> and <em>restart bindings</em> during an exit happens in parallel with the undoing of the bindings of <em>dynamic variables</em> and <strong>catch</strong> tags, in the reverse order in which they were established. The effect of this is that <em>cleanup-form</em> sees the same <em>handler</em> and <em>restart bindings</em>, as well as <em>dynamic variable bindings</em> and <strong>catch</strong> tags, as were visible when the <strong>unwind-protect</strong> was entered.</p>
+<p><strong>Examples:</strong></p>
+<p>(tagbody</p>
+<p>(let ((x 3))</p>
+<p>Data and Control Flow <strong>5–51</strong></p>
+<p><strong>unwind-protect</strong></p>
+<p>(unwind-protect</p>
+<p>(if (numberp x) (go out))</p>
+<p>(print x)))</p>
+<p>out</p>
+<p>...)</p>
+<p>When <strong>go</strong> is executed, the call to <strong>print</strong> is executed first, and then the transfer of control to the tag out is completed.</p>
+<p>(defun dummy-function (x)</p>
+<p>(setq state ’running)</p>
+<p>(unless (numberp x) (throw ’abort ’not-a-number))</p>
+<p>(setq state (1+ x))) <em>→</em> DUMMY-FUNCTION</p>
+<p>(catch ’abort (dummy-function 1)) <em>→</em> 2</p>
+<p>state <em>→</em> 2</p>
+<p>(catch ’abort (dummy-function ’trash)) <em>→</em> NOT-A-NUMBER</p>
+<p>state <em>→</em> RUNNING</p>
+<p>(catch ’abort (unwind-protect (dummy-function ’trash)</p>
+<p>(setq state ’aborted))) <em>→</em> NOT-A-NUMBER</p>
+<p>state <em>→</em> ABORTED</p>
+<p>The following code is not correct:</p>
+<p>(unwind-protect</p>
+<p>(progn (incf *access-count*)</p>
+<p>(perform-access))</p>
+<p>(decf *access-count*))</p>
+<p>If an exit occurs before completion of <strong>incf</strong>, the <strong>decf</strong> <em>form</em> is executed anyway, resulting in an incorrect value for *access-count*. The correct way to code this is as follows:</p>
+<p>(let ((old-count *access-count*))</p>
+<p>(unwind-protect</p>
+<p>(progn (incf *access-count*)</p>
+<p>(perform-access))</p>
+<p>(setq *access-count* old-count)))</p>
+<p>;;; The following returns 2.</p>
+<p>(block nil</p>
+<p>(unwind-protect (return 1)</p>
+<p>(return 2)))</p>
+<p>;;; The following has undefined consequences.</p>
+<p>(block a</p>
+<p>(block b</p>
+<p>(unwind-protect (return-from a 1)</p>
+<p><strong>unwind-protect</strong></p>
+<p>(return-from b 2))))</p>
+<p>;;; The following returns 2.</p>
+<p>(catch nil</p>
+<p>(unwind-protect (throw nil 1)</p>
+<p>(throw nil 2)))</p>
+<p>;;; The following has undefined consequences because the catch of B is</p>
+<p>;;; passed over by the first THROW, hence portable programs must assume</p>
+<p>;;; its dynamic extent is terminated. The binding of the catch tag is not</p>
+<p>;;; yet disestablished and therefore it is the target of the second throw.</p>
+<p>(catch ’a</p>
+<p>(catch ’b</p>
+<p>(unwind-protect (throw ’a 1)</p>
+<p>(throw ’b 2))))</p>
+<p>;;; The following prints &quot;The inner catch returns <!-- -->:SECOND-THROW<!-- -->&quot;</p>
+<p>;;; and then returns <!-- -->:OUTER-CATCH<!-- -->.</p>
+<p>(catch ’foo</p>
+<p>(format t &quot;The inner catch returns <del>s.</del>%&quot;</p>
+<p>(catch ’foo</p>
+<p>(unwind-protect (throw ’foo <!-- -->:first-throw<!-- -->)</p>
+<p>(throw ’foo <!-- -->:second-throw<!-- -->))))</p>
+<p>:outer-catch<!-- -->)</p>
+<p>;;; The following returns 10. The inner CATCH of A is passed over, but</p>
+<p>;;; because that CATCH is disestablished before the THROW to A is executed,</p>
+<p>;;; it isn’t seen.</p>
+<p>(catch ’a</p>
+<p>(catch ’b</p>
+<p>(unwind-protect (1+ (catch ’a (throw ’b 1)))</p>
+<p>(throw ’a 10))))</p>
+<p>;;; The following has undefined consequences because the extent of</p>
+<p>;;; the (CATCH ’BAR ...) exit ends when the (THROW ’FOO ...)</p>
+<p>;;; commences.</p>
+<p>(catch ’foo</p>
+<p>(catch ’bar</p>
+<p>(unwind-protect (throw ’foo 3)</p>
+<p>(throw ’bar 4)</p>
+<p>(print ’xxx))))</p>
+<p>Data and Control Flow <strong>5–53</strong></p>
+<p>;;; The following returns 4; XXX is not printed.</p>
+<p>;;; The (THROW ’FOO ...) has no effect on the scope of the BAR</p>
+<p>;;; catch tag or the extent of the (CATCH ’BAR ...) exit.</p>
+<p>(catch ’bar</p>
+<p>(catch ’foo</p>
+<p>(unwind-protect (throw ’foo 3)</p>
+<p>(throw ’bar 4)</p>
+<p>(print ’xxx))))</p>
+<p>;;; The following prints 5.</p>
+<p>(block nil</p>
+<p>(let ((x 5))</p>
+<p>(declare (special x))</p>
+<p>(unwind-protect (return)</p>
+<p>(print x))))</p>
+<p><strong>See Also:</strong></p>
+<p><strong>catch</strong>, <strong>go</strong>, <strong>handler-case</strong>, <strong>restart-case</strong>, <strong>return</strong>, <strong>return-from</strong>, <strong>throw</strong>, Section 3.1 (Evaluation) <strong>nil</strong> <em>Constant Variable</em></p>
+<p><strong>Constant Value:</strong></p>
+<p><strong>nil</strong>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>nil</strong> represents both <em>boolean</em> (and <em>generalized boolean</em>) <em>false</em> and the <em>empty list</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>nil <em>→</em> NIL</p>
+<p><strong>See Also:</strong></p>
+<p><strong>t</strong></p>
+<p><strong>not</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>not</strong> <em>x → boolean</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>x</em>—a <em>generalized boolean</em> (<em>i.e.</em>, any <em>object</em>).</p>
+<p><em>boolean</em>—a <em>boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns <strong>t</strong> if <em>x</em> is <em>false</em>; otherwise, returns <strong>nil</strong>.</p>
+<p><strong>Examples:</strong></p>
+<p>(not nil) <em>→</em> T</p>
+<p>(not ’()) <em>→</em> T</p>
+<p>(not (integerp ’sss)) <em>→</em> T</p>
+<p>(not (integerp 1)) <em>→</em> NIL</p>
+<p>(not 3.7) <em>→</em> NIL</p>
+<p>(not ’apple) <em>→</em> NIL</p>
+<p><strong>See Also:</strong></p>
+<p><strong>null</strong></p>
+<p><strong>Notes:</strong></p>
+<p><strong>not</strong> is intended to be used to invert the ‘truth value’ of a <em>boolean</em> (or <em>generalized boolean</em>) whereas <strong>null</strong> is intended to be used to test for the <em>empty list</em>. Operationally, <strong>not</strong> and <strong>null</strong> compute the same result; which to use is a matter of style.</p>
+<p><strong>t</strong> <em>Constant Variable</em></p>
+<p><strong>Constant Value:</strong></p>
+<p><strong>t</strong>.</p>
+<p><strong>Description:</strong></p>
+<p>The <em>boolean</em> representing true, and the canonical <em>generalized boolean</em> representing true. Although any <em>object</em> other than <strong>nil</strong> is considered <em>true</em>, <strong>t</strong> is generally used when there is no special reason to prefer one such <em>object</em> over another.</p>
+<p>Data and Control Flow <strong>5–55</strong></p>
+<p>The <em>symbol</em> <strong>t</strong> is also sometimes used for other purposes as well. For example, as the <em>name</em> of a <em>class</em>, as a <em>designator</em> (<em>e.g.</em>, a <em>stream designator</em> ) or as a special symbol for some syntactic reason (<em>e.g.</em>, in <strong>case</strong> and <strong>typecase</strong> to label the <em>otherwise-clause</em>).</p>
+<p><strong>Examples:</strong></p>
+<p>t <em>→</em> T</p>
+<p>(eq t ’t) <em>→ true</em></p>
+<p>(find-class ’t) <em>→</em> #&lt;CLASS T 610703333&gt;</p>
+<p>(case ’a (a 1) (t 2)) <em>→</em> 1</p>
+<p>(case ’b (a 1) (t 2)) <em>→</em> 2</p>
+<p>(prin1 ’hello t)</p>
+<p>▷ HELLO</p>
+<p><em>→</em> HELLO</p>
+<p><strong>See Also:</strong></p>
+<p><strong>nil</strong></p>
+<p><strong>eq</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>eq</strong> <em>x y → generalized-boolean</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>x</em>—an <em>object</em>.</p>
+<p><em>y</em>—an <em>object</em>.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns <em>true</em> if its <em>arguments</em> are the same, identical <em>object</em>; otherwise, returns <em>false</em>. <strong>Examples:</strong></p>
+<p>(eq ’a ’b) <em>→ false</em></p>
+<p>(eq ’a ’a) <em>→ true</em></p>
+<p>(eq 3 3)</p>
+<p><em>→ true</em></p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→ false&lt;/i&gt;</p>
+<p>(eq 3 3.0) <em>→ false</em></p>
+<p>(eq 3.0 3.0)</p>
+<p><em>→ true</em></p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→ false&lt;/i&gt;</p>
+<p><strong>eq</strong></p>
+<p>(eq #c(3 -4) #c(3 -4))</p>
+<p><em>→ true</em></p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→ false&lt;/i&gt;</p>
+<p>(eq #c(3 -4.0) #c(3 -4)) <em>→ false</em></p>
+<p>(eq (cons ’a ’b) (cons ’a ’c)) <em>→ false</em></p>
+<p>(eq (cons ’a ’b) (cons ’a ’b)) <em>→ false</em></p>
+<p>(eq ’(a . b) ’(a . b))</p>
+<p><em>→ true</em></p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→ false&lt;/i&gt;</p>
+<p>(progn (setq x (cons ’a ’b)) (eq x x)) <em>→ true</em></p>
+<p>(progn (setq x ’(a . b)) (eq x x)) <em>→ true</em></p>
+<p>(eq #\A #\A)</p>
+<p><em>→ true</em></p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→ false&lt;/i&gt;</p>
+<p>(let ((x &quot;Foo&quot;)) (eq x x)) <em>→ true</em></p>
+<p>(eq &quot;Foo&quot; &quot;Foo&quot;)</p>
+<p><em>→ true</em></p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→ false&lt;/i&gt;</p>
+<p>(eq &quot;Foo&quot; (copy-seq &quot;Foo&quot;)) <em>→ false</em></p>
+<p>(eq &quot;FOO&quot; &quot;foo&quot;) <em>→ false</em></p>
+<p>(eq &quot;string-seq&quot; (copy-seq &quot;string-seq&quot;)) <em>→ false</em></p>
+<p>(let ((x 5)) (eq x x))</p>
+<p><em>→ true</em></p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→ false&lt;/i&gt;</p>
+<p><strong>See Also:</strong></p>
+<p><strong>eql</strong>, <strong>equal</strong>, <strong>equalp</strong>, <strong>=</strong>, Section 3.2 (Compilation)</p>
+<p><strong>Notes:</strong></p>
+<p><em>Objects</em> that appear the same when printed are not necessarily <strong>eq</strong> to each other. <em>Symbols</em> that print the same usually are <strong>eq</strong> to each other because of the use of the <strong>intern</strong> function. However, <em>numbers</em> with the same value need not be <strong>eq</strong>, and two similar <em>lists</em> are usually not <em>identical</em>.</p>
+<p>An implementation is permitted to make “copies” of <em>characters</em> and <em>numbers</em> at any time. The effect is that Common Lisp makes no guarantee that <strong>eq</strong> is true even when both its arguments are “the same thing” if that thing is a <em>character</em> or <em>number</em> .</p>
+<p>Most Common Lisp <em>operators</em> use <strong>eql</strong> rather than <strong>eq</strong> to compare objects, or else they default to <strong>eql</strong> and only use <strong>eq</strong> if specifically requested to do so. However, the following <em>operators</em> are defined to use <strong>eq</strong> rather than <strong>eql</strong> in a way that cannot be overridden by the <em>code</em> which employs them:</p>
+<p>Data and Control Flow <strong>5–57</strong></p>
+<table><thead><tr><th style="text-align:left">&lt;p&gt;<strong>catch getf throw</strong> &lt;/p&gt;&lt;p&gt;<strong>get remf</strong> &lt;/p&gt;&lt;p&gt;<strong>get-properties remprop</strong>&lt;/p&gt;</th></tr></thead></table>
+<p><strong>Figure 5–11. Operators that always prefer EQ over EQL</strong></p>
+<p><strong>eql</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>eql</strong> <em>x y → generalized-boolean</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>x</em>—an <em>object</em>.</p>
+<p><em>y</em>—an <em>object</em>.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p>The value of <strong>eql</strong> is <em>true</em> of two objects, <em>x</em> and <em>y</em>, in the folowing cases:</p>
+<p>1. If <em>x</em> and <em>y</em> are <strong>eq</strong>.</p>
+<p>2. If <em>x</em> and <em>y</em> are both <em>numbers</em> of the same <em>type</em> and the same value.</p>
+<p>3. If they are both <em>characters</em> that represent the same character.</p>
+<p>Otherwise the value of <strong>eql</strong> is <em>false</em>.</p>
+<p>If an implementation supports positive and negative zeros as <em>distinct</em> values, then (eql 0.0 -0.0) returns <em>false</em>. Otherwise, when the syntax -0.0 is read it is interpreted as the value 0.0, and so (eql 0.0 -0.0) returns <em>true</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(eql ’a ’b) <em>→ false</em></p>
+<p>(eql ’a ’a) <em>→ true</em></p>
+<p>(eql 3 3) <em>→ true</em></p>
+<p>(eql 3 3.0) <em>→ false</em></p>
+<p>(eql 3.0 3.0) <em>→ true</em></p>
+<p>(eql #c(3 -4) #c(3 -4)) <em>→ true</em></p>
+<p>(eql #c(3 -4.0) #c(3 -4)) <em>→ false</em></p>
+<p>(eql (cons ’a ’b) (cons ’a ’c)) <em>→ false</em></p>
+<p>(eql (cons ’a ’b) (cons ’a ’b)) <em>→ false</em></p>
+<p>(eql ’(a . b) ’(a . b))</p>
+<p><em>→ true</em></p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→ false&lt;/i&gt;</p>
+<p>(progn (setq x (cons ’a ’b)) (eql x x)) <em>→ true</em></p>
+<p>(progn (setq x ’(a . b)) (eql x x)) <em>→ true</em></p>
+<p>(eql #\A #\A) <em>→ true</em></p>
+<p>(eql &quot;Foo&quot; &quot;Foo&quot;)</p>
+<p><em>→ true</em></p>
+<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→ false&lt;/i&gt;</p>
+<p>(eql &quot;Foo&quot; (copy-seq &quot;Foo&quot;)) <em>→ false</em></p>
+<p>(eql &quot;FOO&quot; &quot;foo&quot;) <em>→ false</em></p>
+<p>Normally (eql 1.0s0 1.0d0) is false, under the assumption that 1.0s0 and 1.0d0 are of distinct data types. However, implementations that do not provide four distinct floating-point formats are permitted to “collapse” the four formats into some smaller number of them; in such an implementation (eql 1.0s0 1.0d0) might be true.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>eq</strong>, <strong>equal</strong>, <strong>equalp</strong>, <strong>=</strong>, <strong>char=</strong></p>
+<p><strong>Notes:</strong></p>
+<p><strong>eql</strong> is the same as <strong>eq</strong>, except that if the arguments are <em>characters</em> or <em>numbers</em> of the same type then their values are compared. Thus <strong>eql</strong> tells whether two <em>objects</em> are conceptually the same, whereas <strong>eq</strong> tells whether two <em>objects</em> are implementationally identical. It is for this reason that <strong>eql</strong>, not <strong>eq</strong>, is the default comparison predicate for <em>operators</em> that take <em>sequences</em> as arguments.</p>
+<p><strong>eql</strong> may not be true of two <em>floats</em> even when they represent the same value. <strong>=</strong> is used to compare mathematical values.</p>
+<p>Two <em>complex</em> numbers are considered to be <strong>eql</strong> if their real parts are <strong>eql</strong> and their imaginary parts are <strong>eql</strong>. For example, (eql #C(4 5) #C(4 5)) is <em>true</em> and (eql #C(4 5) #C(4.0 5.0)) is <em>false</em>. Note that while (eql #C(5.0 0.0) 5.0) is <em>false</em>, (eql #C(5 0) 5) is <em>true</em>. In the case of</p>
+<p>(eql #C(5.0 0.0) 5.0) the two arguments are of different types, and so cannot satisfy <strong>eql</strong>. In the case of (eql #C(5 0) 5), #C(5 0) is not a <em>complex</em> number, but is automatically reduced to the <em>integer</em> 5.</p>
+<p><strong>equal</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>equal</strong> <em>x y → generalized-boolean</em></p>
+<p>Data and Control Flow <strong>5–59</strong></p>
+<p><strong>equal</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>x</em>—an <em>object</em>.</p>
+<p><em>y</em>—an <em>object</em>.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns <em>true</em> if <em>x</em> and <em>y</em> are structurally similar (isomorphic) <em>objects</em>. <em>Objects</em> are treated as follows by <strong>equal</strong>.</p>
+<p><em>Symbols</em>, <em>Numbers</em>, and <em>Characters</em></p>
+<p><strong>equal</strong> is <em>true</em> of two <em>objects</em> if they are <em>symbols</em> that are <strong>eq</strong>, if they are <em>numbers</em> that are <strong>eql</strong>, or if they are <em>characters</em> that are <strong>eql</strong>.</p>
+<p><em>Conses</em></p>
+<p>For <em>conses</em>, <strong>equal</strong> is defined recursively as the two <em>cars</em> being <strong>equal</strong> and the two <em>cdrs</em> being <strong>equal</strong>.</p>
+<p><em>Arrays</em></p>
+<p>Two <em>arrays</em> are <strong>equal</strong> only if they are <strong>eq</strong>, with one exception: <em>strings</em> and <em>bit vectors</em> are compared element-by-element (using <strong>eql</strong>). If either <em>x</em> or <em>y</em> has a <em>fill pointer</em> , the <em>fill pointer</em> limits the number of elements examined by <strong>equal</strong>. Uppercase and lowercase letters in <em>strings</em> are considered by <strong>equal</strong> to be different.</p>
+<p><em>Pathnames</em></p>
+<p>Two <em>pathnames</em> are <strong>equal</strong> if and only if all the corresponding components (host, device, and so on) are equivalent. Whether or not uppercase and lowercase letters are considered equivalent in <em>strings</em> appearing in components is <em>implementation-dependent</em>. <em>pathnames</em> that are <strong>equal</strong> should be functionally equivalent.</p>
+<p><strong>Other (Structures, hash-tables, instances,</strong> <em>. . .</em><strong>)</strong></p>
+<p>Two other <em>objects</em> are <strong>equal</strong> only if they are <strong>eq</strong>.</p>
+<p><strong>equal</strong> does not descend any <em>objects</em> other than the ones explicitly specified above. Figure 5–12 summarizes the information given in the previous list. In addition, the figure specifies the priority of the behavior of <strong>equal</strong>, with upper entries taking priority over lower ones.</p>
+<p><strong>equal</strong></p>
+<table><thead><tr><th style="text-align:left"><strong>Type Behavior</strong></th></tr></thead><tbody><tr><td style="text-align:left">&lt;p&gt;<em>number</em> uses <strong>eql</strong> &lt;/p&gt;&lt;p&gt;<em>character</em> uses <strong>eql</strong> &lt;/p&gt;&lt;p&gt;<em>cons</em> descends &lt;/p&gt;&lt;p&gt;<em>bit vector</em> descends &lt;/p&gt;&lt;p&gt;<em>string</em> descends &lt;/p&gt;&lt;p&gt;<em>pathname</em> “functionally equivalent” &lt;/p&gt;&lt;p&gt;<em>structure</em> uses <strong>eq</strong> &lt;/p&gt;&lt;p&gt;Other <em>array</em> uses <strong>eq</strong> &lt;/p&gt;&lt;p&gt;<em>hash table</em> uses <strong>eq</strong> &lt;/p&gt;&lt;p&gt;Other <em>object</em> uses <strong>eq</strong>&lt;/p&gt;</td></tr></tbody></table>
+<p><strong>Figure 5–12. Summary and priorities of behavior of equal</strong></p>
+<p>Any two <em>objects</em> that are <strong>eql</strong> are also <strong>equal</strong>.</p>
+<p><strong>equal</strong> may fail to terminate if <em>x</em> or <em>y</em> is circular.</p>
+<p><strong>Examples:</strong></p>
+<p>(equal ’a ’b) <em>→ false</em></p>
+<p>(equal ’a ’a) <em>→ true</em></p>
+<p>(equal 3 3) <em>→ true</em></p>
+<p>(equal 3 3.0) <em>→ false</em></p>
+<p>(equal 3.0 3.0) <em>→ true</em></p>
+<p>(equal #c(3 -4) #c(3 -4)) <em>→ true</em></p>
+<p>(equal #c(3 -4.0) #c(3 -4)) <em>→ false</em></p>
+<p>(equal (cons ’a ’b) (cons ’a ’c)) <em>→ false</em></p>
+<p>(equal (cons ’a ’b) (cons ’a ’b)) <em>→ true</em></p>
+<p>(equal #\A #\A) <em>→ true</em></p>
+<p>(equal #\A #\a) <em>→ false</em></p>
+<p>(equal &quot;Foo&quot; &quot;Foo&quot;) <em>→ true</em></p>
+<p>(equal &quot;Foo&quot; (copy-seq &quot;Foo&quot;)) <em>→ true</em></p>
+<p>(equal &quot;FOO&quot; &quot;foo&quot;) <em>→ false</em></p>
+<p>(equal &quot;This-string&quot; &quot;This-string&quot;) <em>→ true</em></p>
+<p>(equal &quot;This-string&quot; &quot;this-string&quot;) <em>→ false</em></p>
+<p><strong>See Also:</strong></p>
+<p><strong>eq</strong>, <strong>eql</strong>, <strong>equalp</strong>, <strong>=</strong>, <strong>string=</strong>, <strong>string-equal</strong>, <strong>char=</strong>, <strong>char-equal</strong>, <strong>tree-equal</strong></p>
+<p><strong>Notes:</strong></p>
+<p><em>Object</em> equality is not a concept for which there is a uniquely determined correct algorithm. The appropriateness of an equality predicate can be judged only in the context of the needs of some particular program. Although these functions take any type of argument and their names sound</p>
+<p>Data and Control Flow <strong>5–61</strong></p>
+<p>very generic, <strong>equal</strong> and <strong>equalp</strong> are not appropriate for every application.</p>
+<p>A rough rule of thumb is that two <em>objects</em> are <strong>equal</strong> if and only if their printed representations are the same.</p>
+<p><strong>equalp</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>equalp</strong> <em>x y → generalized-boolean</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>x</em>—an <em>object</em>.</p>
+<p><em>y</em>—an <em>object</em>.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns <em>true</em> if <em>x</em> and <em>y</em> are <strong>equal</strong>, or if they have components that are of the same <em>type</em> as each other and if those components are <strong>equalp</strong>; specifically, <strong>equalp</strong> returns <em>true</em> in the following cases:</p>
+<p><em>Characters</em></p>
+<p>If two <em>characters</em> are <strong>char-equal</strong>.</p>
+<p><em>Numbers</em></p>
+<p>If two <em>numbers</em> are the <em>same</em> under <strong>=</strong>.</p>
+<p><em>Conses</em></p>
+<p>If the two <em>cars</em> in the <em>conses</em> are <strong>equalp</strong> and the two <em>cdrs</em> in the <em>conses</em> are <strong>equalp</strong>.</p>
+<p><em>Arrays</em></p>
+<p>If two <em>arrays</em> have the same number of dimensions, the dimensions match, and the corresponding <em>active elements</em> are <strong>equalp</strong>. The <em>types</em> for which the <em>arrays</em> are <em>specialized</em> need not match; for example, a <em>string</em> and a general <em>array</em> that happens to contain the same <em>characters</em> are <strong>equalp</strong>. Because <strong>equalp</strong> performs <em>element</em>-by-<em>element</em> comparisons of <em>strings</em> and ignores the <em>case</em> of <em>characters</em>, <em>case</em> distinctions are ignored when <strong>equalp</strong> compares <em>strings</em>.</p>
+<p><strong>equalp</strong></p>
+<p><em>Structures</em></p>
+<p>If two <em>structures S</em>&lt;sub&gt;1&lt;/sub&gt; and <em>S</em>&lt;sub&gt;2&lt;/sub&gt; have the same <em>class</em> and the value of each <em>slot</em> in <em>S</em>&lt;sub&gt;1&lt;/sub&gt; is the <em>same</em> under <strong>equalp</strong> as the value of the corresponding <em>slot</em> in <em>S</em>&lt;sub&gt;2&lt;/sub&gt;.</p>
+<p><em>Hash Tables</em></p>
+<p><strong>equalp</strong> descends <em>hash-tables</em> by first comparing the count of entries and the <!-- -->:test<!-- --> function; if those are the same, it compares the keys of the tables using the <!-- -->:test<!-- --> function and then the values of the matching keys using <strong>equalp</strong> recursively.</p>
+<p><strong>equalp</strong> does not descend any <em>objects</em> other than the ones explicitly specified above. Figure 5–13 summarizes the information given in the previous list. In addition, the figure specifies the priority of the behavior of <strong>equalp</strong>, with upper entries taking priority over lower ones.</p>
+<table><thead><tr><th style="text-align:left"><strong>Type Behavior</strong></th></tr></thead><tbody><tr><td style="text-align:left">&lt;p&gt;<em>number</em> uses <strong>=</strong> &lt;/p&gt;&lt;p&gt;<em>character</em> uses <strong>char-equal</strong> &lt;/p&gt;&lt;p&gt;<em>cons</em> descends &lt;/p&gt;&lt;p&gt;<em>bit vector</em> descends &lt;/p&gt;&lt;p&gt;<em>string</em> descends &lt;/p&gt;&lt;p&gt;<em>pathname</em> same as <strong>equal</strong> &lt;/p&gt;&lt;p&gt;<em>structure</em> descends, as described above &lt;/p&gt;&lt;p&gt;Other <em>array</em> descends &lt;/p&gt;&lt;p&gt;<em>hash table</em> descends, as described above &lt;/p&gt;&lt;p&gt;Other <em>object</em> uses <strong>eq</strong>&lt;/p&gt;</td></tr></tbody></table>
+<p><strong>Figure 5–13. Summary and priorities of behavior of equalp</strong></p>
+<p><strong>Examples:</strong></p>
+<p>(equalp ’a ’b) <em>→ false</em></p>
+<p>(equalp ’a ’a) <em>→ true</em></p>
+<p>(equalp 3 3) <em>→ true</em></p>
+<p>(equalp 3 3.0) <em>→ true</em></p>
+<p>(equalp 3.0 3.0) <em>→ true</em></p>
+<p>(equalp #c(3 -4) #c(3 -4)) <em>→ true</em></p>
+<p>(equalp #c(3 -4.0) #c(3 -4)) <em>→ true</em></p>
+<p>(equalp (cons ’a ’b) (cons ’a ’c)) <em>→ false</em></p>
+<p>(equalp (cons ’a ’b) (cons ’a ’b)) <em>→ true</em></p>
+<p>(equalp #\A #\A) <em>→ true</em></p>
+<p>(equalp #\A #\a) <em>→ true</em></p>
+<p>(equalp &quot;Foo&quot; &quot;Foo&quot;) <em>→ true</em></p>
+<p>(equalp &quot;Foo&quot; (copy-seq &quot;Foo&quot;)) <em>→ true</em></p>
+<p>Data and Control Flow <strong>5–63</strong></p>
+<p>(equalp &quot;FOO&quot; &quot;foo&quot;) <em>→ true</em></p>
+<p>(setq array1 (make-array 6 <!-- -->:element-type<!-- --> ’integer</p>
+<p>:initial-contents<!-- --> ’(1 1 1 3 5 7)))</p>
+<p><em>→</em> #(1 1 1 3 5 7)</p>
+<p>(setq array2 (make-array 8 <!-- -->:element-type<!-- --> ’integer</p>
+<p>:initial-contents<!-- --> ’(1 1 1 3 5 7 2 6)</p>
+<p>:fill-pointer<!-- --> 6))</p>
+<p><em>→</em> #(1 1 1 3 5 7)</p>
+<p>(equalp array1 array2) <em>→ true</em></p>
+<p>(setq vector1 (vector 1 1 1 3 5 7)) <em>→</em> #(1 1 1 3 5 7)</p>
+<p>(equalp array1 vector1) <em>→ true</em></p>
+<p><strong>See Also:</strong></p>
+<p><strong>eq</strong>, <strong>eql</strong>, <strong>equal</strong>, <strong>=</strong>, <strong>string=</strong>, <strong>string-equal</strong>, <strong>char=</strong>, <strong>char-equal</strong></p>
+<p><strong>Notes:</strong></p>
+<p><em>Object</em> equality is not a concept for which there is a uniquely determined correct algorithm. The appropriateness of an equality predicate can be judged only in the context of the needs of some particular program. Although these functions take any type of argument and their names sound very generic, <strong>equal</strong> and <strong>equalp</strong> are not appropriate for every application.</p>
+<p><strong>identity</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>identity</strong> <em>object → object</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>object</em>—an <em>object</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns its argument <em>object</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(identity 101) <em>→</em> 101</p>
+<p>(mapcan #’identity (list (list 1 2 3) ’(4 5 6))) <em>→</em> (1 2 3 4 5 6)</p>
+<p><strong>Notes:</strong></p>
+<p><strong>identity</strong> is intended for use with functions that require a <em>function</em> as an argument.</p>
+<p>(eql x (identity x)) returns <em>true</em> for all possible values of <em>x</em>, but (eq x (identity x)) might return <em>false</em> when <em>x</em> is a <em>number</em> or <em>character</em> .</p>
+<p><strong>identity</strong> could be defined by</p>
+<p>(defun identity (x) x)</p>
+<p><strong>complement</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>complement</strong> <em>function → complement-function</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>function</em>—a <em>function</em>.</p>
+<p><em>complement-function</em>—a <em>function</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns a <em>function</em> that takes the same <em>arguments</em> as <em>function</em>, and has the same side-effect behavior as <em>function</em>, but returns only a single value: a <em>generalized boolean</em> with the opposite truth value of that which would be returned as the <em>primary value</em> of <em>function</em>. That is, when the <em>function</em> would have returned <em>true</em> as its <em>primary value</em> the <em>complement-function</em> returns <em>false</em>, and when the <em>function</em> would have returned <em>false</em> as its <em>primary value</em> the <em>complement-function</em> returns <em>true</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(funcall (complement #’zerop) 1) <em>→ true</em></p>
+<p>(funcall (complement #’characterp) #\A) <em>→ false</em></p>
+<p>(funcall (complement #’member) ’a ’(a b c)) <em>→ false</em></p>
+<p>(funcall (complement #’member) ’d ’(a b c)) <em>→ true</em></p>
+<p><strong>See Also:</strong></p>
+<p><strong>not</strong></p>
+<p><strong>Notes:</strong></p>
+<p>(complement <em>x</em>) <em>≡</em> #’(lambda (&amp;rest arguments) (not (apply <em>x</em> arguments)))</p>
+<p>In Common Lisp, functions with names like “<em>xxx</em>-if-not” are related to functions with names like “<em>xxx</em>-if” in that</p>
+<p>(<em>xxx</em>-if-not <em>f</em> . <em>arguments</em>) <em>≡</em> (<em>xxx</em>-if (complement <em>f</em>) . <em>arguments</em>)</p>
+<p>For example,</p>
+<p>(find-if-not #’zerop ’(0 0 3)) <em>≡</em></p>
+<p>(find-if (complement #’zerop) ’(0 0 3)) <em>→</em> 3</p>
+<p>Data and Control Flow <strong>5–65</strong></p>
+<p>Note that since the “<em>xxx</em>-if-not” <em>functions</em> and the <!-- -->:test-not<!-- --> arguments have been deprecated, uses of “<em>xxx</em>-if” <em>functions</em> or <!-- -->:test<!-- --> arguments with <strong>complement</strong> are preferred.</p>
+<p><strong>constantly</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>constantly</strong> <em>value → function</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>value</em>—an <em>object</em>.</p>
+<p><em>function</em>—a <em>function</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>constantly</strong> returns a <em>function</em> that accepts any number of arguments, that has no side-effects, and that always returns <em>value</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(mapcar (constantly 3) ’(a b c d)) <em>→</em> (3 3 3 3)</p>
+<p>(defmacro with-vars (vars &amp;body forms)</p>
+<p>‘((lambda ,vars ,@forms) ,@(mapcar (constantly nil) vars)))</p>
+<p><em>→</em> WITH-VARS</p>
+<p>(macroexpand ’(with-vars (a b) (setq a 3 b (* a a)) (list a b)))</p>
+<p><em>→</em> ((LAMBDA (A B) (SETQ A 3 B (* A A)) (LIST A B)) NIL NIL), <em>true</em></p>
+<p><strong>See Also:</strong></p>
+<p><strong>identity</strong></p>
+<p><strong>Notes:</strong></p>
+<p><strong>constantly</strong> could be defined by:</p>
+<p>(defun constantly (object)</p>
+<p>#’(lambda (&amp;rest arguments) object))</p>
+<p><strong>every, some, notevery, notany</strong></p>
+<p><strong>every, some, notevery, notany</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>every</strong> <em>predicate</em> &amp;rest <em>sequences</em>&lt;sup&gt;+&lt;/sup&gt; <em>→ generalized-boolean</em></p>
+<p><strong>some</strong> <em>predicate</em> &amp;rest <em>sequences</em>&lt;sup&gt;+&lt;/sup&gt; <em>→ result</em></p>
+<p><strong>notevery</strong> <em>predicate</em> &amp;rest <em>sequences</em>&lt;sup&gt;+&lt;/sup&gt; <em>→ generalized-boolean</em></p>
+<p><strong>notany</strong> <em>predicate</em> &amp;rest <em>sequences</em>&lt;sup&gt;+&lt;/sup&gt; <em>→ generalized-boolean</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>predicate</em>—a <em>designator</em> for a <em>function</em> of as many <em>arguments</em> as there are <em>sequences</em>. <em>sequence</em>—a <em>sequence</em>.</p>
+<p><em>result</em>—an <em>object</em>.</p>
+<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>every</strong>, <strong>some</strong>, <strong>notevery</strong>, and <strong>notany</strong> test <em>elements</em> of <em>sequences</em> for satisfaction of a given <em>predicate</em>. The first argument to <em>predicate</em> is an <em>element</em> of the first <em>sequence</em>; each succeeding argument is an <em>element</em> of a succeeding <em>sequence</em>.</p>
+<p><em>Predicate</em> is first applied to the elements with index 0 in each of the <em>sequences</em>, and possibly then to the elements with index 1, and so on, until a termination criterion is met or the end of the shortest of the <em>sequences</em> is reached.</p>
+<p><strong>every</strong> returns <em>false</em> as soon as any invocation of <em>predicate</em> returns <em>false</em>. If the end of a <em>sequence</em> is reached, <strong>every</strong> returns <em>true</em>. Thus, <strong>every</strong> returns <em>true</em> if and only if every invocation of <em>predicate</em> returns <em>true</em>.</p>
+<p><strong>some</strong> returns the first <em>non-nil</em> value which is returned by an invocation of <em>predicate</em>. If the end of a <em>sequence</em> is reached without any invocation of the <em>predicate</em> returning <em>true</em>, <strong>some</strong> returns <em>false</em>. Thus, <strong>some</strong> returns <em>true</em> if and only if some invocation of <em>predicate</em> returns <em>true</em>.</p>
+<p><strong>notany</strong> returns <em>false</em> as soon as any invocation of <em>predicate</em> returns <em>true</em>. If the end of a <em>sequence</em> is reached, <strong>notany</strong> returns <em>true</em>. Thus, <strong>notany</strong> returns <em>true</em> if and only if it is not the case that any invocation of <em>predicate</em> returns <em>true</em>.</p>
+<p><strong>notevery</strong> returns <em>true</em> as soon as any invocation of <em>predicate</em> returns <em>false</em>. If the end of a <em>sequence</em> is reached, <strong>notevery</strong> returns <em>false</em>. Thus, <strong>notevery</strong> returns <em>true</em> if and only if it is not the case that every invocation of <em>predicate</em> returns <em>true</em>.</p>
+<p>Data and Control Flow <strong>5–67</strong></p>
+<p><strong>Examples:</strong></p>
+<p>(every #’characterp &quot;abc&quot;) <em>→ true</em></p>
+<p>(some #’= ’(1 2 3 4 5) ’(5 4 3 2 1)) <em>→ true</em></p>
+<p>(notevery #’&lt; ’(1 2 3 4) ’(5 6 7 8) ’(9 10 11 12)) <em>→ false</em></p>
+<p>(notany #’&gt; ’(1 2 3 4) ’(5 6 7 8) ’(9 10 11 12)) <em>→ true</em></p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal <strong>type-error</strong> if its first argument is neither a <em>symbol</em> nor a <em>function</em> or if any subsequent argument is not a <em>proper sequence</em>.</p>
+<p>Other exceptional situations are possible, depending on the nature of the <em>predicate</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>and</strong>, <strong>or</strong>, Section 3.6 (Traversal Rules and Side Effects)</p>
+<p><strong>Notes:</strong></p>
+<p>(notany <em>predicate {sequence}</em>*) <em>≡</em> (not (some <em>predicate {sequence}</em>*))</p>
+<p>(notevery <em>predicate {sequence}</em>*) <em>≡</em> (not (every <em>predicate {sequence}</em>*))</p>
+<p><strong>and</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>and</strong> <em>{form}</em>* <em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>form</em>—a <em>form</em>.</p>
+<p><em>results</em>—the <em>values</em> resulting from the evaluation of the last <em>form</em>, or the symbols <strong>nil</strong> or <strong>t</strong>.</p>
+<p><strong>Description:</strong></p>
+<p>The macro <strong>and</strong> evaluates each <em>form</em> one at a time from left to right. As soon as any <em>form</em> evaluates to <strong>nil</strong>, <strong>and</strong> returns <strong>nil</strong> without evaluating the remaining <em>forms</em>. If all <em>forms</em> but the last evaluate to <em>true</em> values, <strong>and</strong> returns the results produced by evaluating the last <em>form</em>.</p>
+<p>If no <em>forms</em> are supplied, (and) returns <strong>t</strong>.</p>
+<p><strong>and</strong> passes back multiple values from the last <em>subform</em> but not from subforms other than the last. <strong>Examples:</strong></p>
+<p>(if (and (&gt;= n 0)</p>
+<p>(&lt; n (length a-simple-vector))</p>
+<p>(eq (elt a-simple-vector n) ’foo))</p>
+<p>(princ &quot;Foo!&quot;))</p>
+<p>The above expression prints Foo! if element n of a-simple-vector is the symbol foo, provided also that n is indeed a valid index for a-simple-vector. Because <strong>and</strong> guarantees left-to-right testing of its parts, <strong>elt</strong> is not called if n is out of range.</p>
+<p>(setq temp1 1 temp2 1 temp3 1) <em>→</em> 1</p>
+<p>(and (incf temp1) (incf temp2) (incf temp3)) <em>→</em> 2</p>
+<p>(and (eql 2 temp1) (eql 2 temp2) (eql 2 temp3)) <em>→ true</em></p>
+<p>(decf temp3) <em>→</em> 1</p>
+<p>(and (decf temp1) (decf temp2) (eq temp3 ’nil) (decf temp3)) <em>→</em> NIL</p>
+<p>(and (eql temp1 temp2) (eql temp2 temp3)) <em>→ true</em></p>
+<p>(and) <em>→</em> T</p>
+<p><strong>See Also:</strong></p>
+<p><strong>cond</strong>, <strong>every</strong>, <strong>if</strong>, <strong>or</strong>, <strong>when</strong></p>
+<p><strong>Notes:</strong></p>
+<p>(and <em>form</em>) <em>≡</em> (let () <em>form</em>)</p>
+<p>(and <em>form1 form2</em> ...) <em>≡</em> (when <em>form1</em> (and <em>form2</em> ...))</p>
+<p><strong>cond</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>cond</strong> <em>{↓clause}</em>* <em>→ {result}</em>*</p>
+<p><em>clause::</em>=(<em>test-form {form}</em>*)</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>test-form</em>—a <em>form</em>.</p>
+<p><em>forms</em>—an <em>implicit progn</em>.</p>
+<p><em>results</em>—the <em>values</em> of the <em>forms</em> in the first <em>clause</em> whose <em>test-form yields true</em>, or the <em>primary value</em> of the <em>test-form</em> if there are no <em>forms</em> in that <em>clause</em>, or else <strong>nil</strong> if no <em>test-form yields true</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>cond</strong> allows the execution of <em>forms</em> to be dependent on <em>test-form</em>.</p>
+<p>Data and Control Flow <strong>5–69</strong></p>
+<p><em>Test-forms</em> are evaluated one at a time in the order in which they are given in the argument list until a <em>test-form</em> is found that evaluates to <em>true</em>.</p>
+<p>If there are no <em>forms</em> in that clause, the <em>primary value</em> of the <em>test-form</em> is returned by the <strong>cond</strong> <em>form</em>. Otherwise, the <em>forms</em> associated with this <em>test-form</em> are evaluated in order, left to right, as an <em>implicit progn</em>, and the <em>values</em> returned by the last <em>form</em> are returned by the <strong>cond</strong> <em>form</em>.</p>
+<p>Once one <em>test-form</em> has <em>yielded true</em>, no additional <em>test-forms</em> are <em>evaluated</em>. If no <em>test-form yields true</em>, <strong>nil</strong> is returned.</p>
+<p><strong>Examples:</strong></p>
+<p>(defun select-options ()</p>
+<p>(cond ((= a 1) (setq a 2))</p>
+<p>((= a 2) (setq a 3))</p>
+<p>((and (= a 3) (floor a 2)))</p>
+<p>(t (floor a 3)))) <em>→</em> SELECT-OPTIONS</p>
+<p>(setq a 1) <em>→</em> 1</p>
+<p>(select-options) <em>→</em> 2</p>
+<p>a <em>→</em> 2</p>
+<p>(select-options) <em>→</em> 3</p>
+<p>a <em>→</em> 3</p>
+<p>(select-options) <em>→</em> 1</p>
+<p>(setq a 5) <em>→</em> 5</p>
+<p>(select-options) <em>→</em> 1, 2</p>
+<p><strong>See Also:</strong></p>
+<p><strong>if</strong>, <strong>case</strong>.</p>
+<p><strong>if</strong> <em>Special Operator</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>if</strong> <em>test-form then-form</em> [<em>else-form</em>] <em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>Test-form</em>—a <em>form</em>.</p>
+<p><em>Then-form</em>—a <em>form</em>.</p>
+<p><em>Else-form</em>—a <em>form</em>. The default is <strong>nil</strong>.</p>
+<p><em>results</em>—if the <em>test-form yielded true</em>, the <em>values</em> returned by the <em>then-form</em>; otherwise, the <em>values</em> returned by the <em>else-form</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>if</strong> allows the execution of a <em>form</em> to be dependent on a single <em>test-form</em>.</p>
+<p>First <em>test-form</em> is evaluated. If the result is <em>true</em>, then <em>then-form</em> is selected; otherwise <em>else-form</em> is selected. Whichever form is selected is then evaluated.</p>
+<p><strong>Examples:</strong></p>
+<p>(if t 1) <em>→</em> 1</p>
+<p>(if nil 1 2) <em>→</em> 2</p>
+<p>(defun test ()</p>
+<p>(dolist (truth-value ’(t nil 1 (a b c)))</p>
+<p>(if truth-value (print ’true) (print ’false))</p>
+<p>(prin1 truth-value))) <em>→</em> TEST</p>
+<p>(test)</p>
+<p>▷ TRUE T</p>
+<p>▷ FALSE NIL</p>
+<p>▷ TRUE 1</p>
+<p>▷ TRUE (A B C)</p>
+<p><em>→</em> NIL</p>
+<p><strong>See Also:</strong></p>
+<p><strong>cond</strong>, <strong>unless</strong>, <strong>when</strong></p>
+<p><strong>Notes:</strong></p>
+<p>(if <em>test-form then-form else-form</em>)</p>
+<p><em>≡</em> (cond (<em>test-form then-form</em>) (t <em>else-form</em>))</p>
+<p><strong>or</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>or</strong> <em>{form}</em>* <em>→ {results}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>form</em>—a <em>form</em>.</p>
+<p><em>results</em>—the <em>values</em> or <em>primary value</em> (see below) resulting from the evaluation of the last <em>form</em> executed or <strong>nil</strong>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>or</strong> evaluates each <em>form</em>, one at a time, from left to right. The evaluation of all <em>forms</em> terminates when a <em>form</em> evaluates to <em>true</em> (<em>i.e.</em>, something other than <strong>nil</strong>).</p>
+<p>Data and Control Flow <strong>5–71</strong></p>
+<p>If the <em>evaluation</em> of any <em>form</em> other than the last returns a <em>primary value</em> that is <em>true</em>, <strong>or</strong> immediately returns that <em>value</em> (but no additional <em>values</em>) without evaluating the remaining <em>forms</em>. If every <em>form</em> but the last returns <em>false</em> as its <em>primary value</em>, <strong>or</strong> returns all <em>values</em> returned by the last <em>form</em>. If no <em>forms</em> are supplied, <strong>or</strong> returns <strong>nil</strong>.</p>
+<p><strong>Examples:</strong></p>
+<p>(or) <em>→</em> NIL</p>
+<p>(setq temp0 nil temp1 10 temp2 20 temp3 30) <em>→</em> 30</p>
+<p>(or temp0 temp1 (setq temp2 37)) <em>→</em> 10</p>
+<p>temp2 <em>→</em> 20</p>
+<p>(or (incf temp1) (incf temp2) (incf temp3)) <em>→</em> 11</p>
+<p>temp1 <em>→</em> 11</p>
+<p>temp2 <em>→</em> 20</p>
+<p>temp3 <em>→</em> 30</p>
+<p>(or (values) temp1) <em>→</em> 11</p>
+<p>(or (values temp1 temp2) temp3) <em>→</em> 11</p>
+<p>(or temp0 (values temp1 temp2)) <em>→</em> 11, 20</p>
+<p>(or (values temp0 temp1) (values temp2 temp3)) <em>→</em> 20, 30</p>
+<p><strong>See Also:</strong></p>
+<p><strong>and</strong>, <strong>some</strong>, <strong>unless</strong></p>
+<p><strong>when, unless</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>when</strong> <em>test-form {form}</em>* <em>→ {result}</em>*</p>
+<p><strong>unless</strong> <em>test-form {form}</em>* <em>→ {result}</em>*</p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>test-form</em>—a <em>form</em>.</p>
+<p><em>forms</em>—an <em>implicit progn</em>.</p>
+<p><em>results</em>—the <em>values</em> of the <em>forms</em> in a <strong>when</strong> <em>form</em> if the <em>test-form yields true</em> or in an <strong>unless</strong> <em>form</em> if the <em>test-form yields false</em>; otherwise <strong>nil</strong>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>when</strong> and <strong>unless</strong> allow the execution of <em>forms</em> to be dependent on a single <em>test-form</em>.</p>
+<p>In a <strong>when</strong> <em>form</em>, if the <em>test-form yields true</em>, the <em>forms</em> are <em>evaluated</em> in order from left to right and the <em>values</em> returned by the <em>forms</em> are returned from the <strong>when</strong> <em>form</em>. Otherwise, if the <em>test-form yields false</em>, the <em>forms</em> are not <em>evaluated</em>, and the <strong>when</strong> <em>form</em> returns <strong>nil</strong>.</p>
+<p><strong>when, unless</strong></p>
+<p>In an <strong>unless</strong> <em>form</em>, if the <em>test-form yields false</em>, the <em>forms</em> are <em>evaluated</em> in order from left to right and the <em>values</em> returned by the <em>forms</em> are returned from the <strong>unless</strong> <em>form</em>. Otherwise, if the <em>test-form yields false</em>, the <em>forms</em> are not <em>evaluated</em>, and the <strong>unless</strong> <em>form</em> returns <strong>nil</strong>.</p>
+<p><strong>Examples:</strong></p>
+<p>(when t ’hello) <em>→</em> HELLO</p>
+<p>(unless t ’hello) <em>→</em> NIL</p>
+<p>(when nil ’hello) <em>→</em> NIL</p>
+<p>(unless nil ’hello) <em>→</em> HELLO</p>
+<p>(when t) <em>→</em> NIL</p>
+<p>(unless nil) <em>→</em> NIL</p>
+<p>(when t (prin1 1) (prin1 2) (prin1 3))</p>
+<p>▷ 123</p>
+<p><em>→</em> 3</p>
+<p>(unless t (prin1 1) (prin1 2) (prin1 3)) <em>→</em> NIL</p>
+<p>(when nil (prin1 1) (prin1 2) (prin1 3)) <em>→</em> NIL</p>
+<p>(unless nil (prin1 1) (prin1 2) (prin1 3))</p>
+<p>▷ 123</p>
+<p><em>→</em> 3</p>
+<p>(let ((x 3))</p>
+<p>(list (when (oddp x) (incf x) (list x))</p>
+<p>(when (oddp x) (incf x) (list x))</p>
+<p>(unless (oddp x) (incf x) (list x))</p>
+<p>(unless (oddp x) (incf x) (list x))</p>
+<p>(if (oddp x) (incf x) (list x))</p>
+<p>(if (oddp x) (incf x) (list x))</p>
+<p>(if (not (oddp x)) (incf x) (list x))</p>
+<p>(if (not (oddp x)) (incf x) (list x))))</p>
+<p><em>→</em> ((4) NIL (5) NIL 6 (6) 7 (7))</p>
+<p><strong>See Also:</strong></p>
+<p><strong>and</strong>, <strong>cond</strong>, <strong>if</strong>, <strong>or</strong></p>
+<p><strong>Notes:</strong></p>
+<p>(when <em>test {form}</em>&lt;sup&gt;+&lt;/sup&gt;) <em>≡</em> (and <em>test</em> (progn <em>{form}</em>&lt;sup&gt;+&lt;/sup&gt;))</p>
+<p>(when <em>test {form}</em>&lt;sup&gt;+&lt;/sup&gt;) <em>≡</em> (cond (<em>test {form}</em>&lt;sup&gt;+&lt;/sup&gt;))</p>
+<p>(when <em>test {form}</em>&lt;sup&gt;+&lt;/sup&gt;) <em>≡</em> (if <em>test</em> (progn <em>{form}</em>&lt;sup&gt;+&lt;/sup&gt;) nil)</p>
+<p>(when <em>test {form}</em>&lt;sup&gt;+&lt;/sup&gt;) <em>≡</em> (unless (not <em>test</em>) <em>{form}</em>&lt;sup&gt;+&lt;/sup&gt;)</p>
+<p>(unless <em>test {form}</em>&lt;sup&gt;+&lt;/sup&gt;) <em>≡</em> (cond ((not <em>test</em>) <em>{form}</em>&lt;sup&gt;+&lt;/sup&gt;))</p>
+<p>(unless <em>test {form}</em>&lt;sup&gt;+&lt;/sup&gt;) <em>≡</em> (if <em>test</em> nil (progn <em>{form}</em>&lt;sup&gt;+&lt;/sup&gt;))</p>
+<p>(unless <em>test {form}</em>&lt;sup&gt;+&lt;/sup&gt;) <em>≡</em> (when (not <em>test</em>) <em>{form}</em>&lt;sup&gt;+&lt;/sup&gt;)</p>
+<p>Data and Control Flow <strong>5–73</strong></p>
+<p><strong>case, ccase, ecase</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>case</strong> <em>keyform {↓normal-clause}</em>* [<em>↓otherwise-clause</em>] <em>→ {result}</em>*</p>
+<p><strong>ccase</strong> <em>keyplace {↓normal-clause}</em>* <em>→ {result}</em>*</p>
+<p><strong>ecase</strong> <em>keyform {↓normal-clause}</em>* <em>→ {result}</em>*</p>
+<p><em>normal-clause::</em>=(<em>keys {form}</em>*)</p>
+<p><em>otherwise-clause::</em>=(<em>{otherwise | t} {form}</em>*)</p>
+<p><em>clause::</em>=<em>normal-clause | otherwise-clause</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>keyform</em>—a <em>form</em>; evaluated to produce a <em>test-key</em>.</p>
+<p><em>keyplace</em>—a <em>form</em>; evaluated initially to produce a <em>test-key</em>. Possibly also used later as a <em>place</em> if no <em>keys</em> match.</p>
+<p><em>test-key</em>—an object produced by evaluating <em>keyform</em> or <em>keyplace</em>.</p>
+<p><em>keys</em>—a <em>designator</em> for a <em>list</em> of <em>objects</em>. In the case of <strong>case</strong>, the <em>symbols</em> <strong>t</strong> and <strong>otherwise</strong> may not be used as the <em>keys designator</em> . To refer to these <em>symbols</em> by themselves as <em>keys</em>, the designators (t) and (otherwise), respectively, must be used instead.</p>
+<p><em>forms</em>—an <em>implicit progn</em>.</p>
+<p><em>results</em>—the <em>values</em> returned by the <em>forms</em> in the matching <em>clause</em>.</p>
+<p><strong>Description:</strong></p>
+<p>These <em>macros</em> allow the conditional execution of a body of <em>forms</em> in a <em>clause</em> that is selected by matching the <em>test-key</em> on the basis of its identity.</p>
+<p>The <em>keyform</em> or <em>keyplace</em> is <em>evaluated</em> to produce the <em>test-key</em>.</p>
+<p>Each of the <em>normal-clauses</em> is then considered in turn. If the <em>test-key</em> is the <em>same</em> as any <em>key</em> for that <em>clause</em>, the <em>forms</em> in that <em>clause</em> are <em>evaluated</em> as an <em>implicit progn</em>, and the <em>values</em> it returns are returned as the value of the <strong>case</strong>, <strong>ccase</strong>, or <strong>ecase</strong> <em>form</em>.</p>
+<p>These <em>macros</em> differ only in their <em>behavior</em> when no <em>normal-clause</em> matches; specifically: <strong>case</strong></p>
+<p>If no <em>normal-clause</em> matches, and there is an <em>otherwise-clause</em>, then that <em>otherwise-clause</em></p>
+<p><strong>case, ccase, ecase</strong></p>
+<p>automatically matches; the <em>forms</em> in that <em>clause</em> are <em>evaluated</em> as an <em>implicit progn</em>, and the <em>values</em> it returns are returned as the value of the <strong>case</strong>.</p>
+<p>If there is no <em>otherwise-clause</em>, <strong>case</strong> returns <strong>nil</strong>.</p>
+<p><strong>ccase</strong></p>
+<p>If no <em>normal-clause</em> matches, a <em>correctable error</em> of <em>type</em> <strong>type-error</strong> is signaled. The offending datum is the <em>test-key</em> and the expected type is <em>type equivalent</em> to (member <em>key1 key2</em> ...). The <strong>store-value</strong> <em>restart</em> can be used to correct the error.</p>
+<p>If the <strong>store-value</strong> <em>restart</em> is invoked, its <em>argument</em> becomes the new <em>test-key</em>, and is stored in <em>keyplace</em> as if by (setf <em>keyplace test-key</em>). Then <strong>ccase</strong> starts over, considering each <em>clause</em> anew.</p>
+<p>The subforms of <em>keyplace</em> might be evaluated again if none of the cases holds.</p>
+<p><strong>ecase</strong></p>
+<p>If no <em>normal-clause</em> matches, a <em>non-correctable error</em> of <em>type</em> <strong>type-error</strong> is signaled. The offending datum is the <em>test-key</em> and the expected type is <em>type equivalent</em> to (member <em>key1 key2</em> ...).</p>
+<p>Note that in contrast with <strong>ccase</strong>, the caller of <strong>ecase</strong> may rely on the fact that <strong>ecase</strong> does not return if a <em>normal-clause</em> does not match.</p>
+<p><strong>Examples:</strong></p>
+<p>(dolist (k ’(1 2 3 <!-- -->:four<!-- --> #\v () t ’other))</p>
+<p>(format t &quot;~S &quot;</p>
+<p>(case k ((1 2) ’clause1)</p>
+<p>(3 ’clause2)</p>
+<p>(nil ’no-keys-so-never-seen)</p>
+<p>((nil) ’nilslot)</p>
+<p>((<!-- -->:four<!-- --> #\v) ’clause4)</p>
+<p>((t) ’tslot)</p>
+<p>(otherwise ’others))))</p>
+<p>▷ CLAUSE1 CLAUSE1 CLAUSE2 CLAUSE4 CLAUSE4 NILSLOT TSLOT OTHERS</p>
+<p><em>→</em> NIL</p>
+<p>(defun add-em (x) (apply #’+ (mapcar #’decode x)))</p>
+<p><em>→</em> ADD-EM</p>
+<p>(defun decode (x)</p>
+<p>(ccase x</p>
+<p>((i uno) 1)</p>
+<p>((ii dos) 2)</p>
+<p>((iii tres) 3)</p>
+<p>((iv cuatro) 4)))</p>
+<p><em>→</em> DECODE</p>
+<p>Data and Control Flow <strong>5–75</strong></p>
+<p>(add-em ’(uno iii)) <em>→</em> 4</p>
+<p>(add-em ’(uno iiii))</p>
+<p>▷ Error: The value of X, IIII, is not I, UNO, II, DOS, III,</p>
+<p>▷ TRES, IV, or CUATRO.</p>
+<p>▷ 1: Supply a value to use instead.</p>
+<p>▷ 2: Return to Lisp Toplevel.</p>
+<p>▷ Debug&gt; <!-- -->:CONTINUE<!-- --> 1</p>
+<p>▷ Value to evaluate and use for X: ’IV</p>
+<p><em>→</em> 5</p>
+<p><strong>Side Effects:</strong></p>
+<p>The debugger might be entered. If the <strong>store-value</strong> <em>restart</em> is invoked, the <em>value</em> of <em>keyplace</em> might be changed.</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>ccase</strong> and <strong>ecase</strong>, since they might signal an error, are potentially affected by existing <em>handlers</em> and <strong>*debug-io*</strong>.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p><strong>ccase</strong> and <strong>ecase</strong> signal an error of <em>type</em> <strong>type-error</strong> if no <em>normal-clause</em> matches.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>cond</strong>, <strong>typecase</strong>, <strong>setf</strong>, Section 5.1 (Generalized Reference)</p>
+<p><strong>Notes:</strong></p>
+<p>(case <em>test-key</em></p>
+<p><em>{</em>((<em>{key}</em>*) <em>{form}</em>*)<em>}</em>*)</p>
+<p><em>≡</em></p>
+<p>(let ((#1=#<!-- -->:g0001<!-- --> <em>test-key</em>))</p>
+<p>(cond <em>{</em>((member #1# ’(<em>{key}</em>*)) <em>{form}</em>*)<em>}</em>*))</p>
+<p>The specific error message used by <strong>ecase</strong> and <strong>ccase</strong> can vary between implementations. In situations where control of the specific wording of the error message is important, it is better to use <strong>case</strong> with an <em>otherwise-clause</em> that explicitly signals an error with an appropriate message.</p>
+<p><strong>typecase, ctypecase, etypecase</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>typecase</strong> <em>keyform {↓normal-clause}</em>* [<em>↓otherwise-clause</em>] <em>→ {result}</em>*</p>
+<p><strong>ctypecase</strong> <em>keyplace {↓normal-clause}</em>* <em>→ {result}</em>*</p>
+<p><strong>typecase, ctypecase, etypecase</strong></p>
+<p><strong>etypecase</strong> <em>keyform {↓normal-clause}</em>* <em>→ {result}</em>*</p>
+<p><em>normal-clause::</em>=(<em>type {form}</em>*)</p>
+<p><em>otherwise-clause::</em>=(<em>{otherwise | t} {form}</em>*)</p>
+<p><em>clause::</em>=<em>normal-clause | otherwise-clause</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>keyform</em>—a <em>form</em>; evaluated to produce a <em>test-key</em>.</p>
+<p><em>keyplace</em>—a <em>form</em>; evaluated initially to produce a <em>test-key</em>. Possibly also used later as a <em>place</em> if no <em>types</em> match.</p>
+<p><em>test-key</em>—an object produced by evaluating <em>keyform</em> or <em>keyplace</em>.</p>
+<p><em>type</em>—a <em>type specifier</em> .</p>
+<p><em>forms</em>—an <em>implicit progn</em>.</p>
+<p><em>results</em>—the <em>values</em> returned by the <em>forms</em> in the matching <em>clause</em>.</p>
+<p><strong>Description:</strong></p>
+<p>These <em>macros</em> allow the conditional execution of a body of <em>forms</em> in a <em>clause</em> that is selected by matching the <em>test-key</em> on the basis of its <em>type</em>.</p>
+<p>The <em>keyform</em> or <em>keyplace</em> is <em>evaluated</em> to produce the <em>test-key</em>.</p>
+<p>Each of the <em>normal-clauses</em> is then considered in turn. If the <em>test-key</em> is of the <em>type</em> given by the <em>clauses</em>’s <em>type</em>, the <em>forms</em> in that <em>clause</em> are <em>evaluated</em> as an <em>implicit progn</em>, and the <em>values</em> it returns are returned as the value of the <strong>typecase</strong>, <strong>ctypecase</strong>, or <strong>etypecase</strong> <em>form</em>.</p>
+<p>These <em>macros</em> differ only in their <em>behavior</em> when no <em>normal-clause</em> matches; specifically:</p>
+<p><strong>typecase</strong></p>
+<p>If no <em>normal-clause</em> matches, and there is an <em>otherwise-clause</em>, then that <em>otherwise-clause</em> automatically matches; the <em>forms</em> in that <em>clause</em> are <em>evaluated</em> as an <em>implicit progn</em>, and the <em>values</em> it returns are returned as the value of the <strong>typecase</strong>.</p>
+<p>If there is no <em>otherwise-clause</em>, <strong>typecase</strong> returns <strong>nil</strong>.</p>
+<p><strong>ctypecase</strong></p>
+<p>If no <em>normal-clause</em> matches, a <em>correctable error</em> of <em>type</em> <strong>type-error</strong> is signaled. The offending datum is the <em>test-key</em> and the expected type is <em>type equivalent</em> to (or <em>type1 type2</em> ...). The <strong>store-value</strong> <em>restart</em> can be used to correct the error.</p>
+<p>If the <strong>store-value</strong> <em>restart</em> is invoked, its <em>argument</em> becomes the new <em>test-key</em>, and is stored Data and Control Flow <strong>5–77</strong></p>
+<p><strong>typecase, ctypecase, etypecase</strong></p>
+<p>in <em>keyplace</em> as if by (setf <em>keyplace test-key</em>). Then <strong>ctypecase</strong> starts over, considering each <em>clause</em> anew.</p>
+<p>If the <strong>store-value</strong> <em>restart</em> is invoked interactively, the user is prompted for a new <em>test-key</em> to use.</p>
+<p>The subforms of <em>keyplace</em> might be evaluated again if none of the cases holds.</p>
+<p><strong>etypecase</strong></p>
+<p>If no <em>normal-clause</em> matches, a <em>non-correctable error</em> of <em>type</em> <strong>type-error</strong> is signaled. The offending datum is the <em>test-key</em> and the expected type is <em>type equivalent</em> to (or <em>type1 type2</em> ...).</p>
+<p>Note that in contrast with <strong>ctypecase</strong>, the caller of <strong>etypecase</strong> may rely on the fact that <strong>etypecase</strong> does not return if a <em>normal-clause</em> does not match.</p>
+<p>In all three cases, is permissible for more than one <em>clause</em> to specify a matching <em>type</em>, particularly if one is a <em>subtype</em> of another; the earliest applicable <em>clause</em> is chosen.</p>
+<p><strong>Examples:</strong></p>
+<p>;;; (Note that the parts of this example which use TYPE-OF</p>
+<p>;;; are implementation-dependent.)</p>
+<p>(defun what-is-it (x)</p>
+<p>(format t &quot;~&amp;~S is <del>A.</del>%&quot;</p>
+<p>x (typecase x</p>
+<p>(float &quot;a float&quot;)</p>
+<p>(null &quot;a symbol, boolean false, or the empty list&quot;)</p>
+<p>(list &quot;a list&quot;)</p>
+<p>(t (format nil &quot;a(n) ~(<del>A</del>)&quot; (type-of x))))))</p>
+<p><em>→</em> WHAT-IS-IT</p>
+<p>(map ’nil #’what-is-it ’(nil (a b) 7.0 7 box))</p>
+<p>▷ NIL is a symbol, boolean false, or the empty list.</p>
+<p>▷ (A B) is a list.</p>
+<p>▷ 7.0 is a float.</p>
+<p>▷ 7 is a(n) integer.</p>
+<p>▷ BOX is a(n) symbol.</p>
+<p><em>→</em> NIL</p>
+<p>(setq x 1/3)</p>
+<p><em>→</em> 1/3</p>
+<p>(ctypecase x</p>
+<p>(integer (* x 4))</p>
+<p>(symbol (symbol-value x)))</p>
+<p>▷ Error: The value of X, 1/3, is neither an integer nor a symbol.</p>
+<p>▷ To continue, type <!-- -->:CONTINUE<!-- --> followed by an option number:</p>
+<p>▷ 1: Specify a value to use instead.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/chap-5/f-c-transfer-of-control-to-an-exit-point.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/cl-language-reference/docs/chap-5/f-b-generalized-reference"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">5.1 Generalized Reference</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/cl-language-reference/docs/chap-5/intro"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">intro</div></a></nav></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/docs/intro">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

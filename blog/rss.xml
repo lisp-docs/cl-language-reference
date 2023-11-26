@@ -4,10 +4,22 @@
         <title>Common Lisp (New) Language Reference Blog</title>
         <link>https://lisp-docs.github.io/cl-language-reference/blog</link>
         <description>Common Lisp (New) Language Reference Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 12 Nov 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Mission]]></title>
+            <link>https://lisp-docs.github.io/cl-language-reference/blog/mission</link>
+            <guid>https://lisp-docs.github.io/cl-language-reference/blog/mission</guid>
+            <pubDate>Sun, 12 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[The mission of Lisp Docs and this website in particular is to provide LISP Documentation.]]></description>
+            <content:encoded><![CDATA[<p>The mission of Lisp Docs and this website in particular is to provide LISP Documentation.</p>
+<p>The <a href="https://lisp-docs.github.io/cl-language-reference/docs/intro">Docs in this Website</a> are aimed to be a User Guide.</p>
+<p>The Docs</p>]]></content:encoded>
+            <category>mission</category>
+            <category>beginning</category>
+        </item>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://lisp-docs.github.io/cl-language-reference/blog/welcome</link>
