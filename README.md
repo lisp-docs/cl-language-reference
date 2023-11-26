@@ -1,6 +1,4 @@
-# Website
-
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+# Readme
 
 ## Sources
 
@@ -8,6 +6,12 @@ The sources for this project are the following:
 
 1. The original dpANS3r found here: <https://github.com/lisp-docs/cl-standard>
 2. A script processing the markdown derived from the original dpANS3r PDFs <https://github.com/lisp-docs/process-dpans3r>
+
+## Usage
+
+### Website
+
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
 
