@@ -45,14 +45,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/lisp-docs/cl-language-reference/tree/develop/docs/',
+            'https://github.com/lisp-docs/cl-language-reference/tree/develop/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/lisp-docs/cl-language-reference/tree/develop/blog/',
+            'https://github.com/lisp-docs/cl-language-reference/tree/develop/',
         },
         theme: {
           customCss: './src/css/custom.css',
