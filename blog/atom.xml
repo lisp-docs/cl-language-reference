@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lisp-docs.github.io/cl-language-reference/blog</id>
     <title>Common Lisp (New) Language Reference Blog</title>
-    <updated>2023-11-12T00:00:00.000Z</updated>
+    <updated>2023-11-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/blog"/>
     <subtitle>Common Lisp (New) Language Reference Blog</subtitle>
     <icon>https://lisp-docs.github.io/cl-language-reference/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Current Status]]></title>
+        <id>https://lisp-docs.github.io/cl-language-reference/blog/status</id>
+        <link href="https://lisp-docs.github.io/cl-language-reference/blog/status"/>
+        <updated>2023-11-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[So finally, first version is out!]]></summary>
+        <content type="html"><![CDATA[<p>So finally, first version is out!</p>
+<p>However, this is a work in progress.</p>
+<p>These are the changes that are needed for it to reach a version 1.0:</p>
+<ol>
+<li>Fix all the markdown titles for the right side panel navigation bar. For some reason during the parsing, some of the titles got messed up in the navigation bar. The titles in the actual content are repeated. The second one must also be removed.</li>
+<li>Need to link up all italics to the actual page in the reference.</li>
+<li>Need to fix the tables in all the files</li>
+<li>Need to parse and find every bit of lisp code and wrap it in the proprer ``` backquote wrappers with the lisp syntax for pretty print.</li>
+<li>Make sure everything else is good!</li>
+</ol>
+<p>However, with that said, the project is actually ready for contributions!</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-the-project-is-structured">How The Project is Structured<a href="https://lisp-docs.github.io/cl-language-reference/blog/status#how-the-project-is-structured" class="hash-link" aria-label="Direct link to How The Project is Structured" title="Direct link to How The Project is Structured">​</a></h2>
+<p>The idea here was to separate the files with the original dpANS3r text from the community additions. Therefore, to add examples or any content, just create a new file. Please name it relevant to the section you will add it to, and then just import it in that section like all the other files are imported.</p>
+<p>So instead of writing the examples in the dpANS3r itself, it will be a new file <code>examples.md</code> where you can write anything you want. Then you would import it wherever relevant.</p>
+<p>Please note that because react doesn't seem to allow using numbers in component names, I had to convert all numbers to letters. <code>A=0</code>, <code>B=1</code>, etc...</p>]]></content>
+        <author>
+            <name>Admin</name>
+            <uri>https://github.com/lisp-docs</uri>
+        </author>
+        <category label="status" term="status"/>
+        <category label="todo" term="todo"/>
+        <category label="beginning" term="beginning"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Mission]]></title>
         <id>https://lisp-docs.github.io/cl-language-reference/blog/mission</id>
