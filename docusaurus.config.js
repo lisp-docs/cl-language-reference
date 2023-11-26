@@ -104,15 +104,19 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: 'https://stackoverflow.com/questions/tagged/common-lisp',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/hhk46CE',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Reddit',
+                href: 'https://www.reddit.com/r/common_lisp',
+              },
+              {
+                label: 'IRC',
+                href: 'https://irclog.tymoon.eu/libera/commonlisp',
               },
             ],
           },
@@ -125,7 +129,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/lisp-docs/cl-language-reference/',
               },
             ],
           },
