@@ -81,7 +81,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/lisp-docs/cl-language-reference/',
             label: 'GitHub',
             position: 'right',
           },
