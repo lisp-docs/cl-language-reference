@@ -15,3 +15,5 @@ For adding examples and explanations, please create a separate file marked secti
 1. Examples of any aspect mentioned in the reference
 2. Explanations of any aspect of the reference.
 3. Whatever you think will make this reference better!
+
+Please also see the [Status Blog Post](/blog/2023-11-26-status) for more information on what to contribute and project TODO's.

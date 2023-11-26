@@ -1,10 +1,10 @@
 ---
-slug: status
+slug: 2023-11-26-status
 title: Current Status
-authors:
-  name: daniel
-  title: Lisp Docs Core Team
-  url: https://github.com/lisp-docs
+authors: daniel
+#   name: Daniel N
+#   title: Lisp Docs Core Team
+#   url: https://github.com/lisp-docs
   # image_url: https://github.com/wgao19.png
 tags: [status, todo, beginning]
 ---
@@ -22,6 +22,7 @@ These are the changes that are needed for it to reach a version 1.0:
 5. Make sure everything else is good!
 6. Change the `_category_.json` files to display position of chapters in sidebar correctly...
 7. Change the `_category_.json` contents to use double quotes instead of single quotes...
+8. Add search plugin
 
 However, with that said, the project is actually ready for contributions!
 
