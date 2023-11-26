@@ -2,7 +2,7 @@
 slug: status
 title: Current Status
 authors:
-  name: Admin
+  name: daniel
   title: Lisp Docs Core Team
   url: https://github.com/lisp-docs
   # image_url: https://github.com/wgao19.png
@@ -15,11 +15,13 @@ However, this is a work in progress.
 
 These are the changes that are needed for it to reach a version 1.0:
 
-1. Fix all the markdown titles for the right side panel navigation bar. For some reason during the parsing, some of the titles got messed up in the navigation bar. The titles in the actual content are repeated. The second one must also be removed.
+1. ~~Fix all the markdown titles for the right side panel navigation bar. For some reason during the parsing, some of the titles got messed up in the navigation bar. The titles in the actual content are repeated. The second one must also be removed.~~
 2. Need to link up all italics to the actual page in the reference.
 3. Need to fix the tables in all the files
 4. Need to parse and find every bit of lisp code and wrap it in the proprer ``` backquote wrappers with the lisp syntax for pretty print.
 5. Make sure everything else is good!
+6. Change the `_category_.json` files to display position of chapters in sidebar correctly...
+7. Change the `_category_.json` contents to use double quotes instead of single quotes...
 
 However, with that said, the project is actually ready for contributions!
 
