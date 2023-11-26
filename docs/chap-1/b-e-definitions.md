@@ -116,31 +116,31 @@ import BEEInterpretingDictionaryEntries from './b-e-definitions/_b-e-e-interpret
 
 <BEEInterpretingDictionaryEntries />
 
-### 1.4.4.1 The 
+### 1.4.4.1 The “Affected By” Section of a Dictionary Entry
 
 import BEEBTheAffectedBySectionofaDictionaryEntry from './b-e-definitions/_b-e-e-b-the-affected-by-section-of-a-dictionary-entry.md';
 
 <BEEBTheAffectedBySectionofaDictionaryEntry />
 
-### 1.4.4.2 The 
+### 1.4.4.2 The “Arguments” Section of a Dictionary Entry
 
 import BEECTheArgumentsSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-c-the-arguments-section-of-a-dictionary-entry.md';
 
 <BEECTheArgumentsSectionofaDictionaryEntry />
 
-### 1.4.4.3 The 
+### 1.4.4.3 The “Arguments and Values” Section of a Dictionary Entry
 
 import BEEDTheArgumentsandValuesSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-d-the-arguments-and-values-section-of-a-dictionary-entry.md';
 
 <BEEDTheArgumentsandValuesSectionofaDictionaryEntry />
 
-### 1.4.4.4 The 
+### 1.4.4.4 The “Binding Types Affected” Section of a Dictionary Entry
 
 import BEEETheBindingTypesAffectedSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-e-the-binding-types-affected-section-of-a-dictionary-entry.md';
 
 <BEEETheBindingTypesAffectedSectionofaDictionaryEntry />
 
-### 1.4.4.5 The 
+### 1.4.4.5 The “Class Precedence List” Section of a Dictionary Entry
 
 import BEEFTheClassPrecedenceListSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-f-the-class-precedence-list-section-of-a-dictionary-entry.md';
 
@@ -152,115 +152,115 @@ import BEEGDictionaryEntriesforTypeSpecifiers from './b-e-definitions/_b-e-e-g-d
 
 <BEEGDictionaryEntriesforTypeSpecifiers />
 
-#### 1.4.4.6.1 The 
+#### 1.4.4.6.1 The “Compound Type Specifier Kind” Section of a Dictionary Entry
 
 import BEEGBTheCompoundTypeSpecifierKindSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-g-b-the-compound-type-specifier-kind-section-of-a-dictionary-entry.md';
 
 <BEEGBTheCompoundTypeSpecifierKindSectionofaDictionaryEntry />
 
-#### 1.4.4.6.2 The 
+#### 1.4.4.6.2 The “Compound Type Specifier Syntax” Section of a Dictionary Entry
 
 import BEEGCTheCompoundTypeSpecifierSyntaxSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-g-c-the-compound-type-specifier-syntax-section-of-a-dictionary-entry.md';
 
 <BEEGCTheCompoundTypeSpecifierSyntaxSectionofaDictionaryEntry />
 
-#### 1.4.4.6.3 The 
+#### 1.4.4.6.3 The “Compound Type Specifier Arguments” Section of a Dictionary Entry
 
 import BEEGDTheCompoundTypeSpecifierArgumentsSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-g-d-the-compound-type-specifier-arguments-section-of-a-dictionary-entry.md';
 
 <BEEGDTheCompoundTypeSpecifierArgumentsSectionofaDictionaryEntry />
 
-#### 1.4.4.6.4 The 
+#### 1.4.4.6.4 The “Compound Type Specifier Description” Section of a Dictionary Entry
 
 import BEEGETheCompoundTypeSpecifierDescriptionSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-g-e-the-compound-type-specifier-description-section-of-a-dictionary-entry.md';
 
 <BEEGETheCompoundTypeSpecifierDescriptionSectionofaDictionaryEntry />
 
-### 1.4.4.7 The 
+### 1.4.4.7 The “Constant Value” Section of a Dictionary Entry
 
 import BEEHTheConstantValueSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-h-the-constant-value-section-of-a-dictionary-entry.md';
 
 <BEEHTheConstantValueSectionofaDictionaryEntry />
 
-### 1.4.4.8 The 
+### 1.4.4.8 The “Description” Section of a Dictionary Entry
 
 import BEEITheDescriptionSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-i-the-description-section-of-a-dictionary-entry.md';
 
 <BEEITheDescriptionSectionofaDictionaryEntry />
 
-### 1.4.4.9 The 
+### 1.4.4.9 The “Examples” Section of a Dictionary Entry
 
 import BEEJTheExamplesSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-j-the-examples-section-of-a-dictionary-entry.md';
 
 <BEEJTheExamplesSectionofaDictionaryEntry />
 
-### 1.4.4.10 The 
+### 1.4.4.10 The “Exceptional Situations” Section of a Dictionary Entry
 
 import BEEBaTheExceptionalSituationsSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-ba-the-exceptional-situations-section-of-a-dictionary-entry.md';
 
 <BEEBaTheExceptionalSituationsSectionofaDictionaryEntry />
 
-### 1.4.4.11 The 
+### 1.4.4.11 The “Initial Value” Section of a Dictionary Entry
 
 import BEEBbTheInitialValueSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-bb-the-initial-value-section-of-a-dictionary-entry.md';
 
 <BEEBbTheInitialValueSectionofaDictionaryEntry />
 
-### 1.4.4.12 The 
+### 1.4.4.12 The “Argument Precedence Order” Section of a Dictionary Entry
 
 import BEEBcTheArgumentPrecedenceOrderSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-bc-the-argument-precedence-order-section-of-a-dictionary-entry.md';
 
 <BEEBcTheArgumentPrecedenceOrderSectionofaDictionaryEntry />
 
-### 1.4.4.13 The 
+### 1.4.4.13 The “Method Signature” Section of a Dictionary Entry
 
 import BEEBdTheMethodSignatureSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-bd-the-method-signature-section-of-a-dictionary-entry.md';
 
 <BEEBdTheMethodSignatureSectionofaDictionaryEntry />
 
-### 1.4.4.14 The 
+### 1.4.4.14 The “Name” Section of a Dictionary Entry
 
 import BEEBeTheNameSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-be-the-name-section-of-a-dictionary-entry.md';
 
 <BEEBeTheNameSectionofaDictionaryEntry />
 
-### 1.4.4.15 The 
+### 1.4.4.15 The “Notes” Section of a Dictionary Entry
 
 import BEEBfTheNotesSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-bf-the-notes-section-of-a-dictionary-entry.md';
 
 <BEEBfTheNotesSectionofaDictionaryEntry />
 
-### 1.4.4.16 The 
+### 1.4.4.16 The “Pronunciation” Section of a Dictionary Entry
 
 import BEEBgThePronunciationSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-bg-the-pronunciation-section-of-a-dictionary-entry.md';
 
 <BEEBgThePronunciationSectionofaDictionaryEntry />
 
-### 1.4.4.17 The 
+### 1.4.4.17 The “See Also” Section of a Dictionary Entry
 
 import BEEBhTheSeeAlsoSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-bh-the-see-also-section-of-a-dictionary-entry.md';
 
 <BEEBhTheSeeAlsoSectionofaDictionaryEntry />
 
-### 1.4.4.18 The 
+### 1.4.4.18 The “Side Effects” Section of a Dictionary Entry
 
 import BEEBiTheSideEffectsSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-bi-the-side-effects-section-of-a-dictionary-entry.md';
 
 <BEEBiTheSideEffectsSectionofaDictionaryEntry />
 
-### 1.4.4.19 The 
+### 1.4.4.19 The “Supertypes” Section of a Dictionary Entry
 
 import BEEBjTheSupertypesSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-bj-the-supertypes-section-of-a-dictionary-entry.md';
 
 <BEEBjTheSupertypesSectionofaDictionaryEntry />
 
-### 1.4.4.20 The 
+### 1.4.4.20 The “Syntax” Section of a Dictionary Entry
 
 import BEECaTheSyntaxSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-ca-the-syntax-section-of-a-dictionary-entry.md';
 
 <BEECaTheSyntaxSectionofaDictionaryEntry />
 
-#### 1.4.4.20.1 Special 
+#### 1.4.4.20.1 Special “Syntax” Notations for Overloaded Operators
 
 import BEECaBSpecialSyntaxNotationsforOverloadedOperators from './b-e-definitions/_b-e-e-ca-b-special-syntax-notations-for-overloaded-operators.md';
 
@@ -278,31 +278,31 @@ import BEECaDRequiringNonNullRestParametersintheSyntaxSection from './b-e-defini
 
 <BEECaDRequiringNonNullRestParametersintheSyntaxSection />
 
-#### 1.4.4.20.4 Return values in the 
+#### 1.4.4.20.4 Return values in the “Syntax” Section
 
 import BEECaEReturnvaluesintheSyntaxSection from './b-e-definitions/_b-e-e-ca-e-return-values-in-the-syntax-section.md';
 
 <BEECaEReturnvaluesintheSyntaxSection />
 
-##### 1.4.4.20.4.1 No Arguments or Values in the 
+##### 1.4.4.20.4.1 No Arguments or Values in the “Syntax” Section
 
 import BEECaEBNoArgumentsorValuesintheSyntaxSection from './b-e-definitions/_b-e-e-ca-e-b-no-arguments-or-values-in-the-syntax-section.md';
 
 <BEECaEBNoArgumentsorValuesintheSyntaxSection />
 
-##### 1.4.4.20.4.2 Unconditional Transfer of Control in the 
+##### 1.4.4.20.4.2 Unconditional Transfer of Control in the “Syntax” Section
 
 import BEECaECUnconditionalTransferofControlintheSyntaxSection from './b-e-definitions/_b-e-e-ca-e-c-unconditional-transfer-of-control-in-the-syntax-section.md';
 
 <BEECaECUnconditionalTransferofControlintheSyntaxSection />
 
-### 1.4.4.21 The 
+### 1.4.4.21 The “Valid Context” Section of a Dictionary Entry
 
 import BEECbTheValidContextSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-cb-the-valid-context-section-of-a-dictionary-entry.md';
 
 <BEECbTheValidContextSectionofaDictionaryEntry />
 
-### 1.4.4.22 The 
+### 1.4.4.22 The “Value Type” Section of a Dictionary Entry
 
 import BEECcTheValueTypeSectionofaDictionaryEntry from './b-e-definitions/_b-e-e-cc-the-value-type-section-of-a-dictionary-entry.md';
 
