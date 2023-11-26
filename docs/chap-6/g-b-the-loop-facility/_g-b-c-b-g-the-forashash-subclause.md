@@ -1,4 +1,4 @@
-**6.1.2.1.6 The for-as-hash subclause** 
+ 
 
 In the *for-as-hash* subclause the for or as construct iterates over the elements, keys, and values of a *hash-table*. In this syntax, a compound preposition is used to designate access to a *hash table*. The variable *var* takes on the value of each hash key or hash value in the supplied *hash-table*. The following *loop keywords* serve as valid prepositions within this syntax: 
 

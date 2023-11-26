@@ -1,4 +1,4 @@
-**2.3.1 Numbers as Tokens** 
+ 
 
 When a *token* is read, it is interpreted as a *number* or *symbol*. The *token* is interpreted as a *number* if it satisfies the syntax for numbers specified in Figure 2–9. 
 

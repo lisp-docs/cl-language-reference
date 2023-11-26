@@ -1,4 +1,4 @@
-**22.4 Dictionary** 
+ 
  
 
 **copy-pprint-dispatch** *Function* 

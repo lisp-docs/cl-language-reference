@@ -1,4 +1,4 @@
-**2.1.4.4 Macro Characters** 
+ 
 
 When the *Lisp reader* encounters a *macro character* on an *input stream*, special parsing of subsequent *characters* on the *input stream* is performed. 
 

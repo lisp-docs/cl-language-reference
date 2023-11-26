@@ -1,4 +1,4 @@
-**22.2.2 Examples of using the Pretty Printer** 
+ 
 
 As an example of the interaction of logical blocks, conditional newlines, and indentation, consider the function simple-pprint-defun below. This function prints out lists whose *cars* are **defun** in the standard way assuming that the list has exactly length 4. 
 

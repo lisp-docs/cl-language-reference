@@ -1,4 +1,4 @@
-**17.1 Sequence Concepts** 
+ 
 
 A *sequence* is an ordered collection of *elements*, implemented as either a *vector* or a *list*. 
 

@@ -1,4 +1,4 @@
-**6.1.1.6 Order of Execution** 
+ 
 
 With the exceptions listed below, clauses are executed in the loop body in the order in which they appear in the source. Execution is repeated until a clause terminates the **loop** or until a **return**, **go**, or **throw** form is encountered which transfers control to a point outside of the loop. The following actions are exceptions to the linear order of execution: 
 

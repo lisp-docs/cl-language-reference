@@ -1,4 +1,4 @@
-**3.4.1.6 Examples of Ordinary Lambda Lists** 
+ 
 
 Here are some examples involving *optional parameters* and *rest parameters*: 
 

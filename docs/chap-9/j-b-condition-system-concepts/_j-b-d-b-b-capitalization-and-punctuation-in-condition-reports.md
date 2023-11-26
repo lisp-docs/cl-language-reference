@@ -1,4 +1,4 @@
-**9.1.3.1.1 Capitalization and Punctuation in Condition Reports** 
+ 
 
 It is recommended that a *report message* be a complete sentences, in the proper case and correctly punctuated. In English, for example, this means the first letter should be uppercase, and there should be a trailing period. 
 

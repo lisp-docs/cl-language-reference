@@ -1,4 +1,4 @@
-**2.4.8.15 Sharpsign Equal-Sign** 
+ 
 
 #*n*= 
 

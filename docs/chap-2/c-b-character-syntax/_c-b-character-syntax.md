@@ -1,4 +1,4 @@
-**2.1 Character Syntax** 
+ 
 
 The *Lisp reader* takes *characters* from a *stream*, interprets them as a printed representation of an *object*, constructs that *object*, and returns it. 
 

@@ -1,4 +1,4 @@
-**11.1.1 Introduction to Packages** 
+ 
 
 A *package* establishes a mapping from names to *symbols*. At any given time, one *package* is current. The *current package* is the one that is the *value* of **\*package\***. When using the *Lisp reader* , it is possible to refer to *symbols* in *packages* other than the current one through the use of *package prefixes* in the printed representation of the *symbol*. 
 

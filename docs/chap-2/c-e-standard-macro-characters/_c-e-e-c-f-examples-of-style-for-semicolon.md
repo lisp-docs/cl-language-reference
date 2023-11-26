@@ -1,4 +1,4 @@
-**2.4.4.2.5 Examples of Style for Semicolon** 
+ 
 
 ;;;; Math Utilities 
 

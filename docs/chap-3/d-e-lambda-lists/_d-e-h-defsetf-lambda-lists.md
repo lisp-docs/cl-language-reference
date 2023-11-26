@@ -1,4 +1,4 @@
-**3.4.7 Defsetf Lambda Lists** 
+ 
 
 A *defsetf lambda list* is used by **defsetf**. 
 

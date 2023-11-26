@@ -1,4 +1,4 @@
-**3.2.2.1 Compiler Macros** 
+ 
 
 A *compiler macro* can be defined for a *name* that also names a *function* or *macro*. That is, it is possible for a *function name* to name both a *function* and a *compiler macro*. 
 

@@ -1,4 +1,4 @@
-**2.3.1.1.1 Escape Characters and Potential Numbers** 
+ 
 
 A *potential number* cannot contain any *escape characters*. An *escape character* robs the following *character* of all syntactic qualities, forcing it to be strictly *alphabetic*\<sub\>2\</sub\> and therefore unsuitable for use in a *potential number* . For example, all of the following representations are interpreted as *symbols*, not *numbers*: 
 

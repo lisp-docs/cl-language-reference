@@ -1,4 +1,4 @@
-**2.3.5 Valid Patterns for Tokens** 
+ 
 
 The valid patterns for *tokens* are summarized in Figure 2–17.  
 

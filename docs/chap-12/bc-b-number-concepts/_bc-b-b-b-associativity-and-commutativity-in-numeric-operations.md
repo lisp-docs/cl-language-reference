@@ -1,4 +1,4 @@
-**12.1.1.1 Associativity and Commutativity in Numeric Operations** 
+ 
 
 For functions that are mathematically associative (and possibly commutative), a *conforming implementation* may process the *arguments* in any manner consistent with associative (and possibly commutative) rearrangement. This does not affect the order in which the *argument* 
 

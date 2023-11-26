@@ -1,4 +1,4 @@
-**2.4.8.7 Sharpsign B** 
+ 
 
 #B*rational* reads *rational* in binary (radix 2). For example, 
 

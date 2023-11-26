@@ -1,4 +1,4 @@
-**11.1.1.2.3 Accessibility of Symbols in a Package** 
+ 
 
 A *symbol* becomes *accessible* in a *package* if that is its *home package* when it is created, or if it is *imported* into that *package*, or by inheritance via **use-package**. 
 

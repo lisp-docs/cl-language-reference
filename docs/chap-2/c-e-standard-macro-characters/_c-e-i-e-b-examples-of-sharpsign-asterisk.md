@@ -1,4 +1,4 @@
-**2.4.8.4.1 Examples of Sharpsign Asterisk** 
+ 
 
 For example, #\*101111 
 

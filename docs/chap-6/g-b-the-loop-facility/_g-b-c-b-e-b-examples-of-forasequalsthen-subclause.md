@@ -1,4 +1,4 @@
-**6.1.2.1.4.1 Examples of for-as-equals-then subclause** 
+ 
 
 ;; Collect some numbers. 
 

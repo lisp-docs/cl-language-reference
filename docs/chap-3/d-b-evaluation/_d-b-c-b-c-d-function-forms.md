@@ -1,4 +1,4 @@
-**3.1.2.1.2.3 Function Forms** 
+ 
 
 If the *operator* is a *symbol* naming a *function*, the *form* represents a *function form*, and the *cdr* of the list contains the *forms* which when evaluated will supply the arguments passed to the *function*. 
 

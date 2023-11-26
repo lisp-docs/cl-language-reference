@@ -1,4 +1,4 @@
-**15.1.1.3 Array Rank** 
+ 
 
 An *array* can have any number of *dimensions* (including zero). The number of *dimensions* is called the *rank*. 
 

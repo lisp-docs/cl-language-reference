@@ -1,4 +1,4 @@
-**3.2.2.3 Semantic Constraints** 
+ 
 
 All *conforming programs* must obey the following constraints, which are designed to minimize the observable differences between compiled and interpreted programs: 
 

@@ -1,4 +1,4 @@
-**2.1.4.1 Constituent Characters** 
+ 
 
 *Constituent characters* are used in *tokens*. A *token* is a representation of a *number* or a *symbol*. Examples of *constituent characters* are letters and digits. 
 

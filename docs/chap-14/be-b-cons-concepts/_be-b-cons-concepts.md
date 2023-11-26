@@ -1,4 +1,4 @@
-**14.1 Cons Concepts** 
+ 
 
 A *cons* is a compound data *object* having two components called the *car* and the *cdr* . 
 

@@ -1,4 +1,4 @@
-**6.1.9 Notes about Loop** 
+ 
 
 *Types* can be supplied for loop variables. It is not necessary to supply a *type* for any variable, but supplying the *type* can ensure that the variable has a correctly typed initial value, and it can also enable compiler optimizations (depending on the *implementation*). 
 

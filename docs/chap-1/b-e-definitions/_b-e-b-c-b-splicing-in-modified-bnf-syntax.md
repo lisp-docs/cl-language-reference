@@ -1,4 +1,4 @@
-**1.4.1.2.1 Splicing in Modified BNF Syntax** 
+ 
 
 The primary extension used is the following: 
 

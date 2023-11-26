@@ -1,4 +1,4 @@
-**22.1.3.3 Printing Symbols** 
+ 
 
 When *printer escaping* is disabled, only the characters of the *symbol*’s *name* are output (but the case in which to print characters in the *name* is controlled by **\*print-case\***; see Section 22.1.3.3.2 (Effect of Readtable Case on the Lisp Printer)). 
 

@@ -1,4 +1,4 @@
-**3.2.2.2 Minimal Compilation** 
+ 
 
 *Minimal compilation* is defined as follows: 
 

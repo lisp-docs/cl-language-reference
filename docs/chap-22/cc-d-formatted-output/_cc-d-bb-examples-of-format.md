@@ -1,4 +1,4 @@
-**22.3.11 Examples of FORMAT** 
+ 
 
 (format nil "foo") *→* "foo" 
 

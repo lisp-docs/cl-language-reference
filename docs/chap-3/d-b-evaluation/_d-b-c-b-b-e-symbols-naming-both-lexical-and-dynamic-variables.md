@@ -1,4 +1,4 @@
-**3.1.2.1.1.4 Symbols Naming Both Lexical and Dynamic Variables** 
+ 
 
 The same *symbol* can name both a *lexical variable* and a *dynamic variable*, but never in the same *lexical environment*. 
 

@@ -1,4 +1,4 @@
-**23.1.2 Effect of Readtable Case on the Lisp Reader** The *readtable case* of the *current readtable* affects the *Lisp reader* in the following ways: :upcase 
+ The *readtable case* of the *current readtable* affects the *Lisp reader* in the following ways: :upcase 
 
 When the *readtable case* is :upcase, unescaped constituent *characters* are converted to *uppercase*, as specified in Section 2.2 (Reader Algorithm). 
 

@@ -1,4 +1,4 @@
-**7.6.4 Congruent Lambda-lists for all Methods of a Generic Function** 
+ 
 
 These rules define the congruence of a set of *lambda lists*, including the *lambda list* of each method for a given generic function and the *lambda list* specified for the generic function itself, if given. 
 

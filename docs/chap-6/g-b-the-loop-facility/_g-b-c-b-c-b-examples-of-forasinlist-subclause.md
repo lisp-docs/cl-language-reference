@@ -1,4 +1,4 @@
-**6.1.2.1.2.1 Examples of for-as-in-list subclause** 
+ 
 
 ;; Print every item in a list. 
 

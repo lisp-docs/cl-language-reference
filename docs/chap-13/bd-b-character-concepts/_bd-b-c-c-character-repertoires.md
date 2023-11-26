@@ -1,4 +1,4 @@
-**13.1.2.2 Character Repertoires** 
+ 
 
 A *repertoire* is a *type specifier* for a *subtype* of *type* **character**. This term is generally used when describing a collection of *characters* independent of their coding. *Characters* in *repertoires* are only identified by name, by *glyph*, or by character description. 
 

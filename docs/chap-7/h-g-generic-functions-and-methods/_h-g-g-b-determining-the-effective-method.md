@@ -1,4 +1,4 @@
-**7.6.6.1 Determining the Effective Method** 
+ 
 
 The effective method is determined by the following three-step procedure: 
 

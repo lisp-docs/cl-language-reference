@@ -1,4 +1,4 @@
-**19.3.1 Syntax of Logical Pathname Namestrings** 
+ 
 
 The syntax of a *logical pathname namestring* is as follows. (Note that unlike many notational descriptions in this document, this is a syntactic description of character sequences, not a structural description of *objects*.) 
 

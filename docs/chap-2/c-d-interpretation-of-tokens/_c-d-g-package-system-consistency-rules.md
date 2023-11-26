@@ -1,4 +1,4 @@
-**2.3.6 Package System Consistency Rules** 
+ 
 
 The following rules apply to the package system as long as the *value* of **\*package\*** is not changed: 
 

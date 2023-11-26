@@ -1,4 +1,4 @@
-**22.3.3.1 Tilde F: Fixed-Format Floating-Point** 
+ 
 
 The next *arg* is printed as a *float*. 
 

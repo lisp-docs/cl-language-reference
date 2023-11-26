@@ -1,4 +1,4 @@
-**3.4.10 Define-method-combination Arguments Lambda Lists** 
+ 
 
 A *define-method-combination arguments lambda list* is used by the :arguments option to **define-method-combination**. 
 

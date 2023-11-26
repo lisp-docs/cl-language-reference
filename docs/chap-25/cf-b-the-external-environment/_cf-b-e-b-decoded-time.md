@@ -1,4 +1,4 @@
-**25.1.4.1 Decoded Time** 
+ 
 
 A *decoded time* is an ordered series of nine values that, taken together, represent a point in calendar time (ignoring *leap seconds*): 
 

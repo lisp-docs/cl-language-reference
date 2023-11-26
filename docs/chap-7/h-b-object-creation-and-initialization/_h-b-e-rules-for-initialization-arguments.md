@@ -1,4 +1,4 @@
-**7.1.4 Rules for Initialization Arguments** 
+ 
 
 The :initarg slot option may be specified more than once for a given *slot*. 
 

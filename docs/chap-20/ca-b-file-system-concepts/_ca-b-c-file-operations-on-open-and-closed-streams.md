@@ -1,4 +1,4 @@
-**20.1.2 File Operations on Open and Closed Streams** 
+ 
 
 Many *functions* that perform *file* operations accept either *open* or *closed streams* as *arguments*; see Section 21.1.3 (Stream Arguments to Standardized Functions). 
 

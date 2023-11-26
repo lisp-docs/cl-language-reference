@@ -1,4 +1,4 @@
-**6.1.1.5.4 Summary of Unconditional Execution Clauses** 
+ 
 
 The do (or doing) construct evaluates all *forms* in its clause. 
 

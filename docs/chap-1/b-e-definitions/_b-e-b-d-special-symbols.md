@@ -1,4 +1,4 @@
-**1.4.1.3 Special Symbols** 
+ 
 
 The special symbols described here are used as a notational convenience within this document, and are part of neither the Common Lisp language nor its environment. 
 

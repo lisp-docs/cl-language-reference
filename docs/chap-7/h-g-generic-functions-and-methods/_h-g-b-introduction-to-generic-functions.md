@@ -1,4 +1,4 @@
-**7.6.1 Introduction to Generic Functions** 
+ 
 
 A *generic function* is a function whose behavior depends on the *classes* or identities of the *arguments* supplied to it. A *generic function object* is associated with a set of *methods*, a *lambda list*, a *method combination*\<sub\>2\</sub\>, and other information. 
 

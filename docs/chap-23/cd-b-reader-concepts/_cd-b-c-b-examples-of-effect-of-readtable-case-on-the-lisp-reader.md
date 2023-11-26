@@ -1,4 +1,4 @@
-**23.1.2.1 Examples of Effect of Readtable Case on the Lisp Reader** 
+ 
 
 (defun test-readtable-case-reading () 
 

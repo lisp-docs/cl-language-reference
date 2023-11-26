@@ -1,4 +1,4 @@
-**3.7.2.1 Examples of Transfer of Control during a Destructive Operation** 
+ 
 
 The following examples illustrate some of the many ways in which the *implementation-dependent* nature of the modification can manifest itself. 
 

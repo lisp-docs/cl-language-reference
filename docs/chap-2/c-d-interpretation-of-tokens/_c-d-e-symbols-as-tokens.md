@@ -1,4 +1,4 @@
-**2.3.4 Symbols as Tokens** 
+ 
 
 Any *token* that is not a *potential number* , does not contain a *package marker* , and does not consist entirely of dots will always be interpreted as a *symbol*. Any *token* that is a *potential number* but does not fit the number syntax is a reserved *token* and has an *implementation-dependent* interpretation. In all other cases, the *token* is construed to be the name of a *symbol*. 
 

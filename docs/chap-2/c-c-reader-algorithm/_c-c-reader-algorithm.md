@@ -1,4 +1,4 @@
-**2.2 Reader Algorithm** 
+ 
 
 This section describes the algorithm used by the *Lisp reader* to parse *objects* from an *input character stream*, including how the *Lisp reader* processes *macro characters*. 
 

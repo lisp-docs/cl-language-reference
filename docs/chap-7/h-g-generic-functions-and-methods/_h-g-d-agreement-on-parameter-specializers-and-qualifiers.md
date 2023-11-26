@@ -1,4 +1,4 @@
-**7.6.3 Agreement on Parameter Specializers and Qualifiers** 
+ 
 
 Two *methods* are said to agree with each other on *parameter specializers* and *qualifiers* if the following conditions hold: 
 

@@ -1,4 +1,4 @@
-**22.3.3.2 Tilde E: Exponential Floating-Point** 
+ 
 
 The next *arg* is printed as a *float* in exponential notation. 
 

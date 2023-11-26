@@ -1,4 +1,4 @@
-**22.2.1.4 Pretty Print Dispatch Tables** 
+ 
 
 A *pprint dispatch table* is a mapping from keys to pairs of values. Each key is a *type specifier* . The values associated with a key are a “function” (specifically, a *function designator* or **nil**) and a “numerical priority” (specifically, a *real*). Basic insertion and retrieval is done based on the keys with the equality of keys being tested by **equal**. 
 

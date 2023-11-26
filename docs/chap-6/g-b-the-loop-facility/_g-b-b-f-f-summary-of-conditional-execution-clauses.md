@@ -1,4 +1,4 @@
-**6.1.1.5.5 Summary of Conditional Execution Clauses** 
+ 
 
 The if and when constructs take one *form* as a test and a clause that is executed when the test *yields true*. The clause can be a value accumulation, unconditional, or another conditional clause; it can also be any combination of such clauses connected by the **loop** and keyword. 
 

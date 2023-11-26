@@ -1,4 +1,4 @@
-**18.1.2 Modifying Hash Table Keys** 
+ 
 
 The function supplied as the :test argument to **make-hash-table** specifies the ‘equivalence test’ for the *hash table* it creates. 
 

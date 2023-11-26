@@ -1,4 +1,4 @@
-**3.1.2.1.1.2 Dynamic Variables** 
+ 
 
 A *variable* is a *dynamic variable* if one of the following conditions hold: 
 

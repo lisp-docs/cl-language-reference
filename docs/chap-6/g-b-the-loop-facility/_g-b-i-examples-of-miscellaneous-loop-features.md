@@ -1,4 +1,4 @@
-**6.1.8 Examples of Miscellaneous Loop Features** 
+ 
 
 (let ((i 0)) ; no loop keywords are used 
 

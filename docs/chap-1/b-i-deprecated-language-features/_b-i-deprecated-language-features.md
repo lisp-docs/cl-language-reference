@@ -1,4 +1,4 @@
-**1.8 Deprecated Language Features** 
+ 
 
 Deprecated language features are not expected to appear in future Common Lisp standards, but are required to be implemented for conformance with this standard; see Section 1.5.1.1 (Required Language Features). 
 

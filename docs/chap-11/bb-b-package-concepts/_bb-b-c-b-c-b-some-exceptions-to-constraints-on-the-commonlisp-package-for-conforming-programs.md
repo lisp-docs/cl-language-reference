@@ -1,4 +1,4 @@
-**11.1.2.1.2.1 Some Exceptions to Constraints on the COMMON-LISP Package for Conforming Programs** 
+ 
 
 If an *external symbol* of the COMMON-LISP *package* is not globally defined as a *standardized dynamic variable* or *constant variable*, it is allowed to lexically *bind* it and to declare the **type** of that *binding*, and it is allowed to locally *establish* it as a *symbol macro* (*e.g.*, with **symbol-macrolet**). 
 

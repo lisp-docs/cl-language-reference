@@ -1,4 +1,4 @@
-**3.1.5 Shadowing** 
+ 
 
 If two *forms* that *establish lexical bindings* with the same *name N* are textually nested, then references to *N* within the inner *form* refer to the *binding* established by the inner *form*; the inner *binding* for *N shadows* the outer *binding* for *N*. Outside the inner *form* but inside the outer one, references to *N* refer to the *binding* established by the outer *form*. For example: 
 

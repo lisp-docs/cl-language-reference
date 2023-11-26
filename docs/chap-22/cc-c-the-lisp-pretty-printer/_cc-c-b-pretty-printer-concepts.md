@@ -1,4 +1,4 @@
-**22.2.1 Pretty Printer Concepts** 
+ 
 
 The facilities provided by the *pretty printer* permit *programs* to redefine the way in which *code* is displayed, and allow the full power of *pretty printing* to be applied to complex combinations of data structures. 
 

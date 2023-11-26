@@ -1,4 +1,4 @@
-**7.4.1 Standard Meta-objects** 
+ 
 
 The object system supplies a set of meta-objects, called standard meta-objects. These include the *class* **standard-object** and *instances* of the classes **standard-method**, **standard-generic-function**, and **method-combination**. 
 

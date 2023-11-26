@@ -1,4 +1,4 @@
-**2.4.8.9 Sharpsign X** 
+ 
 
 #X*rational* reads *rational* in hexadecimal (radix 16). The digits above 9 are the letters A through F (the lowercase letters a through f are also acceptable). For example, 
 

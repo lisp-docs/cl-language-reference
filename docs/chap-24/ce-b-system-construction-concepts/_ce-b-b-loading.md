@@ -1,4 +1,4 @@
-**24.1.1 Loading** 
+ 
 
 To **load** a *file* is to treat its contents as *code* and *execute* that *code*. The *file* may contain *source code* or *compiled code*. 
 

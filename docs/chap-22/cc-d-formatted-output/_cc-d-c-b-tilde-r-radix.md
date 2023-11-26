@@ -1,4 +1,4 @@
-**22.3.2.1 Tilde R: Radix** 
+ 
 
 ~*n*R prints *arg* in radix *n*. The modifier flags and any remaining parameters are used as for the ~D directive. ~D is the same as ~10R. The full form is ~*radix* ,*mincol*,*padchar*,*commachar*,*comma-interval*R. 
 

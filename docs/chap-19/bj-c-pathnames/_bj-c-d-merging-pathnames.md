@@ -1,4 +1,4 @@
-**19.2.3 Merging Pathnames** 
+ 
 
 Merging takes a *pathname* with unfilled components and supplies values for those components from a source of defaults. 
 

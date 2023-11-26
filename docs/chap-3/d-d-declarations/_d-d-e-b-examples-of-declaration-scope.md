@@ -1,4 +1,4 @@
-**3.3.4.1 Examples of Declaration Scope** 
+ 
 
 Here is an example illustrating the *scope* of *bound declarations*. 
 

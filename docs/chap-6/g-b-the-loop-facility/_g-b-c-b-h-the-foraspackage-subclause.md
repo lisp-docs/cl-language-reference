@@ -1,4 +1,4 @@
-**6.1.2.1.7 The for-as-package subclause** 
+ 
 
 In the *for-as-package* subclause the for or as construct iterates over the *symbols* in a *package*. In this syntax, a compound preposition is used to designate access to a *package*. The variable *var* takes on the value of each *symbol* in the supplied *package*. The following *loop keywords* serve as valid prepositions within this syntax: 
 

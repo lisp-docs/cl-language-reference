@@ -1,4 +1,4 @@
-**3.5.1.3 Too Many Arguments** 
+ 
 
 It is not permitted to supply too many *arguments* to a *function*. Too many arguments means more *arguments* than the number of *required parameters* plus the number of *optional parameters*; however, if the *function* uses **&rest** or **&key**, it is not possible for it to receive too many arguments. 
 

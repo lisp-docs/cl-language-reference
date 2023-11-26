@@ -1,4 +1,4 @@
-**3.2.4.4 Additional Constraints on Externalizable Objects** 
+ 
 
 If two *literal objects* appearing in the source code for a single file processed with the *file compiler* are the *identical*, the corresponding *objects* in the *compiled code* must also be the *identical*. With the exception of *symbols* and *packages*, any two *literal objects* in *code* being processed by the *file compiler* may be *coalesced* if and only if they are *similar* ; if they are either both *symbols* or both *packages*, they may only be *coalesced* if and only if they are *identical*. 
 

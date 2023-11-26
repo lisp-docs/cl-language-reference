@@ -1,4 +1,4 @@
-**19.2.2.4 Restrictions on Examining Pathname Components** 
+ 
 
 The space of possible *objects* that a *conforming program* must be prepared to *read* \<sub\>1\</sub\> as the value of a *pathname* component is substantially larger than the space of possible *objects* that a *conforming program* is permitted to *write*\<sub\>1\</sub\> into such a component. 
 

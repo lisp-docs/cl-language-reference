@@ -1,4 +1,4 @@
-**1.3 Referenced Publications** 
+ 
 
 *• The Anatomy of Lisp*, John Allen, McGraw-Hill, Inc., 1978. 
 

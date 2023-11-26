@@ -1,4 +1,4 @@
-**1.2 Organization of the Document** 
+ 
 
 This is a reference document, not a tutorial document. Where possible and convenient, the order of presentation has been chosen so that the more primitive topics precede those that build upon them; however, linear readability has not been a priority. 
 

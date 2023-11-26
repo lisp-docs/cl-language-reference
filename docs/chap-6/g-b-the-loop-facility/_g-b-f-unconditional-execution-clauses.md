@@ -1,4 +1,4 @@
-**6.1.5 Unconditional Execution Clauses** 
+ 
 
 The do and doing constructs evaluate the supplied *forms* wherever they occur in the expanded form of **loop**. The *form* argument can be any *compound form*. Each *form* is evaluated in every iteration. Because every loop clause must begin with a *loop keyword*, the keyword do is used when no control action other than execution is required. 
 

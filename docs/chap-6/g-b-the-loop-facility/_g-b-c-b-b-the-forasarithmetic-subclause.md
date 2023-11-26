@@ -1,4 +1,4 @@
-**6.1.2.1.1 The for-as-arithmetic subclause** 
+ 
 
 In the *for-as-arithmetic* subclause, the for or as construct iterates from the value supplied by *form1* to the value supplied by *form2* in increments or decrements denoted by *form3*. Each expression is evaluated only once and must evaluate to a *number* . The variable *var* is bound to the value of *form1* in the first iteration and is *stepped* \<sub\>1\</sub\> by the value of *form3* in each succeeding iteration, or by 1 if *form3* is not provided. The following *loop keywords* serve as valid prepositions within this syntax. At least one of the prepositions must be used; and at most one from each line may be used in a single subclause. 
 

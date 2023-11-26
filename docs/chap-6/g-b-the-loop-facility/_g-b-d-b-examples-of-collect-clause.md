@@ -1,4 +1,4 @@
-**6.1.3.1 Examples of COLLECT clause** 
+ 
 
 ;; Collect all the symbols in a list. 
 

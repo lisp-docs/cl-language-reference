@@ -1,4 +1,4 @@
-**6.1.6 Conditional Execution Clauses** 
+ 
 
 The if, when, and unless constructs establish conditional control in a **loop**. If the test passes, the succeeding loop clause is executed. If the test does not pass, the succeeding clause is skipped, and program control moves to the clause that follows the *loop keyword* else. If the test does not pass and no else clause is supplied, control is transferred to the clause or construct following the entire 
 

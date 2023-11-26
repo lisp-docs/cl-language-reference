@@ -1,4 +1,4 @@
-**6.1.1.4 Expanding Loop Forms** 
+ 
 
 A **loop** *macro form* expands into a *form* containing one or more binding forms (that *establish bindings* of loop variables) and a **block** and a **tagbody** (that express a looping control structure). The variables established in **loop** are bound as if by **let** or **lambda**. 
 

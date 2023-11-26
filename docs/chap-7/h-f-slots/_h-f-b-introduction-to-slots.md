@@ -1,4 +1,4 @@
-**7.5.1 Introduction to Slots** 
+ 
 
 An *object* of *metaclass* **standard-class** has zero or more named *slots*. The *slots* of an *object* are determined by the *class* of the *object*. Each *slot* can hold one value. The *name* of a *slot* is a *symbol* that is syntactically valid for use as a variable name. 
 

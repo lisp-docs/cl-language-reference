@@ -1,4 +1,4 @@
-**1.4.4.19 The “Supertypes” Section of a Dictionary Entry** 
+ 
 
 This appears in the dictionary entry for a *type*, and contains a list of the *standardized types* that must be *supertypes* of this *type*. 
 

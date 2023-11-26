@@ -1,4 +1,4 @@
-**22.3.2.4 Tilde O: Octal** 
+ 
 
 This is just like ~D but prints in octal radix (radix 8) instead of decimal. The full form is therefore ~*mincol*,*padchar*,*commachar*,*comma-interval*O. 
 

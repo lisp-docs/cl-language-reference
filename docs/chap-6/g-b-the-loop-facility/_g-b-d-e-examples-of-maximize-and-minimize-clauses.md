@@ -1,4 +1,4 @@
-**6.1.3.4 Examples of MAXIMIZE and MINIMIZE clauses** 
+ 
 
 (loop for i in ’(2 1 5 3 4) 
 

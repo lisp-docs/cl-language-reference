@@ -1,4 +1,4 @@
-**14.1.2 Conses as Lists** 
+ 
 
 A *list* is a chain of *conses* in which the *car* of each *cons* is an *element* of the *list*, and the *cdr* of each *cons* is either the next link in the chain or a terminating *atom*. 
 

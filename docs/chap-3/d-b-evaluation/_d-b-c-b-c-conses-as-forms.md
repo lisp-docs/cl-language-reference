@@ -1,4 +1,4 @@
-**3.1.2.1.2 Conses as Forms** 
+ 
 
 A *cons* that is used as a *form* is called a *compound form*. 
 

@@ -1,4 +1,4 @@
-**2.4.5 Double-Quote** 
+ 
 
 **Syntax:** "&#10216;text&#10217;" 
 

@@ -1,4 +1,4 @@
-**3.1.1.3 Lexical Environments** 
+ 
 
 A *lexical environment* for *evaluation* at some position in a *program* is that part of the *environment* that contains information having *lexical scope* within the *forms* containing that position. A *lexical environment* contains, among other things, the following: 
 

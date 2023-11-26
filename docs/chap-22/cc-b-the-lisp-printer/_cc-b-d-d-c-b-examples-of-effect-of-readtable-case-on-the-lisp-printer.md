@@ -1,4 +1,4 @@
-**22.1.3.3.2.1 Examples of Effect of Readtable Case on the Lisp Printer** 
+ 
 
 (defun test-readtable-case-printing () 
 

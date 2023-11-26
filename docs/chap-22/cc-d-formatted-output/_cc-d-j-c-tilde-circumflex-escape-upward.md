@@ -1,4 +1,4 @@
-**22.3.9.2 Tilde Circumflex: Escape Upward** 
+ 
 
 ~\<i\>\<sup\>∧\</sup\>\</i\> 
 

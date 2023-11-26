@@ -1,4 +1,4 @@
-**3.1.7 Return Values** 
+ 
 
 Ordinarily the result of calling a *function* is a single *object*. Sometimes, however, it is convenient for a function to compute several *objects* and return them. 
 

@@ -1,4 +1,4 @@
-**22.3.10.1 Nesting of FORMAT Operations** 
+ 
 
 The case-conversion, conditional, iteration, and justification constructs can contain other formatting constructs by bracketing them. These constructs must nest properly with respect to each other. For example, it is not legitimate to put the start of a case-conversion construct in each arm of a conditional and the end of the case-conversion construct outside the conditional: 
 

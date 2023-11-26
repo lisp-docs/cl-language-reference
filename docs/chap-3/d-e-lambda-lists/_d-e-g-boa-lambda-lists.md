@@ -1,4 +1,4 @@
-**3.4.6 Boa Lambda Lists** 
+ 
 
 A *boa lambda list* is a *lambda list* that is syntactically like an *ordinary lambda list*, but that is processed in “**b**y **o**rder of **a**rgument” style. 
 

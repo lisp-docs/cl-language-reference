@@ -1,4 +1,4 @@
-**3.1.3 Lambda Expressions** 
+ 
 
 In a *lambda expression*, the body is evaluated in a lexical *environment* that is formed by adding the *binding* of each *parameter* in the *lambda list* with the corresponding *value* from the *arguments* to the current lexical *environment*. 
 

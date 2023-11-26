@@ -1,4 +1,4 @@
-**21.1.1.1.1 Input, Output, and Bidirectional Streams** 
+ 
 
 A *stream*, whether a *character stream* or a *binary stream*, can be an *input stream* (source of data), an *output stream* (sink for data), both, or (*e.g.*, when “:direction :probe” is given to **open**) neither. 
 

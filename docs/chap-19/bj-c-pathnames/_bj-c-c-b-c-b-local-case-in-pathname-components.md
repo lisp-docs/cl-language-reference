@@ -1,4 +1,4 @@
-**19.2.2.1.2.1 Local Case in Pathname Components** 
+ 
 
 For the functions in Figure 19–2, a value of :local for the :case argument (the default for these functions) indicates that the functions should receive and yield *strings* in component values as if they were already represented according to the host *file system*’s convention for *case*. 
 

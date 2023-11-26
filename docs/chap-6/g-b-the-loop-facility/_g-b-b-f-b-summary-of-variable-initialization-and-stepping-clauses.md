@@ -1,4 +1,4 @@
-**6.1.1.5.1 Summary of Variable Initialization and Stepping Clauses** 
+ 
 
 The for and as constructs provide iteration control clauses that establish a variable to be initialized. for and as clauses can be combined with the loop keyword and to get *parallel* initialization and *stepping*\<sub\>1\</sub\>. Otherwise, the initialization and *stepping*\<sub\>1\</sub\> are *sequential*. 
 

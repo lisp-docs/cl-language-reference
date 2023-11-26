@@ -1,4 +1,4 @@
-**5.1.1.1.1 Examples of Evaluation of Subforms to Places** 
+ 
 
 (let ((ref2 (list ’()))) 
 

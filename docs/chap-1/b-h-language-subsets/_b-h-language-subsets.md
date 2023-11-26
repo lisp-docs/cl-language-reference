@@ -1,4 +1,4 @@
-**1.7 Language Subsets** 
+ 
 
 The language described in this standard contains no subsets, though subsets are not forbidden. 
 

@@ -1,4 +1,4 @@
-**25.1.4.3 Internal Time** 
+ 
 
 *Internal time* represents time as a single *integer* , in terms of an *implementation-dependent* unit called an *internal time unit*. Relative time is measured as a number of these units. Absolute time is relative to an arbitrary time base. 
 

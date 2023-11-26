@@ -1,4 +1,4 @@
-**3.1.1.3.1 The Null Lexical Environment** 
+ 
 
 The *null lexical environment* is equivalent to the *global environment*. 
 

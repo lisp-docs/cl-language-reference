@@ -1,4 +1,4 @@
-**3.1.2.1.3 Self-Evaluating Objects** 
+ 
 
 A *form* that is neither a *symbol* nor a *cons* is defined to be a *self-evaluating object*. *Evaluating* such an *object yields* the *same object* as a result. 
 

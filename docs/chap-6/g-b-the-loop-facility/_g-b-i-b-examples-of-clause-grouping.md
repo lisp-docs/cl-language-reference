@@ -1,4 +1,4 @@
-**6.1.8.1 Examples of clause grouping** 
+ 
 
 ;; Group conditional clauses. 
 

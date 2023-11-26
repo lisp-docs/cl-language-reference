@@ -1,4 +1,4 @@
-**15.1.2.2 Required Kinds of Specialized Arrays** 
+ 
 
 *Vectors* whose *elements* are restricted to *type* **character** or a *subtype* of **character** are called *strings*. *Strings* are of *type* **string**. Figure 15–2 lists some *defined names* related to *strings*. 
 

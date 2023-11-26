@@ -1,4 +1,4 @@
-**7.5.3 Inheritance of Slots and Slot Options** 
+ 
 
 The set of the *names* of all *slots accessible* in an *instance* of a *class C* is the union of the sets of *names* of *slots* defined by *C* and its *superclasses*. The structure of an *instance* is the set of *names* of *local slots* in that *instance*. 
 

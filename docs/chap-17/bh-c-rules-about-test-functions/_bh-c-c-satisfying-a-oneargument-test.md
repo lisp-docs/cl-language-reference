@@ -1,4 +1,4 @@
-**17.2.2 Satisfying a One-Argument Test** 
+ 
 
 When using one of the *functions* in Figure 17–3, the elements *E* of a *sequence S* are filtered not on the basis of the presence or absence of an object *O* under a two *argument predicate*, as with the *functions* described in Section 17.2.1 (Satisfying a Two-Argument Test), but rather on the basis of a one *argument predicate*. 
 

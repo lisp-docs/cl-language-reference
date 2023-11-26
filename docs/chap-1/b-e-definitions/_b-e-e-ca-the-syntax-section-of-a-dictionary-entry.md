@@ -1,4 +1,4 @@
-**1.4.4.20 The “Syntax” Section of a Dictionary Entry** 
+ 
 
 This section describes how to use the *defined name* in code. The “Syntax” description for a *generic function* describes the *lambda list* of the *generic function* itself, while the “Method Signatures” describe the *lambda lists* of the defined *methods*. The “Syntax” description for an *ordinary function*, a *macro*, or a *special operator* describes its *parameters*. 
 

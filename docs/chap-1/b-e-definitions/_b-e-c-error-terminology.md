@@ -1,4 +1,4 @@
-**1.4.2 Error Terminology** 
+ 
 
 Situations in which errors might, should, or must be signaled are described in the standard. The wording used to describe such situations is intended to have precise meaning. The following list is a glossary of those meanings. 
 

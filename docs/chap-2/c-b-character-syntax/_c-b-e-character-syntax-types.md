@@ -1,4 +1,4 @@
-**2.1.4 Character Syntax Types** 
+ 
 
 The *Lisp reader* constructs an *object* from the input text by interpreting each *character* according to its *syntax type*. The *Lisp reader* cannot accept as input everything that the *Lisp printer*  
 

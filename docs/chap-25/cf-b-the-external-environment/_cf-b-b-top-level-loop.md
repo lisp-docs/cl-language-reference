@@ -1,4 +1,4 @@
-**25.1.1 Top level loop** 
+ 
 
 The top level loop is the Common Lisp mechanism by which the user normally interacts with the Common Lisp system. This loop is sometimes referred to as the *Lisp read-eval-print loop* because it typically consists of an endless loop that reads an expression, evaluates it and prints the results. 
 

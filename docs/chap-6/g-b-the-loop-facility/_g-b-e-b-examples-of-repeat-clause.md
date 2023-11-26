@@ -1,4 +1,4 @@
-**6.1.4.1 Examples of REPEAT clause** 
+ 
 
 (loop repeat 3 
 

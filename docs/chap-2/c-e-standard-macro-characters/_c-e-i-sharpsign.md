@@ -1,4 +1,4 @@
-**2.4.8 Sharpsign** 
+ 
 
 *Sharpsign* is a *non-terminating dispatching macro character* . It reads an optional sequence of digits and then one more character, and uses that character to select a *function* to run as a *reader macro function*. 
 

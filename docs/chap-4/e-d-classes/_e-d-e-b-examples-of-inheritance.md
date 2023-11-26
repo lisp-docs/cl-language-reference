@@ -1,4 +1,4 @@
-**4.3.4.1 Examples of Inheritance** 
+ 
 
 (defclass C1 () 
 

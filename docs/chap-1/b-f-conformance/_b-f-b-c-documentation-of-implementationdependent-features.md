@@ -1,4 +1,4 @@
-**1.5.1.2 Documentation of Implementation-Dependent Features** 
+ 
 
 A *conforming implementation* shall be accompanied by a document that provides a definition of all *implementation-defined* aspects of the language defined by this specification. 
 

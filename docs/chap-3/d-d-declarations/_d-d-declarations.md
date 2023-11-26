@@ -1,4 +1,4 @@
-**3.3 Declarations** 
+ 
 
 *Declarations* provide a way of specifying information for use by program processors, such as the evaluator or the compiler. 
 

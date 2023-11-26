@@ -1,4 +1,4 @@
-**4.3.7 Integrating Types and Classes** 
+ 
 
 The object system maps the space of *classes* into the space of *types*. Every *class* that has a proper name has a corresponding *type* with the same *name*. 
 

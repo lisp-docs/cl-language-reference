@@ -1,4 +1,4 @@
-**3.1 Evaluation** 
+ 
 
 *Execution* of *code* can be accomplished by a variety of means ranging from direct interpretation of a *form* representing a *program* to invocation of *compiled code* produced by a *compiler* . 
 

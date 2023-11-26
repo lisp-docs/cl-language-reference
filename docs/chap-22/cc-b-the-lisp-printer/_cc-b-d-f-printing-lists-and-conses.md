@@ -1,4 +1,4 @@
-**22.1.3.5 Printing Lists and Conses** 
+ 
 
 Wherever possible, list notation is preferred over dot notation. Therefore the following algorithm is used to print a *cons x*: 
 

@@ -1,4 +1,4 @@
-**1.4.4.6.1 The “Compound Type Specifier Kind” Section of a Dictionary Entry** 
+ 
 
 An “abbreviating” *type specifier* is one that describes a *subtype* for which it is in principle possible to enumerate the *elements*, but for which in practice it is impractical to do so. 
 

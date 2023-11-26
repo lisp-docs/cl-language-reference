@@ -1,4 +1,4 @@
-**12.1.5.3.1 Examples of Rule of Canonical Representation for Complex Rationals** 
+ 
 
 #c(1.0 1.0) *→* #C(1.0 1.0) 
 

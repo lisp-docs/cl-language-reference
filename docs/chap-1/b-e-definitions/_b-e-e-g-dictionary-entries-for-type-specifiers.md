@@ -1,4 +1,4 @@
-**1.4.4.6 Dictionary Entries for Type Specifiers** 
+ 
 
 The *atomic type specifiers* are those *defined names* listed in Figure 4–2. Such dictionary entries are of kind “Class,” “Condition Type,” “System Class,” or “Type.” A description of how to interpret a *symbol* naming one of these *types* or *classes* as an *atomic type specifier* is found in the “Description” section of such dictionary entries. 
 

@@ -1,4 +1,4 @@
-**4.3.2 Defining Classes** 
+ 
 
 The macro **defclass** is used to define a new named *class*. 
 

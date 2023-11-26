@@ -1,4 +1,4 @@
-**7.1.5 Shared-Initialize** 
+ 
 
 The *generic function* **shared-initialize** is used to fill the *slots* of an *instance* using initialization arguments and :initform forms when an *instance* is created, when an *instance* is re-initialized, when an *instance* is updated to conform to a redefined *class*, and when an *instance* is updated to conform to a different *class*. It uses standard *method* combination. It takes the following 
 

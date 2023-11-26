@@ -1,4 +1,4 @@
-**20.1.1 Coercion of Streams to Pathnames** 
+ 
 
 A *stream associated with a file* is either a *file stream* or a *synonym stream* whose target is a *stream associated with a file*. Such streams can be used as *pathname designators*. 
 

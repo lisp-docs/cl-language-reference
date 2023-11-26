@@ -1,4 +1,4 @@
-**13.1.7 Character Names** 
+ 
 
 The following *character names* must be present in all *conforming implementations*: 
 

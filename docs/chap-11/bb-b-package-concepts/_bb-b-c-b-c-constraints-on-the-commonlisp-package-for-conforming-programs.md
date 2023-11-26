@@ -1,4 +1,4 @@
-**11.1.2.1.2 Constraints on the COMMON-LISP Package for Conforming Programs** 
+ 
 
 Except where explicitly allowed, the consequences are undefined if any of the following actions are performed on an *external symbol* of the COMMON-LISP *package*: 
 

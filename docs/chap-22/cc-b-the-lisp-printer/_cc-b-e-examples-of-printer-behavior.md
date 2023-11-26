@@ -1,4 +1,4 @@
-**22.1.4 Examples of Printer Behavior** 
+ 
 
 (let ((\*print-escape\* t)) (fresh-line) (write #\a)) 
 

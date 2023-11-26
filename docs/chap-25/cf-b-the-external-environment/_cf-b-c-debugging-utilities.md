@@ -1,4 +1,4 @@
-**25.1.2 Debugging Utilities** 
+ 
 
 Figure 25–2 shows *defined names* relating to debugging. 
 

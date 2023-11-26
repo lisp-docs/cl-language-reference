@@ -1,4 +1,4 @@
-**9.1.4.2.4 Associating a Restart with a Condition** 
+ 
 
 A *restart* can be “associated with” a *condition* explicitly by **with-condition-restarts**, or implicitly by **restart-case**. Such an assocation has *dynamic extent*. 
 

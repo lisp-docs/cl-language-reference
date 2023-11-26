@@ -1,4 +1,4 @@
-**2.1.4.5.1 Examples of Multiple Escape Characters** 
+ 
 
 ;; The following examples assume the readtable case of \*readtable\* 
 

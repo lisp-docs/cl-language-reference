@@ -1,4 +1,4 @@
-**17.2.2.1 Examples of Satisfying a One-Argument Test** 
+ 
 
 (count-if #’zerop ’(1 #C(0.0 0.0) 0 0.0d0 0.0s0 3)) *→* 4 
 

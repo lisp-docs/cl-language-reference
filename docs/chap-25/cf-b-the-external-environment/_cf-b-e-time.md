@@ -1,4 +1,4 @@
-**25.1.4 Time** 
+ 
 
 Time is represented in four different ways in Common Lisp: *decoded time*, *universal time*, *internal time*, and seconds. *Decoded time* and *universal time* are used primarily to represent calendar time, and are precise only to one second. *Internal time* is used primarily to represent measurements of 
 

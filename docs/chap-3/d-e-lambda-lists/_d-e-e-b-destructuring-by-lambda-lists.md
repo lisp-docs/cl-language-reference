@@ -1,4 +1,4 @@
-**3.4.4.1 Destructuring by Lambda Lists** 
+ 
 
 Anywhere in a *macro lambda list* where a parameter name can appear, and where *ordinary lambda list* syntax (as described in Section 3.4.1 (Ordinary Lambda Lists)) does not otherwise allow a *list*, a *destructuring lambda list* can appear in place of the parameter name. When this is done, then  
 

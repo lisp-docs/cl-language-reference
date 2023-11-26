@@ -1,4 +1,4 @@
-**22.3.2.2 Tilde D: Decimal** 
+ 
 
 An *arg*, which should be an *integer* , is printed in decimal radix. ~D will never put a decimal point after the number. 
 

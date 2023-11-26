@@ -1,4 +1,4 @@
-**25.1.3 Environment Inquiry** 
+ 
 
 Environment inquiry *defined names* provide information about the hardware and software configuration on which a Common Lisp program is being executed. 
 

@@ -1,4 +1,4 @@
-**14.1.2.2 Lists as Sets** 
+ 
 
 *Lists* are sometimes viewed as sets by considering their elements unordered and by assuming there is no duplication of elements. 
 

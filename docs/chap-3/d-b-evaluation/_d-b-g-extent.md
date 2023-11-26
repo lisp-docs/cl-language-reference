@@ -1,4 +1,4 @@
-**3.1.6 Extent** 
+ 
 
 Contorted-example works only because the *function* named by f is invoked during the *extent* of the *exit point*. Once the flow of execution has left the block, the *exit point* is *disestablished*. For example: 
 

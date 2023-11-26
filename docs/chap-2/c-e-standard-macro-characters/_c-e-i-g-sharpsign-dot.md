@@ -1,4 +1,4 @@
-**2.4.8.6 Sharpsign Dot** 
+ 
 
 #.*foo* is read as the *object* resulting from the evaluation of the *object* represented by *foo*. The evaluation is done during the **read** process, when the #. notation is encountered. The #. syntax therefore performs a read-time evaluation of *foo*. 
 

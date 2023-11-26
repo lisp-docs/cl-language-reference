@@ -1,4 +1,4 @@
-**7.6.6.2 Standard Method Combination** 
+ 
 
 Standard method combination is supported by the *class* **standard-generic-function**. It is used if no other type of method combination is specified or if the built-in method combination type **standard** is specified. 
 

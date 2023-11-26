@@ -1,4 +1,4 @@
-**19.2.2.2.3.1 Relation between component values NIL and :UNSPECIFIC** 
+ 
 
 If a *pathname* is converted to a *namestring*, the *symbols* **nil** and :unspecific cause the field to be treated as if it were empty. That is, both **nil** and :unspecific cause the component not to appear in the *namestring*. 
 

@@ -1,4 +1,4 @@
-**3.4.9 Define-modify-macro Lambda Lists** 
+ 
 
 A *define-modify-macro lambda list* is used by **define-modify-macro**. 
 

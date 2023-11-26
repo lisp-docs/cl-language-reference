@@ -1,4 +1,4 @@
-**3.5.1.5 Invalid Keyword Arguments** 
+ 
 
 It is not permitted to supply a keyword argument to a *function* using a name that is not a *symbol*. 
 

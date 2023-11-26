@@ -1,4 +1,4 @@
-**3.1.2.1.3.1 Examples of Self-Evaluating Objects** 
+ 
 
 *Numbers*, *pathnames*, and *arrays* are examples of *self-evaluating objects*. 
 

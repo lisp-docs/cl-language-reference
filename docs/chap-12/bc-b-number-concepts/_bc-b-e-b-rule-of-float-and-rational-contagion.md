@@ -1,4 +1,4 @@
-**12.1.4.1 Rule of Float and Rational Contagion** 
+ 
 
 When *rationals* and *floats* are combined by a numerical function, the *rational* is first converted to a *float* of the same format. For *functions* such as **+** that take more than two arguments, it is permitted that part of the operation be carried out exactly using *rationals* and the rest be done using floating-point arithmetic. 
 

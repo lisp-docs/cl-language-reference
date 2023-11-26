@@ -1,4 +1,4 @@
-**5.1.2.4 THE Forms as Places** 
+ 
 
 A **the** *form* can be used as a *place*, in which case the declaration is transferred to the *newvalue* form, and the resulting **setf** is analyzed. For example, 
 

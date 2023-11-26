@@ -1,4 +1,4 @@
-**1.9 Symbols in the COMMON-LISP Package** 
+ 
 
 The figures on the next twelve pages contain a complete enumeration of the 978 *external symbols* in the COMMON-LISP *package*. 
 

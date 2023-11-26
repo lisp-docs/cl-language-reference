@@ -1,4 +1,4 @@
-**5.1.1.2.1 Examples of Setf Expansions** 
+ 
 
 Examples of the contents of the constituents of *setf expansions* follow. 
 

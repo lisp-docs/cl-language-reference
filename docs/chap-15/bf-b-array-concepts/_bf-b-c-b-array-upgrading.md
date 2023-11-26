@@ -1,4 +1,4 @@
-**15.1.2.1 Array Upgrading** 
+ 
 
 The *upgraded array element type* of a *type T*\<sub\>1\</sub\> is a *type T*\<sub\>2\</sub\> that is a *supertype* of *T*\<sub\>1\</sub\> and that is used instead of *T*\<sub\>1\</sub\> whenever *T*\<sub\>1\</sub\> is used as an *array element type* for object creation or type discrimination. 
 

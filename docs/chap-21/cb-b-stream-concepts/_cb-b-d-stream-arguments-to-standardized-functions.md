@@ -1,4 +1,4 @@
-**21.1.3 Stream Arguments to Standardized Functions**
+
 
  The *operators* in Figure 21–7 accept *stream arguments* that might be either *open* or *closed streams*. 
 

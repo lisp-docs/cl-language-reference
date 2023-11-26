@@ -1,4 +1,4 @@
-**3.2.1 Compiler Terminology** 
+ 
 
 The following terminology is used in this section. 
 

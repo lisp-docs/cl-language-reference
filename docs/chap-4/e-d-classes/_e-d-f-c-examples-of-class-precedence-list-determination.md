@@ -1,4 +1,4 @@
-**4.3.5.2 Examples of Class Precedence List Determination** 
+ 
 
 This example determines a *class precedence list* for the class pie. The following *classes* are defined: (defclass pie (apple cinnamon) ()) 
 

@@ -1,4 +1,4 @@
-**11.1.1.1 Package Names and Nicknames** 
+ 
 
 Each *package* has a *name* (a *string*) and perhaps some *nicknames* (also *strings*). These are assigned when the *package* is created and can be changed later. 
 

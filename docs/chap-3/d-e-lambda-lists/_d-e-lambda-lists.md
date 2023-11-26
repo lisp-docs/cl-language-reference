@@ -1,4 +1,4 @@
-**3.4 Lambda Lists** 
+ 
 
 A *lambda list* is a *list* that specifies a set of *parameters* (sometimes called *lambda variables*) and a protocol for receiving *values* for those *parameters*. 
 

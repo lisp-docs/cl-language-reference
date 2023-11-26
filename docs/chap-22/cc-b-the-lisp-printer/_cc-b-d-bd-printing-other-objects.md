@@ -1,4 +1,4 @@
-**22.1.3.13 Printing Other Objects** 
+ 
 
 Other *objects* are printed in an *implementation-dependent* manner. It is not required that an *implementation* print those *objects readably*. 
 

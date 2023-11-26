@@ -1,4 +1,4 @@
-**3.2.4 Literal Objects in Compiled Files** 
+ 
 
 The functions **eval** and **compile** are required to ensure that *literal objects* referenced within the resulting interpreted or compiled code objects are the *same* as the corresponding *objects* in the *source code*. **compile-file**, on the other hand, must produce a *compiled file* that, when loaded with **load**, constructs the *objects* defined by the *source code* and produces references to them. 
 

@@ -1,4 +1,4 @@
-**6.1.2.2.1 Examples of WITH clause** 
+ 
 
 ;; These bindings occur in sequence. 
 

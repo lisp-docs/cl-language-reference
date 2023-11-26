@@ -1,4 +1,4 @@
-**19.2.2.1.2.2 Common Case in Pathname Components** 
+ 
 
 For the functions in Figure 19–2, a value of :common for the :case argument that these *functions* should receive and yield *strings* in component values according to the following conventions: 
 

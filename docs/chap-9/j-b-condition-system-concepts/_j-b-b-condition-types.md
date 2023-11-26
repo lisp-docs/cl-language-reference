@@ -1,4 +1,4 @@
-**9.1.1 Condition Types** 
+ 
 
 Figure 9–1 lists the *standardized condition types*. Additional *condition types* can be defined by using **define-condition**. 
 

@@ -1,4 +1,4 @@
-**5.1.1.2 Setf Expansions** 
+ 
 
 Sometimes it is possible to avoid evaluating *subforms* of a *place* multiple times or in the wrong order. A *setf expansion* for a given access form can be expressed as an ordered collection of five *objects*: 
 

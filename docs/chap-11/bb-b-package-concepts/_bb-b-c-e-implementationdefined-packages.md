@@ -1,4 +1,4 @@
-**11.1.2.4 Implementation-Defined Packages** 
+ 
 
 Other, *implementation-defined packages* might be present in the initial Common Lisp environment. 
 

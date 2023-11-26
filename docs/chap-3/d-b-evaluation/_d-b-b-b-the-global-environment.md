@@ -1,4 +1,4 @@
-**3.1.1.1 The Global Environment** 
+ 
 
 The *global environment* is that part of an *environment* that contains *bindings* with both *indefinite scope* and *indefinite extent*. The *global environment* contains, among other things, the following: 
 

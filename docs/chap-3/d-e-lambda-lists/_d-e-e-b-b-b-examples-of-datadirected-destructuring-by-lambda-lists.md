@@ -1,4 +1,4 @@
-**3.4.4.1.1.1 Examples of Data-directed Destructuring by Lambda Lists** 
+ 
 
 An example pattern is 
 

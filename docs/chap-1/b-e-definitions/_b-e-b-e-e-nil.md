@@ -1,4 +1,4 @@
-**1.4.1.4.4 NIL** 
+ 
 
 **nil** has a variety of meanings. It is a *symbol* in the COMMON-LISP *package* with the *name* "NIL", it is *boolean* (and *generalized boolean*) *false*, it is the *empty list*, and it is the *name* of the *empty type* (a *subtype* of all *types*). 
 

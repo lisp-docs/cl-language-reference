@@ -1,4 +1,4 @@
-**19.2.3.1 Examples of Merging Pathnames** 
+ 
 
 Although the following examples are possible to execute only in *implementations* which permit :unspecific in the indicated position andwhich permit four-letter type components, they serve to illustrate the basic concept of *pathname* merging. 
 

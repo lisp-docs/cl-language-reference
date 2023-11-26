@@ -1,4 +1,4 @@
-**23.1.3.1 The EOF-ERROR-P argument** 
+ 
 
 *Eof-error-p* in input function calls controls what happens if input is from a file (or any other input source that has a definite end) and the end of the file is reached. If *eof-error-p* is *true* (the default), an error of *type* **end-of-file** is signaled at end of file. If it is *false*, then no error is signaled, and instead the function returns *eof-value*. 
 

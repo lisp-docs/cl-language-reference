@@ -1,4 +1,4 @@
-**2.3.2 Constructing Numbers from Tokens** 
+ 
 
 A *real* is constructed directly from a corresponding numeric *token*; see Figure 2–9. 
 

@@ -1,4 +1,4 @@
-**12.1.6 Interval Designators** 
+ 
 
 The *compound type specifier* form of the numeric *type specifiers* permit the user to specify an interval on the real number line which describe a *subtype* of the *type* which would be described by the corresponding *atomic type specifier* . A *subtype* of some *type T* is specified using an ordered pair of *objects* called *interval designators* for *type T*. 
 

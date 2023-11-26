@@ -1,4 +1,4 @@
-**22.1.3.8 Printing Other Arrays** 
+ 
 
 If **\*print-array\*** is *true* and **\*print-readably\*** is *false*, any *array* other than a *vector* is printed using #nA format. Let n be the *rank* of the *array*. Then # is printed, then n as a decimal integer, then A, then n open parentheses. Next the *elements* are scanned in row-major order, using **write** on each *element*, and separating *elements* from each other with *whitespace*\<sub\>1\</sub\>. The array’s dimensions are numbered 0 to n-1 from left to right, and are enumerated with the rightmost index changing fastest. Every time the index for dimension j is incremented, the following actions are taken: 
 

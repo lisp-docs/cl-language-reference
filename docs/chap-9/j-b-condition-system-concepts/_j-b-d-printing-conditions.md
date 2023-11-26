@@ -1,4 +1,4 @@
-**9.1.3 Printing Conditions** 
+ 
 
 If the :report argument to **define-condition** is used, a print function is defined that is called whenever the defined *condition* is printed while the *value* of **\*print-escape\*** is *false*. This function is called the *condition reporter*; the text which it outputs is called a *report message*. 
 

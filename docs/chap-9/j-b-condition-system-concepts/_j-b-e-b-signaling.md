@@ -1,4 +1,4 @@
-**9.1.4.1 Signaling** 
+ 
 
 When a *condition* is signaled, the most recent applicable *active handler* is invoked. Sometimes a handler will decline by simply returning without a transfer of control. In such cases, the next most recent applicable active handler is invoked. 
 

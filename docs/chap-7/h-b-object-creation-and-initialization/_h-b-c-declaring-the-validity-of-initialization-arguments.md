@@ -1,4 +1,4 @@
-**7.1.2 Declaring the Validity of Initialization Arguments** 
+ 
 
 Initialization arguments are checked for validity in each of the four situations that use them. An initialization argument may be valid in one situation and not another. For example, the system-supplied primary *method* for **make-instance** defined for the *class* **standard-class** checks the validity of its initialization arguments and signals an error if an initialization argument is supplied that is not declared as valid in that situation. 
 

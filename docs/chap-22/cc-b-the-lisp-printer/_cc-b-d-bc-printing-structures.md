@@ -1,4 +1,4 @@
-**22.1.3.12 Printing Structures** 
+ 
 
 By default, a *structure* of type *S* is printed using #S syntax. This behavior can be customized by specifying a :print-function or :print-object option to the **defstruct** *form* that defines *S*, or by writing a **print-object** *method* that is *specialized* for *objects* of type *S*. 
 

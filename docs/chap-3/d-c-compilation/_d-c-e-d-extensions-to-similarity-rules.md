@@ -1,4 +1,4 @@
-**3.2.4.3 Extensions to Similarity Rules** 
+ 
 
 Some *objects*, such as *streams*, **readtables**, and **methods** are not *externalizable objects* under the definition of similarity given above. That is, such *objects* may not portably appear as *literal objects* in *code* to be processed by the *file compiler* . 
 

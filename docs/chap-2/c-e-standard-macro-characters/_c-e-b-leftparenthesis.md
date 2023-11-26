@@ -1,4 +1,4 @@
-**2.4.1 Left-Parenthesis** 
+ 
 
 The *left-parenthesis* initiates reading of a *list*. **read** is called recursively to read successive *objects* until a right parenthesis is found in the input *stream*. A *list* of the *objects* read is returned. Thus 
 

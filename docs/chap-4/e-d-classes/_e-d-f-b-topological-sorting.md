@@ -1,4 +1,4 @@
-**4.3.5.1 Topological Sorting** 
+ 
 
 Topological sorting proceeds by finding a class \<i\>C\</i\> in \<i\>S\<sub\>C\</sub\>\</i\> such that no other \<i\>class\</i\> precedes that element according to the elements in \<i\>R\</i\>. The class \<i\>C\</i\> is placed first in the result. Remove \<i\>C\</i\> from \<i\>S\<sub\>C\</sub\>\</i\> , and remove all pairs of the form (\<i\>C, D\</i\>), \<i\>D ∈ S\<sub\>C\</sub\>\</i\> , from \<i\>R\</i\>. Repeat the process, adding \<i\>classes\</i\> with no predecessors to the end of the result. Stop when no element can be found that has no predecessor. 
 

@@ -1,4 +1,4 @@
-**1.5.2 Conforming Programs** 
+ 
 
 Code conforming with the requirements of this standard shall adhere to the following: 
 

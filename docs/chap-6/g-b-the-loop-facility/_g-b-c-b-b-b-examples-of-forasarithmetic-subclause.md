@@ -1,4 +1,4 @@
-**6.1.2.1.1.1 Examples of for-as-arithmetic subclause** 
+ 
 
 ;; Print some numbers. 
 

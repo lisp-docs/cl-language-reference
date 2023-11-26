@@ -1,4 +1,4 @@
-**3.5.1.1 Safe and Unsafe Calls** 
+ 
 
 A *call* is a *safe call* if each of the following is either *safe code* or *system code* (other than *system code* that results from *macro expansion* of *programmer code*): 
 

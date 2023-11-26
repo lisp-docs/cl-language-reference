@@ -1,4 +1,4 @@
-**1.4.1.4.3 Use of the Dot Character** 
+ 
 
 The dot appearing by itself in an *expression* such as 
 

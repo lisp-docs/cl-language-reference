@@ -1,4 +1,4 @@
-**2.1.4.2 Constituent Traits** 
+ 
 
 Every *character* has one or more *constituent traits* that define how the *character* is to be interpreted by the *Lisp reader* when the *character* is a *constituent character* . These *constituent traits* are *alphabetic*\<sub\>2\</sub\>, digit, *package marker* , plus sign, minus sign, dot, decimal point, *ratio marker* , *exponent marker* , and *invalid*. Figure 2–8 shows the *constituent traits* of the *standard characters* and of certain *semi-standard characters*; no mechanism is provided for changing the *constituent trait* of a *character* . Any *character* with the alphadigit *constituent trait* in that figure is a digit if the *current input base* is greater than that character’s digit value, otherwise the *character* is *alphabetic*\<sub\>2\</sub\>. Any *character* quoted by a *single escape* is treated as an *alphabetic*\<sub\>2\</sub\> constituent, regardless of its normal syntax.  
 

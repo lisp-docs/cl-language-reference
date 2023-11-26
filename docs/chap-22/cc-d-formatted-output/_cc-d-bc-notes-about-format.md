@@ -1,4 +1,4 @@
-**22.3.12 Notes about FORMAT** 
+ 
 
 Formatted output is performed not only by **format**, but by certain other functions that accept a *format control* the way **format** does. For example, error-signaling functions such as **cerror** accept *format controls*. 
 

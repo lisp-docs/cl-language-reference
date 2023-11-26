@@ -1,4 +1,4 @@
-**1.4.4.10 The “Exceptional Situations” Section of a Dictionary Entry** Three kinds of information may appear here: 
+ Three kinds of information may appear here: 
 
 *•* Situations that are detected by the *function* and formally signaled. 
 

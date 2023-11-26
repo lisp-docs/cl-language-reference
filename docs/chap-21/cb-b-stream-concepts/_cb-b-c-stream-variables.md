@@ -1,4 +1,4 @@
-**21.1.2 Stream Variables** 
+ 
 
 *Variables* whose *values* must be *streams* are sometimes called *stream variables*. 
 

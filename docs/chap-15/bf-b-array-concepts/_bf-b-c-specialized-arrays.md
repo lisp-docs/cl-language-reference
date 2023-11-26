@@ -1,4 +1,4 @@
-**15.1.2 Specialized Arrays** 
+ 
 
 An *array* can be a *general array*, meaning each *element* may be any *object*, or it may be a *specialized array*, meaning that each *element* must be of a restricted *type*. 
 

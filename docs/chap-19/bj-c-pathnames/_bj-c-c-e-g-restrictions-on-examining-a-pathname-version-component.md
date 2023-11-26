@@ -1,4 +1,4 @@
-**19.2.2.4.6 Restrictions on Examining a Pathname Version Component** The version can be any *symbol* or any *integer* . 
+ The version can be any *symbol* or any *integer* . 
 
 The symbol :newest refers to the largest version number that already exists in the *file system* when reading, overwriting, appending, superseding, or directory listing an existing *file*. The symbol :newest refers to the smallest version number greater than any existing version number when creating a new file. 
 

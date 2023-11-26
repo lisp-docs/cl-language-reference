@@ -1,4 +1,4 @@
-**9.1.3.1.3 Embedded Newlines in Condition Reports** 
+ 
 
 Especially if it is long, it is permissible and appropriate for a *report message* to contain one or more embedded *newlines*. 
 

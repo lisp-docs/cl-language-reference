@@ -1,4 +1,4 @@
-**22.3.8.1 Tilde Left-Paren: Case Conversion** 
+ 
 
 ~(*str*~) 
 

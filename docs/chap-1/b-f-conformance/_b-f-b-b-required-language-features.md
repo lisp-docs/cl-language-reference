@@ -1,4 +1,4 @@
-**1.5.1.1 Required Language Features** 
+ 
 
 A *conforming implementation* shall accept all features (including deprecated features) of the language specified in this standard, with the meanings defined in this standard. 
 

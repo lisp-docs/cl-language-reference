@@ -1,4 +1,4 @@
-**3.4.1.4 Specifiers for keyword parameters** 
+ 
 
 If **&key** is present, all specifiers up to the next *lambda list keyword* or the end of the *list* are keyword parameter specifiers. When keyword parameters are processed, the same arguments are processed that would be made into a *list* for a *rest parameter* . It is permitted to specify both **&rest** and **&key**. In this case the remaining arguments are used for both purposes; that is, all remaining arguments are made into a *list* for the *rest parameter* , and are also processed for the **&key** parameters. If **&key** is specified, there must remain an even number of arguments; see Section 3.5.1.6 (Odd Number of Keyword Arguments). These arguments are considered as pairs, the first argument in each pair being interpreted as a name and the second as the corresponding value. The first *object* of each pair must be a *symbol*; see Section 3.5.1.5 (Invalid Keyword  
 

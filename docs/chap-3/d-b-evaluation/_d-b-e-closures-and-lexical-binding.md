@@ -1,4 +1,4 @@
-**3.1.4 Closures and Lexical Binding** 
+ 
 
 A *lexical closure* is a *function* that can refer to and alter the values of *lexical bindings established* by *binding forms* that textually include the function definition. 
 

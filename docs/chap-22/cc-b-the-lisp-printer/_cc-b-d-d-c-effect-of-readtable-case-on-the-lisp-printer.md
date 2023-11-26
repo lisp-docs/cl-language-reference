@@ -1,4 +1,4 @@
-**22.1.3.3.2 Effect of Readtable Case on the Lisp Printer** 
+ 
 
 When *printer escaping* is disabled, or the characters under consideration are not already quoted specifically by *single escape* or *multiple escape* syntax, the *readtable case* of the *current readtable* affects the way the *Lisp printer* writes *symbols* in the following ways: 
 

@@ -1,4 +1,4 @@
-**2.4.8.1 Sharpsign Backslash** 
+ 
 
 **Syntax:** #\&#10216;x&#10217; 
 

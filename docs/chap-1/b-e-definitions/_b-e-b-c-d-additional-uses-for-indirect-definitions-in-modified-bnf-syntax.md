@@ -1,4 +1,4 @@
-**1.4.1.2.3 Additional Uses for Indirect Definitions in Modified BNF Syntax** 
+ 
 
 In some cases, an auxiliary definition in the BNF might appear to be unused within the BNF, but might still be useful elsewhere. For example, consider the following definitions: 
 

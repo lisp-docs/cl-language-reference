@@ -1,4 +1,4 @@
-**2.3.2.2 Syntax of a Float** 
+ 
 
 *Floats* can be written in either decimal fraction or computerized scientific notation: an optional sign, then a non-empty sequence of digits with an embedded decimal point, then an optional decimal exponent specification. If there is no exponent specifier, then the decimal point is required, and there must be digits after it. The exponent specifier consists of an *exponent marker* , an optional sign, and a non-empty sequence of digits. If no exponent specifier is present, or if the *exponent marker* e (or E) is used, then the format specified by **\*read-default-float-format\*** is used. See Figure 2–9. 
 

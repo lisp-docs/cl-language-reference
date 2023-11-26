@@ -1,4 +1,4 @@
-**9.1 Condition System Concepts** 
+ 
 
 Common Lisp constructs are described not only in terms of their behavior in situations during which they are intended to be used (see the “Description” part of each *operator* specification), but in all other situations (see the “Exceptional Situations” part of each *operator* specification). 
 

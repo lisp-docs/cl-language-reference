@@ -1,4 +1,4 @@
-**22.1.2 Printer Dispatching** 
+ 
 
 The *Lisp printer* makes its determination of how to print an *object* as follows: 
 

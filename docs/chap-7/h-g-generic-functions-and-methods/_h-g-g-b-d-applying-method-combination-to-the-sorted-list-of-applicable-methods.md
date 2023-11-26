@@ -1,4 +1,4 @@
-**7.6.6.1.3 Applying method combination to the sorted list of applicable methods** 
+ 
 
 In the simple case—if standard method combination is used and all applicable methods are primary methods—the effective method is the most specific method. That method can call the next most specific method by using the *function* **call-next-method**. The method that **call-next-method** will call is referred to as the *next method*. The predicate **next-method-p** tests whether a next method exists. If **call-next-method** is called and there is no next most specific method, the generic function **no-next-method** is invoked. 
 

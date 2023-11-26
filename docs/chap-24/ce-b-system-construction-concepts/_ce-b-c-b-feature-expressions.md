@@ -1,4 +1,4 @@
-**24.1.2.1 Feature Expressions** 
+ 
 
 Boolean combinations of *features*, called *feature expressions*, are used by the #+ and #- *reader macros* in order to direct conditional *reading* of *expressions* by the *Lisp reader* . 
 

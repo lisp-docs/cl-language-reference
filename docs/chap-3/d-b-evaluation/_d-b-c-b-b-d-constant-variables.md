@@ -1,4 +1,4 @@
-**3.1.2.1.1.3 Constant Variables** 
+ 
 
 Certain variables, called *constant variables*, are reserved as “named constants.” The consequences are undefined if an attempt is made to assign a value to, or create a *binding* for a *constant variable*, except that a ‘compatible’ redefinition of a *constant variable* using **defconstant** is permitted; see the *macro* **defconstant**. 
 

@@ -1,4 +1,4 @@
-**22.2.1.2 Format Directive Interface** 
+ 
 
 The primary interface to operations for dynamically determining the arrangement of output is provided through the functions and macros of the pretty printer. Figure 22–4 shows the defined names related to *pretty printing*. 
 

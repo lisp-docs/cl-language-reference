@@ -1,4 +1,4 @@
-**15.1.1.2 Array Dimensions** 
+ 
 
 An axis of an *array* is called a *dimension*. 
 

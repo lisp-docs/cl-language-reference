@@ -1,4 +1,4 @@
-**3.4.2 Generic Function Lambda Lists** 
+ 
 
 A *generic function lambda list* is used to describe the overall shape of the argument list to be accepted by a *generic function*. Individual *method signatures* might contribute additional *keyword parameters* to the *lambda list* of the *effective method*. 
 

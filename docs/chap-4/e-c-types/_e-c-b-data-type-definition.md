@@ -1,4 +1,4 @@
-**4.2.1 Data Type Definition** 
+ 
 
 Information about *type* usage is located in the sections specified in Figure 4–1. Figure 4–7 lists some *classes* that are particularly relevant to the object system. Figure 9–1 lists the defined *condition types*. 
 

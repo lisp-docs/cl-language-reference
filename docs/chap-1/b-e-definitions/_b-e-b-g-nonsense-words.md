@@ -1,4 +1,4 @@
-**1.4.1.6 Nonsense Words** 
+ 
 
 When a word having no pre-attached semantics is required (*e.g.*, in an example), it is common in the Lisp community to use one of the words “foo,” “bar,” “baz,” and “quux.” For example, in 
 

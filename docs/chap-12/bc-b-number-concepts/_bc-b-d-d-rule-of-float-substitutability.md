@@ -1,4 +1,4 @@
-**12.1.3.3 Rule of Float Substitutability** 
+ 
 
 When the arguments to an irrational mathematical *function* are all *rational* and the true mathe matical result is also (mathematically) rational, then unless otherwise noted an implementation is free to return either an accurate *rational* result or a *single float* approximation. If the arguments 
 

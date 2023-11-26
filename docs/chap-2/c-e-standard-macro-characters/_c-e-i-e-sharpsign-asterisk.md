@@ -1,4 +1,4 @@
-**2.4.8.4 Sharpsign Asterisk** 
+ 
 
 **Syntax:** #\*&#10216;bits&#10217; 
 

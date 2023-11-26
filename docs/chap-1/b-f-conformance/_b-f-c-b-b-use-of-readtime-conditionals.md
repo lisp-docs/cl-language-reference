@@ -1,4 +1,4 @@
-**1.5.2.1.1 Use of Read-Time Conditionals** 
+ 
 
 Use of #+ and #- does not automatically disqualify a program from being conforming. A program which uses #+ and #- is considered conforming if there is no set of *features* in which the program would not be conforming. Of course, *conforming programs* are not necessarily working programs. The following program is conforming: 
 

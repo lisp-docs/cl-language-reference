@@ -1,4 +1,4 @@
-**2.4.8.3 Sharpsign Left-Parenthesis** 
+ 
 
 #( and ) are used to notate a *simple vector* . 
 

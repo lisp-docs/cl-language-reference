@@ -1,4 +1,4 @@
-**6.1.2.1 Iteration Control** 
+ 
 
 Iteration control clauses allow direction of **loop** iteration. The *loop keywords* for and as designate iteration control clauses. Iteration control clauses differ with respect to the specification of termination tests and to the initialization and *stepping*\<sub\>1\</sub\> of loop variables. Iteration clauses by themselves do not cause the Loop Facility to return values, but they can be used in conjunction with value-accumulation clauses to return values. 
 

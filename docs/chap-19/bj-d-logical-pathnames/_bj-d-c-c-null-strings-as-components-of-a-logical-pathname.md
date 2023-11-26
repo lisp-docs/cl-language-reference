@@ -1,4 +1,4 @@
-**19.3.2.2 Null Strings as Components of a Logical Pathname** The null string, "", is not a valid value for any component of a *logical pathname*. 
+ The null string, "", is not a valid value for any component of a *logical pathname*. 
 
 
 

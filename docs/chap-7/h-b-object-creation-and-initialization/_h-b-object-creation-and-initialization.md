@@ -1,4 +1,4 @@
-**7.1 Object Creation and Initialization** 
+ 
 
 The *generic function* **make-instance** creates and returns a new *instance* of a *class*. The first argument is a *class* or the *name* of a *class*, and the remaining arguments form an *initialization argument list*. 
 

@@ -1,4 +1,4 @@
-**7.1.1 Initialization Arguments** 
+ 
 
 An initialization argument controls *object* creation and initialization. It is often convenient to use keyword *symbols* to name initialization arguments, but the *name* of an initialization argument can be any *symbol*, including **nil**. An initialization argument can be used in two ways: to fill a *slot* with 
 

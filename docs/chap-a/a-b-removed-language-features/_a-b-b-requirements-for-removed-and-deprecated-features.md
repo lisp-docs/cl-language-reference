@@ -1,4 +1,4 @@
-**A.1.1 Requirements for removed and deprecated features** 
+ 
 
 For this standard, some features from the language described in *Common Lisp: The Language* have been removed, and others have been deprecated (and will most likely not appear in future Common Lisp standards). Which features were removed and which were deprecated was decided on a case-by-case basis by the X3J13 committee. 
 

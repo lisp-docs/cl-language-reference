@@ -1,4 +1,4 @@
-**11.1.2.1 The COMMON-LISP Package** 
+ 
 
 The COMMON-LISP *package* contains the primitives of the Common Lisp system as defined by this specification. Its *external symbols* include all of the *defined names* (except for *defined names* in the KEYWORD *package*) that are present in the Common Lisp system, such as **car**, **cdr**, **\*package\***, etc. The COMMON-LISP *package* has the *nickname* CL. 
 

@@ -1,4 +1,4 @@
-**1.4.1.4.1 Case in Symbols** 
+ 
 
 While *case* is significant in the process of *interning* a *symbol*, the *Lisp reader* , by default, attempts to canonicalize the case of a *symbol* prior to interning; see Section 23.1.2 (Effect of Readtable Case on the Lisp Reader). As such, case in *symbols* is not, by default, significant. Throughout 
 

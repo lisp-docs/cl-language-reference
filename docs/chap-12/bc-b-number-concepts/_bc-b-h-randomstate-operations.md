@@ -1,4 +1,4 @@
-**12.1.7 Random-State Operations** 
+ 
 
 Figure 12–11 lists some *defined names* that are applicable to *random states*. 
 

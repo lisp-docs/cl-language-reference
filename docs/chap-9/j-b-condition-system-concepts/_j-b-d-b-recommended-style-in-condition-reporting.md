@@ -1,4 +1,4 @@
-**9.1.3.1 Recommended Style in Condition Reporting** 
+ 
 
 In order to ensure a properly aesthetic result when presenting *report messages* to the user, certain stylistic conventions are recommended. 
 

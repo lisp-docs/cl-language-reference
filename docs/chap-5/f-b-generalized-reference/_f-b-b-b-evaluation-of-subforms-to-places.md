@@ -1,4 +1,4 @@
-**5.1.1.1 Evaluation of Subforms to Places** 
+ 
 
 The following rules apply to the *evaluation* of *subforms* in a *place*: 
 

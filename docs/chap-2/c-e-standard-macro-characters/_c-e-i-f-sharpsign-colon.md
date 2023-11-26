@@ -1,4 +1,4 @@
-**2.4.8.5 Sharpsign Colon** 
+ 
 
 **Syntax:** #:&#10216;symbol-name&#10217; 
 

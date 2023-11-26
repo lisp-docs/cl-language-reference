@@ -1,4 +1,4 @@
-**3.2.3.1.2 Constraints on Macros and Compiler Macros** 
+ 
 
 Except where explicitly stated otherwise, no *macro* defined in the Common Lisp standard produces an expansion that could cause any of the *subforms* of the *macro form* to be treated as *top level forms*. If an *implementation* also provides a *special operator* definition of a Common Lisp *macro*, the *special operator* definition must be semantically equivalent in this respect. 
 

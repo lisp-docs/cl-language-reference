@@ -1,4 +1,4 @@
-**5.1.1 Overview of Places and Generalized Reference** 
+ 
 
 A *generalized reference* is the use of a *form*, sometimes called a *place*, as if it were a *variable* that could be read and written. The *value* of a *place* is the *object* to which the *place form* evaluates. The *value* of a *place* can be changed by using **setf**. The concept of binding a *place* is not defined 
 

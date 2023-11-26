@@ -1,4 +1,4 @@
-**3.2.2.1.2 Naming of Compiler Macros** 
+ 
 
 *Compiler macros* may be defined for *function names* that name *macros* as well as *functions*. 
 

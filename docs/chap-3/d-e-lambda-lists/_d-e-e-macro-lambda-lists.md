@@ -1,4 +1,4 @@
-**3.4.4 Macro Lambda Lists** 
+ 
 
 A *macro lambda list* is used in describing *macros* defined by the *operators* in Figure 3–17. 
 

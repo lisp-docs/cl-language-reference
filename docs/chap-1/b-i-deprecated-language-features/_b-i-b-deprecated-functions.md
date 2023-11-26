@@ -1,4 +1,4 @@
-**1.8.1 Deprecated Functions** 
+ 
 
 The *functions* in Figure 1–2 are deprecated. 
 

@@ -1,4 +1,4 @@
-**7.2.2 Initializing Newly Added Local Slots** 
+ 
 
 The second step of the update initializes the newly added *slots* and performs any other user-defined actions. This step is implemented by the generic function **update-instance-for-different-class**. The generic function **update-instance-for-different-class** is invoked by **change-class** after the first step of the update has been completed. 
 

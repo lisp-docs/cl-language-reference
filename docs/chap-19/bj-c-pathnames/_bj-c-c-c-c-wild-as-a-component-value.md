@@ -1,4 +1,4 @@
-**19.2.2.2.2 :WILD as a Component Value** 
+ 
 
 If :wild is the value of a *pathname* component, that component is considered to be a wildcard, which matches anything. 
 

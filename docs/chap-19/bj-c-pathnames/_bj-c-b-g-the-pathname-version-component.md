@@ -1,4 +1,4 @@
-**19.2.1.6 The Pathname Version Component** 
+ 
 
 Corresponds to the “version number” concept in many host file systems. 
 

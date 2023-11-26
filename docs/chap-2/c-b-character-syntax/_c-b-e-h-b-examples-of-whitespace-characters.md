@@ -1,4 +1,4 @@
-**2.1.4.7.1 Examples of Whitespace Characters** 
+ 
 
 (length ’(this-that)) *→* 1 
 

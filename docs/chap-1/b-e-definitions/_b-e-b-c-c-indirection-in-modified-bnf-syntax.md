@@ -1,4 +1,4 @@
-**1.4.1.2.2 Indirection in Modified BNF Syntax** 
+ 
 
 An indirection extension is introduced in order to make this new syntax more readable: *↓O* 
 

@@ -1,4 +1,4 @@
-**22.3.4.1 Tilde A: Aesthetic** 
+ 
 
 An *arg*, any *object*, is printed without escape characters (as by **princ**). If *arg* is a *string*, its *characters* will be output verbatim. If *arg* is **nil** it will be printed as **nil**; the *colon* modifier (~:A) will cause an *arg* of **nil** to be printed as (), but if *arg* is a composite structure, such as a *list* or *vector* , any contained occurrences of **nil** will still be printed as **nil**. 
 

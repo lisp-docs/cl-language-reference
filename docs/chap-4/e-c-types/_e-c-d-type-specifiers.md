@@ -1,4 +1,4 @@
-**4.2.3 Type Specifiers** 
+ 
 
 *Type specifiers* can be *symbols*, *classes*, or *lists*. Figure 4–2 lists *symbols* that are *standardized atomic type specifiers*, and Figure 4–3 lists *standardized compound type specifier names*. For syntax information, see the dictionary entry for the corresponding *type specifier* . It is possible to define new *type specifiers* using **defclass**, **define-condition**, **defstruct**, or **deftype**.  
 

@@ -1,4 +1,4 @@
-**3.4.1.4.1.1 Examples of Suppressing Keyword Argument Checking** 
+ 
 
 ;;; The caller can supply :ALLOW-OTHER-KEYS T to suppress checking. 
 

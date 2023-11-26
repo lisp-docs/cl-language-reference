@@ -1,4 +1,4 @@
-**2.4.8.13 Sharpsign S** 
+ 
 
 #s(name slot1 value1 slot2 value2 ...) denotes a *structure*. This is valid only if *name* is the name of a *structure type* already defined by **defstruct** and if the *structure type* has a standard constructor function. Let *cm* stand for the name of this constructor function; then this syntax is equivalent to 
 

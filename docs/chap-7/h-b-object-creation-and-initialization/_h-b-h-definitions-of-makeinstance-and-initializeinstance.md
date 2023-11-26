@@ -1,4 +1,4 @@
-**7.1.7 Definitions of Make-Instance and Initialize-Instance** 
+ 
 
 The generic function **make-instance** behaves as if it were defined as follows, except that certain optimizations are permitted: 
 

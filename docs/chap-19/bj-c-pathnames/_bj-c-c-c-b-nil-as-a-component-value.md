@@ -1,4 +1,4 @@
-**19.2.2.2.1 NIL as a Component Value** 
+ 
 
 As a *pathname* component value, **nil**represents that the component is “unfilled”; see Section 19.2.3 (Merging Pathnames). 
 

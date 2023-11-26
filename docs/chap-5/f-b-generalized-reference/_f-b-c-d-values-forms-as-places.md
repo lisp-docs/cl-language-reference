@@ -1,4 +1,4 @@
-**5.1.2.3 VALUES Forms as Places** 
+ 
 
 A **values** *form* can be used as a *place*, provided that each of its *subforms* is also a *place* form. A form such as 
 

@@ -1,4 +1,4 @@
-**9.1.4.2.1 Interactive Use of Restarts** 
+ 
 
 For interactive handling, two pieces of information are needed from a *restart*: a report function and an interactive function. 
 

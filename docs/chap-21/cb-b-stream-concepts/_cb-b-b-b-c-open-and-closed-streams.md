@@ -1,4 +1,4 @@
-**21.1.1.1.2 Open and Closed Streams** 
+ 
 
 *Streams* are either *open* or *closed*. 
 

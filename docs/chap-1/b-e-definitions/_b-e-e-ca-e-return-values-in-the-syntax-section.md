@@ -1,4 +1,4 @@
-**1.4.4.20.4 Return values in the “Syntax” Section** 
+ 
 
 An evaluation arrow “*→*” precedes a list of *values* to be returned. For example: 
 

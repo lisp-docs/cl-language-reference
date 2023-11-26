@@ -1,4 +1,4 @@
-**2.3.1.1 Potential Numbers as Tokens** 
+ 
 
 To allow implementors and future Common Lisp standards to extend the syntax of numbers, a syntax for *potential numbers* is defined that is more general than the syntax for numbers. A *token* is a *potential number* if it satisfies all of the following requirements: 
 

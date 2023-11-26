@@ -1,4 +1,4 @@
-**20.1 File System Concepts** 
+ 
 
 This section describes the Common Lisp interface to file systems. The model used by this interface assumes that *files* are named by *filenames*, that a *filename* can be represented by a *pathname object*, and that given a *pathname* a *stream* can be constructed that connects to a *file* whose *filename* it represents. 
 

@@ -1,4 +1,4 @@
-**4.1 Introduction** 
+ 
 
 A *type* is a (possibly infinite) set of *objects*. An *object* can belong to more than one *type*. *Types* are never explicitly represented as *objects* by Common Lisp. Instead, they are referred to indirectly by the use of *type specifiers*, which are *objects* that denote *types*. 
 

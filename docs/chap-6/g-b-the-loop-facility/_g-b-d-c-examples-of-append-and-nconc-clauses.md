@@ -1,4 +1,4 @@
-**6.1.3.2 Examples of APPEND and NCONC clauses** 
+ 
 
 ;; Use APPEND to concatenate some sublists. 
 

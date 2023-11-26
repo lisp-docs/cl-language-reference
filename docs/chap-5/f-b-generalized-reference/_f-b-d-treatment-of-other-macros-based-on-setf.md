@@ -1,4 +1,4 @@
-**5.1.3 Treatment of Other Macros Based on SETF** 
+ 
 
 For each of the “read-modify-write” *operators* in Figure 5–9, and for any additional *macros* defined by the *programmer* using **define-modify-macro**, an exception is made to the normal rule of left-to-right evaluation of arguments. Evaluation of *argument forms* occurs in left-to-right order, with the exception that for the *place argument*, the actual *read* of the “old value” from that *place* happens after all of the *argument form evaluations*, and just before a “new value” is computed and *written* back into the *place*. 
 

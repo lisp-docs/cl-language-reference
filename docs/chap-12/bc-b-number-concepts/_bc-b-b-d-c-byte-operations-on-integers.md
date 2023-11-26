@@ -1,4 +1,4 @@
-**12.1.1.3.2 Byte Operations on Integers** 
+ 
 
 The byte-manipulation *functions* use *objects* called *byte specifiers* to designate the size and position of a specific *byte* within an *integer* . The representation of a *byte specifier* is *implementation dependent*; it might or might not be a *number* . The *function* **byte** will construct a *byte specifier* , which various other byte-manipulation *functions* will accept. 
 

@@ -1,4 +1,4 @@
-**7.6.7 Inheritance of Methods** 
+ 
 
 A subclass inherits methods in the sense that any method applicable to all instances of a class is also applicable to all instances of any subclass of that class. 
 

@@ -1,4 +1,4 @@
-**22.1.3.11 Printing Pathnames** 
+ 
 
 When *printer escaping* is enabled, the syntax #P"..." is how a *pathname* is printed by **write** and the other functions herein described. The "..." is the namestring representation of the pathname. 
 

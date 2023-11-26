@@ -1,4 +1,4 @@
-**6.1.1.3 Parsing Loop Clauses** 
+ 
 
 The syntactic parts of an extended **loop** *form* are called clauses; the rules for parsing are determined by that clause’s keyword. The following example shows a **loop** *form* with six clauses: 
 

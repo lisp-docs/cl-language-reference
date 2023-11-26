@@ -1,4 +1,4 @@
-**16.1.2 Subtypes of STRING** 
+ 
 
 All functions that operate on *strings* will operate on *subtypes* of *string* as well. 
 

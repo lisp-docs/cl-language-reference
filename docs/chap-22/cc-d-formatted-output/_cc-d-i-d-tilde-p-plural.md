@@ -1,4 +1,4 @@
-**22.3.8.3 Tilde P: Plural** 
+ 
 
 If *arg* is not **eql** to the integer 1, a lowercase s is printed; if *arg* is **eql** to 1, nothing is printed. If *arg* is a floating-point 1.0, the s is printed. 
 

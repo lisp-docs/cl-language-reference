@@ -1,4 +1,4 @@
-**22.3.7.2 Tilde Left-Bracket: Conditional Expression** 
+ 
 
 ~[*str0* ~;*str1* ~;*...*~;*strn*~] 
 

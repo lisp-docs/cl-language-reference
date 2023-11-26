@@ -1,4 +1,4 @@
-**13.1.4.3.2 Lowercase Characters** 
+ 
 
 A lowercase *character* is one that has a corresponding *uppercase character* that is *different* (and can be obtained using **char-upcase**). 
 

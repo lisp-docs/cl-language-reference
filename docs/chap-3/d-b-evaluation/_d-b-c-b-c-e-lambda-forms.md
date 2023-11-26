@@ -1,4 +1,4 @@
-**3.1.2.1.2.4 Lambda Forms** 
+ 
 
 A *lambda form* is similar to a *function form*, except that the *function name* is replaced by a *lambda expression*. 
 

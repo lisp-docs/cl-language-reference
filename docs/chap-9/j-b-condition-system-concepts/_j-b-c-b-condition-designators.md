@@ -1,4 +1,4 @@
-**9.1.2.1 Condition Designators** 
+ 
 
 A number of the functions in the condition system take arguments which are identified as *condition designators*. By convention, those arguments are notated as 
 

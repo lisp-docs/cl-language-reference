@@ -1,4 +1,4 @@
-**3.2.2.1.1 Purpose of Compiler Macros** 
+ 
 
 The purpose of the *compiler macro* facility is to permit selective source code transformations as optimization advice to the *compiler* . When a *compound form* is being processed (as by the compiler), if the *operator* names a *compiler macro* then the *compiler macro function* may be 
 

@@ -1,4 +1,4 @@
-**7.6.6 Method Selection and Combination** 
+ 
 
 When a *generic function* is called with particular arguments, it must determine the code to execute. This code is called the *effective method* for those *arguments*. The *effective method* is a combination of the *applicable methods* in the *generic function* that *calls* some or all of the *methods*. 
 

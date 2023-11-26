@@ -1,4 +1,4 @@
-**7.2 Changing the Class of an Instance** 
+ 
 
 The *function* **change-class** can be used to change the *class* of an *instance* from its current class, *C*\<sub\>from\</sub\>, to a different class, *C*\<sub\>to\</sub\>; it changes the structure of the *instance* to conform to the definition of the class *C*\<sub\>to\</sub\>. 
 

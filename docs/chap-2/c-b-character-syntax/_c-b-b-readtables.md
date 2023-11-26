@@ -1,4 +1,4 @@
-**2.1.1 Readtables** 
+ 
 
 Syntax information for use by the *Lisp reader* is embodied in an *object* called a *readtable*. Among other things, the *readtable* contains the association between *characters* and *syntax types*. 
 

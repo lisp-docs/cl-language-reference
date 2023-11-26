@@ -1,4 +1,4 @@
-**22.2.1.1 Dynamic Control of the Arrangement of Output** 
+ 
 
 The actions of the *pretty printer* when a piece of output is too large to fit in the space available can be precisely controlled. Three concepts underlie the way these operations work—*logical blocks*, *conditional newlines*, and *sections*. Before proceeding further, it is important to define these terms. 
 

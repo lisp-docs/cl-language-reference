@@ -1,4 +1,4 @@
-**22.3.6.2 Tilde Less-Than-Sign: Justification** 
+ 
 
 ~*mincol*,*colinc*,*minpad*,*padchar*\<*str*~\> 
 

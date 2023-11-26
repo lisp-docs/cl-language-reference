@@ -1,4 +1,4 @@
-**1.4.3 Sections Not Formally Part Of This Standard** 
+ 
 
 Front matter and back matter, such as the “Table of Contents,” “Index,” “Figures,” “Credits,” and “Appendix” are not considered formally part of this standard, so that we retain the flexibility needed to update these sections even at the last minute without fear of needing a formal vote to change those parts of the document. These items are quite short and very useful, however, and it is not recommended that they be removed even in an abridged version of this document. 
 

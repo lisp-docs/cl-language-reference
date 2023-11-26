@@ -1,4 +1,4 @@
-**23.1.3.2 The RECURSIVE-P argument** 
+ 
 
 If *recursive-p* is supplied and not **nil**, it specifies that this function call is not an outermost call to **read** but an embedded call, typically from a *reader macro function*. It is important to distinguish such recursive calls for three reasons. 
 

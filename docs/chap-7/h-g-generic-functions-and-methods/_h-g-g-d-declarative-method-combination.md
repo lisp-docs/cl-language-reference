@@ -1,4 +1,4 @@
-**7.6.6.3 Declarative Method Combination** 
+ 
 
 The macro **define-method-combination** defines new forms of method combination. It provides a mechanism for customizing the production of the effective method. The default procedure for producing an effective method is described in Section 7.6.6.1 (Determining the Effective Method). 
 

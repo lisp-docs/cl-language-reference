@@ -1,4 +1,4 @@
-**18.1.2.4 Visible Modifications by Language Extensions** 
+ 
 
 *Implementations* that extend the language by providing additional mutator functions (or additional behavior for existing mutator functions) must document how the use of these extensions interacts with equivalence tests and *hash table* searches. 
 

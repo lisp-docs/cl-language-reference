@@ -1,4 +1,4 @@
-**15.1.1.3.1.1 Fill Pointers** 
+ 
 
 A *fill pointer* is a non-negative *integer* no larger than the total number of *elements* in a *vector* . Not all *vectors* have *fill pointers*. See the *functions* **make-array** and **adjust-array**. 
 

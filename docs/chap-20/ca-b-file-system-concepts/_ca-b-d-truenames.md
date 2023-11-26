@@ -1,4 +1,4 @@
-**20.1.3 Truenames** 
+ 
 
 Many *file systems* permit more than one *filename* to designate a particular *file*. 
 

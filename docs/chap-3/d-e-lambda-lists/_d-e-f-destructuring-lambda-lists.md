@@ -1,4 +1,4 @@
-**3.4.5 Destructuring Lambda Lists** 
+ 
 
 A *destructuring lambda list* is used by **destructuring-bind**. 
 

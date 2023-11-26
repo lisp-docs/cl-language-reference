@@ -1,4 +1,4 @@
-**3.2.4.1 Externalizable Objects** 
+ 
 
 The fact that the *file compiler* represents *literal objects* externally in a *compiled file* and must later reconstruct suitable equivalents of those *objects* when that *file* is loaded imposes a need for constraints on the nature of the *objects* that can be used as *literal objects* in *code* to be processed by the *file compiler* . 
 

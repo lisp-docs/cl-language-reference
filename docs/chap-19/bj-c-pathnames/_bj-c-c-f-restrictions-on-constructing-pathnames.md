@@ -1,4 +1,4 @@
-**19.2.2.5 Restrictions on Constructing Pathnames** 
+ 
 
 When constructing a *pathname* from components, conforming programs must follow these rules: 
 

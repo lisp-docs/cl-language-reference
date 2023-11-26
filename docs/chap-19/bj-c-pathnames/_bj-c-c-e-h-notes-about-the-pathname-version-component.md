@@ -1,4 +1,4 @@
-**19.2.2.4.7 Notes about the Pathname Version Component** 
+ 
 
 It is suggested, but not required, that implementations do the following: 
 

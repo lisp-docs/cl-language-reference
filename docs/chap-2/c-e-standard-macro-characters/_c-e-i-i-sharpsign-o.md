@@ -1,4 +1,4 @@
-**2.4.8.8 Sharpsign O** 
+ 
 
 #O*rational* reads *rational* in octal (radix 8). For example, 
 

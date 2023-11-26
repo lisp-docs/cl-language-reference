@@ -1,4 +1,4 @@
-**13.1.4.4 Numeric Characters** 
+ 
 
 The *numeric characters* are a subset of the *graphic characters*. Of the *standard characters*, only these are *numeric characters*: 
 

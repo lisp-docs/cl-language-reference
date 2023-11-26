@@ -1,4 +1,4 @@
-**12.1.1.1.1 Examples of Associativity and Commutativity in Numeric Operations** 
+ 
 
 Consider the following expression, in which we assume that 1.0 and 1.0e-15 both denote *single floats*: 
 

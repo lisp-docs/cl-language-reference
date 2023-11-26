@@ -1,4 +1,4 @@
-**6.1.7.1.1 Examples of NAMED clause** 
+ 
 
 ;; Just name and return. 
 

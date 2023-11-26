@@ -1,4 +1,4 @@
-**13.1.2.1 Character Scripts** 
+ 
 
 A *script* is one of possibly several sets that form an *exhaustive partition* of the type **character**. 
 

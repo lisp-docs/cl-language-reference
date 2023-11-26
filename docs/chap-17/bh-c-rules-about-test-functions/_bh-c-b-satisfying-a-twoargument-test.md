@@ -1,4 +1,4 @@
-**17.2.1 Satisfying a Two-Argument Test** 
+ 
 
 When an \<i\>object O\</i\> is being considered iteratively against each \<i\>element E\<sub\>i\</sub\>\</i\> of a \<i\>sequence S\</i\> by an \<i\>operator F\</i\> listed in Figure 17–2, it is sometimes useful to control the way in which the presence of \<i\>O\</i\> is tested in \<i\>S\</i\> is tested by \<i\>F\</i\>. This control is offered on the basis of a \<i\>function\</i\> designated with either a :test or :test-not \<i\>argument\</i\>. 
 

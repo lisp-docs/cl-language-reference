@@ -1,4 +1,4 @@
-**19.1.1 Namestrings as Filenames** 
+ 
 
 A *namestring* is a *string* that represents a *filename*. 
 

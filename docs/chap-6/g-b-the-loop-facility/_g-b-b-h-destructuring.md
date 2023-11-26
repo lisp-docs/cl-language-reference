@@ -1,4 +1,4 @@
-**6.1.1.7 Destructuring** 
+ 
 
 The *d-type-spec* argument is used for destructuring. If the *d-type-spec* argument consists solely of the *type* **fixnum**, **float**, **t**, or **nil**, the of-type keyword is optional. The of-type construct is optional in these cases to provide backwards compatibility; thus, the following two expressions are the same: 
 

@@ -1,4 +1,4 @@
-**2.4.6.1 Notes about Backquote** 
+ 
 
 Since the exact manner in which the *Lisp reader* will parse an *expression* involving the *backquote reader macro* is not specified, an *implementation* is free to choose any representation that preserves the semantics described. 
 

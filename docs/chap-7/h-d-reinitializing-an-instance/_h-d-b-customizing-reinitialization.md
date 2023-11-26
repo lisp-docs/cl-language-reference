@@ -1,4 +1,4 @@
-**7.3.1 Customizing Reinitialization** 
+ 
 
 *Methods* for **reinitialize-instance** may be defined to specify actions to be taken when an *instance* is updated. If only *after methods* for **reinitialize-instance** are defined, they will be run after the system-supplied primary *method* for initialization and therefore will not interfere with the default behavior of **reinitialize-instance**. 
 

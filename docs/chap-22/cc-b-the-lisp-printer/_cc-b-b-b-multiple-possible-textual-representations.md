@@ -1,4 +1,4 @@
-**22.1.1.1 Multiple Possible Textual Representations** 
+ 
 
 Most *objects* have more than one possible textual representation. For example, the positive *integer* with a magnitude of twenty-seven can be textually expressed in any of these ways: 
 

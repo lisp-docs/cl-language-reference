@@ -1,4 +1,4 @@
-**3.7.1 Modification of Literal Objects** 
+ 
 
 The consequences are undefined if *literal objects* are destructively modified. For this purpose, the following operations are considered *destructive*: 
 

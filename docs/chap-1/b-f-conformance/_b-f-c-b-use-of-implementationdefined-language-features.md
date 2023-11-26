@@ -1,4 +1,4 @@
-**1.5.2.1 Use of Implementation-Defined Language Features** 
+ 
 
 Note that *conforming code* may rely on particular *implementation-defined* values or features. Also note that the requirements for *conforming code* and *conforming implementations* do not require that the results produced by conforming code always be the same when processed by a *conforming implementation*. The results may be the same, or they may differ. 
 

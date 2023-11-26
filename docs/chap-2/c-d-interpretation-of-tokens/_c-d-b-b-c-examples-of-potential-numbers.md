@@ -1,4 +1,4 @@
-**2.3.1.1.2 Examples of Potential Numbers** 
+ 
 
 As examples, the *tokens* in Figure 2–10 are *potential numbers*, but they are not actually numbers, and so are reserved *tokens*; a *conforming implementation* is permitted, but not required, to define their meaning. 
 

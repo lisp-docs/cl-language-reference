@@ -1,4 +1,4 @@
-**13.1.4.2 Alphabetic Characters** 
+ 
 
 The *alphabetic*\<sub\>1\</sub\> *characters* are a subset of the *graphic characters*. Of the *standard characters*, only these are the *alphabetic*\<sub\>1\</sub\> *characters*: 
 

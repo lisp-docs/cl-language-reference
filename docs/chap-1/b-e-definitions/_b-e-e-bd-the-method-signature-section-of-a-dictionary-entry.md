@@ -1,4 +1,4 @@
-**1.4.4.13 The “Method Signature” Section of a Dictionary Entry** 
+ 
 
 The description of a *generic function* includes descriptions of the *methods* that are defined on that *generic function* by the standard. A method signature is used to describe the *parameters* and *parameter specializers* for each *method*. *Methods* defined for the *generic function* must be of the form described by the *method signature*. 
 

@@ -1,4 +1,4 @@
-**3.3.3 Declaration Identifiers** 
+ 
 
 Figure 3–9 shows a list of all *declaration identifiers* defined by this standard. 
 

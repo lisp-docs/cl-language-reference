@@ -1,4 +1,4 @@
-**11.1.1.2.4 Locating a Symbol in a Package** 
+ 
 
 When a *symbol* is to be located in a given *package* the following occurs: 
 

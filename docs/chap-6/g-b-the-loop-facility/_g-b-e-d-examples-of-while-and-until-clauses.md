@@ -1,4 +1,4 @@
-**6.1.4.3 Examples of WHILE and UNTIL clauses** 
+ 
 
 (loop while (hungry-p) do (eat)) 
 

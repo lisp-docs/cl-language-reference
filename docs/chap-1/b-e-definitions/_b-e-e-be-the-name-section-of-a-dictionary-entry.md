@@ -1,4 +1,4 @@
-**1.4.4.14 The “Name” Section of a Dictionary Entry** 
+ 
 
 This section introduces the dictionary entry. It is not explicitly labeled. It appears preceded and followed by a horizontal bar. 
 

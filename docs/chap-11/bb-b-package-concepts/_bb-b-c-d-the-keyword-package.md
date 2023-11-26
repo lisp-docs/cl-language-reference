@@ -1,4 +1,4 @@
-**11.1.2.3 The KEYWORD Package** 
+ 
 
 The KEYWORD *package* contains *symbols*, called *keywords*\<sub\>1\</sub\>, that are typically used as special markers in *programs* and their associated data *expressions*\<sub\>1\</sub\>. 
 

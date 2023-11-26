@@ -1,4 +1,4 @@
-**19.2.2.2.3 :UNSPECIFIC as a Component Value** 
+ 
 
 If :unspecific is the value of a *pathname* component, the component is considered to be “absent” or to “have no meaning” in the *filename* being represented by the *pathname*. 
 

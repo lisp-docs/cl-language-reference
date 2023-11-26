@@ -1,4 +1,4 @@
-**4.3.5 Determining the Class Precedence List** 
+ 
 
 The **defclass** form for a *class* provides a total ordering on that *class* and its direct *superclasses*. This ordering is called the *local precedence order*. It is an ordered list of the *class* and its direct *superclasses*. The *class precedence list* for a class *C* is a total ordering on *C* and its *superclasses* that is consistent with the *local precedence orders* for each of *C* and its *superclasses*. 
 

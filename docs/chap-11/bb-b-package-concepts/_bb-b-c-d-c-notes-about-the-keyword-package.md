@@ -1,4 +1,4 @@
-**11.1.2.3.2 Notes about The KEYWORD Package** 
+ 
 
 It is generally best to confine the use of *keywords* to situations in which there are a finitely enumerable set of names to be selected between. For example, if there were two states of a light switch, they might be called :on and :off. 
 

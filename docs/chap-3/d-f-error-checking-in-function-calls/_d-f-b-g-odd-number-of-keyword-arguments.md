@@ -1,4 +1,4 @@
-**3.5.1.6 Odd Number of Keyword Arguments** 
+ 
 
 An odd number of *arguments* must not be supplied for the *keyword parameters*. 
 

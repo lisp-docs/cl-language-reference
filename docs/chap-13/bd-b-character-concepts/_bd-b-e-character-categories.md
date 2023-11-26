@@ -1,4 +1,4 @@
-**13.1.4 Character Categories** 
+ 
 
 There are several (overlapping) categories of *characters* that have no formally associated *type* but that are nevertheless useful to name. They include *graphic characters*, *alphabetic*\<sub\>1\</sub\> *characters*, *characters* with *case* (*uppercase* and *lowercase characters*), *numeric characters*, *alphanumeric characters*, and *digits* (in a given *radix* ). 
 

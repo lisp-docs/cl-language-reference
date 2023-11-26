@@ -1,4 +1,4 @@
-**7.6.5.1 Examples of Keyword Arguments in Generic Functions and Methods** For example, suppose there are two methods defined for width as follows: 
+ For example, suppose there are two methods defined for width as follows: 
 
 (defmethod width ((c character-class) &key font) ...) 
 

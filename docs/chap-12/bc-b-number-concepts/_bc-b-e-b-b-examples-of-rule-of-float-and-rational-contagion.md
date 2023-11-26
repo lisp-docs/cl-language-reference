@@ -1,4 +1,4 @@
-**12.1.4.1.1 Examples of Rule of Float and Rational Contagion** 
+ 
 
 ;;;; Combining rationals with floats. 
 

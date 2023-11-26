@@ -1,4 +1,4 @@
-**3.1.2.1.2.2 Macro Forms** 
+ 
 
 If the *operator* names a *macro*, its associated *macro function* is applied to the entire *form* and the result of that application is used in place of the original *form*. 
 

@@ -1,4 +1,4 @@
-**6.1.7.1 Control Transfer Clauses** 
+ 
 
 The named construct establishes a name for an *implicit block* surrounding the entire **loop** so that the **return-from** *special operator* can be used to return values from or to exit **loop**. Only one name per **loop** *form* can be assigned. If used, the named construct must be the first clause in the loop expression. 
 

@@ -1,4 +1,4 @@
-**6.1.4 Termination Test Clauses** 
+ 
 
 The repeat construct causes iteration to terminate after a specified number of times. The loop body executes *n* times, where *n* is the value of the expression *form*. The *form* argument is evaluated one time in the loop prologue. If the expression evaluates to 0 or to a negative *number* , the loop body is not evaluated. 
 

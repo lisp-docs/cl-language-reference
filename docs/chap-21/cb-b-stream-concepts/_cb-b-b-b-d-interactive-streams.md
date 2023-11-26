@@ -1,4 +1,4 @@
-**21.1.1.1.3 Interactive Streams** 
+ 
 
 An *interactive stream* is one on which it makes sense to perform interactive querying. 
 

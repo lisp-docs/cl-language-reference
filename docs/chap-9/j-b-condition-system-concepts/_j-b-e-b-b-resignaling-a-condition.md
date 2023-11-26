@@ -1,4 +1,4 @@
-**9.1.4.1.1 Resignaling a Condition** 
+ 
 
 During the *dynamic extent* of the *signaling* process for a particular *condition object*, **signaling** the same *condition object* again is permitted if and only if the *situation* represented in both cases are the same. 
 

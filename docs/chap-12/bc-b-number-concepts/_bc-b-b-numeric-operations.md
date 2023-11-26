@@ -1,4 +1,4 @@
-**12.1.1 Numeric Operations** 
+ 
 
 Common Lisp provides a large variety of operations related to *numbers*. This section provides an overview of those operations by grouping them into categories that emphasize some of the relationships among them. 
 

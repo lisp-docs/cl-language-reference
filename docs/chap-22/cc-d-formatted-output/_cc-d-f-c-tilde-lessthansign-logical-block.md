@@ -1,4 +1,4 @@
-**22.3.5.2 Tilde Less-Than-Sign: Logical Block** 
+ 
 
 ~\<...~:\> 
 

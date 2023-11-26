@@ -1,4 +1,4 @@
-**21.1.4 Restrictions on Composite Streams** 
+ 
 
 The consequences are undefined if any *component* of a *composite stream* is *closed* before the *composite stream* is *closed*. 
 

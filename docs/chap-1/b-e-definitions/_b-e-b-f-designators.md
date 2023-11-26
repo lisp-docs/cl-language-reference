@@ -1,4 +1,4 @@
-**1.4.1.5 Designators** 
+ 
 
 A *designator* is an *object* that denotes another *object*. 
 

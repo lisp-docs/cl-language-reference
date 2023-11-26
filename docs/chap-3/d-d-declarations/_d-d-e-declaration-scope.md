@@ -1,4 +1,4 @@
-**3.3.4 Declaration Scope** 
+ 
 
 *Declarations* can be divided into two kinds: those that apply to the *bindings* of *variables* or *functions*; and those that do not apply to *bindings*. 
 

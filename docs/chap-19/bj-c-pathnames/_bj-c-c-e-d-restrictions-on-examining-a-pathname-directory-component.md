@@ -1,4 +1,4 @@
-**19.2.2.4.3 Restrictions on Examining a Pathname Directory Component** The directory might be a *string*, :wild, :unspecific, or **nil**. 
+ The directory might be a *string*, :wild, :unspecific, or **nil**. 
 
 The directory can be a *list* of *strings* and *symbols*. The *car* of the *list* is one of the symbols :absolute or :relative, meaning: 
 

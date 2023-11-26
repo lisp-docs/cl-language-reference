@@ -1,4 +1,4 @@
-**13.1.6 Ordering of Characters** 
+ 
 
 The total ordering on *characters* is guaranteed to have the following properties: 
 

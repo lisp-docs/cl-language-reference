@@ -1,4 +1,4 @@
-**9.1.3.1.2 Leading and Trailing Newlines in Condition Reports** 
+ 
 
 It is recommended that a *report message* not begin with any introductory text, such as “Error: ” or “Warning: ” or even just *freshline* or *newline*. Such text is added, if appropriate to the context, by the routine invoking the *condition reporter* . 
 

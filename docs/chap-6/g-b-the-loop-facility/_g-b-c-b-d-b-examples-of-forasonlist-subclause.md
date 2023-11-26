@@ -1,4 +1,4 @@
-**6.1.2.1.3.1 Examples of for-as-on-list subclause** 
+ 
 
 ;; Collect successive tails of a list. 
 

@@ -1,4 +1,4 @@
-**22.3.7.1 Tilde Asterisk: Go-To** 
+ 
 
 The next *arg* is ignored. ~*n*\* ignores the next *n* arguments. 
 

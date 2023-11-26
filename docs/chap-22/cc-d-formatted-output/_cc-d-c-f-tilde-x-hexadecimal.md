@@ -1,4 +1,4 @@
-**22.3.2.5 Tilde X: Hexadecimal** 
+ 
 
 This is just like ~D but prints in hexadecimal radix (radix 16) instead of decimal. The full form is therefore ~*mincol*,*padchar*,*commachar*,*comma-interval*X. 
 

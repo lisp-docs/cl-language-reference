@@ -1,4 +1,4 @@
-**22.1.3.2 Printing Characters** 
+ 
 
 When *printer escaping* is disabled, a *character* prints as itself; it is sent directly to the output *stream*. When *printer escaping* is enabled, then #\ syntax is used. 
 

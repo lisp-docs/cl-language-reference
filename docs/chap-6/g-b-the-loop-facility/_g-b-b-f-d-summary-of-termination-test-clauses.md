@@ -1,4 +1,4 @@
-**6.1.1.5.3 Summary of Termination Test Clauses** 
+ 
 
 The for and as constructs provide a termination test that is determined by the iteration control clause. 
 

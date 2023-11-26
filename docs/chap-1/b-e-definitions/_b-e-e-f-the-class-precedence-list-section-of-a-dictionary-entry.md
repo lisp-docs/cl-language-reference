@@ -1,4 +1,4 @@
-**1.4.4.5 The “Class Precedence List” Section of a Dictionary Entry** 
+ 
 
 This appears in the dictionary entry for a *class*, and contains an ordered list of the *classes* defined by Common Lisp that must be in the *class precedence list* of this *class*. 
 

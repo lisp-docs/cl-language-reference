@@ -1,4 +1,4 @@
-**7.6.6.4 Built-in Method Combination Types** 
+ 
 
 The object system provides a set of built-in method combination types. To specify that a generic function is to use one of these method combination types, the name of the method combination type is given as the argument to the :method-combination option to **defgeneric** or to the :method-combination option to any of the other operators that specify generic function options. 
 

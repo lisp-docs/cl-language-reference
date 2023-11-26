@@ -1,4 +1,4 @@
-**22.1.1.1.1 Printer Escaping** 
+ 
 
 The *variable* **\*print-escape\*** controls whether the *Lisp printer* tries to produce notations such as escape characters and package prefixes. 
 

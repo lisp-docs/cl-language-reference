@@ -1,4 +1,4 @@
-**7.2.1 Modifying the Structure of the Instance** 
+ 
 
 In order to make the *instance* conform to the class *C*\<sub\>to\</sub\>, *local slots* specified by the class *C*\<sub\>to\</sub\> that are not specified by the class *C*\<sub\>from\</sub\> are added, and *local slots* not specified by the class *C*\<sub\>to\</sub\> that are specified by the class *C*\<sub\>from\</sub\> are discarded. 
 

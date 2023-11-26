@@ -1,4 +1,4 @@
-**3.6 Traversal Rules and Side Effects** 
+ 
 
 The consequences are undefined when *code* executed during an *object-traversing* operation destructively modifies the *object* in a way that might affect the ongoing traversal operation. In particular, the following rules apply. 
 

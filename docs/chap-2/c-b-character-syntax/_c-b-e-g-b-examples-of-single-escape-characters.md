@@ -1,4 +1,4 @@
-**2.1.4.6.1 Examples of Single Escape Characters** 
+ 
 
 ;; The following examples assume the readtable case of \*readtable\* 
 

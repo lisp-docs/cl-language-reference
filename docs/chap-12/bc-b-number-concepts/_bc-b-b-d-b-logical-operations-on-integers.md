@@ -1,4 +1,4 @@
-**12.1.1.3.1 Logical Operations on Integers** 
+ 
 
 Logical operations require *integers* as arguments; an error of *type* **type-error** should be signaled if an argument is supplied that is not an *integer* . *Integer* arguments to logical operations are treated as if they were represented in two’s-complement notation. 
 

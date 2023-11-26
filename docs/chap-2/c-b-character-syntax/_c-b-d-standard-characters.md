@@ -1,4 +1,4 @@
-**2.1.3 Standard Characters** 
+ 
 
 All *implementations* must support a *character repertoire* called **standard-char**; *characters* that are members of that *repertoire* are called *standard characters*. 
 

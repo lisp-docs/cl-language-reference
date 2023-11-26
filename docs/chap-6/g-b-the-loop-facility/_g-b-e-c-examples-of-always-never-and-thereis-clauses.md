@@ -1,4 +1,4 @@
-**6.1.4.2 Examples of ALWAYS, NEVER, and THEREIS clauses** 
+ 
 
 ;; Make sure I is always less than 11 (two ways). 
 

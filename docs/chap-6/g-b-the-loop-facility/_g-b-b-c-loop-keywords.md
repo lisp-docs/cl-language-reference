@@ -1,4 +1,4 @@
-**6.1.1.2 Loop Keywords** 
+ 
 
 *Loop keywords* are not true *keywords*\<sub\>1\</sub\>; they are special *symbols*, recognized by *name* rather than *object* identity, that are meaningful only to the **loop** facility. A *loop keyword* is a *symbol* but is recognized by its *name* (not its identity), regardless of the *packages* in which it is *accessible*. 
 

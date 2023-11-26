@@ -1,4 +1,4 @@
-**7.6.2 Introduction to Methods** 
+ 
 
 *Methods* define the class-specific or identity-specific behavior and operations of a *generic function*. 
 

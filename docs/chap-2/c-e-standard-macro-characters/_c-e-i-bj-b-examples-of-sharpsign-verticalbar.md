@@ -1,4 +1,4 @@
-**2.4.8.19.1 Examples of Sharpsign Vertical-Bar** 
+ 
 
 The following are some examples that exploit the #|...|# notation: 
 

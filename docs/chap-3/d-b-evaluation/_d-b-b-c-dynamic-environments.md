@@ -1,4 +1,4 @@
-**3.1.1.2 Dynamic Environments** 
+ 
 
 A *dynamic environment* for *evaluation* is that part of an *environment* that contains *bindings* whose duration is bounded by points of *establishment* and *disestablishment* within the execution of the *form* that established the *binding*. A *dynamic environment* contains, among other things, the following: 
 

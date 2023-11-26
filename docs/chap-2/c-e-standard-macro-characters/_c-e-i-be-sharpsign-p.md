@@ -1,4 +1,4 @@
-**2.4.8.14 Sharpsign P** 
+ 
 
 #P reads a following *object*, which must be a *string*. 
 

@@ -1,4 +1,4 @@
-**3.1.1 Introduction to Environments** 
+ 
 
 A *binding* is an association between a *name* and that which the name denotes. *Bindings* are *established* in a *lexical environment* or a *dynamic environment* by particular *special operators*. 
 

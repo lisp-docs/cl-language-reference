@@ -1,4 +1,4 @@
-**4.3.1 Introduction to Classes** 
+ 
 
 A *class* is an *object* that determines the structure and behavior of a set of other *objects*, which are called its *instances*. 
 

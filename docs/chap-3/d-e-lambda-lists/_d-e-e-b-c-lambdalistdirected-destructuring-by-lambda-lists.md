@@ -1,4 +1,4 @@
-**3.4.4.1.2 Lambda-list-directed Destructuring by Lambda Lists** 
+ 
 
 An extension of data-directed destructuring of *trees* is lambda-list-directed destructuring. This derives from the analogy between the three-element destructuring pattern 
 

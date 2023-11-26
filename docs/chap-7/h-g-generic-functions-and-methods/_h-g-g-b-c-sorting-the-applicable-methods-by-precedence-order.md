@@ -1,4 +1,4 @@
-**7.6.6.1.2 Sorting the Applicable Methods by Precedence Order** 
+ 
 
 To compare the precedence of two methods, their *parameter specializers* are examined in order. The default examination order is from left to right, but an alternative order may be specified by the :argument-precedence-order option to **defgeneric** or to any of the other operators that specify generic function options. 
 

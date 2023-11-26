@@ -1,4 +1,4 @@
-**22.1.3.9 Examples of Printing Arrays** 
+ 
 
 (let ((a (make-array ’(3 3))) 
 

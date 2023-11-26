@@ -1,4 +1,4 @@
-**9.1.4 Signaling and Handling Conditions** 
+ 
 
 The operation of the condition system depends on the ordering of active *applicable handlers* from most recent to least recent. 
 

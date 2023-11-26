@@ -1,4 +1,4 @@
-**3.5.1.4 Unrecognized Keyword Arguments** 
+ 
 
 It is not permitted to supply a keyword argument to a *function* using a name that is not recognized by that *function* unless keyword argument checking is suppressed as described in Section 3.4.1.4.1 (Suppressing Keyword Argument Checking). 
 

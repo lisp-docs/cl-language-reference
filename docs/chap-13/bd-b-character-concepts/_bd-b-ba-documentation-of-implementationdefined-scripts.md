@@ -1,4 +1,4 @@
-**13.1.10 Documentation of Implementation-Defined Scripts** 
+ 
 
 An *implementation* must document the *character scripts* it supports. For each *character script* supported, the documentation must describe at least the following: 
 

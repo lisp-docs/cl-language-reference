@@ -1,4 +1,4 @@
-**6.1.3 Value Accumulation Clauses** 
+ 
 
 The constructs collect, collecting, append, appending, nconc, nconcing, count, counting, maximize, maximizing, minimize, minimizing, sum, and summing, allow values to be accumulated in a **loop**. 
 

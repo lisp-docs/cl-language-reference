@@ -1,4 +1,4 @@
-**13.1.4.1 Graphic Characters** 
+ 
 
 *Characters* that are classified as *graphic*, or displayable, are each associated with a glyph, a visual representation of the *character* . 
 

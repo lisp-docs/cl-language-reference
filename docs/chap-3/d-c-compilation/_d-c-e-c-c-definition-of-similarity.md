@@ -1,4 +1,4 @@
-**3.2.4.2.2 Definition of Similarity** 
+ 
 
 Two *objects S* (in *source code*) and *C* (in *compiled code*) are defined to be *similar* if and only if they are both of one of the *types* listed here (or defined by the *implementation*) and they both satisfy all additional requirements of *similarity* indicated for that *type*. 
 

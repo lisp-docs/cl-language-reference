@@ -1,4 +1,4 @@
-**6.1.1.5.6 Summary of Miscellaneous Clauses** 
+ 
 
 The **loop** named construct gives a name for the *block* of the loop. 
 

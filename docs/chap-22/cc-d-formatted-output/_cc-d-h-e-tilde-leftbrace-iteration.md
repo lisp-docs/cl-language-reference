@@ -1,4 +1,4 @@
-**22.3.7.4 Tilde Left-Brace: Iteration** 
+ 
 
 ~\{*str*~\} 
 

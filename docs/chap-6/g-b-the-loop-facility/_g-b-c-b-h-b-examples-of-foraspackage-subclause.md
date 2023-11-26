@@ -1,4 +1,4 @@
-**6.1.2.1.7.1 Examples of for-as-package subclause** 
+ 
 
 (let ((\*package\* (make-package "TEST-PACKAGE-1"))) 
 

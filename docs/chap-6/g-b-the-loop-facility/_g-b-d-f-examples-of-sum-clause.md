@@ -1,4 +1,4 @@
-**6.1.3.5 Examples of SUM clause** 
+ 
 
 (loop for i of-type fixnum in ’(1 2 3 4 5) 
 

@@ -1,4 +1,4 @@
-**3.4.3 Specialized Lambda Lists** 
+ 
 
 A *specialized lambda list* is used to *specialize* a *method* for a particular *signature* and to describe how *arguments* matching that *signature* are received by the *method*. The *defined names* in Figure 3–15 use *specialized lambda lists* in some way; see the dictionary entry for each for information about how. 
 

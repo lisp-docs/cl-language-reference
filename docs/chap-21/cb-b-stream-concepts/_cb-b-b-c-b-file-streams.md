@@ -1,4 +1,4 @@
-**21.1.1.2.1 File Streams** 
+ 
 
 Some *streams*, called *file streams*, provide access to *files*. An *object* of *class* **file-stream** is used to represent a *file stream*. 
 

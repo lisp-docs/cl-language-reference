@@ -1,4 +1,4 @@
-**5.1.2.5 APPLY Forms as Places** 
+ 
 
 The following situations involving **setf** of **apply** must be supported: 
 

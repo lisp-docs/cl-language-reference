@@ -1,4 +1,4 @@
-**3.1.2.1.1.1 Lexical Variables** 
+ 
 
 A *lexical variable* is a *variable* that can be referenced only within the *lexical scope* of the *form* that establishes that *variable*; *lexical variables* have *lexical scope*. Each time a *form* creates a *lexical binding* of a *variable*, a *fresh binding* is *established*. 
 

@@ -1,4 +1,4 @@
-**6.1.5.1 Examples of unconditional execution** 
+ 
 
 ;; Print numbers and their squares. 
 

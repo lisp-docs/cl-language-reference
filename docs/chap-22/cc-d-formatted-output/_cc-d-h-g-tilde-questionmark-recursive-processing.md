@@ -1,4 +1,4 @@
-**22.3.7.6 Tilde Question-Mark: Recursive Processing** 
+ 
 
 The next *arg* must be a *format control*, and the one after it a *list*; both are consumed by the ~? directive. The two are processed as a *control-string*, with the elements of the *list* as the arguments. Once the recursive processing has been finished, the processing of the control string containing the ~? directive is resumed. Example: 
 

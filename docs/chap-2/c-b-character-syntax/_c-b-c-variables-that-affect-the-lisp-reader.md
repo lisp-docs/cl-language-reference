@@ -1,4 +1,4 @@
-**2.1.2 Variables that affect the Lisp Reader** 
+ 
 
 The *Lisp reader* is influenced not only by the *current readtable*, but also by various *dynamic variables*. Figure 2–2 lists the *variables* that influence the behavior of the *Lisp reader* . 
 

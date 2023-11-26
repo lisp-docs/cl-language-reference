@@ -1,4 +1,4 @@
-**1.4.4.20.1 Special “Syntax” Notations for Overloaded Operators** 
+ 
 
 If two descriptions exist for the same operation but with different numbers of arguments, then the extra arguments are to be treated as optional. For example, this pair of lines: 
 

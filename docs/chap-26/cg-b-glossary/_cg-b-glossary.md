@@ -1,4 +1,4 @@
-**26.1 Glossary** 
+ 
 
 Each entry in this glossary has the following parts: 
 

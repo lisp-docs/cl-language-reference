@@ -1,4 +1,4 @@
-**22.1.3.3.1 Package Prefixes for Symbols** 
+ 
 
 *Package prefixes* are printed if necessary. The rules for *package prefixes* are as follows. When the *symbol* is printed, if it is in the KEYWORD *package*, then it is printed with a preceding *colon*; otherwise, if it is *accessible* in the *current package*, it is printed without any *package prefix* ; otherwise, it is printed with a *package prefix* . 
 

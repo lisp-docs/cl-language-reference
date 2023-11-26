@@ -1,4 +1,4 @@
-**18.1.1 Hash-Table Operations** 
+ 
 
 Figure 18–1 lists some *defined names* that are applicable to *hash tables*. The following rules apply to *hash tables*. 
 

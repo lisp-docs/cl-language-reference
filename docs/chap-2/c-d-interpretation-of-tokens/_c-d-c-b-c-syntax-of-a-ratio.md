@@ -1,4 +1,4 @@
-**2.3.2.1.2 Syntax of a Ratio**
+
 
  
 

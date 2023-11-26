@@ -1,4 +1,4 @@
-**3.5.1.8 Errors When Calling a Next Method** 
+ 
 
 If **call-next-method** is called with *arguments*, the ordered set of *applicable methods* for the changed set of *arguments* for **call-next-method** must be the same as the ordered set of *applicable methods* for the original *arguments* to the *generic function*, or else an error should be signaled. 
 

@@ -1,4 +1,4 @@
-**22.3 Formatted Output** 
+ 
 
 **format** is useful for producing nicely formatted text, producing good-looking messages, and so on. **format** can generate and return a *string* or output to *destination*. 
 

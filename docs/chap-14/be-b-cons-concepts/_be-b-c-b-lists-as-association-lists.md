@@ -1,4 +1,4 @@
-**14.1.2.1 Lists as Association Lists** 
+ 
 
 An *association list* is a *list* of *conses* representing an association of *keys* with *values*, where the *car* of each *cons* is the *key* and the *cdr* is the *value* associated with that *key*. 
 

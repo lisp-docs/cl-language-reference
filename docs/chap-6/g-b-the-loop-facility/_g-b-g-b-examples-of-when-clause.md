@@ -1,4 +1,4 @@
-**6.1.6.1 Examples of WHEN clause** 
+ 
 
 ;; Signal an exceptional condition. 
 

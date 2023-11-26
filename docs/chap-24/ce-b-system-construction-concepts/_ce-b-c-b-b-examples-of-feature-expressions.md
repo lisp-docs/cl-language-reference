@@ -1,4 +1,4 @@
-**24.1.2.1.1 Examples of Feature Expressions** 
+ 
 
 For example, suppose that in *implementation* A, the *features* spice and perq are *present*, but the *feature* lispm is not *present*; in *implementation* B, the feature lispm is *present*, but the *features* spice and perq are not *present*; and in *implementation* C, none of the features spice, *lispm*, or perq are *present*. Figure 24–1 shows some sample *expressions*, and how they would be *read* \<sub\>2\</sub\> in these *implementations*. 
 

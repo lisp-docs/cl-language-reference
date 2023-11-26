@@ -1,4 +1,4 @@
-**20.1.3.1 Examples of Truenames** 
+ 
 
 For example, a DEC TOPS-20 system with *files* PS:\<JOE\>FOO.TXT.1 and PS:\<JOE\>FOO.TXT.2 might permit the second *file* to be referred to as PS:\<JOE\>FOO.TXT.0, since the “.0” notation denotes “newest” version of several *files*. In the same *file system*, a “logical device” “JOE:” might be taken to refer to PS:\<JOE\>” and so the names JOE:FOO.TXT.2 or JOE:FOO.TXT.0 might refer to PS:\<JOE\>FOO.TXT.2. In all of these cases, the *truename* of the file would probably be PS:\<JOE\>FOO.TXT.2. 
 

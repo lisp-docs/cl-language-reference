@@ -1,4 +1,4 @@
-**11.1.2 Standardized Packages** 
+ 
 
 This section describes the *packages* that are available in every *conforming implementation*. A summary of the *names* and *nicknames* of those *standardized packages* is given in Figure 11–2. 
 

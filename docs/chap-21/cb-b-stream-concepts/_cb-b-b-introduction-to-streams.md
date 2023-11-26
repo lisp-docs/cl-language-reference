@@ -1,4 +1,4 @@
-**21.1.1 Introduction to Streams** 
+ 
 
 A *stream* is an *object* that can be used with an input or output function to identify an appropriate source or sink of *characters* or *bytes* for that operation. A *character stream* is a source or sink of *characters*. A *binary stream* is a source or sink of *bytes*. 
 

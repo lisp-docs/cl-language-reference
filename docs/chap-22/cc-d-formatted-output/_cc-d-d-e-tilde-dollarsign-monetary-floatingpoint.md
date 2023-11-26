@@ -1,4 +1,4 @@
-**22.3.3.4 Tilde Dollarsign: Monetary Floating-Point** 
+ 
 
 The next *arg* is printed as a *float* in fixed-format notation. 
 

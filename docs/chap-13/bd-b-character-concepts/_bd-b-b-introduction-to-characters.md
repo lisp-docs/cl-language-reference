@@ -1,4 +1,4 @@
-**13.1.1 Introduction to Characters** 
+ 
 
 A *character* is an *object* that represents a unitary token (*e.g.*, a letter, a special symbol, or a “control character”) in an aggregate quantity of text (*e.g.*, a *string* or a text *stream*). 
 

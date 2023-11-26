@@ -1,4 +1,4 @@
-**17.2.1.1 Examples of Satisfying a Two-Argument Test** 
+ 
 
 (remove "FOO" ’(foo bar "FOO" "BAR" "foo" "bar") :test #’equal) 
 

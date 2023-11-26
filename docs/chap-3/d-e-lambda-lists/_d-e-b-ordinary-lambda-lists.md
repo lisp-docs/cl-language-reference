@@ -1,4 +1,4 @@
-**3.4.1 Ordinary Lambda Lists** 
+ 
 
 An *ordinary lambda list* is used to describe how a set of *arguments* is received by an *ordinary function*. The *defined names* in Figure 3–12 are those which use *ordinary lambda lists*:  
 

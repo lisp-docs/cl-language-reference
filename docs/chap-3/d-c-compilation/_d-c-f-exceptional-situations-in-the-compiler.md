@@ -1,4 +1,4 @@
-**3.2.5 Exceptional Situations in the Compiler** 
+ 
 
 **compile** and **compile-file** are permitted to signal errors and warnings, including errors due to compile-time processing of (eval-when (:compile-toplevel) ...) forms, macro expansion, and conditions signaled by the compiler itself. 
 

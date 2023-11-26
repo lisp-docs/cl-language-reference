@@ -1,4 +1,4 @@
-**4.3.6.2 Initializing Newly Added Local Slots** 
+ 
 
 The second step initializes the newly added *local slots* and performs any other user-defined actions. This step is implemented by the generic function **update-instance-for-redefined-class**, which is called after completion of the first step of modifying the structure of the *instance*. 
 

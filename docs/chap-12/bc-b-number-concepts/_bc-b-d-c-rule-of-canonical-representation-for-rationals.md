@@ -1,4 +1,4 @@
-**12.1.3.2 Rule of Canonical Representation for Rationals** 
+ 
 
 If any computation produces a result that is a mathematical ratio of two integers such that the denominator evenly divides the numerator, then the result is converted to the equivalent *integer* . 
 

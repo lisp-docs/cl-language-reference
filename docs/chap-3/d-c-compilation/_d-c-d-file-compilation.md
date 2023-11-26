@@ -1,4 +1,4 @@
-**3.2.3 File Compilation** 
+ 
 
 The *function* **compile-file** performs compilation of *forms* in a file following the rules specified in Section 3.2.2 (Compilation Semantics), and produces an output file that can be loaded by using **load**. 
 

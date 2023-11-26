@@ -1,4 +1,4 @@
-**11.1.1.2.5 Prevention of Name Conflicts in Packages** 
+ 
 
 Within one *package*, any particular name can refer to at most one *symbol*. A name conflict is said to occur when there would be more than one candidate *symbol*. Any time a name conflict is about to occur, a *correctable error* is signaled. 
 

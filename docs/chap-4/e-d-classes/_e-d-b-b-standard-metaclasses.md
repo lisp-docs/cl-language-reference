@@ -1,4 +1,4 @@
-**4.3.1.1 Standard Metaclasses** 
+ 
 
 The object system provides a number of predefined *metaclasses*. These include the *classes* **standard-class**, **built-in-class**, and **structure-class**: 
 

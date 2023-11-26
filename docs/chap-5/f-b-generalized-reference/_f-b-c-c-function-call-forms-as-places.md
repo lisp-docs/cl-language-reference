@@ -1,4 +1,4 @@
-**5.1.2.2 Function Call Forms as Places** 
+ 
 
 A *function form* can be used as a *place* if it falls into one of the following categories: 
 

@@ -1,4 +1,4 @@
-**3.4.11 Syntactic Interaction of Documentation Strings and Declarations** 
+ 
 
 In a number of situations, a *documentation string* can appear amidst a series of **declare** *expressions* prior to a series of *forms*. 
 

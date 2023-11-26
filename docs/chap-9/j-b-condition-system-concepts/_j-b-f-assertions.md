@@ -1,4 +1,4 @@
-**9.1.5 Assertions** 
+ 
 
 Conditional signaling of *conditions* based on such things as key match, form evaluation, and *type* are handled by assertion *operators*. Figure 9–7 shows *operators* relating to assertions. 
 

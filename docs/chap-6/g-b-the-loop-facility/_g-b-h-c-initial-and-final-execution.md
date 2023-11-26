@@ -1,4 +1,4 @@
-**6.1.7.2 Initial and Final Execution** 
+ 
 
 The initially and finally constructs evaluate forms that occur before and after the loop body. 
 

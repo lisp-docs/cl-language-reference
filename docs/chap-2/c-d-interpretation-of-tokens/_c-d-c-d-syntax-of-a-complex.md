@@ -1,4 +1,4 @@
-**2.3.2.3 Syntax of a Complex** 
+ 
 
 A *complex* has a Cartesian structure, with a real part and an imaginary part each of which is a *real*. The parts of a *complex* are not necessarily *floats* but both parts must be of the same *type*: either both are *rationals*, or both are of the same *float subtype*. When constructing a *complex* , if the specified parts are not the same *type*, the parts are converted to be the same *type* internally 
 

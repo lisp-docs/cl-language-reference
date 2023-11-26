@@ -1,4 +1,4 @@
-**2.4.8.22 Sharpsign Right-Parenthesis** 
+ 
 
 This is not valid reader syntax. 
 

@@ -1,4 +1,4 @@
-**25.1.4.2 Universal Time** 
+ 
 
 *Universal time* is an *absolute time* represented as a single non-negative *integer*—the number of seconds since midnight, January 1, 1900 GMT (ignoring *leap seconds*). Thus the time 1 is 00:00:01 (that is, 12:00:01 a.m.) on January 1, 1900 GMT. Similarly, the time 2398291201 corresponds to 
 

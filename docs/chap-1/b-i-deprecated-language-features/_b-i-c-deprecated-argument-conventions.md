@@ -1,4 +1,4 @@
-**1.8.2 Deprecated Argument Conventions** 
+ 
 
 The ability to pass a numeric *argument* to **gensym** has been deprecated. 
 

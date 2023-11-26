@@ -1,4 +1,4 @@
-**6.1.1.1.2 Extended Loop** 
+ 
 
 An extended **loop** *form* is one that has a body containing *atomic expressions*. When the **loop** *macro* processes such a *form*, it invokes a facility that is commonly called “the Loop Facility.” 
 

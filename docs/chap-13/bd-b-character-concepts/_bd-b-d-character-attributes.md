@@ -1,4 +1,4 @@
-**13.1.3 Character Attributes** 
+ 
 
 *Characters* have only one *standardized attribute*: a *code*. A *character* ’s *code* is a non-negative *integer* . This *code* is composed from a character *script* and a character label in an *implementation dependent* way. See the *functions* **char-code** and **code-char**. 
 

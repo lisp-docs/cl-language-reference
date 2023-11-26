@@ -1,4 +1,4 @@
-**10.1 Symbol Concepts** 
+ 
 
 Figure 10–1 lists some *defined names* that are applicable to the *property lists* of *symbols*. 
 

@@ -1,4 +1,4 @@
-**7.1.6 Initialize-Instance** 
+ 
 
 The *generic function* **initialize-instance** is called by **make-instance** to initialize a newly created *instance*. It uses *standard method combination*. *Methods* for **initialize-instance** can be defined in order to perform any initialization that cannot be achieved simply by supplying initial values for *slots*. 
 

@@ -1,4 +1,4 @@
-**3.1.2.1.1 Symbols as Forms** 
+ 
 
 If a *form* is a *symbol*, then it is either a *symbol macro* or a *variable*. 
 

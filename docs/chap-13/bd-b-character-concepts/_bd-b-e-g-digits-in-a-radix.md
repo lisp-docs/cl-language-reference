@@ -1,4 +1,4 @@
-**13.1.4.6 Digits in a Radix** 
+ 
 
 What qualifies as a *digit* depends on the *radix* (an *integer* between 2 and 36, inclusive). The potential *digits* are: 
 

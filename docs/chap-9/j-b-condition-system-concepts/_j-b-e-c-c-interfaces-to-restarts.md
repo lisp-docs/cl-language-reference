@@ -1,4 +1,4 @@
-**9.1.4.2.2 Interfaces to Restarts** 
+ 
 
 Some *restarts* have functional interfaces, such as **abort**, **continue**, **muffle-warning**, **store-value**, and **use-value**. They are ordinary functions that use **find-restart** and **invoke-restart** internally, that have the same name as the *restarts* they manipulate, and that are provided simply for notational convenience. 
 

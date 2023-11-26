@@ -1,4 +1,4 @@
-**3.5.1.2 Too Few Arguments** 
+ 
 
 It is not permitted to supply too few *arguments* to a *function*. Too few arguments means fewer *arguments* than the number of *required parameters* for the *function*. 
 

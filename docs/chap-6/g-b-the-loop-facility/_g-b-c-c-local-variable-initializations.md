@@ -1,4 +1,4 @@
-**6.1.2.2 Local Variable Initializations** 
+ 
 
 When a **loop** *form* is executed, the local variables are bound and are initialized to some value. These local variables exist until **loop** iteration terminates, at which point they cease to exist. Implicit variables are also established by iteration control clauses and the into preposition of accumulation clauses. 
 

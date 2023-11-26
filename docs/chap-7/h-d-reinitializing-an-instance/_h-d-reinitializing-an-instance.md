@@ -1,4 +1,4 @@
-**7.3 Reinitializing an Instance** 
+ 
 
 The generic function **reinitialize-instance** may be used to change the values of *slots* according to initialization arguments. 
 

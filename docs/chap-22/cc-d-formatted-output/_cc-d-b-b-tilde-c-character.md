@@ -1,4 +1,4 @@
-**22.3.1.1 Tilde C: Character** 
+ 
 
 The next *arg* should be a *character* ; it is printed according to the modifier flags. 
 

@@ -1,4 +1,4 @@
-**3.4.8 Deftype Lambda Lists** 
+ 
 
 A *deftype lambda list* is used by **deftype**. 
 
