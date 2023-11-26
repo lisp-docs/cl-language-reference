@@ -1,0 +1,32 @@
+---
+slug: status
+title: Current Status
+authors:
+  name: Admin
+  title: Lisp Docs Core Team
+  url: https://github.com/lisp-docs
+  # image_url: https://github.com/wgao19.png
+tags: [status, todo, beginning]
+---
+
+So finally, first version is out!
+
+However, this is a work in progress.
+
+These are the changes that are needed for it to reach a version 1.0:
+
+1. Fix all the markdown titles for the right side panel navigation bar. For some reason during the parsing, some of the titles got messed up in the navigation bar. The titles in the actual content are repeated. The second one must also be removed.
+2. Need to link up all italics to the actual page in the reference.
+3. Need to fix the tables in all the files
+4. Need to parse and find every bit of lisp code and wrap it in the proprer ``` backquote wrappers with the lisp syntax for pretty print.
+5. Make sure everything else is good!
+
+However, with that said, the project is actually ready for contributions!
+
+## How The Project is Structured
+
+The idea here was to separate the files with the original dpANS3r text from the community additions. Therefore, to add examples or any content, just create a new file. Please name it relevant to the section you will add it to, and then just import it in that section like all the other files are imported.
+
+So instead of writing the examples in the dpANS3r itself, it will be a new file `examples.md` where you can write anything you want. Then you would import it wherever relevant.
+
+Please note that because react doesn't seem to allow using numbers in component names, I had to convert all numbers to letters. `A=0`, `B=1`, etc...
