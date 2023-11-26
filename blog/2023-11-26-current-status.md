@@ -23,6 +23,7 @@ These are the changes that are needed for it to reach a version 1.0:
 6. Change the `_category_.json` files to display position of chapters in sidebar correctly...
 7. Change the `_category_.json` contents to use double quotes instead of single quotes...
 8. Add search plugin
+9. "beach": "The description of each operator should probably be on a separate page, because for the language reference, more material will be added there"
 
 However, with that said, the project is actually ready for contributions!
 

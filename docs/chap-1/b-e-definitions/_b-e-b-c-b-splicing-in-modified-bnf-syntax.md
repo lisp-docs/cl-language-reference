@@ -16,23 +16,26 @@ is spliced into the enclosing expression, such that if \<i\>n 6\</i\>= \<i\>m\</
 
 For example, the expression 
 
+```lisp
 (x [[ A | B\* | C ]] y) 
+```
 
 means that at most one A, any number of B’s, and at most one C can occur in any order. It is a description of any of these: 
 
+```lisp
 (x y) 
-
 (x B A C y) 
-
 (x A B B B B B C y) 
-
 (x C B A B B B y) 
+```
 
 but not any of these: 
 
+```lisp
 (x B B A A C C y) 
-
 (x C B C y) 
+```
+
 
 In the first case, both A and C appear too often, and in the second case C appears too often. 
 
