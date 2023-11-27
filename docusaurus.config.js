@@ -145,6 +145,8 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        // https://prismjs.com/#supported-languages
+        additionalLanguages: ['powershell', 'python',  'lisp', 'bash', 'sh'],
       },
     }),
 };
