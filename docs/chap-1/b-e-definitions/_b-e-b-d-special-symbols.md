@@ -34,19 +34,19 @@ Each of the above three examples is equivalent, and specifies that (truncate 7 5
 
 Some *conforming implementations* actually type an arrow (or some other indicator) before showing return values, while others do not. 
 
-\<i\>\<sup\>or\</sup\>→\</i\> 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; 
 
-The notation “ \<i\>\<sup\>or\</sup\>→\</i\>” is used to denote one of several possible alternate results. The example 
+The notation “ &#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62;” is used to denote one of several possible alternate results. The example 
 
 (char-name #\a) 
 
 *→* NIL 
 
-\<i\>\<sup\>or\</sup\>→\</i\> "LOWERCASE-a" 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; "LOWERCASE-a" 
 
-\<i\>\<sup\>or\</sup\>→\</i\> "Small-A" 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; "Small-A" 
 
-\<i\>\<sup\>or\</sup\>→\</i\> "LA01" 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; "LA01" 
 
 indicates that **nil**, "LOWERCASE-a", "Small-A", "LA01" are among the possible results of (char-name #\a)—each with equal preference. Unless explicitly specified otherwise, it should not be assumed that the set of possible results shown is exhaustive. Formally, the above example is equivalent to 
 
@@ -54,9 +54,9 @@ indicates that **nil**, "LOWERCASE-a", "Small-A", "LA01" are among the possible 
 
 but it is intended to provide additional information to illustrate some of the ways in which it is permitted for implementations to diverge. 
 
-\<i\>\<sup\>not\</sup\> →\</i\> 
+&#60;i&#62;&#60;sup&#62;not&#60;/sup&#62; →&#60;/i&#62; 
 
-The notation “\<i\>\<sup\>not\</sup\> →\</i\>” is used to denote a result which is not possible. This might be used, for example, in order to emphasize a situation where some anticipated misconception might lead the reader to falsely believe that the result might be possible. For example, 
+The notation “&#60;i&#62;&#60;sup&#62;not&#60;/sup&#62; →&#60;/i&#62;” is used to denote a result which is not possible. This might be used, for example, in order to emphasize a situation where some anticipated misconception might lead the reader to falsely believe that the result might be possible. For example, 
 
 (function-lambda-expression 
 
@@ -64,11 +64,11 @@ The notation “\<i\>\<sup\>not\</sup\> →\</i\>” is used to denote a result 
 
 *→* NIL, *true*, NIL 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (LAMBDA () X), \<i\>true\</i\>, NIL 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (LAMBDA () X), &#60;i&#62;true&#60;/i&#62;, NIL 
 
-\<i\>\<sup\>not\</sup\> →\</i\> NIL, \<i\>false\</i\>, NIL 
+&#60;i&#62;&#60;sup&#62;not&#60;/sup&#62; →&#60;/i&#62; NIL, &#60;i&#62;false&#60;/i&#62;, NIL 
 
-\<i\>\<sup\>not\</sup\> →\</i\> (LAMBDA () X), \<i\>false\</i\>, NIL 
+&#60;i&#62;&#60;sup&#62;not&#60;/sup&#62; →&#60;/i&#62; (LAMBDA () X), &#60;i&#62;false&#60;/i&#62;, NIL 
 
 *≡* 
 

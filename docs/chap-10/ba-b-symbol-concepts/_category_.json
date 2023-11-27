@@ -1,7 +1,8 @@
 {
-  'label': '**10.1 Symbol Concepts** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**10.1 Symbol Concepts** '
+  "label": "10.1 Symbol Concepts",
+  "position": 10.1,
+  "link": {
+    "type": "generated-index",
+    "description": "10.1 Symbol Concepts"
   }
 }

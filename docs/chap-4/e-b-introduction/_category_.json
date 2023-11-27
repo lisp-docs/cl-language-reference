@@ -1,7 +1,8 @@
 {
-  'label': '**4.1 Introduction** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**4.1 Introduction** '
+  "label": "4.1 Introduction",
+  "position": 4.1,
+  "link": {
+    "type": "generated-index",
+    "description": "4.1 Introduction"
   }
 }

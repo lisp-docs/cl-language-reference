@@ -4,7 +4,7 @@ A *variable* is a *dynamic variable* if one of the following conditions hold:
 
 *•* It is locally declared or globally proclaimed **special**. 
 
-*•* It occurs textually within a *form* that creates a *dynamic binding* for a *variable* of the *same name*, and the *binding* is not *shadowed* \<sub\>2\</sub\> by a *form* that creates a *lexical binding* of the same *variable name*. 
+*•* It occurs textually within a *form* that creates a *dynamic binding* for a *variable* of the *same name*, and the *binding* is not *shadowed* &#60;sub&#62;2&#60;/sub&#62; by a *form* that creates a *lexical binding* of the same *variable name*. 
 
 A *dynamic variable* can be referenced at any time in any *program*; there is no textual limitation on references to *dynamic variables*. At any given time, all *dynamic variables* with a given name refer to exactly one *binding*, either in the *dynamic environment* or in the *global environment*.  
 

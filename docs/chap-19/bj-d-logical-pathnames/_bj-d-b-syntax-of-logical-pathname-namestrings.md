@@ -4,7 +4,7 @@ The syntax of a *logical pathname namestring* is as follows. (Note that unlike m
 
 *logical-pathname::*=[*↓host host-marker*] 
 
-[*↓relative-directory-marker*] *\{↓directory directory-marker\}*\* 
+[*↓relative-directory-marker*] *&#123;↓directory directory-marker&#125;*\* 
 
 [*↓name*] [*type-marker ↓type* [*version-marker ↓version*]] 
 

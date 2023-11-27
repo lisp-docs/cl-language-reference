@@ -1,7 +1,8 @@
 {
-  'label': '**3.7 Destructive Operations** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**3.7 Destructive Operations** '
+  "label": "3.7 Destructive Operations",
+  "position": 3.7,
+  "link": {
+    "type": "generated-index",
+    "description": "3.7 Destructive Operations"
   }
 }

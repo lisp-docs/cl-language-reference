@@ -1,7 +1,8 @@
 {
-  'label': '3. Evaluation and Compilation',
-  'link': {
-    'type': 'generated-index',
-    'description': '3. Evaluation and Compilation'
+  "label": "3. Evaluation and Compilation",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "3. Evaluation and Compilation"
   }
 }

@@ -32,29 +32,29 @@ Consider the call (contorted-example nil nil 2). This produces 4. During the cou
 
 (contorted-example nil nil 2) 
 
-(block here\<sub\>1\</sub\> ...) 
+(block here&#60;sub&#62;1&#60;/sub&#62; ...) 
 
-(contorted-example nil #’(lambda () (return-from here\<sub\>1\</sub\> 4)) 1) 
+(contorted-example nil #’(lambda () (return-from here&#60;sub&#62;1&#60;/sub&#62; 4)) 1) 
 
-(block here\<sub\>2\</sub\> ...) 
+(block here&#60;sub&#62;2&#60;/sub&#62; ...) 
 
-(contorted-example #’(lambda () (return-from here\<sub\>1\</sub\> 4)) 
+(contorted-example #’(lambda () (return-from here&#60;sub&#62;1&#60;/sub&#62; 4)) 
 
-#’(lambda () (return-from here\<sub\>2\</sub\> 4)) 
+#’(lambda () (return-from here&#60;sub&#62;2&#60;/sub&#62; 4)) 
 
 \0) 
 
 (funcall f) 
 
-where f *→* #’(lambda () (return-from here\<sub\>1\</sub\> 4))  
+where f *→* #’(lambda () (return-from here&#60;sub&#62;1&#60;/sub&#62; 4))  
 
 
 
-(return-from here\<sub\>1\</sub\> 4) 
+(return-from here&#60;sub&#62;1&#60;/sub&#62; 4) 
 
-At the time the funcall is executed there are two **block** *exit points* outstanding, each apparently named here. The **return-from** *form* executed as a result of the funcall operation refers to the outer outstanding *exit point* (here\<sub\>1\</sub\>), not the inner one (here\<sub\>2\</sub\>). It refers to that *exit point* textually visible at the point of execution of **function** (here abbreviated by the #’ syntax) that resulted in creation of the *function object* actually invoked by **funcall**. 
+At the time the funcall is executed there are two **block** *exit points* outstanding, each apparently named here. The **return-from** *form* executed as a result of the funcall operation refers to the outer outstanding *exit point* (here&#60;sub&#62;1&#60;/sub&#62;), not the inner one (here&#60;sub&#62;2&#60;/sub&#62;). It refers to that *exit point* textually visible at the point of execution of **function** (here abbreviated by the #’ syntax) that resulted in creation of the *function object* actually invoked by **funcall**. 
 
-If, in this example, one were to change the (funcall f) to (funcall g), then the value of the call (contorted-example nil nil 2) would be 9. The value would change because **funcall** would cause the execution of (return-from here\<sub\>2\</sub\> 4), thereby causing a return from the inner *exit point* (here\<sub\>2\</sub\>). 
+If, in this example, one were to change the (funcall f) to (funcall g), then the value of the call (contorted-example nil nil 2) would be 9. The value would change because **funcall** would cause the execution of (return-from here&#60;sub&#62;2&#60;/sub&#62; 4), thereby causing a return from the inner *exit point* (here&#60;sub&#62;2&#60;/sub&#62;). 
 
 When that occurs, the value 4 is returned from the middle invocation of contorted-example, 5 is added to that to get 9, and that value is returned from the outer block and the outermost call to contorted-example. The point is that the choice of *exit point* returned from has nothing to do with its being innermost or outermost; rather, it depends on the lexical environment that is packaged up with a *lambda expression* when **function** is executed. 
 

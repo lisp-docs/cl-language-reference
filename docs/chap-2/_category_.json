@@ -1,7 +1,8 @@
 {
-  'label': '2. Syntax',
-  'link': {
-    'type': 'generated-index',
-    'description': '2. Syntax'
+  "label": "2. Syntax",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "2. Syntax"
   }
 }

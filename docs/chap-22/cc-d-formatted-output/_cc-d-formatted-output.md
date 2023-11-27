@@ -16,11 +16,11 @@ A directive consists of a *tilde*, optional prefix parameters separated by comma
 
 In place of a prefix parameter to a directive, V (or v) can be used. In this case, **format** takes an argument from *args* as a parameter to the directive. The argument should be an *integer* or *character* . If the *arg* used by a V parameter is **nil**, the effect is as if the parameter had been 
 
-omitted. # can be used in place of a prefix parameter; it represents the number of *args* remaining to be processed. When used within a recursive format, in the context of ~? or ~\{, the # prefix parameter represents the number of *format arguments* remaining within the recursive call. 
+omitted. # can be used in place of a prefix parameter; it represents the number of *args* remaining to be processed. When used within a recursive format, in the context of ~? or ~&#123;, the # prefix parameter represents the number of *format arguments* remaining within the recursive call. 
 
 Examples of *format strings*: 
 
-|\<p\>"~S" ;This is an S directive with no parameters or modifiers. "~3,-4:@s" ;This is an S directive with two parameters, 3 and -4, ; and both the *colon* and *at-sign* flags. \</p\>\<p\>"~,+4S" ;Here the first prefix parameter is omitted and takes ; on its default value, while the second parameter is 4.\</p\>|
+|&#60;p&#62;"~S" ;This is an S directive with no parameters or modifiers. "~3,-4:@s" ;This is an S directive with two parameters, 3 and -4, ; and both the *colon* and *at-sign* flags. &#60;/p&#62;&#60;p&#62;"~,+4S" ;Here the first prefix parameter is omitted and takes ; on its default value, while the second parameter is 4.&#60;/p&#62;|
 | :-: |
 
 

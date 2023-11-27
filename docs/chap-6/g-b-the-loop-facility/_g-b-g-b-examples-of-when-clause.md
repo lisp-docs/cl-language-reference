@@ -38,7 +38,7 @@ return i))
 
 (loop for i from 1 to 10 
 
-when (\> i 5) 
+when (&#62; i 5) 
 
 collect i 
 
@@ -50,7 +50,7 @@ finally (prin1 ’got-here))
 
 ;; Return both the count of collected numbers and the numbers. (loop for i from 1 to 10 
 
-when (\> i 5) 
+when (&#62; i 5) 
 
 collect i into number-list 
 

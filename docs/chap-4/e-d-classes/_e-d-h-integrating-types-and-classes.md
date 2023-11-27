@@ -32,7 +32,7 @@ Figure 4–8 lists the set of *classes* that correspond to predefined *type spec
 
 
 
-|\<p\>**arithmetic-error generic-function simple-error array hash-table simple-type-error bit-vector integer simple-warning broadcast-stream list standard-class built-in-class logical-pathname standard-generic-function cell-error method standard-method character method-combination standard-object class null storage-condition complex number stream** \</p\>\<p\>**concatenated-stream package stream-error condition package-error string** \</p\>\<p\>**cons parse-error string-stream control-error pathname structure-class division-by-zero print-not-readable structure-object echo-stream program-error style-warning end-of-file random-state symbol** \</p\>\<p\>**error ratio synonym-stream file-error rational t** \</p\>\<p\>**file-stream reader-error two-way-stream float readtable type-error floating-point-inexact real unbound-slot floating-point-invalid-operation restart unbound-variable floating-point-overflow sequence undefined-function floating-point-underflow serious-condition vector** \</p\>\<p\>**function simple-condition warning**\</p\>|
+|&#60;p&#62;**arithmetic-error generic-function simple-error array hash-table simple-type-error bit-vector integer simple-warning broadcast-stream list standard-class built-in-class logical-pathname standard-generic-function cell-error method standard-method character method-combination standard-object class null storage-condition complex number stream** &#60;/p&#62;&#60;p&#62;**concatenated-stream package stream-error condition package-error string** &#60;/p&#62;&#60;p&#62;**cons parse-error string-stream control-error pathname structure-class division-by-zero print-not-readable structure-object echo-stream program-error style-warning end-of-file random-state symbol** &#60;/p&#62;&#60;p&#62;**error ratio synonym-stream file-error rational t** &#60;/p&#62;&#60;p&#62;**file-stream reader-error two-way-stream float readtable type-error floating-point-inexact real unbound-slot floating-point-invalid-operation restart unbound-variable floating-point-overflow sequence undefined-function floating-point-underflow serious-condition vector** &#60;/p&#62;&#60;p&#62;**function simple-condition warning**&#60;/p&#62;|
 | :- |
 
 
@@ -98,13 +98,13 @@ Specializing.
 
 (function [*arg-typespec* [*value-typespec*]]) 
 
-*arg-typespec::*=(*\{typespec\}*\* 
+*arg-typespec::*=(*&#123;typespec&#125;*\* 
 
-[&optional *\{typespec\}*\*] 
+[&optional *&#123;typespec&#125;*\*] 
 
 [&rest *typespec*] 
 
-[&key *\{*(*keyword typespec*)*\}*\*]) 
+[&key *&#123;*(*keyword typespec*)*&#125;*\*]) 
 
 **Compound Type Specifier Arguments:** 
 
@@ -344,7 +344,7 @@ Combining.
 
 **Compound Type Specifier Syntax:** 
 
-(member *\{object\}*\*) 
+(member *&#123;object&#125;*\*) 
 
 **Compound Type Specifier Arguments:** 
 
@@ -392,7 +392,7 @@ Combining.
 
 **Compound Type Specifier Syntax:** 
 
-(and *\{typespec\}*\*) 
+(and *&#123;typespec&#125;*\*) 
 
 **Compound Type Specifier Arguments:** 
 
@@ -412,7 +412,7 @@ Combining.
 
 **Compound Type Specifier Syntax:** 
 
-(or *\{typespec\}*\*) 
+(or *&#123;typespec&#125;*\*) 
 
 **Compound Type Specifier Arguments:** 
 
@@ -438,7 +438,7 @@ Specializing.
 
 (values *↓value-typespec*) 
 
-*value-typespec::*=*\{typespec\}*\* [&optional *\{typespec\}*\*] [&rest *typespec*] [**&allow-other-keys**] 
+*value-typespec::*=*&#123;typespec&#125;*\* [&optional *&#123;typespec&#125;*\*] [&rest *typespec*] [**&allow-other-keys**] 
 
 **Compound Type Specifier Arguments:** 
 
@@ -594,7 +594,7 @@ Coercions from *floats* to *rationals* and from *ratios* to *integers* are not p
 
 **Syntax:** 
 
-**deftype** *name lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* *→ name* 
+**deftype** *name lambda-list* [[ *&#123;declaration&#125;*\* *| documentation* ]] *&#123;form&#125;*\* *→ name* 
 
 **Arguments and Values:** 
 
@@ -614,9 +614,9 @@ Coercions from *floats* to *rationals* and from *ratios* to *integers* are not p
 
 The meaning of the new *type specifier* is given in terms of a function which expands the *type specifier* into another *type specifier* , which itself will be expanded if it contains references to another *derived type specifier* . 
 
-The newly defined *type specifier* may be referenced as a list of the form (*name arg*\<sub\>1\</sub\> *arg*\<sub\>2\</sub\> ...). The number of arguments must be appropriate to the *lambda-list*. If the new *type specifier* takes no arguments, or if all of its arguments are optional, the *type specifier* may be used as an *atomic type specifier* . 
+The newly defined *type specifier* may be referenced as a list of the form (*name arg*&#60;sub&#62;1&#60;/sub&#62; *arg*&#60;sub&#62;2&#60;/sub&#62; ...). The number of arguments must be appropriate to the *lambda-list*. If the new *type specifier* takes no arguments, or if all of its arguments are optional, the *type specifier* may be used as an *atomic type specifier* . 
 
-The \<i\>argument expressions\</i\> to the \<i\>type specifier\</i\> , \<i\>arg\</i\>\<sub\>1\</sub\> \<i\>. . . arg\<sub\>n\</sub\>\</i\>, are not \<i\>evaluated\</i\>. Instead, these \<i\>literal objects\</i\> become the \<i\>objects\</i\> to which corresponding \<i\>parameters\</i\> become \<i\>bound\</i\>. 
+The &#60;i&#62;argument expressions&#60;/i&#62; to the &#60;i&#62;type specifier&#60;/i&#62; , &#60;i&#62;arg&#60;/i&#62;&#60;sub&#62;1&#60;/sub&#62; &#60;i&#62;. . . arg&#60;sub&#62;n&#60;/sub&#62;&#60;/i&#62;, are not &#60;i&#62;evaluated&#60;/i&#62;. Instead, these &#60;i&#62;literal objects&#60;/i&#62; become the &#60;i&#62;objects&#60;/i&#62; to which corresponding &#60;i&#62;parameters&#60;/i&#62; become &#60;i&#62;bound&#60;/i&#62;. 
 
 The body of the **deftype** *form* (but not the *lambda-list*) is implicitly enclosed in a *block* named *name*, and is evaluated as an *implicit progn*, returning a new *type specifier* . 
 
@@ -638,7 +638,7 @@ expansion of a *type specifier* is not defined fully at compile time (perhaps be
 
 (defun equidimensional (a) 
 
-(or (\< (array-rank a) 2) 
+(or (&#60; (array-rank a) 2) 
 
 (apply #’= (array-dimensions a)))) *→* EQUIDIMENSIONAL 
 
@@ -684,7 +684,7 @@ Figure 4–9 summarizes the possible combinations of *values* that might result.
 
 |**Value 1 Value 2 Meaning**|
 | :- |
-|\<p\>*true true type-1* is definitely a *subtype* of *type-2*. \</p\>\<p\>*false true type-1* is definitely not a *subtype* of *type-2*. *false false* **subtypep** could not determine the relationship, so *type-1* might or might not be a *subtype* of *type-2*.\</p\>|
+|&#60;p&#62;*true true type-1* is definitely a *subtype* of *type-2*. &#60;/p&#62;&#60;p&#62;*false true type-1* is definitely not a *subtype* of *type-2*. *false false* **subtypep** could not determine the relationship, so *type-1* might or might not be a *subtype* of *type-2*.&#60;/p&#62;|
 
 
 **Figure 4–9. Result possibilities for subtypep** 
@@ -759,29 +759,29 @@ returns *true* only in implementations that do not have a specialized *array* re
 
 (subtypep ’nil ’(member)) *→ true*, *true* ;or *false*, *false* 
 
-Let \<aet-x\> and \<aet-y\> be two distinct *type specifiers* that do not always refer to the same sets of *objects* in a given implementation, but for which **make-array**, will return an *object* of the same *array type*. 
+Let &#60;aet-x&#62; and &#60;aet-y&#62; be two distinct *type specifiers* that do not always refer to the same sets of *objects* in a given implementation, but for which **make-array**, will return an *object* of the same *array type*. 
 
 Thus, in each case, 
 
-(subtypep (array-element-type (make-array 0 :element-type ’\<aet-x\>)) 
+(subtypep (array-element-type (make-array 0 :element-type ’&#60;aet-x&#62;)) 
 
-(array-element-type (make-array 0 :element-type ’\<aet-y\>))) 
+(array-element-type (make-array 0 :element-type ’&#60;aet-y&#62;))) 
 
 *→ true*, *true*  
 
 
 
-(subtypep (array-element-type (make-array 0 :element-type ’\<aet-y\>)) 
+(subtypep (array-element-type (make-array 0 :element-type ’&#60;aet-y&#62;)) 
 
-(array-element-type (make-array 0 :element-type ’\<aet-x\>))) 
+(array-element-type (make-array 0 :element-type ’&#60;aet-x&#62;))) 
 
 *→ true*, *true* 
 
-If (array \<aet-x\>) and (array \<aet-y\>) are different names for exactly the same set of *objects*, these names should always refer to the same sets of *objects*. That implies that the following set of tests are also true: 
+If (array &#60;aet-x&#62;) and (array &#60;aet-y&#62;) are different names for exactly the same set of *objects*, these names should always refer to the same sets of *objects*. That implies that the following set of tests are also true: 
 
-(subtypep ’(array \<aet-x\>) ’(array \<aet-y\>)) *→ true*, *true* 
+(subtypep ’(array &#60;aet-x&#62;) ’(array &#60;aet-y&#62;)) *→ true*, *true* 
 
-(subtypep ’(array \<aet-y\>) ’(array \<aet-x\>)) *→ true*, *true* 
+(subtypep ’(array &#60;aet-y&#62;) ’(array &#60;aet-x&#62;)) *→ true*, *true* 
 
 **See Also:** 
 
@@ -837,13 +837,13 @@ b. the *type* returned does not involve and, eql, member, not, or, satisfies, or
 
 *→* CONS 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (CONS FIXNUM FIXNUM) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (CONS FIXNUM FIXNUM) 
 
 (type-of #c(0 1)) 
 
 *→* COMPLEX 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (COMPLEX INTEGER) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (COMPLEX INTEGER) 
 
 (defstruct temp-struct x y z) *→* TEMP-STRUCT 
 
@@ -853,7 +853,7 @@ b. the *type* returned does not involve and, eql, member, not, or, satisfies, or
 
 *→* STRING 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (STRING 3) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (STRING 3) 
 
 (subtypep (type-of "abc") ’string) *→ true*, *true* 
 
@@ -861,13 +861,13 @@ b. the *type* returned does not involve and, eql, member, not, or, satisfies, or
 
 *→* BIGNUM 
 
-\<i\>\<sup\>or\</sup\>→\</i\> INTEGER 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; INTEGER 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (INTEGER 1099511627776 1099511627776) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (INTEGER 1099511627776 1099511627776) 
 
-\<i\>\<sup\>or\</sup\>→\</i\> SYSTEM::TWO-WORD-BIGNUM 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; SYSTEM::TWO-WORD-BIGNUM 
 
-\<i\>\<sup\>or\</sup\>→\</i\> FIXNUM 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; FIXNUM 
 
 (subtypep (type-of 112312) ’integer) *→ true*, *true* 
 
@@ -881,7 +881,7 @@ b. the *type* returned does not involve and, eql, member, not, or, satisfies, or
 
 *→* VECTOR 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (VECTOR T 5) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (VECTOR T 5) 
 
 **See Also:** 
 
@@ -943,23 +943,23 @@ See the *function* **upgraded-complex-part-type**.
 
 ;; Section 12.1.5.3 (Rule of Canonical Representation for Complex Rationals). (typep #c(0 0) ’(complex (eql 0))) *→ false* 
 
-Let A\<i\>\<sub\>x\</sub\>\</i\> and A\<i\>\<sub\>y\</sub\>\</i\> be two \<i\>type specifiers\</i\> that denote different \<i\>types\</i\>, but for which 
+Let A&#60;i&#62;&#60;sub&#62;x&#60;/sub&#62;&#60;/i&#62; and A&#60;i&#62;&#60;sub&#62;y&#60;/sub&#62;&#60;/i&#62; be two &#60;i&#62;type specifiers&#60;/i&#62; that denote different &#60;i&#62;types&#60;/i&#62;, but for which 
 
-(upgraded-array-element-type ’A\<i\>\<sub\>x\</sub\>\</i\>) 
+(upgraded-array-element-type ’A&#60;i&#62;&#60;sub&#62;x&#60;/sub&#62;&#60;/i&#62;) 
 
 and 
 
-(upgraded-array-element-type ’A\<i\>\<sub\>y\</sub\>\</i\>) 
+(upgraded-array-element-type ’A&#60;i&#62;&#60;sub&#62;y&#60;/sub&#62;&#60;/i&#62;) 
 
 denote the same *type*. Notice that 
 
-(typep (make-array 0 :element-type ’A\<i\>\<sub\>x\</sub\>\</i\>) ’(array A\<i\>\<sub\>x\</sub\>\</i\>)) \<i\>→ true\</i\> 
+(typep (make-array 0 :element-type ’A&#60;i&#62;&#60;sub&#62;x&#60;/sub&#62;&#60;/i&#62;) ’(array A&#60;i&#62;&#60;sub&#62;x&#60;/sub&#62;&#60;/i&#62;)) &#60;i&#62;→ true&#60;/i&#62; 
 
-(typep (make-array 0 :element-type ’A\<i\>\<sub\>y\</sub\>\</i\>) ’(array A\<i\>\<sub\>y\</sub\>\</i\>)) \<i\>→ true\</i\> 
+(typep (make-array 0 :element-type ’A&#60;i&#62;&#60;sub&#62;y&#60;/sub&#62;&#60;/i&#62;) ’(array A&#60;i&#62;&#60;sub&#62;y&#60;/sub&#62;&#60;/i&#62;)) &#60;i&#62;→ true&#60;/i&#62; 
 
-(typep (make-array 0 :element-type ’A\<i\>\<sub\>x\</sub\>\</i\>) ’(array A\<i\>\<sub\>y\</sub\>\</i\>)) \<i\>→ true\</i\> 
+(typep (make-array 0 :element-type ’A&#60;i&#62;&#60;sub&#62;x&#60;/sub&#62;&#60;/i&#62;) ’(array A&#60;i&#62;&#60;sub&#62;y&#60;/sub&#62;&#60;/i&#62;)) &#60;i&#62;→ true&#60;/i&#62; 
 
-(typep (make-array 0 :element-type ’A\<i\>\<sub\>y\</sub\>\</i\>) ’(array A\<i\>\<sub\>x\</sub\>\</i\>)) \<i\>→ true\</i\> 
+(typep (make-array 0 :element-type ’A&#60;i&#62;&#60;sub&#62;y&#60;/sub&#62;&#60;/i&#62;) ’(array A&#60;i&#62;&#60;sub&#62;x&#60;/sub&#62;&#60;/i&#62;)) &#60;i&#62;→ true&#60;/i&#62; 
 
 **Exceptional Situations:** 
 

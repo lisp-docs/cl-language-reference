@@ -2,7 +2,7 @@
 
 The actions of the *pretty printer* when a piece of output is too large to fit in the space available can be precisely controlled. Three concepts underlie the way these operations work—*logical blocks*, *conditional newlines*, and *sections*. Before proceeding further, it is important to define these terms. 
 
-The first line of Figure 22–3 shows a schematic piece of output. Each of the characters in the output is represented by “-”. The positions of conditional newlines are indicated by digits. The beginnings and ends of logical blocks are indicated by “\<” and “\>” respectively. 
+The first line of Figure 22–3 shows a schematic piece of output. Each of the characters in the output is represented by “-”. The positions of conditional newlines are indicated by digits. The beginnings and ends of logical blocks are indicated by “&#60;” and “&#62;” respectively. 
 
 The output as a whole is a logical block and the outermost section. This section is indicated by the 0’s on the second line of Figure 1. Logical blocks nested within the output are specified by the macro **pprint-logical-block**. Conditional newline positions are specified by calls to **pprint-newline**. Each conditional newline defines two sections (one before it and one after it) and is associated with a third (the section immediately containing it). 
 
@@ -20,7 +20,7 @@ is not applicable, (b) the beginning of the immediately containing logical block
 
 The section immediately containing a conditional newline is the shortest section that contains the conditional newline in question. In Figure 22–3, the first conditional newline is immediately contained in the section marked with 0’s, the second and third conditional newlines are immediately contained in the section before the fourth conditional newline, and the fourth conditional newline is immediately contained in the section after the first conditional newline. 
 
-\<-1–-\<–\<–2–-3-\>–4–\>-\> 
+&#60;-1–-&#60;–&#60;–2–-3-&#62;–4–&#62;-&#62; 
 
 000000000000000000000000000 
 

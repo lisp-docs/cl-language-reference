@@ -1,7 +1,8 @@
 {
-  'label': '7. Objects',
-  'link': {
-    'type': 'generated-index',
-    'description': '7. Objects'
+  "label": "7. Objects",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "7. Objects"
   }
 }

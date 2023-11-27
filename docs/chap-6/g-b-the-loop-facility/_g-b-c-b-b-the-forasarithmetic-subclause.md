@@ -1,6 +1,6 @@
  
 
-In the *for-as-arithmetic* subclause, the for or as construct iterates from the value supplied by *form1* to the value supplied by *form2* in increments or decrements denoted by *form3*. Each expression is evaluated only once and must evaluate to a *number* . The variable *var* is bound to the value of *form1* in the first iteration and is *stepped* \<sub\>1\</sub\> by the value of *form3* in each succeeding iteration, or by 1 if *form3* is not provided. The following *loop keywords* serve as valid prepositions within this syntax. At least one of the prepositions must be used; and at most one from each line may be used in a single subclause. 
+In the *for-as-arithmetic* subclause, the for or as construct iterates from the value supplied by *form1* to the value supplied by *form2* in increments or decrements denoted by *form3*. Each expression is evaluated only once and must evaluate to a *number* . The variable *var* is bound to the value of *form1* in the first iteration and is *stepped* &#60;sub&#62;1&#60;/sub&#62; by the value of *form3* in each succeeding iteration, or by 1 if *form3* is not provided. The following *loop keywords* serve as valid prepositions within this syntax. At least one of the prepositions must be used; and at most one from each line may be used in a single subclause. 
 
 from | downfrom | upfrom 
 
@@ -22,7 +22,7 @@ The descriptions of the prepositions follow:
 
 from 
 
-The *loop keyword* from specifies the value from which *stepping*\<sub\>1\</sub\> begins, as supplied by *form1*. *Stepping*\<sub\>1\</sub\> is incremental by default. If decremental *stepping*\<sub\>1\</sub\> is desired, the preposition downto or above must be used with *form2*. For incremental *stepping*\<sub\>1\</sub\>, the default from value is 0. 
+The *loop keyword* from specifies the value from which *stepping*&#60;sub&#62;1&#60;/sub&#62; begins, as supplied by *form1*. *Stepping*&#60;sub&#62;1&#60;/sub&#62; is incremental by default. If decremental *stepping*&#60;sub&#62;1&#60;/sub&#62; is desired, the preposition downto or above must be used with *form2*. For incremental *stepping*&#60;sub&#62;1&#60;/sub&#62;, the default from value is 0. 
 
 Iteration **6–9**
 
@@ -36,15 +36,15 @@ The *loop keyword* downfrom indicates that the variable *var* is decreased in de
 
 to 
 
-The *loop keyword* to marks the end value for *stepping*\<sub\>1\</sub\> supplied in *form2*. *Stepping*\<sub\>1\</sub\> is incremental by default. If decremental *stepping*\<sub\>1\</sub\> is desired, the preposition downfrom must be used with *form1*, or else the preposition downto or above should be used instead of to with *form2*. 
+The *loop keyword* to marks the end value for *stepping*&#60;sub&#62;1&#60;/sub&#62; supplied in *form2*. *Stepping*&#60;sub&#62;1&#60;/sub&#62; is incremental by default. If decremental *stepping*&#60;sub&#62;1&#60;/sub&#62; is desired, the preposition downfrom must be used with *form1*, or else the preposition downto or above should be used instead of to with *form2*. 
 
 downto, upto 
 
-The *loop keyword* downto specifies decremental *stepping*; the *loop keyword* upto specifies incremental *stepping*. In both cases, the amount of change on each step is specified by *form3*, and the **loop** terminates when the variable *var* passes the value of *form2*. Since there is no default for *form1* in decremental *stepping*\<sub\>1\</sub\>, a *form1* value must be supplied (using from or downfrom) when downto is supplied. 
+The *loop keyword* downto specifies decremental *stepping*; the *loop keyword* upto specifies incremental *stepping*. In both cases, the amount of change on each step is specified by *form3*, and the **loop** terminates when the variable *var* passes the value of *form2*. Since there is no default for *form1* in decremental *stepping*&#60;sub&#62;1&#60;/sub&#62;, a *form1* value must be supplied (using from or downfrom) when downto is supplied. 
 
 below, above 
 
-The *loop keywords* below and above are analogous to upto and downto respectively. These keywords stop iteration just before the value of the variable *var* reaches the value supplied by *form2*; the end value of *form2* is not included. Since there is no default for *form1* in decremental *stepping*\<sub\>1\</sub\>, a *form1* value must be supplied (using from or downfrom) when above is supplied. 
+The *loop keywords* below and above are analogous to upto and downto respectively. These keywords stop iteration just before the value of the variable *var* reaches the value supplied by *form2*; the end value of *form2* is not included. Since there is no default for *form1* in decremental *stepping*&#60;sub&#62;1&#60;/sub&#62;, a *form1* value must be supplied (using from or downfrom) when above is supplied. 
 
 by 
 

@@ -1,7 +1,8 @@
 {
-  'label': 'A. Appendix',
-  'link': {
-    'type': 'generated-index',
-    'description': 'A. Appendix'
+  "label": "A. Appendix",
+  "position": 27,
+  "link": {
+    "type": "generated-index",
+    "description": "A. Appendix"
   }
 }

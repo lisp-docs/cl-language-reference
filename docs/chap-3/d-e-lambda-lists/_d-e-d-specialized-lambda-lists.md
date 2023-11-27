@@ -10,7 +10,7 @@ A *specialized lambda list* is used to *specialize* a *method* for a particular 
 
 A *specialized lambda list* can contain the *lambda list keywords* shown in Figure 3–16. 
 
-|\<p\>**&allow-other-keys &key &rest** \</p\>\<p\>**&aux &optional**\</p\>|
+|&#60;p&#62;**&allow-other-keys &key &rest** &#60;/p&#62;&#60;p&#62;**&aux &optional**&#60;/p&#62;|
 | :- |
 
 
@@ -18,13 +18,13 @@ A *specialized lambda list* can contain the *lambda list keywords* shown in Figu
 
 A *specialized lambda list* is syntactically the same as an *ordinary lambda list* except that each *required parameter* may optionally be associated with a *class* or *object* for which that *parameter* is *specialized*. 
 
-*lambda-list::*=(*\{var |* (*var* [*specializer*])*\}*\* 
+*lambda-list::*=(*&#123;var |* (*var* [*specializer*])*&#125;*\* 
 
-[&optional *\{var |* (*var* [*init-form* [*supplied-p-parameter*]])*\}*\*] 
+[&optional *&#123;var |* (*var* [*init-form* [*supplied-p-parameter*]])*&#125;*\*] 
 
 [&rest *var*] 
 
-[&key *\{var |* (*\{var |* (*keyword-name var*)*\}* [*init-form* [*supplied-p-parameter*]])*\}*\* [&allow-other-keys[&aux *\{var |* (*var* [*init-form*])*\}*\*])  
+[&key *&#123;var |* (*&#123;var |* (*keyword-name var*)*&#125;* [*init-form* [*supplied-p-parameter*]])*&#125;*\* [&allow-other-keys[&aux *&#123;var |* (*var* [*init-form*])*&#125;*\*])  
 
 
 

@@ -1,4 +1,4 @@
  
 
-~\} terminates a ~\{. The consequences of using it elsewhere are undefined. 
+~&#125; terminates a ~&#123;. The consequences of using it elsewhere are undefined. 
 

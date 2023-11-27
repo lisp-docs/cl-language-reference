@@ -4,23 +4,23 @@ The following examples illustrate some of the many ways in which the *implementa
 
 (let ((a (list 2 1 4 3 7 6 ’five))) 
 
-(ignore-errors (sort a #’\<)) 
+(ignore-errors (sort a #’&#60;)) 
 
 a) 
 
 *→* (1 2 3 4 6 7 FIVE) 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (2 1 4 3 7 6 FIVE) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (2 1 4 3 7 6 FIVE) 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (2) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (2) 
 
 (prog foo ((a (list 1 2 3 4 5 6 7 8 9 10))) 
 
-(sort a #’(lambda (x y) (if (zerop (random 5)) (return-from foo a) (\> x y))))) *→* (1 2 3 4 5 6 7 8 9 10) 
+(sort a #’(lambda (x y) (if (zerop (random 5)) (return-from foo a) (&#62; x y))))) *→* (1 2 3 4 5 6 7 8 9 10) 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (3 4 5 6 2 7 8 9 10 1) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (3 4 5 6 2 7 8 9 10 1) 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (1 2 4 3)  
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (1 2 4 3)  
 
 
 
@@ -28,7 +28,7 @@ a)
 
 **Syntax:** 
 
-**lambda** *lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* 
+**lambda** *lambda-list* [[ *&#123;declaration&#125;*\* *| documentation* ]] *&#123;form&#125;*\* 
 
 **Arguments:** 
 
@@ -64,7 +64,7 @@ is semantically equivalent to the *function form*
 
 **Syntax:** 
 
-**lambda** *lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* *→ function* 
+**lambda** *lambda-list* [[ *&#123;declaration&#125;*\* *| documentation* ]] *&#123;form&#125;*\* *→ function* 
 
 **Arguments and Values:** 
 
@@ -84,11 +84,11 @@ is semantically equivalent to the *function form*
 
 Provides a shorthand notation for a **function** *special form* involving a *lambda expression* such that: 
 
-(lambda *lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\*) 
+(lambda *lambda-list* [[ *&#123;declaration&#125;*\* *| documentation* ]] *&#123;form&#125;*\*) 
 
-*≡* (function (lambda *lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\*)) 
+*≡* (function (lambda *lambda-list* [[ *&#123;declaration&#125;*\* *| documentation* ]] *&#123;form&#125;*\*)) 
 
-*≡* #’(lambda *lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\*) 
+*≡* #’(lambda *lambda-list* [[ *&#123;declaration&#125;*\* *| documentation* ]] *&#123;form&#125;*\*) 
 
 **Examples:** 
 
@@ -158,7 +158,7 @@ The *tertiary value*, *failure-p*, is *false* if no *conditions* of *type* **err
 
 (setf (symbol-function ’foo) 
 
-(compile nil ’(lambda () "replaced"))) *→* #\<Compiled-Function\> 
+(compile nil ’(lambda () "replaced"))) *→* #&#60;Compiled-Function&#62; 
 
 (foo) *→* "replaced" 
 
@@ -188,7 +188,7 @@ Situations in the Compiler).
 
 **Syntax:** 
 
-**eval** *form → \{result\}*\* 
+**eval** *form → &#123;result&#125;*\* 
 
 **Arguments and Values:** 
 
@@ -238,7 +238,7 @@ The *argument form* (list ’cdr (car ’((quote (a . b)) c))) is evaluated in t
 
 **Syntax:** 
 
-**eval-when** (*\{situation\}*\*) *\{form\}*\* *→ \{result\}*\* 
+**eval-when** (*&#123;situation&#125;*\*) *&#123;form&#125;*\* *→ &#123;result&#125;*\* 
 
 **Arguments and Values:** 
 
@@ -624,7 +624,7 @@ The consequences are undefined if *environment* is *non-nil* in a use of **setf*
 
 **Syntax:** 
 
-**define-compiler-macro** *name lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* *→ name* 
+**define-compiler-macro** *name lambda-list* [[ *&#123;declaration&#125;*\* *| documentation* ]] *&#123;form&#125;*\* *→ name* 
 
 **Arguments and Values:** 
 
@@ -790,7 +790,7 @@ finally (return (values x1s y1s x2s y2s others)))
 
 ‘(distance-positional ,x1 ,y1 ,x2 ,y2)) 
 
-((and (\< x1s 2) (\< y1s 2) (\< x2s 2) (\< y2s 2) 
+((and (&#60; x1s 2) (&#60; y1s 2) (&#60; x2s 2) (&#60; y2s 2) 
 
 (zerop others)) 
 
@@ -868,7 +868,7 @@ The consequences of writing a *compiler macro* definition for a function in the 
 
 **Syntax:** 
 
-**defmacro** *name lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* 
+**defmacro** *name lambda-list* [[ *&#123;declaration&#125;*\* *| documentation* ]] *&#123;form&#125;*\* 
 
 *→ name* 
 
@@ -1286,13 +1286,13 @@ Globally establishes an expansion function for the *symbol macro* named by *symb
 
 
 
-Each global reference to *symbol* (*i.e.*, not *shadowed* \<sub\>2\</sub\> by a *binding* for a *variable* or *symbol macro* named by the same *symbol*) is expanded by the normal macro expansion process; see Section 3.1.2.1.1 (Symbols as Forms). The expansion of a *symbol macro* is subject to further *macro expansion* in the same *lexical environment* as the *symbol macro* reference, exactly analogous to normal *macros*. 
+Each global reference to *symbol* (*i.e.*, not *shadowed* &#60;sub&#62;2&#60;/sub&#62; by a *binding* for a *variable* or *symbol macro* named by the same *symbol*) is expanded by the normal macro expansion process; see Section 3.1.2.1.1 (Symbols as Forms). The expansion of a *symbol macro* is subject to further *macro expansion* in the same *lexical environment* as the *symbol macro* reference, exactly analogous to normal *macros*. 
 
-The consequences are unspecified if a **special** declaration is made for *symbol* while in the scope of this definition (*i.e.*, when it is not *shadowed* \<sub\>2\</sub\> by a *binding* for a *variable* or *symbol macro* named by the same *symbol*). 
+The consequences are unspecified if a **special** declaration is made for *symbol* while in the scope of this definition (*i.e.*, when it is not *shadowed* &#60;sub&#62;2&#60;/sub&#62; by a *binding* for a *variable* or *symbol macro* named by the same *symbol*). 
 
 Any use of **setq** to set the value of the *symbol* while in the scope of this definition is treated as if it were a **setf**. **psetq** of *symbol* is treated as if it were a **psetf**, and **multiple-value-setq** is treated as if it were a **setf** of **values**. 
 
-A *binding* for a *symbol macro* can be *shadowed* \<sub\>2\</sub\> by **let** or **symbol-macrolet**. 
+A *binding* for a *symbol macro* can be *shadowed* &#60;sub&#62;2&#60;/sub&#62; by **let** or **symbol-macrolet**. 
 
 **Examples:** 
 
@@ -1334,9 +1334,9 @@ If *symbol* is already defined as a *global variable*, an error of *type* **prog
 
 **Syntax:** 
 
-**symbol-macrolet** (*\{*(*symbol expansion*)*\}*\*) *\{declaration\}*\* *\{form\}*\* 
+**symbol-macrolet** (*&#123;*(*symbol expansion*)*&#125;*\*) *&#123;declaration&#125;*\* *&#123;form&#125;*\* 
 
-*→ \{result\}*\* 
+*→ &#123;result&#125;*\* 
 
 **Arguments and Values:** 
 

@@ -1,7 +1,8 @@
 {
-  'label': '**6.1 The LOOP Facility** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**6.1 The LOOP Facility** '
+  "label": "6.1 The LOOP Facility",
+  "position": 6.1,
+  "link": {
+    "type": "generated-index",
+    "description": "6.1 The LOOP Facility"
   }
 }

@@ -16,15 +16,15 @@ Positive
 
 Imaginary Axis 
 
-\<sup\>..\</sup\>. 
+&#60;sup&#62;..&#60;/sup&#62;. 
 
-\<sub\>II\</sub\>\<sup\>..\</sup\>. I 
+&#60;sub&#62;II&#60;/sub&#62;&#60;sup&#62;..&#60;/sup&#62;. I 
 
 Negative Real Axis *· · · · · · · · · · · · · · · · · ·* Positive Real Axis 
 
-\<sub\>III\</sub\>\<sup\>..\</sup\>. IV 
+&#60;sub&#62;III&#60;/sub&#62;&#60;sup&#62;..&#60;/sup&#62;. IV 
 
-\<sup\>..\</sup\>. 
+&#60;sup&#62;..&#60;/sup&#62;. 
 
 Negative 
 

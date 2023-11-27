@@ -1,7 +1,8 @@
 {
-  'label': '**7.4 Meta-Objects** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**7.4 Meta-Objects** '
+  "label": "7.4 Meta-Objects",
+  "position": 7.4,
+  "link": {
+    "type": "generated-index",
+    "description": "7.4 Meta-Objects"
   }
 }

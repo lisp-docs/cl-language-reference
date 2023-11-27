@@ -10,13 +10,13 @@ If a *form* is a *symbol* that is not a *symbol macro*, then it is the *name* of
 
 
 
-and *constant variables*. A *variable* can store one *object*. The main operations on a *variable* are to *read* \<sub\>1\</sub\> and to *write*\<sub\>1\</sub\> its *value*. 
+and *constant variables*. A *variable* can store one *object*. The main operations on a *variable* are to *read* &#60;sub&#62;1&#60;/sub&#62; and to *write*&#60;sub&#62;1&#60;/sub&#62; its *value*. 
 
 An error of *type* **unbound-variable** should be signaled if an *unbound variable* is referenced. 
 
-*Non-constant variables* can be *assigned* by using **setq** or *bound* \<sub\>3\</sub\> by using **let**. Figure 3–1 lists some *defined names* that are applicable to assigning, binding, and defining *variables*. 
+*Non-constant variables* can be *assigned* by using **setq** or *bound* &#60;sub&#62;3&#60;/sub&#62; by using **let**. Figure 3–1 lists some *defined names* that are applicable to assigning, binding, and defining *variables*. 
 
-|\<p\>**boundp let progv** \</p\>\<p\>**defconstant let\* psetq** \</p\>\<p\>**defparameter makunbound set** \</p\>\<p\>**defvar multiple-value-bind setq** \</p\>\<p\>**lambda multiple-value-setq symbol-value**\</p\>|
+|&#60;p&#62;**boundp let progv** &#60;/p&#62;&#60;p&#62;**defconstant let\* psetq** &#60;/p&#62;&#60;p&#62;**defparameter makunbound set** &#60;/p&#62;&#60;p&#62;**defvar multiple-value-bind setq** &#60;/p&#62;&#60;p&#62;**lambda multiple-value-setq symbol-value**&#60;/p&#62;|
 | :- |
 
 

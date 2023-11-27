@@ -1,7 +1,8 @@
 {
-  'label': '17. Sequences',
-  'link': {
-    'type': 'generated-index',
-    'description': '17. Sequences'
+  "label": "17. Sequences",
+  "position": 17,
+  "link": {
+    "type": "generated-index",
+    "description": "17. Sequences"
   }
 }

@@ -4,7 +4,7 @@ A *define-method-combination arguments lambda list* is used by the :arguments op
 
 A *define-method-combination arguments lambda list* can contain the *lambda list keywords* shown in Figure 3–21. 
 
-|\<p\>**&allow-other-keys &key &rest** \</p\>\<p\>**&aux &optional &whole**\</p\>|
+|&#60;p&#62;**&allow-other-keys &key &rest** &#60;/p&#62;&#60;p&#62;**&aux &optional &whole**&#60;/p&#62;|
 | :- |
 
 

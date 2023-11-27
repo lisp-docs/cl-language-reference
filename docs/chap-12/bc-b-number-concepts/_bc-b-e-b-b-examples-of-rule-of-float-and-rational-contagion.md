@@ -24,9 +24,9 @@
 
 ;;; in which 5/7 is rounded upwards by FLOAT. 
 
-(\< 5/7 (float 5/7)) *→ true* 
+(&#60; 5/7 (float 5/7)) *→ true* 
 
-(\< 5/7 (rational (float 5/7))) *→ true* 
+(&#60; 5/7 (rational (float 5/7))) *→ true* 
 
-(\< (float 5/7) (float 5/7)) *→ false* 
+(&#60; (float 5/7) (float 5/7)) *→ false* 
 

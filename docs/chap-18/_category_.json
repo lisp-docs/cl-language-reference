@@ -1,7 +1,8 @@
 {
-  'label': '18. Hash Tables',
-  'link': {
-    'type': 'generated-index',
-    'description': '18. Hash Tables'
+  "label": "18. Hash Tables",
+  "position": 18,
+  "link": {
+    "type": "generated-index",
+    "description": "18. Hash Tables"
   }
 }

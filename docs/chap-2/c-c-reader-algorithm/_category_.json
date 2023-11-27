@@ -1,7 +1,8 @@
 {
-  'label': '**2.2 Reader Algorithm** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**2.2 Reader Algorithm** '
+  "label": "2.2 Reader Algorithm",
+  "position": 2.2,
+  "link": {
+    "type": "generated-index",
+    "description": "2.2 Reader Algorithm"
   }
 }

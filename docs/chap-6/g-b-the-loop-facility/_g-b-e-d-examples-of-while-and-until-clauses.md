@@ -26,7 +26,7 @@ while stack))
 
 when (oddp i) collect i 
 
-while (\< i 5)) 
+while (&#60; i 5)) 
 
 *→* (3 5) 
 

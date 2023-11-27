@@ -1,7 +1,8 @@
 {
-  'label': '**7.6 Generic Functions and Methods** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**7.6 Generic Functions and Methods** '
+  "label": "7.6 Generic Functions and Methods",
+  "position": 7.6,
+  "link": {
+    "type": "generated-index",
+    "description": "7.6 Generic Functions and Methods"
   }
 }

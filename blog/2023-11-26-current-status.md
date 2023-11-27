@@ -17,8 +17,8 @@ These are the changes that are needed for it to reach a version 1.0:
 
 1. ~~Fix all the markdown titles for the right side panel navigation bar. For some reason during the parsing, some of the titles got messed up in the navigation bar. The titles in the actual content are repeated. The second one must also be removed.~~
 2. Need to link up all italics to the actual page in the reference.
-3. Need to fix the tables in all the files
-4. Need to parse and find every bit of lisp code and wrap it in the proprer ``` backquote wrappers with the lisp syntax for pretty print.
+3. Need to fix the tables in all the files. Idea: Could find each table in the original TeX files and parse those and replace the text in the current markdown since the original is hopefully structured.
+4. Need to parse and find every bit of lisp code and wrap it in the proprer ``` backquote wrappers with the lisp syntax for pretty print. See #3, could try to see if the original TeX marked code blocks and use those with text replace.
 5. Make sure everything else is good!
 6. Change the `_category_.json` files to display position of chapters in sidebar correctly...
 7. Change the `_category_.json` contents to use double quotes instead of single quotes...

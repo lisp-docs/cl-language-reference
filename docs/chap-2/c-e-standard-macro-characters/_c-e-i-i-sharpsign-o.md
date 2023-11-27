@@ -6,7 +6,7 @@
 
 #o777 *≡* 511 
 
-#o105 *≡* 69 ;105\<sub\>8\</sub\> 
+#o105 *≡* 69 ;105&#60;sub&#62;8&#60;/sub&#62; 
 
 The consequences are undefined if the token immediately following the #O does not have the syntax of an octal (*i.e.*, radix 8) *rational*.  
 

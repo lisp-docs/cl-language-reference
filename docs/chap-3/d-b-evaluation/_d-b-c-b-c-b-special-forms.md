@@ -6,7 +6,7 @@ Some *special operators* create new lexical or dynamic *environments* for use du
 
 The set of *special operator names* is fixed in Common Lisp; no way is provided for the user to define a *special operator* . Figure 3–2 lists all of the Common Lisp *symbols* that have definitions as *special operators*. 
 
-|\<p\>**block let\* return-from** \</p\>\<p\>**catch load-time-value setq** \</p\>\<p\>**eval-when locally symbol-macrolet flet macrolet tagbody** \</p\>\<p\>**function multiple-value-call the** \</p\>\<p\>**go multiple-value-prog1 throw** \</p\>\<p\>**if progn unwind-protect labels progv** \</p\>\<p\>**let quote**\</p\>|
+|&#60;p&#62;**block let\* return-from** &#60;/p&#62;&#60;p&#62;**catch load-time-value setq** &#60;/p&#62;&#60;p&#62;**eval-when locally symbol-macrolet flet macrolet tagbody** &#60;/p&#62;&#60;p&#62;**function multiple-value-call the** &#60;/p&#62;&#60;p&#62;**go multiple-value-prog1 throw** &#60;/p&#62;&#60;p&#62;**if progn unwind-protect labels progv** &#60;/p&#62;&#60;p&#62;**let quote**&#60;/p&#62;|
 | :- |
 
 

@@ -1,7 +1,8 @@
 {
-  'label': '23. Reader',
-  'link': {
-    'type': 'generated-index',
-    'description': '23. Reader'
+  "label": "23. Reader",
+  "position": 23,
+  "link": {
+    "type": "generated-index",
+    "description": "23. Reader"
   }
 }

@@ -1,7 +1,8 @@
 {
-  'label': '12. Numbers',
-  'link': {
-    'type': 'generated-index',
-    'description': '12. Numbers'
+  "label": "12. Numbers",
+  "position": 12,
+  "link": {
+    "type": "generated-index",
+    "description": "12. Numbers"
   }
 }

@@ -2,7 +2,7 @@
 
 A *macro lambda list* is used in describing *macros* defined by the *operators* in Figure 3–17. 
 
-|\<p\>**define-compiler-macro defmacro macrolet** \</p\>\<p\>**define-setf-expander**\</p\>|
+|&#60;p&#62;**define-compiler-macro defmacro macrolet** &#60;/p&#62;&#60;p&#62;**define-setf-expander**&#60;/p&#62;|
 | :- |
 
 
@@ -10,15 +10,15 @@ A *macro lambda list* is used in describing *macros* defined by the *operators* 
 
 With the additional restriction that an *environment parameter* may appear only once (at any of the positions indicated), a *macro lambda list* has the following syntax: 
 
-*reqvars::*=*\{var | ↓pattern\}*\* 
+*reqvars::*=*&#123;var | ↓pattern&#125;*\* 
 
-*optvars::*=[&optional *\{var |* (*\{var | ↓pattern\}* [*init-form* [*supplied-p-parameter*]])*\}*\*] 
+*optvars::*=[&optional *&#123;var |* (*&#123;var | ↓pattern&#125;* [*init-form* [*supplied-p-parameter*]])*&#125;*\*] 
 
-*restvar::*=[*\{*&rest *|* &body*\} \{var | ↓pattern\}*] 
+*restvar::*=[*&#123;*&rest *|* &body*&#125; &#123;var | ↓pattern&#125;*] 
 
-*keyvars::*=[&key *\{var |* (*\{var |* (*keyword-name \{var | ↓pattern\}*)*\}* [*init-form* [*supplied-p-parameter*]])*\}*\* [&allow-other-keys]] 
+*keyvars::*=[&key *&#123;var |* (*&#123;var |* (*keyword-name &#123;var | ↓pattern&#125;*)*&#125;* [*init-form* [*supplied-p-parameter*]])*&#125;*\* [&allow-other-keys]] 
 
-*auxvars::*=[&aux *\{var |* (*var* [*init-form*])*\}*\*] 
+*auxvars::*=[&aux *&#123;var |* (*var* [*init-form*])*&#125;*\*] 
 
 *envvar::*=[&environment *var*] 
 
@@ -36,7 +36,7 @@ With the additional restriction that an *environment parameter* may appear only 
 
 A *macro lambda list* can contain the *lambda list keywords* shown in Figure 3–18. 
 
-|\<p\>**&allow-other-keys &environment &rest** \</p\>\<p\>**&aux &key &whole** \</p\>\<p\>**&body &optional**\</p\>|
+|&#60;p&#62;**&allow-other-keys &environment &rest** &#60;/p&#62;&#60;p&#62;**&aux &key &whole** &#60;/p&#62;&#60;p&#62;**&body &optional**&#60;/p&#62;|
 | :- |
 
 

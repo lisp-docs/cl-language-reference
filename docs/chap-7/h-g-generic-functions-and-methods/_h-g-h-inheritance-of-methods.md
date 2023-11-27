@@ -44,11 +44,11 @@ Two values are returned: a *list* of the explicitly named keywords and a *genera
 
 (list a b c d e f)) 
 
-*→* #\<STANDARD-METHOD GF1 (INTEGER) 36324653\> 
+*→* #&#60;STANDARD-METHOD GF1 (INTEGER) 36324653&#62; 
 
 (find-method #’gf1 ’() (list (find-class ’integer))) 
 
-*→* #\<STANDARD-METHOD GF1 (INTEGER) 36324653\> 
+*→* #&#60;STANDARD-METHOD GF1 (INTEGER) 36324653&#62; 
 
 (function-keywords \*) 
 
@@ -58,7 +58,7 @@ Two values are returned: a *list* of the explicitly named keywords and a *genera
 
 (list a b c d e f)) 
 
-*→* #\<STANDARD-METHOD GF2 (INTEGER) 42701775\> 
+*→* #&#60;STANDARD-METHOD GF2 (INTEGER) 42701775&#62; 
 
 (function-keywords (find-method #’gf1 ’() (list (find-class ’integer)))) 
 
@@ -370,7 +370,7 @@ The value returned by **update-instance-for-different-class** is ignored by **ch
 
 &rest *initargs* &key &allow-other-keys 
 
-*→ \{result\}*\* 
+*→ &#123;result&#125;*\* 
 
 
 
@@ -758,7 +758,7 @@ Objects **7–41**
 
 **Syntax:** 
 
-**slot-missing** *class object slot-name operation* &optional *new-value → \{result\}*\* 
+**slot-missing** *class object slot-name operation* &optional *new-value → &#123;result&#125;*\* 
 
 **Method Signatures:** 
 
@@ -818,7 +818,7 @@ The set of arguments (including the *class* of the instance) facilitates definin
 
 **Syntax:** 
 
-**slot-unbound** *class instance slot-name → \{result\}*\* 
+**slot-unbound** *class instance slot-name → &#123;result&#125;*\* 
 
 **Method Signatures:** 
 
@@ -890,11 +890,11 @@ The macro **setf** can be used with **slot-value** to change the value of a *slo
 
 (c :accessor foo-c :initform 3))) 
 
-*→* #\<STANDARD-CLASS FOO 244020371\> 
+*→* #&#60;STANDARD-CLASS FOO 244020371&#62; 
 
 (setq foo1 (make-instance ’foo :a ’one :b ’two)) 
 
-*→* #\<FOO 36325624\> 
+*→* #&#60;FOO 36325624&#62; 
 
 (slot-value foo1 ’a) *→* ONE 
 
@@ -910,7 +910,7 @@ The macro **setf** can be used with **slot-value** to change the value of a *slo
 
 (slot-value x ’a)) 
 
-*→* #\<STANDARD-METHOD FOO-METHOD (FOO) 42720573\> 
+*→* #&#60;STANDARD-METHOD FOO-METHOD (FOO) 42720573&#62; 
 
 (foo-method foo1) *→* UNO 
 
@@ -990,7 +990,7 @@ Returns a *list* of the *qualifiers* of the *method*.
 
 (defmethod some-gf :before ((a integer)) a) 
 
-*→* #\<STANDARD-METHOD SOME-GF (:BEFORE) (INTEGER) 42736540\> 
+*→* #&#60;STANDARD-METHOD SOME-GF (:BEFORE) (INTEGER) 42736540&#62; 
 
 (method-qualifiers \*) *→* (:BEFORE) 
 
@@ -1002,7 +1002,7 @@ Returns a *list* of the *qualifiers* of the *method*.
 
 **Syntax:** 
 
-**no-applicable-method** *generic-function* &rest *function-arguments → \{result\}*\* 
+**no-applicable-method** *generic-function* &rest *function-arguments → &#123;result&#125;*\* 
 
 **Method Signatures:** 
 
@@ -1040,7 +1040,7 @@ The default *method* signals an error of *type* **error**.
 
 **Syntax:** 
 
-**no-next-method** *generic-function method* &rest *args → \{result\}*\* 
+**no-next-method** *generic-function method* &rest *args → &#123;result&#125;*\* 
 
 **Method Signatures:** 
 
@@ -1268,7 +1268,7 @@ Both *conforming implementations* and *conforming programs* may further *special
 
 (dist :accessor obj-dist))) 
 
-*→* #\<STANDARD-CLASS OBJ 250020030\> 
+*→* #&#60;STANDARD-CLASS OBJ 250020030&#62; 
 
 (defmethod shared-initialize :after ((self obj) slot-names &rest keys) 
 
@@ -1280,7 +1280,7 @@ Both *conforming implementations* and *conforming programs* may further *special
 
 (sqrt (+ (expt (obj-x self) 2) (expt (obj-y self) 2)))))) 
 
-*→* #\<STANDARD-METHOD SHARED-INITIALIZE (:AFTER) (OBJ T) 26266714\> 
+*→* #&#60;STANDARD-METHOD SHARED-INITIALIZE (:AFTER) (OBJ T) 26266714&#62; 
 
 (defmethod make-load-form ((self obj) &optional environment) 
 
@@ -1296,9 +1296,9 @@ Both *conforming implementations* and *conforming programs* may further *special
 
 :x ’,(obj-x self) :y ’,(obj-y self))) 
 
-*→* #\<STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 26267532\> 
+*→* #&#60;STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 26267532&#62; 
 
-(setq obj1 (make-instance ’obj :x 3.0 :y 4.0)) *→* #\<OBJ 26274136\> 
+(setq obj1 (make-instance ’obj :x 3.0 :y 4.0)) *→* #&#60;OBJ 26274136&#62; 
 
 (obj-dist obj1) *→* 5.0 
 
@@ -1318,7 +1318,7 @@ Another way to write the **make-load-form** *method* in that example is to use *
 
 :environment environment)) 
 
-*→* #\<STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 42755655\> 
+*→* #&#60;STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 42755655&#62; 
 
 
 
@@ -1332,15 +1332,15 @@ Another way to write the **make-load-form** *method* in that example is to use *
 
 (make-load-form obj1) 
 
-*→* (ALLOCATE-INSTANCE ’#\<STANDARD-CLASS OBJ 250020030\>), 
+*→* (ALLOCATE-INSTANCE ’#&#60;STANDARD-CLASS OBJ 250020030&#62;), 
 
 (PROGN 
 
-(SETF (SLOT-VALUE ’#\<OBJ 26274136\> ’X) ’3.0) 
+(SETF (SLOT-VALUE ’#&#60;OBJ 26274136&#62; ’X) ’3.0) 
 
-(SETF (SLOT-VALUE ’#\<OBJ 26274136\> ’Y) ’4.0) 
+(SETF (SLOT-VALUE ’#&#60;OBJ 26274136&#62; ’Y) ’4.0) 
 
-(INITIALIZE-INSTANCE ’#\<OBJ 26274136\>)) 
+(INITIALIZE-INSTANCE ’#&#60;OBJ 26274136&#62;)) 
 
 In the following example, *instances* of my-frob are “interned” in some way. An equivalent *instance* is reconstructed by using the value of the name slot as a key for searching existing *objects*. In this case the programmer has chosen to create a new *object* if no existing *object* is found; alternatively an error could have been signaled in that case. 
 
@@ -1456,9 +1456,9 @@ When the *object* is an *instance* of **standard-object**, **make-load-form-savi
 
 **Syntax:** 
 
-**with-accessors** (*\{slot-entry\}*\*) *instance-form \{declaration\}*\* *\{form\}*\* 
+**with-accessors** (*&#123;slot-entry&#125;*\*) *instance-form &#123;declaration&#125;*\* *&#123;form&#125;*\* 
 
-*→ \{result\}*\* 
+*→ &#123;result&#125;*\* 
 
 *slot-entry::*=(*variable-name accessor-name*) 
 
@@ -1496,7 +1496,7 @@ Objects **7–55**
 
 (y :initarg :y :accessor thing-y))) 
 
-*→* #\<STANDARD-CLASS THING 250020173\> 
+*→* #&#60;STANDARD-CLASS THING 250020173&#62; 
 
 (defmethod (setf thing-x) :before (new-x (thing thing)) 
 
@@ -1504,9 +1504,9 @@ Objects **7–55**
 
 (thing-x thing) new-x thing)) 
 
-(setq thing1 (make-instance ’thing :x 1 :y 2)) *→* #\<THING 43135676\> 
+(setq thing1 (make-instance ’thing :x 1 :y 2)) *→* #&#60;THING 43135676&#62; 
 
-(setq thing2 (make-instance ’thing :x 7 :y 8)) *→* #\<THING 43147374\> 
+(setq thing2 (make-instance ’thing :x 7 :y 8)) *→* #&#60;THING 43147374&#62; 
 
 (with-accessors ((x1 thing-x) (y1 thing-y)) 
 
@@ -1532,9 +1532,9 @@ x2 (thing-x thing2) y2 (thing-y thing2))
 
 x2 (thing-x thing2) y2 (thing-y thing2))))) 
 
-&#9655; Changing X from 1 to 9 in #\<THING 43135676\>. 
+&#9655; Changing X from 1 to 9 in #&#60;THING 43135676&#62;. 
 
-&#9655; Changing X from 7 to (9) in #\<THING 43147374\>. 
+&#9655; Changing X from 7 to (9) in #&#60;THING 43147374&#62;. 
 
 *→* ((1 1 2 2 7 7 8 8) 
 
@@ -1562,7 +1562,7 @@ The consequences are undefined if any *accessor-name* is not the name of an acce
 
 A **with-accessors** expression of the form: 
 
-(with-accessors (\<i\>slot-entry\</i\>\<sub\>1\</sub\>\<i\>. . . slot-entry\<sub\>n\</sub\>\</i\>) \<i\>instance-form form\</i\>\<sub\>1\</sub\>\<i\>. . . form\<sub\>k\</sub\>\</i\>) 
+(with-accessors (&#60;i&#62;slot-entry&#60;/i&#62;&#60;sub&#62;1&#60;/sub&#62;&#60;i&#62;. . . slot-entry&#60;sub&#62;n&#60;/sub&#62;&#60;/i&#62;) &#60;i&#62;instance-form form&#60;/i&#62;&#60;sub&#62;1&#60;/sub&#62;&#60;i&#62;. . . form&#60;sub&#62;k&#60;/sub&#62;&#60;/i&#62;) 
 
 
 
@@ -1574,19 +1574,19 @@ expands into the equivalent of
 
 (let ((*in instance-form*)) 
 
-(symbol-macrolet (\<i\>Q\</i\>\<sub\>1\</sub\>\<i\>. . . Q\<sub\>n\</sub\>\</i\>) \<i\>form\</i\>\<sub\>1\</sub\>\<i\>. . . form\<sub\>k\</sub\>\</i\>)) 
+(symbol-macrolet (&#60;i&#62;Q&#60;/i&#62;&#60;sub&#62;1&#60;/sub&#62;&#60;i&#62;. . . Q&#60;sub&#62;n&#60;/sub&#62;&#60;/i&#62;) &#60;i&#62;form&#60;/i&#62;&#60;sub&#62;1&#60;/sub&#62;&#60;i&#62;. . . form&#60;sub&#62;k&#60;/sub&#62;&#60;/i&#62;)) 
 
-where \<i\>Q\<sub\>i\</sub\>\</i\>is 
+where &#60;i&#62;Q&#60;sub&#62;i&#60;/sub&#62;&#60;/i&#62;is 
 
-(\<i\>variable-name\<sub\>i\</sub\>\</i\> () (\<i\>accessor-name\<sub\>i\</sub\> in\</i\>)) 
+(&#60;i&#62;variable-name&#60;sub&#62;i&#60;/sub&#62;&#60;/i&#62; () (&#60;i&#62;accessor-name&#60;sub&#62;i&#60;/sub&#62; in&#60;/i&#62;)) 
 
 **with-slots** *Macro* 
 
 **Syntax:** 
 
-**with-slots** (*\{slot-entry\}*\*) *instance-form \{declaration\}*\* *\{form\}*\* 
+**with-slots** (*&#123;slot-entry&#125;*\*) *instance-form &#123;declaration&#125;*\* *&#123;form&#125;*\* 
 
-*→ \{result\}*\* 
+*→ &#123;result&#125;*\* 
 
 *slot-entry::*=*slot-name |* (*variable-name slot-name*) 
 
@@ -1628,7 +1628,7 @@ Objects **7–57**
 
 (y :initarg :y :accessor thing-y))) 
 
-*→* #\<STANDARD-CLASS THING 250020173\> 
+*→* #&#60;STANDARD-CLASS THING 250020173&#62; 
 
 (defmethod (setf thing-x) :before (new-x (thing thing)) 
 
@@ -1636,15 +1636,15 @@ Objects **7–57**
 
 (thing-x thing) new-x thing)) 
 
-(setq thing (make-instance ’thing :x 0 :y 1)) *→* #\<THING 62310540\> 
+(setq thing (make-instance ’thing :x 0 :y 1)) *→* #&#60;THING 62310540&#62; 
 
 (with-slots (x y) thing (incf x) (incf y)) *→* 2 
 
 (values (thing-x thing) (thing-y thing)) *→* 1, 2 
 
-(setq thing1 (make-instance ’thing :x 1 :y 2)) *→* #\<THING 43135676\> 
+(setq thing1 (make-instance ’thing :x 1 :y 2)) *→* #&#60;THING 43135676&#62; 
 
-(setq thing2 (make-instance ’thing :x 7 :y 8)) *→* #\<THING 43147374\> 
+(setq thing2 (make-instance ’thing :x 7 :y 8)) *→* #&#60;THING 43147374&#62; 
 
 (with-slots ((x1 x) (y1 y)) 
 
@@ -1670,7 +1670,7 @@ x2 (thing-x thing2) y2 (thing-y thing2))
 
 x2 (thing-x thing2) y2 (thing-y thing2))))) 
 
-&#9655; Changing X from 7 to (9) in #\<THING 43147374\>. 
+&#9655; Changing X from 7 to (9) in #&#60;THING 43147374&#62;. 
 
 *→* ((1 1 2 2 7 7 8 8) 
 
@@ -1698,7 +1698,7 @@ The consequences are undefined if any *slot-name* is not the name of a *slot* in
 
 A **with-slots** expression of the form: 
 
-(with-slots (\<i\>slot-entry\</i\>\<sub\>1\</sub\>\<i\>. . . slot-entry\<sub\>n\</sub\>\</i\>) \<i\>instance-form form\</i\>\<sub\>1\</sub\>\<i\>. . . form\<sub\>k\</sub\>\</i\>) 
+(with-slots (&#60;i&#62;slot-entry&#60;/i&#62;&#60;sub&#62;1&#60;/sub&#62;&#60;i&#62;. . . slot-entry&#60;sub&#62;n&#60;/sub&#62;&#60;/i&#62;) &#60;i&#62;instance-form form&#60;/i&#62;&#60;sub&#62;1&#60;/sub&#62;&#60;i&#62;. . . form&#60;sub&#62;k&#60;/sub&#62;&#60;/i&#62;) 
 
 expands into the equivalent of 
 
@@ -1710,25 +1710,25 @@ expands into the equivalent of
 
 (let ((*in instance-form*)) 
 
-(symbol-macrolet (\<i\>Q\</i\>\<sub\>1\</sub\>\<i\>. . . Q\<sub\>n\</sub\>\</i\>) \<i\>form\</i\>\<sub\>1\</sub\>\<i\>. . . form\<sub\>k\</sub\>\</i\>)) 
+(symbol-macrolet (&#60;i&#62;Q&#60;/i&#62;&#60;sub&#62;1&#60;/sub&#62;&#60;i&#62;. . . Q&#60;sub&#62;n&#60;/sub&#62;&#60;/i&#62;) &#60;i&#62;form&#60;/i&#62;&#60;sub&#62;1&#60;/sub&#62;&#60;i&#62;. . . form&#60;sub&#62;k&#60;/sub&#62;&#60;/i&#62;)) 
 
-where \<i\>Q\<sub\>i\</sub\>\</i\>is 
+where &#60;i&#62;Q&#60;sub&#62;i&#60;/sub&#62;&#60;/i&#62;is 
 
-(\<i\>slot-entry\<sub\>i\</sub\>\</i\>() (slot-value \<i\>in\</i\> ’\<i\>slot-entry\<sub\>i\</sub\>\</i\>)) 
+(&#60;i&#62;slot-entry&#60;sub&#62;i&#60;/sub&#62;&#60;/i&#62;() (slot-value &#60;i&#62;in&#60;/i&#62; ’&#60;i&#62;slot-entry&#60;sub&#62;i&#60;/sub&#62;&#60;/i&#62;)) 
 
-if \<i\>slot-entry\<sub\>i\</sub\>\</i\>is a \<i\>symbol\</i\> and is 
+if &#60;i&#62;slot-entry&#60;sub&#62;i&#60;/sub&#62;&#60;/i&#62;is a &#60;i&#62;symbol&#60;/i&#62; and is 
 
-(\<i\>variable-name\<sub\>i\</sub\>\</i\> () (slot-value \<i\>in\</i\> ’\<i\>slot-name\<sub\>i\</sub\>\</i\>)) 
+(&#60;i&#62;variable-name&#60;sub&#62;i&#60;/sub&#62;&#60;/i&#62; () (slot-value &#60;i&#62;in&#60;/i&#62; ’&#60;i&#62;slot-name&#60;sub&#62;i&#60;/sub&#62;&#60;/i&#62;)) 
 
-if \<i\>slot-entry\<sub\>i\</sub\>\</i\>is of the form 
+if &#60;i&#62;slot-entry&#60;sub&#62;i&#60;/sub&#62;&#60;/i&#62;is of the form 
 
-(\<i\>variable-name\<sub\>i\</sub\> slot-name\<sub\>i\</sub\>\</i\>) 
+(&#60;i&#62;variable-name&#60;sub&#62;i&#60;/sub&#62; slot-name&#60;sub&#62;i&#60;/sub&#62;&#60;/i&#62;) 
 
 **defclass** *Macro* 
 
 **Syntax:** 
 
-**defclass** *class-name* (*\{superclass-name\}*\*) (*\{slot-specifier\}*\*) [[*↓class-option* ]] 
+**defclass** *class-name* (*&#123;superclass-name&#125;*\*) (*&#123;slot-specifier&#125;*\*) [[*↓class-option* ]] 
 
 *→ new-class* 
 
@@ -1736,23 +1736,23 @@ if \<i\>slot-entry\<sub\>i\</sub\>\</i\>is of the form
 
 *slot-name*::= *symbol* 
 
-*slot-option*::= *\{*:reader *reader-function-name\}*\* *|* 
+*slot-option*::= *&#123;*:reader *reader-function-name&#125;*\* *|* 
 
-*\{*:writer *writer-function-name\}*\* *|* 
+*&#123;*:writer *writer-function-name&#125;*\* *|* 
 
-*\{*:accessor *reader-function-name\}*\* *|* 
+*&#123;*:accessor *reader-function-name&#125;*\* *|* 
 
-*\{*:allocation *allocation-type\} |* 
+*&#123;*:allocation *allocation-type&#125; |* 
 
-*\{*:initarg *initarg-name\}*\* *|* 
+*&#123;*:initarg *initarg-name&#125;*\* *|* 
 
-*\{*:initform *form\} |* 
+*&#123;*:initform *form&#125; |* 
 
-*\{*:type *type-specifier\} |* 
+*&#123;*:type *type-specifier&#125; |* 
 
-*\{*:documentation *string\}* 
+*&#123;*:documentation *string&#125;* 
 
-*function-name*::= *\{symbol |* (setf *symbol*)*\}* 
+*function-name*::= *&#123;symbol |* (setf *symbol*)*&#125;* 
 
 *class-option*::= (:default-initargs . *initarg-list*) *|* 
 
@@ -1830,13 +1830,13 @@ The following slot options are available:
 
 – If *allocation-type* is :class, a shared *slot* of the given name is allocated in the *class object* created by this **defclass** form. The value of the *slot* is shared by all 
 
-*instances* of the *class*. If a class *C*\<sub\>1\</sub\> defines such a *shared slot*, any subclass *C*\<sub\>2\</sub\> of 
+*instances* of the *class*. If a class *C*&#60;sub&#62;1&#60;/sub&#62; defines such a *shared slot*, any subclass *C*&#60;sub&#62;2&#60;/sub&#62; of 
 
-*C*\<sub\>1\</sub\> will share this single *slot* unless the **defclass** form for *C*\<sub\>2\</sub\> specifies a *slot* of the 
+*C*&#60;sub&#62;1&#60;/sub&#62; will share this single *slot* unless the **defclass** form for *C*&#60;sub&#62;2&#60;/sub&#62; specifies a *slot* of the 
 
-same *name* or there is a superclass of *C*\<sub\>2\</sub\> that precedes *C*\<sub\>1\</sub\> in the class precedence 
+same *name* or there is a superclass of *C*&#60;sub&#62;2&#60;/sub&#62; that precedes *C*&#60;sub&#62;1&#60;/sub&#62; in the class precedence 
 
-list of *C*\<sub\>2\</sub\> and that defines a *slot* of the same *name*. 
+list of *C*&#60;sub&#62;2&#60;/sub&#62; and that defines a *slot* of the same *name*. 
 
 *•* The :initform slot option is used to provide a default initial value form to be used in the initialization of the *slot*. This *form* is evaluated every time it is used to initialize the *slot*. The lexical environment in which this *form* is evaluated is the lexical environment in which the **defclass** form was evaluated. Note that the lexical environment refers both to variables 
 
@@ -1920,27 +1920,27 @@ List), Section 7.1 (Object Creation and Initialization)
 
 **Syntax:** 
 
-**defgeneric** *function-name gf-lambda-list* [[ *↓option | \{↓method-description\}*\* ]] 
+**defgeneric** *function-name gf-lambda-list* [[ *↓option | &#123;↓method-description&#125;*\* ]] 
 
 *→ new-generic* 
 
-*option::*=(:argument-precedence-order *\{parameter-name\}*\<sup\>+\</sup\>) *|* 
+*option::*=(:argument-precedence-order *&#123;parameter-name&#125;*&#60;sup&#62;+&#60;/sup&#62;) *|* 
 
-(**declare** *\{gf-declaration\}*\<sup\>+\</sup\>) *|* 
+(**declare** *&#123;gf-declaration&#125;*&#60;sup&#62;+&#60;/sup&#62;) *|* 
 
 (:documentation *gf-documentation*) *|* 
 
-(:method-combination *method-combination \{method-combination-argument\}*\*) *|* 
+(:method-combination *method-combination &#123;method-combination-argument&#125;*\*) *|* 
 
 (:generic-function-class *generic-function-class*) *|* 
 
 (:method-class *method-class*) 
 
-*method-description::*=(:method *\{method-qualifier\}*\* *specialized-lambda-list* 
+*method-description::*=(:method *&#123;method-qualifier&#125;*\* *specialized-lambda-list* 
 
 **Arguments and Values:** 
 
-[[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\*) 
+[[ *&#123;declaration&#125;*\* *| documentation* ]] *&#123;form&#125;*\*) 
 
 *function-name*—a *function name*. 
 
@@ -2052,13 +2052,13 @@ Implementations can extend **defgeneric** to include other options. It is requir
 
 **Syntax:** 
 
-**defmethod** *function-name \{method-qualifier\}*\* *specialized-lambda-list* 
+**defmethod** *function-name &#123;method-qualifier&#125;*\* *specialized-lambda-list* 
 
-[[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* 
+[[ *&#123;declaration&#125;*\* *| documentation* ]] *&#123;form&#125;*\* 
 
 *→ new-method* 
 
-*function-name*::= *\{symbol |* (setf *symbol*)*\}* 
+*function-name*::= *&#123;symbol |* (setf *symbol*)*&#125;* 
 
 Objects **7–67**
 
@@ -2070,17 +2070,17 @@ Objects **7–67**
 
 *method-qualifier*::= *non-list* 
 
-*specialized-lambda-list*::= (*\{var |* (*var parameter-specializer-name*)*\}*\* 
+*specialized-lambda-list*::= (*&#123;var |* (*var parameter-specializer-name*)*&#125;*\* 
 
-[&optional *\{var |* (var [*initform* [*supplied-p-parameter*] ])*\}*\*] 
+[&optional *&#123;var |* (var [*initform* [*supplied-p-parameter*] ])*&#125;*\*] 
 
 [&rest *var*] 
 
-[&key*\{var |* (*\{var |* (*keywordvar*)*\}* [*initform* [*supplied-p-parameter*] ])*\}*\* 
+[&key*&#123;var |* (*&#123;var |* (*keywordvar*)*&#125;* [*initform* [*supplied-p-parameter*] ])*&#125;*\* 
 
 [**&allow-other-keys**] ] 
 
-[&aux *\{var |* (*var* [*initform*] )*\}*\*] ) 
+[&aux *&#123;var |* (*var* [*initform*] )*&#125;*\*] ) 
 
 *parameter-specializer-name*::= *symbol |* (eql *eql-specializer-form*) 
 
@@ -2138,7 +2138,7 @@ The expansion of the **defmethod** macro “refers to” each specialized parame
 
 Declarations at the head of the method body that apply to the method’s *lambda variables* are treated as *bound declarations* whose *scope* is the same as the corresponding *bindings*. 
 
-Declarations at the head of the method body that apply to the functional bindings of **call-next-method** or **next-method-p** apply to references to those functions within the method body *forms*. Any outer *bindings* of the *function names* **call-next-method** and **next-method-p**, and declarations associated with such *bindings* are *shadowed* \<sub\>2\</sub\> within the method body *forms*. 
+Declarations at the head of the method body that apply to the functional bindings of **call-next-method** or **next-method-p** apply to references to those functions within the method body *forms*. Any outer *bindings* of the *function names* **call-next-method** and **next-method-p**, and declarations associated with such *bindings* are *shadowed* &#60;sub&#62;2&#60;/sub&#62; within the method body *forms*. 
 
 The *scope* of *free declarations* at the head of the method body is the entire method body, which includes any implicit local function definitions but excludes *initialization forms* for the *lambda variables*. 
 
@@ -2242,7 +2242,7 @@ Objects **7–71**
 
 **Syntax:** 
 
-**call-method** *method* &optional *next-method-list → \{result\}*\* 
+**call-method** *method* &optional *next-method-list → &#123;result&#125;*\* 
 
 **make-method** *form → method-object* 
 
@@ -2290,7 +2290,7 @@ If *next-method-list* is not supplied, the **call-next-method** function availab
 
 **Syntax:** 
 
-**call-next-method** &rest *args → \{result\}*\* 
+**call-next-method** &rest *args → &#123;result&#125;*\* 
 
 **Arguments and Values:** 
 
@@ -2380,15 +2380,15 @@ Section 7.6.6 (Method Selection and Combination)
 
 **define-method-combination** *name lambda-list* 
 
-(*\{method-group-specifier\}*\*) 
+(*&#123;method-group-specifier&#125;*\*) 
 
 [(:arguments *. args-lambda-list*)] 
 
 [(:generic-function *generic-function-symbol*)] 
 
-[[ *\{declaration\}*\* *| documentation* ]] 
+[[ *&#123;declaration&#125;*\* *| documentation* ]] 
 
-*\{form\}*\* 
+*&#123;form&#125;*\* 
 
 *→ name* 
 
@@ -2398,7 +2398,7 @@ Section 7.6.6 (Method Selection and Combination)
 
 :operator *operator* 
 
-*method-group-specifier::*=(*name \{\{qualifier-pattern\}*\<sup\>+\</sup\>*| predicate\}* [[ *↓long-form-option* ]]) 
+*method-group-specifier::*=(*name &#123;&#123;qualifier-pattern&#125;*&#60;sup&#62;+&#60;/sup&#62;*| predicate&#125;* [[ *↓long-form-option* ]]) 
 
 *long-form-option::*=:description *description |* 
 

@@ -8,7 +8,7 @@ Conforming code may run in all conforming implementations, but might have allowa
 
 (random) *→ implementation-dependent* 
 
-(\> lambda-parameters-limit 93) *→ implementation-dependent* 
+(&#62; lambda-parameters-limit 93) *→ implementation-dependent* 
 
 (char-name #\A) *→ implementation-dependent* 
 

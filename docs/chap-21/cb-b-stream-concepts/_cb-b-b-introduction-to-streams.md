@@ -4,7 +4,7 @@ A *stream* is an *object* that can be used with an input or output function to i
 
 Some operations may be performed on any kind of *stream*; Figure 21–1 provides a list of *standardized* operations that are potentially useful with any kind of *stream*. 
 
-|\<p\>**close stream-element-type** \</p\>\<p\>**input-stream-p streamp** \</p\>\<p\>**interactive-stream-p with-open-stream** \</p\>\<p\>**output-stream-p**\</p\>|
+|&#60;p&#62;**close stream-element-type** &#60;/p&#62;&#60;p&#62;**input-stream-p streamp** &#60;/p&#62;&#60;p&#62;**interactive-stream-p with-open-stream** &#60;/p&#62;&#60;p&#62;**output-stream-p**&#60;/p&#62;|
 | :- |
 
 

@@ -273,7 +273,7 @@ Section 22.3.5.3 (Tilde I: Indent)
 
 **pprint-logical-block** (*stream-symbol object* &key *prefix per-line-prefix suffix*) 
 
-*\{declaration\}*\* *\{form\}*\* 
+*&#123;declaration&#125;*\* *&#123;form&#125;*\* 
 
 *→* **nil** 
 
@@ -599,7 +599,7 @@ In some implementations the *stream* argument passed to a **print-object** *meth
 
 **Syntax:** 
 
-**print-unreadable-object** (*object stream* &key *type identity*) *\{form\}*\* *→* **nil** 
+**print-unreadable-object** (*object stream* &key *type identity*) *&#123;form&#125;*\* *→* **nil** 
 
 **Arguments and Values:** 
 
@@ -621,7 +621,7 @@ Printer **22–59**
 
 **Description:** 
 
-Outputs a printed representation of *object* on *stream*, beginning with “#\<” and ending with “\>”. Everything output to *stream* by the body *forms* is enclosed in the the angle brackets. If *type* is *true*, the output from *forms* is preceded by a brief description of the *object*’s *type* and a space character. If *identity* is *true*, the output from *forms* is followed by a space character and a representation of the *object*’s identity, typically a storage address. 
+Outputs a printed representation of *object* on *stream*, beginning with “#&#60;” and ending with “&#62;”. Everything output to *stream* by the body *forms* is enclosed in the the angle brackets. If *type* is *true*, the output from *forms* is preceded by a brief description of the *object*’s *type* and a space character. If *identity* is *true*, the output from *forms* is followed by a space character and a representation of the *object*’s identity, typically a storage address. 
 
 If either *type* or *identity* is not supplied, its value is *false*. It is valid to omit the body *forms*. If *type* and *identity* are both true and there are no body *forms*, only one space character separates the type and the identity. 
 
@@ -637,9 +637,9 @@ If either *type* or *identity* is not supplied, its value is *false*. It is vali
 
 (prin1-to-string my-airplane) 
 
-*→* "#\<Airplane NW0773 36000123135\>" 
+*→* "#&#60;Airplane NW0773 36000123135&#62;" 
 
-\<i\>\<sup\>or\</sup\>→\</i\> "#\<FAA:AIRPLANE NW0773 17\>" 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; "#&#60;FAA:AIRPLANE NW0773 17&#62;" 
 
 **Exceptional Situations:** 
 
@@ -771,7 +771,7 @@ Printer **22–61**
 
 |**Parameter Corresponding Dynamic Variable**|
 | :- |
-|\<p\>*array* **\*print-array\*** \</p\>\<p\>*base* **\*print-base\*** \</p\>\<p\>*case* **\*print-case\*** \</p\>\<p\>*circle* **\*print-circle\*** \</p\>\<p\>*escape* **\*print-escape\*** \</p\>\<p\>*gensym* **\*print-gensym\*** \</p\>\<p\>*length* **\*print-length\*** \</p\>\<p\>*level* **\*print-level\*** \</p\>\<p\>*lines* **\*print-lines\*** \</p\>\<p\>*miser-width* **\*print-miser-width\*** \</p\>\<p\>*pprint-dispatch* **\*print-pprint-dispatch\*** \</p\>\<p\>*pretty* **\*print-pretty\*** \</p\>\<p\>*radix* **\*print-radix\*** \</p\>\<p\>*readably* **\*print-readably\*** \</p\>\<p\>*right-margin* **\*print-right-margin\***\</p\>|
+|&#60;p&#62;*array* **\*print-array\*** &#60;/p&#62;&#60;p&#62;*base* **\*print-base\*** &#60;/p&#62;&#60;p&#62;*case* **\*print-case\*** &#60;/p&#62;&#60;p&#62;*circle* **\*print-circle\*** &#60;/p&#62;&#60;p&#62;*escape* **\*print-escape\*** &#60;/p&#62;&#60;p&#62;*gensym* **\*print-gensym\*** &#60;/p&#62;&#60;p&#62;*length* **\*print-length\*** &#60;/p&#62;&#60;p&#62;*level* **\*print-level\*** &#60;/p&#62;&#60;p&#62;*lines* **\*print-lines\*** &#60;/p&#62;&#60;p&#62;*miser-width* **\*print-miser-width\*** &#60;/p&#62;&#60;p&#62;*pprint-dispatch* **\*print-pprint-dispatch\*** &#60;/p&#62;&#60;p&#62;*pretty* **\*print-pretty\*** &#60;/p&#62;&#60;p&#62;*radix* **\*print-radix\*** &#60;/p&#62;&#60;p&#62;*readably* **\*print-readably\*** &#60;/p&#62;&#60;p&#62;*right-margin* **\*print-right-margin\***&#60;/p&#62;|
 
 
 **Figure 22–7. Argument correspondences for the WRITE function.** 
@@ -924,11 +924,11 @@ Printer **22–65**
 
 **Notes:** 
 
-(write-to-string *object \{key argument\}*\*) 
+(write-to-string *object &#123;key argument&#125;*\*) 
 
 *≡* (with-output-to-string (#1=#:string-stream) 
 
-(write object :stream #1# *\{key argument\}*\*)) 
+(write object :stream #1# *&#123;key argument&#125;*\*)) 
 
 (princ-to-string *object*) 
 
@@ -954,7 +954,7 @@ a *generalized boolean*.
 
 **Description:** 
 
-Controls the format in which *arrays* are printed. If it is *false*, the contents of *arrays* other than *strings* are never printed. Instead, *arrays* are printed in a concise form using #\< that gives enough information for the user to be able to identify the *array*, but does not include the entire *array* contents. If it is *true*, non-*string arrays* are printed using #(...), #\*, or #nA syntax. 
+Controls the format in which *arrays* are printed. If it is *false*, the contents of *arrays* other than *strings* are never printed. Instead, *arrays* are printed in a concise form using #&#60; that gives enough information for the user to be able to identify the *array*, but does not include the entire *array* contents. If it is *true*, non-*string arrays* are printed using #(...), #\*, or #nA syntax. 
 
 **Affected By:** 
 
@@ -1480,9 +1480,9 @@ a *generalized boolean*.
 
 Controls whether the *Lisp printer* calls the *pretty printer* . 
 
-If it is *false*, the *pretty printer* is not used and a minimum of *whitespace*\<sub\>1\</sub\> is output when printing an expression. 
+If it is *false*, the *pretty printer* is not used and a minimum of *whitespace*&#60;sub&#62;1&#60;/sub&#62; is output when printing an expression. 
 
-If it is *true*, the *pretty printer* is used, and the *Lisp printer* will endeavor to insert extra *whitespace*\<sub\>1\</sub\> where appropriate to make *expressions* more readable. 
+If it is *true*, the *pretty printer* is used, and the *Lisp printer* will endeavor to insert extra *whitespace*&#60;sub&#62;1&#60;/sub&#62; where appropriate to make *expressions* more readable. 
 
 **\*print-pretty\*** has an effect even when the *value* of **\*print-escape\*** is *false*. 
 
@@ -1576,7 +1576,7 @@ a *generalized boolean*.
 
 **Description:** 
 
-If **\*print-readably\*** is *true*, some special rules for printing *objects* go into effect. Specifically, printing any *object O*\<sub\>1\</sub\> produces a printed representation that, when seen by the *Lisp reader* while the *standard readtable* is in effect, will produce an *object O*\<sub\>2\</sub\> that is *similar* to *O*\<sub\>1\</sub\>. The printed representation produced might or might not be the same as the printed representation produced when **\*print-readably\*** is *false*. If printing an *object readably* is not possible, an error of *type* **print-not-readable** is signaled rather than using a syntax (*e.g.*, the “#\<” syntax) that would not be readable by the same *implementation*. If the *value* of some other *printer control variable* is such that these requirements would be violated, the *value* of that other *variable* is ignored. 
+If **\*print-readably\*** is *true*, some special rules for printing *objects* go into effect. Specifically, printing any *object O*&#60;sub&#62;1&#60;/sub&#62; produces a printed representation that, when seen by the *Lisp reader* while the *standard readtable* is in effect, will produce an *object O*&#60;sub&#62;2&#60;/sub&#62; that is *similar* to *O*&#60;sub&#62;1&#60;/sub&#62;. The printed representation produced might or might not be the same as the printed representation produced when **\*print-readably\*** is *false*. If printing an *object readably* is not possible, an error of *type* **print-not-readable** is signaled rather than using a syntax (*e.g.*, the “#&#60;” syntax) that would not be readable by the same *implementation*. If the *value* of some other *printer control variable* is such that these requirements would be violated, the *value* of that other *variable* is ignored. 
 
 Specifically, if **\*print-readably\*** is *true*, printing proceeds as if **\*print-escape\***, **\*print-array\***, and **\*print-gensym\*** were also *true*, and as if **\*print-length\***, **\*print-level\***, and **\*print-lines\*** were *false*. 
 
@@ -1618,7 +1618,7 @@ If **\*read-eval\*** is *false* and **\*print-readably\*** is *true*, any such m
 
 ;; of three hypothetical implementations which follow. 
 
-(setq table (make-hash-table)) *→* #\<HASH-TABLE EQL 0/120 32005763\> 
+(setq table (make-hash-table)) *→* #&#60;HASH-TABLE EQL 0/120 32005763&#62; 
 
 Printer **22–77**
 
@@ -1634,7 +1634,7 @@ Printer **22–77**
 
 (let ((\*print-readably\* t)) (print table)) 
 
-Error: Can’t print #\<HASH-TABLE EQL 0/120 32005763\> readably. 
+Error: Can’t print #&#60;HASH-TABLE EQL 0/120 32005763&#62; readably. 
 
 ;; Implementation B 
 
@@ -1646,7 +1646,7 @@ Error: Can’t print #\<HASH-TABLE EQL 0/120 32005763\> readably.
 
 &#9655; #S(HASH-TABLE :TEST EQL :SIZE 120 :CONTENTS (1 ONE 2 TWO)) 
 
-*→* #\<HASH-TABLE EQL 0/120 32005763\> 
+*→* #&#60;HASH-TABLE EQL 0/120 32005763&#62; 
 
 ;; Implementation C 
 
@@ -1668,7 +1668,7 @@ Error: Can’t print #\<HASH-TABLE EQL 0/120 32005763\> readably.
 
 &#9655; HASH-TABLE) 
 
-*→* #\<HASH-TABLE EQL 0/120 32005763\> 
+*→* #&#60;HASH-TABLE EQL 0/120 32005763&#62; 
 
 **See Also:** 
 

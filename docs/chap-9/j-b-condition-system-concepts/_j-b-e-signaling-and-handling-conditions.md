@@ -16,9 +16,9 @@ Each *handler* is associated with a *type specifier* that must designate a *subt
 
 *recent* active *applicable handler* for that *condition* is selected from this set. Given a *condition*, the order of recentness of active *applicable handlers* is defined by the following two rules: 
 
-1\. Each handler in a set of active handlers *H*\<sub\>1\</sub\> is more recent than every handler in a set *H*\<sub\>2\</sub\> if the handlers in *H*\<sub\>2\</sub\> were active when the handlers in *H*\<sub\>1\</sub\> were established. 
+1\. Each handler in a set of active handlers *H*&#60;sub&#62;1&#60;/sub&#62; is more recent than every handler in a set *H*&#60;sub&#62;2&#60;/sub&#62; if the handlers in *H*&#60;sub&#62;2&#60;/sub&#62; were active when the handlers in *H*&#60;sub&#62;1&#60;/sub&#62; were established. 
 
-2\. Let *h*\<sub\>1\</sub\> and *h*\<sub\>2\</sub\> be two applicable active handlers established by the same *form*. Then *h*\<sub\>1\</sub\> is more recent than *h*\<sub\>2\</sub\> if *h*\<sub\>1\</sub\> was defined to the left of *h*\<sub\>2\</sub\> in the *form* that established them. 
+2\. Let *h*&#60;sub&#62;1&#60;/sub&#62; and *h*&#60;sub&#62;2&#60;/sub&#62; be two applicable active handlers established by the same *form*. Then *h*&#60;sub&#62;1&#60;/sub&#62; is more recent than *h*&#60;sub&#62;2&#60;/sub&#62; if *h*&#60;sub&#62;1&#60;/sub&#62; was defined to the left of *h*&#60;sub&#62;2&#60;/sub&#62; in the *form* that established them. 
 
 Once a handler in a handler binding *form* (such as **handler-bind** or **handler-case**) has been selected, all handlers in that *form* become inactive for the remainder of the signaling process. While the selected *handler* runs, no other *handler* established by that *form* is active. That is, if the *handler* declines, no other handler established by that *form* will be considered for possible invocation. 
 

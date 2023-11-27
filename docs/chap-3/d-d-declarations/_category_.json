@@ -1,7 +1,8 @@
 {
-  'label': '**3.3 Declarations** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**3.3 Declarations** '
+  "label": "3.3 Declarations",
+  "position": 3.3,
+  "link": {
+    "type": "generated-index",
+    "description": "3.3 Declarations"
   }
 }

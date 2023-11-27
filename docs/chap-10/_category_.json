@@ -1,7 +1,8 @@
 {
-  'label': '10. Symbols',
-  'link': {
-    'type': 'generated-index',
-    'description': '10. Symbols'
+  "label": "10. Symbols",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "description": "10. Symbols"
   }
 }

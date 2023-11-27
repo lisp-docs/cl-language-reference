@@ -1,6 +1,6 @@
  
 
-*Tilde* immediately followed by a *newline* ignores the *newline* and any following non-newline *whitespace*\<sub\>1\</sub\> characters. With a :, the *newline* is ignored, but any following *whitespace*\<sub\>1\</sub\> is left in place. With an @, the *newline* is left in place, but any following *whitespace*\<sub\>1\</sub\> is ignored. For example: 
+*Tilde* immediately followed by a *newline* ignores the *newline* and any following non-newline *whitespace*&#60;sub&#62;1&#60;/sub&#62; characters. With a :, the *newline* is ignored, but any following *whitespace*&#60;sub&#62;1&#60;/sub&#62; is left in place. With an @, the *newline* is left in place, but any following *whitespace*&#60;sub&#62;1&#60;/sub&#62; is ignored. For example: 
 
 (defun type-clash-error (fn nargs argnum right-type wrong-type) 
 

@@ -1,7 +1,8 @@
 {
-  'label': '13. Characters',
-  'link': {
-    'type': 'generated-index',
-    'description': '13. Characters'
+  "label": "13. Characters",
+  "position": 13,
+  "link": {
+    "type": "generated-index",
+    "description": "13. Characters"
   }
 }

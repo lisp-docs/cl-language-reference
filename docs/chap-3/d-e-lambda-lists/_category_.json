@@ -1,7 +1,8 @@
 {
-  'label': '**3.4 Lambda Lists** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**3.4 Lambda Lists** '
+  "label": "3.4 Lambda Lists",
+  "position": 3.4,
+  "link": {
+    "type": "generated-index",
+    "description": "3.4 Lambda Lists"
   }
 }

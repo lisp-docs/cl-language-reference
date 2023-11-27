@@ -1,7 +1,8 @@
 {
-  'label': '21. Streams',
-  'link': {
-    'type': 'generated-index',
-    'description': '21. Streams'
+  "label": "21. Streams",
+  "position": 21,
+  "link": {
+    "type": "generated-index",
+    "description": "21. Streams"
   }
 }

@@ -6,7 +6,7 @@ Certain *stream variables* are defined by this specification to be the proper so
 
 |**Glossary Term Variable Name**|
 | :- |
-|\<p\>*debug I/O* **\*debug-io\*** \</p\>\<p\>*error output* **\*error-output\*** \</p\>\<p\>*query I/O* **\*query-io\*** \</p\>\<p\>*standard input* **\*standard-input\*** \</p\>\<p\>*standard output* **\*standard-output\*** \</p\>\<p\>*terminal I/O* **\*terminal-io\*** \</p\>\<p\>*trace output* **\*trace-output\***\</p\>|
+|&#60;p&#62;*debug I/O* **\*debug-io\*** &#60;/p&#62;&#60;p&#62;*error output* **\*error-output\*** &#60;/p&#62;&#60;p&#62;*query I/O* **\*query-io\*** &#60;/p&#62;&#60;p&#62;*standard input* **\*standard-input\*** &#60;/p&#62;&#60;p&#62;*standard output* **\*standard-output\*** &#60;/p&#62;&#60;p&#62;*terminal I/O* **\*terminal-io\*** &#60;/p&#62;&#60;p&#62;*trace output* **\*trace-output\***&#60;/p&#62;|
 
 
 **Figure 21–6. Standardized Stream Variables** 

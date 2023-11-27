@@ -10,7 +10,7 @@ Data and Control Flow **5–5**
 
 
 
-|\<p\>**aref cdadr get** \</p\>\<p\>**bit cdar gethash** \</p\>\<p\>**caaaar cddaar logical-pathname-translations caaadr cddadr macro-function** \</p\>\<p\>**caaar cddar ninth** \</p\>\<p\>**caadar cdddar nth** \</p\>\<p\>**caaddr cddddr readtable-case** \</p\>\<p\>**caadr cdddr rest** \</p\>\<p\>**caar cddr row-major-aref** \</p\>\<p\>**cadaar cdr sbit** \</p\>\<p\>**cadadr char schar** \</p\>\<p\>**cadar class-name second** \</p\>\<p\>**caddar compiler-macro-function seventh** \</p\>\<p\>**cadddr documentation sixth** \</p\>\<p\>**caddr eighth slot-value** \</p\>\<p\>**cadr elt subseq** \</p\>\<p\>**car fdefinition svref** \</p\>\<p\>**cdaaar fifth symbol-function** \</p\>\<p\>**cdaadr fill-pointer symbol-plist** \</p\>\<p\>**cdaar find-class symbol-value** \</p\>\<p\>**cdadar first tenth** \</p\>\<p\>**cdaddr fourth third**\</p\>|
+|&#60;p&#62;**aref cdadr get** &#60;/p&#62;&#60;p&#62;**bit cdar gethash** &#60;/p&#62;&#60;p&#62;**caaaar cddaar logical-pathname-translations caaadr cddadr macro-function** &#60;/p&#62;&#60;p&#62;**caaar cddar ninth** &#60;/p&#62;&#60;p&#62;**caadar cdddar nth** &#60;/p&#62;&#60;p&#62;**caaddr cddddr readtable-case** &#60;/p&#62;&#60;p&#62;**caadr cdddr rest** &#60;/p&#62;&#60;p&#62;**caar cddr row-major-aref** &#60;/p&#62;&#60;p&#62;**cadaar cdr sbit** &#60;/p&#62;&#60;p&#62;**cadadr char schar** &#60;/p&#62;&#60;p&#62;**cadar class-name second** &#60;/p&#62;&#60;p&#62;**caddar compiler-macro-function seventh** &#60;/p&#62;&#60;p&#62;**cadddr documentation sixth** &#60;/p&#62;&#60;p&#62;**caddr eighth slot-value** &#60;/p&#62;&#60;p&#62;**cadr elt subseq** &#60;/p&#62;&#60;p&#62;**car fdefinition svref** &#60;/p&#62;&#60;p&#62;**cdaaar fifth symbol-function** &#60;/p&#62;&#60;p&#62;**cdaadr fill-pointer symbol-plist** &#60;/p&#62;&#60;p&#62;**cdaar find-class symbol-value** &#60;/p&#62;&#60;p&#62;**cdadar first tenth** &#60;/p&#62;&#60;p&#62;**cdaddr fourth third**&#60;/p&#62;|
 | :- |
 
 
@@ -30,7 +30,7 @@ In the case of **subseq**, the replacement value must be a *sequence* whose elem
 
 |**Function name Argument that is a** *place* **Update function used**|
 | :- |
-|\<p\>**ldb** second **dpb** \</p\>\<p\>**mask-field** second **deposit-field** \</p\>\<p\>**getf** first *implementation-dependent*\</p\>|
+|&#60;p&#62;**ldb** second **dpb** &#60;/p&#62;&#60;p&#62;**mask-field** second **deposit-field** &#60;/p&#62;&#60;p&#62;**getf** first *implementation-dependent*&#60;/p&#62;|
 
 
 **Figure 5–8. Functions that setf can be used with—2** 

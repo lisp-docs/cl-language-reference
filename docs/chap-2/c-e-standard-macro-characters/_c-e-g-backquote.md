@@ -58,7 +58,7 @@ Anywhere “,@” may be used, the syntax “,.” may be used instead to indica
 
 If the backquote syntax is nested, the innermost backquoted form should be expanded first. This means that if several commas occur in a row, the leftmost one belongs to the innermost *backquote*. 
 
-An *implementation* is free to interpret a backquoted *form F*\<sub\>1\</sub\> as any *form F*\<sub\>2\</sub\> that, when evaluated, will produce a result that is the *same* under **equal** as the result implied by the above definition, provided that the side-effect behavior of the substitute *form F*\<sub\>2\</sub\> is also consistent with the  
+An *implementation* is free to interpret a backquoted *form F*&#60;sub&#62;1&#60;/sub&#62; as any *form F*&#60;sub&#62;2&#60;/sub&#62; that, when evaluated, will produce a result that is the *same* under **equal** as the result implied by the above definition, provided that the side-effect behavior of the substitute *form F*&#60;sub&#62;2&#60;/sub&#62; is also consistent with the  
 
 
 

@@ -1,7 +1,8 @@
 {
-  'label': '**2.3 Interpretation of Tokens** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**2.3 Interpretation of Tokens** '
+  "label": "2.3 Interpretation of Tokens",
+  "position": 2.3,
+  "link": {
+    "type": "generated-index",
+    "description": "2.3 Interpretation of Tokens"
   }
 }

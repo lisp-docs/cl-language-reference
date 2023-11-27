@@ -1,7 +1,8 @@
 {
-  'label': '**2.4 Standard Macro Characters** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**2.4 Standard Macro Characters** '
+  "label": "2.4 Standard Macro Characters",
+  "position": 2.4,
+  "link": {
+    "type": "generated-index",
+    "description": "2.4 Standard Macro Characters"
   }
 }

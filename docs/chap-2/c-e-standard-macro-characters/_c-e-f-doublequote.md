@@ -6,7 +6,7 @@ The *double-quote* is used to begin and end a *string*. When a *double-quote* is
 
 Examples of the use of the *double-quote* character are in Figure 2–18. 
 
-|\<p\>"Foo" ;A string with three characters in it "" ;An empty string \</p\>\<p\>"\"APL\\360?\" he cried." ;A string with twenty characters \</p\>\<p\>"|x| = |-x|" ;A ten-character string\</p\>|
+|&#60;p&#62;"Foo" ;A string with three characters in it "" ;An empty string &#60;/p&#62;&#60;p&#62;"\"APL\\360?\" he cried." ;A string with twenty characters &#60;/p&#62;&#60;p&#62;"|x| = |-x|" ;A ten-character string&#60;/p&#62;|
 | :- |
 
 

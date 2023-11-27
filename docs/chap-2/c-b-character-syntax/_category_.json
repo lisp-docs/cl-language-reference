@@ -1,7 +1,8 @@
 {
-  'label': '**2.1 Character Syntax** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**2.1 Character Syntax** '
+  "label": "2.1 Character Syntax",
+  "position": 2.1,
+  "link": {
+    "type": "generated-index",
+    "description": "2.1 Character Syntax"
   }
 }

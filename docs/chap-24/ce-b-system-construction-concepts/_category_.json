@@ -1,7 +1,8 @@
 {
-  'label': '**24.1 System Construction Concepts** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**24.1 System Construction Concepts** '
+  "label": "24.1 System Construction Concepts",
+  "position": 24.1,
+  "link": {
+    "type": "generated-index",
+    "description": "24.1 System Construction Concepts"
   }
 }

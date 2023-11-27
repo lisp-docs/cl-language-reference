@@ -1,7 +1,8 @@
 {
-  'label': '**12.1 Number Concepts** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**12.1 Number Concepts** '
+  "label": "12.1 Number Concepts",
+  "position": 12.1,
+  "link": {
+    "type": "generated-index",
+    "description": "12.1 Number Concepts"
   }
 }

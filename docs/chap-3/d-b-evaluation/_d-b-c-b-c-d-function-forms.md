@@ -24,7 +24,7 @@ A *binding* for a *function name* can be *established* in one of several ways. A
 
 Figure 3–4 lists some *defined names* that are applicable to *functions*. 
 
-|\<p\>**apply fdefinition mapcan** \</p\>\<p\>**call-arguments-limit flet mapcar** \</p\>\<p\>**complement fmakunbound mapcon** \</p\>\<p\>**constantly funcall mapl** \</p\>\<p\>**defgeneric function maplist** \</p\>\<p\>**defmethod functionp multiple-value-call defun labels reduce** \</p\>\<p\>**fboundp map symbol-function**\</p\>|
+|&#60;p&#62;**apply fdefinition mapcan** &#60;/p&#62;&#60;p&#62;**call-arguments-limit flet mapcar** &#60;/p&#62;&#60;p&#62;**complement fmakunbound mapcon** &#60;/p&#62;&#60;p&#62;**constantly funcall mapl** &#60;/p&#62;&#60;p&#62;**defgeneric function maplist** &#60;/p&#62;&#60;p&#62;**defmethod functionp multiple-value-call defun labels reduce** &#60;/p&#62;&#60;p&#62;**fboundp map symbol-function**&#60;/p&#62;|
 | :- |
 
 

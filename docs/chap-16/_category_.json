@@ -1,7 +1,8 @@
 {
-  'label': '16. Strings',
-  'link': {
-    'type': 'generated-index',
-    'description': '16. Strings'
+  "label": "16. Strings",
+  "position": 16,
+  "link": {
+    "type": "generated-index",
+    "description": "16. Strings"
   }
 }

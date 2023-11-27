@@ -4,7 +4,7 @@ The valid patterns for *tokens* are summarized in Figure 2–17.
 
 
 
-|\<p\>*nnnnn* a *number* \</p\>\<p\>*xxxxx* a *symbol* in the *current package* \</p\>\<p\>:*xxxxx* a *symbol* in the the KEYWORD *package* \</p\>\<p\>*ppppp*:*xxxxx* an *external symbol* in the *ppppp package* \</p\>\<p\>*ppppp*::*xxxxx* a (possibly internal) *symbol* in the *ppppp package* :*nnnnn* undefined \</p\>\<p\>*ppppp*:*nnnnn* undefined \</p\>\<p\>*ppppp*::*nnnnn* undefined \</p\>\<p\>::*aaaaa* undefined \</p\>\<p\>*aaaaa*: undefined \</p\>\<p\>*aaaaa*:*aaaaa*:*aaaaa* undefined\</p\>|
+|&#60;p&#62;*nnnnn* a *number* &#60;/p&#62;&#60;p&#62;*xxxxx* a *symbol* in the *current package* &#60;/p&#62;&#60;p&#62;:*xxxxx* a *symbol* in the the KEYWORD *package* &#60;/p&#62;&#60;p&#62;*ppppp*:*xxxxx* an *external symbol* in the *ppppp package* &#60;/p&#62;&#60;p&#62;*ppppp*::*xxxxx* a (possibly internal) *symbol* in the *ppppp package* :*nnnnn* undefined &#60;/p&#62;&#60;p&#62;*ppppp*:*nnnnn* undefined &#60;/p&#62;&#60;p&#62;*ppppp*::*nnnnn* undefined &#60;/p&#62;&#60;p&#62;::*aaaaa* undefined &#60;/p&#62;&#60;p&#62;*aaaaa*: undefined &#60;/p&#62;&#60;p&#62;*aaaaa*:*aaaaa*:*aaaaa* undefined&#60;/p&#62;|
 | :- |
 
 

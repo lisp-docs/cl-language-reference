@@ -2,15 +2,15 @@
 
 In some cases, an auxiliary definition in the BNF might appear to be unused within the BNF, but might still be useful elsewhere. For example, consider the following definitions: 
 
-**case** *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] *→ \{result\}*\* 
+**case** *keyform &#123;↓normal-clause&#125;*\* [*↓otherwise-clause*] *→ &#123;result&#125;*\* 
 
-**ccase** *keyplace \{↓normal-clause\}*\* *→ \{result\}*\* 
+**ccase** *keyplace &#123;↓normal-clause&#125;*\* *→ &#123;result&#125;*\* 
 
-**ecase** *keyform \{↓normal-clause\}*\* *→ \{result\}*\* 
+**ecase** *keyform &#123;↓normal-clause&#125;*\* *→ &#123;result&#125;*\* 
 
-*normal-clause::*=(*keys \{form\}*\*) 
+*normal-clause::*=(*keys &#123;form&#125;*\*) 
 
-*otherwise-clause::*=(*\{otherwise | t\} \{form\}*\*) 
+*otherwise-clause::*=(*&#123;otherwise | t&#125; &#123;form&#125;*\*) 
 
 *clause::*=*normal-clause | otherwise-clause* 
 

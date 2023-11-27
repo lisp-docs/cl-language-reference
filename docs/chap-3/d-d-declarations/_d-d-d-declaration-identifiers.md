@@ -2,7 +2,7 @@
 
 Figure 3–9 shows a list of all *declaration identifiers* defined by this standard. 
 
-|\<p\>**declaration ignore special** \</p\>\<p\>**dynamic-extent inline type** \</p\>\<p\>**ftype notinline** \</p\>\<p\>**ignorable optimize**\</p\>|
+|&#60;p&#62;**declaration ignore special** &#60;/p&#62;&#60;p&#62;**dynamic-extent inline type** &#60;/p&#62;&#60;p&#62;**ftype notinline** &#60;/p&#62;&#60;p&#62;**ignorable optimize**&#60;/p&#62;|
 | :- |
 
 

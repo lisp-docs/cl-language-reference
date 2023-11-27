@@ -1,7 +1,8 @@
 {
-  'label': '**17.1 Sequence Concepts** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**17.1 Sequence Concepts** '
+  "label": "17.1 Sequence Concepts",
+  "position": 17.1,
+  "link": {
+    "type": "generated-index",
+    "description": "17.1 Sequence Concepts"
   }
 }

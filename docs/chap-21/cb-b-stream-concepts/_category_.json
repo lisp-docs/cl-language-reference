@@ -1,7 +1,8 @@
 {
-  'label': '**21.1 Stream Concepts** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**21.1 Stream Concepts** '
+  "label": "21.1 Stream Concepts",
+  "position": 21.1,
+  "link": {
+    "type": "generated-index",
+    "description": "21.1 Stream Concepts"
   }
 }

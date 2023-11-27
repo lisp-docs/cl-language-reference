@@ -8,7 +8,7 @@ Within Common Lisp, **nil** can be notated interchangeably as either NIL or (). 
 
 |**For Evaluation? Notation Typically Implied Role**|
 | :- |
-|\<p\>Yes nil use as a *boolean*. \</p\>\<p\>Yes ’nil use as a *symbol*. \</p\>\<p\>Yes ’() use as an *empty list* \</p\>\<p\>No nil use as a *symbol* or *boolean*. No () use as an *empty list*.\</p\>|
+|&#60;p&#62;Yes nil use as a *boolean*. &#60;/p&#62;&#60;p&#62;Yes ’nil use as a *symbol*. &#60;/p&#62;&#60;p&#62;Yes ’() use as an *empty list* &#60;/p&#62;&#60;p&#62;No nil use as a *symbol* or *boolean*. No () use as an *empty list*.&#60;/p&#62;|
 
 
 **Figure 1–1. Notations for NIL** 

@@ -1,6 +1,6 @@
  
 
-#+ provides a read-time conditionalization facility; the syntax is #+*test expression*. If the *feature expression test* succeeds, then this textual notation represents an *object* whose printed representation is *expression*. If the *feature expression test* fails, then this textual notation is treated as *whitespace*\<sub\>2\</sub\>; that is, it is as if the “#+ *test expression*” did not appear and only a *space* appeared in its place. 
+#+ provides a read-time conditionalization facility; the syntax is #+*test expression*. If the *feature expression test* succeeds, then this textual notation represents an *object* whose printed representation is *expression*. If the *feature expression test* fails, then this textual notation is treated as *whitespace*&#60;sub&#62;2&#60;/sub&#62;; that is, it is as if the “#+ *test expression*” did not appear and only a *space* appeared in its place. 
 
 For a detailed description of success and failure in *feature expressions*, see Section 24.1.2.1 (Feature Expressions). 
 

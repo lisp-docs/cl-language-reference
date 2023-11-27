@@ -6,7 +6,7 @@ For information about opening and closing *files*, and manipulating their conten
 
 Figure 20–1 lists some *operators* that are applicable to *files* and directories. 
 
-|\<p\>**compile-file file-length open** \</p\>\<p\>**delete-file file-position probe-file** \</p\>\<p\>**directory file-write-date rename-file** \</p\>\<p\>**file-author load with-open-file**\</p\>|
+|&#60;p&#62;**compile-file file-length open** &#60;/p&#62;&#60;p&#62;**delete-file file-position probe-file** &#60;/p&#62;&#60;p&#62;**directory file-write-date rename-file** &#60;/p&#62;&#60;p&#62;**file-author load with-open-file**&#60;/p&#62;|
 | :- |
 
 

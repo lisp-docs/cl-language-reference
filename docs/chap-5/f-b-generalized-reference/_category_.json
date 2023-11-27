@@ -1,7 +1,8 @@
 {
-  'label': '**5.1 Generalized Reference** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**5.1 Generalized Reference** '
+  "label": "5.1 Generalized Reference",
+  "position": 5.1,
+  "link": {
+    "type": "generated-index",
+    "description": "5.1 Generalized Reference"
   }
 }

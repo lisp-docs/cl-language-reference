@@ -12,7 +12,7 @@ Wherever possible, list notation is preferred over dot notation. Therefore the f
 
 5\. A *right-parenthesis* is printed. 
 
-Actually, the above algorithm is only used when **\*print-pretty\*** is *false*. When **\*print-pretty\*** is *true* (or when **pprint** is used), additional *whitespace*\<sub\>1\</sub\> may replace the use of a single *space*, and a more elaborate algorithm with similar goals but more presentational flexibility is used; see Section 22.1.2 (Printer Dispatching). 
+Actually, the above algorithm is only used when **\*print-pretty\*** is *false*. When **\*print-pretty\*** is *true* (or when **pprint** is used), additional *whitespace*&#60;sub&#62;1&#60;/sub&#62; may replace the use of a single *space*, and a more elaborate algorithm with similar goals but more presentational flexibility is used; see Section 22.1.2 (Printer Dispatching). 
 
 Although the two expressions below are equivalent, and the reader accepts either one and produces the same *cons*, the printer always prints such a *cons* in the second form. 
 

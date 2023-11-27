@@ -16,7 +16,7 @@ Processing of *top level forms* in the file compiler is defined as follows:
 
 |**CT LT E Mode Action New Mode**|
 | :- |
-|\<p\>Yes Yes — — Process compile-time-too No Yes Yes CTT Process compile-time-too No Yes Yes NCT Process not-compile-time No Yes No — Process not-compile-time Yes No — — Evaluate — \</p\>\<p\>No No Yes CTT Evaluate — No No Yes NCT Discard — No No No — Discard —\</p\>|
+|&#60;p&#62;Yes Yes — — Process compile-time-too No Yes Yes CTT Process compile-time-too No Yes Yes NCT Process not-compile-time No Yes No — Process not-compile-time Yes No — — Evaluate — &#60;/p&#62;&#60;p&#62;No No Yes CTT Evaluate — No No Yes NCT Discard — No No No — Discard —&#60;/p&#62;|
 
 
 **Figure 3–7. EVAL-WHEN processing** 

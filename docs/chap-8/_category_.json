@@ -1,7 +1,8 @@
 {
-  'label': '8. Structures',
-  'link': {
-    'type': 'generated-index',
-    'description': '8. Structures'
+  "label": "8. Structures",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "8. Structures"
   }
 }

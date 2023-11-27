@@ -1,7 +1,8 @@
 {
-  'label': '14. Conses',
-  'link': {
-    'type': 'generated-index',
-    'description': '14. Conses'
+  "label": "14. Conses",
+  "position": 14,
+  "link": {
+    "type": "generated-index",
+    "description": "14. Conses"
   }
 }

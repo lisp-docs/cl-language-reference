@@ -28,5 +28,5 @@ When case conversions appear nested, the outer conversion dominates, as illustra
 
 *→* "How is bob smith?" 
 
-\<i\>\<sup\>not\</sup\> →\</i\> "How is Bob Smith?" 
+&#60;i&#62;&#60;sup&#62;not&#60;/sup&#62; →&#60;/i&#62; "How is Bob Smith?" 
 

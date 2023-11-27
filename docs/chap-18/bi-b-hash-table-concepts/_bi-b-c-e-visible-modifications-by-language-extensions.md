@@ -66,19 +66,19 @@ The *values* of *rehash-size* and *rehash-threshold* do not constrain the *imple
 
 **Examples:** 
 
-(setq table (make-hash-table)) *→* #\<HASH-TABLE EQL 0/120 46142754\> 
+(setq table (make-hash-table)) *→* #&#60;HASH-TABLE EQL 0/120 46142754&#62; 
 
 (setf (gethash "one" table) 1) *→* 1 
 
 (gethash "one" table) *→* NIL, *false* 
 
-(setq table (make-hash-table :test ’equal)) *→* #\<HASH-TABLE EQUAL 0/139 46145547\> (setf (gethash "one" table) 1) *→* 1 
+(setq table (make-hash-table :test ’equal)) *→* #&#60;HASH-TABLE EQUAL 0/139 46145547&#62; (setf (gethash "one" table) 1) *→* 1 
 
 (gethash "one" table) *→* 1, T 
 
 (make-hash-table :rehash-size 1.5 :rehash-threshold 0.7) 
 
-*→* #\<HASH-TABLE EQL 0/120 46156620\> 
+*→* #&#60;HASH-TABLE EQL 0/120 46156620&#62; 
 
 **See Also:** 
 
@@ -108,7 +108,7 @@ Hash Tables **18–5**
 
 **Examples:** 
 
-(setq table (make-hash-table)) *→* #\<HASH-TABLE EQL 0/120 32511220\> 
+(setq table (make-hash-table)) *→* #&#60;HASH-TABLE EQL 0/120 32511220&#62; 
 
 (hash-table-p table) *→ true* 
 
@@ -138,7 +138,7 @@ Returns the number of entries in the *hash-table*. If *hash-table* has just been
 
 **Examples:** 
 
-(setq table (make-hash-table)) *→* #\<HASH-TABLE EQL 0/120 32115135\> 
+(setq table (make-hash-table)) *→* #&#60;HASH-TABLE EQL 0/120 32115135&#62; 
 
 (hash-table-count table) *→* 0 
 
@@ -204,7 +204,7 @@ Returns the current rehash size of *hash-table*, suitable for use in a call to *
 
 (setq table (make-hash-table :size 100 :rehash-size 1.4)) 
 
-*→* #\<HASH-TABLE EQL 0/100 2556371\> 
+*→* #&#60;HASH-TABLE EQL 0/100 2556371&#62; 
 
 (hash-table-rehash-size table) *→* 1.4 
 
@@ -248,7 +248,7 @@ Returns the current rehash threshold of *hash-table*, which is suitable for use 
 
 (setq table (make-hash-table :size 100 :rehash-threshold 0.5)) 
 
-*→* #\<HASH-TABLE EQL 0/100 2562446\> 
+*→* #&#60;HASH-TABLE EQL 0/100 2562446&#62; 
 
 (hash-table-rehash-threshold table) *→* 0.5 
 
@@ -350,7 +350,7 @@ Hash Tables **18–9**
 
 **Examples:** 
 
-(setq table (make-hash-table)) *→* #\<HASH-TABLE EQL 0/120 32206334\> 
+(setq table (make-hash-table)) *→* #&#60;HASH-TABLE EQL 0/120 32206334&#62; 
 
 (gethash 1 table) *→* NIL, *false* 
 
@@ -422,7 +422,7 @@ Removes the entry for *key* in *hash-table*, if any. Returns *true* if there was
 
 **Examples:** 
 
-(setq table (make-hash-table)) *→* #\<HASH-TABLE EQL 0/120 32115666\> 
+(setq table (make-hash-table)) *→* #&#60;HASH-TABLE EQL 0/120 32115666&#62; 
 
 (setf (gethash 100 table) "C") *→* "C" 
 
@@ -466,7 +466,7 @@ The consequences are unspecified if any attempt is made to add or remove an entr
 
 **Examples:** 
 
-(setq table (make-hash-table)) *→* #\<HASH-TABLE EQL 0/120 32304110\> 
+(setq table (make-hash-table)) *→* #&#60;HASH-TABLE EQL 0/120 32304110&#62; 
 
 (dotimes (i 10) (setf (gethash i table) i)) *→* NIL 
 
@@ -526,7 +526,7 @@ None, other than any which might be done by the *function*.
 
 **Syntax:** 
 
-**with-hash-table-iterator** (*name hash-table*) *\{declaration\}*\* *\{form\}*\* *→ \{result\}*\* 
+**with-hash-table-iterator** (*name hash-table*) *&#123;declaration&#125;*\* *&#123;form&#125;*\* *→ &#123;result&#125;*\* 
 
 **Arguments and Values:** 
 
@@ -648,7 +648,7 @@ Removes all entries from *hash-table*, and then returns that empty *hash table*.
 
 **Examples:** 
 
-(setq table (make-hash-table)) *→* #\<HASH-TABLE EQL 0/120 32004073\> 
+(setq table (make-hash-table)) *→* #&#60;HASH-TABLE EQL 0/120 32004073&#62; 
 
 (dotimes (i 100) (setf (gethash i table) (format nil "~R" i))) *→* NIL 
 
@@ -656,7 +656,7 @@ Removes all entries from *hash-table*, and then returns that empty *hash table*.
 
 (gethash 57 table) *→* "fifty-seven", *true* 
 
-(clrhash table) *→* #\<HASH-TABLE EQL 0/120 32004073\> 
+(clrhash table) *→* #&#60;HASH-TABLE EQL 0/120 32004073&#62; 
 
 (hash-table-count table) *→* 0 
 

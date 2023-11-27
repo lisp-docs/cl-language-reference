@@ -4,7 +4,7 @@
 
 *Strings* are *specialized arrays* and might logically have been included in this chapter. However, for purposes of readability most information about *strings* does not appear in this chapter; see instead Chapter 16 (Strings). 
 
-|\<p\>**char string-equal string-upcase make-string string-greaterp string**/= \</p\>\<p\>**nstring-capitalize string-left-trim string**\< \</p\>\<p\>**nstring-downcase string-lessp string**\<= \</p\>\<p\>**nstring-upcase string-not-equal string**= \</p\>\<p\>**schar string-not-greaterp string**\> \</p\>\<p\>**string string-not-lessp string**\>= \</p\>\<p\>**string-capitalize string-right-trim** \</p\>\<p\>**string-downcase string-trim**\</p\>|
+|&#60;p&#62;**char string-equal string-upcase make-string string-greaterp string**/= &#60;/p&#62;&#60;p&#62;**nstring-capitalize string-left-trim string**&#60; &#60;/p&#62;&#60;p&#62;**nstring-downcase string-lessp string**&#60;= &#60;/p&#62;&#60;p&#62;**nstring-upcase string-not-equal string**= &#60;/p&#62;&#60;p&#62;**schar string-not-greaterp string**&#62; &#60;/p&#62;&#60;p&#62;**string string-not-lessp string**&#62;= &#60;/p&#62;&#60;p&#62;**string-capitalize string-right-trim** &#60;/p&#62;&#60;p&#62;**string-downcase string-trim**&#60;/p&#62;|
 | :- |
 
 
@@ -18,7 +18,7 @@ Arrays **15–3**
 
  
 
-|\<p\>**bit bit-ior bit-orc2** \</p\>\<p\>**bit-and bit-nand bit-xor** \</p\>\<p\>**bit-andc1 bit-nor sbit** \</p\>\<p\>**bit-andc2 bit-not** \</p\>\<p\>**bit-eqv bit-orc1**\</p\>|
+|&#60;p&#62;**bit bit-ior bit-orc2** &#60;/p&#62;&#60;p&#62;**bit-and bit-nand bit-xor** &#60;/p&#62;&#60;p&#62;**bit-andc1 bit-nor sbit** &#60;/p&#62;&#60;p&#62;**bit-andc2 bit-not** &#60;/p&#62;&#60;p&#62;**bit-eqv bit-orc1**&#60;/p&#62;|
 | :- |
 
 
@@ -38,7 +38,7 @@ Arrays **15–3**
 
 **Description:** 
 
-An \<i\>array\</i\> contains \<i\>objects\</i\> arranged according to a Cartesian coordinate system. An \<i\>array\</i\> provides mappings from a set of \<i\>fixnums \{i\</i\>\<sub\>0\</sub\>\<i\>, i\</i\>\<sub\>1\</sub\>\<i\>, . . . , i\<sub\>r−\</sub\>\</i\>1\</sub\>\<i\>\}\</i\> to corresponding \<i\>elements\</i\> of the \<i\>array\</i\>, where 0 \<i\>≤ i\<sub\>j\</sub\>\</i\> \< \<i\>d\<sub\>j\</sub\>\</i\> , \<i\>r\</i\> is the rank of the array, and \<i\>d\<sub\>j\</sub\>\</i\> is the size of \<i\>dimension j\</i\> of the array. 
+An &#60;i&#62;array&#60;/i&#62; contains &#60;i&#62;objects&#60;/i&#62; arranged according to a Cartesian coordinate system. An &#60;i&#62;array&#60;/i&#62; provides mappings from a set of &#60;i&#62;fixnums &#123;i&#60;/i&#62;&#60;sub&#62;0&#60;/sub&#62;&#60;i&#62;, i&#60;/i&#62;&#60;sub&#62;1&#60;/sub&#62;&#60;i&#62;, . . . , i&#60;sub&#62;r−&#60;/sub&#62;&#60;/i&#62;1&#60;/sub&#62;&#60;i&#62;&#125;&#60;/i&#62; to corresponding &#60;i&#62;elements&#60;/i&#62; of the &#60;i&#62;array&#60;/i&#62;, where 0 &#60;i&#62;≤ i&#60;sub&#62;j&#60;/sub&#62;&#60;/i&#62; &#60; &#60;i&#62;d&#60;sub&#62;j&#60;/sub&#62;&#60;/i&#62; , &#60;i&#62;r&#60;/i&#62; is the rank of the array, and &#60;i&#62;d&#60;sub&#62;j&#60;/sub&#62;&#60;/i&#62; is the size of &#60;i&#62;dimension j&#60;/i&#62; of the array. 
 
 When an *array* is created, the program requesting its creation may declare that all *elements* are of a particular *type*, called the *expressed array element type*. The implementation is permitted to *upgrade* this type in order to produce the *actual array element type*, which is the *element type* for the *array* is actually *specialized*. See the *function* **upgraded-array-element-type**. 
 
@@ -48,9 +48,9 @@ Specializing.
 
 **Compound Type Specifier Syntax:** 
 
-(array [*\{element-type |* **\****\}* [*dimension-spec*]]) 
+(array [*&#123;element-type |* **\****&#125;* [*dimension-spec*]]) 
 
-*dimension-spec::*=*rank |* **\*** *|* (*\{dimension |* **\****\}*\*) 
+*dimension-spec::*=*rank |* **\*** *|* (*&#123;dimension |* **\****&#125;*\*) 
 
 **Compound Type Specifier Arguments:** 
 
@@ -102,9 +102,9 @@ Specializing.
 
 **Compound Type Specifier Syntax:** 
 
-(simple-array [*\{element-type |* **\****\}* [*dimension-spec*]]) 
+(simple-array [*&#123;element-type |* **\****&#125;* [*dimension-spec*]]) 
 
-*dimension-spec::*=*rank |* **\*** *|* (*\{dimension |* **\****\}*\*) 
+*dimension-spec::*=*rank |* **\*** *|* (*&#123;dimension |* **\****&#125;*\*) 
 
 **Compound Type Specifier Arguments:** 
 
@@ -148,7 +148,7 @@ Specializing.
 
 **Compound Type Specifier Syntax:** 
 
-(vector [*\{element-type |* **\****\}* [*\{size |* **\****\}*]]) 
+(vector [*&#123;element-type |* **\****&#125;* [*&#123;size |* **\****&#125;*]]) 
 
 **Compound Type Specifier Arguments:** 
 
@@ -412,7 +412,7 @@ The following is an example of making a *displaced array*.
 
 (setq a (make-array ’(4 3))) 
 
-*→* #\<ARRAY 4x3 simple 32546632\> 
+*→* #&#60;ARRAY 4x3 simple 32546632&#62; 
 
 (dotimes (i 4) 
 
@@ -432,7 +432,7 @@ The following is an example of making a *displaced array*.
 
 :displaced-index-offset 2)) 
 
-*→* #\<ARRAY 8 indirect 32550757\> 
+*→* #&#60;ARRAY 8 indirect 32550757&#62; 
 
 (dotimes (i 8) 
 
@@ -460,21 +460,21 @@ The last example depends on the fact that *arrays* are, in effect, stored in row
 
 (setq a1 (make-array 50)) 
 
-*→* #\<ARRAY 50 simple 32562043\> 
+*→* #&#60;ARRAY 50 simple 32562043&#62; 
 
 (setq b1 (make-array 20 :displaced-to a1 :displaced-index-offset 10)) 
 
-*→* #\<ARRAY 20 indirect 32563346\> 
+*→* #&#60;ARRAY 20 indirect 32563346&#62; 
 
 (length b1) *→* 20 
 
 (setq a2 (make-array 50 :fill-pointer 10)) 
 
-*→* #\<ARRAY 50 fill-pointer 10 46100216\> 
+*→* #&#60;ARRAY 50 fill-pointer 10 46100216&#62; 
 
 (setq b2 (make-array 20 :displaced-to a2 :displaced-index-offset 10)) 
 
-*→* #\<ARRAY 20 indirect 46104010\> 
+*→* #&#60;ARRAY 20 indirect 46104010&#62; 
 
 (length a2) *→* 10 
 
@@ -482,13 +482,13 @@ The last example depends on the fact that *arrays* are, in effect, stored in row
 
 (setq a3 (make-array 50 :fill-pointer 10)) 
 
-*→* #\<ARRAY 50 fill-pointer 10 46105663\> 
+*→* #&#60;ARRAY 50 fill-pointer 10 46105663&#62; 
 
 (setq b3 (make-array 20 :displaced-to a3 :displaced-index-offset 10 
 
 :fill-pointer 5)) 
 
-*→* #\<ARRAY 20 indirect, fill-pointer 5 46107432\> 
+*→* #&#60;ARRAY 20 indirect, fill-pointer 5 46107432&#62; 
 
 (length a3) *→* 10 
 
@@ -808,7 +808,7 @@ If the variable foo names a 3-by-5 array, then the first index could be 0, 1, or
 
 **Description:** 
 
-**array-dimension** returns the *axis-number dimension*\<sub\>1\</sub\> of *array*. (Any *fill pointer* is ignored.) **Examples:** 
+**array-dimension** returns the *axis-number dimension*&#60;sub&#62;1&#60;/sub&#62; of *array*. (Any *fill pointer* is ignored.) **Examples:** 
 
 (array-dimension (make-array 4) 0) *→* 4 
 
@@ -984,23 +984,23 @@ If **array-displacement** is called on an *array* for which a *non-nil object* w
 
 **Examples:** 
 
-(setq a1 (make-array 5)) *→* #\<ARRAY 5 simple 46115576\> 
+(setq a1 (make-array 5)) *→* #&#60;ARRAY 5 simple 46115576&#62; 
 
 (setq a2 (make-array 4 :displaced-to a1 
 
 :displaced-index-offset 1)) 
 
-*→* #\<ARRAY 4 indirect 46117134\> 
+*→* #&#60;ARRAY 4 indirect 46117134&#62; 
 
 (array-displacement a2) 
 
-*→* #\<ARRAY 5 simple 46115576\>, 1 
+*→* #&#60;ARRAY 5 simple 46115576&#62;, 1 
 
 (setq a3 (make-array 2 :displaced-to a2 
 
 :displaced-index-offset 2)) 
 
-*→* #\<ARRAY 2 indirect 46122527\> 
+*→* #&#60;ARRAY 2 indirect 46122527&#62; 
 
 
 
@@ -1010,7 +1010,7 @@ If **array-displacement** is called on an *array* for which a *non-nil object* w
 
 (array-displacement a3) 
 
-*→* #\<ARRAY 4 indirect 46117134\>, 2 
+*→* #&#60;ARRAY 4 indirect 46117134&#62;, 2 
 
 **Exceptional Situations:** 
 
@@ -1062,7 +1062,7 @@ Returns *true* if the *subscripts* are all in bounds for *array*; otherwise retu
 
 *≡* (and (not (some #’minusp (list subscripts))) 
 
-(every #’\< (list subscripts) (array-dimensions array))) 
+(every #’&#60; (list subscripts) (array-dimensions array))) 
 
 Arrays **15–23**
 
@@ -1576,13 +1576,13 @@ Creates a *fresh simple general vector* whose size corresponds to the number of 
 
 **vector** is analogous to **list**. 
 
-(vector a\<sub\>1\</sub\> a\<sub\>2\</sub\> ... a\<i\>\<sub\>n\</sub\>\</i\>) 
+(vector a&#60;sub&#62;1&#60;/sub&#62; a&#60;sub&#62;2&#60;/sub&#62; ... a&#60;i&#62;&#60;sub&#62;n&#60;/sub&#62;&#60;/i&#62;) 
 
 *≡* (make-array (list *n*) :element-type t 
 
 :initial-contents 
 
-(list a\<sub\>1\</sub\> a\<sub\>2\</sub\> ... a\<i\>\<sub\>n\</sub\>\</i\>)) 
+(list a&#60;sub&#62;1&#60;/sub&#62; a&#60;sub&#62;2&#60;/sub&#62; ... a&#60;i&#62;&#60;sub&#62;n&#60;/sub&#62;&#60;/i&#62;)) 
 
 **vector-pop** *Function* 
 
@@ -1664,11 +1664,11 @@ If the *fill pointer* is zero, **vector-pop** signals an error of *type* **error
 
 **Description:** 
 
-**vector-push** and **vector-push-extend** store *new-element* in *vector*. **vector-push** attempts to store *new-element* in the element of *vector* designated by the *fill pointer* , and to increase the *fill pointer* by one. If the (\>= (fill-pointer *vector*) (array-dimension *vector* 0)), neither *vector* nor its *fill pointer* are affected. Otherwise, the store and increment take place and **vector-push** returns the former value of the *fill pointer* which is one less than the one it leaves in *vector*. 
+**vector-push** and **vector-push-extend** store *new-element* in *vector*. **vector-push** attempts to store *new-element* in the element of *vector* designated by the *fill pointer* , and to increase the *fill pointer* by one. If the (&#62;= (fill-pointer *vector*) (array-dimension *vector* 0)), neither *vector* nor its *fill pointer* are affected. Otherwise, the store and increment take place and **vector-push** returns the former value of the *fill pointer* which is one less than the one it leaves in *vector*. 
 
 **vector-push-extend** is just like **vector-push** except that if the *fill pointer* gets too large, *vector* is extended using **adjust-array** so that it can contain more elements. *Extension* is the minimum number of elements to be added to *vector* if it must be extended. 
 
-**vector-push** and **vector-push-extend** return the index of *new-element* in *vector*. If (\>= (fill-pointer *vector*) (array-dimension *vector* 0)), **vector-push** returns **nil**. 
+**vector-push** and **vector-push-extend** return the index of *new-element* in *vector*. If (&#62;= (fill-pointer *vector*) (array-dimension *vector* 0)), **vector-push** returns **nil**. 
 
 **Examples:** 
 
@@ -1828,7 +1828,7 @@ These *functions* ignore the *fill pointer* when *accessing elements*.
 
 **bit** and **sbit**, unlike **char** and **schar**, allow the first argument to be an *array* of any *rank*. 
 
-\<b\>\<sup\>bit-and, bit-andc1, bit-andc2, bit-eqv, bit-ior, bit\</sup\> nand, bit-nor, bit-not, bit-orc1, bit-orc2, bit-xor\</b\> \<i\>Function\</i\> 
+&#60;b&#62;&#60;sup&#62;bit-and, bit-andc1, bit-andc2, bit-eqv, bit-ior, bit&#60;/sup&#62; nand, bit-nor, bit-not, bit-orc1, bit-orc2, bit-xor&#60;/b&#62; &#60;i&#62;Function&#60;/i&#62; 
 
 **Syntax:** 
 
@@ -1882,7 +1882,7 @@ Figure 15–4 indicates the logical operation performed by each of the *function
 
 |**Function Operation**|
 | :- |
-|\<p\>**bit-and** and \</p\>\<p\>**bit-eqv** equivalence (exclusive nor) \</p\>\<p\>**bit-not** complement \</p\>\<p\>**bit-ior** inclusive or \</p\>\<p\>**bit-xor** exclusive or \</p\>\<p\>**bit-nand** complement of *bit-array1* and *bit-array2* \</p\>\<p\>**bit-nor** complement of *bit-array1* or *bit-array2* \</p\>\<p\>**bit-andc1** and complement of *bit-array1* with *bit-array2* \</p\>\<p\>**bit-andc2** and *bit-array1* with complement of *bit-array2* \</p\>\<p\>**bit-orc1** or complement of *bit-array1* with *bit-array2* \</p\>\<p\>**bit-orc2** or *bit-array1* with complement of *bit-array2*\</p\>|
+|&#60;p&#62;**bit-and** and &#60;/p&#62;&#60;p&#62;**bit-eqv** equivalence (exclusive nor) &#60;/p&#62;&#60;p&#62;**bit-not** complement &#60;/p&#62;&#60;p&#62;**bit-ior** inclusive or &#60;/p&#62;&#60;p&#62;**bit-xor** exclusive or &#60;/p&#62;&#60;p&#62;**bit-nand** complement of *bit-array1* and *bit-array2* &#60;/p&#62;&#60;p&#62;**bit-nor** complement of *bit-array1* or *bit-array2* &#60;/p&#62;&#60;p&#62;**bit-andc1** and complement of *bit-array1* with *bit-array2* &#60;/p&#62;&#60;p&#62;**bit-andc2** and *bit-array1* with complement of *bit-array2* &#60;/p&#62;&#60;p&#62;**bit-orc1** or complement of *bit-array1* with *bit-array2* &#60;/p&#62;&#60;p&#62;**bit-orc2** or *bit-array1* with complement of *bit-array2*&#60;/p&#62;|
 
 
 **Figure 15–4. Bit-wise Logical Operations on Bit Arrays** 

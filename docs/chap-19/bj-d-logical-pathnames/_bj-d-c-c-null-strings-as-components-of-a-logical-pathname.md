@@ -94,25 +94,25 @@ If the *pathspec designator* is a *file stream* created by opening a *logical pa
 
 *→* #P"CHOCOLATE:TEST" ; with case canonicalization (e.g., VMS) 
 
-\<i\>\<sup\>or\</sup\>→\</i\> #P"VANILLA:test" ; without case canonicalization (e.g., Unix) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; #P"VANILLA:test" ; without case canonicalization (e.g., Unix) 
 
-\<i\>\<sup\>or\</sup\>→\</i\> #P"test" 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; #P"test" 
 
-\<i\>\<sup\>or\</sup\>→\</i\> #S(PATHNAME :HOST "STRAWBERRY" :NAME "TEST") 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; #S(PATHNAME :HOST "STRAWBERRY" :NAME "TEST") 
 
-\<i\>\<sup\>or\</sup\>→\</i\> #S(PATHNAME :HOST "BELGIAN-CHOCOLATE" :NAME "test") 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; #S(PATHNAME :HOST "BELGIAN-CHOCOLATE" :NAME "test") 
 
 (setq p2 (pathname "test")) 
 
 *→* #P"CHOCOLATE:TEST" 
 
-\<i\>\<sup\>or\</sup\>→\</i\> #P"VANILLA:test" 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; #P"VANILLA:test" 
 
-\<i\>\<sup\>or\</sup\>→\</i\> #P"test" 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; #P"test" 
 
-\<i\>\<sup\>or\</sup\>→\</i\> #S(PATHNAME :HOST "STRAWBERRY" :NAME "TEST") 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; #S(PATHNAME :HOST "STRAWBERRY" :NAME "TEST") 
 
-\<i\>\<sup\>or\</sup\>→\</i\> #S(PATHNAME :HOST "BELGIAN-CHOCOLATE" :NAME "test") 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; #S(PATHNAME :HOST "BELGIAN-CHOCOLATE" :NAME "test") 
 
 (pathnamep p1) *→ true* 
 
@@ -122,13 +122,13 @@ If the *pathspec designator* is a *file stream* created by opening a *logical pa
 
 *→ true* 
 
-\<i\>\<sup\>or\</sup\>→ false\</i\> 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→ false&#60;/i&#62; 
 
 (with-open-file (stream "test" :direction :output) 
 
 (pathname stream)) 
 
-*→* #P"ORANGE-CHOCOLATE:\>Gus\>test.lisp.newest" 
+*→* #P"ORANGE-CHOCOLATE:&#62;Gus&#62;test.lisp.newest" 
 
 **See Also:** 
 
@@ -242,13 +242,13 @@ If the *directory* is a *string*, it should be the name of a top level directory
 
 :name "CHESS" :type "DB")))) 
 
-&#9655; #P"MY-LISPM:\>public\>games\>chess.db" 
+&#9655; #P"MY-LISPM:&#62;public&#62;games&#62;chess.db" 
 
 &#9655; #P"MY-VAX:SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
 
 &#9655; #P"MY-UNIX:/public/games/chess.db" 
 
-&#9655; #P"MY-LISPM:\>public\>games\>chess.db" 
+&#9655; #P"MY-LISPM:&#62;public&#62;games&#62;chess.db" 
 
 &#9655; #P"MY-VAX:SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
 
@@ -320,7 +320,7 @@ Filenames **19–19**
 
  
 
-\<b\>\<sup\>pathname-host, pathname-device, pathname\</sup\> directory, pathname-name, pathname-type, pathname-version\</b\> \<i\>Function\</i\> 
+&#60;b&#62;&#60;sup&#62;pathname-host, pathname-device, pathname&#60;/sup&#62; directory, pathname-name, pathname-type, pathname-version&#60;/b&#62; &#60;i&#62;Function&#60;/i&#62; 
 
 **Syntax:** 
 
@@ -474,19 +474,19 @@ Filenames **19–21**
 
 ;; Symbolics LMFS 
 
-(pathname-directory (parse-namestring "\>foo\>\*\*\>bar\>baz.lisp")) 
+(pathname-directory (parse-namestring "&#62;foo&#62;\*\*&#62;bar&#62;baz.lisp")) 
 
 *→* (:ABSOLUTE "foo" :WILD-INFERIORS "bar") 
 
-(pathname-directory (parse-namestring "\>foo\>\*\>bar\>baz.lisp")) 
+(pathname-directory (parse-namestring "&#62;foo&#62;\*&#62;bar&#62;baz.lisp")) 
 
 *→* (:ABSOLUTE "foo" :WILD "bar") 
 
-(pathname-directory (parse-namestring "\>foo\>\*\>bar\>baz.lisp") :case :common) 
+(pathname-directory (parse-namestring "&#62;foo&#62;\*&#62;bar&#62;baz.lisp") :case :common) 
 
 *→* (:ABSOLUTE "FOO" :WILD "BAR") 
 
-(pathname-device (parse-namestring "\>foo\>baz.lisp")) *→* :UNSPECIFIC 
+(pathname-device (parse-namestring "&#62;foo&#62;baz.lisp")) *→* :UNSPECIFIC 
 
 **Affected By:** 
 
@@ -604,7 +604,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 
 (setf (logical-pathname-translations "foo") 
 
-’(("\*\*;\*.\*.\*" "MY-LISPM:\>library\>foo\>\*\*\>"))) 
+’(("\*\*;\*.\*.\*" "MY-LISPM:&#62;library&#62;foo&#62;\*\*&#62;"))) 
 
 ;;;Sample use of that logical pathname. The return value 
 
@@ -612,7 +612,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 
 (translate-logical-pathname "foo:bar;baz;mum.quux.3") 
 
-*→* #P"MY-LISPM:\>library\>foo\>bar\>baz\>mum.quux.3" 
+*→* #P"MY-LISPM:&#62;library&#62;foo&#62;bar&#62;baz&#62;mum.quux.3" 
 
 ;;;A more complex example, dividing the files among two file servers 
 
@@ -866,17 +866,17 @@ a *pathname*, used as the default whenever a *function* needs a default *pathnam
 
 ;; implementations and host file system types, it is not possible to provide a ;; general-purpose, conforming example. 
 
-\*default-pathname-defaults\* *→* #P"PS:\<FRED\>" 
+\*default-pathname-defaults\* *→* #P"PS:&#60;FRED&#62;" 
 
 (merge-pathnames (make-pathname :name "CALENDAR")) 
 
-*→* #P"PS:\<FRED\>CALENDAR" 
+*→* #P"PS:&#60;FRED&#62;CALENDAR" 
 
-(let ((\*default-pathname-defaults\* (pathname "\<MARY\>"))) 
+(let ((\*default-pathname-defaults\* (pathname "&#60;MARY&#62;"))) 
 
 (merge-pathnames (make-pathname :name "CALENDAR"))) 
 
-*→* #P"\<MARY\>CALENDAR" 
+*→* #P"&#60;MARY&#62;CALENDAR" 
 
 **Affected By:** 
 
@@ -1102,7 +1102,7 @@ If *thing* contains an explicit host name and no explicit device name, then it i
 
 :TYPE NIL :VERSION NIL), 4 
 
-(setq s (open *xxx*)) *→* #\<Input File Stream...\> 
+(setq s (open *xxx*)) *→* #&#60;Input File Stream...&#62; 
 
 (parse-namestring s) 
 
@@ -1120,7 +1120,7 @@ If *thing* contains an explicit host name and no explicit device name, then it i
 
 **Exceptional Situations:** 
 
-If *junk-allowed* is *false*, an error of *type* **parse-error** is signaled if *thing* does not consist entirely of the representation of a *pathname*, possibly surrounded on either side by *whitespace*\<sub\>1\</sub\> characters if that is appropriate to the cultural conventions of the implementation. 
+If *junk-allowed* is *false*, an error of *type* **parse-error** is signaled if *thing* does not consist entirely of the representation of a *pathname*, possibly surrounded on either side by *whitespace*&#60;sub&#62;1&#60;/sub&#62; characters if that is appropriate to the cultural conventions of the implementation. 
 
 If *host* is supplied and not **nil**, and *thing* contains a manifest host name, an error of *type* **error** is signaled if the hosts do not match. 
 
@@ -1176,7 +1176,7 @@ If *field-key* is not supplied or **nil**, **wild-pathname-p** returns true if *
 
 (wild-pathname-p (make-pathname :name :wild) :type) *→ false* 
 
-(wild-pathname-p (pathname "s:\>foo\>\*\*\>")) *→ true* ;Lispm 
+(wild-pathname-p (pathname "s:&#62;foo&#62;\*\*&#62;")) *→ true* ;Lispm 
 
 (wild-pathname-p (pathname :name "F\*O")) *→ true* ;Most places 
 
@@ -1334,7 +1334,7 @@ There are no specified keyword arguments for **translate-pathname**, but impleme
 
 *→* "foobar" 
 
-\<i\>\<sup\>or\</sup\>→\</i\> "bar" 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; "bar" 
 
 (pathname-name (translate-pathname "foobar" "\*" "foo\*")) *→* "foofoobar" 
 
@@ -1488,9 +1488,9 @@ both of them are removed. This removal of redundant :back *keywords* is repeated
 
 (merge-pathnames "CMUC::FORMAT" 
 
-"CMUC::PS:\<LISPIO\>.FASL") 
+"CMUC::PS:&#60;LISPIO&#62;.FASL") 
 
-*→* #P"CMUC::PS:\<LISPIO\>FORMAT.FASL.0" 
+*→* #P"CMUC::PS:&#60;LISPIO&#62;FORMAT.FASL.0" 
 
 **See Also:** 
 

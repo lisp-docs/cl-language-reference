@@ -392,7 +392,7 @@ If *x* is a *cons*, **cdr** returns the *cdr* of that *cons*. If *x* is **nil**,
 
 |**This** *place . . .* **Is equivalent to this** *place . . .*|
 | :- |
-|\<p\>(caar *x*) (car (car *x*)) \</p\>\<p\>(cadr *x*) (car (cdr *x*)) \</p\>\<p\>(cdar *x*) (cdr (car *x*)) \</p\>\<p\>(cddr *x*) (cdr (cdr *x*)) \</p\>\<p\>(caaar *x*) (car (car (car *x*))) \</p\>\<p\>(caadr *x*) (car (car (cdr *x*))) \</p\>\<p\>(cadar *x*) (car (cdr (car *x*))) \</p\>\<p\>(caddr *x*) (car (cdr (cdr *x*))) \</p\>\<p\>(cdaar *x*) (cdr (car (car *x*))) \</p\>\<p\>(cdadr *x*) (cdr (car (cdr *x*))) \</p\>\<p\>(cddar *x*) (cdr (cdr (car *x*))) \</p\>\<p\>(cdddr *x*) (cdr (cdr (cdr *x*))) \</p\>\<p\>(caaaar *x*) (car (car (car (car *x*)))) \</p\>\<p\>(caaadr *x*) (car (car (car (cdr *x*)))) \</p\>\<p\>(caadar *x*) (car (car (cdr (car *x*)))) \</p\>\<p\>(caaddr *x*) (car (car (cdr (cdr *x*)))) \</p\>\<p\>(cadaar *x*) (car (cdr (car (car *x*)))) \</p\>\<p\>(cadadr *x*) (car (cdr (car (cdr *x*)))) \</p\>\<p\>(caddar *x*) (car (cdr (cdr (car *x*)))) \</p\>\<p\>(cadddr *x*) (car (cdr (cdr (cdr *x*)))) \</p\>\<p\>(cdaaar *x*) (cdr (car (car (car *x*)))) \</p\>\<p\>(cdaadr *x*) (cdr (car (car (cdr *x*)))) \</p\>\<p\>(cdadar *x*) (cdr (car (cdr (car *x*)))) \</p\>\<p\>(cdaddr *x*) (cdr (car (cdr (cdr *x*)))) \</p\>\<p\>(cddaar *x*) (cdr (cdr (car (car *x*)))) \</p\>\<p\>(cddadr *x*) (cdr (cdr (car (cdr *x*)))) \</p\>\<p\>(cdddar *x*) (cdr (cdr (cdr (car *x*)))) \</p\>\<p\>(cddddr *x*) (cdr (cdr (cdr (cdr *x*))))\</p\>|
+|&#60;p&#62;(caar *x*) (car (car *x*)) &#60;/p&#62;&#60;p&#62;(cadr *x*) (car (cdr *x*)) &#60;/p&#62;&#60;p&#62;(cdar *x*) (cdr (car *x*)) &#60;/p&#62;&#60;p&#62;(cddr *x*) (cdr (cdr *x*)) &#60;/p&#62;&#60;p&#62;(caaar *x*) (car (car (car *x*))) &#60;/p&#62;&#60;p&#62;(caadr *x*) (car (car (cdr *x*))) &#60;/p&#62;&#60;p&#62;(cadar *x*) (car (cdr (car *x*))) &#60;/p&#62;&#60;p&#62;(caddr *x*) (car (cdr (cdr *x*))) &#60;/p&#62;&#60;p&#62;(cdaar *x*) (cdr (car (car *x*))) &#60;/p&#62;&#60;p&#62;(cdadr *x*) (cdr (car (cdr *x*))) &#60;/p&#62;&#60;p&#62;(cddar *x*) (cdr (cdr (car *x*))) &#60;/p&#62;&#60;p&#62;(cdddr *x*) (cdr (cdr (cdr *x*))) &#60;/p&#62;&#60;p&#62;(caaaar *x*) (car (car (car (car *x*)))) &#60;/p&#62;&#60;p&#62;(caaadr *x*) (car (car (car (cdr *x*)))) &#60;/p&#62;&#60;p&#62;(caadar *x*) (car (car (cdr (car *x*)))) &#60;/p&#62;&#60;p&#62;(caaddr *x*) (car (car (cdr (cdr *x*)))) &#60;/p&#62;&#60;p&#62;(cadaar *x*) (car (cdr (car (car *x*)))) &#60;/p&#62;&#60;p&#62;(cadadr *x*) (car (cdr (car (cdr *x*)))) &#60;/p&#62;&#60;p&#62;(caddar *x*) (car (cdr (cdr (car *x*)))) &#60;/p&#62;&#60;p&#62;(cadddr *x*) (car (cdr (cdr (cdr *x*)))) &#60;/p&#62;&#60;p&#62;(cdaaar *x*) (cdr (car (car (car *x*)))) &#60;/p&#62;&#60;p&#62;(cdaadr *x*) (cdr (car (car (cdr *x*)))) &#60;/p&#62;&#60;p&#62;(cdadar *x*) (cdr (car (cdr (car *x*)))) &#60;/p&#62;&#60;p&#62;(cdaddr *x*) (cdr (car (cdr (cdr *x*)))) &#60;/p&#62;&#60;p&#62;(cddaar *x*) (cdr (cdr (car (car *x*)))) &#60;/p&#62;&#60;p&#62;(cddadr *x*) (cdr (cdr (car (cdr *x*)))) &#60;/p&#62;&#60;p&#62;(cdddar *x*) (cdr (cdr (cdr (car *x*)))) &#60;/p&#62;&#60;p&#62;(cddddr *x*) (cdr (cdr (cdr (cdr *x*))))&#60;/p&#62;|
 
 
 **Figure 14–6. CAR and CDR variants** 
@@ -597,7 +597,7 @@ tree2 *→* ("one" ("one" "two") (("one" "Two" "three")))
 
 tree1 
 
-:key #’(lambda (x) (or (atom x) (\< (list-length x) 3)))) 
+:key #’(lambda (x) (or (atom x) (&#60; (list-length x) 3)))) 
 
 *→* ((QUOTE TEMP) (QUOTE TEMP) QUOTE TEMP) 
 
@@ -909,7 +909,7 @@ Conses **14–19**
 
 **list** &rest *objects → list* 
 
-**list\*** &rest *objects*\<sup\>+\</sup\> *→ result* 
+**list\*** &rest *objects*&#60;sup&#62;+&#60;/sup&#62; *→ result* 
 
 **Arguments and Values:** 
 
@@ -1053,7 +1053,7 @@ Conses **14–21**
 
 ;; That fact justifies this implementation.) 
 
-(when (and (eq fast slow) (\> n 0)) (return nil)))) 
+(when (and (eq fast slow) (&#62; n 0)) (return nil)))) 
 
 **listp** *Function* 
 
@@ -1615,7 +1615,7 @@ lst *→* (A B C)
 
 **Description:** 
 
-**revappend** constructs a *copy*\<sub\>2\</sub\> of *list*, but with the *elements* in reverse order. It then appends (as if by **nconc**) the *tail* to that reversed list and returns the result. 
+**revappend** constructs a *copy*&#60;sub&#62;2&#60;/sub&#62; of *list*, but with the *elements* in reverse order. It then appends (as if by **nconc**) the *tail* to that reversed list and returns the result. 
 
 **nreconc** reverses the order of *elements* in *list* (as if by **nreverse**). It then appends (as if by **nconc**) the *tail* to that reversed list and returns the result. 
 
@@ -1861,7 +1861,7 @@ The following code could be used to define **last**.
 
 ((atom l) r) 
 
-(if (\>= i n) (pop r)))) 
+(if (&#62;= i n) (pop r)))) 
 
 **ldiff, tailp** *Function* 
 
@@ -1893,7 +1893,7 @@ Conses **14–35**
 
 If *object* is the *same* as some *tail* of *list*, **tailp** returns *true*; otherwise, it returns *false*. 
 
-If *object* is the *same* as some *tail* of *list*, **ldiff** returns a *fresh list* of the *elements* of *list* that precede **object** in the *list structure* of *list*; otherwise, it returns a *copy*\<sub\>2\</sub\> of *list*. 
+If *object* is the *same* as some *tail* of *list*, **ldiff** returns a *fresh list* of the *elements* of *list* that precede **object** in the *list structure* of *list*; otherwise, it returns a *copy*&#60;sub&#62;2&#60;/sub&#62; of *list*. 
 
 **Examples:** 
 
@@ -2183,15 +2183,15 @@ the value returned by **member** is *identical* to the portion of the *list* beg
 
 **Syntax:** 
 
-**mapc** *function* &rest *lists*\<sup\>+\</sup\> *→ list-1* 
+**mapc** *function* &rest *lists*&#60;sup&#62;+&#60;/sup&#62; *→ list-1* 
 
-**mapcar** *function* &rest *lists*\<sup\>+\</sup\> *→ result-list* 
+**mapcar** *function* &rest *lists*&#60;sup&#62;+&#60;/sup&#62; *→ result-list* 
 
-**mapcan** *function* &rest *lists*\<sup\>+\</sup\> *→ concatenated-results* 
+**mapcan** *function* &rest *lists*&#60;sup&#62;+&#60;/sup&#62; *→ concatenated-results* 
 
-**mapl** *function* &rest *lists*\<sup\>+\</sup\> *→ list-1* 
+**mapl** *function* &rest *lists*&#60;sup&#62;+&#60;/sup&#62; *→ list-1* 
 
-**maplist** *function* &rest *lists*\<sup\>+\</sup\> *→ result-list* 
+**maplist** *function* &rest *lists*&#60;sup&#62;+&#60;/sup&#62; *→ result-list* 
 
 
 
@@ -2201,7 +2201,7 @@ the value returned by **member** is *identical* to the portion of the *list* beg
 
 **mapc, mapcar, mapcan, mapl, maplist, mapcon** 
 
-**mapcon** *function* &rest *lists*\<sup\>+\</sup\> *→ concatenated-results* 
+**mapcon** *function* &rest *lists*&#60;sup&#62;+&#60;/sup&#62; *→ concatenated-results* 
 
 **Arguments and Values:** 
 
@@ -2399,7 +2399,7 @@ For **assoc**, **assoc-if**, and **assoc-if-not**, if **nil** appears in *alist*
 
 (assoc-if #’evenp alist) *→* (2 . "two") 
 
-(assoc-if-not #’(lambda(x) (\< x 3)) alist) *→* (3 . "three") 
+(assoc-if-not #’(lambda(x) (&#60; x 3)) alist) *→* (3 . "three") 
 
 (setq alist ’(("one" . 1)("two" . 2))) *→* (("one" . 1) ("two" . 2)) 
 
@@ -2725,9 +2725,9 @@ Conses **14–49**
 
 **Description:** 
 
-**getf** finds a *property* on the *plist* whose *property indicator* is *identical* to *indicator*, and returns its corresponding *property value*. If there are multiple *properties*\<sub\>1\</sub\> with that *property indicator* , **getf** uses the first such *property*. If there is no *property* with that *property indicator* , *default* is returned. 
+**getf** finds a *property* on the *plist* whose *property indicator* is *identical* to *indicator*, and returns its corresponding *property value*. If there are multiple *properties*&#60;sub&#62;1&#60;/sub&#62; with that *property indicator* , **getf** uses the first such *property*. If there is no *property* with that *property indicator* , *default* is returned. 
 
-**setf** of **getf** may be used to associate a new *object* with an existing indicator in the *property list* held by *place*, or to create a new assocation if none exists. If there are multiple *properties*\<sub\>1\</sub\> with that *property indicator* , **setf** of **getf** associates the *new-value* with the first such *property*. When a **getf** *form* is used as a **setf** *place*, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its *value* is ignored. 
+**setf** of **getf** may be used to associate a new *object* with an existing indicator in the *property list* held by *place*, or to create a new assocation if none exists. If there are multiple *properties*&#60;sub&#62;1&#60;/sub&#62; with that *property indicator* , **setf** of **getf** associates the *new-value* with the first such *property*. When a **getf** *form* is used as a **setf** *place*, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its *value* is ignored. 
 
 **setf** of **getf** is permitted to either *write* the *value* of *place* itself, or modify of any part, *car* or *cdr* , of the *list structure* held by *place*. 
 
@@ -2765,13 +2765,13 @@ bar
 
 *→* (C D E F) 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (C) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (C) 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (NIL) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (NIL) 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (C NIL) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (C NIL) 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (C D) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (C D) 
 
 
 
@@ -2811,7 +2811,7 @@ plist) *→* (COUNT 1)
 
 **Description:** 
 
-**remf** removes from the *property list* stored in *place* a *property*\<sub\>1\</sub\> with a *property indicator identical* to *indicator*. If there are multiple *properties*\<sub\>1\</sub\> with the *identical* key, **remf** only removes the first such *property*. **remf** returns *false* if no such *property* was found, or *true* if a property was found. 
+**remf** removes from the *property list* stored in *place* a *property*&#60;sub&#62;1&#60;/sub&#62; with a *property indicator identical* to *indicator*. If there are multiple *properties*&#60;sub&#62;1&#60;/sub&#62; with the *identical* key, **remf** only removes the first such *property*. **remf** returns *false* if no such *property* was found, or *true* if a property was found. 
 
 The *property indicator* and the corresponding *property value* are removed in an undefined order by destructively splicing the property list. **remf** is permitted to either **setf** *place* or to **setf** any part, **car** or **cdr**, of the *list structure* held by that *place*. 
 
@@ -3377,15 +3377,15 @@ Conses **14–61**
 
 *→* (A B C F D) 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (B C F A D) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (B C F A D) 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (D F A B C) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (D F A B C) 
 
 (union ’((x 5) (y 6)) ’((z 2) (x 4)) :key #’car) 
 
 *→* ((X 5) (Y 6) (Z 2)) 
 
-\<i\>\<sup\>or\</sup\>→\</i\> ((X 4) (Y 6) (Z 2)) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; ((X 4) (Y 6) (Z 2)) 
 
 (setq lst1 (list 1 2 ’(1 2) "a" "b") 
 
@@ -3397,7 +3397,7 @@ lst2 (list 2 3 ’(2 3) "B" "C"))
 
 *→* (1 (1 2) "a" "b" 2 3 (2 3) "B" "C") 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (1 2 (1 2) "a" "b" "C" "B" (2 3) 3) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (1 2 (1 2) "a" "b" "C" "B" (2 3) 3) 
 
 **Side Effects:** 
 

@@ -8,7 +8,7 @@ Using it as an *argument* to the *function* **random**.
 
 **cons** 
 
-Changing the *car* \<sub\>1\</sub\> or *cdr* \<sub\>1\</sub\> of the *cons*, or performing a *destructive* operation on an *object* which is either the *car* \<sub\>2\</sub\> or the *cdr* \<sub\>2\</sub\> of the *cons*. 
+Changing the *car* &#60;sub&#62;1&#60;/sub&#62; or *cdr* &#60;sub&#62;1&#60;/sub&#62; of the *cons*, or performing a *destructive* operation on an *object* which is either the *car* &#60;sub&#62;2&#60;/sub&#62; or the *cdr* &#60;sub&#62;2&#60;/sub&#62; of the *cons*. 
 
 **array** 
 
@@ -22,7 +22,7 @@ Performing a *destructive* operation on another *array* that is displaced to the
 
 Performing a *destructive* operation on any *key*. 
 
-Storing a new *value*\<sub\>4\</sub\> for any *key*, or performing a *destructive* operation on any *object* that is such a *value*. 
+Storing a new *value*&#60;sub&#62;4&#60;/sub&#62; for any *key*, or performing a *destructive* operation on any *object* that is such a *value*. 
 
 Adding or removing entries from the *hash table*. 
 

@@ -4,7 +4,7 @@ For each of the “read-modify-write” *operators* in Figure 5–9, and for any
 
 Specifically, each of these *operators* can be viewed as involving a *form* with the following general syntax: 
 
-(*operator \{preceding-form\}*\* *place \{following-form\}*\*) 
+(*operator &#123;preceding-form&#125;*\* *place &#123;following-form&#125;*\*) 
 
 The evaluation of each such *form* proceeds like this: 
 
@@ -26,7 +26,7 @@ Data and Control Flow **5–11**
 
 
 
-|\<p\>**decf pop pushnew** \</p\>\<p\>**incf push remf**\</p\>|
+|&#60;p&#62;**decf pop pushnew** &#60;/p&#62;&#60;p&#62;**incf push remf**&#60;/p&#62;|
 | :- |
 
 

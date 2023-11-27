@@ -1,7 +1,8 @@
 {
-  'label': '**19.3 Logical Pathnames** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**19.3 Logical Pathnames** '
+  "label": "19.3 Logical Pathnames",
+  "position": 19.3,
+  "link": {
+    "type": "generated-index",
+    "description": "19.3 Logical Pathnames"
   }
 }

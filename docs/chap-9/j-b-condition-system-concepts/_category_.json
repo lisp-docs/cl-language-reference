@@ -1,7 +1,8 @@
 {
-  'label': '**9.1 Condition System Concepts** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**9.1 Condition System Concepts** '
+  "label": "9.1 Condition System Concepts",
+  "position": 9.1,
+  "link": {
+    "type": "generated-index",
+    "description": "9.1 Condition System Concepts"
   }
 }

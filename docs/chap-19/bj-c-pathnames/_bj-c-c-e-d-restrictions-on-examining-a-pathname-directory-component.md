@@ -26,7 +26,7 @@ Supplying any non-*string*, including any of the *symbols* listed below, to a fi
 
 |**Symbol Meaning**|
 | :- |
-|\<p\>:wild Wildcard match of one level of directory structure :wild-inferiors Wildcard match of any number of directory levels :up Go upward in directory structure (semantic) \</p\>\<p\>:back Go upward in directory structure (syntactic)\</p\>|
+|&#60;p&#62;:wild Wildcard match of one level of directory structure :wild-inferiors Wildcard match of any number of directory levels :up Go upward in directory structure (semantic) &#60;/p&#62;&#60;p&#62;:back Go upward in directory structure (syntactic)&#60;/p&#62;|
 
 
 **Figure 19–3. Special Markers In Directory Component** 

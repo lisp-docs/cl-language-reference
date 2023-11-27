@@ -4,7 +4,7 @@
 
 Figure 25–7 shows *defined names* related to *internal time*. 
 
-|\<p\>**get-internal-real-time internal-time-units-per-second** \</p\>\<p\>**get-internal-run-time**\</p\>|
+|&#60;p&#62;**get-internal-real-time internal-time-units-per-second** &#60;/p&#62;&#60;p&#62;**get-internal-run-time**&#60;/p&#62;|
 | :- |
 
 

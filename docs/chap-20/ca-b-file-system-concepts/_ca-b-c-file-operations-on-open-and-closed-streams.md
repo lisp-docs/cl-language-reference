@@ -4,7 +4,7 @@ Many *functions* that perform *file* operations accept either *open* or *closed 
 
 Of these, the *functions* in Figure 20–2 treat *open* and *closed streams* differently. 
 
-|\<p\>**delete-file file-author probe-file** \</p\>\<p\>**directory file-write-date truename**\</p\>|
+|&#60;p&#62;**delete-file file-author probe-file** &#60;/p&#62;&#60;p&#62;**directory file-write-date truename**&#60;/p&#62;|
 | :- |
 
 

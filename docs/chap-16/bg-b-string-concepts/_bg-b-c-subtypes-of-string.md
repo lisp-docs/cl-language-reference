@@ -286,7 +286,7 @@ In the case where a conversion is defined neither by this specification nor by t
 
 **prin1-to-string**, **princ-to-string**, **write-to-string**, or **format** (with a first argument of **nil**) can be used to get a *string* representation of a *number* or any other *object*. 
 
-\<b\>string-upcase, string-downcase, string-capitalize, \<sup\>nstring-upcase, nstring-downcase, nstring\</sup\> capitalize\</b\> \<i\>Function\</i\> 
+&#60;b&#62;string-upcase, string-downcase, string-capitalize, &#60;sup&#62;nstring-upcase, nstring-downcase, nstring&#60;/sup&#62; capitalize&#60;/b&#62; &#60;i&#62;Function&#60;/i&#62; 
 
 **Syntax:** 
 
@@ -450,7 +450,7 @@ Strings **16–9**
 
 The *implementation*. 
 
-\<b\>string=, string/=, string\</b\>\<i\>\<\</i\>\<b\>, string\</b\>\<i\>\>\</i\>\<b\>, string\</b\>\<i\>\<\</i\>\<b\>=, \<sup\>string\</sup\>\</b\>\>\</i\>\<b\>=, string-equal, string-not-equal, string lessp, string-greaterp, string-not-greaterp, string not-lessp\</b\> \<i\>Function\</i\> 
+&#60;b&#62;string=, string/=, string&#60;/b&#62;&#60;i&#62;&#60;&#60;/i&#62;&#60;b&#62;, string&#60;/b&#62;&#60;i&#62;&#62;&#60;/i&#62;&#60;b&#62;, string&#60;/b&#62;&#60;i&#62;&#60;&#60;/i&#62;&#60;b&#62;=, &#60;sup&#62;string&#60;/sup&#62;&#60;/b&#62;&#62;&#60;/i&#62;&#60;b&#62;=, string-equal, string-not-equal, string lessp, string-greaterp, string-not-greaterp, string not-lessp&#60;/b&#62; &#60;i&#62;Function&#60;/i&#62; 
 
 **Syntax:** 
 
@@ -458,13 +458,13 @@ The *implementation*.
 
 **string/**= *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* 
 
-**string**\< *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* 
+**string**&#60; *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* 
 
-**string**\> *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* 
+**string**&#62; *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* 
 
-**string**\<= *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* 
+**string**&#60;= *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* 
 
-**string**\>= *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* 
+**string**&#62;= *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* 
 
 **string-equal** *string1 string2* &key *start1 end1 start2 end2 → generalized-boolean* 
 
@@ -494,13 +494,13 @@ These functions perform lexicographic comparisons on *string1* and *string2*. **
 
  
 
-**string=, string/=, string***\<***, string***\>***, string***\<***=,** *. . .* 
+**string=, string/=, string***&#60;***, string***&#62;***, string***&#60;***=,** *. . .* 
 
 comparison operations these *functions* perform are restricted to the subsequence of *string1 bounded* by *start1* and *end1* and to the subsequence of *string2 bounded* by *start2* and *end2*. 
 
 A string *a* is equal to a string *b* if it contains the same number of characters, and the corresponding characters are the *same* under **char=** or **char-equal**, as appropriate. 
 
-A string *a* is less than a string *b* if in the first position in which they differ the character of *a* is less than the corresponding character of *b* according to **char**\< or **char-lessp** as appropriate, or if string *a* is a proper prefix of string *b* (of shorter length and matching in all the characters of *a*). 
+A string *a* is less than a string *b* if in the first position in which they differ the character of *a* is less than the corresponding character of *b* according to **char**&#60; or **char-lessp** as appropriate, or if string *a* is a proper prefix of string *b* (of shorter length and matching in all the characters of *a*). 
 
 The equality functions return a *generalized boolean* that is *true* if the strings are equal, or *false* otherwise. 
 
@@ -520,31 +520,31 @@ The comparison has one of the following results:
 
 **string-equal** is just like **string=** except that differences in case are ignored; two characters are considered to be the same if **char-equal** is *true* of them. 
 
-**string**\< 
+**string**&#60; 
 
-**string**\< is *true* if substring1 is less than substring2; otherwise it is *false*. 
+**string**&#60; is *true* if substring1 is less than substring2; otherwise it is *false*. 
 
-**string**\> 
+**string**&#62; 
 
-**string**\> is *true* if substring1 is greater than substring2; otherwise it is *false*. 
+**string**&#62; is *true* if substring1 is greater than substring2; otherwise it is *false*. 
 
 **string-lessp**, **string-greaterp** 
 
-**string-lessp** and **string-greaterp** are exactly like **string**\< and **string**\>, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if **char-lessp** were used instead of **char**\< for comparing characters. 
+**string-lessp** and **string-greaterp** are exactly like **string**&#60; and **string**&#62;, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if **char-lessp** were used instead of **char**&#60; for comparing characters. 
 
-**string**\<**=** 
+**string**&#60;**=** 
 
-**string**\<**=** is *true* if substring1 is less than or equal to substring2; otherwise it is *false*. Strings **16–11**
-
- 
+**string**&#60;**=** is *true* if substring1 is less than or equal to substring2; otherwise it is *false*. Strings **16–11**
 
  
 
-**string**\>**=** 
+ 
 
-**string**\>**=** is *true* if substring1 is greater than or equal to substring2; otherwise it is *false*. **string-not-greaterp**, **string-not-lessp** 
+**string**&#62;**=** 
 
-**string-not-greaterp** and **string-not-lessp** are exactly like **string**\<**=** and **string**\>**=**, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if **char-lessp** were used instead of **char**\< for comparing characters. 
+**string**&#62;**=** is *true* if substring1 is greater than or equal to substring2; otherwise it is *false*. **string-not-greaterp**, **string-not-lessp** 
+
+**string-not-greaterp** and **string-not-lessp** are exactly like **string**&#60;**=** and **string**&#62;**=**, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if **char-lessp** were used instead of **char**&#60; for comparing characters. 
 
 **Examples:** 
 
@@ -560,9 +560,9 @@ The comparison has one of the following results:
 
 (string= "abcd" "01234abcd9012" :start2 5 :end2 9) *→ true* 
 
-(string\< "aaaa" "aaab") *→* 3 
+(string&#60; "aaaa" "aaab") *→* 3 
 
-(string\>= "aaaaa" "aaaa") *→* 4 
+(string&#62;= "aaaaa" "aaaa") *→* 4 
 
 (string-not-greaterp "Abcde" "abcdE") *→* 5 
 

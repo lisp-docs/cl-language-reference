@@ -4,13 +4,13 @@ A *defsetf lambda list* is used by **defsetf**.
 
 A *defsetf lambda list* has the following syntax: 
 
-*lambda-list::*=(*\{var\}*\* 
+*lambda-list::*=(*&#123;var&#125;*\* 
 
-[&optional *\{var |* (*var* [*init-form* [*supplied-p-parameter*]])*\}*\*] 
+[&optional *&#123;var |* (*var* [*init-form* [*supplied-p-parameter*]])*&#125;*\*] 
 
 [&rest *var*] 
 
-[&key *\{var |* (*\{var |* (*keyword-name var*)*\}* [*init-form* [*supplied-p-parameter*]])*\}*\* 
+[&key *&#123;var |* (*&#123;var |* (*keyword-name var*)*&#125;* [*init-form* [*supplied-p-parameter*]])*&#125;*\* 
 
 [&allow-other-keys]] 
 
@@ -18,7 +18,7 @@ A *defsetf lambda list* has the following syntax:
 
 A *defsetf lambda list* can contain the *lambda list keywords* shown in Figure 3–19. 
 
-|\<p\>**&allow-other-keys &key &rest** \</p\>\<p\>**&environment &optional**\</p\>|
+|&#60;p&#62;**&allow-other-keys &key &rest** &#60;/p&#62;&#60;p&#62;**&environment &optional**&#60;/p&#62;|
 | :- |
 
 

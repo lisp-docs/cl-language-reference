@@ -20,7 +20,7 @@ initially clauses in the order they appear in the source.
 
 **Loop body** 
 
-The loop body contains those *forms* that are executed during iteration, including application-specific calculations, termination tests, and variable *stepping*\<sub\>1\</sub\>. 
+The loop body contains those *forms* that are executed during iteration, including application-specific calculations, termination tests, and variable *stepping*&#60;sub&#62;1&#60;/sub&#62;. 
 
 **Loop epilogue** 
 

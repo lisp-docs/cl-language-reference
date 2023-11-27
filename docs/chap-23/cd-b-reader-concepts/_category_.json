@@ -1,7 +1,8 @@
 {
-  'label': '**23.1 Reader Concepts** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**23.1 Reader Concepts** '
+  "label": "23.1 Reader Concepts",
+  "position": 23.1,
+  "link": {
+    "type": "generated-index",
+    "description": "23.1 Reader Concepts"
   }
 }

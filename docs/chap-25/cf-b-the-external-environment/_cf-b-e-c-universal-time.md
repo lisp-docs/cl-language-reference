@@ -12,7 +12,7 @@ Environment **25–3**
 
 Therefore the year 2000 will be a leap year. Because *universal time* must be a non-negative *integer* , times before the base time of midnight, January 1, 1900 GMT cannot be processed by Common Lisp. 
 
-|\<p\>**decode-universal-time get-universal-time** \</p\>\<p\>**encode-universal-time**\</p\>|
+|&#60;p&#62;**decode-universal-time get-universal-time** &#60;/p&#62;&#60;p&#62;**encode-universal-time**&#60;/p&#62;|
 | :- |
 
 

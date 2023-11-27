@@ -4,7 +4,7 @@ The byte-manipulation *functions* use *objects* called *byte specifiers* to desi
 
 Figure 12–6 shows *defined names* relating to manipulating *bytes* of *numbers*. 
 
-|\<p\>**byte deposit-field ldb-test** \</p\>\<p\>**byte-position dpb mask-field** \</p\>\<p\>**byte-size ldb**\</p\>|
+|&#60;p&#62;**byte deposit-field ldb-test** &#60;/p&#62;&#60;p&#62;**byte-position dpb mask-field** &#60;/p&#62;&#60;p&#62;**byte-size ldb**&#60;/p&#62;|
 | :- |
 
 

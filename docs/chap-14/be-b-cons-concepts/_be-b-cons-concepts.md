@@ -2,7 +2,7 @@
 
 A *cons* is a compound data *object* having two components called the *car* and the *cdr* . 
 
-|\<p\>**car cons rplacd** \</p\>\<p\>**cdr rplaca**\</p\>|
+|&#60;p&#62;**car cons rplacd** &#60;/p&#62;&#60;p&#62;**cdr rplaca**&#60;/p&#62;|
 | :- |
 
 

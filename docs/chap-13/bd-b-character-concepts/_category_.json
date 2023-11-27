@@ -1,7 +1,8 @@
 {
-  'label': '**13.1 Character Concepts** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**13.1 Character Concepts** '
+  "label": "13.1 Character Concepts",
+  "position": 13.1,
+  "link": {
+    "type": "generated-index",
+    "description": "13.1 Character Concepts"
   }
 }

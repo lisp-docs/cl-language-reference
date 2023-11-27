@@ -36,7 +36,7 @@ The combination of ~[ and # is useful, for example, for dealing with English con
 
 (setq foo "Items:~#[ none~; ~S~; ~S and ~S~ 
 
-~:;~@\{~#[~; and~] ~S~\<i\>\<sup\>∧\</sup\>\</i\>,~\}~].") 
+~:;~@&#123;~#[~; and~] ~S~&#60;i&#62;&#60;sup&#62;∧&#60;/sup&#62;&#60;/i&#62;,~&#125;~].") 
 
 
 

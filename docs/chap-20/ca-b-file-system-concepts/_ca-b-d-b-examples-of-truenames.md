@@ -1,6 +1,6 @@
  
 
-For example, a DEC TOPS-20 system with *files* PS:\<JOE\>FOO.TXT.1 and PS:\<JOE\>FOO.TXT.2 might permit the second *file* to be referred to as PS:\<JOE\>FOO.TXT.0, since the “.0” notation denotes “newest” version of several *files*. In the same *file system*, a “logical device” “JOE:” might be taken to refer to PS:\<JOE\>” and so the names JOE:FOO.TXT.2 or JOE:FOO.TXT.0 might refer to PS:\<JOE\>FOO.TXT.2. In all of these cases, the *truename* of the file would probably be PS:\<JOE\>FOO.TXT.2. 
+For example, a DEC TOPS-20 system with *files* PS:&#60;JOE&#62;FOO.TXT.1 and PS:&#60;JOE&#62;FOO.TXT.2 might permit the second *file* to be referred to as PS:&#60;JOE&#62;FOO.TXT.0, since the “.0” notation denotes “newest” version of several *files*. In the same *file system*, a “logical device” “JOE:” might be taken to refer to PS:&#60;JOE&#62;” and so the names JOE:FOO.TXT.2 or JOE:FOO.TXT.0 might refer to PS:&#60;JOE&#62;FOO.TXT.2. In all of these cases, the *truename* of the file would probably be PS:&#60;JOE&#62;FOO.TXT.2. 
 
 If a *file* is a symbolic link to another *file* (in a *file system* permitting such a thing), it is conventional for the *truename* to be the canonical name of the *file* after any symbolic links have been followed; that is, it is the canonical name of the *file* whose contents would become available if an *input stream* to that *file* were opened. 
 
@@ -152,7 +152,7 @@ If the directory creation attempt is not successful, an error of *type* **file-e
 
 ;; the truename is implementation-dependent while the file is still open. 
 
-(with-open-file (stream "\>vistor\>test.text.newest") 
+(with-open-file (stream "&#62;vistor&#62;test.text.newest") 
 
 (values (pathname stream) 
 
@@ -164,17 +164,17 @@ Files **20–5**
 
 (truename stream))) 
 
-*→* #P"S:\>vistor\>test.text.newest", #P"S:\>vistor\>test.text.1" 
+*→* #P"S:&#62;vistor&#62;test.text.newest", #P"S:&#62;vistor&#62;test.text.1" 
 
-\<i\>\<sup\>or\</sup\>→\</i\> #P"S:\>vistor\>test.text.newest", #P"S:\>vistor\>test.text.newest" 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; #P"S:&#62;vistor&#62;test.text.newest", #P"S:&#62;vistor&#62;test.text.newest" 
 
-\<i\>\<sup\>or\</sup\>→\</i\> #P"S:\>vistor\>test.text.newest", #P"S:\>vistor\> temp . temp .1" 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; #P"S:&#62;vistor&#62;test.text.newest", #P"S:&#62;vistor&#62; temp . temp .1" 
 
 ;; In this case, the file is closed when the truename is tried, so the 
 
 ;; truename information is reliable. 
 
-(with-open-file (stream "\>vistor\>test.text.newest") 
+(with-open-file (stream "&#62;vistor&#62;test.text.newest") 
 
 (close stream) 
 
@@ -182,13 +182,13 @@ Files **20–5**
 
 (truename stream))) 
 
-*→* #P"S:\>vistor\>test.text.newest", #P"S:\>vistor\>test.text.1" 
+*→* #P"S:&#62;vistor&#62;test.text.newest", #P"S:&#62;vistor&#62;test.text.1" 
 
 ;; An example involving TOP-20’s implementation-dependent concept 
 
 ;; of logical devices – in this case, "DOC:" is shorthand for 
 
-;; "PS:\<DOCUMENTATION\>" ... 
+;; "PS:&#60;DOCUMENTATION&#62;" ... 
 
 (with-open-file (stream "CMUC::DOC:DUMPER.HLP") 
 
@@ -196,7 +196,7 @@ Files **20–5**
 
 (truename stream))) 
 
-*→* #P"CMUC::DOC:DUMPER.HLP", #P"CMUC::PS:\<DOCUMENTATION\>DUMPER.HLP.13" 
+*→* #P"CMUC::DOC:DUMPER.HLP", #P"CMUC::PS:&#60;DOCUMENTATION&#62;DUMPER.HLP.13" 
 
 **Exceptional Situations:** 
 
@@ -234,7 +234,7 @@ Returns a *string* naming the author of the *file* specified by *pathspec*, or *
 
 **Examples:** 
 
-(with-open-file (stream "\>relativity\>general.text") 
+(with-open-file (stream "&#62;relativity&#62;general.text") 
 
 (file-author s)) 
 
@@ -360,15 +360,15 @@ If the *filespec designator* is an open *stream*, then the *stream* itself and t
 
 (values (pathname stream) (truename stream))) 
 
-*→* #P"SYS:CHEMISTRY;LEAD.TEXT.NEWEST", #P"Q:\>sys\>chem\>lead.text.1" 
+*→* #P"SYS:CHEMISTRY;LEAD.TEXT.NEWEST", #P"Q:&#62;sys&#62;chem&#62;lead.text.1" 
 
 (rename-file "sys:chemistry;lead.text" "gold.text") 
 
 *→* #P"SYS:CHEMISTRY;GOLD.TEXT.NEWEST", 
 
-#P"Q:\>sys\>chem\>lead.text.1", 
+#P"Q:&#62;sys&#62;chem&#62;lead.text.1", 
 
-#P"Q:\>sys\>chem\>gold.text.1" 
+#P"Q:&#62;sys&#62;chem&#62;gold.text.1" 
 
 **Exceptional Situations:** 
 
@@ -416,7 +416,7 @@ The consequences are undefined if *filespec* has a *wild* component, or if *file
 
 *→* NIL 
 
-(setq p (probe-file "delete-me.text")) *→* #P"R:\>fred\>delete-me.text.1" 
+(setq p (probe-file "delete-me.text")) *→* #P"R:&#62;fred&#62;delete-me.text.1" 
 
 (delete-file p) *→* T 
 

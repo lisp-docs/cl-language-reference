@@ -6,15 +6,15 @@ A *destructuring lambda list* is used by **destructuring-bind**.
 
 A *destructuring lambda list* has the following syntax: 
 
-*reqvars::*=*\{var | ↓lambda-list\}*\* 
+*reqvars::*=*&#123;var | ↓lambda-list&#125;*\* 
 
-*optvars::*=[&optional *\{var |* (*\{var | ↓lambda-list\}* [*init-form* [*supplied-p-parameter*]])*\}*\*] 
+*optvars::*=[&optional *&#123;var |* (*&#123;var | ↓lambda-list&#125;* [*init-form* [*supplied-p-parameter*]])*&#125;*\*] 
 
-*restvar::*=[*\{*&rest *|* &body*\} \{var | ↓lambda-list\}*] 
+*restvar::*=[*&#123;*&rest *|* &body*&#125; &#123;var | ↓lambda-list&#125;*] 
 
-*keyvars::*=[&key *\{var |* (*\{var |* (*keyword-name \{var | ↓lambda-list\}*)*\}* [*init-form* [*supplied-p-parameter*]])*\}*\* [&allow-other-keys]] 
+*keyvars::*=[&key *&#123;var |* (*&#123;var |* (*keyword-name &#123;var | ↓lambda-list&#125;*)*&#125;* [*init-form* [*supplied-p-parameter*]])*&#125;*\* [&allow-other-keys]] 
 
-*auxvars::*=[&aux *\{var |* (*var* [*init-form*])*\}*\*] 
+*auxvars::*=[&aux *&#123;var |* (*var* [*init-form*])*&#125;*\*] 
 
 *envvar::*=[&environment *var*] 
 

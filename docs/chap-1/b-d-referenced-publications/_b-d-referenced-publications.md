@@ -40,7 +40,7 @@
 
 *• The Revised Maclisp Manual*, Kent M. Pitman, Technical Report 295, Laboratory for Computer Science, MIT (Cambridge, MA), May 1983. 
 
-*•* “Revised\<sup\>3\</sup\> Report on the Algorithmic Language Scheme,” Jonathan Rees and William Clinger (editors), *SIGPLAN Notices* V21, #12, December, 1986. 
+*•* “Revised&#60;sup&#62;3&#60;/sup&#62; Report on the Algorithmic Language Scheme,” Jonathan Rees and William Clinger (editors), *SIGPLAN Notices* V21, #12, December, 1986. 
 
 *•* “S-1 Common Lisp Implementation,” R.A. Brooks, R.P. Gabriel, and G.L. Steele, *Conference Record of the 1982 ACM Symposium on Lisp and Functional Programming*, 108-113, 1982. 
 

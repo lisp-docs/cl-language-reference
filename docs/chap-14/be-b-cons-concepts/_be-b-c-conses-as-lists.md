@@ -10,7 +10,7 @@ A *dotted list* is a *list* that has a terminating *atom* that is not the *empty
 
 A *circular list* is a chain of *conses* that has no termination because some *cons* in the chain is the *cdr* of a later *cons*. 
 
-|\<p\>**append last nbutlast rest** \</p\>\<p\>**butlast ldiff nconc revappend copy-alist list ninth second copy-list list\* nreconc seventh eighth list-length nth sixth endp make-list nthcdr tailp** \</p\>\<p\>**fifth member pop tenth first member-if push third fourth member-if-not pushnew**\</p\>|
+|&#60;p&#62;**append last nbutlast rest** &#60;/p&#62;&#60;p&#62;**butlast ldiff nconc revappend copy-alist list ninth second copy-list list\* nreconc seventh eighth list-length nth sixth endp make-list nthcdr tailp** &#60;/p&#62;&#60;p&#62;**fifth member pop tenth first member-if push third fourth member-if-not pushnew**&#60;/p&#62;|
 | :- |
 
 

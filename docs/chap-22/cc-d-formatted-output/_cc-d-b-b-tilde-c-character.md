@@ -20,7 +20,7 @@ The next *arg* should be a *character* ; it is printed according to the modifier
 
 *→* "Control-Space" 
 
-\<i\>\<sup\>or\</sup\>→\</i\> "c-Space" 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; "c-Space" 
 
 ~:@C prints what ~:C would, and then if the *character* requires unusual shift keys on the keyboard to type it, this fact is mentioned. For example, 
 

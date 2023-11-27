@@ -2,11 +2,11 @@
 
 To allow implementors and future Common Lisp standards to extend the syntax of numbers, a syntax for *potential numbers* is defined that is more general than the syntax for numbers. A *token* is a *potential number* if it satisfies all of the following requirements: 
 
-1\. The \<i\>token\</i\> consists entirely of \<i\>digits\</i\>, \<i\>signs\</i\>, \<i\>ratio markers\</i\>, decimal points (.), extension characters (\<i\>\<sup\>∧\</sup\>\</i\> or ), and number markers. A number marker is a letter. Whether a letter may be treated as a number marker depends on context, but no letter that is adjacent to another letter may ever be treated as a number marker. \<i\>Exponent markers\</i\> are number markers. 
+1\. The &#60;i&#62;token&#60;/i&#62; consists entirely of &#60;i&#62;digits&#60;/i&#62;, &#60;i&#62;signs&#60;/i&#62;, &#60;i&#62;ratio markers&#60;/i&#62;, decimal points (.), extension characters (&#60;i&#62;&#60;sup&#62;∧&#60;/sup&#62;&#60;/i&#62; or ), and number markers. A number marker is a letter. Whether a letter may be treated as a number marker depends on context, but no letter that is adjacent to another letter may ever be treated as a number marker. &#60;i&#62;Exponent markers&#60;/i&#62; are number markers. 
 
 2\. The *token* contains at least one digit. Letters may be considered to be digits, depending on the *current input base*, but only in *tokens* containing no decimal points. 
 
-3\. The \<i\>token\</i\> begins with a \<i\>digit\</i\>, \<i\>sign\</i\>, decimal point, or extension character, but not a \<i\>package marker\</i\> . The syntax involving a leading \<i\>package marker\</i\> followed by a \<i\>potential number\</i\> is not well-defined. The consequences of the use of notation such as :1, :1/2, and :2\<i\>\<sup\>∧\</sup\>\</i\>3 in a position where an expression appropriate for \<b\>read\</b\> is expected are unspecified.  
+3\. The &#60;i&#62;token&#60;/i&#62; begins with a &#60;i&#62;digit&#60;/i&#62;, &#60;i&#62;sign&#60;/i&#62;, decimal point, or extension character, but not a &#60;i&#62;package marker&#60;/i&#62; . The syntax involving a leading &#60;i&#62;package marker&#60;/i&#62; followed by a &#60;i&#62;potential number&#60;/i&#62; is not well-defined. The consequences of the use of notation such as :1, :1/2, and :2&#60;i&#62;&#60;sup&#62;∧&#60;/sup&#62;&#60;/i&#62;3 in a position where an expression appropriate for &#60;b&#62;read&#60;/b&#62; is expected are unspecified.  
 
 
 

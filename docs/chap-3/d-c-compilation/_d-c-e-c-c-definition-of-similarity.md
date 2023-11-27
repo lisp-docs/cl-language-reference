@@ -32,19 +32,19 @@ referencing it as a *literal object* is *loaded*. The *loader* finds the corresp
 
 **random-state** 
 
-Two *random states S* and *C* are *similar* if *S* would always produce the same sequence of pseudo-random numbers as a *copy*\<sub\>5\</sub\> of *C* when given as the *random-state argument* to the *function* **random**, assuming equivalent *limit arguments* in each case. 
+Two *random states S* and *C* are *similar* if *S* would always produce the same sequence of pseudo-random numbers as a *copy*&#60;sub&#62;5&#60;/sub&#62; of *C* when given as the *random-state argument* to the *function* **random**, assuming equivalent *limit arguments* in each case. 
 
 (Note that since *C* has been processed by the *file compiler* , it cannot be used directly as an *argument* to **random** because **random** would perform a side effect.) 
 
 **cons** 
 
-Two *conses*, *S* and *C*, are *similar* if the *car* \<sub\>2\</sub\> of *S* is *similar* to the *car* \<sub\>2\</sub\> of *C*, and the *cdr* \<sub\>2\</sub\> of *S* is *similar* to the *cdr* \<sub\>2\</sub\> of *C*. 
+Two *conses*, *S* and *C*, are *similar* if the *car* &#60;sub&#62;2&#60;/sub&#62; of *S* is *similar* to the *car* &#60;sub&#62;2&#60;/sub&#62; of *C*, and the *cdr* &#60;sub&#62;2&#60;/sub&#62; of *S* is *similar* to the *cdr* &#60;sub&#62;2&#60;/sub&#62; of *C*. 
 
 **array** 
 
 Two one-dimensional *arrays*, *S* and *C*, are *similar* if the *length* of *S* is *similar* to the *length* of *C*, the *actual array element type* of *S* is *similar* to the *actual array element type* of *C*, and each *active element* of *S* is *similar* to the corresponding *element* of *C*. 
 
-Two *arrays* of *rank* other than one, *S* and *C*, are *similar* if the *rank* of *S* is *similar* to the *rank* of *C*, each *dimension*\<sub\>1\</sub\> of *S* is *similar* to the corresponding *dimension*\<sub\>1\</sub\> of *C*, the *actual array element type* of *S* is *similar* to the *actual array element type* of *C*, and each *element* of *S* is *similar* to the corresponding *element* of *C*. 
+Two *arrays* of *rank* other than one, *S* and *C*, are *similar* if the *rank* of *S* is *similar* to the *rank* of *C*, each *dimension*&#60;sub&#62;1&#60;/sub&#62; of *S* is *similar* to the corresponding *dimension*&#60;sub&#62;1&#60;/sub&#62; of *C*, the *actual array element type* of *S* is *similar* to the *actual array element type* of *C*, and each *element* of *S* is *similar* to the corresponding *element* of *C*. 
 
 In addition, if *S* is a *simple array*, then *C* must also be a *simple array*. If *S* is a *displaced array*, has a *fill pointer* , or is *actually adjustable*, *C* is permitted to lack any or all of these qualities. 
 

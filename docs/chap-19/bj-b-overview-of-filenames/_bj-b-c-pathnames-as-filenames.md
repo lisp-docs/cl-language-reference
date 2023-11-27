@@ -24,7 +24,7 @@ The time at which this mapping and associated error signaling occurs is *impleme
 
 Figure 19–1 lists some *defined names* that are applicable to *pathnames*. 
 
-|\<p\>**\*default-pathname-defaults\* namestring pathname-name directory-namestring open pathname-type enough-namestring parse-namestring pathname-version file-namestring pathname pathnamep file-string-length pathname-device translate-pathname host-namestring pathname-directory truename** \</p\>\<p\>**make-pathname pathname-host user-homedir-pathname merge-pathnames pathname-match-p wild-pathname-p**\</p\>|
+|&#60;p&#62;**\*default-pathname-defaults\* namestring pathname-name directory-namestring open pathname-type enough-namestring parse-namestring pathname-version file-namestring pathname pathnamep file-string-length pathname-device translate-pathname host-namestring pathname-directory truename** &#60;/p&#62;&#60;p&#62;**make-pathname pathname-host user-homedir-pathname merge-pathnames pathname-match-p wild-pathname-p**&#60;/p&#62;|
 | :- |
 
 

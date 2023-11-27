@@ -20,7 +20,7 @@ When a function such as **print** produces a printed representation, it must cho
 
 A number of option variables, called *printer control variables*, are provided to permit control of individual aspects of the printed representation of *objects*. Figure 22–1 shows the *standardized printer control variables*; there might also be *implementation-defined printer control variables*. 
 
-|\<p\>**\*print-array\* \*print-gensym\* \*print-pprint-dispatch\* \*print-base\* \*print-length\* \*print-pretty\*** \</p\>\<p\>**\*print-case\* \*print-level\* \*print-radix\*** \</p\>\<p\>**\*print-circle\* \*print-lines\* \*print-readably\* \*print-escape\* \*print-miser-width\* \*print-right-margin\***\</p\>|
+|&#60;p&#62;**\*print-array\* \*print-gensym\* \*print-pprint-dispatch\* \*print-base\* \*print-length\* \*print-pretty\*** &#60;/p&#62;&#60;p&#62;**\*print-case\* \*print-level\* \*print-radix\*** &#60;/p&#62;&#60;p&#62;**\*print-circle\* \*print-lines\* \*print-readably\* \*print-escape\* \*print-miser-width\* \*print-right-margin\***&#60;/p&#62;|
 | :- |
 
 

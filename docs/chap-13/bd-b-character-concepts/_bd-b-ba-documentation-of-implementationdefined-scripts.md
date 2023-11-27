@@ -96,7 +96,7 @@ The *type* **extended-char** is equivalent to the *type* (and character (not bas
 
 **Notes:** 
 
-The *type* **extended-char** might have no *elements*\<sub\>4\</sub\> in *implementations* in which all *characters* are of *type* **base-char**. 
+The *type* **extended-char** might have no *elements*&#60;sub&#62;4&#60;/sub&#62; in *implementations* in which all *characters* are of *type* **base-char**. 
 
 Characters **13–9**
 
@@ -104,35 +104,35 @@ Characters **13–9**
 
  
 
-**char=, char/=, char***\<***, char***\>***, char***\<***=, char***\>***=,** *. . .* 
+**char=, char/=, char***&#60;***, char***&#62;***, char***&#60;***=, char***&#62;***=,** *. . .* 
 
-\<b\>char=, char/=, char\</b\>\<i\>\<\</i\>\<b\>, char\</b\>\<i\>\>\</i\>\<b\>, char\</b\>\<i\>\<\</i\>\<b\>=, char\</b\>\<i\>\>\</i\>\<b\>=, \<sup\>char-equal, char-not-equal, char-lessp, char\</sup\> greaterp, char-not-greaterp, char-not-lessp\</b\> \<i\>Function\</i\> 
+&#60;b&#62;char=, char/=, char&#60;/b&#62;&#60;i&#62;&#60;&#60;/i&#62;&#60;b&#62;, char&#60;/b&#62;&#60;i&#62;&#62;&#60;/i&#62;&#60;b&#62;, char&#60;/b&#62;&#60;i&#62;&#60;&#60;/i&#62;&#60;b&#62;=, char&#60;/b&#62;&#60;i&#62;&#62;&#60;/i&#62;&#60;b&#62;=, &#60;sup&#62;char-equal, char-not-equal, char-lessp, char&#60;/sup&#62; greaterp, char-not-greaterp, char-not-lessp&#60;/b&#62; &#60;i&#62;Function&#60;/i&#62; 
 
 **Syntax:** 
 
-**char**= &rest *characters*\<sup\>+\</sup\> *→ generalized-boolean* 
+**char**= &rest *characters*&#60;sup&#62;+&#60;/sup&#62; *→ generalized-boolean* 
 
-**char***/* = &rest *characters*\<sup\>+\</sup\> *→ generalized-boolean* 
+**char***/* = &rest *characters*&#60;sup&#62;+&#60;/sup&#62; *→ generalized-boolean* 
 
-**char**\< &rest *characters*\<sup\>+\</sup\> *→ generalized-boolean* 
+**char**&#60; &rest *characters*&#60;sup&#62;+&#60;/sup&#62; *→ generalized-boolean* 
 
-**char**\> &rest *characters*\<sup\>+\</sup\> *→ generalized-boolean* 
+**char**&#62; &rest *characters*&#60;sup&#62;+&#60;/sup&#62; *→ generalized-boolean* 
 
-**char**\<= &rest *characters*\<sup\>+\</sup\> *→ generalized-boolean* 
+**char**&#60;= &rest *characters*&#60;sup&#62;+&#60;/sup&#62; *→ generalized-boolean* 
 
-**char**\>= &rest *characters*\<sup\>+\</sup\> *→ generalized-boolean* 
+**char**&#62;= &rest *characters*&#60;sup&#62;+&#60;/sup&#62; *→ generalized-boolean* 
 
-**char-equal** &rest *characters*\<sup\>+\</sup\> *→ generalized-boolean* 
+**char-equal** &rest *characters*&#60;sup&#62;+&#60;/sup&#62; *→ generalized-boolean* 
 
-**char-not-equal** &rest *characters*\<sup\>+\</sup\> *→ generalized-boolean* 
+**char-not-equal** &rest *characters*&#60;sup&#62;+&#60;/sup&#62; *→ generalized-boolean* 
 
-**char-lessp** &rest *characters*\<sup\>+\</sup\> *→ generalized-boolean* 
+**char-lessp** &rest *characters*&#60;sup&#62;+&#60;/sup&#62; *→ generalized-boolean* 
 
-**char-greaterp** &rest *characters*\<sup\>+\</sup\> *→ generalized-boolean* 
+**char-greaterp** &rest *characters*&#60;sup&#62;+&#60;/sup&#62; *→ generalized-boolean* 
 
-**char-not-greaterp** &rest *characters*\<sup\>+\</sup\> *→ generalized-boolean* 
+**char-not-greaterp** &rest *characters*&#60;sup&#62;+&#60;/sup&#62; *→ generalized-boolean* 
 
-**char-not-lessp** &rest *characters*\<sup\>+\</sup\> *→ generalized-boolean* 
+**char-not-lessp** &rest *characters*&#60;sup&#62;+&#60;/sup&#62; *→ generalized-boolean* 
 
 **Arguments and Values:** 
 
@@ -148,23 +148,23 @@ These predicates compare *characters*.
 
 **char/=** returns *true* if all *characters* are different; otherwise, it returns *false*. 
 
-**char**\< returns *true* if the *characters* are monotonically increasing; otherwise, it returns *false*. If two *characters* have *identical implementation-defined attributes*, then their ordering by **char**\< is consistent with the numerical ordering by the predicate \< on their *codes*. 
+**char**&#60; returns *true* if the *characters* are monotonically increasing; otherwise, it returns *false*. If two *characters* have *identical implementation-defined attributes*, then their ordering by **char**&#60; is consistent with the numerical ordering by the predicate &#60; on their *codes*. 
 
-**char**\> returns *true* if the *characters* are monotonically decreasing; otherwise, it returns *false*. If two *characters* have *identical implementation-defined attributes*, then their ordering by **char**\> is consistent with the numerical ordering by the predicate \> on their *codes*. 
+**char**&#62; returns *true* if the *characters* are monotonically decreasing; otherwise, it returns *false*. If two *characters* have *identical implementation-defined attributes*, then their ordering by **char**&#62; is consistent with the numerical ordering by the predicate &#62; on their *codes*. 
 
-**char**\<**=** returns *true* if the *characters* are monotonically nondecreasing; otherwise, it returns *false*. If two *characters* have *identical implementation-defined attributes*, then their ordering by **char**\<**=** is consistent with the numerical ordering by the predicate \<= on their *codes*. 
+**char**&#60;**=** returns *true* if the *characters* are monotonically nondecreasing; otherwise, it returns *false*. If two *characters* have *identical implementation-defined attributes*, then their ordering by **char**&#60;**=** is consistent with the numerical ordering by the predicate &#60;= on their *codes*. 
 
-**char**\>**=** returns *true* if the *characters* are monotonically nonincreasing; otherwise, it returns *false*. 
-
- 
+**char**&#62;**=** returns *true* if the *characters* are monotonically nonincreasing; otherwise, it returns *false*. 
 
  
 
-**char=, char/=, char***\<***, char***\>***, char***\<***=, char***\>***=,** *. . .* 
+ 
 
-If two *characters* have *identical implementation-defined attributes*, then their ordering by **char**\>**=** is consistent with the numerical ordering by the predicate \>= on their *codes*. 
+**char=, char/=, char***&#60;***, char***&#62;***, char***&#60;***=, char***&#62;***=,** *. . .* 
 
-**char-equal**, **char-not-equal**, **char-lessp**, **char-greaterp**, **char-not-greaterp**, and **char-not-lessp** are similar to **char=**, **char/=**, **char**\<, **char**\>, **char**\<**=**, **char**\>**=**, respectively, except that they ignore differences in *case* and might have an *implementation-defined* behavior for *non-simple characters*. For example, an *implementation* might define that **char-equal**, *etc.* ignore certain *implementation-defined attributes*. The effect, if any, of each *implementation-defined attribute* upon these functions must be specified as part of the definition of that *attribute*. 
+If two *characters* have *identical implementation-defined attributes*, then their ordering by **char**&#62;**=** is consistent with the numerical ordering by the predicate &#62;= on their *codes*. 
+
+**char-equal**, **char-not-equal**, **char-lessp**, **char-greaterp**, **char-not-greaterp**, and **char-not-lessp** are similar to **char=**, **char/=**, **char**&#60;, **char**&#62;, **char**&#60;**=**, **char**&#62;**=**, respectively, except that they ignore differences in *case* and might have an *implementation-defined* behavior for *non-simple characters*. For example, an *implementation* might define that **char-equal**, *etc.* ignore certain *implementation-defined attributes*. The effect, if any, of each *implementation-defined attribute* upon these functions must be specified as part of the definition of that *attribute*. 
 
 **Examples:** 
 
@@ -198,41 +198,41 @@ If two *characters* have *identical implementation-defined attributes*, then the
 
 (char/= #\d #\c #\d) *→ false* 
 
-(char\< #\d #\x) *→ true* 
+(char&#60; #\d #\x) *→ true* 
 
-(char\<= #\d #\x) *→ true* 
+(char&#60;= #\d #\x) *→ true* 
 
-(char\< #\d #\d) *→ false* 
+(char&#60; #\d #\d) *→ false* 
 
-(char\<= #\d #\d) *→ true* 
+(char&#60;= #\d #\d) *→ true* 
 
-(char\< #\a #\e #\y #\z) *→ true* 
+(char&#60; #\a #\e #\y #\z) *→ true* 
 
-(char\<= #\a #\e #\y #\z) *→ true* 
+(char&#60;= #\a #\e #\y #\z) *→ true* 
 
-(char\< #\a #\e #\e #\y) *→ false* 
+(char&#60; #\a #\e #\e #\y) *→ false* 
 
-(char\<= #\a #\e #\e #\y) *→ true* 
+(char&#60;= #\a #\e #\e #\y) *→ true* 
 
-(char\> #\e #\d) *→ true* 
+(char&#62; #\e #\d) *→ true* 
 
-(char\>= #\e #\d) *→ true* 
+(char&#62;= #\e #\d) *→ true* 
 
-(char\> #\d #\c #\b #\a) *→ true* 
+(char&#62; #\d #\c #\b #\a) *→ true* 
 
-(char\>= #\d #\c #\b #\a) *→ true* 
+(char&#62;= #\d #\c #\b #\a) *→ true* 
 
-(char\> #\d #\d #\c #\a) *→ false* 
+(char&#62; #\d #\d #\c #\a) *→ false* 
 
-(char\>= #\d #\d #\c #\a) *→ true* 
+(char&#62;= #\d #\d #\c #\a) *→ true* 
 
-(char\> #\e #\d #\b #\c #\a) *→ false* 
+(char&#62; #\e #\d #\b #\c #\a) *→ false* 
 
-(char\>= #\e #\d #\b #\c #\a) *→ false* 
+(char&#62;= #\e #\d #\b #\c #\a) *→ false* 
 
-(char\> #\z #\A) *→ implementation-dependent* 
+(char&#62; #\z #\A) *→ implementation-dependent* 
 
-(char\> #\Z #\a) *→ implementation-dependent* 
+(char&#62; #\Z #\a) *→ implementation-dependent* 
 
 (char-equal #\A #\a) *→ true* 
 
@@ -246,7 +246,7 @@ Characters **13–11**
 
 *→* (#\A #\a #\b #\B #\c #\C) 
 
-(stable-sort (list #\b #\A #\B #\a #\c #\C) #’char\<) 
+(stable-sort (list #\b #\A #\B #\a #\c #\C) #’char&#60;) 
 
 *→* (#\A #\B #\C #\a #\b #\c) ;Implementation A 
 
@@ -272,7 +272,7 @@ If characters differ in their *code attribute* or any *implementation-defined at
 
 There is no requirement that (eq c1 c2) be true merely because (char= c1 c2) is *true*. While **eq** can distinguish two *characters* that **char=** does not, it is distinguishing them not as *characters*, but in some sense on the basis of a lower level implementation characteristic. If (eq c1 c2) is *true*, then (char= c1 c2) is also true. **eql** and **equal** compare *characters* in the same way that **char=** does. 
 
-The manner in which *case* is used by **char-equal**, **char-not-equal**, **char-lessp**, **char-greaterp**, **char-not-greaterp**, and **char-not-lessp** implies an ordering for *standard characters* such that A=a, B=b, and so on, up to Z=z, and furthermore either 9\<A or Z\<0. 
+The manner in which *case* is used by **char-equal**, **char-not-equal**, **char-lessp**, **char-greaterp**, **char-not-greaterp**, and **char-not-lessp** implies an ordering for *standard characters* such that A=a, B=b, and so on, up to Z=z, and furthermore either 9&#60;A or Z&#60;0. 
 
 **character** *Function* 
 
@@ -384,7 +384,7 @@ Characters **13–13**
 
 **Description:** 
 
-Returns *true* if *character* is an *alphabetic*\<sub\>1\</sub\> *character* ; otherwise, returns *false*. 
+Returns *true* if *character* is an *alphabetic*&#60;sub&#62;1&#60;/sub&#62; *character* ; otherwise, returns *false*. 
 
 **Examples:** 
 
@@ -430,7 +430,7 @@ Should signal an error of *type* **type-error** if *character* is not a *charact
 
 **Description:** 
 
-Returns *true* if *character* is an *alphabetic*\<sub\>1\</sub\> *character* or a *numeric character* ; otherwise, returns *false*. 
+Returns *true* if *character* is an *alphabetic*&#60;sub&#62;1&#60;/sub&#62; *character* or a *numeric character* ; otherwise, returns *false*. 
 
 **Examples:** 
 
@@ -484,7 +484,7 @@ Characters **13–15**
 
 **Description:** 
 
-If *weight* is less than *radix*, **digit-char** returns a *character* which has that *weight* when considered as a digit in the specified radix. If the resulting *character* is to be an *alphabetic*\<sub\>1\</sub\> *character* , it will be an uppercase *character* . 
+If *weight* is less than *radix*, **digit-char** returns a *character* which has that *weight* when considered as a digit in the specified radix. If the resulting *character* is to be an *alphabetic*&#60;sub&#62;1&#60;/sub&#62; *character* , it will be an uppercase *character* . 
 
 If *weight* is greater than or equal to *radix*, **digit-char** returns *false*. 
 
@@ -964,21 +964,21 @@ The *standard characters hNewlinei* and *hSpacei* have the respective names "New
 
 *→* NIL 
 
-\<i\>\<sup\>or\</sup\>→\</i\> "LOWERCASE-a" 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; "LOWERCASE-a" 
 
-\<i\>\<sup\>or\</sup\>→\</i\> "Small-A" 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; "Small-A" 
 
-\<i\>\<sup\>or\</sup\>→\</i\> "LA01" 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; "LA01" 
 
 (char-name #\A) 
 
 *→* NIL 
 
-\<i\>\<sup\>or\</sup\>→\</i\> "UPPERCASE-A" 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; "UPPERCASE-A" 
 
-\<i\>\<sup\>or\</sup\>→\</i\> "Capital-A" 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; "Capital-A" 
 
-\<i\>\<sup\>or\</sup\>→\</i\> "LA02" 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; "LA02" 
 
 ;; Even though its CHAR-NAME can vary, #\A prints as #\A 
 

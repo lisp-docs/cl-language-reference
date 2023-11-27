@@ -12,9 +12,9 @@ The *restarts established* by a **restart-bind** *form*, a **restart-case** *for
 
 *Restarts* of the same name can be ordered from least recent to most recent according to the following two rules: 
 
-1\. Each *restart* in a set of active restarts *R*\<sub\>1\</sub\> is more recent than every *restart* in a set *R*\<sub\>2\</sub\> if the *restarts* in *R*\<sub\>2\</sub\> were active when the *restarts* in *R*\<sub\>1\</sub\> were established. 
+1\. Each *restart* in a set of active restarts *R*&#60;sub&#62;1&#60;/sub&#62; is more recent than every *restart* in a set *R*&#60;sub&#62;2&#60;/sub&#62; if the *restarts* in *R*&#60;sub&#62;2&#60;/sub&#62; were active when the *restarts* in *R*&#60;sub&#62;1&#60;/sub&#62; were established. 
 
-2\. Let *r*\<sub\>1\</sub\> and *r*\<sub\>2\</sub\> be two active *restarts* with the same name established by the same *form*. Then *r*\<sub\>1\</sub\> is more recent than *r*\<sub\>2\</sub\> if *r*\<sub\>1\</sub\> was defined to the left of *r*\<sub\>2\</sub\> in the *form* that established them. 
+2\. Let *r*&#60;sub&#62;1&#60;/sub&#62; and *r*&#60;sub&#62;2&#60;/sub&#62; be two active *restarts* with the same name established by the same *form*. Then *r*&#60;sub&#62;1&#60;/sub&#62; is more recent than *r*&#60;sub&#62;2&#60;/sub&#62; if *r*&#60;sub&#62;1&#60;/sub&#62; was defined to the left of *r*&#60;sub&#62;2&#60;/sub&#62; in the *form* that established them. 
 
 
 

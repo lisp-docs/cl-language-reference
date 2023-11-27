@@ -4,7 +4,7 @@
 
 #xF00 *≡* 3840 
 
-#x105 *≡* 261 ;105\<sub\>16\</sub\> 
+#x105 *≡* 261 ;105&#60;sub&#62;16&#60;/sub&#62; 
 
 The consequences are undefined if the token immediately following the #X does not have the syntax of a hexadecimal (*i.e.*, radix 16) *rational*. 
 

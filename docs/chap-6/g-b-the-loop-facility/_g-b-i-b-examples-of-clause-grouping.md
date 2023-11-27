@@ -46,9 +46,9 @@ finally
 
 (loop for i in ’(1 2 3 4 5 6) 
 
-when (and (\> i 3) i) 
+when (and (&#62; i 3) i) 
 
-collect it) ; IT refers to (and (\> i 3) i). 
+collect it) ; IT refers to (and (&#62; i 3) i). 
 
 *→* (4 5 6) 
 
@@ -56,7 +56,7 @@ collect it) ; IT refers to (and (\> i 3) i).
 
 (loop for i in ’(1 2 3 4 5 6) 
 
-when (and (\> i 3) i) 
+when (and (&#62; i 3) i) 
 
 return it) 
 
@@ -66,7 +66,7 @@ return it)
 
 (loop for i in ’(1 2 3 4 5 6) 
 
-thereis (and (\> i 3) i)) 
+thereis (and (&#62; i 3) i)) 
 
 *→* 4 
 

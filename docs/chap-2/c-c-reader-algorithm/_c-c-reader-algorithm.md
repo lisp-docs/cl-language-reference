@@ -10,7 +10,7 @@ The algorithm performed by the *Lisp reader* is as follows:
 
 2\. If *x* is an *invalid character* , an error of *type* **reader-error** is signaled. 
 
-3\. If *x* is a *whitespace*\<sub\>2\</sub\> *character* , then it is discarded and step 1 is re-entered. 
+3\. If *x* is a *whitespace*&#60;sub&#62;2&#60;/sub&#62; *character* , then it is discarded and step 1 is re-entered. 
 
 4\. If *x* is a *terminating* or *non-terminating macro character* then its associated *reader macro function* is called with two *arguments*, the *input stream* and *x*. 
 
@@ -20,7 +20,7 @@ The *reader macro function* must not have any side effects other than on the *in
 
 The *reader macro function* may return zero values or one value. If one value is returned, then that value is returned as the result of the read operation; the algorithm is done. If zero values are returned, then step 1 is re-entered. 
 
-5\. If *x* is a *single escape character* then the next *character* , *y*, is read, or an error of *type* **end-of-file** is signaled if at the end of file. *y* is treated as if it is a *constituent* whose only *constituent trait* is *alphabetic*\<sub\>2\</sub\>. *y* is used to begin a *token*, and step 8 is entered. 
+5\. If *x* is a *single escape character* then the next *character* , *y*, is read, or an error of *type* **end-of-file** is signaled if at the end of file. *y* is treated as if it is a *constituent* whose only *constituent trait* is *alphabetic*&#60;sub&#62;2&#60;/sub&#62;. *y* is used to begin a *token*, and step 8 is entered. 
 
 6\. If *x* is a *multiple escape character* then a *token* (initially containing no *characters*) is begun and step 9 is entered. 
 
@@ -46,7 +46,7 @@ Reader).
 
 – Step 8 is repeated. 
 
-*•* If *y* is a *single escape character* , then the next *character* , *z*, is read, or an error of *type* **end-of-file** is signaled if at end of file. *Z* is treated as if it is a *constituent* whose only *constituent trait* is *alphabetic*\<sub\>2\</sub\>. *Z* is appended to the *token* being built, and step 8 is repeated. 
+*•* If *y* is a *single escape character* , then the next *character* , *z*, is read, or an error of *type* **end-of-file** is signaled if at end of file. *Z* is treated as if it is a *constituent* whose only *constituent trait* is *alphabetic*&#60;sub&#62;2&#60;/sub&#62;. *Z* is appended to the *token* being built, and step 8 is repeated. 
 
 *•* If *y* is a *multiple escape character* , then step 9 is entered. 
 
@@ -54,13 +54,13 @@ Reader).
 
 *•* If *y* is a *terminating macro character* , then it terminates the *token*. First the *character y* is unread (see **unread-char**), and then step 10 is entered. 
 
-*•* If *y* is a *whitespace*\<sub\>2\</sub\> *character* , then it terminates the *token*. First the *character y* is unread if appropriate (see **read-preserving-whitespace**), and then step 10 is entered. 
+*•* If *y* is a *whitespace*&#60;sub&#62;2&#60;/sub&#62; *character* , then it terminates the *token*. First the *character y* is unread if appropriate (see **read-preserving-whitespace**), and then step 10 is entered. 
 
 9\. At this point a *token* is being accumulated, and an odd number of *multiple escape characters* have been encountered. If at end of file, an error of *type* **end-of-file** is signaled. Otherwise, a *character* , *y*, is read, and one of the following actions is performed according to its *syntax type*: 
 
-*•* If *y* is a *constituent*, macro, or *whitespace*\<sub\>2\</sub\> *character* , *y* is treated as a *constituent* whose only *constituent trait* is *alphabetic*\<sub\>2\</sub\>. *Y* is appended to the *token* being built, and step 9 is repeated. 
+*•* If *y* is a *constituent*, macro, or *whitespace*&#60;sub&#62;2&#60;/sub&#62; *character* , *y* is treated as a *constituent* whose only *constituent trait* is *alphabetic*&#60;sub&#62;2&#60;/sub&#62;. *Y* is appended to the *token* being built, and step 9 is repeated. 
 
-*•* If *y* is a *single escape character* , then the next *character* , *z*, is read, or an error of *type* **end-of-file** is signaled if at end of file. *Z* is treated as a *constituent* whose only *constituent trait* is *alphabetic*\<sub\>2\</sub\>. *Z* is appended to the *token* being built, and step 9 is repeated.  
+*•* If *y* is a *single escape character* , then the next *character* , *z*, is read, or an error of *type* **end-of-file** is signaled if at end of file. *Z* is treated as a *constituent* whose only *constituent trait* is *alphabetic*&#60;sub&#62;2&#60;/sub&#62;. *Z* is appended to the *token* being built, and step 9 is repeated.  
 
 
 

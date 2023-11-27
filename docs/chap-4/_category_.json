@@ -1,7 +1,8 @@
 {
-  'label': '4. Types and Classes',
-  'link': {
-    'type': 'generated-index',
-    'description': '4. Types and Classes'
+  "label": "4. Types and Classes",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "4. Types and Classes"
   }
 }

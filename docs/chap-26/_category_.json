@@ -1,7 +1,8 @@
 {
-  'label': '26. Glossary',
-  'link': {
-    'type': 'generated-index',
-    'description': '26. Glossary'
+  "label": "26. Glossary",
+  "position": 26,
+  "link": {
+    "type": "generated-index",
+    "description": "26. Glossary"
   }
 }

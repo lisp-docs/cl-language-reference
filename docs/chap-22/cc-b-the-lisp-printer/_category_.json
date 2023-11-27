@@ -1,7 +1,8 @@
 {
-  'label': '**22.1 The Lisp Printer** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**22.1 The Lisp Printer** '
+  "label": "22.1 The Lisp Printer",
+  "position": 22.1,
+  "link": {
+    "type": "generated-index",
+    "description": "22.1 The Lisp Printer"
   }
 }

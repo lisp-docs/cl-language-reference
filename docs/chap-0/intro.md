@@ -68,7 +68,7 @@ Chapter 12 (Numbers) 12–1. Operators relating to Arithmetic. . . . . . . . . .
 
 
 
-12–2. Defined names relating to Exponentials, Logarithms, and Trigonometry. . . . . . . . . . . 12–1 12–3. Operators for numeric comparison and predication. . . . . . . . . . . . . . . . . . . . . . . . . . . 12–1 12–4. Defined names relating to numeric type manipulation and coercion. . . . . . . . . . . . . . . 12–2 12–5. Defined names relating to logical operations on numbers. . . . . . . . . . . . . . . . . . . . . . 12–3 12–6. Defined names relating to byte manipulation. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–4 12–7. Defined names relating to implementation-dependent details about numbers. . . . . . . . 12–4 12–8. Functions Affected by Rule of Float Substitutability . . . . . . . . . . . . . . . . . . . . . . . . . 12–6 12–9. Trigonometric Identities for Complex Domain . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–9 12–10. Quadrant Numbering for Branch Cuts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–9 12–11. Random-state defined names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–10 12–12. Recommended Minimum Floating-Point Precision and Exponent Size . . . . . . . . . . 12–14 12–13. Uses of /=, =, \<, \>, \<=, and \>= . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–22 12–14. Mathematical definition of arc sine, arc cosine, and arc tangent . . . . . . . . . . . . . . . 12–29 12–15. Quadrant information for arc tangent . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–31 12–16. Mathematical definitions for hyperbolic functions . . . . . . . . . . . . . . . . . . . . . . . . . 12–33 12–17. Bit-Wise Logical Operations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–68 12–18. Bit-wise Logical Operations on Integers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–72 
+12–2. Defined names relating to Exponentials, Logarithms, and Trigonometry. . . . . . . . . . . 12–1 12–3. Operators for numeric comparison and predication. . . . . . . . . . . . . . . . . . . . . . . . . . . 12–1 12–4. Defined names relating to numeric type manipulation and coercion. . . . . . . . . . . . . . . 12–2 12–5. Defined names relating to logical operations on numbers. . . . . . . . . . . . . . . . . . . . . . 12–3 12–6. Defined names relating to byte manipulation. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–4 12–7. Defined names relating to implementation-dependent details about numbers. . . . . . . . 12–4 12–8. Functions Affected by Rule of Float Substitutability . . . . . . . . . . . . . . . . . . . . . . . . . 12–6 12–9. Trigonometric Identities for Complex Domain . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–9 12–10. Quadrant Numbering for Branch Cuts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–9 12–11. Random-state defined names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–10 12–12. Recommended Minimum Floating-Point Precision and Exponent Size . . . . . . . . . . 12–14 12–13. Uses of /=, =, &#60;, &#62;, &#60;=, and &#62;= . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–22 12–14. Mathematical definition of arc sine, arc cosine, and arc tangent . . . . . . . . . . . . . . . 12–29 12–15. Quadrant information for arc tangent . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–31 12–16. Mathematical definitions for hyperbolic functions . . . . . . . . . . . . . . . . . . . . . . . . . 12–33 12–17. Bit-Wise Logical Operations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–68 12–18. Bit-wise Logical Operations on Integers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–72 
 
 Chapter 13 (Characters) 13–1. Character defined names – 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13–1 13–2. Character defined names – 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13–1 
 
@@ -482,15 +482,15 @@ Index**i**
 
 ; 2–24 
 
-\< 12–20 
+&#60; 12–20 
 
-\<**=** 12–20 
+&#60;**=** 12–20 
 
 **=** 12–20 
 
-\\> 12–20 
+\&#62; 12–20 
 
-\\>**=** 12–20 
+\&#62;**=** 12–20 
 
 A (format directive) 22–31 
 
@@ -942,15 +942,15 @@ char-meta-bit A–1 **char-name** 13–24
 
 
 
-**char**\< 13–10 
+**char**&#60; 13–10 
 
-**char**\<**=** 13–10 
+**char**&#60;**=** 13–10 
 
 **char=** 13–10 
 
-**char**\> 13–10 
+**char**&#62; 13–10 
 
-**char**\>**=** 13–10 
+**char**&#62;**=** 13–10 
 
 *character* 13–1, 21–1, 26–9 
 
@@ -3322,15 +3322,15 @@ string-char-p A–1
 
 **string/=** 16–10 
 
-**string**\< 16–10 
+**string**&#60; 16–10 
 
-**string**\<**=** 16–10 
+**string**&#60;**=** 16–10 
 
 **string=** 16–10 
 
-**string**\> 16–10 
+**string**&#62; 16–10 
 
-**string**\>**=** 16–10 
+**string**&#62;**=** 16–10 
 
 **stringp** 16–12 
 
@@ -4014,7 +4014,7 @@ Language Cleanup Masinter, Larry
 
 Fahlman, Scott 
 
-Lisp\<sub\>1\</sub\>/Lisp\<sub\>2\</sub\> Gabriel, Richard P. 
+Lisp&#60;sub&#62;1&#60;/sub&#62;/Lisp&#60;sub&#62;2&#60;/sub&#62; Gabriel, Richard P. 
 
 Macros Haflich, Steven M. 
 

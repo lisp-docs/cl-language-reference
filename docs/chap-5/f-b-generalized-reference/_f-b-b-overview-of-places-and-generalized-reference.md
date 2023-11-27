@@ -8,14 +8,14 @@ Figure 5–1 contains examples of the use of **setf**. Note that the values retu
 
 |**Access function Update Function Update using setf**|
 | :- |
-|\<p\>x (setq x datum) (setf x datum) \</p\>\<p\>(car x) (rplaca x datum) (setf (car x) datum) (symbol-value x) (set x datum) (setf (symbol-value x) datum)\</p\>|
+|&#60;p&#62;x (setq x datum) (setf x datum) &#60;/p&#62;&#60;p&#62;(car x) (rplaca x datum) (setf (car x) datum) (symbol-value x) (set x datum) (setf (symbol-value x) datum)&#60;/p&#62;|
 
 
 **Figure 5–1. Examples of setf** 
 
 Figure 5–2 shows *operators* relating to *places* and *generalized reference*. 
 
-|\<p\>**assert defsetf push** \</p\>\<p\>**ccase get-setf-expansion remf** \</p\>\<p\>**ctypecase getf rotatef decf incf setf** \</p\>\<p\>**define-modify-macro pop shiftf define-setf-expander psetf**\</p\>|
+|&#60;p&#62;**assert defsetf push** &#60;/p&#62;&#60;p&#62;**ccase get-setf-expansion remf** &#60;/p&#62;&#60;p&#62;**ctypecase getf rotatef decf incf setf** &#60;/p&#62;&#60;p&#62;**define-modify-macro pop shiftf define-setf-expander psetf**&#60;/p&#62;|
 | :- |
 
 

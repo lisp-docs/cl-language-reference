@@ -6,7 +6,7 @@ The phrasing “an *array specialized* to *type hhtype&#10217;” is sometimes u
 
 Figure 15–1 lists some *defined names* that are applicable to *array* creation, *access*, and information operations. 
 
-|\<p\>**adjust-array array-has-fill-pointer-p make-array** \</p\>\<p\>**adjustable-array-p array-in-bounds-p svref** \</p\>\<p\>**aref array-rank upgraded-array-element-type array-dimension array-rank-limit upgraded-complex-part-type array-dimension-limit array-row-major-index vector** \</p\>\<p\>**array-dimensions array-total-size vector-pop** \</p\>\<p\>**array-displacement array-total-size-limit vector-push** \</p\>\<p\>**array-element-type fill-pointer vector-push-extend**\</p\>|
+|&#60;p&#62;**adjust-array array-has-fill-pointer-p make-array** &#60;/p&#62;&#60;p&#62;**adjustable-array-p array-in-bounds-p svref** &#60;/p&#62;&#60;p&#62;**aref array-rank upgraded-array-element-type array-dimension array-rank-limit upgraded-complex-part-type array-dimension-limit array-row-major-index vector** &#60;/p&#62;&#60;p&#62;**array-dimensions array-total-size vector-pop** &#60;/p&#62;&#60;p&#62;**array-displacement array-total-size-limit vector-push** &#60;/p&#62;&#60;p&#62;**array-element-type fill-pointer vector-push-extend**&#60;/p&#62;|
 | :- |
 
 

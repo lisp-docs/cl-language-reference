@@ -14,7 +14,7 @@
 
 ;; Now we can get down to some serious computation. 
 
-(cond ((\< n 0) 
+(cond ((&#60; n 0) 
 
 ;; Hey, this is just supposed to be a simple example. 
 
@@ -22,7 +22,7 @@
 
 (error "FIB got ~D as an argument." n)) 
 
-((\< n 2) n) ;fib[0]=0 and fib[1]=1 
+((&#60; n 2) n) ;fib[0]=0 and fib[1]=1 
 
 ;; The cheap cases didn’t work. 
 

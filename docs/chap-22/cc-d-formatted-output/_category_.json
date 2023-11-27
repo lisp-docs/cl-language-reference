@@ -1,7 +1,8 @@
 {
-  'label': '**22.3 Formatted Output** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**22.3 Formatted Output** '
+  "label": "22.3 Formatted Output",
+  "position": 22.3,
+  "link": {
+    "type": "generated-index",
+    "description": "22.3 Formatted Output"
   }
 }

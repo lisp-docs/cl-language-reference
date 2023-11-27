@@ -1,7 +1,8 @@
 {
-  'label': '24. System Construction',
-  'link': {
-    'type': 'generated-index',
-    'description': '24. System Construction'
+  "label": "24. System Construction",
+  "position": 24,
+  "link": {
+    "type": "generated-index",
+    "description": "24. System Construction"
   }
 }

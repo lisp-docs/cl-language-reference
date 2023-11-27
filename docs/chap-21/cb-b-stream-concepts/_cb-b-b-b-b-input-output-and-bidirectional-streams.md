@@ -4,7 +4,7 @@ A *stream*, whether a *character stream* or a *binary stream*, can be an *input 
 
 Figure 21–2 shows *operators* relating to *input streams*. 
 
-|\<p\>**clear-input read-byte read-from-string** \</p\>\<p\>**listen read-char read-line** \</p\>\<p\>**peek-char read-char-no-hang read-preserving-whitespace read read-delimited-list unread-char**\</p\>|
+|&#60;p&#62;**clear-input read-byte read-from-string** &#60;/p&#62;&#60;p&#62;**listen read-char read-line** &#60;/p&#62;&#60;p&#62;**peek-char read-char-no-hang read-preserving-whitespace read read-delimited-list unread-char**&#60;/p&#62;|
 | :- |
 
 
@@ -18,7 +18,7 @@ Streams **21–1**
 
 Figure 21–3 shows *operators* relating to *output streams*. 
 
-|\<p\>**clear-output prin1 write** \</p\>\<p\>**finish-output prin1-to-string write-byte** \</p\>\<p\>**force-output princ write-char** \</p\>\<p\>**format princ-to-string write-line** \</p\>\<p\>**fresh-line print write-string** \</p\>\<p\>**pprint terpri write-to-string**\</p\>|
+|&#60;p&#62;**clear-output prin1 write** &#60;/p&#62;&#60;p&#62;**finish-output prin1-to-string write-byte** &#60;/p&#62;&#60;p&#62;**force-output princ write-char** &#60;/p&#62;&#60;p&#62;**format princ-to-string write-line** &#60;/p&#62;&#60;p&#62;**fresh-line print write-string** &#60;/p&#62;&#60;p&#62;**pprint terpri write-to-string**&#60;/p&#62;|
 | :- |
 
 

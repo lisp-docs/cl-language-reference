@@ -4,7 +4,7 @@ Syntax information for use by the *Lisp reader* is embodied in an *object* calle
 
 Figure 2–1 lists some *defined names* that are applicable to *readtables*. 
 
-|\<p\>**\*readtable\* readtable-case** \</p\>\<p\>**copy-readtable readtablep** \</p\>\<p\>**get-dispatch-macro-character set-dispatch-macro-character get-macro-character set-macro-character** \</p\>\<p\>**make-dispatch-macro-character set-syntax-from-char**\</p\>|
+|&#60;p&#62;**\*readtable\* readtable-case** &#60;/p&#62;&#60;p&#62;**copy-readtable readtablep** &#60;/p&#62;&#60;p&#62;**get-dispatch-macro-character set-dispatch-macro-character get-macro-character set-macro-character** &#60;/p&#62;&#60;p&#62;**make-dispatch-macro-character set-syntax-from-char**&#60;/p&#62;|
 | :- |
 
 

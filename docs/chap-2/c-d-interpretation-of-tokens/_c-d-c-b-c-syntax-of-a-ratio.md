@@ -6,7 +6,7 @@
 
 
 
-|\<p\>2/3 ;This is in canonical form \</p\>\<p\>4/6 ;A non-canonical form for 2/3 \</p\>\<p\>-17/23 ;A ratio preceded by a sign \</p\>\<p\>-30517578125/32768 ;This is (*−*5*/*2)\<sup\>15\</sup\> \</p\>\<p\>10/5 ;The canonical form for this is 2 \</p\>\<p\>#o-101/75 ;Octal notation for *−*65*/*61 \</p\>\<p\>#3r120/21 ;Ternary notation for 15*/*7 \</p\>\<p\>#Xbc/ad ;Hexadecimal notation for 188*/*173 \</p\>\<p\>#xFADED/FACADE ;Hexadecimal notation for 1027565*/*16435934\</p\>|
+|&#60;p&#62;2/3 ;This is in canonical form &#60;/p&#62;&#60;p&#62;4/6 ;A non-canonical form for 2/3 &#60;/p&#62;&#60;p&#62;-17/23 ;A ratio preceded by a sign &#60;/p&#62;&#60;p&#62;-30517578125/32768 ;This is (*−*5*/*2)&#60;sup&#62;15&#60;/sup&#62; &#60;/p&#62;&#60;p&#62;10/5 ;The canonical form for this is 2 &#60;/p&#62;&#60;p&#62;#o-101/75 ;Octal notation for *−*65*/*61 &#60;/p&#62;&#60;p&#62;#3r120/21 ;Ternary notation for 15*/*7 &#60;/p&#62;&#60;p&#62;#Xbc/ad ;Hexadecimal notation for 188*/*173 &#60;/p&#62;&#60;p&#62;#xFADED/FACADE ;Hexadecimal notation for 1027565*/*16435934&#60;/p&#62;|
 | :- |
 
 

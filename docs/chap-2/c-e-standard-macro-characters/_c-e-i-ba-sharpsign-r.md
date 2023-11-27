@@ -8,7 +8,7 @@ For example, #3r102 is another way of writing 11 (decimal), and #11R32 is anothe
 
 Figure 2–20 contains examples of the use of #B, #O, #X, and #R. 
 
-|\<p\>#2r11010101 ;Another way of writing 213 decimal \</p\>\<p\>#b11010101 ;Ditto \</p\>\<p\>#b+11010101 ;Ditto \</p\>\<p\>#o325 ;Ditto, in octal radix \</p\>\<p\>#xD5 ;Ditto, in hexadecimal radix \</p\>\<p\>#16r+D5 ;Ditto \</p\>\<p\>#o-300 ;Decimal -192, written in base 8 \</p\>\<p\>#3r-21010 ;Same thing in base 3 \</p\>\<p\>#25R-7H ;Same thing in base 25 \</p\>\<p\>#xACCEDED ;181202413, in hexadecimal radix\</p\>|
+|&#60;p&#62;#2r11010101 ;Another way of writing 213 decimal &#60;/p&#62;&#60;p&#62;#b11010101 ;Ditto &#60;/p&#62;&#60;p&#62;#b+11010101 ;Ditto &#60;/p&#62;&#60;p&#62;#o325 ;Ditto, in octal radix &#60;/p&#62;&#60;p&#62;#xD5 ;Ditto, in hexadecimal radix &#60;/p&#62;&#60;p&#62;#16r+D5 ;Ditto &#60;/p&#62;&#60;p&#62;#o-300 ;Decimal -192, written in base 8 &#60;/p&#62;&#60;p&#62;#3r-21010 ;Same thing in base 3 &#60;/p&#62;&#60;p&#62;#25R-7H ;Same thing in base 25 &#60;/p&#62;&#60;p&#62;#xACCEDED ;181202413, in hexadecimal radix&#60;/p&#62;|
 | :- |
 
 

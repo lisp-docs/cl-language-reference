@@ -6,19 +6,19 @@ A *generic function lambda list* is used by **defgeneric**.
 
 A *generic function lambda list* has the following syntax: 
 
-*lambda-list::*=(*\{var\}*\* 
+*lambda-list::*=(*&#123;var&#125;*\* 
 
-[&optional *\{var |* (*var*)*\}*\*] 
+[&optional *&#123;var |* (*var*)*&#125;*\*] 
 
 [&rest *var*] 
 
-[&key *\{var |* (*\{var |* (*keyword-name var*)*\}*)*\}*\* 
+[&key *&#123;var |* (*&#123;var |* (*keyword-name var*)*&#125;*)*&#125;*\* 
 
 [&allow-other-keys]]) 
 
 A *generic function lambda list* can contain the *lambda list keywords* shown in Figure 3–14. 
 
-|\<p\>**&allow-other-keys &optional** \</p\>\<p\>**&key &rest**\</p\>|
+|&#60;p&#62;**&allow-other-keys &optional** &#60;/p&#62;&#60;p&#62;**&key &rest**&#60;/p&#62;|
 | :- |
 
 

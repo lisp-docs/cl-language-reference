@@ -1,7 +1,8 @@
 {
-  'label': '**4.2 Types** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**4.2 Types** '
+  "label": "4.2 Types",
+  "position": 4.2,
+  "link": {
+    "type": "generated-index",
+    "description": "4.2 Types"
   }
 }

@@ -10,7 +10,7 @@ The *variable* **\*break-on-signals\*** can be used to cause the debugger to be 
 
 Figure 9–5 shows *defined names* relating to the *signaling* of *conditions*. 
 
-|\<p\>**\*break-on-signals\* error warn** \</p\>\<p\>**cerror signal**\</p\>|
+|&#60;p&#62;**\*break-on-signals\* error warn** &#60;/p&#62;&#60;p&#62;**cerror signal**&#60;/p&#62;|
 | :- |
 
 

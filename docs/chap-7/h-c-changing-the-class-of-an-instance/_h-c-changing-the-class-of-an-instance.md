@@ -1,6 +1,6 @@
  
 
-The *function* **change-class** can be used to change the *class* of an *instance* from its current class, *C*\<sub\>from\</sub\>, to a different class, *C*\<sub\>to\</sub\>; it changes the structure of the *instance* to conform to the definition of the class *C*\<sub\>to\</sub\>. 
+The *function* **change-class** can be used to change the *class* of an *instance* from its current class, *C*&#60;sub&#62;from&#60;/sub&#62;, to a different class, *C*&#60;sub&#62;to&#60;/sub&#62;; it changes the structure of the *instance* to conform to the definition of the class *C*&#60;sub&#62;to&#60;/sub&#62;. 
 
 Note that changing the *class* of an *instance* may cause *slots* to be added or deleted. Changing the *class* of an *instance* does not change its identity as defined by the **eq** function. 
 

@@ -24,7 +24,7 @@ For example, **mapcar** receives a *function designator* as an argument, and its
 
 *→* (2 3 4 5) 
 
-\<i\>\<sup\>or\</sup\>→\</i\> (2 4 5 6) 
+&#60;i&#62;&#60;sup&#62;or&#60;/sup&#62;→&#60;/i&#62; (2 4 5 6) 
 
 In a few rare situations, there may be a need in a dictionary entry to refer to the *object* that was the original *designator* for a *parameter* . Since naming the *parameter* would refer to the denoted *object*, the phrase “the &#10216;parameter-nameii designator*” can be used to refer to the *designator* which was the *argument* from which the *value* of &#10216;parameter-name&#10217; was computed. 
 

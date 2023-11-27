@@ -1,7 +1,8 @@
 {
-  'label': '**25.1 The External Environment** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**25.1 The External Environment** '
+  "label": "25.1 The External Environment",
+  "position": 25.1,
+  "link": {
+    "type": "generated-index",
+    "description": "25.1 The External Environment"
   }
 }

@@ -1,7 +1,8 @@
 {
-  'label': '20. Files',
-  'link': {
-    'type': 'generated-index',
-    'description': '20. Files'
+  "label": "20. Files",
+  "position": 20,
+  "link": {
+    "type": "generated-index",
+    "description": "20. Files"
   }
 }

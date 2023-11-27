@@ -1,6 +1,6 @@
  
 
-A *generic function* is a function whose behavior depends on the *classes* or identities of the *arguments* supplied to it. A *generic function object* is associated with a set of *methods*, a *lambda list*, a *method combination*\<sub\>2\</sub\>, and other information. 
+A *generic function* is a function whose behavior depends on the *classes* or identities of the *arguments* supplied to it. A *generic function object* is associated with a set of *methods*, a *lambda list*, a *method combination*&#60;sub&#62;2&#60;/sub&#62;, and other information. 
 
 Like an *ordinary function*, a *generic function* takes *arguments*, performs a series of operations, and perhaps returns useful *values*. An *ordinary function* has a single body of *code* that is always *executed* when the *function* is called. A *generic function* has a set of bodies of *code* of which a subset is selected for *execution*. The selected bodies of *code* and the manner of their combination are determined by the *classes* or identities of one or more of the *arguments* to the *generic function* and by its *method combination*. 
 
@@ -28,7 +28,7 @@ Some *operators* permit specification of the options of a *generic function*, su
 
 Some *operators* define *methods* for a *generic function*. These *operators* will be referred to as *method-defining operators*; their associated *forms* are called *method-defining forms*. The *standardized method-defining operators* are listed in Figure 7–1. 
 
-|\<p\>**defgeneric defmethod defclass** \</p\>\<p\>**define-condition defstruct**\</p\>|
+|&#60;p&#62;**defgeneric defmethod defclass** &#60;/p&#62;&#60;p&#62;**define-condition defstruct**&#60;/p&#62;|
 | :- |
 
 

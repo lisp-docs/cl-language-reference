@@ -34,7 +34,7 @@ Figure 9–2 shows *operators* that define *condition types* and creating *condi
 
 Figure 9–3 shows *operators* that *read* the *value* of *condition slots*. 
 
-|\<p\>**arithmetic-error-operands simple-condition-format-arguments arithmetic-error-operation simple-condition-format-control cell-error-name stream-error-stream** \</p\>\<p\>**file-error-pathname type-error-datum** \</p\>\<p\>**package-error-package type-error-expected-type** \</p\>\<p\>**print-not-readable-object unbound-slot-instance**\</p\>|
+|&#60;p&#62;**arithmetic-error-operands simple-condition-format-arguments arithmetic-error-operation simple-condition-format-control cell-error-name stream-error-stream** &#60;/p&#62;&#60;p&#62;**file-error-pathname type-error-datum** &#60;/p&#62;&#60;p&#62;**package-error-package type-error-expected-type** &#60;/p&#62;&#60;p&#62;**print-not-readable-object unbound-slot-instance**&#60;/p&#62;|
 | :- |
 
 

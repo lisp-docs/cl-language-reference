@@ -1,7 +1,8 @@
 {
-  'label': '**3.6 Traversal Rules and Side Effects** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**3.6 Traversal Rules and Side Effects** '
+  "label": "3.6 Traversal Rules and Side Effects",
+  "position": 3.6,
+  "link": {
+    "type": "generated-index",
+    "description": "3.6 Traversal Rules and Side Effects"
   }
 }

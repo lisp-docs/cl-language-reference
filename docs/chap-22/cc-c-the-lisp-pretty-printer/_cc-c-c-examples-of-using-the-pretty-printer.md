@@ -216,11 +216,11 @@ As examples of the convenience of specifying pretty printing with *format string
 
 (defun simple-pprint-defun (\*standard-output\* list) 
 
-(format T "~:\<~W ~@ ~:I~W ~: ~W~1I ~ ~W~:\>" list)) 
+(format T "~:&#60;~W ~@ ~:I~W ~: ~W~1I ~ ~W~:&#62;" list)) 
 
 (defun pprint-let (\*standard-output\* list) 
 
-(format T "~:\<~W~\<i\>\<sup\>∧\</sup\>\</i\>~:\<~@\{~:\<~@\{~W~\<i\>\<sup\>∧\</sup\>\</i\>~ ~\}~:\>~\<i\>\<sup\>∧\</sup\>\</i\>~: ~\}~:\>~1I~@\{~\<i\>\<sup\>∧\</sup\>\</i\>~ ~W~\}~:\>" list)) 
+(format T "~:&#60;~W~&#60;i&#62;&#60;sup&#62;∧&#60;/sup&#62;&#60;/i&#62;~:&#60;~@&#123;~:&#60;~@&#123;~W~&#60;i&#62;&#60;sup&#62;∧&#60;/sup&#62;&#60;/i&#62;~ ~&#125;~:&#62;~&#60;i&#62;&#60;sup&#62;∧&#60;/sup&#62;&#60;/i&#62;~: ~&#125;~:&#62;~1I~@&#123;~&#60;i&#62;&#60;sup&#62;∧&#60;/sup&#62;&#60;/i&#62;~ ~W~&#125;~:&#62;" list)) 
 
 In the following example, the first *form* restores **\*print-pprint-dispatch\*** to the equivalent of its initial value. The next two forms then set up a special way to pretty print ratios. Note that the more specific *type specifier* has to be associated with a higher priority. 
 
@@ -292,7 +292,7 @@ This final example shows how to define a pretty printing function for a user def
 
 #’(lambda (s f) 
 
-(funcall (formatter "~@\<#\<~;~W and ~2I~ ~/pprint-fill/~;\>~:\>") 
+(funcall (formatter "~@&#60;#&#60;~;~W and ~2I~ ~/pprint-fill/~;&#62;~:&#62;") 
 
 s (family-mom f) (family-kids f)))) 
 
@@ -308,9 +308,9 @@ The pretty printing function for the structure family specifies how to adjust th
 
 (PRINCIPAL-FAMILY 
 
-#\<Lucy and 
+#&#60;Lucy and 
 
-Mark Bob . Dan\>) 
+Mark Bob . Dan&#62;) 
 
 Note that a pretty printing function for a structure is different from the structure’s **print-object** *method*. While **print-object** *methods* are permanently associated with a structure, pretty printing functions are stored in *pprint dispatch tables* and can be rapidly changed to reflect different printing needs. If there is no pretty printing function for a structure in the current *pprint dispatch table*, its **print-object** *method* is used instead. 
 

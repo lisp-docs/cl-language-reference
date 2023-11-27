@@ -122,19 +122,19 @@ Scale factor 7: | 3141590.E-06|
 
 (foo 0.0314159) *→* " 3.14E-2|314.2$-04|0.314E-01| 3.14E-2" (foo 0.314159) *→* " 0.31 |0.314 |0.314 | 0.31 " (foo 3.14159) *→* " 3.1 | 3.14 | 3.14 | 3.1 " (foo 31.4159) *→* " 31. | 31.4 | 31.4 | 31. " (foo 314.159) *→* " 3.14E+2| 314. | 314. | 3.14E+2" (foo 3141.59) *→* " 3.14E+3|314.2$+01|0.314E+04| 3.14E+3" (foo 3141.59L0) *→* " 3.14L+3|314.2$+01|0.314L+04| 3.14L+3" (foo 3.14E12) *→* "\*\*\*\*\*\*\*\*\*|314.0$+10|0.314E+13| 3.14E+12" (foo 3.14L120) *→* "\*\*\*\*\*\*\*\*\*|?????????|%%%%%%%%%|3.14L+120" (foo 3.14L1200) *→* "\*\*\*\*\*\*\*\*\*|?????????|%%%%%%%%%|3.14L+1200" 
 
-(format nil "~10\<foo~;bar~\>") *→* "foo bar" 
+(format nil "~10&#60;foo~;bar~&#62;") *→* "foo bar" 
 
-(format nil "~10:\<foo~;bar~\>") *→* " foo bar" 
+(format nil "~10:&#60;foo~;bar~&#62;") *→* " foo bar" 
 
-(format nil "~10\<foobar~\>") *→* " foobar" 
+(format nil "~10&#60;foobar~&#62;") *→* " foobar" 
 
-(format nil "~10:\<foobar~\>") *→* " foobar" 
+(format nil "~10:&#60;foobar~&#62;") *→* " foobar" 
 
-(format nil "~10:@\<foo~;bar~\>") *→* " foo bar " 
+(format nil "~10:@&#60;foo~;bar~&#62;") *→* " foo bar " 
 
-(format nil "~10@\<foobar~\>") *→* "foobar " 
+(format nil "~10@&#60;foobar~&#62;") *→* "foobar " 
 
-(format nil "~10:@\<foobar~\>") *→* " foobar " 
+(format nil "~10:@&#60;foobar~&#62;") *→* " foobar " 
 
 (FORMAT NIL "Written to ~A." #P"foo.bin") 
 

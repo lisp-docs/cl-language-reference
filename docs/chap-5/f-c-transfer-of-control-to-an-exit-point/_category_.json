@@ -1,7 +1,8 @@
 {
-  'label': '**5.2 Transfer of Control to an Exit Point** ',
-  'link': {
-    'type': 'generated-index',
-    'description': '**5.2 Transfer of Control to an Exit Point** '
+  "label": "5.2 Transfer of Control to an Exit Point",
+  "position": 5.2,
+  "link": {
+    "type": "generated-index",
+    "description": "5.2 Transfer of Control to an Exit Point"
   }
 }

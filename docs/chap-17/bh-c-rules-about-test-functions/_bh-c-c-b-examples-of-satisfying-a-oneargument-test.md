@@ -320,7 +320,7 @@ Should be prepared to signal an error of *type* **type-error** if *sequence* is 
 
 **Syntax:** 
 
-**map** *result-type function* &rest *sequences*\<sup\>+\</sup\> *→ result* 
+**map** *result-type function* &rest *sequences*&#60;sup&#62;+&#60;/sup&#62; *→ result* 
 
 **Arguments and Values:** 
 
@@ -776,7 +776,7 @@ The sorting operation can be destructive in all cases. In the case of a *vector*
 
 (setq tester (list ’(1 2 3) ’(4 5 6) ’(7 8 9))) *→* ((1 2 3) (4 5 6) (7 8 9)) 
 
-(sort tester #’\> :key #’car) *→* ((7 8 9) (4 5 6) (1 2 3)) 
+(sort tester #’&#62; :key #’car) *→* ((7 8 9) (4 5 6) (1 2 3)) 
 
 (setq tester (list 1 2 3 4 5 6 7 8 9 0)) *→* (1 2 3 4 5 6 7 8 9 0) 
 
@@ -910,7 +910,7 @@ If the *sequence* contains an *element* that *satisfies the test*, then the left
 
 **Examples:** 
 
-(find #\d "here are some letters that can be looked at" :test #’char\>) 
+(find #\d "here are some letters that can be looked at" :test #’char&#62;) 
 
 *→* #\Space 
 
@@ -1170,7 +1170,7 @@ The *sequence-1* is modified.
 
 **fill** 
 
-\<b\>\<sup\>substitute, substitute-if, substitute-if-not, nsubsti\</sup\> tute, nsubstitute-if, nsubstitute-if-not\</b\> \<i\>Function\</i\> 
+&#60;b&#62;&#60;sup&#62;substitute, substitute-if, substitute-if-not, nsubsti&#60;/sup&#62; tute, nsubstitute-if, nsubstitute-if-not&#60;/b&#62; &#60;i&#62;Function&#60;/i&#62; 
 
 **Syntax:** 
 
@@ -1268,7 +1268,7 @@ The result of all these functions is a *sequence* of the same *type* as *sequenc
 
 *→* (1 2 4 1 3 9 5) 
 
-(substitute 9 3 ’(1 2 4 1 3 4 5) :test #’\>) *→* (9 9 4 9 3 4 5) 
+(substitute 9 3 ’(1 2 4 1 3 4 5) :test #’&#62;) *→* (9 9 4 9 3 4 5) 
 
 (substitute-if 0 #’evenp ’((1) (2) (3) (4)) :start 2 :key #’car) 
 
@@ -1440,7 +1440,7 @@ If the *result-type* is a *subtype* of **vector**, then if the implementation ca
 
 (setq test2 (list 2 5 8)) 
 
-(merge ’list test1 test2 #’\<) *→* (1 2 3 4 5 6 7 8) 
+(merge ’list test1 test2 #’&#60;) *→* (1 2 3 4 5 6 7 8) 
 
 (setq test1 (copy-seq "BOY")) 
 
@@ -1458,11 +1458,11 @@ Sequences **17–31**
 
 (setq test2 (vector ((yellow . 2) (green . 7)))) 
 
-(merge ’vector test1 test2 #’\< :key #’cdr) 
+(merge ’vector test1 test2 #’&#60; :key #’cdr) 
 
 *→* #((RED . 1) (YELLOW . 2) (BLUE . 4) (GREEN . 7)) 
 
-(merge ’(vector \* 4) ’(1 5) ’(2 4 6) #’\<) should signal an error 
+(merge ’(vector \* 4) ’(1 5) ’(2 4 6) #’&#60;) should signal an error 
 
 **Exceptional Situations:** 
 
@@ -1558,7 +1558,7 @@ Sequences **17–33**
 
 (remove 4 ’(1 2 4 1 3 4 5) :count 1 :from-end t) *→* (1 2 4 1 3 5) 
 
-(remove 3 ’(1 2 4 1 3 4 5) :test #’\>) *→* (4 3 4 5) 
+(remove 3 ’(1 2 4 1 3 4 5) :test #’&#62;) *→* (4 3 4 5) 
 
 (setq lst ’(list of four elements)) *→* (LIST OF FOUR ELEMENTS) 
 
@@ -1592,7 +1592,7 @@ Sequences **17–33**
 
 (setq tester (list 1 2 4 1 3 4 5)) *→* (1 2 4 1 3 4 5) 
 
-(delete 3 tester :test #’\>) *→* (4 3 4 5) 
+(delete 3 tester :test #’&#62;) *→* (4 3 4 5) 
 
 (setq tester (list 1 2 4 1 3 4 5)) *→* (1 2 4 1 3 4 5) 
 

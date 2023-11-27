@@ -6,7 +6,7 @@ computer time (such as run time) and is precise to some *implementation-dependen
 
 Figure 25–4 shows *defined names* relating to *time*. 
 
-|\<p\>**decode-universal-time get-internal-run-time** \</p\>\<p\>**encode-universal-time get-universal-time** \</p\>\<p\>**get-decoded-time internal-time-units-per-second** \</p\>\<p\>**get-internal-real-time sleep**\</p\>|
+|&#60;p&#62;**decode-universal-time get-internal-run-time** &#60;/p&#62;&#60;p&#62;**encode-universal-time get-universal-time** &#60;/p&#62;&#60;p&#62;**get-decoded-time internal-time-units-per-second** &#60;/p&#62;&#60;p&#62;**get-internal-real-time sleep**&#60;/p&#62;|
 | :- |
 
 
