@@ -64,6 +64,9 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      tableOfContents: {
+        maxHeadingLevel: 5,
+      },
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
       image: 'img/1024px-Lisp_logo.svg.png',
