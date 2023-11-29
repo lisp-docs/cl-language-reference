@@ -1124,4 +1124,11 @@ Chapter 26 (Glossary)
 
 Chapter A (Appendix)
 
-A.1 Removed Language Features A–1 A.1.1 Requirements for removed and deprecated features A–1 A.1.2 Removed Types A–1 A.1.3 Removed Operators A–1 A.1.4 Removed Argument Conventions A–1 A.1.5 Removed Variables A–1 A.1.6 Removed Reader Syntax A–1 A.1.7 Packages No Longer Required A–1
+A.1 Removed Language Features A–1
+A.1.1 Requirements for removed and deprecated features A–1
+A.1.2 Removed Types A–1
+A.1.3 Removed Operators A–1
+A.1.4 Removed Argument Conventions A–1
+A.1.5 Removed Variables A–1
+A.1.6 Removed Reader Syntax A–1
+A.1.7 Packages No Longer Required A–1
