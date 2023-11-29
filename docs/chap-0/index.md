@@ -25,17 +25,22 @@ sidebar_position: 1
 | `**\*break-on-signals\***` | 9–35 |
 | | `*break-on-warnings*` | | A–1 |
 |
-| `**\*compile-file-pathname\***` | 24–12 **\*compile-file-truename\*** | 24–12 **\*compile-print\*** | 24–13 |
+| `**\*compile-file-pathname\***` | 
+| 24–12 **\*compile-file-truename\*** | 
+| 24–12 **\*compile-print\*** | 24–13 |
 | `**\*compile-verbose\***` | 24–13 |
 | `**\*debug-io\***` | 21–57 |
 | `**\*debugger-hook\***` | 9–34 |
-| `**\*default-pathname-defaults\***` | 19–28 **\*error-output\*** | 21–57 |
-| `**\*features\***` | 1–30, | 2–37, | 24–10 **\*gensym-counter\*** | 10–9 |
+| `**\*default-pathname-defaults\***` | 
+| 19–28 **\*error-output\*** | 21–57 |
+| `**\*features\***` | 1–30, | 2–37, | 
+| 24–10 **\*gensym-counter\*** | 10–9 |
 | `**\*load-pathname\***` | 24–13 |
 | `**\*load-print\***` | 24–14 |
 | `**\*load-truename\***` | 24–13 |
 | `**\*load-verbose\***` | 24–14 |
-| `**\*macroexpand-hook\***` | 3–80 **\*modules\*** | 24–14 |
+| `**\*macroexpand-hook\***` | 
+| 3–80 **\*modules\*** | 24–14 |
 | `**\*package\***` | 11–40 |
 | `**\*print-array\***` | 22–66 |
 | `**\*print-base\***` | 22–67 |
@@ -96,7 +101,8 @@ sidebar_position: 1
 | `\&#62;` | 12–20 |
 | `\&#62;**=**` | 12–20 |
 | `A (format directive)` | 22–31 |
-| `A (sharpsign reader macro)` | 2–35 **abort** | 9–65, | 9–68 |
+| `A (sharpsign reader macro)` | 
+| 2–35 **abort** | 9–65, | 9–68 |
 | `**abs**` | 12–39 |
 | `*absolute*` | 26–2 |
 | `:absolute` | 19–7 |
@@ -110,7 +116,8 @@ sidebar_position: 1
 | `*active*` | 15–2, | 26–3 |
 | `*actual adjustability*` | 26–3 |
 | `*actual argument*` | 26–3 |
-| `*actual array element type*` | 15–3, | 26–3 *actual complex part type* | 26–3 |
+| `*actual array element type*` | 15–3, | 
+| 26–3 *actual complex part type* | 26–3 |
 | `*actual parameter*` | 26–3 |
 | `*actually adjustable*` | 26–3 |
 | `**add-method**` | 7–87 |
@@ -127,9 +134,11 @@ sidebar_position: 1
 | `*alphanumeric*` | 26–3 |
 | `**alphanumericp**` | 13–15 |
 | `*ampersand*` | 26–4 |
-| `Ampersand (format directive)` | 22–25 **and** | 4–28, | 5–68, | 7–26 |
+| `Ampersand (format directive)` | 
+| 22–25 **and** | 4–28, | 5–68, | 7–26 |
 | `*anonymous*` | 26–4 |
-| `*apparently uninterned*` | 26–4 **append** | 7–26, | 14–30 |
+| `*apparently uninterned*` | 
+| 26–4 **append** | 7–26, | 14–30 |
 | `*applicable*` | 26–4 |
 | `*applicable handler*` | 26–4 |
 | `*applicable method*` | 26–4 |
@@ -140,21 +149,29 @@ sidebar_position: 1
 | `**apropos-list**` | 25–8 |
 | `**aref**` | 15–18 |
 | `*argument*` | 26–4 |
-| `*argument evaluation order*` | 26–4 *argument precedence order* | 26–4 **arithmetic-error** | 12–89 |
-| `**arithmetic-error-operands**` | 12–89 **arithmetic-error-operation** | 12–89 *around method* | 26–4 |
+| `*argument evaluation order*` | 
+| 26–4 *argument precedence order* | 
+| 26–4 **arithmetic-error** | 12–89 |
+| `**arithmetic-error-operands**` | 
+| 12–89 **arithmetic-error-operation** | 
+| 12–89 *around method* | 26–4 |
 | `*array*` | 26–4 |
 | `**array**` | 2–35, | 15–5 |
 | `*array element type*` | 26–5 |
 | `*array total size*` | 26–5 |
 | `**array-dimension**` | 15–19 |
-| `**array-dimension-limit**` | 15–30 **array-dimensions** | 15–20 |
+| `**array-dimension-limit**` | 
+| 15–30 **array-dimensions** | 15–20 |
 | `**array-displacement**` | 15–22 |
 | `**array-element-type**` | 15–21 |
-| `**array-has-fill-pointer-p**` | 15–21 **array-in-bounds-p** | 15–23 |
+| `**array-has-fill-pointer-p**` | 
+| 15–21 **array-in-bounds-p** | 15–23 |
 | `**array-rank**` | 15–24 |
 | `**array-rank-limit**` | 15–30 |
-| `**array-row-major-index**` | 15–25 **array-total-size** | 15–26 |
-| `**array-total-size-limit**` | 15–31 **arrayp** | 15–27 |
+| `**array-row-major-index**` | 
+| 15–25 **array-total-size** | 15–26 |
+| `**array-total-size-limit**` | 
+| 15–31 **arrayp** | 15–27 |
 | `**ash**` | 12–64 |
 | `**asin**` | 12–29 |
 | `**asinh**` | 12–33 |
@@ -165,7 +182,9 @@ sidebar_position: 1
 | `**assoc-if-not**` | 14–43 |
 | `*association list*` | 14–2, | 26–5 |
 | `*asterisk*` | 26–5 |
-| `Asterisk (format directive)` | 22–36 Asterisk (sharpsign reader macro) | 2–32 *at-sign* | 26–5 |
+| `Asterisk (format directive)` | 
+| 22–36 Asterisk (sharpsign reader macro) | 
+| 2–32 *at-sign* | 26–5 |
 | `**atan**` | 12–29 |
 | `**atanh**` | 12–33 |
 | `*atom*` | 26–5 |
@@ -178,8 +197,10 @@ sidebar_position: 1
 | `B (format directive)` | 22–26 |
 | `B (sharpsign reader macro)` | 2–33 :back | 19–8 |
 | `*backquote*` | 26–6 |
-| `Backquote (reader macro)` | 2–26 *backslash* | 26–6 |
-| `Backslash (sharpsign reader macro)` | 2–31 bar | 1–15 |
+| `Backquote (reader macro)` | 
+| 2–26 *backslash* | 26–6 |
+| `Backslash (sharpsign reader macro)` | 
+| 2–31 bar | 1–15 |
 | `*base character*` | 26–6 |
 | `*base string*` | 26–6 |
 | `**base-char**` | 13–8 |
@@ -207,7 +228,8 @@ sidebar_position: 1
 | `**bit-orc2**` | 15–37 |
 | `**bit-vector**` | 2–32, | 15–9 |
 | `**bit-vector-p**` | 15–39 |
-| `*bit-wise logical operation specifier*` | 26–6 **bit-xor** | 15–37 |
+| `*bit-wise logical operation specifier*` | 
+| 26–6 **bit-xor** | 15–37 |
 | `*block*` | 26–7 |
 | `**block**` | 5–42 |
 | `*block tag*` | 26–7 |
@@ -247,7 +269,8 @@ sidebar_position: 1
 
 | `*broadcast stream*` | 26–8 |
 | `**broadcast-stream**` | 21–7 |
-| `**broadcast-stream-streams**` | 21–47 *built-in class* | 26–8 |
+| `**broadcast-stream-streams**` | 
+| 21–47 *built-in class* | 26–8 |
 | `*built-in type*` | 26–8 |
 | `**built-in-class**` | 4–23 |
 | `**butlast**` | 14–33 |
@@ -257,7 +280,8 @@ sidebar_position: 1
 | `**byte-position**` | 12–76 |
 | `**byte-size**` | 12–76 |
 | `C (format directive)` | 22–24 |
-| `C (sharpsign reader macro)` | 2–34 **caaaar** | 14–9 |
+| `C (sharpsign reader macro)` | 
+| 2–34 **caaaar** | 14–9 |
 | `**caaadr**` | 14–9 |
 | `**caaar**` | 14–9 |
 | `**caadar**` | 14–9 |
@@ -276,7 +300,8 @@ sidebar_position: 1
 | `**call-arguments-limit**` | 5–29 |
 | `**call-method**` | 7–73 |
 | `**call-next-method**` | 7–74 |
-| `*captured initialization form*` | 26–8 *car* | 26–9 |
+| `*captured initialization form*` | 
+| 26–8 *car* | 26–9 |
 | `**car**` | 14–9 |
 | `*case*` | 26–9 |
 | `**case**` | 5–74 |
@@ -306,7 +331,8 @@ sidebar_position: 1
 | `**ceiling**` | 12–25 |
 | `*cell*` | 26–9 |
 | `**cell-error**` | 9–13 |
-| `**cell-error-name**` | 9–14 **cerror** | 9–19 |
+| `**cell-error-name**` | 
+| 9–14 **cerror** | 9–19 |
 | `**change-class**` | 7–38 |
 | `**char**` | 16–5 |
 | char-bit | A–1 |
@@ -319,13 +345,18 @@ sidebar_position: 1
 | **char-equal** | 13–10 |
 | char-font | A–1 |
 | `char-font-limit | A–1 |
-| **char-greaterp**` | 13–10 char-hyper-bit | A–1 |
+| **char-greaterp**` | 
+| 13–10 char-hyper-bit | A–1 |
  **char-int** | 13–22 |
 | `**char-lessp**` | 13–10 |
 | | `char-meta-bit | A–1 |
  **char-name**` | 13–24 |
-| | `**char-not-equal**` | 13–10 **char-not-greaterp** | 13–10 **char-not-lessp** | 13–10 char-super-bit | A–1 |
- **char-upcase** | || 13–19 **char/=** | 13–10 |
+| | `**char-not-equal**` | 
+| 13–10 **char-not-greaterp** | 
+| 13–10 **char-not-lessp** | 
+| 13–10 char-super-bit | A–1 |
+ **char-upcase** | || 
+ | 13–19 **char/=** | 13–10 |
 
 | `**char**&#60;` | 13–10 |
 | `**char**&#60;**=**` | 13–10 |
@@ -333,18 +364,22 @@ sidebar_position: 1
 | `**char**&#62;` | 13–10 |
 | `**char**&#62;**=**` | 13–10 |
 | `*character*` | 13–1, | 21–1, | 26–9 |
-| `**character**` | 2–31, | 13–8, | 13–12 *character code* | 26–9 |
+| `**character**` | 2–31, | 13–8, | 
+| 13–12 *character code* | 26–9 |
 | `*character designator*` | 26–10 |
 | `**characterp**` | 13–13 |
 | `**check-type**` | 9–22 |
 | `*circular*` | 26–10 |
-| `*circular list*` | 14–2, | 14–4, | 26–10 Circumflex (format directive) | 22–41 **cis** | 12–55 |
+| `*circular list*` | 14–2, | 14–4, | 
+| 26–10 Circumflex (format directive) | 
+| 22–41 **cis** | 12–55 |
 | `CL *package*` | 11–4 |
 | `CL-USER *package*` | 11–7 |
 | `*class*` | 4–8, | 26–10 |
 | `**class**` | 4–23 |
 | `*class designator*` | 26–10 |
-| `*class precedence list*` | 4–8, | 4–12, | 26–10 **class-name** | 7–88 |
+| `*class precedence list*` | 4–8, | 4–12, | 
+| 26–10 **class-name** | 7–88 |
 | `**class-of**` | 7–90 |
 | `**clear-input**` | 21–42 |
 | `**clear-output**` | 21–43 |
@@ -360,13 +395,18 @@ sidebar_position: 1
 | `*coerce*` | 26–11 |
 | `**coerce**` | 4–30 |
 | `*colon*` | 26–11 |
-| `Colon (sharpsign reader macro)` | 2–33 *comma* | 26–11 |
-| `Comma (reader macro)` | 2–28 comment | 2–24, | 2–38 |
+| `Colon (sharpsign reader macro)` | 
+| 2–33 *comma* | 26–11 |
+| `Comma (reader macro)` | 
+| 2–28 comment | 2–24, | 2–38 |
 | `:common` | 19–5 |
-| | `COMMON-LISP *package*` | 1–35, | 11–4 COMMON-LISP-USER *package* | 11–7 commonp | A–1 |
+| | `COMMON-LISP *package*` | 1–35, | 
+| 11–4 COMMON-LISP-USER *package* | 
+| 11–7 commonp | A–1 |
 |
 | `*compilation*` | 26–11 |
-| `*compilation environment*` | 3–14, | 26–11 *compilation unit* | 26–11 |
+| `*compilation environment*` | 3–14, | 
+| 26–11 *compilation unit* | 26–11 |
 | `**compilation-speed**` | 3–97 |
 | `*compile*` | 26–11 |
 | `**compile**` | 3–18, | 3–57, | 3–60 |
@@ -402,11 +442,13 @@ sidebar_position: 1
 | `*composite stream*` | 26–13 |
 | `*compound form*` | 26–13 |
 | `*compound type specifier*` | 4–4, | 26–13 |
-| `**compute-applicable-methods**` | 7–76 **compute-restarts** | 9–49 |
+| `**compute-applicable-methods**` | 
+| 7–76 **compute-restarts** | 9–49 |
 | `**concatenate**` | 17–29 |
 | `*concatenated stream*` | 26–13 |
 | `**concatenated-stream**` | 21–8 |
-| `**concatenated-stream-streams**` | 21–50 **cond** | 5–69 |
+| `**concatenated-stream-streams**` | 
+| 21–50 **cond** | 5–69 |
 | `*condition*` | 26–13   |
 | `**condition**` | 9–11 |
 | `*condition designator*` | 9–3, | 26–13 |
@@ -416,8 +458,10 @@ sidebar_position: 1
 | `*conditional newlines*` | 22–14 |
 | `*conformance*` | 26–13 |
 | `*conforming code*` | 1–29, | 26–13 |
-| `*conforming implementation*` | 1–28, | 26–13 *conforming processor* | 26–14 |
-| `*conforming program*` | 1–29, | 26–14 *congruence* | 7–19 |
+| `*conforming implementation*` | 1–28, | 
+| 26–13 *conforming processor* | 26–14 |
+| `*conforming program*` | 1–29, | 
+| 26–14 *congruence* | 7–19 |
 | `*congruent*` | 26–14 |
 | `**conjugate**` | 12–57 |
 | `*cons*` | 14–1, | 26–14 |
@@ -458,7 +502,8 @@ sidebar_position: 1
 | `*current logical block*` | 26–16 |
 | `*current output base*` | 22–67, | 26–16 |
 | `*current package*` | 11–1, | 26–16 |
-| `*current pprint dispatch table*` | 22–16, | 26–16 *current random state* | 26–16 |
+| `*current pprint dispatch table*` | 22–16, | 
+| 26–16 *current random state* | 26–16 |
 | `*current readtable*` | 2–1, | 26–16 |
 | `D (format directive)` | 22–26 |
 | `*data type*` | 26–16 |
@@ -481,7 +526,8 @@ sidebar_position: 1
 | `*decoded time*` | 25–2, | 26–17 |
 | `*default method*` | 7–19, | 26–17 |
 | `**\*default-pathname-defaults\***` | 19–28 |
-| `*defaulted initialization argument list*` | 26–17 **defclass** | 7–60 |
+| `*defaulted initialization argument list*` | 
+| 26–17 **defclass** | 7–60 |
 | `**defconstant**` | 5–31 |
 | `**defgeneric**` | 7–65 |
 | `**define-compiler-macro**` | 3–67 |
@@ -489,7 +535,8 @@ sidebar_position: 1
 | `**define-method-combination**` | 7–76 |
 | `*define-method-combination arguments lambda list* 3– 48,` | 26–17 |
 | `**define-modify-macro**` | 5–92 |
-| `*define-modify-macro lambda list*` | 3–48, | 26–17 **define-setf-expander** | 5–96 |
+| `*define-modify-macro lambda list*` | 3–48, | 
+| 26–17 **define-setf-expander** | 5–96 |
 | `**define-symbol-macro**` | 3–77 |
 | `*defined name*` | 26–17 |
 
@@ -499,9 +546,11 @@ sidebar_position: 1
 | `**defpackage**` | 11–29 |
 | `**defparameter**` | 5–32 |
 | `**defsetf**` | 5–93 |
-| `*defsetf lambda list*` | 3–47, | 26–17 **defstruct** | 8–1 |
+| `*defsetf lambda list*` | 3–47, | 
+| 26–17 **defstruct** | 8–1 |
 | `**deftype**` | 4–33 |
-| `*deftype lambda list*` | 3–48, | 26–17 **defun** | 5–15 |
+| `*deftype lambda list*` | 3–48, | 
+| 26–17 **defun** | 5–15 |
 | `**defvar**` | 5–32 |
 | `**delete**` | 17–32 |
 | `**delete-duplicates**` | 17–35 |
@@ -513,11 +562,13 @@ sidebar_position: 1
 | `*denormalized*` | 26–17 |
 | `**deposit-field**` | 12–77 |
 | `*derived type*` | 26–18 |
-| `*derived type specifier*` | 4–5, | 26–18 **describe** | 25–9 |
+| `*derived type specifier*` | 4–5, | 
+| 26–18 **describe** | 25–9 |
 | `**describe-object**` | 25–10 |
 | `*designator*` | 1–14, | 26–18 |
 | `*destructive*` | 26–18 |
-| `*destructuring lambda list*` | 3–45, | 26–18 **destructuring-bind** | 5–35 |
+| `*destructuring lambda list*` | 3–45, | 
+| 26–18 **destructuring-bind** | 5–35 |
 | `*different*` | 26–18 |
 | `*digit*` | 26–18 |
 | | `**digit-char** | A–1 |
@@ -528,10 +579,12 @@ sidebar_position: 1
 | `*direct subclass*` | 4–8, | 26–18 |
 | `*direct superclass*` | 4–8, | 26–18 |
 | `**directory**` | 20–3 |
-| `**directory-namestring**` | 19–28 **disassemble** | 25–17 |
+| `**directory-namestring**` | 
+| 19–28 **disassemble** | 25–17 |
 | `*disestablish*` | 26–18 |
 | `*disjoint*` | 26–19 |
-| `*dispatching macro character*` | 26–19 *displaced array* | 26–19 |
+| `*dispatching macro character*` | 
+| 26–19 *displaced array* | 26–19 |
 | `*distinct*` | 26–19 |
 | `**division-by-zero**` | 12–90 |
 | `**do**` | 6–31 |
@@ -553,7 +606,8 @@ sidebar_position: 1
 | `*double float*` | 26–19 |
 | `**double-float**` | 12–14 |
 | `**double-float-epsilon**` | 12–88 |
-| `**double-float-negative-epsilon**` | 12–88 *double-quote* | 26–19 |
+| `**double-float-negative-epsilon**` | 
+| 12–88 *double-quote* | 26–19 |
 | `Double-Quote (reader macro)` | 2–26 |
 | `**dpb**` | 12–78 |
 | `**dribble**` | 25–23 |
@@ -592,7 +646,8 @@ sidebar_position: 1
 | `**eq**` | 5–56 |
 | `**eql**` | 4–30, | 5–58 |
 | `**equal**` | 5–59 |
-| `Equal-Sign (sharpsign reader macro)` | 2–36 **equalp** | 5–62 |
+| `Equal-Sign (sharpsign reader macro)` | 
+| 2–36 **equalp** | 5–62 |
 | `*error*` | 26–21 |
 | `**error**` | 9–13, | 9–17 |
 | `*error output*` | 26–21 |
@@ -605,7 +660,8 @@ sidebar_position: 1
 | `**eval-when**` | 3–20, | 3–60 |
 | `*evaluate*` | 26–21 |
 | `*evaluation*` | 3–1, | 26–21 |
-| `*evaluation environment*` | 3–14, | 26–21 evaluation order | 3–63, | 5–2, | 5–43, | 5–83, | 6–5, | 6–9, | 7–4, | 9–16, | || 12–79 |
+| `*evaluation environment*` | 3–14, | 
+| 26–21 evaluation order | 3–63, | 5–2, | 5–43, | 5–83, | 6–5, | 6–9, | 7–4, | 9–16, | || 12–79 |
 | `**evenp**` | 12–40 |
 | `**every**` | 5–67 |
 | `*execute*` | 26–22 |
@@ -622,18 +678,23 @@ sidebar_position: 1
 | `**export**` | 11–8 |
 | `*exported*` | 26–23 |
 | `*expressed adjustability*` | 26–23 |
-| `*expressed array element type*` | 15–3, | 26–23 *expressed complex part type* | 26–23 *expression* | 26–23 |
+| `*expressed array element type*` | 15–3, | 
+| 26–23 *expressed complex part type* | 
+| 26–23 *expression* | 26–23 |
 | `*expressly adjustable*` | 26–23 |
 | `**expt**` | 12–41 |
 | `*extended character*` | 26–23 |
-| `*extended function designator*` | 26–23 *extended lambda list* | 26–23 |
+| `*extended function designator*` | 
+| 26–23 *extended lambda list* | 26–23 |
 | `**extended-char**` | 13–9 |
 | `*extension*` | 26–24 |
 | `extensions` | 1–17, | 1–18 |
 | `*extent*` | 26–24 |
 | `*external file format*` | 26–24 |
-| `*external file format designator*` | 26–24 *external symbol* | 11–2, | 26–24 |
-| `*externalizable object*` | 3–23, | 26–24 F (format directive) | 22–27 |
+| `*external file format designator*` | 
+| 26–24 *external symbol* | 11–2, | 26–24 |
+| `*externalizable object*` | 3–23, | 
+| 26–24 F (format directive) | 22–27 |
 | `*false*` | 26–24 |
 | `*fbound*` | 26–24 |
 | `**fboundp**` | 5–18 |
@@ -665,7 +726,8 @@ sidebar_position: 1
 | `**fill**` | 17–7 |
 | `*fill pointer*` | 15–2, | 26–25 |
 | `**fill-pointer**` | 15–27 |
-| `fill-style conditional newline` | 22–18, | 22–54 **find** | 17–20 |
+| `fill-style conditional newline` | 22–18, | 
+| 22–54 **find** | 17–20 |
 | `**find-all-symbols**` | 11–12 |
 | `**find-class**` | 7–71 |
 | `**find-if**` | 17–20 |
@@ -687,8 +749,10 @@ sidebar_position: 1
 | `**float-radix**` | 12–82 |
 | `**float-sign**` | 12–82 |
 | `**floating-point-inexact**` | 12–91 |
-| `**floating-point-invalid-operation**` | 12–90 **floating-point-overflow** | 12–91 |
-| `**floating-point-underflow**` | 12–91 **floatp** | 12–86 |
+| `**floating-point-invalid-operation**` | 
+| 12–90 **floating-point-overflow** | 12–91 |
+| `**floating-point-underflow**` | 
+| 12–91 **floatp** | 12–86 |
 | `**floor**` | 12–25 |
 | `**fmakunbound**` | 5–19 |
 | `font key` | 1–7 |
@@ -736,17 +800,20 @@ sidebar_position: 1
 | `*generalized reference*` | 5–1, | 26–28 |
 | `*generalized synonym stream*` | 26–28 |
 | `*generic function*` | 4–22, | 7–17, | 26–28 |
-| `*generic function lambda list*` | 3–39, | 26–28 **generic-function** | 4–22 |
+| `*generic function lambda list*` | 3–39, | 
+| 26–28 **generic-function** | 4–22 |
 | `*gensym*` | 26–28 |
 | `**gensym**` | 10–8 |
 | `**\*gensym-counter\***` | 10–9 |
 | `**gentemp**` | 10–10 |
 | `**get**` | 10–17 |
 | `**get-decoded-time**` | 25–6 |
-| `**get-dispatch-macro-character**` | 23–13 **get-internal-real-time** | 25–15 |
+| `**get-dispatch-macro-character**` | 
+| 23–13 **get-internal-real-time** | 25–15 |
 | `**get-internal-run-time**` | 25–16 |
 | `**get-macro-character**` | 23–14   |
-| `**get-output-stream-string**` | 21–52 **get-properties** | 14–48 |
+| `**get-output-stream-string**` | 
+| 21–52 **get-properties** | 14–48 |
 | `**get-setf-expansion**` | 5–98 |
 | `**get-universal-time**` | 25–6 |
 | `**getf**` | 14–49 |
@@ -761,7 +828,8 @@ sidebar_position: 1
 | `*go tag*` | 26–29 |
 | `*graphic*` | 13–3, | 26–29 |
 | `**graphic-char-p**` | 13–17 |
-| `Greater-Than-Sign (format directive)` | 22–36 *handle* | 26–29 |
+| `Greater-Than-Sign (format directive)` | 
+| 22–36 *handle* | 26–29 |
 | `*handler*` | 26–29 |
 | `**handler-bind**` | 9–37 |
 | `**handler-case**` | 9–38 |
@@ -770,12 +838,14 @@ sidebar_position: 1
 | `**hash-table-count**` | 18–6 |
 | `**hash-table-p**` | 18–5 |
 | `**hash-table-rehash-size**` | 18–7 |
-| `**hash-table-rehash-threshold**` | 18–8 **hash-table-size** | 18–9 |
+| `**hash-table-rehash-threshold**` | 
+| 18–8 **hash-table-size** | 18–9 |
 | `**hash-table-test**` | 18–9 |
 | `*home package*` | 26–29 |
 | `**host-namestring**` | 19–28 |
 | `I (format directive)` | 22–33 |
-| `*I/O customization variable*` | 26–29 *identical* | 26–30 |
+| `*I/O customization variable*` | 
+| 26–29 *identical* | 26–30 |
 | `*identifier*` | 26–30 |
 | `**identity**` | 5–64 |
 | `**if**` | 5–70 |
@@ -787,8 +857,11 @@ sidebar_position: 1
 | `*implementation*` | 26–30 |
 | `*implementation limit*` | 26–30 |
 | `*implementation-defined*` | 26–30 |
-| `*implementation-dependent*` | 26–30 *implementation-independent* | 26–30 *implicit block* | 26–30 |
-| `*implicit compilation*` | 3–14, | 26–30 *implicit progn* | 26–30 |
+| `*implementation-dependent*` | 
+| 26–30 *implementation-independent* | 
+| 26–30 *implicit block* | 26–30 |
+| `*implicit compilation*` | 3–14, | 
+| 26–30 *implicit progn* | 26–30 |
 | `*implicit tagbody*` | 26–31 |
 | `*import*` | 26–31 |
 | `**import**` | 11–12 |
@@ -801,8 +874,10 @@ sidebar_position: 1
 | `*indicator*` | 26–31 |
 | `*indirect instance*` | 26–31 |
 | `*inherit*` | 26–31 |
-| `*initial pprint dispatch table*` | 26–31 *initial readtable* | 2–2, | 26–31 |
-| `*initialization argument list*` | 7–1, | 26–31 *initialization form* | 26–31 |
+| `*initial pprint dispatch table*` | 
+| 26–31 *initial readtable* | 2–2, | 26–31 |
+| `*initialization argument list*` | 7–1, | 
+| 26–31 *initialization form* | 26–31 |
 | `**initialize-instance**` | 7–88 |
 | `**inline**` | 3–93 |
 | `*input*` | 21–1, | 26–31 |
@@ -816,15 +891,18 @@ sidebar_position: 1
 | `**integer-decode-float**` | 12–82 |
 | `**integer-length**` | 12–65 |
 | `**integerp**` | 12–66 |
-| `*interactive stream*` | 21–2, | 26–32 **interactive-stream-p** | 21–12 |
+| `*interactive stream*` | 21–2, | 
+| 26–32 **interactive-stream-p** | 21–12 |
 | `*intern*` | 26–32 |
 | `**intern**` | 11–35 |
 | `*internal symbol*` | 11–2, | 26–32 |
 | `*internal time*` | 25–4, | 26–32 |
 | `*internal time unit*` | 26–32 |
-| `**internal-time-units-per-second**` | 25–15 *interned* | 26–32 |
+| `**internal-time-units-per-second**` | 
+| 25–15 *interned* | 26–32 |
 | `*interpreted function*` | 26–32 |
-| `*interpreted implementation*` | 26–32 **intersection** | 14–52 |
+| `*interpreted implementation*` | 
+| 26–32 **intersection** | 14–52 |
 
 
 | `*interval designator*` | 26–32 |
@@ -863,34 +941,47 @@ sidebar_position: 1
 | `*leap seconds*` | 26–34 |
 | `**least-negative-double-float**` | 12–87 |
 | `**least-negative-long-float**` | 12–87 |
-| `**least-negative-normalized-double-float**` | 12–87 **least-negative-normalized-long-float** | 12–87 |**least-negative-normalized-short-float** | 12–87 **least-negative-normalized-single-float** | 12–87 || **least-negative-short-float** | 12–87 |
+| `**least-negative-normalized-double-float**` | 
+| 12–87 **least-negative-normalized-long-float** | 12–87 |**least-negative-normalized-short-float** | 
+| 12–87 **least-negative-normalized-single-float** | 12–87 || **least-negative-short-float** | 12–87 |
 | `**least-negative-single-float**` | 12–87 |
 | `**least-positive-double-float**` | 12–87 |
 | `**least-positive-long-float**` | 12–87 |
 | `**least-positive-normalized-double-float**` | 12–87 |
-| `**least-positive-normalized-long-float**` | 12–87 **least-positive-normalized-short-float** | 12–87 || **least-positive-normalized-single-float** | 12–87 **least-positive-short-float** | 12–87 |
+| `**least-positive-normalized-long-float**` | 
+| 12–87 **least-positive-normalized-short-float** | 12–87 || **least-positive-normalized-single-float** | 
+| 12–87 **least-positive-short-float** | 12–87 |
 | `**least-positive-single-float**` | 12–87 |
 | `*leaves*` | 14–1 |
 | `Left-Brace (format directive)` | 22–37 |
-| `Left-Bracket (format directive)` | 22–36 Left-Paren (format directive) | 22–39 *left-parenthesis* | 26–34 |
-| `Left-Parenthesis (reader macro)` | 2–23 Left-Parenthesis (sharpsign reader macro) | 2–31 *length* | 26–34 |
+| `Left-Bracket (format directive)` | 
+| 22–36 Left-Paren (format directive) | 
+| 22–39 *left-parenthesis* | 26–34 |
+| `Left-Parenthesis (reader macro)` | 
+| 2–23 Left-Parenthesis (sharpsign reader macro) | 
+| 2–31 *length* | 26–34 |
 | `**length**` | 17–16 |
-| `Less-Than-Sign (format directive)` | 22–32, | 22–35 Less-Than-Sign (sharpsign reader macro) | 2–39 **let** | 5–36 |
+| `Less-Than-Sign (format directive)` | 22–32, | 
+| 22–35 Less-Than-Sign (sharpsign reader macro) | 
+| 2–39 **let** | 5–36 |
 | `**let\***` | 5–36 |
 | `*lexical binding*` | 26–34 |
 | `*lexical closure*` | 26–34 |
 | `*lexical environment*` | 3–2, | 26–34 |
 | `*lexical scope*` | 26–34 |
 | `*lexical variable*` | 26–34 |
-| | `linear-style conditional newline` | 22–17, | 22–54 LISP *package* | A–1 |
+| | `linear-style conditional newline` | 22–17, | 
+| 22–54 LISP *package* | A–1 |
 |
 | `*Lisp image*` | 26–34 |
 | `*Lisp printer*` | 26–35 |
 | `*Lisp read-eval-print loop*` | 26–35 |
 | `*Lisp reader*` | 26–35 |
 | `**lisp-implementation-type**` | 25–28 |
-| `**lisp-implementation-version**` | 25–28 *list* | 14–2, | 14–4, | 26–35 |
-| `**list**` | 2–23, | 2–26, | 2–28, | 7–26, | 14–4, | 14–20 *list designator* | 26–35 |
+| `**lisp-implementation-version**` | 
+| 25–28 *list* | 14–2, | 14–4, | 26–35 |
+| `**list**` | 2–23, | 2–26, | 2–28, | 7–26, | 14–4, | 
+| 14–20 *list designator* | 26–35 |
 | `*list structure*` | 26–35 |
 | `**list\***` | 14–20 |
 | `**list-all-packages**` | 11–14 |
@@ -903,7 +994,8 @@ sidebar_position: 1
 | `**load**` | 3–60, | 24–6 |
 | `*load time*` | 26–36   |
 | `*load time value*` | 26–36 |
-| `**load-logical-pathname-translations**` | 19–22 **\*load-pathname\*** | 24–13 |
+| `**load-logical-pathname-translations**` | 
+| 19–22 **\*load-pathname\*** | 24–13 |
 | `**\*load-print\***` | 24–14 |
 | `**load-time-value**` | 3–18, | 3–63 |
 | `:load-toplevel` | 3–60 |
@@ -912,7 +1004,8 @@ sidebar_position: 1
 | `*loader*` | 26–36 |
 | `:local` | 19–4 |
 | `*local declaration*` | 3–29, | 26–36 |
-| `*local precedence order*` | 4–9, | 4–12, | 26–36 *local slot* | 26–36 |
+| `*local precedence order*` | 4–9, | 4–12, | 
+| 26–36 *local slot* | 26–36 |
 | `**locally**` | 3–100 |
 | `**log**` | 12–45 |
 | `**logand**` | 12–71 |
@@ -927,7 +1020,8 @@ sidebar_position: 1
 | `*logical host designator*` | 26–36 |
 | `*logical pathname*` | 26–36 |
 | `**logical-pathname**` | 19–15, | 19–27 |
-| `**logical-pathname-translations**` | 19–23 **logior** | 12–71 |
+| `**logical-pathname-translations**` | 
+| 19–23 **logior** | 12–71 |
 | `**lognand**` | 12–71 |
 | `**lognor**` | 12–71 |
 | `**lognot**` | 12–71 |
@@ -938,7 +1032,8 @@ sidebar_position: 1
 | `*long float*` | 26–36 |
 | `**long-float**` | 12–14 |
 | `**long-float-epsilon**` | 12–88 |
-| `**long-float-negative-epsilon**` | 12–88 **long-site-name** | 25–28 |
+| `**long-float-negative-epsilon**` | 
+| 12–88 **long-site-name** | 25–28 |
 | `**loop**` | 6–38 |
 | `*loop keyword*` | 26–36 |
 | `**loop-finish**` | 6–42 |
@@ -964,24 +1059,30 @@ sidebar_position: 1
 | `**make-broadcast-stream**` | 21–47 |
 | make-char | A–1 |
 
-| `**make-concatenated-stream**` | 21–51 **make-condition** | 9–47 |
-| `**make-dispatch-macro-character**` | 23–5 **make-echo-stream** | 21–50 |
+| `**make-concatenated-stream**` | 
+| 21–51 **make-condition** | 9–47 |
+| `**make-dispatch-macro-character**` | 
+| 23–5 **make-echo-stream** | 21–50 |
 | `**make-hash-table**` | 18–4 |
 | `**make-instance**` | 7–49 |
 | `**make-instances-obsolete**` | 7–50 |
 | `**make-list**` | 14–23 |
 | `**make-load-form**` | 7–51 |
-| `**make-load-form-saving-slots**` | 7–55 **make-method** | 7–73 |
+| `**make-load-form-saving-slots**` | 
+| 7–55 **make-method** | 7–73 |
 | `**make-package**` | 11–20 |
 | `**make-pathname**` | 19–17 |
 | `**make-random-state**` | 12–51 |
 | `**make-sequence**` | 17–8 |
 | `**make-string**` | 16–13 |
-| `**make-string-input-stream**` | 21–53 **make-string-output-stream** | 21–53 **make-symbol** | 10–6 |
+| `**make-string-input-stream**` | 
+| 21–53 **make-string-output-stream** | 
+| 21–53 **make-symbol** | 10–6 |
 | `**make-synonym-stream**` | 21–46 |
 | `**make-two-way-stream**` | 21–48 |
 | `**makunbound**` | 10–21 |
-| `mandatory-style conditional newline` | 22–54 **map** | 17–10 |
+| `mandatory-style conditional newline` | 
+| 22–54 **map** | 17–10 |
 | `**map-into**` | 17–12 |
 
 | `**mapc**` | 14–40 |
@@ -1004,19 +1105,28 @@ sidebar_position: 1
 | `*method*` | 26–38 |
 | `**method**` | 4–24 |
 | `*method combination*` | 26–38 |
-| `**method-combination**` | 4–26, | 25–18 **method-combination-error** | 9–26 *method-defining form* | 26–38 |
-| `*method-defining operator*` | 7–18, | 26–38 **method-qualifiers** | 7–47 |
+| `**method-combination**` | 4–26, | 
+| 25–18 **method-combination-error** | 
+| 9–26 *method-defining form* | 26–38 |
+| `*method-defining operator*` | 7–18, | 
+| 26–38 **method-qualifiers** | 7–47 |
 | `might signal` | 1–17 |
 | `**min**` | 7–26, | 12–22 |
-| `*minimal compilation*` | 3–14, | 26–38 Minus (sharpsign reader macro) | 2–37 **minusp** | 12–24 |
-| `miser-style conditional newline` | 22–17, | 22–54 **mismatch** | 17–24 |
+| `*minimal compilation*` | 3–14, | 
+| 26–38 Minus (sharpsign reader macro) | 
+| 2–37 **minusp** | 12–24 |
+| `miser-style conditional newline` | 22–17, | 
+| 22–54 **mismatch** | 17–24 |
 | `**mod**` | 12–19, | 12–47 |
 | `*modified lambda list*` | 26–38 |
 | `**\*modules\***` | 24–14 |
 | `*most recent*` | 26–38 |
-| `**most-negative-double-float**` | 12–87 **most-negative-fixnum** | 12–82 |
+| `**most-negative-double-float**` | 
+| 12–87 **most-negative-fixnum** | 12–82 |
 | `**most-negative-long-float**` | 12–87 |
-| `**most-negative-short-float**` | 12–87 **most-negative-single-float** | 12–87 **most-positive-double-float** | 12–87 || **most-positive-fixnum** | 12–82 |
+| `**most-negative-short-float**` | 
+| 12–87 **most-negative-single-float** | 
+| 12–87 **most-positive-double-float** | 12–87 || **most-positive-fixnum** | 12–82 |
 | `**most-positive-long-float**` | 12–87 |
 | `**most-positive-short-float**` | 12–87 |
 | `**most-positive-single-float**` | 12–87 |
@@ -1112,11 +1222,14 @@ sidebar_position: 1
 | `order of evaluation` | 3–63, | 5–2, | 5–43, | 5–83, | 6–5, |
 | | 6–9, | 7–4, | 9–16, | 12–79 |
 | `*ordinary function*` | 26–42 |
-| `*ordinary lambda list*` | 3–33, | 26–42 **otherwise** | 5–74, | 5–77 |
-| `*otherwise inaccessible part*` | 26–42 *output* | 21–1, | 26–42 |
+| `*ordinary lambda list*` | 3–33, | 
+| 26–42 **otherwise** | 5–74, | 5–77 |
+| `*otherwise inaccessible part*` | 
+| 26–42 *output* | 21–1, | 26–42 |
 | `**output-stream-p**` | 21–11 |
 | `P (format directive)` | 22–40 |
-| `P (sharpsign reader macro)` | 2–36 *package* | 11–1, | 26–42 |
+| `P (sharpsign reader macro)` | 
+| 2–36 *package* | 11–1, | 26–42 |
 | `**package**` | 11–8 |
 | `*package cell*` | 26–42 |
 | `*package designator*` | 26–42 |
@@ -1125,21 +1238,28 @@ sidebar_position: 1
 | `*package registry*` | 26–42 |
 | `**\*package\***` | 11–40 |
 | `**package-error**` | 11–41 |
-| `**package-error-package**` | 11–42 **package-name** | 11–36 |
+| `**package-error-package**` | 
+| 11–42 **package-name** | 11–36 |
 | `**package-nicknames**` | 11–37 |
-| `**package-shadowing-symbols**` | 11–37 **package-use-list** | 11–38 |
-| `**package-used-by-list**` | 11–39 **packagep** | 11–40 |
+| `**package-shadowing-symbols**` | 
+| 11–37 **package-use-list** | 11–38 |
+| `**package-used-by-list**` | 
+| 11–39 **packagep** | 11–40 |
 | `**pairlis**` | 14–46 |
 | `*pairwise*` | 26–43 |
 | `*parallel*` | 26–43 |
 | `*parameter*` | 26–43 |
-| `*parameter specializer*` | 26–43 *parameter specializer name* | 26–43 **parse-error** | 9–14 |
+| `*parameter specializer*` | 
+| 26–43 *parameter specializer name* | 
+| 26–43 **parse-error** | 9–14 |
 | `**parse-integer**` | 12–66 |
 | `**parse-namestring**` | 19–30 |
 | `*pathname*` | 19–1, | 26–43 |
 | `**pathname**` | 2–36, | 19–15 |
-| `*pathname designator*` | 26–43 **pathname-device** | 19–20 |
-| `**pathname-directory**` | 19–20 **pathname-host** | 19–20 |
+| `*pathname designator*` | 
+| 26–43 **pathname-device** | 19–20 |
+| `**pathname-directory**` | 
+| 19–20 **pathname-host** | 19–20 |
 | `**pathname-match-p**` | 19–34 |
 | `**pathname-name**` | 19–20 |
 | `**pathname-type**` | 19–20 |
@@ -1147,12 +1267,14 @@ sidebar_position: 1
 | `**pathnamep**` | 19–19 |
 
 | `**peek-char**` | 21–17 |
-| `Percent (format directive)` | 22–25 **phase** | 12–58 |
+| `Percent (format directive)` | 
+| 22–25 **phase** | 12–58 |
 | `*physical pathname*` | 26–43 |
 | `**pi**` | 12–32 |
 | `*place*` | 5–1, | 26–43 |
 | `*plist*` | 26–43 |
-| `Plus (sharpsign reader macro)` | 2–37 **plusp** | 12–24 |
+| `Plus (sharpsign reader macro)` | 
+| 2–37 **plusp** | 12–24 |
 | `**pop**` | 14–24 |
 | `*portable*` | 26–43 |
 | `**position**` | 17–21 |
@@ -1161,11 +1283,14 @@ sidebar_position: 1
 | `*potential copy*` | 26–44 |
 | `*potential number*` | 26–44 |
 | `**pprint**` | 22–61 |
-| `*pprint dispatch table*` | 22–16, | 26–44 **pprint-dispatch** | 22–47 |
-| `**pprint-exit-if-list-exhausted**` | 22–48 **pprint-fill** | 22–49 |
+| `*pprint dispatch table*` | 22–16, | 
+| 26–44 **pprint-dispatch** | 22–47 |
+| `**pprint-exit-if-list-exhausted**` | 
+| 22–48 **pprint-fill** | 22–49 |
 | `**pprint-indent**` | 22–50 |
 | `**pprint-linear**` | 22–49 |
-| `**pprint-logical-block**` | 22–51 **pprint-newline** | 22–53 |
+| `**pprint-logical-block**` | 
+| 22–51 **pprint-newline** | 22–53 |
 | `**pprint-pop**` | 22–55 |
 | `**pprint-tab**` | 22–57 |
 | `**pprint-tabular**` | 22–49 |
@@ -1173,7 +1298,9 @@ sidebar_position: 1
 | `prepared to signal` | 1–16 |
 | `*present*` | 11–2, | 24–1, | 26–44 |
 | `*pretty print*` | 26–44 |
-| `*pretty printer*` | 22–14, | 26–44 *pretty printing stream* | 26–44 *primary method* | 26–44 |
+| `*pretty printer*` | 22–14, | 
+| 26–44 *pretty printing stream* | 
+| 26–44 *primary method* | 26–44 |
 | `*primary value*` | 26–44 |
 | `**prin1**` | 22–61 |
 | `**prin1-to-string**` | 22–64 |
@@ -1201,7 +1328,8 @@ sidebar_position: 1
 | `**\*print-readably\***` | 22–76 |
 | `**\*print-right-margin\***` | 22–78 |
 | `**print-unreadable-object**` | 22–59 |
-| `*printer control variable*` | 22–1, | 26–45 *printer escaping* | 22–2, | 26–45 |
+| `*printer control variable*` | 22–1, | 
+| 26–45 *printer escaping* | 22–2, | 26–45 |
 | `*printing*` | 26–45 |
 | `**probe-file**` | 20–3 |
 | `*process*` | 3–14, | 26–45 |
@@ -1238,7 +1366,9 @@ sidebar_position: 1
 | `*qualifier*` | 26–46 |
 | `*query I/O*` | 26–46 |
 | `**\*query-io\***` | 21–57 |
-| `Question-Mark (format directive)` | 22–39 quotation (of forms) | 2–24, | 2–26, | 2–28 quotation (of strings) | 2–26 |
+| `Question-Mark (format directive)` | 
+| 22–39 quotation (of forms) | 2–24, | 2–26, | 
+| 2–28 quotation (of strings) | 2–26 |
 | `**quote**` | 2–24, | 2–26, | 2–28, | 3–65 |
 | `*quoted object*` | 26–46 |
 | `quux` | 1–15 |
@@ -1267,36 +1397,43 @@ sidebar_position: 1
 | `**read-byte**` | 21–15 |
 | `**read-char**` | 21–18 |
 | `**read-char-no-hang**` | 21–19 |
-| `**\*read-default-float-format\***` | 23–19 **read-delimited-list** | 23–8 |
+| `**\*read-default-float-format\***` | 
+| 23–19 **read-delimited-list** | 23–8 |
 | `**\*read-eval\***` | 2–33, | 23–20 |
 | `**read-from-string**` | 23–10 |
 | `**read-line**` | 21–24 |
-| `**read-preserving-whitespace**` | 23–6 **read-sequence** | 21–26 |
+| `**read-preserving-whitespace**` | 
+| 23–6 **read-sequence** | 21–26 |
 | `**\*read-suppress\***` | 23–21 |
 | `*readably*` | 26–47 |
 | `*reader*` | 26–47 |
 | `*reader macro*` | 26–47 |
-| `*reader macro function*` | 2–8, | 26–47 **reader-error** | 23–23 |
+| `*reader macro function*` | 2–8, | 
+| 26–47 **reader-error** | 23–23 |
 | `*readtable*` | 2–1, | 26–47 |
 | `**readtable**` | 23–4 |
 | `*readtable case*` | 26–47 |
-| `*readtable designator*` | 26–48 **\*readtable\*** | 23–22 |
+| `*readtable designator*` | 
+| 26–48 **\*readtable\*** | 23–22 |
 | `**readtable-case**` | 23–11 |
 | `**readtablep**` | 23–12 |
 | `**real**` | 12–12 |
 | `**realp**` | 12–60 |
 | `**realpart**` | 12–59 |
-| `*recognizable subtype*` | 26–48 redefinition | 11–5 |
+| `*recognizable subtype*` | 
+| 26–48 redefinition | 11–5 |
 | `**reduce**` | 17–13 |
 | `*reference*` | 26–48 |
 | `*registered package*` | 26–48 |
-| `**reinitialize-instance**` | 7–31 *relative* | 26–48 |
+| `**reinitialize-instance**` | 
+| 7–31 *relative* | 26–48 |
 | `:relative` | 19–7 |
 | `**rem**` | 12–47 |
 | `**remf**` | 14–51 |
 | `**remhash**` | 18–11 |
 | `**remove**` | 17–32 |
-| `**remove-duplicates**` | 17–35 **remove-if** | 17–32 |
+| `**remove-duplicates**` | 
+| 17–35 **remove-if** | 17–32 |
 | `**remove-if-not**` | 17–32 |
 | `**remove-method**` | 7–49 |
 | `**remprop**` | 10–19 |
@@ -1305,7 +1442,8 @@ sidebar_position: 1
 | `*repertoire*` | 13–2, | 26–48 |
 | `**replace**` | 17–25 |
 | `*report*` | 26–48 |
-| `*report message*` | 9–4, | 26–48 **require** | 24–15 |
+| `*report message*` | 9–4, | 
+| 26–48 **require** | 24–15 |
 | `*required parameter*` | 26–48 |
 | `**rest**` | 14–38 |
 
@@ -1324,21 +1462,29 @@ sidebar_position: 1
 | `**return-from**` | 5–45 |
 | `**revappend**` | 14–31 |
 | `**reverse**` | 17–17 |
-| `Right-Brace (format directive)` | 22–39 Right-Bracket (format directive) | 22–37 Right-Paren (format directive) | 22–40 || *right-parenthesis* | 26–49 |
-| `Right-Parenthesis (reader macro)` | 2–23 **room** | 25–21 |
+| `Right-Brace (format directive)` | 
+| 22–39 Right-Bracket (format directive) | 
+| 22–37 Right-Paren (format directive) | 22–40 || *right-parenthesis* | 26–49 |
+| `Right-Parenthesis (reader macro)` | 
+| 2–23 **room** | 25–21 |
 | `**rotatef**` | 5–103 |
 | `**round**` | 12–25 |
 | `**row-major-aref**` | 15–28 |
 | `**rplaca**` | 14–8 |
 | `**rplacd**` | 14–8 |
 | `*run time*` | 3–15, | 26–49 |
-| `*run-time compiler*` | 3–15, | 26–49 *run-time definition* | 3–15, | 26–49 *run-time environment* | 3–15, | 26–49 S (format || directive) | 22–31 |
-| `S (sharpsign reader macro)` | 2–36 *safe* | 1–15, | 26–49 |
+| `*run-time compiler*` | 3–15, | 
+| 26–49 *run-time definition* | 3–15, | 
+| 26–49 *run-time environment* | 3–15, | 
+| 26–49 S (format || directive) | 22–31 |
+| `S (sharpsign reader macro)` | 
+| 2–36 *safe* | 1–15, | 26–49 |
 | `*safe call*` | 3–50, | 26–49 |
 | `**safety**` | 3–29, | 3–97 |
 | `*same*` | 26–49 |
 | `**satisfies**` | 4–26 |
-| `*satisfy the test*` | 17–2, | 17–4, | 26–50 **sbit** | 15–36 |
+| `*satisfy the test*` | 17–2, | 17–4, | 
+| 26–50 **sbit** | 15–36 |
 | `**scale-float**` | 12–82 |
 | `**schar**` | 16–5 |
 | `*scope*` | 26–50 |
@@ -1366,7 +1512,8 @@ sidebar_position: 1
 | set-char-bit | A–1 |
 
 | `**set-difference**` | 14–56 |
-| `**set-dispatch-macro-character**` | 23–13 **set-exclusive-or** | 14–58 |
+| `**set-dispatch-macro-character**` | 
+| 23–13 **set-exclusive-or** | 14–58 |
 | `**set-macro-character**` | 23–14 |
 | `**set-pprint-dispatch**` | 22–60 |
 | `**set-syntax-from-char**` | 23–16 |
@@ -1379,23 +1526,36 @@ sidebar_position: 1
 | `**seventh**` | 14–25 |
 | `*shadow*` | 3–11, | 4–8, | 26–51 |
 | `**shadow**` | 11–15 |
-| `*shadowing symbol*` | 11–3, | 11–4, | 26–51 *shadowing symbols list* | 26–51 |
+| `*shadowing symbol*` | 11–3, | 11–4, | 
+| 26–51 *shadowing symbols list* | 26–51 |
 | `**shadowing-import**` | 11–16 |
 | `*shared slot*` | 26–52 |
 | `**shared-initialize**` | 7–32 |
 | `*sharpsign*` | 26–52 |
 | `Sharpsign (reader macro)` | 2–29 |
-| `Sharpsign (sharpsign reader macro)` | 2–37 Sharpsign A (reader macro) | 2–35 |
-| `Sharpsign Asterisk (reader macro)` | 2–32 Sharpsign B (reader macro) | 2–33  |
+| `Sharpsign (sharpsign reader macro)` | 
+| 2–37 Sharpsign A (reader macro) | 2–35 |
+| `Sharpsign Asterisk (reader macro)` | 
+| 2–32 Sharpsign B (reader macro) | 2–33  |
 
-| `Sharpsign Backslash (reader macro)` | 2–31 Sharpsign C (reader macro) | 2–34 |
-| `Sharpsign Colon (reader macro)` | 2–33 Sharpsign Dot (reader macro) | 2–33 |
-Sharpsign Equal-Sign (reader macro) | 2–36 Sharpsign Left-Parenthesis (reader macro) | 2–31 Sharpsign Less-Than-Sign | (reader |macro) | 2–39 Sharpsign Minus (reader macro) | 2–37 Sharpsign O (reader macro) | 2–33 |
+| `Sharpsign Backslash (reader macro)` | 
+| 2–31 Sharpsign C (reader macro) | 2–34 |
+| `Sharpsign Colon (reader macro)` | 
+| 2–33 Sharpsign Dot (reader macro) | 2–33 |
+Sharpsign Equal-Sign (reader macro) | 
+| 2–36 Sharpsign Left-Parenthesis (reader macro) | 
+| 2–31 Sharpsign Less-Than-Sign | (reader |macro) | 
+| 2–39 Sharpsign Minus (reader macro) | 
+| 2–37 Sharpsign O (reader macro) | 2–33 |
 | `Sharpsign P (reader macro)` | 2–36 |
-| `Sharpsign Plus (reader macro)` | 2–37 Sharpsign R (reader macro) | 2–34 |
+| `Sharpsign Plus (reader macro)` | 
+| 2–37 Sharpsign R (reader macro) | 2–34 |
 | `Sharpsign Right-Parenthesis` | 2–40 |
 | `Sharpsign S (reader macro)` | 2–36 |
-| `Sharpsign Sharpsign (reader macro)` | 2–37, | 22–56 Sharpsign Single-Quote (reader macro) | 2–31 Sharpsign Vertical-Bar || (reader macro) | 2–38 Sharpsign Whitespace | 2–39, | 2–40 |
+| `Sharpsign Sharpsign (reader macro)` | 2–37, | 
+| 22–56 Sharpsign Single-Quote (reader macro) | 
+| 2–31 Sharpsign Vertical-Bar || (reader macro) | 
+| 2–38 Sharpsign Whitespace | 2–39, | 2–40 |
 | `Sharpsign X (reader macro)` | 2–34 |
 | `**shiftf**` | 5–101 |
 | `*short float*` | 26–52 |
@@ -1425,7 +1585,9 @@ Sharpsign Equal-Sign (reader macro) | 2–36 Sharpsign Left-Parenthesis (reader 
 | `**simple-bit-vector**` | 2–32, | 15–10 |
 | `**simple-bit-vector-p**` | 15–40 |
 | `**simple-condition**` | 9–28 |
-| `**simple-condition-format-arguments**` | 9–29 **simple-condition-format-control** | 9–29 **simple-error** | 9–25 |
+| `**simple-condition-format-arguments**` | 
+| 9–29 **simple-condition-format-control** | 
+| 9–29 **simple-error** | 9–25 |
 | `**simple-string**` | 16–3 |
 | `**simple-string-p**` | 16–4 |
 | `**simple-type-error**` | 4–42 |
@@ -1437,8 +1599,11 @@ Sharpsign Equal-Sign (reader macro) | 2–36 Sharpsign Left-Parenthesis (reader 
 | `*single float*` | 26–53 |
 | `**single-float**` | 12–14 |
 | `**single-float-epsilon**` | 12–88 |
-| `**single-float-negative-epsilon**` | 12–88 *single-quote* | 26–53 |
-| `Single-Quote (reader macro)` | 2–24 Single-Quote (sharpsign reader macro) | 2–31 *singleton* | 26–53 |
+| `**single-float-negative-epsilon**` | 
+| 12–88 *single-quote* | 26–53 |
+| `Single-Quote (reader macro)` | 
+| 2–24 Single-Quote (sharpsign reader macro) | 
+| 2–31 *singleton* | 26–53 |
 | `**sinh**` | 12–33 |
 | `*situation*` | 26–53 |
 | `**sixth**` | 14–25 |
@@ -1469,36 +1634,46 @@ Sharpsign Equal-Sign (reader macro) | 2–36 Sharpsign Left-Parenthesis (reader 
 | `**special-operator-p**` | 3–103 |
 | `*specialize*` | 26–54 |
 | `*specialized*` | 26–54 |
-| `*specialized lambda list*` | 3–40, | 26–54 **speed** | 3–97 |
-| `*spreadable argument list designator*` | 26–54 **sqrt** | 12–49 |
+| `*specialized lambda list*` | 3–40, | 
+| 26–54 **speed** | 3–97 |
+| `*spreadable argument list designator*` | 
+| 26–54 **sqrt** | 12–49 |
 | `**stable-sort**` | 17–18 |
 | `*stack allocate*` | 26–54 |
 | `*stack-allocated*` | 26–54 |
 | `**standard**` | 7–24, | 7–26 |
 | `*standard character*` | 2–2, | 26–54 |
 | `*standard class*` | 26–54 |
-| `*standard generic function*` | 26–54 *standard input* | 26–54 |
-| `*standard method combination*` | 26–54 *standard object* | 26–54 |
+| `*standard generic function*` | 
+| 26–54 *standard input* | 26–54 |
+| `*standard method combination*` | 
+| 26–54 *standard object* | 26–54 |
 | `*standard output*` | 26–55 |
-| `*standard pprint dispatch table*` | 26–55 *standard readtable* | 2–1, | 26–55 |
+| `*standard pprint dispatch table*` | 
+| 26–55 *standard readtable* | 2–1, | 26–55 |
 | `*standard syntax*` | 2–1, | 26–55 |
 | `**standard-char**` | 13–9 |
 | `**standard-char-p**` | 13–18 |
 | `**standard-class**` | 4–24 |
-| `**standard-generic-function**` | 4–23 **\*standard-input\*** | 21–57 |
+| `**standard-generic-function**` | 
+| 4–23 **\*standard-input\*** | 21–57 |
 | `**standard-method**` | 4–25 |
 | `**standard-object**` | 4–25 |
 | `**\*standard-output\***` | 21–57 |
 | `*standardized*` | 26–55 |
-| `*startup environment*` | 3–14, | 26–55 *step* | 26–55 |
+| `*startup environment*` | 3–14, | 
+| 26–55 *step* | 26–55 |
 | `**step**` | 25–13 |
 | `**storage-condition**` | 9–15 |
 | `**store-value**` | 9–67, | 9–68 |
-| `*stream*` | 20–1, | 21–1, | 21–2, | 26–55 **stream** | 21–7 |
-| `*stream associated with a file*` | 20–1, | 26–55 *stream designator* | 26–56 |
+| `*stream*` | 20–1, | 21–1, | 21–2, | 
+| 26–55 **stream** | 21–7 |
+| `*stream associated with a file*` | 20–1, | 
+| 26–55 *stream designator* | 26–56 |
 | `*stream element type*` | 26–56 |
 | `*stream variable*` | 21–4, | 26–56 |
-| `*stream variable designator*` | 26–56 **stream-element-type** | 21–13 |
+| `*stream variable designator*` | 
+| 26–56 **stream-element-type** | 21–13 |
 | `**stream-error**` | 21–60 |
 | `**stream-error-stream**` | 21–60 |
 | `**stream-external-format**` | 21–36 |
@@ -1580,7 +1755,8 @@ Sharpsign Equal-Sign (reader macro) | 2–36 Sharpsign Left-Parenthesis (reader 
 | `*system class*` | 26–58 |
 | `*system code*` | 26–58 |
 | `*t*` | 26–58 |
-| `**t**` | 4–26, | 5–55, | 5–74, | 5–77, | 25–18, | 25–19 T (format directive) | 22–34 |
+| `**t**` | 4–26, | 5–55, | 5–74, | 5–77, | 25–18, | 
+| 25–19 T (format directive) | 22–34 |
 | `*tag*` | 26–58 |
 | `**tagbody**` | 5–48 |
 | `*tail*` | 26–58 |
@@ -1601,23 +1777,42 @@ Sharpsign Equal-Sign (reader macro) | 2–36 Sharpsign Left-Parenthesis (reader 
 | `*tilde*` | 26–58 |
 | `Tilde (format directive)` | 22–25 |
 | `Tilde A (format directive)` | 22–31 |
-| `Tilde Ampersand (format directive)` | 22–25 Tilde Asterisk (format directive) | 22–36 Tilde B (format directive) | 22–26 |
+| `Tilde Ampersand (format directive)` | 
+| 22–25 Tilde Asterisk (format directive) | 
+| 22–36 Tilde B (format directive) | 22–26 |
 | `Tilde C (format directive)` | 22–24 |
-| `Tilde Circumflex (format directive)` | 22–41 Tilde D (format directive) | 22–26 |
-| `Tilde Dollarsign (format directive)` | 22–30 Tilde E (format directive) | 22–28 |
+| `Tilde Circumflex (format directive)` | 
+| 22–41 Tilde D (format directive) | 22–26 |
+| `Tilde Dollarsign (format directive)` | 
+| 22–30 Tilde E (format directive) | 22–28 |
 | `Tilde F (format directive)` | 22–27 |
 | `Tilde G (format directive)` | 22–30 |
 Tilde Greater-Than-Sign (format directive) 22– 36 
 | `Tilde I (format directive)` | 22–33 |
-| `Tilde Left-Brace (format directive)` | 22–37 Tilde Left-Bracket (format directive) | 22–36 Tilde Left-Paren (format || directive) | 22–39 Tilde Less-Than-Sign (format directive) | 22–32, | 22–35 |
-| `Tilde Newline (format directive)` | 22–42 Tilde O (format directive) | 22–27 |
+| `Tilde Left-Brace (format directive)` | 
+| 22–37 Tilde Left-Bracket (format directive) | 
+| 22–36 Tilde Left-Paren (format || directive) | 
+| 22–39 Tilde Less-Than-Sign (format directive) | 22–32, | 22–35 |
+| `Tilde Newline (format directive)` | 
+| 22–42 Tilde O (format directive) | 22–27 |
 | `Tilde P (format directive)` | 22–40 |
-| `Tilde Percent (format directive)` | 22–25 Tilde Question-Mark (format directive) | 22–39 Tilde R (format directive) | 22–25 |
-| `Tilde Right-Brace (format directive)` | 22–39 Tilde Right-Bracket (format directive) | 22–37 Tilde Right-Paren (format || directive) | 22–40 Tilde S (format directive) | 22–31 |
-| `Tilde Semicolon (format directive)` | 22–40 Tilde Slash (format directive) | 22–33 Tilde T (format directive) | 22–34 |
-| `Tilde Tilde (format directive)` | 22–25 Tilde Underscore (format directive) | 22–32 Tilde Vertical-Bar (format directive) | || 22–25 Tilde W (format directive) | 22–32 |
+| `Tilde Percent (format directive)` | 
+| 22–25 Tilde Question-Mark (format directive) | 
+| 22–39 Tilde R (format directive) | 22–25 |
+| `Tilde Right-Brace (format directive)` | 
+| 22–39 Tilde Right-Bracket (format directive) | 
+| 22–37 Tilde Right-Paren (format || directive) | 
+| 22–40 Tilde S (format directive) | 22–31 |
+| `Tilde Semicolon (format directive)` | 
+| 22–40 Tilde Slash (format directive) | 
+| 22–33 Tilde T (format directive) | 22–34 |
+| `Tilde Tilde (format directive)` | 
+| 22–25 Tilde Underscore (format directive) | 
+| 22–32 Tilde Vertical-Bar (format directive) | || 
+| 22–25 Tilde W (format directive) | 22–32 |
 
-| `Tilde X (format directive)` | 22–27 *time* | 26–58 |
+| `Tilde X (format directive)` | 
+| 22–27 *time* | 26–58 |
 | `**time**` | 25–14 |
 | `*time zone*` | 26–59 |
 | `*token*` | 2–6, | 26–59 |
@@ -1625,7 +1820,8 @@ Tilde Greater-Than-Sign (format directive) 22– 36
 | `**trace**` | 25–12 |
 | `*trace output*` | 26–59 |
 | `**\*trace-output\***` | 21–57 |
-| `**translate-logical-pathname**` | 19–35 **translate-pathname** | 19–36 |
+| `**translate-logical-pathname**` | 
+| 19–35 **translate-pathname** | 19–36 |
 | `*tree*` | 14–1, | 26–59 |
 | `*tree structure*` | 26–59 |
 | `**tree-equal**` | 14–18 |
@@ -1635,7 +1831,9 @@ Tilde Greater-Than-Sign (format directive) 22– 36
 | `**truncate**` | 12–25 |
 | `*two-way stream*` | 26–59 |
 | `**two-way-stream**` | 21–11 |
-| `**two-way-stream-input-stream**` | 21–49 **two-way-stream-output-stream** | 21–49 *type* | 26–59 |
+| `**two-way-stream-input-stream**` | 
+| 21–49 **two-way-stream-output-stream** | 
+| 21–49 *type* | 26–59 |
 | `**type**` | 3–90, | 25–19 |
 | `*type declaration*` | 26–60 |
 | `*type equivalent*` | 26–60 |
@@ -1643,7 +1841,8 @@ Tilde Greater-Than-Sign (format directive) 22– 36
 | `*type specifier*` | 26–60 |
 | `**type-error**` | 4–41 |
 | `**type-error-datum**` | 4–41 |
-| `**type-error-expected-type**` | 4–41 **type-of** | 4–37 |
+| `**type-error-expected-type**` | 
+| 4–41 **type-of** | 4–37 |
 | `**typecase**` | 5–76 |
 | `**typep**` | 4–39 |
 | `*unbound*` | 26–60 |
@@ -1654,7 +1853,8 @@ Tilde Greater-Than-Sign (format directive) 22– 36
 | `undefined consequences` | 1–17 |
 | `*undefined function*` | 26–60 |
 | `**undefined-function**` | 5–104 |
-| `Underscore (format directive)` | 22–32 **unexport** | 11–24 |
+| `Underscore (format directive)` | 
+| 22–32 **unexport** | 11–24 |
 | `*unintern*` | 26–60 |
 | `**unintern**` | 11–25 |
 | `*uninterned*` | 26–60 |
@@ -1674,9 +1874,14 @@ Tilde Greater-Than-Sign (format directive) 22– 36
 | `**unuse-package**` | 11–27 |
 | `**unwind-protect**` | 5–51 |
 | `:up` | 19–8 |
-| `**update-instance-for-different-class**` | 7–34 **update-instance-for-redefined-class** | 7–35 *upgrade* | 26–61 |
-| `*upgraded array element type*` | 15–3, | 26–61 *upgraded complex part type* | 26–61 |
-| `**upgraded-array-element-type**` | 15–29 **upgraded-complex-part-type** | 12–60 **upper-case-p** | 13–20 |
+| `**update-instance-for-different-class**` | 
+| 7–34 **update-instance-for-redefined-class** | 
+| 7–35 *upgrade* | 26–61 |
+| `*upgraded array element type*` | 15–3, | 
+| 26–61 *upgraded complex part type* | 26–61 |
+| `**upgraded-array-element-type**` | 
+| 15–29 **upgraded-complex-part-type** | 
+| 12–60 **upper-case-p** | 13–20 |
 | `*uppercase*` | 26–61 |
 | `*use*` | 26–61 |
 | `*use list*` | 26–61 |
@@ -1698,7 +1903,8 @@ Tilde Greater-Than-Sign (format directive) 22– 36
 | `*valid pathname type*` | 26–62 |
 | `*valid pathname version*` | 26–62 |
 
-| `*valid physical pathname host*` | 26–62 *valid sequence index* | 26–62 |
+| `*valid physical pathname host*` | 
+| 26–62 *valid sequence index* | 26–62 |
 | `*value*` | 26–63 |
 | `*value cell*` | 26–63 |
 | `**values**` | 4–29, | 5–84 |
@@ -1712,7 +1918,9 @@ Tilde Greater-Than-Sign (format directive) 22– 36
 | `**vector-push-extend**` | 15–34 |
 | `**vectorp**` | 15–36 |
 | `*vertical-bar*` | 26–63 |
-| `Vertical-Bar (format directive)` | 22–25 Vertical-Bar (sharpsign reader macro) | 2–38 W (format directive) | 22–32 |
+| `Vertical-Bar (format directive)` | 
+| 22–25 Vertical-Bar (sharpsign reader macro) | 
+| 2–38 W (format directive) | 22–32 |
 | `**warn**` | 9–29 |
 | `**warning**` | 9–11 |
 | `warning` | 1–18 |
@@ -1743,7 +1951,9 @@ Tilde Greater-Than-Sign (format directive) 22– 36
 | `**write-string**` | 21–25 |
 | `**write-to-string**` | 22–64 |
 | `*writer*` | 26–63 |
-| `X (format directive)` | 22–27 X (sharpsign reader macro) | 2–34 **y-or-n-p** | 21–44 |
+| `X (format directive)` | 
+| 22–27 X (sharpsign reader macro) | 
+| 2–34 **y-or-n-p** | 21–44 |
 | `**yes-or-no-p**` | 21–44 |
 | `*yield*` | 26–64 |
 | `**zerop**` | 12–25 |
