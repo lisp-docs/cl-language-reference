@@ -3650,8 +3650,8 @@ Error: non-numeric value: A
  (alpha-char-p #\5) → NIL
  (alpha-char-p #\Newline) → NIL
  ;; This next example presupposes an implementation
- ;; in which #\\alfa is a defined character.
- (alpha-char-p #\\alfa) → \term{implementation-dependent}
+ ;; in which #\<alfa> is a defined character.
+ (alpha-char-p #\<alfa>) → \term{implementation-dependent}
 
 ```
 
@@ -3811,8 +3811,8 @@ OR=> "Capital-A"
 OR=> "LA02"
 
  ;; Even though its CHAR-NAME can vary, #\A prints as #\A
- (prin1-to-string (read-from-string (format nil "#\\\~A" (or (char-name #\A) "A"))))
-→ "#\\\A"
+ (prin1-to-string (read-from-string (format nil "#\\~A" (or (char-name #\A) "A"))))
+→ "#\\A"
 
 ```
 
@@ -13041,9 +13041,9 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 
 
 ```lisp
- (get-macro-character #\\lbr) → NIL, false
- (make-dispatch-macro-character #\\lbr) → T
- (not (get-macro-character #\\lbr)) → NIL
+ (get-macro-character #\lbr) → NIL, false
+ (make-dispatch-macro-character #\lbr) → T
+ (not (get-macro-character #\lbr)) → NIL
 
 ```
 
@@ -13054,11 +13054,11 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 → (QUOTE A)
  (with-input-from-string (is " ") (read is nil 'the-end)) → THE-END
  (defun skip-then-read-char (s c n)
-    (if (char= c #\\{) (read s t nil t) (read-preserving-whitespace s))
+    (if (char= c #\{) (read s t nil t) (read-preserving-whitespace s))
     (read-char-no-hang s)) → SKIP-THEN-READ-CHAR
  (let ((*readtable* (copy-readtable nil)))
-    (set-dispatch-macro-character #\# #\\{ #'skip-then-read-char)
-    (set-dispatch-macro-character #\# #\\} #'skip-then-read-char)
+    (set-dispatch-macro-character #\# #\{ #'skip-then-read-char)
+    (set-dispatch-macro-character #\# #\} #'skip-then-read-char)
     (with-input-from-string (is "#\{123 x #\}123 y")
       (format t "~S ~S" (read is) (read is)))) → #\x, #\Space, NIL
 
@@ -13097,7 +13097,7 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 
 
 ```lisp
- (read-delimited-list #\\rbracket) 1 2 3 4 5 6 \rbracket
+ (read-delimited-list #\rbracket) 1 2 3 4 5 6 \rbracket
 → (1 2 3 4 5 6)
 
 ```
@@ -13114,16 +13114,16 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
    (declare (ignore char arg))
    (mapcon #'(lambda (x)
               (mapcar #'(lambda (y) (list (car x) y)) (cdr x)))
-          (read-delimited-list #\\} stream t))) → |#\{-reader|
+          (read-delimited-list #\} stream t))) → |#\{-reader|
 
- (set-dispatch-macro-character #\# #\\{ #'|#\{-reader|) → T 
- (set-macro-character #\\} (get-macro-character #\) \nil))
+ (set-dispatch-macro-character #\# #\{ #'|#\{-reader|) → T 
+ (set-macro-character #\} (get-macro-character #\) \nil))
 
 ```
 
 
 ```lisp
- (set-macro-character #\\} (get-macro-character #\) \nil))
+ (set-macro-character #\} (get-macro-character #\) \nil))
 
 ```
 
@@ -13156,8 +13156,8 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 
 
 ```lisp
- (get-dispatch-macro-character #\# #\\{) → NIL
- (set-dispatch-macro-character #\# #\\{        ;dispatch on #\{
+ (get-dispatch-macro-character #\# #\{) → NIL
+ (set-dispatch-macro-character #\# #\{        ;dispatch on #\{
     #'(lambda(s c n)
         (let ((list (read s nil (values) t)))  ;list is object after #n\{
           (when (consp list)                   ;return nth element of list
@@ -13175,31 +13175,31 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 (defun |#$-reader| (stream subchar arg)
    (declare (ignore subchar arg))
    (list 'dollars (read stream t nil t))) → |#$-reader|
- (set-dispatch-macro-character #\# #\\$ #'|#\$-reader|) → T
+ (set-dispatch-macro-character #\# #\$ #'|#\$-reader|) → T
 
 ```
 
 
 ```lisp
-% (get-dispatch-macro-character #\# #\\{) → NIL 
+% (get-dispatch-macro-character #\# #\{) → NIL 
 % (unless (get-dispatch-macro-character #\# #\x)
 %      (warn "Hexadecimal input (#x<ddd>) is disabled")) → NIL 
-% (let ((previous-fun (get-dispatch-macro-character #\# #\\{)))
+% (let ((previous-fun (get-dispatch-macro-character #\# #\{)))
 %      (when previous-fun
-%        (set-dispatch-macro-character #\# #\\{
+%        (set-dispatch-macro-character #\# #\{
 %          #'(lambda (stream char arg)
 %               (setq stream *debug-io*)
 %               (when *debug-macro-chars*
 %                  (format *trace-output* 
 %                         "~&Occurrence of ~C~C on stream ~S"
-%                                         #\# #\\{ stream))
+%                                         #\# #\{ stream))
 %              (list (funcall previous-fun stream char)))))) → NIL 
 %
 ```
 
 
 ```lisp
- (get-macro-character #\\lbr) → NIL, false
+ (get-macro-character #\lbr) → NIL, false
  (not (get-macro-character #\;)) → NIL
 
 ```
