@@ -119,9 +119,9 @@
                                              &aux e (f 'eff))))
    (a 1) (b 2) (c 3) (d 4) (e 5) (f 6))
  
- (create-foo 10) → #S(FOO A 10 B 2 C SEA D 2 E \term{implemention-dependent} F EFF)
+ (create-foo 10) → #S(FOO A 10 B 2 C SEA D 2 E implemention-dependent F EFF)
  (create-foo 10 'bee 'see :d 'dee) 
-→ #S(FOO A 10 B BEE C SEE D DEE E \term{implemention-dependent} F EFF)
+→ #S(FOO A 10 B BEE C SEE D DEE E implemention-dependent F EFF)
 
 ```
 
@@ -295,10 +295,10 @@
 
 
 ```lisp
- (evenp most-positive-fixnum) → \term{implementation-dependent}
- (random) → \term{implementation-dependent}
- (> lambda-parameters-limit 93) → \term{implementation-dependent}
- (char-name #\A) → \term{implementation-dependent}
+ (evenp most-positive-fixnum) → implementation-dependent
+ (random) → implementation-dependent
+ (> lambda-parameters-limit 93) → implementation-dependent
+ (char-name #\A) → implementation-dependent
 
 ```
 
@@ -535,7 +535,7 @@ OR=> "LA01"
 
 
 ```lisp
- (char-name #\a) → \term{implementation-dependent}
+ (char-name #\a) → implementation-dependent
 
 ```
 
@@ -2391,7 +2391,7 @@ Error: non-numeric value: A
 
 
 ```lisp
- (\term{operator} \starparam{preceding-form} \param{place} \starparam{following-form})
+ (operator \starparam{preceding-form} \param{place} \starparam{following-form})
 
 ```
 
@@ -3196,13 +3196,13 @@ Error: non-numeric value: A
                :element-type 'character 
                :adjustable t 
                :fill-pointer 3)) → T
- (adjustable-array-p (make-array 4)) → \term{implementation-dependent}
+ (adjustable-array-p (make-array 4)) → implementation-dependent
 
 ```
 
 
 ```lisp
- (aref (setq alpha (make-array 4)) 3) → \term{implementation-dependent}
+ (aref (setq alpha (make-array 4)) 3) → implementation-dependent
  (setf (aref alpha 3) 'sirens) → SIRENS
  (aref alpha 3) → SIRENS
  (aref (setq beta (make-array '(2 4) 
@@ -3242,9 +3242,9 @@ Error: non-numeric value: A
 ```lisp
  (array-element-type (make-array 4)) → T
  (array-element-type (make-array 12 :element-type '(unsigned-byte 8))) 
-→ \term{implementation-dependent}
+→ implementation-dependent
  (array-element-type (make-array 12 :element-type '(unsigned-byte 5)))
-→ \term{implementation-dependent}
+→ implementation-dependent
 
 ```
 
@@ -3256,7 +3256,7 @@ Error: non-numeric value: A
 
 
 ```lisp
- (array-has-fill-pointer-p (make-array 4)) → \term{implementation-dependent}
+ (array-has-fill-pointer-p (make-array 4)) → implementation-dependent
  (array-has-fill-pointer-p (make-array '(2 3))) → NIL
  (array-has-fill-pointer-p
    (make-array 8 
@@ -3594,8 +3594,8 @@ Error: non-numeric value: A
  (char>= #\d #\d #\c #\a) → T
  (char> #\e #\d #\b #\c #\a) → NIL
  (char>= #\e #\d #\b #\c #\a) → NIL
- (char> #\z #\A) → \term{implementation-dependent}
- (char> #\Z #\a) → \term{implementation-dependent}
+ (char> #\z #\A) → implementation-dependent
+ (char> #\Z #\a) → implementation-dependent
  (char-equal #\A #\a) → T
  (stable-sort (list #\b #\A #\B #\a #\c #\C) #'char-lessp)
 → (#\A #\a #\b #\B #\c #\C)
@@ -3651,7 +3651,7 @@ Error: non-numeric value: A
  (alpha-char-p #\Newline) → NIL
  ;; This next example presupposes an implementation
  ;; in which #\<alfa> is a defined character.
- (alpha-char-p #\<alfa>) → \term{implementation-dependent}
+ (alpha-char-p #\<alfa>) → implementation-dependent
 
 ```
 
@@ -5222,7 +5222,7 @@ COMPUTE-POWER-OF-2
  (setq tree1 '(1 (1 2) (1 2 3) (1 2 3 4))) → (1 (1 2) (1 2 3) (1 2 3 4))
  (subst "two" 2 tree1) → (1 (1 "two") (1 "two" 3) (1 "two" 3 4))
  (subst "five" 5 tree1) → (1 (1 2) (1 2 3) (1 2 3 4))
- (eq tree1 (subst "five" 5 tree1)) → \term{implementation-dependent}
+ (eq tree1 (subst "five" 5 tree1)) → implementation-dependent
  (subst 'tempest 'hurricane
         '(shakespeare wrote (the hurricane)))
 → (SHAKESPEARE WROTE (THE TEMPEST))
@@ -5600,7 +5600,7 @@ COMPUTE-POWER-OF-2
 %  (defparameter *list-1* (list 1 2 3))
 %  (defparameter *list-2* (list 'a 'b 'c))
 %  (nreconc *list-1* *list-2*) → (3 2 1 A B C)
-%  *list-1* → \term{implementation-dependent}
+%  *list-1* → implementation-dependent
 %  *list-2* → (A B C)
 % 
 %  (nreconc (list) 'a) → A  ;degenerate situation
@@ -6088,15 +6088,15 @@ OR=> (C D)
  (intersection list1 list2 :test 'equal) → ("B" C B 4 1 1)
  (intersection list1 list2 :test #'equalp) → ("d" "C" "B" "A" C B 4 1 1) 
  (nintersection list1 list2) → (1 1 4 B C)
- list1 → \term{implementation-dependent} ;\eg (1 1 4 B C)
- list2 → \term{implementation-dependent} ;\eg (1 4 5 B C D "a" "B" "c" "D")
+ list1 → implementation-dependent ;\eg (1 1 4 B C)
+ list2 → implementation-dependent ;\eg (1 4 5 B C D "a" "B" "c" "D")
  (setq list1 (copy-list '((1 . 2) (2 . 3) (3 . 4) (4 . 5))))
 → ((1 . 2) (2 . 3) (3 . 4) (4 . 5)) 
  (setq list2 (copy-list '((1 . 3) (2 . 4) (3 . 6) (4 . 8))))
 → ((1 . 3) (2 . 4) (3 . 6) (4 . 8)) 
  (nintersection list1 list2 :key #'cdr) → ((2 . 3) (3 . 4)) 
- list1 → \term{implementation-dependent} ;\eg ((1 . 2) (2 . 3) (3 . 4)) 
- list2 → \term{implementation-dependent} ;\eg ((1 . 3) (2 . 4) (3 . 6) (4 . 8)) 
+ list1 → implementation-dependent ;\eg ((1 . 2) (2 . 3) (3 . 4)) 
+ list2 → implementation-dependent ;\eg ((1 . 3) (2 . 4) (3 . 6) (4 . 8)) 
 
 ```
 
@@ -6503,7 +6503,7 @@ OR=> "Symbolics LM-2"
 
 ```lisp
  (defun foo () "bar") → FOO
- (compiled-function-p #'foo) → \term{implementation-dependent}
+ (compiled-function-p #'foo) → implementation-dependent
  (compile 'foo) → FOO 
  (compiled-function-p #'foo) → T
  (setf (symbol-function 'foo)
@@ -7240,7 +7240,7 @@ thing3 → THREE
 
 
 ```lisp
-;; In this example, the implementation is permitted to \term{stack allocate}
+;; In this example, the implementation is permitted to stack allocate
 ;; the list that is bound to X.
  (let ((x (list 1 2 3)))
    (declare (dynamic-extent x))
@@ -7249,7 +7249,7 @@ thing3 → THREE
 \OUT (1 2 3)
 → :DONE
  
-;; In this example, the list to be bound to L can be \term{stack-allocated}.
+;; In this example, the list to be bound to L can be stack-allocated.
  (defun zap (x y z)
    (do ((l (list x y z) (cdr l)))
        ((null l))
@@ -7260,7 +7260,7 @@ thing3 → THREE
 → NIL
 
 ;; Some implementations might open-code LIST-ALL-PACKAGES in a way
-;; that permits using \term{stack allocation} of the list to be bound to L.
+;; that permits using stack allocation of the list to be bound to L.
  (do ((l (list-all-packages) (cdr l)))
      ((null l))
    (declare (dynamic-extent l))
@@ -7270,7 +7270,7 @@ thing3 → THREE
 \OUT "COMMON-LISP-USER"
 → NIL
 
-;; Some implementations might have the ability to \term{stack allocate} 
+;; Some implementations might have the ability to stack allocate 
 ;; rest lists.  A declaration such as the following should be a cue
 ;; to such implementations that stack-allocation of the rest list
 ;; would be desirable.
@@ -7540,7 +7540,7 @@ thing3 → THREE
 
 
 ```lisp
- (declaim (special prosp)) → \term{implementation-dependent}
+ (declaim (special prosp)) → implementation-dependent
  (setq prosp 1 reg 1) → 1
  (let ((prosp 2) (reg 2))         ;the binding of prosp is special
     (set 'prosp 3) (set 'reg 3)   ;due to the preceding proclamation,
@@ -7653,14 +7653,14 @@ thing3 → THREE
  (constantp "temp") → T
  (setq a 6) → 6 
  (constantp a) → T
- (constantp '(sin pi)) → \term{implementation-dependent}
- (constantp '(car '(x))) → \term{implementation-dependent}
- (constantp '(eql x x)) → \term{implementation-dependent}
- (constantp '(typep x 'nil)) → \term{implementation-dependent}
- (constantp '(typep x 't)) → \term{implementation-dependent}
- (constantp '(values this-is-a-constant)) → \term{implementation-dependent}
- (constantp '(values 'x 'y)) → \term{implementation-dependent}
- (constantp '(let ((a '(a b c))) (+ (length a) 6))) → \term{implementation-dependent}
+ (constantp '(sin pi)) → implementation-dependent
+ (constantp '(car '(x))) → implementation-dependent
+ (constantp '(eql x x)) → implementation-dependent
+ (constantp '(typep x 'nil)) → implementation-dependent
+ (constantp '(typep x 't)) → implementation-dependent
+ (constantp '(values this-is-a-constant)) → implementation-dependent
+ (constantp '(values 'x 'y)) → implementation-dependent
+ (constantp '(let ((a '(a b c))) (+ (length a) 6))) → implementation-dependent
 
 ```
 
@@ -7757,7 +7757,7 @@ OR=> #P"S:>vistor>test.text.newest", #P"S:>vistor>_temp_._temp_.1"
 
  (defparameter *some-list* '(a b c))
  (defun strange-test (&rest x) (eq x *some-list*))
- (apply #'strange-test *some-list*) → \term{implementation-dependent}
+ (apply #'strange-test *some-list*) → implementation-dependent
 
  (defun bad-boy (&rest x) (rplacd x 'y))
  (bad-boy 'a 'b 'c) has undefined consequences.
@@ -9881,7 +9881,7 @@ OR=> false
  (= (sxhash "a") (sxhash (make-string 1 :initial-element #\a))) → T
  (let ((r (make-random-state)))
    (= (sxhash r) (sxhash (make-random-state r))))
-→ \term{implementation-dependent}
+→ implementation-dependent
 
 ```
 
@@ -10909,7 +10909,7 @@ OR=> 5.0
             boole-c2    boole-orc2 boole-nand  boole-set))
 → BOOLE-N-VECTOR
  (proclaim '(inline boole-n))
-→ \term{implementation-dependent}
+→ implementation-dependent
  (defun boole-n (n integer &rest more-integers)
    (apply #'boole (elt boole-n-vector n) integer more-integers))
 → BOOLE-N
@@ -13485,10 +13485,10 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
  str → "abc"
  (setq str (copy-seq str)) → "abc"
  (nreverse str) → "cba"
- str → \term{implementation-dependent}
+ str → implementation-dependent
  (setq l (list 1 2 3)) → (1 2 3)
  (nreverse l) → (3 2 1)
- l → \term{implementation-dependent}
+ l → implementation-dependent
 
 ```
 
@@ -13706,7 +13706,7 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
  (delete-if #'evenp tester :count 1 :from-end t) → (1 2 4 1 3 5)    
  (setq tester (list 1 2 3 4 5 6)) → (1 2 3 4 5 6) 
  (delete-if #'evenp tester) → (1 3 5) 
- tester → \term{implementation-dependent}
+ tester → implementation-dependent
 
 ```
 
@@ -14333,7 +14333,7 @@ OR=> #<FILE-FORMAT :ISO646-1983 2343673>
 %  (with-output-to-string (*error-output*)
 %    (warn "this string is sent to *error-output*"))
 %  → "Warning: this string is sent to *error-output*
-% " ;The exact format of this string is \term{implementation-dependent}.
+% " ;The exact format of this string is implementation-dependent.
 % 
 ```
 
@@ -14394,7 +14394,7 @@ OR=> #<FILE-FORMAT :ISO646-1983 2343673>
  (with-output-to-string (*error-output*)
    (warn "this string is sent to *error-output*"))
  → "Warning: this string is sent to *error-output*
-" ;The exact format of this string is \term{implementation-dependent}.
+" ;The exact format of this string is implementation-dependent.
 \medbreak
  (with-input-from-string (*standard-input* "1001")
     (+ 990 (read))) → 1991                       
@@ -14976,7 +14976,7 @@ OR=> #<FILE-FORMAT :ISO646-1983 2343673>
  (setq temp-string "temp") → "temp"
  (setq temp-symbol (make-symbol temp-string)) → #:|temp|
  (symbol-name temp-symbol) → "temp"
- (eq (symbol-name temp-symbol) temp-string) → \term{implementation-dependent}
+ (eq (symbol-name temp-symbol) temp-string) → implementation-dependent
  (find-symbol "temp") → NIL, NIL
  (eq (make-symbol temp-string) (make-symbol temp-string)) → NIL
 
@@ -15064,9 +15064,9 @@ OR=> #<FILE-FORMAT :ISO646-1983 2343673>
 → ((3 3) (3 3) (3 3))
  (fboundp 'defun) → T
  (symbol-function 'defun)
-→ \term{implementation-dependent}
+→ implementation-dependent
  (functionp (symbol-function 'defun))
-→ \term{implementation-dependent}
+→ implementation-dependent
  (defun symbol-function-or-nil (symbol)
    (if (and (fboundp symbol) 
             (not (macro-function symbol))
@@ -15162,7 +15162,7 @@ OR=> #<FILE-FORMAT :ISO646-1983 2343673>
  (symbol-value :any-keyword) → :ANY-KEYWORD
  (symbol-value 'nil) → NIL
  (symbol-value '()) → NIL
- ;; The precision of this next one is \term{implementation-dependent}.
+ ;; The precision of this next one is implementation-dependent.
  (symbol-value 'pi) → 3.141592653589793d0  
 
 ```
@@ -15564,7 +15564,7 @@ OR=> #<FILE-FORMAT :ISO646-1983 2343673>
  (subtypep 'null 'list) → T, true
  (subtypep 'null 'symbol) → T, true
  (subtypep 'integer 'string) → NIL, true
- (subtypep '(satisfies dummy) nil) → NIL, \term{implementation-dependent}
+ (subtypep '(satisfies dummy) nil) → NIL, implementation-dependent
  (subtypep '(integer 1 3) '(integer 1 4)) → T, true
  (subtypep '(integer (0) (0)) 'nil) → T, true
  (subtypep 'nil '(integer (0) (0))) → T, true
