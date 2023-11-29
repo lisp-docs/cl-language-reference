@@ -10,23 +10,14 @@ sidebar_position: 0
 
 **X3J13/94-101R**
 
-*Versions 15.17 (X3J13/94-101) and 15.17R (X3J13/94-101R) are absolutely*
-
-*identical except for changes to the document number and date on the cover and*
-
-*in each page’s header, addition of this disclaimer on the back of the cover page,*
-
-*additions to the Edit and Review History on page Credits iv, and changes to the*
-
-*names and headings in the credits section on pages Credits v-vii. There are NO*
-
-*technical changes between these versions; from a normative point of view, the*
+*Versions 15.17 (X3J13/94-101) and 15.17R (X3J13/94-101R) are absolutely identical except for changes to the document number and date on the cover and in each page’s header, addition of this disclaimer on the back of the cover page, additions to the Edit and Review History on page Credits iv, and changes to the names and headings in the credits section on pages Credits v-vii. There are NO technical changes between these versions; from a normative point of view, the*
 
 *documents X3J13/94-101 and X3J13/94-101R are entirely interchangeable.*
 
 ## Figures
 
-Chapter 1 (Introduction)
+### Chapter 1 (Introduction)
+
 | Topic | Page(s) |
 |-------|---------|
 | 1–1. Notations for NIL | 1–14 |
@@ -45,7 +36,8 @@ Chapter 1 (Introduction)
 | 1–14. Symbols in the COMMON-LISP package (part eleven of twelve). | 1–45 |
 | 1–15. Symbols in the COMMON-LISP package (part twelve of twelve). | 1–46  |
 
-Chapter 2 (Syntax)
+### Chapter 2 (Syntax)
+
 | Topic | Page(s) |
 |-------|---------|
 | 2–1. Readtable defined names | 2–1 |
@@ -70,7 +62,8 @@ Chapter 2 (Syntax)
 | 2–20. Radix Indicator Example | 2–34 |
 | 2–21. Complex Number Example | 2–35  |
 
-Chapter 3 (Evaluation and Compilation)
+### Chapter 3 (Evaluation and Compilation)
+
 | Topic | Page(s) |
 |-------|---------|
 | 3–1. Some Defined Names Applicable to Variables | 3–4 |
@@ -99,7 +92,8 @@ Chapter 3 (Evaluation and Compilation)
 | 3–24. Local Declaration Specifiers | 3–83 |
 | 3–25. Optimize qualities | 3–96  |
 
-Chapter 4 (Types and Classes)
+### Chapter 4 (Types and Classes)
+
 | Topic | Page(s) |
 |-------|---------|
 | 4–1. Cross-References to Data Type Information | 4–2 |
@@ -112,7 +106,8 @@ Chapter 4 (Types and Classes)
 | 4–8. Classes that correspond to pre-defined type specifiers | 4–18 |
 | 4–9. Result possibilities for subtypep | 4–35  |
 
-Chapter 5 (Data and Control Flow)
+### Chapter 5 (Data and Control Flow)
+
 | Topic | Page(s) |
 |-------|---------|
 | 5–1. Examples of setf | 5–1 |
@@ -129,21 +124,25 @@ Chapter 5 (Data and Control Flow)
 | 5–12. Summary and priorities of behavior of **equal** | 5–61 |
 | 5–13. Summary and priorities of behavior of **equalp** | 5–63  |
 
-Chapter 6 (Iteration)
+### Chapter 6 (Iteration)
+
 | Topic | Page(s) |
 |-------|---------|
 
-Chapter 7 (Objects)
+### Chapter 7 (Objects)
+
 | Topic | Page(s) |
 |-------|---------|
 | 7–1. Standardized Method-Defining Operators | 7–17 |
 | 7–2. Built-in Method Combination Types | 7–25  |
 
-Chapter 8 (Structures)
+### Chapter 8 (Structures)
+
 | Topic | Page(s) |
 |-------|---------|
 
-Chapter 9 (Conditions)
+### Chapter 9 (Conditions)
+
 | Topic | Page(s) |
 |-------|---------|
 | 9–1. Standardized Condition Types | 9–2 |
@@ -154,19 +153,22 @@ Chapter 9 (Conditions)
 | 9–6. Defined names relating to restarts. | 9–9 |
 | 9–7. Operators relating to assertions. | 9–10  |
 
-Chapter 10 (Symbols)
+### Chapter 10 (Symbols)
+
 | Topic | Page(s) |
 |-------|---------|
 | 10–1. Property list defined names | 10–1 |
 | 10–2. Symbol creation and inquiry defined names | 10–1  |
 
-Chapter 11 (Packages)
+### Chapter 11 (Packages)
+
 | Topic | Page(s) |
 |-------|---------|
 | 11–1. Some Defined Names related to Packages | 11–1 |
 | 11–2. Standardized Package Names | 11–4  |
 
-Chapter 12 (Numbers)
+### Chapter 12 (Numbers)
+
 | Topic | Page(s) |
 |-------|---------|
 | 12–1. Operators relating to Arithmetic. | 12–1   |
@@ -188,13 +190,15 @@ Chapter 12 (Numbers)
 | 12–17. Bit-Wise Logical Operations | 12–68 |
 | 12–18. Bit-wise Logical Operations on Integers | 12–72  |
 
-Chapter 13 (Characters)
+### Chapter 13 (Characters)
+
 | Topic | Page(s) |
 |-------|---------|
 | 13–1. Character defined names – 1 | 13–1 |
 | 13–2. Character defined names – 2 | 13–1  |
 
-Chapter 14 (Conses)
+### Chapter 14 (Conses)
+
 | Topic | Page(s) |
 |-------|---------|
 | 14–1. Some defined names relating to conses. | 14–1 |
@@ -204,7 +208,8 @@ Chapter 14 (Conses)
 | 14–5. Some defined names related to sets. | 14–3 |
 | 14–6. CAR and CDR variants | 14–11  |
 
-Chapter 15 (Arrays)
+### Chapter 15 (Arrays)
+
 | Topic | Page(s) |
 |-------|---------|
 | 15–1. General Purpose Array-Related Defined Names | 15–2 |
@@ -212,37 +217,43 @@ Chapter 15 (Arrays)
 | 15–3. Operators that Manipulate Bit Arrays | 15–4 |
 | 15–4. Bit-wise Logical Operations on Bit Arrays | 15–38  |
 
-Chapter 16 (Strings)
+### Chapter 16 (Strings)
+
 | Topic | Page(s) |
 |-------|---------|
 
-Chapter 17 (Sequences)
+### Chapter 17 (Sequences)
+
 | Topic | Page(s) |
 |-------|---------|
 | 17–1. Standardized Sequence Functions | 17–1 |
 | 17–2. Operators that have Two-Argument Tests to be Satisfied | 17–2 |
 | 17–3. Operators that have One-Argument Tests to be Satisfied | 17–3  |
 
-Chapter 18 (Hash Tables)
+### Chapter 18 (Hash Tables)
+
 | Topic | Page(s) |
 |-------|---------|
 | 18–1. Hash-table defined names | 18–1  |
 
-Chapter 19 (Filenames)
+### Chapter 19 (Filenames)
+
 | Topic | Page(s) |
 |-------|---------|
 | 19–1. Pathname Operations | 19–2 |
 | 19–2. Pathname functions using a :CASE argument | 19–4 |
 | 19–3. Special Markers In Directory Component | 19–8  |
 
-Chapter 20 (Files)
+### Chapter 20 (Files)
+
 | Topic | Page(s) |
 |-------|---------|
 | 20–1. File and Directory Operations | 20–1 |
 | 20–2. File Functions that Treat Open and Closed Streams Differently | 20–1 |
 | 20–3. File Functions where Closed Streams Might Work Best | 20–2  |
 
-Chapter 21 (Streams)
+### Chapter 21 (Streams)
+
 | Topic | Page(s) |
 |-------|---------|
 | 21–1. Some General-Purpose Stream Operations | 21–1 |
@@ -254,7 +265,8 @@ Chapter 21 (Streams)
 | 21–7. Operators that accept either Open or Closed Streams | 21–5 |
 | 21–8. Operators that accept Open Streams only | 21–5  |
 
-Chapter 22 (Printer)
+### Chapter 22 (Printer)
+
 | Topic | Page(s) |
 |-------|---------|
 | 22–1. Standardized Printer Control Variables | 22–1 |
@@ -265,17 +277,20 @@ Chapter 22 (Printer)
 | 22–6. Examples of format control strings | 22–23 |
 | 22–7. Argument correspondences for the WRITE function. | 22–63  |
 
-Chapter 23 (Reader)
+### Chapter 23 (Reader)
+
 | Topic | Page(s) |
 |-------|---------|
 | 23–1. Values of standard control variables | 23–18  |
 
-Chapter 24 (System Construction)
+### Chapter 24 (System Construction)
+
 | Topic | Page(s) |
 |-------|---------|
 | 24–1. Features examples | 24–2  |
 
-Chapter 25 (Environment)
+### Chapter 25 (Environment)
+
 | Topic | Page(s) |
 |-------|---------|
 | 25–1. Variables maintained by the Read-Eval-Print Loop | 25–1 |
@@ -287,7 +302,8 @@ Chapter 25 (Environment)
 | 25–7. Defined names involving time in Internal Time. | 25–4 |
 | 25–8. Defined names involving time in Seconds. | 25–4  |
 
-Chapter 26 (Glossary)
+### Chapter 26 (Glossary)
+
 | Topic | Page(s) |
 |-------|---------|
 | 26–1. Exponent Markers | 26–22 |
@@ -295,11 +311,12 @@ Chapter 26 (Glossary)
 | 26–3. Standardized Iteration Forms | 26–33 |
 | 26–4. Standardized Restart Functions | 26–48  |
 
-Chapter A (Appendix)
+### Chapter A (Appendix)
 
 ## Contents
 
-Chapter 1 (Introduction)
+### Chapter 1 (Introduction)
+
 | Topic | Page(s) |
 |-------|---------|
 | 1.1 Scope, Purpose, and History | 1–1 |
@@ -379,7 +396,8 @@ Chapter 1 (Introduction)
 | 1.8.4 Deprecated Reader Syntax | 1–34 |
 | 1.9 Symbols in the COMMON-LISP Package | 1–35 |
 
-Chapter 2 (Syntax)
+### Chapter 2 (Syntax)
+
 | Topic | Page(s) |
 |-------|---------|
 | 2.1 Character Syntax | 2–1 |
@@ -461,7 +479,8 @@ Chapter 2 (Syntax)
 | 2.4.8.22 Sharpsign Right-Parenthesis | 2–39 |
 | 2.4.9 Re-Reading Abbreviated Expressions | 2–40 |
 
-Chapter 3 (Evaluation and Compilation)
+### Chapter 3 (Evaluation and Compilation)
+
 | Topic | Page(s) |
 |-------|---------|
 | 3.1 Evaluation | 3–1 |
@@ -561,7 +580,8 @@ Chapter 3 (Evaluation and Compilation)
 | 3.7.2.1 Examples of Transfer of Control during a Destructive Operation | 3–54 |
 | 3.8 Evaluation and Compilation Dictionary | 3–55 |
 
-Chapter 4 (Types and Classes)
+### Chapter 4 (Types and Classes)
+
 | Topic | Page(s) |
 |-------|---------|
 | 4.1 Introduction | 4–1 |
@@ -587,7 +607,8 @@ Chapter 4 (Types and Classes)
 | 4.3.7 Integrating Types and Classes | 4–16 |
 | 4.4 Types and Classes Dictionary | 4–19 |
 
-Chapter 5 (Data and Control Flow)
+### Chapter 5 (Data and Control Flow)
+
 | Topic | Page(s) |
 |-------|---------|
 | 5.1 Generalized Reference | 5–1 |
@@ -610,7 +631,8 @@ Chapter 5 (Data and Control Flow)
 | 5.2 Transfer of Control to an Exit Point | 5–13 |
 | 5.3 Data and Control Flow Dictionary | 5–14 |
 
-Chapter 6 (Iteration)
+### Chapter 6 (Iteration)
+
 | Topic | Page(s) |
 |-------|---------|
 | 6.1The LOOP Facility | 6–1 |
@@ -671,7 +693,8 @@ Chapter 6 (Iteration)
 | 6.1.9 Notes about Loop | 6–30 |
 | 6.2 Iteration Dictionary | 6–31 |
 
-Chapter 7 (Objects)
+### Chapter 7 (Objects)
+
 | Topic | Page(s) |
 |-------|---------|
 | 7.1 Object Creation and Initialization | 7–1 |
@@ -712,12 +735,14 @@ Chapter 7 (Objects)
 | 7.6.7 Inheritance of Methods | 7–26 |
 | 7.7 Objects Dictionary | 7–27 |
 
-Chapter 8 (Structures)
+### Chapter 8 (Structures)
+
 | Topic | Page(s) |
 |-------|---------|
 | 8.1 Structures Dictionary | 8–1 |
 
-Chapter 9 (Conditions)
+### Chapter 9 (Conditions)
+
 | Topic | Page(s) |
 |-------|---------|
 | 9.1 Condition System Concepts | 9–1 |
@@ -744,13 +769,15 @@ Chapter 9 (Conditions)
 | 9.1.6 Notes about the Condition System’s Background | 9–10 |
 | 9.2 Conditions Dictionary | 9–11 |
 
-Chapter 10 (Symbols)
+### Chapter 10 (Symbols)
+
 | Topic | Page(s) |
 |-------|---------|
 | 10.1 Symbol Concepts | 10–1 |
 | 10.2 Symbols Dictionary | 10–2 |
 
-Chapter 11 (Packages)
+### Chapter 11 (Packages)
+
 | Topic | Page(s) |
 |-------|---------|
 | 11.1 Package Concepts | 11–1 |
@@ -776,7 +803,8 @@ Programs | 11–6 |
 | 11.1.2.4 Implementation-Defined Packages | 11–7 |
 | 11.2 Packages Dictionary | 11–8 |
 
-Chapter 12 (Numbers)
+### Chapter 12 (Numbers)
+
 | Topic | Page(s) |
 |-------|---------|
 | 12.1 Number Concepts | 12–1 |
@@ -808,7 +836,8 @@ Chapter 12 (Numbers)
 | 12.1.7 Random-State Operations | 12–10 |
 | 12.2 Numbers Dictionary | 12–11 |
 
-Chapter 13 (Characters)
+### Chapter 13 (Characters)
+
 | Topic | Page(s) |
 |-------|---------|
 | 13.1 Character Concepts | 13–1 |
@@ -836,7 +865,8 @@ Chapter 13 (Characters)
 | 13.1.10 Documentation of Implementation-Defined Scripts | 13–7 |
 | 13.2 Characters Dictionary | 13–8 |
 
-Chapter 14 (Conses)
+### Chapter 14 (Conses)
+
 | Topic | Page(s) |
 |-------|---------|
 | 14.1 Cons Concepts | 14–1 |
@@ -848,7 +878,8 @@ Chapter 14 (Conses)
 | 14.1.2.3 General Restrictions on Parameters that must be Lists | 14–3 |
 | 14.2 Conses Dictionary | 14–4 |
 
-Chapter 15 (Arrays)
+### Chapter 15 (Arrays)
+
 | Topic | Page(s) |
 |-------|---------|
 | 15.1 Array Concepts | 15–1 |
@@ -867,7 +898,8 @@ Chapter 15 (Arrays)
 | 15.1.2.2 Required Kinds of Specialized Arrays | 15–3 |
 | 15.2 Arrays Dictionary | 15–5 |
 
-Chapter 16 (Strings)
+### Chapter 16 (Strings)
+
 | Topic | Page(s) |
 |-------|---------|
 | 16.1 String Concepts | 16–1 |
@@ -875,7 +907,8 @@ Chapter 16 (Strings)
 | 16.1.2 Subtypes of STRING | 16–1 |
 | 16.2 Strings Dictionary | 16–2 |
 
-Chapter 17 (Sequences)
+### Chapter 17 (Sequences)
+
 | Topic | Page(s) |
 |-------|---------|
 | 17.1 Sequence Concepts | 17–1 |
@@ -887,7 +920,8 @@ Chapter 17 (Sequences)
 | 17.2.2.1 Examples of Satisfying a One-Argument Test | 17–4 |
 | 17.3 Sequences Dictionary | 17–5 |
 
-Chapter 18 (Hash Tables)
+### Chapter 18 (Hash Tables)
+
 | Topic | Page(s) |
 |-------|---------|
 | 18.1 Hash Table Concepts | 18–1 |
@@ -904,7 +938,8 @@ Chapter 18 (Hash Tables)
 | 18.1.2.4 Visible Modifications by Language Extensions | 18–3 |
 | 18.2 Hash Tables Dictionary | 18–4 |
 
-Chapter 19 (Filenames)
+### Chapter 19 (Filenames)
+
 | Topic | Page(s) |
 |-------|---------|
 | 19.1 Overview of Filenames | 19–1 |
@@ -959,7 +994,8 @@ Chapter 19 (Filenames)
 | 19.3.2.2 Null Strings as Components of a Logical Pathname | 19–14 |
 | 19.4 Filenames Dictionary | 19–15 |
 
-Chapter 20 (Files)
+### Chapter 20 (Files)
+
 | Topic | Page(s) |
 |-------|---------|
 | 20.1 File System Concepts | 20–1 |
@@ -969,7 +1005,8 @@ Chapter 20 (Files)
 | 20.1.3.1 Examples of Truenames | 20–2 |
 | 20.2 Files Dictionary | 20–3 |
 
-Chapter 21 (Streams)
+### Chapter 21 (Streams)
+
 | Topic | Page(s) |
 |-------|---------|
 | 21.1 Stream Concepts | 21–1 |
@@ -986,7 +1023,8 @@ Chapter 21 (Streams)
 | 21.1.4 Restrictions on Composite Streams | 21–6 |
 | 21.2 Streams Dictionary | 21–7 |
 
-Chapter 22 (Printer)
+### Chapter 22 (Printer)
+
 | Topic | Page(s) |
 |-------|---------|
 | 22.1 The Lisp Printer | 22–1 |
@@ -1081,7 +1119,8 @@ Chapter 22 (Printer)
 | 22.3.12 Notes about FORMAT | 22–44 |
 | 22.4Printer Dictionary | 22–46 |
 
-Chapter 23 (Reader)
+### Chapter 23 (Reader)
+
 | Topic | Page(s) |
 |-------|---------|
 | 23.1Reader Concepts | 23–1 |
@@ -1093,7 +1132,8 @@ Chapter 23 (Reader)
 | 23.1.3.2 The RECURSIVE-P argument | 23–2 |
 | 23.2Reader Dictionary | 23–4 |
 
-Chapter 24 (System Construction)  
+### Chapter 24 (System Construction)  
+
 | Topic | Page(s) |
 |-------|---------|
 | 24.1 System Construction Concepts | 24–1 |
@@ -1103,7 +1143,8 @@ Chapter 24 (System Construction)
 | 24.1.2.1.1 Examples of Feature Expressions | 24–2 |
 | 24.2 System Construction Dictionary | 24–3 |
 
-Chapter 25 (Environment)
+### Chapter 25 (Environment)
+
 | Topic | Page(s) |
 |-------|---------|
 | 25.1 The External Environment | 25–1 |
@@ -1117,18 +1158,21 @@ Chapter 25 (Environment)
 | 25.1.4.4 Seconds | 25–4 |
 | 25.2 Environment Dictionary | 25–5 |
 
-Chapter 26 (Glossary)
+### Chapter 26 (Glossary)
+
 | Topic | Page(s) |
 |-------|---------|
 | 26.1 Glossary | 26–1 |
 
-Chapter A (Appendix)
+### Chapter A (Appendix)
 
-A.1 Removed Language Features A–1
-A.1.1 Requirements for removed and deprecated features A–1
-A.1.2 Removed Types A–1
-A.1.3 Removed Operators A–1
-A.1.4 Removed Argument Conventions A–1
-A.1.5 Removed Variables A–1
-A.1.6 Removed Reader Syntax A–1
-A.1.7 Packages No Longer Required A–1
+| Topic | Page(s) |
+|-------|---------|
+| A.1 Removed Language Features | A–1 |
+| A.1.1 Requirements for removed and deprecated features | A–1 |
+| A.1.2 Removed Types | A–1 |
+| A.1.3 Removed Operators | A–1 |
+| A.1.4 Removed Argument Conventions | A–1 |
+| A.1.5 Removed Variables | A–1 |
+| A.1.6 Removed Reader Syntax | A–1 |
+| A.1.7 Packages No Longer Required | A–1 |
