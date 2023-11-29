@@ -1724,11 +1724,11 @@ Error: non-numeric value: A
 ;; This example parses a simple printed string representation from 
 ;; BUFFER (which is itself a string) and returns the index of the
 ;; closing double-quote character.
- (let ((buffer "\\"a\\" \\"b\\""))
-   (loop initially (unless (char= (char buffer 0) #\\")
+ (let ((buffer "\"a\" \"b\""))
+   (loop initially (unless (char= (char buffer 0) #\")
                      (loop-finish))
          for i of-type fixnum from 1 below (length (the string buffer))
-         when (char= (char buffer i) #\\")
+         when (char= (char buffer i) #\")
           return i))
 → 2
  
@@ -2156,13 +2156,13 @@ Error: non-numeric value: A
 ;;; allowing the outer #| ... |# pair match.  If the slash were not present,
 ;;; the outer comment would terminate prematurely.
  (defun mention-fun-fact-2a ()
-   (format t "Don't use |\\# unmatched or you'll get in trouble!"))
+   (format t "Don't use |\# unmatched or you'll get in trouble!"))
 → MENTION-FUN-FACT-2A
  (mention-fun-fact-2a)
 \OUT Don't use |# unmatched or you'll get in trouble!
 → NIL
  #| (defun mention-fun-fact-2b ()
-      (format t "Don't use |\\# unmatched or you'll get in trouble!") |#
+      (format t "Don't use |\# unmatched or you'll get in trouble!") |#
  (fboundp 'mention-fun-fact-2b) → NIL
 \goodbreak
 ;;; In this example, the programmer attacks the mismatch problem in a
@@ -2640,8 +2640,8 @@ Error: non-numeric value: A
 
 
 ```lisp
- (A B)    (a b)    (  a  b )    (\\A |B|) 
-(|\\A|
+ (A B)    (a b)    (  a  b )    (\A |B|) 
+(|\A|
   B
 )
 
@@ -2738,9 +2738,9 @@ Error: non-numeric value: A
  (a .. b)    ;Invalid -- an error is signaled.
  (a . . b)   ;Invalid -- an error is signaled.
  (a b c ...) ;Invalid -- an error is signaled.
- (a \\. b)    ;A list of three elements a, ., and b
+ (a \. b)    ;A list of three elements a, ., and b
  (a |.| b)   ;A list of three elements a, ., and b
- (a \\... b)  ;A list of three elements a, ..., and b
+ (a \... b)  ;A list of three elements a, ..., and b
  (a |...| b) ;A list of three elements a, ..., and b
 
 ```
@@ -2893,7 +2893,7 @@ Error: non-numeric value: A
 
 
 ```lisp
- (set-macro-character #\\'       ;incorrect
+ (set-macro-character #\'       ;incorrect
     #'(lambda (stream char)
          (declare (ignore char))
          (list 'quote (read stream))))
@@ -2902,7 +2902,7 @@ Error: non-numeric value: A
 
 
 ```lisp
- (set-macro-character #\\'       ;correct
+ (set-macro-character #\'       ;correct
     #'(lambda (stream char)
          (declare (ignore char))
          (list 'quote (read stream t nil t))))
@@ -2924,10 +2924,10 @@ Error: non-numeric value: A
 ```lisp
  ;; The following examples assume the readtable case of *readtable* 
  ;; and *print-case* are both :upcase.
- (eq 'abc '\\A\\B\\C) → T
- (eq 'abc 'a\\Bc) → T
- (eq 'abc '\\ABC) → T
- (eq 'abc '\\abc) → NIL
+ (eq 'abc '\A\B\C) → T
+ (eq 'abc 'a\Bc) → T
+ (eq 'abc '\ABC) → T
+ (eq 'abc '\abc) → NIL
 
 ```
 
@@ -2988,7 +2988,7 @@ Error: non-numeric value: A
 
 
 ```lisp
- \\256   25\\64   1.0\\E6   |100|   3\\.14159   |3/4|   3\\/4   5||
+ \256   25\64   1.0\E6   |100|   3\.14159   |3/4|   3\/4   5||
 
 ```
 
@@ -3613,7 +3613,7 @@ Error: non-numeric value: A
  (character #\a) → #\a
  (character "a") → #\a
  (character 'a) → #\A
- (character '\\a) → #\a
+ (character '\a) → #\a
  (character 65.) is an error.
  (character 'apple) is an error.
 
@@ -3650,8 +3650,8 @@ Error: non-numeric value: A
  (alpha-char-p #\5) → NIL
  (alpha-char-p #\Newline) → NIL
  ;; This next example presupposes an implementation
- ;; in which #\\\alfa is a defined character.
- (alpha-char-p #\\\alfa) → \term{implementation-dependent}
+ ;; in which #\\alfa is a defined character.
+ (alpha-char-p #\\alfa) → \term{implementation-dependent}
 
 ```
 
@@ -3660,7 +3660,7 @@ Error: non-numeric value: A
  (alphanumericp #\Z) → T
  (alphanumericp #\9) → T
  (alphanumericp #\Newline) → NIL
- (alphanumericp #\\#) → NIL
+ (alphanumericp #\#) → NIL
 
 ```
 
@@ -3707,7 +3707,7 @@ Error: non-numeric value: A
 
 ```lisp
  (graphic-char-p #\G) → T
- (graphic-char-p #\\#) → T
+ (graphic-char-p #\#) → T
  (graphic-char-p #\Space) → T
  (graphic-char-p #\Newline) → NIL
 
@@ -3716,7 +3716,7 @@ Error: non-numeric value: A
 
 ```lisp
  (standard-char-p #\Space) → T
- (standard-char-p #\\~) → T
+ (standard-char-p #\~) → T
  ;; This next example presupposes an implementation
  ;; in which #\Bell is a defined character.
  (standard-char-p #\Bell) → NIL
@@ -3731,8 +3731,8 @@ Error: non-numeric value: A
  (char-downcase #\A) → #\a
  (char-upcase #\9) → #\9
  (char-downcase #\9) → #\9
- (char-upcase #\\@) → #\\@
- (char-downcase #\\@) → #\\@
+ (char-upcase #\@) → #\@
+ (char-downcase #\@) → #\@
  ;; Note that this next example might run for a very long time in 
  ;; some implementations if CHAR-CODE-LIMIT happens to be very large
  ;; for that implementation.
@@ -3766,7 +3766,7 @@ Error: non-numeric value: A
 ```lisp
 ;; An implementation using ASCII character encoding 
 ;; might return these values:
-(char-code #\\$) → 36
+(char-code #\$) → 36
 (char-code #\a) → 97
 
 ```
@@ -3794,7 +3794,7 @@ Error: non-numeric value: A
 
 
 ```lisp
- (char-name #\\ ) → "Space"
+ (char-name #\ ) → "Space"
  (char-name #\Space) → "Space"
  (char-name #\Page) → "Page"
 
@@ -3811,8 +3811,8 @@ OR=> "Capital-A"
 OR=> "LA02"
 
  ;; Even though its CHAR-NAME can vary, #\A prints as #\A
- (prin1-to-string (read-from-string (format nil "#\\\\~A" (or (char-name #\A) "A"))))
-→ "#\\\\A"
+ (prin1-to-string (read-from-string (format nil "#\\\~A" (or (char-name #\A) "A"))))
+→ "#\\\A"
 
 ```
 
@@ -6541,7 +6541,7 @@ OR=> "Symbolics LM-2"
 
 ```lisp
  (eval-when (:compile-toplevel :load-toplevel :execute)
-   (set-macro-character #\\$ #'(lambda (stream char)
+   (set-macro-character #\$ #'(lambda (stream char)
                                 (declare (ignore char))
                                 (list 'dollar (read stream))))) → T
 
@@ -10111,7 +10111,7 @@ a-vector → #(1 0 3 0)
            do (let ((char (aref string i)))
                 (case char
                   (#\Space (add-word word sentence))
-                  (#\\. (setq endpos (1+ i)) (loop-finish))
+                  (#\. (setq endpos (1+ i)) (loop-finish))
                   (otherwise (push char word))))
            finally (add-word word sentence)
                    (return (values (nreverse sentence) endpos)))))
@@ -12755,7 +12755,7 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 
 
 ```lisp
- (prin1-to-string "abc") → "\\"abc\\""
+ (prin1-to-string "abc") → "\"abc\""
  (princ-to-string "abc") → "abc"
 
 ```
@@ -12820,8 +12820,8 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 ;; many valid ways in which escaping might appear.
  (test-print-case) ;Implementation A
 \OUT THIS-AND-THAT |And-something-elSE|
-\OUT this-and-that a\\n\\d-\\s\\o\\m\\e\\t\\h\\i\\n\\g-\\e\\lse
-\OUT This-And-That A\\n\\d-\\s\\o\\m\\e\\t\\h\\i\\n\\g-\\e\\lse
+\OUT this-and-that a\n\d-\s\o\m\e\t\h\i\n\g-\e\lse
+\OUT This-And-That A\n\d-\s\o\m\e\t\h\i\n\g-\e\lse
 → NIL
  (test-print-case) ;Implementation B
 \OUT THIS-AND-THAT |And-something-elSE|
@@ -12962,7 +12962,7 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 
 
 ```lisp
- (let ((x (list "a" '\\a (gensym) '((a (b (c))) d e f g)))
+ (let ((x (list "a" '\a (gensym) '((a (b (c))) d e f g)))
        (*print-escape* nil)
        (*print-gensym* nil)
        (*print-level* 3)
@@ -13010,7 +13010,7 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 
 ```lisp
  (setq zvar 123) → 123
- (set-syntax-from-char #\z #\\' (setq table2 (copy-readtable))) → T
+ (set-syntax-from-char #\z #\' (setq table2 (copy-readtable))) → T
  zvar → 123
  (copy-readtable table2 *readtable*) → #<READTABLE 614000277>
  zvar → VAR
@@ -13041,9 +13041,9 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 
 
 ```lisp
- (get-macro-character #\\\lbr) → NIL, false
- (make-dispatch-macro-character #\\\lbr) → T
- (not (get-macro-character #\\\lbr)) → NIL
+ (get-macro-character #\\lbr) → NIL, false
+ (make-dispatch-macro-character #\\lbr) → T
+ (not (get-macro-character #\\lbr)) → NIL
 
 ```
 
@@ -13054,11 +13054,11 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 → (QUOTE A)
  (with-input-from-string (is " ") (read is nil 'the-end)) → THE-END
  (defun skip-then-read-char (s c n)
-    (if (char= c #\\\{) (read s t nil t) (read-preserving-whitespace s))
+    (if (char= c #\\{) (read s t nil t) (read-preserving-whitespace s))
     (read-char-no-hang s)) → SKIP-THEN-READ-CHAR
  (let ((*readtable* (copy-readtable nil)))
-    (set-dispatch-macro-character #\\# #\\\{ #'skip-then-read-char)
-    (set-dispatch-macro-character #\\# #\\\} #'skip-then-read-char)
+    (set-dispatch-macro-character #\# #\\{ #'skip-then-read-char)
+    (set-dispatch-macro-character #\# #\\} #'skip-then-read-char)
     (with-input-from-string (is "#\{123 x #\}123 y")
       (format t "~S ~S" (read is) (read is)))) → #\x, #\Space, NIL
 
@@ -13072,8 +13072,8 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
                    then (progn (read-char stream t nil t)
                                (read-preserving-whitespace stream t nil t))
                    collect dir
-                   while (eql (peek-char nil stream nil nil t) #\\/))))
- (set-macro-character #\\/ #'slash-reader)
+                   while (eql (peek-char nil stream nil nil t) #\/))))
+ (set-macro-character #\/ #'slash-reader)
 
 ```
 
@@ -13097,7 +13097,7 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 
 
 ```lisp
- (read-delimited-list #\\\rbracket) 1 2 3 4 5 6 \rbracket
+ (read-delimited-list #\\rbracket) 1 2 3 4 5 6 \rbracket
 → (1 2 3 4 5 6)
 
 ```
@@ -13114,16 +13114,16 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
    (declare (ignore char arg))
    (mapcon #'(lambda (x)
               (mapcar #'(lambda (y) (list (car x) y)) (cdr x)))
-          (read-delimited-list #\\\} stream t))) → |#\{-reader|
+          (read-delimited-list #\\} stream t))) → |#\{-reader|
 
- (set-dispatch-macro-character #\\# #\\\{ #'|#\{-reader|) → T 
- (set-macro-character #\\\} (get-macro-character #\\) \nil))
+ (set-dispatch-macro-character #\# #\\{ #'|#\{-reader|) → T 
+ (set-macro-character #\\} (get-macro-character #\) \nil))
 
 ```
 
 
 ```lisp
- (set-macro-character #\\\} (get-macro-character #\\) \nil))
+ (set-macro-character #\\} (get-macro-character #\) \nil))
 
 ```
 
@@ -13156,8 +13156,8 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 
 
 ```lisp
- (get-dispatch-macro-character #\\# #\\\{) → NIL
- (set-dispatch-macro-character #\\# #\\\{        ;dispatch on #\{
+ (get-dispatch-macro-character #\# #\\{) → NIL
+ (set-dispatch-macro-character #\# #\\{        ;dispatch on #\{
     #'(lambda(s c n)
         (let ((list (read s nil (values) t)))  ;list is object after #n\{
           (when (consp list)                   ;return nth element of list
@@ -13175,32 +13175,32 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 (defun |#$-reader| (stream subchar arg)
    (declare (ignore subchar arg))
    (list 'dollars (read stream t nil t))) → |#$-reader|
- (set-dispatch-macro-character #\\# #\\\$ #'|#\$-reader|) → T
+ (set-dispatch-macro-character #\# #\\$ #'|#\$-reader|) → T
 
 ```
 
 
 ```lisp
-% (get-dispatch-macro-character #\\# #\\\{) → NIL 
-% (unless (get-dispatch-macro-character #\\# #\x)
+% (get-dispatch-macro-character #\# #\\{) → NIL 
+% (unless (get-dispatch-macro-character #\# #\x)
 %      (warn "Hexadecimal input (#x<ddd>) is disabled")) → NIL 
-% (let ((previous-fun (get-dispatch-macro-character #\\# #\\\{)))
+% (let ((previous-fun (get-dispatch-macro-character #\# #\\{)))
 %      (when previous-fun
-%        (set-dispatch-macro-character #\\# #\\\{
+%        (set-dispatch-macro-character #\# #\\{
 %          #'(lambda (stream char arg)
 %               (setq stream *debug-io*)
 %               (when *debug-macro-chars*
 %                  (format *trace-output* 
 %                         "~&Occurrence of ~C~C on stream ~S"
-%                                         #\\# #\\\{ stream))
+%                                         #\# #\\{ stream))
 %              (list (funcall previous-fun stream char)))))) → NIL 
 %
 ```
 
 
 ```lisp
- (get-macro-character #\\\lbr) → NIL, false
- (not (get-macro-character #\\;)) → NIL
+ (get-macro-character #\\lbr) → NIL, false
+ (not (get-macro-character #\;)) → NIL
 
 ```
 
@@ -13209,7 +13209,7 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
  (defun single-quote-reader (stream char)
    (declare (ignore char))
    (list 'quote (read stream t nil t))) → SINGLE-QUOTE-READER
- (set-macro-character #\\' #'single-quote-reader) → T
+ (set-macro-character #\' #'single-quote-reader) → T
 
 ```
 
@@ -13222,13 +13222,13 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
    (do () ((char= (read-char stream nil #\Newline t) #\Newline)))
    ;; Return zero values.
    (values)) → SEMICOLON-READER
- (set-macro-character #\\; #'semicolon-reader) → T
+ (set-macro-character #\; #'semicolon-reader) → T
 
 ```
 
 
 ```lisp
- (set-syntax-from-char #\7 #\\;) → T
+ (set-syntax-from-char #\7 #\;) → T
  123579 → 1235
 
 ```
@@ -13251,7 +13251,7 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 ```lisp
  (dotimes (i 6)
    (let ((*read-base* (+ 10. i)))
-     (let ((object (read-from-string "(\\\\DAD DAD |BEE| BEE 123. 123)")))
+     (let ((object (read-from-string "(\\\DAD DAD |BEE| BEE 123. 123)")))
        (print (list *read-base* object)))))
 \OUT (10 (DAD DAD BEE BEE 123 123))
 \OUT (11 (DAD DAD BEE BEE 123 146))
@@ -13309,7 +13309,7 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 ```lisp
  (readtablep *readtable*) → T
  (setq zvar 123) → 123
- (set-syntax-from-char #\z #\\' (setq table2 (copy-readtable))) → T
+ (set-syntax-from-char #\z #\' (setq table2 (copy-readtable))) → T
  zvar → 123
  (setq *readtable* table2) → #<READTABLE>
  zvar → VAR
@@ -13336,7 +13336,7 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 ```lisp
  (setq str (copy-seq "0123456789")) → "0123456789"
  (elt str 6) → #\6
- (setf (elt str 0) #\\#) → #\\#
+ (setf (elt str 0) #\#) → #\#
  str → "#123456789"
 
 ```
@@ -13356,7 +13356,7 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 
 ```lisp
  (make-sequence 'list 0) → ()
- (make-sequence 'string 26 :initial-element #\\.) 
+ (make-sequence 'string 26 :initial-element #\.) 
 → ".........................."
  (make-sequence '(vector double-float) 2
                 :initial-element 1d0)
@@ -13598,7 +13598,7 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
 
 
 ```lisp
- (substitute #\\. #\SPACE "0 2 4 6") → "0.2.4.6"
+ (substitute #\. #\SPACE "0 2 4 6") → "0.2.4.6"
  (substitute 9 4 '(1 2 4 1 3 4 5)) → (1 2 9 1 3 9 5)
  (substitute 9 4 '(1 2 4 1 3 4 5) :count 1) → (1 2 9 1 3 4 5)
  (substitute 9 4 '(1 2 4 1 3 4 5) :count 1 :from-end t)
@@ -13725,10 +13725,10 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
  (remove-duplicates "aBcDAbCd" :test #'char-equal :from-end t) → "aBcD"
  (remove-duplicates '(a b c b d d e)) → (A C B D E)
  (remove-duplicates '(a b c b d d e) :from-end t) → (A B C D E)
- (remove-duplicates '((foo #\a) (bar #\\%) (baz #\A))
-     :test #'char-equal :key #'cadr) → ((BAR #\\%) (BAZ #\A))
- (remove-duplicates '((foo #\a) (bar #\\%) (baz #\A)) 
-     :test #'char-equal :key #'cadr :from-end t) → ((FOO #\a) (BAR #\\%))
+ (remove-duplicates '((foo #\a) (bar #\%) (baz #\A))
+     :test #'char-equal :key #'cadr) → ((BAR #\%) (BAZ #\A))
+ (remove-duplicates '((foo #\a) (bar #\%) (baz #\A)) 
+     :test #'char-equal :key #'cadr :from-end t) → ((FOO #\a) (BAR #\%))
  (setq tester (list 0 1 2 3 4 5 6))
  (delete-duplicates tester :key #'oddp :start 1 :end 6) → (0 4 5 6)
 
@@ -13939,10 +13939,10 @@ more text"
  (prog1 (write-string "books" nil :end 4) (write-string "worms"))
 \OUT bookworms
 → "books"
- (progn (write-char #\\*)
+ (progn (write-char #\*)
         (write-line "test12" *standard-output* :end 5) 
         (write-line "*test2")
-        (write-char #\\*)
+        (write-char #\*)
         nil)
 \OUT *test1
 \OUT *test2
@@ -14353,7 +14353,7 @@ OR=> #<FILE-FORMAT :ISO646-1983 2343673>
 % → :DONE
 %  out
 % → "
-% \\"print and format t send things to\\" *standard-output* now going to a string"
+% \"print and format t send things to\" *standard-output* now going to a string"
 % 
 ```
 
@@ -14406,7 +14406,7 @@ OR=> #<FILE-FORMAT :ISO646-1983 2343673>
 → :DONE
  out
 → "
-\\"print and format t send things to\\" *standard-output* now going to a string"
+\"print and format t send things to\" *standard-output* now going to a string"
 \medbreak
  (defun fact (n) (if (< n 2) 1 (* n (fact (- n 1)))))
 → FACT
