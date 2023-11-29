@@ -298,7 +298,7 @@
  (evenp most-positive-fixnum) → \term{implementation-dependent}
  (random) → \term{implementation-dependent}
  (> lambda-parameters-limit 93) → \term{implementation-dependent}
- (char-name #\\A) → \term{implementation-dependent}
+ (char-name #\A) → \term{implementation-dependent}
 
 ```
 
@@ -525,7 +525,7 @@
 
 
 ```lisp
- (char-name #\\a)
+ (char-name #\a)
 → NIL
 \OV "LOWERCASE-a"
 \OV "Small-A"
@@ -535,7 +535,7 @@
 
 
 ```lisp
- (char-name #\\a) → \term{implementation-dependent}
+ (char-name #\a) → \term{implementation-dependent}
 
 ```
 
@@ -794,17 +794,17 @@
 
 
 ```lisp
- (format nil "~C" #\\A) → "A"
- (format nil "~C" #\\Space) → " "
+ (format nil "~C" #\A) → "A"
+ (format nil "~C" #\Space) → " "
 
 ```
 
 
 ```lisp
- (format nil "~:C" #\\A) → "A"
- (format nil "~:C" #\\Space) → "Space"
+ (format nil "~:C" #\A) → "A"
+ (format nil "~:C" #\Space) → "Space"
 ;; This next example assumes an implementation-defined "Control" attribute.
- (format nil "~:C" #\\Control-Space)
+ (format nil "~:C" #\Control-Space)
 → "Control-Space"
 \OV "c-Space"
 
@@ -812,7 +812,7 @@
 
 
 ```lisp
- (format nil "~:@C" #\\Control-Partial) → "Control-{\Partial} (Top-F)"  
+ (format nil "~:@C" #\Control-Partial) → "Control-{\Partial} (Top-F)"  
 
 ```
 
@@ -1143,21 +1143,21 @@ Scale factor  7: | 3141590.E-06|
 
 
 ```lisp
- (width (make-instance `character-class :char #\\Q) 
+ (width (make-instance `character-class :char #\Q) 
         :font 'baskerville :pixel-size 10)
 
 ```
 
 
 ```lisp
- (width (make-instance `picture-class :glyph (glyph #\\Q)) 
+ (width (make-instance `picture-class :glyph (glyph #\Q)) 
         :font 'baskerville :pixel-size 10)
 
 ```
 
 
 ```lisp
- (width (make-instance `character-picture-class :char #\\Q)
+ (width (make-instance `character-picture-class :char #\Q)
         :font 'baskerville :pixel-size 10)
 
 ```
@@ -2411,15 +2411,15 @@ Error: non-numeric value: A
 (defun simple-pprint-defun (*standard-output* list)
   (pprint-logical-block (*standard-output* list :prefix "(" :suffix ")")
     (write (first list))
-    (write-char #\\Space)
+    (write-char #\Space)
     (pprint-newline :miser)
     (pprint-indent :current 0)
     (write (second list))
-    (write-char #\\Space)
+    (write-char #\Space)
     (pprint-newline :fill)
     (write (third list))
     (pprint-indent :block 1)
-    (write-char #\\Space)
+    (write-char #\Space)
     (pprint-newline :linear)
     (write (fourth list))))
 
@@ -2472,21 +2472,21 @@ Error: non-numeric value: A
    (pprint-logical-block (nil list :prefix "(" :suffix ")")
      (write (pprint-pop))
      (pprint-exit-if-list-exhausted)
-     (write-char #\\Space)
+     (write-char #\Space)
      (pprint-logical-block (nil (pprint-pop) :prefix "(" :suffix ")")
        (pprint-exit-if-list-exhausted)
        (loop (pprint-logical-block (nil (pprint-pop) :prefix "(" :suffix ")")
                (pprint-exit-if-list-exhausted)
                (loop (write (pprint-pop))
                      (pprint-exit-if-list-exhausted)
-                     (write-char #\\Space)
+                     (write-char #\Space)
                      (pprint-newline :linear)))
              (pprint-exit-if-list-exhausted)
-             (write-char #\\Space)
+             (write-char #\Space)
              (pprint-newline :fill)))
      (pprint-indent :block 1)
      (loop (pprint-exit-if-list-exhausted)
-           (write-char #\\Space)
+           (write-char #\Space)
            (pprint-newline :linear)
            (write (pprint-pop)))))
 
@@ -2538,7 +2538,7 @@ Error: non-numeric value: A
         (loop (pprint-pop)
               (write (aref v i))
               (if (= (incf i) end) (return nil))
-              (write-char #\\Space)
+              (write-char #\Space)
               (pprint-newline :fill))))))
 
 ```
@@ -2748,9 +2748,9 @@ Error: non-numeric value: A
 
 ```lisp
 % #3A(
-% ((#\\s #\\t #\\o #\\p) (#\\s #\\p #\\o #\\t))
-% ((#\\p #\\o #\\s #\\t) (#\\p #\\o #\\t #\\s))
-% ((#\\t #\\o #\\p #\\s) (#\\o #\\p #\\t #\\s)))
+% ((#\s #\t #\o #\p) (#\s #\p #\o #\t))
+% ((#\p #\o #\s #\t) (#\p #\o #\t #\s))
+% ((#\t #\o #\p #\s) (#\o #\p #\t #\s)))
 %
 ```
 
@@ -2796,33 +2796,33 @@ Error: non-numeric value: A
 
 
 ```lisp
- (let ((*print-escape* t)) (fresh-line) (write #\\a))
-\OUT #\\a
-→ #\\a
+ (let ((*print-escape* t)) (fresh-line) (write #\a))
+\OUT #\a
+→ #\a
  (let ((*print-escape* nil) (*print-readably* nil))
    (fresh-line)
-   (write #\\a))
+   (write #\a))
 \OUT a
-→ #\\a
- (progn (fresh-line) (prin1 #\\a))
-\OUT #\\a
-→ #\\a
- (progn (fresh-line) (print #\\a))
+→ #\a
+ (progn (fresh-line) (prin1 #\a))
+\OUT #\a
+→ #\a
+ (progn (fresh-line) (print #\a))
 \OUT 
-\OUT #\\a
-→ #\\a
- (progn (fresh-line) (princ #\\a))
+\OUT #\a
+→ #\a
+ (progn (fresh-line) (princ #\a))
 \OUT a
-→ #\\a
+→ #\a
 \medbreak
  (dolist (val '(t nil))
    (let ((*print-escape* val) (*print-readably* val))
-     (print '#\\a) 
-     (prin1 #\\a) (write-char #\\Space)
-     (princ #\\a) (write-char #\\Space)
-     (write #\\a)))
-\OUT #\\a #\\a a #\\a
-\OUT #\\a #\\a a a
+     (print '#\a) 
+     (prin1 #\a) (write-char #\Space)
+     (princ #\a) (write-char #\Space)
+     (write #\a)))
+\OUT #\a #\a a #\a
+\OUT #\a #\a a a
 → NIL
 \medbreak
  (progn (fresh-line) (write '(let ((a 1) (b 2)) (+ a b))))
@@ -3063,7 +3063,7 @@ Error: non-numeric value: A
 → #2A((0 1 2 3) (3 2 1 0))
  (make-array 6
               :element-type 'character 
-              :initial-element #\\a 
+              :initial-element #\a 
               :fill-pointer 3) → "aaa"
 
 ```
@@ -3471,16 +3471,16 @@ Error: non-numeric value: A
                                    :initial-element 'first-one))) → 2 
  (fill-pointer fa) → 3 
  (eq (aref fa 2) fable) → T
- (vector-push-extend #\\X
+ (vector-push-extend #\X
                     (setq aa 
                           (make-array 5
                                       :element-type 'character
                                       :adjustable t
                                       :fill-pointer 3))) → 3 
  (fill-pointer aa) → 4 
- (vector-push-extend #\\Y aa 4) → 4 
+ (vector-push-extend #\Y aa 4) → 4 
  (array-total-size aa) → at least 5 
- (vector-push-extend #\\Z aa 4) → 5 
+ (vector-push-extend #\Z aa 4) → 5 
  (array-total-size aa) → 9 ;(or more)
 
 ```
@@ -3563,57 +3563,57 @@ Error: non-numeric value: A
 
 
 ```lisp
- (char= #\\d #\\d) → T
- (char= #\\A #\\a) → NIL
- (char= #\\d #\\x) → NIL
- (char= #\\d #\\D) → NIL
- (char/= #\\d #\\d) → NIL
- (char/= #\\d #\\x) → T
- (char/= #\\d #\\D) → T
- (char= #\\d #\\d #\\d #\\d) → T
- (char/= #\\d #\\d #\\d #\\d) → NIL
- (char= #\\d #\\d #\\x #\\d) → NIL
- (char/= #\\d #\\d #\\x #\\d) → NIL
- (char= #\\d #\\y #\\x #\\c) → NIL
- (char/= #\\d #\\y #\\x #\\c) → T
- (char= #\\d #\\c #\\d) → NIL
- (char/= #\\d #\\c #\\d) → NIL
- (char< #\\d #\\x) → T
- (char<= #\\d #\\x) → T
- (char< #\\d #\\d) → NIL
- (char<= #\\d #\\d) → T
- (char< #\\a #\\e #\\y #\\z) → T
- (char<= #\\a #\\e #\\y #\\z) → T
- (char< #\\a #\\e #\\e #\\y) → NIL
- (char<= #\\a #\\e #\\e #\\y) → T
- (char> #\\e #\\d) → T
- (char>= #\\e #\\d) → T
- (char> #\\d #\\c #\\b #\\a) → T
- (char>= #\\d #\\c #\\b #\\a) → T
- (char> #\\d #\\d #\\c #\\a) → NIL
- (char>= #\\d #\\d #\\c #\\a) → T
- (char> #\\e #\\d #\\b #\\c #\\a) → NIL
- (char>= #\\e #\\d #\\b #\\c #\\a) → NIL
- (char> #\\z #\\A) → \term{implementation-dependent}
- (char> #\\Z #\\a) → \term{implementation-dependent}
- (char-equal #\\A #\\a) → T
- (stable-sort (list #\\b #\\A #\\B #\\a #\\c #\\C) #'char-lessp)
-→ (#\\A #\\a #\\b #\\B #\\c #\\C)
- (stable-sort (list #\\b #\\A #\\B #\\a #\\c #\\C) #'char<)
-→ (#\\A #\\B #\\C #\\a #\\b #\\c) ;Implementation A
-→ (#\\a #\\b #\\c #\\A #\\B #\\C) ;Implementation B
-→ (#\\a #\\A #\\b #\\B #\\c #\\C) ;Implementation C
-→ (#\\A #\\a #\\B #\\b #\\C #\\c) ;Implementation D
-→ (#\\A #\\B #\\a #\\b #\\C #\\c) ;Implementation E
+ (char= #\d #\d) → T
+ (char= #\A #\a) → NIL
+ (char= #\d #\x) → NIL
+ (char= #\d #\D) → NIL
+ (char/= #\d #\d) → NIL
+ (char/= #\d #\x) → T
+ (char/= #\d #\D) → T
+ (char= #\d #\d #\d #\d) → T
+ (char/= #\d #\d #\d #\d) → NIL
+ (char= #\d #\d #\x #\d) → NIL
+ (char/= #\d #\d #\x #\d) → NIL
+ (char= #\d #\y #\x #\c) → NIL
+ (char/= #\d #\y #\x #\c) → T
+ (char= #\d #\c #\d) → NIL
+ (char/= #\d #\c #\d) → NIL
+ (char< #\d #\x) → T
+ (char<= #\d #\x) → T
+ (char< #\d #\d) → NIL
+ (char<= #\d #\d) → T
+ (char< #\a #\e #\y #\z) → T
+ (char<= #\a #\e #\y #\z) → T
+ (char< #\a #\e #\e #\y) → NIL
+ (char<= #\a #\e #\e #\y) → T
+ (char> #\e #\d) → T
+ (char>= #\e #\d) → T
+ (char> #\d #\c #\b #\a) → T
+ (char>= #\d #\c #\b #\a) → T
+ (char> #\d #\d #\c #\a) → NIL
+ (char>= #\d #\d #\c #\a) → T
+ (char> #\e #\d #\b #\c #\a) → NIL
+ (char>= #\e #\d #\b #\c #\a) → NIL
+ (char> #\z #\A) → \term{implementation-dependent}
+ (char> #\Z #\a) → \term{implementation-dependent}
+ (char-equal #\A #\a) → T
+ (stable-sort (list #\b #\A #\B #\a #\c #\C) #'char-lessp)
+→ (#\A #\a #\b #\B #\c #\C)
+ (stable-sort (list #\b #\A #\B #\a #\c #\C) #'char<)
+→ (#\A #\B #\C #\a #\b #\c) ;Implementation A
+→ (#\a #\b #\c #\A #\B #\C) ;Implementation B
+→ (#\a #\A #\b #\B #\c #\C) ;Implementation C
+→ (#\A #\a #\B #\b #\C #\c) ;Implementation D
+→ (#\A #\B #\a #\b #\C #\c) ;Implementation E
 
 ```
 
 
 ```lisp
- (character #\\a) → #\\a
- (character "a") → #\\a
- (character 'a) → #\\A
- (character '\\a) → #\\a
+ (character #\a) → #\a
+ (character "a") → #\a
+ (character 'a) → #\A
+ (character '\\a) → #\a
  (character 65.) is an error.
  (character 'apple) is an error.
 
@@ -3627,14 +3627,14 @@ Error: non-numeric value: A
 
 
 ```lisp
- (characterp #\\a) → T
+ (characterp #\a) → T
  (characterp 'a) → NIL
  (characterp "a") → NIL
  (characterp 65.) → NIL
- (characterp #\\Newline) → T
+ (characterp #\Newline) → T
  ;; This next example presupposes an implementation 
- ;; in which #\\Rubout is an implementation-defined character.
- (characterp #\\Rubout) → T
+ ;; in which #\Rubout is an implementation-defined character.
+ (characterp #\Rubout) → T
 
 ```
 
@@ -3646,9 +3646,9 @@ Error: non-numeric value: A
 
 
 ```lisp
- (alpha-char-p #\\a) → T
- (alpha-char-p #\\5) → NIL
- (alpha-char-p #\\Newline) → NIL
+ (alpha-char-p #\a) → T
+ (alpha-char-p #\5) → NIL
+ (alpha-char-p #\Newline) → NIL
  ;; This next example presupposes an implementation
  ;; in which #\\\alfa is a defined character.
  (alpha-char-p #\\\alfa) → \term{implementation-dependent}
@@ -3657,9 +3657,9 @@ Error: non-numeric value: A
 
 
 ```lisp
- (alphanumericp #\\Z) → T
- (alphanumericp #\\9) → T
- (alphanumericp #\\Newline) → NIL
+ (alphanumericp #\Z) → T
+ (alphanumericp #\9) → T
+ (alphanumericp #\Newline) → NIL
  (alphanumericp #\\#) → NIL
 
 ```
@@ -3673,25 +3673,25 @@ Error: non-numeric value: A
 
 
 ```lisp
- (digit-char 0) → #\\0
- (digit-char 10 11) → #\\A
+ (digit-char 0) → #\0
+ (digit-char 10 11) → #\A
  (digit-char 10 10) → NIL
- (digit-char 7) → #\\7
+ (digit-char 7) → #\7
  (digit-char 12) → NIL
- (digit-char 12 16) → #\\C  ;not #\\c
+ (digit-char 12 16) → #\C  ;not #\c
  (digit-char 6 2) → NIL
- (digit-char 1 2) → #\\1
+ (digit-char 1 2) → #\1
 
 ```
 
 
 ```lisp
- (digit-char-p #\\5)    → 5
- (digit-char-p #\\5 2)  → NIL
- (digit-char-p #\\A)    → NIL
- (digit-char-p #\\a)    → NIL
- (digit-char-p #\\A 11) → 10
- (digit-char-p #\\a 11) → 10
+ (digit-char-p #\5)    → 5
+ (digit-char-p #\5 2)  → NIL
+ (digit-char-p #\A)    → NIL
+ (digit-char-p #\a)    → NIL
+ (digit-char-p #\A 11) → 10
+ (digit-char-p #\a 11) → 10
  (mapcar #'(lambda (radix) 
              (map 'list #'(lambda (x) (digit-char-p x radix)) 
                   "059AaFGZ"))
@@ -3706,31 +3706,31 @@ Error: non-numeric value: A
 
 
 ```lisp
- (graphic-char-p #\\G) → T
+ (graphic-char-p #\G) → T
  (graphic-char-p #\\#) → T
- (graphic-char-p #\\Space) → T
- (graphic-char-p #\\Newline) → NIL
+ (graphic-char-p #\Space) → T
+ (graphic-char-p #\Newline) → NIL
 
 ```
 
 
 ```lisp
- (standard-char-p #\\Space) → T
+ (standard-char-p #\Space) → T
  (standard-char-p #\\~) → T
  ;; This next example presupposes an implementation
- ;; in which #\\Bell is a defined character.
- (standard-char-p #\\Bell) → NIL
+ ;; in which #\Bell is a defined character.
+ (standard-char-p #\Bell) → NIL
 
 ```
 
 
 ```lisp
- (char-upcase #\\a) → #\\A
- (char-upcase #\\A) → #\\A
- (char-downcase #\\a) → #\\a
- (char-downcase #\\A) → #\\a
- (char-upcase #\\9) → #\\9
- (char-downcase #\\9) → #\\9
+ (char-upcase #\a) → #\A
+ (char-upcase #\A) → #\A
+ (char-downcase #\a) → #\a
+ (char-downcase #\A) → #\a
+ (char-upcase #\9) → #\9
+ (char-downcase #\9) → #\9
  (char-upcase #\\@) → #\\@
  (char-downcase #\\@) → #\\@
  ;; Note that this next example might run for a very long time in 
@@ -3750,15 +3750,15 @@ Error: non-numeric value: A
 
 
 ```lisp
- (upper-case-p #\\A) → T
- (upper-case-p #\\a) → NIL
- (both-case-p #\\a) → T
- (both-case-p #\\5) → NIL
- (lower-case-p #\\5) → NIL
- (upper-case-p #\\5) → NIL
+ (upper-case-p #\A) → T
+ (upper-case-p #\a) → NIL
+ (both-case-p #\a) → T
+ (both-case-p #\5) → NIL
+ (lower-case-p #\5) → NIL
+ (upper-case-p #\5) → NIL
  ;; This next example presupposes an implementation 
- ;; in which #\\Bell is an implementation-defined character.
- (lower-case-p #\\Bell) → NIL
+ ;; in which #\Bell is an implementation-defined character.
+ (lower-case-p #\Bell) → NIL
 
 ```
 
@@ -3767,7 +3767,7 @@ Error: non-numeric value: A
 ;; An implementation using ASCII character encoding 
 ;; might return these values:
 (char-code #\\$) → 36
-(char-code #\\a) → 97
+(char-code #\a) → 97
 
 ```
 
@@ -3779,50 +3779,50 @@ Error: non-numeric value: A
 
 
 ```lisp
- (char-int #\\A) → 65       ; implementation A
- (char-int #\\A) → 577      ; implementation B
- (char-int #\\A) → 262145   ; implementation C
+ (char-int #\A) → 65       ; implementation A
+ (char-int #\A) → 577      ; implementation B
+ (char-int #\A) → 262145   ; implementation C
 
 ```
 
 
 ```lisp
-(code-char 65.) → #\\A  ;in an implementation using ASCII codes
-(code-char (char-code #\\Space)) → #\\Space  ;in any implementation
+(code-char 65.) → #\A  ;in an implementation using ASCII codes
+(code-char (char-code #\Space)) → #\Space  ;in any implementation
 
 ```
 
 
 ```lisp
  (char-name #\\ ) → "Space"
- (char-name #\\Space) → "Space"
- (char-name #\\Page) → "Page"
+ (char-name #\Space) → "Space"
+ (char-name #\Page) → "Page"
 
- (char-name #\\a)
+ (char-name #\a)
 → NIL
 \OV "LOWERCASE-a"
 \OV "Small-A"
 \OV "LA01"
 
- (char-name #\\A)
+ (char-name #\A)
 → NIL
 \OV "UPPERCASE-A"
 \OV "Capital-A"
 \OV "LA02"
 
- ;; Even though its CHAR-NAME can vary, #\\A prints as #\\A
- (prin1-to-string (read-from-string (format nil "#\\\\~A" (or (char-name #\\A) "A"))))
+ ;; Even though its CHAR-NAME can vary, #\A prints as #\A
+ (prin1-to-string (read-from-string (format nil "#\\\\~A" (or (char-name #\A) "A"))))
 → "#\\\\A"
 
 ```
 
 
 ```lisp
-(name-char 'space) → #\\Space
-(name-char "space") → #\\Space
-(name-char "Space") → #\\Space
-(let ((x (char-name #\\a)))
-  (or (not x) (eql (name-char x) #\\a))) → T
+(name-char 'space) → #\Space
+(name-char "space") → #\Space
+(name-char "Space") → #\Space
+(let ((x (char-name #\a)))
+  (or (not x) (eql (name-char x) #\a))) → T
 
 ```
 
@@ -5834,7 +5834,7 @@ COMPUTE-POWER-OF-2
 
 ```lisp
  (member-if #'listp '(a b nil c d)) → (NIL C D)
- (member-if #'numberp '(a #\\Space 5/3 foo)) → (5/3 FOO)
+ (member-if #'numberp '(a #\Space 5/3 foo)) → (5/3 FOO)
  (member-if-not #'zerop 
                  '(3 6 9 11 . 12)
                  :key #'(lambda (x) (mod x 3))) → (11 . 12)
@@ -5928,7 +5928,7 @@ COMPUTE-POWER-OF-2
  (assoc "one" alist) → NIL
  (assoc "one" alist :test #'equalp) → ("one" . 1)
  (assoc "two" alist :key #'(lambda(x) (char x 2))) → NIL 
- (assoc #\\o alist :key #'(lambda(x) (char x 2))) → ("two" . 2)
+ (assoc #\o alist :key #'(lambda(x) (char x 2))) → ("two" . 2)
  (assoc 'r '((a . b) (c . d) (r . x) (s . y) (r . z))) →  (R . X)
  (assoc 'goo '((foo . bar) (zoo . goo))) → NIL
  (assoc '2 '((1 a b c) (2 b c d) (-7 x y z))) → (2 B C D)
@@ -6171,7 +6171,7 @@ COMPUTE-POWER-OF-2
 ;; Remove all flavor names that contain "c" or "w".
  (set-difference '("strawberry" "chocolate" "banana"
                   "lemon" "pistachio" "rhubarb")
-          '(#\\c #\\w)
+          '(#\c #\w)
           :test #'(lambda (s c) (find c s)))
 → ("banana" "rhubarb" "lemon")    ;One possible ordering.
 
@@ -8725,7 +8725,7 @@ Assuming *x* is not globally special,
 \OV false
  (progn (setq x (cons 'a 'b)) (eq x x)) → T
  (progn (setq x '(a . b)) (eq x x)) → T
- (eq #\\A #\\A)
+ (eq #\A #\A)
 → T
 \OV false
  (let ((x "Foo")) (eq x x)) → T
@@ -8757,7 +8757,7 @@ Assuming *x* is not globally special,
 \OV false
  (progn (setq x (cons 'a 'b)) (eql x x)) → T
  (progn (setq x '(a . b)) (eql x x)) → T
- (eql #\\A #\\A) → T
+ (eql #\A #\A) → T
  (eql "Foo" "Foo")
 → T
 \OV false
@@ -8777,8 +8777,8 @@ Assuming *x* is not globally special,
  (equal #c(3 -4.0) #c(3 -4)) → NIL
  (equal (cons 'a 'b) (cons 'a 'c)) → NIL
  (equal (cons 'a 'b) (cons 'a 'b)) → T
- (equal #\\A #\\A) → T
- (equal #\\A #\\a) → NIL
+ (equal #\A #\A) → T
+ (equal #\A #\a) → NIL
  (equal "Foo" "Foo") → T
  (equal "Foo" (copy-seq "Foo")) → T
  (equal "FOO" "foo") → NIL
@@ -8798,8 +8798,8 @@ Assuming *x* is not globally special,
  (equalp #c(3 -4.0) #c(3 -4)) → T
  (equalp (cons 'a 'b) (cons 'a 'c)) → NIL
  (equalp (cons 'a 'b) (cons 'a 'b)) → T
- (equalp #\\A #\\A) → T
- (equalp #\\A #\\a) → T
+ (equalp #\A #\A) → T
+ (equalp #\A #\a) → T
  (equalp "Foo" "Foo") → T
  (equalp "Foo" (copy-seq "Foo")) → T
  (equalp "FOO" "foo") → T
@@ -8837,7 +8837,7 @@ Assuming *x* is not globally special,
 
 ```lisp
  (funcall (complement #'zerop) 1) → T
- (funcall (complement #'characterp) #\\A) → NIL
+ (funcall (complement #'characterp) #\A) → NIL
  (funcall (complement #'member) 'a '(a b c)) → NIL
  (funcall (complement #'member) 'd '(a b c)) → T
 
@@ -9033,13 +9033,13 @@ Assuming *x* is not globally special,
 
 
 ```lisp
- (dolist (k '(1 2 3 :four #\\v () t 'other))
+ (dolist (k '(1 2 3 :four #\v () t 'other))
     (format t "~S "
        (case k ((1 2) 'clause1)
                (3 'clause2)
                (nil 'no-keys-so-never-seen)
                ((nil) 'nilslot)
-               ((:four #\\v) 'clause4)
+               ((:four #\v) 'clause4)
                ((t) 'tslot)
                (otherwise 'others)))) 
 \OUT CLAUSE1 CLAUSE1 CLAUSE2 CLAUSE4 CLAUSE4 NILSLOT TSLOT OTHERS 
@@ -9878,7 +9878,7 @@ Assuming *x* is not globally special,
 
 ```lisp
  (= (sxhash (list 'list "ab")) (sxhash (list 'list "ab"))) → T
- (= (sxhash "a") (sxhash (make-string 1 :initial-element #\\a))) → T
+ (= (sxhash "a") (sxhash (make-string 1 :initial-element #\a))) → T
  (let ((r (make-random-state)))
    (= (sxhash r) (sxhash (make-random-state r))))
 → \term{implementation-dependent}
@@ -10110,7 +10110,7 @@ a-vector → #(1 0 3 0)
            for i below (length string)
            do (let ((char (aref string i)))
                 (case char
-                  (#\\Space (add-word word sentence))
+                  (#\Space (add-word word sentence))
                   (#\\. (setq endpos (1+ i)) (loop-finish))
                   (otherwise (push char word))))
            finally (add-word word sentence)
@@ -12692,7 +12692,7 @@ Roads ELM     MAIN
     (pprint-exit-if-list-exhausted)
     (loop (write (pprint-pop) :stream s)
           (pprint-exit-if-list-exhausted)
-          (write-char #\\Space s)
+          (write-char #\Space s)
           (pprint-tab :section-relative 0 tabsize s)
           (pprint-newline :fill s))))
 
@@ -12742,7 +12742,7 @@ Roads ELM     MAIN
 \EQ (progn (terpri output-stream)
            (write object :stream output-stream
                          :escape t)
-           (write-char #\\space output-stream))
+           (write-char #\space output-stream))
 
 ```
 
@@ -12845,12 +12845,12 @@ Roads ELM     MAIN
 
 
 ```lisp
- (let ((*print-escape* t)) (write #\\a))
-\OUT #\\a
-→ #\\a
- (let ((*print-escape* nil)) (write #\\a))
+ (let ((*print-escape* t)) (write #\a))
+\OUT #\a
+→ #\a
+ (let ((*print-escape* nil)) (write #\a))
 \OUT a
-→ #\\a
+→ #\a
 
 ```
 
@@ -13010,7 +13010,7 @@ Roads ELM     MAIN
 
 ```lisp
  (setq zvar 123) → 123
- (set-syntax-from-char #\\z #\\' (setq table2 (copy-readtable))) → T
+ (set-syntax-from-char #\z #\\' (setq table2 (copy-readtable))) → T
  zvar → 123
  (copy-readtable table2 *readtable*) → #<READTABLE 614000277>
  zvar → VAR
@@ -13060,7 +13060,7 @@ Roads ELM     MAIN
     (set-dispatch-macro-character #\\# #\\\{ #'skip-then-read-char)
     (set-dispatch-macro-character #\\# #\\\} #'skip-then-read-char)
     (with-input-from-string (is "#\{123 x #\}123 y")
-      (format t "~S ~S" (read is) (read is)))) → #\\x, #\\Space, NIL
+      (format t "~S ~S" (read is) (read is)))) → #\x, #\Space, NIL
 
 ```
 
@@ -13182,7 +13182,7 @@ Roads ELM     MAIN
 
 ```lisp
 % (get-dispatch-macro-character #\\# #\\\{) → NIL 
-% (unless (get-dispatch-macro-character #\\# #\\x)
+% (unless (get-dispatch-macro-character #\\# #\x)
 %      (warn "Hexadecimal input (#x<ddd>) is disabled")) → NIL 
 % (let ((previous-fun (get-dispatch-macro-character #\\# #\\\{)))
 %      (when previous-fun
@@ -13219,7 +13219,7 @@ Roads ELM     MAIN
    (declare (ignore char))
    ;; First swallow the rest of the current input line.
    ;; End-of-file is acceptable for terminating the comment.
-   (do () ((char= (read-char stream nil #\\Newline t) #\\Newline)))
+   (do () ((char= (read-char stream nil #\Newline t) #\Newline)))
    ;; Return zero values.
    (values)) → SEMICOLON-READER
  (set-macro-character #\\; #'semicolon-reader) → T
@@ -13228,7 +13228,7 @@ Roads ELM     MAIN
 
 
 ```lisp
- (set-syntax-from-char #\\7 #\\;) → T
+ (set-syntax-from-char #\7 #\\;) → T
  123579 → 1235
 
 ```
@@ -13284,7 +13284,7 @@ Roads ELM     MAIN
 %      (format t "~&parsed as: ~S~%" (read))))
 % \OUT input here> 101
 % \OUT parsed as: NIL
-% \OUT input here> (#\\a :test)
+% \OUT input here> (#\a :test)
 % \OUT parsed as: (NIL NIL)
 % \OUT input here> '("xyz" #(a b c))
 % \OUT parsed as: (QUOTE ("xyz" #(NIL NIL NIL)))
@@ -13300,7 +13300,7 @@ Roads ELM     MAIN
    (mapcar #'read-from-string
            '("#(foo bar baz)" "#P(:type :lisp)" "#c1.2"
              "#.(PRINT 'FOO)" "#3AHELLO" "#S(INTEGER)"
-             "#*ABC" "#\\GARBAGE" "#RALPHA" "#3R444")))
+             "#*ABC" "#\GARBAGE" "#RALPHA" "#3R444")))
 → (NIL NIL NIL NIL NIL NIL NIL NIL NIL NIL)
 
 ```
@@ -13309,7 +13309,7 @@ Roads ELM     MAIN
 ```lisp
  (readtablep *readtable*) → T
  (setq zvar 123) → 123
- (set-syntax-from-char #\\z #\\' (setq table2 (copy-readtable))) → T
+ (set-syntax-from-char #\z #\\' (setq table2 (copy-readtable))) → T
  zvar → 123
  (setq *readtable* table2) → #<READTABLE>
  zvar → VAR
@@ -13335,7 +13335,7 @@ Roads ELM     MAIN
 
 ```lisp
  (setq str (copy-seq "0123456789")) → "0123456789"
- (elt str 6) → #\\6
+ (elt str 6) → #\6
  (setf (elt str 0) #\\#) → #\\#
  str → "#123456789"
 
@@ -13344,7 +13344,7 @@ Roads ELM     MAIN
 
 ```lisp
  (fill (list 0 1 2 3 4 5) '(444)) → ((444) (444) (444) (444) (444) (444))
- (fill (copy-seq "01234") #\\e :start 3) → "012ee"
+ (fill (copy-seq "01234") #\e :start 3) → "012ee"
  (setq x (vector 'a 'b 'c 'd 'e)) → #(A B C D E)
  (fill x 'z :start 1 :end 3) → #(A Z Z D E)
  x → #(A Z Z D E)
@@ -13400,7 +13400,7 @@ Roads ELM     MAIN
  seq → ("LOWER" "UPPER" "" "123")
  (map 'list #'- '(1 2 3 4)) → (-1 -2 -3 -4)
  (map 'string
-      #'(lambda (x) (if (oddp x) #\\1 #\\0))
+      #'(lambda (x) (if (oddp x) #\1 #\0))
       '(1 2 3 4)) → "1010"
 
 ```
@@ -13460,7 +13460,7 @@ Roads ELM     MAIN
 
 
 ```lisp
- (count #\\a "how many A's are there in here?") → 2
+ (count #\a "how many A's are there in here?") → 2
  (count-if-not #'oddp '((1) (2) (3) (4)) :key #'car) → 2
  (count-if #'upper-case-p "The Crying of Lot 49" :start 4) → 2 
 
@@ -13539,8 +13539,8 @@ Roads ELM     MAIN
 
 
 ```lisp
- (find #\\d "here are some letters that can be looked at" :test #'char>)
-→ #\\Space 
+ (find #\d "here are some letters that can be looked at" :test #'char>)
+→ #\Space 
  (find-if #'oddp '(1 2 3 4 5) :end 3 :from-end t) → 3
  (find-if-not #'complexp                                    
              '#(3.5 2 #C(1.0 0.0) #C(0.0 1.0))
@@ -13557,7 +13557,7 @@ Roads ELM     MAIN
 
 
 ```lisp
- (position #\\a "baobab" :from-end t) → 4
+ (position #\a "baobab" :from-end t) → 4
  (position-if #'oddp '((1) (2) (3) (4)) :start 1 :key #'car) → 2
  (position 595 '()) → NIL
  (position-if-not #'integerp '(1 2 3 4 5.0)) → 4 
@@ -13598,7 +13598,7 @@ Roads ELM     MAIN
 
 
 ```lisp
- (substitute #\\. #\\SPACE "0 2 4 6") → "0.2.4.6"
+ (substitute #\\. #\SPACE "0 2 4 6") → "0.2.4.6"
  (substitute 9 4 '(1 2 4 1 3 4 5)) → (1 2 9 1 3 9 5)
  (substitute 9 4 '(1 2 4 1 3 4 5) :count 1) → (1 2 9 1 3 4 5)
  (substitute 9 4 '(1 2 4 1 3 4 5) :count 1 :from-end t)
@@ -13616,7 +13616,7 @@ Roads ELM     MAIN
                  :count 1 :from-end t) → (A CAR B "function was here" C)
  some-things → (A CAR B "function was here" C)
  (setq alpha-tester (copy-seq "ab ")) → "ab "
- (nsubstitute-if-not #\\z #'alpha-char-p alpha-tester) → "abz"
+ (nsubstitute-if-not #\z #'alpha-char-p alpha-tester) → "abz"
  alpha-tester → "abz"
 
 ```
@@ -13636,7 +13636,7 @@ Roads ELM     MAIN
 ```lisp
 (concatenate 'string "all" " " "together" " " "now") → "all together now"
 (concatenate 'list "ABC" '(d e f) #(1 2 3) #*1011)
-→ (#\\A #\\B #\\C D E F 1 2 3 1 0 1 1)
+→ (#\A #\B #\C D E F 1 2 3 1 0 1 1)
 (concatenate 'list) → NIL
 
 ```
@@ -13725,10 +13725,10 @@ Roads ELM     MAIN
  (remove-duplicates "aBcDAbCd" :test #'char-equal :from-end t) → "aBcD"
  (remove-duplicates '(a b c b d d e)) → (A C B D E)
  (remove-duplicates '(a b c b d d e) :from-end t) → (A B C D E)
- (remove-duplicates '((foo #\\a) (bar #\\%) (baz #\\A))
-     :test #'char-equal :key #'cadr) → ((BAR #\\%) (BAZ #\\A))
- (remove-duplicates '((foo #\\a) (bar #\\%) (baz #\\A)) 
-     :test #'char-equal :key #'cadr :from-end t) → ((FOO #\\a) (BAR #\\%))
+ (remove-duplicates '((foo #\a) (bar #\\%) (baz #\A))
+     :test #'char-equal :key #'cadr) → ((BAR #\\%) (BAZ #\A))
+ (remove-duplicates '((foo #\a) (bar #\\%) (baz #\A)) 
+     :test #'char-equal :key #'cadr :from-end t) → ((FOO #\a) (BAR #\\%))
  (setq tester (list 0 1 2 3 4 5 6))
  (delete-duplicates tester :key #'oddp :start 1 :end 6) → (0 4 5 6)
 
@@ -13825,9 +13825,9 @@ Roads ELM     MAIN
  (with-input-from-string (input-stream "    1 2 3 4 5")
     (format t "~S ~S ~S" 
             (peek-char t input-stream)
-            (peek-char #\\4 input-stream)
+            (peek-char #\4 input-stream)
             (peek-char nil input-stream)))
-\OUT #\\1 #\\4 #\\4
+\OUT #\1 #\4 #\4
 → NIL
 
 ```
@@ -13838,7 +13838,7 @@ Roads ELM     MAIN
     (do ((c (read-char is) (read-char is nil 'the-end)))
         ((not (characterp c)))
      (format t "~S " c)))
-\OUT #\\0 #\\1 #\\2 #\\3
+\OUT #\0 #\1 #\2 #\3
 → NIL
 
 ```
@@ -13857,13 +13857,13 @@ Roads ELM     MAIN
 ;; interactive input on the console.
  (test-it)
 \OUT \IN{a}
-→ (#\\a NIL NIL)
+→ (#\a NIL NIL)
 ;; Implementation B, where a Newline is required to terminate
 ;; interactive input on the console, and where that Newline remains
 ;; on the input stream.
  (test-it)
 \OUT \IN{a\CRLF}
-→ (#\\a #\\Newline NIL)
+→ (#\a #\Newline NIL)
 
 ```
 
@@ -13889,7 +13889,7 @@ more text"
 
 
 ```lisp
- (write-char #\\Newline output-stream)
+ (write-char #\Newline output-stream)
 
 ```
 
@@ -13899,22 +13899,22 @@ more text"
     (dotimes (i 6)
       (let ((c (read-char is)))
         (if (evenp i) (format t "~&~S ~S~%" i c) (unread-char c is)))))
-\OUT 0 #\\0
-\OUT 2 #\\1
-\OUT 4 #\\2
+\OUT 0 #\0
+\OUT 2 #\1
+\OUT 4 #\2
 → NIL
 
 ```
 
 
 ```lisp
- (write-char #\\a)
+ (write-char #\a)
 \OUT a
-→ #\\a
+→ #\a
  (with-output-to-string (s) 
-   (write-char #\\a s)
-   (write-char #\\Space s)
-   (write-char #\\b s))
+   (write-char #\a s)
+   (write-char #\Space s)
+   (write-char #\b s))
 → "a b"
 
 ```
@@ -13966,7 +13966,7 @@ more text"
 ```lisp
  (defvar *data* (make-array 15 :initial-element nil))
  (values (read-sequence *data* (make-string-input-stream "test string")) *data*)
- → 11, #(#\\t #\\e #\\s #\\t #\\Space #\\s #\\t #\\r #\\i #\\n #\\g NIL NIL NIL NIL)
+ → 11, #(#\t #\e #\s #\t #\Space #\s #\t #\r #\i #\n #\g NIL NIL NIL NIL)
 
 ```
 
@@ -14132,7 +14132,7 @@ more text"
 ```lisp
  (progn (unread-char (read-char)) (list (listen) (read-char)))
 \OUT \IN{1}
-→ (T #\\1)
+→ (T #\1)
  (progn (clear-input) (listen))
 → NIL ;Unless you're a very fast typist!
 
@@ -14465,19 +14465,19 @@ more text"
 
 
 ```lisp
- (setq my-simple-string (make-string 6 :initial-element #\\A)) → "AAAAAA"
- (schar my-simple-string 4) → #\\A
- (setf (schar my-simple-string 4) #\\B) → #\\B
+ (setq my-simple-string (make-string 6 :initial-element #\A)) → "AAAAAA"
+ (schar my-simple-string 4) → #\A
+ (setf (schar my-simple-string 4) #\B) → #\B
  my-simple-string → "AAAABA"
  (setq my-filled-string
        (make-array 6 :element-type 'character
                      :fill-pointer 5
                      :initial-contents my-simple-string))
 → "AAAAB"
- (char my-filled-string 4) → #\\B
- (char my-filled-string 5) → #\\A
- (setf (char my-filled-string 3) #\\C) → #\\C
- (setf (char my-filled-string 5) #\\D) → #\\D
+ (char my-filled-string 4) → #\B
+ (char my-filled-string 5) → #\A
+ (setf (char my-filled-string 3) #\C) → #\C
+ (setf (char my-filled-string 5) #\D) → #\D
  (setf (fill-pointer my-filled-string) 6) → 6
  my-filled-string → "AAACBD"
 
@@ -14493,7 +14493,7 @@ more text"
 ```lisp
  (string "already a string") → "already a string"
  (string 'elm) → "ELM"
- (string #\\c) → "c"
+ (string #\c) → "c"
 
 ```
 
@@ -14524,7 +14524,7 @@ more text"
 
 ```lisp
  (string-trim "abc" "abcaakaaakabcaaa") → "kaaak"
- (string-trim '(#\\Space #\\Tab #\\Newline) " garbanzo beans
+ (string-trim '(#\Space #\Tab #\Newline) " garbanzo beans
         ") → "garbanzo beans"
  (string-trim " (*)" " ( *three (silly) words* ) ")
 → "three (silly) words"
@@ -14564,7 +14564,7 @@ more text"
 
 ```lisp
  (stringp "aaaaaa") → T
- (stringp #\\a) → NIL
+ (stringp #\a) → NIL
 
 ```
 
@@ -14576,7 +14576,7 @@ more text"
 
 
 ```lisp
- (make-string 10 :initial-element #\\5) → "5555555555"
+ (make-string 10 :initial-element #\5) → "5555555555"
  (length (make-string 10)) → 10
 
 ```
@@ -15487,7 +15487,7 @@ more text"
 
 ```lisp
  (coerce '(a b c) 'vector) → #(A B C)
- (coerce 'a 'character) → #\\A
+ (coerce 'a 'character) → #\A
  (coerce 4.56 'complex) → #C(4.56 0.0)
  (coerce 4.5s0 'complex) → #C(4.5s0 0.0s0)
  (coerce 7/2 'complex) → 7/2
@@ -15505,7 +15505,7 @@ more text"
  (coerce '(a b c) '(vector * 2))
  (coerce #(a b c) '(vector * 2))
  (coerce "foo" '(string 2))
- (coerce #(#\\a #\\b #\\c) '(string 2))
+ (coerce #(#\a #\b #\c) '(string 2))
  (coerce '(0 1) '(simple-bit-vector 3))
 
 ```
