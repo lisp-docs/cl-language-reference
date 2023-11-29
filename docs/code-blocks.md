@@ -527,9 +527,9 @@
 ```lisp
  (char-name #\a)
 → NIL
-\OV "LOWERCASE-a"
-\OV "Small-A"
-\OV "LA01"
+OR=> "LOWERCASE-a"
+OR=> "Small-A"
+OR=> "LA01"
 
 ```
 
@@ -544,7 +544,7 @@
  (function-lambda-expression 
     (funcall #'(lambda (x) #'(lambda () x)) nil))
 → NIL, true, NIL
-\OV (LAMBDA () X), true, NIL
+OR=> (LAMBDA () X), true, NIL
 \NV NIL, false, NIL
 \NV (LAMBDA () X), false, NIL
 
@@ -593,7 +593,7 @@
    (+ x 1)) → ADD-SOME
  (mapcar 'add-some '(1 2 3 4))
 → (2 3 4 5)
-\OV (2 4 5 6)
+OR=> (2 4 5 6)
 
 ```
 
@@ -627,14 +627,14 @@
    (ignore-errors (sort a #'<))
    a)
 → (1 2 3 4 6 7 FIVE)
-\OV (2 1 4 3 7 6 FIVE)
-\OV (2)
+OR=> (2 1 4 3 7 6 FIVE)
+OR=> (2)
 
  (prog foo ((a (list 1 2 3 4 5 6 7 8 9 10)))
    (sort a #'(lambda (x y) (if (zerop (random 5)) (return-from foo a) (> x y)))))
 → (1 2 3 4 5 6 7 8 9 10)
-\OV (3 4 5 6 2 7 8 9 10 1)
-\OV (1 2 4 3)
+OR=> (3 4 5 6 2 7 8 9 10 1)
+OR=> (1 2 4 3)
 
 ```
 
@@ -806,7 +806,7 @@
 ;; This next example assumes an implementation-defined "Control" attribute.
  (format nil "~:C" #\Control-Space)
 → "Control-Space"
-\OV "c-Space"
+OR=> "c-Space"
 
 ```
 
@@ -3800,15 +3800,15 @@ Error: non-numeric value: A
 
  (char-name #\a)
 → NIL
-\OV "LOWERCASE-a"
-\OV "Small-A"
-\OV "LA01"
+OR=> "LOWERCASE-a"
+OR=> "Small-A"
+OR=> "LA01"
 
  (char-name #\A)
 → NIL
-\OV "UPPERCASE-A"
-\OV "Capital-A"
-\OV "LA02"
+OR=> "UPPERCASE-A"
+OR=> "Capital-A"
+OR=> "LA02"
 
  ;; Even though its CHAR-NAME can vary, #\A prints as #\A
  (prin1-to-string (read-from-string (format nil "#\\\\~A" (or (char-name #\A) "A"))))
@@ -6055,10 +6055,10 @@ COMPUTE-POWER-OF-2
  foo → (A B E F)
  bar
 → (C D E F)
-\OV (C)
-\OV (NIL)
-\OV (C NIL)
-\OV (C D)
+OR=> (C)
+OR=> (NIL)
+OR=> (C NIL)
+OR=> (C D)
 
 ```
 
@@ -6212,18 +6212,18 @@ COMPUTE-POWER-OF-2
 ```lisp
  (union '(a b c) '(f a d))
 → (A B C F D)
-\OV (B C F A D)
-\OV (D F A B C)
+OR=> (B C F A D)
+OR=> (D F A B C)
  (union '((x 5) (y 6)) '((z 2) (x 4)) :key #'car)
 → ((X 5) (Y 6) (Z 2))
-\OV ((X 4) (Y 6) (Z 2))
+OR=> ((X 4) (Y 6) (Z 2))
 
  (setq lst1 (list 1 2 '(1 2) "a" "b")
        lst2 (list 2 3 '(2 3) "B" "C"))
 → (2 3 (2 3) "B" "C")
  (nunion lst1 lst2)
 → (1 (1 2) "a" "b" 2 3 (2 3) "B" "C") 
-\OV (1 2 (1 2) "a" "b" "C" "B" (2 3) 3)
+OR=> (1 2 (1 2) "a" "b" "C" "B" (2 3) 3)
 
 ```
 
@@ -6410,11 +6410,11 @@ COMPUTE-POWER-OF-2
 ```lisp
  (lisp-implementation-type)
 → "ACME Lisp"
-\OV "Joe's Common Lisp"
+OR=> "Joe's Common Lisp"
  (lisp-implementation-version)
 → "1.3a"
 → "V2"
-\OV "Release 17.3, ECO #6"
+OR=> "Release 17.3, ECO #6"
 
 ```
 
@@ -6422,10 +6422,10 @@ COMPUTE-POWER-OF-2
 ```lisp
  (short-site-name)
 → "MIT AI Lab"
-\OV "CMU-CSD"
+OR=> "CMU-CSD"
  (long-site-name)
 → "MIT Artificial Intelligence Laboratory"
-\OV "CMU Computer Science Department"
+OR=> "CMU Computer Science Department"
 
 ```
 
@@ -6433,9 +6433,9 @@ COMPUTE-POWER-OF-2
 ```lisp
  (machine-instance)
 → "ACME.COM"
-\OV "S/N 123231"
-\OV "18.26.0.179"
-\OV "AA-00-04-00-A7-A4"
+OR=> "S/N 123231"
+OR=> "18.26.0.179"
+OR=> "AA-00-04-00-A7-A4"
 
 ```
 
@@ -6443,7 +6443,7 @@ COMPUTE-POWER-OF-2
 ```lisp
  (machine-type)
 → "DEC PDP-10"
-\OV "Symbolics LM-2"
+OR=> "Symbolics LM-2"
 
 ```
 
@@ -7672,8 +7672,8 @@ thing3 → THREE
    (values (pathname stream)
            (truename stream)))
 → #P"S:>vistor>test.text.newest", #P"S:>vistor>test.text.1"
-\OV #P"S:>vistor>test.text.newest", #P"S:>vistor>test.text.newest"
-\OV #P"S:>vistor>test.text.newest", #P"S:>vistor>_temp_._temp_.1"
+OR=> #P"S:>vistor>test.text.newest", #P"S:>vistor>test.text.newest"
+OR=> #P"S:>vistor>test.text.newest", #P"S:>vistor>_temp_._temp_.1"
 
 ;; In this case, the file is closed when the truename is tried, so the
 ;; truename information is reliable.
@@ -7996,21 +7996,21 @@ thing3 → THREE
 ```lisp
  (function-lambda-expression #'(lambda (x) x))
 → NIL, false, NIL
-\OV NIL, true, NIL
-\OV (LAMBDA (X) X), true, NIL
-\OV (LAMBDA (X) X), false, NIL
+OR=> NIL, true, NIL
+OR=> (LAMBDA (X) X), true, NIL
+OR=> (LAMBDA (X) X), false, NIL
 
  (function-lambda-expression
     (funcall #'(lambda () #'(lambda (x) x))))
 → NIL, false, NIL
-\OV NIL, true, NIL
-\OV (LAMBDA (X) X), true, NIL
-\OV (LAMBDA (X) X), false, NIL
+OR=> NIL, true, NIL
+OR=> (LAMBDA (X) X), true, NIL
+OR=> (LAMBDA (X) X), false, NIL
  
  (function-lambda-expression 
     (funcall #'(lambda (x) #'(lambda () x)) nil))
 → NIL, true, NIL
-\OV (LAMBDA () X), true, NIL
+OR=> (LAMBDA () X), true, NIL
 \NV NIL, false, NIL
 \NV (LAMBDA () X), false, NIL
   
@@ -8018,20 +8018,20 @@ thing3 → THREE
    (setf (symbol-function 'bar) #'foo)
    (function-lambda-expression #'bar))
 → NIL, false, NIL
-\OV NIL, true, NIL
-\OV (LAMBDA (X) (BLOCK FOO X)), true, NIL
-\OV (LAMBDA (X) (BLOCK FOO X)), false, FOO
-\OV (SI::BLOCK-LAMBDA FOO (X) X), false, FOO
+OR=> NIL, true, NIL
+OR=> (LAMBDA (X) (BLOCK FOO X)), true, NIL
+OR=> (LAMBDA (X) (BLOCK FOO X)), false, FOO
+OR=> (SI::BLOCK-LAMBDA FOO (X) X), false, FOO
  
  (defun foo ()
    (flet ((bar (x) x))
      #'bar))
  (function-lambda-expression (foo))
 → NIL, false, NIL
-\OV NIL, true, NIL
-\OV (LAMBDA (X) (BLOCK BAR X)), true, NIL
-\OV (LAMBDA (X) (BLOCK BAR X)), true, (:INTERNAL FOO 0 BAR)
-\OV (LAMBDA (X) (BLOCK BAR X)), false, "BAR in FOO"
+OR=> NIL, true, NIL
+OR=> (LAMBDA (X) (BLOCK BAR X)), true, NIL
+OR=> (LAMBDA (X) (BLOCK BAR X)), true, (:INTERNAL FOO 0 BAR)
+OR=> (LAMBDA (X) (BLOCK BAR X)), false, "BAR in FOO"
 
 ```
 
@@ -8060,7 +8060,7 @@ thing3 → THREE
  (defun f (x) x) → F
  (compiled-function-p #'f)
 → NIL
-\OV true
+OR=> true
  (compiled-function-p 'f) → NIL
  (compile 'f) → F
  (compiled-function-p #'f) → T
@@ -8069,7 +8069,7 @@ thing3 → THREE
 → T
  (compiled-function-p #'(lambda (x) x))
 → NIL
-\OV true
+OR=> true
  (compiled-function-p '(lambda (x) x)) → NIL
 
 ```
@@ -8709,35 +8709,35 @@ Assuming *x* is not globally special,
  (eq 'a 'a) → T
  (eq 3 3)
 → T
-\OV false
+OR=> false
  (eq 3 3.0) → NIL
  (eq 3.0 3.0)
 → T
-\OV false
+OR=> false
  (eq #c(3 -4) #c(3 -4))
 → T
-\OV false
+OR=> false
  (eq #c(3 -4.0) #c(3 -4)) → NIL
  (eq (cons 'a 'b) (cons 'a 'c)) → NIL
  (eq (cons 'a 'b) (cons 'a 'b)) → NIL
  (eq '(a . b) '(a . b))
 → T
-\OV false
+OR=> false
  (progn (setq x (cons 'a 'b)) (eq x x)) → T
  (progn (setq x '(a . b)) (eq x x)) → T
  (eq #\A #\A)
 → T
-\OV false
+OR=> false
  (let ((x "Foo")) (eq x x)) → T
  (eq "Foo" "Foo")
 → T
-\OV false
+OR=> false
  (eq "Foo" (copy-seq "Foo")) → NIL
  (eq "FOO" "foo") → NIL
  (eq "string-seq" (copy-seq "string-seq")) → NIL
  (let ((x 5)) (eq x x))
 → T
-\OV false
+OR=> false
 
 ```
 
@@ -8754,13 +8754,13 @@ Assuming *x* is not globally special,
  (eql (cons 'a 'b) (cons 'a 'b)) → NIL
  (eql '(a . b) '(a . b))
 → T
-\OV false
+OR=> false
  (progn (setq x (cons 'a 'b)) (eql x x)) → T
  (progn (setq x '(a . b)) (eql x x)) → T
  (eql #\A #\A) → T
  (eql "Foo" "Foo")
 → T
-\OV false
+OR=> false
  (eql "Foo" (copy-seq "Foo")) → NIL
  (eql "FOO" "foo") → NIL
 
@@ -10153,24 +10153,24 @@ a-vector → #(1 0 3 0)
  (max 5.0 2) → 5.0 
  (min 5.0 2)
 → 2
-\OV 2.0
+OR=> 2.0
  (max 3.0 7 1)
 → 7
-\OV 7.0 
+OR=> 7.0 
  (min 3.0 7 1)
 → 1
-\OV 1.0
+OR=> 1.0
  (max 1.0s0 7.0d0) → 7.0d0
  (min 1.0s0 7.0d0)
 → 1.0s0
-\OV 1.0d0
+OR=> 1.0d0
  (max 3 1 1.0s0 1.0d0)
 → 3
-\OV 3.0d0
+OR=> 3.0d0
  (min 3 1 1.0s0 1.0d0)
 → 1
-\OV 1.0s0 
-\OV 1.0d0
+OR=> 1.0s0 
+OR=> 1.0d0
 
 ```
 
@@ -10491,7 +10491,7 @@ a-vector → #(1 0 3 0)
  (log 100.0 10) → 2.0
  (log #c(0 1) #c(0 -1))
 → #C(-1.0 0.0)
-\OV #C(-1 0)
+OR=> #C(-1 0)
  (log 8.0 2) → 3.0
 
 ```
@@ -10553,7 +10553,7 @@ a-vector → #(1 0 3 0)
  (isqrt 325) → 18
  (sqrt 25)
 → 5
-\OV 5.0
+OR=> 5.0
  (isqrt 25) → 5
  (sqrt -1) → #C(0.0 1.0)
  (sqrt #c(0 2)) → #C(1.0 1.0)
@@ -11211,7 +11211,7 @@ a-vector → #(1 0 3 0)
  (float 1.0) → 1.0
  (float 1/2) → 0.5
 → 1.0d0
-\OV 1.0
+OR=> 1.0
  (eql (float 1.0 1.0d0) 1.0d0) → T
 
 ```
@@ -11749,7 +11749,7 @@ a-vector → #(1 0 3 0)
  (find-symbol "NIL" 'just-testing) → JUST-TESTING:NIL, :EXTERNAL
  (find-symbol "NIL" "KEYWORD")
 → NIL, NIL
-\OV :NIL, :EXTERNAL
+OR=> :NIL, :EXTERNAL
  (find-symbol (symbol-name :nil) "KEYWORD") → :NIL, :EXTERNAL
 
 ```
@@ -11766,14 +11766,14 @@ a-vector → #(1 0 3 0)
 ```lisp
  (find-all-symbols 'car)
 → (CAR)
-\OV (CAR VEHICLES:CAR)
-\OV (VEHICLES:CAR CAR)
+OR=> (CAR VEHICLES:CAR)
+OR=> (VEHICLES:CAR CAR)
  (intern "CAR" (make-package 'temp :use nil)) → TEMP::CAR, NIL
  (find-all-symbols 'car)
 → (TEMP::CAR CAR)
-\OV (CAR TEMP::CAR)
-\OV (TEMP::CAR CAR VEHICLES:CAR)
-\OV (CAR TEMP::CAR VEHICLES:CAR)
+OR=> (CAR TEMP::CAR)
+OR=> (TEMP::CAR CAR VEHICLES:CAR)
+OR=> (CAR TEMP::CAR VEHICLES:CAR)
 
 ```
 
@@ -12061,7 +12061,7 @@ a-vector → #(1 0 3 0)
    (do-symbols (s (find-package 'temp)) (push s lst))
    lst)
 → (TEMP::SHY TEMP:BOLD)
-\OV (TEMP:BOLD TEMP::SHY)
+OR=> (TEMP:BOLD TEMP::SHY)
  (let ((lst ()))
    (do-external-symbols (s (find-package 'temp) lst) (push s lst))
    lst) 
@@ -12071,7 +12071,7 @@ a-vector → #(1 0 3 0)
      (when (eq (find-package 'temp) (symbol-package s)) (push s lst)))
    lst)
 → (TEMP::SHY TEMP:BOLD)
-\OV (TEMP:BOLD TEMP::SHY)
+OR=> (TEMP:BOLD TEMP::SHY)
 
 ```
 
@@ -12200,21 +12200,21 @@ a-vector → #(1 0 3 0)
  ;; with #P.
  (setq p1 (pathname "test"))
 → #P"CHOCOLATE:TEST" ; with case canonicalization (e.g., VMS)
-\OV #P"VANILLA:test"   ; without case canonicalization (e.g., Unix)
-\OV #P"test"
-\OV #S(PATHNAME :HOST "STRAWBERRY" :NAME "TEST")
-\OV #S(PATHNAME :HOST "BELGIAN-CHOCOLATE" :NAME "test")
+OR=> #P"VANILLA:test"   ; without case canonicalization (e.g., Unix)
+OR=> #P"test"
+OR=> #S(PATHNAME :HOST "STRAWBERRY" :NAME "TEST")
+OR=> #S(PATHNAME :HOST "BELGIAN-CHOCOLATE" :NAME "test")
  (setq p2 (pathname "test"))
 → #P"CHOCOLATE:TEST"
-\OV #P"VANILLA:test"
-\OV #P"test"
-\OV #S(PATHNAME :HOST "STRAWBERRY" :NAME "TEST")
-\OV #S(PATHNAME :HOST "BELGIAN-CHOCOLATE" :NAME "test")
+OR=> #P"VANILLA:test"
+OR=> #P"test"
+OR=> #S(PATHNAME :HOST "STRAWBERRY" :NAME "TEST")
+OR=> #S(PATHNAME :HOST "BELGIAN-CHOCOLATE" :NAME "test")
  (pathnamep p1) → T
  (eq p1 (pathname p1)) → T
  (eq p1 p2)
 → T
-\OV false
+OR=> false
  (with-open-file (stream "test" :direction :output)
    (pathname stream))
 → #P"ORANGE-CHOCOLATE:>Gus>test.lisp.newest"
@@ -12587,7 +12587,7 @@ a-vector → #(1 0 3 0)
  (pathname-name (translate-pathname "foobar" "foo*" "*baz")) → "barbaz"
  (pathname-name (translate-pathname "foobar" "foo*" "*"))
 → "foobar"
-\OV "bar"
+OR=> "bar"
  (pathname-name (translate-pathname "foobar" "*"    "foo*")) → "foofoobar"
  (pathname-name (translate-pathname "bar"    "*"    "foo*")) → "foobar"
  (pathname-name (translate-pathname "foobar" "foo*" "baz*")) → "bazbar"
@@ -12706,7 +12706,7 @@ Roads ELM     MAIN
 
  (prin1-to-string my-airplane)
 → "#<Airplane NW0773 36000123135>"
-\OV "#<FAA:AIRPLANE NW0773 17>"
+OR=> "#<FAA:AIRPLANE NW0773 17>"
 
 ```
 
@@ -13776,12 +13776,12 @@ Roads ELM     MAIN
                            :direction :output)
    (stream-element-type s))
 → INTEGER
-\OV (UNSIGNED-BYTE 16)
-\OV (UNSIGNED-BYTE 8)
-\OV BIT
-\OV (UNSIGNED-BYTE 1)
-\OV (INTEGER 0 1)
-\OV (INTEGER 0 (2))
+OR=> (UNSIGNED-BYTE 16)
+OR=> (UNSIGNED-BYTE 8)
+OR=> BIT
+OR=> (UNSIGNED-BYTE 1)
+OR=> (INTEGER 0 1)
+OR=> (INTEGER 0 (2))
 
 ```
 
@@ -14022,8 +14022,8 @@ more text"
 → tester
  (tester)
 → (0 2 T 2 0 2 5 7)
-\OV (0 2 NIL 3 0 3 5 6 7)
-\OV (NIL NIL NIL NIL NIL NIL)
+OR=> (0 2 NIL 3 0 3 5 6 7)
+OR=> (NIL NIL NIL NIL NIL NIL)
 
 ```
 
@@ -14060,10 +14060,10 @@ more text"
  (with-open-file (stream "test" :direction :output)
    (stream-external-format stream))
 → :DEFAULT
-\OV :ISO8859/1-1987
-\OV (:ASCII :SAIL)
-\OV ACME::PROPRIETARY-FILE-FORMAT-17
-\OV #<FILE-FORMAT :ISO646-1983 2343673>
+OR=> :ISO8859/1-1987
+OR=> (:ASCII :SAIL)
+OR=> ACME::PROPRIETARY-FILE-FORMAT-17
+OR=> #<FILE-FORMAT :ISO646-1983 2343673>
 
 ```
 
@@ -15617,28 +15617,28 @@ more text"
  (type-of 'a) → SYMBOL          
  (type-of '(1 . 2))
 → CONS
-\OV (CONS FIXNUM FIXNUM)
+OR=> (CONS FIXNUM FIXNUM)
  (type-of #c(0 1))
 → COMPLEX
-\OV (COMPLEX INTEGER)
+OR=> (COMPLEX INTEGER)
  (defstruct temp-struct x y z) → TEMP-STRUCT
  (type-of (make-temp-struct)) → TEMP-STRUCT
  (type-of "abc")
 → STRING
-\OV (STRING 3)
+OR=> (STRING 3)
  (subtypep (type-of "abc") 'string) → T, true
  (type-of (expt 2 40))
 → BIGNUM
-\OV INTEGER
-\OV (INTEGER 1099511627776 1099511627776)
-\OV SYSTEM::TWO-WORD-BIGNUM
-\OV FIXNUM
+OR=> INTEGER
+OR=> (INTEGER 1099511627776 1099511627776)
+OR=> SYSTEM::TWO-WORD-BIGNUM
+OR=> FIXNUM
  (subtypep (type-of 112312) 'integer) → T, true
  (defvar *foo* (make-array 5 :element-type t)) → *FOO*
  (class-name (class-of *foo*)) → VECTOR
  (type-of *foo*)
 → VECTOR
-\OV (VECTOR T 5)
+OR=> (VECTOR T 5)
 
 ```
 
