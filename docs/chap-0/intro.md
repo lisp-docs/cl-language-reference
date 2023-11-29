@@ -1,6 +1,6 @@
 ﻿
 
-
+# Contents and Figures
 
 **draft proposed American National Standard for Information Systems—Programming** 
 
@@ -32,17 +32,81 @@
 
 **Figures** 
 
-Chapter 1 (Introduction) 1–1. Notations for NIL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1–14 1–2. Deprecated Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1–33 1–3. Functions with Deprecated :TEST-NOT Arguments . . . . . . . . . . . . . . . . . . . . . . . . . . 1–33 1–4. Symbols in the COMMON-LISP package (part one of twelve). . . . . . . . . . . . . . . . . . . 1–35 1–5. Symbols in the COMMON-LISP package (part two of twelve). . . . . . . . . . . . . . . . . . . 1–36 1–6. Symbols in the COMMON-LISP package (part three of twelve). . . . . . . . . . . . . . . . . . 1–37 1–7. Symbols in the COMMON-LISP package (part four of twelve). . . . . . . . . . . . . . . . . . . 1–38 1–8. Symbols in the COMMON-LISP package (part five of twelve). . . . . . . . . . . . . . . . . . . 1–39 1–9. Symbols in the COMMON-LISP package (part six of twelve). . . . . . . . . . . . . . . . . . . . 1–40 1–10. Symbols in the COMMON-LISP package (part seven of twelve). . . . . . . . . . . . . . . . . 1–41 1–11. Symbols in the COMMON-LISP package (part eight of twelve). . . . . . . . . . . . . . . . . 1–42 1–12. Symbols in the COMMON-LISP package (part nine of twelve). . . . . . . . . . . . . . . . . . 1–43 1–13. Symbols in the COMMON-LISP package (part ten of twelve). . . . . . . . . . . . . . . . . . . 1–44 1–14. Symbols in the COMMON-LISP package (part eleven of twelve). . . . . . . . . . . . . . . . . 1–45 1–15. Symbols in the COMMON-LISP package (part twelve of twelve). . . . . . . . . . . . . . . . 1–46 
+Chapter 1 (Introduction) 1–1. Notations for NIL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1–14
+1–2. Deprecated Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1–33
+1–3. Functions with Deprecated :TEST-NOT Arguments . . . . . . . . . . . . . . . . . . . . . . . . . . 1–33
+1–4. Symbols in the COMMON-LISP package (part one of twelve). . . . . . . . . . . . . . . . . . . 1–35
+1–5. Symbols in the COMMON-LISP package (part two of twelve). . . . . . . . . . . . . . . . . . . 1–36
+1–6. Symbols in the COMMON-LISP package (part three of twelve). . . . . . . . . . . . . . . . . . 1–37
+1–7. Symbols in the COMMON-LISP package (part four of twelve). . . . . . . . . . . . . . . . . . . 1–38
+1–8. Symbols in the COMMON-LISP package (part five of twelve). . . . . . . . . . . . . . . . . . . 1–39
+1–9. Symbols in the COMMON-LISP package (part six of twelve). . . . . . . . . . . . . . . . . . . . 1–40
+1–10. Symbols in the COMMON-LISP package (part seven of twelve). . . . . . . . . . . . . . . . . 1–41
+1–11. Symbols in the COMMON-LISP package (part eight of twelve). . . . . . . . . . . . . . . . . 1–42
+1–12. Symbols in the COMMON-LISP package (part nine of twelve). . . . . . . . . . . . . . . . . . 1–43
+1–13. Symbols in the COMMON-LISP package (part ten of twelve). . . . . . . . . . . . . . . . . . . 1–44
+1–14. Symbols in the COMMON-LISP package (part eleven of twelve). . . . . . . . . . . . . . . . . 1–45
+1–15. Symbols in the COMMON-LISP package (part twelve of twelve). . . . . . . . . . . . . . . . 1–46 
 
-Chapter 2 (Syntax) 2–1. Readtable defined names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–1 2–2. Variables that influence the Lisp reader. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–2 2–3. Standard Character Subrepertoire (Part 1 of 3: Latin Characters) . . . . . . . . . . . . . . . . . 2–3 2–4. Standard Character Subrepertoire (Part 2 of 3: Numeric Characters) . . . . . . . . . . . . . . 2–3 2–5. Standard Character Subrepertoire (Part 3 of 3: Special Characters) . . . . . . . . . . . . . . . 2–4 2–6. Possible Character Syntax Types . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–5 2–7. Character Syntax Types in Standard Syntax . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–5 2–8. Constituent Traits of Standard Characters and Semi-Standard Characters . . . . . . . . . . . 2–7 2–9. Syntax for Numeric Tokens . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–14 2–10. Examples of reserved tokens . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–15 2–11. Examples of symbols . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–15 2–12. Examples of symbols or potential numbers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–16 2–13. Examples of Ratios . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–17 2–14. Examples of Floating-point numbers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–18 2–15. Examples of the printed representation of symbols (Part 1 of 2) . . . . . . . . . . . . . . . . 2–19 2–16. Examples of the printed representation of symbols (Part 2 of 2) . . . . . . . . . . . . . . . . 2–20 2–17. Valid patterns for tokens . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–21 2–18. Examples of the use of double-quote . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–26  
+Chapter 2 (Syntax) 2–1. Readtable defined names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–1
+2–2. Variables that influence the Lisp reader. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–2
+2–3. Standard Character Subrepertoire (Part 1 of 3: Latin Characters) . . . . . . . . . . . . . . . . . 2–3
+2–4. Standard Character Subrepertoire (Part 2 of 3: Numeric Characters) . . . . . . . . . . . . . . 2–3
+2–5. Standard Character Subrepertoire (Part 3 of 3: Special Characters) . . . . . . . . . . . . . . . 2–4
+2–6. Possible Character Syntax Types . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–5
+2–7. Character Syntax Types in Standard Syntax . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–5
+2–8. Constituent Traits of Standard Characters and Semi-Standard Characters . . . . . . . . . . . 2–7
+2–9. Syntax for Numeric Tokens . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–14
+2–10. Examples of reserved tokens . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–15
+2–11. Examples of symbols . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–15
+2–12. Examples of symbols or potential numbers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–16
+2–13. Examples of Ratios . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–17
+2–14. Examples of Floating-point numbers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–18
+2–15. Examples of the printed representation of symbols (Part 1 of 2) . . . . . . . . . . . . . . . . 2–19
+2–16. Examples of the printed representation of symbols (Part 2 of 2) . . . . . . . . . . . . . . . . 2–20
+2–17. Valid patterns for tokens . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–21
+2–18. Examples of the use of double-quote . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–26  
 
 
 
-2–19. Standard # Dispatching Macro Character Syntax . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–30 2–20. Radix Indicator Example . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–34 2–21. Complex Number Example . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–35 
+2–19. Standard # Dispatching Macro Character Syntax . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–30
+2–20. Radix Indicator Example . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–34
+2–21. Complex Number Example . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2–35 
 
-Chapter 3 (Evaluation and Compilation) 3–1. Some Defined Names Applicable to Variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–4 3–2. Common Lisp Special Operators . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–6 3–3. Defined names applicable to macros . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–7 3–4. Some function-related defined names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–8 3–5. Some operators applicable to receiving multiple values . . . . . . . . . . . . . . . . . . . . . . . . 3–13 3–6. Defined names applicable to compiler macros . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–16 3–7. EVAL-WHEN processing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–21 3–8. Defining Macros That Affect the Compile-Time Environment . . . . . . . . . . . . . . . . . . . 3–22 3–9. Common Lisp Declaration Identifiers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–29 3–10. What Kind of Lambda Lists to Use . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–33 3–11. Defined names applicable to lambda lists . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–33 3–12. Standardized Operators that use Ordinary Lambda Lists . . . . . . . . . . . . . . . . . . . . . 3–34 3–13. Lambda List Keywords used by Ordinary Lambda Lists . . . . . . . . . . . . . . . . . . . . . . 3–34 3–14. Lambda List Keywords used by Generic Function Lambda Lists . . . . . . . . . . . . . . . . 3–39 3–15. Standardized Operators that use Specialized Lambda Lists . . . . . . . . . . . . . . . . . . . . 3–40 3–16. Lambda List Keywords used by Specialized Lambda Lists . . . . . . . . . . . . . . . . . . . . . 3–40 3–17. Operators that use Macro Lambda Lists . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–41 3–18. Lambda List Keywords used by Macro Lambda Lists . . . . . . . . . . . . . . . . . . . . . . . . 3–41 3–19. Lambda List Keywords used by Defsetf Lambda Lists . . . . . . . . . . . . . . . . . . . . . . . . 3–47 3–20. Lambda List Keywords used by Define-modify-macro Lambda Lists . . . . . . . . . . . . . . 3–48 3–21. Lambda List Keywords used by Define-method-combination arguments Lambda Lists 3–48 3–22. Global Declaration Specifiers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–81 3–23. Standardized Forms In Which Declarations Can Occur . . . . . . . . . . . . . . . . . . . . . . . 3–83 3–24. Local Declaration Specifiers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–83 3–25. Optimize qualities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–96 
+Chapter 3 (Evaluation and Compilation) 3–1. Some Defined Names Applicable to Variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–4
+3–2. Common Lisp Special Operators . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–6
+3–3. Defined names applicable to macros . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–7
+3–4. Some function-related defined names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–8
+3–5. Some operators applicable to receiving multiple values . . . . . . . . . . . . . . . . . . . . . . . . 3–13
+3–6. Defined names applicable to compiler macros . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–16
+3–7. EVAL-WHEN processing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–21
+3–8. Defining Macros That Affect the Compile-Time Environment . . . . . . . . . . . . . . . . . . . 3–22
+3–9. Common Lisp Declaration Identifiers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–29
+3–10. What Kind of Lambda Lists to Use . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–33
+3–11. Defined names applicable to lambda lists . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–33
+3–12. Standardized Operators that use Ordinary Lambda Lists . . . . . . . . . . . . . . . . . . . . . 3–34
+3–13. Lambda List Keywords used by Ordinary Lambda Lists . . . . . . . . . . . . . . . . . . . . . . 3–34
+3–14. Lambda List Keywords used by Generic Function Lambda Lists . . . . . . . . . . . . . . . . 3–39
+3–15. Standardized Operators that use Specialized Lambda Lists . . . . . . . . . . . . . . . . . . . . 3–40
+3–16. Lambda List Keywords used by Specialized Lambda Lists . . . . . . . . . . . . . . . . . . . . . 3–40
+3–17. Operators that use Macro Lambda Lists . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–41
+3–18. Lambda List Keywords used by Macro Lambda Lists . . . . . . . . . . . . . . . . . . . . . . . . 3–41
+3–19. Lambda List Keywords used by Defsetf Lambda Lists . . . . . . . . . . . . . . . . . . . . . . . . 3–47
+3–20. Lambda List Keywords used by Define-modify-macro Lambda Lists . . . . . . . . . . . . . . 3–48
+3–21. Lambda List Keywords used by Define-method-combination arguments Lambda Lists 3–48 3–22. Global Declaration Specifiers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–81
+3–23. Standardized Forms In Which Declarations Can Occur . . . . . . . . . . . . . . . . . . . . . . . 3–83
+3–24. Local Declaration Specifiers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–83
+3–25. Optimize qualities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3–96 
 
-Chapter 4 (Types and Classes) 4–1. Cross-References to Data Type Information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4–2 4–2. Standardized Atomic Type Specifiers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4–4 4–3. Standardized Compound Type Specifier Names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4–5 4–4. Standardized Compound-Only Type Specifier Names . . . . . . . . . . . . . . . . . . . . . . . . . . 4–5 4–5. Defined names relating to types and declarations. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4–6 4–6. Standardized Type Specifier Names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4–7 4–7. Object System Classes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4–8 4–8. Classes that correspond to pre-defined type specifiers . . . . . . . . . . . . . . . . . . . . . . . . . 4–18 4–9. Result possibilities for subtypep . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4–35 
+Chapter 4 (Types and Classes) 4–1. Cross-References to Data Type Information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4–2
+4–2. Standardized Atomic Type Specifiers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4–4
+4–3. Standardized Compound Type Specifier Names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4–5
+4–4. Standardized Compound-Only Type Specifier Names . . . . . . . . . . . . . . . . . . . . . . . . . . 4–5
+4–5. Defined names relating to types and declarations. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4–6
+4–6. Standardized Type Specifier Names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4–7
+4–7. Object System Classes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4–8
+4–8. Classes that correspond to pre-defined type specifiers . . . . . . . . . . . . . . . . . . . . . . . . . 4–18
+4–9. Result possibilities for subtypep . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4–35 
 
 Chapter 5 (Data and Control Flow) 
 
@@ -50,35 +114,83 @@ Chapter 5 (Data and Control Flow)
 
 
 
-5–1. Examples of setf . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–1 5–2. Operators relating to places and generalized reference. . . . . . . . . . . . . . . . . . . . . . . . . . 5–1 5–3. Sample Setf Expansion of a Variable . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–4 5–4. Sample Setf Expansion of a CAR Form . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–4 5–5. Sample Setf Expansion of a SUBSEQ Form . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–4 5–6. Sample Setf Expansion of a LDB Form . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–5 5–7. Functions that setf can be used with—1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–6 5–8. Functions that setf can be used with—2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–7 5–9. Read-Modify-Write Macros . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–12 5–10. Macros that have implicit tagbodies. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–49 5–11. Operators that always prefer EQ over EQL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–58 5–12. Summary and priorities of behavior of **equal** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–61 5–13. Summary and priorities of behavior of **equalp** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–63 
+5–1. Examples of setf . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–1
+5–2. Operators relating to places and generalized reference. . . . . . . . . . . . . . . . . . . . . . . . . . 5–1
+5–3. Sample Setf Expansion of a Variable . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–4
+5–4. Sample Setf Expansion of a CAR Form . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–4
+5–5. Sample Setf Expansion of a SUBSEQ Form . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–4
+5–6. Sample Setf Expansion of a LDB Form . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–5
+5–7. Functions that setf can be used with—1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–6
+5–8. Functions that setf can be used with—2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–7
+5–9. Read-Modify-Write Macros . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–12
+5–10. Macros that have implicit tagbodies. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–49
+5–11. Operators that always prefer EQ over EQL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–58
+5–12. Summary and priorities of behavior of **equal** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–61
+5–13. Summary and priorities of behavior of **equalp** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5–63 
 
 Chapter 6 (Iteration) 
 
-Chapter 7 (Objects) 7–1. Standardized Method-Defining Operators . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7–17 7–2. Built-in Method Combination Types . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7–25 
+Chapter 7 (Objects) 7–1. Standardized Method-Defining Operators . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7–17
+7–2. Built-in Method Combination Types . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7–25 
 
 Chapter 8 (Structures) 
 
-Chapter 9 (Conditions) 9–1. Standardized Condition Types . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9–2 9–2. Operators that define and create conditions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9–2 9–3. Operators that read condition slots. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9–3 9–4. Operators relating to handling conditions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9–7 9–5. Defined names relating to signaling conditions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9–7 9–6. Defined names relating to restarts. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9–9 9–7. Operators relating to assertions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9–10 
+Chapter 9 (Conditions) 9–1. Standardized Condition Types . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9–2
+9–2. Operators that define and create conditions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9–2
+9–3. Operators that read condition slots. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9–3
+9–4. Operators relating to handling conditions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9–7
+9–5. Defined names relating to signaling conditions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9–7
+9–6. Defined names relating to restarts. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9–9
+9–7. Operators relating to assertions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9–10 
 
-Chapter 10 (Symbols) 10–1. Property list defined names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10–1 10–2. Symbol creation and inquiry defined names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10–1 
+Chapter 10 (Symbols) 10–1. Property list defined names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10–1
+10–2. Symbol creation and inquiry defined names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10–1 
 
-Chapter 11 (Packages) 11–1. Some Defined Names related to Packages . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11–1 11–2. Standardized Package Names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11–4 
+Chapter 11 (Packages) 11–1. Some Defined Names related to Packages . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11–1
+11–2. Standardized Package Names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11–4 
 
 Chapter 12 (Numbers) 12–1. Operators relating to Arithmetic. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–1  
 
 
 
-12–2. Defined names relating to Exponentials, Logarithms, and Trigonometry. . . . . . . . . . . 12–1 12–3. Operators for numeric comparison and predication. . . . . . . . . . . . . . . . . . . . . . . . . . . 12–1 12–4. Defined names relating to numeric type manipulation and coercion. . . . . . . . . . . . . . . 12–2 12–5. Defined names relating to logical operations on numbers. . . . . . . . . . . . . . . . . . . . . . 12–3 12–6. Defined names relating to byte manipulation. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–4 12–7. Defined names relating to implementation-dependent details about numbers. . . . . . . . 12–4 12–8. Functions Affected by Rule of Float Substitutability . . . . . . . . . . . . . . . . . . . . . . . . . 12–6 12–9. Trigonometric Identities for Complex Domain . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–9 12–10. Quadrant Numbering for Branch Cuts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–9 12–11. Random-state defined names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–10 12–12. Recommended Minimum Floating-Point Precision and Exponent Size . . . . . . . . . . 12–14 12–13. Uses of /=, =, &#60;, &#62;, &#60;=, and &#62;= . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–22 12–14. Mathematical definition of arc sine, arc cosine, and arc tangent . . . . . . . . . . . . . . . 12–29 12–15. Quadrant information for arc tangent . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–31 12–16. Mathematical definitions for hyperbolic functions . . . . . . . . . . . . . . . . . . . . . . . . . 12–33 12–17. Bit-Wise Logical Operations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–68 12–18. Bit-wise Logical Operations on Integers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–72 
+12–2. Defined names relating to Exponentials, Logarithms, and Trigonometry. . . . . . . . . . . 12–1
+12–3. Operators for numeric comparison and predication. . . . . . . . . . . . . . . . . . . . . . . . . . . 12–1
+12–4. Defined names relating to numeric type manipulation and coercion. . . . . . . . . . . . . . . 12–2
+12–5. Defined names relating to logical operations on numbers. . . . . . . . . . . . . . . . . . . . . . 12–3
+12–6. Defined names relating to byte manipulation. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–4
+12–7. Defined names relating to implementation-dependent details about numbers. . . . . . . . 12–4
+12–8. Functions Affected by Rule of Float Substitutability . . . . . . . . . . . . . . . . . . . . . . . . . 12–6
+12–9. Trigonometric Identities for Complex Domain . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–9
+12–10. Quadrant Numbering for Branch Cuts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–9
+12–11. Random-state defined names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–10
+12–12. Recommended Minimum Floating-Point Precision and Exponent Size . . . . . . . . . . 12–14
+12–13. Uses of /=, =, &#60;, &#62;, &#60;=, and &#62;= . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–22
+12–14. Mathematical definition of arc sine, arc cosine, and arc tangent . . . . . . . . . . . . . . . 12–29
+12–15. Quadrant information for arc tangent . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–31
+12–16. Mathematical definitions for hyperbolic functions . . . . . . . . . . . . . . . . . . . . . . . . . 12–33
+12–17. Bit-Wise Logical Operations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–68
+12–18. Bit-wise Logical Operations on Integers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12–72 
 
-Chapter 13 (Characters) 13–1. Character defined names – 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13–1 13–2. Character defined names – 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13–1 
+Chapter 13 (Characters) 13–1. Character defined names – 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13–1
+13–2. Character defined names – 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13–1 
 
-Chapter 14 (Conses) 14–1. Some defined names relating to conses. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14–1 14–2. Some defined names relating to trees. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14–1 14–3. Some defined names relating to lists. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14–2 14–4. Some defined names related to assocation lists. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14–2 14–5. Some defined names related to sets. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14–3 14–6. CAR and CDR variants . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14–11 
+Chapter 14 (Conses) 14–1. Some defined names relating to conses. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14–1
+14–2. Some defined names relating to trees. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14–1
+14–3. Some defined names relating to lists. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14–2
+14–4. Some defined names related to assocation lists. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14–2
+14–5. Some defined names related to sets. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14–3
+14–6. CAR and CDR variants . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14–11 
 
-Chapter 15 (Arrays) 15–1. General Purpose Array-Related Defined Names . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15–2 15–2. Operators that Manipulate Strings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15–3 15–3. Operators that Manipulate Bit Arrays . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15–4 15–4. Bit-wise Logical Operations on Bit Arrays . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15–38 
+Chapter 15 (Arrays) 15–1. General Purpose Array-Related Defined Names . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15–2
+15–2. Operators that Manipulate Strings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15–3
+15–3. Operators that Manipulate Bit Arrays . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15–4
+15–4. Bit-wise Logical Operations on Bit Arrays . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15–38 
 
 Chapter 16 (Strings) 
 
-Chapter 17 (Sequences) 17–1. Standardized Sequence Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17–1 17–2. Operators that have Two-Argument Tests to be Satisfied . . . . . . . . . . . . . . . . . . . . . 17–2 17–3. Operators that have One-Argument Tests to be Satisfied . . . . . . . . . . . . . . . . . . . . . . 17–3 
+Chapter 17 (Sequences) 17–1. Standardized Sequence Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17–1
+17–2. Operators that have Two-Argument Tests to be Satisfied . . . . . . . . . . . . . . . . . . . . . 17–2
+17–3. Operators that have One-Argument Tests to be Satisfied . . . . . . . . . . . . . . . . . . . . . . 17–3 
 
 
 
@@ -86,27 +198,53 @@ Chapter 17 (Sequences) 17–1. Standardized Sequence Functions . . . . . . . . .
 
 Chapter 18 (Hash Tables) 18–1. Hash-table defined names . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18–1 
 
-Chapter 19 (Filenames) 19–1. Pathname Operations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19–2 19–2. Pathname functions using a :CASE argument . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19–4 19–3. Special Markers In Directory Component . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19–8 
+Chapter 19 (Filenames) 19–1. Pathname Operations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19–2
+19–2. Pathname functions using a :CASE argument . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19–4
+19–3. Special Markers In Directory Component . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19–8 
 
-Chapter 20 (Files) 20–1. File and Directory Operations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20–1 20–2. File Functions that Treat Open and Closed Streams Differently . . . . . . . . . . . . . . . . . 20–1 20–3. File Functions where Closed Streams Might Work Best . . . . . . . . . . . . . . . . . . . . . . . 20–2 
+Chapter 20 (Files) 20–1. File and Directory Operations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20–1
+20–2. File Functions that Treat Open and Closed Streams Differently . . . . . . . . . . . . . . . . . 20–1
+20–3. File Functions where Closed Streams Might Work Best . . . . . . . . . . . . . . . . . . . . . . . 20–2 
 
-Chapter 21 (Streams) 21–1. Some General-Purpose Stream Operations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21–1 21–2. Operators relating to Input Streams. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21–1 21–3. Operators relating to Output Streams. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21–2 21–4. Operators relating to Bidirectional Streams. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21–2 21–5. Defined Names related to Specialized Streams . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21–4 21–6. Standardized Stream Variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21–4 21–7. Operators that accept either Open or Closed Streams . . . . . . . . . . . . . . . . . . . . . . . . 21–5 21–8. Operators that accept Open Streams only . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21–5 
+Chapter 21 (Streams) 21–1. Some General-Purpose Stream Operations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21–1
+21–2. Operators relating to Input Streams. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21–1
+21–3. Operators relating to Output Streams. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21–2
+21–4. Operators relating to Bidirectional Streams. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21–2
+21–5. Defined Names related to Specialized Streams . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21–4
+21–6. Standardized Stream Variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21–4
+21–7. Operators that accept either Open or Closed Streams . . . . . . . . . . . . . . . . . . . . . . . . 21–5
+21–8. Operators that accept Open Streams only . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21–5 
 
-Chapter 22 (Printer) 22–1. Standardized Printer Control Variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22–1 22–2. Additional Influences on the Lisp printer. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22–2 22–3. Example of Logical Blocks, Conditional Newlines, and Sections . . . . . . . . . . . . . . . . 22–15 22–4. Defined names related to pretty printing. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22–15 22–5. Format directives related to Pretty Printing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22–15 22–6. Examples of format control strings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22–23 22–7. Argument correspondences for the WRITE function. . . . . . . . . . . . . . . . . . . . . . . . 22–63 
+Chapter 22 (Printer) 22–1. Standardized Printer Control Variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22–1
+22–2. Additional Influences on the Lisp printer. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22–2
+22–3. Example of Logical Blocks, Conditional Newlines, and Sections . . . . . . . . . . . . . . . . 22–15
+22–4. Defined names related to pretty printing. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22–15
+22–5. Format directives related to Pretty Printing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22–15
+22–6. Examples of format control strings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22–23
+22–7. Argument correspondences for the WRITE function. . . . . . . . . . . . . . . . . . . . . . . . 22–63 
 
 Chapter 23 (Reader) 23–1. Values of standard control variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23–18 
 
 Chapter 24 (System Construction) 24–1. Features examples . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24–2 
 
-Chapter 25 (Environment) 25–1. Variables maintained by the Read-Eval-Print Loop . . . . . . . . . . . . . . . . . . . . . . . . . . 25–1 25–2. Defined names relating to debugging . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25–1 
+Chapter 25 (Environment) 25–1. Variables maintained by the Read-Eval-Print Loop . . . . . . . . . . . . . . . . . . . . . . . . . . 25–1
+25–2. Defined names relating to debugging . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25–1 
 
 
 
 
 
-25–3. Defined names relating to environment inquiry. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25–2 25–4. Defined names involving Time. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25–2 25–5. Defined names involving time in Decoded Time. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25–3 25–6. Defined names involving time in Universal Time. . . . . . . . . . . . . . . . . . . . . . . . . . . . 25–4 25–7. Defined names involving time in Internal Time. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25–4 25–8. Defined names involving time in Seconds. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25–4 
+25–3. Defined names relating to environment inquiry. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25–2
+25–4. Defined names involving Time. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25–2
+25–5. Defined names involving time in Decoded Time. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25–3
+25–6. Defined names involving time in Universal Time. . . . . . . . . . . . . . . . . . . . . . . . . . . . 25–4
+25–7. Defined names involving time in Internal Time. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25–4
+25–8. Defined names involving time in Seconds. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25–4 
 
-Chapter 26 (Glossary) 26–1. Exponent Markers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26–22 26–2. Standardized I/O Customization Variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26–30 26–3. Standardized Iteration Forms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26–33 26–4. Standardized Restart Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26–48 
+Chapter 26 (Glossary) 26–1. Exponent Markers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26–22
+26–2. Standardized I/O Customization Variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26–30
+26–3. Standardized Iteration Forms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26–33
+26–4. Standardized Restart Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26–48 
 
 Chapter A (Appendix) 
 

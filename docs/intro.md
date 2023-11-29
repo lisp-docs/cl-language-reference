@@ -1,8 +1,10 @@
-<!-- intro.md -->
+---
+sidebar_position: 0
+---
 
 # Introduction
 
-Welcome to the Cl Technical Reference.
+Welcome to the CL Technical Reference.
 
 The goal of this project is to provide a full technical reference that can be useful to anyone programming in Common Lisp.
 
