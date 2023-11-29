@@ -223,7 +223,7 @@
 
 
 ```lisp
- (typep \param{c} 'condition) *→ true*
+ (typep \param{c} 'condition) → T
 
 ```
 
@@ -581,7 +581,7 @@
  '(() ())                            ;list of empty lists
  (defun three () 3)                  ;Emphasize empty parameter list.
  (append '() '()) → ()              ;Emphasize use of empty lists
- (not nil) *→ true*                   ;Emphasize use as Boolean false
+ (not nil) → T                   ;Emphasize use as Boolean false
  (get 'nil 'color)                   ;Emphasize use as a symbol
 
 ```
@@ -2223,9 +2223,9 @@ Error: non-numeric value: A
  ;;; This example assumes an implementation in which the default float 
  ;;; format is IEEE single-float, IEEE double-float, or some other format
  ;;; in which 5/7 is rounded upwards by FLOAT.
- (< 5/7 (float 5/7)) *→ true*
- (< 5/7 (rational (float 5/7))) *→ true*
- (< (float 5/7) (float 5/7)) *→ false*
+ (< 5/7 (float 5/7)) → T
+ (< 5/7 (rational (float 5/7))) → T
+ (< (float 5/7) (float 5/7)) → NIL
 
 ```
 
@@ -2237,8 +2237,8 @@ Error: non-numeric value: A
  #c(0.0 0) → #C(0.0 0.0)
  #c(1 1) → #C(1 1)
  #c(0 0) → 0
- (typep #c(1 1) '(complex (eql 1))) *→ true*
- (typep #c(0 0) '(complex (eql 0))) *→ false*
+ (typep #c(1 1) '(complex (eql 1))) → T
+ (typep #c(0 0) '(complex (eql 0))) → NIL
 
 ```
 
@@ -2913,10 +2913,10 @@ Error: non-numeric value: A
 ```lisp
  ;; The following examples assume the readtable case of *readtable* 
  ;; and *print-case* are both :upcase.
- (eq 'abc 'ABC) *→ true*
- (eq 'abc '|ABC|) *→ true*
- (eq 'abc 'a|B|c) *→ true*
- (eq 'abc '|abc|) *→ false*
+ (eq 'abc 'ABC) → T
+ (eq 'abc '|ABC|) → T
+ (eq 'abc 'a|B|c) → T
+ (eq 'abc '|abc|) → NIL
 
 ```
 
@@ -2924,10 +2924,10 @@ Error: non-numeric value: A
 ```lisp
  ;; The following examples assume the readtable case of *readtable* 
  ;; and *print-case* are both :upcase.
- (eq 'abc '\\A\\B\\C) *→ true*
- (eq 'abc 'a\\Bc) *→ true*
- (eq 'abc '\\ABC) *→ true*
- (eq 'abc '\\abc) *→ false*
+ (eq 'abc '\\A\\B\\C) → T
+ (eq 'abc 'a\\Bc) → T
+ (eq 'abc '\\ABC) → T
+ (eq 'abc '\\abc) → NIL
 
 ```
 
@@ -3195,7 +3195,7 @@ Error: non-numeric value: A
    (make-array 5
                :element-type 'character 
                :adjustable t 
-               :fill-pointer 3)) *→ true*
+               :fill-pointer 3)) → T
  (adjustable-array-p (make-array 4)) → \term{implementation-dependent}
 
 ```
@@ -3257,11 +3257,11 @@ Error: non-numeric value: A
 
 ```lisp
  (array-has-fill-pointer-p (make-array 4)) → \term{implementation-dependent}
- (array-has-fill-pointer-p (make-array '(2 3))) *→ false*
+ (array-has-fill-pointer-p (make-array '(2 3))) → NIL
  (array-has-fill-pointer-p
    (make-array 8 
                :fill-pointer 2 
-               :initial-element 'filler)) *→ true*
+               :initial-element 'filler)) → T
 
 ```
 
@@ -3284,11 +3284,11 @@ Error: non-numeric value: A
 
 ```lisp
  (setq a (make-array '(7 11) :element-type 'string-char))
- (array-in-bounds-p a 0  0) *→ true*
- (array-in-bounds-p a 6 10) *→ true*
- (array-in-bounds-p a 0 -1) *→ false*
- (array-in-bounds-p a 0 11) *→ false*
- (array-in-bounds-p a 7  0) *→ false*
+ (array-in-bounds-p a 0  0) → T
+ (array-in-bounds-p a 6 10) → T
+ (array-in-bounds-p a 0 -1) → NIL
+ (array-in-bounds-p a 0 11) → NIL
+ (array-in-bounds-p a 7  0) → NIL
 
 ```
 
@@ -3353,12 +3353,12 @@ Error: non-numeric value: A
 
 
 ```lisp
- (arrayp (make-array '(2 3 4) :adjustable t)) *→ true*
- (arrayp (make-array 6)) *→ true*
- (arrayp #*1011) *→ true*
- (arrayp "hi") *→ true*
- (arrayp 'hi) *→ false*
- (arrayp 12) *→ false*
+ (arrayp (make-array '(2 3 4) :adjustable t)) → T
+ (arrayp (make-array 6)) → T
+ (arrayp #*1011) → T
+ (arrayp "hi") → T
+ (arrayp 'hi) → NIL
+ (arrayp 12) → NIL
 
 ```
 
@@ -3404,9 +3404,9 @@ Error: non-numeric value: A
 
 
 ```lisp
- (simple-vector-p (make-array 6)) *→ true*
- (simple-vector-p "aaaaaa") *→ false*
- (simple-vector-p (make-array 6 :fill-pointer t)) *→ false*
+ (simple-vector-p (make-array 6)) → T
+ (simple-vector-p "aaaaaa") → NIL
+ (simple-vector-p (make-array 6 :fill-pointer t)) → NIL
 
 ```
 
@@ -3418,7 +3418,7 @@ Error: non-numeric value: A
 
 
 ```lisp
- (simple-vector-p (setq v (vector 1 2 'sirens))) *→ true*
+ (simple-vector-p (setq v (vector 1 2 'sirens))) → T
  (svref v 0) → 1
  (svref v 2) → SIRENS
  (setf (svref v 1) 'newcomer) → NEWCOMER               
@@ -3434,9 +3434,9 @@ Error: non-numeric value: A
 
 
 ```lisp
- (arrayp (setq v (vector 1 2 'sirens))) *→ true*
- (vectorp v) *→ true*
- (simple-vector-p v) *→ true*         
+ (arrayp (setq v (vector 1 2 'sirens))) → T
+ (vectorp v) → T
+ (simple-vector-p v) → T         
  (length v) → 3
 
 ```
@@ -3457,7 +3457,7 @@ Error: non-numeric value: A
                                    :fill-pointer 2
                                    :initial-element 'sisyphus))) → 2 
  (fill-pointer fa) → 3 
- (eq (vector-pop fa) fable) *→ true*
+ (eq (vector-pop fa) fable) → T
  (vector-pop fa) → SISYPHUS 
  (fill-pointer fa) → 1 
 
@@ -3470,7 +3470,7 @@ Error: non-numeric value: A
                                    :fill-pointer 2
                                    :initial-element 'first-one))) → 2 
  (fill-pointer fa) → 3 
- (eq (aref fa 2) fable) *→ true*
+ (eq (aref fa 2) fable) → T
  (vector-push-extend #\\X
                     (setq aa 
                           (make-array 5
@@ -3487,11 +3487,11 @@ Error: non-numeric value: A
 
 
 ```lisp
- (vectorp "aaaaaa") *→ true*
- (vectorp (make-array 6 :fill-pointer t)) *→ true*
- (vectorp (make-array '(2 3 4))) *→ false*
- (vectorp #*11) *→ true*
- (vectorp #b11) *→ false*
+ (vectorp "aaaaaa") → T
+ (vectorp (make-array 6 :fill-pointer t)) → T
+ (vectorp (make-array '(2 3 4))) → NIL
+ (vectorp #*11) → T
+ (vectorp #b11) → NIL
 
 ```
 
@@ -3521,13 +3521,13 @@ Error: non-numeric value: A
  (bit-and #*1100 #*1010) → #*1000      
  (bit-andc1 #*1100 #*1010) → #*0010
  (setq rba (bit-andc2 ba #*00110011 t)) → #*11001000
- (eq rba ba) *→ true*
+ (eq rba ba) → T
  (bit-not (setq ba #*11101010)) → #*00010101
  (setq rba (bit-not ba 
                      (setq tba (make-array 8 
                                            :element-type 'bit))))
 → #*00010101
- (equal rba tba) *→ true*
+ (equal rba tba) → T
  (bit-xor #*1100 #*1010) → #*0110
 
 ```
@@ -3536,9 +3536,9 @@ Error: non-numeric value: A
 ```lisp
  (bit-vector-p (make-array 6 
                            :element-type 'bit 
-                           :fill-pointer t)) *→ true*
- (bit-vector-p #*) *→ true*
- (bit-vector-p (make-array 6)) *→ false*
+                           :fill-pointer t)) → T
+ (bit-vector-p #*) → T
+ (bit-vector-p (make-array 6)) → NIL
 
 ```
 
@@ -3550,8 +3550,8 @@ Error: non-numeric value: A
 
 
 ```lisp
- (simple-bit-vector-p (make-array 6)) *→ false*
- (simple-bit-vector-p #*) *→ true*
+ (simple-bit-vector-p (make-array 6)) → NIL
+ (simple-bit-vector-p #*) → T
 
 ```
 
@@ -3563,40 +3563,40 @@ Error: non-numeric value: A
 
 
 ```lisp
- (char= #\\d #\\d) *→ true*
- (char= #\\A #\\a) *→ false*
- (char= #\\d #\\x) *→ false*
- (char= #\\d #\\D) *→ false*
- (char/= #\\d #\\d) *→ false*
- (char/= #\\d #\\x) *→ true*
- (char/= #\\d #\\D) *→ true*
- (char= #\\d #\\d #\\d #\\d) *→ true*
- (char/= #\\d #\\d #\\d #\\d) *→ false*
- (char= #\\d #\\d #\\x #\\d) *→ false*
- (char/= #\\d #\\d #\\x #\\d) *→ false*
- (char= #\\d #\\y #\\x #\\c) *→ false*
- (char/= #\\d #\\y #\\x #\\c) *→ true*
- (char= #\\d #\\c #\\d) *→ false*
- (char/= #\\d #\\c #\\d) *→ false*
- (char< #\\d #\\x) *→ true*
- (char<= #\\d #\\x) *→ true*
- (char< #\\d #\\d) *→ false*
- (char<= #\\d #\\d) *→ true*
- (char< #\\a #\\e #\\y #\\z) *→ true*
- (char<= #\\a #\\e #\\y #\\z) *→ true*
- (char< #\\a #\\e #\\e #\\y) *→ false*
- (char<= #\\a #\\e #\\e #\\y) *→ true*
- (char> #\\e #\\d) *→ true*
- (char>= #\\e #\\d) *→ true*
- (char> #\\d #\\c #\\b #\\a) *→ true*
- (char>= #\\d #\\c #\\b #\\a) *→ true*
- (char> #\\d #\\d #\\c #\\a) *→ false*
- (char>= #\\d #\\d #\\c #\\a) *→ true*
- (char> #\\e #\\d #\\b #\\c #\\a) *→ false*
- (char>= #\\e #\\d #\\b #\\c #\\a) *→ false*
+ (char= #\\d #\\d) → T
+ (char= #\\A #\\a) → NIL
+ (char= #\\d #\\x) → NIL
+ (char= #\\d #\\D) → NIL
+ (char/= #\\d #\\d) → NIL
+ (char/= #\\d #\\x) → T
+ (char/= #\\d #\\D) → T
+ (char= #\\d #\\d #\\d #\\d) → T
+ (char/= #\\d #\\d #\\d #\\d) → NIL
+ (char= #\\d #\\d #\\x #\\d) → NIL
+ (char/= #\\d #\\d #\\x #\\d) → NIL
+ (char= #\\d #\\y #\\x #\\c) → NIL
+ (char/= #\\d #\\y #\\x #\\c) → T
+ (char= #\\d #\\c #\\d) → NIL
+ (char/= #\\d #\\c #\\d) → NIL
+ (char< #\\d #\\x) → T
+ (char<= #\\d #\\x) → T
+ (char< #\\d #\\d) → NIL
+ (char<= #\\d #\\d) → T
+ (char< #\\a #\\e #\\y #\\z) → T
+ (char<= #\\a #\\e #\\y #\\z) → T
+ (char< #\\a #\\e #\\e #\\y) → NIL
+ (char<= #\\a #\\e #\\e #\\y) → T
+ (char> #\\e #\\d) → T
+ (char>= #\\e #\\d) → T
+ (char> #\\d #\\c #\\b #\\a) → T
+ (char>= #\\d #\\c #\\b #\\a) → T
+ (char> #\\d #\\d #\\c #\\a) → NIL
+ (char>= #\\d #\\d #\\c #\\a) → T
+ (char> #\\e #\\d #\\b #\\c #\\a) → NIL
+ (char>= #\\e #\\d #\\b #\\c #\\a) → NIL
  (char> #\\z #\\A) → \term{implementation-dependent}
  (char> #\\Z #\\a) → \term{implementation-dependent}
- (char-equal #\\A #\\a) *→ true*
+ (char-equal #\\A #\\a) → T
  (stable-sort (list #\\b #\\A #\\B #\\a #\\c #\\C) #'char-lessp)
 → (#\\A #\\a #\\b #\\B #\\c #\\C)
  (stable-sort (list #\\b #\\A #\\B #\\a #\\c #\\C) #'char<)
@@ -3627,14 +3627,14 @@ Error: non-numeric value: A
 
 
 ```lisp
- (characterp #\\a) *→ true*
- (characterp 'a) *→ false*
- (characterp "a") *→ false*
- (characterp 65.) *→ false*
- (characterp #\\Newline) *→ true*
+ (characterp #\\a) → T
+ (characterp 'a) → NIL
+ (characterp "a") → NIL
+ (characterp 65.) → NIL
+ (characterp #\\Newline) → T
  ;; This next example presupposes an implementation 
  ;; in which #\\Rubout is an implementation-defined character.
- (characterp #\\Rubout) *→ true*
+ (characterp #\\Rubout) → T
 
 ```
 
@@ -3646,9 +3646,9 @@ Error: non-numeric value: A
 
 
 ```lisp
- (alpha-char-p #\\a) *→ true*
- (alpha-char-p #\\5) *→ false*
- (alpha-char-p #\\Newline) *→ false*
+ (alpha-char-p #\\a) → T
+ (alpha-char-p #\\5) → NIL
+ (alpha-char-p #\\Newline) → NIL
  ;; This next example presupposes an implementation
  ;; in which #\\\alfa is a defined character.
  (alpha-char-p #\\\alfa) → \term{implementation-dependent}
@@ -3657,10 +3657,10 @@ Error: non-numeric value: A
 
 
 ```lisp
- (alphanumericp #\\Z) *→ true*
- (alphanumericp #\\9) *→ true*
- (alphanumericp #\\Newline) *→ false*
- (alphanumericp #\\#) *→ false*
+ (alphanumericp #\\Z) → T
+ (alphanumericp #\\9) → T
+ (alphanumericp #\\Newline) → NIL
+ (alphanumericp #\\#) → NIL
 
 ```
 
@@ -3675,11 +3675,11 @@ Error: non-numeric value: A
 ```lisp
  (digit-char 0) → #\\0
  (digit-char 10 11) → #\\A
- (digit-char 10 10) *→ false*
+ (digit-char 10 10) → NIL
  (digit-char 7) → #\\7
- (digit-char 12) *→ false*
+ (digit-char 12) → NIL
  (digit-char 12 16) → #\\C  ;not #\\c
- (digit-char 6 2) *→ false*
+ (digit-char 6 2) → NIL
  (digit-char 1 2) → #\\1
 
 ```
@@ -3687,9 +3687,9 @@ Error: non-numeric value: A
 
 ```lisp
  (digit-char-p #\\5)    → 5
- (digit-char-p #\\5 2)  *→ false*
- (digit-char-p #\\A)    *→ false*
- (digit-char-p #\\a)    *→ false*
+ (digit-char-p #\\5 2)  → NIL
+ (digit-char-p #\\A)    → NIL
+ (digit-char-p #\\a)    → NIL
  (digit-char-p #\\A 11) → 10
  (digit-char-p #\\a 11) → 10
  (mapcar #'(lambda (radix) 
@@ -3706,20 +3706,20 @@ Error: non-numeric value: A
 
 
 ```lisp
- (graphic-char-p #\\G) *→ true*
- (graphic-char-p #\\#) *→ true*
- (graphic-char-p #\\Space) *→ true*
- (graphic-char-p #\\Newline) *→ false*
+ (graphic-char-p #\\G) → T
+ (graphic-char-p #\\#) → T
+ (graphic-char-p #\\Space) → T
+ (graphic-char-p #\\Newline) → NIL
 
 ```
 
 
 ```lisp
- (standard-char-p #\\Space) *→ true*
- (standard-char-p #\\~) *→ true*
+ (standard-char-p #\\Space) → T
+ (standard-char-p #\\~) → T
  ;; This next example presupposes an implementation
  ;; in which #\\Bell is a defined character.
- (standard-char-p #\\Bell) *→ false*
+ (standard-char-p #\\Bell) → NIL
 
 ```
 
@@ -3750,15 +3750,15 @@ Error: non-numeric value: A
 
 
 ```lisp
- (upper-case-p #\\A) *→ true*
- (upper-case-p #\\a) *→ false*
- (both-case-p #\\a) *→ true*
- (both-case-p #\\5) *→ false*
- (lower-case-p #\\5) *→ false*
- (upper-case-p #\\5) *→ false*
+ (upper-case-p #\\A) → T
+ (upper-case-p #\\a) → NIL
+ (both-case-p #\\a) → T
+ (both-case-p #\\5) → NIL
+ (lower-case-p #\\5) → NIL
+ (upper-case-p #\\5) → NIL
  ;; This next example presupposes an implementation 
  ;; in which #\\Bell is an implementation-defined character.
- (lower-case-p #\\Bell) *→ false*
+ (lower-case-p #\\Bell) → NIL
 
 ```
 
@@ -3822,7 +3822,7 @@ Error: non-numeric value: A
 (name-char "space") → #\\Space
 (name-char "Space") → #\\Space
 (let ((x (char-name #\\a)))
-  (or (not x) (eql (name-char x) #\\a))) *→ true*
+  (or (not x) (eql (name-char x) #\\a))) → T
 
 ```
 
@@ -5084,14 +5084,14 @@ COMPUTE-POWER-OF-2
 
 
 ```lisp
- (consp nil) *→ false*
- (consp (cons 1 2)) *→ true*
+ (consp nil) → NIL
+ (consp (cons 1 2)) → T
 
 ```
 
 
 ```lisp
- (consp '()) \EQ (consp 'nil) *→ false*
+ (consp '()) \EQ (consp 'nil) → NIL
 
 ```
 
@@ -5103,11 +5103,11 @@ COMPUTE-POWER-OF-2
 
 
 ```lisp
- (atom 'sss) *→ true*
- (atom (cons 1 2)) *→ false*
- (atom nil) *→ true*
- (atom '()) *→ true*
- (atom 3) *→ true*
+ (atom 'sss) → T
+ (atom (cons 1 2)) → NIL
+ (atom nil) → T
+ (atom '()) → T
+ (atom 3) → T
 
 ```
 
@@ -5158,10 +5158,10 @@ COMPUTE-POWER-OF-2
  (setq copy-as-list (copy-list object))
  (setq copy-as-alist (copy-alist object))
  (setq copy-as-tree (copy-tree object))
- (eq object object-too) *→ true*
- (eq copy-as-tree object) *→ false*
- (eql copy-as-tree object) *→ false*
- (equal copy-as-tree object) *→ true*
+ (eq object object-too) → T
+ (eq copy-as-tree object) → NIL
+ (eql copy-as-tree object) → NIL
+ (equal copy-as-tree object) → T
  (setf (first (cdr (second object))) "a"
        (car (second object)) "two"
        (car object) '(one . 1)) → (ONE . 1)
@@ -5264,12 +5264,12 @@ COMPUTE-POWER-OF-2
 ```lisp
  (setq tree1 '(1 (1 2))
        tree2 '(1 (1 2))) → (1 (1 2))
- (tree-equal tree1 tree2) *→ true*
- (eql tree1 tree2) *→ false*
+ (tree-equal tree1 tree2) → T
+ (eql tree1 tree2) → NIL
  (setq tree1 '('a ('b 'c))
        tree2 '('a ('b 'c))) → ('a ('b 'c)) 
 → ((QUOTE A) ((QUOTE B) (QUOTE C)))
- (tree-equal tree1 tree2 :test 'eq) *→ true*
+ (tree-equal tree1 tree2 :test 'eq) → T
 
 ```
 
@@ -5278,9 +5278,9 @@ COMPUTE-POWER-OF-2
  (setq lst (list 1 (list 2 3))) → (1 (2 3))
  (setq slst lst) → (1 (2 3))
  (setq clst (copy-list lst)) → (1 (2 3))
- (eq slst lst) *→ true*
- (eq clst lst) *→ false*
- (equal clst lst) *→ true*
+ (eq slst lst) → T
+ (eq clst lst) → NIL
+ (equal clst lst) → T
  (rplaca lst "one") → ("one" (2 3))
  slst → ("one" (2 3))
  clst → (1 (2 3))
@@ -5302,7 +5302,7 @@ COMPUTE-POWER-OF-2
  (list* a 2) → (1 . 2)
  (list) → NIL ;\ie ()
  (setq a '(1 2)) → (1 2)
- (eq a (list* a)) *→ true*
+ (eq a (list* a)) → T
  (list 3 4 'a (car '(b . c)) (+ 6 -2)) → (3 4 A B 4)
  (list* 'a 'b 'c 'd) \EQ (cons 'a (cons 'b (cons 'c 'd))) → (A B C . D)
  (list* 'a 'b 'c '(d e f)) → (A B C D E F)
@@ -5353,10 +5353,10 @@ COMPUTE-POWER-OF-2
 
 
 ```lisp
- (listp nil) *→ true*
- (listp (cons 1 2)) *→ true*
- (listp (make-array 6)) *→ false*
- (listp t) *→ false*
+ (listp nil) → T
+ (listp (cons 1 2)) → T
+ (listp (make-array 6)) → NIL
+ (listp t) → NIL
 
 ```
 
@@ -5478,9 +5478,9 @@ COMPUTE-POWER-OF-2
 
 
 ```lisp
- (endp nil) *→ true*
- (endp '(1 2)) *→ false*
- (endp (cddr '(1 2))) *→ true*
+ (endp nil) → T
+ (endp '(1 2)) → NIL
+ (endp (cddr '(1 2))) → T
 
 ```
 
@@ -5771,12 +5771,12 @@ COMPUTE-POWER-OF-2
 
 
 ```lisp
-%  (let ((x '(b c))) (tailp x (cons 'a x))) *→ true*
-%  (tailp '(x y) '(a b c)) *→ false*
-%  (tailp '() '(a b c)) *→ true*
-%  (tailp 3 '(a b c)) *→ false*
-%  (tailp 3 '(a b c . 3)) *→ true*
-%  (tailp '(x y) '(a b c . 3)) *→ false*
+%  (let ((x '(b c))) (tailp x (cons 'a x))) → T
+%  (tailp '(x y) '(a b c)) → NIL
+%  (tailp '() '(a b c)) → T
+%  (tailp 3 '(a b c)) → NIL
+%  (tailp 3 '(a b c . 3)) → T
+%  (tailp '(x y) '(a b c . 3)) → NIL
 % 
 ```
 
@@ -6030,7 +6030,7 @@ COMPUTE-POWER-OF-2
  (setq *indicator-list* '(prop1 prop2)) → (PROP1 PROP2)
  (getf x 'prop1) → NIL
  (setf (getf x 'prop1) 'val1) → VAL1
- (eq (getf x 'prop1) 'val1) *→ true*
+ (eq (getf x 'prop1) 'val1) → T
  (get-properties x *indicator-list*) → PROP1, VAL1, (PROP1 VAL1)
  x → (PROP1 VAL1)
 
@@ -6043,7 +6043,7 @@ COMPUTE-POWER-OF-2
  (getf x 'prop1 7) → 7
  (getf x 'prop1) → NIL
  (setf (getf x 'prop1) 'val1) → VAL1
- (eq (getf x 'prop1) 'val1) *→ true*
+ (eq (getf x 'prop1) 'val1) → T
  (getf x 'prop1) → VAL1
  (getf x 'prop1 7) → VAL1
  x → (PROP1 VAL1)
@@ -6051,7 +6051,7 @@ COMPUTE-POWER-OF-2
 ;; Examples of implementation variation permitted.
  (setq foo (list 'a 'b 'c 'd 'e 'f)) → (A B C D E F)
  (setq bar (cddr foo)) → (C D E F)
- (remf foo 'c) *→ true*
+ (remf foo 'c) → T
  foo → (A B E F)
  bar
 → (C D E F)
@@ -6074,8 +6074,8 @@ COMPUTE-POWER-OF-2
 ```lisp
  (setq x (cons () ())) → (NIL)
  (setf (getf (car x) 'prop1) 'val1) → VAL1
- (remf (car x) 'prop1) *→ true*
- (remf (car x) 'prop1) *→ false*
+ (remf (car x) 'prop1) → T
+ (remf (car x) 'prop1) → NIL
 
 ```
 
@@ -6199,12 +6199,12 @@ COMPUTE-POWER-OF-2
 
 ```lisp
  (setq cosmos '(1 "a" (1 2))) → (1 "a" (1 2))
- (subsetp '(1) cosmos) *→ true*
- (subsetp '((1 2)) cosmos) *→ false*
- (subsetp '((1 2)) cosmos :test 'equal) *→ true*
- (subsetp '(1 "A") cosmos :test #'equalp) *→ true*
- (subsetp '((1) (2)) '((1) (2))) *→ false*
- (subsetp '((1) (2)) '((1) (2)) :key #'car) *→ true*
+ (subsetp '(1) cosmos) → T
+ (subsetp '((1 2)) cosmos) → NIL
+ (subsetp '((1 2)) cosmos :test 'equal) → T
+ (subsetp '(1 "A") cosmos :test #'equalp) → T
+ (subsetp '((1) (2)) '((1) (2))) → NIL
+ (subsetp '((1) (2)) '((1) (2)) :key #'car) → T
 
 ```
 
@@ -6283,7 +6283,7 @@ COMPUTE-POWER-OF-2
  (let ((then (get-universal-time))
        (now  (progn (sleep 10) (get-universal-time))))
    (>= (- now then) 10))
-*→ true*
+→ T
 
 ```
 
@@ -6351,7 +6351,7 @@ COMPUTE-POWER-OF-2
  (defun f (a) (1+ a)) → F
  (eq (symbol-function 'f)
      (progn (disassemble 'f)
-            (symbol-function 'f))) *→ true*
+            (symbol-function 'f))) → T
 
 ```
 
@@ -6462,7 +6462,7 @@ COMPUTE-POWER-OF-2
 
 
 ```lisp
- (pathnamep (user-homedir-pathname)) *→ true*
+ (pathnamep (user-homedir-pathname)) → T
 
 ```
 
@@ -6505,7 +6505,7 @@ COMPUTE-POWER-OF-2
  (defun foo () "bar") → FOO
  (compiled-function-p #'foo) → \term{implementation-dependent}
  (compile 'foo) → FOO 
- (compiled-function-p #'foo) *→ true*
+ (compiled-function-p #'foo) → T
  (setf (symbol-function 'foo)
        (compile nil '(lambda () "replaced"))) → #<Compiled-Function>
  (foo) → "replaced"
@@ -7017,7 +7017,7 @@ COMPUTE-POWER-OF-2
 
 ```lisp
  (defmacro macfun (x) '(macro-function 'macfun)) → MACFUN 
- (not (macro-function 'macfun)) *→ false* 
+ (not (macro-function 'macfun)) → NIL 
 
 ```
 
@@ -7289,7 +7289,7 @@ thing3 → THREE
        (declare (dynamic-extent i))
        (setf (aref a i) (random (+ i 1))))
      (aref a m))) → ZAP
- (< (zap 5 3) 3) *→ true*
+ (< (zap 5 3) 3) → T
 
 ```
 
@@ -7637,22 +7637,22 @@ thing3 → THREE
 
 
 ```lisp
- (special-operator-p 'if) *→ true*
- (special-operator-p 'car) *→ false*
- (special-operator-p 'one) *→ false*
+ (special-operator-p 'if) → T
+ (special-operator-p 'car) → NIL
+ (special-operator-p 'one) → NIL
 
 ```
 
 
 ```lisp
- (constantp 1) *→ true*
- (constantp 'temp) *→ false*
- (constantp ''temp)) *→ true*
+ (constantp 1) → T
+ (constantp 'temp) → NIL
+ (constantp ''temp)) → T
  (defconstant this-is-a-constant 'never-changing) → THIS-IS-A-CONSTANT 
- (constantp 'this-is-a-constant) *→ true*
- (constantp "temp") *→ true*
+ (constantp 'this-is-a-constant) → T
+ (constantp "temp") → T
  (setq a 6) → 6 
- (constantp a) *→ true*
+ (constantp a) → T
  (constantp '(sin pi)) → \term{implementation-dependent}
  (constantp '(car '(x))) → \term{implementation-dependent}
  (constantp '(eql x x)) → \term{implementation-dependent}
@@ -7737,11 +7737,11 @@ thing3 → THREE
 → NIL
  (setq p (probe-file "delete-me.text")) → #P"R:>fred>delete-me.text.1"
  (delete-file p) → T
- (probe-file "delete-me.text") *→ false*
+ (probe-file "delete-me.text") → NIL
  (with-open-file (s "delete-me.text" :direction :output :if-exists :error)
    (delete-file s))
 → T
- (probe-file "delete-me.text") *→ false*
+ (probe-file "delete-me.text") → NIL
 
 ```
 
@@ -7818,24 +7818,24 @@ thing3 → THREE
 
 
 ```lisp
- (fboundp 'car) *→ true*
- (fboundp 'nth-value) *→ false*
- (fboundp 'with-open-file) *→ true*
- (fboundp 'unwind-protect) *→ true*
+ (fboundp 'car) → T
+ (fboundp 'nth-value) → NIL
+ (fboundp 'with-open-file) → T
+ (fboundp 'unwind-protect) → T
  (defun my-function (x) x) → MY-FUNCTION
- (fboundp 'my-function) *→ true*
+ (fboundp 'my-function) → T
  (let ((saved-definition (symbol-function 'my-function)))
    (unwind-protect (progn (fmakunbound 'my-function)
                           (fboundp 'my-function))
      (setf (symbol-function 'my-function) saved-definition)))
-*→ false*
- (fboundp 'my-function) *→ true*
+→ NIL
+ (fboundp 'my-function) → T
  (defmacro my-macro (x) `',x) → MY-MACRO
- (fboundp 'my-macro) *→ true*
+ (fboundp 'my-macro) → T
  (fmakunbound 'my-function) → MY-FUNCTION
- (fboundp 'my-function) *→ false*
+ (fboundp 'my-function) → NIL
  (flet ((my-function (x) x))
-   (fboundp 'my-function)) *→ false*
+   (fboundp 'my-function)) → NIL
 
 ```
 
@@ -7848,11 +7848,11 @@ thing3 → THREE
 
 ```lisp
 (defun add-some (x) (+ x 19)) → ADD-SOME
- (fboundp 'add-some) *→ true*
+ (fboundp 'add-some) → T
  (flet ((add-some (x) (+ x 37)))
     (fmakunbound 'add-some)
     (add-some 1)) → 38
- (fboundp 'add-some) *→ false*
+ (fboundp 'add-some) → NIL
 
 ```
 
@@ -7893,11 +7893,11 @@ thing3 → THREE
  (flet ((dummy-function () 'shadow)) 
       (funcall #'dummy-function)) → SHADOW 
  (eq (funcall #'dummy-function) (funcall 'dummy-function))
-*→ true* 
+→ T 
  (flet ((dummy-function () 'shadow))
    (eq (funcall #'dummy-function)
        (funcall 'dummy-function)))
-*→ false* 
+→ NIL 
 
  (defun recursive-times (k n)
    (labels ((temp (n) 
@@ -8037,15 +8037,15 @@ thing3 → THREE
 
 
 ```lisp
- (functionp 'append) *→ false*
- (functionp #'append) *→ true*
- (functionp (symbol-function 'append)) *→ true*
- (flet ((f () 1)) (functionp #'f)) *→ true*
- (functionp (compile nil '(lambda () 259))) *→ true*
- (functionp nil) *→ false*
- (functionp 12) *→ false*
- (functionp '(lambda (x) (* x x))) *→ false*
- (functionp #'(lambda (x) (* x x))) *→ true*
+ (functionp 'append) → NIL
+ (functionp #'append) → T
+ (functionp (symbol-function 'append)) → T
+ (flet ((f () 1)) (functionp #'f)) → T
+ (functionp (compile nil '(lambda () 259))) → T
+ (functionp nil) → NIL
+ (functionp 12) → NIL
+ (functionp '(lambda (x) (* x x))) → NIL
+ (functionp #'(lambda (x) (* x x))) → T
 
 ```
 
@@ -8059,18 +8059,18 @@ thing3 → THREE
 ```lisp
  (defun f (x) x) → F
  (compiled-function-p #'f)
-*→ false*
+→ NIL
 \OV true
- (compiled-function-p 'f) *→ false*
+ (compiled-function-p 'f) → NIL
  (compile 'f) → F
- (compiled-function-p #'f) *→ true*
- (compiled-function-p 'f) *→ false*
+ (compiled-function-p #'f) → T
+ (compiled-function-p 'f) → NIL
  (compiled-function-p (compile nil '(lambda (x) x)))
-*→ true*
+→ T
  (compiled-function-p #'(lambda (x) x))
-*→ false*
+→ NIL
 \OV true
- (compiled-function-p '(lambda (x) x)) *→ false*
+ (compiled-function-p '(lambda (x) x)) → NIL
 
 ```
 
@@ -8100,7 +8100,7 @@ thing3 → THREE
  (defconstant this-is-a-constant 'never-changing "for a test") → THIS-IS-A-CONSTANT
 this-is-a-constant → NEVER-CHANGING
  (documentation 'this-is-a-constant 'variable) → "for a test"
- (constantp 'this-is-a-constant) *→ true*
+ (constantp 'this-is-a-constant) → T
 
 ```
 
@@ -8108,14 +8108,14 @@ this-is-a-constant → NEVER-CHANGING
 ```lisp
  (defparameter *p* 1) → *P*
  *p* → 1
- (constantp '*p*) *→ false*
+ (constantp '*p*) → NIL
  (setq *p* 2) → 2
  (defparameter *p* 3) → *P*
  *p* → 3
 
  (defvar *v* 1) → *V*
  *v* → 1
- (constantp '*v*) *→ false*
+ (constantp '*v*) → NIL
  (setq *v* 2) → 2
  (defvar *v* 3) → *V*
  *v* → 2
@@ -8693,7 +8693,7 @@ Assuming *x* is not globally special,
 
 ```lisp
  t → T 
- (eq t 't) *→ true*
+ (eq t 't) → T
  (find-class 't) → #<CLASS T 610703333>
  (case 'a (a 1) (t 2)) → 1
  (case 'b (a 1) (t 2)) → 2
@@ -8705,104 +8705,104 @@ Assuming *x* is not globally special,
 
 
 ```lisp
- (eq 'a 'b) *→ false*
- (eq 'a 'a) *→ true*
+ (eq 'a 'b) → NIL
+ (eq 'a 'a) → T
  (eq 3 3)
-*→ true*
+→ T
 \OV false
- (eq 3 3.0) *→ false*
+ (eq 3 3.0) → NIL
  (eq 3.0 3.0)
-*→ true*
+→ T
 \OV false
  (eq #c(3 -4) #c(3 -4))
-*→ true*
+→ T
 \OV false
- (eq #c(3 -4.0) #c(3 -4)) *→ false*
- (eq (cons 'a 'b) (cons 'a 'c)) *→ false*
- (eq (cons 'a 'b) (cons 'a 'b)) *→ false*
+ (eq #c(3 -4.0) #c(3 -4)) → NIL
+ (eq (cons 'a 'b) (cons 'a 'c)) → NIL
+ (eq (cons 'a 'b) (cons 'a 'b)) → NIL
  (eq '(a . b) '(a . b))
-*→ true*
+→ T
 \OV false
- (progn (setq x (cons 'a 'b)) (eq x x)) *→ true*
- (progn (setq x '(a . b)) (eq x x)) *→ true*
+ (progn (setq x (cons 'a 'b)) (eq x x)) → T
+ (progn (setq x '(a . b)) (eq x x)) → T
  (eq #\\A #\\A)
-*→ true*
+→ T
 \OV false
- (let ((x "Foo")) (eq x x)) *→ true*
+ (let ((x "Foo")) (eq x x)) → T
  (eq "Foo" "Foo")
-*→ true*
+→ T
 \OV false
- (eq "Foo" (copy-seq "Foo")) *→ false*
- (eq "FOO" "foo") *→ false*
- (eq "string-seq" (copy-seq "string-seq")) *→ false*
+ (eq "Foo" (copy-seq "Foo")) → NIL
+ (eq "FOO" "foo") → NIL
+ (eq "string-seq" (copy-seq "string-seq")) → NIL
  (let ((x 5)) (eq x x))
-*→ true*
+→ T
 \OV false
 
 ```
 
 
 ```lisp
- (eql 'a 'b) *→ false*
- (eql 'a 'a) *→ true*
- (eql 3 3) *→ true*
- (eql 3 3.0) *→ false*
- (eql 3.0 3.0) *→ true*
- (eql #c(3 -4) #c(3 -4)) *→ true*
- (eql #c(3 -4.0) #c(3 -4)) *→ false*
- (eql (cons 'a 'b) (cons 'a 'c)) *→ false*
- (eql (cons 'a 'b) (cons 'a 'b)) *→ false*
+ (eql 'a 'b) → NIL
+ (eql 'a 'a) → T
+ (eql 3 3) → T
+ (eql 3 3.0) → NIL
+ (eql 3.0 3.0) → T
+ (eql #c(3 -4) #c(3 -4)) → T
+ (eql #c(3 -4.0) #c(3 -4)) → NIL
+ (eql (cons 'a 'b) (cons 'a 'c)) → NIL
+ (eql (cons 'a 'b) (cons 'a 'b)) → NIL
  (eql '(a . b) '(a . b))
-*→ true*
+→ T
 \OV false
- (progn (setq x (cons 'a 'b)) (eql x x)) *→ true*
- (progn (setq x '(a . b)) (eql x x)) *→ true*
- (eql #\\A #\\A) *→ true*
+ (progn (setq x (cons 'a 'b)) (eql x x)) → T
+ (progn (setq x '(a . b)) (eql x x)) → T
+ (eql #\\A #\\A) → T
  (eql "Foo" "Foo")
-*→ true*
+→ T
 \OV false
- (eql "Foo" (copy-seq "Foo")) *→ false*
- (eql "FOO" "foo") *→ false*
+ (eql "Foo" (copy-seq "Foo")) → NIL
+ (eql "FOO" "foo") → NIL
 
 ```
 
 
 ```lisp
- (equal 'a 'b) *→ false*
- (equal 'a 'a) *→ true*
- (equal 3 3) *→ true*
- (equal 3 3.0) *→ false*
- (equal 3.0 3.0) *→ true*
- (equal #c(3 -4) #c(3 -4)) *→ true*
- (equal #c(3 -4.0) #c(3 -4)) *→ false*
- (equal (cons 'a 'b) (cons 'a 'c)) *→ false*
- (equal (cons 'a 'b) (cons 'a 'b)) *→ true*
- (equal #\\A #\\A) *→ true*
- (equal #\\A #\\a) *→ false*
- (equal "Foo" "Foo") *→ true*
- (equal "Foo" (copy-seq "Foo")) *→ true*
- (equal "FOO" "foo") *→ false*
- (equal "This-string" "This-string") *→ true*
- (equal "This-string" "this-string") *→ false*
+ (equal 'a 'b) → NIL
+ (equal 'a 'a) → T
+ (equal 3 3) → T
+ (equal 3 3.0) → NIL
+ (equal 3.0 3.0) → T
+ (equal #c(3 -4) #c(3 -4)) → T
+ (equal #c(3 -4.0) #c(3 -4)) → NIL
+ (equal (cons 'a 'b) (cons 'a 'c)) → NIL
+ (equal (cons 'a 'b) (cons 'a 'b)) → T
+ (equal #\\A #\\A) → T
+ (equal #\\A #\\a) → NIL
+ (equal "Foo" "Foo") → T
+ (equal "Foo" (copy-seq "Foo")) → T
+ (equal "FOO" "foo") → NIL
+ (equal "This-string" "This-string") → T
+ (equal "This-string" "this-string") → NIL
 
 ```
 
 
 ```lisp
- (equalp 'a 'b) *→ false*
- (equalp 'a 'a) *→ true*
- (equalp 3 3) *→ true*
- (equalp 3 3.0) *→ true*
- (equalp 3.0 3.0) *→ true*
- (equalp #c(3 -4) #c(3 -4)) *→ true*
- (equalp #c(3 -4.0) #c(3 -4)) *→ true*
- (equalp (cons 'a 'b) (cons 'a 'c)) *→ false*
- (equalp (cons 'a 'b) (cons 'a 'b)) *→ true*
- (equalp #\\A #\\A) *→ true*
- (equalp #\\A #\\a) *→ true*
- (equalp "Foo" "Foo") *→ true*
- (equalp "Foo" (copy-seq "Foo")) *→ true*
- (equalp "FOO" "foo") *→ true*
+ (equalp 'a 'b) → NIL
+ (equalp 'a 'a) → T
+ (equalp 3 3) → T
+ (equalp 3 3.0) → T
+ (equalp 3.0 3.0) → T
+ (equalp #c(3 -4) #c(3 -4)) → T
+ (equalp #c(3 -4.0) #c(3 -4)) → T
+ (equalp (cons 'a 'b) (cons 'a 'c)) → NIL
+ (equalp (cons 'a 'b) (cons 'a 'b)) → T
+ (equalp #\\A #\\A) → T
+ (equalp #\\A #\\a) → T
+ (equalp "Foo" "Foo") → T
+ (equalp "Foo" (copy-seq "Foo")) → T
+ (equalp "FOO" "foo") → T
 
 ```
 
@@ -8815,9 +8815,9 @@ Assuming *x* is not globally special,
                             :initial-contents '(1 1 1 3 5 7 2 6)
                             :fill-pointer 6))
 → #(1 1 1 3 5 7)
- (equalp array1 array2) *→ true*
+ (equalp array1 array2) → T
  (setq vector1 (vector 1 1 1 3 5 7)) → #(1 1 1 3 5 7)
- (equalp array1 vector1) *→ true* 
+ (equalp array1 vector1) → T 
 
 ```
 
@@ -8836,10 +8836,10 @@ Assuming *x* is not globally special,
 
 
 ```lisp
- (funcall (complement #'zerop) 1) *→ true*
- (funcall (complement #'characterp) #\\A) *→ false*
- (funcall (complement #'member) 'a '(a b c)) *→ false*
- (funcall (complement #'member) 'd '(a b c)) *→ true*
+ (funcall (complement #'zerop) 1) → T
+ (funcall (complement #'characterp) #\\A) → NIL
+ (funcall (complement #'member) 'a '(a b c)) → NIL
+ (funcall (complement #'member) 'd '(a b c)) → T
 
 ```
 
@@ -8882,10 +8882,10 @@ Assuming *x* is not globally special,
 
 
 ```lisp
- (every #'characterp "abc") *→ true*
- (some #'= '(1 2 3 4 5) '(5 4 3 2 1)) *→ true*
- (notevery #'< '(1 2 3 4) '(5 6 7 8) '(9 10 11 12)) *→ false*
- (notany #'> '(1 2 3 4) '(5 6 7 8) '(9 10 11 12)) *→ true* 
+ (every #'characterp "abc") → T
+ (some #'= '(1 2 3 4 5) '(5 4 3 2 1)) → T
+ (notevery #'< '(1 2 3 4) '(5 6 7 8) '(9 10 11 12)) → NIL
+ (notany #'> '(1 2 3 4) '(5 6 7 8) '(9 10 11 12)) → T 
 
 ```
 
@@ -8909,10 +8909,10 @@ Assuming *x* is not globally special,
 ```lisp
  (setq temp1 1 temp2 1 temp3 1) → 1 
  (and (incf temp1) (incf temp2) (incf temp3)) → 2 
- (and (eql 2 temp1) (eql 2 temp2) (eql 2 temp3)) *→ true*
+ (and (eql 2 temp1) (eql 2 temp2) (eql 2 temp3)) → T
  (decf temp3) → 1 
  (and (decf temp1) (decf temp2) (eq temp3 'nil) (decf temp3)) → NIL 
- (and (eql temp1 temp2) (eql temp2 temp3)) *→ true*
+ (and (eql temp1 temp2) (eql temp2 temp3)) → T
  (and) → T 
 
 ```
@@ -9716,9 +9716,9 @@ Assuming *x* is not globally special,
 
 ```lisp
  (setq table (make-hash-table)) → #<HASH-TABLE EQL 0/120 32511220>
- (hash-table-p table) *→ true*
- (hash-table-p 37) *→ false*
- (hash-table-p '((a . 1) (b . 2))) *→ false*
+ (hash-table-p table) → T
+ (hash-table-p 37) → NIL
+ (hash-table-p '((a . 1) (b . 2))) → NIL
 
 ```
 
@@ -9797,9 +9797,9 @@ Assuming *x* is not globally special,
  (setq table (make-hash-table)) → #<HASH-TABLE EQL 0/120 32115666>
  (setf (gethash 100 table) "C") → "C"
  (gethash 100 table) → "C", true
- (remhash 100 table) *→ true*
+ (remhash 100 table) → T
  (gethash 100 table) → NIL, false
- (remhash 100 table) *→ false*
+ (remhash 100 table) → NIL
 
 ```
 
@@ -9877,8 +9877,8 @@ Assuming *x* is not globally special,
 
 
 ```lisp
- (= (sxhash (list 'list "ab")) (sxhash (list 'list "ab"))) *→ true*
- (= (sxhash "a") (sxhash (make-string 1 :initial-element #\\a))) *→ true*
+ (= (sxhash (list 'list "ab")) (sxhash (list 'list "ab"))) → T
+ (= (sxhash "a") (sxhash (make-string 1 :initial-element #\\a))) → T
  (let ((r (make-random-state)))
    (= (sxhash r) (sxhash (make-random-state r))))
 → \term{implementation-dependent}
@@ -10176,19 +10176,19 @@ a-vector → #(1 0 3 0)
 
 
 ```lisp
- (minusp -1) *→ true*
- (plusp 0) *→ false*
- (plusp least-positive-single-float) *→ true*
+ (minusp -1) → T
+ (plusp 0) → NIL
+ (plusp least-positive-single-float) → T
 
 ```
 
 
 ```lisp
- (zerop 0) *→ true*
- (zerop 1) *→ false*
- (zerop -0.0) *→ true*
- (zerop 0/100) *→ true*
- (zerop #c(0 0.0)) *→ true*
+ (zerop 0) → T
+ (zerop 1) → NIL
+ (zerop -0.0) → T
+ (zerop 0/100) → T
+ (zerop #c(0 0.0)) → T
 
 ```
 
@@ -10297,7 +10297,7 @@ a-vector → #(1 0 3 0)
  (- 55.55) → -55.55
  (- #c(3 -5)) → #C(-3 5)
  (- 0) → 0
- (eql (- 0.0) -0.0) *→ true*
+ (eql (- 0.0) -0.0) → T
  (- #c(100 45) #c(0 45)) → 100
  (- 10 1 2 3 4) → 0
 
@@ -10341,15 +10341,15 @@ a-vector → #(1 0 3 0)
  (abs #c(5.0 -5.0)) → 7.071068
  (abs #c(5 5)) → 7.071068
  (abs #c(3/5 4/5)) → 1 or approximately 1.0
- (eql (abs -0.0) -0.0) *→ true*
+ (eql (abs -0.0) -0.0) → T
 
 ```
 
 
 ```lisp
- (evenp 0) *→ true*
- (oddp 10000000000000000000000) *→ false*
- (oddp -1) *→ true*
+ (evenp 0) → T
+ (oddp 10000000000000000000000) → NIL
+ (oddp -1) → T
 
 ```
 
@@ -10532,7 +10532,7 @@ a-vector → #(1 0 3 0)
  (signum #c(0 33)) → #C(0.0 1.0)
  (signum #c(7.5 10.0)) → #C(0.6 0.8)
  (signum #c(0.0 -14.7)) → #C(0.0 -1.0)
- (eql (signum -0.0) -0.0) *→ true*
+ (eql (signum -0.0) -0.0) → T
 
 ```
 
@@ -10590,18 +10590,18 @@ a-vector → #(1 0 3 0)
 
 
 ```lisp
- (<= 0 (random 1000) 1000) *→ true*
+ (<= 0 (random 1000) 1000) → T
  (let ((state1 (make-random-state))
        (state2 (make-random-state)))
-   (= (random 1000 state1) (random 1000 state2))) *→ true*
+   (= (random 1000 state1) (random 1000 state2))) → T
 
 ```
 
 
 ```lisp
- (random-state-p *random-state*) *→ true*
- (random-state-p (make-random-state)) *→ true*
- (random-state-p 'test-function) *→ false*
+ (random-state-p *random-state*) → T
+ (random-state-p (make-random-state)) → T
+ (random-state-p 'test-function) → NIL
 
 ```
 
@@ -10613,7 +10613,7 @@ a-vector → #(1 0 3 0)
 
 
 ```lisp
- (random-state-p *random-state*) *→ true*
+ (random-state-p *random-state*) → T
  (setq snap-shot (make-random-state))
  ;; The series from any given point is random,
  ;; but if you backtrack to that point, you get the same series.
@@ -10632,11 +10632,11 @@ a-vector → #(1 0 3 0)
 
 
 ```lisp
- (numberp 12) *→ true*
- (numberp (expt 2 130)) *→ true*
- (numberp #c(5/3 7.2)) *→ true*
- (numberp nil) *→ false*
- (numberp (cons 1 2)) *→ false*
+ (numberp 12) → T
+ (numberp (expt 2 130)) → T
+ (numberp #c(5/3 7.2)) → T
+ (numberp nil) → NIL
+ (numberp (cons 1 2)) → NIL
 
 ```
 
@@ -10670,8 +10670,8 @@ a-vector → #(1 0 3 0)
 
 
 ```lisp
- (complexp 1.2d2) *→ false*
- (complexp #c(5/3 7.2)) *→ true*
+ (complexp 1.2d2) → NIL
+ (complexp #c(5/3 7.2)) → T
 
 
 ```
@@ -10719,10 +10719,10 @@ a-vector → #(1 0 3 0)
 
 
 ```lisp
- (realp 12) *→ true*
- (realp #c(5/3 7.2)) *→ false*
- (realp nil) *→ false*
- (realp (cons 1 2)) *→ false*
+ (realp 12) → T
+ (realp #c(5/3 7.2)) → NIL
+ (realp nil) → NIL
+ (realp (cons 1 2)) → NIL
 
 ```
 
@@ -10772,9 +10772,9 @@ a-vector → #(1 0 3 0)
 
 
 ```lisp
- (rationalp 12) *→ true*
- (rationalp 6/5) *→ true*
- (rationalp 1.212) *→ false*
+ (rationalp 12) → T
+ (rationalp 6/5) → T
+ (rationalp 1.212) → NIL
 
 ```
 
@@ -10830,10 +10830,10 @@ a-vector → #(1 0 3 0)
 
 
 ```lisp
- (integerp 1) *→ true*
- (integerp (expt 2 130)) *→ true*
- (integerp 6/5) *→ false*
- (integerp nil) *→ false*
+ (integerp 1) → T
+ (integerp (expt 2 130)) → T
+ (integerp 6/5) → NIL
+ (integerp nil) → NIL
 
 
 ```
@@ -10980,12 +10980,12 @@ a-vector → #(1 0 3 0)
 
 
 ```lisp
- (logbitp 1 1) *→ false*
- (logbitp 0 1) *→ true*
- (logbitp 3 10) *→ true*
- (logbitp 1000000 -1) *→ true*
- (logbitp 2 6) *→ true*
- (logbitp 0 6) *→ false*
+ (logbitp 1 1) → NIL
+ (logbitp 0 1) → T
+ (logbitp 3 10) → T
+ (logbitp 1000000 -1) → T
+ (logbitp 2 6) → T
+ (logbitp 0 6) → NIL
 
 ```
 
@@ -11020,10 +11020,10 @@ a-vector → #(1 0 3 0)
 
 
 ```lisp
- (logtest 1 7) *→ true*
- (logtest 1 2) *→ false*
- (logtest -2 -1) *→ true*
- (logtest 0 -1) *→ false*
+ (logtest 1 7) → T
+ (logtest 1 2) → NIL
+ (logtest -2 -1) → T
+ (logtest 0 -1) → NIL
 
 ```
 
@@ -11119,9 +11119,9 @@ a-vector → #(1 0 3 0)
 
 
 ```lisp
- (ldb-test (byte 4 1) 16) *→ true*
- (ldb-test (byte 3 1) 16) *→ false*
- (ldb-test (byte 3 2) 16) *→ true*
+ (ldb-test (byte 4 1) 16) → T
+ (ldb-test (byte 3 1) 16) → NIL
+ (ldb-test (byte 3 2) 16) → T
 
 ```
 
@@ -11212,16 +11212,16 @@ a-vector → #(1 0 3 0)
  (float 1/2) → 0.5
 → 1.0d0
 \OV 1.0
- (eql (float 1.0 1.0d0) 1.0d0) *→ true*
+ (eql (float 1.0 1.0d0) 1.0d0) → T
 
 ```
 
 
 ```lisp
- (floatp 1.2d2) *→ true*
- (floatp 1.212) *→ true*
- (floatp 1.2s2) *→ true*
- (floatp (expt 2 130)) *→ false*
+ (floatp 1.2d2) → T
+ (floatp 1.212) → T
+ (floatp 1.2s2) → T
+ (floatp (expt 2 130)) → NIL
 
 ```
 
@@ -11867,9 +11867,9 @@ a-vector → #(1 0 3 0)
  (find-symbol "FOO" *baz-package*) → FOO:FOO, :INHERITED
  (find-symbol "BAR" *baz-package*) → BAR:BAR, :INHERITED
 
- (packagep *foo-package*) *→ true*
- (packagep *bar-package*) *→ true*
- (packagep *baz-package*) *→ true*
+ (packagep *foo-package*) → T
+ (packagep *bar-package*) → T
+ (packagep *baz-package*) → T
 
  (package-name *foo-package*) → "FOO"
  (package-name *bar-package*) → "BAR"
@@ -12139,9 +12139,9 @@ a-vector → #(1 0 3 0)
 
 
 ```lisp
- (packagep *package*) *→ true* 
- (packagep 'common-lisp) *→ false* 
- (packagep (find-package 'common-lisp)) *→ true* 
+ (packagep *package*) → T 
+ (packagep 'common-lisp) → NIL 
+ (packagep (find-package 'common-lisp)) → T 
 
 ```
 
@@ -12166,10 +12166,10 @@ a-vector → #(1 0 3 0)
  (list (symbol-package (read-from-string "just-testing"))
        *package*)
 → (#<PACKAGE "COMMON-LISP-USER"> #<PACKAGE "COMMON-LISP-USER">)
- (eq 'foo (intern "FOO")) *→ true*
+ (eq 'foo (intern "FOO")) → T
  (eq 'foo (let ((*package* (find-package 'sample-package)))
             (intern "FOO")))
-*→ false*
+→ NIL
 
 ```
 
@@ -12210,10 +12210,10 @@ a-vector → #(1 0 3 0)
 \OV #P"test"
 \OV #S(PATHNAME :HOST "STRAWBERRY" :NAME "TEST")
 \OV #S(PATHNAME :HOST "BELGIAN-CHOCOLATE" :NAME "test")
- (pathnamep p1) *→ true*
- (eq p1 (pathname p1)) *→ true*
+ (pathnamep p1) → T
+ (eq p1 (pathname p1)) → T
  (eq p1 p2)
-*→ true*
+→ T
 \OV false
  (with-open-file (stream "test" :direction :output)
    (pathname stream))
@@ -12265,14 +12265,14 @@ a-vector → #(1 0 3 0)
 
 ```lisp
  (setq q "test")  → "test"
- (pathnamep q) *→ false*
+ (pathnamep q) → NIL
  (setq q (pathname "test"))
 → #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME "test" :TYPE NIL
        :VERSION NIL)
- (pathnamep q) *→ true* 
+ (pathnamep q) → T 
  (setq q (logical-pathname "SYS:SITE;FOO.SYSTEM"))
 → #P"SYS:SITE;FOO.SYSTEM"
- (pathnamep q) *→ true*
+ (pathnamep q) → T
 
 ```
 
@@ -12354,11 +12354,11 @@ a-vector → #(1 0 3 0)
  (load-logical-pathname-translations "HACKS")
 \OUT ;; Loading SYS:SITE;HACKS.TRANSLATIONS
 \OUT ;; Loading done.
-*→ true*
+→ T
  (translate-logical-pathname "hacks:weather;barometer.lisp.newest")
 → #P"HELIUM:[SHARED.HACKS.WEATHER]BAROMETER.LSP;0"
  (load-logical-pathname-translations "HACKS")
-*→ false*
+→ NIL
 
 ```
 
@@ -12549,7 +12549,7 @@ a-vector → #(1 0 3 0)
  (setq q (parse-namestring "test"))  
 → #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME "test" 
        :TYPE NIL :VERSION NIL)
- (pathnamep q) *→ true*
+ (pathnamep q) → T
  (parse-namestring "test") 
 → #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME "test"
        :TYPE NIL :VERSION NIL), 4
@@ -12571,11 +12571,11 @@ a-vector → #(1 0 3 0)
  ;;;Other implementations will behave differently.  These examples are
  ;;;intended to be illustrative, not to be prescriptive.
  
- (wild-pathname-p (make-pathname :name :wild)) *→ true*
- (wild-pathname-p (make-pathname :name :wild) :name) *→ true*
- (wild-pathname-p (make-pathname :name :wild) :type) *→ false*
- (wild-pathname-p (pathname "s:>foo>**>")) *→ true* ;Lispm
- (wild-pathname-p (pathname :name "F*O")) *→ true* ;Most places
+ (wild-pathname-p (make-pathname :name :wild)) → T
+ (wild-pathname-p (make-pathname :name :wild) :name) → T
+ (wild-pathname-p (make-pathname :name :wild) :type) → NIL
+ (wild-pathname-p (pathname "s:>foo>**>")) → T ;Lispm
+ (wild-pathname-p (pathname :name "F*O")) → T ;Most places
 
 ```
 
@@ -13043,7 +13043,7 @@ Roads ELM     MAIN
 ```lisp
  (get-macro-character #\\\lbr) → NIL, false
  (make-dispatch-macro-character #\\\lbr) → T
- (not (get-macro-character #\\\lbr)) *→ false*
+ (not (get-macro-character #\\\lbr)) → NIL
 
 ```
 
@@ -13142,9 +13142,9 @@ Roads ELM     MAIN
 
 
 ```lisp
- (readtablep *readtable*) *→ true*
- (readtablep (copy-readtable)) *→ true*
- (readtablep '*readtable*) *→ false*
+ (readtablep *readtable*) → T
+ (readtablep (copy-readtable)) → T
+ (readtablep '*readtable*) → NIL
 
 ```
 
@@ -13200,7 +13200,7 @@ Roads ELM     MAIN
 
 ```lisp
  (get-macro-character #\\\lbr) → NIL, false
- (not (get-macro-character #\\;)) *→ false*
+ (not (get-macro-character #\\;)) → NIL
 
 ```
 
@@ -13307,7 +13307,7 @@ Roads ELM     MAIN
 
 
 ```lisp
- (readtablep *readtable*) *→ true*
+ (readtablep *readtable*) → T
  (setq zvar 123) → 123
  (set-syntax-from-char #\\z #\\' (setq table2 (copy-readtable))) → T
  zvar → 123
@@ -13321,8 +13321,8 @@ Roads ELM     MAIN
 
 ```lisp
  (setq str "a string") → "a string"
- (equalp str (copy-seq str)) *→ true*
- (eql str (copy-seq str)) *→ false*
+ (equalp str (copy-seq str)) → T
+ (eql str (copy-seq str)) → NIL
 
 ```
 
@@ -13686,7 +13686,7 @@ Roads ELM     MAIN
  (setq lst '(list of four elements)) → (LIST OF FOUR ELEMENTS)
  (setq lst2 (copy-seq lst)) → (LIST OF FOUR ELEMENTS)
  (setq lst3 (delete 'four lst)) → (LIST OF ELEMENTS)
- (equal lst lst2) *→ false*
+ (equal lst lst2) → NIL
  (remove-if #'oddp '(1 2 4 1 3 4 5)) → (2 4 4)
  (remove-if #'evenp '(1 2 4 1 3 4 5) :count 1 :from-end t) 
 → (1 2 4 1 3 5)
@@ -13736,13 +13736,13 @@ Roads ELM     MAIN
 
 
 ```lisp
- (input-stream-p *standard-input*) *→ true*
- (input-stream-p *terminal-io*) *→ true*
- (input-stream-p (make-string-output-stream)) *→ false*
+ (input-stream-p *standard-input*) → T
+ (input-stream-p *terminal-io*) → T
+ (input-stream-p (make-string-output-stream)) → NIL
 
- (output-stream-p *standard-output*) *→ true*
- (output-stream-p *terminal-io*) *→ true*
- (output-stream-p (make-string-input-stream "jr")) *→ false*
+ (output-stream-p *standard-output*) → T
+ (output-stream-p *terminal-io*) → T
+ (output-stream-p (make-string-input-stream "jr")) → NIL
 
 ```
 
@@ -13761,7 +13761,7 @@ Roads ELM     MAIN
 
 
 ```lisp
- (open-stream-p *standard-input*) *→ true*
+ (open-stream-p *standard-input*) → T
 
 ```
 
@@ -13787,8 +13787,8 @@ Roads ELM     MAIN
 
 
 ```lisp
- (streamp *terminal-io*) *→ true*
- (streamp 1) *→ false*
+ (streamp *terminal-io*) → T
+ (streamp 1) → NIL
 
 ```
 
@@ -14117,7 +14117,7 @@ more text"
 ```lisp
  (setq s (make-broadcast-stream)) → #<BROADCAST-STREAM>
  (close s) → T
- (output-stream-p s) *→ true*
+ (output-stream-p s) → T
 
 ```
 
@@ -14192,14 +14192,14 @@ more text"
 ```lisp
  (y-or-n-p "(t or nil) given by")
 \OUT (t or nil) given by (Y or N) \IN{Y}
-*→ true*
+→ T
  (yes-or-no-p "a ~S message" 'frightening) 
 \OUT a FRIGHTENING message (Yes or No) \IN{no}
-*→ false*
+→ NIL
  (y-or-n-p "Produce listing file?") 
 \OUT Produce listing file?
 \OUT Please respond with Y or N. \IN{n}
-*→ false*
+→ NIL
 
 ```
 
@@ -14313,7 +14313,7 @@ more text"
                              :fill-pointer 0 :adjustable t)) → ""
  (with-output-to-string (s fstr)
     (format s "here's some output")
-    (input-stream-p s)) *→ false*
+    (input-stream-p s)) → NIL
  fstr → "here's some output"
 
 ```
@@ -14450,10 +14450,10 @@ more text"
 
 
 ```lisp
- (simple-string-p "aaaaaa") *→ true*
+ (simple-string-p "aaaaaa") → T
  (simple-string-p (make-array 6 
                               :element-type 'character 
-                              :fill-pointer t)) *→ false*
+                              :fill-pointer t)) → NIL
 
 ```
 
@@ -14546,25 +14546,25 @@ more text"
 
 
 ```lisp
- (string= "foo" "foo") *→ true*
- (string= "foo" "Foo") *→ false*
- (string= "foo" "bar") *→ false*
- (string= "together" "frog" :start1 1 :end1 3 :start2 2) *→ true*
- (string-equal "foo" "Foo") *→ true*
- (string= "abcd" "01234abcd9012" :start2 5 :end2 9) *→ true*
+ (string= "foo" "foo") → T
+ (string= "foo" "Foo") → NIL
+ (string= "foo" "bar") → NIL
+ (string= "together" "frog" :start1 1 :end1 3 :start2 2) → T
+ (string-equal "foo" "Foo") → T
+ (string= "abcd" "01234abcd9012" :start2 5 :end2 9) → T
  (string< "aaaa" "aaab") → 3
  (string>= "aaaaa" "aaaa") → 4
  (string-not-greaterp "Abcde" "abcdE") → 5
  (string-lessp "012AAAA789" "01aaab6" :start1 3 :end1 7
                                       :start2 2 :end2 6) → 6
- (string-not-equal "AAAA" "aaaA") *→ false*
+ (string-not-equal "AAAA" "aaaA") → NIL
 
 ```
 
 
 ```lisp
- (stringp "aaaaaa") *→ true*
- (stringp #\\a) *→ false*
+ (stringp "aaaaaa") → T
+ (stringp #\\a) → NIL
 
 ```
 
@@ -14665,7 +14665,7 @@ more text"
 
 
 ```lisp
- (typep (make-astronaut) 'person) *→ true*
+ (typep (make-astronaut) 'person) → T
 
 ```
 
@@ -14862,7 +14862,7 @@ more text"
 ;create a town instance
  (setq town1 (make-town :area 0 :watertowers 0)) → #S(TOWN...)
 ;town's predicate recognizes the new instance
- (town-p town1) *→ true*
+ (town-p town1) → T
 ;new town's area is as specified by make-town
  (town-area town1) → 0
 ;new town's elevation has initial value
@@ -14872,7 +14872,7 @@ more text"
  (town-population town1) → 99
 ;copier function makes a copy of town1
  (setq town2 (copy-town town1)) → #S(TOWN...)
- (= (town-population town1) (town-population town2))  *→ true*
+ (= (town-population town1) (town-population town2))  → T
 ;since elevation is a read-only slot, its value can be set only
 ;when the structure is created
  (setq town3 (make-town :area 0 :watertowers 3 :elevation 1200))
@@ -14893,7 +14893,7 @@ more text"
              (:predicate is-a-bozo-p))
              nose-color frizzy-hair-p polkadots) → klown
 ;custom constructor now exists
- (fboundp 'make-up-klown) *→ true*
+ (fboundp 'make-up-klown) → T
 ;;;
 ;;; Example 3
 ;;; define a vehicle structure type
@@ -14932,7 +14932,7 @@ more text"
 ;a and b set, c and f defaulted
  (setq x (create-dfs-boa 1 2)) → #(DFS-BOA...)
  (dfs-boa-b x) → 2
- (eq (dfs-boa-c x) 'cc) *→ true*
+ (eq (dfs-boa-c x) 'cc) → T
 ;a, b, and c set, and the rest are collected into d
  (setq x (create-dfs-boa 1 2 3 4 5 6)) → #(DFS-BOA...)
  (dfs-boa-d x) → (4 5 6)
@@ -14941,12 +14941,12 @@ more text"
 
 
 ```lisp
- (symbolp 'elephant) *→ true*
- (symbolp 12) *→ false*
- (symbolp nil) *→ true*
- (symbolp '()) *→ true*
- (symbolp :test) *→ true*
- (symbolp "hello") *→ false*
+ (symbolp 'elephant) → T
+ (symbolp 12) → NIL
+ (symbolp nil) → T
+ (symbolp '()) → T
+ (symbolp :test) → T
+ (symbolp "hello") → NIL
 
 ```
 
@@ -14958,16 +14958,16 @@ more text"
 
 
 ```lisp
- (keywordp 'elephant) *→ false*
- (keywordp 12) *→ false*
- (keywordp :test) *→ true*
- (keywordp ':test) *→ true*
- (keywordp nil) *→ false*
- (keywordp :nil) *→ true*
- (keywordp '(:test)) *→ false*
- (keywordp "hello") *→ false*
- (keywordp ":hello") *→ false*
- (keywordp '&optional) *→ false*
+ (keywordp 'elephant) → NIL
+ (keywordp 12) → NIL
+ (keywordp :test) → T
+ (keywordp ':test) → T
+ (keywordp nil) → NIL
+ (keywordp :nil) → T
+ (keywordp '(:test)) → NIL
+ (keywordp "hello") → NIL
+ (keywordp ":hello") → NIL
+ (keywordp '&optional) → NIL
 
 ```
 
@@ -14978,7 +14978,7 @@ more text"
  (symbol-name temp-symbol) → "temp"
  (eq (symbol-name temp-symbol) temp-string) → \term{implementation-dependent}
  (find-symbol "temp") → NIL, NIL
- (eq (make-symbol temp-string) (make-symbol temp-string)) *→ false*
+ (eq (make-symbol temp-string) (make-symbol temp-string)) → NIL
 
 ```
 
@@ -14990,22 +14990,22 @@ more text"
  (setq fred-clone-1b (copy-symbol fred nil)) → #:FRED-SMITH
  (setq fred-clone-2a (copy-symbol fred t))   → #:FRED-SMITH
  (setq fred-clone-2b (copy-symbol fred t))   → #:FRED-SMITH
- (eq fred fred-clone-1a) *→ false*
- (eq fred-clone-1a fred-clone-1b) *→ false*
- (eq fred-clone-2a fred-clone-2b) *→ false*
- (eq fred-clone-1a fred-clone-2a) *→ false*
+ (eq fred fred-clone-1a) → NIL
+ (eq fred-clone-1a fred-clone-1b) → NIL
+ (eq fred-clone-2a fred-clone-2b) → NIL
+ (eq fred-clone-1a fred-clone-2a) → NIL
  (symbol-value fred) → 3
- (boundp fred-clone-1a) *→ false*
+ (boundp fred-clone-1a) → NIL
  (symbol-value fred-clone-2a) → 3
  (setf (symbol-value fred-clone-2a) 4) → 4
  (symbol-value fred) → 3
  (symbol-value fred-clone-2a) → 4
  (symbol-value fred-clone-2b) → 3
- (boundp fred-clone-1a) *→ false*
+ (boundp fred-clone-1a) → NIL
  (setf (symbol-function fred) #'(lambda (x) x)) → #<FUNCTION anonymous>
- (fboundp fred) *→ true*
- (fboundp fred-clone-1a) *→ false*
- (fboundp fred-clone-2a) *→ false*
+ (fboundp fred) → T
+ (fboundp fred-clone-1a) → NIL
+ (fboundp fred-clone-2a) → NIL
 
 ```
 
@@ -15021,7 +15021,7 @@ more text"
  (symbol-package sym1) → NIL
  (setq sym2 (gensym 100)) → #:G100
  (setq sym3 (gensym 100)) → #:G100
- (eq sym2 sym3) *→ false*
+ (eq sym2 sym3) → NIL
  (find-symbol "G100") → NIL, NIL
  (gensym "T") → #:T3143
  (gensym) → #:G3144
@@ -15062,7 +15062,7 @@ more text"
        (funcall (function twice) 3)
        (funcall (symbol-function 'twice) 3))
 → ((3 3) (3 3) (3 3))
- (fboundp 'defun) *→ true*
+ (fboundp 'defun) → T
  (symbol-function 'defun)
 → \term{implementation-dependent}
  (functionp (symbol-function 'defun))
@@ -15253,14 +15253,14 @@ more text"
  (symbol-plist test) 
 → (ERROR-RANGE NOTICEABLE APPROXIMATION NIL CONSTANT T)
  (get test 'approximation) → NIL
- (remprop test 'approximation) *→ true*
+ (remprop test 'approximation) → T
  (get test 'approximation) → NIL
  (symbol-plist test)
 → (ERROR-RANGE NOTICEABLE CONSTANT T)
  (remprop test 'approximation) → NIL
  (symbol-plist test)
 → (ERROR-RANGE NOTICEABLE CONSTANT T)
- (remprop test 'error-range) *→ true*
+ (remprop test 'error-range) → T
  (setf (get test 'approximation) 3) → 3
  (symbol-plist test)
 → (APPROXIMATION 3 CONSTANT T)
@@ -15270,21 +15270,21 @@ more text"
 
 ```lisp
  (setq x 1) → 1
- (boundp 'x) *→ true*
+ (boundp 'x) → T
  (makunbound 'x) → X
- (boundp 'x) *→ false*
- (let ((x 2)) (boundp 'x)) *→ false*
- (let ((x 2)) (declare (special x)) (boundp 'x)) *→ true*
+ (boundp 'x) → NIL
+ (let ((x 2)) (boundp 'x)) → NIL
+ (let ((x 2)) (declare (special x)) (boundp 'x)) → T
 
 ```
 
 
 ```lisp
  (setf (symbol-value 'a) 1)
- (boundp 'a) *→ true*
+ (boundp 'a) → T
  a → 1
  (makunbound 'a) → A
- (boundp 'a) *→ false*
+ (boundp 'a) → NIL
 
 ```
 
@@ -15337,18 +15337,18 @@ more text"
  (with-open-file (str "data.in" :direction :output :if-exists :error)
    (print 1 str) (print '(setq a 888) str) t)
 → T
- (load "data.in") *→ true*
+ (load "data.in") → T
  a → 888
  (load (setq p (merge-pathnames "data.in")) :verbose t)
 ; Loading contents of file /fred/data.in
 ; Finished loading /fred/data.in
-*→ true*
+→ T
  (load p :print t) 
 ; Loading contents of file /fred/data.in
 ;  1
 ;  888
 ; Finished loading /fred/data.in
-*→ true*
+→ T
 
 ```
 
@@ -15529,7 +15529,7 @@ more text"
 
 
 ```lisp
- (subtypep '(array T1) '(array T2)) *→ true*
+ (subtypep '(array T1) '(array T2)) → T
 
 ```
 
@@ -15542,7 +15542,7 @@ more text"
 
 
 ```lisp
- (subtypep '(complex T1) '(complex T2)) *→ true*, true
+ (subtypep '(complex T1) '(complex T2)) → T, true
 
 ```
 
@@ -15560,17 +15560,17 @@ more text"
 
 
 ```lisp
- (subtypep 'compiled-function 'function) *→ true*, true
- (subtypep 'null 'list) *→ true*, true
- (subtypep 'null 'symbol) *→ true*, true
- (subtypep 'integer 'string) *→ false*, true
- (subtypep '(satisfies dummy) nil) *→ false*, \term{implementation-dependent}
- (subtypep '(integer 1 3) '(integer 1 4)) *→ true*, true
- (subtypep '(integer (0) (0)) 'nil) *→ true*, true
- (subtypep 'nil '(integer (0) (0))) *→ true*, true
- (subtypep '(integer (0) (0)) '(member)) *→ true*, true ;or false, false
- (subtypep '(member) 'nil) *→ true*, true ;or false, false
- (subtypep 'nil '(member)) *→ true*, true ;or false, false
+ (subtypep 'compiled-function 'function) → T, true
+ (subtypep 'null 'list) → T, true
+ (subtypep 'null 'symbol) → T, true
+ (subtypep 'integer 'string) → NIL, true
+ (subtypep '(satisfies dummy) nil) → NIL, \term{implementation-dependent}
+ (subtypep '(integer 1 3) '(integer 1 4)) → T, true
+ (subtypep '(integer (0) (0)) 'nil) → T, true
+ (subtypep 'nil '(integer (0) (0))) → T, true
+ (subtypep '(integer (0) (0)) '(member)) → T, true ;or false, false
+ (subtypep '(member) 'nil) → T, true ;or false, false
+ (subtypep 'nil '(member)) → T, true ;or false, false
 
 ```
 
@@ -15578,24 +15578,24 @@ more text"
 ```lisp
   (subtypep (array-element-type (make-array 0 :element-type '<aet-x>))
             (array-element-type (make-array 0 :element-type '<aet-y>)))
-*→ true*, true
+→ T, true
  
   (subtypep (array-element-type (make-array 0 :element-type '<aet-y>))
             (array-element-type (make-array 0 :element-type '<aet-x>)))
-*→ true*, true
+→ T, true
 
 ```
 
 
 ```lisp
- (subtypep '(array <aet-x>) '(array <aet-y>)) *→ true*, true
- (subtypep '(array <aet-y>) '(array <aet-x>)) *→ true*, true
+ (subtypep '(array <aet-x>) '(array <aet-y>)) → T, true
+ (subtypep '(array <aet-y>) '(array <aet-x>)) → T, true
 
 ```
 
 
 ```lisp
- (subtypep (type-of \param{object}) (class-of \param{object})) *→ true*, true
+ (subtypep (type-of \param{object}) (class-of \param{object})) → T, true
 
 ```
 
@@ -15626,14 +15626,14 @@ more text"
  (type-of "abc")
 → STRING
 \OV (STRING 3)
- (subtypep (type-of "abc") 'string) *→ true*, true
+ (subtypep (type-of "abc") 'string) → T, true
  (type-of (expt 2 40))
 → BIGNUM
 \OV INTEGER
 \OV (INTEGER 1099511627776 1099511627776)
 \OV SYSTEM::TWO-WORD-BIGNUM
 \OV FIXNUM
- (subtypep (type-of 112312) 'integer) *→ true*, true
+ (subtypep (type-of 112312) 'integer) → T, true
  (defvar *foo* (make-array 5 :element-type t)) → *FOO*
  (class-name (class-of *foo*)) → VECTOR
  (type-of *foo*)
@@ -15651,15 +15651,15 @@ more text"
 
 
 ```lisp
- (typep 12 'integer) *→ true*
- (typep (1+ most-positive-fixnum) 'fixnum) *→ false*
- (typep nil t) *→ true*
- (typep nil nil) *→ false*
- (typep 1 '(mod 2)) *→ true*
- (typep #c(1 1) '(complex (eql 1))) *→ true*
+ (typep 12 'integer) → T
+ (typep (1+ most-positive-fixnum) 'fixnum) → NIL
+ (typep nil t) → T
+ (typep nil nil) → NIL
+ (typep 1 '(mod 2)) → T
+ (typep #c(1 1) '(complex (eql 1))) → T
 ;; To understand this next example, you might need to refer to
 ;; \secref\RuleOfCanonRepForComplexRationals.
- (typep #c(0 0) '(complex (eql 0))) *→ false*
+ (typep #c(0 0) '(complex (eql 0))) → NIL
 
 ```
 
@@ -15677,10 +15677,10 @@ more text"
 
 
 ```lisp
- (typep (make-array 0 :element-type 'A\sssx) '(array A\sssx)) *→ true*
- (typep (make-array 0 :element-type 'A\sssy) '(array A\sssy)) *→ true*
- (typep (make-array 0 :element-type 'A\sssx) '(array A\sssy)) *→ true*
- (typep (make-array 0 :element-type 'A\sssy) '(array A\sssx)) *→ true*
+ (typep (make-array 0 :element-type 'A\sssx) '(array A\sssx)) → T
+ (typep (make-array 0 :element-type 'A\sssy) '(array A\sssy)) → T
+ (typep (make-array 0 :element-type 'A\sssx) '(array A\sssy)) → T
+ (typep (make-array 0 :element-type 'A\sssy) '(array A\sssx)) → T
 
 ```
 
