@@ -4,10 +4,25 @@
         <title>Common Lisp (New) Language Reference Blog</title>
         <link>https://lisp-docs.github.io/cl-language-reference/blog</link>
         <description>Common Lisp (New) Language Reference Blog</description>
-        <lastBuildDate>Wed, 29 Nov 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 30 Nov 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Search Implemented!]]></title>
+            <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/11/30/update</link>
+            <guid>https://lisp-docs.github.io/cl-language-reference/blog/2023/11/30/update</guid>
+            <pubDate>Thu, 30 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Search for the Technical Reference]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="search-for-the-technical-reference">Search for the Technical Reference<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/11/30/update#search-for-the-technical-reference" class="hash-link" aria-label="Direct link to Search for the Technical Reference" title="Direct link to Search for the Technical Reference">​</a></h2>
+<p>Search for the Technical Reference has now been implemented! Please try it with <code>Ctrl+K</code> or <code>CMD-K</code> and enjoy! <!-- -->😄</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="home-page-updates">Home Page Updates<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/11/30/update#home-page-updates" class="hash-link" aria-label="Direct link to Home Page Updates" title="Direct link to Home Page Updates">​</a></h2>
+<p>We also updated the <a href="https://lisp-docs.github.io/cl-language-reference/">Home Page</a> content.</p>]]></content:encoded>
+            <category>status</category>
+            <category>search</category>
+            <category>features</category>
+            <category>beginning</category>
+        </item>
         <item>
             <title><![CDATA[Code Blocks and Tables]]></title>
             <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/11/29/</link>

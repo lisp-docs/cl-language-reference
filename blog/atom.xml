@@ -2,11 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lisp-docs.github.io/cl-language-reference/blog</id>
     <title>Common Lisp (New) Language Reference Blog</title>
-    <updated>2023-11-29T00:00:00.000Z</updated>
+    <updated>2023-11-30T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/blog"/>
     <subtitle>Common Lisp (New) Language Reference Blog</subtitle>
     <icon>https://lisp-docs.github.io/cl-language-reference/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Search Implemented!]]></title>
+        <id>https://lisp-docs.github.io/cl-language-reference/blog/2023/11/30/update</id>
+        <link href="https://lisp-docs.github.io/cl-language-reference/blog/2023/11/30/update"/>
+        <updated>2023-11-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Search for the Technical Reference]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="search-for-the-technical-reference">Search for the Technical Reference<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/11/30/update#search-for-the-technical-reference" class="hash-link" aria-label="Direct link to Search for the Technical Reference" title="Direct link to Search for the Technical Reference">​</a></h2>
+<p>Search for the Technical Reference has now been implemented! Please try it with <code>Ctrl+K</code> or <code>CMD-K</code> and enjoy! <!-- -->😄</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="home-page-updates">Home Page Updates<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/11/30/update#home-page-updates" class="hash-link" aria-label="Direct link to Home Page Updates" title="Direct link to Home Page Updates">​</a></h2>
+<p>We also updated the <a href="https://lisp-docs.github.io/cl-language-reference/">Home Page</a> content.</p>]]></content>
+        <author>
+            <name>Daniel N</name>
+            <uri>https://github.com/daninus14</uri>
+        </author>
+        <category label="status" term="status"/>
+        <category label="search" term="search"/>
+        <category label="features" term="features"/>
+        <category label="beginning" term="beginning"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Code Blocks and Tables]]></title>
         <id>https://lisp-docs.github.io/cl-language-reference/blog/2023/11/29/</id>
