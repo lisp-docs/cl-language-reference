@@ -112,7 +112,7 @@ const config = {
             position: "left",
             label: "The CL Reference",
           },
-          { to: "/contribue", label: "Contribute!", position: "left" },
+          { to: "/contribute", label: "Contribute!", position: "left" },
           { to: "/todo", label: "TODO", position: "left" },
           { to: "/blog", label: "Blog", position: "right" },
           {
