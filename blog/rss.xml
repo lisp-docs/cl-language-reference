@@ -4,10 +4,26 @@
         <title>Common Lisp (New) Language Reference Blog</title>
         <link>https://lisp-docs.github.io/cl-language-reference/blog</link>
         <description>Common Lisp (New) Language Reference Blog</description>
-        <lastBuildDate>Sun, 26 Nov 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Nov 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Code Blocks and Tables]]></title>
+            <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/11/29/</link>
+            <guid>https://lisp-docs.github.io/cl-language-reference/blog/2023/11/29/</guid>
+            <pubDate>Wed, 29 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Code Blocks]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="code-blocks">Code Blocks<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/11/29/#code-blocks" class="hash-link" aria-label="Direct link to Code Blocks" title="Direct link to Code Blocks">​</a></h2>
+<p>The current status is that for some reason replacing the code with lisp formatted code blocks was failing due to regex issues.</p>
+<p><a href="https://lisp-docs.github.io/cl-language-reference/docs/code-blocks">Here are the lisp highlighted code blocks</a>.</p>
+<p>If you find any code that is not highlighted, please find the appropiate code block and replace it in the code!</p>]]></content:encoded>
+            <category>status</category>
+            <category>todo</category>
+            <category>beginning</category>
+            <category>code-blocks</category>
+            <category>tables</category>
+        </item>
         <item>
             <title><![CDATA[Current Status]]></title>
             <link>https://lisp-docs.github.io/cl-language-reference/blog/2023-11-26-status</link>
