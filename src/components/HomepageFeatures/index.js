@@ -1,38 +1,57 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Complete',
+    Svg: require('@site/static/img/svg-icons/complete-svgrepo-com.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Complete Reference of Common Lisp <strong>all in one place</strong>. No need to search around
+        the web for hours until you find an explanation for how the API works.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Community Driven, MIT License',
+    Svg: require('@site/static/img/svg-icons/people-teamwork-svgrepo-com.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Finally a joint effort where <strong>anyone</strong> can contribute. No longer are we stuck
+        to individual vendors or people locking down documentation. Finally we can 
+        build together all the docs in one place and it can <strong>evolve</strong> even if the
+        original contributors are no longer around!
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Fully Featured',
+    Svg: require('@site/static/img/svg-icons/website-program-svgrepo-com.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        {/* <p>Easy to read documentation that is fully featured:</p> */}
+        <ul>
+          <li><strong>Easy to read</strong></li>
+          <li><strong>Search</strong> <code>Ctrl+K</code> or <code>Cmd+K</code></li>
+          <li><strong>Side Panel</strong> Table of Contents</li>
+          <li><strong>Code Highlighting</strong></li>
+        </ul>
       </>
     ),
   },
+  // "/static/img/svg-icons/programming-svgrepo-com.svg"
+  // {
+  //   title: 'Fully Featured',
+  //   Svg: require('@site/static/img/svg-icons/website-program-svgrepo-com.svg').default,
+  //   description: (
+  //     <>
+  //       Easy to read documentation that is fully featured:
+  //       <ol>
+  //         <li>Search `Ctrl+K` or `Cmd+K`</li>
+  //       </ol>
+  //     </>
+  //   ),
+  // },
 ];
 
 function Feature({Svg, title, description}) {
