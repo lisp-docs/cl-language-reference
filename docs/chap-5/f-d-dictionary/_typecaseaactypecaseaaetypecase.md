@@ -80,6 +80,7 @@ In all three cases, is permissible for more than one *clause* to specify a match
 
 **Examples:** 
 
+```lisp
 ;;; (Note that the parts of this example which use TYPE-OF 
 
 ;;; are implementation-dependent.) 
@@ -130,4 +131,4 @@ x (typecase x
 
 &#9655; 1: Specify a value to use instead. 
 
-
+```
