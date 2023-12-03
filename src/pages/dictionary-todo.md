@@ -1,3 +1,9 @@
+# Common Lisp Dictionary Entries To Do's
+
+Here are all the dicionary entry pages for which we need expanded explanations and examples. If you write an exaplantion on one and submit a pull request, please strike the list items here by surrounding it with `~~` and move it to the "Done" list in the bottom of the page.
+
+## TODO
+
 - [dotimes](/docs/chap-6/g-c-dictionary/dotimes)
 - [dolist](/docs/chap-6/g-c-dictionary/dolist)
 - [go** may be used within the body of **dolist** to transfer control to a statement labeled by a *tag*. **loop](/docs/chap-6/g-c-dictionary/goaaamayabeausedawithinatheabodyaofaaadolistaaatoatransferacontrolatoaaastatementalabeledabyaaaatagaaaaaloop)
@@ -543,3 +549,5 @@
 - [string-trim, string-left-trim, string-right-trim](/docs/chap-16/bg-c-dictionary/stringtrimaastringlefttrimaastringrighttrim)
 - [stringp](/docs/chap-16/bg-c-dictionary/stringp)
 - [make-string](/docs/chap-16/bg-c-dictionary/makestring)
+
+## DONE
