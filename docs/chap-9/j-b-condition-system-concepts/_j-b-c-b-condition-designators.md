@@ -12,7 +12,7 @@ The denoted *condition* is the result of
 
 (apply #’make-condition *datum arguments*) 
 
-Conditions **9–3**
+
 
  
 

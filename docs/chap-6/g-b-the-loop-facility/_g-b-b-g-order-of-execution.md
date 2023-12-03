@@ -4,7 +4,7 @@ With the exceptions listed below, clauses are executed in the loop body in the o
 
 *•* All variables are initialized first, regardless of where the establishing clauses appear in the source. The order of initialization follows the order of these clauses. 
 
-Iteration **6–5**
+
 
  
 

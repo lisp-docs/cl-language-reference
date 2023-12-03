@@ -4,7 +4,7 @@ All functions that operate on *strings* will operate on *subtypes* of *string* a
 
 However, the consequences are undefined if a *character* is inserted into a *string* for which the *element type* of the *string* does not include that *character* . 
 
-Strings **16–1**
+
 
  
 
@@ -94,7 +94,7 @@ Abbreviating.
 
 This denotes the union of all *types* (simple-array *c* (*size*)) for all *subtypes c* of **character**; that is, the set of *simple strings* of size *size*. 
 
-Strings **16–3**
+
 
  
 
@@ -220,7 +220,7 @@ my-simple-string *→* "AAAABA"
 
 my-filled-string *→* "AAACBD" 
 
-Strings **16–5**
+
 
  
 
@@ -322,7 +322,7 @@ In the case where a conversion is defined neither by this specification nor by t
 
 **string-downcase** is like **string-upcase** except that all uppercase characters are replaced by the corresponding lowercase characters (using **char-downcase**). 
 
-Strings **16–7**
+
 
  
 
@@ -440,7 +440,7 @@ All of these *functions* observe the *fill pointer* .
 
 *→* " ( \*three (silly) words" 
 
-Strings **16–9**
+
 
  
 
@@ -534,7 +534,7 @@ The comparison has one of the following results:
 
 **string**&#60;**=** 
 
-**string**&#60;**=** is *true* if substring1 is less than or equal to substring2; otherwise it is *false*. Strings **16–11**
+**string**&#60;**=** is *true* if substring1 is less than or equal to substring2; otherwise it is *false*. 
 
  
 
@@ -648,7 +648,7 @@ The *element-type* names the *type* of the *elements* of the *string*; a *string
 
 The *implementation*. 
 
-Strings **16–13**
+
 
  
 

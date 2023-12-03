@@ -66,7 +66,7 @@ There is no *standardized* mechanism for users to add extensions to **loop**.
 
 **do\*** is exactly like **do** except that the *bindings* and steppings of the *vars* are performed sequentially rather than in parallel. 
 
-Iteration **6–31**
+
 
  
 
@@ -178,7 +178,7 @@ is an example of parallel assignment to index variables. On the first iteration,
 
 does the same thing as (mapcar #’f foo bar). The step computation for z is an example of the fact that variables are stepped in parallel. Also, the body of the loop is empty. 
 
-Iteration **6–33**
+
 
  
 
@@ -294,7 +294,7 @@ The *scope* of the binding of *var* does not include the *count-form*, but the *
 
 It is *implementation-dependent* whether **dotimes** *establishes* a new *binding* of *var* on each iteration or whether it *establishes* a binding for *var* once at the beginning and then *assigns* it on any subsequent iterations. 
 
-Iteration **6–35**
+
 
  
 
@@ -422,7 +422,7 @@ It is *implementation-dependent* whether **dolist** *establishes* a new *binding
 
 (dolist (temp-one ’(1 2 3 4) temp-two) (push temp-one temp-two)) *→* (4 3 2 1) (setq temp-two 0) *→* 0 
 
-Iteration **6–37**
+
 
  
 
@@ -520,7 +520,7 @@ maximize *|* maximizing *|* minimize *|* minimizing*&#125; &#123;form |* it*&#12
 
 [using (hash-key *other-var*)]*&#125;* 
 
-Iteration **6–39**
+
 
  
 
@@ -662,7 +662,7 @@ collect n)
 
 **do**, **dolist**, **dotimes**, **return**, **go**, **throw**, Section 6.1.1.7 (Destructuring) 
 
-Iteration **6–41**
+
 
  
 
@@ -778,7 +778,7 @@ Whether or not **loop-finish** is *fbound* in the *global environment* is *imple
 
 **Notes:** 
 
-Iteration **6–43**
+
 
  
 

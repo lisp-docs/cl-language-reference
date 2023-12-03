@@ -22,7 +22,7 @@ It can decline to *handle* the *condition*. It does this by simply returning rat
 
 It can *handle* the *condition* by performing a non-local transfer of control. This can be done either primitively by using **go**, **return**, **throw** or more abstractly by using a function such as **abort** or **invoke-restart**. 
 
-Conditions **9–1**
+
 
  
 

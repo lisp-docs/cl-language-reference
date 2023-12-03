@@ -28,7 +28,7 @@ Words in *this font* are words with entries in the glossary. Words in example se
 
 When an ambiguity arises, the longest matching substring has precedence. For example, “*complex float*” refers to a single glossary entry for “*complex float*” rather than the combined meaning of the glossary terms “*complex*” and “*float*.” 
 
-Glossary **26–1**
+
 
  
 
@@ -93,7 +93,7 @@ characteristics by direct modification. A *conforming program* may depend on an 
 
 **alphanumeric** *adj.* (of a *character* ) being either an *alphabetic*&#60;sub&#62;1&#60;/sub&#62; *character* or a *numeric* character. 
 
-Glossary **26–3**
+
 
  
 
@@ -157,7 +157,7 @@ Glossary **26–3**
 
 **auxiliary method** *n.* a member of one of two sets of *methods* (the set of *primary methods* is the other) that form an exhaustive partition of the set of *methods* on the *method*’s *generic function*. How these sets are determined is dependent on the *method combination* type; see Section 7.6.2 (Introduction to Methods). 
 
-Glossary **26–5**
+
 
  
 
@@ -225,7 +225,7 @@ symbol **t** (representing *true*), or the symbol **nil** (representing *false*)
 
 &#60;b&#62;bounding index&#60;/b&#62; &#60;i&#62;n.&#60;/i&#62; (of a &#60;i&#62;sequence&#60;/i&#62; with &#60;i&#62;length n&#60;/i&#62;) either of a conceptual pair of &#60;i&#62;integers&#60;/i&#62;, &#60;i&#62;i&#60;sub&#62;start&#60;/sub&#62;&#60;/i&#62; and &#60;i&#62;i&#60;sub&#62;end&#60;/sub&#62;&#60;/i&#62;, respectively called the “lower bounding index” and “upper 
 
-Glossary **26–7**
+
 
  
 
@@ -291,7 +291,7 @@ initialization form for the slot that was specified in the **defclass** form for
 
 non-negative *integer* less than the *value* of **char-code-limit** that is suitable for use as a *character code*&#60;sub&#62;1&#60;/sub&#62;. 
 
-Glossary **26–9**
+
 
  
 
@@ -353,7 +353,7 @@ optimizing one or more qualities of the code, such as run-time speed of *executi
 
 **compiled code** *n.* 1. *compiled functions*. 2. *code* that represents *compiled functions*, such as the contents of a *compiled file*. 
 
-Glossary **26–11**
+
 
  
 
@@ -421,7 +421,7 @@ requirements of this specification. See Section 1.5 (Conformance).
 
 **conforming implementation** *n.* an *implementation*, used to emphasize complete and correct adherance to all conformance criteria. A *conforming implementation* is capable of accepting a *conforming program* as input, preparing that *program* for *execution*, and executing the prepared *program* in accordance with this specification. An *implementation* which has been extended may still be a *conforming implementation* 
 
-Glossary **26–13**
+
 
  
 
@@ -481,7 +481,7 @@ associated with the *error* ) capable of being corrected by invoking that *resta
 
 **current logical block** *n.* the context of the innermost lexically enclosing use of **pprint-logical-block**. 
 
-**current output base** *n.* (in a *dynamic environment*) the *radix* that is the *value* of Glossary **26–15**
+**current output base** *n.* (in a *dynamic environment*) the *radix* that is the *value* of 
 
  
 
@@ -553,7 +553,7 @@ by the :arguments option to **define-method-combination**. See Section 3.4.10
 
 be represented instead as 1.0e-10 or 0.1e-9. By their nature, *denormalized floats* generally have less precision than *normalized floats*. 
 
-Glossary **26–17**
+
 
  
 
@@ -625,7 +625,7 @@ with *dynamic extent*. A *dynamic environment* contains, among other things: *ex
 
 **dynamic scope** *n. indefinite scope* along with *dynamic extent*. 
 
-Glossary **26–19**
+
 
  
 
@@ -683,7 +683,7 @@ Glossary **26–19**
 
 **evaluation environment** *n.* a *run-time environment* in which macro expanders and code specified by **eval-when** to be evaluated are evaluated. All evaluations initiated by the *compiler* take place in the *evaluation environment*. 
 
-Glossary **26–21**
+
 
  
 
@@ -740,7 +740,7 @@ number is to be represented as a double float.”
 
 **extended lambda list** *n.* a list resembling an *ordinary lambda list* in form and 
 
-Glossary **26–23**
+
 
  
 
@@ -808,7 +808,7 @@ following the last *element* of the *stream*), or a *file position* (denoting it
 
 (integer 0 5) denotes a finite type, but the type specifiers **integer** and (integer 0) do not.” 
 
-Glossary **26–25**
+
 
  
 
@@ -874,7 +874,7 @@ its *function block name* is the *symbol* that is the *cadr* of the *function na
 
 **functional value** *n.* 1. (of a *function name N* in an *environment E*) The *value* of the *binding* named *N* in the *function namespace* for *environment E*; that is, the 
 
-Glossary **26–27**
+
 
  
 
@@ -944,7 +944,7 @@ represents *false* and all other *objects* represent *true*. See *boolean*.
 
 **I/O customization variable** *n.* one of the *stream variables* in Figure 26–2, or some other (*implementation-defined*) *stream variable* that is defined by the *implementation* to be an *I/O customization variable*. 
 
-Glossary **26–29**
+
 
  
 
@@ -1022,7 +1022,7 @@ Lisp which has been deliberately left unspecified, that might be defined in some
 
 **instance** *n.* 1. a *direct instance*. 2. a *generalized instance*. 3. an *indirect instance*. **integer** *n.* an *object* of *type* **integer**, which represents a mathematical integer. 
 
-Glossary **26–31**
+
 
  
 
@@ -1090,7 +1090,7 @@ any *symbol*, usually but not necessarily in the KEYWORD *package*, that is used
 
 **lambda list** *n.* a *list* that specifies a set of *parameters* (sometimes called *lambda variables*) and a protocol for receiving *values* for those *parameters*; that is, an *ordinary lambda list*, an *extended lambda list*, or a *modified lambda list*. 
 
-Glossary **26–33**
+
 
  
 
@@ -1154,7 +1154,7 @@ area that permits the sharing of some but not all *objects* are considered to be
 
 **load time** *n.* the duration of time that the loader is *loading compiled code*. 
 
-Glossary **26–35**
+
 
  
 
@@ -1220,7 +1220,7 @@ abstraction, information hiding, or syntactic convenience); that is, either a *c
 
 **Metaobject Protocol** *n.* one of many possible descriptions of how a *conforming implementation* might implement various aspects of the object system. This description is beyond the scope of this document, and no *conforming implementation* is required to adhere to it except as noted explicitly in this specification. Nevertheless, its existence helps to establish normative practice, and implementors with no reason to diverge from it are encouraged to consider making their *implementation* adhere to it where possible. It is described in detail in *The Art of the Metaobject Protocol*. 
 
-Glossary **26–37**
+
 
  
 
@@ -1292,7 +1292,7 @@ intent that no special effort should be made by *code* signaling an *error* to m
 
 **non-generic function** *n.* a *function* that is not a *generic function*. 
 
-Glossary **26–39**
+
 
  
 
@@ -1362,7 +1362,7 @@ object-traversing operations.”
 
 **ordinary lambda list** *n.* the kind of *lambda list* used by **lambda**. See *modified lambda list* and *extended lambda list*. “**defun** uses an ordinary lambda list.” 
 
-Glossary **26–41**
+
 
  
 
@@ -1432,7 +1432,7 @@ conceptual location referred to by such a *place*&#60;sub&#62;1&#60;/sub&#62;.
 
 **potential number** *n.* A textual notation that might be parsed by the *Lisp reader* in some *conforming implementation* as a *number* but is not required to be parsed as a *number* . No *object* is a *potential number*—either an *object* is a *number* or it is not. See Section 2.3.1.1 (Potential Numbers as Tokens). 
 
-Glossary **26–43**
+
 
  
 
@@ -1504,7 +1504,7 @@ or **\*print-escape\*** is *true*, then *printer escaping* is “enabled”; oth
 
 **property indicator** *n.* (of a *property list*) the *name* part of a *property*, used as a *key* when looking up a *property value* on a *property list*. 
 
-Glossary **26–45**
+
 
  
 
@@ -1580,7 +1580,7 @@ Printer).
 
 **reference** *n.*, *v.t.* 1. *n.* an act or occurrence of referring to an *object*, a *binding*, an *exit point*, a *tag*, or an *environment*. 2. *v.t.* to refer to an *object*, a *binding*, an *exit point*, a *tag*, or an *environment*, usually by *name*. 
 
-Glossary **26–47**
+
 
  
 
@@ -1660,7 +1660,7 @@ parenthesis” or “close parenthesis” See Figure 2–5.
 
 of calling the *sequence function*’s *key argument* on the *object* being considered. See Section 17.2.2 (Satisfying a One-Argument Test). 2. (for a two *argument* test) to be in a state such that the two-place *predicate* which is the *sequence function*’s *test* 
 
-Glossary **26–49**
+
 
  
 
@@ -1732,7 +1732,7 @@ self-evaluating objects.”
 
 represented by a *condition*, has been detected. See Section 9.1 (Condition System Concepts). 
 
-Glossary **26–51**
+
 
  
 
@@ -1806,7 +1806,7 @@ required *arguments*, and which also describes the *argument* conventions for it
 
 &#60;b&#62;spreadable argument list designator&#60;/b&#62; &#60;i&#62;n.&#60;/i&#62; a &#60;i&#62;designator&#60;/i&#62; for a &#60;i&#62;list&#60;/i&#62; of &#60;i&#62;objects&#60;/i&#62;; that is, an &#60;i&#62;object&#60;/i&#62; that denotes a &#60;i&#62;list&#60;/i&#62; and that is a &#60;i&#62;non-null list L&#60;/i&#62;1 of length &#60;i&#62;n&#60;/i&#62;, whose last element is a &#60;i&#62;list L&#60;/i&#62;2 of length &#60;i&#62;m&#60;/i&#62; (denoting a list &#60;i&#62;L&#60;/i&#62;3 of length &#60;i&#62;m&#60;/i&#62; + &#60;i&#62;n −&#60;/i&#62; 1 whose &#60;i&#62;elements&#60;/i&#62; are &#60;i&#62;L&#60;/i&#62;1&#60;i&#62;&#60;sub&#62;i&#60;/sub&#62;&#60;/i&#62; for &#60;i&#62;i&#60;/i&#62; &#60; &#60;i&#62;n −&#60;/i&#62; 1 followed by &#60;i&#62;L&#60;/i&#62;2&#60;i&#62;&#60;sub&#62;j&#60;/sub&#62;&#60;/i&#62; for &#60;i&#62;j&#60;/i&#62; &#60; &#60;i&#62;m&#60;/i&#62;). “The list (1 2 (3 4 5)) is a spreadable argument list designator for the list (1 2 3 4 5).” 
 
-Glossary **26–53**
+
 
  
 
@@ -1880,7 +1880,7 @@ cannot be created with **make-two-way-stream**, **make-echo-stream**,
 
 **string** *n.* a specialized *vector* that is of *type* **string**, and whose elements are of *type* **character** or a *subtype* of *type* **character**. 
 
-Glossary **26–55**
+
 
  
 
@@ -1960,7 +1960,7 @@ representing true. (Although any *object* other than **nil** is considered *true
 
 **tag** *n.* 1. a *catch tag*. 2. a *go tag*. 
 
-Glossary **26–57**
+
 
  
 
@@ -2028,7 +2028,7 @@ this internally, and some situations involving *type specifiers* are most easily
 
 **unbound** *adj.* not having an associated denotation in a *binding*. See *bound*. 
 
-Glossary **26–59**
+
 
  
 
@@ -2096,7 +2096,7 @@ Such a *fixnum* must be greater than or equal to zero, and less than the *value*
 
 **valid logical pathname host** *n.* a *string* that has been defined as the name of a *logical host*. See the *function* **load-logical-pathname-translations**. 
 
-Glossary **26–61**
+
 
  
 
@@ -2156,7 +2156,7 @@ possibly several *pathnames*, and which can therefore be used to refer to the ag
 
 **yield** *v.t.* (*values*) to produce the *values* as the result of *evaluation*. “The form (+ 2 3) yields 5.” 
 
-Glossary **26–63**
+
 
  
 

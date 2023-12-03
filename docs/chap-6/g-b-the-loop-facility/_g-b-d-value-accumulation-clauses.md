@@ -8,7 +8,7 @@ During each iteration, the constructs collect and collecting collect the value o
 
 The constructs append, appending, nconc, and nconcing are similar to collect except that the values of the supplied *form* must be *lists*. 
 
-Iteration **6–17**
+
 
  
 

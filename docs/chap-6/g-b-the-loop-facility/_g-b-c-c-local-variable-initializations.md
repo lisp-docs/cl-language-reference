@@ -4,7 +4,7 @@ When a **loop** *form* is executed, the local variables are bound and are initia
 
 The with construct initializes variables that are local to a loop. The variables are initialized one time only. If the optional *type-spec* argument is supplied for the variable *var*, but there is no related expression to be evaluated, *var* is initialized to an appropriate default value for its *type*. For example, for the types **t**, **number**, and **float**, the default values are **nil**, 0, and 0.0 respectively. The consequences are undefined if a *type-spec* argument is supplied for *var* if the related expression returns a value that is not of the supplied *type*. By default, the with construct initializes variables *sequentially*; that is, one variable is assigned a value before the next expression is evaluated. However, by using the *loop keyword* and to join several with clauses, initializations can be forced to 
 
-Iteration **6–15**
+
 
  
 

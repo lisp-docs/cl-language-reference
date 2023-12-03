@@ -72,7 +72,7 @@ A program can be well-specified even if it uses a function whose returns values 
 
 **Implementations may be extended to cover this situation** 
 
-This means that the *situation* has undefined consequences; however, a *conforming* Introduction **1–17**
+This means that the *situation* has undefined consequences; however, a *conforming* 
 
 
 

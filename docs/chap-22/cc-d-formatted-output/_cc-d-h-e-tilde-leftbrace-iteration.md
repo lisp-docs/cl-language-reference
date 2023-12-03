@@ -34,7 +34,7 @@ For example:
 
 If the iteration is terminated before all the remaining arguments are consumed, then any arguments not processed by the iteration remain to be processed by any directives following the iteration construct. 
 
-Printer **22–37**
+
 
  
 

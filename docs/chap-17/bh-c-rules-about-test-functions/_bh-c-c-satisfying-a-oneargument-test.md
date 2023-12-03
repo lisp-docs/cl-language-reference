@@ -8,7 +8,7 @@ When using one of the *functions* in Figure 17–3, the elements *E* of a *seque
 
 **Figure 17–3. Operators that have One-Argument Tests to be Satisfied** 
 
-Sequences **17–3**
+
 
  
 

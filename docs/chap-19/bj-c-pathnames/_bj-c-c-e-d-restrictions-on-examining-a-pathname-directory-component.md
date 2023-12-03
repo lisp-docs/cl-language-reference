@@ -12,7 +12,7 @@ A *list* whose *car* is the symbol :relative represents a directory path startin
 
 Each remaining element of the *list* is a *string* or a *symbol*. 
 
-Filenames **19–7**
+
 
  
 

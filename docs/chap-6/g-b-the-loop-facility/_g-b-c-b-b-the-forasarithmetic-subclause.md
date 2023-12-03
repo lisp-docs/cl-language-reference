@@ -24,7 +24,7 @@ from
 
 The *loop keyword* from specifies the value from which *stepping*&#60;sub&#62;1&#60;/sub&#62; begins, as supplied by *form1*. *Stepping*&#60;sub&#62;1&#60;/sub&#62; is incremental by default. If decremental *stepping*&#60;sub&#62;1&#60;/sub&#62; is desired, the preposition downto or above must be used with *form2*. For incremental *stepping*&#60;sub&#62;1&#60;/sub&#62;, the default from value is 0. 
 
-Iteration **6–9**
+
 
  
 

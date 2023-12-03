@@ -14,7 +14,7 @@ The thereis construct terminates iteration the first time that the value of the 
 
 There are two differences between the thereis and until constructs: 
 
-*•* The until construct does not return a value or **nil** based on the value of the supplied *form*. Iteration **6–21**
+*•* The until construct does not return a value or **nil** based on the value of the supplied *form*. 
 
  
 

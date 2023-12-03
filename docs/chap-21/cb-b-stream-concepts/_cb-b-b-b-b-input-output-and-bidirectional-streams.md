@@ -10,7 +10,7 @@ Figure 21–2 shows *operators* relating to *input streams*.
 
 **Figure 21–2. Operators relating to Input Streams.** 
 
-Streams **21–1**
+
 
  
 

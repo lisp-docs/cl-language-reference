@@ -18,7 +18,7 @@ instance))
 
 The elided code in the definition of **make-instance** augments the initargs with any *defaulted initialization arguments* and checks the resulting initialization arguments to determine whether 
 
-Objects **7–7**
+
 
  
 

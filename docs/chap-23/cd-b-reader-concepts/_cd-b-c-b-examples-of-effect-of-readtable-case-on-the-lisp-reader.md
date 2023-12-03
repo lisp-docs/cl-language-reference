@@ -24,7 +24,7 @@ input
 
 (symbol-name (read-from-string input))))))) 
 
-Reader **23–1**
+
 
  
 

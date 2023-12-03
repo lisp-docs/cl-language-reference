@@ -30,7 +30,7 @@ then each call to the *single-quote reader macro function* would establish indep
 
 3\. When end-of-file is encountered and the *eof-error-p* argument is not **nil**, the kind of error that is signaled may depend on the value of *recursive-p*. If *recursive-p* is *true*, then the end-of-file is deemed to have occurred within the middle of a printed representation; if *recursive-p* is *false*, then the end-of-file may be deemed to have occurred between *objects* rather than within the middle of one. 
 
-Reader **23–3**
+
 
  
 
@@ -138,7 +138,7 @@ replaces the current *readtable* with a copy of itself. This is useful if you wa
 
 Initially, every *character* in the dispatch table associated with the *char* has an associated function that signals an error of *type* **reader-error**. 
 
-Reader **23–5**
+
 
  
 
@@ -256,7 +256,7 @@ Consider now calling **read** on this expression:
 
 The / macro reads objects separated by more / characters; thus /usr/games/zork is intended to read as (path usr games zork). The entire example expression should therefore be read as 
 
-Reader **23–7**
+
 
  
 
@@ -354,7 +354,7 @@ shown above were not included, then the &#125; in
 
 #&#123; p q z a&#125; 
 
-Reader **23–9**
+
 
  
 
@@ -450,7 +450,7 @@ The reason that *position* is allowed to be beyond the *length* of the *string* 
 
 *mode*—a *case sensitivity mode*. 
 
-Reader **23–11**
+
 
  
 
@@ -560,7 +560,7 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 
 (setq list (nth n list))) 
 
-Reader **23–13**
+
 
  
 
@@ -686,7 +686,7 @@ The *readtable* is modified.
 
 **\*readtable\*** 
 
-Reader **23–15**
+
 
  
 
@@ -758,7 +758,7 @@ The *constituent traits* of a *character* are “hard wired” into the parser f
 
 Within the dynamic extent of the body of *forms*, all reader/printer control variables, including any *implementation-defined* ones not specified by this standard, are bound to values that produce standard read/print behavior. The values for the variables specified by this standard are listed in Figure 23–1. 
 
-Reader **23–17**
+
 
  
 
@@ -845,7 +845,7 @@ Altering the input radix can be useful when reading data files in special format
 
 one of the *atomic type specifiers* **short-float**, **single-float**, **double-float**, or **long-float**, or else some other *type specifier* defined by the *implementation* to be acceptable. 
 
-Reader **23–19**
+
 
  
 
@@ -929,7 +929,7 @@ Dispatching macro characters (including *sharpsign*)
 
 The #= notation is totally ignored. It does not read a following *object*. It produces no *object*, but is treated as *whitespace*&#60;sub&#62;2&#60;/sub&#62;. 
 
-Reader **23–21**
+
 
  
 
@@ -1023,7 +1023,7 @@ The *type* **reader-error** consists of error conditions that are related to tok
 
 **read**, **stream-error-stream**, Section 23.1 (Reader Concepts) 
 
-Reader **23–23**
+
 
  
 

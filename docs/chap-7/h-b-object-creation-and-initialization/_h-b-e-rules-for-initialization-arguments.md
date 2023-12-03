@@ -44,7 +44,7 @@ The following is an example of the above rules:
 
 (make-instance ’r ’a 1 ’a 2) (a 1 a 2 b 2) 1 
 
-Objects **7–5**
+
 
  
 

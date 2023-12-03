@@ -16,7 +16,7 @@ Events 2 and 3 are actually performed interleaved, in the order corresponding to
 
 Event 4 occurs at the end of the transfer of control. 
 
-Data and Control Flow **5–13**
+Data and Control 
 
 
 
@@ -128,7 +128,7 @@ Evaluating **defun** causes *function-name* to be a global name for the *functio
 
 processed in the *lexical environment* in which **defun** was executed. 
 
-Data and Control Flow **5–15**
+Data and Control 
 
 
 
@@ -242,7 +242,7 @@ An error of *type* **undefined-function** is signaled in the non-**setf** case i
 
 **setf** can be used with **fdefinition** to replace a global function definition when the *function-name*’s function definition does not represent a *special form*. **setf** of **fdefinition** requires a *function* as the new value. It is an error to set the **fdefinition** of a *function-name* to a *symbol*, a *list*, or the value returned by **fdefinition** on the name of a *macro* or *special form*. 
 
-Data and Control Flow **5–17**
+Data and Control 
 
 
 
@@ -368,7 +368,7 @@ The consequences are undefined if *name* is a *special operator* .
 
 **fboundp**, **makunbound** 
 
-Data and Control Flow **5–19**
+Data and Control 
 
 
 
@@ -454,7 +454,7 @@ The macro-expansion functions defined by **macrolet** are defined in the *lexica
 
 Any *local-documentation* is attached to the corresponding local *macro function* as a *documentation string*. 
 
-Data and Control Flow **5–21**
+Data and Control 
 
 
 
@@ -614,7 +614,7 @@ It is not possible to define recursive *functions* with **flet**. **labels** can
 
 If a **macrolet** *form* is a *top level form*, the body *forms* are also processed as *top level forms*. See Section 3.2.3 (File Compilation). 
 
-Data and Control Flow **5–23**
+Data and Control 
 
 
 
@@ -724,7 +724,7 @@ This works because **function** creates a *closure* of the *lambda expression* t
 
 **defun**, **fdefinition**, **flet**, **labels**, **symbol-function**, Section 3.1.2.1.1 (Symbols as Forms), Section 2.4.8.2 (Sharpsign Single-Quote), Section 22.1.3.13 (Printing Other Objects) 
 
-Data and Control Flow **5–25**
+Data and Control 
 
 
 
@@ -844,7 +844,7 @@ The following examples illustrate some possible return values, but are not inten
 
 Although *implementations* are free to return “**nil**, *true*, **nil**” in all cases, they are encouraged to return a *lambda expression* as the *primary value* in the case where the argument was created by a call to **compile** or **eval** (as opposed to being created by *loading* a *compiled file*). 
 
-Data and Control Flow **5–27**
+Data and Control 
 
 
 
@@ -964,7 +964,7 @@ The upper exclusive bound on the number of *arguments* that may be passed to a *
 
 **lambda-parameters-limit**, **multiple-values-limit** 
 
-Data and Control Flow **5–29**
+Data and Control 
 
 
 
@@ -1044,7 +1044,7 @@ The side effects of the execution of **defconstant** must be equivalent to at le
 
 If a **defconstant** *form* appears as a *top level form*, the *compiler* must recognize that *name* names a *constant variable*. An implementation may choose to evaluate the value-form at compile time, load time, or both. Therefore, users must ensure that the *initial-value* can be *evaluated* at compile time (regardless of whether or not references to *name* appear in the file) and that it always *evaluates* to the same value. 
 
-Data and Control Flow **5–31**
+Data and Control 
 
 
 
@@ -1158,7 +1158,7 @@ Here the initial value, (), for the variable \*the-interesting-numbers\* is just
 
 (dotimes (i n) (si:%beep 1000. 100000.) (sleep 0.1))) 
 
-Data and Control Flow **5–33**
+Data and Control 
 
 
 
@@ -1268,7 +1268,7 @@ The *lambda-list* supports destructuring as described in Section 3.4.5 (Destruct
 
 (list a b three two one)) *→* (ALPHA BEE 3 2 1) 
 
-Data and Control Flow **5–35**
+Data and Control 
 
 
 
@@ -1400,7 +1400,7 @@ The code
 
 (let (x) 
 
-Data and Control Flow **5–37**
+Data and Control 
 
 
 
@@ -1512,7 +1512,7 @@ c *→* 3
 
 ;; Use of SETQ to update values by sequential assignment. 
 
-Data and Control Flow **5–39**
+Data and Control 
 
 
 
@@ -1644,7 +1644,7 @@ The values of *forms* are assigned to *vars*.
 
 **block** *name form*\* *→ &#123;result&#125;*\* 
 
-Data and Control Flow **5–41**
+Data and Control 
 
 
 
@@ -1750,7 +1750,7 @@ The mechanism for **catch** and **throw** works even if **throw** is not within 
 
 (catch ’dummy-tag (throw-back ’dummy-tag) 2) *→* T 
 
-Data and Control Flow **5–43**
+Data and Control 
 
 
 
@@ -1868,7 +1868,7 @@ The transfer of control initiated by **return-from** is performed as described i
 
 a) *→* 2 
 
-Data and Control Flow **5–45**
+Data and Control 
 
 
 
@@ -2006,7 +2006,7 @@ Returns, as if by **return-from**, from the *block* named **nil**.
 
 The *implicit blocks established* by *macros* such as **do** are often named **nil**, so that **return** can be used to exit from such *forms*. 
 
-Data and Control Flow **5–47**
+Data and Control 
 
 
 
@@ -2136,7 +2136,7 @@ The *macros* in Figure 5–10 have *implicit tagbodies*.
 
 *result-form*—a *form*; evaluated as described below. 
 
-Data and Control Flow **5–49**
+Data and Control 
 
 
 
@@ -2244,7 +2244,7 @@ Undoing of *handler* and *restart bindings* during an exit happens in parallel w
 
 (let ((x 3)) 
 
-Data and Control Flow **5–51**
+Data and Control 
 
 
 
@@ -2404,7 +2404,7 @@ If an exit occurs before completion of **incf**, the **decf** *form* is executed
 
 (print ’xxx)))) 
 
-Data and Control Flow **5–53**
+Data and Control 
 
 
 
@@ -2512,7 +2512,7 @@ Returns **t** if *x* is *false*; otherwise, returns **nil**.
 
 The *boolean* representing true, and the canonical *generalized boolean* representing true. Although any *object* other than **nil** is considered *true*, **t** is generally used when there is no special reason to prefer one such *object* over another. 
 
-Data and Control Flow **5–55**
+Data and Control 
 
 
 
@@ -2646,7 +2646,7 @@ An implementation is permitted to make “copies” of *characters* and *numbers
 
 Most Common Lisp *operators* use **eql** rather than **eq** to compare objects, or else they default to **eql** and only use **eq** if specifically requested to do so. However, the following *operators* are defined to use **eq** rather than **eql** in a way that cannot be overridden by the *code* which employs them: 
 
-Data and Control Flow **5–57**
+Data and Control 
 
 
 
@@ -2756,7 +2756,7 @@ Two *complex* numbers are considered to be **eql** if their real parts are **eql
 
 **equal** *x y → generalized-boolean* 
 
-Data and Control Flow **5–59**
+Data and Control 
 
 
 
@@ -2859,7 +2859,7 @@ Any two *objects* that are **eql** are also **equal**.
 
 *Object* equality is not a concept for which there is a uniquely determined correct algorithm. The appropriateness of an equality predicate can be judged only in the context of the needs of some particular program. Although these functions take any type of argument and their names sound 
 
-Data and Control Flow **5–61**
+Data and Control 
 
 
 
@@ -2956,7 +2956,7 @@ If two *structures S*&#60;sub&#62;1&#60;/sub&#62; and *S*&#60;sub&#62;2&#60;/sub
 
 (equalp "Foo" (copy-seq "Foo")) *→ true* 
 
-Data and Control Flow **5–63**
+Data and Control 
 
 
 
@@ -3072,7 +3072,7 @@ For example,
 
 (find-if (complement #’zerop) ’(0 0 3)) *→* 3 
 
-Data and Control Flow **5–65**
+Data and Control 
 
 
 
@@ -3164,7 +3164,7 @@ Note that since the “*xxx*-if-not” *functions* and the :test-not arguments h
 
 **notevery** returns *true* as soon as any invocation of *predicate* returns *false*. If the end of a *sequence* is reached, **notevery** returns *false*. Thus, **notevery** returns *true* if and only if it is not the case that every invocation of *predicate* returns *true*. 
 
-Data and Control Flow **5–67**
+Data and Control 
 
 
 
@@ -3276,7 +3276,7 @@ The above expression prints Foo! if element n of a-simple-vector is the symbol f
 
 **cond** allows the execution of *forms* to be dependent on *test-form*. 
 
-Data and Control Flow **5–69**
+Data and Control 
 
 
 
@@ -3400,7 +3400,7 @@ First *test-form* is evaluated. If the result is *true*, then *then-form* is sel
 
 **or** evaluates each *form*, one at a time, from left to right. The evaluation of all *forms* terminates when a *form* evaluates to *true* (*i.e.*, something other than **nil**). 
 
-Data and Control Flow **5–71**
+Data and Control 
 
 
 
@@ -3540,7 +3540,7 @@ In an **unless** *form*, if the *test-form yields false*, the *forms* are *evalu
 
 (unless *test &#123;form&#125;*&#60;sup&#62;+&#60;/sup&#62;) *≡* (when (not *test*) *&#123;form&#125;*&#60;sup&#62;+&#60;/sup&#62;) 
 
-Data and Control Flow **5–73**
+Data and Control 
 
 
 
@@ -3654,7 +3654,7 @@ Note that in contrast with **ccase**, the caller of **ecase** may rely on the fa
 
 *→* DECODE 
 
-Data and Control Flow **5–75**
+Data and Control 
 
 
 
@@ -3766,7 +3766,7 @@ If there is no *otherwise-clause*, **typecase** returns **nil**.
 
 If no *normal-clause* matches, a *correctable error* of *type* **type-error** is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (or *type1 type2* ...). The **store-value** *restart* can be used to correct the error. 
 
-If the **store-value** *restart* is invoked, its *argument* becomes the new *test-key*, and is stored Data and Control Flow **5–77**
+If the **store-value** *restart* is invoked, its *argument* becomes the new *test-key*, and is stored Data and Control 
 
 
 

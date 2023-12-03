@@ -26,7 +26,7 @@ Examples of *format strings*:
 
 **Figure 22–6. Examples of format control strings** 
 
-**format** sends the output to *destination*. If *destination* is **nil**, **format** creates and returns a *string* Printer **22–23**
+**format** sends the output to *destination*. If *destination* is **nil**, **format** creates and returns a *string* 
 
  
 

@@ -10,7 +10,7 @@ If no prefix parameters are given to ~R, then a different interpretation is give
 
 *•* ~@R prints *arg* as a Roman numeral: IV. 
 
-Printer **22–25**
+
 
  
 

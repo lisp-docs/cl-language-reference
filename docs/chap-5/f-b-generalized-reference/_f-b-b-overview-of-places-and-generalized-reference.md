@@ -23,7 +23,7 @@ Figure 5–2 shows *operators* relating to *places* and *generalized reference*.
 
 Some of the *operators* above manipulate *places* and some manipulate *setf expanders*. A *setf expansion* can be derived from any *place*. New *setf expanders* can be defined by using **defsetf** and **define-setf-expander**. 
 
-Data and Control Flow **5–1**
+Data and Control 
 
 
 

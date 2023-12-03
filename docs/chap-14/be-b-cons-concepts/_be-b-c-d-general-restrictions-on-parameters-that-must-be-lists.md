@@ -4,7 +4,7 @@ Except as explicitly specified otherwise, any *standardized function* that takes
 
 Except as explicitly specified otherwise, for any *standardized function* that takes a *parameter* that is required to be a *list*, the consequences are undefined if that *list* is *circular* . 
 
-Conses **14–3**
+
 
  
 
@@ -92,7 +92,7 @@ Section 2.4.1 (Left-Parenthesis), Section 22.1.3.5 (Printing Lists and Conses)
 
 It is equivalent to (not cons). 
 
-Conses **14–5**
+
 
  
 
@@ -210,7 +210,7 @@ Returns *true* if *object* is of *type* **atom**; otherwise, returns *false*.
 
 (atom 3) *→ true* 
 
-Conses **14–7**
+
 
  
 
@@ -352,7 +352,7 @@ Should signal an error of *type* **type-error** if *cons* is not a *cons*.
 
 **cadr**: [ **ka d*** **r** ] 
 
-Conses **14–9**
+
 
  
 
@@ -409,7 +409,7 @@ The argument *x* is permitted to be a *dotted list* or a *circular list*.
 
 (cdr ’(1 2)) *→* (2) 
 
-Conses **14–11**
+
 
  
 
@@ -529,7 +529,7 @@ copy-as-tree *→* ((1 . "one") (2 A B C))
 
 *new-tree*—a *tree*. 
 
-Conses **14–13**
+
 
  
 
@@ -655,7 +655,7 @@ Because the side-effecting variants (*e.g.*, **nsublis**) potentially change the
 
 *old*—an *object*. 
 
-Conses **14–15**
+
 
  
 
@@ -771,7 +771,7 @@ tree
 
 (cons a d)))))) 
 
-Conses **14–17**
+
 
  
 
@@ -895,7 +895,7 @@ The consequences are undefined if *list* is a *circular list*.
 
 The copy created is **equal** to *list*, but not **eq**. 
 
-Conses **14–19**
+
 
  
 
@@ -1025,7 +1025,7 @@ Should signal an error of *type* **type-error** if *list* is not a *proper list*
 
 (fast x (cddr fast)) ;Fast pointer: leaps by 2. 
 
-Conses **14–21**
+
 
  
 
@@ -1147,7 +1147,7 @@ Should signal an error of *type* **type-error** if *size* is not a non-negative 
 
 *new-place-value*—a *list* (the new *value* of *place*). 
 
-Conses **14–23**
+
 
  
 
@@ -1273,7 +1273,7 @@ except that the latter would evaluate any *subforms* of *place* three times, whi
 
 *list*—a *list*, which might be a *dotted list* or a *circular list*. 
 
-Conses **14–25**
+
 
  
 
@@ -1393,7 +1393,7 @@ The ordinal numbering used here is one-origin, as opposed to the zero-origin num
 
 **elt**, **first**, **nthcdr** 
 
-Conses **14–27**
+
 
  
 
@@ -1499,7 +1499,7 @@ Returns a *list* that is the concatenation of *lists*. If no *lists* are supplie
 
 (nconc *list-1 list-2* . *lists*) *≡* (nconc (nconc *list-1 list-2*) . *lists*) 
 
-Conses **14–29**
+
 
  
 
@@ -1621,7 +1621,7 @@ lst *→* (A B C)
 
 The resulting *list* shares *list structure* with *tail*. 
 
-Conses **14–31**
+
 
  
 
@@ -1759,7 +1759,7 @@ lst *→* (1 2 3 4 5 6)
 
 foo *→* (A B C) 
 
-Conses **14–33**
+
 
  
 
@@ -1881,7 +1881,7 @@ The following code could be used to define **last**.
 
 *generalized-boolean*—a *generalized boolean*. 
 
-Conses **14–35**
+
 
  
 
@@ -2021,7 +2021,7 @@ and **ldiff** could be defined by:
 
 **Description:** 
 
-Returns the *tail* of *list* that would be obtained by calling **cdr** *n* times in succession. Conses **14–37**
+Returns the *tail* of *list* that would be obtained by calling **cdr** *n* times in succession. 
 
  
 
@@ -2135,7 +2135,7 @@ If some element *satisfies the test*, the tail of *list* beginning with this ele
 
 *list* is searched on the top level only. 
 
-Conses **14–39**
+
 
  
 
@@ -2241,7 +2241,7 @@ and similarly for the relationship between **mapcan** and **mapcar**.
 
 (mapcar #’abs ’(3 -4 2 -5 -6)) *→* (3 4 2 5 6) 
 
-Conses **14–41**
+
 
  
 
@@ -2359,7 +2359,7 @@ alist *→* NIL
 
 **assoc-if** *predicate alist* &key *key → entry* 
 
-Conses **14–43**
+
 
  
 
@@ -2477,7 +2477,7 @@ The *list structure* of *alist* is copied, and the *elements* of *alist* which a
 
 (defparameter \*alist\* (acons 1 "one" (acons 2 "two" ’()))) 
 
-Conses **14–45**
+
 
  
 
@@ -2591,7 +2591,7 @@ Should be prepared to signal an error of *type* **type-error** if *keys* and *da
 
 *entry*—a *cons* that is an *element* of the *alist*, or **nil**. 
 
-Conses **14–47**
+
 
  
 
@@ -2707,7 +2707,7 @@ x *→* (PROP1 VAL1)
 
 *place*—a *place*, the *value* of which is a *property list*. 
 
-Conses **14–49**
+
 
  
 
@@ -2817,7 +2817,7 @@ The *property indicator* and the corresponding *property value* are removed in a
 
 For information about the *evaluation* of *subforms* of *place*, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
 
-Conses **14–51**
+
 
  
 
@@ -2931,7 +2931,7 @@ Should be prepared to signal an error of *type* **type-error** if *list-1* and *
 
 The :test-not parameter is deprecated. 
 
-Since the **nintersection** side effect is not required, it should not be used in for-effect-only positions Conses **14–53**
+Since the **nintersection** side effect is not required, it should not be used in for-effect-only positions 
 
  
 
@@ -3033,7 +3033,7 @@ The argument to the :key function is an element of the *list* stored in *place*.
 
 For information about the *evaluation* of *subforms* of *place*, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
 
-Conses **14–55**
+
 
  
 
@@ -3161,7 +3161,7 @@ lst2 *→* (("c" . "a") ("e" . "b") ("d" . "a"))
 
 *→* ("banana" "rhubarb" "lemon") ;One possible ordering. 
 
-Conses **14–57**
+
 
  
 
@@ -3271,7 +3271,7 @@ Since the **nset-exclusive-or** side effect is not required, it should not be us
 
 **subsetp** *list-1 list-2* &key *key test test-not → generalized-boolean* 
 
-Conses **14–59**
+
 
  
 
@@ -3363,7 +3363,7 @@ If there is a duplication between *list-1* and *list-2*, only one of the duplica
 
 The order of elements in the result do not have to reflect the ordering of *list-1* or *list-2* in any way. The result *list* may be **eq** to either *list-1* or *list-2* if appropriate. 
 
-Conses **14–61**
+
 
  
 

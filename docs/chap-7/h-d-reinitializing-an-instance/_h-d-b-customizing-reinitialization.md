@@ -4,7 +4,7 @@
 
 *Methods* for **shared-initialize** may be defined to customize *class* redefinition. For more information, see Section 7.1.5 (Shared-Initialize). 
 
-Objects **7–11**
+
 
  
 

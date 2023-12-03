@@ -4,7 +4,7 @@
 
 The *function* **slot-value** can be used with any of the *slot* names specified in the **defclass** form to *access* a specific *slot accessible* in an *instance* of the given *class*. 
 
-Objects **7–13**
+
 
  
 

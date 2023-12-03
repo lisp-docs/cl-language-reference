@@ -76,7 +76,7 @@ Two values are returned: a *list* of the explicitly named keywords and a *genera
 
 **defmethod** 
 
-Objects **7–27**
+
 
  
 
@@ -166,7 +166,7 @@ If *function-name* specifies a *generic function* that has a different value for
 
 *initargs*—a *list* of *keyword/value pairs* (initialization argument *names* and *values*). *new-instance*—an *object* whose *class* is *class*. 
 
-Objects **7–29**
+
 
  
 
@@ -258,7 +258,7 @@ The generic function **shared-initialize** is used to fill the *slots* of an *in
 
 The generic function **shared-initialize** takes the following arguments: the *instance* to be initialized, a specification of a set of *slot-names accessible* in that *instance*, and any number of *initargs*. The arguments after the first two must form an *initialization argument list*. The system-supplied 
 
-Objects **7–31**
+
 
  
 
@@ -332,7 +332,7 @@ The system-supplied primary *method* on **update-instance-for-different-class** 
 
 *Methods* on **update-instance-for-different-class** can be defined to initialize *slots* differently from **change-class**. The default behavior of **change-class** is described in Section 7.2 (Changing the Class of an Instance). 
 
-Objects **7–33**
+
 
  
 
@@ -418,7 +418,7 @@ The value returned by **update-instance-for-redefined-class** is ignored.
 
 **Examples:** 
 
-Objects **7–35**
+
 
  
 
@@ -536,7 +536,7 @@ The system-supplied primary *method* on **update-instance-for-redefined-class** 
 
 The *generic function* **change-class** changes the *class* of an *instance* to *new-class*. It destructively modifies and returns the *instance*. 
 
-Objects **7–37**
+
 
  
 
@@ -652,7 +652,7 @@ If no *slot* of the *name slot-name* exists in the *instance*, **slot-missing** 
 
 (If **slot-missing** is invoked and returns a value, a *boolean equivalent* to its *primary value* is returned by **slot-boundp**.) 
 
-Objects **7–39**
+
 
  
 
@@ -746,7 +746,7 @@ The specific behavior depends on *instance*’s *metaclass*. An error is never s
 
 Although no *implementation* is required to do so, implementors are strongly encouraged to implement the *function* **slot-makunbound** using the *function* slot-makunbound-using-class described in the *Metaobject Protocol*. 
 
-Objects **7–41**
+
 
  
 
@@ -850,7 +850,7 @@ The default *method* on **slot-unbound** signals an error of *type* **unbound-sl
 
 **slot-makunbound** 
 
-Objects **7–43**
+
 
  
 
@@ -966,7 +966,7 @@ Implementations may optimize **slot-value** by compiling it inline.
 
 **method-qualifiers** *method → qualifiers* 
 
-Objects **7–45**
+
 
  
 
@@ -1072,7 +1072,7 @@ The system-supplied *method* on **no-next-method** signals an error of *type* **
 
 **call-next-method** 
 
-Objects **7–47**
+
 
  
 
@@ -1174,7 +1174,7 @@ The generic function **make-instances-obsolete** is invoked automatically by the
 
 If the second of the above *methods* is selected, that *method* invokes **make-instances-obsolete** on (find-class *class*). 
 
-Objects **7–49**
+
 
  
 
@@ -1246,7 +1246,7 @@ It is *implementation-dependent* whether **load** calls **eval** on the *forms* 
 
 The *method specialized* on **class** returns a creation *form* using the *name* of the *class* if the *class* has a *proper name* in *environment*, signaling an error of *type* **error** if it does not have a *proper name*. *Evaluation* of the creation *form* uses the *name* to find the *class* with that *name*, as if by 
 
-Objects **7–51**
+
 
  
 
@@ -1384,7 +1384,7 @@ In the following example, the data structure to be dumped has no special propert
 
 (make-load-form-saving-slots s :environment environment)) 
 
-Objects **7–53**
+
 
  
 
@@ -1480,7 +1480,7 @@ When the *object* is an *instance* of **standard-object**, **make-load-form-savi
 
 Creates a lexical environment in which the slots specified by *slot-entry* are lexically available through their accessors as if they were variables. The macro **with-accessors** invokes the appropriate accessors to *access* the *slots* specified by *slot-entry*. Both **setf** and **setq** can be used to set the value of the *slot*. 
 
-Objects **7–55**
+
 
  
 
@@ -1616,7 +1616,7 @@ The macro **with-slots** translates an appearance of the slot name as a *variabl
 
 (defclass thing () 
 
-Objects **7–57**
+
 
  
 
@@ -1760,7 +1760,7 @@ if &#60;i&#62;slot-entry&#60;sub&#62;i&#60;/sub&#62;&#60;/i&#62;is of the form
 
 (:metaclass *class-name*) 
 
-Objects **7–59**
+
 
  
 
@@ -1840,7 +1840,7 @@ list of *C*&#60;sub&#62;2&#60;/sub&#62; and that defines a *slot* of the same *n
 
 *•* The :initform slot option is used to provide a default initial value form to be used in the initialization of the *slot*. This *form* is evaluated every time it is used to initialize the *slot*. The lexical environment in which this *form* is evaluated is the lexical environment in which the **defclass** form was evaluated. Note that the lexical environment refers both to variables 
 
-Objects **7–61**
+
 
  
 
@@ -1908,7 +1908,7 @@ It is required that all implementations signal an error of *type* **program-erro
 
 **documentation**, **initialize-instance**, **make-instance**, **slot-value**, Section 4.3 (Classes), Section 4.3.4 (Inheritance), Section 4.3.6 (Redefining Classes), Section 4.3.5 (Determining the Class Precedence 
 
-Objects **7–63**
+
 
  
 
@@ -1990,7 +1990,7 @@ The following options are provided. Except as otherwise noted, a given option ma
 
 An **optimize** *declaration specifier* is allowed. It specifies whether method selection should be optimized for speed or space, but it has no effect on *methods*. To control how a *method* is optimized, an **optimize** declaration must be placed directly in the **defmethod** *form* or method description. The optimization qualities **speed** and **space** are the only qualities this standard requires, but an implementation can extend the object system to recognize other qualities. A simple implementation that has only one method selection technique and ignores **optimize** *declaration specifiers* is valid. 
 
-Objects **7–65**
+
 
  
 
@@ -2060,7 +2060,7 @@ Implementations can extend **defgeneric** to include other options. It is requir
 
 *function-name*::= *&#123;symbol |* (setf *symbol*)*&#125;* 
 
-Objects **7–67**
+
 
  
 
@@ -2142,7 +2142,7 @@ Declarations at the head of the method body that apply to the functional binding
 
 The *scope* of *free declarations* at the head of the method body is the entire method body, which includes any implicit local function definitions but excludes *initialization forms* for the *lambda variables*. 
 
-**defmethod** is not required to perform any compile-time side effects. In particular, the *methods* Objects **7–69**
+**defmethod** is not required to perform any compile-time side effects. In particular, the *methods* 
 
  
 
@@ -2232,7 +2232,7 @@ Whether or not **next-method-p** is *fbound* in the *global environment* is *imp
 
 **call-next-method**, **defmethod**, **call-method** 
 
-Objects **7–71**
+
 
  
 
@@ -2312,7 +2312,7 @@ When **call-next-method** is called with arguments, the *next method* is called 
 
 If **call-next-method** is called with arguments but omits optional arguments, the *next method* called defaults those arguments. 
 
-The *function* **call-next-method** returns any *values* that are returned by the *next method*. Objects **7–73**
+The *function* **call-next-method** returns any *values* that are returned by the *next method*. 
 
  
 
@@ -2418,7 +2418,7 @@ Section 7.6.6 (Method Selection and Combination)
 
 *forms*—an *implicit progn* that must compute and return the *form* that specifies how the *methods* are combined, that is, the *effective method*. 
 
-Objects **7–75**
+
 
  
 
@@ -2504,7 +2504,7 @@ The *car* of each *method-group-specifier* is a *symbol* which *names* a *variab
 
 If *qualifier-pattern* is a *symbol* it must be **\***. A method matches a *qualifier-pattern* if the method’s list of *qualifiers* is **equal** to the *qualifier-pattern* (except that the symbol **\*** in a *qualifier-pattern* matches anything). Thus a *qualifier-pattern* can be one of the following: the *empty list*, which matches *unqualified methods*; the symbol **\***, which matches all methods; a true list, which matches methods with the same number of *qualifiers* as the length of the list when each *qualifier* matches the corresponding list element; or a dotted list that ends 
 
-Objects **7–77**
+
 
  
 

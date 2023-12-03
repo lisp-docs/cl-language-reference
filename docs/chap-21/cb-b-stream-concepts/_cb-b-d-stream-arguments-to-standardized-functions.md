@@ -16,7 +16,7 @@ The *operators* in Figure 21–8 accept *stream arguments* that must be *open st
 
 **Figure 21–8. Operators that accept Open Streams only** 
 
-Streams **21–5**
+
 
  
 

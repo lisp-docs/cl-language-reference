@@ -8,7 +8,7 @@ If **\*print-readably\*** is *true*, the *vector* prints in an *implementation-d
 
 For information on how the *Lisp reader* parses these “other *vectors*,” see Section 2.4.8.3 (Sharpsign Left-Parenthesis). 
 
-Printer **22–9**
+
 
  
 

@@ -10,7 +10,7 @@ If *arg* is not **eql** to the integer 1, a lowercase s is printed; if *arg* is 
 
 (format nil "~D tr~:@P/~D win~:P" 1 0) *→* "1 try/0 wins" 
 
-Printer **22–39**
+
 
  
 

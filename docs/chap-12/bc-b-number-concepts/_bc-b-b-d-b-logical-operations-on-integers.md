@@ -10,7 +10,7 @@ Figure 12–5 shows *defined names* relating to logical operations on numbers.
 
 **Figure 12–5. Defined names relating to logical operations on numbers.** 
 
-Numbers **12–3**
+
 
  
 

@@ -60,7 +60,7 @@ The figures on the next twelve pages contain a complete enumeration of the 978 *
 | :- |
 
 
-**Figure 1–10. Symbols in the COMMON-LISP package (part seven of twelve).** Introduction **1–41**
+**Figure 1–10. Symbols in the COMMON-LISP package (part seven of twelve).** 
 
 
 
@@ -98,7 +98,7 @@ The figures on the next twelve pages contain a complete enumeration of the 978 *
 | :- |
 
 
-**Figure 1–14. Symbols in the COMMON-LISP package (part eleven of twelve).** Introduction **1–45**
+**Figure 1–14. Symbols in the COMMON-LISP package (part eleven of twelve).** 
 
 
 

@@ -14,7 +14,7 @@ Except where explicitly allowed, the consequences are undefined if any of the fo
 
 8\. Altering its *home package*. 
 
-Packages **11–5**
+
 
  
 

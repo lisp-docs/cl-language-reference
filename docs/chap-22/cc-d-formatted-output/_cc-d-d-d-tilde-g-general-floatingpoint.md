@@ -1,6 +1,6 @@
  
 
-The next *arg* is printed as a *float* in either fixed-format or exponential notation as appropriate. Printer **22–29**
+The next *arg* is printed as a *float* in either fixed-format or exponential notation as appropriate. 
 
  
 

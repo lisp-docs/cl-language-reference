@@ -74,7 +74,7 @@ finally (prin1 ’got-here))
 
 (loop for z upfrom 2 
 
-Iteration **6–23**
+
 
  
 

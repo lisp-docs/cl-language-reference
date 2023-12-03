@@ -18,7 +18,7 @@ The semantics of standard method combination is as follows:
 
 *•* Inside the body of an *around method*, **call-next-method** can be used to call the *next method*. When the next method returns, the *around method* can execute more code, perhaps based on the returned value or values. The *generic function* **no-next-method** is invoked if **call-next-method** is used and there is no *applicable method* to call. The *function* **next-method-p** may be used to determine whether a *next method* exists. 
 
-Objects **7–23**
+
 
  
 

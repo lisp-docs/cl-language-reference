@@ -4,7 +4,7 @@
 
 *Implementations* that extend the language by defining additional acceptable equivalence tests for *hash tables* (allowing additional values for the :test argument to **make-hash-table**) must document the visible components of these tests. 
 
-Hash Tables **18–3**
+Hash 
 
  
 
@@ -100,7 +100,7 @@ The *values* of *rehash-size* and *rehash-threshold* do not constrain the *imple
 
 Returns *true* if *object* is of *type* **hash-table**; otherwise, returns *false*. 
 
-Hash Tables **18–5**
+Hash 
 
  
 
@@ -220,7 +220,7 @@ Should signal an error of *type* **type-error** if *hash-table* is not a *hash t
 
 If the hash table was created with an *integer* rehash size, the result is an *integer* , indicating that the rate of growth of the *hash-table* when rehashed is intended to be additive; otherwise, the result 
 
-Hash Tables **18–7**
+Hash 
 
  
 
@@ -314,7 +314,7 @@ Should signal an error of *type* **type-error** if *hash-table* is not a *hash t
 
 **make-hash-table** 
 
-Hash Tables **18–9**
+Hash 
 
  
 
@@ -438,7 +438,7 @@ Removes the entry for *key* in *hash-table*, if any. Returns *true* if there was
 
 The *hash-table* is modified. 
 
-Hash Tables **18–11**
+Hash 
 
  
 
@@ -562,7 +562,7 @@ Any number of invocations of **with-hash-table-iterator** can be nested, and the
 
 The following function should return **t** on any *hash table*, and signal an error if the usage of **with-hash-table-iterator** does not agree with the corresponding usage of **maphash**. 
 
-Hash Tables **18–13**
+Hash 
 
  
 
@@ -690,7 +690,7 @@ The manner in which the hash code is computed is *implementation-dependent*, but
 
 3\. The *hash-code* for an *object* is always the *same* within a single *session* provided that the *object* is not visibly modified with regard to the equivalence test **equal**. See Section 18.1.2 (Modifying Hash Table Keys). 
 
-Hash Tables **18–15**
+Hash 
 
  
 

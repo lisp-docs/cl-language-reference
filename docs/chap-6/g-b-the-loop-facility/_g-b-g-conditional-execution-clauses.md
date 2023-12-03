@@ -14,7 +14,7 @@ The *loop keyword* it can be used to refer to the result of the test expression 
 
 The optional *loop keyword* end marks the end of the clause. If this keyword is not supplied, the next *loop keyword* marks the end. The construct end can be used to distinguish the scoping of compound clauses. 
 
-Iteration **6–25**
+
 
  
 

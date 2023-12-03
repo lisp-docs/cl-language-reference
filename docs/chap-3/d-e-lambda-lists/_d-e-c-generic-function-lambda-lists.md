@@ -22,7 +22,7 @@ A *generic function lambda list* can contain the *lambda list keywords* shown in
 | :- |
 
 
-**Figure 3–14. Lambda List Keywords used by Generic Function Lambda Lists** Evaluation and Compilation **3–39**
+**Figure 3–14. Lambda List Keywords used by Generic Function Lambda Lists** Evaluation and 
 
 
 

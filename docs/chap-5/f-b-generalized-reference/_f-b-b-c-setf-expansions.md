@@ -24,7 +24,7 @@ a *form* which can reference the temporary variables, and which returns the *val
 
 The value returned by the accessing form is affected by execution of the storing form, but either of these forms might be evaluated any number of times. 
 
-Data and Control Flow **5–3**
+Data and Control 
 
 
 

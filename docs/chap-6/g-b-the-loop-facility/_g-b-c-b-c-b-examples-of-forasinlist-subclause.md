@@ -26,7 +26,7 @@ do (print item))
 
 *→* NIL 
 
-Iteration **6–11**
+
 
  
 

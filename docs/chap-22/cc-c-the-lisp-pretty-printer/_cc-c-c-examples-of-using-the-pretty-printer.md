@@ -72,7 +72,7 @@ As an example of a per-line prefix, consider that evaluating the following produ
 
 ;;; (DEFUN PROD 
 
-Printer **22–17**
+
 
  
 
@@ -200,7 +200,7 @@ Evaluating the following with a line length of 15 produces the output shown.
 
 (pprint-vector \*standard-output\* ’#(12 34 567 8 9012 34 567 89 0 1 23)) 
 
-Printer **22–19**
+
 
  
 
@@ -314,7 +314,7 @@ Mark Bob . Dan&#62;)
 
 Note that a pretty printing function for a structure is different from the structure’s **print-object** *method*. While **print-object** *methods* are permanently associated with a structure, pretty printing functions are stored in *pprint dispatch tables* and can be rapidly changed to reflect different printing needs. If there is no pretty printing function for a structure in the current *pprint dispatch table*, its **print-object** *method* is used instead. 
 
-Printer **22–21**
+
 
  
 

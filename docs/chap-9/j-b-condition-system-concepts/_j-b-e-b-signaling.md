@@ -16,7 +16,7 @@ Figure 9–5 shows *defined names* relating to the *signaling* of *conditions*.
 
 **Figure 9–5. Defined names relating to signaling conditions.** 
 
-Conditions **9–7**
+
 
  
 

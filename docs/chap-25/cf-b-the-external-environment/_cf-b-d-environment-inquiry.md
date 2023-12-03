@@ -4,7 +4,7 @@ Environment inquiry *defined names* provide information about the hardware and s
 
 Figure 25–3 shows *defined names* relating to environment inquiry. 
 
-Environment **25–1**
+
 
  
 

@@ -6,7 +6,7 @@ A *boa lambda list* is used only in a **defstruct** *form*, when explicitly spec
 
 The **&optional**, **&rest**, **&aux**, **&key**, and **&allow-other-keys** *lambda list keywords* are recognized in a *boa lambda list*. The way these *lambda list keywords* differ from their use in an *ordinary lambda list* follows. 
 
-Consider this example, which describes how **destruct** processes its :constructor option. Evaluation and Compilation **3–45**
+Consider this example, which describes how **destruct** processes its :constructor option. Evaluation and 
 
 
 

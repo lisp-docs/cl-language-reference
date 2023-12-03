@@ -10,7 +10,7 @@ Of these, the *functions* in Figure 20–2 treat *open* and *closed streams* dif
 
 **Figure 20–2. File Functions that Treat Open and Closed Streams Differently** 
 
-Files **20–1**
+
 
  
 

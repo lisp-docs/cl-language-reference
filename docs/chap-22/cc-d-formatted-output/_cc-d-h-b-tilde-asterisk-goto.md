@@ -6,7 +6,7 @@ The next *arg* is ignored. ~*n*\* ignores the next *n* arguments.
 
 When within a ~&#123; construct (see below), the ignoring (in either direction) is relative to the list of arguments being processed by the iteration. 
 
-Printer **22–35**
+
 
  
 

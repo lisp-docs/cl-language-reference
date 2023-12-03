@@ -4,7 +4,7 @@ Other, *implementation-defined packages* might be present in the initial Common 
 
 It is recommended, but not required, that the documentation for a *conforming implementation* contain a full list of all *package* names initially present in that *implementation* but not specified in this specification. (See also the *function* **list-all-packages**.) 
 
-Packages **11–7**
+
 
  
 
@@ -98,7 +98,7 @@ If any of the *symbols* is not *accessible* at all in *package*, an error of *ty
 
 *status*—one of :inherited, :external, :internal, or **nil**. 
 
-Packages **11–9**
+
 
  
 
@@ -214,7 +214,7 @@ The set of *packages* created by the *implementation*.
 
 **make-package** 
 
-Packages **11–11**
+
 
  
 
@@ -316,7 +316,7 @@ Current state of the package system.
 
 **shadow**, **export** 
 
-Packages **11–13**
+
 
  
 
@@ -432,7 +432,7 @@ Specifically, *package* is searched for *symbols* with the *names* supplied by *
 
 (shadow ’test-1::test (find-package ’test-1)) *→* T 
 
-Packages **11–15**
+
 
  
 
@@ -538,7 +538,7 @@ Current state of the package system.
 
 **delete-package** deletes *package* from all package system data structures. If the operation is successful, **delete-package** returns true, otherwise **nil**. The effect of **delete-package** is that the name and nicknames of *package* cease to be recognized package names. The package *object* is still a *package* (*i.e.*, **packagep** is *true* of it) but **package-name** returns **nil**. The consequences of deleting the COMMON-LISP *package* or the KEYWORD *package* are undefined. The consequences of invoking any other package operation on *package* once it has been deleted are unspecified. In particular, the consequences of invoking **find-symbol**, **intern** and other functions that look for a symbol name in 
 
-Packages **11–17**
+
 
  
 
@@ -672,7 +672,7 @@ After this operation completes, the *home package* of any *symbol* whose *home p
 
 If the *package designator* is a *name* that does not currently name a *package*, a *correctable* error of *type* **package-error** is signaled. If correction is attempted, no deletion action is attempted; instead, **delete-package** immediately returns **nil**. 
 
-If *package* is used by other *packages*, a *correctable* error of *type* **package-error** is signaled. Packages **11–19**
+If *package* is used by other *packages*, a *correctable* error of *type* **package-error** is signaled. 
 
  
 
@@ -770,7 +770,7 @@ Within the lexical scope of the body *forms*, the *name* is defined via **macrol
 
 It is unspecified whether *symbols* inherited from multiple *packages* are returned more than once. The order of *symbols* returned does not necessarily reflect the order of *packages* in *package-list*. When *package-list* has more than one element, it is unspecified whether duplicate *symbols* are returned once or more than once. 
 
-*Symbol-types* controls which *symbols* that are *accessible* in a *package* are returned as follows: Packages **11–21**
+*Symbol-types* controls which *symbols* that are *accessible* in a *package* are returned as follows: 
 
  
 
@@ -904,7 +904,7 @@ The following function prints out every *present symbol* (possibly more than onc
 
 **with-package-iterator** signals an error of *type* **program-error** if no *symbol-types* are supplied or if a *symbol-type* is not recognized by the implementation is supplied. 
 
-The consequences are undefined if the local function named *name established* by Packages **11–23**
+The consequences are undefined if the local function named *name established* by 
 
  
 
@@ -1014,7 +1014,7 @@ temps-unpack *→* #:UNPACK
 
 Current state of the package system. 
 
-Packages **11–25**
+
 
  
 
@@ -1108,7 +1108,7 @@ Current state of the package system.
 
 **use-package**, **package-use-list** 
 
-Packages **11–27**
+
 
  
 
@@ -1218,7 +1218,7 @@ The arguments to :nicknames set the *package*’s nicknames to the supplied name
 
 :documentation 
 
-The argument to :documentation specifies a *documentation string*; it is attached as a Packages **11–29**
+The argument to :documentation specifies a *documentation string*; it is attached as a 
 
  
 
@@ -1318,7 +1318,7 @@ If one of the supplied :nicknames already refers to an existing *package*, an er
 
 An error of *type* **program-error** should be signaled if :size or :documentation appears more than once. 
 
-Packages **11–31**
+
 
  
 
@@ -1416,7 +1416,7 @@ unrecognized option in implementations that do not support it.
 
 **do-symbols**, **do-external-symbols**, and **do-all-symbols** iterate over the *symbols* of *packages*. For each *symbol* in the set of *packages* chosen, the *var* is bound to the *symbol*, and the *statements* in the body are executed. When all the *symbols* have been processed, *result-form* is evaluated and returned as the value of the macro. 
 
-Packages **11–33**
+
 
  
 
@@ -1528,7 +1528,7 @@ The *symbol* was found and is inherited via **use-package** (which implies that 
 
 No pre-existing *symbol* was found, so one was created. 
 
-Packages **11–35**
+
 
  
 
@@ -1624,7 +1624,7 @@ Returns the *list* of nickname *strings* for *package*, not including the name o
 
 Should signal an error of *type* **type-error** if *package* is not a *package designator* . 
 
-Packages **11–37**
+
 
  
 
@@ -1742,7 +1742,7 @@ Should signal an error of *type* **type-error** if *package* is not a *package*.
 
 **use-package**, **unuse-package** 
 
-Packages **11–39**
+
 
  
 
@@ -1852,7 +1852,7 @@ The *type* **package-error** consists of *error conditions* related to operation
 
 **package-error-package**, Chapter 9 (Conditions) 
 
-Packages **11–41**
+
 
  
 

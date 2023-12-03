@@ -32,7 +32,7 @@ NIL
 
 Note that in this example newlines appear in the output only as specified by the ~& and ~% directives; the actual newline characters in the control string are suppressed because each is preceded by a tilde. 
 
-Printer **22–41**
+
 
  
 

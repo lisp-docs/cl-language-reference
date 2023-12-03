@@ -16,7 +16,7 @@ Figure 22–5 identifies a set of *format directives* which serve as an alternat
 
 **Figure 22–5. Format directives related to Pretty Printing** 
 
-Printer **22–15**
+
 
  
 

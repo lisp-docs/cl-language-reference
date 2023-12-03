@@ -20,7 +20,7 @@ The following rules apply to name conflicts:
 
 – Package functions signal name-conflict errors of *type* **package-error** before making any change to the package structure. When multiple changes are to be made, it is permissible for the implementation to process each change separately. For example, when **export** is 
 
-Packages **11–3**
+
 
  
 

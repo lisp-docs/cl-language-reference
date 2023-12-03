@@ -8,7 +8,7 @@ These rules define the congruence of a set of *lambda lists*, including the *lam
 
 3\. If any *lambda list* mentions **&rest** or **&key**, each *lambda list* must mention one or both of them. 
 
-Objects **7–19**
+
 
  
 

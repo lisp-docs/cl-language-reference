@@ -6,7 +6,7 @@ In general, *loop keywords* are not *external symbols* of the COMMON-LISP *packa
 
 If no *loop keywords* are supplied in a **loop** *form*, the Loop Facility executes the loop body repeatedly; see Section 6.1.1.1.1 (Simple Loop). 
 
-Iteration **6–1**
+
 
  
 

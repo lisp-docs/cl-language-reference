@@ -6,7 +6,7 @@ A *complex* is printed as #C, an open parenthesis, the printed representation of
 
 For related information about the syntax of a *complex* , see Section 2.3.2.3 (Syntax of a Complex) and Section 2.4.8.11 (Sharpsign C). 
 
-Printer **22–3**
+
 
  
 

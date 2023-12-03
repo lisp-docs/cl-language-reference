@@ -8,7 +8,7 @@ Examples of the printed representation of *symbols* are in Figure 2–15. For pr
 | :- |
 
 
-**Figure 2–15. Examples of the printed representation of symbols (Part 1 of 2)** Syntax **2–19**
+**Figure 2–15. Examples of the printed representation of symbols (Part 1 of 2)** 
 
 
 

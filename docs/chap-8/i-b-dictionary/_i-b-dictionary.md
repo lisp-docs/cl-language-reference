@@ -59,7 +59,7 @@
 
 *initial-offset-option::*=(:initial-offset *initial-offset*) 
 
-Structures **8–1**
+
 
  
 
@@ -153,7 +153,7 @@ The *symbols* which name the slots must not be used by the *implementation* as t
 
 For example, if the form (gensym) were used as an initialization form, either in the constructor function call or as the default initialization form in **defstruct**, then every call to the constructor function would call **gensym** once to generate a new *symbol*. 
 
-Structures **8–3**
+
 
  
 
@@ -235,7 +235,7 @@ For information on how the *arglist* for a “boa constructor” is processed, s
 
 It is permissible to use the :constructor option more than once, so that you can define several different constructor functions, each taking different parameters. 
 
-Structures **8–5**
+
 
  
 
@@ -321,7 +321,7 @@ The structure using :include can specify default values or slot-options for the 
 
 Each *slot-description* must have a *slot-name* that is the same as that of some slot in the included structure. If a *slot-description* has no *slot-initform*, then in the new structure the slot has no initial value. Otherwise its initial value form is replaced by the *slot-initform* in the *slot-description*. A normally writable slot can be made read-only. If a slot is read-only in the included structure, then it must also be so in the including structure. If a *type* is supplied for a slot, it must be a *subtype* of the *type* specified in the included structure. 
 
-Structures **8–7**
+
 
  
 
@@ -443,7 +443,7 @@ The effect of make-binop is simply to construct a list of length three:
 
 It is just like the function list except that it takes keyword arguments and performs slot defaulting appropriate to the binop conceptual data type. Similarly, the selector functions binop-operator, binop-operand-1, and binop-operand-2 are essentially equivalent to **car**, **cadr**, and **caddr**, respectively. They might not be completely equivalent because, for example, an implementation would be justified in adding error-checking code to ensure that the argument to each selector function is a length-3 list. 
 
-Structures **8–9**
+
 
  
 
@@ -525,7 +525,7 @@ If the :print-object option is used, then when a structure of type *structure-na
 
 Specifying (:print-object *printer-name*) is equivalent to specifying: 
 
-Structures **8–11**
+
 
  
 
@@ -623,7 +623,7 @@ A predicate with the name *structure-name*-p is defined to test membership in th
 
 A constructor function with the name make-*structure-name* is defined. This function creates and returns new instances of the structure type. 
 
-Structures **8–13**
+
 
  
 
@@ -745,7 +745,7 @@ population
 
 ;since elevation is a read-only slot, its value can be set only 
 
-Structures **8–15**
+
 
  
 
@@ -897,7 +897,7 @@ The mechanism by which **defstruct** arranges for slot accessors to be usable wi
 
 **copy-structure** *structure → copy* 
 
-Structures **8–17**
+
 
  
 

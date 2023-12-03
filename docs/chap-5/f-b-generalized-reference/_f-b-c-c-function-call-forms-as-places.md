@@ -4,7 +4,7 @@ A *function form* can be used as a *place* if it falls into one of the following
 
 *•* A function call form whose first element is the name of any one of the functions in Figure 5–7. 
 
-Data and Control Flow **5–5**
+Data and Control 
 
 
 
@@ -91,7 +91,7 @@ integer *→* #x96
 
 ;;; interest here is just the (possibly local) program variable 
 
-Data and Control Flow **5–7**
+Data and Control 
 
 
 

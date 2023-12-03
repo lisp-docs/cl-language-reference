@@ -18,7 +18,7 @@ The **standard-char** *repertoire* consists of the *non-graphic character newlin
 |ND01 1 digit 1 ND06 6 digit 6 ND02 2 digit 2 ND07 7 digit 7 ND03 3 digit 3 ND08 8 digit 8 ND04 4 digit 4 ND09 9 digit 9 ND05 5 digit 5 ND10 0 digit 0|
 
 
-**Figure 2–4. Standard Character Subrepertoire (Part 2 of 3: Numeric Characters)** Syntax **2–3**
+**Figure 2–4. Standard Character Subrepertoire (Part 2 of 3: Numeric Characters)** 
 
 
 

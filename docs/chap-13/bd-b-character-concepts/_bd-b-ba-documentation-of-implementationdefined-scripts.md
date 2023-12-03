@@ -14,7 +14,7 @@ An *implementation* must document the *character scripts* it supports. For each 
 
 *•* The interaction with file I/O, in particular, the supported coded character sets (for example, ISO8859/1-1987) and external encoding schemes supported are documented. 
 
-Characters **13–7**
+
 
  
 
@@ -98,7 +98,7 @@ The *type* **extended-char** is equivalent to the *type* (and character (not bas
 
 The *type* **extended-char** might have no *elements*&#60;sub&#62;4&#60;/sub&#62; in *implementations* in which all *characters* are of *type* **base-char**. 
 
-Characters **13–9**
+
 
  
 
@@ -236,7 +236,7 @@ If two *characters* have *identical implementation-defined attributes*, then the
 
 (char-equal #\A #\a) *→ true* 
 
-Characters **13–11**
+
 
  
 
@@ -356,7 +356,7 @@ Returns *true* if *object* is of *type* **character**; otherwise, returns *false
 
 (characterp #\Rubout) *→ true* 
 
-Characters **13–13**
+
 
  
 
@@ -462,7 +462,7 @@ Alphanumeric characters are graphic as defined by **graphic-char-p**. The alphan
 
 *≡* (or (alpha-char-p x) (not (null (digit-char-p x)))) 
 
-Characters **13–15**
+
 
  
 
@@ -590,7 +590,7 @@ Digits are *graphic characters*.
 
 *char*—a *character* . 
 
-Characters **13–17**
+
 
  
 
@@ -724,7 +724,7 @@ The result only ever differs from *character* in its *code attribute*; all *impl
 
 Should signal an error of *type* **type-error** if *character* is not a *character* . 
 
-Characters **13–19**
+
 
  
 
@@ -828,7 +828,7 @@ Should signal an error of *type* **type-error** if *character* is not a *charact
 
 **char-code-limit** 
 
-Characters **13–21**
+
 
  
 
@@ -924,7 +924,7 @@ The upper exclusive bound on the *value* returned by the *function* **char-code*
 
 The *value* of **char-code-limit** might be larger than the actual number of *characters* supported by the *implementation*. 
 
-Characters **13–23**
+
 
  
 
@@ -1038,7 +1038,7 @@ Should signal an error of *type* **type-error** if *name* is not a *string desig
 
 **char-name** 
 
-Characters **13–25**
+
 
  
 

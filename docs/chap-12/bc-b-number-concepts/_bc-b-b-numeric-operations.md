@@ -24,7 +24,7 @@ Figure 12–2 shows *defined names* relating to exponential, logarithmic, and tr
 
 **Figure 12–3. Operators for numeric comparison and predication.** 
 
-Numbers **12–1**
+
 
  
 

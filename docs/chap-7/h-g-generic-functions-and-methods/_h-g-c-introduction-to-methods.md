@@ -16,7 +16,7 @@ A method-defining form contains the *code* that is to be run when the arguments 
 
 *•* Otherwise a *generic function* is created with the *method* specified by the *method-defining form*. 
 
-Objects **7–17**
+
 
  
 

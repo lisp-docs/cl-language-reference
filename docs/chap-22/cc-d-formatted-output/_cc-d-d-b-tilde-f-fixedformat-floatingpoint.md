@@ -10,7 +10,7 @@ If it is impossible to print the value in the required format in a field of widt
 
 If the *w* parameter is omitted, then the field is of variable width. In effect, a value is chosen for *w* in such a way that no leading pad characters need to be printed and exactly *d* characters will follow the decimal point. For example, the directive ~,2F will print exactly two digits after the decimal point and as many as necessary before the decimal point. 
 
-Printer **22–27**
+
 
  
 

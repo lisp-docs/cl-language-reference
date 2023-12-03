@@ -10,7 +10,7 @@ A *pathname* need not correspond to any file that actually exists, and more than
 
 Some *file systems* naturally use a structural model for their *filenames*, while others do not. Within the Common Lisp *pathname* model, all *filenames* are seen as having a particular structure, even if that structure is not reflected in the underlying *file system*. The nature of the mapping between structure imposed by *pathnames* and the structure, if any, that is used by the underlying *file system* is *implementation-defined*. 
 
-Filenames **19–1**
+
 
  
 

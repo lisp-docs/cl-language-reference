@@ -8,7 +8,7 @@ append x)
 
 *→* (A B (C)) 
 
-Iteration **6–19**
+
 
  
 

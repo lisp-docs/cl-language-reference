@@ -6,6 +6,6 @@ Note that the meaning of **nil** and **t** as destinations to **format** are dif
 
 The ~&#60;i&#62;&#60;sup&#62;∧&#60;/sup&#62;&#60;/i&#62; should appear only at the beginning of a ~&#60; clause, because it aborts the entire clause in which it appears (as well as all following clauses). 
 
-Printer **22–45**
+
 
  

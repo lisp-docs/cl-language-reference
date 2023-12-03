@@ -116,7 +116,7 @@ READTABLE-CASE \*PRINT-CASE\* Symbol-name Output
 
 :INVERT :CAPITALIZE zebra ZEBRA 
 
-Printer **22–7**
+
 
  
 

@@ -2,7 +2,7 @@
 
 The *class* **stream** has a number of *subclasses* defined by this specification. Figure 21–5 shows some information about these subclasses. 
 
-Streams **21–3**
+
 
  
 

@@ -20,7 +20,7 @@ The evaluation of each such *form* proceeds like this:
 
 6\. Store the new value into *place*. 
 
-Data and Control Flow **5–11**
+Data and Control 
 
 
 

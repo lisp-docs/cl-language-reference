@@ -172,7 +172,7 @@ The presence of macro definitions and proclamations.
 
 The consequences are undefined if the *lexical environment* surrounding the *function* to be compiled contains any *bindings* other than those for *macros*, *symbol macros*, or *declarations*. 
 
-For information about errors detected during the compilation process, see Section 3.2.5 (Exceptional Evaluation and Compilation **3–57**
+For information about errors detected during the compilation process, see Section 3.2.5 (Exceptional Evaluation and 
 
 
 

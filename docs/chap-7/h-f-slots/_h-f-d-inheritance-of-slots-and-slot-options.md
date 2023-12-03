@@ -34,7 +34,7 @@ The :reader, :writer, and :accessor slot options create *methods* rather than de
 
 *Methods* that *access slots* use only the name of the *slot* and the *type* of the *slot*’s value. Suppose a *superclass* provides a *method* that expects to *access* a *shared slot* of a given *name*, and a *subclass* defines a *local slot* with the same *name*. If the *method* provided by the *superclass* is used on an *instance* of the *subclass*, the *method accesses* the *local slot*. 
 
-Objects **7–15**
+
 
  
 

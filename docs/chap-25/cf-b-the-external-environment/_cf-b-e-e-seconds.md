@@ -68,7 +68,7 @@ If *time-zone* is not supplied, it defaults to the current time zone adjusted fo
 
 **encode-universal-time**, **get-universal-time**, Section 25.1.4 (Time) 
 
-Environment **25–5**
+
 
  
 
@@ -182,7 +182,7 @@ No *implementation* is required to have a way to verify that the time returned i
 
 *seconds*—a non-negative *real*. 
 
-Environment **25–7**
+
 
  
 
@@ -282,7 +282,7 @@ For example, **describe** of a *symbol* might show the *symbol*’s value, its d
 
 **describe** can describe something that it finds inside the *object*; in such cases, a notational device such as increased indentation or positioning in a table is typically used in order to visually distinguish such recursive descriptions from descriptions of the argument *object*. 
 
-Environment **25–9**
+
 
  
 
@@ -382,7 +382,7 @@ The same implementation techniques that are applicable to **print-object** are a
 
 The reason for making the return values for **describe-object** unspecified is to avoid forcing users to include explicit (values) in all of their *methods*. **describe** takes care of that. 
 
-Environment **25–11**
+
 
  
 
@@ -492,7 +492,7 @@ Although **trace** can be extended to permit non-standard options, *implementati
 
 **step** implements a debugging paradigm wherein the programmer is allowed to *step* through the *evaluation* of a *form*. The specific nature of the interaction, including which I/O streams are used and whether the stepping has lexical or dynamic scope, is *implementation-defined*. 
 
-Environment **25–13**
+
 
  
 
@@ -584,7 +584,7 @@ These units form the basis of the Internal Time format representation.
 
 **Affected By:** 
 
-Time of day (*i.e.*, the passage of time). The time base affects the result magnitude. Environment **25–15**
+Time of day (*i.e.*, the passage of time). The time base affects the result magnitude. 
 
  
 
@@ -670,7 +670,7 @@ Should signal an error of *type* **type-error** if *fn* is not an *extended func
 
 **(setf documentation)** *new-value x doc-type → new-value* 
 
-Environment **25–17**
+
 
  
 
@@ -786,7 +786,7 @@ Environment **25–17**
 
 *new-value*—a *string*. 
 
-Environment **25–19**
+
 
  
 
@@ -874,7 +874,7 @@ This standard prescribes no means to retrieve the *documentation strings* for in
 
 Output to *standard output*. 
 
-Environment **25–21**
+
 
  
 
@@ -964,7 +964,7 @@ Implementations are encouraged to respond to the typing of ? or a “help key”
 
 *pathname*—a *pathname designator* . 
 
-Environment **25–23**
+
 
  
 
@@ -1070,7 +1070,7 @@ The *value* of **+** is the last *form* that was *evaluated*, the *value* of **+
 
 #.‘(,@++ d) *→* (1 2 3 (1 2 3)) 
 
-Environment **25–25**
+
 
  
 
@@ -1176,7 +1176,7 @@ The *values* of **/**, **//**, and **///** are updated immediately prior to prin
 
 **-** (*variable*), **+** (*variable*), **\*** (*variable*), Section 25.1.1 (Top level loop) 
 
-Environment **25–27**
+
 
  
 
@@ -1288,7 +1288,7 @@ Returns a *string* that identifies the particular instance of the computer hardw
 
 The machine instance, and the *implementation*. 
 
-Environment **25–29**
+
 
  
 
@@ -1392,7 +1392,7 @@ Operating system environment.
 
 This information should be of use to maintainers of the *implementation*. 
 
-Environment **25–31**
+
 
  
 

@@ -22,7 +22,7 @@ using
 
 The *loop keyword* using introduces the optional key or the keyed value to be accessed. It allows access to the hash key if iteration is over the hash values, and the hash value if iteration is over the hash keys. 
 
-Iteration **6–13**
+
 
  
 

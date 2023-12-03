@@ -16,7 +16,7 @@ Figure 10–2 lists some *defined names* that are applicable to the creation of 
 
 **Figure 10–2. Symbol creation and inquiry defined names** 
 
-Symbols **10–1**
+
 
  
 
@@ -82,7 +82,7 @@ Operations on a *symbol*’s *value cell* and *function cell* are sometimes desc
 
 Section 2.3.4 (Symbols as Tokens), Section 2.3.1.1 (Potential Numbers as Tokens), Section 22.1.3.3 (Printing Symbols) 
 
-Symbols **10–3**
+
 
  
 
@@ -196,7 +196,7 @@ Returns *true* if *object* is a *keyword* &#60;sub&#62;1&#60;/sub&#62;; otherwis
 
 **constantp**, **keyword**, **symbolp**, **symbol-package** 
 
-Symbols **10–5**
+
 
  
 
@@ -320,7 +320,7 @@ If *copy-properties* is *false*, the *new-symbol* is neither *bound* nor *fbound
 
 (fboundp fred-clone-2a) *→ false* 
 
-Symbols **10–7**
+
 
  
 
@@ -426,7 +426,7 @@ A number which will be used in constructing the *name* of the next *symbol* gene
 
 **gensym** 
 
-Symbols **10–9**
+
 
  
 
@@ -528,7 +528,7 @@ Just because **gentemp** creates a *symbol* which did not previously exist does 
 
 *Accesses* the *symbol*’s *function cell*. 
 
-Symbols **10–11**
+
 
  
 
@@ -660,7 +660,7 @@ However, **fdefinition** accepts arguments other than just *symbols*.
 
 Should signal an error of *type* **type-error** if *symbol* is not a *symbol*. 
 
-Symbols **10–13**
+
 
  
 
@@ -798,7 +798,7 @@ Should signal an error of *type* **type-error** if *symbol* is not a *symbol*.
 
 The use of **setf** should be avoided, since a *symbol*’s *property list* is a global resource that can contain information established and depended upon by unrelated programs in the same *Lisp image*. 
 
-Symbols **10–15**
+
 
  
 
@@ -930,7 +930,7 @@ Should signal **unbound-variable** if *symbol* is *unbound* and an attempt is ma
 
 **get** finds a *property* on the *property list* &#60;sub&#62;2&#60;/sub&#62; of *symbol* whose *property indicator* is *identical* to *indicator*, and returns its corresponding *property value*. If there are multiple *properties*&#60;sub&#62;1&#60;/sub&#62; with that *property indicator* , **get** uses the first such *property*. If there is no *property* with that *property indicator* , *default* is returned. 
 
-Symbols **10–17**
+
 
  
 
@@ -1066,7 +1066,7 @@ The *property indicator* and the corresponding *property value* are removed in a
 
 (get test ’approximation) *→* NIL 
 
-Symbols **10–19**
+
 
  
 
@@ -1192,7 +1192,7 @@ The *value cell* of *symbol* is modified.
 
 Should signal an error of *type* **type-error** if *symbol* is not a *symbol*. 
 
-Symbols **10–21**
+
 
  
 
@@ -1322,7 +1322,7 @@ The name of the cell (see **cell-error**) is the *name* of the *variable* that w
 
 **cell-error-name** 
 
-Symbols **10–23**
+
 
  
 

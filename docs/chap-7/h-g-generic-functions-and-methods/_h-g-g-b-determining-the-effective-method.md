@@ -8,7 +8,7 @@ The effective method is determined by the following three-step procedure:
 
 3\. Apply method combination to the sorted list of applicable methods, producing the effective method. 
 
-Objects **7–21**
+
 
  
 

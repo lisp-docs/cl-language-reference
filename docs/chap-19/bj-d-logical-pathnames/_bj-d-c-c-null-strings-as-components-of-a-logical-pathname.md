@@ -48,7 +48,7 @@ Section 20.1 (File System Concepts), Section 2.4.8.14 (Sharpsign P), Section 22.
 
 Returns the *pathname* denoted by *pathspec*. 
 
-Filenames **19–15**
+
 
  
 
@@ -176,7 +176,7 @@ If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in
 
 The resulting *pathname* is a *logical pathname* if and only its host component is a *logical host* or a *string* that names a defined *logical host*. 
 
-Filenames **19–17**
+
 
  
 
@@ -314,7 +314,7 @@ Returns *true* if *object* is of *type* **pathname**; otherwise, returns *false*
 
 (pathnamep *object*) *≡* (typep *object* ’pathname) 
 
-Filenames **19–19**
+
 
  
 
@@ -454,7 +454,7 @@ If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in
 
 *→* (:ABSOLUTE "foo" "BAR" :UP "Mum") 
 
-Filenames **19–21**
+
 
  
 
@@ -572,7 +572,7 @@ If no definition is found, an error of *type* **error** is signaled.
 
 *translations*, *new-translations*—a *list*. 
 
-Filenames **19–23**
+
 
  
 
@@ -704,7 +704,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 
 (,(compile-file-pathname (logical-pathname "PROG:\*\*;\*.LISP.\*")) 
 
-Filenames **19–25**
+
 
  
 
@@ -840,7 +840,7 @@ Signals an error of *type* **type-error** if *pathspec* isn’t supplied correct
 
 **See Also:** 
 
-**logical-pathname**, **translate-logical-pathname**, Section 19.3 (Logical Pathnames) Filenames **19–27**
+**logical-pathname**, **translate-logical-pathname**, Section 19.3 (Logical Pathnames) 
 
  
 
@@ -958,7 +958,7 @@ It is not necessarily possible to construct a valid *namestring* by concatenatin
 
 ;;;particular version of Unix on which this example was created: 
 
-Filenames **19–29**
+
 
  
 
@@ -1074,7 +1074,7 @@ If the host portion of the namestring and *host* are both present and do not mat
 
 If *junk-allowed* is *true*, then the *primary value* is the *pathname* parsed or, if no syntactically correct *pathname* was seen, **nil**. If *junk-allowed* is *false*, then the entire substring is scanned, and the *primary value* is the *pathname* parsed. 
 
-In either case, the *secondary value* is the index into *thing* of the delimiter that terminated the Filenames **19–31**
+In either case, the *secondary value* is the index into *thing* of the delimiter that terminated the 
 
  
 
@@ -1190,7 +1190,7 @@ If *pathname* is not a *pathname*, a *string*, or a *stream associated with a fi
 
 **Notes:** 
 
-Not all implementations support wildcards in all fields. See Section 19.2.2.2.2 (:WILD as a Filenames **19–33**
+Not all implementations support wildcards in all fields. See Section 19.2.2.2.2 (:WILD as a 
 
  
 
@@ -1270,7 +1270,7 @@ If *pathname* is incorrectly supplied, an error of *type* **type-error** is sign
 
 If no translation matches, an error of *type* **file-error** is signaled. 
 
-Filenames **19–35**
+
 
  
 
@@ -1394,7 +1394,7 @@ There are no specified keyword arguments for **translate-pathname**, but impleme
 
 ;Renames /usr/joe/pork-recipes.text to /usr/jim/cookbook/joe’s-pork-rec.text 
 
-Filenames **19–37**
+
 
  
 
@@ -1472,7 +1472,7 @@ If *pathname* is a *pathname* it represents the name used to open the file. This
 
 (pathname-directory *pathname*))) 
 
-except that if the resulting *list* contains a *string* or :wild immediately followed by :back, Filenames **19–39**
+except that if the resulting *list* contains a *string* or :wild immediately followed by :back, 
 
  
 

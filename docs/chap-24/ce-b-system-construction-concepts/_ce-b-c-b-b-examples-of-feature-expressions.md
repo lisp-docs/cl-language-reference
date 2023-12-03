@@ -54,7 +54,7 @@ If *verbose* is *true*, **compile-file** prints a message in the form of a comme
 
 If *print* is *true*, information about *top level forms* in the file being compiled is printed to *standard output*. Exactly what is printed is *implementation-dependent*, but nevertheless some information is printed. If *print* is **nil**, no information is printed. 
 
-The *external-format* specifies the *external file format* to be used when opening the *file*; see the System Construction **24–3**
+The *external-format* specifies the *external file format* to be used when opening the *file*; see the System 
 
  
 
@@ -138,7 +138,7 @@ See **logical-pathname-translations**.
 
 An error of *type* **file-error** might be signaled if either *input-file* or *output-file* is *wild*. **See Also:** 
 
-System Construction **24–5**
+System 
 
  
 
@@ -238,7 +238,7 @@ a *→* 888
 
 *→ true* 
 
-System Construction **24–7**
+System 
 
  
 
@@ -336,7 +336,7 @@ Note however that if the implementation does not normally defer any warnings, us
 
 **compile**, **compile-file** 
 
-System Construction **24–9**
+System 
 
  
 
@@ -412,7 +412,7 @@ The *value* of **\*features\*** is used by the #+ and #- reader syntax.
 
 It is generally considered wise for an *implementation* to include one or more *features* identifying the specific *implementation*, so that conditional expressions can be written which distinguish idiosyncrasies of one *implementation* from those of another. Since features are normally *symbols* in the KEYWORD *package* where name collisions might easily result, and since no uniquely defined 
 
-System Construction **24–11**
+System 
 
  
 
@@ -500,7 +500,7 @@ The *value* of **\*compile-print\*** is the default value of the :print *argumen
 
 **compile-file** 
 
-System Construction **24–13**
+System 
 
  
 
@@ -606,7 +606,7 @@ Both functions use **string=** to test for the presence of a *module-name*.
 
 ;;; table lookup function to determine the pathname, which again 
 
-System Construction **24–15**
+System 
 
  
 

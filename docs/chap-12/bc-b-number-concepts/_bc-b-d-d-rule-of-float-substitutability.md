@@ -10,7 +10,7 @@ If the arguments to an irrational mathematical *function* are all of type
 
 Float substitutability applies neither to the rational *functions* **+**, **-**, **\***, and **/** nor to the related *operators* **1+**, **1-**, **incf**, **decf**, and **conjugate**. For rational *functions*, if all arguments are *rational*, then the result is *rational*; if all arguments are of type (or rational (complex rational)), then the result is of type (or rational (complex rational)). 
 
-Numbers **12–5**
+
 
  
 

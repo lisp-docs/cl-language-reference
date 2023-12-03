@@ -8,7 +8,7 @@ The finally construct causes the supplied *compound-forms* to be evaluated in th
 
 Clauses such as return, always, never, and thereis can bypass the finally clause. **return** (or **return-from**, if the named option was supplied) can be used after finally to return values from a **loop**. Such an *explicit return* inside the finally clause takes precedence over returning the accumulation from clauses supplied by such keywords as collect, nconc, append, sum, count, maximize, and minimize; the accumulation values for these preempted clauses are not returned by **loop** if **return** or **return-from** is used. 
 
-Iteration **6–27**
+
 
  
 

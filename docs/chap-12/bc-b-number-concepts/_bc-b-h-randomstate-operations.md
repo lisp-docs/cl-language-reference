@@ -48,7 +48,7 @@ Specializing.
 
 (complex [*typespec |* **\***]) 
 
-Numbers **12–11**
+
 
  
 
@@ -138,7 +138,7 @@ Abbreviating.
 
 This denotes the *floats* on the interval described by *lower-limit* and *upper-limit*. 
 
-Numbers **12–13**
+
 
  
 
@@ -225,7 +225,7 @@ Abbreviating.
 
 Each of these denotes the set of *floats* of the indicated *type* that are on the interval specified by the *interval designators*. 
 
-Numbers **12–15**
+
 
  
 
@@ -321,7 +321,7 @@ The *type* (integer 0 1) is also called **bit**. The *type* (integer 0 \*) is al
 
 The atomic *type specifier* **signed-byte** denotes the same type as is denoted by the *type specifier* **integer**; however, the list forms of these two *type specifiers* have different semantics. 
 
-Numbers **12–17**
+
 
  
 
@@ -421,7 +421,7 @@ The *type* **bit** is equivalent to the *type* (integer 0 1) and (unsigned-byte 
 
 A *fixnum* is an *integer* whose value is between **most-negative-fixnum** and **most-positive-fixnum** inclusive. Exactly which *integers* are *fixnums* is *implementation-defined*. The *type* **fixnum** is required to be a supertype of (signed-byte 16). 
 
-Numbers **12–19**
+
 
  
 
@@ -497,7 +497,7 @@ The value of &#62;**=** is *true* if the *numbers* are in monotonically nonincre
 
 The uses of these functions are illustrated in Figure 12–13. 
 
-Numbers **12–21**
+
 
  
 
@@ -589,7 +589,7 @@ For **max**, the implementation has the choice of returning the largest argument
 
 (max 1.0s0 7.0d0) *→* 7.0d0 
 
-Numbers **12–23**
+
 
  
 
@@ -711,7 +711,7 @@ Should signal an error of *type* **type-error** if *number* is not a *number* .
 
 **ceiling** *number* &optional *divisor → quotient, remainder* 
 
-Numbers **12–25**
+
 
  
 
@@ -835,7 +835,7 @@ When only *number* is given, the two results are exact; the mathematical sum of 
 
 (*function number divisor*) and (*function* (/ *number divisor*)) (where *function* is any of one of **floor**, **ceiling**, **ffloor**, **fceiling**, **truncate**, **round**, **ftruncate**, and **fround**) return the same first value, 
 
-Numbers **12–27**
+
 
  
 
@@ -934,7 +934,7 @@ For a *real number1*, the result is a *real* and lies between *−π/*2 and *π/
 
 The following definition for arc sine determines the range and branch cuts: 
 
-Numbers **12–29**
+
 
  
 
@@ -1013,7 +1013,7 @@ For **atan**, the signs of *number1* (indicated as *x*) and *number2* (indicated
 
 **log**, **sqrt**, Section 12.1.3.3 (Rule of Float Substitutability) 
 
-Numbers **12–31**
+
 
  
 
@@ -1110,7 +1110,7 @@ The branch cut for the inverse hyperbolic cosine function lies along the real ax
 
 numbers whose real part is non-negative and whose imaginary part is between *−π* (exclusive) and *π* (inclusive). A number with real part zero is in the range if its imaginary part is between zero (inclusive) and *π* (inclusive). 
 
-Numbers **12–33**
+
 
  
 
@@ -1196,7 +1196,7 @@ Might signal **type-error** if some *argument* is not a *number* . Might signal 
 
 Section 12.1.1 (Numeric Operations), Section 12.1.3 (Rational Computations), Section 12.1.4 (Floating-point Computations), Section 12.1.5 (Complex Computations) 
 
-Numbers **12–35**
+
 
  
 
@@ -1310,7 +1310,7 @@ If no *denominators* are supplied, the *function* **/** returns the reciprocal o
 
 If at least one *denominator* is supplied, the *function* **/** divides the *numerator* by all of the *denominators* and returns the resulting *quotient*. 
 
-If each *argument* is either an *integer* or a *ratio*, and the result is not an *integer* , then it is a *ratio*. Numbers **12–37**
+If each *argument* is either an *integer* or a *ratio*, and the result is not an *integer* , then it is a *ratio*. 
 
  
 
@@ -1424,7 +1424,7 @@ If *number* is a *complex* , the result is a positive *real* with the same magni
 
 (abs 0) *→* 0 
 
-Numbers **12–39**
+
 
  
 
@@ -1526,7 +1526,7 @@ The result of **expt** can be a *complex* , even when neither argument is a *com
 
 &#60;b&#62;expt&#60;/b&#62; is defined as &#60;i&#62;b&#60;sup&#62;x&#60;/sup&#62; = e&#60;sup&#62;xlogb&#60;/sup&#62;&#60;/i&#62;. This defines the &#60;i&#62;principal values&#60;/i&#62; precisely. The range of &#60;b&#62;expt&#60;/b&#62; is the entire complex plane. Regarded as a function of &#60;i&#62;x&#60;/i&#62;, with &#60;i&#62;b&#60;/i&#62; fixed, there is no branch cut. Regarded as a function of &#60;i&#62;b&#60;/i&#62;, with &#60;i&#62;x&#60;/i&#62; fixed, there is in general a branch cut along the negative real axis, continuous with quadrant II. The domain excludes the origin. By definition, 0&#60;sup&#62;0&#60;/sup&#62;=1. If &#60;i&#62;b&#60;/i&#62;=0 and the real part of &#60;i&#62;x&#60;/i&#62; is strictly positive, then &#60;i&#62;b&#60;sup&#62;x&#60;/sup&#62;&#60;/i&#62;=0. For all other values of &#60;i&#62;x&#60;/i&#62;, 0&#60;i&#62;&#60;sup&#62;x&#60;/sup&#62;&#60;/i&#62;is an error. 
 
-Numbers **12–41**
+
 
  
 
@@ -1646,7 +1646,7 @@ For three or more arguments,
 
 *new-value*—a *number* . 
 
-Numbers **12–43**
+
 
  
 
@@ -1770,7 +1770,7 @@ Should signal **type-error** if any argument is not an *integer* .
 
 **log** returns the logarithm of *number* in base *base*. If *base* is not supplied its value is *e*, the base of the natural logarithms. 
 
-Numbers **12–45**
+
 
  
 
@@ -1892,7 +1892,7 @@ The implementation.
 
 (rem -13.4 1) *→* -0.4 
 
-Numbers **12–47**
+
 
  
 
@@ -1998,7 +1998,7 @@ The branch cut for square root lies along the negative real axis, continuous wit
 
 (sqrt -9.0) *→* #C(0.0 3.0) 
 
-Numbers **12–49**
+
 
  
 
@@ -2126,7 +2126,7 @@ Should signal an error of *type* **type-error** if *state* is not a *random stat
 
 **random**, **\*random-state\*** 
 
-Numbers **12–51**
+
 
  
 
@@ -2234,7 +2234,7 @@ a *random state*.
 
 The *current random state*, which is used, for example, by the *function* **random** when a *random state* is not explicitly supplied. 
 
-Numbers **12–53**
+
 
  
 
@@ -2346,7 +2346,7 @@ Returns *true* if *object* is of *type* **number**; otherwise, returns *false*.
 
 Section 12.1.3.3 (Rule of Float Substitutability) 
 
-Numbers **12–55**
+
 
  
 
@@ -2442,7 +2442,7 @@ Returns *true* if *object* is of *type* **complex**; otherwise, returns *false*.
 
 **Description:** 
 
-Returns the complex conjugate of *number*. The conjugate of a *real* number is itself. Numbers **12–57**
+Returns the complex conjugate of *number*. The conjugate of a *real* number is itself. 
 
  
 
@@ -2552,7 +2552,7 @@ Should signal an error of *type* **type-error** if *number* is not a *number* .
 
 **complex** 
 
-Numbers **12–59**
+
 
  
 
@@ -2664,7 +2664,7 @@ If *rational* is an *integer* , **numerator** returns *rational* and **denominat
 
 **/** 
 
-Numbers **12–61**
+
 
  
 
@@ -2766,7 +2766,7 @@ Returns *true* if *object* is of *type* **rational**; otherwise, returns *false*
 
 (rationalp *object*) *≡* (typep *object* ’rational) 
 
-Numbers **12–63**
+
 
  
 
@@ -2886,7 +2886,7 @@ This function could have been defined by:
 
 If *integer* is non-negative, then its value can be represented in unsigned binary form in a field whose width in bits is no smaller than (integer-length *integer*). Regardless of the sign of *integer*, its value can be represented in signed binary two’s-complement form in a field whose width in bits is no smaller than (+ (integer-length *integer*) 1). 
 
-Numbers **12–65**
+
 
  
 
@@ -2986,7 +2986,7 @@ If *junk-allowed* is *false*, an error is signaled if substring does not consist
 
 *integer-1*—an *integer* . 
 
-Numbers **12–67**
+
 
  
 
@@ -3119,7 +3119,7 @@ boole-andc2 boole-1 boole-xor boole-ior
 
 boole-nor boole-eqv boole-c1 boole-orc1 
 
-Numbers **12–69**
+
 
  
 
@@ -3223,7 +3223,7 @@ The *functions* **logandc1**, **logandc2**, **logand**, **logeqv**, **logior**, 
 
 Figure 12–18 lists the meaning of each of the *functions*. Where an ‘identity’ is shown, it indicates the *value yielded* by the *function* when no *arguments* are supplied. 
 
-Numbers **12–71**
+
 
  
 
@@ -3352,7 +3352,7 @@ Because the following functions are not associative, they take exactly two argum
 
 *generalized-boolean*—a *generalized boolean*. 
 
-Numbers **12–73**
+
 
  
 
@@ -3470,7 +3470,7 @@ Negative *integer-1* and *integer-2* are treated as if they were represented in 
 
 (logtest 1 2) *→ false* 
 
-Numbers **12–75**
+
 
  
 
@@ -3584,7 +3584,7 @@ Replaces a field of bits within *integer*; specifically, returns an *integer* th
 
 (logbitp *j n*)) 
 
-Numbers **12–77**
+
 
  
 

@@ -24,7 +24,7 @@ either 9&#60;a or z&#60;0
 
 This implies that, for *standard characters*, *alphabetic*&#60;sub&#62;1&#60;/sub&#62; ordering holds within each *case* (*uppercase* and *lowercase*), and that the *numeric characters* as a group are not interleaved with *alphabetic characters*. However, the ordering or possible interleaving of *uppercase characters* and *lowercase characters* is *implementation-defined*. 
 
-Characters **13–5**
+
 
  
 

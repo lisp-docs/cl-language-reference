@@ -2,7 +2,7 @@
 
 A default value *form* can be supplied for an initialization argument by using the :default-initargs *class* option. If an initialization argument is declared valid by some particular *class*, its default value form might be specified by a different *class*. In this case :default-initargs is used to supply a default value for an inherited initialization argument. 
 
-Objects **7–3**
+
 
  
 

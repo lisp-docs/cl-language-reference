@@ -90,7 +90,7 @@ do (return (list a b)))
 
 *→* (1 3) 
 
-Iteration **6–7**
+
 
  
 

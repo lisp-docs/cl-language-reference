@@ -101,7 +101,7 @@ The state of the *table*.
 
 **Exceptional Situations:** 
 
-Should signal an error of *type* **type-error** if *table* is neither a *pprint-dispatch-table* nor **nil**. Printer **22–47**
+Should signal an error of *type* **type-error** if *table* is neither a *pprint-dispatch-table* nor **nil**. 
 
  
 
@@ -183,7 +183,7 @@ Evaluating the following with a line length of 25 produces the output shown.
 
 (progn (princ "Roads ") 
 
-Printer **22–49**
+
 
  
 
@@ -291,7 +291,7 @@ Section 22.3.5.3 (Tilde I: Indent)
 
 *forms*—an *implicit progn*. 
 
-Printer **22–51**
+
 
  
 
@@ -367,7 +367,7 @@ Detection of circularity and sharing is supported by the *pretty printer* by in 
 
 If *stream* is a *pretty printing stream* and the *value* of **\*print-pretty\*** is *true*, a line break is inserted in the output when the appropriate condition below is satisfied; otherwise, **pprint-newline** has no effect. 
 
-*Kind* specifies the style of conditional newline. This *parameter* is treated as follows: Printer **22–53**
+*Kind* specifies the style of conditional newline. This *parameter* is treated as follows: 
 
  
 
@@ -441,7 +441,7 @@ Each time **pprint-pop** is called, it pops the next value off the *list* passed
 
 *•* If **\*print-length\*** is *non-nil*, and **pprint-pop** has already been called **\*print-length\*** times within the immediately containing logical block, “...” is printed. (This makes it easy to write printing functions that properly handle **\*print-length\***.) 
 
-Printer **22–55**
+
 
  
 
@@ -531,7 +531,7 @@ An error is signaled if *kind* is not one of :line, :section, :line-relative, or
 
 *stream*—a *stream*. 
 
-Printer **22–57**
+
 
  
 
@@ -609,7 +609,7 @@ In some implementations the *stream* argument passed to a **print-object** *meth
 
 *type*—a *generalized boolean*; evaluated. 
 
-Printer **22–59**
+
 
  
 
@@ -705,7 +705,7 @@ This signifies that the corresponding object must be a cons cell whose *car* mat
 
 **princ** *object* &optional *output-stream → object* 
 
-Printer **22–61**
+
 
  
 
@@ -792,7 +792,7 @@ Printer **22–61**
 
 **\*standard-output\***, **\*terminal-io\***, **\*print-escape\***, **\*print-radix\***, **\*print-base\***, **\*print-circle\***, **\*print-pretty\***, **\*print-level\***, **\*print-length\***, **\*print-case\***, **\*print-gensym\***, **\*print-array\***, **\*read-default-float-format\***. 
 
-Printer **22–63**
+
 
  
 
@@ -906,7 +906,7 @@ The meanings and defaults for the keyword arguments to **write-to-string** are t
 
 (prin1-to-string "abc") *→* "\"abc\"" 
 
-Printer **22–65**
+
 
  
 
@@ -1022,7 +1022,7 @@ If the *value* of **\*print-radix\*** is *true*, the printer will print a radix 
 
 (dolist (pb ’(2 3 8 10 16)) 
 
-Printer **22–67**
+
 
  
 
@@ -1146,7 +1146,7 @@ If *true*, the printer will endeavor to detect cycles and sharing in the structu
 
 If *true*, a user-defined **print-object** *method* can print *objects* to the supplied *stream* using **write**, **prin1**, **princ**, or **format** and expect circularities and sharing to be detected and printed using the 
 
-Printer **22–69**
+
 
  
 
@@ -1256,7 +1256,7 @@ Controls whether the prefix “#:” is printed before *apparently uninterned sy
 
 **write**, **\*print-escape\*** 
 
-Printer **22–71**
+
 
  
 
@@ -1394,7 +1394,7 @@ a non-negative *integer* , or **nil**.
 
 **nil**. 
 
-Printer **22–73**
+
 
  
 
@@ -1486,7 +1486,7 @@ If it is *true*, the *pretty printer* is used, and the *Lisp printer* will endea
 
 **\*print-pretty\*** has an effect even when the *value* of **\*print-escape\*** is *false*. 
 
-Printer **22–75**
+
 
  
 
@@ -1620,7 +1620,7 @@ If **\*read-eval\*** is *false* and **\*print-readably\*** is *true*, any such m
 
 (setq table (make-hash-table)) *→* #&#60;HASH-TABLE EQL 0/120 32005763&#62; 
 
-Printer **22–77**
+
 
  
 

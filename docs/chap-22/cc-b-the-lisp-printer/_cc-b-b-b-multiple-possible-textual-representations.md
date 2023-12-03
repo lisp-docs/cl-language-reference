@@ -26,7 +26,7 @@ A number of option variables, called *printer control variables*, are provided t
 
 **Figure 22–1. Standardized Printer Control Variables** 
 
-Printer **22–1**
+
 
  
 

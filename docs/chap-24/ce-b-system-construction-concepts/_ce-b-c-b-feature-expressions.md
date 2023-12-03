@@ -16,7 +16,7 @@ A **not** *feature expression* succeeds if its argument *feature-conditional* fa
 
 An **and** *feature expression* succeeds if all of its argument *feature-conditionals* succeed; otherwise, it fails. 
 
-System Construction **24–1**
+System 
 
  
 

@@ -24,7 +24,7 @@ The semantics of the simple built-in method combination types is as follows:
 
 *•* Inside the body of an *around method*, the function **call-next-method** can be used to call the *next method*. The *generic function* **no-next-method** is invoked if **call-next-method** is used and there is no applicable method to call. The *function* **next-method-p** may be used to determine whether a *next method* exists. When the *next method* returns, the *around method* can execute more code, perhaps based on the returned value or values. 
 
-Objects **7–25**
+
 
  
 

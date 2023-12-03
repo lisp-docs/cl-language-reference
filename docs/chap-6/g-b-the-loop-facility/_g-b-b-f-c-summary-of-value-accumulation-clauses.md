@@ -8,7 +8,7 @@ The append (or appending) construct takes one *form* in its clause and appends t
 
 The nconc (or nconcing) construct is similar to the append construct, but its *list* values are concatenated as if by the function nconc. By default, the *list* of values is returned when the **loop** finishes. 
 
-Iteration **6–3**
+
 
  
 

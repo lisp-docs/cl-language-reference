@@ -58,7 +58,7 @@ Common Lisp specifies “&key” in the argument list to **directory** even thou
 
 *pathspec*—a *pathname designator* . 
 
-Files **20–3**
+
 
  
 
@@ -156,7 +156,7 @@ If the directory creation attempt is not successful, an error of *type* **file-e
 
 (values (pathname stream) 
 
-Files **20–5**
+
 
  
 
@@ -282,7 +282,7 @@ Returns a *universal time* representing the time at which the *file* specified b
 
 Please leave lots of toys.~2%Love, Sue~ 
 
-Files **20–7**
+
 
  
 
@@ -396,7 +396,7 @@ Deletes the *file* specified by *filespec*.
 
 If the *filespec designator* is an open *stream*, then *filespec* and the file associated with it are affected (if the file system permits), in which case *filespec* might be closed immediately, and the deletion 
 
-Files **20–9**
+
 
  
 
@@ -482,7 +482,7 @@ Returns the “offending pathname” of a *condition* of *type* **file-error**.
 
 **file-error**, Chapter 9 (Conditions) 
 
-Files **20–11**
+
 
  
 

@@ -8,7 +8,7 @@ There is a system-supplied primary *method* for **update-instance-for-different-
 
 Initialization Arguments).) Then it calls the generic function **shared-initialize** with the following arguments: the new *instance*, a list of *names* of the newly added *slots*, and the initialization arguments it received. 
 
-Objects **7–9**
+
 
  
 

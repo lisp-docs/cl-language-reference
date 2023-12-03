@@ -96,7 +96,7 @@
 
 *→* "WRITEPRIN1" 
 
-Printer **22–13**
+
 
  
 

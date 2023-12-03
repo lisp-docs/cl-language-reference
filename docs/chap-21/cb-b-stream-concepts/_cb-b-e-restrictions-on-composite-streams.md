@@ -44,7 +44,7 @@ Some output operations (*e.g.*, **fresh-line**) return *values* based on the sta
 
 *•* **fresh-line** returns the value from the last component stream, or **nil** if there are no component streams. 
 
-Streams **21–7**
+
 
  
 
@@ -122,7 +122,7 @@ An *object* of *type* **file-stream** is a *stream* the direct source or sink of
 
 **load**, **open**, **with-open-file** 
 
-Streams **21–9**
+
 
  
 
@@ -210,7 +210,7 @@ A *bidirectional composite stream* that receives its input from an associated *i
 
 Should signal an error of *type* **type-error** if *stream* is not a *stream*. 
 
-Streams **21–11**
+
 
  
 
@@ -326,7 +326,7 @@ Should signal an error of *type* **type-error** if *stream* is not a *stream*.
 
 :direction :output) 
 
-Streams **21–13**
+
 
  
 
@@ -442,7 +442,7 @@ If there are no *bytes* remaining in the *stream* and *eof-error-p* is *true*, a
 
 **read-char**, **read-sequence**, **write-byte** 
 
-Streams **21–15**
+
 
  
 
@@ -540,7 +540,7 @@ When *input-stream* is an *echo stream*, characters that are only peeked at are 
 
 (peek-char t input-stream) 
 
-Streams **21–17**
+
 
  
 
@@ -650,7 +650,7 @@ The corresponding output function is **write-char**.
 
 **read-char-no-hang** returns a character from *input-stream* if such a character is available. If no character is available, **read-char-no-hang** returns **nil**. 
 
-Streams **21–19**
+
 
  
 
@@ -784,7 +784,7 @@ The *output-stream* is modified.
 
 None. 
 
-Streams **21–21**
+
 
  
 
@@ -898,7 +898,7 @@ The *output-stream* is modified.
 
 **read-char**, **write-byte**, **write-sequence** 
 
-Streams **21–23**
+
 
  
 
@@ -1022,7 +1022,7 @@ nil)
 
 &#9655; \*test1 
 
-Streams **21–25**
+
 
  
 
@@ -1124,7 +1124,7 @@ Section 3.2.1 (Compiler Terminology), **write-sequence**, **read-line**
 
 **write-sequence** writes the *elements* of the subsequence of *sequence bounded* by *start* and *end* to *stream*. 
 
-Streams **21–27**
+
 
  
 
@@ -1234,7 +1234,7 @@ An *integer* returned by **file-position** of one argument should be acceptable 
 
 For a character file, performing a single **read-char** or **write-char** operation may cause the file position to be increased by more than 1 because of character-set translations (such as translating between the Common Lisp #\Newline character and an external ASCII carriage-return/line-feed 
 
-Streams **21–29**
+
 
  
 
@@ -1354,7 +1354,7 @@ Implementations that have character files represented as a sequence of records o
 
 The returned value corresponds to the current state of *stream* at the time of the call and might not be the same if it is called again when the state of the *stream* has changed. 
 
-Streams **21–31**
+
 
  
 
@@ -1454,7 +1454,7 @@ The existing file is renamed to some other name, then it is deleted but not
 
 expunged, and then a new file is created. 
 
-Streams **21–33**
+
 
  
 
@@ -1568,7 +1568,7 @@ An error of *type* **error** is signaled if the *external-format* is not underst
 
 The various *file systems* in existence today have widely differing capabilities, and some aspects of the *file system* are beyond the scope of this specification to define. A given *implementation* might not be able to support all of these options in exactly the manner stated. An *implementation* is required to recognize all of these option keywords and to try to do something “reasonable” in the context of the host *file system*. Where necessary to accomodate the *file system*, an *implementation* 
 
-Streams **21–35**
+
 
  
 
@@ -1668,7 +1668,7 @@ The *stream object* to which the *stream variable* is *bound* has *dynamic exten
 
 When control leaves the body, either normally or abnormally (such as by use of **throw**), the file is automatically closed. If a new output file is being written, and control leaves abnormally, the file is aborted and the file system is left, so far as possible, as if the file had never been opened. 
 
-Streams **21–37**
+
 
  
 
@@ -1774,7 +1774,7 @@ The effect of **close** on a *constructed stream* is to close the argument *stre
 
 For a *stream* created with **make-string-output-stream**, the result of **get-output-stream-string** is unspecified after **close**. 
 
-Streams **21–39**
+
 
  
 
@@ -1880,7 +1880,7 @@ Returns *true* if there is a character immediately available from *input-stream*
 
 **interactive-stream-p**, **read-char-no-hang** 
 
-Streams **21–41**
+
 
  
 
@@ -2008,7 +2008,7 @@ Should signal an error of *type* **type-error** if *input-stream* is not a *stre
 
 If any of these operations does not make sense for *output-stream*, then it does nothing. The precise actions of these *functions* are *implementation-dependent*. 
 
-Streams **21–43**
+
 
  
 
@@ -2114,7 +2114,7 @@ Output to and input from *query I/O* will occur.
 
 **yes-or-no-p** and **yes-or-no-p** do not add question marks to the end of the prompt string, so any desired question mark or other punctuation should be explicitly included in the text query. 
 
-Streams **21–45**
+
 
  
 
@@ -2238,7 +2238,7 @@ b-stream (make-string-output-stream)) *→* #&#60;String Output Stream&#62;
 
 (get-output-stream-string a-stream) *→* "this will go to both streams" 
 
-Streams **21–47**
+
 
  
 
@@ -2336,7 +2336,7 @@ Should signal an error of *type* **type-error** if *input-stream* is not an *inp
 
 **echo-stream-input-stream** returns the *input stream* from which *echo-stream* receives input. **echo-stream-output-stream** returns the *output stream* to which *echo-stream* sends output. 
 
-Streams **21–49**
+
 
  
 
@@ -2434,7 +2434,7 @@ Should signal **type-error** if any argument is not an *input stream*.
 
 **concatenated-stream-streams** 
 
-Streams **21–51**
+
 
  
 
@@ -2536,7 +2536,7 @@ Returns an *input string stream*. This *stream* will supply, in order, the *char
 
 *string-stream*—an *output string stream*. 
 
-Streams **21–53**
+
 
  
 
@@ -2646,7 +2646,7 @@ The *value* of the *place* named by *index*, if any, is modified.
 
 *var*—a *variable name*. 
 
-Streams **21–55**
+
 
  
 
@@ -2742,7 +2742,7 @@ The *value* of **\*standard-output\***, called *standard output*, is a *stream* 
 
 The *value* of **\*trace-output\***, called *trace output*, is the *stream* on which traced functions (see **trace**) and the **time** *macro* print their output. 
 
-Streams **21–57**
+
 
  
 
@@ -2854,7 +2854,7 @@ The effect of changing the *value* of **\*terminal-io\***, either by *binding* o
 
 (progn (prin1 ’foo) (prin1 ’bar \*terminal-io\*)) 
 
-Streams **21–59**
+
 
  
 
@@ -2942,7 +2942,7 @@ The *type* **end-of-file** consists of error conditions related to read operatio
 
 **stream-error-stream** 
 
-Streams **21–61**
+
 
  
 

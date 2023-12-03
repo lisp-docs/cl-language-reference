@@ -80,7 +80,7 @@ As an example of the effects of varying the scale factor, the code
 
 (format t "~%Scale factor ~2D: |~13,6,2,VE|" 
 
-Printer **22–43**
+
 
  
 

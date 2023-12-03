@@ -68,7 +68,7 @@ Should be prepared to signal an error of *type* **type-error** if *sequence* is 
 
 **copy-list** 
 
-Sequences **17–5**
+
 
  
 
@@ -178,7 +178,7 @@ Should be prepared to signal an error of *type* **type-error** if *sequence* is 
 
 (fill *sequence item*) *≡*(nsubstitute-if *item* (constantly t) *sequence*) 
 
-Sequences **17–7**
+
 
  
 
@@ -284,7 +284,7 @@ If *sequence* is a *vector* , the result is a *fresh simple array* of *rank* one
 
 **setf** may be used with **subseq** to destructively replace *elements* of a subsequence with *elements* taken from a *sequence* of new values. If the subsequence and the new sequence are not of equal 
 
-Sequences **17–9**
+
 
  
 
@@ -386,7 +386,7 @@ An error of *type* **type-error** should be signaled if *result-type* specifies 
 
 Section 3.6 (Traversal Rules and Side Effects) 
 
-Sequences **17–11**
+
 
  
 
@@ -496,7 +496,7 @@ The *function* must accept as *arguments* two *elements* of *sequence* or the re
 
 If *key* is supplied, it is used is used to extract the values to reduce. The *key* function is applied exactly once to each element of *sequence* in the order implied by the reduction order but not to 
 
-Sequences **17–13**
+
 
  
 
@@ -600,7 +600,7 @@ The *from-end* has no direct effect on the result. However, if *from-end* is *tr
 
 **Exceptional Situations:** 
 
-Should be prepared to signal an error of *type* **type-error** if *sequence* is not a *proper sequence*. Sequences **17–15**
+Should be prepared to signal an error of *type* **type-error** if *sequence* is not a *proper sequence*. 
 
  
 
@@ -718,7 +718,7 @@ l *→ implementation-dependent*
 
 **nreverse** might either create a new *sequence*, modify the argument *sequence*, or both. (**reverse** does not modify *sequence*.) 
 
-Sequences **17–17**
+
 
  
 
@@ -840,7 +840,7 @@ The sorting operation can be destructive in all cases. In the case of a *vector*
 
 (("Kathy" "Chapman") "Editorial") 
 
-Sequences **17–19**
+
 
  
 
@@ -952,7 +952,7 @@ The *function* **find-if-not** is deprecated.
 
 *sequence*—a *proper sequence*. 
 
-*predicate*—a *designator* for a *function* of one argument that returns a *generalized boolean*. Sequences **17–21**
+*predicate*—a *designator* for a *function* of one argument that returns a *generalized boolean*. 
 
  
 
@@ -1048,7 +1048,7 @@ If *from-end* is *true*, the index of the leftmost element of the rightmost matc
 
 (search ’(0 1) ’(2 4 6 1 3 5) :key #’oddp) *→* 2 
 
-Sequences **17–23**
+
 
  
 
@@ -1140,7 +1140,7 @@ Destructively modifies *sequence-1* by replacing the *elements* of *subsequence-
 
 *Sequence-1* is destructively modified by copying successive *elements* into it from *sequence-2*. *Elements* of the subsequence of *sequence-2 bounded* by *start2* and *end2* are copied into the subsequence of *sequence-1 bounded* by *start1* and *end1*. If these subsequences are not of the same length, then the shorter length determines how many *elements* are copied; the extra *elements* near the end of the longer subsequence are not involved in the operation. The number of elements copied can be expressed as: 
 
-Sequences **17–25**
+
 
  
 
@@ -1242,7 +1242,7 @@ Supplying a *from-end* of *true* matters only when the *count* is provided (and 
 
 *predicate*, *test*, and *test-not* might be called more than once for each *sequence element*, and their side effects can happen in any order. 
 
-Sequences **17–27**
+
 
  
 
@@ -1358,7 +1358,7 @@ All of the *sequences* are copied from; the result does not share any structure 
 
 It is an error if any element of the *sequences* cannot be an element of the *sequence* result. If the *result-type* is a *subtype* of **list**, the result will be a *list*. 
 
-Sequences **17–29**
+
 
  
 
@@ -1450,7 +1450,7 @@ If the *result-type* is a *subtype* of **vector**, then if the implementation ca
 
 (setq test1 (vector ((red . 1) (blue . 4)))) 
 
-Sequences **17–31**
+
 
  
 
@@ -1534,7 +1534,7 @@ For all these functions, elements not removed or deleted occur in the same order
 
 **delete-if** is constrained to behave exactly as follows: 
 
-Sequences **17–33**
+
 
  
 
@@ -1672,7 +1672,7 @@ The functions **delete-if-not** and **remove-if-not** are deprecated.
 
 *key*—a *designator* for a *function* of one argument, or **nil**. 
 
-Sequences **17–35**
+
 
  
 
@@ -1744,7 +1744,7 @@ The :test-not *argument* is deprecated.
 
 These functions are useful for converting *sequence* into a canonical form suitable for representing a set. 
 
-Sequences **17–37**
+
 
  
 

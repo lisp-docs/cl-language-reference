@@ -42,7 +42,7 @@ Whether a user-defined *condition type* has *slots* that are accessible by *with
 
 The *type* **warning** consists of all types of warnings. 
 
-Conditions **9–11**
+
 
  
 
@@ -122,7 +122,7 @@ The *type* **cell-error** consists of error conditions that occur during a locat
 
 **cell-error-name** 
 
-Conditions **9–13**
+
 
  
 
@@ -206,7 +206,7 @@ While some Common Lisp operations might signal *storage-condition* because they 
 
 *datum*, *arguments*—*designators* for a *condition* of default type **error**. (These *designators* are the result of evaluating *datum-form* and each of the *argument-forms*.) 
 
-Conditions **9–15**
+
 
  
 
@@ -338,7 +338,7 @@ If the *condition* is not handled, (invoke-debugger *condition*) is done. As a c
 
 ((zerop x) 1) 
 
-Conditions **9–17**
+
 
  
 
@@ -466,7 +466,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 (setq n (- n)) 
 
-Conditions **9–19**
+
 
  
 
@@ -632,7 +632,7 @@ Conditions **9–19**
 
 &#9655; 1: Enter a number. 
 
-Conditions **9–21**
+
 
  
 
@@ -760,7 +760,7 @@ aardvarks
 
 &#9655; 2: Top level. 
 
-Conditions **9–23**
+
 
  
 
@@ -872,7 +872,7 @@ The *function* **invalid-method-error** is used to signal an error of *type* **e
 
 The *function* **invalid-method-error** is called automatically when a *method* fails to satisfy every *qualifier* pattern and predicate in a **define-method-combination** *form*. A method combination function that imposes additional restrictions should call **invalid-method-error** explicitly if it encounters a *method* it cannot accept. 
 
-Whether **invalid-method-error** returns to its caller or exits via **throw** is *implementation-dependent*. Conditions **9–25**
+Whether **invalid-method-error** returns to its caller or exits via **throw** is *implementation-dependent*. 
 
  
 
@@ -1004,7 +1004,7 @@ Back to Lisp Toplevel
 
 The debugger might be entered due to **\*break-on-signals\***. 
 
-Conditions **9–27**
+
 
  
 
@@ -1098,7 +1098,7 @@ The *type* **simple-condition** represents *conditions* that are signaled by **s
 
 *datum*, *arguments*—*designators* for a *condition* of default type **simple-warning**. 
 
-Conditions **9–29**
+
 
  
 
@@ -1204,7 +1204,7 @@ If *datum* is a condition type, the result of (apply #’make-condition datum ar
 
 The *type* **simple-warning** represents *conditions* that are signaled by **warn** whenever a *format control* is supplied as the function’s first argument. 
 
-Conditions **9–31**
+
 
  
 
@@ -1318,7 +1318,7 @@ The debugger is entered.
 
 **break** is used as a way of inserting temporary debugging “breakpoints” in a program, not as a way of signaling errors. For this reason, **break** does not take the *continue-format-control argument* that **cerror** takes. This and the lack of any possibility of interception by *condition handling* are the only program-visible differences between **break** and **cerror**. 
 
-Conditions **9–33**
+
 
  
 
@@ -1444,7 +1444,7 @@ a *type specifier* .
 
 **nil**. 
 
-Conditions **9–35**
+
 
  
 
@@ -1566,7 +1566,7 @@ If no appropriate *handler* is found, other *handlers* are sought from dynamical
 
 In the following code, if an unbound variable error is signaled in the body (and not handled by an intervening handler), the first function is called. 
 
-Conditions **9–37**
+
 
  
 
@@ -1670,7 +1670,7 @@ can be written (*typespec* () *form*).
 
 If there are no *forms* in a selected *clause*, the case, and therefore **handler-case**, returns **nil**. If execution of *expression* returns normally and no *no-error-clause* exists, the values returned by *expression* are returned by **handler-case**. If execution of *expression* returns normally and a *no-error-clause* does exist, the values returned are used as arguments to the function described by constructing (lambda *lambda-list &#123;form&#125;*\*) from the *no-error-clause*, and the *values* of that function call are returned by **handler-case**. The handlers which were established around the *expression* are no longer active at the time of this call. 
 
-Conditions **9–39**
+
 
  
 
@@ -1816,7 +1816,7 @@ If a *normal return* from the *forms* occurs, any *values* returned are returned
 
 win)) 
 
-Conditions **9–41**
+
 
  
 
@@ -1926,7 +1926,7 @@ Because the second return value is a *condition* in the exceptional case, it is 
 
 :type can be supplied once at most for a given *slot*. 
 
-Conditions **9–43**
+
 
  
 
@@ -2010,7 +2010,7 @@ This option is processed after the new *condition* type has been defined, so use
 
 The consequences are unspecifed if an attempt is made to *read* a *slot* that has not been explicitly initialized and that has not been given a default value. 
 
-The consequences are unspecified if an attempt is made to assign the *slots* by using **setf**. Conditions **9–45**
+The consequences are unspecified if an attempt is made to assign the *slots* by using **setf**. 
 
  
 
@@ -2154,7 +2154,7 @@ Note that since no :report clause was given, the information inherited from mach
 
 *condition*—a *condition*. 
 
-Conditions **9–47**
+
 
  
 
@@ -2272,7 +2272,7 @@ Implementations are permitted, but not required, to return *distinct lists* from
 
 (invoke-restart-interactively (nth n restarts))))) 
 
-Conditions **9–49**
+
 
  
 
@@ -2390,7 +2390,7 @@ Although anonymous restarts have a name of **nil**, the consequences are unspeci
 
 **invoke-restart** *restart* &rest *arguments → &#123;result&#125;*\* 
 
-Conditions **9–51**
+
 
  
 
@@ -2508,7 +2508,7 @@ A non-local transfer of control might be done by the restart.
 
 **\*query-io\***, active *restarts* 
 
-Conditions **9–53**
+
 
  
 
@@ -2598,7 +2598,7 @@ In the case of interactive invocation, the result is dependent on the value of :
 
 **\*query-io\***. 
 
-Conditions **9–55**
+
 
  
 
@@ -2684,7 +2684,7 @@ If *value* is a *string*, it is a shorthand for
 
 If a named restart is asked to report but no report information has been supplied, the name of the restart is used in generating default report text. 
 
-Conditions **9–57**
+
 
  
 
@@ -2778,7 +2778,7 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 
 *→* READ-NEW-VALUE 
 
-Conditions **9–59**
+
 
  
 
@@ -2926,7 +2926,7 @@ Unnamed restarts are generally only useful interactively and an interactive opti
 
 **restart-name** *restart → name* 
 
-Conditions **9–61**
+
 
  
 
@@ -3040,7 +3040,7 @@ If *name* is **nil**, an anonymous restart is established.
 
 The *format-control* and *format-arguments* are used report the *restart*. 
 
-Conditions **9–63**
+
 
  
 
@@ -3168,7 +3168,7 @@ The intent of the **abort** restart is to allow return to the innermost “comma
 
 Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), **invoke-restart**, **abort** (*function*) 
 
-Conditions **9–65**
+
 
  
 
@@ -3304,7 +3304,7 @@ The **store-value** *restart* is generally used by *handlers* trying to recover 
 
 (handler-case (let ((v (coerce (type-error-datum c) 
 
-Conditions **9–67**
+
 
  
 
@@ -3424,7 +3424,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 
 *→* 3 
 
-Conditions **9–69**
+
 
  
 
@@ -3594,7 +3594,7 @@ A transfer of control may occur if an appropriate *restart* is available, or (in
 
 **Affected By:** 
 
-Each of these functions can be affected by the presence of a *restart* having the same name. Conditions **9–71**
+Each of these functions can be affected by the presence of a *restart* having the same name. 
 
  
 

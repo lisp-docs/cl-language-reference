@@ -6,7 +6,7 @@ When *printer escaping* is disabled, or the characters under consideration are n
 
 When the *readtable case* is :upcase, *uppercase characters* are printed in the case specified by **\*print-case\***, and *lowercase characters* are printed in their own case. 
 
-Printer **22–5**
+
 
  
 

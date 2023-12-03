@@ -10,7 +10,7 @@ The :test-not *argument* to the *functions* in Figure 1–3 are deprecated.
 
 **Figure 1–3. Functions with Deprecated :TEST-NOT Arguments** 
 
-The use of the situation names **compile**, **load**, and **eval** in **eval-when** is deprecated. Introduction **1–33**
+The use of the situation names **compile**, **load**, and **eval** in **eval-when** is deprecated. 
 
 
 

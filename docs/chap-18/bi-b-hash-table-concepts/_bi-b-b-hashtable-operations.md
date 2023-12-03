@@ -32,7 +32,7 @@ In this example, the symbols color and name are being used as keys, and the symb
 
 **Figure 18–1. Hash-table defined names** 
 
-Hash Tables **18–1**
+Hash 
 
  
 

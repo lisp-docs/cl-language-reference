@@ -12,7 +12,7 @@
 
 *Vectors* whose *elements* are restricted to *type* **bit** are called *bit vectors*. *Bit vectors* are of *type* **bit-vector**. Figure 15–3 lists some *defined names* for operations on *bit arrays*. 
 
-Arrays **15–3**
+
 
  
 
@@ -68,7 +68,7 @@ If *element-type* is the *symbol* **\***, *arrays* are not excluded on the basis
 
 If the *dimension-spec* is a *rank*, the set includes only those *arrays* having that *rank*. If the *dimension-spec* is a *list* of *dimensions*, the set includes only those *arrays* having a *rank* given by the *length* of the *dimensions*, and having the indicated *dimensions*; in this case, **\*** matches any value for the corresponding *dimension*. If the *dimension-spec* is the *symbol* **\***, the set is not restricted on the basis of *rank* or *dimension*. 
 
-Arrays **15–5**
+
 
  
 
@@ -162,7 +162,7 @@ This denotes the set of specialized *vectors* whose *element type* and *dimensio
 
 If *element-type* is the *symbol* **\***, *vectors* are not excluded on the basis of their *element type*. Otherwise, only those *vectors* are included whose *actual array element type* is the result of *upgrading element-type*; see Section 15.1.2.1 (Array Upgrading). 
 
-Arrays **15–7**
+
 
  
 
@@ -268,7 +268,7 @@ Abbreviating.
 
 (simple-bit-vector [*size*]) 
 
-Arrays **15–9**
+
 
  
 
@@ -362,7 +362,7 @@ If *displaced-to* is *non-nil*, **make-array** will create a *displaced array* a
 
 The *displaced-index-offset* is made to be the index offset of the *array*. When an array A is given as the :displaced-to *argument* to **make-array** when creating array B, then array B is said to be 
 
-Arrays **15–11**
+
 
  
 
@@ -502,7 +502,7 @@ The last example depends on the fact that *arrays* are, in effect, stored in row
 
 There is no specified way to create an *array* for which **adjustable-array-p** definitely returns *false*. There is no specified way to create an *array* that is not a *simple array*. 
 
-Arrays **15–13**
+
 
  
 
@@ -598,7 +598,7 @@ A is displaced to B before the call, but not displaced afterward.
 
 A gets a new “data region,” and contents of B are copied into it as appropriate to maintain the existing old contents; additional elements of A are taken from *initial-element* if supplied. However, the use of *initial-contents* causes all old contents to be discarded. 
 
-Arrays **15–15**
+
 
  
 
@@ -714,7 +714,7 @@ Returns true if and only if **adjust-array** could return a *value* which is *id
 
 :element-type ’character 
 
-Arrays **15–17**
+
 
  
 
@@ -826,7 +826,7 @@ None.
 
 (array-dimension array n) *≡* (nth n (array-dimensions array)) 
 
-Arrays **15–19**
+
 
  
 
@@ -944,7 +944,7 @@ Returns *true* if *array* has a *fill pointer* ; otherwise returns *false*.
 
 :initial-element ’filler)) *→ true* 
 
-Arrays **15–21**
+
 
  
 
@@ -1064,7 +1064,7 @@ Returns *true* if the *subscripts* are all in bounds for *array*; otherwise retu
 
 (every #’&#60; (list subscripts) (array-dimensions array))) 
 
-Arrays **15–23**
+
 
  
 
@@ -1178,7 +1178,7 @@ subscripts
 
 Returns the *array total size* of the *array*. 
 
-Arrays **15–25**
+
 
  
 
@@ -1302,7 +1302,7 @@ a *→* #(0 1 4 9 NIL NIL NIL NIL)
 
 **Exceptional Situations:** 
 
-Should signal an error of *type* **type-error** if *vector* is not a *vector* with a *fill pointer* . Arrays **15–27**
+Should signal an error of *type* **type-error** if *vector* is not a *vector* with a *fill pointer* . 
 
  
 
@@ -1402,7 +1402,7 @@ Except for storage allocation consequences and dealing correctly with the option
 
 (array-element-type (make-array 0 :element-type type))) 
 
-Arrays **15–29**
+
 
  
 
@@ -1504,7 +1504,7 @@ Returns *true* if *object* is of *type* **simple-vector**; otherwise, returns *f
 
 *index*—a *valid array index* for the *simple-vector*. 
 
-Arrays **15–31**
+
 
  
 
@@ -1626,7 +1626,7 @@ The *fill pointer* is decreased by one.
 
 The value of the *fill pointer* . 
 
-Arrays **15–33**
+
 
  
 
@@ -1744,7 +1744,7 @@ An error of *type* **error** is signaled if *vector* does not have a *fill point
 
 Returns *true* if *object* is of *type* **vector**; otherwise, returns *false*. 
 
-Arrays **15–35**
+
 
  
 
@@ -1868,7 +1868,7 @@ These *functions* ignore the *fill pointer* when *accessing elements*.
 
 These functions perform bit-wise logical operations on *bit-array1* and *bit-array2* and return an *array* of matching *rank* and *dimensions*, such that any given bit of the result is produced by operating on corresponding bits from each of the arguments. 
 
-Arrays **15–37**
+
 
  
 
@@ -1975,7 +1975,7 @@ Returns *true* if *object* is of *type* **bit-vector**; otherwise, returns *fals
 
 Returns *true* if *object* is of *type* **simple-bit-vector**; otherwise, returns *false*. 
 
-Arrays **15–39**
+
 
  
 

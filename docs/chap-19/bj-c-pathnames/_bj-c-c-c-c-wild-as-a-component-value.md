@@ -8,7 +8,7 @@ When constructing a *pathname*, a *conforming program* may use :wild as the valu
 
 If :wild is used as the value of the directory component in the construction of a *pathname*, the effect is equivalent to specifying the list (:absolute :wild-inferiors), or the same as (:absolute :wild) in a *file system* that does not support :wild-inferiors. 
 
-Filenames **19–5**
+
 
  
 
