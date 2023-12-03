@@ -6,6 +6,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import 'react-tooltip/dist/react-tooltip.css'
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();

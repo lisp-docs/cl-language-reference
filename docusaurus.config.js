@@ -5,7 +5,7 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from "prism-react-renderer";
-
+import remarkDefinitionList from "remark-definition-list";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Common Lisp (New) Language Reference",
@@ -46,6 +46,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/lisp-docs/cl-language-reference/tree/develop/",
+          remarkPlugins: [remarkDefinitionList]
         },
         blog: {
           showReadingTime: true,
