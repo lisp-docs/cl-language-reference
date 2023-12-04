@@ -1,17 +1,33 @@
  
 
+
+
 The figures on the next twelve pages contain a complete enumeration of the 978 *external symbols* in the COMMON-LISP *package*. 
 
-|&#60;p&#62;**&allow-other-keys \*print-miser-width\*** &#60;/p&#62;&#60;p&#62;**&aux \*print-pprint-dispatch\*** &#60;/p&#62;&#60;p&#62;**&body \*print-pretty\*** &#60;/p&#62;&#60;p&#62;**&environment \*print-radix\*** &#60;/p&#62;&#60;p&#62;**&key \*print-readably\*** &#60;/p&#62;&#60;p&#62;**&optional \*print-right-margin\*** &#60;/p&#62;&#60;p&#62;**&rest \*query-io\*** &#60;/p&#62;&#60;p&#62;**&whole \*random-state\*** &#60;/p&#62;&#60;p&#62;**\* \*read-base\*** &#60;/p&#62;&#60;p&#62;**\*\* \*read-default-float-format\* \*\*\* \*read-eval\*** &#60;/p&#62;&#60;p&#62;**\*break-on-signals\* \*read-suppress\*** &#60;/p&#62;&#60;p&#62;**\*compile-file-pathname\* \*readtable\*** &#60;/p&#62;&#60;p&#62;**\*compile-file-truename\* \*standard-input\*** &#60;/p&#62;&#60;p&#62;**\*compile-print\* \*standard-output\*** &#60;/p&#62;&#60;p&#62;**\*compile-verbose\* \*terminal-io\*** &#60;/p&#62;&#60;p&#62;**\*debug-io\* \*trace-output\*** &#60;/p&#62;&#60;p&#62;**\*debugger-hook\* +** &#60;/p&#62;&#60;p&#62;**\*default-pathname-defaults\* ++** &#60;/p&#62;&#60;p&#62;**\*error-output\* +++** &#60;/p&#62;&#60;p&#62;**\*features\* -** &#60;/p&#62;&#60;p&#62;**\*gensym-counter\* /** &#60;/p&#62;&#60;p&#62;**\*load-pathname\* //** &#60;/p&#62;&#60;p&#62;**\*load-print\* ///** &#60;/p&#62;&#60;p&#62;**\*load-truename\* /=** &#60;/p&#62;&#60;p&#62;**\*load-verbose\* 1+** &#60;/p&#62;&#60;p&#62;**\*macroexpand-hook\* 1-** &#60;/p&#62;&#60;p&#62;**\*modules\*** &#60; &#60;/p&#62;&#60;p&#62;**\*package\*** &#60;**=** &#60;/p&#62;&#60;p&#62;**\*print-array\* =** &#60;/p&#62;&#60;p&#62;**\*print-base\*** &#62; &#60;/p&#62;&#60;p&#62;**\*print-case\*** &#62;**=** &#60;/p&#62;&#60;p&#62;**\*print-circle\* abort** &#60;/p&#62;&#60;p&#62;**\*print-escape\* abs** &#60;/p&#62;&#60;p&#62;**\*print-gensym\* acons** &#60;/p&#62;&#60;p&#62;**\*print-length\* acos** &#60;/p&#62;&#60;p&#62;**\*print-level\* acosh** &#60;/p&#62;&#60;p&#62;**\*print-lines\* add-method**&#60;/p&#62;|
+
+
+|<p>**&allow-other-keys \*print-miser-width\*** </p><p>**&aux \*print-pprint-dispatch\*** </p><p>**&body \*print-pretty\*** </p><p>**&environment \*print-radix\*** </p><p>**&key \*print-readably\*** </p><p>**&optional \*print-right-margin\*** </p><p>**&rest \*query-io\*** </p><p>**&whole \*random-state\*** </p><p>**\* \*read-base\*** </p><p>**\*\* \*read-default-float-format\* \*\*\* \*read-eval\*** </p><p>**\*break-on-signals\* \*read-suppress\*** </p><p>**\*compile-file-pathname\* \*readtable\*** </p><p>**\*compile-file-truename\* \*standard-input\*** </p><p>**\*compile-print\* \*standard-output\*** </p><p>**\*compile-verbose\* \*terminal-io\*** </p><p>**\*debug-io\* \*trace-output\*** </p><p>**\*debugger-hook\* +** </p><p>**\*default-pathname-defaults\* ++** </p><p>**\*error-output\* +++** </p><p>**\*features\* -** </p><p>**\*gensym-counter\* /** </p><p>**\*load-pathname\* //** </p><p>**\*load-print\* ///** </p><p>**\*load-truename\* /=** </p><p>**\*load-verbose\* 1+** </p><p>**\*macroexpand-hook\* 1-** </p><p>**\*modules\*** < </p><p>**\*package\*** <**=** </p><p>**\*print-array\* =** </p><p>**\*print-base\*** > </p><p>**\*print-case\*** >**=** </p><p>**\*print-circle\* abort** </p><p>**\*print-escape\* abs** </p><p>**\*print-gensym\* acons** </p><p>**\*print-length\* acos** </p><p>**\*print-level\* acosh** </p><p>**\*print-lines\* add-method**</p>|
+
 | :- |
+
+
+
 
 
 **Figure 1–4. Symbols in the COMMON-LISP package (part one of twelve).**  
 
 
 
-|&#60;p&#62;**adjoin atom boundp** &#60;/p&#62;&#60;p&#62;**adjust-array base-char break** &#60;/p&#62;&#60;p&#62;**adjustable-array-p base-string broadcast-stream allocate-instance bignum broadcast-stream-streams alpha-char-p bit built-in-class** &#60;/p&#62;&#60;p&#62;**alphanumericp bit-and butlast** &#60;/p&#62;&#60;p&#62;**and bit-andc1 byte** &#60;/p&#62;&#60;p&#62;**append bit-andc2 byte-position** &#60;/p&#62;&#60;p&#62;**apply bit-eqv byte-size** &#60;/p&#62;&#60;p&#62;**apropos bit-ior caaaar** &#60;/p&#62;&#60;p&#62;**apropos-list bit-nand caaadr** &#60;/p&#62;&#60;p&#62;**aref bit-nor caaar** &#60;/p&#62;&#60;p&#62;**arithmetic-error bit-not caadar** &#60;/p&#62;&#60;p&#62;**arithmetic-error-operands bit-orc1 caaddr** &#60;/p&#62;&#60;p&#62;**arithmetic-error-operation bit-orc2 caadr** &#60;/p&#62;&#60;p&#62;**array bit-vector caar** &#60;/p&#62;&#60;p&#62;**array-dimension bit-vector-p cadaar** &#60;/p&#62;&#60;p&#62;**array-dimension-limit bit-xor cadadr** &#60;/p&#62;&#60;p&#62;**array-dimensions block cadar** &#60;/p&#62;&#60;p&#62;**array-displacement boole caddar** &#60;/p&#62;&#60;p&#62;**array-element-type boole-1 cadddr** &#60;/p&#62;&#60;p&#62;**array-has-fill-pointer-p boole-2 caddr** &#60;/p&#62;&#60;p&#62;**array-in-bounds-p boole-and cadr** &#60;/p&#62;&#60;p&#62;**array-rank boole-andc1 call-arguments-limit array-rank-limit boole-andc2 call-method** &#60;/p&#62;&#60;p&#62;**array-row-major-index boole-c1 call-next-method array-total-size boole-c2 car** &#60;/p&#62;&#60;p&#62;**array-total-size-limit boole-clr case** &#60;/p&#62;&#60;p&#62;**arrayp boole-eqv catch** &#60;/p&#62;&#60;p&#62;**ash boole-ior ccase** &#60;/p&#62;&#60;p&#62;**asin boole-nand cdaaar** &#60;/p&#62;&#60;p&#62;**asinh boole-nor cdaadr** &#60;/p&#62;&#60;p&#62;**assert boole-orc1 cdaar** &#60;/p&#62;&#60;p&#62;**assoc boole-orc2 cdadar** &#60;/p&#62;&#60;p&#62;**assoc-if boole-set cdaddr** &#60;/p&#62;&#60;p&#62;**assoc-if-not boole-xor cdadr** &#60;/p&#62;&#60;p&#62;**atan boolean cdar** &#60;/p&#62;&#60;p&#62;**atanh both-case-p cddaar**&#60;/p&#62;|
+
+
+
+
+|<p>**adjoin atom boundp** </p><p>**adjust-array base-char break** </p><p>**adjustable-array-p base-string broadcast-stream allocate-instance bignum broadcast-stream-streams alpha-char-p bit built-in-class** </p><p>**alphanumericp bit-and butlast** </p><p>**and bit-andc1 byte** </p><p>**append bit-andc2 byte-position** </p><p>**apply bit-eqv byte-size** </p><p>**apropos bit-ior caaaar** </p><p>**apropos-list bit-nand caaadr** </p><p>**aref bit-nor caaar** </p><p>**arithmetic-error bit-not caadar** </p><p>**arithmetic-error-operands bit-orc1 caaddr** </p><p>**arithmetic-error-operation bit-orc2 caadr** </p><p>**array bit-vector caar** </p><p>**array-dimension bit-vector-p cadaar** </p><p>**array-dimension-limit bit-xor cadadr** </p><p>**array-dimensions block cadar** </p><p>**array-displacement boole caddar** </p><p>**array-element-type boole-1 cadddr** </p><p>**array-has-fill-pointer-p boole-2 caddr** </p><p>**array-in-bounds-p boole-and cadr** </p><p>**array-rank boole-andc1 call-arguments-limit array-rank-limit boole-andc2 call-method** </p><p>**array-row-major-index boole-c1 call-next-method array-total-size boole-c2 car** </p><p>**array-total-size-limit boole-clr case** </p><p>**arrayp boole-eqv catch** </p><p>**ash boole-ior ccase** </p><p>**asin boole-nand cdaaar** </p><p>**asinh boole-nor cdaadr** </p><p>**assert boole-orc1 cdaar** </p><p>**assoc boole-orc2 cdadar** </p><p>**assoc-if boole-set cdaddr** </p><p>**assoc-if-not boole-xor cdadr** </p><p>**atan boolean cdar** </p><p>**atanh both-case-p cddaar**</p>|
+
 | :- |
+
+
+
 
 
 **Figure 1–5. Symbols in the COMMON-LISP package (part two of twelve).** 
@@ -20,16 +36,34 @@ The figures on the next twelve pages contain a complete enumeration of the 978 *
 
 
 
-|&#60;p&#62;**cddadr clear-input copy-tree** &#60;/p&#62;&#60;p&#62;**cddar clear-output cos** &#60;/p&#62;&#60;p&#62;**cdddar close cosh** &#60;/p&#62;&#60;p&#62;**cddddr clrhash count** &#60;/p&#62;&#60;p&#62;**cdddr code-char count-if** &#60;/p&#62;&#60;p&#62;**cddr coerce count-if-not** &#60;/p&#62;&#60;p&#62;**cdr compilation-speed ctypecase** &#60;/p&#62;&#60;p&#62;**ceiling compile debug** &#60;/p&#62;&#60;p&#62;**cell-error compile-file decf** &#60;/p&#62;&#60;p&#62;**cell-error-name compile-file-pathname declaim** &#60;/p&#62;&#60;p&#62;**cerror compiled-function declaration** &#60;/p&#62;&#60;p&#62;**change-class compiled-function-p declare** &#60;/p&#62;&#60;p&#62;**char compiler-macro decode-float** &#60;/p&#62;&#60;p&#62;**char-code compiler-macro-function decode-universal-time char-code-limit complement defclass** &#60;/p&#62;&#60;p&#62;**char-downcase complex defconstant** &#60;/p&#62;&#60;p&#62;**char-equal complexp defgeneric** &#60;/p&#62;&#60;p&#62;**char-greaterp compute-applicable-methods define-compiler-macro char-int compute-restarts define-condition char-lessp concatenate define-method-combination char-name concatenated-stream define-modify-macro char-not-equal concatenated-stream-streams define-setf-expander char-not-greaterp cond define-symbol-macro char-not-lessp condition defmacro** &#60;/p&#62;&#60;p&#62;**char-upcase conjugate defmethod** &#60;/p&#62;&#60;p&#62;**char/= cons defpackage** &#60;/p&#62;&#60;p&#62;**char**&#60; **consp defparameter char**&#60;**= constantly defsetf** &#60;/p&#62;&#60;p&#62;**char= constantp defstruct** &#60;/p&#62;&#60;p&#62;**char**&#62; **continue deftype** &#60;/p&#62;&#60;p&#62;**char**&#62;**= control-error defun** &#60;/p&#62;&#60;p&#62;**character copy-alist defvar** &#60;/p&#62;&#60;p&#62;**characterp copy-list delete** &#60;/p&#62;&#60;p&#62;**check-type copy-pprint-dispatch delete-duplicates cis copy-readtable delete-file** &#60;/p&#62;&#60;p&#62;**class copy-seq delete-if** &#60;/p&#62;&#60;p&#62;**class-name copy-structure delete-if-not** &#60;/p&#62;&#60;p&#62;**class-of copy-symbol delete-package**&#60;/p&#62;|
+
+
+
+
+
+
+|<p>**cddadr clear-input copy-tree** </p><p>**cddar clear-output cos** </p><p>**cdddar close cosh** </p><p>**cddddr clrhash count** </p><p>**cdddr code-char count-if** </p><p>**cddr coerce count-if-not** </p><p>**cdr compilation-speed ctypecase** </p><p>**ceiling compile debug** </p><p>**cell-error compile-file decf** </p><p>**cell-error-name compile-file-pathname declaim** </p><p>**cerror compiled-function declaration** </p><p>**change-class compiled-function-p declare** </p><p>**char compiler-macro decode-float** </p><p>**char-code compiler-macro-function decode-universal-time char-code-limit complement defclass** </p><p>**char-downcase complex defconstant** </p><p>**char-equal complexp defgeneric** </p><p>**char-greaterp compute-applicable-methods define-compiler-macro char-int compute-restarts define-condition char-lessp concatenate define-method-combination char-name concatenated-stream define-modify-macro char-not-equal concatenated-stream-streams define-setf-expander char-not-greaterp cond define-symbol-macro char-not-lessp condition defmacro** </p><p>**char-upcase conjugate defmethod** </p><p>**char/= cons defpackage** </p><p>**char**< **consp defparameter char**<**= constantly defsetf** </p><p>**char= constantp defstruct** </p><p>**char**> **continue deftype** </p><p>**char**>**= control-error defun** </p><p>**character copy-alist defvar** </p><p>**characterp copy-list delete** </p><p>**check-type copy-pprint-dispatch delete-duplicates cis copy-readtable delete-file** </p><p>**class copy-seq delete-if** </p><p>**class-name copy-structure delete-if-not** </p><p>**class-of copy-symbol delete-package**</p>|
+
 | :- |
+
+
+
 
 
 **Figure 1–6. Symbols in the COMMON-LISP package (part three of twelve).**  
 
 
 
-|&#60;p&#62;**denominator eq** &#60;/p&#62;&#60;p&#62;**deposit-field eql** &#60;/p&#62;&#60;p&#62;**describe equal** &#60;/p&#62;&#60;p&#62;**describe-object equalp** &#60;/p&#62;&#60;p&#62;**destructuring-bind error** &#60;/p&#62;&#60;p&#62;**digit-char etypecase** &#60;/p&#62;&#60;p&#62;**digit-char-p eval** &#60;/p&#62;&#60;p&#62;**directory eval-when** &#60;/p&#62;&#60;p&#62;**directory-namestring evenp** &#60;/p&#62;&#60;p&#62;**disassemble every** &#60;/p&#62;&#60;p&#62;**division-by-zero exp** &#60;/p&#62;&#60;p&#62;**do export** &#60;/p&#62;&#60;p&#62;**do\* expt** &#60;/p&#62;&#60;p&#62;**do-all-symbols extended-char** &#60;/p&#62;&#60;p&#62;**do-external-symbols fboundp** &#60;/p&#62;&#60;p&#62;**do-symbols fceiling** &#60;/p&#62;&#60;p&#62;**documentation fdefinition** &#60;/p&#62;&#60;p&#62;**dolist ffloor** &#60;/p&#62;&#60;p&#62;**dotimes fifth** &#60;/p&#62;&#60;p&#62;**double-float file-author** &#60;/p&#62;&#60;p&#62;**double-float-epsilon file-error** &#60;/p&#62;&#60;p&#62;**double-float-negative-epsilon file-error-pathname** &#60;/p&#62;&#60;p&#62;**dpb file-length** &#60;/p&#62;&#60;p&#62;**dribble file-namestring** &#60;/p&#62;&#60;p&#62;**dynamic-extent file-position** &#60;/p&#62;&#60;p&#62;**ecase file-stream** &#60;/p&#62;&#60;p&#62;**echo-stream file-string-length** &#60;/p&#62;&#60;p&#62;**echo-stream-input-stream file-write-date** &#60;/p&#62;&#60;p&#62;**echo-stream-output-stream fill** &#60;/p&#62;&#60;p&#62;**ed fill-pointer** &#60;/p&#62;&#60;p&#62;**eighth find** &#60;/p&#62;&#60;p&#62;**elt find-all-symbols** &#60;/p&#62;&#60;p&#62;**encode-universal-time find-class** &#60;/p&#62;&#60;p&#62;**end-of-file find-if** &#60;/p&#62;&#60;p&#62;**endp find-if-not** &#60;/p&#62;&#60;p&#62;**enough-namestring find-method** &#60;/p&#62;&#60;p&#62;**ensure-directories-exist find-package** &#60;/p&#62;&#60;p&#62;**ensure-generic-function find-restart**&#60;/p&#62;|
+
+
+
+
+|<p>**denominator eq** </p><p>**deposit-field eql** </p><p>**describe equal** </p><p>**describe-object equalp** </p><p>**destructuring-bind error** </p><p>**digit-char etypecase** </p><p>**digit-char-p eval** </p><p>**directory eval-when** </p><p>**directory-namestring evenp** </p><p>**disassemble every** </p><p>**division-by-zero exp** </p><p>**do export** </p><p>**do\* expt** </p><p>**do-all-symbols extended-char** </p><p>**do-external-symbols fboundp** </p><p>**do-symbols fceiling** </p><p>**documentation fdefinition** </p><p>**dolist ffloor** </p><p>**dotimes fifth** </p><p>**double-float file-author** </p><p>**double-float-epsilon file-error** </p><p>**double-float-negative-epsilon file-error-pathname** </p><p>**dpb file-length** </p><p>**dribble file-namestring** </p><p>**dynamic-extent file-position** </p><p>**ecase file-stream** </p><p>**echo-stream file-string-length** </p><p>**echo-stream-input-stream file-write-date** </p><p>**echo-stream-output-stream fill** </p><p>**ed fill-pointer** </p><p>**eighth find** </p><p>**elt find-all-symbols** </p><p>**encode-universal-time find-class** </p><p>**end-of-file find-if** </p><p>**endp find-if-not** </p><p>**enough-namestring find-method** </p><p>**ensure-directories-exist find-package** </p><p>**ensure-generic-function find-restart**</p>|
+
 | :- |
+
+
+
 
 
 **Figure 1–7. Symbols in the COMMON-LISP package (part four of twelve).** 
@@ -38,16 +72,34 @@ The figures on the next twelve pages contain a complete enumeration of the 978 *
 
 
 
-|&#60;p&#62;**find-symbol get-internal-run-time** &#60;/p&#62;&#60;p&#62;**finish-output get-macro-character** &#60;/p&#62;&#60;p&#62;**first get-output-stream-string** &#60;/p&#62;&#60;p&#62;**fixnum get-properties** &#60;/p&#62;&#60;p&#62;**flet get-setf-expansion** &#60;/p&#62;&#60;p&#62;**float get-universal-time** &#60;/p&#62;&#60;p&#62;**float-digits getf** &#60;/p&#62;&#60;p&#62;**float-precision gethash** &#60;/p&#62;&#60;p&#62;**float-radix go** &#60;/p&#62;&#60;p&#62;**float-sign graphic-char-p** &#60;/p&#62;&#60;p&#62;**floating-point-inexact handler-bind** &#60;/p&#62;&#60;p&#62;**floating-point-invalid-operation handler-case** &#60;/p&#62;&#60;p&#62;**floating-point-overflow hash-table** &#60;/p&#62;&#60;p&#62;**floating-point-underflow hash-table-count** &#60;/p&#62;&#60;p&#62;**floatp hash-table-p** &#60;/p&#62;&#60;p&#62;**floor hash-table-rehash-size** &#60;/p&#62;&#60;p&#62;**fmakunbound hash-table-rehash-threshold force-output hash-table-size** &#60;/p&#62;&#60;p&#62;**format hash-table-test** &#60;/p&#62;&#60;p&#62;**formatter host-namestring** &#60;/p&#62;&#60;p&#62;**fourth identity** &#60;/p&#62;&#60;p&#62;**fresh-line if** &#60;/p&#62;&#60;p&#62;**fround ignorable** &#60;/p&#62;&#60;p&#62;**ftruncate ignore** &#60;/p&#62;&#60;p&#62;**ftype ignore-errors** &#60;/p&#62;&#60;p&#62;**funcall imagpart** &#60;/p&#62;&#60;p&#62;**function import** &#60;/p&#62;&#60;p&#62;**function-keywords in-package** &#60;/p&#62;&#60;p&#62;**function-lambda-expression incf** &#60;/p&#62;&#60;p&#62;**functionp initialize-instance** &#60;/p&#62;&#60;p&#62;**gcd inline** &#60;/p&#62;&#60;p&#62;**generic-function input-stream-p** &#60;/p&#62;&#60;p&#62;**gensym inspect** &#60;/p&#62;&#60;p&#62;**gentemp integer** &#60;/p&#62;&#60;p&#62;**get integer-decode-float** &#60;/p&#62;&#60;p&#62;**get-decoded-time integer-length** &#60;/p&#62;&#60;p&#62;**get-dispatch-macro-character integerp** &#60;/p&#62;&#60;p&#62;**get-internal-real-time interactive-stream-p**&#60;/p&#62;|
+
+
+
+
+
+
+|<p>**find-symbol get-internal-run-time** </p><p>**finish-output get-macro-character** </p><p>**first get-output-stream-string** </p><p>**fixnum get-properties** </p><p>**flet get-setf-expansion** </p><p>**float get-universal-time** </p><p>**float-digits getf** </p><p>**float-precision gethash** </p><p>**float-radix go** </p><p>**float-sign graphic-char-p** </p><p>**floating-point-inexact handler-bind** </p><p>**floating-point-invalid-operation handler-case** </p><p>**floating-point-overflow hash-table** </p><p>**floating-point-underflow hash-table-count** </p><p>**floatp hash-table-p** </p><p>**floor hash-table-rehash-size** </p><p>**fmakunbound hash-table-rehash-threshold force-output hash-table-size** </p><p>**format hash-table-test** </p><p>**formatter host-namestring** </p><p>**fourth identity** </p><p>**fresh-line if** </p><p>**fround ignorable** </p><p>**ftruncate ignore** </p><p>**ftype ignore-errors** </p><p>**funcall imagpart** </p><p>**function import** </p><p>**function-keywords in-package** </p><p>**function-lambda-expression incf** </p><p>**functionp initialize-instance** </p><p>**gcd inline** </p><p>**generic-function input-stream-p** </p><p>**gensym inspect** </p><p>**gentemp integer** </p><p>**get integer-decode-float** </p><p>**get-decoded-time integer-length** </p><p>**get-dispatch-macro-character integerp** </p><p>**get-internal-real-time interactive-stream-p**</p>|
+
 | :- |
+
+
+
 
 
 **Figure 1–8. Symbols in the COMMON-LISP package (part five of twelve).**  
 
 
 
-|&#60;p&#62;**intern lisp-implementation-type internal-time-units-per-second lisp-implementation-version intersection list** &#60;/p&#62;&#60;p&#62;**invalid-method-error list\*** &#60;/p&#62;&#60;p&#62;**invoke-debugger list-all-packages** &#60;/p&#62;&#60;p&#62;**invoke-restart list-length** &#60;/p&#62;&#60;p&#62;**invoke-restart-interactively listen** &#60;/p&#62;&#60;p&#62;**isqrt listp** &#60;/p&#62;&#60;p&#62;**keyword load** &#60;/p&#62;&#60;p&#62;**keywordp load-logical-pathname-translations labels load-time-value** &#60;/p&#62;&#60;p&#62;**lambda locally** &#60;/p&#62;&#60;p&#62;**lambda-list-keywords log** &#60;/p&#62;&#60;p&#62;**lambda-parameters-limit logand** &#60;/p&#62;&#60;p&#62;**last logandc1** &#60;/p&#62;&#60;p&#62;**lcm logandc2** &#60;/p&#62;&#60;p&#62;**ldb logbitp** &#60;/p&#62;&#60;p&#62;**ldb-test logcount** &#60;/p&#62;&#60;p&#62;**ldiff logeqv** &#60;/p&#62;&#60;p&#62;**least-negative-double-float logical-pathname** &#60;/p&#62;&#60;p&#62;**least-negative-long-float logical-pathname-translations least-negative-normalized-double-float logior** &#60;/p&#62;&#60;p&#62;**least-negative-normalized-long-float lognand** &#60;/p&#62;&#60;p&#62;**least-negative-normalized-short-float lognor** &#60;/p&#62;&#60;p&#62;**least-negative-normalized-single-float lognot** &#60;/p&#62;&#60;p&#62;**least-negative-short-float logorc1** &#60;/p&#62;&#60;p&#62;**least-negative-single-float logorc2** &#60;/p&#62;&#60;p&#62;**least-positive-double-float logtest** &#60;/p&#62;&#60;p&#62;**least-positive-long-float logxor** &#60;/p&#62;&#60;p&#62;**least-positive-normalized-double-float long-float** &#60;/p&#62;&#60;p&#62;**least-positive-normalized-long-float long-float-epsilon** &#60;/p&#62;&#60;p&#62;**least-positive-normalized-short-float long-float-negative-epsilon least-positive-normalized-single-float long-site-name** &#60;/p&#62;&#60;p&#62;**least-positive-short-float loop** &#60;/p&#62;&#60;p&#62;**least-positive-single-float loop-finish** &#60;/p&#62;&#60;p&#62;**length lower-case-p** &#60;/p&#62;&#60;p&#62;**let machine-instance** &#60;/p&#62;&#60;p&#62;**let\* machine-type**&#60;/p&#62;|
+
+
+
+
+|<p>**intern lisp-implementation-type internal-time-units-per-second lisp-implementation-version intersection list** </p><p>**invalid-method-error list\*** </p><p>**invoke-debugger list-all-packages** </p><p>**invoke-restart list-length** </p><p>**invoke-restart-interactively listen** </p><p>**isqrt listp** </p><p>**keyword load** </p><p>**keywordp load-logical-pathname-translations labels load-time-value** </p><p>**lambda locally** </p><p>**lambda-list-keywords log** </p><p>**lambda-parameters-limit logand** </p><p>**last logandc1** </p><p>**lcm logandc2** </p><p>**ldb logbitp** </p><p>**ldb-test logcount** </p><p>**ldiff logeqv** </p><p>**least-negative-double-float logical-pathname** </p><p>**least-negative-long-float logical-pathname-translations least-negative-normalized-double-float logior** </p><p>**least-negative-normalized-long-float lognand** </p><p>**least-negative-normalized-short-float lognor** </p><p>**least-negative-normalized-single-float lognot** </p><p>**least-negative-short-float logorc1** </p><p>**least-negative-single-float logorc2** </p><p>**least-positive-double-float logtest** </p><p>**least-positive-long-float logxor** </p><p>**least-positive-normalized-double-float long-float** </p><p>**least-positive-normalized-long-float long-float-epsilon** </p><p>**least-positive-normalized-short-float long-float-negative-epsilon least-positive-normalized-single-float long-site-name** </p><p>**least-positive-short-float loop** </p><p>**least-positive-single-float loop-finish** </p><p>**length lower-case-p** </p><p>**let machine-instance** </p><p>**let\* machine-type**</p>|
+
 | :- |
+
+
+
 
 
 **Figure 1–9. Symbols in the COMMON-LISP package (part six of twelve).** 
@@ -56,8 +108,18 @@ The figures on the next twelve pages contain a complete enumeration of the 978 *
 
 
 
-|&#60;p&#62;**machine-version mask-field** &#60;/p&#62;&#60;p&#62;**macro-function max** &#60;/p&#62;&#60;p&#62;**macroexpand member** &#60;/p&#62;&#60;p&#62;**macroexpand-1 member-if** &#60;/p&#62;&#60;p&#62;**macrolet member-if-not** &#60;/p&#62;&#60;p&#62;**make-array merge** &#60;/p&#62;&#60;p&#62;**make-broadcast-stream merge-pathnames** &#60;/p&#62;&#60;p&#62;**make-concatenated-stream method** &#60;/p&#62;&#60;p&#62;**make-condition method-combination** &#60;/p&#62;&#60;p&#62;**make-dispatch-macro-character method-combination-error make-echo-stream method-qualifiers** &#60;/p&#62;&#60;p&#62;**make-hash-table min** &#60;/p&#62;&#60;p&#62;**make-instance minusp** &#60;/p&#62;&#60;p&#62;**make-instances-obsolete mismatch** &#60;/p&#62;&#60;p&#62;**make-list mod** &#60;/p&#62;&#60;p&#62;**make-load-form most-negative-double-float make-load-form-saving-slots most-negative-fixnum** &#60;/p&#62;&#60;p&#62;**make-method most-negative-long-float** &#60;/p&#62;&#60;p&#62;**make-package most-negative-short-float make-pathname most-negative-single-float make-random-state most-positive-double-float make-sequence most-positive-fixnum** &#60;/p&#62;&#60;p&#62;**make-string most-positive-long-float** &#60;/p&#62;&#60;p&#62;**make-string-input-stream most-positive-short-float** &#60;/p&#62;&#60;p&#62;**make-string-output-stream most-positive-single-float make-symbol muffle-warning** &#60;/p&#62;&#60;p&#62;**make-synonym-stream multiple-value-bind** &#60;/p&#62;&#60;p&#62;**make-two-way-stream multiple-value-call** &#60;/p&#62;&#60;p&#62;**makunbound multiple-value-list** &#60;/p&#62;&#60;p&#62;**map multiple-value-prog1** &#60;/p&#62;&#60;p&#62;**map-into multiple-value-setq** &#60;/p&#62;&#60;p&#62;**mapc multiple-values-limit** &#60;/p&#62;&#60;p&#62;**mapcan name-char** &#60;/p&#62;&#60;p&#62;**mapcar namestring** &#60;/p&#62;&#60;p&#62;**mapcon nbutlast** &#60;/p&#62;&#60;p&#62;**maphash nconc** &#60;/p&#62;&#60;p&#62;**mapl next-method-p** &#60;/p&#62;&#60;p&#62;**maplist nil**&#60;/p&#62;|
+
+
+
+
+
+
+|<p>**machine-version mask-field** </p><p>**macro-function max** </p><p>**macroexpand member** </p><p>**macroexpand-1 member-if** </p><p>**macrolet member-if-not** </p><p>**make-array merge** </p><p>**make-broadcast-stream merge-pathnames** </p><p>**make-concatenated-stream method** </p><p>**make-condition method-combination** </p><p>**make-dispatch-macro-character method-combination-error make-echo-stream method-qualifiers** </p><p>**make-hash-table min** </p><p>**make-instance minusp** </p><p>**make-instances-obsolete mismatch** </p><p>**make-list mod** </p><p>**make-load-form most-negative-double-float make-load-form-saving-slots most-negative-fixnum** </p><p>**make-method most-negative-long-float** </p><p>**make-package most-negative-short-float make-pathname most-negative-single-float make-random-state most-positive-double-float make-sequence most-positive-fixnum** </p><p>**make-string most-positive-long-float** </p><p>**make-string-input-stream most-positive-short-float** </p><p>**make-string-output-stream most-positive-single-float make-symbol muffle-warning** </p><p>**make-synonym-stream multiple-value-bind** </p><p>**make-two-way-stream multiple-value-call** </p><p>**makunbound multiple-value-list** </p><p>**map multiple-value-prog1** </p><p>**map-into multiple-value-setq** </p><p>**mapc multiple-values-limit** </p><p>**mapcan name-char** </p><p>**mapcar namestring** </p><p>**mapcon nbutlast** </p><p>**maphash nconc** </p><p>**mapl next-method-p** </p><p>**maplist nil**</p>|
+
 | :- |
+
+
+
 
 
 **Figure 1–10. Symbols in the COMMON-LISP package (part seven of twelve).** 
@@ -66,8 +128,18 @@ The figures on the next twelve pages contain a complete enumeration of the 978 *
 
 
 
-|&#60;p&#62;**nintersection package-error** &#60;/p&#62;&#60;p&#62;**ninth package-error-package** &#60;/p&#62;&#60;p&#62;**no-applicable-method package-name** &#60;/p&#62;&#60;p&#62;**no-next-method package-nicknames** &#60;/p&#62;&#60;p&#62;**not package-shadowing-symbols** &#60;/p&#62;&#60;p&#62;**notany package-use-list** &#60;/p&#62;&#60;p&#62;**notevery package-used-by-list** &#60;/p&#62;&#60;p&#62;**notinline packagep** &#60;/p&#62;&#60;p&#62;**nreconc pairlis** &#60;/p&#62;&#60;p&#62;**nreverse parse-error** &#60;/p&#62;&#60;p&#62;**nset-difference parse-integer** &#60;/p&#62;&#60;p&#62;**nset-exclusive-or parse-namestring** &#60;/p&#62;&#60;p&#62;**nstring-capitalize pathname** &#60;/p&#62;&#60;p&#62;**nstring-downcase pathname-device** &#60;/p&#62;&#60;p&#62;**nstring-upcase pathname-directory** &#60;/p&#62;&#60;p&#62;**nsublis pathname-host** &#60;/p&#62;&#60;p&#62;**nsubst pathname-match-p** &#60;/p&#62;&#60;p&#62;**nsubst-if pathname-name** &#60;/p&#62;&#60;p&#62;**nsubst-if-not pathname-type** &#60;/p&#62;&#60;p&#62;**nsubstitute pathname-version** &#60;/p&#62;&#60;p&#62;**nsubstitute-if pathnamep** &#60;/p&#62;&#60;p&#62;**nsubstitute-if-not peek-char** &#60;/p&#62;&#60;p&#62;**nth phase** &#60;/p&#62;&#60;p&#62;**nth-value pi** &#60;/p&#62;&#60;p&#62;**nthcdr plusp** &#60;/p&#62;&#60;p&#62;**null pop** &#60;/p&#62;&#60;p&#62;**number position** &#60;/p&#62;&#60;p&#62;**numberp position-if** &#60;/p&#62;&#60;p&#62;**numerator position-if-not** &#60;/p&#62;&#60;p&#62;**nunion pprint** &#60;/p&#62;&#60;p&#62;**oddp pprint-dispatch** &#60;/p&#62;&#60;p&#62;**open pprint-exit-if-list-exhausted** &#60;/p&#62;&#60;p&#62;**open-stream-p pprint-fill** &#60;/p&#62;&#60;p&#62;**optimize pprint-indent** &#60;/p&#62;&#60;p&#62;**or pprint-linear** &#60;/p&#62;&#60;p&#62;**otherwise pprint-logical-block** &#60;/p&#62;&#60;p&#62;**output-stream-p pprint-newline** &#60;/p&#62;&#60;p&#62;**package pprint-pop**&#60;/p&#62;|
+
+
+
+
+
+
+|<p>**nintersection package-error** </p><p>**ninth package-error-package** </p><p>**no-applicable-method package-name** </p><p>**no-next-method package-nicknames** </p><p>**not package-shadowing-symbols** </p><p>**notany package-use-list** </p><p>**notevery package-used-by-list** </p><p>**notinline packagep** </p><p>**nreconc pairlis** </p><p>**nreverse parse-error** </p><p>**nset-difference parse-integer** </p><p>**nset-exclusive-or parse-namestring** </p><p>**nstring-capitalize pathname** </p><p>**nstring-downcase pathname-device** </p><p>**nstring-upcase pathname-directory** </p><p>**nsublis pathname-host** </p><p>**nsubst pathname-match-p** </p><p>**nsubst-if pathname-name** </p><p>**nsubst-if-not pathname-type** </p><p>**nsubstitute pathname-version** </p><p>**nsubstitute-if pathnamep** </p><p>**nsubstitute-if-not peek-char** </p><p>**nth phase** </p><p>**nth-value pi** </p><p>**nthcdr plusp** </p><p>**null pop** </p><p>**number position** </p><p>**numberp position-if** </p><p>**numerator position-if-not** </p><p>**nunion pprint** </p><p>**oddp pprint-dispatch** </p><p>**open pprint-exit-if-list-exhausted** </p><p>**open-stream-p pprint-fill** </p><p>**optimize pprint-indent** </p><p>**or pprint-linear** </p><p>**otherwise pprint-logical-block** </p><p>**output-stream-p pprint-newline** </p><p>**package pprint-pop**</p>|
+
 | :- |
+
+
+
 
 
 **Figure 1–11. Symbols in the COMMON-LISP package (part eight of twelve).** 
@@ -76,16 +148,34 @@ The figures on the next twelve pages contain a complete enumeration of the 978 *
 
 
 
-|&#60;p&#62;**pprint-tab read-char** &#60;/p&#62;&#60;p&#62;**pprint-tabular read-char-no-hang** &#60;/p&#62;&#60;p&#62;**prin1 read-delimited-list** &#60;/p&#62;&#60;p&#62;**prin1-to-string read-from-string** &#60;/p&#62;&#60;p&#62;**princ read-line** &#60;/p&#62;&#60;p&#62;**princ-to-string read-preserving-whitespace** &#60;/p&#62;&#60;p&#62;**print read-sequence** &#60;/p&#62;&#60;p&#62;**print-not-readable reader-error** &#60;/p&#62;&#60;p&#62;**print-not-readable-object readtable** &#60;/p&#62;&#60;p&#62;**print-object readtable-case** &#60;/p&#62;&#60;p&#62;**print-unreadable-object readtablep** &#60;/p&#62;&#60;p&#62;**probe-file real** &#60;/p&#62;&#60;p&#62;**proclaim realp** &#60;/p&#62;&#60;p&#62;**prog realpart** &#60;/p&#62;&#60;p&#62;**prog\* reduce** &#60;/p&#62;&#60;p&#62;**prog1 reinitialize-instance** &#60;/p&#62;&#60;p&#62;**prog2 rem** &#60;/p&#62;&#60;p&#62;**progn remf** &#60;/p&#62;&#60;p&#62;**program-error remhash** &#60;/p&#62;&#60;p&#62;**progv remove** &#60;/p&#62;&#60;p&#62;**provide remove-duplicates** &#60;/p&#62;&#60;p&#62;**psetf remove-if** &#60;/p&#62;&#60;p&#62;**psetq remove-if-not** &#60;/p&#62;&#60;p&#62;**push remove-method** &#60;/p&#62;&#60;p&#62;**pushnew remprop** &#60;/p&#62;&#60;p&#62;**quote rename-file** &#60;/p&#62;&#60;p&#62;**random rename-package** &#60;/p&#62;&#60;p&#62;**random-state replace** &#60;/p&#62;&#60;p&#62;**random-state-p require** &#60;/p&#62;&#60;p&#62;**rassoc rest** &#60;/p&#62;&#60;p&#62;**rassoc-if restart** &#60;/p&#62;&#60;p&#62;**rassoc-if-not restart-bind** &#60;/p&#62;&#60;p&#62;**ratio restart-case** &#60;/p&#62;&#60;p&#62;**rational restart-name** &#60;/p&#62;&#60;p&#62;**rationalize return** &#60;/p&#62;&#60;p&#62;**rationalp return-from** &#60;/p&#62;&#60;p&#62;**read revappend** &#60;/p&#62;&#60;p&#62;**read-byte reverse**&#60;/p&#62;|
+
+
+
+
+
+
+|<p>**pprint-tab read-char** </p><p>**pprint-tabular read-char-no-hang** </p><p>**prin1 read-delimited-list** </p><p>**prin1-to-string read-from-string** </p><p>**princ read-line** </p><p>**princ-to-string read-preserving-whitespace** </p><p>**print read-sequence** </p><p>**print-not-readable reader-error** </p><p>**print-not-readable-object readtable** </p><p>**print-object readtable-case** </p><p>**print-unreadable-object readtablep** </p><p>**probe-file real** </p><p>**proclaim realp** </p><p>**prog realpart** </p><p>**prog\* reduce** </p><p>**prog1 reinitialize-instance** </p><p>**prog2 rem** </p><p>**progn remf** </p><p>**program-error remhash** </p><p>**progv remove** </p><p>**provide remove-duplicates** </p><p>**psetf remove-if** </p><p>**psetq remove-if-not** </p><p>**push remove-method** </p><p>**pushnew remprop** </p><p>**quote rename-file** </p><p>**random rename-package** </p><p>**random-state replace** </p><p>**random-state-p require** </p><p>**rassoc rest** </p><p>**rassoc-if restart** </p><p>**rassoc-if-not restart-bind** </p><p>**ratio restart-case** </p><p>**rational restart-name** </p><p>**rationalize return** </p><p>**rationalp return-from** </p><p>**read revappend** </p><p>**read-byte reverse**</p>|
+
 | :- |
+
+
+
 
 
 **Figure 1–12. Symbols in the COMMON-LISP package (part nine of twelve).**  
 
 
 
-|&#60;p&#62;**room simple-bit-vector** &#60;/p&#62;&#60;p&#62;**rotatef simple-bit-vector-p** &#60;/p&#62;&#60;p&#62;**round simple-condition** &#60;/p&#62;&#60;p&#62;**row-major-aref simple-condition-format-arguments rplaca simple-condition-format-control rplacd simple-error** &#60;/p&#62;&#60;p&#62;**safety simple-string** &#60;/p&#62;&#60;p&#62;**satisfies simple-string-p** &#60;/p&#62;&#60;p&#62;**sbit simple-type-error** &#60;/p&#62;&#60;p&#62;**scale-float simple-vector** &#60;/p&#62;&#60;p&#62;**schar simple-vector-p** &#60;/p&#62;&#60;p&#62;**search simple-warning** &#60;/p&#62;&#60;p&#62;**second sin** &#60;/p&#62;&#60;p&#62;**sequence single-float** &#60;/p&#62;&#60;p&#62;**serious-condition single-float-epsilon** &#60;/p&#62;&#60;p&#62;**set single-float-negative-epsilon** &#60;/p&#62;&#60;p&#62;**set-difference sinh** &#60;/p&#62;&#60;p&#62;**set-dispatch-macro-character sixth** &#60;/p&#62;&#60;p&#62;**set-exclusive-or sleep** &#60;/p&#62;&#60;p&#62;**set-macro-character slot-boundp** &#60;/p&#62;&#60;p&#62;**set-pprint-dispatch slot-exists-p** &#60;/p&#62;&#60;p&#62;**set-syntax-from-char slot-makunbound** &#60;/p&#62;&#60;p&#62;**setf slot-missing** &#60;/p&#62;&#60;p&#62;**setq slot-unbound** &#60;/p&#62;&#60;p&#62;**seventh slot-value** &#60;/p&#62;&#60;p&#62;**shadow software-type** &#60;/p&#62;&#60;p&#62;**shadowing-import software-version** &#60;/p&#62;&#60;p&#62;**shared-initialize some** &#60;/p&#62;&#60;p&#62;**shiftf sort** &#60;/p&#62;&#60;p&#62;**short-float space** &#60;/p&#62;&#60;p&#62;**short-float-epsilon special** &#60;/p&#62;&#60;p&#62;**short-float-negative-epsilon special-operator-p** &#60;/p&#62;&#60;p&#62;**short-site-name speed** &#60;/p&#62;&#60;p&#62;**signal sqrt** &#60;/p&#62;&#60;p&#62;**signed-byte stable-sort** &#60;/p&#62;&#60;p&#62;**signum standard** &#60;/p&#62;&#60;p&#62;**simple-array standard-char** &#60;/p&#62;&#60;p&#62;**simple-base-string standard-char-p**&#60;/p&#62;|
+
+
+
+
+|<p>**room simple-bit-vector** </p><p>**rotatef simple-bit-vector-p** </p><p>**round simple-condition** </p><p>**row-major-aref simple-condition-format-arguments rplaca simple-condition-format-control rplacd simple-error** </p><p>**safety simple-string** </p><p>**satisfies simple-string-p** </p><p>**sbit simple-type-error** </p><p>**scale-float simple-vector** </p><p>**schar simple-vector-p** </p><p>**search simple-warning** </p><p>**second sin** </p><p>**sequence single-float** </p><p>**serious-condition single-float-epsilon** </p><p>**set single-float-negative-epsilon** </p><p>**set-difference sinh** </p><p>**set-dispatch-macro-character sixth** </p><p>**set-exclusive-or sleep** </p><p>**set-macro-character slot-boundp** </p><p>**set-pprint-dispatch slot-exists-p** </p><p>**set-syntax-from-char slot-makunbound** </p><p>**setf slot-missing** </p><p>**setq slot-unbound** </p><p>**seventh slot-value** </p><p>**shadow software-type** </p><p>**shadowing-import software-version** </p><p>**shared-initialize some** </p><p>**shiftf sort** </p><p>**short-float space** </p><p>**short-float-epsilon special** </p><p>**short-float-negative-epsilon special-operator-p** </p><p>**short-site-name speed** </p><p>**signal sqrt** </p><p>**signed-byte stable-sort** </p><p>**signum standard** </p><p>**simple-array standard-char** </p><p>**simple-base-string standard-char-p**</p>|
+
 | :- |
+
+
+
 
 
 **Figure 1–13. Symbols in the COMMON-LISP package (part ten of twelve).** 
@@ -94,8 +184,18 @@ The figures on the next twelve pages contain a complete enumeration of the 978 *
 
 
 
-|&#60;p&#62;**standard-class sublis** &#60;/p&#62;&#60;p&#62;**standard-generic-function subseq** &#60;/p&#62;&#60;p&#62;**standard-method subsetp** &#60;/p&#62;&#60;p&#62;**standard-object subst** &#60;/p&#62;&#60;p&#62;**step subst-if** &#60;/p&#62;&#60;p&#62;**storage-condition subst-if-not** &#60;/p&#62;&#60;p&#62;**store-value substitute** &#60;/p&#62;&#60;p&#62;**stream substitute-if** &#60;/p&#62;&#60;p&#62;**stream-element-type substitute-if-not** &#60;/p&#62;&#60;p&#62;**stream-error subtypep** &#60;/p&#62;&#60;p&#62;**stream-error-stream svref** &#60;/p&#62;&#60;p&#62;**stream-external-format sxhash** &#60;/p&#62;&#60;p&#62;**streamp symbol** &#60;/p&#62;&#60;p&#62;**string symbol-function** &#60;/p&#62;&#60;p&#62;**string-capitalize symbol-macrolet** &#60;/p&#62;&#60;p&#62;**string-downcase symbol-name** &#60;/p&#62;&#60;p&#62;**string-equal symbol-package** &#60;/p&#62;&#60;p&#62;**string-greaterp symbol-plist** &#60;/p&#62;&#60;p&#62;**string-left-trim symbol-value** &#60;/p&#62;&#60;p&#62;**string-lessp symbolp** &#60;/p&#62;&#60;p&#62;**string-not-equal synonym-stream** &#60;/p&#62;&#60;p&#62;**string-not-greaterp synonym-stream-symbol** &#60;/p&#62;&#60;p&#62;**string-not-lessp t** &#60;/p&#62;&#60;p&#62;**string-right-trim tagbody** &#60;/p&#62;&#60;p&#62;**string-stream tailp** &#60;/p&#62;&#60;p&#62;**string-trim tan** &#60;/p&#62;&#60;p&#62;**string-upcase tanh** &#60;/p&#62;&#60;p&#62;**string/= tenth** &#60;/p&#62;&#60;p&#62;**string**&#60; **terpri** &#60;/p&#62;&#60;p&#62;**string**&#60;**= the** &#60;/p&#62;&#60;p&#62;**string= third** &#60;/p&#62;&#60;p&#62;**string**&#62; **throw** &#60;/p&#62;&#60;p&#62;**string**&#62;**= time** &#60;/p&#62;&#60;p&#62;**stringp trace** &#60;/p&#62;&#60;p&#62;**structure translate-logical-pathname** &#60;/p&#62;&#60;p&#62;**structure-class translate-pathname** &#60;/p&#62;&#60;p&#62;**structure-object tree-equal** &#60;/p&#62;&#60;p&#62;**style-warning truename**&#60;/p&#62;|
+
+
+
+
+
+
+|<p>**standard-class sublis** </p><p>**standard-generic-function subseq** </p><p>**standard-method subsetp** </p><p>**standard-object subst** </p><p>**step subst-if** </p><p>**storage-condition subst-if-not** </p><p>**store-value substitute** </p><p>**stream substitute-if** </p><p>**stream-element-type substitute-if-not** </p><p>**stream-error subtypep** </p><p>**stream-error-stream svref** </p><p>**stream-external-format sxhash** </p><p>**streamp symbol** </p><p>**string symbol-function** </p><p>**string-capitalize symbol-macrolet** </p><p>**string-downcase symbol-name** </p><p>**string-equal symbol-package** </p><p>**string-greaterp symbol-plist** </p><p>**string-left-trim symbol-value** </p><p>**string-lessp symbolp** </p><p>**string-not-equal synonym-stream** </p><p>**string-not-greaterp synonym-stream-symbol** </p><p>**string-not-lessp t** </p><p>**string-right-trim tagbody** </p><p>**string-stream tailp** </p><p>**string-trim tan** </p><p>**string-upcase tanh** </p><p>**string/= tenth** </p><p>**string**< **terpri** </p><p>**string**<**= the** </p><p>**string= third** </p><p>**string**> **throw** </p><p>**string**>**= time** </p><p>**stringp trace** </p><p>**structure translate-logical-pathname** </p><p>**structure-class translate-pathname** </p><p>**structure-object tree-equal** </p><p>**style-warning truename**</p>|
+
 | :- |
+
+
+
 
 
 **Figure 1–14. Symbols in the COMMON-LISP package (part eleven of twelve).** 
@@ -104,8 +204,19 @@ The figures on the next twelve pages contain a complete enumeration of the 978 *
 
 
 
-|&#60;p&#62;**truncate values-list** &#60;/p&#62;&#60;p&#62;**two-way-stream variable** &#60;/p&#62;&#60;p&#62;**two-way-stream-input-stream vector** &#60;/p&#62;&#60;p&#62;**two-way-stream-output-stream vector-pop** &#60;/p&#62;&#60;p&#62;**type vector-push** &#60;/p&#62;&#60;p&#62;**type-error vector-push-extend** &#60;/p&#62;&#60;p&#62;**type-error-datum vectorp** &#60;/p&#62;&#60;p&#62;**type-error-expected-type warn** &#60;/p&#62;&#60;p&#62;**type-of warning** &#60;/p&#62;&#60;p&#62;**typecase when** &#60;/p&#62;&#60;p&#62;**typep wild-pathname-p** &#60;/p&#62;&#60;p&#62;**unbound-slot with-accessors** &#60;/p&#62;&#60;p&#62;**unbound-slot-instance with-compilation-unit** &#60;/p&#62;&#60;p&#62;**unbound-variable with-condition-restarts undefined-function with-hash-table-iterator unexport with-input-from-string unintern with-open-file** &#60;/p&#62;&#60;p&#62;**union with-open-stream** &#60;/p&#62;&#60;p&#62;**unless with-output-to-string** &#60;/p&#62;&#60;p&#62;**unread-char with-package-iterator** &#60;/p&#62;&#60;p&#62;**unsigned-byte with-simple-restart** &#60;/p&#62;&#60;p&#62;**untrace with-slots** &#60;/p&#62;&#60;p&#62;**unuse-package with-standard-io-syntax unwind-protect write** &#60;/p&#62;&#60;p&#62;**update-instance-for-different-class write-byte** &#60;/p&#62;&#60;p&#62;**update-instance-for-redefined-class write-char** &#60;/p&#62;&#60;p&#62;**upgraded-array-element-type write-line** &#60;/p&#62;&#60;p&#62;**upgraded-complex-part-type write-sequence** &#60;/p&#62;&#60;p&#62;**upper-case-p write-string** &#60;/p&#62;&#60;p&#62;**use-package write-to-string** &#60;/p&#62;&#60;p&#62;**use-value y-or-n-p** &#60;/p&#62;&#60;p&#62;**user-homedir-pathname yes-or-no-p** &#60;/p&#62;&#60;p&#62;**values zerop**&#60;/p&#62;|
+
+
+
+
+
+
+|<p>**truncate values-list** </p><p>**two-way-stream variable** </p><p>**two-way-stream-input-stream vector** </p><p>**two-way-stream-output-stream vector-pop** </p><p>**type vector-push** </p><p>**type-error vector-push-extend** </p><p>**type-error-datum vectorp** </p><p>**type-error-expected-type warn** </p><p>**type-of warning** </p><p>**typecase when** </p><p>**typep wild-pathname-p** </p><p>**unbound-slot with-accessors** </p><p>**unbound-slot-instance with-compilation-unit** </p><p>**unbound-variable with-condition-restarts undefined-function with-hash-table-iterator unexport with-input-from-string unintern with-open-file** </p><p>**union with-open-stream** </p><p>**unless with-output-to-string** </p><p>**unread-char with-package-iterator** </p><p>**unsigned-byte with-simple-restart** </p><p>**untrace with-slots** </p><p>**unuse-package with-standard-io-syntax unwind-protect write** </p><p>**update-instance-for-different-class write-byte** </p><p>**update-instance-for-redefined-class write-char** </p><p>**upgraded-array-element-type write-line** </p><p>**upgraded-complex-part-type write-sequence** </p><p>**upper-case-p write-string** </p><p>**use-package write-to-string** </p><p>**use-value y-or-n-p** </p><p>**user-homedir-pathname yes-or-no-p** </p><p>**values zerop**</p>|
+
 | :- |
 
 
+
+
+
 **Figure 1–15. Symbols in the COMMON-LISP package (part twelve of twelve).** 
+

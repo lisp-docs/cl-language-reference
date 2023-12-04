@@ -1,4 +1,8 @@
  
 
-This separates clauses in ~[ and ~&#60; constructs. The consequences of using it elsewhere are undefined. 
+
+
+This separates clauses in ~[ and ~< constructs. The consequences of using it elsewhere are undefined. 
+
+
 

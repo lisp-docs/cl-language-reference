@@ -1,15 +1,15 @@
-# rational
+# rational, rationalize
 
-import Rational from './_rational.md';
+import Rationalaarationalize from './_rational.md';
 
-<Rational />
+<Rationalaarationalize />
 
-## Expanded Reference: rational
+## Expanded Reference: rational, rationalize
 
 :::tip
 TODO: Please contribute to this page by adding explanations and examples
 :::
 
 ```lisp
-(rational )
+(rational, rationalize )
 ```

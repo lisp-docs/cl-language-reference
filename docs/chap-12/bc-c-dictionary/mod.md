@@ -1,15 +1,15 @@
-# mod
+# mod, rem
 
-import Mod from './_mod.md';
+import Modaarem from './_mod.md';
 
-<Mod />
+<Modaarem />
 
-## Expanded Reference: mod
+## Expanded Reference: mod, rem
 
 :::tip
 TODO: Please contribute to this page by adding explanations and examples
 :::
 
 ```lisp
-(mod )
+(mod, rem )
 ```

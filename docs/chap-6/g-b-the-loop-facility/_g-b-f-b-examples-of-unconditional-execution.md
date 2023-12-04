@@ -1,26 +1,52 @@
  
 
+
+
 ;; Print numbers and their squares. 
+
+
 
 ;; The DO construct applies to multiple forms. 
 
+
+
 (loop for i from 1 to 3 
+
+
 
 do (print i) 
 
+
+
 (print (\* i i))) 
 
-&#9655; 1 
 
-&#9655; 1 
 
-&#9655; 2 
+▷ 1 
 
-&#9655; 4 
 
-&#9655; 3 
 
-&#9655; 9 
+▷ 1 
+
+
+
+▷ 2 
+
+
+
+▷ 4 
+
+
+
+▷ 3 
+
+
+
+▷ 9 
+
+
 
 *→* NIL 
+
+
 
