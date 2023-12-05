@@ -26,7 +26,7 @@ A **not** *feature expression* succeeds if its argument *feature-conditional* fa
 
 
 
-(and *\&#123;feature-conditional\&#125;*\*) 
+(and *\{feature-conditional\}*\*) 
 
 
 
@@ -46,7 +46,7 @@ System
 
 
 
-(or *\&#123;feature-conditional\&#125;*\*) 
+(or *\{feature-conditional\}*\*) 
 
 
 

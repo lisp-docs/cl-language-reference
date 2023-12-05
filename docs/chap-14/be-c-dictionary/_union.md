@@ -6,11 +6,11 @@
 
 
 
-**union** *list-1 list-2* &key *key test test-not → result-list* 
+**union** *list-1 list-2* &amp;key *key test test-not → result-list* 
 
 
 
-**nunion** *list-1 list-2* &key *key test test-not → result-list* 
+**nunion** *list-1 list-2* &amp;key *key test test-not → result-list* 
 
 
 

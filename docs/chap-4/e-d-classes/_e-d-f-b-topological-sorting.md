@@ -6,7 +6,7 @@ Topological sorting proceeds by finding a class <i>C</i> in <i>S<sub>C</sub></i>
 
 
 
-If <i>S<sub>C</sub></i> is not empty and the process has stopped, the set <i>R</i> is inconsistent. If every <i>class</i> in the finite set of <i>classes</i> is preceded by another, then <i>R</i> contains a loop. That is, there is a chain of classes <i>C</i><sub>1</sub><i>, . . . , C<sub>n</sub></i> such that <i>C<sub>i</sub></i> precedes <i>C<sub>i</sub></i>+1, 1 <i>≤ i</i> < <i>n</i>, and <i>C<sub>n</sub></i> precedes <i>C</i><sub>1</sub>. 
+If <i>S<sub>C</sub></i> is not empty and the process has stopped, the set <i>R</i> is inconsistent. If every <i>class</i> in the finite set of <i>classes</i> is preceded by another, then <i>R</i> contains a loop. That is, there is a chain of classes <i>C</i><sub>1</sub><i>, . . . , C<sub>n</sub></i> such that <i>C<sub>i</sub></i> precedes <i>C<sub>i</sub></i>+1, 1 <i>≤ i</i> &lt; <i>n</i>, and <i>C<sub>n</sub></i> precedes <i>C</i><sub>1</sub>. 
 
 
 
@@ -18,7 +18,7 @@ Sometimes there are several <i>classes</i> from <i>S<sub>C</sub></i> with no pre
 
 
 
-In more precise terms, let <i>\&#123;N</i><sub>1</sub><i>, . . . , N<sub>m</sub>\&#125;</i>, <i>m ≥</i> 2, be the <i>classes</i> from <i>S<sub>C</sub></i> with no predecessors. Let (<i>C</i><sub>1</sub> <i>. . . C<sub>n</sub></i>), <i>n ≥</i> 1, be the <i>class precedence list</i> constructed so far. <i>C</i><sub>1</sub> is the most specific <i>class</i>, and <i>C<sub>n</sub></i> is the least specific. Let 1 <i>≤ j ≤ n</i> be the largest number such that there exists an <i>i</i> where 1 <i>≤ i ≤ m</i> and <i>N<sub>i</sub></i>is a direct <i>superclass</i> of <i>C<sub>j</sub></i> ; <i>N<sub>i</sub></i>is placed next. 
+In more precise terms, let <i>\{N</i><sub>1</sub><i>, . . . , N<sub>m</sub>\}</i>, <i>m ≥</i> 2, be the <i>classes</i> from <i>S<sub>C</sub></i> with no predecessors. Let (<i>C</i><sub>1</sub> <i>. . . C<sub>n</sub></i>), <i>n ≥</i> 1, be the <i>class precedence list</i> constructed so far. <i>C</i><sub>1</sub> is the most specific <i>class</i>, and <i>C<sub>n</sub></i> is the least specific. Let 1 <i>≤ j ≤ n</i> be the largest number such that there exists an <i>i</i> where 1 <i>≤ i ≤ m</i> and <i>N<sub>i</sub></i>is a direct <i>superclass</i> of <i>C<sub>j</sub></i> ; <i>N<sub>i</sub></i>is placed next. 
 
 
 

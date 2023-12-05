@@ -26,19 +26,19 @@ This example determines a *class precedence list* for the class pie. The followi
 
 
 
-The set <i>S<sub>pie</sub></i> = <i>\&#123;</i>pie, apple, cinnamon, fruit, spice, food, standard-object, t<i>\&#125;</i>. The set <i>R</i> = <i>\&#123;</i>(pie, apple), (apple, cinnamon), (apple, fruit), (cinnamon, spice), 
+The set <i>S<sub>pie</sub></i> = <i>\{</i>pie, apple, cinnamon, fruit, spice, food, standard-object, t<i>\}</i>. The set <i>R</i> = <i>\{</i>(pie, apple), (apple, cinnamon), (apple, fruit), (cinnamon, spice), 
 
 
 
-(fruit, food), (spice, food), (food, standard-object), (standard-object, t)*\&#125;*. 
+(fruit, food), (spice, food), (food, standard-object), (standard-object, t)*\}*. 
 
 
 
-The class pie is not preceded by anything, so it comes first; the result so far is (pie). Remove pie from *S* and pairs mentioning pie from *R* to get *S* = *\&#123;*apple, cinnamon, fruit, spice, food, standard-object, t*\&#125;* and *R* = *\&#123;*(apple, cinnamon), (apple, fruit), (cinnamon, spice), (fruit, food), (spice, food), (food, standard-object), (standard-object, t)*\&#125;*. 
+The class pie is not preceded by anything, so it comes first; the result so far is (pie). Remove pie from *S* and pairs mentioning pie from *R* to get *S* = *\{*apple, cinnamon, fruit, spice, food, standard-object, t*\}* and *R* = *\{*(apple, cinnamon), (apple, fruit), (cinnamon, spice), (fruit, food), (spice, food), (food, standard-object), (standard-object, t)*\}*. 
 
 
 
-The class apple is not preceded by anything, so it is next; the result is (pie apple). Removing apple and the relevant pairs results in *S* = *\&#123;*cinnamon, fruit, spice, food, standard-object, t*\&#125;* and *R* = *\&#123;*(cinnamon, spice), (fruit, food), (spice, food), (food, standard-object), (standard-object, t)*\&#125;*. 
+The class apple is not preceded by anything, so it is next; the result is (pie apple). Removing apple and the relevant pairs results in *S* = *\{*cinnamon, fruit, spice, food, standard-object, t*\}* and *R* = *\{*(cinnamon, spice), (fruit, food), (spice, food), (food, standard-object), (standard-object, t)*\}*. 
 
 
 
@@ -50,11 +50,11 @@ The classes cinnamon and fruit are not preceded by anything, so the one with a d
 
 
 
-of fruit, and the class pie is a direct *subclass* of cinnamon. Because apple appears to the right of pie in the *class precedence list*, fruit goes next, and the result so far is (pie apple fruit). *S* = *\&#123;*cinnamon, spice, food, standard-object, t*\&#125;*; *R* = *\&#123;*(cinnamon, spice), (spice, food), (food, standard-object), (standard-object, t)*\&#125;*. 
+of fruit, and the class pie is a direct *subclass* of cinnamon. Because apple appears to the right of pie in the *class precedence list*, fruit goes next, and the result so far is (pie apple fruit). *S* = *\{*cinnamon, spice, food, standard-object, t*\}*; *R* = *\{*(cinnamon, spice), (spice, food), (food, standard-object), (standard-object, t)*\}*. 
 
 
 
-The class cinnamon is next, giving the result so far as (pie apple fruit cinnamon). At this point *S* = *\&#123;*spice, food, standard-object, t*\&#125;*; *R* = *\&#123;*(spice, food), (food, standard-object), (standard-object, t)*\&#125;*. 
+The class cinnamon is next, giving the result so far as (pie apple fruit cinnamon). At this point *S* = *\{*spice, food, standard-object, t*\}*; *R* = *\{*(spice, food), (food, standard-object), (standard-object, t)*\}*. 
 
 
 

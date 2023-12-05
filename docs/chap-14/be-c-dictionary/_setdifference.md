@@ -6,11 +6,11 @@
 
 
 
-**set-difference** *list-1 list-2* &key *key test test-not → result-list* 
+**set-difference** *list-1 list-2* &amp;key *key test test-not → result-list* 
 
 
 
-**nset-difference** *list-1 list-2* &key *key test test-not → result-list* 
+**nset-difference** *list-1 list-2* &amp;key *key test test-not → result-list* 
 
 
 

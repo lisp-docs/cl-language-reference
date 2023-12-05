@@ -78,7 +78,7 @@ return i))
 
 
 
-when (> i 5) 
+when (&gt; i 5) 
 
 
 
@@ -102,7 +102,7 @@ finally (prin1 ’got-here))
 
 
 
-when (> i 5) 
+when (&gt; i 5) 
 
 
 

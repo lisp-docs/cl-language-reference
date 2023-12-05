@@ -6,7 +6,7 @@ If **\*print-array\*** is *true* and **\*print-readably\*** is *false*, any *arr
 
 
 
-*•* If j < n-1, then a close parenthesis is printed. 
+*•* If j &lt; n-1, then a close parenthesis is printed. 
 
 
 
@@ -14,7 +14,7 @@ If **\*print-array\*** is *true* and **\*print-readably\*** is *false*, any *arr
 
 
 
-*•* If j < n-1, then an open parenthesis is printed. 
+*•* If j &lt; n-1, then an open parenthesis is printed. 
 
 
 
@@ -26,7 +26,7 @@ If the *array* is of a specialized *type*, containing bits or characters, then t
 
 
 
-If both **\*print-array\*** and **\*print-readably\*** are *false*, then the *array* is printed in a format (using #<) that is concise but not readable. 
+If both **\*print-array\*** and **\*print-readably\*** are *false*, then the *array* is printed in a format (using #&lt;) that is concise but not readable. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**gentemp** &optional *prefix package → new-symbol* 
+**gentemp** &amp;optional *prefix package → new-symbol* 
 
 
 

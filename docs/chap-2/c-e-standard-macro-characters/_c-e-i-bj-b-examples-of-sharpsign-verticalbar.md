@@ -26,7 +26,7 @@ The following are some examples that exploit the #|...|# notation:
 
 
 
-(defun add3 (n) #|(format t "~&Adding 3 to ~D." n)|# (+ n 3)) 
+(defun add3 (n) #|(format t "~&amp;Adding 3 to ~D." n)|# (+ n 3)) 
 
 
 

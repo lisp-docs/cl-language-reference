@@ -10,7 +10,7 @@ A *define-modify-macro lambda list* can contain the *lambda list keywords* shown
 
 
 
-|**&optional &rest**|
+|**&amp;optional &amp;rest**|
 
 | :- |
 

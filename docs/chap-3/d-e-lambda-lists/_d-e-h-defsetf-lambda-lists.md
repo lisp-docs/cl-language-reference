@@ -10,27 +10,27 @@ A *defsetf lambda list* has the following syntax:
 
 
 
-*lambda-list::*=(*\&#123;var\&#125;*\* 
+*lambda-list::*=(*\{var\}*\* 
 
 
 
-[&optional *\&#123;var |* (*var* [*init-form* [*supplied-p-parameter*]])*\&#125;*\*] 
+[&amp;optional *\{var |* (*var* [*init-form* [*supplied-p-parameter*]])*\}*\*] 
 
 
 
-[&rest *var*] 
+[&amp;rest *var*] 
 
 
 
-[&key *\&#123;var |* (*\&#123;var |* (*keyword-name var*)*\&#125;* [*init-form* [*supplied-p-parameter*]])*\&#125;*\* 
+[&amp;key *\{var |* (*\{var |* (*keyword-name var*)*\}* [*init-form* [*supplied-p-parameter*]])*\}*\* 
 
 
 
-[&allow-other-keys]] 
+[&amp;allow-other-keys]] 
 
 
 
-[&environment *var*] 
+[&amp;environment *var*] 
 
 
 
@@ -38,7 +38,7 @@ A *defsetf lambda list* can contain the *lambda list keywords* shown in Figure 3
 
 
 
-|<p>**&allow-other-keys &key &rest** </p><p>**&environment &optional**</p>|
+|<p>**&amp;allow-other-keys &amp;key &amp;rest** </p><p>**&amp;environment &amp;optional**</p>|
 
 | :- |
 
@@ -50,7 +50,7 @@ A *defsetf lambda list* can contain the *lambda list keywords* shown in Figure 3
 
 
 
-A *defsetf lambda list* differs from an *ordinary lambda list* only in that it does not permit the use of **&aux**, and that it permits use of **&environment**, which introduces an *environment parameter* . 
+A *defsetf lambda list* differs from an *ordinary lambda list* only in that it does not permit the use of **&amp;aux**, and that it permits use of **&amp;environment**, which introduces an *environment parameter* . 
 
 
 

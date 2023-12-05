@@ -18,7 +18,7 @@ is operationally equivalent to this line:
 
 
 
-**file-position** *stream* &optional *position-spec → result* 
+**file-position** *stream* &amp;optional *position-spec → result* 
 
 
 

@@ -10,7 +10,7 @@ The syntax of a *logical pathname namestring* is as follows. (Note that unlike m
 
 
 
-[*↓relative-directory-marker*] *\&#123;↓directory directory-marker\&#125;*\* 
+[*↓relative-directory-marker*] *\{↓directory directory-marker\}*\* 
 
 
 

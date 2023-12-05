@@ -10,7 +10,7 @@ A *class* precedes its direct *superclasses*, and a direct *superclass* precedes
 
 
 
-<i>R<sub>C</sub></i> = <i>\&#123;</i>(<i>C, C</i><sub>1</sub>)<i>,</i>(<i>C</i><sub>1</sub><i>, C</i><sub>2</sub>)<i>, . . . ,</i>(<i>C<sub>n−</sub></i>1</sub><i>, C<sub>n</sub></i>)<i>\&#125;</i> 
+<i>R<sub>C</sub></i> = <i>\{</i>(<i>C, C</i><sub>1</sub>)<i>,</i>(<i>C</i><sub>1</sub><i>, C</i><sub>2</sub>)<i>, . . . ,</i>(<i>C<sub>n−</sub></i>1<i>, C<sub>n</sub></i>)<i>\}</i> 
 
 
 

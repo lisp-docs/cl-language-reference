@@ -6,27 +6,27 @@
 
 
 
-**subst** *new old tree* &key *key test test-not → new-tree* 
+**subst** *new old tree* &amp;key *key test test-not → new-tree* 
 
 
 
-**subst-if** *new predicate tree* &key *key → new-tree* 
+**subst-if** *new predicate tree* &amp;key *key → new-tree* 
 
 
 
-**subst-if-not** *new predicate tree* &key *key → new-tree* 
+**subst-if-not** *new predicate tree* &amp;key *key → new-tree* 
 
 
 
-**nsubst** *new old tree* &key *key test test-not → new-tree* 
+**nsubst** *new old tree* &amp;key *key test test-not → new-tree* 
 
 
 
-**nsubst-if** *new predicate tree* &key *key → new-tree* 
+**nsubst-if** *new predicate tree* &amp;key *key → new-tree* 
 
 
 
-**nsubst-if-not** *new predicate tree* &key *key → new-tree* 
+**nsubst-if-not** *new predicate tree* &amp;key *key → new-tree* 
 
 
 
@@ -234,7 +234,7 @@ One possible definition of **subst**:
 
 
 
-(defun subst (old new tree &rest x &key test test-not key) 
+(defun subst (old new tree &amp;rest x &amp;key test test-not key) 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**make-dispatch-macro-character** *char* &optional *non-terminating-p readtable →* **t** 
+**make-dispatch-macro-character** *char* &amp;optional *non-terminating-p readtable →* **t** 
 
 
 
@@ -60,15 +60,15 @@ If *non-terminating-p* is *true*, the *dispatching macro character* is made a *n
 
 
 
-(get-macro-character #\\&#123;) *→* NIL, *false* 
+(get-macro-character #\\{) *→* NIL, *false* 
 
 
 
-(make-dispatch-macro-character #\\&#123;) *→* T 
+(make-dispatch-macro-character #\\{) *→* T 
 
 
 
-(not (get-macro-character #\\&#123;)) *→ false* 
+(not (get-macro-character #\\{)) *→ false* 
 
 
 

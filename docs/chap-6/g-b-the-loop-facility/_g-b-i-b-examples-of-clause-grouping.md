@@ -94,11 +94,11 @@ finally
 
 
 
-when (and (> i 3) i) 
+when (and (&gt; i 3) i) 
 
 
 
-collect it) ; IT refers to (and (> i 3) i). 
+collect it) ; IT refers to (and (&gt; i 3) i). 
 
 
 
@@ -114,7 +114,7 @@ collect it) ; IT refers to (and (> i 3) i).
 
 
 
-when (and (> i 3) i) 
+when (and (&gt; i 3) i) 
 
 
 
@@ -134,7 +134,7 @@ return it)
 
 
 
-thereis (and (> i 3) i)) 
+thereis (and (&gt; i 3) i)) 
 
 
 

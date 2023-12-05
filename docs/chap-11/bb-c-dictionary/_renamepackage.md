@@ -6,7 +6,7 @@
 
 
 
-**rename-package** *package new-name* &optional *new-nicknames → package-object* 
+**rename-package** *package new-name* &amp;optional *new-nicknames → package-object* 
 
 
 

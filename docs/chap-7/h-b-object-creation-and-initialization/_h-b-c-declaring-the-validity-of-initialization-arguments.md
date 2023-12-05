@@ -30,7 +30,7 @@ initialization arguments that fill *slots* for a *class* is the union of the ini
 
 
 
-*•* Initialization arguments that supply arguments to *methods* are declared as valid by defining those *methods*. The keyword name of each keyword parameter specified in the *method*’s *lambda list* becomes an initialization argument for all *classes* for which the *method* is applicable. The presence of &allow-other-keys in the *lambda list* of an applicable method disables validity checking of initialization arguments. Thus *method* inheritance controls the set of valid initialization arguments that supply arguments to *methods*. The *generic functions* for which *method* definitions serve to declare initialization arguments valid are as follows: 
+*•* Initialization arguments that supply arguments to *methods* are declared as valid by defining those *methods*. The keyword name of each keyword parameter specified in the *method*’s *lambda list* becomes an initialization argument for all *classes* for which the *method* is applicable. The presence of &amp;allow-other-keys in the *lambda list* of an applicable method disables validity checking of initialization arguments. Thus *method* inheritance controls the set of valid initialization arguments that supply arguments to *methods*. The *generic functions* for which *method* definitions serve to declare initialization arguments valid are as follows: 
 
 
 

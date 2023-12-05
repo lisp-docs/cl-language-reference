@@ -6,7 +6,7 @@ If **\*print-array\*** is *true* and **\*print-readably\*** is *false*, any *vec
 
 
 
-If both **\*print-array\*** and **\*print-readably\*** are *false*, the *vector* is not printed as described above, but in a format (using #<) that is concise but not readable. 
+If both **\*print-array\*** and **\*print-readably\*** are *false*, the *vector* is not printed as described above, but in a format (using #&lt;) that is concise but not readable. 
 
 
 

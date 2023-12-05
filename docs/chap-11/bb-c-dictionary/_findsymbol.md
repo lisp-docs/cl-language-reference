@@ -6,7 +6,7 @@
 
 
 
-**find-symbol** *string* &optional *package → symbol, status* 
+**find-symbol** *string* &amp;optional *package → symbol, status* 
 
 
 

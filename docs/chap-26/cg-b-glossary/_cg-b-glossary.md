@@ -202,7 +202,7 @@ characteristics by direct modification. A *conforming program* may depend on an 
 
 
 
-**ampersand** *n.* the *standard character* that is called “ampersand” (&). See Figure 2–5. 
+**ampersand** *n.* the *standard character* that is called “ampersand” (&amp;). See Figure 2–5. 
 
 
 
@@ -310,7 +310,7 @@ characteristics by direct modification. A *conforming program* may depend on an 
 
 
 
-**aux variable** *n.* a *variable* that occurs in the part of a *lambda list* that was introduced by **&aux**. Unlike all other *variables* introduced by a *lambda-list*, *aux variables* are not *parameters*. 
+**aux variable** *n.* a *variable* that occurs in the part of a *lambda list* that was introduced by **&amp;aux**. Unlike all other *variables* introduced by a *lambda-list*, *aux variables* are not *parameters*. 
 
 
 
@@ -418,7 +418,7 @@ characteristics by direct modification. A *conforming program* may depend on an 
 
 
 
-**body parameter** *n.* a *parameter* available in certain *lambda lists* which from the point of view of *conforming programs* is like a *rest parameter* in every way except that it is introduced by **&body** instead of **&rest**. (*Implementations* are permitted to provide extensions which distinguish *body parameters* and *rest parameters*—*e.g.*, the *forms* for *operators* which were defined using a *body parameter* might be pretty printed slightly differently than *forms* for *operators* which were defined using *rest parameters*.) 
+**body parameter** *n.* a *parameter* available in certain *lambda lists* which from the point of view of *conforming programs* is like a *rest parameter* in every way except that it is introduced by **&amp;body** instead of **&amp;rest**. (*Implementations* are permitted to provide extensions which distinguish *body parameters* and *rest parameters*—*e.g.*, the *forms* for *operators* which were defined using a *body parameter* might be pretty printed slightly differently than *forms* for *operators* which were defined using *rest parameters*.) 
 
 
 
@@ -686,7 +686,7 @@ rather than a *complex*—see Section 12.1.5.3 (Rule of Canonical Representation
 
 
 
-**compilation environment** *n.* 1. An *environment* that represents information known by the *compiler* about a *form* that is being *compiled*. See Section 3.2.1 (Compiler Terminology). 2. An *object* that represents the *compilation environment* <sub>1</sub> and that is used as a second argument to a *macro function* (which supplies a *value* for any **&environment** *parameter* in the *macro function*’s definition). 
+**compilation environment** *n.* 1. An *environment* that represents information known by the *compiler* about a *form* that is being *compiled*. See Section 3.2.1 (Compiler Terminology). 2. An *object* that represents the *compilation environment* <sub>1</sub> and that is used as a second argument to a *macro function* (which supplies a *value* for any **&amp;environment** *parameter* in the *macro function*’s definition). 
 
 
 
@@ -1090,7 +1090,7 @@ by the :arguments option to **define-method-combination**. See Section 3.4.10
 
 
 
-**defsetf lambda list** *n.* a *lambda list* that is like an *ordinary lambda list* except that it does not permit **&aux** and that it permits use of **&environment**. See Section 3.4.7 (Defsetf Lambda Lists). 
+**defsetf lambda list** *n.* a *lambda list* that is like an *ordinary lambda list* except that it does not permit **&amp;aux** and that it permits use of **&amp;environment**. See Section 3.4.7 (Defsetf Lambda Lists). 
 
 
 
@@ -1704,7 +1704,7 @@ following the last *element* of the *stream*), or a *file position* (denoting it
 
 
 
-**fresh-line** and by the *format directive* ~&, which advances the display position to the beginning of the next line (as if a *newline* had been typed, or the *function* **terpri** had been called) unless the *stream* is already known to be positioned at the beginning of a line. Unlike *newline*, *freshline* is not a *character* . 
+**fresh-line** and by the *format directive* ~&amp;, which advances the display position to the beginning of the next line (as if a *newline* had been typed, or the *function* **terpri** had been called) unless the *stream* is already known to be positioned at the beginning of a line. Unlike *newline*, *freshline* is not a *character* . 
 
 
 
@@ -3216,7 +3216,7 @@ Repertoires).
 
 
 
-**rest parameter** *n.* A *parameter* which was introduced by **&rest**. 
+**rest parameter** *n.* A *parameter* which was introduced by **&amp;rest**. 
 
 
 
@@ -3612,7 +3612,7 @@ required *arguments*, and which also describes the *argument* conventions for it
 
 
 
-<b>spreadable argument list designator</b> <i>n.</i> a <i>designator</i> for a <i>list</i> of <i>objects</i>; that is, an <i>object</i> that denotes a <i>list</i> and that is a <i>non-null list L</i>1 of length <i>n</i>, whose last element is a <i>list L</i>2 of length <i>m</i> (denoting a list <i>L</i>3 of length <i>m</i> + <i>n −</i> 1 whose <i>elements</i> are <i>L</i>1<i><sub>i</sub></i> for <i>i</i> < <i>n −</i> 1 followed by <i>L</i>2<i><sub>j</sub></i> for <i>j</i> < <i>m</i>). “The list (1 2 (3 4 5)) is a spreadable argument list designator for the list (1 2 3 4 5).” 
+<b>spreadable argument list designator</b> <i>n.</i> a <i>designator</i> for a <i>list</i> of <i>objects</i>; that is, an <i>object</i> that denotes a <i>list</i> and that is a <i>non-null list L</i>1 of length <i>n</i>, whose last element is a <i>list L</i>2 of length <i>m</i> (denoting a list <i>L</i>3 of length <i>m</i> + <i>n −</i> 1 whose <i>elements</i> are <i>L</i>1<i><sub>i</sub></i> for <i>i</i> &lt; <i>n −</i> 1 followed by <i>L</i>2<i><sub>j</sub></i> for <i>j</i> &lt; <i>m</i>). “The list (1 2 (3 4 5)) is a spreadable argument list designator for the list (1 2 3 4 5).” 
 
 
 
@@ -4284,7 +4284,7 @@ several *objects* that result from the *evaluation* of the last *form*, or **nil
 
 
 
-<b>whitespace</b> <i>n.</i> 1. one or more <i>characters</i> that are either the <i>graphic character</i> #\Space or else <i>non-graphic</i> characters such as #\Newline that only move the print position. 2. a. <i>n.</i> the <i>syntax type</i> of a <i>character</i> that is a <i>token</i> separator. For details, see Section 2.1.4.7 (Whitespace Characters). b. <i>adj.</i> (of a <i>character</i> ) having the <i>whitespace</i><sub>2<i>a</i></sub>
+<b>whitespace</b> <i>n.</i> 1. one or more <i>characters</i> that are either the <i>graphic character</i> #\Space or else <i>non-graphic</i> characters such as #\Newline that only move the print position. 2. a. <i>n.</i> the <i>syntax type</i> of a <i>character</i> that is a <i>token</i> separator. For details, see Section 2.1.4.7 (Whitespace Characters). b. <i>adj.</i> (of a <i>character</i> ) having the <i>whitespace</i><sub>2<i>a</i></sub> 
 
 
 

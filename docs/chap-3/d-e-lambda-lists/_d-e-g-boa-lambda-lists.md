@@ -10,7 +10,7 @@ A *boa lambda list* is used only in a **defstruct** *form*, when explicitly spec
 
 
 
-The **&optional**, **&rest**, **&aux**, **&key**, and **&allow-other-keys** *lambda list keywords* are recognized in a *boa lambda list*. The way these *lambda list keywords* differ from their use in an *ordinary lambda list* follows. 
+The **&amp;optional**, **&amp;rest**, **&amp;aux**, **&amp;key**, and **&amp;allow-other-keys** *lambda list keywords* are recognized in a *boa lambda list*. The way these *lambda list keywords* differ from their use in an *ordinary lambda list* follows. 
 
 
 
@@ -30,7 +30,7 @@ Consider this example, which describes how **destruct** processes its :construct
 
 
 
-(a &optional b (c ’sea) &rest d &aux e (f ’eff))) 
+(a &amp;optional b (c ’sea) &amp;rest d &amp;aux e (f ’eff))) 
 
 
 
@@ -38,19 +38,19 @@ This defines create-foo to be a constructor of one or more arguments. The first 
 
 
 
-sea is used instead. Any arguments following the third argument are collected into a *list* and used to initialize the d slot. If there are three or fewer arguments, then **nil** is placed in the d slot. The e slot is not initialized; its initial value is *implementation-defined*. Finally, the f slot is initialized to contain the symbol eff. **&key** and **&allow-other-keys** arguments default in a manner similar to that of **&optional** arguments: if no default is supplied in the *lambda list* then the default value given in the body of the **defstruct** (if given) is used instead. For example: 
+sea is used instead. Any arguments following the third argument are collected into a *list* and used to initialize the d slot. If there are three or fewer arguments, then **nil** is placed in the d slot. The e slot is not initialized; its initial value is *implementation-defined*. Finally, the f slot is initialized to contain the symbol eff. **&amp;key** and **&amp;allow-other-keys** arguments default in a manner similar to that of **&amp;optional** arguments: if no default is supplied in the *lambda list* then the default value given in the body of the **defstruct** (if given) is used instead. For example: 
 
 
 
-(defstruct (foo (:constructor CREATE-FOO (a &optional b (c ’sea) 
+(defstruct (foo (:constructor CREATE-FOO (a &amp;optional b (c ’sea) 
 
 
 
-&key (d 2) 
+&amp;key (d 2) 
 
 
 
-&aux e (f ’eff)))) 
+&amp;aux e (f ’eff)))) 
 
 
 
@@ -70,7 +70,7 @@ If keyword arguments of the form ((*key var*) [*default* [*svar* ]]) are specifi
 
 
 
-The actions taken in the b and e cases were carefully chosen to allow the user to specify all possible behaviors. The **&aux** variables can be used to completely override the default initializations given in the body. 
+The actions taken in the b and e cases were carefully chosen to allow the user to specify all possible behaviors. The **&amp;aux** variables can be used to completely override the default initializations given in the body. 
 
 
 
@@ -110,7 +110,7 @@ Additional arguments that do not correspond to slot names but are merely present
 
 
 
-(a &key (b 3 have-b) (c-token ’c) 
+(a &amp;key (b 3 have-b) (c-token ’c) 
 
 
 

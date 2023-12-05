@@ -14,7 +14,7 @@
 
 
 
-"~&~S requires its ~:[~:R~;~\*~]~ 
+"~&amp;~S requires its ~:[~:R~;~\*~]~ 
 
 
 
@@ -62,7 +62,7 @@ NIL
 
 
 
-Note that in this example newlines appear in the output only as specified by the ~& and ~% directives; the actual newline characters in the control string are suppressed because each is preceded by a tilde. 
+Note that in this example newlines appear in the output only as specified by the ~&amp; and ~% directives; the actual newline characters in the control string are suppressed because each is preceded by a tilde. 
 
 
 

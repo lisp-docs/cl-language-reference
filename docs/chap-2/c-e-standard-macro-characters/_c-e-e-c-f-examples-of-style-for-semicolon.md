@@ -30,7 +30,7 @@
 
 
 
-(cond ((< n 0) 
+(cond ((&lt; n 0) 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-((< n 2) n) ;fib[0]=0 and fib[1]=1 
+((&lt; n 2) n) ;fib[0]=0 and fib[1]=1 
 
 
 

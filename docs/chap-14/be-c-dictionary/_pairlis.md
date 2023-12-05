@@ -6,7 +6,7 @@
 
 
 
-**pairlis** *keys data* &optional *alist → new-alist* 
+**pairlis** *keys data* &amp;optional *alist → new-alist* 
 
 
 

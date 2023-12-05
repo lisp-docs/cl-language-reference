@@ -46,7 +46,7 @@ Here is another example, to illustrate the *scope* of a *free declaration*. In t
 
 
 
-(lambda (&optional (x (foo 1))) ;[1] 
+(lambda (&amp;optional (x (foo 1))) ;[1] 
 
 
 
@@ -66,7 +66,7 @@ the *call* to foo in the first line might be compiled inline even though the *ca
 
 
 
-(lambda (&optional (x (foo 1))) ;[2] 
+(lambda (&amp;optional (x (foo 1))) ;[2] 
 
 
 
@@ -78,7 +78,7 @@ or, alternatively:
 
 
 
-(lambda (&optional ;[1] 
+(lambda (&amp;optional ;[1] 
 
 
 

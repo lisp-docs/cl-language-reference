@@ -10,7 +10,7 @@ The following examples illustrate some of the many ways in which the *implementa
 
 
 
-(ignore-errors (sort a #’<)) 
+(ignore-errors (sort a #’&lt;)) 
 
 
 
@@ -34,7 +34,7 @@ a)
 
 
 
-(sort a #’(lambda (x y) (if (zerop (random 5)) (return-from foo a) (> x y))))) *→* (1 2 3 4 5 6 7 8 9 10) 
+(sort a #’(lambda (x y) (if (zerop (random 5)) (return-from foo a) (&gt; x y))))) *→* (1 2 3 4 5 6 7 8 9 10) 
 
 
 

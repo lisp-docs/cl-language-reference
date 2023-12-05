@@ -6,7 +6,7 @@ The generic function **make-instance** behaves as if it were defined as follows,
 
 
 
-(defmethod make-instance ((class standard-class) &rest initargs) 
+(defmethod make-instance ((class standard-class) &amp;rest initargs) 
 
 
 
@@ -26,7 +26,7 @@ instance))
 
 
 
-(defmethod make-instance ((class-name symbol) &rest initargs) 
+(defmethod make-instance ((class-name symbol) &amp;rest initargs) 
 
 
 
@@ -58,7 +58,7 @@ The generic function **initialize-instance** behaves as if it were defined as fo
 
 
 
-(defmethod initialize-instance ((instance standard-object) &rest initargs) 
+(defmethod initialize-instance ((instance standard-object) &amp;rest initargs) 
 
 
 

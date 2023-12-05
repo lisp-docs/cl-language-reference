@@ -50,35 +50,35 @@ There is no *standardized* mechanism for users to add extensions to **loop**.
 
 
 
-**do** (*\&#123;var |* (*var* [*init-form* [*step-form*]])*\&#125;*\*) 
+**do** (*\{var |* (*var* [*init-form* [*step-form*]])*\}*\*) 
 
 
 
-(*end-test-form \&#123;result-form\&#125;*\*) 
+(*end-test-form \{result-form\}*\*) 
 
 
 
-*\&#123;declaration\&#125;*\* *\&#123;tag | statement\&#125;*\* 
+*\{declaration\}*\* *\{tag | statement\}*\* 
 
 
 
-*→ \&#123;result\&#125;*\* 
+*→ \{result\}*\* 
 
 
 
-**do\*** (*\&#123;var |* (*var* [*init-form* [*step-form*]])*\&#125;*\*) 
+**do\*** (*\{var |* (*var* [*init-form* [*step-form*]])*\}*\*) 
 
 
 
-(*end-test-form \&#123;result-form\&#125;*\*) 
+(*end-test-form \{result-form\}*\*) 
 
 
 
-*\&#123;declaration\&#125;*\* *\&#123;tag | statement\&#125;*\* 
+*\{declaration\}*\* *\{tag | statement\}*\* 
 
 
 
-*→ \&#123;result\&#125;*\* 
+*→ \{result\}*\* 
 
 
 
@@ -154,7 +154,7 @@ Before the first iteration, all the *init-forms* are evaluated, and each *var* i
 
 
 
-any *var* is bound. The *init-forms* can refer to the *bindings* of the *vars* visible before beginning execution of **do**. For **do\***, the first *init-form* is evaluated, then the first *var* is bound to that value, then the second *init-form* is evaluated, then the second *var* is bound, and so on; in general, the *k*th *init-form* can refer to the new binding of the *j*th *var* if *j* < *k*, and otherwise to the old binding of the *j*th *var*. 
+any *var* is bound. The *init-forms* can refer to the *bindings* of the *vars* visible before beginning execution of **do**. For **do\***, the first *init-form* is evaluated, then the first *var* is bound to that value, then the second *init-form* is evaluated, then the second *var* is bound, and so on; in general, the *k*th *init-form* can refer to the new binding of the *j*th *var* if *j* &lt; *k*, and otherwise to the old binding of the *j*th *var*. 
 
 
 
@@ -194,7 +194,7 @@ An *implicit block* named **nil** surrounds the entire **do** (or **do\***) form
 
 
 
-((> (- temp-one temp-two) 5) temp-one)) *→* 4 
+((&gt; (- temp-one temp-two) 5) temp-one)) *→* 4 
 
 
 
@@ -258,7 +258,7 @@ An *implicit block* named **nil** surrounds the entire **do** (or **do\***) form
 
 
 
-(format t "~&Output ~D: ~S" j item)))) 
+(format t "~&amp;Output ~D: ~S" j item)))) 
 
 
 

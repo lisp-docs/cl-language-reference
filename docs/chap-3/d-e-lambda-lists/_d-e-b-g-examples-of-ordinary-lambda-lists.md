@@ -10,15 +10,15 @@ Here are some examples involving *optional parameters* and *rest parameters*:
 
 
 
-((lambda (a &optional (b 2)) (+ a (\* b 3))) 4 5) *→* 19 
+((lambda (a &amp;optional (b 2)) (+ a (\* b 3))) 4 5) *→* 19 
 
 
 
-((lambda (a &optional (b 2)) (+ a (\* b 3))) 4) *→* 10 
+((lambda (a &amp;optional (b 2)) (+ a (\* b 3))) 4) *→* 10 
 
 
 
-((lambda (&optional (a 2 b) (c 3 d) &rest x) (list a b c d x))) 
+((lambda (&amp;optional (a 2 b) (c 3 d) &amp;rest x) (list a b c d x))) 
 
 
 
@@ -30,7 +30,7 @@ Here are some examples involving *optional parameters* and *rest parameters*:
 
 
 
-((lambda (&optional (a 2 b) (c 3 d) &rest x) (list a b c d x)) 6) 
+((lambda (&amp;optional (a 2 b) (c 3 d) &amp;rest x) (list a b c d x)) 6) 
 
 
 
@@ -38,7 +38,7 @@ Here are some examples involving *optional parameters* and *rest parameters*:
 
 
 
-((lambda (&optional (a 2 b) (c 3 d) &rest x) (list a b c d x)) 6 3) 
+((lambda (&amp;optional (a 2 b) (c 3 d) &amp;rest x) (list a b c d x)) 6 3) 
 
 
 
@@ -46,7 +46,7 @@ Here are some examples involving *optional parameters* and *rest parameters*:
 
 
 
-((lambda (&optional (a 2 b) (c 3 d) &rest x) (list a b c d x)) 6 3 8) 
+((lambda (&amp;optional (a 2 b) (c 3 d) &amp;rest x) (list a b c d x)) 6 3 8) 
 
 
 
@@ -54,7 +54,7 @@ Here are some examples involving *optional parameters* and *rest parameters*:
 
 
 
-((lambda (&optional (a 2 b) (c 3 d) &rest x) (list a b c d x)) 
+((lambda (&amp;optional (a 2 b) (c 3 d) &amp;rest x) (list a b c d x)) 
 
 
 
@@ -70,39 +70,39 @@ Here are some examples involving *keyword parameters*:
 
 
 
-((lambda (a b &key c d) (list a b c d)) 1 2) *→* (1 2 NIL NIL) 
+((lambda (a b &amp;key c d) (list a b c d)) 1 2) *→* (1 2 NIL NIL) 
 
 
 
-((lambda (a b &key c d) (list a b c d)) 1 2 :c 6) *→* (1 2 6 NIL) 
+((lambda (a b &amp;key c d) (list a b c d)) 1 2 :c 6) *→* (1 2 6 NIL) 
 
 
 
-((lambda (a b &key c d) (list a b c d)) 1 2 :d 8) *→* (1 2 NIL 8) 
+((lambda (a b &amp;key c d) (list a b c d)) 1 2 :d 8) *→* (1 2 NIL 8) 
 
 
 
-((lambda (a b &key c d) (list a b c d)) 1 2 :c 6 :d 8) *→* (1 2 6 8) 
+((lambda (a b &amp;key c d) (list a b c d)) 1 2 :c 6 :d 8) *→* (1 2 6 8) 
 
 
 
-((lambda (a b &key c d) (list a b c d)) 1 2 :d 8 :c 6) *→* (1 2 6 8) 
+((lambda (a b &amp;key c d) (list a b c d)) 1 2 :d 8 :c 6) *→* (1 2 6 8) 
 
 
 
-((lambda (a b &key c d) (list a b c d)) :a 1 :d 8 :c 6) *→* (:a 1 6 8) 
+((lambda (a b &amp;key c d) (list a b c d)) :a 1 :d 8 :c 6) *→* (:a 1 6 8) 
 
 
 
-((lambda (a b &key c d) (list a b c d)) :a :b :c :d) *→* (:a :b :d NIL) 
+((lambda (a b &amp;key c d) (list a b c d)) :a :b :c :d) *→* (:a :b :d NIL) 
 
 
 
-((lambda (a b &key ((:sea c)) d) (list a b c d)) 1 2 :sea 6) *→* (1 2 6 NIL) 
+((lambda (a b &amp;key ((:sea c)) d) (list a b c d)) 1 2 :sea 6) *→* (1 2 6 NIL) 
 
 
 
-((lambda (a b &key ((c c)) d) (list a b c d)) 1 2 ’c 6) *→* (1 2 6 NIL) 
+((lambda (a b &amp;key ((c c)) d) (list a b c d)) 1 2 ’c 6) *→* (1 2 6 NIL) 
 
 
 
@@ -110,7 +110,7 @@ Here are some examples involving *optional parameters*, *rest parameters*, and *
 
 
 
-((lambda (a &optional (b 3) &rest x &key c (d a)) 
+((lambda (a &amp;optional (b 3) &amp;rest x &amp;key c (d a)) 
 
 
 
@@ -122,7 +122,7 @@ Here are some examples involving *optional parameters*, *rest parameters*, and *
 
 
 
-((lambda (a &optional (b 3) &rest x &key c (d a)) 
+((lambda (a &amp;optional (b 3) &amp;rest x &amp;key c (d a)) 
 
 
 
@@ -134,7 +134,7 @@ Here are some examples involving *optional parameters*, *rest parameters*, and *
 
 
 
-((lambda (a &optional (b 3) &rest x &key c (d a)) 
+((lambda (a &amp;optional (b 3) &amp;rest x &amp;key c (d a)) 
 
 
 
@@ -146,7 +146,7 @@ Here are some examples involving *optional parameters*, *rest parameters*, and *
 
 
 
-((lambda (a &optional (b 3) &rest x &key c (d a)) 
+((lambda (a &amp;optional (b 3) &amp;rest x &amp;key c (d a)) 
 
 
 
@@ -158,7 +158,7 @@ Here are some examples involving *optional parameters*, *rest parameters*, and *
 
 
 
-((lambda (a &optional (b 3) &rest x &key c (d a)) 
+((lambda (a &amp;optional (b 3) &amp;rest x &amp;key c (d a)) 
 
 
 
@@ -170,7 +170,7 @@ Here are some examples involving *optional parameters*, *rest parameters*, and *
 
 
 
-((lambda (a &optional (b 3) &rest x &key c (d a)) 
+((lambda (a &amp;optional (b 3) &amp;rest x &amp;key c (d a)) 
 
 
 
@@ -182,7 +182,7 @@ Here are some examples involving *optional parameters*, *rest parameters*, and *
 
 
 
-As an example of the use of **&allow-other-keys** and :allow-other-keys, consider a *function* that takes two named arguments of its own and also accepts additional named arguments to be passed to **make-array**:  
+As an example of the use of **&amp;allow-other-keys** and :allow-other-keys, consider a *function* that takes two named arguments of its own and also accepts additional named arguments to be passed to **make-array**:  
 
 
 
@@ -190,11 +190,11 @@ As an example of the use of **&allow-other-keys** and :allow-other-keys, conside
 
 
 
-(defun array-of-strings (str dims &rest named-pairs 
+(defun array-of-strings (str dims &amp;rest named-pairs 
 
 
 
-&key (start 0) end &allow-other-keys) 
+&amp;key (start 0) end &amp;allow-other-keys) 
 
 
 
@@ -214,7 +214,7 @@ named-pairs))
 
 
 
-This *function* takes a *string* and dimensioning information and returns an *array* of the specified dimensions, each of whose elements is the specified *string*. However, :start and :end named arguments may be used to specify that a substring of the given *string* should be used. In addition, the presence of **&allow-other-keys** in the *lambda list* indicates that the caller may supply additional named arguments; the *rest parameter* provides access to them. These additional named arguments are passed to **make-array**. The *function* **make-array** normally does not allow the named arguments :start and :end to be used, and an error should be signaled if such named arguments are supplied to **make-array**. However, the presence in the call to **make-array** of the named argument :allow-other-keys with a *true* value causes any extraneous named arguments, including :start and :end, to be acceptable and ignored. 
+This *function* takes a *string* and dimensioning information and returns an *array* of the specified dimensions, each of whose elements is the specified *string*. However, :start and :end named arguments may be used to specify that a substring of the given *string* should be used. In addition, the presence of **&amp;allow-other-keys** in the *lambda list* indicates that the caller may supply additional named arguments; the *rest parameter* provides access to them. These additional named arguments are passed to **make-array**. The *function* **make-array** normally does not allow the named arguments :start and :end to be used, and an error should be signaled if such named arguments are supplied to **make-array**. However, the presence in the call to **make-array** of the named argument :allow-other-keys with a *true* value causes any extraneous named arguments, including :start and :end, to be acceptable and ignored. 
 
 
 

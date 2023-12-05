@@ -52,7 +52,7 @@ Returns the *length* of *list* if *list* is a *proper list*. Returns **nil** if 
 
 
 
-(defun circular-list (&rest elements) 
+(defun circular-list (&amp;rest elements) 
 
 
 
@@ -170,7 +170,7 @@ Should signal an error of *type* **type-error** if *list* is not a *proper list*
 
 
 
-(when (and (eq fast slow) (> n 0)) (return nil)))) 
+(when (and (eq fast slow) (&gt; n 0)) (return nil)))) 
 
 
 

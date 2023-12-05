@@ -74,7 +74,7 @@ The combination of ~[ and # is useful, for example, for dealing with English con
 
 
 
-~:;~@\&#123;~#[~; and~] ~S~<i><sup>∧</sup></i>,~\&#125;~].") 
+~:;~@\{~#[~; and~] ~S~<i><sup>∧</sup></i>,~\}~].") 
 
 
 

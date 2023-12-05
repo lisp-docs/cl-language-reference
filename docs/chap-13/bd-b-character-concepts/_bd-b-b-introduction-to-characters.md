@@ -18,7 +18,7 @@ Figure 13–1 lists some *defined names* relating to *character attributes* and 
 
 
 
-|<p>**alpha-char-p char-not-equal char**> </p><p>**alphanumericp char-not-greaterp char**>**=** </p><p>**both-case-p char-not-lessp digit-char-p** </p><p>**char-code-limit char/= graphic-char-p char-equal char**< **lower-case-p** </p><p>**char-greaterp char**<**= standard-char-p char-lessp char= upper-case-p**</p>|
+|<p>**alpha-char-p char-not-equal char**&gt; </p><p>**alphanumericp char-not-greaterp char**&gt;**=** </p><p>**both-case-p char-not-lessp digit-char-p** </p><p>**char-code-limit char/= graphic-char-p char-equal char**&lt; **lower-case-p** </p><p>**char-greaterp char**&lt;**= standard-char-p char-lessp char= upper-case-p**</p>|
 
 | :- |
 

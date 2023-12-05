@@ -10,7 +10,7 @@ Note that the meaning of **nil** and **t** as destinations to **format** are dif
 
 
 
-The ~<i><sup>∧</sup></i> should appear only at the beginning of a ~< clause, because it aborts the entire clause in which it appears (as well as all following clauses). 
+The ~<i><sup>∧</sup></i> should appear only at the beginning of a ~&lt; clause, because it aborts the entire clause in which it appears (as well as all following clauses). 
 
 
 
@@ -34,7 +34,7 @@ The ~<i><sup>∧</sup></i> should appear only at the beginning of a ~< clause, b
 
 
 
-**copy-pprint-dispatch** &optional *table → new-table* 
+**copy-pprint-dispatch** &amp;optional *table → new-table* 
 
 
 
@@ -98,7 +98,7 @@ Returns a *function* which has behavior equivalent to:
 
 
 
-#’(lambda (\*standard-output\* &rest arguments) 
+#’(lambda (\*standard-output\* &amp;rest arguments) 
 
 
 
@@ -118,7 +118,7 @@ where *arguments-tail* is either the tail of *arguments* which has as its *car* 
 
 
 
-(funcall (formatter "~&~A~A") \*standard-output\* ’a ’b ’c) 
+(funcall (formatter "~&amp;~A~A") \*standard-output\* ’a ’b ’c) 
 
 
 
@@ -142,7 +142,7 @@ where *arguments-tail* is either the tail of *arguments* which has as its *car* 
 
 
 
-(format t (formatter "~&~A~A") ’a ’b ’c) 
+(format t (formatter "~&amp;~A~A") ’a ’b ’c) 
 
 
 
@@ -178,7 +178,7 @@ Might signal an error (at macro expansion time or at run time) if the argument i
 
 
 
-**pprint-dispatch** *object* &optional *table → function, found-p* 
+**pprint-dispatch** *object* &amp;optional *table → function, found-p* 
 
 
 
@@ -318,15 +318,15 @@ An error is signaled (at macro expansion time or at run time) if **pprint-exit-i
 
 
 
-**pprint-fill** *stream object* &optional *colon-p at-sign-p →* **nil** 
+**pprint-fill** *stream object* &amp;optional *colon-p at-sign-p →* **nil** 
 
 
 
-**pprint-linear** *stream object* &optional *colon-p at-sign-p →* **nil** 
+**pprint-linear** *stream object* &amp;optional *colon-p at-sign-p →* **nil** 
 
 
 
-**pprint-tabular** *stream object* &optional *colon-p at-sign-p tabsize →* **nil** 
+**pprint-tabular** *stream object* &amp;optional *colon-p at-sign-p tabsize →* **nil** 
 
 
 
@@ -438,7 +438,7 @@ The *function* **pprint-tabular** could be defined as follows:
 
 
 
-(defun pprint-tabular (s list &optional (colon-p t) at-sign-p (tabsize nil)) 
+(defun pprint-tabular (s list &amp;optional (colon-p t) at-sign-p (tabsize nil)) 
 
 
 
@@ -494,7 +494,7 @@ Note that it would have been inconvenient to specify this function using **forma
 
 
 
-**pprint-indent** *relative-to n* &optional *stream →* **nil** 
+**pprint-indent** *relative-to n* &amp;optional *stream →* **nil** 
 
 
 
@@ -566,11 +566,11 @@ Section 22.3.5.3 (Tilde I: Indent)
 
 
 
-**pprint-logical-block** (*stream-symbol object* &key *prefix per-line-prefix suffix*) 
+**pprint-logical-block** (*stream-symbol object* &amp;key *prefix per-line-prefix suffix*) 
 
 
 
-*\&#123;declaration\&#125;*\* *\&#123;form\&#125;*\* 
+*\{declaration\}*\* *\{form\}*\* 
 
 
 
@@ -734,7 +734,7 @@ Detection of circularity and sharing is supported by the *pretty printer* by in 
 
 
 
-**pprint-newline** *kind* &optional *stream →* **nil** 
+**pprint-newline** *kind* &amp;optional *stream →* **nil** 
 
 
 
@@ -982,7 +982,7 @@ It is frequently a good idea to call **pprint-exit-if-list-exhausted** before ca
 
 
 
-**pprint-tab** *kind colnum colinc* &optional *stream →* **nil** 
+**pprint-tab** *kind colnum colinc* &amp;optional *stream →* **nil** 
 
 
 
@@ -1222,7 +1222,7 @@ In some implementations the *stream* argument passed to a **print-object** *meth
 
 
 
-**print-unreadable-object** (*object stream* &key *type identity*) *\&#123;form\&#125;*\* *→* **nil** 
+**print-unreadable-object** (*object stream* &amp;key *type identity*) *\{form\}*\* *→* **nil** 
 
 
 
@@ -1266,7 +1266,7 @@ In some implementations the *stream* argument passed to a **print-object** *meth
 
 
 
-Outputs a printed representation of *object* on *stream*, beginning with “#<” and ending with “>”. Everything output to *stream* by the body *forms* is enclosed in the the angle brackets. If *type* is *true*, the output from *forms* is preceded by a brief description of the *object*’s *type* and a space character. If *identity* is *true*, the output from *forms* is followed by a space character and a representation of the *object*’s identity, typically a storage address. 
+Outputs a printed representation of *object* on *stream*, beginning with “#&lt;” and ending with “&gt;”. Everything output to *stream* by the body *forms* is enclosed in the the angle brackets. If *type* is *true*, the output from *forms* is preceded by a brief description of the *object*’s *type* and a space character. If *identity* is *true*, the output from *forms* is followed by a space character and a representation of the *object*’s identity, typically a storage address. 
 
 
 

@@ -6,7 +6,7 @@ The actions of the *pretty printer* when a piece of output is too large to fit i
 
 
 
-The first line of Figure 22–3 shows a schematic piece of output. Each of the characters in the output is represented by “-”. The positions of conditional newlines are indicated by digits. The beginnings and ends of logical blocks are indicated by “<” and “>” respectively. 
+The first line of Figure 22–3 shows a schematic piece of output. Each of the characters in the output is represented by “-”. The positions of conditional newlines are indicated by digits. The beginnings and ends of logical blocks are indicated by “&lt;” and “&gt;” respectively. 
 
 
 
@@ -42,7 +42,7 @@ The section immediately containing a conditional newline is the shortest section
 
 
 
-<-1–-<–<–2–-3->–4–>-> 
+&lt;-1–-&lt;–&lt;–2–-3-&gt;–4–&gt;-&gt; 
 
 
 

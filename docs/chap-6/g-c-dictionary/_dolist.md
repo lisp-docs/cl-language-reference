@@ -6,11 +6,11 @@
 
 
 
-**dolist** (*var list-form* [*result-form*]) *\&#123;declaration\&#125;*\* *\&#123;tag | statement\&#125;*\* 
+**dolist** (*var list-form* [*result-form*]) *\{declaration\}*\* *\{tag | statement\}*\* 
 
 
 
-*→ \&#123;result\&#125;*\* 
+*→ \{result\}*\* 
 
 
 

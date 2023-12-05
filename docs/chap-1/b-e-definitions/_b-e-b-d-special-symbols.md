@@ -214,7 +214,7 @@ Sometimes, the non-interactive stream model calls for a *newline*. How that *new
 
 
 
-(progn (format t "~&Who? ") (read-line)) 
+(progn (format t "~&amp;Who? ") (read-line)) 
 
 
 

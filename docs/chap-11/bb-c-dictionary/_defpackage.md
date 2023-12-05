@@ -10,7 +10,7 @@
 
 
 
-*option::*=*\&#123;*(:nicknames *\&#123;nickname\&#125;*\*)*\&#125;*\* *|* 
+*option::*=*\{*(:nicknames *\{nickname\}*\*)*\}*\* *|* 
 
 
 
@@ -18,27 +18,27 @@
 
 
 
-*\&#123;*(:use *\&#123;package-name\&#125;*\*)*\&#125;*\* *|* 
+*\{*(:use *\{package-name\}*\*)*\}*\* *|* 
 
 
 
-*\&#123;*(:shadow *\&#123;↓symbol-name\&#125;*\*)*\&#125;*\* *|* 
+*\{*(:shadow *\{↓symbol-name\}*\*)*\}*\* *|* 
 
 
 
-*\&#123;*(:shadowing-import-from *package-name \&#123;↓symbol-name\&#125;*\*)*\&#125;*\* *|* 
+*\{*(:shadowing-import-from *package-name \{↓symbol-name\}*\*)*\}*\* *|* 
 
 
 
-*\&#123;*(:import-from *package-name \&#123;↓symbol-name\&#125;*\*)*\&#125;*\* *|* 
+*\{*(:import-from *package-name \{↓symbol-name\}*\*)*\}*\* *|* 
 
 
 
-*\&#123;*(:export *\&#123;↓symbol-name\&#125;*\*)*\&#125;*\* *|* 
+*\{*(:export *\{↓symbol-name\}*\*)*\}*\* *|* 
 
 
 
-*\&#123;*(:intern *\&#123;↓symbol-name\&#125;*\*)*\&#125;*\* *|* 
+*\{*(:intern *\{↓symbol-name\}*\*)*\}*\* *|* 
 
 
 

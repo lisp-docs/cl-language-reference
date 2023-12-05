@@ -14,7 +14,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z
 
 
 
-Any <i>implementation-defined character</i> that has <i>case</i> must be <i>alphabetic</i><sub>1</sub><sup>. For each <i>implementation</i></sup> defined graphic character</i> that has no <i>case</i>, it is <i>implementation-defined</i> whether that <i>character</i> is <i>alphabetic</i><sub>1</sub>. 
+Any <i>implementation-defined character</i> that has <i>case</i> must be <i>alphabetic</i><sub>1</sub><sup>. For each <i>implementation</i></sup> defined graphic character that has no <i>case</i>, it is <i>implementation-defined</i> whether that <i>character</i> is <i>alphabetic</i><sub>1</sub>. 
 
 
 

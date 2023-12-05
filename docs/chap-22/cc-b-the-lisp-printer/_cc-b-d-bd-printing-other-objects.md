@@ -10,7 +10,7 @@ For example, *hash tables*, *readtables*, *packages*, *streams*, and *functions*
 
 
 
-A common notation to use in this circumstance is #<...>. Since #< is not readable by the *Lisp reader* , the precise format of the text which follows is not important, but a common format to use is that provided by the **print-unreadable-object** *macro*. 
+A common notation to use in this circumstance is #&lt;...&gt;. Since #&lt; is not readable by the *Lisp reader* , the precise format of the text which follows is not important, but a common format to use is that provided by the **print-unreadable-object** *macro*. 
 
 
 

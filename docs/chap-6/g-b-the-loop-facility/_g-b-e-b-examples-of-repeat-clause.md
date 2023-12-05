@@ -6,7 +6,7 @@
 
 
 
-do (format t "~&What I say three times is true.~%")) 
+do (format t "~&amp;What I say three times is true.~%")) 
 
 
 

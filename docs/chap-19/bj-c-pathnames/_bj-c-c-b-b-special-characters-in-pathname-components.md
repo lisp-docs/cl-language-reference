@@ -10,15 +10,15 @@
 
 
 
-(NAMESTRING (MAKE-PATHNAME :HOST "OZ" :NAME "<TEST>")) 
+(NAMESTRING (MAKE-PATHNAME :HOST "OZ" :NAME "\<TEST\>")) 
 
 
 
-<i>→</i> #P"OZ:PS:<i><sup>∧</sup></i>V<TEST<i><sup>∧</sup></i>V>" 
+<i>→</i> #P"OZ:PS:<i><sup>∧</sup></i>V\<TEST<i><sup>∧</sup></i>V\>" 
 
 
 
-<i><sup>not</sup> →</i> #P"OZ:PS:<TEST>" 
+<i><sup>not</sup> →</i> #P"OZ:PS:\<TEST\>" 
 
 
 

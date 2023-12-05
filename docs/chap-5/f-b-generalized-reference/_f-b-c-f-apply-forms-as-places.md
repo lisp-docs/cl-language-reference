@@ -6,15 +6,15 @@ The following situations involving **setf** of **apply** must be supported:
 
 
 
-*•* (setf (apply #’aref *array \&#123;subscript\&#125;*\* *more-subscripts*) *new-element*) 
+*•* (setf (apply #’aref *array \{subscript\}*\* *more-subscripts*) *new-element*) 
 
 
 
-*•* (setf (apply #’bit *array \&#123;subscript\&#125;*\* *more-subscripts*) *new-element*) 
+*•* (setf (apply #’bit *array \{subscript\}*\* *more-subscripts*) *new-element*) 
 
 
 
-*•* (setf (apply #’sbit *array \&#123;subscript\&#125;*\* *more-subscripts*) *new-element*) 
+*•* (setf (apply #’sbit *array \{subscript\}*\* *more-subscripts*) *new-element*) 
 
 
 
@@ -30,11 +30,11 @@ If a user-defined *function* is used in this context, the following equivalence 
 
 
 
-(setf (apply #’*name \&#123;arg\&#125;*\*) *val*) 
+(setf (apply #’*name \{arg\}*\*) *val*) 
 
 
 
-*≡* (apply #’(setf *name*) *val \&#123;arg\&#125;*\*) 
+*≡* (apply #’(setf *name*) *val \{arg\}*\*) 
 
 
 

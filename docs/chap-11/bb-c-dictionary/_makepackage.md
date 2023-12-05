@@ -6,7 +6,7 @@
 
 
 
-**make-package** *package-name* &key *nicknames use → package* 
+**make-package** *package-name* &amp;key *nicknames use → package* 
 
 
 

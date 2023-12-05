@@ -74,7 +74,7 @@ Let <i>M</i><sub>1</sub><i>, . . . , M<sub>k</sub></i> be the applicable primary
 
 
 
-If the expression <i>hM<sub>i</sub> a</i><sub>1</sub> <i>. . . a<sub>n</sub>i</i> is evaluated, the method <i>M<sub>i</sub></i> will be applied to the arguments <i>a</i><sub>1</sub> <i>. . . a<sub>n</sub></i>. For example, if <i>operator</i> is or, the expression <i>hM<sub>i</sub> a</i><sub>1</sub> <i>. . . a<sub>n</sub>i</i> is evaluated only if <i>hM<sub>j</sub> a</i><sub>1</sub> <i>. . . a<sub>n</sub>i</i>, 1 <i>≤ j</i> < <i>i</i>, returned nil. 
+If the expression <i>hM<sub>i</sub> a</i><sub>1</sub> <i>. . . a<sub>n</sub>i</i> is evaluated, the method <i>M<sub>i</sub></i> will be applied to the arguments <i>a</i><sub>1</sub> <i>. . . a<sub>n</sub></i>. For example, if <i>operator</i> is or, the expression <i>hM<sub>i</sub> a</i><sub>1</sub> <i>. . . a<sub>n</sub>i</i> is evaluated only if <i>hM<sub>j</sub> a</i><sub>1</sub> <i>. . . a<sub>n</sub>i</i>, 1 <i>≤ j</i> &lt; <i>i</i>, returned nil. 
 
 
 

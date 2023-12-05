@@ -54,7 +54,7 @@ when (oddp i) collect i
 
 
 
-while (< i 5)) 
+while (&lt; i 5)) 
 
 
 

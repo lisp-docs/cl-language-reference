@@ -6,11 +6,11 @@
 
 
 
-**assoc** *item alist* &key *key test test-not → entry* 
+**assoc** *item alist* &amp;key *key test test-not → entry* 
 
 
 
-**assoc-if** *predicate alist* &key *key → entry* 
+**assoc-if** *predicate alist* &amp;key *key → entry* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-**assoc-if-not** *predicate alist* &key *key → entry* 
+**assoc-if-not** *predicate alist* &amp;key *key → entry* 
 
 
 
@@ -96,7 +96,7 @@ For **assoc**, **assoc-if**, and **assoc-if-not**, if **nil** appears in *alist*
 
 
 
-(assoc-if-not #’(lambda(x) (< x 3)) alist) *→* (3 . "three") 
+(assoc-if-not #’(lambda(x) (&lt; x 3)) alist) *→* (3 . "three") 
 
 
 

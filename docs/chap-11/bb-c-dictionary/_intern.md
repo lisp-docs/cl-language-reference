@@ -6,7 +6,7 @@
 
 
 
-**intern** *string* &optional *package → symbol, status* 
+**intern** *string* &amp;optional *package → symbol, status* 
 
 
 

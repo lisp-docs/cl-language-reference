@@ -10,11 +10,11 @@
 
 
 
-*\&#123;declaration\&#125;*\* *\&#123;tag | statement\&#125;*\* 
+*\{declaration\}*\* *\{tag | statement\}*\* 
 
 
 
-*→ \&#123;result\&#125;*\* 
+*→ \{result\}*\* 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-*\&#123;declaration\&#125;*\* *\&#123;tag | statement\&#125;*\* 
+*\{declaration\}*\* *\{tag | statement\}*\* 
 
 
 
-*→ \&#123;result\&#125;*\* 
+*→ \{result\}*\* 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-*\&#123;declaration\&#125;*\* *\&#123;tag | statement\&#125;*\* 
+*\{declaration\}*\* *\{tag | statement\}*\* 
 
 
 
-*→ \&#123;result\&#125;*\* 
+*→ \{result\}*\* 
 
 
 

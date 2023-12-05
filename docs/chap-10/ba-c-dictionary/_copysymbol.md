@@ -6,7 +6,7 @@
 
 
 
-**copy-symbol** *symbol* &optional *copy-properties → new-symbol* 
+**copy-symbol** *symbol* &amp;optional *copy-properties → new-symbol* 
 
 
 

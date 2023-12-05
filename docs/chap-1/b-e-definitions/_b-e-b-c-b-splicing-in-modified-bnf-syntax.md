@@ -22,7 +22,7 @@ where each <i>O<sub>i</sub></i> can be of the form <i>S</i> or of the form <i>S<
 
 
 
-(<i>O<sub>i</sub></i>1</sub><i>. . . O<sub>ij</sub></i>) 1 <i>≤ j</i> 
+(<i>O<sub>i</sub></i>1<i>. . . O<sub>ij</sub></i>) 1 <i>≤ j</i> 
 
 
 

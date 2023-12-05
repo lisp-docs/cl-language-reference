@@ -6,7 +6,7 @@
 
 
 
-**copy-readtable** &optional *from-readtable to-readtable → readtable* 
+**copy-readtable** &amp;optional *from-readtable to-readtable → readtable* 
 
 
 

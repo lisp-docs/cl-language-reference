@@ -6,7 +6,7 @@
 
 
 
-**gensym** &optional *x → new-symbol* 
+**gensym** &amp;optional *x → new-symbol* 
 
 
 

@@ -6,11 +6,11 @@
 
 
 
-**set-exclusive-or** *list-1 list-2* &key *key test test-not → result-list* 
+**set-exclusive-or** *list-1 list-2* &amp;key *key test test-not → result-list* 
 
 
 
-**nset-exclusive-or** *list-1 list-2* &key *key test test-not → result-list* 
+**nset-exclusive-or** *list-1 list-2* &amp;key *key test test-not → result-list* 
 
 
 

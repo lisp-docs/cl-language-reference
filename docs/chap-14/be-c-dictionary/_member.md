@@ -6,15 +6,15 @@
 
 
 
-**member** *item list* &key *key test test-not → tail* 
+**member** *item list* &amp;key *key test test-not → tail* 
 
 
 
-**member-if** *predicate list* &key *key → tail* 
+**member-if** *predicate list* &amp;key *key → tail* 
 
 
 
-**member-if-not** *predicate list* &key *key → tail* 
+**member-if-not** *predicate list* &amp;key *key → tail* 
 
 
 

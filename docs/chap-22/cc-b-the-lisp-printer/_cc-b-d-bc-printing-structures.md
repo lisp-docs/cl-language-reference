@@ -6,7 +6,7 @@ By default, a *structure* of type *S* is printed using #S syntax. This behavior 
 
 
 
-Different structures might print out in different ways; the default notation for structures is: #S(*structure-name \&#123;slot-key slot-value\&#125;*\*) 
+Different structures might print out in different ways; the default notation for structures is: #S(*structure-name \{slot-key slot-value\}*\*) 
 
 
 

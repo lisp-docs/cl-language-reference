@@ -70,7 +70,7 @@ In effect
 
 
 
-being *\&#123;*each *|* the*\&#125; \&#123;*hash-value *|* hash-values *|* hash-key *|* hash-keys*\&#125; \&#123;*in *|* of*\&#125;* 
+being *\{*each *|* the*\} \{*hash-value *|* hash-values *|* hash-key *|* hash-keys*\} \{*in *|* of*\}* 
 
 
 

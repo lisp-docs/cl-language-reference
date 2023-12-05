@@ -2,7 +2,7 @@
 
 
 
-~*mincol*,*colinc*,*minpad*,*padchar*<*str*~> 
+~*mincol*,*colinc*,*minpad*,*padchar*&lt;*str*~&gt; 
 
 
 
@@ -34,7 +34,7 @@ The ~<i><sup>∧</sup></i> directive may be used to terminate processing of the 
 
 
 
-If the first clause of a ~< is terminated with ~:; instead of ~;, then it is used in a special way. All of the clauses are processed (subject to ~<i><sup>∧</sup></i>, of course), but the first one is not used in performing the spacing and padding. When the padded result has been determined, then if it will fit on the current line of output, it is output, and the text for the first clause is discarded. If, however, the 
+If the first clause of a ~&lt; is terminated with ~:; instead of ~;, then it is used in a special way. All of the clauses are processed (subject to ~<i><sup>∧</sup></i>, of course), but the first one is not used in performing the spacing and padding. When the padded result has been determined, then if it will fit on the current line of output, it is output, and the text for the first clause is discarded. If, however, the 
 
 
 
@@ -42,7 +42,7 @@ padded text will not fit on the current line, then the text segment for the firs
 
 
 
-"~%;; ~\&#123;~<~%;; ~1:; ~S~>~<i><sup>∧</sup></i>,~\&#125;.~%" 
+"~%;; ~\{~&lt;~%;; ~1:; ~S~&gt;~<i><sup>∧</sup></i>,~\}.~%" 
 
 
 
@@ -50,7 +50,7 @@ can be used to print a list of items separated by commas without breaking items 
 
 
 
-"~%;; ~\&#123;~<~%;; ~1,50:; ~S~>~<i><sup>∧</sup></i>,~\&#125; .~%" 
+"~%;; ~\{~&lt;~%;; ~1,50:; ~S~&gt;~<i><sup>∧</sup></i>,~\} .~%" 
 
 
 

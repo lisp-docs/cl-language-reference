@@ -6,11 +6,11 @@
 
 
 
-**dotimes** (*var count-form* [*result-form*]) *\&#123;declaration\&#125;*\* *\&#123;tag | statement\&#125;*\* 
+**dotimes** (*var count-form* [*result-form*]) *\{declaration\}*\* *\{tag | statement\}*\* 
 
 
 
-*→ \&#123;result\&#125;*\* 
+*→ \{result\}*\* 
 
 
 
@@ -124,7 +124,7 @@ Here is an example of the use of dotimes in processing strings:
 
 
 
-(defun palindromep (string &optional 
+(defun palindromep (string &amp;optional 
 
 
 

@@ -72,7 +72,7 @@ arccosh *z* = 2 log
 
 
 
-` `<sup>p</sup><sub>(<i>z</i> + 1)<i>/</i>2 +</sub> <sup>p</sup><sub>(<i>z −</i> 1)<i>/</i>2</sub></sup> <i>.</i> 
+` `<sup>p</sup><sub>(<i>z</i> + 1)<i>/</i>2 +</sub> <sup>p</sup><sub>(<i>z −</i> 1)<i>/</i>2</sub> <i>.</i> 
 
 
 

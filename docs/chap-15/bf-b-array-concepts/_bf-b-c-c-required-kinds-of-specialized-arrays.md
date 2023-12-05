@@ -10,7 +10,7 @@
 
 
 
-|<p>**char string-equal string-upcase make-string string-greaterp string**/= </p><p>**nstring-capitalize string-left-trim string**< </p><p>**nstring-downcase string-lessp string**<= </p><p>**nstring-upcase string-not-equal string**= </p><p>**schar string-not-greaterp string**> </p><p>**string string-not-lessp string**>= </p><p>**string-capitalize string-right-trim** </p><p>**string-downcase string-trim**</p>|
+|<p>**char string-equal string-upcase make-string string-greaterp string**/= </p><p>**nstring-capitalize string-left-trim string**&lt; </p><p>**nstring-downcase string-lessp string**&lt;= </p><p>**nstring-upcase string-not-equal string**= </p><p>**schar string-not-greaterp string**&gt; </p><p>**string string-not-lessp string**&gt;= </p><p>**string-capitalize string-right-trim** </p><p>**string-downcase string-trim**</p>|
 
 | :- |
 

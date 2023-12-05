@@ -38,7 +38,7 @@ Figure 12–2 shows *defined names* relating to exponential, logarithmic, and tr
 
 
 
-|<p>**/=** >**= oddp** </p><p>< **evenp plusp** </p><p><**= max zerop** </p><p>**= min** </p><p>> **minusp**</p>|
+|<p>**/=** &gt;**= oddp** </p><p>&lt; **evenp plusp** </p><p>&lt;**= max zerop** </p><p>**= min** </p><p>&gt; **minusp**</p>|
 
 | :- |
 

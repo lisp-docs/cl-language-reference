@@ -34,7 +34,7 @@ In place of a prefix parameter to a directive, V (or v) can be used. In this cas
 
 
 
-omitted. # can be used in place of a prefix parameter; it represents the number of *args* remaining to be processed. When used within a recursive format, in the context of ~? or ~\&#123;, the # prefix parameter represents the number of *format arguments* remaining within the recursive call. 
+omitted. # can be used in place of a prefix parameter; it represents the number of *args* remaining to be processed. When used within a recursive format, in the context of ~? or ~\{, the # prefix parameter represents the number of *format arguments* remaining within the recursive call. 
 
 
 

@@ -26,7 +26,7 @@ Lambda-list-directed destructuring is identical to data-directed destructuring i
 
 
 
-*lambda list* syntax is preferred over destructuring syntax. Thus, after **&optional** a list of elements is a list of a destructuring pattern and a default value form. 
+*lambda list* syntax is preferred over destructuring syntax. Thus, after **&amp;optional** a list of elements is a list of a destructuring pattern and a default value form. 
 
 
 
@@ -34,7 +34,7 @@ The detailed behavior of each *lambda list keyword* in a lambda-list-directed de
 
 
 
-**&optional** 
+**&amp;optional** 
 
 
 
@@ -46,15 +46,15 @@ to match against this destructuring (sub)-pattern, the default form is evaluated
 
 
 
-**&rest**, **&body** 
+**&amp;rest**, **&amp;body** 
 
 
 
-The next element is a destructuring pattern that matches the rest of the list. **&body** is identical to **&rest** but declares that what is being matched is a list of forms that constitutes the body of *form*. This next element must be the last unless a *lambda list keyword* follows it. 
+The next element is a destructuring pattern that matches the rest of the list. **&amp;body** is identical to **&amp;rest** but declares that what is being matched is a list of forms that constitutes the body of *form*. This next element must be the last unless a *lambda list keyword* follows it. 
 
 
 
-**&aux** 
+**&amp;aux** 
 
 
 
@@ -62,7 +62,7 @@ The remaining elements are not destructuring patterns at all, but are auxiliary 
 
 
 
-**&whole** 
+**&amp;whole** 
 
 
 
@@ -70,7 +70,7 @@ The next element is a destructuring pattern that matches the entire form in a ma
 
 
 
-**&key** 
+**&amp;key** 
 
 
 
@@ -98,7 +98,7 @@ The rest of the list being destructured is taken to be alternating keywords and 
 
 
 
-**&allow-other-keys** 
+**&amp;allow-other-keys** 
 
 
 

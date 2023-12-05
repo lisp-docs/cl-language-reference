@@ -22,31 +22,31 @@ With the additional restriction that an *environment parameter* may appear only 
 
 
 
-*reqvars::*=*\&#123;var | ↓pattern\&#125;*\* 
+*reqvars::*=*\{var | ↓pattern\}*\* 
 
 
 
-*optvars::*=[&optional *\&#123;var |* (*\&#123;var | ↓pattern\&#125;* [*init-form* [*supplied-p-parameter*]])*\&#125;*\*] 
+*optvars::*=[&amp;optional *\{var |* (*\{var | ↓pattern\}* [*init-form* [*supplied-p-parameter*]])*\}*\*] 
 
 
 
-*restvar::*=[*\&#123;*&rest *|* &body*\&#125; \&#123;var | ↓pattern\&#125;*] 
+*restvar::*=[*\{*&amp;rest *|* &amp;body*\} \{var | ↓pattern\}*] 
 
 
 
-*keyvars::*=[&key *\&#123;var |* (*\&#123;var |* (*keyword-name \&#123;var | ↓pattern\&#125;*)*\&#125;* [*init-form* [*supplied-p-parameter*]])*\&#125;*\* [&allow-other-keys]] 
+*keyvars::*=[&amp;key *\{var |* (*\{var |* (*keyword-name \{var | ↓pattern\}*)*\}* [*init-form* [*supplied-p-parameter*]])*\}*\* [&amp;allow-other-keys]] 
 
 
 
-*auxvars::*=[&aux *\&#123;var |* (*var* [*init-form*])*\&#125;*\*] 
+*auxvars::*=[&amp;aux *\{var |* (*var* [*init-form*])*\}*\*] 
 
 
 
-*envvar::*=[&environment *var*] 
+*envvar::*=[&amp;environment *var*] 
 
 
 
-*wholevar::*=[&whole *var*] 
+*wholevar::*=[&amp;whole *var*] 
 
 
 
@@ -74,7 +74,7 @@ A *macro lambda list* can contain the *lambda list keywords* shown in Figure 3�
 
 
 
-|<p>**&allow-other-keys &environment &rest** </p><p>**&aux &key &whole** </p><p>**&body &optional**</p>|
+|<p>**&amp;allow-other-keys &amp;environment &amp;rest** </p><p>**&amp;aux &amp;key &amp;whole** </p><p>**&amp;body &amp;optional**</p>|
 
 | :- |
 
@@ -90,23 +90,23 @@ A *macro lambda list* can contain the *lambda list keywords* shown in Figure 3�
 
 
 
-*Optional parameters* (introduced by **&optional**) and *keyword parameters* (introduced by **&key**) can be supplied in a *macro lambda list*, just as in an *ordinary lambda list*. Both may contain default initialization forms and *supplied-p parameters*. 
+*Optional parameters* (introduced by **&amp;optional**) and *keyword parameters* (introduced by **&amp;key**) can be supplied in a *macro lambda list*, just as in an *ordinary lambda list*. Both may contain default initialization forms and *supplied-p parameters*. 
 
 
 
-**&body** is identical in function to **&rest**, but it can be used to inform certain output-formatting and editing functions that the remainder of the *form* is treated as a body, and should be indented accordingly. Only one of **&body** or **&rest** can be used at any particular level; see Section 3.4.4.1 (Destructuring by Lambda Lists). **&body** can appear at any level of a *macro lambda list*; for details, see Section 3.4.4.1 (Destructuring by Lambda Lists). 
+**&amp;body** is identical in function to **&amp;rest**, but it can be used to inform certain output-formatting and editing functions that the remainder of the *form* is treated as a body, and should be indented accordingly. Only one of **&amp;body** or **&amp;rest** can be used at any particular level; see Section 3.4.4.1 (Destructuring by Lambda Lists). **&amp;body** can appear at any level of a *macro lambda list*; for details, see Section 3.4.4.1 (Destructuring by Lambda Lists). 
 
 
 
-**&whole** is followed by a single variable that is bound to the entire macro-call form; this is the value that the *macro function* receives as its first argument. If **&whole** and a following variable appear, they must appear first in *lambda-list*, before any other parameter or *lambda list keyword*. **&whole** can appear at any level of a *macro lambda list*. At inner levels, the **&whole** variable is bound to 
+**&amp;whole** is followed by a single variable that is bound to the entire macro-call form; this is the value that the *macro function* receives as its first argument. If **&amp;whole** and a following variable appear, they must appear first in *lambda-list*, before any other parameter or *lambda list keyword*. **&amp;whole** can appear at any level of a *macro lambda list*. At inner levels, the **&amp;whole** variable is bound to 
 
 
 
-the corresponding part of the argument, as with **&rest**, but unlike **&rest**, other arguments are also allowed. The use of **&whole** does not affect the pattern of arguments specified. 
+the corresponding part of the argument, as with **&amp;rest**, but unlike **&amp;rest**, other arguments are also allowed. The use of **&amp;whole** does not affect the pattern of arguments specified. 
 
 
 
-**&environment** is followed by a single variable that is bound to an *environment* representing the *lexical environment* in which the macro call is to be interpreted. This *environment* should be used with **macro-function**, **get-setf-expansion**, **compiler-macro-function**, and **macroexpand** (for example) in computing the expansion of the macro, to ensure that any *lexical bindings* or definitions established in the *compilation environment* are taken into account. **&environment** can only appear at the top level of a *macro lambda list*, and can only appear once, but can appear anywhere in that list; the **&environment** *parameter* is *bound* along with **&whole** before any other *variables* in the *lambda list*, regardless of where **&environment** appears in the *lambda list*. The *object* that is bound to the *environment parameter* has *dynamic extent*. 
+**&amp;environment** is followed by a single variable that is bound to an *environment* representing the *lexical environment* in which the macro call is to be interpreted. This *environment* should be used with **macro-function**, **get-setf-expansion**, **compiler-macro-function**, and **macroexpand** (for example) in computing the expansion of the macro, to ensure that any *lexical bindings* or definitions established in the *compilation environment* are taken into account. **&amp;environment** can only appear at the top level of a *macro lambda list*, and can only appear once, but can appear anywhere in that list; the **&amp;environment** *parameter* is *bound* along with **&amp;whole** before any other *variables* in the *lambda list*, regardless of where **&amp;environment** appears in the *lambda list*. The *object* that is bound to the *environment parameter* has *dynamic extent*. 
 
 
 
@@ -114,11 +114,11 @@ Destructuring allows a *macro lambda list* to express the structure of a macro c
 
 
 
-A destructuring *lambda list* (whether at top level or embedded) can be dotted, ending in a parameter name. This situation is treated exactly as if the parameter name that ends the *list* had appeared preceded by **&rest**. 
+A destructuring *lambda list* (whether at top level or embedded) can be dotted, ending in a parameter name. This situation is treated exactly as if the parameter name that ends the *list* had appeared preceded by **&amp;rest**. 
 
 
 
-It is permissible for a *macro form* (or a *subexpression* of a *macro form*) to be a *dotted list* only when (... &rest var) or (... . var) is used to match it. It is the responsibility of the *macro* to recognize and deal with such situations. 
+It is permissible for a *macro form* (or a *subexpression* of a *macro form*) to be a *dotted list* only when (... &amp;rest var) or (... . var) is used to match it. It is the responsibility of the *macro* to recognize and deal with such situations. 
 
 
 

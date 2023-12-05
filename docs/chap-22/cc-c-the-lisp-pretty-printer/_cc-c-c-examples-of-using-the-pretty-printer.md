@@ -434,7 +434,7 @@ As examples of the convenience of specifying pretty printing with *format string
 
 
 
-(format T "~:<~W ~@ ~:I~W ~: ~W~1I ~ ~W~:>" list)) 
+(format T "~:&lt;~W ~@ ~:I~W ~: ~W~1I ~ ~W~:&gt;" list)) 
 
 
 
@@ -442,7 +442,7 @@ As examples of the convenience of specifying pretty printing with *format string
 
 
 
-(format T "~:<~W~<i><sup>∧</sup></i>~:<~@\&#123;~:<~@\&#123;~W~<i><sup>∧</sup></i>~ ~\&#125;~:>~<i><sup>∧</sup></i>~: ~\&#125;~:>~1I~@\&#123;~<i><sup>∧</sup></i>~ ~W~\&#125;~:>" list)) 
+(format T "~:&lt;~W~<i><sup>∧</sup></i>~:&lt;~@\{~:&lt;~@\{~W~<i><sup>∧</sup></i>~ ~\}~:&gt;~<i><sup>∧</sup></i>~: ~\}~:&gt;~1I~@\{~<i><sup>∧</sup></i>~ ~W~\}~:&gt;" list)) 
 
 
 
@@ -586,7 +586,7 @@ This final example shows how to define a pretty printing function for a user def
 
 
 
-(funcall (formatter "~@<#<~;~W and ~2I~ ~/pprint-fill/~;>~:>") 
+(funcall (formatter "~@&lt;#&lt;~;~W and ~2I~ ~/pprint-fill/~;&gt;~:&gt;") 
 
 
 

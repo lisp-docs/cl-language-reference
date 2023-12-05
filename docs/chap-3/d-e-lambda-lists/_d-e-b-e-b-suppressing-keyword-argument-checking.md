@@ -2,7 +2,7 @@
 
 
 
-If **&allow-other-keys** was specified in the *lambda list* of a *function*, *keyword* <sub>2</sub> *argument* checking is suppressed in calls to that *function*.  
+If **&amp;allow-other-keys** was specified in the *lambda list* of a *function*, *keyword* <sub>2</sub> *argument* checking is suppressed in calls to that *function*.  
 
 
 

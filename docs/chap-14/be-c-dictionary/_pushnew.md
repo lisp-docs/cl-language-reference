@@ -6,7 +6,7 @@
 
 
 
-**pushnew** *item place* &key *key test test-not* 
+**pushnew** *item place* &amp;key *key test test-not* 
 
 
 

@@ -6,7 +6,7 @@ The description of a *generic function* includes descriptions of the *methods* t
 
 
 
-**F** (*x class*) (*y t*) &optional *z* &key *k* 
+**F** (*x class*) (*y t*) &amp;optional *z* &amp;key *k* 
 
 
 

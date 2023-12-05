@@ -14,7 +14,7 @@
 
 
 
-always (< i 11)) 
+always (&lt; i 11)) 
 
 
 
@@ -26,7 +26,7 @@ always (< i 11))
 
 
 
-never (> i 11)) 
+never (&gt; i 11)) 
 
 
 
@@ -46,7 +46,7 @@ never (> i 11))
 
 
 
-thereis (when (> i 10) i) ) 
+thereis (when (&gt; i 10) i) ) 
 
 
 
@@ -62,7 +62,7 @@ thereis (when (> i 10) i) )
 
 
 
-always (< i 9) 
+always (&lt; i 9) 
 
 
 
@@ -110,7 +110,7 @@ finally (print "you won’t see this"))
 
 
 
-thereis (> i 11) 
+thereis (&gt; i 11) 
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-~\&#123;*str*~\&#125; 
+~\{*str*~\} 
 
 
 
@@ -14,7 +14,7 @@ For example:
 
 
 
-(format nil "The winners are:~\&#123; ~S~\&#125;." 
+(format nil "The winners are:~\{ ~S~\}." 
 
 
 
@@ -26,7 +26,7 @@ For example:
 
 
 
-(format nil "Pairs:~\&#123; <~S,~S>~\&#125;." 
+(format nil "Pairs:~\{ &lt;~S,~S&gt;~\}." 
 
 
 
@@ -34,15 +34,15 @@ For example:
 
 
 
-*→* "Pairs: <A,1> <B,2> <C,3>." 
+*→* "Pairs: <a,1> <b,2> <c,3>." 
 
 
 
-~:\&#123;*str*~\&#125; is similar, but the argument should be a *list* of sublists. At each repetition step, one sublist is used as the set of arguments for processing *str* ; on the next repetition, a new sublist is used, whether or not all of the last sublist had been processed. For example: 
+~:\{*str*~\} is similar, but the argument should be a *list* of sublists. At each repetition step, one sublist is used as the set of arguments for processing *str* ; on the next repetition, a new sublist is used, whether or not all of the last sublist had been processed. For example: 
 
 
 
-(format nil "Pairs:~:\&#123; <~S,~S>~\&#125;." 
+(format nil "Pairs:~:\{ &lt;~S,~S&gt;~\}." 
 
 
 
@@ -50,19 +50,19 @@ For example:
 
 
 
-*→* "Pairs: <A,1> <B,2> <C,3>." 
+*→* "Pairs: <a,1> <b,2> <c,3>." 
 
 
 
-~@\&#123;*str*~\&#125; is similar to ~\&#123;*str*~\&#125;, but instead of using one argument that is a list, all the remaining arguments are used as the list of arguments for the iteration. Example: 
+~@\{*str*~\} is similar to ~\{*str*~\}, but instead of using one argument that is a list, all the remaining arguments are used as the list of arguments for the iteration. Example: 
 
 
 
-(format nil "Pairs:~@\&#123; <~S,~S>~\&#125;." ’a 1 ’b 2 ’c 3) 
+(format nil "Pairs:~@\{ &lt;~S,~S&gt;~\}." ’a 1 ’b 2 ’c 3) 
 
 
 
-*→* "Pairs: <A,1> <B,2> <C,3>." 
+*→* "Pairs: <a,1> <b,2> <c,3>." 
 
 
 
@@ -82,11 +82,11 @@ If the iteration is terminated before all the remaining arguments are consumed, 
 
 
 
-~:@\&#123;*str*~\&#125; combines the features of ~:\&#123;*str*~\&#125; and ~@\&#123;*str*~\&#125;. All the remaining arguments are used, and each one must be a *list*. On each iteration, the next argument is used as a *list* of arguments to *str* . Example: 
+~:@\{*str*~\} combines the features of ~:\{*str*~\} and ~@\{*str*~\}. All the remaining arguments are used, and each one must be a *list*. On each iteration, the next argument is used as a *list* of arguments to *str* . Example: 
 
 
 
-(format nil "Pairs:~:@\&#123; <~S,~S>~\&#125;." 
+(format nil "Pairs:~:@\{ &lt;~S,~S&gt;~\}." 
 
 
 
@@ -98,7 +98,7 @@ If the iteration is terminated before all the remaining arguments are consumed, 
 
 
 
-Terminating the repetition construct with ~:\&#125; instead of ~\&#125; forces *str* to be processed at least once, even if the initial list of arguments is null. However, this will not override an explicit prefix parameter of zero. 
+Terminating the repetition construct with ~:\} instead of ~\} forces *str* to be processed at least once, even if the initial list of arguments is null. However, this will not override an explicit prefix parameter of zero. 
 
 
 
@@ -110,11 +110,11 @@ If *str* is empty, then an argument is used as *str* . It must be a *format cont
 
 
 
-*≡* (format stream "~1\&#123;~:\&#125;" string arguments) 
+*≡* (format stream "~1\{~:\}" string arguments) 
 
 
 
-This will use string as a formatting string. The ~1\&#123; says it will be processed at most once, and the ~:\&#125; says it will be processed at least once. Therefore it is processed exactly once, using arguments as the arguments. This case may be handled more clearly by the ~? directive, but this general feature of ~\&#123; is more powerful than ~?. 
+This will use string as a formatting string. The ~1\{ says it will be processed at most once, and the ~:\} says it will be processed at least once. Therefore it is processed exactly once, using arguments as the arguments. This case may be handled more clearly by the ~? directive, but this general feature of ~\{ is more powerful than ~?. 
 
 
 

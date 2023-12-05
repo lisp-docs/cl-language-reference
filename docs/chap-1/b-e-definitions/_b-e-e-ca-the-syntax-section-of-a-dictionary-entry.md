@@ -10,7 +10,7 @@ For example, an *operator* description might say:
 
 
 
-**F** *x y* &optional *z* &key *k* 
+**F** *x y* &amp;optional *z* &amp;key *k* 
 
 
 

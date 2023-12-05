@@ -6,11 +6,11 @@
 
 
 
-**get** *symbol indicator* &optional *default → value* 
+**get** *symbol indicator* &amp;optional *default → value* 
 
 
 
-**(setf (get** *symbol indicator* &optional *default***)** *new-value***)** 
+**(setf (get** *symbol indicator* &amp;optional *default***)** *new-value***)** 
 
 
 
@@ -152,7 +152,7 @@ married-name) *→* MARRY
 
 
 
-(defmacro age (person &optional (default ”thirty-something)) 
+(defmacro age (person &amp;optional (default ”thirty-something)) 
 
 
 

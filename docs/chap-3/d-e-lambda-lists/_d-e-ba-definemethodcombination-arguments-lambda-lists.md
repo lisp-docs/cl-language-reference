@@ -10,7 +10,7 @@ A *define-method-combination arguments lambda list* can contain the *lambda list
 
 
 
-|<p>**&allow-other-keys &key &rest** </p><p>**&aux &optional &whole**</p>|
+|<p>**&amp;allow-other-keys &amp;key &amp;rest** </p><p>**&amp;aux &amp;optional &amp;whole**</p>|
 
 | :- |
 
@@ -22,7 +22,7 @@ A *define-method-combination arguments lambda list* can contain the *lambda list
 
 
 
-*Define-method-combination arguments lambda lists* are similar to *ordinary lambda lists*, but also permit the use of **&whole**. 
+*Define-method-combination arguments lambda lists* are similar to *ordinary lambda lists*, but also permit the use of **&amp;whole**. 
 
 
 

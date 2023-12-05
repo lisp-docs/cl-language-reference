@@ -2,7 +2,7 @@
 
 
 
-This separates clauses in ~[ and ~< constructs. The consequences of using it elsewhere are undefined. 
+This separates clauses in ~[ and ~&lt; constructs. The consequences of using it elsewhere are undefined. 
 
 
 
