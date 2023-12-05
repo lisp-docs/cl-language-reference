@@ -6,7 +6,7 @@ Topological sorting proceeds by finding a class <i>C</i> in <i>S<sub>C</sub></i>
 
 
 
-If <i>S<sub>C</sub></i> is not empty and the process has stopped, the set <i>R</i> is inconsistent. If every <i>class</i> in the finite set of <i>classes</i> is preceded by another, then <i>R</i> contains a loop. That is, there is a chain of classes <i>C</i><sub>1</sub><i>, . . . , C<sub>n</sub></i> such that <i>C<sub>i</sub></i> precedes <i>C<sub>i</sub></i>+1</sub>, 1 <i>≤ i</i> < <i>n</i>, and <i>C<sub>n</sub></i> precedes <i>C</i><sub>1</sub>. 
+If <i>S<sub>C</sub></i> is not empty and the process has stopped, the set <i>R</i> is inconsistent. If every <i>class</i> in the finite set of <i>classes</i> is preceded by another, then <i>R</i> contains a loop. That is, there is a chain of classes <i>C</i><sub>1</sub><i>, . . . , C<sub>n</sub></i> such that <i>C<sub>i</sub></i> precedes <i>C<sub>i</sub></i>+1, 1 <i>≤ i</i> < <i>n</i>, and <i>C<sub>n</sub></i> precedes <i>C</i><sub>1</sub>. 
 
 
 
