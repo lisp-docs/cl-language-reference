@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-chap-8/intro" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.1">
+<title data-rh="true">intro | Common Lisp (New) Language Reference</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://lisp-docs.github.io/cl-language-reference/img/1024px-Lisp_logo.svg.png"><meta data-rh="true" name="twitter:image" content="https://lisp-docs.github.io/cl-language-reference/img/1024px-Lisp_logo.svg.png"><meta data-rh="true" property="og:url" content="https://lisp-docs.github.io/cl-language-reference/docs/chap-8/intro"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="intro | Common Lisp (New) Language Reference"><meta data-rh="true" name="description" content="8. Structures"><meta data-rh="true" property="og:description" content="8. Structures"><link data-rh="true" rel="icon" href="/cl-language-reference/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-8/intro"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-8/intro" hreflang="en"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-8/intro" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://C1F2Q5VM6X-dsn.algolia.net" crossorigin="anonymous"><link rel="alternate" type="application/rss+xml" href="/cl-language-reference/blog/rss.xml" title="Common Lisp (New) Language Reference RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/cl-language-reference/blog/atom.xml" title="Common Lisp (New) Language Reference Atom Feed">
+
+
+
+<link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.ad20780e.css">
+<script src="/cl-language-reference/assets/js/runtime~main.eaed6ca4.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/main.e3f87041.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/cl-language-reference/"><div class="navbar__logo"><img src="/cl-language-reference/img/logo.svg" alt="LISP Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/cl-language-reference/img/logo.svg" alt="LISP Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CL Technical Reference </b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/cl-language-reference/docs/intro">The CL Reference</a><a class="navbar__item navbar__link" href="/cl-language-reference/contribute">Contribute!</a><a class="navbar__item navbar__link" href="/cl-language-reference/todo">TODO</a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/cl-language-reference/blog">Blog</a><a href="https://github.com/lisp-docs/cl-language-reference/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/intro">Introduction</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/contents-and-figures">Contents and Figures</a><button aria-label="Expand sidebar category &#x27;Contents and Figures&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/1-introduction">1. Introduction</a><button aria-label="Expand sidebar category &#x27;1. Introduction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/2-syntax">2. Syntax</a><button aria-label="Expand sidebar category &#x27;2. Syntax&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/3-evaluation-and-compilation">3. Evaluation and Compilation</a><button aria-label="Expand sidebar category &#x27;3. Evaluation and Compilation&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/4-types-and-classes">4. Types and Classes</a><button aria-label="Expand sidebar category &#x27;4. Types and Classes&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/5-data-and-control-flow">5. Data and Control Flow</a><button aria-label="Expand sidebar category &#x27;5. Data and Control Flow&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/6-iteration">6. Iteration</a><button aria-label="Expand sidebar category &#x27;6. Iteration&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/7-objects">7. Objects</a><button aria-label="Expand sidebar category &#x27;7. Objects&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/cl-language-reference/docs/category/8-structures">8. Structures</a><button aria-label="Collapse sidebar category &#x27;8. Structures&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/cl-language-reference/docs/chap-8/intro">intro</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/9-conditions">9. Conditions</a><button aria-label="Expand sidebar category &#x27;9. Conditions&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/10-symbols">10. Symbols</a><button aria-label="Expand sidebar category &#x27;10. Symbols&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/11-packages">11. Packages</a><button aria-label="Expand sidebar category &#x27;11. Packages&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/12-numbers">12. Numbers</a><button aria-label="Expand sidebar category &#x27;12. Numbers&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/13-characters">13. Characters</a><button aria-label="Expand sidebar category &#x27;13. Characters&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/14-conses">14. Conses</a><button aria-label="Expand sidebar category &#x27;14. Conses&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/15-arrays">15. Arrays</a><button aria-label="Expand sidebar category &#x27;15. Arrays&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/16-strings">16. Strings</a><button aria-label="Expand sidebar category &#x27;16. Strings&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/17-sequences">17. Sequences</a><button aria-label="Expand sidebar category &#x27;17. Sequences&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/18-hash-tables">18. Hash Tables</a><button aria-label="Expand sidebar category &#x27;18. Hash Tables&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/19-filenames">19. Filenames</a><button aria-label="Expand sidebar category &#x27;19. Filenames&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/20-files">20. Files</a><button aria-label="Expand sidebar category &#x27;20. Files&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/21-streams">21. Streams</a><button aria-label="Expand sidebar category &#x27;21. Streams&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/22-printer">22. Printer</a><button aria-label="Expand sidebar category &#x27;22. Printer&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/23-reader">23. Reader</a><button aria-label="Expand sidebar category &#x27;23. Reader&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/24-system-construction">24. System Construction</a><button aria-label="Expand sidebar category &#x27;24. System Construction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/25-environment">25. Environment</a><button aria-label="Expand sidebar category &#x27;25. Environment&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/26-glossary">26. Glossary</a><button aria-label="Expand sidebar category &#x27;26. Glossary&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/a-appendix">A. Appendix</a><button aria-label="Expand sidebar category &#x27;A. Appendix&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/code-blocks-double-slashes">Code Blocks TODO Fixes</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/code-blocks">code-blocks</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/cl-language-reference/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/cl-language-reference/docs/category/8-structures"><span itemprop="name">8. Structures</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">intro</span><meta itemprop="position" content="2"></li></ul></nav><div class="theme-doc-markdown markdown"><header><h1>intro</h1></header><p><strong>8. Structures</strong></p>
+<p><strong>defstruct</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>defstruct</strong> <em>name-and-options</em> [<em>documentation</em>] <em>{↓slot-description}</em>*</p>
+<p><em>→ structure-name</em></p>
+<p><em>name-and-options::</em>=<em>structure-name |</em> (<em>structure-name</em> [[ <em>↓options</em> ]])</p>
+<p><em>options::</em>=<em>↓conc-name-option |</em></p>
+<p><em>{↓constructor-option}</em>* <em>|</em></p>
+<p><em>↓copier-option |</em></p>
+<p><em>↓include-option |</em></p>
+<p><em>↓initial-offset-option |</em></p>
+<p><em>↓named-option |</em></p>
+<p><em>↓predicate-option |</em></p>
+<p><em>↓printer-option |</em></p>
+<p><em>↓type-option</em></p>
+<p><em>conc-name-option::</em>=<!-- -->:conc-name<!-- --> <em>|</em> (<!-- -->:conc-name<!-- -->) <em>|</em> (<!-- -->:conc-name<!-- --> <em>conc-name</em>)</p>
+<p><em>constructor-option::</em>=<!-- -->:constructor<!-- --> <em>|</em></p>
+<p>(<!-- -->:constructor<!-- -->) <em>|</em></p>
+<p>(<!-- -->:constructor<!-- --> <em>constructor-name</em>) <em>|</em></p>
+<p>(<!-- -->:constructor<!-- --> <em>constructor-name constructor-arglist</em>)</p>
+<p><em>copier-option::</em>=<!-- -->:copier<!-- --> <em>|</em> (<!-- -->:copier<!-- -->) <em>|</em> (<!-- -->:copier<!-- --> <em>copier-name</em>)</p>
+<p><em>predicate-option::</em>=<!-- -->:predicate<!-- --> <em>|</em> (<!-- -->:predicate<!-- -->) <em>|</em> (<!-- -->:predicate<!-- --> <em>predicate-name</em>)</p>
+<p><em>include-option::</em>=(<!-- -->:include<!-- --> <em>included-structure-name {↓slot-description}</em>*)</p>
+<p><em>printer-option::</em>=<em>↓print-object-option | ↓print-function-option</em></p>
+<p><em>print-object-option::</em>=(<!-- -->:print-object<!-- --> <em>printer-name</em>) <em>|</em> (<!-- -->:print-object<!-- -->)</p>
+<p><em>print-function-option::</em>=(<!-- -->:print-function<!-- --> <em>printer-name</em>) <em>|</em> (<!-- -->:print-function<!-- -->)</p>
+<p><em>type-option::</em>=(<!-- -->:type<!-- --> <em>type</em>)</p>
+<p><em>named-option::</em>=<!-- -->:named</p>
+<p><em>initial-offset-option::</em>=(<!-- -->:initial-offset<!-- --> <em>initial-offset</em>)</p>
+<p><strong>defstruct</strong></p>
+<p><em>slot-description::</em>=<em>slot-name |</em></p>
+<p>(<em>slot-name</em> [<em>slot-initform</em> [[ <em>↓slot-option</em> ]]])</p>
+<p><em>slot-option::</em>=<!-- -->:type<!-- --> <em>slot-type |</em></p>
+<p>:read-only<!-- --> <em>slot-read-only-p</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>conc-name</em>—a <em>string designator</em> .</p>
+<p><em>constructor-arglist</em>—a <em>boa lambda list</em>.</p>
+<p><em>constructor-name</em>—a <em>symbol</em>.</p>
+<p><em>copier-name</em>—a <em>symbol</em>.</p>
+<p><em>included-structure-name</em>—an already-defined <em>structure name</em>. Note that a <em>derived type</em> is not permissible, even if it would expand into a <em>structure name</em>.</p>
+<p><em>initial-offset</em>—a non-negative <em>integer</em> .</p>
+<p><em>predicate-name</em>—a <em>symbol</em>.</p>
+<p><em>printer-name</em>—a <em>function name</em> or a <em>lambda expression</em>.</p>
+<p><em>slot-name</em>—a <em>symbol</em>.</p>
+<p><em>slot-initform</em>—a <em>form</em>.</p>
+<p><em>slot-read-only-p</em>—a <em>generalized boolean</em>.</p>
+<p><em>structure-name</em>—a <em>symbol</em>.</p>
+<p><em>type</em>—one of the <em>type specifiers</em> <strong>list</strong>, <strong>vector</strong>, or (vector <em>size</em>), or some other <em>type specifier</em> defined by the <em>implementation</em> to be appropriate.</p>
+<p><em>documentation</em>—a <em>string</em>; not evaluated.</p>
+<p><strong>Description:</strong></p>
+<p><strong>defstruct</strong> defines a structured <em>type</em>, named <em>structure-type</em>, with named slots as specified by the <em>slot-options</em>.</p>
+<p><strong>defstruct</strong> defines <em>readers</em> for the slots and arranges for <strong>setf</strong> to work properly on such <em>reader</em> functions. Also, unless overridden, it defines a predicate named <em>name</em>-p, defines a constructor function named make-<em>constructor-name</em>, and defines a copier function named copy-<em>constructor-name</em>. All names of automatically created functions might automatically be declared <strong>inline</strong> (at the discretion of the <em>implementation</em>).</p>
+<p>If <em>documentation</em> is supplied, it is attached to <em>structure-name</em> as a <em>documentation string</em> of kind <strong>structure</strong>, and unless <!-- -->:type<!-- --> is used, the <em>documentation</em> is also attached to <em>structure-name</em> as a</p>
+<p><strong>defstruct</strong></p>
+<p><em>documentation string</em> of kind <strong>type</strong> and as a <em>documentation string</em> to the <em>class object</em> for the <em>class</em> named <em>structure-name</em>.</p>
+<p><strong>defstruct</strong> defines a constructor function that is used to create instances of the structure created by <strong>defstruct</strong>. The default name is make-<em>structure-name</em>. A different name can be supplied by giving the name as the argument to the <em>constructor</em> option. <strong>nil</strong> indicates that no constructor function will be created.</p>
+<p>After a new structure type has been defined, instances of that type normally can be created by using the constructor function for the type. A call to a constructor function is of the following form:</p>
+<p>(constructor-function-name</p>
+<p>slot-keyword-1 form-1</p>
+<p>slot-keyword-2 form-2</p>
+<p><em>. . .</em>)</p>
+<p>The arguments to the constructor function are all keyword arguments. Each slot keyword argument must be a keyword whose name corresponds to the name of a structure slot. All the <em>keywords</em> and <em>forms</em> are evaluated. If a slot is not initialized in this way, it is initialized by evaluating <em>slot-initform</em> in the slot description at the time the constructor function is called. If no <em>slot-initform</em> is supplied, the consequences are undefined if an attempt is later made to read the slot’s value before a value</p>
+<p>is explicitly assigned.</p>
+<p>Each <em>slot-initform</em> supplied for a <strong>defstruct</strong> component, when used by the constructor function for an otherwise unsupplied component, is re-evaluated on every call to the constructor function. The <em>slot-initform</em> is not evaluated unless it is needed in the creation of a particular structure instance. If it is never needed, there can be no type-mismatch error, even if the <em>type</em> of the slot is specified; no warning should be issued in this case. For example, in the following sequence, only the last call is an error.</p>
+<p>(defstruct person (name 007 <!-- -->:type<!-- --> string))</p>
+<p>(make-person <!-- -->:name<!-- --> &quot;James&quot;)</p>
+<p>(make-person)</p>
+<p>It is as if the <em>slot-initforms</em> were used as <em>initialization forms</em> for the <em>keyword parameters</em> of the constructor function.</p>
+<p>The <em>symbols</em> which name the slots must not be used by the <em>implementation</em> as the <em>names</em> for the <em>lambda variables</em> in the constructor function, since one or more of those <em>symbols</em> might have been proclaimed <strong>special</strong> or might be defined as the name of a <em>constant variable</em>. The slot default init forms are evaluated in the <em>lexical environment</em> in which the <strong>defstruct</strong> form itself appears and in the <em>dynamic environment</em> in which the call to the constructor function appears.</p>
+<p>For example, if the form (gensym) were used as an initialization form, either in the constructor function call or as the default initialization form in <strong>defstruct</strong>, then every call to the constructor function would call <strong>gensym</strong> once to generate a new <em>symbol</em>.</p>
+<p><strong>defstruct</strong></p>
+<p>Each <em>slot-description</em> in <strong>defstruct</strong> can specify zero or more <em>slot-options</em>. A <em>slot-option</em> consists of a pair of a keyword and a value (which is not a form to be evaluated, but the value itself). For example:</p>
+<p>(defstruct ship</p>
+<p>(x-position 0.0 <!-- -->:type<!-- --> short-float)</p>
+<p>(y-position 0.0 <!-- -->:type<!-- --> short-float)</p>
+<p>(x-velocity 0.0 <!-- -->:type<!-- --> short-float)</p>
+<p>(y-velocity 0.0 <!-- -->:type<!-- --> short-float)</p>
+<p>(mass *default-ship-mass* <!-- -->:type<!-- --> short-float <!-- -->:read-only<!-- --> t))</p>
+<p>This specifies that each slot always contains a <em>short float</em>, and that the last slot cannot be altered once a ship is constructed.</p>
+<p>The available slot-options are:</p>
+<p>:type<!-- --> <em>type</em></p>
+<p>This specifies that the contents of the slot is always of type <em>type</em>. This is entirely analogous to the declaration of a variable or function; it effectively declares the result type of the <em>reader</em> function. It is <em>implementation-dependent</em> whether the <em>type</em> is checked when initializing a slot or when assigning to it. <em>Type</em> is not evaluated; it must be a valid <em>type specifier</em> .</p>
+<p>:read-only<!-- --> <em>x</em></p>
+<p>When <em>x</em> is <em>true</em>, this specifies that this slot cannot be altered; it will always contain the value supplied at construction time. <strong>setf</strong> will not accept the <em>reader</em> function for this slot. If <em>x</em> is <em>false</em>, this slot-option has no effect. <em>X</em> is not evaluated.</p>
+<p>When this option is <em>false</em> or unsupplied, it is <em>implementation-dependent</em> whether the ability to <em>write</em> the slot is implemented by a <em>setf function</em> or a <em>setf expander</em> .</p>
+<p>The following keyword options are available for use with <strong>defstruct</strong>. A <strong>defstruct</strong> option can be either a keyword or a <em>list</em> of a keyword and arguments for that keyword; specifying the keyword by itself is equivalent to specifying a list consisting of the keyword and no arguments. The syntax for <strong>defstruct</strong> options differs from the pair syntax used for slot-options. No part of any of these options is evaluated.</p>
+<p>:conc-name</p>
+<p>This provides for automatic prefixing of names of <em>reader</em> (or <em>access</em>) functions. The default behavior is to begin the names of all the <em>reader</em> functions of a structure with the name of the structure followed by a hyphen.</p>
+<p>:conc-name<!-- --> supplies an alternate prefix to be used. If a hyphen is to be used as a separator, it must be supplied as part of the prefix. If <!-- -->:conc-name<!-- --> is <strong>nil</strong> or no argument is supplied, then no prefix is used; then the names of the <em>reader</em> functions are the same as the slot names. If a <em>non-nil</em> prefix is given, the name of the <em>reader function</em> for each slot is</p>
+<p><strong>defstruct</strong></p>
+<p>constructed by concatenating that prefix and the name of the slot, and interning the resulting <em>symbol</em> in the <em>package</em> that is current at the time the <strong>defstruct</strong> form is expanded.</p>
+<p>Note that no matter what is supplied for <!-- -->:conc-name<!-- -->, slot keywords that match the slot names with no prefix attached are used with a constructor function. The <em>reader</em> function name is used in conjunction with <strong>setf</strong>. Here is an example:</p>
+<p>(defstruct (door (<!-- -->:conc-name<!-- --> dr-)) knob-color width material) <em>→</em> DOOR</p>
+<p>(setq my-door (make-door <!-- -->:knob-color<!-- --> ’red <!-- -->:width<!-- --> 5.0))</p>
+<p><em>→</em> #S(DOOR <!-- -->:KNOB-COLOR<!-- --> RED <!-- -->:WIDTH<!-- --> 5.0 <!-- -->:MATERIAL<!-- --> NIL)</p>
+<p>(dr-width my-door) <em>→</em> 5.0</p>
+<p>(setf (dr-width my-door) 43.7) <em>→</em> 43.7</p>
+<p>(dr-width my-door) <em>→</em> 43.7</p>
+<p>Whether or not the <!-- -->:conc-name<!-- --> option is explicitly supplied, the following rule governs name conflicts of generated <em>reader</em> (or <em>accessor</em> ) names: For any <em>structure type S</em><sub>1</sub> having a <em>reader</em> function named <em>R</em> for a slot named <em>X</em><sub>1</sub> that is inherited by another <em>structure type S</em><sub>2</sub> that would have a <em>reader</em> function with the same name <em>R</em> for a slot named <em>X</em><sub>2</sub>, no definition for <em>R</em> is generated by the definition of <em>S</em><sub>2</sub>; instead, the definition of <em>R</em> is inherited from the definition of <em>S</em><sub>1</sub>. (In such a case, if <em>X</em><sub>1</sub> and <em>X</em><sub>2</sub> are different slots, the <em>implementation</em> might signal a style warning.)</p>
+<p>:constructor</p>
+<p>This option takes zero, one, or two arguments. If at least one argument is supplied and the first argument is not <strong>nil</strong>, then that argument is a <em>symbol</em> which specifies the name of the constructor function. If the argument is not supplied (or if the option itself is not supplied), the name of the constructor is produced by concatenating the string &quot;MAKE-&quot; and the name of the structure, interning the name in whatever <em>package</em> is current at the time <strong>defstruct</strong> is expanded. If the argument is provided and is <strong>nil</strong>, no constructor function is defined.</p>
+<p>If <!-- -->:constructor<!-- --> is given as (<!-- -->:constructor<!-- --> <em>name arglist</em>), then instead of making a keyword driven constructor function, <strong>defstruct</strong> defines a “positional” constructor function, taking arguments whose meaning is determined by the argument’s position and possibly by keywords. <em>Arglist</em> is used to describe what the arguments to the constructor will be. In the simplest case something like (<!-- -->:constructor<!-- --> make-foo (a b c)) defines make-foo to be a three-argument constructor function whose arguments are used to initialize the slots named a, b, and c.</p>
+<p>Because a constructor of this type operates “By Order of Arguments,” it is sometimes known as a “boa constructor.”</p>
+<p>For information on how the <em>arglist</em> for a “boa constructor” is processed, see Section 3.4.6 (Boa Lambda Lists).</p>
+<p>It is permissible to use the <!-- -->:constructor<!-- --> option more than once, so that you can define several different constructor functions, each taking different parameters.</p>
+<p><strong>defstruct</strong></p>
+<p><strong>defstruct</strong> creates the default-named keyword constructor function only if no explicit <!-- -->:constructor<!-- --> options are specified, or if the <!-- -->:constructor<!-- --> option is specified without a <em>name</em> argument.</p>
+<p>(<!-- -->:constructor<!-- --> nil) is meaningful only when there are no other <!-- -->:constructor<!-- --> options specified. It prevents <strong>defstruct</strong> from generating any constructors at all.</p>
+<p>Otherwise, <strong>defstruct</strong> creates a constructor function corresponding to each supplied <!-- -->:constructor<!-- --> option. It is permissible to specify multiple keyword constructor functions as well as multiple “boa constructors”.</p>
+<p>:copier</p>
+<p>This option takes one argument, a <em>symbol</em>, which specifies the name of the copier function. If the argument is not provided or if the option itself is not provided, the name of the copier is produced by concatenating the string &quot;COPY-&quot; and the name of the structure, interning the name in whatever <em>package</em> is current at the time <strong>defstruct</strong> is expanded. If the argument is provided and is <strong>nil</strong>, no copier function is defined.</p>
+<p>The automatically defined copier function is a function of one <em>argument</em>, which must be of the structure type being defined. The copier function creates a <em>fresh</em> structure that has the same <em>type</em> as its <em>argument</em>, and that has the <em>same</em> component values as the original structure; that is, the component values are not copied recursively. If the <strong>defstruct</strong> <!-- -->:type<!-- --> option was not used, the following equivalence applies:</p>
+<p>(<em>copier-name</em> x) = (copy-structure (the <em>structure-name</em> x))</p>
+<p>:include</p>
+<p>This option is used for building a new structure definition as an extension of another structure definition. For example:</p>
+<p>(defstruct person name age sex)</p>
+<p>To make a new structure to represent an astronaut that has the attributes of name, age, and sex, and <em>functions</em> that operate on person structures, astronaut is defined with <!-- -->:include<!-- --> as follows:</p>
+<p>(defstruct (astronaut (<!-- -->:include<!-- --> person)</p>
+<p>(<!-- -->:conc-name<!-- --> astro-))</p>
+<p>helmet-size</p>
+<p>(favorite-beverage ’tang))</p>
+<p>:include<!-- --> causes the structure being defined to have the same slots as the included structure. This is done in such a way that the <em>reader</em> functions for the included structure also work on the structure being defined. In this example, an astronaut therefore has five slots: the three defined in person and the two defined in astronaut itself. The <em>reader</em> functions defined by the person structure can be applied to instances of the astronaut structure, and they work correctly. Moreover, astronaut has its own <em>reader</em> functions for components</p>
+<p><strong>defstruct</strong></p>
+<p>defined by the person structure. The following examples illustrate the use of astronaut structures:</p>
+<p>(setq x (make-astronaut <!-- -->:name<!-- --> ’buzz</p>
+<p>:age<!-- --> 45.</p>
+<p>:sex<!-- --> t</p>
+<p>:helmet-size<!-- --> 17.5))</p>
+<p>(person-name x) <em>→</em> BUZZ</p>
+<p>(astro-name x) <em>→</em> BUZZ</p>
+<p>(astro-favorite-beverage x) <em>→</em> TANG</p>
+<p>(reduce #’+ astros <!-- -->:key<!-- --> #’person-age) ; obtains the total of the ages</p>
+<p>; of the possibly empty</p>
+<p>; sequence of astros</p>
+<p>The difference between the <em>reader</em> functions person-name and astro-name is that person-name can be correctly applied to any person, including an astronaut, while astro-name can be correctly applied only to an astronaut. An implementation might check for incorrect use of <em>reader</em> functions.</p>
+<p>At most one <!-- -->:include<!-- --> can be supplied in a single <strong>defstruct</strong>. The argument to <!-- -->:include<!-- --> is required and must be the name of some previously defined structure. If the structure being defined has no <!-- -->:type<!-- --> option, then the included structure must also have had no <!-- -->:type<!-- --> option supplied for it. If the structure being defined has a <!-- -->:type<!-- --> option, then the included structure must have been declared with a <!-- -->:type<!-- --> option specifying the same representation <em>type</em>.</p>
+<p>If no <!-- -->:type<!-- --> option is involved, then the structure name of the including structure definition becomes the name of a <em>data type</em>, and therefore a valid <em>type specifier</em> recognizable by <strong>typep</strong>; it becomes a <em>subtype</em> of the included structure. In the above example, astronaut is a <em>subtype</em> of person; hence</p>
+<p>(typep (make-astronaut) ’person) <em>→ true</em></p>
+<p>indicating that all operations on persons also work on astronauts.</p>
+<p>The structure using <!-- -->:include<!-- --> can specify default values or slot-options for the included slots different from those the included structure specifies, by giving the <!-- -->:include<!-- --> option as:</p>
+<p>(<!-- -->:include<!-- --> <em>included-structure-name {slot-description}</em>*)</p>
+<p>Each <em>slot-description</em> must have a <em>slot-name</em> that is the same as that of some slot in the included structure. If a <em>slot-description</em> has no <em>slot-initform</em>, then in the new structure the slot has no initial value. Otherwise its initial value form is replaced by the <em>slot-initform</em> in the <em>slot-description</em>. A normally writable slot can be made read-only. If a slot is read-only in the included structure, then it must also be so in the including structure. If a <em>type</em> is supplied for a slot, it must be a <em>subtype</em> of the <em>type</em> specified in the included structure.</p>
+<p><strong>defstruct</strong></p>
+<p>For example, if the default age for an astronaut is 45, then</p>
+<p>(defstruct (astronaut (<!-- -->:include<!-- --> person (age 45)))</p>
+<p>helmet-size</p>
+<p>(favorite-beverage ’tang))</p>
+<p>If <!-- -->:include<!-- --> is used with the <!-- -->:type<!-- --> option, then the effect is first to skip over as many representation elements as needed to represent the included structure, then to skip over any additional elements supplied by the <!-- -->:initial-offset<!-- --> option, and then to begin allocation of elements from that point. For example:</p>
+<p>(defstruct (binop (<!-- -->:type<!-- --> list) <!-- -->:named<!-- --> (<!-- -->:initial-offset<!-- --> 2))</p>
+<p>(operator ’? <!-- -->:type<!-- --> symbol)</p>
+<p>operand-1</p>
+<p>operand-2) <em>→</em> BINOP</p>
+<p>(defstruct (annotated-binop (<!-- -->:type<!-- --> list)</p>
+<p>(<!-- -->:initial-offset<!-- --> 3)</p>
+<p>(<!-- -->:include<!-- --> binop))</p>
+<p>commutative associative identity) <em>→</em> ANNOTATED-BINOP</p>
+<p>(make-annotated-binop <!-- -->:operator<!-- --> ’*</p>
+<p>:operand-1<!-- --> ’x</p>
+<p>:operand-2<!-- --> 5</p>
+<p>:commutative<!-- --> t</p>
+<p>:associative<!-- --> t</p>
+<p>:identity<!-- --> 1)</p>
+<p><em>→</em> (NIL NIL BINOP * X 5 NIL NIL NIL T T 1)</p>
+<p>The first two <strong>nil</strong> elements stem from the <!-- -->:initial-offset<!-- --> of 2 in the definition of binop. The next four elements contain the structure name and three slots for binop. The next three <strong>nil</strong> elements stem from the <!-- -->:initial-offset<!-- --> of 3 in the definition of annotated-binop. The last three list elements contain the additional slots for an annotated-binop.</p>
+<p>:initial-offset</p>
+<p>:initial-offset<!-- --> instructs <strong>defstruct</strong> to skip over a certain number of slots before it starts allocating the slots described in the body. This option’s argument is the number of slots <strong>defstruct</strong> should skip. <!-- -->:initial-offset<!-- --> can be used only if <!-- -->:type<!-- --> is also supplied.</p>
+<p>:initial-offset<!-- --> allows slots to be allocated beginning at a representational element other than the first. For example, the form</p>
+<p>(defstruct (binop (<!-- -->:type<!-- --> list) (<!-- -->:initial-offset<!-- --> 2))</p>
+<p>(operator ’? <!-- -->:type<!-- --> symbol)</p>
+<p>operand-1</p>
+<p>operand-2) <em>→</em> BINOP</p>
+<p>would result in the following behavior for make-binop:</p>
+<p><strong>defstruct</strong></p>
+<p>(make-binop <!-- -->:operator<!-- --> ’+ <!-- -->:operand-1<!-- --> ’x <!-- -->:operand-2<!-- --> 5)</p>
+<p><em>→</em> (NIL NIL + X 5)</p>
+<p>(make-binop <!-- -->:operand-2<!-- --> 4 <!-- -->:operator<!-- --> ’*)</p>
+<p><em>→</em> (NIL NIL * NIL 4)</p>
+<p>The selector functions binop-operator, binop-operand-1, and binop-operand-2 would be essentially equivalent to <strong>third</strong>, <strong>fourth</strong>, and <strong>fifth</strong>, respectively. Similarly, the form</p>
+<p>(defstruct (binop (<!-- -->:type<!-- --> list) <!-- -->:named<!-- --> (<!-- -->:initial-offset<!-- --> 2))</p>
+<p>(operator ’? <!-- -->:type<!-- --> symbol)</p>
+<p>operand-1</p>
+<p>operand-2) <em>→</em> BINOP</p>
+<p>would result in the following behavior for make-binop:</p>
+<p>(make-binop <!-- -->:operator<!-- --> ’+ <!-- -->:operand-1<!-- --> ’x <!-- -->:operand-2<!-- --> 5) <em>→</em> (NIL NIL BINOP + X 5) (make-binop <!-- -->:operand-2<!-- --> 4 <!-- -->:operator<!-- --> ’*) <em>→</em> (NIL NIL BINOP * NIL 4)</p>
+<p>The first two <strong>nil</strong> elements stem from the <!-- -->:initial-offset<!-- --> of 2 in the definition of binop. The next four elements contain the structure name and three slots for binop.</p>
+<p>:named</p>
+<p>:named<!-- --> specifies that the structure is named. If no <!-- -->:type<!-- --> is supplied, then the structure is always named.</p>
+<p>For example:</p>
+<p>(defstruct (binop (<!-- -->:type<!-- --> list))</p>
+<p>(operator ’? <!-- -->:type<!-- --> symbol)</p>
+<p>operand-1</p>
+<p>operand-2) <em>→</em> BINOP</p>
+<p>This defines a constructor function make-binop and three selector functions, namely binop-operator, binop-operand-1, and binop-operand-2. (It does not, however, define a predicate binop-p, for reasons explained below.)</p>
+<p>The effect of make-binop is simply to construct a list of length three:</p>
+<p>(make-binop <!-- -->:operator<!-- --> ’+ <!-- -->:operand-1<!-- --> ’x <!-- -->:operand-2<!-- --> 5) <em>→</em> (+ X 5)</p>
+<p>(make-binop <!-- -->:operand-2<!-- --> 4 <!-- -->:operator<!-- --> ’*) <em>→</em> (* NIL 4)</p>
+<p>It is just like the function list except that it takes keyword arguments and performs slot defaulting appropriate to the binop conceptual data type. Similarly, the selector functions binop-operator, binop-operand-1, and binop-operand-2 are essentially equivalent to <strong>car</strong>, <strong>cadr</strong>, and <strong>caddr</strong>, respectively. They might not be completely equivalent because, for example, an implementation would be justified in adding error-checking code to ensure that the argument to each selector function is a length-3 list.</p>
+<p><strong>defstruct</strong></p>
+<p>binop is a conceptual data type in that it is not made a part of the Common Lisp type system. <strong>typep</strong> does not recognize binop as a <em>type specifier</em> , and <strong>type-of</strong> returns list when given a binop structure. There is no way to distinguish a data structure constructed by make-binop from any other <em>list</em> that happens to have the correct structure.</p>
+<p>There is not any way to recover the structure name binop from a structure created by make-binop. This can only be done if the structure is named. A named structure has the property that, given an instance of the structure, the structure name (that names the type) can be reliably recovered. For structures defined with no <!-- -->:type<!-- --> option, the structure name actually becomes part of the Common Lisp data-type system. <strong>type-of</strong>, when applied to such a structure, returns the structure name as the <em>type</em> of the <em>object</em>; <strong>typep</strong> recognizes the structure name as a valid <em>type specifier</em> .</p>
+<p>For structures defined with a <!-- -->:type<!-- --> option, <strong>type-of</strong> returns a <em>type specifier</em> such as list or (vector t), depending on the type supplied to the <!-- -->:type<!-- --> option. The structure name does not become a valid <em>type specifier</em> . However, if the <!-- -->:named<!-- --> option is also supplied, then the first component of the structure (as created by a <strong>defstruct</strong> constructor function) always contains the structure name. This allows the structure name to be recovered from an instance of the structure and allows a reasonable predicate for the conceptual type to be defined: the automatically defined <em>name-p</em> predicate for the structure operates by first checking that its argument is of the proper type (<strong>list</strong>, (vector t), or whatever) and then checking whether the first component contains the appropriate type name.</p>
+<p>Consider the binop example shown above, modified only to include the <!-- -->:named<!-- --> option:</p>
+<p>(defstruct (binop (<!-- -->:type<!-- --> list) <!-- -->:named<!-- -->)</p>
+<p>(operator ’? <!-- -->:type<!-- --> symbol)</p>
+<p>operand-1</p>
+<p>operand-2) <em>→</em> BINOP</p>
+<p>As before, this defines a constructor function make-binop and three selector functions binop-operator, binop-operand-1, and binop-operand-2. It also defines a predicate binop-p. The effect of make-binop is now to construct a list of length four:</p>
+<p>(make-binop <!-- -->:operator<!-- --> ’+ <!-- -->:operand-1<!-- --> ’x <!-- -->:operand-2<!-- --> 5) <em>→</em> (BINOP + X 5)</p>
+<p>(make-binop <!-- -->:operand-2<!-- --> 4 <!-- -->:operator<!-- --> ’*) <em>→</em> (BINOP * NIL 4)</p>
+<p>The structure has the same layout as before except that the structure name binop is included as the first list element. The selector functions binop-operator, binop-operand-1, and binop-operand-2 are essentially equivalent to <strong>cadr</strong>, <strong>caddr</strong>, and <strong>cadddr</strong>, respectively. The predicate binop-p is more or less equivalent to this definition:</p>
+<p>(defun binop-p (x)</p>
+<p>(and (consp x) (eq (car x) ’binop))) <em>→</em> BINOP-P</p>
+<p>The name binop is still not a valid <em>type specifier</em> recognizable to <strong>typep</strong>, but at least there is a way of distinguishing binop structures from other similarly defined structures.</p>
+<p><strong>defstruct</strong></p>
+<p>:predicate</p>
+<p>This option takes one argument, which specifies the name of the type predicate. If the argument is not supplied or if the option itself is not supplied, the name of the predicate is made by concatenating the name of the structure to the string &quot;-P&quot;, interning the name in whatever <em>package</em> is current at the time <strong>defstruct</strong> is expanded. If the argument is provided and is <strong>nil</strong>, no predicate is defined. A predicate can be defined only if the structure is named; if <!-- -->:type<!-- --> is supplied and <!-- -->:named<!-- --> is not supplied, then <!-- -->:predicate<!-- --> must either be unsupplied or have the value <strong>nil</strong>.</p>
+<p>:print-function<!-- -->, <!-- -->:print-object</p>
+<p>The <!-- -->:print-function<!-- --> and <!-- -->:print-object<!-- --> options specify that a <strong>print-object</strong> <em>method</em> for <em>structures</em> of type <em>structure-name</em> should be generated. These options are not synonyms, but do perform a similar service; the choice of which option (<!-- -->:print-function<!-- --> or <!-- -->:print-object<!-- -->) is used affects how the function named <em>printer-name</em> is called. Only one of these options may be used, and these options may be used only if <!-- -->:type<!-- --> is not supplied.</p>
+<p>If the <!-- -->:print-function<!-- --> option is used, then when a structure of type <em>structure-name</em> is to be printed, the designated printer function is called on three <em>arguments</em>:</p>
+<p>– the structure to be printed (a <em>generalized instance</em> of <em>structure-name</em>).</p>
+<p>– a <em>stream</em> to print to.</p>
+<p>– an <em>integer</em> indicating the current depth. The magnitude of this integer may</p>
+<p>vary between <em>implementations</em>; however, it can reliably be compared against</p>
+<p><strong>*print-level*</strong> to determine whether depth abbreviation is appropriate.</p>
+<p>Specifying (<!-- -->:print-function<!-- --> <em>printer-name</em>) is approximately equivalent to specifying:</p>
+<p>(defmethod print-object ((object <em>structure-name</em>) stream)</p>
+<p>(funcall (function <em>printer-name</em>) object stream ⟨current-print-depth⟩))</p>
+<p>where the ⟨current-print-depth⟩ represents the printer’s belief of how deep it is currently printing. It is <em>implementation-dependent</em> whether ⟨current-print-depth⟩ is always 0 and <em>*print-level*</em>, if <em>non-nil</em>, is re-bound to successively smaller values as printing descends recursively, or whether <em>current-print-depth</em> varies in value as printing descends recursively and <em>*print-level*</em> remains constant during the same traversal.</p>
+<p>If the <!-- -->:print-object<!-- --> option is used, then when a structure of type <em>structure-name</em> is to be printed, the designated printer function is called on two arguments:</p>
+<p>– the structure to be printed.</p>
+<p>– the stream to print to.</p>
+<p>Specifying (<!-- -->:print-object<!-- --> <em>printer-name</em>) is equivalent to specifying:</p>
+<p><strong>defstruct</strong></p>
+<p>(defmethod print-object ((object <em>structure-name</em>) stream)</p>
+<p>(funcall (function <em>printer-name</em>) object stream))</p>
+<p>If no <!-- -->:type<!-- --> option is supplied, and if either a <!-- -->:print-function<!-- --> or a <!-- -->:print-object<!-- --> option is supplied, and if no <em>printer-name</em> is supplied, then a <strong>print-object</strong> <em>method specialized</em> for <em>structure-name</em> is generated that calls a function that implements the default printing behavior for structures using #S notation; see Section 22.1.3.12 (Printing Structures).</p>
+<p>If neither a <!-- -->:print-function<!-- --> nor a <!-- -->:print-object<!-- --> option is supplied, then <strong>defstruct</strong> does not generate a <strong>print-object</strong> <em>method specialized</em> for <em>structure-name</em> and some default behavior is inherited either from a structure named in an <!-- -->:include<!-- --> option or from the default behavior for printing structures; see the <em>function</em> <strong>print-object</strong> and Section 22.1.3.12 (Printing Structures).</p>
+<p>When <strong>*print-circle*</strong> is <em>true</em>, a user-defined print function can print <em>objects</em> to the supplied <em>stream</em> using <strong>write</strong>, <strong>prin1</strong>, <strong>princ</strong>, or <strong>format</strong> and expect circularities to be detected and printed using the #<em>n</em># syntax. This applies to <em>methods</em> on <strong>print-object</strong> in addition to <!-- -->:print-function<!-- --> options. If a user-defined print function prints to a <em>stream</em> other than the one that was supplied, then circularity detection starts over for that <em>stream</em>. See the <em>variable</em> <strong>*print-circle*</strong>.</p>
+<p>:type</p>
+<p>:type<!-- --> explicitly specifies the representation to be used for the structure. Its argument must be one of these <em>types</em>:</p>
+<p><strong>vector</strong></p>
+<p>This produces the same result as specifying (vector t). The structure is</p>
+<p>represented as a general <em>vector</em> , storing components as vector elements. The first</p>
+<p>component is vector element 1 if the structure is <!-- -->:named<!-- -->, and element 0 otherwise.</p>
+<p>(vector <em>element-type</em>)</p>
+<p>The structure is represented as a (possibly specialized) <em>vector</em> , storing components</p>
+<p>as vector elements. Every component must be of a <em>type</em> that can be stored in</p>
+<p>a <em>vector</em> of the <em>type</em> specified. The first component is vector element 1 if the</p>
+<p>structure is <!-- -->:named<!-- -->, and element 0 otherwise. The structure can be <!-- -->:named<!-- --> only if</p>
+<p>the <em>type</em> <strong>symbol</strong> is a <em>subtype</em> of the supplied <em>element-type</em>.</p>
+<p><strong>list</strong></p>
+<p>The structure is represented as a <em>list</em>. The first component is the <em>cadr</em> if the</p>
+<p>structure is <!-- -->:named<!-- -->, and the <em>car</em> if it is not <!-- -->:named<!-- -->.</p>
+<p>Specifying this option has the effect of forcing a specific representation and of forcing the components to be stored in the order specified in <strong>defstruct</strong> in corresponding successive elements of the specified representation. It also prevents the structure name from becoming</p>
+<p><strong>defstruct</strong></p>
+<p>a valid <em>type specifier</em> recognizable by <strong>typep</strong>.</p>
+<p>For example:</p>
+<p>(defstruct (quux (<!-- -->:type<!-- --> list) <!-- -->:named<!-- -->) x y)</p>
+<p>should make a constructor that builds a <em>list</em> exactly like the one that <strong>list</strong> produces, with quux as its <em>car</em> .</p>
+<p>If this type is defined:</p>
+<p>(deftype quux () ’(satisfies quux-p))</p>
+<p>then this form</p>
+<p>(typep (make-quux) ’quux)</p>
+<p>should return precisely what this one does</p>
+<p>(typep (list ’quux nil nil) ’quux)</p>
+<p>If <!-- -->:type<!-- --> is not supplied, the structure is represented as an <em>object</em> of <em>type</em> <strong>structure-object</strong>.</p>
+<p><strong>defstruct</strong> without a <!-- -->:type<!-- --> option defines a <em>class</em> with the structure name as its name. The <em>metaclass</em> of structure <em>instances</em> is <strong>structure-class</strong>.</p>
+<p>The consequences of redefining a <strong>defstruct</strong> structure are undefined.</p>
+<p>In the case where no <strong>defstruct</strong> options have been supplied, the following functions are automatically defined to operate on instances of the new structure:</p>
+<p><strong>Predicate</strong></p>
+<p>A predicate with the name <em>structure-name</em>-p is defined to test membership in the structure type. The predicate (<em>structure-name</em>-p <em>object</em>) is <em>true</em> if an <em>object</em> is of this <em>type</em>; otherwise it is <em>false</em>. <strong>typep</strong> can also be used with the name of the new <em>type</em> to test whether an <em>object</em> belongs to the <em>type</em>. Such a function call has the form (typep <em>object</em> ’<em>structure-name</em>).</p>
+<p><strong>Component reader functions</strong></p>
+<p><em>Reader</em> functions are defined to <em>read</em> the components of the structure. For each slot name, there is a corresponding <em>reader</em> function with the name <em>structure-name</em>-<em>slot-name</em>. This function <em>reads</em> the contents of that slot. Each <em>reader</em> function takes one argument, which is an instance of the structure type. <strong>setf</strong> can be used with any of these <em>reader</em> functions to alter the slot contents.</p>
+<p><strong>Constructor function</strong></p>
+<p>A constructor function with the name make-<em>structure-name</em> is defined. This function creates and returns new instances of the structure type.</p>
+<p><strong>defstruct</strong></p>
+<p><strong>Copier function</strong></p>
+<p>A copier function with the name copy-<em>structure-name</em> is defined. The copier function takes an object of the structure type and creates a new object of the same type that is a copy of the first. The copier function creates a new structure with the same component entries as the original. Corresponding components of the two structure instances are <strong>eql</strong>.</p>
+<p>If a <strong>defstruct</strong> <em>form</em> appears as a <em>top level form</em>, the <em>compiler</em> must make the <em>structure type</em> name recognized as a valid <em>type</em> name in subsequent declarations (as for <strong>deftype</strong>) and make the structure slot readers known to <strong>setf</strong>. In addition, the <em>compiler</em> must save enough information about the <em>structure type</em> so that further <strong>defstruct</strong> definitions can use <!-- -->:include<!-- --> in a subsequent <strong>deftype</strong> in the same <em>file</em> to refer to the <em>structure type</em> name. The functions which <strong>defstruct</strong> generates are not defined in the compile time environment, although the <em>compiler</em> may save enough information about the functions to code subsequent calls inline. The #S <em>reader macro</em> might or might not recognize the newly defined <em>structure type</em> name at compile time.</p>
+<p><strong>Examples:</strong></p>
+<p>An example of a structure definition follows:</p>
+<p>(defstruct ship</p>
+<p>x-position</p>
+<p>y-position</p>
+<p>x-velocity</p>
+<p>y-velocity</p>
+<p>mass)</p>
+<p>This declares that every ship is an <em>object</em> with five named components. The evaluation of this form does the following:</p>
+<p>1. It defines ship-x-position to be a function of one argument, a ship, that returns the x-position of the ship; ship-y-position and the other components are given similar function definitions. These functions are called the <em>access</em> functions, as they are used to <em>access</em> elements of the structure.</p>
+<p>2. ship becomes the name of a <em>type</em> of which instances of ships are elements. ship becomes acceptable to <strong>typep</strong>, for example; (typep x ’ship) is <em>true</em> if x is a ship and false if x is any <em>object</em> other than a ship.</p>
+<p>3. A function named ship-p of one argument is defined; it is a predicate that is <em>true</em> if its argument is a ship and is <em>false</em> otherwise.</p>
+<p>4. A function called make-ship is defined that, when invoked, creates a data structure with five components, suitable for use with the <em>access</em> functions. Thus executing</p>
+<p>(setq ship2 (make-ship))</p>
+<p>sets ship2 to a newly created ship <em>object</em>. One can supply the initial values of any desired</p>
+<p><strong>defstruct</strong></p>
+<p>component in the call to make-ship by using keyword arguments in this way:</p>
+<p>(setq ship2 (make-ship <!-- -->:mass<!-- --> *default-ship-mass*</p>
+<p>:x-position<!-- --> 0</p>
+<p>:y-position<!-- --> 0))</p>
+<p>This constructs a new ship and initializes three of its components. This function is called the “constructor function” because it constructs a new structure.</p>
+<p>5. A function called copy-ship of one argument is defined that, when given a ship <em>object</em>, creates a new ship <em>object</em> that is a copy of the given one. This function is called the “copier function.”</p>
+<p><strong>setf</strong> can be used to alter the components of a ship:</p>
+<p>(setf (ship-x-position ship2) 100)</p>
+<p>This alters the x-position of ship2 to be 100. This works because <strong>defstruct</strong> behaves as if it generates an appropriate <strong>defsetf</strong> for each <em>access</em> function.</p>
+<p>;;;</p>
+<p>;;; Example 1</p>
+<p>;;; define town structure type</p>
+<p>;;; area, watertowers, firetrucks, population, elevation are its components</p>
+<p>;;;</p>
+<p>(defstruct town</p>
+<p>area</p>
+<p>watertowers</p>
+<p>(firetrucks 1 <!-- -->:type<!-- --> fixnum) ;an initialized slot</p>
+<p>population</p>
+<p>(elevation 5128 <!-- -->:read-only<!-- --> t)) ;a slot that can’t be changed</p>
+<p><em>→</em> TOWN</p>
+<p>;create a town instance</p>
+<p>(setq town1 (make-town <!-- -->:area<!-- --> 0 <!-- -->:watertowers<!-- --> 0)) <em>→</em> #S(TOWN...)</p>
+<p>;town’s predicate recognizes the new instance</p>
+<p>(town-p town1) <em>→ true</em></p>
+<p>;new town’s area is as specified by make-town</p>
+<p>(town-area town1) <em>→</em> 0</p>
+<p>;new town’s elevation has initial value</p>
+<p>(town-elevation town1) <em>→</em> 5128</p>
+<p>;setf recognizes reader function</p>
+<p>(setf (town-population town1) 99) <em>→</em> 99</p>
+<p>(town-population town1) <em>→</em> 99</p>
+<p>;copier function makes a copy of town1</p>
+<p>(setq town2 (copy-town town1)) <em>→</em> #S(TOWN...)</p>
+<p>(= (town-population town1) (town-population town2)) <em>→ true</em></p>
+<p>;since elevation is a read-only slot, its value can be set only</p>
+<p><strong>defstruct</strong></p>
+<p>;when the structure is created</p>
+<p>(setq town3 (make-town <!-- -->:area<!-- --> 0 <!-- -->:watertowers<!-- --> 3 <!-- -->:elevation<!-- --> 1200)) <em>→</em> #S(TOWN...)</p>
+<p>;;;</p>
+<p>;;; Example 2</p>
+<p>;;; define clown structure type</p>
+<p>;;; this structure uses a nonstandard prefix</p>
+<p>;;;</p>
+<p>(defstruct (clown (<!-- -->:conc-name<!-- --> bozo-))</p>
+<p>(nose-color ’red)</p>
+<p>frizzy-hair-p polkadots) <em>→</em> CLOWN</p>
+<p>(setq funny-clown (make-clown)) <em>→</em> #S(CLOWN)</p>
+<p>;use non-default reader name</p>
+<p>(bozo-nose-color funny-clown) <em>→</em> RED</p>
+<p>(defstruct (klown (<!-- -->:constructor<!-- --> make-up-klown) ;similar def using other (<!-- -->:copier<!-- --> clone-klown) ;customizing keywords</p>
+<p>(<!-- -->:predicate<!-- --> is-a-bozo-p))</p>
+<p>nose-color frizzy-hair-p polkadots) <em>→</em> klown</p>
+<p>;custom constructor now exists</p>
+<p>(fboundp ’make-up-klown) <em>→ true</em></p>
+<p>;;;</p>
+<p>;;; Example 3</p>
+<p>;;; define a vehicle structure type</p>
+<p>;;; then define a truck structure type that includes</p>
+<p>;;; the vehicle structure</p>
+<p>;;;</p>
+<p>(defstruct vehicle name year (diesel t <!-- -->:read-only<!-- --> t)) <em>→</em> VEHICLE (defstruct (truck (<!-- -->:include<!-- --> vehicle (year 79)))</p>
+<p>load-limit</p>
+<p>(axles 6)) <em>→</em> TRUCK</p>
+<p>(setq x (make-truck <!-- -->:name<!-- --> ’mac <!-- -->:diesel<!-- --> t <!-- -->:load-limit<!-- --> 17))</p>
+<p><em>→</em> #S(TRUCK...)</p>
+<p>;vehicle readers work on trucks</p>
+<p>(vehicle-name x)</p>
+<p><em>→</em> MAC</p>
+<p>;default taken from <!-- -->:include<!-- --> clause</p>
+<p>(vehicle-year x)</p>
+<p><em>→</em> 79</p>
+<p>(defstruct (pickup (<!-- -->:include<!-- --> truck)) ;pickup type includes truck camper long-bed four-wheel-drive) <em>→</em> PICKUP</p>
+<p>(setq x (make-pickup <!-- -->:name<!-- --> ’king <!-- -->:long-bed<!-- --> t)) <em>→</em> #S(PICKUP...) ;<!-- -->:include<!-- --> default inherited</p>
+<p>(pickup-year x) <em>→</em> 79</p>
+<p>;;;</p>
+<p>;;; Example 4</p>
+<p>;;; use of BOA constructors</p>
+<p>;;;</p>
+<p>(defstruct (dfs-boa ;BOA constructors</p>
+<p>(<!-- -->:constructor<!-- --> make-dfs-boa (a b c))</p>
+<p>(<!-- -->:constructor<!-- --> create-dfs-boa</p>
+<p>(a &amp;optional b (c ’cc) &amp;rest d &amp;aux e (f ’ff))))</p>
+<p>a b c d e f) <em>→</em> DFS-BOA</p>
+<p>;a, b, and c set by position, and the rest are uninitialized</p>
+<p>(setq x (make-dfs-boa 1 2 3)) <em>→</em> #(DFS-BOA...)</p>
+<p>(dfs-boa-a x) <em>→</em> 1</p>
+<p>;a and b set, c and f defaulted</p>
+<p>(setq x (create-dfs-boa 1 2)) <em>→</em> #(DFS-BOA...)</p>
+<p>(dfs-boa-b x) <em>→</em> 2</p>
+<p>(eq (dfs-boa-c x) ’cc) <em>→ true</em></p>
+<p>;a, b, and c set, and the rest are collected into d</p>
+<p>(setq x (create-dfs-boa 1 2 3 4 5 6)) <em>→</em> #(DFS-BOA...)</p>
+<p>(dfs-boa-d x) <em>→</em> (4 5 6)</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>If any two slot names (whether present directly or inherited by the <!-- -->:include<!-- --> option) are the <em>same</em> under <strong>string=</strong>, <strong>defstruct</strong> should signal an error of <em>type</em> <strong>program-error</strong>.</p>
+<p>The consequences are undefined if the <em>included-structure-name</em> does not name a <em>structure type</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>documentation</strong>, <strong>print-object</strong>, <strong>setf</strong>, <strong>subtypep</strong>, <strong>type-of</strong>, <strong>typep</strong>, Section 3.2 (Compilation)</p>
+<p><strong>Notes:</strong></p>
+<p>The <em>printer-name</em> should observe the values of such printer-control variables as <strong>*print-escape*</strong>.</p>
+<p>The restriction against issuing a warning for type mismatches between a <em>slot-initform</em> and the corresponding slot’s <!-- -->:type<!-- --> option is necessary because a <em>slot-initform</em> must be specified in order to specify slot options; in some cases, no suitable default may exist.</p>
+<p>The mechanism by which <strong>defstruct</strong> arranges for slot accessors to be usable with <strong>setf</strong> is <em>implementation-dependent</em>; for example, it may use <em>setf functions</em>, <em>setf expanders</em>, or some other <em>implementation-dependent</em> mechanism known to that <em>implementation</em>’s <em>code</em> for <strong>setf</strong>.</p>
+<p><strong>copy-structure</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>copy-structure</strong> <em>structure → copy</em></p>
+<p><strong>copy-structure</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>structure</em>—a <em>structure</em>.</p>
+<p><em>copy</em>—a copy of the <em>structure</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns a <em>copy</em><sub>6</sub> of the <em>structure</em>.</p>
+<p>Only the <em>structure</em> itself is copied; not the values of the slots.</p>
+<p><strong>See Also:</strong></p>
+<p>the <!-- -->:copier<!-- --> option to <strong>defstruct</strong></p>
+<p><strong>Notes:</strong></p>
+<p>The <em>copy</em> is the <em>same</em> as the given <em>structure</em> under <strong>equalp</strong>, but not under <strong>equal</strong>.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/lisp-docs/cl-language-reference/tree/develop/docs/chap-8/intro.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/cl-language-reference/docs/category/8-structures"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">8. Structures</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/cl-language-reference/docs/category/9-conditions"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">9. Conditions</div></a></nav></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/docs/intro">Cl Technical Reference</a></li><li class="footer__item"><a href="https://lisp-docs.github.io/" target="_blank" rel="noopener noreferrer" class="footer__link-item">CL Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/common-lisp" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discord.gg/hhk46CE" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.reddit.com/r/common_lisp" target="_blank" rel="noopener noreferrer" class="footer__link-item">Reddit<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://irclog.tymoon.eu/libera/commonlisp" target="_blank" rel="noopener noreferrer" class="footer__link-item">IRC<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/lisp-docs/cl-language-reference/" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 LISP Docs, MIT License. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

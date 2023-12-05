@@ -4,10 +4,25 @@
         <title>Common Lisp (New) Language Reference Blog</title>
         <link>https://lisp-docs.github.io/cl-language-reference/blog</link>
         <description>Common Lisp (New) Language Reference Blog</description>
-        <lastBuildDate>Thu, 30 Nov 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 Dec 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Dicionary Pages Broken Up]]></title>
+            <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/03/</link>
+            <guid>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/03/</guid>
+            <pubDate>Sun, 03 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Dicionary Sections]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="dicionary-sections">Dicionary Sections<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/03/#dicionary-sections" class="hash-link" aria-label="Direct link to Dicionary Sections" title="Direct link to Dicionary Sections">​</a></h2>
+<p>As of now, 2023/12/03, all the dicionary pages have been broken up into their particular directories with a page per entry.</p>
+<p>However there are still a few that need to be manually fixed because of problems with parsing the text with regex for certain exceptions.</p>
+<p>Nevertheless, this improves the search results dramatically! The reference should now be much easier to use!</p>
+<p>I also added a <a href="https://lisp-docs.github.io/cl-language-reference/dictionary-todo">Dicionary Item's To Do Page</a> for adding specific examples.</p>
+<p>Cheers!</p>]]></content:encoded>
+            <category>status</category>
+            <category>beginning</category>
+        </item>
         <item>
             <title><![CDATA[Search Implemented!]]></title>
             <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/11/30/update</link>

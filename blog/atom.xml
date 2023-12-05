@@ -2,11 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lisp-docs.github.io/cl-language-reference/blog</id>
     <title>Common Lisp (New) Language Reference Blog</title>
-    <updated>2023-11-30T00:00:00.000Z</updated>
+    <updated>2023-12-03T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/blog"/>
     <subtitle>Common Lisp (New) Language Reference Blog</subtitle>
     <icon>https://lisp-docs.github.io/cl-language-reference/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Dicionary Pages Broken Up]]></title>
+        <id>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/03/</id>
+        <link href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/03/"/>
+        <updated>2023-12-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Dicionary Sections]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="dicionary-sections">Dicionary Sections<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/03/#dicionary-sections" class="hash-link" aria-label="Direct link to Dicionary Sections" title="Direct link to Dicionary Sections">​</a></h2>
+<p>As of now, 2023/12/03, all the dicionary pages have been broken up into their particular directories with a page per entry.</p>
+<p>However there are still a few that need to be manually fixed because of problems with parsing the text with regex for certain exceptions.</p>
+<p>Nevertheless, this improves the search results dramatically! The reference should now be much easier to use!</p>
+<p>I also added a <a href="https://lisp-docs.github.io/cl-language-reference/dictionary-todo">Dicionary Item's To Do Page</a> for adding specific examples.</p>
+<p>Cheers!</p>]]></content>
+        <author>
+            <name>Daniel N</name>
+            <uri>https://github.com/daninus14</uri>
+        </author>
+        <category label="status" term="status"/>
+        <category label="beginning" term="beginning"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Search Implemented!]]></title>
         <id>https://lisp-docs.github.io/cl-language-reference/blog/2023/11/30/update</id>

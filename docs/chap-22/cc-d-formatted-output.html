@@ -2,18 +2,18 @@
 <html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-chap-22/cc-d-formatted-output" data-has-hydrated="false">
 <head>
 <meta charset="UTF-8">
-<meta name="generator" content="Docusaurus v3.0.0">
+<meta name="generator" content="Docusaurus v3.0.1">
 <title data-rh="true">22.3 Formatted Output | Common Lisp (New) Language Reference</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://lisp-docs.github.io/cl-language-reference/img/1024px-Lisp_logo.svg.png"><meta data-rh="true" name="twitter:image" content="https://lisp-docs.github.io/cl-language-reference/img/1024px-Lisp_logo.svg.png"><meta data-rh="true" property="og:url" content="https://lisp-docs.github.io/cl-language-reference/docs/chap-22/cc-d-formatted-output"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="22.3 Formatted Output | Common Lisp (New) Language Reference"><meta data-rh="true" name="description" content="22.3.1 FORMAT Basic Output"><meta data-rh="true" property="og:description" content="22.3.1 FORMAT Basic Output"><link data-rh="true" rel="icon" href="/cl-language-reference/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-22/cc-d-formatted-output"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-22/cc-d-formatted-output" hreflang="en"><link data-rh="true" rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/docs/chap-22/cc-d-formatted-output" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://C1F2Q5VM6X-dsn.algolia.net" crossorigin="anonymous"><link rel="alternate" type="application/rss+xml" href="/cl-language-reference/blog/rss.xml" title="Common Lisp (New) Language Reference RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/cl-language-reference/blog/atom.xml" title="Common Lisp (New) Language Reference Atom Feed">
 
 
 
-<link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.bfbeeb5f.css">
-<script src="/cl-language-reference/assets/js/runtime~main.8e02c5fc.js" defer="defer"></script>
-<script src="/cl-language-reference/assets/js/main.0f661428.js" defer="defer"></script>
+<link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.ad20780e.css">
+<script src="/cl-language-reference/assets/js/runtime~main.eaed6ca4.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/main.e3f87041.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
-<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/cl-language-reference/"><div class="navbar__logo"><img src="/cl-language-reference/img/logo.svg" alt="LISP Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/cl-language-reference/img/logo.svg" alt="LISP Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CL Technical Reference </b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/cl-language-reference/docs/intro">The CL Reference</a><a class="navbar__item navbar__link" href="/cl-language-reference/contribute">Contribute!</a><a class="navbar__item navbar__link" href="/cl-language-reference/todo">TODO</a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/cl-language-reference/blog">Blog</a><a href="https://github.com/lisp-docs/cl-language-reference/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/intro">Introduction</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/contents-and-figures">Contents and Figures</a><button aria-label="Expand sidebar category &#x27;Contents and Figures&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/1-introduction">1. Introduction</a><button aria-label="Expand sidebar category &#x27;1. Introduction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/2-syntax">2. Syntax</a><button aria-label="Expand sidebar category &#x27;2. Syntax&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/3-evaluation-and-compilation">3. Evaluation and Compilation</a><button aria-label="Expand sidebar category &#x27;3. Evaluation and Compilation&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/4-types-and-classes">4. Types and Classes</a><button aria-label="Expand sidebar category &#x27;4. Types and Classes&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/5-data-and-control-flow">5. Data and Control Flow</a><button aria-label="Expand sidebar category &#x27;5. Data and Control Flow&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/6-iteration">6. Iteration</a><button aria-label="Expand sidebar category &#x27;6. Iteration&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/7-objects">7. Objects</a><button aria-label="Expand sidebar category &#x27;7. Objects&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/8-structures">8. Structures</a><button aria-label="Expand sidebar category &#x27;8. Structures&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/9-conditions">9. Conditions</a><button aria-label="Expand sidebar category &#x27;9. Conditions&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/10-symbols">10. Symbols</a><button aria-label="Expand sidebar category &#x27;10. Symbols&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/11-packages">11. Packages</a><button aria-label="Expand sidebar category &#x27;11. Packages&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/12-numbers">12. Numbers</a><button aria-label="Expand sidebar category &#x27;12. Numbers&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/13-characters">13. Characters</a><button aria-label="Expand sidebar category &#x27;13. Characters&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/14-conses">14. Conses</a><button aria-label="Expand sidebar category &#x27;14. Conses&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/15-arrays">15. Arrays</a><button aria-label="Expand sidebar category &#x27;15. Arrays&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/16-strings">16. Strings</a><button aria-label="Expand sidebar category &#x27;16. Strings&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/17-sequences">17. Sequences</a><button aria-label="Expand sidebar category &#x27;17. Sequences&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/18-hash-tables">18. Hash Tables</a><button aria-label="Expand sidebar category &#x27;18. Hash Tables&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/19-filenames">19. Filenames</a><button aria-label="Expand sidebar category &#x27;19. Filenames&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/20-files">20. Files</a><button aria-label="Expand sidebar category &#x27;20. Files&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/21-streams">21. Streams</a><button aria-label="Expand sidebar category &#x27;21. Streams&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/cl-language-reference/docs/category/22-printer">22. Printer</a><button aria-label="Collapse sidebar category &#x27;22. Printer&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cl-language-reference/docs/chap-22/cc-b-the-lisp-printer">22.1 The Lisp Printer</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cl-language-reference/docs/chap-22/cc-c-the-lisp-pretty-printer">22.2 The Lisp Pretty Printer</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/cl-language-reference/docs/chap-22/cc-d-formatted-output">22.3 Formatted Output</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cl-language-reference/docs/chap-22/cc-e-dictionary">22.4 Dictionary</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" tabindex="0" href="/cl-language-reference/docs/category/225-printer-dictionary">22.5 Printer Dictionary</a><button aria-label="Expand sidebar category &#x27;22.5 Printer Dictionary&#x27;" type="button" class="clean-btn menu__caret"></button></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/23-reader">23. Reader</a><button aria-label="Expand sidebar category &#x27;23. Reader&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/24-system-construction">24. System Construction</a><button aria-label="Expand sidebar category &#x27;24. System Construction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/25-environment">25. Environment</a><button aria-label="Expand sidebar category &#x27;25. Environment&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/26-glossary">26. Glossary</a><button aria-label="Expand sidebar category &#x27;26. Glossary&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/a-appendix">A. Appendix</a><button aria-label="Expand sidebar category &#x27;A. Appendix&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/code-blocks-double-slashes">Code Blocks TODO Fixes</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/code-blocks">code-blocks</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/cl-language-reference/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/cl-language-reference/docs/category/22-printer"><span itemprop="name">22. Printer</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">22.3 Formatted Output</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>22.3 Formatted Output</h1>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/cl-language-reference/"><div class="navbar__logo"><img src="/cl-language-reference/img/logo.svg" alt="LISP Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/cl-language-reference/img/logo.svg" alt="LISP Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CL Technical Reference </b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/cl-language-reference/docs/intro">The CL Reference</a><a class="navbar__item navbar__link" href="/cl-language-reference/contribute">Contribute!</a><a class="navbar__item navbar__link" href="/cl-language-reference/todo">TODO</a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/cl-language-reference/blog">Blog</a><a href="https://github.com/lisp-docs/cl-language-reference/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/intro">Introduction</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/contents-and-figures">Contents and Figures</a><button aria-label="Expand sidebar category &#x27;Contents and Figures&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/1-introduction">1. Introduction</a><button aria-label="Expand sidebar category &#x27;1. Introduction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/2-syntax">2. Syntax</a><button aria-label="Expand sidebar category &#x27;2. Syntax&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/3-evaluation-and-compilation">3. Evaluation and Compilation</a><button aria-label="Expand sidebar category &#x27;3. Evaluation and Compilation&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/4-types-and-classes">4. Types and Classes</a><button aria-label="Expand sidebar category &#x27;4. Types and Classes&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/5-data-and-control-flow">5. Data and Control Flow</a><button aria-label="Expand sidebar category &#x27;5. Data and Control Flow&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/6-iteration">6. Iteration</a><button aria-label="Expand sidebar category &#x27;6. Iteration&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/7-objects">7. Objects</a><button aria-label="Expand sidebar category &#x27;7. Objects&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/8-structures">8. Structures</a><button aria-label="Expand sidebar category &#x27;8. Structures&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/9-conditions">9. Conditions</a><button aria-label="Expand sidebar category &#x27;9. Conditions&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/10-symbols">10. Symbols</a><button aria-label="Expand sidebar category &#x27;10. Symbols&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/11-packages">11. Packages</a><button aria-label="Expand sidebar category &#x27;11. Packages&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/12-numbers">12. Numbers</a><button aria-label="Expand sidebar category &#x27;12. Numbers&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/13-characters">13. Characters</a><button aria-label="Expand sidebar category &#x27;13. Characters&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/14-conses">14. Conses</a><button aria-label="Expand sidebar category &#x27;14. Conses&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/15-arrays">15. Arrays</a><button aria-label="Expand sidebar category &#x27;15. Arrays&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/16-strings">16. Strings</a><button aria-label="Expand sidebar category &#x27;16. Strings&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/17-sequences">17. Sequences</a><button aria-label="Expand sidebar category &#x27;17. Sequences&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/18-hash-tables">18. Hash Tables</a><button aria-label="Expand sidebar category &#x27;18. Hash Tables&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/19-filenames">19. Filenames</a><button aria-label="Expand sidebar category &#x27;19. Filenames&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/20-files">20. Files</a><button aria-label="Expand sidebar category &#x27;20. Files&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/21-streams">21. Streams</a><button aria-label="Expand sidebar category &#x27;21. Streams&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/cl-language-reference/docs/category/22-printer">22. Printer</a><button aria-label="Collapse sidebar category &#x27;22. Printer&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cl-language-reference/docs/chap-22/cc-b-the-lisp-printer">22.1 The Lisp Printer</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cl-language-reference/docs/chap-22/cc-c-the-lisp-pretty-printer">22.2 The Lisp Pretty Printer</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/cl-language-reference/docs/chap-22/cc-d-formatted-output">22.3 Formatted Output</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/23-reader">23. Reader</a><button aria-label="Expand sidebar category &#x27;23. Reader&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/24-system-construction">24. System Construction</a><button aria-label="Expand sidebar category &#x27;24. System Construction&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/25-environment">25. Environment</a><button aria-label="Expand sidebar category &#x27;25. Environment&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/26-glossary">26. Glossary</a><button aria-label="Expand sidebar category &#x27;26. Glossary&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/cl-language-reference/docs/category/a-appendix">A. Appendix</a><button aria-label="Expand sidebar category &#x27;A. Appendix&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/code-blocks-double-slashes">Code Blocks TODO Fixes</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cl-language-reference/docs/code-blocks">code-blocks</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/cl-language-reference/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/cl-language-reference/docs/category/22-printer"><span itemprop="name">22. Printer</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">22.3 Formatted Output</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>22.3 Formatted Output</h1>
 <!-- -->
 <p><strong>format</strong> is useful for producing nicely formatted text, producing good-looking messages, and so on. <strong>format</strong> can generate and return a <em>string</em> or output to <em>destination</em>.</p>
 <p>The <em>control-string</em> argument to <strong>format</strong> is actually a <em>format control</em>. That is, it can be either a <em>format string</em> or a <em>function</em>, for example a <em>function</em> returned by the <strong>formatter</strong> <em>macro</em>.</p>
@@ -25,7 +25,8 @@
 <p>In place of a prefix parameter to a directive, V (or v) can be used. In this case, <strong>format</strong> takes an argument from <em>args</em> as a parameter to the directive. The argument should be an <em>integer</em> or <em>character</em> . If the <em>arg</em> used by a V parameter is <strong>nil</strong>, the effect is as if the parameter had been</p>
 <p>omitted. # can be used in place of a prefix parameter; it represents the number of <em>args</em> remaining to be processed. When used within a recursive format, in the context of ~? or ~{, the # prefix parameter represents the number of <em>format arguments</em> remaining within the recursive call.</p>
 <p>Examples of <em>format strings</em>:</p>
-<table><thead><tr><th style="text-align:center">&lt;p&gt;&quot;~S&quot; ;This is an S directive with no parameters or modifiers. &quot;<del>3,-4:@s&quot; ;This is an S directive with two parameters, 3 and -4, ; and both the <em>colon</em> and <em>at-sign</em> flags. &lt;/p&gt;&lt;p&gt;&quot;</del>,+4S&quot; ;Here the first prefix parameter is omitted and takes ; on its default value, while the second parameter is 4.&lt;/p&gt;</th></tr></thead></table>
+<p>|</p><p>&quot;~S&quot; ;This is an S directive with no parameters or modifiers. &quot;~3,-4:@s&quot; ;This is an S directive with two parameters, 3 and -4, ; and both the <em>colon</em> and <em>at-sign</em> flags. </p><p>&quot;~,+4S&quot; ;Here the first prefix parameter is omitted and takes ; on its default value, while the second parameter is 4.</p>|<p></p>
+<p>| :-: |</p>
 <p><strong>Figure 22–6. Examples of format control strings</strong></p>
 <p><strong>format</strong> sends the output to <em>destination</em>. If <em>destination</em> is <strong>nil</strong>, <strong>format</strong> creates and returns a <em>string</em></p>
 <p>containing the output from <em>control-string</em>. If <em>destination</em> is <em>non-nil</em>, it must be a <em>string</em> with a <em>fill pointer</em> , a <em>stream</em>, or the symbol <strong>t</strong>. If <em>destination</em> is a <em>string</em> with a <em>fill pointer</em> , the output is added to the end of the <em>string</em>. If <em>destination</em> is a <em>stream</em>, the output is sent to that <em>stream</em>. If <em>destination</em> is <strong>t</strong>, the output is sent to <em>standard output</em>.</p>
@@ -45,7 +46,7 @@
 <p>;; This next example assumes an implementation-defined &quot;Control&quot; attribute.</p>
 <p>(format nil &quot;~<!-- -->:C<!-- -->&quot; #\Control-Space)</p>
 <p><em>→</em> &quot;Control-Space&quot;</p>
-<p>&lt;i&gt;&lt;sup&gt;or&lt;/sup&gt;→&lt;/i&gt; &quot;c-Space&quot;</p>
+<p><i><sup>or</sup>→</i> &quot;c-Space&quot;</p>
 <p>~:@C prints what ~<!-- -->:C<!-- --> would, and then if the <em>character</em> requires unusual shift keys on the keyboard to type it, this fact is mentioned. For example,</p>
 <p>(format nil &quot;~:@C&quot; #\Control-Partial) <em>→</em> &quot;Control-<em>∂</em> (Top-F)&quot;</p>
 <p>This is the format used for telling the user about a key he is expected to type, in prompts, for instance. The precise output may depend not only on the implementation, but on the particular I/O devices in use.</p>
@@ -109,12 +110,12 @@
 <!-- -->
 <p>The next <em>arg</em> is printed as a <em>float</em>.</p>
 <p>The full form is ~<em>w</em>,<em>d</em>,<em>k</em>,<em>overflowchar</em>,<em>padchar</em>F. The parameter <em>w</em> is the width of the field to be printed; <em>d</em> is the number of digits to print after the decimal point; <em>k</em> is a scale factor that defaults to zero.</p>
-<p>Exactly &lt;i&gt;w&lt;/i&gt; characters will be output. First, leading copies of the character &lt;i&gt;padchar&lt;/i&gt; (which defaults to a space) are printed, if necessary, to pad the field on the left. If the &lt;i&gt;arg&lt;/i&gt; is negative, then a minus sign is printed; if the &lt;i&gt;arg&lt;/i&gt; is not negative, then a plus sign is printed if and only if the @ modifier was supplied. Then a sequence of digits, containing a single embedded decimal point, is printed; this represents the magnitude of the value of &lt;i&gt;arg&lt;/i&gt; times 10&lt;i&gt;&lt;sup&gt;k&lt;/sup&gt;&lt;/i&gt;, rounded to &lt;i&gt;d&lt;/i&gt; fractional digits. When rounding up and rounding down would produce printed values equidistant from the scaled value of &lt;i&gt;arg&lt;/i&gt;, then the implementation is free to use either one. For example, printing the argument 6.375 using the format ~4,2F may correctly produce either 6.37 or 6.38. Leading zeros are not permitted, except that a single zero digit is output before the decimal point if the printed value is less than one, and this single zero digit is not output at all if &lt;i&gt;w&lt;/i&gt;=&lt;i&gt;d&lt;/i&gt;+1.</p>
+<p>Exactly <i>w</i> characters will be output. First, leading copies of the character <i>padchar</i> (which defaults to a space) are printed, if necessary, to pad the field on the left. If the <i>arg</i> is negative, then a minus sign is printed; if the <i>arg</i> is not negative, then a plus sign is printed if and only if the @ modifier was supplied. Then a sequence of digits, containing a single embedded decimal point, is printed; this represents the magnitude of the value of <i>arg</i> times 10<i><sup>k</sup></i>, rounded to <i>d</i> fractional digits. When rounding up and rounding down would produce printed values equidistant from the scaled value of <i>arg</i>, then the implementation is free to use either one. For example, printing the argument 6.375 using the format ~4,2F may correctly produce either 6.37 or 6.38. Leading zeros are not permitted, except that a single zero digit is output before the decimal point if the printed value is less than one, and this single zero digit is not output at all if <i>w</i>=<i>d</i>+1.</p>
 <p>If it is impossible to print the value in the required format in a field of width <em>w</em>, then one of two actions is taken. If the parameter <em>overflowchar</em> is supplied, then <em>w</em> copies of that parameter are printed instead of the scaled value of <em>arg</em>. If the <em>overflowchar</em> parameter is omitted, then the scaled value is printed using more than <em>w</em> characters, as many more as may be needed.</p>
 <p>If the <em>w</em> parameter is omitted, then the field is of variable width. In effect, a value is chosen for <em>w</em> in such a way that no leading pad characters need to be printed and exactly <em>d</em> characters will follow the decimal point. For example, the directive ~,2F will print exactly two digits after the decimal point and as many as necessary before the decimal point.</p>
 <p>If the parameter <em>d</em> is omitted, then there is no constraint on the number of digits to appear after the decimal point. A value is chosen for <em>d</em> in such a way that as many digits as possible may be printed subject to the width constraint imposed by the parameter <em>w</em> and the constraint that no</p>
 <p>trailing zero digits may appear in the fraction, except that if the fraction to be printed is zero, then a single zero digit should appear after the decimal point if permitted by the width constraint.</p>
-<p>If both &lt;i&gt;w&lt;/i&gt; and &lt;i&gt;d&lt;/i&gt; are omitted, then the effect is to print the value using ordinary free-format output; &lt;b&gt;prin1&lt;/b&gt; uses this format for any number whose magnitude is either zero or between 10&lt;sup&gt;&lt;i&gt;−&lt;/i&gt;3&lt;/sup&gt;(inclusive) and 10&lt;sup&gt;7&lt;/sup&gt;(exclusive).</p>
+<p>If both <i>w</i> and <i>d</i> are omitted, then the effect is to print the value using ordinary free-format output; <b>prin1</b> uses this format for any number whose magnitude is either zero or between 10<sup><i>−</i>3</sup>(inclusive) and 10<sup>7</sup>(exclusive).</p>
 <p>If <em>w</em> is omitted, then if the magnitude of <em>arg</em> is so large (or, if <em>d</em> is also omitted, so small) that more than 100 digits would have to be printed, then an implementation is free, at its discretion, to print the number using exponential notation instead, as if by the directive ~E (with all parameters to ~E defaulted, not taking their values from the ~F directive).</p>
 <p>If <em>arg</em> is a <em>rational</em> number, then it is coerced to be a <em>single float</em> and then printed. Alternatively, an implementation is permitted to process a <em>rational</em> number by any other method that has essentially the same behavior but avoids loss of precision or overflow because of the coercion. If <em>w</em> and <em>d</em> are not supplied and the number has no exact decimal representation, for example 1/3, some precision cutoff must be chosen by the implementation since only a finite number of digits may be printed.</p>
 <p>If <em>arg</em> is a <em>complex</em> number or some non-numeric <em>object</em>, then it is printed using the format directive ~<em>w</em>D, thereby printing it in decimal radix and a minimum field width of <em>w</em>.</p>
@@ -129,14 +130,14 @@
 <p>If the <em>w</em> parameter is omitted, then the field is of variable width. In effect a value is chosen for <em>w</em> in such a way that no leading pad characters need to be printed.</p>
 <p>If the parameter <em>d</em> is omitted, then there is no constraint on the number of digits to appear. A value is chosen for <em>d</em> in such a way that as many digits as possible may be printed subject to the width constraint imposed by the parameter <em>w</em>, the constraint of the scale factor <em>k</em>, and the constraint that no trailing zero digits may appear in the fraction, except that if the fraction to be printed is zero then a single zero digit should appear after the decimal point.</p>
 <p>If the parameter <em>e</em> is omitted, then the exponent is printed using the smallest number of digits necessary to represent its value.</p>
-<p>If all of &lt;i&gt;w&lt;/i&gt;, &lt;i&gt;d&lt;/i&gt;, and &lt;i&gt;e&lt;/i&gt; are omitted, then the effect is to print the value using ordinary free-format exponential-notation output; &lt;b&gt;prin1&lt;/b&gt; uses a similar format for any non-zero number whose magnitude is less than 10&lt;sup&gt;&lt;i&gt;−&lt;/i&gt;3&lt;/sup&gt; or greater than or equal to 10&lt;sup&gt;7&lt;/sup&gt;. The only difference is that the ~E directive always prints a plus or minus sign in front of the exponent, while &lt;b&gt;prin1&lt;/b&gt; omits the plus sign if the exponent is non-negative.</p>
+<p>If all of <i>w</i>, <i>d</i>, and <i>e</i> are omitted, then the effect is to print the value using ordinary free-format exponential-notation output; <b>prin1</b> uses a similar format for any non-zero number whose magnitude is less than 10<sup><i>−</i>3</sup> or greater than or equal to 10<sup>7</sup>. The only difference is that the ~E directive always prints a plus or minus sign in front of the exponent, while <b>prin1</b> omits the plus sign if the exponent is non-negative.</p>
 <p>If <em>arg</em> is a <em>rational</em> number, then it is coerced to be a <em>single float</em> and then printed. Alternatively, an implementation is permitted to process a <em>rational</em> number by any other method that has essentially the same behavior but avoids loss of precision or overflow because of the coercion. If <em>w</em> and <em>d</em> are unsupplied and the number has no exact decimal representation, for example 1/3, some precision cutoff must be chosen by the implementation since only a finite number of digits may be printed.</p>
 <p>If <em>arg</em> is a <em>complex</em> number or some non-numeric <em>object</em>, then it is printed using the format directive ~<em>w</em>D, thereby printing it in decimal radix and a minimum field width of <em>w</em>.</p>
 <p>~E binds <strong>*print-escape*</strong> to <em>false</em> and <strong>*print-readably*</strong> to <em>false</em>.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="22333-tilde-g">22.3.3.3 Tilde G<a href="#22333-tilde-g" class="hash-link" aria-label="Direct link to 22.3.3.3 Tilde G" title="Direct link to 22.3.3.3 Tilde G">​</a></h3>
 <!-- -->
 <p>The next <em>arg</em> is printed as a <em>float</em> in either fixed-format or exponential notation as appropriate.</p>
-<p>The full form is ~&lt;i&gt;w&lt;/i&gt;,&lt;i&gt;d&lt;/i&gt;,&lt;i&gt;e&lt;/i&gt;,&lt;i&gt;k&lt;/i&gt;,&lt;i&gt;overflowchar&lt;/i&gt;,&lt;i&gt;padchar&lt;/i&gt;,&lt;i&gt;exponentchar&lt;/i&gt;G. The format in which to print &lt;i&gt;arg&lt;/i&gt; depends on the magnitude (absolute value) of the &lt;i&gt;arg&lt;/i&gt;. Let &lt;i&gt;n&lt;/i&gt; be an integer such that 10&lt;sup&gt;&lt;i&gt;n−&lt;/i&gt;1&lt;/sup&gt; &lt;i&gt;≤ |arg|&lt;/i&gt; &lt; 10&lt;i&gt;&lt;sup&gt;n&lt;/sup&gt;&lt;/i&gt;. Let &lt;i&gt;ee&lt;/i&gt; equal &lt;i&gt;e&lt;/i&gt;+2, or 4 if &lt;i&gt;e&lt;/i&gt; is omitted. Let &lt;i&gt;ww&lt;/i&gt; equal &lt;i&gt;w−ee&lt;/i&gt;, or &lt;b&gt;nil&lt;/b&gt; if &lt;i&gt;w&lt;/i&gt; is omitted. If &lt;i&gt;d&lt;/i&gt; is omitted, first let &lt;i&gt;q&lt;/i&gt; be the number of digits needed to print &lt;i&gt;arg&lt;/i&gt; with no loss of information and without leading or trailing zeros; then let &lt;i&gt;d&lt;/i&gt; equal (max &lt;i&gt;q&lt;/i&gt; (min &lt;i&gt;n&lt;/i&gt; 7)). Let &lt;i&gt;dd&lt;/i&gt; equal &lt;i&gt;d−n&lt;/i&gt;.</p>
+<p>The full form is ~<i>w</i>,<i>d</i>,<i>e</i>,<i>k</i>,<i>overflowchar</i>,<i>padchar</i>,<i>exponentchar</i>G. The format in which to print <i>arg</i> depends on the magnitude (absolute value) of the <i>arg</i>. Let <i>n</i> be an integer such that 10<sup><i>n−</i>1</sup> <i>≤ |arg|</i> &lt; 10<i><sup>n</sup></i>. Let <i>ee</i> equal <i>e</i>+2, or 4 if <i>e</i> is omitted. Let <i>ww</i> equal <i>w−ee</i>, or <b>nil</b> if <i>w</i> is omitted. If <i>d</i> is omitted, first let <i>q</i> be the number of digits needed to print <i>arg</i> with no loss of information and without leading or trailing zeros; then let <i>d</i> equal (max <i>q</i> (min <i>n</i> 7)). Let <i>dd</i> equal <i>d−n</i>.</p>
 <p>If 0 <em>≤ dd ≤ d</em>, then <em>arg</em> is printed as if by the format directives</p>
 <p><del><em>ww</em>,<em>dd</em>„<em>overflowchar</em>,<em>padchar</em>F</del><em>ee</em>@T</p>
 <p>Note that the scale factor <em>k</em> is not passed to the ~F directive. For all other values of <em>dd</em>, <em>arg</em> is printed as if by the format directive</p>
@@ -183,7 +184,7 @@
 <p>If ~:&gt; is used to terminate a <del>&lt;...</del>&gt;, the directive is equivalent to a call to <strong>pprint-logical-block</strong>. The argument corresponding to the <del>&lt;...</del>:&gt; directive is treated in the same way as the <em>list</em> argument to <strong>pprint-logical-block</strong>, thereby providing automatic support for non-<em>list</em> arguments and the detection of circularity, sharing, and depth abbreviation. The portion of the <em>control-string</em> nested within the <del>&lt;...</del>:&gt; specifies the <!-- -->:prefix<!-- --> (or <!-- -->:per-line-prefix<!-- -->), <!-- -->:suffix<!-- -->, and body of the <strong>pprint-logical-block</strong>.</p>
 <p>The <em>control-string</em> portion enclosed by <del>&lt;...</del>:&gt; can be divided into segments <del>&lt;<em>prefix</em></del>;<em>body</em><del>;<em>suffix</em></del>:&gt; by ~; directives. If the first section is terminated by ~@;, it speci fies a per-line prefix rather than a simple prefix. The <em>prefix</em> and <em>suffix</em> cannot contain format directives. An error is signaled if either the prefix or suffix fails to be a constant string or if the enclosed portion is divided into more than three segments.</p>
 <p>If the enclosed portion is divided into only two segments, the <em>suffix</em> defaults to the null string. If the enclosed portion consists of only a single segment, both the <em>prefix</em> and the <em>suffix</em> default to the null string. If the <em>colon</em> modifier is used (<em>i.e.</em>, <del>:&lt;...</del>:&gt;), the <em>prefix</em> and <em>suffix</em> default to &quot;(&quot; and &quot;)&quot; (respectively) instead of the null string.</p>
-<p>The body segment can be any arbitrary &lt;i&gt;format string&lt;/i&gt;. This &lt;i&gt;format string&lt;/i&gt; is applied to the elements of the list corresponding to the <del>&lt;...</del>:&gt; directive as a whole. Elements are extracted from this list using &lt;b&gt;pprint-pop&lt;/b&gt;, thereby providing automatic support for malformed lists, and the detection of circularity, sharing, and length abbreviation. Within the body segment, ~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; acts like &lt;b&gt;pprint-exit-if-list-exhausted&lt;/b&gt;.</p>
+<p>The body segment can be any arbitrary <i>format string</i>. This <i>format string</i> is applied to the elements of the list corresponding to the <del>&lt;...</del>:&gt; directive as a whole. Elements are extracted from this list using <b>pprint-pop</b>, thereby providing automatic support for malformed lists, and the detection of circularity, sharing, and length abbreviation. Within the body segment, ~<i><sup>∧</sup></i> acts like <b>pprint-exit-if-list-exhausted</b>.</p>
 <p><del>&lt;...</del>:&gt; supports a feature not supported by <strong>pprint-logical-block</strong>. If ~:@&gt; is used to terminate the directive (<em>i.e.</em>, <del>&lt;...</del>:@&gt;), then a fill-style conditional newline is automatically inserted after each group of blanks immediately contained in the body (except for blanks after a <em>hNewlinei</em> directive). This makes it easy to achieve the equivalent of paragraph filling.</p>
 <p>If the <em>at-sign</em> modifier is used with <del>&lt;...</del>:&gt;, the entire remaining argument list is passed to the directive as its argument. All of the remaining arguments are always consumed by <del>@&lt;...</del>:&gt;, even if they are not all used by the <em>format string</em> nested in the directive. Other than the difference in its argument, <del>@&lt;...</del>:&gt; is exactly the same as <del>&lt;...</del>:&gt; except that circularity detection is not applied if <del>@&lt;...</del>:&gt; is encountered at top level in a <em>format string</em>. This ensures that circularity detection is applied only to data lists, not to <em>format argument lists</em>.</p>
 <p>&quot; . #<em>n</em>#&quot; is printed if circularity or sharing has to be indicated for its argument as a whole.</p>
@@ -216,12 +217,12 @@
 <p>This justifies the text produced by processing <em>str</em> within a field at least <em>mincol</em> columns wide. <em>str</em> may be divided up into segments with ~;, in which case the spacing is evenly divided between the text segments.</p>
 <p>With no modifiers, the leftmost text segment is left justified in the field, and the rightmost text segment is right justified. If there is only one text element, as a special case, it is right justified. The : modifier causes spacing to be introduced before the first text segment; the @ modifier causes spacing to be added after the last. The <em>minpad</em> parameter (default 0) is the minimum number of padding characters to be output between each segment. The padding character is supplied by <em>padchar</em> , which defaults to the space character. If the total width needed to satisfy these constraints is greater than <em>mincol</em>, then the width used is <em>mincol</em>+<em>k</em>*<em>colinc</em> for the smallest possible non-negative integer value <em>k</em>. <em>colinc</em> defaults to 1, and <em>mincol</em> defaults to 0.</p>
 <p>Note that <em>str</em> may include <strong>format</strong> directives. All the clauses in <em>str</em> are processed in order; it is the resulting pieces of text that are justified.</p>
-<p>The ~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; directive may be used to terminate processing of the clauses prematurely, in which case only the completely processed clauses are justified.</p>
-<p>If the first clause of a ~&lt; is terminated with ~:; instead of ~;, then it is used in a special way. All of the clauses are processed (subject to ~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt;, of course), but the first one is not used in performing the spacing and padding. When the padded result has been determined, then if it will fit on the current line of output, it is output, and the text for the first clause is discarded. If, however, the</p>
+<p>The ~<i><sup>∧</sup></i> directive may be used to terminate processing of the clauses prematurely, in which case only the completely processed clauses are justified.</p>
+<p>If the first clause of a ~&lt; is terminated with ~:; instead of ~;, then it is used in a special way. All of the clauses are processed (subject to ~<i><sup>∧</sup></i>, of course), but the first one is not used in performing the spacing and padding. When the padded result has been determined, then if it will fit on the current line of output, it is output, and the text for the first clause is discarded. If, however, the</p>
 <p>padded text will not fit on the current line, then the text segment for the first clause is output before the padded text. The first clause ought to contain a newline (such as a ~% directive). The first clause is always processed, and so any arguments it refers to will be used; the decision is whether to use the resulting segment of text, not whether to process the first clause. If the ~:; has a prefix parameter <em>n</em>, then the padded text must fit on the current line with <em>n</em> character positions to spare to avoid outputting the first clause’s text. For example, the control string</p>
-<p>&quot;<del>%;; <del>{</del>&lt;</del>%;; <del>1:; <del>S</del>&gt;</del>&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt;,<del>}.</del>%&quot;</p>
+<p>&quot;<del>%;; <del>{</del>&lt;</del>%;; <del>1:; <del>S</del>&gt;</del><i><sup>∧</sup></i>,<del>}.</del>%&quot;</p>
 <p>can be used to print a list of items separated by commas without breaking items over line boundaries, beginning each line with ;; . The prefix parameter 1 in ~1:; accounts for the width of the comma that will follow the justified item if it is not the last element in the list, or the period if it is. If ~:; has a second prefix parameter, then it is used as the width of the line, thus overriding the natural line width of the output stream. To make the preceding example use a line width of 50, one would write</p>
-<p>&quot;<del>%;; <del>{</del>&lt;</del>%;; <del>1,50:; <del>S</del>&gt;</del>&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt;,<del>} .</del>%&quot;</p>
+<p>&quot;<del>%;; <del>{</del>&lt;</del>%;; <del>1,50:; <del>S</del>&gt;</del><i><sup>∧</sup></i>,<del>} .</del>%&quot;</p>
 <p>If the second argument is not supplied, then <strong>format</strong> uses the line width of the <em>destination</em> output stream. If this cannot be determined (for example, when producing a <em>string</em> result), then <strong>format</strong> uses 72 as the line length.</p>
 <p>See also Section 22.3.5.2 (Tilde Less-Than-Sign: Logical Block).</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="22363-tilde-greater">22.3.6.3 Tilde Greater<a href="#22363-tilde-greater" class="hash-link" aria-label="Direct link to 22.3.6.3 Tilde Greater" title="Direct link to 22.3.6.3 Tilde Greater">​</a></h3>
@@ -256,7 +257,7 @@
 <p><em>≡</em> (format <em>stream</em> &quot;...<del>:[</del>;<del>:*<em>str</em></del>]...&quot; ...)</p>
 <p>The combination of ~[ and # is useful, for example, for dealing with English conventions for printing lists:</p>
 <p>(setq foo &quot;Items:<del>#[ none</del>; <del>S</del>; ~S and <del>S</del></p>
-<p><del>:;</del>@{<del>#[</del>; and~] <del>S</del>&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt;,<del>}</del>].&quot;)</p>
+<p><del>:;</del>@{<del>#[</del>; and~] <del>S</del><i><sup>∧</sup></i>,<del>}</del>].&quot;)</p>
 <p>(format nil foo) <em>→</em> &quot;Items: none.&quot;</p>
 <p>(format nil foo ’foo) <em>→</em> &quot;Items: FOO.&quot;</p>
 <p>(format nil foo ’foo ’bar) <em>→</em> &quot;Items: FOO and BAR.&quot;</p>
@@ -268,21 +269,21 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="22374-tilde-left">22.3.7.4 Tilde Left<a href="#22374-tilde-left" class="hash-link" aria-label="Direct link to 22.3.7.4 Tilde Left" title="Direct link to 22.3.7.4 Tilde Left">​</a></h3>
 <!-- -->
 <p><del>{<em>str</em></del>}</p>
-<p>This is an iteration construct. The argument should be a &lt;i&gt;list&lt;/i&gt;, which is used as a set of arguments as if for a recursive call to &lt;b&gt;format&lt;/b&gt;. The &lt;i&gt;string str&lt;/i&gt; is used repeatedly as the control string. Each iteration can absorb as many elements of the &lt;i&gt;list&lt;/i&gt; as it likes as arguments; if &lt;i&gt;str&lt;/i&gt; uses up two arguments by itself, then two elements of the &lt;i&gt;list&lt;/i&gt; will get used up each time around the loop. If before any iteration step the &lt;i&gt;list&lt;/i&gt; is empty, then the iteration is terminated. Also, if a prefix parameter &lt;i&gt;n&lt;/i&gt; is given, then there will be at most &lt;i&gt;n&lt;/i&gt; repetitions of processing of &lt;i&gt;str&lt;/i&gt; . Finally, the ~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; directive can be used to terminate the iteration prematurely.</p>
+<p>This is an iteration construct. The argument should be a <i>list</i>, which is used as a set of arguments as if for a recursive call to <b>format</b>. The <i>string str</i> is used repeatedly as the control string. Each iteration can absorb as many elements of the <i>list</i> as it likes as arguments; if <i>str</i> uses up two arguments by itself, then two elements of the <i>list</i> will get used up each time around the loop. If before any iteration step the <i>list</i> is empty, then the iteration is terminated. Also, if a prefix parameter <i>n</i> is given, then there will be at most <i>n</i> repetitions of processing of <i>str</i> . Finally, the ~<i><sup>∧</sup></i> directive can be used to terminate the iteration prematurely.</p>
 <p>For example:</p>
 <p>(format nil &quot;The winners are:~{ <del>S</del>}.&quot;</p>
 <p>’(fred harry jill))</p>
 <p><em>→</em> &quot;The winners are: FRED HARRY JILL.&quot;</p>
 <p>(format nil &quot;Pairs:~{ &lt;~S,<del>S&gt;</del>}.&quot;</p>
 <p>’(a 1 b 2 c 3))</p>
-<p><em>→</em> &quot;Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;.&quot;</p>
+<p><em>→</em> &quot;Pairs: &lt;a,1&gt; &lt;b,2&gt; &lt;c,3&gt;.&quot;</p>
 <p><del>:{<em>str</em></del>} is similar, but the argument should be a <em>list</em> of sublists. At each repetition step, one sublist is used as the set of arguments for processing <em>str</em> ; on the next repetition, a new sublist is used, whether or not all of the last sublist had been processed. For example:</p>
 <p>(format nil &quot;Pairs:~:{ &lt;~S,<del>S&gt;</del>}.&quot;</p>
 <p>’((a 1) (b 2) (c 3)))</p>
-<p><em>→</em> &quot;Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;.&quot;</p>
+<p><em>→</em> &quot;Pairs: &lt;a,1&gt; &lt;b,2&gt; &lt;c,3&gt;.&quot;</p>
 <p><del>@{<em>str</em></del>} is similar to <del>{<em>str</em></del>}, but instead of using one argument that is a list, all the remaining arguments are used as the list of arguments for the iteration. Example:</p>
 <p>(format nil &quot;Pairs:~@{ &lt;~S,<del>S&gt;</del>}.&quot; ’a 1 ’b 2 ’c 3)</p>
-<p><em>→</em> &quot;Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;.&quot;</p>
+<p><em>→</em> &quot;Pairs: &lt;a,1&gt; &lt;b,2&gt; &lt;c,3&gt;.&quot;</p>
 <p>If the iteration is terminated before all the remaining arguments are consumed, then any arguments not processed by the iteration remain to be processed by any directives following the iteration construct.</p>
 <p><del>:@{<em>str</em></del>} combines the features of <del>:{<em>str</em></del>} and <del>@{<em>str</em></del>}. All the remaining arguments are used, and each one must be a <em>list</em>. On each iteration, the next argument is used as a <em>list</em> of arguments to <em>str</em> . Example:</p>
 <p>(format nil &quot;Pairs:~:@{ &lt;~S,<del>S&gt;</del>}.&quot;</p>
@@ -324,7 +325,7 @@
 <p>When case conversions appear nested, the outer conversion dominates, as illustrated in the following example:</p>
 <p>(format nil &quot;<del>@(how is <del>:(BOB SMITH</del>)?</del>)&quot;)</p>
 <p><em>→</em> &quot;How is bob smith?&quot;</p>
-<p>&lt;i&gt;&lt;sup&gt;not&lt;/sup&gt; →&lt;/i&gt; &quot;How is Bob Smith?&quot;</p>
+<p><i><sup>not</sup> →</i> &quot;How is Bob Smith?&quot;</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="22382-tilde-right">22.3.8.2 Tilde Right<a href="#22382-tilde-right" class="hash-link" aria-label="Direct link to 22.3.8.2 Tilde Right" title="Direct link to 22.3.8.2 Tilde Right">​</a></h3>
 <!-- -->
 <p>~) terminates a ~(. The consequences of using it elsewhere are undefined.</p>
@@ -344,34 +345,34 @@
 <p>This separates clauses in ~[ and ~&lt; constructs. The consequences of using it elsewhere are undefined.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="22392-tilde-circumflex">22.3.9.2 Tilde Circumflex<a href="#22392-tilde-circumflex" class="hash-link" aria-label="Direct link to 22.3.9.2 Tilde Circumflex" title="Direct link to 22.3.9.2 Tilde Circumflex">​</a></h3>
 <!-- -->
-<p>~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt;</p>
+<p>~<i><sup>∧</sup></i></p>
 <p>This is an escape construct. If there are no more arguments remaining to be processed, then the immediately enclosing ~{ or ~&lt; construct is terminated. If there is no such enclosing construct, then the entire formatting operation is terminated. In the ~&lt; case, the formatting is performed,</p>
-<p>but no more segments are processed before doing the justification. ~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; may appear anywhere in a ~{ construct.</p>
-<p>(setq donestr &quot;Done.<del>&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; <del>D warning</del>:P<!-- -->.</del>&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; <del>D error</del>:P<!-- -->.&quot;)</p>
-<p>&lt;i&gt;→&lt;/i&gt; &quot;Done.<del>&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; <del>D warning</del>:P<!-- -->.</del>&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; <del>D error</del>:P<!-- -->.&quot;</p>
+<p>but no more segments are processed before doing the justification. ~<i><sup>∧</sup></i> may appear anywhere in a ~{ construct.</p>
+<p>(setq donestr &quot;Done.<del><i><sup>∧</sup></i> <del>D warning</del>:P<!-- -->.</del><i><sup>∧</sup></i> <del>D error</del>:P<!-- -->.&quot;)</p>
+<p><i>→</i> &quot;Done.<del><i><sup>∧</sup></i> <del>D warning</del>:P<!-- -->.</del><i><sup>∧</sup></i> <del>D error</del>:P<!-- -->.&quot;</p>
 <p>(format nil donestr) <em>→</em> &quot;Done.&quot;</p>
 <p>(format nil donestr 3) <em>→</em> &quot;Done. 3 warnings.&quot;</p>
 <p>(format nil donestr 1 5) <em>→</em> &quot;Done. 1 warning. 5 errors.&quot;</p>
-<p>If a prefix parameter is given, then termination occurs if the parameter is zero. (Hence ~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; is equivalent to ~#&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt;.) If two parameters are given, termination occurs if they are equal. If three parameters are given, termination occurs if the first is less than or equal to the second and the second is less than or equal to the third. Of course, this is useless if all the prefix parameters are constants; at least one of them should be a # or a V parameter.</p>
-<p>If ~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; is used within a ~:{ construct, then it terminates the current iteration step because in the standard case it tests for remaining arguments of the current step only; the next iteration step commences immediately. ~:&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; is used to terminate the iteration process. ~:&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; may be used only if the command it would terminate is ~:{ or ~:@{. The entire iteration process is terminated if and only if the sublist that is supplying the arguments for the current iteration step is the last sublist in the case of ~:{, or the last &lt;b&gt;format&lt;/b&gt; argument in the case of ~:@{. ~:&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; is not equivalent to ~#:&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt;; the latter terminates the entire iteration if and only if no arguments remain for the current iteration step. For example:</p>
-<p>(format nil &quot;<del>:{</del>@?<del>:&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt;...</del>}&quot; ’((&quot;a&quot;) (&quot;b&quot;))) &lt;i&gt;→&lt;/i&gt; &quot;a...b&quot;</p>
-<p>If ~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; appears within a control string being processed under the control of a ~? directive, but not within any ~{ or ~&lt; construct within that string, then the string being processed will be terminated, thereby ending processing of the ~? directive. Processing then continues within the string containing the ~? directive at the point following that directive.</p>
-<p>If ~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; appears within a ~[ or ~( construct, then all the commands up to the ~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; are properly selected or case-converted, the ~[ or ~( processing is terminated, and the outward search continues for a ~{ or ~&lt; construct to be terminated. For example:</p>
-<p>(setq tellstr &quot;<del>@(</del>@[<del>R</del>]~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; <del>A!</del>)&quot;)</p>
-<p>&lt;i&gt;→&lt;/i&gt; &quot;<del>@(</del>@[<del>R</del>]~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; <del>A!</del>)&quot;</p>
+<p>If a prefix parameter is given, then termination occurs if the parameter is zero. (Hence ~<i><sup>∧</sup></i> is equivalent to ~#<i><sup>∧</sup></i>.) If two parameters are given, termination occurs if they are equal. If three parameters are given, termination occurs if the first is less than or equal to the second and the second is less than or equal to the third. Of course, this is useless if all the prefix parameters are constants; at least one of them should be a # or a V parameter.</p>
+<p>If ~<i><sup>∧</sup></i> is used within a ~:{ construct, then it terminates the current iteration step because in the standard case it tests for remaining arguments of the current step only; the next iteration step commences immediately. ~:<i><sup>∧</sup></i> is used to terminate the iteration process. ~:<i><sup>∧</sup></i> may be used only if the command it would terminate is ~:{ or ~:@{. The entire iteration process is terminated if and only if the sublist that is supplying the arguments for the current iteration step is the last sublist in the case of ~:{, or the last <b>format</b> argument in the case of ~:@{. ~:<i><sup>∧</sup></i> is not equivalent to ~#:<i><sup>∧</sup></i>; the latter terminates the entire iteration if and only if no arguments remain for the current iteration step. For example:</p>
+<p>(format nil &quot;<del>:{</del>@?<del>:<i><sup>∧</sup></i>...</del>}&quot; ’((&quot;a&quot;) (&quot;b&quot;))) <i>→</i> &quot;a...b&quot;</p>
+<p>If ~<i><sup>∧</sup></i> appears within a control string being processed under the control of a ~? directive, but not within any ~{ or ~&lt; construct within that string, then the string being processed will be terminated, thereby ending processing of the ~? directive. Processing then continues within the string containing the ~? directive at the point following that directive.</p>
+<p>If ~<i><sup>∧</sup></i> appears within a ~[ or ~( construct, then all the commands up to the ~<i><sup>∧</sup></i> are properly selected or case-converted, the ~[ or ~( processing is terminated, and the outward search continues for a ~{ or ~&lt; construct to be terminated. For example:</p>
+<p>(setq tellstr &quot;<del>@(</del>@[<del>R</del>]~<i><sup>∧</sup></i> <del>A!</del>)&quot;)</p>
+<p><i>→</i> &quot;<del>@(</del>@[<del>R</del>]~<i><sup>∧</sup></i> <del>A!</del>)&quot;</p>
 <p>(format nil tellstr 23) <em>→</em> &quot;Twenty-three!&quot;</p>
 <p>(format nil tellstr nil &quot;losers&quot;) <em>→</em> &quot; Losers!&quot;</p>
 <p>(format nil tellstr 23 &quot;losers&quot;) <em>→</em> &quot;Twenty-three losers!&quot;</p>
-<p>Following are examples of the use of ~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; within a ~&lt; construct.</p>
-<p>(format nil &quot;<del>15&lt;<del>S</del>;</del>&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt;<del>S</del>;~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt;<del>S</del>&gt;&quot; ’foo)</p>
+<p>Following are examples of the use of ~<i><sup>∧</sup></i> within a ~&lt; construct.</p>
+<p>(format nil &quot;<del>15&lt;<del>S</del>;</del><i><sup>∧</sup></i><del>S</del>;~<i><sup>∧</sup></i><del>S</del>&gt;&quot; ’foo)</p>
 <p><em>→</em> &quot; FOO&quot;</p>
-<p>(format nil &quot;<del>15&lt;<del>S</del>;</del>&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt;<del>S</del>;~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt;<del>S</del>&gt;&quot; ’foo ’bar)</p>
+<p>(format nil &quot;<del>15&lt;<del>S</del>;</del><i><sup>∧</sup></i><del>S</del>;~<i><sup>∧</sup></i><del>S</del>&gt;&quot; ’foo ’bar)</p>
 <p><em>→</em> &quot;FOO BAR&quot;</p>
-<p>(format nil &quot;<del>15&lt;<del>S</del>;</del>&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt;<del>S</del>;~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt;<del>S</del>&gt;&quot; ’foo ’bar ’baz)</p>
+<p>(format nil &quot;<del>15&lt;<del>S</del>;</del><i><sup>∧</sup></i><del>S</del>;~<i><sup>∧</sup></i><del>S</del>&gt;&quot; ’foo ’bar ’baz)</p>
 <p><em>→</em> &quot;FOO BAR BAZ&quot;</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="22393-tilde-newline">22.3.9.3 Tilde Newline<a href="#22393-tilde-newline" class="hash-link" aria-label="Direct link to 22.3.9.3 Tilde Newline" title="Direct link to 22.3.9.3 Tilde Newline">​</a></h3>
 <!-- -->
-<p><em>Tilde</em> immediately followed by a <em>newline</em> ignores the <em>newline</em> and any following non-newline <em>whitespace</em>&lt;sub&gt;1&lt;/sub&gt; characters. With a :, the <em>newline</em> is ignored, but any following <em>whitespace</em>&lt;sub&gt;1&lt;/sub&gt; is left in place. With an @, the <em>newline</em> is left in place, but any following <em>whitespace</em>&lt;sub&gt;1&lt;/sub&gt; is ignored. For example:</p>
+<p><em>Tilde</em> immediately followed by a <em>newline</em> ignores the <em>newline</em> and any following non-newline <em>whitespace</em><sub>1</sub> characters. With a :, the <em>newline</em> is ignored, but any following <em>whitespace</em><sub>1</sub> is left in place. With an @, the <em>newline</em> is left in place, but any following <em>whitespace</em><sub>1</sub> is ignored. For example:</p>
 <p>(defun type-clash-error (fn nargs argnum right-type wrong-type)</p>
 <p>(format *error-output*</p>
 <p>&quot;<del>&amp;<del>S requires its <del>:[</del>:R</del>;</del>*<del>]</del></p>
@@ -482,6 +483,757 @@
 <!-- -->
 <p>Formatted output is performed not only by <strong>format</strong>, but by certain other functions that accept a <em>format control</em> the way <strong>format</strong> does. For example, error-signaling functions such as <strong>cerror</strong> accept <em>format controls</em>.</p>
 <p>Note that the meaning of <strong>nil</strong> and <strong>t</strong> as destinations to <strong>format</strong> are different than those of <strong>nil</strong> and <strong>t</strong> as <em>stream designators</em>.</p>
-<p>The ~&lt;i&gt;&lt;sup&gt;∧&lt;/sup&gt;&lt;/i&gt; should appear only at the beginning of a ~&lt; clause, because it aborts the entire clause in which it appears (as well as all following clauses).</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/lisp-docs/cl-language-reference/tree/develop/docs/chap-22/cc-d-formatted-output.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/cl-language-reference/docs/chap-22/cc-c-the-lisp-pretty-printer"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">22.2 The Lisp Pretty Printer</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/cl-language-reference/docs/chap-22/cc-e-dictionary"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">22.4 Dictionary</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#2231-format-basic-output" class="table-of-contents__link toc-highlight">22.3.1 FORMAT Basic Output</a><ul><li><a href="#22311-tilde-c" class="table-of-contents__link toc-highlight">22.3.1.1 Tilde C</a></li><li><a href="#22312-tilde-percent" class="table-of-contents__link toc-highlight">22.3.1.2 Tilde Percent</a></li><li><a href="#22313-tilde-ampersand" class="table-of-contents__link toc-highlight">22.3.1.3 Tilde Ampersand</a></li><li><a href="#22314-tilde-vertical" class="table-of-contents__link toc-highlight">22.3.1.4 Tilde Vertical</a></li><li><a href="#22315-tilde-tilde" class="table-of-contents__link toc-highlight">22.3.1.5 Tilde Tilde</a></li></ul></li><li><a href="#2232-format-radix-control" class="table-of-contents__link toc-highlight">22.3.2 FORMAT Radix Control</a><ul><li><a href="#22321-tilde-r" class="table-of-contents__link toc-highlight">22.3.2.1 Tilde R</a></li><li><a href="#22322-tilde-d" class="table-of-contents__link toc-highlight">22.3.2.2 Tilde D</a></li><li><a href="#22323-tilde-b" class="table-of-contents__link toc-highlight">22.3.2.3 Tilde B</a></li><li><a href="#22324-tilde-o" class="table-of-contents__link toc-highlight">22.3.2.4 Tilde O</a></li><li><a href="#22325-tilde-x" class="table-of-contents__link toc-highlight">22.3.2.5 Tilde X</a></li></ul></li><li><a href="#2233-format-floating" class="table-of-contents__link toc-highlight">22.3.3 FORMAT Floating</a><ul><li><a href="#22331-tilde-f" class="table-of-contents__link toc-highlight">22.3.3.1 Tilde F</a></li><li><a href="#22332-tilde-e" class="table-of-contents__link toc-highlight">22.3.3.2 Tilde E</a></li><li><a href="#22333-tilde-g" class="table-of-contents__link toc-highlight">22.3.3.3 Tilde G</a></li><li><a href="#22334-tilde-dollarsign" class="table-of-contents__link toc-highlight">22.3.3.4 Tilde Dollarsign</a></li></ul></li><li><a href="#2234-format-printer-operations" class="table-of-contents__link toc-highlight">22.3.4 FORMAT Printer Operations</a><ul><li><a href="#22341-tilde-a" class="table-of-contents__link toc-highlight">22.3.4.1 Tilde A</a></li><li><a href="#22342-tilde-s" class="table-of-contents__link toc-highlight">22.3.4.2 Tilde S</a></li><li><a href="#22343-tilde-w" class="table-of-contents__link toc-highlight">22.3.4.3 Tilde W</a></li></ul></li><li><a href="#2235-format-pretty-printer-operations" class="table-of-contents__link toc-highlight">22.3.5 FORMAT Pretty Printer Operations</a><ul><li><a href="#22351-tilde-underscore" class="table-of-contents__link toc-highlight">22.3.5.1 Tilde Underscore</a></li><li><a href="#22352-tilde-less" class="table-of-contents__link toc-highlight">22.3.5.2 Tilde Less</a></li><li><a href="#22353-tilde-i" class="table-of-contents__link toc-highlight">22.3.5.3 Tilde I</a></li><li><a href="#22354-tilde-slash" class="table-of-contents__link toc-highlight">22.3.5.4 Tilde Slash</a></li></ul></li><li><a href="#2236-format-layout-control" class="table-of-contents__link toc-highlight">22.3.6 FORMAT Layout Control</a><ul><li><a href="#22361-tilde-t" class="table-of-contents__link toc-highlight">22.3.6.1 Tilde T</a></li><li><a href="#22362-tilde-less" class="table-of-contents__link toc-highlight">22.3.6.2 Tilde Less</a></li><li><a href="#22363-tilde-greater" class="table-of-contents__link toc-highlight">22.3.6.3 Tilde Greater</a></li></ul></li><li><a href="#2237-format-control" class="table-of-contents__link toc-highlight">22.3.7 FORMAT Control</a><ul><li><a href="#22371-tilde-asterisk" class="table-of-contents__link toc-highlight">22.3.7.1 Tilde Asterisk</a></li><li><a href="#22372-tilde-left" class="table-of-contents__link toc-highlight">22.3.7.2 Tilde Left</a></li><li><a href="#22373-tilde-right" class="table-of-contents__link toc-highlight">22.3.7.3 Tilde Right</a></li><li><a href="#22374-tilde-left" class="table-of-contents__link toc-highlight">22.3.7.4 Tilde Left</a></li><li><a href="#22375-tilde-right" class="table-of-contents__link toc-highlight">22.3.7.5 Tilde Right</a></li><li><a href="#22376-tilde-question" class="table-of-contents__link toc-highlight">22.3.7.6 Tilde Question</a></li></ul></li><li><a href="#2238-format-miscellaneous-operations" class="table-of-contents__link toc-highlight">22.3.8 FORMAT Miscellaneous Operations</a><ul><li><a href="#22381-tilde-left" class="table-of-contents__link toc-highlight">22.3.8.1 Tilde Left</a></li><li><a href="#22382-tilde-right" class="table-of-contents__link toc-highlight">22.3.8.2 Tilde Right</a></li><li><a href="#22383-tilde-p" class="table-of-contents__link toc-highlight">22.3.8.3 Tilde P</a></li></ul></li><li><a href="#2239-format-miscellaneous-pseudo" class="table-of-contents__link toc-highlight">22.3.9 FORMAT Miscellaneous Pseudo</a><ul><li><a href="#22391-tilde-semicolon" class="table-of-contents__link toc-highlight">22.3.9.1 Tilde Semicolon</a></li><li><a href="#22392-tilde-circumflex" class="table-of-contents__link toc-highlight">22.3.9.2 Tilde Circumflex</a></li><li><a href="#22393-tilde-newline" class="table-of-contents__link toc-highlight">22.3.9.3 Tilde Newline</a></li></ul></li><li><a href="#22310-additional-information-about-format-operations" class="table-of-contents__link toc-highlight">22.3.10 Additional Information about FORMAT Operations</a><ul><li><a href="#223101-nesting-of-format-operations" class="table-of-contents__link toc-highlight">22.3.10.1 Nesting of FORMAT Operations</a></li><li><a href="#223102-missing-and-additional-format-arguments" class="table-of-contents__link toc-highlight">22.3.10.2 Missing and Additional FORMAT Arguments</a></li><li><a href="#223103-additional-format-parameters" class="table-of-contents__link toc-highlight">22.3.10.3 Additional FORMAT Parameters</a></li><li><a href="#223104-undefined-format-modifier-combinations" class="table-of-contents__link toc-highlight">22.3.10.4 Undefined FORMAT Modifier Combinations</a></li></ul></li><li><a href="#22311-examples-of-format" class="table-of-contents__link toc-highlight">22.3.11 Examples of FORMAT</a></li><li><a href="#22312-notes-about-format" class="table-of-contents__link toc-highlight">22.3.12 Notes about FORMAT</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/docs/intro">Cl Technical Reference</a></li><li class="footer__item"><a href="https://lisp-docs.github.io/" target="_blank" rel="noopener noreferrer" class="footer__link-item">CL Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/common-lisp" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discord.gg/hhk46CE" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.reddit.com/r/common_lisp" target="_blank" rel="noopener noreferrer" class="footer__link-item">Reddit<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://irclog.tymoon.eu/libera/commonlisp" target="_blank" rel="noopener noreferrer" class="footer__link-item">IRC<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/lisp-docs/cl-language-reference/" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 LISP Docs, MIT License. Built with Docusaurus.</div></div></div></footer></div>
+<p>The ~<i><sup>∧</sup></i> should appear only at the beginning of a ~&lt; clause, because it aborts the entire clause in which it appears (as well as all following clauses).</p>
+<p><strong>copy-pprint-dispatch</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>copy-pprint-dispatch</strong> &amp;optional <em>table → new-table</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>table</em>—a <em>pprint dispatch table</em>, or <strong>nil</strong>.</p>
+<p><em>new-table</em>—a <em>fresh pprint dispatch table</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Creates and returns a copy of the specified <em>table</em>, or of the <em>value</em> of <strong>*print-pprint-dispatch*</strong> if no <em>table</em> is specified, or of the initial <em>value</em> of <strong>*print-pprint-dispatch*</strong> if <strong>nil</strong> is specified.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>table</em> is not a <em>pprint dispatch table</em>.</p>
+<p><strong>formatter</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>formatter</strong> <em>control-string → function</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>control-string</em>—a <em>format string</em>; not evaluated.</p>
+<p><em>function</em>—a <em>function</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Returns a <em>function</em> which has behavior equivalent to:</p>
+<p>#’(lambda (*standard-output* &amp;rest arguments)</p>
+<p>(apply #’format t <em>control-string</em> arguments)</p>
+<p><em>arguments-tail</em>)</p>
+<p>where <em>arguments-tail</em> is either the tail of <em>arguments</em> which has as its <em>car</em> the argument that would be processed next if there were more format directives in the <em>control-string</em>, or else <strong>nil</strong> if no more <em>arguments</em> follow the most recently processed argument.</p>
+<p><strong>Examples:</strong></p>
+<p>(funcall (formatter &quot;~&amp;<del>A</del>A&quot;) *standard-output* ’a ’b ’c)</p>
+<p>▷ AB</p>
+<p><em>→</em> (C)</p>
+<p>(format t (formatter &quot;~&amp;<del>A</del>A&quot;) ’a ’b ’c)</p>
+<p>▷ AB</p>
+<p><em>→</em> NIL</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Might signal an error (at macro expansion time or at run time) if the argument is not a valid <em>format string</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>format</strong></p>
+<p><strong>pprint-dispatch</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>pprint-dispatch</strong> <em>object</em> &amp;optional <em>table → function, found-p</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>object</em>—an <em>object</em>.</p>
+<p><em>table</em>—a <em>pprint dispatch table</em>, or <strong>nil</strong>. The default is the <em>value</em> of <strong>*print-pprint-dispatch*</strong>. <em>function</em>—a <em>function designator</em> .</p>
+<p><em>found-p</em>—a <em>generalized boolean</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Retrieves the highest priority function in <em>table</em> that is associated with a <em>type specifier</em> that matches <em>object</em>. The function is chosen by finding all of the <em>type specifiers</em> in <em>table</em> that match the <em>object</em> and selecting the highest priority function associated with any of these <em>type specifiers</em>. If there is more than one highest priority function, an arbitrary choice is made. If no <em>type specifiers</em> match the <em>object</em>, a function is returned that prints <em>object</em> using <strong>print-object</strong>.</p>
+<p>The <em>secondary value</em>, <em>found-p</em>, is <em>true</em> if a matching <em>type specifier</em> was found in <em>table</em>, or <em>false</em> otherwise.</p>
+<p>If <em>table</em> is <strong>nil</strong>, retrieval is done in the <em>initial pprint dispatch table</em>.</p>
+<p><strong>Affected By:</strong></p>
+<p>The state of the <em>table</em>.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>table</em> is neither a <em>pprint-dispatch-table</em> nor <strong>nil</strong>.</p>
+<p><strong>Notes:</strong></p>
+<p>(let ((*print-pretty* t))</p>
+<p>(write object <!-- -->:stream<!-- --> s))</p>
+<p><em>≡</em> (funcall (pprint-dispatch object) s object)</p>
+<p><strong>pprint-exit-if-list-exhausted</strong> <em>Local Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>pprint-exit-if-list-exhausted</strong> <em>hno argumentsi →</em> <strong>nil</strong></p>
+<p><strong>Description:</strong></p>
+<p>Tests whether or not the <em>list</em> passed to the <em>lexically current logical block</em> has been exhausted; see Section 22.2.1.1 (Dynamic Control of the Arrangement of Output). If this <em>list</em> has been reduced to <strong>nil</strong>, <strong>pprint-exit-if-list-exhausted</strong> terminates the execution of the <em>lexically current logical block</em> except for the printing of the suffix. Otherwise <strong>pprint-exit-if-list-exhausted</strong> returns <strong>nil</strong>.</p>
+<p>Whether or not <strong>pprint-exit-if-list-exhausted</strong> is <em>fbound</em> in the <em>global environment</em> is <em>implementation dependent</em>; however, the restrictions on redefinition and <em>shadowing</em> of <strong>pprint-exit-if-list-exhausted</strong> are the same as for <em>symbols</em> in the COMMON-LISP <em>package</em> which are <em>fbound</em> in the <em>global environment</em>. The consequences of attempting to use <strong>pprint-exit-if-list-exhausted</strong> outside of <strong>pprint-logical-block</strong> are undefined.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>An error is signaled (at macro expansion time or at run time) if <strong>pprint-exit-if-list-exhausted</strong> is used anywhere other than lexically within a call on <strong>pprint-logical-block</strong>. Also, the consequences of executing <strong>pprint-if-list-exhausted</strong> outside of the dynamic extent of the <strong>pprint-logical-block</strong> which lexically contains it are undefined.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>pprint-logical-block</strong>, <strong>pprint-pop</strong>.</p>
+<p><strong>pprint-fill, pprint-linear, pprint-tabular</strong></p>
+<p><strong>pprint-fill, pprint-linear, pprint-tabular</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>pprint-fill</strong> <em>stream object</em> &amp;optional <em>colon-p at-sign-p →</em> <strong>nil</strong></p>
+<p><strong>pprint-linear</strong> <em>stream object</em> &amp;optional <em>colon-p at-sign-p →</em> <strong>nil</strong></p>
+<p><strong>pprint-tabular</strong> <em>stream object</em> &amp;optional <em>colon-p at-sign-p tabsize →</em> <strong>nil</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>stream</em>—an <em>output stream designator</em> .</p>
+<p><em>object</em>—an <em>object</em>.</p>
+<p><em>colon-p</em>—a <em>generalized boolean</em>. The default is <em>true</em>.</p>
+<p><em>at-sign-p</em>—a <em>generalized boolean</em>. The default is <em>implementation-dependent</em>.</p>
+<p><em>tabsize</em>—a non-negative <em>integer</em> . The default is 16.</p>
+<p><strong>Description:</strong></p>
+<p>The functions <strong>pprint-fill</strong>, <strong>pprint-linear</strong>, and <strong>pprint-tabular</strong> specify particular ways of <em>pretty printing</em> a <em>list</em> to <em>stream</em>. Each function prints parentheses around the output if and only if <em>colon-p</em> is <em>true</em>. Each function ignores its <em>at-sign-p</em> argument. (Both arguments are included even though only one is needed so that these functions can be used via ~/.../ and as <strong>set-pprint-dispatch</strong> functions, as well as directly.) Each function handles abbreviation and the detection of circularity and sharing correctly, and uses <strong>write</strong> to print <em>object</em> when it is a <em>non-list</em>.</p>
+<p>If <em>object</em> is a <em>list</em> and if the <em>value</em> of <strong>*print-pretty*</strong> is <em>false</em>, each of these functions prints <em>object</em> using a minimum of <em>whitespace</em>, as described in Section 22.1.3.5 (Printing Lists and Conses). Otherwise (if <em>object</em> is a <em>list</em> and if the <em>value</em> of <strong>*print-pretty*</strong> is <em>true</em>):</p>
+<p><em>•</em> The <em>function</em> <strong>pprint-linear</strong> prints a <em>list</em> either all on one line, or with each <em>element</em> on a separate line.</p>
+<p><em>•</em> The <em>function</em> <strong>pprint-fill</strong> prints a <em>list</em> with as many <em>elements</em> as possible on each line.</p>
+<p><em>•</em> The <em>function</em> <strong>pprint-tabular</strong> is the same as <strong>pprint-fill</strong> except that it prints the <em>elements</em> so that they line up in columns. The <em>tabsize</em> specifies the column spacing in <em>ems</em>, which is the total spacing from the leading edge of one column to the leading edge of the next.</p>
+<p><strong>Examples:</strong></p>
+<p>Evaluating the following with a line length of 25 produces the output shown.</p>
+<p>(progn (princ &quot;Roads &quot;)</p>
+<p>(pprint-tabular *standard-output* ’(elm main maple center) nil nil 8))</p>
+<p>Roads ELM MAIN</p>
+<p>MAPLE CENTER</p>
+<p><strong>Side Effects:</strong></p>
+<p>Performs output to the indicated <em>stream</em>.</p>
+<p><strong>Affected By:</strong></p>
+<p>The cursor position on the indicated <em>stream</em>, if it can be determined.</p>
+<p><strong>Notes:</strong></p>
+<p>The <em>function</em> <strong>pprint-tabular</strong> could be defined as follows:</p>
+<p>(defun pprint-tabular (s list &amp;optional (colon-p t) at-sign-p (tabsize nil))</p>
+<p>(declare (ignore at-sign-p))</p>
+<p>(when (null tabsize) (setq tabsize 16))</p>
+<p>(pprint-logical-block (s list <!-- -->:prefix<!-- --> (if colon-p &quot;(&quot; &quot;&quot;)</p>
+<p>:suffix<!-- --> (if colon-p &quot;)&quot; &quot;&quot;))</p>
+<p>(pprint-exit-if-list-exhausted)</p>
+<p>(loop (write (pprint-pop) <!-- -->:stream<!-- --> s)</p>
+<p>(pprint-exit-if-list-exhausted)</p>
+<p>(write-char #\Space s)</p>
+<p>(pprint-tab <!-- -->:section-relative<!-- --> 0 tabsize s)</p>
+<p>(pprint-newline <!-- -->:fill<!-- --> s))))</p>
+<p>Note that it would have been inconvenient to specify this function using <strong>format</strong>, because of the need to pass its <em>tabsize</em> argument through to a ~<!-- -->:T<!-- --> format directive nested within an iteration over a list.</p>
+<p><strong>pprint-indent</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>pprint-indent</strong> <em>relative-to n</em> &amp;optional <em>stream →</em> <strong>nil</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>relative-to</em>—either <!-- -->:block<!-- --> or <!-- -->:current<!-- -->.</p>
+<p><em>n</em>—a <em>real</em>.</p>
+<p><em>stream</em>—an <em>output stream designator</em> . The default is <em>standard output</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>pprint-indent</strong> specifies the indentation to use in a logical block on <em>stream</em>. If <em>stream</em> is a <em>pretty printing stream</em> and the <em>value</em> of <strong>*print-pretty*</strong> is <em>true</em>, <strong>pprint-indent</strong> sets the indentation in the innermost dynamically enclosing logical block; otherwise, <strong>pprint-indent</strong> has no effect.</p>
+<p><em>N</em> specifies the indentation in <em>ems</em>. If <em>relative-to</em> is <!-- -->:block<!-- -->, the indentation is set to the horizontal position of the first character in the <em>dynamically current logical block</em> plus <em>n ems</em>. If <em>relative-to</em> is <!-- -->:current<!-- -->, the indentation is set to the current output position plus <em>n ems</em>. (For robustness in the face of variable-width fonts, it is advisable to use <!-- -->:current<!-- --> with an <em>n</em> of zero whenever possible.)</p>
+<p><em>N</em> can be negative; however, the total indentation cannot be moved left of the beginning of the line or left of the end of the rightmost per-line prefix—an attempt to move beyond one of these limits is treated the same as an attempt to move to that limit. Changes in indentation caused by <em>pprint-indent</em> do not take effect until after the next line break. In addition, in miser mode all calls to <strong>pprint-indent</strong> are ignored, forcing the lines corresponding to the logical block to line up under the first character in the block.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>An error is signaled if <em>relative-to</em> is any <em>object</em> other than <!-- -->:block<!-- --> or <!-- -->:current<!-- -->.</p>
+<p><strong>See Also:</strong></p>
+<p>Section 22.3.5.3 (Tilde I: Indent)</p>
+<p><strong>pprint-logical-block</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>pprint-logical-block</strong> (<em>stream-symbol object</em> &amp;key <em>prefix per-line-prefix suffix</em>)</p>
+<p><em>{declaration}</em>* <em>{form}</em>*</p>
+<p><em>→</em> <strong>nil</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>stream-symbol</em>—a <em>stream variable designator</em> .</p>
+<p><em>object</em>—an <em>object</em>; evaluated.</p>
+<p>:prefix<!-- -->—a <em>string</em>; evaluated. Complicated defaulting behavior; see below.</p>
+<p>:per-line-prefix<!-- -->—a <em>string</em>; evaluated. Complicated defaulting behavior; see below. <!-- -->:suffix<!-- -->—a <em>string</em>; evaluated. The default is the <em>null string</em>.</p>
+<p><em>declaration</em>—a <strong>declare</strong> <em>expression</em>; not evaluated.</p>
+<p><em>forms</em>—an <em>implicit progn</em>.</p>
+<p><strong>pprint-logical-block</strong></p>
+<p><strong>Description:</strong></p>
+<p>Causes printing to be grouped into a logical block.</p>
+<p>The logical block is printed to the <em>stream</em> that is the <em>value</em> of the <em>variable</em> denoted by <em>stream-symbol</em>. During the execution of the <em>forms</em>, that <em>variable</em> is <em>bound</em> to a <em>pretty printing stream</em> that supports decisions about the arrangement of output and then forwards the output to the destination stream. All the standard printing functions (<em>e.g.</em>, <strong>write</strong>, <strong>princ</strong>, and <strong>terpri</strong>) can be used to print output to the <em>pretty printing stream</em>. All and only the output sent to this <em>pretty printing stream</em> is treated as being in the logical block.</p>
+<p>The <em>prefix</em> specifies a prefix to be printed before the beginning of the logical block. The <em>per-line-prefix</em> specifies a prefix that is printed before the block and at the beginning of each new line in the block. The <!-- -->:prefix<!-- --> and <!-- -->:pre-line-prefix<!-- --> <em>arguments</em> are mutually exclusive. If neither <!-- -->:prefix<!-- --> nor <!-- -->:per-line-prefix<!-- --> is specified, a <em>prefix</em> of the <em>null string</em> is assumed.</p>
+<p>The <em>suffix</em> specifies a suffix that is printed just after the logical block.</p>
+<p>The <em>object</em> is normally a <em>list</em> that the body <em>forms</em> are responsible for printing. If <em>object</em> is not a <em>list</em>, it is printed using <strong>write</strong>. (This makes it easier to write printing functions that are robust in the face of malformed arguments.) If <strong>*print-circle*</strong> is <em>non-nil</em> and <em>object</em> is a circular (or shared) reference to a <em>cons</em>, then an appropriate “#<em>n</em>#” marker is printed. (This makes it easy to write printing</p>
+<p>functions that provide full support for circularity and sharing abbreviation.) If <strong>*print-level*</strong> is not <strong>nil</strong> and the logical block is at a dynamic nesting depth of greater than <strong>*print-level*</strong> in logical blocks, “#” is printed. (This makes easy to write printing functions that provide full support for depth abbreviation.)</p>
+<p>If either of the three conditions above occurs, the indicated output is printed on <em>stream-symbol</em> and the body <em>forms</em> are skipped along with the printing of the <!-- -->:prefix<!-- --> and <!-- -->:suffix<!-- -->. (If the body <em>forms</em> are not to be responsible for printing a list, then the first two tests above can be turned off by supplying <strong>nil</strong> for the <em>object</em> argument.)</p>
+<p>In addition to the <em>object</em> argument of <strong>pprint-logical-block</strong>, the arguments of the standard printing functions (such as <strong>write</strong>, <strong>print</strong>, <strong>prin1</strong>, and <strong>pprint</strong>, as well as the arguments of the standard <em>format directives</em> such as ~A, ~S, (and ~W) are all checked (when necessary) for circularity and sharing. However, such checking is not applied to the arguments of the functions <strong>write-line</strong>, <strong>write-string</strong>, and <strong>write-char</strong> or to the literal text output by <strong>format</strong>. A consequence of this is that you must use one of the latter functions if you want to print some literal text in the output that is not supposed to be checked for circularity or sharing.</p>
+<p>The body <em>forms</em> of a <strong>pprint-logical-block</strong> <em>form</em> must not perform any side-effects on the surrounding environment; for example, no <em>variables</em> must be assigned which have not been <em>bound</em> within its scope.</p>
+<p>The <strong>pprint-logical-block</strong> <em>macro</em> may be used regardless of the <em>value</em> of <strong>*print-pretty*</strong>.</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*print-circle*</strong>, <strong>*print-level*</strong>.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>An error of <em>type</em> <strong>type-error</strong> is signaled if any of the <!-- -->:suffix<!-- -->, <!-- -->:prefix<!-- -->, or <!-- -->:per-line-prefix<!-- --> is supplied but does not evaluate to a <em>string</em>.</p>
+<p>An error is signaled if <!-- -->:prefix<!-- --> and <!-- -->:pre-line-prefix<!-- --> are both used.</p>
+<p><strong>pprint-logical-block</strong> and the <em>pretty printing stream</em> it creates have <em>dynamic extent</em>. The consequences are undefined if, outside of this extent, output is attempted to the <em>pretty printing stream</em> it creates.</p>
+<p>It is also unspecified what happens if, within this extent, any output is sent directly to the underlying destination stream.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>pprint-pop</strong>, <strong>pprint-exit-if-list-exhausted</strong>, Section 22.3.5.2 (Tilde Less-Than-Sign: Logical Block)</p>
+<p><strong>Notes:</strong></p>
+<p>One reason for using the <strong>pprint-logical-block</strong> <em>macro</em> when the <em>value</em> of <strong>*print-pretty*</strong> is <strong>nil</strong> would be to allow it to perform checking for <em>dotted lists</em>, as well as (in conjunction with <strong>pprint-pop</strong>) checking for <strong>*print-level*</strong> or <strong>*print-length*</strong> being exceeded.</p>
+<p>Detection of circularity and sharing is supported by the <em>pretty printer</em> by in essence performing requested output twice. On the first pass, circularities and sharing are detected and the actual outputting of characters is suppressed. On the second pass, the appropriate “#<em>n</em>=” and “#<em>n</em>#” markers are inserted and characters are output. This is why the restriction on side-effects is necessary. Obeying this restriction is facilitated by using <strong>pprint-pop</strong>, instead of an ordinary <strong>pop</strong> when traversing a list being printed by the body <em>forms</em> of the <strong>pprint-logical-block</strong> <em>form</em>.)</p>
+<p><strong>pprint-newline</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>pprint-newline</strong> <em>kind</em> &amp;optional <em>stream →</em> <strong>nil</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>kind</em>—one of <!-- -->:linear<!-- -->, <!-- -->:fill<!-- -->, <!-- -->:miser<!-- -->, or <!-- -->:mandatory<!-- -->.</p>
+<p><em>stream</em>—a <em>stream designator</em> . The default is <em>standard output</em>.</p>
+<p><strong>Description:</strong></p>
+<p>If <em>stream</em> is a <em>pretty printing stream</em> and the <em>value</em> of <strong>*print-pretty*</strong> is <em>true</em>, a line break is inserted in the output when the appropriate condition below is satisfied; otherwise, <strong>pprint-newline</strong> has no effect.</p>
+<p><em>Kind</em> specifies the style of conditional newline. This <em>parameter</em> is treated as follows:</p>
+<p><strong>pprint-newline</strong></p>
+<p>:linear</p>
+<p>This specifies a “linear-style” <em>conditional newline</em>. A line break is inserted if and only if the immediately containing <em>section</em> cannot be printed on one line. The effect of this is that line breaks are either inserted at every linear-style conditional newline in a logical block or at none of them.</p>
+<p>:miser</p>
+<p>This specifies a “miser-style” <em>conditional newline</em>. A line break is inserted if and only if the immediately containing <em>section</em> cannot be printed on one line and miser style is in effect in the immediately containing logical block. The effect of this is that miser-style conditional newlines act like linear-style conditional newlines, but only when miser style is in effect. Miser style is in effect for a logical block if and only if the starting position of the logical block is less than or equal to <strong>*print-miser-width*</strong> <em>ems</em> from the right margin.</p>
+<p>:fill</p>
+<p>This specifies a “fill-style” <em>conditional newline</em>. A line break is inserted if and only if either (a) the following <em>section</em> cannot be printed on the end of the current line, (b) the preceding <em>section</em> was not printed on a single line, or (c) the immediately containing <em>section</em> cannot be printed on one line and miser style is in effect in the immediately containing logical block. If a logical block is broken up into a number of subsections by fill-style conditional newlines, the basic effect is that the logical block is printed with as many subsections as possible on each line. However, if miser style is in effect, fill-style conditional newlines act like linear-style conditional newlines.</p>
+<p>:mandatory</p>
+<p>This specifies a “mandatory-style” <em>conditional newline</em>. A line break is always inserted. This implies that none of the containing <em>sections</em> can be printed on a single line and will therefore trigger the insertion of line breaks at linear-style conditional newlines in these <em>sections</em>.</p>
+<p>When a line break is inserted by any type of conditional newline, any blanks that immediately precede the conditional newline are omitted from the output and indentation is introduced at the beginning of the next line. By default, the indentation causes the following line to begin in the same horizontal position as the first character in the immediately containing logical block. (The indentation can be changed via <strong>pprint-indent</strong>.)</p>
+<p>There are a variety of ways unconditional newlines can be introduced into the output (<em>i.e.</em>, via <strong>terpri</strong> or by printing a string containing a newline character). As with mandatory conditional newlines, this prevents any of the containing <em>sections</em> from being printed on one line. In general, when an unconditional newline is encountered, it is printed out without suppression of the preceding blanks and without any indentation following it. However, if a per-line prefix has been specified (see <strong>pprint-logical-block</strong>), this prefix will always be printed no matter how a newline originates.</p>
+<p><strong>Examples:</strong></p>
+<p>See Section 22.2.2 (Examples of using the Pretty Printer).</p>
+<p><strong>Side Effects:</strong></p>
+<p>Output to <em>stream</em>.</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*print-pretty*</strong>, <strong>*print-miser*</strong>. The presence of containing logical blocks. The placement of newlines and conditional newlines.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>An error of <em>type</em> <strong>type-error</strong> is signaled if <em>kind</em> is not one of <!-- -->:linear<!-- -->, <!-- -->:fill<!-- -->, <!-- -->:miser<!-- -->, or <!-- -->:mandatory<!-- -->.</p>
+<p><strong>See Also:</strong></p>
+<p>Section 22.3.5.1 (Tilde Underscore: Conditional Newline), Section 22.2.2 (Examples of using the Pretty Printer)</p>
+<p><strong>pprint-pop</strong> <em>Local Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>pprint-pop</strong> <em>hno argumentsi → object</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>object</em>—an <em>element</em> of the <em>list</em> being printed in the <em>lexically current logical block</em> , or <strong>nil</strong>.</p>
+<p><strong>Description:</strong></p>
+<p>Pops one <em>element</em> from the <em>list</em> being printed in the <em>lexically current logical block</em> , obeying <strong>*print-length*</strong> and <strong>*print-circle*</strong> as described below.</p>
+<p>Each time <strong>pprint-pop</strong> is called, it pops the next value off the <em>list</em> passed to the <em>lexically current logical block</em> and returns it. However, before doing this, it performs three tests:</p>
+<p><em>•</em> If the remaining ‘list’ is not a <em>list</em>, “. ” is printed followed by the remaining ‘list.’ (This makes it easier to write printing functions that are robust in the face of malformed arguments.)</p>
+<p><em>•</em> If <strong>*print-length*</strong> is <em>non-nil</em>, and <strong>pprint-pop</strong> has already been called <strong>*print-length*</strong> times within the immediately containing logical block, “...” is printed. (This makes it easy to write printing functions that properly handle <strong>*print-length*</strong>.)</p>
+<p><em>•</em> If <strong>*print-circle*</strong> is <em>non-nil</em>, and the remaining list is a circular (or shared) reference, then “. ” is printed followed by an appropriate “#<em>n</em>#” marker. (This catches instances of <em>cdr</em> circularity and sharing in lists.)</p>
+<p>If either of the three conditions above occurs, the indicated output is printed on the <em>pretty printing stream</em> created by the immediately containing <strong>pprint-logical-block</strong> and the execution of the immediately containing <strong>pprint-logical-block</strong> is terminated except for the printing of the suffix.</p>
+<p>If <strong>pprint-logical-block</strong> is given a ‘list’ argument of <strong>nil</strong>—because it is not processing a list— <strong>pprint-pop</strong> can still be used to obtain support for <strong>*print-length*</strong>. In this situation, the first and third tests above are disabled and <strong>pprint-pop</strong> always returns <strong>nil</strong>. See Section 22.2.2 (Examples of using the Pretty Printer)—specifically, the <strong>pprint-vector</strong> example.</p>
+<p>Whether or not <strong>pprint-pop</strong> is <em>fbound</em> in the <em>global environment</em> is <em>implementation-dependent</em>; however, the restrictions on redefinition and <em>shadowing</em> of <strong>pprint-pop</strong> are the same as for <em>symbols</em> in the COMMON-LISP <em>package</em> which are <em>fbound</em> in the <em>global environment</em>. The consequences of attempting to use <strong>pprint-pop</strong> outside of <strong>pprint-logical-block</strong> are undefined.</p>
+<p><strong>Side Effects:</strong></p>
+<p>Might cause output to the <em>pretty printing stream</em> associated with the lexically current logical block.</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*print-length*</strong>, <strong>*print-circle*</strong>.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>An error is signaled (either at macro expansion time or at run time) if a usage of <strong>pprint-pop</strong> occurs where there is no lexically containing <strong>pprint-logical-block</strong> <em>form</em>.</p>
+<p>The consequences are undefined if <strong>pprint-pop</strong> is executed outside of the <em>dynamic extent</em> of this <strong>pprint-logical-block</strong>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>pprint-exit-if-list-exhausted</strong>, <strong>pprint-logical-block</strong>.</p>
+<p><strong>Notes:</strong></p>
+<p>It is frequently a good idea to call <strong>pprint-exit-if-list-exhausted</strong> before calling <strong>pprint-pop</strong>. <strong>pprint-tab</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>pprint-tab</strong> <em>kind colnum colinc</em> &amp;optional <em>stream →</em> <strong>nil</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>kind</em>—one of <!-- -->:line<!-- -->, <!-- -->:section<!-- -->, <!-- -->:line-relative<!-- -->, or <!-- -->:section-relative<!-- -->.</p>
+<p><em>colnum</em>—a non-negative <em>integer</em> .</p>
+<p><em>colinc</em>—a non-negative <em>integer</em> .</p>
+<p><em>stream</em>—an <em>output stream designator</em> .</p>
+<p><strong>Description:</strong></p>
+<p>Specifies tabbing to <em>stream</em> as performed by the standard ~T format directive. If <em>stream</em> is a <em>pretty printing stream</em> and the <em>value</em> of <strong>*print-pretty*</strong> is <em>true</em>, tabbing is performed; otherwise, <strong>pprint-tab</strong> has no effect.</p>
+<p>The arguments <em>colnum</em> and <em>colinc</em> correspond to the two <em>parameters</em> to ~T and are in terms of <em>ems</em>. The <em>kind</em> argument specifies the style of tabbing. It must be one of <!-- -->:line<!-- --> (tab as by ~T), <!-- -->:section<!-- --> (tab as by ~<!-- -->:T<!-- -->, but measuring horizontal positions relative to the start of the dynamically enclosing section), <!-- -->:line-relative<!-- --> (tab as by ~@T), or <!-- -->:section-relative<!-- --> (tab as by ~:@T, but measuring</p>
+<p>horizontal positions relative to the start of the dynamically enclosing section).</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>An error is signaled if <em>kind</em> is not one of <!-- -->:line<!-- -->, <!-- -->:section<!-- -->, <!-- -->:line-relative<!-- -->, or <!-- -->:section-relative<!-- -->.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>pprint-logical-block</strong></p>
+<p><strong>print-object</strong> <em>Standard Generic Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>print-object</strong> <em>object stream → object</em></p>
+<p><strong>Method Signatures:</strong></p>
+<p><strong>print-object</strong> (<em>object standard-object</em>) <em>stream</em></p>
+<p><strong>print-object</strong> (<em>object structure-object</em>) <em>stream</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>object</em>—an <em>object</em>.</p>
+<p><em>stream</em>—a <em>stream</em>.</p>
+<p><strong>print-object</strong></p>
+<p><strong>Description:</strong></p>
+<p>The <em>generic function</em> <strong>print-object</strong> writes the printed representation of <em>object</em> to <em>stream</em>. The <em>function</em> <strong>print-object</strong> is called by the <em>Lisp printer</em> ; it should not be called by the user.</p>
+<p>Each implementation is required to provide a <em>method</em> on the <em>class</em> <strong>standard-object</strong> and on the <em>class</em> <strong>structure-object</strong>. In addition, each <em>implementation</em> must provide <em>methods</em> on enough other <em>classes</em> so as to ensure that there is always an applicable <em>method</em>. Implementations are free to add <em>methods</em> for other <em>classes</em>. Users may write <em>methods</em> for <strong>print-object</strong> for their own <em>classes</em> if they do not wish to inherit an <em>implementation-dependent method</em>.</p>
+<p>The <em>method</em> on the <em>class</em> <strong>structure-object</strong> prints the object in the default #S notation; see Section 22.1.3.12 (Printing Structures).</p>
+<p><em>Methods</em> on <strong>print-object</strong> are responsible for implementing their part of the semantics of the <em>printer control variables</em>, as follows:</p>
+<p><strong>*print-readably*</strong></p>
+<p>All methods for <strong>print-object</strong> must obey <strong>*print-readably*</strong>. This includes both user-defined methods and <em>implementation-defined</em> methods. Readable printing of <em>structures</em> and <em>standard objects</em> is controlled by their <strong>print-object</strong> method, not by their <strong>make-load-form</strong> <em>method</em>. <em>Similarity</em> for these <em>objects</em> is application dependent and hence is defined to be whatever these <em>methods</em> do; see Section 3.2.4.2 (Similarity of Literal Objects).</p>
+<p><strong>*print-escape*</strong></p>
+<p>Each <em>method</em> must implement <strong>*print-escape*</strong>.</p>
+<p><strong>*print-pretty*</strong></p>
+<p>The <em>method</em> may wish to perform specialized line breaking or other output conditional on the <em>value</em> of <strong>*print-pretty*</strong>. For further information, see (for example) the <em>macro</em> <strong>pprint-fill</strong>. See also Section 22.2.1.4 (Pretty Print Dispatch Tables) and Section 22.2.2 (Examples of using the Pretty Printer).</p>
+<p><strong>*print-length*</strong></p>
+<p><em>Methods</em> that produce output of indefinite length must obey <strong>*print-length*</strong>. For further information, see (for example) the <em>macros</em> <strong>pprint-logical-block</strong> and <strong>pprint-pop</strong>. See also Section 22.2.1.4 (Pretty Print Dispatch Tables) and Section 22.2.2 (Examples of using the Pretty Printer).</p>
+<p><strong>*print-level*</strong></p>
+<p>The printer takes care of <strong>*print-level*</strong> automatically, provided that each <em>method</em> handles exactly one level of structure and calls <strong>write</strong> (or an equivalent <em>function</em>) recursively if there are more structural levels. The printer’s decision of whether an <em>object</em> has components (and</p>
+<p>therefore should not be printed when the printing depth is not less than <strong>*print-level*</strong>) is <em>implementation-dependent</em>. In some implementations its <strong>print-object</strong> <em>method</em> is not called; in others the <em>method</em> is called, and the determination that the <em>object</em> has components is based on what it tries to write to the <em>stream</em>.</p>
+<p><strong>*print-circle*</strong></p>
+<p>When the <em>value</em> of <strong>*print-circle*</strong> is <em>true</em>, a user-defined <strong>print-object</strong> <em>method</em> can print <em>objects</em> to the supplied <em>stream</em> using <strong>write</strong>, <strong>prin1</strong>, <strong>princ</strong>, or <strong>format</strong> and expect circularities to be detected and printed using the #<em>n</em># syntax. If a user-defined <strong>print-object</strong> <em>method</em> prints to a <em>stream</em> other than the one that was supplied, then circularity detection starts over for that <em>stream</em>. See <strong>*print-circle*</strong>.</p>
+<p><strong>*print-base*</strong>, <strong>*print-radix*</strong>, <strong>*print-case*</strong>, <strong>*print-gensym*</strong>, and <strong>*print-array*</strong></p>
+<p>These <em>printer control variables</em> apply to specific types of <em>objects</em> and are handled by the <em>methods</em> for those <em>objects</em>.</p>
+<p>If these rules are not obeyed, the results are undefined.</p>
+<p>In general, the printer and the <strong>print-object</strong> methods should not rebind the print control variables as they operate recursively through the structure, but this is <em>implementation-dependent</em>.</p>
+<p>In some implementations the <em>stream</em> argument passed to a <strong>print-object</strong> <em>method</em> is not the original <em>stream</em>, but is an intermediate <em>stream</em> that implements part of the printer. <em>methods</em> should therefore not depend on the identity of this <em>stream</em>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>pprint-fill</strong>, <strong>pprint-logical-block</strong>, <strong>pprint-pop</strong>, <strong>write</strong>, <strong>*print-readably*</strong>, <strong>*print-escape*</strong>, <strong>*print-pretty*</strong>, <strong>*print-length*</strong>, Section 22.1.3 (Default Print-Object Methods), Section 22.1.3.12 (Printing Structures), Section 22.2.1.4 (Pretty Print Dispatch Tables), Section 22.2.2 (Examples of using the Pretty Printer)</p>
+<p><strong>print-unreadable-object</strong> <em>Macro</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>print-unreadable-object</strong> (<em>object stream</em> &amp;key <em>type identity</em>) <em>{form}</em>* <em>→</em> <strong>nil</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>object</em>—an <em>object</em>; evaluated.</p>
+<p><em>stream</em>—a <em>stream designator</em> ; evaluated.</p>
+<p><em>type</em>—a <em>generalized boolean</em>; evaluated.</p>
+<p><em>identity</em>—a <em>generalized boolean</em>; evaluated.</p>
+<p><em>forms</em>—an <em>implicit progn</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Outputs a printed representation of <em>object</em> on <em>stream</em>, beginning with “#&lt;” and ending with “&gt;”. Everything output to <em>stream</em> by the body <em>forms</em> is enclosed in the the angle brackets. If <em>type</em> is <em>true</em>, the output from <em>forms</em> is preceded by a brief description of the <em>object</em>’s <em>type</em> and a space character. If <em>identity</em> is <em>true</em>, the output from <em>forms</em> is followed by a space character and a representation of the <em>object</em>’s identity, typically a storage address.</p>
+<p>If either <em>type</em> or <em>identity</em> is not supplied, its value is <em>false</em>. It is valid to omit the body <em>forms</em>. If <em>type</em> and <em>identity</em> are both true and there are no body <em>forms</em>, only one space character separates the type and the identity.</p>
+<p><strong>Examples:</strong></p>
+<p>;; Note that in this example, the precise form of the output ;; is <em>implementation-dependent</em>.</p>
+<p>(defmethod print-object ((obj airplane) stream)</p>
+<p>(print-unreadable-object (obj stream <!-- -->:type<!-- --> t <!-- -->:identity<!-- --> t)</p>
+<p>(princ (tail-number obj) stream)))</p>
+<p>(prin1-to-string my-airplane)</p>
+<p><em>→</em> &quot;#&lt;Airplane NW0773 36000123135&gt;&quot;</p>
+<p><i><sup>or</sup>→</i> &quot;#&lt;FAA<!-- -->:AIRPLANE<!-- --> NW0773 17&gt;&quot;</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>If <strong>*print-readably*</strong> is <em>true</em>, <strong>print-unreadable-object</strong> signals an error of <em>type</em> <strong>print-not-readable</strong> without printing anything.</p>
+<p><strong>set-pprint-dispatch</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>set-pprint-dispatch</strong> <em>type-specifier function</em> &amp;optional <em>priority table →</em> <strong>nil</strong></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>type-specifier</em>—a <em>type specifier</em> .</p>
+<p><em>function</em>—a <em>function</em>, a <em>function name</em>, or <strong>nil</strong>.</p>
+<p><em>priority</em>—a <em>real</em>. The default is 0.</p>
+<p><em>table</em>—a <em>pprint dispatch table</em>. The default is the <em>value</em> of <strong>*print-pprint-dispatch*</strong>.</p>
+<p><strong>Description:</strong></p>
+<p>Installs an entry into the <em>pprint dispatch table</em> which is <em>table</em>.</p>
+<p><em>Type-specifier</em> is the <em>key</em> of the entry. The first action of <strong>set-pprint-dispatch</strong> is to remove any pre-existing entry associated with <em>type-specifier</em>. This guarantees that there will never be two entries associated with the same <em>type specifier</em> in a given <em>pprint dispatch table</em>. Equality of <em>type specifiers</em> is tested by <strong>equal</strong>.</p>
+<p>Two values are associated with each <em>type specifier</em> in a <em>pprint dispatch table</em>: a <em>function</em> and a <em>priority</em>. The <em>function</em> must accept two arguments: the <em>stream</em> to which output is sent and the <em>object</em> to be printed. The <em>function</em> should <em>pretty print</em> the <em>object</em> to the <em>stream</em>. The <em>function</em> can assume that object satisfies the <em>type</em> given by <em>type-specifier</em> . The <em>function</em> must obey <strong>*print-readably*</strong>. Any values returned by the <em>function</em> are ignored.</p>
+<p><em>Priority</em> is a priority to resolve conflicts when an object matches more than one entry.</p>
+<p>It is permissible for <em>function</em> to be <strong>nil</strong>. In this situation, there will be no <em>type-specifier</em> entry in <em>table</em> after <strong>set-pprint-dispatch</strong> returns.</p>
+<p><strong>Exceptional Situations:</strong></p>
+<p>An error is signaled if <em>priority</em> is not a <em>real</em>.</p>
+<p><strong>Notes:</strong></p>
+<p>Since <em>pprint dispatch tables</em> are often used to control the pretty printing of Lisp code, it is common for the <em>type-specifier</em> to be an <em>expression</em> of the form</p>
+<p>(cons <em>car-type cdr-type</em>)</p>
+<p>This signifies that the corresponding object must be a cons cell whose <em>car</em> matches the <em>type specifier car-type</em> and whose <em>cdr</em> matches the <em>type specifier cdr-type</em>. The <em>cdr-type</em> can be omitted in which case it defaults to <strong>t</strong>.</p>
+<p><strong>write, prin1, print, pprint, princ</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>write</strong> <em>object</em> &amp;key <em>array base case circle escape gensym</em></p>
+<p><em>length level lines miser-width pprint-dispatch</em></p>
+<p><em>pretty radix readably right-margin stream</em></p>
+<p><em>→ object</em></p>
+<p><strong>prin1</strong> <em>object</em> &amp;optional <em>output-stream → object</em></p>
+<p><strong>princ</strong> <em>object</em> &amp;optional <em>output-stream → object</em></p>
+<p><strong>write, prin1, print, pprint, princ</strong></p>
+<p><strong>print</strong> <em>object</em> &amp;optional <em>output-stream → object</em></p>
+<p><strong>pprint</strong> <em>object</em> &amp;optional <em>output-stream → hno valuesi</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>object</em>—an <em>object</em>.</p>
+<p><em>output-stream</em>—an <em>output stream designator</em> . The default is <em>standard output</em>.</p>
+<p><em>array</em>—a <em>generalized boolean</em>.</p>
+<p><em>base</em>—a <em>radix</em> .</p>
+<p><em>case</em>—a <em>symbol</em> of <em>type</em> (member <!-- -->:upcase<!-- --> <!-- -->:downcase<!-- --> <!-- -->:capitalize<!-- -->).</p>
+<p><em>circle</em>—a <em>generalized boolean</em>.</p>
+<p><em>escape</em>—a <em>generalized boolean</em>.</p>
+<p><em>gensym</em>—a <em>generalized boolean</em>.</p>
+<p><em>length</em>—a non-negative <em>integer</em> , or <strong>nil</strong>.</p>
+<p><em>level</em>—a non-negative <em>integer</em> , or <strong>nil</strong>.</p>
+<p><em>lines</em>—a non-negative <em>integer</em> , or <strong>nil</strong>.</p>
+<p><em>miser-width</em>—a non-negative <em>integer</em> , or <strong>nil</strong>.</p>
+<p><em>pprint-dispatch</em>—a <em>pprint dispatch table</em>.</p>
+<p><em>pretty</em>—a <em>generalized boolean</em>.</p>
+<p><em>radix</em>—a <em>generalized boolean</em>.</p>
+<p><em>readably</em>—a <em>generalized boolean</em>.</p>
+<p><em>right-margin</em>—a non-negative <em>integer</em> , or <strong>nil</strong>.</p>
+<p><em>stream</em>—an <em>output stream designator</em> . The default is <em>standard output</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>write</strong>, <strong>prin1</strong>, <strong>princ</strong>, <strong>print</strong>, and <strong>pprint</strong> write the printed representation of <em>object</em> to <em>output-stream</em>.</p>
+<p><strong>write</strong> is the general entry point to the <em>Lisp printer</em> . For each explicitly supplied <em>keyword parameter</em> named in Figure 22–7, the corresponding <em>printer control variable</em> is dynamically bound to its <em>value</em> while printing goes on; for each <em>keyword parameter</em> in Figure 22–7 that is not explicitly supplied, the value of the corresponding <em>printer control variable</em> is the same as it was at the time <strong>write</strong> was invoked. Once the appropriate <em>bindings</em> are <em>established</em>, the <em>object</em> is output by the <em>Lisp printer</em> .</p>
+<p><strong>write, prin1, print, pprint, princ</strong></p>
+<p>|<strong>Parameter Corresponding Dynamic Variable</strong>|</p>
+<p>| :- |</p>
+<p>|</p><p><em>array</em> <strong>*print-array*</strong> </p><p><em>base</em> <strong>*print-base*</strong> </p><p><em>case</em> <strong>*print-case*</strong> </p><p><em>circle</em> <strong>*print-circle*</strong> </p><p><em>escape</em> <strong>*print-escape*</strong> </p><p><em>gensym</em> <strong>*print-gensym*</strong> </p><p><em>length</em> <strong>*print-length*</strong> </p><p><em>level</em> <strong>*print-level*</strong> </p><p><em>lines</em> <strong>*print-lines*</strong> </p><p><em>miser-width</em> <strong>*print-miser-width*</strong> </p><p><em>pprint-dispatch</em> <strong>*print-pprint-dispatch*</strong> </p><p><em>pretty</em> <strong>*print-pretty*</strong> </p><p><em>radix</em> <strong>*print-radix*</strong> </p><p><em>readably</em> <strong>*print-readably*</strong> </p><p><em>right-margin</em> <strong>*print-right-margin*</strong></p>|<p></p>
+<p><strong>Figure 22–7. Argument correspondences for the WRITE function.</strong></p>
+<p><strong>prin1</strong>, <strong>princ</strong>, <strong>print</strong>, and <strong>pprint</strong> implicitly <em>bind</em> certain print parameters to particu lar values. The remaining parameter values are taken from <strong>*print-array*</strong>, <strong>*print-base*</strong>, <strong>*print-case*</strong>, <strong>*print-circle*</strong>, <strong>*print-escape*</strong>, <strong>*print-gensym*</strong>, <strong>*print-length*</strong>, <strong>*print-level*</strong>, <strong>*print-lines*</strong>, <strong>*print-miser-width*</strong>, <strong>*print-pprint-dispatch*</strong>, <strong>*print-pretty*</strong>, <strong>*print-radix*</strong>, and <strong>*print-right-margin*</strong>.</p>
+<p><strong>prin1</strong> produces output suitable for input to <strong>read</strong>. It binds <strong>*print-escape*</strong> to <em>true</em>.</p>
+<p><strong>princ</strong> is just like <strong>prin1</strong> except that the output has no <em>escape characters</em>. It binds <strong>*print-escape*</strong> to <em>false</em> and <strong>*print-readably*</strong> to <em>false</em>. The general rule is that output from <strong>princ</strong> is intended to look good to people, while output from <strong>prin1</strong> is intended to be acceptable to <strong>read</strong>.</p>
+<p><strong>print</strong> is just like <strong>prin1</strong> except that the printed representation of <em>object</em> is preceded by a newline and followed by a space.</p>
+<p><strong>pprint</strong> is just like <strong>print</strong> except that the trailing space is omitted and <em>object</em> is printed with the <strong>*print-pretty*</strong> flag <em>non-nil</em> to produce pretty output.</p>
+<p><em>Output-stream</em> specifies the <em>stream</em> to which output is to be sent.</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*standard-output*</strong>, <strong>*terminal-io*</strong>, <strong>*print-escape*</strong>, <strong>*print-radix*</strong>, <strong>*print-base*</strong>, <strong>*print-circle*</strong>, <strong>*print-pretty*</strong>, <strong>*print-level*</strong>, <strong>*print-length*</strong>, <strong>*print-case*</strong>, <strong>*print-gensym*</strong>, <strong>*print-array*</strong>, <strong>*read-default-float-format*</strong>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>readtable-case</strong>, Section 22.3.4 (FORMAT Printer Operations)</p>
+<p><strong>Notes:</strong></p>
+<p>The <em>functions</em> <strong>prin1</strong> and <strong>print</strong> do not bind <strong>*print-readably*</strong>.</p>
+<p>(prin1 object output-stream)</p>
+<p><em>≡</em> (write object <!-- -->:stream<!-- --> output-stream <!-- -->:escape<!-- --> t)</p>
+<p>(princ object output-stream)</p>
+<p><em>≡</em> (write object stream output-stream <!-- -->:escape<!-- --> nil <!-- -->:readably<!-- --> nil)</p>
+<p>(print object output-stream)</p>
+<p><em>≡</em> (progn (terpri output-stream)</p>
+<p>(write object <!-- -->:stream<!-- --> output-stream</p>
+<p>:escape<!-- --> t)</p>
+<p>(write-char #\space output-stream))</p>
+<p>(pprint object output-stream)</p>
+<p><em>≡</em> (write object <!-- -->:stream<!-- --> output-stream <!-- -->:escape<!-- --> t <!-- -->:pretty<!-- --> t)</p>
+<p><strong>write-to-string, prin1-to-string, princ-to-string</strong> <em>Function</em></p>
+<p><strong>Syntax:</strong></p>
+<p><strong>write-to-string</strong> <em>object</em> &amp;key <em>array base case circle escape gensym</em></p>
+<p><em>length level lines miser-width pprint-dispatch</em></p>
+<p><em>pretty radix readably right-margin</em></p>
+<p><em>→ string</em></p>
+<p><strong>prin1-to-string</strong> <em>object → string</em></p>
+<p><strong>princ-to-string</strong> <em>object → string</em></p>
+<p><strong>Arguments and Values:</strong></p>
+<p><em>object</em>—an <em>object</em>.</p>
+<p><em>array</em>—a <em>generalized boolean</em>.</p>
+<p><em>base</em>—a <em>radix</em> .</p>
+<p><strong>write-to-string, prin1-to-string, princ-to-string</strong></p>
+<p><em>case</em>—a <em>symbol</em> of <em>type</em> (member <!-- -->:upcase<!-- --> <!-- -->:downcase<!-- --> <!-- -->:capitalize<!-- -->).</p>
+<p><em>circle</em>—a <em>generalized boolean</em>.</p>
+<p><em>escape</em>—a <em>generalized boolean</em>.</p>
+<p><em>gensym</em>—a <em>generalized boolean</em>.</p>
+<p><em>length</em>—a non-negative <em>integer</em> , or <strong>nil</strong>.</p>
+<p><em>level</em>—a non-negative <em>integer</em> , or <strong>nil</strong>.</p>
+<p><em>lines</em>—a non-negative <em>integer</em> , or <strong>nil</strong>.</p>
+<p><em>miser-width</em>—a non-negative <em>integer</em> , or <strong>nil</strong>.</p>
+<p><em>pprint-dispatch</em>—a <em>pprint dispatch table</em>.</p>
+<p><em>pretty</em>—a <em>generalized boolean</em>.</p>
+<p><em>radix</em>—a <em>generalized boolean</em>.</p>
+<p><em>readably</em>—a <em>generalized boolean</em>.</p>
+<p><em>right-margin</em>—a non-negative <em>integer</em> , or <strong>nil</strong>.</p>
+<p><em>string</em>—a <em>string</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>write-to-string</strong>, <strong>prin1-to-string</strong>, and <strong>princ-to-string</strong> are used to create a <em>string</em> consisting of the printed representation of <em>object</em>. <em>Object</em> is effectively printed as if by <strong>write</strong>, <strong>prin1</strong>, or <strong>princ</strong>, respectively, and the <em>characters</em> that would be output are made into a <em>string</em>.</p>
+<p><strong>write-to-string</strong> is the general output function. It has the ability to specify all the parameters applicable to the printing of <em>object</em>.</p>
+<p><strong>prin1-to-string</strong> acts like <strong>write-to-string</strong> with <!-- -->:escape<!-- --> t, that is, escape characters are written where appropriate.</p>
+<p><strong>princ-to-string</strong> acts like <strong>write-to-string</strong> with <!-- -->:escape<!-- --> nil <!-- -->:readably<!-- --> nil. Thus no <em>escape characters</em> are written.</p>
+<p>All other keywords that would be specified to <strong>write-to-string</strong> are default values when <strong>prin1-to-string</strong> or <strong>princ-to-string</strong> is invoked.</p>
+<p>The meanings and defaults for the keyword arguments to <strong>write-to-string</strong> are the same as those for <strong>write</strong>.</p>
+<p><strong>Examples:</strong></p>
+<p>(prin1-to-string &quot;abc&quot;) <em>→</em> &quot;&quot;abc&quot;&quot;</p>
+<p>(princ-to-string &quot;abc&quot;) <em>→</em> &quot;abc&quot;</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>*print-escape*</strong>, <strong>*print-radix*</strong>, <strong>*print-base*</strong>, <strong>*print-circle*</strong>, <strong>*print-pretty*</strong>, <strong>*print-level*</strong>, <strong>*print-length*</strong>, <strong>*print-case*</strong>, <strong>*print-gensym*</strong>, <strong>*print-array*</strong>, <strong>*read-default-float-format*</strong>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>write</strong></p>
+<p><strong>Notes:</strong></p>
+<p>(write-to-string <em>object &amp;#123;key argument&amp;#125;</em>*)</p>
+<p><em>≡</em> (with-output-to-string (#1=#<!-- -->:string-stream<!-- -->)</p>
+<p>(write object <!-- -->:stream<!-- --> #1# <em>&amp;#123;key argument&amp;#125;</em>*))</p>
+<p>(princ-to-string <em>object</em>)</p>
+<p><em>≡</em> (with-output-to-string (string-stream)</p>
+<p>(princ <em>object</em> string-stream))</p>
+<p>(prin1-to-string <em>object</em>)</p>
+<p><em>≡</em> (with-output-to-string (string-stream)</p>
+<p>(prin1 <em>object</em> string-stream))</p>
+<p><em>∗</em><strong>print-array</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a <em>generalized boolean</em>.</p>
+<p><strong>Initial Value:</strong></p>
+<p><em>implementation-dependent</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Controls the format in which <em>arrays</em> are printed. If it is <em>false</em>, the contents of <em>arrays</em> other than <em>strings</em> are never printed. Instead, <em>arrays</em> are printed in a concise form using #&lt; that gives enough information for the user to be able to identify the <em>array</em>, but does not include the entire <em>array</em> contents. If it is <em>true</em>, non-<em>string arrays</em> are printed using #(...), #*, or #nA syntax.</p>
+<p><strong>Affected By:</strong></p>
+<p>The <em>implementation</em>.</p>
+<p><strong>See Also:</strong></p>
+<p>Section 2.4.8.3 (Sharpsign Left-Parenthesis), Section 2.4.8.20 (Sharpsign Less-Than-Sign) <em>∗</em><strong>print-base</strong><em>∗</em>**,** <em>∗</em><strong>print-radix</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p><strong>*print-base*</strong>—a <em>radix</em> . <strong>*print-radix*</strong>—a <em>generalized boolean</em>.</p>
+<p><strong>Initial Value:</strong></p>
+<p>The initial <em>value</em> of <strong>*print-base*</strong> is 10. The initial <em>value</em> of <strong>*print-radix*</strong> is <em>false</em>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>*print-base*</strong> and <strong>*print-radix*</strong> control the printing of <em>rationals</em>. The <em>value</em> of <strong>*print-base*</strong> is called the <em>current output base</em>.</p>
+<p>The <em>value</em> of <strong>*print-base*</strong> is the <em>radix</em> in which the printer will print <em>rationals</em>. For radices above 10, letters of the alphabet are used to represent digits above 9.</p>
+<p>If the <em>value</em> of <strong>*print-radix*</strong> is <em>true</em>, the printer will print a radix specifier to indicate the <em>radix</em> in which it is printing a <em>rational</em> number. The radix specifier is always printed using lowercase letters. If <strong>*print-base*</strong> is 2, 8, or 16, then the radix specifier used is #b, #o, or #x, respectively. For <em>integers</em>, base ten is indicated by a trailing decimal point instead of a leading radix specifier; for <em>ratios</em>, #10r is used.</p>
+<p><strong>Examples:</strong></p>
+<p>(let ((*print-base* 24.) (*print-radix* t))</p>
+<p>(print 23.))</p>
+<p>▷ #24rN</p>
+<p><em>→</em> 23</p>
+<p>(setq *print-base* 10) <em>→</em> 10</p>
+<p>(setq *print-radix* nil) <em>→</em> NIL</p>
+<p>(dotimes (i 35)</p>
+<p>(let ((*print-base* (+ i 2))) ;print the decimal number 40</p>
+<p>(write 40) ;in each base from 2 to 36</p>
+<p>(if (zerop (mod i 10)) (terpri) (format t &quot; &quot;))))</p>
+<p>▷ 101000</p>
+<p>▷ 1111 220 130 104 55 50 44 40 37 34</p>
+<p>▷ 31 2C 2A 28 26 24 22 20 1J 1I</p>
+<p>▷ 1H 1G 1F 1E 1D 1C 1B 1A 19 18</p>
+<p>▷ 17 16 15 14</p>
+<p><em>→</em> NIL</p>
+<p>(dolist (pb ’(2 3 8 10 16))</p>
+<p>(let ((*print-radix* t) ;print the integer 10 and</p>
+<p>(*print-base* pb)) ;the ratio 1/10 in bases 2,</p>
+<p>(format t &quot;~&amp;~S <del>S</del>%&quot; 10 1/10))) ;3, 8, 10, 16</p>
+<p>▷ #b1010 #b1/1010</p>
+<p>▷ #3r101 #3r1/101</p>
+<p>▷ #o12 #o1/12</p>
+<p>▷ 10. #10r1/10</p>
+<p>▷ #xA #x1/A</p>
+<p><em>→</em> NIL</p>
+<p><strong>Affected By:</strong></p>
+<p>Might be <em>bound</em> by <strong>format</strong>, and <strong>write</strong>, <strong>write-to-string</strong>.</p>
+<p><strong>See Also:</strong></p>
+<p><strong>format</strong>, <strong>write</strong>, <strong>write-to-string</strong></p>
+<p><em>∗</em><strong>print-case</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>One of the <em>symbols</em> <!-- -->:upcase<!-- -->, <!-- -->:downcase<!-- -->, or <!-- -->:capitalize<!-- -->.</p>
+<p><strong>Initial Value:</strong></p>
+<p>The <em>symbol</em> <!-- -->:upcase<!-- -->.</p>
+<p><strong>Description:</strong></p>
+<p>The <em>value</em> of <strong>*print-case*</strong> controls the case (upper, lower, or mixed) in which to print any uppercase characters in the names of <em>symbols</em> when vertical-bar syntax is not used.</p>
+<p><strong>*print-case*</strong> has an effect at all times when the <em>value</em> of <strong>*print-escape*</strong> is <em>false</em>. <strong>*print-case*</strong> also has an effect when the <em>value</em> of <strong>*print-escape*</strong> is <em>true</em> unless inside an escape context (<em>i.e.</em>, unless between <em>vertical-bars</em> or after a <em>slash</em>).</p>
+<p><strong>Examples:</strong></p>
+<p>(defun test-print-case ()</p>
+<p>(dolist (*print-case* ’(<!-- -->:upcase<!-- --> <!-- -->:downcase<!-- --> <!-- -->:capitalize<!-- -->))</p>
+<p>(format t &quot;~&amp;~S <del>S</del>%&quot; ’this-and-that ’|And-something-elSE|)))</p>
+<p><em>→</em> TEST-PC</p>
+<p>;; Although the choice of which characters to escape is specified by</p>
+<p>;; *PRINT-CASE*, the choice of how to escape those characters</p>
+<p>;; (i.e., whether single escapes or multiple escapes are used)</p>
+<p>;; is implementation-dependent. The examples here show two of the</p>
+<p>;; many valid ways in which escaping might appear.</p>
+<p>(test-print-case) ;Implementation A</p>
+<p>▷ THIS-AND-THAT |And-something-elSE|</p>
+<p>▷ this-and-that a\n\d-\s\o\m\e\t\h\i\n\g-\e\lse</p>
+<p>▷ This-And-That A\n\d-\s\o\m\e\t\h\i\n\g-\e\lse</p>
+<p><em>→</em> NIL</p>
+<p>(test-print-case) ;Implementation B</p>
+<p>▷ THIS-AND-THAT |And-something-elSE|</p>
+<p>▷ this-and-that a|nd-something-el|se</p>
+<p>▷ This-And-That A|nd-something-el|se</p>
+<p><em>→</em> NIL</p>
+<p><strong>See Also:</strong></p>
+<p><strong>write</strong></p>
+<p><strong>Notes:</strong></p>
+<p><strong>read</strong> normally converts lowercase characters appearing in <em>symbols</em> to corresponding uppercase characters, so that internally print names normally contain only uppercase characters.</p>
+<p>If <strong>*print-escape*</strong> is <em>true</em>, lowercase characters in the <em>name</em> of a <em>symbol</em> are always printed in lowercase, and are preceded by a single escape character or enclosed by multiple escape characters; uppercase characters in the <em>name</em> of a <em>symbol</em> are printed in upper case, in lower case, or in mixed case so as to capitalize words, according to the value of <strong>*print-case*</strong>. The convention for what constitutes a “word” is the same as for <strong>string-capitalize</strong>.</p>
+<p><em>∗</em><strong>print-circle</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a <em>generalized boolean</em>.</p>
+<p><strong>Initial Value:</strong></p>
+<p><em>false</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Controls the attempt to detect circularity and sharing in an <em>object</em> being printed.</p>
+<p>If <em>false</em>, the printing process merely proceeds by recursive descent without attempting to detect circularity and sharing.</p>
+<p>If <em>true</em>, the printer will endeavor to detect cycles and sharing in the structure to be printed, and to use #<em>n</em>= and #<em>n</em># syntax to indicate the circularities or shared components.</p>
+<p>If <em>true</em>, a user-defined <strong>print-object</strong> <em>method</em> can print <em>objects</em> to the supplied <em>stream</em> using <strong>write</strong>, <strong>prin1</strong>, <strong>princ</strong>, or <strong>format</strong> and expect circularities and sharing to be detected and printed using the</p>
+<p>#<em>n</em># syntax. If a user-defined <strong>print-object</strong> <em>method</em> prints to a <em>stream</em> other than the one that was supplied, then circularity detection starts over for that <em>stream</em>.</p>
+<p>Note that implementations should not use #<em>n</em># notation when the <em>Lisp reader</em> would automatically assure sharing without it (<em>e.g.</em>, as happens with <em>interned symbols</em>).</p>
+<p><strong>Examples:</strong></p>
+<p>(let ((a (list 1 2 3)))</p>
+<p>(setf (cdddr a) a)</p>
+<p>(let ((*print-circle* t))</p>
+<p>(write a)</p>
+<p>:done<!-- -->))</p>
+<p>▷ #1=(1 2 3 . #1#)</p>
+<p><em>→</em> <!-- -->:DONE</p>
+<p><strong>See Also:</strong></p>
+<p><strong>write</strong></p>
+<p><strong>Notes:</strong></p>
+<p>An attempt to print a circular structure with <strong>*print-circle*</strong> set to <strong>nil</strong> may lead to looping behavior and failure to terminate.</p>
+<p><em>∗</em><strong>print-escape</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a <em>generalized boolean</em>.</p>
+<p><strong>Initial Value:</strong></p>
+<p><em>true</em>.</p>
+<p><strong>Description:</strong></p>
+<p>If <em>false</em>, escape characters and <em>package prefixes</em> are not output when an expression is printed.</p>
+<p>If <em>true</em>, an attempt is made to print an <em>expression</em> in such a way that it can be read again to produce an <strong>equal</strong> <em>expression</em>. (This is only a guideline; not a requirement. See <strong>*print-readably*</strong>.)</p>
+<p>For more specific details of how the <em>value</em> of <strong>*print-escape*</strong> affects the printing of certain <em>types</em>, see Section 22.1.3 (Default Print-Object Methods).</p>
+<p><strong>Examples:</strong></p>
+<p>(let ((*print-escape* t)) (write #\a))</p>
+<p>▷ #\a</p>
+<p><em>→</em> #\a</p>
+<p>(let ((*print-escape* nil)) (write #\a))</p>
+<p>▷ a</p>
+<p><em>→</em> #\a</p>
+<p><strong>Affected By:</strong></p>
+<p><strong>princ</strong>, <strong>prin1</strong>, <strong>format</strong></p>
+<p><strong>See Also:</strong></p>
+<p><strong>write</strong>, <strong>readtable-case</strong></p>
+<p><strong>Notes:</strong></p>
+<p><strong>princ</strong> effectively binds <strong>*print-escape*</strong> to <em>false</em>. <strong>prin1</strong> effectively binds <strong>*print-escape*</strong> to <em>true</em>. <em>∗</em><strong>print-gensym</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a <em>generalized boolean</em>.</p>
+<p><strong>Initial Value:</strong></p>
+<p><em>true</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Controls whether the prefix “#:” is printed before <em>apparently uninterned symbols</em>. The prefix is printed before such <em>symbols</em> if and only if the <em>value</em> of <strong>*print-gensym*</strong> is <em>true</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(let ((*print-gensym* nil))</p>
+<p>(print (gensym)))</p>
+<p>▷ G6040</p>
+<p><em>→</em> #<!-- -->:G6040</p>
+<p><strong>See Also:</strong></p>
+<p><strong>write</strong>, <strong>*print-escape*</strong></p>
+<p><em>∗</em><strong>print-level</strong><em>∗</em>**,** <em>∗</em><strong>print-length</strong><em>∗</em></p>
+<p><em>∗</em><strong>print-level</strong><em>∗</em>**,** <em>∗</em><strong>print-length</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a non-negative <em>integer</em> , or <strong>nil</strong>.</p>
+<p><strong>Initial Value:</strong></p>
+<p><strong>nil</strong>.</p>
+<p><strong>Description:</strong></p>
+<p><strong>*print-level*</strong> controls how many levels deep a nested <em>object</em> will print. If it is <em>false</em>, then no control is exercised. Otherwise, it is an <em>integer</em> indicating the maximum level to be printed. An <em>object</em> to be printed is at level 0; its components (as of a <em>list</em> or <em>vector</em> ) are at level 1; and so on. If an <em>object</em></p>
+<p>to be recursively printed has components and is at a level equal to or greater than the <em>value</em> of <strong>*print-level*</strong>, then the <em>object</em> is printed as “#”.</p>
+<p><strong>*print-length*</strong> controls how many elements at a given level are printed. If it is <em>false</em>, there is no limit to the number of components printed. Otherwise, it is an <em>integer</em> indicating the maximum number of <em>elements</em> of an <em>object</em> to be printed. If exceeded, the printer will print “...” in place of the other <em>elements</em>. In the case of a <em>dotted list</em>, if the <em>list</em> contains exactly as many <em>elements</em> as the <em>value</em> of <strong>*print-length*</strong>, the terminating <em>atom</em> is printed rather than printing “...”</p>
+<p><strong>*print-level*</strong> and <strong>*print-length*</strong> affect the printing of an any <em>object</em> printed with a list-like syntax. They do not affect the printing of <em>symbols</em>, <em>strings</em>, and <em>bit vectors</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(setq a ’(1 (2 (3 (4 (5 (6))))))) <em>→</em> (1 (2 (3 (4 (5 (6))))))</p>
+<p>(dotimes (i 8)</p>
+<p>(let ((*print-level* i))</p>
+<p>(format t &quot;~&amp;~D – <del>S</del>%&quot; i a)))</p>
+<p>▷ 0 – #</p>
+<p>▷ 1 – (1 #)</p>
+<p>▷ 2 – (1 (2 #))</p>
+<p>▷ 3 – (1 (2 (3 #)))</p>
+<p>▷ 4 – (1 (2 (3 (4 #))))</p>
+<p>▷ 5 – (1 (2 (3 (4 (5 #)))))</p>
+<p>▷ 6 – (1 (2 (3 (4 (5 (6))))))</p>
+<p>▷ 7 – (1 (2 (3 (4 (5 (6))))))</p>
+<p><em>→</em> NIL</p>
+<p>(setq a ’(1 2 3 4 5 6)) <em>→</em> (1 2 3 4 5 6)</p>
+<p>(dotimes (i 7)</p>
+<p>(let ((*print-length* i))</p>
+<p>(format t &quot;~&amp;~D – <del>S</del>%&quot; i a)))</p>
+<p>▷ 0 – (...)</p>
+<p>▷ 1 – (1 ...)</p>
+<p>▷ 2 – (1 2 ...)</p>
+<p>▷ 3 – (1 2 3 ...)</p>
+<p>▷ 4 – (1 2 3 4 ...)</p>
+<p>▷ 5 – (1 2 3 4 5 6)</p>
+<p>▷ 6 – (1 2 3 4 5 6)</p>
+<p><em>→</em> NIL</p>
+<p>(dolist (level-length ’((0 1) (1 1) (1 2) (1 3) (1 4)</p>
+<p>(2 1) (2 2) (2 3) (3 2) (3 3) (3 4)))</p>
+<p>(let ((*print-level* (first level-length))</p>
+<p>(*print-length* (second level-length)))</p>
+<p>(format t &quot;~&amp;~D ~D – <del>S</del>%&quot;</p>
+<p>*print-level* *print-length*</p>
+<p>’(if (member x y) (+ (car x) 3) ’(foo . #(a b c d &quot;Baz&quot;))))))</p>
+<p>▷ 0 1 – #</p>
+<p>▷ 1 1 – (IF ...)</p>
+<p>▷ 1 2 – (IF # ...)</p>
+<p>▷ 1 3 – (IF # # ...)</p>
+<p>▷ 1 4 – (IF # # #)</p>
+<p>▷ 2 1 – (IF ...)</p>
+<p>▷ 2 2 – (IF (MEMBER X ...) ...)</p>
+<p>▷ 2 3 – (IF (MEMBER X Y) (+ # 3) ...)</p>
+<p>▷ 3 2 – (IF (MEMBER X ...) ...)</p>
+<p>▷ 3 3 – (IF (MEMBER X Y) (+ (CAR X) 3) ...)</p>
+<p>▷ 3 4 – (IF (MEMBER X Y) (+ (CAR X) 3) ’(FOO . #(A B C D ...)))</p>
+<p><em>→</em> NIL</p>
+<p><strong>See Also:</strong></p>
+<p><strong>write</strong></p>
+<p><em>∗</em><strong>print-lines</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a non-negative <em>integer</em> , or <strong>nil</strong>.</p>
+<p><strong>Initial Value:</strong></p>
+<p><strong>nil</strong>.</p>
+<p><strong>Description:</strong></p>
+<p>When the <em>value</em> of <strong>*print-lines*</strong> is other than <strong>nil</strong>, it is a limit on the number of output lines produced when something is pretty printed. If an attempt is made to go beyond that many lines, “..” is printed at the end of the last line followed by all of the suffixes (closing delimiters) that are pending to be printed.</p>
+<p><strong>Examples:</strong></p>
+<p>(let ((*print-right-margin* 25) (*print-lines* 3))</p>
+<p>(pprint ’(progn (setq a 1 b 2 c 3 d 4))))</p>
+<p>▷ (PROGN (SETQ A 1</p>
+<p>▷ B 2</p>
+<p>▷ C 3 ..))</p>
+<p><em>→ hno valuesi</em></p>
+<p><strong>Notes:</strong></p>
+<p>The “..” notation is intentionally different than the “...” notation used for level abbreviation, so that the two different situations can be visually distinguished.</p>
+<p>This notation is used to increase the likelihood that the <em>Lisp reader</em> will signal an error if an attempt is later made to read the abbreviated output. Note however that if the truncation occurs in a <em>string</em>, as in &quot;This string has been trunc..&quot;, the problem situation cannot be detected later and no such error will be signaled.</p>
+<p><em>∗</em><strong>print-miser-width</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a non-negative <em>integer</em> , or <strong>nil</strong>.</p>
+<p><strong>Initial Value:</strong></p>
+<p><em>implementation-dependent</em></p>
+<p><strong>Description:</strong></p>
+<p>If it is not <strong>nil</strong>, the <em>pretty printer</em> switches to a compact style of output (called miser style) whenever the width available for printing a substructure is less than or equal to this many <em>ems</em>.</p>
+<p><em>∗</em><strong>print-pprint-dispatch</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a <em>pprint dispatch table</em>.</p>
+<p><strong>Initial Value:</strong></p>
+<p><em>implementation-dependent</em>, but the initial entries all use a special class of priorities that have the property that they are less than every priority that can be specified using <strong>set-pprint-dispatch</strong>, so that the initial contents of any entry can be overridden.</p>
+<p><strong>Description:</strong></p>
+<p>The <em>pprint dispatch table</em> which currently controls the <em>pretty printer</em> .</p>
+<p><strong>See Also:</strong></p>
+<p><strong>*print-pretty*</strong>, Section 22.2.1.4 (Pretty Print Dispatch Tables)</p>
+<p><strong>Notes:</strong></p>
+<p>The intent is that the initial <em>value</em> of this <em>variable</em> should cause ‘traditional’ <em>pretty printing</em> of <em>code</em>. In general, however, you can put a value in <strong>*print-pprint-dispatch*</strong> that makes pretty-printed output look exactly like non-pretty-printed output. Setting <strong>*print-pretty*</strong> to <em>true</em> just causes the functions contained in the <em>current pprint dispatch table</em> to have priority over normal <strong>print-object</strong> methods; it has no magic way of enforcing that those functions actually produce pretty output. For details, see Section 22.2.1.4 (Pretty Print Dispatch Tables).</p>
+<p><em>∗</em><strong>print-pretty</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a <em>generalized boolean</em>.</p>
+<p><strong>Initial Value:</strong></p>
+<p><em>implementation-dependent</em>.</p>
+<p><strong>Description:</strong></p>
+<p>Controls whether the <em>Lisp printer</em> calls the <em>pretty printer</em> .</p>
+<p>If it is <em>false</em>, the <em>pretty printer</em> is not used and a minimum of <em>whitespace</em><sub>1</sub> is output when printing an expression.</p>
+<p>If it is <em>true</em>, the <em>pretty printer</em> is used, and the <em>Lisp printer</em> will endeavor to insert extra <em>whitespace</em><sub>1</sub> where appropriate to make <em>expressions</em> more readable.</p>
+<p><strong>*print-pretty*</strong> has an effect even when the <em>value</em> of <strong>*print-escape*</strong> is <em>false</em>.</p>
+<p><strong>Examples:</strong></p>
+<p>(setq *print-pretty* ’nil) <em>→</em> NIL</p>
+<p>(progn (write ’(let ((a 1) (b 2) (c 3)) (+ a b c))) nil)</p>
+<p>▷ (LET ((A 1) (B 2) (C 3)) (+ A B C))</p>
+<p><em>→</em> NIL</p>
+<p>(let ((*print-pretty* t))</p>
+<p>(progn (write ’(let ((a 1) (b 2) (c 3)) (+ a b c))) nil))</p>
+<p>▷ (LET ((A 1)</p>
+<p>▷ (B 2)</p>
+<p>▷ (C 3))</p>
+<p>▷ (+ A B C))</p>
+<p><em>→</em> NIL</p>
+<p>;; Note that the first two expressions printed by this next form</p>
+<p>;; differ from the second two only in whether escape characters are printed. ;; In all four cases, extra whitespace is inserted by the pretty printer.</p>
+<p>(flet ((test (x)</p>
+<p>(let ((*print-pretty* t))</p>
+<p>(print x)</p>
+<p>(format t &quot;~%~S &quot; x)</p>
+<p>(terpri) (princ x) (princ &quot; &quot;)</p>
+<p>(format t &quot;~%~A &quot; x))))</p>
+<p>(test ’#’(lambda () (list &quot;a&quot; # ’c #’d))))</p>
+<p>▷ #’(LAMBDA ()</p>
+<p>▷ (LIST &quot;a&quot; # ’C #’D))</p>
+<p>▷ #’(LAMBDA ()</p>
+<p>▷ (LIST &quot;a&quot; # ’C #’D))</p>
+<p>▷ #’(LAMBDA ()</p>
+<p>▷ (LIST a b ’C #’D))</p>
+<p>▷ #’(LAMBDA ()</p>
+<p>▷ (LIST a b ’C #’D))</p>
+<p><em>→</em> NIL</p>
+<p><strong>See Also:</strong></p>
+<p><strong>write</strong></p>
+<p><em>∗</em><strong>print-readably</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a <em>generalized boolean</em>.</p>
+<p><em>∗</em><strong>print-readably</strong><em>∗</em></p>
+<p><strong>Initial Value:</strong></p>
+<p><em>false</em>.</p>
+<p><strong>Description:</strong></p>
+<p>If <strong>*print-readably*</strong> is <em>true</em>, some special rules for printing <em>objects</em> go into effect. Specifically, printing any <em>object O</em><sub>1</sub> produces a printed representation that, when seen by the <em>Lisp reader</em> while the <em>standard readtable</em> is in effect, will produce an <em>object O</em><sub>2</sub> that is <em>similar</em> to <em>O</em><sub>1</sub>. The printed representation produced might or might not be the same as the printed representation produced when <strong>*print-readably*</strong> is <em>false</em>. If printing an <em>object readably</em> is not possible, an error of <em>type</em> <strong>print-not-readable</strong> is signaled rather than using a syntax (<em>e.g.</em>, the “#&lt;” syntax) that would not be readable by the same <em>implementation</em>. If the <em>value</em> of some other <em>printer control variable</em> is such that these requirements would be violated, the <em>value</em> of that other <em>variable</em> is ignored.</p>
+<p>Specifically, if <strong>*print-readably*</strong> is <em>true</em>, printing proceeds as if <strong>*print-escape*</strong>, <strong>*print-array*</strong>, and <strong>*print-gensym*</strong> were also <em>true</em>, and as if <strong>*print-length*</strong>, <strong>*print-level*</strong>, and <strong>*print-lines*</strong> were <em>false</em>.</p>
+<p>If <strong>*print-readably*</strong> is <em>false</em>, the normal rules for printing and the normal interpretations of other <em>printer control variables</em> are in effect.</p>
+<p>Individual <em>methods</em> for <strong>print-object</strong>, including user-defined <em>methods</em>, are responsible for implementing these requirements.</p>
+<p>If <strong>*read-eval*</strong> is <em>false</em> and <strong>*print-readably*</strong> is <em>true</em>, any such method that would output a reference to the “#.” <em>reader macro</em> will either output something else or will signal an error (as described above).</p>
+<p><strong>Examples:</strong></p>
+<p>(let ((x (list &quot;a&quot; ’\a (gensym) ’((a (b (c))) d e f g)))</p>
+<p>(*print-escape* nil)</p>
+<p>(*print-gensym* nil)</p>
+<p>(*print-level* 3)</p>
+<p>(*print-length* 3))</p>
+<p>(write x)</p>
+<p>(let ((*print-readably* t))</p>
+<p>(terpri)</p>
+<p>(write x)</p>
+<p>:done<!-- -->))</p>
+<p>▷ (a a G4581 ((A #) D E ...))</p>
+<p>▷ (&quot;a&quot; |a| #<!-- -->:G4581<!-- --> ((A (B (C))) D E F G))</p>
+<p><em>→</em> <!-- -->:DONE</p>
+<p>;; This is setup code is shared between the examples</p>
+<p>;; of three hypothetical implementations which follow.</p>
+<p>(setq table (make-hash-table)) <em>→</em> #&lt;HASH-TABLE EQL 0/120 32005763&gt;</p>
+<p>(setf (gethash table 1) ’one) <em>→</em> ONE</p>
+<p>(setf (gethash table 2) ’two) <em>→</em> TWO</p>
+<p>;; Implementation A</p>
+<p>(let ((*print-readably* t)) (print table))</p>
+<p>Error: Can’t print #&lt;HASH-TABLE EQL 0/120 32005763&gt; readably.</p>
+<p>;; Implementation B</p>
+<p>;; No standardized #S notation for hash tables is defined,</p>
+<p>;; but there might be an implementation-defined notation.</p>
+<p>(let ((*print-readably* t)) (print table))</p>
+<p>▷ #S(HASH-TABLE <!-- -->:TEST<!-- --> EQL <!-- -->:SIZE<!-- --> 120 <!-- -->:CONTENTS<!-- --> (1 ONE 2 TWO))</p>
+<p><em>→</em> #&lt;HASH-TABLE EQL 0/120 32005763&gt;</p>
+<p>;; Implementation C</p>
+<p>;; Note that #. notation can only be used if *READ-EVAL* is true.</p>
+<p>;; If *READ-EVAL* were false, this same implementation might have to</p>
+<p>;; signal an error unless it had yet another printing strategy to fall</p>
+<p>;; back on.</p>
+<p>(let ((*print-readably* t)) (print table))</p>
+<p>▷ #.(LET ((HASH-TABLE (MAKE-HASH-TABLE)))</p>
+<p>▷ (SETF (GETHASH 1 HASH-TABLE) ONE)</p>
+<p>▷ (SETF (GETHASH 2 HASH-TABLE) TWO)</p>
+<p>▷ HASH-TABLE)</p>
+<p><em>→</em> #&lt;HASH-TABLE EQL 0/120 32005763&gt;</p>
+<p><strong>See Also:</strong></p>
+<p><strong>write</strong>, <strong>print-unreadable-object</strong></p>
+<p><strong>Notes:</strong></p>
+<p>The rules for “<em>similarity</em>” imply that #A or #( syntax cannot be used for <em>arrays</em> of <em>element type</em> other than <strong>t</strong>. An implementation will have to use another syntax or signal an error of <em>type</em> <strong>print-not-readable</strong>.</p>
+<p><em>∗</em><strong>print-right-margin</strong><em>∗ Variable</em></p>
+<p><strong>Value Type:</strong></p>
+<p>a non-negative <em>integer</em> , or <strong>nil</strong>.</p>
+<p><strong>Initial Value:</strong></p>
+<p><strong>nil</strong>.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/lisp-docs/cl-language-reference/tree/develop/docs/chap-22/cc-d-formatted-output.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/cl-language-reference/docs/chap-22/cc-c-the-lisp-pretty-printer"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">22.2 The Lisp Pretty Printer</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/cl-language-reference/docs/category/23-reader"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">23. Reader</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#2231-format-basic-output" class="table-of-contents__link toc-highlight">22.3.1 FORMAT Basic Output</a><ul><li><a href="#22311-tilde-c" class="table-of-contents__link toc-highlight">22.3.1.1 Tilde C</a></li><li><a href="#22312-tilde-percent" class="table-of-contents__link toc-highlight">22.3.1.2 Tilde Percent</a></li><li><a href="#22313-tilde-ampersand" class="table-of-contents__link toc-highlight">22.3.1.3 Tilde Ampersand</a></li><li><a href="#22314-tilde-vertical" class="table-of-contents__link toc-highlight">22.3.1.4 Tilde Vertical</a></li><li><a href="#22315-tilde-tilde" class="table-of-contents__link toc-highlight">22.3.1.5 Tilde Tilde</a></li></ul></li><li><a href="#2232-format-radix-control" class="table-of-contents__link toc-highlight">22.3.2 FORMAT Radix Control</a><ul><li><a href="#22321-tilde-r" class="table-of-contents__link toc-highlight">22.3.2.1 Tilde R</a></li><li><a href="#22322-tilde-d" class="table-of-contents__link toc-highlight">22.3.2.2 Tilde D</a></li><li><a href="#22323-tilde-b" class="table-of-contents__link toc-highlight">22.3.2.3 Tilde B</a></li><li><a href="#22324-tilde-o" class="table-of-contents__link toc-highlight">22.3.2.4 Tilde O</a></li><li><a href="#22325-tilde-x" class="table-of-contents__link toc-highlight">22.3.2.5 Tilde X</a></li></ul></li><li><a href="#2233-format-floating" class="table-of-contents__link toc-highlight">22.3.3 FORMAT Floating</a><ul><li><a href="#22331-tilde-f" class="table-of-contents__link toc-highlight">22.3.3.1 Tilde F</a></li><li><a href="#22332-tilde-e" class="table-of-contents__link toc-highlight">22.3.3.2 Tilde E</a></li><li><a href="#22333-tilde-g" class="table-of-contents__link toc-highlight">22.3.3.3 Tilde G</a></li><li><a href="#22334-tilde-dollarsign" class="table-of-contents__link toc-highlight">22.3.3.4 Tilde Dollarsign</a></li></ul></li><li><a href="#2234-format-printer-operations" class="table-of-contents__link toc-highlight">22.3.4 FORMAT Printer Operations</a><ul><li><a href="#22341-tilde-a" class="table-of-contents__link toc-highlight">22.3.4.1 Tilde A</a></li><li><a href="#22342-tilde-s" class="table-of-contents__link toc-highlight">22.3.4.2 Tilde S</a></li><li><a href="#22343-tilde-w" class="table-of-contents__link toc-highlight">22.3.4.3 Tilde W</a></li></ul></li><li><a href="#2235-format-pretty-printer-operations" class="table-of-contents__link toc-highlight">22.3.5 FORMAT Pretty Printer Operations</a><ul><li><a href="#22351-tilde-underscore" class="table-of-contents__link toc-highlight">22.3.5.1 Tilde Underscore</a></li><li><a href="#22352-tilde-less" class="table-of-contents__link toc-highlight">22.3.5.2 Tilde Less</a></li><li><a href="#22353-tilde-i" class="table-of-contents__link toc-highlight">22.3.5.3 Tilde I</a></li><li><a href="#22354-tilde-slash" class="table-of-contents__link toc-highlight">22.3.5.4 Tilde Slash</a></li></ul></li><li><a href="#2236-format-layout-control" class="table-of-contents__link toc-highlight">22.3.6 FORMAT Layout Control</a><ul><li><a href="#22361-tilde-t" class="table-of-contents__link toc-highlight">22.3.6.1 Tilde T</a></li><li><a href="#22362-tilde-less" class="table-of-contents__link toc-highlight">22.3.6.2 Tilde Less</a></li><li><a href="#22363-tilde-greater" class="table-of-contents__link toc-highlight">22.3.6.3 Tilde Greater</a></li></ul></li><li><a href="#2237-format-control" class="table-of-contents__link toc-highlight">22.3.7 FORMAT Control</a><ul><li><a href="#22371-tilde-asterisk" class="table-of-contents__link toc-highlight">22.3.7.1 Tilde Asterisk</a></li><li><a href="#22372-tilde-left" class="table-of-contents__link toc-highlight">22.3.7.2 Tilde Left</a></li><li><a href="#22373-tilde-right" class="table-of-contents__link toc-highlight">22.3.7.3 Tilde Right</a></li><li><a href="#22374-tilde-left" class="table-of-contents__link toc-highlight">22.3.7.4 Tilde Left</a></li><li><a href="#22375-tilde-right" class="table-of-contents__link toc-highlight">22.3.7.5 Tilde Right</a></li><li><a href="#22376-tilde-question" class="table-of-contents__link toc-highlight">22.3.7.6 Tilde Question</a></li></ul></li><li><a href="#2238-format-miscellaneous-operations" class="table-of-contents__link toc-highlight">22.3.8 FORMAT Miscellaneous Operations</a><ul><li><a href="#22381-tilde-left" class="table-of-contents__link toc-highlight">22.3.8.1 Tilde Left</a></li><li><a href="#22382-tilde-right" class="table-of-contents__link toc-highlight">22.3.8.2 Tilde Right</a></li><li><a href="#22383-tilde-p" class="table-of-contents__link toc-highlight">22.3.8.3 Tilde P</a></li></ul></li><li><a href="#2239-format-miscellaneous-pseudo" class="table-of-contents__link toc-highlight">22.3.9 FORMAT Miscellaneous Pseudo</a><ul><li><a href="#22391-tilde-semicolon" class="table-of-contents__link toc-highlight">22.3.9.1 Tilde Semicolon</a></li><li><a href="#22392-tilde-circumflex" class="table-of-contents__link toc-highlight">22.3.9.2 Tilde Circumflex</a></li><li><a href="#22393-tilde-newline" class="table-of-contents__link toc-highlight">22.3.9.3 Tilde Newline</a></li></ul></li><li><a href="#22310-additional-information-about-format-operations" class="table-of-contents__link toc-highlight">22.3.10 Additional Information about FORMAT Operations</a><ul><li><a href="#223101-nesting-of-format-operations" class="table-of-contents__link toc-highlight">22.3.10.1 Nesting of FORMAT Operations</a></li><li><a href="#223102-missing-and-additional-format-arguments" class="table-of-contents__link toc-highlight">22.3.10.2 Missing and Additional FORMAT Arguments</a></li><li><a href="#223103-additional-format-parameters" class="table-of-contents__link toc-highlight">22.3.10.3 Additional FORMAT Parameters</a></li><li><a href="#223104-undefined-format-modifier-combinations" class="table-of-contents__link toc-highlight">22.3.10.4 Undefined FORMAT Modifier Combinations</a></li></ul></li><li><a href="#22311-examples-of-format" class="table-of-contents__link toc-highlight">22.3.11 Examples of FORMAT</a></li><li><a href="#22312-notes-about-format" class="table-of-contents__link toc-highlight">22.3.12 Notes about FORMAT</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/docs/intro">Cl Technical Reference</a></li><li class="footer__item"><a href="https://lisp-docs.github.io/" target="_blank" rel="noopener noreferrer" class="footer__link-item">CL Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/common-lisp" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discord.gg/hhk46CE" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.reddit.com/r/common_lisp" target="_blank" rel="noopener noreferrer" class="footer__link-item">Reddit<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://irclog.tymoon.eu/libera/commonlisp" target="_blank" rel="noopener noreferrer" class="footer__link-item">IRC<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/cl-language-reference/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/lisp-docs/cl-language-reference/" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 LISP Docs, MIT License. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
