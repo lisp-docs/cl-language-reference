@@ -618,11 +618,11 @@ The pretty printing function for the structure family specifies how to adjust th
 
 
 
-#<Lucy and 
+#\<Lucy and 
 
 
 
-Mark Bob . Dan>) 
+Mark Bob . Dan\>) 
 
 
 

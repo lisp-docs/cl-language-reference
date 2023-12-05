@@ -1298,11 +1298,11 @@ If either *type* or *identity* is not supplied, its value is *false*. It is vali
 
 
 
-*→* "#<Airplane NW0773 36000123135>" 
+*→* "#\<Airplane NW0773 36000123135\>" 
 
 
 
-<i><sup>or</sup>→</i> "#<FAA:AIRPLANE NW0773 17>" 
+<i><sup>or</sup>→</i> "#\<FAA:AIRPLANE NW0773 17\>" 
 
 
 
@@ -3176,7 +3176,7 @@ a *generalized boolean*.
 
 
 
-If **\*print-readably\*** is *true*, some special rules for printing *objects* go into effect. Specifically, printing any *object O*<sub>1</sub> produces a printed representation that, when seen by the *Lisp reader* while the *standard readtable* is in effect, will produce an *object O*<sub>2</sub> that is *similar* to *O*<sub>1</sub>. The printed representation produced might or might not be the same as the printed representation produced when **\*print-readably\*** is *false*. If printing an *object readably* is not possible, an error of *type* **print-not-readable** is signaled rather than using a syntax (*e.g.*, the “#<” syntax) that would not be readable by the same *implementation*. If the *value* of some other *printer control variable* is such that these requirements would be violated, the *value* of that other *variable* is ignored. 
+If **\*print-readably\*** is *true*, some special rules for printing *objects* go into effect. Specifically, printing any *object O*<sub>1</sub> produces a printed representation that, when seen by the *Lisp reader* while the *standard readtable* is in effect, will produce an *object O*<sub>2</sub> that is *similar* to *O*<sub>1</sub>. The printed representation produced might or might not be the same as the printed representation produced when **\*print-readably\*** is *false*. If printing an *object readably* is not possible, an error of *type* **print-not-readable** is signaled rather than using a syntax (*e.g.*, the “#\<” syntax) that would not be readable by the same *implementation*. If the *value* of some other *printer control variable* is such that these requirements would be violated, the *value* of that other *variable* is ignored. 
 
 
 
@@ -3260,7 +3260,7 @@ If **\*read-eval\*** is *false* and **\*print-readably\*** is *true*, any such m
 
 
 
-(setq table (make-hash-table)) *→* #<HASH-TABLE EQL 0/120 32005763> 
+(setq table (make-hash-table)) *→* #\<HASH-TABLE EQL 0/120 32005763\> 
 
 
 
@@ -3292,7 +3292,7 @@ If **\*read-eval\*** is *false* and **\*print-readably\*** is *true*, any such m
 
 
 
-Error: Can’t print #<HASH-TABLE EQL 0/120 32005763> readably. 
+Error: Can’t print #\<HASH-TABLE EQL 0/120 32005763\> readably. 
 
 
 
@@ -3316,7 +3316,7 @@ Error: Can’t print #<HASH-TABLE EQL 0/120 32005763> readably.
 
 
 
-*→* #<HASH-TABLE EQL 0/120 32005763> 
+*→* #\<HASH-TABLE EQL 0/120 32005763\> 
 
 
 
@@ -3360,7 +3360,7 @@ Error: Can’t print #<HASH-TABLE EQL 0/120 32005763> readably.
 
 
 
-*→* #<HASH-TABLE EQL 0/120 32005763> 
+*→* #\<HASH-TABLE EQL 0/120 32005763\> 
 
 
 

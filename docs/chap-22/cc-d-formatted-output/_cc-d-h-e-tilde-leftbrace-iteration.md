@@ -34,7 +34,7 @@ For example:
 
 
 
-*→* "Pairs: <a,1> <b,2> <c,3>." 
+*→* "Pairs: \<a,1\> \<b,2\> \<c,3\>." 
 
 
 
@@ -50,7 +50,7 @@ For example:
 
 
 
-*→* "Pairs: <a,1> <b,2> <c,3>." 
+*→* "Pairs: \<a,1\> \<b,2\> \<c,3\>." 
 
 
 
@@ -62,7 +62,7 @@ For example:
 
 
 
-*→* "Pairs: <a,1> <b,2> <c,3>." 
+*→* "Pairs: \<a,1\> \<b,2\> \<c,3\>." 
 
 
 
@@ -94,7 +94,7 @@ If the iteration is terminated before all the remaining arguments are consumed, 
 
 
 
-*→* "Pairs: <A,1> <B,2> <C,3>." 
+*→* "Pairs: \<A,1\> \<B,2\> \<C,3\>." 
 
 
 

@@ -246,31 +246,31 @@ Scale factor 7: | 3141590.E-06|
 
 
 
-(format nil "~10<foo~;bar~>") *→* "foo bar" 
+(format nil "~10\<foo~;bar~\>") *→* "foo bar" 
 
 
 
-(format nil "~10:<foo~;bar~>") *→* " foo bar" 
+(format nil "~10:\<foo~;bar~\>") *→* " foo bar" 
 
 
 
-(format nil "~10<foobar~>") *→* " foobar" 
+(format nil "~10\<foobar~\>") *→* " foobar" 
 
 
 
-(format nil "~10:<foobar~>") *→* " foobar" 
+(format nil "~10:\<foobar~\>") *→* " foobar" 
 
 
 
-(format nil "~10:@<foo~;bar~>") *→* " foo bar " 
+(format nil "~10:@\<foo~;bar~\>") *→* " foo bar " 
 
 
 
-(format nil "~10@<foobar~>") *→* "foobar " 
+(format nil "~10@\<foobar~\>") *→* "foobar " 
 
 
 
-(format nil "~10:@<foobar~>") *→* " foobar " 
+(format nil "~10:@\<foobar~\>") *→* " foobar " 
 
 
 
