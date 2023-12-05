@@ -140,7 +140,9 @@ The effect of **\*read-base\*** on the reading of any particular *rational* numb
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -188,6 +190,8 @@ The effect of **\*read-base\*** on the reading of any particular *rational* numb
 
 
 
+
+```
 **Notes:** 
 
 
@@ -240,7 +244,9 @@ The printer uses **\*read-default-float-format\*** to guide the choice of *expon
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -264,6 +270,8 @@ The printer uses **\*read-default-float-format\*** to guide the choice of *expon
 
 
 
+
+```
 **Value Type:** 
 
 
@@ -396,13 +404,15 @@ The ## notation always produces **nil**.
 
 
 
-No matter what the *value* of **\*read-suppress\***, parentheses still continue to delimit and construct *lists*; the #( notation continues to delimit *vectors*; and comments, *strings*, and the *single-quote* and *backquote* notations continue to be interpreted properly. Such situations as ’), #\<, #\, and #*hSpacei* continue to signal errors. 
+No matter what the *value* of **\*read-suppress\***, parentheses still continue to delimit and construct *lists*; the #( notation continues to delimit *vectors*; and comments, *strings*, and the *single-quote* and *backquote* notations continue to be interpreted properly. Such situations as ’), #<, #), and #*hSpacei* continue to signal errors. 
 
 
 
-**Examples:** 
-
+**Examples:**
 ```lisp
+ 
+
+
 
 (let ((\*read-suppress\* t)) 
 
@@ -426,8 +436,10 @@ No matter what the *value* of **\*read-suppress\***, parentheses still continue 
 
 *→* (NIL NIL NIL NIL NIL NIL NIL NIL NIL NIL) 
 
-```
 
+
+
+```
 **See Also:** 
 
 
@@ -472,10 +484,12 @@ The *value* of **\*readtable\*** is called the *current readtable*. It controls 
 
 
 
-**Examples:** 
-
-
+**Examples:**
 ```lisp
+ 
+
+
+
 (readtablep \*readtable\*) *→ true* 
 
 
@@ -504,7 +518,7 @@ zvar *→* 123
 
 
 
-(setq \*readtable\* table2) *→* #\<READTABLE\> 
+(setq \*readtable\* table2) *→* #<READTABLE> 
 
 
 
@@ -512,14 +526,16 @@ zvar *→* VAR
 
 
 
-(setq \*readtable\* (copy-readtable nil)) *→* #\<READTABLE\> 
+(setq \*readtable\* (copy-readtable nil)) *→* #<READTABLE> 
 
 
 
 zvar *→* 123 
 
-```
 
+
+
+```
 **Affected By:** 
 
 

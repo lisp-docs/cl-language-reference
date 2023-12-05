@@ -286,7 +286,9 @@ The special form **let** has the property that the *scope* of the name binding d
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -362,6 +364,8 @@ is incorrect; although x is indeed set before it is used, and is set to a value 
 
 
 
+
+```
 **See Also:** 
 
 

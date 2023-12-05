@@ -230,7 +230,9 @@ The *value* of **\*trace-output\***, called *trace output*, is the *stream* on w
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -346,6 +348,8 @@ out
 
 
 
+
+```
 **See Also:** 
 
 
@@ -430,7 +434,9 @@ The effect of changing the *value* of **\*terminal-io\***, either by *binding* o
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -478,6 +484,8 @@ The effect of changing the *value* of **\*terminal-io\***, either by *binding* o
 
 
 
+
+```
 **See Also:** 
 
 

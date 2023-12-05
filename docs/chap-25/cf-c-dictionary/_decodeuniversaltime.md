@@ -162,7 +162,9 @@ If *time-zone* is not supplied, it defaults to the current time zone adjusted fo
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -182,6 +184,8 @@ If *time-zone* is not supplied, it defaults to the current time zone adjusted fo
 
 
 
+
+```
 **See Also:** 
 
 

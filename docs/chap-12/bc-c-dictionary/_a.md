@@ -174,7 +174,9 @@ Might signal **type-error** if some *argument* is not a *number* . Might signal 
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -194,6 +196,8 @@ Might signal **type-error** if some *argument* is not a *number* . Might signal 
 
 
 
+
+```
 **Exceptional Situations:** 
 
 

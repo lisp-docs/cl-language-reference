@@ -170,7 +170,9 @@ When *input-stream* is an *echo stream*, characters that are only peeked at are 
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -214,6 +216,8 @@ When *input-stream* is an *echo stream*, characters that are only peeked at are 
 
 
 
+
+```
 **Affected By:** 
 
 

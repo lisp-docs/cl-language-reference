@@ -278,7 +278,9 @@ The result of all these functions is a *sequence* of the same *type* as *sequenc
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -354,6 +356,8 @@ alpha-tester *→* "abz"
 
 
 
+
+```
 **Side Effects:** 
 
 

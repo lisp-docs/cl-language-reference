@@ -182,7 +182,9 @@ The consequences are undefined if an attempt is made to *assign* the *stream var
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -274,6 +276,8 @@ The consequences are undefined if an attempt is made to *assign* the *stream var
 
 
 
+
+```
 **Side Effects:** 
 
 

@@ -82,7 +82,9 @@ the COMMON-LISP-USER *package*.
 
 
 
-Whatever *package object* is currently the *value* of **\*package\*** is referred to as the *current package*. **Examples:** 
+Whatever *package object* is currently the *value* of **\*package\*** is referred to as the *current package*. **Examples:**
+```lisp
+ 
 
 
 
@@ -166,6 +168,8 @@ Whatever *package object* is currently the *value* of **\*package\*** is referre
 
 
 
+
+```
 **Affected By:** 
 
 

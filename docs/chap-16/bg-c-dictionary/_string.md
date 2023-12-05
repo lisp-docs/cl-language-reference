@@ -214,7 +214,9 @@ For **string-upcase**, **string-downcase**, and **string-capitalize**, *string* 
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -282,6 +284,8 @@ str *→* "0123AbcD890a"
 
 
 
+
+```
 **Side Effects:** 
 
 

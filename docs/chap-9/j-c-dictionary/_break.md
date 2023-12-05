@@ -190,7 +190,9 @@ When the *value* of **\*debugger-hook\*** is *non-nil*, it is called prior to no
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -326,6 +328,8 @@ When the *value* of **\*debugger-hook\*** is *non-nil*, it is called prior to no
 
 
 
+
+```
 **Affected By:** 
 
 
@@ -390,7 +394,9 @@ The **continue** *restart* can be used to continue with the normal *signaling* p
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -502,6 +508,8 @@ The **continue** *restart* can be used to continue with the normal *signaling* p
 
 
 
+
+```
 **See Also:** 
 
 

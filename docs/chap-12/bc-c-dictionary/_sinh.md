@@ -228,7 +228,9 @@ Returns the product of *numbers*, performing any necessary type conversions in t
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -244,6 +246,8 @@ Returns the product of *numbers*, performing any necessary type conversions in t
 
 
 
+
+```
 **Exceptional Situations:** 
 
 

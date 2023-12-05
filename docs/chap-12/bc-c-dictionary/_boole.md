@@ -372,7 +372,9 @@ Each of these *constants* has a *value* which is one of the sixteen possible *bi
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -388,6 +390,8 @@ Each of these *constants* has a *value* which is one of the sixteen possible *bi
 
 
 
+
+```
 **See Also:** 
 
 

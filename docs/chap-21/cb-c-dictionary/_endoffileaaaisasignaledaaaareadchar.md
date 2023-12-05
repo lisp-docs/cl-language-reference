@@ -194,7 +194,9 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is *false*, *eof-value*
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -274,6 +276,8 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is *false*, *eof-value*
 
 
 
+
+```
 **Affected By:** 
 
 

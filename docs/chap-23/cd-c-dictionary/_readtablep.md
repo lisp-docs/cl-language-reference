@@ -138,7 +138,9 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -218,6 +220,8 @@ If it is desired that #$*foo* : as if it were (dollars *foo*).
 
 
 
+
+```
 **See Also:** 
 
 

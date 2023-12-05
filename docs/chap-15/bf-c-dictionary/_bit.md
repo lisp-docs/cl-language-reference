@@ -244,7 +244,9 @@ Figure 15–4 indicates the logical operation performed by each of the *function
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -296,6 +298,8 @@ Figure 15–4 indicates the logical operation performed by each of the *function
 
 
 
+
+```
 **See Also:** 
 
 

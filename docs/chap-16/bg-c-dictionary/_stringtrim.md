@@ -310,7 +310,9 @@ The comparison has one of the following results:
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -362,6 +364,8 @@ The comparison has one of the following results:
 
 
 
+
+```
 **See Also:** 
 
 

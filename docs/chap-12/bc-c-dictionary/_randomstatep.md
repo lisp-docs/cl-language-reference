@@ -106,7 +106,9 @@ The *current random state*, which is used, for example, by the *function* **rand
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -166,6 +168,8 @@ The *current random state*, which is used, for example, by the *function* **rand
 
 
 
+
+```
 **Affected By:** 
 
 
