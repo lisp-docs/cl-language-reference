@@ -70,95 +70,49 @@ The consequences are undefined if *char* has a *syntax type* of *whitespace*<sub
 ```lisp
  
 
-
-
 (read-delimited-list #\]) 1 2 3 4 5 6 ] 
-
-
 
 *→* (1 2 3 4 5 6) 
 
-
-
 Suppose you wanted #\{*a b c . . . z*\} to read as a list of all pairs of the elements *a*, *b*, *c*, *. . .*, *z*, for example. 
-
-
 
 #\{p q z a\} reads as ((p q) (p z) (p a) (q z) (q a) (z a)) 
 
-
-
 This can be done by specifying a macro-character definition for #\{ that does two things: reads in all the items up to the \}, and constructs the pairs. **read-delimited-list** performs the first task. 
-
-
 
 (defun |#\{-reader| (stream char arg) 
 
-
-
 (declare (ignore char arg)) 
-
-
 
 (mapcon #’(lambda (x) 
 
-
-
 (mapcar #’(lambda (y) (list (car x) y)) (cdr x))) 
-
-
 
 (read-delimited-list #\\} stream t))) *→* |#\{-reader| 
 
-
-
 (set-dispatch-macro-character #\# #\\{ #’|#\{-reader|) *→* T 
 
-
-
 (set-macro-character #\\} (get-macro-character #\) **nil**)) 
-
-
 
 Note that *true* is supplied for the *recursive-p* argument. 
 
-
-
 It is necessary here to give a definition to the character \} as well to prevent it from being a constituent. If the line 
-
-
 
 (set-macro-character #\\} (get-macro-character #\) **nil**)) 
 
-
-
 shown above were not included, then the \} in 
-
-
 
 #\{ p q z a\} 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 would be considered a constituent character, part of the symbol named a\}. This could be corrected by putting a space before the \}, but it is better to call **set-macro-character**. 
 
-
-
 Giving \} the same definition as the standard definition of the character ) has the twin benefit of making it terminate tokens for use with **read-delimited-list** and also making it invalid for use in any other context. Attempting to read a stray \} will signal an error. 
-
-
 
 
 ```

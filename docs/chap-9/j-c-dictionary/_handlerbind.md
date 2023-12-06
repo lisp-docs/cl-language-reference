@@ -62,91 +62,47 @@ If no appropriate *handler* is found, other *handlers* are sought from dynamical
 ```lisp
  
 
-
-
 In the following code, if an unbound variable error is signaled in the body (and not handled by an intervening handler), the first function is called. 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (handler-bind ((unbound-variable #’(lambda ...)) 
 
-
-
 (error #’(lambda ...))) 
-
-
 
 ...) 
 
-
-
 If any other kind of error is signaled, the second function is called. In either case, neither handler is active while executing the code in the associated function. 
-
-
 
 (defun trap-error-handler (condition) 
 
-
-
 (format \*error-output\* "&#126;&amp;&#126;A&#126;&amp;" condition) 
-
-
 
 (throw ’trap-errors nil)) 
 
-
-
 (defmacro trap-errors (&amp;rest forms) 
-
-
 
 ‘(catch ’trap-errors 
 
-
-
 (handler-bind ((error #’trap-error-handler)) 
-
-
 
 ,@forms))) 
 
-
-
 (list (trap-errors (signal "Foo.") 1) 
-
-
 
 (trap-errors (error "Bar.") 2) 
 
-
-
 (+ 1 2)) 
-
-
 
 ▷ Bar. 
 
-
-
 *→* (1 NIL 3) 
 
-
-
 Note that “Foo.” is not printed because the condition made by **signal** is a *simple condition*, which is not of *type* **error**, so it doesn’t trigger the handler for **error** set up by trap-errors. 
-
-
 
 
 ```

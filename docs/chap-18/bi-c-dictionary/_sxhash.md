@@ -70,27 +70,15 @@ Hash
 ```lisp
  
 
-
-
 (= (sxhash (list ’list "ab")) (sxhash (list ’list "ab"))) *→ true* 
-
-
 
 (= (sxhash "a") (sxhash (make-string 1 :initial-element #\a))) *→ true* 
 
-
-
 (let ((r (make-random-state))) 
-
-
 
 (= (sxhash r) (sxhash (make-random-state r)))) 
 
-
-
 *→ implementation-dependent* 
-
-
 
 
 ```

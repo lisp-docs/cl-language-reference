@@ -74,123 +74,63 @@ If *documentation* is supplied, it is attached to *name* as a *documentation str
 ```lisp
  
 
-
-
 (defparameter \*p\* 1) *→* \*P\* 
-
-
 
 \*p\* *→* 1 
 
-
-
 (constantp ’\*p\*) *→ false* 
-
-
 
 (setq \*p\* 2) *→* 2 
 
-
-
 (defparameter \*p\* 3) *→* \*P\* 
-
-
 
 \*p\* *→* 3 
 
-
-
 (defvar \*v\* 1) *→* \*V\* 
-
-
 
 \*v\* *→* 1 
 
-
-
 (constantp ’\*v\*) *→ false* 
-
-
 
 (setq \*v\* 2) *→* 2 
 
-
-
 (defvar \*v\* 3) *→* \*V\* 
-
-
 
 \*v\* *→* 2 
 
-
-
 (defun foo () 
-
-
 
 (let ((\*p\* ’p) (\*v\* ’v)) 
 
-
-
 (bar))) *→* FOO 
-
-
 
 (defun bar () (list \*p\* \*v\*)) *→* BAR 
 
-
-
 (foo) *→* (P V) 
-
-
 
 The principal operational distinction between **defparameter** and **defvar** is that **defparameter** makes an unconditional assignment to *name*, while **defvar** makes a conditional one. In practice, this means that **defparameter** is useful in situations where loading or reloading the definition would want to pick up a new value of the variable, while **defvar** is used in situations where the old value would want to be retained if the file were loaded or reloaded. For example, one might create a file which contained: 
 
-
-
 (defvar \*the-interesting-numbers\* ’()) 
-
-
 
 (defmacro define-interesting-number (name n) 
 
-
-
 ‘(progn (defvar ,name ,n) 
-
-
 
 (pushnew ,name \*the-interesting-numbers\*) 
 
-
-
 ’,name)) 
-
-
 
 (define-interesting-number \*my-height\* 168) ;cm 
 
-
-
 (define-interesting-number \*my-weight\* 13) ;stones 
-
-
 
 Here the initial value, (), for the variable \*the-interesting-numbers\* is just a seed that we are never likely to want to reset to something else once something has been grown from it. As such, we have used **defvar** to avoid having the \*interesting-numbers\* information reset if the file is loaded a second time. It is true that the two calls to **define-interesting-number** here would be reprocessed, but if there were additional calls in another file, they would not be and that information would be lost. On the other hand, consider the following code: 
 
-
-
 (defparameter \*default-beep-count\* 3) 
-
-
 
 (defun beep (&amp;optional (n \*default-beep-count\*)) 
 
-
-
 (dotimes (i n) (si:%beep 1000. 100000.) (sleep 0.1))) 
-
-
 
 Data and Control 
 
@@ -198,27 +138,13 @@ Data and Control
 
 
 
-
-
-
-
-
-
 **defparameter, defvar** 
-
-
 
 Here we could easily imagine editing the code to change the initial value of \*default-beep-count\*, and then reloading the file to pick up the new value. In order to make value updating easy, we have used **defparameter**. 
 
-
-
 On the other hand, there is potential value to using **defvar** in this situation. For example, suppose that someone had predefined an alternate value for \*default-beep-count\*, or had loaded the file and then manually changed the value. In both cases, if we had used **defvar** instead of **defparameter**, those user preferences would not be overridden by (re)loading the file. 
 
-
-
 The choice of whether to use **defparameter** or **defvar** has visible consequences to programs, but is nevertheless often made for subjective reasons. 
-
-
 
 
 ```

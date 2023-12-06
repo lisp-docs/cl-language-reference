@@ -82,35 +82,19 @@ If there is no such *method* and *errorp* is *true*, **find-method** signals an 
 ```lisp
  
 
-
-
 (defmethod some-operation ((a integer) (b float)) (list a b)) 
 
-
-
 → #<STANDARD-METHOD SOME-OPERATION (INTEGER FLOAT) 26723357> 
-
-
 
 (find-method #’some-operation ’() (mapcar #’find-class ’(integer float))) 
 
-
-
 → #<STANDARD-METHOD SOME-OPERATION (INTEGER FLOAT) 26723357> 
-
-
 
 (find-method #’some-operation ’() (mapcar #’find-class ’(integer integer))) 
 
-
-
 ▷ Error: No matching method 
 
-
-
 (find-method #’some-operation ’() (mapcar #’find-class ’(integer integer)) nil) → NIL 
-
-
 
 
 ```

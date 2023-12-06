@@ -38,31 +38,17 @@ Returns an *input string stream*. This *stream* will supply, in order, the *char
 ```lisp
  
 
-
-
 (let ((string-stream (make-string-input-stream "1 one "))) 
-
-
 
 (list (read string-stream nil nil) 
 
-
-
 (read string-stream nil nil) 
-
-
 
 (read string-stream nil nil))) 
 
-
-
 *→* (1 ONE NIL) 
 
-
-
 (read (make-string-input-stream "prefixtargetsuffix" 6 12)) *→* TARGET 
-
-
 
 
 ```

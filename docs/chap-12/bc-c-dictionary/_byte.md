@@ -50,19 +50,11 @@
 ```lisp
  
 
-
-
 (setq b (byte 100 200)) *→* #<BYTE-SPECIFIER size 100 position 200> 
-
-
 
 (byte-size b) *→* 100 
 
-
-
 (byte-position b) *→* 200 
-
-
 
 
 ```

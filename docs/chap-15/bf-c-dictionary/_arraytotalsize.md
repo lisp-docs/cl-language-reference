@@ -46,31 +46,17 @@ Returns the *array total size* of the *array*.
 ```lisp
  
 
-
-
 (array-total-size (make-array 4)) *→* 4 
-
-
 
 (array-total-size (make-array 4 :fill-pointer 2)) *→* 4 
 
-
-
 (array-total-size (make-array 0)) *→* 0 
-
-
 
 (array-total-size (make-array ’(4 2))) *→* 8 
 
-
-
 (array-total-size (make-array ’(4 0))) *→* 0 
 
-
-
 (array-total-size (make-array ’())) *→* 1 
-
-
 
 
 ```

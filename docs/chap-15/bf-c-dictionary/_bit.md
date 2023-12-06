@@ -54,55 +54,29 @@ These *functions* ignore the *fill pointer* when *accessing elements*.
 ```lisp
  
 
-
-
 (bit (setq ba (make-array 8 
-
-
 
 :element-type ’bit 
 
-
-
 :initial-element 1)) 
-
-
 
 \3) *→* 1 
 
-
-
 (setf (bit ba 3) 0) *→* 0 
-
-
 
 (bit ba 3) *→* 0 
 
-
-
 (sbit ba 5) *→* 1 
-
-
 
 (setf (sbit ba 5) 1) *→* 1 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (sbit ba 5) *→* 1 
-
-
 
 
 ```
@@ -248,55 +222,29 @@ Figure 15–4 indicates the logical operation performed by each of the *function
 ```lisp
  
 
-
-
 (bit-and (setq ba #\*11101010) #\*01101011) *→* #\*01101010 
-
-
 
 (bit-and #\*1100 #\*1010) *→* #\*1000 
 
-
-
 (bit-andc1 #\*1100 #\*1010) *→* #\*0010 
-
-
 
 (setq rba (bit-andc2 ba #\*00110011 t)) *→* #\*11001000 
 
-
-
 (eq rba ba) *→ true* 
-
-
 
 (bit-not (setq ba #\*11101010)) *→* #\*00010101 
 
-
-
 (setq rba (bit-not ba 
-
-
 
 (setq tba (make-array 8 
 
-
-
 :element-type ’bit)))) 
-
-
 
 *→* #\*00010101 
 
-
-
 (equal rba tba) *→ true* 
 
-
-
 (bit-xor #\*1100 #\*1010) *→* #\*0110 
-
-
 
 
 ```

@@ -50,11 +50,7 @@ If an implementation supports additional keyword arguments to **compile-file**, 
 ```lisp
  
 
-
-
 See **logical-pathname-translations**. 
-
-
 
 
 ```

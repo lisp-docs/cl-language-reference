@@ -58,23 +58,13 @@ For information about the *evaluation* of *subforms* of *place*, see Section 5.1
 ```lisp
  
 
-
-
 (setq x (cons () ())) *→* (NIL) 
-
-
 
 (setf (getf (car x) ’prop1) ’val1) *→* VAL1 
 
-
-
 (remf (car x) ’prop1) *→ true* 
 
-
-
 (remf (car x) ’prop1) *→ false* 
-
-
 
 
 ```

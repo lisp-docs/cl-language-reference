@@ -70,47 +70,25 @@ If the *filespec designator* is an open *stream*, then the *stream* itself and t
 ```lisp
  
 
-
-
 ;; An example involving logical pathnames. 
-
-
 
 (with-open-file (stream "sys:chemistry;lead.text" 
 
-
-
 :direction :output :if-exists :error) 
-
-
 
 (princ "eureka" stream) 
 
-
-
 (values (pathname stream) (truename stream))) 
-
-
 
 *→* #P"SYS:CHEMISTRY;LEAD.TEXT.NEWEST", #P"Q:&gt;sys&gt;chem&gt;lead.text.1" 
 
-
-
 (rename-file "sys:chemistry;lead.text" "gold.text") 
-
-
 
 *→* #P"SYS:CHEMISTRY;GOLD.TEXT.NEWEST", 
 
-
-
 #P"Q:&gt;sys&gt;chem&gt;lead.text.1", 
 
-
-
 #P"Q:&gt;sys&gt;chem&gt;gold.text.1" 
-
-
 
 
 ```

@@ -50,31 +50,17 @@ If *rational* is an *integer* , **numerator** returns *rational* and **denominat
 ```lisp
  
 
-
-
 (numerator 1/2) *→* 1 
-
-
 
 (denominator 12/36) *→* 3 
 
-
-
 (numerator -1) *→* -1 
-
-
 
 (denominator (/ -33)) *→* 33 
 
-
-
 (numerator (/ 8 -6)) *→* -4 
 
-
-
 (denominator (/ 8 -6)) *→* 3 
-
-
 
 
 ```

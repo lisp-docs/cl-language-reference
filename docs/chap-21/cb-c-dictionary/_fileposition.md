@@ -82,131 +82,67 @@ sequence) and other aspects of the implementation. For a binary file, every **re
 ```lisp
  
 
-
-
 (defun tester () 
-
-
 
 (let ((noticed ’()) file-written) 
 
-
-
 (flet ((notice (x) (push x noticed) x)) 
-
-
 
 (with-open-file (s "test.bin" 
 
-
-
 :element-type ’(unsigned-byte 8) 
-
-
 
 :direction :output 
 
-
-
 :if-exists :error) 
-
-
 
 (notice (file-position s)) ;1 
 
-
-
 (write-byte 5 s) 
-
-
 
 (write-byte 6 s) 
 
-
-
 (let ((p (file-position s))) 
-
-
 
 (notice p) ;2 
 
-
-
 (notice (when p (file-position s (1- p))))) ;3 
-
-
 
 (write-byte 7 s) 
 
-
-
 (notice (file-position s)) ;4 
-
-
 
 (setq file-written (truename s))) 
 
-
-
 (with-open-file (s file-written 
-
-
 
 :element-type ’(unsigned-byte 8) 
 
-
-
 :direction :input) 
-
-
 
 (notice (file-position s)) ;5 
 
-
-
 (let ((length (file-length s))) 
-
-
 
 (notice length) ;6 
 
-
-
 (when length 
-
-
 
 (dotimes (i length) 
 
-
-
 (notice (read-byte s)))))) ;7,... 
-
-
 
 (nreverse noticed)))) 
 
-
-
 *→* tester 
-
-
 
 (tester) 
 
-
-
 *→* (0 2 T 2 0 2 5 7) 
-
-
 
 <i><sup>or</sup>→</i> (0 2 NIL 3 0 3 5 6 7) 
 
-
-
 <i><sup>or</sup>→</i> (NIL NIL NIL NIL NIL NIL) 
-
-
 
 
 ```

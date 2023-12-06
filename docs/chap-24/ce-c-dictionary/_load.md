@@ -118,127 +118,65 @@ The *external-format* specifies the *external file format* to be used when openi
 ```lisp
  
 
-
-
 ;Establish a data file... 
-
-
 
 (with-open-file (str "data.in" :direction :output :if-exists :error) 
 
-
-
 (print 1 str) (print ’(setq a 888) str) t) 
-
-
 
 *→* T 
 
-
-
 (load "data.in") *→ true* 
-
-
 
 a *→* 888 
 
-
-
 (load (setq p (merge-pathnames "data.in")) :verbose t) 
-
-
 
 ; Loading contents of file /fred/data.in 
 
-
-
 ; Finished loading /fred/data.in 
 
-
-
 *→ true* 
-
-
 
 (load p :print t) 
 
-
-
 ; Loading contents of file /fred/data.in 
-
-
 
 ; 1 
 
-
-
 ; 888 
-
-
 
 ; Finished loading /fred/data.in 
 
-
-
 *→ true* 
-
-
 
 System 
 
-
-
  
 
-
-
  
-
-
 
 ;––[Begin file SETUP]–– 
 
-
-
 (in-package "MY-STUFF") 
-
-
 
 (defmacro compile-truename () ‘’,\*compile-file-truename\*) 
 
-
-
 (defvar \*my-compile-truename\* (compile-truename) "Just for debugging.") 
-
-
 
 (defvar \*my-load-pathname\* \*load-pathname\*) 
 
-
-
 (defun load-my-system () 
-
-
 
 (dolist (module-name ’("FOO" "BAR" "BAZ")) 
 
-
-
 (load (merge-pathnames module-name \*my-load-pathname\*)))) 
-
-
 
 ;––[End of file SETUP]–– 
 
-
-
 (load "SETUP") 
 
-
-
 (load-my-system) 
-
-
 
 
 ```

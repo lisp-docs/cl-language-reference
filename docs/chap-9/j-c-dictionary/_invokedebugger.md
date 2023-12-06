@@ -38,35 +38,19 @@ The standard debugger never directly returns. Return can occur only by a non-loc
 ```lisp
  
 
-
-
 (ignore-errors ;Normally, this would suppress debugger entry 
-
-
 
 (handler-bind ((error #’invoke-debugger)) ;But this forces debugger entry 
 
-
-
 (error "Foo."))) 
-
-
 
 Debug: Foo. 
 
-
-
 To continue, type :CONTINUE followed by an option number: 
-
-
 
 1: Return to Lisp Toplevel. 
 
-
-
 Debug&gt; 
-
-
 
 
 ```

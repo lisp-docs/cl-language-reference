@@ -90,31 +90,17 @@ expansion of a *type specifier* is not defined fully at compile time (perhaps be
 ```lisp
  
 
-
-
 (defun equidimensional (a) 
-
-
 
 (or (&lt; (array-rank a) 2) 
 
-
-
 (apply #’= (array-dimensions a)))) *→* EQUIDIMENSIONAL 
-
-
 
 (deftype square-matrix (&amp;optional type size) 
 
-
-
 ‘(and (array ,type (,size ,size)) 
 
-
-
 (satisfies equidimensional))) *→* SQUARE-MATRIX 
-
-
 
 
 ```

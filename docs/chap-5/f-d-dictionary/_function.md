@@ -50,27 +50,15 @@ error for performance reasons, but implementations are forbidden from defining t
 ```lisp
  
 
-
-
 (defun adder (x) (function (lambda (y) (+ x y)))) 
-
-
 
 The result of (adder 3) is a function that adds 3 to its argument: 
 
-
-
 (setq add3 (adder 3)) 
-
-
 
 (funcall add3 5) *→* 8 
 
-
-
 This works because **function** creates a *closure* of the *lambda expression* that is able to refer to the *value* 3 of the variable x even after control has returned from the function adder. 
-
-
 
 
 ```

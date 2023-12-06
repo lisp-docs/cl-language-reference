@@ -42,39 +42,21 @@ If *function* has side effects, it can count on being called first on all of the
 ```lisp
  
 
-
-
 (setq a (list 1 2 3 4) b (list 10 10 10 10)) *→* (10 10 10 10) 
-
-
 
 (map-into a #’+ a b) *→* (11 12 13 14) 
 
-
-
 a *→* (11 12 13 14) 
-
-
 
 b *→* (10 10 10 10) 
 
-
-
 (setq k ’(one two three)) *→* (ONE TWO THREE) 
-
-
 
 (map-into a #’cons k a) *→* ((ONE . 11) (TWO . 12) (THREE . 13) 14) 
 
-
-
 (map-into a #’gensym) *→* (#:G9090 #:G9091 #:G9092 #:G9093) 
 
-
-
 a *→* (#:G9090 #:G9091 #:G9092 #:G9093) 
-
-
 
 
 ```

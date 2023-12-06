@@ -50,39 +50,21 @@ If the *result-type* is a *subtype* of **vector**, then if the implementation ca
 ```lisp
  
 
-
-
 (make-sequence ’list 0) *→* () 
-
-
 
 (make-sequence ’string 26 :initial-element #\.) 
 
-
-
 *→* ".........................." 
-
-
 
 (make-sequence ’(vector double-float) 2 
 
-
-
 :initial-element 1d0) 
-
-
 
 *→* #(1.0d0 1.0d0) 
 
-
-
 (make-sequence ’(vector \* 2) 3) should signal an error 
 
-
-
 (make-sequence ’(vector \* 4) 3) should signal an error 
-
-
 
 
 ```

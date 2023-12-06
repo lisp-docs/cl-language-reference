@@ -46,27 +46,15 @@ Regardless of whether an *implementation* provides distinct representations for 
 ```lisp
  
 
-
-
 (zerop 0) *→ true* 
-
-
 
 (zerop 1) *→ false* 
 
-
-
 (zerop -0.0) *→ true* 
-
-
 
 (zerop 0/100) *→ true* 
 
-
-
 (zerop #c(0 0.0)) *→ true* 
-
-
 
 
 ```

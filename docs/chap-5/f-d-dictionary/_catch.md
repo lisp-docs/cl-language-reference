@@ -66,23 +66,13 @@ The mechanism for **catch** and **throw** works even if **throw** is not within 
 ```lisp
  
 
-
-
 (catch ’dummy-tag 1 2 (throw ’dummy-tag 3) 4) *→* 3 
-
-
 
 (catch ’dummy-tag 1 2 3 4) *→* 4 
 
-
-
 (defun throw-back (tag) (throw tag t)) *→* THROW-BACK 
 
-
-
 (catch ’dummy-tag (throw-back ’dummy-tag) 2) *→* T 
-
-
 
 Data and Control 
 
@@ -90,31 +80,15 @@ Data and Control
 
 
 
-
-
-
-
-
-
 ;; Contrast behavior of this example with corresponding example of BLOCK. 
-
-
 
 (catch ’c 
 
-
-
 (flet ((c1 () (throw ’c 1))) 
-
-
 
 (catch ’c (c1) (print ’unreachable)) 
 
-
-
 2)) *→* 2 
-
-
 
 
 ```

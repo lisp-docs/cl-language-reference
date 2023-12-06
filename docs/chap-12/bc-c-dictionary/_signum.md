@@ -46,55 +46,29 @@ If *number* is a *float*, the result is a *float*. If *number* is a *rational*, 
 ```lisp
  
 
-
-
 (signum 0) *→* 0 
-
-
 
 (signum 99) *→* 1 
 
-
-
 (signum 4/5) *→* 1 
-
-
 
 (signum -99/100) *→* -1 
 
-
-
 (signum 0.0) *→* 0.0 
-
-
 
 (signum #c(0 33)) *→* #C(0.0 1.0) 
 
-
-
 (signum #c(7.5 10.0)) *→* #C(0.6 0.8) 
 
-
-
 (signum #c(0.0 -14.7)) *→* #C(0.0 -1.0) 
-
-
 
 (eql (signum -0.0) -0.0) *→ true* 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 
 ```

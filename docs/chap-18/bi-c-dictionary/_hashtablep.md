@@ -46,23 +46,13 @@ Hash
 ```lisp
  
 
-
-
 (setq table (make-hash-table)) *→* #<HASH-TABLE EQL 0/120 32511220> 
-
-
 
 (hash-table-p table) *→ true* 
 
-
-
 (hash-table-p 37) *→ false* 
 
-
-
 (hash-table-p ’((a . 1) (b . 2))) *→ false* 
-
-
 
 
 ```

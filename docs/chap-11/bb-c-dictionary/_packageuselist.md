@@ -46,19 +46,11 @@ Returns a *list* of other *packages* used by *package*.
 ```lisp
  
 
-
-
 (package-use-list (make-package ’temp)) *→* (#<PACKAGE "COMMON-LISP">) 
-
-
 
 (use-package ’common-lisp-user ’temp) *→* T 
 
-
-
 (package-use-list ’temp) *→* (#<PACKAGE "COMMON-LISP"> #<PACKAGE "COMMON-LISP-USER">) 
-
-
 
 
 ```

@@ -58,95 +58,49 @@
 ```lisp
  
 
-
-
 (setq table (make-hash-table)) *→* #<HASH-TABLE EQL 0/120 32206334> 
-
-
 
 (gethash 1 table) *→* NIL, *false* 
 
-
-
 (gethash 1 table 2) *→* 2, *false* 
-
-
 
 (setf (gethash 1 table) "one") *→* "one" 
 
-
-
 (setf (gethash 2 table "two") "two") *→* "two" 
-
-
 
 (gethash 1 table) *→* "one", *true* 
 
-
-
 (gethash 2 table) *→* "two", *true* 
-
-
 
 (gethash nil table) *→* NIL, *false* 
 
-
-
 (setf (gethash nil table) nil) *→* NIL 
-
-
 
 (gethash nil table) *→* NIL, *true* 
 
-
-
 (defvar \*counters\* (make-hash-table)) *→* \*COUNTERS\* 
 
-
-
 (gethash ’foo \*counters\*) *→* NIL, *false* 
-
-
 
 (gethash ’foo \*counters\* 0) *→* 0, *false* 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (defmacro how-many (obj) ‘(values (gethash ,obj \*counters\* 0))) *→* HOW-MANY 
 
-
-
 (defun count-it (obj) (incf (how-many obj))) *→* COUNT-IT 
-
-
 
 (dolist (x ’(bar foo foo bar bar baz)) (count-it x)) 
 
-
-
 (how-many ’foo) *→* 2 
-
-
 
 (how-many ’bar) *→* 3 
 
-
-
 (how-many ’quux) *→* 0 
-
-
 
 
 ```

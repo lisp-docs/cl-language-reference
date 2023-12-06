@@ -38,63 +38,33 @@ If a *normal return* from the *forms* occurs, any *values* returned are returned
 ```lisp
  
 
-
-
 (defun load-init-file (program) 
-
-
 
 (let ((win nil)) 
 
-
-
 (ignore-errors ;if this fails, don’t enter debugger 
-
-
 
 (load (merge-pathnames (make-pathname :name program :type :lisp) 
 
-
-
 (user-homedir-pathname))) 
-
-
 
 (setq win t)) 
 
-
-
 (unless win (format t "&#126;&amp;Init file failed to load.&#126;%")) 
-
-
 
 win)) 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (load-init-file "no-such-program") 
 
-
-
 ▷ Init file failed to load. 
 
-
-
 NIL 
-
-
 
 
 ```

@@ -136,71 +136,37 @@ Any two *objects* that are **eql** are also **equal**.
 ```lisp
  
 
-
-
 (equal ’a ’b) *→ false* 
-
-
 
 (equal ’a ’a) *→ true* 
 
-
-
 (equal 3 3) *→ true* 
-
-
 
 (equal 3 3.0) *→ false* 
 
-
-
 (equal 3.0 3.0) *→ true* 
-
-
 
 (equal #c(3 -4) #c(3 -4)) *→ true* 
 
-
-
 (equal #c(3 -4.0) #c(3 -4)) *→ false* 
-
-
 
 (equal (cons ’a ’b) (cons ’a ’c)) *→ false* 
 
-
-
 (equal (cons ’a ’b) (cons ’a ’b)) *→ true* 
-
-
 
 (equal #\A #\A) *→ true* 
 
-
-
 (equal #\A #\a) *→ false* 
-
-
 
 (equal "Foo" "Foo") *→ true* 
 
-
-
 (equal "Foo" (copy-seq "Foo")) *→ true* 
-
-
 
 (equal "FOO" "foo") *→ false* 
 
-
-
 (equal "This-string" "This-string") *→ true* 
 
-
-
 (equal "This-string" "this-string") *→ false* 
-
-
 
 
 ```

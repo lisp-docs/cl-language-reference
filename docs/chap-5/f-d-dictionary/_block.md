@@ -58,59 +58,31 @@ Once established, a *block* may only be exited once, whether by *normal return* 
 ```lisp
  
 
-
-
 (block empty) *→* NIL 
-
-
 
 (block whocares (values 1 2) (values 3 4)) *→* 3, 4 
 
-
-
 (let ((x 1)) 
-
-
 
 (block stop (setq x 2) (return-from stop) (setq x 3)) 
 
-
-
 x) *→* 2 
-
-
 
 (block early (return-from early (values 1 2)) (values 3 4)) *→* 1, 2 
 
-
-
 (block outer (block inner (return-from outer 1)) 2) *→* 1 
-
-
 
 (block twin (block twin (return-from twin 1)) 2) *→* 2 
 
-
-
 ;; Contrast behavior of this example with corresponding example of CATCH. 
-
-
 
 (block b 
 
-
-
 (flet ((b1 () (return-from b 1))) 
-
-
 
 (block b (b1) (print ’unreachable)) 
 
-
-
 2)) *→* 1 
-
-
 
 
 ```

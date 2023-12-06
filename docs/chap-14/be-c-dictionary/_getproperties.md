@@ -62,35 +62,19 @@ It searches the *plist* for the first entry whose *indicator* is *identical* to 
 ```lisp
  
 
-
-
 (setq x ’()) *→* NIL 
-
-
 
 (setq \*indicator-list\* ’(prop1 prop2)) *→* (PROP1 PROP2) 
 
-
-
 (getf x ’prop1) *→* NIL 
-
-
 
 (setf (getf x ’prop1) ’val1) *→* VAL1 
 
-
-
 (eq (getf x ’prop1) ’val1) *→ true* 
-
-
 
 (get-properties x \*indicator-list\*) *→* PROP1, VAL1, (PROP1 VAL1) 
 
-
-
 x *→* (PROP1 VAL1) 
-
-
 
 
 ```

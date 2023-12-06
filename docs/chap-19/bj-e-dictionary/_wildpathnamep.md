@@ -46,43 +46,23 @@ If *field-key* is not supplied or **nil**, **wild-pathname-p** returns true if *
 ```lisp
  
 
-
-
 ;;;The following examples are not portable. They are written to run 
-
-
 
 ;;;with particular file systems and particular wildcard conventions. 
 
-
-
 ;;;Other implementations will behave differently. These examples are 
-
-
 
 ;;;intended to be illustrative, not to be prescriptive. 
 
-
-
 (wild-pathname-p (make-pathname :name :wild)) *→ true* 
-
-
 
 (wild-pathname-p (make-pathname :name :wild) :name) *→ true* 
 
-
-
 (wild-pathname-p (make-pathname :name :wild) :type) *→ false* 
-
-
 
 (wild-pathname-p (pathname "s:&gt;foo&gt;\*\*&gt;")) *→ true* ;Lispm 
 
-
-
 (wild-pathname-p (pathname :name "F\*O")) *→ true* ;Most places 
-
-
 
 
 ```

@@ -46,43 +46,23 @@ Once the arguments have been determined, **invoke-restart-interactively** execut
 ```lisp
  
 
-
-
 (defun add3 (x) (check-type x number) (+ x 3)) 
-
-
 
 (add3 ’seven) 
 
-
-
 ▷ Error: The value SEVEN was not of type NUMBER. 
-
-
 
 ▷ To continue, type :CONTINUE followed by an option number: 
 
-
-
 ▷ 1: Specify a different value to use. 
-
-
 
 ▷ 2: Return to Lisp Toplevel. 
 
-
-
 ▷ Debug&gt; (invoke-restart-interactively ’store-value) 
-
-
 
 ▷ Type a form to evaluate and use: 7 
 
-
-
 *→* 10 
-
-
 
 
 ```

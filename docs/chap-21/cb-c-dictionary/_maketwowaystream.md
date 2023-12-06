@@ -38,31 +38,17 @@ Returns a *two-way stream* that gets its input from *input-stream* and sends its
 ```lisp
  
 
-
-
 (with-output-to-string (out) 
-
-
 
 (with-input-from-string (in "input...") 
 
-
-
 (let ((two (make-two-way-stream in out))) 
-
-
 
 (format two "output...") 
 
-
-
 (setq what-is-read (read two))))) *→* "output..." 
 
-
-
 what-is-read *→* INPUT... 
-
-
 
 
 ```

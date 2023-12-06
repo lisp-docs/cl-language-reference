@@ -50,19 +50,11 @@ Returns a *string* described by *x*; specifically:
 ```lisp
  
 
-
-
 (string "already a string") *→* "already a string" 
-
-
 
 (string ’elm) *→* "ELM" 
 
-
-
 (string #\c) *→* "c" 
-
-
 
 
 ```
@@ -218,71 +210,37 @@ For **string-upcase**, **string-downcase**, and **string-capitalize**, *string* 
 ```lisp
  
 
-
-
 (string-upcase "abcde") *→* "ABCDE" 
-
-
 
 (string-upcase "Dr. Livingston, I presume?") 
 
-
-
 *→* "DR. LIVINGSTON, I PRESUME?" 
-
-
 
 (string-upcase "Dr. Livingston, I presume?" :start 6 :end 10) 
 
-
-
 *→* "Dr. LiVINGston, I presume?" 
-
-
 
 (string-downcase "Dr. Livingston, I presume?") 
 
-
-
 *→* "dr. livingston, i presume?" 
-
-
 
 (string-capitalize "elm 13c arthur;fig don’t") *→* "Elm 13c Arthur;Fig Don’T" 
 
-
-
 (string-capitalize " hello ") *→* " Hello " 
-
-
 
 (string-capitalize "occlUDeD cASEmenTs FOreSTAll iNADVertent DEFenestraTION") *→* "Occluded Casements Forestall Inadvertent Defenestration" 
 
-
-
 (string-capitalize ’kludgy-hash-search) *→* "Kludgy-Hash-Search" 
-
-
 
 (string-capitalize "DON’T!") *→* "Don’T!" ;not "Don’t!" 
 
-
-
 (string-capitalize "pipe 13a, foo16c") *→* "Pipe 13a, Foo16c" 
-
-
 
 (setq str (copy-seq "0123ABCD890a")) *→* "0123ABCD890a" 
 
-
-
 (nstring-downcase str :start 5 :end 7) *→* "0123AbcD890a" 
 
-
-
 str *→* "0123AbcD890a" 
-
-
 
 
 ```

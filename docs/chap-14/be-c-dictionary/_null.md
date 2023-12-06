@@ -46,23 +46,13 @@ Returns **t** if *object* is the *empty list*; otherwise, returns **nil**.
 ```lisp
  
 
-
-
 (null ’()) *→* T 
-
-
 
 (null nil) *→* T 
 
-
-
 (null t) *→* NIL 
 
-
-
 (null 1) *→* NIL 
-
-
 
 
 ```

@@ -58,27 +58,15 @@ The consequences are undefined if an attempt is made to *assign* the the *variab
 ```lisp
  
 
-
-
 (with-open-stream (s (make-string-input-stream "1 2 3 4")) 
-
-
 
 (+ (read s) (read s) (read s))) *→* 6 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 
 ```

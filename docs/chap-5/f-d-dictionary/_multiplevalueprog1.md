@@ -38,27 +38,15 @@
 ```lisp
  
 
-
-
 (setq temp ’(1 2 3)) → (1 2 3) 
-
-
 
 (multiple-value-prog1 
 
-
-
 (values-list temp) 
-
-
 
 (setq temp nil) 
 
-
-
 (values-list temp)) → 1, 2, 3 
-
-
 
 
 ```

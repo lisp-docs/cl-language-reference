@@ -50,31 +50,17 @@ The *element-type* names the *type* of the *elements* of the *string*; a *string
 ```lisp
  
 
-
-
 (let ((s (make-string-output-stream))) 
-
-
 
 (write-string "testing... " s) 
 
-
-
 (prin1 1234 s) 
-
-
 
 (get-output-stream-string s)) 
 
-
-
 *→* "testing... 1234" 
 
-
-
 None.. 
-
-
 
 
 ```

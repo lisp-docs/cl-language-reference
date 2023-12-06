@@ -46,107 +46,55 @@ The *property indicator* and the corresponding *property value* are removed in a
 ```lisp
  
 
-
-
 (setq test (make-symbol "PSEUDO-PI")) *→* #:PSEUDO-PI 
-
-
 
 (symbol-plist test) *→* () 
 
-
-
 (setf (get test ’constant) t) *→* T 
-
-
 
 (setf (get test ’approximation) 3.14) *→* 3.14 
 
-
-
 (setf (get test ’error-range) ’noticeable) *→* NOTICEABLE 
 
-
-
 (symbol-plist test) 
-
-
 
 *→* (ERROR-RANGE NOTICEABLE APPROXIMATION 3.14 CONSTANT T) 
 
-
-
 (setf (get test ’approximation) nil) *→* NIL 
 
-
-
 (symbol-plist test) 
-
-
 
 *→* (ERROR-RANGE NOTICEABLE APPROXIMATION NIL CONSTANT T) 
 
-
-
 (get test ’approximation) *→* NIL 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (remprop test ’approximation) *→ true* 
 
-
-
 (get test ’approximation) *→* NIL 
-
-
 
 (symbol-plist test) 
 
-
-
 *→* (ERROR-RANGE NOTICEABLE CONSTANT T) 
-
-
 
 (remprop test ’approximation) *→* NIL 
 
-
-
 (symbol-plist test) 
-
-
 
 *→* (ERROR-RANGE NOTICEABLE CONSTANT T) 
 
-
-
 (remprop test ’error-range) *→ true* 
-
-
 
 (setf (get test ’approximation) 3) *→* 3 
 
-
-
 (symbol-plist test) 
 
-
-
 *→* (APPROXIMATION 3 CONSTANT T) 
-
-
 
 
 ```

@@ -354,235 +354,119 @@ If a **define-condition** *form* appears as a *top level form*, the *compiler* m
 ```lisp
  
 
-
-
 The following form defines a condition of *type* peg/hole-mismatch which inherits from a condition type called blocks-world-error: 
-
-
 
 (define-condition peg/hole-mismatch 
 
-
-
 (blocks-world-error) 
-
-
 
 ((peg-shape :initarg :peg-shape 
 
-
-
 :reader peg/hole-mismatch-peg-shape) 
-
-
 
 (hole-shape :initarg :hole-shape 
 
-
-
 :reader peg/hole-mismatch-hole-shape)) 
 
-
-
 (:report (lambda (condition stream) 
-
-
 
 (format stream "A &#126;A peg cannot go in a &#126;A hole." 
 
-
-
 (peg/hole-mismatch-peg-shape condition) 
-
-
 
 (peg/hole-mismatch-hole-shape condition))))) 
 
-
-
 The new type has slots peg-shape and hole-shape, so **make-condition** accepts :peg-shape and :hole-shape keywords. The *readers* peg/hole-mismatch-peg-shape and peg/hole-mismatch-hole-shape apply to objects of this type, as illustrated in the :report information. 
-
-
 
 The following form defines a *condition type* named machine-error which inherits from **error**: 
 
-
-
 (define-condition machine-error 
-
-
 
 (error) 
 
-
-
 ((machine-name :initarg :machine-name 
-
-
 
 :reader machine-error-machine-name)) 
 
-
-
 (:report (lambda (condition stream) 
-
-
 
 (format stream "There is a problem with &#126;A." 
 
-
-
 (machine-error-machine-name condition))))) 
-
-
 
 Building on this definition, a new error condition can be defined which is a subtype of machine-error for use when machines are not available: 
 
-
-
 (define-condition machine-not-available-error (machine-error) () 
-
-
 
 (:report (lambda (condition stream) 
 
-
-
 (format stream "The machine &#126;A is not available." 
-
-
 
 (machine-error-machine-name condition))))) 
 
-
-
 This defines a still more specific condition, built upon machine-not-available-error, which provides a slot initialization form for machine-name but which does not provide any new slots or report information. It just gives the machine-name slot a default initialization: 
 
-
-
 (define-condition my-favorite-machine-not-available-error 
-
-
 
 (machine-not-available-error) 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 ((machine-name :initform "mc.lcs.mit.edu"))) 
 
-
-
 Note that since no :report clause was given, the information inherited from machine-not-available-error is used to report this type of condition. 
-
-
 
 (define-condition ate-too-much (error) 
 
-
-
 ((person :initarg :person :reader ate-too-much-person) 
-
-
 
 (weight :initarg :weight :reader ate-too-much-weight) 
 
-
-
 (kind-of-food :initarg :kind-of-food 
-
-
 
 :reader :ate-too-much-kind-of-food))) 
 
-
-
 *→* ATE-TOO-MUCH 
-
-
 
 (define-condition ate-too-much-ice-cream (ate-too-much) 
 
-
-
 ((kind-of-food :initform ’ice-cream) 
-
-
 
 (flavor :initarg :flavor 
 
-
-
 :reader ate-too-much-ice-cream-flavor 
-
-
 
 :initform ’vanilla )) 
 
-
-
 (:report (lambda (condition stream) 
-
-
 
 (format stream "&#126;A ate too much &#126;A ice-cream" 
 
-
-
 (ate-too-much-person condition) 
-
-
 
 (ate-too-much-ice-cream-flavor condition))))) 
 
-
-
 *→* ATE-TOO-MUCH-ICE-CREAM 
-
-
 
 (make-condition ’ate-too-much-ice-cream 
 
-
-
 :person ’fred 
-
-
 
 :weight 300 
 
-
-
 :flavor ’chocolate) 
-
-
 
 *→* #<ATE-TOO-MUCH-ICE-CREAM 32236101> 
 
-
-
 (format t "&#126;A" \*) 
-
-
 
 ▷ FRED ate too much CHOCOLATE ice-cream 
 
-
-
 *→* NIL 
-
-
 
 
 ```

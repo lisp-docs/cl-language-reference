@@ -38,31 +38,17 @@ It is *implementation-dependent* whether the *string* that becomes the *new-symb
 ```lisp
  
 
-
-
 (setq temp-string "temp") *→* "temp" 
-
-
 
 (setq temp-symbol (make-symbol temp-string)) *→* #:|temp| 
 
-
-
 (symbol-name temp-symbol) *→* "temp" 
-
-
 
 (eq (symbol-name temp-symbol) temp-string) *→ implementation-dependent* 
 
-
-
 (find-symbol "temp") *→* NIL, NIL 
 
-
-
 (eq (make-symbol temp-string) (make-symbol temp-string)) *→ false* 
-
-
 
 
 ```

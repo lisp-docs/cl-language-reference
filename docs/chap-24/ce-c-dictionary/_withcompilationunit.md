@@ -78,31 +78,17 @@ Any *implementation-dependent* extensions can only be provided as the result of 
 ```lisp
  
 
-
-
 If an *implementation* would normally defer certain kinds of warnings, such as warnings about undefined functions, to the end of a compilation unit (such as a *file*), the following example shows how to cause those warnings to be deferred to the end of the compilation of several files. 
-
-
 
 (defun compile-files (&amp;rest files) 
 
-
-
 (with-compilation-unit () 
-
-
 
 (mapcar #’(lambda (file) (compile-file file)) files))) 
 
-
-
 (compile-files "A" "B" "C") 
 
-
-
 Note however that if the implementation does not normally defer any warnings, use of *with-compilation-unit* might not have any effect. 
-
-
 
 
 ```

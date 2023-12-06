@@ -66,27 +66,15 @@ If *sequence-1* and *sequence-2* are the *same object* and the region being modi
 ```lisp
  
 
-
-
 (replace "abcdefghij" "0123456789" :start1 4 :end1 7 :start2 4) 
-
-
 
 *→* "abcd456hij" 
 
-
-
 (setq lst "012345678") *→* "012345678" 
-
-
 
 (replace lst lst :start1 2 :start2 0) *→* "010123456" 
 
-
-
 lst *→* "010123456" 
-
-
 
 
 ```
@@ -282,79 +270,41 @@ The result of all these functions is a *sequence* of the same *type* as *sequenc
 ```lisp
  
 
-
-
 (substitute #\. #\SPACE "0 2 4 6") *→* "0.2.4.6" 
-
-
 
 (substitute 9 4 ’(1 2 4 1 3 4 5)) *→* (1 2 9 1 3 9 5) 
 
-
-
 (substitute 9 4 ’(1 2 4 1 3 4 5) :count 1) *→* (1 2 9 1 3 4 5) 
-
-
 
 (substitute 9 4 ’(1 2 4 1 3 4 5) :count 1 :from-end t) 
 
-
-
 *→* (1 2 4 1 3 9 5) 
-
-
 
 (substitute 9 3 ’(1 2 4 1 3 4 5) :test #’&gt;) *→* (9 9 4 9 3 4 5) 
 
-
-
 (substitute-if 0 #’evenp ’((1) (2) (3) (4)) :start 2 :key #’car) 
-
-
 
 *→* ((1) (2) (3) 0) 
 
-
-
 (substitute-if 9 #’oddp ’(1 2 4 1 3 4 5)) *→* (9 2 4 9 9 4 9) 
-
-
 
 (substitute-if 9 #’evenp ’(1 2 4 1 3 4 5) :count 1 :from-end t) 
 
-
-
 *→* (1 2 4 1 3 9 5) 
-
-
 
 (setq some-things (list ’a ’car ’b ’cdr ’c)) *→* (A CAR B CDR C) 
 
-
-
 (nsubstitute-if "function was here" #’fboundp some-things 
-
-
 
 :count 1 :from-end t) *→* (A CAR B "function was here" C) 
 
-
-
 some-things *→* (A CAR B "function was here" C) 
-
-
 
 (setq alpha-tester (copy-seq "ab ")) *→* "ab " 
 
-
-
 (nsubstitute-if-not #\z #’alpha-char-p alpha-tester) *→* "abz" 
 
-
-
 alpha-tester *→* "abz" 
-
-
 
 
 ```

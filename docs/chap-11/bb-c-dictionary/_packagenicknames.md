@@ -30,19 +30,11 @@ Returns the *list* of nickname *strings* for *package*, not including the name o
 ```lisp
  
 
-
-
 (package-nicknames (make-package ’temporary 
-
-
 
 :nicknames ’("TEMP" "temp"))) 
 
-
-
 *→* ("temp" "TEMP") 
-
-
 
 
 ```

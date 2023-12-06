@@ -34,19 +34,11 @@ Returns a *list* of the *dimensions* of *array*. (If *array* is a *vector* with 
 ```lisp
  
 
-
-
 (array-dimensions (make-array 4)) *→* (4) 
-
-
 
 (array-dimensions (make-array ’(2 3))) *→* (2 3) 
 
-
-
 (array-dimensions (make-array 4 :fill-pointer 2)) *→* (4) 
-
-
 
 
 ```

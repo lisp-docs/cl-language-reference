@@ -62,87 +62,45 @@ If an *implementation* chooses to make use of the *environment* information, suc
 ```lisp
  
 
-
-
 (constantp 1) →  true 
-
-
 
 (constantp ’temp) →  false 
 
-
-
 (constantp ”temp)) →  true 
-
-
 
 (defconstant this-is-a-constant ’never-changing) → THIS-IS-A-CONSTANT 
 
-
-
 Evaluation and 
 
-
-
  
 
-
-
  
-
-
 
 **constantp** 
 
-
-
 (constantp ’this-is-a-constant) →  true 
-
-
 
 (constantp "temp") →  true 
 
-
-
 (setq a 6) → 6 
-
-
 
 (constantp a) →  true 
 
-
-
 (constantp ’(sin pi)) →  implementation-dependent 
-
-
 
 (constantp ’(car ’(x))) →  implementation-dependent 
 
-
-
 (constantp ’(eql x x)) →  implementation-dependent 
-
-
 
 (constantp ’(typep x ’nil)) →  implementation-dependent 
 
-
-
 (constantp ’(typep x ’t)) →  implementation-dependent 
-
-
 
 (constantp ’(values this-is-a-constant)) →  implementation-dependent 
 
-
-
 (constantp ’(values ’x ’y)) →  implementation-dependent 
 
-
-
 (constantp ’(let ((a ’(a b c))) (+ (length a) 6))) →  implementation-dependent 
-
-
 
 
 ```

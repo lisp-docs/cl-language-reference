@@ -82,83 +82,43 @@ If the *symbol* is inherited by *package* through **use-package**, but is not *p
 ```lisp
  
 
-
-
 (find-symbol "NEVER-BEFORE-USED") *→* NIL, NIL 
 
-
-
 (find-symbol "NEVER-BEFORE-USED") *→* NIL, NIL 
-
-
 
 (intern "NEVER-BEFORE-USED") *→* NEVER-BEFORE-USED, NIL 
 
-
-
 (intern "NEVER-BEFORE-USED") *→* NEVER-BEFORE-USED, :INTERNAL 
-
-
 
 (find-symbol "NEVER-BEFORE-USED") *→* NEVER-BEFORE-USED, :INTERNAL 
 
-
-
 (find-symbol "never-before-used") *→* NIL, NIL 
-
-
 
 (find-symbol "CAR" ’common-lisp-user) *→* CAR, :INHERITED 
 
-
-
 (find-symbol "CAR" ’common-lisp) *→* CAR, :EXTERNAL 
-
-
 
 (find-symbol "NIL" ’common-lisp-user) *→* NIL, :INHERITED 
 
-
-
 (find-symbol "NIL" ’common-lisp) *→* NIL, :EXTERNAL 
-
-
 
 (find-symbol "NIL" (prog1 (make-package "JUST-TESTING" :use ’()) 
 
-
-
 (intern "NIL" "JUST-TESTING"))) 
-
-
 
 *→* JUST-TESTING::NIL, :INTERNAL 
 
-
-
 (export ’just-testing::nil ’just-testing) 
-
-
 
 (find-symbol "NIL" ’just-testing) *→* JUST-TESTING:NIL, :EXTERNAL 
 
-
-
 (find-symbol "NIL" "KEYWORD") 
-
-
 
 *→* NIL, NIL 
 
-
-
 <i><sup>or</sup>→</i> :NIL, :EXTERNAL 
 
-
-
 (find-symbol (symbol-name :nil) "KEYWORD") *→* :NIL, :EXTERNAL 
-
-
 
 
 ```

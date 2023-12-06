@@ -130,19 +130,11 @@ The *value* of **-** is the *form* that is currently being evaluated by the *Lis
 ```lisp
  
 
-
-
 (format t "&#126;&amp;Evaluating &#126;S&#126;%" -) 
-
-
 
 ▷ Evaluating (FORMAT T "&#126;&amp;Evaluating &#126;S&#126;%" -) 
 
-
-
 *→* NIL 
-
-
 
 
 ```

@@ -46,63 +46,33 @@
 ```lisp
  
 
-
-
 (defun fix-digits (condition) 
-
-
 
 (check-type condition type-error) 
 
-
-
 (let\* ((digits ’(zero one two three four 
-
-
 
 five six seven eight nine))  
 
 
 
-
-
-
-
 (val (position (type-error-datum condition) digits))) 
-
-
 
 (if (and val (subtypep ’fixnum (type-error-expected-type condition))) 
 
-
-
 (store-value 7)))) 
-
-
 
 (defun foo (x) 
 
-
-
 (handler-bind ((type-error #’fix-digits)) 
-
-
 
 (check-type x number) 
 
-
-
 (+ x 3))) 
-
-
 
 (foo ’seven) 
 
-
-
 *→* 10 
-
-
 
 
 ```

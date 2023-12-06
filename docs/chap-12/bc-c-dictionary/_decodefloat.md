@@ -182,83 +182,43 @@ to the first value as for **decode-float**:
 ```lisp
  
 
-
-
 ;; Note that since the purpose of this functionality is to expose 
-
-
 
 ;; details of the implementation, all of these examples are necessarily 
 
-
-
 ;; very implementation-dependent. Results may vary widely. 
-
-
 
 ;; Values shown here are chosen consistently from one particular implementation. (decode-float .5) → 0.5, 0, 1.0 
 
-
-
 (decode-float 1.0) → 0.5, 1, 1.0 
-
-
 
 (scale-float 1.0 1) → 2.0 
 
-
-
 (scale-float 10.01 -2) → 2.5025 
-
-
 
 (scale-float 23.0 0) → 23.0 
 
-
-
 (float-radix 1.0) → 2 
-
-
 
 (float-sign 5.0) → 1.0 
 
-
-
 (float-sign -5.0) → -1.0 
-
-
 
 (float-sign 0.0) → 1.0 
 
-
-
 (float-sign 1.0 0.0) → 0.0 
-
-
 
 (float-sign 1.0 -10.0) → 10.0 
 
-
-
 (float-sign -1.0 10.0) → -10.0 
-
-
 
 (float-digits 1.0) → 24 
 
-
-
 (float-precision 1.0) → 24 
-
-
 
 (float-precision least-positive-single-float) → 1 
 
-
-
 (integer-decode-float 1.0) → 8388608, -23, 1 
-
-
 
 
 ```

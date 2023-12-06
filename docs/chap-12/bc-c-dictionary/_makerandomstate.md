@@ -38,75 +38,39 @@ If *state* is a *random state object*, the *new-state* is a *copy*<sub>5</sub> o
 ```lisp
  
 
-
-
 (let\* ((rs1 (make-random-state nil)) 
-
-
 
 (rs2 (make-random-state t)) 
 
-
-
 (rs3 (make-random-state rs2)) 
-
-
 
 (rs4 nil)) 
 
-
-
 (list (loop for i from 1 to 10 
-
-
 
 collect (random 100) 
 
-
-
 when (= i 5) 
-
-
 
 do (setq rs4 (make-random-state))) 
 
-
-
 (loop for i from 1 to 10 collect (random 100 rs1)) 
-
-
 
 (loop for i from 1 to 10 collect (random 100 rs2)) 
 
-
-
 (loop for i from 1 to 10 collect (random 100 rs3)) 
-
-
 
 (loop for i from 1 to 10 collect (random 100 rs4)))) 
 
-
-
 *→* ((29 25 72 57 55 68 24 35 54 65) 
-
-
 
 (29 25 72 57 55 68 24 35 54 65) 
 
-
-
 (93 85 53 99 58 62 2 23 23 59) 
 
-
-
 (93 85 53 99 58 62 2 23 23 59) 
-
-
 
 (68 24 35 54 65 54 55 50 59 49)) 
-
-
 
 
 ```

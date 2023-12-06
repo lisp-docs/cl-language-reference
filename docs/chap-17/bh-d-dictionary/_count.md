@@ -66,19 +66,11 @@ The *from-end* has no direct effect on the result. However, if *from-end* is *tr
 ```lisp
  
 
-
-
 (count #\a "how many A’s are there in here?") *→* 2 
-
-
 
 (count-if-not #’oddp ’((1) (2) (3) (4)) :key #’car) *→* 2 
 
-
-
 (count-if #’upper-case-p "The Crying of Lot 49" :start 4) *→* 2 
-
-
 
 
 ```

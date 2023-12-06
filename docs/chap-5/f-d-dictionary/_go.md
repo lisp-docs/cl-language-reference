@@ -34,23 +34,13 @@ The transfer of control initiated by **go** is performed as described in Section
 ```lisp
  
 
-
-
 (tagbody 
-
-
 
 (setq val 2) 
 
-
-
 (go lp) 
 
-
-
 (incf val 3) 
-
-
 
 lp (incf val 4)) *→* NIL 
 
@@ -60,45 +50,21 @@ lp (incf val 4)) *→* NIL
 
 
 
-
-
-
-
-
-
-
-
 val *→* 6 
-
-
 
 The following is in error because there is a normal exit of the **tagbody** before the **go** is executed. 
 
-
-
 (let ((a nil)) 
-
-
 
 (tagbody t (setq a #’(lambda () (go t)))) 
 
-
-
 (funcall a)) 
-
-
 
 The following is in error because the **tagbody** is passed over before the **go** *form* is executed. 
 
-
-
 (funcall (block nil 
 
-
-
 (tagbody a (return #’(lambda () (go a)))))) 
-
-
 
 
 ```

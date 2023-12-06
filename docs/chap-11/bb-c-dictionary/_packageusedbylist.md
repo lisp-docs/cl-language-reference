@@ -34,19 +34,11 @@
 ```lisp
  
 
-
-
 (package-used-by-list (make-package ’temp)) *→* () 
-
-
 
 (make-package ’trash :use ’(temp)) *→* #<PACKAGE "TRASH"> 
 
-
-
 (package-used-by-list ’temp) *→* (#<PACKAGE "TRASH">) 
-
-
 
 
 ```

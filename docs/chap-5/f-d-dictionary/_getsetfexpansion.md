@@ -54,67 +54,35 @@ If *environment* is not supplied or **nil**, the environment is the *null lexica
 ```lisp
  
 
-
-
 (get-setf-expansion ’x) 
-
-
 
 → NIL, NIL, (#:G0001), (SETQ X #:G0001), X 
 
-
-
 ;;; This macro is like POP 
-
-
 
 (defmacro xpop (place &amp;environment env) 
 
-
-
 (multiple-value-bind (dummies vals new setter getter) 
-
-
 
 (get-setf-expansion place env) 
 
-
-
 ‘(let\* (,@(mapcar #’list dummies vals) (,(car new) ,getter)) 
-
-
 
 (if (cdr new) (error "Can’t expand this.")) 
 
-
-
 (prog1 (car ,(car new)) 
-
-
 
 (setq ,(car new) (cdr ,(car new))) 
 
-
-
 ,setter)))) 
-
-
 
 (defsetf frob (x) (value) 
 
-
-
 ‘(setf (car ,x) ,value)) → FROB 
-
-
 
 ;;; The following is an error; an error might be signaled at macro expansion time (flet ((frob (x) (cdr x))) ;Invalid 
 
-
-
 (xpop (frob z))) 
-
-
 
 
 ```

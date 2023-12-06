@@ -66,55 +66,29 @@ If the *result-type* is a *subtype* of **vector**, then if the implementation ca
 ```lisp
  
 
-
-
 (map ’string #’(lambda (x y) 
-
-
 
 (char "01234567890ABCDEF" (mod (+ x y) 16))) 
 
-
-
 ’(1 2 3 4) 
-
-
 
 ’(10 9 8 7)) *→* "AAAA" 
 
-
-
 (setq seq ’("lower" "UPPER" "" "123")) *→* ("lower" "UPPER" "" "123") 
-
-
 
 (map nil #’nstring-upcase seq) *→* NIL 
 
-
-
 seq *→* ("LOWER" "UPPER" "" "123") 
-
-
 
 (map ’list #’- ’(1 2 3 4)) *→* (-1 -2 -3 -4) 
 
-
-
 (map ’string 
-
-
 
 #’(lambda (x) (if (oddp x) #\1 #\0)) 
 
-
-
 ’(1 2 3 4)) *→* "1010" 
 
-
-
 (map ’(vector \* 4) #’cons "abc" "de") should signal an error 
-
-
 
 
 ```

@@ -138,79 +138,41 @@ If there are no *forms* in a selected *clause*, the case, and therefore **handle
 ```lisp
  
 
-
-
 (defun assess-condition (condition) 
-
-
 
 (handler-case (signal condition) 
 
-
-
 (warning () "Lots of smoke, but no fire.") 
-
-
 
 ((or arithmetic-error control-error cell-error stream-error) 
 
-
-
 (condition) 
-
-
 
 (format nil "&#126;S looks especially bad." condition)) 
 
-
-
 (serious-condition (condition) 
-
-
 
 (format nil "&#126;S looks serious." condition)) 
 
-
-
 (condition () "Hardly worth mentioning."))) 
-
-
 
 *→* ASSESS-CONDITION 
 
-
-
 (assess-condition (make-condition ’stream-error :stream \*terminal-io\*)) *→* "#<STREAM-ERROR 12352256> looks especially bad." 
-
-
 
 (define-condition random-condition (condition) () 
 
-
-
 (:report (lambda (condition stream) 
-
-
 
 (declare (ignore condition)) 
 
-
-
 (princ "Yow" stream)))) 
-
-
 
 *→* RANDOM-CONDITION 
 
-
-
 (assess-condition (make-condition ’random-condition)) 
 
-
-
 *→* "Hardly worth mentioning." 
-
-
 
 
 ```

@@ -70,39 +70,21 @@ If some element *satisfies the test*, the tail of *list* beginning with this ele
 ```lisp
  
 
-
-
 (member 2 ’(1 2 3)) *→* (2 3) 
-
-
 
 (member 2 ’((1 . 2) (3 . 4)) :test-not #’= :key #’cdr) *→* ((3 . 4)) 
 
-
-
 (member ’e ’(a b c d)) *→* NIL 
-
-
 
 (member-if #’listp ’(a b nil c d)) *→* (NIL C D) 
 
-
-
 (member-if #’numberp ’(a #\Space 5/3 foo)) *→* (5/3 FOO) 
-
-
 
 (member-if-not #’zerop 
 
-
-
 ’(3 6 9 11 . 12) 
 
-
-
 :key #’(lambda (x) (mod x 3))) *→* (11 . 12) 
-
-
 
 
 ```

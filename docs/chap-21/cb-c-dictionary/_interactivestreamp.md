@@ -34,39 +34,21 @@ Returns *true* if *stream* is an *interactive stream*; otherwise, returns *false
 ```lisp
  
 
-
-
 (when (&gt; measured limit) 
-
-
 
 (let ((error (round (\* (- measured limit) 100) 
 
-
-
 limit))) 
-
-
 
 (unless (if (interactive-stream-p \*query-io\*) 
 
-
-
 (yes-or-no-p "The frammis is out of tolerance by &#126;D%.&#126;@ 
-
-
 
 Is it safe to proceed? " error) 
 
-
-
 (&lt; error 15)) ;15% is acceptable 
 
-
-
 (error "The frammis is out of tolerance by &#126;D%." error)))) 
-
-
 
 
 ```

@@ -82,23 +82,13 @@ Data and Control
 ```lisp
  
 
-
-
 (every #’characterp "abc") *→ true* 
-
-
 
 (some #’= ’(1 2 3 4 5) ’(5 4 3 2 1)) *→ true* 
 
-
-
 (notevery #’&lt; ’(1 2 3 4) ’(5 6 7 8) ’(9 10 11 12)) *→ false* 
 
-
-
 (notany #’&gt; ’(1 2 3 4) ’(5 6 7 8) ’(9 10 11 12)) *→ true* 
-
-
 
 
 ```

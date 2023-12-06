@@ -34,39 +34,21 @@ Returns the offending *stream* of a *condition* of *type* **stream-error**.
 ```lisp
  
 
-
-
 (with-input-from-string (s "(FOO") 
-
-
 
 (handler-case (read s) 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (end-of-file (c) 
 
-
-
 (format nil "&#126;&amp;End of file on &#126;S." (stream-error-stream c))))) 
 
-
-
 "End of file on #\<String Stream\>." 
-
-
 
 
 ```

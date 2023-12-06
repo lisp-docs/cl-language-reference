@@ -66,35 +66,19 @@ An implementation is free to support other (*implementation-defined*) *declarati
 ```lisp
  
 
-
-
 (defun declare-variable-types-globally (type vars) 
-
-
 
 (proclaim ‘(type ,type ,@vars)) 
 
-
-
 type) 
-
-
 
 ;; Once this form is executed, the dynamic variable \*TOLERANCE\* 
 
-
-
 ;; must always contain a float. 
-
-
 
 (declare-variable-types-globally ’float ’(\*tolerance\*)) 
 
-
-
 → FLOAT 
-
-
 
 
 ```

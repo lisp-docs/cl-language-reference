@@ -58,23 +58,13 @@ If *non-terminating-p* is *true*, the *dispatching macro character* is made a *n
 ```lisp
  
 
-
-
 (get-macro-character #\\{) *→* NIL, *false* 
-
-
 
 (make-dispatch-macro-character #\\{) *→* T 
 
-
-
 (not (get-macro-character #\\{)) *→ false* 
 
-
-
 The *readtable* is altered. 
-
-
 
 
 ```

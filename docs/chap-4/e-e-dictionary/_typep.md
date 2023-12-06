@@ -70,75 +70,39 @@ See the *function* **upgraded-complex-part-type**.
 ```lisp
  
 
-
-
 (typep 12 ’integer) *→ true* 
-
-
 
 (typep (1+ most-positive-fixnum) ’fixnum) *→ false* 
 
-
-
 (typep nil t) *→ true* 
-
-
 
 (typep nil nil) *→ false* 
 
-
-
 (typep 1 ’(mod 2)) *→ true* 
-
-
 
 (typep #c(1 1) ’(complex (eql 1))) *→ true* 
 
-
-
 ;; To understand this next example, you might need to refer to 
-
-
 
 ;; Section 12.1.5.3 (Rule of Canonical Representation for Complex Rationals). (typep #c(0 0) ’(complex (eql 0))) *→ false* 
 
-
-
 Let A<i><sub>x</sub></i> and A<i><sub>y</sub></i> be two <i>type specifiers</i> that denote different <i>types</i>, but for which 
-
-
 
 (upgraded-array-element-type ’A<i><sub>x</sub></i>) 
 
-
-
 and 
-
-
 
 (upgraded-array-element-type ’A<i><sub>y</sub></i>) 
 
-
-
 denote the same *type*. Notice that 
-
-
 
 (typep (make-array 0 :element-type ’A<i><sub>x</sub></i>) ’(array A<i><sub>x</sub></i>)) <i>→ true</i> 
 
-
-
 (typep (make-array 0 :element-type ’A<i><sub>y</sub></i>) ’(array A<i><sub>y</sub></i>)) <i>→ true</i> 
-
-
 
 (typep (make-array 0 :element-type ’A<i><sub>x</sub></i>) ’(array A<i><sub>y</sub></i>)) <i>→ true</i> 
 
-
-
 (typep (make-array 0 :element-type ’A<i><sub>y</sub></i>) ’(array A<i><sub>x</sub></i>)) <i>→ true</i> 
-
-
 
 
 ```

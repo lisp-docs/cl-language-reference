@@ -62,47 +62,25 @@ It is possible for both **macro-function** and **special-operator-p** to return 
 ```lisp
  
 
-
-
 (defmacro macfun (x) ’(macro-function ’macfun)) *→* MACFUN 
-
-
 
 (not (macro-function ’macfun)) *→ false* 
 
-
-
 (macrolet ((foo (&amp;environment env) 
-
-
 
 (if (macro-function ’bar env) 
 
-
-
 ”yes 
-
-
 
 ”no))) 
 
-
-
 (list (foo) 
-
-
 
 (macrolet ((bar () :beep)) 
 
-
-
 (foo)))) 
 
-
-
 *→* (NO YES) 
-
-
 
 
 ```

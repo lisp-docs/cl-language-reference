@@ -34,27 +34,15 @@ Returns *true* if there is a character immediately available from *input-stream*
 ```lisp
  
 
-
-
 (progn (unread-char (read-char)) (list (listen) (read-char))) 
-
-
 
 ▷ 1 
 
-
-
 *→* (T #\1) 
-
-
 
 (progn (clear-input) (listen)) 
 
-
-
 *→* NIL ;Unless you’re a very fast typist! 
-
-
 
 
 ```

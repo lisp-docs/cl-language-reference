@@ -34,155 +34,79 @@ If the *condition* is not handled, (invoke-debugger *condition*) is done. As a c
 ```lisp
  
 
-
-
 (defun factorial (x) 
-
-
 
 (cond ((or (not (typep x ’integer)) (minusp x)) 
 
-
-
 (error "&#126;S is not a valid argument to FACTORIAL." x)) 
-
-
 
 ((zerop x) 1) 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 **error** 
 
-
-
 (t (\* x (factorial (- x 1)))))) 
-
-
 
 *→* FACTORIAL 
 
-
-
 (factorial 20) 
-
-
 
 *→* 2432902008176640000 
 
-
-
 (factorial -1) 
-
-
 
 ▷ Error: -1 is not a valid argument to FACTORIAL. 
 
-
-
 ▷ To continue, type :CONTINUE followed by an option number: 
 
-
-
 ▷ 1: Return to Lisp Toplevel. 
-
-
 
 ▷ Debug&gt; 
 
-
-
 (setq a ’fred) 
-
-
 
 *→* FRED 
 
-
-
 (if (numberp a) (1+ a) (error "&#126;S is not a number." A)) 
-
-
 
 ▷ Error: FRED is not a number. 
 
-
-
 ▷ To continue, type :CONTINUE followed by an option number: 
-
-
 
 ▷ 1: Return to Lisp Toplevel. 
 
-
-
 ▷ Debug&gt; :Continue 1 
 
-
-
 ▷ Return to Lisp Toplevel. 
-
-
 
 (define-condition not-a-number (error) 
 
-
-
 ((argument :reader not-a-number-argument :initarg :argument)) 
-
-
 
 (:report (lambda (condition stream) 
 
-
-
 (format stream "&#126;S is not a number." 
-
-
 
 (not-a-number-argument condition))))) 
 
-
-
 *→* NOT-A-NUMBER 
-
-
 
 (if (numberp a) (1+ a) (error ’not-a-number :argument a)) 
 
-
-
 ▷ Error: FRED is not a number. 
-
-
 
 ▷ To continue, type :CONTINUE followed by an option number: 
 
-
-
 ▷ 1: Return to Lisp Toplevel. 
-
-
 
 ▷ Debug&gt; :Continue 1 
 
-
-
 ▷ Return to Lisp Toplevel. 
-
-
 
 
 ```

@@ -134,19 +134,11 @@ both of them are removed. This removal of redundant :back *keywords* is repeated
 ```lisp
  
 
-
-
 (merge-pathnames "CMUC::FORMAT" 
-
-
 
 "CMUC::PS:&lt;LISPIO&gt;.FASL") 
 
-
-
 *→* #P"CMUC::PS:&lt;LISPIO&gt;FORMAT.FASL.0" 
-
-
 
 
 ```

@@ -50,139 +50,71 @@ Implementations are permitted, but not required, to return *distinct lists* from
 ```lisp
  
 
-
-
 ;; One possible way in which an interactive debugger might present 
-
-
 
 ;; restarts to the user. 
 
-
-
 (defun invoke-a-restart () 
-
-
 
 (let ((restarts (compute-restarts))) 
 
-
-
 (do ((i 0 (+ i 1)) (r restarts (cdr r))) ((null r)) 
-
-
 
 (format t "&#126;&amp;&#126;D: &#126;A&#126;%" i (car r))) 
 
-
-
 (let ((n nil) (k (length restarts))) 
-
-
 
 (loop (when (and (typep n ’integer) (&gt;= n 0) (&lt; n k)) 
 
-
-
 (return t)) 
-
-
 
 (format t "&#126;&amp;Option: ") 
 
-
-
 (setq n (read)) 
 
-
-
 (fresh-line)) 
-
-
 
 (invoke-restart-interactively (nth n restarts))))) 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (restart-case (invoke-a-restart) 
 
-
-
 (one () 1) 
-
-
 
 (two () 2) 
 
-
-
 (nil () :report "Who knows?" ’anonymous) 
-
-
 
 (one () ’I) 
 
-
-
 (two () ’II)) 
-
-
 
 ▷ 0: ONE 
 
-
-
 ▷ 1: TWO 
-
-
 
 ▷ 2: Who knows? 
 
-
-
 ▷ 3: ONE 
-
-
 
 ▷ 4: TWO 
 
-
-
 ▷ 5: Return to Lisp Toplevel. 
-
-
 
 ▷ Option: 4 
 
-
-
 *→* II 
-
-
 
 ;; Note that in addition to user-defined restart points, COMPUTE-RESTARTS 
 
-
-
 ;; also returns information about any system-supplied restarts, such as 
 
-
-
 ;; the "Return to Lisp Toplevel" restart offered above. 
-
-
 
 
 ```

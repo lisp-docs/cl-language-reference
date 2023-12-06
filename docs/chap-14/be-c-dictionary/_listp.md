@@ -34,23 +34,13 @@ Returns *true* if *object* is of *type* **list**; otherwise, returns *false*.
 ```lisp
  
 
-
-
 (listp nil) *→ true* 
-
-
 
 (listp (cons 1 2)) *→ true* 
 
-
-
 (listp (make-array 6)) *→ false* 
 
-
-
 (listp t) *→ false* 
-
-
 
 
 ```

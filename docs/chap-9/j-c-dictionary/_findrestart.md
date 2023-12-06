@@ -58,39 +58,21 @@ If *identifier* is a currently active restart, then it is returned. Otherwise, *
 ```lisp
  
 
-
-
 (restart-case 
-
-
 
 (let ((r (find-restart ’my-restart))) 
 
-
-
 (format t "&#126;S is named &#126;S" r (restart-name r))) 
-
-
 
 (my-restart () nil)) 
 
-
-
 ▷ #<RESTART 32307325> is named MY-RESTART 
 
-
-
 *→* NIL 
-
-
 
 (find-restart ’my-restart) 
 
-
-
 *→* NIL 
-
-
 
 
 ```

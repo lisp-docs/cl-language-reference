@@ -50,71 +50,37 @@ For information about the *evaluation* of *subforms* of *places*, see Section 5.
 ```lisp
  
 
-
-
 (setq x (list 1 2 3) y ’trash) → TRASH 
-
-
 
 (shiftf y x (cdr x) ’(hi there)) → TRASH 
 
-
-
 x → (2 3) 
-
-
 
 y → (1 HI THERE) 
 
-
-
 Data and Control 
 
-
-
  
 
-
-
  
-
-
 
 (setq x (list ’a ’b ’c)) → (A B C) 
 
-
-
 (shiftf (cadr x) ’z) → B 
-
-
 
 x → (A Z C) 
 
-
-
 (shiftf (cadr x) (cddr x) ’q) → Z 
-
-
 
 x → (A (C) . Q) 
 
-
-
 (setq n 0) → 0 
-
-
 
 (setq x (list ’a ’b ’c ’d)) → (A B C D) 
 
-
-
 (shiftf (nth (setq n (+ n 1)) x) ’z) → B 
 
-
-
 x → (A Z C D) 
-
-
 
 
 ```

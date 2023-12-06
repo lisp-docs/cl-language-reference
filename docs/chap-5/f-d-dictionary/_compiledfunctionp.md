@@ -46,63 +46,33 @@ Returns *true* if *object* is of *type* **compiled-function**; otherwise, return
 ```lisp
  
 
-
-
 (defun f (x) x) *→* F 
-
-
 
 (compiled-function-p #’f) 
 
-
-
 *→ false* 
-
-
 
 <i><sup>or</sup>→ true</i> 
 
-
-
 (compiled-function-p ’f) *→ false* 
-
-
 
 (compile ’f) *→* F 
 
-
-
 (compiled-function-p #’f) *→ true* 
-
-
 
 (compiled-function-p ’f) *→ false* 
 
-
-
 (compiled-function-p (compile nil ’(lambda (x) x))) 
-
-
 
 *→ true* 
 
-
-
 (compiled-function-p #’(lambda (x) x)) 
-
-
 
 *→ false* 
 
-
-
 <i><sup>or</sup>→ true</i> 
 
-
-
 (compiled-function-p ’(lambda (x) x)) *→ false* 
-
-
 
 
 ```

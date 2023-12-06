@@ -50,35 +50,19 @@ The mathematical definition of **phase** is as follows:
 ```lisp
  
 
-
-
 (phase 1) *→* 0.0s0 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (phase 0) *→* 0.0s0 
 
-
-
 (phase (cis 30)) *→* -1.4159266 
 
-
-
 (phase #c(0 1)) *→* 1.5707964 
-
-
 
 
 ```

@@ -46,19 +46,11 @@
 ```lisp
  
 
-
-
 (write-sequence "bookworms" \*standard-output\* :end 4) 
-
-
 
 ▷ book 
 
-
-
 *→* "bookworms" 
-
-
 
 
 ```

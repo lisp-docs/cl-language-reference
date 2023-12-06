@@ -46,35 +46,19 @@
 ```lisp
  
 
-
-
 (append ’(a b c) ’(d e f) ’() ’(g)) *→* (A B C D E F G) 
-
-
 
 (append ’(a b c) ’d) *→* (A B C . D) 
 
-
-
 (setq lst ’(a b c)) *→* (A B C) 
-
-
 
 (append lst ’(d)) *→* (A B C D) 
 
-
-
 lst *→* (A B C) 
-
-
 
 (append) *→* NIL 
 
-
-
 (append ’a) *→* A 
-
-
 
 
 ```

@@ -82,59 +82,31 @@ The order of elements in the result do not have to reflect the ordering of *list
 ```lisp
  
 
-
-
 (union ’(a b c) ’(f a d)) 
-
-
 
 *→* (A B C F D) 
 
-
-
 <i><sup>or</sup>→</i> (B C F A D) 
-
-
 
 <i><sup>or</sup>→</i> (D F A B C) 
 
-
-
 (union ’((x 5) (y 6)) ’((z 2) (x 4)) :key #’car) 
-
-
 
 *→* ((X 5) (Y 6) (Z 2)) 
 
-
-
 <i><sup>or</sup>→</i> ((X 4) (Y 6) (Z 2)) 
-
-
 
 (setq lst1 (list 1 2 ’(1 2) "a" "b") 
 
-
-
 lst2 (list 2 3 ’(2 3) "B" "C")) 
-
-
 
 *→* (2 3 (2 3) "B" "C") 
 
-
-
 (nunion lst1 lst2) 
-
-
 
 *→* (1 (1 2) "a" "b" 2 3 (2 3) "B" "C") 
 
-
-
 <i><sup>or</sup>→</i> (1 2 (1 2) "a" "b" "C" "B" (2 3) 3) 
-
-
 
 
 ```

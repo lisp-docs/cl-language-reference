@@ -150,155 +150,79 @@ For all these functions, elements not removed or deleted occur in the same order
 ```lisp
  
 
-
-
 (remove 4 ’(1 3 4 5 9)) *→* (1 3 5 9) 
-
-
 
 (remove 4 ’(1 2 4 1 3 4 5)) *→* (1 2 1 3 5) 
 
-
-
 (remove 4 ’(1 2 4 1 3 4 5) :count 1) *→* (1 2 1 3 4 5) 
-
-
 
 (remove 4 ’(1 2 4 1 3 4 5) :count 1 :from-end t) *→* (1 2 4 1 3 5) 
 
-
-
 (remove 3 ’(1 2 4 1 3 4 5) :test #’&gt;) *→* (4 3 4 5) 
-
-
 
 (setq lst ’(list of four elements)) *→* (LIST OF FOUR ELEMENTS) 
 
-
-
 (setq lst2 (copy-seq lst)) *→* (LIST OF FOUR ELEMENTS) 
-
-
 
 (setq lst3 (delete ’four lst)) *→* (LIST OF ELEMENTS) 
 
-
-
 (equal lst lst2) *→ false* 
-
-
 
 (remove-if #’oddp ’(1 2 4 1 3 4 5)) *→* (2 4 4) 
 
-
-
 (remove-if #’evenp ’(1 2 4 1 3 4 5) :count 1 :from-end t) 
-
-
 
 *→* (1 2 4 1 3 5) 
 
-
-
 (remove-if-not #’evenp ’(1 2 3 4 5 6 7 8 9) :count 2 :from-end t) 
-
-
 
 *→* (1 2 3 4 5 6 8) 
 
-
-
 (setq tester (list 1 2 4 1 3 4 5)) *→* (1 2 4 1 3 4 5) 
-
-
 
 (delete 4 tester) *→* (1 2 1 3 5) 
 
-
-
 (setq tester (list 1 2 4 1 3 4 5)) *→* (1 2 4 1 3 4 5) 
-
-
 
 (delete 4 tester :count 1) *→* (1 2 1 3 4 5) 
 
-
-
 (setq tester (list 1 2 4 1 3 4 5)) *→* (1 2 4 1 3 4 5) 
-
-
 
 (delete 4 tester :count 1 :from-end t) *→* (1 2 4 1 3 5) 
 
-
-
 (setq tester (list 1 2 4 1 3 4 5)) *→* (1 2 4 1 3 4 5) 
-
-
 
 (delete 3 tester :test #’&gt;) *→* (4 3 4 5) 
 
-
-
 (setq tester (list 1 2 4 1 3 4 5)) *→* (1 2 4 1 3 4 5) 
-
-
 
 (delete-if #’oddp tester) *→* (2 4 4) 
 
-
-
 (setq tester (list 1 2 4 1 3 4 5)) *→* (1 2 4 1 3 4 5) 
-
-
 
 (delete-if #’evenp tester :count 1 :from-end t) *→* (1 2 4 1 3 5) 
 
-
-
 (setq tester (list 1 2 3 4 5 6)) *→* (1 2 3 4 5 6) 
-
-
 
 (delete-if #’evenp tester) *→* (1 3 5) 
 
-
-
 tester *→ implementation-dependent* 
-
-
 
 (setq foo (list ’a ’b ’c)) *→* (A B C) 
 
-
-
 (setq bar (cdr foo)) *→* (B C) 
-
-
 
 (setq foo (delete ’b foo)) *→* (A C) 
 
-
-
 bar *→* ((C)) or ... 
-
-
 
 (eq (cdr foo) (car bar)) *→* T or ... 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 
 ```

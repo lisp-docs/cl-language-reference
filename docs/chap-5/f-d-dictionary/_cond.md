@@ -66,59 +66,31 @@ Once one *test-form* has *yielded true*, no additional *test-forms* are *evaluat
 ```lisp
  
 
-
-
 (defun select-options () 
-
-
 
 (cond ((= a 1) (setq a 2)) 
 
-
-
 ((= a 2) (setq a 3)) 
-
-
 
 ((and (= a 3) (floor a 2))) 
 
-
-
 (t (floor a 3)))) *→* SELECT-OPTIONS 
-
-
 
 (setq a 1) *→* 1 
 
-
-
 (select-options) *→* 2 
-
-
 
 a *→* 2 
 
-
-
 (select-options) *→* 3 
-
-
 
 a *→* 3 
 
-
-
 (select-options) *→* 1 
-
-
 
 (setq a 5) *→* 5 
 
-
-
 (select-options) *→* 1, 2 
-
-
 
 
 ```

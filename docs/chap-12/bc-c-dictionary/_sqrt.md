@@ -62,71 +62,37 @@ The branch cut for square root lies along the negative real axis, continuous wit
 ```lisp
  
 
-
-
 (sqrt 9.0) *→* 3.0 
-
-
 
 (sqrt -9.0) *→* #C(0.0 3.0) 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (isqrt 9) *→* 3 
 
-
-
 (sqrt 12) *→* 3.4641016 
-
-
 
 (isqrt 12) *→* 3 
 
-
-
 (isqrt 300) *→* 17 
-
-
 
 (isqrt 325) *→* 18 
 
-
-
 (sqrt 25) 
-
-
 
 *→* 5 
 
-
-
 <i><sup>or</sup>→</i> 5.0 
-
-
 
 (isqrt 25) *→* 5 
 
-
-
 (sqrt -1) *→* #C(0.0 1.0) 
 
-
-
 (sqrt #c(0 2)) *→* #C(1.0 1.0) 
-
-
 
 
 ```

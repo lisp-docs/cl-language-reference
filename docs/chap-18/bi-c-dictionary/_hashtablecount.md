@@ -34,31 +34,17 @@ Returns the number of entries in the *hash-table*. If *hash-table* has just been
 ```lisp
  
 
-
-
 (setq table (make-hash-table)) *→* #<HASH-TABLE EQL 0/120 32115135> 
-
-
 
 (hash-table-count table) *→* 0 
 
-
-
 (setf (gethash 57 table) "fifty-seven") *→* "fifty-seven" 
-
-
 
 (hash-table-count table) *→* 1 
 
-
-
 (dotimes (i 100) (setf (gethash i table) i)) *→* NIL 
 
-
-
 (hash-table-count table) *→* 100 
-
-
 
 
 ```

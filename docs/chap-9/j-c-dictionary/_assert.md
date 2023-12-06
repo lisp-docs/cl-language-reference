@@ -70,159 +70,81 @@ The *places* are *generalized references* to data upon which *test-form* depends
 ```lisp
  
 
-
-
 (setq x (make-array ’(3 5) :initial-element 3)) 
-
-
 
 *→* #2A((3 3 3 3 3) (3 3 3 3 3) (3 3 3 3 3)) 
 
-
-
 (setq y (make-array ’(3 5) :initial-element 7)) 
-
-
 
 *→* #2A((7 7 7 7 7) (7 7 7 7 7) (7 7 7 7 7)) 
 
-
-
 (defun matrix-multiply (a b) 
-
-
 
 (let ((\*print-array\* nil)) 
 
-
-
 (assert (and (= (array-rank a) (array-rank b) 2) 
-
-
 
 (= (array-dimension a 1) (array-dimension b 0))) 
 
-
-
 (a b) 
-
-
 
 "Cannot multiply &#126;S by &#126;S." a b) 
 
-
-
 (really-matrix-multiply a b))) *→* MATRIX-MULTIPLY 
-
-
 
 (matrix-multiply x y) 
 
-
-
 ▷ Correctable error in MATRIX-MULTIPLY: 
-
-
 
 ▷ Cannot multiply #<ARRAY ...> by #<ARRAY ...>. 
 
-
-
 ▷ Restart options: 
-
-
 
 ▷ 1: You will be prompted for one or more new values. 
 
-
-
 ▷ 2: Top level. 
-
-
 
 ▷ Debug> :continue 1 
 
-
-
 ▷ Value for A: x 
-
-
 
 ▷ Value for B: (make-array ’(5 3) :initial-element 6) 
 
-
-
 *→* #2A((54 54 54 54 54) 
 
-
+(54 54 54 54 54) 
 
 (54 54 54 54 54) 
 
-
-
 (54 54 54 54 54) 
-
-
-
-(54 54 54 54 54) 
-
-
 
 (54 54 54 54 54)) 
 
-
-
 (defun double-safely (x) (assert (numberp x) (x)) (+ x x)) 
 
-
-
 (double-safely 4) 
-
-
 
 *→* 8 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (double-safely t) 
 
-
-
 ▷ Correctable error in DOUBLE-SAFELY: The value of (NUMBERP X) must be non-NIL. ▷ Restart options: 
-
-
 
 ▷ 1: You will be prompted for one or more new values. 
 
-
-
 ▷ 2: Top level. 
-
-
 
 ▷ Debug> :continue 1 
 
-
-
 ▷ Value for X: 7 
 
-
-
 *→* 14 
-
-
 
 
 ```

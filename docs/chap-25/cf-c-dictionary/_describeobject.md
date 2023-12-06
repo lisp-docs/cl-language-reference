@@ -66,75 +66,39 @@ In some implementations the *stream* argument passed to a **describe-object** me
 ```lisp
  
 
-
-
 (defclass spaceship () 
-
-
 
 ((captain :initarg :captain :accessor spaceship-captain) 
 
-
-
 (serial# :initarg :serial-number :accessor spaceship-serial-number))) 
-
-
 
 (defclass federation-starship (spaceship) ()) 
 
-
-
 (defmethod describe-object ((s spaceship) stream) 
-
-
 
 (with-slots (captain serial#) s 
 
-
-
 (format stream "&#126;&amp;&#126;S is a spaceship of type &#126;S,&#126; 
-
-
 
 &#126;%with &#126;A at the helm &#126; 
 
-
-
 and with serial number &#126;D.&#126;%" 
-
-
 
 s (type-of s) captain serial#))) 
 
-
-
 (make-instance ’federation-starship 
-
-
 
 :captain "Rachel Garrett" 
 
-
-
 :serial-number "NCC-1701-C") 
-
-
 
 *→* #<FEDERATION-STARSHIP 26312465> 
 
-
-
 (describe \*) 
-
-
 
 ▷ #<FEDERATION-STARSHIP 26312465> is a spaceship of type FEDERATION-STARSHIP, ▷ with Rachel Garrett at the helm and with serial number NCC-1701-C. 
 
-
-
 *→ hno valuesi* 
-
-
 
 
 ```

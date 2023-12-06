@@ -70,63 +70,33 @@ The use of **symbol-macrolet** can be shadowed by **let**. In other words, **sym
 ```lisp
  
 
-
-
 ;;; The following is equivalent to 
-
-
 
 ;;; (list ’foo (let ((x ’bar)) x)), 
 
-
-
  
 
-
-
  
-
-
 
 ;;; not 
 
-
-
 ;;; (list ’foo (let ((’foo ’bar)) ’foo)) 
-
-
 
 (symbol-macrolet ((x ’foo)) 
 
-
-
 (list x (let ((x ’bar)) x))) 
-
-
 
 → (foo bar) 
 
-
-
 *not* 
-
-
 
 → (foo foo) 
 
-
-
 (symbol-macrolet ((x ’(foo x))) 
-
-
 
 (list x)) 
 
-
-
 → ((FOO X)) 
-
-
 
 
 ```
@@ -206,39 +176,21 @@ Evaluation and
 ```lisp
  
 
-
-
 (defun hook (expander form env) 
-
-
 
 (format t "Now expanding: &#126;S&#126;%" form) 
 
-
-
 (funcall expander form env)) → HOOK 
-
-
 
 (defmacro machook (x y) ‘(/ (+ ,x ,y) 2)) → MACHOOK 
 
-
-
 (macroexpand ’(machook 1 2)) → (/ (+ 1 2) 2), *true* 
-
-
 
 (let ((\*macroexpand-hook\* #’hook)) (macroexpand ’(machook 1 2))) 
 
-
-
 ▷ Now expanding (MACHOOK 1 2) 
 
-
-
 → (/ (+ 1 2) 2), *true* 
-
-
 
 
 ```

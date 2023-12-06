@@ -58,27 +58,15 @@ The *tertiary value*, *name*, is the “name” of *function*. The name is inten
 ```lisp
  
 
-
-
 The following examples illustrate some possible return values, but are not intended to be exhaustive: 
-
-
 
 (function-lambda-expression #’(lambda (x) x)) 
 
-
-
 *→* NIL, *false*, NIL 
-
-
 
 <i><sup>or</sup>→</i> NIL, <i>true</i>, NIL 
 
-
-
 <i><sup>or</sup>→</i> (LAMBDA (X) X), <i>true</i>, NIL 
-
-
 
 <i><sup>or</sup>→</i> (LAMBDA (X) X), <i>false</i>, NIL 
 
@@ -88,129 +76,63 @@ The following examples illustrate some possible return values, but are not inten
 
 
 
-
-
-
-
-
-
-
-
 (function-lambda-expression 
-
-
 
 (funcall #’(lambda () #’(lambda (x) x)))) 
 
-
-
 *→* NIL, *false*, NIL 
 
-
-
 <i><sup>or</sup>→</i> NIL, <i>true</i>, NIL 
-
-
 
 <i><sup>or</sup>→</i> (LAMBDA (X) X), <i>true</i>, NIL 
 
-
-
 <i><sup>or</sup>→</i> (LAMBDA (X) X), <i>false</i>, NIL 
-
-
 
 (function-lambda-expression 
 
-
-
 (funcall #’(lambda (x) #’(lambda () x)) nil)) 
-
-
 
 *→* NIL, *true*, NIL 
 
-
-
 <i><sup>or</sup>→</i> (LAMBDA () X), <i>true</i>, NIL 
-
-
 
 <i><sup>not</sup> →</i> NIL, <i>false</i>, NIL 
 
-
-
 <i><sup>not</sup> →</i> (LAMBDA () X), <i>false</i>, NIL 
-
-
 
 (flet ((foo (x) x)) 
 
-
-
 (setf (symbol-function ’bar) #’foo) 
-
-
 
 (function-lambda-expression #’bar)) 
 
-
-
 *→* NIL, *false*, NIL 
 
-
-
 <i><sup>or</sup>→</i> NIL, <i>true</i>, NIL 
-
-
 
 <i><sup>or</sup>→</i> (LAMBDA (X) (BLOCK FOO X)), <i>true</i>, NIL 
 
-
-
 <i><sup>or</sup>→</i> (LAMBDA (X) (BLOCK FOO X)), <i>false</i>, FOO 
-
-
 
 <i><sup>or</sup>→</i> (SI::BLOCK-LAMBDA FOO (X) X), <i>false</i>, FOO 
 
-
-
 (defun foo () 
-
-
 
 (flet ((bar (x) x)) 
 
-
-
 #’bar)) 
-
-
 
 (function-lambda-expression (foo)) 
 
-
-
 *→* NIL, *false*, NIL 
-
-
 
 <i><sup>or</sup>→</i> NIL, <i>true</i>, NIL 
 
-
-
 <i><sup>or</sup>→</i> (LAMBDA (X) (BLOCK BAR X)), <i>true</i>, NIL 
-
-
 
 <i><sup>or</sup>→</i> (LAMBDA (X) (BLOCK BAR X)), <i>true</i>, (:INTERNAL FOO 0 BAR) 
 
-
-
 <i><sup>or</sup>→</i> (LAMBDA (X) (BLOCK BAR X)), <i>false</i>, "BAR in FOO" 
-
-
 
 
 ```

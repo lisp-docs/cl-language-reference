@@ -66,43 +66,23 @@ If **nil** appears in *alist* in place of a pair, it is ignored.
 ```lisp
  
 
-
-
 (setq alist ’((1 . "one") (2 . "two") (3 . 3))) 
-
-
 
 *→* ((1 . "one") (2 . "two") (3 . 3)) 
 
-
-
 (rassoc 3 alist) *→* (3 . 3) 
-
-
 
 (rassoc "two" alist) *→* NIL 
 
-
-
 (rassoc "two" alist :test ’equal) *→* (2 . "two") 
-
-
 
 (rassoc 1 alist :key #’(lambda (x) (if (numberp x) (/ x 3)))) *→* (3 . 3) 
 
-
-
 (rassoc ’a ’((a . b) (b . c) (c . a) (z . a))) *→* (C . A) 
-
-
 
 (rassoc-if #’stringp alist) *→* (1 . "one") 
 
-
-
 (rassoc-if-not #’vectorp alist) *→* (3 . 3) 
-
-
 
 
 ```

@@ -66,127 +66,65 @@ If *object* is the *same* as some *tail* of *list*, **ldiff** returns a *fresh l
 ```lisp
  
 
-
-
 (let ((lists ’#((a b c) (a b c . d)))) 
-
-
 
 (dotimes (i (length lists)) () 
 
-
-
 (let ((list (aref lists i))) 
-
-
 
 (format t "&#126;2&amp;list=&#126;S &#126;21T(tailp object list)&#126; 
 
-
-
 &#126;44T(ldiff list object)&#126;%" list) 
-
-
 
 (let ((objects (vector list (cddr list) (copy-list (cddr list)) 
 
-
-
 ’(f g h) ’() ’d ’x))) 
-
-
 
 (dotimes (j (length objects)) () 
 
-
-
 (let ((object (aref objects j))) 
-
-
 
 (format t "&#126;&amp; object=&#126;S &#126;21T&#126;S &#126;44T&#126;S" 
 
-
-
 object (tailp object list) (ldiff list object)))))))) 
 
-
-
 ▷ 
-
-
 
 ▷ list=(A B C) (tailp object list) (ldiff list object) 
 
-
-
 ▷ object=(A B C) T NIL 
-
-
 
 ▷ object=(C) T (A B) 
 
-
-
 ▷ object=(C) NIL (A B C) 
-
-
 
 ▷ object=(F G H) NIL (A B C) 
 
-
-
 ▷ object=NIL T (A B C) 
-
-
 
 ▷ object=D NIL (A B C) 
 
-
-
 ▷ object=X NIL (A B C) 
-
-
 
 ▷ 
 
-
-
 ▷ list=(A B C . D) (tailp object list) (ldiff list object) 
-
-
 
 ▷ object=(A B C . D) T NIL 
 
-
-
 ▷ object=(C . D) T (A B) 
-
-
 
 ▷ object=(C . D) NIL (A B C . D) 
 
-
-
 ▷ object=(F G H) NIL (A B C . D) 
-
-
 
 ▷ object=NIL NIL (A B C . D) 
 
-
-
 ▷ object=D T (A B C) 
-
-
 
 ▷ object=X NIL (A B C . D) 
 
-
-
 *→* NIL 
-
-
 
 
 ```

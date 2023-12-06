@@ -58,43 +58,23 @@ is a *vector* , **nreverse** is permitted to re-order the elements of *sequence*
 ```lisp
  
 
-
-
 (setq str "abc") *→* "abc" 
-
-
 
 (reverse str) *→* "cba" 
 
-
-
 str *→* "abc" 
-
-
 
 (setq str (copy-seq str)) *→* "abc" 
 
-
-
 (nreverse str) *→* "cba" 
-
-
 
 str *→ implementation-dependent* 
 
-
-
 (setq l (list 1 2 3)) *→* (1 2 3) 
-
-
 
 (nreverse l) *→* (3 2 1) 
 
-
-
 l *→ implementation-dependent* 
-
-
 
 
 ```

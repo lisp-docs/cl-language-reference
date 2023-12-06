@@ -34,27 +34,15 @@ Returns a *string* containing, in order, all the *characters* that have been out
 ```lisp
  
 
-
-
 (setq a-stream (make-string-output-stream) 
-
-
 
 a-string "abcdefghijklm") *→* "abcdefghijklm" 
 
-
-
 (write-string a-string a-stream) *→* "abcdefghijklm" 
-
-
 
 (get-output-stream-string a-stream) *→* "abcdefghijklm" 
 
-
-
 (get-output-stream-string a-stream) *→* "" 
-
-
 
 
 ```

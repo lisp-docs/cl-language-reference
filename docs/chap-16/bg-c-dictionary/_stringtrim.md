@@ -54,59 +54,31 @@ All of these *functions* observe the *fill pointer* .
 ```lisp
  
 
-
-
 (string-trim "abc" "abcaakaaakabcaaa") *→* "kaaak" 
-
-
 
 (string-trim ’(#\Space #\Tab #\Newline) " garbanzo beans 
 
-
-
 ") *→* "garbanzo beans" 
-
-
 
 (string-trim " (\*)" " ( \*three (silly) words\* ) ") 
 
-
-
 *→* "three (silly) words" 
-
-
 
 (string-left-trim "abc" "labcabcabc") *→* "labcabcabc" 
 
-
-
 (string-left-trim " (\*)" " ( \*three (silly) words\* ) ") 
-
-
 
 *→* "three (silly) words\* ) " 
 
-
-
 (string-right-trim " (\*)" " ( \*three (silly) words\* ) ") 
-
-
 
 *→* " ( \*three (silly) words" 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 
 ```
@@ -314,55 +286,29 @@ The comparison has one of the following results:
 ```lisp
  
 
-
-
 (string= "foo" "foo") *→ true* 
-
-
 
 (string= "foo" "Foo") *→ false* 
 
-
-
 (string= "foo" "bar") *→ false* 
-
-
 
 (string= "together" "frog" :start1 1 :end1 3 :start2 2) *→ true* 
 
-
-
 (string-equal "foo" "Foo") *→ true* 
-
-
 
 (string= "abcd" "01234abcd9012" :start2 5 :end2 9) *→ true* 
 
-
-
 (string&lt; "aaaa" "aaab") *→* 3 
-
-
 
 (string&gt;= "aaaaa" "aaaa") *→* 4 
 
-
-
 (string-not-greaterp "Abcde" "abcdE") *→* 5 
-
-
 
 (string-lessp "012AAAA789" "01aaab6" :start1 3 :end1 7 
 
-
-
 :start2 2 :end2 6) *→* 6 
 
-
-
 (string-not-equal "AAAA" "aaaA") *→ false* 
-
-
 
 
 ```

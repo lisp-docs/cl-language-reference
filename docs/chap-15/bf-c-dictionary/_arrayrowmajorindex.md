@@ -54,39 +54,21 @@ For a one-dimensional *array*, the result of **array-row-major-index** equals *s
 ```lisp
  
 
-
-
 (setq a (make-array ’(4 7) :element-type ’(unsigned-byte 8))) 
-
-
 
 (array-row-major-index a 1 2) *→* 9 
 
-
-
 (array-row-major-index 
-
-
 
 (make-array ’(2 3 4) 
 
-
-
 :element-type ’(unsigned-byte 8) 
-
-
 
 :displaced-to a 
 
-
-
 :displaced-index-offset 4) 
 
-
-
 0 2 1) *→* 9 
-
-
 
 
 ```

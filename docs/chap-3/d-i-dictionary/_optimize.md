@@ -80,51 +80,27 @@ Note that *code* which has the optimization (safety 3), or just **safety**, is c
 ```lisp
  
 
-
-
 (defun often-used-subroutine (x y) 
-
-
 
 (declare (optimize (safety 2))) 
 
-
-
 (error-check x y) 
-
-
 
 (hairy-setup x) 
 
-
-
 (do ((i 0 (+ i 1)) 
-
-
 
 (z x (cdr z))) 
 
-
-
 ((null z)) 
-
-
 
 ;; This inner loop really needs to burn. 
 
-
-
 (declare (optimize speed)) 
-
-
 
 (declare (fixnum i)) 
 
-
-
 )) 
-
-
 
 
 ```

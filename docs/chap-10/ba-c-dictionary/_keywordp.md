@@ -34,47 +34,25 @@ Returns *true* if *object* is a *keyword* <sub>1</sub>; otherwise, returns *fals
 ```lisp
  
 
-
-
 (keywordp ’elephant) *→ false* 
-
-
 
 (keywordp 12) *→ false* 
 
-
-
 (keywordp :test) *→ true* 
-
-
 
 (keywordp ’:test) *→ true* 
 
-
-
 (keywordp nil) *→ false* 
-
-
 
 (keywordp :nil) *→ true* 
 
-
-
 (keywordp ’(:test)) *→ false* 
-
-
 
 (keywordp "hello") *→ false* 
 
-
-
 (keywordp ":hello") *→ false* 
 
-
-
 (keywordp ’&amp;optional) *→ false* 
-
-
 
 
 ```

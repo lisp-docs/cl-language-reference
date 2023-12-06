@@ -34,23 +34,13 @@ Returns *true* if *object* is of *type* **integer**; otherwise, returns *false*.
 ```lisp
  
 
-
-
 (integerp 1) *→ true* 
-
-
 
 (integerp (expt 2 130)) *→ true* 
 
-
-
 (integerp 6/5) *→ false* 
 
-
-
 (integerp nil) *→ false* 
-
-
 
 
 ```

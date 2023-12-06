@@ -54,31 +54,17 @@
 ```lisp
  
 
-
-
 (nth 0 ’(foo bar baz)) *→* FOO 
-
-
 
 (nth 1 ’(foo bar baz)) *→* BAR 
 
-
-
 (nth 3 ’(foo bar baz)) *→* NIL 
-
-
 
 (setq 0-to-3 (list 0 1 2 3)) *→* (0 1 2 3) 
 
-
-
 (setf (nth 2 0-to-3) "two") *→* "two" 
 
-
-
 0-to-3 *→* (0 1 "two" 3) 
-
-
 
 
 ```

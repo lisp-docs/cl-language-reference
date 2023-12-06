@@ -94,155 +94,79 @@ If the *directory* is a *string*, it should be the name of a top level directory
 ```lisp
  
 
-
-
 ;; Implementation A – an implementation with access to a single 
-
-
 
 ;; Unix file system. This implementation happens to never display 
 
-
-
 ;; the ‘host’ information in a namestring, since there is only one host. 
-
-
 
 (make-pathname :directory ’(:absolute "public" "games") 
 
-
-
 :name "chess" :type "db") 
-
-
 
 *→* #P"/public/games/chess.db" 
 
-
-
 ;; Implementation B – an implementation with access to one or more 
-
-
 
 ;; VMS file systems. This implementation displays ‘host’ information 
 
-
-
 ;; in the namestring only when the host is not the local host. 
-
-
 
 ;; It uses a double colon to separate a host name from the host’s local 
 
-
-
 ;; file name. 
-
-
 
 (make-pathname :directory ’(:absolute "PUBLIC" "GAMES") 
 
-
-
 :name "CHESS" :type "DB") 
-
-
 
 *→* #P"SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
 
-
-
 (make-pathname :host "BOBBY" 
 
-
-
 :directory ’(:absolute "PUBLIC" "GAMES") 
-
-
 
 :name "CHESS" :type "DB") 
 
-
-
 *→* #P"BOBBY::SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
-
-
 
 ;; Implementation C – an implementation with simultaneous access to 
 
-
-
 ;; multiple file systems from the same Lisp image. In this 
-
-
 
 ;; implementation, there is a convention that any text preceding the 
 
-
-
 ;; first colon in a pathname namestring is a host name. 
-
-
 
 (dolist (case ’(:common :local)) 
 
-
-
 (dolist (host ’("MY-LISPM" "MY-VAX" "MY-UNIX")) 
-
-
 
 (print (make-pathname :host host :case case 
 
-
-
 :directory ’(:absolute "PUBLIC" "GAMES") 
-
-
 
 :name "CHESS" :type "DB")))) 
 
-
-
 ▷ #P"MY-LISPM:&gt;public&gt;games&gt;chess.db" 
 
-
-
 ▷ #P"MY-VAX:SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
-
-
 
 ▷ #P"MY-UNIX:/public/games/chess.db" 
 
-
-
 ▷ #P"MY-LISPM:&gt;public&gt;games&gt;chess.db" 
-
-
 
 ▷ #P"MY-VAX:SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 ▷ #P"MY-UNIX:/PUBLIC/GAMES/CHESS.DB" 
 
-
-
 *→* NIL 
-
-
 
 
 ```

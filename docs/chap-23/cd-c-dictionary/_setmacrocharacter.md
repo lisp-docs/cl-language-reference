@@ -70,75 +70,39 @@
 ```lisp
  
 
-
-
 (get-macro-character #\\{) *→* NIL, *false* 
-
-
 
 (not (get-macro-character #\;)) *→ false* 
 
-
-
 The following is a possible definition for the *single-quote reader macro* in *standard syntax* : 
-
-
 
 (defun single-quote-reader (stream char) 
 
-
-
 (declare (ignore char)) 
-
-
 
 (list ’quote (read stream t nil t))) *→* SINGLE-QUOTE-READER 
 
-
-
 (set-macro-character #\’ #’single-quote-reader) *→* T 
-
-
 
 Here single-quote-reader reads an *object* following the *single-quote* and returns a *list* of **quote** and that *object*. The *char* argument is ignored. 
 
-
-
 The following is a possible definition for the *semicolon reader macro* in *standard syntax* : 
-
-
 
 (defun semicolon-reader (stream char) 
 
-
-
 (declare (ignore char)) 
-
-
 
 ;; First swallow the rest of the current input line. 
 
-
-
 ;; End-of-file is acceptable for terminating the comment. 
-
-
 
 (do () ((char= (read-char stream nil #\Newline t) #\Newline))) 
 
-
-
 ;; Return zero values. 
-
-
 
 (values)) *→* SEMICOLON-READER 
 
-
-
 (set-macro-character #\; #’semicolon-reader) *→* T 
-
-
 
 
 ```

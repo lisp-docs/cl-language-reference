@@ -42,39 +42,21 @@ If the **continue** *restart* is used while in the debugger, **break** immediate
 ```lisp
  
 
-
-
 (break "You got here with arguments: &#126;:S." ’(FOO 37 A)) 
-
-
 
 ▷ BREAK: You got here with these arguments: FOO, 37, A. 
 
-
-
 ▷ To continue, type :CONTINUE followed by an option number: 
-
-
 
 ▷ 1: Return from BREAK. 
 
-
-
 ▷ 2: Top level. 
-
-
 
 ▷ Debug&gt; :CONTINUE 1 
 
-
-
 ▷ Return from BREAK. 
 
-
-
 *→* NIL 
-
-
 
 
 ```
@@ -194,139 +176,71 @@ When the *value* of **\*debugger-hook\*** is *non-nil*, it is called prior to no
 ```lisp
  
 
-
-
 (defun one-of (choices &amp;optional (prompt "Choice")) 
-
-
 
 (let ((n (length choices)) (i)) 
 
-
-
 (do ((c choices (cdr c)) (i 1 (+ i 1))) 
-
-
 
 ((null c)) 
 
-
-
 (format t "&#126;&amp;[&#126;D] &#126;A&#126;%" i (car c))) 
-
-
 
 (do () ((typep i ‘(integer 1 ,n))) 
 
-
-
 (format t "&#126;&amp;&#126;A: " prompt) 
-
-
 
 (setq i (read)) 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (fresh-line)) 
 
-
-
 (nth (- i 1) choices))) 
-
-
 
 (defun my-debugger (condition me-or-my-encapsulation) 
 
-
-
 (format t "&#126;&amp;Fooey: &#126;A" condition) 
-
-
 
 (let ((restart (one-of (compute-restarts)))) 
 
-
-
 (if (not restart) (error "My debugger got an error.")) 
-
-
 
 (let ((\*debugger-hook\* me-or-my-encapsulation)) 
 
-
-
 (invoke-restart-interactively restart)))) 
-
-
 
 (let ((\*debugger-hook\* #’my-debugger)) 
 
-
-
 (+ 3 ’a)) 
-
-
 
 ▷ Fooey: The argument to +, A, is not a number. 
 
-
-
 ▷ [1] Supply a replacement for A. 
-
-
 
 ▷ [2] Return to Cloe Toplevel. 
 
-
-
 ▷ Choice: 1 
-
-
 
 ▷ Form to evaluate and use: (+ 5 ’b) 
 
-
-
 ▷ Fooey: The argument to +, B, is not a number. 
-
-
 
 ▷ [1] Supply a replacement for B. 
 
-
-
 ▷ [2] Supply a replacement for A. 
-
-
 
 ▷ [3] Return to Cloe Toplevel. 
 
-
-
 ▷ Choice: 1 
-
-
 
 ▷ Form to evaluate and use: 1 
 
-
-
 *→* 9 
-
-
 
 
 ```
@@ -398,115 +312,59 @@ The **continue** *restart* can be used to continue with the normal *signaling* p
 ```lisp
  
 
-
-
 \*break-on-signals\* *→* NIL 
-
-
 
 (ignore-errors (error ’simple-error :format-control "Fooey!")) 
 
-
-
 *→* NIL, #<SIMPLE-ERROR 32207172> 
 
-
-
 (let ((\*break-on-signals\* ’error)) 
-
-
 
 (ignore-errors (error ’simple-error :format-control "Fooey!"))) 
 
-
-
 ▷ Break: Fooey! 
-
-
 
 ▷ BREAK entered because of \*BREAK-ON-SIGNALS\*. 
 
-
-
 ▷ To continue, type :CONTINUE followed by an option number: 
-
-
 
 ▷ 1: Continue to signal. 
 
-
-
 ▷ 2: Top level. 
-
-
 
 ▷ Debug> :CONTINUE 1 
 
-
-
 ▷ Continue to signal. 
-
-
 
 *→* NIL, #<SIMPLE-ERROR 32212257> 
 
-
-
 (let ((\*break-on-signals\* ’error)) 
-
-
 
 (error ’simple-error :format-control "Fooey!")) 
 
-
-
 ▷ Break: Fooey! 
-
-
 
 ▷ BREAK entered because of \*BREAK-ON-SIGNALS\*. 
 
-
-
 ▷ To continue, type :CONTINUE followed by an option number: 
-
-
 
 ▷ 1: Continue to signal. 
 
-
-
 ▷ 2: Top level. 
 
-
-
 ▷ Debug> :CONTINUE 1 
-
-
 
 ▷ Continue to signal. 
 
-
-
 ▷ Error: Fooey! 
-
-
 
 ▷ To continue, type :CONTINUE followed by an option number: 
 
-
-
 ▷ 1: Top level. 
-
-
 
 ▷ Debug> :CONTINUE 1 
 
-
-
 ▷ Top level. 
-
-
 
 
 ```

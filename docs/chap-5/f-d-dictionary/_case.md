@@ -134,87 +134,45 @@ Note that in contrast with **ccase**, the caller of **ecase** may rely on the fa
 ```lisp
  
 
-
-
 (dolist (k ’(1 2 3 :four #\v () t ’other)) 
-
-
 
 (format t "&#126;S " 
 
-
-
 (case k ((1 2) ’clause1) 
-
-
 
 (3 ’clause2) 
 
-
-
 (nil ’no-keys-so-never-seen) 
-
-
 
 ((nil) ’nilslot) 
 
-
-
 ((:four #\v) ’clause4) 
-
-
 
 ((t) ’tslot) 
 
-
-
 (otherwise ’others)))) 
-
-
 
 ▷ CLAUSE1 CLAUSE1 CLAUSE2 CLAUSE4 CLAUSE4 NILSLOT TSLOT OTHERS 
 
-
-
 *→* NIL 
-
-
 
 (defun add-em (x) (apply #’+ (mapcar #’decode x))) 
 
-
-
 *→* ADD-EM 
-
-
 
 (defun decode (x) 
 
-
-
 (ccase x 
-
-
 
 ((i uno) 1) 
 
-
-
 ((ii dos) 2) 
-
-
 
 ((iii tres) 3) 
 
-
-
 ((iv cuatro) 4))) 
 
-
-
 *→* DECODE 
-
-
 
 Data and Control 
 
@@ -222,47 +180,23 @@ Data and Control
 
 
 
-
-
-
-
-
-
 (add-em ’(uno iii)) *→* 4 
-
-
 
 (add-em ’(uno iiii)) 
 
-
-
 ▷ Error: The value of X, IIII, is not I, UNO, II, DOS, III, 
-
-
 
 ▷ TRES, IV, or CUATRO. 
 
-
-
 ▷ 1: Supply a value to use instead. 
-
-
 
 ▷ 2: Return to Lisp Toplevel. 
 
-
-
 ▷ Debug&gt; :CONTINUE 1 
-
-
 
 ▷ Value to evaluate and use for X: ’IV 
 
-
-
 *→* 5 
-
-
 
 
 ```

@@ -80,159 +80,81 @@ The operation to be performed and the return value are determined by *op*.
 ```lisp
  
 
-
-
 (boole boole-ior 1 16) *→* 17 
-
-
 
 (boole boole-and -2 5) *→* 4 
 
-
-
 (boole boole-eqv 17 15) *→* -31 
-
-
 
 ;;; These examples illustrate the result of applying BOOLE and each 
 
-
-
 ;;; of the possible values of OP to each possible combination of bits. 
-
-
 
 (progn 
 
-
-
 (format t "&#126;&amp;Results of (BOOLE <op> #b0011 #b0101) ...&#126; 
-
-
 
 &#126;%–-Op–––-Decimal––-Binary––Bits–-&#126;%") 
 
-
-
 (dolist (symbol ’(boole-1 boole-2 boole-and boole-andc1 
 
-
-
 boole-andc2 boole-c1 boole-c2 boole-clr 
-
-
 
 boole-eqv boole-ior boole-nand boole-nor 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 **boole** 
 
-
-
 boole-orc1 boole-orc2 boole-set boole-xor)) 
-
-
 
 (let ((result (boole (symbol-value symbol) #b0011 #b0101))) 
 
-
-
 (format t "&#126;&amp; &#126;A&#126;13T&#126;3,’ D&#126;23T&#126;:\*&#126;5,’ B&#126;31T ...&#126;4,’0B&#126;%" 
-
-
 
 symbol result (logand result #b1111))))) 
 
-
-
 ▷ Results of (BOOLE <op> #b0011 #b0101) ... 
-
-
 
 ▷ –-Op–––-Decimal––-Binary––Bits–- 
 
-
-
 ▷ BOOLE-1 3 11 ...0011 
-
-
 
 ▷ BOOLE-2 5 101 ...0101 
 
-
-
 ▷ BOOLE-AND 1 1 ...0001 
-
-
 
 ▷ BOOLE-ANDC1 4 100 ...0100 
 
-
-
 ▷ BOOLE-ANDC2 2 10 ...0010 
-
-
 
 ▷ BOOLE-C1 -4 -100 ...1100 
 
-
-
 ▷ BOOLE-C2 -6 -110 ...1010 
-
-
 
 ▷ BOOLE-CLR 0 0 ...0000 
 
-
-
 ▷ BOOLE-EQV -7 -111 ...1001 
-
-
 
 ▷ BOOLE-IOR 7 111 ...0111 
 
-
-
 ▷ BOOLE-NAND -2 -10 ...1110 
-
-
 
 ▷ BOOLE-NOR -8 -1000 ...1000 
 
-
-
 ▷ BOOLE-ORC1 -3 -11 ...1101 
-
-
 
 ▷ BOOLE-ORC2 -5 -101 ...1011 
 
-
-
 ▷ BOOLE-SET -1 -1 ...1111 
-
-
 
 ▷ BOOLE-XOR 6 110 ...0110 
 
-
-
 *→* NIL 
-
-
 
 
 ```
@@ -376,19 +298,11 @@ Each of these *constants* has a *value* which is one of the sixteen possible *bi
 ```lisp
  
 
-
-
 (boole boole-ior 1 16) *→* 17 
-
-
 
 (boole boole-and -2 5) *→* 4 
 
-
-
 (boole boole-eqv 17 15) *→* -31 
-
-
 
 
 ```

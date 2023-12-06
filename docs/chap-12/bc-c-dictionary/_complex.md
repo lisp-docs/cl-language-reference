@@ -50,27 +50,15 @@ Type upgrading implies a movement upwards in the type hierarchy lattice. In the 
 ```lisp
  
 
-
-
 (complex 0) *→* 0 
-
-
 
 (complex 0.0) *→* #C(0.0 0.0) 
 
-
-
 (complex 1 1/2) *→* #C(1 1/2) 
-
-
 
 (complex 1 .99) *→* #C(1.0 0.99) 
 
-
-
 (complex 3/2 0.0) *→* #C(1.5 0.0) 
-
-
 
 
 ```

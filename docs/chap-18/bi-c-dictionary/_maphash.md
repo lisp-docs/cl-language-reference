@@ -38,91 +38,47 @@ The consequences are unspecified if any attempt is made to add or remove an entr
 ```lisp
  
 
-
-
 (setq table (make-hash-table)) *→* #<HASH-TABLE EQL 0/120 32304110> 
-
-
 
 (dotimes (i 10) (setf (gethash i table) i)) *→* NIL 
 
-
-
 (let ((sum-of-squares 0)) 
 
-
-
 (maphash #’(lambda (key val) 
-
-
 
 (let ((square (\* val val))) 
 
-
-
 (incf sum-of-squares square) 
-
-
 
 (setf (gethash key table) square))) 
 
-
-
 table) 
-
-
 
 sum-of-squares) *→* 285 
 
-
-
 (hash-table-count table) *→* 10 
-
-
 
 (maphash #’(lambda (key val) 
 
-
-
 (when (oddp val) (remhash key table))) 
-
-
 
 table) *→* NIL 
 
-
-
 (hash-table-count table) *→* 5 
-
-
 
 (maphash #’(lambda (k v) (print (list k v))) table) 
 
-
-
 (0 0) 
-
-
 
 (8 64) 
 
-
-
 (2 4) 
-
-
 
 (6 36) 
 
-
-
 (4 16) 
 
-
-
 *→* NIL 
-
-
 
 
 ```

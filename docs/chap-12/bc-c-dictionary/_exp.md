@@ -86,39 +86,21 @@ If *power-number* is a zero of any other *type*, then the result is also the val
 ```lisp
  
 
-
-
 (exp 0) *→* 1.0 
-
-
 
 (exp 1) *→* 2.718282 
 
-
-
 (exp (log 5)) *→* 5.0 
-
-
 
 (expt 2 8) *→* 256 
 
-
-
 (expt 4 .5) *→* 2.0 
-
-
 
 (expt #c(0 1) 2) *→* -1 
 
-
-
 (expt #c(2 2) 3) *→* #C(-16 16) 
 
-
-
 (expt #c(2 2) 4) *→* -64 
-
-
 
 
 ```

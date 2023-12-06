@@ -70,19 +70,11 @@ The *scopes* of the name binding and *declarations* do not include the *values-f
 ```lisp
  
 
-
-
 (multiple-value-bind (f r) 
-
-
 
 (floor 130 11) 
 
-
-
 (list f r)) → (11 9) 
-
-
 
 
 ```

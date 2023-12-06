@@ -34,19 +34,11 @@ Returns *true* if *object* is of *type* **simple-vector**; otherwise, returns *f
 ```lisp
  
 
-
-
 (simple-vector-p (make-array 6)) *→ true* 
-
-
 
 (simple-vector-p "aaaaaa") *→ false* 
 
-
-
 (simple-vector-p (make-array 6 :fill-pointer t)) *→ false* 
-
-
 
 
 ```

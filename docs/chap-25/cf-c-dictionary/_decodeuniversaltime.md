@@ -46,51 +46,27 @@ If *time-zone* is not supplied, it defaults to the current time zone adjusted fo
 ```lisp
  
 
-
-
 (decode-universal-time 0 0) *→* 0, 0, 0, 1, 1, 1900, 0, *false*, 0 
-
-
 
 ;; The next two examples assume Eastern Daylight Time. 
 
-
-
 (decode-universal-time 2414296800 5) *→* 0, 0, 1, 4, 7, 1976, 6, *false*, 5 
-
-
 
 (decode-universal-time 2414293200) *→* 0, 0, 1, 4, 7, 1976, 6, *true*, 5 
 
-
-
 ;; This example assumes that the time zone is Eastern Daylight Time 
-
-
 
 ;; (and that the time zone is constant throughout the example). 
 
-
-
 (let\* ((here (nth 8 (multiple-value-list (get-decoded-time)))) ;Time zone 
-
-
 
 (recently (get-universal-time)) 
 
-
-
 (a (nthcdr 7 (multiple-value-list (decode-universal-time recently)))) 
-
-
 
 (b (nthcdr 7 (multiple-value-list (decode-universal-time recently here))))) 
 
-
-
 (list a b (equal a b))) *→* ((T 5) (NIL 5) NIL) 
-
-
 
 
 ```
@@ -166,23 +142,13 @@ If *time-zone* is not supplied, it defaults to the current time zone adjusted fo
 ```lisp
  
 
-
-
 (encode-universal-time 0 0 0 1 1 1900 0) *→* 0 
-
-
 
 (encode-universal-time 0 0 1 4 7 1976 5) *→* 2414296800 
 
-
-
 ;; The next example assumes Eastern Daylight Time. 
 
-
-
 (encode-universal-time 0 0 1 4 7 1976) *→* 2414293200 
-
-
 
 
 ```

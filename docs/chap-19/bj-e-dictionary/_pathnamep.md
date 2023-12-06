@@ -34,43 +34,23 @@ Returns *true* if *object* is of *type* **pathname**; otherwise, returns *false*
 ```lisp
  
 
-
-
 (setq q "test") *→* "test" 
-
-
 
 (pathnamep q) *→ false* 
 
-
-
 (setq q (pathname "test")) 
-
-
 
 *→* #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME "test" :TYPE NIL 
 
-
-
 :VERSION NIL) 
 
-
-
 (pathnamep q) *→ true* 
-
-
 
 (setq q (logical-pathname "SYS:SITE;FOO.SYSTEM")) 
 
-
-
 *→* #P"SYS:SITE;FOO.SYSTEM" 
 
-
-
 (pathnamep q) *→ true* 
-
-
 
 
 ```
@@ -180,257 +160,129 @@ If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 **pathname-host, pathname-device,** *. . .* 
 
-
-
 (setq q (make-pathname :host "KATHY" 
-
-
 
 :directory "CHAPMAN" 
 
-
-
 :name "LOGIN" :type "COM")) 
-
-
 
 *→* #P"KATHY::[CHAPMAN]LOGIN.COM" 
 
-
-
 (pathname-host q) *→* "KATHY" 
-
-
 
 (pathname-name q) *→* "LOGIN" 
 
-
-
 (pathname-type q) *→* "COM" 
-
-
 
 ;; Because namestrings are used, the results shown in the remaining 
 
-
-
 ;; examples are not necessarily the only possible results. Mappings 
-
-
 
 ;; from namestring representation to pathname representation are 
 
-
-
 ;; dependent both on the file system involved and on the implementation 
-
-
 
 ;; (since there may be several implementations which can manipulate the 
 
-
-
 ;; the same file system, and those implementations are not constrained 
-
-
 
 ;; to agree on all details). Consult the documentation for each 
 
-
-
 ;; implementation for specific information on how namestrings are treated 
-
-
 
 ;; that implementation. 
 
-
-
 ;; VMS 
-
-
 
 (pathname-directory (parse-namestring "[FOO.\*.BAR]BAZ.LSP")) 
 
-
-
 *→* (:ABSOLUTE "FOO" "BAR") 
-
-
 
 (pathname-directory (parse-namestring "[FOO.\*.BAR]BAZ.LSP") :case :common) 
 
-
-
 *→* (:ABSOLUTE "FOO" "BAR") 
-
-
 
 ;; Unix 
 
-
-
 (pathname-directory "foo.l") *→* NIL 
-
-
 
 (pathname-device "foo.l") *→* :UNSPECIFIC 
 
-
-
 (pathname-name "foo.l") *→* "foo" 
-
-
 
 (pathname-name "foo.l" :case :local) *→* "foo" 
 
-
-
 (pathname-name "foo.l" :case :common) *→* "FOO" 
-
-
 
 (pathname-type "foo.l") *→* "l" 
 
-
-
 (pathname-type "foo.l" :case :local) *→* "l" 
-
-
 
 (pathname-type "foo.l" :case :common) *→* "L" 
 
-
-
 (pathname-type "foo") *→* :UNSPECIFIC 
-
-
 
 (pathname-type "foo" :case :common) *→* :UNSPECIFIC 
 
-
-
 (pathname-type "foo.") *→* "" 
-
-
 
 (pathname-type "foo." :case :common) *→* "" 
 
-
-
 (pathname-directory (parse-namestring "/foo/bar/baz.lisp") :case :local) 
-
-
 
 *→* (:ABSOLUTE "foo" "bar") 
 
-
-
 (pathname-directory (parse-namestring "/foo/bar/baz.lisp") :case :local) 
-
-
 
 *→* (:ABSOLUTE "FOO" "BAR") 
 
-
-
 (pathname-directory (parse-namestring "../baz.lisp")) 
-
-
 
 *→* (:RELATIVE :UP) 
 
-
-
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/BAR/../Mum/baz")) 
-
-
 
 *→* (:ABSOLUTE "foo" "BAR" :UP "Mum") 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/BAR/../Mum/baz") :case :common) 
 
-
-
 *→* (:ABSOLUTE "FOO" "bar" :UP "Mum") 
-
-
 
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/\*/bar/baz.l")) 
 
-
-
 *→* (:ABSOLUTE "foo" :WILD "bar") 
-
-
 
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/\*/bar/baz.l") :case :common) 
 
-
-
 *→* (:ABSOLUTE "FOO" :WILD "BAR") 
-
-
 
 ;; Symbolics LMFS 
 
-
-
 (pathname-directory (parse-namestring "&gt;foo&gt;\*\*&gt;bar&gt;baz.lisp")) 
-
-
 
 *→* (:ABSOLUTE "foo" :WILD-INFERIORS "bar") 
 
-
-
 (pathname-directory (parse-namestring "&gt;foo&gt;\*&gt;bar&gt;baz.lisp")) 
-
-
 
 *→* (:ABSOLUTE "foo" :WILD "bar") 
 
-
-
 (pathname-directory (parse-namestring "&gt;foo&gt;\*&gt;bar&gt;baz.lisp") :case :common) 
-
-
 
 *→* (:ABSOLUTE "FOO" :WILD "BAR") 
 
-
-
 (pathname-device (parse-namestring "&gt;foo&gt;baz.lisp")) *→* :UNSPECIFIC 
-
-
 
 
 ```

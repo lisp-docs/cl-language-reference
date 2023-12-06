@@ -86,15 +86,9 @@ The *secondary value*, *position*, is the index of the first *character* in the 
 ```lisp
  
 
-
-
 (read-from-string " 1 3 5" t nil :start 2) *→* 3, 5 
 
-
-
 (read-from-string "(a b c)") *→* (A B C), 7 
-
-
 
 
 ```

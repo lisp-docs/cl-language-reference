@@ -338,43 +338,23 @@ For information about opening relative pathnames, see Section 19.2.3 (Merging Pa
 ```lisp
  
 
-
-
 (open *filespec* :direction :probe) *→* #\<Closed Probe File Stream...\> 
-
-
 
 (setq q (merge-pathnames (user-homedir-pathname) "test")) 
 
-
-
 *→* #<PATHNAME :HOST NIL :DEVICE *device-name* :DIRECTORY *directory-name* 
-
-
 
 :NAME "test" :TYPE NIL :VERSION :NEWEST> 
 
-
-
 (open *filespec* :if-does-not-exist :create) *→* #<Input File Stream...> 
-
-
 
 (setq s (open *filespec* :direction :probe)) *→* #\<Closed Probe File Stream...\> 
 
-
-
 (truename s) *→* #<PATHNAME :HOST NIL :DEVICE *device-name* :DIRECTORY 
-
-
 
 *directory-name* :NAME *filespec* :TYPE *extension* :VERSION 1> 
 
-
-
 (open s :direction :output :if-exists nil) *→* NIL 
-
-
 
 
 ```

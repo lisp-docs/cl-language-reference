@@ -78,147 +78,75 @@ The *format-control* and *format-arguments* are used report the *restart*.
 ```lisp
  
 
-
-
 (defun read-eval-print-loop (level) 
-
-
 
 (with-simple-restart (abort "Exit command level &#126;D." level) 
 
-
-
 (loop 
-
-
 
 (with-simple-restart (abort "Return to command level &#126;D." level) 
 
-
-
 (let ((form (prog2 (fresh-line) (read) (fresh-line)))) 
-
-
 
 (prin1 (eval form))))))) 
 
-
-
 *→* READ-EVAL-PRINT-LOOP 
-
-
 
 (read-eval-print-loop 1) 
 
-
-
 (+ ’a 3) 
-
-
 
 ▷ Error: The argument, A, to the function + was of the wrong type. ▷ The function expected a number. 
 
-
-
 ▷ To continue, type :CONTINUE followed by an option number: 
-
-
 
 ▷ 1: Specify a value to use this time. 
 
-
-
 ▷ 2: Return to command level 1. 
-
-
 
 ▷ 3: Exit command level 1. 
 
-
-
 ▷ 4: Return to Lisp Toplevel. 
-
-
 
 (defun compute-fixnum-power-of-2 (x) 
 
-
-
 (with-simple-restart (nil "Give up on computing 2<i><sup>∧</sup></i>&#126;D." x) 
-
-
 
 (let ((result 1)) 
 
-
-
 (dotimes (i x result) 
-
-
 
 (setq result (\* 2 result)) 
 
-
-
 (unless (fixnump result) 
-
-
 
 (error "Power of 2 is too large.")))))) 
 
-
-
 COMPUTE-FIXNUM-POWER-OF-2 
-
-
 
 (defun compute-power-of-2 (x) 
 
-
-
 (or (compute-fixnum-power-of-2 x) ’something big)) 
-
-
 
 COMPUTE-POWER-OF-2 
 
-
-
 (compute-power-of-2 10) 
-
-
 
 1024 
 
-
-
 (compute-power-of-2 10000) 
-
-
 
 ▷ Error: Power of 2 is too large. 
 
-
-
 ▷ To continue, type :CONTINUE followed by an option number. 
-
-
 
 <i>.</i> 1: Give up on computing 2<i><sup>∧</sup></i>10000. 
 
-
-
 ▷ 2: Return to Lisp Toplevel 
-
-
 
 ▷ Debug&gt; :continue 1 
 
-
-
 *→* SOMETHING-BIG 
-
-
 
 
 ```

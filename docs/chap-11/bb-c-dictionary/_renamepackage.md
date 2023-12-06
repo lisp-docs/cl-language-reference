@@ -58,35 +58,19 @@ The consequences are undefined if *new-name* or any *new-nickname* conflicts wit
 ```lisp
  
 
-
-
 (make-package ’temporary :nicknames ’("TEMP")) *→* #<PACKAGE "TEMPORARY"> 
-
-
 
 (rename-package ’temp ’ephemeral) *→* #<PACKAGE "EPHEMERAL"> 
 
-
-
 (package-nicknames (find-package ’ephemeral)) *→* () 
-
-
 
 (find-package ’temporary) *→* NIL 
 
-
-
 (rename-package ’ephemeral ’temporary ’(temp fleeting)) 
-
-
 
 *→* #<PACKAGE "TEMPORARY"> 
 
-
-
 (package-nicknames (find-package ’temp)) *→* ("TEMP" "FLEETING") 
-
-
 
 
 ```

@@ -34,43 +34,23 @@ Returns true if and only if **adjust-array** could return a *value* which is *id
 ```lisp
  
 
-
-
 (adjustable-array-p 
 
-
-
 (make-array 5 
-
-
 
 :element-type ’character 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 :adjustable t 
 
-
-
 :fill-pointer 3)) *→ true* 
 
-
-
 (adjustable-array-p (make-array 4)) *→ implementation-dependent* 
-
-
 
 
 ```

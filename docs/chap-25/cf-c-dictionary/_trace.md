@@ -54,79 +54,41 @@ If a *function* to be traced has been open-coded (*e.g.*, because it was declare
 ```lisp
  
 
-
-
 (defun fact (n) (if (zerop n) 1 (\* n (fact (- n 1))))) 
-
-
 
 *→* FACT 
 
-
-
 (trace fact) 
-
-
 
 *→* (FACT) 
 
-
-
 ;; Of course, the format of traced output is implementation-dependent. 
-
-
 
 (fact 3) 
 
-
-
 ▷ 1 Enter FACT 3 
-
-
 
 ▷ | 2 Enter FACT 2 
 
-
-
 ▷ | 3 Enter FACT 1 
-
-
 
 ▷ | | 4 Enter FACT 0 
 
-
-
 ▷ | | 4 Exit FACT 1 
 
-
-
 ▷ | 3 Exit FACT 1 
-
-
 
 ▷ | 2 Exit FACT 2 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 ▷ 1 Exit FACT 6 
 
-
-
 *→* 6 
-
-
 
 
 ```

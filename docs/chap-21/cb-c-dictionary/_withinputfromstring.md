@@ -90,39 +90,21 @@ The consequences are undefined if an attempt is made to *assign* the *variable v
 ```lisp
  
 
-
-
 (with-input-from-string (s "XXX1 2 3 4xxx" 
-
-
 
 :index ind 
 
-
-
 :start 3 :end 10) 
-
-
 
 (+ (read s) (read s) (read s))) *→* 6 
 
-
-
 ind *→* 9 
-
-
 
 (with-input-from-string (s "Animal Crackers" :index j :start 6) 
 
-
-
 (read s)) *→* CRACKERS 
 
-
-
 The variable j is set to 15. 
-
-
 
 
 ```

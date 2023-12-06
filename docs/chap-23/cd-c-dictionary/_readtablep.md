@@ -34,19 +34,11 @@ Returns *true* if *object* is of *type* **readtable**; otherwise, returns *false
 ```lisp
  
 
-
-
 (readtablep \*readtable\*) *→ true* 
-
-
 
 (readtablep (copy-readtable)) *→ true* 
 
-
-
 (readtablep ’\*readtable\*) *→ false* 
-
-
 
 
 ```
@@ -142,83 +134,43 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 ```lisp
  
 
-
-
 (get-dispatch-macro-character #\# #\\{) *→* NIL 
-
-
 
 (set-dispatch-macro-character #\# #\\{ ;dispatch on #\{ 
 
-
-
 #’(lambda(s c n) 
-
-
 
 (let ((list (read s nil (values) t))) ;list is object after #n\{ 
 
-
-
 (when (consp list) ;return nth element of list 
 
-
-
 (unless (and n (&lt; 0 n (length list))) (setq n 0)) 
-
-
 
 (setq list (nth n list))) 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 list))) *→* T 
 
-
-
 #\{(1 2 3 4) *→* 1 
-
-
 
 #3\{(0 1 2 3) *→* 3 
 
-
-
 #\{123 *→* 123 
-
-
 
 If it is desired that #$*foo* : as if it were (dollars *foo*). 
 
-
-
 (defun |#$-reader| (stream subchar arg) 
-
-
 
 (declare (ignore subchar arg)) 
 
-
-
 (list ’dollars (read stream t nil t))) *→* |#$-reader| 
 
-
-
 (set-dispatch-macro-character #\# #\$ #’|#$-reader|) *→* T 
-
-
 
 
 ```

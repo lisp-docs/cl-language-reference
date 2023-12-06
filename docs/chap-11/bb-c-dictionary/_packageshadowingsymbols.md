@@ -34,31 +34,17 @@ Returns a *list* of *symbols* that have been declared as *shadowing symbols* in 
 ```lisp
  
 
-
-
 (package-shadowing-symbols (make-package ’temp)) *→* () 
-
-
 
 (shadow ’cdr ’temp) *→* T 
 
-
-
 (package-shadowing-symbols ’temp) *→* (TEMP::CDR) 
-
-
 
 (intern "PILL" ’temp) *→* TEMP::PILL, NIL 
 
-
-
 (shadowing-import ’pill ’temp) *→* T 
 
-
-
 (package-shadowing-symbols ’temp) *→* (PILL TEMP::CDR) 
-
-
 
 
 ```

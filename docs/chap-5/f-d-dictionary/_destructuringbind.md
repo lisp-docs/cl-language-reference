@@ -50,31 +50,15 @@ The *lambda-list* supports destructuring as described in Section 3.4.5 (Destruct
 ```lisp
  
 
-
-
 (defun iota (n) (loop for i from 1 to n collect i)) ;helper 
-
-
 
 (destructuring-bind ((a &amp;optional (b ’bee)) one two three) 
 
-
-
 ‘((alpha) ,@(iota 3)) 
-
-
 
 (list a b three two one)) *→* (ALPHA BEE 3 2 1) 
 
-
-
 Data and Control 
-
-
-
-
-
-
 
 
 
@@ -290,51 +274,27 @@ The special form **let** has the property that the *scope* of the name binding d
 ```lisp
  
 
-
-
 (setq a ’top) *→* TOP 
-
-
 
 (defun dummy-function () a) *→* DUMMY-FUNCTION 
 
-
-
 (let ((a ’inside) (b a)) 
-
-
 
 (format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) *→* "INSIDE TOP TOP" 
 
-
-
 (let\* ((a ’inside) (b a)) 
-
-
 
 (format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) *→* "INSIDE INSIDE TOP" 
 
-
-
 (let ((a ’inside) (b a)) 
-
-
 
 (declare (special a)) 
 
-
-
 (format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) *→* "INSIDE TOP INSIDE" 
-
-
 
 The code 
 
-
-
 (let (x) 
-
-
 
 Data and Control 
 
@@ -342,27 +302,13 @@ Data and Control
 
 
 
-
-
-
-
-
-
 (declare (integer x)) 
-
-
 
 (setq x (gcd y z)) 
 
-
-
 ...) 
 
-
-
 is incorrect; although x is indeed set before it is used, and is set to a value of the declared type *integer* , nevertheless x initially takes on the value **nil** in violation of the type declaration. 
-
-
 
 
 ```

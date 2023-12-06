@@ -38,35 +38,19 @@ Negative *integer-1* and *integer-2* are treated as if they were represented in 
 ```lisp
  
 
-
-
 (logtest 1 7) *→ true* 
-
-
 
 (logtest 1 2) *→ false* 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (logtest -2 -1) *→ true* 
 
-
-
 (logtest 0 -1) *→ false* 
-
-
 
 
 ```

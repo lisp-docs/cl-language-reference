@@ -46,39 +46,21 @@ The first argument to the :test or :test-not function is *tree-1* or a *car* or 
 ```lisp
  
 
-
-
 (setq tree1 ’(1 (1 2)) 
-
-
 
 tree2 ’(1 (1 2))) *→* (1 (1 2)) 
 
-
-
 (tree-equal tree1 tree2) *→ true* 
-
-
 
 (eql tree1 tree2) *→ false* 
 
-
-
 (setq tree1 ’(’a (’b ’c)) 
-
-
 
 tree2 ’(’a (’b ’c))) *→* (’a (’b ’c)) 
 
-
-
 *→* ((QUOTE A) ((QUOTE B) (QUOTE C))) 
 
-
-
 (tree-equal tree1 tree2 :test ’eq) *→ true* 
-
-
 
 
 ```

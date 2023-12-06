@@ -86,179 +86,91 @@ The sorting operation can be destructive in all cases. In the case of a *vector*
 ```lisp
  
 
-
-
 (setq tester (copy-seq "lkjashd")) *→* "lkjashd" 
-
-
 
 (sort tester #’char-lessp) *→* "adhjkls" 
 
-
-
 (setq tester (list ’(1 2 3) ’(4 5 6) ’(7 8 9))) *→* ((1 2 3) (4 5 6) (7 8 9)) 
-
-
 
 (sort tester #’&gt; :key #’car) *→* ((7 8 9) (4 5 6) (1 2 3)) 
 
-
-
 (setq tester (list 1 2 3 4 5 6 7 8 9 0)) *→* (1 2 3 4 5 6 7 8 9 0) 
-
-
 
 (stable-sort tester #’(lambda (x y) (and (oddp x) (evenp y)))) 
 
-
-
 *→* (1 3 5 7 9 2 4 6 8 0) 
-
-
 
 (sort (setq committee-data 
 
-
-
 (vector (list (list "JonL" "White") "Iteration") 
-
-
 
 (list (list "Dick" "Waters") "Iteration") 
 
-
-
 (list (list "Dick" "Gabriel") "Objects") 
-
-
 
 (list (list "Kent" "Pitman") "Conditions") 
 
-
-
 (list (list "Gregor" "Kiczales") "Objects") 
-
-
 
 (list (list "David" "Moon") "Objects") 
 
-
-
 (list (list "Kathy" "Chapman") "Editorial") 
-
-
 
 (list (list "Larry" "Masinter") "Cleanup") 
 
-
-
 (list (list "Sandra" "Loosemore") "Compiler"))) 
-
-
 
 #’string-lessp :key #’cadar) 
 
-
-
 *→* #((("Kathy" "Chapman") "Editorial") 
-
-
 
 (("Dick" "Gabriel") "Objects") 
 
-
-
 (("Gregor" "Kiczales") "Objects") 
 
-
-
 (("Sandra" "Loosemore") "Compiler") 
-
-
 
 (("Larry" "Masinter") "Cleanup") 
 
-
-
 (("David" "Moon") "Objects") 
 
-
-
 (("Kent" "Pitman") "Conditions") 
-
-
 
 (("Dick" "Waters") "Iteration") 
 
-
-
 (("JonL" "White") "Iteration")) 
-
-
 
 ;; Note that individual alphabetical order within ‘committees’ 
 
-
-
 ;; is preserved. 
-
-
 
 (setq committee-data 
 
-
-
 (stable-sort committee-data #’string-lessp :key #’cadr)) 
-
-
 
 *→* #((("Larry" "Masinter") "Cleanup") 
 
-
-
 (("Sandra" "Loosemore") "Compiler") 
 
-
-
 (("Kent" "Pitman") "Conditions") 
-
-
 
 (("Kathy" "Chapman") "Editorial") 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (("Dick" "Waters") "Iteration") 
 
-
-
 (("JonL" "White") "Iteration") 
-
-
 
 (("Dick" "Gabriel") "Objects") 
 
-
-
 (("Gregor" "Kiczales") "Objects") 
 
-
-
 (("David" "Moon") "Objects")) 
-
-
 
 
 ```

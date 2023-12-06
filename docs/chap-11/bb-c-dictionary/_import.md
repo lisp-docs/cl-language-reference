@@ -58,23 +58,13 @@ If the *symbol* is already *present* in the importing *package*, **import** has 
 ```lisp
  
 
-
-
 (import ’common-lisp::car (make-package ’temp :use nil)) *→* T 
-
-
 
 (find-symbol "CAR" ’temp) *→* CAR, :INTERNAL 
 
-
-
 (find-symbol "CDR" ’temp) *→* NIL, NIL 
 
-
-
 The form (import ’editor:buffer) takes the external symbol named buffer in the EDITOR *package* (this symbol was located when the form was read by the *Lisp reader* ) and adds it to the *current package* as an *internal symbol*. The symbol buffer is then *present* in the *current package*. 
-
-
 
 
 ```

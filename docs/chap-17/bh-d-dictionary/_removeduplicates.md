@@ -110,43 +110,23 @@ The elements of *sequence* are compared *pairwise*, and if any two match, then t
 ```lisp
  
 
-
-
 (remove-duplicates "aBcDAbCd" :test #’char-equal :from-end t) *→* "aBcD" 
-
-
 
 (remove-duplicates ’(a b c b d d e)) *→* (A C B D E) 
 
-
-
 (remove-duplicates ’(a b c b d d e) :from-end t) *→* (A B C D E) 
 
-
-
 (remove-duplicates ’((foo #\a) (bar #\%) (baz #\A)) 
-
-
 
 :test #’char-equal :key #’cadr) *→* ((BAR #\%) (BAZ #\A)) 
 
-
-
 (remove-duplicates ’((foo #\a) (bar #\%) (baz #\A)) 
-
-
 
 :test #’char-equal :key #’cadr :from-end t) *→* ((FOO #\a) (BAR #\%)) 
 
-
-
 (setq tester (list 0 1 2 3 4 5 6)) 
 
-
-
 (delete-duplicates tester :key #’oddp :start 1 :end 6) *→* (0 4 5 6) 
-
-
 
 
 ```

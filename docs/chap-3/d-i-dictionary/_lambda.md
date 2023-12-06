@@ -62,11 +62,7 @@ Provides a shorthand notation for a **function** *special form* involving a *lam
 ```lisp
  
 
-
-
 (funcall (lambda (x) (+ x 3)) 4) *→* 7 
-
-
 
 
 ```

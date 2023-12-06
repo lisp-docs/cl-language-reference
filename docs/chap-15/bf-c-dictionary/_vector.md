@@ -34,35 +34,19 @@ Creates a *fresh simple general vector* whose size corresponds to the number of 
 ```lisp
  
 
-
-
 (arrayp (setq v (vector 1 2 ’sirens))) *→ true* 
-
-
 
 (vectorp v) *→ true* 
 
-
-
 (simple-vector-p v) *→ true* 
-
-
 
 (length v) *→* 3 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 
 ```

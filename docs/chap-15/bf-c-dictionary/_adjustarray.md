@@ -222,131 +222,67 @@ Note that if an *array A* is displaced to another *array B*, and *B* is displace
 ```lisp
  
 
-
-
 (adjustable-array-p 
-
-
 
 (setq ada (adjust-array 
 
-
-
 (make-array ’(2 3) 
-
-
 
 :adjustable t 
 
-
-
 :initial-contents ’((a b c) (1 2 3))) 
-
-
 
 ’(4 6)))) *→* T 
 
-
-
 (array-dimensions ada) *→* (4 6) 
-
-
 
 (aref ada 1 1) *→* 2 
 
-
-
 (setq beta (make-array ’(2 3) :adjustable t)) 
-
-
 
 *→* #2A((NIL NIL NIL) (NIL NIL NIL)) 
 
-
-
 (adjust-array beta ’(4 6) :displaced-to ada) 
-
-
 
 *→* #2A((A B C NIL NIL NIL) 
 
-
-
 (1 2 3 NIL NIL NIL) 
 
-
-
 (NIL NIL NIL NIL NIL NIL) 
-
-
 
 (NIL NIL NIL NIL NIL NIL)) 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (array-dimensions beta) *→* (4 6) 
 
-
-
 (aref beta 1 1) *→* 2 
-
-
 
 Suppose that the 4-by-4 array in m looks like this: 
 
-
-
 #2A(( alpha beta gamma delta ) 
-
-
 
 ( epsilon zeta eta theta ) 
 
-
-
 ( iota kappa lambda mu ) 
-
-
 
 ( nu xi omicron pi )) 
 
-
-
 Then the result of 
-
-
 
 (adjust-array m ’(3 5) :initial-element ’baz) 
 
-
-
 is a 3-by-5 array with contents 
-
-
 
 #2A(( alpha beta gamma delta baz ) 
 
-
-
 ( epsilon zeta eta theta baz ) 
 
-
-
 ( iota kappa lambda mu baz )) 
-
-
 
 
 ```

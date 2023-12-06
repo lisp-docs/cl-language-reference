@@ -42,31 +42,17 @@ For information about the *evaluation* of *subforms* of *places*, see Section 5.
 ```lisp
  
 
-
-
 (let ((n 0) 
-
-
 
 (x (list ’a ’b ’c ’d ’e ’f ’g))) 
 
-
-
 (rotatef (nth (incf n) x) 
-
-
 
 (nth (incf n) x) 
 
-
-
 (nth (incf n) x)) 
 
-
-
 x) → (A C D B E F G) 
-
-
 
 
 ```

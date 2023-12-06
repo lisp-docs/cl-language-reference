@@ -66,43 +66,23 @@ If any *argument* is a *float* then the rules of floating-point contagion apply;
 ```lisp
  
 
-
-
 (/ 12 4) *→* 3 
-
-
 
 (/ 13 4) *→* 13/4 
 
-
-
 (/ -8) *→* -1/8 
-
-
 
 (/ 3 4 5) *→* 3/20 
 
-
-
 (/ 0.5) *→* 2.0 
-
-
 
 (/ 20 5) *→* 4 
 
-
-
 (/ 5 20) *→* 1/4 
-
-
 
 (/ 60 -2 3 5.0) *→* -2.0 
 
-
-
 (/ 2 #c(2 2)) *→* #C(1/2 -1/2) 
-
-
 
 
 ```
@@ -178,23 +158,13 @@ Might signal **type-error** if some *argument* is not a *number* . Might signal 
 ```lisp
  
 
-
-
 (1+ 99) *→* 100 
-
-
 
 (1- 100) *→* 99 
 
-
-
 (1+ (complex 0.0)) *→* #C(1.0 0.0) 
 
-
-
 (1- 5/3) *→* 2/3 
-
-
 
 
 ```

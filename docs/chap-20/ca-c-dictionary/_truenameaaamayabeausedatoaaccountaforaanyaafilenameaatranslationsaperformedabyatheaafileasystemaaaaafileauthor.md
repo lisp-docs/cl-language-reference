@@ -46,19 +46,11 @@ Returns a *string* naming the author of the *file* specified by *pathspec*, or *
 ```lisp
  
 
-
-
 (with-open-file (stream "&gt;relativity&gt;general.text") 
-
-
 
 (file-author s)) 
 
-
-
 *→* "albert" 
-
-
 
 
 ```

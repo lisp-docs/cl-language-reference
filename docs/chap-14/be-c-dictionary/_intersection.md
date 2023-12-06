@@ -82,71 +82,37 @@ There is no guarantee that the order of elements in the result will reflect the 
 ```lisp
  
 
-
-
 (setq list1 (list 1 1 2 3 4 a b c "A" "B" "C" "d") 
-
-
 
 list2 (list 1 4 5 b c d "a" "B" "c" "D")) 
 
-
-
 *→* (1 4 5 B C D "a" "B" "c" "D") 
-
-
 
 (intersection list1 list2) *→* (C B 4 1 1) 
 
-
-
 (intersection list1 list2 :test ’equal) *→* ("B" C B 4 1 1) 
-
-
 
 (intersection list1 list2 :test #’equalp) *→* ("d" "C" "B" "A" C B 4 1 1) 
 
-
-
 (nintersection list1 list2) *→* (1 1 4 B C) 
-
-
 
 list1 *→ implementation-dependent* ;*e.g.*, (1 1 4 B C) 
 
-
-
 list2 *→ implementation-dependent* ;*e.g.*, (1 4 5 B C D "a" "B" "c" "D") 
-
-
 
 (setq list1 (copy-list ’((1 . 2) (2 . 3) (3 . 4) (4 . 5)))) 
 
-
-
 *→* ((1 . 2) (2 . 3) (3 . 4) (4 . 5)) 
-
-
 
 (setq list2 (copy-list ’((1 . 3) (2 . 4) (3 . 6) (4 . 8)))) 
 
-
-
 *→* ((1 . 3) (2 . 4) (3 . 6) (4 . 8)) 
-
-
 
 (nintersection list1 list2 :key #’cdr) *→* ((2 . 3) (3 . 4)) 
 
-
-
 list1 *→ implementation-dependent* ;*e.g.*, ((1 . 2) (2 . 3) (3 . 4)) 
 
-
-
 list2 *→ implementation-dependent* ;*e.g.*, ((1 . 3) (2 . 4) (3 . 6) (4 . 8)) 
-
-
 
 
 ```

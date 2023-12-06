@@ -46,91 +46,47 @@
 ```lisp
  
 
-
-
 (setq lst ’(1 2 3 4 5 6 7 8 9)) *→* (1 2 3 4 5 6 7 8 9) 
-
-
 
 (butlast lst) *→* (1 2 3 4 5 6 7 8) 
 
-
-
 (butlast lst 5) *→* (1 2 3 4) 
-
-
 
 (butlast lst (+ 5 5)) *→* NIL 
 
-
-
 lst *→* (1 2 3 4 5 6 7 8 9) 
-
-
 
 (nbutlast lst 3) *→* (1 2 3 4 5 6) 
 
-
-
 lst *→* (1 2 3 4 5 6) 
-
-
 
 (nbutlast lst 99) *→* NIL 
 
-
-
 lst *→* (1 2 3 4 5 6) 
-
-
 
 (butlast ’(a b c d)) *→* (A B C) 
 
-
-
 (butlast ’((a b) (c d))) *→* ((A B)) 
-
-
 
 (butlast ’(a)) *→* NIL 
 
-
-
 (butlast nil) *→* NIL 
-
-
 
 (setq foo (list ’a ’b ’c ’d)) *→* (A B C D) 
 
-
-
 (nbutlast foo) *→* (A B C) 
-
-
 
 foo *→* (A B C) 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (nbutlast (list ’a)) *→* NIL 
 
-
-
 (nbutlast ’()) *→* NIL 
-
-
 
 
 ```

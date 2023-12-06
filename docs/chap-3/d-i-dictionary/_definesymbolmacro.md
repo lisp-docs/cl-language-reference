@@ -62,51 +62,27 @@ A *binding* for a *symbol macro* can be *shadowed* <sub>2</sub> by **let** or **
 ```lisp
  
 
-
-
 (defvar \*things\* (list ’alpha ’beta ’gamma)) *→* \*THINGS\* 
-
-
 
 (define-symbol-macro thing1 (first \*things\*)) *→* THING1 
 
-
-
 (define-symbol-macro thing2 (second \*things\*)) *→* THING2 
-
-
 
 (define-symbol-macro thing3 (third \*things\*)) *→* THING3 
 
-
-
 thing1 *→* ALPHA 
-
-
 
 (setq thing1 ’ONE) *→* ONE 
 
-
-
 \*things\* *→* (ONE BETA GAMMA) 
-
-
 
 (multiple-value-setq (thing2 thing3) (values ’two ’three)) *→* TWO 
 
-
-
 thing3 *→* THREE 
-
-
 
 \*things\* *→* (ONE TWO THREE) 
 
-
-
 (list thing2 (let ((thing2 2)) thing2)) *→* (TWO 2) 
-
-
 
 
 ```

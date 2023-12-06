@@ -46,39 +46,21 @@ The *test*, *test-not*, and *key* affect how it is determined whether *item* is 
 ```lisp
  
 
-
-
 (setq slist ’()) *→* NIL 
-
-
 
 (adjoin ’a slist) *→* (A) 
 
-
-
 slist *→* NIL 
-
-
 
 (setq slist (adjoin ’(test-item 1) slist)) *→* ((TEST-ITEM 1)) 
 
-
-
 (adjoin ’(test-item 1) slist) *→* ((TEST-ITEM 1) (TEST-ITEM 1)) 
-
-
 
 (adjoin ’(test-item 1) slist :test ’equal) *→* ((TEST-ITEM 1)) 
 
-
-
 (adjoin ’(new-test-item 1) slist :key #’cadr) *→* ((TEST-ITEM 1)) 
 
-
-
 (adjoin ’(new-test-item 1) slist) *→* ((NEW-TEST-ITEM 1) (TEST-ITEM 1)) 
-
-
 
 
 ```

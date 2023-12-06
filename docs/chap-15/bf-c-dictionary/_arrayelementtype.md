@@ -46,35 +46,19 @@ Returns a *type specifier* which represents the *actual array element type* of t
 ```lisp
  
 
-
-
 (array-element-type (make-array 4)) *→* T 
-
-
 
 (array-element-type (make-array 12 :element-type ’(unsigned-byte 8))) 
 
-
-
 *→ implementation-dependent* 
-
-
 
 (array-element-type (make-array 12 :element-type ’(unsigned-byte 5))) 
 
-
-
 *→ implementation-dependent* 
-
-
 
 (array-element-type (make-array 5 :element-type ’(mod 5))) 
 
-
-
 could be (mod 5), (mod 8), fixnum, t, or any other type of which (mod 5) is a *subtype*. 
-
-
 
 
 ```

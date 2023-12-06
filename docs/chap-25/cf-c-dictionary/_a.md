@@ -38,15 +38,9 @@ The *values* of **/**, **//**, and **///** are updated immediately prior to prin
 ```lisp
  
 
-
-
 (floor 22 7) *→* 3, 1 
 
-
-
 (+ (\* (car /) 7) (cadr /)) *→* 22 
-
-
 
 
 ```
@@ -122,35 +116,19 @@ If no appropriate and relevant result can be produced, **nil** is returned inste
 ```lisp
  
 
-
-
 (lisp-implementation-type) 
-
-
 
 *→* "ACME Lisp" 
 
-
-
 <i><sup>or</sup>→</i> "Joe’s Common Lisp" 
-
-
 
 (lisp-implementation-version) 
 
-
-
 *→* "1.3a" 
-
-
 
 *→* "V2" 
 
-
-
 <i><sup>or</sup>→</i> "Release 17.3, ECO #6" 
-
-
 
 
 ```

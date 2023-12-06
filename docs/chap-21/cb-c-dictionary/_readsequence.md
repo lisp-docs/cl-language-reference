@@ -58,15 +58,9 @@ Destructively modifies *sequence* by replacing the *elements* of *sequence bound
 ```lisp
  
 
-
-
 (defvar \*data\* (make-array 15 :initial-element nil)) 
 
-
-
 (values (read-sequence \*data\* (make-string-input-stream "test string")) \*data\*) *→* 11, #(#\t #\e #\s #\t #\Space #\s #\t #\r #\i #\n #\g NIL NIL NIL NIL) 
-
-
 
 
 ```

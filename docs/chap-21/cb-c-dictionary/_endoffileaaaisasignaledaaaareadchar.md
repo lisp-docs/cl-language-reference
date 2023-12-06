@@ -70,31 +70,17 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is *false*, *eof-value*
 ```lisp
  
 
-
-
 (with-input-from-string (is "0123") 
-
-
 
 (do ((c (read-char is) (read-char is nil ’the-end))) 
 
-
-
 ((not (characterp c))) 
-
-
 
 (format t "&#126;S " c))) 
 
-
-
 ▷ #\0 #\1 #\2 #\3 
 
-
-
 *→* NIL 
-
-
 
 
 ```
@@ -198,83 +184,43 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is *false*, *eof-value*
 ```lisp
  
 
-
-
 ;; This code assumes an implementation in which a newline is not 
-
-
 
 ;; required to terminate input from the console. 
 
-
-
 (defun test-it () 
-
-
 
 (unread-char (read-char)) 
 
-
-
 (list (read-char-no-hang) 
-
-
 
 (read-char-no-hang) 
 
-
-
 (read-char-no-hang))) 
-
-
 
 *→* TEST-IT 
 
-
-
 ;; Implementation A, where a Newline is not required to terminate 
-
-
 
 ;; interactive input on the console. 
 
-
-
 (test-it) 
-
-
 
 ▷ a 
 
-
-
 *→* (#\a NIL NIL) 
-
-
 
 ;; Implementation B, where a Newline is required to terminate 
 
-
-
 ;; interactive input on the console, and where that Newline remains 
-
-
 
 ;; on the input stream. 
 
-
-
 (test-it) 
-
-
 
 ▷ a*←-* 
 
-
-
 *→* (#\a #\Newline NIL) 
-
-
 
 
 ```

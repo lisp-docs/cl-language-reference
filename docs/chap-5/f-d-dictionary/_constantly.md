@@ -34,31 +34,17 @@
 ```lisp
  
 
-
-
 (mapcar (constantly 3) ’(a b c d)) *→* (3 3 3 3) 
-
-
 
 (defmacro with-vars (vars &amp;body forms) 
 
-
-
 ‘((lambda ,vars ,@forms) ,@(mapcar (constantly nil) vars))) 
-
-
 
 *→* WITH-VARS 
 
-
-
 (macroexpand ’(with-vars (a b) (setq a 3 b (\* a a)) (list a b))) 
 
-
-
 *→* ((LAMBDA (A B) (SETQ A 3 B (\* A A)) (LIST A B)) NIL NIL), *true* 
-
-
 
 
 ```

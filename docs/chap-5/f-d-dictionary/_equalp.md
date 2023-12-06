@@ -120,59 +120,31 @@ If two *structures S*<sub>1</sub> and *S*<sub>2</sub> have the same *class* and 
 ```lisp
  
 
-
-
 (equalp ’a ’b) *→ false* 
-
-
 
 (equalp ’a ’a) *→ true* 
 
-
-
 (equalp 3 3) *→ true* 
-
-
 
 (equalp 3 3.0) *→ true* 
 
-
-
 (equalp 3.0 3.0) *→ true* 
-
-
 
 (equalp #c(3 -4) #c(3 -4)) *→ true* 
 
-
-
 (equalp #c(3 -4.0) #c(3 -4)) *→ true* 
-
-
 
 (equalp (cons ’a ’b) (cons ’a ’c)) *→ false* 
 
-
-
 (equalp (cons ’a ’b) (cons ’a ’b)) *→ true* 
-
-
 
 (equalp #\A #\A) *→ true* 
 
-
-
 (equalp #\A #\a) *→ true* 
-
-
 
 (equalp "Foo" "Foo") *→ true* 
 
-
-
 (equalp "Foo" (copy-seq "Foo")) *→ true* 
-
-
 
 Data and Control 
 
@@ -180,55 +152,27 @@ Data and Control
 
 
 
-
-
-
-
-
-
 (equalp "FOO" "foo") *→ true* 
-
-
 
 (setq array1 (make-array 6 :element-type ’integer 
 
-
-
 :initial-contents ’(1 1 1 3 5 7))) 
 
-
-
 *→* #(1 1 1 3 5 7) 
-
-
 
 (setq array2 (make-array 8 :element-type ’integer 
 
-
-
 :initial-contents ’(1 1 1 3 5 7 2 6) 
-
-
 
 :fill-pointer 6)) 
 
-
-
 *→* #(1 1 1 3 5 7) 
-
-
 
 (equalp array1 array2) *→ true* 
 
-
-
 (setq vector1 (vector 1 1 1 3 5 7)) *→* #(1 1 1 3 5 7) 
 
-
-
 (equalp array1 vector1) *→ true* 
-
-
 
 
 ```

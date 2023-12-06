@@ -42,71 +42,37 @@ When the *function* receives its arguments via **&amp;rest**, it is permissible 
 ```lisp
  
 
-
-
 (setq f ’+) *→* + 
-
-
 
 (apply f ’(1 2)) *→* 3 
 
-
-
 (setq f #’-) *→* #<FUNCTION -> 
-
-
 
 (apply f ’(1 2)) *→* -1 
 
-
-
 (apply #’max 3 5 ’(2 7 3)) *→* 7 
-
-
 
 (apply ’cons ’((+ 2 3) 4)) *→* ((+ 2 3) . 4) 
 
-
-
 (apply #’+ ’()) *→* 0 
-
-
 
 (defparameter \*some-list\* ’(a b c)) 
 
-
-
 (defun strange-test (&amp;rest x) (eq x \*some-list\*)) 
-
-
 
 (apply #’strange-test \*some-list\*) *→ implementation-dependent* 
 
-
-
 (defun bad-boy (&amp;rest x) (rplacd x ’y)) 
-
-
 
 (bad-boy ’a ’b ’c) has undefined consequences. 
 
-
-
 (apply #’bad-boy \*some-list\*) has undefined consequences. 
-
-
 
 (defun foo (size &amp;rest keys &amp;key double &amp;allow-other-keys) 
 
-
-
 (let ((v (apply #’make-array size :allow-other-keys t keys))) 
 
-
-
 (if double (concatenate (type-of v) v v) v))) 
-
-
 
 (foo 4 :initial-contents ’(a b c d) :double t) 
 
@@ -116,17 +82,7 @@ When the *function* receives its arguments via **&amp;rest**, it is permissible 
 
 
 
-
-
-
-
-
-
-
-
 *→* #(A B C D A B C D) 
-
-
 
 
 ```

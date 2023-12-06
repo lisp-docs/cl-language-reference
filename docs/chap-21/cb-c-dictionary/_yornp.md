@@ -70,47 +70,25 @@ All input and output are performed using *query I/O*.
 ```lisp
  
 
-
-
 (y-or-n-p "(t or nil) given by") 
-
-
 
 ▷ (t or nil) given by (Y or N) Y 
 
-
-
 *→ true* 
-
-
 
 (yes-or-no-p "a &#126;S message" ’frightening) 
 
-
-
 ▷ a FRIGHTENING message (Yes or No) no 
 
-
-
 *→ false* 
-
-
 
 (y-or-n-p "Produce listing file?") 
 
-
-
 ▷ Produce listing file? 
-
-
 
 ▷ Please respond with Y or N. n 
 
-
-
 *→ false* 
-
-
 
 
 ```

@@ -294,139 +294,71 @@ For details, see Section 6.1 (The LOOP Facility).
 ```lisp
  
 
-
-
 ;; An example of the simple form of LOOP. 
-
-
 
 (defun sqrt-advisor () 
 
-
-
 (loop (format t "&#126;&amp;Number: ") 
-
-
 
 (let ((n (parse-integer (read-line) :junk-allowed t))) 
 
-
-
 (when (not n) (return)) 
-
-
 
 (format t "&#126;&amp;The square root of &#126;D is &#126;D.&#126;%" n (sqrt n))))) 
 
-
-
 *→* SQRT-ADVISOR 
-
-
 
 (sqrt-advisor) 
 
-
-
 ▷ Number: 5*←-* 
-
-
 
 ▷ The square root of 5 is 2.236068. 
 
-
-
 ▷ Number: 4*←-* 
-
-
 
 ▷ The square root of 4 is 2. 
 
-
-
 ▷ Number: done*←-* 
 
-
-
 *→* NIL 
-
-
 
 ;; An example of the extended form of LOOP. 
 
-
-
 (defun square-advisor () 
-
-
 
 (loop as n = (progn (format t "&#126;&amp;Number: ") 
 
-
-
 (parse-integer (read-line) :junk-allowed t)) 
-
-
 
 while n 
 
-
-
 do (format t "&#126;&amp;The square of &#126;D is &#126;D.&#126;%" n (\* n n)))) 
-
-
 
 *→* SQUARE-ADVISOR 
 
-
-
 (square-advisor) 
-
-
 
 ▷ Number: 4*←-* 
 
-
-
 ▷ The square of 4 is 16. 
-
-
 
 ▷ Number: 23*←-* 
 
-
-
 ▷ The square of 23 is 529. 
-
-
 
 ▷ Number: done*←-* 
 
-
-
 *→* NIL 
-
-
 
 ;; Another example of the extended form of LOOP. 
 
-
-
 (loop for n from 1 to 10 
-
-
 
 when (oddp n) 
 
-
-
 collect n) 
 
-
-
 *→* (1 3 5 7 9) 
-
-
 
 
 ```
