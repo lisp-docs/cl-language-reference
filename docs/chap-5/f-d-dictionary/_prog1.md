@@ -186,11 +186,11 @@ temp → 4
 
 
 
-(prog1 *\{form\}*\*) *⌘* (values (multiple-value-prog1 *\{form\}*\*)) 
+(prog1 *\{form\}*\*) ≡ (values (multiple-value-prog1 *\{form\}*\*)) 
 
 
 
-(prog2 *form1 \{form\}*\*) *⌘* (let () *form1* (prog1 *\{form\}*\*)) 
+(prog2 *form1 \{form\}*\*) ≡ (let () *form1* (prog1 *\{form\}*\*)) 
 
 
 

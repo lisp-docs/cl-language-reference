@@ -106,7 +106,7 @@ Operationally, the following relationship is true, although **nth-value** might 
 
 
 
-(nth-value *n form*) *⌘* (nth *n* (multiple-value-list *form*)) 
+(nth-value *n form*) ≡ (nth *n* (multiple-value-list *form*)) 
 
 
 
@@ -430,7 +430,7 @@ Think of this function as being like a zipper."
 
 
 
-*⌘* (block nil (let *variable-list declaration* (tagbody . *body*))) 
+≡ (block nil (let *variable-list declaration* (tagbody . *body*))) 
 
 
 

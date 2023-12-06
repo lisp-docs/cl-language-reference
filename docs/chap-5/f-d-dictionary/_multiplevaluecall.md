@@ -56,7 +56,7 @@ Applies *function* to a *list* of the *objects* collected from groups of *multip
 
 
 
-(+ (floor 5 3) (floor 19 4)) *⌘* (+ 1 4) 
+(+ (floor 5 3) (floor 19 4)) ≡ (+ 1 4) 
 
 
 
@@ -64,7 +64,7 @@ Applies *function* to a *list* of the *objects* collected from groups of *multip
 
 
 
-(multiple-value-call #’+ (floor 5 3) (floor 19 4)) *⌘* (+ 1 2 4 3) 
+(multiple-value-call #’+ (floor 5 3) (floor 19 4)) ≡ (+ 1 2 4 3) 
 
 
 

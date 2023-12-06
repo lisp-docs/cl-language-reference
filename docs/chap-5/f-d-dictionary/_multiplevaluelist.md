@@ -66,7 +66,7 @@ Data and Control
 
 
 
-(multiple-value-list form) *⌘* (multiple-value-call #’list form) 
+(multiple-value-list form) ≡ (multiple-value-call #’list form) 
 
 
 

@@ -174,7 +174,7 @@ to the first value as for **decode-float**:
 
 
 
-(scale-float (float signif f) expon)) *⌘* (abs f) 
+(scale-float (float signif f) expon)) ≡ (abs f) 
 
 
 
@@ -318,7 +318,7 @@ The product of the first result of **decode-float** or **integer-decode-float**,
 
 
 
-*⌘* (abs f) 
+≡ (abs f) 
 
 
 
@@ -338,7 +338,7 @@ and
 
 
 
-*⌘* f 
+≡ f 
 
 
 

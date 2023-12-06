@@ -62,7 +62,7 @@ Returns *true* if *object* is of *type* **float**; otherwise, returns *false*.
 
 
 
-(floatp *object*) *⌘* (typep *object* ’float) 
+(floatp *object*) ≡ (typep *object* ’float) 
 
 
 

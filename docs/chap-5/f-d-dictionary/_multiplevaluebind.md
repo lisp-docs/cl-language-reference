@@ -102,7 +102,7 @@ The *scopes* of the name binding and *declarations* do not include the *values-f
 
 
 
-*⌘* (multiple-value-call #’(lambda (&amp;optional *\{var\}*\* &amp;rest #1=#:ignore) 
+≡ (multiple-value-call #’(lambda (&amp;optional *\{var\}*\* &amp;rest #1=#:ignore) 
 
 
 

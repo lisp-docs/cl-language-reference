@@ -74,7 +74,7 @@ Should signal **type-error** if its argument is not a *proper list*.
 
 
 
-(values-list *list*) *⌘* (apply #’values *list*) 
+(values-list *list*) ≡ (apply #’values *list*) 
 
 
 

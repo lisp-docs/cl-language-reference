@@ -66,11 +66,11 @@ Returns *true* if any of the bits of the byte in *integer* specified by *bytespe
 
 
 
-(ldb-test bytespec n) *⌘* 
+(ldb-test bytespec n) ≡ 
 
 
 
-(not (zerop (ldb bytespec n))) *⌘* 
+(not (zerop (ldb bytespec n))) ≡ 
 
 
 

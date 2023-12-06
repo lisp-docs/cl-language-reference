@@ -86,7 +86,7 @@ a → 13
 
 
 
-(ldb *bs* (mask-field *bs n*)) *⌘* (ldb *bs n*) 
+(ldb *bs* (mask-field *bs n*)) ≡ (ldb *bs n*) 
 
 
 
@@ -94,11 +94,11 @@ a → 13
 
 
 
-*⌘* (and (&gt;= *j p*) (&lt; *j s*) (logbitp *j n*)) 
+≡ (and (&gt;= *j p*) (&lt; *j s*) (logbitp *j n*)) 
 
 
 
-(mask-field *bs n*) *⌘* (logand *n* (dpb -1 *bs* 0)) 
+(mask-field *bs n*) ≡ (logand *n* (dpb -1 *bs* 0)) 
 
 
 
