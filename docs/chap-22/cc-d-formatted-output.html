@@ -9,7 +9,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.ad20780e.css">
-<script src="/cl-language-reference/assets/js/runtime~main.6d0fed48.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.a72e7e73.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.de7ea857.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -538,7 +538,7 @@
 <p><em>≡</em> (funcall (pprint-dispatch object) s object)</p>
 <p><strong>pprint-exit-if-list-exhausted</strong> <em>Local Macro</em></p>
 <p><strong>Syntax:</strong></p>
-<p><strong>pprint-exit-if-list-exhausted</strong> <em>hno argumentsi →</em> <strong>nil</strong></p>
+<p><strong>pprint-exit-if-list-exhausted</strong> ⟨<em>no arguments</em>⟩ →* <strong>nil</strong></p>
 <p><strong>Description:</strong></p>
 <p>Tests whether or not the <em>list</em> passed to the <em>lexically current logical block</em> has been exhausted; see Section 22.2.1.1 (Dynamic Control of the Arrangement of Output). If this <em>list</em> has been reduced to <strong>nil</strong>, <strong>pprint-exit-if-list-exhausted</strong> terminates the execution of the <em>lexically current logical block</em> except for the printing of the suffix. Otherwise <strong>pprint-exit-if-list-exhausted</strong> returns <strong>nil</strong>.</p>
 <p>Whether or not <strong>pprint-exit-if-list-exhausted</strong> is <em>fbound</em> in the <em>global environment</em> is <em>implementation dependent</em>; however, the restrictions on redefinition and <em>shadowing</em> of <strong>pprint-exit-if-list-exhausted</strong> are the same as for <em>symbols</em> in the COMMON-LISP <em>package</em> which are <em>fbound</em> in the <em>global environment</em>. The consequences of attempting to use <strong>pprint-exit-if-list-exhausted</strong> outside of <strong>pprint-logical-block</strong> are undefined.</p>
@@ -671,7 +671,7 @@
 <p>Section 22.3.5.1 (Tilde Underscore: Conditional Newline), Section 22.2.2 (Examples of using the Pretty Printer)</p>
 <p><strong>pprint-pop</strong> <em>Local Macro</em></p>
 <p><strong>Syntax:</strong></p>
-<p><strong>pprint-pop</strong> <em>hno argumentsi → object</em></p>
+<p><strong>pprint-pop</strong> ⟨<em>no arguments</em>⟩ → object*</p>
 <p><strong>Arguments and Values:</strong></p>
 <p><em>object</em>—an <em>element</em> of the <em>list</em> being printed in the <em>lexically current logical block</em> , or <strong>nil</strong>.</p>
 <p><strong>Description:</strong></p>
