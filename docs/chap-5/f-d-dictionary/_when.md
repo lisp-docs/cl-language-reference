@@ -6,11 +6,11 @@
 
 
 
-**when** *test-form \{form\}*\* *→ \{result\}*\* 
+**when** *test-form \{form\}*\* → \{result\}\* 
 
 
 
-**unless** *test-form \{form\}*\* *→ \{result\}*\* 
+**unless** *test-form \{form\}*\* → \{result\}\* 
 
 
 

@@ -112,7 +112,7 @@ Might signal an error of *type* **type-error** if *byte* is not an *integer* of 
 
 
 
-*→ char* 
+→ char 
 
 
 

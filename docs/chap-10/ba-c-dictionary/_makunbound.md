@@ -32,13 +32,13 @@ Makes the *symbol* be *unbound*, regardless of whether it was previously *bound*
 
 (setf (symbol-value ’a) 1) 
 
-(boundp ’a) *→ true* 
+(boundp ’a) → true 
 
 a → 1 
 
 (makunbound ’a) → A 
 
-(boundp ’a) *→ false* 
+(boundp ’a) → false 
 
 
 ```

@@ -74,7 +74,7 @@
 
 (fill-pointer fa) → 3 
 
-(eq (aref fa 2) fable) *→ true* 
+(eq (aref fa 2) fable) → true 
 
 (vector-push-extend #\X 
 

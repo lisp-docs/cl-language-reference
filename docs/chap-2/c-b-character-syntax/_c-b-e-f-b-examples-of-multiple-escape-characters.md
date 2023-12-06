@@ -10,19 +10,19 @@
 
 
 
-(eq ’abc ’ABC) *→ true* 
+(eq ’abc ’ABC) → true 
 
 
 
-(eq ’abc ’|ABC|) *→ true* 
+(eq ’abc ’|ABC|) → true 
 
 
 
-(eq ’abc ’a|B|c) *→ true* 
+(eq ’abc ’a|B|c) → true 
 
 
 
-(eq ’abc ’|abc|) *→ false* 
+(eq ’abc ’|abc|) → false 
 
 
 

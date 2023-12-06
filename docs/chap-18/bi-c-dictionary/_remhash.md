@@ -44,11 +44,11 @@ Removes the entry for *key* in *hash-table*, if any. Returns *true* if there was
 
 (gethash 100 table) → "C", *true* 
 
-(remhash 100 table) *→ true* 
+(remhash 100 table) → true 
 
 (gethash 100 table) → NIL, *false* 
 
-(remhash 100 table) *→ false* 
+(remhash 100 table) → false 
 
 
 ```

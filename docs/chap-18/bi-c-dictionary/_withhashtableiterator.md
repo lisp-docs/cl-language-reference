@@ -6,7 +6,7 @@
 
 
 
-**with-hash-table-iterator** (*name hash-table*) *\{declaration\}*\* *\{form\}*\* *→ \{result\}*\* 
+**with-hash-table-iterator** (*name hash-table*) *\{declaration\}*\* *\{form\}*\* → \{result\}\* 
 
 
 

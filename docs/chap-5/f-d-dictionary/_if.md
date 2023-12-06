@@ -6,7 +6,7 @@
 
 
 
-**if** *test-form then-form* [*else-form*] *→ \{result\}*\* 
+**if** *test-form then-form* [*else-form*] → \{result\}\* 
 
 
 

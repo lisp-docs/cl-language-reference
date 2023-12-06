@@ -96,9 +96,9 @@ list2 (list 1 4 5 b c d "a" "B" "c" "D"))
 
 (nintersection list1 list2) → (1 1 4 B C) 
 
-list1 *→ implementation-dependent* ;*e.g.*, (1 1 4 B C) 
+list1 → implementation-dependent ;*e.g.*, (1 1 4 B C) 
 
-list2 *→ implementation-dependent* ;*e.g.*, (1 4 5 B C D "a" "B" "c" "D") 
+list2 → implementation-dependent ;*e.g.*, (1 4 5 B C D "a" "B" "c" "D") 
 
 (setq list1 (copy-list ’((1 . 2) (2 . 3) (3 . 4) (4 . 5)))) 
 
@@ -110,9 +110,9 @@ list2 *→ implementation-dependent* ;*e.g.*, (1 4 5 B C D "a" "B" "c" "D")
 
 (nintersection list1 list2 :key #’cdr) → ((2 . 3) (3 . 4)) 
 
-list1 *→ implementation-dependent* ;*e.g.*, ((1 . 2) (2 . 3) (3 . 4)) 
+list1 → implementation-dependent ;*e.g.*, ((1 . 2) (2 . 3) (3 . 4)) 
 
-list2 *→ implementation-dependent* ;*e.g.*, ((1 . 3) (2 . 4) (3 . 6) (4 . 8)) 
+list2 → implementation-dependent ;*e.g.*, ((1 . 3) (2 . 4) (3 . 6) (4 . 8)) 
 
 
 ```

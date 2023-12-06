@@ -10,7 +10,7 @@
 
 
 
-*→ merged-pathname* 
+→ merged-pathname 
 
 
 

@@ -14,7 +14,7 @@
 
 
 
-*→ new-method* 
+→ new-method 
 
 
 

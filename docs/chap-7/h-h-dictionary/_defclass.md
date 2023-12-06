@@ -10,7 +10,7 @@
 
 
 
-*→ new-class* 
+→ new-class 
 
 
 

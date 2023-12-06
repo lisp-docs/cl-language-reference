@@ -6,7 +6,7 @@
 
 
 
-**defconstant** *name initial-value* [*documentation*] *→ name* 
+**defconstant** *name initial-value* [*documentation*] → name 
 
 
 
@@ -90,7 +90,7 @@ Data and Control
 
 (documentation ’this-is-a-constant ’variable) → "for a test" 
 
-(constantp ’this-is-a-constant) *→ true* 
+(constantp ’this-is-a-constant) → true 
 
 
 ```

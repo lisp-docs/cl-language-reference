@@ -70,7 +70,7 @@ The consequences are undefined if *filespec* has a *wild* component, or if *file
 
 (delete-file p) → T 
 
-(probe-file "delete-me.text") *→ false* 
+(probe-file "delete-me.text") → false 
 
 (with-open-file (s "delete-me.text" :direction :output :if-exists :error) 
 
@@ -78,7 +78,7 @@ The consequences are undefined if *filespec* has a *wild* component, or if *file
 
 → T 
 
-(probe-file "delete-me.text") *→ false* 
+(probe-file "delete-me.text") → false 
 
 
 ```

@@ -230,7 +230,7 @@ Figure 15–4 indicates the logical operation performed by each of the *function
 
 (setq rba (bit-andc2 ba #\*00110011 t)) → #\*11001000 
 
-(eq rba ba) *→ true* 
+(eq rba ba) → true 
 
 (bit-not (setq ba #\*11101010)) → #\*00010101 
 
@@ -242,7 +242,7 @@ Figure 15–4 indicates the logical operation performed by each of the *function
 
 → #\*00010101 
 
-(equal rba tba) *→ true* 
+(equal rba tba) → true 
 
 (bit-xor #\*1100 #\*1010) → #\*0110 
 

@@ -46,7 +46,7 @@ If it is impossible to determine the user’s home directory on *host*, then **n
 ```lisp
  
 
-(pathnamep (user-homedir-pathname)) *→ true* 
+(pathnamep (user-homedir-pathname)) → true 
 
 
 ```

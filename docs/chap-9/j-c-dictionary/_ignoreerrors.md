@@ -6,7 +6,7 @@
 
 
 
-**ignore-errors** *\{form\}*\* *→ \{result\}*\* 
+**ignore-errors** *\{form\}*\* → \{result\}\* 
 
 
 

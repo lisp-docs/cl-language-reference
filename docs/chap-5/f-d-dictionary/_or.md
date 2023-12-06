@@ -6,7 +6,7 @@
 
 
 
-**or** *\{form\}*\* *→ \{results\}*\* 
+**or** *\{form\}*\* → \{results\}\* 
 
 
 

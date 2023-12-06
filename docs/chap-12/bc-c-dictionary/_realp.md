@@ -34,7 +34,7 @@ Returns *true* if *object* is of *type* **real**; otherwise, returns *false*.
 ```lisp
  
 
-(realp 12) *→ true* 
+(realp 12) → true 
 
 
 
@@ -42,11 +42,11 @@ Returns *true* if *object* is of *type* **real**; otherwise, returns *false*.
 
  
 
-(realp #c(5/3 7.2)) *→ false* 
+(realp #c(5/3 7.2)) → false 
 
-(realp nil) *→ false* 
+(realp nil) → false 
 
-(realp (cons 1 2)) *→ false* 
+(realp (cons 1 2)) → false 
 
 
 ```

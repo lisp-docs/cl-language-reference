@@ -6,7 +6,7 @@
 
 
 
-**defpackage** *defined-package-name* [[ *↓option* ]] *→ package* 
+**defpackage** *defined-package-name* [[ *↓option* ]] → package 
 
 
 

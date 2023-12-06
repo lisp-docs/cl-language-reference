@@ -56,7 +56,7 @@ Causes execution to cease and become dormant for approximately the seconds of re
 
 (&gt;= (- now then) 10)) 
 
-*→ true* 
+→ true 
 
 
 ```

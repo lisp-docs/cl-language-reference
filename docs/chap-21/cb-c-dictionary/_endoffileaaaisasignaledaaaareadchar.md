@@ -128,7 +128,7 @@ The corresponding output function is **write-char**.
 
 
 
-*→ char* 
+→ char 
 
 
 

@@ -166,7 +166,7 @@ For all these functions, elements not removed or deleted occur in the same order
 
 (setq lst3 (delete ’four lst)) → (LIST OF ELEMENTS) 
 
-(equal lst lst2) *→ false* 
+(equal lst lst2) → false 
 
 (remove-if #’oddp ’(1 2 4 1 3 4 5)) → (2 4 4) 
 
@@ -206,7 +206,7 @@ For all these functions, elements not removed or deleted occur in the same order
 
 (delete-if #’evenp tester) → (1 3 5) 
 
-tester *→ implementation-dependent* 
+tester → implementation-dependent 
 
 (setq foo (list ’a ’b ’c)) → (A B C) 
 

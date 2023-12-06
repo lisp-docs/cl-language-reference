@@ -10,7 +10,7 @@
 
 
 
-*→ \{result\}*\* 
+→ \{result\}\* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*→ \{result\}*\* 
+→ \{result\}\* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*→ \{result\}*\* 
+→ \{result\}\* 
 
 
 
@@ -222,7 +222,7 @@ after macro expansion. The occurrences of x and flag legitimately refer to the p
 
 (eq (funcall #’dummy-function) (funcall ’dummy-function)) 
 
-*→ true* 
+→ true 
 
 (flet ((dummy-function () ’shadow)) 
 
@@ -230,7 +230,7 @@ after macro expansion. The occurrences of x and flag legitimately refer to the p
 
 (funcall ’dummy-function))) 
 
-*→ false* 
+→ false 
 
 (defun recursive-times (k n) 
 

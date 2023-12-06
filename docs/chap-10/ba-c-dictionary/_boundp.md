@@ -48,15 +48,15 @@ Returns *true* if *symbol* is *bound*; otherwise, returns *false*.
 
 (setq x 1) → 1 
 
-(boundp ’x) *→ true* 
+(boundp ’x) → true 
 
 (makunbound ’x) → X 
 
-(boundp ’x) *→ false* 
+(boundp ’x) → false 
 
-(let ((x 2)) (boundp ’x)) *→ false* 
+(let ((x 2)) (boundp ’x)) → false 
 
-(let ((x 2)) (declare (special x)) (boundp ’x)) *→ true* 
+(let ((x 2)) (declare (special x)) (boundp ’x)) → true 
 
 
 ```

@@ -22,7 +22,7 @@
 
 
 
-*→ generic-function* 
+→ generic-function 
 
 
 

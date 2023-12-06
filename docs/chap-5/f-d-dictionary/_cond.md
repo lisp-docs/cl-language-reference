@@ -6,7 +6,7 @@
 
 
 
-**cond** *\{↓clause\}*\* *→ \{result\}*\* 
+**cond** *\{↓clause\}*\* → \{result\}\* 
 
 
 

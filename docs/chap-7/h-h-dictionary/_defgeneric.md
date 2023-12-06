@@ -10,7 +10,7 @@
 
 
 
-*→ new-generic* 
+→ new-generic 
 
 
 

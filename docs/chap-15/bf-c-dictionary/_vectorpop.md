@@ -44,7 +44,7 @@ Decreases the *fill pointer* of *vector* by one, and retrieves the *element* of 
 
 (fill-pointer fa) → 3 
 
-(eq (vector-pop fa) fable) *→ true* 
+(eq (vector-pop fa) fable) → true 
 
 (vector-pop fa) → SISYPHUS 
 

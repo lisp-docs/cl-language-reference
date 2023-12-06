@@ -62,7 +62,7 @@ b. the *type* returned does not involve and, eql, member, not, or, satisfies, or
 
 
 
-(subtypep (type-of *object*) (class-of *object*)) *→ true*, *true* 
+(subtypep (type-of *object*) (class-of *object*)) → true, *true* 
 
 
 
@@ -102,7 +102,7 @@ b. the *type* returned does not involve and, eql, member, not, or, satisfies, or
 
 <i><sup>or</sup>→</i> (STRING 3) 
 
-(subtypep (type-of "abc") ’string) *→ true*, *true* 
+(subtypep (type-of "abc") ’string) → true, *true* 
 
 (type-of (expt 2 40)) 
 
@@ -116,7 +116,7 @@ b. the *type* returned does not involve and, eql, member, not, or, satisfies, or
 
 <i><sup>or</sup>→</i> FIXNUM 
 
-(subtypep (type-of 112312) ’integer) *→ true*, *true* 
+(subtypep (type-of 112312) ’integer) → true, *true* 
 
 (defvar \*foo\* (make-array 5 :element-type t)) → \*FOO\* 
 

@@ -72,7 +72,7 @@
 
 (get-macro-character #\\{) → NIL, *false* 
 
-(not (get-macro-character #\;)) *→ false* 
+(not (get-macro-character #\;)) → false 
 
 The following is a possible definition for the *single-quote reader macro* in *standard syntax* : 
 

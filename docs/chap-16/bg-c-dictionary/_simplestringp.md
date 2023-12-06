@@ -34,13 +34,13 @@ Returns *true* if *object* is of *type* **simple-string**; otherwise, returns *f
 ```lisp
  
 
-(simple-string-p "aaaaaa") *→ true* 
+(simple-string-p "aaaaaa") → true 
 
 (simple-string-p (make-array 6 
 
 :element-type ’character 
 
-:fill-pointer t)) *→ false* 
+:fill-pointer t)) → false 
 
 
 

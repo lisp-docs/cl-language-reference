@@ -44,11 +44,11 @@ It is *implementation-dependent* whether the *string* that becomes the *new-symb
 
 (symbol-name temp-symbol) → "temp" 
 
-(eq (symbol-name temp-symbol) temp-string) *→ implementation-dependent* 
+(eq (symbol-name temp-symbol) temp-string) → implementation-dependent 
 
 (find-symbol "temp") → NIL, NIL 
 
-(eq (make-symbol temp-string) (make-symbol temp-string)) *→ false* 
+(eq (make-symbol temp-string) (make-symbol temp-string)) → false 
 
 
 ```

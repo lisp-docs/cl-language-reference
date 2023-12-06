@@ -6,11 +6,11 @@
 
 
 
-**incf** *place* [*delta-form*] *→ new-value* 
+**incf** *place* [*delta-form*] → new-value 
 
 
 
-**decf** *place* [*delta-form*] *→ new-value* 
+**decf** *place* [*delta-form*] → new-value 
 
 
 

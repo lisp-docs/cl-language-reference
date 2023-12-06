@@ -1422,7 +1422,7 @@ This signifies that the corresponding object must be a cons cell whose *car* mat
 
 
 
-*→ object* 
+→ object 
 
 
 
@@ -1700,7 +1700,7 @@ The *functions* **prin1** and **print** do not bind **\*print-readably\***.
 
 
 
-*→ string* 
+→ string 
 
 
 
@@ -2856,7 +2856,7 @@ When the *value* of **\*print-lines\*** is other than **nil**, it is a limit on 
 
 
 
-*→ hno valuesi* 
+→ hno valuesi 
 
 
 

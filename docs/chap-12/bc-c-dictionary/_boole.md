@@ -238,7 +238,7 @@ boole-c2 boole-orc2 boole-nand boole-set))
 
 
 
-*→ implementation-dependent* 
+→ implementation-dependent 
 
 
 

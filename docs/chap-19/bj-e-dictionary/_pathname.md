@@ -110,13 +110,13 @@ If the *pathspec designator* is a *file stream* created by opening a *logical pa
 
 <i><sup>or</sup>→</i> #S(PATHNAME :HOST "BELGIAN-CHOCOLATE" :NAME "test") 
 
-(pathnamep p1) *→ true* 
+(pathnamep p1) → true 
 
-(eq p1 (pathname p1)) *→ true* 
+(eq p1 (pathname p1)) → true 
 
 (eq p1 p2) 
 
-*→ true* 
+→ true 
 
 <i><sup>or</sup>→ false</i> 
 

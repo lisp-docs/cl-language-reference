@@ -6,7 +6,7 @@
 
 
 
-**define-compiler-macro** *name lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* *→ name* 
+**define-compiler-macro** *name lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* → name 
 
 
 

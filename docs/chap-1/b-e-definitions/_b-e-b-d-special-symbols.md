@@ -102,7 +102,7 @@ indicates that **nil**, "LOWERCASE-a", "Small-A", "LA01" are among the possible 
 
 
 
-(char-name #\a) *→ implementation-dependent* 
+(char-name #\a) → implementation-dependent 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**allocate-instance** *class* &amp;rest *initargs* &amp;key &amp;allow-other-keys *→ new-instance* 
+**allocate-instance** *class* &amp;rest *initargs* &amp;key &amp;allow-other-keys → new-instance 
 
 
 

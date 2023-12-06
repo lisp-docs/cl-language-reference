@@ -10,7 +10,7 @@ The “simple” **loop** *form*:
 
 
 
-**loop** *\{compound-form\}*\* *→ \{result\}*\* 
+**loop** *\{compound-form\}*\* → \{result\}\* 
 
 
 
@@ -18,7 +18,7 @@ The “extended” **loop** *form*:
 
 
 
-**loop** [*↓name-clause*] *\{↓variable-clause\}*\* *\{↓main-clause\}*\* *→ \{result\}*\* 
+**loop** [*↓name-clause*] *\{↓variable-clause\}*\* *\{↓main-clause\}*\* → \{result\}\* 
 
 
 

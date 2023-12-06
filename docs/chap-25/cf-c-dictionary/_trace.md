@@ -6,11 +6,11 @@
 
 
 
-**trace** *\{function-name\}*\* *→ trace-result* 
+**trace** *\{function-name\}*\* → trace-result 
 
 
 
-**untrace** *\{function-name\}*\* *→ untrace-result* 
+**untrace** *\{function-name\}*\* → untrace-result 
 
 
 

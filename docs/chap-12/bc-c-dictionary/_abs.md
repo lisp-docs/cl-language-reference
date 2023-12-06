@@ -60,7 +60,7 @@ If *number* is a *complex* , the result is a positive *real* with the same magni
 
 (abs #c(3/5 4/5)) → 1 or approximately 1.0 
 
-(eql (abs -0.0) -0.0) *→ true* 
+(eql (abs -0.0) -0.0) → true 
 
 
 ```

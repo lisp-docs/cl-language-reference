@@ -6,7 +6,7 @@
 
 
 
-**catch** *tag \{form\}*\* *→ \{result\}*\* 
+**catch** *tag \{form\}*\* → \{result\}\* 
 
 
 

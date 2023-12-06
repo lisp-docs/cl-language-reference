@@ -14,7 +14,7 @@
 
 
 
-*→ output-truename, warnings-p, failure-p* 
+→ output-truename, warnings-p, failure-p 
 
 
 

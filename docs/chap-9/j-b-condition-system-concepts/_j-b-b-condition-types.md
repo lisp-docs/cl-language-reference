@@ -22,7 +22,7 @@ All *condition* types are *subtypes* of *type* **condition**. That is,
 
 
 
-(typep *c* ’condition) *→ true* 
+(typep *c* ’condition) → true 
 
 
 

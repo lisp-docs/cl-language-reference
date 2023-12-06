@@ -34,7 +34,7 @@
 
 
 
-*→ new-array* 
+→ new-array 
 
 
 

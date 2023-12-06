@@ -112,7 +112,7 @@ For **nsubst**, **nsubst-if**, and **nsubst-if-not** the original *tree* is modi
 
 (subst "five" 5 tree1) → (1 (1 2) (1 2 3) (1 2 3 4)) 
 
-(eq tree1 (subst "five" 5 tree1)) *→ implementation-dependent* 
+(eq tree1 (subst "five" 5 tree1)) → implementation-dependent 
 
 (subst ’tempest ’hurricane 
 

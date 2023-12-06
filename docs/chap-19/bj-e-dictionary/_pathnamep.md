@@ -36,7 +36,7 @@ Returns *true* if *object* is of *type* **pathname**; otherwise, returns *false*
 
 (setq q "test") → "test" 
 
-(pathnamep q) *→ false* 
+(pathnamep q) → false 
 
 (setq q (pathname "test")) 
 
@@ -44,13 +44,13 @@ Returns *true* if *object* is of *type* **pathname**; otherwise, returns *false*
 
 :VERSION NIL) 
 
-(pathnamep q) *→ true* 
+(pathnamep q) → true 
 
 (setq q (logical-pathname "SYS:SITE;FOO.SYSTEM")) 
 
 → #P"SYS:SITE;FOO.SYSTEM" 
 
-(pathnamep q) *→ true* 
+(pathnamep q) → true 
 
 
 ```

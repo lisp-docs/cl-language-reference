@@ -6,15 +6,15 @@
 
 
 
-**case** *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] *→ \{result\}*\* 
+**case** *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] → \{result\}\* 
 
 
 
-**ccase** *keyplace \{↓normal-clause\}*\* *→ \{result\}*\* 
+**ccase** *keyplace \{↓normal-clause\}*\* → \{result\}\* 
 
 
 
-**ecase** *keyform \{↓normal-clause\}*\* *→ \{result\}*\* 
+**ecase** *keyform \{↓normal-clause\}*\* → \{result\}\* 
 
 
 

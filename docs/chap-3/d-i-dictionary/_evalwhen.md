@@ -6,7 +6,7 @@
 
 
 
-**eval-when** (*\{situation\}*\*) *\{form\}*\* *→ \{result\}*\* 
+**eval-when** (*\{situation\}*\*) *\{form\}*\* → \{result\}\* 
 
 
 

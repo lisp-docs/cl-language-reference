@@ -80,11 +80,11 @@ The *tertiary value*, *failure-p*, is *false* if no *conditions* of *type* **err
 
 (defun foo () "bar") → FOO 
 
-(compiled-function-p #’foo) *→ implementation-dependent* 
+(compiled-function-p #’foo) → implementation-dependent 
 
 (compile ’foo) → FOO 
 
-(compiled-function-p #’foo) *→ true* 
+(compiled-function-p #’foo) → true 
 
 (setf (symbol-function ’foo) 
 

@@ -10,19 +10,19 @@ Conforming code may run in all conforming implementations, but might have allowa
 
 
 
-(evenp most-positive-fixnum) *→ implementation-dependent* 
+(evenp most-positive-fixnum) → implementation-dependent 
 
 
 
-(random) *→ implementation-dependent* 
+(random) → implementation-dependent 
 
 
 
-(&gt; lambda-parameters-limit 93) *→ implementation-dependent* 
+(&gt; lambda-parameters-limit 93) → implementation-dependent 
 
 
 
-(char-name #\A) *→ implementation-dependent* 
+(char-name #\A) → implementation-dependent 
 
 
 

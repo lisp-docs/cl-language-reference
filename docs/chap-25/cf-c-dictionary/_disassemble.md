@@ -44,7 +44,7 @@ If the *fn designator* is a *function name*, the *function* that it *names* is d
 
 (progn (disassemble ’f) 
 
-(symbol-function ’f))) *→ true* 
+(symbol-function ’f))) → true 
 
 
 ```

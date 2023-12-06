@@ -10,7 +10,7 @@
 
 
 
-*→ line, missing-newline-p* 
+→ line, missing-newline-p 
 
 
 

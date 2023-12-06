@@ -18,7 +18,7 @@
 
 
 
-*→ position* 
+→ position 
 
 
 

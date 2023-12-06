@@ -6,7 +6,7 @@
 
 
 
-**apply** *function* &amp;rest *args*<sup>+</sup> *→ \{result\}*\* 
+**apply** *function* &amp;rest *args*<sup>+</sup> → \{result\}\* 
 
 
 
@@ -60,7 +60,7 @@ When the *function* receives its arguments via **&amp;rest**, it is permissible 
 
 (defun strange-test (&amp;rest x) (eq x \*some-list\*)) 
 
-(apply #’strange-test \*some-list\*) *→ implementation-dependent* 
+(apply #’strange-test \*some-list\*) → implementation-dependent 
 
 (defun bad-boy (&amp;rest x) (rplacd x ’y)) 
 

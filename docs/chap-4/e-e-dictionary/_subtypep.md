@@ -92,7 +92,7 @@ Therefore,
 
 
 
-(subtypep ’(array T1) ’(array T2)) *→ true* 
+(subtypep ’(array T1) ’(array T2)) → true 
 
 
 
@@ -124,7 +124,7 @@ For all type-specifiers *T1* and *T2* other than \*,
 
 
 
-(subtypep ’(complex T1) ’(complex T2)) *→ true*, *true* 
+(subtypep ’(complex T1) ’(complex T2)) → true, *true* 
 
 
 
@@ -168,27 +168,27 @@ returns *true* only in implementations that do not have a specialized *array* re
 ```lisp
  
 
-(subtypep ’compiled-function ’function) *→ true*, *true* 
+(subtypep ’compiled-function ’function) → true, *true* 
 
-(subtypep ’null ’list) *→ true*, *true* 
+(subtypep ’null ’list) → true, *true* 
 
-(subtypep ’null ’symbol) *→ true*, *true* 
+(subtypep ’null ’symbol) → true, *true* 
 
-(subtypep ’integer ’string) *→ false*, *true* 
+(subtypep ’integer ’string) → false, *true* 
 
-(subtypep ’(satisfies dummy) nil) *→ false*, *implementation-dependent* 
+(subtypep ’(satisfies dummy) nil) → false, *implementation-dependent* 
 
-(subtypep ’(integer 1 3) ’(integer 1 4)) *→ true*, *true* 
+(subtypep ’(integer 1 3) ’(integer 1 4)) → true, *true* 
 
-(subtypep ’(integer (0) (0)) ’nil) *→ true*, *true* 
+(subtypep ’(integer (0) (0)) ’nil) → true, *true* 
 
-(subtypep ’nil ’(integer (0) (0))) *→ true*, *true* 
+(subtypep ’nil ’(integer (0) (0))) → true, *true* 
 
-(subtypep ’(integer (0) (0)) ’(member)) *→ true*, *true* ;or *false*, *false* 
+(subtypep ’(integer (0) (0)) ’(member)) → true, *true* ;or *false*, *false* 
 
-(subtypep ’(member) ’nil) *→ true*, *true* ;or *false*, *false* 
+(subtypep ’(member) ’nil) → true, *true* ;or *false*, *false* 
 
-(subtypep ’nil ’(member)) *→ true*, *true* ;or *false*, *false* 
+(subtypep ’nil ’(member)) → true, *true* ;or *false*, *false* 
 
 Let <aet-x> and <aet-y> be two distinct *type specifiers* that do not always refer to the same sets of *objects* in a given implementation, but for which **make-array**, will return an *object* of the same *array type*. 
 
@@ -198,7 +198,7 @@ Thus, in each case,
 
 (array-element-type (make-array 0 :element-type ’<aet-y>))) 
 
-*→ true*, *true*  
+→ true, *true*  
 
 
 
@@ -206,13 +206,13 @@ Thus, in each case,
 
 (array-element-type (make-array 0 :element-type ’<aet-x>))) 
 
-*→ true*, *true* 
+→ true, *true* 
 
 If (array <aet-x>) and (array <aet-y>) are different names for exactly the same set of *objects*, these names should always refer to the same sets of *objects*. That implies that the following set of tests are also true: 
 
-(subtypep ’(array <aet-x>) ’(array <aet-y>)) *→ true*, *true* 
+(subtypep ’(array <aet-x>) ’(array <aet-y>)) → true, *true* 
 
-(subtypep ’(array <aet-y>) ’(array <aet-x>)) *→ true*, *true* 
+(subtypep ’(array <aet-y>) ’(array <aet-x>)) → true, *true* 
 
 
 ```

@@ -6,11 +6,11 @@
 
 
 
-**typecase** *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] *→ \{result\}*\* 
+**typecase** *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] → \{result\}\* 
 
 
 
-**ctypecase** *keyplace \{↓normal-clause\}*\* *→ \{result\}*\* 
+**ctypecase** *keyplace \{↓normal-clause\}*\* → \{result\}\* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-**etypecase** *keyform \{↓normal-clause\}*\* *→ \{result\}*\* 
+**etypecase** *keyform \{↓normal-clause\}*\* → \{result\}\* 
 
 
 

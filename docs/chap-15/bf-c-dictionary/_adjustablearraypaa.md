@@ -48,9 +48,9 @@ Returns true if and only if **adjust-array** could return a *value* which is *id
 
 :adjustable t 
 
-:fill-pointer 3)) *→ true* 
+:fill-pointer 3)) → true 
 
-(adjustable-array-p (make-array 4)) *→ implementation-dependent* 
+(adjustable-array-p (make-array 4)) → implementation-dependent 
 
 
 ```

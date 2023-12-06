@@ -54,17 +54,17 @@ If *copy-properties* is *false*, the *new-symbol* is neither *bound* nor *fbound
 
 (setq fred-clone-2b (copy-symbol fred t)) → #:FRED-SMITH 
 
-(eq fred fred-clone-1a) *→ false* 
+(eq fred fred-clone-1a) → false 
 
-(eq fred-clone-1a fred-clone-1b) *→ false* 
+(eq fred-clone-1a fred-clone-1b) → false 
 
-(eq fred-clone-2a fred-clone-2b) *→ false* 
+(eq fred-clone-2a fred-clone-2b) → false 
 
-(eq fred-clone-1a fred-clone-2a) *→ false* 
+(eq fred-clone-1a fred-clone-2a) → false 
 
 (symbol-value fred) → 3 
 
-(boundp fred-clone-1a) *→ false* 
+(boundp fred-clone-1a) → false 
 
 (symbol-value fred-clone-2a) → 3 
 
@@ -76,15 +76,15 @@ If *copy-properties* is *false*, the *new-symbol* is neither *bound* nor *fbound
 
 (symbol-value fred-clone-2b) → 3 
 
-(boundp fred-clone-1a) *→ false* 
+(boundp fred-clone-1a) → false 
 
 (setf (symbol-function fred) #’(lambda (x) x)) → #<FUNCTION anonymous> 
 
-(fboundp fred) *→ true* 
+(fboundp fred) → true 
 
-(fboundp fred-clone-1a) *→ false* 
+(fboundp fred-clone-1a) → false 
 
-(fboundp fred-clone-2a) *→ false* 
+(fboundp fred-clone-2a) → false 
 
 
 

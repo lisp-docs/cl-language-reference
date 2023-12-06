@@ -56,7 +56,7 @@ Within this document only, **nil** is also sometimes notated as *false* to empha
 
 
 
-(not nil) *→ true* ;Emphasize use as Boolean false 
+(not nil) → true ;Emphasize use as Boolean false 
 
 
 

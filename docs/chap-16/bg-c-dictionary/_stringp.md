@@ -46,9 +46,9 @@ Returns *true* if *object* is of *type* **string**; otherwise, returns *false*.
 ```lisp
  
 
-(stringp "aaaaaa") *→ true* 
+(stringp "aaaaaa") → true 
 
-(stringp #\a) *→ false* 
+(stringp #\a) → false 
 
 
 ```

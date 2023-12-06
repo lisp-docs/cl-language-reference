@@ -10,7 +10,7 @@
 
 
 
-*→ new-place-value* 
+→ new-place-value 
 
 
 

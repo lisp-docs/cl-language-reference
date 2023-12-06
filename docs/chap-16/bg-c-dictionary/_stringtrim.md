@@ -286,17 +286,17 @@ The comparison has one of the following results:
 ```lisp
  
 
-(string= "foo" "foo") *→ true* 
+(string= "foo" "foo") → true 
 
-(string= "foo" "Foo") *→ false* 
+(string= "foo" "Foo") → false 
 
-(string= "foo" "bar") *→ false* 
+(string= "foo" "bar") → false 
 
-(string= "together" "frog" :start1 1 :end1 3 :start2 2) *→ true* 
+(string= "together" "frog" :start1 1 :end1 3 :start2 2) → true 
 
-(string-equal "foo" "Foo") *→ true* 
+(string-equal "foo" "Foo") → true 
 
-(string= "abcd" "01234abcd9012" :start2 5 :end2 9) *→ true* 
+(string= "abcd" "01234abcd9012" :start2 5 :end2 9) → true 
 
 (string&lt; "aaaa" "aaab") → 3 
 
@@ -308,7 +308,7 @@ The comparison has one of the following results:
 
 :start2 2 :end2 6) → 6 
 
-(string-not-equal "AAAA" "aaaA") *→ false* 
+(string-not-equal "AAAA" "aaaA") → false 
 
 
 ```

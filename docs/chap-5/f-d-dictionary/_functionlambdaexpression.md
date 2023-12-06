@@ -10,7 +10,7 @@
 
 
 
-*→ lambda-expression, closure-p, name* 
+→ lambda-expression, closure-p, name 
 
 
 

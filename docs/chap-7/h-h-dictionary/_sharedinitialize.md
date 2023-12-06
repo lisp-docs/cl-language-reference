@@ -6,7 +6,7 @@
 
 
 
-**shared-initialize** *instance slot-names* &amp;rest *initargs* &amp;key &amp;allow-other-keys *→ instance* 
+**shared-initialize** *instance slot-names* &amp;rest *initargs* &amp;key &amp;allow-other-keys → instance 
 
 
 

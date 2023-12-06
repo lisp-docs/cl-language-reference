@@ -10,7 +10,7 @@
 
 
 
-*→ pathname* 
+→ pathname 
 
 
 

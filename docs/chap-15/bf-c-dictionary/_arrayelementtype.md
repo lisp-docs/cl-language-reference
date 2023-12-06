@@ -50,11 +50,11 @@ Returns a *type specifier* which represents the *actual array element type* of t
 
 (array-element-type (make-array 12 :element-type ’(unsigned-byte 8))) 
 
-*→ implementation-dependent* 
+→ implementation-dependent 
 
 (array-element-type (make-array 12 :element-type ’(unsigned-byte 5))) 
 
-*→ implementation-dependent* 
+→ implementation-dependent 
 
 (array-element-type (make-array 5 :element-type ’(mod 5))) 
 

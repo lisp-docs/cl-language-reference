@@ -10,7 +10,7 @@
 
 
 
-*→ second, minute, hour, date, month, year, day, daylight-p, zone* 
+→ second, minute, hour, date, month, year, day, daylight-p, zone 
 
 
 
@@ -114,7 +114,7 @@ If *time-zone* is not supplied, it defaults to the current time zone adjusted fo
 
 
 
-*→ universal-time* 
+→ universal-time 
 
 
 

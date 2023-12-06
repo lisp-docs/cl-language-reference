@@ -6,7 +6,7 @@
 
 
 
-**lambda** *lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* *→ function* 
+**lambda** *lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* → function 
 
 
 

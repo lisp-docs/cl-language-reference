@@ -6,7 +6,7 @@
 
 
 
-**directory** *pathspec* &amp;key *→ pathnames* 
+**directory** *pathspec* &amp;key → pathnames 
 
 
 

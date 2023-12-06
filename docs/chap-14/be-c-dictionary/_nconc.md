@@ -38,7 +38,7 @@ Returns a *list* that is the concatenation of *lists*. If no *lists* are supplie
 
 
 
-(nconc *list*) *→ list* 
+(nconc *list*) → list 
 
 
 

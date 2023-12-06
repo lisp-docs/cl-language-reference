@@ -10,7 +10,7 @@
 
 
 
-*→ \{result\}*\* 
+→ \{result\}\* 
 
 
 
@@ -90,11 +90,11 @@ If the result of evaluating the *expression* does not match the destructuring pa
 
 
 
-**let** (*\{var |* (*var* [*init-form*])*\}*\*) *\{declaration\}*\* *\{form\}*\* *→ \{result\}*\* 
+**let** (*\{var |* (*var* [*init-form*])*\}*\*) *\{declaration\}*\* *\{form\}*\* → \{result\}\* 
 
 
 
-**let\*** (*\{var |* (*var* [*init-form*])*\}*\*) *\{declaration\}*\* *\{form\}*\* *→ \{result\}*\* 
+**let\*** (*\{var |* (*var* [*init-form*])*\}*\*) *\{declaration\}*\* *\{form\}*\* → \{result\}\* 
 
 
 

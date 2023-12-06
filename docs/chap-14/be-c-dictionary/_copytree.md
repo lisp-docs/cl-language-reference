@@ -62,13 +62,13 @@ If *tree* is not a *cons*, it is returned; otherwise, the result is a new *cons*
 
 (setq copy-as-tree (copy-tree object)) 
 
-(eq object object-too) *→ true* 
+(eq object object-too) → true 
 
-(eq copy-as-tree object) *→ false* 
+(eq copy-as-tree object) → false 
 
-(eql copy-as-tree object) *→ false* 
+(eql copy-as-tree object) → false 
 
-(equal copy-as-tree object) *→ true* 
+(equal copy-as-tree object) → true 
 
 (setf (first (cdr (second object))) "a" 
 

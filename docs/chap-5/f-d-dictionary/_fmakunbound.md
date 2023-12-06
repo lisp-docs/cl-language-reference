@@ -36,7 +36,7 @@ Removes the *function* or *macro* definition, if any, of *name* in the *global e
 
 (defun add-some (x) (+ x 19)) → ADD-SOME 
 
-(fboundp ’add-some) *→ true* 
+(fboundp ’add-some) → true 
 
 (flet ((add-some (x) (+ x 37))) 
 
@@ -44,7 +44,7 @@ Removes the *function* or *macro* definition, if any, of *name* in the *global e
 
 (add-some 1)) → 38 
 
-(fboundp ’add-some) *→ false* 
+(fboundp ’add-some) → false 
 
 
 ```

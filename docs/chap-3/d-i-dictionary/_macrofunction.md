@@ -64,7 +64,7 @@ It is possible for both **macro-function** and **special-operator-p** to return 
 
 (defmacro macfun (x) ’(macro-function ’macfun)) → MACFUN 
 
-(not (macro-function ’macfun)) *→ false* 
+(not (macro-function ’macfun)) → false 
 
 (macrolet ((foo (&amp;environment env) 
 

@@ -34,11 +34,11 @@ Returns *true* if *object* is of *type* **rational**; otherwise, returns *false*
 ```lisp
  
 
-(rationalp 12) *→ true* 
+(rationalp 12) → true 
 
-(rationalp 6/5) *→ true* 
+(rationalp 6/5) → true 
 
-(rationalp 1.212) *→ false* 
+(rationalp 1.212) → false 
 
 
 ```

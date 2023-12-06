@@ -41,7 +41,7 @@
 
 
 
-*→ structure-name* 
+→ structure-name 
 
 
 
@@ -645,7 +645,7 @@ If no :type option is involved, then the structure name of the including structu
 
 
 
-(typep (make-astronaut) ’person) *→ true* 
+(typep (make-astronaut) ’person) → true 
 
 
 
@@ -1465,7 +1465,7 @@ population
 
 
 
-(town-p town1) *→ true* 
+(town-p town1) → true 
 
 
 
@@ -1505,7 +1505,7 @@ population
 
 
 
-(= (town-population town1) (town-population town2)) *→ true* 
+(= (town-population town1) (town-population town2)) → true 
 
 
 
@@ -1597,7 +1597,7 @@ nose-color frizzy-hair-p polkadots) → klown
 
 
 
-(fboundp ’make-up-klown) *→ true* 
+(fboundp ’make-up-klown) → true 
 
 
 
@@ -1753,7 +1753,7 @@ a b c d e f) → DFS-BOA
 
 
 
-(eq (dfs-boa-c x) ’cc) *→ true* 
+(eq (dfs-boa-c x) ’cc) → true 
 
 
 

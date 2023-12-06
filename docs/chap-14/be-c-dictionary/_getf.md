@@ -88,7 +88,7 @@
 
 (setf (getf x ’prop1) ’val1) → VAL1 
 
-(eq (getf x ’prop1) ’val1) *→ true* 
+(eq (getf x ’prop1) ’val1) → true 
 
 (getf x ’prop1) → VAL1 
 
@@ -102,7 +102,7 @@ x → (PROP1 VAL1)
 
 (setq bar (cddr foo)) → (C D E F) 
 
-(remf foo ’c) *→ true* 
+(remf foo ’c) → true 
 
 foo → (A B E F) 
 

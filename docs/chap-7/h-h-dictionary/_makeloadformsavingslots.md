@@ -10,7 +10,7 @@
 
 
 
-*→ creation-form, initialization-form* 
+→ creation-form, initialization-form 
 
 
 

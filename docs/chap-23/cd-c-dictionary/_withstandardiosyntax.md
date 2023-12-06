@@ -6,7 +6,7 @@
 
 
 
-**with-standard-io-syntax** *\{form\}*\* *→ \{result\}*\* 
+**with-standard-io-syntax** *\{form\}*\* → \{result\}\* 
 
 
 
@@ -414,7 +414,7 @@ The *value* of **\*readtable\*** is called the *current readtable*. It controls 
 ```lisp
  
 
-(readtablep \*readtable\*) *→ true* 
+(readtablep \*readtable\*) → true 
 
 
 

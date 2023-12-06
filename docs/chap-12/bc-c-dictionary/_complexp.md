@@ -34,9 +34,9 @@ Returns *true* if *object* is of *type* **complex**; otherwise, returns *false*.
 ```lisp
  
 
-(complexp 1.2d2) *→ false* 
+(complexp 1.2d2) → false 
 
-(complexp #c(5/3 7.2)) *→ true* 
+(complexp #c(5/3 7.2)) → true 
 
 
 ```

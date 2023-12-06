@@ -6,7 +6,7 @@
 
 
 
-**update-instance-for-different-class** *previous current* &amp;rest *initargs* &amp;key &amp;allow-other-keys *→ implementation-dependent* 
+**update-instance-for-different-class** *previous current* &amp;rest *initargs* &amp;key &amp;allow-other-keys → implementation-dependent 
 
 
 

@@ -92,11 +92,11 @@ After this operation completes, the *home package* of any *symbol* whose *home p
 
 (find-symbol "BAR" \*baz-package\*) → BAR:BAR, :INHERITED 
 
-(packagep \*foo-package\*) *→ true* 
+(packagep \*foo-package\*) → true 
 
-(packagep \*bar-package\*) *→ true* 
+(packagep \*bar-package\*) → true 
 
-(packagep \*baz-package\*) *→ true* 
+(packagep \*baz-package\*) → true 
 
 (package-name \*foo-package\*) → "FOO" 
 

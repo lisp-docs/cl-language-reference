@@ -6,7 +6,7 @@
 
 
 
-**setq** *\{↓pair\}*\* *→ result* 
+**setq** *\{↓pair\}*\* → result 
 
 
 

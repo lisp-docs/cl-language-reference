@@ -38,11 +38,11 @@ Returns *true* if *object* is of *type* **bit-vector**; otherwise, returns *fals
 
 :element-type ’bit 
 
-:fill-pointer t)) *→ true* 
+:fill-pointer t)) → true 
 
-(bit-vector-p #\*) *→ true* 
+(bit-vector-p #\*) → true 
 
-(bit-vector-p (make-array 6)) *→ false* 
+(bit-vector-p (make-array 6)) → false 
 
 
 ```

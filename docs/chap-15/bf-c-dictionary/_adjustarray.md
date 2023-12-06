@@ -30,7 +30,7 @@
 
 
 
-*→ adjusted-array* 
+→ adjusted-array 
 
 
 

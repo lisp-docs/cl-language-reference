@@ -6,7 +6,7 @@
 
 
 
-**handler-bind** (*\{↓binding\}*\*) *\{form\}*\* *→ \{result\}*\* 
+**handler-bind** (*\{↓binding\}*\*) *\{form\}*\* → \{result\}\* 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**deftype** *name lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* *→ name* 
+**deftype** *name lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* → name 
 
 
 

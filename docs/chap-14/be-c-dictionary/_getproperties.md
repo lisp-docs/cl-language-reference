@@ -70,7 +70,7 @@ It searches the *plist* for the first entry whose *indicator* is *identical* to 
 
 (setf (getf x ’prop1) ’val1) → VAL1 
 
-(eq (getf x ’prop1) ’val1) *→ true* 
+(eq (getf x ’prop1) ’val1) → true 
 
 (get-properties x \*indicator-list\*) → PROP1, VAL1, (PROP1 VAL1) 
 

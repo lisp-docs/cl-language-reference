@@ -14,7 +14,7 @@
 
 
 
-*→ second, minute, hour, date, month, year, day, daylight-p, zone* 
+→ second, minute, hour, date, month, year, day, daylight-p, zone 
 
 
 

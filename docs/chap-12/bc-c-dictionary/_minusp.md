@@ -46,11 +46,11 @@ Regardless of whether an *implementation* provides distinct representations for 
 ```lisp
  
 
-(minusp -1) *→ true* 
+(minusp -1) → true 
 
-(plusp 0) *→ false* 
+(plusp 0) → false 
 
-(plusp least-positive-single-float) *→ true* 
+(plusp least-positive-single-float) → true 
 
 
 ```

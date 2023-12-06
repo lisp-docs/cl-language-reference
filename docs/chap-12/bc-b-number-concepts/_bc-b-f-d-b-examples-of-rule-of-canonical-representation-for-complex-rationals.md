@@ -26,11 +26,11 @@
 
 
 
-(typep #c(1 1) ’(complex (eql 1))) *→ true* 
+(typep #c(1 1) ’(complex (eql 1))) → true 
 
 
 
-(typep #c(0 0) ’(complex (eql 0))) *→ false* 
+(typep #c(0 0) ’(complex (eql 0))) → false 
 
 
 

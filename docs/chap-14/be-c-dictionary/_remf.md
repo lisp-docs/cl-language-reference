@@ -62,9 +62,9 @@ For information about the *evaluation* of *subforms* of *place*, see Section 5.1
 
 (setf (getf (car x) ’prop1) ’val1) → VAL1 
 
-(remf (car x) ’prop1) *→ true* 
+(remf (car x) ’prop1) → true 
 
-(remf (car x) ’prop1) *→ false* 
+(remf (car x) ’prop1) → false 
 
 
 ```

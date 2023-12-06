@@ -42,17 +42,17 @@ Returns *true* if *name* is *fbound*; otherwise, returns *false*.
 ```lisp
  
 
-(fboundp ’car) *→ true* 
+(fboundp ’car) → true 
 
-(fboundp ’nth-value) *→ false* 
+(fboundp ’nth-value) → false 
 
-(fboundp ’with-open-file) *→ true* 
+(fboundp ’with-open-file) → true 
 
-(fboundp ’unwind-protect) *→ true* 
+(fboundp ’unwind-protect) → true 
 
 (defun my-function (x) x) → MY-FUNCTION 
 
-(fboundp ’my-function) *→ true* 
+(fboundp ’my-function) → true 
 
 (let ((saved-definition (symbol-function ’my-function))) 
 
@@ -62,21 +62,21 @@ Returns *true* if *name* is *fbound*; otherwise, returns *false*.
 
 (setf (symbol-function ’my-function) saved-definition))) 
 
-*→ false* 
+→ false 
 
-(fboundp ’my-function) *→ true* 
+(fboundp ’my-function) → true 
 
 (defmacro my-macro (x) ‘’,x) → MY-MACRO 
 
-(fboundp ’my-macro) *→ true* 
+(fboundp ’my-macro) → true 
 
 (fmakunbound ’my-function) → MY-FUNCTION 
 
-(fboundp ’my-function) *→ false* 
+(fboundp ’my-function) → false 
 
 (flet ((my-function (x) x)) 
 
-(fboundp ’my-function)) *→ false* 
+(fboundp ’my-function)) → false 
 
 
 ```

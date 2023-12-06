@@ -34,11 +34,11 @@ Returns *true* if *object* is of *type* **package**; otherwise, returns *false*.
 ```lisp
  
 
-(packagep \*package\*) *→ true* 
+(packagep \*package\*) → true 
 
-(packagep ’common-lisp) *→ false* 
+(packagep ’common-lisp) → false 
 
-(packagep (find-package ’common-lisp)) *→ true* 
+(packagep (find-package ’common-lisp)) → true 
 
 
 ```
@@ -110,13 +110,13 @@ Whatever *package object* is currently the *value* of **\*package\*** is referre
 
 → (#<PACKAGE "COMMON-LISP-USER"> #<PACKAGE "COMMON-LISP-USER">) 
 
-(eq ’foo (intern "FOO")) *→ true* 
+(eq ’foo (intern "FOO")) → true 
 
 (eq ’foo (let ((\*package\* (find-package ’sample-package))) 
 
 (intern "FOO"))) 
 
-*→ false* 
+→ false 
 
 
 ```

@@ -10,7 +10,7 @@
 
 
 
-*→ function-name* 
+→ function-name 
 
 
 

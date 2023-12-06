@@ -34,11 +34,11 @@ Returns *true* if *object* is of *type* **random-state**; otherwise, returns *fa
 ```lisp
  
 
-(random-state-p \*random-state\*) *→ true* 
+(random-state-p \*random-state\*) → true 
 
-(random-state-p (make-random-state)) *→ true* 
+(random-state-p (make-random-state)) → true 
 
-(random-state-p ’test-function) *→ false* 
+(random-state-p ’test-function) → false 
 
 
 ```
@@ -102,7 +102,7 @@ The *current random state*, which is used, for example, by the *function* **rand
 ```lisp
  
 
-(random-state-p \*random-state\*) *→ true* 
+(random-state-p \*random-state\*) → true 
 
 (setq snap-shot (make-random-state)) 
 

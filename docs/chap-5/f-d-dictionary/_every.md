@@ -6,19 +6,19 @@
 
 
 
-**every** *predicate* &amp;rest *sequences*<sup>+</sup> *→ generalized-boolean* 
+**every** *predicate* &amp;rest *sequences*<sup>+</sup> → generalized-boolean 
 
 
 
-**some** *predicate* &amp;rest *sequences*<sup>+</sup> *→ result* 
+**some** *predicate* &amp;rest *sequences*<sup>+</sup> → result 
 
 
 
-**notevery** *predicate* &amp;rest *sequences*<sup>+</sup> *→ generalized-boolean* 
+**notevery** *predicate* &amp;rest *sequences*<sup>+</sup> → generalized-boolean 
 
 
 
-**notany** *predicate* &amp;rest *sequences*<sup>+</sup> *→ generalized-boolean* 
+**notany** *predicate* &amp;rest *sequences*<sup>+</sup> → generalized-boolean 
 
 
 
@@ -82,13 +82,13 @@ Data and Control
 ```lisp
  
 
-(every #’characterp "abc") *→ true* 
+(every #’characterp "abc") → true 
 
-(some #’= ’(1 2 3 4 5) ’(5 4 3 2 1)) *→ true* 
+(some #’= ’(1 2 3 4 5) ’(5 4 3 2 1)) → true 
 
-(notevery #’&lt; ’(1 2 3 4) ’(5 6 7 8) ’(9 10 11 12)) *→ false* 
+(notevery #’&lt; ’(1 2 3 4) ’(5 6 7 8) ’(9 10 11 12)) → false 
 
-(notany #’&gt; ’(1 2 3 4) ’(5 6 7 8) ’(9 10 11 12)) *→ true* 
+(notany #’&gt; ’(1 2 3 4) ’(5 6 7 8) ’(9 10 11 12)) → true 
 
 
 ```

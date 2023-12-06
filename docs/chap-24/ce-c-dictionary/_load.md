@@ -14,7 +14,7 @@
 
 
 
-*→ generalized-boolean* 
+→ generalized-boolean 
 
 
 
@@ -126,7 +126,7 @@ The *external-format* specifies the *external file format* to be used when openi
 
 → T 
 
-(load "data.in") *→ true* 
+(load "data.in") → true 
 
 a → 888 
 
@@ -136,7 +136,7 @@ a → 888
 
 ; Finished loading /fred/data.in 
 
-*→ true* 
+→ true 
 
 (load p :print t) 
 
@@ -148,7 +148,7 @@ a → 888
 
 ; Finished loading /fred/data.in 
 
-*→ true* 
+→ true 
 
 System 
 

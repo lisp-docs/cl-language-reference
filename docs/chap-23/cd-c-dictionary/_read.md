@@ -18,7 +18,7 @@
 
 
 
-*→ object* 
+→ object 
 
 
 

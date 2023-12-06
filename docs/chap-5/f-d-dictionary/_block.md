@@ -6,7 +6,7 @@
 
 
 
-**block** *name form*\* *→ \{result\}*\* 
+**block** *name form*\* → \{result\}\* 
 
 
 

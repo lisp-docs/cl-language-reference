@@ -6,7 +6,7 @@
 
 
 
-**make-instance** *class* &amp;rest *initargs* &amp;key &amp;allow-other-keys *→ instance* 
+**make-instance** *class* &amp;rest *initargs* &amp;key &amp;allow-other-keys → instance 
 
 
 

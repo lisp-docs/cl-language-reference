@@ -6,7 +6,7 @@
 
 
 
-**handler-case** *expression* [[ *\{↓error-clause\}*\* *| ↓no-error-clause* ]] *→ \{result\}*\* 
+**handler-case** *expression* [[ *\{↓error-clause\}*\* *| ↓no-error-clause* ]] → \{result\}\* 
 
 
 

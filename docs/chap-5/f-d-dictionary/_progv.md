@@ -6,7 +6,7 @@
 
 
 
-**progv** *symbols values \{form\}*\* *→ \{result\}*\* 
+**progv** *symbols values \{form\}*\* → \{result\}\* 
 
 
 

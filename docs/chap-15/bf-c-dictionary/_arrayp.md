@@ -34,23 +34,23 @@ Returns *true* if *object* is of *type* **array**; otherwise, returns *false*.
 ```lisp
  
 
-(arrayp (make-array ’(2 3 4) :adjustable t)) *→ true* 
+(arrayp (make-array ’(2 3 4) :adjustable t)) → true 
 
-(arrayp (make-array 6)) *→ true* 
+(arrayp (make-array 6)) → true 
 
-(arrayp #\*1011) *→ true* 
+(arrayp #\*1011) → true 
 
 
-
- 
 
  
 
-(arrayp "hi") *→ true* 
+ 
 
-(arrayp ’hi) *→ false* 
+(arrayp "hi") → true 
 
-(arrayp 12) *→ false* 
+(arrayp ’hi) → false 
+
+(arrayp 12) → false 
 
 
 ```

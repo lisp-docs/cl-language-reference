@@ -222,51 +222,51 @@ The *type* **extended-char** might have no *elements*<sub>4</sub> in *implementa
 
 
 
-**char**= &amp;rest *characters*<sup>+</sup> *→ generalized-boolean* 
+**char**= &amp;rest *characters*<sup>+</sup> → generalized-boolean 
 
 
 
-**char***/* = &amp;rest *characters*<sup>+</sup> *→ generalized-boolean* 
+**char***/* = &amp;rest *characters*<sup>+</sup> → generalized-boolean 
 
 
 
-**char**&lt; &amp;rest *characters*<sup>+</sup> *→ generalized-boolean* 
+**char**&lt; &amp;rest *characters*<sup>+</sup> → generalized-boolean 
 
 
 
-**char**&gt; &amp;rest *characters*<sup>+</sup> *→ generalized-boolean* 
+**char**&gt; &amp;rest *characters*<sup>+</sup> → generalized-boolean 
 
 
 
-**char**&lt;= &amp;rest *characters*<sup>+</sup> *→ generalized-boolean* 
+**char**&lt;= &amp;rest *characters*<sup>+</sup> → generalized-boolean 
 
 
 
-**char**&gt;= &amp;rest *characters*<sup>+</sup> *→ generalized-boolean* 
+**char**&gt;= &amp;rest *characters*<sup>+</sup> → generalized-boolean 
 
 
 
-**char-equal** &amp;rest *characters*<sup>+</sup> *→ generalized-boolean* 
+**char-equal** &amp;rest *characters*<sup>+</sup> → generalized-boolean 
 
 
 
-**char-not-equal** &amp;rest *characters*<sup>+</sup> *→ generalized-boolean* 
+**char-not-equal** &amp;rest *characters*<sup>+</sup> → generalized-boolean 
 
 
 
-**char-lessp** &amp;rest *characters*<sup>+</sup> *→ generalized-boolean* 
+**char-lessp** &amp;rest *characters*<sup>+</sup> → generalized-boolean 
 
 
 
-**char-greaterp** &amp;rest *characters*<sup>+</sup> *→ generalized-boolean* 
+**char-greaterp** &amp;rest *characters*<sup>+</sup> → generalized-boolean 
 
 
 
-**char-not-greaterp** &amp;rest *characters*<sup>+</sup> *→ generalized-boolean* 
+**char-not-greaterp** &amp;rest *characters*<sup>+</sup> → generalized-boolean 
 
 
 
-**char-not-lessp** &amp;rest *characters*<sup>+</sup> *→ generalized-boolean* 
+**char-not-lessp** &amp;rest *characters*<sup>+</sup> → generalized-boolean 
 
 
 
@@ -338,139 +338,139 @@ If two *characters* have *identical implementation-defined attributes*, then the
 
 
 
-(char= #\d #\d) *→ true* 
+(char= #\d #\d) → true 
 
 
 
-(char= #\A #\a) *→ false* 
+(char= #\A #\a) → false 
 
 
 
-(char= #\d #\x) *→ false* 
+(char= #\d #\x) → false 
 
 
 
-(char= #\d #\D) *→ false* 
+(char= #\d #\D) → false 
 
 
 
-(char/= #\d #\d) *→ false* 
+(char/= #\d #\d) → false 
 
 
 
-(char/= #\d #\x) *→ true* 
+(char/= #\d #\x) → true 
 
 
 
-(char/= #\d #\D) *→ true* 
+(char/= #\d #\D) → true 
 
 
 
-(char= #\d #\d #\d #\d) *→ true* 
+(char= #\d #\d #\d #\d) → true 
 
 
 
-(char/= #\d #\d #\d #\d) *→ false* 
+(char/= #\d #\d #\d #\d) → false 
 
 
 
-(char= #\d #\d #\x #\d) *→ false* 
+(char= #\d #\d #\x #\d) → false 
 
 
 
-(char/= #\d #\d #\x #\d) *→ false* 
+(char/= #\d #\d #\x #\d) → false 
 
 
 
-(char= #\d #\y #\x #\c) *→ false* 
+(char= #\d #\y #\x #\c) → false 
 
 
 
-(char/= #\d #\y #\x #\c) *→ true* 
+(char/= #\d #\y #\x #\c) → true 
 
 
 
-(char= #\d #\c #\d) *→ false* 
+(char= #\d #\c #\d) → false 
 
 
 
-(char/= #\d #\c #\d) *→ false* 
+(char/= #\d #\c #\d) → false 
 
 
 
-(char&lt; #\d #\x) *→ true* 
+(char&lt; #\d #\x) → true 
 
 
 
-(char&lt;= #\d #\x) *→ true* 
+(char&lt;= #\d #\x) → true 
 
 
 
-(char&lt; #\d #\d) *→ false* 
+(char&lt; #\d #\d) → false 
 
 
 
-(char&lt;= #\d #\d) *→ true* 
+(char&lt;= #\d #\d) → true 
 
 
 
-(char&lt; #\a #\e #\y #\z) *→ true* 
+(char&lt; #\a #\e #\y #\z) → true 
 
 
 
-(char&lt;= #\a #\e #\y #\z) *→ true* 
+(char&lt;= #\a #\e #\y #\z) → true 
 
 
 
-(char&lt; #\a #\e #\e #\y) *→ false* 
+(char&lt; #\a #\e #\e #\y) → false 
 
 
 
-(char&lt;= #\a #\e #\e #\y) *→ true* 
+(char&lt;= #\a #\e #\e #\y) → true 
 
 
 
-(char&gt; #\e #\d) *→ true* 
+(char&gt; #\e #\d) → true 
 
 
 
-(char&gt;= #\e #\d) *→ true* 
+(char&gt;= #\e #\d) → true 
 
 
 
-(char&gt; #\d #\c #\b #\a) *→ true* 
+(char&gt; #\d #\c #\b #\a) → true 
 
 
 
-(char&gt;= #\d #\c #\b #\a) *→ true* 
+(char&gt;= #\d #\c #\b #\a) → true 
 
 
 
-(char&gt; #\d #\d #\c #\a) *→ false* 
+(char&gt; #\d #\d #\c #\a) → false 
 
 
 
-(char&gt;= #\d #\d #\c #\a) *→ true* 
+(char&gt;= #\d #\d #\c #\a) → true 
 
 
 
-(char&gt; #\e #\d #\b #\c #\a) *→ false* 
+(char&gt; #\e #\d #\b #\c #\a) → false 
 
 
 
-(char&gt;= #\e #\d #\b #\c #\a) *→ false* 
+(char&gt;= #\e #\d #\b #\c #\a) → false 
 
 
 
-(char&gt; #\z #\A) *→ implementation-dependent* 
+(char&gt; #\z #\A) → implementation-dependent 
 
 
 
-(char&gt; #\Z #\a) *→ implementation-dependent* 
+(char&gt; #\Z #\a) → implementation-dependent 
 
 
 
-(char-equal #\A #\a) *→ true* 
+(char-equal #\A #\a) → true 
 
 
 
@@ -682,23 +682,23 @@ Returns *true* if *object* is of *type* **character**; otherwise, returns *false
 
 
 
-(characterp #\a) *→ true* 
+(characterp #\a) → true 
 
 
 
-(characterp ’a) *→ false* 
+(characterp ’a) → false 
 
 
 
-(characterp "a") *→ false* 
+(characterp "a") → false 
 
 
 
-(characterp 65.) *→ false* 
+(characterp 65.) → false 
 
 
 
-(characterp #\Newline) *→ true* 
+(characterp #\Newline) → true 
 
 
 
@@ -710,7 +710,7 @@ Returns *true* if *object* is of *type* **character**; otherwise, returns *false
 
 
 
-(characterp #\Rubout) *→ true* 
+(characterp #\Rubout) → true 
 
 
 
@@ -778,15 +778,15 @@ Returns *true* if *character* is an *alphabetic*<sub>1</sub> *character* ; other
 
 
 
-(alpha-char-p #\a) *→ true* 
+(alpha-char-p #\a) → true 
 
 
 
-(alpha-char-p #\5) *→ false* 
+(alpha-char-p #\5) → false 
 
 
 
-(alpha-char-p #\Newline) *→ false* 
+(alpha-char-p #\Newline) → false 
 
 
 
@@ -798,7 +798,7 @@ Returns *true* if *character* is an *alphabetic*<sub>1</sub> *character* ; other
 
 
 
-(alpha-char-p #\*α*) *→ implementation-dependent* 
+(alpha-char-p #\*α*) → implementation-dependent 
 
 
 
@@ -870,19 +870,19 @@ Returns *true* if *character* is an *alphabetic*<sub>1</sub> *character* or a *n
 
 
 
-(alphanumericp #\Z) *→ true* 
+(alphanumericp #\Z) → true 
 
 
 
-(alphanumericp #\9) *→ true* 
+(alphanumericp #\9) → true 
 
 
 
-(alphanumericp #\Newline) *→ false* 
+(alphanumericp #\Newline) → false 
 
 
 
-(alphanumericp #\#) *→ false* 
+(alphanumericp #\#) → false 
 
 
 
@@ -990,7 +990,7 @@ If *weight* is greater than or equal to *radix*, **digit-char** returns *false*.
 
 
 
-(digit-char 10 10) *→ false* 
+(digit-char 10 10) → false 
 
 
 
@@ -998,7 +998,7 @@ If *weight* is greater than or equal to *radix*, **digit-char** returns *false*.
 
 
 
-(digit-char 12) *→ false* 
+(digit-char 12) → false 
 
 
 
@@ -1006,7 +1006,7 @@ If *weight* is greater than or equal to *radix*, **digit-char** returns *false*.
 
 
 
-(digit-char 6 2) *→ false* 
+(digit-char 6 2) → false 
 
 
 
@@ -1082,15 +1082,15 @@ Tests whether *char* is a digit in the specified *radix* (*i.e.*, with a weight 
 
 
 
-(digit-char-p #\5 2) *→ false* 
+(digit-char-p #\5 2) → false 
 
 
 
-(digit-char-p #\A) *→ false* 
+(digit-char-p #\A) → false 
 
 
 
-(digit-char-p #\a) *→ false* 
+(digit-char-p #\a) → false 
 
 
 
@@ -1210,19 +1210,19 @@ Returns *true* if *character* is a *graphic character* ; otherwise, returns *fal
 
 
 
-(graphic-char-p #\G) *→ true* 
+(graphic-char-p #\G) → true 
 
 
 
-(graphic-char-p #\#) *→ true* 
+(graphic-char-p #\#) → true 
 
 
 
-(graphic-char-p #\Space) *→ true* 
+(graphic-char-p #\Space) → true 
 
 
 
-(graphic-char-p #\Newline) *→ false* 
+(graphic-char-p #\Newline) → false 
 
 
 
@@ -1278,11 +1278,11 @@ Returns *true* if *character* is of *type* **standard-char**; otherwise, returns
 
 
 
-(standard-char-p #\Space) *→ true* 
+(standard-char-p #\Space) → true 
 
 
 
-(standard-char-p #\&#126;) *→ true* 
+(standard-char-p #\&#126;) → true 
 
 
 
@@ -1294,7 +1294,7 @@ Returns *true* if *character* is of *type* **standard-char**; otherwise, returns
 
 
 
-(standard-char-p #\Bell) *→ false* 
+(standard-char-p #\Bell) → false 
 
 
 
@@ -1526,27 +1526,27 @@ These functions test the case of a given *character*.
 
 
 
-(upper-case-p #\A) *→ true* 
+(upper-case-p #\A) → true 
 
 
 
-(upper-case-p #\a) *→ false* 
+(upper-case-p #\a) → false 
 
 
 
-(both-case-p #\a) *→ true* 
+(both-case-p #\a) → true 
 
 
 
-(both-case-p #\5) *→ false* 
+(both-case-p #\5) → false 
 
 
 
-(lower-case-p #\5) *→ false* 
+(lower-case-p #\5) → false 
 
 
 
-(upper-case-p #\5) *→ false* 
+(upper-case-p #\5) → false 
 
 
 
@@ -1558,7 +1558,7 @@ These functions test the case of a given *character*.
 
 
 
-(lower-case-p #\Bell) *→ false* 
+(lower-case-p #\Bell) → false 
 
 
 
@@ -2058,7 +2058,7 @@ Returns the *character object* whose *name* is *name* (as determined by **string
 
 
 
-(or (not x) (eql (name-char x) #\a))) *→ true* 
+(or (not x) (eql (name-char x) #\a))) → true 
 
 
 

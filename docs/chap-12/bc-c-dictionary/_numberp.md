@@ -46,15 +46,15 @@ Returns *true* if *object* is of *type* **number**; otherwise, returns *false*.
 ```lisp
  
 
-(numberp 12) *→ true* 
+(numberp 12) → true 
 
-(numberp (expt 2 130)) *→ true* 
+(numberp (expt 2 130)) → true 
 
-(numberp #c(5/3 7.2)) *→ true* 
+(numberp #c(5/3 7.2)) → true 
 
-(numberp nil) *→ false* 
+(numberp nil) → false 
 
-(numberp (cons 1 2)) *→ false* 
+(numberp (cons 1 2)) → false 
 
 
 ```

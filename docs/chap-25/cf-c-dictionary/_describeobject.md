@@ -98,7 +98,7 @@ s (type-of s) captain serial#)))
 
 ▷ #<FEDERATION-STARSHIP 26312465> is a spaceship of type FEDERATION-STARSHIP, ▷ with Rachel Garrett at the helm and with serial number NCC-1701-C. 
 
-*→ hno valuesi* 
+→ hno valuesi 
 
 
 ```

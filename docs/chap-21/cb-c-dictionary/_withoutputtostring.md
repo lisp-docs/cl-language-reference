@@ -6,7 +6,7 @@
 
 
 
-**with-output-to-string** (*var* &amp;optional *string-form* &amp;key *element-type*) *\{declaration\}*\* *\{form\}*\* *→ \{result\}*\* 
+**with-output-to-string** (*var* &amp;optional *string-form* &amp;key *element-type*) *\{declaration\}*\* *\{form\}*\* → \{result\}\* 
 
 
 
@@ -102,7 +102,7 @@ The consequences are undefined if an attempt is made to *assign* the *variable v
 
 (format s "here’s some output") 
 
-(input-stream-p s)) *→ false* 
+(input-stream-p s)) → false 
 
 fstr → "here’s some output" 
 

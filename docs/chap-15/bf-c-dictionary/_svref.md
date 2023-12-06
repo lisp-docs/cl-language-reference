@@ -54,7 +54,7 @@
 ```lisp
  
 
-(simple-vector-p (setq v (vector 1 2 ’sirens))) *→ true* 
+(simple-vector-p (setq v (vector 1 2 ’sirens))) → true 
 
 (svref v 0) → 1 
 

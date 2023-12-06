@@ -6,11 +6,11 @@
 
 
 
-**defparameter** *name initial-value* [*documentation*] *→ name* 
+**defparameter** *name initial-value* [*documentation*] → name 
 
 
 
-**defvar** *name* [*initial-value* [*documentation*]] *→ name* 
+**defvar** *name* [*initial-value* [*documentation*]] → name 
 
 
 
@@ -78,7 +78,7 @@ If *documentation* is supplied, it is attached to *name* as a *documentation str
 
 \*p\* → 1 
 
-(constantp ’\*p\*) *→ false* 
+(constantp ’\*p\*) → false 
 
 (setq \*p\* 2) → 2 
 
@@ -90,7 +90,7 @@ If *documentation* is supplied, it is attached to *name* as a *documentation str
 
 \*v\* → 1 
 
-(constantp ’\*v\*) *→ false* 
+(constantp ’\*v\*) → false 
 
 (setq \*v\* 2) → 2 
 

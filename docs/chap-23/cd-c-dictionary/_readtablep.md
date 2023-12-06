@@ -34,11 +34,11 @@ Returns *true* if *object* is of *type* **readtable**; otherwise, returns *false
 ```lisp
  
 
-(readtablep \*readtable\*) *→ true* 
+(readtablep \*readtable\*) → true 
 
-(readtablep (copy-readtable)) *→ true* 
+(readtablep (copy-readtable)) → true 
 
-(readtablep ’\*readtable\*) *→ false* 
+(readtablep ’\*readtable\*) → false 
 
 
 ```

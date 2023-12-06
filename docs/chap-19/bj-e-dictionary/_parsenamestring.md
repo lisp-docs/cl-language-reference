@@ -152,7 +152,7 @@ If *thing* contains an explicit host name and no explicit device name, then it i
 
 :TYPE NIL :VERSION NIL) 
 
-(pathnamep q) *→ true* 
+(pathnamep q) → true 
 
 (parse-namestring "test") 
 

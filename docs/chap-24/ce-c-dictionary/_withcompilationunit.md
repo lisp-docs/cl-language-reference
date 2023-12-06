@@ -6,7 +6,7 @@
 
 
 
-**with-compilation-unit** ([[ *↓option* ]]) *\{form\}*\* *→ \{result\}*\* 
+**with-compilation-unit** ([[ *↓option* ]]) *\{form\}*\* → \{result\}\* 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**change-class** *instance new-class* &amp;key &amp;allow-other-keys *→ instance* 
+**change-class** *instance new-class* &amp;key &amp;allow-other-keys → instance 
 
 
 

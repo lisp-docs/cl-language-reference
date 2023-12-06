@@ -40,9 +40,9 @@ If *sequence* is a *vector* , the result is a *fresh simple array* of *rank* one
 
 (setq str "a string") → "a string" 
 
-(equalp str (copy-seq str)) *→ true* 
+(equalp str (copy-seq str)) → true 
 
-(eql str (copy-seq str)) *→ false* 
+(eql str (copy-seq str)) → false 
 
 
 ```

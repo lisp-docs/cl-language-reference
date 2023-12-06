@@ -6,7 +6,7 @@
 
 
 
-**unwind-protect** *protected-form \{cleanup-form\}*\* *→ \{result\}*\* 
+**unwind-protect** *protected-form \{cleanup-form\}*\* → \{result\}\* 
 
 
 

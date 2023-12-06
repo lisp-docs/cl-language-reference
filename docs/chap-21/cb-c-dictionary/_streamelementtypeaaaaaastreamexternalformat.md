@@ -84,7 +84,7 @@ The *format* returned is not necessarily meaningful to other *implementations*.
 
 
 
-*→ results* 
+→ results 
 
 
 

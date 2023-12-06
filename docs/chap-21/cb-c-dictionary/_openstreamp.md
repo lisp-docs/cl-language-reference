@@ -50,7 +50,7 @@ Returns *true* if *stream* is an *open stream*; otherwise, returns *false*.
 ```lisp
  
 
-(open-stream-p \*standard-input\*) *→ true* 
+(open-stream-p \*standard-input\*) → true 
 
 
 ```

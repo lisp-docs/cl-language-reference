@@ -60,7 +60,7 @@ If the *host* is already defined, no attempt to find or load a definition is att
 
 ▷ ;; Loading done. 
 
-*→ true* 
+→ true 
 
 (translate-logical-pathname "hacks:weather;barometer.lisp.newest") 
 
@@ -68,7 +68,7 @@ If the *host* is already defined, no attempt to find or load a definition is att
 
 (load-logical-pathname-translations "HACKS") 
 
-*→ false* 
+→ false 
 
 
 ```

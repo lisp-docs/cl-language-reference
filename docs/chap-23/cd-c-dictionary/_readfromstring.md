@@ -14,7 +14,7 @@
 
 
 
-*→ object, position* 
+→ object, position 
 
 
 

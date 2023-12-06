@@ -116,7 +116,7 @@ It is not necessarily possible to construct a valid *namestring* by concatenatin
 
 (file-namestring q) → "getty" 
 
-(directory-namestring q) *→ directory-name* 
+(directory-namestring q) → directory-name 
 
 (host-namestring q) → "kathy" 
 

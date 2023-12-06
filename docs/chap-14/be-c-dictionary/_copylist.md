@@ -44,11 +44,11 @@ Only the *list structure* of *list* is copied; the *elements* of the resulting l
 
 (setq clst (copy-list lst)) → (1 (2 3)) 
 
-(eq slst lst) *→ true* 
+(eq slst lst) → true 
 
-(eq clst lst) *→ false* 
+(eq clst lst) → false 
 
-(equal clst lst) *→ true* 
+(equal clst lst) → true 
 
 (rplaca lst "one") → ("one" (2 3)) 
 
@@ -118,7 +118,7 @@ The copy created is **equal** to *list*, but not **eq**.
 
 
 
-**list\*** &amp;rest *objects*<sup>+</sup> *→ result* 
+**list\*** &amp;rest *objects*<sup>+</sup> → result 
 
 
 
@@ -176,7 +176,7 @@ If **list\*** receives only one *object*, that *object* is returned, regardless 
 
 (setq a ’(1 2)) → (1 2) 
 
-(eq a (list\* a)) *→ true* 
+(eq a (list\* a)) → true 
 
 (list 3 4 ’a (car ’(b . c)) (+ 6 -2)) → (3 4 A B 4) 
 

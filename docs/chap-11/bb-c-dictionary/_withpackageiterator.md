@@ -6,7 +6,7 @@
 
 
 
-**with-package-iterator** (*name package-list-form* &amp;rest *symbol-types*) *\{declaration\}*\* *\{form\}*\* *→ \{result\}*\* 
+**with-package-iterator** (*name package-list-form* &amp;rest *symbol-types*) *\{declaration\}*\* *\{form\}*\* → \{result\}\* 
 
 
 

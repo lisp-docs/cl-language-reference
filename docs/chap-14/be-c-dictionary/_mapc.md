@@ -6,23 +6,23 @@
 
 
 
-**mapc** *function* &amp;rest *lists*<sup>+</sup> *→ list-1* 
+**mapc** *function* &amp;rest *lists*<sup>+</sup> → list-1 
 
 
 
-**mapcar** *function* &amp;rest *lists*<sup>+</sup> *→ result-list* 
+**mapcar** *function* &amp;rest *lists*<sup>+</sup> → result-list 
 
 
 
-**mapcan** *function* &amp;rest *lists*<sup>+</sup> *→ concatenated-results* 
+**mapcan** *function* &amp;rest *lists*<sup>+</sup> → concatenated-results 
 
 
 
-**mapl** *function* &amp;rest *lists*<sup>+</sup> *→ list-1* 
+**mapl** *function* &amp;rest *lists*<sup>+</sup> → list-1 
 
 
 
-**maplist** *function* &amp;rest *lists*<sup>+</sup> *→ result-list* 
+**maplist** *function* &amp;rest *lists*<sup>+</sup> → result-list 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-**mapcon** *function* &amp;rest *lists*<sup>+</sup> *→ concatenated-results* 
+**mapcon** *function* &amp;rest *lists*<sup>+</sup> → concatenated-results 
 
 
 

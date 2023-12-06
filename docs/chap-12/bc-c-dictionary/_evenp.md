@@ -38,11 +38,11 @@
 ```lisp
  
 
-(evenp 0) *→ true* 
+(evenp 0) → true 
 
-(oddp 10000000000000000000000) *→ false* 
+(oddp 10000000000000000000000) → false 
 
-(oddp -1) *→ true* 
+(oddp -1) → true 
 
 
 ```
