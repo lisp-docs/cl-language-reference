@@ -6,7 +6,7 @@
 
 
 
-**define-modify-macro** *name lambda-list function* [*documentation*] *! name* 
+**define-modify-macro** *name lambda-list function* [*documentation*] →  name 
 
 
 

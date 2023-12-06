@@ -40,19 +40,19 @@ Returns *true* if *object* is of *type* **float**; otherwise, returns *false*.
 
 
 
-(floatp 1.2d2) *! true* 
+(floatp 1.2d2) →  true 
 
 
 
-(floatp 1.212) *! true* 
+(floatp 1.212) →  true 
 
 
 
-(floatp 1.2s2) *! true* 
+(floatp 1.2s2) →  true 
 
 
 
-(floatp (expt 2 130)) *! false* 
+(floatp (expt 2 130)) →  false 
 
 
 

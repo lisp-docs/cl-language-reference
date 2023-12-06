@@ -36,15 +36,15 @@ Returns *true* if *symbol* is a *special operator* ; otherwise, returns *false*.
 
 
 
-(special-operator-p ’if) *! true* 
+(special-operator-p ’if) →  true 
 
 
 
-(special-operator-p ’car) *! false* 
+(special-operator-p ’car) →  false 
 
 
 
-(special-operator-p ’one) *! false* 
+(special-operator-p ’one) →  false 
 
 
 

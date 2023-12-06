@@ -112,7 +112,7 @@ In general,
 
 
 
-(dpb *x* (byte 0 *y*) *z*) *! z* 
+(dpb *x* (byte 0 *y*) *z*) →  z 
 
 
 

@@ -10,7 +10,7 @@
 
 
 
-*! method* 
+→  method 
 
 
 

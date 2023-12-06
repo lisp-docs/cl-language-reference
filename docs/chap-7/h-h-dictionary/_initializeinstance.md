@@ -6,7 +6,7 @@
 
 
 
-**initialize-instance** *instance* &amp;rest *initargs* &amp;key &amp;allow-other-keys *! instance* 
+**initialize-instance** *instance* &amp;rest *initargs* &amp;key &amp;allow-other-keys →  instance 
 
 
 

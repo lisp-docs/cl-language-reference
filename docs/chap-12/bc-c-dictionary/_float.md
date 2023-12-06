@@ -72,7 +72,7 @@ If *prototype* is not supplied, then if the *number* is already a *float*, it is
 
 
 
-(eql (float 1.0 1.0d0) 1.0d0) *! true* 
+(eql (float 1.0 1.0d0) 1.0d0) →  true 
 
 
 

@@ -64,15 +64,15 @@ If an *implementation* chooses to make use of the *environment* information, suc
 
 
 
-(constantp 1) *! true* 
+(constantp 1) →  true 
 
 
 
-(constantp ’temp) *! false* 
+(constantp ’temp) →  false 
 
 
 
-(constantp ”temp)) *! true* 
+(constantp ”temp)) →  true 
 
 
 
@@ -96,11 +96,11 @@ Evaluation and
 
 
 
-(constantp ’this-is-a-constant) *! true* 
+(constantp ’this-is-a-constant) →  true 
 
 
 
-(constantp "temp") *! true* 
+(constantp "temp") →  true 
 
 
 
@@ -108,7 +108,7 @@ Evaluation and
 
 
 
-(constantp a) *! true* 
+(constantp a) →  true 
 
 
 

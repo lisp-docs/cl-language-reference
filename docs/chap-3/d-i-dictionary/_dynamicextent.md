@@ -400,7 +400,7 @@ Evaluation and
 
 
 
-(&lt; (zap 5 3) 3) *! true* 
+(&lt; (zap 5 3) 3) →  true 
 
 
 
