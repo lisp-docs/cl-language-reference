@@ -9,7 +9,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.ad20780e.css">
-<script src="/cl-language-reference/assets/js/runtime~main.1ceefd84.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.7f9626aa.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.de7ea857.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -184,7 +184,7 @@
 <p>If ~:&gt; is used to terminate a ~&lt;...~&gt;, the directive is equivalent to a call to <strong>pprint-logical-block</strong>. The argument corresponding to the ~&lt;...~:&gt; directive is treated in the same way as the <em>list</em> argument to <strong>pprint-logical-block</strong>, thereby providing automatic support for non-<em>list</em> arguments and the detection of circularity, sharing, and depth abbreviation. The portion of the <em>control-string</em> nested within the ~&lt;...~:&gt; specifies the <!-- -->:prefix<!-- --> (or <!-- -->:per-line-prefix<!-- -->), <!-- -->:suffix<!-- -->, and body of the <strong>pprint-logical-block</strong>.</p>
 <p>The <em>control-string</em> portion enclosed by ~&lt;...~:&gt; can be divided into segments ~&lt;<em>prefix</em>~;<em>body</em>~;<em>suffix</em>~:&gt; by ~; directives. If the first section is terminated by ~@;, it speci fies a per-line prefix rather than a simple prefix. The <em>prefix</em> and <em>suffix</em> cannot contain format directives. An error is signaled if either the prefix or suffix fails to be a constant string or if the enclosed portion is divided into more than three segments.</p>
 <p>If the enclosed portion is divided into only two segments, the <em>suffix</em> defaults to the null string. If the enclosed portion consists of only a single segment, both the <em>prefix</em> and the <em>suffix</em> default to the null string. If the <em>colon</em> modifier is used (<em>i.e.</em>, ~:&lt;...~:&gt;), the <em>prefix</em> and <em>suffix</em> default to &quot;(&quot; and &quot;)&quot; (respectively) instead of the null string.</p>
-<p>The body segment can be any arbitrary <i>format string</i>. This <i>format string</i> is applied to the elements of the list corresponding to the ~&lt;...~:&gt; directive as a whole. Elements are extracted from this list using <b>pprint-pop</b>, thereby providing automatic support for malformed lists, and the detection of circularity, sharing, and length abbreviation. Within the body segment, ~<i><sup>∧</sup></i> acts like <b>pprint-exit-if-list-exhausted</b>.</p>
+<p>The body segment can be any arbitrary <i>format string</i>. This <i>format string</i> is applied to the elements of the list corresponding to the ~&lt;...~:&gt; directive as a whole. Elements are extracted from this list using <b>pprint-pop</b>, thereby providing automatic support for malformed lists, and the detection of circularity, sharing, and length abbreviation. Within the body segment, ~<i><sup>^</sup></i> acts like <b>pprint-exit-if-list-exhausted</b>.</p>
 <p>~&lt;...~:&gt; supports a feature not supported by <strong>pprint-logical-block</strong>. If ~:@&gt; is used to terminate the directive (<em>i.e.</em>, ~&lt;...~:@&gt;), then a fill-style conditional newline is automatically inserted after each group of blanks immediately contained in the body (except for blanks after a <em>hNewlinei</em> directive). This makes it easy to achieve the equivalent of paragraph filling.</p>
 <p>If the <em>at-sign</em> modifier is used with ~&lt;...~:&gt;, the entire remaining argument list is passed to the directive as its argument. All of the remaining arguments are always consumed by ~@&lt;...~:&gt;, even if they are not all used by the <em>format string</em> nested in the directive. Other than the difference in its argument, ~@&lt;...~:&gt; is exactly the same as ~&lt;...~:&gt; except that circularity detection is not applied if ~@&lt;...~:&gt; is encountered at top level in a <em>format string</em>. This ensures that circularity detection is applied only to data lists, not to <em>format argument lists</em>.</p>
 <p>&quot; . #<em>n</em>#&quot; is printed if circularity or sharing has to be indicated for its argument as a whole.</p>
@@ -217,12 +217,12 @@
 <p>This justifies the text produced by processing <em>str</em> within a field at least <em>mincol</em> columns wide. <em>str</em> may be divided up into segments with ~;, in which case the spacing is evenly divided between the text segments.</p>
 <p>With no modifiers, the leftmost text segment is left justified in the field, and the rightmost text segment is right justified. If there is only one text element, as a special case, it is right justified. The : modifier causes spacing to be introduced before the first text segment; the @ modifier causes spacing to be added after the last. The <em>minpad</em> parameter (default 0) is the minimum number of padding characters to be output between each segment. The padding character is supplied by <em>padchar</em> , which defaults to the space character. If the total width needed to satisfy these constraints is greater than <em>mincol</em>, then the width used is <em>mincol</em>+<em>k</em>*<em>colinc</em> for the smallest possible non-negative integer value <em>k</em>. <em>colinc</em> defaults to 1, and <em>mincol</em> defaults to 0.</p>
 <p>Note that <em>str</em> may include <strong>format</strong> directives. All the clauses in <em>str</em> are processed in order; it is the resulting pieces of text that are justified.</p>
-<p>The ~<i><sup>∧</sup></i> directive may be used to terminate processing of the clauses prematurely, in which case only the completely processed clauses are justified.</p>
-<p>If the first clause of a ~&lt; is terminated with ~:; instead of ~;, then it is used in a special way. All of the clauses are processed (subject to ~<i><sup>∧</sup></i>, of course), but the first one is not used in performing the spacing and padding. When the padded result has been determined, then if it will fit on the current line of output, it is output, and the text for the first clause is discarded. If, however, the</p>
+<p>The ~<i><sup>^</sup></i> directive may be used to terminate processing of the clauses prematurely, in which case only the completely processed clauses are justified.</p>
+<p>If the first clause of a ~&lt; is terminated with ~:; instead of ~;, then it is used in a special way. All of the clauses are processed (subject to ~<i><sup>^</sup></i>, of course), but the first one is not used in performing the spacing and padding. When the padded result has been determined, then if it will fit on the current line of output, it is output, and the text for the first clause is discarded. If, however, the</p>
 <p>padded text will not fit on the current line, then the text segment for the first clause is output before the padded text. The first clause ought to contain a newline (such as a ~% directive). The first clause is always processed, and so any arguments it refers to will be used; the decision is whether to use the resulting segment of text, not whether to process the first clause. If the ~:; has a prefix parameter <em>n</em>, then the padded text must fit on the current line with <em>n</em> character positions to spare to avoid outputting the first clause’s text. For example, the control string</p>
-<p>&quot;~%;; ~{~&lt;~%;; ~1:; ~S~&gt;~<i><sup>∧</sup></i>,~}.~%&quot;</p>
+<p>&quot;~%;; ~{~&lt;~%;; ~1:; ~S~&gt;~<i><sup>^</sup></i>,~}.~%&quot;</p>
 <p>can be used to print a list of items separated by commas without breaking items over line boundaries, beginning each line with ;; . The prefix parameter 1 in ~1:; accounts for the width of the comma that will follow the justified item if it is not the last element in the list, or the period if it is. If ~:; has a second prefix parameter, then it is used as the width of the line, thus overriding the natural line width of the output stream. To make the preceding example use a line width of 50, one would write</p>
-<p>&quot;~%;; ~{~&lt;~%;; ~1,50:; ~S~&gt;~<i><sup>∧</sup></i>,~} .~%&quot;</p>
+<p>&quot;~%;; ~{~&lt;~%;; ~1,50:; ~S~&gt;~<i><sup>^</sup></i>,~} .~%&quot;</p>
 <p>If the second argument is not supplied, then <strong>format</strong> uses the line width of the <em>destination</em> output stream. If this cannot be determined (for example, when producing a <em>string</em> result), then <strong>format</strong> uses 72 as the line length.</p>
 <p>See also Section 22.3.5.2 (Tilde Less-Than-Sign: Logical Block).</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="22363-tilde-greater">22.3.6.3 Tilde Greater<a href="#22363-tilde-greater" class="hash-link" aria-label="Direct link to 22.3.6.3 Tilde Greater" title="Direct link to 22.3.6.3 Tilde Greater">​</a></h3>
@@ -257,7 +257,7 @@
 <p><em>≡</em> (format <em>stream</em> &quot;...~:[~;~:*<em>str</em>~]...&quot; ...)</p>
 <p>The combination of ~[ and # is useful, for example, for dealing with English conventions for printing lists:</p>
 <p>(setq foo &quot;Items:~#[ none~; ~S~; ~S and ~S~</p>
-<p>~:;~@{~#[~; and~] ~S~<i><sup>∧</sup></i>,~}~].&quot;)</p>
+<p>~:;~@{~#[~; and~] ~S~<i><sup>^</sup></i>,~}~].&quot;)</p>
 <p>(format nil foo) → &quot;Items: none.&quot;</p>
 <p>(format nil foo ’foo) → &quot;Items: FOO.&quot;</p>
 <p>(format nil foo ’foo ’bar) → &quot;Items: FOO and BAR.&quot;</p>
@@ -269,7 +269,7 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="22374-tilde-left">22.3.7.4 Tilde Left<a href="#22374-tilde-left" class="hash-link" aria-label="Direct link to 22.3.7.4 Tilde Left" title="Direct link to 22.3.7.4 Tilde Left">​</a></h3>
 <!-- -->
 <p>~{<em>str</em>~}</p>
-<p>This is an iteration construct. The argument should be a <i>list</i>, which is used as a set of arguments as if for a recursive call to <b>format</b>. The <i>string str</i> is used repeatedly as the control string. Each iteration can absorb as many elements of the <i>list</i> as it likes as arguments; if <i>str</i> uses up two arguments by itself, then two elements of the <i>list</i> will get used up each time around the loop. If before any iteration step the <i>list</i> is empty, then the iteration is terminated. Also, if a prefix parameter <i>n</i> is given, then there will be at most <i>n</i> repetitions of processing of <i>str</i> . Finally, the ~<i><sup>∧</sup></i> directive can be used to terminate the iteration prematurely.</p>
+<p>This is an iteration construct. The argument should be a <i>list</i>, which is used as a set of arguments as if for a recursive call to <b>format</b>. The <i>string str</i> is used repeatedly as the control string. Each iteration can absorb as many elements of the <i>list</i> as it likes as arguments; if <i>str</i> uses up two arguments by itself, then two elements of the <i>list</i> will get used up each time around the loop. If before any iteration step the <i>list</i> is empty, then the iteration is terminated. Also, if a prefix parameter <i>n</i> is given, then there will be at most <i>n</i> repetitions of processing of <i>str</i> . Finally, the ~<i><sup>^</sup></i> directive can be used to terminate the iteration prematurely.</p>
 <p>For example:</p>
 <p>(format nil &quot;The winners are:~{ ~S~}.&quot;</p>
 <p>’(fred harry jill))</p>
@@ -345,30 +345,30 @@
 <p>This separates clauses in ~[ and ~&lt; constructs. The consequences of using it elsewhere are undefined.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="22392-tilde-circumflex">22.3.9.2 Tilde Circumflex<a href="#22392-tilde-circumflex" class="hash-link" aria-label="Direct link to 22.3.9.2 Tilde Circumflex" title="Direct link to 22.3.9.2 Tilde Circumflex">​</a></h3>
 <!-- -->
-<p>~<i><sup>∧</sup></i></p>
+<p>~<i><sup>^</sup></i></p>
 <p>This is an escape construct. If there are no more arguments remaining to be processed, then the immediately enclosing ~{ or ~&lt; construct is terminated. If there is no such enclosing construct, then the entire formatting operation is terminated. In the ~&lt; case, the formatting is performed,</p>
-<p>but no more segments are processed before doing the justification. ~<i><sup>∧</sup></i> may appear anywhere in a ~{ construct.</p>
-<p>(setq donestr &quot;Done.~<i><sup>∧</sup></i> ~D warning~<!-- -->:P<!-- -->.~<i><sup>∧</sup></i> ~D error~<!-- -->:P<!-- -->.&quot;)</p>
-<p><i>→</i> &quot;Done.~<i><sup>∧</sup></i> ~D warning~<!-- -->:P<!-- -->.~<i><sup>∧</sup></i> ~D error~<!-- -->:P<!-- -->.&quot;</p>
+<p>but no more segments are processed before doing the justification. ~<i><sup>^</sup></i> may appear anywhere in a ~{ construct.</p>
+<p>(setq donestr &quot;Done.~<i><sup>^</sup></i> ~D warning~<!-- -->:P<!-- -->.~<i><sup>^</sup></i> ~D error~<!-- -->:P<!-- -->.&quot;)</p>
+<p><i>→</i> &quot;Done.~<i><sup>^</sup></i> ~D warning~<!-- -->:P<!-- -->.~<i><sup>^</sup></i> ~D error~<!-- -->:P<!-- -->.&quot;</p>
 <p>(format nil donestr) → &quot;Done.&quot;</p>
 <p>(format nil donestr 3) → &quot;Done. 3 warnings.&quot;</p>
 <p>(format nil donestr 1 5) → &quot;Done. 1 warning. 5 errors.&quot;</p>
-<p>If a prefix parameter is given, then termination occurs if the parameter is zero. (Hence ~<i><sup>∧</sup></i> is equivalent to ~#<i><sup>∧</sup></i>.) If two parameters are given, termination occurs if they are equal. If three parameters are given, termination occurs if the first is less than or equal to the second and the second is less than or equal to the third. Of course, this is useless if all the prefix parameters are constants; at least one of them should be a # or a V parameter.</p>
-<p>If ~<i><sup>∧</sup></i> is used within a ~:{ construct, then it terminates the current iteration step because in the standard case it tests for remaining arguments of the current step only; the next iteration step commences immediately. ~:<i><sup>∧</sup></i> is used to terminate the iteration process. ~:<i><sup>∧</sup></i> may be used only if the command it would terminate is ~:{ or ~:@{. The entire iteration process is terminated if and only if the sublist that is supplying the arguments for the current iteration step is the last sublist in the case of ~:{, or the last <b>format</b> argument in the case of ~:@{. ~:<i><sup>∧</sup></i> is not equivalent to ~#:<i><sup>∧</sup></i>; the latter terminates the entire iteration if and only if no arguments remain for the current iteration step. For example:</p>
-<p>(format nil &quot;~:{~@?~:<i><sup>∧</sup></i>...~}&quot; ’((&quot;a&quot;) (&quot;b&quot;))) <i>→</i> &quot;a...b&quot;</p>
-<p>If ~<i><sup>∧</sup></i> appears within a control string being processed under the control of a ~? directive, but not within any ~{ or ~&lt; construct within that string, then the string being processed will be terminated, thereby ending processing of the ~? directive. Processing then continues within the string containing the ~? directive at the point following that directive.</p>
-<p>If ~<i><sup>∧</sup></i> appears within a ~[ or ~( construct, then all the commands up to the ~<i><sup>∧</sup></i> are properly selected or case-converted, the ~[ or ~( processing is terminated, and the outward search continues for a ~{ or ~&lt; construct to be terminated. For example:</p>
-<p>(setq tellstr &quot;~@(~@[~R~]~<i><sup>∧</sup></i> ~A!~)&quot;)</p>
-<p><i>→</i> &quot;~@(~@[~R~]~<i><sup>∧</sup></i> ~A!~)&quot;</p>
+<p>If a prefix parameter is given, then termination occurs if the parameter is zero. (Hence ~<i><sup>^</sup></i> is equivalent to ~#<i><sup>^</sup></i>.) If two parameters are given, termination occurs if they are equal. If three parameters are given, termination occurs if the first is less than or equal to the second and the second is less than or equal to the third. Of course, this is useless if all the prefix parameters are constants; at least one of them should be a # or a V parameter.</p>
+<p>If ~<i><sup>^</sup></i> is used within a ~:{ construct, then it terminates the current iteration step because in the standard case it tests for remaining arguments of the current step only; the next iteration step commences immediately. ~:<i><sup>^</sup></i> is used to terminate the iteration process. ~:<i><sup>^</sup></i> may be used only if the command it would terminate is ~:{ or ~:@{. The entire iteration process is terminated if and only if the sublist that is supplying the arguments for the current iteration step is the last sublist in the case of ~:{, or the last <b>format</b> argument in the case of ~:@{. ~:<i><sup>^</sup></i> is not equivalent to ~#:<i><sup>^</sup></i>; the latter terminates the entire iteration if and only if no arguments remain for the current iteration step. For example:</p>
+<p>(format nil &quot;~:{~@?~:<i><sup>^</sup></i>...~}&quot; ’((&quot;a&quot;) (&quot;b&quot;))) <i>→</i> &quot;a...b&quot;</p>
+<p>If ~<i><sup>^</sup></i> appears within a control string being processed under the control of a ~? directive, but not within any ~{ or ~&lt; construct within that string, then the string being processed will be terminated, thereby ending processing of the ~? directive. Processing then continues within the string containing the ~? directive at the point following that directive.</p>
+<p>If ~<i><sup>^</sup></i> appears within a ~[ or ~( construct, then all the commands up to the ~<i><sup>^</sup></i> are properly selected or case-converted, the ~[ or ~( processing is terminated, and the outward search continues for a ~{ or ~&lt; construct to be terminated. For example:</p>
+<p>(setq tellstr &quot;~@(~@[~R~]~<i><sup>^</sup></i> ~A!~)&quot;)</p>
+<p><i>→</i> &quot;~@(~@[~R~]~<i><sup>^</sup></i> ~A!~)&quot;</p>
 <p>(format nil tellstr 23) → &quot;Twenty-three!&quot;</p>
 <p>(format nil tellstr nil &quot;losers&quot;) → &quot; Losers!&quot;</p>
 <p>(format nil tellstr 23 &quot;losers&quot;) → &quot;Twenty-three losers!&quot;</p>
-<p>Following are examples of the use of ~<i><sup>∧</sup></i> within a ~&lt; construct.</p>
-<p>(format nil &quot;~15&lt;~S~;~<i><sup>∧</sup></i>~S~;~<i><sup>∧</sup></i>~S~&gt;&quot; ’foo)</p>
+<p>Following are examples of the use of ~<i><sup>^</sup></i> within a ~&lt; construct.</p>
+<p>(format nil &quot;~15&lt;~S~;~<i><sup>^</sup></i>~S~;~<i><sup>^</sup></i>~S~&gt;&quot; ’foo)</p>
 <p>→ &quot; FOO&quot;</p>
-<p>(format nil &quot;~15&lt;~S~;~<i><sup>∧</sup></i>~S~;~<i><sup>∧</sup></i>~S~&gt;&quot; ’foo ’bar)</p>
+<p>(format nil &quot;~15&lt;~S~;~<i><sup>^</sup></i>~S~;~<i><sup>^</sup></i>~S~&gt;&quot; ’foo ’bar)</p>
 <p>→ &quot;FOO BAR&quot;</p>
-<p>(format nil &quot;~15&lt;~S~;~<i><sup>∧</sup></i>~S~;~<i><sup>∧</sup></i>~S~&gt;&quot; ’foo ’bar ’baz)</p>
+<p>(format nil &quot;~15&lt;~S~;~<i><sup>^</sup></i>~S~;~<i><sup>^</sup></i>~S~&gt;&quot; ’foo ’bar ’baz)</p>
 <p>→ &quot;FOO BAR BAZ&quot;</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="22393-tilde-newline">22.3.9.3 Tilde Newline<a href="#22393-tilde-newline" class="hash-link" aria-label="Direct link to 22.3.9.3 Tilde Newline" title="Direct link to 22.3.9.3 Tilde Newline">​</a></h3>
 <!-- -->
@@ -447,7 +447,7 @@
 <p>(foo 1100.0L0) → &quot; 1.10L+3| 11.00$+02|+.001L+06| 1.10L+3&quot;</p>
 <p>(foo 1.1E13) → &quot;*********| 11.00$+12|+.001E+16| 1.10E+13&quot;</p>
 <p>(foo 1.1L120) → &quot;*********|??????????|%%%%%%%%%|1.10L+120&quot;</p>
-<p>(foo 1.1L1200)  → &quot;*********|??????????|%%%%%%%%%|1.10L+1200&quot;</p>
+<p>(foo 1.1L1200) → &quot;*********|??????????|%%%%%%%%%|1.10L+1200&quot;</p>
 <p>As an example of the effects of varying the scale factor, the code</p>
 <p>(dotimes (k 13)</p>
 <p>(format t &quot;~%Scale factor ~2D: |~13,6,2,VE|&quot;</p>
@@ -483,7 +483,7 @@
 <!-- -->
 <p>Formatted output is performed not only by <strong>format</strong>, but by certain other functions that accept a <em>format control</em> the way <strong>format</strong> does. For example, error-signaling functions such as <strong>cerror</strong> accept <em>format controls</em>.</p>
 <p>Note that the meaning of <strong>nil</strong> and <strong>t</strong> as destinations to <strong>format</strong> are different than those of <strong>nil</strong> and <strong>t</strong> as <em>stream designators</em>.</p>
-<p>The ~<i><sup>∧</sup></i> should appear only at the beginning of a ~&lt; clause, because it aborts the entire clause in which it appears (as well as all following clauses).</p>
+<p>The ~<i><sup>^</sup></i> should appear only at the beginning of a ~&lt; clause, because it aborts the entire clause in which it appears (as well as all following clauses).</p>
 <p><strong>copy-pprint-dispatch</strong> <em>Function</em></p>
 <p><strong>Syntax:</strong></p>
 <p><strong>copy-pprint-dispatch</strong> &amp;optional <em>table → new-table</em></p>

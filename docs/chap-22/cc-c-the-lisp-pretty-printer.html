@@ -9,7 +9,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.ad20780e.css">
-<script src="/cl-language-reference/assets/js/runtime~main.1ceefd84.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.7f9626aa.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.de7ea857.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -163,7 +163,7 @@
 <p>(defun simple-pprint-defun (*standard-output* list)</p>
 <p>(format T &quot;~:&lt;~W ~@ ~<!-- -->:I<!-- -->~W ~: ~W~1I ~ ~W~:&gt;&quot; list))</p>
 <p>(defun pprint-let (*standard-output* list)</p>
-<p>(format T &quot;~:&lt;~W~<i><sup>∧</sup></i>~:&lt;~@{~:&lt;~@{~W~<i><sup>∧</sup></i>~ ~}~:&gt;~<i><sup>∧</sup></i>~: ~}~:&gt;~1I~@{~<i><sup>∧</sup></i>~ ~W~}~:&gt;&quot; list))</p>
+<p>(format T &quot;~:&lt;~W~<i><sup>^</sup></i>~:&lt;~@{~:&lt;~@{~W~<i><sup>^</sup></i>~ ~}~:&gt;~<i><sup>^</sup></i>~: ~}~:&gt;~1I~@{~<i><sup>^</sup></i>~ ~W~}~:&gt;&quot; list))</p>
 <p>In the following example, the first <em>form</em> restores <strong>*print-pprint-dispatch*</strong> to the equivalent of its initial value. The next two forms then set up a special way to pretty print ratios. Note that the more specific <em>type specifier</em> has to be associated with a higher priority.</p>
 <p>(setq *print-pprint-dispatch* (copy-pprint-dispatch nil))</p>
 <p>(set-pprint-dispatch ’ratio</p>
