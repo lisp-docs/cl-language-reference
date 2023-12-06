@@ -430,7 +430,7 @@ Note that since no :report clause was given, the information inherited from mach
 
 :reader :ate-too-much-kind-of-food))) 
 
-*→* ATE-TOO-MUCH 
+→ ATE-TOO-MUCH 
 
 (define-condition ate-too-much-ice-cream (ate-too-much) 
 
@@ -450,7 +450,7 @@ Note that since no :report clause was given, the information inherited from mach
 
 (ate-too-much-ice-cream-flavor condition))))) 
 
-*→* ATE-TOO-MUCH-ICE-CREAM 
+→ ATE-TOO-MUCH-ICE-CREAM 
 
 (make-condition ’ate-too-much-ice-cream 
 
@@ -460,13 +460,13 @@ Note that since no :report clause was given, the information inherited from mach
 
 :flavor ’chocolate) 
 
-*→* #<ATE-TOO-MUCH-ICE-CREAM 32236101> 
+→ #<ATE-TOO-MUCH-ICE-CREAM 32236101> 
 
 (format t "&#126;A" \*) 
 
 ▷ FRED ate too much CHOCOLATE ice-cream 
 
-*→* NIL 
+→ NIL 
 
 
 ```

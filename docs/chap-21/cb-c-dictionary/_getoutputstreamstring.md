@@ -36,13 +36,13 @@ Returns a *string* containing, in order, all the *characters* that have been out
 
 (setq a-stream (make-string-output-stream) 
 
-a-string "abcdefghijklm") *→* "abcdefghijklm" 
+a-string "abcdefghijklm") → "abcdefghijklm" 
 
-(write-string a-string a-stream) *→* "abcdefghijklm" 
+(write-string a-string a-stream) → "abcdefghijklm" 
 
-(get-output-stream-string a-stream) *→* "abcdefghijklm" 
+(get-output-stream-string a-stream) → "abcdefghijklm" 
 
-(get-output-stream-string a-stream) *→* "" 
+(get-output-stream-string a-stream) → "" 
 
 
 ```

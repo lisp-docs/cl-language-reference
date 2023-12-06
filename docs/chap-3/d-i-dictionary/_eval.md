@@ -42,15 +42,15 @@ Constants appearing in code processed by **eval** are not copied nor coalesced. 
 ```lisp
  
 
-(setq form ’(1+ a) a 999) *→* 999 
+(setq form ’(1+ a) a 999) → 999 
 
-(eval form) *→* 1000 
+(eval form) → 1000 
 
-(eval ’form) *→* (1+ A) 
+(eval ’form) → (1+ A) 
 
 (let ((a ’(this would break if eval used local value))) (eval form)) 
 
-*→* 1000 
+→ 1000 
 
 
 ```
@@ -82,7 +82,7 @@ results from this normal *argument evaluation* becomes the *value* of the *form 
 
 
 
-(eval (list ’cdr (car ’((quote (a . b)) c)))) *→* b 
+(eval (list ’cdr (car ’((quote (a . b)) c)))) → b 
 
 
 

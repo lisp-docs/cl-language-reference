@@ -62,7 +62,7 @@ The following examples illustrate some possible return values, but are not inten
 
 (function-lambda-expression #’(lambda (x) x)) 
 
-*→* NIL, *false*, NIL 
+→ NIL, *false*, NIL 
 
 <i><sup>or</sup>→</i> NIL, <i>true</i>, NIL 
 
@@ -80,7 +80,7 @@ The following examples illustrate some possible return values, but are not inten
 
 (funcall #’(lambda () #’(lambda (x) x)))) 
 
-*→* NIL, *false*, NIL 
+→ NIL, *false*, NIL 
 
 <i><sup>or</sup>→</i> NIL, <i>true</i>, NIL 
 
@@ -92,7 +92,7 @@ The following examples illustrate some possible return values, but are not inten
 
 (funcall #’(lambda (x) #’(lambda () x)) nil)) 
 
-*→* NIL, *true*, NIL 
+→ NIL, *true*, NIL 
 
 <i><sup>or</sup>→</i> (LAMBDA () X), <i>true</i>, NIL 
 
@@ -106,7 +106,7 @@ The following examples illustrate some possible return values, but are not inten
 
 (function-lambda-expression #’bar)) 
 
-*→* NIL, *false*, NIL 
+→ NIL, *false*, NIL 
 
 <i><sup>or</sup>→</i> NIL, <i>true</i>, NIL 
 
@@ -124,7 +124,7 @@ The following examples illustrate some possible return values, but are not inten
 
 (function-lambda-expression (foo)) 
 
-*→* NIL, *false*, NIL 
+→ NIL, *false*, NIL 
 
 <i><sup>or</sup>→</i> NIL, <i>true</i>, NIL 
 

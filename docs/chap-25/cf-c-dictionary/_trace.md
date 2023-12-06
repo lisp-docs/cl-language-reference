@@ -56,11 +56,11 @@ If a *function* to be traced has been open-coded (*e.g.*, because it was declare
 
 (defun fact (n) (if (zerop n) 1 (\* n (fact (- n 1))))) 
 
-*→* FACT 
+→ FACT 
 
 (trace fact) 
 
-*→* (FACT) 
+→ (FACT) 
 
 ;; Of course, the format of traced output is implementation-dependent. 
 
@@ -88,7 +88,7 @@ If a *function* to be traced has been open-coded (*e.g.*, because it was declare
 
 ▷ 1 Exit FACT 6 
 
-*→* 6 
+→ 6 
 
 
 ```

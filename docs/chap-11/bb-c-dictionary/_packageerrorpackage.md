@@ -36,7 +36,7 @@ Returns a *designator* for the offending *package* in the *situation* represente
 
 :package (find-package "COMMON-LISP"))) 
 
-*→* #\<Package "COMMON-LISP"\> 
+→ #\<Package "COMMON-LISP"\> 
 
 
 ```

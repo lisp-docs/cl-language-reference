@@ -232,19 +232,19 @@ Note that if an *array A* is displaced to another *array B*, and *B* is displace
 
 :initial-contents ’((a b c) (1 2 3))) 
 
-’(4 6)))) *→* T 
+’(4 6)))) → T 
 
-(array-dimensions ada) *→* (4 6) 
+(array-dimensions ada) → (4 6) 
 
-(aref ada 1 1) *→* 2 
+(aref ada 1 1) → 2 
 
 (setq beta (make-array ’(2 3) :adjustable t)) 
 
-*→* #2A((NIL NIL NIL) (NIL NIL NIL)) 
+→ #2A((NIL NIL NIL) (NIL NIL NIL)) 
 
 (adjust-array beta ’(4 6) :displaced-to ada) 
 
-*→* #2A((A B C NIL NIL NIL) 
+→ #2A((A B C NIL NIL NIL) 
 
 (1 2 3 NIL NIL NIL) 
 
@@ -258,9 +258,9 @@ Note that if an *array A* is displaced to another *array B*, and *B* is displace
 
  
 
-(array-dimensions beta) *→* (4 6) 
+(array-dimensions beta) → (4 6) 
 
-(aref beta 1 1) *→* 2 
+(aref beta 1 1) → 2 
 
 Suppose that the 4-by-4 array in m looks like this: 
 

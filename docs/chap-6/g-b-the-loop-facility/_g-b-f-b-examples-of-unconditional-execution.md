@@ -46,7 +46,7 @@ do (print i)
 
 
 
-*→* NIL 
+→ NIL 
 
 
 

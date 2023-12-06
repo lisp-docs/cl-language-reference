@@ -14,7 +14,7 @@ when (symbolp i) collect i)
 
 
 
-*→* (BIRD TURTLE HORSE CAT) 
+→ (BIRD TURTLE HORSE CAT) 
 
 
 
@@ -30,7 +30,7 @@ if (oddp i) collect i)
 
 
 
-*→* (1 3 5 7 9) 
+→ (1 3 5 7 9) 
 
 
 
@@ -54,7 +54,7 @@ finally (print my-list))
 
 
 
-*→* NIL 
+→ NIL 
 
 
 

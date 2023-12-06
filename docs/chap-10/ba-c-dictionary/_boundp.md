@@ -46,11 +46,11 @@ Returns *true* if *symbol* is *bound*; otherwise, returns *false*.
 ```lisp
  
 
-(setq x 1) *→* 1 
+(setq x 1) → 1 
 
 (boundp ’x) *→ true* 
 
-(makunbound ’x) *→* X 
+(makunbound ’x) → X 
 
 (boundp ’x) *→ false* 
 

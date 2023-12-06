@@ -60,13 +60,13 @@ If any *var* refers to a *binding* made by **symbol-macrolet**, then that *var* 
 
 ;; A simple use of SETQ to establish values for variables. 
 
-(setq a 1 b 2 c 3) *→* 3 
+(setq a 1 b 2 c 3) → 3 
 
-a *→* 1 
+a → 1 
 
-b *→* 2 
+b → 2 
 
-c *→* 3 
+c → 3 
 
 ;; Use of SETQ to update values by sequential assignment. 
 
@@ -76,13 +76,13 @@ Data and Control
 
 
 
-(setq a (1+ b) b (1+ a) c (+ a b)) *→* 7 
+(setq a (1+ b) b (1+ a) c (+ a b)) → 7 
 
-a *→* 3 
+a → 3 
 
-b *→* 4 
+b → 4 
 
-c *→* 7 
+c → 7 
 
 ;; This illustrates the use of SETQ on a symbol macro. 
 
@@ -94,7 +94,7 @@ c *→* 7
 
 (list x y z))) 
 
-*→* ((21 22 30) 21 22) 
+→ ((21 22 30) 21 22) 
 
 
 ```

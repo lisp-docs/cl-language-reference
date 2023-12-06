@@ -58,9 +58,9 @@ First *test-form* is evaluated. If the result is *true*, then *then-form* is sel
 ```lisp
  
 
-(if t 1) *→* 1 
+(if t 1) → 1 
 
-(if nil 1 2) *→* 2 
+(if nil 1 2) → 2 
 
 (defun test () 
 
@@ -68,7 +68,7 @@ First *test-form* is evaluated. If the result is *true*, then *then-form* is sel
 
 (if truth-value (print ’true) (print ’false)) 
 
-(prin1 truth-value))) *→* TEST 
+(prin1 truth-value))) → TEST 
 
 (test) 
 
@@ -80,7 +80,7 @@ First *test-form* is evaluated. If the result is *true*, then *then-form* is sel
 
 ▷ TRUE (A B C) 
 
-*→* NIL 
+→ NIL 
 
 
 ```

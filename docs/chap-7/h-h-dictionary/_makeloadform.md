@@ -154,7 +154,7 @@ Both *conforming implementations* and *conforming programs* may further *special
 
 (dist :accessor obj-dist))) 
 
-*→* #\<STANDARD-CLASS OBJ 250020030\> 
+→ #\<STANDARD-CLASS OBJ 250020030\> 
 
 (defmethod shared-initialize :after ((self obj) slot-names &rest keys) 
 
@@ -166,7 +166,7 @@ Both *conforming implementations* and *conforming programs* may further *special
 
 (sqrt (+ (expt (obj-x self) 2) (expt (obj-y self) 2)))))) 
 
-*→* #\<STANDARD-METHOD SHARED-INITIALIZE (:AFTER) (OBJ T) 26266714\> 
+→ #\<STANDARD-METHOD SHARED-INITIALIZE (:AFTER) (OBJ T) 26266714\> 
 
 (defmethod make-load-form ((self obj) &optional environment) 
 
@@ -182,13 +182,13 @@ Both *conforming implementations* and *conforming programs* may further *special
 
 :x ’,(obj-x self) :y ’,(obj-y self))) 
 
-*→* #\<STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 26267532\> 
+→ #\<STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 26267532\> 
 
-(setq obj1 (make-instance ’obj :x 3.0 :y 4.0)) *→* #\<OBJ 26274136\> 
+(setq obj1 (make-instance ’obj :x 3.0 :y 4.0)) → #\<OBJ 26274136\> 
 
-(obj-dist obj1) *→* 5.0 
+(obj-dist obj1) → 5.0 
 
-(make-load-form obj1) *→* (MAKE-INSTANCE ’OBJ :X ’3.0 :Y ’4.0) 
+(make-load-form obj1) → (MAKE-INSTANCE ’OBJ :X ’3.0 :Y ’4.0) 
 
 In the above example, an equivalent *instance* of obj is reconstructed by using the values of two of its *slots*. The value of the third *slot* is derived from those two values. 
 
@@ -204,7 +204,7 @@ Another way to write the **make-load-form** *method* in that example is to use *
 
 :environment environment)) 
 
-*→* #\<STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 42755655\> 
+→ #\<STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 42755655\> 
 
 
 
@@ -218,7 +218,7 @@ Another way to write the **make-load-form** *method* in that example is to use *
 
 (make-load-form obj1) 
 
-*→* (ALLOCATE-INSTANCE ’#\<STANDARD-CLASS OBJ 250020030\>), 
+→ (ALLOCATE-INSTANCE ’#\<STANDARD-CLASS OBJ 250020030\>), 
 
 (PROGN 
 

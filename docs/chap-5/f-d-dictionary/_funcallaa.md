@@ -110,19 +110,19 @@ Data and Control
 
 (when (&gt; x 0) 
 
-(recur (1- x)))) *→* RECUR 
+(recur (1- x)))) → RECUR 
 
 (defun ex (a b &amp;optional c (d 66) &amp;rest keys &amp;key test (start 0)) 
 
-(list a b c d keys test start)) *→* EX 
+(list a b c d keys test start)) → EX 
 
-(ex 1 2) *→* (1 2 NIL 66 NIL NIL 0) 
+(ex 1 2) → (1 2 NIL 66 NIL NIL 0) 
 
 (ex 1 2 3 4 :test ’equal :start 50) 
 
-*→* (1 2 3 4 (:TEST EQUAL :START 50) EQUAL 50) 
+→ (1 2 3 4 (:TEST EQUAL :START 50) EQUAL 50) 
 
-(ex :test 1 :start 2) *→* (:TEST 1 :START 2 NIL NIL 0) 
+(ex :test 1 :start 2) → (:TEST 1 :START 2 NIL NIL 0) 
 
 ;; This function assumes its callers have checked the types of the 
 
@@ -134,9 +134,9 @@ Data and Control
 
 "Compute the discriminant for a quadratic equation." 
 
-(- (\* b b) (\* 4 a c))) *→* DISCRIMINANT 
+(- (\* b b) (\* 4 a c))) → DISCRIMINANT 
 
-(discriminant 1 2/3 -2) *→* 76/9 
+(discriminant 1 2/3 -2) → 76/9 
 
 ;; This function assumes its callers have not checked the types of the 
 
@@ -152,9 +152,9 @@ Data and Control
 
 (locally (declare (number a b c)) 
 
-(- (\* b b) (\* 4 a c)))) *→* CAREFUL-DISCRIMINANT 
+(- (\* b b) (\* 4 a c)))) → CAREFUL-DISCRIMINANT 
 
-(careful-discriminant 1 2/3 -2) *→* 76/9 
+(careful-discriminant 1 2/3 -2) → 76/9 
 
 
 ```

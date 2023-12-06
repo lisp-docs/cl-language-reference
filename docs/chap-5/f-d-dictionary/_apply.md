@@ -42,19 +42,19 @@ When the *function* receives its arguments via **&amp;rest**, it is permissible 
 ```lisp
  
 
-(setq f ’+) *→* + 
+(setq f ’+) → + 
 
-(apply f ’(1 2)) *→* 3 
+(apply f ’(1 2)) → 3 
 
-(setq f #’-) *→* #<FUNCTION -> 
+(setq f #’-) → #<FUNCTION -> 
 
-(apply f ’(1 2)) *→* -1 
+(apply f ’(1 2)) → -1 
 
-(apply #’max 3 5 ’(2 7 3)) *→* 7 
+(apply #’max 3 5 ’(2 7 3)) → 7 
 
-(apply ’cons ’((+ 2 3) 4)) *→* ((+ 2 3) . 4) 
+(apply ’cons ’((+ 2 3) 4)) → ((+ 2 3) . 4) 
 
-(apply #’+ ’()) *→* 0 
+(apply #’+ ’()) → 0 
 
 (defparameter \*some-list\* ’(a b c)) 
 
@@ -82,7 +82,7 @@ When the *function* receives its arguments via **&amp;rest**, it is permissible 
 
 
 
-*→* #(A B C D A B C D) 
+→ #(A B C D A B C D) 
 
 
 ```

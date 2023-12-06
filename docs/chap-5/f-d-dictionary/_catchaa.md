@@ -22,7 +22,7 @@
 ```lisp
  
 
-nil *→* NIL 
+nil → NIL 
 
 
 ```

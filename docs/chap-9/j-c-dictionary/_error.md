@@ -52,11 +52,11 @@ If the *condition* is not handled, (invoke-debugger *condition*) is done. As a c
 
 (t (\* x (factorial (- x 1)))))) 
 
-*→* FACTORIAL 
+→ FACTORIAL 
 
 (factorial 20) 
 
-*→* 2432902008176640000 
+→ 2432902008176640000 
 
 (factorial -1) 
 
@@ -70,7 +70,7 @@ If the *condition* is not handled, (invoke-debugger *condition*) is done. As a c
 
 (setq a ’fred) 
 
-*→* FRED 
+→ FRED 
 
 (if (numberp a) (1+ a) (error "&#126;S is not a number." A)) 
 
@@ -94,7 +94,7 @@ If the *condition* is not handled, (invoke-debugger *condition*) is done. As a c
 
 (not-a-number-argument condition))))) 
 
-*→* NOT-A-NUMBER 
+→ NOT-A-NUMBER 
 
 (if (numberp a) (1+ a) (error ’not-a-number :argument a)) 
 

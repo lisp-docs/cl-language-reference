@@ -35,7 +35,7 @@ If a comma is immediately followed by an *at-sign*, then the *form* following th
 
 
 
-*→* (x (a b c) a b c foo b bar (b c) baz b c)  
+→ (x (a b c) a b c foo b bar (b c) baz b c)  
 
 
 

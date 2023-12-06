@@ -78,19 +78,19 @@ After this operation completes, the *home package* of any *symbol* whose *home p
 
 (setq \*baz-package\* (make-package "BAZ" :use ’("BAR"))) 
 
-(symbol-package \*foo-symbol\*) *→* #<PACKAGE "FOO"> 
+(symbol-package \*foo-symbol\*) → #<PACKAGE "FOO"> 
 
-(symbol-package \*bar-symbol\*) *→* #<PACKAGE "BAR"> 
+(symbol-package \*bar-symbol\*) → #<PACKAGE "BAR"> 
 
-(prin1-to-string \*foo-symbol\*) *→* "FOO:FOO" 
+(prin1-to-string \*foo-symbol\*) → "FOO:FOO" 
 
-(prin1-to-string \*bar-symbol\*) *→* "BAR:BAR" 
+(prin1-to-string \*bar-symbol\*) → "BAR:BAR" 
 
-(find-symbol "FOO" \*bar-package\*) *→* FOO:FOO, :EXTERNAL 
+(find-symbol "FOO" \*bar-package\*) → FOO:FOO, :EXTERNAL 
 
-(find-symbol "FOO" \*baz-package\*) *→* FOO:FOO, :INHERITED 
+(find-symbol "FOO" \*baz-package\*) → FOO:FOO, :INHERITED 
 
-(find-symbol "BAR" \*baz-package\*) *→* BAR:BAR, :INHERITED 
+(find-symbol "BAR" \*baz-package\*) → BAR:BAR, :INHERITED 
 
 (packagep \*foo-package\*) *→ true* 
 
@@ -98,17 +98,17 @@ After this operation completes, the *home package* of any *symbol* whose *home p
 
 (packagep \*baz-package\*) *→ true* 
 
-(package-name \*foo-package\*) *→* "FOO" 
+(package-name \*foo-package\*) → "FOO" 
 
-(package-name \*bar-package\*) *→* "BAR" 
+(package-name \*bar-package\*) → "BAR" 
 
-(package-name \*baz-package\*) *→* "BAZ" 
+(package-name \*baz-package\*) → "BAZ" 
 
-(package-use-list \*foo-package\*) *→* () 
+(package-use-list \*foo-package\*) → () 
 
-(package-use-list \*bar-package\*) *→* (#<PACKAGE "FOO">) 
+(package-use-list \*bar-package\*) → (#<PACKAGE "FOO">) 
 
-(package-use-list \*baz-package\*) *→* (#<PACKAGE "BAR">) 
+(package-use-list \*baz-package\*) → (#<PACKAGE "BAR">) 
 
 
 
@@ -118,11 +118,11 @@ After this operation completes, the *home package* of any *symbol* whose *home p
 
 **delete-package** 
 
-(package-used-by-list \*foo-package\*) *→* (#<PACKAGE "BAR">) 
+(package-used-by-list \*foo-package\*) → (#<PACKAGE "BAR">) 
 
-(package-used-by-list \*bar-package\*) *→* (#<PACKAGE "BAZ">) 
+(package-used-by-list \*bar-package\*) → (#<PACKAGE "BAZ">) 
 
-(package-used-by-list \*baz-package\*) *→* () 
+(package-used-by-list \*baz-package\*) → () 
 
 (delete-package \*bar-package\*) 
 
@@ -136,45 +136,45 @@ After this operation completes, the *home package* of any *symbol* whose *home p
 
 ▷ Debug> :CONTINUE 
 
-*→* T 
+→ T 
 
-(symbol-package \*foo-symbol\*) *→* #<PACKAGE "FOO"> 
+(symbol-package \*foo-symbol\*) → #<PACKAGE "FOO"> 
 
 (symbol-package \*bar-symbol\*) is unspecified 
 
-(prin1-to-string \*foo-symbol\*) *→* "FOO:FOO" 
+(prin1-to-string \*foo-symbol\*) → "FOO:FOO" 
 
 (prin1-to-string \*bar-symbol\*) is unspecified 
 
 (find-symbol "FOO" \*bar-package\*) is unspecified 
 
-(find-symbol "FOO" \*baz-package\*) *→* NIL, NIL 
+(find-symbol "FOO" \*baz-package\*) → NIL, NIL 
 
-(find-symbol "BAR" \*baz-package\*) *→* NIL, NIL 
+(find-symbol "BAR" \*baz-package\*) → NIL, NIL 
 
-(packagep \*foo-package\*) *→* T 
+(packagep \*foo-package\*) → T 
 
-(packagep \*bar-package\*) *→* T 
+(packagep \*bar-package\*) → T 
 
-(packagep \*baz-package\*) *→* T 
+(packagep \*baz-package\*) → T 
 
-(package-name \*foo-package\*) *→* "FOO" 
+(package-name \*foo-package\*) → "FOO" 
 
-(package-name \*bar-package\*) *→* NIL 
+(package-name \*bar-package\*) → NIL 
 
-(package-name \*baz-package\*) *→* "BAZ" 
+(package-name \*baz-package\*) → "BAZ" 
 
-(package-use-list \*foo-package\*) *→* () 
+(package-use-list \*foo-package\*) → () 
 
 (package-use-list \*bar-package\*) is unspecified 
 
-(package-use-list \*baz-package\*) *→* () 
+(package-use-list \*baz-package\*) → () 
 
-(package-used-by-list \*foo-package\*) *→* () 
+(package-used-by-list \*foo-package\*) → () 
 
 (package-used-by-list \*bar-package\*) is unspecified 
 
-(package-used-by-list \*baz-package\*) *→* () 
+(package-used-by-list \*baz-package\*) → () 
 
 
 ```

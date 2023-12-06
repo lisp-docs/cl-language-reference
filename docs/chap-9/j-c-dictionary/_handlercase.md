@@ -156,9 +156,9 @@ If there are no *forms* in a selected *clause*, the case, and therefore **handle
 
 (condition () "Hardly worth mentioning."))) 
 
-*→* ASSESS-CONDITION 
+→ ASSESS-CONDITION 
 
-(assess-condition (make-condition ’stream-error :stream \*terminal-io\*)) *→* "#<STREAM-ERROR 12352256> looks especially bad." 
+(assess-condition (make-condition ’stream-error :stream \*terminal-io\*)) → "#<STREAM-ERROR 12352256> looks especially bad." 
 
 (define-condition random-condition (condition) () 
 
@@ -168,11 +168,11 @@ If there are no *forms* in a selected *clause*, the case, and therefore **handle
 
 (princ "Yow" stream)))) 
 
-*→* RANDOM-CONDITION 
+→ RANDOM-CONDITION 
 
 (assess-condition (make-condition ’random-condition)) 
 
-*→* "Hardly worth mentioning." 
+→ "Hardly worth mentioning." 
 
 
 ```

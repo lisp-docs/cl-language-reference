@@ -40,7 +40,7 @@
 
 :element-type ’unsigned-byte) 
 
-(write-byte 101 s)) *→* 101 
+(write-byte 101 s)) → 101 
 
 
 ```
@@ -182,7 +182,7 @@ When *input-stream* is an *echo stream*, characters that are only peeked at are 
 
 ▷ #\1 #\4 #\4 
 
-*→* NIL 
+→ NIL 
 
 
 ```

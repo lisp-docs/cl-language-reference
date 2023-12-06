@@ -134,7 +134,7 @@ The *value* of **-** is the *form* that is currently being evaluated by the *Lis
 
 ▷ Evaluating (FORMAT T "&#126;&amp;Evaluating &#126;S&#126;%" -) 
 
-*→* NIL 
+→ NIL 
 
 
 ```

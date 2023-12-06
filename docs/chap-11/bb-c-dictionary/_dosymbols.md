@@ -134,13 +134,13 @@ Any *tag* in the body is treated as with **tagbody**.
 ```lisp
  
 
-(make-package ’temp :use nil) *→* #<PACKAGE "TEMP"> 
+(make-package ’temp :use nil) → #<PACKAGE "TEMP"> 
 
-(intern "SHY" ’temp) *→* TEMP::SHY, NIL ;SHY will be an internal symbol 
+(intern "SHY" ’temp) → TEMP::SHY, NIL ;SHY will be an internal symbol 
 
 ;in the package TEMP 
 
-(export (intern "BOLD" ’temp) ’temp) *→* T ;BOLD will be external 
+(export (intern "BOLD" ’temp) ’temp) → T ;BOLD will be external 
 
 (let ((lst ())) 
 
@@ -148,7 +148,7 @@ Any *tag* in the body is treated as with **tagbody**.
 
 lst) 
 
-*→* (TEMP::SHY TEMP:BOLD) 
+→ (TEMP::SHY TEMP:BOLD) 
 
 <i><sup>or</sup>→</i> (TEMP:BOLD TEMP::SHY) 
 
@@ -158,7 +158,7 @@ lst)
 
 lst) 
 
-*→* (TEMP:BOLD) 
+→ (TEMP:BOLD) 
 
 (let ((lst ())) 
 
@@ -168,7 +168,7 @@ lst)
 
 lst) 
 
-*→* (TEMP::SHY TEMP:BOLD) 
+→ (TEMP::SHY TEMP:BOLD) 
 
 <i><sup>or</sup>→</i> (TEMP:BOLD TEMP::SHY) 
 

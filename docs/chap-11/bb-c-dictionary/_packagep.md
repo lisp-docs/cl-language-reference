@@ -78,13 +78,13 @@ Whatever *package object* is currently the *value* of **\*package\*** is referre
 ```lisp
  
 
-(in-package "COMMON-LISP-USER") *→* #<PACKAGE "COMMON-LISP-USER"> 
+(in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
 
-\*package\* *→* #<PACKAGE "COMMON-LISP-USER"> 
+\*package\* → #<PACKAGE "COMMON-LISP-USER"> 
 
 (make-package "SAMPLE-PACKAGE" :use ’("COMMON-LISP")) 
 
-*→* #<PACKAGE "SAMPLE-PACKAGE"> 
+→ #<PACKAGE "SAMPLE-PACKAGE"> 
 
 (list 
 
@@ -102,13 +102,13 @@ Whatever *package object* is currently the *value* of **\*package\*** is referre
 
 \*package\*) 
 
-*→* (#<PACKAGE "SAMPLE-PACKAGE"> #<PACKAGE "COMMON-LISP-USER">) 
+→ (#<PACKAGE "SAMPLE-PACKAGE"> #<PACKAGE "COMMON-LISP-USER">) 
 
 (list (symbol-package (read-from-string "just-testing")) 
 
 \*package\*) 
 
-*→* (#<PACKAGE "COMMON-LISP-USER"> #<PACKAGE "COMMON-LISP-USER">) 
+→ (#<PACKAGE "COMMON-LISP-USER"> #<PACKAGE "COMMON-LISP-USER">) 
 
 (eq ’foo (intern "FOO")) *→ true* 
 

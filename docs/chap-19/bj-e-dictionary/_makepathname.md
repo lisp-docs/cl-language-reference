@@ -104,7 +104,7 @@ If the *directory* is a *string*, it should be the name of a top level directory
 
 :name "chess" :type "db") 
 
-*→* #P"/public/games/chess.db" 
+→ #P"/public/games/chess.db" 
 
 ;; Implementation B – an implementation with access to one or more 
 
@@ -120,7 +120,7 @@ If the *directory* is a *string*, it should be the name of a top level directory
 
 :name "CHESS" :type "DB") 
 
-*→* #P"SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
+→ #P"SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
 
 (make-pathname :host "BOBBY" 
 
@@ -128,7 +128,7 @@ If the *directory* is a *string*, it should be the name of a top level directory
 
 :name "CHESS" :type "DB") 
 
-*→* #P"BOBBY::SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
+→ #P"BOBBY::SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
 
 ;; Implementation C – an implementation with simultaneous access to 
 
@@ -166,7 +166,7 @@ If the *directory* is a *string*, it should be the name of a top level directory
 
 ▷ #P"MY-UNIX:/PUBLIC/GAMES/CHESS.DB" 
 
-*→* NIL 
+→ NIL 
 
 
 ```

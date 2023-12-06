@@ -210,15 +210,15 @@ after macro expansion. The occurrences of x and flag legitimately refer to the p
 
 (flet ((flet1 (n) (+ 2 (flet1 n)))) 
 
-(flet1 2))) *→* 6 
+(flet1 2))) → 6 
 
-(defun dummy-function () ’top-level) *→* DUMMY-FUNCTION 
+(defun dummy-function () ’top-level) → DUMMY-FUNCTION 
 
-(funcall #’dummy-function) *→* TOP-LEVEL 
+(funcall #’dummy-function) → TOP-LEVEL 
 
 (flet ((dummy-function () ’shadow)) 
 
-(funcall #’dummy-function)) *→* SHADOW 
+(funcall #’dummy-function)) → SHADOW 
 
 (eq (funcall #’dummy-function) (funcall ’dummy-function)) 
 
@@ -238,15 +238,15 @@ after macro expansion. The occurrences of x and flag legitimately refer to the p
 
 (if (zerop n) 0 (+ k (temp (1- n)))))) 
 
-(temp n))) *→* RECURSIVE-TIMES 
+(temp n))) → RECURSIVE-TIMES 
 
-(recursive-times 2 3) *→* 6 
+(recursive-times 2 3) → 6 
 
 (defmacro mlets (x &amp;environment env) 
 
 (let ((form ‘(babbit ,x))) 
 
-(macroexpand form env))) *→* MLETS 
+(macroexpand form env))) → MLETS 
 
 
 
@@ -256,7 +256,7 @@ after macro expansion. The occurrences of x and flag legitimately refer to the p
 
 **flet, labels, macrolet** 
 
-(macrolet ((babbit (z) ‘(+ ,z ,z))) (mlets 5)) *→* 10 
+(macrolet ((babbit (z) ‘(+ ,z ,z))) (mlets 5)) → 10 
 
 (flet ((safesqrt (x) (sqrt (abs x)))) 
 
@@ -264,7 +264,7 @@ after macro expansion. The occurrences of x and flag legitimately refer to the p
 
 (safesqrt (apply #’+ (map ’list #’safesqrt ’(1 2 3 4 5 6))))) 
 
-*→* 3.291173 
+→ 3.291173 
 
 (defun integer-power (n k) 
 
@@ -290,7 +290,7 @@ after macro expansion. The occurrences of x and flag legitimately refer to the p
 
 (t (expt0 (\* x x) (floor k 2) (\* x a)))))) 
 
-(expt0 n k 1))) *→* INTEGER-POWER 
+(expt0 n k 1))) → INTEGER-POWER 
 
 (defun example (y l) 
 
@@ -312,7 +312,7 @@ l))
 
 ’((1) (2) (3) (4 2) (5) (6 3 2))) 
 
-*→* ((1) (2) (3) (4 2) (5) (6 3 2) (A APPLE APRICOT) (B BANANA) (C CHERRY)) 
+→ ((1) (2) (3) (4 2) (5) (6 3 2) (A APPLE APRICOT) (B BANANA) (C CHERRY)) 
 
 
 ```

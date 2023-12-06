@@ -96,7 +96,7 @@ The consequences are undefined if an attempt is made to *assign* the *variable v
 
 (setq fstr (make-array ’(0) :element-type ’base-char 
 
-:fill-pointer 0 :adjustable t)) *→* "" 
+:fill-pointer 0 :adjustable t)) → "" 
 
 (with-output-to-string (s fstr) 
 
@@ -104,7 +104,7 @@ The consequences are undefined if an attempt is made to *assign* the *variable v
 
 (input-stream-p s)) *→ false* 
 
-fstr *→* "here’s some output" 
+fstr → "here’s some output" 
 
 
 ```
@@ -224,13 +224,13 @@ The *value* of **\*trace-output\***, called *trace output*, is the *stream* on w
 
 (warn "this string is sent to \*error-output\*")) 
 
-*→* "Warning: this string is sent to \*error-output\* 
+→ "Warning: this string is sent to \*error-output\* 
 
 " ;The exact format of this string is *implementation-dependent*. 
 
 (with-input-from-string (\*standard-input\* "1001") 
 
-(+ 990 (read))) *→* 1991 
+(+ 990 (read))) → 1991 
 
 (progn (setq out (with-output-to-string (\*standard-output\*) 
 
@@ -240,21 +240,21 @@ The *value* of **\*trace-output\***, called *trace output*, is the *stream* on w
 
 :done) 
 
-*→* :DONE 
+→ :DONE 
 
 out 
 
-*→* " 
+→ " 
 
 \"print and format t send things to\" \*standard-output\* now going to a string" 
 
 (defun fact (n) (if (&lt; n 2) 1 (\* n (fact (- n 1))))) 
 
-*→* FACT 
+→ FACT 
 
 (trace fact) 
 
-*→* (FACT) 
+→ (FACT) 
 
 ;; Of course, the format of traced output is implementation-dependent. 
 
@@ -262,7 +262,7 @@ out
 
 (fact 3)) 
 
-*→* " 
+→ " 
 
 1 Enter FACT 3 
 
@@ -376,7 +376,7 @@ The effect of changing the *value* of **\*terminal-io\***, either by *binding* o
 
 ▷ FOOBAR 
 
-*→* BAR 
+→ BAR 
 
 (with-output-to-string (\*standard-output\*) 
 
@@ -386,7 +386,7 @@ The effect of changing the *value* of **\*terminal-io\***, either by *binding* o
 
 ▷ BAR 
 
-*→* "FOO" 
+→ "FOO" 
 
 
 ```

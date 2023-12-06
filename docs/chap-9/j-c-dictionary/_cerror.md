@@ -56,7 +56,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 (real-sqrt 4) 
 
-*→* 2.0 
+→ 2.0 
 
 (real-sqrt -9) 
 
@@ -70,7 +70,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 ▷ Debug&gt; :continue 1 
 
-*→* 3.0 
+→ 3.0 
 
 (define-condition not-a-number (error) 
 
@@ -108,7 +108,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 ▷ Type a number: 1/2 
 
-*→* 1/2 
+→ 1/2 
 
 (defun assure-large-number (n) 
 
@@ -136,7 +136,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 (assure-large-number 10000) 
 
-*→* 10000 
+→ 10000 
 
 (assure-large-number ’a) 
 
@@ -152,7 +152,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 ▷ Type a large number: 88 
 
-*→* 88 
+→ 88 
 
 (assure-large-number 37) 
 
@@ -168,7 +168,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 ▷ Type a large number: 259 
 
-*→* 259 
+→ 259 
 
 (define-condition not-a-large-number (error) 
 
@@ -222,7 +222,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 ▷ Type a large number: 88 
 
-*→* 88 
+→ 88 
 
 (assure-large-number 37) 
 
@@ -238,7 +238,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 ▷ Type a large number: 259 
 
-*→* 259 
+→ 259 
 
 
 ```

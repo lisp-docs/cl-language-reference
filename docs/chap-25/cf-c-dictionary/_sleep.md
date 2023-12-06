@@ -42,7 +42,7 @@ Causes execution to cease and become dormant for approximately the seconds of re
 ```lisp
  
 
-(sleep 1) *→* NIL 
+(sleep 1) → NIL 
 
 ;; Actually, since SLEEP is permitted to use approximate timing, 
 

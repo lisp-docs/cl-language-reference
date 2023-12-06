@@ -46,9 +46,9 @@ Returns a *two-way stream* that gets its input from *input-stream* and sends its
 
 (format two "output...") 
 
-(setq what-is-read (read two))))) *→* "output..." 
+(setq what-is-read (read two))))) → "output..." 
 
-what-is-read *→* INPUT... 
+what-is-read → INPUT... 
 
 
 ```

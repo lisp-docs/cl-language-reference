@@ -18,7 +18,7 @@ always (&lt; i 11))
 
 
 
-*→* T 
+→ T 
 
 
 
@@ -30,7 +30,7 @@ never (&gt; i 11))
 
 
 
-*→* T 
+→ T 
 
 
 
@@ -50,7 +50,7 @@ thereis (when (&gt; i 10) i) )
 
 
 
-*→* 11 
+→ 11 
 
 
 
@@ -70,7 +70,7 @@ finally (print "you won’t see this"))
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -82,7 +82,7 @@ finally (print "you won’t see this"))
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -94,7 +94,7 @@ finally (print "you won’t see this"))
 
 
 
-*→* "Here is my value" 
+→ "Here is my value" 
 
 
 
@@ -122,7 +122,7 @@ finally (prin1 ’got-here))
 
 
 
-*→* NIL 
+→ NIL 
 
 
 

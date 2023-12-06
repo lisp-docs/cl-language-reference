@@ -70,9 +70,9 @@ For a *stream* created with **make-string-output-stream**, the result of **get-o
 ```lisp
  
 
-(setq s (make-broadcast-stream)) *→* #&lt;BROADCAST-STREAM&gt; 
+(setq s (make-broadcast-stream)) → #&lt;BROADCAST-STREAM&gt; 
 
-(close s) *→* T 
+(close s) → T 
 
 (output-stream-p s) *→ true* 
 

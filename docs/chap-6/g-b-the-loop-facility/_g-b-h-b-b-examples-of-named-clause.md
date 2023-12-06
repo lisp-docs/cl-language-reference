@@ -26,7 +26,7 @@ do (return-from max ’done))
 
 
 
-*→* DONE 
+→ DONE 
 
 
 

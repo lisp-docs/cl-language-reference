@@ -134,7 +134,7 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 ```lisp
  
 
-(get-dispatch-macro-character #\# #\\{) *→* NIL 
+(get-dispatch-macro-character #\# #\\{) → NIL 
 
 (set-dispatch-macro-character #\# #\\{ ;dispatch on #\{ 
 
@@ -154,13 +154,13 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 
  
 
-list))) *→* T 
+list))) → T 
 
-#\{(1 2 3 4) *→* 1 
+#\{(1 2 3 4) → 1 
 
-#3\{(0 1 2 3) *→* 3 
+#3\{(0 1 2 3) → 3 
 
-#\{123 *→* 123 
+#\{123 → 123 
 
 If it is desired that #$*foo* : as if it were (dollars *foo*). 
 
@@ -168,9 +168,9 @@ If it is desired that #$*foo* : as if it were (dollars *foo*).
 
 (declare (ignore subchar arg)) 
 
-(list ’dollars (read stream t nil t))) *→* |#$-reader| 
+(list ’dollars (read stream t nil t))) → |#$-reader| 
 
-(set-dispatch-macro-character #\# #\$ #’|#$-reader|) *→* T 
+(set-dispatch-macro-character #\# #\$ #’|#$-reader|) → T 
 
 
 ```

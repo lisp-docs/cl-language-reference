@@ -56,7 +56,7 @@
 
 (stream-element-type s)) 
 
-*→* INTEGER 
+→ INTEGER 
 
 <i><sup>or</sup>→</i> (UNSIGNED-BYTE 16) 
 

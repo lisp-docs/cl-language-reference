@@ -30,7 +30,7 @@ when (symbolp i) do (loop-finish)
 
 count i) 
 
-*→* 3 
+→ 3 
 
 ;; The preceding loop is equivalent to: 
 
@@ -40,7 +40,7 @@ until (symbolp i)
 
 count i) 
 
-*→* 3 
+→ 3 
 
 ;; While LOOP-FINISH can be used can be used in a variety of 
 
@@ -90,15 +90,15 @@ finally (add-word word sentence)
 
 (return (values (nreverse sentence) endpos))))) 
 
-*→* TOKENIZE-SENTENCE 
+→ TOKENIZE-SENTENCE 
 
 (tokenize-sentence "this is a sentence. this is another sentence.") 
 
-*→* ("this" "is" "a" "sentence"), 19 
+→ ("this" "is" "a" "sentence"), 19 
 
 (tokenize-sentence "this is a sentence") 
 
-*→* ("this" "is" "a" "sentence"), NIL 
+→ ("this" "is" "a" "sentence"), NIL 
 
 
 ```

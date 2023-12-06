@@ -52,13 +52,13 @@ Please leave lots of toys.&#126;2%Love, Sue&#126;
 
 (truename s)) 
 
-*→* #P"CUPID:/susan/noel.text" 
+→ #P"CUPID:/susan/noel.text" 
 
 (with-open-file (s "noel.text") 
 
 (file-write-date s)) 
 
-*→* 2902600800 
+→ 2902600800 
 
 
 ```

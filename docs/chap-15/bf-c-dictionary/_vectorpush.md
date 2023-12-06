@@ -70,9 +70,9 @@
 
  
 
-:initial-element ’first-one))) *→* 2 
+:initial-element ’first-one))) → 2 
 
-(fill-pointer fa) *→* 3 
+(fill-pointer fa) → 3 
 
 (eq (aref fa 2) fable) *→ true* 
 
@@ -86,17 +86,17 @@
 
 :adjustable t 
 
-:fill-pointer 3))) *→* 3 
+:fill-pointer 3))) → 3 
 
-(fill-pointer aa) *→* 4 
+(fill-pointer aa) → 4 
 
-(vector-push-extend #\Y aa 4) *→* 4 
+(vector-push-extend #\Y aa 4) → 4 
 
-(array-total-size aa) *→* at least 5 
+(array-total-size aa) → at least 5 
 
-(vector-push-extend #\Z aa 4) *→* 5 
+(vector-push-extend #\Z aa 4) → 5 
 
-(array-total-size aa) *→* 9 ;(or more) 
+(array-total-size aa) → 9 ;(or more) 
 
 
 ```

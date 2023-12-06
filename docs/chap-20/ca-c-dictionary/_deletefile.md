@@ -64,11 +64,11 @@ The consequences are undefined if *filespec* has a *wild* component, or if *file
 
 (with-open-file (s "delete-me.text" :direction :output :if-exists :error)) 
 
-*→* NIL 
+→ NIL 
 
-(setq p (probe-file "delete-me.text")) *→* #P"R:&gt;fred&gt;delete-me.text.1" 
+(setq p (probe-file "delete-me.text")) → #P"R:&gt;fred&gt;delete-me.text.1" 
 
-(delete-file p) *→* T 
+(delete-file p) → T 
 
 (probe-file "delete-me.text") *→ false* 
 
@@ -76,7 +76,7 @@ The consequences are undefined if *filespec* has a *wild* component, or if *file
 
 (delete-file s)) 
 
-*→* T 
+→ T 
 
 (probe-file "delete-me.text") *→ false* 
 

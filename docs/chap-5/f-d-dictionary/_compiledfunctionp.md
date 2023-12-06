@@ -46,7 +46,7 @@ Returns *true* if *object* is of *type* **compiled-function**; otherwise, return
 ```lisp
  
 
-(defun f (x) x) *→* F 
+(defun f (x) x) → F 
 
 (compiled-function-p #’f) 
 
@@ -56,7 +56,7 @@ Returns *true* if *object* is of *type* **compiled-function**; otherwise, return
 
 (compiled-function-p ’f) *→ false* 
 
-(compile ’f) *→* F 
+(compile ’f) → F 
 
 (compiled-function-p #’f) *→ true* 
 

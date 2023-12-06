@@ -48,13 +48,13 @@
 
 (short-site-name) 
 
-*→* "MIT AI Lab" 
+→ "MIT AI Lab" 
 
 <i><sup>or</sup>→</i> "CMU-CSD" 
 
 (long-site-name) 
 
-*→* "MIT Artificial Intelligence Laboratory" 
+→ "MIT Artificial Intelligence Laboratory" 
 
 <i><sup>or</sup>→</i> "CMU Computer Science Department" 
 

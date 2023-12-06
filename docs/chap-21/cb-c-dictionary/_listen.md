@@ -38,11 +38,11 @@ Returns *true* if there is a character immediately available from *input-stream*
 
 ▷ 1 
 
-*→* (T #\1) 
+→ (T #\1) 
 
 (progn (clear-input) (listen)) 
 
-*→* NIL ;Unless you’re a very fast typist! 
+→ NIL ;Unless you’re a very fast typist! 
 
 
 ```

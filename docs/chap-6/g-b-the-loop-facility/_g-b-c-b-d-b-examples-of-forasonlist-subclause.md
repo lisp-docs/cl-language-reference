@@ -14,7 +14,7 @@ collect sublist)
 
 
 
-*→* ((A B C D) (B C D) (C D) (D)) 
+→ ((A B C D) (B C D) (C D) (D)) 
 
 
 
@@ -42,7 +42,7 @@ do (print item))
 
 
 
-*→* NIL 
+→ NIL 
 
 
 

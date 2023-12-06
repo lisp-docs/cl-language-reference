@@ -68,11 +68,11 @@ If *identifier* is a currently active restart, then it is returned. Otherwise, *
 
 ▷ #<RESTART 32307325> is named MY-RESTART 
 
-*→* NIL 
+→ NIL 
 
 (find-restart ’my-restart) 
 
-*→* NIL 
+→ NIL 
 
 
 ```

@@ -490,7 +490,7 @@ If two *characters* have *identical implementation-defined attributes*, then the
 
 
 
-*→* (#\A #\a #\b #\B #\c #\C) 
+→ (#\A #\a #\b #\B #\c #\C) 
 
 
 
@@ -498,23 +498,23 @@ If two *characters* have *identical implementation-defined attributes*, then the
 
 
 
-*→* (#\A #\B #\C #\a #\b #\c) ;Implementation A 
+→ (#\A #\B #\C #\a #\b #\c) ;Implementation A 
 
 
 
-*→* (#\a #\b #\c #\A #\B #\C) ;Implementation B 
+→ (#\a #\b #\c #\A #\B #\C) ;Implementation B 
 
 
 
-*→* (#\a #\A #\b #\B #\c #\C) ;Implementation C 
+→ (#\a #\A #\b #\B #\c #\C) ;Implementation C 
 
 
 
-*→* (#\A #\a #\B #\b #\C #\c) ;Implementation D 
+→ (#\A #\a #\B #\b #\C #\c) ;Implementation D 
 
 
 
-*→* (#\A #\B #\a #\b #\C #\c) ;Implementation E 
+→ (#\A #\B #\a #\b #\C #\c) ;Implementation E 
 
 
 
@@ -598,19 +598,19 @@ Returns the *character* denoted by the *character designator* .
 
 
 
-(character #\a) *→* #\a 
+(character #\a) → #\a 
 
 
 
-(character "a") *→* #\a 
+(character "a") → #\a 
 
 
 
-(character ’a) *→* #\A 
+(character ’a) → #\A 
 
 
 
-(character ’\a) *→* #\a 
+(character ’\a) → #\a 
 
 
 
@@ -982,11 +982,11 @@ If *weight* is greater than or equal to *radix*, **digit-char** returns *false*.
 
 
 
-(digit-char 0) *→* #\0 
+(digit-char 0) → #\0 
 
 
 
-(digit-char 10 11) *→* #\A 
+(digit-char 10 11) → #\A 
 
 
 
@@ -994,7 +994,7 @@ If *weight* is greater than or equal to *radix*, **digit-char** returns *false*.
 
 
 
-(digit-char 7) *→* #\7 
+(digit-char 7) → #\7 
 
 
 
@@ -1002,7 +1002,7 @@ If *weight* is greater than or equal to *radix*, **digit-char** returns *false*.
 
 
 
-(digit-char 12 16) *→* #\C ;not #\c 
+(digit-char 12 16) → #\C ;not #\c 
 
 
 
@@ -1010,7 +1010,7 @@ If *weight* is greater than or equal to *radix*, **digit-char** returns *false*.
 
 
 
-(digit-char 1 2) *→* #\1 
+(digit-char 1 2) → #\1 
 
 
 
@@ -1078,7 +1078,7 @@ Tests whether *char* is a digit in the specified *radix* (*i.e.*, with a weight 
 
 
 
-(digit-char-p #\5) *→* 5 
+(digit-char-p #\5) → 5 
 
 
 
@@ -1094,11 +1094,11 @@ Tests whether *char* is a digit in the specified *radix* (*i.e.*, with a weight 
 
 
 
-(digit-char-p #\A 11) *→* 10 
+(digit-char-p #\A 11) → 10 
 
 
 
-(digit-char-p #\a 11) *→* 10 
+(digit-char-p #\a 11) → 10 
 
 
 
@@ -1118,7 +1118,7 @@ Tests whether *char* is a digit in the specified *radix* (*i.e.*, with a weight 
 
 
 
-*→* ((0 NIL NIL NIL NIL NIL NIL NIL) 
+→ ((0 NIL NIL NIL NIL NIL NIL NIL) 
 
 
 
@@ -1366,35 +1366,35 @@ The result only ever differs from *character* in its *code attribute*; all *impl
 
 
 
-(char-upcase #\a) *→* #\A 
+(char-upcase #\a) → #\A 
 
 
 
-(char-upcase #\A) *→* #\A 
+(char-upcase #\A) → #\A 
 
 
 
-(char-downcase #\a) *→* #\a 
+(char-downcase #\a) → #\a 
 
 
 
-(char-downcase #\A) *→* #\a 
+(char-downcase #\A) → #\a 
 
 
 
-(char-upcase #\9) *→* #\9 
+(char-upcase #\9) → #\9 
 
 
 
-(char-downcase #\9) *→* #\9 
+(char-downcase #\9) → #\9 
 
 
 
-(char-upcase #\@) *→* #\@ 
+(char-upcase #\@) → #\@ 
 
 
 
-(char-downcase #\@) *→* #\@ 
+(char-downcase #\@) → #\@ 
 
 
 
@@ -1438,7 +1438,7 @@ The result only ever differs from *character* in its *code attribute*; all *impl
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -1634,11 +1634,11 @@ Should signal an error of *type* **type-error** if *character* is not a *charact
 
 
 
-(char-code #\$) *→* 36 
+(char-code #\$) → 36 
 
 
 
-(char-code #\a) *→* 97 
+(char-code #\a) → 97 
 
 
 
@@ -1718,15 +1718,15 @@ for characters *c1* and *c2*.
 
 
 
-(char-int #\A) *→* 65 ; implementation A 
+(char-int #\A) → 65 ; implementation A 
 
 
 
-(char-int #\A) *→* 577 ; implementation B 
+(char-int #\A) → 577 ; implementation B 
 
 
 
-(char-int #\A) *→* 262145 ; implementation C 
+(char-int #\A) → 262145 ; implementation C 
 
 
 
@@ -1786,11 +1786,11 @@ Returns a *character* with the *code attribute* given by *code*. If no such *cha
 
 
 
-(code-char 65.) *→* #\A ;in an implementation using ASCII codes 
+(code-char 65.) → #\A ;in an implementation using ASCII codes 
 
 
 
-(code-char (char-code #\Space)) *→* #\Space ;in any implementation 
+(code-char (char-code #\Space)) → #\Space ;in any implementation 
 
 
 
@@ -1910,15 +1910,15 @@ The *standard characters hNewlinei* and *hSpacei* have the respective names "New
 
 
 
-(char-name #\ ) *→* "Space" 
+(char-name #\ ) → "Space" 
 
 
 
-(char-name #\Space) *→* "Space" 
+(char-name #\Space) → "Space" 
 
 
 
-(char-name #\Page) *→* "Page" 
+(char-name #\Page) → "Page" 
 
 
 
@@ -1926,7 +1926,7 @@ The *standard characters hNewlinei* and *hSpacei* have the respective names "New
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -1946,7 +1946,7 @@ The *standard characters hNewlinei* and *hSpacei* have the respective names "New
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -1966,7 +1966,7 @@ The *standard characters hNewlinei* and *hSpacei* have the respective names "New
 
 
 
-(prin1-to-string (read-from-string (format nil "#\\&#126;A" (or (char-name #\A) "A")))) *→* "#\\A" 
+(prin1-to-string (read-from-string (format nil "#\\&#126;A" (or (char-name #\A) "A")))) → "#\\A" 
 
 
 
@@ -2042,15 +2042,15 @@ Returns the *character object* whose *name* is *name* (as determined by **string
 
 
 
-(name-char ’space) *→* #\Space 
+(name-char ’space) → #\Space 
 
 
 
-(name-char "space") *→* #\Space 
+(name-char "space") → #\Space 
 
 
 
-(name-char "Space") *→* #\Space 
+(name-char "Space") → #\Space 
 
 
 

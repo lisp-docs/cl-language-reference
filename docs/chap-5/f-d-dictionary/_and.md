@@ -54,19 +54,19 @@ If no *forms* are supplied, (and) returns **t**.
 
 The above expression prints Foo! if element n of a-simple-vector is the symbol foo, provided also that n is indeed a valid index for a-simple-vector. Because **and** guarantees left-to-right testing of its parts, **elt** is not called if n is out of range. 
 
-(setq temp1 1 temp2 1 temp3 1) *→* 1 
+(setq temp1 1 temp2 1 temp3 1) → 1 
 
-(and (incf temp1) (incf temp2) (incf temp3)) *→* 2 
+(and (incf temp1) (incf temp2) (incf temp3)) → 2 
 
 (and (eql 2 temp1) (eql 2 temp2) (eql 2 temp3)) *→ true* 
 
-(decf temp3) *→* 1 
+(decf temp3) → 1 
 
-(and (decf temp1) (decf temp2) (eq temp3 ’nil) (decf temp3)) *→* NIL 
+(and (decf temp1) (decf temp2) (eq temp3 ’nil) (decf temp3)) → NIL 
 
 (and (eql temp1 temp2) (eql temp2 temp3)) *→ true* 
 
-(and) *→* T 
+(and) → T 
 
 
 ```

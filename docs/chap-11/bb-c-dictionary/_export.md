@@ -58,17 +58,17 @@ A name conflict in **export** between one of *symbols* being exported and a *sym
 ```lisp
  
 
-(make-package ’temp :use nil) *→* #<PACKAGE "TEMP"> 
+(make-package ’temp :use nil) → #<PACKAGE "TEMP"> 
 
-(use-package ’temp) *→* T 
+(use-package ’temp) → T 
 
-(intern "TEMP-SYM" ’temp) *→* TEMP::TEMP-SYM, NIL 
+(intern "TEMP-SYM" ’temp) → TEMP::TEMP-SYM, NIL 
 
-(find-symbol "TEMP-SYM") *→* NIL, NIL 
+(find-symbol "TEMP-SYM") → NIL, NIL 
 
-(export (find-symbol "TEMP-SYM" ’temp) ’temp) *→* T 
+(export (find-symbol "TEMP-SYM" ’temp) ’temp) → T 
 
-(find-symbol "TEMP-SYM") *→* TEMP-SYM, :INHERITED 
+(find-symbol "TEMP-SYM") → TEMP-SYM, :INHERITED 
 
 
 ```

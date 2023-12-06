@@ -88,7 +88,7 @@ If the *pathspec designator* is a *file stream* created by opening a *logical pa
 
 (setq p1 (pathname "test")) 
 
-*→* #P"CHOCOLATE:TEST" ; with case canonicalization (e.g., VMS) 
+→ #P"CHOCOLATE:TEST" ; with case canonicalization (e.g., VMS) 
 
 <i><sup>or</sup>→</i> #P"VANILLA:test" ; without case canonicalization (e.g., Unix) 
 
@@ -100,7 +100,7 @@ If the *pathspec designator* is a *file stream* created by opening a *logical pa
 
 (setq p2 (pathname "test")) 
 
-*→* #P"CHOCOLATE:TEST" 
+→ #P"CHOCOLATE:TEST" 
 
 <i><sup>or</sup>→</i> #P"VANILLA:test" 
 
@@ -124,7 +124,7 @@ If the *pathspec designator* is a *file stream* created by opening a *logical pa
 
 (pathname stream)) 
 
-*→* #P"ORANGE-CHOCOLATE:&gt;Gus&gt;test.lisp.newest" 
+→ #P"ORANGE-CHOCOLATE:&gt;Gus&gt;test.lisp.newest" 
 
 
 ```

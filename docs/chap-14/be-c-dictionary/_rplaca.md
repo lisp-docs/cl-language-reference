@@ -54,17 +54,17 @@
 ```lisp
  
 
-(defparameter \*some-list\* (list\* ’one ’two ’three ’four)) *→* \*some-list\* 
+(defparameter \*some-list\* (list\* ’one ’two ’three ’four)) → \*some-list\* 
 
-\*some-list\* *→* (ONE TWO THREE . FOUR) 
+\*some-list\* → (ONE TWO THREE . FOUR) 
 
-(rplaca \*some-list\* ’uno) *→* (UNO TWO THREE . FOUR) 
+(rplaca \*some-list\* ’uno) → (UNO TWO THREE . FOUR) 
 
-\*some-list\* *→* (UNO TWO THREE . FOUR) 
+\*some-list\* → (UNO TWO THREE . FOUR) 
 
-(rplacd (last \*some-list\*) (list ’IV)) *→* (THREE IV) 
+(rplacd (last \*some-list\*) (list ’IV)) → (THREE IV) 
 
-\*some-list\* *→* (UNO TWO THREE IV) 
+\*some-list\* → (UNO TWO THREE IV) 
 
 
 ```

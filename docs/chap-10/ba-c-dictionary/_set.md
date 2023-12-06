@@ -38,11 +38,11 @@
 ```lisp
  
 
-(setf (symbol-value ’n) 1) *→* 1 
+(setf (symbol-value ’n) 1) → 1 
 
-(set ’n 2) *→* 2 
+(set ’n 2) → 2 
 
-(symbol-value ’n) *→* 2 
+(symbol-value ’n) → 2 
 
 (let ((n 3)) 
 
@@ -54,9 +54,9 @@
 
 (set ’n (+ (symbol-value ’n) n)) 
 
-n) *→* 80 
+n) → 80 
 
-n *→* 2 
+n → 2 
 
 (let ((n 3)) 
 
@@ -66,9 +66,9 @@ n *→* 2
 
 (set ’n (+ (symbol-value ’n) n)) 
 
-n) *→* 4 
+n) → 4 
 
-n *→* 44 
+n → 44 
 
 (defvar \*n\* 2) 
 
@@ -80,19 +80,19 @@ n *→* 44
 
 (set ’\*n\* (+ (symbol-value ’\*n\*) \*n\*)) 
 
-\*n\*) *→* 80 
+\*n\*) → 80 
 
-\*n\* *→* 2 
+\*n\* → 2 
 
 
-
- 
 
  
 
-(defvar \*even-count\* 0) *→* \*EVEN-COUNT\* 
+ 
 
-(defvar \*odd-count\* 0) *→* \*ODD-COUNT\* 
+(defvar \*even-count\* 0) → \*EVEN-COUNT\* 
+
+(defvar \*odd-count\* 0) → \*ODD-COUNT\* 
 
 (defun tally-list (list) 
 
@@ -102,11 +102,11 @@ n *→* 44
 
 (+ element (if (evenp element) \*even-count\* \*odd-count\*))))) 
 
-(tally-list ’(1 9 4 3 2 7)) *→* NIL 
+(tally-list ’(1 9 4 3 2 7)) → NIL 
 
-\*even-count\* *→* 6 
+\*even-count\* → 6 
 
-\*odd-count\* *→* 20 
+\*odd-count\* → 20 
 
 
 ```

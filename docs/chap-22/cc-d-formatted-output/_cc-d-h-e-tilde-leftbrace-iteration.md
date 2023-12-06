@@ -22,7 +22,7 @@ For example:
 
 
 
-*→* "The winners are: FRED HARRY JILL." 
+→ "The winners are: FRED HARRY JILL." 
 
 
 
@@ -34,7 +34,7 @@ For example:
 
 
 
-*→* "Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;." 
+→ "Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;." 
 
 
 
@@ -50,7 +50,7 @@ For example:
 
 
 
-*→* "Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;." 
+→ "Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;." 
 
 
 
@@ -62,7 +62,7 @@ For example:
 
 
 
-*→* "Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;." 
+→ "Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;." 
 
 
 
@@ -94,7 +94,7 @@ If the iteration is terminated before all the remaining arguments are consumed, 
 
 
 
-*→* "Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;." 
+→ "Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;." 
 
 
 

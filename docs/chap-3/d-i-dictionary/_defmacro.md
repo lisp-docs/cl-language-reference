@@ -92,21 +92,21 @@ If a **defmacro** *form* appears as a *top level form*, the *compiler* must stor
 
 (defmacro mac1 (a b) "Mac1 multiplies and adds" 
 
-‘(+ ,a (\* ,b 3))) *→* MAC1 
+‘(+ ,a (\* ,b 3))) → MAC1 
 
-(mac1 4 5) *→* 19 
+(mac1 4 5) → 19 
 
-(documentation ’mac1 ’function) *→* "Mac1 multiplies and adds" 
+(documentation ’mac1 ’function) → "Mac1 multiplies and adds" 
 
-(defmacro mac2 (&amp;optional (a 2 b) (c 3 d) &amp;rest x) ‘’(,a ,b ,c ,d ,x)) *→* MAC2 (mac2 6) *→* (6 T 3 NIL NIL) 
+(defmacro mac2 (&amp;optional (a 2 b) (c 3 d) &amp;rest x) ‘’(,a ,b ,c ,d ,x)) → MAC2 (mac2 6) → (6 T 3 NIL NIL) 
 
-(mac2 6 3 8) *→* (6 T 3 T (8)) 
+(mac2 6 3 8) → (6 T 3 T (8)) 
 
 (defmacro mac3 (&amp;whole r a &amp;optional (b 3) &amp;rest x &amp;key c (d a)) 
 
-‘’(,r ,a ,b ,c ,d ,x)) *→* MAC3 
+‘’(,r ,a ,b ,c ,d ,x)) → MAC3 
 
-(mac3 1 6 :d 8 :c 9 :d 10) *→* ((MAC3 1 6 :D 8 :C 9 :D 10) 1 6 9 8 (:D 8 :C 9 :D 10)) 
+(mac3 1 6 :d 8 :c 9 :d 10) → ((MAC3 1 6 :D 8 :C 9 :D 10) 1 6 9 8 (:D 8 :C 9 :D 10)) 
 
 The stipulation that an embedded *destructuring lambda list* is permitted only where *ordinary lambda list* syntax would permit a parameter name but not a *list* is made to prevent ambiguity. For example, the following is not valid:  
 
@@ -144,7 +144,7 @@ would be a valid call for the second definition but not for the first.
 
 (defmacro dm1a (&amp;whole x) ‘’,x) 
 
-(macroexpand ’(dm1a)) *→* (QUOTE (DM1A)) 
+(macroexpand ’(dm1a)) → (QUOTE (DM1A)) 
 
 (macroexpand ’(dm1a a)) is an error. 
 
@@ -152,17 +152,17 @@ would be a valid call for the second definition but not for the first.
 
 (macroexpand ’(dm1b)) is an error. 
 
-(macroexpand ’(dm1b q)) *→* (QUOTE ((DM1B Q) Q NIL)) 
+(macroexpand ’(dm1b q)) → (QUOTE ((DM1B Q) Q NIL)) 
 
-(macroexpand ’(dm1b q r)) *→* (QUOTE ((DM1B Q R) Q R)) 
+(macroexpand ’(dm1b q r)) → (QUOTE ((DM1B Q R) Q R)) 
 
 (macroexpand ’(dm1b q r s)) is an error. 
 
 (defmacro dm2a (&amp;whole form a b) ‘’(form ,form a ,a b ,b)) 
 
-(macroexpand ’(dm2a x y)) *→* (QUOTE (FORM (DM2A X Y) A X B Y)) 
+(macroexpand ’(dm2a x y)) → (QUOTE (FORM (DM2A X Y) A X B Y)) 
 
-(dm2a x y) *→* (FORM (DM2A X Y) A X B Y) 
+(dm2a x y) → (FORM (DM2A X Y) A X B Y) 
 
 (defmacro dm2b (&amp;whole form a (&amp;whole b (c . d) &amp;optional (e 5)) 
 
@@ -178,7 +178,7 @@ would be a valid call for the second definition but not for the first.
 
 (macroexpand ’(dm2b x1 (((incf x2) x3 x4)) x5 x6)) 
 
-*→* (LIST\* ’(DM2B X1 (((INCF X2) X3 X4)) 
+→ (LIST\* ’(DM2B X1 (((INCF X2) X3 X4)) 
 
 X5 X6) 
 
@@ -194,7 +194,7 @@ T
 
 (dm2b x1 (((segundo x2) x3 x4)) x5 x6))) 
 
-*→* ((DM2B X1 (((SEGUNDO X2) X3 X4)) X5 X6) 
+→ ((DM2B X1 (((SEGUNDO X2) X3 X4)) X5 X6) 
 
 5 (((SEGUNDO X2) X3 X4)) (CADR X2) (X3 X4) 5 (X5 X6)) 
 

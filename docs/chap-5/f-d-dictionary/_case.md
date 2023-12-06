@@ -154,11 +154,11 @@ Note that in contrast with **ccase**, the caller of **ecase** may rely on the fa
 
 ▷ CLAUSE1 CLAUSE1 CLAUSE2 CLAUSE4 CLAUSE4 NILSLOT TSLOT OTHERS 
 
-*→* NIL 
+→ NIL 
 
 (defun add-em (x) (apply #’+ (mapcar #’decode x))) 
 
-*→* ADD-EM 
+→ ADD-EM 
 
 (defun decode (x) 
 
@@ -172,7 +172,7 @@ Note that in contrast with **ccase**, the caller of **ecase** may rely on the fa
 
 ((iv cuatro) 4))) 
 
-*→* DECODE 
+→ DECODE 
 
 Data and Control 
 
@@ -180,7 +180,7 @@ Data and Control
 
 
 
-(add-em ’(uno iii)) *→* 4 
+(add-em ’(uno iii)) → 4 
 
 (add-em ’(uno iiii)) 
 
@@ -196,7 +196,7 @@ Data and Control
 
 ▷ Value to evaluate and use for X: ’IV 
 
-*→* 5 
+→ 5 
 
 
 ```

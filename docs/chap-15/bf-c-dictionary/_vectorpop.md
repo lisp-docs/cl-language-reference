@@ -40,15 +40,15 @@ Decreases the *fill pointer* of *vector* by one, and retrieves the *element* of 
 
 :fill-pointer 2 
 
-:initial-element ’sisyphus))) *→* 2 
+:initial-element ’sisyphus))) → 2 
 
-(fill-pointer fa) *→* 3 
+(fill-pointer fa) → 3 
 
 (eq (vector-pop fa) fable) *→ true* 
 
-(vector-pop fa) *→* SISYPHUS 
+(vector-pop fa) → SISYPHUS 
 
-(fill-pointer fa) *→* 1 
+(fill-pointer fa) → 1 
 
 
 ```

@@ -74,17 +74,17 @@
 
 (setf (get person ’last-name) last-name) 
 
-person)) *→* MAKE-PERSON 
+person)) → MAKE-PERSON 
 
-(defvar \*john\* (make-person "John" "Dow")) *→* \*JOHN\* 
+(defvar \*john\* (make-person "John" "Dow")) → \*JOHN\* 
 
-\*john\* *→* #:PERSON4603 
+\*john\* → #:PERSON4603 
 
-(defvar \*sally\* (make-person "Sally" "Jones")) *→* \*SALLY\* 
+(defvar \*sally\* (make-person "Sally" "Jones")) → \*SALLY\* 
 
-(get \*john\* ’first-name) *→* "John" 
+(get \*john\* ’first-name) → "John" 
 
-(get \*sally\* ’last-name) *→* "Jones" 
+(get \*sally\* ’last-name) → "Jones" 
 
 (defun marry (man woman married-name) 
 
@@ -96,31 +96,31 @@ person)) *→* MAKE-PERSON
 
 (setf (get woman ’last-name) married-name) 
 
-married-name) *→* MARRY 
+married-name) → MARRY 
 
-(marry \*john\* \*sally\* "Dow-Jones") *→* "Dow-Jones" 
+(marry \*john\* \*sally\* "Dow-Jones") → "Dow-Jones" 
 
-(get \*john\* ’last-name) *→* "Dow-Jones" 
+(get \*john\* ’last-name) → "Dow-Jones" 
 
-(get (get \*john\* ’wife) ’first-name) *→* "Sally" 
+(get (get \*john\* ’wife) ’first-name) → "Sally" 
 
 (symbol-plist \*john\*) 
 
-*→* (WIFE #:PERSON4604 LAST-NAME "Dow-Jones" FIRST-NAME "John") 
+→ (WIFE #:PERSON4604 LAST-NAME "Dow-Jones" FIRST-NAME "John") 
 
 (defmacro age (person &amp;optional (default ”thirty-something)) 
 
-‘(get ,person ’age ,default)) *→* AGE 
+‘(get ,person ’age ,default)) → AGE 
 
-(age \*john\*) *→* THIRTY-SOMETHING 
+(age \*john\*) → THIRTY-SOMETHING 
 
-(age \*john\* 20) *→* 20 
+(age \*john\* 20) → 20 
 
-(setf (age \*john\*) 25) *→* 25 
+(setf (age \*john\*) 25) → 25 
 
-(age \*john\*) *→* 25 
+(age \*john\*) → 25 
 
-(age \*john\* 20) *→* 25 
+(age \*john\* 20) → 25 
 
 
 ```

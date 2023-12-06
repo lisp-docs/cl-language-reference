@@ -86,19 +86,19 @@ The sorting operation can be destructive in all cases. In the case of a *vector*
 ```lisp
  
 
-(setq tester (copy-seq "lkjashd")) *→* "lkjashd" 
+(setq tester (copy-seq "lkjashd")) → "lkjashd" 
 
-(sort tester #’char-lessp) *→* "adhjkls" 
+(sort tester #’char-lessp) → "adhjkls" 
 
-(setq tester (list ’(1 2 3) ’(4 5 6) ’(7 8 9))) *→* ((1 2 3) (4 5 6) (7 8 9)) 
+(setq tester (list ’(1 2 3) ’(4 5 6) ’(7 8 9))) → ((1 2 3) (4 5 6) (7 8 9)) 
 
-(sort tester #’&gt; :key #’car) *→* ((7 8 9) (4 5 6) (1 2 3)) 
+(sort tester #’&gt; :key #’car) → ((7 8 9) (4 5 6) (1 2 3)) 
 
-(setq tester (list 1 2 3 4 5 6 7 8 9 0)) *→* (1 2 3 4 5 6 7 8 9 0) 
+(setq tester (list 1 2 3 4 5 6 7 8 9 0)) → (1 2 3 4 5 6 7 8 9 0) 
 
 (stable-sort tester #’(lambda (x y) (and (oddp x) (evenp y)))) 
 
-*→* (1 3 5 7 9 2 4 6 8 0) 
+→ (1 3 5 7 9 2 4 6 8 0) 
 
 (sort (setq committee-data 
 
@@ -122,7 +122,7 @@ The sorting operation can be destructive in all cases. In the case of a *vector*
 
 #’string-lessp :key #’cadar) 
 
-*→* #((("Kathy" "Chapman") "Editorial") 
+→ #((("Kathy" "Chapman") "Editorial") 
 
 (("Dick" "Gabriel") "Objects") 
 
@@ -148,7 +148,7 @@ The sorting operation can be destructive in all cases. In the case of a *vector*
 
 (stable-sort committee-data #’string-lessp :key #’cadr)) 
 
-*→* #((("Larry" "Masinter") "Cleanup") 
+→ #((("Larry" "Masinter") "Cleanup") 
 
 (("Sandra" "Loosemore") "Compiler") 
 

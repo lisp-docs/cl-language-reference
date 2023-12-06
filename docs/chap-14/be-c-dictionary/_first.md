@@ -140,21 +140,21 @@ The functions **first**, **second**, **third**, **fourth**, **fifth**, **sixth**
 
 (setq lst ’(1 2 3 (4 5 6) ((V)) vi 7 8 9 10)) 
 
-*→* (1 2 3 (4 5 6) ((V)) VI 7 8 9 10) 
+→ (1 2 3 (4 5 6) ((V)) VI 7 8 9 10) 
 
-(first lst) *→* 1 
+(first lst) → 1 
 
-(tenth lst) *→* 10 
+(tenth lst) → 10 
 
-(fifth lst) *→* ((V)) 
+(fifth lst) → ((V)) 
 
-(second (fourth lst)) *→* 5 
+(second (fourth lst)) → 5 
 
-(sixth ’(1 2 3)) *→* NIL 
+(sixth ’(1 2 3)) → NIL 
 
-(setf (fourth lst) "four") *→* "four" 
+(setf (fourth lst) "four") → "four" 
 
-lst *→* (1 2 3 "four" ((V)) VI 7 8 9 10) 
+lst → (1 2 3 "four" ((V)) VI 7 8 9 10) 
 
 
 ```

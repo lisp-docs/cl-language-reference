@@ -62,7 +62,7 @@ One example of the use of **eval-when** is that for the compiler to be able to r
 
 (declare (ignore char)) 
 
-(list ’dollar (read stream))))) *→* T 
+(list ’dollar (read stream))))) → T 
 
 This causes the call to **set-macro-character** to be executed in the compiler’s execution environment, thereby modifying its reader syntax table. 
 

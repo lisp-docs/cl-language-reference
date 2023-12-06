@@ -156,7 +156,7 @@ For example:
 
 
 
-(setq integer #x69) *→* #x69 
+(setq integer #x69) → #x69 
 
 
 
@@ -168,7 +168,7 @@ For example:
 
 
 
-integer *→* #x96 
+integer → #x96 
 
 
 
@@ -312,7 +312,7 @@ For example:
 
 
 
-(setq s (setq r (list (list ’a 1 ’b 2 ’c 3)))) *→* ((a 1 b 2 c 3)) 
+(setq s (setq r (list (list ’a 1 ’b 2 ’c 3)))) → ((a 1 b 2 c 3)) 
 
 
 
@@ -320,15 +320,15 @@ For example:
 
 
 
-(progn (setq r nil) 6)) *→* 6 
+(progn (setq r nil) 6)) → 6 
 
 
 
-r *→* NIL 
+r → NIL 
 
 
 
-s *→* ((A 1 B 6 C 3)) 
+s → ((A 1 B 6 C 3)) 
 
 
 

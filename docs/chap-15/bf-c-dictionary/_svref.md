@@ -56,13 +56,13 @@
 
 (simple-vector-p (setq v (vector 1 2 ’sirens))) *→ true* 
 
-(svref v 0) *→* 1 
+(svref v 0) → 1 
 
-(svref v 2) *→* SIRENS 
+(svref v 2) → SIRENS 
 
-(setf (svref v 1) ’newcomer) *→* NEWCOMER 
+(setf (svref v 1) ’newcomer) → NEWCOMER 
 
-v *→* #(1 NEWCOMER SIRENS) 
+v → #(1 NEWCOMER SIRENS) 
 
 
 ```

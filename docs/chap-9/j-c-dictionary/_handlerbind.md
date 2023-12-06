@@ -100,7 +100,7 @@ If any other kind of error is signaled, the second function is called. In either
 
 ▷ Bar. 
 
-*→* (1 NIL 3) 
+→ (1 NIL 3) 
 
 Note that “Foo.” is not printed because the condition made by **signal** is a *simple condition*, which is not of *type* **error**, so it doesn’t trigger the handler for **error** set up by trap-errors. 
 

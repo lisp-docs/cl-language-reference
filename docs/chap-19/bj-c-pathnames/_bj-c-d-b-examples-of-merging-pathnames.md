@@ -18,7 +18,7 @@ Although the following examples are possible to execute only in *implementations
 
 
 
-*→* "LISP" 
+→ "LISP" 
 
 
 
@@ -34,7 +34,7 @@ Although the following examples are possible to execute only in *implementations
 
 
 
-*→* "LISP" 
+→ "LISP" 
 
 
 
@@ -50,7 +50,7 @@ Although the following examples are possible to execute only in *implementations
 
 
 
-*→* :UNSPECIFIC 
+→ :UNSPECIFIC 
 
 
 

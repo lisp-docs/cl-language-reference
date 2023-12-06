@@ -46,17 +46,17 @@ For information about the *evaluation* of *subforms* of *place*, see Section 5.1
 ```lisp
  
 
-(setq stack ’(a b c)) *→* (A B C) 
+(setq stack ’(a b c)) → (A B C) 
 
-(pop stack) *→* A 
+(pop stack) → A 
 
-stack *→* (B C) 
+stack → (B C) 
 
-(setq llst ’((1 2 3 4))) *→* ((1 2 3 4)) 
+(setq llst ’((1 2 3 4))) → ((1 2 3 4)) 
 
-(pop (car llst)) *→* 1 
+(pop (car llst)) → 1 
 
-llst *→* ((2 3 4)) 
+llst → ((2 3 4)) 
 
 
 ```

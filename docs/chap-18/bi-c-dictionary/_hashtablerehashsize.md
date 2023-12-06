@@ -36,9 +36,9 @@ Returns the current rehash size of *hash-table*, suitable for use in a call to *
 
 (setq table (make-hash-table :size 100 :rehash-size 1.4)) 
 
-*→* #<HASH-TABLE EQL 0/100 2556371> 
+→ #<HASH-TABLE EQL 0/100 2556371> 
 
-(hash-table-rehash-size table) *→* 1.4 
+(hash-table-rehash-size table) → 1.4 
 
 
 ```

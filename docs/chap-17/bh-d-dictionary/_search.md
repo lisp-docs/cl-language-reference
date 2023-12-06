@@ -74,9 +74,9 @@ If *from-end* is *true*, the index of the leftmost element of the rightmost matc
 ```lisp
  
 
-(search "dog" "it’s a dog’s life") *→* 7 
+(search "dog" "it’s a dog’s life") → 7 
 
-(search ’(0 1) ’(2 4 6 1 3 5) :key #’oddp) *→* 2 
+(search ’(0 1) ’(2 4 6 1 3 5) :key #’oddp) → 2 
 
 
 

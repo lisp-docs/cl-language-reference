@@ -50,7 +50,7 @@ Returns a *string* naming the author of the *file* specified by *pathspec*, or *
 
 (file-author s)) 
 
-*→* "albert" 
+→ "albert" 
 
 
 ```

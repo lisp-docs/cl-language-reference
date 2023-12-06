@@ -56,7 +56,7 @@ Invoking **peek-char** or **read-char** commits all previous characters. The con
 
 ▷ 4 #\2 
 
-*→* NIL 
+→ NIL 
 
 
 

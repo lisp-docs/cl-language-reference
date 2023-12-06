@@ -6,7 +6,7 @@
 
 
 
-**tagbody** *\{tag | statement\}*\* *→* **nil** 
+**tagbody** *\{tag | statement\}*\* → **nil** 
 
 
 
@@ -84,7 +84,7 @@ point-b
 
 val) 
 
-*→* 15 
+→ 15 
 
 (defun f1 (flag) 
 
@@ -98,25 +98,25 @@ out
 
 (prin1 n)))) 
 
-*→* F1 
+→ F1 
 
 (defun f2 (flag escape) 
 
 (if flag (funcall escape) 2)) 
 
-*→* F2 
+→ F2 
 
 (f1 nil) 
 
 ▷ 2 
 
-*→* NIL 
+→ NIL 
 
 (f1 t) 
 
 ▷ 1 
 
-*→* NIL 
+→ NIL 
 
 
 ```

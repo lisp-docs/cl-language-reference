@@ -124,11 +124,11 @@ The *external-format* specifies the *external file format* to be used when openi
 
 (print 1 str) (print ’(setq a 888) str) t) 
 
-*→* T 
+→ T 
 
 (load "data.in") *→ true* 
 
-a *→* 888 
+a → 888 
 
 (load (setq p (merge-pathnames "data.in")) :verbose t) 
 

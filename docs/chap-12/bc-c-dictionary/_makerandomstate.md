@@ -62,7 +62,7 @@ do (setq rs4 (make-random-state)))
 
 (loop for i from 1 to 10 collect (random 100 rs4)))) 
 
-*→* ((29 25 72 57 55 68 24 35 54 65) 
+→ ((29 25 72 57 55 68 24 35 54 65) 
 
 (29 25 72 57 55 68 24 35 54 65) 
 

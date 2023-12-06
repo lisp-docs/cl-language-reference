@@ -22,7 +22,7 @@
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -50,7 +50,7 @@ do (print item))
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -78,7 +78,7 @@ unless (eq item ’B) sum x)
 
 
 
-*→* 4 
+→ 4 
 
 
 

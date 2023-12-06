@@ -72,7 +72,7 @@ The consequences are undefined if *char* has a *syntax type* of *whitespace*<sub
 
 (read-delimited-list #\]) 1 2 3 4 5 6 ] 
 
-*→* (1 2 3 4 5 6) 
+→ (1 2 3 4 5 6) 
 
 Suppose you wanted #\{*a b c . . . z*\} to read as a list of all pairs of the elements *a*, *b*, *c*, *. . .*, *z*, for example. 
 
@@ -88,9 +88,9 @@ This can be done by specifying a macro-character definition for #\{ that does tw
 
 (mapcar #’(lambda (y) (list (car x) y)) (cdr x))) 
 
-(read-delimited-list #\\} stream t))) *→* |#\{-reader| 
+(read-delimited-list #\\} stream t))) → |#\{-reader| 
 
-(set-dispatch-macro-character #\# #\\{ #’|#\{-reader|) *→* T 
+(set-dispatch-macro-character #\# #\\{ #’|#\{-reader|) → T 
 
 (set-macro-character #\\} (get-macro-character #\) **nil**)) 
 

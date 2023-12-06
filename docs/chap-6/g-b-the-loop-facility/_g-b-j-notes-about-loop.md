@@ -194,7 +194,7 @@ An *implicit block* named **nil** surrounds the entire **do** (or **do\***) form
 
 
 
-((&gt; (- temp-one temp-two) 5) temp-one)) *→* 4 
+((&gt; (- temp-one temp-two) 5) temp-one)) → 4 
 
 
 
@@ -222,7 +222,7 @@ An *implicit block* named **nil** surrounds the entire **do** (or **do\***) form
 
 
 
-((= 3 temp-two) temp-one)) *→* 3 
+((= 3 temp-two) temp-one)) → 3 
 
 
 
@@ -234,7 +234,7 @@ An *implicit block* named **nil** surrounds the entire **do** (or **do\***) form
 
 
 
-((= 3 temp-two) temp-one)) *→* 2 
+((= 3 temp-two) temp-one)) → 2 
 
 
 
@@ -282,7 +282,7 @@ An *implicit block* named **nil** surrounds the entire **do** (or **do\***) form
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -306,11 +306,11 @@ An *implicit block* named **nil** surrounds the entire **do** (or **do\***) form
 
 
 
-(setf (aref a-vector i) 0))) *→* NIL 
+(setf (aref a-vector i) 0))) → NIL 
 
 
 
-a-vector *→* #(1 0 3 0) 
+a-vector → #(1 0 3 0) 
 
 
 
@@ -422,7 +422,7 @@ As an example of nested iterations, consider a data structure that is a *list* o
 
 
 
-(return-from ribcage-lookup (car v)))))) *→* RIBCAGE-LOOKUP 
+(return-from ribcage-lookup (car v)))))) → RIBCAGE-LOOKUP 
 
 
 

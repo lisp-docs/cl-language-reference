@@ -54,13 +54,13 @@ If *number* is a *float*, **rational** returns a *rational* that is mathematical
 ```lisp
  
 
-(rational 0) *→* 0 
+(rational 0) → 0 
 
-(rationalize -11/100) *→* -11/100 
+(rationalize -11/100) → -11/100 
 
-(rational .1) *→* 13421773/134217728 ;implementation-dependent 
+(rational .1) → 13421773/134217728 ;implementation-dependent 
 
-(rationalize .1) *→* 1/10 
+(rationalize .1) → 1/10 
 
 
 ```

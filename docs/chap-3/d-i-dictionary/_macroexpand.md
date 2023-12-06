@@ -66,11 +66,11 @@ In addition to *macro* definitions in the global environment, any local macro de
 ```lisp
  
 
-(defmacro alpha (x y) ‘(beta ,x ,y)) *→* ALPHA 
+(defmacro alpha (x y) ‘(beta ,x ,y)) → ALPHA 
 
-(defmacro beta (x y) ‘(gamma ,x ,y)) *→* BETA 
+(defmacro beta (x y) ‘(gamma ,x ,y)) → BETA 
 
-(defmacro delta (x y) ‘(gamma ,x ,y)) *→* EPSILON 
+(defmacro delta (x y) ‘(gamma ,x ,y)) → EPSILON 
 
 (defmacro expand (form &amp;environment env) 
 
@@ -78,7 +78,7 @@ In addition to *macro* definitions in the global environment, any local macro de
 
 (macroexpand form env) 
 
-‘(values ’,expansion ’,expanded-p))) *→* EXPAND  
+‘(values ’,expansion ’,expanded-p))) → EXPAND  
 
 
 
@@ -90,79 +90,79 @@ In addition to *macro* definitions in the global environment, any local macro de
 
 (macroexpand-1 form env) 
 
-‘(values ’,expansion ’,expanded-p))) *→* EXPAND-1 
+‘(values ’,expansion ’,expanded-p))) → EXPAND-1 
 
 ;; Simple examples involving just the global environment 
 
-(macroexpand-1 ’(alpha a b)) *→* (BETA A B), *true* 
+(macroexpand-1 ’(alpha a b)) → (BETA A B), *true* 
 
-(expand-1 (alpha a b)) *→* (BETA A B), *true* 
+(expand-1 (alpha a b)) → (BETA A B), *true* 
 
-(macroexpand ’(alpha a b)) *→* (GAMMA A B), *true* 
+(macroexpand ’(alpha a b)) → (GAMMA A B), *true* 
 
-(expand (alpha a b)) *→* (GAMMA A B), *true* 
+(expand (alpha a b)) → (GAMMA A B), *true* 
 
-(macroexpand-1 ’not-a-macro) *→* NOT-A-MACRO, *false* 
+(macroexpand-1 ’not-a-macro) → NOT-A-MACRO, *false* 
 
-(expand-1 not-a-macro) *→* NOT-A-MACRO, *false* 
+(expand-1 not-a-macro) → NOT-A-MACRO, *false* 
 
-(macroexpand ’(not-a-macro a b)) *→* (NOT-A-MACRO A B), *false* 
+(macroexpand ’(not-a-macro a b)) → (NOT-A-MACRO A B), *false* 
 
-(expand (not-a-macro a b)) *→* (NOT-A-MACRO A B), *false* 
+(expand (not-a-macro a b)) → (NOT-A-MACRO A B), *false* 
 
 ;; Examples involving lexical environments 
 
 (macrolet ((alpha (x y) ‘(delta ,x ,y))) 
 
-(macroexpand-1 ’(alpha a b))) *→* (BETA A B), *true* 
+(macroexpand-1 ’(alpha a b))) → (BETA A B), *true* 
 
 (macrolet ((alpha (x y) ‘(delta ,x ,y))) 
 
-(expand-1 (alpha a b))) *→* (DELTA A B), *true* 
+(expand-1 (alpha a b))) → (DELTA A B), *true* 
 
 (macrolet ((alpha (x y) ‘(delta ,x ,y))) 
 
-(macroexpand ’(alpha a b))) *→* (GAMMA A B), *true* 
+(macroexpand ’(alpha a b))) → (GAMMA A B), *true* 
 
 (macrolet ((alpha (x y) ‘(delta ,x ,y))) 
 
-(expand (alpha a b))) *→* (GAMMA A B), *true* 
+(expand (alpha a b))) → (GAMMA A B), *true* 
 
 (macrolet ((beta (x y) ‘(epsilon ,x ,y))) 
 
-(expand (alpha a b))) *→* (EPSILON A B), *true* 
+(expand (alpha a b))) → (EPSILON A B), *true* 
 
 (let ((x (list 1 2 3))) 
 
 (symbol-macrolet ((a (first x))) 
 
-(expand a))) *→* (FIRST X), *true* 
+(expand a))) → (FIRST X), *true* 
 
 (let ((x (list 1 2 3))) 
 
 (symbol-macrolet ((a (first x))) 
 
-(macroexpand ’a))) *→* A, *false* 
+(macroexpand ’a))) → A, *false* 
 
 (symbol-macrolet ((b (alpha x y))) 
 
-(expand-1 b)) *→* (ALPHA X Y), *true* 
+(expand-1 b)) → (ALPHA X Y), *true* 
 
 (symbol-macrolet ((b (alpha x y))) 
 
-(expand b)) *→* (GAMMA X Y), *true* 
+(expand b)) → (GAMMA X Y), *true* 
 
 (symbol-macrolet ((b (alpha x y)) 
 
 (a b)) 
 
-(expand-1 a)) *→* B, *true* 
+(expand-1 a)) → B, *true* 
 
 (symbol-macrolet ((b (alpha x y)) 
 
 (a b)) 
 
-(expand a)) *→* (GAMMA X Y), *true*  
+(expand a)) → (GAMMA X Y), *true*  
 
 
 
@@ -170,13 +170,13 @@ In addition to *macro* definitions in the global environment, any local macro de
 
 (flet ((beta (x y) (+ x y))) 
 
-(expand (alpha a b))) *→* (BETA A B), *true* 
+(expand (alpha a b))) → (BETA A B), *true* 
 
 (macrolet ((alpha (x y) ‘(delta ,x ,y))) 
 
 (flet ((alpha (x y) (+ x y))) 
 
-(expand (alpha a b)))) *→* (ALPHA A B), *false* 
+(expand (alpha a b)))) → (ALPHA A B), *false* 
 
 (let ((x (list 1 2 3))) 
 
@@ -184,7 +184,7 @@ In addition to *macro* definitions in the global environment, any local macro de
 
 (let ((a x)) 
 
-(expand a)))) *→* A, *false* 
+(expand a)))) → A, *false* 
 
 
 ```

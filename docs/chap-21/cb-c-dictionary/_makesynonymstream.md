@@ -38,23 +38,23 @@ Returns a *synonym stream* whose *synonym stream symbol* is *symbol*.
 
 b-stream (make-string-input-stream "b-stream")) 
 
-*→* #\<String Input Stream\> 
+→ #\<String Input Stream\> 
 
 (setq s-stream (make-synonym-stream ’c-stream)) 
 
-*→* #<SYNONYM-STREAM for C-STREAM> 
+→ #<SYNONYM-STREAM for C-STREAM> 
 
 (setq c-stream a-stream) 
 
-*→* #\<String Input Stream\> 
+→ #\<String Input Stream\> 
 
-(read s-stream) *→* A-STREAM 
+(read s-stream) → A-STREAM 
 
 (setq c-stream b-stream) 
 
-*→* #\<String Input Stream\> 
+→ #\<String Input Stream\> 
 
-(read s-stream) *→* B-STREAM 
+(read s-stream) → B-STREAM 
 
 
 ```

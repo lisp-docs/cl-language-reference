@@ -46,29 +46,29 @@ If *to-readtable* is **nil**, a new *readtable* is created and returned. Otherwi
 ```lisp
  
 
-(setq zvar 123) *→* 123 
+(setq zvar 123) → 123 
 
-(set-syntax-from-char #\z #\’ (setq table2 (copy-readtable))) *→* T 
+(set-syntax-from-char #\z #\’ (setq table2 (copy-readtable))) → T 
 
-zvar *→* 123 
+zvar → 123 
 
-(copy-readtable table2 \*readtable\*) *→* #<READTABLE 614000277> 
+(copy-readtable table2 \*readtable\*) → #<READTABLE 614000277> 
 
 
-
- 
 
  
 
-zvar *→* VAR 
+ 
 
-(setq \*readtable\* (copy-readtable)) *→* #<READTABLE 46210223> 
+zvar → VAR 
 
-zvar *→* VAR 
+(setq \*readtable\* (copy-readtable)) → #<READTABLE 46210223> 
 
-(setq \*readtable\* (copy-readtable nil)) *→* #<READTABLE 46302670> 
+zvar → VAR 
 
-zvar *→* 123 
+(setq \*readtable\* (copy-readtable nil)) → #<READTABLE 46302670> 
+
+zvar → 123 
 
 
 ```

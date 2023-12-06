@@ -64,7 +64,7 @@ Calls the *function* associated with *restart*, passing *arguments* to it. *Rest
 
 ▷ Debug&gt; (invoke-restart ’store-value 7) 
 
-*→* 10 
+→ 10 
 
 
 ```

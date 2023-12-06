@@ -58,11 +58,11 @@ sea is used instead. Any arguments following the third argument are collected in
 
 
 
-(create-foo 10) *→* #S(FOO A 10 B 2 C SEA D 2 E *implemention-dependent* F EFF) (create-foo 10 ’bee ’see :d ’dee) 
+(create-foo 10) → #S(FOO A 10 B 2 C SEA D 2 E *implemention-dependent* F EFF) (create-foo 10 ’bee ’see :d ’dee) 
 
 
 
-*→* #S(FOO A 10 B BEE C SEE D DEE E *implemention-dependent* F EFF) 
+→ #S(FOO A 10 B BEE C SEE D DEE E *implemention-dependent* F EFF) 
 
 
 

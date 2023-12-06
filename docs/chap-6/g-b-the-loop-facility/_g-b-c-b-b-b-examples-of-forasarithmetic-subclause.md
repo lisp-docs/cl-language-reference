@@ -38,7 +38,7 @@ do (print i))
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -70,7 +70,7 @@ do (print i))
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -98,7 +98,7 @@ do (print i))
 
 
 
-*→* NIL 
+→ NIL 
 
 
 

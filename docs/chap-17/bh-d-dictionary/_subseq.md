@@ -78,19 +78,19 @@ length, the shorter length determines the number of elements that are replaced. 
 ```lisp
  
 
-(setq str "012345") *→* "012345" 
+(setq str "012345") → "012345" 
 
-(subseq str 2) *→* "2345" 
+(subseq str 2) → "2345" 
 
-(subseq str 3 5) *→* "34" 
+(subseq str 3 5) → "34" 
 
-(setf (subseq str 4) "abc") *→* "abc" 
+(setf (subseq str 4) "abc") → "abc" 
 
-str *→* "0123ab" 
+str → "0123ab" 
 
-(setf (subseq str 0 2) "A") *→* "A" 
+(setf (subseq str 0 2) "A") → "A" 
 
-str *→* "A123ab" 
+str → "A123ab" 
 
 
 ```

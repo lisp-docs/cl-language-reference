@@ -100,7 +100,7 @@ It is not necessarily possible to construct a valid *namestring* by concatenatin
 
 (namestring "getty") 
 
-*→* "getty" 
+→ "getty" 
 
 (setq q (make-pathname :host "kathy" 
 
@@ -110,15 +110,15 @@ It is not necessarily possible to construct a valid *namestring* by concatenatin
 
 :name "getty")) 
 
-*→* #S(PATHNAME :HOST "kathy" :DEVICE NIL :DIRECTORY *directory-name* 
+→ #S(PATHNAME :HOST "kathy" :DEVICE NIL :DIRECTORY *directory-name* 
 
 :NAME "getty" :TYPE NIL :VERSION NIL) 
 
-(file-namestring q) *→* "getty" 
+(file-namestring q) → "getty" 
 
 (directory-namestring q) *→ directory-name* 
 
-(host-namestring q) *→* "kathy" 
+(host-namestring q) → "kathy" 
 
 ;;;Using Unix syntax and the wildcard conventions used by the 
 
@@ -138,7 +138,7 @@ It is not necessarily possible to construct a valid *namestring* by concatenatin
 
 "/usr/d\*/backup/hacks/backup-\*.\*")) 
 
-*→* "/usr/dmr/backup/hacks/backup-frob.l" 
+→ "/usr/dmr/backup/hacks/backup-frob.l" 
 
 (namestring 
 
@@ -148,7 +148,7 @@ It is not necessarily possible to construct a valid *namestring* by concatenatin
 
 "/usr/d\*/backup/hacks/backup-\*.\*")) 
 
-*→* "/usr/dmr/backup/hacks/backup-ob.l" 
+→ "/usr/dmr/backup/hacks/backup-ob.l" 
 
 ;;;This is similar to the above example but uses two different hosts, 
 
@@ -164,7 +164,7 @@ It is not necessarily possible to construct a valid *namestring* by concatenatin
 
 "V:SYS$DISK:[D\*.BACKUP.HACKS]BACKUP-\*.\*")) 
 
-*→* "V:SYS$DISK:[DMR.BACKUP.HACKS]BACKUP-FROB.LSP" 
+→ "V:SYS$DISK:[DMR.BACKUP.HACKS]BACKUP-FROB.LSP" 
 
 (namestring 
 
@@ -174,7 +174,7 @@ It is not necessarily possible to construct a valid *namestring* by concatenatin
 
 "V:SYS$DISK:[D\*.BACKUP.HACKS]BACKUP-\*.\*")) 
 
-*→* "V:SYS$DISK:[DMR.BACKUP.HACKS]BACKUP-OB.LSP" 
+→ "V:SYS$DISK:[DMR.BACKUP.HACKS]BACKUP-OB.LSP" 
 
 
 ```

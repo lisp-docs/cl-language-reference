@@ -64,13 +64,13 @@ The transfer of control initiated by **throw** is performed as described in Sect
 
 (loop (incf j 3) (incf i) 
 
-(if (= i 3) (throw ’result (values i j))))) *→* 3, 9 
+(if (= i 3) (throw ’result (values i j))))) → 3, 9 
 
 (catch nil 
 
 (unwind-protect (throw nil 1) 
 
-(throw nil 2))) *→* 2 
+(throw nil 2))) → 2 
 
 The consequences of the following are undefined because the **catch** of b is passed over by the first **throw**, hence portable programs must assume that its *dynamic extent* is terminated. The *binding* of the *catch tag* is not yet *disestablished* and therefore it is the target of the second **throw**. 
 
@@ -98,7 +98,7 @@ The following prints “The inner catch returns :SECOND-THROW” and then return
 
 ▷ The inner catch returns :SECOND-THROW 
 
-*→* :OUTER-CATCH 
+→ :OUTER-CATCH 
 
 
 ```

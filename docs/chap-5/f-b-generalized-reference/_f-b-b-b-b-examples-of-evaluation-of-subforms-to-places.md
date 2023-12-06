@@ -30,7 +30,7 @@
 
 
 
-*→* (REF1) 
+→ (REF1) 
 
 
 
@@ -50,11 +50,11 @@ x)
 
 
 
-*→* (((A) . B)) 
+→ (((A) . B)) 
 
 
 
-**push** first evaluates (setq x (list ’a)) *→* (a), then evaluates (setq x (list ’b)) *→* (b), then modifies the *car* of this latest value to be ((a) . b). 
+**push** first evaluates (setq x (list ’a)) → (a), then evaluates (setq x (list ’b)) → (b), then modifies the *car* of this latest value to be ((a) . b). 
 
 
 

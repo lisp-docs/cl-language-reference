@@ -70,7 +70,7 @@ If any of these operations does not make sense for *output-stream*, then it does
 
 (progn (princ "am i seen?") (clear-output)) 
 
-*→* NIL 
+→ NIL 
 
 ;; Implementation B 
 
@@ -78,7 +78,7 @@ If any of these operations does not make sense for *output-stream*, then it does
 
 ▷ am i seen? 
 
-*→* NIL 
+→ NIL 
 
 
 ```

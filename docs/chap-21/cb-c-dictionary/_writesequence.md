@@ -50,7 +50,7 @@
 
 ▷ book 
 
-*→* "bookworms" 
+→ "bookworms" 
 
 
 ```

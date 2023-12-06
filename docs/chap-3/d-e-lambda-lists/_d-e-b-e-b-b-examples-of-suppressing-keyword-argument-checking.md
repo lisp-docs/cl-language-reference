@@ -6,7 +6,7 @@
 
 
 
-((lambda (&amp;key x) x) :x 1 :y 2 :allow-other-keys t) *→* 1 
+((lambda (&amp;key x) x) :x 1 :y 2 :allow-other-keys t) → 1 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-((lambda (&amp;key x &amp;allow-other-keys) x) :x 1 :y 2) *→* 1 
+((lambda (&amp;key x &amp;allow-other-keys) x) :x 1 :y 2) → 1 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-((lambda (&amp;key) t) :allow-other-keys nil) *→* T 
+((lambda (&amp;key) t) :allow-other-keys nil) → T 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-*→* 1 
+→ 1 
 
 
 

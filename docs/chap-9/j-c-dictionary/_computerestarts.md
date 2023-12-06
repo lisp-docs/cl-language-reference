@@ -108,7 +108,7 @@ Implementations are permitted, but not required, to return *distinct lists* from
 
 ▷ Option: 4 
 
-*→* II 
+→ II 
 
 ;; Note that in addition to user-defined restart points, COMPUTE-RESTARTS 
 

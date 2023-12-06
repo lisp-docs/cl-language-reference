@@ -2,7 +2,7 @@
 
 
 
-An evaluation arrow “*→*” precedes a list of *values* to be returned. For example: 
+An evaluation arrow “→” precedes a list of *values* to be returned. For example: 
 
 
 

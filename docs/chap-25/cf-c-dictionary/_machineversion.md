@@ -42,7 +42,7 @@ Returns a *string* that identifies the version of the computer hardware on which
 ```lisp
  
 
-(machine-version) *→* "KL-10, microcode 9" 
+(machine-version) → "KL-10, microcode 9" 
 
 
 ```

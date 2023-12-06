@@ -14,19 +14,15 @@ If *arg* is not **eql** to the integer 1, a lowercase s is printed; if *arg* is 
 
 
 
-(format nil "&#126;D tr&#126;:@P/&#126;D win&#126;:P" 7 1) *→* "7 tries/1 win" 
+(format nil "&#126;D tr&#126;:@P/&#126;D win&#126;:P" 7 1) → "7 tries/1 win" 
 
 
 
-(format nil "&#126;D tr&#126;:@P/&#126;D win&#126;:P" 1 0) *→* "1 try/0 wins" 
-
-
+(format nil "&#126;D tr&#126;:@P/&#126;D win&#126;:P" 1 0) → "1 try/0 wins" 
 
 
 
 
-
- 
 
 
 
@@ -34,7 +30,11 @@ If *arg* is not **eql** to the integer 1, a lowercase s is printed; if *arg* is 
 
 
 
-(format nil "&#126;D tr&#126;:@P/&#126;D win&#126;:P" 1 3) *→* "1 try/3 wins" 
+ 
+
+
+
+(format nil "&#126;D tr&#126;:@P/&#126;D win&#126;:P" 1 3) → "1 try/3 wins" 
 
 
 

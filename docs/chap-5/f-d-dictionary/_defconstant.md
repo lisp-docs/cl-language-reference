@@ -86,9 +86,9 @@ Data and Control
 ```lisp
  
 
-(defconstant this-is-a-constant ’never-changing "for a test") *→* THIS-IS-A-CONSTANT this-is-a-constant *→* NEVER-CHANGING 
+(defconstant this-is-a-constant ’never-changing "for a test") → THIS-IS-A-CONSTANT this-is-a-constant → NEVER-CHANGING 
 
-(documentation ’this-is-a-constant ’variable) *→* "for a test" 
+(documentation ’this-is-a-constant ’variable) → "for a test" 
 
 (constantp ’this-is-a-constant) *→ true* 
 

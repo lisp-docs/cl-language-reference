@@ -6,7 +6,7 @@
 
 
 
-**psetq** *\{↓pair\}*\* *→* **nil** 
+**psetq** *\{↓pair\}*\* → **nil** 
 
 
 
@@ -74,25 +74,25 @@ If any *var* refers to a *binding* made by **symbol-macrolet**, then that *var* 
 
 ;; is not needed, but the two have equivalent effect. 
 
-(psetq a 1 b 2 c 3) *→* NIL 
+(psetq a 1 b 2 c 3) → NIL 
 
-a *→* 1 
+a → 1 
 
-b *→* 2 
+b → 2 
 
-c *→* 3 
+c → 3 
 
 ;; Use of PSETQ to update values by parallel assignment. 
 
 ;; The effect here is very different than if SETQ had been used. 
 
-(psetq a (1+ b) b (1+ a) c (+ a b)) *→* NIL 
+(psetq a (1+ b) b (1+ a) c (+ a b)) → NIL 
 
-a *→* 3 
+a → 3 
 
-b *→* 2 
+b → 2 
 
-c *→* 3 
+c → 3 
 
 ;; Use of PSETQ on a symbol macro. 
 
@@ -104,7 +104,7 @@ c *→* 3
 
 (list x y z))) 
 
-*→* ((21 11 30) 21 11) 
+→ ((21 11 30) 21 11) 
 
 ;; Use of parallel assignment to swap values of A and B. 
 
@@ -114,7 +114,7 @@ c *→* 3
 
 (values a b)) 
 
-*→* 2, 1 
+→ 2, 1 
 
 
 ```

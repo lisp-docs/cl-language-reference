@@ -34,7 +34,7 @@
 
 (make-package ’temp) 
 
-(set-difference (list-all-packages) before)) *→* (#<PACKAGE "TEMP">) 
+(set-difference (list-all-packages) before)) → (#<PACKAGE "TEMP">) 
 
 
 ```

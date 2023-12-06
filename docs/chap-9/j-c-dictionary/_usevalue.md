@@ -108,9 +108,9 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 
 ‘(handler-bind ((error #’abort)) 
 
-,@forms)) *→* ABORT-ON-ERROR 
+,@forms)) → ABORT-ON-ERROR 
 
-(abort-on-error (+ 3 5)) *→* 8 
+(abort-on-error (+ 3 5)) → 8 
 
 (abort-on-error (error "You lose.")) 
 
@@ -128,7 +128,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 
 (sqrt n)) 
 
-(real-sqrt 4) *→* 2 
+(real-sqrt 4) → 2 
 
 (real-sqrt -9) 
 
@@ -144,7 +144,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 
 ▷ Return sqrt(9) instead. 
 
-*→* 3 
+→ 3 
 
 
 
@@ -156,7 +156,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 
 (handler-bind ((error #’(lambda (c) (continue)))) 
 
-(real-sqrt -9)) *→* 3 
+(real-sqrt -9)) → 3 
 
 ;;; Example of the MUFFLE-WARNING restart 
 
@@ -172,7 +172,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 
 (format t "&#126;&amp;&#126;D&#126;%" counter))) 
 
-*→* COUNT-DOWN 
+→ COUNT-DOWN 
 
 (count-down 3) 
 
@@ -184,7 +184,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 
 ▷ 1 
 
-*→* DONE 
+→ DONE 
 
 (defun ignore-warnings-while-counting (x) 
 
@@ -192,7 +192,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 
 (count-down x))) 
 
-*→* IGNORE-WARNINGS-WHILE-COUNTING 
+→ IGNORE-WARNINGS-WHILE-COUNTING 
 
 (defun ignore-warning (condition) 
 
@@ -200,7 +200,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 
 (muffle-warning)) 
 
-*→* IGNORE-WARNING 
+→ IGNORE-WARNING 
 
 (ignore-warnings-while-counting 3) 
 
@@ -210,7 +210,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 
 ▷ 1 
 
-*→* DONE 
+→ DONE 
 
 ;;; Example of the STORE-VALUE and USE-VALUE restarts 
 
@@ -248,11 +248,11 @@ value)
 
 (setf (symbol-value symbol) value)))) 
 
-(setq a 1234) *→* 1234 
+(setq a 1234) → 1234 
 
-(careful-symbol-value ’a) *→* 1234 
+(careful-symbol-value ’a) → 1234 
 
-(makunbound ’a) *→* A 
+(makunbound ’a) → A 
 
 (careful-symbol-value ’a) 
 
@@ -268,7 +268,7 @@ value)
 
 ▷ Debug&gt; (use-value 12) 
 
-*→* 12 
+→ 12 
 
 (careful-symbol-value ’a) 
 
@@ -284,11 +284,11 @@ value)
 
 ▷ Debug&gt; (store-value 24) 
 
-*→* 24 
+→ 24 
 
 (careful-symbol-value ’a) 
 
-*→* 24 
+→ 24 
 
 ;;; Example of the USE-VALUE restart 
 
@@ -304,11 +304,11 @@ value)
 
 (apply #’+ (mapcar #’careful-symbol-value symbols)))) 
 
-*→* ADD-SYMBOLS-WITH-DEFAULT 
+→ ADD-SYMBOLS-WITH-DEFAULT 
 
-(setq x 1 y 2) *→* 2 
+(setq x 1 y 2) → 2 
 
-(add-symbols-with-default 3 ’x ’y ’z) *→* 6 
+(add-symbols-with-default 3 ’x ’y ’z) → 6 
 
 
 ```

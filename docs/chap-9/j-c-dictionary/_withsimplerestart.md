@@ -90,7 +90,7 @@ The *format-control* and *format-arguments* are used report the *restart*.
 
 (prin1 (eval form))))))) 
 
-*→* READ-EVAL-PRINT-LOOP 
+→ READ-EVAL-PRINT-LOOP 
 
 (read-eval-print-loop 1) 
 
@@ -146,7 +146,7 @@ COMPUTE-POWER-OF-2
 
 ▷ Debug&gt; :continue 1 
 
-*→* SOMETHING-BIG 
+→ SOMETHING-BIG 
 
 
 ```

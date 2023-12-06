@@ -64,7 +64,7 @@ If **clear-input** does not make sense for *input-stream*, then **clear-input** 
 
 ▷ » 20 
 
-*→* (10 20) 
+→ (10 20) 
 
 (read-sleepily t) 
 
@@ -74,7 +74,7 @@ If **clear-input** does not make sense for *input-stream*, then **clear-input** 
 
 ▷ » 20 
 
-*→* (10 20) 
+→ (10 20) 
 
 (read-sleepily t 10) 
 
@@ -90,7 +90,7 @@ If **clear-input** does not make sense for *input-stream*, then **clear-input** 
 
 ▷ » 30 
 
-*→* (10 30) 
+→ (10 30) 
 
 
 ```

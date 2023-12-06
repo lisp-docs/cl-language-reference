@@ -32,9 +32,9 @@ The best *long float* approximation to the mathematical constant *π*.
 
 ;; for that equivalent (e.g., ‘D’ instead of ‘L’). 
 
-pi *→* 3.141592653589793L0 
+pi → 3.141592653589793L0 
 
-(cos pi) *→* -1.0L0 
+(cos pi) → -1.0L0 
 
 (defun sin-of-degrees (degrees) 
 

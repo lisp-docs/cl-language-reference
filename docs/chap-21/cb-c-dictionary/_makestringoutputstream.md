@@ -58,7 +58,7 @@ The *element-type* names the *type* of the *elements* of the *string*; a *string
 
 (get-output-stream-string s)) 
 
-*→* "testing... 1234" 
+→ "testing... 1234" 
 
 None.. 
 

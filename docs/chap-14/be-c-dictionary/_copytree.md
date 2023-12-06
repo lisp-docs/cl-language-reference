@@ -52,9 +52,9 @@ If *tree* is not a *cons*, it is returned; otherwise, the result is a new *cons*
 
 (cons 2 (list ’a ’b ’c)))) 
 
-*→* ((1 . "one") (2 A B C)) 
+→ ((1 . "one") (2 A B C)) 
 
-(setq object-too object) *→* ((1 . "one") (2 A B C)) 
+(setq object-too object) → ((1 . "one") (2 A B C)) 
 
 (setq copy-as-list (copy-list object)) 
 
@@ -74,17 +74,17 @@ If *tree* is not a *cons*, it is returned; otherwise, the result is a new *cons*
 
 (car (second object)) "two" 
 
-(car object) ’(one . 1)) *→* (ONE . 1) 
+(car object) ’(one . 1)) → (ONE . 1) 
 
-object *→* ((ONE . 1) ("two" "a" B C)) 
+object → ((ONE . 1) ("two" "a" B C)) 
 
-object-too *→* ((ONE . 1) ("two" "a" B C)) 
+object-too → ((ONE . 1) ("two" "a" B C)) 
 
-copy-as-list *→* ((1 . "one") ("two" "a" B C)) 
+copy-as-list → ((1 . "one") ("two" "a" B C)) 
 
-copy-as-alist *→* ((1 . "one") (2 "a" B C)) 
+copy-as-alist → ((1 . "one") (2 "a" B C)) 
 
-copy-as-tree *→* ((1 . "one") (2 A B C)) 
+copy-as-tree → ((1 . "one") (2 A B C)) 
 
 
 ```

@@ -94,17 +94,17 @@ a *pathname*, used as the default whenever a *function* needs a default *pathnam
 
 ;; implementations and host file system types, it is not possible to provide a ;; general-purpose, conforming example. 
 
-\*default-pathname-defaults\* *→* #P"PS:&lt;FRED&gt;" 
+\*default-pathname-defaults\* → #P"PS:&lt;FRED&gt;" 
 
 (merge-pathnames (make-pathname :name "CALENDAR")) 
 
-*→* #P"PS:&lt;FRED&gt;CALENDAR" 
+→ #P"PS:&lt;FRED&gt;CALENDAR" 
 
 (let ((\*default-pathname-defaults\* (pathname "&lt;MARY&gt;"))) 
 
 (merge-pathnames (make-pathname :name "CALENDAR"))) 
 
-*→* #P"&lt;MARY&gt;CALENDAR" 
+→ #P"&lt;MARY&gt;CALENDAR" 
 
 
 ```

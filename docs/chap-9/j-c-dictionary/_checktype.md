@@ -6,7 +6,7 @@
 
 
 
-**check-type** *place typespec* [*string*] *→* **nil** 
+**check-type** *place typespec* [*string*] → **nil** 
 
 
 
@@ -68,7 +68,7 @@ The first time *place* is *evaluated*, it is *evaluated* by normal evaluation ru
 
 (setq aardvarks ’(sam harry fred)) 
 
-*→* (SAM HARRY FRED) 
+→ (SAM HARRY FRED) 
 
 (check-type aardvarks (array \* (3))) 
 
@@ -86,19 +86,19 @@ The first time *place* is *evaluated*, it is *evaluated* by normal evaluation ru
 
 ▷ Use Value: #(SAM FRED HARRY) 
 
-*→* NIL 
+→ NIL 
 
 aardvarks 
 
-*→* #<array-t-3 13571=""> 
+→ #<array-t-3 13571=""> 
 
 (map ’list #’identity aardvarks) 
 
-*→* (SAM FRED HARRY) 
+→ (SAM FRED HARRY) 
 
 (setq aardvark-count ’foo) 
 
-*→* FOO 
+→ FOO 
 
 (check-type aardvark-count (integer 0 \*) "A positive integer") 
 
@@ -128,7 +128,7 @@ aardvarks
 
 (macroexpand ’(define-adder add3 3)) 
 
-*→* (defun add3 (x) (+ x 3)) 
+→ (defun add3 (x) (+ x 3)) 
 
 (macroexpand ’(define-adder 7 7)) 
 
@@ -144,7 +144,7 @@ aardvarks
 
 ▷ Type a form to be evaluated and used instead: ’ADD7 
 
-*→* (defun add7 (x) (+ x 7)) 
+→ (defun add7 (x) (+ x 7)) 
 
 (macroexpand ’(define-adder add5 something)) 
 
@@ -160,7 +160,7 @@ aardvarks
 
 ▷ Type a form to be evaluated and used instead: 5 
 
-*→* (defun add5 (x) (+ x 5)) 
+→ (defun add5 (x) (+ x 5)) 
 
 Control is transferred to a handler. 
 

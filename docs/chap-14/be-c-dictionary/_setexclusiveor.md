@@ -72,31 +72,31 @@ The result contains precisely those elements of *list-1* and *list-2* that appea
 
 (setq lst1 (list 1 "a" "b") 
 
-lst2 (list 1 "A" "b")) *→* (1 "A" "b") 
+lst2 (list 1 "A" "b")) → (1 "A" "b") 
 
-(set-exclusive-or lst1 lst2) *→* ("b" "A" "b" "a") 
+(set-exclusive-or lst1 lst2) → ("b" "A" "b" "a") 
 
-(set-exclusive-or lst1 lst2 :test #’equal) *→* ("A" "a") 
+(set-exclusive-or lst1 lst2 :test #’equal) → ("A" "a") 
 
-(set-exclusive-or lst1 lst2 :test ’equalp) *→* NIL 
+(set-exclusive-or lst1 lst2 :test ’equalp) → NIL 
 
-(nset-exclusive-or lst1 lst2) *→* ("a" "b" "A" "b") 
+(nset-exclusive-or lst1 lst2) → ("a" "b" "A" "b") 
 
 (setq lst1 (list (("a" . "b") ("c" . "d") ("e" . "f")))) 
 
-*→* (("a" . "b") ("c" . "d") ("e" . "f")) 
+→ (("a" . "b") ("c" . "d") ("e" . "f")) 
 
 (setq lst2 (list (("c" . "a") ("e" . "b") ("d" . "a")))) 
 
-*→* (("c" . "a") ("e" . "b") ("d" . "a")) 
+→ (("c" . "a") ("e" . "b") ("d" . "a")) 
 
 (nset-exclusive-or lst1 lst2 :test #’string= :key #’cdr) 
 
-*→* (("c" . "d") ("e" . "f") ("c" . "a") ("d" . "a")) 
+→ (("c" . "d") ("e" . "f") ("c" . "a") ("d" . "a")) 
 
-lst1 *→* (("a" . "b") ("c" . "d") ("e" . "f")) 
+lst1 → (("a" . "b") ("c" . "d") ("e" . "f")) 
 
-lst2 *→* (("c" . "a") ("d" . "a")) 
+lst2 → (("c" . "a") ("d" . "a")) 
 
 
 ```

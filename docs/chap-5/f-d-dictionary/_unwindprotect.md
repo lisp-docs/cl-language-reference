@@ -80,21 +80,21 @@ When **go** is executed, the call to **print** is executed first, and then the t
 
 (unless (numberp x) (throw ’abort ’not-a-number)) 
 
-(setq state (1+ x))) *→* DUMMY-FUNCTION 
+(setq state (1+ x))) → DUMMY-FUNCTION 
 
-(catch ’abort (dummy-function 1)) *→* 2 
+(catch ’abort (dummy-function 1)) → 2 
 
-state *→* 2 
+state → 2 
 
-(catch ’abort (dummy-function ’trash)) *→* NOT-A-NUMBER 
+(catch ’abort (dummy-function ’trash)) → NOT-A-NUMBER 
 
-state *→* RUNNING 
+state → RUNNING 
 
 (catch ’abort (unwind-protect (dummy-function ’trash) 
 
-(setq state ’aborted))) *→* NOT-A-NUMBER 
+(setq state ’aborted))) → NOT-A-NUMBER 
 
-state *→* ABORTED 
+state → ABORTED 
 
 The following code is not correct: 
 

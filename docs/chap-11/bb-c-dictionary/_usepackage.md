@@ -42,17 +42,17 @@
 ```lisp
  
 
-(export (intern "LAND-FILL" (make-package ’trash)) ’trash) *→* T 
+(export (intern "LAND-FILL" (make-package ’trash)) ’trash) → T 
 
-(find-symbol "LAND-FILL" (make-package ’temp)) *→* NIL, NIL 
+(find-symbol "LAND-FILL" (make-package ’temp)) → NIL, NIL 
 
-(package-use-list ’temp) *→* (#<PACKAGE "TEMP">) 
+(package-use-list ’temp) → (#<PACKAGE "TEMP">) 
 
-(use-package ’trash ’temp) *→* T 
+(use-package ’trash ’temp) → T 
 
-(package-use-list ’temp) *→* (#<PACKAGE "TEMP"> #<PACKAGE "TRASH">) 
+(package-use-list ’temp) → (#<PACKAGE "TEMP"> #<PACKAGE "TRASH">) 
 
-(find-symbol "LAND-FILL" ’temp) *→* TRASH:LAND-FILL, :INHERITED 
+(find-symbol "LAND-FILL" ’temp) → TRASH:LAND-FILL, :INHERITED 
 
 
 ```

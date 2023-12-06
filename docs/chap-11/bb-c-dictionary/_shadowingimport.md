@@ -54,17 +54,17 @@
 ```lisp
  
 
-(in-package "COMMON-LISP-USER") *→* #<PACKAGE "COMMON-LISP-USER"> 
+(in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
 
-(setq sym (intern "CONFLICT")) *→* CONFLICT 
+(setq sym (intern "CONFLICT")) → CONFLICT 
 
-(intern "CONFLICT" (make-package ’temp)) *→* TEMP::CONFLICT, NIL 
+(intern "CONFLICT" (make-package ’temp)) → TEMP::CONFLICT, NIL 
 
-(package-shadowing-symbols ’temp) *→* NIL 
+(package-shadowing-symbols ’temp) → NIL 
 
-(shadowing-import sym ’temp) *→* T 
+(shadowing-import sym ’temp) → T 
 
-(package-shadowing-symbols ’temp) *→* (CONFLICT) 
+(package-shadowing-symbols ’temp) → (CONFLICT) 
 
 
 ```

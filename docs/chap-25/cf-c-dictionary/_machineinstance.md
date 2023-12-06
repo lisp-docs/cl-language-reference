@@ -32,7 +32,7 @@ Returns a *string* that identifies the particular instance of the computer hardw
 
 (machine-instance) 
 
-*→* "ACME.COM" 
+→ "ACME.COM" 
 
 <i><sup>or</sup>→</i> "S/N 123231" 
 

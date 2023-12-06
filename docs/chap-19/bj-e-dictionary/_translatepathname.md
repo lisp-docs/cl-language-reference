@@ -88,19 +88,19 @@ There are no specified keyword arguments for **translate-pathname**, but impleme
 
 ;; emphasize one of many particular variations which commonly occurs. 
 
-(pathname-name (translate-pathname "foobar" "foo\*" "\*baz")) *→* "barbaz" 
+(pathname-name (translate-pathname "foobar" "foo\*" "\*baz")) → "barbaz" 
 
 (pathname-name (translate-pathname "foobar" "foo\*" "\*")) 
 
-*→* "foobar" 
+→ "foobar" 
 
 <i><sup>or</sup>→</i> "bar" 
 
-(pathname-name (translate-pathname "foobar" "\*" "foo\*")) *→* "foofoobar" 
+(pathname-name (translate-pathname "foobar" "\*" "foo\*")) → "foofoobar" 
 
-(pathname-name (translate-pathname "bar" "\*" "foo\*")) *→* "foobar" 
+(pathname-name (translate-pathname "bar" "\*" "foo\*")) → "foobar" 
 
-(pathname-name (translate-pathname "foobar" "foo\*" "baz\*")) *→* "bazbar" 
+(pathname-name (translate-pathname "foobar" "foo\*" "baz\*")) → "bazbar" 
 
 (defun translate-logical-pathname-1 (pathname rules) 
 
@@ -118,7 +118,7 @@ There are no specified keyword arguments for **translate-pathname**, but impleme
 
 ("FOO:PATCHES;\*;" "MY-UNIX:/lib/foo/patch/\*/"))) 
 
-*→* #P"MY-UNIX:/lib/foo/basic.l" 
+→ #P"MY-UNIX:/lib/foo/basic.l" 
 
 ;;;This example assumes one particular set of wildcard conventions 
 

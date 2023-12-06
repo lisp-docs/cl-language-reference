@@ -42,17 +42,17 @@ If and only if no explicit suffix is supplied, **\*gensym-counter\*** is increme
 ```lisp
  
 
-(setq sym1 (gensym)) *→* #:G3142 
+(setq sym1 (gensym)) → #:G3142 
 
-(symbol-package sym1) *→* NIL 
+(symbol-package sym1) → NIL 
 
-(setq sym2 (gensym 100)) *→* #:G100 
+(setq sym2 (gensym 100)) → #:G100 
 
-(setq sym3 (gensym 100)) *→* #:G100 
+(setq sym3 (gensym 100)) → #:G100 
 
 (eq sym2 sym3) *→ false* 
 
-(find-symbol "G100") *→* NIL, NIL 
+(find-symbol "G100") → NIL, NIL 
 
 
 
@@ -60,9 +60,9 @@ If and only if no explicit suffix is supplied, **\*gensym-counter\*** is increme
 
  
 
-(gensym "T") *→* #:T3143 
+(gensym "T") → #:T3143 
 
-(gensym) *→* #:G3144 
+(gensym) → #:G3144 
 
 
 ```

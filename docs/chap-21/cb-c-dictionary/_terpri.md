@@ -52,7 +52,7 @@
 
 (write-string "more text" s)) 
 
-*→* "some text 
+→ "some text 
 
 more text" 
 
@@ -66,7 +66,7 @@ more text"
 
 (write-string "more text" s)) 
 
-*→* "some text 
+→ "some text 
 
 more text" 
 

@@ -34,13 +34,13 @@ Returns *true* if *object* is of *type* **pathname**; otherwise, returns *false*
 ```lisp
  
 
-(setq q "test") *→* "test" 
+(setq q "test") → "test" 
 
 (pathnamep q) *→ false* 
 
 (setq q (pathname "test")) 
 
-*→* #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME "test" :TYPE NIL 
+→ #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME "test" :TYPE NIL 
 
 :VERSION NIL) 
 
@@ -48,7 +48,7 @@ Returns *true* if *object* is of *type* **pathname**; otherwise, returns *false*
 
 (setq q (logical-pathname "SYS:SITE;FOO.SYSTEM")) 
 
-*→* #P"SYS:SITE;FOO.SYSTEM" 
+→ #P"SYS:SITE;FOO.SYSTEM" 
 
 (pathnamep q) *→ true* 
 
@@ -172,13 +172,13 @@ If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in
 
 :name "LOGIN" :type "COM")) 
 
-*→* #P"KATHY::[CHAPMAN]LOGIN.COM" 
+→ #P"KATHY::[CHAPMAN]LOGIN.COM" 
 
-(pathname-host q) *→* "KATHY" 
+(pathname-host q) → "KATHY" 
 
-(pathname-name q) *→* "LOGIN" 
+(pathname-name q) → "LOGIN" 
 
-(pathname-type q) *→* "COM" 
+(pathname-type q) → "COM" 
 
 ;; Because namestrings are used, the results shown in the remaining 
 
@@ -202,53 +202,53 @@ If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in
 
 (pathname-directory (parse-namestring "[FOO.\*.BAR]BAZ.LSP")) 
 
-*→* (:ABSOLUTE "FOO" "BAR") 
+→ (:ABSOLUTE "FOO" "BAR") 
 
 (pathname-directory (parse-namestring "[FOO.\*.BAR]BAZ.LSP") :case :common) 
 
-*→* (:ABSOLUTE "FOO" "BAR") 
+→ (:ABSOLUTE "FOO" "BAR") 
 
 ;; Unix 
 
-(pathname-directory "foo.l") *→* NIL 
+(pathname-directory "foo.l") → NIL 
 
-(pathname-device "foo.l") *→* :UNSPECIFIC 
+(pathname-device "foo.l") → :UNSPECIFIC 
 
-(pathname-name "foo.l") *→* "foo" 
+(pathname-name "foo.l") → "foo" 
 
-(pathname-name "foo.l" :case :local) *→* "foo" 
+(pathname-name "foo.l" :case :local) → "foo" 
 
-(pathname-name "foo.l" :case :common) *→* "FOO" 
+(pathname-name "foo.l" :case :common) → "FOO" 
 
-(pathname-type "foo.l") *→* "l" 
+(pathname-type "foo.l") → "l" 
 
-(pathname-type "foo.l" :case :local) *→* "l" 
+(pathname-type "foo.l" :case :local) → "l" 
 
-(pathname-type "foo.l" :case :common) *→* "L" 
+(pathname-type "foo.l" :case :common) → "L" 
 
-(pathname-type "foo") *→* :UNSPECIFIC 
+(pathname-type "foo") → :UNSPECIFIC 
 
-(pathname-type "foo" :case :common) *→* :UNSPECIFIC 
+(pathname-type "foo" :case :common) → :UNSPECIFIC 
 
-(pathname-type "foo.") *→* "" 
+(pathname-type "foo.") → "" 
 
-(pathname-type "foo." :case :common) *→* "" 
-
-(pathname-directory (parse-namestring "/foo/bar/baz.lisp") :case :local) 
-
-*→* (:ABSOLUTE "foo" "bar") 
+(pathname-type "foo." :case :common) → "" 
 
 (pathname-directory (parse-namestring "/foo/bar/baz.lisp") :case :local) 
 
-*→* (:ABSOLUTE "FOO" "BAR") 
+→ (:ABSOLUTE "foo" "bar") 
+
+(pathname-directory (parse-namestring "/foo/bar/baz.lisp") :case :local) 
+
+→ (:ABSOLUTE "FOO" "BAR") 
 
 (pathname-directory (parse-namestring "../baz.lisp")) 
 
-*→* (:RELATIVE :UP) 
+→ (:RELATIVE :UP) 
 
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/BAR/../Mum/baz")) 
 
-*→* (:ABSOLUTE "foo" "BAR" :UP "Mum") 
+→ (:ABSOLUTE "foo" "BAR" :UP "Mum") 
 
 
 
@@ -258,31 +258,31 @@ If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in
 
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/BAR/../Mum/baz") :case :common) 
 
-*→* (:ABSOLUTE "FOO" "bar" :UP "Mum") 
+→ (:ABSOLUTE "FOO" "bar" :UP "Mum") 
 
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/\*/bar/baz.l")) 
 
-*→* (:ABSOLUTE "foo" :WILD "bar") 
+→ (:ABSOLUTE "foo" :WILD "bar") 
 
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/\*/bar/baz.l") :case :common) 
 
-*→* (:ABSOLUTE "FOO" :WILD "BAR") 
+→ (:ABSOLUTE "FOO" :WILD "BAR") 
 
 ;; Symbolics LMFS 
 
 (pathname-directory (parse-namestring "&gt;foo&gt;\*\*&gt;bar&gt;baz.lisp")) 
 
-*→* (:ABSOLUTE "foo" :WILD-INFERIORS "bar") 
+→ (:ABSOLUTE "foo" :WILD-INFERIORS "bar") 
 
 (pathname-directory (parse-namestring "&gt;foo&gt;\*&gt;bar&gt;baz.lisp")) 
 
-*→* (:ABSOLUTE "foo" :WILD "bar") 
+→ (:ABSOLUTE "foo" :WILD "bar") 
 
 (pathname-directory (parse-namestring "&gt;foo&gt;\*&gt;bar&gt;baz.lisp") :case :common) 
 
-*→* (:ABSOLUTE "FOO" :WILD "BAR") 
+→ (:ABSOLUTE "FOO" :WILD "BAR") 
 
-(pathname-device (parse-namestring "&gt;foo&gt;baz.lisp")) *→* :UNSPECIFIC 
+(pathname-device (parse-namestring "&gt;foo&gt;baz.lisp")) → :UNSPECIFIC 
 
 
 ```

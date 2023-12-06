@@ -86,21 +86,21 @@ If *power-number* is a zero of any other *type*, then the result is also the val
 ```lisp
  
 
-(exp 0) *→* 1.0 
+(exp 0) → 1.0 
 
-(exp 1) *→* 2.718282 
+(exp 1) → 2.718282 
 
-(exp (log 5)) *→* 5.0 
+(exp (log 5)) → 5.0 
 
-(expt 2 8) *→* 256 
+(expt 2 8) → 256 
 
-(expt 4 .5) *→* 2.0 
+(expt 4 .5) → 2.0 
 
-(expt #c(0 1) 2) *→* -1 
+(expt #c(0 1) 2) → -1 
 
-(expt #c(2 2) 3) *→* #C(-16 16) 
+(expt #c(2 2) 3) → #C(-16 16) 
 
-(expt #c(2 2) 4) *→* -64 
+(expt #c(2 2) 4) → -64 
 
 
 ```
@@ -128,15 +128,15 @@ Note that by the following logic, (sqrt (expt *x* 3)) is not equivalent to (expt
 
 
 
-(expt x 3) *→* 1 ;except for round-off error 
+(expt x 3) → 1 ;except for round-off error 
 
 
 
-(sqrt (expt x 3)) *→* 1 ;except for round-off error 
+(sqrt (expt x 3)) → 1 ;except for round-off error 
 
 
 
-(expt x 3/2) *→* -1 ;except for round-off error 
+(expt x 3/2) → -1 ;except for round-off error 
 
 
 

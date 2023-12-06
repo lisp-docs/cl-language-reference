@@ -88,31 +88,31 @@ There is no guarantee that the order of elements in the result will reflect the 
 
 (setq lst1 (list "A" "b" "C" "d") 
 
-lst2 (list "a" "B" "C" "d")) *→* ("a" "B" "C" "d") 
+lst2 (list "a" "B" "C" "d")) → ("a" "B" "C" "d") 
 
-(set-difference lst1 lst2) *→* ("d" "C" "b" "A") 
+(set-difference lst1 lst2) → ("d" "C" "b" "A") 
 
-(set-difference lst1 lst2 :test ’equal) *→* ("b" "A") 
+(set-difference lst1 lst2 :test ’equal) → ("b" "A") 
 
-(set-difference lst1 lst2 :test #’equalp) *→* NIL 
+(set-difference lst1 lst2 :test #’equalp) → NIL 
 
-(nset-difference lst1 lst2 :test #’string=) *→* ("A" "b") 
+(nset-difference lst1 lst2 :test #’string=) → ("A" "b") 
 
 (setq lst1 ’(("a" . "b") ("c" . "d") ("e" . "f"))) 
 
-*→* (("a" . "b") ("c" . "d") ("e" . "f")) 
+→ (("a" . "b") ("c" . "d") ("e" . "f")) 
 
 (setq lst2 ’(("c" . "a") ("e" . "b") ("d" . "a"))) 
 
-*→* (("c" . "a") ("e" . "b") ("d" . "a")) 
+→ (("c" . "a") ("e" . "b") ("d" . "a")) 
 
 (nset-difference lst1 lst2 :test #’string= :key #’cdr) 
 
-*→* (("c" . "d") ("e" . "f")) 
+→ (("c" . "d") ("e" . "f")) 
 
-lst1 *→* (("a" . "b") ("c" . "d") ("e" . "f")) 
+lst1 → (("a" . "b") ("c" . "d") ("e" . "f")) 
 
-lst2 *→* (("c" . "a") ("e" . "b") ("d" . "a")) 
+lst2 → (("c" . "a") ("e" . "b") ("d" . "a")) 
 
 ;; Remove all flavor names that contain "c" or "w". 
 
@@ -124,7 +124,7 @@ lst2 *→* (("c" . "a") ("e" . "b") ("d" . "a"))
 
 :test #’(lambda (s c) (find c s))) 
 
-*→* ("banana" "rhubarb" "lemon") ;One possible ordering. 
+→ ("banana" "rhubarb" "lemon") ;One possible ordering. 
 
 
 

@@ -52,7 +52,7 @@ Within this document only, **nil** is also sometimes notated as *false* to empha
 
 
 
-(append ’() ’()) *→* () ;Emphasize use of empty lists 
+(append ’() ’()) → () ;Emphasize use of empty lists 
 
 
 

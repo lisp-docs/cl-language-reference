@@ -441,7 +441,7 @@ Note that no matter what is supplied for :conc-name, slot keywords that match th
 
 
 
-(defstruct (door (:conc-name dr-)) knob-color width material) *→* DOOR 
+(defstruct (door (:conc-name dr-)) knob-color width material) → DOOR 
 
 
 
@@ -449,19 +449,19 @@ Note that no matter what is supplied for :conc-name, slot keywords that match th
 
 
 
-*→* #S(DOOR :KNOB-COLOR RED :WIDTH 5.0 :MATERIAL NIL) 
+→ #S(DOOR :KNOB-COLOR RED :WIDTH 5.0 :MATERIAL NIL) 
 
 
 
-(dr-width my-door) *→* 5.0 
+(dr-width my-door) → 5.0 
 
 
 
-(setf (dr-width my-door) 43.7) *→* 43.7 
+(setf (dr-width my-door) 43.7) → 43.7 
 
 
 
-(dr-width my-door) *→* 43.7 
+(dr-width my-door) → 43.7 
 
 
 
@@ -609,15 +609,15 @@ defined by the person structure. The following examples illustrate the use of as
 
 
 
-(person-name x) *→* BUZZ 
+(person-name x) → BUZZ 
 
 
 
-(astro-name x) *→* BUZZ 
+(astro-name x) → BUZZ 
 
 
 
-(astro-favorite-beverage x) *→* TANG 
+(astro-favorite-beverage x) → TANG 
 
 
 
@@ -713,7 +713,7 @@ operand-1
 
 
 
-operand-2) *→* BINOP 
+operand-2) → BINOP 
 
 
 
@@ -729,7 +729,7 @@ operand-2) *→* BINOP
 
 
 
-commutative associative identity) *→* ANNOTATED-BINOP 
+commutative associative identity) → ANNOTATED-BINOP 
 
 
 
@@ -757,7 +757,7 @@ commutative associative identity) *→* ANNOTATED-BINOP
 
 
 
-*→* (NIL NIL BINOP \* X 5 NIL NIL NIL T T 1) 
+→ (NIL NIL BINOP \* X 5 NIL NIL NIL T T 1) 
 
 
 
@@ -789,7 +789,7 @@ operand-1
 
 
 
-operand-2) *→* BINOP 
+operand-2) → BINOP 
 
 
 
@@ -817,7 +817,7 @@ would result in the following behavior for make-binop:
 
 
 
-*→* (NIL NIL + X 5) 
+→ (NIL NIL + X 5) 
 
 
 
@@ -825,7 +825,7 @@ would result in the following behavior for make-binop:
 
 
 
-*→* (NIL NIL \* NIL 4) 
+→ (NIL NIL \* NIL 4) 
 
 
 
@@ -845,7 +845,7 @@ operand-1
 
 
 
-operand-2) *→* BINOP 
+operand-2) → BINOP 
 
 
 
@@ -853,7 +853,7 @@ would result in the following behavior for make-binop:
 
 
 
-(make-binop :operator ’+ :operand-1 ’x :operand-2 5) *→* (NIL NIL BINOP + X 5) (make-binop :operand-2 4 :operator ’\*) *→* (NIL NIL BINOP \* NIL 4) 
+(make-binop :operator ’+ :operand-1 ’x :operand-2 5) → (NIL NIL BINOP + X 5) (make-binop :operand-2 4 :operator ’\*) → (NIL NIL BINOP \* NIL 4) 
 
 
 
@@ -885,7 +885,7 @@ operand-1
 
 
 
-operand-2) *→* BINOP 
+operand-2) → BINOP 
 
 
 
@@ -897,11 +897,11 @@ The effect of make-binop is simply to construct a list of length three:
 
 
 
-(make-binop :operator ’+ :operand-1 ’x :operand-2 5) *→* (+ X 5) 
+(make-binop :operator ’+ :operand-1 ’x :operand-2 5) → (+ X 5) 
 
 
 
-(make-binop :operand-2 4 :operator ’\*) *→* (\* NIL 4) 
+(make-binop :operand-2 4 :operator ’\*) → (\* NIL 4) 
 
 
 
@@ -953,7 +953,7 @@ operand-1
 
 
 
-operand-2) *→* BINOP 
+operand-2) → BINOP 
 
 
 
@@ -961,11 +961,11 @@ As before, this defines a constructor function make-binop and three selector fun
 
 
 
-(make-binop :operator ’+ :operand-1 ’x :operand-2 5) *→* (BINOP + X 5) 
+(make-binop :operator ’+ :operand-1 ’x :operand-2 5) → (BINOP + X 5) 
 
 
 
-(make-binop :operand-2 4 :operator ’\*) *→* (BINOP \* NIL 4) 
+(make-binop :operand-2 4 :operator ’\*) → (BINOP \* NIL 4) 
 
 
 
@@ -977,7 +977,7 @@ The structure has the same layout as before except that the structure name binop
 
 
 
-(and (consp x) (eq (car x) ’binop))) *→* BINOP-P 
+(and (consp x) (eq (car x) ’binop))) → BINOP-P 
 
 
 
@@ -1449,7 +1449,7 @@ population
 
 
 
-*→* TOWN 
+→ TOWN 
 
 
 
@@ -1457,7 +1457,7 @@ population
 
 
 
-(setq town1 (make-town :area 0 :watertowers 0)) *→* #S(TOWN...) 
+(setq town1 (make-town :area 0 :watertowers 0)) → #S(TOWN...) 
 
 
 
@@ -1473,7 +1473,7 @@ population
 
 
 
-(town-area town1) *→* 0 
+(town-area town1) → 0 
 
 
 
@@ -1481,7 +1481,7 @@ population
 
 
 
-(town-elevation town1) *→* 5128 
+(town-elevation town1) → 5128 
 
 
 
@@ -1489,11 +1489,11 @@ population
 
 
 
-(setf (town-population town1) 99) *→* 99 
+(setf (town-population town1) 99) → 99 
 
 
 
-(town-population town1) *→* 99 
+(town-population town1) → 99 
 
 
 
@@ -1501,7 +1501,7 @@ population
 
 
 
-(setq town2 (copy-town town1)) *→* #S(TOWN...) 
+(setq town2 (copy-town town1)) → #S(TOWN...) 
 
 
 
@@ -1533,7 +1533,7 @@ population
 
 
 
-(setq town3 (make-town :area 0 :watertowers 3 :elevation 1200)) *→* #S(TOWN...) 
+(setq town3 (make-town :area 0 :watertowers 3 :elevation 1200)) → #S(TOWN...) 
 
 
 
@@ -1565,11 +1565,11 @@ population
 
 
 
-frizzy-hair-p polkadots) *→* CLOWN 
+frizzy-hair-p polkadots) → CLOWN 
 
 
 
-(setq funny-clown (make-clown)) *→* #S(CLOWN) 
+(setq funny-clown (make-clown)) → #S(CLOWN) 
 
 
 
@@ -1577,7 +1577,7 @@ frizzy-hair-p polkadots) *→* CLOWN
 
 
 
-(bozo-nose-color funny-clown) *→* RED 
+(bozo-nose-color funny-clown) → RED 
 
 
 
@@ -1589,7 +1589,7 @@ frizzy-hair-p polkadots) *→* CLOWN
 
 
 
-nose-color frizzy-hair-p polkadots) *→* klown 
+nose-color frizzy-hair-p polkadots) → klown 
 
 
 
@@ -1625,7 +1625,7 @@ nose-color frizzy-hair-p polkadots) *→* klown
 
 
 
-(defstruct vehicle name year (diesel t :read-only t)) *→* VEHICLE (defstruct (truck (:include vehicle (year 79))) 
+(defstruct vehicle name year (diesel t :read-only t)) → VEHICLE (defstruct (truck (:include vehicle (year 79))) 
 
 
 
@@ -1633,7 +1633,7 @@ load-limit
 
 
 
-(axles 6)) *→* TRUCK 
+(axles 6)) → TRUCK 
 
 
 
@@ -1641,7 +1641,7 @@ load-limit
 
 
 
-*→* #S(TRUCK...) 
+→ #S(TRUCK...) 
 
 
 
@@ -1653,7 +1653,7 @@ load-limit
 
 
 
-*→* MAC 
+→ MAC 
 
 
 
@@ -1665,19 +1665,19 @@ load-limit
 
 
 
-*→* 79 
+→ 79 
 
 
 
-(defstruct (pickup (:include truck)) ;pickup type includes truck camper long-bed four-wheel-drive) *→* PICKUP 
+(defstruct (pickup (:include truck)) ;pickup type includes truck camper long-bed four-wheel-drive) → PICKUP 
 
 
 
-(setq x (make-pickup :name ’king :long-bed t)) *→* #S(PICKUP...) ;:include default inherited 
+(setq x (make-pickup :name ’king :long-bed t)) → #S(PICKUP...) ;:include default inherited 
 
 
 
-(pickup-year x) *→* 79 
+(pickup-year x) → 79 
 
 
 
@@ -1725,7 +1725,7 @@ load-limit
 
 
 
-a b c d e f) *→* DFS-BOA 
+a b c d e f) → DFS-BOA 
 
 
 
@@ -1733,11 +1733,11 @@ a b c d e f) *→* DFS-BOA
 
 
 
-(setq x (make-dfs-boa 1 2 3)) *→* #(DFS-BOA...) 
+(setq x (make-dfs-boa 1 2 3)) → #(DFS-BOA...) 
 
 
 
-(dfs-boa-a x) *→* 1 
+(dfs-boa-a x) → 1 
 
 
 
@@ -1745,11 +1745,11 @@ a b c d e f) *→* DFS-BOA
 
 
 
-(setq x (create-dfs-boa 1 2)) *→* #(DFS-BOA...) 
+(setq x (create-dfs-boa 1 2)) → #(DFS-BOA...) 
 
 
 
-(dfs-boa-b x) *→* 2 
+(dfs-boa-b x) → 2 
 
 
 
@@ -1761,11 +1761,11 @@ a b c d e f) *→* DFS-BOA
 
 
 
-(setq x (create-dfs-boa 1 2 3 4 5 6)) *→* #(DFS-BOA...) 
+(setq x (create-dfs-boa 1 2 3 4 5 6)) → #(DFS-BOA...) 
 
 
 
-(dfs-boa-d x) *→* (4 5 6) 
+(dfs-boa-d x) → (4 5 6) 
 
 
 

@@ -50,9 +50,9 @@ If the variable foo names a 3-by-5 array, then the first index could be 0, 1, or
 
 (aref (setq alpha (make-array 4)) 3) *→ implementation-dependent* 
 
-(setf (aref alpha 3) ’sirens) *→* SIRENS 
+(setf (aref alpha 3) ’sirens) → SIRENS 
 
-(aref alpha 3) *→* SIRENS 
+(aref alpha 3) → SIRENS 
 
 (aref (setq beta (make-array ’(2 4) 
 
@@ -60,7 +60,7 @@ If the variable foo names a 3-by-5 array, then the first index could be 0, 1, or
 
 :initial-contents ’((0 1 2 3) (3 2 1 0)))) 
 
-1 2) *→* 1 
+1 2) → 1 
 
 
 
@@ -70,13 +70,13 @@ If the variable foo names a 3-by-5 array, then the first index could be 0, 1, or
 
 (setq gamma ’(0 2)) 
 
-(apply #’aref beta gamma) *→* 2 
+(apply #’aref beta gamma) → 2 
 
-(setf (apply #’aref beta gamma) 3) *→* 3 
+(setf (apply #’aref beta gamma) 3) → 3 
 
-(apply #’aref beta gamma) *→* 3 
+(apply #’aref beta gamma) → 3 
 
-(aref beta 0 2) *→* 3 
+(aref beta 0 2) → 3 
 
 
 ```

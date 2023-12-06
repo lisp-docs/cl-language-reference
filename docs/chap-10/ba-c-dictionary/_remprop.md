@@ -46,27 +46,27 @@ The *property indicator* and the corresponding *property value* are removed in a
 ```lisp
  
 
-(setq test (make-symbol "PSEUDO-PI")) *→* #:PSEUDO-PI 
+(setq test (make-symbol "PSEUDO-PI")) → #:PSEUDO-PI 
 
-(symbol-plist test) *→* () 
+(symbol-plist test) → () 
 
-(setf (get test ’constant) t) *→* T 
+(setf (get test ’constant) t) → T 
 
-(setf (get test ’approximation) 3.14) *→* 3.14 
+(setf (get test ’approximation) 3.14) → 3.14 
 
-(setf (get test ’error-range) ’noticeable) *→* NOTICEABLE 
-
-(symbol-plist test) 
-
-*→* (ERROR-RANGE NOTICEABLE APPROXIMATION 3.14 CONSTANT T) 
-
-(setf (get test ’approximation) nil) *→* NIL 
+(setf (get test ’error-range) ’noticeable) → NOTICEABLE 
 
 (symbol-plist test) 
 
-*→* (ERROR-RANGE NOTICEABLE APPROXIMATION NIL CONSTANT T) 
+→ (ERROR-RANGE NOTICEABLE APPROXIMATION 3.14 CONSTANT T) 
 
-(get test ’approximation) *→* NIL 
+(setf (get test ’approximation) nil) → NIL 
+
+(symbol-plist test) 
+
+→ (ERROR-RANGE NOTICEABLE APPROXIMATION NIL CONSTANT T) 
+
+(get test ’approximation) → NIL 
 
 
 
@@ -76,25 +76,25 @@ The *property indicator* and the corresponding *property value* are removed in a
 
 (remprop test ’approximation) *→ true* 
 
-(get test ’approximation) *→* NIL 
+(get test ’approximation) → NIL 
 
 (symbol-plist test) 
 
-*→* (ERROR-RANGE NOTICEABLE CONSTANT T) 
+→ (ERROR-RANGE NOTICEABLE CONSTANT T) 
 
-(remprop test ’approximation) *→* NIL 
+(remprop test ’approximation) → NIL 
 
 (symbol-plist test) 
 
-*→* (ERROR-RANGE NOTICEABLE CONSTANT T) 
+→ (ERROR-RANGE NOTICEABLE CONSTANT T) 
 
 (remprop test ’error-range) *→ true* 
 
-(setf (get test ’approximation) 3) *→* 3 
+(setf (get test ’approximation) 3) → 3 
 
 (symbol-plist test) 
 
-*→* (APPROXIMATION 3 CONSTANT T) 
+→ (APPROXIMATION 3 CONSTANT T) 
 
 
 ```

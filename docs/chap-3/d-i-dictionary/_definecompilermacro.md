@@ -74,7 +74,7 @@ This is the normal mechanism for defining a *compiler macro function*. Its manne
 ```lisp
  
 
-(defun square (x) (expt x 2)) *→* SQUARE 
+(defun square (x) (expt x 2)) → SQUARE 
 
 (define-compiler-macro square (&amp;whole form arg) 
 
@@ -100,35 +100,35 @@ form))
 
 form)) 
 
-(otherwise ‘(expt ,arg 2))))) *→* SQUARE 
+(otherwise ‘(expt ,arg 2))))) → SQUARE 
 
-(square (square 3)) *→* 81 
+(square (square 3)) → 81 
 
-(macroexpand ’(square x)) *→* (SQUARE X), *false* 
+(macroexpand ’(square x)) → (SQUARE X), *false* 
 
 (funcall (compiler-macro-function ’square) ’(square x) nil) 
 
-*→* (EXPT X 2) 
+→ (EXPT X 2) 
 
 (funcall (compiler-macro-function ’square) ’(square (square x)) nil) 
 
-*→* (EXPT X 4) 
+→ (EXPT X 4) 
 
 (funcall (compiler-macro-function ’square) ’(funcall #’square x) nil) 
 
-*→* (EXPT X 2) 
+→ (EXPT X 2) 
 
 (defun distance-positional (x1 y1 x2 y2) 
 
 (sqrt (+ (expt (- x2 x1) 2) (expt (- y2 y1) 2)))) 
 
-*→* DISTANCE-POSITIONAL 
+→ DISTANCE-POSITIONAL 
 
 (defun distance (&amp;key (x1 0) (y1 0) (x2 x1) (y2 y1)) 
 
 (distance-positional x1 y1 x2 y2)) 
 
-*→* DISTANCE 
+→ DISTANCE 
 
 (define-compiler-macro distance (&amp;whole form 
 
@@ -224,7 +224,7 @@ append (list (key i) (nth i temps)))))))
 
 (t form)))))) 
 
-*→* DISTANCE 
+→ DISTANCE 
 
 (dolist (form 
 
@@ -270,7 +270,7 @@ append (list (key i) (nth i temps)))))))
 
 ▷ (DISTANCE :X1 A1 :Y1 B1 :Z1 C1 :X2 A2 :Y2 B2 :Z2 C2) 
 
-*→* NIL 
+→ NIL 
 
 
 ```

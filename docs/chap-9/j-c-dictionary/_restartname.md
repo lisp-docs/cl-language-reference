@@ -60,7 +60,7 @@ collect (restart-name restart))
 
 (case1 () :report "Return 4." 4)) 
 
-*→* (CASE1 NIL CASE3 CASE1 ABORT) 
+→ (CASE1 NIL CASE3 CASE1 ABORT) 
 
 ;; In the example above the restart named ABORT was not created 
 

@@ -32,7 +32,7 @@ Returns a *string* that identifies the generic name of the computer hardware on 
 
 (machine-type) 
 
-*→* "DEC PDP-10" 
+→ "DEC PDP-10" 
 
 <i><sup>or</sup>→</i> "Symbolics LM-2" 
 

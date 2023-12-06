@@ -84,21 +84,21 @@ The value returned by **warn** if it returns is **nil**.
 
 result)) 
 
-*→* FOO 
+→ FOO 
 
 (foo 3) 
 
-*→* 6 
+→ 6 
 
 (foo most-positive-fixnum) 
 
 ▷ Warning: You’re using very big numbers. 
 
-*→* 4294967294 
+→ 4294967294 
 
 (setq \*break-on-signals\* t) 
 
-*→* T 
+→ T 
 
 (foo most-positive-fixnum) 
 
@@ -120,7 +120,7 @@ result))
 
 ▷ Warning: You’re using very big numbers. 
 
-*→* 4294967294 
+→ 4294967294 
 
 
 ```

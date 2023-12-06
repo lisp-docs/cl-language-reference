@@ -72,23 +72,23 @@ For information about the *evaluation* of *subforms* of *places*, see Section 5.
 
 (setq n 0) 
 
-(incf n) *→* 1 
+(incf n) → 1 
 
-n *→* 1 
+n → 1 
 
-(decf n 3) *→* -2 
+(decf n 3) → -2 
 
-n *→* -2 
+n → -2 
 
-(decf n -5) *→* 3 
+(decf n -5) → 3 
 
-(decf n) *→* 2 
+(decf n) → 2 
 
-(incf n 0.5) *→* 2.5 
+(incf n 0.5) → 2.5 
 
-(decf n) *→* 1.5 
+(decf n) → 1.5 
 
-n *→* 1.5 
+n → 1.5 
 
 
 ```

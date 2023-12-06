@@ -74,7 +74,7 @@ If **sublis** succeeds, a new copy of *tree* is returned in which each occurrenc
 
 ’(plus x (minus g z x p) 4 . x)) 
 
-*→* (PLUS 100 (MINUS G ZPRIME 100 P) 4 . 100) 
+→ (PLUS 100 (MINUS G ZPRIME 100 P) 4 . 100) 
 
 (sublis ’(((+ x y) . (- x y)) ((- x y) . (+ x y))) 
 
@@ -82,15 +82,15 @@ If **sublis** succeeds, a new copy of *tree* is returned in which each occurrenc
 
 :test #’equal) 
 
-*→* (\* (/ (- X Y) (+ X P)) (+ X Y)) 
+→ (\* (/ (- X Y) (+ X P)) (+ X Y)) 
 
 (setq tree1 ’(1 (1 2) ((1 2 3)) (((1 2 3 4))))) 
 
-*→* (1 (1 2) ((1 2 3)) (((1 2 3 4)))) 
+→ (1 (1 2) ((1 2 3)) (((1 2 3 4)))) 
 
 (sublis ’((3 . "three")) tree1) 
 
-*→* (1 (1 2) ((1 2 "three")) (((1 2 "three" 4)))) 
+→ (1 (1 2) ((1 2 "three")) (((1 2 "three" 4)))) 
 
 (sublis ’((t . "string")) 
 
@@ -98,23 +98,23 @@ If **sublis** succeeds, a new copy of *tree* is returned in which each occurrenc
 
 :key #’stringp) 
 
-*→* ("string" ("string" 2) (("string" 2 3)) ((("string" 2 3 44)))) 
+→ ("string" ("string" 2) (("string" 2 3)) ((("string" 2 3 44)))) 
 
-tree1 *→* (1 (1 2) ((1 2 3)) (((1 2 3 4)))) 
+tree1 → (1 (1 2) ((1 2 3)) (((1 2 3 4)))) 
 
 (setq tree2 ’("one" ("one" "two") (("one" "Two" "three")))) 
 
-*→* ("one" ("one" "two") (("one" "Two" "three"))) 
+→ ("one" ("one" "two") (("one" "Two" "three"))) 
 
 (sublis ’(("two" . 2)) tree2) 
 
-*→* ("one" ("one" "two") (("one" "Two" "three"))) 
+→ ("one" ("one" "two") (("one" "Two" "three"))) 
 
-tree2 *→* ("one" ("one" "two") (("one" "Two" "three"))) 
+tree2 → ("one" ("one" "two") (("one" "Two" "three"))) 
 
 (sublis ’(("two" . 2)) tree2 :test ’equal) 
 
-*→* ("one" ("one" 2) (("one" "Two" "three"))) 
+→ ("one" ("one" 2) (("one" "Two" "three"))) 
 
 (nsublis ’((t . ’temp)) 
 
@@ -122,7 +122,7 @@ tree1
 
 :key #’(lambda (x) (or (atom x) (&lt; (list-length x) 3)))) 
 
-*→* ((QUOTE TEMP) (QUOTE TEMP) QUOTE TEMP) 
+→ ((QUOTE TEMP) (QUOTE TEMP) QUOTE TEMP) 
 
 
 
@@ -176,11 +176,11 @@ Because the side-effecting variants (*e.g.*, **nsublis**) potentially change the
 
 
 
-(test-it #’sublis) *→* ((B A) (B A)) 
+(test-it #’sublis) → ((B A) (B A)) 
 
 
 
-(test-it #’nsublis) *→* ((A B) (A B)) 
+(test-it #’nsublis) → ((A B) (A B)) 
 
 
 

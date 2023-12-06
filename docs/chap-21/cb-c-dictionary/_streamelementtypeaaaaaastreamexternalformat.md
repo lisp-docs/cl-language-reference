@@ -44,7 +44,7 @@ Returns an *external file format designator* for the *stream*.
 
 (stream-external-format stream)) 
 
-*→* :DEFAULT 
+→ :DEFAULT 
 
 <i><sup>or</sup>→</i> :ISO8859/1-1987 
 
@@ -166,13 +166,13 @@ The consequences are undefined if an attempt is made to *assign* the *stream var
 
 (setq p (merge-pathnames "test")) 
 
-*→* #\<PATHNAME :HOST NIL :DEVICE *device-name* :DIRECTORY *directory-name* 
+→ #\<PATHNAME :HOST NIL :DEVICE *device-name* :DIRECTORY *directory-name* 
 
 :NAME "test" :TYPE NIL :VERSION :NEWEST> 
 
 (with-open-file (s p :direction :output :if-exists :supersede) 
 
-(format s "Here are a couple&#126;%of test data lines&#126;%")) *→* NIL 
+(format s "Here are a couple&#126;%of test data lines&#126;%")) → NIL 
 
 (with-open-file (s p) 
 
@@ -186,7 +186,7 @@ The consequences are undefined if an attempt is made to *assign* the *stream var
 
 ▷ \*\*\* of test data lines 
 
-*→* "Reached end of file." 
+→ "Reached end of file." 
 
 ;; Normally one would not do this intentionally because it is 
 
@@ -200,13 +200,13 @@ The consequences are undefined if an attempt is made to *assign* the *stream var
 
 ▷ hello? 
 
-*→* HELLO? ;This value was read from the terminal, not a file! 
+→ HELLO? ;This value was read from the terminal, not a file! 
 
 ;; Here’s another bug to avoid... 
 
 (with-open-file (foo "no-such-file" :direction :output :if-does-not-exist nil) (format foo "Hello")) 
 
-*→* "Hello" ;FORMAT got an argument of NIL! 
+→ "Hello" ;FORMAT got an argument of NIL! 
 
 
 ```

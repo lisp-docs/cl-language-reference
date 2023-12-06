@@ -126,7 +126,7 @@ where *arguments-tail* is either the tail of *arguments* which has as its *car* 
 
 
 
-*→* (C) 
+→ (C) 
 
 
 
@@ -150,7 +150,7 @@ where *arguments-tail* is either the tail of *arguments* which has as its *car* 
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -574,7 +574,7 @@ Section 22.3.5.3 (Tilde I: Indent)
 
 
 
-*→* **nil** 
+→ **nil** 
 
 
 
@@ -1222,7 +1222,7 @@ In some implementations the *stream* argument passed to a **print-object** *meth
 
 
 
-**print-unreadable-object** (*object stream* &amp;key *type identity*) *\{form\}*\* *→* **nil** 
+**print-unreadable-object** (*object stream* &amp;key *type identity*) *\{form\}*\* → **nil** 
 
 
 
@@ -1298,7 +1298,7 @@ If either *type* or *identity* is not supplied, its value is *false*. It is vali
 
 
 
-*→* "#\<Airplane NW0773 36000123135\>" 
+→ "#\<Airplane NW0773 36000123135\>" 
 
 
 
@@ -1832,7 +1832,7 @@ The meanings and defaults for the keyword arguments to **write-to-string** are t
 
 
 
-(prin1-to-string "abc") *→* "\"abc\"" 
+(prin1-to-string "abc") → "\"abc\"" 
 
 
 
@@ -1848,7 +1848,7 @@ The meanings and defaults for the keyword arguments to **write-to-string** are t
 
 
 
-(princ-to-string "abc") *→* "abc" 
+(princ-to-string "abc") → "abc" 
 
 
 
@@ -2012,15 +2012,15 @@ If the *value* of **\*print-radix\*** is *true*, the printer will print a radix 
 
 
 
-*→* 23 
+→ 23 
 
 
 
-(setq \*print-base\* 10) *→* 10 
+(setq \*print-base\* 10) → 10 
 
 
 
-(setq \*print-radix\* nil) *→* NIL 
+(setq \*print-radix\* nil) → NIL 
 
 
 
@@ -2060,7 +2060,7 @@ If the *value* of **\*print-radix\*** is *true*, the printer will print a radix 
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -2112,7 +2112,7 @@ If the *value* of **\*print-radix\*** is *true*, the printer will print a radix 
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -2180,7 +2180,7 @@ The *value* of **\*print-case\*** controls the case (upper, lower, or mixed) in 
 
 
 
-*→* TEST-PC 
+→ TEST-PC 
 
 
 
@@ -2232,7 +2232,7 @@ The *value* of **\*print-case\*** controls the case (upper, lower, or mixed) in 
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -2252,7 +2252,7 @@ The *value* of **\*print-case\*** controls the case (upper, lower, or mixed) in 
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -2364,7 +2364,7 @@ Note that implementations should not use #*n*# notation when the *Lisp reader* w
 
 
 
-*→* :DONE 
+→ :DONE 
 
 
 
@@ -2444,7 +2444,7 @@ For more specific details of how the *value* of **\*print-escape\*** affects the
 
 
 
-*→* #\a 
+→ #\a 
 
 
 
@@ -2456,7 +2456,7 @@ For more specific details of how the *value* of **\*print-escape\*** affects the
 
 
 
-*→* #\a 
+→ #\a 
 
 
 
@@ -2524,7 +2524,7 @@ Controls whether the prefix “#:” is printed before *apparently uninterned sy
 
 
 
-*→* #:G6040 
+→ #:G6040 
 
 
 
@@ -2596,7 +2596,7 @@ to be recursively printed has components and is at a level equal to or greater t
 
 
 
-(setq a ’(1 (2 (3 (4 (5 (6))))))) *→* (1 (2 (3 (4 (5 (6)))))) 
+(setq a ’(1 (2 (3 (4 (5 (6))))))) → (1 (2 (3 (4 (5 (6)))))) 
 
 
 
@@ -2644,11 +2644,11 @@ to be recursively printed has components and is at a level equal to or greater t
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
-(setq a ’(1 2 3 4 5 6)) *→* (1 2 3 4 5 6) 
+(setq a ’(1 2 3 4 5 6)) → (1 2 3 4 5 6) 
 
 
 
@@ -2704,7 +2704,7 @@ to be recursively printed has components and is at a level equal to or greater t
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -2780,7 +2780,7 @@ to be recursively printed has components and is at a level equal to or greater t
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -3012,7 +3012,7 @@ If it is *true*, the *pretty printer* is used, and the *Lisp printer* will endea
 
 
 
-(setq \*print-pretty\* ’nil) *→* NIL 
+(setq \*print-pretty\* ’nil) → NIL 
 
 
 
@@ -3024,7 +3024,7 @@ If it is *true*, the *pretty printer* is used, and the *Lisp printer* will endea
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -3052,7 +3052,7 @@ If it is *true*, the *pretty printer* is used, and the *Lisp printer* will endea
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -3124,7 +3124,7 @@ If it is *true*, the *pretty printer* is used, and the *Lisp printer* will endea
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -3248,7 +3248,7 @@ If **\*read-eval\*** is *false* and **\*print-readably\*** is *true*, any such m
 
 
 
-*→* :DONE 
+→ :DONE 
 
 
 
@@ -3260,7 +3260,7 @@ If **\*read-eval\*** is *false* and **\*print-readably\*** is *true*, any such m
 
 
 
-(setq table (make-hash-table)) *→* #\<HASH-TABLE EQL 0/120 32005763\> 
+(setq table (make-hash-table)) → #\<HASH-TABLE EQL 0/120 32005763\> 
 
 
 
@@ -3276,11 +3276,11 @@ If **\*read-eval\*** is *false* and **\*print-readably\*** is *true*, any such m
 
 
 
-(setf (gethash table 1) ’one) *→* ONE 
+(setf (gethash table 1) ’one) → ONE 
 
 
 
-(setf (gethash table 2) ’two) *→* TWO 
+(setf (gethash table 2) ’two) → TWO 
 
 
 
@@ -3316,7 +3316,7 @@ Error: Can’t print #\<HASH-TABLE EQL 0/120 32005763\> readably.
 
 
 
-*→* #\<HASH-TABLE EQL 0/120 32005763\> 
+→ #\<HASH-TABLE EQL 0/120 32005763\> 
 
 
 
@@ -3360,7 +3360,7 @@ Error: Can’t print #\<HASH-TABLE EQL 0/120 32005763\> readably.
 
 
 
-*→* #\<HASH-TABLE EQL 0/120 32005763\> 
+→ #\<HASH-TABLE EQL 0/120 32005763\> 
 
 
 

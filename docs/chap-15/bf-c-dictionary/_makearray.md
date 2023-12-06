@@ -202,9 +202,9 @@ elements of its own, but instead maps *accesses* to itself into *accesses* to ar
 
 (make-array 5 :element-type ’single-float) ;; Creates an array of single-floats. 
 
-(make-array nil :initial-element nil) *→* #0ANIL 
+(make-array nil :initial-element nil) → #0ANIL 
 
-(make-array 4 :initial-element nil) *→* #(NIL NIL NIL NIL) 
+(make-array 4 :initial-element nil) → #(NIL NIL NIL NIL) 
 
 (make-array ’(2 4) 
 
@@ -212,7 +212,7 @@ elements of its own, but instead maps *accesses* to itself into *accesses* to ar
 
 :initial-contents ’((0 1 2 3) (3 2 1 0))) 
 
-*→* #2A((0 1 2 3) (3 2 1 0)) 
+→ #2A((0 1 2 3) (3 2 1 0)) 
 
 (make-array 6 
 
@@ -220,13 +220,13 @@ elements of its own, but instead maps *accesses* to itself into *accesses* to ar
 
 :initial-element #\a 
 
-:fill-pointer 3) *→* "aaa" 
+:fill-pointer 3) → "aaa" 
 
 The following is an example of making a *displaced array*. 
 
 (setq a (make-array ’(4 3))) 
 
-*→* #<ARRAY 4x3 simple 32546632> 
+→ #<ARRAY 4x3 simple 32546632> 
 
 (dotimes (i 4) 
 
@@ -234,7 +234,7 @@ The following is an example of making a *displaced array*.
 
 (setf (aref a i j) (list i ’x j ’= (\* i j))))) 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -246,7 +246,7 @@ The following is an example of making a *displaced array*.
 
 :displaced-index-offset 2)) 
 
-*→* #<ARRAY 8 indirect 32550757> 
+→ #<ARRAY 8 indirect 32550757> 
 
 (dotimes (i 8) 
 
@@ -268,45 +268,45 @@ The following is an example of making a *displaced array*.
 
 ▷ (7 (3 X 0 = 0)) 
 
-*→* NIL 
+→ NIL 
 
 The last example depends on the fact that *arrays* are, in effect, stored in row-major order. 
 
 (setq a1 (make-array 50)) 
 
-*→* #<ARRAY 50 simple 32562043> 
+→ #<ARRAY 50 simple 32562043> 
 
 (setq b1 (make-array 20 :displaced-to a1 :displaced-index-offset 10)) 
 
-*→* #<ARRAY 20 indirect 32563346> 
+→ #<ARRAY 20 indirect 32563346> 
 
-(length b1) *→* 20 
+(length b1) → 20 
 
 (setq a2 (make-array 50 :fill-pointer 10)) 
 
-*→* #<ARRAY 50 fill-pointer 10 46100216> 
+→ #<ARRAY 50 fill-pointer 10 46100216> 
 
 (setq b2 (make-array 20 :displaced-to a2 :displaced-index-offset 10)) 
 
-*→* #<ARRAY 20 indirect 46104010> 
+→ #<ARRAY 20 indirect 46104010> 
 
-(length a2) *→* 10 
+(length a2) → 10 
 
-(length b2) *→* 20 
+(length b2) → 20 
 
 (setq a3 (make-array 50 :fill-pointer 10)) 
 
-*→* #<ARRAY 50 fill-pointer 10 46105663> 
+→ #<ARRAY 50 fill-pointer 10 46105663> 
 
 (setq b3 (make-array 20 :displaced-to a3 :displaced-index-offset 10 
 
 :fill-pointer 5)) 
 
-*→* #<ARRAY 20 indirect, fill-pointer 5 46107432> 
+→ #<ARRAY 20 indirect, fill-pointer 5 46107432> 
 
-(length a3) *→* 10 
+(length a3) → 10 
 
-(length b3) *→* 5 
+(length b3) → 5 
 
 
 ```

@@ -14,7 +14,7 @@ append x)
 
 
 
-*→* (A B (C)) 
+→ (A B (C)) 
 
 
 
@@ -46,7 +46,7 @@ nconc (if (evenp i) (list x) nil))
 
 
 
-*→* (A (C)) 
+→ (A (C)) 
 
 
 

@@ -6,23 +6,23 @@
 
 
 
-3 *→* 3 
+3 → 3 
 
 
 
-#c(2/3 5/8) *→* #C(2/3 5/8) 
+#c(2/3 5/8) → #C(2/3 5/8) 
 
 
 
-#p"S:[BILL]OTHELLO.TXT" *→* #P"S:[BILL]OTHELLO.TXT" 
+#p"S:[BILL]OTHELLO.TXT" → #P"S:[BILL]OTHELLO.TXT" 
 
 
 
-#(a b c) *→* #(A B C) 
+#(a b c) → #(A B C) 
 
 
 
-"fred smith" *→* "fred smith" 
+"fred smith" → "fred smith" 
 
 
 

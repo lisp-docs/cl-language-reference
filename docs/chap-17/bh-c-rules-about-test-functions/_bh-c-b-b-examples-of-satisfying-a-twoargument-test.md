@@ -6,7 +6,7 @@
 
 
 
-*→* (foo bar "BAR" "foo" "bar") 
+→ (foo bar "BAR" "foo" "bar") 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*→* (foo bar "BAR" "bar") 
+→ (foo bar "BAR" "bar") 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*→* (bar "BAR" "bar") 
+→ (bar "BAR" "bar") 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*→* (BAR "BAR" "foo" "bar") 
+→ (BAR "BAR" "foo" "bar") 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-*→* (1) 
+→ (1) 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-*→* (1 1.0 #C(1.0 0.0)) 
+→ (1 1.0 #C(1.0 0.0)) 
 
 
 
@@ -54,15 +54,15 @@
 
 
 
-*→* (1 1.0 #C(1.0 0.0)) 
+→ (1 1.0 #C(1.0 0.0)) 
 
 
 
-(count 1 ’((one 1) (uno 1) (two 2) (dos 2)) :key #’cadr) *→* 2 
+(count 1 ’((one 1) (uno 1) (two 2) (dos 2)) :key #’cadr) → 2 
 
 
 
-(count 2.0 ’(1 2 3) :test #’eql :key #’float) *→* 1 
+(count 2.0 ’(1 2 3) :test #’eql :key #’float) → 1 
 
 
 
@@ -82,7 +82,7 @@
 
 
 
-*→* 2 
+→ 2 
 
 
 

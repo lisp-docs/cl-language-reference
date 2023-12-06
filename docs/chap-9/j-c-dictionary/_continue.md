@@ -36,7 +36,7 @@ The **continue** *restart* is generally part of protocols where there is a singl
 
 (float x)) 
 
-(t x)))) *→* 3.0 
+(t x)))) → 3.0 
 
 
 ```

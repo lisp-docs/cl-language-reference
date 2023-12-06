@@ -70,7 +70,7 @@
 ```lisp
  
 
-(get-macro-character #\\{) *→* NIL, *false* 
+(get-macro-character #\\{) → NIL, *false* 
 
 (not (get-macro-character #\;)) *→ false* 
 
@@ -80,9 +80,9 @@ The following is a possible definition for the *single-quote reader macro* in *s
 
 (declare (ignore char)) 
 
-(list ’quote (read stream t nil t))) *→* SINGLE-QUOTE-READER 
+(list ’quote (read stream t nil t))) → SINGLE-QUOTE-READER 
 
-(set-macro-character #\’ #’single-quote-reader) *→* T 
+(set-macro-character #\’ #’single-quote-reader) → T 
 
 Here single-quote-reader reads an *object* following the *single-quote* and returns a *list* of **quote** and that *object*. The *char* argument is ignored. 
 
@@ -100,9 +100,9 @@ The following is a possible definition for the *semicolon reader macro* in *stan
 
 ;; Return zero values. 
 
-(values)) *→* SEMICOLON-READER 
+(values)) → SEMICOLON-READER 
 
-(set-macro-character #\; #’semicolon-reader) *→* T 
+(set-macro-character #\; #’semicolon-reader) → T 
 
 
 ```

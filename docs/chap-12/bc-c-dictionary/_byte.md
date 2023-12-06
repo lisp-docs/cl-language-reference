@@ -50,11 +50,11 @@
 ```lisp
  
 
-(setq b (byte 100 200)) *→* #<BYTE-SPECIFIER size 100 position 200> 
+(setq b (byte 100 200)) → #<BYTE-SPECIFIER size 100 position 200> 
 
-(byte-size b) *→* 100 
+(byte-size b) → 100 
 
-(byte-position b) *→* 200 
+(byte-position b) → 200 
 
 
 ```
@@ -94,11 +94,11 @@ A *byte* of *size* of 0 is permissible; it refers to a *byte* of width zero. For
 
 
 
-(ldb (byte 0 3) #o7777) *→* 0 
+(ldb (byte 0 3) #o7777) → 0 
 
 
 
-(dpb #o7777 (byte 0 3) 0) *→* 0 
+(dpb #o7777 (byte 0 3) 0) → 0 
 
 
 

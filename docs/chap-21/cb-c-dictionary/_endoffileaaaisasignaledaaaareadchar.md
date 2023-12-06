@@ -80,7 +80,7 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is *false*, *eof-value*
 
 ▷ #\0 #\1 #\2 #\3 
 
-*→* NIL 
+→ NIL 
 
 
 ```
@@ -198,7 +198,7 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is *false*, *eof-value*
 
 (read-char-no-hang))) 
 
-*→* TEST-IT 
+→ TEST-IT 
 
 ;; Implementation A, where a Newline is not required to terminate 
 
@@ -208,7 +208,7 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is *false*, *eof-value*
 
 ▷ a 
 
-*→* (#\a NIL NIL) 
+→ (#\a NIL NIL) 
 
 ;; Implementation B, where a Newline is required to terminate 
 
@@ -220,7 +220,7 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is *false*, *eof-value*
 
 ▷ a*←-* 
 
-*→* (#\a #\Newline NIL) 
+→ (#\a #\Newline NIL) 
 
 
 ```

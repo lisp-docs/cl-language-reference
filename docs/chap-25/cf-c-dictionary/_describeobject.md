@@ -92,7 +92,7 @@ s (type-of s) captain serial#)))
 
 :serial-number "NCC-1701-C") 
 
-*→* #<FEDERATION-STARSHIP 26312465> 
+→ #<FEDERATION-STARSHIP 26312465> 
 
 (describe \*) 
 

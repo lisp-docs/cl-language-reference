@@ -40,7 +40,7 @@ The **store-value** *restart* is generally used by *handlers* trying to recover 
 
 (invoke-restart r v)) 
 
-(error ()))))) *→* TYPE-ERROR-AUTO-COERCE 
+(error ()))))) → TYPE-ERROR-AUTO-COERCE 
 
 (let ((x 3)) 
 
@@ -48,7 +48,7 @@ The **store-value** *restart* is generally used by *handlers* trying to recover 
 
 (check-type x float) 
 
-x)) *→* 3.0 
+x)) → 3.0 
 
 
 ```

@@ -50,7 +50,7 @@ The following are some examples that exploit the #|...|# notation:
 
 
 
-*→* MENTION-FUN-FACT-1A 
+→ MENTION-FUN-FACT-1A 
 
 
 
@@ -62,7 +62,7 @@ The following are some examples that exploit the #|...|# notation:
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -74,7 +74,7 @@ The following are some examples that exploit the #|...|# notation:
 
 
 
-(fboundp ’mention-fun-fact-1b) *→* NIL 
+(fboundp ’mention-fun-fact-1b) → NIL 
 
 
 
@@ -110,7 +110,7 @@ The following are some examples that exploit the #|...|# notation:
 
 
 
-*→* MENTION-FUN-FACT-2A 
+→ MENTION-FUN-FACT-2A 
 
 
 
@@ -122,7 +122,7 @@ The following are some examples that exploit the #|...|# notation:
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -138,7 +138,7 @@ The following are some examples that exploit the #|...|# notation:
 
 
 
-(fboundp ’mention-fun-fact-2b) *→* NIL 
+(fboundp ’mention-fun-fact-2b) → NIL 
 
 
 
@@ -170,7 +170,7 @@ The following are some examples that exploit the #|...|# notation:
 
 
 
-*→* MENTION-FUN-FACT-3A 
+→ MENTION-FUN-FACT-3A 
 
 
 
@@ -182,7 +182,7 @@ The following are some examples that exploit the #|...|# notation:
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -202,7 +202,7 @@ The following are some examples that exploit the #|...|# notation:
 
 
 
-(fboundp ’mention-fun-fact-3b) *→* NIL 
+(fboundp ’mention-fun-fact-3b) → NIL 
 
 
 

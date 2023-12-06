@@ -56,7 +56,7 @@ The *lambda-list* supports destructuring as described in Section 3.4.5 (Destruct
 
 ‘((alpha) ,@(iota 3)) 
 
-(list a b three two one)) *→* (ALPHA BEE 3 2 1) 
+(list a b three two one)) → (ALPHA BEE 3 2 1) 
 
 Data and Control 
 
@@ -274,23 +274,23 @@ The special form **let** has the property that the *scope* of the name binding d
 ```lisp
  
 
-(setq a ’top) *→* TOP 
+(setq a ’top) → TOP 
 
-(defun dummy-function () a) *→* DUMMY-FUNCTION 
+(defun dummy-function () a) → DUMMY-FUNCTION 
 
 (let ((a ’inside) (b a)) 
 
-(format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) *→* "INSIDE TOP TOP" 
+(format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) → "INSIDE TOP TOP" 
 
 (let\* ((a ’inside) (b a)) 
 
-(format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) *→* "INSIDE INSIDE TOP" 
+(format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) → "INSIDE INSIDE TOP" 
 
 (let ((a ’inside) (b a)) 
 
 (declare (special a)) 
 
-(format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) *→* "INSIDE TOP INSIDE" 
+(format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) → "INSIDE TOP INSIDE" 
 
 The code 
 

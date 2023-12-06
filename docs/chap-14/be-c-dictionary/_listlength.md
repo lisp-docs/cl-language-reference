@@ -34,13 +34,13 @@ Returns the *length* of *list* if *list* is a *proper list*. Returns **nil** if 
 ```lisp
  
 
-(list-length ’(a b c d)) *→* 4 
+(list-length ’(a b c d)) → 4 
 
-(list-length ’(a (b c) d)) *→* 3 
+(list-length ’(a (b c) d)) → 3 
 
-(list-length ’()) *→* 0 
+(list-length ’()) → 0 
 
-(list-length nil) *→* 0 
+(list-length nil) → 0 
 
 (defun circular-list (&amp;rest elements) 
 
@@ -48,11 +48,11 @@ Returns the *length* of *list* if *list* is a *proper list*. Returns **nil** if 
 
 (nconc cycle cycle))) 
 
-(list-length (circular-list ’a ’b)) *→* NIL 
+(list-length (circular-list ’a ’b)) → NIL 
 
-(list-length (circular-list ’a)) *→* NIL 
+(list-length (circular-list ’a)) → NIL 
 
-(list-length (circular-list)) *→* 0 
+(list-length (circular-list)) → 0 
 
 
 ```

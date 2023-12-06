@@ -34,7 +34,7 @@ while stack))
 
 
 
-*→* (6 A B C D E F) 
+→ (6 A B C D E F) 
 
 
 
@@ -58,7 +58,7 @@ while (&lt; i 5))
 
 
 
-*→* (3 5) 
+→ (3 5) 
 
 
 

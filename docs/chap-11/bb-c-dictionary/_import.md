@@ -46,7 +46,7 @@ A name conflict in **import** between the *symbol* being imported and a symbol i
 
 
 
-The imported *symbol* is not automatically exported from the *current package*, but if it is already *present* and external, then the fact that it is external is not changed. If any *symbol* to be *imported* has no home package (*i.e.*, (symbol-package *symbol*) *→* nil), **import** sets the *home package* of the *symbol* to *package*. 
+The imported *symbol* is not automatically exported from the *current package*, but if it is already *present* and external, then the fact that it is external is not changed. If any *symbol* to be *imported* has no home package (*i.e.*, (symbol-package *symbol*) → nil), **import** sets the *home package* of the *symbol* to *package*. 
 
 
 
@@ -58,11 +58,11 @@ If the *symbol* is already *present* in the importing *package*, **import** has 
 ```lisp
  
 
-(import ’common-lisp::car (make-package ’temp :use nil)) *→* T 
+(import ’common-lisp::car (make-package ’temp :use nil)) → T 
 
-(find-symbol "CAR" ’temp) *→* CAR, :INTERNAL 
+(find-symbol "CAR" ’temp) → CAR, :INTERNAL 
 
-(find-symbol "CDR" ’temp) *→* NIL, NIL 
+(find-symbol "CDR" ’temp) → NIL, NIL 
 
 The form (import ’editor:buffer) takes the external symbol named buffer in the EDITOR *package* (this symbol was located when the form was read by the *Lisp reader* ) and adds it to the *current package* as an *internal symbol*. The symbol buffer is then *present* in the *current package*. 
 

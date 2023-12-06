@@ -42,7 +42,7 @@ do (print x)))
 
 
 
-*→* NIL 
+→ NIL 
 
 
 

@@ -180,7 +180,7 @@ x (typecase x
 
 (t (format nil "a(n) &#126;(&#126;A&#126;)" (type-of x)))))) 
 
-*→* WHAT-IS-IT 
+→ WHAT-IS-IT 
 
 (map ’nil #’what-is-it ’(nil (a b) 7.0 7 box)) 
 
@@ -194,11 +194,11 @@ x (typecase x
 
 ▷ BOX is a(n) symbol. 
 
-*→* NIL 
+→ NIL 
 
 (setq x 1/3) 
 
-*→* 1/3 
+→ 1/3 
 
 (ctypecase x 
 

@@ -140,7 +140,7 @@ The effect of **\*read-base\*** on the reading of any particular *rational* numb
 
 ▷ (15 (DAD 3088 BEE 2699 123 258)) 
 
-*→* NIL 
+→ NIL 
 
 
 ```
@@ -204,9 +204,9 @@ The printer uses **\*read-default-float-format\*** to guide the choice of *expon
 
 (read-from-string "(1.0 1.0e0 1.0s0 1.0f0 1.0d0 1.0L0)")) 
 
-*→* (1.0 1.0 1.0 1.0 1.0 1.0) ;Implementation has float format F. 
+→ (1.0 1.0 1.0 1.0 1.0 1.0) ;Implementation has float format F. 
 
-*→* (1.0 1.0 1.0s0 1.0 1.0 1.0) ;Implementation has float formats S and F. *→* (1.0d0 1.0d0 1.0 1.0 1.0d0 1.0d0) ;Implementation has float formats F and D. *→* (1.0d0 1.0d0 1.0s0 1.0 1.0d0 1.0d0) ;Implementation has float formats S, F, D. *→* (1.0d0 1.0d0 1.0 1.0 1.0d0 1.0L0) ;Implementation has float formats F, D, L. *→* (1.0d0 1.0d0 1.0s0 1.0 1.0d0 1.0L0) ;Implementation has formats S, F, D, L. 
+→ (1.0 1.0 1.0s0 1.0 1.0 1.0) ;Implementation has float formats S and F. → (1.0d0 1.0d0 1.0 1.0 1.0d0 1.0d0) ;Implementation has float formats F and D. → (1.0d0 1.0d0 1.0s0 1.0 1.0d0 1.0d0) ;Implementation has float formats S, F, D. → (1.0d0 1.0d0 1.0 1.0 1.0d0 1.0L0) ;Implementation has float formats F, D, L. → (1.0d0 1.0d0 1.0s0 1.0 1.0d0 1.0L0) ;Implementation has formats S, F, D, L. 
 
 *∗***read-eval***∗ Variable* 
 
@@ -362,7 +362,7 @@ No matter what the *value* of **\*read-suppress\***, parentheses still continue 
 
 "#\*ABC" "#\GARBAGE" "#RALPHA" "#3R444"))) 
 
-*→* (NIL NIL NIL NIL NIL NIL NIL NIL NIL NIL) 
+→ (NIL NIL NIL NIL NIL NIL NIL NIL NIL NIL) 
 
 
 ```
@@ -422,19 +422,19 @@ The *value* of **\*readtable\*** is called the *current readtable*. It controls 
 
  
 
-(setq zvar 123) *→* 123 
+(setq zvar 123) → 123 
 
-(set-syntax-from-char #\z #\’ (setq table2 (copy-readtable))) *→* T 
+(set-syntax-from-char #\z #\’ (setq table2 (copy-readtable))) → T 
 
-zvar *→* 123 
+zvar → 123 
 
-(setq \*readtable\* table2) *→* #&lt;READTABLE&gt; 
+(setq \*readtable\* table2) → #&lt;READTABLE&gt; 
 
-zvar *→* VAR 
+zvar → VAR 
 
-(setq \*readtable\* (copy-readtable nil)) *→* #&lt;READTABLE&gt; 
+(setq \*readtable\* (copy-readtable nil)) → #&lt;READTABLE&gt; 
 
-zvar *→* 123 
+zvar → 123 
 
 
 ```

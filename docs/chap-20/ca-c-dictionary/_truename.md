@@ -50,7 +50,7 @@
 
 (truename stream))) 
 
-*→* #P"S:&gt;vistor&gt;test.text.newest", #P"S:&gt;vistor&gt;test.text.1" 
+→ #P"S:&gt;vistor&gt;test.text.newest", #P"S:&gt;vistor&gt;test.text.1" 
 
 <i><sup>or</sup>→</i> #P"S:&gt;vistor&gt;test.text.newest", #P"S:&gt;vistor&gt;test.text.newest" 
 
@@ -68,7 +68,7 @@
 
 (truename stream))) 
 
-*→* #P"S:&gt;vistor&gt;test.text.newest", #P"S:&gt;vistor&gt;test.text.1" 
+→ #P"S:&gt;vistor&gt;test.text.newest", #P"S:&gt;vistor&gt;test.text.1" 
 
 ;; An example involving TOP-20’s implementation-dependent concept 
 
@@ -82,7 +82,7 @@
 
 (truename stream))) 
 
-*→* #P"CMUC::DOC:DUMPER.HLP", #P"CMUC::PS:&lt;DOCUMENTATION&gt;DUMPER.HLP.13" 
+→ #P"CMUC::DOC:DUMPER.HLP", #P"CMUC::PS:&lt;DOCUMENTATION&gt;DUMPER.HLP.13" 
 
 
 ```

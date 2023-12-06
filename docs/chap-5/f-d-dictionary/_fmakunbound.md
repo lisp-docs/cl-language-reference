@@ -34,7 +34,7 @@ Removes the *function* or *macro* definition, if any, of *name* in the *global e
 ```lisp
  
 
-(defun add-some (x) (+ x 19)) *→* ADD-SOME 
+(defun add-some (x) (+ x 19)) → ADD-SOME 
 
 (fboundp ’add-some) *→ true* 
 
@@ -42,7 +42,7 @@ Removes the *function* or *macro* definition, if any, of *name* in the *global e
 
 (fmakunbound ’add-some) 
 
-(add-some 1)) *→* 38 
+(add-some 1)) → 38 
 
 (fboundp ’add-some) *→ false* 
 

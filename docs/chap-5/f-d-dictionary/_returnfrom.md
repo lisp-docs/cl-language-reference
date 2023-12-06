@@ -6,7 +6,7 @@
 
 
 
-**return-from** *name* [*result*] *→* 
+**return-from** *name* [*result*] → 
 
 
 
@@ -42,17 +42,17 @@ The transfer of control initiated by **return-from** is performed as described i
 ```lisp
  
 
-(block alpha (return-from alpha) 1) *→* NIL 
+(block alpha (return-from alpha) 1) → NIL 
 
-(block alpha (return-from alpha 1) 2) *→* 1 
+(block alpha (return-from alpha 1) 2) → 1 
 
-(block alpha (return-from alpha (values 1 2)) 3) *→* 1, 2 
+(block alpha (return-from alpha (values 1 2)) 3) → 1, 2 
 
 (let ((a 0)) 
 
 (dotimes (i 10) (incf a) (when (oddp i) (return))) 
 
-a) *→* 2 
+a) → 2 
 
 Data and Control 
 
@@ -66,11 +66,11 @@ Data and Control
 
 (if x (return-from temp ’dummy)) 
 
-\44) *→* TEMP 
+\44) → TEMP 
 
-(temp nil) *→* 44 
+(temp nil) → 44 
 
-(temp t) *→* DUMMY 
+(temp t) → DUMMY 
 
 (block out 
 
@@ -78,7 +78,7 @@ Data and Control
 
 (block out (exit 1))) 
 
-\2) *→* 1 
+\2) → 1 
 
 (block nil 
 
@@ -86,7 +86,7 @@ Data and Control
 
 (return-from nil 2))) 
 
-*→* 2 
+→ 2 
 
 (dolist (flag ’(nil t)) 
 
@@ -110,7 +110,7 @@ Data and Control
 
 ▷ HERE 
 
-*→* NIL 
+→ NIL 
 
 (dolist (flag ’(nil t)) 
 
@@ -136,7 +136,7 @@ Data and Control
 
 ▷ HERE 
 
-*→* NIL 
+→ NIL 
 
 The following has undefined consequences because the **block** *form* exits normally before the **return-from** *form* is attempted. 
 

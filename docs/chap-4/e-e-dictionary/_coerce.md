@@ -110,25 +110,25 @@ Any *object* can be *coerced* to an *object* of *type* **t**. In this case, the 
 ```lisp
  
 
-(coerce ’(a b c) ’vector) *→* #(A B C)  
+(coerce ’(a b c) ’vector) → #(A B C)  
 
 
 
-(coerce ’a ’character) *→* #\A 
+(coerce ’a ’character) → #\A 
 
-(coerce 4.56 ’complex) *→* #C(4.56 0.0) 
+(coerce 4.56 ’complex) → #C(4.56 0.0) 
 
-(coerce 4.5s0 ’complex) *→* #C(4.5s0 0.0s0) 
+(coerce 4.5s0 ’complex) → #C(4.5s0 0.0s0) 
 
-(coerce 7/2 ’complex) *→* 7/2 
+(coerce 7/2 ’complex) → 7/2 
 
-(coerce 0 ’short-float) *→* 0.0s0 
+(coerce 0 ’short-float) → 0.0s0 
 
-(coerce 3.5L0 ’float) *→* 3.5L0 
+(coerce 3.5L0 ’float) → 3.5L0 
 
-(coerce 7/2 ’float) *→* 3.5 
+(coerce 7/2 ’float) → 3.5 
 
-(coerce (cons 1 2) t) *→* (1 . 2) 
+(coerce (cons 1 2) t) → (1 . 2) 
 
 All the following *forms* should signal an error: 
 

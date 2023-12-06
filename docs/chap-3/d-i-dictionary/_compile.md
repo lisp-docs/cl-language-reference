@@ -78,19 +78,19 @@ The *tertiary value*, *failure-p*, is *false* if no *conditions* of *type* **err
 ```lisp
  
 
-(defun foo () "bar") *→* FOO 
+(defun foo () "bar") → FOO 
 
 (compiled-function-p #’foo) *→ implementation-dependent* 
 
-(compile ’foo) *→* FOO 
+(compile ’foo) → FOO 
 
 (compiled-function-p #’foo) *→ true* 
 
 (setf (symbol-function ’foo) 
 
-(compile nil ’(lambda () "replaced"))) *→* #&lt;Compiled-Function&gt; 
+(compile nil ’(lambda () "replaced"))) → #&lt;Compiled-Function&gt; 
 
-(foo) *→* "replaced" 
+(foo) → "replaced" 
 
 
 ```

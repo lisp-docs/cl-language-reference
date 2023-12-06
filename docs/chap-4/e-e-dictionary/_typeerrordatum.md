@@ -72,7 +72,7 @@ five six seven eight nine))
 
 (foo ’seven) 
 
-*→* 10 
+→ 10 
 
 
 ```

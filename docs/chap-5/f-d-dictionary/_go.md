@@ -42,7 +42,7 @@ The transfer of control initiated by **go** is performed as described in Section
 
 (incf val 3) 
 
-lp (incf val 4)) *→* NIL 
+lp (incf val 4)) → NIL 
 
 
 
@@ -50,7 +50,7 @@ lp (incf val 4)) *→* NIL
 
 
 
-val *→* 6 
+val → 6 
 
 The following is in error because there is a normal exit of the **tagbody** before the **go** is executed. 
 

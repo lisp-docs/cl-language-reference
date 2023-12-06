@@ -46,17 +46,17 @@ Returns the *tail* of *list* that would be obtained by calling **cdr** *n* times
 ```lisp
  
 
-(nthcdr 0 ’()) *→* NIL 
+(nthcdr 0 ’()) → NIL 
 
-(nthcdr 3 ’()) *→* NIL 
+(nthcdr 3 ’()) → NIL 
 
-(nthcdr 0 ’(a b c)) *→* (A B C) 
+(nthcdr 0 ’(a b c)) → (A B C) 
 
-(nthcdr 2 ’(a b c)) *→* (C) 
+(nthcdr 2 ’(a b c)) → (C) 
 
-(nthcdr 4 ’(a b c)) *→* () 
+(nthcdr 4 ’(a b c)) → () 
 
-(nthcdr 1 ’(0 . 1)) *→* 1 
+(nthcdr 1 ’(0 . 1)) → 1 
 
 (locally (declare (optimize (safety 3))) 
 

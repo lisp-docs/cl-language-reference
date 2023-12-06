@@ -34,17 +34,17 @@ Returns **t** if *x* is *false*; otherwise, returns **nil**.
 ```lisp
  
 
-(not nil) *→* T 
+(not nil) → T 
 
-(not ’()) *→* T 
+(not ’()) → T 
 
-(not (integerp ’sss)) *→* T 
+(not (integerp ’sss)) → T 
 
-(not (integerp 1)) *→* NIL 
+(not (integerp 1)) → NIL 
 
-(not 3.7) *→* NIL 
+(not 3.7) → NIL 
 
-(not ’apple) *→* NIL 
+(not ’apple) → NIL 
 
 
 ```

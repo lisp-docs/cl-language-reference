@@ -56,7 +56,7 @@ For a one-dimensional *array*, the result of **array-row-major-index** equals *s
 
 (setq a (make-array ’(4 7) :element-type ’(unsigned-byte 8))) 
 
-(array-row-major-index a 1 2) *→* 9 
+(array-row-major-index a 1 2) → 9 
 
 (array-row-major-index 
 
@@ -68,7 +68,7 @@ For a one-dimensional *array*, the result of **array-row-major-index** equals *s
 
 :displaced-index-offset 4) 
 
-0 2 1) *→* 9 
+0 2 1) → 9 
 
 
 ```

@@ -306,7 +306,7 @@ For details, see Section 6.1 (The LOOP Facility).
 
 (format t "&#126;&amp;The square root of &#126;D is &#126;D.&#126;%" n (sqrt n))))) 
 
-*→* SQRT-ADVISOR 
+→ SQRT-ADVISOR 
 
 (sqrt-advisor) 
 
@@ -320,7 +320,7 @@ For details, see Section 6.1 (The LOOP Facility).
 
 ▷ Number: done*←-* 
 
-*→* NIL 
+→ NIL 
 
 ;; An example of the extended form of LOOP. 
 
@@ -334,7 +334,7 @@ while n
 
 do (format t "&#126;&amp;The square of &#126;D is &#126;D.&#126;%" n (\* n n)))) 
 
-*→* SQUARE-ADVISOR 
+→ SQUARE-ADVISOR 
 
 (square-advisor) 
 
@@ -348,7 +348,7 @@ do (format t "&#126;&amp;The square of &#126;D is &#126;D.&#126;%" n (\* n n))))
 
 ▷ Number: done*←-* 
 
-*→* NIL 
+→ NIL 
 
 ;; Another example of the extended form of LOOP. 
 
@@ -358,7 +358,7 @@ when (oddp n)
 
 collect n) 
 
-*→* (1 3 5 7 9) 
+→ (1 3 5 7 9) 
 
 
 ```

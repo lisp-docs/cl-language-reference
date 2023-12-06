@@ -50,7 +50,7 @@ Returns *true* if *name* is *fbound*; otherwise, returns *false*.
 
 (fboundp ’unwind-protect) *→ true* 
 
-(defun my-function (x) x) *→* MY-FUNCTION 
+(defun my-function (x) x) → MY-FUNCTION 
 
 (fboundp ’my-function) *→ true* 
 
@@ -66,11 +66,11 @@ Returns *true* if *name* is *fbound*; otherwise, returns *false*.
 
 (fboundp ’my-function) *→ true* 
 
-(defmacro my-macro (x) ‘’,x) *→* MY-MACRO 
+(defmacro my-macro (x) ‘’,x) → MY-MACRO 
 
 (fboundp ’my-macro) *→ true* 
 
-(fmakunbound ’my-function) *→* MY-FUNCTION 
+(fmakunbound ’my-function) → MY-FUNCTION 
 
 (fboundp ’my-function) *→ false* 
 

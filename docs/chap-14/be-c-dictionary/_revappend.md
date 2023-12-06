@@ -82,17 +82,17 @@ The resulting *list* shares *list structure* with *tail*.
 
 ▷ T 
 
-*→* T 
+→ T 
 
-(revappend ’(1 2 3) ’()) *→* (3 2 1) 
+(revappend ’(1 2 3) ’()) → (3 2 1) 
 
-(revappend ’(1 2 3) ’(a . b)) *→* (3 2 1 A . B) 
+(revappend ’(1 2 3) ’(a . b)) → (3 2 1 A . B) 
 
-(revappend ’() ’(a b c)) *→* (A B C) 
+(revappend ’() ’(a b c)) → (A B C) 
 
-(revappend ’(1 2 3) ’a) *→* (3 2 1 . A) 
+(revappend ’(1 2 3) ’a) → (3 2 1 . A) 
 
-(revappend ’() ’a) *→* A ;degenerate case 
+(revappend ’() ’a) → A ;degenerate case 
 
 (let ((list-1 ’(1 2 3)) 
 
@@ -110,7 +110,7 @@ The resulting *list* shares *list structure* with *tail*.
 
 ▷ T 
 
-*→* T 
+→ T 
 
 
 ```

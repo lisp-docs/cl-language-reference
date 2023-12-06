@@ -34,7 +34,7 @@ Returns the *list* of nickname *strings* for *package*, not including the name o
 
 :nicknames ’("TEMP" "temp"))) 
 
-*→* ("temp" "TEMP") 
+→ ("temp" "TEMP") 
 
 
 ```

@@ -40,7 +40,7 @@ Creates a *fresh simple general vector* whose size corresponds to the number of 
 
 (simple-vector-p v) *→ true* 
 
-(length v) *→* 3 
+(length v) → 3 
 
 
 

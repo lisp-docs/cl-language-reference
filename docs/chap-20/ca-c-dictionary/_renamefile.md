@@ -80,11 +80,11 @@ If the *filespec designator* is an open *stream*, then the *stream* itself and t
 
 (values (pathname stream) (truename stream))) 
 
-*→* #P"SYS:CHEMISTRY;LEAD.TEXT.NEWEST", #P"Q:&gt;sys&gt;chem&gt;lead.text.1" 
+→ #P"SYS:CHEMISTRY;LEAD.TEXT.NEWEST", #P"Q:&gt;sys&gt;chem&gt;lead.text.1" 
 
 (rename-file "sys:chemistry;lead.text" "gold.text") 
 
-*→* #P"SYS:CHEMISTRY;GOLD.TEXT.NEWEST", 
+→ #P"SYS:CHEMISTRY;GOLD.TEXT.NEWEST", 
 
 #P"Q:&gt;sys&gt;chem&gt;lead.text.1", 
 

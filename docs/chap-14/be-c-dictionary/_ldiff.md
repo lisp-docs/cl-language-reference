@@ -124,7 +124,7 @@ object (tailp object list) (ldiff list object))))))))
 
 ▷ object=X NIL (A B C . D) 
 
-*→* NIL 
+→ NIL 
 
 
 ```

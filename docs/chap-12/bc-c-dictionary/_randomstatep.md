@@ -122,7 +122,7 @@ The *current random state*, which is used, for example, by the *function* **rand
 
 (loop for i from 1 to 10 collect (random)))) 
 
-*→* ((19 16 44 19 96 15 76 96 13 61) 
+→ ((19 16 44 19 96 15 76 96 13 61) 
 
 (19 16 44 19 96 15 76 96 13 61) 
 

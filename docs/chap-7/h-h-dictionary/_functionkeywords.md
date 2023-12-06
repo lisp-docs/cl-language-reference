@@ -56,25 +56,25 @@ Two values are returned: a *list* of the explicitly named keywords and a *genera
 
 (list a b c d e f)) 
 
-*→* #<STANDARD-METHOD GF1 (INTEGER) 36324653> 
+→ #<STANDARD-METHOD GF1 (INTEGER) 36324653> 
 
 (find-method #’gf1 ’() (list (find-class ’integer))) 
 
-*→* #<STANDARD-METHOD GF1 (INTEGER) 36324653> 
+→ #<STANDARD-METHOD GF1 (INTEGER) 36324653> 
 
 (function-keywords \*) 
 
-*→* (:C :DEE :E EFF), *false* 
+→ (:C :DEE :E EFF), *false* 
 
 (defmethod gf2 ((a integer)) 
 
 (list a b c d e f)) 
 
-*→* #<STANDARD-METHOD GF2 (INTEGER) 42701775> 
+→ #<STANDARD-METHOD GF2 (INTEGER) 42701775> 
 
 (function-keywords (find-method #’gf1 ’() (list (find-class ’integer)))) 
 
-*→* (), *false* 
+→ (), *false* 
 
 (defmethod gf3 ((a integer) &amp;key b c d &amp;allow-other-keys) 
 
@@ -82,7 +82,7 @@ Two values are returned: a *list* of the explicitly named keywords and a *genera
 
 (function-keywords \*) 
 
-*→* (:B :C :D), *true* 
+→ (:B :C :D), *true* 
 
 
 ```

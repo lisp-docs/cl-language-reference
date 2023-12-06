@@ -158,7 +158,7 @@ Data and Control
 
 :initial-contents ’(1 1 1 3 5 7))) 
 
-*→* #(1 1 1 3 5 7) 
+→ #(1 1 1 3 5 7) 
 
 (setq array2 (make-array 8 :element-type ’integer 
 
@@ -166,11 +166,11 @@ Data and Control
 
 :fill-pointer 6)) 
 
-*→* #(1 1 1 3 5 7) 
+→ #(1 1 1 3 5 7) 
 
 (equalp array1 array2) *→ true* 
 
-(setq vector1 (vector 1 1 1 3 5 7)) *→* #(1 1 1 3 5 7) 
+(setq vector1 (vector 1 1 1 3 5 7)) → #(1 1 1 3 5 7) 
 
 (equalp array1 vector1) *→ true* 
 

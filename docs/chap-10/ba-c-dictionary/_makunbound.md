@@ -34,9 +34,9 @@ Makes the *symbol* be *unbound*, regardless of whether it was previously *bound*
 
 (boundp ’a) *→ true* 
 
-a *→* 1 
+a → 1 
 
-(makunbound ’a) *→* A 
+(makunbound ’a) → A 
 
 (boundp ’a) *→ false* 
 

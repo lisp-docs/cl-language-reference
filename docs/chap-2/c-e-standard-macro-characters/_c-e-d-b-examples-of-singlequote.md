@@ -2,15 +2,15 @@
 
 
 
-’foo *→* FOO 
+’foo → FOO 
 
 
 
-”foo *→* (QUOTE FOO) 
+”foo → (QUOTE FOO) 
 
 
 
-(car ”foo) *→* QUOTE 
+(car ”foo) → QUOTE 
 
 
 

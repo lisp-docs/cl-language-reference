@@ -66,7 +66,7 @@ return i))
 
 
 
-*→* 2 
+→ 2 
 
 
 
@@ -94,7 +94,7 @@ finally (prin1 ’got-here))
 
 
 
-*→* (6 7 8 9 10) 
+→ (6 7 8 9 10) 
 
 
 
@@ -118,7 +118,7 @@ finally (return (values number-count number-list)))
 
 
 
-*→* 5, (6 7 8 9 10) 
+→ 5, (6 7 8 9 10) 
 
 
 

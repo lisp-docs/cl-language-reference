@@ -10,7 +10,7 @@
 
 
 
-*→* **nil** 
+→ **nil** 
 
 
 
@@ -72,11 +72,11 @@ The *places* are *generalized references* to data upon which *test-form* depends
 
 (setq x (make-array ’(3 5) :initial-element 3)) 
 
-*→* #2A((3 3 3 3 3) (3 3 3 3 3) (3 3 3 3 3)) 
+→ #2A((3 3 3 3 3) (3 3 3 3 3) (3 3 3 3 3)) 
 
 (setq y (make-array ’(3 5) :initial-element 7)) 
 
-*→* #2A((7 7 7 7 7) (7 7 7 7 7) (7 7 7 7 7)) 
+→ #2A((7 7 7 7 7) (7 7 7 7 7) (7 7 7 7 7)) 
 
 (defun matrix-multiply (a b) 
 
@@ -90,7 +90,7 @@ The *places* are *generalized references* to data upon which *test-form* depends
 
 "Cannot multiply &#126;S by &#126;S." a b) 
 
-(really-matrix-multiply a b))) *→* MATRIX-MULTIPLY 
+(really-matrix-multiply a b))) → MATRIX-MULTIPLY 
 
 (matrix-multiply x y) 
 
@@ -110,7 +110,7 @@ The *places* are *generalized references* to data upon which *test-form* depends
 
 ▷ Value for B: (make-array ’(5 3) :initial-element 6) 
 
-*→* #2A((54 54 54 54 54) 
+→ #2A((54 54 54 54 54) 
 
 (54 54 54 54 54) 
 
@@ -124,7 +124,7 @@ The *places* are *generalized references* to data upon which *test-form* depends
 
 (double-safely 4) 
 
-*→* 8 
+→ 8 
 
 
 
@@ -144,7 +144,7 @@ The *places* are *generalized references* to data upon which *test-form* depends
 
 ▷ Value for X: 7 
 
-*→* 14 
+→ 14 
 
 
 ```

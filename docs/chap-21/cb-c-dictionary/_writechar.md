@@ -38,7 +38,7 @@
 
 ▷ a 
 
-*→* #\a 
+→ #\a 
 
 (with-output-to-string (s) 
 
@@ -48,7 +48,7 @@
 
 (write-char #\b s)) 
 
-*→* "a b" 
+→ "a b" 
 
 
 ```

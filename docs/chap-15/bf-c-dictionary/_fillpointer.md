@@ -38,23 +38,23 @@
 ```lisp
  
 
-(setq a (make-array 8 :fill-pointer 4)) *→* #(NIL NIL NIL NIL) 
+(setq a (make-array 8 :fill-pointer 4)) → #(NIL NIL NIL NIL) 
 
-(fill-pointer a) *→* 4 
+(fill-pointer a) → 4 
 
-(dotimes (i (length a)) (setf (aref a i) (\* i i))) *→* NIL 
+(dotimes (i (length a)) (setf (aref a i) (\* i i))) → NIL 
 
-a *→* #(0 1 4 9) 
+a → #(0 1 4 9) 
 
-(setf (fill-pointer a) 3) *→* 3 
+(setf (fill-pointer a) 3) → 3 
 
-(fill-pointer a) *→* 3 
+(fill-pointer a) → 3 
 
-a *→* #(0 1 4) 
+a → #(0 1 4) 
 
-(setf (fill-pointer a) 8) *→* 8 
+(setf (fill-pointer a) 8) → 8 
 
-a *→* #(0 1 4 9 NIL NIL NIL NIL) 
+a → #(0 1 4 9 NIL NIL NIL NIL) 
 
 
 ```

@@ -46,7 +46,7 @@
 
 ▷ bookworms 
 
-*→* "books" 
+→ "books" 
 
 (progn (write-char #\\*) 
 
@@ -70,7 +70,7 @@ nil)
 
 ▷ \* 
 
-*→* NIL 
+→ NIL 
 
 
 ```

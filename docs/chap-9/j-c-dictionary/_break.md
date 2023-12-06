@@ -56,7 +56,7 @@ If the **continue** *restart* is used while in the debugger, **break** immediate
 
 ▷ Return from BREAK. 
 
-*→* NIL 
+→ NIL 
 
 
 ```
@@ -240,7 +240,7 @@ When the *value* of **\*debugger-hook\*** is *non-nil*, it is called prior to no
 
 ▷ Form to evaluate and use: 1 
 
-*→* 9 
+→ 9 
 
 
 ```
@@ -312,11 +312,11 @@ The **continue** *restart* can be used to continue with the normal *signaling* p
 ```lisp
  
 
-\*break-on-signals\* *→* NIL 
+\*break-on-signals\* → NIL 
 
 (ignore-errors (error ’simple-error :format-control "Fooey!")) 
 
-*→* NIL, #<SIMPLE-ERROR 32207172> 
+→ NIL, #<SIMPLE-ERROR 32207172> 
 
 (let ((\*break-on-signals\* ’error)) 
 
@@ -336,7 +336,7 @@ The **continue** *restart* can be used to continue with the normal *signaling* p
 
 ▷ Continue to signal. 
 
-*→* NIL, #<SIMPLE-ERROR 32212257> 
+→ NIL, #<SIMPLE-ERROR 32212257> 
 
 (let ((\*break-on-signals\* ’error)) 
 

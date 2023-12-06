@@ -46,27 +46,27 @@ The *list structure* of *alist* is copied, and the *elements* of *alist* which a
 
  
 
-\*alist\* *→* ((1 . "one") (2 . "two")) 
+\*alist\* → ((1 . "one") (2 . "two")) 
 
 (defparameter \*list-copy\* (copy-list \*alist\*)) 
 
-\*list-copy\* *→* ((1 . "one") (2 . "two")) 
+\*list-copy\* → ((1 . "one") (2 . "two")) 
 
 (defparameter \*alist-copy\* (copy-alist \*alist\*)) 
 
-\*alist-copy\* *→* ((1 . "one") (2 . "two")) 
+\*alist-copy\* → ((1 . "one") (2 . "two")) 
 
-(setf (cdr (assoc 2 \*alist-copy\*)) "deux") *→* "deux" 
+(setf (cdr (assoc 2 \*alist-copy\*)) "deux") → "deux" 
 
-\*alist-copy\* *→* ((1 . "one") (2 . "deux")) 
+\*alist-copy\* → ((1 . "one") (2 . "deux")) 
 
-\*alist\* *→* ((1 . "one") (2 . "two")) 
+\*alist\* → ((1 . "one") (2 . "two")) 
 
-(setf (cdr (assoc 1 \*list-copy\*)) "uno") *→* "uno" 
+(setf (cdr (assoc 1 \*list-copy\*)) "uno") → "uno" 
 
-\*list-copy\* *→* ((1 . "uno") (2 . "two")) 
+\*list-copy\* → ((1 . "uno") (2 . "two")) 
 
-\*alist\* *→* ((1 . "uno") (2 . "two")) 
+\*alist\* → ((1 . "uno") (2 . "two")) 
 
 
 ```

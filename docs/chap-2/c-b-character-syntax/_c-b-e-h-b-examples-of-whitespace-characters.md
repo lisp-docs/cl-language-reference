@@ -2,11 +2,11 @@
 
 
 
-(length ’(this-that)) *→* 1 
+(length ’(this-that)) → 1 
 
 
 
-(length ’(this - that)) *→* 3 
+(length ’(this - that)) → 3 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-b)) *→* 2 
+b)) → 2 
 
 
 
-(+ 34) *→* 34 
+(+ 34) → 34 
 
 
 
-(+ 3 4) *→* 7  
+(+ 3 4) → 7  
 
 
 

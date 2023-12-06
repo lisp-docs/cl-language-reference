@@ -214,11 +214,11 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 
 (my-restart (&amp;optional v) v)) 
 
-*→* 7 
+→ 7 
 
 (define-condition food-error (error) ()) 
 
-*→* FOOD-ERROR 
+→ FOOD-ERROR 
 
 (define-condition bad-tasting-sundae (food-error) 
 
@@ -238,7 +238,7 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 
 (bad-tasting-sundae-topping condition))))) 
 
-*→* BAD-TASTING-SUNDAE 
+→ BAD-TASTING-SUNDAE 
 
 (defun all-start-with-same-letter (symbol1 symbol2 symbol3) 
 
@@ -256,7 +256,7 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 
 (eql first-letter (char (symbol-name symbol3) 0))))) 
 
-*→* ALL-START-WITH-SAME-LETTER 
+→ ALL-START-WITH-SAME-LETTER 
 
 (defun read-new-value () 
 
@@ -264,7 +264,7 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 
 (multiple-value-list (eval (read)))) 
 
-*→* READ-NEW-VALUE 
+→ READ-NEW-VALUE 
 
 
 
@@ -314,7 +314,7 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 
 (values ice-cream sauce topping)) 
 
-*→* VERIFY-OR-FIX-PERFECT-SUNDAE 
+→ VERIFY-OR-FIX-PERFECT-SUNDAE 
 
 (verify-or-fix-perfect-sundae ’vanilla ’caramel ’cherry) ▷ Error: Bad tasting sundae with VANILLA, CARAMEL, and CHERRY. ▷ To continue, type :CONTINUE followed by an option number: ▷ 1: Use a new ice cream. 
 
@@ -330,7 +330,7 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 
 ▷ Enter a new ice cream: ’chocolate 
 
-*→* CHOCOLATE, CARAMEL, CHERRY 
+→ CHOCOLATE, CARAMEL, CHERRY 
 
 
 ```

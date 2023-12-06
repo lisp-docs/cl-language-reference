@@ -22,9 +22,9 @@ This *restart* is established by **warn** so that *handlers* of **warning** *con
 ```lisp
  
 
-(defvar \*all-quiet\* nil) *→* \*ALL-QUIET\* 
+(defvar \*all-quiet\* nil) → \*ALL-QUIET\* 
 
-(defvar \*saved-warnings\* ’()) *→* \*SAVED-WARNINGS\* 
+(defvar \*saved-warnings\* ’()) → \*SAVED-WARNINGS\* 
 
 (defun quiet-warning-handler (c) 
 
@@ -44,7 +44,7 @@ This *restart* is established by **warn** so that *handlers* of **warning** *con
 
 (invoke-restart r))))) 
 
-*→* CUSTOM-WARNING-HANDLER 
+→ CUSTOM-WARNING-HANDLER 
 
 (defmacro with-quiet-warnings (&amp;body forms) 
 
@@ -58,7 +58,7 @@ This *restart* is established by **warn** so that *handlers* of **warning** *con
 
 \*saved-warnings\*))) 
 
-*→* WITH-QUIET-WARNINGS 
+→ WITH-QUIET-WARNINGS 
 
 (setq saved 
 
@@ -74,7 +74,7 @@ This *restart* is established by **warn** so that *handlers* of **warning** *con
 
 ▷ Warning: Situation #2. 
 
-*→* (#<SIMPLE-WARNING 42744421> #<SIMPLE-WARNING 42744365>) 
+→ (#<SIMPLE-WARNING 42744421> #<SIMPLE-WARNING 42744365>) 
 
 (dolist (s saved) (format t "&#126;&amp;&#126;A&#126;%" s)) 
 
@@ -82,7 +82,7 @@ This *restart* is established by **warn** so that *handlers* of **warning** *con
 
 ▷ Situation #1. 
 
-*→* NIL 
+→ NIL 
 
 
 ```

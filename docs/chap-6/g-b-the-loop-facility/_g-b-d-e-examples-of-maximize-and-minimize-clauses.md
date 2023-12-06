@@ -10,7 +10,7 @@ maximize i)
 
 
 
-*→* 5 
+→ 5 
 
 
 
@@ -22,7 +22,7 @@ minimize i)
 
 
 
-*→* 1 
+→ 1 
 
 
 
@@ -34,7 +34,7 @@ minimize i)
 
 
 
-*→* (1.2 4.3 5.7) 
+→ (1.2 4.3 5.7) 
 
 
 
@@ -46,7 +46,7 @@ maximize (round v) of-type fixnum)
 
 
 
-*→* 6 
+→ 6 
 
 
 
@@ -66,7 +66,7 @@ finally (return result))
 
 
 
-*→* 1 
+→ 1 
 
 
 

@@ -6,15 +6,15 @@ Here are some examples involving *optional parameters* and *rest parameters*:
 
 
 
-((lambda (a b) (+ a (\* b 3))) 4 5) *→* 19 
+((lambda (a b) (+ a (\* b 3))) 4 5) → 19 
 
 
 
-((lambda (a &amp;optional (b 2)) (+ a (\* b 3))) 4 5) *→* 19 
+((lambda (a &amp;optional (b 2)) (+ a (\* b 3))) 4 5) → 19 
 
 
 
-((lambda (a &amp;optional (b 2)) (+ a (\* b 3))) 4) *→* 10 
+((lambda (a &amp;optional (b 2)) (+ a (\* b 3))) 4) → 10 
 
 
 
@@ -22,7 +22,7 @@ Here are some examples involving *optional parameters* and *rest parameters*:
 
 
 
-*→* (2 NIL 3 NIL NIL)  
+→ (2 NIL 3 NIL NIL)  
 
 
 
@@ -34,7 +34,7 @@ Here are some examples involving *optional parameters* and *rest parameters*:
 
 
 
-*→* (6 T 3 NIL NIL) 
+→ (6 T 3 NIL NIL) 
 
 
 
@@ -42,7 +42,7 @@ Here are some examples involving *optional parameters* and *rest parameters*:
 
 
 
-*→* (6 T 3 T NIL) 
+→ (6 T 3 T NIL) 
 
 
 
@@ -50,7 +50,7 @@ Here are some examples involving *optional parameters* and *rest parameters*:
 
 
 
-*→* (6 T 3 T (8)) 
+→ (6 T 3 T (8)) 
 
 
 
@@ -62,7 +62,7 @@ Here are some examples involving *optional parameters* and *rest parameters*:
 
 
 
-*→* (6 t 3 t (8 9 10 11)) 
+→ (6 t 3 t (8 9 10 11)) 
 
 
 
@@ -70,39 +70,39 @@ Here are some examples involving *keyword parameters*:
 
 
 
-((lambda (a b &amp;key c d) (list a b c d)) 1 2) *→* (1 2 NIL NIL) 
+((lambda (a b &amp;key c d) (list a b c d)) 1 2) → (1 2 NIL NIL) 
 
 
 
-((lambda (a b &amp;key c d) (list a b c d)) 1 2 :c 6) *→* (1 2 6 NIL) 
+((lambda (a b &amp;key c d) (list a b c d)) 1 2 :c 6) → (1 2 6 NIL) 
 
 
 
-((lambda (a b &amp;key c d) (list a b c d)) 1 2 :d 8) *→* (1 2 NIL 8) 
+((lambda (a b &amp;key c d) (list a b c d)) 1 2 :d 8) → (1 2 NIL 8) 
 
 
 
-((lambda (a b &amp;key c d) (list a b c d)) 1 2 :c 6 :d 8) *→* (1 2 6 8) 
+((lambda (a b &amp;key c d) (list a b c d)) 1 2 :c 6 :d 8) → (1 2 6 8) 
 
 
 
-((lambda (a b &amp;key c d) (list a b c d)) 1 2 :d 8 :c 6) *→* (1 2 6 8) 
+((lambda (a b &amp;key c d) (list a b c d)) 1 2 :d 8 :c 6) → (1 2 6 8) 
 
 
 
-((lambda (a b &amp;key c d) (list a b c d)) :a 1 :d 8 :c 6) *→* (:a 1 6 8) 
+((lambda (a b &amp;key c d) (list a b c d)) :a 1 :d 8 :c 6) → (:a 1 6 8) 
 
 
 
-((lambda (a b &amp;key c d) (list a b c d)) :a :b :c :d) *→* (:a :b :d NIL) 
+((lambda (a b &amp;key c d) (list a b c d)) :a :b :c :d) → (:a :b :d NIL) 
 
 
 
-((lambda (a b &amp;key ((:sea c)) d) (list a b c d)) 1 2 :sea 6) *→* (1 2 6 NIL) 
+((lambda (a b &amp;key ((:sea c)) d) (list a b c d)) 1 2 :sea 6) → (1 2 6 NIL) 
 
 
 
-((lambda (a b &amp;key ((c c)) d) (list a b c d)) 1 2 ’c 6) *→* (1 2 6 NIL) 
+((lambda (a b &amp;key ((c c)) d) (list a b c d)) 1 2 ’c 6) → (1 2 6 NIL) 
 
 
 
@@ -118,7 +118,7 @@ Here are some examples involving *optional parameters*, *rest parameters*, and *
 
 
 
-*→* (1 3 NIL 1 ()) 
+→ (1 3 NIL 1 ()) 
 
 
 
@@ -130,7 +130,7 @@ Here are some examples involving *optional parameters*, *rest parameters*, and *
 
 
 
-*→* (1 2 NIL 1 ()) 
+→ (1 2 NIL 1 ()) 
 
 
 
@@ -142,7 +142,7 @@ Here are some examples involving *optional parameters*, *rest parameters*, and *
 
 
 
-*→* (:c 7 NIL :c ()) 
+→ (:c 7 NIL :c ()) 
 
 
 
@@ -154,7 +154,7 @@ Here are some examples involving *optional parameters*, *rest parameters*, and *
 
 
 
-*→* (1 6 7 1 (:c 7)) 
+→ (1 6 7 1 (:c 7)) 
 
 
 
@@ -166,7 +166,7 @@ Here are some examples involving *optional parameters*, *rest parameters*, and *
 
 
 
-*→* (1 6 NIL 8 (:d 8)) 
+→ (1 6 NIL 8 (:d 8)) 
 
 
 
@@ -178,7 +178,7 @@ Here are some examples involving *optional parameters*, *rest parameters*, and *
 
 
 
-*→* (1 6 9 8 (:d 8 :c 9 :d 10)) 
+→ (1 6 9 8 (:d 8 :c 9 :d 10)) 
 
 
 

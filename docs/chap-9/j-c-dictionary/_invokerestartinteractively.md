@@ -62,7 +62,7 @@ Once the arguments have been determined, **invoke-restart-interactively** execut
 
 ▷ Type a form to evaluate and use: 7 
 
-*→* 10 
+→ 10 
 
 
 ```

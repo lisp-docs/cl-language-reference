@@ -54,7 +54,7 @@ out))
 
 (get-output-stream-string out))) 
 
-*→* "this-is-read-and-echoed \* this-is-direct-output" 
+→ "this-is-read-and-echoed \* this-is-direct-output" 
 
 
 ```

@@ -70,7 +70,7 @@ finally
 
 
 
-*→* (1 2345 323 235), (324 2 4 252) 
+→ (1 2345 323 235), (324 2 4 252) 
 
 
 
@@ -102,7 +102,7 @@ collect it) ; IT refers to (and (&gt; i 3) i).
 
 
 
-*→* (4 5 6) 
+→ (4 5 6) 
 
 
 
@@ -122,7 +122,7 @@ return it)
 
 
 
-*→* 4 
+→ 4 
 
 
 
@@ -138,7 +138,7 @@ thereis (and (&gt; i 3) i))
 
 
 
-*→* 4 
+→ 4 
 
 
 
@@ -198,7 +198,7 @@ finally (return (values float-numbers other-numbers symbol-list))))
 
 
 
-*→* (3.0 9.8), (0 4 5), (APPLE ORANGE BANANA) 
+→ (3.0 9.8), (0 4 5), (APPLE ORANGE BANANA) 
 
 
 
@@ -270,7 +270,7 @@ and do (princ " c"))
 
 
 
-*→* NIL 
+→ NIL 
 
 
 

@@ -34,7 +34,7 @@ Here is an example illustrating the *scope* of *bound declarations*.
 
 
 
-*→* (2 3) 
+→ (2 3) 
 
 
 
@@ -126,7 +126,7 @@ Finally, here is an example that shows the *scope* of *declarations* in an *iter
 
 
 
-*→* 1 
+→ 1 
 
 
 

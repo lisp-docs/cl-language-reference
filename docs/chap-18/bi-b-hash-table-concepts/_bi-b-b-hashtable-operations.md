@@ -18,27 +18,27 @@ Figure 18–1 lists some *defined names* that are applicable to *hash tables*. T
 
 
 
-(setq a (make-hash-table)) *→* #\<HASH-TABLE EQL 0/120 32536573\> 
+(setq a (make-hash-table)) → #\<HASH-TABLE EQL 0/120 32536573\> 
 
 
 
-(setf (gethash ’color a) ’brown) *→* BROWN 
+(setf (gethash ’color a) ’brown) → BROWN 
 
 
 
-(setf (gethash ’name a) ’fred) *→* FRED 
+(setf (gethash ’name a) ’fred) → FRED 
 
 
 
-(gethash ’color a) *→* BROWN, *true* 
+(gethash ’color a) → BROWN, *true* 
 
 
 
-(gethash ’name a) *→* FRED, *true* 
+(gethash ’name a) → FRED, *true* 
 
 
 
-(gethash ’pointy a) *→* NIL, *false* 
+(gethash ’pointy a) → NIL, *false* 
 
 
 

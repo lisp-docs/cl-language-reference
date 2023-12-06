@@ -86,7 +86,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 
 (translate-logical-pathname "foo:bar;baz;mum.quux.3") 
 
-*→* #P"MY-LISPM:&gt;library&gt;foo&gt;bar&gt;baz&gt;mum.quux.3" 
+→ #P"MY-LISPM:&gt;library&gt;foo&gt;bar&gt;baz&gt;mum.quux.3" 
 
 ;;;A more complex example, dividing the files among two file servers 
 
@@ -130,7 +130,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 
 (translate-logical-pathname "prog:mail;save;ideas.mail.3") 
 
-*→* #P"MY-VAX:SYS$DISK:[JOE.MAIL.PROG.SAVE]IDEAS.MBX.3" 
+→ #P"MY-VAX:SYS$DISK:[JOE.MAIL.PROG.SAVE]IDEAS.MBX.3" 
 
 ;;;Example translations for a program that uses three files main.lisp, 
 
@@ -150,7 +150,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 
 (translate-logical-pathname "prog:code;documentation.lisp") 
 
-*→* #P"/lib/prog/documentation.lisp" 
+→ #P"/lib/prog/documentation.lisp" 
 
 ;;;For Unix with 14-character file names, using .lisp as the type 
 
@@ -166,7 +166,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 
 (translate-logical-pathname "prog:code;documentation.lisp") 
 
-*→* #P"/lib/prog/docum.lisp" 
+→ #P"/lib/prog/docum.lisp" 
 
 ;;;For Unix with 14-character file names, using .l as the type 
 
@@ -198,7 +198,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 
 (translate-logical-pathname "prog:code;documentation.lisp") 
 
-*→* #P"/lib/prog/documentatio.l" 
+→ #P"/lib/prog/documentatio.l" 
 
 ;;;For a Cray with 6 character names and no directories, types, or versions. (setf (logical-pathname-translations "prog") 
 
@@ -276,7 +276,7 @@ l))))
 
 (translate-logical-pathname "prog:code;documentation.lisp") 
 
-*→* #P"PGDOC" 
+→ #P"PGDOC" 
 
 
 ```

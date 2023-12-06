@@ -6,7 +6,7 @@ The special symbols described here are used as a notational convenience within t
 
 
 
-*→* 
+→ 
 
 
 
@@ -14,7 +14,7 @@ This indicates evaluation. For example:
 
 
 
-(+ 4 5) *→* 9 
+(+ 4 5) → 9 
 
 
 
@@ -30,7 +30,7 @@ If a *form* returns *multiple values*, those values might be shown separated by 
 
 
 
-*→* 1 2 
+→ 1 2 
 
 
 
@@ -38,7 +38,7 @@ If a *form* returns *multiple values*, those values might be shown separated by 
 
 
 
-*→* 1 
+→ 1 
 
 
 
@@ -50,7 +50,7 @@ If a *form* returns *multiple values*, those values might be shown separated by 
 
 
 
-*→* 1, 2 
+→ 1, 2 
 
 
 
@@ -82,7 +82,7 @@ The notation “ <i><sup>or</sup>→</i>” is used to denote one of several pos
 
 
 
-*→* NIL 
+→ NIL 
 
 
 
@@ -126,7 +126,7 @@ The notation “<i><sup>not</sup> →</i>” is used to denote a result which is
 
 
 
-*→* NIL, *true*, NIL 
+→ NIL, *true*, NIL 
 
 
 
@@ -198,7 +198,7 @@ For example, the notation
 
 
 
-*→* 8 
+→ 8 
 
 
 
@@ -222,7 +222,7 @@ Sometimes, the non-interactive stream model calls for a *newline*. How that *new
 
 
 
-*→* "Fred, Mary, and Sally", *&#126;&#126;fal&#126;&#126;se* 
+→ "Fred, Mary, and Sally", *&#126;&#126;fal&#126;&#126;se* 
 
 
 

@@ -38,7 +38,7 @@ For example, **mapcar** receives a *function designator* as an argument, and its
 
 
 
-(+ x 1)) *→* ADD-SOME 
+(+ x 1)) → ADD-SOME 
 
 
 
@@ -46,7 +46,7 @@ For example, **mapcar** receives a *function designator* as an argument, and its
 
 
 
-*→* (2 3 4 5) 
+→ (2 3 4 5) 
 
 
 

@@ -138,7 +138,7 @@ both of them are removed. This removal of redundant :back *keywords* is repeated
 
 "CMUC::PS:&lt;LISPIO&gt;.FASL") 
 
-*→* #P"CMUC::PS:&lt;LISPIO&gt;FORMAT.FASL.0" 
+→ #P"CMUC::PS:&lt;LISPIO&gt;FORMAT.FASL.0" 
 
 
 ```
