@@ -6,7 +6,7 @@
 
 
 
-**loop-finish** ⟨*no arguments*⟩ →* 
+**loop-finish** ⟨*no arguments*⟩ → |
 
 
 
