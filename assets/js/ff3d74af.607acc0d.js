@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcl_language_reference=self.webpackChunkcl_language_reference||[]).push([[22978],{26072:e=>{e.exports=JSON.parse('{"permalink":"/cl-language-reference/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

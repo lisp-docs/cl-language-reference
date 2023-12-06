@@ -4,10 +4,47 @@
         <title>Common Lisp (New) Language Reference Blog</title>
         <link>https://lisp-docs.github.io/cl-language-reference/blog</link>
         <description>Common Lisp (New) Language Reference Blog</description>
-        <lastBuildDate>Sun, 03 Dec 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 06 Dec 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Complete Specification Update]]></title>
+            <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/06/</link>
+            <guid>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/06/</guid>
+            <pubDate>Wed, 06 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Finally, we are at Alpha, version 1.0 is out!]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="finally-we-are-at-alpha-version-10-is-out">Finally, we are at Alpha, version 1.0 is out!<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/06/#finally-we-are-at-alpha-version-10-is-out" class="hash-link" aria-label="Direct link to Finally, we are at Alpha, version 1.0 is out!" title="Direct link to Finally, we are at Alpha, version 1.0 is out!">​</a></h2>
+<p>As of today, 2023/12/06 the Alpha version of the technical reference is out.</p>
+<p>These are a few of the improvements since last time:</p>
+<ul>
+<li>Complete Specification Update: There were parts of the spec missing because of an issue of files getting truncated before they were converted into markdown. I have now recovered the truncated parts, parsed them, and added them to the specification</li>
+<li>A large number of code now shows up in code blocks with syntax highlighting.</li>
+<li>A lot of symbols like <code>→</code>, <code>≡</code>, and a few others are now properly displayed</li>
+<li>The Index, Figures, and Credits were parsed to be displayed properly per the original</li>
+<li>The search index was updated to account for the new content</li>
+<li>A bunch of formatting issues for the markdown to be displayed properly</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-alpha-version-means">What Alpha version means<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/06/#what-alpha-version-means" class="hash-link" aria-label="Direct link to What Alpha version means" title="Direct link to What Alpha version means">​</a></h2>
+<ul>
+<li>Now we are finally open to contributions of examples and added explanation<!-- -->
+<ul>
+<li>Contribution stubs were added at the end of Dictionary Items type pages see for example <a href="https://lisp-docs.github.io/cl-language-reference/docs/chap-5/f-d-dictionary/progn" target="_blank" rel="noopener noreferrer">progn</a></li>
+</ul>
+</li>
+<li>The main text is unlikely to change much except for:<!-- -->
+<ul>
+<li>Minor formatting issues</li>
+<li>Maybe there are still some symbols that are not rendering properly</li>
+<li>Code Blocks for syntax highlighting in the non dictionary type pages have not yet been added</li>
+<li>Tables have to be formatted</li>
+</ul>
+</li>
+<li>Therefore we are open to other contributions that are more meaningful in terms of content and development, please see our <a href="https://lisp-docs.github.io/cl-language-reference/todo">To Do Page</a> for how you can contribute!</li>
+</ul>]]></content:encoded>
+            <category>status</category>
+            <category>beginning</category>
+        </item>
         <item>
             <title><![CDATA[Dicionary Pages Broken Up]]></title>
             <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/03/</link>
