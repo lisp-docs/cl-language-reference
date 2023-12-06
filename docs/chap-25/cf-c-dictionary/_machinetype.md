@@ -6,7 +6,7 @@
 
 
 
-**machine-type** *hno argumentsi → description* 
+**machine-type** ⟨*no arguments*⟩ → description* 
 
 
 

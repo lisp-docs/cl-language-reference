@@ -6,7 +6,7 @@
 
 
 
-**machine-instance** *hno argumentsi → description* 
+**machine-instance** ⟨*no arguments*⟩ → description* 
 
 
 

@@ -262,7 +262,7 @@ Should signal an error of *type* **type-error** if *table* is neither a *pprint-
 
 
 
-**pprint-exit-if-list-exhausted** *hno argumentsi →* **nil** 
+**pprint-exit-if-list-exhausted** ⟨*no arguments*⟩ →* **nil** 
 
 
 
@@ -874,7 +874,7 @@ Section 22.3.5.1 (Tilde Underscore: Conditional Newline), Section 22.2.2 (Exampl
 
 
 
-**pprint-pop** *hno argumentsi → object* 
+**pprint-pop** ⟨*no arguments*⟩ → object* 
 
 
 

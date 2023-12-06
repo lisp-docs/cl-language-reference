@@ -6,7 +6,7 @@
 
 
 
-**get-universal-time** *hno argumentsi → universal-time* 
+**get-universal-time** ⟨*no arguments*⟩ → universal-time* 
 
 
 

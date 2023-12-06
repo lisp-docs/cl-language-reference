@@ -6,11 +6,11 @@
 
 
 
-**short-site-name** *hno argumentsi → description* 
+**short-site-name** ⟨*no arguments*⟩ → description* 
 
 
 
-**long-site-name** *hno argumentsi → description* 
+**long-site-name** ⟨*no arguments*⟩ → description* 
 
 
 

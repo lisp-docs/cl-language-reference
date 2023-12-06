@@ -80,11 +80,11 @@ The *values* of **/**, **//**, and **///** are updated immediately prior to prin
 
 
 
-**lisp-implementation-type** *hno argumentsi → description* 
+**lisp-implementation-type** ⟨*no arguments*⟩ → description* 
 
 
 
-**lisp-implementation-version** *hno argumentsi → description* 
+**lisp-implementation-version** ⟨*no arguments*⟩ → description* 
 
 
 

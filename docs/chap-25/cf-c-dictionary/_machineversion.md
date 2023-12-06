@@ -6,7 +6,7 @@
 
 
 
-**machine-version** *hno argumentsi → description* 
+**machine-version** ⟨*no arguments*⟩ → description* 
 
 
 

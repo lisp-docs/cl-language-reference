@@ -6,7 +6,7 @@
 
 
 
-**get-internal-run-time** *hno argumentsi → internal-time* 
+**get-internal-run-time** ⟨*no arguments*⟩ → internal-time* 
 
 
 

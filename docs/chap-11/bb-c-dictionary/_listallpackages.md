@@ -6,7 +6,7 @@
 
 
 
-**list-all-packages** *hno argumentsi → packages* 
+**list-all-packages** ⟨*no arguments*⟩ → packages* 
 
 
 

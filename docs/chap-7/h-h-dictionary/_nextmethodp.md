@@ -6,7 +6,7 @@
 
 
 
-**next-method-p** *hno argumentsi → generalized-boolean* 
+**next-method-p** ⟨*no arguments*⟩ → generalized-boolean* 
 
 
 

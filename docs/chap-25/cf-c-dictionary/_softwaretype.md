@@ -6,11 +6,11 @@
 
 
 
-**software-type** *hno argumentsi → description* 
+**software-type** ⟨*no arguments*⟩ → description* 
 
 
 
-**software-version** *hno argumentsi → description* 
+**software-version** ⟨*no arguments*⟩ → description* 
 
 
 
