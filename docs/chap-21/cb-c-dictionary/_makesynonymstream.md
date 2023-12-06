@@ -44,7 +44,7 @@ b-stream (make-string-input-stream "b-stream"))
 
 
 
-*→* #<String Input Stream> 
+*→* #\<String Input Stream\> 
 
 
 
@@ -52,7 +52,7 @@ b-stream (make-string-input-stream "b-stream"))
 
 
 
-*→* #<SYNONYM-STREAM for C-STREAM> 
+*→* #\<SYNONYM-STREAM for C-STREAM\> 
 
 
 
@@ -60,7 +60,7 @@ b-stream (make-string-input-stream "b-stream"))
 
 
 
-*→* #<String Input Stream> 
+*→* #\<String Input Stream\> 
 
 
 
@@ -72,7 +72,7 @@ b-stream (make-string-input-stream "b-stream"))
 
 
 
-*→* #<String Input Stream> 
+*→* #\<String Input Stream\> 
 
 
 

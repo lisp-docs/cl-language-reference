@@ -4,7 +4,7 @@ Here are all the dicionary entry pages for which we need expanded explanations a
 
 ## TODO
 
-- [dotimes](/docs/chap-6/g-c-dictionary/dotimes.md)
+<!-- - [dotimes](/docs/chap-6/g-c-dictionary/dotimes.md)
 - [dolist](/docs/chap-6/g-c-dictionary/dolist.md)
 - [go** may be used within the body of **dolist** to transfer control to a statement labeled by a *tag*. **loop](/docs/chap-6/g-c-dictionary/goaaamayabeausedawithinatheabodyaofaaadolistaaatoatransferacontrolatoaaastatementalabeledabyaaaatagaaaaaloop.md)
 - [loop-finish](/docs/chap-6/g-c-dictionary/loopfinish.md)
@@ -531,6 +531,6 @@ Here are all the dicionary entry pages for which we need expanded explanations a
 - [string](/docs/chap-16/bg-c-dictionary/string.md)
 - [string-trim, string-left-trim, string-right-trim](/docs/chap-16/bg-c-dictionary/stringtrim.md)
 - [stringp](/docs/chap-16/bg-c-dictionary/stringp.md)
-- [make-string](/docs/chap-16/bg-c-dictionary/makestring.md)
+- [make-string](/docs/chap-16/bg-c-dictionary/makestring.md) -->
 
 ## DONE
