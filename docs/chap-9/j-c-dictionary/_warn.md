@@ -110,7 +110,7 @@ result))
 
 ▷ 2: Abort to Lisp Toplevel. 
 
-▷ Debug&gt; :continue 1 
+▷ Debug> :continue 1 
 
 
 

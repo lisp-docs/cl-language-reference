@@ -92,7 +92,7 @@ The sorting operation can be destructive in all cases. In the case of a *vector*
 
 (setq tester (list ’(1 2 3) ’(4 5 6) ’(7 8 9))) → ((1 2 3) (4 5 6) (7 8 9)) 
 
-(sort tester #’&gt; :key #’car) → ((7 8 9) (4 5 6) (1 2 3)) 
+(sort tester #’> :key #’car) → ((7 8 9) (4 5 6) (1 2 3)) 
 
 (setq tester (list 1 2 3 4 5 6 7 8 9 0)) → (1 2 3 4 5 6 7 8 9 0) 
 

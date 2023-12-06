@@ -144,7 +144,7 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 
 (when (consp list) ;return nth element of list 
 
-(unless (and n (&lt; 0 n (length list))) (setq n 0)) 
+(unless (and n (< 0 n (length list))) (setq n 0)) 
 
 (setq list (nth n list))) 
 

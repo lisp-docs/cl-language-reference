@@ -68,7 +68,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 ▷ 2: Top level. 
 
-▷ Debug&gt; :continue 1 
+▷ Debug> :continue 1 
 
 → 3.0 
 
@@ -104,7 +104,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 ▷ 2: Top level. 
 
-▷ Debug&gt; :continue 1 
+▷ Debug> :continue 1 
 
 ▷ Type a number: 1/2 
 
@@ -112,7 +112,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 (defun assure-large-number (n) 
 
-(loop (when (and (numberp n) (&gt; n 73)) (return n)) 
+(loop (when (and (numberp n) (> n 73)) (return n)) 
 
 (cerror "Enter a number&#126;:[&#126;; a bit larger than &#126;D&#126;]." 
 
@@ -148,7 +148,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 ▷ 2: Top level. 
 
-▷ Debug&gt; :continue 1 
+▷ Debug> :continue 1 
 
 ▷ Type a large number: 88 
 
@@ -164,7 +164,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 ▷ 2: Top level. 
 
-▷ Debug&gt; :continue 1 
+▷ Debug> :continue 1 
 
 ▷ Type a large number: 259 
 
@@ -182,7 +182,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 (defun assure-large-number (n) 
 
-(loop (when (and (numberp n) (&gt; n 73)) (return n)) 
+(loop (when (and (numberp n) (> n 73)) (return n)) 
 
 (cerror "Enter a number&#126;3\*&#126;:[&#126;; a bit larger than &#126;\*&#126;D&#126;]." 
 
@@ -218,7 +218,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 ▷ 2: Top level. 
 
-▷ Debug&gt; :continue 1 
+▷ Debug> :continue 1 
 
 ▷ Type a large number: 88 
 
@@ -234,7 +234,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 ▷ 2: Top level. 
 
-▷ Debug&gt; :continue 1 
+▷ Debug> :continue 1 
 
 ▷ Type a large number: 259 
 

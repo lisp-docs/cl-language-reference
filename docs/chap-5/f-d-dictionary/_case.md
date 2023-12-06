@@ -192,7 +192,7 @@ Data and Control
 
 ▷ 2: Return to Lisp Toplevel. 
 
-▷ Debug&gt; :CONTINUE 1 
+▷ Debug> :CONTINUE 1 
 
 ▷ Value to evaluate and use for X: ’IV 
 

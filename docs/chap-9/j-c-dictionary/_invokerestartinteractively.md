@@ -58,7 +58,7 @@ Once the arguments have been determined, **invoke-restart-interactively** execut
 
 ▷ 2: Return to Lisp Toplevel. 
 
-▷ Debug&gt; (invoke-restart-interactively ’store-value) 
+▷ Debug> (invoke-restart-interactively ’store-value) 
 
 ▷ Type a form to evaluate and use: 7 
 

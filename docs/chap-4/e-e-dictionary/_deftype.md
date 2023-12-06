@@ -92,7 +92,7 @@ expansion of a *type specifier* is not defined fully at compile time (perhaps be
 
 (defun equidimensional (a) 
 
-(or (&lt; (array-rank a) 2) 
+(or (< (array-rank a) 2) 
 
 (apply #’= (array-dimensions a)))) → EQUIDIMENSIONAL 
 

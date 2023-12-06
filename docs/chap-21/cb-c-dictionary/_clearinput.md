@@ -40,13 +40,13 @@ If **clear-input** does not make sense for *input-stream*, then **clear-input** 
 
 (defun read-sleepily (&amp;optional (clear-p nil) (zzz 0)) 
 
-(list (progn (print ’&gt;) (read)) 
+(list (progn (print ’>) (read)) 
 
 ;; Note that input typed within the first ZZZ seconds 
 
 ;; will be discarded. 
 
-(progn (print ’&gt;) 
+(progn (print ’>) 
 
 (if zzz (sleep zzz)) 
 
@@ -58,9 +58,9 @@ If **clear-input** does not make sense for *input-stream*, then **clear-input** 
 
 (read-sleepily) 
 
-▷ &gt; 10 
+▷ > 10 
 
-▷ &gt; 
+▷ > 
 
 ▷ » 20 
 
@@ -68,9 +68,9 @@ If **clear-input** does not make sense for *input-stream*, then **clear-input** 
 
 (read-sleepily t) 
 
-▷ &gt; 10 
+▷ > 10 
 
-▷ &gt; 
+▷ > 
 
 ▷ » 20 
 
@@ -78,9 +78,9 @@ If **clear-input** does not make sense for *input-stream*, then **clear-input** 
 
 (read-sleepily t 10) 
 
-▷ &gt; 10 
+▷ > 10 
 
-▷ &gt; 20 ; Some implementations won’t echo typeahead here. 
+▷ > 20 ; Some implementations won’t echo typeahead here. 
 
 
 

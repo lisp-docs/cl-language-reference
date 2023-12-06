@@ -136,9 +136,9 @@ both of them are removed. This removal of redundant :back *keywords* is repeated
 
 (merge-pathnames "CMUC::FORMAT" 
 
-"CMUC::PS:&lt;LISPIO&gt;.FASL") 
+"CMUC::PS:<LISPIO>.FASL") 
 
-→ #P"CMUC::PS:&lt;LISPIO&gt;FORMAT.FASL.0" 
+→ #P"CMUC::PS:<LISPIO>FORMAT.FASL.0" 
 
 
 ```

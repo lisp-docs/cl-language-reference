@@ -34,7 +34,7 @@ Returns *true* if *stream* is an *interactive stream*; otherwise, returns *false
 ```lisp
  
 
-(when (&gt; measured limit) 
+(when (> measured limit) 
 
 (let ((error (round (\* (- measured limit) 100) 
 
@@ -46,7 +46,7 @@ limit)))
 
 Is it safe to proceed? " error) 
 
-(&lt; error 15)) ;15% is acceptable 
+(< error 15)) ;15% is acceptable 
 
 (error "The frammis is out of tolerance by &#126;D%." error)))) 
 

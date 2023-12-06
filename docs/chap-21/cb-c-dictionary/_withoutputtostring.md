@@ -248,7 +248,7 @@ out
 
 \"print and format t send things to\" \*standard-output\* now going to a string" 
 
-(defun fact (n) (if (&lt; n 2) 1 (\* n (fact (- n 1))))) 
+(defun fact (n) (if (< n 2) 1 (\* n (fact (- n 1))))) 
 
 → FACT 
 

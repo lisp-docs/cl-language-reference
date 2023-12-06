@@ -48,7 +48,7 @@ For a binary file, the length is measured in units of the *element type* of the 
 
 (truename s)) 
 
-→ #P"A:&gt;Joe&gt;decimal-digits.text.1" 
+→ #P"A:>Joe>decimal-digits.text.1" 
 
 (with-open-file (s "decimal-digits.text") 
 

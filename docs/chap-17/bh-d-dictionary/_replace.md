@@ -280,7 +280,7 @@ The result of all these functions is a *sequence* of the same *type* as *sequenc
 
 → (1 2 4 1 3 9 5) 
 
-(substitute 9 3 ’(1 2 4 1 3 4 5) :test #’&gt;) → (9 9 4 9 3 4 5) 
+(substitute 9 3 ’(1 2 4 1 3 4 5) :test #’>) → (9 9 4 9 3 4 5) 
 
 (substitute-if 0 #’evenp ’((1) (2) (3) (4)) :start 2 :key #’car) 
 

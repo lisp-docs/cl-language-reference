@@ -158,7 +158,7 @@ For all these functions, elements not removed or deleted occur in the same order
 
 (remove 4 ’(1 2 4 1 3 4 5) :count 1 :from-end t) → (1 2 4 1 3 5) 
 
-(remove 3 ’(1 2 4 1 3 4 5) :test #’&gt;) → (4 3 4 5) 
+(remove 3 ’(1 2 4 1 3 4 5) :test #’>) → (4 3 4 5) 
 
 (setq lst ’(list of four elements)) → (LIST OF FOUR ELEMENTS) 
 
@@ -192,7 +192,7 @@ For all these functions, elements not removed or deleted occur in the same order
 
 (setq tester (list 1 2 4 1 3 4 5)) → (1 2 4 1 3 4 5) 
 
-(delete 3 tester :test #’&gt;) → (4 3 4 5) 
+(delete 3 tester :test #’>) → (4 3 4 5) 
 
 (setq tester (list 1 2 4 1 3 4 5)) → (1 2 4 1 3 4 5) 
 

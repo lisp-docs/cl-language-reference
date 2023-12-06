@@ -88,7 +88,7 @@ The *tertiary value*, *failure-p*, is *false* if no *conditions* of *type* **err
 
 (setf (symbol-function ’foo) 
 
-(compile nil ’(lambda () "replaced"))) → #&lt;Compiled-Function&gt; 
+(compile nil ’(lambda () "replaced"))) → #<Compiled-Function> 
 
 (foo) → "replaced" 
 

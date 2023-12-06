@@ -66,7 +66,7 @@ If the *condition* is not handled, (invoke-debugger *condition*) is done. As a c
 
 ▷ 1: Return to Lisp Toplevel. 
 
-▷ Debug&gt; 
+▷ Debug> 
 
 (setq a ’fred) 
 
@@ -80,7 +80,7 @@ If the *condition* is not handled, (invoke-debugger *condition*) is done. As a c
 
 ▷ 1: Return to Lisp Toplevel. 
 
-▷ Debug&gt; :Continue 1 
+▷ Debug> :Continue 1 
 
 ▷ Return to Lisp Toplevel. 
 
@@ -104,7 +104,7 @@ If the *condition* is not handled, (invoke-debugger *condition*) is done. As a c
 
 ▷ 1: Return to Lisp Toplevel. 
 
-▷ Debug&gt; :Continue 1 
+▷ Debug> :Continue 1 
 
 ▷ Return to Lisp Toplevel. 
 

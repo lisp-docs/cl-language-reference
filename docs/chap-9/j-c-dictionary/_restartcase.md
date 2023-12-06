@@ -324,7 +324,7 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 
 ▷ 4: Return to Lisp Toplevel. 
 
-▷ Debug&gt; :continue 1 
+▷ Debug> :continue 1 
 
 ▷ Use a new ice cream. 
 

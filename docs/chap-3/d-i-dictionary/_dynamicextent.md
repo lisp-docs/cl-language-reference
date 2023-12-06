@@ -238,7 +238,7 @@ Evaluation and
 
 (aref a m))) → ZAP 
 
-(&lt; (zap 5 3) 3) →  true 
+(< (zap 5 3) 3) →  true 
 
 The following are in error, since the value of x is used outside of its *extent*: 
 

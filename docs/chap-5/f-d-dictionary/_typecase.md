@@ -220,7 +220,7 @@ x (typecase x
 
 ▷ 2: Return to Lisp Toplevel. 
 
-▷ Debug&gt; :CONTINUE 1 
+▷ Debug> :CONTINUE 1 
 
 ▷ Use value: 3.7 
 
@@ -232,7 +232,7 @@ x (typecase x
 
 ▷ 2: Return to Lisp Toplevel. 
 
-▷ Debug&gt; :CONTINUE 1 
+▷ Debug> :CONTINUE 1 
 
 ▷ Use value: 12 
 

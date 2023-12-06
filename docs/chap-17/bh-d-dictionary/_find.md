@@ -82,7 +82,7 @@ If the *sequence* contains an *element* that *satisfies the test*, then the left
 ```lisp
  
 
-(find #\d "here are some letters that can be looked at" :test #’char&gt;) 
+(find #\d "here are some letters that can be looked at" :test #’char>) 
 
 → #\Space 
 

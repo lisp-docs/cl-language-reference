@@ -38,7 +38,7 @@ If no *forms* are supplied, (and) returns **t**.
 ```lisp
  
 
-(if (and (&gt;= n 0) 
+(if (and (>= n 0) 
 
 
 
@@ -46,7 +46,7 @@ If no *forms* are supplied, (and) returns **t**.
 
 
 
-(&lt; n (length a-simple-vector)) 
+(< n (length a-simple-vector)) 
 
 (eq (elt a-simple-vector n) ’foo)) 
 

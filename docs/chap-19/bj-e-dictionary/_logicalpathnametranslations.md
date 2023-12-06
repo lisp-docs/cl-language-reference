@@ -78,7 +78,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 
 (setf (logical-pathname-translations "foo") 
 
-’(("\*\*;\*.\*.\*" "MY-LISPM:&gt;library&gt;foo&gt;\*\*&gt;"))) 
+’(("\*\*;\*.\*.\*" "MY-LISPM:>library>foo>\*\*>"))) 
 
 ;;;Sample use of that logical pathname. The return value 
 
@@ -86,7 +86,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 
 (translate-logical-pathname "foo:bar;baz;mum.quux.3") 
 
-→ #P"MY-LISPM:&gt;library&gt;foo&gt;bar&gt;baz&gt;mum.quux.3" 
+→ #P"MY-LISPM:>library>foo>bar>baz>mum.quux.3" 
 
 ;;;A more complex example, dividing the files among two file servers 
 

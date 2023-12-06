@@ -54,7 +54,7 @@ Causes execution to cease and become dormant for approximately the seconds of re
 
 (now (progn (sleep 10) (get-universal-time)))) 
 
-(&gt;= (- now then) 10)) 
+(>= (- now then) 10)) 
 
 → true 
 

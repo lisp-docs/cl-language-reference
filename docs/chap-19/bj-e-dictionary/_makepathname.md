@@ -148,13 +148,13 @@ If the *directory* is a *string*, it should be the name of a top level directory
 
 :name "CHESS" :type "DB")))) 
 
-▷ #P"MY-LISPM:&gt;public&gt;games&gt;chess.db" 
+▷ #P"MY-LISPM:>public>games>chess.db" 
 
 ▷ #P"MY-VAX:SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
 
 ▷ #P"MY-UNIX:/public/games/chess.db" 
 
-▷ #P"MY-LISPM:&gt;public&gt;games&gt;chess.db" 
+▷ #P"MY-LISPM:>public>games>chess.db" 
 
 ▷ #P"MY-VAX:SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
 

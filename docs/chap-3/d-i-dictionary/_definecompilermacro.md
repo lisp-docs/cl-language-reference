@@ -206,7 +206,7 @@ finally (return (values x1s y1s x2s y2s others)))
 
 ‘(distance-positional ,x1 ,y1 ,x2 ,y2)) 
 
-((and (&lt; x1s 2) (&lt; y1s 2) (&lt; x2s 2) (&lt; y2s 2) 
+((and (< x1s 2) (< y1s 2) (< x2s 2) (< y2s 2) 
 
 (zerop others)) 
 

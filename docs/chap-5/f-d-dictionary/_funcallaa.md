@@ -108,7 +108,7 @@ Data and Control
 
 (defun recur (x) 
 
-(when (&gt; x 0) 
+(when (> x 0) 
 
 (recur (1- x)))) → RECUR 
 

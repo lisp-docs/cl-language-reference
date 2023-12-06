@@ -60,7 +60,7 @@ If *field-key* is not supplied or **nil**, **wild-pathname-p** returns true if *
 
 (wild-pathname-p (make-pathname :name :wild) :type) → false 
 
-(wild-pathname-p (pathname "s:&gt;foo&gt;\*\*&gt;")) → true ;Lispm 
+(wild-pathname-p (pathname "s:>foo>\*\*>")) → true ;Lispm 
 
 (wild-pathname-p (pathname :name "F\*O")) → true ;Most places 
 

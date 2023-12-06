@@ -62,7 +62,7 @@ Calls the *function* associated with *restart*, passing *arguments* to it. *Rest
 
 ▷ 2: Return to Lisp Toplevel. 
 
-▷ Debug&gt; (invoke-restart ’store-value 7) 
+▷ Debug> (invoke-restart ’store-value 7) 
 
 → 10 
 

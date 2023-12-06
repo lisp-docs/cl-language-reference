@@ -80,7 +80,7 @@ For **assoc**, **assoc-if**, and **assoc-if-not**, if **nil** appears in *alist*
 
 (assoc-if #’evenp alist) → (2 . "two") 
 
-(assoc-if-not #’(lambda(x) (&lt; x 3)) alist) → (3 . "three") 
+(assoc-if-not #’(lambda(x) (< x 3)) alist) → (3 . "three") 
 
 (setq alist ’(("one" . 1)("two" . 2))) → (("one" . 1) ("two" . 2)) 
 

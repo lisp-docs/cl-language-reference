@@ -120,7 +120,7 @@ tree2 → ("one" ("one" "two") (("one" "Two" "three")))
 
 tree1 
 
-:key #’(lambda (x) (or (atom x) (&lt; (list-length x) 3)))) 
+:key #’(lambda (x) (or (atom x) (< (list-length x) 3)))) 
 
 → ((QUOTE TEMP) (QUOTE TEMP) QUOTE TEMP) 
 

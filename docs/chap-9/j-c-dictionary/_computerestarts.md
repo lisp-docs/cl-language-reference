@@ -64,7 +64,7 @@ Implementations are permitted, but not required, to return *distinct lists* from
 
 (let ((n nil) (k (length restarts))) 
 
-(loop (when (and (typep n ’integer) (&gt;= n 0) (&lt; n k)) 
+(loop (when (and (typep n ’integer) (>= n 0) (< n k)) 
 
 (return t)) 
 

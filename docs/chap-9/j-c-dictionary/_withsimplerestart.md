@@ -144,7 +144,7 @@ COMPUTE-POWER-OF-2
 
 ▷ 2: Return to Lisp Toplevel 
 
-▷ Debug&gt; :continue 1 
+▷ Debug> :continue 1 
 
 → SOMETHING-BIG 
 

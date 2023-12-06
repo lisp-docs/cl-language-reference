@@ -140,7 +140,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 
 ▷ 2: Return to Lisp Toplevel. 
 
-▷ Debug&gt; (continue) 
+▷ Debug> (continue) 
 
 ▷ Return sqrt(9) instead. 
 
@@ -266,7 +266,7 @@ value)
 
 ▷ 3: Return to Lisp Toplevel. 
 
-▷ Debug&gt; (use-value 12) 
+▷ Debug> (use-value 12) 
 
 → 12 
 
@@ -282,7 +282,7 @@ value)
 
 ▷ 3: Return to Lisp Toplevel. 
 
-▷ Debug&gt; (store-value 24) 
+▷ Debug> (store-value 24) 
 
 → 24 
 

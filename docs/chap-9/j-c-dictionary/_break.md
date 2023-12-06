@@ -52,7 +52,7 @@ If the **continue** *restart* is used while in the debugger, **break** immediate
 
 ▷ 2: Top level. 
 
-▷ Debug&gt; :CONTINUE 1 
+▷ Debug> :CONTINUE 1 
 
 ▷ Return from BREAK. 
 

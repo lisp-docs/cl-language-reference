@@ -98,7 +98,7 @@ If the *result-type* is a *subtype* of **vector**, then if the implementation ca
 
 (setq test2 (list 2 5 8)) 
 
-(merge ’list test1 test2 #’&lt;) → (1 2 3 4 5 6 7 8) 
+(merge ’list test1 test2 #’<) → (1 2 3 4 5 6 7 8) 
 
 (setq test1 (copy-seq "BOY")) 
 
@@ -116,11 +116,11 @@ If the *result-type* is a *subtype* of **vector**, then if the implementation ca
 
 (setq test2 (vector ((yellow . 2) (green . 7)))) 
 
-(merge ’vector test1 test2 #’&lt; :key #’cdr) 
+(merge ’vector test1 test2 #’< :key #’cdr) 
 
 → #((RED . 1) (YELLOW . 2) (BLUE . 4) (GREEN . 7)) 
 
-(merge ’(vector \* 4) ’(1 5) ’(2 4 6) #’&lt;) should signal an error 
+(merge ’(vector \* 4) ’(1 5) ’(2 4 6) #’<) should signal an error 
 
 
 ```

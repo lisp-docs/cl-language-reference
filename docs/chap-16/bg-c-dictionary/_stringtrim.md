@@ -298,9 +298,9 @@ The comparison has one of the following results:
 
 (string= "abcd" "01234abcd9012" :start2 5 :end2 9) → true 
 
-(string&lt; "aaaa" "aaab") → 3 
+(string< "aaaa" "aaab") → 3 
 
-(string&gt;= "aaaaa" "aaaa") → 4 
+(string>= "aaaaa" "aaaa") → 4 
 
 (string-not-greaterp "Abcde" "abcdE") → 5 
 

@@ -82,7 +82,7 @@ The first time *place* is *evaluated*, it is *evaluated* by normal evaluation ru
 
 ▷ 2: Return to Lisp Toplevel. 
 
-▷ Debug&gt; :CONTINUE 1 
+▷ Debug> :CONTINUE 1 
 
 ▷ Use Value: #(SAM FRED HARRY) 
 
@@ -118,7 +118,7 @@ aardvarks
 
 **check-type** 
 
-▷ Debug&gt; :CONTINUE 2 
+▷ Debug> :CONTINUE 2 
 
 (defmacro define-adder (name amount) 
 
@@ -138,7 +138,7 @@ aardvarks
 
 ▷ 2: Top level. 
 
-▷ Debug&gt; :Continue 1 
+▷ Debug> :Continue 1 
 
 ▷ Specify a value to use instead. 
 
@@ -156,7 +156,7 @@ aardvarks
 
 ▷ 2: Top level. 
 
-▷ Debug&gt; :Continue 1 
+▷ Debug> :Continue 1 
 
 ▷ Type a form to be evaluated and used instead: 5 
 

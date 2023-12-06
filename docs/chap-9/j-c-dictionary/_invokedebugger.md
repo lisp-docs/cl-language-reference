@@ -50,7 +50,7 @@ To continue, type :CONTINUE followed by an option number:
 
 1: Return to Lisp Toplevel. 
 
-Debug&gt; 
+Debug> 
 
 
 ```

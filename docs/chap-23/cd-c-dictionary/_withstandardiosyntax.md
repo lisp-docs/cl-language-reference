@@ -428,11 +428,11 @@ The *value* of **\*readtable\*** is called the *current readtable*. It controls 
 
 zvar → 123 
 
-(setq \*readtable\* table2) → #&lt;READTABLE&gt; 
+(setq \*readtable\* table2) → #<READTABLE> 
 
 zvar → VAR 
 
-(setq \*readtable\* (copy-readtable nil)) → #&lt;READTABLE&gt; 
+(setq \*readtable\* (copy-readtable nil)) → #<READTABLE> 
 
 zvar → 123 
 

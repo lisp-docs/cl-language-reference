@@ -668,7 +668,7 @@ form)))
 
 ‘(call-method ,method)) 
 
-(stable-sort methods #’&lt; 
+(stable-sort methods #’< 
 
 :key #’(lambda (method) 
 

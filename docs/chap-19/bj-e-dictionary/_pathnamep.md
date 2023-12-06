@@ -270,19 +270,19 @@ If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in
 
 ;; Symbolics LMFS 
 
-(pathname-directory (parse-namestring "&gt;foo&gt;\*\*&gt;bar&gt;baz.lisp")) 
+(pathname-directory (parse-namestring ">foo>\*\*>bar>baz.lisp")) 
 
 → (:ABSOLUTE "foo" :WILD-INFERIORS "bar") 
 
-(pathname-directory (parse-namestring "&gt;foo&gt;\*&gt;bar&gt;baz.lisp")) 
+(pathname-directory (parse-namestring ">foo>\*>bar>baz.lisp")) 
 
 → (:ABSOLUTE "foo" :WILD "bar") 
 
-(pathname-directory (parse-namestring "&gt;foo&gt;\*&gt;bar&gt;baz.lisp") :case :common) 
+(pathname-directory (parse-namestring ">foo>\*>bar>baz.lisp") :case :common) 
 
 → (:ABSOLUTE "FOO" :WILD "BAR") 
 
-(pathname-device (parse-namestring "&gt;foo&gt;baz.lisp")) → :UNSPECIFIC 
+(pathname-device (parse-namestring ">foo>baz.lisp")) → :UNSPECIFIC 
 
 
 ```
