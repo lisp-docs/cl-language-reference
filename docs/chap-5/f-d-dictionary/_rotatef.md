@@ -6,7 +6,7 @@
 
 
 
-**rotatef** *\{place\}*\* *!* **nil** 
+**rotatef** *\{place\}*\* → **nil** 
 
 
 
@@ -64,7 +64,7 @@ For information about the *evaluation* of *subforms* of *places*, see Section 5.
 
 
 
-x) *!* (A C D B E F G) 
+x) → (A C D B E F G) 
 
 
 

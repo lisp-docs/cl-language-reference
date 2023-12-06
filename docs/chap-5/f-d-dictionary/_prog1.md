@@ -72,7 +72,7 @@ Data and Control
 
 
 
-(setq temp 1) *!* 1 
+(setq temp 1) → 1 
 
 
 
@@ -88,19 +88,19 @@ Data and Control
 
 
 
-*!* 1 
+→ 1 
 
 
 
-(prog1 temp (setq temp nil)) *!* 2 
+(prog1 temp (setq temp nil)) → 2 
 
 
 
-temp *!* NIL 
+temp → NIL 
 
 
 
-(prog1 (values 1 2 3) 4) *!* 1 
+(prog1 (values 1 2 3) 4) → 1 
 
 
 
@@ -108,11 +108,11 @@ temp *!* NIL
 
 
 
-(prog1 (car temp) (setf (car temp) ’alpha)) *!* A 
+(prog1 (car temp) (setf (car temp) ’alpha)) → A 
 
 
 
-temp *!* (ALPHA B C) 
+temp → (ALPHA B C) 
 
 
 
@@ -148,23 +148,23 @@ temp *!* (ALPHA B C)
 
 
 
-*!* 2, 1 
+→ 2, 1 
 
 
 
-(setq temp 1) *!* 1 
+(setq temp 1) → 1 
 
 
 
-(prog2 (incf temp) (incf temp) (incf temp)) *!* 3 
+(prog2 (incf temp) (incf temp) (incf temp)) → 3 
 
 
 
-temp *!* 4 
+temp → 4 
 
 
 
-(prog2 1 (values 2 3 4) 5) *!* 2 
+(prog2 1 (values 2 3 4) 5) → 2 
 
 
 

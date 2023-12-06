@@ -40,7 +40,7 @@
 
 
 
-(setq temp ’(1 2 3)) *!* (1 2 3) 
+(setq temp ’(1 2 3)) → (1 2 3) 
 
 
 
@@ -56,7 +56,7 @@
 
 
 
-(values-list temp)) *!* 1, 2, 3 
+(values-list temp)) → 1, 2, 3 
 
 
 

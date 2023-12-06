@@ -52,19 +52,19 @@
 
 
 
-(values 1) *!* 1 
+(values 1) → 1 
 
 
 
-(values 1 2) *!* 1, 2 
+(values 1 2) → 1, 2 
 
 
 
-(values 1 2 3) *!* 1, 2, 3 
+(values 1 2 3) → 1, 2, 3 
 
 
 
-(values (values 1 2 3) 4 5) *!* 1, 4, 5 
+(values (values 1 2 3) 4 5) → 1, 4, 5 
 
 
 
@@ -72,7 +72,7 @@
 
 
 
-(values (sqrt (+ (\* x x) (\* y y))) (atan y x))) *!* POLAR 
+(values (sqrt (+ (\* x x) (\* y y))) (atan y x))) → POLAR 
 
 
 
@@ -84,7 +84,7 @@
 
 
 
-*!* #(5.0 0.927295) 
+→ #(5.0 0.927295) 
 
 
 
@@ -96,7 +96,7 @@ Sometimes it is desirable to indicate explicitly that a function returns exactly
 
 
 
-(floor (+ x y) y)) *!* FOO 
+(floor (+ x y) y)) → FOO 
 
 
 
@@ -120,7 +120,7 @@ returns two values because **floor** returns two values. It may be that the seco
 
 
 
-(values (floor (+ x y) y))) *!* FOO 
+(values (floor (+ x y) y))) → FOO 
 
 
 

@@ -60,19 +60,19 @@
 
 
 
-(ldb (byte 2 1) 10) *!* 1 
+(ldb (byte 2 1) 10) → 1 
 
 
 
-(setq a (list 8)) *!* (8) 
+(setq a (list 8)) → (8) 
 
 
 
-(setf (ldb (byte 2 1) (car a)) 1) *!* 1 
+(setf (ldb (byte 2 1) (car a)) 1) → 1 
 
 
 
-a *!* (10) 
+a → (10) 
 
 
 
@@ -114,7 +114,7 @@ In general,
 
 
 
-(ldb (byte 0 *x*) *y*) *!* 0 
+(ldb (byte 0 *x*) *y*) → 0 
 
 
 

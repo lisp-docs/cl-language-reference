@@ -92,7 +92,7 @@ type)
 
 
 
-*!* FLOAT 
+→ FLOAT 
 
 
 

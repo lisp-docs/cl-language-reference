@@ -52,19 +52,19 @@ For information about the *evaluation* of *subforms* of *places*, see Section 5.
 
 
 
-(setq x (list 1 2 3) y ’trash) *!* TRASH 
+(setq x (list 1 2 3) y ’trash) → TRASH 
 
 
 
-(shiftf y x (cdr x) ’(hi there)) *!* TRASH 
+(shiftf y x (cdr x) ’(hi there)) → TRASH 
 
 
 
-x *!* (2 3) 
+x → (2 3) 
 
 
 
-y *!* (1 HI THERE) 
+y → (1 HI THERE) 
 
 
 
@@ -80,39 +80,39 @@ Data and Control
 
 
 
-(setq x (list ’a ’b ’c)) *!* (A B C) 
+(setq x (list ’a ’b ’c)) → (A B C) 
 
 
 
-(shiftf (cadr x) ’z) *!* B 
+(shiftf (cadr x) ’z) → B 
 
 
 
-x *!* (A Z C) 
+x → (A Z C) 
 
 
 
-(shiftf (cadr x) (cddr x) ’q) *!* Z 
+(shiftf (cadr x) (cddr x) ’q) → Z 
 
 
 
-x *!* (A (C) . Q) 
+x → (A (C) . Q) 
 
 
 
-(setq n 0) *!* 0 
+(setq n 0) → 0 
 
 
 
-(setq x (list ’a ’b ’c ’d)) *!* (A B C D) 
+(setq x (list ’a ’b ’c ’d)) → (A B C D) 
 
 
 
-(shiftf (nth (setq n (+ n 1)) x) ’z) *!* B 
+(shiftf (nth (setq n (+ n 1)) x) ’z) → B 
 
 
 
-x *!* (A Z C D) 
+x → (A Z C D) 
 
 
 
@@ -186,11 +186,11 @@ except that the latter would evaluate any *subforms* of each place twice, wherea
 
 
 
-(setq n 0) *!* 0 
+(setq n 0) → 0 
 
 
 
-(setq x (list ’a ’b ’c ’d)) *!* (A B C D) 
+(setq x (list ’a ’b ’c ’d)) → (A B C D) 
 
 
 
@@ -198,11 +198,11 @@ except that the latter would evaluate any *subforms* of each place twice, wherea
 
 
 
-(setf (nth (setq n (+ n 1)) x) ’z)) *!* B 
+(setf (nth (setq n (+ n 1)) x) ’z)) → B 
 
 
 
-x *!* (A B Z D) 
+x → (A B Z D) 
 
 
 

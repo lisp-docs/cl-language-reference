@@ -76,7 +76,7 @@ If an *implementation* chooses to make use of the *environment* information, suc
 
 
 
-(defconstant this-is-a-constant ’never-changing) *!* THIS-IS-A-CONSTANT 
+(defconstant this-is-a-constant ’never-changing) → THIS-IS-A-CONSTANT 
 
 
 
@@ -104,7 +104,7 @@ Evaluation and
 
 
 
-(setq a 6) *!* 6 
+(setq a 6) → 6 
 
 
 

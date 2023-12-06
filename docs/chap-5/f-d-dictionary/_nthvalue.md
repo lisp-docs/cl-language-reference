@@ -40,15 +40,15 @@ Evaluates *n* and then *form*, returning as its only value the *n*th value *yiel
 
 
 
-(nth-value 0 (values ’a ’b)) *!* A 
+(nth-value 0 (values ’a ’b)) → A 
 
 
 
-(nth-value 1 (values ’a ’b)) *!* B 
+(nth-value 1 (values ’a ’b)) → B 
 
 
 
-(nth-value 2 (values ’a ’b)) *!* NIL 
+(nth-value 2 (values ’a ’b)) → NIL 
 
 
 
@@ -84,7 +84,7 @@ Evaluates *n* and then *form*, returning as its only value the *n*th value *yiel
 
 
 
-*!* 3332987528, 3332987528, *true* 
+→ 3332987528, 3332987528, *true* 
 
 
 
@@ -264,19 +264,19 @@ returns the *car* of the value of z.
 
 
 
-(setq a 1) *!* 1 
+(setq a 1) → 1 
 
 
 
-(prog ((a 2) (b a)) (return (if (= a b) ’= ’/=))) *!* /= 
+(prog ((a 2) (b a)) (return (if (= a b) ’= ’/=))) → /= 
 
 
 
-(prog\* ((a 2) (b a)) (return (if (= a b) ’= ’/=))) *!* = 
+(prog\* ((a 2) (b a)) (return (if (= a b) ’= ’/=))) → = 
 
 
 
-(prog () ’no-return-value) *!* NIL 
+(prog () ’no-return-value) → NIL 
 
 
 
@@ -356,7 +356,7 @@ err
 
 
 
-(go rejoin))) *!* KING-OF-CONFUSION 
+(go rejoin))) → KING-OF-CONFUSION 
 
 
 
@@ -404,7 +404,7 @@ Think of this function as being like a zipper."
 
 
 
-(setq z y)))) *!* PRINCE-OF-CLARITY 
+(setq z y)))) → PRINCE-OF-CLARITY 
 
 
 

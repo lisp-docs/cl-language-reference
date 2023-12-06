@@ -10,7 +10,7 @@
 
 
 
-**psetf** *\{#pair\}*\* *!* **nil** 
+**psetf** *\{#pair\}*\* → **nil** 
 
 
 
@@ -112,39 +112,35 @@ For detailed treatment of the expansion of **setf** and **psetf**, see Section 5
 
 
 
-(setq x (cons ’a ’b) y (list 1 2 3)) *!* (1 2 3) 
+(setq x (cons ’a ’b) y (list 1 2 3)) → (1 2 3) 
 
 
 
-(setf (car x) ’x (cadr y) (car x) (cdr x) y) *!* (1 X 3) 
+(setf (car x) ’x (cadr y) (car x) (cdr x) y) → (1 X 3) 
 
 
 
-x *!* (X 1 X 3) 
+x → (X 1 X 3) 
 
 
 
-y *!* (1 X 3) 
+y → (1 X 3) 
 
 
 
-(setq x (cons ’a ’b) y (list 1 2 3)) *!* (1 2 3) 
+(setq x (cons ’a ’b) y (list 1 2 3)) → (1 2 3) 
 
 
 
-(psetf (car x) ’x (cadr y) (car x) (cdr x) y) *!* NIL 
+(psetf (car x) ’x (cadr y) (car x) (cdr x) y) → NIL 
 
 
 
-x *!* (X 1 A 3) 
-
-
+x → (X 1 A 3) 
 
 
 
 
-
- 
 
 
 
@@ -152,7 +148,11 @@ x *!* (X 1 A 3)
 
 
 
-y *!* (1 A 3) 
+ 
+
+
+
+y → (1 A 3) 
 
 
 

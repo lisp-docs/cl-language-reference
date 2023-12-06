@@ -104,23 +104,23 @@ If a **define-modify-macro** *form* appears as a *top level form*, the *compiler
 
 
 
-append "Append onto list") *!* APPENDF 
+append "Append onto list") → APPENDF 
 
 
 
-(setq x ’(a b c) y x) *!* (A B C) 
+(setq x ’(a b c) y x) → (A B C) 
 
 
 
-(appendf x ’(d e f) ’(1 2 3)) *!* (A B C D E F 1 2 3) 
+(appendf x ’(d e f) ’(1 2 3)) → (A B C D E F 1 2 3) 
 
 
 
-x *!* (A B C D E F 1 2 3) 
+x → (A B C D E F 1 2 3) 
 
 
 
-y *!* (A B C) 
+y → (A B C) 
 
 
 

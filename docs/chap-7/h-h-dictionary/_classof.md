@@ -36,35 +36,31 @@ Returns the *class* of which the *object* is a *direct instance*.
 
 
 
-(class-of ’fred) *!* #\<BUILT-IN-CLASS SYMBOL 610327300\> 
+(class-of ’fred) → #\<BUILT-IN-CLASS SYMBOL 610327300\> 
 
 
 
-(class-of 2/3) *!* #\<BUILT-IN-CLASS RATIO 610326642\> 
+(class-of 2/3) → #\<BUILT-IN-CLASS RATIO 610326642\> 
 
 
 
-(defclass book () ()) *!* #\<STANDARD-CLASS BOOK 33424745\> 
+(defclass book () ()) → #\<STANDARD-CLASS BOOK 33424745\> 
 
 
 
-(class-of (make-instance ’book)) *!* #\<STANDARD-CLASS BOOK 33424745\> 
+(class-of (make-instance ’book)) → #\<STANDARD-CLASS BOOK 33424745\> 
 
 
 
-(defclass novel (book) ()) *!* #\<STANDARD-CLASS NOVEL 33424764\> 
+(defclass novel (book) ()) → #\<STANDARD-CLASS NOVEL 33424764\> 
 
 
 
-(class-of (make-instance ’novel)) *!* #\<STANDARD-CLASS NOVEL 33424764\> 
-
-
+(class-of (make-instance ’novel)) → #\<STANDARD-CLASS NOVEL 33424764\> 
 
 
 
 
-
- 
 
 
 
@@ -72,11 +68,15 @@ Returns the *class* of which the *object* is a *direct instance*.
 
 
 
-(defstruct kons kar kdr) *!* KONS 
+ 
 
 
 
-(class-of (make-kons :kar 3 :kdr 4)) *!* #\<STRUCTURE-CLASS KONS 250020317\> 
+(defstruct kons kar kdr) → KONS 
+
+
+
+(class-of (make-kons :kar 3 :kdr 4)) → #\<STRUCTURE-CLASS KONS 250020317\> 
 
 
 

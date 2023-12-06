@@ -104,7 +104,7 @@ The use of **symbol-macrolet** can be shadowed by **let**. In other words, **sym
 
 
 
-*!* (foo bar) 
+→ (foo bar) 
 
 
 
@@ -112,7 +112,7 @@ The use of **symbol-macrolet** can be shadowed by **let**. In other words, **sym
 
 
 
-*!* (foo foo) 
+→ (foo foo) 
 
 
 
@@ -124,7 +124,7 @@ The use of **symbol-macrolet** can be shadowed by **let**. In other words, **sym
 
 
 
-*!* ((FOO X)) 
+→ ((FOO X)) 
 
 
 
@@ -216,15 +216,15 @@ Evaluation and
 
 
 
-(funcall expander form env)) *!* HOOK 
+(funcall expander form env)) → HOOK 
 
 
 
-(defmacro machook (x y) ‘(/ (+ ,x ,y) 2)) *!* MACHOOK 
+(defmacro machook (x y) ‘(/ (+ ,x ,y) 2)) → MACHOOK 
 
 
 
-(macroexpand ’(machook 1 2)) *!* (/ (+ 1 2) 2), *true* 
+(macroexpand ’(machook 1 2)) → (/ (+ 1 2) 2), *true* 
 
 
 
@@ -236,7 +236,7 @@ Evaluation and
 
 
 
-*!* (/ (+ 1 2) 2), *true* 
+→ (/ (+ 1 2) 2), *true* 
 
 
 

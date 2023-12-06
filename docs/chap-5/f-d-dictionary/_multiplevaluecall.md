@@ -52,7 +52,7 @@ Applies *function* to a *list* of the *objects* collected from groups of *multip
 
 
 
-*!* (1 / 2 3 / / 2 0.5) 
+→ (1 / 2 3 / / 2 0.5) 
 
 
 
@@ -60,7 +60,7 @@ Applies *function* to a *list* of the *objects* collected from groups of *multip
 
 
 
-*!* 5 
+→ 5 
 
 
 
@@ -68,7 +68,7 @@ Applies *function* to a *list* of the *objects* collected from groups of *multip
 
 
 
-*!* 10 
+→ 10 
 
 
 

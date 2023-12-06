@@ -44,19 +44,19 @@ If **progn** appears as a *top level form*, then all *forms* within that **progn
 
 
 
-(progn) *!* NIL 
+(progn) → NIL 
 
 
 
-(progn 1 2 3) *!* 3 
+(progn 1 2 3) → 3 
 
 
 
-(progn (values 1 2 3)) *!* 1, 2, 3 
+(progn (values 1 2 3)) → 1, 2, 3 
 
 
 
-(setq a 1) *!* 1 
+(setq a 1) → 1 
 
 
 
@@ -68,11 +68,11 @@ If **progn** appears as a *top level form*, then all *forms* within that **progn
 
 
 
-(progn (setq a t) ’there)) *!* HERE 
+(progn (setq a t) ’there)) → HERE 
 
 
 
-a *!* NIL 
+a → NIL 
 
 
 

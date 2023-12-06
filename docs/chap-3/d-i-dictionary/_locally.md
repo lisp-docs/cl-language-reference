@@ -80,15 +80,15 @@ y))))
 
 
 
-*!* SAMPLE-FUNCTION 
+→ SAMPLE-FUNCTION 
 
 
 
-(sample-function nil) *!* (T NIL) 
+(sample-function nil) → (T NIL) 
 
 
 
-(setq x ’(1 2 3) y ’(4 . 5)) *!* (4 . 5) 
+(setq x ’(1 2 3) y ’(4 . 5)) → (4 . 5) 
 
 
 
@@ -108,7 +108,7 @@ y))))
 
 
 
-(floor (car x) (cdr y))) *!* 0, 1 
+(floor (car x) (cdr y))) → 0, 1 
 
 
 
@@ -132,7 +132,7 @@ y))))
 
 
 
-*!* FROB 
+→ FROB 
 
 
 
@@ -152,7 +152,7 @@ y))))
 
 
 
-*!* FROB 
+→ FROB 
 
 
 

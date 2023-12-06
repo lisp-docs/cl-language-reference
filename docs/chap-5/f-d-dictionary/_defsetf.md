@@ -160,7 +160,7 @@ would be incorrect because **rplaca** does not return its last argument.
 
 
 
-(defun middleguy (x) (nth (truncate (1- (list-length x)) 2) x)) *!* MIDDLEGUY 
+(defun middleguy (x) (nth (truncate (1- (list-length x)) 2) x)) → MIDDLEGUY 
 
 
 
@@ -176,11 +176,11 @@ would be incorrect because **rplaca** does not return its last argument.
 
 
 
-v) *!* SET-MIDDLEGUY 
+v) → SET-MIDDLEGUY 
 
 
 
-(defsetf middleguy set-middleguy) *!* MIDDLEGUY 
+(defsetf middleguy set-middleguy) → MIDDLEGUY 
 
 
 
@@ -192,31 +192,31 @@ b (list ’x)
 
 
 
-c (list 1 2 3 (list 4 5 6) 7 8 9)) *!* (1 2 3 (4 5 6) 7 8 9) 
+c (list 1 2 3 (list 4 5 6) 7 8 9)) → (1 2 3 (4 5 6) 7 8 9) 
 
 
 
-(setf (middleguy a) 3) *!* 3 
+(setf (middleguy a) 3) → 3 
 
 
 
-(setf (middleguy b) 7) *!* 7 
+(setf (middleguy b) 7) → 7 
 
 
 
-(setf (middleguy (middleguy c)) ’middleguy-symbol) *!* MIDDLEGUY-SYMBOL 
+(setf (middleguy (middleguy c)) ’middleguy-symbol) → MIDDLEGUY-SYMBOL 
 
 
 
-a *!* (A 3 C D) 
+a → (A 3 C D) 
 
 
 
-b *!* (7) 
+b → (7) 
 
 
 
-c *!* (1 2 3 (4 MIDDLEGUY-SYMBOL 6) 7 8 9) 
+c → (1 2 3 (4 MIDDLEGUY-SYMBOL 6) 7 8 9) 
 
 
 
@@ -236,7 +236,7 @@ An example of the use of the long form of **defsetf**:
 
 
 
-,new-sequence)) *!* SUBSEQ 
+,new-sequence)) → SUBSEQ 
 
 
 
@@ -244,7 +244,7 @@ An example of the use of the long form of **defsetf**:
 
 
 
-(defun xy (&amp;key ((x x) 0) ((y y) 0)) (aref \*xy\* x y)) *!* XY 
+(defun xy (&amp;key ((x x) 0) ((y y) 0)) (aref \*xy\* x y)) → XY 
 
 
 
@@ -252,7 +252,7 @@ An example of the use of the long form of **defsetf**:
 
 
 
-(setf (aref \*xy\* x y) new-value)) *!* SET-XY 
+(setf (aref \*xy\* x y) new-value)) → SET-XY 
 
 
 
@@ -260,7 +260,7 @@ An example of the use of the long form of **defsetf**:
 
 
 
-‘(set-xy ,store ’x ,x ’y ,y)) *!* XY 
+‘(set-xy ,store ’x ,x ’y ,y)) → XY 
 
 
 
@@ -268,7 +268,7 @@ An example of the use of the long form of **defsetf**:
 
 
 
-*!* (#:t0 #:t1), 
+→ (#:t0 #:t1), 
 
 
 
@@ -296,15 +296,15 @@ An example of the use of the long form of **defsetf**:
 
 
 
-(xy ’x 1) *!* NIL 
+(xy ’x 1) → NIL 
 
 
 
-(setf (xy ’x 1) 1) *!* 1 
+(setf (xy ’x 1) 1) → 1 
 
 
 
-(xy ’x 1) *!* 1 
+(xy ’x 1) → 1 
 
 
 
@@ -320,15 +320,15 @@ An example of the use of the long form of **defsetf**:
 
 
 
-*!* 14 
+→ 14 
 
 
 
-(xy ’y 0 ’x 1) *!* 1 
+(xy ’y 0 ’x 1) → 1 
 
 
 
-(xy ’x 1 ’y 2) *!* 3 
+(xy ’x 1 ’y 2) → 3 
 
 
 

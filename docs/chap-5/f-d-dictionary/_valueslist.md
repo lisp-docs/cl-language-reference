@@ -40,15 +40,15 @@ Returns the *elements* of the *list* as *multiple values*<sub>2</sub>.
 
 
 
-(values-list ’(1)) *!* 1 
+(values-list ’(1)) → 1 
 
 
 
-(values-list ’(1 2)) *!* 1, 2 
+(values-list ’(1 2)) → 1, 2 
 
 
 
-(values-list ’(1 2 3)) *!* 1, 2, 3 
+(values-list ’(1 2 3)) → 1, 2, 3 
 
 
 

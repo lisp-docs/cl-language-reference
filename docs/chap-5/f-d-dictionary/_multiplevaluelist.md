@@ -44,7 +44,7 @@ Data and Control
 
 
 
-(multiple-value-list (floor -3 4)) *!* (-1 1) 
+(multiple-value-list (floor -3 4)) → (-1 1) 
 
 
 

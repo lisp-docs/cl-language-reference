@@ -100,7 +100,7 @@ If a **define-setf-expander** *form* appears as a *top level form*, the *compile
 
 
 
-(defun lastguy (x) (car (last x))) *!* LASTGUY 
+(defun lastguy (x) (car (last x))) → LASTGUY 
 
 
 
@@ -140,7 +140,7 @@ vals
 
 
 
-‘(lastguy ,getter))))) *!* LASTGUY 
+‘(lastguy ,getter))))) → LASTGUY 
 
 
 
@@ -152,31 +152,31 @@ b (list ’x)
 
 
 
-c (list 1 2 3 (list 4 5 6))) *!* (1 2 3 (4 5 6)) 
+c (list 1 2 3 (list 4 5 6))) → (1 2 3 (4 5 6)) 
 
 
 
-(setf (lastguy a) 3) *!* 3 
+(setf (lastguy a) 3) → 3 
 
 
 
-(setf (lastguy b) 7) *!* 7 
+(setf (lastguy b) 7) → 7 
 
 
 
-(setf (lastguy (lastguy c)) ’lastguy-symbol) *!* LASTGUY-SYMBOL 
+(setf (lastguy (lastguy c)) ’lastguy-symbol) → LASTGUY-SYMBOL 
 
 
 
-a *!* (A B C 3) 
+a → (A B C 3) 
 
 
 
-b *!* (7) 
+b → (7) 
 
 
 
-c *!* (1 2 3 (4 5 LASTGUY-SYMBOL)) 
+c → (1 2 3 (4 5 LASTGUY-SYMBOL)) 
 
 
 

@@ -126,7 +126,7 @@
 
 
 
-**float-sign** returns a number z such that z and *float-1* have the same sign and also such that z and *float-2* have the same absolute value. If *float-2* is not supplied, its value is (float 1 *float-1*). If an implementation has distinct representations for negative zero and positive zero, then (float-sign -0.0) *!* -1.0. 
+**float-sign** returns a number z such that z and *float-1* have the same sign and also such that z and *float-2* have the same absolute value. If *float-2* is not supplied, its value is (float 1 *float-1*). If an implementation has distinct representations for negative zero and positive zero, then (float-sign -0.0) → -1.0. 
 
 
 
@@ -196,67 +196,67 @@ to the first value as for **decode-float**:
 
 
 
-;; Values shown here are chosen consistently from one particular implementation. (decode-float .5) *!* 0.5, 0, 1.0 
+;; Values shown here are chosen consistently from one particular implementation. (decode-float .5) → 0.5, 0, 1.0 
 
 
 
-(decode-float 1.0) *!* 0.5, 1, 1.0 
+(decode-float 1.0) → 0.5, 1, 1.0 
 
 
 
-(scale-float 1.0 1) *!* 2.0 
+(scale-float 1.0 1) → 2.0 
 
 
 
-(scale-float 10.01 -2) *!* 2.5025 
+(scale-float 10.01 -2) → 2.5025 
 
 
 
-(scale-float 23.0 0) *!* 23.0 
+(scale-float 23.0 0) → 23.0 
 
 
 
-(float-radix 1.0) *!* 2 
+(float-radix 1.0) → 2 
 
 
 
-(float-sign 5.0) *!* 1.0 
+(float-sign 5.0) → 1.0 
 
 
 
-(float-sign -5.0) *!* -1.0 
+(float-sign -5.0) → -1.0 
 
 
 
-(float-sign 0.0) *!* 1.0 
+(float-sign 0.0) → 1.0 
 
 
 
-(float-sign 1.0 0.0) *!* 0.0 
+(float-sign 1.0 0.0) → 0.0 
 
 
 
-(float-sign 1.0 -10.0) *!* 10.0 
+(float-sign 1.0 -10.0) → 10.0 
 
 
 
-(float-sign -1.0 10.0) *!* -10.0 
+(float-sign -1.0 10.0) → -10.0 
 
 
 
-(float-digits 1.0) *!* 24 
+(float-digits 1.0) → 24 
 
 
 
-(float-precision 1.0) *!* 24 
+(float-precision 1.0) → 24 
 
 
 
-(float-precision least-positive-single-float) *!* 1 
+(float-precision least-positive-single-float) → 1 
 
 
 
-(integer-decode-float 1.0) *!* 8388608, -23, 1 
+(integer-decode-float 1.0) → 8388608, -23, 1 
 
 
 

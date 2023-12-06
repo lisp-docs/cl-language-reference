@@ -88,7 +88,7 @@ If there is no such *method* and *errorp* is *true*, **find-method** signals an 
 
 
 
-*!* #<STANDARD-METHOD SOME-OPERATION (INTEGER FLOAT) 26723357> 
+→ #<STANDARD-METHOD SOME-OPERATION (INTEGER FLOAT) 26723357> 
 
 
 
@@ -96,7 +96,7 @@ If there is no such *method* and *errorp* is *true*, **find-method** signals an 
 
 
 
-*!* #<STANDARD-METHOD SOME-OPERATION (INTEGER FLOAT) 26723357> 
+→ #<STANDARD-METHOD SOME-OPERATION (INTEGER FLOAT) 26723357> 
 
 
 
@@ -108,7 +108,7 @@ If there is no such *method* and *errorp* is *true*, **find-method** signals an 
 
 
 
-(find-method #’some-operation ’() (mapcar #’find-class ’(integer integer)) nil) *!* NIL 
+(find-method #’some-operation ’() (mapcar #’find-class ’(integer integer)) nil) → NIL 
 
 
 

@@ -48,19 +48,19 @@ If *prototype* is not supplied, then if the *number* is already a *float*, it is
 
 
 
-(float 0) *!* 0.0 
+(float 0) → 0.0 
 
 
 
-(float 1 .5) *!* 1.0 
+(float 1 .5) → 1.0 
 
 
 
-(float 1.0) *!* 1.0 
+(float 1.0) → 1.0 
 
 
 
-(float 1/2) *!* 0.5 
+(float 1/2) → 0.5 
 
 
 
@@ -68,7 +68,7 @@ If *prototype* is not supplied, then if the *number* is already a *float*, it is
 
 
 
-*!* 1.0 
+→ 1.0 
 
 
 

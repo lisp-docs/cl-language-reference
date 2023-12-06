@@ -236,7 +236,7 @@ The *otherwise inaccessible parts* of x are three *conses*, and the *otherwise i
 
 
 
-*!* :DONE 
+→ :DONE 
 
 
 
@@ -260,7 +260,7 @@ The *otherwise inaccessible parts* of x are three *conses*, and the *otherwise i
 
 
 
-(prin1 (car l)))) *!* ZAP 
+(prin1 (car l)))) → ZAP 
 
 
 
@@ -272,7 +272,7 @@ The *otherwise inaccessible parts* of x are three *conses*, and the *otherwise i
 
 
 
-*!* NIL 
+→ NIL 
 
 
 
@@ -324,7 +324,7 @@ Evaluation and
 
 
 
-*!* NIL 
+→ NIL 
 
 
 
@@ -352,11 +352,11 @@ Evaluation and
 
 
 
-(apply #’+ x)) *!* ADD 
+(apply #’+ x)) → ADD 
 
 
 
-(add 1 2 3) *!* 6 
+(add 1 2 3) → 6 
 
 
 
@@ -396,7 +396,7 @@ Evaluation and
 
 
 
-(aref a m))) *!* ZAP 
+(aref a m))) → ZAP 
 
 
 

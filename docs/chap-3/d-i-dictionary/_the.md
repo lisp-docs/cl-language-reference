@@ -48,31 +48,31 @@ Regardless of number of *values* declared by *value-type*, the number of *values
 
 
 
-(the symbol (car (list (gensym)))) *!* #:G9876 
+(the symbol (car (list (gensym)))) → #:G9876 
 
 
 
-(the fixnum (+ 5 7)) *!* 12 
+(the fixnum (+ 5 7)) → 12 
 
 
 
-(the (values) (truncate 3.2 2)) *!* 1, 1.2 
+(the (values) (truncate 3.2 2)) → 1, 1.2 
 
 
 
-(the integer (truncate 3.2 2)) *!* 1, 1.2 
+(the integer (truncate 3.2 2)) → 1, 1.2 
 
 
 
-(the (values integer) (truncate 3.2 2)) *!* 1, 1.2 
+(the (values integer) (truncate 3.2 2)) → 1, 1.2 
 
 
 
-(the (values integer float) (truncate 3.2 2)) *!* 1, 1.2 
+(the (values integer float) (truncate 3.2 2)) → 1, 1.2 
 
 
 
-(the (values integer float symbol) (truncate 3.2 2)) *!* 1, 1.2 
+(the (values integer float symbol) (truncate 3.2 2)) → 1, 1.2 
 
 
 
@@ -80,7 +80,7 @@ Regardless of number of *values* declared by *value-type*, the number of *values
 
 
 
-(truncate 3.2 2)) *!* 1, 1.2 
+(truncate 3.2 2)) → 1, 1.2 
 
 
 
@@ -92,7 +92,7 @@ Regardless of number of *values* declared by *value-type*, the number of *values
 
 
 
-(the fixnum (1+ i))) *!* 101 
+(the fixnum (1+ i))) → 101 
 
 
 
@@ -108,7 +108,7 @@ Regardless of number of *values* declared by *value-type*, the number of *values
 
 
 
-x) *!* (5 B C) 
+x) → (5 B C) 
 
 
 

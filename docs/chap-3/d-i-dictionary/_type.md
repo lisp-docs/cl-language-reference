@@ -136,11 +136,11 @@ Within the *lexical scope* of an **array** type declaration, all references to *
 
 
 
-z)) *!* F 
+z)) → F 
 
 
 
-(f 1 2) *!* 3 
+(f 1 2) → 3 
 
 
 
@@ -168,11 +168,11 @@ z)) *!* F
 
 
 
-(the fixnum (+ x y))) *!* F 
+(the fixnum (+ x y))) → F 
 
 
 
-(f 1 2) *!* 3 
+(f 1 2) → 3 
 
 
 

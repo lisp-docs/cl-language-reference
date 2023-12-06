@@ -60,7 +60,7 @@ If *environment* is not supplied or **nil**, the environment is the *null lexica
 
 
 
-*!* NIL, NIL, (#:G0001), (SETQ X #:G0001), X 
+→ NIL, NIL, (#:G0001), (SETQ X #:G0001), X 
 
 
 
@@ -104,7 +104,7 @@ If *environment* is not supplied or **nil**, the environment is the *null lexica
 
 
 
-‘(setf (car ,x) ,value)) *!* FROB 
+‘(setf (car ,x) ,value)) → FROB 
 
 
 

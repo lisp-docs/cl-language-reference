@@ -80,7 +80,7 @@ The *scopes* of the name binding and *declarations* do not include the *values-f
 
 
 
-(list f r)) *!* (11 9) 
+(list f r)) → (11 9) 
 
 
 

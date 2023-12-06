@@ -148,11 +148,11 @@ the parameter x is bound as a dynamic variable rather than as a lexical variable
 
 
 
-*!* DECLARE-EG 
+→ DECLARE-EG 
 
 
 
-(declare-eg nil) *!* (T NIL) 
+(declare-eg nil) → (T NIL) 
 
 
 
@@ -208,7 +208,7 @@ x)))
 
 
 
-*!* 11 
+→ 11 
 
 
 
@@ -236,7 +236,7 @@ x)))
 
 
 
-(bar ’first ’second) *!* (FIRST SECOND) 
+(bar ’first ’second) → (FIRST SECOND) 
 
 
 
@@ -272,7 +272,7 @@ The reference to \*foo\* in the first line of this example is not **special** ev
 
 
 
-(setq prosp 1 reg 1) *!* 1 
+(setq prosp 1 reg 1) → 1 
 
 
 
@@ -288,11 +288,11 @@ The reference to \*foo\* in the first line of this example is not **special** ev
 
 
 
-*!* (3 2) 
+→ (3 2) 
 
 
 
-(list prosp reg) *!* (1 3) 
+(list prosp reg) → (1 3) 
 
 
 
@@ -316,7 +316,7 @@ The reference to \*foo\* in the first line of this example is not **special** ev
 
 
 
-(let ((y 4)) (declare (special y)) (foo x)))) *!* EXAMPLE 
+(let ((y 4)) (declare (special y)) (foo x)))) → EXAMPLE 
 
 
 
