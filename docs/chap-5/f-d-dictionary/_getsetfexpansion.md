@@ -10,7 +10,7 @@
 
 
 
-*! vars, vals, store-vars, writer-form, reader-form* 
+→ vars, vals, store-vars, writer-form, reader-form 
 
 
 

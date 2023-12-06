@@ -36,7 +36,7 @@ Returns the *elements* of the *list* as *multiple values*<sub>2</sub>.
 
 
 
-(values-list nil) *! hno valuesi* 
+(values-list nil) → hno valuesi 
 
 
 

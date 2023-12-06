@@ -122,7 +122,7 @@ Operationally, the following relationship is true, although **nth-value** might 
 
 
 
-*! \{result\}*\* 
+→ \{result\}\* 
 
 
 
@@ -130,7 +130,7 @@ Operationally, the following relationship is true, although **nth-value** might 
 
 
 
-*! \{result\}*\* 
+→ \{result\}\* 
 
 
 

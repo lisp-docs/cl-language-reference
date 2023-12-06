@@ -6,7 +6,7 @@
 
 
 
-**locally** *\{declaration\}*\* *\{form\}*\* *! \{result\}*\* 
+**locally** *\{declaration\}*\* *\{form\}*\* → \{result\}\* 
 
 
 

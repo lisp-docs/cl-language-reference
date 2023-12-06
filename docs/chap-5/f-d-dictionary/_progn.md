@@ -6,7 +6,7 @@
 
 
 
-**progn** *\{form\}*\* *! \{result\}*\* 
+**progn** *\{form\}*\* → \{result\}\* 
 
 
 

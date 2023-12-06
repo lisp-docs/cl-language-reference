@@ -6,7 +6,7 @@
 
 
 
-**setf** *\{#pair\}*\* *! \{result\}*\* 
+**setf** *\{#pair\}*\* → \{result\}\* 
 
 
 
