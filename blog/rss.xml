@@ -9,7 +9,7 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Complete Specification Update]]></title>
+            <title><![CDATA[Alpha Version 1.0 is Out!]]></title>
             <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/06/</link>
             <guid>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/06/</guid>
             <pubDate>Wed, 06 Dec 2023 00:00:00 GMT</pubDate>
@@ -19,7 +19,7 @@
 <p>These are a few of the improvements since last time:</p>
 <ul>
 <li>Complete Specification Update: There were parts of the spec missing because of an issue of files getting truncated before they were converted into markdown. I have now recovered the truncated parts, parsed them, and added them to the specification</li>
-<li>A large number of code now shows up in code blocks with syntax highlighting.</li>
+<li>A large amount of code now shows up in code blocks with syntax highlighting.</li>
 <li>A lot of symbols like <code>→</code>, <code>≡</code>, and a few others are now properly displayed</li>
 <li>The Index, Figures, and Credits were parsed to be displayed properly per the original</li>
 <li>The search index was updated to account for the new content</li>
@@ -29,7 +29,7 @@
 <ul>
 <li>Now we are finally open to contributions of examples and added explanation<!-- -->
 <ul>
-<li>Contribution stubs were added at the end of Dictionary Items type pages see for example <a href="https://lisp-docs.github.io/cl-language-reference/docs/chap-5/f-d-dictionary/progn" target="_blank" rel="noopener noreferrer">progn</a></li>
+<li>Contribution stubs were added at the end of Dictionary Items type pages see for example <a href="https://lisp-docs.github.io/cl-language-reference/docs/chap-5/f-d-dictionary/progn#expanded-reference-progn" target="_blank" rel="noopener noreferrer">progn</a></li>
 </ul>
 </li>
 <li>The main text is unlikely to change much except for:<!-- -->
