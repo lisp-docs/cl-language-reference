@@ -6,12 +6,12 @@
 
 
 ```lisp
-;; In a TOPS-20 implementation, which uses <i><sup>^</sup></i>V to quote 
+;; In a TOPS-20 implementation, which uses ^V to quote 
 
 (NAMESTRING (MAKE-PATHNAME :HOST "OZ" :NAME "<TEST>")) 
 
- <i>→</i> #P"OZ:PS:<i><sup>^</sup></i>V<TEST<i><sup>^</sup>V>" 
+ → #P"OZ:PS:^V<TEST^V>" 
 
-<i><sup>not</sup> →</i> #P"OZ:PS:<TEST>" 
+not → #P"OZ:PS:<TEST>" 
 
 ```
