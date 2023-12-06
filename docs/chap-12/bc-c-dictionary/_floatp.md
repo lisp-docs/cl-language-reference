@@ -61,9 +61,9 @@ Returns *true* if *object* is of *type* **float**; otherwise, returns *false*.
 **Notes:** 
 
 
-
+```lisp
 (floatp *object*) ≡ (typep *object* ’float) 
-
+```
 
 
 
