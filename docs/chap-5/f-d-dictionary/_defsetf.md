@@ -14,7 +14,7 @@ The “short form”:
 
 
 
-*! access-fn* 
+→  access-fn 
 
 
 
@@ -22,7 +22,7 @@ The “long form”:
 
 
 
-**defsetf** *access-fn lambda-list* (*\{store-variable\}*\*) [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* *! access-fn* 
+**defsetf** *access-fn lambda-list* (*\{store-variable\}*\*) [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* →  access-fn 
 
 
 

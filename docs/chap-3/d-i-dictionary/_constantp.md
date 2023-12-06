@@ -112,35 +112,35 @@ Evaluation and
 
 
 
-(constantp ’(sin pi)) *! implementation-dependent* 
+(constantp ’(sin pi)) →  implementation-dependent 
 
 
 
-(constantp ’(car ’(x))) *! implementation-dependent* 
+(constantp ’(car ’(x))) →  implementation-dependent 
 
 
 
-(constantp ’(eql x x)) *! implementation-dependent* 
+(constantp ’(eql x x)) →  implementation-dependent 
 
 
 
-(constantp ’(typep x ’nil)) *! implementation-dependent* 
+(constantp ’(typep x ’nil)) →  implementation-dependent 
 
 
 
-(constantp ’(typep x ’t)) *! implementation-dependent* 
+(constantp ’(typep x ’t)) →  implementation-dependent 
 
 
 
-(constantp ’(values this-is-a-constant)) *! implementation-dependent* 
+(constantp ’(values this-is-a-constant)) →  implementation-dependent 
 
 
 
-(constantp ’(values ’x ’y)) *! implementation-dependent* 
+(constantp ’(values ’x ’y)) →  implementation-dependent 
 
 
 
-(constantp ’(let ((a ’(a b c))) (+ (length a) 6))) *! implementation-dependent* 
+(constantp ’(let ((a ’(a b c))) (+ (length a) 6))) →  implementation-dependent 
 
 
 

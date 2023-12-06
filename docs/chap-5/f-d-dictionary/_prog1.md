@@ -6,11 +6,11 @@
 
 
 
-**prog1** *first-form \{form\}*\* *! result-1* 
+**prog1** *first-form \{form\}*\* →  result-1 
 
 
 
-**prog2** *first-form second-form \{form\}*\* *! result-2* 
+**prog2** *first-form second-form \{form\}*\* →  result-2 
 
 
 

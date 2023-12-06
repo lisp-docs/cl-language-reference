@@ -256,7 +256,7 @@ The reference to \*foo\* in the first line of this example is not **special** ev
 
 
 
-(declaim (special prosp)) *! implementation-dependent* 
+(declaim (special prosp)) →  implementation-dependent 
 
 
 
