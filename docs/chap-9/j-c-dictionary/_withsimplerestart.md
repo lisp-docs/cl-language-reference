@@ -110,7 +110,7 @@ The *format-control* and *format-arguments* are used report the *restart*.
 
 (defun compute-fixnum-power-of-2 (x) 
 
-(with-simple-restart (nil "Give up on computing 2<i><sup>∧</sup></i>&#126;D." x) 
+(with-simple-restart (nil "Give up on computing 2<i><sup>^</sup></i>&#126;D." x) 
 
 (let ((result 1)) 
 
@@ -140,7 +140,7 @@ COMPUTE-POWER-OF-2
 
 ▷ To continue, type :CONTINUE followed by an option number. 
 
-<i>.</i> 1: Give up on computing 2<i><sup>∧</sup></i>10000. 
+<i>.</i> 1: Give up on computing 2<i><sup>^</sup></i>10000. 
 
 ▷ 2: Return to Lisp Toplevel 
 

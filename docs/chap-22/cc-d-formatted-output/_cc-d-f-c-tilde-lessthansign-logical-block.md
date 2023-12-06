@@ -18,7 +18,7 @@ If the enclosed portion is divided into only two segments, the *suffix* defaults
 
 
 
-The body segment can be any arbitrary <i>format string</i>. This <i>format string</i> is applied to the elements of the list corresponding to the &#126;&lt;...&#126;:&gt; directive as a whole. Elements are extracted from this list using <b>pprint-pop</b>, thereby providing automatic support for malformed lists, and the detection of circularity, sharing, and length abbreviation. Within the body segment, &#126;<i><sup>∧</sup></i> acts like <b>pprint-exit-if-list-exhausted</b>. 
+The body segment can be any arbitrary <i>format string</i>. This <i>format string</i> is applied to the elements of the list corresponding to the &#126;&lt;...&#126;:&gt; directive as a whole. Elements are extracted from this list using <b>pprint-pop</b>, thereby providing automatic support for malformed lists, and the detection of circularity, sharing, and length abbreviation. Within the body segment, &#126;<i><sup>^</sup></i> acts like <b>pprint-exit-if-list-exhausted</b>. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-This is an iteration construct. The argument should be a <i>list</i>, which is used as a set of arguments as if for a recursive call to <b>format</b>. The <i>string str</i> is used repeatedly as the control string. Each iteration can absorb as many elements of the <i>list</i> as it likes as arguments; if <i>str</i> uses up two arguments by itself, then two elements of the <i>list</i> will get used up each time around the loop. If before any iteration step the <i>list</i> is empty, then the iteration is terminated. Also, if a prefix parameter <i>n</i> is given, then there will be at most <i>n</i> repetitions of processing of <i>str</i> . Finally, the &#126;<i><sup>∧</sup></i> directive can be used to terminate the iteration prematurely. 
+This is an iteration construct. The argument should be a <i>list</i>, which is used as a set of arguments as if for a recursive call to <b>format</b>. The <i>string str</i> is used repeatedly as the control string. Each iteration can absorb as many elements of the <i>list</i> as it likes as arguments; if <i>str</i> uses up two arguments by itself, then two elements of the <i>list</i> will get used up each time around the loop. If before any iteration step the <i>list</i> is empty, then the iteration is terminated. Also, if a prefix parameter <i>n</i> is given, then there will be at most <i>n</i> repetitions of processing of <i>str</i> . Finally, the &#126;<i><sup>^</sup></i> directive can be used to terminate the iteration prematurely. 
 
 
 
