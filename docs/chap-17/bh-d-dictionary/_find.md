@@ -6,15 +6,15 @@
 
 
 
-**find** *item sequence* &key *from-end test test-not start end key → element* 
+**find** *item sequence* &amp;key *from-end test test-not start end key → element* 
 
 
 
-**find-if** *predicate sequence* &key *from-end start end key → element* 
+**find-if** *predicate sequence* &amp;key *from-end start end key → element* 
 
 
 
-**find-if-not** *predicate sequence* &key *from-end start end key → element* 
+**find-if-not** *predicate sequence* &amp;key *from-end start end key → element* 
 
 
 
@@ -84,7 +84,7 @@ If the *sequence* contains an *element* that *satisfies the test*, then the left
 
 
 
-(find #\d "here are some letters that can be looked at" :test #’char>) 
+(find #\d "here are some letters that can be looked at" :test #’char&gt;) 
 
 
 

@@ -6,11 +6,11 @@
 
 
 
-**butlast** *list* &optional *n → result-list* 
+**butlast** *list* &amp;optional *n → result-list* 
 
 
 
-**nbutlast** *list* &optional *n → result-list* 
+**nbutlast** *list* &amp;optional *n → result-list* 
 
 
 

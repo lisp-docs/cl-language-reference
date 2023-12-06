@@ -546,7 +546,7 @@ There is no requirement that (eq c1 c2) be true merely because (char= c1 c2) is 
 
 
 
-The manner in which *case* is used by **char-equal**, **char-not-equal**, **char-lessp**, **char-greaterp**, **char-not-greaterp**, and **char-not-lessp** implies an ordering for *standard characters* such that A=a, B=b, and so on, up to Z=z, and furthermore either 9\<A or Z\<0. 
+The manner in which *case* is used by **char-equal**, **char-not-equal**, **char-lessp**, **char-greaterp**, **char-not-greaterp**, and **char-not-lessp** implies an ordering for *standard characters* such that A=a, B=b, and so on, up to Z=z, and furthermore either 9&lt;A or Z&lt;0. 
 
 
 
@@ -1282,7 +1282,7 @@ Returns *true* if *character* is of *type* **standard-char**; otherwise, returns
 
 
 
-(standard-char-p #\~) *→ true* 
+(standard-char-p #\&#126;) *→ true* 
 
 
 
@@ -1966,7 +1966,7 @@ The *standard characters hNewlinei* and *hSpacei* have the respective names "New
 
 
 
-(prin1-to-string (read-from-string (format nil "#\\~A" (or (char-name #\A) "A")))) *→* "#\\A" 
+(prin1-to-string (read-from-string (format nil "#\\&#126;A" (or (char-name #\A) "A")))) *→* "#\\A" 
 
 
 

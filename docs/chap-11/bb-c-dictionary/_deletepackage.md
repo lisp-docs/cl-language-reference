@@ -208,7 +208,7 @@ After this operation completes, the *home package* of any *symbol* whose *home p
 
 
 
-▷ Debug&gt; :CONTINUE 
+▷ Debug> :CONTINUE 
 
 
 

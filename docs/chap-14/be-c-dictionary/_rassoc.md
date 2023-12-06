@@ -6,15 +6,15 @@
 
 
 
-**rassoc** *item alist* &key *key test test-not → entry* 
+**rassoc** *item alist* &amp;key *key test test-not → entry* 
 
 
 
-**rassoc-if** *predicate alist* &key *key → entry* 
+**rassoc-if** *predicate alist* &amp;key *key → entry* 
 
 
 
-**rassoc-if-not** *predicate alist* &key *key → entry* 
+**rassoc-if-not** *predicate alist* &amp;key *key → entry* 
 
 
 

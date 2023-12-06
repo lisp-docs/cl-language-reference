@@ -6,7 +6,7 @@
 
 
 
-**read-char** &optional *input-stream eof-error-p eof-value recursive-p → char* 
+**read-char** &amp;optional *input-stream eof-error-p eof-value recursive-p → char* 
 
 
 
@@ -84,7 +84,7 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is *false*, *eof-value*
 
 
 
-(format t "~S " c))) 
+(format t "&#126;S " c))) 
 
 
 
@@ -134,7 +134,7 @@ The corresponding output function is **write-char**.
 
 
 
-**read-char-no-hang** &optional *input-stream eof-error-p eof-value recursive-p* 
+**read-char-no-hang** &amp;optional *input-stream eof-error-p eof-value recursive-p* 
 
 
 

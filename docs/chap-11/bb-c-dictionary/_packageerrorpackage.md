@@ -44,7 +44,7 @@ Returns a *designator* for the offending *package* in the *situation* represente
 
 
 
-*→* #<Package "COMMON-LISP"> 
+*→* #\<Package "COMMON-LISP"\> 
 
 
 

@@ -36,7 +36,7 @@ Returns *true* if *stream* is an *interactive stream*; otherwise, returns *false
 
 
 
-(when (> measured limit) 
+(when (&gt; measured limit) 
 
 
 
@@ -52,7 +52,7 @@ limit)))
 
 
 
-(yes-or-no-p "The frammis is out of tolerance by ~D%.~@ 
+(yes-or-no-p "The frammis is out of tolerance by &#126;D%.&#126;@ 
 
 
 
@@ -60,11 +60,11 @@ Is it safe to proceed? " error)
 
 
 
-(< error 15)) ;15% is acceptable 
+(&lt; error 15)) ;15% is acceptable 
 
 
 
-(error "The frammis is out of tolerance by ~D%." error)))) 
+(error "The frammis is out of tolerance by &#126;D%." error)))) 
 
 
 

@@ -10,7 +10,7 @@ Note that the meaning of **nil** and **t** as destinations to **format** are dif
 
 
 
-The ~<i><sup>∧</sup></i> should appear only at the beginning of a ~&lt; clause, because it aborts the entire clause in which it appears (as well as all following clauses). 
+The &#126;<i><sup>∧</sup></i> should appear only at the beginning of a &#126;&lt; clause, because it aborts the entire clause in which it appears (as well as all following clauses). 
 
 
 
@@ -118,7 +118,7 @@ where *arguments-tail* is either the tail of *arguments* which has as its *car* 
 
 
 
-(funcall (formatter "~&amp;~A~A") \*standard-output\* ’a ’b ’c) 
+(funcall (formatter "&#126;&amp;&#126;A&#126;A") \*standard-output\* ’a ’b ’c) 
 
 
 
@@ -142,7 +142,7 @@ where *arguments-tail* is either the tail of *arguments* which has as its *car* 
 
 
 
-(format t (formatter "~&amp;~A~A") ’a ’b ’c) 
+(format t (formatter "&#126;&amp;&#126;A&#126;A") ’a ’b ’c) 
 
 
 
@@ -358,7 +358,7 @@ An error is signaled (at macro expansion time or at run time) if **pprint-exit-i
 
 
 
-The functions **pprint-fill**, **pprint-linear**, and **pprint-tabular** specify particular ways of *pretty printing* a *list* to *stream*. Each function prints parentheses around the output if and only if *colon-p* is *true*. Each function ignores its *at-sign-p* argument. (Both arguments are included even though only one is needed so that these functions can be used via ~/.../ and as **set-pprint-dispatch** functions, as well as directly.) Each function handles abbreviation and the detection of circularity and sharing correctly, and uses **write** to print *object* when it is a *non-list*. 
+The functions **pprint-fill**, **pprint-linear**, and **pprint-tabular** specify particular ways of *pretty printing* a *list* to *stream*. Each function prints parentheses around the output if and only if *colon-p* is *true*. Each function ignores its *at-sign-p* argument. (Both arguments are included even though only one is needed so that these functions can be used via &#126;/.../ and as **set-pprint-dispatch** functions, as well as directly.) Each function handles abbreviation and the detection of circularity and sharing correctly, and uses **write** to print *object* when it is a *non-list*. 
 
 
 
@@ -482,7 +482,7 @@ The *function* **pprint-tabular** could be defined as follows:
 
 
 
-Note that it would have been inconvenient to specify this function using **format**, because of the need to pass its *tabsize* argument through to a ~:T format directive nested within an iteration over a list. 
+Note that it would have been inconvenient to specify this function using **format**, because of the need to pass its *tabsize* argument through to a &#126;:T format directive nested within an iteration over a list. 
 
 
 
@@ -654,7 +654,7 @@ If either of the three conditions above occurs, the indicated output is printed 
 
 
 
-In addition to the *object* argument of **pprint-logical-block**, the arguments of the standard printing functions (such as **write**, **print**, **prin1**, and **pprint**, as well as the arguments of the standard *format directives* such as ~A, ~S, (and ~W) are all checked (when necessary) for circularity and sharing. However, such checking is not applied to the arguments of the functions **write-line**, **write-string**, and **write-char** or to the literal text output by **format**. A consequence of this is that you must use one of the latter functions if you want to print some literal text in the output that is not supposed to be checked for circularity or sharing. 
+In addition to the *object* argument of **pprint-logical-block**, the arguments of the standard printing functions (such as **write**, **print**, **prin1**, and **pprint**, as well as the arguments of the standard *format directives* such as &#126;A, &#126;S, (and &#126;W) are all checked (when necessary) for circularity and sharing. However, such checking is not applied to the arguments of the functions **write-line**, **write-string**, and **write-char** or to the literal text output by **format**. A consequence of this is that you must use one of the latter functions if you want to print some literal text in the output that is not supposed to be checked for circularity or sharing. 
 
 
 
@@ -1022,11 +1022,11 @@ It is frequently a good idea to call **pprint-exit-if-list-exhausted** before ca
 
 
 
-Specifies tabbing to *stream* as performed by the standard ~T format directive. If *stream* is a *pretty printing stream* and the *value* of **\*print-pretty\*** is *true*, tabbing is performed; otherwise, **pprint-tab** has no effect. 
+Specifies tabbing to *stream* as performed by the standard &#126;T format directive. If *stream* is a *pretty printing stream* and the *value* of **\*print-pretty\*** is *true*, tabbing is performed; otherwise, **pprint-tab** has no effect. 
 
 
 
-The arguments *colnum* and *colinc* correspond to the two *parameters* to ~T and are in terms of *ems*. The *kind* argument specifies the style of tabbing. It must be one of :line (tab as by ~T), :section (tab as by ~:T, but measuring horizontal positions relative to the start of the dynamically enclosing section), :line-relative (tab as by ~@T), or :section-relative (tab as by ~:@T, but measuring 
+The arguments *colnum* and *colinc* correspond to the two *parameters* to &#126;T and are in terms of *ems*. The *kind* argument specifies the style of tabbing. It must be one of :line (tab as by &#126;T), :section (tab as by &#126;:T, but measuring horizontal positions relative to the start of the dynamically enclosing section), :line-relative (tab as by &#126;@T), or :section-relative (tab as by &#126;:@T, but measuring 
 
 
 
@@ -1932,7 +1932,7 @@ a *generalized boolean*.
 
 
 
-Controls the format in which *arrays* are printed. If it is *false*, the contents of *arrays* other than *strings* are never printed. Instead, *arrays* are printed in a concise form using #< that gives enough information for the user to be able to identify the *array*, but does not include the entire *array* contents. If it is *true*, non-*string arrays* are printed using #(...), #\*, or #nA syntax. 
+Controls the format in which *arrays* are printed. If it is *false*, the contents of *arrays* other than *strings* are never printed. Instead, *arrays* are printed in a concise form using #\< that gives enough information for the user to be able to identify the *array*, but does not include the entire *array* contents. If it is *true*, non-*string arrays* are printed using #(...), #\*, or #nA syntax. 
 
 
 

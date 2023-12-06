@@ -6,7 +6,7 @@
 
 
 
-**restart-case** *restartable-form \&#123;↓clause\&#125; → \&#123;result\&#125;*\* 
+**restart-case** *restartable-form \{↓clause\} → \{result\}*\* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-[[ :interactive *interactive-expression |* :report *report-expression |* :test *test-expression* ]] *\&#123;declaration\&#125;*\* *\&#123;form\&#125;*\*) 
+[[ :interactive *interactive-expression |* :report *report-expression |* :test *test-expression* ]] *\{declaration\}*\* *\{form\}*\*) 
 
 
 
@@ -162,7 +162,7 @@ When **\*print-escape\*** is **nil**, the printer uses the report information fo
 
 
 
-(format t "~&~S – ~A~%" ’:continue some-restart) 
+(format t "&#126;&amp;&#126;S – &#126;A&#126;%" ’:continue some-restart) 
 
 
 
@@ -224,7 +224,7 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 
 
 
-(my-restart (&optional v) v)) 
+(my-restart (&amp;optional v) v)) 
 
 
 
@@ -260,7 +260,7 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 
 
 
-(format stream "Bad tasting sundae with ~S, ~S, and ~S" 
+(format stream "Bad tasting sundae with &#126;S, &#126;S, and &#126;S" 
 
 
 
@@ -448,7 +448,7 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 
 
 
-▷ Debug> :continue 1 
+▷ Debug&gt; :continue 1 
 
 
 
@@ -518,7 +518,7 @@ is essentially equivalent to
 
 
 
-(restart-bind ((name1 #’(lambda (&rest temp) 
+(restart-bind ((name1 #’(lambda (&amp;rest temp) 
 
 
 
@@ -534,7 +534,7 @@ is essentially equivalent to
 
 
 
-(name2 #’(lambda (&rest temp) 
+(name2 #’(lambda (&amp;rest temp) 
 
 
 

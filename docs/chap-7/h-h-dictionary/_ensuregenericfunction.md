@@ -6,7 +6,7 @@
 
 
 
-**ensure-generic-function** *function-name* &key *argument-precedence-order declare* 
+**ensure-generic-function** *function-name* &amp;key *argument-precedence-order declare* 
 
 
 
@@ -42,7 +42,7 @@ Method-combination – method combination object.
 
 
 
-Environment – the same as the **&environment** argument to macro expansion functions and is used to distinguish between compile-time and run-time environments. 
+Environment – the same as the **&amp;environment** argument to macro expansion functions and is used to distinguish between compile-time and run-time environments. 
 
 
 

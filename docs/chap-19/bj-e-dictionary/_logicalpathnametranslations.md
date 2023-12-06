@@ -92,7 +92,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 
 
 
-’(("\*\*;\*.\*.\*" "MY-LISPM:>library>foo>\*\*>"))) 
+’(("\*\*;\*.\*.\*" "MY-LISPM:&gt;library&gt;foo&gt;\*\*&gt;"))) 
 
 
 
@@ -108,7 +108,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 
 
 
-*→* #P"MY-LISPM:>library>foo>bar>baz>mum.quux.3" 
+*→* #P"MY-LISPM:&gt;library&gt;foo&gt;bar&gt;baz&gt;mum.quux.3" 
 
 
 

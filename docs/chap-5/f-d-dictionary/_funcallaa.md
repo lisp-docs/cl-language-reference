@@ -6,7 +6,7 @@
 
 
 
-**defun** *function-name lambda-list* [[ *\&#123;declaration\&#125;*\* *| documentation* ]] *\&#123;form\&#125;*\* 
+**defun** *function-name lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* 
 
 
 
@@ -66,11 +66,11 @@ Evaluating **defun** causes *function-name* to be a global name for the *functio
 
 
 
-[[ *\&#123;declaration\&#125;*\* *| documentation* ]] 
+[[ *\{declaration\}*\* *| documentation* ]] 
 
 
 
-(block *block-name \&#123;form\&#125;*\*)) 
+(block *block-name \{form\}*\*)) 
 
 
 
@@ -112,7 +112,7 @@ Data and Control
 
 
 
-(when (> x 0) 
+(when (&gt; x 0) 
 
 
 
@@ -120,7 +120,7 @@ Data and Control
 
 
 
-(defun ex (a b &optional c (d 66) &rest keys &key test (start 0)) 
+(defun ex (a b &amp;optional c (d 66) &amp;rest keys &amp;key test (start 0)) 
 
 
 

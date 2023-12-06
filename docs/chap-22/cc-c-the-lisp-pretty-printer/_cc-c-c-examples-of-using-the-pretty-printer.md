@@ -434,7 +434,7 @@ As examples of the convenience of specifying pretty printing with *format string
 
 
 
-(format T "~:&lt;~W ~@ ~:I~W ~: ~W~1I ~ ~W~:&gt;" list)) 
+(format T "&#126;:&lt;&#126;W &#126;@ &#126;:I&#126;W &#126;: &#126;W&#126;1I &#126; &#126;W&#126;:&gt;" list)) 
 
 
 
@@ -442,7 +442,7 @@ As examples of the convenience of specifying pretty printing with *format string
 
 
 
-(format T "~:&lt;~W~<i><sup>∧</sup></i>~:&lt;~@\{~:&lt;~@\{~W~<i><sup>∧</sup></i>~ ~\}~:&gt;~<i><sup>∧</sup></i>~: ~\}~:&gt;~1I~@\{~<i><sup>∧</sup></i>~ ~W~\}~:&gt;" list)) 
+(format T "&#126;:&lt;&#126;W&#126;<i><sup>∧</sup></i>&#126;:&lt;&#126;@\{&#126;:&lt;&#126;@\{&#126;W&#126;<i><sup>∧</sup></i>&#126; &#126;\}&#126;:&gt;&#126;<i><sup>∧</sup></i>&#126;: &#126;\}&#126;:&gt;&#126;1I&#126;@\{&#126;<i><sup>∧</sup></i>&#126; &#126;W&#126;\}&#126;:&gt;" list)) 
 
 
 
@@ -462,7 +462,7 @@ In the following example, the first *form* restores **\*print-pprint-dispatch\**
 
 
 
-(format s "#.(/ ~W ~W)" 
+(format s "#.(/ &#126;W &#126;W)" 
 
 
 
@@ -478,7 +478,7 @@ In the following example, the first *form* restores **\*print-pprint-dispatch\**
 
 
 
-(format s "#.(- (/ ~W ~W))" 
+(format s "#.(- (/ &#126;W &#126;W))" 
 
 
 
@@ -514,7 +514,7 @@ The following two *forms* illustrate the definition of pretty printing functions
 
 
 
-(funcall (formatter "’~W") s (cadr list)) 
+(funcall (formatter "’&#126;W") s (cadr list)) 
 
 
 
@@ -542,7 +542,7 @@ The following two *forms* illustrate the definition of pretty printing functions
 
 
 
-The next example specifies a default method for printing lists that do not correspond to function calls. Note that the functions **pprint-linear**, **pprint-fill**, and **pprint-tabular** are all defined with optional *colon-p* and *at-sign-p* arguments so that they can be used as **pprint dispatch functions** as well as ~/.../ functions. 
+The next example specifies a default method for printing lists that do not correspond to function calls. Note that the functions **pprint-linear**, **pprint-fill**, and **pprint-tabular** are all defined with optional *colon-p* and *at-sign-p* arguments so that they can be used as **pprint dispatch functions** as well as &#126;/.../ functions. 
 
 
 
@@ -586,7 +586,7 @@ This final example shows how to define a pretty printing function for a user def
 
 
 
-(funcall (formatter "~@&lt;#&lt;~;~W and ~2I~ ~/pprint-fill/~;&gt;~:&gt;") 
+(funcall (formatter "&#126;@&lt;#&lt;&#126;;&#126;W and &#126;2I&#126; &#126;/pprint-fill/&#126;;&gt;&#126;:&gt;") 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**write-char** *character* &optional *output-stream → character* 
+**write-char** *character* &amp;optional *output-stream → character* 
 
 
 

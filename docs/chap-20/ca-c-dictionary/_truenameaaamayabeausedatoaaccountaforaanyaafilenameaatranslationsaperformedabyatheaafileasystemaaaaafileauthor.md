@@ -48,7 +48,7 @@ Returns a *string* naming the author of the *file* specified by *pathspec*, or *
 
 
 
-(with-open-file (stream ">relativity>general.text") 
+(with-open-file (stream "&gt;relativity&gt;general.text") 
 
 
 

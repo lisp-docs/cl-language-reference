@@ -6,7 +6,7 @@
 
 
 
-**make-pathname** &key *host device directory name type version defaults case* 
+**make-pathname** &amp;key *host device directory name type version defaults case* 
 
 
 
@@ -204,7 +204,7 @@ If the *directory* is a *string*, it should be the name of a top level directory
 
 
 
-▷ #P"MY-LISPM:>public>games>chess.db" 
+▷ #P"MY-LISPM:&gt;public&gt;games&gt;chess.db" 
 
 
 
@@ -216,7 +216,7 @@ If the *directory* is a *string*, it should be the name of a top level directory
 
 
 
-▷ #P"MY-LISPM:>public>games>chess.db" 
+▷ #P"MY-LISPM:&gt;public&gt;games&gt;chess.db" 
 
 
 

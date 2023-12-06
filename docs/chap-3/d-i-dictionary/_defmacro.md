@@ -6,7 +6,7 @@
 
 
 
-**defmacro** *name lambda-list* [[ *\&#123;declaration\&#125;*\* *| documentation* ]] *\&#123;form\&#125;*\* 
+**defmacro** *name lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* 
 
 
 
@@ -108,7 +108,7 @@ If a **defmacro** *form* appears as a *top level form*, the *compiler* must stor
 
 
 
-(defmacro mac2 (&optional (a 2 b) (c 3 d) &rest x) ‘’(,a ,b ,c ,d ,x)) *→* MAC2 (mac2 6) *→* (6 T 3 NIL NIL) 
+(defmacro mac2 (&amp;optional (a 2 b) (c 3 d) &amp;rest x) ‘’(,a ,b ,c ,d ,x)) *→* MAC2 (mac2 6) *→* (6 T 3 NIL NIL) 
 
 
 
@@ -116,7 +116,7 @@ If a **defmacro** *form* appears as a *top level form*, the *compiler* must stor
 
 
 
-(defmacro mac3 (&whole r a &optional (b 3) &rest x &key c (d a)) 
+(defmacro mac3 (&amp;whole r a &amp;optional (b 3) &amp;rest x &amp;key c (d a)) 
 
 
 
@@ -140,7 +140,7 @@ The stipulation that an embedded *destructuring lambda list* is permitted only w
 
 
 
-(defmacro loser (x &optional (a b &rest c) &rest z) 
+(defmacro loser (x &amp;optional (a b &amp;rest c) &amp;rest z) 
 
 
 
@@ -148,11 +148,11 @@ The stipulation that an embedded *destructuring lambda list* is permitted only w
 
 
 
-because *ordinary lambda list* syntax does permit a *list* following &optional; the list (a b &rest c) would be interpreted as describing an optional parameter named a whose default value is that of the form b, with a supplied-p parameter named **&rest** (not valid), and an extraneous symbol c in the list (also not valid). An almost correct way to express this is 
+because *ordinary lambda list* syntax does permit a *list* following &amp;optional; the list (a b &amp;rest c) would be interpreted as describing an optional parameter named a whose default value is that of the form b, with a supplied-p parameter named **&amp;rest** (not valid), and an extraneous symbol c in the list (also not valid). An almost correct way to express this is 
 
 
 
-(defmacro loser (x &optional ((a b &rest c)) &rest z) 
+(defmacro loser (x &amp;optional ((a b &amp;rest c)) &amp;rest z) 
 
 
 
@@ -160,11 +160,11 @@ because *ordinary lambda list* syntax does permit a *list* following &optional; 
 
 
 
-The extra set of parentheses removes the ambiguity. However, the definition is now incorrect because a macro call such as (loser (car pool)) would not provide any argument form for the lambda list (a b &rest c), and so the default value against which to match the *lambda list* would be **nil** because no explicit default value was specified. The consequences of this are unspecified since the empty list, **nil**, does not have *forms* to satisfy the parameters a and b. The fully correct definition would be either 
+The extra set of parentheses removes the ambiguity. However, the definition is now incorrect because a macro call such as (loser (car pool)) would not provide any argument form for the lambda list (a b &amp;rest c), and so the default value against which to match the *lambda list* would be **nil** because no explicit default value was specified. The consequences of this are unspecified since the empty list, **nil**, does not have *forms* to satisfy the parameters a and b. The fully correct definition would be either 
 
 
 
-(defmacro loser (x &optional ((a b &rest c) ’(nil nil)) &rest z) 
+(defmacro loser (x &amp;optional ((a b &amp;rest c) ’(nil nil)) &amp;rest z) 
 
 
 
@@ -176,7 +176,7 @@ or
 
 
 
-(defmacro loser (x &optional ((&optional a b &rest c)) &rest z) 
+(defmacro loser (x &amp;optional ((&amp;optional a b &amp;rest c)) &amp;rest z) 
 
 
 
@@ -196,7 +196,7 @@ would be a valid call for the second definition but not for the first.
 
 
 
-(defmacro dm1a (&whole x) ‘’,x) 
+(defmacro dm1a (&amp;whole x) ‘’,x) 
 
 
 
@@ -208,7 +208,7 @@ would be a valid call for the second definition but not for the first.
 
 
 
-(defmacro dm1b (&whole x a &optional b) ‘’(,x ,a ,b)) 
+(defmacro dm1b (&amp;whole x a &amp;optional b) ‘’(,x ,a ,b)) 
 
 
 
@@ -228,7 +228,7 @@ would be a valid call for the second definition but not for the first.
 
 
 
-(defmacro dm2a (&whole form a b) ‘’(form ,form a ,a b ,b)) 
+(defmacro dm2a (&amp;whole form a b) ‘’(form ,form a ,a b ,b)) 
 
 
 
@@ -240,11 +240,11 @@ would be a valid call for the second definition but not for the first.
 
 
 
-(defmacro dm2b (&whole form a (&whole b (c . d) &optional (e 5)) 
+(defmacro dm2b (&amp;whole form a (&amp;whole b (c . d) &amp;optional (e 5)) 
 
 
 
-&body f &environment env)  
+&amp;body f &amp;environment env)  
 
 
 

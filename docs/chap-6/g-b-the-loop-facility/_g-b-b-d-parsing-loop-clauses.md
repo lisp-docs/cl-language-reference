@@ -18,7 +18,7 @@ collect (square i) ; third clause
 
 
 
-do (format t "Working on ~D now" i) ; fourth clause 
+do (format t "Working on &#126;D now" i) ; fourth clause 
 
 
 
@@ -26,7 +26,7 @@ when (evenp i) ; fifth clause
 
 
 
-do (format t "~D is a non-odd number" i) 
+do (format t "&#126;D is a non-odd number" i) 
 
 
 

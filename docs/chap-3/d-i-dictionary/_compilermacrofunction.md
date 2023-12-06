@@ -6,11 +6,11 @@
 
 
 
-**compiler-macro-function** *name* &optional *environment → function* 
+**compiler-macro-function** *name* &amp;optional *environment → function* 
 
 
 
-**(setf (compiler-macro-function** *name* &optional *environment***)** *new-function***)** 
+**(setf (compiler-macro-function** *name* &amp;optional *environment***)** *new-function***)** 
 
 
 

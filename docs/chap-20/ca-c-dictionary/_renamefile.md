@@ -92,7 +92,7 @@ If the *filespec designator* is an open *stream*, then the *stream* itself and t
 
 
 
-*→* #P"SYS:CHEMISTRY;LEAD.TEXT.NEWEST", #P"Q:>sys>chem>lead.text.1" 
+*→* #P"SYS:CHEMISTRY;LEAD.TEXT.NEWEST", #P"Q:&gt;sys&gt;chem&gt;lead.text.1" 
 
 
 
@@ -104,11 +104,11 @@ If the *filespec designator* is an open *stream*, then the *stream* itself and t
 
 
 
-#P"Q:>sys>chem>lead.text.1", 
+#P"Q:&gt;sys&gt;chem&gt;lead.text.1", 
 
 
 
-#P"Q:>sys>chem>gold.text.1" 
+#P"Q:&gt;sys&gt;chem&gt;gold.text.1" 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**array-row-major-index** *array* &rest *subscripts → index* 
+**array-row-major-index** *array* &amp;rest *subscripts → index* 
 
 
 
@@ -98,7 +98,7 @@ A possible definition of **array-row-major-index**, with no error-checking, is
 
 
 
-(defun array-row-major-index (a &rest subscripts) 
+(defun array-row-major-index (a &amp;rest subscripts) 
 
 
 

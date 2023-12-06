@@ -6,7 +6,7 @@
 
 
 
-**nconc** &rest *lists → concatenated-list* 
+**nconc** &amp;rest *lists → concatenated-list* 
 
 
 

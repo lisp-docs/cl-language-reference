@@ -6,15 +6,15 @@
 
 
 
-**floor** *number* &optional *divisor → quotient, remainder* 
+**floor** *number* &amp;optional *divisor → quotient, remainder* 
 
 
 
-**ffloor** *number* &optional *divisor → quotient, remainder* 
+**ffloor** *number* &amp;optional *divisor → quotient, remainder* 
 
 
 
-**ceiling** *number* &optional *divisor → quotient, remainder* 
+**ceiling** *number* &amp;optional *divisor → quotient, remainder* 
 
 
 
@@ -34,23 +34,23 @@
 
 
 
-**fceiling** *number* &optional *divisor → quotient, remainder* 
+**fceiling** *number* &amp;optional *divisor → quotient, remainder* 
 
 
 
-**truncate** *number* &optional *divisor → quotient, remainder* 
+**truncate** *number* &amp;optional *divisor → quotient, remainder* 
 
 
 
-**ftruncate** *number* &optional *divisor → quotient, remainder* 
+**ftruncate** *number* &amp;optional *divisor → quotient, remainder* 
 
 
 
-**round** *number* &optional *divisor → quotient, remainder* 
+**round** *number* &amp;optional *divisor → quotient, remainder* 
 
 
 
-**fround** *number* &optional *divisor → quotient, remainder* 
+**fround** *number* &amp;optional *divisor → quotient, remainder* 
 
 
 
@@ -204,7 +204,7 @@ The *remainder* is an *integer* if both x and y are *integers*, is a *rational* 
 
 
 
-(format t "~&~4,1@F ~2,’ D ~2,’ D ~2,’ D ~2,’ D" 
+(format t "&#126;&amp;&#126;4,1@F &#126;2,’ D &#126;2,’ D &#126;2,’ D &#126;2,’ D" 
 
 
 

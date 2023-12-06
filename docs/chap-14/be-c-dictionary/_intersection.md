@@ -6,11 +6,11 @@
 
 
 
-**intersection** *list-1 list-2* &key *key test test-not → result-list* 
+**intersection** *list-1 list-2* &amp;key *key test test-not → result-list* 
 
 
 
-**nintersection** *list-1 list-2* &key *key test test-not → result-list* 
+**nintersection** *list-1 list-2* &amp;key *key test test-not → result-list* 
 
 
 

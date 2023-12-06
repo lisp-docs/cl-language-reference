@@ -6,7 +6,7 @@
 
 
 
-**defgeneric** *function-name gf-lambda-list* [[ *↓option | \&#123;↓method-description\&#125;*\* ]] 
+**defgeneric** *function-name gf-lambda-list* [[ *↓option | \{↓method-description\}*\* ]] 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*option::*=(:argument-precedence-order *\&#123;parameter-name\&#125;*<sup>+</sup>) *|* 
+*option::*=(:argument-precedence-order *\{parameter-name\}*<sup>+</sup>) *|* 
 
 
 
-(**declare** *\&#123;gf-declaration\&#125;*<sup>+</sup>) *|* 
+(**declare** *\{gf-declaration\}*<sup>+</sup>) *|* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-(:method-combination *method-combination \&#123;method-combination-argument\&#125;*\*) *|* 
+(:method-combination *method-combination \{method-combination-argument\}*\*) *|* 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-*method-description::*=(:method *\&#123;method-qualifier\&#125;*\* *specialized-lambda-list* 
+*method-description::*=(:method *\{method-qualifier\}*\* *specialized-lambda-list* 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-[[ *\&#123;declaration\&#125;*\* *| documentation* ]] *\&#123;form\&#125;*\*) 
+[[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\*) 
 
 
 

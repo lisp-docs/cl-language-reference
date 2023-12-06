@@ -102,23 +102,23 @@ Returns *true* if *object* is of *type* **pathname**; otherwise, returns *false*
 
 
 
-**pathname-host** *pathname* &key *case → host* 
+**pathname-host** *pathname* &amp;key *case → host* 
 
 
 
-**pathname-device** *pathname* &key *case → device* 
+**pathname-device** *pathname* &amp;key *case → device* 
 
 
 
-**pathname-directory** *pathname* &key *case → directory* 
+**pathname-directory** *pathname* &amp;key *case → directory* 
 
 
 
-**pathname-name** *pathname* &key *case → name* 
+**pathname-name** *pathname* &amp;key *case → name* 
 
 
 
-**pathname-type** *pathname* &key *case → type* 
+**pathname-type** *pathname* &amp;key *case → type* 
 
 
 
@@ -404,7 +404,7 @@ If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in
 
 
 
-(pathname-directory (parse-namestring ">foo>\*\*>bar>baz.lisp")) 
+(pathname-directory (parse-namestring "&gt;foo&gt;\*\*&gt;bar&gt;baz.lisp")) 
 
 
 
@@ -412,7 +412,7 @@ If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in
 
 
 
-(pathname-directory (parse-namestring ">foo>\*>bar>baz.lisp")) 
+(pathname-directory (parse-namestring "&gt;foo&gt;\*&gt;bar&gt;baz.lisp")) 
 
 
 
@@ -420,7 +420,7 @@ If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in
 
 
 
-(pathname-directory (parse-namestring ">foo>\*>bar>baz.lisp") :case :common) 
+(pathname-directory (parse-namestring "&gt;foo&gt;\*&gt;bar&gt;baz.lisp") :case :common) 
 
 
 
@@ -428,7 +428,7 @@ If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in
 
 
 
-(pathname-device (parse-namestring ">foo>baz.lisp")) *→* :UNSPECIFIC 
+(pathname-device (parse-namestring "&gt;foo&gt;baz.lisp")) *→* :UNSPECIFIC 
 
 
 

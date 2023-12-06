@@ -6,7 +6,7 @@
 
 
 
-**funcall** *function* &rest *args → \&#123;result\&#125;*\* 
+**funcall** *function* &amp;rest *args → \{result\}*\* 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**make-string** *size* &key *initial-element element-type → string* 
+**make-string** *size* &amp;key *initial-element element-type → string* 
 
 
 

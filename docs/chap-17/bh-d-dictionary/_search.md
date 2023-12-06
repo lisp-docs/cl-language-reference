@@ -6,7 +6,7 @@
 
 
 
-**search** *sequence-1 sequence-2* &key *from-end test test-not* 
+**search** *sequence-1 sequence-2* &amp;key *from-end test test-not* 
 
 
 

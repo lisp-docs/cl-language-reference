@@ -6,7 +6,7 @@
 
 
 
-**make-concatenated-stream** &rest *input-streams → concatenated-stream* 
+**make-concatenated-stream** &amp;rest *input-streams → concatenated-stream* 
 
 
 

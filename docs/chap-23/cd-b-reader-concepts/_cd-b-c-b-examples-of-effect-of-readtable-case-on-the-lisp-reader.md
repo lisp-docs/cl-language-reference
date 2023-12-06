@@ -10,15 +10,15 @@
 
 
 
-(format t "READTABLE-CASE Input Symbol-name~ 
+(format t "READTABLE-CASE Input Symbol-name&#126; 
 
 
 
-~%–––––––––––––––––-~ 
+&#126;%–––––––––––––––––-&#126; 
 
 
 
-~%") 
+&#126;%") 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-(format t "~&amp;:~A~16T~A~24T~A" 
+(format t "&#126;&amp;:&#126;A&#126;16T&#126;A&#126;24T&#126;A" 
 
 
 

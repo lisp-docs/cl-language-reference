@@ -6,7 +6,7 @@
 
 
 
-**with-output-to-string** (*var* &optional *string-form* &key *element-type*) *\&#123;declaration\&#125;*\* *\&#123;form\&#125;*\* *→ \&#123;result\&#125;*\* 
+**with-output-to-string** (*var* &amp;optional *string-form* &amp;key *element-type*) *\{declaration\}*\* *\{form\}*\* *→ \{result\}*\* 
 
 
 
@@ -292,7 +292,7 @@ out
 
 
 
-(defun fact (n) (if (< n 2) 1 (\* n (fact (- n 1))))) 
+(defun fact (n) (if (&lt; n 2) 1 (\* n (fact (- n 1))))) 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**translate-logical-pathname** *pathname* &key *→ physical-pathname* 
+**translate-logical-pathname** *pathname* &amp;key *→ physical-pathname* 
 
 
 

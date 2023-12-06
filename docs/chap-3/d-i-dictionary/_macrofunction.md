@@ -6,11 +6,11 @@
 
 
 
-**macro-function** *symbol* &optional *environment → function* 
+**macro-function** *symbol* &amp;optional *environment → function* 
 
 
 
-**(setf (macro-function** *symbol* &optional *environment***)** *new-function***)** 
+**(setf (macro-function** *symbol* &amp;optional *environment***)** *new-function***)** 
 
 
 
@@ -72,7 +72,7 @@ It is possible for both **macro-function** and **special-operator-p** to return 
 
 
 
-(macrolet ((foo (&environment env) 
+(macrolet ((foo (&amp;environment env) 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**deftype** *name lambda-list* [[ *\&#123;declaration\&#125;*\* *| documentation* ]] *\&#123;form\&#125;*\* *→ name* 
+**deftype** *name lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* *→ name* 
 
 
 
@@ -96,7 +96,7 @@ expansion of a *type specifier* is not defined fully at compile time (perhaps be
 
 
 
-(or (< (array-rank a) 2) 
+(or (&lt; (array-rank a) 2) 
 
 
 
@@ -104,7 +104,7 @@ expansion of a *type specifier* is not defined fully at compile time (perhaps be
 
 
 
-(deftype square-matrix (&optional type size) 
+(deftype square-matrix (&amp;optional type size) 
 
 
 

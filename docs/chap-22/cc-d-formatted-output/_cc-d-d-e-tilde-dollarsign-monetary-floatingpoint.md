@@ -6,7 +6,7 @@ The next *arg* is printed as a *float* in fixed-format notation.
 
 
 
-The full form is ~*d*,*n*,*w*,*padchar*$. The parameter *d* is the number of digits to print after the decimal point (default value 2); *n* is the minimum number of digits to print before the decimal point (default value 1); *w* is the minimum total width of the field to be printed (default value 0). 
+The full form is &#126;*d*,*n*,*w*,*padchar*$. The parameter *d* is the number of digits to print after the decimal point (default value 2); *n* is the minimum number of digits to print before the decimal point (default value 1); *w* is the minimum total width of the field to be printed (default value 0). 
 
 
 
@@ -14,11 +14,11 @@ First padding and the sign are output. If the *arg* is negative, then a minus si
 
 
 
-If the magnitude of *arg* is so large that more than *m* digits would have to be printed, where *m* is the larger of *w* and 100, then an implementation is free, at its discretion, to print the number using exponential notation instead, as if by the directive ~*w*,*q*„„*padchar*E, where *w* and *padchar* 
+If the magnitude of *arg* is so large that more than *m* digits would have to be printed, where *m* is the larger of *w* and 100, then an implementation is free, at its discretion, to print the number using exponential notation instead, as if by the directive &#126;*w*,*q*„„*padchar*E, where *w* and *padchar* 
 
 
 
-are present or omitted according to whether they were present or omitted in the ~$ directive, and where *q*=*d*+*n−*1, where *d* and *n* are the (possibly default) values given to the ~$ directive. 
+are present or omitted according to whether they were present or omitted in the &#126;$ directive, and where *q*=*d*+*n−*1, where *d* and *n* are the (possibly default) values given to the &#126;$ directive. 
 
 
 
@@ -26,7 +26,7 @@ If *arg* is a *rational* number, then it is coerced to be a *single float* and t
 
 
 
-If *arg* is a *complex* number or some non-numeric *object*, then it is printed using the format directive ~*w*D, thereby printing it in decimal radix and a minimum field width of *w*. 
+If *arg* is a *complex* number or some non-numeric *object*, then it is printed using the format directive &#126;*w*D, thereby printing it in decimal radix and a minimum field width of *w*. 
 
 
 
@@ -42,7 +42,7 @@ If *arg* is a *complex* number or some non-numeric *object*, then it is printed 
 
 
 
-~$ binds **\*print-escape\*** to *false* and **\*print-readably\*** to *false*. 
+&#126;$ binds **\*print-escape\*** to *false* and **\*print-readably\*** to *false*. 
 
 
 

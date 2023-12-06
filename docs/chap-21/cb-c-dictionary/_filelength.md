@@ -64,7 +64,7 @@ For a binary file, the length is measured in units of the *element type* of the 
 
 
 
-*→* #P"A:>Joe>decimal-digits.text.1" 
+*→* #P"A:&gt;Joe&gt;decimal-digits.text.1" 
 
 
 

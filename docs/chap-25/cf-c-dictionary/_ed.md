@@ -6,7 +6,7 @@
 
 
 
-**ed** &optional *x → implementation-dependent* 
+**ed** &amp;optional *x → implementation-dependent* 
 
 
 

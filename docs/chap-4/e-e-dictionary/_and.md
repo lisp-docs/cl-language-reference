@@ -14,7 +14,7 @@ Combining.
 
 
 
-(and *\&#123;typespec\&#125;*\*) 
+(and *\{typespec\}*\*) 
 
 
 

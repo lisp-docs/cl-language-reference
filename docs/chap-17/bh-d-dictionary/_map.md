@@ -6,7 +6,7 @@
 
 
 
-**map** *result-type function* &rest *sequences*<sup>+</sup> *→ result* 
+**map** *result-type function* &amp;rest *sequences*<sup>+</sup> *→ result* 
 
 
 

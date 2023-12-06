@@ -6,7 +6,7 @@
 
 
 
-**complex** *realpart* &optional *imagpart → complex* 
+**complex** *realpart* &amp;optional *imagpart → complex* 
 
 
 

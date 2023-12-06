@@ -6,7 +6,7 @@
 
 
 
-**allocate-instance** *class* &rest *initargs* &key &allow-other-keys *→ new-instance* 
+**allocate-instance** *class* &amp;rest *initargs* &amp;key &amp;allow-other-keys *→ new-instance* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-**allocate-instance** (*class* **standard-class**) &rest *initargs* 
+**allocate-instance** (*class* **standard-class**) &amp;rest *initargs* 
 
 
 
-**allocate-instance** (*class* **structure-class**) &rest *initargs* 
+**allocate-instance** (*class* **structure-class**) &amp;rest *initargs* 
 
 
 

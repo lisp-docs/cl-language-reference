@@ -18,11 +18,11 @@
 
 
 
-&rest *initargs* &key &allow-other-keys 
+&amp;rest *initargs* &amp;key &amp;allow-other-keys 
 
 
 
-*→ \&#123;result\&#125;*\* 
+*→ \{result\}*\* 
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-&rest *initargs* 
+&amp;rest *initargs* 
 
 
 
@@ -160,7 +160,7 @@ The value returned by **update-instance-for-redefined-class** is ignored.
 
 
 
-((pos x-y-position) added deleted plist &key) 
+((pos x-y-position) added deleted plist &amp;key) 
 
 
 

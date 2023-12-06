@@ -6,7 +6,7 @@
 
 
 
-**compile** *name* &optional *definition → function, warnings-p, failure-p* 
+**compile** *name* &amp;optional *definition → function, warnings-p, failure-p* 
 
 
 
@@ -100,7 +100,7 @@ The *tertiary value*, *failure-p*, is *false* if no *conditions* of *type* **err
 
 
 
-(compile nil ’(lambda () "replaced"))) *→* #<Compiled-Function> 
+(compile nil ’(lambda () "replaced"))) *→* #&lt;Compiled-Function&gt; 
 
 
 

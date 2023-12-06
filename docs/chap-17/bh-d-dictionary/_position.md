@@ -6,15 +6,15 @@
 
 
 
-**position** *item sequence* &key *from-end test test-not start end key → position* 
+**position** *item sequence* &amp;key *from-end test test-not start end key → position* 
 
 
 
-**position-if** *predicate sequence* &key *from-end start end key → position* 
+**position-if** *predicate sequence* &amp;key *from-end start end key → position* 
 
 
 
-**position-if-not** *predicate sequence* &key *from-end start end key → position* 
+**position-if-not** *predicate sequence* &amp;key *from-end start end key → position* 
 
 
 

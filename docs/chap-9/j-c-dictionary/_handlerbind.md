@@ -6,7 +6,7 @@
 
 
 
-**handler-bind** (*\&#123;↓binding\&#125;*\*) *\&#123;form\&#125;*\* *→ \&#123;result\&#125;*\* 
+**handler-bind** (*\{↓binding\}*\*) *\{form\}*\* *→ \{result\}*\* 
 
 
 
@@ -100,7 +100,7 @@ If any other kind of error is signaled, the second function is called. In either
 
 
 
-(format \*error-output\* "~&~A~&" condition) 
+(format \*error-output\* "&#126;&amp;&#126;A&#126;&amp;" condition) 
 
 
 
@@ -108,7 +108,7 @@ If any other kind of error is signaled, the second function is called. In either
 
 
 
-(defmacro trap-errors (&rest forms) 
+(defmacro trap-errors (&amp;rest forms) 
 
 
 

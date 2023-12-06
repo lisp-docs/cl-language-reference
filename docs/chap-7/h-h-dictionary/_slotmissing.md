@@ -6,7 +6,7 @@
 
 
 
-**slot-missing** *class object slot-name operation* &optional *new-value → \&#123;result\&#125;*\* 
+**slot-missing** *class object slot-name operation* &amp;optional *new-value → \{result\}*\* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*operation* &optional *new-value* 
+*operation* &amp;optional *new-value* 
 
 
 

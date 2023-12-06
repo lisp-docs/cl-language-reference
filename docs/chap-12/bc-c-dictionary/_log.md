@@ -6,7 +6,7 @@
 
 
 
-**log** *number* &optional *base → logarithm* 
+**log** *number* &amp;optional *base → logarithm* 
 
 
 

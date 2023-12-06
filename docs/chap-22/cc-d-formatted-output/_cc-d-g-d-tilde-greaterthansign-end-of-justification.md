@@ -2,7 +2,7 @@
 
 
 
-~&gt; terminates a ~&lt;. The consequences of using it elsewhere are undefined. 
+&#126;&gt; terminates a &#126;&lt;. The consequences of using it elsewhere are undefined. 
 
 
 

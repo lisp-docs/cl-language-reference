@@ -6,7 +6,7 @@
 
 
 
-**assert** *test-form* [(*\&#123;place\&#125;*\*) [*datum-form \&#123;argument-form\&#125;*\*]] 
+**assert** *test-form* [(*\{place\}*\*) [*datum-form \{argument-form\}*\*]] 
 
 
 
@@ -108,7 +108,7 @@ The *places* are *generalized references* to data upon which *test-form* depends
 
 
 
-"Cannot multiply ~S by ~S." a b) 
+"Cannot multiply &#126;S by &#126;S." a b) 
 
 
 

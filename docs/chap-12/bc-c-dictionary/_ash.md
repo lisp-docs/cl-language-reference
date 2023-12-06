@@ -86,7 +86,7 @@ Should signal an error of *type* **type-error** if *integer* is not an *integer*
 
 
 
-*≡* (and (>= *j k*) (logbitp (- *j k*) *n*)) 
+*≡* (and (&gt;= *j k*) (logbitp (- *j k*) *n*)) 
 
 
 

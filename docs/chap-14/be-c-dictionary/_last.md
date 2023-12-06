@@ -6,7 +6,7 @@
 
 
 
-**last** *list* &optional *n → tail* 
+**last** *list* &amp;optional *n → tail* 
 
 
 
@@ -146,7 +146,7 @@ The following code could be used to define **last**.
 
 
 
-(defun last (list &optional (n 1)) 
+(defun last (list &amp;optional (n 1)) 
 
 
 
@@ -170,7 +170,7 @@ The following code could be used to define **last**.
 
 
 
-(if (>= i n) (pop r)))) 
+(if (&gt;= i n) (pop r)))) 
 
 
 

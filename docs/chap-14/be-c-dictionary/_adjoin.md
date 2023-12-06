@@ -6,7 +6,7 @@
 
 
 
-**adjoin** *item list* &key *key test test-not → new-list* 
+**adjoin** *item list* &amp;key *key test test-not → new-list* 
 
 
 

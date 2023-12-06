@@ -6,7 +6,7 @@
 
 
 
-**max** &rest *reals*<sup>+</sup> *→ max-real* 
+**max** &amp;rest *reals*<sup>+</sup> *→ max-real* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-**min** &rest *reals*<sup>+</sup> *→ min-real* 
+**min** &amp;rest *reals*<sup>+</sup> *→ min-real* 
 
 
 

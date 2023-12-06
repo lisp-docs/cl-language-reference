@@ -6,7 +6,7 @@
 
 
 
-**invalid-method-error** *method format-control* &rest *args → implementation-dependent* 
+**invalid-method-error** *method format-control* &amp;rest *args → implementation-dependent* 
 
 
 

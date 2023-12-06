@@ -6,7 +6,7 @@
 
 
 
-**defclass** *class-name* (*\&#123;superclass-name\&#125;*\*) (*\&#123;slot-specifier\&#125;*\*) [[*↓class-option* ]] 
+**defclass** *class-name* (*\{superclass-name\}*\*) (*\{slot-specifier\}*\*) [[*↓class-option* ]] 
 
 
 
@@ -22,39 +22,39 @@
 
 
 
-*slot-option*::= *\&#123;*:reader *reader-function-name\&#125;*\* *|* 
+*slot-option*::= *\{*:reader *reader-function-name\}*\* *|* 
 
 
 
-*\&#123;*:writer *writer-function-name\&#125;*\* *|* 
+*\{*:writer *writer-function-name\}*\* *|* 
 
 
 
-*\&#123;*:accessor *reader-function-name\&#125;*\* *|* 
+*\{*:accessor *reader-function-name\}*\* *|* 
 
 
 
-*\&#123;*:allocation *allocation-type\&#125; |* 
+*\{*:allocation *allocation-type\} |* 
 
 
 
-*\&#123;*:initarg *initarg-name\&#125;*\* *|* 
+*\{*:initarg *initarg-name\}*\* *|* 
 
 
 
-*\&#123;*:initform *form\&#125; |* 
+*\{*:initform *form\} |* 
 
 
 
-*\&#123;*:type *type-specifier\&#125; |* 
+*\{*:type *type-specifier\} |* 
 
 
 
-*\&#123;*:documentation *string\&#125;* 
+*\{*:documentation *string\}* 
 
 
 
-*function-name*::= *\&#123;symbol |* (setf *symbol*)*\&#125;* 
+*function-name*::= *\{symbol |* (setf *symbol*)*\}* 
 
 
 

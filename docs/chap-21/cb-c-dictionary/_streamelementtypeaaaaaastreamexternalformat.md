@@ -192,7 +192,7 @@ The consequences are undefined if an attempt is made to *assign* the *stream var
 
 
 
-*→* #<PATHNAME :HOST NIL :DEVICE *device-name* :DIRECTORY *directory-name* 
+*→* #\<PATHNAME :HOST NIL :DEVICE *device-name* :DIRECTORY *directory-name* 
 
 
 
@@ -204,7 +204,7 @@ The consequences are undefined if an attempt is made to *assign* the *stream var
 
 
 
-(format s "Here are a couple~%of test data lines~%")) *→* NIL 
+(format s "Here are a couple&#126;%of test data lines&#126;%")) *→* NIL 
 
 
 
@@ -220,7 +220,7 @@ The consequences are undefined if an attempt is made to *assign* the *stream var
 
 
 
-(format t "~&\*\*\* ~A~%" l))) 
+(format t "&#126;&amp;\*\*\* &#126;A&#126;%" l))) 
 
 
 

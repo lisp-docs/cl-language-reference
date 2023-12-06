@@ -68,7 +68,7 @@ Causes execution to cease and become dormant for approximately the seconds of re
 
 
 
-(>= (- now then) 10)) 
+(&gt;= (- now then) 10)) 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**make-instance** *class* &rest *initargs* &key &allow-other-keys *→ instance* 
+**make-instance** *class* &amp;rest *initargs* &amp;key &amp;allow-other-keys *→ instance* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-**make-instance** (*class* **standard-class**) &rest *initargs* 
+**make-instance** (*class* **standard-class**) &amp;rest *initargs* 
 
 
 
-**make-instance** (*class* **symbol**) &rest *initargs* 
+**make-instance** (*class* **symbol**) &amp;rest *initargs* 
 
 
 

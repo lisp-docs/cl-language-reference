@@ -60,7 +60,7 @@ The macro **setf** can be used with **slot-value** to change the value of a *slo
 
 
 
-*→* #<STANDARD-CLASS FOO 244020371> 
+*→* #\<STANDARD-CLASS FOO 244020371\> 
 
 
 
@@ -68,7 +68,7 @@ The macro **setf** can be used with **slot-value** to change the value of a *slo
 
 
 
-*→* #<FOO 36325624> 
+*→* #\<FOO 36325624\> 
 
 
 
@@ -100,7 +100,7 @@ The macro **setf** can be used with **slot-value** to change the value of a *slo
 
 
 
-*→* #<STANDARD-METHOD FOO-METHOD (FOO) 42720573> 
+*→* #\<STANDARD-METHOD FOO-METHOD (FOO) 42720573\> 
 
 
 

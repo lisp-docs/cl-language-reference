@@ -6,7 +6,7 @@
 
 
 
-**make-condition** *type* &rest *slot-initializations → condition* 
+**make-condition** *type* &amp;rest *slot-initializations → condition* 
 
 
 
@@ -60,7 +60,7 @@ Constructs and returns a *condition* of type *type* using *slot-initializations*
 
 
 
-:format-control "This is your ~:R error." 
+:format-control "This is your &#126;:R error." 
 
 
 

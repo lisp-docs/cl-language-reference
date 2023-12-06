@@ -192,7 +192,7 @@ If the *pathspec designator* is a *file stream* created by opening a *logical pa
 
 
 
-*→* #P"ORANGE-CHOCOLATE:>Gus>test.lisp.newest" 
+*→* #P"ORANGE-CHOCOLATE:&gt;Gus&gt;test.lisp.newest" 
 
 
 

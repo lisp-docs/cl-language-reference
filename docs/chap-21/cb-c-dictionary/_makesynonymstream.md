@@ -52,7 +52,7 @@ b-stream (make-string-input-stream "b-stream"))
 
 
 
-*→* #\<SYNONYM-STREAM for C-STREAM\> 
+*→* #<SYNONYM-STREAM for C-STREAM> 
 
 
 
@@ -95,6 +95,5 @@ Should signal **type-error** if its argument is not a *symbol*.
 
 
 Section 21.1 (Stream Concepts) 
-
 
 

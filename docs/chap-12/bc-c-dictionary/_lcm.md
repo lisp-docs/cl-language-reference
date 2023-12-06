@@ -6,7 +6,7 @@
 
 
 
-**lcm** &rest *integers → least-common-multiple* 
+**lcm** &amp;rest *integers → least-common-multiple* 
 
 
 

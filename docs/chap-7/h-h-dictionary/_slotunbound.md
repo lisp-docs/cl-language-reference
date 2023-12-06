@@ -6,7 +6,7 @@
 
 
 
-**slot-unbound** *class instance slot-name → \&#123;result\&#125;*\* 
+**slot-unbound** *class instance slot-name → \{result\}*\* 
 
 
 

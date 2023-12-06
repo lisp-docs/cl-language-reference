@@ -14,7 +14,7 @@
 
 
 
-**atan** *number1* &optional *number2 → radians* 
+**atan** *number1* &amp;optional *number2 → radians* 
 
 
 
@@ -188,7 +188,7 @@ For **atan**, the signs of *number1* (indicated as *x*) and *number2* (indicated
 
 | :- |
 
-|<p>*y* = 0 *x* > 0 Positive x-axis 0 </p><p>\* *y* = +0 *x* > 0 Positive x-axis +0 </p><p>\* *y* = *−*0 *x* > 0 Positive x-axis *−*0 </p><p>*y* > 0 *x* > 0 Quadrant I 0 < result < *π/*2 *y* > 0 *x* = 0 Positive y-axis *π/*2 </p><p>*y* > 0 *x* < 0 Quadrant II *π/*2 < result < *π y* = 0 *x* < 0 Negative x-axis *π* </p><p>\* *y* = +0 *x* < 0 Negative x-axis +*π* </p><p>\* *y* = *−*0 *x* < 0 Negative x-axis *−π* </p><p>*y* < 0 *x* < 0 Quadrant III *−π* < result < *−π/*2 *y* < 0 *x* = 0 Negative y-axis *−π/*2 </p><p>*y* < 0 *x* > 0 Quadrant IV *−π/*2 < result < 0 *y* = 0 *x* = 0 Origin undefined consequences \* *y* = +0 *x* = +0 Origin +0 </p><p>\* *y* = *−*0 *x* = +0 Origin *−*0 </p><p>\* *y* = +0 *x* = *−*0 Origin +*π* </p><p>\* *y* = *−*0 *x* = *−*0 Origin *−π*</p>|
+|<p>*y* = 0 *x* &gt; 0 Positive x-axis 0 </p><p>\* *y* = +0 *x* &gt; 0 Positive x-axis +0 </p><p>\* *y* = *−*0 *x* &gt; 0 Positive x-axis *−*0 </p><p>*y* &gt; 0 *x* &gt; 0 Quadrant I 0 &lt; result &lt; *π/*2 *y* &gt; 0 *x* = 0 Positive y-axis *π/*2 </p><p>*y* &gt; 0 *x* &lt; 0 Quadrant II *π/*2 &lt; result &lt; *π y* = 0 *x* &lt; 0 Negative x-axis *π* </p><p>\* *y* = +0 *x* &lt; 0 Negative x-axis +*π* </p><p>\* *y* = *−*0 *x* &lt; 0 Negative x-axis *−π* </p><p>*y* &lt; 0 *x* &lt; 0 Quadrant III *−π* &lt; result &lt; *−π/*2 *y* &lt; 0 *x* = 0 Negative y-axis *−π/*2 </p><p>*y* &lt; 0 *x* &gt; 0 Quadrant IV *−π/*2 &lt; result &lt; 0 *y* = 0 *x* = 0 Origin undefined consequences \* *y* = +0 *x* = +0 Origin +0 </p><p>\* *y* = *−*0 *x* = +0 Origin *−*0 </p><p>\* *y* = +0 *x* = *−*0 Origin +*π* </p><p>\* *y* = *−*0 *x* = *−*0 Origin *−π*</p>|
 
 
 

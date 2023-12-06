@@ -6,7 +6,7 @@
 
 
 
-**make-load-form** *object* &optional *environment → creation-form*[*, initialization-form*] 
+**make-load-form** *object* &amp;optional *environment → creation-form*[*, initialization-form*] 
 
 
 
@@ -14,19 +14,19 @@
 
 
 
-**make-load-form** (*object* **standard-object**) &optional *environment* 
+**make-load-form** (*object* **standard-object**) &amp;optional *environment* 
 
 
 
-**make-load-form** (*object* **structure-object**) &optional *environment* 
+**make-load-form** (*object* **structure-object**) &amp;optional *environment* 
 
 
 
-**make-load-form** (*object* **condition**) &optional *environment* 
+**make-load-form** (*object* **condition**) &amp;optional *environment* 
 
 
 
-**make-load-form** (*object* **class**) &optional *environment* 
+**make-load-form** (*object* **class**) &amp;optional *environment* 
 
 
 
@@ -164,7 +164,7 @@ Both *conforming implementations* and *conforming programs* may further *special
 
 
 
-*→* #<STANDARD-CLASS OBJ 250020030> 
+*→* #\<STANDARD-CLASS OBJ 250020030\> 
 
 
 
@@ -188,7 +188,7 @@ Both *conforming implementations* and *conforming programs* may further *special
 
 
 
-*→* #<STANDARD-METHOD SHARED-INITIALIZE (:AFTER) (OBJ T) 26266714> 
+*→* #\<STANDARD-METHOD SHARED-INITIALIZE (:AFTER) (OBJ T) 26266714\> 
 
 
 
@@ -220,11 +220,11 @@ Both *conforming implementations* and *conforming programs* may further *special
 
 
 
-*→* #<STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 26267532> 
+*→* #\<STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 26267532\> 
 
 
 
-(setq obj1 (make-instance ’obj :x 3.0 :y 4.0)) *→* #<OBJ 26274136> 
+(setq obj1 (make-instance ’obj :x 3.0 :y 4.0)) *→* #\<OBJ 26274136\> 
 
 
 
@@ -264,7 +264,7 @@ Another way to write the **make-load-form** *method* in that example is to use *
 
 
 
-*→* #<STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 42755655> 
+*→* #\<STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 42755655\> 
 
 
 
@@ -292,7 +292,7 @@ Another way to write the **make-load-form** *method* in that example is to use *
 
 
 
-*→* (ALLOCATE-INSTANCE ’#<STANDARD-CLASS OBJ 250020030>), 
+*→* (ALLOCATE-INSTANCE ’#\<STANDARD-CLASS OBJ 250020030\>), 
 
 
 
@@ -300,15 +300,15 @@ Another way to write the **make-load-form** *method* in that example is to use *
 
 
 
-(SETF (SLOT-VALUE ’#<OBJ 26274136> ’X) ’3.0) 
+(SETF (SLOT-VALUE ’#\<OBJ 26274136\> ’X) ’3.0) 
 
 
 
-(SETF (SLOT-VALUE ’#<OBJ 26274136> ’Y) ’4.0) 
+(SETF (SLOT-VALUE ’#\<OBJ 26274136\> ’Y) ’4.0) 
 
 
 
-(INITIALIZE-INSTANCE ’#<OBJ 26274136>)) 
+(INITIALIZE-INSTANCE ’#\<OBJ 26274136\>)) 
 
 
 
@@ -324,7 +324,7 @@ In the following example, *instances* of my-frob are “interned” in some way.
 
 
 
-(defmethod make-load-form ((self my-frob) &optional environment) 
+(defmethod make-load-form ((self my-frob) &amp;optional environment) 
 
 
 
@@ -352,7 +352,7 @@ At this point none of the parent *slots* have been filled in. The initialization
 
 
 
-(defmethod make-load-form ((x tree-with-parent) &optional environment) 
+(defmethod make-load-form ((x tree-with-parent) &amp;optional environment) 
 
 
 
@@ -388,7 +388,7 @@ In the following example, the data structure to be dumped has no special propert
 
 
 
-(defmethod make-load-form ((s my-struct) &optional environment) 
+(defmethod make-load-form ((s my-struct) &amp;optional environment) 
 
 
 

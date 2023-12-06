@@ -10,19 +10,19 @@
 
 
 
-(format nil "The answer is ~D." x) *→* "The answer is 5." 
+(format nil "The answer is &#126;D." x) *→* "The answer is 5." 
 
 
 
-(format nil "The answer is ~3D." x) *→* "The answer is 5." 
+(format nil "The answer is &#126;3D." x) *→* "The answer is 5." 
 
 
 
-(format nil "The answer is ~3,’0D." x) *→* "The answer is 005." 
+(format nil "The answer is &#126;3,’0D." x) *→* "The answer is 005." 
 
 
 
-(format nil "The answer is ~:D." (expt 47 x)) 
+(format nil "The answer is &#126;:D." (expt 47 x)) 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-(format nil "Look at the ~A!" y) *→* "Look at the elephant!" 
+(format nil "Look at the &#126;A!" y) *→* "Look at the elephant!" 
 
 
 
@@ -42,19 +42,11 @@
 
 
 
-(format nil "~D item~:P found." n) *→* "3 items found." 
+(format nil "&#126;D item&#126;:P found." n) *→* "3 items found." 
 
 
 
-(format nil "~R dog~:[s are~; is~] here." n (= n 1)) 
-
-
-
-*→* "three dogs are here." 
-
-
-
-(format nil "~R dog~:\*~[s are~; is~:;s are~] here." n) 
+(format nil "&#126;R dog&#126;:[s are&#126;; is&#126;] here." n (= n 1)) 
 
 
 
@@ -62,7 +54,15 @@
 
 
 
-(format nil "Here ~[are~;is~:;are~] ~:\*~R pupp~:@P." n) 
+(format nil "&#126;R dog&#126;:\*&#126;[s are&#126;; is&#126;:;s are&#126;] here." n) 
+
+
+
+*→* "three dogs are here." 
+
+
+
+(format nil "Here &#126;[are&#126;;is&#126;:;are&#126;] &#126;:\*&#126;R pupp&#126;:@P." n) 
 
 
 
@@ -74,7 +74,7 @@
 
 
 
-(format nil "~6,2F|~6,2,1,’\*F|~6,2„’?F|~6F|~,2F|~F" 
+(format nil "&#126;6,2F|&#126;6,2,1,’\*F|&#126;6,2„’?F|&#126;6F|&#126;,2F|&#126;F" 
 
 
 
@@ -110,11 +110,11 @@ x x x x x x)) *→* FOO
 
 
 
-"~9,2,1„’\*E|~10,3,2,2,’?„’$E|~ 
+"&#126;9,2,1„’\*E|&#126;10,3,2,2,’?„’$E|&#126; 
 
 
 
-~9,3,2,-2,’%@E|~9,2E" 
+&#126;9,3,2,-2,’%@E|&#126;9,2E" 
 
 
 
@@ -158,7 +158,7 @@ As an example of the effects of varying the scale factor, the code
 
 
 
-(format t "~%Scale factor ~2D: |~13,6,2,VE|" 
+(format t "&#126;%Scale factor &#126;2D: |&#126;13,6,2,VE|" 
 
 
 
@@ -238,7 +238,7 @@ Scale factor 7: | 3141590.E-06|
 
 
 
-(format nil "~9,2,1„’\*G|~9,3,2,3,’?„’$G|~9,3,2,0,’%G|~9,2G" x x x x)) 
+(format nil "&#126;9,2,1„’\*G|&#126;9,3,2,3,’?„’$G|&#126;9,3,2,0,’%G|&#126;9,2G" x x x x)) 
 
 
 
@@ -246,35 +246,35 @@ Scale factor 7: | 3141590.E-06|
 
 
 
-(format nil "~10\<foo~;bar~\>") *→* "foo bar" 
+(format nil "&#126;10\<foo&#126;;bar&#126;\>") *→* "foo bar" 
 
 
 
-(format nil "~10:\<foo~;bar~\>") *→* " foo bar" 
+(format nil "&#126;10:\<foo&#126;;bar&#126;\>") *→* " foo bar" 
 
 
 
-(format nil "~10\<foobar~\>") *→* " foobar" 
+(format nil "&#126;10\<foobar&#126;\>") *→* " foobar" 
 
 
 
-(format nil "~10:\<foobar~\>") *→* " foobar" 
+(format nil "&#126;10:\<foobar&#126;\>") *→* " foobar" 
 
 
 
-(format nil "~10:@\<foo~;bar~\>") *→* " foo bar " 
+(format nil "&#126;10:@\<foo&#126;;bar&#126;\>") *→* " foo bar " 
 
 
 
-(format nil "~10@\<foobar~\>") *→* "foobar " 
+(format nil "&#126;10@\<foobar&#126;\>") *→* "foobar " 
 
 
 
-(format nil "~10:@\<foobar~\>") *→* " foobar " 
+(format nil "&#126;10:@\<foobar&#126;\>") *→* " foobar " 
 
 
 
-(FORMAT NIL "Written to ~A." #P"foo.bin") 
+(FORMAT NIL "Written to &#126;A." #P"foo.bin") 
 
 
 

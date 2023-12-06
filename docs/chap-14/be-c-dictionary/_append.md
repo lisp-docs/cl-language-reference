@@ -6,7 +6,7 @@
 
 
 
-**append** &rest *lists → result* 
+**append** &amp;rest *lists → result* 
 
 
 

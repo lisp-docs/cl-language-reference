@@ -10,7 +10,7 @@
 
 
 
-**/** *numerator* &rest *denominators*<sup>+</sup> *→ quotient* 
+**/** *numerator* &amp;rest *denominators*<sup>+</sup> *→ quotient* 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**random** *limit* &optional *random-state → random-number* 
+**random** *limit* &amp;optional *random-state → random-number* 
 
 
 
@@ -48,7 +48,7 @@ An approximately uniform choice distribution is used. If *limit* is an *integer*
 
 
 
-(<= 0 (random 1000) 1000) *→ true* 
+(&lt;= 0 (random 1000) 1000) *→ true* 
 
 
 

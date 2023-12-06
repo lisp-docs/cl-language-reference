@@ -6,7 +6,7 @@
 
 
 
-a *list*, the *elements* of which are *implementation-dependent*, but which must contain at least the *symbols* **&allow-other-keys**, **&aux**, **&body**, **&environment**, **&key**, **&optional**, **&rest**, and **&whole**. 
+a *list*, the *elements* of which are *implementation-dependent*, but which must contain at least the *symbols* **&amp;allow-other-keys**, **&amp;aux**, **&amp;body**, **&amp;environment**, **&amp;key**, **&amp;optional**, **&amp;rest**, and **&amp;whole**. 
 
 
 

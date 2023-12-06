@@ -92,7 +92,7 @@ The *type* **simple-condition** represents *conditions* that are signaled by **s
 
 
 
-:format-control "Hi ~S" 
+:format-control "Hi &#126;S" 
 
 
 

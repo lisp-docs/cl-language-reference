@@ -14,7 +14,7 @@
 
 
 
-(dotimes (i 3) (dotimes (j 3) (setf (aref a i j) (format nil "&lt;~D,~D&gt;" i j)))) (print a) 
+(dotimes (i 3) (dotimes (j 3) (setf (aref a i j) (format nil "&lt;&#126;D,&#126;D&gt;" i j)))) (print a) 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**read-sequence** *sequence stream* &key *start end → position* 
+**read-sequence** *sequence stream* &amp;key *start end → position* 
 
 
 

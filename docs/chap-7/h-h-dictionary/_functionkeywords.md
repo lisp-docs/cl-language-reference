@@ -42,7 +42,7 @@ Returns the keyword parameter specifiers for a *method*.
 
 
 
-Two values are returned: a *list* of the explicitly named keywords and a *generalized boolean* that states whether **&allow-other-keys** had been specified in the *method* definition. 
+Two values are returned: a *list* of the explicitly named keywords and a *generalized boolean* that states whether **&amp;allow-other-keys** had been specified in the *method* definition. 
 
 
 
@@ -52,11 +52,11 @@ Two values are returned: a *list* of the explicitly named keywords and a *genera
 
 
 
-(defmethod gf1 ((a integer) &optional (b 2) 
+(defmethod gf1 ((a integer) &amp;optional (b 2) 
 
 
 
-&key (c 3) ((:dee d) 4) e ((eff f))) 
+&amp;key (c 3) ((:dee d) 4) e ((eff f))) 
 
 
 
@@ -104,7 +104,7 @@ Two values are returned: a *list* of the explicitly named keywords and a *genera
 
 
 
-(defmethod gf3 ((a integer) &key b c d &allow-other-keys) 
+(defmethod gf3 ((a integer) &amp;key b c d &amp;allow-other-keys) 
 
 
 

@@ -6,11 +6,11 @@
 
 
 
-**aref** *array* &rest *subscripts → element* 
+**aref** *array* &amp;rest *subscripts → element* 
 
 
 
-**(setf (aref** *array* &rest *subscripts***)** *new-element***)** 
+**(setf (aref** *array* &amp;rest *subscripts***)** *new-element***)** 
 
 
 

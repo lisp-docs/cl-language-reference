@@ -6,7 +6,7 @@
 
 
 
-**upgraded-complex-part-type** *typespec* &optional *environment → upgraded-typespec* 
+**upgraded-complex-part-type** *typespec* &amp;optional *environment → upgraded-typespec* 
 
 
 

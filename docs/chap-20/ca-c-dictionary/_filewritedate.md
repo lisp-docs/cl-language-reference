@@ -44,19 +44,15 @@ Returns a *universal time* representing the time at which the *file* specified b
 
 
 
-(format s "~&Dear Santa,~2%I was good this year. ~ 
+(format s "&#126;&amp;Dear Santa,&#126;2%I was good this year. &#126; 
 
 
 
-Please leave lots of toys.~2%Love, Sue~ 
-
-
+Please leave lots of toys.&#126;2%Love, Sue&#126; 
 
 
 
 
-
- 
 
 
 
@@ -64,7 +60,11 @@ Please leave lots of toys.~2%Love, Sue~
 
 
 
-~2%attachments: milk, cookies~%") 
+ 
+
+
+
+&#126;2%attachments: milk, cookies&#126;%") 
 
 
 

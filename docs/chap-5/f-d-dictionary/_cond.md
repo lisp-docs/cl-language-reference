@@ -6,11 +6,11 @@
 
 
 
-**cond** *\&#123;↓clause\&#125;*\* *→ \&#123;result\&#125;*\* 
+**cond** *\{↓clause\}*\* *→ \{result\}*\* 
 
 
 
-*clause::*=(*test-form \&#123;form\&#125;*\*) 
+*clause::*=(*test-form \{form\}*\*) 
 
 
 

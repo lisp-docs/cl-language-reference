@@ -6,7 +6,7 @@
 
 
 
-**wild-pathname-p** *pathname* &optional *field-key → generalized-boolean* 
+**wild-pathname-p** *pathname* &amp;optional *field-key → generalized-boolean* 
 
 
 
@@ -76,7 +76,7 @@ If *field-key* is not supplied or **nil**, **wild-pathname-p** returns true if *
 
 
 
-(wild-pathname-p (pathname "s:>foo>\*\*>")) *→ true* ;Lispm 
+(wild-pathname-p (pathname "s:&gt;foo&gt;\*\*&gt;")) *→ true* ;Lispm 
 
 
 

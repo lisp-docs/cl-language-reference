@@ -6,7 +6,7 @@
 
 
 
-**translate-pathname** *source from-wildcard to-wildcard* &key 
+**translate-pathname** *source from-wildcard to-wildcard* &amp;key 
 
 
 
@@ -132,7 +132,7 @@ There are no specified keyword arguments for **translate-pathname**, but impleme
 
 
 
-(unless rule (error "No translation rule for ~A" pathname)) 
+(unless rule (error "No translation rule for &#126;A" pathname)) 
 
 
 

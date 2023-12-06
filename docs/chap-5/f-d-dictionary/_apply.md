@@ -6,7 +6,7 @@
 
 
 
-**apply** *function* &rest *args*<sup>+</sup> *→ \&#123;result\&#125;*\* 
+**apply** *function* &amp;rest *args*<sup>+</sup> *→ \{result\}*\* 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-When the *function* receives its arguments via **&rest**, it is permissible (but not required) for the *implementation* to *bind* the *rest parameter* to an *object* that shares structure with the last argument to **apply**. Because a *function* can neither detect whether it was called via **apply** nor whether (if so) the last argument to **apply** was a *constant*, *conforming programs* must neither rely on the *list* structure of a *rest list* to be freshly consed, nor modify that *list* structure. 
+When the *function* receives its arguments via **&amp;rest**, it is permissible (but not required) for the *implementation* to *bind* the *rest parameter* to an *object* that shares structure with the last argument to **apply**. Because a *function* can neither detect whether it was called via **apply** nor whether (if so) the last argument to **apply** was a *constant*, *conforming programs* must neither rely on the *list* structure of a *rest list* to be freshly consed, nor modify that *list* structure. 
 
 
 
@@ -76,7 +76,7 @@ When the *function* receives its arguments via **&rest**, it is permissible (but
 
 
 
-(defun strange-test (&rest x) (eq x \*some-list\*)) 
+(defun strange-test (&amp;rest x) (eq x \*some-list\*)) 
 
 
 
@@ -84,7 +84,7 @@ When the *function* receives its arguments via **&rest**, it is permissible (but
 
 
 
-(defun bad-boy (&rest x) (rplacd x ’y)) 
+(defun bad-boy (&amp;rest x) (rplacd x ’y)) 
 
 
 
@@ -96,7 +96,7 @@ When the *function* receives its arguments via **&rest**, it is permissible (but
 
 
 
-(defun foo (size &rest keys &key double &allow-other-keys) 
+(defun foo (size &amp;rest keys &amp;key double &amp;allow-other-keys) 
 
 
 

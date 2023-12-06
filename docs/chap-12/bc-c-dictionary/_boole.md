@@ -106,11 +106,11 @@ The operation to be performed and the return value are determined by *op*.
 
 
 
-(format t "~&Results of (BOOLE <op> #b0011 #b0101) ...~ 
+(format t "&#126;&amp;Results of (BOOLE <op> #b0011 #b0101) ...&#126; 
 
 
 
-~%–-Op–––-Decimal––-Binary––Bits–-~%") 
+&#126;%–-Op–––-Decimal––-Binary––Bits–-&#126;%") 
 
 
 
@@ -150,7 +150,7 @@ boole-orc1 boole-orc2 boole-set boole-xor))
 
 
 
-(format t "~& ~A~13T~3,’ D~23T~:\*~5,’ B~31T ...~4,’0B~%" 
+(format t "&#126;&amp; &#126;A&#126;13T&#126;3,’ D&#126;23T&#126;:\*&#126;5,’ B&#126;31T ...&#126;4,’0B&#126;%" 
 
 
 
@@ -272,7 +272,7 @@ In general,
 
 
 
-;; (logand (boole (elt boole-n-vector n) #b0101 #b0011) #b1111) => n 
+;; (logand (boole (elt boole-n-vector n) #b0101 #b0011) #b1111) =&gt; n 
 
 
 
@@ -320,7 +320,7 @@ boole-c2 boole-orc2 boole-nand boole-set))
 
 
 
-(defun boole-n (n integer &rest more-integers) 
+(defun boole-n (n integer &amp;rest more-integers) 
 
 
 

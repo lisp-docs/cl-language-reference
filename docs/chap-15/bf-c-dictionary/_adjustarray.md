@@ -6,7 +6,7 @@
 
 
 
-**adjust-array** *array new-dimensions* &key *element-type* 
+**adjust-array** *array new-dimensions* &amp;key *element-type* 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**upgraded-array-element-type** *typespec* &optional *environment → upgraded-typespec* 
+**upgraded-array-element-type** *typespec* &amp;optional *environment → upgraded-typespec* 
 
 
 
@@ -66,7 +66,7 @@ Except for storage allocation consequences and dealing correctly with the option
 
 
 
-(defun upgraded-array-element-type (type &optional environment) 
+(defun upgraded-array-element-type (type &amp;optional environment) 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**make-hash-table** &key *test size rehash-size rehash-threshold → hash-table* 
+**make-hash-table** &amp;key *test size rehash-size rehash-threshold → hash-table* 
 
 
 

@@ -6,19 +6,19 @@
 
 
 
-**every** *predicate* &rest *sequences*<sup>+</sup> *→ generalized-boolean* 
+**every** *predicate* &amp;rest *sequences*<sup>+</sup> *→ generalized-boolean* 
 
 
 
-**some** *predicate* &rest *sequences*<sup>+</sup> *→ result* 
+**some** *predicate* &amp;rest *sequences*<sup>+</sup> *→ result* 
 
 
 
-**notevery** *predicate* &rest *sequences*<sup>+</sup> *→ generalized-boolean* 
+**notevery** *predicate* &amp;rest *sequences*<sup>+</sup> *→ generalized-boolean* 
 
 
 
-**notany** *predicate* &rest *sequences*<sup>+</sup> *→ generalized-boolean* 
+**notany** *predicate* &amp;rest *sequences*<sup>+</sup> *→ generalized-boolean* 
 
 
 
@@ -92,11 +92,11 @@ Data and Control
 
 
 
-(notevery #’< ’(1 2 3 4) ’(5 6 7 8) ’(9 10 11 12)) *→ false* 
+(notevery #’&lt; ’(1 2 3 4) ’(5 6 7 8) ’(9 10 11 12)) *→ false* 
 
 
 
-(notany #’> ’(1 2 3 4) ’(5 6 7 8) ’(9 10 11 12)) *→ true* 
+(notany #’&gt; ’(1 2 3 4) ’(5 6 7 8) ’(9 10 11 12)) *→ true* 
 
 
 
@@ -126,11 +126,11 @@ Other exceptional situations are possible, depending on the nature of the *predi
 
 
 
-(notany *predicate \&#123;sequence\&#125;*\*) *≡* (not (some *predicate \&#123;sequence\&#125;*\*)) 
+(notany *predicate \{sequence\}*\*) *≡* (not (some *predicate \{sequence\}*\*)) 
 
 
 
-(notevery *predicate \&#123;sequence\&#125;*\*) *≡* (not (every *predicate \&#123;sequence\&#125;*\*)) 
+(notevery *predicate \{sequence\}*\*) *≡* (not (every *predicate \{sequence\}*\*)) 
 
 
 

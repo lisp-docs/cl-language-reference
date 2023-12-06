@@ -6,7 +6,7 @@
 
 
 
-**make-array** *dimensions* &key *element-type* 
+**make-array** *dimensions* &amp;key *element-type* 
 
 
 

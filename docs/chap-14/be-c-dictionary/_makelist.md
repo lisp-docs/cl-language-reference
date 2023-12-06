@@ -6,7 +6,7 @@
 
 
 
-**make-list** *size* &key *initial-element → list* 
+**make-list** *size* &amp;key *initial-element → list* 
 
 
 

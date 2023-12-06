@@ -86,7 +86,7 @@ Let s be the size specified by *bytespec*; then the low s bits of *newbyte* appe
 
 
 
-*≡* (if (and (>= *j p*) (< *j* (+ *p s*))) 
+*≡* (if (and (&gt;= *j p*) (&lt; *j* (+ *p s*))) 
 
 
 
@@ -101,6 +101,26 @@ Let s be the size specified by *bytespec*; then the low s bits of *newbyte* appe
 In general, 
 
 
+
+
+
+ 
+
+
+
+ 
+
+
+
+(dpb *x* (byte 0 *y*) *z*) *! z* 
+
+
+
+for all valid values of *x*, *y*, and *z*. 
+
+
+
+Historically, the name “dpb” comes from a DEC PDP-10 assembly language instruction meaning “deposit byte.” 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**tree-equal** *tree-1 tree-2* &key *test test-not → generalized-boolean* 
+**tree-equal** *tree-1 tree-2* &amp;key *test test-not → generalized-boolean* 
 
 
 

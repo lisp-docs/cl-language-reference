@@ -6,7 +6,7 @@
 
 
 
-**typep** *object type-specifier* &optional *environment → generalized-boolean* 
+**typep** *object type-specifier* &amp;optional *environment → generalized-boolean* 
 
 
 

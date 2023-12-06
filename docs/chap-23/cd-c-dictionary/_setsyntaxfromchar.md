@@ -6,7 +6,7 @@
 
 
 
-**set-syntax-from-char** *to-char from-char* &optional *to-readtable from-readtable →* **t** 
+**set-syntax-from-char** *to-char from-char* &amp;optional *to-readtable from-readtable →* **t** 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-A macro definition from a character such as " can be copied to another character; the standard definition for " looks for another character that is the same as the character that invoked it. The definition of ( can not be meaningfully copied to \&#123;, on the other hand. The result is that *lists* are of the form \&#123;a b c), not \&#123;a b c\&#125;, because the definition always looks for a closing parenthesis, not a closing brace. 
+A macro definition from a character such as " can be copied to another character; the standard definition for " looks for another character that is the same as the character that invoked it. The definition of ( can not be meaningfully copied to \{, on the other hand. The result is that *lists* are of the form \{a b c), not \{a b c\}, because the definition always looks for a closing parenthesis, not a closing brace. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**read-delimited-list** *char* &optional *input-stream recursive-p → list* 
+**read-delimited-list** *char* &amp;optional *input-stream recursive-p → list* 
 
 
 
@@ -80,19 +80,19 @@ The consequences are undefined if *char* has a *syntax type* of *whitespace*<sub
 
 
 
-Suppose you wanted #\&#123;*a b c . . . z*\&#125; to read as a list of all pairs of the elements *a*, *b*, *c*, *. . .*, *z*, for example. 
+Suppose you wanted #\{*a b c . . . z*\} to read as a list of all pairs of the elements *a*, *b*, *c*, *. . .*, *z*, for example. 
 
 
 
-#\&#123;p q z a\&#125; reads as ((p q) (p z) (p a) (q z) (q a) (z a)) 
+#\{p q z a\} reads as ((p q) (p z) (p a) (q z) (q a) (z a)) 
 
 
 
-This can be done by specifying a macro-character definition for #\&#123; that does two things: reads in all the items up to the \&#125;, and constructs the pairs. **read-delimited-list** performs the first task. 
+This can be done by specifying a macro-character definition for #\{ that does two things: reads in all the items up to the \}, and constructs the pairs. **read-delimited-list** performs the first task. 
 
 
 
-(defun |#\&#123;-reader| (stream char arg) 
+(defun |#\{-reader| (stream char arg) 
 
 
 
@@ -108,15 +108,15 @@ This can be done by specifying a macro-character definition for #\&#123; that do
 
 
 
-(read-delimited-list #\\&#125; stream t))) *→* |#\&#123;-reader| 
+(read-delimited-list #\\} stream t))) *→* |#\{-reader| 
 
 
 
-(set-dispatch-macro-character #\# #\\&#123; #’|#\&#123;-reader|) *→* T 
+(set-dispatch-macro-character #\# #\\{ #’|#\{-reader|) *→* T 
 
 
 
-(set-macro-character #\\&#125; (get-macro-character #\) **nil**)) 
+(set-macro-character #\\} (get-macro-character #\) **nil**)) 
 
 
 
@@ -124,27 +124,23 @@ Note that *true* is supplied for the *recursive-p* argument.
 
 
 
-It is necessary here to give a definition to the character \&#125; as well to prevent it from being a constituent. If the line 
+It is necessary here to give a definition to the character \} as well to prevent it from being a constituent. If the line 
 
 
 
-(set-macro-character #\\&#125; (get-macro-character #\) **nil**)) 
+(set-macro-character #\\} (get-macro-character #\) **nil**)) 
 
 
 
-shown above were not included, then the \&#125; in 
+shown above were not included, then the \} in 
 
 
 
-#\&#123; p q z a\&#125; 
-
-
+#\{ p q z a\} 
 
 
 
 
-
- 
 
 
 
@@ -152,11 +148,15 @@ shown above were not included, then the \&#125; in
 
 
 
-would be considered a constituent character, part of the symbol named a\&#125;. This could be corrected by putting a space before the \&#125;, but it is better to call **set-macro-character**. 
+ 
 
 
 
-Giving \&#125; the same definition as the standard definition of the character ) has the twin benefit of making it terminate tokens for use with **read-delimited-list** and also making it invalid for use in any other context. Attempting to read a stray \&#125; will signal an error. 
+would be considered a constituent character, part of the symbol named a\}. This could be corrected by putting a space before the \}, but it is better to call **set-macro-character**. 
+
+
+
+Giving \} the same definition as the standard definition of the character ) has the twin benefit of making it terminate tokens for use with **read-delimited-list** and also making it invalid for use in any other context. Attempting to read a stray \} will signal an error. 
 
 
 

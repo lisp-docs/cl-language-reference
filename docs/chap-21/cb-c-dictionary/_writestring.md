@@ -6,11 +6,11 @@
 
 
 
-**write-string** *string* &optional *output-stream* &key *start end → string* 
+**write-string** *string* &amp;optional *output-stream* &amp;key *start end → string* 
 
 
 
-**write-line** *string* &optional *output-stream* &key *start end → string* 
+**write-line** *string* &amp;optional *output-stream* &amp;key *start end → string* 
 
 
 

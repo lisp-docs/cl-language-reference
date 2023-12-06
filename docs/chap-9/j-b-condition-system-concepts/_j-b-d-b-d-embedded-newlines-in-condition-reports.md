@@ -30,7 +30,7 @@ be added to each subsequent line of the output, so that the left edge of the mes
 
 
 
-(error "This is an error message.~%It has two lines.")) 
+(error "This is an error message.&#126;%It has two lines.")) 
 
 
 

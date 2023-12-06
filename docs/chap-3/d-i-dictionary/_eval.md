@@ -6,7 +6,7 @@
 
 
 
-**eval** *form → \&#123;result\&#125;*\* 
+**eval** *form → \{result\}*\* 
 
 
 

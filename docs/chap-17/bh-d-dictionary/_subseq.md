@@ -6,11 +6,11 @@
 
 
 
-**subseq** *sequence start* &optional *end → subsequence* 
+**subseq** *sequence start* &amp;optional *end → subsequence* 
 
 
 
-**(setf (subseq** *sequence start* &optional *end***)** *new-subsequence***)** 
+**(setf (subseq** *sequence start* &amp;optional *end***)** *new-subsequence***)** 
 
 
 

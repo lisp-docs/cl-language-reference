@@ -6,11 +6,11 @@
 
 
 
-**destructuring-bind** *lambda-list expression \&#123;declaration\&#125;*\* *\&#123;form\&#125;*\* 
+**destructuring-bind** *lambda-list expression \{declaration\}*\* *\{form\}*\* 
 
 
 
-*→ \&#123;result\&#125;*\* 
+*→ \{result\}*\* 
 
 
 
@@ -56,7 +56,7 @@ The *lambda-list* supports destructuring as described in Section 3.4.5 (Destruct
 
 
 
-(destructuring-bind ((a &optional (b ’bee)) one two three) 
+(destructuring-bind ((a &amp;optional (b ’bee)) one two three) 
 
 
 
@@ -106,11 +106,11 @@ If the result of evaluating the *expression* does not match the destructuring pa
 
 
 
-**let** (*\&#123;var |* (*var* [*init-form*])*\&#125;*\*) *\&#123;declaration\&#125;*\* *\&#123;form\&#125;*\* *→ \&#123;result\&#125;*\* 
+**let** (*\{var |* (*var* [*init-form*])*\}*\*) *\{declaration\}*\* *\{form\}*\* *→ \{result\}*\* 
 
 
 
-**let\*** (*\&#123;var |* (*var* [*init-form*])*\&#125;*\*) *\&#123;declaration\&#125;*\* *\&#123;form\&#125;*\* *→ \&#123;result\&#125;*\* 
+**let\*** (*\{var |* (*var* [*init-form*])*\}*\*) *\{declaration\}*\* *\{form\}*\* *→ \{result\}*\* 
 
 
 
@@ -304,7 +304,7 @@ The special form **let** has the property that the *scope* of the name binding d
 
 
 
-(format nil "~S ~S ~S" a b (dummy-function))) *→* "INSIDE TOP TOP" 
+(format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) *→* "INSIDE TOP TOP" 
 
 
 
@@ -312,7 +312,7 @@ The special form **let** has the property that the *scope* of the name binding d
 
 
 
-(format nil "~S ~S ~S" a b (dummy-function))) *→* "INSIDE INSIDE TOP" 
+(format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) *→* "INSIDE INSIDE TOP" 
 
 
 
@@ -324,7 +324,7 @@ The special form **let** has the property that the *scope* of the name binding d
 
 
 
-(format nil "~S ~S ~S" a b (dummy-function))) *→* "INSIDE TOP INSIDE" 
+(format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) *→* "INSIDE TOP INSIDE" 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**reinitialize-instance** *instance* &rest *initargs* &key &allow-other-keys *→ instance* 
+**reinitialize-instance** *instance* &amp;rest *initargs* &amp;key &amp;allow-other-keys *→ instance* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-**reinitialize-instance** (*instance* **standard-object**) &rest *initargs* 
+**reinitialize-instance** (*instance* **standard-object**) &amp;rest *initargs* 
 
 
 

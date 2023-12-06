@@ -6,7 +6,7 @@
 
 
 
-**replace** *sequence-1 sequence-2* &key *start1 end1 start2 end2 → sequence-1* 
+**replace** *sequence-1 sequence-2* &amp;key *start1 end1 start2 end2 → sequence-1* 
 
 
 
@@ -114,7 +114,7 @@ The *sequence-1* is modified.
 
 
 
-**substitute** *newitem olditem sequence* &key *from-end test* 
+**substitute** *newitem olditem sequence* &amp;key *from-end test* 
 
 
 
@@ -130,7 +130,7 @@ The *sequence-1* is modified.
 
 
 
-**substitute-if** *newitem predicate sequence* &key *from-end start end count key* 
+**substitute-if** *newitem predicate sequence* &amp;key *from-end start end count key* 
 
 
 
@@ -138,7 +138,7 @@ The *sequence-1* is modified.
 
 
 
-**substitute-if-not** *newitem predicate sequence* &key *from-end start end count key* 
+**substitute-if-not** *newitem predicate sequence* &amp;key *from-end start end count key* 
 
 
 
@@ -146,7 +146,7 @@ The *sequence-1* is modified.
 
 
 
-**nsubstitute** *newitem olditem sequence* &key *from-end test test-not start end count key → sequence* 
+**nsubstitute** *newitem olditem sequence* &amp;key *from-end test test-not start end count key → sequence* 
 
 
 
@@ -166,7 +166,7 @@ The *sequence-1* is modified.
 
 
 
-**nsubstitute-if** *newitem predicate sequence* &key *from-end start end count key* 
+**nsubstitute-if** *newitem predicate sequence* &amp;key *from-end start end count key* 
 
 
 
@@ -174,7 +174,7 @@ The *sequence-1* is modified.
 
 
 
-**nsubstitute-if-not** *newitem predicate sequence* &key *from-end start end count key* 
+**nsubstitute-if-not** *newitem predicate sequence* &amp;key *from-end start end count key* 
 
 
 
@@ -304,7 +304,7 @@ The result of all these functions is a *sequence* of the same *type* as *sequenc
 
 
 
-(substitute 9 3 ’(1 2 4 1 3 4 5) :test #’>) *→* (9 9 4 9 3 4 5) 
+(substitute 9 3 ’(1 2 4 1 3 4 5) :test #’&gt;) *→* (9 9 4 9 3 4 5) 
 
 
 

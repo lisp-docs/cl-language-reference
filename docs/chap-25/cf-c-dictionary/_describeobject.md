@@ -92,15 +92,15 @@ In some implementations the *stream* argument passed to a **describe-object** me
 
 
 
-(format stream "~&~S is a spaceship of type ~S,~ 
+(format stream "&#126;&amp;&#126;S is a spaceship of type &#126;S,&#126; 
 
 
 
-~%with ~A at the helm ~ 
+&#126;%with &#126;A at the helm &#126; 
 
 
 
-and with serial number ~D.~%" 
+and with serial number &#126;D.&#126;%" 
 
 
 

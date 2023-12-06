@@ -22,7 +22,7 @@ Figure 22–5 identifies a set of *format directives* which serve as an alternat
 
 
 
-|<p>\~I \~W \~&lt;...\~:&gt; </p><p>\~:T \~/.../ \~</p>|
+|<p>&#126;I &#126;W &#126;&lt;...&#126;:&gt; </p><p>&#126;:T &#126;/.../ &#126;</p>|
 
 | :- |
 

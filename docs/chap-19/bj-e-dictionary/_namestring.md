@@ -22,7 +22,7 @@
 
 
 
-**enough-namestring** *pathname* &optional *defaults → namestring* 
+**enough-namestring** *pathname* &amp;optional *defaults → namestring* 
 
 
 

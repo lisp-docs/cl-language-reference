@@ -6,7 +6,7 @@
 
 
 
-**describe** *object* &optional *stream → hno valuesi* 
+**describe** *object* &amp;optional *stream → hno valuesi* 
 
 
 

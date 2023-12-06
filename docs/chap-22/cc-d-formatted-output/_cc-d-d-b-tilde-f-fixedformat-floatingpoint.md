@@ -6,11 +6,11 @@ The next *arg* is printed as a *float*.
 
 
 
-The full form is ~*w*,*d*,*k*,*overflowchar*,*padchar*F. The parameter *w* is the width of the field to be printed; *d* is the number of digits to print after the decimal point; *k* is a scale factor that defaults to zero. 
+The full form is &#126;*w*,*d*,*k*,*overflowchar*,*padchar*F. The parameter *w* is the width of the field to be printed; *d* is the number of digits to print after the decimal point; *k* is a scale factor that defaults to zero. 
 
 
 
-Exactly <i>w</i> characters will be output. First, leading copies of the character <i>padchar</i> (which defaults to a space) are printed, if necessary, to pad the field on the left. If the <i>arg</i> is negative, then a minus sign is printed; if the <i>arg</i> is not negative, then a plus sign is printed if and only if the @ modifier was supplied. Then a sequence of digits, containing a single embedded decimal point, is printed; this represents the magnitude of the value of <i>arg</i> times 10<i><sup>k</sup></i>, rounded to <i>d</i> fractional digits. When rounding up and rounding down would produce printed values equidistant from the scaled value of <i>arg</i>, then the implementation is free to use either one. For example, printing the argument 6.375 using the format ~4,2F may correctly produce either 6.37 or 6.38. Leading zeros are not permitted, except that a single zero digit is output before the decimal point if the printed value is less than one, and this single zero digit is not output at all if <i>w</i>=<i>d</i>+1. 
+Exactly <i>w</i> characters will be output. First, leading copies of the character <i>padchar</i> (which defaults to a space) are printed, if necessary, to pad the field on the left. If the <i>arg</i> is negative, then a minus sign is printed; if the <i>arg</i> is not negative, then a plus sign is printed if and only if the @ modifier was supplied. Then a sequence of digits, containing a single embedded decimal point, is printed; this represents the magnitude of the value of <i>arg</i> times 10<i><sup>k</sup></i>, rounded to <i>d</i> fractional digits. When rounding up and rounding down would produce printed values equidistant from the scaled value of <i>arg</i>, then the implementation is free to use either one. For example, printing the argument 6.375 using the format &#126;4,2F may correctly produce either 6.37 or 6.38. Leading zeros are not permitted, except that a single zero digit is output before the decimal point if the printed value is less than one, and this single zero digit is not output at all if <i>w</i>=<i>d</i>+1. 
 
 
 
@@ -18,7 +18,7 @@ If it is impossible to print the value in the required format in a field of widt
 
 
 
-If the *w* parameter is omitted, then the field is of variable width. In effect, a value is chosen for *w* in such a way that no leading pad characters need to be printed and exactly *d* characters will follow the decimal point. For example, the directive ~,2F will print exactly two digits after the decimal point and as many as necessary before the decimal point. 
+If the *w* parameter is omitted, then the field is of variable width. In effect, a value is chosen for *w* in such a way that no leading pad characters need to be printed and exactly *d* characters will follow the decimal point. For example, the directive &#126;,2F will print exactly two digits after the decimal point and as many as necessary before the decimal point. 
 
 
 
@@ -46,7 +46,7 @@ If both <i>w</i> and <i>d</i> are omitted, then the effect is to print the value
 
 
 
-If *w* is omitted, then if the magnitude of *arg* is so large (or, if *d* is also omitted, so small) that more than 100 digits would have to be printed, then an implementation is free, at its discretion, to print the number using exponential notation instead, as if by the directive ~E (with all parameters to ~E defaulted, not taking their values from the ~F directive). 
+If *w* is omitted, then if the magnitude of *arg* is so large (or, if *d* is also omitted, so small) that more than 100 digits would have to be printed, then an implementation is free, at its discretion, to print the number using exponential notation instead, as if by the directive &#126;E (with all parameters to &#126;E defaulted, not taking their values from the &#126;F directive). 
 
 
 
@@ -54,11 +54,11 @@ If *arg* is a *rational* number, then it is coerced to be a *single float* and t
 
 
 
-If *arg* is a *complex* number or some non-numeric *object*, then it is printed using the format directive ~*w*D, thereby printing it in decimal radix and a minimum field width of *w*. 
+If *arg* is a *complex* number or some non-numeric *object*, then it is printed using the format directive &#126;*w*D, thereby printing it in decimal radix and a minimum field width of *w*. 
 
 
 
-~F binds **\*print-escape\*** to *false* and **\*print-readably\*** to *false*. 
+&#126;F binds **\*print-escape\*** to *false* and **\*print-readably\*** to *false*. 
 
 
 

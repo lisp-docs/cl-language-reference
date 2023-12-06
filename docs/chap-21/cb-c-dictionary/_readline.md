@@ -6,7 +6,7 @@
 
 
 
-**read-line** &optional *input-stream eof-error-p eof-value recursive-p* 
+**read-line** &amp;optional *input-stream eof-error-p eof-value recursive-p* 
 
 
 

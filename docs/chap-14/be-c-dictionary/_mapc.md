@@ -6,23 +6,23 @@
 
 
 
-**mapc** *function* &rest *lists*<sup>+</sup> *→ list-1* 
+**mapc** *function* &amp;rest *lists*<sup>+</sup> *→ list-1* 
 
 
 
-**mapcar** *function* &rest *lists*<sup>+</sup> *→ result-list* 
+**mapcar** *function* &amp;rest *lists*<sup>+</sup> *→ result-list* 
 
 
 
-**mapcan** *function* &rest *lists*<sup>+</sup> *→ concatenated-results* 
+**mapcan** *function* &amp;rest *lists*<sup>+</sup> *→ concatenated-results* 
 
 
 
-**mapl** *function* &rest *lists*<sup>+</sup> *→ list-1* 
+**mapl** *function* &amp;rest *lists*<sup>+</sup> *→ list-1* 
 
 
 
-**maplist** *function* &rest *lists*<sup>+</sup> *→ result-list* 
+**maplist** *function* &amp;rest *lists*<sup>+</sup> *→ result-list* 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-**mapcon** *function* &rest *lists*<sup>+</sup> *→ concatenated-results* 
+**mapcon** *function* &amp;rest *lists*<sup>+</sup> *→ concatenated-results* 
 
 
 
@@ -172,7 +172,7 @@ and similarly for the relationship between **mapcan** and **mapcar**.
 
 
 
-(mapc #’(lambda (&rest x) (setq dummy (append dummy x))) 
+(mapc #’(lambda (&amp;rest x) (setq dummy (append dummy x))) 
 
 
 

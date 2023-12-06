@@ -6,7 +6,7 @@
 
 
 
-**define-condition** *name* (*\&#123;parent-type\&#125;*\*) (*\&#123;↓slot-spec\&#125;*\*) *\&#123;option\&#125;*\* 
+**define-condition** *name* (*\{parent-type\}*\*) (*\{↓slot-spec\}*\*) *\{option\}*\* 
 
 
 
@@ -18,31 +18,31 @@
 
 
 
-*slot-option::*=[[ *\&#123;*:reader *symbol\&#125;*\* *|* 
+*slot-option::*=[[ *\{*:reader *symbol\}*\* *|* 
 
 
 
-*\&#123;*:writer *↓function-name\&#125;*\* *|* 
+*\{*:writer *↓function-name\}*\* *|* 
 
 
 
-*\&#123;*:accessor *symbol\&#125;*\* *|* 
+*\{*:accessor *symbol\}*\* *|* 
 
 
 
-*\&#123;*:allocation *↓allocation-type\&#125; |* 
+*\{*:allocation *↓allocation-type\} |* 
 
 
 
-*\&#123;*:initarg *symbol\&#125;*\* *|* 
+*\{*:initarg *symbol\}*\* *|* 
 
 
 
-*\&#123;*:initform *form\&#125; |* 
+*\{*:initform *form\} |* 
 
 
 
-*\&#123;*:type *type-specifier\&#125;* ]] 
+*\{*:type *type-specifier\}* ]] 
 
 
 
@@ -74,7 +74,7 @@
 
 
 
-*function-name::*=*\&#123;symbol |* (setf *symbol*)*\&#125;* 
+*function-name::*=*\{symbol |* (setf *symbol*)*\}* 
 
 
 
@@ -388,7 +388,7 @@ The following form defines a condition of *type* peg/hole-mismatch which inherit
 
 
 
-(format stream "A ~A peg cannot go in a ~A hole." 
+(format stream "A &#126;A peg cannot go in a &#126;A hole." 
 
 
 
@@ -428,7 +428,7 @@ The following form defines a *condition type* named machine-error which inherits
 
 
 
-(format stream "There is a problem with ~A." 
+(format stream "There is a problem with &#126;A." 
 
 
 
@@ -448,7 +448,7 @@ Building on this definition, a new error condition can be defined which is a sub
 
 
 
-(format stream "The machine ~A is not available." 
+(format stream "The machine &#126;A is not available." 
 
 
 
@@ -536,7 +536,7 @@ Note that since no :report clause was given, the information inherited from mach
 
 
 
-(format stream "~A ate too much ~A ice-cream" 
+(format stream "&#126;A ate too much &#126;A ice-cream" 
 
 
 
@@ -572,7 +572,7 @@ Note that since no :report clause was given, the information inherited from mach
 
 
 
-(format t "~A" \*) 
+(format t "&#126;A" \*) 
 
 
 

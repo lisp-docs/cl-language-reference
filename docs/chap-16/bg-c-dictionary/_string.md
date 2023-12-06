@@ -114,27 +114,27 @@ In the case where a conversion is defined neither by this specification nor by t
 
 
 
-**string-upcase** *string* &key *start end → cased-string* 
+**string-upcase** *string* &amp;key *start end → cased-string* 
 
 
 
-**string-downcase** *string* &key *start end → cased-string* 
+**string-downcase** *string* &amp;key *start end → cased-string* 
 
 
 
-**string-capitalize** *string* &key *start end → cased-string* 
+**string-capitalize** *string* &amp;key *start end → cased-string* 
 
 
 
-**nstring-upcase** *string* &key *start end → string* 
+**nstring-upcase** *string* &amp;key *start end → string* 
 
 
 
-**nstring-downcase** *string* &key *start end → string* 
+**nstring-downcase** *string* &amp;key *start end → string* 
 
 
 
-**nstring-capitalize** *string* &key *start end → string* 
+**nstring-capitalize** *string* &amp;key *start end → string* 
 
 
 

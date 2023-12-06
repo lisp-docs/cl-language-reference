@@ -10,15 +10,15 @@ It is recommended that a *report message* not be followed by a trailing *freshli
 
 
 
-(error "This is a message.~%") ; Not recommended 
+(error "This is a message.&#126;%") ; Not recommended 
 
 
 
-(error "~&amp;This is a message.") ; Not recommended 
+(error "&#126;&amp;This is a message.") ; Not recommended 
 
 
 
-(error "~&amp;This is a message.~%") ; Not recommended 
+(error "&#126;&amp;This is a message.&#126;%") ; Not recommended 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**use-package** *packages-to-use* &optional *package →* **t** 
+**use-package** *packages-to-use* &amp;optional *package →* **t** 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**lambda** *lambda-list* [[ *\&#123;declaration\&#125;*\* *| documentation* ]] *\&#123;form\&#125;*\* *→ function* 
+**lambda** *lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* *→ function* 
 
 
 
@@ -46,15 +46,15 @@ Provides a shorthand notation for a **function** *special form* involving a *lam
 
 
 
-(lambda *lambda-list* [[ *\&#123;declaration\&#125;*\* *| documentation* ]] *\&#123;form\&#125;*\*) 
+(lambda *lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\*) 
 
 
 
-*≡* (function (lambda *lambda-list* [[ *\&#123;declaration\&#125;*\* *| documentation* ]] *\&#123;form\&#125;*\*)) 
+*≡* (function (lambda *lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\*)) 
 
 
 
-*≡* #’(lambda *lambda-list* [[ *\&#123;declaration\&#125;*\* *| documentation* ]] *\&#123;form\&#125;*\*) 
+*≡* #’(lambda *lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\*) 
 
 
 
@@ -86,7 +86,7 @@ This macro could be implemented by:
 
 
 
-(defmacro lambda (&whole form &rest bvl-decls-and-body) 
+(defmacro lambda (&amp;whole form &amp;rest bvl-decls-and-body) 
 
 
 

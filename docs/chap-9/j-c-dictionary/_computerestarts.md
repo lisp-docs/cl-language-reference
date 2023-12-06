@@ -6,7 +6,7 @@
 
 
 
-**compute-restarts** &optional *condition → restarts* 
+**compute-restarts** &amp;optional *condition → restarts* 
 
 
 
@@ -72,7 +72,7 @@ Implementations are permitted, but not required, to return *distinct lists* from
 
 
 
-(format t "~&~D: ~A~%" i (car r))) 
+(format t "&#126;&amp;&#126;D: &#126;A&#126;%" i (car r))) 
 
 
 
@@ -80,7 +80,7 @@ Implementations are permitted, but not required, to return *distinct lists* from
 
 
 
-(loop (when (and (typep n ’integer) (>= n 0) (< n k)) 
+(loop (when (and (typep n ’integer) (&gt;= n 0) (&lt; n k)) 
 
 
 
@@ -88,7 +88,7 @@ Implementations are permitted, but not required, to return *distinct lists* from
 
 
 
-(format t "~&Option: ") 
+(format t "&#126;&amp;Option: ") 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**ignore-errors** *\&#123;form\&#125;*\* *→ \&#123;result\&#125;*\* 
+**ignore-errors** *\{form\}*\* *→ \{result\}*\* 
 
 
 
@@ -64,7 +64,7 @@ If a *normal return* from the *forms* occurs, any *values* returned are returned
 
 
 
-(unless win (format t "~&Init file failed to load.~%")) 
+(unless win (format t "&#126;&amp;Init file failed to load.&#126;%")) 
 
 
 

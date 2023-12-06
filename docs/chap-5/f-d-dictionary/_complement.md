@@ -66,7 +66,7 @@ Returns a *function* that takes the same *arguments* as *function*, and has the 
 
 
 
-(complement *x*) *≡* #’(lambda (&rest arguments) (not (apply *x* arguments))) 
+(complement *x*) *≡* #’(lambda (&amp;rest arguments) (not (apply *x* arguments))) 
 
 
 

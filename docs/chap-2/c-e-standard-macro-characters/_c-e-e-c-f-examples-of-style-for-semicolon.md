@@ -42,7 +42,7 @@
 
 
 
-(error "FIB got ~D as an argument." n)) 
+(error "FIB got &#126;D as an argument." n)) 
 
 
 

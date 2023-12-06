@@ -6,7 +6,7 @@
 
 
 
-**gcd** &rest *integers → greatest-common-denominator* 
+**gcd** &amp;rest *integers → greatest-common-denominator* 
 
 
 

@@ -82,7 +82,7 @@ return (list a b c))
 
 
 
-return (format nil "~A ~A ~A" a b c)) 
+return (format nil "&#126;A &#126;A &#126;A" a b c)) 
 
 
 
@@ -102,7 +102,7 @@ return (format nil "~A ~A ~A" a b c))
 
 
 
-return (format nil "~A ~A ~A" a b c)) 
+return (format nil "&#126;A &#126;A &#126;A" a b c)) 
 
 
 

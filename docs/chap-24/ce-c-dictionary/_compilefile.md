@@ -6,7 +6,7 @@
 
 
 
-**compile-file** *input-file* &key *output-file verbose* 
+**compile-file** *input-file* &amp;key *output-file verbose* 
 
 
 

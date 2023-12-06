@@ -6,7 +6,7 @@
 
 
 
-**tagbody** *\&#123;tag | statement\&#125;*\* *→* **nil** 
+**tagbody** *\{tag | statement\}*\* *→* **nil** 
 
 
 

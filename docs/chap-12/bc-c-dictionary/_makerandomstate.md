@@ -6,7 +6,7 @@
 
 
 
-**make-random-state** &optional *state → new-state* 
+**make-random-state** &amp;optional *state → new-state* 
 
 
 

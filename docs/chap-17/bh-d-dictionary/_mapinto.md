@@ -6,7 +6,7 @@
 
 
 
-**map-into** *result-sequence function* &rest *sequences → result-sequence* 
+**map-into** *result-sequence function* &amp;rest *sequences → result-sequence* 
 
 
 
@@ -114,7 +114,7 @@ arguments.
 
 
 
-(defun map-into (result-sequence function &rest sequences) 
+(defun map-into (result-sequence function &amp;rest sequences) 
 
 
 

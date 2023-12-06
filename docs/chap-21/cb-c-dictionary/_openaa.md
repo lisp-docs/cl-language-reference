@@ -6,7 +6,7 @@
 
 
 
-**close** *stream* &key *abort → result* 
+**close** *stream* &amp;key *abort → result* 
 
 
 
@@ -72,7 +72,7 @@ For a *stream* created with **make-string-output-stream**, the result of **get-o
 
 
 
-(setq s (make-broadcast-stream)) *→* #<BROADCAST-STREAM> 
+(setq s (make-broadcast-stream)) *→* #&lt;BROADCAST-STREAM&gt; 
 
 
 

@@ -10,7 +10,7 @@
 
 
 
-**vector-push-extend** *new-element vector* &optional *extension → new-index* 
+**vector-push-extend** *new-element vector* &amp;optional *extension → new-index* 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-**vector-push** and **vector-push-extend** store *new-element* in *vector*. **vector-push** attempts to store *new-element* in the element of *vector* designated by the *fill pointer* , and to increase the *fill pointer* by one. If the (>= (fill-pointer *vector*) (array-dimension *vector* 0)), neither *vector* nor its *fill pointer* are affected. Otherwise, the store and increment take place and **vector-push** returns the former value of the *fill pointer* which is one less than the one it leaves in *vector*. 
+**vector-push** and **vector-push-extend** store *new-element* in *vector*. **vector-push** attempts to store *new-element* in the element of *vector* designated by the *fill pointer* , and to increase the *fill pointer* by one. If the (&gt;= (fill-pointer *vector*) (array-dimension *vector* 0)), neither *vector* nor its *fill pointer* are affected. Otherwise, the store and increment take place and **vector-push** returns the former value of the *fill pointer* which is one less than the one it leaves in *vector*. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-**vector-push** and **vector-push-extend** return the index of *new-element* in *vector*. If (>= (fill-pointer *vector*) (array-dimension *vector* 0)), **vector-push** returns **nil**. 
+**vector-push** and **vector-push-extend** return the index of *new-element* in *vector*. If (&gt;= (fill-pointer *vector*) (array-dimension *vector* 0)), **vector-push** returns **nil**. 
 
 
 

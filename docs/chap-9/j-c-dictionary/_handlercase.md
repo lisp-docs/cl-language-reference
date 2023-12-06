@@ -6,7 +6,7 @@
 
 
 
-**handler-case** *expression* [[ *\&#123;↓error-clause\&#125;*\* *| ↓no-error-clause* ]] *→ \&#123;result\&#125;*\* 
+**handler-case** *expression* [[ *\{↓error-clause\}*\* *| ↓no-error-clause* ]] *→ \{result\}*\* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*error-clause::*=(*typespec* ([*var*]) *\&#123;declaration\&#125;*\* *\&#123;form\&#125;*\*) 
+*error-clause::*=(*typespec* ([*var*]) *\{declaration\}*\* *\{form\}*\*) 
 
 
 
-*no-error-clause::*=(:no-error *lambda-list \&#123;declaration\&#125;*\* *\&#123;form\&#125;*\*) 
+*no-error-clause::*=(:no-error *lambda-list \{declaration\}*\* *\{form\}*\*) 
 
 
 
@@ -114,7 +114,7 @@ can be written (*typespec* () *form*).
 
 
 
-If there are no *forms* in a selected *clause*, the case, and therefore **handler-case**, returns **nil**. If execution of *expression* returns normally and no *no-error-clause* exists, the values returned by *expression* are returned by **handler-case**. If execution of *expression* returns normally and a *no-error-clause* does exist, the values returned are used as arguments to the function described by constructing (lambda *lambda-list \&#123;form\&#125;*\*) from the *no-error-clause*, and the *values* of that function call are returned by **handler-case**. The handlers which were established around the *expression* are no longer active at the time of this call. 
+If there are no *forms* in a selected *clause*, the case, and therefore **handler-case**, returns **nil**. If execution of *expression* returns normally and no *no-error-clause* exists, the values returned by *expression* are returned by **handler-case**. If execution of *expression* returns normally and a *no-error-clause* does exist, the values returned are used as arguments to the function described by constructing (lambda *lambda-list \{form\}*\*) from the *no-error-clause*, and the *values* of that function call are returned by **handler-case**. The handlers which were established around the *expression* are no longer active at the time of this call. 
 
 
 
@@ -160,7 +160,7 @@ If there are no *forms* in a selected *clause*, the case, and therefore **handle
 
 
 
-(format nil "~S looks especially bad." condition)) 
+(format nil "&#126;S looks especially bad." condition)) 
 
 
 
@@ -168,7 +168,7 @@ If there are no *forms* in a selected *clause*, the case, and therefore **handle
 
 
 
-(format nil "~S looks serious." condition)) 
+(format nil "&#126;S looks serious." condition)) 
 
 
 

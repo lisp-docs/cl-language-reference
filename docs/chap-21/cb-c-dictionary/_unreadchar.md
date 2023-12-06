@@ -6,7 +6,7 @@
 
 
 
-**unread-char** *character* &optional *input-stream →* **nil** 
+**unread-char** *character* &amp;optional *input-stream →* **nil** 
 
 
 
@@ -56,7 +56,7 @@ Invoking **peek-char** or **read-char** commits all previous characters. The con
 
 
 
-(if (evenp i) (format t "~&~S ~S~%" i c) (unread-char c is))))) 
+(if (evenp i) (format t "&#126;&amp;&#126;S &#126;S&#126;%" i c) (unread-char c is))))) 
 
 
 

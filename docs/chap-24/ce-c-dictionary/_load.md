@@ -6,7 +6,7 @@
 
 
 
-**load** *filespec* &key *verbose print* 
+**load** *filespec* &amp;key *verbose print* 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**time** *form → \&#123;result\&#125;*\* 
+**time** *form → \{result\}*\* 
 
 
 

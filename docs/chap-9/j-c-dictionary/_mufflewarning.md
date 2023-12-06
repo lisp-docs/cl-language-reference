@@ -72,7 +72,7 @@ This *restart* is established by **warn** so that *handlers* of **warning** *con
 
 
 
-(defmacro with-quiet-warnings (&body forms) 
+(defmacro with-quiet-warnings (&amp;body forms) 
 
 
 
@@ -132,7 +132,7 @@ This *restart* is established by **warn** so that *handlers* of **warning** *con
 
 
 
-(dolist (s saved) (format t "~&~A~%" s)) 
+(dolist (s saved) (format t "&#126;&amp;&#126;A&#126;%" s)) 
 
 
 

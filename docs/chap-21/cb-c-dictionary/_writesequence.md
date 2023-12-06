@@ -6,7 +6,7 @@
 
 
 
-**write-sequence** *sequence stream* &key *start end → sequence* 
+**write-sequence** *sequence stream* &amp;key *start end → sequence* 
 
 
 

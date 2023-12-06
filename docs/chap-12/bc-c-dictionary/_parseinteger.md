@@ -6,7 +6,7 @@
 
 
 
-**parse-integer** *string* &key *start end radix junk-allowed → integer, pos* 
+**parse-integer** *string* &amp;key *start end radix junk-allowed → integer, pos* 
 
 
 

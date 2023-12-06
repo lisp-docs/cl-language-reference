@@ -6,7 +6,7 @@
 
 
 
-**unwind-protect** *protected-form \&#123;cleanup-form\&#125;*\* *→ \&#123;result\&#125;*\* 
+**unwind-protect** *protected-form \{cleanup-form\}*\* *→ \{result\}*\* 
 
 
 
@@ -300,7 +300,7 @@ If an exit occurs before completion of **incf**, the **decf** *form* is executed
 
 
 
-(format t "The inner catch returns ~s.~%" 
+(format t "The inner catch returns &#126;s.&#126;%" 
 
 
 

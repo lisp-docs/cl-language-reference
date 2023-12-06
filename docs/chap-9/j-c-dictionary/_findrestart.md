@@ -6,7 +6,7 @@
 
 
 
-**find-restart** *identifier* &optional *condition* 
+**find-restart** *identifier* &amp;optional *condition* 
 
 
 
@@ -68,7 +68,7 @@ If *identifier* is a currently active restart, then it is returned. Otherwise, *
 
 
 
-(format t "~S is named ~S" r (restart-name r))) 
+(format t "&#126;S is named &#126;S" r (restart-name r))) 
 
 
 

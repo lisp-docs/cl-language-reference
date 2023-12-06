@@ -6,7 +6,7 @@
 
 
 
-**define-compiler-macro** *name lambda-list* [[ *\&#123;declaration\&#125;*\* *| documentation* ]] *\&#123;form\&#125;*\* *→ name* 
+**define-compiler-macro** *name lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* *→ name* 
 
 
 
@@ -50,7 +50,7 @@ This is the normal mechanism for defining a *compiler macro function*. Its manne
 
 
 
-*•* The **&whole** argument is bound to the form argument that is passed to the *compiler macro function*. The remaining lambda-list parameters are specified as if this form contained the function name in the *car* and the actual arguments in the *cdr* , but if the *car* of the actual form is the symbol **funcall**, then the destructuring of the arguments is actually performed using its *cddr* instead. 
+*•* The **&amp;whole** argument is bound to the form argument that is passed to the *compiler macro function*. The remaining lambda-list parameters are specified as if this form contained the function name in the *car* and the actual arguments in the *cdr* , but if the *car* of the actual form is the symbol **funcall**, then the destructuring of the arguments is actually performed using its *cddr* instead. 
 
 
 
@@ -66,7 +66,7 @@ This is the normal mechanism for defining a *compiler macro function*. Its manne
 
 
 
-*•* Unlike an ordinary *macro*, a *compiler macro* can decline to provide an expansion merely by returning a form that is the *same* as the original (which can be obtained by using **&whole**). 
+*•* Unlike an ordinary *macro*, a *compiler macro* can decline to provide an expansion merely by returning a form that is the *same* as the original (which can be obtained by using **&amp;whole**). 
 
 
 
@@ -80,7 +80,7 @@ This is the normal mechanism for defining a *compiler macro function*. Its manne
 
 
 
-(define-compiler-macro square (&whole form arg) 
+(define-compiler-macro square (&amp;whole form arg) 
 
 
 
@@ -176,7 +176,7 @@ form))
 
 
 
-(defun distance (&key (x1 0) (y1 0) (x2 x1) (y2 y1)) 
+(defun distance (&amp;key (x1 0) (y1 0) (x2 x1) (y2 y1)) 
 
 
 
@@ -188,15 +188,15 @@ form))
 
 
 
-(define-compiler-macro distance (&whole form 
+(define-compiler-macro distance (&amp;whole form 
 
 
 
-&rest key-value-pairs 
+&amp;rest key-value-pairs 
 
 
 
-&key (x1 0 x1-p) 
+&amp;key (x1 0 x1-p) 
 
 
 
@@ -212,11 +212,11 @@ form))
 
 
 
-&allow-other-keys 
+&amp;allow-other-keys 
 
 
 
-&environment env) 
+&amp;environment env) 
 
 
 
@@ -340,7 +340,7 @@ finally (return (values x1s y1s x2s y2s others)))
 
 
 
-((and (< x1s 2) (< y1s 2) (< x2s 2) (< y2s 2) 
+((and (&lt; x1s 2) (&lt; y1s 2) (&lt; x2s 2) (&lt; y2s 2) 
 
 
 

@@ -14,7 +14,7 @@ Combining.
 
 
 
-(or *\&#123;typespec\&#125;*\*) 
+(or *\{typespec\}*\*) 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**error** *datum* &rest *arguments →* 
+**error** *datum* &amp;rest *arguments →* 
 
 
 
@@ -44,7 +44,7 @@ If the *condition* is not handled, (invoke-debugger *condition*) is done. As a c
 
 
 
-(error "~S is not a valid argument to FACTORIAL." x)) 
+(error "&#126;S is not a valid argument to FACTORIAL." x)) 
 
 
 
@@ -100,7 +100,7 @@ If the *condition* is not handled, (invoke-debugger *condition*) is done. As a c
 
 
 
-▷ Debug> 
+▷ Debug&gt; 
 
 
 
@@ -112,7 +112,7 @@ If the *condition* is not handled, (invoke-debugger *condition*) is done. As a c
 
 
 
-(if (numberp a) (1+ a) (error "~S is not a number." A)) 
+(if (numberp a) (1+ a) (error "&#126;S is not a number." A)) 
 
 
 
@@ -128,7 +128,7 @@ If the *condition* is not handled, (invoke-debugger *condition*) is done. As a c
 
 
 
-▷ Debug> :Continue 1 
+▷ Debug&gt; :Continue 1 
 
 
 
@@ -148,7 +148,7 @@ If the *condition* is not handled, (invoke-debugger *condition*) is done. As a c
 
 
 
-(format stream "~S is not a number." 
+(format stream "&#126;S is not a number." 
 
 
 
@@ -176,7 +176,7 @@ If the *condition* is not handled, (invoke-debugger *condition*) is done. As a c
 
 
 
-▷ Debug> :Continue 1 
+▷ Debug&gt; :Continue 1 
 
 
 

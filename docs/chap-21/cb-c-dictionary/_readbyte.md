@@ -6,7 +6,7 @@
 
 
 
-**read-byte** *stream* &optional *eof-error-p eof-value → byte* 
+**read-byte** *stream* &amp;optional *eof-error-p eof-value → byte* 
 
 
 
@@ -68,7 +68,7 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is *false*, the *eof-va
 
 
 
-(format t "~S ~S" (read-byte s) (read-byte s nil ’eof))) 
+(format t "&#126;S &#126;S" (read-byte s) (read-byte s nil ’eof))) 
 
 
 

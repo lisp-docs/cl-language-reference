@@ -14,15 +14,15 @@
 
 
 
-"~&amp;~S requires its ~:[~:R~;~\*~]~ 
+"&#126;&amp;&#126;S requires its &#126;:[&#126;:R&#126;;&#126;\*&#126;]&#126; 
 
 
 
-argument to be of type ~S,~%but it was called ~ 
+argument to be of type &#126;S,&#126;%but it was called &#126; 
 
 
 
-with an argument of type ~S.~%" 
+with an argument of type &#126;S.&#126;%" 
 
 
 
@@ -62,7 +62,7 @@ NIL
 
 
 
-Note that in this example newlines appear in the output only as specified by the ~&amp; and ~% directives; the actual newline characters in the control string are suppressed because each is preceded by a tilde. 
+Note that in this example newlines appear in the output only as specified by the &#126;&amp; and &#126;% directives; the actual newline characters in the control string are suppressed because each is preceded by a tilde. 
 
 
 

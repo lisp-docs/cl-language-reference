@@ -6,11 +6,11 @@
 
 
 
-**get-macro-character** *char* &optional *readtable → function, non-terminating-p* 
+**get-macro-character** *char* &amp;optional *readtable → function, non-terminating-p* 
 
 
 
-**set-macro-character** *char new-function* &optional *non-terminating-p readtable →* **t** 
+**set-macro-character** *char new-function* &amp;optional *non-terminating-p readtable →* **t** 
 
 
 
@@ -72,7 +72,7 @@
 
 
 
-(get-macro-character #\\&#123;) *→* NIL, *false* 
+(get-macro-character #\\{) *→* NIL, *false* 
 
 
 

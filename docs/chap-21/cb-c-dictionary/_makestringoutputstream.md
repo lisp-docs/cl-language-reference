@@ -6,7 +6,7 @@
 
 
 
-**make-string-output-stream** &key *element-type → string-stream* 
+**make-string-output-stream** &amp;key *element-type → string-stream* 
 
 
 

@@ -18,7 +18,7 @@ Specializing.
 
 
 
-*value-typespec::*=*\&#123;typespec\&#125;*\* [&optional *\&#123;typespec\&#125;*\*] [&rest *typespec*] [**&allow-other-keys**] 
+*value-typespec::*=*\{typespec\}*\* [&amp;optional *\{typespec\}*\*] [&amp;rest *typespec*] [**&amp;allow-other-keys**] 
 
 
 
@@ -34,7 +34,7 @@ Specializing.
 
 
 
-This *type specifier* can be used only as the *value-type* in a **function** *type specifier* or a **the** *special form*. It is used to specify individual *types* when *multiple values* are involved. The **&optional** and **&rest** markers can appear in the *value-type* list; they indicate the parameter list of a *function* that, when given to **multiple-value-call** along with the values, would correctly receive those values. 
+This *type specifier* can be used only as the *value-type* in a **function** *type specifier* or a **the** *special form*. It is used to specify individual *types* when *multiple values* are involved. The **&amp;optional** and **&amp;rest** markers can appear in the *value-type* list; they indicate the parameter list of a *function* that, when given to **multiple-value-call** along with the values, would correctly receive those values. 
 
 
 

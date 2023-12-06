@@ -6,7 +6,7 @@
 
 
 
-**decode-universal-time** *universal-time* &optional *time-zone* 
+**decode-universal-time** *universal-time* &amp;optional *time-zone* 
 
 
 
@@ -134,7 +134,7 @@ If *time-zone* is not supplied, it defaults to the current time zone adjusted fo
 
 
 
-&optional *time-zone* 
+&amp;optional *time-zone* 
 
 
 

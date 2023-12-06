@@ -6,7 +6,7 @@
 
 
 
-**ensure-directories-exist** *pathspec* &key *verbose → pathspec, created* 
+**ensure-directories-exist** *pathspec* &amp;key *verbose → pathspec, created* 
 
 
 

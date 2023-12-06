@@ -6,7 +6,7 @@
 
 
 
-**concatenate** *result-type* &rest *sequences → result-sequence* 
+**concatenate** *result-type* &amp;rest *sequences → result-sequence* 
 
 
 

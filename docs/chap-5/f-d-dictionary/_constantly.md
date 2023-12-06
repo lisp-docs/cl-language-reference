@@ -40,7 +40,7 @@
 
 
 
-(defmacro with-vars (vars &body forms) 
+(defmacro with-vars (vars &amp;body forms) 
 
 
 
@@ -82,7 +82,7 @@
 
 
 
-#’(lambda (&rest arguments) object)) 
+#’(lambda (&amp;rest arguments) object)) 
 
 
 

@@ -26,7 +26,7 @@ The remainder of this section describes what happens if the *control-string* is 
 
 
 
-A directive consists of a *tilde*, optional prefix parameters separated by commas, optional *colon* and *at-sign* modifiers, and a single character indicating what kind of directive this is. There is no required ordering between the *at-sign* and *colon* modifier. The *case* of the directive character is ignored. Prefix parameters are notated as signed (sign is optional) decimal numbers, or as a *single-quote* followed by a character. For example, \~5,’0d can be used to print an *integer* in decimal radix in five columns with leading zeros, or \~5,’\*d to get leading asterisks. 
+A directive consists of a *tilde*, optional prefix parameters separated by commas, optional *colon* and *at-sign* modifiers, and a single character indicating what kind of directive this is. There is no required ordering between the *at-sign* and *colon* modifier. The *case* of the directive character is ignored. Prefix parameters are notated as signed (sign is optional) decimal numbers, or as a *single-quote* followed by a character. For example, &#126;5,’0d can be used to print an *integer* in decimal radix in five columns with leading zeros, or &#126;5,’\*d to get leading asterisks. 
 
 
 
@@ -34,7 +34,7 @@ In place of a prefix parameter to a directive, V (or v) can be used. In this cas
 
 
 
-omitted. # can be used in place of a prefix parameter; it represents the number of *args* remaining to be processed. When used within a recursive format, in the context of \~? or \~\{, the # prefix parameter represents the number of *format arguments* remaining within the recursive call. 
+omitted. # can be used in place of a prefix parameter; it represents the number of *args* remaining to be processed. When used within a recursive format, in the context of &#126;? or &#126;\{, the # prefix parameter represents the number of *format arguments* remaining within the recursive call. 
 
 
 
@@ -42,7 +42,7 @@ Examples of *format strings*:
 
 
 
-|<p>"\~S" ;This is an S directive with no parameters or modifiers. "\~3,-4:@s" ;This is an S directive with two parameters, 3 and -4, ; and both the *colon* and *at-sign* flags. </p><p>"\~,+4S" ;Here the first prefix parameter is omitted and takes ; on its default value, while the second parameter is 4.</p>|
+|<p>"&#126;S" ;This is an S directive with no parameters or modifiers. "&#126;3,-4:@s" ;This is an S directive with two parameters, 3 and -4, ; and both the *colon* and *at-sign* flags. </p><p>"&#126;,+4S" ;Here the first prefix parameter is omitted and takes ; on its default value, while the second parameter is 4.</p>|
 
 | :-: |
 

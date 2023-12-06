@@ -6,7 +6,7 @@
 
 
 
-**call-next-method** &rest *args → \&#123;result\&#125;*\* 
+**call-next-method** &amp;rest *args → \{result\}*\* 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**make-string-input-stream** *string* &optional *start end → string-stream* 
+**make-string-input-stream** *string* &amp;optional *start end → string-stream* 
 
 
 

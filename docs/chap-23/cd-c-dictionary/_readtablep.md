@@ -82,11 +82,11 @@ Returns *true* if *object* is of *type* **readtable**; otherwise, returns *false
 
 
 
-**get-dispatch-macro-character** *disp-char sub-char* &optional *readtable → function* 
+**get-dispatch-macro-character** *disp-char sub-char* &amp;optional *readtable → function* 
 
 
 
-**set-dispatch-macro-character** *disp-char sub-char new-function* &optional *readtable →* **t** 
+**set-dispatch-macro-character** *disp-char sub-char new-function* &amp;optional *readtable →* **t** 
 
 
 
@@ -144,11 +144,11 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 
 
 
-(get-dispatch-macro-character #\# #\\&#123;) *→* NIL 
+(get-dispatch-macro-character #\# #\\{) *→* NIL 
 
 
 
-(set-dispatch-macro-character #\# #\\&#123; ;dispatch on #\&#123; 
+(set-dispatch-macro-character #\# #\\{ ;dispatch on #\{ 
 
 
 
@@ -156,7 +156,7 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 
 
 
-(let ((list (read s nil (values) t))) ;list is object after #n\&#123; 
+(let ((list (read s nil (values) t))) ;list is object after #n\{ 
 
 
 
@@ -164,7 +164,7 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 
 
 
-(unless (and n (< 0 n (length list))) (setq n 0)) 
+(unless (and n (&lt; 0 n (length list))) (setq n 0)) 
 
 
 
@@ -188,15 +188,15 @@ list))) *→* T
 
 
 
-#\&#123;(1 2 3 4) *→* 1 
+#\{(1 2 3 4) *→* 1 
 
 
 
-#3\&#123;(0 1 2 3) *→* 3 
+#3\{(0 1 2 3) *→* 3 
 
 
 
-#\&#123;123 *→* 123 
+#\{123 *→* 123 
 
 
 

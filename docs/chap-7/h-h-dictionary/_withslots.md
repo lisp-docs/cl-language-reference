@@ -6,11 +6,11 @@
 
 
 
-**with-slots** (*\&#123;slot-entry\&#125;*\*) *instance-form \&#123;declaration\&#125;*\* *\&#123;form\&#125;*\* 
+**with-slots** (*\{slot-entry\}*\*) *instance-form \{declaration\}*\* *\{form\}*\* 
 
 
 
-*→ \&#123;result\&#125;*\* 
+*→ \{result\}*\* 
 
 
 

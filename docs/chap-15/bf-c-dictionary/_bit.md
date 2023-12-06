@@ -6,19 +6,19 @@
 
 
 
-**bit** *bit-array* &rest *subscripts → bit* 
+**bit** *bit-array* &amp;rest *subscripts → bit* 
 
 
 
-**sbit** *bit-array* &rest *subscripts → bit* 
+**sbit** *bit-array* &amp;rest *subscripts → bit* 
 
 
 
-**(setf (bit** *bit-array* &rest *subscripts***)** *new-bit***)** 
+**(setf (bit** *bit-array* &amp;rest *subscripts***)** *new-bit***)** 
 
 
 
-**(setf (sbit** *bit-array* &rest *subscripts***)** *new-bit***)** 
+**(setf (sbit** *bit-array* &amp;rest *subscripts***)** *new-bit***)** 
 
 
 
@@ -134,47 +134,47 @@ These *functions* ignore the *fill pointer* when *accessing elements*.
 
 
 
-**bit-and** *bit-array1 bit-array2* &optional *opt-arg → resulting-bit-array* 
+**bit-and** *bit-array1 bit-array2* &amp;optional *opt-arg → resulting-bit-array* 
 
 
 
-**bit-andc1** *bit-array1 bit-array2* &optional *opt-arg → resulting-bit-array* 
+**bit-andc1** *bit-array1 bit-array2* &amp;optional *opt-arg → resulting-bit-array* 
 
 
 
-**bit-andc2** *bit-array1 bit-array2* &optional *opt-arg → resulting-bit-array* 
+**bit-andc2** *bit-array1 bit-array2* &amp;optional *opt-arg → resulting-bit-array* 
 
 
 
-**bit-eqv** *bit-array1 bit-array2* &optional *opt-arg → resulting-bit-array* 
+**bit-eqv** *bit-array1 bit-array2* &amp;optional *opt-arg → resulting-bit-array* 
 
 
 
-**bit-ior** *bit-array1 bit-array2* &optional *opt-arg → resulting-bit-array* 
+**bit-ior** *bit-array1 bit-array2* &amp;optional *opt-arg → resulting-bit-array* 
 
 
 
-**bit-nand** *bit-array1 bit-array2* &optional *opt-arg → resulting-bit-array* 
+**bit-nand** *bit-array1 bit-array2* &amp;optional *opt-arg → resulting-bit-array* 
 
 
 
-**bit-nor** *bit-array1 bit-array2* &optional *opt-arg → resulting-bit-array* 
+**bit-nor** *bit-array1 bit-array2* &amp;optional *opt-arg → resulting-bit-array* 
 
 
 
-**bit-orc1** *bit-array1 bit-array2* &optional *opt-arg → resulting-bit-array* 
+**bit-orc1** *bit-array1 bit-array2* &amp;optional *opt-arg → resulting-bit-array* 
 
 
 
-**bit-orc2** *bit-array1 bit-array2* &optional *opt-arg → resulting-bit-array* 
+**bit-orc2** *bit-array1 bit-array2* &amp;optional *opt-arg → resulting-bit-array* 
 
 
 
-**bit-xor** *bit-array1 bit-array2* &optional *opt-arg → resulting-bit-array* 
+**bit-xor** *bit-array1 bit-array2* &amp;optional *opt-arg → resulting-bit-array* 
 
 
 
-**bit-not** *bit-array* &optional *opt-arg → resulting-bit-array* 
+**bit-not** *bit-array* &amp;optional *opt-arg → resulting-bit-array* 
 
 
 

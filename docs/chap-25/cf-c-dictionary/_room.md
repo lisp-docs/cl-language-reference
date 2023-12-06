@@ -6,7 +6,7 @@
 
 
 
-**room** &optional *x → implementation-dependent* 
+**room** &amp;optional *x → implementation-dependent* 
 
 
 

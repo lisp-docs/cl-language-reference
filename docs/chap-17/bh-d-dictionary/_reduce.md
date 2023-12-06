@@ -6,7 +6,7 @@
 
 
 
-**reduce** *function sequence* &key *key from-end start end initial-value → result* 
+**reduce** *function sequence* &amp;key *key from-end start end initial-value → result* 
 
 
 

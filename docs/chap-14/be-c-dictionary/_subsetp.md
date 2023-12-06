@@ -6,7 +6,7 @@
 
 
 
-**subsetp** *list-1 list-2* &key *key test test-not → generalized-boolean* 
+**subsetp** *list-1 list-2* &amp;key *key test test-not → generalized-boolean* 
 
 
 

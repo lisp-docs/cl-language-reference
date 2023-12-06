@@ -6,7 +6,7 @@
 
 
 
-**invoke-restart** *restart* &rest *arguments → \&#123;result\&#125;*\* 
+**invoke-restart** *restart* &amp;rest *arguments → \{result\}*\* 
 
 
 
@@ -76,7 +76,7 @@ Calls the *function* associated with *restart*, passing *arguments* to it. *Rest
 
 
 
-▷ Debug> (invoke-restart ’store-value 7) 
+▷ Debug&gt; (invoke-restart ’store-value 7) 
 
 
 

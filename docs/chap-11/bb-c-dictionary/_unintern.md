@@ -6,7 +6,7 @@
 
 
 
-**unintern** *symbol* &optional *package → generalized-boolean* 
+**unintern** *symbol* &amp;optional *package → generalized-boolean* 
 
 
 

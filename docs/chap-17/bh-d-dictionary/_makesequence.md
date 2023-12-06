@@ -6,7 +6,7 @@
 
 
 
-**make-sequence** *result-type size* &key *initial-element → sequence* 
+**make-sequence** *result-type size* &amp;key *initial-element → sequence* 
 
 
 

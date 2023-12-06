@@ -6,7 +6,7 @@
 
 
 
-**change-class** *instance new-class* &key &allow-other-keys *→ instance* 
+**change-class** *instance new-class* &amp;key &amp;allow-other-keys *→ instance* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-**change-class** (*instance* **standard-object**) (*new-class* **standard-class**) &rest *initargs* 
+**change-class** (*instance* **standard-object**) (*new-class* **standard-class**) &amp;rest *initargs* 
 
 
 
-**change-class** (*instance* **t**) (*new-class* **symbol**) &rest *initargs* 
+**change-class** (*instance* **t**) (*new-class* **symbol**) &amp;rest *initargs* 
 
 
 
@@ -116,7 +116,7 @@ If the second of the above *methods* is selected, that *method* invokes **change
 
 
 
-&key) 
+&amp;key) 
 
 
 

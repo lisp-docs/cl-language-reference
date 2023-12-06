@@ -6,7 +6,7 @@
 
 
 
-**clear-input** &optional *input-stream →* **nil** 
+**clear-input** &amp;optional *input-stream →* **nil** 
 
 
 
@@ -48,11 +48,11 @@ If **clear-input** does not make sense for *input-stream*, then **clear-input** 
 
 
 
-(defun read-sleepily (&optional (clear-p nil) (zzz 0)) 
+(defun read-sleepily (&amp;optional (clear-p nil) (zzz 0)) 
 
 
 
-(list (progn (print ’>) (read)) 
+(list (progn (print ’&gt;) (read)) 
 
 
 
@@ -64,7 +64,7 @@ If **clear-input** does not make sense for *input-stream*, then **clear-input** 
 
 
 
-(progn (print ’>) 
+(progn (print ’&gt;) 
 
 
 
@@ -88,11 +88,11 @@ If **clear-input** does not make sense for *input-stream*, then **clear-input** 
 
 
 
-▷ > 10 
+▷ &gt; 10 
 
 
 
-▷ > 
+▷ &gt; 
 
 
 
@@ -108,11 +108,11 @@ If **clear-input** does not make sense for *input-stream*, then **clear-input** 
 
 
 
-▷ > 10 
+▷ &gt; 10 
 
 
 
-▷ > 
+▷ &gt; 
 
 
 
@@ -128,11 +128,11 @@ If **clear-input** does not make sense for *input-stream*, then **clear-input** 
 
 
 
-▷ > 10 
+▷ &gt; 10 
 
 
 
-▷ > 20 ; Some implementations won’t echo typeahead here. 
+▷ &gt; 20 ; Some implementations won’t echo typeahead here. 
 
 
 

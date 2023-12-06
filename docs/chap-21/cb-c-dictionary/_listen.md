@@ -6,7 +6,7 @@
 
 
 
-**listen** &optional *input-stream → generalized-boolean* 
+**listen** &amp;optional *input-stream → generalized-boolean* 
 
 
 

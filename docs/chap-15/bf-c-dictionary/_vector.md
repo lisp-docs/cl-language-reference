@@ -6,7 +6,7 @@
 
 
 
-**vector** &rest *objects → vector* 
+**vector** &amp;rest *objects → vector* 
 
 
 

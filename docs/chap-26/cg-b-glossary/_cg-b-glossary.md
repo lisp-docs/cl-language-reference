@@ -1672,7 +1672,7 @@ following the last *element* of the *stream*), or a *file position* (denoting it
 
 
 
-*function* **format**. “In "~D base 10 = ~8R", the character sequences ‘~D’ and ‘~8R’ are format directives.” 2. the conceptual category of all *format directives*<sub>1</sub> which use the same dispatch character. “Both "~3d" and "~3,’0D" are valid uses of the ‘~D’ format directive.” 
+*function* **format**. “In "&#126;D base 10 = &#126;8R", the character sequences ‘&#126;D’ and ‘&#126;8R’ are format directives.” 2. the conceptual category of all *format directives*<sub>1</sub> which use the same dispatch character. “Both "&#126;3d" and "&#126;3,’0D" are valid uses of the ‘&#126;D’ format directive.” 
 
 
 
@@ -1704,7 +1704,7 @@ following the last *element* of the *stream*), or a *file position* (denoting it
 
 
 
-**fresh-line** and by the *format directive* ~&amp;, which advances the display position to the beginning of the next line (as if a *newline* had been typed, or the *function* **terpri** had been called) unless the *stream* is already known to be positioned at the beginning of a line. Unlike *newline*, *freshline* is not a *character* . 
+**fresh-line** and by the *format directive* &#126;&amp;, which advances the display position to the beginning of the next line (as if a *newline* had been typed, or the *function* **terpri** had been called) unless the *stream* is already known to be positioned at the beginning of a line. Unlike *newline*, *freshline* is not a *character* . 
 
 
 
@@ -2812,7 +2812,7 @@ computational “parallelism” since the *forms* that produce *values* are eval
 
 
 
-data flow by a *format directive* due to a prefix notation within the *format string* at the *format directive*’s point of use. See Section 22.3 (Formatted Output). “In "~3,’0D", the number 3 and the character #\0 are parameters to the ~D format directive.” 
+data flow by a *format directive* due to a prefix notation within the *format string* at the *format directive*’s point of use. See Section 22.3 (Formatted Output). “In "&#126;3,’0D", the number 3 and the character #\0 are parameters to the &#126;D format directive.” 
 
 
 
@@ -3960,7 +3960,7 @@ representing true. (Although any *object* other than **nil** is considered *true
 
 
 
-**throw** *v.* to transfer control and *values* to a *catch*. See the *special operator* **throw**. **tilde** *n.* the *standard character* that is called “tilde” (~). See Figure 2–5. 
+**throw** *v.* to transfer control and *values* to a *catch*. See the *special operator* **throw**. **tilde** *n.* the *standard character* that is called “tilde” (&#126;). See Figure 2–5. 
 
 
 

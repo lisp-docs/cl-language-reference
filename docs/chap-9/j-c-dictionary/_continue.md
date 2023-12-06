@@ -44,7 +44,7 @@ The **continue** *restart* is generally part of protocols where there is a singl
 
 
 
-(cerror "Try floating it." "~D is not a float." x) 
+(cerror "Try floating it." "&#126;D is not a float." x) 
 
 
 

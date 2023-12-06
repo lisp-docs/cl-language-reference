@@ -34,11 +34,11 @@ Specializing.
 
 
 
-(simple-array [*\&#123;element-type |* **\****\&#125;* [*dimension-spec*]]) 
+(simple-array [*\{element-type |* **\****\}* [*dimension-spec*]]) 
 
 
 
-*dimension-spec::*=*rank |* **\*** *|* (*\&#123;dimension |* **\****\&#125;*\*) 
+*dimension-spec::*=*rank |* **\*** *|* (*\{dimension |* **\****\}*\*) 
 
 
 

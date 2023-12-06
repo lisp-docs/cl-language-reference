@@ -6,7 +6,7 @@
 
 
 
-**compile-file-pathname** *input-file* &key *output-file* &allow-other-keys *→ pathname* 
+**compile-file-pathname** *input-file* &amp;key *output-file* &amp;allow-other-keys *→ pathname* 
 
 
 

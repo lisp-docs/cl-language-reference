@@ -6,7 +6,7 @@
 
 
 
-**remove-duplicates** *sequence* &key *from-end test test-not* 
+**remove-duplicates** *sequence* &amp;key *from-end test test-not* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-**delete-duplicates** *sequence* &key *from-end test test-not* 
+**delete-duplicates** *sequence* &amp;key *from-end test test-not* 
 
 
 

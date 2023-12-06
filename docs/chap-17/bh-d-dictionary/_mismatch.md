@@ -6,7 +6,7 @@
 
 
 
-**mismatch** *sequence-1 sequence-2* &key *from-end test test-not key start1 start2 end1 end2 → position* 
+**mismatch** *sequence-1 sequence-2* &amp;key *from-end test test-not key start1 start2 end1 end2 → position* 
 
 
 

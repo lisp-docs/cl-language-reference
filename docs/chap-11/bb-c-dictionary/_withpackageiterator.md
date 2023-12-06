@@ -6,7 +6,7 @@
 
 
 
-**with-package-iterator** (*name package-list-form* &rest *symbol-types*) *\&#123;declaration\&#125;*\* *\&#123;form\&#125;*\* *→ \&#123;result\&#125;*\* 
+**with-package-iterator** (*name package-list-form* &amp;rest *symbol-types*) *\{declaration\}*\* *\{form\}*\* *→ \{result\}*\* 
 
 
 
@@ -252,7 +252,7 @@ package))))
 
 
 
-(error "Symbol ~S not found as ~S in package ~A [~S]" 
+(error "Symbol &#126;S not found as &#126;S in package &#126;A [&#126;S]" 
 
 
 

@@ -18,7 +18,7 @@
 
 
 
-(*\&#123;method-group-specifier\&#125;*\*) 
+(*\{method-group-specifier\}*\*) 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-[[ *\&#123;declaration\&#125;*\* *| documentation* ]] 
+[[ *\{declaration\}*\* *| documentation* ]] 
 
 
 
-*\&#123;form\&#125;*\* 
+*\{form\}*\* 
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-*method-group-specifier::*=(*name \&#123;\&#123;qualifier-pattern\&#125;*<sup>+</sup>*| predicate\&#125;* [[ *↓long-form-option* ]]) 
+*method-group-specifier::*=(*name \{\{qualifier-pattern\}*<sup>+</sup>*| predicate\}* [[ *↓long-form-option* ]]) 
 
 
 
@@ -363,4 +363,650 @@ The use of method group specifiers provides a convenient syntax to select method
 
 
 It is permissible to use **setq** on the variables named in the method group specifiers and 
+
+
+
+ 
+
+
+
+ 
+
+
+
+**define-method-combination** 
+
+
+
+to bind additional variables. It is also possible to bypass the method group specifier mechanism and do everything in the body *forms*. This is accomplished by writing a single method group with **\*** as its only *qualifier-pattern*; the variable is then bound to a *list* of all of the *applicable methods*, in most-specific-first order. 
+
+
+
+The body *forms* compute and return the *form* that specifies how the methods are combined, that is, the e↵ective method. The e↵ective method is evaluated in the *null lexical environment* augmented with a local macro definition for **call-method** and with bindings named by symbols not *accessible* from the COMMON-LISP-USER *package*. Given a method object in one of the *lists* produced by the method group specifiers and a *list* of next methods, **call-method** will invoke the method such that **call-next-method** has available the next methods. 
+
+
+
+When an e↵ective method has no e↵ect other than to call a single method, some implementations employ an optimization that uses the single method directly as the e↵ective method, thus avoiding the need to create a new e↵ective method. This optimization is active when the e↵ective method form consists entirely of an invocation of the **call-method** macro whose first *subform* is a method object and whose second *subform* is **nil** or unsupplied. Each **define-method-combination** body is responsible for stripping o↵ redundant invocations of **progn**, **and**, **multiple-value-prog1**, and the like, if this optimization is desired. 
+
+
+
+The list (:arguments . *lambda-list*) can appear before any declarations or *documentation string*. This form is useful when the method combination type performs some specific behavior as part of the combined method and that behavior needs access to the arguments to the *generic function*. Each parameter variable defined by *lambda-list* is bound to a *form* that can be inserted into the e↵ective method. When this *form* is evaluated during execution of the e↵ective method, its value is the corresponding argument to the *generic function*; the consequences of using such a *form* as the *place* in a **setf** *form* are undefined. Argument correspondence is computed by dividing the :arguments *lambda-list* and the *generic function lambda-list* into three sections: the *required parameters*, the *optional parameters*, and the *keyword* and *rest parameters*. The *arguments* supplied to the *generic function* for a particular *call* are also divided into three sections; the required *arguments* section contains as many *arguments* as the *generic function* has *required parameters*, the optional *arguments* section contains as many arguments as the *generic function* has *optional parameters*, and the keyword/rest *arguments* section contains the remaining arguments. Each *parameter* in the required and optional sections of the :arguments *lambda-list* accesses the argument at the same position in the corresponding section of the *arguments*. If the section of the :arguments *lambda-list* is shorter, extra *arguments* are ignored. If the section of the :arguments *lambda-list* is longer, excess *required parameters* are bound to forms that evaluate to **nil** and excess *optional parameters* are *bound* to their initforms. The *keyword parameters* and *rest parameters* in the :arguments *lambda-list* access the keyword/rest section of the *arguments*. If the :arguments *lambda-list* contains **&amp;key**, it behaves as if it also contained **&amp;allow-other-keys**. 
+
+
+
+In addition, **&amp;whole** *var* can be placed first in the :arguments *lambda-list*. It causes *var* to 
+
+
+
+ 
+
+
+
+ 
+
+
+
+**define-method-combination** 
+
+
+
+be *bound* to a *form* that *evaluates* to a *list* of all of the *arguments* supplied to the *generic function*. This is di↵erent from **&amp;rest** because it accesses all of the arguments, not just the keyword/rest *arguments*. 
+
+
+
+Erroneous conditions detected by the body should be reported with 
+
+
+
+**method-combination-error** or **invalid-method-error**; these *functions* add any nec essary contextual information to the error message and will signal the appropriate error. 
+
+
+
+The body *forms* are evaluated inside of the *bindings* created by the *lambda list* and method group specifiers. Declarations at the head of the body are positioned directly inside of *bindings* created by the *lambda list* and outside of the *bindings* of the method group variables. Thus method group variables cannot be declared in this way. **locally** may be used around the body, however. 
+
+
+
+Within the body *forms*, *generic-function-symbol* is bound to the *generic function object*. 
+
+
+
+*Documentation* is attached as a *documentation string* to *name* (as kind 
+
+
+
+**method-combination**) and to the *method combination object*. 
+
+
+
+Note that two methods with identical specializers, but with di↵erent *qualifiers*, are not ordered by the algorithm described in Step 2 of the method selection and combination process described in Section 7.6.6 (Method Selection and Combination). Normally the two methods play di↵erent roles in the e↵ective method because they have di↵erent *qualifiers*, and no matter how they are ordered in the result of Step 2, the e↵ective method is the same. If the two methods play the same role and their order matters, an error is signaled. This happens as part of the *qualifier* pattern matching in **define-method-combination**. 
+
+
+
+If a **define-method-combination** *form* appears as a *top level form*, the *compiler* must make the *method combination name* be recognized as a valid *method combination name* in subsequent **defgeneric** *forms*. However, the *method combination* is executed no earlier than when the **define-method-combination** *form* is executed, and possibly as late as the time that *generic functions* that use the *method combination* are executed. 
+
+
+
+**Examples:**
+```lisp
+ 
+
+
+
+Most examples of the long form of **define-method-combination** also illustrate the use of the related *functions* that are provided as part of the declarative method combination facility. 
+
+
+
+;;; Examples of the short form of define-method-combination 
+
+
+
+(define-method-combination and :identity-with-one-argument t) 
+
+
+
+(defmethod func and ((x class1) y) ...) 
+
+
+
+;;; The equivalent of this example in the long form is: 
+
+
+
+(define-method-combination and 
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+**define-method-combination** 
+
+
+
+(&amp;optional (order :most-specific-first)) 
+
+
+
+((around (:around)) 
+
+
+
+(primary (and) :order order :required t)) 
+
+
+
+(let ((form (if (rest primary) 
+
+
+
+‘(and ,@(mapcar #’(lambda (method) 
+
+
+
+‘(call-method ,method)) 
+
+
+
+primary)) 
+
+
+
+‘(call-method ,(first primary))))) 
+
+
+
+(if around 
+
+
+
+‘(call-method ,(first around) 
+
+
+
+(,@(rest around) 
+
+
+
+(make-method ,form))) 
+
+
+
+form))) 
+
+
+
+;;; Examples of the long form of define-method-combination 
+
+
+
+;The default method-combination technique 
+
+
+
+(define-method-combination standard () 
+
+
+
+((around (:around)) 
+
+
+
+(before (:before)) 
+
+
+
+(primary () :required t) 
+
+
+
+(after (:after))) 
+
+
+
+(flet ((call-methods (methods) 
+
+
+
+(mapcar #’(lambda (method) 
+
+
+
+‘(call-method ,method)) 
+
+
+
+methods))) 
+
+
+
+(let ((form (if (or before after (rest primary)) 
+
+
+
+‘(multiple-value-prog1 
+
+
+
+(progn ,@(call-methods before) 
+
+
+
+(call-method ,(first primary) 
+
+
+
+,(rest primary))) 
+
+
+
+,@(call-methods (reverse after))) 
+
+
+
+‘(call-method ,(first primary))))) 
+
+
+
+(if around 
+
+
+
+‘(call-method ,(first around) 
+
+
+
+(,@(rest around) 
+
+
+
+(make-method ,form))) 
+
+
+
+form)))) 
+
+
+
+;A simple way to try several methods until one returns non-nil 
+
+
+
+(define-method-combination or () 
+
+
+
+((methods (or))) 
+
+
+
+‘(or ,@(mapcar #’(lambda (method) 
+
+
+
+‘(call-method ,method)) 
+
+
+
+methods))) 
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+**define-method-combination** 
+
+
+
+;A more complete version of the preceding 
+
+
+
+(define-method-combination or 
+
+
+
+(&amp;optional (order ’:most-specific-first)) 
+
+
+
+((around (:around)) 
+
+
+
+(primary (or))) 
+
+
+
+;; Process the order argument 
+
+
+
+(case order 
+
+
+
+(:most-specific-first) 
+
+
+
+(:most-specific-last (setq primary (reverse primary))) 
+
+
+
+(otherwise (method-combination-error "&#126;S is an invalid order.&#126;@ 
+
+
+
+:most-specific-first and :most-specific-last are the possible values." order))) 
+
+
+
+;; Must have a primary method 
+
+
+
+(unless primary 
+
+
+
+(method-combination-error "A primary method is required.")) 
+
+
+
+;; Construct the form that calls the primary methods 
+
+
+
+(let ((form (if (rest primary) 
+
+
+
+‘(or ,@(mapcar #’(lambda (method) 
+
+
+
+‘(call-method ,method)) 
+
+
+
+primary)) 
+
+
+
+‘(call-method ,(first primary))))) 
+
+
+
+;; Wrap the around methods around that form 
+
+
+
+(if around 
+
+
+
+‘(call-method ,(first around) 
+
+
+
+(,@(rest around) 
+
+
+
+(make-method ,form))) 
+
+
+
+form))) 
+
+
+
+;The same thing, using the :order and :required keyword options 
+
+
+
+(define-method-combination or 
+
+
+
+(&amp;optional (order ’:most-specific-first)) 
+
+
+
+((around (:around)) 
+
+
+
+(primary (or) :order order :required t)) 
+
+
+
+(let ((form (if (rest primary) 
+
+
+
+‘(or ,@(mapcar #’(lambda (method) 
+
+
+
+‘(call-method ,method)) 
+
+
+
+primary)) 
+
+
+
+‘(call-method ,(first primary))))) 
+
+
+
+(if around 
+
+
+
+‘(call-method ,(first around) 
+
+
+
+(,@(rest around) 
+
+
+
+(make-method ,form))) 
+
+
+
+form))) 
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+**define-method-combination** 
+
+
+
+;This short-form call is behaviorally identical to the preceding 
+
+
+
+(define-method-combination or :identity-with-one-argument t) 
+
+
+
+;Order methods by positive integer qualifiers 
+
+
+
+;:around methods are disallowed to keep the example small 
+
+
+
+(define-method-combination example-method-combination () 
+
+
+
+((methods positive-integer-qualifier-p)) 
+
+
+
+‘(progn ,@(mapcar #’(lambda (method) 
+
+
+
+‘(call-method ,method)) 
+
+
+
+(stable-sort methods #’&lt; 
+
+
+
+:key #’(lambda (method) 
+
+
+
+(first (method-qualifiers method))))))) 
+
+
+
+(defun positive-integer-qualifier-p (method-qualifiers) 
+
+
+
+(and (= (length method-qualifiers) 1) 
+
+
+
+(typep (first method-qualifiers) ’(integer 0 \*)))) 
+
+
+
+;;; Example of the use of :arguments 
+
+
+
+(define-method-combination progn-with-lock () 
+
+
+
+((methods ())) 
+
+
+
+(:arguments object) 
+
+
+
+‘(unwind-protect 
+
+
+
+(progn (lock (object-lock ,object)) 
+
+
+
+,@(mapcar #’(lambda (method) 
+
+
+
+‘(call-method ,method)) 
+
+
+
+methods)) 
+
+
+
+(unlock (object-lock ,object)))) 
+
+
+
+
+```
+**Side Eects:** 
+
+
+
+The *compiler* is not required to perform any compile-time side-e↵ects. 
+
+
+
+**Exceptional Situations:** 
+
+
+
+Method combination types defined with the short form require exactly one *qualifier* per method. An error of *type* **error** is signaled if there are applicable methods with no *qualifiers* or with *qualifiers* that are not supported by the method combination type. At least one primary method must be applicable or an error of *type* **error** is signaled. 
+
+
+
+If an applicable method does not fall into any method group, the system signals an error of *type* **error** indicating that the method is invalid for the kind of method combination in use. 
+
+
+
+If the value of the :required option is *true* and the method group is empty (that is, no applicable methods match the *qualifier* patterns or satisfy the predicate), an error of *type* **error** is signaled. 
+
+
+
+If the :order option evaluates to a value other than :most-specific-first or :most-specific-last, an error of *type* **error** is signaled. 
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+**See Also:** 
+
+
+
+**call-method**, **call-next-method**, **documentation**, **method-qualifiers**, **method-combination-error**, **invalid-method-error**, **defgeneric**, Section 7.6.6 (Method Selection and Combination), Sec tion 7.6.6.4 (Built-in Method Combination Types), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
+
+
+
+**Notes:** 
+
+
+
+The :method-combination option of **defgeneric** is used to specify that a *generic function* should use a particular method combination type. The first argument to the :method-combination option is the *name* of a method combination type and the remaining arguments are options for that type. 
+
+
 

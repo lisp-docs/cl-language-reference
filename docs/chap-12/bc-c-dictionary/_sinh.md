@@ -54,7 +54,7 @@ These functions compute the hyperbolic sine, cosine, tangent, arc sine, arc cosi
 
 | :- |
 
-|<p>Hyperbolic sine (<i>e<sup>x</sup> − e<sup>−x</sup></i>)<i>/</i>2 </p><p>Hyperbolic cosine (<i>e<sup>x</sup></i> + <i>e<sup>−x</sup></i>)<i>/</i>2 </p><p>Hyperbolic tangent (<i>e<sup>x</sup> − e<sup>−x</sup></i>)<i>/</i>(<i>e<sup>x</sup></i> + <i>e<sup>−x</sup></i>) </p><p><sub>Hyperbolic arc sine log (<i>x</i> +</sub><i><sup>√</sup></i>1 + <i>x</i><s><sup>2</sup></s>) </p><p><sub>Hyperbolic arc cosine 2 log (</sub><sup>p</sup><sub>(<i>x</i> + 1)<i>/</i>2 +</sub> <sup>p</sup>(<i>x −</i> 1)<i>/</i>2) </p><p>Hyperbolic arc tangent (log (1 + *x*) *−* log (1 *− x*))*/*2</p>|
+|<p>Hyperbolic sine (<i>e<sup>x</sup> − e<sup>−x</sup></i>)<i>/</i>2 </p><p>Hyperbolic cosine (<i>e<sup>x</sup></i> + <i>e<sup>−x</sup></i>)<i>/</i>2 </p><p>Hyperbolic tangent (<i>e<sup>x</sup> − e<sup>−x</sup></i>)<i>/</i>(<i>e<sup>x</sup></i> + <i>e<sup>−x</sup></i>) </p><p><sub>Hyperbolic arc sine log (<i>x</i> +</sub><i><sup>√</sup></i>1 + <i>x</i>&lt;s&gt;<sup>2</sup>) </p><p><sub>Hyperbolic arc cosine 2 log (</sub><sup>p</sup><sub>(<i>x</i> + 1)<i>/</i>2 +</sub> <sup>p</sup>(<i>x −</i> 1)<i>/</i>2) </p><p>Hyperbolic arc tangent (log (1 + \*x\*) \*−\* log (1 \*− x\*))\*/\*2</p>|
 
 
 
@@ -204,7 +204,7 @@ The branch cut formulae are mathematically correct, assuming completely accurate
 
 
 
-**\*** &rest *numbers → product* 
+**\*** &amp;rest *numbers → product* 
 
 
 

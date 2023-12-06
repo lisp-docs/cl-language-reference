@@ -118,7 +118,7 @@ The *implementation*.
 
 
 
-<b>string=, string/=, string</b><i>\<</i><b>, string</b><i>\></i><b>, string</b><i>\<</i><b>=, <sup>string</sup></b>&gt;<b>=, string-equal, string-not-equal, string lessp, string-greaterp, string-not-greaterp, string not-lessp</b> <i>Function</i> 
+<b>string=, string/=, string</b><i>&lt;</i><b>, string</b><i>&gt;</i><b>, string</b><i>&lt;</i><b>=, <sup>string</sup></b>&gt;<b>=, string-equal, string-not-equal, string lessp, string-greaterp, string-not-greaterp, string not-lessp</b> <i>Function</i> 
 
 
 
@@ -126,35 +126,35 @@ The *implementation*.
 
 
 
-**string**= *string1 string2* &key *start1 end1 start2 end2 → generalized-boolean* 
+**string**= *string1 string2* &amp;key *start1 end1 start2 end2 → generalized-boolean* 
 
 
 
-**string/**= *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* 
+**string/**= *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
 
 
 
-**string**\< *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* 
+**string**&lt; *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
 
 
 
-**string**\> *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* 
+**string**&gt; *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
 
 
 
-**string**\<= *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* 
+**string**&lt;= *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
 
 
 
-**string**\>= *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* 
+**string**&gt;= *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
 
 
 
-**string-equal** *string1 string2* &key *start1 end1 start2 end2 → generalized-boolean* 
+**string-equal** *string1 string2* &amp;key *start1 end1 start2 end2 → generalized-boolean* 
 
 
 
-**string-not-equal** *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* **string-lessp** *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* **string-greaterp** *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* **string-not-greaterp** *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* **string-not-lessp** *string1 string2* &key *start1 end1 start2 end2 → mismatch-index* 
+**string-not-equal** *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* **string-lessp** *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* **string-greaterp** *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* **string-not-greaterp** *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* **string-not-lessp** *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
 
 
 
@@ -206,7 +206,7 @@ These functions perform lexicographic comparisons on *string1* and *string2*. **
 
 
 
-**string=, string/=, string***\<***, string***>***, string***\<***=,** *. . .* 
+**string=, string/=, string***&lt;***, string***&gt;***, string***&lt;***=,** *. . .* 
 
 
 
@@ -218,7 +218,7 @@ A string *a* is equal to a string *b* if it contains the same number of characte
 
 
 
-A string *a* is less than a string *b* if in the first position in which they differ the character of *a* is less than the corresponding character of *b* according to **char**\< or **char-lessp** as appropriate, or if string *a* is a proper prefix of string *b* (of shorter length and matching in all the characters of *a*). 
+A string *a* is less than a string *b* if in the first position in which they differ the character of *a* is less than the corresponding character of *b* according to **char**&lt; or **char-lessp** as appropriate, or if string *a* is a proper prefix of string *b* (of shorter length and matching in all the characters of *a*). 
 
 
 
@@ -258,19 +258,19 @@ The comparison has one of the following results:
 
 
 
-**string**\< 
+**string**&lt; 
 
 
 
-**string**\< is *true* if substring1 is less than substring2; otherwise it is *false*. 
+**string**&lt; is *true* if substring1 is less than substring2; otherwise it is *false*. 
 
 
 
-**string**\> 
+**string**&gt; 
 
 
 
-**string**\> is *true* if substring1 is greater than substring2; otherwise it is *false*. 
+**string**&gt; is *true* if substring1 is greater than substring2; otherwise it is *false*. 
 
 
 
@@ -278,19 +278,15 @@ The comparison has one of the following results:
 
 
 
-**string-lessp** and **string-greaterp** are exactly like **string**\< and **string**\>, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if **char-lessp** were used instead of **char**\< for comparing characters. 
+**string-lessp** and **string-greaterp** are exactly like **string**&lt; and **string**&gt;, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if **char-lessp** were used instead of **char**&lt; for comparing characters. 
 
 
 
-**string**\<**=** 
+**string**&lt;**=** 
 
 
 
-**string**\<**=** is *true* if substring1 is less than or equal to substring2; otherwise it is *false*. 
-
-
-
- 
+**string**&lt;**=** is *true* if substring1 is less than or equal to substring2; otherwise it is *false*. 
 
 
 
@@ -298,15 +294,19 @@ The comparison has one of the following results:
 
 
 
-**string**\>**=** 
+ 
 
 
 
-**string**\>**=** is *true* if substring1 is greater than or equal to substring2; otherwise it is *false*. **string-not-greaterp**, **string-not-lessp** 
+**string**&gt;**=** 
 
 
 
-**string-not-greaterp** and **string-not-lessp** are exactly like **string**\<**=** and **string**\>**=**, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if **char-lessp** were used instead of **char**\< for comparing characters. 
+**string**&gt;**=** is *true* if substring1 is greater than or equal to substring2; otherwise it is *false*. **string-not-greaterp**, **string-not-lessp** 
+
+
+
+**string-not-greaterp** and **string-not-lessp** are exactly like **string**&lt;**=** and **string**&gt;**=**, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if **char-lessp** were used instead of **char**&lt; for comparing characters. 
 
 
 
@@ -340,11 +340,11 @@ The comparison has one of the following results:
 
 
 
-(string< "aaaa" "aaab") *→* 3 
+(string&lt; "aaaa" "aaab") *→* 3 
 
 
 
-(string>= "aaaaa" "aaaa") *→* 4 
+(string&gt;= "aaaaa" "aaaa") *→* 4 
 
 
 

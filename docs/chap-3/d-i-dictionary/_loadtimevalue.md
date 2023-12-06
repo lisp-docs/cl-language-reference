@@ -6,7 +6,7 @@
 
 
 
-**load-time-value** *form* &optional *read-only-p → object* 
+**load-time-value** *form* &amp;optional *read-only-p → object* 
 
 
 

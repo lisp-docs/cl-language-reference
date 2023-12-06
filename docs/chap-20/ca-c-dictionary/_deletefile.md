@@ -72,7 +72,7 @@ The consequences are undefined if *filespec* has a *wild* component, or if *file
 
 
 
-(setq p (probe-file "delete-me.text")) *→* #P"R:>fred>delete-me.text.1" 
+(setq p (probe-file "delete-me.text")) *→* #P"R:&gt;fred&gt;delete-me.text.1" 
 
 
 

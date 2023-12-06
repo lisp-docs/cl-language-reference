@@ -74,7 +74,7 @@ Replaces a field of bits within *integer*; specifically, returns an *integer* th
 
 
 
-*≡* (if (and (>= *j p*) (< *j* (+ *p s*))) 
+*≡* (if (and (&gt;= *j p*) (&lt; *j* (+ *p s*))) 
 
 
 

@@ -6,11 +6,11 @@
 
 
 
-**typecase** *keyform \&#123;↓normal-clause\&#125;*\* [*↓otherwise-clause*] *→ \&#123;result\&#125;*\* 
+**typecase** *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] *→ \{result\}*\* 
 
 
 
-**ctypecase** *keyplace \&#123;↓normal-clause\&#125;*\* *→ \&#123;result\&#125;*\* 
+**ctypecase** *keyplace \{↓normal-clause\}*\* *→ \{result\}*\* 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-**etypecase** *keyform \&#123;↓normal-clause\&#125;*\* *→ \&#123;result\&#125;*\* 
+**etypecase** *keyform \{↓normal-clause\}*\* *→ \{result\}*\* 
 
 
 
-*normal-clause::*=(*type \&#123;form\&#125;*\*) 
+*normal-clause::*=(*type \{form\}*\*) 
 
 
 
-*otherwise-clause::*=(*\&#123;otherwise | t\&#125; \&#123;form\&#125;*\*) 
+*otherwise-clause::*=(*\{otherwise | t\} \{form\}*\*) 
 
 
 
@@ -176,7 +176,7 @@ In all three cases, is permissible for more than one *clause* to specify a match
 
 
 
-(format t "~&~S is ~A.~%" 
+(format t "&#126;&amp;&#126;S is &#126;A.&#126;%" 
 
 
 
@@ -196,7 +196,7 @@ x (typecase x
 
 
 
-(t (format nil "a(n) ~(~A~)" (type-of x)))))) 
+(t (format nil "a(n) &#126;(&#126;A&#126;)" (type-of x)))))) 
 
 
 
@@ -267,4 +267,114 @@ x (typecase x
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+▷ 2: Return to Lisp Toplevel. 
+
+
+
+▷ Debug&gt; :CONTINUE 1 
+
+
+
+▷ Use value: 3.7 
+
+
+
+▷ Error: The value of X, 3.7, is neither an integer nor a symbol. 
+
+
+
+▷ To continue, type :CONTINUE followed by an option number: 
+
+
+
+▷ 1: Specify a value to use instead. 
+
+
+
+▷ 2: Return to Lisp Toplevel. 
+
+
+
+▷ Debug&gt; :CONTINUE 1 
+
+
+
+▷ Use value: 12 
+
+
+
+*!* 48 
+
+
+
+x *!* 12 
+
+
+
+
 ```
+**Aected By:** 
+
+
+
+**ctypecase** and **etypecase**, since they might signal an error, are potentially a↵ected by existing *handlers* and **\*debug-io\***. 
+
+
+
+**Exceptional Situations:** 
+
+
+
+**ctypecase** and **etypecase** signal an error of *type* **type-error** if no *normal-clause* matches. 
+
+
+
+The *compiler* may choose to issue a warning of *type* **style-warning** if a *clause* will never be selected because it is completely shadowed by earlier clauses. 
+
+
+
+**See Also:** 
+
+
+
+**case**, **cond**, **setf**, Section 5.1 (Generalized Reference) 
+
+
+
+**Notes:** 
+
+
+
+(typecase *test-key* 
+
+
+
+*\{*(*type \{form\}*\*)*\}*\*) 
+
+
+
+*⌘* 
+
+
+
+(let ((#1=#:g0001 *test-key*)) 
+
+
+
+(cond *\{*((typep #1# ’*type*) *\{form\}*\*)*\}*\*)) 
+
+
+
+The specific error message used by **etypecase** and **ctypecase** can vary between implementations. In situations where control of the specific wording of the error message is important, it is better to use **typecase** with an *otherwise-clause* that explicitly signals an error with an appropriate message. 
+
+
+

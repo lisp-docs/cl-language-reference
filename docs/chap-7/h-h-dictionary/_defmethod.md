@@ -6,11 +6,11 @@
 
 
 
-**defmethod** *function-name \&#123;method-qualifier\&#125;*\* *specialized-lambda-list* 
+**defmethod** *function-name \{method-qualifier\}*\* *specialized-lambda-list* 
 
 
 
-[[ *\&#123;declaration\&#125;*\* *| documentation* ]] *\&#123;form\&#125;*\* 
+[[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*function-name*::= *\&#123;symbol |* (setf *symbol*)*\&#125;* 
+*function-name*::= *\{symbol |* (setf *symbol*)*\}* 
 
 
 
@@ -42,27 +42,27 @@
 
 
 
-*specialized-lambda-list*::= (*\&#123;var |* (*var parameter-specializer-name*)*\&#125;*\* 
+*specialized-lambda-list*::= (*\{var |* (*var parameter-specializer-name*)*\}*\* 
 
 
 
-[&optional *\&#123;var |* (var [*initform* [*supplied-p-parameter*] ])*\&#125;*\*] 
+[&amp;optional *\{var |* (var [*initform* [*supplied-p-parameter*] ])*\}*\*] 
 
 
 
-[&rest *var*] 
+[&amp;rest *var*] 
 
 
 
-[&key*\&#123;var |* (*\&#123;var |* (*keywordvar*)*\&#125;* [*initform* [*supplied-p-parameter*] ])*\&#125;*\* 
+[&amp;key*\{var |* (*\{var |* (*keywordvar*)*\}* [*initform* [*supplied-p-parameter*] ])*\}*\* 
 
 
 
-[**&allow-other-keys**] ] 
+[**&amp;allow-other-keys**] ] 
 
 
 
-[&aux *\&#123;var |* (*var* [*initform*] )*\&#125;*\*] ) 
+[&amp;aux *\{var |* (*var* [*initform*] )*\}*\*] ) 
 
 
 
@@ -118,7 +118,7 @@ If (fboundp *function-name*) is **nil**, a *generic function* is created with de
 
 
 
-type). The *lambda list* of the *generic function* is congruent with the *lambda list* of the *method* being defined; if the **defmethod** form mentions keyword arguments, the *lambda list* of the *generic function* will mention &key (but no keyword arguments). If *function-name* names an *ordinary function*, a *macro*, or a *special operator* , an error is signaled. 
+type). The *lambda list* of the *generic function* is congruent with the *lambda list* of the *method* being defined; if the **defmethod** form mentions keyword arguments, the *lambda list* of the *generic function* will mention &amp;key (but no keyword arguments). If *function-name* names an *ordinary function*, a *macro*, or a *special operator* , an error is signaled. 
 
 
 

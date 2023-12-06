@@ -6,7 +6,7 @@
 
 
 
-**unuse-package** *packages-to-unuse* &optional *package →* **t** 
+**unuse-package** *packages-to-unuse* &amp;optional *package →* **t** 
 
 
 

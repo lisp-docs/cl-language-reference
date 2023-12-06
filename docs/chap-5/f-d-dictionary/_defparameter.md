@@ -184,7 +184,7 @@ Here the initial value, (), for the variable \*the-interesting-numbers\* is just
 
 
 
-(defun beep (&optional (n \*default-beep-count\*)) 
+(defun beep (&amp;optional (n \*default-beep-count\*)) 
 
 
 
@@ -270,7 +270,7 @@ The intent of the permission for additional side effects is to allow *implementa
 
 
 
-&optional (documentation nil documentation-p)) 
+&amp;optional (documentation nil documentation-p)) 
 
 
 
@@ -306,7 +306,7 @@ The intent of the permission for additional side effects is to allow *implementa
 
 
 
-(defmacro defvar (name &optional 
+(defmacro defvar (name &amp;optional 
 
 
 

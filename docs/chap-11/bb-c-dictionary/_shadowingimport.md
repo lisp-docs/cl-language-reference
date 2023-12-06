@@ -6,7 +6,7 @@
 
 
 
-**shadowing-import** *symbols* &optional *package →* **t** 
+**shadowing-import** *symbols* &amp;optional *package →* **t** 
 
 
 

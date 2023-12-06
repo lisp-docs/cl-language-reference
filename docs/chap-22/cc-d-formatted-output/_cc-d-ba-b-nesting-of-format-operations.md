@@ -6,27 +6,27 @@ The case-conversion, conditional, iteration, and justification constructs can co
 
 
 
-(format nil "~:[abc~:@(def~;ghi~ 
+(format nil "&#126;:[abc&#126;:@(def&#126;;ghi&#126; 
 
 
 
-:@(jkl~]mno~)" x) ;Invalid! 
+:@(jkl&#126;]mno&#126;)" x) ;Invalid! 
 
 
 
-This notation is invalid because the ~[...~;...~] and ~(...~) constructs are not properly nested. 
+This notation is invalid because the &#126;[...&#126;;...&#126;] and &#126;(...&#126;) constructs are not properly nested. 
 
 
 
-The processing indirection caused by the ~? directive is also a kind of nesting for the purposes of this rule of proper nesting. It is not permitted to start a bracketing construct within a string processed under control of a ~? directive and end the construct at some point after the ~? construct in the string containing that construct, or vice versa. For example, this situation is invalid: 
+The processing indirection caused by the &#126;? directive is also a kind of nesting for the purposes of this rule of proper nesting. It is not permitted to start a bracketing construct within a string processed under control of a &#126;? directive and end the construct at some point after the &#126;? construct in the string containing that construct, or vice versa. For example, this situation is invalid: 
 
 
 
-(format nil "~@?ghi~)" "abc~@(def") ;Invalid! 
+(format nil "&#126;@?ghi&#126;)" "abc&#126;@(def") ;Invalid! 
 
 
 
-This notation is invalid because the ~? and ~(...~) constructs are not properly nested. 
+This notation is invalid because the &#126;? and &#126;(...&#126;) constructs are not properly nested. 
 
 
 

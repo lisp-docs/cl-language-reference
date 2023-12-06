@@ -6,11 +6,11 @@
 
 
 
-**with-simple-restart** (*name format-control \&#123;format-argument\&#125;*\*) *\&#123;form\&#125;*\* 
+**with-simple-restart** (*name format-control \{format-argument\}*\*) *\{form\}*\* 
 
 
 
-*→ \&#123;result\&#125;*\* 
+*→ \{result\}*\* 
 
 
 
@@ -84,7 +84,7 @@ The *format-control* and *format-arguments* are used report the *restart*.
 
 
 
-(with-simple-restart (abort "Exit command level ~D." level) 
+(with-simple-restart (abort "Exit command level &#126;D." level) 
 
 
 
@@ -92,7 +92,7 @@ The *format-control* and *format-arguments* are used report the *restart*.
 
 
 
-(with-simple-restart (abort "Return to command level ~D." level) 
+(with-simple-restart (abort "Return to command level &#126;D." level) 
 
 
 
@@ -144,7 +144,7 @@ The *format-control* and *format-arguments* are used report the *restart*.
 
 
 
-(with-simple-restart (nil "Give up on computing 2<i><sup>∧</sup></i>~D." x) 
+(with-simple-restart (nil "Give up on computing 2<i><sup>∧</sup></i>&#126;D." x) 
 
 
 
@@ -212,7 +212,7 @@ COMPUTE-POWER-OF-2
 
 
 
-▷ Debug> :continue 1 
+▷ Debug&gt; :continue 1 
 
 
 
@@ -254,11 +254,11 @@ COMPUTE-POWER-OF-2
 
 
 
-&rest format-arguments) 
+&amp;rest format-arguments) 
 
 
 
-&body forms) 
+&amp;body forms) 
 
 
 

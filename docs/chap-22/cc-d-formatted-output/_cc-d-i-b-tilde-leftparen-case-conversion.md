@@ -2,27 +2,27 @@
 
 
 
-~(*str*~) 
+&#126;(*str*&#126;) 
 
 
 
-The contained control string *str* is processed, and what it produces is subject to case conversion. With no flags, every *uppercase character* is converted to the corresponding *lowercase character* . ~:( capitalizes all words, as if by **string-capitalize**. 
+The contained control string *str* is processed, and what it produces is subject to case conversion. With no flags, every *uppercase character* is converted to the corresponding *lowercase character* . &#126;:( capitalizes all words, as if by **string-capitalize**. 
 
 
 
-~@( capitalizes just the first word and forces the rest to lower case. 
+&#126;@( capitalizes just the first word and forces the rest to lower case. 
 
 
 
-~:@( converts every lowercase character to the corresponding uppercase character. 
+&#126;:@( converts every lowercase character to the corresponding uppercase character. 
 
 
 
-In this example ~@( is used to cause the first word produced by ~@R to be capitalized: 
+In this example &#126;@( is used to cause the first word produced by &#126;@R to be capitalized: 
 
 
 
-(format nil "~@R ~(~@R~)" 14 14) 
+(format nil "&#126;@R &#126;(&#126;@R&#126;)" 14 14) 
 
 
 
@@ -30,7 +30,7 @@ In this example ~@( is used to cause the first word produced by ~@R to be capita
 
 
 
-(defun f (n) (format nil "~@(~R~) error~:P detected." n)) *→* F 
+(defun f (n) (format nil "&#126;@(&#126;R&#126;) error&#126;:P detected." n)) *→* F 
 
 
 
@@ -50,7 +50,7 @@ When case conversions appear nested, the outer conversion dominates, as illustra
 
 
 
-(format nil "~@(how is ~:(BOB SMITH~)?~)") 
+(format nil "&#126;@(how is &#126;:(BOB SMITH&#126;)?&#126;)") 
 
 
 

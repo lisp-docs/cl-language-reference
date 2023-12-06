@@ -6,7 +6,7 @@
 
 
 
-**with-compilation-unit** ([[ *↓option* ]]) *\&#123;form\&#125;*\* *→ \&#123;result\&#125;*\* 
+**with-compilation-unit** ([[ *↓option* ]]) *\{form\}*\* *→ \{result\}*\* 
 
 
 
@@ -84,7 +84,7 @@ If an *implementation* would normally defer certain kinds of warnings, such as w
 
 
 
-(defun compile-files (&rest files) 
+(defun compile-files (&amp;rest files) 
 
 
 

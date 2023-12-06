@@ -6,27 +6,27 @@
 
 
 
-**flet** (*\&#123;*(*function-name lambda-list* [[ *\&#123;local-declaration\&#125;*\* *| local-documentation* ]] *\&#123;local-form\&#125;*\*)*\&#125;*\*) *\&#123;declaration\&#125;*\* *\&#123;form\&#125;*\* 
+**flet** (*\{*(*function-name lambda-list* [[ *\{local-declaration\}*\* *| local-documentation* ]] *\{local-form\}*\*)*\}*\*) *\{declaration\}*\* *\{form\}*\* 
 
 
 
-*→ \&#123;result\&#125;*\* 
+*→ \{result\}*\* 
 
 
 
-**labels** (*\&#123;*(*function-name lambda-list* [[ *\&#123;local-declaration\&#125;*\* *| local-documentation* ]] *\&#123;local-form\&#125;*\*)*\&#125;*\*) *\&#123;declaration\&#125;*\* *\&#123;form\&#125;*\* 
+**labels** (*\{*(*function-name lambda-list* [[ *\{local-declaration\}*\* *| local-documentation* ]] *\{local-form\}*\*)*\}*\*) *\{declaration\}*\* *\{form\}*\* 
 
 
 
-*→ \&#123;result\&#125;*\* 
+*→ \{result\}*\* 
 
 
 
-**macrolet** (*\&#123;*(*name lambda-list* [[ *\&#123;local-declaration\&#125;*\* *| local-documentation* ]] *\&#123;local-form\&#125;*\*)*\&#125;*\*) *\&#123;declaration\&#125;*\* *\&#123;form\&#125;*\* 
+**macrolet** (*\{*(*name lambda-list* [[ *\{local-declaration\}*\* *| local-documentation* ]] *\{local-form\}*\*)*\}*\*) *\{declaration\}*\* *\{form\}*\* 
 
 
 
-*→ \&#123;result\&#125;*\* 
+*→ \{result\}*\* 
 
 
 
@@ -312,7 +312,7 @@ after macro expansion. The occurrences of x and flag legitimately refer to the p
 
 
 
-(defmacro mlets (x &environment env) 
+(defmacro mlets (x &amp;environment env) 
 
 
 

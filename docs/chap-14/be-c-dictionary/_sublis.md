@@ -6,11 +6,11 @@
 
 
 
-**sublis** *alist tree* &key *key test test-not → new-tree* 
+**sublis** *alist tree* &amp;key *key test test-not → new-tree* 
 
 
 
-**nsublis** *alist tree* &key *key test test-not → new-tree* 
+**nsublis** *alist tree* &amp;key *key test test-not → new-tree* 
 
 
 
@@ -172,7 +172,7 @@ tree1
 
 
 
-:key #’(lambda (x) (or (atom x) (< (list-length x) 3)))) 
+:key #’(lambda (x) (or (atom x) (&lt; (list-length x) 3)))) 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**user-homedir-pathname** &optional *host → pathname* 
+**user-homedir-pathname** &amp;optional *host → pathname* 
 
 
 

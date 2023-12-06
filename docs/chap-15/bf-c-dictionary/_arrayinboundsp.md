@@ -6,7 +6,7 @@
 
 
 
-**array-in-bounds-p** *array* &rest *subscripts → generalized-boolean* 
+**array-in-bounds-p** *array* &amp;rest *subscripts → generalized-boolean* 
 
 
 
@@ -86,7 +86,7 @@ Returns *true* if the *subscripts* are all in bounds for *array*; otherwise retu
 
 
 
-(every #’< (list subscripts) (array-dimensions array))) 
+(every #’&lt; (list subscripts) (array-dimensions array))) 
 
 
 

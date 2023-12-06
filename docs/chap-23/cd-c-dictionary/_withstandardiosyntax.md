@@ -6,7 +6,7 @@
 
 
 
-**with-standard-io-syntax** *\&#123;form\&#125;*\* *→ \&#123;result\&#125;*\* 
+**with-standard-io-syntax** *\{form\}*\* *→ \{result\}*\* 
 
 
 
@@ -404,7 +404,7 @@ The ## notation always produces **nil**.
 
 
 
-No matter what the *value* of **\*read-suppress\***, parentheses still continue to delimit and construct *lists*; the #( notation continues to delimit *vectors*; and comments, *strings*, and the *single-quote* and *backquote* notations continue to be interpreted properly. Such situations as ’), #\<, #), and #*hSpacei* continue to signal errors. 
+No matter what the *value* of **\*read-suppress\***, parentheses still continue to delimit and construct *lists*; the #( notation continues to delimit *vectors*; and comments, *strings*, and the *single-quote* and *backquote* notations continue to be interpreted properly. Such situations as ’), #&lt;, #), and #*hSpacei* continue to signal errors. 
 
 
 
@@ -518,7 +518,7 @@ zvar *→* 123
 
 
 
-(setq \*readtable\* table2) *→* #<READTABLE> 
+(setq \*readtable\* table2) *→* #&lt;READTABLE&gt; 
 
 
 
@@ -526,7 +526,7 @@ zvar *→* VAR
 
 
 
-(setq \*readtable\* (copy-readtable nil)) *→* #<READTABLE> 
+(setq \*readtable\* (copy-readtable nil)) *→* #&lt;READTABLE&gt; 
 
 
 

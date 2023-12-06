@@ -110,7 +110,7 @@ Might signal an error of *type* **type-error** if *byte* is not an *integer* of 
 
 
 
-**peek-char** &optional *peek-type input-stream eof-error-p eof-value recursive-p* 
+**peek-char** &amp;optional *peek-type input-stream eof-error-p eof-value recursive-p* 
 
 
 
@@ -180,7 +180,7 @@ When *input-stream* is an *echo stream*, characters that are only peeked at are 
 
 
 
-(format t "~S ~S ~S" 
+(format t "&#126;S &#126;S &#126;S" 
 
 
 

@@ -6,11 +6,11 @@
 
 
 
-**y-or-n-p** &optional *control* &rest *arguments → generalized-boolean* 
+**y-or-n-p** &amp;optional *control* &amp;rest *arguments → generalized-boolean* 
 
 
 
-**yes-or-no-p** &optional *control* &rest *arguments → generalized-boolean* 
+**yes-or-no-p** &amp;optional *control* &amp;rest *arguments → generalized-boolean* 
 
 
 
@@ -84,7 +84,7 @@ All input and output are performed using *query I/O*.
 
 
 
-(yes-or-no-p "a ~S message" ’frightening) 
+(yes-or-no-p "a &#126;S message" ’frightening) 
 
 
 

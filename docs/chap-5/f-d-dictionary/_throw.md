@@ -116,7 +116,7 @@ The following prints “The inner catch returns :SECOND-THROW” and then return
 
 
 
-(format t "The inner catch returns ~s.~%" 
+(format t "The inner catch returns &#126;s.&#126;%" 
 
 
 

@@ -6,11 +6,11 @@
 
 
 
-**macroexpand** *form* &optional *env → expansion, expanded-p* 
+**macroexpand** *form* &amp;optional *env → expansion, expanded-p* 
 
 
 
-**macroexpand-1** *form* &optional *env → expansion, expanded-p* 
+**macroexpand-1** *form* &amp;optional *env → expansion, expanded-p* 
 
 
 
@@ -80,7 +80,7 @@ In addition to *macro* definitions in the global environment, any local macro de
 
 
 
-(defmacro expand (form &environment env) 
+(defmacro expand (form &amp;environment env) 
 
 
 
@@ -104,7 +104,7 @@ In addition to *macro* definitions in the global environment, any local macro de
 
 
 
-(defmacro expand-1 (form &environment env) 
+(defmacro expand-1 (form &amp;environment env) 
 
 
 

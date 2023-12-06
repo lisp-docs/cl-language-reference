@@ -2,7 +2,7 @@
 
 
 
-This outputs a page separator character, if possible. ~*n*| does this *n* times. 
+This outputs a page separator character, if possible. &#126;*n*| does this *n* times. 
 
 
 

@@ -10,7 +10,7 @@
 
 
 
-**require** *module-name* &optional *pathname-list → implementation-dependent* 
+**require** *module-name* &amp;optional *pathname-list → implementation-dependent* 
 
 
 

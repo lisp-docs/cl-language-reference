@@ -6,11 +6,11 @@
 
 
 
-**apropos** *string* &optional *package → hno valuesi* 
+**apropos** *string* &amp;optional *package → hno valuesi* 
 
 
 
-**apropos-list** *string* &optional *package → symbols* 
+**apropos-list** *string* &amp;optional *package → symbols* 
 
 
 

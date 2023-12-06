@@ -6,11 +6,11 @@
 
 
 
-**gethash** *key hash-table* &optional *default → value, present-p* 
+**gethash** *key hash-table* &amp;optional *default → value, present-p* 
 
 
 
-**(setf (gethash** *key hash-table* &optional *default***)** *new-value***)** 
+**(setf (gethash** *key hash-table* &amp;optional *default***)** *new-value***)** 
 
 
 

@@ -100,7 +100,7 @@ The first time *place* is *evaluated*, it is *evaluated* by normal evaluation ru
 
 
 
-▷ Debug> :CONTINUE 1 
+▷ Debug&gt; :CONTINUE 1 
 
 
 
@@ -116,7 +116,7 @@ aardvarks
 
 
 
-*→* #<ARRAY-T-3 13571> 
+*→* #<array-t-3 13571=""> 
 
 
 
@@ -172,7 +172,7 @@ aardvarks
 
 
 
-▷ Debug> :CONTINUE 2 
+▷ Debug&gt; :CONTINUE 2 
 
 
 
@@ -212,7 +212,7 @@ aardvarks
 
 
 
-▷ Debug> :Continue 1 
+▷ Debug&gt; :Continue 1 
 
 
 
@@ -248,7 +248,7 @@ aardvarks
 
 
 
-▷ Debug> :Continue 1 
+▷ Debug&gt; :Continue 1 
 
 
 

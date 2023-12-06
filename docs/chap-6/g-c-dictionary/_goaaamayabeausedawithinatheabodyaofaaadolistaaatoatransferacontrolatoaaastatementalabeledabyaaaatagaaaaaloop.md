@@ -304,7 +304,7 @@ For details, see Section 6.1 (The LOOP Facility).
 
 
 
-(loop (format t "~&amp;Number: ") 
+(loop (format t "&#126;&amp;Number: ") 
 
 
 
@@ -316,7 +316,7 @@ For details, see Section 6.1 (The LOOP Facility).
 
 
 
-(format t "~&amp;The square root of ~D is ~D.~%" n (sqrt n))))) 
+(format t "&#126;&amp;The square root of &#126;D is &#126;D.&#126;%" n (sqrt n))))) 
 
 
 
@@ -360,7 +360,7 @@ For details, see Section 6.1 (The LOOP Facility).
 
 
 
-(loop as n = (progn (format t "~&amp;Number: ") 
+(loop as n = (progn (format t "&#126;&amp;Number: ") 
 
 
 
@@ -372,7 +372,7 @@ while n
 
 
 
-do (format t "~&amp;The square of ~D is ~D.~%" n (\* n n)))) 
+do (format t "&#126;&amp;The square of &#126;D is &#126;D.&#126;%" n (\* n n)))) 
 
 
 

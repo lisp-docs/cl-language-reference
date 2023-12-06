@@ -6,7 +6,7 @@
 
 
 
-**make-broadcast-stream** &rest *streams → broadcast-stream* 
+**make-broadcast-stream** &amp;rest *streams → broadcast-stream* 
 
 
 
@@ -40,7 +40,7 @@ Returns a *broadcast stream*.
 
 
 
-b-stream (make-string-output-stream)) *→* #<String Output Stream> 
+b-stream (make-string-output-stream)) *→* #\<String Output Stream\> 
 
 
 

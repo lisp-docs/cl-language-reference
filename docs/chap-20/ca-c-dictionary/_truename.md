@@ -44,7 +44,7 @@
 
 
 
-(with-open-file (stream ">vistor>test.text.newest") 
+(with-open-file (stream "&gt;vistor&gt;test.text.newest") 
 
 
 
@@ -68,15 +68,15 @@
 
 
 
-*→* #P"S:>vistor>test.text.newest", #P"S:>vistor>test.text.1" 
+*→* #P"S:&gt;vistor&gt;test.text.newest", #P"S:&gt;vistor&gt;test.text.1" 
 
 
 
-<i><sup>or</sup>→</i> #P"S:>vistor>test.text.newest", #P"S:>vistor>test.text.newest" 
+<i><sup>or</sup>→</i> #P"S:&gt;vistor&gt;test.text.newest", #P"S:&gt;vistor&gt;test.text.newest" 
 
 
 
-<i><sup>or</sup>→</i> #P"S:>vistor>test.text.newest", #P"S:>vistor> temp . temp .1" 
+<i><sup>or</sup>→</i> #P"S:&gt;vistor&gt;test.text.newest", #P"S:&gt;vistor&gt; temp . temp .1" 
 
 
 
@@ -88,7 +88,7 @@
 
 
 
-(with-open-file (stream ">vistor>test.text.newest") 
+(with-open-file (stream "&gt;vistor&gt;test.text.newest") 
 
 
 
@@ -104,7 +104,7 @@
 
 
 
-*→* #P"S:>vistor>test.text.newest", #P"S:>vistor>test.text.1" 
+*→* #P"S:&gt;vistor&gt;test.text.newest", #P"S:&gt;vistor&gt;test.text.1" 
 
 
 
@@ -116,7 +116,7 @@
 
 
 
-;; "PS:<DOCUMENTATION>" ... 
+;; "PS:&lt;DOCUMENTATION&gt;" ... 
 
 
 
@@ -132,7 +132,7 @@
 
 
 
-*→* #P"CMUC::DOC:DUMPER.HLP", #P"CMUC::PS:<DOCUMENTATION>DUMPER.HLP.13" 
+*→* #P"CMUC::DOC:DUMPER.HLP", #P"CMUC::PS:&lt;DOCUMENTATION&gt;DUMPER.HLP.13" 
 
 
 

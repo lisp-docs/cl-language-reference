@@ -6,7 +6,7 @@
 
 
 
-**parse-namestring** *thing* &optional *host default-pathname* &key *start end junk-allowed → pathname, position* 
+**parse-namestring** *thing* &amp;optional *host default-pathname* &amp;key *start end junk-allowed → pathname, position* 
 
 
 
@@ -176,7 +176,7 @@ If *thing* contains an explicit host name and no explicit device name, then it i
 
 
 
-(setq s (open *xxx*)) *→* #<Input File Stream...> 
+(setq s (open *xxx*)) *→* #<input file="" stream...=""/> 
 
 
 

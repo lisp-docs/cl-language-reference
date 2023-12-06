@@ -6,11 +6,11 @@
 
 
 
-**sort** *sequence predicate* &key *key → sorted-sequence* 
+**sort** *sequence predicate* &amp;key *key → sorted-sequence* 
 
 
 
-**stable-sort** *sequence predicate* &key *key → sorted-sequence* 
+**stable-sort** *sequence predicate* &amp;key *key → sorted-sequence* 
 
 
 
@@ -100,7 +100,7 @@ The sorting operation can be destructive in all cases. In the case of a *vector*
 
 
 
-(sort tester #’> :key #’car) *→* ((7 8 9) (4 5 6) (1 2 3)) 
+(sort tester #’&gt; :key #’car) *→* ((7 8 9) (4 5 6) (1 2 3)) 
 
 
 

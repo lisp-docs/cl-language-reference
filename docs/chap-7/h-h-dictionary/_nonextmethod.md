@@ -6,7 +6,7 @@
 
 
 
-**no-next-method** *generic-function method* &rest *args → \&#123;result\&#125;*\* 
+**no-next-method** *generic-function method* &amp;rest *args → \{result\}*\* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-&rest *args* 
+&amp;rest *args* 
 
 
 

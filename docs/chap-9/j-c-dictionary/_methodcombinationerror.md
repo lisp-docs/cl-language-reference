@@ -6,7 +6,7 @@
 
 
 
-**method-combination-error** *format-control* &rest *args → implementation-dependent* 
+**method-combination-error** *format-control* &amp;rest *args → implementation-dependent* 
 
 
 

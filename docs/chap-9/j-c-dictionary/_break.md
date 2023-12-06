@@ -6,7 +6,7 @@
 
 
 
-**break** &optional *format-control* &rest *format-arguments →* **nil** 
+**break** &amp;optional *format-control* &amp;rest *format-arguments →* **nil** 
 
 
 
@@ -44,7 +44,7 @@ If the **continue** *restart* is used while in the debugger, **break** immediate
 
 
 
-(break "You got here with arguments: ~:S." ’(FOO 37 A)) 
+(break "You got here with arguments: &#126;:S." ’(FOO 37 A)) 
 
 
 
@@ -64,7 +64,7 @@ If the **continue** *restart* is used while in the debugger, **break** immediate
 
 
 
-▷ Debug> :CONTINUE 1 
+▷ Debug&gt; :CONTINUE 1 
 
 
 
@@ -130,7 +130,7 @@ The user interface aspects of **break** and **cerror** are permitted to vary mor
 
 
 
-(defun break (&optional (format-control "Break") &rest format-arguments) 
+(defun break (&amp;optional (format-control "Break") &amp;rest format-arguments) 
 
 
 
@@ -196,7 +196,7 @@ When the *value* of **\*debugger-hook\*** is *non-nil*, it is called prior to no
 
 
 
-(defun one-of (choices &optional (prompt "Choice")) 
+(defun one-of (choices &amp;optional (prompt "Choice")) 
 
 
 
@@ -212,7 +212,7 @@ When the *value* of **\*debugger-hook\*** is *non-nil*, it is called prior to no
 
 
 
-(format t "~&[~D] ~A~%" i (car c))) 
+(format t "&#126;&amp;[&#126;D] &#126;A&#126;%" i (car c))) 
 
 
 
@@ -220,7 +220,7 @@ When the *value* of **\*debugger-hook\*** is *non-nil*, it is called prior to no
 
 
 
-(format t "~&~A: " prompt) 
+(format t "&#126;&amp;&#126;A: " prompt) 
 
 
 
@@ -252,7 +252,7 @@ When the *value* of **\*debugger-hook\*** is *non-nil*, it is called prior to no
 
 
 
-(format t "~&Fooey: ~A" condition) 
+(format t "&#126;&amp;Fooey: &#126;A" condition) 
 
 
 

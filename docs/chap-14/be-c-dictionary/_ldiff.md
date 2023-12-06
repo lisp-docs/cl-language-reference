@@ -80,11 +80,11 @@ If *object* is the *same* as some *tail* of *list*, **ldiff** returns a *fresh l
 
 
 
-(format t "~2&amp;list=~S ~21T(tailp object list)~ 
+(format t "&#126;2&amp;list=&#126;S &#126;21T(tailp object list)&#126; 
 
 
 
-~44T(ldiff list object)~%" list) 
+&#126;44T(ldiff list object)&#126;%" list) 
 
 
 
@@ -104,7 +104,7 @@ If *object* is the *same* as some *tail* of *list*, **ldiff** returns a *fresh l
 
 
 
-(format t "~&amp; object=~S ~21T~S ~44T~S" 
+(format t "&#126;&amp; object=&#126;S &#126;21T&#126;S &#126;44T&#126;S" 
 
 
 

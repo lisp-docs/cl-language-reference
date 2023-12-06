@@ -6,11 +6,11 @@
 
 
 
-**read** &optional *input-stream eof-error-p eof-value recursive-p → object* 
+**read** &amp;optional *input-stream eof-error-p eof-value recursive-p → object* 
 
 
 
-**read-preserving-whitespace** &optional *input-stream eof-error-p* 
+**read-preserving-whitespace** &amp;optional *input-stream eof-error-p* 
 
 
 
@@ -116,7 +116,7 @@ Both functions return the *object* read from *input-stream*. *Eof-value* is retu
 
 
 
-(if (char= c #\\&#123;) (read s t nil t) (read-preserving-whitespace s)) 
+(if (char= c #\\{) (read s t nil t) (read-preserving-whitespace s)) 
 
 
 
@@ -128,19 +128,19 @@ Both functions return the *object* read from *input-stream*. *Eof-value* is retu
 
 
 
-(set-dispatch-macro-character #\# #\\&#123; #’skip-then-read-char) 
+(set-dispatch-macro-character #\# #\\{ #’skip-then-read-char) 
 
 
 
-(set-dispatch-macro-character #\# #\\&#125; #’skip-then-read-char) 
+(set-dispatch-macro-character #\# #\\} #’skip-then-read-char) 
 
 
 
-(with-input-from-string (is "#\&#123;123 x #\&#125;123 y") 
+(with-input-from-string (is "#\{123 x #\}123 y") 
 
 
 
-(format t "~S ~S" (read is) (read is)))) *→* #\x, #\Space, NIL 
+(format t "&#126;S &#126;S" (read is) (read is)))) *→* #\x, #\Space, NIL 
 
 
 

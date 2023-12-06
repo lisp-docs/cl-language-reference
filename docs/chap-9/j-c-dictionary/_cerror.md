@@ -6,7 +6,7 @@
 
 
 
-**cerror** *continue-format-control datum* &rest *arguments →* **nil** 
+**cerror** *continue-format-control datum* &amp;rest *arguments →* **nil** 
 
 
 
@@ -68,7 +68,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 
 
-(cerror "Return sqrt(~D) instead." "Tried to take sqrt(-~D)." n)) (sqrt n)) 
+(cerror "Return sqrt(&#126;D) instead." "Tried to take sqrt(-&#126;D)." n)) (sqrt n)) 
 
 
 
@@ -100,7 +100,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 
 
-▷ Debug> :continue 1 
+▷ Debug&gt; :continue 1 
 
 
 
@@ -116,7 +116,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 
 
-(format stream "~S is not a number." 
+(format stream "&#126;S is not a number." 
 
 
 
@@ -140,7 +140,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 
 
-(format t "~&Type a number: ") 
+(format t "&#126;&amp;Type a number: ") 
 
 
 
@@ -172,7 +172,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 
 
-▷ Debug> :continue 1 
+▷ Debug&gt; :continue 1 
 
 
 
@@ -188,15 +188,15 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 
 
-(loop (when (and (numberp n) (> n 73)) (return n)) 
+(loop (when (and (numberp n) (&gt; n 73)) (return n)) 
 
 
 
-(cerror "Enter a number~:[~; a bit larger than ~D~]." 
+(cerror "Enter a number&#126;:[&#126;; a bit larger than &#126;D&#126;]." 
 
 
 
-"~\*~A is not a large number." 
+"&#126;\*&#126;A is not a large number." 
 
 
 
@@ -204,7 +204,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 
 
-(format t "~&Type a large number: ") 
+(format t "&#126;&amp;Type a large number: ") 
 
 
 
@@ -260,7 +260,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 
 
-▷ Debug> :continue 1 
+▷ Debug&gt; :continue 1 
 
 
 
@@ -292,7 +292,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 
 
-▷ Debug> :continue 1 
+▷ Debug&gt; :continue 1 
 
 
 
@@ -316,7 +316,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 
 
-(format stream "~S is not a large number." 
+(format stream "&#126;S is not a large number." 
 
 
 
@@ -328,11 +328,11 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 
 
-(loop (when (and (numberp n) (> n 73)) (return n)) 
+(loop (when (and (numberp n) (&gt; n 73)) (return n)) 
 
 
 
-(cerror "Enter a number~3\*~:[~; a bit larger than ~\*~D~]." 
+(cerror "Enter a number&#126;3\*&#126;:[&#126;; a bit larger than &#126;\*&#126;D&#126;]." 
 
 
 
@@ -356,7 +356,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 
 
-(format t "~&Type a large number: ") 
+(format t "&#126;&amp;Type a large number: ") 
 
 
 
@@ -400,7 +400,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 
 
-▷ Debug> :continue 1 
+▷ Debug&gt; :continue 1 
 
 
 
@@ -432,7 +432,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 
 
-▷ Debug> :continue 1 
+▷ Debug&gt; :continue 1 
 
 
 
@@ -470,11 +470,11 @@ Existing handler bindings.
 
 
 
-If *datum* is a *condition type* rather than a *string*, the **format** directive ~\* may be especially useful in the *continue-format-control* in order to ignore the *keywords* in the *initialization argument list*. For example: 
+If *datum* is a *condition type* rather than a *string*, the **format** directive &#126;\* may be especially useful in the *continue-format-control* in order to ignore the *keywords* in the *initialization argument list*. For example: 
 
 
 
-(cerror "enter a new value to replace ~\*~s" 
+(cerror "enter a new value to replace &#126;\*&#126;s" 
 
 
 

@@ -6,11 +6,11 @@
 
 
 
-**with-input-from-string** (*var string* &key *index start end*) *\&#123;declaration\&#125;*\* *\&#123;form\&#125;*\* 
+**with-input-from-string** (*var string* &amp;key *index start end*) *\{declaration\}*\* *\{form\}*\* 
 
 
 
-*→ \&#123;result\&#125;*\* 
+*→ \{result\}*\* 
 
 
 

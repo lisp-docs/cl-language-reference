@@ -6,7 +6,7 @@
 
 
 
-**warn** *datum* &rest *arguments →* **nil** 
+**warn** *datum* &amp;rest *arguments →* **nil** 
 
 
 
@@ -148,7 +148,7 @@ result))
 
 
 
-▷ Debug> :continue 1 
+▷ Debug&gt; :continue 1 
 
 
 

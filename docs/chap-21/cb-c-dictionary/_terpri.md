@@ -6,11 +6,11 @@
 
 
 
-**terpri** &optional *output-stream →* **nil** 
+**terpri** &amp;optional *output-stream →* **nil** 
 
 
 
-**fresh-line** &optional *output-stream → generalized-boolean* 
+**fresh-line** &amp;optional *output-stream → generalized-boolean* 
 
 
 

@@ -190,7 +190,7 @@ else ; Not (symbolp i)
 
 
 
-do (error "found a funny value in list ~S, value ~S~%" list i) 
+do (error "found a funny value in list &#126;S, value &#126;S&#126;%" list i) 
 
 
 

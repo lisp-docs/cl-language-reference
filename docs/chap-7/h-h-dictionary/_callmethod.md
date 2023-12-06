@@ -6,7 +6,7 @@
 
 
 
-**call-method** *method* &optional *next-method-list → \&#123;result\&#125;*\* 
+**call-method** *method* &amp;optional *next-method-list → \{result\}*\* 
 
 
 

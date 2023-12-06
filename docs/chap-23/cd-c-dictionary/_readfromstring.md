@@ -6,11 +6,11 @@
 
 
 
-**read-from-string** *string* &optional *eof-error-p eof-value* 
+**read-from-string** *string* &amp;optional *eof-error-p eof-value* 
 
 
 
-&key *start end preserve-whitespace* 
+&amp;key *start end preserve-whitespace* 
 
 
 

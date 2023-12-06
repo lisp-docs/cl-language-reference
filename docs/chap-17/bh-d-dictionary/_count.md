@@ -6,15 +6,15 @@
 
 
 
-**count** *item sequence* &key *from-end start end key test test-not → n* 
+**count** *item sequence* &amp;key *from-end start end key test test-not → n* 
 
 
 
-**count-if** *predicate sequence* &key *from-end start end key → n* 
+**count-if** *predicate sequence* &amp;key *from-end start end key → n* 
 
 
 
-**count-if-not** *predicate sequence* &key *from-end start end key → n* 
+**count-if-not** *predicate sequence* &amp;key *from-end start end key → n* 
 
 
 

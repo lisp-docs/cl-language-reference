@@ -6,11 +6,11 @@
 
 
 
-**with-condition-restarts** *condition-form restarts-form \&#123;form\&#125;*\* 
+**with-condition-restarts** *condition-form restarts-form \{form\}*\* 
 
 
 
-*→ \&#123;result\&#125;*\* 
+*→ \{result\}*\* 
 
 
 

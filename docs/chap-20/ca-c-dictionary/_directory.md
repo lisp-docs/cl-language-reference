@@ -6,7 +6,7 @@
 
 
 
-**directory** *pathspec* &key *→ pathnames* 
+**directory** *pathspec* &amp;key *→ pathnames* 
 
 
 
@@ -66,7 +66,7 @@ If the *pathspec* is not *wild*, the resulting list will contain either zero or 
 
 
 
-Common Lisp specifies “&key” in the argument list to **directory** even though no *standardized* keyword arguments to **directory** are defined. “:allow-other-keys t” may be used in *conforming programs* in order to quietly ignore any additional keywords which are passed by the program but not supported by the *implementation*. 
+Common Lisp specifies “&amp;key” in the argument list to **directory** even though no *standardized* keyword arguments to **directory** are defined. “:allow-other-keys t” may be used in *conforming programs* in order to quietly ignore any additional keywords which are passed by the program but not supported by the *implementation*. 
 
 
 

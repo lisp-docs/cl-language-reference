@@ -34,23 +34,23 @@ Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), **invoke
 
 
 
-**abort** &optional *condition →* 
+**abort** &amp;optional *condition →* 
 
 
 
-**continue** &optional *condition →* **nil** 
+**continue** &amp;optional *condition →* **nil** 
 
 
 
-**muffle-warning** &optional *condition →* 
+**muffle-warning** &amp;optional *condition →* 
 
 
 
-**store-value** *value* &optional *condition →* **nil** 
+**store-value** *value* &amp;optional *condition →* **nil** 
 
 
 
-**use-value** *value* &optional *condition →* **nil** 
+**use-value** *value* &amp;optional *condition →* **nil** 
 
 
 
@@ -108,7 +108,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 
 
 
-(defmacro abort-on-error (&body forms) 
+(defmacro abort-on-error (&amp;body forms) 
 
 
 
@@ -148,7 +148,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 
 
 
-(cerror "Return sqrt(~D) instead." "Tried to take sqrt(-~D)." n)) 
+(cerror "Return sqrt(&#126;D) instead." "Tried to take sqrt(-&#126;D)." n)) 
 
 
 
@@ -180,7 +180,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 
 
 
-▷ Debug> (continue) 
+▷ Debug&gt; (continue) 
 
 
 
@@ -240,7 +240,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 
 
 
-(format t "~&~D~%" counter))) 
+(format t "&#126;&amp;&#126;D&#126;%" counter))) 
 
 
 
@@ -432,7 +432,7 @@ value)
 
 
 
-▷ Debug> (use-value 12) 
+▷ Debug&gt; (use-value 12) 
 
 
 
@@ -464,7 +464,7 @@ value)
 
 
 
-▷ Debug> (store-value 24) 
+▷ Debug&gt; (store-value 24) 
 
 
 
@@ -484,7 +484,7 @@ value)
 
 
 
-(defun add-symbols-with-default (default &rest symbols) 
+(defun add-symbols-with-default (default &amp;rest symbols) 
 
 
 

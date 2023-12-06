@@ -6,15 +6,15 @@
 
 
 
-**finish-output** &optional *output-stream →* **nil** 
+**finish-output** &amp;optional *output-stream →* **nil** 
 
 
 
-**force-output** &optional *output-stream →* **nil** 
+**force-output** &amp;optional *output-stream →* **nil** 
 
 
 
-**clear-output** &optional *output-stream →* **nil** 
+**clear-output** &amp;optional *output-stream →* **nil** 
 
 
 

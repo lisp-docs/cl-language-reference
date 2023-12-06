@@ -6,19 +6,19 @@
 
 
 
-**remove** *item sequence* &key *from-end test test-not start end count key → result-sequence* **remove-if** *test sequence* &key *from-end start end count key → result-sequence* 
+**remove** *item sequence* &amp;key *from-end test test-not start end count key → result-sequence* **remove-if** *test sequence* &amp;key *from-end start end count key → result-sequence* 
 
 
 
-**remove-if-not** *test sequence* &key *from-end start end count key → result-sequence* 
+**remove-if-not** *test sequence* &amp;key *from-end start end count key → result-sequence* 
 
 
 
-**delete** *item sequence* &key *from-end test test-not start end count key → result-sequence* **delete-if** *test sequence* &key *from-end start end count key → result-sequence* 
+**delete** *item sequence* &amp;key *from-end test test-not start end count key → result-sequence* **delete-if** *test sequence* &amp;key *from-end start end count key → result-sequence* 
 
 
 
-**delete-if-not** *test sequence* &key *from-end start end count key → result-sequence* 
+**delete-if-not** *test sequence* &amp;key *from-end start end count key → result-sequence* 
 
 
 
@@ -168,7 +168,7 @@ For all these functions, elements not removed or deleted occur in the same order
 
 
 
-(remove 3 ’(1 2 4 1 3 4 5) :test #’>) *→* (4 3 4 5) 
+(remove 3 ’(1 2 4 1 3 4 5) :test #’&gt;) *→* (4 3 4 5) 
 
 
 
@@ -236,7 +236,7 @@ For all these functions, elements not removed or deleted occur in the same order
 
 
 
-(delete 3 tester :test #’>) *→* (4 3 4 5) 
+(delete 3 tester :test #’&gt;) *→* (4 3 4 5) 
 
 
 

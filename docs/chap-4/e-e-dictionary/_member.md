@@ -14,7 +14,7 @@ Combining.
 
 
 
-(member *\&#123;object\&#125;*\*) 
+(member *\{object\}*\*) 
 
 
 

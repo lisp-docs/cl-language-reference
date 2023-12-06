@@ -6,23 +6,23 @@
 
 
 
-**case** *keyform \&#123;↓normal-clause\&#125;*\* [*↓otherwise-clause*] *→ \&#123;result\&#125;*\* 
+**case** *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] *→ \{result\}*\* 
 
 
 
-**ccase** *keyplace \&#123;↓normal-clause\&#125;*\* *→ \&#123;result\&#125;*\* 
+**ccase** *keyplace \{↓normal-clause\}*\* *→ \{result\}*\* 
 
 
 
-**ecase** *keyform \&#123;↓normal-clause\&#125;*\* *→ \&#123;result\&#125;*\* 
+**ecase** *keyform \{↓normal-clause\}*\* *→ \{result\}*\* 
 
 
 
-*normal-clause::*=(*keys \&#123;form\&#125;*\*) 
+*normal-clause::*=(*keys \{form\}*\*) 
 
 
 
-*otherwise-clause::*=(*\&#123;otherwise | t\&#125; \&#123;form\&#125;*\*) 
+*otherwise-clause::*=(*\{otherwise | t\} \{form\}*\*) 
 
 
 
@@ -140,7 +140,7 @@ Note that in contrast with **ccase**, the caller of **ecase** may rely on the fa
 
 
 
-(format t "~S " 
+(format t "&#126;S " 
 
 
 
@@ -252,7 +252,7 @@ Data and Control
 
 
 
-▷ Debug> :CONTINUE 1 
+▷ Debug&gt; :CONTINUE 1 
 
 
 
@@ -306,7 +306,7 @@ The debugger might be entered. If the **store-value** *restart* is invoked, the 
 
 
 
-*\&#123;*((*\&#123;key\&#125;*\*) *\&#123;form\&#125;*\*)*\&#125;*\*) 
+*\{*((*\{key\}*\*) *\{form\}*\*)*\}*\*) 
 
 
 
@@ -318,7 +318,7 @@ The debugger might be entered. If the **store-value** *restart* is invoked, the 
 
 
 
-(cond *\&#123;*((member #1# ’(*\&#123;key\&#125;*\*)) *\&#123;form\&#125;*\*)*\&#125;*\*)) 
+(cond *\{*((member #1# ’(*\{key\}*\*)) *\{form\}*\*)*\}*\*)) 
 
 
 

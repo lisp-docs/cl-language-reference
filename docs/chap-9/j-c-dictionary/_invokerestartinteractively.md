@@ -6,7 +6,7 @@
 
 
 
-**invoke-restart-interactively** *restart → \&#123;result\&#125;*\* 
+**invoke-restart-interactively** *restart → \{result\}*\* 
 
 
 
@@ -72,7 +72,7 @@ Once the arguments have been determined, **invoke-restart-interactively** execut
 
 
 
-▷ Debug> (invoke-restart-interactively ’store-value) 
+▷ Debug&gt; (invoke-restart-interactively ’store-value) 
 
 
 

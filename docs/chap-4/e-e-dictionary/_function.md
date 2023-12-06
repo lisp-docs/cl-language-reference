@@ -34,19 +34,19 @@ Specializing.
 
 
 
-*arg-typespec::*=(*\&#123;typespec\&#125;*\* 
+*arg-typespec::*=(*\{typespec\}*\* 
 
 
 
-[&optional *\&#123;typespec\&#125;*\*] 
+[&amp;optional *\{typespec\}*\*] 
 
 
 
-[&rest *typespec*] 
+[&amp;rest *typespec*] 
 
 
 
-[&key *\&#123;*(*keyword typespec*)*\&#125;*\*]) 
+[&amp;key *\{*(*keyword typespec*)*\}*\*]) 
 
 
 
@@ -66,11 +66,11 @@ Specializing.
 
 
 
-The list form of the **function** *type-specifier* can be used only for declaration and not for discrimination. Every element of this *type* is a *function* that accepts arguments of the types specified by the *argj-types* and returns values that are members of the *types* specified by *value-type*. The **&optional**, **&rest**, **&key**, and **&allow-other-keys** markers can appear in the list of argument types. The *type specifier* provided with **&rest** is the *type* of each actual argument, not the *type* of the corresponding variable. 
+The list form of the **function** *type-specifier* can be used only for declaration and not for discrimination. Every element of this *type* is a *function* that accepts arguments of the types specified by the *argj-types* and returns values that are members of the *types* specified by *value-type*. The **&amp;optional**, **&amp;rest**, **&amp;key**, and **&amp;allow-other-keys** markers can appear in the list of argument types. The *type specifier* provided with **&amp;rest** is the *type* of each actual argument, not the *type* of the corresponding variable. 
 
 
 
-The **&key** parameters should be supplied as lists of the form (*keyword type*). The *keyword* must be a valid keyword-name symbol as must be supplied in the actual arguments of a call. This is usually a *symbol* in the KEYWORD *package* but can be any *symbol*. When **&key** is given in a **function** *type specifier lambda list*, the *keyword parameters* given are exhaustive unless **&allow-other-keys** is also present. **&allow-other-keys** is an indication that other keyword arguments might actually be supplied and, if supplied, can be used. For example, the *type* of the *function* **make-list** could be declared as follows:  
+The **&amp;key** parameters should be supplied as lists of the form (*keyword type*). The *keyword* must be a valid keyword-name symbol as must be supplied in the actual arguments of a call. This is usually a *symbol* in the KEYWORD *package* but can be any *symbol*. When **&amp;key** is given in a **function** *type specifier lambda list*, the *keyword parameters* given are exhaustive unless **&amp;allow-other-keys** is also present. **&amp;allow-other-keys** is an indication that other keyword arguments might actually be supplied and, if supplied, can be used. For example, the *type* of the *function* **make-list** could be declared as follows:  
 
 
 
@@ -78,7 +78,7 @@ The **&key** parameters should be supplied as lists of the form (*keyword type*)
 
 
 
-(function ((integer 0) &key (:initial-element t)) list) 
+(function ((integer 0) &amp;key (:initial-element t)) list) 
 
 
 

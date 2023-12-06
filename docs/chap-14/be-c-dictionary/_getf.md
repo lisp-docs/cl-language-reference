@@ -6,11 +6,11 @@
 
 
 
-**getf** *plist indicator* &optional *default → value* 
+**getf** *plist indicator* &amp;optional *default → value* 
 
 
 
-**(setf (getf** *place indicator* &optional *default***)** *new-value***)** 
+**(setf (getf** *place indicator* &amp;optional *default***)** *new-value***)** 
 
 
 

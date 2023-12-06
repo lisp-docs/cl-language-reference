@@ -6,11 +6,11 @@
 
 
 
-**find-class** *symbol* &optional *errorp environment → class* 
+**find-class** *symbol* &amp;optional *errorp environment → class* 
 
 
 
-**(setf (find-class** *symbol* &optional *errorp environment***)** *new-class***)** 
+**(setf (find-class** *symbol* &amp;optional *errorp environment***)** *new-class***)** 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*environment* – same as the **&environment** argument to macro expansion functions and is used to distinguish between compile-time and run-time environments. The **&environment** argument has *dynamic extent*; the consequences are undefined if the **&environment** argument is referred to outside the *dynamic extent* of the macro expansion function. 
+*environment* – same as the **&amp;environment** argument to macro expansion functions and is used to distinguish between compile-time and run-time environments. The **&amp;environment** argument has *dynamic extent*; the consequences are undefined if the **&amp;environment** argument is referred to outside the *dynamic extent* of the macro expansion function. 
 
 
 

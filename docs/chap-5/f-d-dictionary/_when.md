@@ -6,11 +6,11 @@
 
 
 
-**when** *test-form \&#123;form\&#125;*\* *→ \&#123;result\&#125;*\* 
+**when** *test-form \{form\}*\* *→ \{result\}*\* 
 
 
 
-**unless** *test-form \&#123;form\&#125;*\* *→ \&#123;result\&#125;*\* 
+**unless** *test-form \{form\}*\* *→ \{result\}*\* 
 
 
 
@@ -178,31 +178,31 @@ In an **unless** *form*, if the *test-form yields false*, the *forms* are *evalu
 
 
 
-(when *test \&#123;form\&#125;*<sup>+</sup>) *≡* (and *test* (progn *\&#123;form\&#125;*<sup>+</sup>)) 
+(when *test \{form\}*<sup>+</sup>) *≡* (and *test* (progn *\{form\}*<sup>+</sup>)) 
 
 
 
-(when *test \&#123;form\&#125;*<sup>+</sup>) *≡* (cond (*test \&#123;form\&#125;*<sup>+</sup>)) 
+(when *test \{form\}*<sup>+</sup>) *≡* (cond (*test \{form\}*<sup>+</sup>)) 
 
 
 
-(when *test \&#123;form\&#125;*<sup>+</sup>) *≡* (if *test* (progn *\&#123;form\&#125;*<sup>+</sup>) nil) 
+(when *test \{form\}*<sup>+</sup>) *≡* (if *test* (progn *\{form\}*<sup>+</sup>) nil) 
 
 
 
-(when *test \&#123;form\&#125;*<sup>+</sup>) *≡* (unless (not *test*) *\&#123;form\&#125;*<sup>+</sup>) 
+(when *test \{form\}*<sup>+</sup>) *≡* (unless (not *test*) *\{form\}*<sup>+</sup>) 
 
 
 
-(unless *test \&#123;form\&#125;*<sup>+</sup>) *≡* (cond ((not *test*) *\&#123;form\&#125;*<sup>+</sup>)) 
+(unless *test \{form\}*<sup>+</sup>) *≡* (cond ((not *test*) *\{form\}*<sup>+</sup>)) 
 
 
 
-(unless *test \&#123;form\&#125;*<sup>+</sup>) *≡* (if *test* nil (progn *\&#123;form\&#125;*<sup>+</sup>)) 
+(unless *test \{form\}*<sup>+</sup>) *≡* (if *test* nil (progn *\{form\}*<sup>+</sup>)) 
 
 
 
-(unless *test \&#123;form\&#125;*<sup>+</sup>) *≡* (when (not *test*) *\&#123;form\&#125;*<sup>+</sup>) 
+(unless *test \{form\}*<sup>+</sup>) *≡* (when (not *test*) *\{form\}*<sup>+</sup>) 
 
 
 

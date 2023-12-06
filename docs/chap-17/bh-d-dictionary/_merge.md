@@ -6,7 +6,7 @@
 
 
 
-**merge** *result-type sequence-1 sequence-2 predicate* &key *key → result-sequence* 
+**merge** *result-type sequence-1 sequence-2 predicate* &amp;key *key → result-sequence* 
 
 
 
@@ -104,7 +104,7 @@ If the *result-type* is a *subtype* of **vector**, then if the implementation ca
 
 
 
-(merge ’list test1 test2 #’<) *→* (1 2 3 4 5 6 7 8) 
+(merge ’list test1 test2 #’&lt;) *→* (1 2 3 4 5 6 7 8) 
 
 
 
@@ -140,7 +140,7 @@ If the *result-type* is a *subtype* of **vector**, then if the implementation ca
 
 
 
-(merge ’vector test1 test2 #’< :key #’cdr) 
+(merge ’vector test1 test2 #’&lt; :key #’cdr) 
 
 
 
@@ -148,7 +148,7 @@ If the *result-type* is a *subtype* of **vector**, then if the implementation ca
 
 
 
-(merge ’(vector \* 4) ’(1 5) ’(2 4 6) #’<) should signal an error 
+(merge ’(vector \* 4) ’(1 5) ’(2 4 6) #’&lt;) should signal an error 
 
 
 

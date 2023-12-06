@@ -6,7 +6,7 @@
 
 
 
-**logand** &rest *integers → result-integer* 
+**logand** &amp;rest *integers → result-integer* 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-**logeqv** &rest *integers → result-integer* 
+**logeqv** &amp;rest *integers → result-integer* 
 
 
 
-**logior** &rest *integers → result-integer* 
+**logior** &amp;rest *integers → result-integer* 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-**logxor** &rest *integers → result-integer* 
+**logxor** &amp;rest *integers → result-integer* 
 
 
 
@@ -178,7 +178,7 @@ Negative *integers* are treated as if they were in two’s-complement notation.
 
 
 
-(format t "~%m = #o~6,’0O~%x = #o~6,’0O~%y = #o~6,’0O~%" 
+(format t "&#126;%m = #o&#126;6,’0O&#126;%x = #o&#126;6,’0O&#126;%y = #o&#126;6,’0O&#126;%" 
 
 
 

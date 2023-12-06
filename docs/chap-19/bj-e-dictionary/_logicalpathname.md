@@ -100,7 +100,7 @@ a *pathname*, used as the default whenever a *function* needs a default *pathnam
 
 
 
-\*default-pathname-defaults\* *→* #P"PS:<FRED>" 
+\*default-pathname-defaults\* *→* #P"PS:&lt;FRED&gt;" 
 
 
 
@@ -108,11 +108,11 @@ a *pathname*, used as the default whenever a *function* needs a default *pathnam
 
 
 
-*→* #P"PS:<FRED>CALENDAR" 
+*→* #P"PS:&lt;FRED&gt;CALENDAR" 
 
 
 
-(let ((\*default-pathname-defaults\* (pathname "<MARY>"))) 
+(let ((\*default-pathname-defaults\* (pathname "&lt;MARY&gt;"))) 
 
 
 
@@ -120,7 +120,7 @@ a *pathname*, used as the default whenever a *function* needs a default *pathnam
 
 
 
-*→* #P"<MARY>CALENDAR" 
+*→* #P"&lt;MARY&gt;CALENDAR" 
 
 
 

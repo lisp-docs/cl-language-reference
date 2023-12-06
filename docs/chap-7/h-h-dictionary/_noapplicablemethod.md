@@ -6,7 +6,7 @@
 
 
 
-**no-applicable-method** *generic-function* &rest *function-arguments → \&#123;result\&#125;*\* 
+**no-applicable-method** *generic-function* &amp;rest *function-arguments → \{result\}*\* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-&rest *function-arguments* 
+&amp;rest *function-arguments* 
 
 
 

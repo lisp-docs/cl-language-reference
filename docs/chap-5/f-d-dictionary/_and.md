@@ -6,7 +6,7 @@
 
 
 
-**and** *\&#123;form\&#125;*\* *→ \&#123;result\&#125;*\* 
+**and** *\{form\}*\* *→ \{result\}*\* 
 
 
 
@@ -40,7 +40,7 @@ If no *forms* are supplied, (and) returns **t**.
 
 
 
-(if (and (>= n 0) 
+(if (and (&gt;= n 0) 
 
 
 
@@ -56,7 +56,7 @@ If no *forms* are supplied, (and) returns **t**.
 
 
 
-(< n (length a-simple-vector)) 
+(&lt; n (length a-simple-vector)) 
 
 
 

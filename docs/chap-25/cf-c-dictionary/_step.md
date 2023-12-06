@@ -6,7 +6,7 @@
 
 
 
-**step** *form → \&#123;result\&#125;*\* 
+**step** *form → \{result\}*\* 
 
 
 

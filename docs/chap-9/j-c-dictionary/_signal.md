@@ -6,7 +6,7 @@
 
 
 
-**signal** *datum* &rest *arguments →* **nil** 
+**signal** *datum* &amp;rest *arguments →* **nil** 
 
 
 
@@ -36,7 +36,7 @@
 
 
 
-(format t "Considering condition for division condition handling~%") 
+(format t "Considering condition for division condition handling&#126;%") 
 
 
 
@@ -60,7 +60,7 @@ HANDLE-DIVISION-CONDITIONS
 
 
 
-(format t "Considering condition for arithmetic condition handling~%") 
+(format t "Considering condition for arithmetic condition handling&#126;%") 
 
 
 

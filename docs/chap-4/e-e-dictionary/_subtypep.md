@@ -6,7 +6,7 @@
 
 
 
-**subtypep** *type-1 type-2* &optional *environment → subtype-p, valid-p* 
+**subtypep** *type-1 type-2* &amp;optional *environment → subtype-p, valid-p* 
 
 
 

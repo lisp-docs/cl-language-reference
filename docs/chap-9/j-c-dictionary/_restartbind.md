@@ -6,11 +6,11 @@
 
 
 
-**restart-bind** (*\&#123;*(*name function \&#123;↓key-val-pair\&#125;*\*)*\&#125;*) *\&#123;form\&#125;*\* 
+**restart-bind** (*\{*(*name function \{↓key-val-pair\}*\*)*\}*) *\{form\}*\* 
 
 
 
-*→ \&#123;result\&#125;*\* 
+*→ \{result\}*\* 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**with-hash-table-iterator** (*name hash-table*) *\&#123;declaration\&#125;*\* *\&#123;form\&#125;*\* *→ \&#123;result\&#125;*\* 
+**with-hash-table-iterator** (*name hash-table*) *\{declaration\}*\* *\{form\}*\* *→ \{result\}*\* 
 
 
 
@@ -136,7 +136,7 @@ hash-table)
 
 
 
-(error "Key ~S not found for value ~S" key value)) 
+(error "Key &#126;S not found for value &#126;S" key value)) 
 
 
 
