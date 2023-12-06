@@ -9,7 +9,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.ad20780e.css">
-<script src="/cl-language-reference/assets/js/runtime~main.2c5242a7.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.810f012f.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.08468b7f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -109,7 +109,7 @@
 <p>(+ x ;Reads a lexical variable X</p>
 <p>(locally (declare (special x))</p>
 <p>x)))) ;Reads a special variable X</p>
-<p><em>→</em> 3</p>
+<p>→ 3</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="31212-conses-as-forms">3.1.2.1.2 Conses as Forms<a href="#31212-conses-as-forms" class="hash-link" aria-label="Direct link to 3.1.2.1.2 Conses as Forms" title="Direct link to 3.1.2.1.2 Conses as Forms">​</a></h4>
 <!-- -->
 <p>A <em>cons</em> that is used as a <em>form</em> is called a <em>compound form</em>.</p>
@@ -166,11 +166,11 @@
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="312131-examples-of-self">3.1.2.1.3.1 Examples of Self<a href="#312131-examples-of-self" class="hash-link" aria-label="Direct link to 3.1.2.1.3.1 Examples of Self" title="Direct link to 3.1.2.1.3.1 Examples of Self">​</a></h5>
 <!-- -->
 <p><em>Numbers</em>, <em>pathnames</em>, and <em>arrays</em> are examples of <em>self-evaluating objects</em>.</p>
-<p>3 <em>→</em> 3</p>
-<p>#c(2/3 5/8) <em>→</em> #C(2/3 5/8)</p>
-<p>#p&quot;S:[BILL]OTHELLO.TXT&quot; <em>→</em> #P&quot;S:[BILL]OTHELLO.TXT&quot;</p>
-<p>#(a b c) <em>→</em> #(A B C)</p>
-<p>&quot;fred smith&quot; <em>→</em> &quot;fred smith&quot;</p>
+<p>3 → 3</p>
+<p>#c(2/3 5/8) → #C(2/3 5/8)</p>
+<p>#p&quot;S:[BILL]OTHELLO.TXT&quot; → #P&quot;S:[BILL]OTHELLO.TXT&quot;</p>
+<p>#(a b c) → #(A B C)</p>
+<p>&quot;fred smith&quot; → &quot;fred smith&quot;</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="313-lambda-expressions">3.1.3 Lambda Expressions<a href="#313-lambda-expressions" class="hash-link" aria-label="Direct link to 3.1.3 Lambda Expressions" title="Direct link to 3.1.3 Lambda Expressions">​</a></h2>
 <!-- -->
 <p>In a <em>lambda expression</em>, the body is evaluated in a lexical <em>environment</em> that is formed by adding the <em>binding</em> of each <em>parameter</em> in the <em>lambda list</em> with the corresponding <em>value</em> from the <em>arguments</em> to the current lexical <em>environment</em>.</p>
@@ -184,9 +184,9 @@
 <p>(list (function (lambda () x))</p>
 <p>(function (lambda (y) (setq x y)))))</p>
 <p>(setq funs (two-funs 6))</p>
-<p>(funcall (car funs)) <em>→</em> 6</p>
-<p>(funcall (cadr funs) 43) <em>→</em> 43</p>
-<p>(funcall (car funs)) <em>→</em> 43</p>
+<p>(funcall (car funs)) → 6</p>
+<p>(funcall (cadr funs) 43) → 43</p>
+<p>(funcall (car funs)) → 43</p>
 <p>The <strong>function</strong> <em>special form</em> coerces a <em>lambda expression</em> into a <em>closure</em> in which the <em>lexical environment</em> in effect when the <em>special form</em> is evaluated is captured along with the <em>lambda expression</em>.</p>
 <p>The function two-funs returns a <em>list</em> of two <em>functions</em>, each of which refers to the <em>binding</em> of the variable x created on entry to the function two-funs when it was called. This variable has the value 6 initially, but <strong>setq</strong> can alter this <em>binding</em>. The <em>lexical closure</em> created for the first <em>lambda expression</em> does not “snapshot” the <em>value</em> 6 for x when the <em>closure</em> is created; rather it captures the <em>binding</em> of x. The second <em>function</em> can be used to alter the <em>value</em> in the same (captured) <em>binding</em> (to 43, in the example), and this altered variable binding then affects the value returned by the first <em>function</em>.</p>
 <p>In situations where a <em>closure</em> of a <em>lambda expression</em> over the same set of <em>bindings</em> may be produced more than once, the various resulting <em>closures</em> may or may not be <em>identical</em>, at the discretion of the <em>implementation</em>. That is, two <em>functions</em> that are behaviorally indistinguishable might or might not be <em>identical</em>. Two <em>functions</em> that are behaviorally distinguishable are <em>distinct</em>. For example:</p>
@@ -246,7 +246,7 @@
 <p>#’(lambda () (return-from here<sub>2</sub> 4))</p>
 <p>\0)</p>
 <p>(funcall f)</p>
-<p>where f <em>→</em> #’(lambda () (return-from here<sub>1</sub> 4))</p>
+<p>where f → #’(lambda () (return-from here<sub>1</sub> 4))</p>
 <p>(return-from here<sub>1</sub> 4)</p>
 <p>At the time the funcall is executed there are two <strong>block</strong> <em>exit points</em> outstanding, each apparently named here. The <strong>return-from</strong> <em>form</em> executed as a result of the funcall operation refers to the outer outstanding <em>exit point</em> (here<sub>1</sub>), not the inner one (here<sub>2</sub>). It refers to that <em>exit point</em> textually visible at the point of execution of <strong>function</strong> (here abbreviated by the #’ syntax) that resulted in creation of the <em>function object</em> actually invoked by <strong>funcall</strong>.</p>
 <p>If, in this example, one were to change the (funcall f) to (funcall g), then the value of the call (contorted-example nil nil 2) would be 9. The value would change because <strong>funcall</strong> would cause the execution of (return-from here<sub>2</sub> 4), thereby causing a return from the inner <em>exit point</em> (here<sub>2</sub>).</p>

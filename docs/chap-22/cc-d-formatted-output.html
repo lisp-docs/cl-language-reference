@@ -9,7 +9,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.ad20780e.css">
-<script src="/cl-language-reference/assets/js/runtime~main.2c5242a7.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.810f012f.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.08468b7f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -38,17 +38,17 @@
 <!-- -->
 <p>The next <em>arg</em> should be a <em>character</em> ; it is printed according to the modifier flags.</p>
 <p>~C prints the <em>character</em> as if by using <strong>write-char</strong> if it is a <em>simple character</em> . <em>Characters</em> that are not <em>simple</em> are not necessarily printed as if by <strong>write-char</strong>, but are displayed in an <em>implementation-defined</em>, abbreviated format. For example,</p>
-<p>(format nil &quot;~C&quot; #\A) <em>→</em> &quot;A&quot;</p>
-<p>(format nil &quot;~C&quot; #\Space) <em>→</em> &quot; &quot;</p>
+<p>(format nil &quot;~C&quot; #\A) → &quot;A&quot;</p>
+<p>(format nil &quot;~C&quot; #\Space) → &quot; &quot;</p>
 <p>~<!-- -->:C<!-- --> is the same as ~C for <em>printing characters</em>, but other <em>characters</em> are “spelled out.” The intent is that this is a “pretty” format for printing characters. For <em>simple characters</em> that are not <em>printing</em>, what is spelled out is the <em>name</em> of the <em>character</em> (see <strong>char-name</strong>). For <em>characters</em> that are not <em>simple</em> and not <em>printing</em>, what is spelled out is <em>implementation-defined</em>. For example,</p>
-<p>(format nil &quot;~<!-- -->:C<!-- -->&quot; #\A) <em>→</em> &quot;A&quot;</p>
-<p>(format nil &quot;~<!-- -->:C<!-- -->&quot; #\Space) <em>→</em> &quot;Space&quot;</p>
+<p>(format nil &quot;~<!-- -->:C<!-- -->&quot; #\A) → &quot;A&quot;</p>
+<p>(format nil &quot;~<!-- -->:C<!-- -->&quot; #\Space) → &quot;Space&quot;</p>
 <p>;; This next example assumes an implementation-defined &quot;Control&quot; attribute.</p>
 <p>(format nil &quot;~<!-- -->:C<!-- -->&quot; #\Control-Space)</p>
-<p><em>→</em> &quot;Control-Space&quot;</p>
+<p>→ &quot;Control-Space&quot;</p>
 <p><i><sup>or</sup>→</i> &quot;c-Space&quot;</p>
 <p>~:@C prints what ~<!-- -->:C<!-- --> would, and then if the <em>character</em> requires unusual shift keys on the keyboard to type it, this fact is mentioned. For example,</p>
-<p>(format nil &quot;~:@C&quot; #\Control-Partial) <em>→</em> &quot;Control-<em>∂</em> (Top-F)&quot;</p>
+<p>(format nil &quot;~:@C&quot; #\Control-Partial) → &quot;Control-<em>∂</em> (Top-F)&quot;</p>
 <p>This is the format used for telling the user about a key he is expected to type, in prompts, for instance. The precise output may depend not only on the implementation, but on the particular I/O devices in use.</p>
 <p>~@C prints the <em>character</em> in a way that the <em>Lisp reader</em> can understand, using #\ syntax. ~@C binds <strong>*print-escape*</strong> to <strong>t</strong>.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="22312-tilde-percent">22.3.1.2 Tilde Percent<a href="#22312-tilde-percent" class="hash-link" aria-label="Direct link to 22.3.1.2 Tilde Percent" title="Direct link to 22.3.1.2 Tilde Percent">​</a></h3>
@@ -75,11 +75,11 @@
 <p><em>•</em> ~@R prints <em>arg</em> as a Roman numeral: IV.</p>
 <p><em>•</em> ~:@R prints <em>arg</em> as an old Roman numeral: IIII.</p>
 <p>For example:</p>
-<p>(format nil &quot;~„’ ,4<!-- -->:B<!-- -->&quot; 13) <em>→</em> &quot;1101&quot;</p>
-<p>(format nil &quot;~„’ ,4<!-- -->:B<!-- -->&quot; 17) <em>→</em> &quot;1 0001&quot;</p>
-<p>(format nil &quot;~19,0,’ ,4<!-- -->:B<!-- -->&quot; 3333) <em>→</em> &quot;0000 1101 0000 0101&quot;</p>
-<p>(format nil &quot;~3„,’ ,2<!-- -->:R<!-- -->&quot; 17) <em>→</em> &quot;1 22&quot;</p>
-<p>(format nil &quot;~„’|,2<!-- -->:D<!-- -->&quot; #xFFFF) <em>→</em> &quot;6|55|35&quot;</p>
+<p>(format nil &quot;~„’ ,4<!-- -->:B<!-- -->&quot; 13) → &quot;1101&quot;</p>
+<p>(format nil &quot;~„’ ,4<!-- -->:B<!-- -->&quot; 17) → &quot;1 0001&quot;</p>
+<p>(format nil &quot;~19,0,’ ,4<!-- -->:B<!-- -->&quot; 3333) → &quot;0000 1101 0000 0101&quot;</p>
+<p>(format nil &quot;~3„,’ ,2<!-- -->:R<!-- -->&quot; 17) → &quot;1 22&quot;</p>
+<p>(format nil &quot;~„’|,2<!-- -->:D<!-- -->&quot; #xFFFF) → &quot;6|55|35&quot;</p>
 <p>If and only if the first parameter, <em>n</em>, is supplied, ~R binds <strong>*print-escape*</strong> to <em>false</em>, <strong>*print-radix*</strong> to <em>false</em>, <strong>*print-base*</strong> to <em>n</em>, and <strong>*print-readably*</strong> to <em>false</em>.</p>
 <p>If and only if no parameters are supplied, ~R binds <strong>*print-base*</strong> to 10.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="22322-tilde-d">22.3.2.2 Tilde D<a href="#22322-tilde-d" class="hash-link" aria-label="Direct link to 22.3.2.2 Tilde D" title="Direct link to 22.3.2.2 Tilde D">​</a></h3>
@@ -251,18 +251,18 @@
 <p>(format nil</p>
 <p>&quot;~@[ print level = ~D~]~@[ print length = ~D~]&quot;</p>
 <p>*print-level* *print-length*)</p>
-<p><em>→</em> &quot; print length = 5&quot;</p>
+<p>→ &quot; print length = 5&quot;</p>
 <p>Note also that</p>
 <p>(format <em>stream</em> &quot;...~@[<em>str</em>~]...&quot; ...)</p>
 <p><em>≡</em> (format <em>stream</em> &quot;...~:[~;~:*<em>str</em>~]...&quot; ...)</p>
 <p>The combination of ~[ and # is useful, for example, for dealing with English conventions for printing lists:</p>
 <p>(setq foo &quot;Items:~#[ none~; ~S~; ~S and ~S~</p>
 <p>~:;~@{~#[~; and~] ~S~<i><sup>∧</sup></i>,~}~].&quot;)</p>
-<p>(format nil foo) <em>→</em> &quot;Items: none.&quot;</p>
-<p>(format nil foo ’foo) <em>→</em> &quot;Items: FOO.&quot;</p>
-<p>(format nil foo ’foo ’bar) <em>→</em> &quot;Items: FOO and BAR.&quot;</p>
-<p>(format nil foo ’foo ’bar ’baz) <em>→</em> &quot;Items: FOO, BAR, and BAZ.&quot;</p>
-<p>(format nil foo ’foo ’bar ’baz ’quux) <em>→</em> &quot;Items: FOO, BAR, BAZ, and QUUX.&quot;</p>
+<p>(format nil foo) → &quot;Items: none.&quot;</p>
+<p>(format nil foo ’foo) → &quot;Items: FOO.&quot;</p>
+<p>(format nil foo ’foo ’bar) → &quot;Items: FOO and BAR.&quot;</p>
+<p>(format nil foo ’foo ’bar ’baz) → &quot;Items: FOO, BAR, and BAZ.&quot;</p>
+<p>(format nil foo ’foo ’bar ’baz ’quux) → &quot;Items: FOO, BAR, BAZ, and QUUX.&quot;</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="22373-tilde-right">22.3.7.3 Tilde Right<a href="#22373-tilde-right" class="hash-link" aria-label="Direct link to 22.3.7.3 Tilde Right" title="Direct link to 22.3.7.3 Tilde Right">​</a></h3>
 <!-- -->
 <p>~] terminates a ~[. The consequences of using it elsewhere are undefined.</p>
@@ -273,22 +273,22 @@
 <p>For example:</p>
 <p>(format nil &quot;The winners are:~{ ~S~}.&quot;</p>
 <p>’(fred harry jill))</p>
-<p><em>→</em> &quot;The winners are: FRED HARRY JILL.&quot;</p>
+<p>→ &quot;The winners are: FRED HARRY JILL.&quot;</p>
 <p>(format nil &quot;Pairs:~{ &lt;~S,~S&gt;~}.&quot;</p>
 <p>’(a 1 b 2 c 3))</p>
-<p><em>→</em> &quot;Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;.&quot;</p>
+<p>→ &quot;Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;.&quot;</p>
 <p>~:{<em>str</em>~} is similar, but the argument should be a <em>list</em> of sublists. At each repetition step, one sublist is used as the set of arguments for processing <em>str</em> ; on the next repetition, a new sublist is used, whether or not all of the last sublist had been processed. For example:</p>
 <p>(format nil &quot;Pairs:~:{ &lt;~S,~S&gt;~}.&quot;</p>
 <p>’((a 1) (b 2) (c 3)))</p>
-<p><em>→</em> &quot;Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;.&quot;</p>
+<p>→ &quot;Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;.&quot;</p>
 <p>~@{<em>str</em>~} is similar to ~{<em>str</em>~}, but instead of using one argument that is a list, all the remaining arguments are used as the list of arguments for the iteration. Example:</p>
 <p>(format nil &quot;Pairs:~@{ &lt;~S,~S&gt;~}.&quot; ’a 1 ’b 2 ’c 3)</p>
-<p><em>→</em> &quot;Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;.&quot;</p>
+<p>→ &quot;Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;.&quot;</p>
 <p>If the iteration is terminated before all the remaining arguments are consumed, then any arguments not processed by the iteration remain to be processed by any directives following the iteration construct.</p>
 <p>~:@{<em>str</em>~} combines the features of ~:{<em>str</em>~} and ~@{<em>str</em>~}. All the remaining arguments are used, and each one must be a <em>list</em>. On each iteration, the next argument is used as a <em>list</em> of arguments to <em>str</em> . Example:</p>
 <p>(format nil &quot;Pairs:~:@{ &lt;~S,~S&gt;~}.&quot;</p>
 <p>’(a 1) ’(b 2) ’(c 3))</p>
-<p><em>→</em> &quot;Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;.&quot;</p>
+<p>→ &quot;Pairs: &lt;A,1&gt; &lt;B,2&gt; &lt;C,3&gt;.&quot;</p>
 <p>Terminating the repetition construct with ~:} instead of ~} forces <em>str</em> to be processed at least once, even if the initial list of arguments is null. However, this will not override an explicit prefix parameter of zero.</p>
 <p>If <em>str</em> is empty, then an argument is used as <em>str</em> . It must be a <em>format control</em> and precede any arguments processed by the iteration. As an example, the following are equivalent:</p>
 <p>(apply #’format stream string arguments)</p>
@@ -300,12 +300,12 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="22376-tilde-question">22.3.7.6 Tilde Question<a href="#22376-tilde-question" class="hash-link" aria-label="Direct link to 22.3.7.6 Tilde Question" title="Direct link to 22.3.7.6 Tilde Question">​</a></h3>
 <!-- -->
 <p>The next <em>arg</em> must be a <em>format control</em>, and the one after it a <em>list</em>; both are consumed by the ~? directive. The two are processed as a <em>control-string</em>, with the elements of the <em>list</em> as the arguments. Once the recursive processing has been finished, the processing of the control string containing the ~? directive is resumed. Example:</p>
-<p>(format nil &quot;~? ~D&quot; &quot;&lt;~A ~D&gt;&quot; ’(&quot;Foo&quot; 5) 7) <em>→</em> &quot;&lt;foo 5=&quot;&quot;&gt; 7&quot;</p>
-<p>(format nil &quot;~? ~D&quot; &quot;&lt;~A ~D&gt;&quot; ’(&quot;Foo&quot; 5 14) 7) <em>→</em> &quot;&lt;foo 5=&quot;&quot;&gt; 7&quot;</p>
+<p>(format nil &quot;~? ~D&quot; &quot;&lt;~A ~D&gt;&quot; ’(&quot;Foo&quot; 5) 7) → &quot;&lt;foo 5=&quot;&quot;&gt; 7&quot;</p>
+<p>(format nil &quot;~? ~D&quot; &quot;&lt;~A ~D&gt;&quot; ’(&quot;Foo&quot; 5 14) 7) → &quot;&lt;foo 5=&quot;&quot;&gt; 7&quot;</p>
 <p>Note that in the second example three arguments are supplied to the <em>format string</em> &quot;&lt;~A ~D&gt;&quot;, but only two are processed and the third is therefore ignored.</p>
 <p>With the @ modifier, only one <em>arg</em> is directly consumed. The <em>arg</em> must be a <em>string</em>; it is processed as part of the control string as if it had appeared in place of the ~@? construct, and any directives in the recursively processed control string may consume arguments of the control string containing the ~@? directive. Example:</p>
-<p>(format nil &quot;~@? ~D&quot; &quot;&lt;~A ~D&gt;&quot; &quot;Foo&quot; 5 7) <em>→</em> &quot;&lt;foo 5=&quot;&quot;&gt; 7&quot;</p>
-<p>(format nil &quot;~@? ~D&quot; &quot;&lt;~A ~D&gt;&quot; &quot;Foo&quot; 5 14 7) <em>→</em> &quot;&lt;foo 5=&quot;&quot;&gt; 14&quot;</p>
+<p>(format nil &quot;~@? ~D&quot; &quot;&lt;~A ~D&gt;&quot; &quot;Foo&quot; 5 7) → &quot;&lt;foo 5=&quot;&quot;&gt; 7&quot;</p>
+<p>(format nil &quot;~@? ~D&quot; &quot;&lt;~A ~D&gt;&quot; &quot;Foo&quot; 5 14 7) → &quot;&lt;foo 5=&quot;&quot;&gt; 14&quot;</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="2238-format-miscellaneous-operations">22.3.8 FORMAT Miscellaneous Operations<a href="#2238-format-miscellaneous-operations" class="hash-link" aria-label="Direct link to 22.3.8 FORMAT Miscellaneous Operations" title="Direct link to 22.3.8 FORMAT Miscellaneous Operations">​</a></h2>
 <!-- -->
 <!-- -->
@@ -317,14 +317,14 @@
 <p>~:@( converts every lowercase character to the corresponding uppercase character.</p>
 <p>In this example ~@( is used to cause the first word produced by ~@R to be capitalized:</p>
 <p>(format nil &quot;~@R ~(~@R~)&quot; 14 14)</p>
-<p><em>→</em> &quot;XIV xiv&quot;</p>
-<p>(defun f (n) (format nil &quot;~@(~R~) error~<!-- -->:P<!-- --> detected.&quot; n)) <em>→</em> F</p>
-<p>(f 0) <em>→</em> &quot;Zero errors detected.&quot;</p>
-<p>(f 1) <em>→</em> &quot;One error detected.&quot;</p>
-<p>(f 23) <em>→</em> &quot;Twenty-three errors detected.&quot;</p>
+<p>→ &quot;XIV xiv&quot;</p>
+<p>(defun f (n) (format nil &quot;~@(~R~) error~<!-- -->:P<!-- --> detected.&quot; n)) → F</p>
+<p>(f 0) → &quot;Zero errors detected.&quot;</p>
+<p>(f 1) → &quot;One error detected.&quot;</p>
+<p>(f 23) → &quot;Twenty-three errors detected.&quot;</p>
 <p>When case conversions appear nested, the outer conversion dominates, as illustrated in the following example:</p>
 <p>(format nil &quot;~@(how is ~:(BOB SMITH~)?~)&quot;)</p>
-<p><em>→</em> &quot;How is bob smith?&quot;</p>
+<p>→ &quot;How is bob smith?&quot;</p>
 <p><i><sup>not</sup> →</i> &quot;How is Bob Smith?&quot;</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="22382-tilde-right">22.3.8.2 Tilde Right<a href="#22382-tilde-right" class="hash-link" aria-label="Direct link to 22.3.8.2 Tilde Right" title="Direct link to 22.3.8.2 Tilde Right">​</a></h3>
 <!-- -->
@@ -334,9 +334,9 @@
 <p>If <em>arg</em> is not <strong>eql</strong> to the integer 1, a lowercase s is printed; if <em>arg</em> is <strong>eql</strong> to 1, nothing is printed. If <em>arg</em> is a floating-point 1.0, the s is printed.</p>
 <p>~<!-- -->:P<!-- --> does the same thing, after doing a ~:* to back up one argument; that is, it prints a lowercase s if the previous argument was not 1.</p>
 <p>~@P prints y if the argument is 1, or ies if it is not. ~:@P does the same thing, but backs up first.</p>
-<p>(format nil &quot;~D tr~:@P/~D win~<!-- -->:P<!-- -->&quot; 7 1) <em>→</em> &quot;7 tries/1 win&quot;</p>
-<p>(format nil &quot;~D tr~:@P/~D win~<!-- -->:P<!-- -->&quot; 1 0) <em>→</em> &quot;1 try/0 wins&quot;</p>
-<p>(format nil &quot;~D tr~:@P/~D win~<!-- -->:P<!-- -->&quot; 1 3) <em>→</em> &quot;1 try/3 wins&quot;</p>
+<p>(format nil &quot;~D tr~:@P/~D win~<!-- -->:P<!-- -->&quot; 7 1) → &quot;7 tries/1 win&quot;</p>
+<p>(format nil &quot;~D tr~:@P/~D win~<!-- -->:P<!-- -->&quot; 1 0) → &quot;1 try/0 wins&quot;</p>
+<p>(format nil &quot;~D tr~:@P/~D win~<!-- -->:P<!-- -->&quot; 1 3) → &quot;1 try/3 wins&quot;</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="2239-format-miscellaneous-pseudo">22.3.9 FORMAT Miscellaneous Pseudo<a href="#2239-format-miscellaneous-pseudo" class="hash-link" aria-label="Direct link to 22.3.9 FORMAT Miscellaneous Pseudo" title="Direct link to 22.3.9 FORMAT Miscellaneous Pseudo">​</a></h2>
 <!-- -->
 <!-- -->
@@ -350,9 +350,9 @@
 <p>but no more segments are processed before doing the justification. ~<i><sup>∧</sup></i> may appear anywhere in a ~{ construct.</p>
 <p>(setq donestr &quot;Done.~<i><sup>∧</sup></i> ~D warning~<!-- -->:P<!-- -->.~<i><sup>∧</sup></i> ~D error~<!-- -->:P<!-- -->.&quot;)</p>
 <p><i>→</i> &quot;Done.~<i><sup>∧</sup></i> ~D warning~<!-- -->:P<!-- -->.~<i><sup>∧</sup></i> ~D error~<!-- -->:P<!-- -->.&quot;</p>
-<p>(format nil donestr) <em>→</em> &quot;Done.&quot;</p>
-<p>(format nil donestr 3) <em>→</em> &quot;Done. 3 warnings.&quot;</p>
-<p>(format nil donestr 1 5) <em>→</em> &quot;Done. 1 warning. 5 errors.&quot;</p>
+<p>(format nil donestr) → &quot;Done.&quot;</p>
+<p>(format nil donestr 3) → &quot;Done. 3 warnings.&quot;</p>
+<p>(format nil donestr 1 5) → &quot;Done. 1 warning. 5 errors.&quot;</p>
 <p>If a prefix parameter is given, then termination occurs if the parameter is zero. (Hence ~<i><sup>∧</sup></i> is equivalent to ~#<i><sup>∧</sup></i>.) If two parameters are given, termination occurs if they are equal. If three parameters are given, termination occurs if the first is less than or equal to the second and the second is less than or equal to the third. Of course, this is useless if all the prefix parameters are constants; at least one of them should be a # or a V parameter.</p>
 <p>If ~<i><sup>∧</sup></i> is used within a ~:{ construct, then it terminates the current iteration step because in the standard case it tests for remaining arguments of the current step only; the next iteration step commences immediately. ~:<i><sup>∧</sup></i> is used to terminate the iteration process. ~:<i><sup>∧</sup></i> may be used only if the command it would terminate is ~:{ or ~:@{. The entire iteration process is terminated if and only if the sublist that is supplying the arguments for the current iteration step is the last sublist in the case of ~:{, or the last <b>format</b> argument in the case of ~:@{. ~:<i><sup>∧</sup></i> is not equivalent to ~#:<i><sup>∧</sup></i>; the latter terminates the entire iteration if and only if no arguments remain for the current iteration step. For example:</p>
 <p>(format nil &quot;~:{~@?~:<i><sup>∧</sup></i>...~}&quot; ’((&quot;a&quot;) (&quot;b&quot;))) <i>→</i> &quot;a...b&quot;</p>
@@ -360,16 +360,16 @@
 <p>If ~<i><sup>∧</sup></i> appears within a ~[ or ~( construct, then all the commands up to the ~<i><sup>∧</sup></i> are properly selected or case-converted, the ~[ or ~( processing is terminated, and the outward search continues for a ~{ or ~&lt; construct to be terminated. For example:</p>
 <p>(setq tellstr &quot;~@(~@[~R~]~<i><sup>∧</sup></i> ~A!~)&quot;)</p>
 <p><i>→</i> &quot;~@(~@[~R~]~<i><sup>∧</sup></i> ~A!~)&quot;</p>
-<p>(format nil tellstr 23) <em>→</em> &quot;Twenty-three!&quot;</p>
-<p>(format nil tellstr nil &quot;losers&quot;) <em>→</em> &quot; Losers!&quot;</p>
-<p>(format nil tellstr 23 &quot;losers&quot;) <em>→</em> &quot;Twenty-three losers!&quot;</p>
+<p>(format nil tellstr 23) → &quot;Twenty-three!&quot;</p>
+<p>(format nil tellstr nil &quot;losers&quot;) → &quot; Losers!&quot;</p>
+<p>(format nil tellstr 23 &quot;losers&quot;) → &quot;Twenty-three losers!&quot;</p>
 <p>Following are examples of the use of ~<i><sup>∧</sup></i> within a ~&lt; construct.</p>
 <p>(format nil &quot;~15&lt;~S~;~<i><sup>∧</sup></i>~S~;~<i><sup>∧</sup></i>~S~&gt;&quot; ’foo)</p>
-<p><em>→</em> &quot; FOO&quot;</p>
+<p>→ &quot; FOO&quot;</p>
 <p>(format nil &quot;~15&lt;~S~;~<i><sup>∧</sup></i>~S~;~<i><sup>∧</sup></i>~S~&gt;&quot; ’foo ’bar)</p>
-<p><em>→</em> &quot;FOO BAR&quot;</p>
+<p>→ &quot;FOO BAR&quot;</p>
 <p>(format nil &quot;~15&lt;~S~;~<i><sup>∧</sup></i>~S~;~<i><sup>∧</sup></i>~S~&gt;&quot; ’foo ’bar ’baz)</p>
-<p><em>→</em> &quot;FOO BAR BAZ&quot;</p>
+<p>→ &quot;FOO BAR BAZ&quot;</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="22393-tilde-newline">22.3.9.3 Tilde Newline<a href="#22393-tilde-newline" class="hash-link" aria-label="Direct link to 22.3.9.3 Tilde Newline" title="Direct link to 22.3.9.3 Tilde Newline">​</a></h3>
 <!-- -->
 <p><em>Tilde</em> immediately followed by a <em>newline</em> ignores the <em>newline</em> and any following non-newline <em>whitespace</em><sub>1</sub> characters. With a :, the <em>newline</em> is ignored, but any following <em>whitespace</em><sub>1</sub> is left in place. With an @, the <em>newline</em> is left in place, but any following <em>whitespace</em><sub>1</sub> is ignored. For example:</p>
@@ -411,43 +411,43 @@
 <p>The consequences are undefined if <em>colon</em> or <em>at-sign</em> modifiers are given to a directive in a combination not specifically described here as being meaningful.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="22311-examples-of-format">22.3.11 Examples of FORMAT<a href="#22311-examples-of-format" class="hash-link" aria-label="Direct link to 22.3.11 Examples of FORMAT" title="Direct link to 22.3.11 Examples of FORMAT">​</a></h2>
 <!-- -->
-<p>(format nil &quot;foo&quot;) <em>→</em> &quot;foo&quot;</p>
-<p>(setq x 5) <em>→</em> 5</p>
-<p>(format nil &quot;The answer is ~D.&quot; x) <em>→</em> &quot;The answer is 5.&quot;</p>
-<p>(format nil &quot;The answer is ~3D.&quot; x) <em>→</em> &quot;The answer is 5.&quot;</p>
-<p>(format nil &quot;The answer is ~3,’0D.&quot; x) <em>→</em> &quot;The answer is 005.&quot;</p>
+<p>(format nil &quot;foo&quot;) → &quot;foo&quot;</p>
+<p>(setq x 5) → 5</p>
+<p>(format nil &quot;The answer is ~D.&quot; x) → &quot;The answer is 5.&quot;</p>
+<p>(format nil &quot;The answer is ~3D.&quot; x) → &quot;The answer is 5.&quot;</p>
+<p>(format nil &quot;The answer is ~3,’0D.&quot; x) → &quot;The answer is 005.&quot;</p>
 <p>(format nil &quot;The answer is ~<!-- -->:D<!-- -->.&quot; (expt 47 x))</p>
-<p><em>→</em> &quot;The answer is 229,345,007.&quot;</p>
-<p>(setq y &quot;elephant&quot;) <em>→</em> &quot;elephant&quot;</p>
-<p>(format nil &quot;Look at the ~A!&quot; y) <em>→</em> &quot;Look at the elephant!&quot;</p>
-<p>(setq n 3) <em>→</em> 3</p>
-<p>(format nil &quot;~D item~<!-- -->:P<!-- --> found.&quot; n) <em>→</em> &quot;3 items found.&quot;</p>
+<p>→ &quot;The answer is 229,345,007.&quot;</p>
+<p>(setq y &quot;elephant&quot;) → &quot;elephant&quot;</p>
+<p>(format nil &quot;Look at the ~A!&quot; y) → &quot;Look at the elephant!&quot;</p>
+<p>(setq n 3) → 3</p>
+<p>(format nil &quot;~D item~<!-- -->:P<!-- --> found.&quot; n) → &quot;3 items found.&quot;</p>
 <p>(format nil &quot;~R dog~:[s are~; is~] here.&quot; n (= n 1))</p>
-<p><em>→</em> &quot;three dogs are here.&quot;</p>
+<p>→ &quot;three dogs are here.&quot;</p>
 <p>(format nil &quot;~R dog~:*~[s are~; is~:;s are~] here.&quot; n)</p>
-<p><em>→</em> &quot;three dogs are here.&quot;</p>
+<p>→ &quot;three dogs are here.&quot;</p>
 <p>(format nil &quot;Here ~[are~;is~:;are~] ~:*~R pupp~:@P.&quot; n)</p>
-<p><em>→</em> &quot;Here are three puppies.&quot;</p>
+<p>→ &quot;Here are three puppies.&quot;</p>
 <p>(defun foo (x)</p>
 <p>(format nil &quot;~6,2F|~6,2,1,’*F|~6,2„’?F|~6F|~,2F|~F&quot;</p>
-<p>x x x x x x)) <em>→</em> FOO</p>
-<p>(foo 3.14159) <em>→</em> &quot; 3.14| 31.42| 3.14|3.1416|3.14|3.14159&quot;</p>
-<p>(foo -3.14159) <em>→</em> &quot; -3.14|-31.42| -3.14|-3.142|-3.14|-3.14159&quot;</p>
-<p>(foo 100.0) <em>→</em> &quot;100.00|******|100.00| 100.0|100.00|100.0&quot;</p>
-<p>(foo 1234.0) <em>→</em> &quot;1234.00|******|??????|1234.0|1234.00|1234.0&quot;</p>
-<p>(foo 0.006) <em>→</em> &quot; 0.01| 0.06| 0.01| 0.006|0.01|0.006&quot;</p>
+<p>x x x x x x)) → FOO</p>
+<p>(foo 3.14159) → &quot; 3.14| 31.42| 3.14|3.1416|3.14|3.14159&quot;</p>
+<p>(foo -3.14159) → &quot; -3.14|-31.42| -3.14|-3.142|-3.14|-3.14159&quot;</p>
+<p>(foo 100.0) → &quot;100.00|******|100.00| 100.0|100.00|100.0&quot;</p>
+<p>(foo 1234.0) → &quot;1234.00|******|??????|1234.0|1234.00|1234.0&quot;</p>
+<p>(foo 0.006) → &quot; 0.01| 0.06| 0.01| 0.006|0.01|0.006&quot;</p>
 <p>(defun foo (x)</p>
 <p>(format nil</p>
-<p>&quot;~9,2,1„  ’*E|~10,3,2,2,’?„’$E|~</p>
+<p>&quot;~9,2,1„’*E|~10,3,2,2,’?„’$E|~</p>
 <p>~9,3,2,-2,’%@E|~9,2E&quot;</p>
 <p>x x x x))</p>
-<p>(foo 3.14159) <em>→</em> &quot; 3.14E+0| 31.42$-01|+.003E+03| 3.14E+0&quot;</p>
-<p>(foo -3.14159) <em>→</em> &quot; -3.14E+0|-31.42$-01|-.003E+03| -3.14E+0&quot;</p>
-<p>(foo 1100.0) <em>→</em> &quot; 1.10E+3| 11.00$+02|+.001E+06| 1.10E+3&quot;</p>
-<p>(foo 1100.0L0) <em>→</em> &quot; 1.10L+3| 11.00$+02|+.001L+06| 1.10L+3&quot;</p>
-<p>(foo 1.1E13) <em>→</em> &quot;*********| 11.00$+12|+.001E+16| 1.10E+13&quot;</p>
-<p>(foo 1.1L120) <em>→</em> &quot;*********|??????????|%%%%%%%%%|1.10L+120&quot;</p>
-<p>(foo 1.1L1200) <em>→</em> &quot;*********|??????????|%%%%%%%%%|1.10L+1200&quot;</p>
+<p>(foo 3.14159) → &quot; 3.14E+0| 31.42$-01|+.003E+03| 3.14E+0&quot;</p>
+<p>(foo -3.14159) → &quot; -3.14E+0|-31.42$-01|-.003E+03| -3.14E+0&quot;</p>
+<p>(foo 1100.0) → &quot; 1.10E+3| 11.00$+02|+.001E+06| 1.10E+3&quot;</p>
+<p>(foo 1100.0L0) → &quot; 1.10L+3| 11.00$+02|+.001L+06| 1.10L+3&quot;</p>
+<p>(foo 1.1E13) → &quot;*********| 11.00$+12|+.001E+16| 1.10E+13&quot;</p>
+<p>(foo 1.1L120) → &quot;*********|??????????|%%%%%%%%%|1.10L+120&quot;</p>
+<p>(foo 1.1L1200)  → &quot;*********|??????????|%%%%%%%%%|1.10L+1200&quot;</p>
 <p>As an example of the effects of varying the scale factor, the code</p>
 <p>(dotimes (k 13)</p>
 <p>(format t &quot;~%Scale factor ~2D: |~13,6,2,VE|&quot;</p>
@@ -468,16 +468,16 @@
 <p>Scale factor 7: | 3141590.E-06|</p>
 <p>(defun foo (x)</p>
 <p>(format nil &quot;~9,2,1„’*G|~9,3,2,3,’?„’$G|~9,3,2,0,’%G|~9,2G&quot; x x x x))</p>
-<p>(foo 0.0314159) <em>→</em> &quot; 3.14E-2|314.2$-04|0.314E-01| 3.14E-2&quot; (foo 0.314159) <em>→</em> &quot; 0.31 |0.314 |0.314 | 0.31 &quot; (foo 3.14159) <em>→</em> &quot; 3.1 | 3.14 | 3.14 | 3.1 &quot; (foo 31.4159) <em>→</em> &quot; 31. | 31.4 | 31.4 | 31. &quot; (foo 314.159) <em>→</em> &quot; 3.14E+2| 314. | 314. | 3.14E+2&quot; (foo 3141.59) <em>→</em> &quot; 3.14E+3|314.2$+01|0.314E+04| 3.14E+3&quot; (foo 3141.59L0) <em>→</em> &quot; 3.14L+3|314.2$+01|0.314L+04| 3.14L+3&quot; (foo 3.14E12) <em>→</em> &quot;*********|314.0$+10|0.314E+13| 3.14E+12&quot; (foo 3.14L120) <em>→</em> &quot;*********|?????????|%%%%%%%%%|3.14L+120&quot; (foo 3.14L1200) <em>→</em> &quot;*********|?????????|%%%%%%%%%|3.14L+1200&quot;</p>
-<p>(format nil &quot;~10&lt;foo~;bar~&gt;&quot;) <em>→</em> &quot;foo bar&quot;</p>
-<p>(format nil &quot;~10:&lt;foo~;bar~&gt;&quot;) <em>→</em> &quot; foo bar&quot;</p>
-<p>(format nil &quot;~10&lt;foobar~&gt;&quot;) <em>→</em> &quot; foobar&quot;</p>
-<p>(format nil &quot;~10:&lt;foobar~&gt;&quot;) <em>→</em> &quot; foobar&quot;</p>
-<p>(format nil &quot;~10:@&lt;foo~;bar~&gt;&quot;) <em>→</em> &quot; foo bar &quot;</p>
-<p>(format nil &quot;~10@&lt;foobar~&gt;&quot;) <em>→</em> &quot;foobar &quot;</p>
-<p>(format nil &quot;~10:@&lt;foobar~&gt;&quot;) <em>→</em> &quot; foobar &quot;</p>
+<p>(foo 0.0314159) → &quot; 3.14E-2|314.2$-04|0.314E-01| 3.14E-2&quot; (foo 0.314159) → &quot; 0.31 |0.314 |0.314 | 0.31 &quot; (foo 3.14159) → &quot; 3.1 | 3.14 | 3.14 | 3.1 &quot; (foo 31.4159) → &quot; 31. | 31.4 | 31.4 | 31. &quot; (foo 314.159) → &quot; 3.14E+2| 314. | 314. | 3.14E+2&quot; (foo 3141.59) → &quot; 3.14E+3|314.2$+01|0.314E+04| 3.14E+3&quot; (foo 3141.59L0) → &quot; 3.14L+3|314.2$+01|0.314L+04| 3.14L+3&quot; (foo 3.14E12) → &quot;*********|314.0$+10|0.314E+13| 3.14E+12&quot; (foo 3.14L120) → &quot;*********|?????????|%%%%%%%%%|3.14L+120&quot; (foo 3.14L1200) → &quot;*********|?????????|%%%%%%%%%|3.14L+1200&quot;</p>
+<p>(format nil &quot;~10&lt;foo~;bar~&gt;&quot;) → &quot;foo bar&quot;</p>
+<p>(format nil &quot;~10:&lt;foo~;bar~&gt;&quot;) → &quot; foo bar&quot;</p>
+<p>(format nil &quot;~10&lt;foobar~&gt;&quot;) → &quot; foobar&quot;</p>
+<p>(format nil &quot;~10:&lt;foobar~&gt;&quot;) → &quot; foobar&quot;</p>
+<p>(format nil &quot;~10:@&lt;foo~;bar~&gt;&quot;) → &quot; foo bar &quot;</p>
+<p>(format nil &quot;~10@&lt;foobar~&gt;&quot;) → &quot;foobar &quot;</p>
+<p>(format nil &quot;~10:@&lt;foobar~&gt;&quot;) → &quot; foobar &quot;</p>
 <p>(FORMAT NIL &quot;Written to ~A.&quot; #P&quot;foo.bin&quot;)</p>
-<p><em>→</em> &quot;Written to foo.bin.&quot;</p>
+<p>→ &quot;Written to foo.bin.&quot;</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="22312-notes-about-format">22.3.12 Notes about FORMAT<a href="#22312-notes-about-format" class="hash-link" aria-label="Direct link to 22.3.12 Notes about FORMAT" title="Direct link to 22.3.12 Notes about FORMAT">​</a></h2>
 <!-- -->
 <!-- -->
@@ -509,10 +509,10 @@
 <p><strong>Examples:</strong></p>
 <p>(funcall (formatter &quot;~&amp;~A~A&quot;) *standard-output* ’a ’b ’c)</p>
 <p>▷ AB</p>
-<p><em>→</em> (C)</p>
+<p>→ (C)</p>
 <p>(format t (formatter &quot;~&amp;~A~A&quot;) ’a ’b ’c)</p>
 <p>▷ AB</p>
-<p><em>→</em> NIL</p>
+<p>→ NIL</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>Might signal an error (at macro expansion time or at run time) if the argument is not a valid <em>format string</em>.</p>
 <p><strong>See Also:</strong></p>
@@ -607,7 +607,7 @@
 <p><strong>Syntax:</strong></p>
 <p><strong>pprint-logical-block</strong> (<em>stream-symbol object</em> &amp;key <em>prefix per-line-prefix suffix</em>)</p>
 <p><em>{declaration}</em>* <em>{form}</em>*</p>
-<p><em>→</em> <strong>nil</strong></p>
+<p>→ <strong>nil</strong></p>
 <p><strong>Arguments and Values:</strong></p>
 <p><em>stream-symbol</em>—a <em>stream variable designator</em> .</p>
 <p><em>object</em>—an <em>object</em>; evaluated.</p>
@@ -746,7 +746,7 @@
 <p><strong>pprint-fill</strong>, <strong>pprint-logical-block</strong>, <strong>pprint-pop</strong>, <strong>write</strong>, <strong>*print-readably*</strong>, <strong>*print-escape*</strong>, <strong>*print-pretty*</strong>, <strong>*print-length*</strong>, Section 22.1.3 (Default Print-Object Methods), Section 22.1.3.12 (Printing Structures), Section 22.2.1.4 (Pretty Print Dispatch Tables), Section 22.2.2 (Examples of using the Pretty Printer)</p>
 <p><strong>print-unreadable-object</strong> <em>Macro</em></p>
 <p><strong>Syntax:</strong></p>
-<p><strong>print-unreadable-object</strong> (<em>object stream</em> &amp;key <em>type identity</em>) <em>{form}</em>* <em>→</em> <strong>nil</strong></p>
+<p><strong>print-unreadable-object</strong> (<em>object stream</em> &amp;key <em>type identity</em>) <em>{form}</em>* → <strong>nil</strong></p>
 <p><strong>Arguments and Values:</strong></p>
 <p><em>object</em>—an <em>object</em>; evaluated.</p>
 <p><em>stream</em>—a <em>stream designator</em> ; evaluated.</p>
@@ -762,7 +762,7 @@
 <p>(print-unreadable-object (obj stream <!-- -->:type<!-- --> t <!-- -->:identity<!-- --> t)</p>
 <p>(princ (tail-number obj) stream)))</p>
 <p>(prin1-to-string my-airplane)</p>
-<p><em>→</em> &quot;#&lt;Airplane NW0773 36000123135&gt;&quot;</p>
+<p>→ &quot;#&lt;Airplane NW0773 36000123135&gt;&quot;</p>
 <p><i><sup>or</sup>→</i> &quot;#&lt;FAA<!-- -->:AIRPLANE<!-- --> NW0773 17&gt;&quot;</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>If <strong>*print-readably*</strong> is <em>true</em>, <strong>print-unreadable-object</strong> signals an error of <em>type</em> <strong>print-not-readable</strong> without printing anything.</p>
@@ -791,7 +791,7 @@
 <p><strong>write</strong> <em>object</em> &amp;key <em>array base case circle escape gensym</em></p>
 <p><em>length level lines miser-width pprint-dispatch</em></p>
 <p><em>pretty radix readably right-margin stream</em></p>
-<p><em>→ object</em></p>
+<p>→ object</p>
 <p><strong>prin1</strong> <em>object</em> &amp;optional <em>output-stream → object</em></p>
 <p><strong>princ</strong> <em>object</em> &amp;optional <em>output-stream → object</em></p>
 <p><strong>write, prin1, print, pprint, princ</strong></p>
@@ -852,7 +852,7 @@
 <p><strong>write-to-string</strong> <em>object</em> &amp;key <em>array base case circle escape gensym</em></p>
 <p><em>length level lines miser-width pprint-dispatch</em></p>
 <p><em>pretty radix readably right-margin</em></p>
-<p><em>→ string</em></p>
+<p>→ string</p>
 <p><strong>prin1-to-string</strong> <em>object → string</em></p>
 <p><strong>princ-to-string</strong> <em>object → string</em></p>
 <p><strong>Arguments and Values:</strong></p>
@@ -882,8 +882,8 @@
 <p>All other keywords that would be specified to <strong>write-to-string</strong> are default values when <strong>prin1-to-string</strong> or <strong>princ-to-string</strong> is invoked.</p>
 <p>The meanings and defaults for the keyword arguments to <strong>write-to-string</strong> are the same as those for <strong>write</strong>.</p>
 <p><strong>Examples:</strong></p>
-<p>(prin1-to-string &quot;abc&quot;) <em>→</em> &quot;&quot;abc&quot;&quot;</p>
-<p>(princ-to-string &quot;abc&quot;) <em>→</em> &quot;abc&quot;</p>
+<p>(prin1-to-string &quot;abc&quot;) → &quot;&quot;abc&quot;&quot;</p>
+<p>(princ-to-string &quot;abc&quot;) → &quot;abc&quot;</p>
 <p><strong>Affected By:</strong></p>
 <p><strong>*print-escape*</strong>, <strong>*print-radix*</strong>, <strong>*print-base*</strong>, <strong>*print-circle*</strong>, <strong>*print-pretty*</strong>, <strong>*print-level*</strong>, <strong>*print-length*</strong>, <strong>*print-case*</strong>, <strong>*print-gensym*</strong>, <strong>*print-array*</strong>, <strong>*read-default-float-format*</strong>.</p>
 <p><strong>See Also:</strong></p>
@@ -921,9 +921,9 @@
 <p>(let ((*print-base* 24.) (*print-radix* t))</p>
 <p>(print 23.))</p>
 <p>▷ #24rN</p>
-<p><em>→</em> 23</p>
-<p>(setq *print-base* 10) <em>→</em> 10</p>
-<p>(setq *print-radix* nil) <em>→</em> NIL</p>
+<p>→ 23</p>
+<p>(setq *print-base* 10) → 10</p>
+<p>(setq *print-radix* nil) → NIL</p>
 <p>(dotimes (i 35)</p>
 <p>(let ((*print-base* (+ i 2))) ;print the decimal number 40</p>
 <p>(write 40) ;in each base from 2 to 36</p>
@@ -933,7 +933,7 @@
 <p>▷ 31 2C 2A 28 26 24 22 20 1J 1I</p>
 <p>▷ 1H 1G 1F 1E 1D 1C 1B 1A 19 18</p>
 <p>▷ 17 16 15 14</p>
-<p><em>→</em> NIL</p>
+<p>→ NIL</p>
 <p>(dolist (pb ’(2 3 8 10 16))</p>
 <p>(let ((*print-radix* t) ;print the integer 10 and</p>
 <p>(*print-base* pb)) ;the ratio 1/10 in bases 2,</p>
@@ -943,7 +943,7 @@
 <p>▷ #o12 #o1/12</p>
 <p>▷ 10. #10r1/10</p>
 <p>▷ #xA #x1/A</p>
-<p><em>→</em> NIL</p>
+<p>→ NIL</p>
 <p><strong>Affected By:</strong></p>
 <p>Might be <em>bound</em> by <strong>format</strong>, and <strong>write</strong>, <strong>write-to-string</strong>.</p>
 <p><strong>See Also:</strong></p>
@@ -960,7 +960,7 @@
 <p>(defun test-print-case ()</p>
 <p>(dolist (*print-case* ’(<!-- -->:upcase<!-- --> <!-- -->:downcase<!-- --> <!-- -->:capitalize<!-- -->))</p>
 <p>(format t &quot;~&amp;~S <del>S</del>%&quot; ’this-and-that ’|And-something-elSE|)))</p>
-<p><em>→</em> TEST-PC</p>
+<p>→ TEST-PC</p>
 <p>;; Although the choice of which characters to escape is specified by</p>
 <p>;; *PRINT-CASE*, the choice of how to escape those characters</p>
 <p>;; (i.e., whether single escapes or multiple escapes are used)</p>
@@ -970,12 +970,12 @@
 <p>▷ THIS-AND-THAT |And-something-elSE|</p>
 <p>▷ this-and-that a\n\d-\s\o\m\e\t\h\i\n\g-\e\lse</p>
 <p>▷ This-And-That A\n\d-\s\o\m\e\t\h\i\n\g-\e\lse</p>
-<p><em>→</em> NIL</p>
+<p>→ NIL</p>
 <p>(test-print-case) ;Implementation B</p>
 <p>▷ THIS-AND-THAT |And-something-elSE|</p>
 <p>▷ this-and-that a|nd-something-el|se</p>
 <p>▷ This-And-That A|nd-something-el|se</p>
-<p><em>→</em> NIL</p>
+<p>→ NIL</p>
 <p><strong>See Also:</strong></p>
 <p><strong>write</strong></p>
 <p><strong>Notes:</strong></p>
@@ -1000,7 +1000,7 @@
 <p>(write a)</p>
 <p>:done<!-- -->))</p>
 <p>▷ #1=(1 2 3 . #1#)</p>
-<p><em>→</em> <!-- -->:DONE</p>
+<p>→ <!-- -->:DONE</p>
 <p><strong>See Also:</strong></p>
 <p><strong>write</strong></p>
 <p><strong>Notes:</strong></p>
@@ -1017,10 +1017,10 @@
 <p><strong>Examples:</strong></p>
 <p>(let ((*print-escape* t)) (write #\a))</p>
 <p>▷ #\a</p>
-<p><em>→</em> #\a</p>
+<p>→ #\a</p>
 <p>(let ((*print-escape* nil)) (write #\a))</p>
 <p>▷ a</p>
-<p><em>→</em> #\a</p>
+<p>→ #\a</p>
 <p><strong>Affected By:</strong></p>
 <p><strong>princ</strong>, <strong>prin1</strong>, <strong>format</strong></p>
 <p><strong>See Also:</strong></p>
@@ -1037,7 +1037,7 @@
 <p>(let ((*print-gensym* nil))</p>
 <p>(print (gensym)))</p>
 <p>▷ G6040</p>
-<p><em>→</em> #<!-- -->:G6040</p>
+<p>→ #<!-- -->:G6040</p>
 <p><strong>See Also:</strong></p>
 <p><strong>write</strong>, <strong>*print-escape*</strong></p>
 <p><em>∗</em><strong>print-level</strong><em>∗</em>**,** <em>∗</em><strong>print-length</strong><em>∗</em></p>
@@ -1052,7 +1052,7 @@
 <p><strong>*print-length*</strong> controls how many elements at a given level are printed. If it is <em>false</em>, there is no limit to the number of components printed. Otherwise, it is an <em>integer</em> indicating the maximum number of <em>elements</em> of an <em>object</em> to be printed. If exceeded, the printer will print “...” in place of the other <em>elements</em>. In the case of a <em>dotted list</em>, if the <em>list</em> contains exactly as many <em>elements</em> as the <em>value</em> of <strong>*print-length*</strong>, the terminating <em>atom</em> is printed rather than printing “...”</p>
 <p><strong>*print-level*</strong> and <strong>*print-length*</strong> affect the printing of an any <em>object</em> printed with a list-like syntax. They do not affect the printing of <em>symbols</em>, <em>strings</em>, and <em>bit vectors</em>.</p>
 <p><strong>Examples:</strong></p>
-<p>(setq a ’(1 (2 (3 (4 (5 (6))))))) <em>→</em> (1 (2 (3 (4 (5 (6))))))</p>
+<p>(setq a ’(1 (2 (3 (4 (5 (6))))))) → (1 (2 (3 (4 (5 (6))))))</p>
 <p>(dotimes (i 8)</p>
 <p>(let ((*print-level* i))</p>
 <p>(format t &quot;~&amp;~D – <del>S</del>%&quot; i a)))</p>
@@ -1064,8 +1064,8 @@
 <p>▷ 5 – (1 (2 (3 (4 (5 #)))))</p>
 <p>▷ 6 – (1 (2 (3 (4 (5 (6))))))</p>
 <p>▷ 7 – (1 (2 (3 (4 (5 (6))))))</p>
-<p><em>→</em> NIL</p>
-<p>(setq a ’(1 2 3 4 5 6)) <em>→</em> (1 2 3 4 5 6)</p>
+<p>→ NIL</p>
+<p>(setq a ’(1 2 3 4 5 6)) → (1 2 3 4 5 6)</p>
 <p>(dotimes (i 7)</p>
 <p>(let ((*print-length* i))</p>
 <p>(format t &quot;~&amp;~D – <del>S</del>%&quot; i a)))</p>
@@ -1076,7 +1076,7 @@
 <p>▷ 4 – (1 2 3 4 ...)</p>
 <p>▷ 5 – (1 2 3 4 5 6)</p>
 <p>▷ 6 – (1 2 3 4 5 6)</p>
-<p><em>→</em> NIL</p>
+<p>→ NIL</p>
 <p>(dolist (level-length ’((0 1) (1 1) (1 2) (1 3) (1 4)</p>
 <p>(2 1) (2 2) (2 3) (3 2) (3 3) (3 4)))</p>
 <p>(let ((*print-level* (first level-length))</p>
@@ -1095,7 +1095,7 @@
 <p>▷ 3 2 – (IF (MEMBER X ...) ...)</p>
 <p>▷ 3 3 – (IF (MEMBER X Y) (+ (CAR X) 3) ...)</p>
 <p>▷ 3 4 – (IF (MEMBER X Y) (+ (CAR X) 3) ’(FOO . #(A B C D ...)))</p>
-<p><em>→</em> NIL</p>
+<p>→ NIL</p>
 <p><strong>See Also:</strong></p>
 <p><strong>write</strong></p>
 <p><em>∗</em><strong>print-lines</strong><em>∗ Variable</em></p>
@@ -1111,7 +1111,7 @@
 <p>▷ (PROGN (SETQ A 1</p>
 <p>▷ B 2</p>
 <p>▷ C 3 ..))</p>
-<p><em>→ hno valuesi</em></p>
+<p>→ hno valuesi</p>
 <p><strong>Notes:</strong></p>
 <p>The “..” notation is intentionally different than the “...” notation used for level abbreviation, so that the two different situations can be visually distinguished.</p>
 <p>This notation is used to increase the likelihood that the <em>Lisp reader</em> will signal an error if an attempt is later made to read the abbreviated output. Note however that if the truncation occurs in a <em>string</em>, as in &quot;This string has been trunc..&quot;, the problem situation cannot be detected later and no such error will be signaled.</p>
@@ -1144,17 +1144,17 @@
 <p>If it is <em>true</em>, the <em>pretty printer</em> is used, and the <em>Lisp printer</em> will endeavor to insert extra <em>whitespace</em><sub>1</sub> where appropriate to make <em>expressions</em> more readable.</p>
 <p><strong>*print-pretty*</strong> has an effect even when the <em>value</em> of <strong>*print-escape*</strong> is <em>false</em>.</p>
 <p><strong>Examples:</strong></p>
-<p>(setq *print-pretty* ’nil) <em>→</em> NIL</p>
+<p>(setq *print-pretty* ’nil) → NIL</p>
 <p>(progn (write ’(let ((a 1) (b 2) (c 3)) (+ a b c))) nil)</p>
 <p>▷ (LET ((A 1) (B 2) (C 3)) (+ A B C))</p>
-<p><em>→</em> NIL</p>
+<p>→ NIL</p>
 <p>(let ((*print-pretty* t))</p>
 <p>(progn (write ’(let ((a 1) (b 2) (c 3)) (+ a b c))) nil))</p>
 <p>▷ (LET ((A 1)</p>
 <p>▷ (B 2)</p>
 <p>▷ (C 3))</p>
 <p>▷ (+ A B C))</p>
-<p><em>→</em> NIL</p>
+<p>→ NIL</p>
 <p>;; Note that the first two expressions printed by this next form</p>
 <p>;; differ from the second two only in whether escape characters are printed. ;; In all four cases, extra whitespace is inserted by the pretty printer.</p>
 <p>(flet ((test (x)</p>
@@ -1172,7 +1172,7 @@
 <p>▷ (LIST a b ’C #’D))</p>
 <p>▷ #’(LAMBDA ()</p>
 <p>▷ (LIST a b ’C #’D))</p>
-<p><em>→</em> NIL</p>
+<p>→ NIL</p>
 <p><strong>See Also:</strong></p>
 <p><strong>write</strong></p>
 <p><em>∗</em><strong>print-readably</strong><em>∗ Variable</em></p>
@@ -1200,12 +1200,12 @@
 <p>:done<!-- -->))</p>
 <p>▷ (a a G4581 ((A #) D E ...))</p>
 <p>▷ (&quot;a&quot; |a| #<!-- -->:G4581<!-- --> ((A (B (C))) D E F G))</p>
-<p><em>→</em> <!-- -->:DONE</p>
+<p>→ <!-- -->:DONE</p>
 <p>;; This is setup code is shared between the examples</p>
 <p>;; of three hypothetical implementations which follow.</p>
-<p>(setq table (make-hash-table)) <em>→</em> #&lt;HASH-TABLE EQL 0/120 32005763&gt;</p>
-<p>(setf (gethash table 1) ’one) <em>→</em> ONE</p>
-<p>(setf (gethash table 2) ’two) <em>→</em> TWO</p>
+<p>(setq table (make-hash-table)) → #&lt;HASH-TABLE EQL 0/120 32005763&gt;</p>
+<p>(setf (gethash table 1) ’one) → ONE</p>
+<p>(setf (gethash table 2) ’two) → TWO</p>
 <p>;; Implementation A</p>
 <p>(let ((*print-readably* t)) (print table))</p>
 <p>Error: Can’t print #&lt;HASH-TABLE EQL 0/120 32005763&gt; readably.</p>
@@ -1214,7 +1214,7 @@
 <p>;; but there might be an implementation-defined notation.</p>
 <p>(let ((*print-readably* t)) (print table))</p>
 <p>▷ #S(HASH-TABLE <!-- -->:TEST<!-- --> EQL <!-- -->:SIZE<!-- --> 120 <!-- -->:CONTENTS<!-- --> (1 ONE 2 TWO))</p>
-<p><em>→</em> #&lt;HASH-TABLE EQL 0/120 32005763&gt;</p>
+<p>→ #&lt;HASH-TABLE EQL 0/120 32005763&gt;</p>
 <p>;; Implementation C</p>
 <p>;; Note that #. notation can only be used if *READ-EVAL* is true.</p>
 <p>;; If *READ-EVAL* were false, this same implementation might have to</p>
@@ -1225,7 +1225,7 @@
 <p>▷ (SETF (GETHASH 1 HASH-TABLE) ONE)</p>
 <p>▷ (SETF (GETHASH 2 HASH-TABLE) TWO)</p>
 <p>▷ HASH-TABLE)</p>
-<p><em>→</em> #&lt;HASH-TABLE EQL 0/120 32005763&gt;</p>
+<p>→ #&lt;HASH-TABLE EQL 0/120 32005763&gt;</p>
 <p><strong>See Also:</strong></p>
 <p><strong>write</strong>, <strong>print-unreadable-object</strong></p>
 <p><strong>Notes:</strong></p>

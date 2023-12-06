@@ -9,7 +9,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.ad20780e.css">
-<script src="/cl-language-reference/assets/js/runtime~main.2c5242a7.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.810f012f.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.08468b7f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -28,7 +28,7 @@
 <p>This means that the <em>cdr</em> of the last <em>cons</em> in the <em>list</em> is not <strong>nil</strong>, but rather the <em>object</em> whose representation followed the dot. The above example might have been the result of evaluating</p>
 <p>(cons ’a (cons ’b (cons ’c ’d)))</p>
 <p>Similarly,</p>
-<p>(cons ’this-one ’that-one) <em>→</em> (this-one . that-one)</p>
+<p>(cons ’this-one ’that-one) → (this-one . that-one)</p>
 <p>It is permissible for the <em>object</em> following the dot to be a <em>list</em>:</p>
 <p>(a b c d . (e f . (g))) <em>≡</em> (a b c d e f g)</p>
 <p>For information on how the <em>Lisp printer</em> prints <em>lists</em> and <em>conses</em>, see Section 22.1.3.5 (Printing Lists and Conses).</p>
@@ -41,9 +41,9 @@
 <p>A <em>single-quote</em> introduces an <em>expression</em> to be “quoted.” <em>Single-quote</em> followed by an <em>expression exp</em> is treated by the <em>Lisp reader</em> as an abbreviation for and is parsed identically to the <em>expression</em> (quote <em>exp</em>). See the <em>special operator</em> <strong>quote</strong>.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="2431-examples-of-single">2.4.3.1 Examples of Single<a href="#2431-examples-of-single" class="hash-link" aria-label="Direct link to 2.4.3.1 Examples of Single" title="Direct link to 2.4.3.1 Examples of Single">​</a></h3>
 <!-- -->
-<p>’foo <em>→</em> FOO</p>
-<p>”foo <em>→</em> (QUOTE FOO)</p>
-<p>(car ”foo) <em>→</em> QUOTE</p>
+<p>’foo → FOO</p>
+<p>”foo → (QUOTE FOO)</p>
+<p>(car ”foo) → QUOTE</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="244-semicolon">2.4.4 Semicolon<a href="#244-semicolon" class="hash-link" aria-label="Direct link to 2.4.4 Semicolon" title="Direct link to 2.4.4 Semicolon">​</a></h2>
 <!-- -->
 <p><strong>Syntax:</strong> ;⟨text⟩</p>
@@ -52,7 +52,7 @@
 <!-- -->
 <p>(+ 3 ; three</p>
 <p>\4)</p>
-<p><em>→</em> 7</p>
+<p>→ 7</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="2442-notes-about-style-for-semicolon">2.4.4.2 Notes about Style for Semicolon<a href="#2442-notes-about-style-for-semicolon" class="hash-link" aria-label="Direct link to 2.4.4.2 Notes about Style for Semicolon" title="Direct link to 2.4.4.2 Notes about Style for Semicolon">​</a></h3>
 <!-- -->
 <p>Some text editors make assumptions about desired indentation based on the number of <em>semicolons</em> that begin a comment. The following style conventions are common, although not by any means universal.</p>
@@ -106,7 +106,7 @@
 <p>Where a comma occurs in the template, the <em>expression</em> following the comma is to be evaluated to produce an <em>object</em> to be inserted at that point. Assume b has the value 3, for example, then evaluating the <em>form</em> denoted by ‘(a b ,b ,(+ b 1) b) produces the result (a b 3 4 b).</p>
 <p>If a comma is immediately followed by an <em>at-sign</em>, then the <em>form</em> following the <em>at-sign</em> is evaluated to produce a <em>list</em> of <em>objects</em>. These <em>objects</em> are then “spliced” into place in the template. For example, if x has the value (a b c), then</p>
 <p>‘(x ,x ,@x foo ,(cadr x) bar ,(cdr x) baz ,@(cdr x))</p>
-<p><em>→</em> (x (a b c) a b c foo b bar (b c) baz b c)</p>
+<p>→ (x (a b c) a b c foo b bar (b c) baz b c)</p>
 <p>The backquote syntax can be summarized formally as follows.</p>
 <p><em>•</em> ‘<em>basic</em> is the same as ’<em>basic</em>, that is, (quote <em>basic</em>), for any <em>expression basic</em> that is not a <em>list</em> or a general <em>vector</em> .</p>
 <p><em>•</em> ‘,<em>form</em> is the same as <em>form</em>, for any <em>form</em>, provided that the representation of <em>form</em> does not begin with <em>at-sign</em> or <em>dot</em>. (A similar caveat holds for all occurrences of a form after a <em>comma</em>.)</p>
@@ -321,13 +321,13 @@
 <p>;;; so nesting works naturally.</p>
 <p>(defun mention-fun-fact-1a ()</p>
 <p>(format t &quot;CL uses ; and #|...|# in comments.&quot;))</p>
-<p><em>→</em> MENTION-FUN-FACT-1A</p>
+<p>→ MENTION-FUN-FACT-1A</p>
 <p>(mention-fun-fact-1a)</p>
 <p>▷ CL uses ; and #|...|# in comments.</p>
-<p><em>→</em> NIL</p>
+<p>→ NIL</p>
 <p>#| (defun mention-fun-fact-1b ()</p>
 <p>(format t &quot;CL uses ; and #|...|# in comments.&quot;)) |#</p>
-<p>(fboundp ’mention-fun-fact-1b) <em>→</em> NIL</p>
+<p>(fboundp ’mention-fun-fact-1b) → NIL</p>
 <p>;;; In this example, vertical-bar followed by sharpsign needed to appear</p>
 <p>;;; in a string without any matching sharpsign followed by vertical-bar</p>
 <p>;;; having preceded this. To compensate, the programmer has included a</p>
@@ -336,13 +336,13 @@
 <p>;;; allowing the outer #| ... |# pair match. If the slash were not present, ;;; the outer comment would terminate prematurely.</p>
 <p>(defun mention-fun-fact-2a ()</p>
 <p>(format t &quot;Don’t use |# unmatched or you’ll get in trouble!&quot;))</p>
-<p><em>→</em> MENTION-FUN-FACT-2A</p>
+<p>→ MENTION-FUN-FACT-2A</p>
 <p>(mention-fun-fact-2a)</p>
 <p>▷ Don’t use |# unmatched or you’ll get in trouble!</p>
-<p><em>→</em> NIL</p>
+<p>→ NIL</p>
 <p>#| (defun mention-fun-fact-2b ()</p>
 <p>(format t &quot;Don’t use |# unmatched or you’ll get in trouble!&quot;) |#</p>
-<p>(fboundp ’mention-fun-fact-2b) <em>→</em> NIL</p>
+<p>(fboundp ’mention-fun-fact-2b) → NIL</p>
 <p>;;; In this example, the programmer attacks the mismatch problem in a</p>
 <p>;;; different way. The sharpsign vertical bar in the comment is not needed</p>
 <p>;;; for the correct parsing of the program normally (as in case 3a), but</p>
@@ -350,15 +350,15 @@
 <p>;;; a program is commented out (as in case 3b).</p>
 <p>(defun mention-fun-fact-3a () ; #|</p>
 <p>(format t &quot;Don’t use |# unmatched or you’ll get in trouble!&quot;))</p>
-<p><em>→</em> MENTION-FUN-FACT-3A</p>
+<p>→ MENTION-FUN-FACT-3A</p>
 <p>(mention-fun-fact-3a)</p>
 <p>▷ Don’t use |# unmatched or you’ll get in trouble!</p>
-<p><em>→</em> NIL</p>
+<p>→ NIL</p>
 <p>#|</p>
 <p>(defun mention-fun-fact-3b () ; #|</p>
 <p>(format t &quot;Don’t use |# unmatched or you’ll get in trouble!&quot;))</p>
 <p>|#</p>
-<p>(fboundp ’mention-fun-fact-3b) <em>→</em> NIL</p>
+<p>(fboundp ’mention-fun-fact-3b) → NIL</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="248192-notes-about-style-for-sharpsign-vertical">2.4.8.19.2 Notes about Style for Sharpsign Vertical<a href="#248192-notes-about-style-for-sharpsign-vertical" class="hash-link" aria-label="Direct link to 2.4.8.19.2 Notes about Style for Sharpsign Vertical" title="Direct link to 2.4.8.19.2 Notes about Style for Sharpsign Vertical">​</a></h4>
 <!-- -->
 <p>Some text editors that purport to understand Lisp syntax treat any |...| as balanced pairs that cannot nest (as if they were just balanced pairs of the multiple escapes used in notating certain symbols). To compensate for this deficiency, some programmers use the notation #||...#||...||#...||# instead of #|...#|...|#...|#. Note that this alternate usage is not a different <em>reader macro</em>; it merely exploits the fact that the additional vertical-bars occur within the comment in a way that tricks certain text editor into better supporting nested comments. As such, one might sometimes see code like:</p>

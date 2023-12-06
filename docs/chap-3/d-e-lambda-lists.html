@@ -9,7 +9,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.ad20780e.css">
-<script src="/cl-language-reference/assets/js/runtime~main.2c5242a7.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.810f012f.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.08468b7f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -80,16 +80,16 @@
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="341411-examples-of-suppressing-keyword-argument-checking">3.4.1.4.1.1 Examples of Suppressing Keyword Argument Checking<a href="#341411-examples-of-suppressing-keyword-argument-checking" class="hash-link" aria-label="Direct link to 3.4.1.4.1.1 Examples of Suppressing Keyword Argument Checking" title="Direct link to 3.4.1.4.1.1 Examples of Suppressing Keyword Argument Checking">​</a></h5>
 <!-- -->
 <p>;;; The caller can supply <!-- -->:ALLOW-OTHER-KEYS<!-- --> T to suppress checking.</p>
-<p>((lambda (&amp;key x) x) <!-- -->:x<!-- --> 1 <!-- -->:y<!-- --> 2 <!-- -->:allow-other-keys<!-- --> t) <em>→</em> 1</p>
+<p>((lambda (&amp;key x) x) <!-- -->:x<!-- --> 1 <!-- -->:y<!-- --> 2 <!-- -->:allow-other-keys<!-- --> t) → 1</p>
 <p>;;; The callee can use &amp;ALLOW-OTHER-KEYS to suppress checking.</p>
-<p>((lambda (&amp;key x &amp;allow-other-keys) x) <!-- -->:x<!-- --> 1 <!-- -->:y<!-- --> 2) <em>→</em> 1</p>
+<p>((lambda (&amp;key x &amp;allow-other-keys) x) <!-- -->:x<!-- --> 1 <!-- -->:y<!-- --> 2) → 1</p>
 <p>;;; <!-- -->:ALLOW-OTHER-KEYS<!-- --> NIL is always permitted.</p>
-<p>((lambda (&amp;key) t) <!-- -->:allow-other-keys<!-- --> nil) <em>→</em> T</p>
+<p>((lambda (&amp;key) t) <!-- -->:allow-other-keys<!-- --> nil) → T</p>
 <p>;;; As with other keyword arguments, only the left-most pair</p>
 <p>;;; named <!-- -->:ALLOW-OTHER-KEYS<!-- --> has any effect.</p>
 <p>((lambda (&amp;key x) x)</p>
 <p>:x<!-- --> 1 <!-- -->:y<!-- --> 2 <!-- -->:allow-other-keys<!-- --> t <!-- -->:allow-other-keys<!-- --> nil)</p>
-<p><em>→</em> 1</p>
+<p>→ 1</p>
 <p>;;; Only the left-most pair named <!-- -->:ALLOW-OTHER-KEYS<!-- --> has any effect,</p>
 <p>;;; so in safe code this signals a PROGRAM-ERROR (and might enter the</p>
 <p>;;; debugger). In unsafe code, the consequences are undefined.</p>
@@ -104,49 +104,49 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="3416-examples-of-ordinary-lambda-lists">3.4.1.6 Examples of Ordinary Lambda Lists<a href="#3416-examples-of-ordinary-lambda-lists" class="hash-link" aria-label="Direct link to 3.4.1.6 Examples of Ordinary Lambda Lists" title="Direct link to 3.4.1.6 Examples of Ordinary Lambda Lists">​</a></h3>
 <!-- -->
 <p>Here are some examples involving <em>optional parameters</em> and <em>rest parameters</em>:</p>
-<p>((lambda (a b) (+ a (* b 3))) 4 5) <em>→</em> 19</p>
-<p>((lambda (a &amp;optional (b 2)) (+ a (* b 3))) 4 5) <em>→</em> 19</p>
-<p>((lambda (a &amp;optional (b 2)) (+ a (* b 3))) 4) <em>→</em> 10</p>
+<p>((lambda (a b) (+ a (* b 3))) 4 5) → 19</p>
+<p>((lambda (a &amp;optional (b 2)) (+ a (* b 3))) 4 5) → 19</p>
+<p>((lambda (a &amp;optional (b 2)) (+ a (* b 3))) 4) → 10</p>
 <p>((lambda (&amp;optional (a 2 b) (c 3 d) &amp;rest x) (list a b c d x)))</p>
-<p><em>→</em> (2 NIL 3 NIL NIL)</p>
+<p>→ (2 NIL 3 NIL NIL)</p>
 <p>((lambda (&amp;optional (a 2 b) (c 3 d) &amp;rest x) (list a b c d x)) 6)</p>
-<p><em>→</em> (6 T 3 NIL NIL)</p>
+<p>→ (6 T 3 NIL NIL)</p>
 <p>((lambda (&amp;optional (a 2 b) (c 3 d) &amp;rest x) (list a b c d x)) 6 3)</p>
-<p><em>→</em> (6 T 3 T NIL)</p>
+<p>→ (6 T 3 T NIL)</p>
 <p>((lambda (&amp;optional (a 2 b) (c 3 d) &amp;rest x) (list a b c d x)) 6 3 8)</p>
-<p><em>→</em> (6 T 3 T (8))</p>
+<p>→ (6 T 3 T (8))</p>
 <p>((lambda (&amp;optional (a 2 b) (c 3 d) &amp;rest x) (list a b c d x))</p>
 <p>6 3 8 9 10 11)</p>
-<p><em>→</em> (6 t 3 t (8 9 10 11))</p>
+<p>→ (6 t 3 t (8 9 10 11))</p>
 <p>Here are some examples involving <em>keyword parameters</em>:</p>
-<p>((lambda (a b &amp;key c d) (list a b c d)) 1 2) <em>→</em> (1 2 NIL NIL)</p>
-<p>((lambda (a b &amp;key c d) (list a b c d)) 1 2 <!-- -->:c<!-- --> 6) <em>→</em> (1 2 6 NIL)</p>
-<p>((lambda (a b &amp;key c d) (list a b c d)) 1 2 <!-- -->:d<!-- --> 8) <em>→</em> (1 2 NIL 8)</p>
-<p>((lambda (a b &amp;key c d) (list a b c d)) 1 2 <!-- -->:c<!-- --> 6 <!-- -->:d<!-- --> 8) <em>→</em> (1 2 6 8)</p>
-<p>((lambda (a b &amp;key c d) (list a b c d)) 1 2 <!-- -->:d<!-- --> 8 <!-- -->:c<!-- --> 6) <em>→</em> (1 2 6 8)</p>
-<p>((lambda (a b &amp;key c d) (list a b c d)) <!-- -->:a<!-- --> 1 <!-- -->:d<!-- --> 8 <!-- -->:c<!-- --> 6) <em>→</em> (<!-- -->:a<!-- --> 1 6 8)</p>
-<p>((lambda (a b &amp;key c d) (list a b c d)) <!-- -->:a<!-- --> <!-- -->:b<!-- --> <!-- -->:c<!-- --> <!-- -->:d<!-- -->) <em>→</em> (<!-- -->:a<!-- --> <!-- -->:b<!-- --> <!-- -->:d<!-- --> NIL)</p>
-<p>((lambda (a b &amp;key ((<!-- -->:sea<!-- --> c)) d) (list a b c d)) 1 2 <!-- -->:sea<!-- --> 6) <em>→</em> (1 2 6 NIL)</p>
-<p>((lambda (a b &amp;key ((c c)) d) (list a b c d)) 1 2 ’c 6) <em>→</em> (1 2 6 NIL)</p>
+<p>((lambda (a b &amp;key c d) (list a b c d)) 1 2) → (1 2 NIL NIL)</p>
+<p>((lambda (a b &amp;key c d) (list a b c d)) 1 2 <!-- -->:c<!-- --> 6) → (1 2 6 NIL)</p>
+<p>((lambda (a b &amp;key c d) (list a b c d)) 1 2 <!-- -->:d<!-- --> 8) → (1 2 NIL 8)</p>
+<p>((lambda (a b &amp;key c d) (list a b c d)) 1 2 <!-- -->:c<!-- --> 6 <!-- -->:d<!-- --> 8) → (1 2 6 8)</p>
+<p>((lambda (a b &amp;key c d) (list a b c d)) 1 2 <!-- -->:d<!-- --> 8 <!-- -->:c<!-- --> 6) → (1 2 6 8)</p>
+<p>((lambda (a b &amp;key c d) (list a b c d)) <!-- -->:a<!-- --> 1 <!-- -->:d<!-- --> 8 <!-- -->:c<!-- --> 6) → (<!-- -->:a<!-- --> 1 6 8)</p>
+<p>((lambda (a b &amp;key c d) (list a b c d)) <!-- -->:a<!-- --> <!-- -->:b<!-- --> <!-- -->:c<!-- --> <!-- -->:d<!-- -->) → (<!-- -->:a<!-- --> <!-- -->:b<!-- --> <!-- -->:d<!-- --> NIL)</p>
+<p>((lambda (a b &amp;key ((<!-- -->:sea<!-- --> c)) d) (list a b c d)) 1 2 <!-- -->:sea<!-- --> 6) → (1 2 6 NIL)</p>
+<p>((lambda (a b &amp;key ((c c)) d) (list a b c d)) 1 2 ’c 6) → (1 2 6 NIL)</p>
 <p>Here are some examples involving <em>optional parameters</em>, <em>rest parameters</em>, and <em>keyword parameters</em> together:</p>
 <p>((lambda (a &amp;optional (b 3) &amp;rest x &amp;key c (d a))</p>
 <p>(list a b c d x)) 1)</p>
-<p><em>→</em> (1 3 NIL 1 ())</p>
+<p>→ (1 3 NIL 1 ())</p>
 <p>((lambda (a &amp;optional (b 3) &amp;rest x &amp;key c (d a))</p>
 <p>(list a b c d x)) 1 2)</p>
-<p><em>→</em> (1 2 NIL 1 ())</p>
+<p>→ (1 2 NIL 1 ())</p>
 <p>((lambda (a &amp;optional (b 3) &amp;rest x &amp;key c (d a))</p>
 <p>(list a b c d x)) <!-- -->:c<!-- --> 7)</p>
-<p><em>→</em> (<!-- -->:c<!-- --> 7 NIL <!-- -->:c<!-- --> ())</p>
+<p>→ (<!-- -->:c<!-- --> 7 NIL <!-- -->:c<!-- --> ())</p>
 <p>((lambda (a &amp;optional (b 3) &amp;rest x &amp;key c (d a))</p>
 <p>(list a b c d x)) 1 6 <!-- -->:c<!-- --> 7)</p>
-<p><em>→</em> (1 6 7 1 (<!-- -->:c<!-- --> 7))</p>
+<p>→ (1 6 7 1 (<!-- -->:c<!-- --> 7))</p>
 <p>((lambda (a &amp;optional (b 3) &amp;rest x &amp;key c (d a))</p>
 <p>(list a b c d x)) 1 6 <!-- -->:d<!-- --> 8)</p>
-<p><em>→</em> (1 6 NIL 8 (<!-- -->:d<!-- --> 8))</p>
+<p>→ (1 6 NIL 8 (<!-- -->:d<!-- --> 8))</p>
 <p>((lambda (a &amp;optional (b 3) &amp;rest x &amp;key c (d a))</p>
 <p>(list a b c d x)) 1 6 <!-- -->:d<!-- --> 8 <!-- -->:c<!-- --> 9 <!-- -->:d<!-- --> 10)</p>
-<p><em>→</em> (1 6 9 8 (<!-- -->:d<!-- --> 8 <!-- -->:c<!-- --> 9 <!-- -->:d<!-- --> 10))</p>
+<p>→ (1 6 9 8 (<!-- -->:d<!-- --> 8 <!-- -->:c<!-- --> 9 <!-- -->:d<!-- --> 10))</p>
 <p>As an example of the use of <strong>&amp;allow-other-keys</strong> and <!-- -->:allow-other-keys<!-- -->, consider a <em>function</em> that takes two named arguments of its own and also accepts additional named arguments to be passed to <strong>make-array</strong>:</p>
 <p>(defun array-of-strings (str dims &amp;rest named-pairs</p>
 <p>&amp;key (start 0) end &amp;allow-other-keys)</p>
@@ -293,8 +293,8 @@
 <p>&amp;key (d 2)</p>
 <p>&amp;aux e (f ’eff))))</p>
 <p>(a 1) (b 2) (c 3) (d 4) (e 5) (f 6))</p>
-<p>(create-foo 10) <em>→</em> #S(FOO A 10 B 2 C SEA D 2 E <em>implemention-dependent</em> F EFF) (create-foo 10 ’bee ’see <!-- -->:d<!-- --> ’dee)</p>
-<p><em>→</em> #S(FOO A 10 B BEE C SEE D DEE E <em>implemention-dependent</em> F EFF)</p>
+<p>(create-foo 10) → #S(FOO A 10 B 2 C SEA D 2 E <em>implemention-dependent</em> F EFF) (create-foo 10 ’bee ’see <!-- -->:d<!-- --> ’dee)</p>
+<p>→ #S(FOO A 10 B BEE C SEE D DEE E <em>implemention-dependent</em> F EFF)</p>
 <p>If keyword arguments of the form ((<em>key var</em>) [<em>default</em> [<em>svar</em> ]]) are specified, the <em>slot name</em> is matched with <em>var</em> (not <em>key</em>).</p>
 <p>The actions taken in the b and e cases were carefully chosen to allow the user to specify all possible behaviors. The <strong>&amp;aux</strong> variables can be used to completely override the default initializations given in the body.</p>
 <p>If no default value is supplied for an <em>aux variable</em> variable, the consequences are undefined if an attempt is later made to read the corresponding <em>slot</em>’s value before a value is explicitly assigned. If such a <em>slot</em> has a <!-- -->:type<!-- --> option specified, this suppressed initialization does not imply a type mismatch situation; the declared type is only required to apply when the <em>slot</em> is finally assigned.</p>

@@ -9,7 +9,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.ad20780e.css">
-<script src="/cl-language-reference/assets/js/runtime~main.2c5242a7.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.810f012f.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.08468b7f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -92,9 +92,9 @@
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="14123-additional-uses-for-indirect-definitions-in-modified-bnf-syntax">1.4.1.2.3 Additional Uses for Indirect Definitions in Modified BNF Syntax<a href="#14123-additional-uses-for-indirect-definitions-in-modified-bnf-syntax" class="hash-link" aria-label="Direct link to 1.4.1.2.3 Additional Uses for Indirect Definitions in Modified BNF Syntax" title="Direct link to 1.4.1.2.3 Additional Uses for Indirect Definitions in Modified BNF Syntax">​</a></h4>
 <!-- -->
 <p>In some cases, an auxiliary definition in the BNF might appear to be unused within the BNF, but might still be useful elsewhere. For example, consider the following definitions:</p>
-<p><strong>case</strong> <em>keyform {↓normal-clause}</em>* [<em>↓otherwise-clause</em>] <em>→ {result}</em>*</p>
-<p><strong>ccase</strong> <em>keyplace {↓normal-clause}</em>* <em>→ {result}</em>*</p>
-<p><strong>ecase</strong> <em>keyform {↓normal-clause}</em>* <em>→ {result}</em>*</p>
+<p><strong>case</strong> <em>keyform {↓normal-clause}</em>* [<em>↓otherwise-clause</em>] → {result}*</p>
+<p><strong>ccase</strong> <em>keyplace {↓normal-clause}</em>* → {result}*</p>
+<p><strong>ecase</strong> <em>keyform {↓normal-clause}</em>* → {result}*</p>
 <p><em>normal-clause::</em>=(<em>keys {form}</em>*)</p>
 <p><em>otherwise-clause::</em>=(<em>{otherwise | t} {form}</em>*)</p>
 <p><em>clause::</em>=<em>normal-clause | otherwise-clause</em></p>
@@ -102,35 +102,35 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="1413-special-symbols">1.4.1.3 Special Symbols<a href="#1413-special-symbols" class="hash-link" aria-label="Direct link to 1.4.1.3 Special Symbols" title="Direct link to 1.4.1.3 Special Symbols">​</a></h3>
 <!-- -->
 <p>The special symbols described here are used as a notational convenience within this document, and are part of neither the Common Lisp language nor its environment.</p>
-<p><em>→</em></p>
+<p>→</p>
 <p>This indicates evaluation. For example:</p>
-<p>(+ 4 5) <em>→</em> 9</p>
+<p>(+ 4 5) → 9</p>
 <p>This means that the result of evaluating the <em>form</em> (+ 4 5) is 9.</p>
 <p>If a <em>form</em> returns <em>multiple values</em>, those values might be shown separated by spaces, line breaks, or commas. For example:</p>
 <p>(truncate 7 5)</p>
-<p><em>→</em> 1 2</p>
+<p>→ 1 2</p>
 <p>(truncate 7 5)</p>
-<p><em>→</em> 1</p>
+<p>→ 1</p>
 <p>2</p>
 <p>(truncate 7 5)</p>
-<p><em>→</em> 1, 2</p>
+<p>→ 1, 2</p>
 <p>Each of the above three examples is equivalent, and specifies that (truncate 7 5) returns two values, which are 1 and 2.</p>
 <p>Some <em>conforming implementations</em> actually type an arrow (or some other indicator) before showing return values, while others do not.</p>
 <i><sup>or</sup>→</i>
 <p>The notation “ <i><sup>or</sup>→</i>” is used to denote one of several possible alternate results. The example</p>
 <p>(char-name #\a)</p>
-<p><em>→</em> NIL</p>
+<p>→ NIL</p>
 <p><i><sup>or</sup>→</i> &quot;LOWERCASE-a&quot;</p>
 <p><i><sup>or</sup>→</i> &quot;Small-A&quot;</p>
 <p><i><sup>or</sup>→</i> &quot;LA01&quot;</p>
 <p>indicates that <strong>nil</strong>, &quot;LOWERCASE-a&quot;, &quot;Small-A&quot;, &quot;LA01&quot; are among the possible results of (char-name #\a)—each with equal preference. Unless explicitly specified otherwise, it should not be assumed that the set of possible results shown is exhaustive. Formally, the above example is equivalent to</p>
-<p>(char-name #\a) <em>→ implementation-dependent</em></p>
+<p>(char-name #\a) → implementation-dependent</p>
 <p>but it is intended to provide additional information to illustrate some of the ways in which it is permitted for implementations to diverge.</p>
 <i><sup>not</sup> →</i>
 <p>The notation “<i><sup>not</sup> →</i>” is used to denote a result which is not possible. This might be used, for example, in order to emphasize a situation where some anticipated misconception might lead the reader to falsely believe that the result might be possible. For example,</p>
 <p>(function-lambda-expression</p>
 <p>(funcall #’(lambda (x) #’(lambda () x)) nil))</p>
-<p><em>→</em> NIL, <em>true</em>, NIL</p>
+<p>→ NIL, <em>true</em>, NIL</p>
 <p><i><sup>or</sup>→</i> (LAMBDA () X), <i>true</i>, NIL</p>
 <p><i><sup>not</sup> →</i> NIL, <i>false</i>, NIL</p>
 <p><i><sup>not</sup> →</i> (LAMBDA () X), <i>false</i>, NIL</p>
@@ -147,13 +147,13 @@
 <p>(+ 1 (print (+ (sqrt (read)) (sqrt (read)))))</p>
 <p>▷ 9 16</p>
 <p>▷ 7</p>
-<p><em>→</em> 8</p>
+<p>→ 8</p>
 <p>shows an interaction in which “(+ 1 (print (+ (sqrt (read)) (sqrt (read)))))” is a <em>form</em> to be <em>evaluated</em>, “9 16 ” is interactive input, “7” is interactive output, and “8” is the <em>value yielded</em> from the <em>evaluation</em>.</p>
 <p>The use of this notation is intended to disguise small differences in interactive input and output behavior between <em>implementations</em>.</p>
 <p>Sometimes, the non-interactive stream model calls for a <em>newline</em>. How that <em>newline</em> character is interactively entered is an <em>implementation-defined</em> detail of the user interface, but in that case, either the notation “<em>hNewlinei</em>” or “<em>←-</em>” might be used.</p>
 <p>(progn (format t &quot;~&amp;Who? &quot;) (read-line))</p>
 <p>▷ Who? Fred, Mary, and Sally<em>←-</em></p>
-<p><em>→</em> &quot;Fred, Mary, and Sally&quot;, <em>~~fal~~se</em></p>
+<p>→ &quot;Fred, Mary, and Sally&quot;, <em>~~fal~~se</em></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="1414-objects-with-multiple-notations">1.4.1.4 Objects with Multiple Notations<a href="#1414-objects-with-multiple-notations" class="hash-link" aria-label="Direct link to 1.4.1.4 Objects with Multiple Notations" title="Direct link to 1.4.1.4 Objects with Multiple Notations">​</a></h3>
 <!-- -->
 <p>Some <em>objects</em> in Common Lisp can be notated in more than one way. In such situations, the choice of which notation to use is technically arbitrary, but conventions may exist which convey a “point of view” or “sense of intent.”</p>
@@ -189,8 +189,8 @@
 <p>’(nil nil) ;list of two symbols</p>
 <p>’(() ()) ;list of empty lists</p>
 <p>(defun three () 3) ;Emphasize empty parameter list.</p>
-<p>(append ’() ’()) <em>→</em> () ;Emphasize use of empty lists</p>
-<p>(not nil) <em>→ true</em> ;Emphasize use as Boolean false</p>
+<p>(append ’() ’()) → () ;Emphasize use of empty lists</p>
+<p>(not nil) → true ;Emphasize use as Boolean false</p>
 <p>(get ’nil ’color) ;Emphasize use as a symbol</p>
 <p>A <em>function</em> is sometimes said to “be <em>false</em>” or “be <em>true</em>” in some circumstance. Since no <em>function</em> object can be the same as <strong>nil</strong> and all <em>function objects</em> represent <em>true</em> when viewed as <em>booleans</em>, it would be meaningless to say that the <em>function</em> was literally <em>false</em> and uninteresting to say that it was literally <em>true</em>. Instead, these phrases are just traditional alternative ways of saying that the</p>
 <p><em>function</em> “returns <em>false</em>” or “returns <em>true</em>,” respectively.</p>
@@ -203,9 +203,9 @@
 <p>For example, <strong>mapcar</strong> receives a <em>function designator</em> as an argument, and its description is written as if this were simply a function. In fact, it is <em>implementation-dependent</em> whether the <em>function designator</em> is coerced right away or whether it is carried around internally in the form that it was given as an <em>argument</em> and re-coerced each time it is needed. In most cases, <em>conforming programs</em> cannot detect the distinction, but there are some pathological situations (particularly those involving self-redefining or mutually-redefining functions) which do conform and which can detect this difference. The following program is a <em>conforming program</em>, but might or might not have portably correct results, depending on whether its correctness depends on one or the other of the results:</p>
 <p>(defun add-some (x)</p>
 <p>(defun add-some (x) (+ x 2))</p>
-<p>(+ x 1)) <em>→</em> ADD-SOME</p>
+<p>(+ x 1)) → ADD-SOME</p>
 <p>(mapcar ’add-some ’(1 2 3 4))</p>
-<p><em>→</em> (2 3 4 5)</p>
+<p>→ (2 3 4 5)</p>
 <p><i><sup>or</sup>→</i> (2 4 5 6)</p>
 <p>In a few rare situations, there may be a need in a dictionary entry to refer to the <em>object</em> that was the original <em>designator</em> for a <em>parameter</em> . Since naming the <em>parameter</em> would refer to the denoted <em>object</em>, the phrase “the ⟨parameter-nameii designator*” can be used to refer to the <em>designator</em> which was the <em>argument</em> from which the <em>value</em> of ⟨parameter-name⟩ was computed.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="1416-nonsense-words">1.4.1.6 Nonsense Words<a href="#1416-nonsense-words" class="hash-link" aria-label="Direct link to 1.4.1.6 Nonsense Words" title="Direct link to 1.4.1.6 Nonsense Words">​</a></h3>
@@ -241,7 +241,7 @@
 <p>This means that the consequences are unpredictable but harmless. Implementations are permitted to specify the consequences of this situation. No <em>conforming code</em> may depend on the results or effects of this situation, and all <em>conforming code</em> is required to treat the</p>
 <p>results and effects of this situation as unpredictable but harmless. For example, “if the second argument to <strong>shared-initialize</strong> specifies a name that does not correspond to any <em>slots accessible</em> in the <em>object</em>, the results are unspecified.”</p>
 <p><strong>The consequences are undefined</strong></p>
-<p>This means that the consequences are unpredictable. The consequences may range from harmless to fatal. No <em>conforming code</em> may depend on the results or effects. <em>Conforming code</em> must treat the consequences as unpredictable. In places where the words “must,” “must not,” or “may not” are used, then “the consequences are undefined” if the stated requirement is not met and no specific consequence is explicitly stated. An implementation is permitted to signal an error in this case.</p>
+<p>This means that the consequences are unpredictable. The consequences may range from harmless to fatal. No <em>conforming code</em> may depend on the results or effects. <em>Conforming code</em> must treat the consequences as unpredictable. In places where the words  “must,” “must not,” or “may not” are used, then “the consequences are undefined” if the stated requirement is not met and no specific consequence is explicitly stated. An implementation is permitted to signal an error in this case.</p>
 <p>For example: “Once a name has been declared by <strong>defconstant</strong> to be constant, any further assignment or binding of that variable has undefined consequences.”</p>
 <p><strong>An error might be signaled</strong></p>
 <p>This means that the situation has undefined consequences; however, if an error is signaled, it is of the specified <em>type</em>. For example, “<strong>open</strong> might signal an error of <em>type</em> <strong>file-error</strong>.”</p>
@@ -378,7 +378,7 @@
 <p>This is a <em>defined name</em> that is not an <em>atomic type specifier</em> , but that can be used in constructing valid <em>type specifiers</em>.</p>
 <p><em>Variable</em></p>
 <p>This is a <em>dynamic variable</em>.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="14415-the-notes-section-of-a-dictionary-entry">1.4.4.15 The “Notes” Section of a Dictionary Entry<a href="#14415-the-notes-section-of-a-dictionary-entry" class="hash-link" aria-label="Direct link to 1.4.4.15 The “Notes” Section of a Dictionary Entry" title="Direct link to 1.4.4.15 The “Notes” Section of a Dictionary Entry">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="14415-the-notes-section-of-a-dictionary-entry">1.4.4.15 The “Notes” Section of a Dictionary Entry<a href="#14415-the-notes-section-of-a-dictionary-entry" class="hash-link" aria-label="Direct link to 1.4.4.15 The “Notes  ” Section of a Dictionary Entry" title="Direct link to 1.4.4.15 The “Notes” Section of a Dictionary Entry">​</a></h3>
 <!-- -->
 <p>Information not found elsewhere in this description which pertains to this <em>operator</em> . Among other things, this might include cross reference information, code equivalences, stylistic hints, implementation hints, typical uses. This information is not considered part of the standard; any <em>conforming implementation</em> or <em>conforming program</em> is permitted to ignore the presence of this information.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="14416-the-pronunciation-section-of-a-dictionary-entry">1.4.4.16 The “Pronunciation” Section of a Dictionary Entry<a href="#14416-the-pronunciation-section-of-a-dictionary-entry" class="hash-link" aria-label="Direct link to 1.4.4.16 The “Pronunciation” Section of a Dictionary Entry" title="Direct link to 1.4.4.16 The “Pronunciation” Section of a Dictionary Entry">​</a></h3>
@@ -425,7 +425,7 @@
 <p>but introduces the additional requirement that there be at least one <em>argument</em>.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="144204-return-values-in-the-syntax-section">1.4.4.20.4 Return values in the “Syntax” Section<a href="#144204-return-values-in-the-syntax-section" class="hash-link" aria-label="Direct link to 1.4.4.20.4 Return values in the “Syntax” Section" title="Direct link to 1.4.4.20.4 Return values in the “Syntax” Section">​</a></h4>
 <!-- -->
-<p>An evaluation arrow “<em>→</em>” precedes a list of <em>values</em> to be returned. For example:</p>
+<p>An evaluation arrow “→” precedes a list of <em>values</em> to be returned. For example:</p>
 <p><strong>F</strong> <em>a b c → x</em></p>
 <p>indicates that F is an operator that has three <em>required parameters</em> (<em>i.e.</em>, <em>a</em>, <em>b</em>, and <em>c</em>) and that returns one <em>value</em> (<em>i.e.</em>, <em>x</em>). If more than one <em>value</em> is returned by an operator, the <em>names</em> of the <em>values</em> are separated by commas, as in:</p>
 <p><strong>F</strong> <em>a b c → x, y, z</em></p>

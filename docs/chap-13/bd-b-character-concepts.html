@@ -9,7 +9,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.ad20780e.css">
-<script src="/cl-language-reference/assets/js/runtime~main.2c5242a7.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.810f012f.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.08468b7f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -201,18 +201,18 @@
 <b>=, <sup>char-equal, char-not-equal, char-lessp, char</sup> greaterp, char-not-greaterp, char-not-lessp</b>
 <i>Function</i>
 <p><strong>Syntax:</strong></p>
-<p><strong>char</strong>= &amp;rest <em>characters</em><sup>+</sup> <em>→ generalized-boolean</em></p>
-<p><strong>char</strong>*/* = &amp;rest <em>characters</em><sup>+</sup> <em>→ generalized-boolean</em></p>
-<p><strong>char</strong>&lt; &amp;rest <em>characters</em><sup>+</sup> <em>→ generalized-boolean</em></p>
-<p><strong>char</strong>&gt; &amp;rest <em>characters</em><sup>+</sup> <em>→ generalized-boolean</em></p>
-<p><strong>char</strong>&lt;= &amp;rest <em>characters</em><sup>+</sup> <em>→ generalized-boolean</em></p>
-<p><strong>char</strong>&gt;= &amp;rest <em>characters</em><sup>+</sup> <em>→ generalized-boolean</em></p>
-<p><strong>char-equal</strong> &amp;rest <em>characters</em><sup>+</sup> <em>→ generalized-boolean</em></p>
-<p><strong>char-not-equal</strong> &amp;rest <em>characters</em><sup>+</sup> <em>→ generalized-boolean</em></p>
-<p><strong>char-lessp</strong> &amp;rest <em>characters</em><sup>+</sup> <em>→ generalized-boolean</em></p>
-<p><strong>char-greaterp</strong> &amp;rest <em>characters</em><sup>+</sup> <em>→ generalized-boolean</em></p>
-<p><strong>char-not-greaterp</strong> &amp;rest <em>characters</em><sup>+</sup> <em>→ generalized-boolean</em></p>
-<p><strong>char-not-lessp</strong> &amp;rest <em>characters</em><sup>+</sup> <em>→ generalized-boolean</em></p>
+<p><strong>char</strong>= &amp;rest <em>characters</em><sup>+</sup> → generalized-boolean</p>
+<p><strong>char</strong>*/* = &amp;rest <em>characters</em><sup>+</sup> → generalized-boolean</p>
+<p><strong>char</strong>&lt; &amp;rest <em>characters</em><sup>+</sup> → generalized-boolean</p>
+<p><strong>char</strong>&gt; &amp;rest <em>characters</em><sup>+</sup> → generalized-boolean</p>
+<p><strong>char</strong>&lt;= &amp;rest <em>characters</em><sup>+</sup> → generalized-boolean</p>
+<p><strong>char</strong>&gt;= &amp;rest <em>characters</em><sup>+</sup> → generalized-boolean</p>
+<p><strong>char-equal</strong> &amp;rest <em>characters</em><sup>+</sup> → generalized-boolean</p>
+<p><strong>char-not-equal</strong> &amp;rest <em>characters</em><sup>+</sup> → generalized-boolean</p>
+<p><strong>char-lessp</strong> &amp;rest <em>characters</em><sup>+</sup> → generalized-boolean</p>
+<p><strong>char-greaterp</strong> &amp;rest <em>characters</em><sup>+</sup> → generalized-boolean</p>
+<p><strong>char-not-greaterp</strong> &amp;rest <em>characters</em><sup>+</sup> → generalized-boolean</p>
+<p><strong>char-not-lessp</strong> &amp;rest <em>characters</em><sup>+</sup> → generalized-boolean</p>
 <p><strong>Arguments and Values:</strong></p>
 <p><em>character</em>—a <em>character</em> .</p>
 <p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
@@ -228,48 +228,48 @@
 <p>If two <em>characters</em> have <em>identical implementation-defined attributes</em>, then their ordering by <strong>char</strong>&gt;<strong>=</strong> is consistent with the numerical ordering by the predicate &gt;= on their <em>codes</em>.</p>
 <p><strong>char-equal</strong>, <strong>char-not-equal</strong>, <strong>char-lessp</strong>, <strong>char-greaterp</strong>, <strong>char-not-greaterp</strong>, and <strong>char-not-lessp</strong> are similar to <strong>char=</strong>, <strong>char/=</strong>, <strong>char</strong>&lt;, <strong>char</strong>&gt;, <strong>char</strong>&lt;<strong>=</strong>, <strong>char</strong>&gt;<strong>=</strong>, respectively, except that they ignore differences in <em>case</em> and might have an <em>implementation-defined</em> behavior for <em>non-simple characters</em>. For example, an <em>implementation</em> might define that <strong>char-equal</strong>, <em>etc.</em> ignore certain <em>implementation-defined attributes</em>. The effect, if any, of each <em>implementation-defined attribute</em> upon these functions must be specified as part of the definition of that <em>attribute</em>.</p>
 <p><strong>Examples:</strong></p>
-<p>(char= #\d #\d) <em>→ true</em></p>
-<p>(char= #\A #\a) <em>→ false</em></p>
-<p>(char= #\d #\x) <em>→ false</em></p>
-<p>(char= #\d #\D) <em>→ false</em></p>
-<p>(char/= #\d #\d) <em> → false</em></p>
-<p>(char/= #\d #\x) <em>→ true</em></p>
-<p>(char/= #\d #\D) <em>→ true</em></p>
-<p>(char= #\d #\d #\d #\d) <em>→ true</em></p>
-<p>(char/= #\d #\d #\d #\d) <em>→ false</em></p>
-<p>(char= #\d #\d #\x #\d) <em>→ false</em></p>
-<p>(char/= #\d #\d #\x #\d) <em>→ false</em></p>
-<p>(char= #\d #\y #\x #\c) <em>→ false</em></p>
-<p>(char/= #\d #\y #\x #\c) <em>→ true</em></p>
-<p>(char= #\d #\c #\d) <em>→ false</em></p>
-<p>(char/= #\d #\c #\d) <em>→ false</em></p>
-<p>(char&lt; #\d #\x) <em>→ true</em></p>
-<p>(char&lt;= #\d #\x) <em>→ true</em></p>
-<p>(char&lt; #\d #\d) <em>→ false</em></p>
-<p>(char&lt;= #\d #\d) <em>→ true</em></p>
-<p>(char&lt; #\a #\e #\y #\z) <em>→ true</em></p>
-<p>(char&lt;= #\a #\e #\y #\z) <em>→ true</em></p>
-<p>(char&lt; #\a #\e #\e #\y) <em>→ false</em></p>
-<p>(char&lt;= #\a #\e #\e #\y) <em>→ true</em></p>
-<p>(char&gt; #\e #\d) <em>→ true</em></p>
-<p>(char&gt;= #\e #\d) <em>→ true</em></p>
-<p>(char&gt; #\d #\c #\b #\a) <em>→ true</em></p>
-<p>(char&gt;= #\d #\c #\b #\a) <em>→ true</em></p>
-<p>(char&gt; #\d #\d #\c #\a) <em>→ false</em></p>
-<p>(char&gt;= #\d #\d #\c #\a) <em>→ true</em></p>
-<p>(char&gt; #\e #\d #\b #\c #\a) <em>→ false</em></p>
-<p>(char&gt;= #\e #\d #\b #\c #\a) <em>→ false</em></p>
-<p>(char&gt; #\z #\A) <em>→ implementation-dependent</em></p>
-<p>(char&gt; #\Z #\a) <em>→ implementation-dependent</em></p>
-<p>(char-equal #\A #\a) <em>→ true</em></p>
+<p>(char= #\d #\d) → true</p>
+<p>(char= #\A #\a) → false</p>
+<p>(char= #\d #\x) → false</p>
+<p>(char= #\d #\D) → false</p>
+<p>(char/= #\d #\d) → false</p>
+<p>(char/= #\d #\x) → true</p>
+<p>(char/= #\d #\D) → true</p>
+<p>(char= #\d #\d #\d #\d) → true</p>
+<p>(char/= #\d #\d #\d #\d)  → false</p>
+<p>(char= #\d #\d #\x #\d) → false</p>
+<p>(char/= #\d #\d #\x #\d) → false</p>
+<p>(char= #\d #\y #\x #\c) → false</p>
+<p>(char/= #\d #\y #\x #\c) → true</p>
+<p>(char= #\d #\c #\d) → false</p>
+<p>(char/= #\d #\c #\d) → false</p>
+<p>(char&lt; #\d #\x) → true</p>
+<p>(char&lt;= #\d #\x) → true</p>
+<p>(char&lt; #\d #\d) → false</p>
+<p>(char&lt;= #\d #\d) → true</p>
+<p>(char&lt; #\a #\e #\y #\z) → true</p>
+<p>(char&lt;= #\a #\e #\y #\z) → true</p>
+<p>(char&lt; #\a #\e #\e #\y) → false</p>
+<p>(char&lt;= #\a #\e #\e #\y) → true</p>
+<p>(char&gt; #\e #\d) → true</p>
+<p>(char&gt;= #\e #\d) → true</p>
+<p>(char&gt; #\d #\c #\b #\a) → true</p>
+<p>(char&gt;= #\d #\c #\b #\a) → true</p>
+<p>(char&gt; #\d #\d #\c #\a) → false</p>
+<p>(char&gt;= #\d #\d #\c #\a) → true</p>
+<p>(char&gt; #\e #\d #\b #\c #\a) → false</p>
+<p>(char&gt;= #\e #\d #\b #\c #\a) → false</p>
+<p>(char&gt; #\z #\A) → implementation-dependent</p>
+<p>(char&gt; #\Z #\a) → implementation-dependent</p>
+<p>(char-equal #\A #\a) → true</p>
 <p>(stable-sort (list #\b #\A #\B #\a #\c #\C) #’char-lessp)</p>
-<p><em>→</em> (#\A #\a #\b #\B #\c #\C)</p>
+<p>→ (#\A #\a #\b #\B #\c #\C)</p>
 <p>(stable-sort (list #\b #\A #\B #\a #\c #\C) #’char&lt;)</p>
-<p><em>→</em> (#\A #\B #\C #\a #\b #\c) ;Implementation A</p>
-<p><em>→</em> (#\a #\b #\c #\A #\B #\C) ;Implementation B</p>
-<p><em>→</em> (#\a #\A #\b #\B #\c #\C) ;Implementation C</p>
-<p><em>→</em> (#\A #\a #\B #\b #\C #\c) ;Implementation D</p>
-<p><em>→</em> (#\A #\B #\a #\b #\C #\c) ;Implementation E</p>
+<p>→ (#\A #\B #\C #\a #\b #\c) ;Implementation A</p>
+<p>→ (#\a #\b #\c #\A #\B #\C) ;Implementation B</p>
+<p>→ (#\a #\A #\b #\B #\c #\C) ;Implementation C</p>
+<p>→ (#\A #\a #\B #\b #\C #\c) ;Implementation D</p>
+<p>→ (#\A #\B #\a #\b #\C #\c) ;Implementation E</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>Should signal an error of <em>type</em> <strong>program-error</strong> if at least one <em>character</em> is not supplied.</p>
 <p><strong>See Also:</strong></p>
@@ -287,10 +287,10 @@
 <p><strong>Description:</strong></p>
 <p>Returns the <em>character</em> denoted by the <em>character designator</em> .</p>
 <p><strong>Examples:</strong></p>
-<p>(character #\a) <em>→</em> #\a</p>
-<p>(character &quot;a&quot;) <em>→</em> #\a</p>
-<p>(character ’a) <em>→</em> #\A</p>
-<p>(character ’\a) <em>→</em> #\a</p>
+<p>(character #\a) → #\a</p>
+<p>(character &quot;a&quot;) → #\a</p>
+<p>(character ’a) → #\A</p>
+<p>(character ’\a) → #\a</p>
 <p>(character 65.) is an error.</p>
 <p>(character ’apple) is an error.</p>
 <p><strong>Exceptional Situations:</strong></p>
@@ -308,14 +308,14 @@
 <p><strong>Description:</strong></p>
 <p>Returns <em>true</em> if <em>object</em> is of <em>type</em> <strong>character</strong>; otherwise, returns <em>false</em>.</p>
 <p><strong>Examples:</strong></p>
-<p>(characterp #\a) <em>→ true</em></p>
-<p>(characterp ’a) <em>→ false</em></p>
-<p>(characterp &quot;a&quot;) <em>→ false</em></p>
-<p>(characterp 65.) <em>→ false</em></p>
-<p>(characterp #\Newline) <em>→ true</em></p>
+<p>(characterp #\a) → true</p>
+<p>(characterp ’a) → false</p>
+<p>(characterp &quot;a&quot;) → false</p>
+<p>(characterp 65.) → false</p>
+<p>(characterp #\Newline) → true</p>
 <p>;; This next example presupposes an implementation</p>
 <p>;; in which #\Rubout is an implementation-defined character.</p>
-<p>(characterp #\Rubout) <em>→ true</em></p>
+<p>(characterp #\Rubout) → true</p>
 <p><strong>See Also:</strong></p>
 <p><strong>character</strong> (<em>type</em> and <em>function</em>), <strong>typep</strong></p>
 <p><strong>Notes:</strong></p>
@@ -329,12 +329,12 @@
 <p><strong>Description:</strong></p>
 <p>Returns <em>true</em> if <em>character</em> is an <em>alphabetic</em><sub>1</sub> <em>character</em> ; otherwise, returns <em>false</em>.</p>
 <p><strong>Examples:</strong></p>
-<p>(alpha-char-p #\a) <em>→ true</em></p>
-<p>(alpha-char-p #\5) <em>→ false</em></p>
-<p>(alpha-char-p #\Newline) <em>→ false</em></p>
+<p>(alpha-char-p #\a) → true</p>
+<p>(alpha-char-p #\5) → false</p>
+<p>(alpha-char-p #\Newline) → false</p>
 <p>;; This next example presupposes an implementation</p>
 <p>;; in which #*α* is a defined character.</p>
-<p>(alpha-char-p #*α*) <em>→ implementation-dependent</em></p>
+<p>(alpha-char-p #*α*) → implementation-dependent</p>
 <p><strong>Affected By:</strong></p>
 <p>None. (In particular, the results of this predicate are independent of any special syntax which might have been enabled in the <em>current readtable</em>.)</p>
 <p><strong>Exceptional Situations:</strong></p>
@@ -350,10 +350,10 @@
 <p><strong>Description:</strong></p>
 <p>Returns <em>true</em> if <em>character</em> is an <em>alphabetic</em><sub>1</sub> <em>character</em> or a <em>numeric character</em> ; otherwise, returns <em>false</em>.</p>
 <p><strong>Examples:</strong></p>
-<p>(alphanumericp #\Z) <em>→ true</em></p>
-<p>(alphanumericp #\9) <em>→ true</em></p>
-<p>(alphanumericp #\Newline) <em>→ false</em></p>
-<p>(alphanumericp ##) <em>→ false</em></p>
+<p>(alphanumericp #\Z) → true</p>
+<p>(alphanumericp #\9) → true</p>
+<p>(alphanumericp #\Newline) → false</p>
+<p>(alphanumericp ##) → false</p>
 <p><strong>Affected By:</strong></p>
 <p>None. (In particular, the results of this predicate are independent of any special syntax which might have been enabled in the <em>current readtable</em>.)</p>
 <p><strong>Exceptional Situations:</strong></p>
@@ -375,14 +375,14 @@
 <p>If <em>weight</em> is less than <em>radix</em>, <strong>digit-char</strong> returns a <em>character</em> which has that <em>weight</em> when considered as a digit in the specified radix. If the resulting <em>character</em> is to be an <em>alphabetic</em><sub>1</sub> <em>character</em> , it will be an uppercase <em>character</em> .</p>
 <p>If <em>weight</em> is greater than or equal to <em>radix</em>, <strong>digit-char</strong> returns <em>false</em>.</p>
 <p><strong>Examples:</strong></p>
-<p>(digit-char 0) <em>→</em> #\0</p>
-<p>(digit-char 10 11) <em>→</em> #\A</p>
-<p>(digit-char 10 10) <em>→ false</em></p>
-<p>(digit-char 7) <em>→</em> #\7</p>
-<p>(digit-char 12) <em>→ false</em></p>
-<p>(digit-char 12 16) <em>→</em> #\C ;not #\c</p>
-<p>(digit-char 6 2) <em>→ false</em></p>
-<p>(digit-char 1 2) <em>→</em> #\1</p>
+<p>(digit-char 0) → #\0</p>
+<p>(digit-char 10 11) → #\A</p>
+<p>(digit-char 10 10) → false</p>
+<p>(digit-char 7) → #\7</p>
+<p>(digit-char 12) → false</p>
+<p>(digit-char 12 16) → #\C ;not #\c</p>
+<p>(digit-char 6 2) → false</p>
+<p>(digit-char 1 2) → #\1</p>
 <p><strong>See Also:</strong></p>
 <p><strong>digit-char-p</strong>, <strong>graphic-char-p</strong>, Section 2.1 (Character Syntax)</p>
 <p><strong>Notes:</strong></p>
@@ -396,17 +396,17 @@
 <p><strong>Description:</strong></p>
 <p>Tests whether <em>char</em> is a digit in the specified <em>radix</em> (<em>i.e.</em>, with a weight less than <em>radix</em>). If it is a digit in that <em>radix</em>, its weight is returned as an <em>integer</em> ; otherwise <strong>nil</strong> is returned.</p>
 <p><strong>Examples:</strong></p>
-<p>(digit-char-p #\5) <em>→</em> 5</p>
-<p>(digit-char-p #\5 2) <em>→ false</em></p>
-<p>(digit-char-p #\A) <em>→ false</em></p>
-<p>(digit-char-p #\a) <em>→ false</em></p>
-<p>(digit-char-p #\A 11) <em>→</em> 10</p>
-<p>(digit-char-p #\a 11) <em>→</em> 10</p>
+<p>(digit-char-p #\5) → 5</p>
+<p>(digit-char-p #\5 2) → false</p>
+<p>(digit-char-p #\A) → false</p>
+<p>(digit-char-p #\a) → false</p>
+<p>(digit-char-p #\A 11) → 10</p>
+<p>(digit-char-p #\a 11) → 10</p>
 <p>(mapcar #’(lambda (radix)</p>
 <p>(map ’list #’(lambda (x) (digit-char-p x radix))</p>
 <p>&quot;059AaFGZ&quot;))</p>
 <p>’(2 8 10 16 36))</p>
-<p><em>→</em> ((0 NIL NIL NIL NIL NIL NIL NIL)</p>
+<p>→ ((0 NIL NIL NIL NIL NIL NIL NIL)</p>
 <p>(0 5 NIL NIL NIL NIL NIL NIL)</p>
 <p>(0 5 9 NIL NIL NIL NIL NIL)</p>
 <p>(0 5 9 10 10 15 NIL NIL)</p>
@@ -426,10 +426,10 @@
 <p><strong>Description:</strong></p>
 <p>Returns <em>true</em> if <em>character</em> is a <em>graphic character</em> ; otherwise, returns <em>false</em>.</p>
 <p><strong>Examples:</strong></p>
-<p>(graphic-char-p #\G) <em>→ true</em></p>
-<p>(graphic-char-p ##) <em>→ true</em></p>
-<p>(graphic-char-p #\Space) <em>→ true</em></p>
-<p>(graphic-char-p #\Newline) <em>→ false</em></p>
+<p>(graphic-char-p #\G) → true</p>
+<p>(graphic-char-p ##) → true</p>
+<p>(graphic-char-p #\Space) → true</p>
+<p>(graphic-char-p #\Newline) → false</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>character</em> is not a <em>character</em> .</p>
 <p><strong>See Also:</strong></p>
@@ -443,11 +443,11 @@
 <p><strong>Description:</strong></p>
 <p>Returns <em>true</em> if <em>character</em> is of <em>type</em> <strong>standard-char</strong>; otherwise, returns <em>false</em>.</p>
 <p><strong>Examples:</strong></p>
-<p>(standard-char-p #\Space) <em>→ true</em></p>
-<p>(standard-char-p #&amp;#126;) <em>→ true</em></p>
+<p>(standard-char-p #\Space) → true</p>
+<p>(standard-char-p #&amp;#126;) → true</p>
 <p>;; This next example presupposes an implementation</p>
 <p>;; in which #\Bell is a defined character.</p>
-<p>(standard-char-p #\Bell) <em>→ false</em></p>
+<p>(standard-char-p #\Bell) → false</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>character</em> is not a <em>character</em> .</p>
 <p><strong>char-upcase, char-downcase</strong></p>
@@ -462,14 +462,14 @@
 <p>If <em>character</em> is an <em>uppercase character</em> , <strong>char-downcase</strong> returns the corresponding <em>lowercase character</em> . Otherwise, <strong>char-downcase</strong> just returns the given <em>character</em>.</p>
 <p>The result only ever differs from <em>character</em> in its <em>code attribute</em>; all <em>implementation-defined attributes</em> are preserved.</p>
 <p><strong>Examples:</strong></p>
-<p>(char-upcase #\a) <em>→</em> #\A</p>
-<p>(char-upcase #\A) <em>→</em> #\A</p>
-<p>(char-downcase #\a) <em>→</em> #\a</p>
-<p>(char-downcase #\A) <em>→</em> #\a</p>
-<p>(char-upcase #\9) <em>→</em> #\9</p>
-<p>(char-downcase #\9) <em>→</em> #\9</p>
-<p>(char-upcase #@) <em>→</em> #@</p>
-<p>(char-downcase #@) <em>→</em> #@</p>
+<p>(char-upcase #\a) → #\A</p>
+<p>(char-upcase #\A) → #\A</p>
+<p>(char-downcase #\a) → #\a</p>
+<p>(char-downcase #\A) → #\a</p>
+<p>(char-upcase #\9) → #\9</p>
+<p>(char-downcase #\9) → #\9</p>
+<p>(char-upcase #@) → #@</p>
+<p>(char-downcase #@) → #@</p>
 <p>;; Note that this next example might run for a very long time in</p>
 <p>;; some implementations if CHAR-CODE-LIMIT happens to be very large</p>
 <p>;; for that implementation.</p>
@@ -480,7 +480,7 @@
 <p>(t (and (char= (char-upcase (char-downcase char)) char)</p>
 <p>(char= (char-downcase (char-upcase char)) char))))</p>
 <p>(return char)))))</p>
-<p><em>→</em> NIL</p>
+<p>→ NIL</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>character</em> is not a <em>character</em> .</p>
 <p><strong>See Also:</strong></p>
@@ -499,15 +499,15 @@
 <p><strong>Description:</strong></p>
 <p>These functions test the case of a given <em>character</em>.</p>
 <p><strong>upper-case-p</strong> returns <em>true</em> if <em>character</em> is an <em>uppercase character</em> ; otherwise, returns <em>false</em>. <strong>lower-case-p</strong> returns <em>true</em> if <em>character</em> is a <em>lowercase character</em> ; otherwise, returns <em>false</em>. <strong>both-case-p</strong> returns <em>true</em> if <em>character</em> is a <em>character</em> with <em>case</em>; otherwise, returns <em>false</em>. <strong>Examples:</strong></p>
-<p>(upper-case-p #\A) <em>→ true</em></p>
-<p>(upper-case-p #\a) <em>→ false</em></p>
-<p>(both-case-p #\a) <em>→ true</em></p>
-<p>(both-case-p #\5) <em>→ false</em></p>
-<p>(lower-case-p #\5) <em>→ false</em></p>
-<p>(upper-case-p #\5) <em>→ false</em></p>
+<p>(upper-case-p #\A) → true</p>
+<p>(upper-case-p #\a) → false</p>
+<p>(both-case-p #\a) → true</p>
+<p>(both-case-p #\5) → false</p>
+<p>(lower-case-p #\5) → false</p>
+<p>(upper-case-p #\5) → false</p>
 <p>;; This next example presupposes an implementation</p>
 <p>;; in which #\Bell is an implementation-defined character.</p>
-<p>(lower-case-p #\Bell) <em>→ false</em></p>
+<p>(lower-case-p #\Bell) → false</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>character</em> is not a <em>character</em> .</p>
 <p><strong>See Also:</strong></p>
@@ -523,8 +523,8 @@
 <p><strong>Examples:</strong></p>
 <p>;; An implementation using ASCII character encoding</p>
 <p>;; might return these values:</p>
-<p>(char-code #$) <em>→</em> 36</p>
-<p>(char-code #\a) <em>→</em> 97</p>
+<p>(char-code #$) → 36</p>
+<p>(char-code #\a) → 97</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>character</em> is not a <em>character</em> .</p>
 <p><strong>See Also:</strong></p>
@@ -541,9 +541,9 @@
 <p>(char= <em>c1 c2</em>) <em>≡</em> (= (char-int <em>c1</em>) (char-int <em>c2</em>))</p>
 <p>for characters <em>c1</em> and <em>c2</em>.</p>
 <p><strong>Examples:</strong></p>
-<p>(char-int #\A) <em>→</em> 65 ; implementation A</p>
-<p>(char-int #\A) <em>→</em> 577 ; implementation B</p>
-<p>(char-int #\A) <em>→</em> 262145 ; implementation C</p>
+<p>(char-int #\A) → 65 ; implementation A</p>
+<p>(char-int #\A) → 577 ; implementation B</p>
+<p>(char-int #\A) → 262145 ; implementation C</p>
 <p><strong>See Also:</strong></p>
 <p><strong>char-code</strong></p>
 <p><strong>code-char</strong> <em>Function</em></p>
@@ -555,8 +555,8 @@
 <p><strong>Description:</strong></p>
 <p>Returns a <em>character</em> with the <em>code attribute</em> given by <em>code</em>. If no such <em>character</em> exists and one cannot be created, <strong>nil</strong> is returned.</p>
 <p><strong>Examples:</strong></p>
-<p>(code-char 65.) <em>→</em> #\A ;in an implementation using ASCII codes</p>
-<p>(code-char (char-code #\Space)) <em>→</em> #\Space ;in any implementation</p>
+<p>(code-char 65.) → #\A ;in an implementation using ASCII codes</p>
+<p>(code-char (char-code #\Space)) → #\Space ;in any implementation</p>
 <p><strong>Affected By:</strong></p>
 <p>The <em>implementation</em>’s character encoding.</p>
 <p><strong>See Also:</strong></p>
@@ -583,21 +583,21 @@
 <p>All <em>non-graphic</em> characters are required to have <em>names</em> unless they have some <em>implementation-defined attribute</em> which is not <em>null</em>. Whether or not other <em>characters</em> have <em>names</em> is <em>implementation dependent</em>.</p>
 <p>The <em>standard characters hNewlinei</em> and <em>hSpacei</em> have the respective names &quot;Newline&quot; and &quot;Space&quot;. The <em>semi-standard characters hTabi</em>, <em>hPagei</em>, <em>hRubouti</em>, <em>hLinefeedi</em>, <em>hReturni</em>, and <em>hBackspacei</em> (if they are supported by the <em>implementation</em>) have the respective names &quot;Tab&quot;, &quot;Page&quot;, &quot;Rubout&quot;, &quot;Linefeed&quot;, &quot;Return&quot;, and &quot;Backspace&quot; (in the indicated case, even though name lookup by “#\” and by the <em>function</em> <strong>name-char</strong> is not case sensitive).</p>
 <p><strong>Examples:</strong></p>
-<p>(char-name #\ ) <em>→</em> &quot;Space&quot;</p>
-<p>(char-name #\Space) <em>→</em> &quot;Space&quot;</p>
-<p>(char-name #\Page) <em>→</em> &quot;Page&quot;</p>
+<p>(char-name #\ ) → &quot;Space&quot;</p>
+<p>(char-name #\Space) → &quot;Space&quot;</p>
+<p>(char-name #\Page) → &quot;Page&quot;</p>
 <p>(char-name #\a)</p>
-<p><em>→</em> NIL</p>
+<p>→ NIL</p>
 <p><i><sup>or</sup>→</i> &quot;LOWERCASE-a&quot;</p>
 <p><i><sup>or</sup>→</i> &quot;Small-A&quot;</p>
 <p><i><sup>or</sup>→</i> &quot;LA01&quot;</p>
 <p>(char-name #\A)</p>
-<p><em>→</em> NIL</p>
+<p>→ NIL</p>
 <p><i><sup>or</sup>→</i> &quot;UPPERCASE-A&quot;</p>
 <p><i><sup>or</sup>→</i> &quot;Capital-A&quot;</p>
 <p><i><sup>or</sup>→</i> &quot;LA02&quot;</p>
 <p>;; Even though its CHAR-NAME can vary, #\A prints as #\A</p>
-<p>(prin1-to-string (read-from-string (format nil &quot;#\~A&quot; (or (char-name #\A) &quot;A&quot;)))) <em>→</em> &quot;#\A&quot;</p>
+<p>(prin1-to-string (read-from-string (format nil &quot;#\~A&quot; (or (char-name #\A) &quot;A&quot;)))) → &quot;#\A&quot;</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>character</em> is not a <em>character</em> .</p>
 <p><strong>See Also:</strong></p>
@@ -613,11 +613,11 @@
 <p><strong>Description:</strong></p>
 <p>Returns the <em>character object</em> whose <em>name</em> is <em>name</em> (as determined by <strong>string-equal</strong>—<em>i.e.</em>, lookup is not case sensitive). If such a <em>character</em> does not exist, <strong>nil</strong> is returned.</p>
 <p><strong>Examples:</strong></p>
-<p>(name-char ’space) <em>→</em> #\Space</p>
-<p>(name-char &quot;space&quot;) <em>→</em> #\Space</p>
-<p>(name-char &quot;Space&quot;) <em>→</em> #\Space</p>
+<p>(name-char ’space) → #\Space</p>
+<p>(name-char &quot;space&quot;) → #\Space</p>
+<p>(name-char &quot;Space&quot;) → #\Space</p>
 <p>(let ((x (char-name #\a)))</p>
-<p>(or (not x) (eql (name-char x) #\a))) <em>→ true</em></p>
+<p>(or (not x) (eql (name-char x) #\a))) → true</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>Should signal an error of <em>type</em> <strong>type-error</strong> if <em>name</em> is not a <em>string designator</em> .</p>
 <p><strong>See Also:</strong></p>

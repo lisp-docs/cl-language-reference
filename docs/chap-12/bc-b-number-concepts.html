@@ -9,7 +9,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.ad20780e.css">
-<script src="/cl-language-reference/assets/js/runtime~main.2c5242a7.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.810f012f.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.08468b7f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -96,7 +96,7 @@
 <p>Float substitutability applies neither to the rational <em>functions</em> <strong>+</strong>, <strong>-</strong>, <strong>*</strong>, and <strong>/</strong> nor to the related <em>operators</em> <strong>1+</strong>, <strong>1-</strong>, <strong>incf</strong>, <strong>decf</strong>, and <strong>conjugate</strong>. For rational <em>functions</em>, if all arguments are <em>rational</em>, then the result is <em>rational</em>; if all arguments are of type (or rational (complex rational)), then the result is of type (or rational (complex rational)).</p>
 <p>|<strong>Function Sample Results</strong>|</p>
 <p>| :- |</p>
-<p>|</p><p><strong>abs</strong> (abs #c(3 4)) <em>→</em> 5 <em>or</em> 5.0 </p><p><strong>acos</strong> (acos 1) <em>→</em> 0 <em>or</em> 0.0 </p><p><strong>acosh</strong> (acosh 1) <em>→</em> 0 <em>or</em> 0.0 </p><p><strong>asin</strong> (asin 0) <em>→</em> 0 <em>or</em> 0.0 </p><p><strong>asinh</strong> (asinh 0) <em>→</em> 0 <em>or</em> 0.0 </p><p><strong>atan</strong> (atan 0) <em>→</em> 0 <em>or</em> 0.0 </p><p><strong>atanh</strong> (atanh 0) <em>→</em> 0 <em>or</em> 0.0 </p><p><strong>cis</strong> (cis 0) <em>→</em> 1 <em>or</em> #c(1.0 0.0) </p><p><strong>cos</strong> (cos 0) <em>→</em> 1 <em>or</em> 1.0 </p><p><strong>cosh</strong> (cosh 0) <em>→</em> 1 <em>or</em> 1.0 </p><p><strong>exp</strong> (exp 0) <em>→</em> 1 <em>or</em> 1.0 </p><p><strong>expt</strong> (expt 8 1/3) <em>→</em> 2 <em>or</em> 2.0 </p><p><strong>log</strong> (log 1) <em>→</em> 0 <em>or</em> 0.0 </p><p>(log 8 2) <em>→</em> 3 <em>or</em> 3.0 </p><p><strong>phase</strong> (phase 7) <em>→</em> 0 <em>or</em> 0.0 </p><p><strong>signum</strong> (signum #c(3 4)) <em>→</em> #c(3/5 4/5) <em>or</em> #c(0.6 0.8) <strong>sin</strong> (sin 0) <em>→</em> 0 <em>or</em> 0.0 </p><p><strong>sinh</strong> (sinh 0) <em>→</em> 0 <em>or</em> 0.0 </p><p><strong>sqrt</strong> (sqrt 4) <em>→</em> 2 <em>or</em> 2.0 </p><p>(sqrt 9/16) <em>→</em> 3/4 <em>or</em> 0.75 </p><p><strong>tan</strong> (tan 0) <em>→</em> 0 <em>or</em> 0.0 </p><p><strong>tanh</strong> (tanh 0) <em>→</em> 0 <em>or</em> 0.0</p>|<p></p>
+<p>|</p><p><strong>abs</strong> (abs #c(3 4)) → 5 <em>or</em> 5.0 </p><p><strong>acos</strong> (acos 1) → 0 <em>or</em> 0.0 </p><p><strong>acosh</strong> (acosh 1) → 0 <em>or</em> 0.0 </p><p><strong>asin</strong> (asin 0) → 0 <em>or</em> 0.0 </p><p><strong>asinh</strong> (asinh 0) → 0 <em>or</em> 0.0 </p><p><strong>atan</strong> (atan 0) → 0 <em>or</em> 0.0 </p><p><strong>atanh</strong> (atanh 0) → 0 <em>or</em> 0.0 </p><p><strong>cis</strong> (cis 0) → 1 <em>or</em> #c(1.0 0.0) </p><p><strong>cos</strong> (cos 0) → 1 <em>or</em> 1.0 </p><p><strong>cosh</strong> (cosh 0) → 1 <em>or</em> 1.0 </p><p><strong>exp</strong> (exp 0) → 1 <em>or</em> 1.0 </p><p><strong>expt</strong> (expt 8 1/3) → 2 <em>or</em> 2.0 </p><p><strong>log</strong> (log 1) → 0 <em>or</em> 0.0 </p><p>(log 8 2) → 3 <em>or</em> 3.0 </p><p><strong>phase</strong> (phase 7) → 0 <em>or</em> 0.0 </p><p><strong>signum</strong> (signum #c(3 4)) → #c(3/5 4/5) <em>or</em> #c(0.6 0.8) <strong>sin</strong> (sin 0) → 0 <em>or</em> 0.0 </p><p><strong>sinh</strong> (sinh 0) → 0 <em>or</em> 0.0 </p><p><strong>sqrt</strong> (sqrt 4) → 2 <em>or</em> 2.0 </p><p>(sqrt 9/16) → 3/4 <em>or</em> 0.75 </p><p><strong>tan</strong> (tan 0) → 0 <em>or</em> 0.0 </p><p><strong>tanh</strong> (tanh 0) → 0 <em>or</em> 0.0</p>|<p></p>
 <p><strong>Figure 12–8. Functions Affected by Rule of Float Substitutability</strong></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="1214-floating">12.1.4 Floating<a href="#1214-floating" class="hash-link" aria-label="Direct link to 12.1.4 Floating" title="Direct link to 12.1.4 Floating">​</a></h2>
 <!-- -->
@@ -112,16 +112,16 @@
 <p>;;; (float-radix 0.5) is 2 (as in IEEE) or 16 (as in IBM/360),</p>
 <p>;;; or else some other implementation in which 1/2 has an exact</p>
 <p>;;; representation in floating point.</p>
-<p>(+ 1/2 0.5) <em>→</em> 1.0</p>
-<p>(- 1/2 0.5d0) <em>→</em> 0.0d0</p>
-<p>(+ 0.5 -0.5 1/2) <em>→</em> 0.5</p>
+<p>(+ 1/2 0.5) → 1.0</p>
+<p>(- 1/2 0.5d0) → 0.0d0</p>
+<p>(+ 0.5 -0.5 1/2) → 0.5</p>
 <p>;;;; Comparing rationals with floats.</p>
 <p>;;; This example assumes an implementation in which the default float</p>
 <p>;;; format is IEEE single-float, IEEE double-float, or some other format</p>
 <p>;;; in which 5/7 is rounded upwards by FLOAT.</p>
-<p>(&lt; 5/7 (float 5/7)) <em>→ true</em></p>
-<p>(&lt; 5/7 (rational (float 5/7))) <em>→ true</em></p>
-<p>(&lt; (float 5/7) (float 5/7)) <em>→ false</em></p>
+<p>(&lt; 5/7 (float 5/7)) → true</p>
+<p>(&lt; 5/7 (rational (float 5/7))) → true</p>
+<p>(&lt; (float 5/7) (float 5/7)) → false</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="12142-rule-of-float-approximation">12.1.4.2 Rule of Float Approximation<a href="#12142-rule-of-float-approximation" class="hash-link" aria-label="Direct link to 12.1.4.2 Rule of Float Approximation" title="Direct link to 12.1.4.2 Rule of Float Approximation">​</a></h3>
 <!-- -->
 <p>Computations with <em>floats</em> are only approximate, although they are described as if the results were mathematically accurate. Two mathematically identical expressions may be computationally different because of errors inherent in the floating-point approximation process. The precision of a <em>float</em> is not necessarily correlated with the accuracy of that number. For instance, 3.142857142857142857 is a more precise approximation to <em>π</em> than 3.14159, but the latter is more accurate. The precision refers to the number of bits retained in the representation. When an operation combines a <em>short float</em> with a <em>long float</em>, the result will be a <em>long float</em>. Common Lisp functions assume that the accuracy of arguments to them does not exceed their precision. Therefore when two <em>small floats</em> are combined, the result is a <em>small float</em>. Common Lisp functions never convert automatically from a larger size to a smaller one.</p>
@@ -146,14 +146,14 @@
 <p>5.0 are always <em>different objects</em> in Common Lisp (they are never the <em>same</em> under <strong>eql</strong>, although they are the <em>same</em> under <strong>equalp</strong> and <strong>=</strong>).</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="121531-examples-of-rule-of-canonical-representation-for-complex-rationals">12.1.5.3.1 Examples of Rule of Canonical Representation for Complex Rationals<a href="#121531-examples-of-rule-of-canonical-representation-for-complex-rationals" class="hash-link" aria-label="Direct link to 12.1.5.3.1 Examples of Rule of Canonical Representation for Complex Rationals" title="Direct link to 12.1.5.3.1 Examples of Rule of Canonical Representation for Complex Rationals">​</a></h4>
 <!-- -->
-<p>#c(1.0 1.0) <em>→</em> #C(1.0 1.0)</p>
-<p>#c(0.0 0.0) <em>→</em> #C(0.0 0.0)</p>
-<p>#c(1.0 1) <em>→</em> #C(1.0 1.0)</p>
-<p>#c(0.0 0) <em>→</em> #C(0.0 0.0)</p>
-<p>#c(1 1) <em>→</em> #C(1 1)</p>
-<p>#c(0 0) <em>→</em> 0</p>
-<p>(typep #c(1 1) ’(complex (eql 1))) <em>→ true</em></p>
-<p>(typep #c(0 0) ’(complex (eql 0))) <em>→ false</em></p>
+<p>#c(1.0 1.0) → #C(1.0 1.0)</p>
+<p>#c(0.0 0.0) → #C(0.0 0.0)</p>
+<p>#c(1.0 1) → #C(1.0 1.0)</p>
+<p>#c(0.0 0) → #C(0.0 0.0)</p>
+<p>#c(1 1) → #C(1 1)</p>
+<p>#c(0 0) → 0</p>
+<p>(typep #c(1 1) ’(complex (eql 1))) → true</p>
+<p>(typep #c(0 0) ’(complex (eql 0))) → false</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="12154-principal-values-and-branch-cuts">12.1.5.4 Principal Values and Branch Cuts<a href="#12154-principal-values-and-branch-cuts" class="hash-link" aria-label="Direct link to 12.1.5.4 Principal Values and Branch Cuts" title="Direct link to 12.1.5.4 Principal Values and Branch Cuts">​</a></h3>
 <!-- -->
 <p>Many of the irrational and transcendental functions are multiply defined in the complex domain; for example, there are in general an infinite number of complex values for the logarithm function. In each such case, a <em>principal value</em> must be chosen for the function to return. In general, such values cannot be chosen so as to make the range continuous; lines in the domain called branch cuts must be defined, which in turn define the discontinuities in the range. Common Lisp defines the branch cuts, <em>principal values</em>, and boundary conditions for the complex functions following “Principal Values and Branch Cuts in Complex APL.” The branch cut rules that apply to each function are located with the description of that function.</p>
