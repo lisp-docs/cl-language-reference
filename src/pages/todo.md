@@ -3,11 +3,9 @@
 
 Here we will list all the To Do items we have for this project, and you can help by taking care of any of them :D.
 
-- Indent Common Lisp code blocks.
 - Add Tooltips with definitions from the glossary everywhere that is relevant
   - The best way to do it is by creating a hash table of the dictionary, and everywhere an italizaed word is present, suroound it with a React Component which will check if there's a definition for that text in the glossary and it will add a tooltip if it's relevant
   - This should probably be a react component so that it can also be used in oher Lisp Docs pages and tutorials and shared easily across projects
-- Break the Glossary into 27 pages, one per letter, plus the introduction and non alphabetical symbols page.
 - We should add links to all the bolded items in the reference to go to the appropiate pages. This should be actually fairly straight forward to do with code. We can just build a hash table of the dictionary pages available, with the name of each page, then simply find all the bolded text in the reference, and if its name matches an entry in the hash table, turn in into a link for that page.
 - We need to format al the Tables to markdown.
 - **Examples**: We need expanded examples and **Explanations** for most of the content in the reference.
@@ -27,4 +25,6 @@ Here we will list all the To Do items we have for this project, and you can help
   - ~~9.2~~
   - ~~etc. It seems the last section of every chapter which is the *Dictionary* was bundled into the next to last section.~~
 - ~~Fix the Dictionary Entry pages that were not parsed correctly.~~
+- ~~Indent Common Lisp code blocks.~~
+- ~~Break the Glossary into 27 pages, one per letter, plus the introduction and non alphabetical symbols page.~~
 
