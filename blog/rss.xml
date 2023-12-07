@@ -9,6 +9,19 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
+            <title><![CDATA[Code Blocks Indented]]></title>
+            <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/07/code-indented</link>
+            <guid>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/07/code-indented</guid>
+            <pubDate>Thu, 07 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Code Blocks Indented]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="code-blocks-indented">Code Blocks Indented<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/07/code-indented#code-blocks-indented" class="hash-link" aria-label="Direct link to Code Blocks Indented" title="Direct link to Code Blocks Indented">​</a></h2>
+<p>Good news, now the code blocks look even better! I indented them using the emacs indentation so it follows the conventional indentation. Changes made to 414 files <!-- -->:D</p>
+<p>Enjoy!</p>]]></content:encoded>
+            <category>status</category>
+            <category>beginning</category>
+            <category>glossary</category>
+        </item>
+        <item>
             <title><![CDATA[Glossary Improved!]]></title>
             <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/07/</link>
             <guid>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/07/</guid>

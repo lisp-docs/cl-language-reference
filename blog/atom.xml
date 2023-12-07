@@ -8,6 +8,23 @@
     <subtitle>Common Lisp (New) Language Reference Blog</subtitle>
     <icon>https://lisp-docs.github.io/cl-language-reference/img/favicon.ico</icon>
     <entry>
+        <title type="html"><![CDATA[Code Blocks Indented]]></title>
+        <id>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/07/code-indented</id>
+        <link href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/07/code-indented"/>
+        <updated>2023-12-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Code Blocks Indented]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="code-blocks-indented">Code Blocks Indented<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/07/code-indented#code-blocks-indented" class="hash-link" aria-label="Direct link to Code Blocks Indented" title="Direct link to Code Blocks Indented">​</a></h2>
+<p>Good news, now the code blocks look even better! I indented them using the emacs indentation so it follows the conventional indentation. Changes made to 414 files <!-- -->:D</p>
+<p>Enjoy!</p>]]></content>
+        <author>
+            <name>Daniel N</name>
+            <uri>https://github.com/daninus14</uri>
+        </author>
+        <category label="status" term="status"/>
+        <category label="beginning" term="beginning"/>
+        <category label="glossary" term="glossary"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Glossary Improved!]]></title>
         <id>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/07/</id>
         <link href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/07/"/>
