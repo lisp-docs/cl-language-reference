@@ -44,17 +44,17 @@ If **progn** appears as a *top level form*, then all *forms* within that **progn
 (progn) → NIL 
 (progn 1 2 3) → 3 
 (progn (values 1 2 3)) → 1, 2, 3 
-(DEFPARAMETER a 1) → 1 
+(defparameter a 1) → 1 
 (if a 
-    (progn (DEFPARAMETER a nil) ’here) 
-    (progn (DEFPARAMETER a t) ’there)) → HERE 
+    (progn (setf a nil) ’here) 
+    (progn (setf a t) ’there)) → HERE 
 a → NIL 
 
 ```
 
 :::info
 
-The **example** above was modified replacing `SETQ` with `DEFPARAMETER`. That is because the specification changed yet they did not update the example to fit the specification. This was a mistake in the original ANSI Reference and has been fixed here.
+The **example** above was modified replacing `SETQ` with `DEFPARAMETER` or `SETF` according to context. That is because the specification changed yet they did not update the example to fit the specification. This was a mistake in the original ANSI Reference and has been fixed here.
 
 :::
 
