@@ -73,65 +73,35 @@ If two lists (load-time-value *form*) that are the *same* under **equal** but ar
 **Examples:**
 ```lisp
  
-
 ;;; The function INCR1 always returns the same value, even in different images. ;;; The function INCR2 always returns the same value in a given image, 
-
 ;;; but the value it returns might vary from image to image. 
-
 (defun incr1 (x) (+ x #.(random 17))) 
-
 (defun incr2 (x) (+ x (load-time-value (random 17)))) 
-
 ;;; The function FOO1-REF references the nth element of the first of 
-
 ;;; the \*FOO-ARRAYS\* that is available at load time. It is permissible for 
-
 ;;; that array to be modified (e.g., by SET-FOO1-REF); FOO1-REF will see the 
-
 ;;; updated values. 
-
 (defvar \*foo-arrays\* (list (make-array 7) (make-array 8))) 
-
 (defun foo1-ref (n) (aref (load-time-value (first \*my-arrays\*) nil) n)) 
-
 (defun set-foo1-ref (n val) 
-
 (setf (aref (load-time-value (first \*my-arrays\*) nil) n) val)) 
-
 ;;; The function BAR1-REF references the nth element of the first of 
-
 ;;; the \*BAR-ARRAYS\* that is available at load time. The programmer has 
-
 ;;; promised that the array will be treated as read-only, so the system 
-
 ;;; can copy or coalesce the array. 
-
 (defvar \*bar-arrays\* (list (make-array 7) (make-array 8))) 
-
 (defun bar1-ref (n) (aref (load-time-value (first \*my-arrays\*) t) n)) 
-
 ;;; This use of LOAD-TIME-VALUE permits the indicated vector to be coalesced 
-
 ;;; even though NIL was specified, because the object was already read-only 
-
 ;;; when it was written as a literal vector rather than created by a constructor. ;;; User programs must treat the vector v as read-only. 
-
 (defun baz-ref (n)  
 
-
-
 (let ((v (load-time-value #(A B C) nil))) 
-
 (values (svref v n) v))) 
-
 ;;; This use of LOAD-TIME-VALUE permits the indicated vector to be coalesced 
-
 ;;; even though NIL was specified in the outer situation because T was specified ;;; in the inner situation. User programs must treat the vector v as read-only. (defun baz-ref (n) 
-
 (let ((v (load-time-value (load-time-value (vector 1 2 3) t) nil))) 
-
 (values (svref v n) v))) 
-
 
 ```
 **See Also:** 

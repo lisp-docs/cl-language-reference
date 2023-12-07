@@ -65,21 +65,13 @@ If any of these operations does not make sense for *output-stream*, then it does
 **Examples:**
 ```lisp
  
-
 ;; Implementation A 
-
 (progn (princ "am i seen?") (clear-output)) 
-
 → NIL 
-
 ;; Implementation B 
-
 (progn (princ "am i seen?") (clear-output)) 
-
 ▷ am i seen? 
-
 → NIL 
-
 
 ```
 **Affected By:** 

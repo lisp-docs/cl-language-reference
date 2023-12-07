@@ -37,33 +37,19 @@ Only the *list structure* of *list* is copied; the *elements* of the resulting l
 **Examples:**
 ```lisp
  
-
 (setq lst (list 1 (list 2 3))) → (1 (2 3)) 
-
 (setq slst lst) → (1 (2 3)) 
-
 (setq clst (copy-list lst)) → (1 (2 3)) 
-
 (eq slst lst) → true 
-
 (eq clst lst) → false 
-
 (equal clst lst) → true 
-
 (rplaca lst "one") → ("one" (2 3)) 
-
 slst → ("one" (2 3)) 
-
 clst → (1 (2 3)) 
-
 (setf (caadr lst) "two") → "two" 
-
 lst → ("one" ("two" 3)) 
-
 slst → ("one" ("two" 3)) 
-
 clst → (1 ("two" 3)) 
-
 
 ```
 **Exceptional Situations:** 
@@ -157,33 +143,19 @@ If the last *argument* to **list\*** is a *list*, the effect is to construct a n
 If **list\*** receives only one *object*, that *object* is returned, regardless of whether or not it is a *list*. **Examples:**
 ```lisp
  
-
 (list 1) → (1) 
-
 (list\* 1) → 1 
-
 (setq a 1) → 1 
-
 (list a 2) → (1 2) 
-
 ’(a 2) → (A 2) 
-
 (list ’a 2) → (A 2) 
-
 (list\* a 2) → (1 . 2) 
-
 (list) → NIL ;*i.e.*, () 
-
 (setq a ’(1 2)) → (1 2) 
-
 (eq a (list\* a)) → true 
-
 (list 3 4 ’a (car ’(b . c)) (+ 6 -2)) → (3 4 A B 4) 
-
 (list\* ’a ’b ’c ’d) *≡* (cons ’a (cons ’b (cons ’c ’d))) → (A B C . D) 
-
 (list\* ’a ’b ’c ’(d e f)) → (A B C D E F) 
-
 
 ```
 **See Also:** 

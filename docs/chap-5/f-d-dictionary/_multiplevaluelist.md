@@ -41,9 +41,7 @@ Data and Control
 **multiple-value-list** evaluates *form* and creates a *list* of the *multiple values*<sub>2</sub> it returns. **Examples:**
 ```lisp
  
-
 (multiple-value-list (floor -3 4)) → (-1 1) 
-
 
 ```
 **See Also:** 

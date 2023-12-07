@@ -81,9 +81,7 @@ The arguments to **update-instance-for-different-class** are computed by **chang
 **Examples:**
 ```lisp
  
-
 See the example for the *function* **change-class**. 
-
 
 ```
 **Exceptional Situations:** 

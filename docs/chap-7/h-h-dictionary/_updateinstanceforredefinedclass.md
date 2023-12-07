@@ -118,88 +118,46 @@ The value returned by **update-instance-for-redefined-class** is ignored.
 ```lisp
  
 
-
-
  
-
  
-
 **update-instance-for-redefined-class** 
-
 (defclass position () ()) 
-
 (defclass x-y-position (position) 
-
 ((x :initform 0 :accessor position-x) 
-
 (y :initform 0 :accessor position-y))) 
-
 ;;; It turns out polar coordinates are used more than Cartesian ;;; coordinates, so the representation is altered and some new ;;; accessor methods are added. 
-
 (defmethod update-instance-for-redefined-class :before 
-
 ((pos x-y-position) added deleted plist &amp;key) 
-
 ;; Transform the x-y coordinates to polar coordinates 
-
 ;; and store into the new slots. 
-
 (let ((x (getf plist ’x)) 
-
 (y (getf plist ’y))) 
-
 (setf (position-rho pos) (sqrt (+ (\* x x) (\* y y))) 
-
 (position-theta pos) (atan y x)))) 
-
 (defclass x-y-position (position) 
-
 ((rho :initform 0 :accessor position-rho) 
-
 (theta :initform 0 :accessor position-theta))) 
-
 ;;; All instances of the old x-y-position class will be updated ;;; automatically. 
-
 ;;; The new representation is given the look and feel of the old one. 
-
 (defmethod position-x ((pos x-y-position)) 
-
 (with-slots (rho theta) pos (\* rho (cos theta)))) 
-
 (defmethod (setf position-x) (new-x (pos x-y-position)) 
-
 (with-slots (rho theta) pos 
-
 (let ((y (position-y pos))) 
-
 (setq rho (sqrt (+ (\* new-x new-x) (\* y y))) 
-
 theta (atan y new-x)) 
-
 new-x))) 
-
 (defmethod position-y ((pos x-y-position)) 
-
 (with-slots (rho theta) pos (\* rho (sin theta)))) 
-
 (defmethod (setf position-y) (new-y (pos x-y-position)) 
-
 (with-slots (rho theta) pos 
-
 (let ((x (position-x pos))) 
-
 (setq rho (sqrt (+ (\* x x) (\* new-y new-y))) 
 
-
-
  
-
  
-
 theta (atan new-y x)) 
-
 new-y))) 
-
 
 ```
 **Exceptional Situations:** 

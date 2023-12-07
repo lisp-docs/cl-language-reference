@@ -45,15 +45,10 @@ Returns **t** if *object* is the *empty list*; otherwise, returns **nil**.
 **Examples:**
 ```lisp
  
-
 (null ’()) → T 
-
 (null nil) → T 
-
 (null t) → NIL 
-
 (null 1) → NIL 
-
 
 ```
 **See Also:** 

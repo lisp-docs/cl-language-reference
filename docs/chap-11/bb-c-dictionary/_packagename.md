@@ -33,27 +33,16 @@
 **Examples:**
 ```lisp
  
-
 (in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
-
 (package-name \*package\*) → "COMMON-LISP-USER" 
-
 (package-name (symbol-package :test)) → "KEYWORD" 
-
 (package-name (find-package ’common-lisp)) → "COMMON-LISP" 
-
 (defvar \*foo-package\* (make-package "FOO")) 
 
-
-
  
-
  
-
 (rename-package "FOO" "FOO0") 
-
 (package-name \*foo-package\*) → "FOO0" 
-
 
 ```
 **Exceptional Situations:** 

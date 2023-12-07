@@ -49,23 +49,14 @@ Calls the *function* associated with *restart*, passing *arguments* to it. *Rest
 **Examples:**
 ```lisp
  
-
 (defun add3 (x) (check-type x number) (+ x 3)) 
-
 (foo ’seven) 
-
 ▷ Error: The value SEVEN was not of type NUMBER. 
-
 ▷ To continue, type :CONTINUE followed by an option number: 
-
 ▷ 1: Specify a different value to use. 
-
 ▷ 2: Return to Lisp Toplevel. 
-
 ▷ Debug> (invoke-restart ’store-value 7) 
-
 → 10 
-
 
 ```
 **Side Effects:** 

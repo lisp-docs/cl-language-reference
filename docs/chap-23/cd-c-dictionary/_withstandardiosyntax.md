@@ -59,29 +59,17 @@ Within the dynamic extent of the body of *forms*, all reader/printer control var
 **Examples:**
 ```lisp
  
-
 (with-open-file (file pathname :direction :output) 
-
 (with-standard-io-syntax 
-
 (print data file))) 
-
 ;;; ... Later, in another Lisp: 
-
 (with-open-file (file pathname :direction :input) 
-
 (with-standard-io-syntax 
-
 (setq data (read file)))) 
 
-
-
  
-
  
-
 *∗***read-base***∗ Variable* 
-
 
 ```
 **Value Type:** 
@@ -119,29 +107,17 @@ The effect of **\*read-base\*** on the reading of any particular *rational* numb
 **Examples:**
 ```lisp
  
-
 (dotimes (i 6) 
-
 (let ((\*read-base\* (+ 10. i))) 
-
 (let ((object (read-from-string "(\\DAD DAD |BEE| BEE 123. 123)"))) 
-
 (print (list \*read-base\* object))))) 
-
 ▷ (10 (DAD DAD BEE BEE 123 123)) 
-
 ▷ (11 (DAD DAD BEE BEE 123 146)) 
-
 ▷ (12 (DAD DAD BEE BEE 123 171)) 
-
 ▷ (13 (DAD DAD BEE BEE 123 198)) 
-
 ▷ (14 (DAD 2701 BEE BEE 123 227)) 
-
 ▷ (15 (DAD 3088 BEE 2699 123 258)) 
-
 → NIL 
-
 
 ```
 **Notes:** 
@@ -199,17 +175,11 @@ The printer uses **\*read-default-float-format\*** to guide the choice of *expon
 **Examples:**
 ```lisp
  
-
 (let ((\*read-default-float-format\* ’double-float)) 
-
 (read-from-string "(1.0 1.0e0 1.0s0 1.0f0 1.0d0 1.0L0)")) 
-
 → (1.0 1.0 1.0 1.0 1.0 1.0) ;Implementation has float format F. 
-
 → (1.0 1.0 1.0s0 1.0 1.0 1.0) ;Implementation has float formats S and F. → (1.0d0 1.0d0 1.0 1.0 1.0d0 1.0d0) ;Implementation has float formats F and D. → (1.0d0 1.0d0 1.0s0 1.0 1.0d0 1.0d0) ;Implementation has float formats S, F, D. → (1.0d0 1.0d0 1.0 1.0 1.0d0 1.0L0) ;Implementation has float formats F, D, L. → (1.0d0 1.0d0 1.0s0 1.0 1.0d0 1.0L0) ;Implementation has formats S, F, D, L. 
-
 *∗***read-eval***∗ Variable* 
-
 
 ```
 **Value Type:** 
@@ -351,19 +321,12 @@ No matter what the *value* of **\*read-suppress\***, parentheses still continue 
 **Examples:**
 ```lisp
  
-
 (let ((\*read-suppress\* t)) 
-
 (mapcar #’read-from-string 
-
 ’("#(foo bar baz)" "#P(:type :lisp)" "#c1.2" 
-
 "#.(PRINT ’FOO)" "#3AHELLO" "#S(INTEGER)" 
-
 "#\*ABC" "#\GARBAGE" "#RALPHA" "#3R444"))) 
-
 → (NIL NIL NIL NIL NIL NIL NIL NIL NIL NIL) 
-
 
 ```
 **See Also:** 
@@ -413,29 +376,17 @@ The *value* of **\*readtable\*** is called the *current readtable*. It controls 
 **Examples:**
 ```lisp
  
-
 (readtablep \*readtable\*) → true 
 
-
-
  
-
  
-
 (setq zvar 123) → 123 
-
 (set-syntax-from-char #\z #\’ (setq table2 (copy-readtable))) → T 
-
 zvar → 123 
-
 (setq \*readtable\* table2) → #<READTABLE> 
-
 zvar → VAR 
-
 (setq \*readtable\* (copy-readtable nil)) → #<READTABLE> 
-
 zvar → 123 
-
 
 ```
 **Affected By:** 

@@ -93,17 +93,11 @@ It is *implementation-dependent* whether the *string* that becomes the new *symb
 **Examples:**
 ```lisp
  
-
 (in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
-
 (intern "Never-Before") → |Never-Before|, NIL 
-
 (intern "Never-Before") → |Never-Before|, :INTERNAL 
-
 (intern "NEVER-BEFORE" "KEYWORD") → :NEVER-BEFORE, NIL 
-
 (intern "NEVER-BEFORE" "KEYWORD") → :NEVER-BEFORE, :EXTERNAL 
-
 
 ```
 **See Also:** 

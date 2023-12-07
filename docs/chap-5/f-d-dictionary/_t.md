@@ -37,23 +37,14 @@ The *symbol* **t** is also sometimes used for other purposes as well. For exampl
 **Examples:**
 ```lisp
  
-
 t → T 
-
 (eq t ’t) → true 
-
 (find-class ’t) → #<CLASS T 610703333> 
-
 (case ’a (a 1) (t 2)) → 1 
-
 (case ’b (a 1) (t 2)) → 2 
-
 (prin1 ’hello t) 
-
 ▷ HELLO 
-
 → HELLO 
-
 
 ```
 **See Also:** 

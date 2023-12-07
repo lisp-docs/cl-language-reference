@@ -33,15 +33,10 @@ Returns the *elements* of the *list* as *multiple values*<sub>2</sub>.
 **Examples:**
 ```lisp
  
-
 (values-list nil) → hno valuesi 
-
 (values-list ’(1)) → 1 
-
 (values-list ’(1 2)) → 1, 2 
-
 (values-list ’(1 2 3)) → 1, 2, 3 
-
 
 ```
 **Exceptional Situations:** 

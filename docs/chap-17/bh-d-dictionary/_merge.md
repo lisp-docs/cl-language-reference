@@ -93,35 +93,20 @@ If the *result-type* is a *subtype* of **vector**, then if the implementation ca
 **Examples:**
 ```lisp
  
-
 (setq test1 (list 1 3 4 6 7)) 
-
 (setq test2 (list 2 5 8)) 
-
 (merge ’list test1 test2 #’<) → (1 2 3 4 5 6 7 8) 
-
 (setq test1 (copy-seq "BOY")) 
-
 (setq test2 (copy-seq :nosy")) 
-
 (merge ’string test1 test2 #’char-lessp) → "BnOosYy" 
-
 (setq test1 (vector ((red . 1) (blue . 4)))) 
 
-
-
  
-
  
-
 (setq test2 (vector ((yellow . 2) (green . 7)))) 
-
 (merge ’vector test1 test2 #’< :key #’cdr) 
-
 → #((RED . 1) (YELLOW . 2) (BLUE . 4) (GREEN . 7)) 
-
 (merge ’(vector \* 4) ’(1 5) ’(2 4 6) #’<) should signal an error 
-
 
 ```
 **Exceptional Situations:** 

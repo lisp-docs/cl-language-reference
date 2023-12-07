@@ -33,27 +33,16 @@
 **Examples:**
 ```lisp
  
-
 (find-all-symbols ’car) 
-
 → (CAR) 
-
 <i><sup>or</sup>→</i> (CAR VEHICLES:CAR) 
-
 <i><sup>or</sup>→</i> (VEHICLES:CAR CAR) 
-
 (intern "CAR" (make-package ’temp :use nil)) → TEMP::CAR, NIL 
-
 (find-all-symbols ’car) 
-
 → (TEMP::CAR CAR) 
-
 <i><sup>or</sup>→</i> (CAR TEMP::CAR) 
-
 <i><sup>or</sup>→</i> (TEMP::CAR CAR VEHICLES:CAR) 
-
 <i><sup>or</sup>→</i> (CAR TEMP::CAR VEHICLES:CAR) 
-
 
 ```
 **See Also:** 

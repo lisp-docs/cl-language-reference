@@ -190,7 +190,6 @@
  (defmacro foo (x) `(car ,x))
  (eval-when (:execute :compile-toplevel :load-toplevel)
    (print (foo '(a b c))))
-
 ```
 
 
@@ -198,7 +197,6 @@
  (eval-when (:execute :compile-toplevel :load-toplevel)
    (defmacro foo (x) `(car ,x))
    (print (foo '(a b c))))
-
 ```
 
 
@@ -1034,21 +1032,18 @@ Scale factor  7: | 3141590.E-06|
 ```lisp
  (width (make-instance `character-class :char #\Q) 
         :font 'baskerville :pixel-size 10)
-
 ```
 
 
 ```lisp
  (width (make-instance `picture-class :glyph (glyph #\Q)) 
         :font 'baskerville :pixel-size 10)
-
 ```
 
 
 ```lisp
  (width (make-instance `character-picture-class :char #\Q)
         :font 'baskerville :pixel-size 10)
-
 ```
 
 
@@ -1555,7 +1550,6 @@ Scale factor  7: | 3141590.E-06|
 \OUT 3 
 \OUT 9 
 → NIL
-
 ```
 
 
@@ -1788,7 +1782,6 @@ Error: non-numeric value: A
 
 ```lisp
  `(cond ((numberp ,x) ,@y) (t (print ,x) ,@y))
-
 ```
 
 
@@ -1802,7 +1795,6 @@ Error: non-numeric value: A
 ```lisp
  `(x ,x ,@x foo ,(cadr x) bar ,(cdr x) baz ,@(cdr x))
 → (x (a b c) a b c foo b bar (b c) baz b c)
-
 ```
 
 
@@ -1818,7 +1810,6 @@ Error: non-numeric value: A
 
 ```lisp
  `((,a b) ,c ,@d)
-
 ```
 
 
@@ -2098,7 +2089,6 @@ Error: non-numeric value: A
 
 ```lisp
  (defmacro wrong-order (x y) `(getf ,y ,x))
-
 ```
 
 
@@ -3741,7 +3731,6 @@ OR=> "LA02"
 \OUT Type a form to be evaluated and used instead: \IN{5}
 → (defun add5 (x) (+ x 5))
  
-
 ```
 
 
@@ -3870,7 +3859,6 @@ Debug>
        (setq i (read))
        (fresh-line))
      (nth (- i 1) choices)))
-
  (defun my-debugger (condition me-or-my-encapsulation)
    (format t "~&Fooey: ~A" condition)
    (let ((restart (one-of (compute-restarts))))
@@ -3892,7 +3880,6 @@ Debug>
 \OUT Choice: 1
 \OUT  Form to evaluate and use: 1
 → 9
-
 ```
 
 
@@ -3938,7 +3925,6 @@ Debug>
  (defun trap-error-handler (condition)
    (format *error-output* "~&~A~&" condition)
    (throw 'trap-errors nil))
-
  (defmacro trap-errors (&rest forms)
    `(catch 'trap-errors
       (handler-bind ((error #'trap-error-handler))
@@ -3949,7 +3935,6 @@ Debug>
        (+ 1 2))
 \OUT Bar.
 → (1 NIL 3)
-
 ```
 
 
@@ -4470,7 +4455,6 @@ COMPUTE-POWER-OF-2
           :report (lambda (stream)
                     (format stream ,format-control ,@format-arguments))
          (values nil t))))
-
 ```
 
 
@@ -4515,7 +4499,6 @@ COMPUTE-POWER-OF-2
 \OUT Situation #3.
 \OUT Situation #1.
 → NIL
-
 ```
 
 
@@ -4536,22 +4519,18 @@ COMPUTE-POWER-OF-2
 
 ```lisp
 ;;; Example of the ABORT retart
-
  (defmacro abort-on-error (&body forms)
    `(handler-bind ((error #'abort))
       ,@forms)) → ABORT-ON-ERROR
  (abort-on-error (+ 3 5)) → 8
  (abort-on-error (error "You lose."))
 \OUT Returned to Lisp Top Level.
-
 ;;; Example of the CONTINUE restart
-
  (defun real-sqrt (n)
    (when (minusp n)
      (setq n (- n))
      (cerror "Return sqrt(~D) instead." "Tried to take sqrt(-~D)." n))
    (sqrt n))
-
  (real-sqrt 4) → 2
  (real-sqrt -9)
 \OUT Error: Tried to take sqrt(-9).
@@ -4564,9 +4543,7 @@ COMPUTE-POWER-OF-2
  
  (handler-bind ((error #'(lambda (c) (continue))))
    (real-sqrt -9)) → 3
-
 ;;; Example of the MUFFLE-WARNING restart
-
  (defun count-down (x)
    (do ((counter x (1- counter)))
        ((= counter 0) 'done)
@@ -4593,9 +4570,7 @@ COMPUTE-POWER-OF-2
 \OUT 2
 \OUT 1
 → DONE
-
 ;;; Example of the STORE-VALUE and USE-VALUE restarts
-
  (defun careful-symbol-value (symbol)
    (check-type symbol symbol)
    (restart-case (if (boundp symbol)
@@ -4630,9 +4605,7 @@ COMPUTE-POWER-OF-2
 → 24
  (careful-symbol-value 'a)
 → 24
-
 ;;; Example of the USE-VALUE restart
-
  (defun add-symbols-with-default (default &rest symbols)
    (handler-bind ((sys:unbound-symbol
                     #'(lambda (c)
@@ -4642,8 +4615,6 @@ COMPUTE-POWER-OF-2
 → ADD-SYMBOLS-WITH-DEFAULT
  (setq x 1 y 2) → 2
  (add-symbols-with-default 3 'x 'y 'z) → 6
-
-
 
 ```
 
@@ -5118,7 +5089,6 @@ COMPUTE-POWER-OF-2
 \OUT NIL
 \OUT T
 → T
-
 ```
 
 
@@ -5841,7 +5811,6 @@ OR=> (1 2 (1 2) "a" "b" "C" "B" (2 3) 3)
 (list a b c) → (4 5 6)
 (eval +++) → (1 2 3)
 #.`(,@++ d) → (1 2 3 (1 2 3))
-
 ```
 
 
@@ -5949,7 +5918,6 @@ OR=> "Symbolics LM-2"
 (defmacro lambda (&whole form &rest bvl-decls-and-body)
   (declare (ignore bvl-decls-and-body))
   `#',form)
-
 ```
 
 
@@ -6045,14 +6013,12 @@ OR=> "Symbolics LM-2"
  (defmacro foo ()
    (really-foo)
    `(really-foo))
-
 ```
 
 
 ```lisp
  (defmacro foo ()
    `(eval-when (:compile-toplevel :execute :load-toplevel) (really-foo)))
-
 ```
 
 
@@ -6162,7 +6128,6 @@ OR=> "Symbolics LM-2"
 → (EXPT X 4)
  (funcall (compiler-macro-function 'square) '(funcall #'square x) nil)
 → (EXPT X 2)
-
  (defun distance-positional (x1 y1 x2 y2)
    (sqrt (+ (expt (- x2 x1) 2) (expt (- y2 y1) 2))))
 → DISTANCE-POSITIONAL
@@ -6238,7 +6203,6 @@ OR=> "Symbolics LM-2"
 \OUT (DISTANCE-POSITIONAL A1 B1 A2 B2) 
 \OUT (DISTANCE :X1 A1 :Y1 B1 :Z1 C1 :X2 A2 :Y2 B2 :Z2 C2) 
 → NIL
-
 ```
 
 
@@ -6253,7 +6217,6 @@ OR=> "Symbolics LM-2"
  (defmacro mac3 (&whole r a &optional (b 3) &rest x &key c (d a))
     `'(,r ,a ,b ,c ,d ,x)) → MAC3 
  (mac3 1 6 :d 8 :c 9 :d 10) → ((MAC3 1 6 :D 8 :C 9 :D 10) 1 6 9 8 (:D 8 :C 9 :D 10)) 
-
 ```
 
 
@@ -6415,7 +6378,6 @@ OR=> "Symbolics LM-2"
  (macroexpand '(dm1b q))  → (QUOTE ((DM1B Q) Q NIL))
  (macroexpand '(dm1b q r)) → (QUOTE ((DM1B Q R) Q R))
  (macroexpand '(dm1b q r s)) is an error.
-
 ```
 
 
@@ -6423,7 +6385,6 @@ OR=> "Symbolics LM-2"
  (defmacro dm2a (&whole form a b) `'(form ,form a ,a b ,b))
  (macroexpand '(dm2a x y)) → (QUOTE (FORM (DM2A X Y) A X B Y))
  (dm2a x y) → (FORM (DM2A X Y) A X B Y)
-
  (defmacro dm2b (&whole form a (&whole b (c . d) &optional (e 5)) 
                  &body f &environment env)
    ``(,',form ,,a ,',b ,',(macroexpand c env) ,',d ,',e ,',f))
@@ -6440,7 +6401,6 @@ OR=> "Symbolics LM-2"
      (dm2b x1 (((segundo x2) x3 x4)) x5 x6)))
  → ((DM2B X1 (((SEGUNDO X2) X3 X4)) X5 X6)
       5 (((SEGUNDO X2) X3 X4)) (CADR X2) (X3 X4) 5 (X5 X6))
-
 ```
 
 
@@ -6529,7 +6489,6 @@ OR=> "Symbolics LM-2"
    (symbol-macrolet ((a (first x)))
      (let ((a x))
        (expand a)))) → A, false
-
 ```
 
 
@@ -6573,7 +6532,6 @@ thing3 → THREE
  (let ((*macroexpand-hook* #'hook)) (macroexpand '(machook 1 2)))
 \OUT Now expanding (MACHOOK 1 2) 
 → (/ (+ 1 2) 2), true
-
 ```
 
 
@@ -6581,12 +6539,10 @@ thing3 → THREE
  (defun declare-variable-types-globally (type vars)
    (proclaim `(type ,type ,@vars))
    type)
-
  ;; Once this form is executed, the dynamic variable *TOLERANCE*
  ;; must always contain a float.
  (declare-variable-types-globally 'float '(*tolerance*))
 → FLOAT
-
 ```
 
 
@@ -7198,7 +7154,6 @@ OR=> #P"S:>vistor>test.text.newest", #P"S:>vistor>_temp_._temp_.1"
  (fboundp 'my-function) → NIL
  (flet ((my-function (x) x))
    (fboundp 'my-function)) → NIL
-
 ```
 
 
@@ -7246,7 +7201,6 @@ OR=> #P"S:>vistor>test.text.newest", #P"S:>vistor>_temp_._temp_.1"
  (flet ((flet1 (n) (+ n n)))
     (flet ((flet1 (n) (+ 2 (flet1 n))))
       (flet1 2))) → 6
-
  (defun dummy-function () 'top-level) → DUMMY-FUNCTION 
  (funcall #'dummy-function) → TOP-LEVEL 
  (flet ((dummy-function () 'shadow)) 
@@ -7257,18 +7211,15 @@ OR=> #P"S:>vistor>test.text.newest", #P"S:>vistor>_temp_._temp_.1"
    (eq (funcall #'dummy-function)
        (funcall 'dummy-function)))
 → NIL 
-
  (defun recursive-times (k n)
    (labels ((temp (n) 
               (if (zerop n) 0 (+ k (temp (1- n))))))
      (temp n))) → RECURSIVE-TIMES
  (recursive-times 2 3) → 6
-
  (defmacro mlets (x &environment env) 
     (let ((form `(babbit ,x)))
       (macroexpand form env))) → MLETS
  (macrolet ((babbit (z) `(+ ,z ,z))) (mlets 5)) → 10
-
 ```
 
 
@@ -7323,7 +7274,6 @@ OR=> #P"S:>vistor>test.text.newest", #P"S:>vistor>_temp_._temp_.1"
               (funcall 'cons 1 2)
               (funcall cons 1 2))))
 → (KONS (1 . 2) 3)
-
 ```
 
 
@@ -7478,7 +7428,6 @@ this-is-a-constant → NEVER-CHANGING
            ',name))
  (define-interesting-number *my-height* 168) ;cm
  (define-interesting-number *my-weight* 13)  ;stones
-
 ```
 
 
@@ -7507,7 +7456,6 @@ this-is-a-constant → NEVER-CHANGING
            ,(when documentation-p
               `(setf (documentation ',name 'variable) ',documentation))
            ',name))
-
 ```
 
 
@@ -7516,7 +7464,6 @@ this-is-a-constant → NEVER-CHANGING
  (destructuring-bind ((a &optional (b 'bee)) one two three)
      `((alpha) ,@(iota 3))
    (list a b three two one)) → (ALPHA BEE 3 2 1)
-
 ```
 
 
@@ -7816,7 +7763,6 @@ Assuming *x* is not globally special,
     (setq i 0 j 0)
     (loop (incf j 3) (incf i)
           (if (= i 3) (throw 'result (values i j))))) → 3, 9
-
 ```
 
 
@@ -8162,7 +8108,6 @@ OR=> false
 → WITH-VARS
  (macroexpand '(with-vars (a b) (setq a 3 b (* a a)) (list a b)))
 → ((LAMBDA (A B) (SETQ A 3 B (* A A)) (LIST A B)) NIL NIL), true
-
 ```
 
 
@@ -8719,7 +8664,6 @@ OR=> false
    `(progn (replace ,sequence ,new-sequence
                     :start1 ,start :end1 ,end)
            ,new-sequence)) → SUBSEQ
-
 ```
 
 
@@ -8747,7 +8691,6 @@ OR=> false
 → 14
  (xy 'y 0 'x 1) → 1
  (xy 'x 1 'y 2) → 3
-
 ```
 
 
@@ -8772,7 +8715,6 @@ OR=> false
  a → (A B C 3)
  b → (7)
  c → (1 2 3 (4 5 LASTGUY-SYMBOL))
-
 ```
 
 
@@ -8817,7 +8759,6 @@ OR=> false
 
 ```lisp
 ;;; This macro is like POP 
-
  (defmacro xpop (place &environment env)
    (multiple-value-bind (dummies vals new setter getter)
                         (get-setf-expansion place env)
@@ -8833,7 +8774,6 @@ OR=> false
  (flet ((frob (x) (cdr x)))  ;Invalid
    (xpop (frob z)))
  
-
 ```
 
 
@@ -9017,7 +8957,6 @@ OR=> false
  (how-many 'foo) → 2
  (how-many 'bar) → 3
  (how-many 'quux) → 0
-
 ```
 
 
@@ -9297,7 +9236,6 @@ a-vector → #(1 0 3 0)
        until (symbolp i)
        count i)
 → 3
-
 ;; While LOOP-FINISH can be used can be used in a variety of 
 ;; situations it is really most needed in a situation where a need
 ;; to exit is detected at other than the loop's `top level'
@@ -9325,7 +9263,6 @@ a-vector → #(1 0 3 0)
  
  (tokenize-sentence "this is a sentence")
 → ("this" "is" "a" "sentence"), NIL
-
 
 ```
 
@@ -9456,11 +9393,9 @@ OR=> 1.0d0
  ;; for that equivalent (e.g., `D' instead of `L').
  pi → 3.141592653589793L0
  (cos pi) → -1.0L0
-
  (defun sin-of-degrees (degrees)
    (let ((x (if (floatp degrees) degrees (float degrees pi))))
      (sin (* x (/ (float pi x) 180)))))
-
 ```
 
 
@@ -9828,7 +9763,6 @@ OR=> 5.0
 ```lisp
  (complexp 1.2d2) → NIL
  (complexp #c(5/3 7.2)) → T
-
 ```
 
 
@@ -9971,7 +9905,6 @@ OR=> 5.0
  (integerp (expt 2 130)) → T
  (integerp 6/5) → NIL
  (integerp nil) → NIL
-
 ```
 
 
@@ -10049,7 +9982,6 @@ OR=> 5.0
  (boole-n #b1101 5 3) → -3
  (loop for n from #b0000 to #b1111 collect (boole-n n 5 3))
 → (0 1 2 3 4 5 6 7 -8 -7 -6 -5 -4 -3 -2 -1)
-
 ```
 
 
@@ -10527,7 +10459,6 @@ OR=> 1.0
  (setq obj1 (make-instance 'obj :x 3.0 :y 4.0)) → #<OBJ 26274136>
  (obj-dist obj1) → 5.0
  (make-load-form obj1) → (MAKE-INSTANCE 'OBJ :X '3.0 :Y '4.0)
-
 ```
 
 
@@ -10554,7 +10485,6 @@ OR=> 1.0
  (defmethod make-load-form ((self my-frob) &optional environment)
    (declare (ignore environment))
    `(find-my-frob ',(my-name self) :if-does-not-exist :create))
-
 ```
 
 
@@ -10568,7 +10498,6 @@ OR=> 1.0
      `(make-instance ',(class-of x) :children ',(slot-value x 'children))
      ;; initialization form
      `(setf (tree-parent ',x) ',(slot-value x 'parent))))
-
 ```
 
 
@@ -10773,7 +10702,6 @@ OR=> 1.0
                          methods))
       (unlock (object-lock ,object))))
   
-
 ```
 
 
@@ -11250,7 +11178,6 @@ OR=> false
  (with-open-file (stream "test" :direction :output)
    (pathname stream))
 → #P"ORANGE-CHOCOLATE:>Gus>test.lisp.newest"
-
 ```
 
 
@@ -11291,7 +11218,6 @@ OR=> false
 \OUT #P"MY-VAX:SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
 \OUT #P"MY-UNIX:/PUBLIC/GAMES/CHESS.DB" 
 → NIL
-
 ```
 
 
@@ -11438,7 +11364,6 @@ OR=> false
  (setf (logical-pathname-translations "prog")
        '(("CODE;DOCUMENTATION.*.*" "/lib/prog/docum.*")
          ("CODE;*.*.*"             "/lib/prog/")))
-
  ;;;Sample use of that logical pathname.  The return value
  ;;;is implementation-dependent.          
  (translate-logical-pathname "prog:code;documentation.lisp")
@@ -11491,12 +11416,10 @@ OR=> false
                                (make-pathname :name phy
                                               :defaults phypath))))
                    l))))
-
  ;;;Sample use of that logical pathname.  The return value
  ;;;is implementation-dependent.          
  (translate-logical-pathname "prog:code;documentation.lisp")
 → #P"PGDOC"
-
 ```
 
 
@@ -12052,7 +11975,6 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
                    collect dir
                    while (eql (peek-char nil stream nil nil t) #\/))))
  (set-macro-character #\/ #'slash-reader)
-
 ```
 
 
@@ -12471,7 +12393,6 @@ OR=> "#<FAA:AIRPLANE NW0773 17>"
      (("Dick" "Gabriel") "Objects")
      (("Gregor" "Kiczales") "Objects")
      (("David" "Moon") "Objects"))
-
 ```
 
 
@@ -14001,7 +13922,6 @@ OR=> #<FILE-FORMAT :ISO646-1983 2343673>
  (setf (age *john*) 25) → 25
  (age *john*) → 25
  (age *john* 20) → 25
-
 ```
 
 
@@ -14159,11 +14079,9 @@ OR=> #<FILE-FORMAT :ISO646-1983 2343673>
    (dolist (module-name '("FOO" "BAR" "BAZ"))
      (load (merge-pathnames module-name *my-load-pathname*))))
  ;----[End of file SETUP]----
-
  
  (load "SETUP")
  (load-my-system)
-
 ```
 
 
@@ -14299,7 +14217,6 @@ OR=> #<FILE-FORMAT :ISO646-1983 2343673>
  (deftype square-matrix (&optional type size)
    `(and (array ,type (,size ,size))
          (satisfies equidimensional))) → SQUARE-MATRIX
-
 ```
 
 
@@ -14445,7 +14362,6 @@ OR=> (VECTOR T 5)
 
 
 ```lisp
-
 ```
 
 

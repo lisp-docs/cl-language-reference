@@ -45,27 +45,16 @@ If *prototype* is not supplied, then if the *number* is already a *float*, it is
 **Examples:**
 ```lisp
  
-
 (float 0) → 0.0 
-
 (float 1 .5) → 1.0 
-
 (float 1.0) → 1.0 
-
 (float 1/2) → 0.5 
-
 <i>!</i> 1.0d0 <i><sub>or</sub></i> 
-
 → 1.0 
-
 (eql (float 1.0 1.0d0) 1.0d0) →  true 
 
-
-
  
-
  
-
 
 ```
 **See Also:** 

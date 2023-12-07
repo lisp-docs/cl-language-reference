@@ -45,13 +45,9 @@ Returns a *string* naming the author of the *file* specified by *pathspec*, or *
 **Examples:**
 ```lisp
  
-
 (with-open-file (stream ">relativity>general.text") 
-
 (file-author s)) 
-
 → "albert" 
-
 
 ```
 **Affected By:** 

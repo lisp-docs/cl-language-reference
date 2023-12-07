@@ -21,23 +21,14 @@ The **continue** *restart* is generally part of protocols where there is a singl
 **Examples:**
 ```lisp
  
-
 (let ((x 3)) 
-
 (handler-bind ((error #’(lambda (c) 
-
 (let ((r (find-restart ’continue c))) 
-
 (when r (invoke-restart r)))))) 
-
 (cond ((not (floatp x)) 
-
 (cerror "Try floating it." "&#126;D is not a float." x) 
-
 (float x)) 
-
 (t x)))) → 3.0 
-
 
 ```
 **See Also:** 

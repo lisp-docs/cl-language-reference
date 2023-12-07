@@ -33,25 +33,15 @@ Returns *true* if *array* has a *fill pointer* ; otherwise returns *false*.
 **Examples:**
 ```lisp
  
-
 (array-has-fill-pointer-p (make-array 4)) → implementation-dependent 
-
 (array-has-fill-pointer-p (make-array ’(2 3))) → false 
-
 (array-has-fill-pointer-p 
-
 (make-array 8 
-
 :fill-pointer 2 
-
 :initial-element ’filler)) → true 
 
-
-
  
-
  
-
 
 ```
 **Exceptional Situations:** 

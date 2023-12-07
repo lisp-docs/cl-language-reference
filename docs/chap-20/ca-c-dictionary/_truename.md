@@ -33,57 +33,31 @@
 **Examples:**
 ```lisp
  
-
 ;; An example involving version numbers. Note that the precise nature of 
-
 ;; the truename is implementation-dependent while the file is still open. 
-
 (with-open-file (stream ">vistor>test.text.newest") 
-
 (values (pathname stream) 
 
-
-
  
-
  
-
 (truename stream))) 
-
 → #P"S:>vistor>test.text.newest", #P"S:>vistor>test.text.1" 
-
 <i><sup>or</sup>→</i> #P"S:>vistor>test.text.newest", #P"S:>vistor>test.text.newest" 
-
 <i><sup>or</sup>→</i> #P"S:>vistor>test.text.newest", #P"S:>vistor> temp . temp .1" 
-
 ;; In this case, the file is closed when the truename is tried, so the 
-
 ;; truename information is reliable. 
-
 (with-open-file (stream ">vistor>test.text.newest") 
-
 (close stream) 
-
 (values (pathname stream) 
-
 (truename stream))) 
-
 → #P"S:>vistor>test.text.newest", #P"S:>vistor>test.text.1" 
-
 ;; An example involving TOP-20’s implementation-dependent concept 
-
 ;; of logical devices – in this case, "DOC:" is shorthand for 
-
 ;; "PS:<DOCUMENTATION>" ... 
-
 (with-open-file (stream "CMUC::DOC:DUMPER.HLP") 
-
 (values (pathname stream) 
-
 (truename stream))) 
-
 → #P"CMUC::DOC:DUMPER.HLP", #P"CMUC::PS:<DOCUMENTATION>DUMPER.HLP.13" 
-
 
 ```
 **Exceptional Situations:** 

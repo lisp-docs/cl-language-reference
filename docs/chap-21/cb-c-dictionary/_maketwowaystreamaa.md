@@ -33,19 +33,12 @@
 **input-stream-p** returns *true* if *stream* is an *input stream*; otherwise, returns *false*. **output-stream-p** returns *true* if *stream* is an *output stream*; otherwise, returns *false*. **Examples:**
 ```lisp
  
-
 (input-stream-p \*standard-input\*) → true 
-
 (input-stream-p \*terminal-io\*) → true 
-
 (input-stream-p (make-string-output-stream)) → false 
-
 (output-stream-p \*standard-output\*) → true 
-
 (output-stream-p \*terminal-io\*) → true 
-
 (output-stream-p (make-string-input-stream "jr")) → false 
-
 
 ```
 **Exceptional Situations:** 

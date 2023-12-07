@@ -173,77 +173,41 @@ Any number of invocations of **with-package-iterator** can be nested, and the bo
 **Examples:**
 ```lisp
  
-
 The following function should return **t** on any *package*, and signal an error if the usage of **with-package-iterator** does not agree with the corresponding usage of **do-symbols**. 
-
 (defun test-package-iterator (package) 
-
 (unless (packagep package) 
-
 (setq package (find-package package))) 
-
 (let ((all-entries ’()) 
-
 (generated-entries ’())) 
-
 (do-symbols (x package) 
-
 (multiple-value-bind (symbol accessibility) 
-
 (find-symbol (symbol-name x) package) 
-
 (push (list symbol accessibility) all-entries))) 
-
 (with-package-iterator (generator-fn package 
-
 :internal :external :inherited) 
-
 (loop 
-
 (multiple-value-bind (more? symbol accessibility pkg) 
-
 (generator-fn) 
-
 (unless more? (return)) 
-
 (let ((l (multiple-value-list (find-symbol (symbol-name symbol) 
-
 package)))) 
-
 (unless (equal l (list symbol accessibility)) 
-
 (error "Symbol &#126;S not found as &#126;S in package &#126;A [&#126;S]" 
-
 symbol accessibility (package-name package) l)) 
-
 (push l generated-entries))))) 
-
 (unless (and (subsetp all-entries generated-entries :test #’equal) 
-
 (subsetp generated-entries all-entries :test #’equal)) 
-
 (error "Generated entries and Do-Symbols entries don’t correspond")) 
-
 t)) 
-
 The following function prints out every *present symbol* (possibly more than once): 
-
 (defun print-all-symbols () 
-
 (with-package-iterator (next-symbol (list-all-packages) 
-
 :internal :external) 
-
 (loop 
-
 (multiple-value-bind (more? symbol) (next-symbol) 
-
 (if more? 
-
 (print symbol) 
-
 (return)))))) 
-
 
 ```
 **Exceptional Situations:** 

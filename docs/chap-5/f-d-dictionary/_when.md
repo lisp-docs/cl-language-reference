@@ -65,55 +65,30 @@ In an **unless** *form*, if the *test-form yields false*, the *forms* are *evalu
 **Examples:**
 ```lisp
  
-
 (when t ’hello) → HELLO 
-
 (unless t ’hello) → NIL 
-
 (when nil ’hello) → NIL 
-
 (unless nil ’hello) → HELLO 
-
 (when t) → NIL 
-
 (unless nil) → NIL 
-
 (when t (prin1 1) (prin1 2) (prin1 3)) 
-
 ▷ 123 
-
 → 3 
-
 (unless t (prin1 1) (prin1 2) (prin1 3)) → NIL 
-
 (when nil (prin1 1) (prin1 2) (prin1 3)) → NIL 
-
 (unless nil (prin1 1) (prin1 2) (prin1 3)) 
-
 ▷ 123 
-
 → 3 
-
 (let ((x 3)) 
-
 (list (when (oddp x) (incf x) (list x)) 
-
 (when (oddp x) (incf x) (list x)) 
-
 (unless (oddp x) (incf x) (list x)) 
-
 (unless (oddp x) (incf x) (list x)) 
-
 (if (oddp x) (incf x) (list x)) 
-
 (if (oddp x) (incf x) (list x)) 
-
 (if (not (oddp x)) (incf x) (list x)) 
-
 (if (not (oddp x)) (incf x) (list x)))) 
-
 → ((4) NIL (5) NIL 6 (6) 7 (7)) 
-
 
 ```
 **See Also:** 

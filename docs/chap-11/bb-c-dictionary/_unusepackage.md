@@ -33,21 +33,13 @@
 Any *symbols* that have been *imported* into *package* continue to be *present* in *package*. **Examples:**
 ```lisp
  
-
 (in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
-
 (export (intern "SHOES" (make-package ’temp)) ’temp) → T 
-
 (find-symbol "SHOES") → NIL, NIL 
-
 (use-package ’temp) → T 
-
 (find-symbol "SHOES") → SHOES, :INHERITED 
-
 (find (find-package ’temp) (package-use-list ’common-lisp-user)) → #<PACKAGE "TEMP"> (unuse-package ’temp) → T 
-
 (find-symbol "SHOES") → NIL, NIL 
-
 
 ```
 **Side Effects:** 

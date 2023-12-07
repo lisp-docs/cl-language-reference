@@ -145,37 +145,21 @@ If *thing* contains an explicit host name and no explicit device name, then it i
 **Examples:**
 ```lisp
  
-
 (setq q (parse-namestring "test")) 
-
 → #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME "test" 
-
 :TYPE NIL :VERSION NIL) 
-
 (pathnamep q) → true 
-
 (parse-namestring "test") 
-
 → #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME "test" 
-
 :TYPE NIL :VERSION NIL), 4 
-
 (setq s (open *xxx*)) → #<input file="" stream...=""/> 
-
 (parse-namestring s) 
-
 → #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME *xxx* 
-
 :TYPE NIL :VERSION NIL), 0 
-
 (parse-namestring "test" nil nil :start 2 :end 4 ) 
-
 → #S(PATHNAME ...), 15 
-
 (parse-namestring "foo.lisp") 
-
 → #P"foo.lisp" 
-
 
 ```
 **Exceptional Situations:** 

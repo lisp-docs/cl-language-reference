@@ -29,13 +29,9 @@
 Returns a *concatenated stream* that has the indicated *input-streams* initially associated with it. **Examples:**
 ```lisp
  
-
 (read (make-concatenated-stream 
-
 (make-string-input-stream "1") 
-
 (make-string-input-stream "2"))) → 12 
-
 
 ```
 **Exceptional Situations:** 

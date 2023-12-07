@@ -77,19 +77,12 @@ For three or more arguments,
 **Examples:**
 ```lisp
  
-
 (lcm 10) → 10 
-
 (lcm 25 30) → 150 
-
 (lcm -24 18 10) → 360 
-
 (lcm 14 35) → 70 
-
 (lcm 0 5) → 0 
-
 (lcm 1 2 3 4 5 6) → 60 
-
 
 ```
 **Exceptional Situations:** 

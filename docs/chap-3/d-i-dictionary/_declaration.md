@@ -37,19 +37,12 @@ Advises the compiler that each *name* is a valid but potentially non-standard de
 **Examples:**
 ```lisp
  
-
 (declaim (declaration author target-language target-machine)) 
-
 (declaim (target-language ada)) 
-
 (declaim (target-machine IBM-650)) 
-
 (defun strangep (x) 
-
 (declare (author "Harry Tweeker")) 
-
 (member x ’(strange weird odd peculiar))) 
-
 
 ```
 **See Also:** 

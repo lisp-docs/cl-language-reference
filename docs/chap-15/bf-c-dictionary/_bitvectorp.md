@@ -33,17 +33,11 @@ Returns *true* if *object* is of *type* **bit-vector**; otherwise, returns *fals
 **Examples:**
 ```lisp
  
-
 (bit-vector-p (make-array 6 
-
 :element-type ’bit 
-
 :fill-pointer t)) → true 
-
 (bit-vector-p #\*) → true 
-
 (bit-vector-p (make-array 6)) → false 
-
 
 ```
 **See Also:** 

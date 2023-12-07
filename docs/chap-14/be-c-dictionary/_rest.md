@@ -45,25 +45,15 @@
 **Examples:**
 ```lisp
  
-
 (rest ’(1 2)) → (2) 
 
-
-
  
-
  
-
 (rest ’(1 . 2)) → 2 
-
 (rest ’(1)) → NIL 
-
 (setq \*cons\* ’(1 . 2)) → (1 . 2) 
-
 (setf (rest \*cons\*) "two") → "two" 
-
 \*cons\* → (1 . "two") 
-
 
 ```
 **See Also:** 

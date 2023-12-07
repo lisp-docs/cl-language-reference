@@ -45,13 +45,9 @@ Regardless of whether an *implementation* provides distinct representations for 
 **Examples:**
 ```lisp
  
-
 (minusp -1) → true 
-
 (plusp 0) → false 
-
 (plusp least-positive-single-float) → true 
-
 
 ```
 **Exceptional Situations:** 

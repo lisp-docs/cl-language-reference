@@ -41,45 +41,25 @@ The macro **setf** can be used with **slot-value** to change the value of a *slo
 **Examples:**
 ```lisp
  
-
 (defclass foo () 
-
 ((a :accessor foo-a :initarg :a :initform 1) 
-
 (b :accessor foo-b :initarg :b) 
-
 (c :accessor foo-c :initform 3))) 
-
 → #\<STANDARD-CLASS FOO 244020371\> 
-
 (setq foo1 (make-instance ’foo :a ’one :b ’two)) 
-
 → #\<FOO 36325624\> 
-
 (slot-value foo1 ’a) → ONE 
-
 (slot-value foo1 ’b) → TWO 
-
 (slot-value foo1 ’c) → 3 
-
 (setf (slot-value foo1 ’a) ’uno) → UNO 
-
 (slot-value foo1 ’a) → UNO 
-
 (defmethod foo-method ((x foo)) 
-
 (slot-value x ’a)) 
-
 → #\<STANDARD-METHOD FOO-METHOD (FOO) 42720573\> 
-
 (foo-method foo1) → UNO 
 
-
-
  
-
  
-
 
 ```
 **Exceptional Situations:** 

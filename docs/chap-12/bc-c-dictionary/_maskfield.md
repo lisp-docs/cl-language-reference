@@ -45,19 +45,12 @@
 **Examples:**
 ```lisp
  
-
 (mask-field (byte 1 5) -1) → 32 
-
 (setq a 15) → 15 
-
 (mask-field (byte 2 0) a) → 3 
-
 a → 15 
-
 (setf (mask-field (byte 2 0) a) 1) → 1 
-
 a → 13 
-
 
 ```
 **See Also:** 

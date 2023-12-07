@@ -45,9 +45,7 @@ If it is impossible to determine the user’s home directory on *host*, then **n
 **Examples:**
 ```lisp
  
-
 (pathnamep (user-homedir-pathname)) → true 
-
 
 ```
 **Affected By:** 

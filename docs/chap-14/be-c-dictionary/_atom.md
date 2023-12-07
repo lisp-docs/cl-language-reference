@@ -33,23 +33,14 @@ Returns *true* if *object* is of *type* **atom**; otherwise, returns *false*.
 **Examples:**
 ```lisp
  
-
 (atom ’sss) → true 
-
 (atom (cons 1 2)) → false 
-
 (atom nil) → true 
-
 (atom ’()) → true 
-
 (atom 3) → true 
 
-
-
  
-
  
-
 
 ```
 **Notes:** 

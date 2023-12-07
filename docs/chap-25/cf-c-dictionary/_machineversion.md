@@ -41,9 +41,7 @@ Returns a *string* that identifies the version of the computer hardware on which
 **Examples:**
 ```lisp
  
-
 (machine-version) → "KL-10, microcode 9" 
-
 
 ```
 **Affected By:** 

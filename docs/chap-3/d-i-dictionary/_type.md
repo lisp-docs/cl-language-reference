@@ -117,95 +117,50 @@ Within the *lexical scope* of an **array** type declaration, all references to *
 **Examples:**
 ```lisp
  
-
 (defun f (x y) 
-
 (declare (type fixnum x y)) 
-
 (let ((z (+ x y))) 
-
 (declare (type fixnum z)) 
-
 z)) → F 
-
 (f 1 2) → 3 
-
 ;; The previous definition of F is equivalent to 
-
 (defun f (x y) 
-
 ;; This declaration is a shorthand form of the TYPE declaration 
-
 (declare (fixnum x y)) 
-
 ;; To declare the type of a return value, it’s not necessary to 
-
 ;; create a named variable. A THE special form can be used instead. 
-
 (the fixnum (+ x y))) → F 
-
 (f 1 2) → 3 
-
 (defvar \*one-array\* (make-array 10 :element-type ’(signed-byte 5))) 
-
 (defvar \*another-array\* (make-array 10 :element-type ’(signed-byte 8))) 
-
 (defun frob (an-array) 
-
 (declare (type (array (signed-byte 5) 1) an-array)) 
-
 (setf (aref an-array 1) 31) 
-
 (setf (aref an-array 2) 127) 
-
 (setf (aref an-array 3) (\* 2 (aref an-array 3))) 
-
 (let ((foo 0)) 
 
-
-
  
-
  
-
 **type** 
-
 (declare (type (signed-byte 5) foo)) 
-
 (setf foo (aref an-array 0)))) 
-
 (frob \*one-array\*) 
-
 (frob \*another-array\*) 
-
 The above definition of frob is equivalent to: 
-
 (defun frob (an-array) 
-
 (setf (the (signed-byte 5) (aref an-array 1)) 31) 
-
 (setf (the (signed-byte 5) (aref an-array 2)) 127) 
-
 (setf (the (signed-byte 5) (aref an-array 3)) 
-
 (\* 2 (the (signed-byte 5) (aref an-array 3)))) 
-
 (let ((foo 0)) 
-
 (declare (type (signed-byte 5) foo)) 
-
 (setf foo (the (signed-byte 5) (aref an-array 0))))) 
-
 Given an implementation in which *fixnums* are 29 bits but **fixnum** *arrays* are upgraded to signed 32-bit *arrays*, the following could be compiled with all *fixnum* arithmetic: 
-
 (defun bump-counters (counters) 
-
 (declare (type (array fixnum \*) bump-counters)) 
-
 (dotimes (i (length counters)) 
-
 (incf (aref counters i)))) 
-
 
 ```
 **See Also:** 

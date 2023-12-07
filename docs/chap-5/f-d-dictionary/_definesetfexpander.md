@@ -97,91 +97,48 @@ If a **define-setf-expander** *form* appears as a *top level form*, the *compile
 **Examples:**
 ```lisp
  
-
 (defun lastguy (x) (car (last x))) → LASTGUY 
-
 (define-setf-expander lastguy (x &amp;environment env) 
-
 "Set the last element in a list to the given value." 
-
 (multiple-value-bind (dummies vals newval setter getter) 
-
 (get-setf-expansion x env) 
-
 (let ((store (gensym))) 
-
 (values dummies 
-
 vals 
-
 ‘(,store) 
-
 ‘(progn (rplaca (last ,getter) ,store) ,store) 
-
 ‘(lastguy ,getter))))) → LASTGUY 
-
 (setq a (list ’a ’b ’c ’d) 
-
 b (list ’x) 
-
 c (list 1 2 3 (list 4 5 6))) → (1 2 3 (4 5 6)) 
-
 (setf (lastguy a) 3) → 3 
-
 (setf (lastguy b) 7) → 7 
-
 (setf (lastguy (lastguy c)) ’lastguy-symbol) → LASTGUY-SYMBOL 
-
 a → (A B C 3) 
-
 b → (7) 
-
 c → (1 2 3 (4 5 LASTGUY-SYMBOL)) 
-
 ;;; Setf expander for the form (LDB bytespec int). 
-
 ;;; Recall that the int form must itself be suitable for SETF. 
-
 (define-setf-expander ldb (bytespec int &amp;environment env) 
-
 (multiple-value-bind (temps vals stores 
-
 store-form access-form) 
-
 (get-setf-expansion int env);Get setf expansion for int. 
-
 Data and Control 
-
  
-
  
-
 (let ((btemp (gensym)) ;Temp var for byte specifier. 
-
 (store (gensym)) ;Temp var for byte to store. 
-
 (stemp (first stores))) ;Temp var for int to store. 
-
 (if (cdr stores) (error "Can’t expand this.")) 
-
 ;;; Return the setf expansion for LDB as five values. 
-
 (values (cons btemp temps) ;Temporary variables. 
-
 (cons bytespec vals) ;Value forms. 
-
 (list store) ;Store variables. 
-
 ‘(let ((,stemp (dpb ,store ,btemp ,access-form))) 
-
 ,store-form 
-
 ,store) ;Storing form. 
-
 ‘(ldb ,btemp ,access-form) ;Accessing form. 
-
 )))) 
-
 
 ```
 **See Also:** 
