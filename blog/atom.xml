@@ -2,11 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lisp-docs.github.io/cl-language-reference/blog</id>
     <title>Common Lisp (New) Language Reference Blog</title>
-    <updated>2023-12-06T00:00:00.000Z</updated>
+    <updated>2023-12-07T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/blog"/>
     <subtitle>Common Lisp (New) Language Reference Blog</subtitle>
     <icon>https://lisp-docs.github.io/cl-language-reference/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Glossary Improved!]]></title>
+        <id>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/07/</id>
+        <link href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/07/"/>
+        <updated>2023-12-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Glossary Improved]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="glossary-improved">Glossary Improved<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/07/#glossary-improved" class="hash-link" aria-label="Direct link to Glossary Improved" title="Direct link to Glossary Improved">​</a></h2>
+<p>The glossary has now:</p>
+<ul>
+<li>Been split into multiple pages, one per letter</li>
+<li>The legend and introduction have their page</li>
+<li>A lot of the text was fixed for formatting issues, this was the bulk of the work</li>
+</ul>]]></content>
+        <author>
+            <name>Daniel N</name>
+            <uri>https://github.com/daninus14</uri>
+        </author>
+        <category label="status" term="status"/>
+        <category label="beginning" term="beginning"/>
+        <category label="glossary" term="glossary"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Alpha Version 1.0 is Out!]]></title>
         <id>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/06/</id>

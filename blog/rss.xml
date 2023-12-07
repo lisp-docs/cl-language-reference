@@ -4,10 +4,27 @@
         <title>Common Lisp (New) Language Reference Blog</title>
         <link>https://lisp-docs.github.io/cl-language-reference/blog</link>
         <description>Common Lisp (New) Language Reference Blog</description>
-        <lastBuildDate>Wed, 06 Dec 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 07 Dec 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Glossary Improved!]]></title>
+            <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/07/</link>
+            <guid>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/07/</guid>
+            <pubDate>Thu, 07 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Glossary Improved]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="glossary-improved">Glossary Improved<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/07/#glossary-improved" class="hash-link" aria-label="Direct link to Glossary Improved" title="Direct link to Glossary Improved">​</a></h2>
+<p>The glossary has now:</p>
+<ul>
+<li>Been split into multiple pages, one per letter</li>
+<li>The legend and introduction have their page</li>
+<li>A lot of the text was fixed for formatting issues, this was the bulk of the work</li>
+</ul>]]></content:encoded>
+            <category>status</category>
+            <category>beginning</category>
+            <category>glossary</category>
+        </item>
         <item>
             <title><![CDATA[Alpha Version 1.0 is Out!]]></title>
             <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/06/</link>
