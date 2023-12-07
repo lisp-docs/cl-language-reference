@@ -32,7 +32,7 @@ The consequences are undefined if *literal objects* (including *quoted objects*)
 
 **Examples:**
 ```lisp
- 
+
 (setq a 1) → 1 
 (quote (setq a 3)) → (SETQ A 3) 
 a → 1 

@@ -52,7 +52,7 @@
 
 **Examples:**
 ```lisp
- 
+
 (defparameter \*some-list\* (list\* ’one ’two ’three ’four)) → \*some-list\* 
 \*some-list\* → (ONE TWO THREE . FOUR) 
 (rplaca \*some-list\* ’uno) → (UNO TWO THREE . FOUR) 

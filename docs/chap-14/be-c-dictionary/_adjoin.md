@@ -44,7 +44,7 @@ The *test*, *test-not*, and *key* affect how it is determined whether *item* is 
 
 **Examples:**
 ```lisp
- 
+
 (setq slist ’()) → NIL 
 (adjoin ’a slist) → (A) 
 slist → NIL 

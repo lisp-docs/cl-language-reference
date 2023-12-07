@@ -56,7 +56,7 @@ If an implementation supports positive and negative zeros as *distinct* values, 
 
 **Examples:**
 ```lisp
- 
+
 (eql ’a ’b) → false 
 (eql ’a ’a) → true 
 (eql 3 3) → true 

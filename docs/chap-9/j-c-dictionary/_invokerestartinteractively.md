@@ -44,7 +44,7 @@ Once the arguments have been determined, **invoke-restart-interactively** execut
 
 **Examples:**
 ```lisp
- 
+
 (defun add3 (x) (check-type x number) (+ x 3)) 
 (add3 ’seven) 
 ▷ Error: The value SEVEN was not of type NUMBER. 

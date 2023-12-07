@@ -56,7 +56,7 @@ If any *var* refers to a *binding* made by **symbol-macrolet**, then that *var* 
 
 **Examples:**
 ```lisp
- 
+
 ;; A simple use of SETQ to establish values for variables. 
 (setq a 1 b 2 c 3) → 3 
 a → 1 
@@ -72,9 +72,9 @@ b → 4
 c → 7 
 ;; This illustrates the use of SETQ on a symbol macro. 
 (let ((x (list 10 20 30))) 
-(symbol-macrolet ((y (car x)) (z (cadr x))) 
-(setq y (1+ z) z (1+ y)) 
-(list x y z))) 
+  (symbol-macrolet ((y (car x)) (z (cadr x))) 
+    (setq y (1+ z) z (1+ y)) 
+    (list x y z))) 
 → ((21 22 30) 21 22) 
 
 ```

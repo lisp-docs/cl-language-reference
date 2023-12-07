@@ -76,7 +76,7 @@ The *position* returned is the index within *sequence* of the leftmost (if *from
 
 **Examples:**
 ```lisp
- 
+
 (position #\a "baobab" :from-end t) → 4 
 (position-if #’oddp ’((1) (2) (3) (4)) :start 1 :key #’car) → 2 
 (position 595 ’()) → NIL 

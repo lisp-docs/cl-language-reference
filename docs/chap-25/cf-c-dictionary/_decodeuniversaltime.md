@@ -128,7 +128,7 @@ If *time-zone* is not supplied, it defaults to the current time zone adjusted fo
 
 **Examples:**
 ```lisp
- 
+
 (encode-universal-time 0 0 0 1 1 1900 0) → 0 
 (encode-universal-time 0 0 1 4 7 1976 5) → 2414296800 
 ;; The next example assumes Eastern Daylight Time. 

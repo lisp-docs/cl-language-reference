@@ -36,11 +36,11 @@ If the *fn designator* is a *function name*, the *function* that it *names* is d
 
 **Examples:**
 ```lisp
- 
+
 (defun f (a) (1+ a)) → F 
 (eq (symbol-function ’f) 
-(progn (disassemble ’f) 
-(symbol-function ’f))) → true 
+    (progn (disassemble ’f) 
+	   (symbol-function ’f))) → true 
 
 ```
 **Affected By:** 

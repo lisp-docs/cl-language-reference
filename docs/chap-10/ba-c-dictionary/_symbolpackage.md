@@ -32,7 +32,7 @@ Returns the *home package* of *symbol*.
 
 **Examples:**
 ```lisp
- 
+
 (in-package "CL-USER") → #<PACKAGE "COMMON-LISP-USER"> 
 (symbol-package ’car) → #<PACKAGE "COMMON-LISP"> 
 (symbol-package ’bus) → #<PACKAGE "COMMON-LISP-USER"> 

@@ -56,7 +56,7 @@ If the *symbol* is already *present* in the importing *package*, **import** has 
 
 **Examples:**
 ```lisp
- 
+
 (import ’common-lisp::car (make-package ’temp :use nil)) → T 
 (find-symbol "CAR" ’temp) → CAR, :INTERNAL 
 (find-symbol "CDR" ’temp) → NIL, NIL 

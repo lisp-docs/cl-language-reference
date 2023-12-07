@@ -68,7 +68,7 @@ See the *function* **upgraded-complex-part-type**.
 
 **Examples:**
 ```lisp
- 
+
 (typep 12 ’integer) → true 
 (typep (1+ most-positive-fixnum) ’fixnum) → false 
 (typep nil t) → true 

@@ -28,7 +28,7 @@ Returns a *string* that identifies the generic name of the computer hardware on 
 
 **Examples:**
 ```lisp
- 
+
 (machine-type) 
 → "DEC PDP-10" 
 <i><sup>or</sup>→</i> "Symbolics LM-2" 

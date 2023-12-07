@@ -48,7 +48,7 @@ Returns *true* if *stream* is an *open stream*; otherwise, returns *false*.
 
 **Examples:**
 ```lisp
- 
+
 (open-stream-p \*standard-input\*) → true 
 
 ```

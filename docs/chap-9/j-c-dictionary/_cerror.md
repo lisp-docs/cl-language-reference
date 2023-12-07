@@ -36,15 +36,15 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 
 **Examples:**
 ```lisp
- 
-(defun real-sqrt (n) 
-(when (minusp n) 
-(setq n (- n)) 
 
- 
- 
-**cerror** 
-(cerror "Return sqrt(&#126;D) instead." "Tried to take sqrt(-&#126;D)." n)) (sqrt n)) 
+(defun real-sqrt (n) 
+  (when (minusp n) 
+    (setq n (- n)) 
+
+    
+    
+    **cerror** 
+    (cerror "Return sqrt(&#126;D) instead." "Tried to take sqrt(-&#126;D)." n)) (sqrt n)) 
 (real-sqrt 4) 
 → 2.0 
 (real-sqrt -9) 
@@ -55,16 +55,16 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 ▷ Debug> :continue 1 
 → 3.0 
 (define-condition not-a-number (error) 
-((argument :reader not-a-number-argument :initarg :argument)) (:report (lambda (condition stream) 
-(format stream "&#126;S is not a number." 
-(not-a-number-argument condition))))) 
+  ((argument :reader not-a-number-argument :initarg :argument)) (:report (lambda (condition stream) 
+									   (format stream "&#126;S is not a number." 
+										   (not-a-number-argument condition))))) 
 (defun assure-number (n) 
-(loop (when (numberp n) (return n)) 
-(cerror "Enter a number." 
-’not-a-number :argument n) 
-(format t "&#126;&amp;Type a number: ") 
-(setq n (read)) 
-(fresh-line))) 
+  (loop (when (numberp n) (return n)) 
+   (cerror "Enter a number." 
+	   ’not-a-number :argument n) 
+   (format t "&#126;&amp;Type a number: ") 
+   (setq n (read)) 
+   (fresh-line))) 
 (assure-number ’a) 
 ▷ Correctable error in ASSURE-NUMBER: A is not a number. 
 ▷ Restart options: 
@@ -74,16 +74,16 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 ▷ Type a number: 1/2 
 → 1/2 
 (defun assure-large-number (n) 
-(loop (when (and (numberp n) (> n 73)) (return n)) 
-(cerror "Enter a number&#126;:[&#126;; a bit larger than &#126;D&#126;]." 
-"&#126;\*&#126;A is not a large number." 
-(numberp n) n) 
-(format t "&#126;&amp;Type a large number: ") 
-(setq n (read)) 
-(fresh-line))) 
+  (loop (when (and (numberp n) (> n 73)) (return n)) 
+   (cerror "Enter a number&#126;:[&#126;; a bit larger than &#126;D&#126;]." 
+	   "&#126;\*&#126;A is not a large number." 
+	   (numberp n) n) 
+   (format t "&#126;&amp;Type a large number: ") 
+   (setq n (read)) 
+   (fresh-line))) 
 
- 
- 
+
+
 **cerror** 
 (assure-large-number 10000) 
 → 10000 
@@ -104,28 +104,28 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 ▷ Type a large number: 259 
 → 259 
 (define-condition not-a-large-number (error) 
-((argument :reader not-a-large-number-argument :initarg :argument)) 
-(:report (lambda (condition stream) 
-(format stream "&#126;S is not a large number." 
-(not-a-large-number-argument condition))))) 
+  ((argument :reader not-a-large-number-argument :initarg :argument)) 
+  (:report (lambda (condition stream) 
+	     (format stream "&#126;S is not a large number." 
+		     (not-a-large-number-argument condition))))) 
 (defun assure-large-number (n) 
-(loop (when (and (numberp n) (> n 73)) (return n)) 
-(cerror "Enter a number&#126;3\*&#126;:[&#126;; a bit larger than &#126;\*&#126;D&#126;]." 
-’not-a-large-number 
-:argument n 
-:ignore (numberp n) 
-:ignore n 
-:allow-other-keys t) 
-(format t "&#126;&amp;Type a large number: ") 
-(setq n (read)) 
-(fresh-line))) 
+  (loop (when (and (numberp n) (> n 73)) (return n)) 
+   (cerror "Enter a number&#126;3\*&#126;:[&#126;; a bit larger than &#126;\*&#126;D&#126;]." 
+	   ’not-a-large-number 
+	   :argument n 
+	   :ignore (numberp n) 
+	   :ignore n 
+	   :allow-other-keys t) 
+   (format t "&#126;&amp;Type a large number: ") 
+   (setq n (read)) 
+   (fresh-line))) 
 (assure-large-number ’a) 
 ▷ Correctable error in ASSURE-LARGE-NUMBER: A is not a large number. 
 ▷ Restart options: 
 ▷ 1: Enter a number. 
 
- 
- 
+
+
 ▷ 2: Top level. 
 ▷ Debug> :continue 1 
 ▷ Type a large number: 88 

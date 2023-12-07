@@ -118,7 +118,7 @@ If two *structures S*<sub>1</sub> and *S*<sub>2</sub> have the same *class* and 
 
 **Examples:**
 ```lisp
- 
+
 (equalp ’a ’b) → false 
 (equalp ’a ’a) → true 
 (equalp 3 3) → true 
@@ -137,11 +137,11 @@ Data and Control
 
 (equalp "FOO" "foo") → true 
 (setq array1 (make-array 6 :element-type ’integer 
-:initial-contents ’(1 1 1 3 5 7))) 
+			 :initial-contents ’(1 1 1 3 5 7))) 
 → #(1 1 1 3 5 7) 
 (setq array2 (make-array 8 :element-type ’integer 
-:initial-contents ’(1 1 1 3 5 7 2 6) 
-:fill-pointer 6)) 
+			 :initial-contents ’(1 1 1 3 5 7 2 6) 
+			 :fill-pointer 6)) 
 → #(1 1 1 3 5 7) 
 (equalp array1 array2) → true 
 (setq vector1 (vector 1 1 1 3 5 7)) → #(1 1 1 3 5 7) 

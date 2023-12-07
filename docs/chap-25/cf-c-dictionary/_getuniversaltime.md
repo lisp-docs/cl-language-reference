@@ -56,7 +56,7 @@
 
 **Examples:**
 ```lisp
- 
+
 ;; At noon on July 4, 1976 in Eastern Daylight Time. 
 (get-decoded-time) → 0, 0, 12, 4, 7, 1976, 6, *true*, 5 
 ;; At exactly the same instant. 

@@ -48,29 +48,29 @@ Implementations are permitted, but not required, to return *distinct lists* from
 
 **Examples:**
 ```lisp
- 
+
 ;; One possible way in which an interactive debugger might present 
 ;; restarts to the user. 
 (defun invoke-a-restart () 
-(let ((restarts (compute-restarts))) 
-(do ((i 0 (+ i 1)) (r restarts (cdr r))) ((null r)) 
-(format t "&#126;&amp;&#126;D: &#126;A&#126;%" i (car r))) 
-(let ((n nil) (k (length restarts))) 
-(loop (when (and (typep n ’integer) (>= n 0) (< n k)) 
-(return t)) 
-(format t "&#126;&amp;Option: ") 
-(setq n (read)) 
-(fresh-line)) 
-(invoke-restart-interactively (nth n restarts))))) 
+  (let ((restarts (compute-restarts))) 
+    (do ((i 0 (+ i 1)) (r restarts (cdr r))) ((null r)) 
+      (format t "&#126;&amp;&#126;D: &#126;A&#126;%" i (car r))) 
+    (let ((n nil) (k (length restarts))) 
+      (loop (when (and (typep n ’integer) (>= n 0) (< n k)) 
+	      (return t)) 
+       (format t "&#126;&amp;Option: ") 
+       (setq n (read)) 
+       (fresh-line)) 
+      (invoke-restart-interactively (nth n restarts))))) 
 
- 
- 
+
+
 (restart-case (invoke-a-restart) 
-(one () 1) 
-(two () 2) 
-(nil () :report "Who knows?" ’anonymous) 
-(one () ’I) 
-(two () ’II)) 
+  (one () 1) 
+  (two () 2) 
+  (nil () :report "Who knows?" ’anonymous) 
+  (one () ’I) 
+  (two () ’II)) 
 ▷ 0: ONE 
 ▷ 1: TWO 
 ▷ 2: Who knows? 

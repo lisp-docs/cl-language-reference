@@ -72,12 +72,12 @@ The value returned by **warn** if it returns is **nil**.
 
 **Examples:**
 ```lisp
- 
+
 (defun foo (x) 
-(let ((result (\* x 2))) 
-(if (not (typep result ’fixnum)) 
-(warn "You’re using very big numbers.")) 
-result)) 
+  (let ((result (\* x 2))) 
+    (if (not (typep result ’fixnum)) 
+	(warn "You’re using very big numbers.")) 
+    result)) 
 → FOO 
 (foo 3) 
 → 6 
@@ -93,8 +93,8 @@ result))
 ▷ 2: Abort to Lisp Toplevel. 
 ▷ Debug> :continue 1 
 
- 
- 
+
+
 ▷ Warning: You’re using very big numbers. 
 → 4294967294 
 

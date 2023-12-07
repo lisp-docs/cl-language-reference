@@ -44,7 +44,7 @@ Returns *true* if *object* is of *type* **compiled-function**; otherwise, return
 
 **Examples:**
 ```lisp
- 
+
 (defun f (x) x) → F 
 (compiled-function-p #’f) 
 → false 

@@ -60,7 +60,7 @@ The argument to the :key function is an element of either *list-1* or *list-2*; 
 
 **Examples:**
 ```lisp
- 
+
 (setq cosmos ’(1 "a" (1 2))) → (1 "a" (1 2)) 
 (subsetp ’(1) cosmos) → true 
 (subsetp ’((1 2)) cosmos) → false 

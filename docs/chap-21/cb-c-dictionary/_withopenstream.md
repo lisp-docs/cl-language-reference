@@ -56,12 +56,12 @@ The consequences are undefined if an attempt is made to *assign* the the *variab
 
 **Examples:**
 ```lisp
- 
-(with-open-stream (s (make-string-input-stream "1 2 3 4")) 
-(+ (read s) (read s) (read s))) → 6 
 
- 
- 
+(with-open-stream (s (make-string-input-stream "1 2 3 4")) 
+  (+ (read s) (read s) (read s))) → 6 
+
+
+
 
 ```
 **Side Effects:** 

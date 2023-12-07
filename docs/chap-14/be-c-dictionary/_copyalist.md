@@ -36,11 +36,11 @@ The *list structure* of *alist* is copied, and the *elements* of *alist* which a
 
 **Examples:**
 ```lisp
- 
+
 (defparameter \*alist\* (acons 1 "one" (acons 2 "two" ’()))) 
 
- 
- 
+
+
 \*alist\* → ((1 . "one") (2 . "two")) 
 (defparameter \*list-copy\* (copy-list \*alist\*)) 
 \*list-copy\* → ((1 . "one") (2 . "two")) 

@@ -36,7 +36,7 @@ It is *implementation-dependent* whether the *string* that becomes the *new-symb
 
 **Examples:**
 ```lisp
- 
+
 (setq temp-string "temp") → "temp" 
 (setq temp-symbol (make-symbol temp-string)) → #:|temp| 
 (symbol-name temp-symbol) → "temp" 

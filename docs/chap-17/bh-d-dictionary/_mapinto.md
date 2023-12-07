@@ -40,7 +40,7 @@ If *function* has side effects, it can count on being called first on all of the
 
 **Examples:**
 ```lisp
- 
+
 (setq a (list 1 2 3 4) b (list 10 10 10 10)) → (10 10 10 10) 
 (map-into a #’+ a b) → (11 12 13 14) 
 a → (11 12 13 14) 

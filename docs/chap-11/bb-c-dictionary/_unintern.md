@@ -44,7 +44,7 @@ Use of **unintern** can result in a *symbol* that has no recorded *home package*
 
 **Examples:**
 ```lisp
- 
+
 (in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
 (setq temps-unpack (intern "UNPACK" (make-package ’temp))) → TEMP::UNPACK 
 (unintern temps-unpack ’temp) → T 

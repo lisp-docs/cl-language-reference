@@ -28,7 +28,7 @@ Makes the *symbol* be *unbound*, regardless of whether it was previously *bound*
 
 **Examples:**
 ```lisp
- 
+
 (setf (symbol-value ’a) 1) 
 (boundp ’a) → true 
 a → 1 

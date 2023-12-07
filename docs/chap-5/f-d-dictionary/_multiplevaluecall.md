@@ -44,7 +44,7 @@ Applies *function* to a *list* of the *objects* collected from groups of *multip
 
 **Examples:**
 ```lisp
- 
+
 (multiple-value-call #’list 1 ’/ (values 2 3) ’/ (values) ’/ (floor 2.5)) 
 → (1 / 2 3 / / 2 0.5) 
 (+ (floor 5 3) (floor 19 4)) ≡ (+ 1 4) 

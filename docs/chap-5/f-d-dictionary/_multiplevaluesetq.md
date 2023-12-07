@@ -56,7 +56,7 @@ in order that the rules for order of evaluation and side-e↵ects be consistent 
 
 **Examples:**
 ```lisp
- 
+
 (multiple-value-setq (quotient remainder) (truncate 3.2 2)) → 1 
 quotient → 1 
 remainder → 1.2 

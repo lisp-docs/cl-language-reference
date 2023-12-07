@@ -132,26 +132,26 @@ Note that in contrast with **ccase**, the caller of **ecase** may rely on the fa
 
 **Examples:**
 ```lisp
- 
+
 (dolist (k ’(1 2 3 :four #\v () t ’other)) 
-(format t "&#126;S " 
-(case k ((1 2) ’clause1) 
-(3 ’clause2) 
-(nil ’no-keys-so-never-seen) 
-((nil) ’nilslot) 
-((:four #\v) ’clause4) 
-((t) ’tslot) 
-(otherwise ’others)))) 
+  (format t "&#126;S " 
+	  (case k ((1 2) ’clause1) 
+		(3 ’clause2) 
+		(nil ’no-keys-so-never-seen) 
+		((nil) ’nilslot) 
+		((:four #\v) ’clause4) 
+		((t) ’tslot) 
+		(otherwise ’others)))) 
 ▷ CLAUSE1 CLAUSE1 CLAUSE2 CLAUSE4 CLAUSE4 NILSLOT TSLOT OTHERS 
 → NIL 
 (defun add-em (x) (apply #’+ (mapcar #’decode x))) 
 → ADD-EM 
 (defun decode (x) 
-(ccase x 
-((i uno) 1) 
-((ii dos) 2) 
-((iii tres) 3) 
-((iv cuatro) 4))) 
+  (ccase x 
+    ((i uno) 1) 
+    ((ii dos) 2) 
+    ((iii tres) 3) 
+    ((iv cuatro) 4))) 
 → DECODE 
 Data and Control 
 

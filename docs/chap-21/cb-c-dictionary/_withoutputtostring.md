@@ -328,16 +328,16 @@ The effect of changing the *value* of **\*terminal-io\***, either by *binding* o
 
 **Examples:**
 ```lisp
- 
+
 (progn (prin1 ’foo) (prin1 ’bar \*terminal-io\*)) 
 
- 
- 
+
+
 ▷ FOOBAR 
 → BAR 
 (with-output-to-string (\*standard-output\*) 
-(prin1 ’foo) 
-(prin1 ’bar \*terminal-io\*)) 
+  (prin1 ’foo) 
+  (prin1 ’bar \*terminal-io\*)) 
 ▷ BAR 
 → "FOO" 
 

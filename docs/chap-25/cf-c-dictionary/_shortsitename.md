@@ -44,7 +44,7 @@
 
 **Examples:**
 ```lisp
- 
+
 (short-site-name) 
 → "MIT AI Lab" 
 <i><sup>or</sup>→</i> "CMU-CSD" 

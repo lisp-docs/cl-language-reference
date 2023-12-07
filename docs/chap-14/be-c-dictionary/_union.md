@@ -80,7 +80,7 @@ The order of elements in the result do not have to reflect the ordering of *list
 
 **Examples:**
 ```lisp
- 
+
 (union ’(a b c) ’(f a d)) 
 → (A B C F D) 
 <i><sup>or</sup>→</i> (B C F A D) 
@@ -89,7 +89,7 @@ The order of elements in the result do not have to reflect the ordering of *list
 → ((X 5) (Y 6) (Z 2)) 
 <i><sup>or</sup>→</i> ((X 4) (Y 6) (Z 2)) 
 (setq lst1 (list 1 2 ’(1 2) "a" "b") 
-lst2 (list 2 3 ’(2 3) "B" "C")) 
+      lst2 (list 2 3 ’(2 3) "B" "C")) 
 → (2 3 (2 3) "B" "C") 
 (nunion lst1 lst2) 
 → (1 (1 2) "a" "b" 2 3 (2 3) "B" "C") 

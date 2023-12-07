@@ -84,7 +84,7 @@ If *power-number* is a zero of any other *type*, then the result is also the val
 
 **Examples:**
 ```lisp
- 
+
 (exp 0) → 1.0 
 (exp 1) → 2.718282 
 (exp (log 5)) → 5.0 

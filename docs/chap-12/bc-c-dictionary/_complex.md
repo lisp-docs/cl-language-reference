@@ -48,7 +48,7 @@ Type upgrading implies a movement upwards in the type hierarchy lattice. In the 
 
 **Examples:**
 ```lisp
- 
+
 (complex 0) → 0 
 (complex 0.0) → #C(0.0 0.0) 
 (complex 1 1/2) → #C(1 1/2) 

@@ -44,36 +44,36 @@ The determination of which elements of the body are *tags* and which are *statem
 
 **Examples:**
 ```lisp
- 
+
 (let (val) 
-(tagbody 
-(setq val 1) 
-(go point-a) 
-(incf val 16) 
-point-c 
-(incf val 04) 
-(go point-b) 
-(incf val 32) 
-point-a 
-(incf val 02) 
-(go point-c) 
-(incf val 64) 
-point-b 
-(incf val 08)) 
+  (tagbody 
+     (setq val 1) 
+     (go point-a) 
+     (incf val 16) 
+   point-c 
+     (incf val 04) 
+     (go point-b) 
+     (incf val 32) 
+   point-a 
+     (incf val 02) 
+     (go point-c) 
+     (incf val 64) 
+   point-b 
+     (incf val 08)) 
 
 
 
-val) 
+  val) 
 → 15 
 (defun f1 (flag) 
-(let ((n 1)) 
-(tagbody 
-(setq n (f2 flag #’(lambda () (go out)))) 
-out 
-(prin1 n)))) 
+  (let ((n 1)) 
+    (tagbody 
+       (setq n (f2 flag #’(lambda () (go out)))) 
+     out 
+       (prin1 n)))) 
 → F1 
 (defun f2 (flag escape) 
-(if flag (funcall escape) 2)) 
+  (if flag (funcall escape) 2)) 
 → F2 
 (f1 nil) 
 ▷ 2 

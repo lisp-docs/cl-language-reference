@@ -76,7 +76,7 @@ b. the *type* returned does not involve and, eql, member, not, or, satisfies, or
 
 **Examples:**
 ```lisp
- 
+
 (type-of ’a) → SYMBOL 
 (type-of ’(1 . 2)) 
 → CONS 

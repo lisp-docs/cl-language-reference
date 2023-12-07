@@ -44,7 +44,7 @@ Returns *true* if *object* is of *type* **vector**; otherwise, returns *false*.
 
 **Examples:**
 ```lisp
- 
+
 (vectorp "aaaaaa") → true 
 (vectorp (make-array 6 :fill-pointer t)) → true 
 (vectorp (make-array ’(2 3 4))) → false 

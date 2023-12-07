@@ -28,31 +28,31 @@
 
 **Examples:**
 ```lisp
- 
+
 (defun handle-division-conditions (condition) 
-(format t "Considering condition for division condition handling&#126;%") 
-(when (and (typep condition ’arithmetic-error) 
-(eq ’/ (arithmetic-error-operation condition))) 
-(invoke-debugger condition))) 
+  (format t "Considering condition for division condition handling&#126;%") 
+  (when (and (typep condition ’arithmetic-error) 
+	     (eq ’/ (arithmetic-error-operation condition))) 
+    (invoke-debugger condition))) 
 HANDLE-DIVISION-CONDITIONS 
 (defun handle-other-arithmetic-errors (condition) 
-(format t "Considering condition for arithmetic condition handling&#126;%") 
-(when (typep condition ’arithmetic-error) 
-(abort))) 
+  (format t "Considering condition for arithmetic condition handling&#126;%") 
+  (when (typep condition ’arithmetic-error) 
+    (abort))) 
 HANDLE-OTHER-ARITHMETIC-ERRORS 
 (define-condition a-condition-with-no-handler (condition) ()) 
 A-CONDITION-WITH-NO-HANDLER 
 (signal ’a-condition-with-no-handler) 
 NIL 
 (handler-bind ((condition #’handle-division-conditions) 
-(condition #’handle-other-arithmetic-errors)) 
-(signal ’a-condition-with-no-handler)) 
+	       (condition #’handle-other-arithmetic-errors)) 
+  (signal ’a-condition-with-no-handler)) 
 Considering condition for division condition handling 
 Considering condition for arithmetic condition handling 
 NIL 
 (handler-bind ((arithmetic-error #’handle-division-conditions) 
-(arithmetic-error #’handle-other-arithmetic-errors)) 
-(signal ’arithmetic-error :operation ’\* :operands ’(1.2 b))) 
+	       (arithmetic-error #’handle-other-arithmetic-errors)) 
+  (signal ’arithmetic-error :operation ’\* :operands ’(1.2 b))) 
 Considering condition for division condition handling 
 Considering condition for arithmetic condition handling 
 Back to Lisp Toplevel 

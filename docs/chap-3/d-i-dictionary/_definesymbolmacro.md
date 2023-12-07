@@ -60,7 +60,7 @@ A *binding* for a *symbol macro* can be *shadowed* <sub>2</sub> by **let** or **
 
 **Examples:**
 ```lisp
- 
+
 (defvar \*things\* (list ’alpha ’beta ’gamma)) → \*THINGS\* 
 (define-symbol-macro thing1 (first \*things\*)) → THING1 
 (define-symbol-macro thing2 (second \*things\*)) → THING2 

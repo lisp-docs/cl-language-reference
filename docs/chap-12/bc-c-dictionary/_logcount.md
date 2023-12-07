@@ -32,13 +32,13 @@ Computes and returns the number of bits in the two’s-complement binary represe
 
 **Examples:**
 ```lisp
- 
+
 (logcount 0) → 0 
 (logcount -1) → 0 
 (logcount 7) → 3 
 
- 
- 
+
+
 (logcount 13) → 3 ;Two’s-complement binary: ...0001101 
 (logcount -13) → 2 ;Two’s-complement binary: ...1110011 
 (logcount 30) → 4 ;Two’s-complement binary: ...0011110 

@@ -204,7 +204,7 @@ For **string-upcase**, **string-downcase**, and **string-capitalize**, *string* 
 
 **Examples:**
 ```lisp
- 
+
 (string-upcase "abcde") → "ABCDE" 
 (string-upcase "Dr. Livingston, I presume?") 
 → "DR. LIVINGSTON, I PRESUME?" 

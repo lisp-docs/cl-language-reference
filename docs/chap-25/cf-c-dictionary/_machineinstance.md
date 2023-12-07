@@ -28,7 +28,7 @@ Returns a *string* that identifies the particular instance of the computer hardw
 
 **Examples:**
 ```lisp
- 
+
 (machine-instance) 
 → "ACME.COM" 
 <i><sup>or</sup>→</i> "S/N 123231" 

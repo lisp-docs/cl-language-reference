@@ -100,7 +100,7 @@ This defines the *principal values* precisely. The range of the two-argument log
 
 **Examples:**
 ```lisp
- 
+
 (log 100 10) 
 → 2.0 
 → 2 

@@ -146,14 +146,14 @@ If the *pathname designator* is a *pathname*, it represents the name used to ope
 
 If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in Pathname Components). **Examples:**
 ```lisp
- 
 
- 
- 
+
+
+
 **pathname-host, pathname-device,** *. . .* 
 (setq q (make-pathname :host "KATHY" 
-:directory "CHAPMAN" 
-:name "LOGIN" :type "COM")) 
+		       :directory "CHAPMAN" 
+		       :name "LOGIN" :type "COM")) 
 → #P"KATHY::[CHAPMAN]LOGIN.COM" 
 (pathname-host q) → "KATHY" 
 (pathname-name q) → "LOGIN" 
@@ -194,8 +194,8 @@ If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/BAR/../Mum/baz")) 
 → (:ABSOLUTE "foo" "BAR" :UP "Mum") 
 
- 
- 
+
+
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/BAR/../Mum/baz") :case :common) 
 → (:ABSOLUTE "FOO" "bar" :UP "Mum") 
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/\*/bar/baz.l")) 

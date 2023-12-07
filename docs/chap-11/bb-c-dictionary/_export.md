@@ -56,7 +56,7 @@ A name conflict in **export** between one of *symbols* being exported and a *sym
 
 **Examples:**
 ```lisp
- 
+
 (make-package ’temp :use nil) → #<PACKAGE "TEMP"> 
 (use-package ’temp) → T 
 (intern "TEMP-SYM" ’temp) → TEMP::TEMP-SYM, NIL 

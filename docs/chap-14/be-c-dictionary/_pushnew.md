@@ -80,7 +80,7 @@ It is *implementation-dependent* whether or not **pushnew** actually executes th
 
 **Examples:**
 ```lisp
- 
+
 (setq x ’(a (b c) d)) → (A (B C) D) 
 (pushnew 5 (cadr x)) → (5 B C) 
 x → (A (5 B C) D) 

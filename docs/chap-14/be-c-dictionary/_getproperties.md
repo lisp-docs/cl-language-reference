@@ -60,7 +60,7 @@ It searches the *plist* for the first entry whose *indicator* is *identical* to 
 
 **Examples:**
 ```lisp
- 
+
 (setq x ’()) → NIL 
 (setq \*indicator-list\* ’(prop1 prop2)) → (PROP1 PROP2) 
 (getf x ’prop1) → NIL 

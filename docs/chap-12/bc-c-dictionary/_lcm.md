@@ -76,7 +76,7 @@ For three or more arguments,
 
 **Examples:**
 ```lisp
- 
+
 (lcm 10) → 10 
 (lcm 25 30) → 150 
 (lcm -24 18 10) → 360 

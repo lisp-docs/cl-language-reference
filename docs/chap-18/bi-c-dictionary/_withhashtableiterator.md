@@ -72,36 +72,36 @@ Any number of invocations of **with-hash-table-iterator** can be nested, and the
 
 **Examples:**
 ```lisp
- 
+
 The following function should return **t** on any *hash table*, and signal an error if the usage of **with-hash-table-iterator** does not agree with the corresponding usage of **maphash**. 
 Hash 
- 
- 
+
+
 (defun test-hash-table-iterator (hash-table) 
-(let ((all-entries ’()) 
-(generated-entries ’()) 
-(unique (list nil))) 
-(maphash #’(lambda (key value) (push (list key value) all-entries)) 
-hash-table) 
-(with-hash-table-iterator (generator-fn hash-table) 
-(loop 
-(multiple-value-bind (more? key value) (generator-fn) 
-(unless more? (return)) 
-(unless (eql value (gethash key hash-table unique)) 
-(error "Key &#126;S not found for value &#126;S" key value)) 
-(push (list key value) generated-entries)))) 
-(unless (= (length all-entries) 
-(length generated-entries) 
-(length (union all-entries generated-entries 
-:key #’car :test (hash-table-test hash-table)))) 
-(error "Generated entries and Maphash entries don’t correspond")) 
-t)) 
+  (let ((all-entries ’()) 
+	(generated-entries ’()) 
+	(unique (list nil))) 
+    (maphash #’(lambda (key value) (push (list key value) all-entries)) 
+	       hash-table) 
+    (with-hash-table-iterator (generator-fn hash-table) 
+      (loop 
+       (multiple-value-bind (more? key value) (generator-fn) 
+	 (unless more? (return)) 
+	 (unless (eql value (gethash key hash-table unique)) 
+	   (error "Key &#126;S not found for value &#126;S" key value)) 
+	 (push (list key value) generated-entries)))) 
+    (unless (= (length all-entries) 
+	       (length generated-entries) 
+	       (length (union all-entries generated-entries 
+			      :key #’car :test (hash-table-test hash-table)))) 
+      (error "Generated entries and Maphash entries don’t correspond")) 
+    t)) 
 The following could be an acceptable definition of **maphash**, implemented by **with-hash-table-iterator**. 
 (defun maphash (function hash-table) 
-(with-hash-table-iterator (next-entry hash-table) 
-(loop (multiple-value-bind (more key value) (next-entry) 
-(unless more (return nil)) 
-(funcall function key value))))) 
+  (with-hash-table-iterator (next-entry hash-table) 
+    (loop (multiple-value-bind (more key value) (next-entry) 
+	    (unless more (return nil)) 
+	    (funcall function key value))))) 
 
 ```
 **Exceptional Situations:** 

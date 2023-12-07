@@ -108,7 +108,7 @@ For **psetf**, if more than one *pair* is supplied then the assignments of new v
 
 For detailed treatment of the expansion of **setf** and **psetf**, see Section 5.1.2 (Kinds of Places). **Examples:**
 ```lisp
- 
+
 (setq x (cons ’a ’b) y (list 1 2 3)) → (1 2 3) 
 (setf (car x) ’x (cadr y) (car x) (cdr x) y) → (1 X 3) 
 x → (X 1 X 3) 
@@ -117,8 +117,8 @@ y → (1 X 3)
 (psetf (car x) ’x (cadr y) (car x) (cdr x) y) → NIL 
 x → (X 1 A 3) 
 
- 
- 
+
+
 y → (1 A 3) 
 
 ```

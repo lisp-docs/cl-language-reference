@@ -264,24 +264,24 @@ The special form **let** has the property that the *scope* of the name binding d
 
 **Examples:**
 ```lisp
- 
+
 (setq a ’top) → TOP 
 (defun dummy-function () a) → DUMMY-FUNCTION 
 (let ((a ’inside) (b a)) 
-(format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) → "INSIDE TOP TOP" 
+  (format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) → "INSIDE TOP TOP" 
 (let\* ((a ’inside) (b a)) 
-(format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) → "INSIDE INSIDE TOP" 
+       (format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) → "INSIDE INSIDE TOP" 
 (let ((a ’inside) (b a)) 
-(declare (special a)) 
-(format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) → "INSIDE TOP INSIDE" 
+  (declare (special a)) 
+  (format nil "&#126;S &#126;S &#126;S" a b (dummy-function))) → "INSIDE TOP INSIDE" 
 The code 
 (let (x) 
-Data and Control 
+  Data and Control 
 
 
-(declare (integer x)) 
-(setq x (gcd y z)) 
-...) 
+  (declare (integer x)) 
+  (setq x (gcd y z)) 
+  ...) 
 is incorrect; although x is indeed set before it is used, and is set to a value of the declared type *integer* , nevertheless x initially takes on the value **nil** in violation of the type declaration. 
 
 ```

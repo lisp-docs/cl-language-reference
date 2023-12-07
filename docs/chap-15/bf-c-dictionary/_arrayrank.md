@@ -32,7 +32,7 @@ Returns the number of *dimensions* of *array*.
 
 **Examples:**
 ```lisp
- 
+
 (array-rank (make-array ’())) → 0 
 (array-rank (make-array 4)) → 1 
 (array-rank (make-array ’(4))) → 1 

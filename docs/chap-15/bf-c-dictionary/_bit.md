@@ -207,7 +207,7 @@ Figure 15–4 indicates the logical operation performed by each of the *function
 
 **Examples:**
 ```lisp
- 
+
 (bit-and (setq ba #\*11101010) #\*01101011) → #\*01101010 
 (bit-and #\*1100 #\*1010) → #\*1000 
 (bit-andc1 #\*1100 #\*1010) → #\*0010 
@@ -215,8 +215,8 @@ Figure 15–4 indicates the logical operation performed by each of the *function
 (eq rba ba) → true 
 (bit-not (setq ba #\*11101010)) → #\*00010101 
 (setq rba (bit-not ba 
-(setq tba (make-array 8 
-:element-type ’bit)))) 
+		   (setq tba (make-array 8 
+					 :element-type ’bit)))) 
 → #\*00010101 
 (equal rba tba) → true 
 (bit-xor #\*1100 #\*1010) → #\*0110 

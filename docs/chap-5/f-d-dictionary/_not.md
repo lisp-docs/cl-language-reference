@@ -32,7 +32,7 @@ Returns **t** if *x* is *false*; otherwise, returns **nil**.
 
 **Examples:**
 ```lisp
- 
+
 (not nil) → T 
 (not ’()) → T 
 (not (integerp ’sss)) → T 

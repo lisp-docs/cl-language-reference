@@ -36,7 +36,7 @@
 
 **Examples:**
 ```lisp
- 
+
 (setq sym (gensym)) → #:G9723 
 (symbol-plist sym) → () 
 (setf (get sym ’prop1) ’val1) → VAL1 

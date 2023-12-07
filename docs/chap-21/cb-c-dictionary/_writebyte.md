@@ -157,15 +157,15 @@ When *input-stream* is an *echo stream*, characters that are only peeked at are 
 
 **Examples:**
 ```lisp
- 
-(with-input-from-string (input-stream " 1 2 3 4 5") 
-(format t "&#126;S &#126;S &#126;S" 
-(peek-char t input-stream) 
 
- 
- 
-(peek-char #\4 input-stream) 
-(peek-char nil input-stream))) 
+(with-input-from-string (input-stream " 1 2 3 4 5") 
+  (format t "&#126;S &#126;S &#126;S" 
+	  (peek-char t input-stream) 
+
+	  
+	  
+	  (peek-char #\4 input-stream) 
+	  (peek-char nil input-stream))) 
 ▷ #\1 #\4 #\4 
 → NIL 
 

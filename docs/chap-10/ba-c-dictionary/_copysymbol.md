@@ -40,7 +40,7 @@ If *copy-properties* is *false*, the *new-symbol* is neither *bound* nor *fbound
 
 **Examples:**
 ```lisp
- 
+
 (setq fred ’fred-smith) → FRED-SMITH 
 (setf (symbol-value fred) 3) → 3 
 (setq fred-clone-1a (copy-symbol fred nil)) → #:FRED-SMITH 
@@ -64,8 +64,8 @@ If *copy-properties* is *false*, the *new-symbol* is neither *bound* nor *fbound
 (fboundp fred-clone-1a) → false 
 (fboundp fred-clone-2a) → false 
 
- 
- 
+
+
 
 ```
 **Exceptional Situations:** 

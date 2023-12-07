@@ -80,7 +80,7 @@ If there is no such *method* and *errorp* is *true*, **find-method** signals an 
 
 **Examples:**
 ```lisp
- 
+
 (defmethod some-operation ((a integer) (b float)) (list a b)) 
 → #<STANDARD-METHOD SOME-OPERATION (INTEGER FLOAT) 26723357> 
 (find-method #’some-operation ’() (mapcar #’find-class ’(integer float))) 

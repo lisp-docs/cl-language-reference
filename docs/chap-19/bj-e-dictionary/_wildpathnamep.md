@@ -44,7 +44,7 @@ If *field-key* is not supplied or **nil**, **wild-pathname-p** returns true if *
 
 **Examples:**
 ```lisp
- 
+
 ;;;The following examples are not portable. They are written to run 
 ;;;with particular file systems and particular wildcard conventions. 
 ;;;Other implementations will behave differently. These examples are 

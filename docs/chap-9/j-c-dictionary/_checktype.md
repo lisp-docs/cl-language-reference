@@ -64,7 +64,7 @@ The first time *place* is *evaluated*, it is *evaluated* by normal evaluation ru
 
 **Examples:**
 ```lisp
- 
+
 (setq aardvarks ’(sam harry fred)) 
 → (SAM HARRY FRED) 
 (check-type aardvarks (array \* (3))) 
@@ -88,13 +88,13 @@ aardvarks
 ▷ 1: Specify a value to use instead. 
 ▷ 2: Top level. 
 
- 
- 
+
+
 **check-type** 
 ▷ Debug> :CONTINUE 2 
 (defmacro define-adder (name amount) 
-(check-type name (and symbol (not null)) "a name for an adder function") (check-type amount integer) 
-‘(defun ,name (x) (+ x ,amount))) 
+  (check-type name (and symbol (not null)) "a name for an adder function") (check-type amount integer) 
+  ‘(defun ,name (x) (+ x ,amount))) 
 (macroexpand ’(define-adder add3 3)) 
 → (defun add3 (x) (+ x 3)) 
 (macroexpand ’(define-adder 7 7)) 

@@ -52,7 +52,7 @@ If a *function* to be traced has been open-coded (*e.g.*, because it was declare
 
 **Examples:**
 ```lisp
- 
+
 (defun fact (n) (if (zerop n) 1 (\* n (fact (- n 1))))) 
 → FACT 
 (trace fact) 
@@ -67,8 +67,8 @@ If a *function* to be traced has been open-coded (*e.g.*, because it was declare
 ▷ | 3 Exit FACT 1 
 ▷ | 2 Exit FACT 2 
 
- 
- 
+
+
 ▷ 1 Exit FACT 6 
 → 6 
 

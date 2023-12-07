@@ -148,7 +148,7 @@ For all these functions, elements not removed or deleted occur in the same order
 
 **Examples:**
 ```lisp
- 
+
 (remove 4 ’(1 3 4 5 9)) → (1 3 5 9) 
 (remove 4 ’(1 2 4 1 3 4 5)) → (1 2 1 3 5) 
 (remove 4 ’(1 2 4 1 3 4 5) :count 1) → (1 2 1 3 4 5) 
@@ -184,8 +184,8 @@ tester → implementation-dependent
 bar → ((C)) or ... 
 (eq (cdr foo) (car bar)) → T or ... 
 
- 
- 
+
+
 
 ```
 **Side Effects:** 

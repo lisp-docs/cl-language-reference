@@ -32,9 +32,9 @@ Returns a *synonym stream* whose *synonym stream symbol* is *symbol*.
 
 **Examples:**
 ```lisp
- 
+
 (setq a-stream (make-string-input-stream "a-stream") 
-b-stream (make-string-input-stream "b-stream")) 
+      b-stream (make-string-input-stream "b-stream")) 
 → #\<String Input Stream\> 
 (setq s-stream (make-synonym-stream ’c-stream)) 
 → #<SYNONYM-STREAM for C-STREAM> 

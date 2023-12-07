@@ -20,7 +20,7 @@
 
 **Examples:**
 ```lisp
- 
+
 nil → NIL 
 
 ```

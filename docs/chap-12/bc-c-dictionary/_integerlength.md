@@ -28,7 +28,7 @@
 
 Returns the number of bits needed to represent *integer* in binary two’s-complement format. **Examples:**
 ```lisp
- 
+
 (integer-length 0) → 0 
 (integer-length 1) → 1 
 (integer-length 3) → 2 

@@ -36,14 +36,14 @@ If no *forms* are supplied, (and) returns **t**.
 
 **and** passes back multiple values from the last *subform* but not from subforms other than the last. **Examples:**
 ```lisp
- 
+
 (if (and (>= n 0) 
 
 
 
-(< n (length a-simple-vector)) 
-(eq (elt a-simple-vector n) ’foo)) 
-(princ "Foo!")) 
+	 (< n (length a-simple-vector)) 
+	 (eq (elt a-simple-vector n) ’foo)) 
+    (princ "Foo!")) 
 The above expression prints Foo! if element n of a-simple-vector is the symbol foo, provided also that n is indeed a valid index for a-simple-vector. Because **and** guarantees left-to-right testing of its parts, **elt** is not called if n is out of range. 
 (setq temp1 1 temp2 1 temp3 1) → 1 
 (and (incf temp1) (incf temp2) (incf temp3)) → 2 

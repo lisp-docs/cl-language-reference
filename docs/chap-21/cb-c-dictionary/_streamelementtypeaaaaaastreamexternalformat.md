@@ -151,16 +151,16 @@ The consequences are undefined if an attempt is made to *assign* the *stream var
 
 **Examples:**
 ```lisp
- 
+
 (setq p (merge-pathnames "test")) 
 → #\<PATHNAME :HOST NIL :DEVICE *device-name* :DIRECTORY *directory-name* 
 :NAME "test" :TYPE NIL :VERSION :NEWEST> 
 (with-open-file (s p :direction :output :if-exists :supersede) 
-(format s "Here are a couple&#126;%of test data lines&#126;%")) → NIL 
+  (format s "Here are a couple&#126;%of test data lines&#126;%")) → NIL 
 (with-open-file (s p) 
-(do ((l (read-line s) (read-line s nil ’eof))) 
-((eq l ’eof) "Reached end of file.") 
-(format t "&#126;&amp;\*\*\* &#126;A&#126;%" l))) 
+  (do ((l (read-line s) (read-line s nil ’eof))) 
+      ((eq l ’eof) "Reached end of file.") 
+    (format t "&#126;&amp;\*\*\* &#126;A&#126;%" l))) 
 ▷ \*\*\* Here are a couple 
 ▷ \*\*\* of test data lines 
 → "Reached end of file." 
@@ -168,7 +168,7 @@ The consequences are undefined if an attempt is made to *assign* the *stream var
 ;; not perspicuous, but beware when using :IF-DOES-NOT-EXIST NIL 
 ;; that this doesn’t happen to you accidentally... 
 (with-open-file (foo "no-such-file" :if-does-not-exist nil) 
-(read foo)) 
+  (read foo)) 
 ▷ hello? 
 → HELLO? ;This value was read from the terminal, not a file! 
 ;; Here’s another bug to avoid... 

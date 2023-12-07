@@ -56,7 +56,7 @@
 
 **Examples:**
 ```lisp
- 
+
 (ldb (byte 2 1) 10) → 1 
 (setq a (list 8)) → (8) 
 (setf (ldb (byte 2 1) (car a)) 1) → 1 

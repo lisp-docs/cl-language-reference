@@ -44,7 +44,7 @@ Returns *true* if *symbol* is *bound*; otherwise, returns *false*.
 
 **Examples:**
 ```lisp
- 
+
 (setq x 1) → 1 
 (boundp ’x) → true 
 (makunbound ’x) → X 

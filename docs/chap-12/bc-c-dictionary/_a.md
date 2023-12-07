@@ -146,7 +146,7 @@ Might signal **type-error** if some *argument* is not a *number* . Might signal 
 
 **Examples:**
 ```lisp
- 
+
 (1+ 99) → 100 
 (1- 100) → 99 
 (1+ (complex 0.0)) → #C(1.0 0.0) 

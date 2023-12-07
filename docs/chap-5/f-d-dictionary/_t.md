@@ -36,7 +36,7 @@ The *symbol* **t** is also sometimes used for other purposes as well. For exampl
 
 **Examples:**
 ```lisp
- 
+
 t → T 
 (eq t ’t) → true 
 (find-class ’t) → #<CLASS T 610703333> 

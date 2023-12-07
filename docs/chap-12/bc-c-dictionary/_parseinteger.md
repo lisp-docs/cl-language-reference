@@ -80,7 +80,7 @@ The second *value* is either the index into the *string* of the delimiter that t
 
 **Examples:**
 ```lisp
- 
+
 (parse-integer "123") → 123, 3 
 (parse-integer "123" :start 1 :radix 5) → 13, 3 
 (parse-integer "no-integer" :junk-allowed t) → NIL, 0 

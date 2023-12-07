@@ -180,7 +180,7 @@ to the first value as for **decode-float**:
 
 **Examples:**
 ```lisp
- 
+
 ;; Note that since the purpose of this functionality is to expose 
 ;; details of the implementation, all of these examples are necessarily 
 ;; very implementation-dependent. Results may vary widely. 

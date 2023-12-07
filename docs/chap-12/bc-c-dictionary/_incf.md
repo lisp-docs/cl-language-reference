@@ -68,7 +68,7 @@ For information about the *evaluation* of *subforms* of *places*, see Section 5.
 
 **Examples:**
 ```lisp
- 
+
 (setq n 0) 
 (incf n) → 1 
 n → 1 

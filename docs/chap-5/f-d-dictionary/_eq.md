@@ -32,7 +32,7 @@
 
 Returns *true* if its *arguments* are the same, identical *object*; otherwise, returns *false*. **Examples:**
 ```lisp
- 
+
 (eq ’a ’b) → false 
 (eq ’a ’a) → true 
 (eq 3 3) 

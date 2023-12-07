@@ -56,7 +56,7 @@ is a *vector* , **nreverse** is permitted to re-order the elements of *sequence*
 
 **Examples:**
 ```lisp
- 
+
 (setq str "abc") → "abc" 
 (reverse str) → "cba" 
 str → "abc" 

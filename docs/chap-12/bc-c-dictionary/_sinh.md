@@ -221,7 +221,7 @@ Returns the product of *numbers*, performing any necessary type conversions in t
 
 **Examples:**
 ```lisp
- 
+
 (\*) → 1 
 (\* 3 5) → 15 
 (\* 1.0 #c(22 33) 55/98) → #C(12.346938775510203 18.520408163265305) 

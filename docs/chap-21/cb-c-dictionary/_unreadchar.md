@@ -40,18 +40,18 @@ Invoking **peek-char** or **read-char** commits all previous characters. The con
 
 **Examples:**
 ```lisp
- 
+
 (with-input-from-string (is "0123") 
-(dotimes (i 6) 
-(let ((c (read-char is))) 
-(if (evenp i) (format t "&#126;&amp;&#126;S &#126;S&#126;%" i c) (unread-char c is))))) 
+  (dotimes (i 6) 
+    (let ((c (read-char is))) 
+      (if (evenp i) (format t "&#126;&amp;&#126;S &#126;S&#126;%" i c) (unread-char c is))))) 
 ▷ 0 #\0 
 ▷ 2 #\1 
 ▷ 4 #\2 
 → NIL 
 
- 
- 
+
+
 
 ```
 **Affected By:** 

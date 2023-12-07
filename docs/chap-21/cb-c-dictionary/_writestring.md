@@ -40,19 +40,19 @@
 
 **Examples:**
 ```lisp
- 
+
 (prog1 (write-string "books" nil :end 4) (write-string "worms")) 
 ▷ bookworms 
 → "books" 
 (progn (write-char #\\*) 
-(write-line "test12" \*standard-output\* :end 5) 
-(write-line "\*test2") 
-(write-char #\\*) 
-nil) 
+       (write-line "test12" \*standard-output\* :end 5) 
+       (write-line "\*test2") 
+       (write-char #\\*) 
+       nil) 
 ▷ \*test1 
 
- 
- 
+
+
 ▷ \*test2 
 ▷ \* 
 → NIL 

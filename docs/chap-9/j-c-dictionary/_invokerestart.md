@@ -48,7 +48,7 @@ Calls the *function* associated with *restart*, passing *arguments* to it. *Rest
 
 **Examples:**
 ```lisp
- 
+
 (defun add3 (x) (check-type x number) (+ x 3)) 
 (foo ’seven) 
 ▷ Error: The value SEVEN was not of type NUMBER. 

@@ -159,10 +159,10 @@ Evaluation and
 
 **Examples:**
 ```lisp
- 
+
 (defun hook (expander form env) 
-(format t "Now expanding: &#126;S&#126;%" form) 
-(funcall expander form env)) → HOOK 
+  (format t "Now expanding: &#126;S&#126;%" form) 
+  (funcall expander form env)) → HOOK 
 (defmacro machook (x y) ‘(/ (+ ,x ,y) 2)) → MACHOOK 
 (macroexpand ’(machook 1 2)) → (/ (+ 1 2) 2), *true* 
 (let ((\*macroexpand-hook\* #’hook)) (macroexpand ’(machook 1 2))) 

@@ -262,7 +262,7 @@ The result of all these functions is a *sequence* of the same *type* as *sequenc
 
 **Examples:**
 ```lisp
- 
+
 (substitute #\. #\SPACE "0 2 4 6") → "0.2.4.6" 
 (substitute 9 4 ’(1 2 4 1 3 4 5)) → (1 2 9 1 3 9 5) 
 (substitute 9 4 ’(1 2 4 1 3 4 5) :count 1) → (1 2 9 1 3 4 5) 
@@ -276,7 +276,7 @@ The result of all these functions is a *sequence* of the same *type* as *sequenc
 → (1 2 4 1 3 9 5) 
 (setq some-things (list ’a ’car ’b ’cdr ’c)) → (A CAR B CDR C) 
 (nsubstitute-if "function was here" #’fboundp some-things 
-:count 1 :from-end t) → (A CAR B "function was here" C) 
+		:count 1 :from-end t) → (A CAR B "function was here" C) 
 some-things → (A CAR B "function was here" C) 
 (setq alpha-tester (copy-seq "ab ")) → "ab " 
 (nsubstitute-if-not #\z #’alpha-char-p alpha-tester) → "abz" 

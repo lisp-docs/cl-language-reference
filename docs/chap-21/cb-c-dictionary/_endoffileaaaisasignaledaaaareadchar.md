@@ -175,14 +175,14 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is *false*, *eof-value*
 
 **Examples:**
 ```lisp
- 
+
 ;; This code assumes an implementation in which a newline is not 
 ;; required to terminate input from the console. 
 (defun test-it () 
-(unread-char (read-char)) 
-(list (read-char-no-hang) 
-(read-char-no-hang) 
-(read-char-no-hang))) 
+  (unread-char (read-char)) 
+  (list (read-char-no-hang) 
+	(read-char-no-hang) 
+	(read-char-no-hang))) 
 → TEST-IT 
 ;; Implementation A, where a Newline is not required to terminate 
 ;; interactive input on the console. 

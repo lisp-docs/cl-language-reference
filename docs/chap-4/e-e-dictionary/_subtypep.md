@@ -166,7 +166,7 @@ returns *true* only in implementations that do not have a specialized *array* re
 
 **Examples:**
 ```lisp
- 
+
 (subtypep ’compiled-function ’function) → true, *true* 
 (subtypep ’null ’list) → true, *true* 
 (subtypep ’null ’symbol) → true, *true* 
@@ -181,11 +181,11 @@ returns *true* only in implementations that do not have a specialized *array* re
 Let <aet-x> and <aet-y> be two distinct *type specifiers* that do not always refer to the same sets of *objects* in a given implementation, but for which **make-array**, will return an *object* of the same *array type*. 
 Thus, in each case, 
 (subtypep (array-element-type (make-array 0 :element-type ’<aet-x>)) 
-(array-element-type (make-array 0 :element-type ’<aet-y>))) 
+	  (array-element-type (make-array 0 :element-type ’<aet-y>))) 
 → true, *true*  
 
 (subtypep (array-element-type (make-array 0 :element-type ’<aet-y>)) 
-(array-element-type (make-array 0 :element-type ’<aet-x>))) 
+	  (array-element-type (make-array 0 :element-type ’<aet-x>))) 
 → true, *true* 
 If (array <aet-x>) and (array <aet-y>) are different names for exactly the same set of *objects*, these names should always refer to the same sets of *objects*. That implies that the following set of tests are also true: 
 (subtypep ’(array <aet-x>) ’(array <aet-y>)) → true, *true* 

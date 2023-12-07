@@ -32,7 +32,7 @@
 
 **Examples:**
 ```lisp
- 
+
 (find-all-symbols ’car) 
 → (CAR) 
 <i><sup>or</sup>→</i> (CAR VEHICLES:CAR) 

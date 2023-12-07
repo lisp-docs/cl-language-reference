@@ -64,7 +64,7 @@ The *secondary value*, *missing-newline-p*, is a *generalized boolean* that is *
 
 **Examples:**
 ```lisp
- 
+
 (setq a "line 1 
 line2") 
 → "line 1 
@@ -76,8 +76,8 @@ line2"
 (read-line input-stream nil nil) 
 → NIL, *true* 
 
- 
- 
+
+
 
 ```
 **Affected By:** 

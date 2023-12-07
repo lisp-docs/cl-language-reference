@@ -48,7 +48,7 @@ If the *evaluation* of any *form* other than the last returns a *primary value* 
 
 **Examples:**
 ```lisp
- 
+
 (or) → NIL 
 (setq temp0 nil temp1 10 temp2 20 temp3 30) → 30 
 (or temp0 temp1 (setq temp2 37)) → 10 

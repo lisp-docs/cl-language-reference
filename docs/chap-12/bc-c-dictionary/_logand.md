@@ -122,7 +122,7 @@ Negative *integers* are treated as if they were in two’s-complement notation.
 
 **Examples:**
 ```lisp
- 
+
 (logior 1 2 4 8) → 15 
 (logxor 1 3 7 15) → 10 
 (logeqv) → -1 
@@ -136,20 +136,20 @@ Negative *integers* are treated as if they were in two’s-complement notation.
 ;;; exchanged. For each bit in the mask that is a 0, the 
 ;;; corresponding bits of x and y are left unchanged. 
 (flet ((show (m x y) 
-(format t "&#126;%m = #o&#126;6,’0O&#126;%x = #o&#126;6,’0O&#126;%y = #o&#126;6,’0O&#126;%" 
-m x y))) 
-(let ((m #o007750) 
-(x #o452576) 
-(y #o317407)) 
-(show m x y) 
-(let ((z (logand (logxor x y) m))) 
-(setq x (logxor z x)) 
-(setq y (logxor z y)) 
-(show m x y)))) 
+	 (format t "&#126;%m = #o&#126;6,’0O&#126;%x = #o&#126;6,’0O&#126;%y = #o&#126;6,’0O&#126;%" 
+		 m x y))) 
+  (let ((m #o007750) 
+	(x #o452576) 
+	(y #o317407)) 
+    (show m x y) 
+    (let ((z (logand (logxor x y) m))) 
+      (setq x (logxor z x)) 
+      (setq y (logxor z y)) 
+      (show m x y)))) 
 ▷ m = #o007750 
 
- 
- 
+
+
 ▷ x = #o452576 
 ▷ y = #o317407 
 ▷ 

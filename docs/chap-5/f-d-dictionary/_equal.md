@@ -134,7 +134,7 @@ Any two *objects* that are **eql** are also **equal**.
 
 **Examples:**
 ```lisp
- 
+
 (equal ’a ’b) → false 
 (equal ’a ’a) → true 
 (equal 3 3) → true 

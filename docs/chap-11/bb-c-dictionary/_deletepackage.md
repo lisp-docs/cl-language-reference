@@ -60,7 +60,7 @@ After this operation completes, the *home package* of any *symbol* whose *home p
 
 **Examples:**
 ```lisp
- 
+
 (setq \*foo-package\* (make-package "FOO" :use nil)) 
 (setq \*foo-symbol\* (intern "FOO" \*foo-package\*)) 
 (export \*foo-symbol\* \*foo-package\*) 
@@ -86,8 +86,8 @@ After this operation completes, the *home package* of any *symbol* whose *home p
 (package-use-list \*bar-package\*) → (#<PACKAGE "FOO">) 
 (package-use-list \*baz-package\*) → (#<PACKAGE "BAR">) 
 
- 
- 
+
+
 **delete-package** 
 (package-used-by-list \*foo-package\*) → (#<PACKAGE "BAR">) 
 (package-used-by-list \*bar-package\*) → (#<PACKAGE "BAZ">) 

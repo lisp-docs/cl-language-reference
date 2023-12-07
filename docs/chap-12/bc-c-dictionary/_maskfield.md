@@ -44,7 +44,7 @@
 
 **Examples:**
 ```lisp
- 
+
 (mask-field (byte 1 5) -1) → 32 
 (setq a 15) → 15 
 (mask-field (byte 2 0) a) → 3 

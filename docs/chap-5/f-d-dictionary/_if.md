@@ -56,13 +56,13 @@ First *test-form* is evaluated. If the result is *true*, then *then-form* is sel
 
 **Examples:**
 ```lisp
- 
+
 (if t 1) → 1 
 (if nil 1 2) → 2 
 (defun test () 
-(dolist (truth-value ’(t nil 1 (a b c))) 
-(if truth-value (print ’true) (print ’false)) 
-(prin1 truth-value))) → TEST 
+  (dolist (truth-value ’(t nil 1 (a b c))) 
+    (if truth-value (print ’true) (print ’false)) 
+    (prin1 truth-value))) → TEST 
 (test) 
 ▷ TRUE T 
 ▷ FALSE NIL 

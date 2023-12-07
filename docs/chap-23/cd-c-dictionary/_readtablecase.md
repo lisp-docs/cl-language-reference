@@ -48,7 +48,7 @@
 
 **Examples:**
 ```lisp
- 
+
 See Section 23.1.2.1 (Examples of Effect of Readtable Case on the Lisp Reader) and Section 22.1.3.3.2.1 (Examples of Effect of Readtable Case on the Lisp Printer). 
 
 ```

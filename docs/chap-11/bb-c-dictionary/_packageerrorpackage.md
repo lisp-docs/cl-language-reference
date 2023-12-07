@@ -28,10 +28,10 @@
 
 Returns a *designator* for the offending *package* in the *situation* represented by the *condition*. **Examples:**
 ```lisp
- 
+
 (package-error-package 
-(make-condition ’package-error 
-:package (find-package "COMMON-LISP"))) 
+ (make-condition ’package-error 
+		  :package (find-package "COMMON-LISP"))) 
 → #\<Package "COMMON-LISP"\> 
 
 ```

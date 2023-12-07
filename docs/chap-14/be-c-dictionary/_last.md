@@ -40,7 +40,7 @@ If *n* is zero, the atom that terminates *list* is returned. If *n* is greater t
 
 **Examples:**
 ```lisp
- 
+
 (last nil) → NIL 
 (last ’(1 2 3)) → (3) 
 (last ’(1 2 . 3)) → (2 . 3) 
@@ -52,8 +52,8 @@ If *n* is zero, the atom that terminates *list* is returned. If *n* is greater t
 (last ’(a b c) 0) → () 
 (last ’(a b c) 1) → (C) 
 
- 
- 
+
+
 (last ’(a b c) 2) → (B C) 
 (last ’(a b c) 3) → (A B C) 
 (last ’(a b c) 4) → (A B C) 

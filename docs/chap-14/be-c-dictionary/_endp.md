@@ -32,7 +32,7 @@ Returns *true* if *list* is the *empty list*. Returns *false* if *list* is a *co
 
 **Examples:**
 ```lisp
- 
+
 (endp nil) → true 
 (endp ’(1 2)) → false 
 (endp (cddr ’(1 2))) → true 

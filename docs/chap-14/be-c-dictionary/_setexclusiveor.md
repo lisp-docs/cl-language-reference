@@ -68,9 +68,9 @@ The result contains precisely those elements of *list-1* and *list-2* that appea
 
 **Examples:**
 ```lisp
- 
+
 (setq lst1 (list 1 "a" "b") 
-lst2 (list 1 "A" "b")) → (1 "A" "b") 
+      lst2 (list 1 "A" "b")) → (1 "A" "b") 
 (set-exclusive-or lst1 lst2) → ("b" "A" "b" "a") 
 (set-exclusive-or lst1 lst2 :test #’equal) → ("A" "a") 
 (set-exclusive-or lst1 lst2 :test ’equalp) → NIL 

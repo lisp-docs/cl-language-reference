@@ -28,7 +28,7 @@ Returns, as if by **return-from**, from the *block* named **nil**.
 
 **Examples:**
 ```lisp
- 
+
 (block nil (return) 1) → NIL 
 (block nil (return 1) 2) → 1 
 (block nil (return (values 1 2)) 3) → 1, 2 

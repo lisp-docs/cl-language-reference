@@ -36,7 +36,7 @@
 
 **Examples:**
 ```lisp
- 
+
 (in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
 (export (intern "CONTRABAND" (make-package ’temp)) ’temp) → T 
 (find-symbol "CONTRABAND") → NIL, NIL 

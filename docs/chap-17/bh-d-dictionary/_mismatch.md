@@ -76,7 +76,7 @@ If *from-end* is *true*, then one plus the index of the rightmost position in wh
 
 **Examples:**
 ```lisp
- 
+
 (mismatch "abcd" "ABCDE" :test #’char-equal) → 4 
 (mismatch ’(3 2 1 1 2 3) ’(1 2 3) :from-end t) → 3 
 (mismatch ’(1 2 3) ’(2 3 4) :test-not #’eq :key #’oddp) → NIL 

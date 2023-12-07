@@ -32,7 +32,7 @@ Returns *true* if *symbol* is a *special operator* ; otherwise, returns *false*.
 
 **Examples:**
 ```lisp
- 
+
 (special-operator-p ’if) →  true 
 (special-operator-p ’car) →  false 
 (special-operator-p ’one) →  false 

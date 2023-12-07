@@ -80,17 +80,17 @@ Figure 3–24 shows a list of *declaration identifiers* that can be used with **
 
 An implementation is free to support other (*implementation-defined*) *declaration identifiers* as well. **Examples:**
 ```lisp
- 
+
 (defun nonsense (k x z) 
-(foo z x) ;First call to foo 
-(let ((j (foo k x)) ;Second call to foo 
-(x (\* k k))) 
-(declare (inline foo) (special x z)) 
-(foo x j z))) ;Third call to foo 
+  (foo z x) ;First call to foo 
+  (let ((j (foo k x)) ;Second call to foo 
+	(x (\* k k))) 
+    (declare (inline foo) (special x z)) 
+    (foo x j z))) ;Third call to foo 
 In this example, the **inline** declaration applies only to the third call to foo, but not to the first or second ones. The **special** declaration of x causes **let** to make a dynamic *binding* for x, and 
 Evaluation and 
- 
- 
+
+
 causes the reference to x in the body of **let** to be a dynamic reference. The reference to x in the second call to foo is a local reference to the second parameter of nonsense. The reference to x in the first call to foo is a local reference, not a **special** one. The **special** declaration of z causes the 
 reference to z in the third call to foo to be a dynamic reference; it does not refer to the parameter to nonsense named z, because that parameter *binding* has not been declared to be **special**. (The **special** declaration of z does not appear in the body of **defun**, but in an inner *form*, and therefore does not a↵ect the *binding* of the *parameter* .) 
 

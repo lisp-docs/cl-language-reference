@@ -36,7 +36,7 @@ Replaces the *elements* of *sequence bounded* by *start* and *end* with *item*.
 
 **Examples:**
 ```lisp
- 
+
 (fill (list 0 1 2 3 4 5) ’(444)) → ((444) (444) (444) (444) (444) (444)) 
 (fill (copy-seq "01234") #\e :start 3) → "012ee" 
 (setq x (vector ’a ’b ’c ’d ’e)) → #(A B C D E) 

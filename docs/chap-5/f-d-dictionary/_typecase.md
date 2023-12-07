@@ -160,16 +160,16 @@ In all three cases, is permissible for more than one *clause* to specify a match
 
 **Examples:**
 ```lisp
- 
+
 ;;; (Note that the parts of this example which use TYPE-OF 
 ;;; are implementation-dependent.) 
 (defun what-is-it (x) 
-(format t "&#126;&amp;&#126;S is &#126;A.&#126;%" 
-x (typecase x 
-(float "a float") 
-(null "a symbol, boolean false, or the empty list") 
-(list "a list") 
-(t (format nil "a(n) &#126;(&#126;A&#126;)" (type-of x)))))) 
+  (format t "&#126;&amp;&#126;S is &#126;A.&#126;%" 
+	  x (typecase x 
+	      (float "a float") 
+	      (null "a symbol, boolean false, or the empty list") 
+	      (list "a list") 
+	      (t (format nil "a(n) &#126;(&#126;A&#126;)" (type-of x)))))) 
 → WHAT-IS-IT 
 (map ’nil #’what-is-it ’(nil (a b) 7.0 7 box)) 
 ▷ NIL is a symbol, boolean false, or the empty list. 
@@ -181,14 +181,14 @@ x (typecase x
 (setq x 1/3) 
 → 1/3 
 (ctypecase x 
-(integer (\* x 4)) 
-(symbol (symbol-value x))) 
+  (integer (\* x 4)) 
+  (symbol (symbol-value x))) 
 ▷ Error: The value of X, 1/3, is neither an integer nor a symbol. 
 ▷ To continue, type :CONTINUE followed by an option number: 
 ▷ 1: Specify a value to use instead. 
 
- 
- 
+
+
 ▷ 2: Return to Lisp Toplevel. 
 ▷ Debug> :CONTINUE 1 
 ▷ Use value: 3.7 

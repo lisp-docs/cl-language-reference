@@ -267,12 +267,12 @@ The **continue** *restart* can be used to continue with the normal *signaling* p
 
 **Examples:**
 ```lisp
- 
+
 \*break-on-signals\* → NIL 
 (ignore-errors (error ’simple-error :format-control "Fooey!")) 
 → NIL, #<SIMPLE-ERROR 32207172> 
 (let ((\*break-on-signals\* ’error)) 
-(ignore-errors (error ’simple-error :format-control "Fooey!"))) 
+  (ignore-errors (error ’simple-error :format-control "Fooey!"))) 
 ▷ Break: Fooey! 
 ▷ BREAK entered because of \*BREAK-ON-SIGNALS\*. 
 ▷ To continue, type :CONTINUE followed by an option number: 
@@ -282,7 +282,7 @@ The **continue** *restart* can be used to continue with the normal *signaling* p
 ▷ Continue to signal. 
 → NIL, #<SIMPLE-ERROR 32212257> 
 (let ((\*break-on-signals\* ’error)) 
-(error ’simple-error :format-control "Fooey!")) 
+  (error ’simple-error :format-control "Fooey!")) 
 ▷ Break: Fooey! 
 ▷ BREAK entered because of \*BREAK-ON-SIGNALS\*. 
 ▷ To continue, type :CONTINUE followed by an option number: 

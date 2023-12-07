@@ -92,7 +92,7 @@ If the *result-type* is a *subtype* of **vector**, then if the implementation ca
 
 **Examples:**
 ```lisp
- 
+
 (setq test1 (list 1 3 4 6 7)) 
 (setq test2 (list 2 5 8)) 
 (merge ’list test1 test2 #’<) → (1 2 3 4 5 6 7 8) 

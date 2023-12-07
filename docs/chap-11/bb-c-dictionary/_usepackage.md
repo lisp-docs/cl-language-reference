@@ -40,7 +40,7 @@
 
 **Examples:**
 ```lisp
- 
+
 (export (intern "LAND-FILL" (make-package ’trash)) ’trash) → T 
 (find-symbol "LAND-FILL" (make-package ’temp)) → NIL, NIL 
 (package-use-list ’temp) → (#<PACKAGE "TEMP">) 

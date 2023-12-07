@@ -52,7 +52,7 @@
 
 **Examples:**
 ```lisp
- 
+
 (nth 0 ’(foo bar baz)) → FOO 
 (nth 1 ’(foo bar baz)) → BAR 
 (nth 3 ’(foo bar baz)) → NIL 

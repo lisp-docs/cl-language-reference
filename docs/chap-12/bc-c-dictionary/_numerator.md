@@ -48,7 +48,7 @@ If *rational* is an *integer* , **numerator** returns *rational* and **denominat
 
 **Examples:**
 ```lisp
- 
+
 (numerator 1/2) → 1 
 (denominator 12/36) → 3 
 (numerator -1) → -1 

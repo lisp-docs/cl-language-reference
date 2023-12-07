@@ -52,7 +52,7 @@
 
 **Examples:**
 ```lisp
- 
+
 (in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
 (setq sym (intern "CONFLICT")) → CONFLICT 
 (intern "CONFLICT" (make-package ’temp)) → TEMP::CONFLICT, NIL 

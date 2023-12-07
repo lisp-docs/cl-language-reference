@@ -32,7 +32,7 @@ Returns *true* if *object* is a *keyword* <sub>1</sub>; otherwise, returns *fals
 
 **Examples:**
 ```lisp
- 
+
 (keywordp ’elephant) → false 
 (keywordp 12) → false 
 (keywordp :test) → true 

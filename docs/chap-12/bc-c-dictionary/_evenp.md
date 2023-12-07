@@ -36,7 +36,7 @@
 
 **oddp** returns *true* if *integer* is odd (not divisible by two); otherwise, returns *false*. **Examples:**
 ```lisp
- 
+
 (evenp 0) → true 
 (oddp 10000000000000000000000) → false 
 (oddp -1) → true 

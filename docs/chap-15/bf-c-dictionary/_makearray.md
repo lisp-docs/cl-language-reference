@@ -192,7 +192,7 @@ elements of its own, but instead maps *accesses* to itself into *accesses* to ar
 
 **Examples:**
 ```lisp
- 
+
 (make-array 5) ;; Creates a one-dimensional array of five elements. 
 (make-array ’(3 4) :element-type ’(mod 16)) ;; Creates a 
 ;;two-dimensional array, 3 by 4, with four-bit elements. 
@@ -200,28 +200,28 @@ elements of its own, but instead maps *accesses* to itself into *accesses* to ar
 (make-array nil :initial-element nil) → #0ANIL 
 (make-array 4 :initial-element nil) → #(NIL NIL NIL NIL) 
 (make-array ’(2 4) 
-:element-type ’(unsigned-byte 2) 
-:initial-contents ’((0 1 2 3) (3 2 1 0))) 
+	     :element-type ’(unsigned-byte 2) 
+	     :initial-contents ’((0 1 2 3) (3 2 1 0))) 
 → #2A((0 1 2 3) (3 2 1 0)) 
 (make-array 6 
-:element-type ’character 
-:initial-element #\a 
-:fill-pointer 3) → "aaa" 
+	    :element-type ’character 
+	    :initial-element #\a 
+	    :fill-pointer 3) → "aaa" 
 The following is an example of making a *displaced array*. 
 (setq a (make-array ’(4 3))) 
 → #<ARRAY 4x3 simple 32546632> 
 (dotimes (i 4) 
-(dotimes (j 3) 
-(setf (aref a i j) (list i ’x j ’= (\* i j))))) 
+  (dotimes (j 3) 
+    (setf (aref a i j) (list i ’x j ’= (\* i j))))) 
 → NIL 
 
- 
- 
+
+
 (setq b (make-array 8 :displaced-to a 
-:displaced-index-offset 2)) 
+		    :displaced-index-offset 2)) 
 → #<ARRAY 8 indirect 32550757> 
 (dotimes (i 8) 
-(print (list i (aref b i)))) 
+  (print (list i (aref b i)))) 
 ▷ (0 (0 X 2 = 0)) 
 ▷ (1 (1 X 0 = 0)) 
 ▷ (2 (1 X 1 = 1)) 
@@ -246,7 +246,7 @@ The last example depends on the fact that *arrays* are, in effect, stored in row
 (setq a3 (make-array 50 :fill-pointer 10)) 
 → #<ARRAY 50 fill-pointer 10 46105663> 
 (setq b3 (make-array 20 :displaced-to a3 :displaced-index-offset 10 
-:fill-pointer 5)) 
+		     :fill-pointer 5)) 
 → #<ARRAY 20 indirect, fill-pointer 5 46107432> 
 (length a3) → 10 
 (length b3) → 5 

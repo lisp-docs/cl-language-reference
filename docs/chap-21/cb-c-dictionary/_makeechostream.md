@@ -36,15 +36,15 @@ Creates and returns an *echo stream* that takes input from *input-stream* and se
 
 **Examples:**
 ```lisp
- 
+
 (let ((out (make-string-output-stream))) 
-(with-open-stream 
-(s (make-echo-stream 
-(make-string-input-stream "this-is-read-and-echoed") 
-out)) 
-(read s) 
-(format s " \* this-is-direct-output") 
-(get-output-stream-string out))) 
+  (with-open-stream 
+      (s (make-echo-stream 
+	  (make-string-input-stream "this-is-read-and-echoed") 
+	  out)) 
+    (read s) 
+    (format s " \* this-is-direct-output") 
+    (get-output-stream-string out))) 
 → "this-is-read-and-echoed \* this-is-direct-output" 
 
 ```

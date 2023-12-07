@@ -104,22 +104,22 @@ For **nsubst**, **nsubst-if**, and **nsubst-if-not** the original *tree* is modi
 
 **Examples:**
 ```lisp
- 
+
 (setq tree1 ’(1 (1 2) (1 2 3) (1 2 3 4))) → (1 (1 2) (1 2 3) (1 2 3 4)) 
 (subst "two" 2 tree1) → (1 (1 "two") (1 "two" 3) (1 "two" 3 4)) 
 (subst "five" 5 tree1) → (1 (1 2) (1 2 3) (1 2 3 4)) 
 (eq tree1 (subst "five" 5 tree1)) → implementation-dependent 
 (subst ’tempest ’hurricane 
-’(shakespeare wrote (the hurricane))) 
+	’(shakespeare wrote (the hurricane))) 
 → (SHAKESPEARE WROTE (THE TEMPEST)) 
 (subst ’foo ’nil ’(shakespeare wrote (twelfth night))) 
 → (SHAKESPEARE WROTE (TWELFTH NIGHT . FOO) . FOO) 
 (subst ’(a . cons) ’(old . pair) 
-’((old . spice) ((old . shoes) old . pair) (old . pair)) 
+	’((old . spice) ((old . shoes) old . pair) (old . pair)) 
 
- 
- 
-:test #’equal) 
+	
+	
+	:test #’equal) 
 → ((OLD . SPICE) ((OLD . SHOES) A . CONS) (A . CONS)) 
 (subst-if 5 #’listp tree1) → 5 
 (subst-if-not ’(x) #’consp tree1) 

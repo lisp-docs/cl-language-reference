@@ -48,7 +48,7 @@ If the *host* is already defined, no attempt to find or load a definition is att
 
 **Examples:**
 ```lisp
- 
+
 (translate-logical-pathname "hacks:weather;barometer.lisp.newest") 
 ▷ Error: The logical host HACKS is not defined. 
 (load-logical-pathname-translations "HACKS") 

@@ -32,7 +32,7 @@ Returns *true* if *object* is of *type* **function**; otherwise, returns *false*
 
 **Examples:**
 ```lisp
- 
+
 (functionp ’append) → false 
 (functionp #’append) → true 
 (functionp (symbol-function ’append)) → true 

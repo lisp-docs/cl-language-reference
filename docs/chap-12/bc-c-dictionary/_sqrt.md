@@ -60,12 +60,12 @@ The branch cut for square root lies along the negative real axis, continuous wit
 
 **Examples:**
 ```lisp
- 
+
 (sqrt 9.0) → 3.0 
 (sqrt -9.0) → #C(0.0 3.0) 
 
- 
- 
+
+
 (isqrt 9) → 3 
 (sqrt 12) → 3.4641016 
 (isqrt 12) → 3 

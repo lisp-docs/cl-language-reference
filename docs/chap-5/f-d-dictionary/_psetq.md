@@ -64,7 +64,7 @@ If any *var* refers to a *binding* made by **symbol-macrolet**, then that *var* 
 
 **Examples:**
 ```lisp
- 
+
 ;; A simple use of PSETQ to establish values for variables. 
 ;; As a matter of style, many programmers would prefer SETQ 
 ;; in a simple situation like this where parallel assignment 
@@ -81,14 +81,14 @@ b → 2
 c → 3 
 ;; Use of PSETQ on a symbol macro. 
 (let ((x (list 10 20 30))) 
-(symbol-macrolet ((y (car x)) (z (cadr x))) 
-(psetq y (1+ z) z (1+ y)) 
-(list x y z))) 
+  (symbol-macrolet ((y (car x)) (z (cadr x))) 
+    (psetq y (1+ z) z (1+ y)) 
+    (list x y z))) 
 → ((21 11 30) 21 11) 
 ;; Use of parallel assignment to swap values of A and B. 
 (let ((a 1) (b 2)) 
-(psetq a b b a) 
-(values a b)) 
+  (psetq a b b a) 
+  (values a b)) 
 → 2, 1 
 
 ```

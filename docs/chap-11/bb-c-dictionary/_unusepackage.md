@@ -32,7 +32,7 @@
 
 Any *symbols* that have been *imported* into *package* continue to be *present* in *package*. **Examples:**
 ```lisp
- 
+
 (in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
 (export (intern "SHOES" (make-package ’temp)) ’temp) → T 
 (find-symbol "SHOES") → NIL, NIL 

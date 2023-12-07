@@ -200,7 +200,7 @@ For **atan**, the signs of *number1* (indicated as *x*) and *number2* (indicated
 
 **Examples:**
 ```lisp
- 
+
 (asin 0) → 0.0 
 (acos #c(0 1)) → #C(1.5707963267948966 -0.8813735870195432) 
 (/ (atan 1 (sqrt 3)) 6) → 0.087266 

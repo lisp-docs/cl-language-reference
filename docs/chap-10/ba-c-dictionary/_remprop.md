@@ -44,7 +44,7 @@ The *property indicator* and the corresponding *property value* are removed in a
 
 **Examples:**
 ```lisp
- 
+
 (setq test (make-symbol "PSEUDO-PI")) → #:PSEUDO-PI 
 (symbol-plist test) → () 
 (setf (get test ’constant) t) → T 
@@ -57,8 +57,8 @@ The *property indicator* and the corresponding *property value* are removed in a
 → (ERROR-RANGE NOTICEABLE APPROXIMATION NIL CONSTANT T) 
 (get test ’approximation) → NIL 
 
- 
- 
+
+
 (remprop test ’approximation) → true 
 (get test ’approximation) → NIL 
 (symbol-plist test) 

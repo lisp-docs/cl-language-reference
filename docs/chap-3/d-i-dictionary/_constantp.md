@@ -60,14 +60,14 @@ If an *implementation* chooses to make use of the *environment* information, suc
 
 **Examples:**
 ```lisp
- 
+
 (constantp 1) →  true 
 (constantp ’temp) →  false 
 (constantp ”temp)) →  true 
 (defconstant this-is-a-constant ’never-changing) → THIS-IS-A-CONSTANT 
 Evaluation and 
- 
- 
+
+
 **constantp** 
 (constantp ’this-is-a-constant) →  true 
 (constantp "temp") →  true 

@@ -64,7 +64,7 @@ If any of these operations does not make sense for *output-stream*, then it does
 
 **Examples:**
 ```lisp
- 
+
 ;; Implementation A 
 (progn (princ "am i seen?") (clear-output)) 
 → NIL 

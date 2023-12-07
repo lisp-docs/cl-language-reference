@@ -44,7 +44,7 @@ The *element-type* names the *type* of the *elements* of the *string*; a *string
 
 **Examples:**
 ```lisp
- 
+
 (make-string 10 :initial-element #\5) → "5555555555" 
 (length (make-string 10)) → 10 
 

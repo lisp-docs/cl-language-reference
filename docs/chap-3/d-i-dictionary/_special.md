@@ -120,57 +120,57 @@ the parameter x is bound as a dynamic variable rather than as a lexical variable
 
 **Examples:**
 ```lisp
- 
+
 (defun declare-eg (y) ;this y is special 
-(declare (special y)) 
-(let ((y t)) ;this y is lexical 
-(list y 
-(locally (declare (special y)) y)))) ;this y refers to the 
-;special binding of y 
+  (declare (special y)) 
+  (let ((y t)) ;this y is lexical 
+    (list y 
+	  (locally (declare (special y)) y)))) ;this y refers to the 
+					;special binding of y 
 → DECLARE-EG 
 (declare-eg nil) → (T NIL) 
 (setf (symbol-value ’x) 6) 
 (defun foo (x) ;a lexical binding of x 
-(print x) 
-(let ((x (1+ x))) ;a special binding of x 
-(declare (special x)) ;and a lexical reference 
-(bar)) 
-(1+ x)) 
+  (print x) 
+  (let ((x (1+ x))) ;a special binding of x 
+    (declare (special x)) ;and a lexical reference 
+    (bar)) 
+  (1+ x)) 
 (defun bar () 
-(print (locally (declare (special x)) 
-x))) 
+  (print (locally (declare (special x)) 
+	   x))) 
 (foo 10) 
 ▷ 10 
 ▷ 11 
 → 11 
 (setf (symbol-value ’x) 6) 
 (defun bar (x y) ;[1] 1st occurrence of x 
-(let ((old-x x) ;[2] 2nd occurrence of x – same as 1st occurrence 
-(x y)) ;[3] 3rd occurrence of x 
-(declare (special x)) 
-(list old-x x))) 
+  (let ((old-x x) ;[2] 2nd occurrence of x – same as 1st occurrence 
+	(x y)) ;[3] 3rd occurrence of x 
+    (declare (special x)) 
+    (list old-x x))) 
 (bar ’first ’second) → (FIRST SECOND) 
 (defun few (x &amp;optional (y \*foo\*)) 
-(declare (special \*foo\*)) 
-...) 
-The reference to \*foo\* in the first line of this example is not **special** even though there is a **special** declaration in the second line. 
-(declaim (special prosp)) →  implementation-dependent 
+	    (declare (special \*foo\*)) 
+	    ...) 
+  The reference to \*foo\* in the first line of this example is not **special** even though there is a **special** declaration in the second line. 
+  (declaim (special prosp)) →  implementation-dependent 
 
- 
- 
-(setq prosp 1 reg 1) → 1 
-(let ((prosp 2) (reg 2)) ;the binding of prosp is special 
-(set ’prosp 3) (set ’reg 3) ;due to the preceding proclamation, 
-(list prosp reg)) ;whereas the variable reg is lexical 
-→ (3 2) 
-(list prosp reg) → (1 3) 
-(declaim (special x)) ;x is always special. 
-(defun example (x y) 
-(declare (special y)) 
-(let ((y 3) (x (\* x 2))) 
-(print (+ y (locally (declare (special y)) y))) 
-(let ((y 4)) (declare (special y)) (foo x)))) → EXAMPLE 
-In the contorted code above, the outermost and innermost *bindings* of y are dynamic, but the middle binding is lexical. The two arguments to + are di↵erent, one being the value, which is 3, of the lexical variable y, and the other being the value of the dynamic variable named y (a *binding* of which happens, coincidentally, to lexically surround it at an outer level). All the *bindings* of x and references to x are dynamic, however, because of the proclamation that x is always **special**. 
+  
+  
+  (setq prosp 1 reg 1) → 1 
+  (let ((prosp 2) (reg 2)) ;the binding of prosp is special 
+    (set ’prosp 3) (set ’reg 3) ;due to the preceding proclamation, 
+    (list prosp reg)) ;whereas the variable reg is lexical 
+  → (3 2) 
+  (list prosp reg) → (1 3) 
+  (declaim (special x)) ;x is always special. 
+  (defun example (x y) 
+    (declare (special y)) 
+    (let ((y 3) (x (\* x 2))) 
+      (print (+ y (locally (declare (special y)) y))) 
+      (let ((y 4)) (declare (special y)) (foo x)))) → EXAMPLE 
+  In the contorted code above, the outermost and innermost *bindings* of y are dynamic, but the middle binding is lexical. The two arguments to + are di↵erent, one being the value, which is 3, of the lexical variable y, and the other being the value of the dynamic variable named y (a *binding* of which happens, coincidentally, to lexically surround it at an outer level). All the *bindings* of x and references to x are dynamic, however, because of the proclamation that x is always **special**. 
 
 ```
 **See Also:** 

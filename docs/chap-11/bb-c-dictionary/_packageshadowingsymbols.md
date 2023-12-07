@@ -32,7 +32,7 @@ Returns a *list* of *symbols* that have been declared as *shadowing symbols* in 
 
 **Examples:**
 ```lisp
- 
+
 (package-shadowing-symbols (make-package ’temp)) → () 
 (shadow ’cdr ’temp) → T 
 (package-shadowing-symbols ’temp) → (TEMP::CDR) 

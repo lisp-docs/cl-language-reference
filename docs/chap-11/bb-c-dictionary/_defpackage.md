@@ -220,21 +220,21 @@ If a defpackage *form* appears as a *top level form*, all of the actions normall
 
 **Examples:**
 ```lisp
- 
+
 (defpackage "MY-PACKAGE" 
-(:nicknames "MYPKG" "MY-PKG") 
-(:use "COMMON-LISP") 
-(:shadow "CAR" "CDR") 
-(:shadowing-import-from "VENDOR-COMMON-LISP" "CONS") 
-(:import-from "VENDOR-COMMON-LISP" "GC") 
-(:export "EQ" "CONS" "FROBOLA") 
-) 
+  (:nicknames "MYPKG" "MY-PKG") 
+  (:use "COMMON-LISP") 
+  (:shadow "CAR" "CDR") 
+  (:shadowing-import-from "VENDOR-COMMON-LISP" "CONS") 
+  (:import-from "VENDOR-COMMON-LISP" "GC") 
+  (:export "EQ" "CONS" "FROBOLA") 
+  ) 
 (defpackage my-package 
-(:nicknames mypkg :MY-PKG) ; remember Common Lisp conventions for case 
-(:use common-lisp) ; conversion on symbols 
-(:shadow CAR :cdr #:cons) 
-(:export "CONS") ; this is the shadowed one. 
-) 
+  (:nicknames mypkg :MY-PKG) ; remember Common Lisp conventions for case 
+  (:use common-lisp) ; conversion on symbols 
+  (:shadow CAR :cdr #:cons) 
+  (:export "CONS") ; this is the shadowed one. 
+  ) 
 
 ```
 **Affected By:** 

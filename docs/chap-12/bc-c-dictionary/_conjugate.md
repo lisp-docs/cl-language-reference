@@ -40,7 +40,7 @@ Returns the complex conjugate of *number*. The conjugate of a *real* number is i
 
 **Examples:**
 ```lisp
- 
+
 (conjugate #c(0 -1)) → #C(0 1) 
 (conjugate #c(1 1)) → #C(1 -1) 
 (conjugate 1.5) → 1.5 

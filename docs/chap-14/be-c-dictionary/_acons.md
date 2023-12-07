@@ -40,7 +40,7 @@ Creates a *fresh cons*, the *cdr* of which is *alist* and the *car* of which is 
 
 **Examples:**
 ```lisp
- 
+
 (setq alist ’()) → NIL 
 (acons 1 "one" alist) → ((1 . "one")) 
 alist → NIL 

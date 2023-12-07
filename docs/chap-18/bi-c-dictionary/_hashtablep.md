@@ -44,7 +44,7 @@ Hash
 
 **Examples:**
 ```lisp
- 
+
 (setq table (make-hash-table)) → #<HASH-TABLE EQL 0/120 32511220> 
 (hash-table-p table) → true 
 (hash-table-p 37) → false 

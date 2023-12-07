@@ -32,7 +32,7 @@ Returns *true* if there is a character immediately available from *input-stream*
 
 **Examples:**
 ```lisp
- 
+
 (progn (unread-char (read-char)) (list (listen) (read-char))) 
 ▷ 1 
 → (T #\1) 

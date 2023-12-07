@@ -48,7 +48,7 @@ Both functions use **string=** to test for the presence of a *module-name*.
 
 **Examples:**
 ```lisp
- 
+
 ;;; This illustrates a nonportable use of REQUIRE, because it 
 ;;; depends on the implementation-dependent file-loading mechanism. 
 (require "CALCULUS") 
@@ -61,8 +61,8 @@ Both functions use **string=** to test for the presence of a *module-name*.
 ;;; Another form of portable usage involves using a variable or 
 ;;; table lookup function to determine the pathname, which again 
 System 
- 
- 
+
+
 **provide, require** 
 ;;; must be initialized elsewhere. 
 (require "CALCULUS" \*calculus-module-pathname\*) 

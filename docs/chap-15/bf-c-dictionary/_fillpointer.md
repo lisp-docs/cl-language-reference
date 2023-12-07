@@ -36,7 +36,7 @@
 
 **Examples:**
 ```lisp
- 
+
 (setq a (make-array 8 :fill-pointer 4)) → #(NIL NIL NIL NIL) 
 (fill-pointer a) → 4 
 (dotimes (i (length a)) (setf (aref a i) (\* i i))) → NIL 

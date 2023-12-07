@@ -40,7 +40,7 @@ Constants appearing in code processed by **eval** are not copied nor coalesced. 
 
 **Examples:**
 ```lisp
- 
+
 (setq form ’(1+ a) a 999) → 999 
 (eval form) → 1000 
 (eval ’form) → (1+ A) 

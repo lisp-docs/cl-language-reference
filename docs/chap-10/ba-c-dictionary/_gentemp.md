@@ -40,7 +40,7 @@ The *name* of the *new-symbol* is the concatenation of the *prefix* and a suffix
 
 **Examples:**
 ```lisp
- 
+
 (gentemp) → T1298 
 (gentemp "FOO") → FOO1299 
 (find-symbol "FOO1300") → NIL, NIL 

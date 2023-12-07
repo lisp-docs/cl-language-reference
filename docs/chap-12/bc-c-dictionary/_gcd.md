@@ -44,7 +44,7 @@ Returns the greatest common divisor of *integers*. If only one *integer* is supp
 
 **Examples:**
 ```lisp
- 
+
 (gcd) → 0 
 (gcd 60 42) → 6 
 (gcd 3333 -33 101) → 1 

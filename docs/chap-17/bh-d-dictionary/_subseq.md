@@ -76,7 +76,7 @@ length, the shorter length determines the number of elements that are replaced. 
 
 **Examples:**
 ```lisp
- 
+
 (setq str "012345") → "012345" 
 (subseq str 2) → "2345" 
 (subseq str 3 5) → "34" 

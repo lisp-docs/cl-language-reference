@@ -80,9 +80,9 @@ There is no guarantee that the order of elements in the result will reflect the 
 
 **Examples:**
 ```lisp
- 
+
 (setq list1 (list 1 1 2 3 4 a b c "A" "B" "C" "d") 
-list2 (list 1 4 5 b c d "a" "B" "c" "D")) 
+      list2 (list 1 4 5 b c d "a" "B" "c" "D")) 
 → (1 4 5 B C D "a" "B" "c" "D") 
 (intersection list1 list2) → (C B 4 1 1) 
 (intersection list1 list2 :test ’equal) → ("B" C B 4 1 1) 

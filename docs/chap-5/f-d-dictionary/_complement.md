@@ -32,7 +32,7 @@ Returns a *function* that takes the same *arguments* as *function*, and has the 
 
 **Examples:**
 ```lisp
- 
+
 (funcall (complement #’zerop) 1) → true 
 (funcall (complement #’characterp) #\A) → false 
 (funcall (complement #’member) ’a ’(a b c)) → false 

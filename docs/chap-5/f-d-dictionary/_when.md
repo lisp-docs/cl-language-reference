@@ -64,7 +64,7 @@ In an **unless** *form*, if the *test-form yields false*, the *forms* are *evalu
 
 **Examples:**
 ```lisp
- 
+
 (when t ’hello) → HELLO 
 (unless t ’hello) → NIL 
 (when nil ’hello) → NIL 
@@ -80,14 +80,14 @@ In an **unless** *form*, if the *test-form yields false*, the *forms* are *evalu
 ▷ 123 
 → 3 
 (let ((x 3)) 
-(list (when (oddp x) (incf x) (list x)) 
-(when (oddp x) (incf x) (list x)) 
-(unless (oddp x) (incf x) (list x)) 
-(unless (oddp x) (incf x) (list x)) 
-(if (oddp x) (incf x) (list x)) 
-(if (oddp x) (incf x) (list x)) 
-(if (not (oddp x)) (incf x) (list x)) 
-(if (not (oddp x)) (incf x) (list x)))) 
+  (list (when (oddp x) (incf x) (list x)) 
+	(when (oddp x) (incf x) (list x)) 
+	(unless (oddp x) (incf x) (list x)) 
+	(unless (oddp x) (incf x) (list x)) 
+	(if (oddp x) (incf x) (list x)) 
+	(if (oddp x) (incf x) (list x)) 
+	(if (not (oddp x)) (incf x) (list x)) 
+	(if (not (oddp x)) (incf x) (list x)))) 
 → ((4) NIL (5) NIL 6 (6) 7 (7)) 
 
 ```
