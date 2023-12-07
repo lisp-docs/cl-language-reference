@@ -72,7 +72,7 @@ Should signal an error of *type* **type-error** if *input-stream* is not an *inp
 
 
 
-<b><sup>two-way-stream-input-stream, two-way-stream</sup> output-stream</b> <i>Function</i> 
+**<sup>two-way-stream-input-stream, two-way-stream</sup> output-stream** <i>Function</i> 
 
 
 
@@ -112,7 +112,7 @@ Should signal an error of *type* **type-error** if *input-stream* is not an *inp
 
 
 
-<b><sup>echo-stream-input-stream, echo-stream-output</sup> stream</b> <i>Function</i> 
+**<sup>echo-stream-input-stream, echo-stream-output</sup> stream** <i>Function</i> 
 
 
 

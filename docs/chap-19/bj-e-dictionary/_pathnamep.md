@@ -74,7 +74,7 @@ Returns *true* if *object* is of *type* **pathname**; otherwise, returns *false*
 
 
 
-<b><sup>pathname-host, pathname-device, pathname</sup> directory, pathname-name, pathname-type, pathname-version</b> <i>Function</i> 
+**<sup>pathname-host, pathname-device, pathname</sup> directory, pathname-name, pathname-type, pathname-version** <i>Function</i> 
 
 
 

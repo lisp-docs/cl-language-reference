@@ -26,7 +26,7 @@ The *type* **arithmetic-error** consists of error conditions that occur during a
 
 
 
-<b><sup>arithmetic-error-operands, arithmetic-error</sup> operation</b> <i>Function</i> 
+**<sup>arithmetic-error-operands, arithmetic-error</sup> operation** <i>Function</i> 
 
 
 

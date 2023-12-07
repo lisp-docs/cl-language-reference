@@ -42,7 +42,7 @@ trailing zero digits may appear in the fraction, except that if the fraction to 
 
 
 
-If both <i>w</i> and <i>d</i> are omitted, then the effect is to print the value using ordinary free-format output; <b>prin1</b> uses this format for any number whose magnitude is either zero or between 10<sup><i>−</i>3</sup>(inclusive) and 10<sup>7</sup>(exclusive). 
+If both <i>w</i> and <i>d</i> are omitted, then the effect is to print the value using ordinary free-format output; **prin1** uses this format for any number whose magnitude is either zero or between 10<sup><i>−</i>3</sup>(inclusive) and 10<sup>7</sup>(exclusive). 
 
 
 

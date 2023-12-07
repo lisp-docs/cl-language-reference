@@ -182,7 +182,7 @@ characteristics by direct modification. A *conforming program* may depend on an 
 
 
 
-<b>alphabetic</b> <i>n.</i>, <i>adj.</i> 1. <i>adj.</i> (of a <i>character</i> ) being one of the <i>standard characters</i> A through Z or a through z, or being any <i>implementation-defined</i> character that has <i>case</i>, or being some other <i>graphic character</i> defined by the <i>implementation</i> to be <i>alphabetic</i><sub>1</sub>. 2. a. <i>n.</i> one of several possible <i>constituent traits</i> of a <i>character</i> . For details, see Section 2.1.4.1 (Constituent Characters) and Section 2.2 (Reader Algorithm). b. <i>adj.</i> (of a <i>character</i> ) being a <i>character</i> that has <i>syntax type constituent</i> in the <i>current readtable</i> and that has the <i>constituent trait alphabetic</i><sub>2<i>a</i></sub>. See Figure 2–8. 
+**alphabetic** <i>n.</i>, <i>adj.</i> 1. <i>adj.</i> (of a <i>character</i> ) being one of the <i>standard characters</i> A through Z or a through z, or being any <i>implementation-defined</i> character that has <i>case</i>, or being some other <i>graphic character</i> defined by the <i>implementation</i> to be <i>alphabetic</i><sub>1</sub>. 2. a. <i>n.</i> one of several possible <i>constituent traits</i> of a <i>character</i> . For details, see Section 2.1.4.1 (Constituent Characters) and Section 2.2 (Reader Algorithm). b. <i>adj.</i> (of a <i>character</i> ) being a <i>character</i> that has <i>syntax type constituent</i> in the <i>current readtable</i> and that has the <i>constituent trait alphabetic</i><sub>2<i>a</i></sub>. See Figure 2–8. 
 
 
 
@@ -446,11 +446,11 @@ symbol **t** (representing *true*), or the symbol **nil** (representing *false*)
 
 
 
-<b>bounded</b> <i>adj.</i> (of a <i>sequence S</i>, by an ordered pair of <i>bounding indices i<sub>start</sub></i> and <i>i<sub>end</sub></i>) restricted to a subrange of the <i>elements</i> of <i>S</i> that includes each <i>element</i> beginning with (and including) the one indexed by <i>i<sub>start</sub></i> and continuing up to (but not including) the one indexed by <i>i<sub>end</sub></i>. 
+**bounded** <i>adj.</i> (of a <i>sequence S</i>, by an ordered pair of <i>bounding indices i<sub>start</sub></i> and <i>i<sub>end</sub></i>) restricted to a subrange of the <i>elements</i> of <i>S</i> that includes each <i>element</i> beginning with (and including) the one indexed by <i>i<sub>start</sub></i> and continuing up to (but not including) the one indexed by <i>i<sub>end</sub></i>. 
 
 
 
-<b>bounding index</b> <i>n.</i> (of a <i>sequence</i> with <i>length n</i>) either of a conceptual pair of <i>integers</i>, <i>i<sub>start</sub></i> and <i>i<sub>end</sub></i>, respectively called the “lower bounding index” and “upper 
+**bounding index** <i>n.</i> (of a <i>sequence</i> with <i>length n</i>) either of a conceptual pair of <i>integers</i>, <i>i<sub>start</sub></i> and <i>i<sub>end</sub></i>, respectively called the “lower bounding index” and “upper 
 
 
 
@@ -902,7 +902,7 @@ is, a *keyword* <sub>1</sub> or a *named constant*. “The symbols **t**, **nil*
 
 
 
-<b>constituent</b> <i>n.</i>, <i>adj.</i> 1. a. <i>n.</i> the <i>syntax type</i> of a <i>character</i> that is part of a <i>token</i>. For details, see Section 2.1.4.1 (Constituent Characters). b. <i>adj.</i> (of a <i>character</i> ) having the <i>constituent</i><sub>1<i>a</i></sub> syntax type<sub>2</sub>. c. <i>n.</i> a <i>constituent</i><sub>1<i>b</i></sub> character . 2. <i>n.</i> (of a <i>composite stream</i>) one of possibly several <i>objects</i> that collectively comprise the source or sink of that <i>stream</i>. 
+**constituent** <i>n.</i>, <i>adj.</i> 1. a. <i>n.</i> the <i>syntax type</i> of a <i>character</i> that is part of a <i>token</i>. For details, see Section 2.1.4.1 (Constituent Characters). b. <i>adj.</i> (of a <i>character</i> ) having the <i>constituent</i><sub>1<i>a</i></sub> syntax type<sub>2</sub>. c. <i>n.</i> a <i>constituent</i><sub>1<i>b</i></sub> character . 2. <i>n.</i> (of a <i>composite stream</i>) one of possibly several <i>objects</i> that collectively comprise the source or sink of that <i>stream</i>. 
 
 
 
@@ -942,7 +942,7 @@ arithmetic on mixed *types* of *numbers*) produce a result whose *type* is contr
 
 
 
-<b>copy</b> <i>n.</i> 1. (of a <i>cons C</i>) a <i>fresh cons</i> with the <i>same car</i> and <i>cdr</i> as <i>C</i>. 2. (of a <i>list L</i>) a <i>fresh list</i> with the <i>same elements</i> as <i>L</i>. (Only the <i>list structure</i> is <i>fresh</i>; the <i>elements</i> are the <i>same</i>.) See the <i>function</i> <b>copy-list</b>. 3. (of an <i>association list A</i> with <i>elements A<sub>i</sub></i>) a <i>fresh list B</i> with <i>elements B<sub>i</sub></i>, each of which is <b>nil</b> if <i>A<sub>i</sub></i>is <b>nil</b>, or else a <i>copy</i> of the <i>cons A<sub>i</sub></i>. See the <i>function</i> <b>copy-alist</b>. 4. (of a <i>tree T</i>) a <i>fresh tree</i> with the <i>same</i> 
+**copy** <i>n.</i> 1. (of a <i>cons C</i>) a <i>fresh cons</i> with the <i>same car</i> and <i>cdr</i> as <i>C</i>. 2. (of a <i>list L</i>) a <i>fresh list</i> with the <i>same elements</i> as <i>L</i>. (Only the <i>list structure</i> is <i>fresh</i>; the <i>elements</i> are the <i>same</i>.) See the <i>function</i> **copy-list**. 3. (of an <i>association list A</i> with <i>elements A<sub>i</sub></i>) a <i>fresh list B</i> with <i>elements B<sub>i</sub></i>, each of which is **nil** if <i>A<sub>i</sub></i>is **nil**, or else a <i>copy</i> of the <i>cons A<sub>i</sub></i>. See the <i>function</i> **copy-alist**. 4. (of a <i>tree T</i>) a <i>fresh tree</i> with the <i>same</i> 
 
 
 
@@ -2296,7 +2296,7 @@ area that permits the sharing of some but not all *objects* are considered to be
 
 
 
-<b>list structure</b> <i>n.</i> (of a <i>list</i>) the set of <i>conses</i> that make up the <i>list</i>. Note that while the <i>car</i> <sub>1<i>b</i></sub> component of each such <i>cons</i> is part of the <i>list structure</i>, the <i>objects</i> that are <i>elements</i> of the <i>list</i> (<i>i.e.</i>, the <i>objects</i> that are the <i>cars</i><sub>2</sub> of each <i>cons</i> in the <i>list</i>) are not themselves part of its <i>list structure</i>, even if they are <i>conses</i>, except in the (<i>circular</i> <sub>2</sub>) case where the <i>list</i> actually contains one of its <i>tails</i> as an <i>element</i>. (The <i>list structure</i> of a <i>list</i> is sometimes redundantly referred to as its “top-level list structure” in order to emphasize that any <i>conses</i> that are <i>elements</i> of the <i>list</i> are not involved.) 
+**list structure** <i>n.</i> (of a <i>list</i>) the set of <i>conses</i> that make up the <i>list</i>. Note that while the <i>car</i> <sub>1<i>b</i></sub> component of each such <i>cons</i> is part of the <i>list structure</i>, the <i>objects</i> that are <i>elements</i> of the <i>list</i> (<i>i.e.</i>, the <i>objects</i> that are the <i>cars</i><sub>2</sub> of each <i>cons</i> in the <i>list</i>) are not themselves part of its <i>list structure</i>, even if they are <i>conses</i>, except in the (<i>circular</i> <sub>2</sub>) case where the <i>list</i> actually contains one of its <i>tails</i> as an <i>element</i>. (The <i>list structure</i> of a <i>list</i> is sometimes redundantly referred to as its “top-level list structure” in order to emphasize that any <i>conses</i> that are <i>elements</i> of the <i>list</i> are not involved.) 
 
 
 
@@ -3612,7 +3612,7 @@ required *arguments*, and which also describes the *argument* conventions for it
 
 
 
-<b>spreadable argument list designator</b> <i>n.</i> a <i>designator</i> for a <i>list</i> of <i>objects</i>; that is, an <i>object</i> that denotes a <i>list</i> and that is a <i>non-null list L</i>1 of length <i>n</i>, whose last element is a <i>list L</i>2 of length <i>m</i> (denoting a list <i>L</i>3 of length <i>m</i> + <i>n −</i> 1 whose <i>elements</i> are <i>L</i>1<i><sub>i</sub></i> for <i>i</i> &lt; <i>n −</i> 1 followed by <i>L</i>2<i><sub>j</sub></i> for <i>j</i> &lt; <i>m</i>). “The list (1 2 (3 4 5)) is a spreadable argument list designator for the list (1 2 3 4 5).” 
+**spreadable argument list designator** <i>n.</i> a <i>designator</i> for a <i>list</i> of <i>objects</i>; that is, an <i>object</i> that denotes a <i>list</i> and that is a <i>non-null list L</i>1 of length <i>n</i>, whose last element is a <i>list L</i>2 of length <i>m</i> (denoting a list <i>L</i>3 of length <i>m</i> + <i>n −</i> 1 whose <i>elements</i> are <i>L</i>1<i><sub>i</sub></i> for <i>i</i> &lt; <i>n −</i> 1 followed by <i>L</i>2<i><sub>j</sub></i> for <i>j</i> &lt; <i>m</i>). “The list (1 2 (3 4 5)) is a spreadable argument list designator for the list (1 2 3 4 5).” 
 
 
 
@@ -4008,7 +4008,7 @@ representing true. (Although any *object* other than **nil** is considered *true
 
 
 
-<b>tree structure</b> <i>n.</i> (of a <i>tree</i><sub>1</sub>) the set of <i>conses</i> that make up the <i>tree</i>. Note that while the <i>car</i> <sub>1<i>b</i></sub> component of each such <i>cons</i> is part of the <i>tree structure</i>, the <i>objects</i> that are the <i>cars</i><sub>2</sub> of each <i>cons</i> in the <i>tree</i> are not themselves part of its <i>tree structure</i> unless they are also <i>conses</i>. 
+**tree structure** <i>n.</i> (of a <i>tree</i><sub>1</sub>) the set of <i>conses</i> that make up the <i>tree</i>. Note that while the <i>car</i> <sub>1<i>b</i></sub> component of each such <i>cons</i> is part of the <i>tree structure</i>, the <i>objects</i> that are the <i>cars</i><sub>2</sub> of each <i>cons</i> in the <i>tree</i> are not themselves part of its <i>tree structure</i> unless they are also <i>conses</i>. 
 
 
 
@@ -4028,7 +4028,7 @@ representing true. (Although any *object* other than **nil** is considered *true
 
 
 
-<b>type</b> <i>n.</i> 1. a set of <i>objects</i>, usually with common structure, behavior, or purpose. (Note that the expression “<i>X</i> is of type <i>S<sub>a</sub></i>” naturally implies that “<i>X</i> is of type <i>S<sub>b</sub></i>” if <i>S<sub>a</sub></i> is a <i>subtype</i> of <i>S<sub>b</sub></i>.) 2. (immediately following the name of a <i>type</i>) a <i>subtype</i> of that <i>type</i>. “The type <b>vector</b> is an array type.” 
+**type** <i>n.</i> 1. a set of <i>objects</i>, usually with common structure, behavior, or purpose. (Note that the expression “<i>X</i> is of type <i>S<sub>a</sub></i>” naturally implies that “<i>X</i> is of type <i>S<sub>b</sub></i>” if <i>S<sub>a</sub></i> is a <i>subtype</i> of <i>S<sub>b</sub></i>.) 2. (immediately following the name of a <i>type</i>) a <i>subtype</i> of that <i>type</i>. “The type **vector** is an array type.” 
 
 
 
@@ -4284,7 +4284,7 @@ several *objects* that result from the *evaluation* of the last *form*, or **nil
 
 
 
-<b>whitespace</b> <i>n.</i> 1. one or more <i>characters</i> that are either the <i>graphic character</i> #\Space or else <i>non-graphic</i> characters such as #\Newline that only move the print position. 2. a. <i>n.</i> the <i>syntax type</i> of a <i>character</i> that is a <i>token</i> separator. For details, see Section 2.1.4.7 (Whitespace Characters). b. <i>adj.</i> (of a <i>character</i> ) having the <i>whitespace</i><sub>2<i>a</i></sub> 
+**whitespace** <i>n.</i> 1. one or more <i>characters</i> that are either the <i>graphic character</i> #\Space or else <i>non-graphic</i> characters such as #\Newline that only move the print position. 2. a. <i>n.</i> the <i>syntax type</i> of a <i>character</i> that is a <i>token</i> separator. For details, see Section 2.1.4.7 (Whitespace Characters). b. <i>adj.</i> (of a <i>character</i> ) having the <i>whitespace</i><sub>2<i>a</i></sub> 
 
 
 

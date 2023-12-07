@@ -50,7 +50,7 @@ The arc sine, arc cosine, and arc tangent (with only *number1* supplied) functio
 
 
 
-|<b><sup>Function Definition</sup></b><i>√</i> |
+|**<sup>Function Definition</sup>**<i>√</i> |
 
 | :- |
 

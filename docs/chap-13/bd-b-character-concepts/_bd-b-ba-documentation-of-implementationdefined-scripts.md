@@ -214,7 +214,7 @@ The *type* **extended-char** might have no *elements*<sub>4</sub> in *implementa
 
 
 
-<b>char=, char/=, char</b><i>&lt;</i><b>, char</b><i>&gt;</i><b>, char</b><i>&lt;</i><b>=, char</b><i>&gt;</i><b>=, <sup>char-equal, char-not-equal, char-lessp, char</sup> greaterp, char-not-greaterp, char-not-lessp</b> <i>Function</i> 
+**char=, char/=, char**<i>&lt;</i>**, char**<i>&gt;</i>**, char**<i>&lt;</i>**=, char**<i>&gt;</i>**=, <sup>char-equal, char-not-equal, char-lessp, char</sup> greaterp, char-not-greaterp, char-not-lessp** <i>Function</i> 
 
 
 

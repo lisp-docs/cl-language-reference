@@ -54,7 +54,7 @@ The result of **expt** can be a *complex* , even when neither argument is a *com
 
 
 
-<b>expt</b> is defined as <i>b<sup>x</sup> = e<sup>xlogb</sup></i>. This defines the <i>principal values</i> precisely. The range of <b>expt</b> is the entire complex plane. Regarded as a function of <i>x</i>, with <i>b</i> fixed, there is no branch cut. Regarded as a function of <i>b</i>, with <i>x</i> fixed, there is in general a branch cut along the negative real axis, continuous with quadrant II. The domain excludes the origin. By definition, 0<sup>0</sup>=1. If <i>b</i>=0 and the real part of <i>x</i> is strictly positive, then <i>b<sup>x</sup></i>=0. For all other values of <i>x</i>, 0<i><sup>x</sup></i>is an error. 
+**expt** is defined as <i>b<sup>x</sup> = e<sup>xlogb</sup></i>. This defines the <i>principal values</i> precisely. The range of **expt** is the entire complex plane. Regarded as a function of <i>x</i>, with <i>b</i> fixed, there is no branch cut. Regarded as a function of <i>b</i>, with <i>x</i> fixed, there is in general a branch cut along the negative real axis, continuous with quadrant II. The domain excludes the origin. By definition, 0<sup>0</sup>=1. If <i>b</i>=0 and the real part of <i>x</i> is strictly positive, then <i>b<sup>x</sup></i>=0. For all other values of <i>x</i>, 0<i><sup>x</sup></i>is an error. 
 
 
 

@@ -38,7 +38,7 @@ The *type* **simple-condition** represents *conditions* that are signaled by **s
 
 
 
-<b><sup>simple-condition-format-control, simple</sup> condition-format-arguments</b> <i>Function</i> 
+**<sup>simple-condition-format-control, simple</sup> condition-format-arguments** <i>Function</i> 
 
 
 

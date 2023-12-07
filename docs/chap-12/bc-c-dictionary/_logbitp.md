@@ -42,7 +42,7 @@
 
 
 
-<b>logbitp</b> is used to test the value of a particular bit in <i>integer</i>, that is treated as if it were binary. The value of <b>logbitp</b> is <i>true</i> if the bit in <i>integer</i> whose index is <i>index</i> (that is, its weight is 2<i><sup>index</sup></i> ) is a one-bit; otherwise it is <i>false</i>. 
+**logbitp** is used to test the value of a particular bit in <i>integer</i>, that is treated as if it were binary. The value of **logbitp** is <i>true</i> if the bit in <i>integer</i> whose index is <i>index</i> (that is, its weight is 2<i><sup>index</sup></i> ) is a one-bit; otherwise it is <i>false</i>. 
 
 
 

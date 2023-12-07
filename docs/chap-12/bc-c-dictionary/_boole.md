@@ -274,7 +274,7 @@ boole-c2 boole-orc2 boole-nand boole-set))
 
 
 
-<b><sup>boole-1, boole-2, boole-and, boole-andc1, boole</sup> andc2, boole-c1, boole-c2, boole-clr, boole-eqv, boole-ior, boole-nand, boole-nor, boole-orc1, boole-orc2, boole-set, boole-xor</b> <i>Constant Variable</i> 
+**<sup>boole-1, boole-2, boole-and, boole-andc1, boole</sup> andc2, boole-c1, boole-c2, boole-clr, boole-eqv, boole-ior, boole-nand, boole-nor, boole-orc1, boole-orc2, boole-set, boole-xor** <i>Constant Variable</i> 
 
 
 

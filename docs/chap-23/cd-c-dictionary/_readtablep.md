@@ -66,7 +66,7 @@ Returns *true* if *object* is of *type* **readtable**; otherwise, returns *false
 
 
 
-<b><sup>set-dispatch-macro-character, get-dispatch-macro</sup> character</b> <i>Function</i> 
+**<sup>set-dispatch-macro-character, get-dispatch-macro</sup> character** <i>Function</i> 
 
 
 

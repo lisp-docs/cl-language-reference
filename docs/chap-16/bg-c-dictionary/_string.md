@@ -98,7 +98,7 @@ In the case where a conversion is defined neither by this specification nor by t
 
 
 
-<b>string-upcase, string-downcase, string-capitalize, <sup>nstring-upcase, nstring-downcase, nstring</sup> capitalize</b> <i>Function</i> 
+**string-upcase, string-downcase, string-capitalize, <sup>nstring-upcase, nstring-downcase, nstring</sup> capitalize** <i>Function</i> 
 
 
 

@@ -38,7 +38,7 @@
 
 
 
-Mathematically speaking, <b>ash</b> performs the computation floor(<i>integer·</i>2<i><sup>count</sup></i>). Logically, <b>ash</b> moves all of the bits in <i>integer</i> to the left, adding zero-bits at the right, or moves them to the right, discarding bits. 
+Mathematically speaking, **ash** performs the computation floor(<i>integer·</i>2<i><sup>count</sup></i>). Logically, **ash** moves all of the bits in <i>integer</i> to the left, adding zero-bits at the right, or moves them to the right, discarding bits. 
 
 
 

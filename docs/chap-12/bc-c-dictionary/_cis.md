@@ -26,7 +26,7 @@
 
 
 
-<b>cis</b> returns the value of <i>e<sup>i· radians</sup></i> , which is a <i>complex</i> in which the real part is equal to the cosine of <i>radians</i>, and the imaginary part is equal to the sine of <i>radians</i>. 
+**cis** returns the value of <i>e<sup>i· radians</sup></i> , which is a <i>complex</i> in which the real part is equal to the cosine of <i>radians</i>, and the imaginary part is equal to the sine of <i>radians</i>. 
 
 
 

@@ -90,7 +90,7 @@ The *implementation*.
 
 
 
-<b>string=, string/=, string</b><i>&lt;</i><b>, string</b><i>&gt;</i><b>, string</b><i>&lt;</i><b>=, <sup>string</sup></b>&gt;<b>=, string-equal, string-not-equal, string lessp, string-greaterp, string-not-greaterp, string not-lessp</b> <i>Function</i> 
+**string=, string/=, string**<i>&lt;</i>**, string**<i>&gt;</i>**, string**<i>&lt;</i>**=, <sup>string</sup>**&gt;**=, string-equal, string-not-equal, string lessp, string-greaterp, string-not-greaterp, string not-lessp** <i>Function</i> 
 
 
 

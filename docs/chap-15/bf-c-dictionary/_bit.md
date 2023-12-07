@@ -100,7 +100,7 @@ These *functions* ignore the *fill pointer* when *accessing elements*.
 
 
 
-<b><sup>bit-and, bit-andc1, bit-andc2, bit-eqv, bit-ior, bit</sup> nand, bit-nor, bit-not, bit-orc1, bit-orc2, bit-xor</b> <i>Function</i> 
+**<sup>bit-and, bit-andc1, bit-andc2, bit-eqv, bit-ior, bit</sup> nand, bit-nor, bit-not, bit-orc1, bit-orc2, bit-xor** <i>Function</i> 
 
 
 

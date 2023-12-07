@@ -26,7 +26,7 @@ Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), **invoke
 
 
 
-<b><sup>abort, continue, muffle-warning, store-value, use</sup> value</b> <i>Function</i> 
+**<sup>abort, continue, muffle-warning, store-value, use</sup> value** <i>Function</i> 
 
 
 

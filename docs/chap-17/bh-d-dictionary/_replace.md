@@ -94,7 +94,7 @@ The *sequence-1* is modified.
 
 
 
-<b><sup>substitute, substitute-if, substitute-if-not, nsubsti</sup> tute, nsubstitute-if, nsubstitute-if-not</b> <i>Function</i> 
+**<sup>substitute, substitute-if, substitute-if-not, nsubsti</sup> tute, nsubstitute-if, nsubstitute-if-not** <i>Function</i> 
 
 
 
