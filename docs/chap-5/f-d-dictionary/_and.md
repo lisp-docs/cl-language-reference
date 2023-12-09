@@ -34,7 +34,10 @@ If no *forms* are supplied, (and) returns **t**.
 
 
 
-**and** passes back multiple values from the last *subform* but not from subforms other than the last. **Examples:**
+**and** passes back multiple values from the last *subform* but not from subforms other than the last.
+
+
+**Examples:**
 ```lisp
 
 (if (and (>= n 0) 
