@@ -47,7 +47,9 @@ The above expression prints Foo! if element n of a-simple-vector is the symbol f
 
 ```lisp
 
-(setq temp1 1 temp2 1 temp3 1) → 1 
+(defparameter temp1 1) → temp1
+(defparameter temp2 1) → temp2
+(defparameter temp3 1) → temp3
 (and (incf temp1) (incf temp2) (incf temp3)) → 2 
 (and (eql 2 temp1) (eql 2 temp2) (eql 2 temp3)) → true 
 (decf temp3) → 1 
