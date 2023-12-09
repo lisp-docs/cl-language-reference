@@ -37,6 +37,9 @@ If no *forms* are supplied, (and) returns **t**.
 **and** passes back multiple values from the last *subform* but not from subforms other than the last.
 
 
+**and** is defined as a macro because it stops evaluating as soon as any *form* evaluates to **nil**.  If it were defined as a function, every *form* would be evaluated before the function was applied.  As a result of **and** not being a function, it can not be used with **apply**.  In order to check that every value of a list is *true*, the function **every** could be used.
+
+
 **Examples:**
 ```lisp
 
@@ -81,3 +84,8 @@ The above expression prints Foo! if element n of a-simple-vector is the symbol f
 
 
 
+:::info
+
+We added a paragraph explaining why **and** must be defined as a macro, and the consequences of it being defined as a macro.
+
+:::
