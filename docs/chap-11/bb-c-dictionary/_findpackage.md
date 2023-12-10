@@ -1,4 +1,4 @@
-**find-symbol** is operationally equivalent to **intern**, except that it never creates a new *symbol*. **find-package** *Function* 
+**find-package** *Function* 
 
 
 
