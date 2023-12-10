@@ -1,4 +1,4 @@
-**type-error** if *sequence* is not a *proper sequence*. **sort, stable-sort** *Function* 
+**sort, stable-sort** *Function* 
 
 
 

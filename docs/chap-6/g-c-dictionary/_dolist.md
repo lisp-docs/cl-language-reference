@@ -99,5 +99,4 @@ temp-two → 4
 
 **Notes:** 
 
-
-
+**go** may be used within the body of **dolist** to transfer control to a statement labeled by a *tag*.

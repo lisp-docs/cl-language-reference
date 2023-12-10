@@ -62,7 +62,6 @@ sidebar_position: 114
 **restart function** *n.* a *function* that invokes a *restart*, as if by **invoke-restart**. The primary purpose of a *restart function* is to provide an alternate interface. By convention, a *restart function* usually has the same name as the *restart* which it invokes. Figure 26–4 shows a list of the *standardized restart functions*. 
 
 |<p>**abort muffle-warning use-value** </p><p>**continue store-value**</p>|
-
 | :- |
 
 **Figure 26–4. Standardized Restart Functions** 

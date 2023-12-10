@@ -82,5 +82,4 @@ An error of *type* **file-error** is signaled if *pathname* is *wild*.
 
 **Notes:** 
 
-
-
+**truename** may be used to account for any *filename* translations performed by the *file system*.

@@ -13,9 +13,7 @@ sidebar_position: 116
 
 **target** *n.* 1. (of a *constructed stream*) a *constituent* of the *constructed stream*. "The target of a synonym stream is the value of its synonym stream symbol." 2. (of a *displaced array*) the *array* to which the *displaced array* is displaced. (In the case of a chain of *constructed streams* or *displaced arrays*, the unqualified term "*target*" always refers to the immediate *target* of the first item in the chain, not the immediate target of the last item.) 
 
-**terminal I/O** *n.* the *bidirectional stream* that is the *value* of the *variable* 
-
-**\*terminal-io\***. 
+**terminal I/O** *n.* the *bidirectional stream* that is the *value* of the *variable* **\*terminal-io\***. 
 
 **terminating** *n.* (of a *macro character* ) being such that, if it appears while parsing a token, it terminates that token. See Section 2.2 (Reader Algorithm). 
 
@@ -31,9 +29,7 @@ sidebar_position: 116
 
 **top level form** *n.* a *form* which is processed specially by **compile-file** for the purposes of enabling *compile time evaluation* of that *form*. *Top level forms* include those *forms* which are not *subforms* of any other *form*, and certain other cases. See Section 3.2.3.1 (Processing of Top Level Forms). 
 
-**trace output** *n.* the *output stream* which is the *value* of the *dynamic variable* 
-
-**\*trace-output\***. 
+**trace output** *n.* the *output stream* which is the *value* of the *dynamic variable* **\*trace-output\***. 
 
 **tree** *n.* 1. a binary recursive data structure made up of *conses* and *atoms*: the *conses* are themselves also *trees* (sometimes called "subtrees" or "branches"), and the *atoms* are terminal nodes (sometimes called *leaves*). Typically, the *leaves* represent data while the branches establish some relationship among that data. 2. in general, any recursive data structure that has some notion of "branches" and *leaves*. 
 

@@ -14,4 +14,4 @@
 
 
 
-All *classes* defined by means of 
+All *classes* defined by means of **defstruct** are *instances* of the *class* **structure-class**. 

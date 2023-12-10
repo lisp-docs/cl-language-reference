@@ -1,4 +1,4 @@
-**stream-element-type**. **stream-external-format** *Function* 
+**stream-external-format** *Function* 
 
 
 

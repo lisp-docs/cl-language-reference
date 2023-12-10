@@ -134,3 +134,4 @@ If the *symbol* is inherited by *package* through **use-package**, but is not *p
 
 
 
+**find-symbol** is operationally equivalent to **intern**, except that it never creates a new *symbol*. 

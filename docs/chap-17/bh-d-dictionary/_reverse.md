@@ -92,4 +92,4 @@ l → implementation-dependent
 
 
 
-Should be prepared to signal an error of *type* 
+Should be prepared to signal an error of *type* **type-error** if *sequence* is not a *proper sequence*. 

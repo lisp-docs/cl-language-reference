@@ -1,4 +1,4 @@
-**division-by-zero** consists of error conditions that occur because of division by zero. **floating-point-invalid-operation** *Condition Type* 
+**floating-point-invalid-operation** *Condition Type* 
 
 
 

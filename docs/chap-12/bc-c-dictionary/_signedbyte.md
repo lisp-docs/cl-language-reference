@@ -1,4 +1,4 @@
-**bit**. The *type* (integer 0 \*) is also called **unsigned-byte**. **signed-byte** *Type* 
+**signed-byte** *Type* 
 
 
 

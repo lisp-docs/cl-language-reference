@@ -29,9 +29,7 @@ sidebar_position: 101
 
 **error** *n.* 1. (only in the phrase "is an error") a *situation* in which the semantics of a program are not specified, and in which the consequences are undefined. 2. a *condition* which represents an *error situation*. See Section 1.4.2 (Error Terminology). 3. an *object* of *type* **error**. 
 
-**error output** *n.* the *output stream* which is the *value* of the *dynamic variable* 
-
-**\*error-output\***. 
+**error output** *n.* the *output stream* which is the *value* of the *dynamic variable* **\*error-output\***. 
 
 **escape** *n.*, *adj.* 1. *n.* a *single escape* or a *multiple escape*. 2. *adj. single escape* or *multiple escape*. 
 
@@ -57,13 +55,15 @@ sidebar_position: 101
 
 **exponent marker** *n.* a character that is used in the textual notation for a *float* to separate the mantissa from the exponent. The characters defined as *exponent markers* in the *standard readtable* are shown in Figure 26–1. For more information, see Section 2.1 (Character Syntax). "The exponent marker ‘d’ in ‘3.0d7’ indicates that this number is to be represented as a double float." 
 
-|**Marker Meaning**|
+|**Marker** | **Meaning**|
+|-----------|------------|
+| D or d | **double-float** |
+| E or e | **float** (see **\*read-default-float-format\***) |
+| F or f | **single-float** |
+| L or l | **long-float** |
+| S or s | **short-float** |
 
-| :- |
-
-|<p>D or d **double-float** </p><p>E or e **float** (see **\*read-default-float-format\***) </p><p>F or f **single-float** </p><p>L or l **long-float** </p><p>S or s **short-float**</p>|
-
-**Figure 26–1. Exponent Markers** 
+**Figure 26–1. Exponent Markers**
 
 **export** *v.t.* (a *symbol* in a *package*) to add the *symbol* to the list of *external symbols* of the *package*. 
 

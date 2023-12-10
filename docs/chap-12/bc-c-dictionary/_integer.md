@@ -66,4 +66,4 @@ The *type* (integer *lower upper*), where *lower* and *upper* are **most-negativ
 
 
 
-The *type* (integer 0 1) is also called 
+The *type* (integer 0 1) is also called **bit**. The *type* (integer 0 \*) is also called **unsigned-byte**.

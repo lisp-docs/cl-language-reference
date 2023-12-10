@@ -1,4 +1,4 @@
-**end-of-file** is signaled. **read-char** *Function* 
+**read-char** *Function* 
 
 
 
