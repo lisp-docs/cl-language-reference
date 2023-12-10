@@ -86,6 +86,7 @@ The above expression prints Foo! if element n of a-simple-vector is the symbol f
 
 :::info
 
-We added a paragraph explaining why **and** must be defined as a macro, and the consequences of it being defined as a macro.
+We fixed the examples so that it uses **defparameter** to initialize
+the variables.  and we added a paragraph explaining why **and** must be defined as a macro, and the consequences of it being defined as a macro.
 
 :::
