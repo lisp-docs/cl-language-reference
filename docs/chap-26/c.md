@@ -157,9 +157,7 @@ sidebar_position: 99
 
 **current logical block** *n.* the context of the innermost lexically enclosing use of **pprint-logical-block**. 
 
-**current output base** *n.* (in a *dynamic environment*) the *radix* that is the *value* of 
-
-**\*print-base\*** in that *environment*, and that is the default *radix* employed by the *Lisp printer* and its related *functions*. 
+**current output base** *n.* (in a *dynamic environment*) the *radix* that is the *value* of **\*print-base\*** in that *environment*, and that is the default *radix* employed by the *Lisp printer* and its related *functions*. 
 
 **current package** *n.* (in a *dynamic environment*) the *package* that is the *value* of **\*package\*** in that *environment*, and that is the default *package* employed by the *Lisp reader* and *Lisp printer* , and their related *functions*. 
 

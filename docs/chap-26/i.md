@@ -8,7 +8,6 @@ sidebar_position: 105
 **I/O customization variable** *n.* one of the *stream variables* in Figure 26–2, or some other (*implementation-defined*) *stream variable* that is defined by the *implementation* to be an *I/O customization variable*. 
 
 |<p>\*debug-io\* \*error-io\* query-io\* </p><p>\*standard-input\* \*standard-output\* \*trace-output\*</p>|
-
 | :- |
 
 **Figure 26–2. Standardized I/O Customization Variables** 
@@ -85,8 +84,7 @@ sidebar_position: 105
 
 **iteration form** *n.* a *compound form* whose *operator* is named in Figure 26–3, or a *compound form* that has an *implementation-defined operator* and that is defined by the *implementation* to be an *iteration form*. 
 
-|<p>**do do-external-symbols dotimes do\* do-symbols loop** </p><p>**do-all-symbols dolist**</p>|
-
+|<p>**do do-external-symbols dotimes** </p> <p> **do\* do-symbols loop** </p><p>**do-all-symbols dolist**</p>|
 | :- |
 
 **Figure 26–3. Standardized Iteration Forms** 

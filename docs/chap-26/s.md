@@ -131,9 +131,7 @@ sidebar_position: 115
 
 **standard generic function** a *function* of *type* **standard-generic-function**. 
 
-**standard input** *n.* the *input stream* which is the *value* of the *dynamic variable* 
-
-**\*standard-input\***. 
+**standard input** *n.* the *input stream* which is the *value* of the *dynamic variable* **\*standard-input\***. 
 
 **standard method combination** *n.* the *method combination* named **standard**. 
 
