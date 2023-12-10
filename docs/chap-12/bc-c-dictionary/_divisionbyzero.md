@@ -14,4 +14,4 @@
 
 
 
-The *type* 
+The *type* **division-by-zero** consists of error conditions that occur because of division by zero. 
