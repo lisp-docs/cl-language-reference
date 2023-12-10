@@ -1,4 +1,4 @@
-**proclaim** *forms* are ordinary *function forms*, *macro forms* can expand into them. **declaim** *Macro* 
+**declaim** *Macro* 
 
 
 
@@ -7,19 +7,6 @@
 
 
 **declaim** *\{declaration-specifier\}*\* →  implementation-dependent 
-
-
-
-Evaluation and 
-
-
-
- 
-
-
-
- 
-
 
 
 **Arguments and Values:** 

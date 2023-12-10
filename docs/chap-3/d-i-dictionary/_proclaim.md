@@ -110,4 +110,4 @@ In most such cases, however, it is preferrable to use **declaim** for this purpo
 
 
 
-Since 
+Since **proclaim** *forms* are ordinary *function forms*, *macro forms* can expand into them.
