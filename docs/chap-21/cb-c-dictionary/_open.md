@@ -334,7 +334,9 @@ A file can be deleted, renamed, or destructively modified by **open**.
 
 
 
-For information about opening relative pathnames, see Section 19.2.3 (Merging Pathnames). **Examples:**
+For information about opening relative pathnames, see Section 19.2.3 (Merging Pathnames). 
+
+**Examples:**
 ```lisp
 
 (open *filespec* :direction :probe) → #\<Closed Probe File Stream...\> 
@@ -428,4 +430,4 @@ When *element-type* is a *subtype* of *integer* , **read-byte** and/or **write-b
 
 
 
-When *element-type* is :default, the *type* can be determined by using 
+When *element-type* is :default, the *type* can be determined by using **stream-element-type**.
