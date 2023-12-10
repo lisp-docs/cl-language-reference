@@ -1,4 +1,4 @@
-**defstruct** are *instances* of the *class* **structure-class**. **standard-class** *System Class* 
+**standard-class** *System Class* 
 
 
 
