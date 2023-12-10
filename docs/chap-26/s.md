@@ -163,9 +163,7 @@ sidebar_position: 115
 
 **stream variable** *n.* a *variable* whose *value* must be a *stream*. 
 
-**stream variable designator** *n.* a *designator* for a *stream variable*; that is, a *symbol* that denotes a *stream variable* and that is one of: **t** (denoting **\*terminal-io\***), 
-
-**nil** (denoting **\*standard-input\*** for *input stream variable designators* or denoting **\*standard-output\*** for *output stream variable designators*), or some other *symbol* (denoting itself). 
+**stream variable designator** *n.* a *designator* for a *stream variable*; that is, a *symbol* that denotes a *stream variable* and that is one of: **t** (denoting **\*terminal-io\***), **nil** (denoting **\*standard-input\*** for *input stream variable designators* or denoting **\*standard-output\*** for *output stream variable designators*), or some other *symbol* (denoting itself). 
 
 **string** *n.* a specialized *vector* that is of *type* **string**, and whose elements are of *type* **character** or a *subtype* of *type* **character**. 
 
