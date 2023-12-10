@@ -71,22 +71,3 @@ The **example** above was modified replacing `SETQ` with `DEFPARAMETER` or `SETF
 
 
 Many places in Common Lisp involve syntax that uses *implicit progns*. That is, part of their syntax allows many *forms* to be written that are to be evaluated sequentially, discarding the results of all *forms* but the last and returning the results of the last *form*. Such places include, but are not limited to, the following: the body of a *lambda expression*; the bodies of various control and conditional *forms* (*e.g.*, **case**, **catch**, **progn**, and **when**). 
-
-
-
-Data and Control 
-
-
-
- 
-
-
-
- 
-
-
-
-**define-modify-macro** 
-
-
-
