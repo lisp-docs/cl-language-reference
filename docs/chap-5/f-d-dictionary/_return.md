@@ -58,22 +58,3 @@ Returns, as if by **return-from**, from the *block* named **nil**.
 
 
 The *implicit blocks established* by *macros* such as **do** are often named **nil**, so that **return** can be used to exit from such *forms*. 
-
-
-
-Data and Control 
-
-
-
-
-
-
-
-
-
-
-
-**tagbody** 
-
-
-
