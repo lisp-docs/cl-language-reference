@@ -1,3 +1,5 @@
+import { ReferenceAid } from "@lisp-docs/utils";
+
 **loop** *Macro* 
 
 
@@ -332,7 +334,7 @@ For details, see Section 6.1 (The LOOP Facility).
 
 
 
-**do**, **dolist**, **dotimes**, **return**, **go**, **throw**, Section 6.1.1.7 (Destructuring) 
+**do**, **<ReferenceAid>dolist</ReferenceAid>**, **dotimes**, **return**, **go**, **throw**, Section 6.1.1.7 (Destructuring) 
 
 
 
