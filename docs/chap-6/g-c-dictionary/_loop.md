@@ -1,5 +1,3 @@
-import { ReferenceAid } from "@lisp-docs/utils";
-
 **loop** *Macro* 
 
 
@@ -333,17 +331,9 @@ For details, see Section 6.1 (The LOOP Facility).
 **See Also:** 
 
 
+import ClLinks from '@site/src/components/cl-links.js';
 
-**do**, **<ReferenceAid>dolist</ReferenceAid>**, **dotimes**, **return**, **go**, **throw**, Section 6.1.1.7 (Destructuring) 
-
-
-
-
-
-
-
- 
-
+**<ClLinks>do</ClLinks>**, **<ClLinks>dolist</ClLinks>**, **<ClLinks>dotimes</ClLinks>**, **<ClLinks>return</ClLinks>**, **<ClLinks>go</ClLinks>**, **<ClLinks>throw</ClLinks>**, Section 6.1.1.7 (Destructuring) 
 
 
  
