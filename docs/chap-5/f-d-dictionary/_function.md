@@ -41,6 +41,8 @@ If *name* is a *lambda expression*, then a *lexical closure* is returned. In sit
 It is an error to use **function** on a *function name* that does not denote a *function* in the lexical environment in which the **function** form appears. Specifically, it is an error to use **function** on a *symbol* that denotes a *macro* or *special form*. An implementation may choose not to signal this error for performance reasons, but implementations are forbidden from defining the failure to signal an error as a useful behavior. 
 
 
+The previous paragraph implies that if **function** is used on a *function name* that does not denote a *function* in the lexical environment in which the **function** form appears, then the semantics are not specified, so the consequences of this use are undefined.
+
 
 **Examples:**
 ```lisp
@@ -80,6 +82,13 @@ The notation #’*name* may be used as an abbreviation for (function *name*).
 
 We fixed the examples so that it uses **defparameter** to initialize
 the variables.
+
+:::
+
+
+:::info
+
+We added a paragraph that explains the meaning of  the phrase "it is an error", as taken from the glossary entry for "error".
 
 :::
 
