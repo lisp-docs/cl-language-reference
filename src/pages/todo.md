@@ -35,7 +35,7 @@ Here we will list all the To Do items we have for this project, and you can help
     - what else? see other languages... lisp script, python, java?
 
 
-In all code blocks, replace &gt; and &lt; with ><,
+- In all code blocks, replace \&gt; and \&lt; with \>\<,
 remove extra white lines script run...
 run indent code blocks again
 any place that is not inside a code block, or in a title, which is italics and or bold, add the react lisp-docs util...
@@ -46,12 +46,12 @@ go through all dictionary items, check that they are all there
     - has a figure
   - no figure, then in that section, find first line which is either \n\s*\( or \n\s;, and start code block from there till the end of the section
 
-Links to Sections like in See Also "Section 6.1.1.7 (Destructuring) "
+- Links to Sections like in See Also "Section 6.1.1.7 (Destructuring) "
 
 
 
 
-- Missing Pages:
+- Missing Pages and where they are:
   - Check Dictionaries
     - Chapter 5:
       - defun

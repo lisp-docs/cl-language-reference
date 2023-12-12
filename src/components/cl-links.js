@@ -1,7 +1,7 @@
 import Link from "@docusaurus/Link";
-import { ReferenceAid, getLink, DefinitionTooltips } from "@lisp-docs/utils";
+import { ReferenceAid, getLink, DefinitionTooltips, isDefinition, isDictionaryItem } from "@lisp-docs/utils";
 
-export default function ClLinks({ children }) {
+export default function ClLinks({ children, styled }) {
   function getLispDocsLink() {
     if (typeof children === "string" && children.endsWith("s")) {
       const trimmedTerm = children.trim();
@@ -44,5 +44,19 @@ export default function ClLinks({ children }) {
     }
   }
 
-  return getClLink();
+    function getDisplay() {
+        const term = getTerm()
+        if (styled) {
+            if (isDefinition(term) && isDictionaryItem(term)) {
+                return <i><b>{getClLink()}</b></i>;
+            } else if (isDefinition(term)) {
+                return <i>{getClLink()}</i>;
+            } else if (isDictionaryItem(term)) {
+                return <b>{getClLink()}</b>;
+            }
+        }
+        return getClLink();
+    }
+
+  return getDisplay();
 }
