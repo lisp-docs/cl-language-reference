@@ -38,11 +38,7 @@ If *name* is a *lambda expression*, then a *lexical closure* is returned. In sit
 
 
 
-It is an error to use **function** on a *function name* that does not denote a *function* in the lexical environment in which the **function** form appears. Specifically, it is an error to use **function** on a *symbol* that denotes a *macro* or *special form*. An implementation may choose not to signal this 
-
-
-
-error for performance reasons, but implementations are forbidden from defining the failure to signal an error as a useful behavior. 
+It is an error to use **function** on a *function name* that does not denote a *function* in the lexical environment in which the **function** form appears. Specifically, it is an error to use **function** on a *symbol* that denotes a *macro* or *special form*. An implementation may choose not to signal this error for performance reasons, but implementations are forbidden from defining the failure to signal an error as a useful behavior. 
 
 
 
