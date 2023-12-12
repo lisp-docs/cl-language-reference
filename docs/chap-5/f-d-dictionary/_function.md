@@ -63,19 +63,6 @@ This works because **function** creates a *closure* of the *lambda expression* t
 **defun**, **fdefinition**, **flet**, **labels**, **symbol-function**, Section 3.1.2.1.1 (Symbols as Forms), Section 2.4.8.2 (Sharpsign Single-Quote), Section 22.1.3.13 (Printing Other Objects) 
 
 
-
-Data and Control 
-
-
-
-
-
-
-
-
-
-
-
 **Notes:** 
 
 
