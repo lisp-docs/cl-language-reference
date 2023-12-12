@@ -13,7 +13,79 @@ Here we will list all the To Do items we have for this project, and you can help
 - Update ~~all~~ the code blocks to be formated with markdown. We have made some available [here](/docs/code-blocks), but please note that there may be characters or TeX terms that need to be changed to regular text. Markdown supports math formulas and special text, checkout the [Markdown Syntax](https://commonmark.org/help/) tutorial for how to do it. Note that we use [MDX](https://docusaurus.io/docs/markdown-features) instead of vanilla markdown.
   - **2023/12/06 Update:** All the dictionary pages example sections were surrounded with code blocks for syntax highlighting, so therefore most of what's left are the code blocks in the write up sections of the reference.
 
-# Done
+## More TODOs
+
+- Make the Tooltip Definition and links to dicionary pages
+- [Multiple Sidebars](https://docusaurus.io/docs/sidebar/multiple-sidebars) for: 
+  - Contribute
+  - Why Lisp Section: For beginners, professionals, CTOs or Project Managers
+- Make beginner and experienced programmer tutorials
+- Make the Common Lisp Standard Libary: 
+  - Goal, write the least amount of code possible. 
+  - Mostly an interface which is well documented, and behind the covers calling an implementation. 
+  - The actual implementation can change, but the interface stays the same. 
+  - Choosing an implementation should be by 1. Security 2. Correctness 3. Performance in that order.
+  - The interface should contain whatever is necessary and in addition it may contain some extra functions to make them discoverable and ease of use to the begineer, even if in the CL specification it can be done simply, and the interface just calls the CL specified functions, goal is just to make it easer for begineers. 
+  - Ideally should be available for making quick scripts as well without the need for a system definition. (maybe quicklisp already does that).
+  - Libraries:
+    - Strings
+    - regex
+    - threads
+    - requests
+    - what else? see other languages... lisp script, python, java?
+
+
+In all code blocks, replace &gt; and &lt; with ><,
+remove extra white lines script run...
+run indent code blocks again
+any place that is not inside a code block, or in a title, which is italics and or bold, add the react lisp-docs util...
+get react router, test if it works, check base name, then do local route... Links...
+go through all dictionary items, check that they are all there
+- make code blocks from sections named example which have figures...
+  - title of section is examples
+    - has a figure
+  - no figure, then in that section, find first line which is either \n\s*\( or \n\s;, and start code block from there till the end of the section
+
+Links to Sections like in See Also "Section 6.1.1.7 (Destructuring) "
+
+
+
+
+- Missing Pages:
+  - Check Dictionaries
+    - Chapter 5:
+      - defun
+      - catch
+      - funcall
+      - let, let* (in defstructuring-bind)
+      - nil (not in `not` nor in `unwind-protect`)
+      - prog, prog* (in `nth-value`)
+    - Chapter 7:
+      - `(setf class-name)` missing
+    - Chapter 8:
+      - both `defstruct` and `copy-structure` are in the intro...
+    - Chapter 9:
+      - `simple-condition-format-control, simple- condition-format-arguments` are in `simple-condition`
+      - `*debugger-hook∗` and `∗break-on-signals∗` are on `break`
+      - `abort, continue, muffle-warning, store-value, use value` in `use-value`
+    - Chapter 10:
+      - `*gensym-counter*` in `gensym`
+    - Chapter 11:
+      - `∗package∗` in `packagep`
+    - Chapters 12 and on need to check
+    - Chapter 22:
+      - Allmost everything is between 22.3 and intro... need to parse again...
+    - Chapter 23:
+      - `set-dispatch-macro-character, get-dispatch-macro character` in `readtablep`
+      - `∗readtable∗`, `*read-suppress*`, `∗read-default-float-format∗`, `*read-base*`, `*read-eval*` are in `with-standard-io-syntax`
+    - Chapter 24:
+      - `∗features∗`, `∗compile-file-pathname∗**,** ∗compile-file-truename∗`, `∗load-pathname∗**,** ∗load-truename∗`, `∗compile-print∗**,** ∗compile-verbose∗`, `∗load-print∗**,** ∗load-verbose∗`, `∗modules∗`, are in `with-compilation-unit`
+    - Chapter 25:
+      - `encode-universal-time` is in `decode-universal-time`
+      - `-`, `+`, `*` are missing
+      - `lisp-implementation-type, lisp-implementation version` are in `/`
+
+## Done
 
 - ~~All the *Dictionary* Sections have to be separated in the docs. For example, all of section 9.2 in the original is included in our [9.1](/docs/chap-9/j-b-condition-system-concepts). We need to split that file into two. Similarly for chapters~~
   - ~~3.8~~
