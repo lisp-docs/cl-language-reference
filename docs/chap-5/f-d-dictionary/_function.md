@@ -80,3 +80,10 @@ The notation #’*name* may be used as an abbreviation for (function *name*).
 
 
 
+:::info
+
+We fixed the examples so that it uses **defparameter** to initialize
+the variables.
+
+:::
+
