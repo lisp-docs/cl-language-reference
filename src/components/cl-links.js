@@ -1,8 +1,15 @@
 import Link from "@docusaurus/Link";
-import { ReferenceAid, getLink, DefinitionTooltips, isDefinition, isDictionaryItem } from "@lisp-docs/utils";
+// import { ReferenceAid, getLink, DefinitionTooltips, isDefinition, isDictionaryItem } from "@lisp-docs/utils";
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-export default function ClLinks({ children, styled }) {
-  function getLispDocsLink() {
+export function AsyncClLinks({ children, styled }) { 
+
+    const LispDocsUtils = require('@lisp-docs/utils');
+    const getLink = LispDocsUtils.getLink;
+    const DefinitionTooltips = LispDocsUtils.DefinitionTooltips;
+    const isDefinition = LispDocsUtils.isDefinition;
+    const isDictionaryItem = LispDocsUtils.isDictionaryItem;
+    function getLispDocsLink() {
     if (typeof children === "string" && children.endsWith("s")) {
       const trimmedTerm = children.trim();
       const singularTerm = trimmedTerm.substring(0, trimmedTerm.length - 1);
@@ -11,9 +18,9 @@ export default function ClLinks({ children, styled }) {
         const trimmedTerm = children.trim();
         return getLink(trimmedTerm);
     } else return null;
-  }
-
-  function getTerm() {
+    }
+    
+    function getTerm() {
       if (typeof children === "string" && children.endsWith("s")) {
           const trimmedTerm = children.trim();
           const singularTerm = trimmedTerm.substring(0, trimmedTerm.length - 1);
@@ -26,13 +33,13 @@ export default function ClLinks({ children, styled }) {
           const trimmedTerm = children.trim();
           return trimmedTerm;
       } else return null;
-  }
-
-  function getClLink() {
+    }
+    
+    function getClLink() {
     const term = getTerm();
       const link = getLispDocsLink();
-      console.debug(term)
-      console.debug(link)
+      console.debug(term);
+      console.debug(link);
     if (link === null) {
       return <span>{children}</span>;
     } else {
@@ -42,10 +49,11 @@ export default function ClLinks({ children, styled }) {
         </Link>
       );
     }
-  }
-
+    }
+    
     function getDisplay() {
-        const term = getTerm()
+        const term = getTerm();
+        // const LibComponent = require('some-lib').LibComponent;
         if (styled) {
             if (isDefinition(term) && isDictionaryItem(term)) {
                 return <i><b>{getClLink()}</b></i>;
@@ -56,7 +64,15 @@ export default function ClLinks({ children, styled }) {
             }
         }
         return getClLink();
+    
     }
+    return getDisplay();
+}
 
-  return getDisplay();
+export default function ClLinks({ children, styled }) {
+
+
+    return <BrowserOnly fallback={<div>Loading...</div>}>
+        {() => <AsyncClLinks styled={styled}>{children}</AsyncClLinks>}
+    </BrowserOnly>;
 }

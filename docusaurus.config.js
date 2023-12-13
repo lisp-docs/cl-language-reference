@@ -185,11 +185,11 @@ const config = {
     }),
 };
 
-// export default config;
+export default config;
 
-export default async function createConfigAsync() { 
+// export default async function createConfigAsync() { 
 
-  const lispDocsUtils = await import("@lisp-docs/utils");
+//   const lispDocsUtils = await import("@lisp-docs/utils");
 
-  return config;
-}
+//   return config;
+// }
