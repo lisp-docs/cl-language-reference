@@ -4,10 +4,23 @@
         <title>Common Lisp (New) Language Reference Blog</title>
         <link>https://lisp-docs.github.io/cl-language-reference/blog</link>
         <description>Common Lisp (New) Language Reference Blog</description>
-        <lastBuildDate>Thu, 07 Dec 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 12 Dec 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Latest Updates: Definitions Tooltip and others]]></title>
+            <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/12/</link>
+            <guid>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/12/</guid>
+            <pubDate>Tue, 12 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Definitions Tooltip]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="definitions-tooltip">Definitions Tooltip<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/12/#definitions-tooltip" class="hash-link" aria-label="Direct link to Definitions Tooltip" title="Direct link to Definitions Tooltip">​</a></h2>
+<p>I made a react component tooltip for definitions to show you the definition of a term in place instead of a having to navigate to the glossary page. In addition, the same tooltip will link to the proper dictionary item if it exists, and if not, to the glossary page of the term. We still need to add the component all around, but this should make the functionality of the page much better. Here's an example: <a href="https://lisp-docs.github.io/cl-language-reference/docs/chap-6/g-b-the-loop-facility">See the "forms" word in section 6.1.1.1 of Loops</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="dictionary-pages">Dictionary Pages<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/12/#dictionary-pages" class="hash-link" aria-label="Direct link to Dictionary Pages" title="Direct link to Dictionary Pages">​</a></h2>
+<p>There are a bunch of dictionary pages that did not get split correctly, so instead of showing up as a different page, they are part of another page. I've been checking them manually (a lot of work) and have made <a href="https://lisp-docs.github.io/cl-language-reference/todo#missing-pages">a list</a> of about half the chapters. The rest need to be checked. I hope to make a script to help splitting a lot of these pages. Please help identifying the pages in the missing chapters as they are marked.</p>]]></content:encoded>
+            <category>status</category>
+            <category>beginning</category>
+        </item>
         <item>
             <title><![CDATA[Code Blocks Indented]]></title>
             <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/07/code-indented</link>
