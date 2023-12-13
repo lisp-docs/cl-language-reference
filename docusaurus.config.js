@@ -113,8 +113,9 @@ const config = {
             position: "left",
             label: "The CL Reference",
           },
-          { to: "/contribute", label: "Contribute!", position: "left" },
-          { to: "/todo", label: "TODO", position: "left" },
+          { to: "https://lisp-docs.github.io/docs/intro", label: "The Tutorial", position: "left" },
+          { to: "/docs/contribute", label: "Contribute!", position: "left" },
+          // { to: "/todo", label: "TODO", position: "left" },
           { to: "/blog", label: "Blog", position: "right" },
           {
             href: "https://github.com/lisp-docs/cl-language-reference/",
