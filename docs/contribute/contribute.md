@@ -19,7 +19,7 @@ For adding examples and explanations, please create a separate file marked secti
 
 Please also see the [Status Blog Post](/blog/2023-11-26-status) for more information on what to contribute and project TODO's.
 
-Please checkout our [TODO page](/todo) for more.
+Please checkout our [TODO page](/docs/contribute/todo) for more.
 
 ## Sample Contributions
 
