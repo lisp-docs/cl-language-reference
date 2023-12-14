@@ -72,7 +72,7 @@ export function AsyncClLinks({ children, styled }) {
 export default function ClLinks({ children, styled }) {
 
 
-    return <BrowserOnly fallback={<div>Loading...</div>}>
+    return <BrowserOnly fallback={<span>{children}</span>}>
         {() => <AsyncClLinks styled={styled}>{children}</AsyncClLinks>}
     </BrowserOnly>;
 }
