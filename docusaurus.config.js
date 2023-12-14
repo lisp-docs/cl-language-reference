@@ -65,6 +65,9 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [
+        {name:"google-site-verification", content:"Vzaw013_bfdKeUVG89Ch3W1zC9_vH9ID2dPB9Dz0vr0"},
+      ],
       algolia: {
         // The application ID provided by Algolia
         appId: "C1F2Q5VM6X",
