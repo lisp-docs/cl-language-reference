@@ -17,7 +17,7 @@
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="definitions-tooltip">Definitions Tooltip<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/12/#definitions-tooltip" class="hash-link" aria-label="Direct link to Definitions Tooltip" title="Direct link to Definitions Tooltip">​</a></h2>
 <p>I made a react component tooltip for definitions to show you the definition of a term in place instead of a having to navigate to the glossary page. In addition, the same tooltip will link to the proper dictionary item if it exists, and if not, to the glossary page of the term. We still need to add the component all around, but this should make the functionality of the page much better. Here's an example: <a href="https://lisp-docs.github.io/cl-language-reference/docs/chap-6/g-b-the-loop-facility">See the "forms" word in section 6.1.1.1 of Loops</a></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="dictionary-pages">Dictionary Pages<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/12/#dictionary-pages" class="hash-link" aria-label="Direct link to Dictionary Pages" title="Direct link to Dictionary Pages">​</a></h2>
-<p>There are a bunch of dictionary pages that did not get split correctly, so instead of showing up as a different page, they are part of another page. I've been checking them manually (a lot of work) and have made <a href="https://lisp-docs.github.io/cl-language-reference/todo#missing-pages">a list</a> of about half the chapters. The rest need to be checked. I hope to make a script to help splitting a lot of these pages. Please help identifying the pages in the missing chapters as they are marked.</p>]]></content:encoded>
+<p>There are a bunch of dictionary pages that did not get split correctly, so instead of showing up as a different page, they are part of another page. I've been checking them manually (a lot of work) and have made <a href="https://lisp-docs.github.io/cl-language-reference/docs/contribute/dictionary-todo">a list</a> of about half the chapters. The rest need to be checked. I hope to make a script to help splitting a lot of these pages. Please help identifying the pages in the missing chapters as they are marked.</p>]]></content:encoded>
             <category>status</category>
             <category>beginning</category>
         </item>
@@ -83,7 +83,7 @@
 <li>Tables have to be formatted</li>
 </ul>
 </li>
-<li>Therefore we are open to other contributions that are more meaningful in terms of content and development, please see our <a href="https://lisp-docs.github.io/cl-language-reference/todo">To Do Page</a> for how you can contribute!</li>
+<li>Therefore we are open to other contributions that are more meaningful in terms of content and development, please see our <a href="https://lisp-docs.github.io/cl-language-reference/docs/contribute/todo">To Do Page</a> for how you can contribute!</li>
 </ul>]]></content:encoded>
             <category>status</category>
             <category>beginning</category>
@@ -98,7 +98,7 @@
 <p>As of now, 2023/12/03, all the dicionary pages have been broken up into their particular directories with a page per entry.</p>
 <p>However there are still a few that need to be manually fixed because of problems with parsing the text with regex for certain exceptions.</p>
 <p>Nevertheless, this improves the search results dramatically! The reference should now be much easier to use!</p>
-<p>I also added a <a href="https://lisp-docs.github.io/cl-language-reference/dictionary-todo">Dicionary Item's To Do Page</a> for adding specific examples.</p>
+<p>I also added a <a href="https://lisp-docs.github.io/cl-language-reference/docs/contribute/dictionary-todo">Dicionary Item's To Do Page</a> for adding specific examples.</p>
 <p>Cheers!</p>]]></content:encoded>
             <category>status</category>
             <category>beginning</category>
