@@ -6,10 +6,8 @@
 >
 > Monday, May 8, 2006
 
-
 The Nature of Lisp
 ==================
-
 
 Introduction
 ------------
@@ -125,7 +123,7 @@ copy.execute();
 
 The code is almost the same, albeit a little longer than the original XML. So what's different? The answer is that the XML snippet introduces a special semantic construct for copying. If we could do it in Java it would look like this:
 
-```c	
+```c 
 copy("../new/dir")
 {
     fileset("src\_dir");
@@ -488,7 +486,6 @@ What's next?
 Learning Lisp is an uphill battle. Even though in Computer Science terms Lisp is an ancient language, few people to date figured out how to teach it well enough to make it accessible. Despite great efforts by many Lisp advocates, learning Lisp today is still hard. The good news is that this won't remain the case forever since the amount of Lisp-related resources is rapidly increasing. Time is on Lisp's side.
 
 Lisp is a way to escape mediocrity and to get ahead of the pack. Learning Lisp means you can get a better job today, because you can impress any reasonably intelligent interviewer with fresh insight into most aspects of software engineering. It also means you're likely to get fired tomorrow because everyone is tired of you constantly mentioning how much better the company could be doing if only its software was written in Lisp. Is it worth the effort? Everyone who has ever learned Lisp says yes. The choice, of course, remains yours.
-
 
 [^1]: I have never met James, nor does he know about my existence. The story is entirely fictional and is based on a few postings about Ant's history I found on the internet.
 
