@@ -17,7 +17,7 @@ Here we will list all the To Do items we have for this project, and you can help
 
 - Make the Tooltip Definition and links to dicionary pages
 - [Multiple Sidebars](https://docusaurus.io/docs/sidebar/multiple-sidebars) for: 
-  - Contribute
+  - ~~Contribute~~
   - Why Lisp Section: For beginners, professionals, CTOs or Project Managers
 - Make beginner and experienced programmer tutorials
 - Make the Common Lisp Standard Libary: 
