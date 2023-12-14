@@ -6,6 +6,8 @@ Here we will list all the To Do items we have for this project, and you can help
 - Add Tooltips with definitions from the glossary everywhere that is relevant
   - The best way to do it is by creating a hash table of the dictionary, and everywhere an italizaed word is present, suroound it with a React Component which will check if there's a definition for that text in the glossary and it will add a tooltip if it's relevant
   - This should probably be a react component so that it can also be used in oher Lisp Docs pages and tutorials and shared easily across projects
+  - Update the glossary to be HTML and not markdown
+  - Finish all the dicionary item's parsing, then update the json files for the glossary and the dicionary terms
 - We should add links to all the bolded items in the reference to go to the appropiate pages. This should be actually fairly straight forward to do with code. We can just build a hash table of the dictionary pages available, with the name of each page, then simply find all the bolded text in the reference, and if its name matches an entry in the hash table, turn in into a link for that page.
 - We need to format al the Tables to markdown.
 - **Examples**: We need expanded examples and **Explanations** for most of the content in the reference.
