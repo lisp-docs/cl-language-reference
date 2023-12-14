@@ -6,11 +6,9 @@
 >
 > Monday, May 8, 2006
 
-The Nature of Lisp
-==================
+# The Nature of Lisp
 
-Introduction
-------------
+## Introduction
 
 When I first stumbled into Lisp advocacy on various corners of the web I was already an experienced programmer. At that point I had grokked what seemed at the time a wide range of programming languages. I was proud to have the usual suspects (C++, Java, C#, etc.) on my service record and was under impression that I knew everything there is to know about programming languages. I couldn't have possibly been more wrong.
 
@@ -28,8 +26,7 @@ I gave the matter careful thought. Is there something inherently hard about Lisp
 
 I shared my ideas with fellow Lispers. "Well, of course these concepts aren't explained in terms of familiar territory", they said. "They are so different, they're unlike anything these people have learned before." This was a poor excuse. "I do not believe this to be true", I said. The response was unanimous: "Why don't you give it a try?" So I did. This article is a product of my efforts. It is my attempt to explain Lisp in familiar, intuitive concepts. I urge brave souls to read on. Grab your favorite drink. Take a deep breath. Prepare to be blown away. Oh, and may the Force be with you.
 
-XML Reloaded
-------------
+## XML Reloaded
 
 A thousand mile journey starts with a single step. A journey to enlightenment is no exception and our first step just happens to be XML. What more could possibly be said about XML that hasn't already been said? It turns out, quite a bit. While there's nothing particularly interesting about XML itself, its relationship to Lisp is fascinating. XML is the all too familiar concept that Lisp advocates need so much. It is our bridge to conveying understanding to regular programmers. So let's revive the dead horse, take out the stick, and venture into XML wilderness that no one dared venture into before us. It's time to see the all too familiar moon from the other side.
 
@@ -82,8 +79,7 @@ So, where are we? Looks like we've just arrived to an interesting point. A conce
 
 A little earlier I mentioned that we could easily write an interpreter to execute our XML snippet of the add function. Of course this sounds like a purely theoretical exercise. Who in their right mind would want to do that for practical purposes? Well, it turns out quite a few people would disagree. You've likely encountered and used their work at least once in your career, too. Do I have you out on the edge of your seat? If so, let's move on!
 
-Ant Reloaded
-------------
+## Ant Reloaded
 
 Now that we've made the trip to the dark side of the moon, let's not leave quite yet. We may still learn something by exploring it a little more, so let's take another step. We begin by closing our eyes and remembering a cold rainy night in the winter of 2000. A prominent developer by the name of James Duncan Davidson[^1] was hacking his way through [Tomcat](http://tomcat.apache.org/) servlet container. As the time came to build the changes he carefully saved all his files and ran _make_. Errors. Lots of errors. Something was wrong. After careful examination James exclaimed: "Is my command not executing because I have a space in front of my tab?!" Indeed, this was the problem. Again. James has had enough. He could sense the full moon through the clouds and it made him adventurous. He created a fresh Java project and quickly hacked together a simple but surprisingly useful utility. This spark of genius used Java property files for information on how to build the project. James could now write the equivalent of the makefile in a nice format without worrying about the damned spaces ever again. His utility did all the hard work by interpreting the property file and taking appropriate actions to build the project. It was neat. Another Neat Tool. [Ant](http://ant.apache.org/).
 
@@ -123,7 +119,7 @@ copy.execute();
 
 The code is almost the same, albeit a little longer than the original XML. So what's different? The answer is that the XML snippet introduces a special semantic construct for copying. If we could do it in Java it would look like this:
 
-```c 
+```c
 copy("../new/dir")
 {
     fileset("src\_dir");
@@ -161,8 +157,7 @@ If ant supported the "task" construct, the example above would print "Hello Worl
 
 By the way, take a look at our 'Test' task once again. Congratulations. You're looking at Lisp code. What on Earth am I talking about? It doesn't look anything like Lisp? Don't worry, we'll fix that in a bit. Confused? Good. Let's clear it all up!
 
-A Better XML
-------------
+## A Better XML
 
 I mentioned in the previous section that self-extending Ant wouldn't be very useful. The reason for that is XML's verbosity. It's not too bad for data files but the moment you try writing reasonably complex code the amount of typing you have to do quickly starts to get in the way and progresses to becoming unusable for any real project. Have you ever tried writing Ant build scripts? I have, and once they get complex enough having to do it in XML becomes really annoying. Imagine having to type almost everything in Java twice because you have to close every element. Wouldn't that drive you nuts?
 
@@ -214,8 +209,7 @@ We could do the same with XML. Of course the line above isn't really a list, it'
 
 Whew. After much rambling we finally got to something that looks like Lisp (and is Lisp, really). By now the mysterious Lisp parentheses as well as some claims made by Lisp advocates should become more clear. But we still have a lot of ground to cover. Ready? Let's move on!
 
-C Macros Reloaded
------------------
+## C Macros Reloaded
 
 By now you must be tired of all the XML talk. I'm tired of it as well. It's time to take a break from all the trees, s-expressions, and Ant business. Instead, let's go back to every programmer's roots. It's time to talk about C preprocessor. What's C got to do with anything, I hear you ask? Well, we now know enough to get into metaprogramming and discuss code that writes other code. Understanding this tends to be hard since all tutorials discuss it in terms of languages that you don't know. But there is nothing hard about the concept. I believe that a metaprogramming discussion based on C will make the whole thing much easier to understand. So, let's see (pun intended).
 
@@ -273,8 +267,7 @@ for(int i = 0; i < 5; i++)
 
 Simple and effective. No need for a special preprocessor language. We get full power of our host language (in this case C/C++) at compile time. We could easily connect to a database and generate our data access layer source code at compile time in the same way JSP or ASP generate HTML! Creating such tools would also be tremendously quick and simple. We'd never have to create new projects with specialized GUIs. We could inline our tools right into our programs. We wouldn't have to worry about whether writing such tools is worth it because writing them would be so fast - we could save tremendous amounts of time by creating simple bits of code that do mundane code generation for us!
 
-Hello, Lisp!
-------------
+## Hello, Lisp
 
 Everything we've learned about Lisp so far can be summarized by a single statement: Lisp is executable XML with a friendlier syntax. We haven't said a single word about how Lisp actually operates. It's time to fill this gap[^2].
 
@@ -471,8 +464,7 @@ We can create macros for our to-do list items that will get called by lisp compi
 
 We've just created a very small and limited language for managing to-do lists embedded in Lisp. Such languages are very specific to a particular problem domain and are often referred to as domain specific languages or _DSLs_.
 
-Domain Specific Languages
--------------------------
+## Domain Specific Languages
 
 In this article we've already encountered two domain specific languages: Ant (specific to dealing with project builds) and our unnamed mini-language for dealing with to-do lists. The difference is that Ant was written from scratch using XML, an XML parser, and Java while our language is embedded into Lisp and is easily created within a couple of minutes.
 
@@ -480,8 +472,7 @@ We've already discussed the benefits of DSLs, mainly why Ant is using XML, not J
 
 Using DSLs to solve problems results in much more compact, maintainable, flexible programs. In a way we create them in Java by creating classes that help us solve the problem. The difference is that Lisp allows us to take this abstraction to the next level: we're not limited by Java's parser. Think of writing build scripts in Java itself using some supporting library. Compare it to using Ant. Now apply this same comparison to every single problem you've ever worked on and you'll begin to glimpse a small share of the benefits offered by Lisp.
 
-What's next?
-------------
+## What's next?
 
 Learning Lisp is an uphill battle. Even though in Computer Science terms Lisp is an ancient language, few people to date figured out how to teach it well enough to make it accessible. Despite great efforts by many Lisp advocates, learning Lisp today is still hard. The good news is that this won't remain the case forever since the amount of Lisp-related resources is rapidly increasing. Time is on Lisp's side.
 
