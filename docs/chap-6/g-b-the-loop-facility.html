@@ -9,7 +9,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.ad20780e.css">
-<script src="/cl-language-reference/assets/js/runtime~main.b2d38312.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.2b2b1193.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.361c78c0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,10 +21,10 @@
 <p>The <strong>loop</strong> <em>macro</em> performs iteration.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="6111-simple-vs-extended-loop">6.1.1.1 Simple vs Extended Loop<a href="#6111-simple-vs-extended-loop" class="hash-link" aria-label="Direct link to 6.1.1.1 Simple vs Extended Loop" title="Direct link to 6.1.1.1 Simple vs Extended Loop">​</a></h3>
 <!-- -->
-<p><strong>loop</strong> <em><div>Loading...</div></em> are partitioned into two categories: simple <strong>loop</strong> <em>forms</em> and extended <strong>loop</strong> <em>forms</em>.</p>
+<p><strong>loop</strong> <em><span>forms</span></em> are partitioned into two categories: simple <strong>loop</strong> <em>forms</em> and extended <strong>loop</strong> <em>forms</em>.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="61111-simple-loop">6.1.1.1.1 Simple Loop<a href="#61111-simple-loop" class="hash-link" aria-label="Direct link to 6.1.1.1.1 Simple Loop" title="Direct link to 6.1.1.1.1 Simple Loop">​</a></h4>
 <!-- -->
-<p>A simple <strong>loop</strong> <em>form</em> is one that has a body containing only <em>compound forms</em>. Each <em>form</em> is <em>evaluated</em> in turn from left to right. When the last <em>form</em> has been <em>evaluated</em>, then the first <em>form</em> is evaluated again, and so on, in a never-ending cycle. A simple <strong>loop</strong> <em>form</em> establishes an <em>implicit block</em> named <strong>nil</strong>. The execution of a simple <strong>loop</strong> can be terminated by explicitly transfering control to the </p><div>Loading...</div> (using <div>Loading...</div> or <strong>return-from</strong>) or to some <em>exit point</em> outside of the <em>block</em> (<em>e.g.</em>, using <div>Loading...</div>, <div>Loading...</div>, or <strong>return-from</strong>).<p></p>
+<p>A simple <strong>loop</strong> <em>form</em> is one that has a body containing only <em>compound forms</em>. Each <em>form</em> is <em>evaluated</em> in turn from left to right. When the last <em>form</em> has been <em>evaluated</em>, then the first <em>form</em> is evaluated again, and so on, in a never-ending cycle. A simple <strong>loop</strong> <em>form</em> establishes an <em>implicit block</em> named <strong>nil</strong>. The execution of a simple <strong>loop</strong> can be terminated by explicitly transfering control to the <span>implicit block</span> (using <span>return</span> or <strong>return-from</strong>) or to some <em>exit point</em> outside of the <em>block</em> (<em>e.g.</em>, using <span>throw</span>, <span>go</span>, or <strong>return-from</strong>).</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="61112-extended-loop">6.1.1.1.2 Extended Loop<a href="#61112-extended-loop" class="hash-link" aria-label="Direct link to 6.1.1.1.2 Extended Loop" title="Direct link to 6.1.1.1.2 Extended Loop">​</a></h4>
 <!-- -->
 <p>An extended <strong>loop</strong> <em>form</em> is one that has a body containing <em>atomic expressions</em>. When the <strong>loop</strong> <em>macro</em> processes such a <em>form</em>, it invokes a facility that is commonly called “the Loop Facility.”</p>
