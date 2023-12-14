@@ -37,19 +37,6 @@
 **cond** allows the execution of *forms* to be dependent on *test-form*. 
 
 
-
-Data and Control 
-
-
-
-
-
-
-
-
-
-
-
 *Test-forms* are evaluated one at a time in the order in which they are given in the argument list until a *test-form* is found that evaluates to *true*. 
 
 
