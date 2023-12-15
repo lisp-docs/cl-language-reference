@@ -85,4 +85,9 @@ An error of *type* **undefined-function** should be signaled if *function* is a 
 The difference between **funcall** and an ordinary function call is that in the former case the *function* is obtained by ordinary *evaluation* of a *form*, and in the latter case it is obtained by the special interpretation of the function position that normally occurs. 
 
 
+:::info
+
+We fixed the examples so that it is conforming, by not shadowing **cons** in the **flet** form.
+
+:::
 
