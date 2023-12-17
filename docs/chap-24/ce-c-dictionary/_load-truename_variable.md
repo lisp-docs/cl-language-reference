@@ -1,4 +1,4 @@
-*∗***load-truename***∗ Variable* 
+**\*load-pathname\***, **load-truename** *Variable* 
 
 
 
