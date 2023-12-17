@@ -76,7 +76,6 @@ b. the *type* returned does not involve and, eql, member, not, or, satisfies, or
 
 **Examples:**
 ```lisp
-
 (type-of ’a) → SYMBOL 
 (type-of ’(1 . 2)) 
 → CONS 
@@ -99,11 +98,9 @@ b. the *type* returned does not involve and, eql, member, not, or, satisfies, or
 (subtypep (type-of 112312) ’integer) → true, *true* 
 (defvar \*foo\* (make-array 5 :element-type t)) → \*FOO\* 
 (class-name (class-of \*foo\*)) → VECTOR  
-
 (type-of \*foo\*) 
 → VECTOR 
 <i><sup>or</sup>→</i> (VECTOR T 5) 
-
 ```
 **See Also:** 
 

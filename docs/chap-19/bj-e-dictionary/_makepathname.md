@@ -92,7 +92,6 @@ If the *directory* is a *string*, it should be the name of a top level directory
 
 **Examples:**
 ```lisp
-
 ;; Implementation A – an implementation with access to a single 
 ;; Unix file system. This implementation happens to never display 
 ;; the ‘host’ information in a namestring, since there is only one host. 
@@ -126,11 +125,8 @@ If the *directory* is a *string*, it should be the name of a top level directory
 ▷ #P"MY-LISPM:>public>games>chess.db" 
 ▷ #P"MY-VAX:SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
 
-
-
 ▷ #P"MY-UNIX:/PUBLIC/GAMES/CHESS.DB" 
 → NIL 
-
 ```
 **Affected By:** 
 

@@ -38,7 +38,6 @@ If the *evaluation* of any *form* other than the last returns a *primary value* 
 
 **Examples:**
 ```lisp
-
 (or) → NIL 
 (defparameter temp0 nil) → temp0
 (defparameter temp1 10) → temp1
@@ -54,7 +53,6 @@ temp3 → 30
 (or (values temp1 temp2) temp3) → 11 
 (or temp0 (values temp1 temp2)) → 11, 20 
 (or (values temp0 temp1) (values temp2 temp3)) → 20, 30 
-
 ```
 **See Also:** 
 

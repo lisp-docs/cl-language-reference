@@ -195,7 +195,6 @@ Take a good look at this representation. What's different? Angle brackets seem t
 ```lisp
 (task (name "Test")
     (echo (message "Hello World!")))
-
 (Test)
 ```
 

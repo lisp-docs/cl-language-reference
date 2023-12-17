@@ -46,23 +46,13 @@ Returns *true* if *character* is a *graphic character* ; otherwise, returns *fal
 ```lisp
  
 
-
-
 (graphic-char-p #\G) → true 
-
-
 
 (graphic-char-p #\#) → true 
 
-
-
 (graphic-char-p #\Space) → true 
 
-
-
 (graphic-char-p #\Newline) → false 
-
-
 
 
 ```

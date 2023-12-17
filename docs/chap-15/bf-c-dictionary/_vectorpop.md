@@ -32,7 +32,6 @@ Decreases the *fill pointer* of *vector* by one, and retrieves the *element* of 
 
 **Examples:**
 ```lisp
-
 (vector-push (setq fable (list ’fable)) 
 	     (setq fa (make-array 8 
 				  :fill-pointer 2 
@@ -41,7 +40,6 @@ Decreases the *fill pointer* of *vector* by one, and retrieves the *element* of 
 (eq (vector-pop fa) fable) → true 
 (vector-pop fa) → SISYPHUS 
 (fill-pointer fa) → 1 
-
 ```
 **Side Effects:** 
 

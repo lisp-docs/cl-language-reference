@@ -61,11 +61,9 @@ These *functions* ignore the *fill pointer* when *accessing elements*.
 (bit ba 3) → 0 
 (sbit ba 5) → 1 
 (setf (sbit ba 5) 1) → 1 
-
  
  
 (sbit ba 5) → 1 
-
 ```
 **See Also:** 
 
@@ -207,7 +205,6 @@ Figure 15–4 indicates the logical operation performed by each of the *function
 
 **Examples:**
 ```lisp
-
 (bit-and (setq ba #\*11101010) #\*01101011) → #\*01101010 
 (bit-and #\*1100 #\*1010) → #\*1000 
 (bit-andc1 #\*1100 #\*1010) → #\*0010 
@@ -220,7 +217,6 @@ Figure 15–4 indicates the logical operation performed by each of the *function
 → #\*00010101 
 (equal rba tba) → true 
 (bit-xor #\*1100 #\*1010) → #\*0110 
-
 ```
 **See Also:** 
 

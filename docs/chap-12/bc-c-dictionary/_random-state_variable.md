@@ -40,7 +40,6 @@ The *current random state*, which is used, for example, by the *function* **rand
 
 **Examples:**
 ```lisp
-
 (random-state-p \*random-state\*) → true 
 (setq snap-shot (make-random-state)) 
 ;; The series from any given point is random, 
@@ -55,7 +54,6 @@ The *current random state*, which is used, for example, by the *function* **rand
    (19 16 44 19 96 15 76 96 13 61) 
    (16 67 0 43 70 79 58 5 63 50) 
    (16 67 0 43 70 79 58 5 63 50)) 
-
 ```
 **Affected By:** 
 

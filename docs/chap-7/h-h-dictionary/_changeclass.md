@@ -76,7 +76,6 @@ If the second of the above *methods* is selected, that *method* invokes **change
 
 **Examples:**
 ```lisp
-
 (defclass position () ()) 
 (defclass x-y-position (position) 
   ((x :initform 0 :initarg :x) 
@@ -101,12 +100,10 @@ If the second of the above *methods* is selected, that *method* invokes **change
 ;;; The result is that the instance bound to p1 is now an instance of 
 ;;; the class rho-theta-position. The update-instance-for-different-class 
 ;;; method performed the initialization of the rho and theta slots based 
-
 	   
 	   
 ;;; on the value of the x and y slots, which were maintained by 
 ;;; the old instance. 
-
 ```
 **See Also:** 
 

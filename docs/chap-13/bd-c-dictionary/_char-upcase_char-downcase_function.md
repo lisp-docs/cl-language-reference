@@ -42,83 +42,43 @@ The result only ever differs from *character* in its *code attribute*; all *impl
 ```lisp
  
 
-
-
 (char-upcase #\a) → #\A 
-
-
 
 (char-upcase #\A) → #\A 
 
-
-
 (char-downcase #\a) → #\a 
-
-
 
 (char-downcase #\A) → #\a 
 
-
-
 (char-upcase #\9) → #\9 
-
-
 
 (char-downcase #\9) → #\9 
 
-
-
 (char-upcase #\@) → #\@ 
-
-
 
 (char-downcase #\@) → #\@ 
 
-
-
 ;; Note that this next example might run for a very long time in 
-
-
 
 ;; some implementations if CHAR-CODE-LIMIT happens to be very large 
 
-
-
 ;; for that implementation. 
-
-
 
 (dotimes (code char-code-limit) 
 
-
-
 (let ((char (code-char code))) 
-
-
 
 (when char 
 
-
-
 (unless (cond ((upper-case-p char) (char= (char-upcase (char-downcase char)) char)) ((lower-case-p char) (char= (char-downcase (char-upcase char)) char)) 
-
-
 
 (t (and (char= (char-upcase (char-downcase char)) char) 
 
-
-
 (char= (char-downcase (char-upcase char)) char)))) 
-
-
 
 (return char))))) 
 
-
-
 → NIL 
-
-
 
 
 ```

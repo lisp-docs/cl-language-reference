@@ -221,7 +221,6 @@ information about the *generic function* for the purposes of compile-time error-
 **Examples:**
 ```lisp
 
-
 ```
 **Exceptional Situations:** 
 

@@ -96,7 +96,6 @@ If a **define-setf-expander** *form* appears as a *top level form*, the *compile
 
 **Examples:**
 ```lisp
-
 (defun lastguy (x) (car (last x))) → LASTGUY 
 (define-setf-expander lastguy (x &amp;environment env) 
 			       "Set the last element in a list to the given value." 
@@ -139,7 +138,6 @@ If a **define-setf-expander** *form* appears as a *top level form*, the *compile
 										      ,store) ;Storing form. 
 										   ‘(ldb ,btemp ,access-form) ;Accessing form. 
 										   )))) 
-
 ```
 **See Also:** 
 

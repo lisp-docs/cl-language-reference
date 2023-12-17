@@ -40,7 +40,6 @@ If **progn** appears as a *top level form*, then all *forms* within that **progn
 
 **Examples:**
 ```lisp
-
 (progn) → NIL 
 (progn 1 2 3) → 3 
 (progn (values 1 2 3)) → 1, 2, 3 
@@ -49,7 +48,6 @@ If **progn** appears as a *top level form*, then all *forms* within that **progn
     (progn (setf a nil) ’here) 
     (progn (setf a t) ’there)) → HERE 
 a → NIL 
-
 ```
 
 :::info

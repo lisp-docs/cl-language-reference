@@ -42,195 +42,99 @@ to be recursively printed has components and is at a level equal to or greater t
 ```lisp
  
 
-
-
 (setq a ’(1 (2 (3 (4 (5 (6))))))) → (1 (2 (3 (4 (5 (6)))))) 
-
-
 
 (dotimes (i 8) 
 
-
-
 (let ((\*print-level\* i)) 
-
-
 
 (format t "~&~D – ~S~%" i a))) 
 
-
-
 ▷ 0 – # 
-
-
 
 ▷ 1 – (1 #) 
 
-
-
 ▷ 2 – (1 (2 #)) 
-
-
 
 ▷ 3 – (1 (2 (3 #))) 
 
-
-
 ▷ 4 – (1 (2 (3 (4 #)))) 
-
-
 
 ▷ 5 – (1 (2 (3 (4 (5 #))))) 
 
-
-
 ▷ 6 – (1 (2 (3 (4 (5 (6)))))) 
-
-
 
 ▷ 7 – (1 (2 (3 (4 (5 (6)))))) 
 
-
-
 → NIL 
-
-
 
 (setq a ’(1 2 3 4 5 6)) → (1 2 3 4 5 6) 
 
-
-
 (dotimes (i 7) 
-
-
 
 (let ((\*print-length\* i)) 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (format t "~&~D – ~S~%" i a))) 
 
-
-
 ▷ 0 – (...) 
-
-
 
 ▷ 1 – (1 ...) 
 
-
-
 ▷ 2 – (1 2 ...) 
-
-
 
 ▷ 3 – (1 2 3 ...) 
 
-
-
 ▷ 4 – (1 2 3 4 ...) 
-
-
 
 ▷ 5 – (1 2 3 4 5 6) 
 
-
-
 ▷ 6 – (1 2 3 4 5 6) 
 
-
-
 → NIL 
-
-
 
 (dolist (level-length ’((0 1) (1 1) (1 2) (1 3) (1 4) 
 
-
-
 (2 1) (2 2) (2 3) (3 2) (3 3) (3 4))) 
-
-
 
 (let ((\*print-level\* (first level-length)) 
 
-
-
 (\*print-length\* (second level-length))) 
-
-
 
 (format t "~&~D ~D – ~S~%" 
 
-
-
 \*print-level\* \*print-length\* 
-
-
 
 ’(if (member x y) (+ (car x) 3) ’(foo . #(a b c d "Baz")))))) 
 
-
-
 ▷ 0 1 – # 
-
-
 
 ▷ 1 1 – (IF ...) 
 
-
-
 ▷ 1 2 – (IF # ...) 
-
-
 
 ▷ 1 3 – (IF # # ...) 
 
-
-
 ▷ 1 4 – (IF # # #) 
-
-
 
 ▷ 2 1 – (IF ...) 
 
-
-
 ▷ 2 2 – (IF (MEMBER X ...) ...) 
-
-
 
 ▷ 2 3 – (IF (MEMBER X Y) (+ # 3) ...) 
 
-
-
 ▷ 3 2 – (IF (MEMBER X ...) ...) 
-
-
 
 ▷ 3 3 – (IF (MEMBER X Y) (+ (CAR X) 3) ...) 
 
-
-
 ▷ 3 4 – (IF (MEMBER X Y) (+ (CAR X) 3) ’(FOO . #(A B C D ...))) 
 
-
-
 → NIL 
-
-
 
 
 ```

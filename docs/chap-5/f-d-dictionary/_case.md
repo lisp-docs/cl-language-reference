@@ -132,7 +132,6 @@ Note that in contrast with **ccase**, the caller of **ecase** may rely on the fa
 
 **Examples:**
 ```lisp
-
 (dolist (k ’(1 2 3 :four #\v () t ’other)) 
   (format t "&#126;S " 
 	  (case k ((1 2) ’clause1) 
@@ -155,7 +154,6 @@ Note that in contrast with **ccase**, the caller of **ecase** may rely on the fa
 → DECODE 
 Data and Control 
 
-
 (add-em ’(uno iii)) → 4 
 (add-em ’(uno iiii)) 
 ▷ Error: The value of X, IIII, is not I, UNO, II, DOS, III, 
@@ -165,7 +163,6 @@ Data and Control
 ▷ Debug> :CONTINUE 1 
 ▷ Value to evaluate and use for X: ’IV 
 → 5 
-
 ```
 **Side Effects:** 
 

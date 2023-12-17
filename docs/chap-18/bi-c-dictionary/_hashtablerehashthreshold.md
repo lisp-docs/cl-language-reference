@@ -32,11 +32,9 @@ Returns the current rehash threshold of *hash-table*, which is suitable for use 
 
 **Examples:**
 ```lisp
-
 (setq table (make-hash-table :size 100 :rehash-threshold 0.5)) 
 → #<HASH-TABLE EQL 0/100 2562446> 
 (hash-table-rehash-threshold table) → 0.5 
-
 ```
 **Exceptional Situations:** 
 

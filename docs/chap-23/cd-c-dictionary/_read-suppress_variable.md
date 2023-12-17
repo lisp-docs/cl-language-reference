@@ -91,7 +91,6 @@ No matter what the *value* of **\*read-suppress\***, parentheses still continue 
 "#.(PRINT ’FOO)" "#3AHELLO" "#S(INTEGER)" 
 "#\*ABC" "#\GARBAGE" "#RALPHA" "#3R444"))) 
 → (NIL NIL NIL NIL NIL NIL NIL NIL NIL NIL) 
-
 ```
 **See Also:** 
 

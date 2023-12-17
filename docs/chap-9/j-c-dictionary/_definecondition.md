@@ -352,7 +352,6 @@ If a **define-condition** *form* appears as a *top level form*, the *compiler* m
 
 **Examples:**
 ```lisp
-
 The following form defines a condition of *type* peg/hole-mismatch which inherits from a condition type called blocks-world-error: 
 (define-condition peg/hole-mismatch 
     (blocks-world-error) 
@@ -381,7 +380,6 @@ Building on this definition, a new error condition can be defined which is a sub
 This defines a still more specific condition, built upon machine-not-available-error, which provides a slot initialization form for machine-name but which does not provide any new slots or report information. It just gives the machine-name slot a default initialization: 
 (define-condition my-favorite-machine-not-available-error 
     (machine-not-available-error) 
-
   
   
   ((machine-name :initform "mc.lcs.mit.edu"))) 
@@ -410,7 +408,6 @@ Note that since no :report clause was given, the information inherited from mach
 (format t "&#126;A" \*) 
 ▷ FRED ate too much CHOCOLATE ice-cream 
 → NIL 
-
 ```
 **See Also:** 
 

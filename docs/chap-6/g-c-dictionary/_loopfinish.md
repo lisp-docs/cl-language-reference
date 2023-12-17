@@ -20,7 +20,6 @@ The **loop-finish** *macro* can be used lexically within an extended **loop** *f
 
 **Examples:**
 ```lisp
-
 ;; Terminate the loop, but return the accumulated count. 
 (loop for i in ’(1 2 3 stop-here 4 5 6) 
       when (symbolp i) do (loop-finish) 
@@ -42,7 +41,6 @@ The **loop-finish** *macro* can be used lexically within an extended **loop** *f
 	       ‘(when ,wvar 
 		  (push (coerce (nreverse ,wvar) ’string) ,svar) 
 		  (setq ,wvar nil)))) 
-
     
     
     **loop-finish** 
@@ -60,7 +58,6 @@ The **loop-finish** *macro* can be used lexically within an extended **loop** *f
 → ("this" "is" "a" "sentence"), 19 
 (tokenize-sentence "this is a sentence") 
 → ("this" "is" "a" "sentence"), NIL 
-
 ```
 **Side Effects:** 
 

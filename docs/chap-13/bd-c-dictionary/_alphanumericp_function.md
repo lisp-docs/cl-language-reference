@@ -34,23 +34,13 @@ Returns *true* if *character* is an *alphabetic*<sub>1</sub> *character* or a *n
 ```lisp
  
 
-
-
 (alphanumericp #\Z) → true 
-
-
 
 (alphanumericp #\9) → true 
 
-
-
 (alphanumericp #\Newline) → false 
 
-
-
 (alphanumericp #\#) → false 
-
-
 
 
 ```

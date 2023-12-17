@@ -20,7 +20,6 @@ The best *long float* approximation to the mathematical constant *π*.
 
 **Examples:**
 ```lisp
-
 ;; In each of the following computations, the precision depends 
 ;; on the implementation. Also, if ‘long float’ is treated by 
 ;; the implementation as equivalent to some other float format 
@@ -31,7 +30,6 @@ pi → 3.141592653589793L0
 (defun sin-of-degrees (degrees) 
   (let ((x (if (floatp degrees) degrees (float degrees pi)))) 
     (sin (\* x (/ (float pi x) 180))))) 
-
 ```
 **Notes:** 
 

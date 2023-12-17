@@ -4615,7 +4615,6 @@ COMPUTE-POWER-OF-2
 → ADD-SYMBOLS-WITH-DEFAULT
  (setq x 1 y 2) → 2
  (add-symbols-with-default 3 'x 'y 'z) → 6
-
 ```
 
 
@@ -9263,7 +9262,6 @@ a-vector → #(1 0 3 0)
  
  (tokenize-sentence "this is a sentence")
 → ("this" "is" "a" "sentence"), NIL
-
 ```
 
 

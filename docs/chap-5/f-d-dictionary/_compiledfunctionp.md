@@ -44,7 +44,6 @@ Returns *true* if *object* is of *type* **compiled-function**; otherwise, return
 
 **Examples:**
 ```lisp
-
 (defun f (x) x) → F 
 (compiled-function-p #’f) 
 → false 
@@ -59,7 +58,6 @@ Returns *true* if *object* is of *type* **compiled-function**; otherwise, return
 → false 
 <i><sup>or</sup>→ true</i> 
 (compiled-function-p ’(lambda (x) x)) → false 
-
 ```
 **See Also:** 
 

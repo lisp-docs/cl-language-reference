@@ -92,7 +92,6 @@ It is *implementation-dependent* whether **dotimes** *establishes* a new *bindin
 
 **Examples:**
 ```lisp
-
 (dotimes (temp-one 10 temp-one)) → 10 
 (setq temp-two 0) → 0 
 (dotimes (temp-one 10 t) (incf temp-two)) → T 
@@ -124,7 +123,6 @@ Here is an example of the use of dotimes in processing strings:
   #’alpha-char-p 
   "A man, a plan, a cat, a ham, a yak, 
 a yam, a hat, a canal–Panama!")) → T 
-
 ```
 **See Also:** 
 

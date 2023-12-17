@@ -76,7 +76,6 @@ The *format-control* and *format-arguments* are used report the *restart*.
 
 **Examples:**
 ```lisp
-
 (defun read-eval-print-loop (level) 
   (with-simple-restart (abort "Exit command level &#126;D." level) 
     (loop 
@@ -112,7 +111,6 @@ COMPUTE-POWER-OF-2
 ▷ 2: Return to Lisp Toplevel 
 ▷ Debug> :continue 1 
 → SOMETHING-BIG 
-
 ```
 **See Also:** 
 

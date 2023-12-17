@@ -96,7 +96,6 @@ If a **define-modify-macro** *form* appears as a *top level form*, the *compiler
 
 **Examples:**
 ```lisp
-
 (define-modify-macro appendf (&amp;rest args) 
 			      append "Append onto list") → APPENDF 
 			      (setq x ’(a b c) y x) → (A B C) 
@@ -105,7 +104,6 @@ If a **define-modify-macro** *form* appears as a *top level form*, the *compiler
 			      y → (A B C) 
 			      (define-modify-macro new-incf (&amp;optional (delta 1)) +) 
 							     (define-modify-macro unionf (other-set &amp;rest keywords) union) 
-
 ```
 **Side Eects:** 
 

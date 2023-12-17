@@ -60,13 +60,11 @@ If the *result-type* is a *subtype* of **vector**, then if the implementation ca
 
 **Examples:**
 ```lisp
-
 (concatenate ’string "all" " " "together" " " "now") → "all together now" 
 (concatenate ’list "ABC" ’(d e f) #(1 2 3) #\*1011) 
 → (#\A #\B #\C D E F 1 2 3 1 0 1 1) 
 (concatenate ’list) → NIL 
 (concatenate ’(vector \* 2) "a" "bc") should signal an error 
-
 ```
 **Exceptional Situations:** 
 

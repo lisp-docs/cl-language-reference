@@ -32,7 +32,6 @@ Returns *true* if *stream* is an *interactive stream*; otherwise, returns *false
 
 **Examples:**
 ```lisp
-
 (when (> measured limit) 
   (let ((error (round (\* (- measured limit) 100) 
 		      limit))) 
@@ -41,7 +40,6 @@ Returns *true* if *stream* is an *interactive stream*; otherwise, returns *false
 Is it safe to proceed? " error) 
 		(< error 15)) ;15% is acceptable 
       (error "The frammis is out of tolerance by &#126;D%." error)))) 
-
 ```
 **Exceptional Situations:** 
 

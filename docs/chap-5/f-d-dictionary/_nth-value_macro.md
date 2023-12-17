@@ -42,14 +42,12 @@ Evaluates *n* and then *form*, returning as its only value the *n*th value *yiel
 (nth-value 2 (values ’a ’b)) → NIL 
 (let\* ((x 83927472397238947423879243432432432) 
 (y 32423489732) 
-
  
  
 (a (nth-value 1 (floor x y))) 
 (b (mod x y))) 
 (values a b (= a b))) 
 → 3332987528, 3332987528, *true* 
-
 ```
 **See Also:** 
 

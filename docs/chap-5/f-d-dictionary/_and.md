@@ -42,7 +42,6 @@ If no *forms* are supplied, (and) returns **t**.
 
 **Examples:**
 ```lisp
-
 (if (and (>= n 0) 
 	 (< n (length a-simple-vector)) 
 	 (eq (elt a-simple-vector n) ’foo)) 
@@ -52,7 +51,6 @@ If no *forms* are supplied, (and) returns **t**.
 The above expression prints Foo! if element n of a-simple-vector is the symbol foo, provided also that n is indeed a valid index for a-simple-vector. Because **and** guarantees left-to-right testing of its parts, **elt** is not called if n is out of range. 
 
 ```lisp
-
 (defparameter temp1 1) → temp1
 (defparameter temp2 1) → temp2
 (defparameter temp3 1) → temp3
@@ -62,7 +60,6 @@ The above expression prints Foo! if element n of a-simple-vector is the symbol f
 (and (decf temp1) (decf temp2) (eq temp3 ’nil) (decf temp3)) → NIL 
 (and (eql temp1 temp2) (eql temp2 temp3)) → true 
 (and) → T 
-
 ```
 **See Also:** 
 

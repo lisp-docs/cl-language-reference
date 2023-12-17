@@ -192,7 +192,6 @@ elements of its own, but instead maps *accesses* to itself into *accesses* to ar
 
 **Examples:**
 ```lisp
-
 (make-array 5) ;; Creates a one-dimensional array of five elements. 
 (make-array ’(3 4) :element-type ’(mod 16)) ;; Creates a 
 ;;two-dimensional array, 3 by 4, with four-bit elements. 
@@ -214,8 +213,6 @@ The following is an example of making a *displaced array*.
   (dotimes (j 3) 
     (setf (aref a i j) (list i ’x j ’= (\* i j))))) 
 → NIL 
-
-
 
 (setq b (make-array 8 :displaced-to a 
 		    :displaced-index-offset 2)) 
@@ -250,7 +247,6 @@ The last example depends on the fact that *arrays* are, in effect, stored in row
 → #<ARRAY 20 indirect, fill-pointer 5 46107432> 
 (length a3) → 10 
 (length b3) → 5 
-
 ```
 **See Also:** 
 

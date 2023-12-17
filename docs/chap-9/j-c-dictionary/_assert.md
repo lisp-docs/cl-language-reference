@@ -68,7 +68,6 @@ The *places* are *generalized references* to data upon which *test-form* depends
 
 **Examples:**
 ```lisp
-
 (setq x (make-array ’(3 5) :initial-element 3)) 
 → #2A((3 3 3 3 3) (3 3 3 3 3) (3 3 3 3 3)) 
 (setq y (make-array ’(3 5) :initial-element 7)) 
@@ -98,8 +97,6 @@ The *places* are *generalized references* to data upon which *test-form* depends
 (double-safely 4) 
 → 8 
 
-
-
 (double-safely t) 
 ▷ Correctable error in DOUBLE-SAFELY: The value of (NUMBERP X) must be non-NIL. ▷ Restart options: 
 ▷ 1: You will be prompted for one or more new values. 
@@ -107,7 +104,6 @@ The *places* are *generalized references* to data upon which *test-form* depends
 ▷ Debug> :continue 1 
 ▷ Value for X: 7 
 → 14 
-
 ```
 **Affected By:** 
 

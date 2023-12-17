@@ -32,7 +32,6 @@
 
 Returns *true* if its *arguments* are the same, identical *object*; otherwise, returns *false*. **Examples:**
 ```lisp
-
 (eq ’a ’b) → false 
 (eq ’a ’a) → true 
 (eq 3 3) 
@@ -42,8 +41,6 @@ Returns *true* if its *arguments* are the same, identical *object*; otherwise, r
 (eq 3.0 3.0) 
 → true 
 <i><sup>or</sup>→ false</i> 
-
-
 
 **eq** 
 (eq #c(3 -4) #c(3 -4)) 
@@ -70,7 +67,6 @@ Returns *true* if its *arguments* are the same, identical *object*; otherwise, r
 (let ((x 5)) (eq x x)) 
 → true 
 <i><sup>or</sup>→ false</i> 
-
 ```
 **See Also:** 
 

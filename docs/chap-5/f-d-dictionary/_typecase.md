@@ -160,7 +160,6 @@ In all three cases, is permissible for more than one *clause* to specify a match
 
 **Examples:**
 ```lisp
-
 ;;; (Note that the parts of this example which use TYPE-OF 
 ;;; are implementation-dependent.) 
 (defun what-is-it (x) 
@@ -187,8 +186,6 @@ In all three cases, is permissible for more than one *clause* to specify a match
 ▷ To continue, type :CONTINUE followed by an option number: 
 ▷ 1: Specify a value to use instead. 
 
-
-
 ▷ 2: Return to Lisp Toplevel. 
 ▷ Debug> :CONTINUE 1 
 ▷ Use value: 3.7 
@@ -200,7 +197,6 @@ In all three cases, is permissible for more than one *clause* to specify a match
 ▷ Use value: 12 
 → 48 
 x → 12 
-
 ```
 **Aected By:** 
 

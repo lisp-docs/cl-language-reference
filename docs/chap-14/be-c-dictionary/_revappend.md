@@ -64,7 +64,6 @@ The resulting *list* shares *list structure* with *tail*.
 
 **Examples:**
 ```lisp
-
 (let ((list-1 (list 1 2 3)) 
       (list-2 (list ’a ’b ’c))) 
   (print (revappend list-1 list-2)) 
@@ -88,7 +87,6 @@ The resulting *list* shares *list structure* with *tail*.
 ▷ NIL 
 ▷ T 
 → T 
-
 ```
 **Side Effects:** 
 

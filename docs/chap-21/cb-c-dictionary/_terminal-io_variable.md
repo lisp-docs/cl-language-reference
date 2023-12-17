@@ -32,10 +32,7 @@ The effect of changing the *value* of **\*terminal-io\***, either by *binding* o
 
 **Examples:**
 ```lisp
-
 (progn (prin1 ’foo) (prin1 ’bar \*terminal-io\*)) 
-
-
 
 ▷ FOOBAR 
 → BAR 
@@ -44,7 +41,6 @@ The effect of changing the *value* of **\*terminal-io\***, either by *binding* o
   (prin1 ’bar \*terminal-io\*)) 
 ▷ BAR 
 → "FOO" 
-
 ```
 **See Also:** 
 

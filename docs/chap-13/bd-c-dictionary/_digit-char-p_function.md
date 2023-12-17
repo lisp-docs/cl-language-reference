@@ -50,67 +50,35 @@ Tests whether *char* is a digit in the specified *radix* (*i.e.*, with a weight 
 ```lisp
  
 
-
-
 (digit-char-p #\5) → 5 
-
-
 
 (digit-char-p #\5 2) → false 
 
-
-
 (digit-char-p #\A) → false 
-
-
 
 (digit-char-p #\a) → false 
 
-
-
 (digit-char-p #\A 11) → 10 
-
-
 
 (digit-char-p #\a 11) → 10 
 
-
-
 (mapcar #’(lambda (radix) 
-
-
 
 (map ’list #’(lambda (x) (digit-char-p x radix)) 
 
-
-
 "059AaFGZ")) 
-
-
 
 ’(2 8 10 16 36)) 
 
-
-
 → ((0 NIL NIL NIL NIL NIL NIL NIL) 
-
-
 
 (0 5 NIL NIL NIL NIL NIL NIL) 
 
-
-
 (0 5 9 NIL NIL NIL NIL NIL) 
-
-
 
 (0 5 9 10 10 15 NIL NIL) 
 
-
-
 (0 5 9 10 10 15 16 35)) 
-
-
 
 
 ```

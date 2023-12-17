@@ -32,12 +32,10 @@ If the *condition* is not handled, (invoke-debugger *condition*) is done. As a c
 
 **Examples:**
 ```lisp
-
 (defun factorial (x) 
   (cond ((or (not (typep x ’integer)) (minusp x)) 
 	 (error "&#126;S is not a valid argument to FACTORIAL." x)) 
 	((zerop x) 1) 
-
 	
 	
 	**error** 
@@ -70,7 +68,6 @@ If the *condition* is not handled, (invoke-debugger *condition*) is done. As a c
 ▷ 1: Return to Lisp Toplevel. 
 ▷ Debug> :Continue 1 
 ▷ Return to Lisp Toplevel. 
-
 ```
 **Side Effects:** 
 

@@ -96,7 +96,6 @@ It is not necessarily possible to construct a valid *namestring* by concatenatin
 
 **Examples:**
 ```lisp
-
 (namestring "getty") 
 → "getty" 
 (setq q (make-pathname :host "kathy" 
@@ -110,8 +109,6 @@ It is not necessarily possible to construct a valid *namestring* by concatenatin
 (host-namestring q) → "kathy" 
 ;;;Using Unix syntax and the wildcard conventions used by the 
 ;;;particular version of Unix on which this example was created: 
-
-
 
 (namestring 
  (translate-pathname "/usr/dmr/hacks/frob.l" 
@@ -136,7 +133,6 @@ It is not necessarily possible to construct a valid *namestring* by concatenatin
 		     "U:/usr/d\*/hacks/fr\*.l" 
 		     "V:SYS$DISK:[D\*.BACKUP.HACKS]BACKUP-\*.\*")) 
 → "V:SYS$DISK:[DMR.BACKUP.HACKS]BACKUP-OB.LSP" 
-
 ```
 **See Also:** 
 

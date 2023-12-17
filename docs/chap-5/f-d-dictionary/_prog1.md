@@ -68,7 +68,6 @@ Data and Control
 
 **Examples:**
 ```lisp
-
 (setq temp 1) → 1 
 (prog1 temp (print temp) (incf temp) (print temp)) 
 ▷ 1 
@@ -93,7 +92,6 @@ temp → (ALPHA B C)
 (prog2 (incf temp) (incf temp) (incf temp)) → 3 
 temp → 4 
 (prog2 1 (values 2 3 4) 5) → 2 
-
 ```
 **See Also:** 
 

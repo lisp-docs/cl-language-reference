@@ -40,11 +40,9 @@
 
 **Examples:**
 ```lisp
-
 (sin 0) → 0.0 
 (cos 0.7853982) → 0.707107 
 (tan #c(0 1)) → #C(0.0 0.761594) 
-
 ```
 **Exceptional Situations:** 
 

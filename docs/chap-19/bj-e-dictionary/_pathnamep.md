@@ -42,7 +42,6 @@ Returns *true* if *object* is of *type* **pathname**; otherwise, returns *false*
 (setq q (logical-pathname "SYS:SITE;FOO.SYSTEM")) 
 → #P"SYS:SITE;FOO.SYSTEM" 
 (pathnamep q) → true 
-
 ```
 **Notes:** 
 
@@ -148,8 +147,6 @@ If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in
 ```lisp
 
 
-
-
 **pathname-host, pathname-device,** *. . .* 
 (setq q (make-pathname :host "KATHY" 
 		       :directory "CHAPMAN" 
@@ -194,8 +191,6 @@ If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/BAR/../Mum/baz")) 
 → (:ABSOLUTE "foo" "BAR" :UP "Mum") 
 
-
-
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/BAR/../Mum/baz") :case :common) 
 → (:ABSOLUTE "FOO" "bar" :UP "Mum") 
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/\*/bar/baz.l")) 
@@ -210,7 +205,6 @@ If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in
 (pathname-directory (parse-namestring ">foo>\*>bar>baz.lisp") :case :common) 
 → (:ABSOLUTE "FOO" :WILD "BAR") 
 (pathname-device (parse-namestring ">foo>baz.lisp")) → :UNSPECIFIC 
-
 ```
 **Affected By:** 
 

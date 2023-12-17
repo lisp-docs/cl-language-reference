@@ -36,11 +36,9 @@ If *sequence* is a *vector* , the result is a *fresh simple array* of *rank* one
 
 **Examples:**
 ```lisp
-
 (setq str "a string") → "a string" 
 (equalp str (copy-seq str)) → true 
 (eql str (copy-seq str)) → false 
-
 ```
 **Exceptional Situations:** 
 

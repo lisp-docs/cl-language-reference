@@ -84,7 +84,6 @@ There is no guarantee that the order of elements in the result will reflect the 
 
 **Examples:**
 ```lisp
-
 (setq lst1 (list "A" "b" "C" "d") 
       lst2 (list "a" "B" "C" "d")) → ("a" "B" "C" "d") 
 (set-difference lst1 lst2) → ("d" "C" "b" "A") 
@@ -105,8 +104,6 @@ lst2 → (("c" . "a") ("e" . "b") ("d" . "a"))
 		 ’(#\c #\w) 
 		 :test #’(lambda (s c) (find c s))) 
 → ("banana" "rhubarb" "lemon") ;One possible ordering. 
-
-
 
 
 ```

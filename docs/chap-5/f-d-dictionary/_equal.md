@@ -134,7 +134,6 @@ Any two *objects* that are **eql** are also **equal**.
 
 **Examples:**
 ```lisp
-
 (equal ’a ’b) → false 
 (equal ’a ’a) → true 
 (equal 3 3) → true 
@@ -151,7 +150,6 @@ Any two *objects* that are **eql** are also **equal**.
 (equal "FOO" "foo") → false 
 (equal "This-string" "This-string") → true 
 (equal "This-string" "this-string") → false 
-
 ```
 **See Also:** 
 

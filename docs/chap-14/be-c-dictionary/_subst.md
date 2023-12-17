@@ -104,7 +104,6 @@ For **nsubst**, **nsubst-if**, and **nsubst-if-not** the original *tree* is modi
 
 **Examples:**
 ```lisp
-
 (setq tree1 ’(1 (1 2) (1 2 3) (1 2 3 4))) → (1 (1 2) (1 2 3) (1 2 3 4)) 
 (subst "two" 2 tree1) → (1 (1 "two") (1 "two" 3) (1 "two" 3 4)) 
 (subst "five" 5 tree1) → (1 (1 2) (1 2 3) (1 2 3 4)) 
@@ -116,7 +115,6 @@ For **nsubst**, **nsubst-if**, and **nsubst-if-not** the original *tree* is modi
 → (SHAKESPEARE WROTE (TWELFTH NIGHT . FOO) . FOO) 
 (subst ’(a . cons) ’(old . pair) 
 	’((old . spice) ((old . shoes) old . pair) (old . pair)) 
-
 	
 	
 	:test #’equal) 
@@ -128,7 +126,6 @@ tree1 → (1 (1 2) (1 2 3) (1 2 3 4))
 (nsubst ’x 3 tree1 :key #’(lambda (y) (and (listp y) (third y)))) 
 → (1 (1 2) X X) 
 tree1 → (1 (1 2) X X) 
-
 ```
 **Side Effects:** 
 

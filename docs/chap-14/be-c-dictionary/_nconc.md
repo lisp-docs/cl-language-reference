@@ -64,7 +64,6 @@ Returns a *list* that is the concatenation of *lists*. If no *lists* are supplie
 
 **Examples:**
 ```lisp
-
 (nconc) → NIL 
 (setq x ’(a b c)) → (A B C) 
 (setq y ’(d e f)) → (D E F) 
@@ -85,7 +84,6 @@ baz → (K L M)
 foo → (A B C D E F G H I J K L M) 
 bar → (F G H I J K L M) 
 baz → (K L M) 
-
 ```
 **Side Effects:** 
 

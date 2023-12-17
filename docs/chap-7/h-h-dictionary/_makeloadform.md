@@ -144,7 +144,6 @@ Both *conforming implementations* and *conforming programs* may further *special
 
 **Examples:**
 ```lisp
-
 (defclass obj () 
   ((x :initarg :x :reader obj-x) 
    (y :initarg :y :reader obj-y) 
@@ -176,8 +175,6 @@ Another way to write the **make-load-form** *method* in that example is to use *
 				 :environment environment)) 
 → #\<STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 42755655\> 
 
-
-
 **make-load-form** 
 ;; Try MAKE-LOAD-FORM on object created above. 
 (make-load-form obj1) 
@@ -207,10 +204,8 @@ In the following example, *instances* of my-frob are “interned” in some way.
     (defstruct my-struct a b c) 
     (defmethod make-load-form ((s my-struct) &amp;optional environment) 
 			       (make-load-form-saving-slots s :environment environment)) 
-
       
       
-
 ```
 **Exceptional Situations:** 
 

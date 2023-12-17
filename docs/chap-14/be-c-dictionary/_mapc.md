@@ -112,11 +112,8 @@ and similarly for the relationship between **mapcan** and **mapcar**.
 
 **Examples:**
 ```lisp
-
 (mapcar #’car ’((1 a) (2 b) (3 c))) → (1 2 3) 
 (mapcar #’abs ’(3 -4 2 -5 -6)) → (3 4 2 5 6) 
-
-
 
 (mapcar #’cons ’(a b c) ’(1 2 3)) → ((A . 1) (B . 2) (C . 3)) 
 (maplist #’append ’(1 2 3 4) ’(1 2) ’(1 2 3)) 
@@ -142,7 +139,6 @@ and similarly for the relationship between **mapcan** and **mapcar**.
 			    ’(a 1 b c 3 4 d 5)) 
 		  → (1 3 4 5) 
 		  In this case the function serves as a filter; this is a standard Lisp idiom using **mapcan**. (mapcon #’list ’(1 2 3 4)) → ((1 2 3 4) (2 3 4) (3 4) (4)) 
-
 ```
 **Exceptional Situations:** 
 

@@ -92,7 +92,6 @@ Both functions return the *object* read from *input-stream*. *Eof-value* is retu
 
 **Examples:**
 ```lisp
-
 (read) 
 ▷ ’a 
 → (QUOTE A) 
@@ -118,13 +117,10 @@ Consider now calling **read** on this expression:
 (zyedh /usr/games/zork /usr/games/boggle) 
 The / macro reads objects separated by more / characters; thus /usr/games/zork is intended to read as (path usr games zork). The entire example expression should therefore be read as 
 
-
-
 (zyedh (path usr games zork) (path usr games boggle)) 
 However, if **read** had been used instead of **read-preserving-whitespace**, then after the reading of the symbol zork, the following space would be discarded; the next call to **peek-char** would see the following /, and the loop would continue, producing this interpretation: 
 (zyedh (path usr games zork usr games boggle)) 
 There are times when *whitespace*<sub>2</sub> <sup>should be discarded. If a command interpreter takes single</sup> character commands, but occasionally reads an *object* then if the *whitespace*<sub>2</sub> after a *symbol* is not discarded it might be interpreted as a command some time later after the *symbol* had been read. 
-
 ```
 **Affected By:** 
 

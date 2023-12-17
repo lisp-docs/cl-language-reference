@@ -136,7 +136,6 @@ If there are no *forms* in a selected *clause*, the case, and therefore **handle
 
 **Examples:**
 ```lisp
-
 (defun assess-condition (condition) 
   (handler-case (signal condition) 
     (warning () "Lots of smoke, but no fire.") 
@@ -155,7 +154,6 @@ If there are no *forms* in a selected *clause*, the case, and therefore **handle
 → RANDOM-CONDITION 
 (assess-condition (make-condition ’random-condition)) 
 → "Hardly worth mentioning." 
-
 ```
 **See Also:** 
 

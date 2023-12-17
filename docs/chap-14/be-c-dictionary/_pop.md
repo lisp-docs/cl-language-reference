@@ -44,14 +44,12 @@ For information about the *evaluation* of *subforms* of *place*, see Section 5.1
 
 **Examples:**
 ```lisp
-
 (setq stack ’(a b c)) → (A B C) 
 (pop stack) → A 
 stack → (B C) 
 (setq llst ’((1 2 3 4))) → ((1 2 3 4)) 
 (pop (car llst)) → 1 
 llst → ((2 3 4)) 
-
 ```
 **Side Effects:** 
 

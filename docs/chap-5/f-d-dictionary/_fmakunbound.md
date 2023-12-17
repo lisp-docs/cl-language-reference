@@ -32,14 +32,12 @@
 
 Removes the *function* or *macro* definition, if any, of *name* in the *global environment*. **Examples:**
 ```lisp
-
 (defun add-some (x) (+ x 19)) → ADD-SOME 
 (fboundp ’add-some) → true 
 (flet ((add-some (x) (+ x 37))) 
   (fmakunbound ’add-some) 
   (add-some 1)) → 38 
 (fboundp ’add-some) → false 
-
 ```
 **Exceptional Situations:** 
 

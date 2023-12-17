@@ -64,7 +64,6 @@ If *object* is the *same* as some *tail* of *list*, **ldiff** returns a *fresh l
 
 **Examples:**
 ```lisp
-
 (let ((lists ’#((a b c) (a b c . d)))) 
   (dotimes (i (length lists)) () 
 	   (let ((list (aref lists i))) 
@@ -95,7 +94,6 @@ If *object* is the *same* as some *tail* of *list*, **ldiff** returns a *fresh l
 ▷ object=D T (A B C) 
 ▷ object=X NIL (A B C . D) 
 → NIL 
-
 ```
 **Side Effects:** 
 

@@ -80,7 +80,6 @@ The order of elements in the result do not have to reflect the ordering of *list
 
 **Examples:**
 ```lisp
-
 (union ’(a b c) ’(f a d)) 
 → (A B C F D) 
 <i><sup>or</sup>→</i> (B C F A D) 
@@ -94,7 +93,6 @@ The order of elements in the result do not have to reflect the ordering of *list
 (nunion lst1 lst2) 
 → (1 (1 2) "a" "b" 2 3 (2 3) "B" "C") 
 <i><sup>or</sup>→</i> (1 2 (1 2) "a" "b" "C" "B" (2 3) 3) 
-
 ```
 **Side Effects:** 
 

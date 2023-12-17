@@ -32,7 +32,6 @@ Returns *true* if *object* is a *keyword* <sub>1</sub>; otherwise, returns *fals
 
 **Examples:**
 ```lisp
-
 (keywordp ’elephant) → false 
 (keywordp 12) → false 
 (keywordp :test) → true 
@@ -43,7 +42,6 @@ Returns *true* if *object* is a *keyword* <sub>1</sub>; otherwise, returns *fals
 (keywordp "hello") → false 
 (keywordp ":hello") → false 
 (keywordp ’&amp;optional) → false 
-
 ```
 **See Also:** 
 

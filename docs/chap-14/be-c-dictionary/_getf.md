@@ -76,7 +76,6 @@
 
 **Examples:**
 ```lisp
-
 (setq x ’()) → NIL 
 (getf x ’prop1) → NIL 
 (getf x ’prop1 7) → 7 
@@ -97,8 +96,6 @@ bar
 <i><sup>or</sup>→</i> (NIL) 
 <i><sup>or</sup>→</i> (C NIL) 
 <i><sup>or</sup>→</i> (C D) 
-
-
 
 
 ```

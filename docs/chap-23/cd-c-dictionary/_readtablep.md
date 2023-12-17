@@ -36,7 +36,6 @@ Returns *true* if *object* is of *type* **readtable**; otherwise, returns *false
 (readtablep \*readtable\*) → true 
 (readtablep (copy-readtable)) → true 
 (readtablep ’\*readtable\*) → false 
-
 ```
 **Notes:** 
 
@@ -128,7 +127,6 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 
 **Examples:**
 ```lisp
-
 (get-dispatch-macro-character #\# #\\{) → NIL 
 (set-dispatch-macro-character #\# #\\{ ;dispatch on #\{ 
 			      #’(lambda(s c n) 
@@ -136,7 +134,6 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 				    (when (consp list) ;return nth element of list 
 				      (unless (and n (< 0 n (length list))) (setq n 0)) 
 				      (setq list (nth n list))) 
-
 				    
 				    
 				    list))) → T 
@@ -148,7 +145,6 @@ If it is desired that #$*foo* : as if it were (dollars *foo*).
   (declare (ignore subchar arg)) 
   (list ’dollars (read stream t nil t))) → |#$-reader| 
 (set-dispatch-macro-character #\# #\$ #’|#$-reader|) → T 
-
 ```
 **See Also:** 
 

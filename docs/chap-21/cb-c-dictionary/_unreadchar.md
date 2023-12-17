@@ -40,7 +40,6 @@ Invoking **peek-char** or **read-char** commits all previous characters. The con
 
 **Examples:**
 ```lisp
-
 (with-input-from-string (is "0123") 
   (dotimes (i 6) 
     (let ((c (read-char is))) 
@@ -49,8 +48,6 @@ Invoking **peek-char** or **read-char** commits all previous characters. The con
 ▷ 2 #\1 
 ▷ 4 #\2 
 → NIL 
-
-
 
 
 ```

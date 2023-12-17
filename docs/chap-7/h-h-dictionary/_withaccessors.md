@@ -72,7 +72,6 @@ Creates a lexical environment in which the slots specified by *slot-entry* are l
 
 **Examples:**
 ```lisp
-
 (defclass thing () 
   ((x :initarg :x :accessor thing-x) 
    (y :initarg :y :accessor thing-y))) 
@@ -101,7 +100,6 @@ Creates a lexical environment in which the slots specified by *slot-entry* are l
    (9 9 2 2 7 7 8 8) 
    (9) 
    (9 9 2 2 (9) (9) 8 8)) 
-
 ```
 **Affected By:** 
 

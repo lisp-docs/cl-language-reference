@@ -448,14 +448,12 @@ If a **define-method-combination** *form* appears as a *top level form*, the *co
 
 **Examples:**
 ```lisp
-
 Most examples of the long form of **define-method-combination** also illustrate the use of the related *functions* that are provided as part of the declarative method combination facility. 
 ;;; Examples of the short form of define-method-combination 
 (define-method-combination and :identity-with-one-argument t) 
 (defmethod func and ((x class1) y) ...) 
 ;;; The equivalent of this example in the long form is: 
 (define-method-combination and 
-
     
     
     **define-method-combination** 
@@ -501,7 +499,6 @@ Most examples of the long form of **define-method-combination** also illustrate 
     ‘(or ,@(mapcar #’(lambda (method) 
 		       ‘(call-method ,method)) 
 		     methods))) 
-
   
   
   **define-method-combination** 
@@ -546,7 +543,6 @@ Most examples of the long form of **define-method-combination** also illustrate 
 			     (,@(rest around) 
 				(make-method ,form))) 
 		form))) 
-
       
       
       **define-method-combination** 
@@ -574,7 +570,6 @@ Most examples of the long form of **define-method-combination** also illustrate 
 				   ‘(call-method ,method)) 
 				 methods)) 
 	   (unlock (object-lock ,object)))) 
-
 ```
 **Side Eects:** 
 

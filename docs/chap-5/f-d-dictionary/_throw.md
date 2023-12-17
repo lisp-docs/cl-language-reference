@@ -56,7 +56,6 @@ The transfer of control initiated by **throw** is performed as described in Sect
 
 **Examples:**
 ```lisp
-
 (catch ’result 
   (setq i 0 j 0) 
   (loop (incf j 3) (incf i) 
@@ -78,7 +77,6 @@ The following prints “The inner catch returns :SECOND-THROW” and then return
   :outer-catch) 
 ▷ The inner catch returns :SECOND-THROW 
 → :OUTER-CATCH 
-
 ```
 **Exceptional Situations:** 
 

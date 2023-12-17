@@ -72,7 +72,6 @@ If *documentation* is supplied, it is attached to *name* as a *documentation str
 
 **Examples:**
 ```lisp
-
 (defparameter \*p\* 1) → \*P\* 
 \*p\* → 1 
 (constantp ’\*p\*) → false 
@@ -104,12 +103,10 @@ Here the initial value, (), for the variable \*the-interesting-numbers\* is just
 	     (dotimes (i n) (si:%beep 1000. 100000.) (sleep 0.1))) 
   Data and Control 
 
-
   **defparameter, defvar** 
   Here we could easily imagine editing the code to change the initial value of \*default-beep-count\*, and then reloading the file to pick up the new value. In order to make value updating easy, we have used **defparameter**. 
   On the other hand, there is potential value to using **defvar** in this situation. For example, suppose that someone had predefined an alternate value for \*default-beep-count\*, or had loaded the file and then manually changed the value. In both cases, if we had used **defvar** instead of **defparameter**, those user preferences would not be overridden by (re)loading the file. 
   The choice of whether to use **defparameter** or **defvar** has visible consequences to programs, but is nevertheless often made for subjective reasons. 
-
 ```
 **Side Effects:** 
 

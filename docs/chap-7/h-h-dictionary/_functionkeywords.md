@@ -48,7 +48,6 @@ Two values are returned: a *list* of the explicitly named keywords and a *genera
 
 **Examples:**
 ```lisp
-
 (defmethod gf1 ((a integer) &amp;optional (b 2) 
 		&amp;key (c 3) ((:dee d) 4) e ((eff f))) 
 		(list a b c d e f)) 
@@ -66,7 +65,6 @@ Two values are returned: a *list* of the explicitly named keywords and a *genera
 		  (list a b c d e f)) 
     (function-keywords \*) 
     → (:B :C :D), *true* 
-
 ```
 **Affected By:** 
 

@@ -20,13 +20,11 @@ This *restart* is established by **warn** so that *handlers* of **warning** *con
 
 **Examples:**
 ```lisp
-
 (defvar \*all-quiet\* nil) → \*ALL-QUIET\* 
 (defvar \*saved-warnings\* ’()) → \*SAVED-WARNINGS\* 
 (defun quiet-warning-handler (c) 
   (when \*all-quiet\* 
     (let ((r (find-restart ’muffle-warning c))) 
-
       
       
       (when r 
@@ -52,7 +50,6 @@ This *restart* is established by **warn** so that *handlers* of **warning** *con
   ▷ Situation #3. 
   ▷ Situation #1. 
   → NIL 
-
 ```
 **See Also:** 
 

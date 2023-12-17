@@ -48,9 +48,7 @@ If an implementation supports additional keyword arguments to **compile-file**, 
 
 **Examples:**
 ```lisp
-
 See **logical-pathname-translations**. 
-
 ```
 **Exceptional Situations:** 
 

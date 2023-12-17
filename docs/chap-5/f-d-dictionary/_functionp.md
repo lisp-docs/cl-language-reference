@@ -32,7 +32,6 @@ Returns *true* if *object* is of *type* **function**; otherwise, returns *false*
 
 **Examples:**
 ```lisp
-
 (functionp ’append) → false 
 (functionp #’append) → true 
 (functionp (symbol-function ’append)) → true 
@@ -42,7 +41,6 @@ Returns *true* if *object* is of *type* **function**; otherwise, returns *false*
 (functionp 12) → false 
 (functionp ’(lambda (x) (\* x x))) → false 
 (functionp #’(lambda (x) (\* x x))) → true 
-
 ```
 **Notes:** 
 

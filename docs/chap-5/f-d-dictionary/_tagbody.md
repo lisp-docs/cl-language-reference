@@ -44,7 +44,6 @@ The determination of which elements of the body are *tags* and which are *statem
 
 **Examples:**
 ```lisp
-
 (let (val) 
   (tagbody 
      (setq val 1) 
@@ -60,8 +59,6 @@ The determination of which elements of the body are *tags* and which are *statem
      (incf val 64) 
    point-b 
      (incf val 08)) 
-
-
 
   val) 
 → 15 
@@ -81,7 +78,6 @@ The determination of which elements of the body are *tags* and which are *statem
 (f1 t) 
 ▷ 1 
 → NIL 
-
 ```
 **See Also:** 
 

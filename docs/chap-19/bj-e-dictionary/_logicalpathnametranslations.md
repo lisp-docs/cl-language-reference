@@ -64,7 +64,6 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 
 **Examples:**
 ```lisp
-
 ;;;A very simple example of setting up a logical pathname host. No 
 ;;;translations are necessary to get around file system restrictions, so 
 ;;;all that is necessary is to specify the root of the physical directory 
@@ -86,7 +85,6 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
       ’(("RELEASED;\*.\*.\*" "MY-UNIX:/sys/bin/my-prog/") 
 	("RELEASED;\*;\*.\*.\*" "MY-UNIX:/sys/bin/my-prog/\*/") 
 	("EXPERIMENTAL;\*.\*.\*" "MY-UNIX:/usr/Joe/development/prog/") 
-
 	
 	
 	**logical-pathname-translations** 
@@ -121,7 +119,6 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 (setf (logical-pathname-translations "prog") 
       ‘(("\*\*;\*.LISP.\*" ,(logical-pathname "PROG:\*\*;\*.L.\*")) 
 	(,(compile-file-pathname (logical-pathname "PROG:\*\*;\*.LISP.\*")) 
-
 	  
 	  
 	  **logical-pathname-translations** 
@@ -165,13 +162,10 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 					   :defaults phypath)))) 
 	     l)))) 
 
-
-
 ;;;Sample use of that logical pathname. The return value 
 ;;;is implementation-dependent. 
 (translate-logical-pathname "prog:code;documentation.lisp") 
 → #P"PGDOC" 
-
 ```
 **Exceptional Situations:** 
 

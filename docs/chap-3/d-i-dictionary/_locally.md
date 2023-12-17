@@ -36,7 +36,6 @@ Sequentially evaluates a body of *forms* in a *lexical environment* where the gi
 
 **Examples:**
 ```lisp
-
 (defun sample-function (y) ;this y is regarded as special 
   (declare (special y)) 
   Evaluation and 
@@ -66,7 +65,6 @@ Sequentially evaluates a body of *forms* in a *lexical environment* where the gi
   (defun frob (w x y &amp;optional (z (foo x y))) 
 	       (mumble x y z w)) 
     → FROB 
-
 ```
 **See Also:** 
 

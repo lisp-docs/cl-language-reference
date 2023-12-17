@@ -292,7 +292,6 @@ For details, see Section 6.1 (The LOOP Facility).
 
 **Examples:**
 ```lisp
-
 ;; An example of the simple form of LOOP. 
 (defun sqrt-advisor () 
   (loop (format t "&#126;&amp;Number: ") 
@@ -326,7 +325,6 @@ For details, see Section 6.1 (The LOOP Facility).
       when (oddp n) 
       collect n) 
 → (1 3 5 7 9) 
-
 ```
 **See Also:** 
 

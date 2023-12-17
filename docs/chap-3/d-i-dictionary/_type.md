@@ -116,7 +116,6 @@ Within the *lexical scope* of an **array** type declaration, all references to *
 
 **Examples:**
 ```lisp
-
 (defun f (x y) 
   (declare (type fixnum x y)) 
   (let ((z (+ x y))) 
@@ -139,7 +138,6 @@ Within the *lexical scope* of an **array** type declaration, all references to *
   (setf (aref an-array 2) 127) 
   (setf (aref an-array 3) (\* 2 (aref an-array 3))) 
   (let ((foo 0)) 
-
     
     
     **type** 
@@ -161,7 +159,6 @@ Given an implementation in which *fixnums* are 29 bits but **fixnum** *arrays* a
   (declare (type (array fixnum \*) bump-counters)) 
   (dotimes (i (length counters)) 
     (incf (aref counters i)))) 
-
 ```
 **See Also:** 
 

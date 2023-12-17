@@ -83,7 +83,6 @@ The use of **symbol-macrolet** can be shadowed by **let**. In other words, **sym
 (symbol-macrolet ((x ’(foo x))) 
 (list x)) 
 → ((FOO X)) 
-
 ```
 **Exceptional Situations:** 
 
@@ -159,7 +158,6 @@ Evaluation and
 
 **Examples:**
 ```lisp
-
 (defun hook (expander form env) 
   (format t "Now expanding: &#126;S&#126;%" form) 
   (funcall expander form env)) → HOOK 
@@ -168,7 +166,6 @@ Evaluation and
 (let ((\*macroexpand-hook\* #’hook)) (macroexpand ’(machook 1 2))) 
 ▷ Now expanding (MACHOOK 1 2) 
 → (/ (+ 1 2) 2), *true* 
-
 ```
 **See Also:** 
 

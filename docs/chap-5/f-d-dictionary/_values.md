@@ -44,7 +44,6 @@
 
 **Examples:**
 ```lisp
-
 (values) → hno valuesi 
 (values 1) → 1 
 (values 1 2) → 1, 2 
@@ -60,12 +59,9 @@ Sometimes it is desirable to indicate explicitly that a function returns exactly
   (floor (+ x y) y)) → FOO 
 returns two values because **floor** returns two values. It may be that the second value makes no sense, or that for eciency reasons it is desired not to compute the second value. **values** is the standard idiom for indicating that only one value is to be returned: 
 
-
-
 (defun foo (x y) 
   (values (floor (+ x y) y))) → FOO 
 This works because **values** returns exactly one value for each of *args*; as for any function call, if any of *args* produces more than one value, all but the first are discarded. 
-
 ```
 **See Also:** 
 

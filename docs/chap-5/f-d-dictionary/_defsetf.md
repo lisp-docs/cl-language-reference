@@ -116,15 +116,12 @@ If a **defsetf** *form* appears as a *top level form*, the *compiler* must make 
 
 **Examples:**
 ```lisp
-
 The e↵ect of 
 (defsetf symbol-value set) 
 is built into the Common Lisp system. This causes the form (setf (symbol-value foo) fu) to expand into (set foo fu). 
 Note that 
 (defsetf car rplaca) 
 would be incorrect because **rplaca** does not return its last argument. 
-
-
 
 **defsetf** 
 (defun middleguy (x) (nth (truncate (1- (list-length x)) 2) x)) → MIDDLEGUY 
@@ -173,7 +170,6 @@ An example of the use of the long form of **defsetf**:
 								  Data and Control 
 								  
 								  
-
 ```
 **See Also:** 
 

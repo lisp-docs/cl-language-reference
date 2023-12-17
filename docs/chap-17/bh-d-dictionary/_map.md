@@ -64,7 +64,6 @@ If the *result-type* is a *subtype* of **vector**, then if the implementation ca
 
 **Examples:**
 ```lisp
-
 (map ’string #’(lambda (x y) 
 		 (char "01234567890ABCDEF" (mod (+ x y) 16))) 
       ’(1 2 3 4) 
@@ -77,7 +76,6 @@ seq → ("LOWER" "UPPER" "" "123")
       #’(lambda (x) (if (oddp x) #\1 #\0)) 
       ’(1 2 3 4)) → "1010" 
 (map ’(vector \* 4) #’cons "abc" "de") should signal an error 
-
 ```
 **Exceptional Situations:** 
 

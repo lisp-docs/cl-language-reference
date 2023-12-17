@@ -40,7 +40,6 @@ Returns *true* if *name* is *fbound*; otherwise, returns *false*.
 
 **Examples:**
 ```lisp
-
 (fboundp ’car) → true 
 (fboundp ’nth-value) → false 
 (fboundp ’with-open-file) → true 
@@ -59,7 +58,6 @@ Returns *true* if *name* is *fbound*; otherwise, returns *false*.
 (fboundp ’my-function) → false 
 (flet ((my-function (x) x)) 
   (fboundp ’my-function)) → false 
-
 ```
 **Exceptional Situations:** 
 

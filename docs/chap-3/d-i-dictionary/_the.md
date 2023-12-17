@@ -44,7 +44,6 @@ Regardless of number of *values* declared by *value-type*, the number of *values
 
 **Examples:**
 ```lisp
-
 (the symbol (car (list (gensym)))) → #:G9876 
 (the fixnum (+ 5 7)) → 12 
 (the (values) (truncate 3.2 2)) → 1, 1.2 
@@ -62,8 +61,6 @@ Regardless of number of *values* declared by *value-type*, the number of *values
        (setf (the fixnum (car x)) y) 
        x) → (5 B C) 
 Evaluation and 
-
-
 
 ```
 **Exceptional Situations:** 

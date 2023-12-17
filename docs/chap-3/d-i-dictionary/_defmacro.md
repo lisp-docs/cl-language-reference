@@ -88,7 +88,6 @@ If a **defmacro** *form* appears as a *top level form*, the *compiler* must stor
 
 **Examples:**
 ```lisp
-
 (defmacro mac1 (a b) "Mac1 multiplies and adds" 
 	  ‘(+ ,a (\* ,b 3))) → MAC1 
 (mac1 4 5) → 19 
@@ -99,7 +98,6 @@ If a **defmacro** *form* appears as a *top level form*, the *compiler* must stor
 				‘’(,r ,a ,b ,c ,d ,x)) → MAC3 
 				  (mac3 1 6 :d 8 :c 9 :d 10) → ((MAC3 1 6 :D 8 :C 9 :D 10) 1 6 9 8 (:D 8 :C 9 :D 10)) 
 				  The stipulation that an embedded *destructuring lambda list* is permitted only where *ordinary lambda list* syntax would permit a parameter name but not a *list* is made to prevent ambiguity. For example, the following is not valid:  
-
 				  **defmacro** 
 				  (defmacro loser (x &amp;optional (a b &amp;rest c) &amp;rest z) 
 						   ...) 
@@ -128,7 +126,6 @@ If a **defmacro** *form* appears as a *top level form*, the *compiler* must stor
 																																				  (dm2a x y) → (FORM (DM2A X Y) A X B Y) 
 																																				  (defmacro dm2b (&amp;whole form a (&amp;whole b (c . d) &amp;optional (e 5)) 
 																																						  &amp;body f &amp;environment env)  
-
 																																						  “(,’,form „a ,’,b ,’,(macroexpand c env) ,’,d ,’,e ,’,f)) 
 					;Note that because backquote is involved, implementations may differ 
 					;slightly in the nature (though not the functionality) of the expansion. 
@@ -143,7 +140,6 @@ If a **defmacro** *form* appears as a *top level form*, the *compiler* must stor
 																																					(dm2b x1 (((segundo x2) x3 x4)) x5 x6))) 
 																																				    → ((DM2B X1 (((SEGUNDO X2) X3 X4)) X5 X6) 
 																																				       5 (((SEGUNDO X2) X3 X4)) (CADR X2) (X3 X4) 5 (X5 X6)) 
-
 ```
 **See Also:** 
 

@@ -48,12 +48,10 @@ Mathematically speaking, **ash** performs the computation floor(<i>integer·</i>
 
 **Examples:**
 ```lisp
-
 (ash 16 1) → 32 
 (ash 16 0) → 16 
 (ash 16 -1) → 8 
 (ash -100000000000000000000000000000000 -100) → -79 
-
 ```
 **Exceptional Situations:** 
 

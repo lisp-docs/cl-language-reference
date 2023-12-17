@@ -68,7 +68,6 @@
 
 **Examples:**
 ```lisp
-
 (get-macro-character #\\{) → NIL, *false* 
 (not (get-macro-character #\;)) → false 
 The following is a possible definition for the *single-quote reader macro* in *standard syntax* : 
@@ -86,7 +85,6 @@ The following is a possible definition for the *semicolon reader macro* in *stan
   ;; Return zero values. 
   (values)) → SEMICOLON-READER 
 (set-macro-character #\; #’semicolon-reader) → T 
-
 ```
 **Side Effects:** 
 

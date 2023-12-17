@@ -32,7 +32,6 @@
 
 **Examples:**
 ```lisp
-
 (find-all-symbols ’car) 
 → (CAR) 
 <i><sup>or</sup>→</i> (CAR VEHICLES:CAR) 
@@ -43,7 +42,6 @@
 <i><sup>or</sup>→</i> (CAR TEMP::CAR) 
 <i><sup>or</sup>→</i> (TEMP::CAR CAR VEHICLES:CAR) 
 <i><sup>or</sup>→</i> (CAR TEMP::CAR VEHICLES:CAR) 
-
 ```
 **See Also:** 
 

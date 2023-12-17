@@ -144,7 +144,6 @@ If *thing* contains an explicit host name and no explicit device name, then it i
 
 **Examples:**
 ```lisp
-
 (setq q (parse-namestring "test")) 
 → #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME "test" 
 	      :TYPE NIL :VERSION NIL) 
@@ -160,7 +159,6 @@ If *thing* contains an explicit host name and no explicit device name, then it i
 → #S(PATHNAME ...), 15 
 (parse-namestring "foo.lisp") 
 → #P"foo.lisp" 
-
 ```
 **Exceptional Situations:** 
 

@@ -44,12 +44,10 @@
 
 **Examples:**
 ```lisp
-
 (defun fix-digits (condition) 
   (check-type condition type-error) 
   (let\* ((digits ’(zero one two three four 
 			 five six seven eight nine))  
-
 	  (val (position (type-error-datum condition) digits))) 
 	 (if (and val (subtypep ’fixnum (type-error-expected-type condition))) 
 	     (store-value 7)))) 
@@ -59,7 +57,6 @@
     (+ x 3))) 
 (foo ’seven) 
 → 10 
-
 ```
 **See Also:** 
 

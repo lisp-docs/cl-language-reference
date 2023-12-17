@@ -36,7 +36,6 @@ Creates a *fresh cons*, the *car* of which is *object-1* and the *cdr* of which 
 
 **Examples:**
 ```lisp
-
 (cons 1 2) → (1 . 2) 
 (cons 1 nil) → (1) 
 (cons nil 2) → (NIL . 2) 
@@ -45,7 +44,6 @@ Creates a *fresh cons*, the *car* of which is *object-1* and the *cdr* of which 
 (cons ’a ’b) → (A . B) 
 (cons ’a (cons ’b (cons ’c ’()))) → (A B C) 
 (cons ’a ’(b c d)) → (A B C D) 
-
 ```
 **See Also:** 
 

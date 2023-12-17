@@ -132,7 +132,6 @@ Any *tag* in the body is treated as with **tagbody**.
 
 **Examples:**
 ```lisp
-
 (make-package ’temp :use nil) → #<PACKAGE "TEMP"> 
 (intern "SHY" ’temp) → TEMP::SHY, NIL ;SHY will be an internal symbol 
 					;in the package TEMP 
@@ -152,8 +151,6 @@ Any *tag* in the body is treated as with **tagbody**.
   lst) 
 → (TEMP::SHY TEMP:BOLD) 
 <i><sup>or</sup>→</i> (TEMP:BOLD TEMP::SHY) 
-
-
 
 
 ```

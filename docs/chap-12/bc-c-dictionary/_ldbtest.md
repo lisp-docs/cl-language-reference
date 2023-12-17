@@ -36,11 +36,9 @@ Returns *true* if any of the bits of the byte in *integer* specified by *bytespe
 
 **Examples:**
 ```lisp
-
 (ldb-test (byte 4 1) 16) →  true 
 (ldb-test (byte 3 1) 16) →  false 
 (ldb-test (byte 3 2) 16) →  true 
-
 ```
 **See Also:** 
 

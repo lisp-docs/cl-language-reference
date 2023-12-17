@@ -52,7 +52,6 @@ Determines five values constituting the *setf expansion* for *place* in *environ
 
 If *environment* is not supplied or **nil**, the environment is the *null lexical environment*. **Examples:**
 ```lisp
-
 (get-setf-expansion ’x) 
 → NIL, NIL, (#:G0001), (SETQ X #:G0001), X 
 ;;; This macro is like POP 
@@ -68,7 +67,6 @@ If *environment* is not supplied or **nil**, the environment is the *null lexica
     ‘(setf (car ,x) ,value)) → FROB 
 ;;; The following is an error; an error might be signaled at macro expansion time (flet ((frob (x) (cdr x))) ;Invalid 
   (xpop (frob z))) 
-
 ```
 **See Also:** 
 

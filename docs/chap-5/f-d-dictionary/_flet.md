@@ -172,7 +172,6 @@ Data and Control
 
 **Examples:**
 ```lisp
-
 (defun foo (x flag) 
   (macrolet ((fudge (z) 
 					;The parameters x and flag are not accessible 
@@ -211,8 +210,6 @@ after macro expansion. The occurrences of x and flag legitimately refer to the p
 		 (let ((form ‘(babbit ,x))) 
 		   (macroexpand form env))) → MLETS 
 
-
-
 		   **flet, labels, macrolet** 
 		   (macrolet ((babbit (z) ‘(+ ,z ,z))) (mlets 5)) → 10 
 		   (flet ((safesqrt (x) (sqrt (abs x)))) 
@@ -243,7 +240,6 @@ after macro expansion. The occurrences of x and flag legitimately refer to the p
 		   (example ’((a apple apricot) (b banana) (c cherry) (d) (e)) 
 			     ’((1) (2) (3) (4 2) (5) (6 3 2))) 
 		   → ((1) (2) (3) (4 2) (5) (6 3 2) (A APPLE APRICOT) (B BANANA) (C CHERRY)) 
-
 ```
 **See Also:** 
 

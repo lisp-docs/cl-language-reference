@@ -68,7 +68,6 @@ For information about the *evaluation* of *subforms* of *places*, see Section 5.
 
 **Examples:**
 ```lisp
-
 (setq n 0) 
 (incf n) → 1 
 n → 1 
@@ -79,7 +78,6 @@ n → -2
 (incf n 0.5) → 2.5 
 (decf n) → 1.5 
 n → 1.5 
-
 ```
 **Side Effects:** 
 

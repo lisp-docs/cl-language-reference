@@ -36,7 +36,6 @@ Specifically, *package* is searched for *symbols* with the *names* supplied by *
 
 **Examples:**
 ```lisp
-
 (package-shadowing-symbols (make-package ’temp)) → NIL 
 (find-symbol ’car ’temp) → CAR, :INHERITED 
 (shadow ’car ’temp) → T 
@@ -46,8 +45,6 @@ Specifically, *package* is searched for *symbols* with the *names* supplied by *
 (intern "TEST" (find-package ’test-1)) → TEST-1::TEST, NIL 
 (shadow ’test-1::test (find-package ’test-1)) → T 
 
-
-
 (shadow ’TEST (find-package ’test-1)) → T 
 (assert (not (null (member ’test-1::test (package-shadowing-symbols 
 					  (find-package ’test-1)))))) 
@@ -55,7 +52,6 @@ Specifically, *package* is searched for *symbols* with the *names* supplied by *
 (intern "TEST" (find-package ’test-2)) → TEST-2::TEST, NIL 
 (export ’test-2::test (find-package ’test-2)) → T 
 (use-package ’test-2 (find-package ’test-1)) ;should not error 
-
 ```
 **Side Effects:** 
 

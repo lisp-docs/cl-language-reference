@@ -72,7 +72,6 @@ This is the normal mechanism for defining a *compiler macro function*. Its manne
 
 **Examples:**
 ```lisp
-
 (defun square (x) (expt x 2)) → SQUARE 
 (define-compiler-macro square (&amp;whole form arg) 
 			       (if (atom arg) 
@@ -112,7 +111,6 @@ This is the normal mechanism for defining a *compiler macro function*. Its manne
 									 (flet ((key (n) (nth (\* n 2) key-value-pairs)) 
 										(arg (n) (nth (1+ (\* n 2)) key-value-pairs)) 
 										(simplep (x)  
-
 										  **define-compiler-macro** 
 										  (let ((expanded-x (macroexpand x env))) 
 										    (or (constantp expanded-x env) 
@@ -158,7 +156,6 @@ This is the normal mechanism for defining a *compiler macro function*. Its manne
 						      (distance :x1 a1 :y1 b1 :z1 c1 :x2 a2 :y2 b2 :z2 c2))) 
 					    (print (funcall (compiler-macro-function ’distance) form nil))) 
 					  ▷ (LET ((#:G6558 (SETQ X 7))  
-
 						  ▷ (#:G6559 (DECF X)) 
 						  ▷ (#:G6560 (DECF X)) 
 						  ▷ (#:G6561 (DECF X))) 
@@ -172,7 +169,6 @@ This is the normal mechanism for defining a *compiler macro function*. Its manne
 					  ▷ (DISTANCE-POSITIONAL A1 B1 A2 B2) 
 					  ▷ (DISTANCE :X1 A1 :Y1 B1 :Z1 C1 :X2 A2 :Y2 B2 :Z2 C2) 
 					  → NIL 
-
 ```
 **See Also:** 
 

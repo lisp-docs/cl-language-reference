@@ -78,7 +78,6 @@ A *value* 0 means that the corresponding *quality* is totally unimportant, and 3
 
 Note that *code* which has the optimization (safety 3), or just **safety**, is called *safe code*. The consequences are unspecified if a *quality* appears more than once with *di↵erent values*. **Examples:**
 ```lisp
-
 (defun often-used-subroutine (x y) 
   (declare (optimize (safety 2))) 
   (error-check x y) 
@@ -90,7 +89,6 @@ Note that *code* which has the optimization (safety 3), or just **safety**, is c
     (declare (optimize speed)) 
     (declare (fixnum i)) 
     )) 
-
 ```
 **See Also:** 
 

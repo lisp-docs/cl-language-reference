@@ -200,7 +200,6 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 
 **Examples:**
 ```lisp
-
 (restart-case 
     (handler-bind ((error #’(lambda (c) 
 			      (declare (ignore condition)) 
@@ -221,7 +220,6 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 				    (bad-tasting-sundae-topping condition))))) 
 	       → BAD-TASTING-SUNDAE 
 	       (defun all-start-with-same-letter (symbol1 symbol2 symbol3) 
-
 		 
 		 
 		 **restart-case** 
@@ -233,7 +231,6 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 		 (format t "Enter a new value: ") 
 		 (multiple-value-list (eval (read)))) 
 	       → READ-NEW-VALUE 
-
 	       
 	       
 	       **restart-case** 
@@ -266,7 +263,6 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 	       ▷ Use a new ice cream. 
 	       ▷ Enter a new ice cream: ’chocolate 
 	       → CHOCOLATE, CARAMEL, CHERRY 
-
 ```
 **See Also:** 
 

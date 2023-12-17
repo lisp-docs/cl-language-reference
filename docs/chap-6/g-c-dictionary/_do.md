@@ -125,14 +125,9 @@ An *implicit block* named **nil** surrounds the entire **do** (or **do\***) form
 ```lisp
 (do ((temp-one 1 (1+ temp-one)) 
 
-
-
 (temp-two 0 (1- temp-two))) 
 
-
-
 ((> (- temp-one temp-two) 5) temp-one)) → 4 
-
 ```
 
 
@@ -150,145 +145,77 @@ An *implicit block* named **nil** surrounds the entire **do** (or **do\***) form
 **do, do***∗* 
 
 ```lisp
-
 (do ((temp-one 1 (1+ temp-one)) 
 
-
-
 (temp-two 0 (1+ temp-one))) 
-
-
 
 ((= 3 temp-two) temp-one)) → 3 
 
-
-
 (do\* ((temp-one 1 (1+ temp-one)) 
-
-
 
 (temp-two 0 (1+ temp-one))) 
 
-
-
 ((= 3 temp-two) temp-one)) → 2 
-
-
 
 (do ((j 0 (+ j 1))) 
 
-
-
 (nil) ;Do forever. 
-
-
 
 (format t "&#126;%Input &#126;D:" j) 
 
-
-
 (let ((item (read))) 
-
-
 
 (if (null item) (return) ;Process items until NIL seen. 
 
-
-
 (format t "&#126;&amp;Output &#126;D: &#126;S" j item)))) 
-
-
 
 ▷ Input 0: banana 
 
-
-
 ▷ Output 0: BANANA 
-
-
 
 ▷ Input 1: (57 boxes) 
 
-
-
 ▷ Output 1: (57 BOXES) 
-
-
 
 ▷ Input 2: NIL 
 
-
-
 → NIL 
-
-
 
 (setq a-vector (vector 1 nil 3 nil)) 
 
-
-
 (do ((i 0 (+ i 1)) ;Sets every null element of a-vector to zero. 
-
-
 
 (n (array-dimension a-vector 0))) 
 
-
-
 ((= i n)) 
-
-
 
 (when (null (aref a-vector i)) 
 
-
-
 (setf (aref a-vector i) 0))) → NIL 
-
-
 
 a-vector → #(1 0 3 0) 
 
-
-
 (do ((x e (cdr x)) 
-
-
 
 (oldx x x)) 
 
-
-
 ((null x)) 
 
-
-
 body) 
-
 ```
 
 is an example of parallel assignment to index variables. On the first iteration, the value of oldx is whatever value x had before the **do** was entered. On succeeding iterations, oldx contains the value that x had on the previous iteration. 
 
 ```lisp
-
 (do ((x foo (cdr x)) 
-
-
 
 (y bar (cdr y)) 
 
-
-
 (z ’() (cons (f (car x) (car y)) z))) 
-
-
 
 ((or (null x) (null y)) 
 
-
-
 (nreverse z))) 
-
 ```
 
 does the same thing as (mapcar #’f foo bar). The step computation for z is an example of the fact that variables are stepped in parallel. Also, the body of the loop is empty. 
@@ -313,18 +240,11 @@ does the same thing as (mapcar #’f foo bar). The step computation for z is an 
 ```lisp
 (defun list-reverse (list) 
 
-
-
 (do ((x list (cdr x)) 
-
-
 
 (y ’() (cons (car x) y))) 
 
-
-
 ((endp x) y))) 
-
 ```
 
 As an example of nested iterations, consider a data structure that is a *list* of *conses*. The *car* of each *cons* is a *list* of *symbols*, and the *cdr* of each *cons* is a *list* of equal length containing corresponding values. Such a data structure is similar to an association list, but is divided into “frames”; the overall structure resembles a rib-cage. A lookup function on such a data structure might be: 
@@ -333,34 +253,19 @@ As an example of nested iterations, consider a data structure that is a *list* o
 ```lisp
 (defun ribcage-lookup (sym ribcage) 
 
-
-
 (do ((r ribcage (cdr r))) 
-
-
 
 ((null r) nil) 
 
-
-
 (do ((s (caar r) (cdr s)) 
-
-
 
 (v (cdar r) (cdr v))) 
 
-
-
 ((null s)) 
-
-
 
 (when (eq (car s) sym) 
 
-
-
 (return-from ribcage-lookup (car v)))))) → RIBCAGE-LOOKUP 
-
 ```
 
 **See Also:** 
@@ -385,50 +290,27 @@ A **do** *form* may be explained in terms of the more primitive *forms* **block*
 ```lisp
 (block nil 
 
-
-
 (let ((var1 init1) 
-
-
 
 (var2 init2) 
 
-
-
 ... 
-
-
 
 (varn initn)) 
 
-
-
 *declarations* 
-
-
 
 (loop (when end-test (return (progn . result))) 
 
-
-
 (tagbody . tagbody) 
-
-
 
 (psetq var1 step1 
 
-
-
 var2 step2 
-
-
 
 ... 
 
-
-
 varn stepn)))) 
-
 ```
 
 **do\*** is similar, except that **let\*** and **setq** replace the **let** and **psetq**, respectively. 

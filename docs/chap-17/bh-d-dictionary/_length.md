@@ -36,7 +36,6 @@ If *sequence* is a *vector* with a *fill pointer* , the active length as specifi
 
 **Examples:**
 ```lisp
-
 (length "abc") → 3 
 (setq str (make-array ’(3) :element-type ’character 
 		       :initial-contents "abc" 
@@ -44,7 +43,6 @@ If *sequence* is a *vector* with a *fill pointer* , the active length as specifi
 (length str) → 3 
 (setf (fill-pointer str) 2) → 2 
 (length str) → 2 
-
 ```
 **Exceptional Situations:** 
 

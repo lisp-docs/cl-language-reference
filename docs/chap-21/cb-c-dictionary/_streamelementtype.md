@@ -32,7 +32,6 @@
 
 *Streams* created by **open** have an *element type* restricted to **integer** or a *subtype* of *type* **character**. **Examples:**
 ```lisp
-
 ;; Note that the stream must accomodate at least the specified type, 
 ;; but might accomodate other types. Further note that even if it does 
 ;; accomodate exactly the specified type, the type might be specified in 
@@ -40,7 +39,6 @@
 (with-open-file (s "test" :element-type ’(integer 0 1) 
 		   :if-exists :error 
 		   :direction :output) 
-
   
   
   (stream-element-type s)) 
@@ -51,7 +49,6 @@
 <i><sup>or</sup>→</i> (UNSIGNED-BYTE 1) 
 <i><sup>or</sup>→</i> (INTEGER 0 1) 
 <i><sup>or</sup>→</i> (INTEGER 0 (2)) 
-
 ```
 **Exceptional Situations:** 
 

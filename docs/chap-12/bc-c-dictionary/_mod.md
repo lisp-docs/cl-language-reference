@@ -48,7 +48,6 @@
 
 **mod** and **rem** are the modulus and remainder functions when *number* and *divisor* are *integers*. **Examples:**
 ```lisp
-
 (rem -1 5) → -1 
 (mod -1 5) → 4 
 (mod 13 4) → 1 
@@ -63,8 +62,6 @@
 (rem 13.4 1) → 0.4 
 (mod -13.4 1) → 0.6 
 (rem -13.4 1) → -0.4 
-
-
 
 
 ```

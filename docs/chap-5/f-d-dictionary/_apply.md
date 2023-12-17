@@ -40,7 +40,6 @@ When the *function* receives its arguments via **&amp;rest**, it is permissible 
 
 **setf** can be used with **apply** in certain circumstances; see Section 5.1.2.5 (APPLY Forms as Places). **Examples:**
 ```lisp
-
 (setq f ’+) → + 
 (apply f ’(1 2)) → 3 
 (setq f #’-) → #<FUNCTION -> 
@@ -59,10 +58,7 @@ When the *function* receives its arguments via **&amp;rest**, it is permissible 
 						   (if double (concatenate (type-of v) v v) v))) 
 				       (foo 4 :initial-contents ’(a b c d) :double t) 
 
-
-
 				       → #(A B C D A B C D) 
-
 ```
 **See Also:** 
 

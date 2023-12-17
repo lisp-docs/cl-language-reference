@@ -48,7 +48,6 @@ The **continue** *restart* can be used to continue with the normal *signaling* p
 
 **Examples:**
 ```lisp
-
 \*break-on-signals\* → NIL 
 (ignore-errors (error ’simple-error :format-control "Fooey!")) 
 → NIL, #<SIMPLE-ERROR 32207172> 
@@ -76,7 +75,6 @@ The **continue** *restart* can be used to continue with the normal *signaling* p
 ▷ 1: Top level. 
 ▷ Debug> :CONTINUE 1 
 ▷ Top level. 
-
 ```
 **See Also:** 
 

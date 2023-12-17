@@ -64,7 +64,6 @@ Figure 3–22 shows a list of *declaration identifiers* that can be used with **
 
 An implementation is free to support other (*implementation-defined*) *declaration identifiers* as well. **Examples:**
 ```lisp
-
 (defun declare-variable-types-globally (type vars) 
   (proclaim ‘(type ,type ,@vars)) 
   type) 
@@ -72,7 +71,6 @@ An implementation is free to support other (*implementation-defined*) *declarati
 ;; must always contain a float. 
 (declare-variable-types-globally ’float ’(\*tolerance\*)) 
 → FLOAT 
-
 ```
 **See Also:** 
 

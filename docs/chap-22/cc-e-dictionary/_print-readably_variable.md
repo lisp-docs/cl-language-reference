@@ -62,171 +62,87 @@ If **\*read-eval\*** is *false* and **\*print-readably\*** is *true*, any such m
 ```lisp
  
 
-
-
 (let ((x (list "a" ’\a (gensym) ’((a (b (c))) d e f g))) 
-
-
 
 (\*print-escape\* nil) 
 
-
-
 (\*print-gensym\* nil) 
-
-
 
 (\*print-level\* 3) 
 
-
-
 (\*print-length\* 3)) 
 
-
-
 (write x) 
-
-
 
 (let ((\*print-readably\* t)) 
 
-
-
 (terpri) 
-
-
 
 (write x) 
 
-
-
 :done)) 
-
-
 
 ▷ (a a G4581 ((A #) D E ...)) 
 
-
-
 ▷ ("a" |a| #:G4581 ((A (B (C))) D E F G)) 
-
-
 
 → :DONE 
 
-
-
 ;; This is setup code is shared between the examples 
 
-
-
 ;; of three hypothetical implementations which follow. 
-
-
 
 (setq table (make-hash-table)) → #\<HASH-TABLE EQL 0/120 32005763\> 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (setf (gethash table 1) ’one) → ONE 
 
-
-
 (setf (gethash table 2) ’two) → TWO 
-
-
 
 ;; Implementation A 
 
-
-
 (let ((\*print-readably\* t)) (print table)) 
-
-
 
 Error: Can’t print #\<HASH-TABLE EQL 0/120 32005763\> readably. 
 
-
-
 ;; Implementation B 
-
-
 
 ;; No standardized #S notation for hash tables is defined, 
 
-
-
 ;; but there might be an implementation-defined notation. 
 
-
-
 (let ((\*print-readably\* t)) (print table)) 
-
-
 
 ▷ #S(HASH-TABLE :TEST EQL :SIZE 120 :CONTENTS (1 ONE 2 TWO)) 
 
-
-
 → #\<HASH-TABLE EQL 0/120 32005763\> 
-
-
 
 ;; Implementation C 
 
-
-
 ;; Note that #. notation can only be used if \*READ-EVAL\* is true. 
-
-
 
 ;; If \*READ-EVAL\* were false, this same implementation might have to 
 
-
-
 ;; signal an error unless it had yet another printing strategy to fall 
-
-
 
 ;; back on. 
 
-
-
 (let ((\*print-readably\* t)) (print table)) 
-
-
 
 ▷ #.(LET ((HASH-TABLE (MAKE-HASH-TABLE))) 
 
-
-
 ▷ (SETF (GETHASH 1 HASH-TABLE) ONE) 
-
-
 
 ▷ (SETF (GETHASH 2 HASH-TABLE) TWO) 
 
-
-
 ▷ HASH-TABLE) 
 
-
-
 → #\<HASH-TABLE EQL 0/120 32005763\> 
-
-
 
 
 ```

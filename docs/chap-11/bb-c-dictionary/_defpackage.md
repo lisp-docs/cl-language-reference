@@ -220,7 +220,6 @@ If a defpackage *form* appears as a *top level form*, all of the actions normall
 
 **Examples:**
 ```lisp
-
 (defpackage "MY-PACKAGE" 
   (:nicknames "MYPKG" "MY-PKG") 
   (:use "COMMON-LISP") 
@@ -235,7 +234,6 @@ If a defpackage *form* appears as a *top level form*, all of the actions normall
   (:shadow CAR :cdr #:cons) 
   (:export "CONS") ; this is the shadowed one. 
   ) 
-
 ```
 **Affected By:** 
 

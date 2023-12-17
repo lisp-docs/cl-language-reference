@@ -28,7 +28,6 @@ Clears any available input from *input-stream*.
 
 If **clear-input** does not make sense for *input-stream*, then **clear-input** does nothing. **Examples:**
 ```lisp
-
 ;; The exact I/O behavior of this example might vary from implementation 
 ;; to implementation depending on the kind of interactive buffering that 
 ;; occurs. (The call to SLEEP here is intended to help even out the 
@@ -55,12 +54,10 @@ If **clear-input** does not make sense for *input-stream*, then **clear-input** 
   (read-sleepily t 10) 
   ▷ > 10 
   ▷ > 20 ; Some implementations won’t echo typeahead here. 
-
   
   
   ▷ » 30 
   → (10 30) 
-
 ```
 **Side Effects:** 
 

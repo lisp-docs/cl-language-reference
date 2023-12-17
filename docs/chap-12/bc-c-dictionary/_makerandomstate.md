@@ -36,7 +36,6 @@ If *state* is a *random state object*, the *new-state* is a *copy*<sub>5</sub> o
 
 **Examples:**
 ```lisp
-
 (let\* ((rs1 (make-random-state nil)) 
 	(rs2 (make-random-state t)) 
 	(rs3 (make-random-state rs2)) 
@@ -54,7 +53,6 @@ If *state* is a *random state object*, the *new-state* is a *copy*<sub>5</sub> o
    (93 85 53 99 58 62 2 23 23 59) 
    (93 85 53 99 58 62 2 23 23 59) 
    (68 24 35 54 65 54 55 50 59 49)) 
-
 ```
 **Exceptional Situations:** 
 

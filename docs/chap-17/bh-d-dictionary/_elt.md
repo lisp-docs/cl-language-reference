@@ -44,12 +44,10 @@
 
 **Examples:**
 ```lisp
-
 (setq str (copy-seq "0123456789")) → "0123456789" 
 (elt str 6) → #\6 
 (setf (elt str 0) #\#) → #\# 
 str → "#123456789" 
-
 ```
 **Exceptional Situations:** 
 

@@ -40,7 +40,6 @@
 
 If no appropriate and relevant result can be produced, **nil** is returned instead of a *string*. **Examples:**
 ```lisp
-
 (lisp-implementation-type) 
 → "ACME Lisp" 
 <i><sup>or</sup>→</i> "Joe’s Common Lisp" 
@@ -48,5 +47,4 @@ If no appropriate and relevant result can be produced, **nil** is returned inste
 → "1.3a" 
 → "V2" 
 <i><sup>or</sup>→</i> "Release 17.3, ECO #6" 
-
 ```

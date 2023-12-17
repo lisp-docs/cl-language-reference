@@ -84,7 +84,6 @@ In the normal case, the result of **reduce** is the combined result of *function
 
 **Examples:**
 ```lisp
-
 (reduce #’\* ’(1 2 3 4 5)) → 120 
 (reduce #’append ’((1) (2)) :initial-value ’(i n i t)) → (I N I T 1 2) 
 (reduce #’append ’((1) (2)) :from-end t 
@@ -100,7 +99,6 @@ In the normal case, the result of **reduce** is the combined result of *function
 (reduce #’list ’(1 2 3 4) :initial-value ’foo) → ((((foo 1) 2) 3) 4) 
 (reduce #’list ’(1 2 3 4) 
 	  :from-end t :initial-value ’foo) → (1 (2 (3 (4 foo)))) 
-
 ```
 **Exceptional Situations:** 
 

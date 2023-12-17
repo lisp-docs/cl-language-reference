@@ -64,7 +64,6 @@ In some implementations the *stream* argument passed to a **describe-object** me
 
 **Examples:**
 ```lisp
-
 (defclass spaceship () 
   ((captain :initarg :captain :accessor spaceship-captain) 
    (serial# :initarg :serial-number :accessor spaceship-serial-number))) 
@@ -82,7 +81,6 @@ and with serial number &#126;D.&#126;%"
 (describe \*) 
 ▷ #<FEDERATION-STARSHIP 26312465> is a spaceship of type FEDERATION-STARSHIP, ▷ with Rachel Garrett at the helm and with serial number NCC-1701-C. 
 → hno valuesi 
-
 ```
 **See Also:** 
 

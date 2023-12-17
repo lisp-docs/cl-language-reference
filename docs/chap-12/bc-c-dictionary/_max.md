@@ -56,7 +56,6 @@ For **max**, the implementation has the choice of returning the largest argument
 
 **Examples:**
 ```lisp
-
 (max 3) → 3 
 (min 3) → 3 
 (max 6 12) → 12 
@@ -79,8 +78,6 @@ For **max**, the implementation has the choice of returning the largest argument
 <i><sup>or</sup>→</i> 1.0 
 (max 1.0s0 7.0d0) → 7.0d0 
 
-
-
 (min 1.0s0 7.0d0) 
 → 1.0s0 
 <i><sup>or</sup>→</i> 1.0d0 
@@ -91,7 +88,6 @@ For **max**, the implementation has the choice of returning the largest argument
 → 1 
 <i><sup>or</sup>→</i> 1.0s0 
 <i><sup>or</sup>→</i> 1.0d0 
-
 ```
 **Exceptional Situations:** 
 

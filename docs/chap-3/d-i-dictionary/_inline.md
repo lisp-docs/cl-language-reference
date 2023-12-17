@@ -108,7 +108,6 @@ In the presence of a *compiler macro* definition for *function-name*, a **notinl
 
 **Examples:**
 ```lisp
-
 ;; The globally defined function DISPATCH should be open-coded, 
 ;; if the implementation supports inlining, unless a NOTINLINE 
 ;; declaration overrides this effect. 
@@ -126,11 +125,9 @@ In the presence of a *compiler macro* definition for *function-name*, a **notinl
 ;; Here is an example where inlining would be encouraged. 
 Evaluation and 
 
-
 (defun top-level-4 () 
   (declare (inline dispatch)) 
   (dispatch (read-command))) 
-
 ```
 **See Also:** 
 

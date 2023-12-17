@@ -180,7 +180,6 @@ to the first value as for **decode-float**:
 
 **Examples:**
 ```lisp
-
 ;; Note that since the purpose of this functionality is to expose 
 ;; details of the implementation, all of these examples are necessarily 
 ;; very implementation-dependent. Results may vary widely. 
@@ -200,7 +199,6 @@ to the first value as for **decode-float**:
 (float-precision 1.0) → 24 
 (float-precision least-positive-single-float) → 1 
 (integer-decode-float 1.0) → 8388608, -23, 1 
-
 ```
 **Aected By:** 
 

@@ -80,7 +80,6 @@ There are no specified keyword arguments for **translate-pathname**, but impleme
 
 **translate-pathname** maps customary case in *source* into customary case in the output *pathname*. **Examples:**
 ```lisp
-
 ;; The results of the following five forms are all implementation-dependent. 
 ;; The second item in particular is shown with multiple results just to 
 ;; emphasize one of many particular variations which commonly occurs. 
@@ -118,10 +117,7 @@ There are no specified keyword arguments for **translate-pathname**, but impleme
 (rename-files "/usr/joe/\*-recipes.text" "/usr/jim/cookbook/joe’s-\*-rec.text") ;Renames /usr/joe/lamb-recipes.text to /usr/jim/cookbook/joe’s-lamb-rec.text 
 					;Renames /usr/joe/pork-recipes.text to /usr/jim/cookbook/joe’s-pork-rec.text 
 
-
-
 					;Renames /usr/joe/veg-recipes.text to /usr/jim/cookbook/joe’s-veg-rec.text 
-
 ```
 **Exceptional Situations:** 
 

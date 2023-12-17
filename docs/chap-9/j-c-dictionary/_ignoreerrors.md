@@ -36,7 +36,6 @@ Specifically, **ignore-errors** *executes forms* in a *dynamic environment* wher
 
 If a *normal return* from the *forms* occurs, any *values* returned are returned by **ignore-errors**. **Examples:**
 ```lisp
-
 (defun load-init-file (program) 
   (let ((win nil)) 
     (ignore-errors ;if this fails, don’t enter debugger 
@@ -46,12 +45,9 @@ If a *normal return* from the *forms* occurs, any *values* returned are returned
     (unless win (format t "&#126;&amp;Init file failed to load.&#126;%")) 
     win)) 
 
-
-
 (load-init-file "no-such-program") 
 ▷ Init file failed to load. 
 NIL 
-
 ```
 **See Also:** 
 

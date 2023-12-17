@@ -40,10 +40,7 @@ If *number* is a *complex* , the result is a positive *real* with the same magni
 
 **Examples:**
 ```lisp
-
 (abs 0) → 0 
-
-
 
 (abs 12/13) → 12/13 
 (abs -1.09) → 1.09 
@@ -51,7 +48,6 @@ If *number* is a *complex* , the result is a positive *real* with the same magni
 (abs #c(5 5)) → 7.071068 
 (abs #c(3/5 4/5)) → 1 or approximately 1.0 
 (eql (abs -0.0) -0.0) → true 
-
 ```
 **See Also:** 
 

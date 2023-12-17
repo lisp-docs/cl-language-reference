@@ -42,55 +42,29 @@ These functions test the case of a given *character*.
 ```lisp
  
 
-
-
 (upper-case-p #\A) → true 
-
-
 
 (upper-case-p #\a) → false 
 
-
-
 (both-case-p #\a) → true 
-
-
 
 (both-case-p #\5) → false 
 
-
-
 (lower-case-p #\5) → false 
-
-
 
 (upper-case-p #\5) → false 
 
-
-
 ;; This next example presupposes an implementation 
 
-
-
 ;; in which #\Bell is an implementation-defined character. 
-
-
 
 (lower-case-p #\Bell) → false 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 
 ```

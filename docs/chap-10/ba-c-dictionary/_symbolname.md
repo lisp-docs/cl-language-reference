@@ -32,11 +32,9 @@
 
 **Examples:**
 ```lisp
-
 (symbol-name ’temp) → "TEMP" 
 (symbol-name :start) → "START" 
 (symbol-name (gensym)) → "G1234" ;for example 
-
 ```
 **Exceptional Situations:** 
 

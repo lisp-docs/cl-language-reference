@@ -50,7 +50,6 @@ clst → (1 (2 3))
 lst → ("one" ("two" 3)) 
 slst → ("one" ("two" 3)) 
 clst → (1 ("two" 3)) 
-
 ```
 **Exceptional Situations:** 
 

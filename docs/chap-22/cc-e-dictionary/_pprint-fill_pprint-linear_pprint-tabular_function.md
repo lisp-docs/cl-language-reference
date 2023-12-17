@@ -70,39 +70,21 @@ If *object* is a *list* and if the *value* of **\*print-pretty\*** is *false*, e
 ```lisp
  
 
-
-
 Evaluating the following with a line length of 25 produces the output shown. 
-
-
 
 (progn (princ "Roads ") 
 
 
 
-
-
-
-
  
 
-
-
  
-
-
 
 (pprint-tabular \*standard-output\* ’(elm main maple center) nil nil 8)) 
 
-
-
 Roads ELM MAIN 
 
-
-
 MAPLE CENTER 
-
-
 
 
 ```

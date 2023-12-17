@@ -118,8 +118,6 @@ The value returned by **update-instance-for-redefined-class** is ignored.
 ```lisp
 
 
-
-
 **update-instance-for-redefined-class** 
 (defclass position () ()) 
 (defclass x-y-position (position) 
@@ -153,12 +151,10 @@ The value returned by **update-instance-for-redefined-class** is ignored.
     (with-slots (rho theta) pos 
       (let ((x (position-x pos))) 
 	(setq rho (sqrt (+ (\* x x) (\* new-y new-y))) 
-
 	      
 	      
 	      theta (atan new-y x)) 
 	new-y))) 
-
 ```
 **Exceptional Situations:** 
 

@@ -20,12 +20,10 @@ The **store-value** *restart* is generally used by *handlers* trying to recover 
 
 **Examples:**
 ```lisp
-
 (defun type-error-auto-coerce (c) 
   (when (typep c ’type-error) 
     (let ((r (find-restart ’store-value c))) 
       (handler-case (let ((v (coerce (type-error-datum c) 
-
 				     
 				     
 				     (type-error-expected-type c)))) 
@@ -35,7 +33,6 @@ The **store-value** *restart* is generally used by *handlers* trying to recover 
   (handler-bind ((type-error #’type-error-auto-coerce)) 
     (check-type x float) 
     x)) → 3.0 
-
 ```
 **See Also:** 
 

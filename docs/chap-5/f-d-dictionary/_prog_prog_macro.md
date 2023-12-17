@@ -136,7 +136,6 @@ The di↵erence between **prog\*** and **prog** is that in **prog\*** the *bindi
 
 **Examples:**
 ```lisp
-
 (prog\* ((y z) (x (car y))) 
 	(return x)) 
 returns the *car* of the value of z. 
@@ -157,7 +156,6 @@ Think of this function as being like a zipper."
      (setq y (cdr y) z (cdr z)) 
      (go loop) 
    err 
-
      
      
      (cerror "Will self-pair extraneous items" 
@@ -176,7 +174,6 @@ Think of this function as being like a zipper."
       (cerror "Will self-pair extraneous items" 
 	      "Mismatch - gleep! &#126;S" y) 
       (setq z y)))) → PRINCE-OF-CLARITY 
-
 ```
 **See Also:** 
 

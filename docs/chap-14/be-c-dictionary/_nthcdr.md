@@ -44,7 +44,6 @@ Returns the *tail* of *list* that would be obtained by calling **cdr** *n* times
 
 **Examples:**
 ```lisp
-
 (nthcdr 0 ’()) → NIL 
 (nthcdr 3 ’()) → NIL 
 (nthcdr 0 ’(a b c)) → (A B C) 
@@ -54,7 +53,6 @@ Returns the *tail* of *list* that would be obtained by calling **cdr** *n* times
 (locally (declare (optimize (safety 3))) 
   (nthcdr 3 ’(0 . 1))) 
 Error: Attempted to take CDR of 1. 
-
 ```
 **Exceptional Situations:** 
 

@@ -64,7 +64,6 @@
 
 For **assoc**, **assoc-if**, and **assoc-if-not**, if **nil** appears in *alist* in place of a pair, it is ignored. **Examples:**
 ```lisp
-
 (setq values ’((x . 100) (y . 200) (z . 50))) → ((X . 100) (Y . 200) (Z . 50)) (assoc ’y values) → (Y . 200) 
 (rplacd (assoc ’y values) 201) → (Y . 201) 
 (assoc ’y values) → (Y . 201) 
@@ -85,8 +84,6 @@ For **assoc**, **assoc-if**, and **assoc-if-not**, if **nil** appears in *alist*
 → (("one" . 1) ("2" . 2) ("three" . 3)) 
 (assoc-if-not #’alpha-char-p alist 
 		:key #’(lambda (x) (char x 0))) → ("2" . 2) 
-
-
 
 
 ```

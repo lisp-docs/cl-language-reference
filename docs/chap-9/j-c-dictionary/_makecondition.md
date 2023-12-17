@@ -48,7 +48,6 @@ Constructs and returns a *condition* of type *type* using *slot-initializations*
 
 **Examples:**
 ```lisp
-
 (defvar \*oops-count\* 0) 
 (setq a (make-condition ’simple-error 
 			 :format-control "This is your &#126;:R error." 
@@ -62,7 +61,6 @@ Constructs and returns a *condition* of type *type* using *slot-initializations*
 ▷ To continue, type :CONTINUE followed by an option number: 
 ▷ 1: Return to Lisp Toplevel. 
 ▷ Debug> 
-
 ```
 **Affected By:** 
 

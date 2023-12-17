@@ -32,12 +32,10 @@
 
 **Examples:**
 ```lisp
-
 ;; An example involving version numbers. Note that the precise nature of 
 ;; the truename is implementation-dependent while the file is still open. 
 (with-open-file (stream ">vistor>test.text.newest") 
   (values (pathname stream) 
-
 	  
 	  
 	  (truename stream))) 
@@ -58,7 +56,6 @@
   (values (pathname stream) 
 	  (truename stream))) 
 → #P"CMUC::DOC:DUMPER.HLP", #P"CMUC::PS:<DOCUMENTATION>DUMPER.HLP.13" 
-
 ```
 **Exceptional Situations:** 
 

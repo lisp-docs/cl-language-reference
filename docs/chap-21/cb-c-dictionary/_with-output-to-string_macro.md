@@ -99,7 +99,6 @@ The consequences are undefined if an attempt is made to *assign* the *variable v
 (format s "here’s some output") 
 (input-stream-p s)) → false 
 fstr → "here’s some output" 
-
 ```
 **Side Effects:** 
 
@@ -240,7 +239,6 @@ out
 | 3 Exit FACT 1 
 | 2 Exit FACT 2 
 1 Exit FACT 6" 
-
 ```
 **See Also:** 
 

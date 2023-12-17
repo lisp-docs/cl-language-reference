@@ -40,7 +40,6 @@ The macro **setf** can be used with **slot-value** to change the value of a *slo
 
 **Examples:**
 ```lisp
-
 (defclass foo () 
   ((a :accessor foo-a :initarg :a :initform 1) 
    (b :accessor foo-b :initarg :b) 
@@ -57,8 +56,6 @@ The macro **setf** can be used with **slot-value** to change the value of a *slo
   (slot-value x ’a)) 
 → #\<STANDARD-METHOD FOO-METHOD (FOO) 42720573\> 
 (foo-method foo1) → UNO 
-
-
 
 
 ```

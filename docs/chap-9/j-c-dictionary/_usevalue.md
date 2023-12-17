@@ -100,7 +100,6 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 
 **Examples:**
 ```lisp
-
 ;;; Example of the ABORT retart 
 (defmacro abort-on-error (&amp;body forms) 
 			  ‘(handler-bind ((error #’abort)) 
@@ -123,7 +122,6 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 			     ▷ Debug> (continue) 
 			     ▷ Return sqrt(9) instead. 
 			     → 3 
-
 			     
 			     
 			     **abort, continue, muffle-warning, store-value, use-value** 
@@ -167,7 +165,6 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 				 (use-value (value) 
 				   :report "Specify a value to use this time." 
 				   value) 
-
 				 
 				 
 				 **abort, continue, muffle-warning, store-value, use-value** 
@@ -205,7 +202,6 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 			       → ADD-SYMBOLS-WITH-DEFAULT 
 			       (setq x 1 y 2) → 2 
 			       (add-symbols-with-default 3 ’x ’y ’z) → 6 
-
 ```
 **Side Effects:** 
 

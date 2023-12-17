@@ -80,7 +80,6 @@ If the *symbol* is inherited by *package* through **use-package**, but is not *p
 
 **Examples:**
 ```lisp
-
 (find-symbol "NEVER-BEFORE-USED") → NIL, NIL 
 (find-symbol "NEVER-BEFORE-USED") → NIL, NIL 
 (intern "NEVER-BEFORE-USED") → NEVER-BEFORE-USED, NIL 
@@ -100,7 +99,6 @@ If the *symbol* is inherited by *package* through **use-package**, but is not *p
 → NIL, NIL 
 <i><sup>or</sup>→</i> :NIL, :EXTERNAL 
 (find-symbol (symbol-name :nil) "KEYWORD") → :NIL, :EXTERNAL 
-
 ```
 **Affected By:** 
 

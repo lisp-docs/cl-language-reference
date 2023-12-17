@@ -108,9 +108,7 @@ If the *result-type* is **function**, and *object* is a *lambda expression*, the
 
 Any *object* can be *coerced* to an *object* of *type* **t**. In this case, the *object* is simply returned. **Examples:**
 ```lisp
-
 (coerce ’(a b c) ’vector) → #(A B C)  
-
 (coerce ’a ’character) → #\A 
 (coerce 4.56 ’complex) → #C(4.56 0.0) 
 (coerce 4.5s0 ’complex) → #C(4.5s0 0.0s0) 
@@ -127,7 +125,6 @@ All the following *forms* should signal an error:
 (coerce "foo" ’(string 2)) 
 (coerce #(#\a #\b #\c) ’(string 2)) 
 (coerce ’(0 1) ’(simple-bit-vector 3)) 
-
 ```
 **Exceptional Situations:** 
 

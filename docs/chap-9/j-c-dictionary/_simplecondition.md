@@ -84,7 +84,6 @@ The *type* **simple-condition** represents *conditions* that are signaled by **s
 
 **Examples:**
 ```lisp
-
 (setq foo (make-condition ’simple-condition 
 			   :format-control "Hi &#126;S" 
 			   :format-arguments ’(ho))) 
@@ -92,7 +91,6 @@ The *type* **simple-condition** represents *conditions* that are signaled by **s
 (apply #’format nil (simple-condition-format-control foo) 
 	 (simple-condition-format-arguments foo)) 
 → "Hi HO" 
-
 ```
 **See Also:** 
 

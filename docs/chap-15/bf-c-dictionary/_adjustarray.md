@@ -220,7 +220,6 @@ Note that if an *array A* is displaced to another *array B*, and *B* is displace
 
 **Examples:**
 ```lisp
-
 (adjustable-array-p 
  (setq ada (adjust-array 
 	    (make-array ’(2 3) 
@@ -237,8 +236,6 @@ Note that if an *array A* is displaced to another *array B*, and *B* is displace
       (NIL NIL NIL NIL NIL NIL) 
       (NIL NIL NIL NIL NIL NIL)) 
 
-
-
 (array-dimensions beta) → (4 6) 
 (aref beta 1 1) → 2 
 Suppose that the 4-by-4 array in m looks like this: 
@@ -252,7 +249,6 @@ is a 3-by-5 array with contents
 #2A(( alpha beta gamma delta baz ) 
     ( epsilon zeta eta theta baz ) 
     ( iota kappa lambda mu baz )) 
-
 ```
 **Exceptional Situations:** 
 

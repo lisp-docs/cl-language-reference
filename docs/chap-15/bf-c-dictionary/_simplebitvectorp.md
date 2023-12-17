@@ -48,10 +48,8 @@ Returns *true* if *object* is of *type* **simple-bit-vector**; otherwise, return
 
 **Examples:**
 ```lisp
-
 (simple-bit-vector-p (make-array 6)) → false 
 (simple-bit-vector-p #\*) → true 
-
 ```
 **See Also:** 
 

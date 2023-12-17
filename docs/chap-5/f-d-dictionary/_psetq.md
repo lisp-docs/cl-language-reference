@@ -64,7 +64,6 @@ If any *var* refers to a *binding* made by **symbol-macrolet**, then that *var* 
 
 **Examples:**
 ```lisp
-
 ;; A simple use of PSETQ to establish values for variables. 
 ;; As a matter of style, many programmers would prefer SETQ 
 ;; in a simple situation like this where parallel assignment 
@@ -90,7 +89,6 @@ c → 3
   (psetq a b b a) 
   (values a b)) 
 → 2, 1 
-
 ```
 **Side Effects:** 
 

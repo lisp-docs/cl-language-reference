@@ -68,7 +68,6 @@ The result contains precisely those elements of *list-1* and *list-2* that appea
 
 **Examples:**
 ```lisp
-
 (setq lst1 (list 1 "a" "b") 
       lst2 (list 1 "A" "b")) → (1 "A" "b") 
 (set-exclusive-or lst1 lst2) → ("b" "A" "b" "a") 
@@ -83,7 +82,6 @@ The result contains precisely those elements of *list-1* and *list-2* that appea
 → (("c" . "d") ("e" . "f") ("c" . "a") ("d" . "a")) 
 lst1 → (("a" . "b") ("c" . "d") ("e" . "f")) 
 lst2 → (("c" . "a") ("d" . "a")) 
-
 ```
 **Side Effects:** 
 

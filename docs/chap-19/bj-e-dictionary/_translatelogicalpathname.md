@@ -52,9 +52,7 @@ There are no specified keyword arguments for **translate-logical-pathname**, but
 
 **Examples:**
 ```lisp
-
 See **logical-pathname-translations**. 
-
 ```
 **Exceptional Situations:** 
 

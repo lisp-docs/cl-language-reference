@@ -37,7 +37,6 @@ When the *value* of **\*debugger-hook\*** is *non-nil*, it is called prior to no
 (do () ((typep i ‘(integer 1 ,n))) 
 (format t "&#126;&amp;&#126;A: " prompt) 
 (setq i (read)) 
-
  
  
 (fresh-line)) 
@@ -62,7 +61,6 @@ When the *value* of **\*debugger-hook\*** is *non-nil*, it is called prior to no
 ▷ Choice: 1 
 ▷ Form to evaluate and use: 1 
 → 9 
-
 ```
 **Affected By:** 
 

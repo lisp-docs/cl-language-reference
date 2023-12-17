@@ -84,7 +84,6 @@ The sorting operation can be destructive in all cases. In the case of a *vector*
 
 **Examples:**
 ```lisp
-
 (setq tester (copy-seq "lkjashd")) → "lkjashd" 
 (sort tester #’char-lessp) → "adhjkls" 
 (setq tester (list ’(1 2 3) ’(4 5 6) ’(7 8 9))) → ((1 2 3) (4 5 6) (7 8 9)) 
@@ -120,7 +119,6 @@ The sorting operation can be destructive in all cases. In the case of a *vector*
     (("Sandra" "Loosemore") "Compiler") 
     (("Kent" "Pitman") "Conditions") 
     (("Kathy" "Chapman") "Editorial") 
-
     
     
     (("Dick" "Waters") "Iteration") 
@@ -128,7 +126,6 @@ The sorting operation can be destructive in all cases. In the case of a *vector*
     (("Dick" "Gabriel") "Objects") 
     (("Gregor" "Kiczales") "Objects") 
     (("David" "Moon") "Objects")) 
-
 ```
 **Exceptional Situations:** 
 

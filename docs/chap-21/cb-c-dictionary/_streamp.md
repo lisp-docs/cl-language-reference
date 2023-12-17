@@ -36,10 +36,8 @@ Returns *true* if *object* is of *type* **stream**; otherwise, returns *false*.
 
 **Examples:**
 ```lisp
-
 (streamp \*terminal-io\*) → true 
 (streamp 1) → false 
-
 ```
 **Notes:** 
 

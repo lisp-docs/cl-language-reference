@@ -76,7 +76,6 @@ The *vars* and *fns* named in a **dynamic-extent** declaration must not refer to
 
 **Examples:**
 ```lisp
-
 Since stack allocation of the initial value entails knowing at the *object*’s creation time that the *object* can be *stack-allocated*, it is not generally useful to make a **dynamic-extent** *declaration* for *variables* which have no lexically apparent initial value. For example, it is probably useful to write: 
 (defun f () 
   (let ((x (list 1 2 3))) 
@@ -97,7 +96,6 @@ In the previous example, some compilers might determine that optimization was po
 A variant of this is the so-called “stack allocated rest list” that can be achieved (in implementations supporting the optimization) by: 
 (defun f (&amp;rest x) 
 	  (declare (dynamic-extent x)) 
-
 	  
 	  
 	  **dynamic-extent** 
@@ -166,7 +164,6 @@ A variant of this is the so-called “stack allocated rest list” that can be a
 		       (declare (dynamic-extent x)) 
 		       x) 
 		     nil) 
-
 ```
 **See Also:** 
 

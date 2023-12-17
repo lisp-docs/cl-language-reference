@@ -80,14 +80,12 @@ If the *sequence* contains an *element* that *satisfies the test*, then the left
 
 **Examples:**
 ```lisp
-
 (find #\d "here are some letters that can be looked at" :test #’char>) 
 → #\Space 
 (find-if #’oddp ’(1 2 3 4 5) :end 3 :from-end t) → 3 
 (find-if-not #’complexp 
 	       ’#(3.5 2 #C(1.0 0.0) #C(0.0 1.0)) 
 	       :start 2) → NIL 
-
 ```
 **Exceptional Situations:** 
 

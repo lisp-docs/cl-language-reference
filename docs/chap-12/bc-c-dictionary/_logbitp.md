@@ -52,14 +52,12 @@ Negative *integers* are treated as if they were in two’s-complement notation.
 
 **Examples:**
 ```lisp
-
 (logbitp 1 1) → false 
 (logbitp 0 1) → true 
 (logbitp 3 10) → true 
 (logbitp 1000000 -1) → true 
 (logbitp 2 6) → true 
 (logbitp 0 6) → false 
-
 ```
 **Exceptional Situations:** 
 

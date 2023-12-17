@@ -48,7 +48,6 @@ If the last *argument* to **list\*** is a *list*, the effect is to construct a n
 
 If **list\*** receives only one *object*, that *object* is returned, regardless of whether or not it is a *list*. **Examples:**
 ```lisp
-
 (list 1) → (1) 
 (list\* 1) → 1 
 (setq a 1) → 1 
@@ -62,7 +61,6 @@ If **list\*** receives only one *object*, that *object* is returned, regardless 
 (list 3 4 ’a (car ’(b . c)) (+ 6 -2)) → (3 4 A B 4) 
 (list\* ’a ’b ’c ’d) *≡* (cons ’a (cons ’b (cons ’c ’d))) → (A B C . D) 
 (list\* ’a ’b ’c ’(d e f)) → (A B C D E F) 
-
 ```
 **See Also:** 
 

@@ -56,7 +56,6 @@ If *identifier* is a *symbol*, then the innermost (most recently established) *a
 
 If *identifier* is a currently active restart, then it is returned. Otherwise, **nil** is returned. **Examples:**
 ```lisp
-
 (restart-case 
     (let ((r (find-restart ’my-restart))) 
       (format t "&#126;S is named &#126;S" r (restart-name r))) 
@@ -65,7 +64,6 @@ If *identifier* is a currently active restart, then it is returned. Otherwise, *
 → NIL 
 (find-restart ’my-restart) 
 → NIL 
-
 ```
 **Affected By:** 
 

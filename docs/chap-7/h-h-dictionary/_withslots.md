@@ -64,9 +64,7 @@ The macro **with-slots** translates an appearance of the slot name as a *variabl
 
 **Examples:**
 ```lisp
-
 (defclass thing () 
-
   
   
   **with-slots** 
@@ -99,7 +97,6 @@ The macro **with-slots** translates an appearance of the slot name as a *variabl
    (9 9 2 2 7 7 8 8) 
    (9) 
    (9 9 2 2 (9) (9) 8 8)) 
-
 ```
 **Affected By:** 
 

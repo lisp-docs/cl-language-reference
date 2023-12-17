@@ -120,7 +120,6 @@ the parameter x is bound as a dynamic variable rather than as a lexical variable
 
 **Examples:**
 ```lisp
-
 (defun declare-eg (y) ;this y is special 
   (declare (special y)) 
   (let ((y t)) ;this y is lexical 
@@ -155,7 +154,6 @@ the parameter x is bound as a dynamic variable rather than as a lexical variable
 	    ...) 
   The reference to \*foo\* in the first line of this example is not **special** even though there is a **special** declaration in the second line. 
   (declaim (special prosp)) →  implementation-dependent 
-
   
   
   (setq prosp 1 reg 1) → 1 
@@ -171,7 +169,6 @@ the parameter x is bound as a dynamic variable rather than as a lexical variable
       (print (+ y (locally (declare (special y)) y))) 
       (let ((y 4)) (declare (special y)) (foo x)))) → EXAMPLE 
   In the contorted code above, the outermost and innermost *bindings* of y are dynamic, but the middle binding is lexical. The two arguments to + are di↵erent, one being the value, which is 3, of the lexical variable y, and the other being the value of the dynamic variable named y (a *binding* of which happens, coincidentally, to lexically surround it at an outer level). All the *bindings* of x and references to x are dynamic, however, because of the proclamation that x is always **special**. 
-
 ```
 **See Also:** 
 

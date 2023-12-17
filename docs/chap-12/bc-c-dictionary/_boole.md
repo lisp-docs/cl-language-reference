@@ -90,7 +90,6 @@ The operation to be performed and the return value are determined by *op*.
 (dolist (symbol ’(boole-1 boole-2 boole-and boole-andc1 
 boole-andc2 boole-c1 boole-c2 boole-clr 
 boole-eqv boole-ior boole-nand boole-nor 
-
  
  
 **boole** 
@@ -117,7 +116,6 @@ symbol result (logand result #b1111)))))
 ▷ BOOLE-SET -1 -1 ...1111 
 ▷ BOOLE-XOR 6 110 ...0110 
 → NIL 
-
 ```
 **Exceptional Situations:** 
 
@@ -257,11 +255,9 @@ Each of these *constants* has a *value* which is one of the sixteen possible *bi
 
 **Examples:**
 ```lisp
-
 (boole boole-ior 1 16) → 17 
 (boole boole-and -2 5) → 4 
 (boole boole-eqv 17 15) → -31 
-
 ```
 **See Also:** 
 
