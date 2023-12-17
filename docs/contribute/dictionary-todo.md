@@ -8,7 +8,21 @@ Here are all the dicionary entry pages for which we need expanded explanations a
   - Check Dictionaries
     - Chapter 9:
       - `simple-condition-format-control, simple- condition-format-arguments` are in `simple-condition`
-    - Chapters 12 and on need to check
+    - Chapter 12:
+      - `=`, `+`, `-`, `1+`, `1-`, missing
+      - `*` is in `_sinh.md`
+      - `boole-1` etc are in `boole`
+      - `arithmetic-error-operands` in `arithmetic-error`
+      - `most-positive-short-float` in `floatp`
+    - Chapter 14:
+      - `cons`  `System Class` missing
+      - `atom` `Type` missing
+      - `null` `System Class` missing
+    - Chapter 15:
+      - The "See Also" section of `adjust-array` is missing. See `adjustable-array-p`
+      - `vector` `System Class` is missing
+      - `bit-and` etc in `bit, sbit`
+    - Chapters 16 and on need to check
     - Chapter 22:
       - Allmost everything is between 22.3 and intro... need to parse again...
     - Chapter 23:
