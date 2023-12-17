@@ -7,23 +7,23 @@
 
 (\*print-array\* t)) 
 
-(dotimes (i 3) (dotimes (j 3) (setf (aref a i j) (format nil "&lt;&#126;D,&#126;D&gt;" i j)))) (print a) 
+(dotimes (i 3) (dotimes (j 3) (setf (aref a i j) (format nil "<&#126;D,&#126;D>" i j)))) (print a) 
 
 (print (make-array 9 :displaced-to a))) 
 
-▷ #2A(("&lt;0,0&gt;" "&lt;0,1&gt;" "&lt;0,2&gt;") 
+▷ #2A(("<0,0>" "<0,1>" "<0,2>") 
 
-▷ ("&lt;1,0&gt;" "&lt;1,1&gt;" "&lt;1,2&gt;") 
+▷ ("<1,0>" "<1,1>" "<1,2>") 
 
 
-
- 
 
  
 
-▷ ("&lt;2,0&gt;" "&lt;2,1&gt;" "&lt;2,2&gt;")) 
+ 
 
-▷ #("&lt;0,0&gt;" "&lt;0,1&gt;" "&lt;0,2&gt;" "&lt;1,0&gt;" "&lt;1,1&gt;" "&lt;1,2&gt;" "&lt;2,0&gt;" "&lt;2,1&gt;" "&lt;2,2&gt;") 
+▷ ("<2,0>" "<2,1>" "<2,2>")) 
+
+▷ #("<0,0>" "<0,1>" "<0,2>" "<1,0>" "<1,1>" "<1,2>" "<2,0>" "<2,1>" "<2,2>") 
 
 → #\<ARRAY 9 indirect 36363476\> 
 

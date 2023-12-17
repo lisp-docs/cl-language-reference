@@ -27,7 +27,7 @@ while stack))
 
 when (oddp i) collect i 
 
-while (&lt; i 5)) 
+while (< i 5)) 
 
 → (3 5) 
 

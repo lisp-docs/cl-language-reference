@@ -152,41 +152,41 @@ If two *characters* have *identical implementation-defined attributes*, then the
 
 (char/= #\d #\c #\d) → false 
 
-(char&lt; #\d #\x) → true 
+(char< #\d #\x) → true 
 
-(char&lt;= #\d #\x) → true 
+(char<= #\d #\x) → true 
 
-(char&lt; #\d #\d) → false 
+(char< #\d #\d) → false 
 
-(char&lt;= #\d #\d) → true 
+(char<= #\d #\d) → true 
 
-(char&lt; #\a #\e #\y #\z) → true 
+(char< #\a #\e #\y #\z) → true 
 
-(char&lt;= #\a #\e #\y #\z) → true 
+(char<= #\a #\e #\y #\z) → true 
 
-(char&lt; #\a #\e #\e #\y) → false 
+(char< #\a #\e #\e #\y) → false 
 
-(char&lt;= #\a #\e #\e #\y) → true 
+(char<= #\a #\e #\e #\y) → true 
 
-(char&gt; #\e #\d) → true 
+(char> #\e #\d) → true 
 
-(char&gt;= #\e #\d) → true 
+(char>= #\e #\d) → true 
 
-(char&gt; #\d #\c #\b #\a) → true 
+(char> #\d #\c #\b #\a) → true 
 
-(char&gt;= #\d #\c #\b #\a) → true 
+(char>= #\d #\c #\b #\a) → true 
 
-(char&gt; #\d #\d #\c #\a) → false 
+(char> #\d #\d #\c #\a) → false 
 
-(char&gt;= #\d #\d #\c #\a) → true 
+(char>= #\d #\d #\c #\a) → true 
 
-(char&gt; #\e #\d #\b #\c #\a) → false 
+(char> #\e #\d #\b #\c #\a) → false 
 
-(char&gt;= #\e #\d #\b #\c #\a) → false 
+(char>= #\e #\d #\b #\c #\a) → false 
 
-(char&gt; #\z #\A) → implementation-dependent 
+(char> #\z #\A) → implementation-dependent 
 
-(char&gt; #\Z #\a) → implementation-dependent 
+(char> #\Z #\a) → implementation-dependent 
 
 (char-equal #\A #\a) → true 
 
@@ -200,7 +200,7 @@ If two *characters* have *identical implementation-defined attributes*, then the
 
 → (#\A #\a #\b #\B #\c #\C) 
 
-(stable-sort (list #\b #\A #\B #\a #\c #\C) #’char&lt;) 
+(stable-sort (list #\b #\A #\B #\a #\c #\C) #’char<) 
 
 → (#\A #\B #\C #\a #\b #\c) ;Implementation A 
 

@@ -217,11 +217,11 @@ As examples of the convenience of specifying pretty printing with *format string
 
 (defun simple-pprint-defun (\*standard-output\* list) 
 
-(format T "&#126;:&lt;&#126;W &#126;@ &#126;:I&#126;W &#126;: &#126;W&#126;1I &#126; &#126;W&#126;:&gt;" list)) 
+(format T "&#126;:<&#126;W &#126;@ &#126;:I&#126;W &#126;: &#126;W&#126;1I &#126; &#126;W&#126;:>" list)) 
 
 (defun pprint-let (\*standard-output\* list) 
 
-(format T "&#126;:&lt;&#126;W&#126;<i><sup>^</sup></i>&#126;:&lt;&#126;@\{&#126;:&lt;&#126;@\{&#126;W&#126;<i><sup>^</sup></i>&#126; &#126;\}&#126;:&gt;&#126;<i><sup>^</sup></i>&#126;: &#126;\}&#126;:&gt;&#126;1I&#126;@\{&#126;<i><sup>^</sup></i>&#126; &#126;W&#126;\}&#126;:&gt;" list)) 
+(format T "&#126;:<&#126;W&#126;<i><sup>^</sup></i>&#126;:<&#126;@\{&#126;:<&#126;@\{&#126;W&#126;<i><sup>^</sup></i>&#126; &#126;\}&#126;:>&#126;<i><sup>^</sup></i>&#126;: &#126;\}&#126;:>&#126;1I&#126;@\{&#126;<i><sup>^</sup></i>&#126; &#126;W&#126;\}&#126;:>" list)) 
 
 In the following example, the first *form* restores **\*print-pprint-dispatch\*** to the equivalent of its initial value. The next two forms then set up a special way to pretty print ratios. Note that the more specific *type specifier* has to be associated with a higher priority. 
 
@@ -293,7 +293,7 @@ This final example shows how to define a pretty printing function for a user def
 
 #’(lambda (s f) 
 
-(funcall (formatter "&#126;@&lt;#&lt;&#126;;&#126;W and &#126;2I&#126; &#126;/pprint-fill/&#126;;&gt;&#126;:&gt;") 
+(funcall (formatter "&#126;@<#<&#126;;&#126;W and &#126;2I&#126; &#126;/pprint-fill/&#126;;>&#126;:>") 
 
 s (family-mom f) (family-kids f)))) 
 

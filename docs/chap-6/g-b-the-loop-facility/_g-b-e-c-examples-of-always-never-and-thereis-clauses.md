@@ -7,13 +7,13 @@
 
 (loop for i from 0 to 10 
 
-always (&lt; i 11)) 
+always (< i 11)) 
 
 → T 
 
 (loop for i from 0 to 10 
 
-never (&gt; i 11)) 
+never (> i 11)) 
 
 → T 
 
@@ -23,7 +23,7 @@ never (&gt; i 11))
 
 (loop for i from 0 
 
-thereis (when (&gt; i 10) i) ) 
+thereis (when (> i 10) i) ) 
 
 → 11 
 
@@ -31,7 +31,7 @@ thereis (when (&gt; i 10) i) )
 
 (loop for i from 0 to 10 
 
-always (&lt; i 9) 
+always (< i 9) 
 
 finally (print "you won’t see this")) 
 
@@ -55,7 +55,7 @@ finally (print "you won’t see this"))
 
 (loop for i from 1 to 10 
 
-thereis (&gt; i 11) 
+thereis (> i 11) 
 
 finally (prin1 ’got-here)) 
 
