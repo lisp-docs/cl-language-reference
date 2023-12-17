@@ -1,4 +1,4 @@
-*∗***compile-file-truename***∗ Variable* 
+\***compile-file-truename**\*, **\*compile-file-pathname\*** *Variable* 
 
 
 
