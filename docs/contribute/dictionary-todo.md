@@ -32,7 +32,7 @@ Here are all the dicionary entry pages for which we need expanded explanations a
       - `set-dispatch-macro-character, get-dispatch-macro character` in `readtablep`
       - `∗readtable∗`, `*read-suppress*`, `∗read-default-float-format∗`, `*read-base*`, `*read-eval*` are in `with-standard-io-syntax`
     - Chapter 24:
-      - ~~`∗features∗`~~, ~~`∗compile-file-pathname∗**,** ∗compile-file-truename∗`~~, `∗load-pathname∗**,** ∗load-truename∗`, `∗compile-print∗**,** ∗compile-verbose∗`, `∗load-print∗**,** ∗load-verbose∗`, `∗modules∗`, are in `with-compilation-unit`
+      - ~~`∗features∗`~~, ~~`∗compile-file-pathname∗**,** ∗compile-file-truename∗`~~, ~~`∗load-pathname∗**,** ∗load-truename∗`~~, `∗compile-print∗**,** ∗compile-verbose∗`, `∗load-print∗**`, ~~`** ∗load-verbose∗`~~, ~~`∗modules∗`~~, are in `with-compilation-unit`
     - Chapter 25:
       - ~~`encode-universal-time` is in `decode-universal-time`~~
       - `-`, `+`, `*` are missing
