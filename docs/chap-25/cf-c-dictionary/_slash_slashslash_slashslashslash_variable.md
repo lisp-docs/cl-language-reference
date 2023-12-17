@@ -69,7 +69,7 @@ The *values* of **/**, **//**, and **///** are updated immediately prior to prin
 
 
 
-**<sup>lisp-implementation-type, lisp-implementation</sup> version** <i>Function</i> 
+**lisp-implementation-type, lisp-implementation-version** *Function* 
 
 
 
