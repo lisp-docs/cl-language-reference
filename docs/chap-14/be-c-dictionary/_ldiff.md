@@ -67,13 +67,13 @@ If *object* is the *same* as some *tail* of *list*, **ldiff** returns a *fresh l
 (let ((lists ’#((a b c) (a b c . d)))) 
   (dotimes (i (length lists)) () 
 	   (let ((list (aref lists i))) 
-	     (format t "&#126;2&amp;list=&#126;S &#126;21T(tailp object list)&#126; 
-&#126;44T(ldiff list object)&#126;%" list) 
+	     (format t "~2&amp;list=~S ~21T(tailp object list)~ 
+~44T(ldiff list object)~%" list) 
 	     (let ((objects (vector list (cddr list) (copy-list (cddr list)) 
 				    ’(f g h) ’() ’d ’x))) 
 	       (dotimes (j (length objects)) () 
 			(let ((object (aref objects j))) 
-			  (format t "&#126;&amp; object=&#126;S &#126;21T&#126;S &#126;44T&#126;S" 
+			  (format t "~&amp; object=~S ~21T~S ~44T~S" 
 				  object (tailp object list) (ldiff list object)))))))) 
 ▷ 
 ▷ list=(A B C) (tailp object list) (ldiff list object) 

@@ -86,7 +86,7 @@ Hash
        (multiple-value-bind (more? key value) (generator-fn) 
 	 (unless more? (return)) 
 	 (unless (eql value (gethash key hash-table unique)) 
-	   (error "Key &#126;S not found for value &#126;S" key value)) 
+	   (error "Key ~S not found for value ~S" key value)) 
 	 (push (list key value) generated-entries)))) 
     (unless (= (length all-entries) 
 	       (length generated-entries) 

@@ -135,7 +135,7 @@ Negative *integers* are treated as if they were in two’s-complement notation.
 ;;; exchanged. For each bit in the mask that is a 0, the 
 ;;; corresponding bits of x and y are left unchanged. 
 (flet ((show (m x y) 
-	 (format t "&#126;%m = #o&#126;6,’0O&#126;%x = #o&#126;6,’0O&#126;%y = #o&#126;6,’0O&#126;%" 
+	 (format t "~%m = #o~6,’0O~%x = #o~6,’0O~%y = #o~6,’0O~%" 
 		 m x y))) 
   (let ((m #o007750) 
 	(x #o452576) 

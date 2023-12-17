@@ -214,7 +214,7 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 		  (sauce :initarg :sauce :reader bad-tasting-sundae-sauce) 
 		  (topping :initarg :topping :reader bad-tasting-sundae-topping)) 
 		 (:report (lambda (condition stream) 
-			    (format stream "Bad tasting sundae with &#126;S, &#126;S, and &#126;S" 
+			    (format stream "Bad tasting sundae with ~S, ~S, and ~S" 
 				    (bad-tasting-sundae-ice-cream condition) 
 				    (bad-tasting-sundae-sauce condition) 
 				    (bad-tasting-sundae-topping condition))))) 

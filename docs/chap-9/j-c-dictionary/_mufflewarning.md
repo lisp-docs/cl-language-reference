@@ -46,7 +46,7 @@ This *restart* is established by **warn** so that *handlers* of **warning** *con
 	  (warn "Situation #3."))) 
   ▷ Warning: Situation #2. 
   → (#<SIMPLE-WARNING 42744421> #<SIMPLE-WARNING 42744365>) 
-  (dolist (s saved) (format t "&#126;&amp;&#126;A&#126;%" s)) 
+  (dolist (s saved) (format t "~&amp;~A~%" s)) 
   ▷ Situation #3. 
   ▷ Situation #1. 
   → NIL 

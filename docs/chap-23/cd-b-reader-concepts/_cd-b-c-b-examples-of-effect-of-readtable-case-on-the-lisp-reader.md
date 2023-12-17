@@ -5,11 +5,11 @@
 
 (let ((\*readtable\* (copy-readtable nil))) 
 
-(format t "READTABLE-CASE Input Symbol-name&#126; 
+(format t "READTABLE-CASE Input Symbol-name~ 
 
-&#126;%–––––––––––––––––-&#126; 
+~%–––––––––––––––––-~ 
 
-&#126;%") 
+~%") 
 
 (dolist (readtable-case ’(:upcase :downcase :preserve :invert)) 
 
@@ -17,7 +17,7 @@
 
 (dolist (input ’("ZEBRA" "Zebra" "zebra")) 
 
-(format t "&#126;&amp;:&#126;A&#126;16T&#126;A&#126;24T&#126;A" 
+(format t "~&amp;:~A~16T~A~24T~A" 
 
 (string-upcase readtable-case) 
 

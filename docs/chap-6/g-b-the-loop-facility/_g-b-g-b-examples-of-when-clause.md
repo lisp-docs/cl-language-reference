@@ -7,7 +7,7 @@
 
 when (not (numberp item)) 
 
-return (cerror "enter new value" "non-numeric value: &#126;s" item)) Error: non-numeric value: A 
+return (cerror "enter new value" "non-numeric value: ~s" item)) Error: non-numeric value: A 
 
 ;; The previous example is equivalent to the following one. 
 
@@ -17,7 +17,7 @@ when (not (numberp item))
 
 do (return 
 
-(cerror "Enter new value" "non-numeric value: &#126;s" item))) 
+(cerror "Enter new value" "non-numeric value: ~s" item))) 
 
 Error: non-numeric value: A 
 

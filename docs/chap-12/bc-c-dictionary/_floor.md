@@ -164,7 +164,7 @@ The *remainder* is an *integer* if both x and y are *integers*, is a *rational* 
 (ftruncate -7 2) → -3.0, -1 
 (fround -7 2) → -4.0, 1 
 (dolist (n ’(2.6 2.5 2.4 0.7 0.3 -0.3 -0.7 -2.4 -2.5 -2.6)) 
-  (format t "&#126;&amp;&#126;4,1@F &#126;2,’ D &#126;2,’ D &#126;2,’ D &#126;2,’ D" 
+  (format t "~&amp;~4,1@F ~2,’ D ~2,’ D ~2,’ D ~2,’ D" 
 	  n (floor n) (ceiling n) (truncate n) (round n))) 
 ▷ +2.6 2 3 2 3 
 ▷ +2.5 2 3 2 2 

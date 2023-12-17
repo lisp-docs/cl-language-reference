@@ -67,7 +67,7 @@ When *input-stream* is an *echo stream*, characters that are only peeked at are 
 **Examples:**
 ```lisp
 (with-input-from-string (input-stream " 1 2 3 4 5") 
-  (format t "&#126;S &#126;S &#126;S" 
+  (format t "~S ~S ~S" 
 	  (peek-char t input-stream) 
 	  
 	  

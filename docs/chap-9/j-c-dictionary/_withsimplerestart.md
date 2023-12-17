@@ -77,9 +77,9 @@ The *format-control* and *format-arguments* are used report the *restart*.
 **Examples:**
 ```lisp
 (defun read-eval-print-loop (level) 
-  (with-simple-restart (abort "Exit command level &#126;D." level) 
+  (with-simple-restart (abort "Exit command level ~D." level) 
     (loop 
-     (with-simple-restart (abort "Return to command level &#126;D." level) 
+     (with-simple-restart (abort "Return to command level ~D." level) 
        (let ((form (prog2 (fresh-line) (read) (fresh-line)))) 
 	 (prin1 (eval form))))))) 
 → READ-EVAL-PRINT-LOOP 
@@ -92,7 +92,7 @@ The *format-control* and *format-arguments* are used report the *restart*.
 ▷ 3: Exit command level 1. 
 ▷ 4: Return to Lisp Toplevel. 
 (defun compute-fixnum-power-of-2 (x) 
-  (with-simple-restart (nil "Give up on computing 2<i><sup>^</sup></i>&#126;D." x) 
+  (with-simple-restart (nil "Give up on computing 2<i><sup>^</sup></i>~D." x) 
     (let ((result 1)) 
       (dotimes (i x result) 
 	(setq result (\* 2 result)) 

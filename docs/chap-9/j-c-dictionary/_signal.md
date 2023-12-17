@@ -29,13 +29,13 @@
 **Examples:**
 ```lisp
 (defun handle-division-conditions (condition) 
-  (format t "Considering condition for division condition handling&#126;%") 
+  (format t "Considering condition for division condition handling~%") 
   (when (and (typep condition ’arithmetic-error) 
 	     (eq ’/ (arithmetic-error-operation condition))) 
     (invoke-debugger condition))) 
 HANDLE-DIVISION-CONDITIONS 
 (defun handle-other-arithmetic-errors (condition) 
-  (format t "Considering condition for arithmetic condition handling&#126;%") 
+  (format t "Considering condition for arithmetic condition handling~%") 
   (when (typep condition ’arithmetic-error) 
     (abort))) 
 HANDLE-OTHER-ARITHMETIC-ERRORS 

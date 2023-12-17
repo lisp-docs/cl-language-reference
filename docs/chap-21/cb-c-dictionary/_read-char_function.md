@@ -72,7 +72,7 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is *false*, *eof-value*
 (with-input-from-string (is "0123") 
 (do ((c (read-char is) (read-char is nil ’the-end))) 
 ((not (characterp c))) 
-(format t "&#126;S " c))) 
+(format t "~S " c))) 
 ▷ #\0 #\1 #\2 #\3 
 → NIL 
 ```

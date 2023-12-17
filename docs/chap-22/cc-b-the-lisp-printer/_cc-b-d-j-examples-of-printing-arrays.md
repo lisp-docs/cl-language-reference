@@ -7,7 +7,7 @@
 
 (\*print-array\* t)) 
 
-(dotimes (i 3) (dotimes (j 3) (setf (aref a i j) (format nil "<&#126;D,&#126;D>" i j)))) (print a) 
+(dotimes (i 3) (dotimes (j 3) (setf (aref a i j) (format nil "<~D,~D>" i j)))) (print a) 
 
 (print (make-array 9 :displaced-to a))) 
 

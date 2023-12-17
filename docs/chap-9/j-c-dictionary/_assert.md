@@ -77,7 +77,7 @@ The *places* are *generalized references* to data upon which *test-form* depends
     (assert (and (= (array-rank a) (array-rank b) 2) 
 		 (= (array-dimension a 1) (array-dimension b 0))) 
 	    (a b) 
-	    "Cannot multiply &#126;S by &#126;S." a b) 
+	    "Cannot multiply ~S by ~S." a b) 
     (really-matrix-multiply a b))) → MATRIX-MULTIPLY 
 (matrix-multiply x y) 
 ▷ Correctable error in MATRIX-MULTIPLY: 

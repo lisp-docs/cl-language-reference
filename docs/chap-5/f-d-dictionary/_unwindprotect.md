@@ -107,7 +107,7 @@ If an exit occurs before completion of **incf**, the **decf** *form* is executed
 ;;; The following prints "The inner catch returns :SECOND-THROW" 
 ;;; and then returns :OUTER-CATCH. 
 (catch ’foo 
-  (format t "The inner catch returns &#126;s.&#126;%" 
+  (format t "The inner catch returns ~s.~%" 
 	  (catch ’foo 
 	    (unwind-protect (throw ’foo :first-throw) 
 	      (throw ’foo :second-throw)))) 

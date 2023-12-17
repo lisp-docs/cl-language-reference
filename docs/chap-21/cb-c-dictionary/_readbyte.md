@@ -49,7 +49,7 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is *false*, the *eof-va
 		   :element-type ’unsigned-byte) 
   (write-byte 101 s)) → 101 
 (with-open-file (s "temp-bytes" :element-type ’unsigned-byte) 
-  (format t "&#126;S &#126;S" (read-byte s) (read-byte s nil ’eof))) 
+  (format t "~S ~S" (read-byte s) (read-byte s nil ’eof))) 
 ▷ 101 EOF 
 → NIL 
 ```

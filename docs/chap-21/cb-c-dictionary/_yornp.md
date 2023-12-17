@@ -71,7 +71,7 @@ All input and output are performed using *query I/O*.
 (y-or-n-p "(t or nil) given by") 
 ▷ (t or nil) given by (Y or N) Y 
 → true 
-(yes-or-no-p "a &#126;S message" ’frightening) 
+(yes-or-no-p "a ~S message" ’frightening) 
 ▷ a FRIGHTENING message (Yes or No) no 
 → false 
 (y-or-n-p "Produce listing file?") 

@@ -70,9 +70,9 @@ In some implementations the *stream* argument passed to a **describe-object** me
 (defclass federation-starship (spaceship) ()) 
 (defmethod describe-object ((s spaceship) stream) 
   (with-slots (captain serial#) s 
-    (format stream "&#126;&amp;&#126;S is a spaceship of type &#126;S,&#126; 
-&#126;%with &#126;A at the helm &#126; 
-and with serial number &#126;D.&#126;%" 
+    (format stream "~&amp;~S is a spaceship of type ~S,~ 
+~%with ~A at the helm ~ 
+and with serial number ~D.~%" 
 	    s (type-of s) captain serial#))) 
 (make-instance ’federation-starship 
 		:captain "Rachel Garrett" 

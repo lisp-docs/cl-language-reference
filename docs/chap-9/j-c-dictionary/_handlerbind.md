@@ -67,7 +67,7 @@ In the following code, if an unbound variable error is signaled in the body (and
   ...) 
 If any other kind of error is signaled, the second function is called. In either case, neither handler is active while executing the code in the associated function. 
 (defun trap-error-handler (condition) 
-  (format \*error-output\* "&#126;&amp;&#126;A&#126;&amp;" condition) 
+  (format \*error-output\* "~&amp;~A~&amp;" condition) 
   (throw ’trap-errors nil)) 
 (defmacro trap-errors (&amp;rest forms) 
 		       ‘(catch ’trap-errors 

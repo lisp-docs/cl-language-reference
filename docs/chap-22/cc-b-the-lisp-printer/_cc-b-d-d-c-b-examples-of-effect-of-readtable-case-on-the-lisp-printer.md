@@ -7,11 +7,11 @@
 
 (\*print-case\* \*print-case\*)) 
 
-(format t "READTABLE-CASE \*PRINT-CASE\* Symbol-name Output&#126; 
+(format t "READTABLE-CASE \*PRINT-CASE\* Symbol-name Output~ 
 
-&#126;%–––––––––––––––––––––––––&#126; 
+~%–––––––––––––––––––––––––~ 
 
-&#126;%") 
+~%") 
 
 (dolist (readtable-case ’(:upcase :downcase :preserve :invert)) 
 
@@ -23,7 +23,7 @@
 
 (setq \*print-case\* print-case) 
 
-(format t "&#126;&amp;:&#126;A&#126;15T:&#126;A&#126;29T&#126;A&#126;42T&#126;A" 
+(format t "~&amp;:~A~15T:~A~29T~A~42T~A" 
 
 
 

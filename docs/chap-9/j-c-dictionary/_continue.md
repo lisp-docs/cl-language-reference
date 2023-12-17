@@ -25,7 +25,7 @@ The **continue** *restart* is generally part of protocols where there is a singl
 			    (let ((r (find-restart ’continue c))) 
 			      (when r (invoke-restart r)))))) 
     (cond ((not (floatp x)) 
-	   (cerror "Try floating it." "&#126;D is not a float." x) 
+	   (cerror "Try floating it." "~D is not a float." x) 
 	   (float x)) 
 	  (t x)))) → 3.0 
 ```

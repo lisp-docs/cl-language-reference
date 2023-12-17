@@ -141,9 +141,9 @@ If there are no *forms* in a selected *clause*, the case, and therefore **handle
     (warning () "Lots of smoke, but no fire.") 
     ((or arithmetic-error control-error cell-error stream-error) 
 	(condition) 
-      (format nil "&#126;S looks especially bad." condition)) 
+      (format nil "~S looks especially bad." condition)) 
     (serious-condition (condition) 
-      (format nil "&#126;S looks serious." condition)) 
+      (format nil "~S looks serious." condition)) 
     (condition () "Hardly worth mentioning."))) 
 → ASSESS-CONDITION 
 (assess-condition (make-condition ’stream-error :stream \*terminal-io\*)) → "#<STREAM-ERROR 12352256> looks especially bad." 

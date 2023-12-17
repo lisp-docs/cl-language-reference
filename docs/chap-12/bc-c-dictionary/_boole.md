@@ -85,8 +85,8 @@ The operation to be performed and the return value are determined by *op*.
 ;;; These examples illustrate the result of applying BOOLE and each 
 ;;; of the possible values of OP to each possible combination of bits. 
 (progn 
-(format t "&#126;&amp;Results of (BOOLE <op> #b0011 #b0101) ...&#126; 
-&#126;%–-Op–––-Decimal––-Binary––Bits–-&#126;%") 
+(format t "~&amp;Results of (BOOLE <op> #b0011 #b0101) ...~ 
+~%–-Op–––-Decimal––-Binary––Bits–-~%") 
 (dolist (symbol ’(boole-1 boole-2 boole-and boole-andc1 
 boole-andc2 boole-c1 boole-c2 boole-clr 
 boole-eqv boole-ior boole-nand boole-nor 
@@ -95,7 +95,7 @@ boole-eqv boole-ior boole-nand boole-nor
 **boole** 
 boole-orc1 boole-orc2 boole-set boole-xor)) 
 (let ((result (boole (symbol-value symbol) #b0011 #b0101))) 
-(format t "&#126;&amp; &#126;A&#126;13T&#126;3,’ D&#126;23T&#126;:\*&#126;5,’ B&#126;31T ...&#126;4,’0B&#126;%" 
+(format t "~&amp; ~A~13T~3,’ D~23T~:\*~5,’ B~31T ...~4,’0B~%" 
 symbol result (logand result #b1111))))) 
 ▷ Results of (BOOLE <op> #b0011 #b0101) ... 
 ▷ –-Op–––-Decimal––-Binary––Bits–- 

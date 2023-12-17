@@ -103,7 +103,7 @@ Both functions return the *object* read from *input-stream*. *Eof-value* is retu
   (set-dispatch-macro-character #\# #\\{ #’skip-then-read-char) 
   (set-dispatch-macro-character #\# #\\} #’skip-then-read-char) 
   (with-input-from-string (is "#\{123 x #\}123 y") 
-    (format t "&#126;S &#126;S" (read is) (read is)))) → #\x, #\Space, NIL 
+    (format t "~S ~S" (read is) (read is)))) → #\x, #\Space, NIL 
 As an example, consider this *reader macro* definition: 
 (defun slash-reader (stream char) 
   (declare (ignore char)) 

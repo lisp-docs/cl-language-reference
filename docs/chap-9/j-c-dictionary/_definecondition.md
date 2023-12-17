@@ -360,7 +360,7 @@ The following form defines a condition of *type* peg/hole-mismatch which inherit
    (hole-shape :initarg :hole-shape 
 	       :reader peg/hole-mismatch-hole-shape)) 
   (:report (lambda (condition stream) 
-	     (format stream "A &#126;A peg cannot go in a &#126;A hole." 
+	     (format stream "A ~A peg cannot go in a ~A hole." 
 		     (peg/hole-mismatch-peg-shape condition) 
 		     (peg/hole-mismatch-hole-shape condition))))) 
 The new type has slots peg-shape and hole-shape, so **make-condition** accepts :peg-shape and :hole-shape keywords. The *readers* peg/hole-mismatch-peg-shape and peg/hole-mismatch-hole-shape apply to objects of this type, as illustrated in the :report information. 
@@ -370,12 +370,12 @@ The following form defines a *condition type* named machine-error which inherits
   ((machine-name :initarg :machine-name 
 		 :reader machine-error-machine-name)) 
   (:report (lambda (condition stream) 
-	     (format stream "There is a problem with &#126;A." 
+	     (format stream "There is a problem with ~A." 
 		     (machine-error-machine-name condition))))) 
 Building on this definition, a new error condition can be defined which is a subtype of machine-error for use when machines are not available: 
 (define-condition machine-not-available-error (machine-error) () 
   (:report (lambda (condition stream) 
-	     (format stream "The machine &#126;A is not available." 
+	     (format stream "The machine ~A is not available." 
 		     (machine-error-machine-name condition))))) 
 This defines a still more specific condition, built upon machine-not-available-error, which provides a slot initialization form for machine-name but which does not provide any new slots or report information. It just gives the machine-name slot a default initialization: 
 (define-condition my-favorite-machine-not-available-error 
@@ -396,7 +396,7 @@ Note that since no :report clause was given, the information inherited from mach
 	   :reader ate-too-much-ice-cream-flavor 
 	   :initform ’vanilla )) 
   (:report (lambda (condition stream) 
-	     (format stream "&#126;A ate too much &#126;A ice-cream" 
+	     (format stream "~A ate too much ~A ice-cream" 
 		     (ate-too-much-person condition) 
 		     (ate-too-much-ice-cream-flavor condition))))) 
 → ATE-TOO-MUCH-ICE-CREAM 
@@ -405,7 +405,7 @@ Note that since no :report clause was given, the information inherited from mach
 		 :weight 300 
 		 :flavor ’chocolate) 
 → #<ATE-TOO-MUCH-ICE-CREAM 32236101> 
-(format t "&#126;A" \*) 
+(format t "~A" \*) 
 ▷ FRED ate too much CHOCOLATE ice-cream 
 → NIL 
 ```

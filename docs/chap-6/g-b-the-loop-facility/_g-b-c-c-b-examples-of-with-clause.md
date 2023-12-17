@@ -41,7 +41,7 @@ return (list a b c))
 
 (loop with (a b c) of-type (float integer float) 
 
-return (format nil "&#126;A &#126;A &#126;A" a b c)) 
+return (format nil "~A ~A ~A" a b c)) 
 
 → "0.0 0 0.0" 
 
@@ -51,7 +51,7 @@ return (format nil "&#126;A &#126;A &#126;A" a b c))
 
 (loop with (a b c) of-type float 
 
-return (format nil "&#126;A &#126;A &#126;A" a b c)) 
+return (format nil "~A ~A ~A" a b c)) 
 
 → "0.0 0.0 0.0" 
 

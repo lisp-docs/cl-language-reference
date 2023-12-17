@@ -36,7 +36,7 @@ Returns *true* if *character* is of *type* **standard-char**; otherwise, returns
 
 (standard-char-p #\Space) → true 
 
-(standard-char-p #\&#126;) → true 
+(standard-char-p #\~) → true 
 
 ;; This next example presupposes an implementation 
 

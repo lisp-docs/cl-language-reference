@@ -163,12 +163,12 @@ In all three cases, is permissible for more than one *clause* to specify a match
 ;;; (Note that the parts of this example which use TYPE-OF 
 ;;; are implementation-dependent.) 
 (defun what-is-it (x) 
-  (format t "&#126;&amp;&#126;S is &#126;A.&#126;%" 
+  (format t "~&amp;~S is ~A.~%" 
 	  x (typecase x 
 	      (float "a float") 
 	      (null "a symbol, boolean false, or the empty list") 
 	      (list "a list") 
-	      (t (format nil "a(n) &#126;(&#126;A&#126;)" (type-of x)))))) 
+	      (t (format nil "a(n) ~(~A~)" (type-of x)))))) 
 → WHAT-IS-IT 
 (map ’nil #’what-is-it ’(nil (a b) 7.0 7 box)) 
 ▷ NIL is a symbol, boolean false, or the empty list. 

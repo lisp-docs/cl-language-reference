@@ -92,11 +92,11 @@ The consequences are undefined if an attempt is made to *assign* the *stream var
 → #\<PATHNAME :HOST NIL :DEVICE *device-name* :DIRECTORY *directory-name* 
 :NAME "test" :TYPE NIL :VERSION :NEWEST> 
 (with-open-file (s p :direction :output :if-exists :supersede) 
-  (format s "Here are a couple&#126;%of test data lines&#126;%")) → NIL 
+  (format s "Here are a couple~%of test data lines~%")) → NIL 
 (with-open-file (s p) 
   (do ((l (read-line s) (read-line s nil ’eof))) 
       ((eq l ’eof) "Reached end of file.") 
-    (format t "&#126;&amp;\*\*\* &#126;A&#126;%" l))) 
+    (format t "~&amp;\*\*\* ~A~%" l))) 
 ▷ \*\*\* Here are a couple 
 ▷ \*\*\* of test data lines 
 → "Reached end of file." 

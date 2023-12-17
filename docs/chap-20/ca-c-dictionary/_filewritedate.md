@@ -34,11 +34,11 @@ Returns a *universal time* representing the time at which the *file* specified b
 ```lisp
 (with-open-file (s "noel.text" 
 		   :direction :output :if-exists :error) 
-  (format s "&#126;&amp;Dear Santa,&#126;2%I was good this year. &#126; 
-Please leave lots of toys.&#126;2%Love, Sue&#126; 
+  (format s "~&amp;Dear Santa,~2%I was good this year. ~ 
+Please leave lots of toys.~2%Love, Sue~ 
  
  
-&#126;2%attachments: milk, cookies&#126;%") 
+~2%attachments: milk, cookies~%") 
   (truename s)) 
 → #P"CUPID:/susan/noel.text" 
 (with-open-file (s "noel.text") 

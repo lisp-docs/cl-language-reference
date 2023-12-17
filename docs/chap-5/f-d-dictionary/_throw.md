@@ -70,7 +70,7 @@ The consequences of the following are undefined because the **catch** of b is pa
       (throw ’b 2)))) 
 The following prints “The inner catch returns :SECOND-THROW” and then returns :outer-catch. 
 (catch ’foo 
-  (format t "The inner catch returns &#126;s.&#126;%" 
+  (format t "The inner catch returns ~s.~%" 
 	  (catch ’foo 
 	    (unwind-protect (throw ’foo :first-throw) 
 	      (throw ’foo :second-throw)))) 

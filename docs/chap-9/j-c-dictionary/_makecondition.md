@@ -50,7 +50,7 @@ Constructs and returns a *condition* of type *type* using *slot-initializations*
 ```lisp
 (defvar \*oops-count\* 0) 
 (setq a (make-condition ’simple-error 
-			 :format-control "This is your &#126;:R error." 
+			 :format-control "This is your ~:R error." 
 			 :format-arguments (list (incf \*oops-count\*)))) 
 → #<SIMPLE-ERROR 32245104> 
 (format t "~&~A~%" a) 

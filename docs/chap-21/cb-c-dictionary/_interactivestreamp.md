@@ -36,10 +36,10 @@ Returns *true* if *stream* is an *interactive stream*; otherwise, returns *false
   (let ((error (round (\* (- measured limit) 100) 
 		      limit))) 
     (unless (if (interactive-stream-p \*query-io\*) 
-		(yes-or-no-p "The frammis is out of tolerance by &#126;D%.&#126;@ 
+		(yes-or-no-p "The frammis is out of tolerance by ~D%.~@ 
 Is it safe to proceed? " error) 
 		(< error 15)) ;15% is acceptable 
-      (error "The frammis is out of tolerance by &#126;D%." error)))) 
+      (error "The frammis is out of tolerance by ~D%." error)))) 
 ```
 **Exceptional Situations:** 
 

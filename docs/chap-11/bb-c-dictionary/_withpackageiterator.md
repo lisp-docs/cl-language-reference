@@ -191,7 +191,7 @@ The following function should return **t** on any *package*, and signal an error
 	 (let ((l (multiple-value-list (find-symbol (symbol-name symbol) 
 						    package)))) 
 	   (unless (equal l (list symbol accessibility)) 
-	     (error "Symbol &#126;S not found as &#126;S in package &#126;A [&#126;S]" 
+	     (error "Symbol ~S not found as ~S in package ~A [~S]" 
 		    symbol accessibility (package-name package) l)) 
 	   (push l generated-entries))))) 
     (unless (and (subsetp all-entries generated-entries :test #’equal) 

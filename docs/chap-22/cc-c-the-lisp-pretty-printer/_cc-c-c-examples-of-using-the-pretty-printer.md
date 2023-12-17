@@ -217,11 +217,11 @@ As examples of the convenience of specifying pretty printing with *format string
 
 (defun simple-pprint-defun (\*standard-output\* list) 
 
-(format T "&#126;:<&#126;W &#126;@ &#126;:I&#126;W &#126;: &#126;W&#126;1I &#126; &#126;W&#126;:>" list)) 
+(format T "~:<~W ~@ ~:I~W ~: ~W~1I ~ ~W~:>" list)) 
 
 (defun pprint-let (\*standard-output\* list) 
 
-(format T "&#126;:<&#126;W&#126;<i><sup>^</sup></i>&#126;:<&#126;@\{&#126;:<&#126;@\{&#126;W&#126;<i><sup>^</sup></i>&#126; &#126;\}&#126;:>&#126;<i><sup>^</sup></i>&#126;: &#126;\}&#126;:>&#126;1I&#126;@\{&#126;<i><sup>^</sup></i>&#126; &#126;W&#126;\}&#126;:>" list)) 
+(format T "~:<~W~<i><sup>^</sup></i>~:<~@\{~:<~@\{~W~<i><sup>^</sup></i>~ ~\}~:>~<i><sup>^</sup></i>~: ~\}~:>~1I~@\{~<i><sup>^</sup></i>~ ~W~\}~:>" list)) 
 
 In the following example, the first *form* restores **\*print-pprint-dispatch\*** to the equivalent of its initial value. The next two forms then set up a special way to pretty print ratios. Note that the more specific *type specifier* has to be associated with a higher priority. 
 
@@ -231,7 +231,7 @@ In the following example, the first *form* restores **\*print-pprint-dispatch\**
 
 #’(lambda (s obj) 
 
-(format s "#.(/ &#126;W &#126;W)" 
+(format s "#.(/ ~W ~W)" 
 
 (numerator obj) (denominator obj)))) 
 
@@ -239,7 +239,7 @@ In the following example, the first *form* restores **\*print-pprint-dispatch\**
 
 #’(lambda (s obj) 
 
-(format s "#.(- (/ &#126;W &#126;W))" 
+(format s "#.(- (/ ~W ~W))" 
 
 (- (numerator obj)) (denominator obj))) 
 
@@ -257,7 +257,7 @@ The following two *forms* illustrate the definition of pretty printing functions
 
 (if (and (consp (cdr list)) (null (cddr list))) 
 
-(funcall (formatter "’&#126;W") s (cadr list)) 
+(funcall (formatter "’~W") s (cadr list)) 
 
 (pprint-fill s list)))) 
 
@@ -271,7 +271,7 @@ The following two *forms* illustrate the definition of pretty printing functions
 
 (pprint-dispatch ’(let) nil)) 
 
-The next example specifies a default method for printing lists that do not correspond to function calls. Note that the functions **pprint-linear**, **pprint-fill**, and **pprint-tabular** are all defined with optional *colon-p* and *at-sign-p* arguments so that they can be used as **pprint dispatch functions** as well as &#126;/.../ functions. 
+The next example specifies a default method for printing lists that do not correspond to function calls. Note that the functions **pprint-linear**, **pprint-fill**, and **pprint-tabular** are all defined with optional *colon-p* and *at-sign-p* arguments so that they can be used as **pprint dispatch functions** as well as ~/.../ functions. 
 
 (set-pprint-dispatch ’(cons (not (and symbol (satisfies fboundp)))) 
 
@@ -293,7 +293,7 @@ This final example shows how to define a pretty printing function for a user def
 
 #’(lambda (s f) 
 
-(funcall (formatter "&#126;@<#<&#126;;&#126;W and &#126;2I&#126; &#126;/pprint-fill/&#126;;>&#126;:>") 
+(funcall (formatter "~@<#<~;~W and ~2I~ ~/pprint-fill/~;>~:>") 
 
 s (family-mom f) (family-kids f)))) 
 

@@ -511,7 +511,7 @@ Most examples of the long form of **define-method-combination** also illustrate 
        (case order 
 	 (:most-specific-first) 
 	 (:most-specific-last (setq primary (reverse primary))) 
-	 (otherwise (method-combination-error "&#126;S is an invalid order.&#126;@ 
+	 (otherwise (method-combination-error "~S is an invalid order.~@ 
 :most-specific-first and :most-specific-last are the possible values." order))) 
        ;; Must have a primary method 
        (unless primary 

@@ -92,7 +92,7 @@ There are no specified keyword arguments for **translate-pathname**, but impleme
 (pathname-name (translate-pathname "foobar" "foo\*" "baz\*")) → "bazbar" 
 (defun translate-logical-pathname-1 (pathname rules) 
   (let ((rule (assoc pathname rules :test #’pathname-match-p))) 
-    (unless rule (error "No translation rule for &#126;A" pathname)) 
+    (unless rule (error "No translation rule for ~A" pathname)) 
     (translate-pathname pathname (first rule) (second rule)))) 
 (translate-logical-pathname-1 "FOO:CODE;BASIC.LISP" 
 			      ’(("FOO:DOCUMENTATION;" "MY-UNIX:/doc/foo/") 

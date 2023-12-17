@@ -111,7 +111,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 			     (defun real-sqrt (n) 
 			       (when (minusp n) 
 				 (setq n (- n)) 
-				 (cerror "Return sqrt(&#126;D) instead." "Tried to take sqrt(-&#126;D)." n)) 
+				 (cerror "Return sqrt(~D) instead." "Tried to take sqrt(-~D)." n)) 
 			       (sqrt n)) 
 			     (real-sqrt 4) → 2 
 			     (real-sqrt -9) 
@@ -133,7 +133,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 				   ((= counter 0) ’done) 
 				 (when (= counter 1) 
 				   (warn "Almost done")) 
-				 (format t "&#126;&amp;&#126;D&#126;%" counter))) 
+				 (format t "~&amp;~D~%" counter))) 
 			     → COUNT-DOWN 
 			     (count-down 3) 
 			     ▷ 3 
