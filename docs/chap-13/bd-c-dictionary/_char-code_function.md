@@ -30,7 +30,9 @@
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -50,6 +52,8 @@
 
 
 
+
+```
 **Exceptional Situations:** 
 
 

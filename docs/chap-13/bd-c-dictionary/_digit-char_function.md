@@ -38,7 +38,9 @@ If *weight* is greater than or equal to *radix*, **digit-char** returns *false*.
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -74,6 +76,8 @@ If *weight* is greater than or equal to *radix*, **digit-char** returns *false*.
 
 
 
+
+```
 **See Also:** 
 
 

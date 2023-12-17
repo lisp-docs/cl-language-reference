@@ -30,7 +30,9 @@ The *value* of **\*print-case\*** controls the case (upper, lower, or mixed) in 
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -122,6 +124,8 @@ The *value* of **\*print-case\*** controls the case (upper, lower, or mixed) in 
 
 
 
+
+```
 **See Also:** 
 
 

@@ -1,3 +1,4 @@
+```lisp
  For example, suppose there are two methods defined for width as follows: 
 
 
@@ -58,3 +59,5 @@ The evaluation of the following form will not signal an error if the class named
 
 
 
+
+```

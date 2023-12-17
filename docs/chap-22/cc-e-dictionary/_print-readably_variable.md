@@ -58,7 +58,9 @@ If **\*read-eval\*** is *false* and **\*print-readably\*** is *true*, any such m
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -226,6 +228,8 @@ Error: Can’t print #\<HASH-TABLE EQL 0/120 32005763\> readably.
 
 
 
+
+```
 **See Also:** 
 
 

@@ -34,7 +34,9 @@ If the *value* of **\*print-radix\*** is *true*, the printer will print a radix 
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -154,6 +156,8 @@ If the *value* of **\*print-radix\*** is *true*, the printer will print a radix 
 
 
 
+
+```
 **Affected By:** 
 
 

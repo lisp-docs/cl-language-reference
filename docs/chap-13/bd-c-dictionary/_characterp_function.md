@@ -30,7 +30,9 @@ Returns *true* if *object* is of *type* **character**; otherwise, returns *false
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -78,6 +80,8 @@ Returns *true* if *object* is of *type* **character**; otherwise, returns *false
 
 
 
+
+```
 **See Also:** 
 
 

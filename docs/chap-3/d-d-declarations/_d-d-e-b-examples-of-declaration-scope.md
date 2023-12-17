@@ -1,3 +1,4 @@
+```lisp
  
 
 
@@ -138,3 +139,5 @@ In this example, the first reference to x on the fourth line is to the *lexical 
 
 
 
+
+```

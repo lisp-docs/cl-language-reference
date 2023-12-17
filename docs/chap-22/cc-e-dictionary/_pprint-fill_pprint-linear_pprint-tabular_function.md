@@ -66,7 +66,9 @@ If *object* is a *list* and if the *value* of **\*print-pretty\*** is *false*, e
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -102,6 +104,8 @@ MAPLE CENTER
 
 
 
+
+```
 **Side Effects:** 
 
 

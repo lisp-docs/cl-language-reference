@@ -26,7 +26,9 @@ Controls whether the prefix “#:” is printed before *apparently uninterned sy
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -46,6 +48,8 @@ Controls whether the prefix “#:” is printed before *apparently uninterned sy
 
 
 
+
+```
 **See Also:** 
 
 

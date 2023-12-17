@@ -1,3 +1,4 @@
+```lisp
  
 
 
@@ -10,3 +11,5 @@ do (write-char char stream))
 
 
 
+
+```

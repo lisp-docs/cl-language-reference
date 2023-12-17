@@ -146,7 +146,9 @@ The meanings and defaults for the keyword arguments to **write-to-string** are t
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -170,6 +172,8 @@ The meanings and defaults for the keyword arguments to **write-to-string** are t
 
 
 
+
+```
 **Affected By:** 
 
 

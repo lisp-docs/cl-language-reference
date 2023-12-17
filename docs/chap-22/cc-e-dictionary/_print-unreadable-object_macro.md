@@ -58,7 +58,9 @@ If either *type* or *identity* is not supplied, its value is *false*. It is vali
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -90,6 +92,8 @@ If either *type* or *identity* is not supplied, its value is *false*. It is vali
 
 
 
+
+```
 **Exceptional Situations:** 
 
 

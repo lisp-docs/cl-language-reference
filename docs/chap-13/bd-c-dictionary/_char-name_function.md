@@ -38,7 +38,9 @@ The *standard characters hNewlinei* and *hSpacei* have the respective names "New
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -114,6 +116,8 @@ The *standard characters hNewlinei* and *hSpacei* have the respective names "New
 
 
 
+
+```
 **Exceptional Situations:** 
 
 

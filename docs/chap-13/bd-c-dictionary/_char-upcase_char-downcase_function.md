@@ -38,7 +38,9 @@ The result only ever differs from *character* in its *code attribute*; all *impl
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -118,6 +120,8 @@ The result only ever differs from *character* in its *code attribute*; all *impl
 
 
 
+
+```
 **Exceptional Situations:** 
 
 

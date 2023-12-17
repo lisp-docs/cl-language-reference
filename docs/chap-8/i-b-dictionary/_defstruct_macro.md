@@ -1266,7 +1266,9 @@ If a **defstruct** *form* appears as a *top level form*, the *compiler* must mak
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -1738,6 +1740,8 @@ a b c d e f) → DFS-BOA
 
 
 
+
+```
 **Exceptional Situations:** 
 
 

@@ -118,7 +118,9 @@ If two *characters* have *identical implementation-defined attributes*, then the
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -302,6 +304,8 @@ If two *characters* have *identical implementation-defined attributes*, then the
 
 
 
+
+```
 **Exceptional Situations:** 
 
 

@@ -50,7 +50,9 @@ If it is *true*, the *pretty printer* is used, and the *Lisp printer* will endea
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -170,6 +172,8 @@ If it is *true*, the *pretty printer* is used, and the *Lisp printer* will endea
 
 
 
+
+```
 **See Also:** 
 
 

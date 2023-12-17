@@ -46,7 +46,9 @@ where *arguments-tail* is either the tail of *arguments* which has as its *car* 
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -86,6 +88,8 @@ where *arguments-tail* is either the tail of *arguments* which has as its *car* 
 
 
 
+
+```
 **Exceptional Situations:** 
 
 

@@ -1,3 +1,4 @@
+```lisp
  
 
 
@@ -6,3 +7,5 @@ Suppose that function foo is a member of a set *S* of *functions* that operate o
 
 
 
+
+```

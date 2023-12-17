@@ -30,7 +30,9 @@ Returns the *character object* whose *name* is *name* (as determined by **string
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -54,6 +56,8 @@ Returns the *character object* whose *name* is *name* (as determined by **string
 
 
 
+
+```
 **Exceptional Situations:** 
 
 

@@ -1,3 +1,4 @@
+```lisp
  
 
 
@@ -38,3 +39,5 @@ There is a *local slot* named S1 in *instances* of C2. The default initial value
 
 
 
+
+```

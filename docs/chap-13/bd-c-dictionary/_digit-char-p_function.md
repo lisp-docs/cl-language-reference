@@ -46,7 +46,9 @@ Tests whether *char* is a digit in the specified *radix* (*i.e.*, with a weight 
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -110,6 +112,8 @@ Tests whether *char* is a digit in the specified *radix* (*i.e.*, with a weight 
 
 
 
+
+```
 **Affected By:** 
 
 

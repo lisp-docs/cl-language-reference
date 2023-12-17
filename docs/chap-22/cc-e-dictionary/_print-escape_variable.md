@@ -34,7 +34,9 @@ For more specific details of how the *value* of **\*print-escape\*** affects the
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -74,6 +76,8 @@ For more specific details of how the *value* of **\*print-escape\*** affects the
 
 
 
+
+```
 **Affected By:** 
 
 

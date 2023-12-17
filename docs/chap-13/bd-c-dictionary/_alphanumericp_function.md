@@ -30,7 +30,9 @@ Returns *true* if *character* is an *alphabetic*<sub>1</sub> *character* or a *n
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -50,6 +52,8 @@ Returns *true* if *character* is an *alphabetic*<sub>1</sub> *character* or a *n
 
 
 
+
+```
 **Affected By:** 
 
 

@@ -42,7 +42,9 @@ for characters *c1* and *c2*.
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -58,6 +60,8 @@ for characters *c1* and *c2*.
 
 
 
+
+```
 **See Also:** 
 
 

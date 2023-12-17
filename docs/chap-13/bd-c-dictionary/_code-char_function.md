@@ -42,7 +42,9 @@ Returns a *character* with the *code attribute* given by *code*. If no such *cha
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -54,6 +56,8 @@ Returns a *character* with the *code attribute* given by *code*. If no such *cha
 
 
 
+
+```
 **Affected By:** 
 
 

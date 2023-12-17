@@ -38,7 +38,9 @@ When the *value* of **\*print-lines\*** is other than **nil**, it is a limit on 
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -66,6 +68,8 @@ When the *value* of **\*print-lines\*** is other than **nil**, it is a limit on 
 
 
 
+
+```
 **Notes:** 
 
 

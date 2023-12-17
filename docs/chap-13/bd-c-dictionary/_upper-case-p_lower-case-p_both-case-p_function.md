@@ -38,7 +38,9 @@ These functions test the case of a given *character*.
 
 
 
-**upper-case-p** returns *true* if *character* is an *uppercase character* ; otherwise, returns *false*. **lower-case-p** returns *true* if *character* is a *lowercase character* ; otherwise, returns *false*. **both-case-p** returns *true* if *character* is a *character* with *case*; otherwise, returns *false*. **Examples:** 
+**upper-case-p** returns *true* if *character* is an *uppercase character* ; otherwise, returns *false*. **lower-case-p** returns *true* if *character* is a *lowercase character* ; otherwise, returns *false*. **both-case-p** returns *true* if *character* is a *character* with *case*; otherwise, returns *false*. **Examples:**
+```lisp
+ 
 
 
 
@@ -90,6 +92,8 @@ These functions test the case of a given *character*.
 
 
 
+
+```
 **Exceptional Situations:** 
 
 

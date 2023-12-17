@@ -58,7 +58,9 @@ Note that implementations should not use #*n*# notation when the *Lisp reader* w
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -90,6 +92,8 @@ Note that implementations should not use #*n*# notation when the *Lisp reader* w
 
 
 
+
+```
 **See Also:** 
 
 

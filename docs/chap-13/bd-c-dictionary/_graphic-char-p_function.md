@@ -42,7 +42,9 @@ Returns *true* if *character* is a *graphic character* ; otherwise, returns *fal
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -62,6 +64,8 @@ Returns *true* if *character* is a *graphic character* ; otherwise, returns *fal
 
 
 
+
+```
 **Exceptional Situations:** 
 
 

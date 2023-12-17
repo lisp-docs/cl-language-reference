@@ -42,7 +42,9 @@ Returns the *character* denoted by the *character designator* .
 
 
 
-**Examples:** 
+**Examples:**
+```lisp
+ 
 
 
 
@@ -70,6 +72,8 @@ Returns the *character* denoted by the *character designator* .
 
 
 
+
+```
 **Exceptional Situations:** 
 
 
