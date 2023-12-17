@@ -18,7 +18,7 @@
 
 
 
-[ **lidib** ] or [ **lid***✏***b** ] or [ **el d—e b—e** ] 
+[ **lidib** ] or [ **lid***ε***b** ] or [ **el d—e b—e** ] 
 
 
 
