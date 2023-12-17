@@ -6,7 +6,7 @@
 
 
 
-**nth-value** *n form ! object* 
+**nth-value** *n form → object* 
 
 
 
