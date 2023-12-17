@@ -42,7 +42,7 @@ The *type* **extended-char** might have no *elements*<sub>4</sub> in *implementa
 
 
 
-**char=, char/=, char&lt;, char&gt;, char&lt;=, char&gt;=, char-equal, char-not-equal, char-lessp, char-greaterp, char-not-greaterp, char-not-lessp** *Function*
+**char=, char/=, char\<, char\>, char\<=, char\>=, char-equal, char-not-equal, char-lessp, char-greaterp, char-not-greaterp, char-not-lessp** *Function*
 
 
 
