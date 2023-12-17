@@ -457,7 +457,7 @@ Most examples of the long form of **define-method-combination** also illustrate 
     
     
     **define-method-combination** 
-  (&amp;optional (order :most-specific-first)) 
+  (&optional (order :most-specific-first)) 
    ((around (:around)) 
     (primary (and) :order order :required t)) 
    (let ((form (if (rest primary) 
@@ -504,7 +504,7 @@ Most examples of the long form of **define-method-combination** also illustrate 
   **define-method-combination** 
 					;A more complete version of the preceding 
   (define-method-combination or 
-      (&amp;optional (order ’:most-specific-first)) 
+      (&optional (order ’:most-specific-first)) 
        ((around (:around)) 
 	(primary (or))) 
        ;; Process the order argument 
@@ -530,7 +530,7 @@ Most examples of the long form of **define-method-combination** also illustrate 
 	      form))) 
 					;The same thing, using the :order and :required keyword options 
     (define-method-combination or 
-	(&amp;optional (order ’:most-specific-first)) 
+	(&optional (order ’:most-specific-first)) 
 	 ((around (:around)) 
 	  (primary (or) :order order :required t)) 
 	 (let ((form (if (rest primary) 

@@ -97,7 +97,7 @@ If a **define-setf-expander** *form* appears as a *top level form*, the *compile
 **Examples:**
 ```lisp
 (defun lastguy (x) (car (last x))) → LASTGUY 
-(define-setf-expander lastguy (x &amp;environment env) 
+(define-setf-expander lastguy (x &environment env) 
 			       "Set the last element in a list to the given value." 
 			       (multiple-value-bind (dummies vals newval setter getter) 
 				   (get-setf-expansion x env) 
@@ -118,7 +118,7 @@ If a **define-setf-expander** *form* appears as a *top level form*, the *compile
 					    c → (1 2 3 (4 5 LASTGUY-SYMBOL)) 
 ;;; Setf expander for the form (LDB bytespec int). 
 ;;; Recall that the int form must itself be suitable for SETF. 
-					    (define-setf-expander ldb (bytespec int &amp;environment env) 
+					    (define-setf-expander ldb (bytespec int &environment env) 
 								       (multiple-value-bind (temps vals stores 
 												   store-form access-form) 
 									   (get-setf-expansion int env);Get setf expansion for int. 

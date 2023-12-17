@@ -101,7 +101,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 **Examples:**
 ```lisp
 ;;; Example of the ABORT retart 
-(defmacro abort-on-error (&amp;body forms) 
+(defmacro abort-on-error (&body forms) 
 			  ‘(handler-bind ((error #’abort)) 
 			     ,@forms)) → ABORT-ON-ERROR 
 			     (abort-on-error (+ 3 5)) → 8 
@@ -133,7 +133,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 				   ((= counter 0) ’done) 
 				 (when (= counter 1) 
 				   (warn "Almost done")) 
-				 (format t "~&amp;~D~%" counter))) 
+				 (format t "~&~D~%" counter))) 
 			     → COUNT-DOWN 
 			     (count-down 3) 
 			     ▷ 3 
@@ -193,7 +193,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 			     (careful-symbol-value ’a) 
 			     → 24 
 ;;; Example of the USE-VALUE restart 
-			     (defun add-symbols-with-default (default &amp;rest symbols) 
+			     (defun add-symbols-with-default (default &rest symbols) 
 							      (handler-bind ((sys:unbound-symbol 
 									      #’(lambda (c) 
 										  (declare (ignore c)) 

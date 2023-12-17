@@ -124,7 +124,7 @@ and similarly for the relationship between **mapcan** and **mapcar**.
 					;An entry is 1 if the corresponding element of the input 
 					; list was the last instance of that element in the input list. 
 (setq dummy nil) → NIL 
-(mapc #’(lambda (&amp;rest x) (setq dummy (append dummy x))) 
+(mapc #’(lambda (&rest x) (setq dummy (append dummy x))) 
 		 ’(1 2 3 4) 
 		 ’(a b c d e) 
 		 ’(x y z)) → (1 2 3 4) 

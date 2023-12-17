@@ -167,7 +167,7 @@ An *implicit block* named **nil** surrounds the entire **do** (or **do\***) form
 
 (if (null item) (return) ;Process items until NIL seen. 
 
-(format t "~&amp;Output ~D: ~S" j item)))) 
+(format t "~&Output ~D: ~S" j item)))) 
 
 ▷ Input 0: banana 
 

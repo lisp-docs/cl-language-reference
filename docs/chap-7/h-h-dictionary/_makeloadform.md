@@ -186,14 +186,14 @@ Another way to write the **make-load-form** *method* in that example is to use *
 In the following example, *instances* of my-frob are “interned” in some way. An equivalent *instance* is reconstructed by using the value of the name slot as a key for searching existing *objects*. In this case the programmer has chosen to create a new *object* if no existing *object* is found; alternatively an error could have been signaled in that case. 
 (defclass my-frob () 
   ((name :initarg :name :reader my-name))) 
-(defmethod make-load-form ((self my-frob) &amp;optional environment) 
+(defmethod make-load-form ((self my-frob) &optional environment) 
 			   (declare (ignore environment)) 
 			   ‘(find-my-frob ’,(my-name self) :if-does-not-exist :create)) 
   In the following example, the data structure to be dumped is circular, because each parent has a list of its children and each child has a reference back to its parent. If **make-load-form** is called on one *object* in such a structure, the creation form creates an equivalent *object* and fills in the children slot, which forces creation of equivalent *objects* for all of its children, grandchildren, etc. 
   At this point none of the parent *slots* have been filled in. The initialization form fills in the parent *slot*, which forces creation of an equivalent *object* for the parent if it was not already created. Thus the entire tree is recreated at **load** time. At compile time, **make-load-form** is called once for each *object* in the tree. All of the creation forms are evaluated, in *implementation-dependent* order, and then all of the initialization forms are evaluated, also in *implementation-dependent* order. 
   (defclass tree-with-parent () ((parent :accessor tree-parent) 
 				 (children :initarg :children))) 
-  (defmethod make-load-form ((x tree-with-parent) &amp;optional environment) 
+  (defmethod make-load-form ((x tree-with-parent) &optional environment) 
 			     (declare (ignore environment)) 
 			     (values 
 			      ;; creation form 
@@ -202,7 +202,7 @@ In the following example, *instances* of my-frob are “interned” in some way.
 			      ‘(setf (tree-parent ’,x) ’,(slot-value x ’parent)))) 
     In the following example, the data structure to be dumped has no special properties and an equivalent structure can be reconstructed simply by reconstructing the *slots*’ contents. 
     (defstruct my-struct a b c) 
-    (defmethod make-load-form ((s my-struct) &amp;optional environment) 
+    (defmethod make-load-form ((s my-struct) &optional environment) 
 			       (make-load-form-saving-slots s :environment environment)) 
       
       

@@ -62,7 +62,7 @@ It is possible for both **macro-function** and **special-operator-p** to return 
 ```lisp
 (defmacro macfun (x) ’(macro-function ’macfun)) → MACFUN 
 (not (macro-function ’macfun)) → false 
-(macrolet ((foo (&amp;environment env) 
+(macrolet ((foo (&environment env) 
 		 (if (macro-function ’bar env) 
 		     ”yes 
 		      ”no))) 

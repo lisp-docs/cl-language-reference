@@ -1,9 +1,9 @@
 ```lisp
  For example, suppose there are two methods defined for width as follows: 
 
-(defmethod width ((c character-class) &amp;key font) ...) 
+(defmethod width ((c character-class) &key font) ...) 
 
-(defmethod width ((p picture-class) &amp;key pixel-size) ...) 
+(defmethod width ((p picture-class) &key pixel-size) ...) 
 
 
 

@@ -73,7 +73,7 @@ This is the normal mechanism for defining a *compiler macro function*. Its manne
 **Examples:**
 ```lisp
 (defun square (x) (expt x 2)) → SQUARE 
-(define-compiler-macro square (&amp;whole form arg) 
+(define-compiler-macro square (&whole form arg) 
 			       (if (atom arg) 
 				   ‘(expt ,arg 2) 
 				    (case (car arg) 
@@ -97,17 +97,17 @@ This is the normal mechanism for defining a *compiler macro function*. Its manne
 				      (defun distance-positional (x1 y1 x2 y2) 
 					(sqrt (+ (expt (- x2 x1) 2) (expt (- y2 y1) 2)))) 
 				      → DISTANCE-POSITIONAL 
-				      (defun distance (&amp;key (x1 0) (y1 0) (x2 x1) (y2 y1)) 
+				      (defun distance (&key (x1 0) (y1 0) (x2 x1) (y2 y1)) 
 						       (distance-positional x1 y1 x2 y2)) 
 					→ DISTANCE 
-					(define-compiler-macro distance (&amp;whole form 
-									 &amp;rest key-value-pairs 
-									 &amp;key (x1 0 x1-p) 
+					(define-compiler-macro distance (&whole form 
+									 &rest key-value-pairs 
+									 &key (x1 0 x1-p) 
 									 (y1 0 y1-p) 
 									 (x2 x1 x2-p) 
 									 (y2 y1 y2-p) 
-									 &amp;allow-other-keys 
-									 &amp;environment env) 
+									 &allow-other-keys 
+									 &environment env) 
 									 (flet ((key (n) (nth (\* n 2) key-value-pairs)) 
 										(arg (n) (nth (1+ (\* n 2)) key-value-pairs)) 
 										(simplep (x)  

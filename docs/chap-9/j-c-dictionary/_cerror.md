@@ -60,7 +60,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
   (loop (when (numberp n) (return n)) 
    (cerror "Enter a number." 
 	   ’not-a-number :argument n) 
-   (format t "~&amp;Type a number: ") 
+   (format t "~&Type a number: ") 
    (setq n (read)) 
    (fresh-line))) 
 (assure-number ’a) 
@@ -76,7 +76,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
    (cerror "Enter a number~:[~; a bit larger than ~D~]." 
 	   "~\*~A is not a large number." 
 	   (numberp n) n) 
-   (format t "~&amp;Type a large number: ") 
+   (format t "~&Type a large number: ") 
    (setq n (read)) 
    (fresh-line))) 
 
@@ -112,7 +112,7 @@ If *datum* is a *condition*, *arguments* can be supplied, but are used only in c
 	   :ignore (numberp n) 
 	   :ignore n 
 	   :allow-other-keys t) 
-   (format t "~&amp;Type a large number: ") 
+   (format t "~&Type a large number: ") 
    (setq n (read)) 
    (fresh-line))) 
 (assure-large-number ’a) 

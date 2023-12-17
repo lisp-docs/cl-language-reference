@@ -31,7 +31,7 @@ This *restart* is established by **warn** so that *handlers* of **warning** *con
 	(push c \*saved-warnings\*) 
 	(invoke-restart r))))) 
 → CUSTOM-WARNING-HANDLER 
-(defmacro with-quiet-warnings (&amp;body forms) 
+(defmacro with-quiet-warnings (&body forms) 
 			       ‘(let ((\*all-quiet\* t) 
 				      (\*saved-warnings\* ’())) 
 				  (handler-bind ((warning #’quiet-warning-handler)) 
@@ -46,7 +46,7 @@ This *restart* is established by **warn** so that *handlers* of **warning** *con
 	  (warn "Situation #3."))) 
   ▷ Warning: Situation #2. 
   → (#<SIMPLE-WARNING 42744421> #<SIMPLE-WARNING 42744365>) 
-  (dolist (s saved) (format t "~&amp;~A~%" s)) 
+  (dolist (s saved) (format t "~&~A~%" s)) 
   ▷ Situation #3. 
   ▷ Situation #1. 
   → NIL 

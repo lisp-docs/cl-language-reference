@@ -99,7 +99,7 @@ The principal operational distinction between **defparameter** and **defvar** is
 (define-interesting-number \*my-weight\* 13) ;stones 
 Here the initial value, (), for the variable \*the-interesting-numbers\* is just a seed that we are never likely to want to reset to something else once something has been grown from it. As such, we have used **defvar** to avoid having the \*interesting-numbers\* information reset if the file is loaded a second time. It is true that the two calls to **define-interesting-number** here would be reprocessed, but if there were additional calls in another file, they would not be and that information would be lost. On the other hand, consider the following code: 
 (defparameter \*default-beep-count\* 3) 
-(defun beep (&amp;optional (n \*default-beep-count\*)) 
+(defun beep (&optional (n \*default-beep-count\*)) 
 	     (dotimes (i n) (si:%beep 1000. 100000.) (sleep 0.1))) 
   Data and Control 
 

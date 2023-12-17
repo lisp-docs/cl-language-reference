@@ -34,7 +34,7 @@ Returns a *universal time* representing the time at which the *file* specified b
 ```lisp
 (with-open-file (s "noel.text" 
 		   :direction :output :if-exists :error) 
-  (format s "~&amp;Dear Santa,~2%I was good this year. ~ 
+  (format s "~&Dear Santa,~2%I was good this year. ~ 
 Please leave lots of toys.~2%Love, Sue~ 
  
  

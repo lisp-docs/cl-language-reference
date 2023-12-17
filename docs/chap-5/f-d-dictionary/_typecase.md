@@ -163,7 +163,7 @@ In all three cases, is permissible for more than one *clause* to specify a match
 ;;; (Note that the parts of this example which use TYPE-OF 
 ;;; are implementation-dependent.) 
 (defun what-is-it (x) 
-  (format t "~&amp;~S is ~A.~%" 
+  (format t "~&~S is ~A.~%" 
 	  x (typecase x 
 	      (float "a float") 
 	      (null "a symbol, boolean false, or the empty list") 

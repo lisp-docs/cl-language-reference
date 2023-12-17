@@ -1480,7 +1480,7 @@ load-limit
 
 (:constructor create-dfs-boa 
 
-(a &amp;optional b (c ’cc) &amp;rest d &amp;aux e (f ’ff)))) 
+(a &optional b (c ’cc) &rest d &aux e (f ’ff)))) 
 
 a b c d e f) → DFS-BOA 
 

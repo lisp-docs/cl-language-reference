@@ -128,8 +128,8 @@ a *form*.
 
 The *value* of **-** is the *form* that is currently being evaluated by the *Lisp read-eval-print loop*. **Examples:**
 ```lisp
-(format t "~&amp;Evaluating ~S~%" -) 
-▷ Evaluating (FORMAT T "~&amp;Evaluating ~S~%" -) 
+(format t "~&Evaluating ~S~%" -) 
+▷ Evaluating (FORMAT T "~&Evaluating ~S~%" -) 
 → NIL 
 ```
 **Affected By:** 

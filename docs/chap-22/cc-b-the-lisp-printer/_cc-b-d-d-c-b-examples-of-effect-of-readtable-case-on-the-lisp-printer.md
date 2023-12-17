@@ -23,7 +23,7 @@
 
 (setq \*print-case\* print-case) 
 
-(format t "~&amp;:~A~15T:~A~29T~A~42T~A" 
+(format t "~&:~A~15T:~A~29T~A~42T~A" 
 
 
 

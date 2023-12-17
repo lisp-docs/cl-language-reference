@@ -99,7 +99,7 @@ temp-two → 10
 Here is an example of the use of dotimes in processing strings: 
 ;;; True if the specified subsequence of the string is a 
 ;;; palindrome (reads the same forwards and backwards). 
-(defun palindromep (string &amp;optional 
+(defun palindromep (string &optional 
 		    (start 0) 
 		    (end (length string))) 
   (dotimes (k (floor (- end start) 2) t) 

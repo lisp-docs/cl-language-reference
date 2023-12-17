@@ -96,7 +96,7 @@ The consequences are undefined if an attempt is made to *assign* the *stream var
 (with-open-file (s p) 
   (do ((l (read-line s) (read-line s nil ’eof))) 
       ((eq l ’eof) "Reached end of file.") 
-    (format t "~&amp;\*\*\* ~A~%" l))) 
+    (format t "~&\*\*\* ~A~%" l))) 
 ▷ \*\*\* Here are a couple 
 ▷ \*\*\* of test data lines 
 → "Reached end of file." 

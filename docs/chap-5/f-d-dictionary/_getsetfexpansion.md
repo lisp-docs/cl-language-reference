@@ -55,7 +55,7 @@ If *environment* is not supplied or **nil**, the environment is the *null lexica
 (get-setf-expansion ’x) 
 → NIL, NIL, (#:G0001), (SETQ X #:G0001), X 
 ;;; This macro is like POP 
-(defmacro xpop (place &amp;environment env) 
+(defmacro xpop (place &environment env) 
 		(multiple-value-bind (dummies vals new setter getter) 
 		    (get-setf-expansion place env) 
 		  ‘(let\* (,@(mapcar #’list dummies vals) (,(car new) ,getter)) 

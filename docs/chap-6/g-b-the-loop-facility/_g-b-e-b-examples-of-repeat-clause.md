@@ -3,7 +3,7 @@
 
 (loop repeat 3 
 
-do (format t "~&amp;What I say three times is true.~%")) 
+do (format t "~&What I say three times is true.~%")) 
 
 ▷ What I say three times is true. 
 

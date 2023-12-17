@@ -125,7 +125,7 @@ The value returned by **update-instance-for-redefined-class** is ignored.
    (y :initform 0 :accessor position-y))) 
 ;;; It turns out polar coordinates are used more than Cartesian ;;; coordinates, so the representation is altered and some new ;;; accessor methods are added. 
 (defmethod update-instance-for-redefined-class :before 
-  ((pos x-y-position) added deleted plist &amp;key) 
+  ((pos x-y-position) added deleted plist &key) 
    ;; Transform the x-y coordinates to polar coordinates 
    ;; and store into the new slots. 
    (let ((x (getf plist ’x)) 

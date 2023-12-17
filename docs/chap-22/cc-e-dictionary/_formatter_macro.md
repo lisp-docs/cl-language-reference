@@ -50,7 +50,7 @@ where *arguments-tail* is either the tail of *arguments* which has as its *car* 
 ```lisp
  
 
-(funcall (formatter "~&amp;~A~A") \*standard-output\* ’a ’b ’c) 
+(funcall (formatter "~&~A~A") \*standard-output\* ’a ’b ’c) 
 
 ▷ AB 
 
@@ -62,7 +62,7 @@ where *arguments-tail* is either the tail of *arguments* which has as its *car* 
 
  
 
-(format t (formatter "~&amp;~A~A") ’a ’b ’c) 
+(format t (formatter "~&~A~A") ’a ’b ’c) 
 
 ▷ AB 
 

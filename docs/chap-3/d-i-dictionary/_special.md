@@ -149,7 +149,7 @@ the parameter x is bound as a dynamic variable rather than as a lexical variable
     (declare (special x)) 
     (list old-x x))) 
 (bar ’first ’second) → (FIRST SECOND) 
-(defun few (x &amp;optional (y \*foo\*)) 
+(defun few (x &optional (y \*foo\*)) 
 	    (declare (special \*foo\*)) 
 	    ...) 
   The reference to \*foo\* in the first line of this example is not **special** even though there is a **special** declaration in the second line. 

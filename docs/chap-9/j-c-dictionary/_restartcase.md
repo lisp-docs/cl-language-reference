@@ -205,7 +205,7 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 			      (declare (ignore condition)) 
 			      (invoke-restart ’my-restart 7)))) 
       (error "Foo.")) 
-  (my-restart (&amp;optional v) v)) 
+  (my-restart (&optional v) v)) 
 	       → 7 
 	       (define-condition food-error (error) ()) 
 	       → FOOD-ERROR 

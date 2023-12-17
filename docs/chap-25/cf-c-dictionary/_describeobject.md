@@ -70,7 +70,7 @@ In some implementations the *stream* argument passed to a **describe-object** me
 (defclass federation-starship (spaceship) ()) 
 (defmethod describe-object ((s spaceship) stream) 
   (with-slots (captain serial#) s 
-    (format stream "~&amp;~S is a spaceship of type ~S,~ 
+    (format stream "~&~S is a spaceship of type ~S,~ 
 ~%with ~A at the helm ~ 
 and with serial number ~D.~%" 
 	    s (type-of s) captain serial#))) 

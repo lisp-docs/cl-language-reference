@@ -23,7 +23,7 @@ The first occurrence of x *establishes* a *dynamic binding* of x because of the 
 
 Here is another example, to illustrate the *scope* of a *free declaration*. In the following: 
 
-(lambda (&amp;optional (x (foo 1))) ;[1] 
+(lambda (&optional (x (foo 1))) ;[1] 
 
 (declare (notinline foo)) ;[2] 
 
@@ -33,13 +33,13 @@ the *call* to foo in the first line might be compiled inline even though the *ca
 
 (locally (declare (notinline foo)) ;[1] 
 
-(lambda (&amp;optional (x (foo 1))) ;[2] 
+(lambda (&optional (x (foo 1))) ;[2] 
 
 (foo x))) ;[3] 
 
 or, alternatively: 
 
-(lambda (&amp;optional ;[1] 
+(lambda (&optional ;[1] 
 
 (x (locally (declare (notinline foo)) ;[2] 
 

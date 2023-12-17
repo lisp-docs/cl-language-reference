@@ -107,7 +107,7 @@ Data and Control
 (defun recur (x) 
   (when (> x 0) 
     (recur (1- x)))) → RECUR 
-(defun ex (a b &amp;optional c (d 66) &amp;rest keys &amp;key test (start 0)) 
+(defun ex (a b &optional c (d 66) &rest keys &key test (start 0)) 
 	   (list a b c d keys test start)) → EX 
 	   (ex 1 2) → (1 2 NIL 66 NIL NIL 0) 
 	   (ex 1 2 3 4 :test ’equal :start 50) 

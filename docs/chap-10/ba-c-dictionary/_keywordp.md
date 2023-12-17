@@ -41,7 +41,7 @@ Returns *true* if *object* is a *keyword* <sub>1</sub>; otherwise, returns *fals
 (keywordp ’(:test)) → false 
 (keywordp "hello") → false 
 (keywordp ":hello") → false 
-(keywordp ’&amp;optional) → false 
+(keywordp ’&optional) → false 
 ```
 **See Also:** 
 

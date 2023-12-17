@@ -67,12 +67,12 @@ In addition to *macro* definitions in the global environment, any local macro de
 (defmacro alpha (x y) ‘(beta ,x ,y)) → ALPHA 
 (defmacro beta (x y) ‘(gamma ,x ,y)) → BETA 
 (defmacro delta (x y) ‘(gamma ,x ,y)) → EPSILON 
-(defmacro expand (form &amp;environment env) 
+(defmacro expand (form &environment env) 
 		  (multiple-value-bind (expansion expanded-p) 
 		      (macroexpand form env) 
 		    ‘(values ’,expansion ’,expanded-p))) → EXPAND  
 		     **macroexpand, macroexpand-1** 
-		     (defmacro expand-1 (form &amp;environment env) 
+		     (defmacro expand-1 (form &environment env) 
 					 (multiple-value-bind (expansion expanded-p) 
 					     (macroexpand-1 form env) 
 					   ‘(values ’,expansion ’,expanded-p))) → EXPAND-1 

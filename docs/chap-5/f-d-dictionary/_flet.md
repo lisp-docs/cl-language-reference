@@ -206,7 +206,7 @@ after macro expansion. The occurrences of x and flag legitimately refer to the p
 	     (if (zerop n) 0 (+ k (temp (1- n)))))) 
     (temp n))) → RECURSIVE-TIMES 
 (recursive-times 2 3) → 6 
-(defmacro mlets (x &amp;environment env) 
+(defmacro mlets (x &environment env) 
 		 (let ((form ‘(babbit ,x))) 
 		   (macroexpand form env))) → MLETS 
 

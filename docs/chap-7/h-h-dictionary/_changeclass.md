@@ -85,7 +85,7 @@ If the second of the above *methods* is selected, that *method* invokes **change
    (theta :initform 0))) 
 (defmethod update-instance-for-different-class :before ((old x-y-position) 
 							(new rho-theta-position) 
-							&amp;key) 
+							&key) 
 							;; Copy the position information from old to new to make new 
 							;; be a rho-theta-position at the same position as old. 
 							(let ((x (slot-value old ’x)) 

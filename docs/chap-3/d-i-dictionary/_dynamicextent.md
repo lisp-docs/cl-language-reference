@@ -94,7 +94,7 @@ Here is another example:
     (g (list 1 2 3)))) 
 In the previous example, some compilers might determine that optimization was possible and others might not. 
 A variant of this is the so-called “stack allocated rest list” that can be achieved (in implementations supporting the optimization) by: 
-(defun f (&amp;rest x) 
+(defun f (&rest x) 
 	  (declare (dynamic-extent x)) 
 	  
 	  
@@ -141,7 +141,7 @@ A variant of this is the so-called “stack allocated rest list” that can be a
   ;; rest lists. A declaration such as the following should be a cue 
   ;; to such implementations that stack-allocation of the rest list 
   ;; would be desirable. 
-  (defun add (&amp;rest x) 
+  (defun add (&rest x) 
 	      (declare (dynamic-extent x)) 
 	      (apply #’+ x)) → ADD 
 	      (add 1 2 3) → 6 

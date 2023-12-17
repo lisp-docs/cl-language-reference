@@ -85,7 +85,7 @@
 (get (get \*john\* ’wife) ’first-name) → "Sally" 
 (symbol-plist \*john\*) 
 → (WIFE #:PERSON4604 LAST-NAME "Dow-Jones" FIRST-NAME "John") 
-(defmacro age (person &amp;optional (default ”thirty-something)) 
+(defmacro age (person &optional (default ”thirty-something)) 
 	       ‘(get ,person ’age ,default)) → AGE 
 		(age \*john\*) → THIRTY-SOMETHING 
 		(age \*john\* 20) → 20 
