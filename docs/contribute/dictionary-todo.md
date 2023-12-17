@@ -34,6 +34,10 @@ Here are all the dicionary entry pages for which we need expanded explanations a
       - `-`, `+`, `*` are missing
 
 
+## Changes
+
+- Epsilon character
+
 ## Done
 
 - Missing Pages and where they are:
