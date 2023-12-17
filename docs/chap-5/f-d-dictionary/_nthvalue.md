@@ -71,7 +71,7 @@ Operationally, the following relationship is true, although **nth-value** might 
 
 
 
-**prog, prog***⇤ Macro* 
+**prog, prog** *Macro* 
 
 
 
