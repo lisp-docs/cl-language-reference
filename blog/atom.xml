@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lisp-docs.github.io/cl-language-reference/blog</id>
     <title>Common Lisp (New) Language Reference Blog</title>
-    <updated>2023-12-12T00:00:00.000Z</updated>
+    <updated>2023-12-17T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/blog"/>
     <subtitle>Common Lisp (New) Language Reference Blog</subtitle>
     <icon>https://lisp-docs.github.io/cl-language-reference/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Update: Dictionary Items Status]]></title>
+        <id>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/17/</id>
+        <link href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/17/"/>
+        <updated>2023-12-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Many dictionary item pages were updated. However, we still need to check quite a few chapters. In particular from chapter 12 to chapter 21 inclusive, we need to check the table of contents vs the standard specification dictionary items for that chapter.]]></summary>
+        <content type="html"><![CDATA[<p>Many dictionary item pages were updated. However, we still need to check quite a few chapters. In particular from chapter 12 to chapter 21 inclusive, we need to check the table of contents vs the <a href="https://github.com/lisp-docs/cl-standard/blob/master/new-spec/spec-source-pdf/cl-ansi-standard-draft-w-sidebar.pdf" target="_blank" rel="noopener noreferrer">standard specification</a> dictionary items for that chapter.</p>]]></content>
+        <author>
+            <name>Daniel N</name>
+            <uri>https://github.com/daninus14</uri>
+        </author>
+        <category label="status" term="status"/>
+        <category label="dictionary-items" term="dictionary-items"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Latest Updates: Definitions Tooltip and others]]></title>
         <id>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/12/</id>

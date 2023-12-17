@@ -4,10 +4,20 @@
         <title>Common Lisp (New) Language Reference Blog</title>
         <link>https://lisp-docs.github.io/cl-language-reference/blog</link>
         <description>Common Lisp (New) Language Reference Blog</description>
-        <lastBuildDate>Tue, 12 Dec 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 17 Dec 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Update: Dictionary Items Status]]></title>
+            <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/17/</link>
+            <guid>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/17/</guid>
+            <pubDate>Sun, 17 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Many dictionary item pages were updated. However, we still need to check quite a few chapters. In particular from chapter 12 to chapter 21 inclusive, we need to check the table of contents vs the standard specification dictionary items for that chapter.]]></description>
+            <content:encoded><![CDATA[<p>Many dictionary item pages were updated. However, we still need to check quite a few chapters. In particular from chapter 12 to chapter 21 inclusive, we need to check the table of contents vs the <a href="https://github.com/lisp-docs/cl-standard/blob/master/new-spec/spec-source-pdf/cl-ansi-standard-draft-w-sidebar.pdf" target="_blank" rel="noopener noreferrer">standard specification</a> dictionary items for that chapter.</p>]]></content:encoded>
+            <category>status</category>
+            <category>dictionary-items</category>
+        </item>
         <item>
             <title><![CDATA[Latest Updates: Definitions Tooltip and others]]></title>
             <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/12/</link>
