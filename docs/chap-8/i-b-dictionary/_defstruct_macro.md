@@ -1268,21 +1268,21 @@ If a **defstruct** *form* appears as a *top level form*, the *compiler* must mak
 
 **Examples:**
 ```lisp
- 
+
 
 An example of a structure definition follows: 
 
 (defstruct ship 
 
-x-position 
+  x-position 
 
-y-position 
+  y-position 
 
-x-velocity 
+  x-velocity 
 
-y-velocity 
+  y-velocity 
 
-mass) 
+  mass) 
 
 This declares that every ship is an *object* with five named components. The evaluation of this form does the following: 
 
@@ -1298,9 +1298,9 @@ This declares that every ship is an *object* with five named components. The eva
 
 sets ship2 to a newly created ship *object*. One can supply the initial values of any desired 
 
- 
 
- 
+
+
 
 **defstruct** 
 
@@ -1308,9 +1308,9 @@ component in the call to make-ship by using keyword arguments in this way:
 
 (setq ship2 (make-ship :mass \*default-ship-mass\* 
 
-:x-position 0 
+		       :x-position 0 
 
-:y-position 0)) 
+		       :y-position 0)) 
 
 This constructs a new ship and initializes three of its components. This function is called the “constructor function” because it constructs a new structure. 
 
@@ -1334,57 +1334,57 @@ This alters the x-position of ship2 to be 100. This works because **defstruct** 
 
 (defstruct town 
 
-area 
+  area 
 
-watertowers 
+  watertowers 
 
-(firetrucks 1 :type fixnum) ;an initialized slot 
+  (firetrucks 1 :type fixnum) ;an initialized slot 
 
-population 
+  population 
 
-(elevation 5128 :read-only t)) ;a slot that can’t be changed 
+  (elevation 5128 :read-only t)) ;a slot that can’t be changed 
 
 → TOWN 
 
-;create a town instance 
+					;create a town instance 
 
 (setq town1 (make-town :area 0 :watertowers 0)) → #S(TOWN...) 
 
-;town’s predicate recognizes the new instance 
+					;town’s predicate recognizes the new instance 
 
 (town-p town1) → true 
 
-;new town’s area is as specified by make-town 
+					;new town’s area is as specified by make-town 
 
 (town-area town1) → 0 
 
-;new town’s elevation has initial value 
+					;new town’s elevation has initial value 
 
 (town-elevation town1) → 5128 
 
-;setf recognizes reader function 
+					;setf recognizes reader function 
 
 (setf (town-population town1) 99) → 99 
 
 (town-population town1) → 99 
 
-;copier function makes a copy of town1 
+					;copier function makes a copy of town1 
 
 (setq town2 (copy-town town1)) → #S(TOWN...) 
 
 (= (town-population town1) (town-population town2)) → true 
 
-;since elevation is a read-only slot, its value can be set only 
+					;since elevation is a read-only slot, its value can be set only 
 
 
 
- 
 
- 
+
+
 
 **defstruct** 
 
-;when the structure is created 
+					;when the structure is created 
 
 (setq town3 (make-town :area 0 :watertowers 3 :elevation 1200)) → #S(TOWN...) 
 
@@ -1400,23 +1400,23 @@ population
 
 (defstruct (clown (:conc-name bozo-)) 
 
-(nose-color ’red) 
+  (nose-color ’red) 
 
-frizzy-hair-p polkadots) → CLOWN 
+  frizzy-hair-p polkadots) → CLOWN 
 
 (setq funny-clown (make-clown)) → #S(CLOWN) 
 
-;use non-default reader name 
+					;use non-default reader name 
 
 (bozo-nose-color funny-clown) → RED 
 
 (defstruct (klown (:constructor make-up-klown) ;similar def using other (:copier clone-klown) ;customizing keywords 
 
-(:predicate is-a-bozo-p)) 
+		  (:predicate is-a-bozo-p)) 
 
-nose-color frizzy-hair-p polkadots) → klown 
+  nose-color frizzy-hair-p polkadots) → klown 
 
-;custom constructor now exists 
+					;custom constructor now exists 
 
 (fboundp ’make-up-klown) → true 
 
@@ -1434,21 +1434,21 @@ nose-color frizzy-hair-p polkadots) → klown
 
 (defstruct vehicle name year (diesel t :read-only t)) → VEHICLE (defstruct (truck (:include vehicle (year 79))) 
 
-load-limit 
+								  load-limit 
 
-(axles 6)) → TRUCK 
+								  (axles 6)) → TRUCK 
 
 (setq x (make-truck :name ’mac :diesel t :load-limit 17)) 
 
 → #S(TRUCK...) 
 
-;vehicle readers work on trucks 
+					;vehicle readers work on trucks 
 
 (vehicle-name x) 
 
 → MAC 
 
-;default taken from :include clause 
+					;default taken from :include clause 
 
 (vehicle-year x) 
 
@@ -1456,9 +1456,9 @@ load-limit
 
 (defstruct (pickup (:include truck)) ;pickup type includes truck camper long-bed four-wheel-drive) → PICKUP 
 
-(setq x (make-pickup :name ’king :long-bed t)) → #S(PICKUP...) ;:include default inherited 
+  (setq x (make-pickup :name ’king :long-bed t)) → #S(PICKUP...) ;:include default inherited 
 
-(pickup-year x) → 79 
+  (pickup-year x) → 79 
 
 ;;; 
 
@@ -1466,43 +1466,43 @@ load-limit
 
 
 
- 
+  
 
- 
+  
 
 ;;; use of BOA constructors 
 
 ;;; 
 
-(defstruct (dfs-boa ;BOA constructors 
+  (defstruct (dfs-boa ;BOA constructors 
 
-(:constructor make-dfs-boa (a b c)) 
+	       (:constructor make-dfs-boa (a b c)) 
 
-(:constructor create-dfs-boa 
+	       (:constructor create-dfs-boa 
 
-(a &optional b (c ’cc) &rest d &aux e (f ’ff)))) 
+			     (a &optional b (c ’cc) &rest d &aux e (f ’ff)))) 
 
-a b c d e f) → DFS-BOA 
+    a b c d e f) → DFS-BOA 
 
-;a, b, and c set by position, and the rest are uninitialized 
+					;a, b, and c set by position, and the rest are uninitialized 
 
-(setq x (make-dfs-boa 1 2 3)) → #(DFS-BOA...) 
+  (setq x (make-dfs-boa 1 2 3)) → #(DFS-BOA...) 
 
-(dfs-boa-a x) → 1 
+  (dfs-boa-a x) → 1 
 
-;a and b set, c and f defaulted 
+					;a and b set, c and f defaulted 
 
-(setq x (create-dfs-boa 1 2)) → #(DFS-BOA...) 
+  (setq x (create-dfs-boa 1 2)) → #(DFS-BOA...) 
 
-(dfs-boa-b x) → 2 
+  (dfs-boa-b x) → 2 
 
-(eq (dfs-boa-c x) ’cc) → true 
+  (eq (dfs-boa-c x) ’cc) → true 
 
-;a, b, and c set, and the rest are collected into d 
+					;a, b, and c set, and the rest are collected into d 
 
-(setq x (create-dfs-boa 1 2 3 4 5 6)) → #(DFS-BOA...) 
+  (setq x (create-dfs-boa 1 2 3 4 5 6)) → #(DFS-BOA...) 
 
-(dfs-boa-d x) → (4 5 6) 
+  (dfs-boa-d x) → (4 5 6) 
 
 
 ```
