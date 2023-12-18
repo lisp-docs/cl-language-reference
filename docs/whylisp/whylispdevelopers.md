@@ -455,10 +455,10 @@ We can create macros for our to-do list items that will get called by lisp compi
 
 ```lisp
 (defmacro item (priority note)
-    '(block
-         (print stdout tab "Priority: "
-             ~(head (tail priority)) endl)
-         (print stdout tab "Note: " ~note endl endl)))
+  '(block
+    (print stdout tab "Priority: "
+     ~(head (tail priority)) endl)
+    (print stdout tab "Note: " ~note endl endl)))
 ```
 
 We've just created a very small and limited language for managing to-do lists embedded in Lisp. Such languages are very specific to a particular problem domain and are often referred to as domain specific languages or _DSLs_.
