@@ -1,5 +1,5 @@
 ```lisp
- 
+
 
 ;; Print numbers and their squares. 
 
@@ -7,9 +7,9 @@
 
 (loop for i from 1 to 3 
 
-do (print i) 
+      do (print i) 
 
-(print (\* i i))) 
+      (print (\* i i))) 
 
 ▷ 1 
 

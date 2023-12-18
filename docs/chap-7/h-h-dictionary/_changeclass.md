@@ -86,22 +86,22 @@ If the second of the above *methods* is selected, that *method* invokes **change
 (defmethod update-instance-for-different-class :before ((old x-y-position) 
 							(new rho-theta-position) 
 							&key) 
-							;; Copy the position information from old to new to make new 
-							;; be a rho-theta-position at the same position as old. 
-							(let ((x (slot-value old ’x)) 
-							      (y (slot-value old ’y))) 
-							  (setf (slot-value new ’rho) (sqrt (+ (\* x x) (\* y y))) 
-								(slot-value new ’theta) (atan y x)))) 
+  ;; Copy the position information from old to new to make new 
+  ;; be a rho-theta-position at the same position as old. 
+  (let ((x (slot-value old ’x)) 
+	(y (slot-value old ’y))) 
+    (setf (slot-value new ’rho) (sqrt (+ (\* x x) (\* y y))) 
+	  (slot-value new ’theta) (atan y x)))) 
 ;;; At this point an instance of the class x-y-position can be 
 ;;; changed to be an instance of the class rho-theta-position using 
 ;;; change-class: 
-	   (setq p1 (make-instance ’x-y-position :x 2 :y 0)) 
-	   (change-class p1 ’rho-theta-position) 
+(setq p1 (make-instance ’x-y-position :x 2 :y 0)) 
+(change-class p1 ’rho-theta-position) 
 ;;; The result is that the instance bound to p1 is now an instance of 
 ;;; the class rho-theta-position. The update-instance-for-different-class 
 ;;; method performed the initialization of the rho and theta slots based 
-	   
-	   
+
+
 ;;; on the value of the x and y slots, which were maintained by 
 ;;; the old instance. 
 ```

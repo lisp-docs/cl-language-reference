@@ -1,23 +1,23 @@
 ```lisp
- 
+
 
 ;; Signal an exceptional condition. 
 
 (loop for item in ’(1 2 3 a 4 5) 
 
-when (not (numberp item)) 
+      when (not (numberp item)) 
 
-return (cerror "enter new value" "non-numeric value: ~s" item)) Error: non-numeric value: A 
+      return (cerror "enter new value" "non-numeric value: ~s" item)) Error: non-numeric value: A 
 
 ;; The previous example is equivalent to the following one. 
 
 (loop for item in ’(1 2 3 a 4 5) 
 
-when (not (numberp item)) 
+      when (not (numberp item)) 
 
-do (return 
+      do (return 
 
-(cerror "Enter new value" "non-numeric value: ~s" item))) 
+	   (cerror "Enter new value" "non-numeric value: ~s" item))) 
 
 Error: non-numeric value: A 
 
@@ -25,13 +25,13 @@ Error: non-numeric value: A
 
 (let ((buffer "\"a\" \"b\"")) 
 
-(loop initially (unless (char= (char buffer 0) #\") 
+  (loop initially (unless (char= (char buffer 0) #\") 
 
-(loop-finish)) 
+		    (loop-finish)) 
 
-for i of-type fixnum from 1 below (length (the string buffer)) when (char= (char buffer i) #\") 
+	for i of-type fixnum from 1 below (length (the string buffer)) when (char= (char buffer i) #\") 
 
-return i)) 
+	return i)) 
 
 → 2 
 
@@ -39,11 +39,11 @@ return i))
 
 (loop for i from 1 to 10 
 
-when (> i 5) 
+      when (> i 5) 
 
-collect i 
+      collect i 
 
-finally (prin1 ’got-here)) 
+      finally (prin1 ’got-here)) 
 
 ▷ GOT-HERE 
 

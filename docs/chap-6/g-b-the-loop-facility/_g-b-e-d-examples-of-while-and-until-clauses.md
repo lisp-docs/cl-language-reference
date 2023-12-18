@@ -1,5 +1,5 @@
 ```lisp
- 
+
 
 (loop while (hungry-p) do (eat)) 
 
@@ -11,11 +11,11 @@
 
 (let ((stack ’(a b c d e f))) 
 
-(loop for item = (length stack) then (pop stack) 
+  (loop for item = (length stack) then (pop stack) 
 
-collect item 
+	collect item 
 
-while stack)) 
+	while stack)) 
 
 → (6 A B C D E F) 
 
@@ -25,9 +25,9 @@ while stack))
 
 (loop for i fixnum from 3 
 
-when (oddp i) collect i 
+      when (oddp i) collect i 
 
-while (< i 5)) 
+      while (< i 5)) 
 
 → (3 5) 
 

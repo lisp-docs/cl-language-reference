@@ -1,11 +1,11 @@
 ```lisp
- 
+
 
 ;; Print some numbers. 
 
 (loop for i from 1 to 3 
 
-do (print i)) 
+      do (print i)) 
 
 ▷ 1 
 
@@ -13,9 +13,9 @@ do (print i))
 
 
 
- 
 
- 
+
+
 
 ▷ 3 
 
@@ -25,7 +25,7 @@ do (print i))
 
 (loop for i from 10 downto 1 by 3 
 
-do (print i)) 
+      do (print i)) 
 
 ▷ 10 
 
@@ -41,7 +41,7 @@ do (print i))
 
 (loop for i below 3 
 
-do (print i)) 
+      do (print i)) 
 
 ▷ 0 
 

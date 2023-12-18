@@ -206,63 +206,63 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 			      (invoke-restart ’my-restart 7)))) 
       (error "Foo.")) 
   (my-restart (&optional v) v)) 
-	       → 7 
-	       (define-condition food-error (error) ()) 
-	       → FOOD-ERROR 
-	       (define-condition bad-tasting-sundae (food-error) 
-		 ((ice-cream :initarg :ice-cream :reader bad-tasting-sundae-ice-cream) 
-		  (sauce :initarg :sauce :reader bad-tasting-sundae-sauce) 
-		  (topping :initarg :topping :reader bad-tasting-sundae-topping)) 
-		 (:report (lambda (condition stream) 
-			    (format stream "Bad tasting sundae with ~S, ~S, and ~S" 
-				    (bad-tasting-sundae-ice-cream condition) 
-				    (bad-tasting-sundae-sauce condition) 
-				    (bad-tasting-sundae-topping condition))))) 
-	       → BAD-TASTING-SUNDAE 
-	       (defun all-start-with-same-letter (symbol1 symbol2 symbol3) 
-		 
-		 
-		 **restart-case** 
-		 (let ((first-letter (char (symbol-name symbol1) 0))) 
-		   (and (eql first-letter (char (symbol-name symbol2) 0)) 
-			(eql first-letter (char (symbol-name symbol3) 0))))) 
-	       → ALL-START-WITH-SAME-LETTER 
-	       (defun read-new-value () 
-		 (format t "Enter a new value: ") 
-		 (multiple-value-list (eval (read)))) 
-	       → READ-NEW-VALUE 
-	       
-	       
-	       **restart-case** 
-	       (defun verify-or-fix-perfect-sundae (ice-cream sauce topping) (do () 
-										 ((all-start-with-same-letter ice-cream sauce topping)) 
-									       (restart-case 
-										   (error ’bad-tasting-sundae 
-											   :ice-cream ice-cream 
-											   :sauce sauce 
-											   :topping topping) 
-										 (use-new-ice-cream (new-ice-cream) 
-										   :report "Use a new ice cream." 
-										   :interactive read-new-value 
-										   (setq ice-cream new-ice-cream)) 
-										 (use-new-sauce (new-sauce) 
-										   :report "Use a new sauce." 
-										   :interactive read-new-value 
-										   (setq sauce new-sauce)) 
-										 (use-new-topping (new-topping) 
-										   :report "Use a new topping." 
-										   :interactive read-new-value 
-										   (setq topping new-topping)))) 
-		      (values ice-cream sauce topping)) 
-	       → VERIFY-OR-FIX-PERFECT-SUNDAE 
-	       (verify-or-fix-perfect-sundae ’vanilla ’caramel ’cherry) ▷ Error: Bad tasting sundae with VANILLA, CARAMEL, and CHERRY. ▷ To continue, type :CONTINUE followed by an option number: ▷ 1: Use a new ice cream. 
-	       ▷ 2: Use a new sauce. 
-	       ▷ 3: Use a new topping. 
-	       ▷ 4: Return to Lisp Toplevel. 
-	       ▷ Debug> :continue 1 
-	       ▷ Use a new ice cream. 
-	       ▷ Enter a new ice cream: ’chocolate 
-	       → CHOCOLATE, CARAMEL, CHERRY 
+→ 7 
+(define-condition food-error (error) ()) 
+→ FOOD-ERROR 
+(define-condition bad-tasting-sundae (food-error) 
+  ((ice-cream :initarg :ice-cream :reader bad-tasting-sundae-ice-cream) 
+   (sauce :initarg :sauce :reader bad-tasting-sundae-sauce) 
+   (topping :initarg :topping :reader bad-tasting-sundae-topping)) 
+  (:report (lambda (condition stream) 
+	     (format stream "Bad tasting sundae with ~S, ~S, and ~S" 
+		     (bad-tasting-sundae-ice-cream condition) 
+		     (bad-tasting-sundae-sauce condition) 
+		     (bad-tasting-sundae-topping condition))))) 
+→ BAD-TASTING-SUNDAE 
+(defun all-start-with-same-letter (symbol1 symbol2 symbol3) 
+  
+  
+  **restart-case** 
+  (let ((first-letter (char (symbol-name symbol1) 0))) 
+    (and (eql first-letter (char (symbol-name symbol2) 0)) 
+	 (eql first-letter (char (symbol-name symbol3) 0))))) 
+→ ALL-START-WITH-SAME-LETTER 
+(defun read-new-value () 
+  (format t "Enter a new value: ") 
+  (multiple-value-list (eval (read)))) 
+→ READ-NEW-VALUE 
+
+
+**restart-case** 
+(defun verify-or-fix-perfect-sundae (ice-cream sauce topping) (do () 
+								  ((all-start-with-same-letter ice-cream sauce topping)) 
+								(restart-case 
+								    (error ’bad-tasting-sundae 
+									    :ice-cream ice-cream 
+									    :sauce sauce 
+									    :topping topping) 
+								  (use-new-ice-cream (new-ice-cream) 
+								    :report "Use a new ice cream." 
+								    :interactive read-new-value 
+								    (setq ice-cream new-ice-cream)) 
+								  (use-new-sauce (new-sauce) 
+								    :report "Use a new sauce." 
+								    :interactive read-new-value 
+								    (setq sauce new-sauce)) 
+								  (use-new-topping (new-topping) 
+								    :report "Use a new topping." 
+								    :interactive read-new-value 
+								    (setq topping new-topping)))) 
+       (values ice-cream sauce topping)) 
+→ VERIFY-OR-FIX-PERFECT-SUNDAE 
+(verify-or-fix-perfect-sundae ’vanilla ’caramel ’cherry) ▷ Error: Bad tasting sundae with VANILLA, CARAMEL, and CHERRY. ▷ To continue, type :CONTINUE followed by an option number: ▷ 1: Use a new ice cream. 
+▷ 2: Use a new sauce. 
+▷ 3: Use a new topping. 
+▷ 4: Return to Lisp Toplevel. 
+▷ Debug> :continue 1 
+▷ Use a new ice cream. 
+▷ Enter a new ice cream: ’chocolate 
+→ CHOCOLATE, CARAMEL, CHERRY 
 ```
 **See Also:** 
 

@@ -1,15 +1,15 @@
 ```lisp
- 
+
 
 ;; Just name and return. 
 
 (loop named max 
 
-for i from 1 to 10 
+      for i from 1 to 10 
 
-do (print i) 
+      do (print i) 
 
-do (return-from max ’done)) 
+      do (return-from max ’done)) 
 
 ▷ 1 
 

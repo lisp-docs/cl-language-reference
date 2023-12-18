@@ -40,7 +40,7 @@ If the **continue** *restart* is used while in the debugger, **break** immediate
 
 **Examples:**
 ```lisp
- 
+
 (break "You got here with arguments: ~:S." ’(FOO 37 A)) 
 ▷ BREAK: You got here with these arguments: FOO, 37, A. 
 ▷ To continue, type :CONTINUE followed by an option number: 

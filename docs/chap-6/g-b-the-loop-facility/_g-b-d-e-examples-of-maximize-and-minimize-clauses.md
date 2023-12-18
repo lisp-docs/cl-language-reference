@@ -1,15 +1,15 @@
 ```lisp
- 
+
 
 (loop for i in ’(2 1 5 3 4) 
 
-maximize i) 
+      maximize i) 
 
 → 5 
 
 (loop for i in ’(2 1 5 3 4) 
 
-minimize i) 
+      minimize i) 
 
 → 1 
 
@@ -21,7 +21,7 @@ minimize i)
 
 (loop for v in series 
 
-maximize (round v) of-type fixnum) 
+      maximize (round v) of-type fixnum) 
 
 → 6 
 
@@ -29,17 +29,17 @@ maximize (round v) of-type fixnum)
 
 (loop for v of-type float in series 
 
-minimize (round v) into result of-type fixnum 
+      minimize (round v) into result of-type fixnum 
 
-finally (return result)) 
+      finally (return result)) 
 
 → 1 
 
 
 
- 
 
- 
+
+
 
 
 ```

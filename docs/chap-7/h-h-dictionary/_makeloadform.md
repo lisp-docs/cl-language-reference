@@ -150,10 +150,10 @@ Both *conforming implementations* and *conforming programs* may further *special
    (dist :accessor obj-dist))) 
 → #\<STANDARD-CLASS OBJ 250020030\> 
 (defmethod shared-initialize :after ((self obj) slot-names &rest keys) 
-	   (declare (ignore slot-names keys)) 
-	   (unless (slot-boundp self ’dist) 
-	     (setf (obj-dist self) 
-		   (sqrt (+ (expt (obj-x self) 2) (expt (obj-y self) 2)))))) 
+  (declare (ignore slot-names keys)) 
+  (unless (slot-boundp self ’dist) 
+    (setf (obj-dist self) 
+	  (sqrt (+ (expt (obj-x self) 2) (expt (obj-y self) 2)))))) 
 → #\<STANDARD-METHOD SHARED-INITIALIZE (:AFTER) (OBJ T) 26266714\> 
 (defmethod make-load-form ((self obj) &optional environment) 
   (declare (ignore environment)) 
@@ -170,9 +170,9 @@ In the above example, an equivalent *instance* of obj is reconstructed by using 
 Another way to write the **make-load-form** *method* in that example is to use **make-load-form-saving-slots**. The code it generates might yield a slightly different result from the **make-load-form** *method* shown above, but the operational effect will be the same. For example: 
 ;; Redefine method defined above. 
 (defmethod make-load-form ((self obj) &optional environment) 
-    (make-load-form-saving-slots self 
-				 :slot-names ’(x y) 
-				 :environment environment)) 
+  (make-load-form-saving-slots self 
+			       :slot-names ’(x y) 
+			       :environment environment)) 
 → #\<STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 42755655\> 
 
 **make-load-form** 
@@ -187,25 +187,25 @@ In the following example, *instances* of my-frob are “interned” in some way.
 (defclass my-frob () 
   ((name :initarg :name :reader my-name))) 
 (defmethod make-load-form ((self my-frob) &optional environment) 
-			   (declare (ignore environment)) 
-			   ‘(find-my-frob ’,(my-name self) :if-does-not-exist :create)) 
-  In the following example, the data structure to be dumped is circular, because each parent has a list of its children and each child has a reference back to its parent. If **make-load-form** is called on one *object* in such a structure, the creation form creates an equivalent *object* and fills in the children slot, which forces creation of equivalent *objects* for all of its children, grandchildren, etc. 
-  At this point none of the parent *slots* have been filled in. The initialization form fills in the parent *slot*, which forces creation of an equivalent *object* for the parent if it was not already created. Thus the entire tree is recreated at **load** time. At compile time, **make-load-form** is called once for each *object* in the tree. All of the creation forms are evaluated, in *implementation-dependent* order, and then all of the initialization forms are evaluated, also in *implementation-dependent* order. 
-  (defclass tree-with-parent () ((parent :accessor tree-parent) 
-				 (children :initarg :children))) 
-  (defmethod make-load-form ((x tree-with-parent) &optional environment) 
-			     (declare (ignore environment)) 
-			     (values 
-			      ;; creation form 
-			      ‘(make-instance ’,(class-of x) :children ’,(slot-value x ’children)) 
-			      ;; initialization form 
-			      ‘(setf (tree-parent ’,x) ’,(slot-value x ’parent)))) 
-    In the following example, the data structure to be dumped has no special properties and an equivalent structure can be reconstructed simply by reconstructing the *slots*’ contents. 
-    (defstruct my-struct a b c) 
-    (defmethod make-load-form ((s my-struct) &optional environment) 
-			       (make-load-form-saving-slots s :environment environment)) 
-      
-      
+  (declare (ignore environment)) 
+  ‘(find-my-frob ’,(my-name self) :if-does-not-exist :create)) 
+In the following example, the data structure to be dumped is circular, because each parent has a list of its children and each child has a reference back to its parent. If **make-load-form** is called on one *object* in such a structure, the creation form creates an equivalent *object* and fills in the children slot, which forces creation of equivalent *objects* for all of its children, grandchildren, etc. 
+At this point none of the parent *slots* have been filled in. The initialization form fills in the parent *slot*, which forces creation of an equivalent *object* for the parent if it was not already created. Thus the entire tree is recreated at **load** time. At compile time, **make-load-form** is called once for each *object* in the tree. All of the creation forms are evaluated, in *implementation-dependent* order, and then all of the initialization forms are evaluated, also in *implementation-dependent* order. 
+(defclass tree-with-parent () ((parent :accessor tree-parent) 
+			       (children :initarg :children))) 
+(defmethod make-load-form ((x tree-with-parent) &optional environment) 
+  (declare (ignore environment)) 
+  (values 
+   ;; creation form 
+   ‘(make-instance ’,(class-of x) :children ’,(slot-value x ’children)) 
+   ;; initialization form 
+   ‘(setf (tree-parent ’,x) ’,(slot-value x ’parent)))) 
+In the following example, the data structure to be dumped has no special properties and an equivalent structure can be reconstructed simply by reconstructing the *slots*’ contents. 
+(defstruct my-struct a b c) 
+(defmethod make-load-form ((s my-struct) &optional environment) 
+  (make-load-form-saving-slots s :environment environment)) 
+
+
 ```
 **Exceptional Situations:** 
 

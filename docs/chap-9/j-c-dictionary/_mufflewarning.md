@@ -32,24 +32,24 @@ This *restart* is established by **warn** so that *handlers* of **warning** *con
 	(invoke-restart r))))) 
 → CUSTOM-WARNING-HANDLER 
 (defmacro with-quiet-warnings (&body forms) 
-			       ‘(let ((\*all-quiet\* t) 
-				      (\*saved-warnings\* ’())) 
-				  (handler-bind ((warning #’quiet-warning-handler)) 
-				    ,@forms 
-				    \*saved-warnings\*))) 
-  → WITH-QUIET-WARNINGS 
-  (setq saved 
-	(with-quiet-warnings 
-	    (warn "Situation #1.") 
-	  (let ((\*all-quiet\* nil)) 
-	    (warn "Situation #2.")) 
-	  (warn "Situation #3."))) 
-  ▷ Warning: Situation #2. 
-  → (#<SIMPLE-WARNING 42744421> #<SIMPLE-WARNING 42744365>) 
-  (dolist (s saved) (format t "~&~A~%" s)) 
-  ▷ Situation #3. 
-  ▷ Situation #1. 
-  → NIL 
+  ‘(let ((\*all-quiet\* t) 
+	 (\*saved-warnings\* ’())) 
+     (handler-bind ((warning #’quiet-warning-handler)) 
+       ,@forms 
+       \*saved-warnings\*))) 
+→ WITH-QUIET-WARNINGS 
+(setq saved 
+      (with-quiet-warnings 
+	  (warn "Situation #1.") 
+	(let ((\*all-quiet\* nil)) 
+	  (warn "Situation #2.")) 
+	(warn "Situation #3."))) 
+▷ Warning: Situation #2. 
+→ (#<SIMPLE-WARNING 42744421> #<SIMPLE-WARNING 42744365>) 
+(dolist (s saved) (format t "~&~A~%" s)) 
+▷ Situation #3. 
+▷ Situation #1. 
+→ NIL 
 ```
 **See Also:** 
 

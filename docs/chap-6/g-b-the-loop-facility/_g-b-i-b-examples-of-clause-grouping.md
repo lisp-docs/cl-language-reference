@@ -1,25 +1,25 @@
 ```lisp
- 
+
 
 ;; Group conditional clauses. 
 
 (loop for i in ’(1 324 2345 323 2 4 235 252) 
 
-when (oddp i) 
+      when (oddp i) 
 
-do (print i) 
+      do (print i) 
 
-and collect i into odd-numbers 
+      and collect i into odd-numbers 
 
-and do (terpri) 
+      and do (terpri) 
 
-else ; I is even. 
+      else ; I is even. 
 
-collect i into even-numbers 
+      collect i into even-numbers 
 
-finally 
+      finally 
 
-(return (values odd-numbers even-numbers))) 
+      (return (values odd-numbers even-numbers))) 
 
 ▷ 1 
 
@@ -39,17 +39,17 @@ finally
 
 
 
- 
 
- 
+
+
 
 ;; Collect numbers larger than 3. 
 
 (loop for i in ’(1 2 3 4 5 6) 
 
-when (and (> i 3) i) 
+      when (and (> i 3) i) 
 
-collect it) ; IT refers to (and (> i 3) i). 
+      collect it) ; IT refers to (and (> i 3) i). 
 
 → (4 5 6) 
 
@@ -57,9 +57,9 @@ collect it) ; IT refers to (and (> i 3) i).
 
 (loop for i in ’(1 2 3 4 5 6) 
 
-when (and (> i 3) i) 
+      when (and (> i 3) i) 
 
-return it) 
+      return it) 
 
 → 4 
 
@@ -67,7 +67,7 @@ return it)
 
 (loop for i in ’(1 2 3 4 5 6) 
 
-thereis (and (> i 3) i)) 
+      thereis (and (> i 3) i)) 
 
 → 4 
 
@@ -75,29 +75,29 @@ thereis (and (> i 3) i))
 
 (let ((list ’(0 3.0 apple 4 5 9.8 orange banana))) 
 
-(loop for i in list 
+  (loop for i in list 
 
-when (numberp i) 
+	when (numberp i) 
 
-when (floatp i) 
+	when (floatp i) 
 
-collect i into float-numbers 
+	collect i into float-numbers 
 
-else ; Not (floatp i) 
+	else ; Not (floatp i) 
 
-collect i into other-numbers 
+	collect i into other-numbers 
 
-else ; Not (numberp i) 
+	else ; Not (numberp i) 
 
-when (symbolp i) 
+	when (symbolp i) 
 
-collect i into symbol-list 
+	collect i into symbol-list 
 
-else ; Not (symbolp i) 
+	else ; Not (symbolp i) 
 
-do (error "found a funny value in list ~S, value ~S~%" list i) 
+	do (error "found a funny value in list ~S, value ~S~%" list i) 
 
-finally (return (values float-numbers other-numbers symbol-list)))) 
+	finally (return (values float-numbers other-numbers symbol-list)))) 
 
 → (3.0 9.8), (0 4 5), (APPLE ORANGE BANANA) 
 
@@ -107,25 +107,25 @@ finally (return (values float-numbers other-numbers symbol-list))))
 
 (loop for x from 0 to 3 
 
-do (print x) 
+      do (print x) 
 
-if (zerop (mod x 2)) 
+      if (zerop (mod x 2)) 
 
-do (princ " a") 
+      do (princ " a") 
 
-and if (zerop (floor x 2)) 
+      and if (zerop (floor x 2)) 
 
-do (princ " b") 
+      do (princ " b") 
 
-end 
+      end 
 
 
 
- 
+      
 
- 
+      
 
-and do (princ " c")) 
+      and do (princ " c")) 
 
 ▷ 0 a b c 
 

@@ -290,27 +290,27 @@ A **do** *form* may be explained in terms of the more primitive *forms* **block*
 ```lisp
 (block nil 
 
-(let ((var1 init1) 
+  (let ((var1 init1) 
 
-(var2 init2) 
+	(var2 init2) 
 
-... 
+	... 
 
-(varn initn)) 
+	(varn initn)) 
 
-*declarations* 
+    *declarations* 
 
-(loop (when end-test (return (progn . result))) 
+    (loop (when end-test (return (progn . result))) 
 
-(tagbody . tagbody) 
+     (tagbody . tagbody) 
 
-(psetq var1 step1 
+     (psetq var1 step1 
 
-var2 step2 
+	    var2 step2 
 
-... 
+	    ... 
 
-varn stepn)))) 
+	    varn stepn)))) 
 ```
 
 **do\*** is similar, except that **let\*** and **setq** replace the **let** and **psetq**, respectively. 

@@ -70,15 +70,15 @@ If any other kind of error is signaled, the second function is called. In either
   (format \*error-output\* "~&~A~&" condition) 
   (throw ’trap-errors nil)) 
 (defmacro trap-errors (&rest forms) 
-		       ‘(catch ’trap-errors 
-			  (handler-bind ((error #’trap-error-handler)) 
-			    ,@forms))) 
-  (list (trap-errors (signal "Foo.") 1) 
-	(trap-errors (error "Bar.") 2) 
-	(+ 1 2)) 
-  ▷ Bar. 
-  → (1 NIL 3) 
-  Note that “Foo.” is not printed because the condition made by **signal** is a *simple condition*, which is not of *type* **error**, so it doesn’t trigger the handler for **error** set up by trap-errors. 
+  ‘(catch ’trap-errors 
+     (handler-bind ((error #’trap-error-handler)) 
+       ,@forms))) 
+(list (trap-errors (signal "Foo.") 1) 
+      (trap-errors (error "Bar.") 2) 
+      (+ 1 2)) 
+▷ Bar. 
+→ (1 NIL 3) 
+Note that “Foo.” is not printed because the condition made by **signal** is a *simple condition*, which is not of *type* **error**, so it doesn’t trigger the handler for **error** set up by trap-errors. 
 ```
 **See Also:** 
 

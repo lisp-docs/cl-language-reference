@@ -458,118 +458,118 @@ Most examples of the long form of **define-method-combination** also illustrate 
     
     **define-method-combination** 
   (&optional (order :most-specific-first)) 
-   ((around (:around)) 
-    (primary (and) :order order :required t)) 
-   (let ((form (if (rest primary) 
-		   ‘(and ,@(mapcar #’(lambda (method) 
-				       ‘(call-method ,method)) 
-				     primary)) 
-		    ‘(call-method ,(first primary))))) 
-     (if around 
-	 ‘(call-method ,(first around) 
-		       (,@(rest around) 
-			  (make-method ,form))) 
-	  form))) 
+  ((around (:around)) 
+   (primary (and) :order order :required t)) 
+  (let ((form (if (rest primary) 
+		  ‘(and ,@(mapcar #’(lambda (method) 
+				      ‘(call-method ,method)) 
+				    primary)) 
+		   ‘(call-method ,(first primary))))) 
+    (if around 
+	‘(call-method ,(first around) 
+		      (,@(rest around) 
+			 (make-method ,form))) 
+	 form))) 
 ;;; Examples of the long form of define-method-combination 
 					;The default method-combination technique 
-  (define-method-combination standard () 
-    ((around (:around)) 
-     (before (:before)) 
-     (primary () :required t) 
-     (after (:after))) 
-    (flet ((call-methods (methods) 
-	     (mapcar #’(lambda (method) 
-			 ‘(call-method ,method)) 
-		       methods))) 
-      (let ((form (if (or before after (rest primary)) 
-		      ‘(multiple-value-prog1 
-			   (progn ,@(call-methods before) 
-				  (call-method ,(first primary) 
-					       ,(rest primary))) 
-			 ,@(call-methods (reverse after))) 
-		       ‘(call-method ,(first primary))))) 
-	(if around 
-	    ‘(call-method ,(first around) 
-			  (,@(rest around) 
-			     (make-method ,form))) 
-	     form)))) 
-					;A simple way to try several methods until one returns non-nil 
-  (define-method-combination or () 
-    ((methods (or))) 
-    ‘(or ,@(mapcar #’(lambda (method) 
+(define-method-combination standard () 
+  ((around (:around)) 
+   (before (:before)) 
+   (primary () :required t) 
+   (after (:after))) 
+  (flet ((call-methods (methods) 
+	   (mapcar #’(lambda (method) 
 		       ‘(call-method ,method)) 
 		     methods))) 
-  
-  
-  **define-method-combination** 
+    (let ((form (if (or before after (rest primary)) 
+		    ‘(multiple-value-prog1 
+			 (progn ,@(call-methods before) 
+				(call-method ,(first primary) 
+					     ,(rest primary))) 
+		       ,@(call-methods (reverse after))) 
+		     ‘(call-method ,(first primary))))) 
+      (if around 
+	  ‘(call-method ,(first around) 
+			(,@(rest around) 
+			   (make-method ,form))) 
+	   form)))) 
+					;A simple way to try several methods until one returns non-nil 
+(define-method-combination or () 
+  ((methods (or))) 
+  ‘(or ,@(mapcar #’(lambda (method) 
+		     ‘(call-method ,method)) 
+		   methods))) 
+
+
+**define-method-combination** 
 					;A more complete version of the preceding 
-  (define-method-combination or 
-      (&optional (order ’:most-specific-first)) 
-       ((around (:around)) 
-	(primary (or))) 
-       ;; Process the order argument 
-       (case order 
-	 (:most-specific-first) 
-	 (:most-specific-last (setq primary (reverse primary))) 
-	 (otherwise (method-combination-error "~S is an invalid order.~@ 
+(define-method-combination or 
+    (&optional (order ’:most-specific-first)) 
+  ((around (:around)) 
+   (primary (or))) 
+  ;; Process the order argument 
+  (case order 
+    (:most-specific-first) 
+    (:most-specific-last (setq primary (reverse primary))) 
+    (otherwise (method-combination-error "~S is an invalid order.~@ 
 :most-specific-first and :most-specific-last are the possible values." order))) 
-       ;; Must have a primary method 
-       (unless primary 
-	 (method-combination-error "A primary method is required.")) 
-       ;; Construct the form that calls the primary methods 
-       (let ((form (if (rest primary) 
-		       ‘(or ,@(mapcar #’(lambda (method) 
-					  ‘(call-method ,method)) 
-					primary)) 
-			‘(call-method ,(first primary))))) 
-	 ;; Wrap the around methods around that form 
-	 (if around 
-	     ‘(call-method ,(first around) 
-			   (,@(rest around) 
-			      (make-method ,form))) 
-	      form))) 
+  ;; Must have a primary method 
+  (unless primary 
+    (method-combination-error "A primary method is required.")) 
+  ;; Construct the form that calls the primary methods 
+  (let ((form (if (rest primary) 
+		  ‘(or ,@(mapcar #’(lambda (method) 
+				     ‘(call-method ,method)) 
+				   primary)) 
+		   ‘(call-method ,(first primary))))) 
+    ;; Wrap the around methods around that form 
+    (if around 
+	‘(call-method ,(first around) 
+		      (,@(rest around) 
+			 (make-method ,form))) 
+	 form))) 
 					;The same thing, using the :order and :required keyword options 
-    (define-method-combination or 
-	(&optional (order ’:most-specific-first)) 
-	 ((around (:around)) 
-	  (primary (or) :order order :required t)) 
-	 (let ((form (if (rest primary) 
-			 ‘(or ,@(mapcar #’(lambda (method) 
-					    ‘(call-method ,method)) 
-					  primary)) 
-			  ‘(call-method ,(first primary))))) 
-	   (if around 
-	       ‘(call-method ,(first around) 
-			     (,@(rest around) 
-				(make-method ,form))) 
-		form))) 
-      
-      
-      **define-method-combination** 
+(define-method-combination or 
+    (&optional (order ’:most-specific-first)) 
+  ((around (:around)) 
+   (primary (or) :order order :required t)) 
+  (let ((form (if (rest primary) 
+		  ‘(or ,@(mapcar #’(lambda (method) 
+				     ‘(call-method ,method)) 
+				   primary)) 
+		   ‘(call-method ,(first primary))))) 
+    (if around 
+	‘(call-method ,(first around) 
+		      (,@(rest around) 
+			 (make-method ,form))) 
+	 form))) 
+
+
+**define-method-combination** 
 					;This short-form call is behaviorally identical to the preceding 
-      (define-method-combination or :identity-with-one-argument t) 
+(define-method-combination or :identity-with-one-argument t) 
 					;Order methods by positive integer qualifiers 
 					;:around methods are disallowed to keep the example small 
-      (define-method-combination example-method-combination () 
-	((methods positive-integer-qualifier-p)) 
-	‘(progn ,@(mapcar #’(lambda (method) 
-			      ‘(call-method ,method)) 
-			    (stable-sort methods #’< 
-					 :key #’(lambda (method) 
-						  (first (method-qualifiers method))))))) 
-      (defun positive-integer-qualifier-p (method-qualifiers) 
-	(and (= (length method-qualifiers) 1) 
-	     (typep (first method-qualifiers) ’(integer 0 \*)))) 
+(define-method-combination example-method-combination () 
+  ((methods positive-integer-qualifier-p)) 
+  ‘(progn ,@(mapcar #’(lambda (method) 
+			‘(call-method ,method)) 
+		      (stable-sort methods #’< 
+				   :key #’(lambda (method) 
+					    (first (method-qualifiers method))))))) 
+(defun positive-integer-qualifier-p (method-qualifiers) 
+  (and (= (length method-qualifiers) 1) 
+       (typep (first method-qualifiers) ’(integer 0 \*)))) 
 ;;; Example of the use of :arguments 
-      (define-method-combination progn-with-lock () 
-	((methods ())) 
-	(:arguments object) 
-	‘(unwind-protect 
-	      (progn (lock (object-lock ,object)) 
-		     ,@(mapcar #’(lambda (method) 
-				   ‘(call-method ,method)) 
-				 methods)) 
-	   (unlock (object-lock ,object)))) 
+(define-method-combination progn-with-lock () 
+  ((methods ())) 
+  (:arguments object) 
+  ‘(unwind-protect 
+	(progn (lock (object-lock ,object)) 
+	       ,@(mapcar #’(lambda (method) 
+			     ‘(call-method ,method)) 
+			   methods)) 
+     (unlock (object-lock ,object)))) 
 ```
 **Side Eects:** 
 

@@ -1,5 +1,5 @@
 ```lisp
- 
+
 
 ;; Make sure I is always less than 11 (two ways). 
 
@@ -7,13 +7,13 @@
 
 (loop for i from 0 to 10 
 
-always (< i 11)) 
+      always (< i 11)) 
 
 → T 
 
 (loop for i from 0 to 10 
 
-never (> i 11)) 
+      never (> i 11)) 
 
 → T 
 
@@ -23,7 +23,7 @@ never (> i 11))
 
 (loop for i from 0 
 
-thereis (when (> i 10) i) ) 
+      thereis (when (> i 10) i) ) 
 
 → 11 
 
@@ -31,21 +31,21 @@ thereis (when (> i 10) i) )
 
 (loop for i from 0 to 10 
 
-always (< i 9) 
+      always (< i 9) 
 
-finally (print "you won’t see this")) 
+      finally (print "you won’t see this")) 
 
 → NIL 
 
 (loop never t 
 
-finally (print "you won’t see this")) 
+      finally (print "you won’t see this")) 
 
 → NIL 
 
 (loop thereis "Here is my value" 
 
-finally (print "you won’t see this")) 
+      finally (print "you won’t see this")) 
 
 → "Here is my value" 
 
@@ -55,9 +55,9 @@ finally (print "you won’t see this"))
 
 (loop for i from 1 to 10 
 
-thereis (> i 11) 
+      thereis (> i 11) 
 
-finally (prin1 ’got-here)) 
+      finally (prin1 ’got-here)) 
 
 ▷ GOT-HERE 
 
@@ -77,25 +77,25 @@ finally (prin1 ’got-here))
 
 
 
- 
+      
 
- 
+      
 
-thereis 
+      thereis 
 
-(loop for n upfrom 3 below (log z 2) 
+      (loop for n upfrom 3 below (log z 2) 
 
-thereis 
+	    thereis 
 
-(loop for x below z 
+	    (loop for x below z 
 
-thereis 
+		  thereis 
 
-(loop for y below z 
+		  (loop for y below z 
 
-thereis (= (+ (expt x n) (expt y n)) 
+			thereis (= (+ (expt x n) (expt y n)) 
 
-(expt z n)))))) 
+				   (expt z n)))))) 
 
 
 ```

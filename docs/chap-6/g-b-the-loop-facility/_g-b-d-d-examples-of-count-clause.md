@@ -1,9 +1,9 @@
 ```lisp
- 
+
 
 (loop for i in ’(a b nil c nil d e) 
 
-count i) 
+      count i) 
 
 → 5 
 

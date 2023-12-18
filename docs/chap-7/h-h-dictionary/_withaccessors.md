@@ -77,8 +77,8 @@ Creates a lexical environment in which the slots specified by *slot-entry* are l
    (y :initarg :y :accessor thing-y))) 
 → #<STANDARD-CLASS THING 250020173> 
 (defmethod (setf thing-x) :before (new-x (thing thing)) 
-	   (format t "~&Changing X from ~D to ~D in ~S.~%" 
-		   (thing-x thing) new-x thing)) 
+  (format t "~&Changing X from ~D to ~D in ~S.~%" 
+	  (thing-x thing) new-x thing)) 
 (setq thing1 (make-instance ’thing :x 1 :y 2)) → #<THING 43135676> 
 (setq thing2 (make-instance ’thing :x 7 :y 8)) → #<THING 43147374> 
 (with-accessors ((x1 thing-x) (y1 thing-y)) 

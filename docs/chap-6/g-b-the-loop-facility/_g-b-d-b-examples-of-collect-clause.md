@@ -1,11 +1,11 @@
 ```lisp
- 
+
 
 ;; Collect all the symbols in a list. 
 
 (loop for i in ’(bird 3 4 turtle (1 . 4) horse cat) 
 
-when (symbolp i) collect i) 
+      when (symbolp i) collect i) 
 
 → (BIRD TURTLE HORSE CAT) 
 
@@ -13,7 +13,7 @@ when (symbolp i) collect i)
 
 (loop for i from 1 to 10 
 
-if (oddp i) collect i) 
+      if (oddp i) collect i) 
 
 → (1 3 5 7 9) 
 
@@ -21,9 +21,9 @@ if (oddp i) collect i)
 
 (loop for i in ’(a b c d) by #’cddr 
 
-collect i into my-list 
+      collect i into my-list 
 
-finally (print my-list)) 
+      finally (print my-list)) 
 
 ▷ (A C) 
 

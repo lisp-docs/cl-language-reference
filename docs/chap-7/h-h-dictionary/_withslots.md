@@ -72,8 +72,8 @@ The macro **with-slots** translates an appearance of the slot name as a *variabl
    (y :initarg :y :accessor thing-y))) 
 → #<STANDARD-CLASS THING 250020173> 
 (defmethod (setf thing-x) :before (new-x (thing thing)) 
-	   (format t "~&Changing X from ~D to ~D in ~S.~%" 
-		   (thing-x thing) new-x thing)) 
+  (format t "~&Changing X from ~D to ~D in ~S.~%" 
+	  (thing-x thing) new-x thing)) 
 (setq thing (make-instance ’thing :x 0 :y 1)) → #<THING 62310540> 
 (with-slots (x y) thing (incf x) (incf y)) → 2 
 (values (thing-x thing) (thing-y thing)) → 1, 2 
