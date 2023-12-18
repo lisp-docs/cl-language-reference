@@ -1,5 +1,5 @@
 ```lisp
- 
+
 
 *Numbers*, *pathnames*, and *arrays* are examples of *self-evaluating objects*. 
 

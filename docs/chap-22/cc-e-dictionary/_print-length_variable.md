@@ -40,15 +40,15 @@ to be recursively printed has components and is at a level equal to or greater t
 
 **Examples:**
 ```lisp
- 
+
 
 (setq a ’(1 (2 (3 (4 (5 (6))))))) → (1 (2 (3 (4 (5 (6)))))) 
 
 (dotimes (i 8) 
 
-(let ((\*print-level\* i)) 
+  (let ((\*print-level\* i)) 
 
-(format t "~&~D – ~S~%" i a))) 
+    (format t "~&~D – ~S~%" i a))) 
 
 ▷ 0 – # 
 
@@ -72,15 +72,15 @@ to be recursively printed has components and is at a level equal to or greater t
 
 (dotimes (i 7) 
 
-(let ((\*print-length\* i)) 
+  (let ((\*print-length\* i)) 
 
 
 
- 
+    
 
- 
+    
 
-(format t "~&~D – ~S~%" i a))) 
+    (format t "~&~D – ~S~%" i a))) 
 
 ▷ 0 – (...) 
 
@@ -100,17 +100,17 @@ to be recursively printed has components and is at a level equal to or greater t
 
 (dolist (level-length ’((0 1) (1 1) (1 2) (1 3) (1 4) 
 
-(2 1) (2 2) (2 3) (3 2) (3 3) (3 4))) 
+			(2 1) (2 2) (2 3) (3 2) (3 3) (3 4))) 
 
-(let ((\*print-level\* (first level-length)) 
+  (let ((\*print-level\* (first level-length)) 
 
-(\*print-length\* (second level-length))) 
+	(\*print-length\* (second level-length))) 
 
-(format t "~&~D ~D – ~S~%" 
+    (format t "~&~D ~D – ~S~%" 
 
-\*print-level\* \*print-length\* 
+	    \*print-level\* \*print-length\* 
 
-’(if (member x y) (+ (car x) 3) ’(foo . #(a b c d "Baz")))))) 
+	    ’(if (member x y) (+ (car x) 3) ’(foo . #(a b c d "Baz")))))) 
 
 ▷ 0 1 – # 
 

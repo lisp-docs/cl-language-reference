@@ -37,11 +37,11 @@ Returns the *length* of *list* if *list* is a *proper list*. Returns **nil** if 
 (list-length ’()) → 0 
 (list-length nil) → 0 
 (defun circular-list (&rest elements) 
-		      (let ((cycle (copy-list elements))) 
-			(nconc cycle cycle))) 
-  (list-length (circular-list ’a ’b)) → NIL 
-  (list-length (circular-list ’a)) → NIL 
-  (list-length (circular-list)) → 0 
+  (let ((cycle (copy-list elements))) 
+    (nconc cycle cycle))) 
+(list-length (circular-list ’a ’b)) → NIL 
+(list-length (circular-list ’a)) → NIL 
+(list-length (circular-list)) → 0 
 ```
 **Exceptional Situations:** 
 

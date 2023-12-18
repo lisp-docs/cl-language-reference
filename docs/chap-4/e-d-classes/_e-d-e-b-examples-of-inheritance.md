@@ -1,19 +1,19 @@
 ```lisp
- 
+
 
 (defclass C1 () 
 
-((S1 :initform 5.4 :type number) 
+  ((S1 :initform 5.4 :type number) 
 
-(S2 :allocation :class))) 
+   (S2 :allocation :class))) 
 
 (defclass C2 (C1) 
 
-((S1 :initform 5 :type integer) 
+  ((S1 :initform 5 :type integer) 
 
-(S2 :allocation :instance) 
+   (S2 :allocation :instance) 
 
-(S3 :accessor C2-S3))) 
+   (S3 :accessor C2-S3))) 
 
 *Instances* of the class C1 have a *local slot* named S1, whose default initial value is 5.4 and whose *value* should always be a *number* . The class C1 also has a *shared slot* named S2. 
 

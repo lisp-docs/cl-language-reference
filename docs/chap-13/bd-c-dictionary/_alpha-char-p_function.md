@@ -32,7 +32,7 @@ Returns *true* if *character* is an *alphabetic*<sub>1</sub> *character* ; other
 
 **Examples:**
 ```lisp
- 
+
 
 (alpha-char-p #\a) → true 
 

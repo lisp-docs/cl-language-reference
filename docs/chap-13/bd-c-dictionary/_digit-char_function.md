@@ -40,7 +40,7 @@ If *weight* is greater than or equal to *radix*, **digit-char** returns *false*.
 
 **Examples:**
 ```lisp
- 
+
 
 (digit-char 0) → #\0 
 

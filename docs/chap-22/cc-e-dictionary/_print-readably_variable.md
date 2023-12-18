@@ -60,27 +60,27 @@ If **\*read-eval\*** is *false* and **\*print-readably\*** is *true*, any such m
 
 **Examples:**
 ```lisp
- 
+
 
 (let ((x (list "a" ’\a (gensym) ’((a (b (c))) d e f g))) 
 
-(\*print-escape\* nil) 
+      (\*print-escape\* nil) 
 
-(\*print-gensym\* nil) 
+      (\*print-gensym\* nil) 
 
-(\*print-level\* 3) 
+      (\*print-level\* 3) 
 
-(\*print-length\* 3)) 
+      (\*print-length\* 3)) 
 
-(write x) 
+  (write x) 
 
-(let ((\*print-readably\* t)) 
+  (let ((\*print-readably\* t)) 
 
-(terpri) 
+    (terpri) 
 
-(write x) 
+    (write x) 
 
-:done)) 
+    :done)) 
 
 ▷ (a a G4581 ((A #) D E ...)) 
 
@@ -96,9 +96,9 @@ If **\*read-eval\*** is *false* and **\*print-readably\*** is *true*, any such m
 
 
 
- 
 
- 
+
+
 
 (setf (gethash table 1) ’one) → ONE 
 
@@ -136,11 +136,11 @@ Error: Can’t print #\<HASH-TABLE EQL 0/120 32005763\> readably.
 
 ▷ #.(LET ((HASH-TABLE (MAKE-HASH-TABLE))) 
 
-▷ (SETF (GETHASH 1 HASH-TABLE) ONE) 
+      ▷ (SETF (GETHASH 1 HASH-TABLE) ONE) 
 
-▷ (SETF (GETHASH 2 HASH-TABLE) TWO) 
+      ▷ (SETF (GETHASH 2 HASH-TABLE) TWO) 
 
-▷ HASH-TABLE) 
+      ▷ HASH-TABLE) 
 
 → #\<HASH-TABLE EQL 0/120 32005763\> 
 

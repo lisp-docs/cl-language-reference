@@ -44,9 +44,9 @@ The printer uses **\*read-default-float-format\*** to guide the choice of *expon
 
 **Examples:**
 ```lisp
- 
+
 (let ((\*read-default-float-format\* ’double-float)) 
-(read-from-string "(1.0 1.0e0 1.0s0 1.0f0 1.0d0 1.0L0)")) 
+  (read-from-string "(1.0 1.0e0 1.0s0 1.0f0 1.0d0 1.0L0)")) 
 → (1.0 1.0 1.0 1.0 1.0 1.0) ;Implementation has float format F. 
 → (1.0 1.0 1.0s0 1.0 1.0 1.0) ;Implementation has float formats S and F. → (1.0d0 1.0d0 1.0 1.0 1.0d0 1.0d0) ;Implementation has float formats F and D. → (1.0d0 1.0d0 1.0s0 1.0 1.0d0 1.0d0) ;Implementation has float formats S, F, D. → (1.0d0 1.0d0 1.0 1.0 1.0d0 1.0L0) ;Implementation has float formats F, D, L. → (1.0d0 1.0d0 1.0s0 1.0 1.0d0 1.0L0) ;Implementation has formats S, F, D, L. 
 *∗***read-eval***∗ Variable* 

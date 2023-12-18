@@ -1,5 +1,5 @@
 ```lisp
- 
+
 
 Consider the following expression, in which we assume that 1.0 and 1.0e-15 both denote *single floats*: 
 
@@ -13,9 +13,9 @@ A third *conforming implementation* might first scan all the *arguments*, proces
 
 
 
- 
 
- 
+
+
 
 format among all the *arguments* and add that, and then add in all other *arguments*, converting each in turn (all in a perhaps misguided attempt to make the computation as accurate as possible). 
 

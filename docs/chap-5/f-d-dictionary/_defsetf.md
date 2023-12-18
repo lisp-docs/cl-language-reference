@@ -141,35 +141,35 @@ b → (7)
 c → (1 2 3 (4 MIDDLEGUY-SYMBOL 6) 7 8 9) 
 An example of the use of the long form of **defsetf**: 
 (defsetf subseq (sequence start &optional end) (new-sequence) 
-		 ‘(progn (replace ,sequence ,new-sequence 
-				  :start1 ,start :end1 ,end) 
-			 ,new-sequence)) → SUBSEQ 
-			 (defvar \*xy\* (make-array ’(10 10))) 
-			 (defun xy (&key ((x x) 0) ((y y) 0)) (aref \*xy\* x y)) → XY 
-				    (defun set-xy (new-value &key ((x x) 0) ((y y) 0)) 
-						   (setf (aref \*xy\* x y) new-value)) → SET-XY 
-						   (defsetf xy (&key ((x x) 0) ((y y) 0)) (store) 
-								‘(set-xy ,store ’x ,x ’y ,y)) → XY 
-								 (get-setf-expansion ’(xy a b)) 
-								 → (#:t0 #:t1), 
-								 (a b), 
-								 (#:store), 
-								 ((lambda (&key ((x #:x)) ((y #:y))) 
-									   (set-xy #:store ’x #:x ’y #:y)) 
-								    #:t0 #:t1), 
-								  (xy #:t0 #:t1) 
-								  (xy ’x 1) → NIL 
-								  (setf (xy ’x 1) 1) → 1 
-								  (xy ’x 1) → 1 
-								  (let ((a ’x) (b ’y)) 
-								    (setf (xy a 1 b 2) 3) 
-								    (setf (xy b 5 a 9) 14)) 
-								  → 14 
-								  (xy ’y 0 ’x 1) → 1 
-								  (xy ’x 1 ’y 2) → 3 
-								  Data and Control 
-								  
-								  
+  ‘(progn (replace ,sequence ,new-sequence 
+		   :start1 ,start :end1 ,end) 
+	  ,new-sequence)) → SUBSEQ 
+(defvar \*xy\* (make-array ’(10 10))) 
+(defun xy (&key ((x x) 0) ((y y) 0)) (aref \*xy\* x y)) → XY 
+(defun set-xy (new-value &key ((x x) 0) ((y y) 0)) 
+  (setf (aref \*xy\* x y) new-value)) → SET-XY 
+(defsetf xy (&key ((x x) 0) ((y y) 0)) (store) 
+  ‘(set-xy ,store ’x ,x ’y ,y)) → XY 
+(get-setf-expansion ’(xy a b)) 
+→ (#:t0 #:t1), 
+(a b), 
+(#:store), 
+((lambda (&key ((x #:x)) ((y #:y))) 
+   (set-xy #:store ’x #:x ’y #:y)) 
+ #:t0 #:t1), 
+(xy #:t0 #:t1) 
+(xy ’x 1) → NIL 
+(setf (xy ’x 1) 1) → 1 
+(xy ’x 1) → 1 
+(let ((a ’x) (b ’y)) 
+  (setf (xy a 1 b 2) 3) 
+  (setf (xy b 5 a 9) 14)) 
+→ 14 
+(xy ’y 0 ’x 1) → 1 
+(xy ’x 1 ’y 2) → 3 
+Data and Control 
+
+
 ```
 **See Also:** 
 

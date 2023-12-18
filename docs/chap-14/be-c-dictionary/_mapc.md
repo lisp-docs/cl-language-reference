@@ -125,20 +125,20 @@ and similarly for the relationship between **mapcan** and **mapcar**.
 					; list was the last instance of that element in the input list. 
 (setq dummy nil) → NIL 
 (mapc #’(lambda (&rest x) (setq dummy (append dummy x))) 
-		 ’(1 2 3 4) 
-		 ’(a b c d e) 
-		 ’(x y z)) → (1 2 3 4) 
-		  dummy → (1 A X 2 B Y 3 C Z) 
-		  (setq dummy nil) → NIL 
-		  (mapl #’(lambda (x) (push x dummy)) ’(1 2 3 4)) → (1 2 3 4) 
-		  dummy → ((4) (3 4) (2 3 4) (1 2 3 4)) 
-		  (mapcan #’(lambda (x y) (if (null x) nil (list x y))) 
-			    ’(nil nil nil d e) 
-			    ’(1 2 3 4 5 6)) → (D 4 E 5) 
-		  (mapcan #’(lambda (x) (and (numberp x) (list x))) 
-			    ’(a 1 b c 3 4 d 5)) 
-		  → (1 3 4 5) 
-		  In this case the function serves as a filter; this is a standard Lisp idiom using **mapcan**. (mapcon #’list ’(1 2 3 4)) → ((1 2 3 4) (2 3 4) (3 4) (4)) 
+	’(1 2 3 4) 
+	’(a b c d e) 
+	’(x y z)) → (1 2 3 4) 
+dummy → (1 A X 2 B Y 3 C Z) 
+(setq dummy nil) → NIL 
+(mapl #’(lambda (x) (push x dummy)) ’(1 2 3 4)) → (1 2 3 4) 
+dummy → ((4) (3 4) (2 3 4) (1 2 3 4)) 
+(mapcan #’(lambda (x y) (if (null x) nil (list x y))) 
+	  ’(nil nil nil d e) 
+	  ’(1 2 3 4 5 6)) → (D 4 E 5) 
+(mapcan #’(lambda (x) (and (numberp x) (list x))) 
+	  ’(a 1 b c 3 4 d 5)) 
+→ (1 3 4 5) 
+In this case the function serves as a filter; this is a standard Lisp idiom using **mapcan**. (mapcon #’list ’(1 2 3 4)) → ((1 2 3 4) (2 3 4) (3 4) (4)) 
 ```
 **Exceptional Situations:** 
 

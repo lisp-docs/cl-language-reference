@@ -1,5 +1,5 @@
 ```lisp
- 
+
 
 (remove "FOO" ’(foo bar "FOO" "BAR" "foo" "bar") :test #’equal) 
 
@@ -35,11 +35,11 @@
 
 (count "FOO" (list (make-pathname :name "FOO" :type "X") 
 
-(make-pathname :name "FOO" :type "Y")) 
+		   (make-pathname :name "FOO" :type "Y")) 
 
-:key #’pathname-name 
+       :key #’pathname-name 
 
-:test #’equal) 
+       :test #’equal) 
 
 → 2 
 

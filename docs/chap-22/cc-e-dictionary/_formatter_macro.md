@@ -48,7 +48,7 @@ where *arguments-tail* is either the tail of *arguments* which has as its *car* 
 
 **Examples:**
 ```lisp
- 
+
 
 (funcall (formatter "~&~A~A") \*standard-output\* ’a ’b ’c) 
 
@@ -58,9 +58,9 @@ where *arguments-tail* is either the tail of *arguments* which has as its *car* 
 
 
 
- 
 
- 
+
+
 
 (format t (formatter "~&~A~A") ’a ’b ’c) 
 

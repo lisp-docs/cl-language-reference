@@ -44,7 +44,7 @@ Returns *true* if *character* is a *graphic character* ; otherwise, returns *fal
 
 **Examples:**
 ```lisp
- 
+
 
 (graphic-char-p #\G) → true 
 

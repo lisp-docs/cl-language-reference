@@ -58,13 +58,13 @@ Sequentially evaluates a body of *forms* in a *lexical environment* where the gi
 ;;; of OPTIMIZE settings made locally to that definition. 
 (locally (declare (optimize (safety 3) (space 3) (speed 0))) 
   (defun frob (w x y &optional (z (foo x y))) 
-	       (mumble x y z w))) 
-  → FROB 
+    (mumble x y z w))) 
+→ FROB 
 ;;; This is like the previous example, except that the optimize settings 
 ;;; remain in effect for subsequent definitions in the same compilation unit. (declaim (optimize (safety 3) (space 3) (speed 0))) 
-  (defun frob (w x y &optional (z (foo x y))) 
-	       (mumble x y z w)) 
-    → FROB 
+(defun frob (w x y &optional (z (foo x y))) 
+  (mumble x y z w)) 
+→ FROB 
 ```
 **See Also:** 
 

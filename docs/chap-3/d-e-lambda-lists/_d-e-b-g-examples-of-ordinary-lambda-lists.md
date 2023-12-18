@@ -1,5 +1,5 @@
 ```lisp
- 
+
 
 Here are some examples involving *optional parameters* and *rest parameters*: 
 
@@ -29,7 +29,7 @@ Here are some examples involving *optional parameters* and *rest parameters*:
 
 ((lambda (&optional (a 2 b) (c 3 d) &rest x) (list a b c d x)) 
 
-6 3 8 9 10 11) 
+ 6 3 8 9 10 11) 
 
 → (6 t 3 t (8 9 10 11)) 
 
@@ -57,37 +57,37 @@ Here are some examples involving *optional parameters*, *rest parameters*, and *
 
 ((lambda (a &optional (b 3) &rest x &key c (d a)) 
 
-(list a b c d x)) 1) 
+   (list a b c d x)) 1) 
 
 → (1 3 NIL 1 ()) 
 
 ((lambda (a &optional (b 3) &rest x &key c (d a)) 
 
-(list a b c d x)) 1 2) 
+   (list a b c d x)) 1 2) 
 
 → (1 2 NIL 1 ()) 
 
 ((lambda (a &optional (b 3) &rest x &key c (d a)) 
 
-(list a b c d x)) :c 7) 
+   (list a b c d x)) :c 7) 
 
 → (:c 7 NIL :c ()) 
 
 ((lambda (a &optional (b 3) &rest x &key c (d a)) 
 
-(list a b c d x)) 1 6 :c 7) 
+   (list a b c d x)) 1 6 :c 7) 
 
 → (1 6 7 1 (:c 7)) 
 
 ((lambda (a &optional (b 3) &rest x &key c (d a)) 
 
-(list a b c d x)) 1 6 :d 8) 
+   (list a b c d x)) 1 6 :d 8) 
 
 → (1 6 NIL 8 (:d 8)) 
 
 ((lambda (a &optional (b 3) &rest x &key c (d a)) 
 
-(list a b c d x)) 1 6 :d 8 :c 9 :d 10) 
+   (list a b c d x)) 1 6 :d 8 :c 9 :d 10) 
 
 → (1 6 9 8 (:d 8 :c 9 :d 10)) 
 
@@ -97,15 +97,15 @@ As an example of the use of **&allow-other-keys** and :allow-other-keys, conside
 
 (defun array-of-strings (str dims &rest named-pairs 
 
-&key (start 0) end &allow-other-keys) 
+			 &key (start 0) end &allow-other-keys) 
 
-(apply #’make-array dims 
+  (apply #’make-array dims 
 
-:initial-element (subseq str start end) 
+	   :initial-element (subseq str start end) 
 
-:allow-other-keys t 
+	   :allow-other-keys t 
 
-named-pairs)) 
+	   named-pairs)) 
 
 This *function* takes a *string* and dimensioning information and returns an *array* of the specified dimensions, each of whose elements is the specified *string*. However, :start and :end named arguments may be used to specify that a substring of the given *string* should be used. In addition, the presence of **&allow-other-keys** in the *lambda list* indicates that the caller may supply additional named arguments; the *rest parameter* provides access to them. These additional named arguments are passed to **make-array**. The *function* **make-array** normally does not allow the named arguments :start and :end to be used, and an error should be signaled if such named arguments are supplied to **make-array**. However, the presence in the call to **make-array** of the named argument :allow-other-keys with a *true* value causes any extraneous named arguments, including :start and :end, to be acceptable and ignored. 
 

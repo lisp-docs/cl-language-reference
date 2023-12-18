@@ -36,7 +36,7 @@ Only the *list structure* of *list* is copied; the *elements* of the resulting l
 
 **Examples:**
 ```lisp
- 
+
 (setq lst (list 1 (list 2 3))) → (1 (2 3)) 
 (setq slst lst) → (1 (2 3)) 
 (setq clst (copy-list lst)) → (1 (2 3)) 

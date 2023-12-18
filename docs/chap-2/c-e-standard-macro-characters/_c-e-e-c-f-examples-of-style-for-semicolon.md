@@ -1,5 +1,5 @@
 ```lisp
- 
+
 
 ;;;; Math Utilities 
 
@@ -9,29 +9,29 @@
 
 (defun fib (n) 
 
-(check-type n integer) 
+  (check-type n integer) 
 
-;; At this point we’re sure we have an integer argument. 
+  ;; At this point we’re sure we have an integer argument. 
 
-;; Now we can get down to some serious computation. 
+  ;; Now we can get down to some serious computation. 
 
-(cond ((< n 0) 
+  (cond ((< n 0) 
 
-;; Hey, this is just supposed to be a simple example. 
+	 ;; Hey, this is just supposed to be a simple example. 
 
-;; Did you really expect me to handle the general case? 
+	 ;; Did you really expect me to handle the general case? 
 
-(error "FIB got ~D as an argument." n)) 
+	 (error "FIB got ~D as an argument." n)) 
 
-((< n 2) n) ;fib[0]=0 and fib[1]=1 
+	((< n 2) n) ;fib[0]=0 and fib[1]=1 
 
-;; The cheap cases didn’t work. 
+	;; The cheap cases didn’t work. 
 
-;; Nothing more to do but recurse. 
+	;; Nothing more to do but recurse. 
 
-(t (+ (fib (- n 1)) ;The traditional formula 
+	(t (+ (fib (- n 1)) ;The traditional formula 
 
-(fib (- n 2)))))) ; is fib[n-1]+fib[n-2].  
+	      (fib (- n 2)))))) ; is fib[n-1]+fib[n-2].  
 
 
 

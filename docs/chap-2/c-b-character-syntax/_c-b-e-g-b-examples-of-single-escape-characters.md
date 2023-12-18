@@ -1,5 +1,5 @@
 ```lisp
- 
+
 
 ;; The following examples assume the readtable case of \*readtable\* 
 

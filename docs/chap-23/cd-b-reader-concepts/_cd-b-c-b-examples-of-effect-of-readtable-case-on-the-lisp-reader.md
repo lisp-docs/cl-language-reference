@@ -1,35 +1,35 @@
 ```lisp
- 
+
 
 (defun test-readtable-case-reading () 
 
-(let ((\*readtable\* (copy-readtable nil))) 
+  (let ((\*readtable\* (copy-readtable nil))) 
 
-(format t "READTABLE-CASE Input Symbol-name~ 
+    (format t "READTABLE-CASE Input Symbol-name~ 
 
 ~%–––––––––––––––––-~ 
 
 ~%") 
 
-(dolist (readtable-case ’(:upcase :downcase :preserve :invert)) 
+    (dolist (readtable-case ’(:upcase :downcase :preserve :invert)) 
 
-(setf (readtable-case \*readtable\*) readtable-case) 
+      (setf (readtable-case \*readtable\*) readtable-case) 
 
-(dolist (input ’("ZEBRA" "Zebra" "zebra")) 
+      (dolist (input ’("ZEBRA" "Zebra" "zebra")) 
 
-(format t "~&:~A~16T~A~24T~A" 
+	(format t "~&:~A~16T~A~24T~A" 
 
-(string-upcase readtable-case) 
+		(string-upcase readtable-case) 
 
-input 
+		input 
 
-(symbol-name (read-from-string input))))))) 
+		(symbol-name (read-from-string input))))))) 
 
 
 
- 
 
- 
+
+
 
 The output from (test-readtable-case-reading) should be as follows: 
 

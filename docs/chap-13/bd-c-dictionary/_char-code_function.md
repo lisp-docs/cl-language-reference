@@ -32,7 +32,7 @@
 
 **Examples:**
 ```lisp
- 
+
 
 ;; An implementation using ASCII character encoding 
 

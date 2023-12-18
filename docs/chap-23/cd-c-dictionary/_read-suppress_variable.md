@@ -84,12 +84,12 @@ No matter what the *value* of **\*read-suppress\***, parentheses still continue 
 
 **Examples:**
 ```lisp
- 
+
 (let ((\*read-suppress\* t)) 
-(mapcar #’read-from-string 
-’("#(foo bar baz)" "#P(:type :lisp)" "#c1.2" 
-"#.(PRINT ’FOO)" "#3AHELLO" "#S(INTEGER)" 
-"#\*ABC" "#\GARBAGE" "#RALPHA" "#3R444"))) 
+  (mapcar #’read-from-string 
+	    ’("#(foo bar baz)" "#P(:type :lisp)" "#c1.2" 
+			       "#.(PRINT ’FOO)" "#3AHELLO" "#S(INTEGER)" 
+			       "#\*ABC" "#\GARBAGE" "#RALPHA" "#3R444"))) 
 → (NIL NIL NIL NIL NIL NIL NIL NIL NIL NIL) 
 ```
 **See Also:** 

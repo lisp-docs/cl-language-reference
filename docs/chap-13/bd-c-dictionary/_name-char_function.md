@@ -32,7 +32,7 @@ Returns the *character object* whose *name* is *name* (as determined by **string
 
 **Examples:**
 ```lisp
- 
+
 
 (name-char ’space) → #\Space 
 
@@ -42,7 +42,7 @@ Returns the *character object* whose *name* is *name* (as determined by **string
 
 (let ((x (char-name #\a))) 
 
-(or (not x) (eql (name-char x) #\a))) → true 
+  (or (not x) (eql (name-char x) #\a))) → true 
 
 
 ```

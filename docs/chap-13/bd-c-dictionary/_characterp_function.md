@@ -32,7 +32,7 @@ Returns *true* if *object* is of *type* **character**; otherwise, returns *false
 
 **Examples:**
 ```lisp
- 
+
 
 (characterp #\a) → true 
 
@@ -52,9 +52,9 @@ Returns *true* if *object* is of *type* **character**; otherwise, returns *false
 
 
 
- 
 
- 
+
+
 
 
 ```

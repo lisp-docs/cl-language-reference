@@ -52,7 +52,7 @@ If it is *true*, the *pretty printer* is used, and the *Lisp printer* will endea
 
 **Examples:**
 ```lisp
- 
+
 
 (setq \*print-pretty\* ’nil) → NIL 
 
@@ -64,15 +64,15 @@ If it is *true*, the *pretty printer* is used, and the *Lisp printer* will endea
 
 (let ((\*print-pretty\* t)) 
 
-(progn (write ’(let ((a 1) (b 2) (c 3)) (+ a b c))) nil)) 
+  (progn (write ’(let ((a 1) (b 2) (c 3)) (+ a b c))) nil)) 
 
 ▷ (LET ((A 1) 
 
-▷ (B 2) 
+	▷ (B 2) 
 
-▷ (C 3)) 
+	▷ (C 3)) 
 
-▷ (+ A B C)) 
+    ▷ (+ A B C)) 
 
 → NIL 
 
@@ -82,33 +82,33 @@ If it is *true*, the *pretty printer* is used, and the *Lisp printer* will endea
 
 (flet ((test (x) 
 
-(let ((\*print-pretty\* t)) 
+	 (let ((\*print-pretty\* t)) 
 
-(print x) 
+	   (print x) 
 
-(format t "~%~S " x) 
+	   (format t "~%~S " x) 
 
-(terpri) (princ x) (princ " ") 
+	   (terpri) (princ x) (princ " ") 
 
-(format t "~%~A " x)))) 
+	   (format t "~%~A " x)))) 
 
-(test ’#’(lambda () (list "a" # ’c #’d)))) 
-
-▷ #’(LAMBDA () 
-
-▷ (LIST "a" # ’C #’D)) 
+  (test ’#’(lambda () (list "a" # ’c #’d)))) 
 
 ▷ #’(LAMBDA () 
 
-▷ (LIST "a" # ’C #’D)) 
+      ▷ (LIST "a" # ’C #’D)) 
 
 ▷ #’(LAMBDA () 
 
-▷ (LIST a b ’C #’D)) 
+      ▷ (LIST "a" # ’C #’D)) 
 
 ▷ #’(LAMBDA () 
 
-▷ (LIST a b ’C #’D)) 
+      ▷ (LIST a b ’C #’D)) 
+
+▷ #’(LAMBDA () 
+
+      ▷ (LIST a b ’C #’D)) 
 
 → NIL 
 

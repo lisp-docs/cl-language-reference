@@ -32,7 +32,7 @@ Returns *true* if *character* is of *type* **standard-char**; otherwise, returns
 
 **Examples:**
 ```lisp
- 
+
 
 (standard-char-p #\Space) → true 
 

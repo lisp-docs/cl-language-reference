@@ -32,11 +32,11 @@ Returns an *external file format designator* for the *stream*.
 
 **Examples:**
 ```lisp
- 
+
 (with-open-file (stream "test" :direction :output) 
- 
- 
-(stream-external-format stream)) 
+  
+  
+  (stream-external-format stream)) 
 → :DEFAULT 
 <i><sup>or</sup>→</i> :ISO8859/1-1987 
 <i><sup>or</sup>→</i> (:ASCII :SAIL) 

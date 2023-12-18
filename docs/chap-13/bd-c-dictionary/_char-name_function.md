@@ -40,7 +40,7 @@ The *standard characters hNewlinei* and *hSpacei* have the respective names "New
 
 **Examples:**
 ```lisp
- 
+
 
 (char-name #\ ) → "Space" 
 
@@ -74,9 +74,9 @@ The *standard characters hNewlinei* and *hSpacei* have the respective names "New
 
 
 
- 
 
- 
+
+
 
 
 ```

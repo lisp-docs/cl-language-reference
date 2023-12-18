@@ -49,16 +49,16 @@ When the *function* receives its arguments via **&amp;rest**, it is permissible 
 (apply #’+ ’()) → 0 
 (defparameter \*some-list\* ’(a b c)) 
 (defun strange-test (&rest x) (eq x \*some-list\*)) 
-		     (apply #’strange-test \*some-list\*) → implementation-dependent 
-		     (defun bad-boy (&rest x) (rplacd x ’y)) 
-				     (bad-boy ’a ’b ’c) has undefined consequences. 
-				     (apply #’bad-boy \*some-list\*) has undefined consequences. 
-				     (defun foo (size &rest keys &key double &allow-other-keys) 
-						 (let ((v (apply #’make-array size :allow-other-keys t keys))) 
-						   (if double (concatenate (type-of v) v v) v))) 
-				       (foo 4 :initial-contents ’(a b c d) :double t) 
+(apply #’strange-test \*some-list\*) → implementation-dependent 
+(defun bad-boy (&rest x) (rplacd x ’y)) 
+(bad-boy ’a ’b ’c) has undefined consequences. 
+(apply #’bad-boy \*some-list\*) has undefined consequences. 
+(defun foo (size &rest keys &key double &allow-other-keys) 
+  (let ((v (apply #’make-array size :allow-other-keys t keys))) 
+    (if double (concatenate (type-of v) v v) v))) 
+(foo 4 :initial-contents ’(a b c d) :double t) 
 
-				       → #(A B C D A B C D) 
+→ #(A B C D A B C D) 
 ```
 **See Also:** 
 

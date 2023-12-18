@@ -1,5 +1,5 @@
 ```lisp
- 
+
 
 ;;; The caller can supply :ALLOW-OTHER-KEYS T to suppress checking. 
 
@@ -19,7 +19,7 @@
 
 ((lambda (&key x) x) 
 
-:x 1 :y 2 :allow-other-keys t :allow-other-keys nil) 
+ :x 1 :y 2 :allow-other-keys t :allow-other-keys nil) 
 
 → 1 
 
@@ -31,7 +31,7 @@
 
 ((lambda (&key x) x) ;This call is not valid 
 
-:x 1 :y 2 :allow-other-keys nil :allow-other-keys t) 
+ :x 1 :y 2 :allow-other-keys nil :allow-other-keys t) 
 
 
 ```

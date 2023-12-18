@@ -86,12 +86,12 @@
 (symbol-plist \*john\*) 
 → (WIFE #:PERSON4604 LAST-NAME "Dow-Jones" FIRST-NAME "John") 
 (defmacro age (person &optional (default ”thirty-something)) 
-	       ‘(get ,person ’age ,default)) → AGE 
-		(age \*john\*) → THIRTY-SOMETHING 
-		(age \*john\* 20) → 20 
-		(setf (age \*john\*) 25) → 25 
-		(age \*john\*) → 25 
-		(age \*john\* 20) → 25 
+  ‘(get ,person ’age ,default)) → AGE 
+(age \*john\*) → THIRTY-SOMETHING 
+(age \*john\* 20) → 20 
+(setf (age \*john\*) 25) → 25 
+(age \*john\*) → 25 
+(age \*john\* 20) → 25 
 ```
 **Exceptional Situations:** 
 

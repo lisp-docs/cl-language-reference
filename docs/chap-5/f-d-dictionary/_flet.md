@@ -207,39 +207,39 @@ after macro expansion. The occurrences of x and flag legitimately refer to the p
     (temp n))) → RECURSIVE-TIMES 
 (recursive-times 2 3) → 6 
 (defmacro mlets (x &environment env) 
-		 (let ((form ‘(babbit ,x))) 
-		   (macroexpand form env))) → MLETS 
+  (let ((form ‘(babbit ,x))) 
+    (macroexpand form env))) → MLETS 
 
-		   **flet, labels, macrolet** 
-		   (macrolet ((babbit (z) ‘(+ ,z ,z))) (mlets 5)) → 10 
-		   (flet ((safesqrt (x) (sqrt (abs x)))) 
-		     ;; The safesqrt function is used in two places. 
-		     (safesqrt (apply #’+ (map ’list #’safesqrt ’(1 2 3 4 5 6))))) 
-		   → 3.291173 
-		   (defun integer-power (n k) 
-		     (declare (integer n)) 
-		     (declare (type (integer 0 \*) k)) 
-		     (labels ((expt0 (x k a) 
-				(declare (integer x a) (type (integer 0 \*) k)) 
-				(cond ((zerop k) a) 
-				      ((evenp k) (expt1 (\* x x) (floor k 2) a)) 
-				      (t (expt0 (\* x x) (floor k 2) (\* x a))))) 
-			      (expt1 (x k a) 
-				(declare (integer x a) (type (integer 0 \*) k)) 
-				(cond ((evenp k) (expt1 (\* x x) (floor k 2) a)) 
-				      (t (expt0 (\* x x) (floor k 2) (\* x a)))))) 
-		       (expt0 n k 1))) → INTEGER-POWER 
-		   (defun example (y l) 
-		     (flet ((attach (x) 
-			      (setq l (append l (list x))))) 
-		       (declare (inline attach)) 
-		       (dolist (x y) 
-			 (unless (null (cdr x)) 
-			   (attach x))) 
-		       l)) 
-		   (example ’((a apple apricot) (b banana) (c cherry) (d) (e)) 
-			     ’((1) (2) (3) (4 2) (5) (6 3 2))) 
-		   → ((1) (2) (3) (4 2) (5) (6 3 2) (A APPLE APRICOT) (B BANANA) (C CHERRY)) 
+**flet, labels, macrolet** 
+(macrolet ((babbit (z) ‘(+ ,z ,z))) (mlets 5)) → 10 
+(flet ((safesqrt (x) (sqrt (abs x)))) 
+  ;; The safesqrt function is used in two places. 
+  (safesqrt (apply #’+ (map ’list #’safesqrt ’(1 2 3 4 5 6))))) 
+→ 3.291173 
+(defun integer-power (n k) 
+  (declare (integer n)) 
+  (declare (type (integer 0 \*) k)) 
+  (labels ((expt0 (x k a) 
+	     (declare (integer x a) (type (integer 0 \*) k)) 
+	     (cond ((zerop k) a) 
+		   ((evenp k) (expt1 (\* x x) (floor k 2) a)) 
+		   (t (expt0 (\* x x) (floor k 2) (\* x a))))) 
+	   (expt1 (x k a) 
+	     (declare (integer x a) (type (integer 0 \*) k)) 
+	     (cond ((evenp k) (expt1 (\* x x) (floor k 2) a)) 
+		   (t (expt0 (\* x x) (floor k 2) (\* x a)))))) 
+    (expt0 n k 1))) → INTEGER-POWER 
+(defun example (y l) 
+  (flet ((attach (x) 
+	   (setq l (append l (list x))))) 
+    (declare (inline attach)) 
+    (dolist (x y) 
+      (unless (null (cdr x)) 
+	(attach x))) 
+    l)) 
+(example ’((a apple apricot) (b banana) (c cherry) (d) (e)) 
+	  ’((1) (2) (3) (4 2) (5) (6 3 2))) 
+→ ((1) (2) (3) (4 2) (5) (6 3 2) (A APPLE APRICOT) (B BANANA) (C CHERRY)) 
 ```
 **See Also:** 
 

@@ -1,43 +1,43 @@
 ```lisp
- 
+
 
 (defun test-readtable-case-printing () 
 
-(let ((\*readtable\* (copy-readtable nil)) 
+  (let ((\*readtable\* (copy-readtable nil)) 
 
-(\*print-case\* \*print-case\*)) 
+	(\*print-case\* \*print-case\*)) 
 
-(format t "READTABLE-CASE \*PRINT-CASE\* Symbol-name Output~ 
+    (format t "READTABLE-CASE \*PRINT-CASE\* Symbol-name Output~ 
 
 ~%–––––––––––––––––––––––––~ 
 
 ~%") 
 
-(dolist (readtable-case ’(:upcase :downcase :preserve :invert)) 
+    (dolist (readtable-case ’(:upcase :downcase :preserve :invert)) 
 
-(setf (readtable-case \*readtable\*) readtable-case) 
+      (setf (readtable-case \*readtable\*) readtable-case) 
 
-(dolist (print-case ’(:upcase :downcase :capitalize)) 
+      (dolist (print-case ’(:upcase :downcase :capitalize)) 
 
-(dolist (symbol ’(|ZEBRA| |Zebra| |zebra|)) 
+	(dolist (symbol ’(|ZEBRA| |Zebra| |zebra|)) 
 
-(setq \*print-case\* print-case) 
+	  (setq \*print-case\* print-case) 
 
-(format t "~&:~A~15T:~A~29T~A~42T~A" 
+	  (format t "~&:~A~15T:~A~29T~A~42T~A" 
 
 
 
- 
+		  
 
- 
+		  
 
-(string-upcase readtable-case) 
+		  (string-upcase readtable-case) 
 
-(string-upcase print-case) 
+		  (string-upcase print-case) 
 
-(symbol-name symbol) 
+		  (symbol-name symbol) 
 
-(prin1-to-string symbol))))))) 
+		  (prin1-to-string symbol))))))) 
 
 The output from (test-readtable-case-printing) should be as follows: 
 
@@ -119,9 +119,9 @@ READTABLE-CASE \*PRINT-CASE\* Symbol-name Output
 
 
 
- 
 
- 
+
+
 
 
 ```

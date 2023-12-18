@@ -36,11 +36,11 @@ If the *value* of **\*print-radix\*** is *true*, the printer will print a radix 
 
 **Examples:**
 ```lisp
- 
+
 
 (let ((\*print-base\* 24.) (\*print-radix\* t)) 
 
-(print 23.)) 
+  (print 23.)) 
 
 ▷ #24rN 
 
@@ -52,11 +52,11 @@ If the *value* of **\*print-radix\*** is *true*, the printer will print a radix 
 
 (dotimes (i 35) 
 
-(let ((\*print-base\* (+ i 2))) ;print the decimal number 40 
+  (let ((\*print-base\* (+ i 2))) ;print the decimal number 40 
 
-(write 40) ;in each base from 2 to 36 
+    (write 40) ;in each base from 2 to 36 
 
-(if (zerop (mod i 10)) (terpri) (format t " ")))) 
+    (if (zerop (mod i 10)) (terpri) (format t " ")))) 
 
 ▷ 101000 
 
@@ -74,15 +74,15 @@ If the *value* of **\*print-radix\*** is *true*, the printer will print a radix 
 
 
 
- 
+  
 
- 
+  
 
-(let ((\*print-radix\* t) ;print the integer 10 and 
+  (let ((\*print-radix\* t) ;print the integer 10 and 
 
-(\*print-base\* pb)) ;the ratio 1/10 in bases 2, 
+	(\*print-base\* pb)) ;the ratio 1/10 in bases 2, 
 
-(format t "~&~S ~S~%" 10 1/10))) ;3, 8, 10, 16 
+    (format t "~&~S ~S~%" 10 1/10))) ;3, 8, 10, 16 
 
 ▷ #b1010 #b1/1010 
 

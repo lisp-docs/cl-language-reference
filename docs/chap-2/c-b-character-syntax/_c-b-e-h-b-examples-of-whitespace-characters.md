@@ -1,5 +1,5 @@
 ```lisp
- 
+
 
 (length ’(this-that)) → 1 
 
@@ -7,7 +7,7 @@
 
 (length ’(a 
 
-b)) → 2 
+	  b)) → 2 
 
 (+ 34) → 34 
 

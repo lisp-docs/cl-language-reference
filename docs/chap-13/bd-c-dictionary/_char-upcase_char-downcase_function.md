@@ -40,7 +40,7 @@ The result only ever differs from *character* in its *code attribute*; all *impl
 
 **Examples:**
 ```lisp
- 
+
 
 (char-upcase #\a) → #\A 
 
@@ -66,17 +66,17 @@ The result only ever differs from *character* in its *code attribute*; all *impl
 
 (dotimes (code char-code-limit) 
 
-(let ((char (code-char code))) 
+  (let ((char (code-char code))) 
 
-(when char 
+    (when char 
 
-(unless (cond ((upper-case-p char) (char= (char-upcase (char-downcase char)) char)) ((lower-case-p char) (char= (char-downcase (char-upcase char)) char)) 
+      (unless (cond ((upper-case-p char) (char= (char-upcase (char-downcase char)) char)) ((lower-case-p char) (char= (char-downcase (char-upcase char)) char)) 
 
-(t (and (char= (char-upcase (char-downcase char)) char) 
+		    (t (and (char= (char-upcase (char-downcase char)) char) 
 
-(char= (char-downcase (char-upcase char)) char)))) 
+			    (char= (char-downcase (char-upcase char)) char)))) 
 
-(return char))))) 
+	(return char))))) 
 
 → NIL 
 

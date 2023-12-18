@@ -28,11 +28,11 @@ Controls whether the prefix “#:” is printed before *apparently uninterned sy
 
 **Examples:**
 ```lisp
- 
+
 
 (let ((\*print-gensym\* nil)) 
 
-(print (gensym))) 
+  (print (gensym))) 
 
 ▷ G6040 
 

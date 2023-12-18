@@ -148,15 +148,15 @@ The meanings and defaults for the keyword arguments to **write-to-string** are t
 
 **Examples:**
 ```lisp
- 
+
 
 (prin1-to-string "abc") → "\"abc\"" 
 
 
 
- 
 
- 
+
+
 
 (princ-to-string "abc") → "abc" 
 

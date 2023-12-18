@@ -210,17 +210,17 @@ The *value* of **\*trace-output\***, called *trace output*, is the *stream* on w
 
 **Examples:**
 ```lisp
- 
+
 (with-output-to-string (\*error-output\*) 
-(warn "this string is sent to \*error-output\*")) 
+  (warn "this string is sent to \*error-output\*")) 
 → "Warning: this string is sent to \*error-output\* 
 " ;The exact format of this string is *implementation-dependent*. 
 (with-input-from-string (\*standard-input\* "1001") 
-(+ 990 (read))) → 1991 
+  (+ 990 (read))) → 1991 
 (progn (setq out (with-output-to-string (\*standard-output\*) 
-(print "print and format t send things to") 
-(format t "\*standard-output\* now going to a string"))) 
-:done) 
+		   (print "print and format t send things to") 
+		   (format t "\*standard-output\* now going to a string"))) 
+       :done) 
 → :DONE 
 out 
 → " 
@@ -231,7 +231,7 @@ out
 → (FACT) 
 ;; Of course, the format of traced output is implementation-dependent. 
 (with-output-to-string (\*trace-output\*) 
-(fact 3)) 
+  (fact 3)) 
 → " 
 1 Enter FACT 3 
 | 2 Enter FACT 2 

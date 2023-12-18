@@ -36,7 +36,7 @@ The *values* of **/**, **//**, and **///** are updated immediately prior to prin
 
 **Examples:**
 ```lisp
- 
+
 (floor 22 7) → 3, 1 
 (+ (\* (car /) 7) (cadr /)) → 22 
 ```

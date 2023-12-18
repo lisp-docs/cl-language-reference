@@ -40,17 +40,17 @@ When the *value* of **\*print-lines\*** is other than **nil**, it is a limit on 
 
 **Examples:**
 ```lisp
- 
+
 
 (let ((\*print-right-margin\* 25) (\*print-lines\* 3)) 
 
-(pprint ’(progn (setq a 1 b 2 c 3 d 4)))) 
+  (pprint ’(progn (setq a 1 b 2 c 3 d 4)))) 
 
 ▷ (PROGN (SETQ A 1 
 
-▷ B 2 
+	       ▷ B 2 
 
-▷ C 3 ..)) 
+	       ▷ C 3 ..)) 
 
 → hno valuesi 
 

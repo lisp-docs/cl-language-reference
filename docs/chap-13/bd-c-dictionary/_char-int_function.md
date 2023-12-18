@@ -44,7 +44,7 @@ for characters *c1* and *c2*.
 
 **Examples:**
 ```lisp
- 
+
 
 (char-int #\A) → 65 ; implementation A 
 

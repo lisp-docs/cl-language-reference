@@ -120,7 +120,7 @@ If two *characters* have *identical implementation-defined attributes*, then the
 
 **Examples:**
 ```lisp
- 
+
 
 (char= #\d #\d) → true 
 
@@ -192,9 +192,9 @@ If two *characters* have *identical implementation-defined attributes*, then the
 
 
 
- 
 
- 
+
+
 
 (stable-sort (list #\b #\A #\B #\a #\c #\C) #’char-lessp) 
 

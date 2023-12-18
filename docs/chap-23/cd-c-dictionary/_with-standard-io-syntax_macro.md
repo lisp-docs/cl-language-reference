@@ -104,11 +104,11 @@ The effect of **\*read-base\*** on the reading of any particular *rational* numb
 
 **Examples:**
 ```lisp
- 
+
 (dotimes (i 6) 
-(let ((\*read-base\* (+ 10. i))) 
-(let ((object (read-from-string "(\\DAD DAD |BEE| BEE 123. 123)"))) 
-(print (list \*read-base\* object))))) 
+  (let ((\*read-base\* (+ 10. i))) 
+    (let ((object (read-from-string "(\\DAD DAD |BEE| BEE 123. 123)"))) 
+      (print (list \*read-base\* object))))) 
 ▷ (10 (DAD DAD BEE BEE 123 123)) 
 ▷ (11 (DAD DAD BEE BEE 123 146)) 
 ▷ (12 (DAD DAD BEE BEE 123 171)) 

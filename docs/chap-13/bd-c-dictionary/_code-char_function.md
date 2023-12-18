@@ -44,7 +44,7 @@ Returns a *character* with the *code attribute* given by *code*. If no such *cha
 
 **Examples:**
 ```lisp
- 
+
 
 (code-char 65.) → #\A ;in an implementation using ASCII codes 
 

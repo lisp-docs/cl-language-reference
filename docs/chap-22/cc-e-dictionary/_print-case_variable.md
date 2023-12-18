@@ -32,13 +32,13 @@ The *value* of **\*print-case\*** controls the case (upper, lower, or mixed) in 
 
 **Examples:**
 ```lisp
- 
+
 
 (defun test-print-case () 
 
-(dolist (\*print-case\* ’(:upcase :downcase :capitalize)) 
+  (dolist (\*print-case\* ’(:upcase :downcase :capitalize)) 
 
-(format t "~&~S ~S~%" ’this-and-that ’|And-something-elSE|))) 
+    (format t "~&~S ~S~%" ’this-and-that ’|And-something-elSE|))) 
 
 → TEST-PC 
 
@@ -54,9 +54,9 @@ The *value* of **\*print-case\*** controls the case (upper, lower, or mixed) in 
 
 
 
- 
 
- 
+
+
 
 (test-print-case) ;Implementation A 
 

@@ -1,5 +1,5 @@
 ```lisp
- 
+
 
 The following are some examples that exploit the #|...|# notation: 
 
@@ -23,7 +23,7 @@ The following are some examples that exploit the #|...|# notation:
 
 (defun mention-fun-fact-1a () 
 
-(format t "CL uses ; and #|...|# in comments.")) 
+  (format t "CL uses ; and #|...|# in comments.")) 
 
 → MENTION-FUN-FACT-1A 
 
@@ -53,7 +53,7 @@ The following are some examples that exploit the #|...|# notation:
 
 (defun mention-fun-fact-2a () 
 
-(format t "Don’t use |\# unmatched or you’ll get in trouble!")) 
+  (format t "Don’t use |\# unmatched or you’ll get in trouble!")) 
 
 → MENTION-FUN-FACT-2A 
 
@@ -67,7 +67,7 @@ The following are some examples that exploit the #|...|# notation:
 
 
 
-(format t "Don’t use |\# unmatched or you’ll get in trouble!") |# 
+     (format t "Don’t use |\# unmatched or you’ll get in trouble!") |# 
 
 (fboundp ’mention-fun-fact-2b) → NIL 
 
@@ -83,7 +83,7 @@ The following are some examples that exploit the #|...|# notation:
 
 (defun mention-fun-fact-3a () ; #| 
 
-(format t "Don’t use |# unmatched or you’ll get in trouble!")) 
+     (format t "Don’t use |# unmatched or you’ll get in trouble!")) 
 
 → MENTION-FUN-FACT-3A 
 
@@ -97,7 +97,7 @@ The following are some examples that exploit the #|...|# notation:
 
 (defun mention-fun-fact-3b () ; #| 
 
-(format t "Don’t use |# unmatched or you’ll get in trouble!")) 
+  (format t "Don’t use |# unmatched or you’ll get in trouble!")) 
 
 |# 
 
