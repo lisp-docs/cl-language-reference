@@ -189,7 +189,9 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
         // https://prismjs.com/#supported-languages
-        additionalLanguages: ["powershell", "python", "lisp", "bash"],
+        // "xml",
+        // "html",
+        additionalLanguages: ["powershell", "python", "lisp", "bash",  "java", "markup"],
       },
     }),
 };

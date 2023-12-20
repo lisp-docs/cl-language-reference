@@ -106,7 +106,7 @@ It turns out that we can (although as I mentioned earlier I'm not sure if James 
 
 How can we represent 'copy' example above in Java code? Here's one way to do it:
 
-```c
+```java
 CopyTask copy = new CopyTask();
 Fileset fileset = new Fileset();
 
@@ -119,7 +119,7 @@ copy.execute();
 
 The code is almost the same, albeit a little longer than the original XML. So what's different? The answer is that the XML snippet introduces a special semantic construct for copying. If we could do it in Java it would look like this:
 
-```c
+```java
 copy("../new/dir")
 {
     fileset("src\_dir");
@@ -128,7 +128,7 @@ copy("../new/dir")
 
 Can you see the difference? The code above (if it were possible in Java) is a special operator for copying files - similar to a _for_ loop or a new _foreach_ construct introduced in Java 5. If we had an automatic converter from XML to Java it would likely produce the above gibberish. The reason for this is that Java's accepted syntax tree grammar is fixed by the language specification - we have no way of modifying it. We can add packages, classes, methods, but we cannot extend Java to make addition of new operators possible. Yet we can do it to our heart's content in XML - its syntax tree isn't restricted by anything except our interpreter! If the idea is still unclear, consider introducing a special operator 'unless' to Java:
 
-```c
+```java
 unless(someObject.canFly())
 {
     someObject.transportByGround();
