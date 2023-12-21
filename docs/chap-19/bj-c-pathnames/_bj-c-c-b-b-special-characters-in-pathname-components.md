@@ -6,9 +6,9 @@
 ```lisp
 ;; In a TOPS-20 implementation, which uses ^V to quote
 (NAMESTRING (MAKE-PATHNAME :HOST "OZ" :NAME "<TEST>"))
-→ #P"OZ:PS:^V<test^V>"
+→ #P"OZ:PS:^V<TEST^V>"
 
-not → #P"OZ:PS:<TEST>"
+NOT → #P"OZ:PS:<TEST>"
 ```
 
 :::info
