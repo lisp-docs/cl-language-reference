@@ -191,7 +191,8 @@ const config = {
         // https://prismjs.com/#supported-languages
         // "xml",
         // "html",
-        additionalLanguages: ["powershell", "python", "lisp", "bash",  "java", "markup"],
+        // consider replacing lisp highlighting with this: https://github.com/orthecreedence/highlight-lisp
+        additionalLanguages: ["powershell", "python", "lisp", "bash",  "java", "markup", "clojure"],
       },
     }),
 };

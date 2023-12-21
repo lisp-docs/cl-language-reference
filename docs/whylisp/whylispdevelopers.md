@@ -184,7 +184,7 @@ The two snippets hold exactly the same information. However, we use attributes t
 
 Now that we got attributes out of the way, let's look at s-expressions. The reason we took this detour is that s-expressions do not have attributes. Because they're a lot less verbose, attributes are simply unnecessary. This is one thing we need to keep in mind when transforming XML to s-expressions. Let's take a look at an example. We could translate above snippet to s-expressions like this:
 
-```lisp
+```clojure
 (copy
     (todir "../new/dir")
     (fileset (dir "src\_dir")))
@@ -192,7 +192,7 @@ Now that we got attributes out of the way, let's look at s-expressions. The reas
 
 Take a good look at this representation. What's different? Angle brackets seem to be replaced by parentheses. Instead of enclosing each element into a pair of parentheses and then closing each element with a "(/element)" we simply skip the second parenthesis in "(element" and proceed. The element is then closed like this: ")". That's it! The translation is natural and very simple. It's also a lot easier to type. Do parentheses blind first time users? Maybe, but now that we're understand the reasoning behind them they're a lot easier to handle. At the very least they're better than arthritis inducing verbosity of XML. After you get used to s-expressions writing code in them is not only doable but very pleasant. And they provide all the benefits of writing code in XML (many of which we're yet to explore). Let's take a look at our 'task' code in something that looks a lot more like lisp:
 
-```lisp
+```clojure
 (task (name "Test")
     (echo (message "Hello World!")))
 (Test)
@@ -200,7 +200,7 @@ Take a good look at this representation. What's different? Angle brackets seem t
 
 S-expressions are called lists in Lisp lingo. Consider our 'task' element above. If we rewrite it without a line break and with comas instead of spaces it's starting to look surprisingly like a list of elements and other lists (the formatting is added to make it easier to see nested lists):
 
-```lisp
+```clojure
 (task, (name, "test"), (echo, (message, "Hello World!")))
 ```
 
@@ -326,7 +326,7 @@ times-two(5)             // returns 10
 
 Now that we went over symbols and functions, what about lists? Well, you already know a lot about them. Lists are simply pieces of XML written in s-expression form. A list is specified by parentheses and contains Lisp data-types (including other lists) separated by a space. For example (this is real Lisp, note that we use semicolons for comments now):
 
-```lisp
+```clojure
 ()                      ; an empty list
 (1)                     ; a list with a single element, 1
 (1 "test")              ; a list with two elements
@@ -340,7 +340,7 @@ Now that we went over symbols and functions, what about lists? Well, you already
 
 When a Lisp system encounters lists in the source code it acts exactly like Ant does when it encounters XML - it attempts to execute them. In fact, Lisp source code is only specified using lists, just like Ant source code is only specified using XML. Lisp executes lists in the following manner. The first element of the list is treated as the name of a function. The rest of the elements are treated as functions parameters. If one of the parameters is another list it is executed using the same principles and the result is passed as a parameter to the original function. That's it. We can write real code now:
 
-```lisp
+```clojure
 (* 3 4)                 ; equivalent to pseudo-code *(3, 4).
                         ; Symbol '*' is a function
                         ; 3 and 4 are its parameters.
@@ -360,7 +360,7 @@ When a Lisp system encounters lists in the source code it acts exactly like Ant 
 
 Note that so far every list we've specified was treated by a Lisp system as code. But how can we treat a list as data? Again, imagine an Ant task that accepts XML as one of its parameters. In Lisp we do this using a quote operator _'_ like so:
 
-```lisp
+```clojure
 (set test '(1 2))       ; test is equal to a list of two integers, 1 and 2
 (set test (1 2))        ; error, 1 is not a function
 (set test '(* 3 4))     ; sets test to a list of three elements,
@@ -369,7 +369,7 @@ Note that so far every list we've specified was treated by a Lisp system as code
 
 We can use a built in function _head_ to return the first element of the list, and a built in function _tail_ to return the rest of the list's elements:
 
-```lisp
+```clojure
 (head '(* 3 4))         ; returns a symbol '*'
 (tail '(* 3 4))         ; returns a list (3 4)
 (head (tail '( * 3 4))) ; (tail '(* 3 4)) returns a list (3 4)
@@ -403,7 +403,7 @@ Let's recall our to-do list example. The XML looks like this:
 
 The corresponding s-expression version looks like this:
 
-```lisp
+```clojure
 (todo "housework"
     (item (priority high) "Clean the house.")
     (item (priority medium) "Wash the dishes.")
@@ -416,13 +416,13 @@ If we were to adopt the same approach we'd parse the files using Lisp libraries 
 
 But we can do better. Instead of writing code to walk the s-expression that stores our data we could write a macro that allows us to treat data as code! How do macros work? Pretty simple, really. Recall that a Lisp function is called like this:
 
-```lisp
+```clojure
 (function-name arg1 arg2 arg3)
 ```
 
 Where each argument is a valid Lisp expression that's evaluated and passed to the function. For example if we replace _arg1_ above with _(+ 4 5)_, it will be evaluated and _9_ would be passed to the function. A macro works the same way as a function, except its arguments are not evaluated.
 
-```lisp
+```clojure
 (macro-name (+ 4 5))
 ```
 
@@ -434,26 +434,26 @@ What benefits does this approach offer? We don't have to walk the list. The comp
 
 For example, a macro similar to our _triple_ C macro we showed earlier looks like this:
 
-```lisp
+```clojure
 (defmacro triple (x)
     '(+ ~x ~x ~x))
 ```
 
 The quote prevents evaluation while the tilde allows it. Now every time _triple_ is encountered in lisp code:
 
-```lisp
+```clojure
 (triple 4)
 ```
 
 it is replaced with the following code:
 
-```lisp
+```clojure
 (+ 4 4 4)
 ```
 
 We can create macros for our to-do list items that will get called by lisp compiler and will transform the to-do list into code. Now our to-do list will be treated as code and will be executed. Suppose all we want to do is print it to standard output for the user to read:
 
-```lisp
+```clojure
 (defmacro item (priority note)
   '(block
     (print stdout tab "Priority: "
