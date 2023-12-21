@@ -9,8 +9,6 @@ export function AsyncClLinks({ children, styled }) {
   const isDefinition = LispDocsUtils.isDefinition;
   const isDictionaryItem = LispDocsUtils.isDictionaryItem;
   
-  console.debug(LispDocsUtils.glossary());
-
   function getLispDocsLink() {
     if (typeof children === "string" && children !== null) {
       if (children.endsWith("s")) {
