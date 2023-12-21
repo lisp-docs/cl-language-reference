@@ -301,11 +301,11 @@ For details, see Section 6.1 (The LOOP Facility).
      (format t "~&The square root of ~D is ~D.~%" n (sqrt n))))) 
 → SQRT-ADVISOR 
 (sqrt-advisor) 
-▷ Number: 5*←-* 
+▷ Number: 5← 
 ▷ The square root of 5 is 2.236068. 
-▷ Number: 4*←-* 
+▷ Number: 4← 
 ▷ The square root of 4 is 2. 
-▷ Number: done*←-* 
+▷ Number: done← 
 → NIL 
 ;; An example of the extended form of LOOP. 
 (defun square-advisor () 
@@ -315,11 +315,11 @@ For details, see Section 6.1 (The LOOP Facility).
 	do (format t "~&The square of ~D is ~D.~%" n (\* n n)))) 
 → SQUARE-ADVISOR 
 (square-advisor) 
-▷ Number: 4*←-* 
+▷ Number: 4← 
 ▷ The square of 4 is 16. 
-▷ Number: 23*←-* 
+▷ Number: 23← 
 ▷ The square of 23 is 529. 
-▷ Number: done*←-* 
+▷ Number: done← 
 → NIL 
 ;; Another example of the extended form of LOOP. 
 (loop for n from 1 to 10 

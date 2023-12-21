@@ -82,7 +82,7 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is *false*, *eof-value*
 ;; interactive input on the console, and where that Newline remains 
 ;; on the input stream. 
 (test-it) 
-▷ a*←-* 
+▷ a← 
 → (#\a #\Newline NIL) 
 
 ```
