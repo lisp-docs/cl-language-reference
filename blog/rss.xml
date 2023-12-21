@@ -4,10 +4,23 @@
         <title>Common Lisp (New) Language Reference Blog</title>
         <link>https://lisp-docs.github.io/cl-language-reference/blog</link>
         <description>Common Lisp (New) Language Reference Blog</description>
-        <lastBuildDate>Sun, 17 Dec 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 21 Dec 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Update: Last Parsing of the Spec Done!]]></title>
+            <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/21/</link>
+            <guid>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/21/</guid>
+            <pubDate>Thu, 21 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is a major update. This is basically (hopefully) the last time we parsed the specification. There were a few bugs in the previous parsing which led to some missing pages because they were overwritten when multiple dictionary items shared the same name.]]></description>
+            <content:encoded><![CDATA[<p>This is a major update. This is basically (hopefully) the last time we parsed the specification. There were a few bugs in the previous parsing which led to some missing pages because they were overwritten when multiple dictionary items shared the same name.</p>
+<p>With this parsing, I fixed a bunch of other issues, so hopefully this will be the last parsing update, and from here on out it will just be manual updates to this project.</p>
+<p>So this makes it version 2.0 beta is out!</p>
+<p>Additionally, the glossary has been parsed again, and improved dramatically, so that the tooltips should now show, and have proper html rendering.</p>]]></content:encoded>
+            <category>status</category>
+            <category>dictionary-items</category>
+        </item>
         <item>
             <title><![CDATA[Update: Dictionary Items Status]]></title>
             <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/17/</link>
@@ -136,7 +149,7 @@
             <description><![CDATA[Code Blocks]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="code-blocks">Code Blocks<a href="https://lisp-docs.github.io/cl-language-reference/blog/2023/11/29/#code-blocks" class="hash-link" aria-label="Direct link to Code Blocks" title="Direct link to Code Blocks">​</a></h2>
 <p>The current status is that for some reason replacing the code with lisp formatted code blocks was failing due to regex issues.</p>
-<p><a href="https://lisp-docs.github.io/cl-language-reference/docs/code-blocks">Here are the lisp highlighted code blocks</a>.</p>
+<p>Here are the lisp highlighted code blocks. <strong>Edit:</strong> removed link.</p>
 <p>If you find any code that is not highlighted, please find the appropiate code block and replace it in the code!</p>]]></content:encoded>
             <category>status</category>
             <category>todo</category>
