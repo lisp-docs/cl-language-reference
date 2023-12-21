@@ -1,48 +1,33 @@
-**and** *Macro* 
+**and** *Macro*
 
+**Syntax:**
 
+**and** *\{form\}*\* → \{result\}\*
 
-**Syntax:** 
+**Arguments and Values:**
 
+*form*—a *form*.
 
+*results*—the *values* resulting from the evaluation of the last *form*, or the symbols **nil** or **t**.
 
-**and** *\{form\}*\* → \{result\}\* 
+**Description:**
 
+The macro **and** evaluates each *form* one at a time from left to right. As soon as any *form* evaluates to **nil**, **and** returns **nil** without evaluating the remaining *forms*. If all *forms* but the last evaluate to *true* values, **and** returns the results produced by evaluating the last *form*.
 
+If no *forms* are supplied, (and) returns **t**.
 
-**Arguments and Values:** 
+**and** passes back multiple values from the last *subform* but not from subforms other than the last.
 
+**Examples:**
 
-
-*form*—a *form*. 
-
-
-
-*results*—the *values* resulting from the evaluation of the last *form*, or the symbols **nil** or **t**. 
-
-
-
-**Description:** 
-
-
-
-The macro **and** evaluates each *form* one at a time from left to right. As soon as any *form* evaluates to **nil**, **and** returns **nil** without evaluating the remaining *forms*. If all *forms* but the last evaluate to *true* values, **and** returns the results produced by evaluating the last *form*. 
-
-
-
-If no *forms* are supplied, (and) returns **t**. 
-
-
-
-**and** passes back multiple values from the last *subform* but not from subforms other than the last. **Examples:**
 ```lisp
 
 (if (and (>= n 0) 
 
 
 
-	 (< n (length a-simple-vector)) 
-	 (eq (elt a-simple-vector n) ’foo)) 
+  (< n (length a-simple-vector)) 
+  (eq (elt a-simple-vector n) ’foo)) 
     (princ "Foo!")) 
 The above expression prints Foo! if element n of a-simple-vector is the symbol foo, provided also that n is indeed a valid index for a-simple-vector. Because **and** guarantees left-to-right testing of its parts, **elt** is not called if n is out of range. 
 (setq temp1 1 temp2 1 temp3 1) → 1 
@@ -54,23 +39,20 @@ The above expression prints Foo! if element n of a-simple-vector is the symbol f
 (and) → T 
 
 ```
-**See Also:** 
 
+**See Also:**
 
+**cond**, **every**, **if**, **or**, **when**
 
-**cond**, **every**, **if**, **or**, **when** 
+**Notes:**
 
+```lisp
+(and *form*) *≡* (let () *form*)
+(and *form1 form2* ...) *≡* (when *form1* (and *form2* ...))
+```
 
+:::info
 
-**Notes:** 
+We fixed the examples so that it uses **defparameter** to initialize the variables.  and we added a paragraph explaining why **and** must be defined as a macro, and the consequences of it being defined as a macro.
 
-
-
-(and *form*) *≡* (let () *form*) 
-
-
-
-(and *form1 form2* ...) *≡* (when *form1* (and *form2* ...)) 
-
-
-
+:::
