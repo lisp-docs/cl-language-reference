@@ -26,7 +26,9 @@ Clears any available input from *input-stream*.
 
 
 
-If **clear-input** does not make sense for *input-stream*, then **clear-input** does nothing. **Examples:**
+If **clear-input** does not make sense for *input-stream*, then **clear-input** does nothing. 
+
+**Examples:**
 ```lisp
 
 ;; The exact I/O behavior of this example might vary from implementation 

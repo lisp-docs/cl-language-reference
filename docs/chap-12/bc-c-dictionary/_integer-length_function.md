@@ -26,7 +26,9 @@
 
 
 
-Returns the number of bits needed to represent *integer* in binary two’s-complement format. **Examples:**
+Returns the number of bits needed to represent *integer* in binary two’s-complement format. 
+
+**Examples:**
 ```lisp
 
 (integer-length 0) → 0 

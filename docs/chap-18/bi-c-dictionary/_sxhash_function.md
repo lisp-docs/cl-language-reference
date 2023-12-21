@@ -66,7 +66,9 @@ Hash
 
 
 
-5\. Computation of the *hash-code* must terminate, even if the *object* contains circularities. **Examples:**
+5\. Computation of the *hash-code* must terminate, even if the *object* contains circularities. 
+
+**Examples:**
 ```lisp
 
 (= (sxhash (list ’list "ab")) (sxhash (list ’list "ab"))) → true 

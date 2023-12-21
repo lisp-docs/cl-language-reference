@@ -78,7 +78,9 @@ There are no specified keyword arguments for **translate-pathname**, but impleme
 
 
 
-**translate-pathname** maps customary case in *source* into customary case in the output *pathname*. **Examples:**
+**translate-pathname** maps customary case in *source* into customary case in the output *pathname*. 
+
+**Examples:**
 ```lisp
 
 ;; The results of the following five forms are all implementation-dependent. 

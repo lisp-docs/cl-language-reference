@@ -26,7 +26,9 @@
 
 
 
-Returns a *designator* for the offending *package* in the *situation* represented by the *condition*. **Examples:**
+Returns a *designator* for the offending *package* in the *situation* represented by the *condition*. 
+
+**Examples:**
 ```lisp
 
 (package-error-package 

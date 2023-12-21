@@ -30,7 +30,9 @@
 
 
 
-Removes the *function* or *macro* definition, if any, of *name* in the *global environment*. **Examples:**
+Removes the *function* or *macro* definition, if any, of *name* in the *global environment*. 
+
+**Examples:**
 ```lisp
 
 (defun add-some (x) (+ x 19)) → ADD-SOME 

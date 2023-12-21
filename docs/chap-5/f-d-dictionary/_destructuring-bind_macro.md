@@ -46,7 +46,9 @@
 
 
 
-The *lambda-list* supports destructuring as described in Section 3.4.5 (Destructuring Lambda Lists). **Examples:**
+The *lambda-list* supports destructuring as described in Section 3.4.5 (Destructuring Lambda Lists). 
+
+**Examples:**
 ```lisp
 
 (defun iota (n) (loop for i from 1 to n collect i)) ;helper 

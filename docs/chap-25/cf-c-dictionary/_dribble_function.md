@@ -126,7 +126,9 @@ a *form*.
 
 
 
-The *value* of **-** is the *form* that is currently being evaluated by the *Lisp read-eval-print loop*. **Examples:**
+The *value* of **-** is the *form* that is currently being evaluated by the *Lisp read-eval-print loop*. 
+
+**Examples:**
 ```lisp
 
 (format t "~&Evaluating ~S~%" -) 

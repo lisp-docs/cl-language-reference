@@ -66,7 +66,9 @@ If **sublis** succeeds, a new copy of *tree* is returned in which each occurrenc
 
 
 
-**nsublis** is permitted to modify *tree* but otherwise returns the same values as **sublis**. **Examples:**
+**nsublis** is permitted to modify *tree* but otherwise returns the same values as **sublis**. 
+
+**Examples:**
 ```lisp
 
 (sublis ’((x . 100) (z . zprime)) 

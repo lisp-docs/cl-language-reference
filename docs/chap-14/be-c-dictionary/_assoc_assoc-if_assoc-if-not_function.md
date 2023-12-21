@@ -62,7 +62,9 @@
 
 
 
-For **assoc**, **assoc-if**, and **assoc-if-not**, if **nil** appears in *alist* in place of a pair, it is ignored. **Examples:**
+For **assoc**, **assoc-if**, and **assoc-if-not**, if **nil** appears in *alist* in place of a pair, it is ignored. 
+
+**Examples:**
 ```lisp
 
 (setq values ’((x . 100) (y . 200) (z . 50))) → ((X . 100) (Y . 200) (Z . 50)) (assoc ’y values) → (Y . 200) 

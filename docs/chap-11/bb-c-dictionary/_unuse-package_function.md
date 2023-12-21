@@ -30,7 +30,9 @@
 
 
 
-Any *symbols* that have been *imported* into *package* continue to be *present* in *package*. **Examples:**
+Any *symbols* that have been *imported* into *package* continue to be *present* in *package*. 
+
+**Examples:**
 ```lisp
 
 (in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 

@@ -46,7 +46,9 @@ If the last *argument* to **list\*** is a *list*, the effect is to construct a n
 
 
 
-If **list\*** receives only one *object*, that *object* is returned, regardless of whether or not it is a *list*. **Examples:**
+If **list\*** receives only one *object*, that *object* is returned, regardless of whether or not it is a *list*. 
+
+**Examples:**
 ```lisp
 
 (list 1) → (1) 

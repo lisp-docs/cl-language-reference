@@ -34,7 +34,9 @@ Returns *true* if any of the bits designated by the 1’s in *integer-1* is 1 in
 
 
 
-Negative *integer-1* and *integer-2* are treated as if they were represented in two’s-complement binary. **Examples:**
+Negative *integer-1* and *integer-2* are treated as if they were represented in two’s-complement binary. 
+
+**Examples:**
 ```lisp
 
 (logtest 1 7) → true 

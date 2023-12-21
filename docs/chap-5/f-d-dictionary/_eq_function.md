@@ -30,7 +30,9 @@
 
 
 
-Returns *true* if its *arguments* are the same, identical *object*; otherwise, returns *false*. **Examples:**
+Returns *true* if its *arguments* are the same, identical *object*; otherwise, returns *false*. 
+
+**Examples:**
 ```lisp
 
 (eq ’a ’b) → false 

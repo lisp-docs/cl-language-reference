@@ -22,7 +22,9 @@ the COMMON-LISP-USER *package*.
 
 
 
-Whatever *package object* is currently the *value* of **\*package\*** is referred to as the *current package*. **Examples:**
+Whatever *package object* is currently the *value* of **\*package\*** is referred to as the *current package*. 
+
+**Examples:**
 ```lisp
 
 (in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 

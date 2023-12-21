@@ -54,7 +54,9 @@ If *identifier* is a *symbol*, then the innermost (most recently established) *a
 
 
 
-If *identifier* is a currently active restart, then it is returned. Otherwise, **nil** is returned. **Examples:**
+If *identifier* is a currently active restart, then it is returned. Otherwise, **nil** is returned. 
+
+**Examples:**
 ```lisp
 
 (restart-case 

@@ -38,7 +38,9 @@ If *x* is supplied, and is an *integer* , then that *integer* , instead of the *
 
 
 
-If and only if no explicit suffix is supplied, **\*gensym-counter\*** is incremented after it is used. **Examples:**
+If and only if no explicit suffix is supplied, **\*gensym-counter\*** is incremented after it is used. 
+
+**Examples:**
 ```lisp
 
 (setq sym1 (gensym)) → #:G3142 

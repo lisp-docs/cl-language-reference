@@ -26,7 +26,9 @@
 
 
 
-**array-dimension** returns the *axis-number dimension*<sub>1</sub> of *array*. (Any *fill pointer* is ignored.) **Examples:**
+**array-dimension** returns the *axis-number dimension*<sub>1</sub> of *array*. (Any *fill pointer* is ignored.) 
+
+**Examples:**
 ```lisp
 
 (array-dimension (make-array 4) 0) → 4 

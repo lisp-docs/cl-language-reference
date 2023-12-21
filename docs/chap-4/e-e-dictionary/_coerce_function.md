@@ -106,7 +106,9 @@ If the *result-type* is **function**, and *object* is a *lambda expression*, the
 
 
 
-Any *object* can be *coerced* to an *object* of *type* **t**. In this case, the *object* is simply returned. **Examples:**
+Any *object* can be *coerced* to an *object* of *type* **t**. In this case, the *object* is simply returned. 
+
+**Examples:**
 ```lisp
 
 (coerce ’(a b c) ’vector) → #(A B C)  

@@ -54,7 +54,9 @@ A *bidirectional composite stream* that receives its input from an associated *i
 
 
 
-**input-stream-p** returns *true* if *stream* is an *input stream*; otherwise, returns *false*. **output-stream-p** returns *true* if *stream* is an *output stream*; otherwise, returns *false*. **Examples:**
+**input-stream-p** returns *true* if *stream* is an *input stream*; otherwise, returns *false*. **output-stream-p** returns *true* if *stream* is an *output stream*; otherwise, returns *false*. 
+
+**Examples:**
 ```lisp
 
 (input-stream-p \*standard-input\*) → true 

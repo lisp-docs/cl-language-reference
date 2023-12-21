@@ -30,7 +30,9 @@
 
 
 
-For a binary file, the length is measured in units of the *element type* of the *stream*. **Examples:**
+For a binary file, the length is measured in units of the *element type* of the *stream*. 
+
+**Examples:**
 ```lisp
 
 (with-open-file (s "decimal-digits.text" 

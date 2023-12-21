@@ -109,7 +109,9 @@ The *values* of **/**, **//**, and **///** are updated immediately prior to prin
 
 
 
-If no appropriate and relevant result can be produced, **nil** is returned instead of a *string*. **Examples:**
+If no appropriate and relevant result can be produced, **nil** is returned instead of a *string*. 
+
+**Examples:**
 ```lisp
  
 (lisp-implementation-type) 

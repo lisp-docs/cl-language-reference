@@ -70,7 +70,9 @@ Figure 3–24 shows a list of *declaration identifiers* that can be used with **
 
 
 
-An implementation is free to support other (*implementation-defined*) *declaration identifiers* as well. **Examples:**
+An implementation is free to support other (*implementation-defined*) *declaration identifiers* as well. 
+
+**Examples:**
 ```lisp
 
 (defun nonsense (k x z) 

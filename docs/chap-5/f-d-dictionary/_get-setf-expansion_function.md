@@ -50,7 +50,9 @@ Determines five values constituting the *setf expansion* for *place* in *environ
 
 
 
-If *environment* is not supplied or **nil**, the environment is the *null lexical environment*. **Examples:**
+If *environment* is not supplied or **nil**, the environment is the *null lexical environment*. 
+
+**Examples:**
 ```lisp
 
 (get-setf-expansion ’x) 

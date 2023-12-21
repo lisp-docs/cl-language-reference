@@ -106,7 +106,9 @@ For **psetf**, if more than one *pair* is supplied then the assignments of new v
 
 
 
-For detailed treatment of the expansion of **setf** and **psetf**, see Section 5.1.2 (Kinds of Places). **Examples:**
+For detailed treatment of the expansion of **setf** and **psetf**, see Section 5.1.2 (Kinds of Places). 
+
+**Examples:**
 ```lisp
 
 (setq x (cons ’a ’b) y (list 1 2 3)) *!* (1 2 3) 

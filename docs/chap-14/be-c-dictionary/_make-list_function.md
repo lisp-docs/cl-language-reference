@@ -30,7 +30,9 @@
 
 
 
-Returns a *list* of *length* given by *size*, each of the *elements* of which is *initial-element*. **Examples:**
+Returns a *list* of *length* given by *size*, each of the *elements* of which is *initial-element*. 
+
+**Examples:**
 ```lisp
 
 (make-list 5) → (NIL NIL NIL NIL NIL) 

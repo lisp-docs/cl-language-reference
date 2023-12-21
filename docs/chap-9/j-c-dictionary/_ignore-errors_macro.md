@@ -34,7 +34,9 @@ Specifically, **ignore-errors** *executes forms* in a *dynamic environment* wher
 
 
 
-If a *normal return* from the *forms* occurs, any *values* returned are returned by **ignore-errors**. **Examples:**
+If a *normal return* from the *forms* occurs, any *values* returned are returned by **ignore-errors**. 
+
+**Examples:**
 ```lisp
 
 (defun load-init-file (program) 

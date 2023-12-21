@@ -334,7 +334,9 @@ A file can be deleted, renamed, or destructively modified by **open**.
 
 
 
-For information about opening relative pathnames, see Section 19.2.3 (Merging Pathnames). **Examples:**
+For information about opening relative pathnames, see Section 19.2.3 (Merging Pathnames). 
+
+**Examples:**
 ```lisp
 
 (open *filespec* :direction :probe) → #<Closed Probe File Stream...> 

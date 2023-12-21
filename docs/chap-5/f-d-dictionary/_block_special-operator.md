@@ -54,7 +54,9 @@ The *block* named *name* has *lexical scope* and *dynamic extent*.
 
 
 
-Once established, a *block* may only be exited once, whether by *normal return* or *explicit return*. **Examples:**
+Once established, a *block* may only be exited once, whether by *normal return* or *explicit return*. 
+
+**Examples:**
 ```lisp
 
 (block empty) → NIL 

@@ -38,7 +38,9 @@ When the *function* receives its arguments via **&amp;rest**, it is permissible 
 
 
 
-**setf** can be used with **apply** in certain circumstances; see Section 5.1.2.5 (APPLY Forms as Places). **Examples:**
+**setf** can be used with **apply** in certain circumstances; see Section 5.1.2.5 (APPLY Forms as Places). 
+
+**Examples:**
 ```lisp
 
 (setq f ’+) → + 

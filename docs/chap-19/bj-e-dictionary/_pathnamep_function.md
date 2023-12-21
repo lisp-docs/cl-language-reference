@@ -144,7 +144,9 @@ If the *pathname designator* is a *pathname*, it represents the name used to ope
 
 
 
-If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in Pathname Components). **Examples:**
+If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in Pathname Components). 
+
+**Examples:**
 ```lisp
 
 

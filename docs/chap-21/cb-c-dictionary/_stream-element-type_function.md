@@ -30,7 +30,9 @@
 
 
 
-*Streams* created by **open** have an *element type* restricted to **integer** or a *subtype* of *type* **character**. **Examples:**
+*Streams* created by **open** have an *element type* restricted to **integer** or a *subtype* of *type* **character**. 
+
+**Examples:**
 ```lisp
 
 ;; Note that the stream must accomodate at least the specified type, 

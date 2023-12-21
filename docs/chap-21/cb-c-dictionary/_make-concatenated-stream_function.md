@@ -26,7 +26,9 @@
 
 
 
-Returns a *concatenated stream* that has the indicated *input-streams* initially associated with it. **Examples:**
+Returns a *concatenated stream* that has the indicated *input-streams* initially associated with it. 
+
+**Examples:**
 ```lisp
 
 (read (make-concatenated-stream 
