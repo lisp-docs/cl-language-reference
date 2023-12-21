@@ -122,4 +122,4 @@ If characters differ in their *code attribute* or any *implementation-defined at
 
 There is no requirement that (eq c1 c2) be true merely because (char= c1 c2) is *true*. While **eq** can distinguish two *characters* that **char=** does not, it is distinguishing them not as *characters*, but in some sense on the basis of a lower level implementation characteristic. If (eq c1 c2) is *true*, then (char= c1 c2) is also true. **eql** and **equal** compare *characters* in the same way that **char=** does.
 
-The manner in which *case* is used by **char-equal**, **char-not-equal**, **char-lessp**, **char-greaterp**, **char-not-greaterp**, and **char-not-lessp** implies an ordering for *standard characters* such that `A=a`, `B=b`, and so on, up to `Z=z`, and furthermore either `9<a` `<` `div` or `z<0`.
+The manner in which *case* is used by **char-equal**, **char-not-equal**, **char-lessp**, **char-greaterp**, **char-not-greaterp**, and **char-not-lessp** implies an ordering for *standard characters* such that `A=a`, `B=b`, and so on, up to `Z=z`, and furthermore either `9<A` or `Z<0`.
