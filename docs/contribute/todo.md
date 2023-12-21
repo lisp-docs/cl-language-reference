@@ -3,6 +3,8 @@
 
 Here we will list all the To Do items we have for this project, and you can help by taking care of any of them :D.
 
+- Add `<ClLinks>` wrapping to all italic and bolded text in the specification except for that inside code blocks and in titles, to provide links and tooltips...
+
 - Add Tooltips with definitions from the glossary everywhere that is relevant
   - The best way to do it is by creating a hash table of the dictionary, and everywhere an italizaed word is present, suroound it with a React Component which will check if there's a definition for that text in the glossary and it will add a tooltip if it's relevant
   - This should probably be a react component so that it can also be used in oher Lisp Docs pages and tutorials and shared easily across projects
