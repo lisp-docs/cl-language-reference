@@ -1725,10 +1725,10 @@
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
 
-"@lisp-docs/utils@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@lisp-docs/utils/-/utils-1.2.0.tgz#7f63bb40204b170aa82dc3eb66b90dd3097c50e1"
-  integrity sha512-CzB93hfySVUrmkQJYCcjoFto589c4X8lXcUGc8B/KRnOTKuxip4CNbtfODMCFWW9uciwpueqpUvFO4Y8e3FQTg==
+"@lisp-docs/utils@^1.2.5":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@lisp-docs/utils/-/utils-1.2.5.tgz#1e0c1f4411954c34e30256f2fe98ff52423046cb"
+  integrity sha512-zmntPJbR3gjtzw8E3urYst666er7Ht8Wu5xs6sk7yGijtD/y21hwd+w/nv6aHAasLqVQp6eXhTOKwF1YM520yA==
   dependencies:
     react "^18.0.0"
     react-dom "^18.0.0"
