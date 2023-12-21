@@ -36,6 +36,7 @@ Returns *true* if *object* is of *type* **package**; otherwise, returns *false*.
 (packagep \*package\*) → true 
 (packagep ’common-lisp) → false 
 (packagep (find-package ’common-lisp)) → true 
+
 ```
 **Notes:** 
 

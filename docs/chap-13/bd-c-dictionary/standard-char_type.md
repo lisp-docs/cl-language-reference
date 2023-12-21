@@ -1,3 +1,7 @@
+---
+title: "standard-char"
+---
+
 # standard-char
 
 import StandardCharType from './_standard-char_type.md';

@@ -6,7 +6,7 @@
 
 
 
-**pprint-exit-if-list-exhausted** ⟨*no arguments*⟩ →* **nil** 
+**pprint-exit-if-list-exhausted** *⟨no arguments⟩ →* **nil** 
 
 
 

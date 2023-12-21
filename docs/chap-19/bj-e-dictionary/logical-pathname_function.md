@@ -1,3 +1,7 @@
+---
+title: "logical-pathname"
+---
+
 # logical-pathname
 
 import LogicalPathnameFunction from './_logical-pathname_function.md';

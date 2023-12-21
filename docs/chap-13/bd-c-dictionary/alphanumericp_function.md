@@ -1,3 +1,7 @@
+---
+title: "alphanumericp"
+---
+
 # alphanumericp
 
 import AlphanumericpFunction from './_alphanumericp_function.md';

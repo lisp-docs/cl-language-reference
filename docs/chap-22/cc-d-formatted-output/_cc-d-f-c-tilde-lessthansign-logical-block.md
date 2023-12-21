@@ -18,11 +18,11 @@ If the enclosed portion is divided into only two segments, the *suffix* defaults
 
 
 
-The body segment can be any arbitrary <i>format string</i>. This <i>format string</i> is applied to the elements of the list corresponding to the &#126;&lt;...&#126;:&gt; directive as a whole. Elements are extracted from this list using **pprint-pop**, thereby providing automatic support for malformed lists, and the detection of circularity, sharing, and length abbreviation. Within the body segment, &#126;<i><sup>^</sup></i> acts like **pprint-exit-if-list-exhausted**. 
+The body segment can be any arbitrary <i>format string</i>. This <i>format string</i> is applied to the elements of the list corresponding to the &#126;&lt;...&#126;:&gt; directive as a whole. Elements are extracted from this list using <b>pprint-pop</b>, thereby providing automatic support for malformed lists, and the detection of circularity, sharing, and length abbreviation. Within the body segment, &#126;<i><sup>∧</sup></i> acts like <b>pprint-exit-if-list-exhausted</b>. 
 
 
 
-&#126;&lt;...&#126;:&gt; supports a feature not supported by **pprint-logical-block**. If &#126;:@&gt; is used to terminate the directive (*i.e.*, &#126;&lt;...&#126;:@&gt;), then a fill-style conditional newline is automatically inserted after each group of blanks immediately contained in the body (except for blanks after a *hNewlinei* directive). This makes it easy to achieve the equivalent of paragraph filling. 
+&#126;&lt;...&#126;:&gt; supports a feature not supported by **pprint-logical-block**. If &#126;:@&gt; is used to terminate the directive (*i.e.*, &#126;&lt;...&#126;:@&gt;), then a fill-style conditional newline is automatically inserted after each group of blanks immediately contained in the body (except for blanks after a *⟨Newline⟩* directive). This makes it easy to achieve the equivalent of paragraph filling. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**set-pprint-dispatch** *type-specifier function* &optional *priority table →* **nil** 
+**set-pprint-dispatch** *type-specifier function* &amp;optional *priority table →* **nil** 
 
 
 

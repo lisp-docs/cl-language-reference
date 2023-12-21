@@ -1,3 +1,7 @@
+---
+title: "defstruct"
+---
+
 # defstruct
 
 import DefstructMacro from './_defstruct_macro.md';

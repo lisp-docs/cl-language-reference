@@ -24,11 +24,13 @@ the COMMON-LISP-USER *package*.
 
 Whatever *package object* is currently the *value* of **\*package\*** is referred to as the *current package*. **Examples:**
 ```lisp
+
 (in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
 \*package\* → #<PACKAGE "COMMON-LISP-USER"> 
 (make-package "SAMPLE-PACKAGE" :use ’("COMMON-LISP")) 
 → #<PACKAGE "SAMPLE-PACKAGE"> 
 (list 
+
  
  
  (symbol-package 
@@ -43,6 +45,7 @@ Whatever *package object* is currently the *value* of **\*package\*** is referre
 (eq ’foo (let ((\*package\* (find-package ’sample-package))) 
 	   (intern "FOO"))) 
 → false 
+
 ```
 **Affected By:** 
 

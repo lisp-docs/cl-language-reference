@@ -1,3 +1,7 @@
+---
+title: "write, prin1, print, pprint, princ"
+---
+
 # write, prin1, print, pprint, princ
 
 import WriteFunction from './_write_prin1_print_pprint_princ_function.md';

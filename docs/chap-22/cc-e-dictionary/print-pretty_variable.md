@@ -1,3 +1,7 @@
+---
+title: "print-pretty"
+---
+
 # \*print-pretty\*
 
 import PrintPrettyVariable from './_print-pretty_variable.md';

@@ -1,3 +1,7 @@
+---
+title: "char-int"
+---
+
 # char-int
 
 import CharIntFunction from './_char-int_function.md';

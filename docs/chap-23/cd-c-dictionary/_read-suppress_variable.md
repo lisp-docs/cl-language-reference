@@ -78,7 +78,7 @@ The ## notation always produces **nil**.
 
 
 
-No matter what the *value* of **\*read-suppress\***, parentheses still continue to delimit and construct *lists*; the #( notation continues to delimit *vectors*; and comments, *strings*, and the *single-quote* and *backquote* notations continue to be interpreted properly. Such situations as ’), #&lt;, #), and #*hSpacei* continue to signal errors. 
+No matter what the *value* of **\*read-suppress\***, parentheses still continue to delimit and construct *lists*; the #( notation continues to delimit *vectors*; and comments, *strings*, and the *single-quote* and *backquote* notations continue to be interpreted properly. Such situations as ’), #&lt;, #), and #*⟨Space⟩* continue to signal errors. 
 
 
 
@@ -91,6 +91,7 @@ No matter what the *value* of **\*read-suppress\***, parentheses still continue 
 			       "#.(PRINT ’FOO)" "#3AHELLO" "#S(INTEGER)" 
 			       "#\*ABC" "#\GARBAGE" "#RALPHA" "#3R444"))) 
 → (NIL NIL NIL NIL NIL NIL NIL NIL NIL NIL) 
+
 ```
 **See Also:** 
 

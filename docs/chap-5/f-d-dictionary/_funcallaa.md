@@ -1,1 +1,0 @@
-**funcall**, **fdefinition**, **function**, Section 3.1 (Evaluation), Section 5.1.2.5 (APPLY Forms as Places) 

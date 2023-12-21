@@ -1,3 +1,7 @@
+---
+title: "print-radix"
+---
+
 # \*print-radix\*
 
 import PrintRadixVariable from './_print-radix_variable.md';

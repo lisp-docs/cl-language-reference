@@ -1,3 +1,7 @@
+---
+title: "modules"
+---
+
 # \*modules\*
 
 import ModulesVariable from './_modules_variable.md';

@@ -33,15 +33,10 @@
 **Examples:**
 ```lisp
 
-
 ;; An implementation using ASCII character encoding 
-
 ;; might return these values: 
-
 (char-code #\$) → 36 
-
 (char-code #\a) → 97 
-
 
 ```
 **Exceptional Situations:** 

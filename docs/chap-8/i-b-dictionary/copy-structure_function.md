@@ -1,3 +1,7 @@
+---
+title: "copy-structure"
+---
+
 # copy-structure
 
 import CopyStructureFunction from './_copy-structure_function.md';

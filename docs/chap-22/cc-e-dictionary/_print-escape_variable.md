@@ -37,25 +37,15 @@ For more specific details of how the *value* of **\*print-escape\*** affects the
 **Examples:**
 ```lisp
 
-
 (let ((\*print-escape\* t)) (write #\a)) 
 
 
 
-
-
-
-
 ▷ #\a 
-
 → #\a 
-
 (let ((\*print-escape\* nil)) (write #\a)) 
-
 ▷ a 
-
 → #\a 
-
 
 ```
 **Affected By:** 

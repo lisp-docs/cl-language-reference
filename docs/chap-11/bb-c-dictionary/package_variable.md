@@ -1,3 +1,7 @@
+---
+title: "package"
+---
+
 # \*package\*
 
 import PackageVariable from './_package_variable.md';

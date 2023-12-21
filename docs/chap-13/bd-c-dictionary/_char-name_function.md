@@ -34,47 +34,28 @@ All *non-graphic* characters are required to have *names* unless they have some 
 
 
 
-The *standard characters hNewlinei* and *hSpacei* have the respective names "Newline" and "Space". The *semi-standard characters hTabi*, *hPagei*, *hRubouti*, *hLinefeedi*, *hReturni*, and *hBackspacei* (if they are supported by the *implementation*) have the respective names "Tab", "Page", "Rubout", "Linefeed", "Return", and "Backspace" (in the indicated case, even though name lookup by “#\” and by the *function* **name-char** is not case sensitive). 
+The *standard characters ⟨Newline⟩* and *⟨Space⟩* have the respective names "Newline" and "Space". The *semi-standard characters ⟨Tab⟩*, *⟨Page⟩*, *⟨Rubout⟩*, *⟨Linefeed⟩*, *⟨Return⟩*, and *⟨Backspace⟩* (if they are supported by the *implementation*) have the respective names "Tab", "Page", "Rubout", "Linefeed", "Return", and "Backspace" (in the indicated case, even though name lookup by “#\” and by the *function* **name-char** is not case sensitive). 
 
 
 
 **Examples:**
 ```lisp
 
-
 (char-name #\ ) → "Space" 
-
 (char-name #\Space) → "Space" 
-
 (char-name #\Page) → "Page" 
-
 (char-name #\a) 
-
 → NIL 
-
 <i><sup>or</sup>→</i> "LOWERCASE-a" 
-
 <i><sup>or</sup>→</i> "Small-A" 
-
 <i><sup>or</sup>→</i> "LA01" 
-
 (char-name #\A) 
-
 → NIL 
-
 <i><sup>or</sup>→</i> "UPPERCASE-A" 
-
 <i><sup>or</sup>→</i> "Capital-A" 
-
 <i><sup>or</sup>→</i> "LA02" 
-
 ;; Even though its CHAR-NAME can vary, #\A prints as #\A 
-
 (prin1-to-string (read-from-string (format nil "#\\~A" (or (char-name #\A) "A")))) → "#\\A" 
-
-
-
-
 
 
 

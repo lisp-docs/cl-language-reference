@@ -1,3 +1,7 @@
+---
+title: "print-not-readable"
+---
+
 # print-not-readable
 
 import PrintNotReadableConditionType from './_print-not-readable_condition-type.md';

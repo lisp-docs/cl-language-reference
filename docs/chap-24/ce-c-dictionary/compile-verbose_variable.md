@@ -1,3 +1,7 @@
+---
+title: "compile-verbose"
+---
+
 # \*compile-verbose\*
 
 import CompileVerboseVariable from './_compile-verbose_variable.md';

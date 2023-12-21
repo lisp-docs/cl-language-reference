@@ -1,3 +1,7 @@
+---
+title: "print-unreadable-object"
+---
+
 # print-unreadable-object
 
 import PrintUnreadableObjectMacro from './_print-unreadable-object_macro.md';

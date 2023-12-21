@@ -1,3 +1,7 @@
+---
+title: "print-lines"
+---
+
 # \*print-lines\*
 
 import PrintLinesVariable from './_print-lines_variable.md';

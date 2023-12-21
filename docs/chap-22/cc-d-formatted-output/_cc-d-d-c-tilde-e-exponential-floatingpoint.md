@@ -46,7 +46,7 @@ If the parameter *e* is omitted, then the exponent is printed using the smallest
 
 
 
-If all of <i>w</i>, <i>d</i>, and <i>e</i> are omitted, then the effect is to print the value using ordinary free-format exponential-notation output; **prin1** uses a similar format for any non-zero number whose magnitude is less than 10<sup><i>−</i>3</sup> or greater than or equal to 10<sup>7</sup>. The only difference is that the &#126;E directive always prints a plus or minus sign in front of the exponent, while **prin1** omits the plus sign if the exponent is non-negative. 
+If all of <i>w</i>, <i>d</i>, and <i>e</i> are omitted, then the effect is to print the value using ordinary free-format exponential-notation output; <b>prin1</b> uses a similar format for any non-zero number whose magnitude is less than 10<sup><i>−</i>3</sup> or greater than or equal to 10<sup>7</sup>. The only difference is that the &#126;E directive always prints a plus or minus sign in front of the exponent, while <b>prin1</b> omits the plus sign if the exponent is non-negative. 
 
 
 

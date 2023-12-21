@@ -104,6 +104,7 @@ Data and Control
 
 **Examples:**
 ```lisp
+
 (defun recur (x) 
   (when (> x 0) 
     (recur (1- x)))) → RECUR 
@@ -129,6 +130,7 @@ Data and Control
 (locally (declare (number a b c)) 
   (- (\* b b) (\* 4 a c)))) → CAREFUL-DISCRIMINANT 
 (careful-discriminant 1 2/3 -2) → 76/9 
+
 ```
 **See Also:** 
 

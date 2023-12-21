@@ -1,3 +1,7 @@
+---
+title: "with-open-file"
+---
+
 # with-open-file
 
 import WithOpenFilemacro from './_with-open-file_macro.md';

@@ -1,3 +1,7 @@
+---
+title: "standard-char-p"
+---
+
 # standard-char-p
 
 import StandardCharPFunction from './_standard-char-p_function.md';

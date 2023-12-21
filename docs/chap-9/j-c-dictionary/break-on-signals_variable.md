@@ -1,3 +1,7 @@
+---
+title: "break-on-signals"
+---
+
 # \*break-on-signals\*
 
 import BreakOnSignalsVariable from './_break-on-signals_variable.md';

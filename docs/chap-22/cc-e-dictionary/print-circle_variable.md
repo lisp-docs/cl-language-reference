@@ -1,3 +1,7 @@
+---
+title: "print-circle"
+---
+
 # \*print-circle\*
 
 import PrintCircleVariable from './_print-circle_variable.md';

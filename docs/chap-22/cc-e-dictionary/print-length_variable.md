@@ -1,3 +1,7 @@
+---
+title: "print-length"
+---
+
 # \*print-length\*
 
 import PrintLengthVariable from './_print-length_variable.md';

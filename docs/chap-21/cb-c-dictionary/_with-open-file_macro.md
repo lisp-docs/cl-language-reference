@@ -6,7 +6,7 @@
 
 
 
-**with-open-file** (*stream filespec \&#123;options\&#125;*\*) *\&#123;declaration\&#125;*\* *\&#123;form\&#125;*\* 
+**with-open-file** (*stream filespec \{options\}*\*) *\{declaration\}*\* *\{form\}*\* 
 
 
 
@@ -88,8 +88,9 @@ The consequences are undefined if an attempt is made to *assign* the *stream var
 
 **Examples:**
 ```lisp
+
 (setq p (merge-pathnames "test")) 
-→ #\<PATHNAME :HOST NIL :DEVICE *device-name* :DIRECTORY *directory-name* 
+→ #<PATHNAME :HOST NIL :DEVICE *device-name* :DIRECTORY *directory-name* 
 :NAME "test" :TYPE NIL :VERSION :NEWEST> 
 (with-open-file (s p :direction :output :if-exists :supersede) 
   (format s "Here are a couple~%of test data lines~%")) → NIL 
@@ -110,6 +111,7 @@ The consequences are undefined if an attempt is made to *assign* the *stream var
 ;; Here’s another bug to avoid... 
 (with-open-file (foo "no-such-file" :direction :output :if-does-not-exist nil) (format foo "Hello")) 
 → "Hello" ;FORMAT got an argument of NIL! 
+
 ```
 **Side Effects:** 
 
@@ -151,3 +153,4 @@ See the *function* **open**.
 
 
 
+**open**, **close**, **pathname**, **logical-pathname**, Section 19.1.2 (Pathnames as Filenames) 

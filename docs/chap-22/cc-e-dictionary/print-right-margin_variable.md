@@ -1,3 +1,7 @@
+---
+title: "print-right-margin"
+---
+
 # \*print-right-margin\*
 
 import PrintRightMarginVariable from './_print-right-margin_variable.md';

@@ -45,19 +45,12 @@ Returns the *character* denoted by the *character designator* .
 **Examples:**
 ```lisp
 
-
 (character #\a) → #\a 
-
 (character "a") → #\a 
-
 (character ’a) → #\A 
-
 (character ’\a) → #\a 
-
 (character 65.) is an error. 
-
 (character ’apple) is an error. 
-
 
 ```
 **Exceptional Situations:** 

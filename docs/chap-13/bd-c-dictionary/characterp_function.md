@@ -1,3 +1,7 @@
+---
+title: "characterp"
+---
+
 # characterp
 
 import CharacterpFunction from './_characterp_function.md';

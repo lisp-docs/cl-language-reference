@@ -1,3 +1,7 @@
+---
+title: "char-upcase, char-downcase"
+---
+
 # char-upcase, char-downcase
 
 import CharUpcaseFunction from './_char-upcase_char-downcase_function.md';

@@ -1,3 +1,7 @@
+---
+title: "with-output-to-string"
+---
+
 # with-output-to-string
 
 import WithOutputToStringMacro from './_with-output-to-string_macro.md';

@@ -1,3 +1,7 @@
+---
+title: "load-verbose"
+---
+
 # \*load-verbose\*
 
 import LoadVerboseVariable from './_load-verbose_variable.md';

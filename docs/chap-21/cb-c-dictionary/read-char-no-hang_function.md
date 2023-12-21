@@ -1,3 +1,7 @@
+---
+title: "read-char-no-hang"
+---
+
 # read-char-no-hang
 
 import ReadCharNoHangFunction from './_read-char-no-hang_function.md';

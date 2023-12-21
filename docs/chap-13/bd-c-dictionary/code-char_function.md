@@ -1,3 +1,7 @@
+---
+title: "code-char"
+---
+
 # code-char
 
 import CodeCharFunction from './_code-char_function.md';

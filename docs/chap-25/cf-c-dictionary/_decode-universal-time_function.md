@@ -10,7 +10,7 @@
 
 
 
-→ second, minute, hour, date, month, year, day, daylight-p, zone 
+*→ second, minute, hour, date, month, year, day, daylight-p, zone* 
 
 
 
@@ -56,6 +56,7 @@ If *time-zone* is not supplied, it defaults to the current time zone adjusted fo
 	(a (nthcdr 7 (multiple-value-list (decode-universal-time recently)))) 
 	(b (nthcdr 7 (multiple-value-list (decode-universal-time recently here))))) 
        (list a b (equal a b))) → ((T 5) (NIL 5) NIL) 
+
 ```
 **Affected By:** 
 

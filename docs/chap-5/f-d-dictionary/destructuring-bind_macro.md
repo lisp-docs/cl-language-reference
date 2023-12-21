@@ -1,3 +1,7 @@
+---
+title: "destructuring-bind"
+---
+
 # destructuring-bind
 
 import DestructuringBindMacro from './_destructuring-bind_macro.md';

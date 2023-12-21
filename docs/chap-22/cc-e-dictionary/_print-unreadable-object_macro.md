@@ -61,21 +61,13 @@ If either *type* or *identity* is not supplied, its value is *false*. It is vali
 **Examples:**
 ```lisp
 
-
 ;; Note that in this example, the precise form of the output ;; is *implementation-dependent*. 
-
 (defmethod print-object ((obj airplane) stream) 
-
     (print-unreadable-object (obj stream :type t :identity t) 
-
       (princ (tail-number obj) stream))) 
-
 (prin1-to-string my-airplane) 
-
-→ "#\<Airplane NW0773 36000123135\>" 
-
-<i><sup>or</sup>→</i> "#\<FAA:AIRPLANE NW0773 17\>" 
-
+→ "#<Airplane NW0773 36000123135>" 
+<i><sup>or</sup>→</i> "#<FAA:AIRPLANE NW0773 17>" 
 
 ```
 **Exceptional Situations:** 

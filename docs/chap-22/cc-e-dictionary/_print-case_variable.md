@@ -33,51 +33,28 @@ The *value* of **\*print-case\*** controls the case (upper, lower, or mixed) in 
 **Examples:**
 ```lisp
 
-
 (defun test-print-case () 
-
   (dolist (\*print-case\* ’(:upcase :downcase :capitalize)) 
-
     (format t "~&~S ~S~%" ’this-and-that ’|And-something-elSE|))) 
-
 → TEST-PC 
-
 ;; Although the choice of which characters to escape is specified by 
-
 ;; \*PRINT-CASE\*, the choice of how to escape those characters 
-
 ;; (i.e., whether single escapes or multiple escapes are used) 
-
 ;; is implementation-dependent. The examples here show two of the 
-
 ;; many valid ways in which escaping might appear. 
 
 
 
-
-
-
-
 (test-print-case) ;Implementation A 
-
 ▷ THIS-AND-THAT |And-something-elSE| 
-
 ▷ this-and-that a\n\d-\s\o\m\e\t\h\i\n\g-\e\lse 
-
 ▷ This-And-That A\n\d-\s\o\m\e\t\h\i\n\g-\e\lse 
-
 → NIL 
-
 (test-print-case) ;Implementation B 
-
 ▷ THIS-AND-THAT |And-something-elSE| 
-
 ▷ this-and-that a|nd-something-el|se 
-
 ▷ This-And-That A|nd-something-el|se 
-
 → NIL 
-
 
 ```
 **See Also:** 

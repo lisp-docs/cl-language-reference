@@ -1,3 +1,7 @@
+---
+title: "decode-universal-time"
+---
+
 # decode-universal-time
 
 import DecodeUniversalTimeFunction from './_decode-universal-time_function.md';

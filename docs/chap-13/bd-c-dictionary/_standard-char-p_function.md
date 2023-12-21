@@ -33,17 +33,11 @@ Returns *true* if *character* is of *type* **standard-char**; otherwise, returns
 **Examples:**
 ```lisp
 
-
 (standard-char-p #\Space) → true 
-
 (standard-char-p #\~) → true 
-
 ;; This next example presupposes an implementation 
-
 ;; in which #\Bell is a defined character. 
-
 (standard-char-p #\Bell) → false 
-
 
 ```
 **Exceptional Situations:** 

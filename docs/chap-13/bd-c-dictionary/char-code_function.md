@@ -1,3 +1,7 @@
+---
+title: "char-code"
+---
+
 # char-code
 
 import CharCodeFunction from './_char-code_function.md';

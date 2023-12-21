@@ -1,3 +1,7 @@
+---
+title: "stream-external-format"
+---
+
 # stream-external-format
 
 import StreamExternalFormatFunction from './_stream-external-format_function.md';

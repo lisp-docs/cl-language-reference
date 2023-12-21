@@ -55,6 +55,8 @@ The *lambda-list* supports destructuring as described in Section 3.4.5 (Destruct
   (list a b three two one)) → (ALPHA BEE 3 2 1) 
 Data and Control 
 
+
+
 ```
 **Exceptional Situations:** 
 

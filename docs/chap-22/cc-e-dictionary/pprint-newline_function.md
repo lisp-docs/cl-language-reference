@@ -1,3 +1,7 @@
+---
+title: "pprint-newline"
+---
+
 # pprint-newline
 
 import PprintNewlineFunction from './_pprint-newline_function.md';

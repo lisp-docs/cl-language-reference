@@ -6,7 +6,7 @@
 
 
 
-**pprint-pop** ⟨*no arguments*⟩ → object* 
+**pprint-pop** *⟨no arguments⟩ → object* 
 
 
 

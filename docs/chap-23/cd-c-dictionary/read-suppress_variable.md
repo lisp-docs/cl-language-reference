@@ -1,3 +1,7 @@
+---
+title: "read-suppress"
+---
+
 # \*read-suppress\*
 
 import ReadSuppressVariable from './_read-suppress_variable.md';

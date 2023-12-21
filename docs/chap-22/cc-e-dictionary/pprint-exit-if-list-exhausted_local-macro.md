@@ -1,3 +1,7 @@
+---
+title: "pprint-exit-if-list-exhausted"
+---
+
 # pprint-exit-if-list-exhausted
 
 import PprintExitIfListExhaustedLocalMacro from './_pprint-exit-if-list-exhausted_local-macro.md';

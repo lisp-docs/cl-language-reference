@@ -1,3 +1,7 @@
+---
+title: "char-code-limit"
+---
+
 # char-code-limit
 
 import CharCodeLimitConstantVariable from './_char-code-limit_constant-variable.md';

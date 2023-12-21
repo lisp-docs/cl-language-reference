@@ -1,3 +1,7 @@
+---
+title: "format"
+---
+
 # format
 
 import FormatFunction from './_format_function.md';

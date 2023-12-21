@@ -1,3 +1,7 @@
+---
+title: "encode-universal-time"
+---
+
 # encode-universal-time
 
 import EncodeUniversalTimefunction from './_encode-universal-time_function.md';

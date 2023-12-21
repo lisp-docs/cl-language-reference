@@ -68,9 +68,11 @@ For a *stream* created with **make-string-output-stream**, the result of **get-o
 
 **Examples:**
 ```lisp
+
 (setq s (make-broadcast-stream)) → #<BROADCAST-STREAM> 
 (close s) → T 
 (output-stream-p s) → true 
+
 ```
 **Side Effects:** 
 

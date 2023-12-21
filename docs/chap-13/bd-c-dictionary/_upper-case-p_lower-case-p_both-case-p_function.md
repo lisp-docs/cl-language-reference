@@ -41,28 +41,15 @@ These functions test the case of a given *character*.
 **upper-case-p** returns *true* if *character* is an *uppercase character* ; otherwise, returns *false*. **lower-case-p** returns *true* if *character* is a *lowercase character* ; otherwise, returns *false*. **both-case-p** returns *true* if *character* is a *character* with *case*; otherwise, returns *false*. **Examples:**
 ```lisp
 
-
 (upper-case-p #\A) → true 
-
 (upper-case-p #\a) → false 
-
 (both-case-p #\a) → true 
-
 (both-case-p #\5) → false 
-
 (lower-case-p #\5) → false 
-
 (upper-case-p #\5) → false 
-
 ;; This next example presupposes an implementation 
-
 ;; in which #\Bell is an implementation-defined character. 
-
 (lower-case-p #\Bell) → false 
-
-
-
-
 
 
 

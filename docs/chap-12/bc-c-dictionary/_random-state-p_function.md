@@ -36,6 +36,7 @@ Returns *true* if *object* is of *type* **random-state**; otherwise, returns *fa
 (random-state-p \*random-state\*) → true 
 (random-state-p (make-random-state)) → true 
 (random-state-p ’test-function) → false 
+
 ```
 **See Also:** 
 

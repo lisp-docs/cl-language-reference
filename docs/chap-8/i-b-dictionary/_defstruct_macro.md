@@ -1269,241 +1269,123 @@ If a **defstruct** *form* appears as a *top level form*, the *compiler* must mak
 **Examples:**
 ```lisp
 
-
 An example of a structure definition follows: 
-
 (defstruct ship 
-
   x-position 
-
   y-position 
-
   x-velocity 
-
   y-velocity 
-
   mass) 
-
 This declares that every ship is an *object* with five named components. The evaluation of this form does the following: 
-
 1\. It defines ship-x-position to be a function of one argument, a ship, that returns the x-position of the ship; ship-y-position and the other components are given similar function definitions. These functions are called the *access* functions, as they are used to *access* elements of the structure. 
-
 2\. ship becomes the name of a *type* of which instances of ships are elements. ship becomes acceptable to **typep**, for example; (typep x ’ship) is *true* if x is a ship and false if x is any *object* other than a ship. 
-
 3\. A function named ship-p of one argument is defined; it is a predicate that is *true* if its argument is a ship and is *false* otherwise. 
-
 4\. A function called make-ship is defined that, when invoked, creates a data structure with five components, suitable for use with the *access* functions. Thus executing 
-
 (setq ship2 (make-ship)) 
-
 sets ship2 to a newly created ship *object*. One can supply the initial values of any desired 
 
 
-
-
-
 **defstruct** 
-
 component in the call to make-ship by using keyword arguments in this way: 
-
 (setq ship2 (make-ship :mass \*default-ship-mass\* 
-
 		       :x-position 0 
-
 		       :y-position 0)) 
-
 This constructs a new ship and initializes three of its components. This function is called the “constructor function” because it constructs a new structure. 
-
 5\. A function called copy-ship of one argument is defined that, when given a ship *object*, creates a new ship *object* that is a copy of the given one. This function is called the “copier function.” 
-
 **setf** can be used to alter the components of a ship: 
-
 (setf (ship-x-position ship2) 100) 
-
 This alters the x-position of ship2 to be 100. This works because **defstruct** behaves as if it generates an appropriate **defsetf** for each *access* function. 
-
 ;;; 
-
 ;;; Example 1 
-
 ;;; define town structure type 
-
 ;;; area, watertowers, firetrucks, population, elevation are its components 
-
 ;;; 
-
 (defstruct town 
-
   area 
-
   watertowers 
-
   (firetrucks 1 :type fixnum) ;an initialized slot 
-
   population 
-
   (elevation 5128 :read-only t)) ;a slot that can’t be changed 
-
 → TOWN 
-
 					;create a town instance 
-
 (setq town1 (make-town :area 0 :watertowers 0)) → #S(TOWN...) 
-
 					;town’s predicate recognizes the new instance 
-
 (town-p town1) → true 
-
 					;new town’s area is as specified by make-town 
-
 (town-area town1) → 0 
-
 					;new town’s elevation has initial value 
-
 (town-elevation town1) → 5128 
-
 					;setf recognizes reader function 
-
 (setf (town-population town1) 99) → 99 
-
 (town-population town1) → 99 
-
 					;copier function makes a copy of town1 
-
 (setq town2 (copy-town town1)) → #S(TOWN...) 
-
 (= (town-population town1) (town-population town2)) → true 
-
 					;since elevation is a read-only slot, its value can be set only 
 
 
 
-
-
-
-
 **defstruct** 
-
 					;when the structure is created 
-
 (setq town3 (make-town :area 0 :watertowers 3 :elevation 1200)) → #S(TOWN...) 
-
 ;;; 
-
 ;;; Example 2 
-
 ;;; define clown structure type 
-
 ;;; this structure uses a nonstandard prefix 
-
 ;;; 
-
 (defstruct (clown (:conc-name bozo-)) 
-
   (nose-color ’red) 
-
   frizzy-hair-p polkadots) → CLOWN 
-
 (setq funny-clown (make-clown)) → #S(CLOWN) 
-
 					;use non-default reader name 
-
 (bozo-nose-color funny-clown) → RED 
-
 (defstruct (klown (:constructor make-up-klown) ;similar def using other (:copier clone-klown) ;customizing keywords 
-
 		  (:predicate is-a-bozo-p)) 
-
   nose-color frizzy-hair-p polkadots) → klown 
-
 					;custom constructor now exists 
-
 (fboundp ’make-up-klown) → true 
-
 ;;; 
-
 ;;; Example 3 
-
 ;;; define a vehicle structure type 
-
 ;;; then define a truck structure type that includes 
-
 ;;; the vehicle structure 
-
 ;;; 
-
 (defstruct vehicle name year (diesel t :read-only t)) → VEHICLE (defstruct (truck (:include vehicle (year 79))) 
-
-								  load-limit 
-
-								  (axles 6)) → TRUCK 
-
+								    load-limit 
+								    (axles 6)) → TRUCK 
 (setq x (make-truck :name ’mac :diesel t :load-limit 17)) 
-
 → #S(TRUCK...) 
-
 					;vehicle readers work on trucks 
-
 (vehicle-name x) 
-
 → MAC 
-
 					;default taken from :include clause 
-
 (vehicle-year x) 
-
 → 79 
-
 (defstruct (pickup (:include truck)) ;pickup type includes truck camper long-bed four-wheel-drive) → PICKUP 
-
   (setq x (make-pickup :name ’king :long-bed t)) → #S(PICKUP...) ;:include default inherited 
-
   (pickup-year x) → 79 
-
 ;;; 
-
 ;;; Example 4 
 
-
-
   
-
   
-
 ;;; use of BOA constructors 
-
 ;;; 
-
   (defstruct (dfs-boa ;BOA constructors 
-
 	       (:constructor make-dfs-boa (a b c)) 
-
 	       (:constructor create-dfs-boa 
-
 			     (a &optional b (c ’cc) &rest d &aux e (f ’ff)))) 
-
     a b c d e f) → DFS-BOA 
-
 					;a, b, and c set by position, and the rest are uninitialized 
-
   (setq x (make-dfs-boa 1 2 3)) → #(DFS-BOA...) 
-
   (dfs-boa-a x) → 1 
-
 					;a and b set, c and f defaulted 
-
   (setq x (create-dfs-boa 1 2)) → #(DFS-BOA...) 
-
   (dfs-boa-b x) → 2 
-
   (eq (dfs-boa-c x) ’cc) → true 
-
 					;a, b, and c set, and the rest are collected into d 
-
   (setq x (create-dfs-boa 1 2 3 4 5 6)) → #(DFS-BOA...) 
-
   (dfs-boa-d x) → (4 5 6) 
-
 
 ```
 **Exceptional Situations:** 

@@ -1,3 +1,7 @@
+---
+title: "extended-char"
+---
+
 # extended-char
 
 import ExtendedCharType from './_extended-char_type.md';

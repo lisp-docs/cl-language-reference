@@ -6,7 +6,7 @@ If no *arguments* are permitted, or no *values* are returned, a special notation
 
 
 
-**F** ⟨*no arguments*⟩ → hno valuesi* 
+**F** *⟨no arguments⟩ → ⟨no values⟩* 
 
 
 

@@ -1,3 +1,7 @@
+---
+title: "print-object"
+---
+
 # print-object
 
 import PrintObjectStandardGenericFunction from './_print-object_standard-generic-function.md';

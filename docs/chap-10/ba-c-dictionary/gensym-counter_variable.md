@@ -1,3 +1,7 @@
+---
+title: "gensym-counter"
+---
+
 # \*gensym-counter\*
 
 import GensymCounterVariable from './_gensym-counter_variable.md';

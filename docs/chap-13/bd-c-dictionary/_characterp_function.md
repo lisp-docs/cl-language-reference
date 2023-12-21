@@ -33,26 +33,14 @@ Returns *true* if *object* is of *type* **character**; otherwise, returns *false
 **Examples:**
 ```lisp
 
-
 (characterp #\a) → true 
-
 (characterp ’a) → false 
-
 (characterp "a") → false 
-
 (characterp 65.) → false 
-
 (characterp #\Newline) → true 
-
 ;; This next example presupposes an implementation 
-
 ;; in which #\Rubout is an implementation-defined character. 
-
 (characterp #\Rubout) → true 
-
-
-
-
 
 
 

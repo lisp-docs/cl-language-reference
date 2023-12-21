@@ -1,3 +1,7 @@
+---
+title: "print-not-readable-object"
+---
+
 # print-not-readable-object
 
 import PrintNotReadableObjectFunction from './_print-not-readable-object_function.md';

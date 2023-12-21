@@ -1,3 +1,7 @@
+---
+title: "packagep"
+---
+
 # packagep
 
 import PackagepFunction from './_packagep_function.md';

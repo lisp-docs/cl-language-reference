@@ -1,3 +1,7 @@
+---
+title: "base-char"
+---
+
 # base-char
 
 import BaseCharType from './_base-char_type.md';

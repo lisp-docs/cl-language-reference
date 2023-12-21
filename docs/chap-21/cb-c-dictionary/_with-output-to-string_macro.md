@@ -99,6 +99,7 @@ The consequences are undefined if an attempt is made to *assign* the *variable v
 (format s "here’s some output") 
 (input-stream-p s)) → false 
 fstr → "here’s some output" 
+
 ```
 **Side Effects:** 
 
@@ -132,7 +133,7 @@ The consequences are undefined if destructive modifications are performed direct
 
 
 
-**make-string-output-stream**, **vector-push-extend**, Section 3.6 (Traversal Rules and Side Effects) <sup><i>∗</i>**debug-io**<i>∗</i>**,** <i>∗</i>**error-output**<i>∗</i>**,** <i>∗</i>**query-io**<i>∗</i>**,** <i>∗</i>**standard**</sup> input<i>∗</i>**,** <i>∗</i>**standard-output**<i>∗</i>**,** <i>∗</i>**trace-output**<i>∗ Variable</i> 
+<b>make-string-output-stream</b>, <b>vector-push-extend</b>, Section 3.6 (Traversal Rules and Side Effects) <sup><i>∗</i><b>debug-io</b><i>∗</i><b>,</b> <i>∗</i><b>error-output</b><i>∗</i><b>,</b> <i>∗</i><b>query-io</b><i>∗</i><b>,</b> <i>∗</i><b>standard</b></sup> input<i>∗</i><b>,</b> <i>∗</i><b>standard-output</b><i>∗</i><b>,</b> <i>∗</i><b>trace-output</b><i>∗ Variable</i> 
 
 
 
@@ -239,6 +240,7 @@ out
 | 3 Exit FACT 1 
 | 2 Exit FACT 2 
 1 Exit FACT 6" 
+
 ```
 **See Also:** 
 

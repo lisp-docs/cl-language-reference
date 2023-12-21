@@ -6,7 +6,7 @@ To allow implementors and future Common Lisp standards to extend the syntax of n
 
 
 
-1\. The <i>token</i> consists entirely of <i>digits</i>, <i>signs</i>, <i>ratio markers</i>, decimal points (.), extension characters (<i><sup>^</sup></i> or ), and number markers. A number marker is a letter. Whether a letter may be treated as a number marker depends on context, but no letter that is adjacent to another letter may ever be treated as a number marker. <i>Exponent markers</i> are number markers. 
+1\. The <i>token</i> consists entirely of <i>digits</i>, <i>signs</i>, <i>ratio markers</i>, decimal points (.), extension characters (<i><sup>∧</sup></i> or ), and number markers. A number marker is a letter. Whether a letter may be treated as a number marker depends on context, but no letter that is adjacent to another letter may ever be treated as a number marker. <i>Exponent markers</i> are number markers. 
 
 
 
@@ -14,7 +14,7 @@ To allow implementors and future Common Lisp standards to extend the syntax of n
 
 
 
-3\. The <i>token</i> begins with a <i>digit</i>, <i>sign</i>, decimal point, or extension character, but not a <i>package marker</i> . The syntax involving a leading <i>package marker</i> followed by a <i>potential number</i> is not well-defined. The consequences of the use of notation such as :1, :1/2, and :2<i><sup>^</sup></i>3 in a position where an expression appropriate for **read** is expected are unspecified.  
+3\. The <i>token</i> begins with a <i>digit</i>, <i>sign</i>, decimal point, or extension character, but not a <i>package marker</i> . The syntax involving a leading <i>package marker</i> followed by a <i>potential number</i> is not well-defined. The consequences of the use of notation such as :1, :1/2, and :2<i><sup>∧</sup></i>3 in a position where an expression appropriate for <b>read</b> is expected are unspecified.  
 
 
 

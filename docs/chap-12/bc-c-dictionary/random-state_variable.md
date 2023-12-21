@@ -1,3 +1,7 @@
+---
+title: "random-state"
+---
+
 # \*random-state\*
 
 import RandomStateVariable from './_random-state_variable.md';

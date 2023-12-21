@@ -1,3 +1,7 @@
+---
+title: "copy-list"
+---
+
 # copy-list
 
 import CopyListFunction from './_copy-list_function.md';

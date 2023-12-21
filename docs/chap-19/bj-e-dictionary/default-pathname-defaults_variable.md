@@ -1,3 +1,7 @@
+---
+title: "default-pathname-defaults"
+---
+
 # \*default-pathname-defaults\*
 
 import DefaultPathnameDefaultsVariable from './_default-pathname-defaults_variable.md';

@@ -1,3 +1,7 @@
+---
+title: "terminal-io"
+---
+
 # \*terminal-io\*
 
 import TerminalIoVariable from './_terminal-io_variable.md';

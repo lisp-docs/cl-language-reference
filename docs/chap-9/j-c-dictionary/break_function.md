@@ -1,3 +1,7 @@
+---
+title: "break"
+---
+
 # break
 
 import BreakFunction from './_break_function.md';

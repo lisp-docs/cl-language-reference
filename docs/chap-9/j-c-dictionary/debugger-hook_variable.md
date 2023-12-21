@@ -1,3 +1,7 @@
+---
+title: "debugger-hook"
+---
+
 # \*debugger-hook\*
 
 import DebuggerHookVariable from './_debugger-hook_variable.md';

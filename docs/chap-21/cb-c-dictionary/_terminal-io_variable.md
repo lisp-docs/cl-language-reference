@@ -32,7 +32,10 @@ The effect of changing the *value* of **\*terminal-io\***, either by *binding* o
 
 **Examples:**
 ```lisp
+
 (progn (prin1 ’foo) (prin1 ’bar \*terminal-io\*)) 
+
+
 
 ▷ FOOBAR 
 → BAR 
@@ -41,8 +44,37 @@ The effect of changing the *value* of **\*terminal-io\***, either by *binding* o
   (prin1 ’bar \*terminal-io\*)) 
 ▷ BAR 
 → "FOO" 
+
 ```
 **See Also:** 
+
+
+
+**\*debug-io\***, **\*error-output\***, **\*query-io\***, **\*standard-input\***, **\*standard-output\***, **\*trace-output\* stream-error** *Condition Type* 
+
+
+
+**Class Precedence List:** 
+
+
+
+**stream-error**, **error**, **serious-condition**, **condition**, **t** 
+
+
+
+**Description:** 
+
+
+
+The *type* **stream-error** consists of error conditions that are related to receiving input from or sending output to a *stream*. The “offending stream” is initialized by the :stream initialization argument to **make-condition**, and is *accessed* by the *function* **stream-error-stream**. 
+
+
+
+**See Also:** 
+
+
+
+**stream-error-stream** 
 
 
 

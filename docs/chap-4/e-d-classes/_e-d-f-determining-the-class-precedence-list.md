@@ -14,7 +14,7 @@ A *class* precedes its direct *superclasses*, and a direct *superclass* precedes
 
 
 
-where <i>C</i><sub>1</sub><i>, . . . , C<sub>n</sub></i> are the direct <i>superclasses</i> of <i>C</i> in the order in which they are mentioned in the **defclass** form. These ordered pairs generate the total ordering on the class <i>C</i> and its direct <i>superclasses</i>. 
+where <i>C</i><sub>1</sub><i>, . . . , C<sub>n</sub></i> are the direct <i>superclasses</i> of <i>C</i> in the order in which they are mentioned in the <b>defclass</b> form. These ordered pairs generate the total ordering on the class <i>C</i> and its direct <i>superclasses</i>. 
 
 
 

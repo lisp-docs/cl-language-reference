@@ -1,3 +1,7 @@
+---
+title: "pprint-pop"
+---
+
 # pprint-pop
 
 import PprintPopLocalMacro from './_pprint-pop_local-macro.md';

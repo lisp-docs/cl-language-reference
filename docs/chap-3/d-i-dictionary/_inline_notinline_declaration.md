@@ -1,0 +1,142 @@
+**inline, notinline** *Declaration* 
+
+
+
+**Syntax:** 
+
+
+
+(inline *\{function-name\}*\*) 
+
+
+
+(notinline *\{function-name\}*\*) 
+
+
+
+**Arguments:** 
+
+
+
+*function-name*—a *function name*. 
+
+
+
+**Valid Context:** 
+
+
+
+*declaration* or *proclamation* 
+
+
+
+**Binding Types Aected:** 
+
+
+
+*function* 
+
+
+
+**Description:** 
+
+
+
+**inline** specifies that it is desirable for the compiler to produce inline calls to the *functions* named by *function-names*; that is, the code for a specified *function-name* should be integrated into the calling routine, appearing “in line” in place of a procedure call. A compiler is free to ignore this declaration. **inline** declarations never apply to variable *bindings*. 
+
+
+
+If one of the *functions* mentioned has a lexically apparent local definition (as made by **flet** or **labels**), then the declaration applies to that local definition and not to the global function definition. 
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+**inline, notinline** 
+
+
+
+While no *conforming implementation* is required to perform inline expansion of user-defined functions, those *implementations* that do attempt to recognize the following paradigm: 
+
+
+
+To define a *function* f that is not **inline** by default but for which (declare (inline f)) will make *f* be locally inlined, the proper definition sequence is: 
+
+
+
+(declaim (inline f)) 
+
+
+
+(defun f ...) 
+
+
+
+(declaim (notinline f)) 
+
+
+
+The **inline** proclamation preceding the **defun** *form* ensures that the *compiler* has the opportunity save the information necessary for inline expansion, and the **notinline** proclamation following the **defun** *form* prevents f from being expanded inline everywhere. 
+
+
+
+**notinline** specifies that it is undesirable to compile the *functions* named by *function-names* in-line. A compiler is not free to ignore this declaration; calls to the specified functions must be implemented as out-of-line subroutine calls. 
+
+
+
+If one of the *functions* mentioned has a lexically apparent local definition (as made by **flet** or **labels**), then the declaration applies to that local definition and not to the global function definition. 
+
+
+
+In the presence of a *compiler macro* definition for *function-name*, a **notinline** declaration prevents that *compiler macro* from being used. An **inline** declaration may be used to encourage use of *compiler macro* definitions. **inline** and **notinline** declarations otherwise have no e↵ect when the lexically visible definition of *function-name* is a *macro* definition. 
+
+
+
+**inline** and **notinline** declarations can be *free declarations* or *bound declarations*. **inline** and **notinline** declarations of functions that appear before the body of a **flet** or **labels** *form* that defines that function are *bound declarations*. Such declarations in other contexts are *free declarations*. 
+
+
+
+**Examples:**
+```lisp
+
+;; The globally defined function DISPATCH should be open-coded, 
+;; if the implementation supports inlining, unless a NOTINLINE 
+;; declaration overrides this effect. 
+(declaim (inline dispatch)) 
+(defun dispatch (x) (funcall (get (car x) ’dispatch) x)) 
+;; Here is an example where inlining would be encouraged. 
+(defun top-level-1 () (dispatch (read-command))) 
+;; Here is an example where inlining would be prohibited. 
+(defun top-level-2 () 
+  (declare (notinline dispatch)) 
+  (dispatch (read-command))) 
+;; Here is an example where inlining would be prohibited. 
+(declaim (notinline dispatch)) 
+(defun top-level-3 () (dispatch (read-command))) 
+;; Here is an example where inlining would be encouraged. 
+Evaluation and 
+
+
+(defun top-level-4 () 
+  (declare (inline dispatch)) 
+  (dispatch (read-command))) 
+
+```
+**See Also:** 
+
+
+
+**declare**, **declaim**, **proclaim** 
+
+
+

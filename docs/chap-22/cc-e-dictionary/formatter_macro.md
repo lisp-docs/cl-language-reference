@@ -1,3 +1,7 @@
+---
+title: "formatter"
+---
+
 # formatter
 
 import FormatterMacro from './_formatter_macro.md';

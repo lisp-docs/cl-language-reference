@@ -1,3 +1,7 @@
+---
+title: "digit-char"
+---
+
 # digit-char
 
 import DigitCharFunction from './_digit-char_function.md';

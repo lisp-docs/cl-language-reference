@@ -1,3 +1,7 @@
+---
+title: "character"
+---
+
 # character
 
 import CharacterFunction from './_character_function.md';

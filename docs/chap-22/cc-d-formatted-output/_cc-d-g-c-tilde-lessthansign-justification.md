@@ -30,11 +30,11 @@ Note that *str* may include **format** directives. All the clauses in *str* are 
 
 
 
-The &#126;<i><sup>^</sup></i> directive may be used to terminate processing of the clauses prematurely, in which case only the completely processed clauses are justified. 
+The &#126;<i><sup>∧</sup></i> directive may be used to terminate processing of the clauses prematurely, in which case only the completely processed clauses are justified. 
 
 
 
-If the first clause of a &#126;&lt; is terminated with &#126;:; instead of &#126;;, then it is used in a special way. All of the clauses are processed (subject to &#126;<i><sup>^</sup></i>, of course), but the first one is not used in performing the spacing and padding. When the padded result has been determined, then if it will fit on the current line of output, it is output, and the text for the first clause is discarded. If, however, the 
+If the first clause of a &#126;&lt; is terminated with &#126;:; instead of &#126;;, then it is used in a special way. All of the clauses are processed (subject to &#126;<i><sup>∧</sup></i>, of course), but the first one is not used in performing the spacing and padding. When the padded result has been determined, then if it will fit on the current line of output, it is output, and the text for the first clause is discarded. If, however, the 
 
 
 
@@ -42,7 +42,7 @@ padded text will not fit on the current line, then the text segment for the firs
 
 
 
-"&#126;%;; &#126;\{&#126;&lt;&#126;%;; &#126;1:; &#126;S&#126;&gt;&#126;<i><sup>^</sup></i>,&#126;\}.&#126;%" 
+"&#126;%;; &#126;\{&#126;&lt;&#126;%;; &#126;1:; &#126;S&#126;&gt;&#126;<i><sup>∧</sup></i>,&#126;\}.&#126;%" 
 
 
 
@@ -50,7 +50,7 @@ can be used to print a list of items separated by commas without breaking items 
 
 
 
-"&#126;%;; &#126;\{&#126;&lt;&#126;%;; &#126;1,50:; &#126;S&#126;&gt;&#126;<i><sup>^</sup></i>,&#126;\} .&#126;%" 
+"&#126;%;; &#126;\{&#126;&lt;&#126;%;; &#126;1,50:; &#126;S&#126;&gt;&#126;<i><sup>∧</sup></i>,&#126;\} .&#126;%" 
 
 
 

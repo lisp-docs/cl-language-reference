@@ -1,3 +1,7 @@
+---
+title: "close"
+---
+
 # close
 
 import CloseFunction from './_close_function.md';

@@ -6,7 +6,7 @@
 
 
 
-**write** *object* &key *array base case circle escape gensym* 
+**write** *object* &amp;key *array base case circle escape gensym* 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-**prin1** *object* &optional *output-stream → object* 
+**prin1** *object* &amp;optional *output-stream → object* 
 
 
 
-**princ** *object* &optional *output-stream → object* 
+**princ** *object* &amp;optional *output-stream → object* 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-**print** *object* &optional *output-stream → object* 
+**print** *object* &amp;optional *output-stream → object* 
 
 
 
-**pprint** *object* &optional *output-stream → hno valuesi* 
+**pprint** *object* &amp;optional *output-stream → ⟨no values⟩* 
 
 
 

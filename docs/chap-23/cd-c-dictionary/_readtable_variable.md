@@ -28,7 +28,10 @@ The *value* of **\*readtable\*** is called the *current readtable*. It controls 
 
 **Examples:**
 ```lisp
+
 (readtablep \*readtable\*) → true 
+
+
 
 (setq zvar 123) → 123 
 (set-syntax-from-char #\z #\’ (setq table2 (copy-readtable))) → T 
@@ -37,6 +40,7 @@ zvar → 123
 zvar → VAR 
 (setq \*readtable\* (copy-readtable nil)) → #<READTABLE> 
 zvar → 123 
+
 ```
 **Affected By:** 
 

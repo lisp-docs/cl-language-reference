@@ -1,3 +1,7 @@
+---
+title: "print-gensym"
+---
+
 # \*print-gensym\*
 
 import PrintGensymVariable from './_print-gensym_variable.md';

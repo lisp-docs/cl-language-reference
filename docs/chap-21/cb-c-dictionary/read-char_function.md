@@ -1,3 +1,7 @@
+---
+title: "read-char"
+---
+
 # read-char
 
 import ReadCharFunction from './_read-char_function.md';

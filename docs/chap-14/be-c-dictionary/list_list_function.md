@@ -1,3 +1,7 @@
+---
+title: "list, list"
+---
+
 # list, list
 
 import ListFunction from './_list_list_function.md';

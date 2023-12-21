@@ -1,3 +1,7 @@
+---
+title: "print-miser-width"
+---
+
 # \*print-miser-width\*
 
 import PrintMiserWidthVariable from './_print-miser-width_variable.md';

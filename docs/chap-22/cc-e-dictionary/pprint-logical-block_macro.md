@@ -1,3 +1,7 @@
+---
+title: "pprint-logical-block"
+---
+
 # pprint-logical-block
 
 import PprintLogicalBlockMacro from './_pprint-logical-block_macro.md';

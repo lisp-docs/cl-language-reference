@@ -1,3 +1,7 @@
+---
+title: "readtable"
+---
+
 # \*readtable\*
 
 import ReadtableVariable from './_readtable_variable.md';

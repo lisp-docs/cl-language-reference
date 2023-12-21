@@ -18,7 +18,7 @@ Figure 18–1 lists some *defined names* that are applicable to *hash tables*. T
 
 
 
-(setq a (make-hash-table)) → #\<HASH-TABLE EQL 0/120 32536573\> 
+(setq a (make-hash-table)) → #<HASH-TABLE EQL 0/120 32536573> 
 
 
 

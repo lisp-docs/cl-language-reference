@@ -1,1 +1,0 @@
-**open**, **close**, **pathname**, **logical-pathname**, Section 19.1.2 (Pathnames as Filenames) 

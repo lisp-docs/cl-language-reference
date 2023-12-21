@@ -1,3 +1,7 @@
+---
+title: "with-compilation-unit"
+---
+
 # with-compilation-unit
 
 import WithCompilationUnitMacro from './_with-compilation-unit_macro.md';

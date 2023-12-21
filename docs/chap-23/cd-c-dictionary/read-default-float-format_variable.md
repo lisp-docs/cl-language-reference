@@ -1,3 +1,7 @@
+---
+title: "read-default-float-format"
+---
+
 # \*read-default-float-format\*
 
 import ReadDefaultFloatFormatVariable from './_read-default-float-format_variable.md';

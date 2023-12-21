@@ -1,3 +1,7 @@
+---
+title: "alpha-char-p"
+---
+
 # alpha-char-p
 
 import AlphaCharPFunction from './_alpha-char-p_function.md';

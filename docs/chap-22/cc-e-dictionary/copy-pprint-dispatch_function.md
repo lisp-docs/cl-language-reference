@@ -1,3 +1,7 @@
+---
+title: "copy-pprint-dispatch"
+---
+
 # copy-pprint-dispatch
 
 import CopyPprintDispatchFunction from './_copy-pprint-dispatch_function.md';

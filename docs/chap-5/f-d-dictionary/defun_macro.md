@@ -1,3 +1,7 @@
+---
+title: "defun"
+---
+
 # defun
 
 import DefunMacro from './_defun_macro.md';

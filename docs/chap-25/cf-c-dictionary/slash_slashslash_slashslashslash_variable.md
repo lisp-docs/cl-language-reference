@@ -1,3 +1,7 @@
+---
+title: "/, //, ///"
+---
+
 # /, //, ///
 
 import SlashVariable from './_slash_slashslash_slashslashslash_variable.md';

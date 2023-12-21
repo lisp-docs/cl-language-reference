@@ -1,3 +1,7 @@
+---
+title: "print-escape"
+---
+
 # \*print-escape\*
 
 import PrintEscapeVariable from './_print-escape_variable.md';

@@ -1,3 +1,7 @@
+---
+title: "char-name"
+---
+
 # char-name
 
 import CharNameFunction from './_char-name_function.md';

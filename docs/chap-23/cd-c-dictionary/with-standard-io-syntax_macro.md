@@ -1,3 +1,7 @@
+---
+title: "with-standard-io-syntax"
+---
+
 # with-standard-io-syntax
 
 import WithStandardIoSyntaxMacro from './_with-standard-io-syntax_macro.md';

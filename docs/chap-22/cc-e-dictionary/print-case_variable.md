@@ -1,3 +1,7 @@
+---
+title: "print-case"
+---
+
 # \*print-case\*
 
 import PrintCaseVariable from './_print-case_variable.md';

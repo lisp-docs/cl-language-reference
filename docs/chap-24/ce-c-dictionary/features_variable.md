@@ -1,3 +1,7 @@
+---
+title: "features"
+---
+
 # \*features\*
 
 import FeaturesVariable from './_features_variable.md';

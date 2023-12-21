@@ -1,3 +1,7 @@
+---
+title: "nil"
+---
+
 # nil
 
 import NilConstantVariable from './_nil_constant-variable.md';

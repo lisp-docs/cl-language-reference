@@ -1,3 +1,7 @@
+---
+title: "gensym"
+---
+
 # gensym
 
 import GensymFunction from './_gensym_function.md';

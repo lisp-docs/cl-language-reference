@@ -1,3 +1,7 @@
+---
+title: "character"
+---
+
 # character
 
 import CharacterSystemClass from './_character_system-class.md';

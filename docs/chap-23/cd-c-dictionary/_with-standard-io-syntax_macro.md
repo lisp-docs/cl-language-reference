@@ -66,9 +66,11 @@ Within the dynamic extent of the body of *forms*, all reader/printer control var
 (with-open-file (file pathname :direction :input) 
 (with-standard-io-syntax 
 (setq data (read file)))) 
+
  
  
 *∗***read-base***∗ Variable* 
+
 ```
 **Value Type:** 
 
@@ -116,6 +118,7 @@ The effect of **\*read-base\*** on the reading of any particular *rational* numb
 ▷ (14 (DAD 2701 BEE BEE 123 227)) 
 ▷ (15 (DAD 3088 BEE 2699 123 258)) 
 → NIL 
+
 ```
 **Notes:** 
 

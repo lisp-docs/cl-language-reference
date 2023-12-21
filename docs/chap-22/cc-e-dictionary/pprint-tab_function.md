@@ -1,3 +1,7 @@
+---
+title: "pprint-tab"
+---
+
 # pprint-tab
 
 import PprintTabFunction from './_pprint-tab_function.md';

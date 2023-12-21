@@ -10,7 +10,7 @@ Note that the meaning of **nil** and **t** as destinations to **format** are dif
 
 
 
-The &#126;<i><sup>^</sup></i> should appear only at the beginning of a &#126;&lt; clause, because it aborts the entire clause in which it appears (as well as all following clauses). 
+The &#126;<i><sup>∧</sup></i> should appear only at the beginning of a &#126;&lt; clause, because it aborts the entire clause in which it appears (as well as all following clauses). 
 
 
 

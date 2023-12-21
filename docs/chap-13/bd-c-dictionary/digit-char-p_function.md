@@ -1,3 +1,7 @@
+---
+title: "digit-char-p"
+---
+
 # digit-char-p
 
 import DigitCharPFunction from './_digit-char-p_function.md';

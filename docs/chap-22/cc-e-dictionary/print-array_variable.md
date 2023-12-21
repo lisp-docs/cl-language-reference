@@ -1,3 +1,7 @@
+---
+title: "print-array"
+---
+
 # \*print-array\*
 
 import PrintArrayVariable from './_print-array_variable.md';

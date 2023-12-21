@@ -1,3 +1,7 @@
+---
+title: "pprint-dispatch"
+---
+
 # pprint-dispatch
 
 import PprintDispatchFunction from './_pprint-dispatch_function.md';

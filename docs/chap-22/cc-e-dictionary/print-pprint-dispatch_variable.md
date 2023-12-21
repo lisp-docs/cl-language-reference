@@ -1,3 +1,7 @@
+---
+title: "print-pprint-dispatch"
+---
+
 # \*print-pprint-dispatch\*
 
 import PrintPprintDispatchVariable from './_print-pprint-dispatch_variable.md';

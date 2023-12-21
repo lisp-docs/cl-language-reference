@@ -1,3 +1,7 @@
+---
+title: "print-readably"
+---
+
 # \*print-readably\*
 
 import PrintReadablyVariable from './_print-readably_variable.md';

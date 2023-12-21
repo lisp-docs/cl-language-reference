@@ -1,3 +1,7 @@
+---
+title: "random-state-p"
+---
+
 # random-state-p
 
 import RandomStatePFunction from './_random-state-p_function.md';
