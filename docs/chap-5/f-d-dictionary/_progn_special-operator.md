@@ -25,10 +25,10 @@ If **progn** appears as a *top level form*, then all *forms* within that **progn
 (progn) *!* NIL 
 (progn 1 2 3) *!* 3 
 (progn (values 1 2 3)) *!* 1, 2, 3 
-(setq a 1) *!* 1 
+(setf a 1) *!* 1 
 (if a 
-    (progn (setq a nil) ’here) 
-    (progn (setq a t) ’there)) *!* HERE 
+    (progn (setf a nil) ’here) 
+    (progn (setf a t) ’there)) *!* HERE 
 a *!* NIL 
 
 ```
@@ -40,3 +40,9 @@ a *!* NIL
 **Notes:**
 
 Many places in Common Lisp involve syntax that uses *implicit progns*. That is, part of their syntax allows many *forms* to be written that are to be evaluated sequentially, discarding the results of all *forms* but the last and returning the results of the last *form*. Such places include, but are not limited to, the following: the body of a *lambda expression*; the bodies of various control and conditional *forms* (*e.g.*, **case**, **catch**, **progn**, and **when**).
+
+:::info
+
+The **example** above was modified replacing `SETQ` with `DEFPARAMETER` or `SETF` according to context. That is because the specification changed yet they did not update the example to fit the specification. This was a mistake in the original ANSI Reference and has been fixed here.
+
+:::
