@@ -3,7 +3,7 @@ import { ReferenceAid, getLink, DefinitionTooltips, isDefinition, isDictionaryIt
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import 'tippy.js/dist/tippy.css'; // optional
 
-export function AsyncClLinks({ children, styled }) {
+export function AsyncClLinks({ children, styled, term }) {
   // const LispDocsUtils = require("@lisp-docs/utils");
   // const getLink = LispDocsUtils.getLink;
   // const DefinitionTooltips = LispDocsUtils.DefinitionTooltips;
@@ -11,6 +11,12 @@ export function AsyncClLinks({ children, styled }) {
   // const isDictionaryItem = LispDocsUtils.isDictionaryItem;
   
   function getLispDocsLink() {
+    if (term !== null && term !== undefined && typeof term === "string") {
+      const givenLink = getLink(term);
+      if (givenLink !== null && givenLink !== undefined) {
+        return givenLink;
+      }
+    }
     if (typeof children === "string" && children !== null) {
       if (children.endsWith("s")) {
         const trimmedTerm = children.trim();
@@ -24,6 +30,9 @@ export function AsyncClLinks({ children, styled }) {
   }
 
   function getTerm() {
+    if (term !== null && term !== undefined && typeof term === "string") {
+      return term.trim();
+    }
     if (typeof children === "string" && children !== null) {
       if (children.endsWith("s")) {
         const trimmedTerm = children.trim();
@@ -76,10 +85,10 @@ export function AsyncClLinks({ children, styled }) {
   return getDisplay();
 }
 
-export default function ClLinks({ children, styled }) {
+export default function ClLinks({ children, styled, term }) {
   return (
     <BrowserOnly fallback={<span>{children}</span>}>
-      {() => <AsyncClLinks styled={styled}>{children}</AsyncClLinks>}
+      {() => <AsyncClLinks term={term} styled={styled}>{children}</AsyncClLinks>}
     </BrowserOnly>
   );
 }
