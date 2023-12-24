@@ -1,13 +1,14 @@
 import Link from "@docusaurus/Link";
-// import { ReferenceAid, getLink, DefinitionTooltips, isDefinition, isDictionaryItem } from "@lisp-docs/utils";
+import { ReferenceAid, getLink, DefinitionTooltips, isDefinition, isDictionaryItem } from "@lisp-docs/utils";
 import BrowserOnly from "@docusaurus/BrowserOnly";
+import 'tippy.js/dist/tippy.css'; // optional
 
 export function AsyncClLinks({ children, styled }) {
-  const LispDocsUtils = require("@lisp-docs/utils");
-  const getLink = LispDocsUtils.getLink;
-  const DefinitionTooltips = LispDocsUtils.DefinitionTooltips;
-  const isDefinition = LispDocsUtils.isDefinition;
-  const isDictionaryItem = LispDocsUtils.isDictionaryItem;
+  // const LispDocsUtils = require("@lisp-docs/utils");
+  // const getLink = LispDocsUtils.getLink;
+  // const DefinitionTooltips = LispDocsUtils.DefinitionTooltips;
+  // const isDefinition = LispDocsUtils.isDefinition;
+  // const isDictionaryItem = LispDocsUtils.isDictionaryItem;
   
   function getLispDocsLink() {
     if (typeof children === "string" && children !== null) {
