@@ -1,14 +1,14 @@
 ---
-title: "="
+title: "=, /=, <, >, <=, >="
 ---
 
-# =
+# =, /=, \<, \>, \<=, \>=
 
 import EqualFunction from './_equal_function.md';
 
 <EqualFunction />
 
-## Expanded Reference: =
+## Expanded Reference: =, /=, \<, \>, \<=, \>=
 
 :::tip
 TODO: Please contribute to this page by adding explanations and examples
@@ -16,4 +16,9 @@ TODO: Please contribute to this page by adding explanations and examples
 
 ```lisp
 (= )
+(/= )
+(< )
+(> )
+(<= )
+(>= )
 ```
