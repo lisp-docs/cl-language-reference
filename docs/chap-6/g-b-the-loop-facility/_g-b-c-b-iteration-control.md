@@ -2,11 +2,11 @@
 
 
 
-Iteration control clauses allow direction of <ClLinks styled={true}>loop</ClLinks> iteration. The *loop keywords* for and as designate iteration control clauses. Iteration control clauses differ with respect to the specification of termination tests and to the initialization and *stepping*<sub>1</sub> of loop variables. Iteration clauses by themselves do not cause the Loop Facility to return values, but they can be used in conjunction with value-accumulation clauses to return values. 
+Iteration control clauses allow direction of **loop** iteration. The *loop keywords* for and as designate iteration control clauses. Iteration control clauses differ with respect to the specification of termination tests and to the initialization and *stepping*<sub>1</sub> of loop variables. Iteration clauses by themselves do not cause the Loop Facility to return values, but they can be used in conjunction with value-accumulation clauses to return values. 
 
 
 
-All variables are initialized in the loop prologue. A *variable binding* has *lexical scope* unless it is proclaimed <ClLinks styled={true}>special</ClLinks>; thus, by default, the variable can be *accessed* only by *forms* that lie textually within the <ClLinks styled={true}>loop</ClLinks>. Stepping assignments are made in the loop body before any other *forms* are evaluated in the body. 
+All variables are initialized in the loop prologue. A *variable binding* has *lexical scope* unless it is proclaimed **special**; thus, by default, the variable can be *accessed* only by *forms* that lie textually within the **loop**. Stepping assignments are made in the loop body before any other *forms* are evaluated in the body. 
 
 
 
@@ -14,11 +14,11 @@ The variable argument in iteration control clauses can be a destructuring list. 
 
 
 
-The iteration control clauses for, as, and repeat must precede any other loop clauses, except initially, with, and named, since they establish variable *bindings*. When iteration control clauses are used in a <ClLinks styled={true}>loop</ClLinks>, the corresponding termination tests in the loop body are evaluated before any other loop body code is executed. 
+The iteration control clauses for, as, and repeat must precede any other loop clauses, except initially, with, and named, since they establish variable *bindings*. When iteration control clauses are used in a **loop**, the corresponding termination tests in the loop body are evaluated before any other loop body code is executed. 
 
 
 
-If multiple iteration clauses are used to control iteration, variable initialization and *stepping*<sub>1</sub> occur *sequentially* by default. The and construct can be used to connect two or more iteration clauses when *sequential binding* and *stepping*<sub>1</sub> are not necessary. The iteration behavior of clauses joined by and is analogous to the behavior of the macro <ClLinks styled={true}>do</ClLinks> with respect to <ClLinks styled={true}>do\*</ClLinks>*. 
+If multiple iteration clauses are used to control iteration, variable initialization and *stepping*<sub>1</sub> occur *sequentially* by default. The and construct can be used to connect two or more iteration clauses when *sequential binding* and *stepping*<sub>1</sub> are not necessary. The iteration behavior of clauses joined by and is analogous to the behavior of the macro **do** with respect to **do\***. 
 
 
 
