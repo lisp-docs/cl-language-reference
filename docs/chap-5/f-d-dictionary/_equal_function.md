@@ -4,8 +4,6 @@
 
 **equal** *x y → generalized-boolean*
 
-Data and Control
-
 **equal**
 
 **Arguments and Values:**
@@ -85,10 +83,6 @@ Any two *objects* that are **eql** are also **equal**.
 
 **Notes:**
 
-*Object* equality is not a concept for which there is a uniquely determined correct algorithm. The appropriateness of an equality predicate can be judged only in the context of the needs of some particular program. Although these functions take any type of argument and their names sound
-
-Data and Control
-
-very generic, **equal** and **equalp** are not appropriate for every application.
+*Object* equality is not a concept for which there is a uniquely determined correct algorithm. The appropriateness of an equality predicate can be judged only in the context of the needs of some particular program. Although these functions take any type of argument and their names sound very generic, **equal** and **equalp** are not appropriate for every application.
 
 A rough rule of thumb is that two *objects* are **equal** if and only if their printed representations are the same.
