@@ -1,68 +1,33 @@
-**/** *Function* 
+**/** *Function*
 
+**Syntax:**
 
+**/** *number → reciprocal*
 
-**Syntax:** 
+**/** *numerator* &amp;rest *denominators*<sup>+</sup> → quotient
 
+**Arguments and Values:**
 
+*number*, *denominator*—a non-zero *number* .
 
-**/** *number → reciprocal* 
+*numerator*, *quotient*, *reciprocal*—a *number* .
 
+**Description:**
 
+The *function* **/** performs division or reciprocation.
 
-**/** *numerator* &amp;rest *denominators*<sup>+</sup> → quotient 
+If no *denominators* are supplied, the *function* **/** returns the reciprocal of *number*.
 
+If at least one *denominator* is supplied, the *function* **/** divides the *numerator* by all of the *denominators* and returns the resulting *quotient*.
 
+If each *argument* is either an *integer* or a *ratio*, and the result is not an *integer* , then it is a *ratio*.
 
-**Arguments and Values:** 
+The *function* **/** performs necessary type conversions.
 
-
-
-*number*, *denominator*—a non-zero *number* . 
-
-
-
-*numerator*, *quotient*, *reciprocal*—a *number* . 
-
-
-
-**Description:** 
-
-
-
-The *function* **/** performs division or reciprocation. 
-
-
-
-If no *denominators* are supplied, the *function* **/** returns the reciprocal of *number*. 
-
-
-
-If at least one *denominator* is supplied, the *function* **/** divides the *numerator* by all of the *denominators* and returns the resulting *quotient*. 
-
-
-
-If each *argument* is either an *integer* or a *ratio*, and the result is not an *integer* , then it is a *ratio*. 
-
-
-
- 
-
-
-
- 
-
-
-
-The *function* **/** performs necessary type conversions. 
-
-
-
-If any *argument* is a *float* then the rules of floating-point contagion apply; see Section 12.1.4 (Floating-point Computations). 
-
-
+If any *argument* is a *float* then the rules of floating-point contagion apply; see Section 12.1.4 (Floating-point Computations).
 
 **Examples:**
+
 ```lisp
  
 (/ 12 4) → 3 
@@ -76,112 +41,13 @@ If any *argument* is a *float* then the rules of floating-point contagion apply;
 (/ 2 #c(2 2)) → #C(1/2 -1/2) 
 
 ```
-**Exceptional Situations:** 
 
+**Exceptional Situations:**
 
+The consequences are unspecified if any *argument* other than the first is zero. If there is only one *argument*, the consequences are unspecified if it is zero.
 
-The consequences are unspecified if any *argument* other than the first is zero. If there is only one *argument*, the consequences are unspecified if it is zero. 
+Might signal **type-error** if some *argument* is not a *number* . Might signal **division-by-zero** if division by zero is attempted. Might signal **arithmetic-error**.
 
+**See Also:**
 
-
-Might signal **type-error** if some *argument* is not a *number* . Might signal **division-by-zero** if division by zero is attempted. Might signal **arithmetic-error**. 
-
-
-
-**See Also:** 
-
-
-
-**floor**, **ceiling**, **truncate**, **round** 
-
-
-
-**1+, 1***− Function* 
-
-
-
-**Syntax:** 
-
-
-
-**1+** *number → successor* 
-
-
-
-**1***− number → predecessor* 
-
-
-
-**Arguments and Values:** 
-
-
-
-*number*—a *number* . 
-
-
-
-*successor*, *predecessor*—a *number* . 
-
-
-
-**Description:** 
-
-
-
-**1+** returns a *number* that is one more than its argument *number*. **1-** returns a *number* that is one less than its argument *number*. 
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
-**Examples:**
-```lisp
-
-(1+ 99) → 100 
-(1- 100) → 99 
-(1+ (complex 0.0)) → #C(1.0 0.0) 
-(1- 5/3) → 2/3 
-
-```
-**Exceptional Situations:** 
-
-
-
-Might signal **type-error** if its *argument* is not a *number* . Might signal **arithmetic-error**. 
-
-
-
-**See Also:** 
-
-
-
-**incf**, **decf** 
-
-
-
-**Notes:** 
-
-
-
-(1+ *number*) *≡* (+ *number* 1) 
-
-
-
-(1- *number*) *≡* (- *number* 1) 
-
-
-
-Implementors are encouraged to make the performance of both the previous expressions be the same. 
-
-
-
+**floor**, **ceiling**, **truncate**, **round**
