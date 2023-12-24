@@ -14,7 +14,7 @@
 
 
 
-The consequences are undefined if the token immediately following the #X does not have the syntax of a hexadecimal (*i.e.*, radix 16) *rational*. 
+The consequences are undefined if the token immediately following the #X does not have the syntax of a hexadecimal (*i.e.*, radix 16) <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks>. 
 
 
 

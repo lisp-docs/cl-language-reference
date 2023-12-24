@@ -26,7 +26,7 @@ Thus the most general form of &#126;D is &#126;*mincol*,*padchar*,*commachar*,*c
 
 
 
-&#126;D binds **\*print-escape\*** to *false*, **\*print-radix\*** to *false*, **\*print-base\*** to 10, and **\*print-readably\*** to *false*. 
+&#126;D binds <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> to <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, <ClLinks styled={true} term={"print-radix"}><b>\*print-radix\*</b></ClLinks> to <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, **\*print-base\*** to 10, and <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> to <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 

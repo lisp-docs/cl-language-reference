@@ -1,4 +1,4 @@
-**ftype** *Declaration* 
+**ftype** <ClLinks styled={true} term={"declaration"}><i>Declaration</i></ClLinks> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*type*—a *type specifier* . 
+<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>—a *type specifier* . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*declaration* or *proclamation* 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks> or <ClLinks styled={true} term={"proclamation"}><i>proclamation</i></ClLinks> 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-*function* 
+<ClLinks styled={true} term={"function"}><i>function</i></ClLinks> 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-Specifies that the *functions* named by *function-names* are of the functional type *type*. For example: 
+Specifies that the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> named by *function-names* are of the functional type <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>. For example: 
 
 
 
@@ -54,15 +54,15 @@ Specifies that the *functions* named by *function-names* are of the functional t
 
 
 
-If one of the *functions* mentioned has a lexically apparent local definition (as made by **flet** or **labels**), then the declaration applies to that local definition and not to the global function definition. **ftype** declarations never apply to variable *bindings* (see type). 
+If one of the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> mentioned has a lexically apparent local definition (as made by <ClLinks styled={true} term={"flet"}><b>flet</b></ClLinks> or <ClLinks styled={true} term={"labels"}><b>labels</b></ClLinks>), then the declaration applies to that local definition and not to the global function definition. <ClLinks styled={true} term={"ftype"}><b>ftype</b></ClLinks> declarations never apply to variable <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks> (see type). 
 
 
 
-The lexically apparent bindings of *function-names* must not be *macro* definitions. (This is because **ftype** declares the functional definition of each *function name* to be of a particular subtype of **function**, and *macros* do not denote *functions*.) 
+The lexically apparent bindings of *function-names* must not be <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> definitions. (This is because <ClLinks styled={true} term={"ftype"}><b>ftype</b></ClLinks> declares the functional definition of each *function name* to be of a particular subtype of <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>, and <ClLinks styled={true} term={"macro"}><i>macros</i></ClLinks> do not denote <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks>.) 
 
 
 
-**ftype** declarations can be *free declarations* or *bound declarations*. **ftype** declarations of functions that appear before the body of a **flet** or **labels** *form* that defines that function are *bound declarations*. Such declarations in other contexts are *free declarations*. 
+<ClLinks styled={true} term={"ftype"}><b>ftype</b></ClLinks> declarations can be *free declarations* or *bound declarations*. <ClLinks styled={true} term={"ftype"}><b>ftype</b></ClLinks> declarations of functions that appear before the body of a <ClLinks styled={true} term={"flet"}><b>flet</b></ClLinks> or <ClLinks styled={true} term={"labels"}><b>labels</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that defines that function are *bound declarations*. Such declarations in other contexts are *free declarations*. 
 
 
 
@@ -70,7 +70,7 @@ The lexically apparent bindings of *function-names* must not be *macro* definiti
 
 
 
-**declare**, **declaim**, **proclaim** 
+<ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks>, <ClLinks styled={true} term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks styled={true} term={"proclaim"}><b>proclaim</b></ClLinks> 
 
 
 

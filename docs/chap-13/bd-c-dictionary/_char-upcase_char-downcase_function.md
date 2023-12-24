@@ -1,4 +1,4 @@
-**char-upcase, char-downcase** *Function* 
+**char-upcase, char-downcase** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**char-upcase** *character → corresponding-character* 
+<ClLinks styled={true} term={"char-upcase"}><b>char-upcase</b></ClLinks> *character → corresponding-character* 
 
 
 
-**char-downcase** *character → corresponding-character* 
+<ClLinks styled={true} term={"char-downcase"}><b>char-downcase</b></ClLinks> *character → corresponding-character* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*character*, *corresponding-character*—a *character* . 
+<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>, *corresponding-character*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-If *character* is a *lowercase character* , **char-upcase** returns the corresponding *uppercase character* . Otherwise, **char-upcase** just returns the given *character*. 
+If <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is a *lowercase character* , <ClLinks styled={true} term={"char-upcase"}><b>char-upcase</b></ClLinks> returns the corresponding *uppercase character* . Otherwise, <ClLinks styled={true} term={"char-upcase"}><b>char-upcase</b></ClLinks> just returns the given <ClLinks styled={true} term={"character"}><i>character</i></ClLinks>. 
 
 
 
-If *character* is an *uppercase character* , **char-downcase** returns the corresponding *lowercase character* . Otherwise, **char-downcase** just returns the given *character*. 
+If <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is an *uppercase character* , <ClLinks styled={true} term={"char-downcase"}><b>char-downcase</b></ClLinks> returns the corresponding *lowercase character* . Otherwise, <ClLinks styled={true} term={"char-downcase"}><b>char-downcase</b></ClLinks> just returns the given <ClLinks styled={true} term={"character"}><i>character</i></ClLinks>. 
 
 
 
-The result only ever differs from *character* in its *code attribute*; all *implementation-defined attributes* are preserved. 
+The result only ever differs from <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> in its *code attribute*; all *implementation-defined attributes* are preserved. 
 
 
 
@@ -66,7 +66,7 @@ The result only ever differs from *character* in its *code attribute*; all *impl
 
 
 
-Should signal an error of *type* **type-error** if *character* is not a *character* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is not a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -86,7 +86,7 @@ Should signal an error of *type* **type-error** if *character* is not a *charact
 
 
 
-**upper-case-p**, **alpha-char-p**, Section 13.1.4.3 (Characters With Case), Section 13.1.10 (Documen tation of Implementation-Defined Scripts) 
+<ClLinks styled={true} term={"upper-case-p"}><b>upper-case-p</b></ClLinks>, <ClLinks styled={true} term={"alpha-char-p"}><b>alpha-char-p</b></ClLinks>, Section 13.1.4.3 (Characters With Case), Section 13.1.10 (Documen tation of Implementation-Defined Scripts) 
 
 
 
@@ -94,11 +94,11 @@ Should signal an error of *type* **type-error** if *character* is not a *charact
 
 
 
-If the *corresponding-char* is *different* than *character*, then both the *character* and the *corresponding char* have *case*. 
+If the *corresponding-char* is <ClLinks styled={true} term={"different"}><i>different</i></ClLinks> than <ClLinks styled={true} term={"character"}><i>character</i></ClLinks>, then both the <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> and the *corresponding char* have <ClLinks styled={true} term={"case"}><i>case</i></ClLinks>. 
 
 
 
-Since **char-equal** ignores the *case* of the *characters* it compares, the *corresponding-character* is always the *same* as *character* under **char-equal**. 
+Since <ClLinks styled={true} term={"char-equal"}><b>char-equal</b></ClLinks> ignores the <ClLinks styled={true} term={"case"}><i>case</i></ClLinks> of the <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> it compares, the *corresponding-character* is always the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> as <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> under <ClLinks styled={true} term={"char-equal"}><b>char-equal</b></ClLinks>. 
 
 
 

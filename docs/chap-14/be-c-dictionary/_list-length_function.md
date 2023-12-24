@@ -1,4 +1,4 @@
-**list-length** *Function* 
+**list-length** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**list-length** *list → length* 
+<ClLinks styled={true} term={"list-length"}><b>list-length</b></ClLinks> *list → length* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*list*—a *proper list* or a *circular list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a *proper list* or a *circular list*. 
 
 
 
-*length*—a non-negative *integer* , or **nil**. 
+<ClLinks styled={true} term={"length"}><i>length</i></ClLinks>—a non-negative *integer* , or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the *length* of *list* if *list* is a *proper list*. Returns **nil** if *list* is a *circular list*. 
+Returns the <ClLinks styled={true} term={"length"}><i>length</i></ClLinks> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a *proper list*. Returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a *circular list*. 
 
 
 
@@ -49,7 +49,7 @@ Returns the *length* of *list* if *list* is a *proper list*. Returns **nil** if 
 
 
 
-Should signal an error of *type* **type-error** if *list* is not a *proper list* or a *circular list*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is not a *proper list* or a *circular list*. 
 
 
 
@@ -57,7 +57,7 @@ Should signal an error of *type* **type-error** if *list* is not a *proper list*
 
 
 
-**length** 
+<ClLinks styled={true} term={"length"}><b>length</b></ClLinks> 
 
 
 
@@ -65,7 +65,7 @@ Should signal an error of *type* **type-error** if *list* is not a *proper list*
 
 
 
-**list-length** could be implemented as follows: 
+<ClLinks styled={true} term={"list-length"}><b>list-length</b></ClLinks> could be implemented as follows: 
 
 
 

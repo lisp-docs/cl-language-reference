@@ -1,4 +1,4 @@
-**subtypep** *Function* 
+**subtypep** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**subtypep** *type-1 type-2* &amp;optional *environment → subtype-p, valid-p* 
+<ClLinks styled={true} term={"subtypep"}><b>subtypep</b></ClLinks> *type-1 type-2* &amp;optional *environment → subtype-p, valid-p* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*environment*—an *environment object*. The default is **nil**, denoting the *null lexical environment* and the current *global environment*. 
+<ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>—an *environment object*. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, denoting the *null lexical environment* and the current *global environment*. 
 
 
 
@@ -38,11 +38,11 @@
 
 
 
-If *type-1* is a *recognizable subtype* of *type-2*, the first *value* is *true*. Otherwise, the first *value* is *false*, indicating that either *type-1* is not a *subtype* of *type-2*, or else *type-1* is a *subtype* of *type-2* but is not a *recognizable subtype*. 
+If *type-1* is a *recognizable subtype* of *type-2*, the first <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. Otherwise, the first <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, indicating that either *type-1* is not a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of *type-2*, or else *type-1* is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of *type-2* but is not a *recognizable subtype*. 
 
 
 
-A second *value* is also returned indicating the ‘certainty’ of the first *value*. If this value is *true*, then the first value is an accurate indication of the *subtype* relationship. (The second *value* is always *true* when the first *value* is *true*.)  
+A second <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is also returned indicating the ‘certainty’ of the first <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>. If this value is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, then the first value is an accurate indication of the <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> relationship. (The second <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is always <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> when the first <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>.)  
 
 
 
@@ -50,11 +50,11 @@ A second *value* is also returned indicating the ‘certainty’ of the first *v
 
 
 
-**subtypep** 
+<ClLinks styled={true} term={"subtypep"}><b>subtypep</b></ClLinks> 
 
 
 
-Figure 4–9 summarizes the possible combinations of *values* that might result. 
+Figure 4–9 summarizes the possible combinations of <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> that might result. 
 
 
 
@@ -62,7 +62,7 @@ Figure 4–9 summarizes the possible combinations of *values* that might result.
 
 | :- |
 
-|<p>*true true type-1* is definitely a *subtype* of *type-2*. </p><p>*false true type-1* is definitely not a *subtype* of *type-2*. *false false* **subtypep** could not determine the relationship, so *type-1* might or might not be a *subtype* of *type-2*.</p>|
+|<p>*true true type-1* is definitely a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of *type-2*. </p><p>*false true type-1* is definitely not a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of *type-2*. *false false* <ClLinks styled={true} term={"subtypep"}><b>subtypep</b></ClLinks> could not determine the relationship, so *type-1* might or might not be a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of *type-2*.</p>|
 
 
 
@@ -72,19 +72,19 @@ Figure 4–9 summarizes the possible combinations of *values* that might result.
 
 
 
-**subtypep** is permitted to return the *values false* and *false* only when at least one argument involves one of these *type specifiers*: **and**, **eql**, the list form of **function**, **member**, **not**, **or**, **satisfies**, or **values**. (A *type specifier* ‘involves’ such a *symbol* if, after being *type expanded*, it contains that *symbol* in a position that would call for its meaning as a *type specifier* to be used.) One consequence of this is that if neither *type-1* nor *type-2* involves any of these *type specifiers*, then **subtypep** is obliged to determine the relationship accurately. In particular, **subtypep** returns the *values true* and *true* if the arguments are **equal** and do not involve any of these *type specifiers*. 
+<ClLinks styled={true} term={"subtypep"}><b>subtypep</b></ClLinks> is permitted to return the *values false* and <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> only when at least one argument involves one of these *type specifiers*: <ClLinks styled={true} term={"and"}><b>and</b></ClLinks>, <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks>, the list form of <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>, <ClLinks styled={true} term={"member"}><b>member</b></ClLinks>, <ClLinks styled={true} term={"not"}><b>not</b></ClLinks>, <ClLinks styled={true} term={"or"}><b>or</b></ClLinks>, **satisfies**, or <ClLinks styled={true} term={"values"}><b>values</b></ClLinks>. (A *type specifier* ‘involves’ such a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> if, after being *type expanded*, it contains that <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> in a position that would call for its meaning as a *type specifier* to be used.) One consequence of this is that if neither *type-1* nor *type-2* involves any of these *type specifiers*, then <ClLinks styled={true} term={"subtypep"}><b>subtypep</b></ClLinks> is obliged to determine the relationship accurately. In particular, <ClLinks styled={true} term={"subtypep"}><b>subtypep</b></ClLinks> returns the *values true* and <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the arguments are <ClLinks styled={true} term={"equal"}><b>equal</b></ClLinks> and do not involve any of these *type specifiers*. 
 
 
 
-**subtypep** never returns a second value of **nil** when both *type-1* and *type-2* involve only the names in Figure 4–2, or names of *types* defined by **defstruct**, **define-condition**, or **defclass**, or *derived types* that expand into only those names. While *type specifiers* listed in Figure 4–2 and names of **defclass** and **defstruct** can in some cases be implemented as *derived types*, **subtypep** regards them as primitive. 
+<ClLinks styled={true} term={"subtypep"}><b>subtypep</b></ClLinks> never returns a second value of <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> when both *type-1* and *type-2* involve only the names in Figure 4–2, or names of <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> defined by <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks>, <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks>, or <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks>, or *derived types* that expand into only those names. While *type specifiers* listed in Figure 4–2 and names of <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks> and <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> can in some cases be implemented as *derived types*, <ClLinks styled={true} term={"subtypep"}><b>subtypep</b></ClLinks> regards them as primitive. 
 
 
 
-The relationships between *types* reflected by **subtypep** are those specific to the particular implementation. For example, if an implementation supports only a single type of floating-point numbers, in that implementation (subtypep ’float ’long-float) returns the *values true* and *true* (since the two *types* are identical). 
+The relationships between <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> reflected by <ClLinks styled={true} term={"subtypep"}><b>subtypep</b></ClLinks> are those specific to the particular implementation. For example, if an implementation supports only a single type of floating-point numbers, in that implementation (subtypep ’float ’long-float) returns the *values true* and <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> (since the two <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> are identical). 
 
 
 
-For all *T1* and *T2* other than \*, (array *T1*) and (array *T2*) are two different *type spec ifiers* that always refer to the same sets of things if and only if they refer to *arrays* of exactly the same specialized representation, *i.e.*, if (upgraded-array-element-type ’*T1*) and (upgraded-array-element-type ’*T2*) return two different *type specifiers* that always refer to the same sets of *objects*. This is another way of saying that ‘(array *type-specifier*) and ‘(array ,(upgraded-array-element-type ’*type-specifier*)) refer to the same set of specialized *array* representations. For all *T1* and *T2* other than \*, the intersection of (array *T1*) and (array *T2*) is the empty set if and only if they refer to *arrays* of different, distinct specialized representations. 
+For all *T1* and *T2* other than \*, (array *T1*) and (array *T2*) are two different *type spec ifiers* that always refer to the same sets of things if and only if they refer to <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> of exactly the same specialized representation, *i.e.*, if (upgraded-array-element-type ’*T1*) and (upgraded-array-element-type ’*T2*) return two different *type specifiers* that always refer to the same sets of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>. This is another way of saying that ‘(array *type-specifier*) and ‘(array ,(upgraded-array-element-type ’*type-specifier*)) refer to the same set of specialized <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> representations. For all *T1* and *T2* other than \*, the intersection of (array *T1*) and (array *T2*) is the empty set if and only if they refer to <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> of different, distinct specialized representations. 
 
 
 
@@ -112,11 +112,11 @@ if and only if
 
 
 
-**subtypep** 
+<ClLinks styled={true} term={"subtypep"}><b>subtypep</b></ClLinks> 
 
 
 
-return two different *type specifiers* that always refer to the same sets of *objects*. 
+return two different *type specifiers* that always refer to the same sets of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>. 
 
 
 
@@ -124,7 +124,7 @@ For all type-specifiers *T1* and *T2* other than \*,
 
 
 
-(subtypep ’(complex T1) ’(complex T2)) → true, *true* 
+(subtypep ’(complex T1) ’(complex T2)) → true, <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> 
 
 
 
@@ -132,15 +132,15 @@ if:
 
 
 
-1\. T1 is a *subtype* of T2, or 
+1\. T1 is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of T2, or 
 
 
 
-2\. (upgraded-complex-part-type ’*T1*) and (upgraded-complex-part-type ’*T2*) return two different *type specifiers* that always refer to the same sets of *objects*; in this case, (complex *T1*) and (complex *T2*) both refer to the same specialized representation. 
+2\. (upgraded-complex-part-type ’*T1*) and (upgraded-complex-part-type ’*T2*) return two different *type specifiers* that always refer to the same sets of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>; in this case, (complex *T1*) and (complex *T2*) both refer to the same specialized representation. 
 
 
 
-The *values* are *false* and *true* otherwise. 
+The <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> are <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> and <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> otherwise. 
 
 
 
@@ -152,7 +152,7 @@ The form
 
 
 
-must return *true* in all implementations, but 
+must return <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> in all implementations, but 
 
 
 
@@ -160,7 +160,7 @@ must return *true* in all implementations, but
 
 
 
-returns *true* only in implementations that do not have a specialized *array* representation for *single floats* distinct from that for other *floats*. 
+returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> only in implementations that do not have a specialized <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> representation for *single floats* distinct from that for other <ClLinks styled={true} term={"float"}><i>floats</i></ClLinks>. 
 
 
 
@@ -204,7 +204,7 @@ Section 4.2 (Types)
 
 
 
-The small differences between the **subtypep** specification for the **array** and **complex** types are necessary because there is no creation function for *complexes* which allows the specification of the resultant part type independently of the actual types of the parts. Thus in the case of the *type* **complex**, the actual type of the parts is referred to, although a *number* can be a member of more than one *type*. For example, 17 is of *type* (mod 18) as well as *type* (mod 256) and *type* **integer**; and 2.3f5 is of *type* **single-float** as well as *type* **float**. 
+The small differences between the <ClLinks styled={true} term={"subtypep"}><b>subtypep</b></ClLinks> specification for the <ClLinks styled={true} term={"array"}><b>array</b></ClLinks> and <ClLinks styled={true} term={"complex"}><b>complex</b></ClLinks> types are necessary because there is no creation function for *complexes* which allows the specification of the resultant part type independently of the actual types of the parts. Thus in the case of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"complex"}><b>complex</b></ClLinks>, the actual type of the parts is referred to, although a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> can be a member of more than one <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>. For example, 17 is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> (mod 18) as well as <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> (mod 256) and <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"integer"}><b>integer</b></ClLinks>; and 2.3f5 is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks> as well as <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"float"}><b>float</b></ClLinks>. 
 
 
 

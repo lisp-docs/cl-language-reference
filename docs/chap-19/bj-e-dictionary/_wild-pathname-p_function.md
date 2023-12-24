@@ -1,4 +1,4 @@
-**wild-pathname-p** *Function* 
+**wild-pathname-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**wild-pathname-p** *pathname* &amp;optional *field-key → generalized-boolean* 
+<ClLinks styled={true} term={"wild-pathname-p"}><b>wild-pathname-p</b></ClLinks> <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> &amp;optional *field-key → generalized-boolean* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*pathname*—a *pathname designator* . 
+<ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>—a *pathname designator* . 
 
 
 
-*Field-key*—one of :host, :device :directory, :name, :type, :version, or **nil**. 
+*Field-key*—one of :host, :device :directory, :name, :type, :version, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-**wild-pathname-p** tests *pathname* for the presence of wildcard components. 
+<ClLinks styled={true} term={"wild-pathname-p"}><b>wild-pathname-p</b></ClLinks> tests <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> for the presence of wildcard components. 
 
 
 
-If *pathname* is a *pathname* (as returned by **pathname**) it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
+If <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> is a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> (as returned by <ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks>) it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
 
 
 
-If *field-key* is not supplied or **nil**, **wild-pathname-p** returns true if *pathname* has any wildcard components, **nil** if *pathname* has none. If *field-key* is *non-nil*, **wild-pathname-p** returns true if the indicated component of *pathname* is a wildcard, **nil** if the component is not a wildcard. 
+If *field-key* is not supplied or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, <ClLinks styled={true} term={"wild-pathname-p"}><b>wild-pathname-p</b></ClLinks> returns true if <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> has any wildcard components, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> has none. If *field-key* is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, <ClLinks styled={true} term={"wild-pathname-p"}><b>wild-pathname-p</b></ClLinks> returns true if the indicated component of <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> is a wildcard, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if the component is not a wildcard. 
 
 
 
@@ -60,7 +60,7 @@ If *field-key* is not supplied or **nil**, **wild-pathname-p** returns true if *
 
 
 
-If *pathname* is not a *pathname*, a *string*, or a *stream associated with a file* an error of *type* **type-error** is signaled. 
+If <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> is not a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>, a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, or a *stream associated with a file* an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
 
 
 
@@ -68,7 +68,7 @@ If *pathname* is not a *pathname*, a *string*, or a *stream associated with a fi
 
 
 
-**pathname**, **logical-pathname**, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks styled={true} term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 

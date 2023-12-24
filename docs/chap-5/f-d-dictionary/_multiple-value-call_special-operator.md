@@ -6,7 +6,7 @@
 
 
 
-**multiple-value-call** *function-form form*\* *! \{result\}*\* 
+<ClLinks styled={true} term={"multiple-value-call"}><b>multiple-value-call</b></ClLinks> *function-form form*\* *! \{result\}*\* 
 
 
 
@@ -14,19 +14,19 @@
 
 
 
-*function-form*—a *form*; evaluated to produce *function*. 
+*function-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated to produce <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
 
 
 
-*function*—a *function designator* resulting from the evaluation of *function-form*. 
+<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a *function designator* resulting from the evaluation of *function-form*. 
 
 
 
-*form*—a *form*. 
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*results*—the *values* returned by the *function*. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-Applies *function* to a *list* of the *objects* collected from groups of *multiple values*<sub>2</sub>. 
+Applies <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> to a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> collected from groups of *multiple values*<sub>2</sub>. 
 
 
 
-**multiple-value-call** first evaluates the *function-form* to obtain *function*, and then evaluates each *form*. All the values of each *form* are gathered together (not just one value from each) and given as arguments to the *function*. 
+<ClLinks styled={true} term={"multiple-value-call"}><b>multiple-value-call</b></ClLinks> first evaluates the *function-form* to obtain <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, and then evaluates each <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. All the values of each <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> are gathered together (not just one value from each) and given as arguments to the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -57,7 +57,7 @@ Applies *function* to a *list* of the *objects* collected from groups of *multip
 
 
 
-**multiple-value-list**, **multiple-value-bind** 
+<ClLinks styled={true} term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks>, <ClLinks styled={true} term={"multiple-value-bind"}><b>multiple-value-bind</b></ClLinks> 
 
 
 

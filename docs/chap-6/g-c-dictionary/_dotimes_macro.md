@@ -1,4 +1,4 @@
-**dotimes** *Macro* 
+**dotimes** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**dotimes** (*var count-form* [*result-form*]) *\{declaration\}*\* *\{tag | statement\}*\* 
+<ClLinks styled={true} term={"dotimes"}><b>dotimes</b></ClLinks> (*var count-form* [*result-form*]) <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *\{tag | statement\}*\* 
 
 
 
@@ -18,23 +18,23 @@
 
 
 
-*var*—a *symbol*. 
+*var*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*count-form*—a *form*. 
+*count-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*result-form*—a *form*. 
+*result-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*declaration*—a **declare** *expression*; not evaluated. 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*tag*—a *go tag*; not evaluated. 
+<ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>—a *go tag*; not evaluated. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-*results*—if a **return** or **return-from** form is executed, the *values* passed from that *form*; otherwise, the *values* returned by the *result-form* or **nil** if there is no *result-form*. 
+*results*—if a <ClLinks styled={true} term={"return"}><b>return</b></ClLinks> or <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks> form is executed, the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> passed from that <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; otherwise, the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the *result-form* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if there is no *result-form*. 
 
 
 
@@ -50,31 +50,31 @@
 
 
 
-**dotimes** iterates over a series of *integers*. 
+<ClLinks styled={true} term={"dotimes"}><b>dotimes</b></ClLinks> iterates over a series of *integers*. 
 
 
 
-**dotimes** evaluates *count-form*, which should produce an *integer* . If *count-form* is zero or negative, the body is not executed. **dotimes** then executes the body once for each *integer* from 0 up to but not including the value of *count-form*, in the order in which the *tags* and *statements* occur, with *var* 
+<ClLinks styled={true} term={"dotimes"}><b>dotimes</b></ClLinks> evaluates *count-form*, which should produce an *integer* . If *count-form* is zero or negative, the body is not executed. <ClLinks styled={true} term={"dotimes"}><b>dotimes</b></ClLinks> then executes the body once for each *integer* from 0 up to but not including the value of *count-form*, in the order in which the <ClLinks styled={true} term={"tag"}><i>tags</i></ClLinks> and *statements* occur, with *var* 
 
 
 
-bound to each *integer* . Then *result-form* is evaluated. At the time *result-form* is processed, *var* is bound to the number of times the body was executed. *Tags* label *statements*. 
+bound to each *integer* . Then *result-form* is evaluated. At the time *result-form* is processed, *var* is bound to the number of times the body was executed. <ClLinks styled={true} term={"tag"}><i>Tags</i></ClLinks> label *statements*. 
 
 
 
-An *implicit block* named **nil** surrounds **dotimes**. **return** may be used to terminate the loop immediately without performing any further iterations, returning zero or more *values*. 
+An *implicit block* named <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> surrounds <ClLinks styled={true} term={"dotimes"}><b>dotimes</b></ClLinks>. <ClLinks styled={true} term={"return"}><b>return</b></ClLinks> may be used to terminate the loop immediately without performing any further iterations, returning zero or more <ClLinks styled={true} term={"value"}><i>values</i></ClLinks>. 
 
 
 
-The body of the loop is an *implicit tagbody*; it may contain tags to serve as the targets of **go** statements. Declarations may appear before the body of the loop. 
+The body of the loop is an *implicit tagbody*; it may contain tags to serve as the targets of <ClLinks styled={true} term={"go"}><b>go</b></ClLinks> statements. Declarations may appear before the body of the loop. 
 
 
 
-The *scope* of the binding of *var* does not include the *count-form*, but the *result-form* is included. 
+The <ClLinks styled={true} term={"scope"}><i>scope</i></ClLinks> of the binding of *var* does not include the *count-form*, but the *result-form* is included. 
 
 
 
-It is *implementation-dependent* whether **dotimes** *establishes* a new *binding* of *var* on each iteration or whether it *establishes* a binding for *var* once at the beginning and then *assigns* it on any subsequent iterations. 
+It is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether <ClLinks styled={true} term={"dotimes"}><b>dotimes</b></ClLinks> *establishes* a new <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> of *var* on each iteration or whether it *establishes* a binding for *var* once at the beginning and then <ClLinks styled={true} term={"assign"}><i>assigns</i></ClLinks> it on any subsequent iterations. 
 
 
 
@@ -130,7 +130,7 @@ a yam, a hat, a canal–Panama!")) → T
 
 
 
-**do**, **dolist**, **tagbody** 
+<ClLinks styled={true} term={"do"}><b>do</b></ClLinks>, <ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks>, <ClLinks styled={true} term={"tagbody"}><b>tagbody</b></ClLinks> 
 
 
 
@@ -138,7 +138,7 @@ a yam, a hat, a canal–Panama!")) → T
 
 
 
-**go** may be used within the body of **dotimes** to transfer control to a statement labeled by a *tag*. 
+<ClLinks styled={true} term={"go"}><b>go</b></ClLinks> may be used within the body of <ClLinks styled={true} term={"dotimes"}><b>dotimes</b></ClLinks> to transfer control to a statement labeled by a <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>. 
 
 
 
@@ -150,7 +150,7 @@ a yam, a hat, a canal–Panama!")) → T
 
 
 
-**dolist** 
+<ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks> 
 
 
 

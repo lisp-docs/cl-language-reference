@@ -1,4 +1,4 @@
-**compiled-function-p** *Function* 
+**compiled-function-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**compiled-function-p** *object → generalized-boolean* 
+<ClLinks styled={true} term={"compiled-function-p"}><b>compiled-function-p</b></ClLinks> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns *true* if *object* is of *type* **compiled-function**; otherwise, returns *false*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"compiled-function"}><b>compiled-function</b></ClLinks>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -65,7 +65,7 @@ Returns *true* if *object* is of *type* **compiled-function**; otherwise, return
 
 
 
-**compile**, **compile-file**, **compiled-function** 
+<ClLinks styled={true} term={"compile"}><b>compile</b></ClLinks>, <ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks styled={true} term={"compiled-function"}><b>compiled-function</b></ClLinks> 
 
 
 
@@ -73,7 +73,7 @@ Returns *true* if *object* is of *type* **compiled-function**; otherwise, return
 
 
 
-(compiled-function-p *object*) *≡* (typep *object* ’compiled-function) 
+(compiled-function-p <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’compiled-function) 
 
 
 

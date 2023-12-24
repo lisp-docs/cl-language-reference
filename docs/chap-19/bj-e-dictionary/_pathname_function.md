@@ -1,4 +1,4 @@
-**pathname** *Function* 
+**pathname** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**pathname** *pathspec → pathname* 
+<ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks> *pathspec → pathname* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*pathname*—a *pathname*. 
+<ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>—a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the *pathname* denoted by *pathspec*. 
+Returns the <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> denoted by *pathspec*. 
 
 
 
@@ -42,11 +42,11 @@ Returns the *pathname* denoted by *pathspec*.
 
 
 
-**pathname** 
+<ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks> 
 
 
 
-If the *pathspec designator* is a *stream*, the *stream* can be either open or closed; in both cases, the **pathname** returned corresponds to the *filename* used to open the *file*. **pathname** returns the same *pathname* for a *file stream* after it is closed as it did when it was open. 
+If the *pathspec designator* is a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> can be either open or closed; in both cases, the <ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks> returned corresponds to the <ClLinks styled={true} term={"filename"}><i>filename</i></ClLinks> used to open the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks>. <ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks> returns the same <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> for a *file stream* after it is closed as it did when it was open. 
 
 
 
@@ -97,7 +97,7 @@ If the *pathspec designator* is a *file stream* created by opening a *logical pa
 
 
 
-**pathname**, **logical-pathname**, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as 
+<ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks styled={true} term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as 
 
 
 

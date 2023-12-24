@@ -30,7 +30,7 @@ could be represented in this way:
 
 
 
-Without this notation, but with **\*print-length\*** set to 10 and **\*print-circle\*** set to **nil**, the structure would print in this way: 
+Without this notation, but with <ClLinks styled={true} term={"print-length"}><b>\*print-length\*</b></ClLinks> set to 10 and <ClLinks styled={true} term={"print-circle"}><b>\*print-circle\*</b></ClLinks> set to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, the structure would print in this way: 
 
 
 
@@ -38,7 +38,7 @@ Without this notation, but with **\*print-length\*** set to 10 and **\*print-cir
 
 
 
-A reference #*n*# may only occur after a label #*n*=; forward references are not permitted. The reference may not appear as the labeled object itself (that is, #*n*=#*n*#) may not be written because the *object* labeled by #*n*= is not well defined in this case. 
+A reference #*n*# may only occur after a label #*n*=; forward references are not permitted. The reference may not appear as the labeled object itself (that is, #*n*=#*n*#) may not be written because the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> labeled by #*n*= is not well defined in this case. 
 
 
 

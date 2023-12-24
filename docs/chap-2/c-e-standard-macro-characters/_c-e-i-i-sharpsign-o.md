@@ -18,7 +18,7 @@
 
 
 
-The consequences are undefined if the token immediately following the #O does not have the syntax of an octal (*i.e.*, radix 8) *rational*.  
+The consequences are undefined if the token immediately following the #O does not have the syntax of an octal (*i.e.*, radix 8) <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks>.  
 
 
 

@@ -1,4 +1,4 @@
-**copy-readtable** *Function* 
+**copy-readtable** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**copy-readtable** &amp;optional *from-readtable to-readtable → readtable* 
+<ClLinks styled={true} term={"copy-readtable"}><b>copy-readtable</b></ClLinks> &amp;optional *from-readtable to-readtable → readtable* 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-*to-readtable*—a *readtable* or **nil**. The default is **nil**. 
+*to-readtable*—a <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*readtable*—the *to-readtable* if it is *non-nil*, or else a *fresh readtable*. 
+<ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>—the *to-readtable* if it is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, or else a *fresh readtable*. 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-**copy-readtable** copies *from-readtable*. 
+<ClLinks styled={true} term={"copy-readtable"}><b>copy-readtable</b></ClLinks> copies *from-readtable*. 
 
 
 
-If *to-readtable* is **nil**, a new *readtable* is created and returned. Otherwise the *readtable* specified by *to-readtable* is modified and returned. 
+If *to-readtable* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, a new <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> is created and returned. Otherwise the <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> specified by *to-readtable* is modified and returned. 
 
 
 
-**copy-readtable** copies the setting of **readtable-case**. 
+<ClLinks styled={true} term={"copy-readtable"}><b>copy-readtable</b></ClLinks> copies the setting of <ClLinks styled={true} term={"readtable-case"}><b>readtable-case</b></ClLinks>. 
 
 
 
@@ -63,7 +63,7 @@ zvar → 123
 
 
 
-**readtable**, **\*readtable\*** 
+<ClLinks styled={true} term={"readtable"}><b>readtable</b></ClLinks>, <ClLinks styled={true} term={"readtable"}><b>\*readtable\*</b></ClLinks> 
 
 
 
@@ -87,7 +87,7 @@ On the other hand,
 
 
 
-replaces the current *readtable* with a copy of itself. This is useful if you want to save a copy of a readtable for later use, protected from alteration in the meantime. It is also useful if you want to locally bind the readtable to a copy of itself, as in: 
+replaces the current <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> with a copy of itself. This is useful if you want to save a copy of a readtable for later use, protected from alteration in the meantime. It is also useful if you want to locally bind the readtable to a copy of itself, as in: 
 
 
 

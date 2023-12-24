@@ -1,4 +1,4 @@
-**parse-namestring** *Function* 
+**parse-namestring** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**parse-namestring** *thing* &amp;optional *host default-pathname* &amp;key *start end junk-allowed → pathname, position* 
+<ClLinks styled={true} term={"parse-namestring"}><b>parse-namestring</b></ClLinks> *thing* &amp;optional *host default-pathname* &amp;key *start end junk-allowed → pathname, position* 
 
 
 
@@ -14,27 +14,23 @@
 
 
 
-*thing*—a *string*, a *pathname*, or a *stream associated with a file*. 
+*thing*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>, or a *stream associated with a file*. 
 
 
 
-*host*—a *valid pathname host*, a *logical host*, or **nil**. 
+*host*—a *valid pathname host*, a *logical host*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*default-pathname*—a *pathname designator* . The default is the *value* of 
+*default-pathname*—a *pathname designator* . The default is the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of 
 
 
 
-**\*default-pathname-defaults\***. 
-
-
+<ClLinks styled={true} term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></ClLinks>. 
 
 
 
 
-
- 
 
 
 
@@ -42,19 +38,23 @@
 
 
 
-**parse-namestring** 
+ 
 
 
 
-*start*, *end*—*bounding index designators* of *thing*. The defaults for *start* and *end* are 0 and **nil**, respectively. 
+<ClLinks styled={true} term={"parse-namestring"}><b>parse-namestring</b></ClLinks> 
 
 
 
-*junk-allowed*—a *generalized boolean*. The default is *false*. 
+*start*, *end*—*bounding index designators* of *thing*. The defaults for *start* and *end* are 0 and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
-*pathname*—a *pathname*, or **nil**. 
+*junk-allowed*—a *generalized boolean*. The default is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+
+
+
+<ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>—a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@
 
 
 
-Converts *thing* into a *pathname*. 
+Converts *thing* into a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>. 
 
 
 
@@ -74,19 +74,19 @@ The *host* supplies a host name with respect to which the parsing occurs.
 
 
 
-If *thing* is a *stream associated with a file*, processing proceeds as if the *pathname* used to open that *file* had been supplied instead. 
+If *thing* is a *stream associated with a file*, processing proceeds as if the <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> used to open that <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> had been supplied instead. 
 
 
 
-If *thing* is a *pathname*, the *host* and the host component of *thing* are compared. If they match, two values are immediately returned: *thing* and *start*; otherwise (if they do not match), an error is signaled. 
+If *thing* is a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>, the *host* and the host component of *thing* are compared. If they match, two values are immediately returned: *thing* and *start*; otherwise (if they do not match), an error is signaled. 
 
 
 
-Otherwise (if *thing* is a *string*), **parse-namestring** parses the name of a *file* within the substring of *thing* bounded by *start* and *end*. 
+Otherwise (if *thing* is a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>), <ClLinks styled={true} term={"parse-namestring"}><b>parse-namestring</b></ClLinks> parses the name of a <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> within the substring of *thing* bounded by *start* and *end*. 
 
 
 
-If *thing* is a *string* then the substring of *thing bounded* by *start* and *end* is parsed into a *pathname* as follows: 
+If *thing* is a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> then the substring of *thing bounded* by *start* and *end* is parsed into a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> as follows: 
 
 
 
@@ -94,19 +94,19 @@ If *thing* is a *string* then the substring of *thing bounded* by *start* and *e
 
 
 
-*•* If *host* is **nil** and *thing* is a syntactically valid *logical pathname namestring* containing an explicit host, then it is parsed as a *logical pathname namestring*. 
+*•* If *host* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> and *thing* is a syntactically valid *logical pathname namestring* containing an explicit host, then it is parsed as a *logical pathname namestring*. 
 
 
 
-*•* If *host* is **nil**, *default-pathname* is a *logical pathname*, and *thing* is a syntactically valid *logical pathname namestring* without an explicit host, then it is parsed as a *logical pathname namestring* on the host that is the host component of *default-pathname*. 
+*•* If *host* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, *default-pathname* is a *logical pathname*, and *thing* is a syntactically valid *logical pathname namestring* without an explicit host, then it is parsed as a *logical pathname namestring* on the host that is the host component of *default-pathname*. 
 
 
 
-*•* Otherwise, the parsing of *thing* is *implementation-defined*. 
+*•* Otherwise, the parsing of *thing* is <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
 
 
 
-In the first of these cases, the host portion of the *logical pathname* namestring and its following *colon* are optional. 
+In the first of these cases, the host portion of the *logical pathname* namestring and its following <ClLinks styled={true} term={"colon"}><i>colon</i></ClLinks> are optional. 
 
 
 
@@ -114,7 +114,7 @@ If the host portion of the namestring and *host* are both present and do not mat
 
 
 
-If *junk-allowed* is *true*, then the *primary value* is the *pathname* parsed or, if no syntactically correct *pathname* was seen, **nil**. If *junk-allowed* is *false*, then the entire substring is scanned, and the *primary value* is the *pathname* parsed. 
+If *junk-allowed* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, then the *primary value* is the <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> parsed or, if no syntactically correct <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> was seen, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. If *junk-allowed* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, then the entire substring is scanned, and the *primary value* is the <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> parsed. 
 
 
 
@@ -130,15 +130,15 @@ In either case, the *secondary value* is the index into *thing* of the delimiter
 
 
 
-parse, or the index beyond the substring if the parse terminated at the end of the substring (as will always be the case if *junk-allowed* is *false*). 
+parse, or the index beyond the substring if the parse terminated at the end of the substring (as will always be the case if *junk-allowed* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>). 
 
 
 
-Parsing a *null string* always succeeds, producing a *pathname* with all components (except the host) equal to **nil**. 
+Parsing a *null string* always succeeds, producing a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> with all components (except the host) equal to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-If *thing* contains an explicit host name and no explicit device name, then it is *implementation defined* whether **parse-namestring** will supply the standard default device for that host as the device component of the resulting *pathname*. 
+If *thing* contains an explicit host name and no explicit device name, then it is *implementation defined* whether <ClLinks styled={true} term={"parse-namestring"}><b>parse-namestring</b></ClLinks> will supply the standard default device for that host as the device component of the resulting <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>. 
 
 
 
@@ -166,15 +166,15 @@ If *thing* contains an explicit host name and no explicit device name, then it i
 
 
 
-If *junk-allowed* is *false*, an error of *type* **parse-error** is signaled if *thing* does not consist entirely of the representation of a *pathname*, possibly surrounded on either side by *whitespace*<sub>1</sub> characters if that is appropriate to the cultural conventions of the implementation. 
+If *junk-allowed* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"parse-error"}><b>parse-error</b></ClLinks> is signaled if *thing* does not consist entirely of the representation of a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>, possibly surrounded on either side by <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> characters if that is appropriate to the cultural conventions of the implementation. 
 
 
 
-If *host* is supplied and not **nil**, and *thing* contains a manifest host name, an error of *type* **error** is signaled if the hosts do not match. 
+If *host* is supplied and not <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, and *thing* contains a manifest host name, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> is signaled if the hosts do not match. 
 
 
 
-If *thing* is a *logical pathname* namestring and if the host portion of the namestring and *host* are both present and do not match, an error of *type* **error** is signaled. 
+If *thing* is a *logical pathname* namestring and if the host portion of the namestring and *host* are both present and do not match, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> is signaled. 
 
 
 
@@ -182,7 +182,7 @@ If *thing* is a *logical pathname* namestring and if the host portion of the nam
 
 
 
-**pathname**, **logical-pathname**, Section 20.1 (File System Concepts), Section 19.2.2.2.3 (:UNSPE CIFIC as a Component Value), Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks styled={true} term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.2.2.2.3 (:UNSPE CIFIC as a Component Value), Section 19.1.2 (Pathnames as Filenames) 
 
 
 
@@ -198,7 +198,7 @@ If *thing* is a *logical pathname* namestring and if the host portion of the nam
 
 
 
-**wild-pathname-p** 
+<ClLinks styled={true} term={"wild-pathname-p"}><b>wild-pathname-p</b></ClLinks> 
 
 
 

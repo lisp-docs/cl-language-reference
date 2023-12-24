@@ -2,11 +2,11 @@
 
 
 
-A *form* that is neither a *symbol* nor a *cons* is defined to be a *self-evaluating object*. *Evaluating* such an *object yields* the *same object* as a result. 
+A <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that is neither a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> nor a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> is defined to be a *self-evaluating object<ClLinks styled={true} term={"t"}><i>. </i></ClLinks>Evaluating* such an *object yields* the *same object* as a result. 
 
 
 
-Certain specific *symbols* and *conses* might also happen to be “self-evaluating” but only as a special case of a more general set of rules for the *evaluation* of *symbols* and *conses*; such *objects* are not considered to be *self-evaluating objects*. 
+Certain specific <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> and *conses* might also happen to be “self-evaluating” but only as a special case of a more general set of rules for the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> and *conses*; such <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> are not considered to be *self-evaluating objects*. 
 
 
 

@@ -1,4 +1,4 @@
-**hash-table-count** *Function* 
+**hash-table-count** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**hash-table-count** *hash-table → count* 
+<ClLinks styled={true} term={"hash-table-count"}><b>hash-table-count</b></ClLinks> *hash-table → count* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the number of entries in the *hash-table*. If *hash-table* has just been created or newly cleared (see **clrhash**) the entry count is 0. 
+Returns the number of entries in the *hash-table*. If *hash-table* has just been created or newly cleared (see <ClLinks styled={true} term={"clrhash"}><b>clrhash</b></ClLinks>) the entry count is 0. 
 
 
 
@@ -45,7 +45,7 @@ Returns the number of entries in the *hash-table*. If *hash-table* has just been
 
 
 
-**clrhash**, **remhash**, **setf** of **gethash** 
+<ClLinks styled={true} term={"clrhash"}><b>clrhash</b></ClLinks>, <ClLinks styled={true} term={"remhash"}><b>remhash</b></ClLinks>, <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"gethash"}><b>gethash</b></ClLinks> 
 
 
 
@@ -53,7 +53,7 @@ Returns the number of entries in the *hash-table*. If *hash-table* has just been
 
 
 
-**hash-table-size** 
+<ClLinks styled={true} term={"hash-table-size"}><b>hash-table-size</b></ClLinks> 
 
 
 
@@ -73,7 +73,7 @@ Returns the number of entries in the *hash-table*. If *hash-table* has just been
 
 
 
-The following relationships are functionally correct, although in practice using **hash-table-count** is probably much faster: 
+The following relationships are functionally correct, although in practice using <ClLinks styled={true} term={"hash-table-count"}><b>hash-table-count</b></ClLinks> is probably much faster: 
 
 
 

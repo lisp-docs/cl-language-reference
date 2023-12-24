@@ -6,7 +6,7 @@
 
 
 
-**warning**, **condition**, **t** 
+<ClLinks styled={true} term={"warning"}><b>warning</b></ClLinks>, <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The *type* **warning** consists of all types of warnings. 
+The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"warning"}><b>warning</b></ClLinks> consists of all types of warnings. 
 
 
 
@@ -34,7 +34,7 @@ The *type* **warning** consists of all types of warnings.
 
 
 
-**style-warning** 
+<ClLinks styled={true} term={"style-warning"}><b>style-warning</b></ClLinks> 
 
 
 

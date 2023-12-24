@@ -6,7 +6,7 @@
 
 
 
-**no-next-method** *generic-function method* &amp;rest *args → \{result\}*\* 
+<ClLinks styled={true} term={"no-next-method"}><b>no-next-method</b></ClLinks> *generic-function method* &amp;rest *args → \{result\}*\* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-**no-next-method** (*generic-function* **standard-generic-function**) 
+<ClLinks styled={true} term={"no-next-method"}><b>no-next-method</b></ClLinks> (*generic-function* <ClLinks styled={true} term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks>) 
 
 
 
-(*method* **standard-method**) 
+(<ClLinks styled={true} term={"method"}><i>method</i></ClLinks> <ClLinks styled={true} term={"standard-method"}><b>standard-method</b></ClLinks>) 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-*generic-function* – *generic function* to which *method* belongs. 
+*generic-function* – *generic function* to which <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> belongs. 
 
 
 
-*method* – *method* that contained the call to **call-next-method** for which there is no next *method*. *args* – arguments to **call-next-method**. 
+<ClLinks styled={true} term={"method"}><i>method</i></ClLinks> – <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> that contained the call to <ClLinks styled={true} term={"call-next-method"}><b>call-next-method</b></ClLinks> for which there is no next <ClLinks styled={true} term={"method"}><i>method</i></ClLinks>. *args* – arguments to <ClLinks styled={true} term={"call-next-method"}><b>call-next-method</b></ClLinks>. 
 
 
 
-*result*—an *object*. 
+*result*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-The *generic function* **no-next-method** is called by **call-next-method** when there is no *next method*. 
+The *generic function* <ClLinks styled={true} term={"no-next-method"}><b>no-next-method</b></ClLinks> is called by <ClLinks styled={true} term={"call-next-method"}><b>call-next-method</b></ClLinks> when there is no *next method*. 
 
 
 
-The *generic function* **no-next-method** is not intended to be called by programmers. Programmers may write *methods* for it. 
+The *generic function* <ClLinks styled={true} term={"no-next-method"}><b>no-next-method</b></ClLinks> is not intended to be called by programmers. Programmers may write <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> for it. 
 
 
 
@@ -58,7 +58,7 @@ The *generic function* **no-next-method** is not intended to be called by progra
 
 
 
-The system-supplied *method* on **no-next-method** signals an error of *type* **error**. 
+The system-supplied <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> on <ClLinks styled={true} term={"no-next-method"}><b>no-next-method</b></ClLinks> signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ The system-supplied *method* on **no-next-method** signals an error of *type* **
 
 
 
-**call-next-method** 
+<ClLinks styled={true} term={"call-next-method"}><b>call-next-method</b></ClLinks> 
 
 
 

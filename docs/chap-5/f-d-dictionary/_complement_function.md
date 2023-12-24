@@ -1,4 +1,4 @@
-**complement** *Function* 
+**complement** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**complement** *function → complement-function* 
+<ClLinks styled={true} term={"complement"}><b>complement</b></ClLinks> *function → complement-function* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*function*—a *function*. 
+<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
 
 
 
-*complement-function*—a *function*. 
+*complement-function*—a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a *function* that takes the same *arguments* as *function*, and has the same side-effect behavior as *function*, but returns only a single value: a *generalized boolean* with the opposite truth value of that which would be returned as the *primary value* of *function*. That is, when the *function* would have returned *true* as its *primary value* the *complement-function* returns *false*, and when the *function* would have returned *false* as its *primary value* the *complement-function* returns *true*. 
+Returns a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> that takes the same <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> as <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, and has the same side-effect behavior as <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, but returns only a single value: a *generalized boolean* with the opposite truth value of that which would be returned as the *primary value* of <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. That is, when the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> would have returned <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> as its *primary value* the *complement-function* returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, and when the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> would have returned <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> as its *primary value* the *complement-function* returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 
 
 
 
@@ -43,7 +43,7 @@ Returns a *function* that takes the same *arguments* as *function*, and has the 
 
 
 
-**not** 
+<ClLinks styled={true} term={"not"}><b>not</b></ClLinks> 
 
 
 
@@ -59,7 +59,7 @@ In Common Lisp, functions with names like “*xxx*-if-not” are related to func
 
 
 
-(*xxx*-if-not *f* . *arguments*) *≡* (*xxx*-if (complement *f*) . *arguments*) 
+(*xxx*-if-not *f* . <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>) *≡* (*xxx*-if (complement *f*) . <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>) 
 
 
 
@@ -87,7 +87,7 @@ Data and Control
 
 
 
-Note that since the “*xxx*-if-not” *functions* and the :test-not arguments have been deprecated, uses of “*xxx*-if” *functions* or :test arguments with **complement** are preferred. 
+Note that since the “*xxx*-if-not” <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> and the :test-not arguments have been deprecated, uses of “*xxx*-if” <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> or :test arguments with <ClLinks styled={true} term={"complement"}><b>complement</b></ClLinks> are preferred. 
 
 
 

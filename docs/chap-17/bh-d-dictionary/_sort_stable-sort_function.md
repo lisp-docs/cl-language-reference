@@ -1,4 +1,4 @@
-**sort, stable-sort** *Function* 
+**sort, stable-sort** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**sort** *sequence predicate* &amp;key *key → sorted-sequence* 
+<ClLinks styled={true} term={"sort"}><b>sort</b></ClLinks> *sequence predicate* &amp;key *key → sorted-sequence* 
 
 
 
-**stable-sort** *sequence predicate* &amp;key *key → sorted-sequence* 
+<ClLinks styled={true} term={"stable-sort"}><b>stable-sort</b></ClLinks> *sequence predicate* &amp;key *key → sorted-sequence* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*predicate*—a *designator* for a *function* of two arguments that returns a *generalized boolean*. *key*—a *designator* for a *function* of one argument, or **nil**. 
+<ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two arguments that returns a *generalized boolean*. *key*—a *designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -34,27 +34,27 @@
 
 
 
-**sort** and **stable-sort** destructively sort *sequences* according to the order determined by the *predicate* function. 
+<ClLinks styled={true} term={"sort"}><b>sort</b></ClLinks> and <ClLinks styled={true} term={"stable-sort"}><b>stable-sort</b></ClLinks> destructively sort *sequences* according to the order determined by the <ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks> function. 
 
 
 
-If *sequence* is a *vector* , the result is a *vector* that has the same *actual array element type* as *sequence*. If *sequence* is a *list*, the result is a *list*. 
+If *sequence* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> , the result is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> that has the same *actual array element type* as *sequence*. If *sequence* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, the result is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
-**sort** determines the relationship between two elements by giving keys extracted from the elements to the *predicate*. The first argument to the *predicate* function is the part of one element of *sequence* extracted by the *key* function (if supplied); the second argument is the part of another element of *sequence* extracted by the *key* function (if supplied). *Predicate* should return *true* if and only if the first argument is strictly less than the second (in some appropriate sense). If the first argument is 
+<ClLinks styled={true} term={"sort"}><b>sort</b></ClLinks> determines the relationship between two elements by giving keys extracted from the elements to the <ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks>. The first argument to the <ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks> function is the part of one element of *sequence* extracted by the <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> function (if supplied); the second argument is the part of another element of *sequence* extracted by the <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> function (if supplied). <ClLinks styled={true} term={"predicate"}><i>Predicate</i></ClLinks> should return <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if and only if the first argument is strictly less than the second (in some appropriate sense). If the first argument is 
 
 
 
-greater than or equal to the second (in the appropriate sense), then the *predicate* should return *false*. 
+greater than or equal to the second (in the appropriate sense), then the <ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks> should return <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
-The argument to the *key* function is the *sequence* element. The return value of the *key* function becomes an argument to *predicate*. If *key* is not supplied or **nil**, the *sequence* element itself is used. There is no guarantee on the number of times the *key* will be called. 
+The argument to the <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> function is the *sequence* element. The return value of the <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> function becomes an argument to <ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks>. If <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> is not supplied or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, the *sequence* element itself is used. There is no guarantee on the number of times the <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> will be called. 
 
 
 
-If the *key* and *predicate* always return, then the sorting operation will always terminate, producing a *sequence* containing the same *elements* as *sequence* (that is, the result is a permutation of *sequence*). This is guaranteed even if the *predicate* does not really consistently represent a total order (in which case the *elements* will be scrambled in some unpredictable way, but no *element* will be lost). If the *key* consistently returns meaningful keys, and the *predicate* does reflect some total ordering criterion on those keys, then the *elements* of the *sorted-sequence* will be properly sorted according to that ordering. 
+If the <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> and <ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks> always return, then the sorting operation will always terminate, producing a *sequence* containing the same <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> as *sequence* (that is, the result is a permutation of *sequence*). This is guaranteed even if the <ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks> does not really consistently represent a total order (in which case the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> will be scrambled in some unpredictable way, but no <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> will be lost). If the <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> consistently returns meaningful keys, and the <ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks> does reflect some total ordering criterion on those keys, then the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the *sorted-sequence* will be properly sorted according to that ordering. 
 
 
 
@@ -74,11 +74,11 @@ If the *key* and *predicate* always return, then the sorting operation will alwa
 
 
 
-The sorting operation performed by **sort** is not guaranteed stable. Elements considered equal by the *predicate* might or might not stay in their original order. The *predicate* is assumed to consider two elements x and y to be equal if (funcall *predicate x y*) and (funcall *predicate y x*) are both *false*. **stable-sort** guarantees stability. 
+The sorting operation performed by <ClLinks styled={true} term={"sort"}><b>sort</b></ClLinks> is not guaranteed stable. Elements considered equal by the <ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks> might or might not stay in their original order. The <ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks> is assumed to consider two elements x and y to be equal if (funcall *predicate x y*) and (funcall *predicate y x*) are both <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. <ClLinks styled={true} term={"stable-sort"}><b>stable-sort</b></ClLinks> guarantees stability. 
 
 
 
-The sorting operation can be destructive in all cases. In the case of a *vector* argument, this is accomplished by permuting the elements in place. In the case of a *list*, the *list* is destructively reordered in the same manner as for **nreverse**. 
+The sorting operation can be destructive in all cases. In the case of a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> argument, this is accomplished by permuting the elements in place. In the case of a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is destructively reordered in the same manner as for <ClLinks styled={true} term={"nreverse"}><b>nreverse</b></ClLinks>. 
 
 
 
@@ -134,7 +134,7 @@ The sorting operation can be destructive in all cases. In the case of a *vector*
 
 
 
-Should be prepared to signal an error of *type* **type-error** if *sequence* is not a *proper sequence*. 
+Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. 
 
 
 
@@ -142,7 +142,7 @@ Should be prepared to signal an error of *type* **type-error** if *sequence* is 
 
 
 
-**merge**, Section 3.2.1 (Compiler Terminology), Section 3.6 (Traversal Rules and Side Effects), Section 3.7 (Destructive Operations) 
+<ClLinks styled={true} term={"merge"}><b>merge</b></ClLinks>, Section 3.2.1 (Compiler Terminology), Section 3.6 (Traversal Rules and Side Effects), Section 3.7 (Destructive Operations) 
 
 
 
@@ -150,7 +150,7 @@ Should be prepared to signal an error of *type* **type-error** if *sequence* is 
 
 
 
-If *sequence* is a *vector* , the result might or might not be simple, and might or might not be *identical* to *sequence*. 
+If *sequence* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> , the result might or might not be simple, and might or might not be <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> to *sequence*. 
 
 
 

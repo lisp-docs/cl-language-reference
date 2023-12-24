@@ -1,4 +1,4 @@
-**file-length** *Function* 
+**file-length** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**file-length** *stream → length* 
+<ClLinks styled={true} term={"file-length"}><b>file-length</b></ClLinks> *stream → length* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*stream*—a *stream associated with a file*. 
+<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—a *stream associated with a file*. 
 
 
 
-*length*—a non-negative *integer* or **nil**. 
+<ClLinks styled={true} term={"length"}><i>length</i></ClLinks>—a non-negative *integer* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-**file-length** returns the length of *stream*, or **nil** if the length cannot be determined. 
+<ClLinks styled={true} term={"file-length"}><b>file-length</b></ClLinks> returns the length of <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if the length cannot be determined. 
 
 
 
-For a binary file, the length is measured in units of the *element type* of the *stream*. 
+For a binary file, the length is measured in units of the *element type* of the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
 
 **Examples:**
 ```lisp
@@ -52,7 +52,7 @@ For a binary file, the length is measured in units of the *element type* of the 
 
 
 
-Should signal an error of *type* **type-error** if *stream* is not a *stream associated with a file*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is not a *stream associated with a file*. 
 
 
 
@@ -60,7 +60,7 @@ Should signal an error of *type* **type-error** if *stream* is not a *stream ass
 
 
 
-**open** 
+<ClLinks styled={true} term={"open"}><b>open</b></ClLinks> 
 
 
 

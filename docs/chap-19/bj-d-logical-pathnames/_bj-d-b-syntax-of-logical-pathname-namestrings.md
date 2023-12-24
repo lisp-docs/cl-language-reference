@@ -2,7 +2,7 @@
 
 
 
-The syntax of a *logical pathname namestring* is as follows. (Note that unlike many notational descriptions in this document, this is a syntactic description of character sequences, not a structural description of *objects*.) 
+The syntax of a *logical pathname namestring* is as follows. (Note that unlike many notational descriptions in this document, this is a syntactic description of character sequences, not a structural description of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>.) 
 
 
 
@@ -14,7 +14,7 @@ The syntax of a *logical pathname namestring* is as follows. (Note that unlike m
 
 
 
-[*↓name*] [*type-marker ↓type* [*version-marker ↓version*]] 
+[<ClLinks styled={true} term={"name"}><i>↓name</i></ClLinks>] [*type-marker ↓type* [*version-marker ↓version*]] 
 
 
 
@@ -26,11 +26,11 @@ The syntax of a *logical pathname namestring* is as follows. (Note that unlike m
 
 
 
-*name::*=*↓word | ↓wildcard-word* 
+<ClLinks styled={true} term={"name"}><i>name::</i></ClLinks>=*↓word | ↓wildcard-word* 
 
 
 
-*type::*=*↓word | ↓wildcard-word* 
+<ClLinks styled={true} term={"type"}><i>type::</i></ClLinks>=*↓word | ↓wildcard-word* 
 
 
 
@@ -38,35 +38,35 @@ The syntax of a *logical pathname namestring* is as follows. (Note that unlike m
 
 
 
-*host-marker*—a *colon*. 
+*host-marker*—a <ClLinks styled={true} term={"colon"}><i>colon</i></ClLinks>. 
 
 
 
-*relative-directory-marker*—a *semicolon*. 
+*relative-directory-marker*—a <ClLinks styled={true} term={"semicolon"}><i>semicolon</i></ClLinks>. 
 
 
 
-*directory-marker*—a *semicolon*. 
+*directory-marker*—a <ClLinks styled={true} term={"semicolon"}><i>semicolon</i></ClLinks>. 
 
 
 
-*type-marker*—a *dot*. 
+*type-marker*—a <ClLinks styled={true} term={"dot"}><i>dot</i></ClLinks>. 
 
 
 
-*version-marker*—a *dot*. 
+*version-marker*—a <ClLinks styled={true} term={"dot"}><i>dot</i></ClLinks>. 
 
 
 
-*wild-inferiors-word*—The two character sequence “\*\*” (two *asterisks*). 
+*wild-inferiors-word*—The two character sequence “\*\*” (two <ClLinks styled={true} term={"asterisk"}><i>asterisks</i></ClLinks>). 
 
 
 
-*newest-word*—The six character sequence “newest” or the six character sequence “NEWEST”. *wildcard-version*—an *asterisk*. 
+*newest-word*—The six character sequence “newest” or the six character sequence “NEWEST”. *wildcard-version*—an <ClLinks styled={true} term={"asterisk"}><i>asterisk</i></ClLinks>. 
 
 
 
-*wildcard-word*—one or more *asterisks*, uppercase letters, digits, and hyphens, including at least one *asterisk*, with no two *asterisks* adjacent. 
+*wildcard-word*—one or more <ClLinks styled={true} term={"asterisk"}><i>asterisks</i></ClLinks>, uppercase letters, digits, and hyphens, including at least one <ClLinks styled={true} term={"asterisk"}><i>asterisk</i></ClLinks>, with no two <ClLinks styled={true} term={"asterisk"}><i>asterisks</i></ClLinks> adjacent. 
 
 
 

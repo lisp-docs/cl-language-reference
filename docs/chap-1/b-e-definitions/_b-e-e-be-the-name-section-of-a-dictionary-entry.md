@@ -6,7 +6,7 @@ This section introduces the dictionary entry. It is not explicitly labeled. It a
 
 
 
-In large print at left, the *defined name* appears; if more than one *defined name* is to be described by the entry, all such *names* are shown separated by commas. 
+In large print at left, the *defined name* appears; if more than one *defined name* is to be described by the entry, all such <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> are shown separated by commas. 
 
 
 
@@ -14,7 +14,7 @@ In somewhat smaller italic print at right is an indication of what kind of dicti
 
 
 
-*Accessor* 
+<ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -22,11 +22,11 @@ This is an *accessor function*.
 
 
 
-*Class* 
+<ClLinks styled={true} term={"class"}><i>Class</i></ClLinks> 
 
 
 
-This is a *class*. 
+This is a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ This is a *class*.
 
 
 
-This is a *subtype* of *type* **condition**. 
+This is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>. 
 
 
 
@@ -54,7 +54,7 @@ This is a *constant variable*.
 
 
 
-*Declaration* 
+<ClLinks styled={true} term={"declaration"}><i>Declaration</i></ClLinks> 
 
 
 
@@ -62,11 +62,11 @@ This is a *declaration identifier* .
 
 
 
-*Function* 
+<ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
-This is a *function*. 
+This is a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -74,7 +74,7 @@ This is a *function*.
 
 
 
-This is a *function* that is defined only lexically within the scope of some other *macro form*. 
+This is a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> that is defined only lexically within the scope of some other *macro form*. 
 
 
 
@@ -82,23 +82,23 @@ This is a *function* that is defined only lexically within the scope of some oth
 
 
 
-This is a *macro* that is defined only lexically within the scope of some other *macro form*. 
+This is a <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> that is defined only lexically within the scope of some other *macro form*. 
 
 
 
-*Macro* 
+<ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
-This is a *macro*. 
+This is a <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks>. 
 
 
 
-*Restart* 
+<ClLinks styled={true} term={"restart"}><i>Restart</i></ClLinks> 
 
 
 
-This is a *restart*. 
+This is a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>. 
 
 
 
@@ -118,11 +118,11 @@ This is a *standard generic function*.
 
 
 
-*Symbol* 
+<ClLinks styled={true} term={"symbol"}><i>Symbol</i></ClLinks> 
 
 
 
-This is a *symbol* that is specially recognized in some particular situation, such as the syntax of a *macro*. 
+This is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that is specially recognized in some particular situation, such as the syntax of a <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks>. 
 
 
 
@@ -130,7 +130,7 @@ This is a *symbol* that is specially recognized in some particular situation, su
 
 
 
-This is like *class*, but it identifies a *class* that is potentially a *built-in class*. (No *class* is actually required to be a *built-in class*.)  
+This is like <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>, but it identifies a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> that is potentially a *built-in class*. (No <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> is actually required to be a *built-in class*.)  
 
 
 
@@ -138,7 +138,7 @@ This is like *class*, but it identifies a *class* that is potentially a *built-i
 
 
 
-*Type* 
+<ClLinks styled={true} term={"type"}><i>Type</i></ClLinks> 
 
 
 
@@ -154,7 +154,7 @@ This is a *defined name* that is not an *atomic type specifier* , but that can b
 
 
 
-*Variable* 
+<ClLinks styled={true} term={"variable"}><i>Variable</i></ClLinks> 
 
 
 

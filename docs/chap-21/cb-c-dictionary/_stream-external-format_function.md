@@ -1,4 +1,4 @@
-**stream-external-format** *Function* 
+**stream-external-format** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**stream-external-format** *stream → format* 
+<ClLinks styled={true} term={"stream-external-format"}><b>stream-external-format</b></ClLinks> *stream → format* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*stream*—a *file stream*. 
+<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—a *file stream*. 
 
 
 
-*format*—an *external file format*. 
+<ClLinks styled={true} term={"format"}><i>format</i></ClLinks>—an *external file format*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns an *external file format designator* for the *stream*. 
+Returns an *external file format designator* for the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -49,7 +49,7 @@ Returns an *external file format designator* for the *stream*.
 
 
 
-the :external-format *argument* to the *function* **open** and the **with-open-file** *macro*. 
+the :external-format <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> to the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"open"}><b>open</b></ClLinks> and the <ClLinks styled={true} term={"with-open-file"}><b>with-open-file</b></ClLinks> <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks>. 
 
 
 
@@ -57,7 +57,7 @@ the :external-format *argument* to the *function* **open** and the **with-open-f
 
 
 
-The *format* returned is not necessarily meaningful to other *implementations*. 
+The <ClLinks styled={true} term={"format"}><i>format</i></ClLinks> returned is not necessarily meaningful to other <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>. 
 
 
 

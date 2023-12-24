@@ -1,4 +1,4 @@
-**phase** *Function* 
+**phase** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**phase** *number → phase* 
+<ClLinks styled={true} term={"phase"}><b>phase</b></ClLinks> *number → phase* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*number*—a *number* . 
+<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
 
 
 
-*phase*—a *number* . 
+*phase*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -26,19 +26,19 @@
 
 
 
-**phase** returns the phase of *number* (the angle part of its polar representation) in radians, in the range *−π* (exclusive) if minus zero is not supported, or *−π* (inclusive) if minus zero is supported, to *π* (inclusive). The phase of a positive *real* number is zero; that of a negative *real* number is *π*. The phase of zero is defined to be zero. 
+<ClLinks styled={true} term={"phase"}><b>phase</b></ClLinks> returns the phase of <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> (the angle part of its polar representation) in radians, in the range *−π* (exclusive) if minus zero is not supported, or *−π* (inclusive) if minus zero is supported, to *π* (inclusive). The phase of a positive *real* number is zero; that of a negative *real* number is *π*. The phase of zero is defined to be zero. 
 
 
 
-If *number* is a *complex float*, the result is a *float* of the same *type* as the components of *number*. If *number* is a *float*, the result is a *float* of the same *type*. If *number* is a *rational* or a *complex rational*, the result is a *single float*. 
+If <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is a *complex float*, the result is a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> of the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> as the components of <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>. If <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>, the result is a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> of the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>. If <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> or a *complex rational*, the result is a *single float*. 
 
 
 
-The branch cut for **phase** lies along the negative real axis, continuous with quadrant II. The range consists of that portion of the real axis between *−π* (exclusive) and *π* (inclusive). 
+The branch cut for <ClLinks styled={true} term={"phase"}><b>phase</b></ClLinks> lies along the negative real axis, continuous with quadrant II. The range consists of that portion of the real axis between *−π* (exclusive) and *π* (inclusive). 
 
 
 
-The mathematical definition of **phase** is as follows: 
+The mathematical definition of <ClLinks styled={true} term={"phase"}><b>phase</b></ClLinks> is as follows: 
 
 
 
@@ -62,7 +62,7 @@ The mathematical definition of **phase** is as follows:
 
 
 
-Should signal **type-error** if its argument is not a *number* . Might signal **arithmetic-error**. 
+Should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>. 
 
 
 

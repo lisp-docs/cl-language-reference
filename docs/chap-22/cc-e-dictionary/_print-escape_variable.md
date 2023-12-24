@@ -1,4 +1,4 @@
-*∗***print-escape***∗ Variable* 
+*∗<ClLinks styled={true} term={"print-escape"}><b>*print-escape*</b></ClLinks>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a *generalized boolean*.
 
 
 
-*true*. 
+<ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 
 
 
 
@@ -22,15 +22,15 @@ a *generalized boolean*.
 
 
 
-If *false*, escape characters and *package prefixes* are not output when an expression is printed. 
+If <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, escape characters and *package prefixes* are not output when an expression is printed. 
 
 
 
-If *true*, an attempt is made to print an *expression* in such a way that it can be read again to produce an **equal** *expression*. (This is only a guideline; not a requirement. See **\*print-readably\***.) 
+If <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, an attempt is made to print an <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> in such a way that it can be read again to produce an <ClLinks styled={true} term={"equal"}><b>equal</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>. (This is only a guideline; not a requirement. See <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks>.) 
 
 
 
-For more specific details of how the *value* of **\*print-escape\*** affects the printing of certain *types*, see Section 22.1.3 (Default Print-Object Methods). 
+For more specific details of how the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> affects the printing of certain <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>, see Section 22.1.3 (Default Print-Object Methods). 
 
 
 
@@ -52,7 +52,7 @@ For more specific details of how the *value* of **\*print-escape\*** affects the
 
 
 
-**princ**, **prin1**, **format** 
+<ClLinks styled={true} term={"princ"}><b>princ</b></ClLinks>, <ClLinks styled={true} term={"prin1"}><b>prin1</b></ClLinks>, <ClLinks styled={true} term={"format"}><b>format</b></ClLinks> 
 
 
 
@@ -60,7 +60,7 @@ For more specific details of how the *value* of **\*print-escape\*** affects the
 
 
 
-**write**, **readtable-case** 
+<ClLinks styled={true} term={"write"}><b>write</b></ClLinks>, <ClLinks styled={true} term={"readtable-case"}><b>readtable-case</b></ClLinks> 
 
 
 
@@ -68,4 +68,4 @@ For more specific details of how the *value* of **\*print-escape\*** affects the
 
 
 
-**princ** effectively binds **\*print-escape\*** to *false*. **prin1** effectively binds **\*print-escape\*** to *true*. 
+<ClLinks styled={true} term={"princ"}><b>princ</b></ClLinks> effectively binds <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> to <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. <ClLinks styled={true} term={"prin1"}><b>prin1</b></ClLinks> effectively binds <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> to <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 

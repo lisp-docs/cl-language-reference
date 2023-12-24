@@ -1,4 +1,4 @@
-**null** *Function* 
+**null** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**null** *object → boolean* 
+<ClLinks styled={true} term={"null"}><b>null</b></ClLinks> *object → boolean* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*boolean*—a *boolean*. 
+<ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks>—a <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Returns **t** if *object* is the *empty list*; otherwise, returns **nil**. 
+Returns <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is the *empty list*; otherwise, returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -55,7 +55,7 @@ Returns **t** if *object* is the *empty list*; otherwise, returns **nil**.
 
 
 
-**not** 
+<ClLinks styled={true} term={"not"}><b>not</b></ClLinks> 
 
 
 
@@ -63,11 +63,11 @@ Returns **t** if *object* is the *empty list*; otherwise, returns **nil**.
 
 
 
-**null** is intended to be used to test for the *empty list* whereas **not** is intended to be used to invert a *boolean* (or *generalized boolean*). Operationally, **null** and **not** compute the same result; which to use is a matter of style. 
+<ClLinks styled={true} term={"null"}><b>null</b></ClLinks> is intended to be used to test for the *empty list* whereas <ClLinks styled={true} term={"not"}><b>not</b></ClLinks> is intended to be used to invert a <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks> (or *generalized boolean*). Operationally, <ClLinks styled={true} term={"null"}><b>null</b></ClLinks> and <ClLinks styled={true} term={"not"}><b>not</b></ClLinks> compute the same result; which to use is a matter of style. 
 
 
 
-(null *object*) *≡* (typep *object* ’null) *≡* (eq *object* ’()) 
+(null <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’null) *≡* (eq <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’()) 
 
 
 

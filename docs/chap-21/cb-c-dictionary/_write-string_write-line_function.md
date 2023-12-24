@@ -1,4 +1,4 @@
-**write-string, write-line** *Function* 
+**write-string, write-line** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**write-string** *string* &amp;optional *output-stream* &amp;key *start end → string* 
+<ClLinks styled={true} term={"write-string"}><b>write-string</b></ClLinks> <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> &amp;optional *output-stream* &amp;key *start end → string* 
 
 
 
-**write-line** *string* &amp;optional *output-stream* &amp;key *start end → string* 
+<ClLinks styled={true} term={"write-line"}><b>write-line</b></ClLinks> <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> &amp;optional *output-stream* &amp;key *start end → string* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*string*—a *string*. 
+<ClLinks styled={true} term={"string"}><i>string</i></ClLinks>—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*start*, *end*—*bounding index designators* of *string*. The defaults for *start* and *end* are 0 and **nil**, respectively. 
+*start*, *end*—*bounding index designators* of <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-**write-string** writes the *characters* of the subsequence of *string bounded* by *start* and *end* to *output-stream*. **write-line** does the same thing, but then outputs a newline afterwards. 
+<ClLinks styled={true} term={"write-string"}><b>write-string</b></ClLinks> writes the <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> of the subsequence of *string bounded* by *start* and *end* to *output-stream*. <ClLinks styled={true} term={"write-line"}><b>write-line</b></ClLinks> does the same thing, but then outputs a newline afterwards. 
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-**\*standard-output\***, **\*terminal-io\***. 
+**\*standard-output\***, <ClLinks styled={true} term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
 
 
 
@@ -70,7 +70,7 @@
 
 
 
-**read-line**, **write-char** 
+<ClLinks styled={true} term={"read-line"}><b>read-line</b></ClLinks>, <ClLinks styled={true} term={"write-char"}><b>write-char</b></ClLinks> 
 
 
 
@@ -78,7 +78,7 @@
 
 
 
-**write-line** and **write-string** return *string*, not the substring *bounded* by *start* and *end*. 
+<ClLinks styled={true} term={"write-line"}><b>write-line</b></ClLinks> and <ClLinks styled={true} term={"write-string"}><b>write-string</b></ClLinks> return <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, not the substring <ClLinks styled={true} term={"bounded"}><i>bounded</i></ClLinks> by *start* and *end*. 
 
 
 

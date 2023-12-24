@@ -1,4 +1,4 @@
-*∗***readtable***∗ Variable* 
+*∗<ClLinks styled={true} term={"readtable"}><b><ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks></b></ClLinks>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-a *readtable*. 
+a <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>. 
 
 
 
@@ -14,7 +14,7 @@ a *readtable*.
 
 
 
-A *readtable* that conforms to the description of Common Lisp syntax in Chapter 2 (Syntax). 
+A <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> that conforms to the description of Common Lisp syntax in Chapter 2 (Syntax). 
 
 
 
@@ -22,7 +22,7 @@ A *readtable* that conforms to the description of Common Lisp syntax in Chapter 
 
 
 
-The *value* of **\*readtable\*** is called the *current readtable*. It controls the parsing behavior of the *Lisp reader* , and can also influence the *Lisp printer* (*e.g.*, see the *function* **readtable-case**). 
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"readtable"}><b>\*readtable\*</b></ClLinks> is called the *current readtable*. It controls the parsing behavior of the *Lisp reader* , and can also influence the *Lisp printer* (*e.g.*, see the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"readtable-case"}><b>readtable-case</b></ClLinks>). 
 
 
 
@@ -46,7 +46,7 @@ zvar → 123
 
 
 
-**compile-file**, **load** 
+<ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks styled={true} term={"load"}><b>load</b></ClLinks> 
 
 
 
@@ -54,7 +54,7 @@ zvar → 123
 
 
 
-**compile-file**, **load**, **readtable**, Section 2.1.1.1 (The Current Readtable) 
+<ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks styled={true} term={"load"}><b>load</b></ClLinks>, <ClLinks styled={true} term={"readtable"}><b>readtable</b></ClLinks>, Section 2.1.1.1 (The Current Readtable) 
 
 
 

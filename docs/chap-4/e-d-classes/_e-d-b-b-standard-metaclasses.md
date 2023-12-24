@@ -2,19 +2,19 @@
 
 
 
-The object system provides a number of predefined *metaclasses*. These include the *classes* **standard-class**, **built-in-class**, and **structure-class**: 
+The object system provides a number of predefined *metaclasses*. These include the *classes* <ClLinks styled={true} term={"standard-class"}><b>standard-class</b></ClLinks>, <ClLinks styled={true} term={"built-in-class"}><b>built-in-class</b></ClLinks>, and <ClLinks styled={true} term={"structure-class"}><b>structure-class</b></ClLinks>: 
 
 
 
-*•* The *class* **standard-class** is the default *class* of *classes* defined by **defclass**. 
+*•* The <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"standard-class"}><b>standard-class</b></ClLinks> is the default <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> of *classes* defined by <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks>. 
 
 
 
-*•* The *class* **built-in-class** is the *class* whose *instances* are *classes* that have special implementations with restricted capabilities. Any *class* that corresponds to a standard *type* might be an *instance* of **built-in-class**. The predefined *type* specifiers that are required to have corresponding *classes* are listed in Figure 4–8. It is *implementation-dependent* whether each of these *classes* is implemented as a *built-in class*. 
+*•* The <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"built-in-class"}><b>built-in-class</b></ClLinks> is the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> whose <ClLinks styled={true} term={"instance"}><i>instances</i></ClLinks> are *classes* that have special implementations with restricted capabilities. Any <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> that corresponds to a standard <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> might be an <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> of <ClLinks styled={true} term={"built-in-class"}><b>built-in-class</b></ClLinks>. The predefined <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> specifiers that are required to have corresponding *classes* are listed in Figure 4–8. It is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether each of these *classes* is implemented as a *built-in class*. 
 
 
 
-*•* All *classes* defined by means of **defstruct** are *instances* of the *class* **structure-class**. 
+*•* All *classes* defined by means of <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> are <ClLinks styled={true} term={"instance"}><i>instances</i></ClLinks> of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"structure-class"}><b>structure-class</b></ClLinks>. 
 
 
 

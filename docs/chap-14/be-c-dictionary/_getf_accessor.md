@@ -1,4 +1,4 @@
-**getf** *Accessor* 
+**getf** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,10 +6,11 @@
 
 
 
-**getf** *plist indicator* &amp;optional *default → value* 
+<ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> *plist indicator* &amp;optional *default → value* 
 
 
 
+<!-- **(setf (getf** *place indicator* &amp;optional *default<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> *new-value***)**  -->
 **(setf (getf** *place indicator* &amp;optional *default***)** *new-value***)** 
 
 
@@ -18,19 +19,15 @@
 
 
 
-*plist*—a *property list*. 
+<ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks>—a *property list*. 
 
 
 
-*place*—a *place*, the *value* of which is a *property list*. 
-
-
+<ClLinks styled={true} term={"place"}><i>place</i></ClLinks>—a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of which is a *property list*. 
 
 
 
 
-
- 
 
 
 
@@ -38,23 +35,27 @@
 
 
 
-**getf** 
+ 
 
 
 
-*indicator*—an *object*. 
+<ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> 
 
 
 
-*default*—an *object*. The default is **nil**. 
+<ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*value*—an *object*. 
+*default*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*new-value*—an *object*. 
+<ClLinks styled={true} term={"value"}><i>value</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+
+
+
+*new-value*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -62,15 +63,15 @@
 
 
 
-**getf** finds a *property* on the *plist* whose *property indicator* is *identical* to *indicator*, and returns its corresponding *property value*. If there are multiple *properties*<sub>1</sub> with that *property indicator* , **getf** uses the first such *property*. If there is no *property* with that *property indicator* , *default* is returned. 
+<ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> finds a <ClLinks styled={true} term={"property"}><i>property</i></ClLinks> on the <ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks> whose *property indicator* is <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> to <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks>, and returns its corresponding *property value*. If there are multiple *properties*<sub>1</sub> with that *property indicator* , <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> uses the first such <ClLinks styled={true} term={"property"}><i>property</i></ClLinks>. If there is no <ClLinks styled={true} term={"property"}><i>property</i></ClLinks> with that *property indicator* , *default* is returned. 
 
 
 
-**setf** of **getf** may be used to associate a new *object* with an existing indicator in the *property list* held by *place*, or to create a new assocation if none exists. If there are multiple *properties*<sub>1</sub> with that *property indicator* , **setf** of **getf** associates the *new-value* with the first such *property*. When a **getf** *form* is used as a **setf** *place*, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its *value* is ignored. 
+<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> may be used to associate a new <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> with an existing indicator in the *property list* held by <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, or to create a new assocation if none exists. If there are multiple *properties*<sub>1</sub> with that *property indicator* , <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> associates the *new-value* with the first such <ClLinks styled={true} term={"property"}><i>property</i></ClLinks>. When a <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is used as a <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is ignored. 
 
 
 
-**setf** of **getf** is permitted to either *write* the *value* of *place* itself, or modify of any part, *car* or *cdr* , of the *list structure* held by *place*. 
+<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> is permitted to either <ClLinks styled={true} term={"write"}><i>write</i></ClLinks> the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> itself, or modify of any part, <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> or <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> , of the *list structure* held by <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. 
 
 
 
@@ -106,7 +107,7 @@ bar
 
 
 
-**get**, **get-properties**, **setf**, Section 5.1.2.2 (Function Call Forms as Places) 
+<ClLinks styled={true} term={"get"}><b>get</b></ClLinks>, <ClLinks styled={true} term={"get-properties"}><b>get-properties</b></ClLinks>, <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>, Section 5.1.2.2 (Function Call Forms as Places) 
 
 
 
@@ -114,11 +115,11 @@ bar
 
 
 
-There is no way (using **getf**) to distinguish an absent property from one whose value is *default*; but see **get-properties**. 
+There is no way (using <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks>) to distinguish an absent property from one whose value is *default*; but see <ClLinks styled={true} term={"get-properties"}><b>get-properties</b></ClLinks>. 
 
 
 
-Note that while supplying a *default* argument to **getf** in a **setf** situation is sometimes not very interesting, it is still important because some macros, such as **push** and **incf**, require a *place* argument which data is both *read* from and *written* to. In such a context, if a *default* argument is to be supplied for the *read* situation, it must be syntactically valid for the *write* situation as well. For example, 
+Note that while supplying a *default* argument to <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> in a <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> situation is sometimes not very interesting, it is still important because some macros, such as <ClLinks styled={true} term={"push"}><b>push</b></ClLinks> and <ClLinks styled={true} term={"incf"}><b>incf</b></ClLinks>, require a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> argument which data is both <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> from and *written* to. In such a context, if a *default* argument is to be supplied for the <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> situation, it must be syntactically valid for the <ClLinks styled={true} term={"write"}><i>write</i></ClLinks> situation as well. For example, 
 
 
 

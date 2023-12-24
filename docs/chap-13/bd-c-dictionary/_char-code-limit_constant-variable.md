@@ -6,7 +6,7 @@
 
 
 
-A non-negative *integer* , the exact magnitude of which is *implementation-dependent*, but which is not less than 96 (the number of *standard characters*). 
+A non-negative *integer* , the exact magnitude of which is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but which is not less than 96 (the number of *standard characters*). 
 
 
 
@@ -14,7 +14,7 @@ A non-negative *integer* , the exact magnitude of which is *implementation-depen
 
 
 
-The upper exclusive bound on the *value* returned by the *function* **char-code**. 
+The upper exclusive bound on the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> returned by the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"char-code"}><b>char-code</b></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ The upper exclusive bound on the *value* returned by the *function* **char-code*
 
 
 
-**char-code** 
+<ClLinks styled={true} term={"char-code"}><b>char-code</b></ClLinks> 
 
 
 
@@ -30,7 +30,7 @@ The upper exclusive bound on the *value* returned by the *function* **char-code*
 
 
 
-The *value* of **char-code-limit** might be larger than the actual number of *characters* supported by the *implementation*. 
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"char-code-limit"}><b>char-code-limit</b></ClLinks> might be larger than the actual number of <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> supported by the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 
@@ -46,7 +46,7 @@ The *value* of **char-code-limit** might be larger than the actual number of *ch
 
 
 
-**char-name** 
+<ClLinks styled={true} term={"char-name"}><b>char-name</b></ClLinks> 
 
 
 

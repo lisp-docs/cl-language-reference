@@ -1,4 +1,4 @@
-**handler-bind** *Macro* 
+**handler-bind** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**handler-bind** (*\{↓binding\}*\*) *\{form\}*\* → \{result\}\* 
+<ClLinks styled={true} term={"handler-bind"}><b>handler-bind</b></ClLinks> (<ClLinks styled={true} term={"binding"}><i>\{↓binding\}</i></ClLinks>\*) <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
 
 
 
-*binding::*=(*type handler*) 
+<ClLinks styled={true} term={"binding"}><i>binding::</i></ClLinks>=(*type handler*) 
 
 
 
@@ -18,23 +18,23 @@
 
 
 
-*type*—a *type specifier* . 
+<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>—a *type specifier* . 
 
 
 
-*handler*—a *form*; evaluated to produce a *handler-function*. 
+<ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated to produce a *handler-function*. 
 
 
 
-*handler-function*—a *designator* for a *function* of one *argument*. 
+*handler-function*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks>. 
 
 
 
-*forms*—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the *values* returned by the *forms*. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -42,19 +42,19 @@
 
 
 
-Executes *forms* in a *dynamic environment* where the indicated *handler bindings* are in effect. 
+Executes <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a *dynamic environment* where the indicated *handler bindings* are in effect. 
 
 
 
-Each *handler* should evaluate to a *handler-function*, which is used to handle *conditions* of the given *type* during execution of the *forms*. This *function* should take a single argument, the *condition* being signaled. 
+Each <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> should evaluate to a *handler-function*, which is used to handle <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> of the given <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> during execution of the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. This <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> should take a single argument, the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> being signaled. 
 
 
 
-If more than one *handler binding* is supplied, the *handler bindings* are searched sequentially from top to bottom in search of a match (by visual analogy with **typecase**). If an appropriate *type* is found, the associated handler is run in a *dynamic environment* where none of these *handler* bindings are visible (to avoid recursive errors). If the *handler declines*, the search continues for another *handler* . 
+If more than one *handler binding* is supplied, the *handler bindings* are searched sequentially from top to bottom in search of a match (by visual analogy with <ClLinks styled={true} term={"typecase"}><b>typecase</b></ClLinks>). If an appropriate <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> is found, the associated handler is run in a *dynamic environment* where none of these <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> bindings are visible (to avoid recursive errors). If the *handler declines*, the search continues for another <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> . 
 
 
 
-If no appropriate *handler* is found, other *handlers* are sought from dynamically enclosing contours. If no *handler* is found outside, then **signal** returns or **error** enters the debugger. 
+If no appropriate <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> is found, other <ClLinks styled={true} term={"handler"}><i>handlers</i></ClLinks> are sought from dynamically enclosing contours. If no <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> is found outside, then <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> returns or <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> enters the debugger. 
 
 
 
@@ -88,7 +88,7 @@ Note that “Foo.” is not printed because the condition made by **signal** is 
 
 
 
-**handler-case** 
+<ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**disassemble** *Function* 
+**disassemble** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**disassemble** *fn →* **nil** 
+<ClLinks styled={true} term={"disassemble"}><b>disassemble</b></ClLinks> *fn →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-The *function* **disassemble** is a debugging aid that composes symbolic instructions or expressions in some *implementation-dependent* language which represent the code used to produce the *function* which is or is named by the argument *fn*. The result is displayed to *standard output* in an *implementation-dependent* format. 
+The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"disassemble"}><b>disassemble</b></ClLinks> is a debugging aid that composes symbolic instructions or expressions in some <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> language which represent the code used to produce the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> which is or is named by the argument *fn*. The result is displayed to *standard output* in an <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> format. 
 
 
 
@@ -30,7 +30,7 @@ If *fn* is a *lambda expression* or *interpreted function*, it is compiled first
 
 
 
-If the *fn designator* is a *function name*, the *function* that it *names* is disassembled. (If that *function* is an *interpreted function*, it is first compiled but the result of this implicit compilation is not installed.) 
+If the *fn designator* is a *function name*, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> that it <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> is disassembled. (If that <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is an *interpreted function*, it is first compiled but the result of this implicit compilation is not installed.) 
 
 
 
@@ -55,7 +55,7 @@ If the *fn designator* is a *function name*, the *function* that it *names* is d
 
 
 
-Should signal an error of *type* **type-error** if *fn* is not an *extended function designator* or a *lambda expression*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *fn* is not an *extended function designator* or a *lambda expression*. 
 
 
 
@@ -95,7 +95,7 @@ Should signal an error of *type* **type-error** if *fn* is not an *extended func
 
 
 
-*doc-type*, *object* 
+*doc-type*, <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> 
 
 
 
@@ -107,59 +107,59 @@ Should signal an error of *type* **type-error** if *fn* is not an *extended func
 
 
 
-**documentation** (*x* **function**) (*doc-type* (eql ’t)) 
+**documentation** (*x* <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>) (*doc-type* (eql ’t)) 
 
 
 
-**documentation** (*x* **function**) (*doc-type* (eql ’function)) 
+**documentation** (*x* <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>) (*doc-type* (eql ’function)) 
 
 
 
-**documentation** (*x* **list**) (*doc-type* (eql ’function)) 
+**documentation** (*x* <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>) (*doc-type* (eql ’function)) 
 
 
 
-**documentation** (*x* **list**) (*doc-type* (eql ’compiler-macro)) 
+**documentation** (*x* <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>) (*doc-type* (eql ’compiler-macro)) 
 
 
 
-**documentation** (*x* **symbol**) (*doc-type* (eql ’function)) 
+**documentation** (*x* <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>) (*doc-type* (eql ’function)) 
 
 
 
-**documentation** (*x* **symbol**) (*doc-type* (eql ’compiler-macro)) 
+**documentation** (*x* <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>) (*doc-type* (eql ’compiler-macro)) 
 
 
 
-**documentation** (*x* **symbol**) (*doc-type* (eql ’setf)) 
+**documentation** (*x* <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>) (*doc-type* (eql ’setf)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **function**) (*doc-type* (eql ’t)) 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>) (*doc-type* (eql ’t)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **function**) (*doc-type* (eql ’function)) 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>) (*doc-type* (eql ’function)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **list**) (*doc-type* (eql ’function)) 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>) (*doc-type* (eql ’function)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **list**) (*doc-type* (eql ’compiler-macro)) 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>) (*doc-type* (eql ’compiler-macro)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **symbol**) (*doc-type* (eql ’function)) 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>) (*doc-type* (eql ’function)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **symbol**) (*doc-type* (eql ’compiler-macro)) 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>) (*doc-type* (eql ’compiler-macro)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **symbol**) (*doc-type* (eql ’setf)) 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>) (*doc-type* (eql ’setf)) 
 
 
 
@@ -167,23 +167,23 @@ Should signal an error of *type* **type-error** if *fn* is not an *extended func
 
 
 
-**documentation** (*x* **method-combination**) (*doc-type* (eql ’t)) 
+**documentation** (*x* <ClLinks styled={true} term={"method-combination"}><b>method-combination</b></ClLinks>) (*doc-type* (eql ’t)) 
 
 
 
-**documentation** (*x* **method-combination**) (*doc-type* (eql ’method-combination)) 
+**documentation** (*x* <ClLinks styled={true} term={"method-combination"}><b>method-combination</b></ClLinks>) (*doc-type* (eql ’method-combination)) 
 
 
 
-**documentation** (*x* **symbol**) (*doc-type* (eql ’method-combination)) 
+**documentation** (*x* <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>) (*doc-type* (eql ’method-combination)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **method-combination**) (*doc-type* (eql ’t)) 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"method-combination"}><b>method-combination</b></ClLinks>) (*doc-type* (eql ’t)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **method-combination**) (*doc-type* (eql ’method-combination)) **(setf documentation)** *new-value* (*x* **symbol**) (*doc-type* (eql ’method-combination)) **Methods:** 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"method-combination"}><b>method-combination</b></ClLinks>) (*doc-type* (eql ’method-combination)) **(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>) (*doc-type* (eql ’method-combination)) **Methods:** 
 
 
 
@@ -203,11 +203,11 @@ Should signal an error of *type* **type-error** if *fn* is not an *extended func
 
 
 
-**documentation** (*x* **standard-method**) (*doc-type* (eql ’t)) 
+**documentation** (*x* <ClLinks styled={true} term={"standard-method"}><b>standard-method</b></ClLinks>) (*doc-type* (eql ’t)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **standard-method**) (*doc-type* (eql ’t)) 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"standard-method"}><b>standard-method</b></ClLinks>) (*doc-type* (eql ’t)) 
 
 
 
@@ -215,11 +215,11 @@ Should signal an error of *type* **type-error** if *fn* is not an *extended func
 
 
 
-**documentation** (*x* **package**) (*doc-type* (eql ’t)) 
+**documentation** (*x* <ClLinks styled={true} term={"package"}><b>package</b></ClLinks>) (*doc-type* (eql ’t)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **package**) (*doc-type* (eql ’t)) 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"package"}><b>package</b></ClLinks>) (*doc-type* (eql ’t)) 
 
 
 
@@ -227,51 +227,51 @@ Should signal an error of *type* **type-error** if *fn* is not an *extended func
 
 
 
-**documentation** (*x* **standard-class**) (*doc-type* (eql ’t)) 
+**documentation** (*x* <ClLinks styled={true} term={"standard-class"}><b>standard-class</b></ClLinks>) (*doc-type* (eql ’t)) 
 
 
 
-**documentation** (*x* **standard-class**) (*doc-type* (eql ’type)) 
+**documentation** (*x* <ClLinks styled={true} term={"standard-class"}><b>standard-class</b></ClLinks>) (*doc-type* (eql ’type)) 
 
 
 
-**documentation** (*x* **structure-class**) (*doc-type* (eql ’t)) 
+**documentation** (*x* <ClLinks styled={true} term={"structure-class"}><b>structure-class</b></ClLinks>) (*doc-type* (eql ’t)) 
 
 
 
-**documentation** (*x* **structure-class**) (*doc-type* (eql ’type)) 
+**documentation** (*x* <ClLinks styled={true} term={"structure-class"}><b>structure-class</b></ClLinks>) (*doc-type* (eql ’type)) 
 
 
 
-**documentation** (*x* **symbol**) (*doc-type* (eql ’type)) 
+**documentation** (*x* <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>) (*doc-type* (eql ’type)) 
 
 
 
-**documentation** (*x* **symbol**) (*doc-type* (eql ’structure)) 
+**documentation** (*x* <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>) (*doc-type* (eql ’structure)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **standard-class**) (*doc-type* (eql ’t)) 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"standard-class"}><b>standard-class</b></ClLinks>) (*doc-type* (eql ’t)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **standard-class**) (*doc-type* (eql ’type)) 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"standard-class"}><b>standard-class</b></ClLinks>) (*doc-type* (eql ’type)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **structure-class**) (*doc-type* (eql ’t)) 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"structure-class"}><b>structure-class</b></ClLinks>) (*doc-type* (eql ’t)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **structure-class**) (*doc-type* (eql ’type)) 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"structure-class"}><b>structure-class</b></ClLinks>) (*doc-type* (eql ’type)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **symbol**) (*doc-type* (eql ’type)) 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>) (*doc-type* (eql ’type)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **symbol**) (*doc-type* (eql ’structure)) 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>) (*doc-type* (eql ’structure)) 
 
 
 
@@ -279,11 +279,11 @@ Should signal an error of *type* **type-error** if *fn* is not an *extended func
 
 
 
-**documentation** (*x* **symbol**) (*doc-type* (eql ’variable)) 
+**documentation** (*x* <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>) (*doc-type* (eql ’variable)) 
 
 
 
-**(setf documentation)** *new-value* (*x* **symbol**) (*doc-type* (eql ’variable)) 
+**(setf documentation)** *new-value* (*x* <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>) (*doc-type* (eql ’variable)) 
 
 
 
@@ -291,19 +291,19 @@ Should signal an error of *type* **type-error** if *fn* is not an *extended func
 
 
 
-*x*—an *object*. 
+*x*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*doc-type*—a *symbol*. 
+*doc-type*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*documentation*—a *string*, or **nil**. 
+*documentation*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*new-value*—a *string*. 
+*new-value*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -327,15 +327,15 @@ Should signal an error of *type* **type-error** if *fn* is not an *extended func
 
 
 
-The *generic function* **documentation** returns the *documentation string* associated with the given *object* if it is available; otherwise it returns **nil**. 
+The *generic function* **documentation** returns the *documentation string* associated with the given <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> if it is available; otherwise it returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-The *generic function* (setf documentation) updates the *documentation string* associated with *x* to *new-value*. If *x* is a *list*, it must be of the form (setf *symbol*). 
+The *generic function* (setf documentation) updates the *documentation string* associated with *x* to *new-value*. If *x* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, it must be of the form (setf <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>). 
 
 
 
-*Documentation strings* are made available for debugging purposes. *Conforming programs* are permitted to use *documentation strings* when they are present, but should not depend for their correct behavior on the presence of those *documentation strings*. An *implementation* is permitted to discard *documentation strings* at any time for *implementation-defined* reasons. 
+*Documentation strings* are made available for debugging purposes. *Conforming programs* are permitted to use *documentation strings* when they are present, but should not depend for their correct behavior on the presence of those *documentation strings*. An <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> is permitted to discard *documentation strings* at any time for <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks> reasons. 
 
 
 
@@ -347,27 +347,27 @@ The nature of the *documentation string* returned depends on the *doc-type*, as 
 
 
 
-Returns the *documentation string* of the *compiler macro* whose *name* is the *function name x*. 
+Returns the *documentation string* of the *compiler macro* whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is the *function name x*. 
 
 
 
-**function** 
+<ClLinks styled={true} term={"function"}><b>function</b></ClLinks> 
 
 
 
-If *x* is a *function name*, returns the *documentation string* of the *function*, *macro*, or *special operator* whose *name* is *x*. 
+If *x* is a *function name*, returns the *documentation string* of the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks>, or *special operator* whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is *x*. 
 
 
 
-If *x* is a *function*, returns the *documentation string* associated with *x*. 
+If *x* is a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, returns the *documentation string* associated with *x*. 
 
 
 
-**method-combination** 
+<ClLinks styled={true} term={"method-combination"}><b>method-combination</b></ClLinks> 
 
 
 
-If *x* is a *symbol*, returns the *documentation string* of the *method combination* whose *name* is *x*. 
+If *x* is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, returns the *documentation string* of the *method combination* whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is *x*. 
 
 
 
@@ -375,11 +375,11 @@ If *x* is a *method combination*, returns the *documentation string* associated 
 
 
 
-**setf** 
+<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> 
 
 
 
-Returns the *documentation string* of the *setf expander* whose *name* is the *symbol x*. 
+Returns the *documentation string* of the *setf expander* whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is the *symbol x*. 
 
 
 
@@ -391,23 +391,19 @@ Returns the *documentation string* associated with the *structure name x*.
 
 
 
-**t** 
+<ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
-Returns a *documentation string* specialized on the *class* of the argument *x* itself. For example, if *x* is a *function*, the *documentation string* associated with the *function x* is returned. 
+Returns a *documentation string* specialized on the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> of the argument *x* itself. For example, if *x* is a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, the *documentation string* associated with the *function x* is returned. 
 
 
 
-**type** 
-
-
+<ClLinks styled={true} term={"type"}><b>type</b></ClLinks> 
 
 
 
 
-
- 
 
 
 
@@ -415,7 +411,11 @@ Returns a *documentation string* specialized on the *class* of the argument *x* 
 
 
 
-If *x* is a *symbol*, returns the *documentation string* of the *class* whose *name* is the *symbol x*, if there is such a *class*. Otherwise, it returns the *documentation string* of the *type* which is the *type specifier symbol x*. 
+ 
+
+
+
+If *x* is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, returns the *documentation string* of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is the *symbol x*, if there is such a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. Otherwise, it returns the *documentation string* of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> which is the *type specifier symbol x*. 
 
 
 
@@ -427,11 +427,11 @@ If *x* is a *structure class* or *standard class*, returns the *documentation st
 
 
 
-Returns the *documentation string* of the *dynamic variable* or *constant variable* whose *name* is the *symbol x*. 
+Returns the *documentation string* of the *dynamic variable* or *constant variable* whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is the *symbol x*. 
 
 
 
-A *conforming implementation* or a *conforming program* may extend the set of *symbols* that are acceptable as the *doc-type*. 
+A *conforming implementation* or a *conforming program* may extend the set of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> that are acceptable as the *doc-type*. 
 
 
 
@@ -439,7 +439,7 @@ A *conforming implementation* or a *conforming program* may extend the set of *s
 
 
 
-This standard prescribes no means to retrieve the *documentation strings* for individual slots specified in a **defclass** form, but *implementations* might still provide debugging tools and/or programming language extensions which manipulate this information. Implementors wishing to provide such support are encouraged to consult the *Metaobject Protocol* for suggestions about how this might be done. 
+This standard prescribes no means to retrieve the *documentation strings* for individual slots specified in a <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks> form, but <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> might still provide debugging tools and/or programming language extensions which manipulate this information. Implementors wishing to provide such support are encouraged to consult the *Metaobject Protocol* for suggestions about how this might be done. 
 
 
 

@@ -1,4 +1,4 @@
-**push** *Macro* 
+**push** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**push** *item place → new-place-value* 
+<ClLinks styled={true} term={"push"}><b>push</b></ClLinks> *item place → new-place-value* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*item*—an *object*. 
+*item*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*place*—a *place*, the *value* of which may be any *object*. 
+<ClLinks styled={true} term={"place"}><i>place</i></ClLinks>—a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of which may be any <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*new-place-value*—a *list* (the new *value* of *place*). 
+*new-place-value*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> (the new <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>). 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-**push** prepends *item* to the *list* that is stored in *place*, stores the resulting *list* in *place*, and returns the *list*. 
+<ClLinks styled={true} term={"push"}><b>push</b></ClLinks> prepends *item* to the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that is stored in <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, stores the resulting <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> in <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, and returns the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
-For information about the *evaluation* of *subforms* of *place*, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
+For information about the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks styled={true} term={"subform"}><i>subforms</i></ClLinks> of <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
 
 
 
@@ -67,7 +67,7 @@ x → (A (5 B C) D)
 
 
 
-The contents of *place* are modified. 
+The contents of <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> are modified. 
 
 
 
@@ -75,7 +75,7 @@ The contents of *place* are modified.
 
 
 
-**pop**, **pushnew**, Section 5.1 (Generalized Reference) 
+<ClLinks styled={true} term={"pop"}><b>pop</b></ClLinks>, <ClLinks styled={true} term={"pushnew"}><b>pushnew</b></ClLinks>, Section 5.1 (Generalized Reference) 
 
 
 
@@ -91,4 +91,4 @@ The effect of (push *item place*) is equivalent to
 
 
 
-except that the *subforms* of *place* are evaluated only once, and *item* is evaluated before *place*. 
+except that the <ClLinks styled={true} term={"subform"}><i>subforms</i></ClLinks> of <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> are evaluated only once, and *item* is evaluated before <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. 

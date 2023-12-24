@@ -1,4 +1,4 @@
-**define-symbol-macro** *Macro* 
+**define-symbol-macro** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**define-symbol-macro** *symbol expansion* 
+<ClLinks styled={true} term={"define-symbol-macro"}><b>define-symbol-macro</b></ClLinks> *symbol expansion* 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-*symbol*—a *symbol*. 
+<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*expansion*—a *form*. 
+*expansion*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-Provides a mechanism for globally affecting the *macro expansion* of the indicated *symbol*. 
+Provides a mechanism for globally affecting the *macro expansion* of the indicated <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-Globally establishes an expansion function for the *symbol macro* named by *symbol*. The only guaranteed property of an expansion *function* for a *symbol macro* is that when it is applied to the *form* and the *environment* it returns the correct expansion. (In particular, it is *implementation dependent* whether the expansion is conceptually stored in the expansion function, the *environment*, or both.)  
+Globally establishes an expansion function for the *symbol macro* named by <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. The only guaranteed property of an expansion <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> for a *symbol macro* is that when it is applied to the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> and the <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> it returns the correct expansion. (In particular, it is *implementation dependent* whether the expansion is conceptually stored in the expansion function, the <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>, or both.)  
 
 
 
@@ -42,19 +42,19 @@ Globally establishes an expansion function for the *symbol macro* named by *symb
 
 
 
-Each global reference to *symbol* (*i.e.*, not *shadowed* <sub>2</sub> by a *binding* for a *variable* or *symbol macro* named by the same *symbol*) is expanded by the normal macro expansion process; see Section 3.1.2.1.1 (Symbols as Forms). The expansion of a *symbol macro* is subject to further *macro expansion* in the same *lexical environment* as the *symbol macro* reference, exactly analogous to normal *macros*. 
+Each global reference to <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> (*i.e.*, not *shadowed* <sub>2</sub> by a <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> for a <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> or *symbol macro* named by the same <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>) is expanded by the normal macro expansion process; see Section 3.1.2.1.1 (Symbols as Forms). The expansion of a *symbol macro* is subject to further *macro expansion* in the same *lexical environment* as the *symbol macro* reference, exactly analogous to normal <ClLinks styled={true} term={"macro"}><i>macros</i></ClLinks>. 
 
 
 
-The consequences are unspecified if a **special** declaration is made for *symbol* while in the scope of this definition (*i.e.*, when it is not *shadowed* <sub>2</sub> by a *binding* for a *variable* or *symbol macro* named by the same *symbol*). 
+The consequences are unspecified if a <ClLinks styled={true} term={"special"}><b>special</b></ClLinks> declaration is made for <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> while in the scope of this definition (*i.e.*, when it is not *shadowed* <sub>2</sub> by a <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> for a <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> or *symbol macro* named by the same <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>). 
 
 
 
-Any use of **setq** to set the value of the *symbol* while in the scope of this definition is treated as if it were a **setf**. **psetq** of *symbol* is treated as if it were a **psetf**, and **multiple-value-setq** is treated as if it were a **setf** of **values**. 
+Any use of <ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks> to set the value of the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> while in the scope of this definition is treated as if it were a <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>. <ClLinks styled={true} term={"psetq"}><b>psetq</b></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is treated as if it were a <ClLinks styled={true} term={"psetf"}><b>psetf</b></ClLinks>, and <ClLinks styled={true} term={"multiple-value-setq"}><b>multiple-value-setq</b></ClLinks> is treated as if it were a <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"values"}><b>values</b></ClLinks>. 
 
 
 
-A *binding* for a *symbol macro* can be *shadowed* <sub>2</sub> by **let** or **symbol-macrolet**. 
+A <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> for a *symbol macro* can be *shadowed* <sub>2</sub> by <ClLinks styled={true} term={"let"}><b>let</b></ClLinks> or <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>. 
 
 
 
@@ -78,7 +78,7 @@ thing3 → THREE
 
 
 
-If *symbol* is already defined as a *global variable*, an error of *type* **program-error** is signaled. 
+If <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is already defined as a *global variable*, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"program-error"}><b>program-error</b></ClLinks> is signaled. 
 
 
 
@@ -86,7 +86,7 @@ If *symbol* is already defined as a *global variable*, an error of *type* **prog
 
 
 
-**symbol-macrolet**, **macroexpand**  
+<ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>, <ClLinks styled={true} term={"macroexpand"}><b>macroexpand</b></ClLinks>  
 
 
 
@@ -94,7 +94,7 @@ If *symbol* is already defined as a *global variable*, an error of *type* **prog
 
 
 
-**symbol-macrolet** 
+<ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> 
 
 
 

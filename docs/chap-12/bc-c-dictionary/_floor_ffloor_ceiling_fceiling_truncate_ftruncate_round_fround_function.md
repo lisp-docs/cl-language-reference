@@ -1,4 +1,4 @@
-**floor, ffloor, ceiling, fceiling, truncate, ftruncate, round, fround** *Function* 
+**floor, ffloor, ceiling, fceiling, truncate, ftruncate, round, fround** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,15 +6,15 @@
 
 
 
-**floor** *number* &amp;optional *divisor → quotient, remainder* 
+<ClLinks styled={true} term={"floor"}><b>floor</b></ClLinks> <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> &amp;optional *divisor → quotient, remainder* 
 
 
 
-**ffloor** *number* &amp;optional *divisor → quotient, remainder* 
+<ClLinks styled={true} term={"ffloor"}><b>ffloor</b></ClLinks> <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> &amp;optional *divisor → quotient, remainder* 
 
 
 
-**ceiling** *number* &amp;optional *divisor → quotient, remainder* 
+<ClLinks styled={true} term={"ceiling"}><b>ceiling</b></ClLinks> <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> &amp;optional *divisor → quotient, remainder* 
 
 
 
@@ -34,23 +34,23 @@
 
 
 
-**fceiling** *number* &amp;optional *divisor → quotient, remainder* 
+<ClLinks styled={true} term={"fceiling"}><b>fceiling</b></ClLinks> <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> &amp;optional *divisor → quotient, remainder* 
 
 
 
-**truncate** *number* &amp;optional *divisor → quotient, remainder* 
+<ClLinks styled={true} term={"truncate"}><b>truncate</b></ClLinks> <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> &amp;optional *divisor → quotient, remainder* 
 
 
 
-**ftruncate** *number* &amp;optional *divisor → quotient, remainder* 
+<ClLinks styled={true} term={"ftruncate"}><b>ftruncate</b></ClLinks> <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> &amp;optional *divisor → quotient, remainder* 
 
 
 
-**round** *number* &amp;optional *divisor → quotient, remainder* 
+<ClLinks styled={true} term={"round"}><b>round</b></ClLinks> <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> &amp;optional *divisor → quotient, remainder* 
 
 
 
-**fround** *number* &amp;optional *divisor → quotient, remainder* 
+<ClLinks styled={true} term={"fround"}><b>fround</b></ClLinks> <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> &amp;optional *divisor → quotient, remainder* 
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-*number*—a *real*. 
+<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a *real*. 
 
 
 
@@ -66,7 +66,7 @@
 
 
 
-*quotient*—for **floor**, **ceiling**, **truncate**, and **round**: an *integer* ; for **ffloor**, **fceiling**, **ftruncate**, and **fround**: a *float*. 
+*quotient*—for <ClLinks styled={true} term={"floor"}><b>floor</b></ClLinks>, <ClLinks styled={true} term={"ceiling"}><b>ceiling</b></ClLinks>, <ClLinks styled={true} term={"truncate"}><b>truncate</b></ClLinks>, and <ClLinks styled={true} term={"round"}><b>round</b></ClLinks>: an *integer* ; for <ClLinks styled={true} term={"ffloor"}><b>ffloor</b></ClLinks>, <ClLinks styled={true} term={"fceiling"}><b>fceiling</b></ClLinks>, <ClLinks styled={true} term={"ftruncate"}><b>ftruncate</b></ClLinks>, and <ClLinks styled={true} term={"fround"}><b>fround</b></ClLinks>: a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>. 
 
 
 
@@ -78,43 +78,43 @@
 
 
 
-These functions divide *number* by *divisor*, returning a *quotient* and *remainder*, such that *quotient·divisor*+*remainder*=*number* 
+These functions divide <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> by *divisor*, returning a *quotient* and *remainder*, such that *quotient·divisor*+*remainder*=<ClLinks styled={true} term={"number"}><i>number</i></ClLinks> 
 
 
 
-The *quotient* always represents a mathematical integer. When more than one mathematical integer might be possible (*i.e.*, when the remainder is not zero), the kind of rounding or truncation depends on the *operator* : 
+The *quotient* always represents a mathematical integer. When more than one mathematical integer might be possible (*i.e.*, when the remainder is not zero), the kind of rounding or truncation depends on the <ClLinks styled={true} term={"operator"}><i>operator</i></ClLinks> : 
 
 
 
-**floor**, **ffloor** 
+<ClLinks styled={true} term={"floor"}><b>floor</b></ClLinks>, <ClLinks styled={true} term={"ffloor"}><b>ffloor</b></ClLinks> 
 
 
 
-**floor** and **ffloor** produce a *quotient* that has been truncated toward negative infinity; that is, the *quotient* represents the largest mathematical integer that is not larger than the mathematical quotient. 
+<ClLinks styled={true} term={"floor"}><b>floor</b></ClLinks> and <ClLinks styled={true} term={"ffloor"}><b>ffloor</b></ClLinks> produce a *quotient* that has been truncated toward negative infinity; that is, the *quotient* represents the largest mathematical integer that is not larger than the mathematical quotient. 
 
 
 
-**ceiling**, **fceiling** 
+<ClLinks styled={true} term={"ceiling"}><b>ceiling</b></ClLinks>, <ClLinks styled={true} term={"fceiling"}><b>fceiling</b></ClLinks> 
 
 
 
-**ceiling** and **fceiling** produce a *quotient* that has been truncated toward positive infinity; that is, the *quotient* represents the smallest mathematical integer that is not smaller than the mathematical result. 
+<ClLinks styled={true} term={"ceiling"}><b>ceiling</b></ClLinks> and <ClLinks styled={true} term={"fceiling"}><b>fceiling</b></ClLinks> produce a *quotient* that has been truncated toward positive infinity; that is, the *quotient* represents the smallest mathematical integer that is not smaller than the mathematical result. 
 
 
 
-**truncate**, **ftruncate** 
+<ClLinks styled={true} term={"truncate"}><b>truncate</b></ClLinks>, <ClLinks styled={true} term={"ftruncate"}><b>ftruncate</b></ClLinks> 
 
 
 
-**truncate** and **ftruncate** produce a *quotient* that has been truncated towards zero; that is, the *quotient* represents the mathematical integer of the same sign as the mathematical quotient, and that has the greatest integral magnitude not greater than that of the mathematical quotient. 
+<ClLinks styled={true} term={"truncate"}><b>truncate</b></ClLinks> and <ClLinks styled={true} term={"ftruncate"}><b>ftruncate</b></ClLinks> produce a *quotient* that has been truncated towards zero; that is, the *quotient* represents the mathematical integer of the same sign as the mathematical quotient, and that has the greatest integral magnitude not greater than that of the mathematical quotient. 
 
 
 
-**round**, **fround** 
+<ClLinks styled={true} term={"round"}><b>round</b></ClLinks>, <ClLinks styled={true} term={"fround"}><b>fround</b></ClLinks> 
 
 
 
-**round** and **fround** produce a *quotient* that has been rounded to the nearest mathematical integer; if the mathematical quotient is exactly halfway between two integers, (that is, it 
+<ClLinks styled={true} term={"round"}><b>round</b></ClLinks> and <ClLinks styled={true} term={"fround"}><b>fround</b></ClLinks> produce a *quotient* that has been rounded to the nearest mathematical integer; if the mathematical quotient is exactly halfway between two integers, (that is, it 
 
 
 
@@ -138,15 +138,15 @@ has the form *integer*+<sup>1</sup><sub>2</sub>), then the *quotient* has been r
 
 
 
-All of these functions perform type conversion operations on *numbers*. 
+All of these functions perform type conversion operations on <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks>. 
 
 
 
-The *remainder* is an *integer* if both x and y are *integers*, is a *rational* if both x and y are *rationals*, and is a *float* if either x or y is a *float*. 
+The *remainder* is an *integer* if both x and y are *integers*, is a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> if both x and y are <ClLinks styled={true} term={"rational"}><i>rationals</i></ClLinks>, and is a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> if either x or y is a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>. 
 
 
 
-**ffloor**, **fceiling**, **ftruncate**, and **fround** handle arguments of different *types* in the following way: If *number* is a *float*, and *divisor* is not a *float* of longer format, then the first result is a *float* of the same *type* as *number*. Otherwise, the first result is of the *type* determined by *contagion* rules; see Section 12.1.1.2 (Contagion in Numeric Operations). 
+<ClLinks styled={true} term={"ffloor"}><b>ffloor</b></ClLinks>, <ClLinks styled={true} term={"fceiling"}><b>fceiling</b></ClLinks>, <ClLinks styled={true} term={"ftruncate"}><b>ftruncate</b></ClLinks>, and <ClLinks styled={true} term={"fround"}><b>fround</b></ClLinks> handle arguments of different <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> in the following way: If <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>, and *divisor* is not a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> of longer format, then the first result is a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> of the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> as <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>. Otherwise, the first result is of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> determined by <ClLinks styled={true} term={"contagion"}><i>contagion</i></ClLinks> rules; see Section 12.1.1.2 (Contagion in Numeric Operations). 
 
 
 
@@ -184,11 +184,11 @@ The *remainder* is an *integer* if both x and y are *integers*, is a *rational* 
 
 
 
-When only *number* is given, the two results are exact; the mathematical sum of the two results is always equal to the mathematical value of *number*. 
+When only <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is given, the two results are exact; the mathematical sum of the two results is always equal to the mathematical value of <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>. 
 
 
 
-(*function number divisor*) and (*function* (/ *number divisor*)) (where *function* is any of one of **floor**, **ceiling**, **ffloor**, **fceiling**, **truncate**, **round**, **ftruncate**, and **fround**) return the same first value, 
+(*function number divisor*) and (<ClLinks styled={true} term={"function"}><i>function</i></ClLinks> (/ *number divisor*)) (where <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is any of one of <ClLinks styled={true} term={"floor"}><b>floor</b></ClLinks>, <ClLinks styled={true} term={"ceiling"}><b>ceiling</b></ClLinks>, <ClLinks styled={true} term={"ffloor"}><b>ffloor</b></ClLinks>, <ClLinks styled={true} term={"fceiling"}><b>fceiling</b></ClLinks>, <ClLinks styled={true} term={"truncate"}><b>truncate</b></ClLinks>, <ClLinks styled={true} term={"round"}><b>round</b></ClLinks>, <ClLinks styled={true} term={"ftruncate"}><b>ftruncate</b></ClLinks>, and <ClLinks styled={true} term={"fround"}><b>fround</b></ClLinks>) return the same first value, 
 
 
 
@@ -216,7 +216,7 @@ but they return different remainders as the second value. For example:
 
 
 
-If an effect is desired that is similar to **round**, but that always rounds up or down (rather than toward the nearest even integer) if the mathematical quotient is exactly halfway between two integers, the programmer should consider a construction such as (floor (+ x 1/2)) or (ceiling (- x 1/2)). 
+If an effect is desired that is similar to <ClLinks styled={true} term={"round"}><b>round</b></ClLinks>, but that always rounds up or down (rather than toward the nearest even integer) if the mathematical quotient is exactly halfway between two integers, the programmer should consider a construction such as (floor (+ x 1/2)) or (ceiling (- x 1/2)). 
 
 
 

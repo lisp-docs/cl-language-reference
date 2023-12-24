@@ -1,4 +1,4 @@
-**with-slots** *Macro* 
+**with-slots** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**with-slots** (*\{slot-entry\}*\*) *instance-form \{declaration\}*\* *\{form\}*\* 
+<ClLinks styled={true} term={"with-slots"}><b>with-slots</b></ClLinks> (*\{slot-entry\}*\*) *instance-form \{declaration\}*\* <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -30,23 +30,23 @@
 
 
 
-*instance-form*—a *form*; evaluted to produce *instance*. 
+*instance-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluted to produce <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>. 
 
 
 
-*instance*—an *object*. 
+<ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*declaration*—a **declare** *expression*; not evaluated. 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*forms*—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the *values* returned by the *forms*. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -54,11 +54,11 @@
 
 
 
-The macro **with-slots** *establishes* a *lexical environment* for referring to the *slots* in the *instance* named by the given *slot-names* as though they were *variables*. Within such a context the value of the *slot* can be specified by using its slot name, as if it were a lexically bound variable. Both **setf** and **setq** can be used to set the value of the *slot*. 
+The macro <ClLinks styled={true} term={"with-slots"}><b>with-slots</b></ClLinks> *establishes* a *lexical environment* for referring to the <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> in the <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> named by the given *slot-names* as though they were <ClLinks styled={true} term={"variable"}><i>variables</i></ClLinks>. Within such a context the value of the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> can be specified by using its slot name, as if it were a lexically bound variable. Both <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> and <ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks> can be used to set the value of the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 
 
 
 
-The macro **with-slots** translates an appearance of the slot name as a *variable* into a call to **slot-value**. 
+The macro <ClLinks styled={true} term={"with-slots"}><b>with-slots</b></ClLinks> translates an appearance of the slot name as a <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> into a call to <ClLinks styled={true} term={"slot-value"}><b>slot-value</b></ClLinks>. 
 
 
 
@@ -105,7 +105,7 @@ The macro **with-slots** translates an appearance of the slot name as a *variabl
 
 
 
-**defclass** 
+<ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks> 
 
 
 
@@ -113,7 +113,7 @@ The macro **with-slots** translates an appearance of the slot name as a *variabl
 
 
 
-The consequences are undefined if any *slot-name* is not the name of a *slot* in the *instance*. 
+The consequences are undefined if any *slot-name* is not the name of a <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> in the <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>. 
 
 
 
@@ -121,7 +121,7 @@ The consequences are undefined if any *slot-name* is not the name of a *slot* in
 
 
 
-**with-accessors**, **slot-value**, **symbol-macrolet** 
+<ClLinks styled={true} term={"with-accessors"}><b>with-accessors</b></ClLinks>, <ClLinks styled={true} term={"slot-value"}><b>slot-value</b></ClLinks>, <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> 
 
 
 
@@ -129,7 +129,7 @@ The consequences are undefined if any *slot-name* is not the name of a *slot* in
 
 
 
-A **with-slots** expression of the form: 
+A <ClLinks styled={true} term={"with-slots"}><b>with-slots</b></ClLinks> expression of the form: 
 
 
 

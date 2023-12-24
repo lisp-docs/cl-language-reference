@@ -6,7 +6,7 @@
 
 
 
-**the** *value-type form ! \{result\}*\* 
+<ClLinks styled={true} term={"the"}><b>the</b></ClLinks> *value-type form ! \{result\}*\* 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-*form*—a *form*; evaluated. 
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated. 
 
 
 
-*results*—the *values* resulting from the *evaluation* of *form*. These *values* must conform to the *type* supplied by *value-type*; see below. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> resulting from the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. These <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> must conform to the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> supplied by *value-type*; see below. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-It is permissible for *form* to *yield* a di↵erent number of *values* than are specified by *value-type*, provided that the values for which *types* are declared are indeed of those *types*. Missing values are treated as **nil** for the purposes of checking their *types*. 
+It is permissible for <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> to <ClLinks styled={true} term={"yield"}><i>yield</i></ClLinks> a di↵erent number of <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> than are specified by *value-type*, provided that the values for which <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> are declared are indeed of those <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>. Missing values are treated as <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> for the purposes of checking their <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>. 
 
 
 
-Regardless of number of *values* declared by *value-type*, the number of *values* returned by the **the** *special form* is the same as the number of *values* returned by *form*. 
+Regardless of number of <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> declared by *value-type*, the number of <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"the"}><b>the</b></ClLinks> *special form* is the same as the number of <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -70,7 +70,7 @@ Evaluation and
 
 
 
-The consequences are undefined if the *values yielded* by the *form* are not of the *type* specified by *value-type*. 
+The consequences are undefined if the *values yielded* by the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> are not of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> specified by *value-type*. 
 
 
 
@@ -78,7 +78,7 @@ The consequences are undefined if the *values yielded* by the *form* are not of 
 
 
 
-**values** 
+<ClLinks styled={true} term={"values"}><b>values</b></ClLinks> 
 
 
 
@@ -86,7 +86,7 @@ The consequences are undefined if the *values yielded* by the *form* are not of 
 
 
 
-The **values** *type specifier* can be used to indicate the types of *multiple values*: 
+The <ClLinks styled={true} term={"values"}><b>values</b></ClLinks> *type specifier* can be used to indicate the types of *multiple values*: 
 
 
 
@@ -102,7 +102,7 @@ The **values** *type specifier* can be used to indicate the types of *multiple v
 
 
 
-**setf** can be used with **the** type declarations. In this case the declaration is transferred to the form that specifies the new value. The resulting **setf** *form* is then analyzed. 
+<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> can be used with <ClLinks styled={true} term={"the"}><b>the</b></ClLinks> type declarations. In this case the declaration is transferred to the form that specifies the new value. The resulting <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is then analyzed. 
 
 
 

@@ -1,4 +1,4 @@
-**terpri, fresh-line** *Function* 
+**terpri, fresh-line** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**terpri** &amp;optional *output-stream →* **nil** 
+<ClLinks styled={true} term={"terpri"}><b>terpri</b></ClLinks> &amp;optional *output-stream →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
-**fresh-line** &amp;optional *output-stream → generalized-boolean* 
+<ClLinks styled={true} term={"fresh-line"}><b>fresh-line</b></ClLinks> &amp;optional *output-stream → generalized-boolean* 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-**terpri** outputs a *newline* to *output-stream*. 
+<ClLinks styled={true} term={"terpri"}><b>terpri</b></ClLinks> outputs a <ClLinks styled={true} term={"newline"}><i>newline</i></ClLinks> to *output-stream*. 
 
 
 
-**fresh-line** is similar to **terpri** but outputs a *newline* only if the *output-stream* is not already at the start of a line. If for some reason this cannot be determined, then a *newline* is output anyway. **fresh-line** returns *true* if it outputs a *newline*; otherwise it returns *false*. 
+<ClLinks styled={true} term={"fresh-line"}><b>fresh-line</b></ClLinks> is similar to <ClLinks styled={true} term={"terpri"}><b>terpri</b></ClLinks> but outputs a <ClLinks styled={true} term={"newline"}><i>newline</i></ClLinks> only if the *output-stream* is not already at the start of a line. If for some reason this cannot be determined, then a <ClLinks styled={true} term={"newline"}><i>newline</i></ClLinks> is output anyway. <ClLinks styled={true} term={"fresh-line"}><b>fresh-line</b></ClLinks> returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if it outputs a <ClLinks styled={true} term={"newline"}><i>newline</i></ClLinks>; otherwise it returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -69,7 +69,7 @@ The *output-stream* is modified.
 
 
 
-**\*standard-output\***, **\*terminal-io\***. 
+**\*standard-output\***, <ClLinks styled={true} term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
 
 
 
@@ -97,7 +97,7 @@ None.
 
 
 
-**terpri** is identical in effect to 
+<ClLinks styled={true} term={"terpri"}><b>terpri</b></ClLinks> is identical in effect to 
 
 
 

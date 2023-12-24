@@ -2,15 +2,15 @@
 
 
 
-A *restart* can be “associated with” a *condition* explicitly by **with-condition-restarts**, or implicitly by **restart-case**. Such an assocation has *dynamic extent*. 
+A <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> can be “associated with” a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> explicitly by <ClLinks styled={true} term={"with-condition-restarts"}><b>with-condition-restarts</b></ClLinks>, or implicitly by <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>. Such an assocation has *dynamic extent*. 
 
 
 
-A single *restart* may be associated with several *conditions* at the same time. A single *condition* may have several associated *restarts* at the same time. 
+A single <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> may be associated with several <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> at the same time. A single <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> may have several associated <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> at the same time. 
 
 
 
-Active restarts associated with a particular *condition* can be detected by *calling* a *function* such as **find-restart**, supplying that *condition* as the *condition argument*. Active restarts can also be detected without regard to any associated *condition* by calling such a function without a *condition argument*, or by supplying a value of **nil** for such an *argument*. 
+Active restarts associated with a particular <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> can be detected by *calling* a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> such as <ClLinks styled={true} term={"find-restart"}><b>find-restart</b></ClLinks>, supplying that <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> as the *condition argument*. Active restarts can also be detected without regard to any associated <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> by calling such a function without a *condition argument*, or by supplying a value of <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> for such an <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks>. 
 
 
 

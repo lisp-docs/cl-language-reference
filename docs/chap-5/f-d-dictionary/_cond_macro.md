@@ -1,28 +1,28 @@
-**cond** *Macro*
+**cond** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks>
 
 **Syntax:**
 
-**cond** *\{↓clause\}*\* → \{result\}\*
+<ClLinks styled={true} term={"cond"}><b>cond</b></ClLinks> *\{↓clause\}*\* → \{result\}\*
 
 *clause::*=(*test-form \{form\}*\*)
 
 **Arguments and Values:**
 
-*test-form*—a *form*.
+*test-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>.
 
-*forms*—an *implicit progn*.
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*.
 
-*results*—the *values* of the *forms* in the first *clause* whose *test-form yields true*, or the *primary value* of the *test-form* if there are no *forms* in that *clause*, or else **nil** if no *test-form yields true*.
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in the first *clause* whose *test-form yields true*, or the *primary value* of the *test-form* if there are no <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in that *clause*, or else <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if no *test-form yields true*.
 
 **Description:**
 
-**cond** allows the execution of *forms* to be dependent on *test-form*.
+<ClLinks styled={true} term={"cond"}><b>cond</b></ClLinks> allows the execution of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> to be dependent on *test-form*.
 
-*Test-forms* are evaluated one at a time in the order in which they are given in the argument list until a *test-form* is found that evaluates to *true*.
+*Test-forms* are evaluated one at a time in the order in which they are given in the argument list until a *test-form* is found that evaluates to <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>.
 
-If there are no *forms* in that clause, the *primary value* of the *test-form* is returned by the **cond** *form*. Otherwise, the *forms* associated with this *test-form* are evaluated in order, left to right, as an *implicit progn*, and the *values* returned by the last *form* are returned by the **cond** *form*.
+If there are no <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in that clause, the *primary value* of the *test-form* is returned by the <ClLinks styled={true} term={"cond"}><b>cond</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. Otherwise, the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> associated with this *test-form* are evaluated in order, left to right, as an *implicit progn*, and the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the last <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> are returned by the <ClLinks styled={true} term={"cond"}><b>cond</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>.
 
-Once one *test-form* has *yielded true*, no additional *test-forms* are *evaluated*. If no *test-form yields true*, **nil** is returned.
+Once one *test-form* has *yielded true*, no additional *test-forms* are *evaluated*. If no *test-form yields true*, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is returned.
 
 **Examples:**
 
@@ -47,11 +47,11 @@ a → 3
 
 **See Also:**
 
-**if**, **case**.
+<ClLinks styled={true} term={"if"}><b>if</b></ClLinks>, <ClLinks styled={true} term={"case"}><b>case</b></ClLinks>.
 
 :::info
 
-We fixed the examples so that it uses **defvar** to initialize
-the variable and to use **setf** rather than **setq** for assignment. 
+We fixed the examples so that it uses <ClLinks styled={true} term={"defvar"}><b>defvar</b></ClLinks> to initialize
+the variable and to use <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> rather than <ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks> for assignment. 
 
 :::

@@ -1,4 +1,4 @@
-**with-open-stream** *Macro* 
+**with-open-stream** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**with-open-stream** (*var stream*) *\{declaration\}*\* *\{form\}*\* 
+<ClLinks styled={true} term={"with-open-stream"}><b>with-open-stream</b></ClLinks> (*var stream*) *\{declaration\}*\* <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -22,19 +22,19 @@
 
 
 
-*stream*—a *form*; evaluated to produce a *stream*. 
+<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated to produce a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-*declaration*—a **declare** *expression*; not evaluated. 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*forms*—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the *values* returned by the *forms*. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -42,15 +42,15 @@
 
 
 
-**with-open-stream** performs a series of operations on *stream*, returns a value, and then closes the *stream*. 
+<ClLinks styled={true} term={"with-open-stream"}><b>with-open-stream</b></ClLinks> performs a series of operations on <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, returns a value, and then closes the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-*Var* is bound to the value of *stream*, and then *forms* are executed as an *implicit progn*. *stream* is automatically closed on exit from **with-open-stream**, no matter whether the exit is normal or abnormal. The *stream* has *dynamic extent*; its *extent* ends when the *form* is exited. 
+*Var* is bound to the value of <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, and then <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are executed as an *implicit progn*. *stream* is automatically closed on exit from <ClLinks styled={true} term={"with-open-stream"}><b>with-open-stream</b></ClLinks>, no matter whether the exit is normal or abnormal. The <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> has *dynamic extent*; its <ClLinks styled={true} term={"extent"}><i>extent</i></ClLinks> ends when the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is exited. 
 
 
 
-The consequences are undefined if an attempt is made to *assign* the the *variable var* with the *forms*. 
+The consequences are undefined if an attempt is made to <ClLinks styled={true} term={"assign"}><i>assign</i></ClLinks> the the *variable var* with the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -68,7 +68,7 @@ The consequences are undefined if an attempt is made to *assign* the the *variab
 
 
 
-The *stream* is closed (upon exit). 
+The <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is closed (upon exit). 
 
 
 
@@ -76,7 +76,7 @@ The *stream* is closed (upon exit).
 
 
 
-**close** 
+<ClLinks styled={true} term={"close"}><b>close</b></ClLinks> 
 
 
 

@@ -26,15 +26,15 @@ For information about extensions and subsets, see Section 1.6 (Language Extensio
 
 
 
-For information about how *programs* in the language are parsed by the *Lisp reader* , see Chapter 2 (Syntax). 
+For information about how <ClLinks styled={true} term={"program"}><i>programs</i></ClLinks> in the language are parsed by the *Lisp reader* , see Chapter 2 (Syntax). 
 
 
 
-For information about how *programs* in the language are *compiled* and *executed*, see Chapter 3 (Evaluation and Compilation). 
+For information about how <ClLinks styled={true} term={"program"}><i>programs</i></ClLinks> in the language are *compiled* and *executed*, see Chapter 3 (Evaluation and Compilation). 
 
 
 
-For information about data types, see Chapter 4 (Types and Classes). Not all *types* and *classes* are defined in this chapter; many are defined in chapter corresponding to their topic–for example, the numeric types are defined in Chapter 12 (Numbers). For a complete list of *standardized types*, see Figure 4–2. 
+For information about data types, see Chapter 4 (Types and Classes). Not all <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> and *classes* are defined in this chapter; many are defined in chapter corresponding to their topic–for example, the numeric types are defined in Chapter 12 (Numbers). For a complete list of *standardized types*, see Figure 4–2. 
 
 
 

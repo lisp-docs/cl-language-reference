@@ -1,4 +1,4 @@
-**apply** *Function* 
+**apply** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**apply** *function* &amp;rest *args*<sup>+</sup> → \{result\}\* 
+<ClLinks styled={true} term={"apply"}><b>apply</b></ClLinks> <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> &amp;rest *args*<sup>+</sup> → \{result\}\* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*function*—a *function designator* . 
+<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a *function designator* . 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*results*—the *values* returned by *function*. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-*Applies* the *function* to the *args*. 
+*Applies* the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> to the *args*. 
 
 
 
-When the *function* receives its arguments via **&amp;rest**, it is permissible (but not required) for the *implementation* to *bind* the *rest parameter* to an *object* that shares structure with the last argument to **apply**. Because a *function* can neither detect whether it was called via **apply** nor whether (if so) the last argument to **apply** was a *constant*, *conforming programs* must neither rely on the *list* structure of a *rest list* to be freshly consed, nor modify that *list* structure. 
+When the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> receives its arguments via **&amp;rest**, it is permissible (but not required) for the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> to <ClLinks styled={true} term={"bind"}><i>bind</i></ClLinks> the *rest parameter* to an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> that shares structure with the last argument to <ClLinks styled={true} term={"apply"}><b>apply</b></ClLinks>. Because a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> can neither detect whether it was called via <ClLinks styled={true} term={"apply"}><b>apply</b></ClLinks> nor whether (if so) the last argument to <ClLinks styled={true} term={"apply"}><b>apply</b></ClLinks> was a <ClLinks styled={true} term={"constant"}><i>constant</i></ClLinks>, *conforming programs* must neither rely on the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> structure of a *rest list* to be freshly consed, nor modify that <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> structure. 
 
 
 
-**setf** can be used with **apply** in certain circumstances; see Section 5.1.2.5 (APPLY Forms as Places). 
+<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> can be used with <ClLinks styled={true} term={"apply"}><b>apply</b></ClLinks> in certain circumstances; see Section 5.1.2.5 (APPLY Forms as Places). 
 
 **Examples:**
 ```lisp
@@ -70,4 +70,4 @@ When the *function* receives its arguments via **&amp;rest**, it is permissible 
 
 
 
-**funcall**, **fdefinition**, **function**, Section 3.1 (Evaluation), Section 5.1.2.5 (APPLY Forms as Places) 
+<ClLinks styled={true} term={"funcall"}><b>funcall</b></ClLinks>, <ClLinks styled={true} term={"fdefinition"}><b>fdefinition</b></ClLinks>, <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>, Section 3.1 (Evaluation), Section 5.1.2.5 (APPLY Forms as Places) 

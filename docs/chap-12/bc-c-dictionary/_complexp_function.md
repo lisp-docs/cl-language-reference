@@ -1,4 +1,4 @@
-**complexp** *Function* 
+**complexp** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**complexp** *object → generalized-boolean* 
+<ClLinks styled={true} term={"complexp"}><b>complexp</b></ClLinks> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns *true* if *object* is of *type* **complex**; otherwise, returns *false*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"complex"}><b>complex</b></ClLinks>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -41,7 +41,7 @@ Returns *true* if *object* is of *type* **complex**; otherwise, returns *false*.
 
 
 
-**complex** (*function* and *type*), **typep** 
+<ClLinks styled={true} term={"complex"}><b>complex</b></ClLinks> (<ClLinks styled={true} term={"function"}><i>function</i></ClLinks> and <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>), <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks> 
 
 
 
@@ -49,7 +49,7 @@ Returns *true* if *object* is of *type* **complex**; otherwise, returns *false*.
 
 
 
-(complexp *object*) *≡* (typep *object* ’complex) 
+(complexp <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’complex) 
 
 
 

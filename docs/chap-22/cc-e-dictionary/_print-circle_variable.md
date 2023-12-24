@@ -1,4 +1,4 @@
-*∗***print-circle***∗ Variable* 
+*∗<ClLinks styled={true} term={"print-circle"}><b>*print-circle*</b></ClLinks>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a *generalized boolean*.
 
 
 
-*false*. 
+<ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -22,19 +22,19 @@ a *generalized boolean*.
 
 
 
-Controls the attempt to detect circularity and sharing in an *object* being printed. 
+Controls the attempt to detect circularity and sharing in an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> being printed. 
 
 
 
-If *false*, the printing process merely proceeds by recursive descent without attempting to detect circularity and sharing. 
+If <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, the printing process merely proceeds by recursive descent without attempting to detect circularity and sharing. 
 
 
 
-If *true*, the printer will endeavor to detect cycles and sharing in the structure to be printed, and to use #*n*= and #*n*# syntax to indicate the circularities or shared components. 
+If <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the printer will endeavor to detect cycles and sharing in the structure to be printed, and to use #*n*= and #*n*# syntax to indicate the circularities or shared components. 
 
 
 
-If *true*, a user-defined **print-object** *method* can print *objects* to the supplied *stream* using **write**, **prin1**, **princ**, or **format** and expect circularities and sharing to be detected and printed using the 
+If <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, a user-defined <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> can print <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> to the supplied <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> using <ClLinks styled={true} term={"write"}><b>write</b></ClLinks>, <ClLinks styled={true} term={"prin1"}><b>prin1</b></ClLinks>, <ClLinks styled={true} term={"princ"}><b>princ</b></ClLinks>, or <ClLinks styled={true} term={"format"}><b>format</b></ClLinks> and expect circularities and sharing to be detected and printed using the 
 
 
 
@@ -74,7 +74,7 @@ Note that implementations should not use #*n*# notation when the *Lisp reader* w
 
 
 
-**write** 
+<ClLinks styled={true} term={"write"}><b>write</b></ClLinks> 
 
 
 
@@ -82,7 +82,7 @@ Note that implementations should not use #*n*# notation when the *Lisp reader* w
 
 
 
-An attempt to print a circular structure with **\*print-circle\*** set to **nil** may lead to looping behavior and failure to terminate. 
+An attempt to print a circular structure with <ClLinks styled={true} term={"print-circle"}><b>\*print-circle\*</b></ClLinks> set to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> may lead to looping behavior and failure to terminate. 
 
 
 

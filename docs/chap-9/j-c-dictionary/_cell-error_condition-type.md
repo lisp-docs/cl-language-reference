@@ -6,7 +6,7 @@
 
 
 
-**cell-error**, **error**, **serious-condition**, **condition**, **t** 
+<ClLinks styled={true} term={"cell-error"}><b>cell-error</b></ClLinks>, <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"serious-condition"}><b>serious-condition</b></ClLinks>, <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The *type* **cell-error** consists of error conditions that occur during a location *access*. The name of the offending cell is initialized by the :name initialization argument to **make-condition**, and is *accessed* by the *function* **cell-error-name**. 
+The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"cell-error"}><b>cell-error</b></ClLinks> consists of error conditions that occur during a location <ClLinks styled={true} term={"access"}><i>access</i></ClLinks>. The name of the offending cell is initialized by the :name initialization argument to <ClLinks styled={true} term={"make-condition"}><b>make-condition</b></ClLinks>, and is *accessed* by the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"cell-error-name"}><b>cell-error-name</b></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ The *type* **cell-error** consists of error conditions that occur during a locat
 
 
 
-**cell-error-name** 
+<ClLinks styled={true} term={"cell-error-name"}><b>cell-error-name</b></ClLinks> 
 
 
 

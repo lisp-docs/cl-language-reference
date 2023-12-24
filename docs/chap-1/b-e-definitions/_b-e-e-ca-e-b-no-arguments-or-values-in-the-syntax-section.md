@@ -2,7 +2,7 @@
 
 
 
-If no *arguments* are permitted, or no *values* are returned, a special notation is used to make this more visually apparent. For example, 
+If no <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> are permitted, or no <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> are returned, a special notation is used to make this more visually apparent. For example, 
 
 
 
@@ -10,7 +10,7 @@ If no *arguments* are permitted, or no *values* are returned, a special notation
 
 
 
-indicates that F is an operator that accepts no *arguments* and returns no *values*. 
+indicates that F is an operator that accepts no <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> and returns no <ClLinks styled={true} term={"value"}><i>values</i></ClLinks>. 
 
 
 

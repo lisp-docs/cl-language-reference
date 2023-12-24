@@ -1,4 +1,4 @@
-**make-concatenated-stream** *Function* 
+**make-concatenated-stream** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**make-concatenated-stream** &amp;rest *input-streams → concatenated-stream* 
+<ClLinks styled={true} term={"make-concatenated-stream"}><b>make-concatenated-stream</b></ClLinks> &amp;rest *input-streams → concatenated-stream* 
 
 
 
@@ -40,7 +40,7 @@ Returns a *concatenated stream* that has the indicated *input-streams* initially
 
 
 
-Should signal **type-error** if any argument is not an *input stream*. 
+Should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if any argument is not an *input stream*. 
 
 
 

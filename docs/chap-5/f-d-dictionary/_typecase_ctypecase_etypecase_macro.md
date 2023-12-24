@@ -1,4 +1,4 @@
-**typecase, ctypecase, etypecase** *Macro* 
+**typecase, ctypecase, etypecase** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**typecase** *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] → \{result\}\* 
+<ClLinks styled={true} term={"typecase"}><b>typecase</b></ClLinks> *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] → \{result\}\* 
 
 
 
-**ctypecase** *keyplace \{↓normal-clause\}*\* → \{result\}\* 
+<ClLinks styled={true} term={"ctypecase"}><b>ctypecase</b></ClLinks> *keyplace \{↓normal-clause\}*\* → \{result\}\* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-**etypecase** *keyform \{↓normal-clause\}*\* → \{result\}\* 
+<ClLinks styled={true} term={"etypecase"}><b>etypecase</b></ClLinks> *keyform \{↓normal-clause\}*\* → \{result\}\* 
 
 
 
@@ -50,11 +50,11 @@
 
 
 
-*keyform*—a *form*; evaluated to produce a *test-key*. 
+*keyform*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated to produce a *test-key*. 
 
 
 
-*keyplace*—a *form*; evaluated initially to produce a *test-key*. Possibly also used later as a *place* if no *types* match. 
+*keyplace*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated initially to produce a *test-key*. Possibly also used later as a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> if no <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> match. 
 
 
 
@@ -62,15 +62,15 @@
 
 
 
-*type*—a *type specifier* . 
+<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>—a *type specifier* . 
 
 
 
-*forms*—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the *values* returned by the *forms* in the matching *clause*. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in the matching *clause*. 
 
 
 
@@ -78,7 +78,7 @@
 
 
 
-These *macros* allow the conditional execution of a body of *forms* in a *clause* that is selected by matching the *test-key* on the basis of its *type*. 
+These <ClLinks styled={true} term={"macro"}><i>macros</i></ClLinks> allow the conditional execution of a body of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a *clause* that is selected by matching the *test-key* on the basis of its <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>. 
 
 
 
@@ -86,35 +86,35 @@ The *keyform* or *keyplace* is *evaluated* to produce the *test-key*.
 
 
 
-Each of the *normal-clauses* is then considered in turn. If the *test-key* is of the *type* given by the *clauses*’s *type*, the *forms* in that *clause* are *evaluated* as an *implicit progn*, and the *values* it returns are returned as the value of the **typecase**, **ctypecase**, or **etypecase** *form*. 
+Each of the *normal-clauses* is then considered in turn. If the *test-key* is of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> given by the *clauses*’s <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>, the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <ClLinks styled={true} term={"typecase"}><b>typecase</b></ClLinks>, <ClLinks styled={true} term={"ctypecase"}><b>ctypecase</b></ClLinks>, or <ClLinks styled={true} term={"etypecase"}><b>etypecase</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-These *macros* differ only in their *behavior* when no *normal-clause* matches; specifically: 
+These <ClLinks styled={true} term={"macro"}><i>macros</i></ClLinks> differ only in their *behavior* when no *normal-clause* matches; specifically: 
 
 
 
-**typecase** 
+<ClLinks styled={true} term={"typecase"}><b>typecase</b></ClLinks> 
 
 
 
-If no *normal-clause* matches, and there is an *otherwise-clause*, then that *otherwise-clause* automatically matches; the *forms* in that *clause* are *evaluated* as an *implicit progn*, and the *values* it returns are returned as the value of the **typecase**. 
+If no *normal-clause* matches, and there is an *otherwise-clause*, then that *otherwise-clause* automatically matches; the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <ClLinks styled={true} term={"typecase"}><b>typecase</b></ClLinks>. 
 
 
 
-If there is no *otherwise-clause*, **typecase** returns **nil**. 
+If there is no *otherwise-clause*, <ClLinks styled={true} term={"typecase"}><b>typecase</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-**ctypecase** 
+<ClLinks styled={true} term={"ctypecase"}><b>ctypecase</b></ClLinks> 
 
 
 
-If no *normal-clause* matches, a *correctable error* of *type* **type-error** is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (or *type1 type2* ...). The **store-value** *restart* can be used to correct the error. 
+If no *normal-clause* matches, a *correctable error* of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (or *type1 type2* ...). The **store-value** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> can be used to correct the error. 
 
 
 
-If the **store-value** *restart* is invoked, its *argument* becomes the new *test-key*, and is stored Data and Control 
+If the **store-value** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is invoked, its <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> becomes the new *test-key*, and is stored Data and Control 
 
 
 
@@ -130,11 +130,11 @@ If the **store-value** *restart* is invoked, its *argument* becomes the new *tes
 
 
 
-in *keyplace* as if by (setf *keyplace test-key*). Then **ctypecase** starts over, considering each *clause* anew. 
+in *keyplace* as if by (setf *keyplace test-key*). Then <ClLinks styled={true} term={"ctypecase"}><b>ctypecase</b></ClLinks> starts over, considering each *clause* anew. 
 
 
 
-If the **store-value** *restart* is invoked interactively, the user is prompted for a new *test-key* to use. 
+If the **store-value** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is invoked interactively, the user is prompted for a new *test-key* to use. 
 
 
 
@@ -142,19 +142,19 @@ The subforms of *keyplace* might be evaluated again if none of the cases holds.
 
 
 
-**etypecase** 
+<ClLinks styled={true} term={"etypecase"}><b>etypecase</b></ClLinks> 
 
 
 
-If no *normal-clause* matches, a *non-correctable error* of *type* **type-error** is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (or *type1 type2* ...). 
+If no *normal-clause* matches, a *non-correctable error* of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (or *type1 type2* ...). 
 
 
 
-Note that in contrast with **ctypecase**, the caller of **etypecase** may rely on the fact that **etypecase** does not return if a *normal-clause* does not match. 
+Note that in contrast with <ClLinks styled={true} term={"ctypecase"}><b>ctypecase</b></ClLinks>, the caller of <ClLinks styled={true} term={"etypecase"}><b>etypecase</b></ClLinks> may rely on the fact that <ClLinks styled={true} term={"etypecase"}><b>etypecase</b></ClLinks> does not return if a *normal-clause* does not match. 
 
 
 
-In all three cases, is permissible for more than one *clause* to specify a matching *type*, particularly if one is a *subtype* of another; the earliest applicable *clause* is chosen. 
+In all three cases, is permissible for more than one *clause* to specify a matching <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>, particularly if one is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of another; the earliest applicable *clause* is chosen. 
 
 
 
@@ -206,7 +206,7 @@ x *!* 12
 
 
 
-**ctypecase** and **etypecase**, since they might signal an error, are potentially a↵ected by existing *handlers* and **\*debug-io\***. 
+<ClLinks styled={true} term={"ctypecase"}><b>ctypecase</b></ClLinks> and <ClLinks styled={true} term={"etypecase"}><b>etypecase</b></ClLinks>, since they might signal an error, are potentially a↵ected by existing <ClLinks styled={true} term={"handler"}><i>handlers</i></ClLinks> and **\*debug-io\***. 
 
 
 
@@ -214,11 +214,11 @@ x *!* 12
 
 
 
-**ctypecase** and **etypecase** signal an error of *type* **type-error** if no *normal-clause* matches. 
+<ClLinks styled={true} term={"ctypecase"}><b>ctypecase</b></ClLinks> and <ClLinks styled={true} term={"etypecase"}><b>etypecase</b></ClLinks> signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if no *normal-clause* matches. 
 
 
 
-The *compiler* may choose to issue a warning of *type* **style-warning** if a *clause* will never be selected because it is completely shadowed by earlier clauses. 
+The <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> may choose to issue a warning of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"style-warning"}><b>style-warning</b></ClLinks> if a *clause* will never be selected because it is completely shadowed by earlier clauses. 
 
 
 
@@ -226,7 +226,7 @@ The *compiler* may choose to issue a warning of *type* **style-warning** if a *c
 
 
 
-**case**, **cond**, **setf**, Section 5.1 (Generalized Reference) 
+<ClLinks styled={true} term={"case"}><b>case</b></ClLinks>, <ClLinks styled={true} term={"cond"}><b>cond</b></ClLinks>, <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>, Section 5.1 (Generalized Reference) 
 
 
 
@@ -250,11 +250,11 @@ The *compiler* may choose to issue a warning of *type* **style-warning** if a *c
 
 
 
-(cond *\{*((typep #1# ’*type*) *\{form\}*\*)*\}*\*)) 
+(cond *\{*((typep #1# ’<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>) <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\*)*\}*\*)) 
 
 
 
-The specific error message used by **etypecase** and **ctypecase** can vary between implementations. In situations where control of the specific wording of the error message is important, it is better to use **typecase** with an *otherwise-clause* that explicitly signals an error with an appropriate message. 
+The specific error message used by <ClLinks styled={true} term={"etypecase"}><b>etypecase</b></ClLinks> and <ClLinks styled={true} term={"ctypecase"}><b>ctypecase</b></ClLinks> can vary between implementations. In situations where control of the specific wording of the error message is important, it is better to use <ClLinks styled={true} term={"typecase"}><b>typecase</b></ClLinks> with an *otherwise-clause* that explicitly signals an error with an appropriate message. 
 
 
 

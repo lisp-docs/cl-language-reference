@@ -1,4 +1,4 @@
-**with-package-iterator** *Macro* 
+**with-package-iterator** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**with-package-iterator** (*name package-list-form* &amp;rest *symbol-types*) *\{declaration\}*\* *\{form\}*\* → \{result\}\* 
+<ClLinks styled={true} term={"with-package-iterator"}><b>with-package-iterator</b></ClLinks> (*name package-list-form* &amp;rest *symbol-types*) <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
 
 
 
@@ -14,31 +14,31 @@
 
 
 
-*name*—a *symbol*. 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*package-list-form*—a *form*; evaluated once to produce a *package-list*. 
+*package-list-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated once to produce a *package-list*. 
 
 
 
-*package-list*—a *designator* for a list of *package designators*. 
+*package-list*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a list of *package designators*. 
 
 
 
-*symbol-type*—one of the *symbols* :internal, :external, or :inherited. 
+*symbol-type*—one of the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> :internal, :external, or :inherited. 
 
 
 
-*declaration*—a **declare** *expression*; not evaluated. 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*forms*—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the *values* of the *forms*. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -46,19 +46,15 @@
 
 
 
-Within the lexical scope of the body *forms*, the *name* is defined via **macrolet** such that successive invocations of (*name*) will return the *symbols*, one by one, from the *packages* in *package-list*. 
+Within the lexical scope of the body <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>, the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is defined via <ClLinks styled={true} term={"macrolet"}><b>macrolet</b></ClLinks> such that successive invocations of (<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>) will return the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>, one by one, from the <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> in *package-list*. 
 
 
 
-It is unspecified whether *symbols* inherited from multiple *packages* are returned more than once. The order of *symbols* returned does not necessarily reflect the order of *packages* in *package-list*. When *package-list* has more than one element, it is unspecified whether duplicate *symbols* are returned once or more than once. 
+It is unspecified whether <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> inherited from multiple <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> are returned more than once. The order of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> returned does not necessarily reflect the order of <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> in *package-list*. When *package-list* has more than one element, it is unspecified whether duplicate <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> are returned once or more than once. 
 
 
 
-*Symbol-types* controls which *symbols* that are *accessible* in a *package* are returned as follows: 
-
-
-
- 
+*Symbol-types* controls which <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> that are <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in a <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> are returned as follows: 
 
 
 
@@ -66,7 +62,11 @@ It is unspecified whether *symbols* inherited from multiple *packages* are retur
 
 
 
-**with-package-iterator** 
+ 
+
+
+
+<ClLinks styled={true} term={"with-package-iterator"}><b>with-package-iterator</b></ClLinks> 
 
 
 
@@ -74,7 +74,7 @@ It is unspecified whether *symbols* inherited from multiple *packages* are retur
 
 
 
-The *symbols* that are *present* in the *package*, but that are not *exported*. 
+The <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> that are <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, but that are not <ClLinks styled={true} term={"exported"}><i>exported</i></ClLinks>. 
 
 
 
@@ -82,7 +82,7 @@ The *symbols* that are *present* in the *package*, but that are not *exported*.
 
 
 
-The *symbols* that are *present* in the *package* and are *exported*. 
+The <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> that are <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> and are <ClLinks styled={true} term={"exported"}><i>exported</i></ClLinks>. 
 
 
 
@@ -90,35 +90,35 @@ The *symbols* that are *present* in the *package* and are *exported*.
 
 
 
-The *symbols* that are *exported* by used *packages* and that are not *shadowed*. 
+The <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> that are <ClLinks styled={true} term={"exported"}><i>exported</i></ClLinks> by used <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> and that are not *shadowed*. 
 
 
 
-When more than one argument is supplied for *symbol-types*, a *symbol* is returned if its *accessibility* matches any one of the *symbol-types* supplied. Implementations may extend this syntax by recognizing additional symbol accessibility types. 
+When more than one argument is supplied for *symbol-types*, a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is returned if its <ClLinks styled={true} term={"accessibility"}><i>accessibility</i></ClLinks> matches any one of the *symbol-types* supplied. Implementations may extend this syntax by recognizing additional symbol accessibility types. 
 
 
 
-An invocation of (*name*) returns four values as follows: 
+An invocation of (<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>) returns four values as follows: 
 
 
 
-1\. A flag that indicates whether a *symbol* is returned (true means that a *symbol* is returned). 2. A *symbol* that is *accessible* in one the indicated *packages*. 
+1\. A flag that indicates whether a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is returned (true means that a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is returned). 2. A <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that is <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in one the indicated <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks>. 
 
 
 
-3\. The accessibility type for that *symbol*; *i.e.*, one of the symbols :internal, :external, or :inherited. 
+3\. The accessibility type for that <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>; *i.e.*, one of the symbols :internal, :external, or :inherited. 
 
 
 
-4\. The *package* from which the *symbol* was obtained. The *package* is one of the *packages* present or named in *package-list*. 
+4\. The <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> from which the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> was obtained. The <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is one of the <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> present or named in *package-list*. 
 
 
 
-After all *symbols* have been returned by successive invocations of (*name*), then only one value is returned, namely **nil**. 
+After all <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> have been returned by successive invocations of (<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>), then only one value is returned, namely <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-The meaning of the second, third, and fourth *values* is that the returned *symbol* is *accessible* in the returned *package* in the way indicated by the second return value as follows: 
+The meaning of the second, third, and fourth <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> is that the returned <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in the returned <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> in the way indicated by the second return value as follows: 
 
 
 
@@ -126,7 +126,7 @@ The meaning of the second, third, and fourth *values* is that the returned *symb
 
 
 
-Means *present* and not *exported*. 
+Means <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> and not <ClLinks styled={true} term={"exported"}><i>exported</i></ClLinks>. 
 
 
 
@@ -134,7 +134,7 @@ Means *present* and not *exported*.
 
 
 
-Means *present* and *exported*. 
+Means <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> and <ClLinks styled={true} term={"exported"}><i>exported</i></ClLinks>. 
 
 
 
@@ -142,23 +142,19 @@ Means *present* and *exported*.
 
 
 
-Means not *present* (thus not *shadowed*) but inherited from some used *package*. 
+Means not <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> (thus not *shadowed*) but inherited from some used <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
 
 
 
-It is unspecified what happens if any of the implicit interior state of an iteration is returned outside the dynamic extent of the **with-package-iterator** form such as by returning some *closure* over the invocation *form*. 
+It is unspecified what happens if any of the implicit interior state of an iteration is returned outside the dynamic extent of the <ClLinks styled={true} term={"with-package-iterator"}><b>with-package-iterator</b></ClLinks> form such as by returning some <ClLinks styled={true} term={"closure"}><i>closure</i></ClLinks> over the invocation <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-Any number of invocations of **with-package-iterator** can be nested, and the body of the innermost one can invoke all of the locally *established macros*, provided all those *macros* have distinct names. 
-
-
+Any number of invocations of <ClLinks styled={true} term={"with-package-iterator"}><b>with-package-iterator</b></ClLinks> can be nested, and the body of the innermost one can invoke all of the locally *established macros*, provided all those <ClLinks styled={true} term={"macro"}><i>macros</i></ClLinks> have distinct names. 
 
 
 
 
-
- 
 
 
 
@@ -166,7 +162,11 @@ Any number of invocations of **with-package-iterator** can be nested, and the bo
 
 
 
-**with-package-iterator** 
+ 
+
+
+
+<ClLinks styled={true} term={"with-package-iterator"}><b>with-package-iterator</b></ClLinks> 
 
 
 
@@ -214,7 +214,7 @@ The following function prints out every *present symbol* (possibly more than onc
 
 
 
-**with-package-iterator** signals an error of *type* **program-error** if no *symbol-types* are supplied or if a *symbol-type* is not recognized by the implementation is supplied. 
+<ClLinks styled={true} term={"with-package-iterator"}><b>with-package-iterator</b></ClLinks> signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"program-error"}><b>program-error</b></ClLinks> if no *symbol-types* are supplied or if a *symbol-type* is not recognized by the implementation is supplied. 
 
 
 
@@ -230,7 +230,7 @@ The consequences are undefined if the local function named *name established* by
 
 
 
-**with-package-iterator** is called after it has returned *false* as its *primary value*. 
+<ClLinks styled={true} term={"with-package-iterator"}><b>with-package-iterator</b></ClLinks> is called after it has returned <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> as its *primary value*. 
 
 
 

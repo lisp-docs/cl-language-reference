@@ -1,4 +1,4 @@
-**make-list** *Function* 
+**make-list** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**make-list** *size* &amp;key *initial-element → list* 
+<ClLinks styled={true} term={"make-list"}><b>make-list</b></ClLinks> *size* &amp;key *initial-element → list* 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-*initial-element*—an *object*. The default is **nil**. 
+*initial-element*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*list*—a *list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns a *list* of *length* given by *size*, each of the *elements* of which is *initial-element*. 
+Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"length"}><i>length</i></ClLinks> given by *size*, each of the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of which is *initial-element*. 
 
 **Examples:**
 ```lisp
@@ -46,7 +46,7 @@ Returns a *list* of *length* given by *size*, each of the *elements* of which is
 
 
 
-Should signal an error of *type* **type-error** if *size* is not a non-negative *integer* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *size* is not a non-negative *integer* . 
 
 
 
@@ -54,7 +54,7 @@ Should signal an error of *type* **type-error** if *size* is not a non-negative 
 
 
 
-**cons**, **list** 
+<ClLinks styled={true} term={"cons"}><b>cons</b></ClLinks>, <ClLinks styled={true} term={"list"}><b>list</b></ClLinks> 
 
 
 

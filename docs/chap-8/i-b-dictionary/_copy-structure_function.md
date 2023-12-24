@@ -1,4 +1,4 @@
-**copy-structure** *Function* 
+**copy-structure** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**copy-structure** *structure → copy* 
+<ClLinks styled={true} term={"copy-structure"}><b>copy-structure</b></ClLinks> *structure → copy* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-**copy-structure** 
+<ClLinks styled={true} term={"copy-structure"}><b>copy-structure</b></ClLinks> 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-*structure*—a *structure*. 
+<ClLinks styled={true} term={"structure"}><i>structure</i></ClLinks>—a <ClLinks styled={true} term={"structure"}><i>structure</i></ClLinks>. 
 
 
 
-*copy*—a copy of the *structure*. 
+<ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks>—a copy of the <ClLinks styled={true} term={"structure"}><i>structure</i></ClLinks>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-Returns a *copy*<sub>6</sub> of the *structure*. 
+Returns a <ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks><sub>6</sub> of the <ClLinks styled={true} term={"structure"}><i>structure</i></ClLinks>. 
 
 
 
-Only the *structure* itself is copied; not the values of the slots. 
+Only the <ClLinks styled={true} term={"structure"}><i>structure</i></ClLinks> itself is copied; not the values of the slots. 
 
 
 
@@ -54,7 +54,7 @@ Only the *structure* itself is copied; not the values of the slots.
 
 
 
-the :copier option to **defstruct** 
+the :copier option to <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> 
 
 
 
@@ -62,5 +62,5 @@ the :copier option to **defstruct**
 
 
 
-The *copy* is the *same* as the given *structure* under **equalp**, but not under **equal**. 
+The <ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks> is the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> as the given <ClLinks styled={true} term={"structure"}><i>structure</i></ClLinks> under <ClLinks styled={true} term={"equalp"}><b>equalp</b></ClLinks>, but not under <ClLinks styled={true} term={"equal"}><b>equal</b></ClLinks>. 
 

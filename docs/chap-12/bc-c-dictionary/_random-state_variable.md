@@ -1,4 +1,4 @@
-*∗***random-state***∗ Variable* 
+*∗<ClLinks styled={true} term={"*random-state*"}><b>*random-state*</b></ClLinks>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a *random state*.
 
 
 
-*implementation-dependent*. 
+<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ a *random state*.
 
 
 
-The *current random state*, which is used, for example, by the *function* **random** when a *random state* is not explicitly supplied. 
+The *current random state*, which is used, for example, by the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"random"}><b>random</b></ClLinks> when a *random state* is not explicitly supplied. 
 
 
 
@@ -61,11 +61,11 @@ The *current random state*, which is used, for example, by the *function* **rand
 
 
 
-The *implementation*. 
+The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 
-**random**. 
+<ClLinks styled={true} term={"random"}><b>random</b></ClLinks>. 
 
 
 
@@ -73,7 +73,7 @@ The *implementation*.
 
 
 
-**make-random-state**, **random**, **random-state** 
+<ClLinks styled={true} term={"make-random-state"}><b>make-random-state</b></ClLinks>, <ClLinks styled={true} term={"random"}><b>random</b></ClLinks>, <ClLinks styled={true} term={"random-state"}><b>random-state</b></ClLinks> 
 
 
 
@@ -81,7 +81,7 @@ The *implementation*.
 
 
 
-*Binding* **\*random-state\*** to a different *random state object* correctly saves and restores the old *random state object*. 
+<ClLinks styled={true} term={"binding"}><i>Binding</i></ClLinks> <ClLinks styled={true} term={"random-state"}><b>\*random-state\*</b></ClLinks> to a different *random state object* correctly saves and restores the old *random state object*. 
 
 
 

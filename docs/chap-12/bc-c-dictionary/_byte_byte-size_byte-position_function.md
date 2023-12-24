@@ -1,4 +1,4 @@
-**byte, byte-size, byte-position** *Function* 
+**byte, byte-size, byte-position** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,15 +6,15 @@
 
 
 
-**byte** *size position → bytespec* 
+<ClLinks styled={true} term={"byte"}><b>byte</b></ClLinks> *size position → bytespec* 
 
 
 
-**byte-size** *bytespec → size* 
+<ClLinks styled={true} term={"byte-size"}><b>byte-size</b></ClLinks> *bytespec → size* 
 
 
 
-**byte-position** *bytespec → position* 
+<ClLinks styled={true} term={"byte-position"}><b>byte-position</b></ClLinks> *bytespec → position* 
 
 
 
@@ -38,11 +38,11 @@
 
 
 
-**byte-size** returns the number of bits specified by *bytespec*. 
+<ClLinks styled={true} term={"byte-size"}><b>byte-size</b></ClLinks> returns the number of bits specified by *bytespec*. 
 
 
 
-**byte-position** returns the position specified by *bytespec*. 
+<ClLinks styled={true} term={"byte-position"}><b>byte-position</b></ClLinks> returns the position specified by *bytespec*. 
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-**ldb**, **dpb** 
+<ClLinks styled={true} term={"ldb"}><b>ldb</b></ClLinks>, <ClLinks styled={true} term={"dpb"}><b>dpb</b></ClLinks> 
 
 
 
@@ -86,7 +86,7 @@
 
 
 
-A *byte* of *size* of 0 is permissible; it refers to a *byte* of width zero. For example, 
+A <ClLinks styled={true} term={"byte"}><i>byte</i></ClLinks> of *size* of 0 is permissible; it refers to a <ClLinks styled={true} term={"byte"}><i>byte</i></ClLinks> of width zero. For example, 
 
 
 

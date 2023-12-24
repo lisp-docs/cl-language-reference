@@ -1,4 +1,4 @@
-**char-code** *Function* 
+**char-code** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**char-code** *character → code* 
+<ClLinks styled={true} term={"char-code"}><b>char-code</b></ClLinks> *character → code* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*character*—a *character* . 
+<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
-*code*—a *character code*. 
+<ClLinks styled={true} term={"code"}><i>code</i></ClLinks>—a *character code*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-**char-code** returns the *code attribute* of *character*. 
+<ClLinks styled={true} term={"char-code"}><b>char-code</b></ClLinks> returns the *code attribute* of <ClLinks styled={true} term={"character"}><i>character</i></ClLinks>. 
 
 
 
@@ -43,7 +43,7 @@
 
 
 
-Should signal an error of *type* **type-error** if *character* is not a *character* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is not a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -51,7 +51,7 @@ Should signal an error of *type* **type-error** if *character* is not a *charact
 
 
 
-**char-code-limit** 
+<ClLinks styled={true} term={"char-code-limit"}><b>char-code-limit</b></ClLinks> 
 
 
 

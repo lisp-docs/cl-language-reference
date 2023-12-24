@@ -1,4 +1,4 @@
-**cons** *Function* 
+**cons** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**cons** *object-1 object-2 → cons* 
+<ClLinks styled={true} term={"cons"}><b>cons</b></ClLinks> *object-1 object-2 → cons* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*object-1*—an *object*. 
+*object-1*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*object-2*—an *object*. 
+*object-2*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*cons*—a *cons*. 
+<ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>—a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Creates a *fresh cons*, the *car* of which is *object-1* and the *cdr* of which is *object-2*. 
+Creates a *fresh cons*, the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of which is *object-1* and the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of which is *object-2*. 
 
 
 
@@ -51,7 +51,7 @@ Creates a *fresh cons*, the *car* of which is *object-1* and the *cdr* of which 
 
 
 
-**list** 
+<ClLinks styled={true} term={"list"}><b>list</b></ClLinks> 
 
 
 
@@ -59,7 +59,7 @@ Creates a *fresh cons*, the *car* of which is *object-1* and the *cdr* of which 
 
 
 
-If *object-2* is a *list*, **cons** can be thought of as producing a new *list* which is like it but has *object-1* prepended. 
+If *object-2* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, <ClLinks styled={true} term={"cons"}><b>cons</b></ClLinks> can be thought of as producing a new <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> which is like it but has *object-1* prepended. 
 
 
 

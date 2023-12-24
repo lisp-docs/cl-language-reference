@@ -1,4 +1,4 @@
-**package-used-by-list** *Function* 
+**package-used-by-list** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**package-used-by-list** *package → used-by-list* 
+<ClLinks styled={true} term={"package-used-by-list"}><b>package-used-by-list</b></ClLinks> *package → used-by-list* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*package*—a *package designator* . 
+<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* . 
 
 
 
-*used-by-list*—a *list* of *package objects*. 
+*used-by-list*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *package objects*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-**package-used-by-list** returns a *list* of other *packages* that use *package*. 
+<ClLinks styled={true} term={"package-used-by-list"}><b>package-used-by-list</b></ClLinks> returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of other <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> that use <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-Should signal an error of *type* **type-error** if *package* is not a *package*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is not a <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -50,7 +50,7 @@ Should signal an error of *type* **type-error** if *package* is not a *package*.
 
 
 
-**use-package**, **unuse-package** 
+<ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks styled={true} term={"unuse-package"}><b>unuse-package</b></ClLinks> 
 
 
 

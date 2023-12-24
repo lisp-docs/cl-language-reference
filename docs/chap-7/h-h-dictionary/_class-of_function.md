@@ -1,4 +1,4 @@
-**class-of** *Function* 
+**class-of** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**class-of** *object ! class* 
+<ClLinks styled={true} term={"class-of"}><b>class-of</b></ClLinks> *object ! class* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*class*—a *class object*. 
+<ClLinks styled={true} term={"class"}><i>class</i></ClLinks>—a *class object*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the *class* of which the *object* is a *direct instance*. 
+Returns the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> of which the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a *direct instance*. 
 
 
 
@@ -50,7 +50,7 @@ Returns the *class* of which the *object* is a *direct instance*.
 
 
 
-**make-instance**, **type-of** 
+<ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks>, <ClLinks styled={true} term={"type-of"}><b>type-of</b></ClLinks> 
 
 
 

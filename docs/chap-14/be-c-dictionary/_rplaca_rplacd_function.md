@@ -1,4 +1,4 @@
-**rplaca, rplacd** *Function* 
+**rplaca, rplacd** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**rplaca** *cons object → cons* 
+<ClLinks styled={true} term={"rplaca"}><b>rplaca</b></ClLinks> *cons object → cons* 
 
 
 
-**rplacd** *cons object → cons* 
+<ClLinks styled={true} term={"rplacd"}><b>rplacd</b></ClLinks> *cons object → cons* 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-**rplaca**: [ **r—e plak***  ] or [ **r***  **plak***  ] 
+<ClLinks styled={true} term={"rplaca"}><b>rplaca</b></ClLinks>: [ **r—e plak***  ] or [ **r***  **plak***  ] 
 
 
 
-**rplacd**: [ **r—e plakd***  ] or [ **r***  **plakd***  ] or [ **r—e plakd—e** ] or [ **r***  **plakd—e** ] 
+<ClLinks styled={true} term={"rplacd"}><b>rplacd</b></ClLinks>: [ **r—e plakd***  ] or [ **r***  **plakd***  ] or [ **r—e plakd—e** ] or [ **r***  **plakd—e** ] 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-*cons*—a *cons*. 
+<ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>—a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-**rplaca** replaces the *car* of the *cons* with *object*. 
+<ClLinks styled={true} term={"rplaca"}><b>rplaca</b></ClLinks> replaces the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of the <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> with <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-**rplacd** replaces the *cdr* of the *cons* with *object*. 
+<ClLinks styled={true} term={"rplacd"}><b>rplacd</b></ClLinks> replaces the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of the <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> with <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -65,11 +65,11 @@
 
 
 
-The *cons* is modified. 
+The <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> is modified. 
 
 
 
-Should signal an error of *type* **type-error** if *cons* is not a *cons*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> is not a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
 
 
 

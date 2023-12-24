@@ -1,4 +1,4 @@
-**upgraded-complex-part-type** *Function* 
+**upgraded-complex-part-type** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**upgraded-complex-part-type** *typespec* &amp;optional *environment → upgraded-typespec* 
+<ClLinks styled={true} term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></ClLinks> *typespec* &amp;optional *environment → upgraded-typespec* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*environment*—an *environment object*. The default is **nil**, denoting the *null lexical environment* and the and current *global environment*. 
+<ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>—an *environment object*. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, denoting the *null lexical environment* and the and current *global environment*. 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-**upgraded-complex-part-type** returns the part type of the most specialized *complex* number representation that can hold parts of *type typespec*. 
+<ClLinks styled={true} term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></ClLinks> returns the part type of the most specialized <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> number representation that can hold parts of *type typespec*. 
 
 
 
-The *typespec* is a *subtype* of (and possibly *type equivalent* to) the *upgraded-typespec*. 
+The *typespec* is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of (and possibly *type equivalent* to) the *upgraded-typespec*. 
 
 
 
-The purpose of **upgraded-complex-part-type** is to reveal how an implementation does its *upgrading*. 
+The purpose of <ClLinks styled={true} term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></ClLinks> is to reveal how an implementation does its *upgrading*. 
 
 
 
@@ -46,7 +46,7 @@ The purpose of **upgraded-complex-part-type** is to reveal how an implementation
 
 
 
-**complex** (*function* and *type*) 
+<ClLinks styled={true} term={"complex"}><b>complex</b></ClLinks> (<ClLinks styled={true} term={"function"}><i>function</i></ClLinks> and <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>) 
 
 
 

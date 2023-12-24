@@ -1,4 +1,4 @@
-**inspect** *Function* 
+**inspect** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**inspect** *object → implementation-dependent* 
+<ClLinks styled={true} term={"inspect"}><b>inspect</b></ClLinks> *object → implementation-dependent* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-**inspect** is an interactive version of **describe**. The nature of the interaction is *implementation dependent*, but the purpose of **inspect** is to make it easy to wander through a data structure, examining and modifying parts of it. 
+<ClLinks styled={true} term={"inspect"}><b>inspect</b></ClLinks> is an interactive version of <ClLinks styled={true} term={"describe"}><b>describe</b></ClLinks>. The nature of the interaction is *implementation dependent*, but the purpose of <ClLinks styled={true} term={"inspect"}><b>inspect</b></ClLinks> is to make it easy to wander through a data structure, examining and modifying parts of it. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*implementation-dependent*. 
+<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-*implementation-dependent*. 
+<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-*implementation-dependent*. 
+<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-**describe** 
+<ClLinks styled={true} term={"describe"}><b>describe</b></ClLinks> 
 
 
 

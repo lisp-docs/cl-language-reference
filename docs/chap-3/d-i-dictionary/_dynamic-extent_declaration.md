@@ -1,4 +1,4 @@
-**dynamic-extent** *Declaration* 
+**dynamic-extent** <ClLinks styled={true} term={"declaration"}><i>Declaration</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-(dynamic-extent [[ *\{var\}*\* | (**function** *fn*)\* ]]) 
+(dynamic-extent [[ *\{var\}*\* | (<ClLinks styled={true} term={"function"}><b>function</b></ClLinks> *fn*)\* ]]) 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*declaration* 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks> 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-*variable*, *function* 
+<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>, <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> 
 
 
 
@@ -58,19 +58,19 @@ Evaluation and
 
 
 
-**dynamic-extent** 
+<ClLinks styled={true} term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> 
 
 
 
-The compiler is permitted to use this information in any way that is appropriate to the *implementation* and that does not conflict with the semantics of Common Lisp. 
+The compiler is permitted to use this information in any way that is appropriate to the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> and that does not conflict with the semantics of Common Lisp. 
 
 
 
-**dynamic-extent** declarations can be *free declarations* or *bound declarations*. 
+<ClLinks styled={true} term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> declarations can be *free declarations* or *bound declarations*. 
 
 
 
-The *vars* and *fns* named in a **dynamic-extent** declaration must not refer to *symbol macro* or *macro* bindings. 
+The *vars* and *fns* named in a <ClLinks styled={true} term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> declaration must not refer to *symbol macro* or <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> bindings. 
 
 
 
@@ -172,7 +172,7 @@ The following are in error, since the value of x is used outside of its *extent*
 
 
 
-**declare** 
+<ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> 
 
 
 
@@ -180,7 +180,7 @@ The following are in error, since the value of x is used outside of its *extent*
 
 
 
-The most common optimization is to *stack allocate* the initial value of the *objects* named by the *vars*. 
+The most common optimization is to *stack allocate* the initial value of the <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> named by the *vars*. 
 
 
 
@@ -200,7 +200,7 @@ It is permissible for an implementation to simply ignore this declaration.
 
 
 
-**type** 
+<ClLinks styled={true} term={"type"}><b>type</b></ClLinks> 
 
 
 

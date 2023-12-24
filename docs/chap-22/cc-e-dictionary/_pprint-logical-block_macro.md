@@ -1,4 +1,4 @@
-**pprint-logical-block** *Macro* 
+**pprint-logical-block** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,15 +6,15 @@
 
 
 
-**pprint-logical-block** (*stream-symbol object* &amp;key *prefix per-line-prefix suffix*) 
+<ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks> (*stream-symbol object* &amp;key *prefix per-line-prefix suffix*) 
 
 
 
-*\{declaration\}*\* *\{form\}*\* 
+<ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
-→ **nil** 
+→ <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -26,31 +26,27 @@
 
 
 
-*object*—an *object*; evaluated. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>; evaluated. 
 
 
 
-:prefix—a *string*; evaluated. Complicated defaulting behavior; see below. 
+:prefix—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>; evaluated. Complicated defaulting behavior; see below. 
 
 
 
-:per-line-prefix—a *string*; evaluated. Complicated defaulting behavior; see below. :suffix—a *string*; evaluated. The default is the *null string*. 
+:per-line-prefix—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>; evaluated. Complicated defaulting behavior; see below. :suffix—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>; evaluated. The default is the *null string*. 
 
 
 
-*declaration*—a **declare** *expression*; not evaluated. 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*forms*—an *implicit progn*. 
-
-
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
 
-
- 
 
 
 
@@ -58,7 +54,11 @@
 
 
 
-**pprint-logical-block** 
+ 
+
+
+
+<ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks> 
 
 
 
@@ -70,11 +70,11 @@ Causes printing to be grouped into a logical block.
 
 
 
-The logical block is printed to the *stream* that is the *value* of the *variable* denoted by *stream-symbol*. During the execution of the *forms*, that *variable* is *bound* to a *pretty printing stream* that supports decisions about the arrangement of output and then forwards the output to the destination stream. All the standard printing functions (*e.g.*, **write**, **princ**, and **terpri**) can be used to print output to the *pretty printing stream*. All and only the output sent to this *pretty printing stream* is treated as being in the logical block. 
+The logical block is printed to the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> that is the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of the <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> denoted by *stream-symbol*. During the execution of the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>, that <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> is <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks> to a *pretty printing stream* that supports decisions about the arrangement of output and then forwards the output to the destination stream. All the standard printing functions (*e.g.*, <ClLinks styled={true} term={"write"}><b>write</b></ClLinks>, <ClLinks styled={true} term={"princ"}><b>princ</b></ClLinks>, and <ClLinks styled={true} term={"terpri"}><b>terpri</b></ClLinks>) can be used to print output to the *pretty printing stream*. All and only the output sent to this *pretty printing stream* is treated as being in the logical block. 
 
 
 
-The *prefix* specifies a prefix to be printed before the beginning of the logical block. The *per-line-prefix* specifies a prefix that is printed before the block and at the beginning of each new line in the block. The :prefix and :pre-line-prefix *arguments* are mutually exclusive. If neither :prefix nor :per-line-prefix is specified, a *prefix* of the *null string* is assumed. 
+The *prefix* specifies a prefix to be printed before the beginning of the logical block. The *per-line-prefix* specifies a prefix that is printed before the block and at the beginning of each new line in the block. The :prefix and :pre-line-prefix <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> are mutually exclusive. If neither :prefix nor :per-line-prefix is specified, a *prefix* of the *null string* is assumed. 
 
 
 
@@ -82,27 +82,27 @@ The *suffix* specifies a suffix that is printed just after the logical block.
 
 
 
-The *object* is normally a *list* that the body *forms* are responsible for printing. If *object* is not a *list*, it is printed using **write**. (This makes it easier to write printing functions that are robust in the face of malformed arguments.) If **\*print-circle\*** is *non-nil* and *object* is a circular (or shared) reference to a *cons*, then an appropriate “#*n*#” marker is printed. (This makes it easy to write printing 
+The <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is normally a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that the body <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are responsible for printing. If <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is not a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, it is printed using <ClLinks styled={true} term={"write"}><b>write</b></ClLinks>. (This makes it easier to write printing functions that are robust in the face of malformed arguments.) If <ClLinks styled={true} term={"print-circle"}><b>\*print-circle\*</b></ClLinks> is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks> and <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a circular (or shared) reference to a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>, then an appropriate “#*n*#” marker is printed. (This makes it easy to write printing 
 
 
 
-functions that provide full support for circularity and sharing abbreviation.) If **\*print-level\*** is not **nil** and the logical block is at a dynamic nesting depth of greater than **\*print-level\*** in logical blocks, “#” is printed. (This makes easy to write printing functions that provide full support for depth abbreviation.) 
+functions that provide full support for circularity and sharing abbreviation.) If **\*print-level\*** is not <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> and the logical block is at a dynamic nesting depth of greater than **\*print-level\*** in logical blocks, “#” is printed. (This makes easy to write printing functions that provide full support for depth abbreviation.) 
 
 
 
-If either of the three conditions above occurs, the indicated output is printed on *stream-symbol* and the body *forms* are skipped along with the printing of the :prefix and :suffix. (If the body *forms* are not to be responsible for printing a list, then the first two tests above can be turned off by supplying **nil** for the *object* argument.) 
+If either of the three conditions above occurs, the indicated output is printed on *stream-symbol* and the body <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are skipped along with the printing of the :prefix and :suffix. (If the body <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are not to be responsible for printing a list, then the first two tests above can be turned off by supplying <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> for the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> argument.) 
 
 
 
-In addition to the *object* argument of **pprint-logical-block**, the arguments of the standard printing functions (such as **write**, **print**, **prin1**, and **pprint**, as well as the arguments of the standard *format directives* such as &#126;A, &#126;S, (and &#126;W) are all checked (when necessary) for circularity and sharing. However, such checking is not applied to the arguments of the functions **write-line**, **write-string**, and **write-char** or to the literal text output by **format**. A consequence of this is that you must use one of the latter functions if you want to print some literal text in the output that is not supposed to be checked for circularity or sharing. 
+In addition to the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> argument of <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks>, the arguments of the standard printing functions (such as <ClLinks styled={true} term={"write"}><b>write</b></ClLinks>, <ClLinks styled={true} term={"print"}><b>print</b></ClLinks>, <ClLinks styled={true} term={"prin1"}><b>prin1</b></ClLinks>, and <ClLinks styled={true} term={"pprint"}><b>pprint</b></ClLinks>, as well as the arguments of the standard *format directives* such as &#126;A, &#126;S, (and &#126;W) are all checked (when necessary) for circularity and sharing. However, such checking is not applied to the arguments of the functions <ClLinks styled={true} term={"write-line"}><b>write-line</b></ClLinks>, <ClLinks styled={true} term={"write-string"}><b>write-string</b></ClLinks>, and <ClLinks styled={true} term={"write-char"}><b>write-char</b></ClLinks> or to the literal text output by <ClLinks styled={true} term={"format"}><b>format</b></ClLinks>. A consequence of this is that you must use one of the latter functions if you want to print some literal text in the output that is not supposed to be checked for circularity or sharing. 
 
 
 
-The body *forms* of a **pprint-logical-block** *form* must not perform any side-effects on the surrounding environment; for example, no *variables* must be assigned which have not been *bound* within its scope. 
+The body <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> of a <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> must not perform any side-effects on the surrounding environment; for example, no <ClLinks styled={true} term={"variable"}><i>variables</i></ClLinks> must be assigned which have not been <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks> within its scope. 
 
 
 
-The **pprint-logical-block** *macro* may be used regardless of the *value* of **\*print-pretty\***. 
+The <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks> <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> may be used regardless of the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks>. 
 
 
 
@@ -110,7 +110,7 @@ The **pprint-logical-block** *macro* may be used regardless of the *value* of **
 
 
 
-**\*print-circle\***, **\*print-level\***. 
+<ClLinks styled={true} term={"print-circle"}><b>\*print-circle\*</b></ClLinks>, **\*print-level\***. 
 
 
 
@@ -130,7 +130,7 @@ The **pprint-logical-block** *macro* may be used regardless of the *value* of **
 
 
 
-An error of *type* **type-error** is signaled if any of the :suffix, :prefix, or :per-line-prefix is supplied but does not evaluate to a *string*. 
+An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> is signaled if any of the :suffix, :prefix, or :per-line-prefix is supplied but does not evaluate to a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -138,7 +138,7 @@ An error is signaled if :prefix and :pre-line-prefix are both used.
 
 
 
-**pprint-logical-block** and the *pretty printing stream* it creates have *dynamic extent*. The consequences are undefined if, outside of this extent, output is attempted to the *pretty printing stream* it creates. 
+<ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks> and the *pretty printing stream* it creates have *dynamic extent*. The consequences are undefined if, outside of this extent, output is attempted to the *pretty printing stream* it creates. 
 
 
 
@@ -150,7 +150,7 @@ It is also unspecified what happens if, within this extent, any output is sent d
 
 
 
-**pprint-pop**, **pprint-exit-if-list-exhausted**, Section 22.3.5.2 (Tilde Less-Than-Sign: Logical Block) 
+<ClLinks styled={true} term={"pprint-pop"}><b>pprint-pop</b></ClLinks>, <ClLinks styled={true} term={"pprint-exit-if-list-exhausted"}><b>pprint-exit-if-list-exhausted</b></ClLinks>, Section 22.3.5.2 (Tilde Less-Than-Sign: Logical Block) 
 
 
 
@@ -158,11 +158,11 @@ It is also unspecified what happens if, within this extent, any output is sent d
 
 
 
-One reason for using the **pprint-logical-block** *macro* when the *value* of **\*print-pretty\*** is **nil** would be to allow it to perform checking for *dotted lists*, as well as (in conjunction with **pprint-pop**) checking for **\*print-level\*** or **\*print-length\*** being exceeded. 
+One reason for using the <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks> <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> when the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> would be to allow it to perform checking for *dotted lists*, as well as (in conjunction with <ClLinks styled={true} term={"pprint-pop"}><b>pprint-pop</b></ClLinks>) checking for **\*print-level\*** or <ClLinks styled={true} term={"print-length"}><b>\*print-length\*</b></ClLinks> being exceeded. 
 
 
 
-Detection of circularity and sharing is supported by the *pretty printer* by in essence performing requested output twice. On the first pass, circularities and sharing are detected and the actual outputting of characters is suppressed. On the second pass, the appropriate “#*n*=” and “#*n*#” markers are inserted and characters are output. This is why the restriction on side-effects is necessary. Obeying this restriction is facilitated by using **pprint-pop**, instead of an ordinary **pop** when traversing a list being printed by the body *forms* of the **pprint-logical-block** *form*.) 
+Detection of circularity and sharing is supported by the *pretty printer* by in essence performing requested output twice. On the first pass, circularities and sharing are detected and the actual outputting of characters is suppressed. On the second pass, the appropriate “#*n*=” and “#*n*#” markers are inserted and characters are output. This is why the restriction on side-effects is necessary. Obeying this restriction is facilitated by using <ClLinks styled={true} term={"pprint-pop"}><b>pprint-pop</b></ClLinks>, instead of an ordinary <ClLinks styled={true} term={"pop"}><b>pop</b></ClLinks> when traversing a list being printed by the body <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> of the <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>.) 
 
 
 

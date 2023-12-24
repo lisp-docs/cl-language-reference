@@ -1,4 +1,4 @@
-**simple-bit-vector-p** *Function* 
+**simple-bit-vector-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**simple-bit-vector-p** *object → generalized-boolean* 
+<ClLinks styled={true} term={"simple-bit-vector-p"}><b>simple-bit-vector-p</b></ClLinks> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns *true* if *object* is of *type* **simple-bit-vector**; otherwise, returns *false*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"simple-bit-vector"}><b>simple-bit-vector</b></ClLinks>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ Returns *true* if *object* is of *type* **simple-bit-vector**; otherwise, return
 
 
 
-**simple-bit-vector-p** 
+<ClLinks styled={true} term={"simple-bit-vector-p"}><b>simple-bit-vector-p</b></ClLinks> 
 
 
 
@@ -57,7 +57,7 @@ Returns *true* if *object* is of *type* **simple-bit-vector**; otherwise, return
 
 
 
-**simple-vector-p** 
+<ClLinks styled={true} term={"simple-vector-p"}><b>simple-vector-p</b></ClLinks> 
 
 
 
@@ -65,5 +65,5 @@ Returns *true* if *object* is of *type* **simple-bit-vector**; otherwise, return
 
 
 
-(simple-bit-vector-p *object*) *≡* (typep *object* ’simple-bit-vector) 
+(simple-bit-vector-p <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’simple-bit-vector) 
 

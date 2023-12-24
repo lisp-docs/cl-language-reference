@@ -1,54 +1,54 @@
-**=, /=, \<, \>, \<=, \>=** *Function*
+**=, /=, \<, \>, \<=, \>=** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks>
 
 **Syntax:**
 
-**=** &amp;rest *numbers*<sup>+</sup> → generalized-boolean
+<ClLinks styled={true} term={"="}><b>=</b></ClLinks> &amp;rest <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
 
-**/=** &amp;rest *numbers*<sup>+</sup> → generalized-boolean
+<ClLinks styled={true} term={"/="}><b>/=</b></ClLinks> &amp;rest <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
 
-&lt; &amp;rest *numbers*<sup>+</sup> → generalized-boolean
+&lt; &amp;rest <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
 
-&gt; &amp;rest *numbers*<sup>+</sup> → generalized-boolean
+&gt; &amp;rest <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
 
-&lt;**=** &amp;rest *numbers*<sup>+</sup> → generalized-boolean
+&lt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks> &amp;rest <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
 
-&gt;**=** &amp;rest *numbers*<sup>+</sup> → generalized-boolean
+&gt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks> &amp;rest <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
 
 **Arguments and Values:**
 
-*number*—for &lt;, &gt;, &lt;**=**, &gt;**=**: a *real*; for **=**, **/=**: a *number* .
+<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—for &lt;, &gt;, &lt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks>, &gt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks>: a *real*; for <ClLinks styled={true} term={"="}><b>=</b></ClLinks>, <ClLinks styled={true} term={"/="}><b>/=</b></ClLinks>: a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> .
 
 *generalized-boolean*—a *generalized boolean*.
 
 **Description:**
 
-**=**, **/=**, &lt;, &gt;, &lt;**=**, and &gt;**=** perform arithmetic comparisons on their arguments as follows: **=**
+<ClLinks styled={true} term={"="}><b>=</b></ClLinks>, <ClLinks styled={true} term={"/="}><b>/=</b></ClLinks>, &lt;, &gt;, &lt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks>, and &gt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks> perform arithmetic comparisons on their arguments as follows: <ClLinks styled={true} term={"="}><b>=</b></ClLinks>
 
-The value of **=** is *true* if all *numbers* are the same in value; otherwise it is *false*. Two *complexes* are considered equal by **=** if their real and imaginary parts are equal according to **=**.
+The value of <ClLinks styled={true} term={"="}><b>=</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if all <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks> are the same in value; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. Two *complexes* are considered equal by <ClLinks styled={true} term={"="}><b>=</b></ClLinks> if their real and imaginary parts are equal according to <ClLinks styled={true} term={"="}><b>=</b></ClLinks>.
 
-**/=**
+<ClLinks styled={true} term={"/="}><b>/=</b></ClLinks>
 
-The value of **/=** is *true* if no two *numbers* are the same in value; otherwise it is *false*.
+The value of <ClLinks styled={true} term={"/="}><b>/=</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if no two <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks> are the same in value; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>.
 
 **=, /=,** *&lt;***,** *&gt;***,** *&lt;***=,** *&gt;***=**
 
 &lt;
 
-The value of &lt; is *true* if the *numbers* are in monotonically increasing order; otherwise it is *false*.
+The value of &lt; is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks> are in monotonically increasing order; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>.
 
 &gt;
 
-The value of &gt; is *true* if the *numbers* are in monotonically decreasing order; otherwise it is *false*.
+The value of &gt; is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks> are in monotonically decreasing order; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>.
 
-&lt;**=**
+&lt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks>
 
-The value of &lt;**=** is *true* if the *numbers* are in monotonically nondecreasing order; otherwise it is *false*.
+The value of &lt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks> are in monotonically nondecreasing order; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>.
 
-&gt;**=**
+&gt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks>
 
-The value of &gt;**=** is *true* if the *numbers* are in monotonically nonincreasing order; otherwise it is *false*.
+The value of &gt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks> are in monotonically nonincreasing order; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>.
 
-**=**, **/=**, &lt;, &gt;, &lt;**=**, and &gt;**=** perform necessary type conversions.
+<ClLinks styled={true} term={"="}><b>=</b></ClLinks>, <ClLinks styled={true} term={"/="}><b>/=</b></ClLinks>, &lt;, &gt;, &lt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks>, and &gt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks> perform necessary type conversions.
 
 **Examples:**
 
@@ -104,8 +104,8 @@ The uses of these functions are illustrated in Figure 12–13.
 
 **Exceptional Situations:**
 
-Might signal **type-error** if some *argument* is not a *real*. Might signal **arithmetic-error** if otherwise unable to fulfill its contract.
+Might signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if some <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> is not a *real*. Might signal <ClLinks styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks> if otherwise unable to fulfill its contract.
 
 **Notes:**
 
-**=** differs from **eql** in that `(= 0.0 -0.0)` is always true, because **=** compares the mathematical values of its operands, whereas **eql** compares the representational values, so to speak.
+<ClLinks styled={true} term={"="}><b>=</b></ClLinks> differs from <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks> in that `(= 0.0 -0.0)` is always true, because <ClLinks styled={true} term={"="}><b>=</b></ClLinks> compares the mathematical values of its operands, whereas <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks> compares the representational values, so to speak.

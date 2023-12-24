@@ -1,4 +1,4 @@
-**invoke-restart-interactively** *Function* 
+**invoke-restart-interactively** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**invoke-restart-interactively** *restart → \{result\}*\* 
+<ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> *restart → \{result\}*\* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*restart*—a *restart designator* . 
+<ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>—a *restart designator* . 
 
 
 
-*results*—the *values* returned by the *function* associated with *restart*, if that *function* returns. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> associated with <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, if that <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> returns. 
 
 
 
@@ -26,19 +26,19 @@
 
 
 
-**invoke-restart-interactively** calls the *function* associated with *restart*, prompting for any necessary arguments. If *restart* is a name, it must be valid in the current *dynamic environment*. 
+<ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> calls the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> associated with <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, prompting for any necessary arguments. If <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is a name, it must be valid in the current *dynamic environment*. 
 
 
 
-**invoke-restart-interactively** prompts for arguments by executing the code provided in the :interactive keyword to **restart-case** or :interactive-function keyword to **restart-bind**. 
+<ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> prompts for arguments by executing the code provided in the :interactive keyword to <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> or :interactive-function keyword to <ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks>. 
 
 
 
-If no such options have been supplied in the corresponding **restart-bind** or **restart-case**, then the consequences are undefined if the *restart* takes required arguments. If the arguments are optional, an argument list of **nil** is used. 
+If no such options have been supplied in the corresponding <ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks> or <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>, then the consequences are undefined if the <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> takes required arguments. If the arguments are optional, an argument list of <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is used. 
 
 
 
-Once the arguments have been determined, **invoke-restart-interactively** executes the following: (apply #’invoke-restart *restart arguments*) 
+Once the arguments have been determined, <ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> executes the following: (apply #’invoke-restart *restart arguments*) 
 
 
 
@@ -72,7 +72,7 @@ A non-local transfer of control might be done by the restart.
 
 
 
-**\*query-io\***, active *restarts* 
+**\*query-io\***, active <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> 
 
 
 
@@ -92,7 +92,7 @@ A non-local transfer of control might be done by the restart.
 
 
 
-If *restart* is not valid, an error of *type* **control-error** is signaled. 
+If <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is not valid, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"control-error"}><b>control-error</b></ClLinks> is signaled. 
 
 
 
@@ -100,7 +100,7 @@ If *restart* is not valid, an error of *type* **control-error** is signaled.
 
 
 
-**find-restart**, **invoke-restart**, **restart-case**, **restart-bind** 
+<ClLinks styled={true} term={"find-restart"}><b>find-restart</b></ClLinks>, <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>, <ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks> 
 
 
 
@@ -108,7 +108,7 @@ If *restart* is not valid, an error of *type* **control-error** is signaled.
 
 
 
-**invoke-restart-interactively** is used internally by the debugger and may also be useful in implementing other portable, interactive debugging tools. 
+<ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> is used internally by the debugger and may also be useful in implementing other portable, interactive debugging tools. 
 
 
 

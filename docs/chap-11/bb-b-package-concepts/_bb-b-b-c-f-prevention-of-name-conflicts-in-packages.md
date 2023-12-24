@@ -2,7 +2,7 @@
 
 
 
-Within one *package*, any particular name can refer to at most one *symbol*. A name conflict is said to occur when there would be more than one candidate *symbol*. Any time a name conflict is about to occur, a *correctable error* is signaled. 
+Within one <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, any particular name can refer to at most one <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. A name conflict is said to occur when there would be more than one candidate <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. Any time a name conflict is about to occur, a *correctable error* is signaled. 
 
 
 
@@ -14,39 +14,35 @@ The following rules apply to name conflicts:
 
 
 
-– If the *same symbol* is *accessible* to a *package* through more than one path, there is no name conflict. A *symbol* cannot conflict with itself. Name conflicts occur only between *distinct symbols* with the same name (under **string=**). 
+– If the *same symbol* is <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> to a <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> through more than one path, there is no name conflict. A <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> cannot conflict with itself. Name conflicts occur only between *distinct symbols* with the same name (under <ClLinks styled={true} term={"string"}><b>string=</b></ClLinks>). 
 
 
 
-– Every *package* has a list of shadowing *symbols*. A shadowing *symbol* takes precedence over any other *symbol* of the same name that would otherwise be *accessible* in the *package*. A name conflict involving a shadowing symbol is always resolved in favor of the shadowing *symbol*, without signaling an error (except for one exception involving **import**). See **shadow** and **shadowing-import**. 
+– Every <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> has a list of shadowing <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>. A shadowing <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> takes precedence over any other <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> of the same name that would otherwise be <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. A name conflict involving a shadowing symbol is always resolved in favor of the shadowing <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, without signaling an error (except for one exception involving <ClLinks styled={true} term={"import"}><b>import</b></ClLinks>). See <ClLinks styled={true} term={"shadow"}><b>shadow</b></ClLinks> and <ClLinks styled={true} term={"shadowing-import"}><b>shadowing-import</b></ClLinks>. 
 
 
 
-– The functions **use-package**, **import**, and **export** check for name conflicts. 
+– The functions <ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks styled={true} term={"import"}><b>import</b></ClLinks>, and <ClLinks styled={true} term={"export"}><b>export</b></ClLinks> check for name conflicts. 
 
 
 
-– **shadow** and **shadowing-import** never signal a name-conflict error. 
+– <ClLinks styled={true} term={"shadow"}><b>shadow</b></ClLinks> and <ClLinks styled={true} term={"shadowing-import"}><b>shadowing-import</b></ClLinks> never signal a name-conflict error. 
 
 
 
-– **unuse-package** and **unexport** do not need to do any name-conflict checking. **unintern** does name-conflict checking only when a *symbol* being *uninterned* is a *shadowing symbol*. 
+– <ClLinks styled={true} term={"unuse-package"}><b>unuse-package</b></ClLinks> and <ClLinks styled={true} term={"unexport"}><b>unexport</b></ClLinks> do not need to do any name-conflict checking. <ClLinks styled={true} term={"unintern"}><b>unintern</b></ClLinks> does name-conflict checking only when a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> being <ClLinks styled={true} term={"uninterned"}><i>uninterned</i></ClLinks> is a *shadowing symbol*. 
 
 
 
-– Giving a shadowing symbol to **unintern** can uncover a name conflict that had previously been resolved by the shadowing. 
+– Giving a shadowing symbol to <ClLinks styled={true} term={"unintern"}><b>unintern</b></ClLinks> can uncover a name conflict that had previously been resolved by the shadowing. 
 
 
 
-– Package functions signal name-conflict errors of *type* **package-error** before making any change to the package structure. When multiple changes are to be made, it is permissible for the implementation to process each change separately. For example, when **export** is 
-
-
+– Package functions signal name-conflict errors of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"package-error"}><b>package-error</b></ClLinks> before making any change to the package structure. When multiple changes are to be made, it is permissible for the implementation to process each change separately. For example, when <ClLinks styled={true} term={"export"}><b>export</b></ClLinks> is 
 
 
 
 
-
- 
 
 
 
@@ -54,19 +50,23 @@ The following rules apply to name conflicts:
 
 
 
-given a *list* of *symbols*, aborting from a name conflict caused by the second *symbol* in the *list* might still export the first *symbol* in the *list*. However, a name-conflict error caused by **export** of a single *symbol* will be signaled before that *symbol*’s *accessibility* in any *package* is changed. 
+ 
 
 
 
-– Continuing from a name-conflict error must offer the user a chance to resolve the name conflict in favor of either of the candidates. The *package* structure should be altered to reflect the resolution of the name conflict, via **shadowing-import**, **unintern**, or **unexport**. 
+given a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>, aborting from a name conflict caused by the second <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> in the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> might still export the first <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> in the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. However, a name-conflict error caused by <ClLinks styled={true} term={"export"}><b>export</b></ClLinks> of a single <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> will be signaled before that <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks styled={true} term={"accessibility"}><i>accessibility</i></ClLinks> in any <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is changed. 
 
 
 
-– A name conflict in **use-package** between a *symbol present* in the using *package* and an *external symbol* of the used *package* is resolved in favor of the first *symbol* by making it a shadowing *symbol*, or in favor of the second *symbol* by uninterning the first *symbol* from the using *package*. 
+– Continuing from a name-conflict error must offer the user a chance to resolve the name conflict in favor of either of the candidates. The <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> structure should be altered to reflect the resolution of the name conflict, via <ClLinks styled={true} term={"shadowing-import"}><b>shadowing-import</b></ClLinks>, <ClLinks styled={true} term={"unintern"}><b>unintern</b></ClLinks>, or <ClLinks styled={true} term={"unexport"}><b>unexport</b></ClLinks>. 
 
 
 
-– A name conflict in **export** or **unintern** due to a *package*’s inheriting two *distinct symbols* with the *same name* (under **string=**) from two other *packages* can be resolved in favor of either *symbol* by importing it into the using *package* and making it a *shadowing symbol*, just as with **use-package**. 
+– A name conflict in <ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks> between a *symbol present* in the using <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> and an *external symbol* of the used <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is resolved in favor of the first <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> by making it a shadowing <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, or in favor of the second <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> by uninterning the first <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> from the using <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
+
+
+
+– A name conflict in <ClLinks styled={true} term={"export"}><b>export</b></ClLinks> or <ClLinks styled={true} term={"unintern"}><b>unintern</b></ClLinks> due to a <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>’s inheriting two *distinct symbols* with the *same name* (under <ClLinks styled={true} term={"string"}><b>string=</b></ClLinks>) from two other <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> can be resolved in favor of either <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> by importing it into the using <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> and making it a *shadowing symbol*, just as with <ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks>. 
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-The result of a numerical function is a *float* of the largest format among all the floating-point arguments to the *function*. 
+The result of a numerical function is a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> of the largest format among all the floating-point arguments to the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
 
 
 

@@ -10,7 +10,7 @@ import FunctionSpecialOperator from './_function_special-operator.md';
 
 ## Expanded Reference: function
 
-The last paragraph of the description implies that if **function** is used on a *function name* that does not denote a *function* in the lexical environment in which the **function** form appears, then the semantics are not specified, so the consequences of this use are undefined.
+The last paragraph of the description implies that if <ClLinks styled={true} term={"function"}><b>function</b></ClLinks> is used on a *function name* that does not denote a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> in the lexical environment in which the <ClLinks styled={true} term={"function"}><b>function</b></ClLinks> form appears, then the semantics are not specified, so the consequences of this use are undefined.
 
 
 :::tip

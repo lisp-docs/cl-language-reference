@@ -1,4 +1,4 @@
-**sleep** *Function* 
+**sleep** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**sleep** *seconds →* **nil** 
+<ClLinks styled={true} term={"sleep"}><b>sleep</b></ClLinks> *seconds →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -71,7 +71,7 @@ The granularity of the scheduler.
 
 
 
-Should signal an error of *type* **type-error** if *seconds* is not a non-negative *real*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *seconds* is not a non-negative *real*. 
 
 
 

@@ -1,4 +1,4 @@
-**array-rank** *Function* 
+**array-rank** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**array-rank** *array → rank* 
+<ClLinks styled={true} term={"array-rank"}><b>array-rank</b></ClLinks> *array → rank* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*array*—an *array*. 
+<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
-*rank*—a non-negative *integer* . 
+<ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks>—a non-negative *integer* . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the number of *dimensions* of *array*. 
+Returns the number of <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks> of <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -43,7 +43,7 @@ Returns the number of *dimensions* of *array*.
 
 
 
-Should signal an error of *type* **type-error** if its argument is not an *array*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -51,7 +51,7 @@ Should signal an error of *type* **type-error** if its argument is not an *array
 
 
 
-**array-rank-limit**, **make-array** 
+<ClLinks styled={true} term={"array-rank-limit"}><b>array-rank-limit</b></ClLinks>, <ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks> 
 
 
 

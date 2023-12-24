@@ -2,7 +2,7 @@
 
 
 
-The *left-parenthesis* initiates reading of a *list*. **read** is called recursively to read successive *objects* until a right parenthesis is found in the input *stream*. A *list* of the *objects* read is returned. Thus 
+The <ClLinks styled={true} term={"left-parenthesis"}><i>left-parenthesis</i></ClLinks> initiates reading of a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> is called recursively to read successive <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> until a right parenthesis is found in the input <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. A <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> read is returned. Thus 
 
 
 
@@ -10,15 +10,15 @@ The *left-parenthesis* initiates reading of a *list*. **read** is called recursi
 
 
 
-is read as a *list* of three *objects* (the *symbols* a, b, and c). The right parenthesis need not immediately follow the printed representation of the last *object*; *whitespace*<sub>2</sub> characters and comments may precede it. 
+is read as a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of three <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> (the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> a, b, and c). The right parenthesis need not immediately follow the printed representation of the last <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>; <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> characters and comments may precede it. 
 
 
 
-If no *objects* precede the right parenthesis, it reads as a *list* of zero *objects* (the *empty list*). 
+If no <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> precede the right parenthesis, it reads as a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of zero <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> (the *empty list*). 
 
 
 
-If a *token* that is just a dot not immediately preceded by an escape character is read after some *object* then exactly one more *object* must follow the dot, possibly preceded or followed by *whitespace*<sub>2</sub> or a comment, followed by the right parenthesis: 
+If a <ClLinks styled={true} term={"token"}><i>token</i></ClLinks> that is just a dot not immediately preceded by an escape character is read after some <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> then exactly one more <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> must follow the dot, possibly preceded or followed by <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> or a comment, followed by the right parenthesis: 
 
 
 
@@ -26,7 +26,7 @@ If a *token* that is just a dot not immediately preceded by an escape character 
 
 
 
-This means that the *cdr* of the last *cons* in the *list* is not **nil**, but rather the *object* whose representation followed the dot. The above example might have been the result of evaluating 
+This means that the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of the last <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> in the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is not <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, but rather the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> whose representation followed the dot. The above example might have been the result of evaluating 
 
 
 
@@ -42,7 +42,7 @@ Similarly,
 
 
 
-It is permissible for the *object* following the dot to be a *list*: 
+It is permissible for the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> following the dot to be a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>: 
 
 
 
@@ -50,7 +50,7 @@ It is permissible for the *object* following the dot to be a *list*:
 
 
 
-For information on how the *Lisp printer* prints *lists* and *conses*, see Section 22.1.3.5 (Printing Lists and Conses). 
+For information on how the *Lisp printer* prints <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks> and *conses*, see Section 22.1.3.5 (Printing Lists and Conses). 
 
 
 

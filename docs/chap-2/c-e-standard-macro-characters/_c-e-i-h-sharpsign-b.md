@@ -14,7 +14,7 @@
 
 
 
-The consequences are undefined if the token immediately following the #B does not have the syntax of a binary (*i.e.*, radix 2) *rational*. 
+The consequences are undefined if the token immediately following the #B does not have the syntax of a binary (*i.e.*, radix 2) <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks>. 
 
 
 

@@ -1,4 +1,4 @@
-**assoc, assoc-if, assoc-if-not** *Function* 
+**assoc, assoc-if, assoc-if-not** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**assoc** *item alist* &amp;key *key test test-not → entry* 
+<ClLinks styled={true} term={"assoc"}><b>assoc</b></ClLinks> *item alist* &amp;key *key test test-not → entry* 
 
 
 
-**assoc-if** *predicate alist* &amp;key *key → entry* 
+<ClLinks styled={true} term={"assoc-if"}><b>assoc-if</b></ClLinks> *predicate alist* &amp;key *key → entry* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-**assoc-if-not** *predicate alist* &amp;key *key → entry* 
+<ClLinks styled={true} term={"assoc-if-not"}><b>assoc-if-not</b></ClLinks> *predicate alist* &amp;key *key → entry* 
 
 
 
@@ -38,19 +38,19 @@
 
 
 
-*item*—an *object*. 
+*item*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*alist*—an *association list*. 
+<ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>—an *association list*. 
 
 
 
-*predicate*—a *designator* for a *function* of one *argument* that returns a *generalized boolean*. *test*—a *designator* for a *function* of two *arguments* that returns a *generalized boolean*. *test-not*—a *designator* for a *function* of two *arguments* that returns a *generalized boolean*. *key*—a *designator* for a *function* of one argument, or **nil**. 
+<ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> that returns a *generalized boolean*. *test<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *key*—a *designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*entry*—a *cons* that is an *element* of *alist*, or **nil**. 
+*entry*—a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> that is an <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> of <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -58,11 +58,11 @@
 
 
 
-**assoc**, **assoc-if**, and **assoc-if-not** return the first *cons* in *alist* whose *car satisfies the test*, or **nil** if no such *cons* is found. 
+<ClLinks styled={true} term={"assoc"}><b>assoc</b></ClLinks>, <ClLinks styled={true} term={"assoc-if"}><b>assoc-if</b></ClLinks>, and <ClLinks styled={true} term={"assoc-if-not"}><b>assoc-if-not</b></ClLinks> return the first <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> in <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> whose *car satisfies the test*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if no such <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> is found. 
 
 
 
-For **assoc**, **assoc-if**, and **assoc-if-not**, if **nil** appears in *alist* in place of a pair, it is ignored. 
+For <ClLinks styled={true} term={"assoc"}><b>assoc</b></ClLinks>, <ClLinks styled={true} term={"assoc-if"}><b>assoc-if</b></ClLinks>, and <ClLinks styled={true} term={"assoc-if-not"}><b>assoc-if-not</b></ClLinks>, if <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> appears in <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> in place of a pair, it is ignored. 
 
 **Examples:**
 ```lisp
@@ -96,7 +96,7 @@ For **assoc**, **assoc-if**, and **assoc-if-not**, if **nil** appears in *alist*
 
 
 
-Should be prepared to signal an error of *type* **type-error** if *alist* is not an *association list*. 
+Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> is not an *association list*. 
 
 
 
@@ -104,7 +104,7 @@ Should be prepared to signal an error of *type* **type-error** if *alist* is not
 
 
 
-**rassoc**, **find**, **member**, **position**, Section 3.6 (Traversal Rules and Side Effects) 
+<ClLinks styled={true} term={"rassoc"}><b>rassoc</b></ClLinks>, <ClLinks styled={true} term={"find"}><b>find</b></ClLinks>, <ClLinks styled={true} term={"member"}><b>member</b></ClLinks>, <ClLinks styled={true} term={"position"}><b>position</b></ClLinks>, Section 3.6 (Traversal Rules and Side Effects) 
 
 
 
@@ -116,11 +116,11 @@ The :test-not parameter is deprecated.
 
 
 
-The *function* **assoc-if-not** is deprecated. 
+The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"assoc-if-not"}><b>assoc-if-not</b></ClLinks> is deprecated. 
 
 
 
-It is possible to **rplacd** the result of **assoc**, provided that it is not **nil**, in order to “update” *alist*. The two expressions 
+It is possible to <ClLinks styled={true} term={"rplacd"}><b>rplacd</b></ClLinks> the result of <ClLinks styled={true} term={"assoc"}><b>assoc</b></ClLinks>, provided that it is not <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, in order to “update” <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>. The two expressions 
 
 
 
@@ -136,7 +136,7 @@ and
 
 
 
-are equivalent in meaning with one exception: if **nil** appears in *alist* in place of a pair, and *item* is **nil**, **find** will compute the *car* of the **nil** in *alist*, find that it is equal to *item*, and return **nil**, whereas **assoc** will ignore the **nil** in *alist* and continue to search for an actual *cons* whose *car* is **nil**. 
+are equivalent in meaning with one exception: if <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> appears in <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> in place of a pair, and *item* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, <ClLinks styled={true} term={"find"}><b>find</b></ClLinks> will compute the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of the <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> in <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>, find that it is equal to *item*, and return <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, whereas <ClLinks styled={true} term={"assoc"}><b>assoc</b></ClLinks> will ignore the <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> in <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> and continue to search for an actual <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> whose <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 

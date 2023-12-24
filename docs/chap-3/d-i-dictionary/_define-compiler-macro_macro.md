@@ -1,4 +1,4 @@
-**define-compiler-macro** *Macro* 
+**define-compiler-macro** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**define-compiler-macro** *name lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* → name 
+<ClLinks styled={true} term={"define-compiler-macro"}><b>define-compiler-macro</b></ClLinks> *name lambda-list* [[ <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* → name 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*name*—a *function name*. 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a *function name*. 
 
 
 
@@ -22,15 +22,15 @@
 
 
 
-*declaration*—a **declare** *expression*; not evaluated. 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*documentation*—a *string*; not evaluated. 
+*documentation*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>; not evaluated. 
 
 
 
-*form*—a *form*. 
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -38,23 +38,23 @@
 
 
 
-This is the normal mechanism for defining a *compiler macro function*. Its manner of definition is the same as for **defmacro**; the only differences are: 
+This is the normal mechanism for defining a *compiler macro function*. Its manner of definition is the same as for <ClLinks styled={true} term={"defmacro"}><b>defmacro</b></ClLinks>; the only differences are: 
 
 
 
-*•* The *name* can be a *function name* naming any *function* or *macro*. 
+*•* The <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> can be a *function name* naming any <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> or <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks>. 
 
 
 
-*•* The expander function is installed as a *compiler macro function* for the *name*, rather than as a *macro function*. 
+*•* The expander function is installed as a *compiler macro function* for the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>, rather than as a *macro function*. 
 
 
 
-*•* The **&amp;whole** argument is bound to the form argument that is passed to the *compiler macro function*. The remaining lambda-list parameters are specified as if this form contained the function name in the *car* and the actual arguments in the *cdr* , but if the *car* of the actual form is the symbol **funcall**, then the destructuring of the arguments is actually performed using its *cddr* instead. 
+*•* The **&amp;whole** argument is bound to the form argument that is passed to the *compiler macro function*. The remaining lambda-list parameters are specified as if this form contained the function name in the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> and the actual arguments in the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> , but if the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of the actual form is the symbol <ClLinks styled={true} term={"funcall"}><b>funcall</b></ClLinks>, then the destructuring of the arguments is actually performed using its <ClLinks styled={true} term={"cddr"}><i>cddr</i></ClLinks> instead. 
 
 
 
-*• Documentation* is attached as a *documentation string* to *name* (as kind **compiler-macro**) and to the *compiler macro function*.  
+*• Documentation* is attached as a *documentation string* to <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> (as kind **compiler-macro**) and to the *compiler macro function*.  
 
 
 
@@ -62,11 +62,11 @@ This is the normal mechanism for defining a *compiler macro function*. Its manne
 
 
 
-**define-compiler-macro** 
+<ClLinks styled={true} term={"define-compiler-macro"}><b>define-compiler-macro</b></ClLinks> 
 
 
 
-*•* Unlike an ordinary *macro*, a *compiler macro* can decline to provide an expansion merely by returning a form that is the *same* as the original (which can be obtained by using **&amp;whole**). 
+*•* Unlike an ordinary <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks>, a *compiler macro* can decline to provide an expansion merely by returning a form that is the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> as the original (which can be obtained by using **&amp;whole**). 
 
 
 
@@ -178,7 +178,7 @@ This is the normal mechanism for defining a *compiler macro function*. Its manne
 
 
 
-**compiler-macro-function**, **defmacro**, **documentation**, Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
+<ClLinks styled={true} term={"compiler-macro-function"}><b>compiler-macro-function</b></ClLinks>, <ClLinks styled={true} term={"defmacro"}><b>defmacro</b></ClLinks>, **documentation**, Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
 
 
 
@@ -186,7 +186,7 @@ This is the normal mechanism for defining a *compiler macro function*. Its manne
 
 
 
-The consequences of writing a *compiler macro* definition for a function in the COMMON-LISP *package* are undefined; it is quite possible that in some *implementations* such an attempt would override an equivalent or equally important definition. In general, it is recommended that a programmer only write *compiler macro* definitions for *functions* he or she personally maintains–writing a *compiler macro* definition for a function maintained elsewhere is normally considered a violation of traditional rules of modularity and data abstraction. 
+The consequences of writing a *compiler macro* definition for a function in the COMMON-LISP <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> are undefined; it is quite possible that in some <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> such an attempt would override an equivalent or equally important definition. In general, it is recommended that a programmer only write *compiler macro* definitions for <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> he or she personally maintains–writing a *compiler macro* definition for a function maintained elsewhere is normally considered a violation of traditional rules of modularity and data abstraction. 
 
 
 

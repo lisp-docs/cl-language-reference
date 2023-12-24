@@ -1,4 +1,4 @@
-**name-char** *Function* 
+**name-char** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**name-char** *name → char-p* 
+<ClLinks styled={true} term={"name-char"}><b>name-char</b></ClLinks> *name → char-p* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*name*—a *string designator* . 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a *string designator* . 
 
 
 
-*char-p*—a *character* or **nil**. 
+*char-p*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the *character object* whose *name* is *name* (as determined by **string-equal**—*i.e.*, lookup is not case sensitive). If such a *character* does not exist, **nil** is returned. 
+Returns the *character object* whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> (as determined by **string-equal**—*i.e.*, lookup is not case sensitive). If such a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> does not exist, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is returned. 
 
 
 
@@ -44,7 +44,7 @@ Returns the *character object* whose *name* is *name* (as determined by **string
 
 
 
-Should signal an error of *type* **type-error** if *name* is not a *string designator* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is not a *string designator* . 
 
 
 
@@ -52,7 +52,7 @@ Should signal an error of *type* **type-error** if *name* is not a *string desig
 
 
 
-**char-name** 
+<ClLinks styled={true} term={"char-name"}><b>char-name</b></ClLinks> 
 
 
 

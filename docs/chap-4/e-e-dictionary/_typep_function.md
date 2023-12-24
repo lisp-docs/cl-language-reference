@@ -1,4 +1,4 @@
-**typep** *Function* 
+**typep** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**typep** *object type-specifier* &amp;optional *environment → generalized-boolean* 
+<ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks> *object type-specifier* &amp;optional *environment → generalized-boolean* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*type-specifier*—any *type specifier* except **values**, or a *type specifier* list whose first element is either **function** or **values**. 
+*type-specifier*—any *type specifier* except <ClLinks styled={true} term={"values"}><b>values</b></ClLinks>, or a *type specifier* list whose first element is either <ClLinks styled={true} term={"function"}><b>function</b></ClLinks> or <ClLinks styled={true} term={"values"}><b>values</b></ClLinks>. 
 
 
 
-*environment*—an *environment object*. The default is **nil**, denoting the *null lexical environment* and the and current *global environment*. 
+<ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>—an *environment object*. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, denoting the *null lexical environment* and the and current *global environment*. 
 
 
 
@@ -34,15 +34,15 @@
 
 
 
-Returns *true* if *object* is of the *type* specified by *type-specifier*; otherwise, returns *false*. A *type-specifier* of the form (satisfies fn) is handled by applying the function fn to *object*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> specified by *type-specifier*; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. A *type-specifier* of the form (satisfies fn) is handled by applying the function fn to <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-(typep *object* ’(array *type-specifier*)), where *type-specifier* is not \*, returns *true* if and only if *object* is an *array* that could be the result of supplying *type-specifier* as the :element-type argument to **make-array**. (array \*) refers to all *arrays* regardless of element type, while (array *type-specifier*) refers only to those *arrays* that can result from giving *type-specifier* as the :element-type argument to **make-array**. A similar interpretation applies to (simple-array *type-specifier*) and (vector *type-specifier*). See Section 15.1.2.1 (Array Upgrading). 
+(typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’(array *type-specifier*)), where *type-specifier* is not \*, returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if and only if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> that could be the result of supplying *type-specifier* as the :element-type argument to <ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks>. (array \*) refers to all <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> regardless of element type, while (array *type-specifier*) refers only to those <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> that can result from giving *type-specifier* as the :element-type argument to <ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks>. A similar interpretation applies to (simple-array *type-specifier*) and (vector *type-specifier*). See Section 15.1.2.1 (Array Upgrading). 
 
 
 
-(typep *object* ’(complex *type-specifier*)) returns *true* for all *complex* numbers that can result from giving *numbers* of type *type-specifier* to the *function* **complex**, plus all other *complex* numbers of the same specialized representation. Both the real and the imaginary parts of any such *complex* number must satisfy:  
+(typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’(complex *type-specifier*)) returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> for all <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> numbers that can result from giving <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks> of type *type-specifier* to the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"complex"}><b>complex</b></ClLinks>, plus all other <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> numbers of the same specialized representation. Both the real and the imaginary parts of any such <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> number must satisfy:  
 
 
 
@@ -50,7 +50,7 @@ Returns *true* if *object* is of the *type* specified by *type-specifier*; other
 
 
 
-**typep** 
+<ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks> 
 
 
 
@@ -62,7 +62,7 @@ Returns *true* if *object* is of the *type* specified by *type-specifier*; other
 
 
 
-See the *function* **upgraded-complex-part-type**. 
+See the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></ClLinks>. 
 
 
 
@@ -92,7 +92,7 @@ denote the same *type*. Notice that
 
 
 
-An error of *type* **error** is signaled if *type-specifier* is values, or a *type specifier* list whose first element is either **function** or **values**. 
+An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> is signaled if *type-specifier* is values, or a *type specifier* list whose first element is either <ClLinks styled={true} term={"function"}><b>function</b></ClLinks> or <ClLinks styled={true} term={"values"}><b>values</b></ClLinks>. 
 
 
 
@@ -104,7 +104,7 @@ The consequences are undefined if the *type-specifier* is not a *type specifier*
 
 
 
-**type-of**, **upgraded-array-element-type**, **upgraded-complex-part-type**, Section 4.2.3 (Type Specifiers) 
+<ClLinks styled={true} term={"type-of"}><b>type-of</b></ClLinks>, <ClLinks styled={true} term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks>, <ClLinks styled={true} term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></ClLinks>, Section 4.2.3 (Type Specifiers) 
 
 
 
@@ -112,7 +112,7 @@ The consequences are undefined if the *type-specifier* is not a *type specifier*
 
 
 
-*Implementations* are encouraged to recognize and optimize the case of (typep *x* (the class *y*)), since it does not involve any need for expansion of **deftype** information at runtime.  
+<ClLinks styled={true} term={"implementation"}><i>Implementations</i></ClLinks> are encouraged to recognize and optimize the case of (typep *x* (the class *y*)), since it does not involve any need for expansion of <ClLinks styled={true} term={"deftype"}><b>deftype</b></ClLinks> information at runtime.  
 
 
 

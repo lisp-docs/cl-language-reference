@@ -6,15 +6,15 @@ In some cases, an auxiliary definition in the BNF might appear to be unused with
 
 
 
-**case** *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] → \{result\}\* 
+<ClLinks styled={true} term={"case"}><b>case</b></ClLinks> *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] → \{result\}\* 
 
 
 
-**ccase** *keyplace \{↓normal-clause\}*\* → \{result\}\* 
+<ClLinks styled={true} term={"ccase"}><b>ccase</b></ClLinks> *keyplace \{↓normal-clause\}*\* → \{result\}\* 
 
 
 
-**ecase** *keyform \{↓normal-clause\}*\* → \{result\}\* 
+<ClLinks styled={true} term={"ecase"}><b>ecase</b></ClLinks> *keyform \{↓normal-clause\}*\* → \{result\}\* 
 
 
 

@@ -1,4 +1,4 @@
-**char-int** *Function* 
+**char-int** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**char-int** *character → integer* 
+<ClLinks styled={true} term={"char-int"}><b>char-int</b></ClLinks> *character → integer* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*character*—a *character* . 
+<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Returns a non-negative *integer* encoding the *character* object. The manner in which the *integer* is computed is *implementation-dependent*. In contrast to **sxhash**, the result is not guaranteed to be independent of the particular *Lisp image*. 
+Returns a non-negative *integer* encoding the <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> object. The manner in which the *integer* is computed is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. In contrast to <ClLinks styled={true} term={"sxhash"}><b>sxhash</b></ClLinks>, the result is not guaranteed to be independent of the particular *Lisp image*. 
 
 
 
-If *character* has no *implementation-defined attributes*, the results of **char-int** and **char-code** are the same. 
+If <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> has no *implementation-defined attributes*, the results of <ClLinks styled={true} term={"char-int"}><b>char-int</b></ClLinks> and <ClLinks styled={true} term={"char-code"}><b>char-code</b></ClLinks> are the same. 
 
 
 
@@ -54,7 +54,7 @@ for characters *c1* and *c2*.
 
 
 
-**char-code** 
+<ClLinks styled={true} term={"char-code"}><b>char-code</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**set** *Function* 
+**set** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**set** *symbol value → value* 
+<ClLinks styled={true} term={"set"}><b>set</b></ClLinks> *symbol value → value* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*symbol*—a *symbol*. 
+<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*value*—an *object*. 
+<ClLinks styled={true} term={"value"}><i>value</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-**set** changes the contents of the *value cell* of *symbol* to the given *value*. 
+<ClLinks styled={true} term={"set"}><b>set</b></ClLinks> changes the contents of the *value cell* of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> to the given <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>. 
 
 
 
-(set *symbol value*) *≡* (setf (symbol-value *symbol*) *value*) 
+(set *symbol value*) *≡* (setf (symbol-value <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>) <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>) 
 
 
 
@@ -78,7 +78,7 @@ n → 44
 
 
 
-The *value* of *symbol* is changed. 
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is changed. 
 
 
 
@@ -86,7 +86,7 @@ The *value* of *symbol* is changed.
 
 
 
-**setq**, **progv**, **symbol-value** 
+<ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks>, <ClLinks styled={true} term={"progv"}><b>progv</b></ClLinks>, <ClLinks styled={true} term={"symbol-value"}><b>symbol-value</b></ClLinks> 
 
 
 
@@ -94,11 +94,11 @@ The *value* of *symbol* is changed.
 
 
 
-The function **set** is deprecated. 
+The function <ClLinks styled={true} term={"set"}><b>set</b></ClLinks> is deprecated. 
 
 
 
-**set** cannot change the value of a *lexical variable*. 
+<ClLinks styled={true} term={"set"}><b>set</b></ClLinks> cannot change the value of a *lexical variable*. 
 
 
 

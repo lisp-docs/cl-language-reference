@@ -2,11 +2,11 @@
 
 
 
-The mappings in a *package* are divided into two classes, external and internal. The *symbols* targeted by these different mappings are called *external symbols* and *internal symbols* of the *package*. Within a *package*, a name refers to one *symbol* or to none; if it does refer to a *symbol*, then it is either external or internal in that *package*, but not both. *External symbols* are part of the package’s public interface to other *packages*. *Symbols* become *external symbols* of a given *package* if they have been *exported* from that *package*. 
+The mappings in a <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> are divided into two classes, external and internal. The <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> targeted by these different mappings are called *external symbols* and *internal symbols* of the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. Within a <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, a name refers to one <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or to none; if it does refer to a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, then it is either external or internal in that <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, but not both. *External symbols* are part of the package’s public interface to other <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks>. <ClLinks styled={true} term={"symbol"}><i>Symbols</i></ClLinks> become *external symbols* of a given <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> if they have been <ClLinks styled={true} term={"exported"}><i>exported</i></ClLinks> from that <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
 
 
 
-A *symbol* has the same *name* no matter what *package* it is *present* in, but it might be an *external symbol* of some *packages* and an *internal symbol* of others. 
+A <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> has the same <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> no matter what <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> it is <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in, but it might be an *external symbol* of some <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> and an *internal symbol* of others. 
 
 
 

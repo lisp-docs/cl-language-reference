@@ -1,4 +1,4 @@
-**lcm** *Function* 
+**lcm** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**lcm** &amp;rest *integers → least-common-multiple* 
+<ClLinks styled={true} term={"lcm"}><b>lcm</b></ClLinks> &amp;rest *integers → least-common-multiple* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-**lcm** returns the least common multiple of the *integers*. 
+<ClLinks styled={true} term={"lcm"}><b>lcm</b></ClLinks> returns the least common multiple of the *integers*. 
 
 
 
@@ -89,7 +89,7 @@ For three or more arguments,
 
 
 
-Should signal **type-error** if any argument is not an *integer* . 
+Should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if any argument is not an *integer* . 
 
 
 
@@ -97,7 +97,7 @@ Should signal **type-error** if any argument is not an *integer* .
 
 
 
-**gcd** 
+<ClLinks styled={true} term={"gcd"}><b>gcd</b></ClLinks> 
 
 
 

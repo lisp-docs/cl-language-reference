@@ -1,4 +1,4 @@
-**ignore, ignorable** *Declaration* 
+**ignore, ignorable** <ClLinks styled={true} term={"declaration"}><i>Declaration</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-(ignore *\{var* | (**function** *fn*)*\}*\*) 
+(ignore *\{var* | (<ClLinks styled={true} term={"function"}><b>function</b></ClLinks> *fn*)*\}*\*) 
 
 
 
-(ignorable *\{var* | (**function** *fn*)*\}*\*) 
+(ignorable *\{var* | (<ClLinks styled={true} term={"function"}><b>function</b></ClLinks> *fn*)*\}*\*) 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*declaration* 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks> 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-*variable*, *function* 
+<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>, <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> 
 
 
 
@@ -46,19 +46,15 @@
 
 
 
-The **ignore** and **ignorable** declarations refer to *for-value references* to *variable bindings* for the *vars* and to *function bindings* for the *fns*. 
+The <ClLinks styled={true} term={"ignore"}><b>ignore</b></ClLinks> and <ClLinks styled={true} term={"ignorable"}><b>ignorable</b></ClLinks> declarations refer to *for-value references* to *variable bindings* for the *vars* and to *function bindings* for the *fns*. 
 
 
 
-An **ignore** *declaration* specifies that *for-value references* to the indicated *bindings* will not occur within the scope of the *declaration*. Within the *scope* of such a *declaration*, it is desirable for a compiler to issue a warning about the presence of either a *for-value reference* to any *var* or *fn*, or a **special** *declaration* for any *var*. 
-
-
+An <ClLinks styled={true} term={"ignore"}><b>ignore</b></ClLinks> <ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks> specifies that *for-value references* to the indicated <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks> will not occur within the scope of the <ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>. Within the <ClLinks styled={true} term={"scope"}><i>scope</i></ClLinks> of such a <ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>, it is desirable for a compiler to issue a warning about the presence of either a *for-value reference* to any *var* or *fn*, or a <ClLinks styled={true} term={"special"}><b>special</b></ClLinks> <ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks> for any *var*. 
 
 
 
 
-
- 
 
 
 
@@ -66,19 +62,23 @@ An **ignore** *declaration* specifies that *for-value references* to the indicat
 
 
 
-An **ignorable** *declaration* specifies that *for-value references* to the indicated *bindings* might or might not occur within the scope of the *declaration*. Within the *scope* of such a *declaration*, it is not desirable for a compiler to issue a warning about the presence or absence of either a *for-value reference* to any *var* or *fn*, or a **special** *declaration* for any *var*. 
+ 
 
 
 
-When not within the *scope* of a **ignore** or **ignorable** *declaration*, it is desirable for a compiler to issue a warning about any *var* for which there is neither a *for-value reference* nor a **special** *declaration*, or about any *fn* for which there is no *for-value reference*. 
+An <ClLinks styled={true} term={"ignorable"}><b>ignorable</b></ClLinks> <ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks> specifies that *for-value references* to the indicated <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks> might or might not occur within the scope of the <ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>. Within the <ClLinks styled={true} term={"scope"}><i>scope</i></ClLinks> of such a <ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>, it is not desirable for a compiler to issue a warning about the presence or absence of either a *for-value reference* to any *var* or *fn*, or a <ClLinks styled={true} term={"special"}><b>special</b></ClLinks> <ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks> for any *var*. 
 
 
 
-Any warning about a “used” or “unused” *binding* must be of *type* **style-warning**, and may not a↵ect program semantics. 
+When not within the <ClLinks styled={true} term={"scope"}><i>scope</i></ClLinks> of a <ClLinks styled={true} term={"ignore"}><b>ignore</b></ClLinks> or <ClLinks styled={true} term={"ignorable"}><b>ignorable</b></ClLinks> <ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>, it is desirable for a compiler to issue a warning about any *var* for which there is neither a *for-value reference* nor a <ClLinks styled={true} term={"special"}><b>special</b></ClLinks> <ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>, or about any *fn* for which there is no *for-value reference*. 
 
 
 
-The *stream variables* established by **with-open-file**, **with-open-stream**, **with-input-from-string**, and **with-output-to-string**, and all *iteration variables* are, by definition, always “used”. Using (declare (ignore *v*)), for such a *variable v* has unspecified consequences. 
+Any warning about a “used” or “unused” <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> must be of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"style-warning"}><b>style-warning</b></ClLinks>, and may not a↵ect program semantics. 
+
+
+
+The *stream variables* established by <ClLinks styled={true} term={"with-open-file"}><b>with-open-file</b></ClLinks>, <ClLinks styled={true} term={"with-open-stream"}><b>with-open-stream</b></ClLinks>, <ClLinks styled={true} term={"with-input-from-string"}><b>with-input-from-string</b></ClLinks>, and <ClLinks styled={true} term={"with-output-to-string"}><b>with-output-to-string</b></ClLinks>, and all *iteration variables* are, by definition, always “used”. Using (declare (ignore *v*)), for such a *variable v* has unspecified consequences. 
 
 
 
@@ -86,7 +86,7 @@ The *stream variables* established by **with-open-file**, **with-open-stream**, 
 
 
 
-**declare** 
+<ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> 
 
 
 

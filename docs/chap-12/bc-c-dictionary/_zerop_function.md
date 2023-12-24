@@ -1,4 +1,4 @@
-**zerop** *Function* 
+**zerop** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**zerop** *number → generalized-boolean* 
+<ClLinks styled={true} term={"zerop"}><b>zerop</b></ClLinks> *number → generalized-boolean* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*number*—a *number* . 
+<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-Returns *true* if *number* is zero (*integer* , *float*, or *complex* ); otherwise, returns *false*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is zero (*integer* , <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>, or <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> ); otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
-Regardless of whether an *implementation* provides distinct representations for positive and negative floating-point zeros, (zerop -0.0) always returns *true*. 
+Regardless of whether an <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> provides distinct representations for positive and negative floating-point zeros, (zerop -0.0) always returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 
 
 
 
@@ -56,7 +56,7 @@ Regardless of whether an *implementation* provides distinct representations for 
 
 
 
-Should signal an error of *type* **type-error** if *number* is not a *number* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is not a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -64,7 +64,7 @@ Should signal an error of *type* **type-error** if *number* is not a *number* .
 
 
 
-(zerop *number*) *≡* (= *number* 0) 
+(zerop <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>) *≡* (= <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> 0) 
 
 
 

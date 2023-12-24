@@ -2,7 +2,7 @@
 
 
 
-Figure 9–1 lists the *standardized condition types*. Additional *condition types* can be defined by using **define-condition**. 
+Figure 9–1 lists the *standardized condition types*. Additional *condition types* can be defined by using <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks>. 
 
 
 
@@ -18,7 +18,7 @@ Figure 9–1 lists the *standardized condition types*. Additional *condition typ
 
 
 
-All *condition* types are *subtypes* of *type* **condition**. That is, 
+All <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> types are <ClLinks styled={true} term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>. That is, 
 
 
 
@@ -26,19 +26,19 @@ All *condition* types are *subtypes* of *type* **condition**. That is,
 
 
 
-if and only if *c* is a *condition*. 
+if and only if *c* is a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
-*Implementations* must define all specified *subtype* relationships. Except where noted, all *subtype* relationships indicated in this document are not mutually exclusive. A *condition* inherits the structure of its *supertypes*. 
+<ClLinks styled={true} term={"implementation"}><i>Implementations</i></ClLinks> must define all specified <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> relationships. Except where noted, all <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> relationships indicated in this document are not mutually exclusive. A <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> inherits the structure of its <ClLinks styled={true} term={"supertype"}><i>supertypes</i></ClLinks>. 
 
 
 
-The metaclass of the *class* **condition** is not specified. *Names* of *condition types* may be used to specify *supertype* relationships in **define-condition**, but the consequences are not specified if an attempt is made to use a *condition type* as a *superclass* in a **defclass** *form*. 
+The metaclass of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks> is not specified. <ClLinks styled={true} term={"name"}><i>Names</i></ClLinks> of *condition types* may be used to specify <ClLinks styled={true} term={"supertype"}><i>supertype</i></ClLinks> relationships in <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks>, but the consequences are not specified if an attempt is made to use a *condition type* as a <ClLinks styled={true} term={"superclass"}><i>superclass</i></ClLinks> in a <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-Figure 9–2 shows *operators* that define *condition types* and creating *conditions*. 
+Figure 9–2 shows <ClLinks styled={true} term={"operator"}><i>operators</i></ClLinks> that define *condition types* and creating <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ Figure 9–2 shows *operators* that define *condition types* and creating *condi
 
 
 
-Figure 9–3 shows *operators* that *read* the *value* of *condition slots*. 
+Figure 9–3 shows <ClLinks styled={true} term={"operator"}><i>operators</i></ClLinks> that <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of *condition slots*. 
 
 
 

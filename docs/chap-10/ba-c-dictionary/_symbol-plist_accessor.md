@@ -1,4 +1,4 @@
-**symbol-plist** *Accessor* 
+**symbol-plist** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,10 +6,11 @@
 
 
 
-**symbol-plist** *symbol → plist* 
+<ClLinks styled={true} term={"symbol-plist"}><b>symbol-plist</b></ClLinks> *symbol → plist* 
 
 
 
+<!-- **(setf (symbol-plist** <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>**)** *new-plist<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks>  -->
 **(setf (symbol-plist** *symbol***)** *new-plist***)** 
 
 
@@ -18,11 +19,11 @@
 
 
 
-*symbol*—a *symbol*. 
+<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*plist*, *new-plist*—a *property list*. 
+<ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks>, *new-plist*—a *property list*. 
 
 
 
@@ -30,7 +31,7 @@
 
 
 
-*Accesses* the *property list* of *symbol*. 
+*Accesses* the *property list* of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -51,7 +52,7 @@
 
 
 
-Should signal an error of *type* **type-error** if *symbol* is not a *symbol*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -59,7 +60,7 @@ Should signal an error of *type* **type-error** if *symbol* is not a *symbol*.
 
 
 
-**get**, **remprop** 
+<ClLinks styled={true} term={"get"}><b>get</b></ClLinks>, <ClLinks styled={true} term={"remprop"}><b>remprop</b></ClLinks> 
 
 
 
@@ -67,7 +68,7 @@ Should signal an error of *type* **type-error** if *symbol* is not a *symbol*.
 
 
 
-The use of **setf** should be avoided, since a *symbol*’s *property list* is a global resource that can contain information established and depended upon by unrelated programs in the same *Lisp image*. 
+The use of <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> should be avoided, since a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>’s *property list* is a global resource that can contain information established and depended upon by unrelated programs in the same *Lisp image*. 
 
 
 
@@ -83,7 +84,7 @@ The use of **setf** should be avoided, since a *symbol*’s *property list* is a
 
 
 
-**symbol-value** 
+<ClLinks styled={true} term={"symbol-value"}><b>symbol-value</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**alphanumericp** *Function* 
+**alphanumericp** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**alphanumericp** *character → generalized-boolean* 
+<ClLinks styled={true} term={"alphanumericp"}><b>alphanumericp</b></ClLinks> *character → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*character*—a *character* . 
+<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns *true* if *character* is an *alphabetic*<sub>1</sub> *character* or a *numeric character* ; otherwise, returns *false*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is an <ClLinks styled={true} term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>1</sub> <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> or a *numeric character* ; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -51,7 +51,7 @@ None. (In particular, the results of this predicate are independent of any speci
 
 
 
-Should signal an error of *type* **type-error** if *character* is not a *character* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is not a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -59,7 +59,7 @@ Should signal an error of *type* **type-error** if *character* is not a *charact
 
 
 
-**alpha-char-p**, **graphic-char-p**, **digit-char-p** 
+<ClLinks styled={true} term={"alpha-char-p"}><b>alpha-char-p</b></ClLinks>, <ClLinks styled={true} term={"graphic-char-p"}><b>graphic-char-p</b></ClLinks>, <ClLinks styled={true} term={"digit-char-p"}><b>digit-char-p</b></ClLinks> 
 
 
 
@@ -67,7 +67,7 @@ Should signal an error of *type* **type-error** if *character* is not a *charact
 
 
 
-Alphanumeric characters are graphic as defined by **graphic-char-p**. The alphanumeric characters are a subset of the graphic characters. The standard characters A through Z, a through z, and 0 through 9 are alphanumeric characters. 
+Alphanumeric characters are graphic as defined by <ClLinks styled={true} term={"graphic-char-p"}><b>graphic-char-p</b></ClLinks>. The alphanumeric characters are a subset of the graphic characters. The standard characters A through Z, a through z, and 0 through 9 are alphanumeric characters. 
 
 
 

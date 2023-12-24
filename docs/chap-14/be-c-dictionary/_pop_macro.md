@@ -1,4 +1,4 @@
-**pop** *Macro* 
+**pop** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**pop** *place → element* 
+<ClLinks styled={true} term={"pop"}><b>pop</b></ClLinks> *place → element* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*place*—a *place*, the *value* of which is a *list* (possibly, but necessarily, a *dotted list* or *circular list*). *element*—an *object* (the *car* of the contents of *place*). 
+<ClLinks styled={true} term={"place"}><i>place</i></ClLinks>—a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of which is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> (possibly, but necessarily, a *dotted list* or *circular list<ClLinks styled={true} term={"t"}><i>). </i></ClLinks>element<ClLinks styled={true} term={"t"}><i>—an </i></ClLinks>object* (the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of the contents of <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>). 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-**pop** *reads* the *value* of *place*, remembers the *car* of the *list* which was retrieved, *writes* the *cdr* of the *list* back into the *place*, and finally *yields* the *car* of the originally retrieved *list*. 
+<ClLinks styled={true} term={"pop"}><b>pop</b></ClLinks> <ClLinks styled={true} term={"read"}><i>reads</i></ClLinks> the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, remembers the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> which was retrieved, <ClLinks styled={true} term={"write"}><i>writes</i></ClLinks> the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> back into the <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, and finally <ClLinks styled={true} term={"yield"}><i>yields</i></ClLinks> the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of the originally retrieved <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-For information about the *evaluation* of *subforms* of *place*, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
+For information about the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks styled={true} term={"subform"}><i>subforms</i></ClLinks> of <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
 
 
 
@@ -57,7 +57,7 @@ llst → ((2 3 4))
 
 
 
-The contents of *place* are modified. 
+The contents of <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> are modified. 
 
 
 
@@ -65,7 +65,7 @@ The contents of *place* are modified.
 
 
 
-**push**, **pushnew**, Section 5.1 (Generalized Reference) 
+<ClLinks styled={true} term={"push"}><b>push</b></ClLinks>, <ClLinks styled={true} term={"pushnew"}><b>pushnew</b></ClLinks>, Section 5.1 (Generalized Reference) 
 
 
 
@@ -73,15 +73,15 @@ The contents of *place* are modified.
 
 
 
-The effect of (pop *place*) is roughly equivalent to 
+The effect of (pop <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>) is roughly equivalent to 
 
 
 
-(prog1 (car *place*) (setf *place* (cdr *place*))) 
+(prog1 (car <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>) (setf <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> (cdr <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>))) 
 
 
 
-except that the latter would evaluate any *subforms* of *place* three times, while **pop** evaluates them only once. 
+except that the latter would evaluate any <ClLinks styled={true} term={"subform"}><i>subforms</i></ClLinks> of <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> three times, while <ClLinks styled={true} term={"pop"}><b>pop</b></ClLinks> evaluates them only once. 
 
 
 

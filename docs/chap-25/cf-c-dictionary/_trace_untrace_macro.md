@@ -1,4 +1,4 @@
-**trace, untrace** *Macro* 
+**trace, untrace** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**trace** *\{function-name\}*\* → trace-result 
+<ClLinks styled={true} term={"trace"}><b>trace</b></ClLinks> *\{function-name\}*\* → trace-result 
 
 
 
-**untrace** *\{function-name\}*\* → untrace-result 
+<ClLinks styled={true} term={"untrace"}><b>untrace</b></ClLinks> *\{function-name\}*\* → untrace-result 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-*trace-result*—*implementation-dependent*, unless no *function-names* are supplied, in which case *trace-result* is a *list* of *function names*. 
+*trace-result*—<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, unless no *function-names* are supplied, in which case *trace-result* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *function names*. 
 
 
 
-*untrace-result*—*implementation-dependent*. 
+*untrace-result*—<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -34,19 +34,19 @@
 
 
 
-**trace** and **untrace** control the invocation of the trace facility. 
+<ClLinks styled={true} term={"trace"}><b>trace</b></ClLinks> and <ClLinks styled={true} term={"untrace"}><b>untrace</b></ClLinks> control the invocation of the trace facility. 
 
 
 
-Invoking **trace** with one or more *function-names* causes the denoted *functions* to be “traced.” Whenever a traced *function* is invoked, information about the call, about the arguments passed, and about any eventually returned values is printed to *trace output*. If **trace** is used with no *function-names*, no tracing action is performed; instead, a list of the *functions* currently being traced is returned. 
+Invoking <ClLinks styled={true} term={"trace"}><b>trace</b></ClLinks> with one or more *function-names* causes the denoted <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> to be “traced.” Whenever a traced <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is invoked, information about the call, about the arguments passed, and about any eventually returned values is printed to *trace output*. If <ClLinks styled={true} term={"trace"}><b>trace</b></ClLinks> is used with no *function-names*, no tracing action is performed; instead, a list of the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> currently being traced is returned. 
 
 
 
-Invoking **untrace** with one or more function names causes those functions to be “untraced” (*i.e.*, no longer traced). If **untrace** is used with no *function-names*, all *functions* currently being traced are untraced. 
+Invoking <ClLinks styled={true} term={"untrace"}><b>untrace</b></ClLinks> with one or more function names causes those functions to be “untraced” (*i.e.*, no longer traced). If <ClLinks styled={true} term={"untrace"}><b>untrace</b></ClLinks> is used with no *function-names*, all <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> currently being traced are untraced. 
 
 
 
-If a *function* to be traced has been open-coded (*e.g.*, because it was declared **inline**), a call to that *function* might not produce trace output. 
+If a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> to be traced has been open-coded (*e.g.*, because it was declared <ClLinks styled={true} term={"inline"}><b>inline</b></ClLinks>), a call to that <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> might not produce trace output. 
 
 
 
@@ -77,7 +77,7 @@ If a *function* to be traced has been open-coded (*e.g.*, because it was declare
 
 
 
-Might change the definitions of the *functions* named by *function-names*. 
+Might change the definitions of the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> named by *function-names*. 
 
 
 
@@ -101,7 +101,7 @@ Tracing an already traced function, or untracing a function not currently being 
 
 
 
-**\*trace-output\***, **step** 
+**\*trace-output\***, <ClLinks styled={true} term={"step"}><b>step</b></ClLinks> 
 
 
 
@@ -109,11 +109,11 @@ Tracing an already traced function, or untracing a function not currently being 
 
 
 
-**trace** and **untrace** may also accept additional *implementation-dependent* argument formats. The format of the trace output is *implementation-dependent*. 
+<ClLinks styled={true} term={"trace"}><b>trace</b></ClLinks> and <ClLinks styled={true} term={"untrace"}><b>untrace</b></ClLinks> may also accept additional <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> argument formats. The format of the trace output is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
-Although **trace** can be extended to permit non-standard options, *implementations* are nevertheless encouraged (but not required) to warn about the use of syntax or options that are neither specified by this standard nor added as an extension by the *implementation*, since they could be symptomatic of typographical errors or of reliance on features supported in *implementations* other than the current *implementation*. 
+Although <ClLinks styled={true} term={"trace"}><b>trace</b></ClLinks> can be extended to permit non-standard options, <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> are nevertheless encouraged (but not required) to warn about the use of syntax or options that are neither specified by this standard nor added as an extension by the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>, since they could be symptomatic of typographical errors or of reliance on features supported in <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> other than the current <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 

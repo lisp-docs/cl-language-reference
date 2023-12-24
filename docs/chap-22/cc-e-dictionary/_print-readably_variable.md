@@ -1,4 +1,4 @@
-*∗***print-readably***∗ Variable* 
+*∗<ClLinks styled={true} term={"print-readably"}><b>*print-readably*</b></ClLinks>∗ Variable* 
 
 
 
@@ -22,7 +22,7 @@ a *generalized boolean*.
 
 
 
-*∗***print-readably***∗* 
+*∗<ClLinks styled={true} term={"print-readably"}><b>*print-readably*</b></ClLinks>∗* 
 
 
 
@@ -30,7 +30,7 @@ a *generalized boolean*.
 
 
 
-*false*. 
+<ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -38,23 +38,23 @@ a *generalized boolean*.
 
 
 
-If **\*print-readably\*** is *true*, some special rules for printing *objects* go into effect. Specifically, printing any *object O*<sub>1</sub> produces a printed representation that, when seen by the *Lisp reader* while the *standard readtable* is in effect, will produce an *object O*<sub>2</sub> that is *similar* to *O*<sub>1</sub>. The printed representation produced might or might not be the same as the printed representation produced when **\*print-readably\*** is *false*. If printing an *object readably* is not possible, an error of *type* **print-not-readable** is signaled rather than using a syntax (*e.g.*, the “#&lt;” syntax) that would not be readable by the same *implementation*. If the *value* of some other *printer control variable* is such that these requirements would be violated, the *value* of that other *variable* is ignored. 
+If <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, some special rules for printing <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> go into effect. Specifically, printing any *object O*<sub>1</sub> produces a printed representation that, when seen by the *Lisp reader* while the *standard readtable* is in effect, will produce an *object O*<sub>2</sub> that is <ClLinks styled={true} term={"similar"}><i>similar</i></ClLinks> to *O*<sub>1</sub>. The printed representation produced might or might not be the same as the printed representation produced when <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. If printing an *object readably* is not possible, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"print-not-readable"}><b>print-not-readable</b></ClLinks> is signaled rather than using a syntax (*e.g.*, the “#&lt;” syntax) that would not be readable by the same <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. If the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of some other *printer control variable* is such that these requirements would be violated, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of that other <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> is ignored. 
 
 
 
-Specifically, if **\*print-readably\*** is *true*, printing proceeds as if **\*print-escape\***, **\*print-array\***, and **\*print-gensym\*** were also *true*, and as if **\*print-length\***, **\*print-level\***, and **\*print-lines\*** were *false*. 
+Specifically, if <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, printing proceeds as if <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks>, <ClLinks styled={true} term={"print-array"}><b>\*print-array\*</b></ClLinks>, and <ClLinks styled={true} term={"print-gensym"}><b>\*print-gensym\*</b></ClLinks> were also <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, and as if <ClLinks styled={true} term={"print-length"}><b>\*print-length\*</b></ClLinks>, **\*print-level\***, and <ClLinks styled={true} term={"print-lines"}><b>\*print-lines\*</b></ClLinks> were <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
-If **\*print-readably\*** is *false*, the normal rules for printing and the normal interpretations of other *printer control variables* are in effect. 
+If <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, the normal rules for printing and the normal interpretations of other *printer control variables* are in effect. 
 
 
 
-Individual *methods* for **print-object**, including user-defined *methods*, are responsible for implementing these requirements. 
+Individual <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> for <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks>, including user-defined <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks>, are responsible for implementing these requirements. 
 
 
 
-If **\*read-eval\*** is *false* and **\*print-readably\*** is *true*, any such method that would output a reference to the “#.” *reader macro* will either output something else or will signal an error (as described above). 
+If **\*read-eval\*** is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> and <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, any such method that would output a reference to the “#.” *reader macro* will either output something else or will signal an error (as described above). 
 
 
 
@@ -108,7 +108,7 @@ Error: Can’t print #<HASH-TABLE EQL 0/120 32005763> readably.
 
 
 
-**write**, **print-unreadable-object** 
+<ClLinks styled={true} term={"write"}><b>write</b></ClLinks>, <ClLinks styled={true} term={"print-unreadable-object"}><b>print-unreadable-object</b></ClLinks> 
 
 
 
@@ -116,7 +116,7 @@ Error: Can’t print #<HASH-TABLE EQL 0/120 32005763> readably.
 
 
 
-The rules for “*similarity*” imply that #A or #( syntax cannot be used for *arrays* of *element type* other than **t**. An implementation will have to use another syntax or signal an error of *type* **print-not-readable**. 
+The rules for “<ClLinks styled={true} term={"similarity"}><i>similarity</i></ClLinks>” imply that #A or #( syntax cannot be used for <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> of *element type* other than <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>. An implementation will have to use another syntax or signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"print-not-readable"}><b>print-not-readable</b></ClLinks>. 
 
 
 

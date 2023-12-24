@@ -1,4 +1,4 @@
-**copy-symbol** *Function* 
+**copy-symbol** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**copy-symbol** *symbol* &amp;optional *copy-properties → new-symbol* 
+<ClLinks styled={true} term={"copy-symbol"}><b>copy-symbol</b></ClLinks> <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> &amp;optional *copy-properties → new-symbol* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*symbol*—a *symbol*. 
+<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*copy-properties*—a *generalized boolean*. The default is *false*. 
+*copy-properties*—a *generalized boolean*. The default is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
-*new-symbol*—a *fresh*, *uninterned symbol*. 
+*new-symbol*—a <ClLinks styled={true} term={"fresh"}><i>fresh</i></ClLinks>, *uninterned symbol*. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-**copy-symbol** returns a *fresh*, *uninterned symbol*, the *name* of which is **string=** to and possibly the *same* as the *name* of the given *symbol*. 
+<ClLinks styled={true} term={"copy-symbol"}><b>copy-symbol</b></ClLinks> returns a <ClLinks styled={true} term={"fresh"}><i>fresh</i></ClLinks>, *uninterned symbol*, the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of which is <ClLinks styled={true} term={"string"}><b>string=</b></ClLinks> to and possibly the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> as the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the given <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-If *copy-properties* is *false*, the *new-symbol* is neither *bound* nor *fbound* and has a *null property list*. If *copy-properties* is *true*, then the initial *value* of *new-symbol* is the *value* of *symbol*, the initial *function* definition of *new-symbol* is the *functional value* of *symbol*, and the *property list* of *new-symbol* is a *copy*<sub>2</sub> of the *property list* of *symbol*. 
+If *copy-properties* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, the *new-symbol* is neither <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks> nor <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks> and has a *null property list*. If *copy-properties* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, then the initial <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of *new-symbol* is the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, the initial <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> definition of *new-symbol* is the *functional value* of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, and the *property list* of *new-symbol* is a <ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks><sub>2</sub> of the *property list* of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -72,7 +72,7 @@ If *copy-properties* is *false*, the *new-symbol* is neither *bound* nor *fbound
 
 
 
-Should signal an error of *type* **type-error** if *symbol* is not a *symbol*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -80,7 +80,7 @@ Should signal an error of *type* **type-error** if *symbol* is not a *symbol*.
 
 
 
-**make-symbol** 
+<ClLinks styled={true} term={"make-symbol"}><b>make-symbol</b></ClLinks> 
 
 
 
@@ -88,7 +88,7 @@ Should signal an error of *type* **type-error** if *symbol* is not a *symbol*.
 
 
 
-Implementors are encouraged not to copy the *string* which is the *symbol*’s *name* unnecessarily. Unless there is a good reason to do so, the normal implementation strategy is for the *new-symbol*’s *name* to be *identical* to the given *symbol*’s *name*. 
+Implementors are encouraged not to copy the <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> which is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> unnecessarily. Unless there is a good reason to do so, the normal implementation strategy is for the *new-symbol*’s <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> to be <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> to the given <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>. 
 
 
 

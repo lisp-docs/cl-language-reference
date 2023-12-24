@@ -1,4 +1,4 @@
-**upper-case-p, lower-case-p, both-case-p** *Function* 
+**upper-case-p, lower-case-p, both-case-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,15 +6,15 @@
 
 
 
-**upper-case-p** *character → generalized-boolean* 
+<ClLinks styled={true} term={"upper-case-p"}><b>upper-case-p</b></ClLinks> *character → generalized-boolean* 
 
 
 
-**lower-case-p** *character → generalized-boolean* 
+<ClLinks styled={true} term={"lower-case-p"}><b>lower-case-p</b></ClLinks> *character → generalized-boolean* 
 
 
 
-**both-case-p** *character → generalized-boolean* 
+<ClLinks styled={true} term={"both-case-p"}><b>both-case-p</b></ClLinks> *character → generalized-boolean* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*character*—a *character* . 
+<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-These functions test the case of a given *character*. 
+These functions test the case of a given <ClLinks styled={true} term={"character"}><i>character</i></ClLinks>. 
 
 
 
-**upper-case-p** returns *true* if *character* is an *uppercase character* ; otherwise, returns *false*. **lower-case-p** returns *true* if *character* is a *lowercase character* ; otherwise, returns *false*. **both-case-p** returns *true* if *character* is a *character* with *case*; otherwise, returns *false*. 
+<ClLinks styled={true} term={"upper-case-p"}><b>upper-case-p</b></ClLinks> returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is an *uppercase character* ; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. <ClLinks styled={true} term={"lower-case-p"}><b>lower-case-p</b></ClLinks> returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is a *lowercase character* ; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. <ClLinks styled={true} term={"both-case-p"}><b>both-case-p</b></ClLinks> returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> with <ClLinks styled={true} term={"case"}><i>case</i></ClLinks>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 **Examples:**
 ```lisp
@@ -61,7 +61,7 @@ These functions test the case of a given *character*.
 
 
 
-Should signal an error of *type* **type-error** if *character* is not a *character* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is not a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -69,7 +69,7 @@ Should signal an error of *type* **type-error** if *character* is not a *charact
 
 
 
-**char-upcase**, **char-downcase**, Section 13.1.4.3 (Characters With Case), Section 13.1.10 (Documentation of Implementation-Defined Scripts) 
+<ClLinks styled={true} term={"char-upcase"}><b>char-upcase</b></ClLinks>, <ClLinks styled={true} term={"char-downcase"}><b>char-downcase</b></ClLinks>, Section 13.1.4.3 (Characters With Case), Section 13.1.10 (Documentation of Implementation-Defined Scripts) 
 
 
 

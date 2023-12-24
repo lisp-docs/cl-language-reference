@@ -1,4 +1,4 @@
-**nconc** *Function* 
+**nconc** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**nconc** &amp;rest *lists → concatenated-list* 
+<ClLinks styled={true} term={"nconc"}><b>nconc</b></ClLinks> &amp;rest *lists → concatenated-list* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*list*—each but the last must be a *list* (which might be a *dotted list* but must not be a *circular list*); the last *list* may be any *object*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—each but the last must be a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> (which might be a *dotted list* but must not be a *circular list*); the last <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> may be any <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*concatenated-list*—a *list*. 
+*concatenated-list*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a *list* that is the concatenation of *lists*. If no *lists* are supplied, (nconc) returns **nil**. **nconc** is defined using the following recursive relationship: 
+Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that is the concatenation of <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>. If no <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks> are supplied, (nconc) returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. <ClLinks styled={true} term={"nconc"}><b>nconc</b></ClLinks> is defined using the following recursive relationship: 
 
 
 
@@ -34,11 +34,11 @@ Returns a *list* that is the concatenation of *lists*. If no *lists* are supplie
 
 
 
-(nconc nil . *lists*) *≡* (nconc . *lists*) 
+(nconc nil . <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>) *≡* (nconc . <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>) 
 
 
 
-(nconc *list*) → list 
+(nconc <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) → list 
 
 
 
@@ -46,7 +46,7 @@ Returns a *list* that is the concatenation of *lists*. If no *lists* are supplie
 
 
 
-(nconc *list-1 list-2* . *lists*) *≡* (nconc (nconc *list-1 list-2*) . *lists*) 
+(nconc *list-1 list-2* . <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>) *≡* (nconc (nconc *list-1 list-2*) . <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>) 
 
 
 
@@ -91,7 +91,7 @@ baz → (K L M)
 
 
 
-The *lists* are modified rather than copied. 
+The <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks> are modified rather than copied. 
 
 
 
@@ -99,7 +99,7 @@ The *lists* are modified rather than copied.
 
 
 
-**append**, **concatenate** 
+<ClLinks styled={true} term={"append"}><b>append</b></ClLinks>, <ClLinks styled={true} term={"concatenate"}><b>concatenate</b></ClLinks> 
 
 
 

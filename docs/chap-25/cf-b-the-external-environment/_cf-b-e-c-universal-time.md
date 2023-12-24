@@ -26,7 +26,7 @@ Therefore the year 2000 will be a leap year. Because *universal time* must be a 
 
 
 
-|<p>**decode-universal-time get-universal-time** </p><p>**encode-universal-time**</p>|
+|<p>**decode-universal-time get-universal-time** </p><p><ClLinks styled={true} term={"encode-universal-time"}><b>encode-universal-time</b></ClLinks></p>|
 
 | :- |
 

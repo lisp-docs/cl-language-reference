@@ -1,4 +1,4 @@
-**remhash** *Function* 
+**remhash** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**remhash** *key hash-table → generalized-boolean* 
+<ClLinks styled={true} term={"remhash"}><b>remhash</b></ClLinks> *key hash-table → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*key*—an *object*. 
+<ClLinks styled={true} term={"key"}><i>key</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Removes the entry for *key* in *hash-table*, if any. Returns *true* if there was such an entry, or *false* otherwise. 
+Removes the entry for <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> in *hash-table*, if any. Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if there was such an entry, or <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> otherwise. 
 
 
 
@@ -65,7 +65,7 @@ Hash
 
 
 
-**maphash** 
+<ClLinks styled={true} term={"maphash"}><b>maphash</b></ClLinks> 
 
 
 

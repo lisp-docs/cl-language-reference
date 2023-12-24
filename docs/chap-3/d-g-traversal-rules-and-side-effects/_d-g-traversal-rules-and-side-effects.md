@@ -2,7 +2,7 @@
 
 
 
-The consequences are undefined when *code* executed during an *object-traversing* operation destructively modifies the *object* in a way that might affect the ongoing traversal operation. In particular, the following rules apply. 
+The consequences are undefined when <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> executed during an <ClLinks styled={true} term={"object-traversing"}><i>object-traversing</i></ClLinks> operation destructively modifies the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> in a way that might affect the ongoing traversal operation. In particular, the following rules apply. 
 
 
 
@@ -10,7 +10,7 @@ The consequences are undefined when *code* executed during an *object-traversing
 
 
 
-For *list* traversal operations, the *cdr* chain of the *list* is not allowed to be destructively modified. 
+For <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> traversal operations, the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> chain of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is not allowed to be destructively modified. 
 
 
 
@@ -18,7 +18,7 @@ For *list* traversal operations, the *cdr* chain of the *list* is not allowed to
 
 
 
-For *array* traversal operations, the *array* is not allowed to be adjusted and its *fill pointer* , if any, is not allowed to be changed. 
+For <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> traversal operations, the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is not allowed to be adjusted and its *fill pointer* , if any, is not allowed to be changed. 
 
 
 
@@ -34,7 +34,7 @@ For *hash table* traversal operations, new elements may not be added or deleted 
 
 
 
-For *package* traversal operations (*e.g.*, **do-symbols**), new *symbols* may not be *interned* in or *uninterned* from the *package* being traversed or any *package* that it uses except that the current *symbol* may be *uninterned* from the *package* being traversed.  
+For <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> traversal operations (*e.g.*, <ClLinks styled={true} term={"do-symbols"}><b>do-symbols</b></ClLinks>), new <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> may not be <ClLinks styled={true} term={"interned"}><i>interned</i></ClLinks> in or <ClLinks styled={true} term={"uninterned"}><i>uninterned</i></ClLinks> from the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> being traversed or any <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> that it uses except that the current <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> may be <ClLinks styled={true} term={"uninterned"}><i>uninterned</i></ClLinks> from the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> being traversed.  
 
 
 

@@ -2,35 +2,31 @@
 
 
 
-A *symbol* becomes *accessible* in a *package* if that is its *home package* when it is created, or if it is *imported* into that *package*, or by inheritance via **use-package**. 
+A <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> becomes <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in a <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> if that is its *home package* when it is created, or if it is *imported* into that <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, or by inheritance via <ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks>. 
 
 
 
-If a *symbol* is *accessible* in a *package*, it can be referred to when using the *Lisp reader* without a *package prefix* when that *package* is the *current package*, regardless of whether it is *present* or inherited. 
+If a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in a <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, it can be referred to when using the *Lisp reader* without a *package prefix* when that <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is the *current package*, regardless of whether it is <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> or inherited. 
 
 
 
-*Symbols* from one *package* can be made *accessible* in another *package* in two ways. 
+<ClLinks styled={true} term={"symbol"}><i>Symbols</i></ClLinks> from one <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> can be made <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in another <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> in two ways. 
 
 
 
-– Any individual *symbol* can be added to a *package* by use of **import**. After the call to **import** the *symbol* is *present* in the importing *package*. The status of the *symbol* in the *package* it came from (if any) is unchanged, and the *home package* for this *symbol* is unchanged. Once *imported*, a *symbol* is *present* in the importing *package* and can be removed only by calling **unintern**. 
+– Any individual <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> can be added to a <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> by use of <ClLinks styled={true} term={"import"}><b>import</b></ClLinks>. After the call to <ClLinks styled={true} term={"import"}><b>import</b></ClLinks> the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in the importing <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. The status of the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> in the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> it came from (if any) is unchanged, and the *home package* for this <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is unchanged. Once *imported*, a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in the importing <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> and can be removed only by calling <ClLinks styled={true} term={"unintern"}><b>unintern</b></ClLinks>. 
 
 
 
-A *symbol* is *shadowed* <sub>3</sub> by another *symbol* in some *package* if the first *symbol* would be *accessible* by inheritance if not for the presence of the second *symbol*. See **shadowing-import**. 
+A <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is *shadowed* <sub>3</sub> by another <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> in some <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> if the first <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> would be <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> by inheritance if not for the presence of the second <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. See <ClLinks styled={true} term={"shadowing-import"}><b>shadowing-import</b></ClLinks>. 
 
 
 
-– The second mechanism for making *symbols* from one *package accessible* in another is provided by **use-package**. All of the *external symbols* of the used *package* are inherited 
-
-
+– The second mechanism for making <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> from one *package accessible* in another is provided by <ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks>. All of the *external symbols* of the used <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> are inherited 
 
 
 
 
-
- 
 
 
 
@@ -38,7 +34,11 @@ A *symbol* is *shadowed* <sub>3</sub> by another *symbol* in some *package* if t
 
 
 
-by the using *package*. The *function* **unuse-package** undoes the effects of a previous **use-package**. 
+ 
+
+
+
+by the using <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"unuse-package"}><b>unuse-package</b></ClLinks> undoes the effects of a previous <ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks>. 
 
 
 

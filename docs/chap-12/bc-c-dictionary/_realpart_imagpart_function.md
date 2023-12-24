@@ -1,4 +1,4 @@
-**realpart, imagpart** *Function* 
+**realpart, imagpart** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**realpart** *number → real* 
+<ClLinks styled={true} term={"realpart"}><b>realpart</b></ClLinks> *number → real* 
 
 
 
-**imagpart** *number → real* 
+<ClLinks styled={true} term={"imagpart"}><b>imagpart</b></ClLinks> *number → real* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*number*—a *number* . 
+<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-**realpart** and **imagpart** return the real and imaginary parts of *number* respectively. If *number* is *real*, then **realpart** returns *number* and **imagpart** returns (\* 0 *number*), which has the effect that the imaginary part of a *rational* is 0 and that of a *float* is a floating-point zero of the same format. 
+<ClLinks styled={true} term={"realpart"}><b>realpart</b></ClLinks> and <ClLinks styled={true} term={"imagpart"}><b>imagpart</b></ClLinks> return the real and imaginary parts of <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> respectively. If <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is *real*, then <ClLinks styled={true} term={"realpart"}><b>realpart</b></ClLinks> returns <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> and <ClLinks styled={true} term={"imagpart"}><b>imagpart</b></ClLinks> returns (\* 0 <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>), which has the effect that the imaginary part of a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> is 0 and that of a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> is a floating-point zero of the same format. 
 
 
 
@@ -47,7 +47,7 @@
 
 
 
-Should signal an error of *type* **type-error** if *number* is not a *number* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is not a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -55,7 +55,7 @@ Should signal an error of *type* **type-error** if *number* is not a *number* .
 
 
 
-**complex** 
+<ClLinks styled={true} term={"complex"}><b>complex</b></ClLinks> 
 
 
 

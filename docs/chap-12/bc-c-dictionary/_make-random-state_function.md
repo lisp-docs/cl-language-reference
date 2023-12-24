@@ -1,4 +1,4 @@
-**make-random-state** *Function* 
+**make-random-state** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**make-random-state** &amp;optional *state → new-state* 
+<ClLinks styled={true} term={"make-random-state"}><b>make-random-state</b></ClLinks> &amp;optional *state → new-state* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*state*—a *random state*, or **nil**, or **t**. The default is **nil**. 
+*state*—a *random state*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, or <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Creates a *fresh object* of *type* **random-state** suitable for use as the *value* of **\*random-state\***. 
+Creates a *fresh object* of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"random-state"}><b>random-state</b></ClLinks> suitable for use as the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"random-state"}><b>\*random-state\*</b></ClLinks>. 
 
 
 
-If *state* is a *random state object*, the *new-state* is a *copy*<sub>5</sub> of that *object*. If *state* is **nil**, the *new-state* is a *copy*<sub>5</sub> of the *current random state*. If *state* is **t**, the *new-state* is a *fresh random state object* that has been randomly initialized by some means. 
+If *state* is a *random state object*, the *new-state* is a <ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks><sub>5</sub> of that <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. If *state* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, the *new-state* is a <ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks><sub>5</sub> of the *current random state*. If *state* is <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, the *new-state* is a *fresh random state object* that has been randomly initialized by some means. 
 
 
 
@@ -60,7 +60,7 @@ If *state* is a *random state object*, the *new-state* is a *copy*<sub>5</sub> o
 
 
 
-Should signal an error of *type* **type-error** if *state* is not a *random state*, or **nil**, or **t**. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *state* is not a *random state*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, or <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>. 
 
 
 
@@ -68,7 +68,7 @@ Should signal an error of *type* **type-error** if *state* is not a *random stat
 
 
 
-**random**, **\*random-state\*** 
+<ClLinks styled={true} term={"random"}><b>random</b></ClLinks>, <ClLinks styled={true} term={"random-state"}><b>\*random-state\*</b></ClLinks> 
 
 
 
@@ -88,7 +88,7 @@ Should signal an error of *type* **type-error** if *state* is not a *random stat
 
 
 
-One important use of **make-random-state** is to allow the same series of pseudo-random *numbers* to be generated many times within a single program. 
+One important use of <ClLinks styled={true} term={"make-random-state"}><b>make-random-state</b></ClLinks> is to allow the same series of pseudo-random <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks> to be generated many times within a single program. 
 
 
 

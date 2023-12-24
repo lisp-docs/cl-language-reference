@@ -1,4 +1,4 @@
-**package-use-list** *Function* 
+**package-use-list** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**package-use-list** *package → use-list* 
+<ClLinks styled={true} term={"package-use-list"}><b>package-use-list</b></ClLinks> *package → use-list* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*package*—a *package designator* . 
+<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* . 
 
 
 
-*use-list*—a *list* of *package objects*. 
+*use-list*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *package objects*. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Returns a *list* of other *packages* used by *package*. 
+Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of other <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> used by <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -54,7 +54,7 @@ Returns a *list* of other *packages* used by *package*.
 
 
 
-Should signal an error of *type* **type-error** if *package* is not a *package designator* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is not a *package designator* . 
 
 
 
@@ -62,7 +62,7 @@ Should signal an error of *type* **type-error** if *package* is not a *package d
 
 
 
-**use-package**, **unuse-package** 
+<ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks styled={true} term={"unuse-package"}><b>unuse-package</b></ClLinks> 
 
 
 

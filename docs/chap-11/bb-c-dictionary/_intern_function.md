@@ -1,4 +1,4 @@
-**intern** *Function* 
+**intern** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**intern** *string* &amp;optional *package → symbol, status* 
+<ClLinks styled={true} term={"intern"}><b>intern</b></ClLinks> <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> &amp;optional *package → symbol, status* 
 
 
 
@@ -14,19 +14,19 @@
 
 
 
-*string*—a *string*. 
+<ClLinks styled={true} term={"string"}><i>string</i></ClLinks>—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
 
 
 
-*package*—a *package designator* . The default is the *current package*. 
+<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. 
 
 
 
-*symbol*—a *symbol*. 
+<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*status*—one of :inherited, :external, :internal, or **nil**. 
+*status*—one of :inherited, :external, :internal, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-**intern** enters a *symbol* named *string* into *package*. If a *symbol* whose name is the same as *string* is already *accessible* in *package*, it is returned. If no such *symbol* is *accessible* in *package*, a new *symbol* with the given name is created and entered into *package* as an *internal symbol*, or as an *external symbol* if the *package* is the KEYWORD *package*; *package* becomes the *home package* of the created *symbol*. 
+<ClLinks styled={true} term={"intern"}><b>intern</b></ClLinks> enters a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> named <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> into <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. If a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> whose name is the same as <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> is already <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, it is returned. If no such <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, a new <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> with the given name is created and entered into <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> as an *internal symbol*, or as an *external symbol* if the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is the KEYWORD <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>; <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> becomes the *home package* of the created <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-The first value returned by **intern**, *symbol*, is the *symbol* that was found or created. The meaning of the *secondary value*, *status*, is as follows: 
+The first value returned by <ClLinks styled={true} term={"intern"}><b>intern</b></ClLinks>, <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that was found or created. The meaning of the *secondary value*, *status*, is as follows: 
 
 
 
@@ -46,7 +46,7 @@ The first value returned by **intern**, *symbol*, is the *symbol* that was found
 
 
 
-The *symbol* was found and is *present* in *package* as an *internal symbol*. 
+The <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> was found and is <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> as an *internal symbol*. 
 
 
 
@@ -54,7 +54,7 @@ The *symbol* was found and is *present* in *package* as an *internal symbol*.
 
 
 
-The *symbol* was found and is *present* as an *external symbol*. 
+The <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> was found and is <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> as an *external symbol*. 
 
 
 
@@ -62,23 +62,19 @@ The *symbol* was found and is *present* as an *external symbol*.
 
 
 
-The *symbol* was found and is inherited via **use-package** (which implies that the *symbol* is internal). 
+The <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> was found and is inherited via <ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks> (which implies that the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is internal). 
 
 
 
-**nil** 
+<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
-No pre-existing *symbol* was found, so one was created. 
-
-
+No pre-existing <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> was found, so one was created. 
 
 
 
 
-
- 
 
 
 
@@ -86,7 +82,11 @@ No pre-existing *symbol* was found, so one was created.
 
 
 
-It is *implementation-dependent* whether the *string* that becomes the new *symbol*’s *name* is the given *string* or a copy of it. Once a *string* has been given as the *string argument* to *intern* in this situation where a new *symbol* is created, the consequences are undefined if a subsequent attempt is made to alter that *string*. 
+ 
+
+
+
+It is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that becomes the new <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is the given <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> or a copy of it. Once a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> has been given as the *string argument* to <ClLinks styled={true} term={"intern"}><i>intern</i></ClLinks> in this situation where a new <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is created, the consequences are undefined if a subsequent attempt is made to alter that <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -104,7 +104,7 @@ It is *implementation-dependent* whether the *string* that becomes the new *symb
 
 
 
-**find-symbol**, **read**, **symbol**, **unintern**, Section 2.3.4 (Symbols as Tokens) 
+<ClLinks styled={true} term={"find-symbol"}><b>find-symbol</b></ClLinks>, <ClLinks styled={true} term={"read"}><b>read</b></ClLinks>, <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>, <ClLinks styled={true} term={"unintern"}><b>unintern</b></ClLinks>, Section 2.3.4 (Symbols as Tokens) 
 
 
 
@@ -112,7 +112,7 @@ It is *implementation-dependent* whether the *string* that becomes the new *symb
 
 
 
-**intern** does not need to do any name conflict checking because it never creates a new *symbol* if there is already an *accessible symbol* with the name given. 
+<ClLinks styled={true} term={"intern"}><b>intern</b></ClLinks> does not need to do any name conflict checking because it never creates a new <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> if there is already an *accessible symbol* with the name given. 
 
 
 

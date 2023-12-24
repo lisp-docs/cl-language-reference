@@ -1,4 +1,4 @@
-**warn** *Function* 
+**warn** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**warn** *datum* &amp;rest *arguments →* **nil** 
+<ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> *datum* &amp;rest *arguments →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*datum*, *arguments*—*designators* for a *condition* of default type **simple-warning**. 
+*datum*, <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>—<ClLinks styled={true} term={"designator"}><i>designators</i></ClLinks> for a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of default type <ClLinks styled={true} term={"simple-warning"}><b>simple-warning</b></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-**warn** 
+<ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-*Signals* a *condition* of *type* **warning**. If the *condition* is not *handled*, reports the *condition* to *error output*. 
+<ClLinks styled={true} term={"signal"}><i>Signals</i></ClLinks> a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"warning"}><b>warning</b></ClLinks>. If the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is not *handled*, reports the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> to *error output*. 
 
 
 
@@ -50,7 +50,7 @@ The precise mechanism for warning is as follows:
 
 
 
-While the **warning** *condition* is being signaled, the **muffle-warning** *restart* is established for use by a *handler* . If invoked, this *restart* bypasses further action by **warn**, which in turn causes **warn** to immediately return **nil**. 
+While the <ClLinks styled={true} term={"warning"}><b>warning</b></ClLinks> <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is being signaled, the **muffle-warning** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is established for use by a <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> . If invoked, this <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> bypasses further action by <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks>, which in turn causes <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> to immediately return <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -58,7 +58,7 @@ While the **warning** *condition* is being signaled, the **muffle-warning** *res
 
 
 
-If no handlers for the warning condition are found, or if all such handlers decline, then the *condition* is reported to *error output* by **warn** in an *implementation-dependent* format. 
+If no handlers for the warning condition are found, or if all such handlers decline, then the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is reported to *error output* by <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> in an <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> format. 
 
 
 
@@ -66,7 +66,7 @@ If no handlers for the warning condition are found, or if all such handlers decl
 
 
 
-The value returned by **warn** if it returns is **nil**. 
+The value returned by <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> if it returns is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -115,7 +115,7 @@ Existing handler bindings.
 
 
 
-**\*break-on-signals\***, **\*error-output\***. 
+<ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks>, **\*error-output\***. 
 
 
 
@@ -123,11 +123,11 @@ Existing handler bindings.
 
 
 
-If *datum* is a *condition* and if the *condition* is not of *type* **warning**, or *arguments* is *non-nil*, an error of *type* **type-error** is signaled. 
+If *datum* is a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> and if the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is not of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"warning"}><b>warning</b></ClLinks>, or <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
 
 
 
-If *datum* is a condition type, the result of (apply #’make-condition datum arguments) must be of *type* **warning** or an error of *type* **type-error** is signaled. 
+If *datum* is a condition type, the result of (apply #’make-condition datum arguments) must be of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"warning"}><b>warning</b></ClLinks> or an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
 
 
 
@@ -135,7 +135,7 @@ If *datum* is a condition type, the result of (apply #’make-condition datum ar
 
 
 
-**\*break-on-signals\***, **muffle-warning**, **signal** 
+<ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks>, **muffle-warning**, <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> 
 
 
 

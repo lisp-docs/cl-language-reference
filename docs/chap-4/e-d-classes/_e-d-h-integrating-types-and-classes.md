@@ -2,11 +2,11 @@
 
 
 
-The object system maps the space of *classes* into the space of *types*. Every *class* that has a proper name has a corresponding *type* with the same *name*. 
+The object system maps the space of *classes* into the space of <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>. Every <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> that has a proper name has a corresponding <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> with the same <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>. 
 
 
 
-The proper name of every *class* is a valid *type specifier* . In addition, every *class object* is a valid *type specifier* . Thus the expression (typep *object class*) evaluates to *true* if the *class* of *object* is *class* itself or a *subclass* of *class*. The evaluation of the expression (subtypep class1 class2) returns the values *true* and *true* if class1 is a subclass of class2 or if they are the same *class*; otherwise it returns the values *false* and *true*. If *I* is an *instance* of some *class C* named *S* and *C*  
+The proper name of every <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> is a valid *type specifier* . In addition, every *class object* is a valid *type specifier* . Thus the expression (typep *object class*) evaluates to <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> of <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> itself or a <ClLinks styled={true} term={"subclass"}><i>subclass</i></ClLinks> of <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. The evaluation of the expression (subtypep class1 class2) returns the values <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> and <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if class1 is a subclass of class2 or if they are the same <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>; otherwise it returns the values <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> and <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. If *I* is an <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> of some *class C* named *S* and *C*  
 
 
 
@@ -14,47 +14,47 @@ The proper name of every *class* is a valid *type specifier* . In addition, ever
 
 
 
-is an *instance* of **standard-class**, the evaluation of the expression (type-of *I*) returns *S* if *S* is the *proper name* of *C*; otherwise, it returns *C*. 
+is an <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> of <ClLinks styled={true} term={"standard-class"}><b>standard-class</b></ClLinks>, the evaluation of the expression (type-of *I*) returns *S* if *S* is the *proper name* of *C*; otherwise, it returns *C*. 
 
 
 
-Because the names of *classes* and *class objects* are *type specifiers*, they may be used in the special form **the** and in type declarations. 
+Because the names of *classes* and *class objects* are *type specifiers*, they may be used in the special form <ClLinks styled={true} term={"the"}><b>the</b></ClLinks> and in type declarations. 
 
 
 
-Many but not all of the predefined *type specifiers* have a corresponding *class* with the same proper name as the *type*. These type specifiers are listed in Figure 4–8. For example, the *type* **array** has a corresponding *class* named **array**. No *type specifier* that is a list, such as (vector double-float 100), has a corresponding *class*. The *operator* **deftype** does not create any *classes*. 
+Many but not all of the predefined *type specifiers* have a corresponding <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> with the same proper name as the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>. These type specifiers are listed in Figure 4–8. For example, the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"array"}><b>array</b></ClLinks> has a corresponding <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> named <ClLinks styled={true} term={"array"}><b>array</b></ClLinks>. No *type specifier* that is a list, such as (vector double-float 100), has a corresponding <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. The <ClLinks styled={true} term={"operator"}><i>operator</i></ClLinks> <ClLinks styled={true} term={"deftype"}><b>deftype</b></ClLinks> does not create any *classes*. 
 
 
 
-Each *class* that corresponds to a predefined *type specifier* can be implemented in one of three ways, at the discretion of each implementation. It can be a *standard class*, a *structure class*, or a *system class*. 
+Each <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> that corresponds to a predefined *type specifier* can be implemented in one of three ways, at the discretion of each implementation. It can be a *standard class*, a *structure class*, or a *system class*. 
 
 
 
-A *built-in class* is one whose *generalized instances* have restricted capabilities or special representations. Attempting to use **defclass** to define *subclasses* of a **built-in-class** signals an error. Calling **make-instance** to create a *generalized instance* of a *built-in class* signals an error. Calling **slot-value** on a *generalized instance* of a *built-in class* signals an error. Redefining a *built-in class* or using **change-class** to change the *class* of an *object* to or from a *built-in class* signals an error. However, *built-in classes* can be used as *parameter specializers* in *methods*. 
+A *built-in class* is one whose *generalized instances* have restricted capabilities or special representations. Attempting to use <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks> to define *subclasses* of a <ClLinks styled={true} term={"built-in-class"}><b>built-in-class</b></ClLinks> signals an error. Calling <ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks> to create a *generalized instance* of a *built-in class* signals an error. Calling <ClLinks styled={true} term={"slot-value"}><b>slot-value</b></ClLinks> on a *generalized instance* of a *built-in class* signals an error. Redefining a *built-in class* or using <ClLinks styled={true} term={"change-class"}><b>change-class</b></ClLinks> to change the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> of an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> to or from a *built-in class* signals an error. However, *built-in classes* can be used as *parameter specializers* in <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks>. 
 
 
 
-It is possible to determine whether a *class* is a *built-in class* by checking the *metaclass*. A *standard class* is an *instance* of the *class* **standard-class**, a *built-in class* is an *instance* of the *class* **built-in-class**, and a *structure class* is an *instance* of the *class* **structure-class**. 
+It is possible to determine whether a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> is a *built-in class* by checking the <ClLinks styled={true} term={"metaclass"}><i>metaclass</i></ClLinks>. A *standard class* is an <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"standard-class"}><b>standard-class</b></ClLinks>, a *built-in class* is an <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"built-in-class"}><b>built-in-class</b></ClLinks>, and a *structure class* is an <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"structure-class"}><b>structure-class</b></ClLinks>. 
 
 
 
-Each *structure type* created by **defstruct** without using the :type option has a corresponding *class*. This *class* is a *generalized instance* of the *class* **structure-class**. The :include option of **defstruct** creates a direct *subclass* of the *class* that corresponds to the included *structure type*. 
+Each *structure type* created by <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> without using the :type option has a corresponding <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. This <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> is a *generalized instance* of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"structure-class"}><b>structure-class</b></ClLinks>. The :include option of <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> creates a direct <ClLinks styled={true} term={"subclass"}><i>subclass</i></ClLinks> of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> that corresponds to the included *structure type*. 
 
 
 
-It is *implementation-dependent* whether *slots* are involved in the operation of *functions* defined in this specification on *instances* of *classes* defined in this specification, except when *slots* are explicitly defined by this specification. 
+It is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> are involved in the operation of <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> defined in this specification on <ClLinks styled={true} term={"instance"}><i>instances</i></ClLinks> of *classes* defined in this specification, except when <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> are explicitly defined by this specification. 
 
 
 
-If in a particular *implementation* a *class* defined in this specification has *slots* that are not defined by this specfication, the names of these *slots* must not be *external symbols* of *packages* defined in this specification nor otherwise *accessible* in the CL-USER *package*. 
+If in a particular <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> defined in this specification has <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> that are not defined by this specfication, the names of these <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> must not be *external symbols* of <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> defined in this specification nor otherwise <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in the CL-USER <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
 
 
 
-The purpose of specifying that many of the standard *type specifiers* have a corresponding *class* is to enable users to write *methods* that discriminate on these *types*. *Method* selection requires that a *class precedence list* can be determined for each *class*. 
+The purpose of specifying that many of the standard *type specifiers* have a corresponding <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> is to enable users to write <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> that discriminate on these <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>. <ClLinks styled={true} term={"method"}><i>Method</i></ClLinks> selection requires that a *class precedence list* can be determined for each <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. 
 
 
 
-The hierarchical relationships among the *type specifiers* are mirrored by relationships among the *classes* corresponding to those *types*. 
+The hierarchical relationships among the *type specifiers* are mirrored by relationships among the *classes* corresponding to those <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>. 
 
 
 
@@ -82,7 +82,7 @@ The *class precedence list* information specified in the entries for each of the
 
 
 
-Individual implementations may be extended to define other type specifiers to have a corresponding *class*. Individual implementations may be extended to add other *subclass* relationships and to add other *elements* to the *class precedence lists* as long as they do not violate the type relationships and disjointness requirements specified by this standard. A standard *class* defined with no direct *superclasses* is guaranteed to be disjoint from all of the *classes* in the table, except for the class named **t**.  
+Individual implementations may be extended to define other type specifiers to have a corresponding <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. Individual implementations may be extended to add other <ClLinks styled={true} term={"subclass"}><i>subclass</i></ClLinks> relationships and to add other <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> to the *class precedence lists* as long as they do not violate the type relationships and disjointness requirements specified by this standard. A standard <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> defined with no direct *superclasses* is guaranteed to be disjoint from all of the *classes* in the table, except for the class named <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>.  
 
 
 

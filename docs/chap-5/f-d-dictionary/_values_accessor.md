@@ -1,4 +1,4 @@
-**values** *Accessor* 
+**values** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**values** &amp;rest *object ! \{object\}*\* 
+<ClLinks styled={true} term={"values"}><b>values</b></ClLinks> &amp;rest *object ! \{object\}*\* 
 
 
 
-**(setf (values** &amp;rest *place***)** *new-values***)** 
+**(setf (values** &amp;rest <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>**)** *new-values***)** 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*place*—a *place*. 
+<ClLinks styled={true} term={"place"}><i>place</i></ClLinks>—a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. 
 
 
 
-*new-value*—an *object*. 
+*new-value*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-**values** returns the *objects* as *multiple values*<sub>2</sub>. 
+<ClLinks styled={true} term={"values"}><b>values</b></ClLinks> returns the <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> as *multiple values*<sub>2</sub>. 
 
 
 
-**setf** of **values** is used to store the *multiple values*<sub>2</sub> *new-values* into the *places*. See Section 5.1.2.3 (VALUES Forms as Places). 
+<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"values"}><b>values</b></ClLinks> is used to store the *multiple values*<sub>2</sub> *new-values* into the <ClLinks styled={true} term={"place"}><i>places</i></ClLinks>. See Section 5.1.2.3 (VALUES Forms as Places). 
 
 
 
@@ -71,7 +71,7 @@ This works because **values** returns exactly one value for each of *args*; as f
 
 
 
-**values-list**, **multiple-value-bind**, **multiple-values-limit**, Section 3.1 (Evaluation) 
+<ClLinks styled={true} term={"values-list"}><b>values-list</b></ClLinks>, <ClLinks styled={true} term={"multiple-value-bind"}><b>multiple-value-bind</b></ClLinks>, <ClLinks styled={true} term={"multiple-values-limit"}><b>multiple-values-limit</b></ClLinks>, Section 3.1 (Evaluation) 
 
 
 
@@ -79,7 +79,7 @@ This works because **values** returns exactly one value for each of *args*; as f
 
 
 
-Since **values** is a *function*, not a *macro* or *special form*, it receives as *arguments* only the *primary values* of its *argument forms*. 
+Since <ClLinks styled={true} term={"values"}><b>values</b></ClLinks> is a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, not a <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> or *special form*, it receives as <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> only the *primary values* of its *argument forms*. 
 
 
 

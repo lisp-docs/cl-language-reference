@@ -6,7 +6,7 @@
 
 
 
-**cons**, **list**, **sequence**, **t** 
+<ClLinks styled={true} term={"cons"}><b>cons</b></ClLinks>, <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>, <ClLinks styled={true} term={"sequence"}><b>sequence</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A *cons* is a compound *object* having two components, called the *car* and *cdr* . These form a *dotted pair* . Each component can be any *object*. 
+A <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> is a compound <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> having two components, called the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> and <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> . These form a *dotted pair* . Each component can be any <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -38,11 +38,11 @@ Specializing.
 
 
 
-*car-typespec*—a *type specifier* , or the *symbol* **\***. The default is the *symbol* **\***. 
+*car-typespec*—a *type specifier* , or the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. The default is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 
-*cdr-typespec*—a *type specifier* , or the *symbol* **\***. The default is the *symbol* **\***. 
+*cdr-typespec*—a *type specifier* , or the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. The default is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 
@@ -50,7 +50,7 @@ Specializing.
 
 
 
-This denotes the set of *conses* whose *car* is constrained to be of *type car-typespec* and whose *cdr* is constrained to be of *type cdr-typespec*. (If either *car-typespec* or *cdr-typespec* is **\***, it is as if the *type* **t** had been denoted.) 
+This denotes the set of *conses* whose <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> is constrained to be of *type car-typespec* and whose <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> is constrained to be of *type cdr-typespec*. (If either *car-typespec* or *cdr-typespec* is **\***, it is as if the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> had been denoted.) 
 
 
 

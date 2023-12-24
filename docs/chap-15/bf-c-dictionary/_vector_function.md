@@ -1,4 +1,4 @@
-**vector** *Function* 
+**vector** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**vector** &amp;rest *objects → vector* 
+<ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks> &amp;rest *objects → vector* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*vector*—a *vector* of *type* (vector t \*). 
+<ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>—a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> (vector t \*). 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Creates a *fresh simple general vector* whose size corresponds to the number of *objects*. The *vector* is initialized to contain the *objects*. 
+Creates a *fresh simple general vector* whose size corresponds to the number of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>. The <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> is initialized to contain the <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>. 
 
 
 
@@ -46,7 +46,7 @@ Creates a *fresh simple general vector* whose size corresponds to the number of 
 
 
 
-**make-array** 
+<ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks> 
 
 
 
@@ -54,7 +54,7 @@ Creates a *fresh simple general vector* whose size corresponds to the number of 
 
 
 
-**vector** is analogous to **list**. 
+<ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks> is analogous to <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>. 
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-A *tree* is a binary recursive data structure made up of *conses* and *atoms*: the *conses* are themselves also *trees* (sometimes called “subtrees” or “branches”), and the *atoms* are terminal nodes (sometimes called *leaves*). Typically, the *leaves* represent data while the branches establish some relationship among that data. 
+A <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> is a binary recursive data structure made up of *conses* and <ClLinks styled={true} term={"atom"}><i>atoms</i></ClLinks>: the *conses* are themselves also <ClLinks styled={true} term={"tree"}><i>trees</i></ClLinks> (sometimes called “subtrees” or “branches”), and the <ClLinks styled={true} term={"atom"}><i>atoms</i></ClLinks> are terminal nodes (sometimes called *leaves*). Typically, the *leaves* represent data while the branches establish some relationship among that data. 
 
 
 

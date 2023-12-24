@@ -6,7 +6,7 @@
 
 
 
-**parse-error**, **error**, **serious-condition**, **condition**, **t** 
+<ClLinks styled={true} term={"parse-error"}><b>parse-error</b></ClLinks>, <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"serious-condition"}><b>serious-condition</b></ClLinks>, <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The *type* **parse-error** consists of error conditions that are related to parsing. 
+The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"parse-error"}><b>parse-error</b></ClLinks> consists of error conditions that are related to parsing. 
 
 
 
@@ -22,7 +22,7 @@ The *type* **parse-error** consists of error conditions that are related to pars
 
 
 
-**parse-namestring**, **reader-error** 
+<ClLinks styled={true} term={"parse-namestring"}><b>parse-namestring</b></ClLinks>, <ClLinks styled={true} term={"reader-error"}><b>reader-error</b></ClLinks> 
 
 
 

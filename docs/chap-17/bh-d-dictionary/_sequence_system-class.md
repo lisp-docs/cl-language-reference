@@ -6,7 +6,7 @@
 
 
 
-**sequence**, **t** 
+<ClLinks styled={true} term={"sequence"}><b>sequence</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*Sequences* are ordered collections of *objects*, called the *elements* of the *sequence*. 
+*Sequences* are ordered collections of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>, called the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the *sequence*. 
 
 
 
-The *types* **vector** and the *type* **list** are *disjoint subtypes* of *type* **sequence**, but are not necessarily an *exhaustive partition* of *sequence*. 
+The <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> <ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks> and the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"list"}><b>list</b></ClLinks> are *disjoint subtypes* of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"sequence"}><b>sequence</b></ClLinks>, but are not necessarily an *exhaustive partition* of *sequence*. 
 
 
 
-When viewing a *vector* as a *sequence*, only the *active elements* of that *vector* are considered *elements* of the *sequence*; that is, *sequence* operations respect the *fill pointer* when given *sequences* represented as *vectors*. 
+When viewing a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> as a *sequence*, only the *active elements* of that <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> are considered <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the *sequence*; that is, *sequence* operations respect the *fill pointer* when given *sequences* represented as <ClLinks styled={true} term={"vector"}><i>vectors</i></ClLinks>. 
 
 
 

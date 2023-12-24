@@ -6,7 +6,7 @@
 
 
 
-**make-instances-obsolete** *class → class* 
+<ClLinks styled={true} term={"make-instances-obsolete"}><b>make-instances-obsolete</b></ClLinks> *class → class* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-**make-instances-obsolete** (*class* **standard-class**) 
+<ClLinks styled={true} term={"make-instances-obsolete"}><b>make-instances-obsolete</b></ClLinks> (<ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"standard-class"}><b>standard-class</b></ClLinks>) 
 
 
 
-**make-instances-obsolete** (*class* **symbol**) 
+<ClLinks styled={true} term={"make-instances-obsolete"}><b>make-instances-obsolete</b></ClLinks> (<ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>) 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*class*—a *class designator* . 
+<ClLinks styled={true} term={"class"}><i>class</i></ClLinks>—a *class designator* . 
 
 
 
@@ -34,15 +34,15 @@
 
 
 
-The *function* **make-instances-obsolete** has the effect of initiating the process of updating the instances of the *class*. During updating, the generic function **update-instance-for-redefined-class** will be invoked. 
+The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"make-instances-obsolete"}><b>make-instances-obsolete</b></ClLinks> has the effect of initiating the process of updating the instances of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. During updating, the generic function **update-instance-for-redefined-class** will be invoked. 
 
 
 
-The generic function **make-instances-obsolete** is invoked automatically by the system when **defclass** has been used to redefine an existing standard class and the set of local *slots accessible* in an instance is changed or the order of *slots* in storage is changed. It can also be explicitly invoked by the user. 
+The generic function <ClLinks styled={true} term={"make-instances-obsolete"}><b>make-instances-obsolete</b></ClLinks> is invoked automatically by the system when <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks> has been used to redefine an existing standard class and the set of local *slots accessible* in an instance is changed or the order of <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> in storage is changed. It can also be explicitly invoked by the user. 
 
 
 
-If the second of the above *methods* is selected, that *method* invokes **make-instances-obsolete** on (find-class *class*). 
+If the second of the above <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> is selected, that <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> invokes <ClLinks styled={true} term={"make-instances-obsolete"}><b>make-instances-obsolete</b></ClLinks> on (find-class <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>). 
 
 
 

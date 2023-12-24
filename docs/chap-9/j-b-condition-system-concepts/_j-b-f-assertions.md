@@ -2,7 +2,7 @@
 
 
 
-Conditional signaling of *conditions* based on such things as key match, form evaluation, and *type* are handled by assertion *operators*. Figure 9–7 shows *operators* relating to assertions. 
+Conditional signaling of <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> based on such things as key match, form evaluation, and <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> are handled by assertion <ClLinks styled={true} term={"operator"}><i>operators</i></ClLinks>. Figure 9–7 shows <ClLinks styled={true} term={"operator"}><i>operators</i></ClLinks> relating to assertions. 
 
 
 

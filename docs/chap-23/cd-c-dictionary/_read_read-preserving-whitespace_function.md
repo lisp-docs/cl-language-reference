@@ -1,4 +1,4 @@
-**read, read-preserving-whitespace** *Function* 
+**read, read-preserving-whitespace** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**read** &amp;optional *input-stream eof-error-p eof-value recursive-p → object* 
+<ClLinks styled={true} term={"read"}><b>read</b></ClLinks> &amp;optional *input-stream eof-error-p eof-value recursive-p → object* 
 
 
 
-**read-preserving-whitespace** &amp;optional *input-stream eof-error-p* 
+<ClLinks styled={true} term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> &amp;optional *input-stream eof-error-p* 
 
 
 
@@ -30,19 +30,19 @@
 
 
 
-*eof-error-p*—a *generalized boolean*. The default is *true*. 
+*eof-error-p*—a *generalized boolean*. The default is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 
 
 
 
-*eof-value*—an *object*. The default is **nil**. 
+*eof-value*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*recursive-p*—a *generalized boolean*. The default is *false*. 
+*recursive-p*—a *generalized boolean*. The default is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
-*object*—an *object* (parsed by the *Lisp reader* ) or the *eof-value*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> (parsed by the *Lisp reader* ) or the *eof-value*. 
 
 
 
@@ -50,11 +50,11 @@
 
 
 
-**read** parses the printed representation of an *object* from *input-stream* and builds such an *object*. 
+<ClLinks styled={true} term={"read"}><b>read</b></ClLinks> parses the printed representation of an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> from *input-stream* and builds such an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-**read-preserving-whitespace** is like **read** but preserves any *whitespace*<sub>2</sub> *character* that delimits the printed representation of the *object*. **read-preserving-whitespace** is exactly like **read** when the *recursive-p argument* to **read-preserving-whitespace** is *true*. 
+<ClLinks styled={true} term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> is like <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> but preserves any <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> that delimits the printed representation of the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. <ClLinks styled={true} term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> is exactly like <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> when the *recursive-p argument* to <ClLinks styled={true} term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 
 
 
 
@@ -74,19 +74,19 @@
 
 
 
-When **\*read-suppress\*** is *false*, **read** throws away the delimiting *character* required by certain printed representations if it is a *whitespace*<sub>2</sub> *character* ; but **read** preserves the character (using **unread-char**) if it is syntactically meaningful, because it could be the start of the next expression. 
+When <ClLinks styled={true} term={"read-suppress"}><b>\*read-suppress\*</b></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> throws away the delimiting <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> required by certain printed representations if it is a <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> ; but <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> preserves the character (using <ClLinks styled={true} term={"unread-char"}><b>unread-char</b></ClLinks>) if it is syntactically meaningful, because it could be the start of the next expression. 
 
 
 
-If a file ends in a *symbol* or a *number* immediately followed by an *end of file*<sub>1</sub>, **read** reads the *symbol* or *number* successfully; when called again, it sees the *end of file*<sub>1</sub> and only then acts according to *eof-error-p*. If a file contains ignorable text at the end, such as blank lines and comments, **read** does not consider it to end in the middle of an *object*. 
+If a file ends in a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> immediately followed by an *end of file*<sub>1</sub>, <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> reads the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> successfully; when called again, it sees the *end of file*<sub>1</sub> and only then acts according to *eof-error-p*. If a file contains ignorable text at the end, such as blank lines and comments, <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> does not consider it to end in the middle of an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-If *recursive-p* is *true*, the call to **read** is expected to be made from within some function that itself has been called from **read** or from a similar input function, rather than from the top level. 
+If *recursive-p* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the call to <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> is expected to be made from within some function that itself has been called from <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> or from a similar input function, rather than from the top level. 
 
 
 
-Both functions return the *object* read from *input-stream*. *Eof-value* is returned if *eof-error-p* is *false* and end of file is reached before the beginning of an *object*. 
+Both functions return the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> read from *input-stream*. *Eof-value* is returned if *eof-error-p* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> and end of file is reached before the beginning of an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -130,7 +130,7 @@ Both functions return the *object* read from *input-stream*. *Eof-value* is retu
 
 
 
-**\*standard-input\***, **\*terminal-io\***, **\*readtable\***, **\*read-default-float-format\***, **\*read-base\***, **\*read-suppress\***, **\*package\***, **\*read-eval\***. 
+**\*standard-input\***, <ClLinks styled={true} term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>, <ClLinks styled={true} term={"readtable"}><b>\*readtable\*</b></ClLinks>, <ClLinks styled={true} term={"read-default-float-format"}><b>\*read-default-float-format\*</b></ClLinks>, **\*read-base\***, <ClLinks styled={true} term={"read-suppress"}><b>\*read-suppress\*</b></ClLinks>, <ClLinks styled={true} term={"package"}><b>\*package\*</b></ClLinks>, **\*read-eval\***. 
 
 
 
@@ -138,11 +138,11 @@ Both functions return the *object* read from *input-stream*. *Eof-value* is retu
 
 
 
-**read** signals an error of *type* **end-of-file**, regardless of *eof-error-p*, if the file ends in the middle of an *object* representation. For example, if a file does not contain enough right parentheses to balance the left parentheses in it, **read** signals an error. This is detected when **read** or **read-preserving-whitespace** is called with *recursive-p* and *eof-error-p non-nil*, and end-of-file is reached before the beginning of an *object*. 
+<ClLinks styled={true} term={"read"}><b>read</b></ClLinks> signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"end-of-file"}><b>end-of-file</b></ClLinks>, regardless of *eof-error-p*, if the file ends in the middle of an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> representation. For example, if a file does not contain enough right parentheses to balance the left parentheses in it, <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> signals an error. This is detected when <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> or <ClLinks styled={true} term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> is called with *recursive-p* and *eof-error-p non-nil*, and end-of-file is reached before the beginning of an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-If *eof-error-p* is *true*, an error of *type* **end-of-file** is signaled at the end of file. 
+If *eof-error-p* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled at the end of file. 
 
 
 
@@ -150,7 +150,7 @@ If *eof-error-p* is *true*, an error of *type* **end-of-file** is signaled at th
 
 
 
-**peek-char**, **read-char**, **unread-char**, **read-from-string**, **read-delimited-list**, **parse-integer**, Chapter 2 (Syntax), Section 23.1 (Reader Concepts) 
+<ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks>, <ClLinks styled={true} term={"read-char"}><b>read-char</b></ClLinks>, <ClLinks styled={true} term={"unread-char"}><b>unread-char</b></ClLinks>, <ClLinks styled={true} term={"read-from-string"}><b>read-from-string</b></ClLinks>, <ClLinks styled={true} term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks>, <ClLinks styled={true} term={"parse-integer"}><b>parse-integer</b></ClLinks>, Chapter 2 (Syntax), Section 23.1 (Reader Concepts) 
 
 
 

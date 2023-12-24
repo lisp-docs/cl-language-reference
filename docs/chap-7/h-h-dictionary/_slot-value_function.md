@@ -1,4 +1,4 @@
-**slot-value** *Function* 
+**slot-value** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**slot-value** *object slot-name → value* 
+<ClLinks styled={true} term={"slot-value"}><b>slot-value</b></ClLinks> *object slot-name → value* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*name*—a *symbol*. 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*value*—an *object*. 
+<ClLinks styled={true} term={"value"}><i>value</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-The *function* **slot-value** returns the *value* of the *slot* named *slot-name* in the *object*. If there is no *slot* named *slot-name*, **slot-missing** is called. If the *slot* is unbound, **slot-unbound** is called. 
+The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"slot-value"}><b>slot-value</b></ClLinks> returns the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> named *slot-name* in the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. If there is no <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> named *slot-name*, <ClLinks styled={true} term={"slot-missing"}><b>slot-missing</b></ClLinks> is called. If the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> is unbound, <ClLinks styled={true} term={"slot-unbound"}><b>slot-unbound</b></ClLinks> is called. 
 
 
 
-The macro **setf** can be used with **slot-value** to change the value of a *slot*. 
+The macro <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> can be used with <ClLinks styled={true} term={"slot-value"}><b>slot-value</b></ClLinks> to change the value of a <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 
 
 
 
@@ -66,15 +66,15 @@ The macro **setf** can be used with **slot-value** to change the value of a *slo
 
 
 
-If an attempt is made to read a *slot* and no *slot* of the name *slot-name* exists in the *object*, **slot-missing** is called as follows: 
+If an attempt is made to read a <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> and no <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> of the name *slot-name* exists in the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>, <ClLinks styled={true} term={"slot-missing"}><b>slot-missing</b></ClLinks> is called as follows: 
 
 
 
-(slot-missing (class-of *instance*) 
+(slot-missing (class-of <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>) 
 
 
 
-*instance* 
+<ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> 
 
 
 
@@ -86,19 +86,19 @@ If an attempt is made to read a *slot* and no *slot* of the name *slot-name* exi
 
 
 
-(If **slot-missing** is invoked, its *primary value* is returned by **slot-value**.) 
+(If <ClLinks styled={true} term={"slot-missing"}><b>slot-missing</b></ClLinks> is invoked, its *primary value* is returned by <ClLinks styled={true} term={"slot-value"}><b>slot-value</b></ClLinks>.) 
 
 
 
-If an attempt is made to write a *slot* and no *slot* of the name *slot-name* exists in the *object*, **slot-missing** is called as follows: 
+If an attempt is made to write a <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> and no <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> of the name *slot-name* exists in the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>, <ClLinks styled={true} term={"slot-missing"}><b>slot-missing</b></ClLinks> is called as follows: 
 
 
 
-(slot-missing (class-of *instance*) 
+(slot-missing (class-of <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>) 
 
 
 
-*instance* 
+<ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> 
 
 
 
@@ -114,11 +114,11 @@ If an attempt is made to write a *slot* and no *slot* of the name *slot-name* ex
 
 
 
-(If **slot-missing** returns in this case, any *values* are ignored.) 
+(If <ClLinks styled={true} term={"slot-missing"}><b>slot-missing</b></ClLinks> returns in this case, any <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> are ignored.) 
 
 
 
-The specific behavior depends on *object*’s *metaclass*. An error is never signaled if *object* has *metaclass* **standard-class**. An error is always signaled if *object* has *metaclass* **built-in-class**. The consequences are unspecified if *object* has any other *metaclass*–an error might or might not be signaled in this situation. Note in particular that the behavior for *conditions* and *structures* is not specified. 
+The specific behavior depends on <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>’s <ClLinks styled={true} term={"metaclass"}><i>metaclass</i></ClLinks>. An error is never signaled if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> has <ClLinks styled={true} term={"metaclass"}><i>metaclass</i></ClLinks> <ClLinks styled={true} term={"standard-class"}><b>standard-class</b></ClLinks>. An error is always signaled if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> has <ClLinks styled={true} term={"metaclass"}><i>metaclass</i></ClLinks> <ClLinks styled={true} term={"built-in-class"}><b>built-in-class</b></ClLinks>. The consequences are unspecified if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> has any other <ClLinks styled={true} term={"metaclass"}><i>metaclass</i></ClLinks>–an error might or might not be signaled in this situation. Note in particular that the behavior for <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> and <ClLinks styled={true} term={"structure"}><i>structures</i></ClLinks> is not specified. 
 
 
 
@@ -126,7 +126,7 @@ The specific behavior depends on *object*’s *metaclass*. An error is never sig
 
 
 
-**slot-missing**, **slot-unbound**, **with-slots** 
+<ClLinks styled={true} term={"slot-missing"}><b>slot-missing</b></ClLinks>, <ClLinks styled={true} term={"slot-unbound"}><b>slot-unbound</b></ClLinks>, <ClLinks styled={true} term={"with-slots"}><b>with-slots</b></ClLinks> 
 
 
 
@@ -134,11 +134,11 @@ The specific behavior depends on *object*’s *metaclass*. An error is never sig
 
 
 
-Although no *implementation* is required to do so, implementors are strongly encouraged to implement the *function* **slot-value** using the *function* slot-value-using-class described in the *Metaobject Protocol*. 
+Although no <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> is required to do so, implementors are strongly encouraged to implement the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"slot-value"}><b>slot-value</b></ClLinks> using the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> slot-value-using-class described in the *Metaobject Protocol*. 
 
 
 
-Implementations may optimize **slot-value** by compiling it inline. 
+Implementations may optimize <ClLinks styled={true} term={"slot-value"}><b>slot-value</b></ClLinks> by compiling it inline. 
 
 
 

@@ -1,4 +1,4 @@
-**aref** *Accessor* 
+**aref** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,10 +6,11 @@
 
 
 
-**aref** *array* &amp;rest *subscripts → element* 
+<ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks> <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → element* 
 
 
 
+<!-- **(setf (aref** <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts***)** *new-element<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks>  -->
 **(setf (aref** *array* &amp;rest *subscripts***)** *new-element***)** 
 
 
@@ -18,15 +19,15 @@
 
 
 
-*array*—an *array*. 
+<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
-*subscripts*—a *list* of *valid array indices* for the *array*. 
+*subscripts*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *valid array indices* for the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
-*element*, *new-element*—an *object*. 
+<ClLinks styled={true} term={"element"}><i>element</i></ClLinks>, *new-element*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -34,11 +35,11 @@
 
 
 
-*Accesses* the *array element* specified by the *subscripts*. If no *subscripts* are supplied and *array* is zero rank, **aref** *accesses* the sole element of *array*. 
+*Accesses* the *array element* specified by the *subscripts*. If no *subscripts* are supplied and <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is zero rank, <ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks> *accesses* the sole element of <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
-**aref** ignores *fill pointers*. It is permissible to use **aref** to *access* any *array element*, whether *active* or not. 
+<ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks> ignores *fill pointers*. It is permissible to use <ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks> to <ClLinks styled={true} term={"access"}><i>access</i></ClLinks> any *array element*, whether <ClLinks styled={true} term={"active"}><i>active</i></ClLinks> or not. 
 
 
 
@@ -67,7 +68,7 @@ If the variable foo names a 3-by-5 array, then the first index could be 0, 1, or
 
 
 
-**bit**, **char**, **elt**, **row-major-aref**, **svref**, Section 3.2.1 (Compiler Terminology) 
+<ClLinks styled={true} term={"bit"}><b>bit</b></ClLinks>, <ClLinks styled={true} term={"char"}><b>char</b></ClLinks>, <ClLinks styled={true} term={"elt"}><b>elt</b></ClLinks>, <ClLinks styled={true} term={"row-major-aref"}><b>row-major-aref</b></ClLinks>, <ClLinks styled={true} term={"svref"}><b>svref</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
 
 
 

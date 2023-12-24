@@ -1,4 +1,4 @@
-**/, //, ///** *Variable* 
+**/, //, ///** <ClLinks styled={true} term={"variable"}><i>Variable</i></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@ a *proper list*.
 
 
 
-*implementation-dependent*. 
+<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -22,15 +22,15 @@ a *proper list*.
 
 
 
-The *variables* **/**, **//**, and **///** are maintained by the *Lisp read-eval-print loop* to save the values of results that were printed at the end of the loop. 
+The <ClLinks styled={true} term={"variable"}><i>variables</i></ClLinks> <ClLinks styled={true} term={"/"}><b>/</b></ClLinks>, <ClLinks styled={true} term={"//"}><b>//</b></ClLinks>, and <ClLinks styled={true} term={"///"}><b>///</b></ClLinks> are maintained by the *Lisp read-eval-print loop* to save the values of results that were printed at the end of the loop. 
 
 
 
-The *value* of **/** is a *list* of the most recent *values* that were printed, the *value* of **//** is the previous value of **/**, and the *value* of **///** is the previous value of **//**. 
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"/"}><b>/</b></ClLinks> is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the most recent <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> that were printed, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"//"}><b>//</b></ClLinks> is the previous value of <ClLinks styled={true} term={"/"}><b>/</b></ClLinks>, and the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"///"}><b>///</b></ClLinks> is the previous value of <ClLinks styled={true} term={"//"}><b>//</b></ClLinks>. 
 
 
 
-The *values* of **/**, **//**, and **///** are updated immediately prior to printing the *return value* of a top-level *form* by the *Lisp read-eval-print loop*. If the *evaluation* of such a *form* is aborted prior to its normal return, the values of **/**, **//**, and **///** are not updated. 
+The <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of <ClLinks styled={true} term={"/"}><b>/</b></ClLinks>, <ClLinks styled={true} term={"//"}><b>//</b></ClLinks>, and <ClLinks styled={true} term={"///"}><b>///</b></ClLinks> are updated immediately prior to printing the *return value* of a top-level <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> by the *Lisp read-eval-print loop*. If the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of such a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is aborted prior to its normal return, the values of <ClLinks styled={true} term={"/"}><b>/</b></ClLinks>, <ClLinks styled={true} term={"//"}><b>//</b></ClLinks>, and <ClLinks styled={true} term={"///"}><b>///</b></ClLinks> are not updated. 
 
 
 
@@ -53,7 +53,7 @@ The *values* of **/**, **//**, and **///** are updated immediately prior to prin
 
 
 
-**-** (*variable*), **+** (*variable*), **\*** (*variable*), Section 25.1.1 (Top level loop) 
+<ClLinks styled={true} term={"-"}><b>-</b></ClLinks> (<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>), <ClLinks styled={true} term={"+"}><b>+</b></ClLinks> (<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>), **\*** (<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>), Section 25.1.1 (Top level loop) 
 
 
 
@@ -89,7 +89,7 @@ The *values* of **/**, **//**, and **///** are updated immediately prior to prin
 
 
 
-*description*—a *string* or **nil**. 
+*description*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -101,15 +101,15 @@ The *values* of **/**, **//**, and **///** are updated immediately prior to prin
 
 
 
-**lisp-implementation-type** returns a *string* that identifies the generic name of the particular Common Lisp implementation. 
+**lisp-implementation-type** returns a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that identifies the generic name of the particular Common Lisp implementation. 
 
 
 
-**lisp-implementation-version** returns a *string* that identifies the version of the particular Common Lisp implementation. 
+**lisp-implementation-version** returns a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that identifies the version of the particular Common Lisp implementation. 
 
 
 
-If no appropriate and relevant result can be produced, **nil** is returned instead of a *string*. 
+If no appropriate and relevant result can be produced, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is returned instead of a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
 
 **Examples:**
 ```lisp
@@ -152,7 +152,7 @@ If no appropriate and relevant result can be produced, **nil** is returned inste
 
 
 
-*description*—a *string* or **nil**. 
+*description*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -160,7 +160,7 @@ If no appropriate and relevant result can be produced, **nil** is returned inste
 
 
 
-**short-site-name** and **long-site-name** return a *string* that identifies the physical location of the computer hardware, or **nil** if no appropriate *description* can be produced. 
+**short-site-name** and **long-site-name** return a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that identifies the physical location of the computer hardware, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if no appropriate *description* can be produced. 
 
 
 

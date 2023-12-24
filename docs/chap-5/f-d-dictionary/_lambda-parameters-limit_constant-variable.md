@@ -6,7 +6,7 @@
 
 
 
-*implementation-dependent*, but not smaller than 50. 
+<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but not smaller than 50. 
 
 
 
@@ -22,7 +22,7 @@ A positive *integer* that is the upper exclusive bound on the number of *paramet
 
 
 
-**call-arguments-limit** 
+<ClLinks styled={true} term={"call-arguments-limit"}><b>call-arguments-limit</b></ClLinks> 
 
 
 
@@ -30,7 +30,7 @@ A positive *integer* that is the upper exclusive bound on the number of *paramet
 
 
 
-Implementors are encouraged to make the *value* of **lambda-parameters-limit** as large as possible. 
+Implementors are encouraged to make the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></ClLinks> as large as possible. 
 
 
 
@@ -42,7 +42,7 @@ Implementors are encouraged to make the *value* of **lambda-parameters-limit** a
 
 
 
-**defconstant** 
+<ClLinks styled={true} term={"defconstant"}><b>defconstant</b></ClLinks> 
 
 
 

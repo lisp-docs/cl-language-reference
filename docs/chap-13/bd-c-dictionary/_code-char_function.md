@@ -1,4 +1,4 @@
-**code-char** *Function* 
+**code-char** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**code-char** *code → char-p* 
+<ClLinks styled={true} term={"code-char"}><b>code-char</b></ClLinks> *code → char-p* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*code*—a *character code*. 
+<ClLinks styled={true} term={"code"}><i>code</i></ClLinks>—a *character code*. 
 
 
 
-*char-p*—a *character* or **nil**. 
+*char-p*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Returns a *character* with the *code attribute* given by *code*. If no such *character* exists and one cannot be created, **nil** is returned. 
+Returns a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> with the *code attribute* given by <ClLinks styled={true} term={"code"}><i>code</i></ClLinks>. If no such <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> exists and one cannot be created, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is returned. 
 
 
 
@@ -53,7 +53,7 @@ Returns a *character* with the *code attribute* given by *code*. If no such *cha
 
 
 
-The *implementation*’s character encoding. 
+The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>’s character encoding. 
 
 
 
@@ -61,7 +61,7 @@ The *implementation*’s character encoding.
 
 
 
-**char-code** 
+<ClLinks styled={true} term={"char-code"}><b>char-code</b></ClLinks> 
 
 
 

@@ -2,11 +2,11 @@
 
 
 
-Since all *strings* are *arrays*, all rules which apply generally to *arrays* also apply to *strings*. See Section 15.1 (Array Concepts). 
+Since all <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks> are <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks>, all rules which apply generally to <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> also apply to <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks>. See Section 15.1 (Array Concepts). 
 
 
 
-For example, *strings* can have *fill pointers*, and *strings* are also subject to the rules of *element type upgrading* that apply to *arrays*. 
+For example, <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks> can have *fill pointers*, and <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks> are also subject to the rules of *element type upgrading* that apply to <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks>. 
 
 
 

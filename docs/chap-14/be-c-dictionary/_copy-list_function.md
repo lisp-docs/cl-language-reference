@@ -1,4 +1,4 @@
-**copy-list** *Function* 
+**copy-list** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**copy-list** *list → copy* 
+<ClLinks styled={true} term={"copy-list"}><b>copy-list</b></ClLinks> *list → copy* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*list*—a *proper list* or a *dotted list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a *proper list* or a *dotted list*. 
 
 
 
-*copy*—a *list*. 
+<ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Returns a *copy* of *list*. If *list* is a *dotted list*, the resulting *list* will also be a *dotted list*. 
+Returns a <ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. If <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a *dotted list*, the resulting <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> will also be a *dotted list*. 
 
 
 
-Only the *list structure* of *list* is copied; the *elements* of the resulting list are the *same* as the corresponding *elements* of the given *list*. 
+Only the *list structure* of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is copied; the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the resulting list are the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> as the corresponding <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the given <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -56,7 +56,7 @@ clst → (1 ("two" 3))
 
 
 
-The consequences are undefined if *list* is a *circular list*. 
+The consequences are undefined if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a *circular list*. 
 
 
 
@@ -64,7 +64,7 @@ The consequences are undefined if *list* is a *circular list*.
 
 
 
-**copy-alist**, **copy-seq**, **copy-tree** 
+<ClLinks styled={true} term={"copy-alist"}><b>copy-alist</b></ClLinks>, <ClLinks styled={true} term={"copy-seq"}><b>copy-seq</b></ClLinks>, <ClLinks styled={true} term={"copy-tree"}><b>copy-tree</b></ClLinks> 
 
 
 
@@ -72,7 +72,7 @@ The consequences are undefined if *list* is a *circular list*.
 
 
 
-The copy created is **equal** to *list*, but not **eq**. 
+The copy created is <ClLinks styled={true} term={"equal"}><b>equal</b></ClLinks> to <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, but not <ClLinks styled={true} term={"eq"}><b>eq</b></ClLinks>. 
 
 
 

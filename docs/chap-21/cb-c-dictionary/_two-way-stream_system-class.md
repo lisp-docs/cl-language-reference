@@ -6,7 +6,7 @@
 
 
 
-**two-way-stream**, **stream**, **t** 
+<ClLinks styled={true} term={"two-way-stream"}><b>two-way-stream</b></ClLinks>, <ClLinks styled={true} term={"stream"}><b>stream</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -22,7 +22,7 @@ A *bidirectional composite stream* that receives its input from an associated *i
 
 
 
-**make-two-way-stream**, **two-way-stream-input-stream**, **two-way-stream-output-stream input-stream-p, output-stream-p** *Function* 
+<ClLinks styled={true} term={"make-two-way-stream"}><b>make-two-way-stream</b></ClLinks>, **two-way-stream-input-stream**, **two-way-stream-output-stream input-stream-p, output-stream-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -42,7 +42,7 @@ A *bidirectional composite stream* that receives its input from an associated *i
 
 
 
-*stream*—a *stream*. 
+<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -54,7 +54,7 @@ A *bidirectional composite stream* that receives its input from an associated *i
 
 
 
-**input-stream-p** returns *true* if *stream* is an *input stream*; otherwise, returns *false*. **output-stream-p** returns *true* if *stream* is an *output stream*; otherwise, returns *false*. 
+**input-stream-p** returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is an *input stream*; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. **output-stream-p** returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is an *output stream*; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 **Examples:**
 ```lisp
@@ -71,7 +71,7 @@ A *bidirectional composite stream* that receives its input from an associated *i
 
 
 
-Should signal an error of *type* **type-error** if *stream* is not a *stream*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
 
 
 

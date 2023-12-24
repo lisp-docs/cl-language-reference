@@ -1,4 +1,4 @@
-**subst, subst-if, subst-if-not, nsubst, nsubst-if, nsubst-if-not** *Function* 
+**subst, subst-if, subst-if-not, nsubst, nsubst-if, nsubst-if-not** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,27 +6,27 @@
 
 
 
-**subst** *new old tree* &amp;key *key test test-not → new-tree* 
+<ClLinks styled={true} term={"subst"}><b>subst</b></ClLinks> *new old tree* &amp;key *key test test-not → new-tree* 
 
 
 
-**subst-if** *new predicate tree* &amp;key *key → new-tree* 
+<ClLinks styled={true} term={"subst-if"}><b>subst-if</b></ClLinks> *new predicate tree* &amp;key *key → new-tree* 
 
 
 
-**subst-if-not** *new predicate tree* &amp;key *key → new-tree* 
+<ClLinks styled={true} term={"subst-if-not"}><b>subst-if-not</b></ClLinks> *new predicate tree* &amp;key *key → new-tree* 
 
 
 
-**nsubst** *new old tree* &amp;key *key test test-not → new-tree* 
+<ClLinks styled={true} term={"nsubst"}><b>nsubst</b></ClLinks> *new old tree* &amp;key *key test test-not → new-tree* 
 
 
 
-**nsubst-if** *new predicate tree* &amp;key *key → new-tree* 
+<ClLinks styled={true} term={"nsubst-if"}><b>nsubst-if</b></ClLinks> *new predicate tree* &amp;key *key → new-tree* 
 
 
 
-**nsubst-if-not** *new predicate tree* &amp;key *key → new-tree* 
+<ClLinks styled={true} term={"nsubst-if-not"}><b>nsubst-if-not</b></ClLinks> *new predicate tree* &amp;key *key → new-tree* 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-*new*—an *object*. 
+*new*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*old*—an *object*. 
+*old*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -58,19 +58,19 @@
 
 
 
-*predicate*—a *symbol* that names a *function*, or a *function* of one argument that returns a *generalized boolean* value. 
+<ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that names a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, or a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument that returns a *generalized boolean* value. 
 
 
 
-*tree*—a *tree*. 
+<ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks>—a <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks>. 
 
 
 
-*test*—a *designator* for a *function* of two *arguments* that returns a *generalized boolean*. *test-not*—a *designator* for a *function* of two *arguments* that returns a *generalized boolean*. *key*—a *designator* for a *function* of one argument, or **nil**. 
+*test*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *key*—a *designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*new-tree*—a *tree*. 
+*new-tree*—a <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks>. 
 
 
 
@@ -78,27 +78,27 @@
 
 
 
-**subst**, **subst-if**, and **subst-if-not** perform substitution operations on *tree*. Each function searches *tree* for occurrences of a particular *old* item of an element or subexpression that *satisfies the test*. 
+<ClLinks styled={true} term={"subst"}><b>subst</b></ClLinks>, <ClLinks styled={true} term={"subst-if"}><b>subst-if</b></ClLinks>, and <ClLinks styled={true} term={"subst-if-not"}><b>subst-if-not</b></ClLinks> perform substitution operations on <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks>. Each function searches <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> for occurrences of a particular *old* item of an element or subexpression that *satisfies the test*. 
 
 
 
-**nsubst**, **nsubst-if**, and **nsubst-if-not** are like **subst**, **subst-if**, and **subst-if-not** respectively, except that the original *tree* is modified. 
+<ClLinks styled={true} term={"nsubst"}><b>nsubst</b></ClLinks>, <ClLinks styled={true} term={"nsubst-if"}><b>nsubst-if</b></ClLinks>, and <ClLinks styled={true} term={"nsubst-if-not"}><b>nsubst-if-not</b></ClLinks> are like <ClLinks styled={true} term={"subst"}><b>subst</b></ClLinks>, <ClLinks styled={true} term={"subst-if"}><b>subst-if</b></ClLinks>, and <ClLinks styled={true} term={"subst-if-not"}><b>subst-if-not</b></ClLinks> respectively, except that the original <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> is modified. 
 
 
 
-**subst** makes a copy of *tree*, substituting *new* for every subtree or leaf of *tree* (whether the subtree or leaf is a *car* or a *cdr* of its parent) such that *old* and the subtree or leaf *satisfy the test*. 
+<ClLinks styled={true} term={"subst"}><b>subst</b></ClLinks> makes a copy of <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks>, substituting *new* for every subtree or leaf of <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> (whether the subtree or leaf is a <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> or a <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of its parent) such that *old* and the subtree or leaf *satisfy the test*. 
 
 
 
-**nsubst** is a destructive version of **subst**. The list structure of *tree* is altered by destructively replacing with *new* each leaf of the *tree* such that *old* and the leaf *satisfy the test*. 
+<ClLinks styled={true} term={"nsubst"}><b>nsubst</b></ClLinks> is a destructive version of <ClLinks styled={true} term={"subst"}><b>subst</b></ClLinks>. The list structure of <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> is altered by destructively replacing with *new* each leaf of the <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> such that *old* and the leaf *satisfy the test*. 
 
 
 
-For **subst**, **subst-if**, and **subst-if-not**, if the functions succeed, a new copy of the tree is returned in which each occurrence of such an element is replaced by the *new* element or subexpression. If no changes are made, the original *tree* may be returned. The original *tree* is left unchanged, but the result tree may share storage with it. 
+For <ClLinks styled={true} term={"subst"}><b>subst</b></ClLinks>, <ClLinks styled={true} term={"subst-if"}><b>subst-if</b></ClLinks>, and <ClLinks styled={true} term={"subst-if-not"}><b>subst-if-not</b></ClLinks>, if the functions succeed, a new copy of the tree is returned in which each occurrence of such an element is replaced by the *new* element or subexpression. If no changes are made, the original <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> may be returned. The original <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> is left unchanged, but the result tree may share storage with it. 
 
 
 
-For **nsubst**, **nsubst-if**, and **nsubst-if-not** the original *tree* is modified and returned as the function result, but the result may not be **eq** to *tree*. 
+For <ClLinks styled={true} term={"nsubst"}><b>nsubst</b></ClLinks>, <ClLinks styled={true} term={"nsubst-if"}><b>nsubst-if</b></ClLinks>, and <ClLinks styled={true} term={"nsubst-if-not"}><b>nsubst-if-not</b></ClLinks> the original <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> is modified and returned as the function result, but the result may not be <ClLinks styled={true} term={"eq"}><b>eq</b></ClLinks> to <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks>. 
 
 
 
@@ -134,7 +134,7 @@ tree1 → (1 (1 2) X X)
 
 
 
-**nsubst**, **nsubst-if**, and **nsubst-if-not** might alter the *tree structure* of *tree*. 
+<ClLinks styled={true} term={"nsubst"}><b>nsubst</b></ClLinks>, <ClLinks styled={true} term={"nsubst-if"}><b>nsubst-if</b></ClLinks>, and <ClLinks styled={true} term={"nsubst-if-not"}><b>nsubst-if-not</b></ClLinks> might alter the *tree structure* of <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks>. 
 
 
 
@@ -154,11 +154,11 @@ The :test-not parameter is deprecated.
 
 
 
-The functions **subst-if-not** and **nsubst-if-not** are deprecated. 
+The functions <ClLinks styled={true} term={"subst-if-not"}><b>subst-if-not</b></ClLinks> and <ClLinks styled={true} term={"nsubst-if-not"}><b>nsubst-if-not</b></ClLinks> are deprecated. 
 
 
 
-One possible definition of **subst**: 
+One possible definition of <ClLinks styled={true} term={"subst"}><b>subst</b></ClLinks>: 
 
 
 
@@ -218,7 +218,7 @@ tree
 
 
 
-**tree-equal** 
+<ClLinks styled={true} term={"tree-equal"}><b>tree-equal</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**log** *Function* 
+**log** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**log** *number* &amp;optional *base → logarithm* 
+<ClLinks styled={true} term={"log"}><b>log</b></ClLinks> <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> &amp;optional *base → logarithm* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*number*—a non-zero *number* . 
+<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a non-zero <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
 
 
 
-*base*—a *number* . 
+*base*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
 
 
 
-*logarithm*—a *number* . 
+*logarithm*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-**log** returns the logarithm of *number* in base *base*. If *base* is not supplied its value is *e*, the base of the natural logarithms. 
+<ClLinks styled={true} term={"log"}><b>log</b></ClLinks> returns the logarithm of <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> in base *base*. If *base* is not supplied its value is *e*, the base of the natural logarithms. 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-**log** 
+<ClLinks styled={true} term={"log"}><b>log</b></ClLinks> 
 
 
 
-**log** may return a *complex* when given a *real* negative *number*. 
+<ClLinks styled={true} term={"log"}><b>log</b></ClLinks> may return a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> when given a *real* negative <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>. 
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-If *base* is zero, **log** returns zero. 
+If *base* is zero, <ClLinks styled={true} term={"log"}><b>log</b></ClLinks> returns zero. 
 
 
 
@@ -90,7 +90,7 @@ The two-argument logarithm function is defined as
 
 
 
-*≡* (/ (log *number*) (log *base*)) 
+*≡* (/ (log <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>) (log *base*)) 
 
 
 
@@ -137,7 +137,7 @@ The implementation.
 
 
 
-**exp**, **expt**, Section 12.1.3.3 (Rule of Float Substitutability) 
+<ClLinks styled={true} term={"exp"}><b>exp</b></ClLinks>, <ClLinks styled={true} term={"expt"}><b>expt</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability) 
 
 
 

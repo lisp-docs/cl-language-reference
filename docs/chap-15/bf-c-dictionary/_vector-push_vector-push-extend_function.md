@@ -1,4 +1,4 @@
-**vector-push, vector-push-extend** *Function* 
+**vector-push, vector-push-extend** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**vector-push** *new-element vector → new-index-p* 
+<ClLinks styled={true} term={"vector-push"}><b>vector-push</b></ClLinks> *new-element vector → new-index-p* 
 
 
 
-**vector-push-extend** *new-element vector* &amp;optional *extension → new-index* 
+<ClLinks styled={true} term={"vector-push-extend"}><b>vector-push-extend</b></ClLinks> *new-element vector* &amp;optional *extension → new-index* 
 
 
 
@@ -18,23 +18,23 @@
 
 
 
-*new-element*—an *object*. 
+*new-element*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*vector*—a *vector* with a *fill pointer* . 
+<ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>—a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* . 
 
 
 
-*extension*—a positive *integer* . The default is *implementation-dependent*. 
+<ClLinks styled={true} term={"extension"}><i>extension</i></ClLinks>—a positive *integer* . The default is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
-*new-index-p*—a *valid array index* for *vector*, or **nil**. 
+*new-index-p*—a *valid array index* for <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*new-index*—a *valid array index* for *vector*. 
+*new-index*—a *valid array index* for <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>. 
 
 
 
@@ -42,15 +42,15 @@
 
 
 
-**vector-push** and **vector-push-extend** store *new-element* in *vector*. **vector-push** attempts to store *new-element* in the element of *vector* designated by the *fill pointer* , and to increase the *fill pointer* by one. If the (&gt;= (fill-pointer *vector*) (array-dimension *vector* 0)), neither *vector* nor its *fill pointer* are affected. Otherwise, the store and increment take place and **vector-push** returns the former value of the *fill pointer* which is one less than the one it leaves in *vector*. 
+<ClLinks styled={true} term={"vector-push"}><b>vector-push</b></ClLinks> and <ClLinks styled={true} term={"vector-push-extend"}><b>vector-push-extend</b></ClLinks> store *new-element* in <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>. <ClLinks styled={true} term={"vector-push"}><b>vector-push</b></ClLinks> attempts to store *new-element* in the element of <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> designated by the *fill pointer* , and to increase the *fill pointer* by one. If the (&gt;= (fill-pointer <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>) (array-dimension <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> 0)), neither <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> nor its *fill pointer* are affected. Otherwise, the store and increment take place and <ClLinks styled={true} term={"vector-push"}><b>vector-push</b></ClLinks> returns the former value of the *fill pointer* which is one less than the one it leaves in <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>. 
 
 
 
-**vector-push-extend** is just like **vector-push** except that if the *fill pointer* gets too large, *vector* is extended using **adjust-array** so that it can contain more elements. *Extension* is the minimum number of elements to be added to *vector* if it must be extended. 
+<ClLinks styled={true} term={"vector-push-extend"}><b>vector-push-extend</b></ClLinks> is just like <ClLinks styled={true} term={"vector-push"}><b>vector-push</b></ClLinks> except that if the *fill pointer* gets too large, <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> is extended using <ClLinks styled={true} term={"adjust-array"}><b>adjust-array</b></ClLinks> so that it can contain more elements. <ClLinks styled={true} term={"extension"}><i>Extension</i></ClLinks> is the minimum number of elements to be added to <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> if it must be extended. 
 
 
 
-**vector-push** and **vector-push-extend** return the index of *new-element* in *vector*. If (&gt;= (fill-pointer *vector*) (array-dimension *vector* 0)), **vector-push** returns **nil**. 
+<ClLinks styled={true} term={"vector-push"}><b>vector-push</b></ClLinks> and <ClLinks styled={true} term={"vector-push-extend"}><b>vector-push-extend</b></ClLinks> return the index of *new-element* in <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>. If (&gt;= (fill-pointer <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>) (array-dimension <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> 0)), <ClLinks styled={true} term={"vector-push"}><b>vector-push</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -87,7 +87,7 @@ The value of the *fill pointer* .
 
 
 
-How *vector* was created. 
+How <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> was created. 
 
 
 
@@ -95,11 +95,11 @@ How *vector* was created.
 
 
 
-An error of *type* **error** is signaled by **vector-push-extend** if it tries to extend *vector* and *vector* is not *actually adjustable*. 
+An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> is signaled by <ClLinks styled={true} term={"vector-push-extend"}><b>vector-push-extend</b></ClLinks> if it tries to extend <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> and <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> is not *actually adjustable*. 
 
 
 
-An error of *type* **error** is signaled if *vector* does not have a *fill pointer* . 
+An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> is signaled if <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> does not have a *fill pointer* . 
 
 
 
@@ -107,7 +107,7 @@ An error of *type* **error** is signaled if *vector* does not have a *fill point
 
 
 
-**adjustable-array-p**, **fill-pointer**, **vector-pop** 
+**adjustable-array-p**, <ClLinks styled={true} term={"fill-pointer"}><b>fill-pointer</b></ClLinks>, <ClLinks styled={true} term={"vector-pop"}><b>vector-pop</b></ClLinks> 
 
 
 

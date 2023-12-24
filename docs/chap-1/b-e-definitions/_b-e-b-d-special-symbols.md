@@ -18,11 +18,11 @@ This indicates evaluation. For example:
 
 
 
-This means that the result of evaluating the *form* (+ 4 5) is 9. 
+This means that the result of evaluating the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> (+ 4 5) is 9. 
 
 
 
-If a *form* returns *multiple values*, those values might be shown separated by spaces, line breaks, or commas. For example: 
+If a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> returns *multiple values*, those values might be shown separated by spaces, line breaks, or commas. For example: 
 
 
 
@@ -98,7 +98,7 @@ The notation “ <i><sup>or</sup>→</i>” is used to denote one of several pos
 
 
 
-indicates that **nil**, "LOWERCASE-a", "Small-A", "LA01" are among the possible results of (char-name #\a)—each with equal preference. Unless explicitly specified otherwise, it should not be assumed that the set of possible results shown is exhaustive. Formally, the above example is equivalent to 
+indicates that <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, "LOWERCASE-a", "Small-A", "LA01" are among the possible results of (char-name #\a)—each with equal preference. Unless explicitly specified otherwise, it should not be assumed that the set of possible results shown is exhaustive. Formally, the above example is equivalent to 
 
 
 
@@ -126,7 +126,7 @@ The notation “<i><sup>not</sup> →</i>” is used to denote a result which is
 
 
 
-→ NIL, *true*, NIL 
+→ NIL, <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, NIL 
 
 
 
@@ -154,7 +154,7 @@ This indicates code equivalence. For example:
 
 
 
-This means that the results and observable side-effects of evaluating the *form* 
+This means that the results and observable side-effects of evaluating the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> 
 
 
 
@@ -170,11 +170,11 @@ This means that the results and observable side-effects of evaluating the *form*
 
 
 
-Common Lisp specifies input and output with respect to a non-interactive stream model. The specific details of how interactive input and output are mapped onto that non-interactive model are *implementation-defined*. 
+Common Lisp specifies input and output with respect to a non-interactive stream model. The specific details of how interactive input and output are mapped onto that non-interactive model are <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
 
 
 
-For example, *conforming implementations* are permitted to differ in issues of how interactive input is terminated. For example, the *function* **read** terminates when the final delimiter is typed on a non-interactive stream. In some *implementations*, an interactive call to **read** returns as soon as the final delimiter is typed, even if that delimiter is not a *newline*. In other *implementations*, a final *newline* is always required. In still other *implementations*, there might be a command which “activates” a buffer full of input without the command itself being visible on the program’s input stream. 
+For example, *conforming implementations* are permitted to differ in issues of how interactive input is terminated. For example, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> terminates when the final delimiter is typed on a non-interactive stream. In some <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>, an interactive call to <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> returns as soon as the final delimiter is typed, even if that delimiter is not a <ClLinks styled={true} term={"newline"}><i>newline</i></ClLinks>. In other <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>, a final <ClLinks styled={true} term={"newline"}><i>newline</i></ClLinks> is always required. In still other <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>, there might be a command which “activates” a buffer full of input without the command itself being visible on the program’s input stream. 
 
 
 
@@ -202,15 +202,15 @@ For example, the notation
 
 
 
-shows an interaction in which “(+ 1 (print (+ (sqrt (read)) (sqrt (read)))))” is a *form* to be *evaluated*, “9 16 ” is interactive input, “7” is interactive output, and “8” is the *value yielded* from the *evaluation*. 
+shows an interaction in which “(+ 1 (print (+ (sqrt (read)) (sqrt (read)))))” is a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> to be *evaluated*, “9 16 ” is interactive input, “7” is interactive output, and “8” is the *value yielded* from the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks>. 
 
 
 
-The use of this notation is intended to disguise small differences in interactive input and output behavior between *implementations*. 
+The use of this notation is intended to disguise small differences in interactive input and output behavior between <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>. 
 
 
 
-Sometimes, the non-interactive stream model calls for a *newline*. How that *newline* character is interactively entered is an *implementation-defined* detail of the user interface, but in that case, either the notation “*⟨Newline⟩*” or “←” might be used. 
+Sometimes, the non-interactive stream model calls for a <ClLinks styled={true} term={"newline"}><i>newline</i></ClLinks>. How that <ClLinks styled={true} term={"newline"}><i>newline</i></ClLinks> character is interactively entered is an <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks> detail of the user interface, but in that case, either the notation “<ClLinks styled={true} term={"newline"}><i>⟨Newline⟩</i></ClLinks>” or “←” might be used. 
 
 
 

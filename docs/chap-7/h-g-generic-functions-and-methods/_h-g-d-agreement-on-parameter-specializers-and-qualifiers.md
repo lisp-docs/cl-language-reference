@@ -2,7 +2,7 @@
 
 
 
-Two *methods* are said to agree with each other on *parameter specializers* and *qualifiers* if the following conditions hold: 
+Two <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> are said to agree with each other on *parameter specializers* and <ClLinks styled={true} term={"qualifier"}><i>qualifiers</i></ClLinks> if the following conditions hold: 
 
 
 
@@ -14,7 +14,7 @@ Two *methods* are said to agree with each other on *parameter specializers* and 
 
 
 
-3\. The two *lists* of *qualifiers* are the *same* under **equal**. 
+3\. The two <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks> of <ClLinks styled={true} term={"qualifier"}><i>qualifiers</i></ClLinks> are the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> under <ClLinks styled={true} term={"equal"}><b>equal</b></ClLinks>. 
 
 
 

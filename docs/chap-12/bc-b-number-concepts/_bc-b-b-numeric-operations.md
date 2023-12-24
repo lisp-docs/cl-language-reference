@@ -2,11 +2,11 @@
 
 
 
-Common Lisp provides a large variety of operations related to *numbers*. This section provides an overview of those operations by grouping them into categories that emphasize some of the relationships among them. 
+Common Lisp provides a large variety of operations related to <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks>. This section provides an overview of those operations by grouping them into categories that emphasize some of the relationships among them. 
 
 
 
-Figure 12–1 shows *operators* relating to arithmetic operations. 
+Figure 12–1 shows <ClLinks styled={true} term={"operator"}><i>operators</i></ClLinks> relating to arithmetic operations. 
 
 
 
@@ -34,11 +34,11 @@ Figure 12–2 shows *defined names* relating to exponential, logarithmic, and tr
 
 
 
-**Figure 12–2. Defined names relating to Exponentials, Logarithms, and Trigonometry.** Figure 12–3 shows *operators* relating to numeric comparison and predication. 
+**Figure 12–2. Defined names relating to Exponentials, Logarithms, and Trigonometry.** Figure 12–3 shows <ClLinks styled={true} term={"operator"}><i>operators</i></ClLinks> relating to numeric comparison and predication. 
 
 
 
-|<p>**/=** &gt;**= oddp** </p><p>&lt; **evenp plusp** </p><p>&lt;**= max zerop** </p><p>**= min** </p><p>&gt; **minusp**</p>|
+|<p><ClLinks styled={true} term={"/="}><b>/=</b></ClLinks> &gt;**= oddp** </p><p>&lt; **evenp plusp** </p><p>&lt;**= max zerop** </p><p>**= min** </p><p>&gt; <ClLinks styled={true} term={"minusp"}><b>minusp</b></ClLinks></p>|
 
 | :- |
 

@@ -2,7 +2,7 @@
 
 
 
-The rules in this section apply to *rational* computations. 
+The rules in this section apply to <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> computations. 
 
 
 

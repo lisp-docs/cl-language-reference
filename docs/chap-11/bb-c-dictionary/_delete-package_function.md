@@ -1,4 +1,4 @@
-**delete-package** *Function* 
+**delete-package** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**delete-package** *package → generalized-boolean* 
+<ClLinks styled={true} term={"delete-package"}><b>delete-package</b></ClLinks> *package → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*package*—a *package designator* . 
+<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-**delete-package** deletes *package* from all package system data structures. If the operation is successful, **delete-package** returns true, otherwise **nil**. The effect of **delete-package** is that the name and nicknames of *package* cease to be recognized package names. The package *object* is still a *package* (*i.e.*, **packagep** is *true* of it) but **package-name** returns **nil**. The consequences of deleting the COMMON-LISP *package* or the KEYWORD *package* are undefined. The consequences of invoking any other package operation on *package* once it has been deleted are unspecified. In particular, the consequences of invoking **find-symbol**, **intern** and other functions that look for a symbol name in 
+<ClLinks styled={true} term={"delete-package"}><b>delete-package</b></ClLinks> deletes <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> from all package system data structures. If the operation is successful, <ClLinks styled={true} term={"delete-package"}><b>delete-package</b></ClLinks> returns true, otherwise <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. The effect of <ClLinks styled={true} term={"delete-package"}><b>delete-package</b></ClLinks> is that the name and nicknames of <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> cease to be recognized package names. The package <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is still a <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> (*i.e.*, <ClLinks styled={true} term={"packagep"}><b>packagep</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> of it) but <ClLinks styled={true} term={"package-name"}><b>package-name</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. The consequences of deleting the COMMON-LISP <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> or the KEYWORD <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> are undefined. The consequences of invoking any other package operation on <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> once it has been deleted are unspecified. In particular, the consequences of invoking <ClLinks styled={true} term={"find-symbol"}><b>find-symbol</b></ClLinks>, <ClLinks styled={true} term={"intern"}><b>intern</b></ClLinks> and other functions that look for a symbol name in 
 
 
 
@@ -42,19 +42,19 @@
 
 
 
-**delete-package** 
+<ClLinks styled={true} term={"delete-package"}><b>delete-package</b></ClLinks> 
 
 
 
-a *package* are unspecified if they are called with **\*package\*** bound to the deleted *package* or with the deleted *package* as an argument. 
+a <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> are unspecified if they are called with <ClLinks styled={true} term={"package"}><b>\*package\*</b></ClLinks> bound to the deleted <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> or with the deleted <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> as an argument. 
 
 
 
-If *package* is a *package object* that has already been deleted, **delete-package** immediately returns **nil**. 
+If <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is a *package object* that has already been deleted, <ClLinks styled={true} term={"delete-package"}><b>delete-package</b></ClLinks> immediately returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-After this operation completes, the *home package* of any *symbol* whose *home package* had previously been *package* is *implementation-dependent*. Except for this, *symbols accessible* in *package* are not modified in any other way; *symbols* whose *home package* is not *package* remain unchanged. 
+After this operation completes, the *home package* of any <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> whose *home package* had previously been <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. Except for this, *symbols accessible* in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> are not modified in any other way; <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> whose *home package* is not <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> remain unchanged. 
 
 
 
@@ -124,15 +124,11 @@ After this operation completes, the *home package* of any *symbol* whose *home p
 
 
 
-If the *package designator* is a *name* that does not currently name a *package*, a *correctable* error of *type* **package-error** is signaled. If correction is attempted, no deletion action is attempted; instead, **delete-package** immediately returns **nil**. 
+If the *package designator* is a <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> that does not currently name a <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, a <ClLinks styled={true} term={"correctable"}><i>correctable</i></ClLinks> error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"package-error"}><b>package-error</b></ClLinks> is signaled. If correction is attempted, no deletion action is attempted; instead, <ClLinks styled={true} term={"delete-package"}><b>delete-package</b></ClLinks> immediately returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-If *package* is used by other *packages*, a *correctable* error of *type* **package-error** is signaled. 
-
-
-
- 
+If <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is used by other <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks>, a <ClLinks styled={true} term={"correctable"}><i>correctable</i></ClLinks> error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"package-error"}><b>package-error</b></ClLinks> is signaled. 
 
 
 
@@ -140,7 +136,11 @@ If *package* is used by other *packages*, a *correctable* error of *type* **pack
 
 
 
-If correction is attempted, **unuse-package** is effectively called to remove any dependencies, causing *package*’s *external symbols* to cease being *accessible* to those *packages* that use *package*. **delete-package** then deletes *package* just as it would have had there been no *packages* that used it. 
+ 
+
+
+
+If correction is attempted, <ClLinks styled={true} term={"unuse-package"}><b>unuse-package</b></ClLinks> is effectively called to remove any dependencies, causing <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>’s *external symbols* to cease being <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> to those <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> that use <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. <ClLinks styled={true} term={"delete-package"}><b>delete-package</b></ClLinks> then deletes <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> just as it would have had there been no <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> that used it. 
 
 
 
@@ -148,7 +148,7 @@ If correction is attempted, **unuse-package** is effectively called to remove an
 
 
 
-**unuse-package** 
+<ClLinks styled={true} term={"unuse-package"}><b>unuse-package</b></ClLinks> 
 
 
 

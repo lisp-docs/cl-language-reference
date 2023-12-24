@@ -2,19 +2,19 @@
 
 
 
-A *pprint dispatch table* is a mapping from keys to pairs of values. Each key is a *type specifier* . The values associated with a key are a “function” (specifically, a *function designator* or **nil**) and a “numerical priority” (specifically, a *real*). Basic insertion and retrieval is done based on the keys with the equality of keys being tested by **equal**. 
+A *pprint dispatch table* is a mapping from keys to pairs of values. Each key is a *type specifier* . The values associated with a key are a “function” (specifically, a *function designator* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>) and a “numerical priority” (specifically, a *real*). Basic insertion and retrieval is done based on the keys with the equality of keys being tested by <ClLinks styled={true} term={"equal"}><b>equal</b></ClLinks>. 
 
 
 
-When **\*print-pretty\*** is *true*, the *current pprint dispatch table* (in **\*print-pprint-dispatch\***) controls how *objects* are printed. The information in this table takes precedence over all other mechanisms for specifying how to print *objects*. In particular, it has priority over user-defined **print-object** *methods* because the *current pprint dispatch table* is consulted first. 
+When <ClLinks styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the *current pprint dispatch table* (in <ClLinks styled={true} term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></ClLinks>) controls how <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> are printed. The information in this table takes precedence over all other mechanisms for specifying how to print <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>. In particular, it has priority over user-defined <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> because the *current pprint dispatch table* is consulted first. 
 
 
 
-The function is chosen from the *current pprint dispatch table* by finding the highest priority function that is associated with a *type specifier* that matches the *object*; if there is more than one such function, it is *implementation-dependent* which is used. 
+The function is chosen from the *current pprint dispatch table* by finding the highest priority function that is associated with a *type specifier* that matches the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>; if there is more than one such function, it is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> which is used. 
 
 
 
-However, if there is no information in the table about how to *pretty print* a particular kind of *object*, a *function* is invoked which uses **print-object** to print the *object*. The value of **\*print-pretty\*** is still *true* when this function is *called*, and individual methods for **print-object** might still elect to produce output in a special format conditional on the *value* of **\*print-pretty\***. 
+However, if there is no information in the table about how to *pretty print* a particular kind of <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>, a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is invoked which uses <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> to print the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. The value of <ClLinks styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks> is still <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> when this function is *called*, and individual methods for <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> might still elect to produce output in a special format conditional on the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks>. 
 
 
 

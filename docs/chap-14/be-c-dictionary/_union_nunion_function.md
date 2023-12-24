@@ -1,4 +1,4 @@
-**union, nunion** *Function* 
+**union, nunion** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**union** *list-1 list-2* &amp;key *key test test-not → result-list* 
+<ClLinks styled={true} term={"union"}><b>union</b></ClLinks> *list-1 list-2* &amp;key *key test test-not → result-list* 
 
 
 
-**nunion** *list-1 list-2* &amp;key *key test test-not → result-list* 
+<ClLinks styled={true} term={"nunion"}><b>nunion</b></ClLinks> *list-1 list-2* &amp;key *key test test-not → result-list* 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-*test*—a *designator* for a *function* of two *arguments* that returns a *generalized boolean*. *test-not*—a *designator* for a *function* of two *arguments* that returns a *generalized boolean*. *key*—a *designator* for a *function* of one argument, or **nil**. 
+*test*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *key*—a *designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*result-list*—a *list*. 
+*result-list*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-**union** and **nunion** return a *list* that contains every element that occurs in either *list-1* or *list-2*. 
+<ClLinks styled={true} term={"union"}><b>union</b></ClLinks> and <ClLinks styled={true} term={"nunion"}><b>nunion</b></ClLinks> return a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that contains every element that occurs in either *list-1* or *list-2*. 
 
 
 
@@ -46,7 +46,7 @@ For all possible ordered pairs consisting of one element from *list-1* and one e
 
 
 
-The argument to the :key function is an element of *list-1* or *list-2*; the return value is part of the supplied element. If :key is not supplied or **nil**, the element of *list-1* or *list-2* itself is supplied to the :test or :test-not function. 
+The argument to the :key function is an element of *list-1* or *list-2*; the return value is part of the supplied element. If :key is not supplied or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, the element of *list-1* or *list-2* itself is supplied to the :test or :test-not function. 
 
 
 
@@ -58,7 +58,7 @@ If there is a duplication between *list-1* and *list-2*, only one of the duplica
 
 
 
-The order of elements in the result do not have to reflect the ordering of *list-1* or *list-2* in any way. The result *list* may be **eq** to either *list-1* or *list-2* if appropriate. 
+The order of elements in the result do not have to reflect the ordering of *list-1* or *list-2* in any way. The result <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> may be <ClLinks styled={true} term={"eq"}><b>eq</b></ClLinks> to either *list-1* or *list-2* if appropriate. 
 
 
 
@@ -100,7 +100,7 @@ The order of elements in the result do not have to reflect the ordering of *list
 
 
 
-**nunion** is permitted to modify any part, *car* or *cdr* , of the *list structure* of *list-1* or *list-2*. 
+<ClLinks styled={true} term={"nunion"}><b>nunion</b></ClLinks> is permitted to modify any part, <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> or <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> , of the *list structure* of *list-1* or *list-2*. 
 
 
 
@@ -108,7 +108,7 @@ The order of elements in the result do not have to reflect the ordering of *list
 
 
 
-Should be prepared to signal an error of *type* **type-error** if *list-1* and *list-2* are not *proper lists*. 
+Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *list-1* and *list-2* are not *proper lists*. 
 
 
 
@@ -116,7 +116,7 @@ Should be prepared to signal an error of *type* **type-error** if *list-1* and *
 
 
 
-**intersection**, Section 3.2.1 (Compiler Terminology), Section 3.6 (Traversal Rules and Side Effects) 
+<ClLinks styled={true} term={"intersection"}><b>intersection</b></ClLinks>, Section 3.2.1 (Compiler Terminology), Section 3.6 (Traversal Rules and Side Effects) 
 
 
 
@@ -128,7 +128,7 @@ The :test-not parameter is deprecated.
 
 
 
-Since the **nunion** side effect is not required, it should not be used in for-effect-only positions in portable code. 
+Since the <ClLinks styled={true} term={"nunion"}><b>nunion</b></ClLinks> side effect is not required, it should not be used in for-effect-only positions in portable code. 
 
 
 

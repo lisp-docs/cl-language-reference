@@ -1,4 +1,4 @@
-*∗***print-array***∗ Variable* 
+*∗<ClLinks styled={true} term={"print-array"}><b>*print-array*</b></ClLinks>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a *generalized boolean*.
 
 
 
-*implementation-dependent*. 
+<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ a *generalized boolean*.
 
 
 
-Controls the format in which *arrays* are printed. If it is *false*, the contents of *arrays* other than *strings* are never printed. Instead, *arrays* are printed in a concise form using #&lt; that gives enough information for the user to be able to identify the *array*, but does not include the entire *array* contents. If it is *true*, non-*string arrays* are printed using #(...), #\*, or #nA syntax. 
+Controls the format in which <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> are printed. If it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, the contents of <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> other than <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks> are never printed. Instead, <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> are printed in a concise form using #&lt; that gives enough information for the user to be able to identify the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>, but does not include the entire <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> contents. If it is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, non-*string arrays* are printed using #(...), #\*, or #nA syntax. 
 
 
 
@@ -30,7 +30,7 @@ Controls the format in which *arrays* are printed. If it is *false*, the content
 
 
 
-The *implementation*. 
+The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 

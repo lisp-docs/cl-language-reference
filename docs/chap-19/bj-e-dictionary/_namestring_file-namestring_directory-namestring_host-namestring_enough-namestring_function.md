@@ -1,4 +1,4 @@
-**namestring, file-namestring, directory-namestring, host-namestring, enough-namestring** *Function* 
+**namestring, file-namestring, directory-namestring, host-namestring, enough-namestring** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,23 +6,23 @@
 
 
 
-**namestring** *pathname → namestring* 
+<ClLinks styled={true} term={"namestring"}><b>namestring</b></ClLinks> *pathname → namestring* 
 
 
 
-**file-namestring** *pathname → namestring* 
+<ClLinks styled={true} term={"file-namestring"}><b>file-namestring</b></ClLinks> *pathname → namestring* 
 
 
 
-**directory-namestring** *pathname → namestring* 
+<ClLinks styled={true} term={"directory-namestring"}><b>directory-namestring</b></ClLinks> *pathname → namestring* 
 
 
 
-**host-namestring** *pathname → namestring* 
+<ClLinks styled={true} term={"host-namestring"}><b>host-namestring</b></ClLinks> *pathname → namestring* 
 
 
 
-**enough-namestring** *pathname* &amp;optional *defaults → namestring* 
+<ClLinks styled={true} term={"enough-namestring"}><b>enough-namestring</b></ClLinks> <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> &amp;optional *defaults → namestring* 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-*pathname*—a *pathname designator* . 
+<ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>—a *pathname designator* . 
 
 
 
-*defaults*—a *pathname designator* . The default is the *value* of **\*default-pathname-defaults\***. *namestring*—a *string* or **nil**. 
+*defaults*—a *pathname designator* . The default is the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></ClLinks>. <ClLinks styled={true} term={"namestring"}><i>namestring</i></ClLinks>—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -58,23 +58,23 @@
 
 
 
-These functions convert *pathname* into a namestring. The name represented by *pathname* is returned as a *namestring* in an *implementation-dependent* canonical form. 
+These functions convert <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> into a namestring. The name represented by <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> is returned as a <ClLinks styled={true} term={"namestring"}><i>namestring</i></ClLinks> in an <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> canonical form. 
 
 
 
-**namestring** returns the full form of *pathname*. 
+<ClLinks styled={true} term={"namestring"}><b>namestring</b></ClLinks> returns the full form of <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>. 
 
 
 
-**file-namestring** returns just the name, type, and version components of *pathname*. **directory-namestring** returns the directory name portion. 
+<ClLinks styled={true} term={"file-namestring"}><b>file-namestring</b></ClLinks> returns just the name, type, and version components of <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>. <ClLinks styled={true} term={"directory-namestring"}><b>directory-namestring</b></ClLinks> returns the directory name portion. 
 
 
 
-**host-namestring** returns the host name. 
+<ClLinks styled={true} term={"host-namestring"}><b>host-namestring</b></ClLinks> returns the host name. 
 
 
 
-**enough-namestring** returns an abbreviated namestring that is just sufficient to identify the file named by *pathname* when considered relative to the *defaults*. It is required that 
+<ClLinks styled={true} term={"enough-namestring"}><b>enough-namestring</b></ClLinks> returns an abbreviated namestring that is just sufficient to identify the file named by <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> when considered relative to the *defaults*. It is required that 
 
 
 
@@ -86,11 +86,11 @@ These functions convert *pathname* into a namestring. The name represented by *p
 
 
 
-in all cases, and the result of **enough-namestring** is the shortest reasonable *string* that will satisfy this criterion. 
+in all cases, and the result of <ClLinks styled={true} term={"enough-namestring"}><b>enough-namestring</b></ClLinks> is the shortest reasonable <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that will satisfy this criterion. 
 
 
 
-It is not necessarily possible to construct a valid *namestring* by concatenating some of the three shorter *namestrings* in some order. 
+It is not necessarily possible to construct a valid <ClLinks styled={true} term={"namestring"}><i>namestring</i></ClLinks> by concatenating some of the three shorter <ClLinks styled={true} term={"namestring"}><i>namestrings</i></ClLinks> in some order. 
 
 
 
@@ -142,7 +142,7 @@ It is not necessarily possible to construct a valid *namestring* by concatenatin
 
 
 
-**truename**, **merge-pathnames**, **pathname**, **logical-pathname**, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks styled={true} term={"truename"}><b>truename</b></ClLinks>, <ClLinks styled={true} term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks>, <ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks styled={true} term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 

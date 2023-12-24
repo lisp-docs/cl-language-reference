@@ -6,7 +6,7 @@
 
 
 
-**setq** *\{↓pair\}*\* → result 
+<ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks> *\{↓pair\}*\* → result 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-*var*—a *symbol* naming a *variable* other than a *constant variable*. 
+*var*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> naming a <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> other than a *constant variable*. 
 
 
 
-*form*—a *form*. 
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*result*—the *primary value* of the last *form*, or **nil** if no *pairs* were supplied. 
+*result*—the *primary value* of the last <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if no *pairs* were supplied. 
 
 
 
@@ -42,15 +42,15 @@
 
 
 
-Assigns values to *variables*. 
+Assigns values to <ClLinks styled={true} term={"variable"}><i>variables</i></ClLinks>. 
 
 
 
-(setq *var1 form1 var2 form2* ...) is the simple variable assignment statement of Lisp. First *form1* is evaluated and the result is stored in the variable *var1*, then *form2* is evaluated and the result stored in *var2*, and so forth. **setq** may be used for assignment of both lexical and dynamic variables. 
+(setq *var1 form1 var2 form2* ...) is the simple variable assignment statement of Lisp. First *form1* is evaluated and the result is stored in the variable *var1*, then *form2* is evaluated and the result stored in *var2*, and so forth. <ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks> may be used for assignment of both lexical and dynamic variables. 
 
 
 
-If any *var* refers to a *binding* made by **symbol-macrolet**, then that *var* is treated as if **setf** (not **setq**) had been used. 
+If any *var* refers to a <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> made by <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>, then that *var* is treated as if <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> (not <ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks>) had been used. 
 
 
 
@@ -82,7 +82,7 @@ c → 7
 
 
 
-The *primary value* of each *form* is assigned to the corresponding *var*. 
+The *primary value* of each <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is assigned to the corresponding *var*. 
 
 
 
@@ -90,7 +90,7 @@ The *primary value* of each *form* is assigned to the corresponding *var*.
 
 
 
-**psetq**, **set**, **setf** 
+<ClLinks styled={true} term={"psetq"}><b>psetq</b></ClLinks>, <ClLinks styled={true} term={"set"}><b>set</b></ClLinks>, <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> 
 
 
 

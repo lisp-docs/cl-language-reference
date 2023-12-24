@@ -1,4 +1,4 @@
-*∗***compile-file-truename***∗ Variable* 
+*∗<ClLinks styled={true} term={"compile-file-truename"}><b>*compile-file-truename*</b></ClLinks>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-The *value* of **\*compile-file-pathname\*** must always be a *pathname* or **nil**. The *value* of **\*compile-file-truename\*** must always be a *physical pathname* or **nil**. 
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"compile-file-pathname"}><b>\*compile-file-pathname\*</b></ClLinks> must always be a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"compile-file-truename"}><b>\*compile-file-truename\*</b></ClLinks> must always be a *physical pathname* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -14,7 +14,7 @@ The *value* of **\*compile-file-pathname\*** must always be a *pathname* or **ni
 
 
 
-**nil**. 
+<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -22,19 +22,19 @@ The *value* of **\*compile-file-pathname\*** must always be a *pathname* or **ni
 
 
 
-During a call to **compile-file**, **\*compile-file-pathname\*** is *bound* to the *pathname* denoted by the first argument to **compile-file**, merged against the defaults; that is, it is *bound* to (pathname (merge-pathnames *input-file*)). During the same time interval, **\*compile-file-truename\*** is *bound* to the *truename* of the *file* being *compiled*. 
+During a call to <ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks styled={true} term={"compile-file-pathname"}><b>\*compile-file-pathname\*</b></ClLinks> is <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks> to the <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> denoted by the first argument to <ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks>, merged against the defaults; that is, it is <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks> to (pathname (merge-pathnames *input-file*)). During the same time interval, <ClLinks styled={true} term={"compile-file-truename"}><b>\*compile-file-truename\*</b></ClLinks> is <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks> to the <ClLinks styled={true} term={"truename"}><i>truename</i></ClLinks> of the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> being *compiled*. 
 
 
 
-At other times, the *value* of these *variables* is **nil**. 
+At other times, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of these <ClLinks styled={true} term={"variable"}><i>variables</i></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-If a *break loop* is entered while **compile-file** is ongoing, it is *implementation-dependent* whether these *variables* retain the *values* they had just prior to entering the *break loop* or whether they are *bound* to **nil**. 
+If a *break loop* is entered while <ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks> is ongoing, it is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether these <ClLinks styled={true} term={"variable"}><i>variables</i></ClLinks> retain the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> they had just prior to entering the *break loop* or whether they are <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks> to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-The consequences are unspecified if an attempt is made to *assign* or *bind* either of these *variables*. 
+The consequences are unspecified if an attempt is made to <ClLinks styled={true} term={"assign"}><i>assign</i></ClLinks> or <ClLinks styled={true} term={"bind"}><i>bind</i></ClLinks> either of these <ClLinks styled={true} term={"variable"}><i>variables</i></ClLinks>. 
 
 
 
@@ -50,7 +50,7 @@ The *file system*.
 
 
 
-**compile-file** 
+<ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks> 
 
 
 

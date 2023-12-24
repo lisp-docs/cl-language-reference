@@ -2,7 +2,7 @@
 
 
 
-A reference to a *symbol* that has been *established* as a *symbol macro* can be used as a *place*. In this case, **setf** expands the reference and then analyzes the resulting *form*. 
+A reference to a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that has been *established* as a *symbol macro* can be used as a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. In this case, <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> expands the reference and then analyzes the resulting <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 

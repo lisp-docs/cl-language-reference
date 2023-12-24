@@ -1,4 +1,4 @@
-**revappend, nreconc** *Function* 
+**revappend, nreconc** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**revappend** *list tail → result-list* 
+<ClLinks styled={true} term={"revappend"}><b>revappend</b></ClLinks> *list tail → result-list* 
 
 
 
-**nreconc** *list tail → result-list* 
+<ClLinks styled={true} term={"nreconc"}><b>nreconc</b></ClLinks> *list tail → result-list* 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-*list*—a *proper list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a *proper list*. 
 
 
 
-*tail*—an *object*. 
+<ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*result-list*—an *object*. 
+*result-list*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -34,15 +34,15 @@
 
 
 
-**revappend** constructs a *copy*<sub>2</sub> of *list*, but with the *elements* in reverse order. It then appends (as if by **nconc**) the *tail* to that reversed list and returns the result. 
+<ClLinks styled={true} term={"revappend"}><b>revappend</b></ClLinks> constructs a <ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks><sub>2</sub> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, but with the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> in reverse order. It then appends (as if by <ClLinks styled={true} term={"nconc"}><b>nconc</b></ClLinks>) the <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> to that reversed list and returns the result. 
 
 
 
-**nreconc** reverses the order of *elements* in *list* (as if by **nreverse**). It then appends (as if by **nconc**) the *tail* to that reversed list and returns the result. 
+<ClLinks styled={true} term={"nreconc"}><b>nreconc</b></ClLinks> reverses the order of <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> in <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> (as if by <ClLinks styled={true} term={"nreverse"}><b>nreverse</b></ClLinks>). It then appends (as if by <ClLinks styled={true} term={"nconc"}><b>nconc</b></ClLinks>) the <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> to that reversed list and returns the result. 
 
 
 
-The resulting *list* shares *list structure* with *tail*. 
+The resulting <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> shares *list structure* with <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>. 
 
 
 
@@ -94,15 +94,15 @@ The resulting *list* shares *list structure* with *tail*.
 
 
 
-**revappend** does not modify either of its *arguments*. **nreconc** is permitted to modify *list* but not *tail*. 
+<ClLinks styled={true} term={"revappend"}><b>revappend</b></ClLinks> does not modify either of its <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>. <ClLinks styled={true} term={"nreconc"}><b>nreconc</b></ClLinks> is permitted to modify <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> but not <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>. 
 
 
 
-Although it might be implemented differently, **nreconc** is constrained to have side-effect behavior equivalent to: 
+Although it might be implemented differently, <ClLinks styled={true} term={"nreconc"}><b>nreconc</b></ClLinks> is constrained to have side-effect behavior equivalent to: 
 
 
 
-(nconc (nreverse *list*) *tail*) 
+(nconc (nreverse <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>) 
 
 
 
@@ -110,7 +110,7 @@ Although it might be implemented differently, **nreconc** is constrained to have
 
 
 
-**reverse**, **nreverse**, **nconc** 
+<ClLinks styled={true} term={"reverse"}><b>reverse</b></ClLinks>, <ClLinks styled={true} term={"nreverse"}><b>nreverse</b></ClLinks>, <ClLinks styled={true} term={"nconc"}><b>nconc</b></ClLinks> 
 
 
 
@@ -118,7 +118,7 @@ Although it might be implemented differently, **nreconc** is constrained to have
 
 
 
-The following functional equivalences are true, although good *implementations* will typically use a faster algorithm for achieving the same effect: 
+The following functional equivalences are true, although good <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> will typically use a faster algorithm for achieving the same effect: 
 
 
 
@@ -134,11 +134,11 @@ The following functional equivalences are true, although good *implementations* 
 
 
 
-(revappend *list tail*) *≡* (nconc (reverse *list*) *tail*) 
+(revappend *list tail*) *≡* (nconc (reverse <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>) 
 
 
 
-(nreconc *list tail*) *≡* (nconc (nreverse *list*) *tail*) 
+(nreconc *list tail*) *≡* (nconc (nreverse <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>) 
 
 
 

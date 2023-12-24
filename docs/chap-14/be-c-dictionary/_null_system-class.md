@@ -6,7 +6,7 @@
 
 
 
-**null**, **symbol**, **list**, **sequence**, **t** 
+<ClLinks styled={true} term={"null"}><b>null</b></ClLinks>, <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>, <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>, <ClLinks styled={true} term={"sequence"}><b>sequence</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The only *object* of *type* **null** is **nil**, which represents the *empty list* and can also be notated (). 
+The only <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"null"}><b>null</b></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, which represents the *empty list* and can also be notated (). 
 
 
 

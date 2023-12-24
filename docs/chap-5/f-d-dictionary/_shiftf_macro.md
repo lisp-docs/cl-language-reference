@@ -1,4 +1,4 @@
-**shiftf** *Macro* 
+**shiftf** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**shiftf** *\{place\}*<sup>+</sup> *newvalue ! old-value-1* 
+<ClLinks styled={true} term={"shiftf"}><b>shiftf</b></ClLinks> <ClLinks styled={true} term={"place"}><i>\{place\}</i></ClLinks><sup>+</sup> *newvalue ! old-value-1* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*place*—a *place*. 
+<ClLinks styled={true} term={"place"}><i>place</i></ClLinks>—a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. 
 
 
 
-*newvalue*—a *form*; evaluated. 
+*newvalue*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated. 
 
 
 
-*old-value-1*—an *object* (the old *value* of the first *place*). 
+*old-value-1*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> (the old <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of the first <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>). 
 
 
 
@@ -30,19 +30,19 @@
 
 
 
-**shiftf** modifies the values of each *place* by storing *newvalue* into the last *place*, and shifting the values of the second through the last *place* into the remaining *places*. 
+<ClLinks styled={true} term={"shiftf"}><b>shiftf</b></ClLinks> modifies the values of each <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> by storing *newvalue* into the last <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, and shifting the values of the second through the last <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> into the remaining <ClLinks styled={true} term={"place"}><i>places</i></ClLinks>. 
 
 
 
-If *newvalue* produces more values than there are store variables, the extra values are ignored. If *newvalue* produces fewer values than there are store variables, the missing values are set to **nil**. 
+If *newvalue* produces more values than there are store variables, the extra values are ignored. If *newvalue* produces fewer values than there are store variables, the missing values are set to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-In the form (shiftf *place1 place2* ... *placen newvalue*), the values in *place1* through *placen* are *read* and saved, and *newvalue* is evaluated, for a total of n+1 values in all. Values 2 through n+1 are then stored into *place1* through *placen*, respectively. It is as if all the *places* form a shift register; the *newvalue* is shifted in from the right, all values shift over to the left one place, and the value shifted out of *place1* is returned. 
+In the form (shiftf *place1 place2* ... *placen newvalue*), the values in *place1* through *placen* are <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> and saved, and *newvalue* is evaluated, for a total of n+1 values in all. Values 2 through n+1 are then stored into *place1* through *placen*, respectively. It is as if all the <ClLinks styled={true} term={"place"}><i>places</i></ClLinks> form a shift register; the *newvalue* is shifted in from the right, all values shift over to the left one place, and the value shifted out of *place1* is returned. 
 
 
 
-For information about the *evaluation* of *subforms* of *places*, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
+For information about the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks styled={true} term={"subform"}><i>subforms</i></ClLinks> of <ClLinks styled={true} term={"place"}><i>places</i></ClLinks>, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
 
 
 
@@ -71,7 +71,7 @@ x *!* (A Z C D)
 
 
 
-**define-setf-expander**, **defsetf**, **\*macroexpand-hook\*** 
+<ClLinks styled={true} term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>, <ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks>, **\*macroexpand-hook\*** 
 
 
 
@@ -79,7 +79,7 @@ x *!* (A Z C D)
 
 
 
-**setf**, **rotatef**, Section 5.1 (Generalized Reference) 
+<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>, <ClLinks styled={true} term={"rotatef"}><b>rotatef</b></ClLinks>, Section 5.1 (Generalized Reference) 
 
 
 
@@ -131,7 +131,7 @@ var1)
 
 
 
-except that the latter would evaluate any *subforms* of each place twice, whereas **shiftf** evaluates them once. For example, 
+except that the latter would evaluate any <ClLinks styled={true} term={"subform"}><i>subforms</i></ClLinks> of each place twice, whereas <ClLinks styled={true} term={"shiftf"}><b>shiftf</b></ClLinks> evaluates them once. For example, 
 
 
 
@@ -167,7 +167,7 @@ x *!* (A B Z D)
 
 
 
-**rotatef** 
+<ClLinks styled={true} term={"rotatef"}><b>rotatef</b></ClLinks> 
 
 
 

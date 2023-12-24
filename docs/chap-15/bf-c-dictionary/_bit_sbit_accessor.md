@@ -1,4 +1,4 @@
-**bit, sbit** *Accessor* 
+**bit, sbit** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,14 +6,20 @@
 
 
 
-**bit** *bit-array* &amp;rest *subscripts → bit* 
+<ClLinks styled={true} term={"bit"}><b>bit</b></ClLinks> *bit-array* &amp;rest *subscripts → bit* 
 
 
 
+<!-- <ClLinks styled={true} term={"sbit"}><b>sbit</b></ClLinks> *bit-array* &amp;rest *subscripts → bit*  -->
 **sbit** *bit-array* &amp;rest *subscripts → bit* 
 
 
 
+<!-- **(setf (bit** *bit-array* &amp;rest *subscripts***)** *new-bit<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks>  -->
+
+
+
+<!-- **(setf (sbit** *bit-array* &amp;rest *subscripts***)** *new-bit<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks>  -->
 **(setf (bit** *bit-array* &amp;rest *subscripts***)** *new-bit***)** 
 
 
@@ -26,15 +32,15 @@
 
 
 
-*bit-array*—for **bit**, a *bit array*; for **sbit**, a *simple bit array*. 
+*bit-array*—for <ClLinks styled={true} term={"bit"}><b>bit</b></ClLinks>, a *bit array*; for <ClLinks styled={true} term={"sbit"}><b>sbit</b></ClLinks>, a *simple bit array*. 
 
 
 
-*subscripts*—a *list* of *valid array indices* for the *bit-array*. 
+*subscripts*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *valid array indices* for the *bit-array*. 
 
 
 
-*bit*—a *bit*. 
+<ClLinks styled={true} term={"bit"}><i>bit</i></ClLinks>—a <ClLinks styled={true} term={"bit"}><i>bit</i></ClLinks>. 
 
 
 
@@ -42,11 +48,11 @@
 
 
 
-**bit** and **sbit** *access* the *bit-array element* specified by *subscripts*. 
+<ClLinks styled={true} term={"bit"}><b>bit</b></ClLinks> and <ClLinks styled={true} term={"sbit"}><b>sbit</b></ClLinks> <ClLinks styled={true} term={"access"}><i>access</i></ClLinks> the *bit-array element* specified by *subscripts*. 
 
 
 
-These *functions* ignore the *fill pointer* when *accessing elements*. 
+These <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> ignore the *fill pointer* when *accessing elements*. 
 
 
 
@@ -71,7 +77,7 @@ These *functions* ignore the *fill pointer* when *accessing elements*.
 
 
 
-**aref**, Section 3.2.1 (Compiler Terminology) 
+<ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
 
 
 
@@ -79,11 +85,11 @@ These *functions* ignore the *fill pointer* when *accessing elements*.
 
 
 
-**bit** and **sbit** are like **aref** except that they require *arrays* to be a *bit array* and a *simple bit array*, respectively. 
+<ClLinks styled={true} term={"bit"}><b>bit</b></ClLinks> and <ClLinks styled={true} term={"sbit"}><b>sbit</b></ClLinks> are like <ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks> except that they require <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> to be a *bit array* and a *simple bit array*, respectively. 
 
 
 
-**bit** and **sbit**, unlike **char** and **schar**, allow the first argument to be an *array* of any *rank*. 
+<ClLinks styled={true} term={"bit"}><b>bit</b></ClLinks> and <ClLinks styled={true} term={"sbit"}><b>sbit</b></ClLinks>, unlike <ClLinks styled={true} term={"char"}><b>char</b></ClLinks> and <ClLinks styled={true} term={"schar"}><b>schar</b></ClLinks>, allow the first argument to be an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> of any <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks>. 
 
 
 
@@ -147,11 +153,11 @@ These *functions* ignore the *fill pointer* when *accessing elements*.
 
 
 
-*Opt-arg*—a *bit array*, or **t**, or **nil**. The default is **nil**. 
+*Opt-arg*—a *bit array*, or <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*Bit-array*, *bit-array1*, *bit-array2*, and *opt-arg* (if an *array*) must all be of the same *rank* and *dimensions*. 
+*Bit-array*, *bit-array1*, *bit-array2*, and *opt-arg* (if an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>) must all be of the same <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks> and <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks>. 
 
 
 
@@ -163,7 +169,7 @@ These *functions* ignore the *fill pointer* when *accessing elements*.
 
 
 
-These functions perform bit-wise logical operations on *bit-array1* and *bit-array2* and return an *array* of matching *rank* and *dimensions*, such that any given bit of the result is produced by operating on corresponding bits from each of the arguments. 
+These functions perform bit-wise logical operations on *bit-array1* and *bit-array2* and return an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> of matching <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks> and <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks>, such that any given bit of the result is produced by operating on corresponding bits from each of the arguments. 
 
 
 
@@ -179,15 +185,15 @@ These functions perform bit-wise logical operations on *bit-array1* and *bit-arr
 
 
 
-In the case of **bit-not**, an *array* of *rank* and *dimensions* matching *bit-array* is returned that contains a copy of *bit-array* with all the bits inverted. 
+In the case of **bit-not**, an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> of <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks> and <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks> matching *bit-array* is returned that contains a copy of *bit-array* with all the bits inverted. 
 
 
 
-If *opt-arg* is of type (array bit) the contents of the result are destructively placed into *opt-arg*. If *opt-arg* is the symbol **t**, *bit-array* or *bit-array1* is replaced with the result; if *opt-arg* is **nil** or omitted, a new *array* is created to contain the result. 
+If *opt-arg* is of type (array bit) the contents of the result are destructively placed into *opt-arg*. If *opt-arg* is the symbol <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, *bit-array* or *bit-array1* is replaced with the result; if *opt-arg* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> or omitted, a new <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is created to contain the result. 
 
 
 
-Figure 15–4 indicates the logical operation performed by each of the *functions*. 
+Figure 15–4 indicates the logical operation performed by each of the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks>. 
 
 
 
@@ -226,7 +232,7 @@ Figure 15–4 indicates the logical operation performed by each of the *function
 
 
 
-**lognot**, **logand** 
+<ClLinks styled={true} term={"lognot"}><b>lognot</b></ClLinks>, <ClLinks styled={true} term={"logand"}><b>logand</b></ClLinks> 
 
 
 

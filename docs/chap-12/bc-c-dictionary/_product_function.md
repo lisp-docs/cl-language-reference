@@ -1,4 +1,4 @@
-**\*** *Function*
+**\*** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks>
 
 **Syntax:**
 
@@ -6,13 +6,13 @@
 
 **Arguments and Values:**
 
-*number*—a *number* .
+<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> .
 
-*product*—a *number* .
+*product*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> .
 
 **Description:**
 
-Returns the product of *numbers*, performing any necessary type conversions in the process. If no *numbers* are supplied, 1 is returned.
+Returns the product of <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks>, performing any necessary type conversions in the process. If no <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks> are supplied, 1 is returned.
 
 **Examples:**
 
@@ -26,7 +26,7 @@ Returns the product of *numbers*, performing any necessary type conversions in t
 
 **Exceptional Situations:**
 
-Might signal **type-error** if some *argument* is not a *number* . Might signal **arithmetic-error**.
+Might signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if some <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> is not a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
 
 **See Also:**
 

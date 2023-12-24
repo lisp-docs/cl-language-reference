@@ -1,4 +1,4 @@
-**symbol-package** *Function* 
+**symbol-package** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**symbol-package** *symbol → contents* 
+<ClLinks styled={true} term={"symbol-package"}><b>symbol-package</b></ClLinks> *symbol → contents* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*symbol*—a *symbol*. 
+<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*contents*—a *package object* or **nil**. 
+*contents*—a *package object* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the *home package* of *symbol*. 
+Returns the *home package* of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -62,7 +62,7 @@ Returns the *home package* of *symbol*.
 
 
 
-**import**, **intern**, **unintern** 
+<ClLinks styled={true} term={"import"}><b>import</b></ClLinks>, <ClLinks styled={true} term={"intern"}><b>intern</b></ClLinks>, <ClLinks styled={true} term={"unintern"}><b>unintern</b></ClLinks> 
 
 
 
@@ -70,7 +70,7 @@ Returns the *home package* of *symbol*.
 
 
 
-Should signal an error of *type* **type-error** if *symbol* is not a *symbol*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -90,7 +90,7 @@ Should signal an error of *type* **type-error** if *symbol* is not a *symbol*.
 
 
 
-**intern** 
+<ClLinks styled={true} term={"intern"}><b>intern</b></ClLinks> 
 
 
 

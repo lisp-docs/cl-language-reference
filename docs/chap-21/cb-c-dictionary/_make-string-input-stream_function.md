@@ -1,4 +1,4 @@
-**make-string-input-stream** *Function* 
+**make-string-input-stream** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**make-string-input-stream** *string* &amp;optional *start end → string-stream* 
+<ClLinks styled={true} term={"make-string-input-stream"}><b>make-string-input-stream</b></ClLinks> <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> &amp;optional *start end → string-stream* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*string*—a *string*. 
+<ClLinks styled={true} term={"string"}><i>string</i></ClLinks>—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
 
 
 
-*start*, *end*—*bounding index designators* of *string*. The defaults for *start* and *end* are 0 and **nil**, respectively. 
+*start*, *end*—*bounding index designators* of <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns an *input string stream*. This *stream* will supply, in order, the *characters* in the substring of *string bounded* by *start* and *end*. After the last *character* has been supplied, the *string stream* will then be at *end of file*. 
+Returns an *input string stream*. This <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> will supply, in order, the <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> in the substring of *string bounded* by *start* and *end*. After the last <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> has been supplied, the *string stream* will then be at *end of file*. 
 
 
 
@@ -49,7 +49,7 @@ Returns an *input string stream*. This *stream* will supply, in order, the *char
 
 
 
-**with-input-from-string** 
+<ClLinks styled={true} term={"with-input-from-string"}><b>with-input-from-string</b></ClLinks> 
 
 
 

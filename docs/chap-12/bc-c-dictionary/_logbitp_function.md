@@ -1,4 +1,4 @@
-**logbitp** *Function* 
+**logbitp** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**logbitp** *index integer → generalized-boolean* 
+<ClLinks styled={true} term={"logbitp"}><b>logbitp</b></ClLinks> *index integer → generalized-boolean* 
 
 
 
@@ -65,7 +65,7 @@ Negative *integers* are treated as if they were in two’s-complement notation.
 
 
 
-Should signal an error of *type* **type-error** if *index* is not a non-negative *integer* . Should signal an error of *type* **type-error** if *integer* is not an *integer* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *index* is not a non-negative *integer* . Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *integer* is not an *integer* . 
 
 
 

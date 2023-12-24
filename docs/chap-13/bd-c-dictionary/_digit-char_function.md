@@ -1,4 +1,4 @@
-**digit-char** *Function* 
+**digit-char** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**digit-char** *weight* &amp;optional *radix → char* 
+<ClLinks styled={true} term={"digit-char"}><b>digit-char</b></ClLinks> *weight* &amp;optional *radix → char* 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-*radix*—a *radix* . The default is 10. 
+<ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks>—a <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> . The default is 10. 
 
 
 
-*char*—a *character* or *false*. 
+*char*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> or <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-If *weight* is less than *radix*, **digit-char** returns a *character* which has that *weight* when considered as a digit in the specified radix. If the resulting *character* is to be an *alphabetic*<sub>1</sub> *character* , it will be an uppercase *character* . 
+If *weight* is less than <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks>, <ClLinks styled={true} term={"digit-char"}><b>digit-char</b></ClLinks> returns a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> which has that *weight* when considered as a digit in the specified radix. If the resulting <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is to be an <ClLinks styled={true} term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>1</sub> <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> , it will be an uppercase <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
-If *weight* is greater than or equal to *radix*, **digit-char** returns *false*. 
+If *weight* is greater than or equal to <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks>, <ClLinks styled={true} term={"digit-char"}><b>digit-char</b></ClLinks> returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -55,7 +55,7 @@ If *weight* is greater than or equal to *radix*, **digit-char** returns *false*.
 
 
 
-**digit-char-p**, **graphic-char-p**, Section 2.1 (Character Syntax) 
+<ClLinks styled={true} term={"digit-char-p"}><b>digit-char-p</b></ClLinks>, <ClLinks styled={true} term={"graphic-char-p"}><b>graphic-char-p</b></ClLinks>, Section 2.1 (Character Syntax) 
 
 
 

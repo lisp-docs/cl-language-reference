@@ -1,4 +1,4 @@
-**array-total-size** *Function* 
+**array-total-size** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**array-total-size** *array → size* 
+<ClLinks styled={true} term={"array-total-size"}><b>array-total-size</b></ClLinks> *array → size* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*array*—an *array*. 
+<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the *array total size* of the *array*. 
+Returns the *array total size* of the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -57,7 +57,7 @@ Returns the *array total size* of the *array*.
 
 
 
-Should signal an error of *type* **type-error** if its argument is not an *array*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -65,7 +65,7 @@ Should signal an error of *type* **type-error** if its argument is not an *array
 
 
 
-**make-array**, **array-dimensions** 
+<ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks styled={true} term={"array-dimensions"}><b>array-dimensions</b></ClLinks> 
 
 
 
@@ -73,11 +73,11 @@ Should signal an error of *type* **type-error** if its argument is not an *array
 
 
 
-If the *array* is a *vector* with a *fill pointer* , the *fill pointer* is ignored when calculating the *array total size*. 
+If the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , the *fill pointer* is ignored when calculating the *array total size*. 
 
 
 
-Since the product of no arguments is one, the *array total size* of a zero-dimensional *array* is one. 
+Since the product of no arguments is one, the *array total size* of a zero-dimensional <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is one. 
 
 
 

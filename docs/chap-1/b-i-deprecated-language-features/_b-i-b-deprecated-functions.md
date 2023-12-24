@@ -2,7 +2,7 @@
 
 
 
-The *functions* in Figure 1–2 are deprecated. 
+The <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> in Figure 1–2 are deprecated. 
 
 
 

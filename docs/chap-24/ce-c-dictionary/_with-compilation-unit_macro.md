@@ -1,4 +1,4 @@
-**with-compilation-unit** *Macro* 
+**with-compilation-unit** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**with-compilation-unit** ([[ *↓option* ]]) *\{form\}*\* → \{result\}\* 
+<ClLinks styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></ClLinks> ([[ *↓option* ]]) <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-*override*—a *generalized boolean*; evaluated. The default is **nil**. 
+*override*—a *generalized boolean*; evaluated. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*forms*—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the *values* returned by the *forms*. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -46,19 +46,19 @@
 
 
 
-Executes *forms* from left to right. Within the *dynamic environment* of **with-compilation-unit**, actions deferred by the compiler until the end of compilation will be deferred until the end of the outermost call to **with-compilation-unit**. 
+Executes <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> from left to right. Within the *dynamic environment* of <ClLinks styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></ClLinks>, actions deferred by the compiler until the end of compilation will be deferred until the end of the outermost call to <ClLinks styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></ClLinks>. 
 
 
 
-The set of *options* permitted may be extended by the implementation, but the only *standardized* keyword is :override. 
+The set of *options* permitted may be extended by the implementation, but the only <ClLinks styled={true} term={"standardized"}><i>standardized</i></ClLinks> keyword is :override. 
 
 
 
-If nested dynamically only the outer call to **with-compilation-unit** has any effect unless the value associated with :override is *true*, in which case warnings are deferred only to the end of the innermost call for which *override* is *true*. 
+If nested dynamically only the outer call to <ClLinks styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></ClLinks> has any effect unless the value associated with :override is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, in which case warnings are deferred only to the end of the innermost call for which *override* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 
 
 
 
-The function **compile-file** provides the effect of 
+The function <ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks> provides the effect of 
 
 
 
@@ -66,11 +66,11 @@ The function **compile-file** provides the effect of
 
 
 
-around its *code*. 
+around its <ClLinks styled={true} term={"code"}><i>code</i></ClLinks>. 
 
 
 
-Any *implementation-dependent* extensions can only be provided as the result of an explicit programmer request by use of an *implementation-dependent* keyword. *Implementations* are forbidden from attaching additional meaning to a use of this macro which involves either no keywords or just the keyword :override. 
+Any <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> extensions can only be provided as the result of an explicit programmer request by use of an <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> keyword. <ClLinks styled={true} term={"implementation"}><i>Implementations</i></ClLinks> are forbidden from attaching additional meaning to a use of this macro which involves either no keywords or just the keyword :override. 
 
 
 
@@ -89,7 +89,7 @@ Note however that if the implementation does not normally defer any warnings, us
 
 
 
-**compile**, **compile-file** 
+<ClLinks styled={true} term={"compile"}><b>compile</b></ClLinks>, <ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks> 
 
 
 
@@ -105,7 +105,7 @@ System
 
 
 
-*∗***features***∗* 
+*∗<ClLinks styled={true} term={"features"}><b><ClLinks styled={true} term={"feature"}><i>features</i></ClLinks></b></ClLinks>∗* 
 
 
 

@@ -1,4 +1,4 @@
-**tree-equal** *Function* 
+**tree-equal** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**tree-equal** *tree-1 tree-2* &amp;key *test test-not → generalized-boolean* 
+<ClLinks styled={true} term={"tree-equal"}><b>tree-equal</b></ClLinks> *tree-1 tree-2* &amp;key *test test-not → generalized-boolean* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*tree-1*—a *tree*. 
+*tree-1*—a <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks>. 
 
 
 
-*tree-2*—a *tree*. 
+*tree-2*—a <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks>. 
 
 
 
-*test*—a *designator* for a *function* of two *arguments* that returns a *generalized boolean*. *test-not*—a *designator* for a *function* of two *arguments* that returns a *generalized boolean*. *generalized-boolean*—a *generalized boolean*. 
+*test*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *generalized-boolean*—a *generalized boolean*. 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-**tree-equal** tests whether two trees are of the same shape and have the same leaves. **tree-equal** returns *true* if *tree-1* and *tree-2* are both *atoms* and *satisfy the test*, or if they are both *conses* and the *car* of *tree-1* is **tree-equal** to the *car* of *tree-2* and the *cdr* of *tree-1* is **tree-equal** to the *cdr* of *tree-2*. Otherwise, **tree-equal** returns *false*. 
+<ClLinks styled={true} term={"tree-equal"}><b>tree-equal</b></ClLinks> tests whether two trees are of the same shape and have the same leaves. <ClLinks styled={true} term={"tree-equal"}><b>tree-equal</b></ClLinks> returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if *tree-1* and *tree-2* are both <ClLinks styled={true} term={"atom"}><i>atoms</i></ClLinks> and *satisfy the test*, or if they are both *conses* and the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of *tree-1* is <ClLinks styled={true} term={"tree-equal"}><b>tree-equal</b></ClLinks> to the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of *tree-2* and the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of *tree-1* is <ClLinks styled={true} term={"tree-equal"}><b>tree-equal</b></ClLinks> to the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of *tree-2*. Otherwise, <ClLinks styled={true} term={"tree-equal"}><b>tree-equal</b></ClLinks> returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
-**tree-equal** recursively compares *conses* but not any other *objects* that have components. 
+<ClLinks styled={true} term={"tree-equal"}><b>tree-equal</b></ClLinks> recursively compares *conses* but not any other <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> that have components. 
 
 
 
-The first argument to the :test or :test-not function is *tree-1* or a *car* or *cdr* of *tree-1*; the second argument is *tree-2* or a *car* or *cdr* of *tree-2*. 
+The first argument to the :test or :test-not function is *tree-1* or a <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> or <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of *tree-1*; the second argument is *tree-2* or a <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> or <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of *tree-2*. 
 
 
 
@@ -67,7 +67,7 @@ The consequences are undefined if both *tree-1* and *tree-2* are circular.
 
 
 
-**equal**, Section 3.6 (Traversal Rules and Side Effects) 
+<ClLinks styled={true} term={"equal"}><b>equal</b></ClLinks>, Section 3.6 (Traversal Rules and Side Effects) 
 
 
 

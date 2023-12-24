@@ -1,4 +1,4 @@
-**member, member-if, member-if-not** *Function* 
+**member, member-if, member-if-not** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,15 +6,15 @@
 
 
 
-**member** *item list* &amp;key *key test test-not → tail* 
+<ClLinks styled={true} term={"member"}><b>member</b></ClLinks> *item list* &amp;key *key test test-not → tail* 
 
 
 
-**member-if** *predicate list* &amp;key *key → tail* 
+<ClLinks styled={true} term={"member-if"}><b>member-if</b></ClLinks> *predicate list* &amp;key *key → tail* 
 
 
 
-**member-if-not** *predicate list* &amp;key *key → tail* 
+<ClLinks styled={true} term={"member-if-not"}><b>member-if-not</b></ClLinks> *predicate list* &amp;key *key → tail* 
 
 
 
@@ -22,19 +22,19 @@
 
 
 
-*item*—an *object*. 
+*item*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*list*—a *proper list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a *proper list*. 
 
 
 
-*predicate*—a *designator* for a *function* of one *argument* that returns a *generalized boolean*. *test*—a *designator* for a *function* of two *arguments* that returns a *generalized boolean*. *test-not*—a *designator* for a *function* of two *arguments* that returns a *generalized boolean*. *key*—a *designator* for a *function* of one argument, or **nil**. 
+<ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> that returns a *generalized boolean*. *test<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *key*—a *designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*tail*—a *list*. 
+<ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -42,15 +42,15 @@
 
 
 
-**member**, **member-if**, and **member-if-not** each search *list* for *item* or for a top-level element that *satisfies the test*. The argument to the *predicate* function is an element of *list*. 
+<ClLinks styled={true} term={"member"}><b>member</b></ClLinks>, <ClLinks styled={true} term={"member-if"}><b>member-if</b></ClLinks>, and <ClLinks styled={true} term={"member-if-not"}><b>member-if-not</b></ClLinks> each search <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> for *item* or for a top-level element that *satisfies the test*. The argument to the <ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks> function is an element of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
-If some element *satisfies the test*, the tail of *list* beginning with this element is returned; otherwise **nil** is returned. 
+If some element *satisfies the test*, the tail of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> beginning with this element is returned; otherwise <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is returned. 
 
 
 
-*list* is searched on the top level only. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is searched on the top level only. 
 
 
 
@@ -83,7 +83,7 @@ If some element *satisfies the test*, the tail of *list* beginning with this ele
 
 
 
-Should be prepared to signal an error of *type* **type-error** if *list* is not a *proper list*. 
+Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is not a *proper list*. 
 
 
 
@@ -91,7 +91,7 @@ Should be prepared to signal an error of *type* **type-error** if *list* is not 
 
 
 
-**find**, **position**, Section 3.6 (Traversal Rules and Side Effects) 
+<ClLinks styled={true} term={"find"}><b>find</b></ClLinks>, <ClLinks styled={true} term={"position"}><b>position</b></ClLinks>, Section 3.6 (Traversal Rules and Side Effects) 
 
 
 
@@ -103,7 +103,7 @@ The :test-not parameter is deprecated.
 
 
 
-The *function* **member-if-not** is deprecated. 
+The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"member-if-not"}><b>member-if-not</b></ClLinks> is deprecated. 
 
 
 
@@ -115,7 +115,7 @@ In the following
 
 
 
-the value returned by **member** is *identical* to the portion of the *list* beginning with a. Thus **rplaca** on the result of **member** can be used to alter the part of the *list* where a was found (assuming a check has been made that **member** did not return **nil**). 
+the value returned by <ClLinks styled={true} term={"member"}><b>member</b></ClLinks> is <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> to the portion of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> beginning with a. Thus <ClLinks styled={true} term={"rplaca"}><b>rplaca</b></ClLinks> on the result of <ClLinks styled={true} term={"member"}><b>member</b></ClLinks> can be used to alter the part of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> where a was found (assuming a check has been made that <ClLinks styled={true} term={"member"}><b>member</b></ClLinks> did not return <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>). 
 
 
 

@@ -1,4 +1,4 @@
-**formatter** *Macro* 
+**formatter** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**formatter** *control-string → function* 
+<ClLinks styled={true} term={"formatter"}><b>formatter</b></ClLinks> *control-string → function* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*function*—a *function*. 
+<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a *function* which has behavior equivalent to: 
+Returns a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> which has behavior equivalent to: 
 
 
 
@@ -42,7 +42,7 @@ Returns a *function* which has behavior equivalent to:
 
 
 
-where *arguments-tail* is either the tail of *arguments* which has as its *car* the argument that would be processed next if there were more format directives in the *control-string*, or else **nil** if no more *arguments* follow the most recently processed argument. 
+where *arguments-tail* is either the tail of <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> which has as its <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> the argument that would be processed next if there were more format directives in the *control-string*, or else <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if no more <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> follow the most recently processed argument. 
 
 
 
@@ -72,7 +72,7 @@ Might signal an error (at macro expansion time or at run time) if the argument i
 
 
 
-**format** 
+<ClLinks styled={true} term={"format"}><b>format</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**conjugate** *Function* 
+**conjugate** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**conjugate** *number → conjugate* 
+<ClLinks styled={true} term={"conjugate"}><b>conjugate</b></ClLinks> *number → conjugate* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*number*—a *number* . 
+<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
 
 
 
-*conjugate*—a *number* . 
+*conjugate*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the complex conjugate of *number*. The conjugate of a *real* number is itself. 
+Returns the complex conjugate of <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>. The conjugate of a *real* number is itself. 
 
 
 
@@ -53,7 +53,7 @@ Returns the complex conjugate of *number*. The conjugate of a *real* number is i
 
 
 
-For a *complex* number z, 
+For a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> number z, 
 
 
 

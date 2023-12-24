@@ -2,51 +2,51 @@
 
 
 
-The macro **defclass** is used to define a new named *class*. 
+The macro <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks> is used to define a new named <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. 
 
 
 
-The definition of a *class* includes: 
+The definition of a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> includes: 
 
 
 
-*•* The *name* of the new *class*. For newly-defined *classes* this *name* is a *proper name*. *•* The list of the direct *superclasses* of the new *class*. 
+*•* The <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the new <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. For newly-defined *classes* this <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is a *proper name*. *•* The list of the direct *superclasses* of the new <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. 
 
 
 
-*•* A set of *slot specifiers*. Each *slot specifier* includes the *name* of the *slot* and zero or more *slot* options. A *slot* option pertains only to a single *slot*. If a *class* definition contains two *slot specifiers* with the same *name*, an error is signaled. 
+*•* A set of *slot specifiers*. Each *slot specifier* includes the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> and zero or more <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> options. A <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> option pertains only to a single <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. If a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> definition contains two *slot specifiers* with the same <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>, an error is signaled. 
 
 
 
-*•* A set of *class* options. Each *class* option pertains to the *class* as a whole. 
+*•* A set of <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> options. Each <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> option pertains to the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> as a whole. 
 
 
 
-The *slot* options and *class* options of the **defclass** form provide mechanisms for the following: *•* Supplying a default initial value *form* for a given *slot*. 
+The <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> options and <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> options of the <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks> form provide mechanisms for the following: *•* Supplying a default initial value <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> for a given <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 
 
 
 
-*•* Requesting that *methods* for *generic functions* be automatically generated for reading or writing *slots*. 
+*•* Requesting that <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> for *generic functions* be automatically generated for reading or writing <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks>. 
 
 
 
-*•* Controlling whether a given *slot* is shared by all *instances* of the *class* or whether each *instance* of the *class* has its own *slot*. 
+*•* Controlling whether a given <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> is shared by all <ClLinks styled={true} term={"instance"}><i>instances</i></ClLinks> of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> or whether each <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> has its own <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 
 
 
 
-*•* Supplying a set of initialization arguments and initialization argument defaults to be used in *instance* creation. 
+*•* Supplying a set of initialization arguments and initialization argument defaults to be used in <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> creation. 
 
 
 
-*•* Indicating that the *metaclass* is to be other than the default. The :metaclass option is reserved for future use; an implementation can be extended to make use of the :metaclass option. 
+*•* Indicating that the <ClLinks styled={true} term={"metaclass"}><i>metaclass</i></ClLinks> is to be other than the default. The :metaclass option is reserved for future use; an implementation can be extended to make use of the :metaclass option. 
 
 
 
-*•* Indicating the expected *type* for the value stored in the *slot*. 
+*•* Indicating the expected <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> for the value stored in the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 
 
 
 
-*•* Indicating the *documentation string* for the *slot*.  
+*•* Indicating the *documentation string* for the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>.  
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-Except as explicitly stated otherwise, for any *standardized function* that takes a *parameter* that is required to be a *tree*, the consequences are undefined if that *tree* is circular. 
+Except as explicitly stated otherwise, for any *standardized function* that takes a <ClLinks styled={true} term={"parameter"}><i>parameter</i></ClLinks> that is required to be a <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks>, the consequences are undefined if that <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> is circular. 
 
 
 

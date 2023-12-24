@@ -6,19 +6,19 @@ A number of the functions in the condition system take arguments which are ident
 
 
 
-*datum* &amp;rest *arguments* 
+*datum* &amp;rest <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> 
 
 
 
-Taken together, the *datum* and the *arguments* are “*designators* for a *condition* of default type *default-type*.” How the denoted *condition* is computed depends on the type of the *datum*: 
+Taken together, the *datum* and the <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> are “<ClLinks styled={true} term={"designator"}><i>designators</i></ClLinks> for a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of default type *default-type*.” How the denoted <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is computed depends on the type of the *datum*: 
 
 
 
-*•* If the *datum* is a *symbol* naming a *condition type . . .* 
+*•* If the *datum* is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> naming a *condition type . . .* 
 
 
 
-The denoted *condition* is the result of 
+The denoted <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is the result of 
 
 
 
@@ -42,7 +42,7 @@ The denoted *condition* is the result of
 
 
 
-The denoted *condition* is the result of 
+The denoted <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is the result of 
 
 
 
@@ -54,11 +54,11 @@ The denoted *condition* is the result of
 
 
 
-:format-arguments *arguments*) 
+:format-arguments <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>) 
 
 
 
-where the *defaulted-type* is a *subtype* of *default-type*. 
+where the *defaulted-type* is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of *default-type*. 
 
 
 
@@ -66,7 +66,7 @@ where the *defaulted-type* is a *subtype* of *default-type*.
 
 
 
-The denoted *condition* is the *datum* itself. In this case, unless otherwise specified by the description of the *operator* in question, the *arguments* must be *null*; that is, the consequences are undefined if any *arguments* were supplied. 
+The denoted <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is the *datum* itself. In this case, unless otherwise specified by the description of the <ClLinks styled={true} term={"operator"}><i>operator</i></ClLinks> in question, the <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> must be <ClLinks styled={true} term={"null"}><i>null</i></ClLinks>; that is, the consequences are undefined if any <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> were supplied. 
 
 
 

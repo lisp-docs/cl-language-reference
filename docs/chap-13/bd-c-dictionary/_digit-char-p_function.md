@@ -1,4 +1,4 @@
-**digit-char-p** *Function* 
+**digit-char-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**digit-char-p** *char* &amp;optional *radix → weight* 
+<ClLinks styled={true} term={"digit-char-p"}><b>digit-char-p</b></ClLinks> *char* &amp;optional *radix → weight* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*char*—a *character* . 
+*char*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-*radix*—a *radix* . The default is 10. 
+<ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks>—a <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> . The default is 10. 
 
 
 
-*weight*—either a non-negative *integer* less than *radix*, or *false*. 
+*weight*—either a non-negative *integer* less than <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks>, or <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-Tests whether *char* is a digit in the specified *radix* (*i.e.*, with a weight less than *radix*). If it is a digit in that *radix*, its weight is returned as an *integer* ; otherwise **nil** is returned. 
+Tests whether *char* is a digit in the specified <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> (*i.e.*, with a weight less than <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks>). If it is a digit in that <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks>, its weight is returned as an *integer* ; otherwise <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is returned. 
 
 
 
@@ -78,7 +78,7 @@ None. (In particular, the results of this predicate are independent of any speci
 
 
 
-**alphanumericp** 
+<ClLinks styled={true} term={"alphanumericp"}><b>alphanumericp</b></ClLinks> 
 
 
 

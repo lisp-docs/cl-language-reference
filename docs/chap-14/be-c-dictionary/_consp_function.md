@@ -1,4 +1,4 @@
-**consp** *Function* 
+**consp** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**consp** *object → generalized-boolean* 
+<ClLinks styled={true} term={"consp"}><b>consp</b></ClLinks> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Returns *true* if *object* is of *type* **cons**; otherwise, returns *false*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"cons"}><b>cons</b></ClLinks>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -55,7 +55,7 @@ The *empty list* is not a *cons*, so
 
 
 
-**listp** 
+<ClLinks styled={true} term={"listp"}><b>listp</b></ClLinks> 
 
 
 
@@ -63,7 +63,7 @@ The *empty list* is not a *cons*, so
 
 
 
-(consp *object*) *≡* (typep *object* ’cons) *≡* (not (typep *object* ’atom)) *≡* (typep *object* ’(not atom)) 
+(consp <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’cons) *≡* (not (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’atom)) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’(not atom)) 
 
 
 

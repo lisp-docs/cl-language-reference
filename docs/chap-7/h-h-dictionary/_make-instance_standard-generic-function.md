@@ -6,7 +6,7 @@
 
 
 
-**make-instance** *class* &amp;rest *initargs* &amp;key &amp;allow-other-keys → instance 
+<ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks> <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> &amp;rest *initargs* &amp;key &amp;allow-other-keys → instance 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-**make-instance** (*class* **standard-class**) &amp;rest *initargs* 
+<ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks> (<ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"standard-class"}><b>standard-class</b></ClLinks>) &amp;rest *initargs* 
 
 
 
-**make-instance** (*class* **symbol**) &amp;rest *initargs* 
+<ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks> (<ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>) &amp;rest *initargs* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*class*—a *class*, or a *symbol* that names a *class*. 
+<ClLinks styled={true} term={"class"}><i>class</i></ClLinks>—a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>, or a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that names a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-*instance*—a *fresh instance* of *class class*. 
+<ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>—a *fresh instance* of *class class*. 
 
 
 
@@ -54,19 +54,19 @@
 
 
 
-The *generic function* **make-instance** creates and returns a new *instance* of the given *class*. 
+The *generic function* <ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks> creates and returns a new <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> of the given <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. 
 
 
 
-If the second of the above *methods* is selected, that *method* invokes **make-instance** on the arguments (find-class *class*) and *initargs*. 
+If the second of the above <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> is selected, that <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> invokes <ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks> on the arguments (find-class <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>) and *initargs*. 
 
 
 
-The initialization arguments are checked within **make-instance**. 
+The initialization arguments are checked within <ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks>. 
 
 
 
-The *generic function* **make-instance** may be used as described in Section 7.1 (Object Creation and Initialization). 
+The *generic function* <ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks> may be used as described in Section 7.1 (Object Creation and Initialization). 
 
 
 
@@ -74,7 +74,7 @@ The *generic function* **make-instance** may be used as described in Section 7.1
 
 
 
-If any of the initialization arguments has not been declared as valid, an error of *type* **error** is signaled. 
+If any of the initialization arguments has not been declared as valid, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> is signaled. 
 
 
 
@@ -82,7 +82,7 @@ If any of the initialization arguments has not been declared as valid, an error 
 
 
 
-**defclass**, **class-of**, **allocate-instance**, **initialize-instance**, Section 7.1 (Object Creation and Initialization) 
+<ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks styled={true} term={"class-of"}><b>class-of</b></ClLinks>, <ClLinks styled={true} term={"allocate-instance"}><b>allocate-instance</b></ClLinks>, <ClLinks styled={true} term={"initialize-instance"}><b>initialize-instance</b></ClLinks>, Section 7.1 (Object Creation and Initialization) 
 
 
 

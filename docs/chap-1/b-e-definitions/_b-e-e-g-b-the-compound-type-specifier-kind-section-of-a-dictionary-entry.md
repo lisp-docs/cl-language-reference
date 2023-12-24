@@ -2,19 +2,19 @@
 
 
 
-An “abbreviating” *type specifier* is one that describes a *subtype* for which it is in principle possible to enumerate the *elements*, but for which in practice it is impractical to do so. 
+An “abbreviating” *type specifier* is one that describes a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> for which it is in principle possible to enumerate the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks>, but for which in practice it is impractical to do so. 
 
 
 
-A “specializing” *type specifier* is one that describes a *subtype* by restricting the *type* of one or more components of the *type*, such as *element type* or *complex part type*. 
+A “specializing” *type specifier* is one that describes a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> by restricting the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> of one or more components of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>, such as *element type* or *complex part type*. 
 
 
 
-A “predicating” *type specifier* is one that describes a *subtype* containing only those *objects* that satisfy a given *predicate*. 
+A “predicating” *type specifier* is one that describes a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> containing only those <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> that satisfy a given <ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks>. 
 
 
 
-A “combining” *type specifier* is one that describes a *subtype* in a compositional way, using combining operations (such as “and,” “or,” and “not”) on other *types*. 
+A “combining” *type specifier* is one that describes a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> in a compositional way, using combining operations (such as “and,” “or,” and “not”) on other <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>. 
 
 
 

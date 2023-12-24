@@ -1,4 +1,4 @@
-**special** *Declaration* 
+**special** <ClLinks styled={true} term={"declaration"}><i>Declaration</i></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*var*—a *symbol*. 
+*var*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*declaration* or *proclamation* 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks> or <ClLinks styled={true} term={"proclamation"}><i>proclamation</i></ClLinks> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*variable* 
+<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Specifies that all of the *vars* named are dynamic. This specifier a↵ects variable *bindings* and a↵ects references. All variable *bindings* a↵ected are made to be dynamic *bindings*, and a↵ected variable references refer to the current dynamic *binding*. For example: 
+Specifies that all of the *vars* named are dynamic. This specifier a↵ects variable <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks> and a↵ects references. All variable <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks> a↵ected are made to be dynamic <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks>, and a↵ected variable references refer to the current dynamic <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks>. For example: 
 
 
 
@@ -74,15 +74,15 @@ Specifies that all of the *vars* named are dynamic. This specifier a↵ects vari
 
 
 
-A **special** declaration does not a↵ect inner *bindings* of a *var*; the inner *bindings* implicitly shadow a **special** declaration and must be explicitly re-declared to be **special**. **special** declarations never apply to function *bindings*. 
+A <ClLinks styled={true} term={"special"}><b>special</b></ClLinks> declaration does not a↵ect inner <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks> of a *var*; the inner <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks> implicitly shadow a <ClLinks styled={true} term={"special"}><b>special</b></ClLinks> declaration and must be explicitly re-declared to be <ClLinks styled={true} term={"special"}><b>special</b></ClLinks>. <ClLinks styled={true} term={"special"}><b>special</b></ClLinks> declarations never apply to function <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks>. 
 
 
 
-**special** declarations can be either *bound declarations*, a↵ecting both a binding and references, or *free declarations*, a↵ecting only references, depending on whether the declaration is attached to a variable binding. 
+<ClLinks styled={true} term={"special"}><b>special</b></ClLinks> declarations can be either *bound declarations*, a↵ecting both a binding and references, or *free declarations*, a↵ecting only references, depending on whether the declaration is attached to a variable binding. 
 
 
 
-When used in a *proclamation*, a **special** *declaration specifier* applies to all *bindings* as well as to all references of the mentioned variables. For example, after 
+When used in a <ClLinks styled={true} term={"proclamation"}><i>proclamation</i></ClLinks>, a <ClLinks styled={true} term={"special"}><b>special</b></ClLinks> *declaration specifier* applies to all <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks> as well as to all references of the mentioned variables. For example, after 
 
 
 
@@ -102,7 +102,7 @@ Evaluation and
 
 
 
-**special** 
+<ClLinks styled={true} term={"special"}><b>special</b></ClLinks> 
 
 
 
@@ -177,7 +177,7 @@ In the contorted code above, the outermost and innermost *bindings* of y are dyn
 
 
 
-**defparameter**, **defvar** 
+<ClLinks styled={true} term={"defparameter"}><b>defparameter</b></ClLinks>, <ClLinks styled={true} term={"defvar"}><b>defvar</b></ClLinks> 
 
 
 

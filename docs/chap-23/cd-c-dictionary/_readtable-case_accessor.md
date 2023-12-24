@@ -1,4 +1,4 @@
-**readtable-case** *Accessor* 
+**readtable-case** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**readtable-case** *readtable → mode* 
+<ClLinks styled={true} term={"readtable-case"}><b>readtable-case</b></ClLinks> *readtable → mode* 
 
 
 
-**(setf (readtable-case** *readtable***)** *mode***)** 
+**(setf (readtable-case** <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>**)** *mode***)** 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*readtable*—a *readtable*. 
+<ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>—a <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-*Accesses* the *readtable case* of *readtable*, which affects the way in which the *Lisp Reader* reads *symbols* and the way in which the *Lisp Printer* writes *symbols*. 
+*Accesses* the *readtable case* of <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>, which affects the way in which the *Lisp Reader* reads <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> and the way in which the *Lisp Printer* writes <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 
@@ -56,7 +56,7 @@ See Section 23.1.2.1 (Examples of Effect of Readtable Case on the Lisp Reader) a
 
 
 
-Should signal an error of *type* **type-error** if *readtable* is not a *readtable*. Should signal an error of *type* **type-error** if *mode* is not a *case sensitivity mode*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> is not a <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>. Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *mode* is not a *case sensitivity mode*. 
 
 
 
@@ -64,7 +64,7 @@ Should signal an error of *type* **type-error** if *readtable* is not a *readtab
 
 
 
-**\*readtable\***, **\*print-escape\***, Section 2.2 (Reader Algorithm), Section 23.1.2 (Effect of Readtable Case on the Lisp Reader), Section 22.1.3.3.2 (Effect of Readtable Case on the Lisp Printer) 
+<ClLinks styled={true} term={"readtable"}><b>\*readtable\*</b></ClLinks>, <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks>, Section 2.2 (Reader Algorithm), Section 23.1.2 (Effect of Readtable Case on the Lisp Reader), Section 22.1.3.3.2 (Effect of Readtable Case on the Lisp Printer) 
 
 
 
@@ -72,7 +72,7 @@ Should signal an error of *type* **type-error** if *readtable* is not a *readtab
 
 
 
-**copy-readtable** copies the *readtable case* of the *readtable*. 
+<ClLinks styled={true} term={"copy-readtable"}><b>copy-readtable</b></ClLinks> copies the *readtable case* of the <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>. 
 
 
 

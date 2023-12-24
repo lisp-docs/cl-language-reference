@@ -1,4 +1,4 @@
-**print-unreadable-object** *Macro* 
+**print-unreadable-object** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**print-unreadable-object** (*object stream* &amp;key *type identity*) *\{form\}*\* → **nil** 
+<ClLinks styled={true} term={"print-unreadable-object"}><b>print-unreadable-object</b></ClLinks> (*object stream* &amp;key *type identity*) *\{form\}*\* → <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*object*—an *object*; evaluated. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>; evaluated. 
 
 
 
-*stream*—a *stream designator* ; evaluated. 
+<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—a *stream designator* ; evaluated. 
 
 
 
-*type*—a *generalized boolean*; evaluated. 
+<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>—a *generalized boolean*; evaluated. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-*forms*—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
@@ -50,11 +50,11 @@
 
 
 
-Outputs a printed representation of *object* on *stream*, beginning with “#&lt;” and ending with “&gt;”. Everything output to *stream* by the body *forms* is enclosed in the the angle brackets. If *type* is *true*, the output from *forms* is preceded by a brief description of the *object*’s *type* and a space character. If *identity* is *true*, the output from *forms* is followed by a space character and a representation of the *object*’s identity, typically a storage address. 
+Outputs a printed representation of <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> on <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, beginning with “#&lt;” and ending with “&gt;”. Everything output to <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> by the body <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> is enclosed in the the angle brackets. If <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the output from <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> is preceded by a brief description of the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>’s <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> and a space character. If *identity* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the output from <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> is followed by a space character and a representation of the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>’s identity, typically a storage address. 
 
 
 
-If either *type* or *identity* is not supplied, its value is *false*. It is valid to omit the body *forms*. If *type* and *identity* are both true and there are no body *forms*, only one space character separates the type and the identity. 
+If either <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> or *identity* is not supplied, its value is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. It is valid to omit the body <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. If <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> and *identity* are both true and there are no body <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>, only one space character separates the type and the identity. 
 
 
 
@@ -74,7 +74,7 @@ If either *type* or *identity* is not supplied, its value is *false*. It is vali
 
 
 
-If **\*print-readably\*** is *true*, **print-unreadable-object** signals an error of *type* **print-not-readable** without printing anything. 
+If <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, <ClLinks styled={true} term={"print-unreadable-object"}><b>print-unreadable-object</b></ClLinks> signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"print-not-readable"}><b>print-not-readable</b></ClLinks> without printing anything. 
 
 
 

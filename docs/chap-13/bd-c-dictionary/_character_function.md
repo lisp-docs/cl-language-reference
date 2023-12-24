@@ -1,4 +1,4 @@
-**character** *Function* 
+**character** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**character** *character → denoted-character* 
+<ClLinks styled={true} term={"character"}><b>character</b></ClLinks> *character → denoted-character* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*character*—a *character designator* . 
+<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>—a *character designator* . 
 
 
 
-*denoted-character*—a *character* . 
+*denoted-character*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the *character* denoted by the *character designator* . 
+Returns the <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> denoted by the *character designator* . 
 
 
 
@@ -57,7 +57,7 @@ Returns the *character* denoted by the *character designator* .
 
 
 
-Should signal an error of *type* **type-error** if *object* is not a *character designator* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is not a *character designator* . 
 
 
 
@@ -65,7 +65,7 @@ Should signal an error of *type* **type-error** if *object* is not a *character 
 
 
 
-**coerce** 
+<ClLinks styled={true} term={"coerce"}><b>coerce</b></ClLinks> 
 
 
 
@@ -73,7 +73,7 @@ Should signal an error of *type* **type-error** if *object* is not a *character 
 
 
 
-(character *object*) *≡* (coerce *object* ’character) 
+(character <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) *≡* (coerce <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’character) 
 
 
 

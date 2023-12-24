@@ -1,4 +1,4 @@
-*∗***load-verbose***∗ Variable* 
+*∗<ClLinks styled={true} term={"load-verbose"}><b>*load-verbose*</b></ClLinks>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a *generalized boolean*.
 
 
 
-The initial *value* of **\*load-print\*** is *false*. The initial *value* of **\*load-verbose\*** is *implementation dependent*. 
+The initial <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*load-print\*** is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. The initial <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"load-verbose"}><b>\*load-verbose\*</b></ClLinks> is *implementation dependent*. 
 
 
 
@@ -22,7 +22,7 @@ The initial *value* of **\*load-print\*** is *false*. The initial *value* of **\
 
 
 
-The *value* of **\*load-print\*** is the default value of the :print *argument* to **load**. The *value* of **\*load-verbose\*** is the default value of the :verbose *argument* to **load**. 
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*load-print\*** is the default value of the :print <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> to <ClLinks styled={true} term={"load"}><b>load</b></ClLinks>. The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"load-verbose"}><b>\*load-verbose\*</b></ClLinks> is the default value of the :verbose <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> to <ClLinks styled={true} term={"load"}><b>load</b></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@ The *value* of **\*load-print\*** is the default value of the :print *argument* 
 
 
 
-**load** 
+<ClLinks styled={true} term={"load"}><b>load</b></ClLinks> 
 
 
 

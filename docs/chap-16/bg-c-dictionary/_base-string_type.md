@@ -1,4 +1,4 @@
-**base-string** *Type* 
+**base-string** <ClLinks styled={true} term={"type"}><i>Type</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**base-string**, **string**, **vector**, **array**, **sequence**, **t** 
+<ClLinks styled={true} term={"base-string"}><b>base-string</b></ClLinks>, <ClLinks styled={true} term={"string"}><b>string</b></ClLinks>, <ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks>, <ClLinks styled={true} term={"array"}><b>array</b></ClLinks>, <ClLinks styled={true} term={"sequence"}><b>sequence</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The *type* **base-string** is equivalent to (vector base-char). The *base string* representation is the most efficient *string* representation that can hold an arbitrary sequence of *standard characters*. 
+The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"base-string"}><b>base-string</b></ClLinks> is equivalent to (vector base-char). The *base string* representation is the most efficient <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> representation that can hold an arbitrary sequence of *standard characters*. 
 
 
 
@@ -50,7 +50,7 @@ Abbreviating.
 
 
 
-*size*—a non-negative *fixnum*, or the *symbol* **\***. 
+*size*—a non-negative <ClLinks styled={true} term={"fixnum"}><i>fixnum</i></ClLinks>, or the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 

@@ -1,4 +1,4 @@
-**boolean** *Type* 
+**boolean** <ClLinks styled={true} term={"type"}><i>Type</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**boolean**, **symbol**, **t** 
+<ClLinks styled={true} term={"boolean"}><b>boolean</b></ClLinks>, <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The *type* **boolean** contains the *symbols* **t** and **nil**, which represent true and false, respectively. 
+The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"boolean"}><b>boolean</b></ClLinks> contains the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, which represent true and false, respectively. 
 
 
 
@@ -22,7 +22,7 @@ The *type* **boolean** contains the *symbols* **t** and **nil**, which represent
 
 
 
-**t** (*constant variable*), **nil** (*constant variable*), **if**, **not**, **complement** 
+<ClLinks styled={true} term={"t"}><b>t</b></ClLinks> (*constant variable*), <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> (*constant variable*), <ClLinks styled={true} term={"if"}><b>if</b></ClLinks>, <ClLinks styled={true} term={"not"}><b>not</b></ClLinks>, <ClLinks styled={true} term={"complement"}><b>complement</b></ClLinks> 
 
 
 
@@ -30,7 +30,7 @@ The *type* **boolean** contains the *symbols* **t** and **nil**, which represent
 
 
 
-Conditional operations, such as **if**, permit the use of *generalized booleans*, not just *booleans*; any *non-nil* value, not just **t**, counts as true for a *generalized boolean*. However, as a matter of convention, the *symbol* **t** is considered the canonical value to use even for a *generalized boolean* when no better choice presents itself.  
+Conditional operations, such as <ClLinks styled={true} term={"if"}><b>if</b></ClLinks>, permit the use of *generalized booleans*, not just <ClLinks styled={true} term={"boolean"}><i>booleans</i></ClLinks>; any <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks> value, not just <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, counts as true for a *generalized boolean*. However, as a matter of convention, the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> is considered the canonical value to use even for a *generalized boolean* when no better choice presents itself.  
 
 
 
@@ -38,7 +38,7 @@ Conditional operations, such as **if**, permit the use of *generalized booleans*
 
 
 
-**function** 
+<ClLinks styled={true} term={"function"}><b>function</b></ClLinks> 
 
 
 

@@ -22,7 +22,7 @@ foo 2 (hot dog)
 
 
 
-In contrast, #1A((0 1 5) (foo 2 (hot dog))) represents a *vector* of *length* 2 whose *elements* are *lists*: 
+In contrast, #1A((0 1 5) (foo 2 (hot dog))) represents a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> of <ClLinks styled={true} term={"length"}><i>length</i></ClLinks> 2 whose <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> are <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>: 
 
 
 
@@ -38,11 +38,11 @@ In contrast, #1A((0 1 5) (foo 2 (hot dog))) represents a *vector* of *length* 2 
 
 
 
-If some *dimension* of the *array* whose representation is being parsed is found to be 0, all *dimensions* to the right (*i.e.*, the higher numbered *dimensions*) are also considered to be 0. 
+If some <ClLinks styled={true} term={"dimension"}><i>dimension</i></ClLinks> of the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> whose representation is being parsed is found to be 0, all <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks> to the right (*i.e.*, the higher numbered <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks>) are also considered to be 0. 
 
 
 
-For information on how the *Lisp printer* prints *arrays*, see Section 22.1.3.4 (Printing Strings), Section 22.1.3.6 (Printing Bit Vectors), Section 22.1.3.7 (Printing Other Vectors), or Section 22.1.3.8 (Printing Other Arrays).  
+For information on how the *Lisp printer* prints <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks>, see Section 22.1.3.4 (Printing Strings), Section 22.1.3.6 (Printing Bit Vectors), Section 22.1.3.7 (Printing Other Vectors), or Section 22.1.3.8 (Printing Other Arrays).  
 
 
 

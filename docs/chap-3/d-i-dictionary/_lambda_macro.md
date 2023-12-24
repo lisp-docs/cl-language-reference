@@ -1,4 +1,4 @@
-**lambda** *Macro* 
+**lambda** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**lambda** *lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* → function 
+<ClLinks styled={true} term={"lambda"}><b>lambda</b></ClLinks> *lambda-list* [[ <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* → function 
 
 
 
@@ -22,19 +22,19 @@
 
 
 
-*declaration*—a **declare** *expression*; not evaluated. 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*documentation*—a *string*; not evaluated. 
+*documentation*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>; not evaluated. 
 
 
 
-*form*—a *form*. 
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*function*—a *function*. 
+<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -42,19 +42,19 @@
 
 
 
-Provides a shorthand notation for a **function** *special form* involving a *lambda expression* such that: 
+Provides a shorthand notation for a <ClLinks styled={true} term={"function"}><b>function</b></ClLinks> *special form* involving a *lambda expression* such that: 
 
 
 
-(lambda *lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\*) 
+(lambda *lambda-list* [[ <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\*) 
 
 
 
-*≡* (function (lambda *lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\*)) 
+*≡* (function (lambda *lambda-list* [[ <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\*)) 
 
 
 
-*≡* #’(lambda *lambda-list* [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\*) 
+*≡* #’(lambda *lambda-list* [[ <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\*) 
 
 
 
@@ -68,7 +68,7 @@ Provides a shorthand notation for a **function** *special form* involving a *lam
 
 
 
-**lambda** (symbol) 
+<ClLinks styled={true} term={"lambda"}><b>lambda</b></ClLinks> (symbol) 
 
 
 

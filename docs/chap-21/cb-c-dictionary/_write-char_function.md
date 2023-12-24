@@ -1,4 +1,4 @@
-**write-char** *Function* 
+**write-char** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**write-char** *character* &amp;optional *output-stream → character* 
+<ClLinks styled={true} term={"write-char"}><b>write-char</b></ClLinks> <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> &amp;optional *output-stream → character* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*character*—a *character* . 
+<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-**write-char** outputs *character* to *output-stream*. 
+<ClLinks styled={true} term={"write-char"}><b>write-char</b></ClLinks> outputs <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> to *output-stream*. 
 
 
 
@@ -55,7 +55,7 @@ The *output-stream* is modified.
 
 
 
-**\*standard-output\***, **\*terminal-io\***. 
+**\*standard-output\***, <ClLinks styled={true} term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
 
 
 
@@ -63,7 +63,7 @@ The *output-stream* is modified.
 
 
 
-**read-char**, **write-byte**, **write-sequence** 
+<ClLinks styled={true} term={"read-char"}><b>read-char</b></ClLinks>, <ClLinks styled={true} term={"write-byte"}><b>write-byte</b></ClLinks>, <ClLinks styled={true} term={"write-sequence"}><b>write-sequence</b></ClLinks> 
 
 
 
@@ -79,7 +79,7 @@ The *output-stream* is modified.
 
 
 
-**read-line** 
+<ClLinks styled={true} term={"read-line"}><b>read-line</b></ClLinks> 
 
 
 

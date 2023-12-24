@@ -1,4 +1,4 @@
-**with-open-file** *macro* 
+**with-open-file** <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**with-open-file** (*stream filespec \{options\}*\*) *\{declaration\}*\* *\{form\}*\* 
+<ClLinks styled={true} term={"with-open-file"}><b>with-open-file</b></ClLinks> (*stream filespec \{options\}*\*) <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*stream* – a variable. 
+<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> – a variable. 
 
 
 
@@ -26,19 +26,19 @@
 
 
 
-*options* – *forms*; evaluated. 
+*options* – <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>; evaluated. 
 
 
 
-*declaration*—a **declare** *expression*; not evaluated. 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*forms*—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the *values* returned by the *forms*. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -46,27 +46,23 @@
 
 
 
-**with-open-file** uses **open** to create a *file stream* to *file* named by *filespec*. *Filespec* is the name of the file to be opened. *Options* are used as keyword arguments to **open**. 
+<ClLinks styled={true} term={"with-open-file"}><b>with-open-file</b></ClLinks> uses <ClLinks styled={true} term={"open"}><b>open</b></ClLinks> to create a *file stream* to <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> named by *filespec*. *Filespec* is the name of the file to be opened. *Options* are used as keyword arguments to <ClLinks styled={true} term={"open"}><b>open</b></ClLinks>. 
 
 
 
-The *stream object* to which the *stream variable* is *bound* has *dynamic extent*; its *extent* ends when the *form* is exited. 
+The *stream object* to which the *stream variable* is <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks> has *dynamic extent*; its <ClLinks styled={true} term={"extent"}><i>extent</i></ClLinks> ends when the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is exited. 
 
 
 
-**with-open-file** evaluates the *forms* as an *implicit progn* with *stream* bound to the value returned by **open**. 
+<ClLinks styled={true} term={"with-open-file"}><b>with-open-file</b></ClLinks> evaluates the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> as an *implicit progn* with <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> bound to the value returned by <ClLinks styled={true} term={"open"}><b>open</b></ClLinks>. 
 
 
 
-When control leaves the body, either normally or abnormally (such as by use of **throw**), the file is automatically closed. If a new output file is being written, and control leaves abnormally, the file is aborted and the file system is left, so far as possible, as if the file had never been opened. 
-
-
+When control leaves the body, either normally or abnormally (such as by use of <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks>), the file is automatically closed. If a new output file is being written, and control leaves abnormally, the file is aborted and the file system is left, so far as possible, as if the file had never been opened. 
 
 
 
 
-
- 
 
 
 
@@ -74,15 +70,19 @@ When control leaves the body, either normally or abnormally (such as by use of *
 
 
 
-**with-open-file** 
+ 
 
 
 
-It is possible by the use of :if-exists nil or :if-does-not-exist nil for *stream* to be bound to **nil**. Users of :if-does-not-exist nil should check for a valid *stream*. 
+<ClLinks styled={true} term={"with-open-file"}><b>with-open-file</b></ClLinks> 
 
 
 
-The consequences are undefined if an attempt is made to *assign* the *stream variable*. The compiler may choose to issue a warning if such an attempt is detected. 
+It is possible by the use of :if-exists nil or :if-does-not-exist nil for <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> to be bound to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. Users of :if-does-not-exist nil should check for a valid <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
+
+
+
+The consequences are undefined if an attempt is made to <ClLinks styled={true} term={"assign"}><i>assign</i></ClLinks> the *stream variable*. The compiler may choose to issue a warning if such an attempt is detected. 
 
 
 
@@ -117,7 +117,7 @@ The consequences are undefined if an attempt is made to *assign* the *stream var
 
 
 
-Creates a *stream* to the *file* named by *filename* (upon entry), and closes the *stream* (upon exit). In some *implementations*, the *file* might be locked in some way while it is open. If the *stream* is an *output stream*, a *file* might be created. 
+Creates a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> to the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> named by <ClLinks styled={true} term={"filename"}><i>filename</i></ClLinks> (upon entry), and closes the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> (upon exit). In some <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>, the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> might be locked in some way while it is open. If the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is an *output stream*, a <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> might be created. 
 
 
 
@@ -133,7 +133,7 @@ The host computer’s file system.
 
 
 
-See the *function* **open**. 
+See the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"open"}><b>open</b></ClLinks>. 
 
 
 
@@ -153,4 +153,4 @@ See the *function* **open**.
 
 
 
-**open**, **close**, **pathname**, **logical-pathname**, Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks styled={true} term={"open"}><b>open</b></ClLinks>, <ClLinks styled={true} term={"close"}><b>close</b></ClLinks>, <ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks styled={true} term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 19.1.2 (Pathnames as Filenames) 

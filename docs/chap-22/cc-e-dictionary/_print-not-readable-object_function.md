@@ -1,4 +1,4 @@
-**print-not-readable-object** *Function* 
+**print-not-readable-object** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**print-not-readable-object** *condition ! object* 
+<ClLinks styled={true} term={"print-not-readable-object"}><b>print-not-readable-object</b></ClLinks> *condition ! object* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*condition*—a *condition* of *type* **print-not-readable**. 
+<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"print-not-readable"}><b>print-not-readable</b></ClLinks>. 
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the *object* that could not be printed readably in the situation represented by *condition*. 
+Returns the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> that could not be printed readably in the situation represented by <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ Returns the *object* that could not be printed readably in the situation represe
 
 
 
-**print-not-readable**, Chapter 9 (Conditions) 
+<ClLinks styled={true} term={"print-not-readable"}><b>print-not-readable</b></ClLinks>, Chapter 9 (Conditions) 
 
 
 

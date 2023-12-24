@@ -1,4 +1,4 @@
-**set-syntax-from-char** *Function* 
+**set-syntax-from-char** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**set-syntax-from-char** *to-char from-char* &amp;optional *to-readtable from-readtable →* **t** 
+<ClLinks styled={true} term={"set-syntax-from-char"}><b>set-syntax-from-char</b></ClLinks> *to-char from-char* &amp;optional *to-readtable from-readtable →* <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*to-char*—a *character* . 
+*to-char*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
-*from-char*—a *character* . 
+*from-char*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
-*to-readtable*—a *readtable*. The default is the *current readtable*. 
+*to-readtable*—a <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>. The default is the *current readtable*. 
 
 
 
@@ -34,15 +34,15 @@
 
 
 
-**set-syntax-from-char** makes the syntax of *to-char* in *to-readtable* be the same as the syntax of *from-char* in *from-readtable*. 
+<ClLinks styled={true} term={"set-syntax-from-char"}><b>set-syntax-from-char</b></ClLinks> makes the syntax of *to-char* in *to-readtable* be the same as the syntax of *from-char* in *from-readtable*. 
 
 
 
-**set-syntax-from-char** copies the *syntax types* of *from-char*. If *from-char* is a *macro character* , its *reader macro function* is copied also. If the character is a *dispatching macro character* , its entire dispatch table of *reader macro functions* is copied. The *constituent traits* of *from-char* are not copied. 
+<ClLinks styled={true} term={"set-syntax-from-char"}><b>set-syntax-from-char</b></ClLinks> copies the *syntax types* of *from-char*. If *from-char* is a *macro character* , its *reader macro function* is copied also. If the character is a *dispatching macro character* , its entire dispatch table of *reader macro functions* is copied. The *constituent traits* of *from-char* are not copied. 
 
 
 
-A macro definition from a character such as " can be copied to another character; the standard definition for " looks for another character that is the same as the character that invoked it. The definition of ( can not be meaningfully copied to \{, on the other hand. The result is that *lists* are of the form \{a b c), not \{a b c\}, because the definition always looks for a closing parenthesis, not a closing brace. 
+A macro definition from a character such as " can be copied to another character; the standard definition for " looks for another character that is the same as the character that invoked it. The definition of ( can not be meaningfully copied to \{, on the other hand. The result is that <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks> are of the form \{a b c), not \{a b c\}, because the definition always looks for a closing parenthesis, not a closing brace. 
 
 
 
@@ -73,7 +73,7 @@ The existing values in the *from-readtable*.
 
 
 
-**set-macro-character**, **make-dispatch-macro-character**, Section 2.1.4 (Character Syntax Types) 
+<ClLinks styled={true} term={"set-macro-character"}><b>set-macro-character</b></ClLinks>, <ClLinks styled={true} term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></ClLinks>, Section 2.1.4 (Character Syntax Types) 
 
 
 
@@ -89,7 +89,7 @@ The existing values in the *from-readtable*.
 
 
 
-The *constituent traits* of a *character* are “hard wired” into the parser for extended *tokens*. For example, if the definition of S is copied to \*, then \* will become a *constituent* that is *alphabetic*<sub>2</sub> but that cannot be used as a *short float exponent marker* . For further information, see Section 2.1.4.2 (Constituent Traits). 
+The *constituent traits* of a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> are “hard wired” into the parser for extended <ClLinks styled={true} term={"token"}><i>tokens</i></ClLinks>. For example, if the definition of S is copied to \*, then \* will become a <ClLinks styled={true} term={"constituent"}><i>constituent</i></ClLinks> that is <ClLinks styled={true} term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>2</sub> but that cannot be used as a *short float exponent marker* . For further information, see Section 2.1.4.2 (Constituent Traits). 
 
 
 

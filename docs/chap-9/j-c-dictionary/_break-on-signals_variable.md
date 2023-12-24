@@ -1,4 +1,4 @@
-*∗***break-on-signals***∗ Variable* 
+*∗<ClLinks styled={true} term={"break-on-signals"}><b>*break-on-signals*</b></ClLinks>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a *type specifier* .
 
 
 
-**nil**. 
+<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@ a *type specifier* .
 
 
 
-*∗***break-on-signals***∗* 
+*∗<ClLinks styled={true} term={"break-on-signals"}><b>*break-on-signals*</b></ClLinks>∗* 
 
 
 
@@ -38,11 +38,11 @@ a *type specifier* .
 
 
 
-When (typep *condition* \*break-on-signals\*) returns *true*, calls to **signal**, and to other *operators* such as **error** that implicitly call **signal**, enter the debugger prior to *signaling* the *condition*. 
+When (typep <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> \*break-on-signals\*) returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, calls to <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks>, and to other <ClLinks styled={true} term={"operator"}><i>operators</i></ClLinks> such as <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> that implicitly call <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks>, enter the debugger prior to *signaling* the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
-The **continue** *restart* can be used to continue with the normal *signaling* process when a break occurs process due to **\*break-on-signals\***. 
+The **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> can be used to continue with the normal *signaling* process when a break occurs process due to <ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks>. 
 
 
 
@@ -82,7 +82,7 @@ The **continue** *restart* can be used to continue with the normal *signaling* p
 
 
 
-**break**, **signal**, **warn**, **error**, **typep**, Section 9.1 (Condition System Concepts) 
+<ClLinks styled={true} term={"break"}><b>break</b></ClLinks>, <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks>, <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks>, <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks>, Section 9.1 (Condition System Concepts) 
 
 
 
@@ -90,7 +90,7 @@ The **continue** *restart* can be used to continue with the normal *signaling* p
 
 
 
-**\*break-on-signals\*** is intended primarily for use in debugging code that does signaling. When setting **\*break-on-signals\***, the user is encouraged to choose the most restrictive specification 
+<ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks> is intended primarily for use in debugging code that does signaling. When setting <ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks>, the user is encouraged to choose the most restrictive specification 
 
 
 
@@ -106,11 +106,11 @@ The **continue** *restart* can be used to continue with the normal *signaling* p
 
 
 
-that suffices. Setting **\*break-on-signals\*** effectively violates the modular handling of *condition* signaling. In practice, the complete effect of setting **\*break-on-signals\*** might be unpredictable in some cases since the user might not be aware of the variety or number of calls to **signal** that are used in code called only incidentally. 
+that suffices. Setting <ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks> effectively violates the modular handling of <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> signaling. In practice, the complete effect of setting <ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks> might be unpredictable in some cases since the user might not be aware of the variety or number of calls to <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> that are used in code called only incidentally. 
 
 
 
-**\*break-on-signals\*** enables an early entry to the debugger but such an entry does not preclude an additional entry to the debugger in the case of operations such as **error** and **cerror**. 
+<ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks> enables an early entry to the debugger but such an entry does not preclude an additional entry to the debugger in the case of operations such as <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> and <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks>. 
 
 
 

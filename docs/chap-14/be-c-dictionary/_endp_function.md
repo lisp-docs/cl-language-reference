@@ -1,4 +1,4 @@
-**endp** *Function* 
+**endp** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**endp** *list → generalized-boolean* 
+<ClLinks styled={true} term={"endp"}><b>endp</b></ClLinks> *list → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*list*—a *list*, which might be a *dotted list* or a *circular list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, which might be a *dotted list* or a *circular list*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns *true* if *list* is the *empty list*. Returns *false* if *list* is a *cons*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is the *empty list*. Returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ Returns *true* if *list* is the *empty list*. Returns *false* if *list* is a *co
 
 
 
-Should signal an error of *type* **type-error** if *list* is not a *list*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is not a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -50,7 +50,7 @@ Should signal an error of *type* **type-error** if *list* is not a *list*.
 
 
 
-The purpose of **endp** is to test for the end of *proper list*. Since **endp** does not descend into a *cons*, it is well-defined to pass it a *dotted list*. However, if shorter “lists” are iteratively produced by calling **cdr** on such a *dotted list* and those “lists” are tested with **endp**, a situation that has undefined consequences will eventually result when the *non-nil atom* (which is not in fact a *list*) finally becomes the argument to **endp**. Since this is the usual way in which **endp** is used, it is conservative programming style and consistent with the intent of **endp** to treat **endp** as simply a function on *proper lists* which happens not to enforce an argument type of *proper list* except when the argument is *atomic*. 
+The purpose of <ClLinks styled={true} term={"endp"}><b>endp</b></ClLinks> is to test for the end of *proper list*. Since <ClLinks styled={true} term={"endp"}><b>endp</b></ClLinks> does not descend into a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>, it is well-defined to pass it a *dotted list*. However, if shorter “lists” are iteratively produced by calling <ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks> on such a *dotted list* and those “lists” are tested with <ClLinks styled={true} term={"endp"}><b>endp</b></ClLinks>, a situation that has undefined consequences will eventually result when the *non-nil atom* (which is not in fact a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) finally becomes the argument to <ClLinks styled={true} term={"endp"}><b>endp</b></ClLinks>. Since this is the usual way in which <ClLinks styled={true} term={"endp"}><b>endp</b></ClLinks> is used, it is conservative programming style and consistent with the intent of <ClLinks styled={true} term={"endp"}><b>endp</b></ClLinks> to treat <ClLinks styled={true} term={"endp"}><b>endp</b></ClLinks> as simply a function on *proper lists* which happens not to enforce an argument type of *proper list* except when the argument is <ClLinks styled={true} term={"atomic"}><i>atomic</i></ClLinks>. 
 
 
 

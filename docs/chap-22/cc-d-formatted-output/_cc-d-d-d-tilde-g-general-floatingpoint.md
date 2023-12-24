@@ -2,7 +2,7 @@
 
 
 
-The next *arg* is printed as a *float* in either fixed-format or exponential notation as appropriate. 
+The next *arg* is printed as a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> in either fixed-format or exponential notation as appropriate. 
 
 
 
@@ -38,7 +38,7 @@ In either case, an @ modifier is supplied to the &#126;F or &#126;E directive if
 
 
 
-&#126;G binds **\*print-escape\*** to *false* and **\*print-readably\*** to *false*. 
+&#126;G binds <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> to <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> and <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> to <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 

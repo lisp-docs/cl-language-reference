@@ -1,4 +1,4 @@
-**unsigned-byte** *Type* 
+**unsigned-byte** <ClLinks styled={true} term={"type"}><i>Type</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**unsigned-byte**, **signed-byte**, **integer**, **rational**, **real**, **number**, **t** 
+<ClLinks styled={true} term={"unsigned-byte"}><b>unsigned-byte</b></ClLinks>, <ClLinks styled={true} term={"signed-byte"}><b>signed-byte</b></ClLinks>, <ClLinks styled={true} term={"integer"}><b>integer</b></ClLinks>, <ClLinks styled={true} term={"rational"}><b>rational</b></ClLinks>, <ClLinks styled={true} term={"real"}><b>real</b></ClLinks>, <ClLinks styled={true} term={"number"}><b>number</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The atomic *type specifier* **unsigned-byte** denotes the same type as is denoted by the *type specifier* (integer 0 \*). 
+The atomic *type specifier* <ClLinks styled={true} term={"unsigned-byte"}><b>unsigned-byte</b></ClLinks> denotes the same type as is denoted by the *type specifier* (integer 0 \*). 
 
 
 
@@ -54,7 +54,7 @@ This denotes the set of non-negative <i>integers</i> that can be represented in 
 
 
 
-The *type* (unsigned-byte 1) is also called **bit**. 
+The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> (unsigned-byte 1) is also called <ClLinks styled={true} term={"bit"}><b>bit</b></ClLinks>. 
 
 
 
@@ -70,7 +70,7 @@ The *type* (unsigned-byte 1) is also called **bit**.
 
 
 
-**mod** *Type Specifier* 
+<ClLinks styled={true} term={"mod"}><b>mod</b></ClLinks> *Type Specifier* 
 
 
 
@@ -110,7 +110,7 @@ The argument is required, and cannot be **\***.
 
 
 
-The symbol **mod** is not valid as a *type specifier* . 
+The symbol <ClLinks styled={true} term={"mod"}><b>mod</b></ClLinks> is not valid as a *type specifier* . 
 
 
 

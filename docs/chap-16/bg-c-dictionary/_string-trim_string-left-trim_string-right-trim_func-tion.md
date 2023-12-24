@@ -6,15 +6,15 @@
 
 
 
-**string-trim** *character-bag string → trimmed-string* 
+<ClLinks styled={true} term={"string-trim"}><b>string-trim</b></ClLinks> *character-bag string → trimmed-string* 
 
 
 
-**string-left-trim** *character-bag string → trimmed-string* 
+<ClLinks styled={true} term={"string-left-trim"}><b>string-left-trim</b></ClLinks> *character-bag string → trimmed-string* 
 
 
 
-**string-right-trim** *character-bag string → trimmed-string* 
+<ClLinks styled={true} term={"string-right-trim"}><b>string-right-trim</b></ClLinks> *character-bag string → trimmed-string* 
 
 
 
@@ -22,15 +22,15 @@
 
 
 
-*character-bag*—a *sequence* containing *characters*. 
+*character-bag*—a *sequence* containing <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks>. 
 
 
 
-*string*—a *string designator* . 
+<ClLinks styled={true} term={"string"}><i>string</i></ClLinks>—a *string designator* . 
 
 
 
-*trimmed-string*—a *string*. 
+*trimmed-string*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -38,15 +38,15 @@
 
 
 
-**string-trim** returns a substring of *string*, with all characters in *character-bag* stripped off the beginning and end. **string-left-trim** is similar but strips characters off only the beginning; **string-right-trim** strips off only the end. 
+<ClLinks styled={true} term={"string-trim"}><b>string-trim</b></ClLinks> returns a substring of <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, with all characters in *character-bag* stripped off the beginning and end. <ClLinks styled={true} term={"string-left-trim"}><b>string-left-trim</b></ClLinks> is similar but strips characters off only the beginning; <ClLinks styled={true} term={"string-right-trim"}><b>string-right-trim</b></ClLinks> strips off only the end. 
 
 
 
-If no *characters* need to be trimmed from the *string*, then either *string* itself or a copy of it may be returned, at the discretion of the implementation. 
+If no <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> need to be trimmed from the <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, then either <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> itself or a copy of it may be returned, at the discretion of the implementation. 
 
 
 
-All of these *functions* observe the *fill pointer* . 
+All of these <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> observe the *fill pointer* . 
 
 
 
@@ -72,7 +72,7 @@ All of these *functions* observe the *fill pointer* .
 
 
 
-The *implementation*. 
+The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 
@@ -84,27 +84,27 @@ The *implementation*.
 
 
 
-**string**= *string1 string2* &amp;key *start1 end1 start2 end2 → generalized-boolean* 
+<ClLinks styled={true} term={"string"}><b>string</b></ClLinks>= *string1 string2* &amp;key *start1 end1 start2 end2 → generalized-boolean* 
 
 
 
-**string/**= *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
+<ClLinks styled={true} term={"string"}><b>string/</b></ClLinks>= *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
 
 
 
-**string**&lt; *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
+<ClLinks styled={true} term={"string"}><b>string</b></ClLinks>&lt; *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
 
 
 
-**string**&gt; *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
+<ClLinks styled={true} term={"string"}><b>string</b></ClLinks>&gt; *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
 
 
 
-**string**&lt;= *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
+<ClLinks styled={true} term={"string"}><b>string</b></ClLinks>&lt;= *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
 
 
 
-**string**&gt;= *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
+<ClLinks styled={true} term={"string"}><b>string</b></ClLinks>&gt;= *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
 
 
 
@@ -128,11 +128,11 @@ The *implementation*.
 
 
 
-*start1*, *end1*—*bounding index designators* of *string1*. The defaults for *start* and *end* are 0 and **nil**, respectively. 
+*start1*, *end1*—*bounding index designators* of *string1*. The defaults for *start* and *end* are 0 and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
-*start2*, *end2*—*bounding index designators* of *string2*. The defaults for *start* and *end* are 0 and **nil**, respectively. 
+*start2*, *end2*—*bounding index designators* of *string2*. The defaults for *start* and *end* are 0 and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
@@ -140,7 +140,7 @@ The *implementation*.
 
 
 
-*mismatch-index*—a *bounding index* of *string1*, or **nil**. 
+*mismatch-index*—a *bounding index* of *string1*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -148,7 +148,7 @@ The *implementation*.
 
 
 
-These functions perform lexicographic comparisons on *string1* and *string2*. **string=** and **string-equal** are called equality functions; the others are called inequality functions. The 
+These functions perform lexicographic comparisons on *string1* and *string2*. <ClLinks styled={true} term={"string"}><b>string=</b></ClLinks> and **string-equal** are called equality functions; the others are called inequality functions. The 
 
 
 
@@ -168,23 +168,23 @@ These functions perform lexicographic comparisons on *string1* and *string2*. **
 
 
 
-comparison operations these *functions* perform are restricted to the subsequence of *string1 bounded* by *start1* and *end1* and to the subsequence of *string2 bounded* by *start2* and *end2*. 
+comparison operations these <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> perform are restricted to the subsequence of *string1 bounded* by *start1* and *end1* and to the subsequence of *string2 bounded* by *start2* and *end2*. 
 
 
 
-A string *a* is equal to a string *b* if it contains the same number of characters, and the corresponding characters are the *same* under **char=** or **char-equal**, as appropriate. 
+A string *a* is equal to a string *b* if it contains the same number of characters, and the corresponding characters are the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> under <ClLinks styled={true} term={"char="}><b>char=</b></ClLinks> or <ClLinks styled={true} term={"char-equal"}><b>char-equal</b></ClLinks>, as appropriate. 
 
 
 
-A string *a* is less than a string *b* if in the first position in which they differ the character of *a* is less than the corresponding character of *b* according to **char**&lt; or **char-lessp** as appropriate, or if string *a* is a proper prefix of string *b* (of shorter length and matching in all the characters of *a*). 
+A string *a* is less than a string *b* if in the first position in which they differ the character of *a* is less than the corresponding character of *b* according to <ClLinks styled={true} term={"char"}><b>char</b></ClLinks>&lt; or <ClLinks styled={true} term={"char-lessp"}><b>char-lessp</b></ClLinks> as appropriate, or if string *a* is a proper prefix of string *b* (of shorter length and matching in all the characters of *a*). 
 
 
 
-The equality functions return a *generalized boolean* that is *true* if the strings are equal, or *false* otherwise. 
+The equality functions return a *generalized boolean* that is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the strings are equal, or <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> otherwise. 
 
 
 
-The inequality functions return a *mismatch-index* that is *true* if the strings are not equal, or *false* otherwise. When the *mismatch-index* is *true*, it is an *integer* representing the first character position at which the two substrings differ, as an offset from the beginning of *string1*. 
+The inequality functions return a *mismatch-index* that is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the strings are not equal, or <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> otherwise. When the *mismatch-index* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, it is an *integer* representing the first character position at which the two substrings differ, as an offset from the beginning of *string1*. 
 
 
 
@@ -192,19 +192,19 @@ The comparison has one of the following results:
 
 
 
-**string=** 
+<ClLinks styled={true} term={"string"}><b>string=</b></ClLinks> 
 
 
 
-**string=** is *true* if the supplied substrings are of the same length and contain the *same* characters in corresponding positions; otherwise it is *false*. 
+<ClLinks styled={true} term={"string"}><b>string=</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the supplied substrings are of the same length and contain the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> characters in corresponding positions; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
-**string/=** 
+<ClLinks styled={true} term={"string"}><b>string/=</b></ClLinks> 
 
 
 
-**string/=** is *true* if the supplied substrings are different; otherwise it is *false*. 
+<ClLinks styled={true} term={"string"}><b>string/=</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the supplied substrings are different; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -212,23 +212,23 @@ The comparison has one of the following results:
 
 
 
-**string-equal** is just like **string=** except that differences in case are ignored; two characters are considered to be the same if **char-equal** is *true* of them. 
+**string-equal** is just like <ClLinks styled={true} term={"string"}><b>string=</b></ClLinks> except that differences in case are ignored; two characters are considered to be the same if <ClLinks styled={true} term={"char-equal"}><b>char-equal</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> of them. 
 
 
 
-**string**&lt; 
+<ClLinks styled={true} term={"string"}><b>string</b></ClLinks>&lt; 
 
 
 
-**string**&lt; is *true* if substring1 is less than substring2; otherwise it is *false*. 
+<ClLinks styled={true} term={"string"}><b>string</b></ClLinks>&lt; is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if substring1 is less than substring2; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
-**string**&gt; 
+<ClLinks styled={true} term={"string"}><b>string</b></ClLinks>&gt; 
 
 
 
-**string**&gt; is *true* if substring1 is greater than substring2; otherwise it is *false*. 
+<ClLinks styled={true} term={"string"}><b>string</b></ClLinks>&gt; is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if substring1 is greater than substring2; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -236,19 +236,15 @@ The comparison has one of the following results:
 
 
 
-**string-lessp** and **string-greaterp** are exactly like **string**&lt; and **string**&gt;, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if **char-lessp** were used instead of **char**&lt; for comparing characters. 
+**string-lessp** and **string-greaterp** are exactly like <ClLinks styled={true} term={"string"}><b>string</b></ClLinks>&lt; and <ClLinks styled={true} term={"string"}><b>string</b></ClLinks>&gt;, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if <ClLinks styled={true} term={"char-lessp"}><b>char-lessp</b></ClLinks> were used instead of <ClLinks styled={true} term={"char"}><b>char</b></ClLinks>&lt; for comparing characters. 
 
 
 
-**string**&lt;**=** 
+<ClLinks styled={true} term={"string"}><b>string</b></ClLinks>&lt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks> 
 
 
 
-**string**&lt;**=** is *true* if substring1 is less than or equal to substring2; otherwise it is *false*. 
-
-
-
- 
+<ClLinks styled={true} term={"string"}><b>string</b></ClLinks>&lt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if substring1 is less than or equal to substring2; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -256,15 +252,19 @@ The comparison has one of the following results:
 
 
 
-**string**&gt;**=** 
+ 
 
 
 
-**string**&gt;**=** is *true* if substring1 is greater than or equal to substring2; otherwise it is *false*. **string-not-greaterp**, **string-not-lessp** 
+<ClLinks styled={true} term={"string"}><b>string</b></ClLinks>&gt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks> 
 
 
 
-**string-not-greaterp** and **string-not-lessp** are exactly like **string**&lt;**=** and **string**&gt;**=**, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if **char-lessp** were used instead of **char**&lt; for comparing characters. 
+<ClLinks styled={true} term={"string"}><b>string</b></ClLinks>&gt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if substring1 is greater than or equal to substring2; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. **string-not-greaterp**, **string-not-lessp** 
+
+
+
+**string-not-greaterp** and **string-not-lessp** are exactly like <ClLinks styled={true} term={"string"}><b>string</b></ClLinks>&lt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks> and <ClLinks styled={true} term={"string"}><b>string</b></ClLinks>&gt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks>, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if <ClLinks styled={true} term={"char-lessp"}><b>char-lessp</b></ClLinks> were used instead of <ClLinks styled={true} term={"char"}><b>char</b></ClLinks>&lt; for comparing characters. 
 
 
 
@@ -289,7 +289,7 @@ The comparison has one of the following results:
 
 
 
-**char=** 
+<ClLinks styled={true} term={"char="}><b>char=</b></ClLinks> 
 
 
 
@@ -297,7 +297,7 @@ The comparison has one of the following results:
 
 
 
-**equal** calls **string=** if applied to two *strings*. 
+<ClLinks styled={true} term={"equal"}><b>equal</b></ClLinks> calls <ClLinks styled={true} term={"string"}><b>string=</b></ClLinks> if applied to two <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks>. 
 
 
 

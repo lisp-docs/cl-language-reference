@@ -1,4 +1,4 @@
-*∗***print-pretty***∗ Variable* 
+*∗<ClLinks styled={true} term={"print-pretty"}><b>*print-pretty*</b></ClLinks>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a *generalized boolean*.
 
 
 
-*implementation-dependent*. 
+<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -26,15 +26,15 @@ Controls whether the *Lisp printer* calls the *pretty printer* .
 
 
 
-If it is *false*, the *pretty printer* is not used and a minimum of *whitespace*<sub>1</sub> is output when printing an expression. 
+If it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, the *pretty printer* is not used and a minimum of <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> is output when printing an expression. 
 
 
 
-If it is *true*, the *pretty printer* is used, and the *Lisp printer* will endeavor to insert extra *whitespace*<sub>1</sub> where appropriate to make *expressions* more readable. 
+If it is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the *pretty printer* is used, and the *Lisp printer* will endeavor to insert extra <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> where appropriate to make <ClLinks styled={true} term={"expression"}><i>expressions</i></ClLinks> more readable. 
 
 
 
-**\*print-pretty\*** has an effect even when the *value* of **\*print-escape\*** is *false*. 
+<ClLinks styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks> has an effect even when the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -88,7 +88,7 @@ If it is *true*, the *pretty printer* is used, and the *Lisp printer* will endea
 
 
 
-**write** 
+<ClLinks styled={true} term={"write"}><b>write</b></ClLinks> 
 
 
 

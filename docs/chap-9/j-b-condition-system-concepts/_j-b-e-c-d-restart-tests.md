@@ -2,7 +2,7 @@
 
 
 
-Each *restart* has an associated test, which is a function of one argument (a *condition* or **nil**) which returns *true* if the *restart* should be visible in the current *situation*. This test is created by the :test-function option to **restart-bind** or the :test option to **restart-case**. 
+Each <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> has an associated test, which is a function of one argument (a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>) which returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> should be visible in the current <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks>. This test is created by the :test-function option to <ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks> or the :test option to <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>. 
 
 
 

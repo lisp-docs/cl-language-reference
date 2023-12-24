@@ -1,4 +1,4 @@
-**butlast, nbutlast** *Function* 
+**butlast, nbutlast** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**butlast** *list* &amp;optional *n → result-list* 
+<ClLinks styled={true} term={"butlast"}><b>butlast</b></ClLinks> <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> &amp;optional *n → result-list* 
 
 
 
-**nbutlast** *list* &amp;optional *n → result-list* 
+<ClLinks styled={true} term={"nbutlast"}><b>nbutlast</b></ClLinks> <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> &amp;optional *n → result-list* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*list*—a *list*, which might be a *dotted list* but must not be a *circular list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, which might be a *dotted list* but must not be a *circular list*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*result-list*—a *list*. 
+*result-list*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-**butlast** returns a copy of *list* from which the last *n* conses have been omitted. If *n* is not supplied, its value is 1. If there are fewer than *n* conses in *list*, **nil** is returned and, in the case of **nbutlast**, *list* is not modified. 
+<ClLinks styled={true} term={"butlast"}><b>butlast</b></ClLinks> returns a copy of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> from which the last *n* conses have been omitted. If *n* is not supplied, its value is 1. If there are fewer than *n* conses in <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is returned and, in the case of <ClLinks styled={true} term={"nbutlast"}><b>nbutlast</b></ClLinks>, <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is not modified. 
 
 
 
-**nbutlast** is like **butlast**, but **nbutlast** may modify *list*. It changes the *cdr* of the *cons n*+1 from the end of the *list* to **nil**. 
+<ClLinks styled={true} term={"nbutlast"}><b>nbutlast</b></ClLinks> is like <ClLinks styled={true} term={"butlast"}><b>butlast</b></ClLinks>, but <ClLinks styled={true} term={"nbutlast"}><b>nbutlast</b></ClLinks> may modify <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. It changes the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of the *cons n*+1 from the end of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -72,7 +72,7 @@ foo → (A B C)
 
 
 
-Should signal an error of *type* **type-error** if *list* is not a *proper list* or a *dotted list*. Should signal an error of *type* **type-error** if *n* is not a non-negative *integer* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is not a *proper list* or a *dotted list*. Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *n* is not a non-negative *integer* . 
 
 
 
@@ -80,7 +80,7 @@ Should signal an error of *type* **type-error** if *list* is not a *proper list*
 
 
 
-(butlast *list n*) *≡* (ldiff *list* (last *list n*)) 
+(butlast *list n*) *≡* (ldiff <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> (last *list n*)) 
 
 
 

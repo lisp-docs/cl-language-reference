@@ -6,7 +6,7 @@
 
 
 
-**symbol-macrolet** (*\{*(*symbol expansion*)*\}*\*) *\{declaration\}*\* *\{form\}*\* 
+<ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> (*\{*(*symbol expansion*)*\}*\*) <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -18,23 +18,23 @@
 
 
 
-*symbol*—a *symbol*. 
+<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*expansion*—a *form*. 
+*expansion*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*declaration*—a **declare** *expression*; not evaluated. 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*forms*—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the *values* returned by the *forms*. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -42,27 +42,27 @@
 
 
 
-**symbol-macrolet** provides a mechanism for affecting the *macro expansion* environment for *symbols*. 
+<ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> provides a mechanism for affecting the *macro expansion* environment for <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 
-**symbol-macrolet** lexically establishes expansion functions for each of the *symbol macros* named by *symbols*. The only guaranteed property of an expansion *function* for a *symbol macro* is that when it is applied to the *form* and the *environment* it returns the correct expansion. (In particular, it is *implementation-dependent* whether the expansion is conceptually stored in the expansion function, the *environment*, or both.) 
+<ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> lexically establishes expansion functions for each of the *symbol macros* named by <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>. The only guaranteed property of an expansion <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> for a *symbol macro* is that when it is applied to the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> and the <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> it returns the correct expansion. (In particular, it is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the expansion is conceptually stored in the expansion function, the <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>, or both.) 
 
 
 
-Each reference to *symbol* as a variable within the lexical *scope* of **symbol-macrolet** is expanded by the normal macro expansion process; see Section 3.1.2.1.1 (Symbols as Forms). The expansion of a symbol macro is subject to further macro expansion in the same lexical environment as the symbol macro invocation, exactly analogous to normal *macros*. 
+Each reference to <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> as a variable within the lexical <ClLinks styled={true} term={"scope"}><i>scope</i></ClLinks> of <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> is expanded by the normal macro expansion process; see Section 3.1.2.1.1 (Symbols as Forms). The expansion of a symbol macro is subject to further macro expansion in the same lexical environment as the symbol macro invocation, exactly analogous to normal <ClLinks styled={true} term={"macro"}><i>macros</i></ClLinks>. 
 
 
 
-Exactly the same *declarations* are allowed as for **let** with one exception: **symbol-macrolet** signals an error if a **special** declaration names one of the *symbols* being defined by **symbol-macrolet**. 
+Exactly the same <ClLinks styled={true} term={"declaration"}><i>declarations</i></ClLinks> are allowed as for <ClLinks styled={true} term={"let"}><b>let</b></ClLinks> with one exception: <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> signals an error if a <ClLinks styled={true} term={"special"}><b>special</b></ClLinks> declaration names one of the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> being defined by <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>. 
 
 
 
-When the *forms* of the **symbol-macrolet** form are expanded, any use of **setq** to set the value of one of the specified variables is treated as if it were a **setf**. **psetq** of a *symbol* defined as a symbol macro is treated as if it were a **psetf**, and **multiple-value-setq** is treated as if it were a **setf** of **values**. 
+When the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> of the <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> form are expanded, any use of <ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks> to set the value of one of the specified variables is treated as if it were a <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>. <ClLinks styled={true} term={"psetq"}><b>psetq</b></ClLinks> of a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> defined as a symbol macro is treated as if it were a <ClLinks styled={true} term={"psetf"}><b>psetf</b></ClLinks>, and <ClLinks styled={true} term={"multiple-value-setq"}><b>multiple-value-setq</b></ClLinks> is treated as if it were a <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"values"}><b>values</b></ClLinks>. 
 
 
 
-The use of **symbol-macrolet** can be shadowed by **let**. In other words, **symbol-macrolet** only substitutes for occurrences of *symbol* that would be in the *scope* of a lexical binding of *symbol* surrounding the *forms*. 
+The use of <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> can be shadowed by <ClLinks styled={true} term={"let"}><b>let</b></ClLinks>. In other words, <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> only substitutes for occurrences of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that would be in the <ClLinks styled={true} term={"scope"}><i>scope</i></ClLinks> of a lexical binding of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> surrounding the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -89,11 +89,11 @@ The use of **symbol-macrolet** can be shadowed by **let**. In other words, **sym
 
 
 
-If an attempt is made to bind a *symbol* that is defined as a *global variable*, an error of *type* **program-error** is signaled. 
+If an attempt is made to bind a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that is defined as a *global variable*, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"program-error"}><b>program-error</b></ClLinks> is signaled. 
 
 
 
-If *declaration* contains a **special** declaration that names one of the *symbols* being bound by **symbol-macrolet**, an error of *type* **program-error** is signaled. 
+If <ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks> contains a <ClLinks styled={true} term={"special"}><b>special</b></ClLinks> declaration that names one of the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> being bound by <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"program-error"}><b>program-error</b></ClLinks> is signaled. 
 
 
 
@@ -101,7 +101,7 @@ If *declaration* contains a **special** declaration that names one of the *symbo
 
 
 
-**with-slots**, **macroexpand** 
+<ClLinks styled={true} term={"with-slots"}><b>with-slots</b></ClLinks>, <ClLinks styled={true} term={"macroexpand"}><b>macroexpand</b></ClLinks> 
 
 
 
@@ -109,11 +109,11 @@ If *declaration* contains a **special** declaration that names one of the *symbo
 
 
 
-The special form **symbol-macrolet** is the basic mechanism that is used to implement **with-slots**. 
+The special form <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> is the basic mechanism that is used to implement <ClLinks styled={true} term={"with-slots"}><b>with-slots</b></ClLinks>. 
 
 
 
-If a **symbol-macrolet** *form* is a *top level form*, the *forms* are also processed as *top level forms*. See Section 3.2.3 (File Compilation). 
+If a <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is a *top level form*, the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are also processed as *top level forms*. See Section 3.2.3 (File Compilation). 
 
 
 
@@ -125,7 +125,7 @@ If a **symbol-macrolet** *form* is a *top level form*, the *forms* are also proc
 
 
 
-a *designator* for a *function* of three *arguments*: a *macro function*, a *macro form*, and an *environment object*. 
+a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of three <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>: a *macro function*, a *macro form*, and an *environment object*. 
 
 
 
@@ -133,7 +133,7 @@ a *designator* for a *function* of three *arguments*: a *macro function*, a *mac
 
 
 
-a *designator* for a function that is equivalent to the *function* **funcall**, but that might have additional *implementation-dependent* side-e↵ects. 
+a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a function that is equivalent to the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"funcall"}><b>funcall</b></ClLinks>, but that might have additional <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> side-e↵ects. 
 
 
 
@@ -141,7 +141,7 @@ a *designator* for a function that is equivalent to the *function* **funcall**, 
 
 
 
-Used as the expansion interface hook by **macroexpand-1** to control the *macro expansion* process. When a *macro form* is to be expanded, this *function* is called with three arguments: the *macro function*, the *macro form*, and the *environment* in which the *macro form* is to be expanded. The *environment object* has *dynamic extent*; the consequences are undefined if the *environment object* is referred to outside the *dynamic extent* of the macro expansion function. 
+Used as the expansion interface hook by <ClLinks styled={true} term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> to control the *macro expansion* process. When a *macro form* is to be expanded, this <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is called with three arguments: the *macro function*, the *macro form*, and the <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> in which the *macro form* is to be expanded. The *environment object* has *dynamic extent*; the consequences are undefined if the *environment object* is referred to outside the *dynamic extent* of the macro expansion function. 
 
 
 
@@ -174,7 +174,7 @@ Evaluation and
 
 
 
-**macroexpand**, **macroexpand-1**, **funcall**, Section 3.1 (Evaluation) 
+<ClLinks styled={true} term={"macroexpand"}><b>macroexpand</b></ClLinks>, <ClLinks styled={true} term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks>, <ClLinks styled={true} term={"funcall"}><b>funcall</b></ClLinks>, Section 3.1 (Evaluation) 
 
 
 
@@ -182,11 +182,11 @@ Evaluation and
 
 
 
-The net e↵ect of the chosen initial value is to just invoke the *macro function*, giving it the *macro form* and *environment* as its two arguments. 
+The net e↵ect of the chosen initial value is to just invoke the *macro function*, giving it the *macro form* and <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> as its two arguments. 
 
 
 
-Users or user programs can *assign* this *variable* to customize or trace the *macro expansion* mechanism. Note, however, that this *variable* is a global resource, potentially shared by multiple *programs*; as such, if any two *programs* depend for their correctness on the setting of this *variable*, those *programs* may not be able to run in the same *Lisp image*. For this reason, it is frequently best to confine its uses to debugging situations. 
+Users or user programs can <ClLinks styled={true} term={"assign"}><i>assign</i></ClLinks> this <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> to customize or trace the *macro expansion* mechanism. Note, however, that this <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> is a global resource, potentially shared by multiple <ClLinks styled={true} term={"program"}><i>programs</i></ClLinks>; as such, if any two <ClLinks styled={true} term={"program"}><i>programs</i></ClLinks> depend for their correctness on the setting of this <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>, those <ClLinks styled={true} term={"program"}><i>programs</i></ClLinks> may not be able to run in the same *Lisp image*. For this reason, it is frequently best to confine its uses to debugging situations. 
 
 
 

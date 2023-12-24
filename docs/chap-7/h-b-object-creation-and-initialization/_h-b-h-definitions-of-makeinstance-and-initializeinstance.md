@@ -2,7 +2,7 @@
 
 
 
-The generic function **make-instance** behaves as if it were defined as follows, except that certain optimizations are permitted: 
+The generic function <ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks> behaves as if it were defined as follows, except that certain optimizations are permitted: 
 
 
 
@@ -34,7 +34,7 @@ instance))
 
 
 
-The elided code in the definition of **make-instance** augments the initargs with any *defaulted initialization arguments* and checks the resulting initialization arguments to determine whether 
+The elided code in the definition of <ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks> augments the initargs with any *defaulted initialization arguments* and checks the resulting initialization arguments to determine whether 
 
 
 
@@ -50,11 +50,11 @@ The elided code in the definition of **make-instance** augments the initargs wit
 
 
 
-an initialization argument was supplied that neither filled a *slot* nor supplied an argument to an applicable *method*. 
+an initialization argument was supplied that neither filled a <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> nor supplied an argument to an applicable <ClLinks styled={true} term={"method"}><i>method</i></ClLinks>. 
 
 
 
-The generic function **initialize-instance** behaves as if it were defined as follows, except that certain optimizations are permitted: 
+The generic function <ClLinks styled={true} term={"initialize-instance"}><b>initialize-instance</b></ClLinks> behaves as if it were defined as follows, except that certain optimizations are permitted: 
 
 
 
@@ -70,11 +70,11 @@ These procedures can be customized.
 
 
 
-Customizing at the Programmer Interface level includes using the :initform, :initarg, and :default-initargs options to **defclass**, as well as defining *methods* for **make-instance**, **allocate-instance**, and **initialize-instance**. It is also possible to define *methods* for **shared-initialize**, which would be invoked by the generic functions **reinitialize-instance**, **update-instance-for-redefined-class**, **update-instance-for-different-class**, and **initialize-instance**. The meta-object level supports additional customization. 
+Customizing at the Programmer Interface level includes using the :initform, :initarg, and :default-initargs options to <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks>, as well as defining <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> for <ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks>, <ClLinks styled={true} term={"allocate-instance"}><b>allocate-instance</b></ClLinks>, and <ClLinks styled={true} term={"initialize-instance"}><b>initialize-instance</b></ClLinks>. It is also possible to define <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> for <ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks>, which would be invoked by the generic functions <ClLinks styled={true} term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks>, **update-instance-for-redefined-class**, **update-instance-for-different-class**, and <ClLinks styled={true} term={"initialize-instance"}><b>initialize-instance</b></ClLinks>. The meta-object level supports additional customization. 
 
 
 
-Implementations are permitted to make certain optimizations to **initialize-instance** and **shared-initialize**. The description of **shared-initialize** in Chapter 7 mentions the possible optimizations. 
+Implementations are permitted to make certain optimizations to <ClLinks styled={true} term={"initialize-instance"}><b>initialize-instance</b></ClLinks> and <ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. The description of <ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks> in Chapter 7 mentions the possible optimizations. 
 
 
 

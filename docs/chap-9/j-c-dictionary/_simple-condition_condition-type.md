@@ -6,7 +6,7 @@
 
 
 
-**simple-condition**, **condition**, **t** 
+<ClLinks styled={true} term={"simple-condition"}><b>simple-condition</b></ClLinks>, <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The *type* **simple-condition** represents *conditions* that are signaled by **signal** whenever a *format control* is supplied as the function’s first argument. The *format control* and *format arguments* are initialized with the initialization arguments named :format-control and :format-arguments to **make-condition**, and are *accessed* by the *functions* **simple-condition-format-control** and **simple-condition-format-arguments**. If format arguments are not supplied to **make-condition**, **nil** is used as a default. 
+The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"simple-condition"}><b>simple-condition</b></ClLinks> represents <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> that are signaled by <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> whenever a *format control* is supplied as the function’s first argument. The *format control* and *format arguments* are initialized with the initialization arguments named :format-control and :format-arguments to <ClLinks styled={true} term={"make-condition"}><b>make-condition</b></ClLinks>, and are *accessed* by the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> **simple-condition-format-control** and **simple-condition-format-arguments**. If format arguments are not supplied to <ClLinks styled={true} term={"make-condition"}><b>make-condition</b></ClLinks>, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is used as a default. 
 
 
 
@@ -58,7 +58,7 @@ The *type* **simple-condition** represents *conditions* that are signaled by **s
 
 
 
-*condition*—a *condition* of *type* **simple-condition**. 
+<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"simple-condition"}><b>simple-condition</b></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ The *type* **simple-condition** represents *conditions* that are signaled by **s
 
 
 
-*format-arguments*—a *list*. 
+*format-arguments*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -74,11 +74,11 @@ The *type* **simple-condition** represents *conditions* that are signaled by **s
 
 
 
-**simple-condition-format-control** returns the *format control* needed to process the *condition*’s *format arguments*. 
+**simple-condition-format-control** returns the *format control* needed to process the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>’s *format arguments*. 
 
 
 
-**simple-condition-format-arguments** returns a *list* of *format arguments* needed to process the *condition*’s *format control*. 
+**simple-condition-format-arguments** returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *format arguments* needed to process the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>’s *format control*. 
 
 
 
@@ -98,7 +98,7 @@ The *type* **simple-condition** represents *conditions* that are signaled by **s
 
 
 
-**simple-condition**, Section 9.1 (Condition System Concepts) 
+<ClLinks styled={true} term={"simple-condition"}><b>simple-condition</b></ClLinks>, Section 9.1 (Condition System Concepts) 
 
 
 

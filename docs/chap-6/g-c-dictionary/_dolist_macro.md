@@ -1,4 +1,4 @@
-**dolist** *Macro* 
+**dolist** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**dolist** (*var list-form* [*result-form*]) *\{declaration\}*\* *\{tag | statement\}*\* 
+<ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks> (*var list-form* [*result-form*]) <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *\{tag | statement\}*\* 
 
 
 
@@ -18,23 +18,23 @@
 
 
 
-*var*—a *symbol*. 
+*var*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*list-form*—a *form*. 
+*list-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*result-form*—a *form*. 
+*result-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*declaration*—a **declare** *expression*; not evaluated. 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*tag*—a *go tag*; not evaluated. 
+<ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>—a *go tag*; not evaluated. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-*results*—if a **return** or **return-from** form is executed, the *values* passed from that *form*; otherwise, the *values* returned by the *result-form* or **nil** if there is no *result-form*. 
+*results*—if a <ClLinks styled={true} term={"return"}><b>return</b></ClLinks> or <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks> form is executed, the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> passed from that <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; otherwise, the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the *result-form* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if there is no *result-form*. 
 
 
 
@@ -50,27 +50,27 @@
 
 
 
-**dolist** iterates over the elements of a *list*. The body of **dolist** is like a **tagbody**. It consists of a series of *tags* and *statements*. 
+<ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks> iterates over the elements of a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. The body of <ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks> is like a <ClLinks styled={true} term={"tagbody"}><b>tagbody</b></ClLinks>. It consists of a series of <ClLinks styled={true} term={"tag"}><i>tags</i></ClLinks> and *statements*. 
 
 
 
-**dolist** evaluates *list-form*, which should produce a *list*. It then executes the body once for each element in the *list*, in the order in which the *tags* and *statements* occur, with *var* bound to the element. Then *result-form* is evaluated. *tags* label *statements*. 
+<ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks> evaluates *list-form*, which should produce a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. It then executes the body once for each element in the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, in the order in which the <ClLinks styled={true} term={"tag"}><i>tags</i></ClLinks> and *statements* occur, with *var* bound to the element. Then *result-form* is evaluated. <ClLinks styled={true} term={"tag"}><i>tags</i></ClLinks> label *statements*. 
 
 
 
-At the time *result-form* is processed, *var* is bound to **nil**. 
+At the time *result-form* is processed, *var* is bound to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-An *implicit block* named **nil** surrounds **dolist**. **return** may be used to terminate the loop immediately without performing any further iterations, returning zero or more *values*. 
+An *implicit block* named <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> surrounds <ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks>. <ClLinks styled={true} term={"return"}><b>return</b></ClLinks> may be used to terminate the loop immediately without performing any further iterations, returning zero or more <ClLinks styled={true} term={"value"}><i>values</i></ClLinks>. 
 
 
 
-The *scope* of the binding of *var* does not include the *list-form*, but the *result-form* is included. 
+The <ClLinks styled={true} term={"scope"}><i>scope</i></ClLinks> of the binding of *var* does not include the *list-form*, but the *result-form* is included. 
 
 
 
-It is *implementation-dependent* whether **dolist** *establishes* a new *binding* of *var* on each iteration or whether it *establishes* a binding for *var* once at the beginning and then *assigns* it on any subsequent iterations. 
+It is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether <ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks> *establishes* a new <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> of *var* on each iteration or whether it *establishes* a binding for *var* once at the beginning and then <ClLinks styled={true} term={"assign"}><i>assigns</i></ClLinks> it on any subsequent iterations. 
 
 
 
@@ -93,7 +93,7 @@ temp-two → 4
 
 
 
-**do**, **dotimes**, **tagbody**, Section 3.6 (Traversal Rules and Side Effects) 
+<ClLinks styled={true} term={"do"}><b>do</b></ClLinks>, <ClLinks styled={true} term={"dotimes"}><b>dotimes</b></ClLinks>, <ClLinks styled={true} term={"tagbody"}><b>tagbody</b></ClLinks>, Section 3.6 (Traversal Rules and Side Effects) 
 
 
 
@@ -101,4 +101,4 @@ temp-two → 4
 
 
 
-**go** may be used within the body of **dolist** to transfer control to a statement labeled by a *tag*. 
+<ClLinks styled={true} term={"go"}><b>go</b></ClLinks> may be used within the body of <ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks> to transfer control to a statement labeled by a <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>. 

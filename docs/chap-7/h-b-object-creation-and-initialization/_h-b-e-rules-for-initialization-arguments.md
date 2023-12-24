@@ -2,7 +2,7 @@
 
 
 
-The :initarg slot option may be specified more than once for a given *slot*. 
+The :initarg slot option may be specified more than once for a given <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 
 
 
 
@@ -10,19 +10,15 @@ The following rules specify when initialization arguments may be multiply define
 
 
 
-*•* A given initialization argument can be used to initialize more than one *slot* if the same initialization argument name appears in more than one :initarg slot option. 
+*•* A given initialization argument can be used to initialize more than one <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> if the same initialization argument name appears in more than one :initarg slot option. 
 
 
 
-*•* A given initialization argument name can appear in the *lambda list* of more than one initialization *method*. 
-
-
+*•* A given initialization argument name can appear in the *lambda list* of more than one initialization <ClLinks styled={true} term={"method"}><i>method</i></ClLinks>. 
 
 
 
 
-
- 
 
 
 
@@ -30,27 +26,31 @@ The following rules specify when initialization arguments may be multiply define
 
 
 
-*•* A given initialization argument name can appear both in an :initarg slot option and in the *lambda list* of an initialization *method*. 
+ 
 
 
 
-If two or more initialization arguments that initialize the same *slot* are given in the arguments to **make-instance**, the leftmost of these initialization arguments in the *initialization argument list* supplies the value, even if the initialization arguments have different names. 
+*•* A given initialization argument name can appear both in an :initarg slot option and in the *lambda list* of an initialization <ClLinks styled={true} term={"method"}><i>method</i></ClLinks>. 
 
 
 
-If two or more different initialization arguments that initialize the same *slot* have default values and none is given explicitly in the arguments to **make-instance**, the initialization argument that appears in a :default-initargs class option in the most specific of the *classes* supplies the value. If a single :default-initargs class option specifies two or more initialization arguments that initialize the same *slot* and none is given explicitly in the arguments to **make-instance**, the leftmost in the :default-initargs class option supplies the value, and the values of the remaining default value *forms* are ignored. 
+If two or more initialization arguments that initialize the same <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> are given in the arguments to <ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks>, the leftmost of these initialization arguments in the *initialization argument list* supplies the value, even if the initialization arguments have different names. 
 
 
 
-Initialization arguments given explicitly in the arguments to **make-instance** appear to the left of defaulted initialization arguments. Suppose that the classes *C*<sub>1</sub> and *C*<sub>2</sub> supply the values of defaulted initialization arguments for different *slots*, and suppose that *C*<sub>1</sub> is more specific than *C*<sub>2</sub>; then the defaulted initialization argument whose value is supplied by *C*<sub>1</sub> is to the left of 
+If two or more different initialization arguments that initialize the same <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> have default values and none is given explicitly in the arguments to <ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks>, the initialization argument that appears in a :default-initargs class option in the most specific of the *classes* supplies the value. If a single :default-initargs class option specifies two or more initialization arguments that initialize the same <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> and none is given explicitly in the arguments to <ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks>, the leftmost in the :default-initargs class option supplies the value, and the values of the remaining default value <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are ignored. 
 
 
 
-the defaulted initialization argument whose value is supplied by *C*<sub>2</sub> in the *defaulted initialization argument list*. If a single :default-initargs class option supplies the values of initialization arguments for two different *slots*, the initialization argument whose value is specified farther to the left in the :default-initargs class option appears farther to the left in the *defaulted initialization argument list*. 
+Initialization arguments given explicitly in the arguments to <ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks> appear to the left of defaulted initialization arguments. Suppose that the classes *C*<sub>1</sub> and *C*<sub>2</sub> supply the values of defaulted initialization arguments for different <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks>, and suppose that *C*<sub>1</sub> is more specific than *C*<sub>2</sub>; then the defaulted initialization argument whose value is supplied by *C*<sub>1</sub> is to the left of 
 
 
 
-If a *slot* has both an :initform form and an :initarg slot option, and the initialization argument is defaulted using :default-initargs or is supplied to **make-instance**, the captured :initform form is neither used nor evaluated. 
+the defaulted initialization argument whose value is supplied by *C*<sub>2</sub> in the *defaulted initialization argument list*. If a single :default-initargs class option supplies the values of initialization arguments for two different <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks>, the initialization argument whose value is specified farther to the left in the :default-initargs class option appears farther to the left in the *defaulted initialization argument list*. 
+
+
+
+If a <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> has both an :initform form and an :initarg slot option, and the initialization argument is defaulted using :default-initargs or is supplied to <ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks>, the captured :initform form is neither used nor evaluated. 
 
 
 

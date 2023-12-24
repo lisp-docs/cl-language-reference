@@ -1,4 +1,4 @@
-**symbolp** *Function* 
+**symbolp** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**symbolp** *object → generalized-boolean* 
+<ClLinks styled={true} term={"symbolp"}><b>symbolp</b></ClLinks> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns *true* if *object* is of *type* **symbol**; otherwise, returns *false*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -45,7 +45,7 @@ Returns *true* if *object* is of *type* **symbol**; otherwise, returns *false*.
 
 
 
-**keywordp**, **symbol**, **typep** 
+<ClLinks styled={true} term={"keywordp"}><b>keywordp</b></ClLinks>, <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>, <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks> 
 
 
 
@@ -65,7 +65,7 @@ Returns *true* if *object* is of *type* **symbol**; otherwise, returns *false*.
 
 
 
-(symbolp *object*) *≡* (typep *object* ’symbol) 
+(symbolp <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’symbol) 
 
 
 

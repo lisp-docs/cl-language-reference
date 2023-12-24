@@ -1,4 +1,4 @@
-**file-error-pathname** *Function* 
+**file-error-pathname** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**file-error-pathname** *condition → pathspec* 
+<ClLinks styled={true} term={"file-error-pathname"}><b>file-error-pathname</b></ClLinks> *condition → pathspec* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*condition*—a *condition* of *type* **file-error**. 
+<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the “offending pathname” of a *condition* of *type* **file-error**. 
+Returns the “offending pathname” of a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@ Returns the “offending pathname” of a *condition* of *type* **file-error**.
 
 
 
-**file-error**, Chapter 9 (Conditions) 
+<ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks>, Chapter 9 (Conditions) 
 
 
 

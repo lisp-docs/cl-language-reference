@@ -22,7 +22,7 @@ The space or blank character.
 
 
 
-The following names are *semi-standard*; if an *implementation* supports them, they should be used for the described *characters* and no others. 
+The following names are <ClLinks styled={true} term={"semi-standard"}><i>semi-standard</i></ClLinks>; if an <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> supports them, they should be used for the described <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> and no others. 
 
 
 
@@ -74,7 +74,7 @@ The line-feed character.
 
 
 
-In some *implementations*, one or more of these *character names* might denote a *standard character* ; for example, #\Linefeed and #\Newline might be the *same character* in some *implementations*. 
+In some <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>, one or more of these *character names* might denote a *standard character* ; for example, #\Linefeed and #\Newline might be the *same character* in some <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>. 
 
 
 

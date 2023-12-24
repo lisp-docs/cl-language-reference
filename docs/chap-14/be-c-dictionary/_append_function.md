@@ -1,4 +1,4 @@
-**append** *Function* 
+**append** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**append** &amp;rest *lists → result* 
+<ClLinks styled={true} term={"append"}><b>append</b></ClLinks> &amp;rest *lists → result* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*list*—each must be a *proper list* except the last, which may be any *object*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—each must be a *proper list* except the last, which may be any <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*result*—an *object*. This will be a *list* unless the last *list* was not a *list* and all preceding *lists* were *null*. 
+*result*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. This will be a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> unless the last <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> was not a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> and all preceding <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks> were <ClLinks styled={true} term={"null"}><i>null</i></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-**append** returns a new *list* that is the concatenation of the copies. *lists* are left unchanged; the *list structure* of each of *lists* except the last is copied. The last argument is not copied; it becomes the *cdr* of the final *dotted pair* of the concatenation of the preceding *lists*, or is returned directly if there are no preceding *non-empty lists*. 
+<ClLinks styled={true} term={"append"}><b>append</b></ClLinks> returns a new <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that is the concatenation of the copies. <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks> are left unchanged; the *list structure* of each of <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks> except the last is copied. The last argument is not copied; it becomes the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of the final *dotted pair* of the concatenation of the preceding <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>, or is returned directly if there are no preceding *non-empty lists*. 
 
 
 
@@ -58,7 +58,7 @@ lst → (A B C)
 
 
 
-**nconc**, **concatenate** 
+<ClLinks styled={true} term={"nconc"}><b>nconc</b></ClLinks>, <ClLinks styled={true} term={"concatenate"}><b>concatenate</b></ClLinks> 
 
 
 

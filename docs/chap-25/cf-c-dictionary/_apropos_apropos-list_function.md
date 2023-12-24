@@ -1,4 +1,4 @@
-**apropos, apropos-list** *Function* 
+**apropos, apropos-list** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**apropos** *string* &amp;optional *package → ⟨no values⟩* 
+<ClLinks styled={true} term={"apropos"}><b>apropos</b></ClLinks> <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> &amp;optional *package → ⟨no values⟩* 
 
 
 
-**apropos-list** *string* &amp;optional *package → symbols* 
+<ClLinks styled={true} term={"apropos-list"}><b>apropos-list</b></ClLinks> <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> &amp;optional *package → symbols* 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-*string*—a *string designator* . 
+<ClLinks styled={true} term={"string"}><i>string</i></ClLinks>—a *string designator* . 
 
 
 
-*package*—a *package designator* or **nil**. The default is **nil**. 
+<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*symbols*—a *list* of *symbols*. 
+<ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-These functions search for *interned symbols* whose *names* contain the substring *string*. 
+These functions search for *interned symbols* whose <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> contain the substring <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -46,23 +46,23 @@ These functions search for *interned symbols* whose *names* contain the substrin
 
 
 
-For **apropos**, as each such *symbol* is found, its name is printed on *standard output*. In addition, if such a *symbol* is defined as a *function* or *dynamic variable*, information about those definitions might also be printed. 
+For <ClLinks styled={true} term={"apropos"}><b>apropos</b></ClLinks>, as each such <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is found, its name is printed on *standard output*. In addition, if such a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is defined as a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> or *dynamic variable*, information about those definitions might also be printed. 
 
 
 
-For **apropos-list**, no output occurs as the search proceeds; instead a list of the matching *symbols* is returned when the search is complete. 
+For <ClLinks styled={true} term={"apropos-list"}><b>apropos-list</b></ClLinks>, no output occurs as the search proceeds; instead a list of the matching <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> is returned when the search is complete. 
 
 
 
-If *package* is *non-nil*, only the *symbols accessible* in that *package* are searched; otherwise all *symbols accessible* in any *package* are searched. 
+If <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, only the *symbols accessible* in that <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> are searched; otherwise all *symbols accessible* in any <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> are searched. 
 
 
 
-Because a *symbol* might be available by way of more than one inheritance path, **apropos** might print information about the *same symbol* more than once, or **apropos-list** might return a *list* containing duplicate *symbols*. 
+Because a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> might be available by way of more than one inheritance path, <ClLinks styled={true} term={"apropos"}><b>apropos</b></ClLinks> might print information about the *same symbol* more than once, or <ClLinks styled={true} term={"apropos-list"}><b>apropos-list</b></ClLinks> might return a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> containing duplicate <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 
-Whether or not the search is case-sensitive is *implementation-defined*. 
+Whether or not the search is case-sensitive is <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
 
 
 
@@ -70,11 +70,11 @@ Whether or not the search is case-sensitive is *implementation-defined*.
 
 
 
-The set of *symbols* which are currently *interned* in any *packages* being searched. 
+The set of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> which are currently <ClLinks styled={true} term={"interned"}><i>interned</i></ClLinks> in any <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> being searched. 
 
 
 
-**apropos** is also affected by **\*standard-output\***. 
+<ClLinks styled={true} term={"apropos"}><b>apropos</b></ClLinks> is also affected by **\*standard-output\***. 
 
 
 

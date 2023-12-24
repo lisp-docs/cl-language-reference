@@ -1,4 +1,4 @@
-**in-package** *Macro* 
+**in-package** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**in-package** *name → package* 
+<ClLinks styled={true} term={"in-package"}><b>in-package</b></ClLinks> *name → package* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*name*—a *string designator* ; not evaluated. 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a *string designator* ; not evaluated. 
 
 
 
-*package*—the *package* named by *name*. 
+<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> named by <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Causes the the *package* named by *name* to become the *current package*—that is, the *value* of **\*package\***. If no such *package* already exists, an error of *type* **package-error** is signaled. 
+Causes the the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> named by <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> to become the *current package*—that is, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"package"}><b>\*package\*</b></ClLinks>. If no such <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> already exists, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"package-error"}><b>package-error</b></ClLinks> is signaled. 
 
 
 
-Everything **in-package** does is also performed at compile time if the call appears as a *top level form*. 
+Everything <ClLinks styled={true} term={"in-package"}><b>in-package</b></ClLinks> does is also performed at compile time if the call appears as a *top level form*. 
 
 
 
@@ -38,7 +38,7 @@ Everything **in-package** does is also performed at compile time if the call app
 
 
 
-The *variable* **\*package\*** is assigned. If the **in-package** *form* is a *top level form*, this assignment also occurs at compile time. 
+The <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> <ClLinks styled={true} term={"package"}><b>\*package\*</b></ClLinks> is assigned. If the <ClLinks styled={true} term={"in-package"}><b>in-package</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is a *top level form*, this assignment also occurs at compile time. 
 
 
 
@@ -46,7 +46,7 @@ The *variable* **\*package\*** is assigned. If the **in-package** *form* is a *t
 
 
 
-An error of *type* **package-error** is signaled if the specified *package* does not exist. 
+An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"package-error"}><b>package-error</b></ClLinks> is signaled if the specified <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> does not exist. 
 
 
 
@@ -54,7 +54,7 @@ An error of *type* **package-error** is signaled if the specified *package* does
 
 
 
-**\*package\*** 
+<ClLinks styled={true} term={"package"}><b>\*package\*</b></ClLinks> 
 
 
 

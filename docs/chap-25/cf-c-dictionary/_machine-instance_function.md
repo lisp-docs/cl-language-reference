@@ -1,4 +1,4 @@
-**machine-instance** *Function* 
+**machine-instance** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**machine-instance** *⟨no arguments⟩ → description* 
+<ClLinks styled={true} term={"machine-instance"}><b>machine-instance</b></ClLinks> *⟨no arguments⟩ → description* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*description*—a *string* or **nil**. 
+*description*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-Returns a *string* that identifies the particular instance of the computer hardware on which Common Lisp is running, or **nil** if no such *string* can be computed. 
+Returns a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that identifies the particular instance of the computer hardware on which Common Lisp is running, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if no such <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> can be computed. 
 
 
 
@@ -40,7 +40,7 @@ Returns a *string* that identifies the particular instance of the computer hardw
 
 
 
-The machine instance, and the *implementation*. 
+The machine instance, and the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 
@@ -60,7 +60,7 @@ The machine instance, and the *implementation*.
 
 
 
-**machine-type**, **machine-version** 
+<ClLinks styled={true} term={"machine-type"}><b>machine-type</b></ClLinks>, <ClLinks styled={true} term={"machine-version"}><b>machine-version</b></ClLinks> 
 
 
 

@@ -2,19 +2,19 @@
 
 
 
-A *variable* is a *dynamic variable* if one of the following conditions hold: 
+A <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> is a *dynamic variable* if one of the following conditions hold: 
 
 
 
-*•* It is locally declared or globally proclaimed **special**. 
+*•* It is locally declared or globally proclaimed <ClLinks styled={true} term={"special"}><b>special</b></ClLinks>. 
 
 
 
-*•* It occurs textually within a *form* that creates a *dynamic binding* for a *variable* of the *same name*, and the *binding* is not *shadowed* <sub>2</sub> by a *form* that creates a *lexical binding* of the same *variable name*. 
+*•* It occurs textually within a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that creates a *dynamic binding* for a <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> of the *same name*, and the <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> is not *shadowed* <sub>2</sub> by a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that creates a *lexical binding* of the same *variable name*. 
 
 
 
-A *dynamic variable* can be referenced at any time in any *program*; there is no textual limitation on references to *dynamic variables*. At any given time, all *dynamic variables* with a given name refer to exactly one *binding*, either in the *dynamic environment* or in the *global environment*.  
+A *dynamic variable* can be referenced at any time in any <ClLinks styled={true} term={"program"}><i>program</i></ClLinks>; there is no textual limitation on references to *dynamic variables*. At any given time, all *dynamic variables* with a given name refer to exactly one <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks>, either in the *dynamic environment* or in the *global environment*.  
 
 
 
@@ -22,19 +22,19 @@ A *dynamic variable* can be referenced at any time in any *program*; there is no
 
 
 
-The *value* part of the *binding* for a *dynamic variable* might be empty; in this case, the *dynamic variable* is said to have no *value*, or to be *unbound*. A *dynamic variable* can be made *unbound* by using **makunbound**. 
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> part of the <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> for a *dynamic variable* might be empty; in this case, the *dynamic variable* is said to have no <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>, or to be <ClLinks styled={true} term={"unbound"}><i>unbound</i></ClLinks>. A *dynamic variable* can be made <ClLinks styled={true} term={"unbound"}><i>unbound</i></ClLinks> by using <ClLinks styled={true} term={"makunbound"}><b>makunbound</b></ClLinks>. 
 
 
 
-The effect of *binding* a *dynamic variable* is to create a new *binding* to which all references to that *dynamic variable* in any *program* refer for the duration of the *evaluation* of the *form* that creates the *dynamic binding*. 
+The effect of <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> a *dynamic variable* is to create a new <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> to which all references to that *dynamic variable* in any <ClLinks styled={true} term={"program"}><i>program</i></ClLinks> refer for the duration of the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that creates the *dynamic binding*. 
 
 
 
-A *dynamic variable* can be referenced outside the *dynamic extent* of a *form* that *binds* it. Such a *variable* is sometimes called a “global variable” but is still in all respects just a *dynamic variable* whose *binding* happens to exist in the *global environment* rather than in some *dynamic environment*. 
+A *dynamic variable* can be referenced outside the *dynamic extent* of a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that <ClLinks styled={true} term={"bind"}><i>binds</i></ClLinks> it. Such a <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> is sometimes called a “global variable” but is still in all respects just a *dynamic variable* whose <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> happens to exist in the *global environment* rather than in some *dynamic environment*. 
 
 
 
-A *dynamic variable* is *unbound* unless and until explicitly assigned a value, except for those variables whose initial value is defined in this specification or by an *implementation*. 
+A *dynamic variable* is <ClLinks styled={true} term={"unbound"}><i>unbound</i></ClLinks> unless and until explicitly assigned a value, except for those variables whose initial value is defined in this specification or by an <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 

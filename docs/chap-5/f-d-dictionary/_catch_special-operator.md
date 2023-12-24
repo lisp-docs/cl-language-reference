@@ -6,7 +6,7 @@
 
 
 
-**catch** *tag \{form\}*\* → \{result\}\* 
+<ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> *tag \{form\}*\* → \{result\}\* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*tag*—a *catch tag*; evaluated. 
+<ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>—a *catch tag*; evaluated. 
 
 
 
-*forms*—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—if the *forms* exit normally, the *values* returned by the *forms*; if a throw occurs to the *tag*, the *values* that are thrown. 
+*results*—if the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> exit normally, the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>; if a throw occurs to the <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>, the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> that are thrown. 
 
 
 
@@ -30,35 +30,35 @@
 
 
 
-**catch** is used as the destination of a non-local control transfer by **throw**. *Tags* are used to find the **catch** to which a **throw** is transferring control. (catch ’foo *form*) catches a (throw ’foo *form*) but not a (throw ’bar *form*). 
+<ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> is used as the destination of a non-local control transfer by <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks>. <ClLinks styled={true} term={"tag"}><i>Tags</i></ClLinks> are used to find the <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> to which a <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks> is transferring control. (catch ’foo <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>) catches a (throw ’foo <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>) but not a (throw ’bar <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>). 
 
 
 
-The order of execution of **catch** follows: 
+The order of execution of <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> follows: 
 
 
 
-1\. *Tag* is evaluated. It serves as the name of the **catch**. 
+1\. <ClLinks styled={true} term={"tag"}><i>Tag</i></ClLinks> is evaluated. It serves as the name of the <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks>. 
 
 
 
-2\. *Forms* are then evaluated as an implicit **progn**, and the results of the last *form* are returned unless a **throw** occurs. 
+2\. <ClLinks styled={true} term={"form"}><i>Forms</i></ClLinks> are then evaluated as an implicit <ClLinks styled={true} term={"progn"}><b>progn</b></ClLinks>, and the results of the last <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> are returned unless a <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks> occurs. 
 
 
 
-3\. If a **throw** occurs during the execution of one of the *forms*, control is transferred to the **catch** *form* whose *tag* is **eq** to the tag argument of the **throw** and which is the most recently established **catch** with that *tag*. No further evaluation of *forms* occurs. 
+3\. If a <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks> occurs during the execution of one of the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>, control is transferred to the <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> whose <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks> is <ClLinks styled={true} term={"eq"}><b>eq</b></ClLinks> to the tag argument of the <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks> and which is the most recently established <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> with that <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>. No further evaluation of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> occurs. 
 
 
 
-4\. The *tag established* by **catch** is *disestablished* just before the results are returned. 
+4\. The *tag established* by <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> is *disestablished* just before the results are returned. 
 
 
 
-If during the execution of one of the *forms*, a **throw** is executed whose tag is **eq** to the **catch** tag, then the values specified by the **throw** are returned as the result of the dynamically most recently established **catch** form with that tag. 
+If during the execution of one of the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>, a <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks> is executed whose tag is <ClLinks styled={true} term={"eq"}><b>eq</b></ClLinks> to the <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> tag, then the values specified by the <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks> are returned as the result of the dynamically most recently established <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> form with that tag. 
 
 
 
-The mechanism for **catch** and **throw** works even if **throw** is not within the lexical scope of **catch**. **throw** must occur within the *dynamic extent* of the *evaluation* of the body of a **catch** with a corresponding *tag*. 
+The mechanism for <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> and <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks> works even if <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks> is not within the lexical scope of <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks>. <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks> must occur within the *dynamic extent* of the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of the body of a <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> with a corresponding <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>. 
 
 
 
@@ -83,7 +83,7 @@ Data and Control
 
 
 
-An error of *type* **control-error** is signaled if **throw** is done when there is no suitable **catch** *tag*. 
+An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"control-error"}><b>control-error</b></ClLinks> is signaled if <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks> is done when there is no suitable <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>. 
 
 
 
@@ -91,7 +91,7 @@ An error of *type* **control-error** is signaled if **throw** is done when there
 
 
 
-**throw**, Section 3.1 (Evaluation) 
+<ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks>, Section 3.1 (Evaluation) 
 
 
 
@@ -99,11 +99,11 @@ An error of *type* **control-error** is signaled if **throw** is done when there
 
 
 
-It is customary for *symbols* to be used as *tags*, but any *object* is permitted. However, numbers should not be used because the comparison is done using **eq**. 
+It is customary for <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> to be used as <ClLinks styled={true} term={"tag"}><i>tags</i></ClLinks>, but any <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is permitted. However, numbers should not be used because the comparison is done using <ClLinks styled={true} term={"eq"}><b>eq</b></ClLinks>. 
 
 
 
-**catch** differs from **block** in that **catch** tags have dynamic *scope* while **block** names have *lexical scope*. 
+<ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> differs from <ClLinks styled={true} term={"block"}><b>block</b></ClLinks> in that <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> tags have dynamic <ClLinks styled={true} term={"scope"}><i>scope</i></ClLinks> while <ClLinks styled={true} term={"block"}><b>block</b></ClLinks> names have *lexical scope*. 
 
 
 

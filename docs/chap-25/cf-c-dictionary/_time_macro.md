@@ -1,4 +1,4 @@
-**time** *Macro* 
+**time** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**time** *form → \{result\}*\* 
+<ClLinks styled={true} term={"time"}><b>time</b></ClLinks> *form → \{result\}*\* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*form*—a *form*; evaluated as described below. 
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
 
 
 
-*results*—the *values* returned by the *form*. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-**time** evaluates *form* in the current *environment* (lexical and dynamic). A call to **time** can be compiled. 
+<ClLinks styled={true} term={"time"}><b>time</b></ClLinks> evaluates <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> in the current <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> (lexical and dynamic). A call to <ClLinks styled={true} term={"time"}><b>time</b></ClLinks> can be compiled. 
 
 
 
-**time** prints various timing data and other information to *trace output*. The nature and format of the printed information is *implementation-defined*. Implementations are encouraged to provide such information as elapsed real time, machine run time, and storage management statistics. 
+<ClLinks styled={true} term={"time"}><b>time</b></ClLinks> prints various timing data and other information to *trace output*. The nature and format of the printed information is <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. Implementations are encouraged to provide such information as elapsed real time, machine run time, and storage management statistics. 
 
 
 
@@ -62,7 +62,7 @@ The magnitude of the results may depend on the hardware, the operating system, t
 
 
 
-**get-internal-real-time**, **get-internal-run-time** 
+<ClLinks styled={true} term={"get-internal-real-time"}><b>get-internal-real-time</b></ClLinks>, <ClLinks styled={true} term={"get-internal-run-time"}><b>get-internal-run-time</b></ClLinks> 
 
 
 

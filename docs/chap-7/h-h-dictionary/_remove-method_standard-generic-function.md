@@ -6,7 +6,7 @@
 
 
 
-**remove-method** *generic-function method → generic-function* 
+<ClLinks styled={true} term={"remove-method"}><b>remove-method</b></ClLinks> *generic-function method → generic-function* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-**remove-method** (*generic-function* **standard-generic-function**) 
+<ClLinks styled={true} term={"remove-method"}><b>remove-method</b></ClLinks> (*generic-function* <ClLinks styled={true} term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks>) 
 
 
 
-*method* 
+<ClLinks styled={true} term={"method"}><i>method</i></ClLinks> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*method*—a *method*. 
+<ClLinks styled={true} term={"method"}><i>method</i></ClLinks>—a <ClLinks styled={true} term={"method"}><i>method</i></ClLinks>. 
 
 
 
@@ -38,11 +38,11 @@
 
 
 
-The *generic function* **remove-method** removes a *method* from *generic-function* by modifying the *generic-function* (if necessary). 
+The *generic function* <ClLinks styled={true} term={"remove-method"}><b>remove-method</b></ClLinks> removes a <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> from *generic-function* by modifying the *generic-function* (if necessary). 
 
 
 
-**remove-method** must not signal an error if the *method* is not one of the *methods* on the *generic-function*. 
+<ClLinks styled={true} term={"remove-method"}><b>remove-method</b></ClLinks> must not signal an error if the <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> is not one of the <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> on the *generic-function*. 
 
 
 
@@ -50,7 +50,7 @@ The *generic function* **remove-method** removes a *method* from *generic-functi
 
 
 
-**find-method** 
+<ClLinks styled={true} term={"find-method"}><b>find-method</b></ClLinks> 
 
 
 

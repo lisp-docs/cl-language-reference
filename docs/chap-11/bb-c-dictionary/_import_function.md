@@ -1,4 +1,4 @@
-**import** *Function* 
+**import** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**import** *symbols* &amp;optional *package →* **t** 
+<ClLinks styled={true} term={"import"}><b>import</b></ClLinks> <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> &amp;optional *package →* <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*symbols*—a *designator* for a *list* of *symbols*. 
+<ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 
-*package*—a *package designator* . The default is the *current package*. 
+<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. 
 
 
 
@@ -38,19 +38,19 @@
 
 
 
-**import** adds *symbol* or *symbols* to the internals of *package*, checking for name conflicts with existing *symbols* either *present* in *package* or *accessible* to it. Once the *symbols* have been *imported*, they may be referenced in the *importing package* without the use of a *package prefix* when using the *Lisp reader* . 
+<ClLinks styled={true} term={"import"}><b>import</b></ClLinks> adds <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> to the internals of <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, checking for name conflicts with existing <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> either <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> or <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> to it. Once the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> have been *imported*, they may be referenced in the *importing package* without the use of a *package prefix* when using the *Lisp reader* . 
 
 
 
-A name conflict in **import** between the *symbol* being imported and a symbol inherited from some other *package* can be resolved in favor of the *symbol* being *imported* by making it a shadowing symbol, or in favor of the *symbol* already *accessible* by not doing the **import**. A name conflict in **import** with a *symbol* already *present* in the *package* may be resolved by uninterning that *symbol*, or by not doing the **import**. 
+A name conflict in <ClLinks styled={true} term={"import"}><b>import</b></ClLinks> between the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> being imported and a symbol inherited from some other <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> can be resolved in favor of the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> being *imported* by making it a shadowing symbol, or in favor of the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> already <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> by not doing the <ClLinks styled={true} term={"import"}><b>import</b></ClLinks>. A name conflict in <ClLinks styled={true} term={"import"}><b>import</b></ClLinks> with a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> already <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> may be resolved by uninterning that <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, or by not doing the <ClLinks styled={true} term={"import"}><b>import</b></ClLinks>. 
 
 
 
-The imported *symbol* is not automatically exported from the *current package*, but if it is already *present* and external, then the fact that it is external is not changed. If any *symbol* to be *imported* has no home package (*i.e.*, (symbol-package *symbol*) → nil), **import** sets the *home package* of the *symbol* to *package*. 
+The imported <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is not automatically exported from the *current package*, but if it is already <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> and external, then the fact that it is external is not changed. If any <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> to be *imported* has no home package (*i.e.*, (symbol-package <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>) → nil), <ClLinks styled={true} term={"import"}><b>import</b></ClLinks> sets the *home package* of the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> to <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
 
 
 
-If the *symbol* is already *present* in the importing *package*, **import** has no effect. 
+If the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is already <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in the importing <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, <ClLinks styled={true} term={"import"}><b>import</b></ClLinks> has no effect. 
 
 
 
@@ -83,7 +83,7 @@ Current state of the package system.
 
 
 
-**import** signals a *correctable* error of *type* **package-error** if any of the *symbols* to be *imported* has the *same name* (under **string=**) as some distinct *symbol* (under **eql**) already *accessible* in the *package*, even if the conflict is with a *shadowing symbol* of the *package*. 
+<ClLinks styled={true} term={"import"}><b>import</b></ClLinks> signals a <ClLinks styled={true} term={"correctable"}><i>correctable</i></ClLinks> error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"package-error"}><b>package-error</b></ClLinks> if any of the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> to be *imported* has the *same name* (under <ClLinks styled={true} term={"string"}><b>string=</b></ClLinks>) as some distinct <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> (under <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks>) already <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, even if the conflict is with a *shadowing symbol* of the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -91,7 +91,7 @@ Current state of the package system.
 
 
 
-**shadow**, **export** 
+<ClLinks styled={true} term={"shadow"}><b>shadow</b></ClLinks>, <ClLinks styled={true} term={"export"}><b>export</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**restart-case** *Macro* 
+**restart-case** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**restart-case** *restartable-form \{↓clause\} → \{result\}*\* 
+<ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> *restartable-form \{↓clause\} → \{result\}*\* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-[[ :interactive *interactive-expression |* :report *report-expression |* :test *test-expression* ]] *\{declaration\}*\* *\{form\}*\*) 
+[[ :interactive *interactive-expression |* :report *report-expression |* :test *test-expression* ]] <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\*) 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-*restartable-form*—a *form*. 
+*restartable-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*case-name*—a *symbol* or **nil**. 
+*case-name*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -34,27 +34,27 @@
 
 
 
-*interactive-expression*—a *symbol* or a *lambda expression*. 
+*interactive-expression*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or a *lambda expression*. 
 
 
 
-*report-expression*—a *string*, a *symbol*, or a *lambda expression*. 
+*report-expression*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, or a *lambda expression*. 
 
 
 
-*test-expression*—a *symbol* or a *lambda expression*. 
+*test-expression*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or a *lambda expression*. 
 
 
 
-*declaration*—a **declare** *expression*; not evaluated. 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*form*—a *form*. 
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*results*—the *values* resulting from the *evaluation* of *restartable-form*, or the *values* returned by the last *form* executed in a chosen *clause*, or **nil**. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> resulting from the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of *restartable-form*, or the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the last <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> executed in a chosen *clause*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-**restart-case** evaluates *restartable-form* in a *dynamic environment* where the clauses have special meanings as points to which control may be transferred. If *restartable-form* finishes executing and returns any values, all values returned are returned by **restart-case** and processing has completed. While *restartable-form* is executing, any code may transfer control to one of the clauses (see 
+<ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> evaluates *restartable-form* in a *dynamic environment* where the clauses have special meanings as points to which control may be transferred. If *restartable-form* finishes executing and returns any values, all values returned are returned by <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> and processing has completed. While *restartable-form* is executing, any code may transfer control to one of the clauses (see 
 
 
 
@@ -78,35 +78,35 @@
 
 
 
-**restart-case** 
+<ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> 
 
 
 
-**invoke-restart**). If a transfer occurs, the forms in the body of that clause is evaluated and any values returned by the last such form are returned by **restart-case**. In this case, the dynamic state is unwound appropriately (so that the restarts established around the *restartable-form* are no longer active) prior to execution of the clause. 
+<ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>). If a transfer occurs, the forms in the body of that clause is evaluated and any values returned by the last such form are returned by <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>. In this case, the dynamic state is unwound appropriately (so that the restarts established around the *restartable-form* are no longer active) prior to execution of the clause. 
 
 
 
-If there are no *forms* in a selected clause, **restart-case** returns **nil**. 
+If there are no <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a selected clause, <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-If *case-name* is a *symbol*, it names this restart. 
+If *case-name* is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, it names this restart. 
 
 
 
-It is possible to have more than one clause use the same *case-name*. In this case, the first clause with that name is found by **find-restart**. The other clauses are accessible using **compute-restarts**. 
+It is possible to have more than one clause use the same *case-name*. In this case, the first clause with that name is found by <ClLinks styled={true} term={"find-restart"}><b>find-restart</b></ClLinks>. The other clauses are accessible using <ClLinks styled={true} term={"compute-restarts"}><b>compute-restarts</b></ClLinks>. 
 
 
 
-Each *arglist* is an *ordinary lambda list* to be bound during the execution of its corresponding *forms*. These parameters are used by the **restart-case** clause to receive any necessary data from a call to **invoke-restart**. 
+Each *arglist* is an *ordinary lambda list* to be bound during the execution of its corresponding <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. These parameters are used by the <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> clause to receive any necessary data from a call to <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>. 
 
 
 
-By default, **invoke-restart-interactively** passes no arguments and all arguments must be optional in order to accomodate interactive restarting. However, the arguments need not be optional if the :interactive keyword has been used to inform **invoke-restart-interactively** about how to compute a proper argument list. 
+By default, <ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> passes no arguments and all arguments must be optional in order to accomodate interactive restarting. However, the arguments need not be optional if the :interactive keyword has been used to inform <ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> about how to compute a proper argument list. 
 
 
 
-*Keyword* options have the following meaning. 
+<ClLinks styled={true} term={"keyword"}><i>Keyword</i></ClLinks> options have the following meaning. 
 
 
 
@@ -114,7 +114,7 @@ By default, **invoke-restart-interactively** passes no arguments and all argumen
 
 
 
-The *value* supplied by :interactive *value* must be a suitable argument to **function**. (function *value*) is evaluated in the current lexical environment. It should return a *function* of no arguments which returns arguments to be used by **invoke-restart-interactively** when it is invoked. **invoke-restart-interactively** is called in the dynamic environment available prior to any restart attempt, and uses *query I/O* for user interaction. 
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> supplied by :interactive <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> must be a suitable argument to <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>. (function <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>) is evaluated in the current lexical environment. It should return a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of no arguments which returns arguments to be used by <ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> when it is invoked. <ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> is called in the dynamic environment available prior to any restart attempt, and uses *query I/O* for user interaction. 
 
 
 
@@ -126,11 +126,11 @@ If a restart is invoked interactively but no :interactive option was supplied, t
 
 
 
-If the *value* supplied by :report *value* is a *lambda expression* or a *symbol*, it must be acceptable to **function**. (function *value*) is evaluated in the current lexical environment. It should return a *function* of one argument, a *stream*, which prints on the *stream* a description of the restart. This *function* is called whenever the restart is printed while **\*print-escape\*** is **nil**. 
+If the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> supplied by :report <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is a *lambda expression* or a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, it must be acceptable to <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>. (function <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>) is evaluated in the current lexical environment. It should return a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, which prints on the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> a description of the restart. This <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is called whenever the restart is printed while <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-If *value* is a *string*, it is a shorthand for 
+If <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, it is a shorthand for 
 
 
 
@@ -154,11 +154,11 @@ If a named restart is asked to report but no report information has been supplie
 
 
 
-**restart-case** 
+<ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> 
 
 
 
-When **\*print-escape\*** is **nil**, the printer uses the report information for a restart. For example, a debugger might announce the action of typing a “continue” command by: 
+When <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, the printer uses the report information for a restart. For example, a debugger might announce the action of typing a “continue” command by: 
 
 
 
@@ -182,11 +182,11 @@ The consequences are unspecified if an unnamed restart is specified but no :repo
 
 
 
-The *value* supplied by :test *value* must be a suitable argument to **function**. 
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> supplied by :test <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> must be a suitable argument to <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>. 
 
 
 
-(function *value*) is evaluated in the current lexical environment. It should return a *function* of one *argument*, the *condition*, that returns *true* if the restart is to be considered visible. 
+(function <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>) is evaluated in the current lexical environment. It should return a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks>, the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>, that returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the restart is to be considered visible. 
 
 
 
@@ -194,7 +194,7 @@ The default for this option is equivalent to (lambda (c) (declare (ignore c)) t)
 
 
 
-If the *restartable-form* is a *list* whose *car* is any of the *symbols* **signal**, **error**, **cerror**, or **warn** (or is a *macro form* which macroexpands into such a *list*), then **with-condition-restarts** is used implicitly to associate the indicated *restarts* with the *condition* to be signaled. 
+If the *restartable-form* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> whose <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> is any of the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks>, <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks>, or <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> (or is a *macro form* which macroexpands into such a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>), then <ClLinks styled={true} term={"with-condition-restarts"}><b>with-condition-restarts</b></ClLinks> is used implicitly to associate the indicated <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> with the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> to be signaled. 
 
 
 
@@ -272,7 +272,7 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 
 
 
-**restart-bind**, **with-simple-restart**. 
+<ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks>, <ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks>. 
 
 
 
@@ -280,7 +280,7 @@ If the *restartable-form* is a *list* whose *car* is any of the *symbols* **sign
 
 
 
-(restart-case *expression* 
+(restart-case <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> 
 
 
 
@@ -352,7 +352,7 @@ is essentially equivalent to
 
 
 
-(return-from #1# *expression*)) 
+(return-from #1# <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>)) 
 
 
 

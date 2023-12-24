@@ -1,8 +1,8 @@
-**boole** *Function*
+**boole** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks>
 
 **Syntax:**
 
-**boole** *op integer-1 integer-2 → result-integer*
+<ClLinks styled={true} term={"boole"}><b>boole</b></ClLinks> *op integer-1 integer-2 → result-integer*
 
 **Arguments and Values:**
 
@@ -10,7 +10,7 @@
 
 *integer-1*—an *integer* .
 
-**boole**
+<ClLinks styled={true} term={"boole"}><b>boole</b></ClLinks>
 
 *integer-2*—an *integer* .
 
@@ -18,17 +18,17 @@
 
 **Description:**
 
-**boole** performs bit-wise logical operations on *integer-1* and *integer-2*, which are treated as if they were binary and in two’s complement representation.
+<ClLinks styled={true} term={"boole"}><b>boole</b></ClLinks> performs bit-wise logical operations on *integer-1* and *integer-2*, which are treated as if they were binary and in two’s complement representation.
 
 The operation to be performed and the return value are determined by *op*.
 
-**boole** returns the values specified for any *op* in Figure 12–17.
+<ClLinks styled={true} term={"boole"}><b>boole</b></ClLinks> returns the values specified for any *op* in Figure 12–17.
 
 |**Op Result**|
 
 | :- |
 
-|<p>**boole-1** *integer-1* </p><p>**boole-2** *integer-2* </p><p>**boole-andc1** and complement of *integer-1* with *integer-2* </p><p>**boole-andc2** and *integer-1* with complement of *integer-2* </p><p>**boole-and** and </p><p>**boole-c1** complement of *integer-1* </p><p>**boole-c2** complement of *integer-2* </p><p>**boole-clr** always 0 (all zero bits) </p><p>**boole-eqv** equivalence (exclusive nor) </p><p>**boole-ior** inclusive or </p><p>**boole-nand** not-and </p><p>**boole-nor** not-or </p><p>**boole-orc1** or complement of *integer-1* with *integer-2* </p><p>**boole-orc2** or *integer-1* with complement of *integer-2* </p><p>**boole-set** always -1 (all one bits) </p><p>**boole-xor** exclusive or</p>|
+|<p><ClLinks styled={true} term={"boole-1"}><b>boole-1</b></ClLinks> *integer-1* </p><p><ClLinks styled={true} term={"boole-2"}><b>boole-2</b></ClLinks> *integer-2* </p><p><ClLinks styled={true} term={"boole-andc1"}><b>boole-andc1</b></ClLinks> and complement of *integer-1* with *integer-2* </p><p><ClLinks styled={true} term={"boole-andc2"}><b>boole-andc2</b></ClLinks> and *integer-1* with complement of *integer-2* </p><p><ClLinks styled={true} term={"boole-and"}><b>boole-and</b></ClLinks> and </p><p><ClLinks styled={true} term={"boole-c1"}><b>boole-c1</b></ClLinks> complement of *integer-1* </p><p><ClLinks styled={true} term={"boole-c2"}><b>boole-c2</b></ClLinks> complement of *integer-2* </p><p><ClLinks styled={true} term={"boole-clr"}><b>boole-clr</b></ClLinks> always 0 (all zero bits) </p><p><ClLinks styled={true} term={"boole-eqv"}><b>boole-eqv</b></ClLinks> equivalence (exclusive nor) </p><p><ClLinks styled={true} term={"boole-ior"}><b>boole-ior</b></ClLinks> inclusive or </p><p><ClLinks styled={true} term={"boole-nand"}><b>boole-nand</b></ClLinks> not-and </p><p><ClLinks styled={true} term={"boole-nor"}><b>boole-nor</b></ClLinks> not-or </p><p><ClLinks styled={true} term={"boole-orc1"}><b>boole-orc1</b></ClLinks> or complement of *integer-1* with *integer-2* </p><p><ClLinks styled={true} term={"boole-orc2"}><b>boole-orc2</b></ClLinks> or *integer-1* with complement of *integer-2* </p><p><ClLinks styled={true} term={"boole-set"}><b>boole-set</b></ClLinks> always -1 (all one bits) </p><p><ClLinks styled={true} term={"boole-xor"}><b>boole-xor</b></ClLinks> exclusive or</p>|
 
 **Figure 12–17. Bit-Wise Logical Operations**
 
@@ -79,11 +79,11 @@ symbol result (logand result #b1111)))))
 
 **Exceptional Situations:**
 
-Should signal **type-error** if its first argument is not a *bit-wise logical operation specifier* or if any subsequent argument is not an *integer* .
+Should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its first argument is not a *bit-wise logical operation specifier* or if any subsequent argument is not an *integer* .
 
 **See Also:**
 
-**logand**
+<ClLinks styled={true} term={"logand"}><b>logand</b></ClLinks>
 
 **Notes:**
 
@@ -93,7 +93,7 @@ In general,
 (boole boole-and x y) *≡* (logand x y)
 ```
 
-*Programmers* who would prefer to use numeric indices rather than *bit-wise logical operation specifiers* can get an equivalent effect by a technique such as the following:
+<ClLinks styled={true} term={"programmer"}><i>Programmers</i></ClLinks> who would prefer to use numeric indices rather than *bit-wise logical operation specifiers* can get an equivalent effect by a technique such as the following:
 
 ```lisp
 ;; The order of the values in this ‘table’ are such that

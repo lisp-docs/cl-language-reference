@@ -6,7 +6,7 @@ A *boa lambda list* is a *lambda list* that is syntactically like an *ordinary l
 
 
 
-A *boa lambda list* is used only in a **defstruct** *form*, when explicitly specifying the *lambda list* of a constructor *function* (sometimes called a “boa constructor”). 
+A *boa lambda list* is used only in a <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, when explicitly specifying the *lambda list* of a constructor <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> (sometimes called a “boa constructor”). 
 
 
 
@@ -34,11 +34,11 @@ Consider this example, which describes how **destruct** processes its :construct
 
 
 
-This defines create-foo to be a constructor of one or more arguments. The first argument is used to initialize the a slot. The second argument is used to initialize the b slot. If there isn’t any second argument, then the default value given in the body of the **defstruct** (if given) is used instead. The third argument is used to initialize the c slot. If there isn’t any third argument, then the symbol 
+This defines create-foo to be a constructor of one or more arguments. The first argument is used to initialize the a slot. The second argument is used to initialize the b slot. If there isn’t any second argument, then the default value given in the body of the <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> (if given) is used instead. The third argument is used to initialize the c slot. If there isn’t any third argument, then the symbol 
 
 
 
-sea is used instead. Any arguments following the third argument are collected into a *list* and used to initialize the d slot. If there are three or fewer arguments, then **nil** is placed in the d slot. The e slot is not initialized; its initial value is *implementation-defined*. Finally, the f slot is initialized to contain the symbol eff. **&amp;key** and **&amp;allow-other-keys** arguments default in a manner similar to that of **&amp;optional** arguments: if no default is supplied in the *lambda list* then the default value given in the body of the **defstruct** (if given) is used instead. For example: 
+sea is used instead. Any arguments following the third argument are collected into a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> and used to initialize the d slot. If there are three or fewer arguments, then <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is placed in the d slot. The e slot is not initialized; its initial value is <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. Finally, the f slot is initialized to contain the symbol eff. **&amp;key** and **&amp;allow-other-keys** arguments default in a manner similar to that of **&amp;optional** arguments: if no default is supplied in the *lambda list* then the default value given in the body of the <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> (if given) is used instead. For example: 
 
 
 
@@ -66,7 +66,7 @@ sea is used instead. Any arguments following the third argument are collected in
 
 
 
-If keyword arguments of the form ((*key var*) [*default* [*svar* ]]) are specified, the *slot name* is matched with *var* (not *key*). 
+If keyword arguments of the form ((*key var*) [*default* [*svar* ]]) are specified, the *slot name* is matched with *var* (not <ClLinks styled={true} term={"key"}><i>key</i></ClLinks>). 
 
 
 
@@ -74,7 +74,7 @@ The actions taken in the b and e cases were carefully chosen to allow the user t
 
 
 
-If no default value is supplied for an *aux variable* variable, the consequences are undefined if an attempt is later made to read the corresponding *slot*’s value before a value is explicitly assigned. If such a *slot* has a :type option specified, this suppressed initialization does not imply a type mismatch situation; the declared type is only required to apply when the *slot* is finally assigned. 
+If no default value is supplied for an *aux variable* variable, the consequences are undefined if an attempt is later made to read the corresponding <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>’s value before a value is explicitly assigned. If such a <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> has a :type option specified, this suppressed initialization does not imply a type mismatch situation; the declared type is only required to apply when the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> is finally assigned. 
 
 
 

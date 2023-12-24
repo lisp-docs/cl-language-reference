@@ -1,4 +1,4 @@
-**unexport** *Function* 
+**unexport** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**unexport** *symbols* &amp;optional *package →* **t** 
+<ClLinks styled={true} term={"unexport"}><b>unexport</b></ClLinks> <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> &amp;optional *package →* <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*symbols*—a *designator* for a *list* of *symbols*. 
+<ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 
-*package*—a *package designator* . The default is the *current package*. 
+<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-**unexport** reverts external *symbols* in *package* to internal status; it undoes the effect of **export**. 
+<ClLinks styled={true} term={"unexport"}><b>unexport</b></ClLinks> reverts external <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> to internal status; it undoes the effect of <ClLinks styled={true} term={"export"}><b>export</b></ClLinks>. 
 
 
 
-**unexport** works only on *symbols present* in *package*, switching them back to internal status. If **unexport** is given a *symbol* that is already *accessible* as an *internal symbol* in *package*, it does nothing. 
+<ClLinks styled={true} term={"unexport"}><b>unexport</b></ClLinks> works only on *symbols present* in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, switching them back to internal status. If <ClLinks styled={true} term={"unexport"}><b>unexport</b></ClLinks> is given a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that is already <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> as an *internal symbol* in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, it does nothing. 
 
 
 
@@ -66,11 +66,11 @@ Current state of the package system.
 
 
 
-If **unexport** is given a *symbol* not *accessible* in *package* at all, an error of *type* **package-error** is signaled. 
+If <ClLinks styled={true} term={"unexport"}><b>unexport</b></ClLinks> is given a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> not <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> at all, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"package-error"}><b>package-error</b></ClLinks> is signaled. 
 
 
 
-The consequences are undefined if *package* is the KEYWORD *package* or the COMMON-LISP *package*. 
+The consequences are undefined if <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is the KEYWORD <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> or the COMMON-LISP <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -86,7 +86,7 @@ The consequences are undefined if *package* is the KEYWORD *package* or the COMM
 
 
 
-**export**, Section 11.1 (Package Concepts) 
+<ClLinks styled={true} term={"export"}><b>export</b></ClLinks>, Section 11.1 (Package Concepts) 
 
 
 

@@ -1,4 +1,4 @@
-**with-accessors** *Macro* 
+**with-accessors** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**with-accessors** (*\{slot-entry\}*\*) *instance-form \{declaration\}*\* *\{form\}*\* 
+<ClLinks styled={true} term={"with-accessors"}><b>with-accessors</b></ClLinks> (*\{slot-entry\}*\*) *instance-form \{declaration\}*\* <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -30,19 +30,19 @@
 
 
 
-*instance-form*—a *form*; evaluated. 
+*instance-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated. 
 
 
 
-*declaration*—a **declare** *expression*; not evaluated. 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*forms*—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the *values* returned by the *forms*. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-Creates a lexical environment in which the slots specified by *slot-entry* are lexically available through their accessors as if they were variables. The macro **with-accessors** invokes the appropriate accessors to *access* the *slots* specified by *slot-entry*. Both **setf** and **setq** can be used to set the value of the *slot*. 
+Creates a lexical environment in which the slots specified by *slot-entry* are lexically available through their accessors as if they were variables. The macro <ClLinks styled={true} term={"with-accessors"}><b>with-accessors</b></ClLinks> invokes the appropriate accessors to <ClLinks styled={true} term={"access"}><i>access</i></ClLinks> the <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> specified by *slot-entry*. Both <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> and <ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks> can be used to set the value of the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ Creates a lexical environment in which the slots specified by *slot-entry* are l
 
 
 
-**with-accessors** 
+<ClLinks styled={true} term={"with-accessors"}><b>with-accessors</b></ClLinks> 
 
 
 
@@ -107,7 +107,7 @@ Creates a lexical environment in which the slots specified by *slot-entry* are l
 
 
 
-**defclass** 
+<ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks> 
 
 
 
@@ -115,7 +115,7 @@ Creates a lexical environment in which the slots specified by *slot-entry* are l
 
 
 
-The consequences are undefined if any *accessor-name* is not the name of an accessor for the *instance*. 
+The consequences are undefined if any *accessor-name* is not the name of an accessor for the <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>. 
 
 
 
@@ -123,7 +123,7 @@ The consequences are undefined if any *accessor-name* is not the name of an acce
 
 
 
-**with-slots**, **symbol-macrolet** 
+<ClLinks styled={true} term={"with-slots"}><b>with-slots</b></ClLinks>, <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> 
 
 
 
@@ -131,7 +131,7 @@ The consequences are undefined if any *accessor-name* is not the name of an acce
 
 
 
-A **with-accessors** expression of the form: 
+A <ClLinks styled={true} term={"with-accessors"}><b>with-accessors</b></ClLinks> expression of the form: 
 
 
 

@@ -1,4 +1,4 @@
-**mask-field** *Accessor* 
+**mask-field** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**mask-field** *bytespec integer ! masked-integer* 
+<ClLinks styled={true} term={"mask-field"}><b>mask-field</b></ClLinks> *bytespec integer ! masked-integer* 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-**mask-field** performs a “mask” operation on *integer*. It returns an *integer* that has the same bits as *integer* in the *byte* specified by *bytespec*, but that has zero-bits everywhere else. 
+<ClLinks styled={true} term={"mask-field"}><b>mask-field</b></ClLinks> performs a “mask” operation on *integer*. It returns an *integer* that has the same bits as *integer* in the <ClLinks styled={true} term={"byte"}><i>byte</i></ClLinks> specified by *bytespec*, but that has zero-bits everywhere else. 
 
 
 
-**setf** may be used with **mask-field** to modify a byte within the *integer* that is stored in a given *place*. The e↵ect is to perform a **deposit-field** operation and then store the result back into the *place*. 
+<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> may be used with <ClLinks styled={true} term={"mask-field"}><b>mask-field</b></ClLinks> to modify a byte within the *integer* that is stored in a given <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. The e↵ect is to perform a <ClLinks styled={true} term={"deposit-field"}><b>deposit-field</b></ClLinks> operation and then store the result back into the <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. 
 
 
 
@@ -57,7 +57,7 @@ a *!* 13
 
 
 
-**byte**, **ldb** 
+<ClLinks styled={true} term={"byte"}><b>byte</b></ClLinks>, <ClLinks styled={true} term={"ldb"}><b>ldb</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**copy-pprint-dispatch** *Function* 
+**copy-pprint-dispatch** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**copy-pprint-dispatch** &amp;optional *table → new-table* 
+<ClLinks styled={true} term={"copy-pprint-dispatch"}><b>copy-pprint-dispatch</b></ClLinks> &amp;optional *table → new-table* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*table*—a *pprint dispatch table*, or **nil**. 
+*table*—a *pprint dispatch table*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Creates and returns a copy of the specified *table*, or of the *value* of **\*print-pprint-dispatch\*** if no *table* is specified, or of the initial *value* of **\*print-pprint-dispatch\*** if **nil** is specified. 
+Creates and returns a copy of the specified *table*, or of the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></ClLinks> if no *table* is specified, or of the initial <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></ClLinks> if <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is specified. 
 
 
 
@@ -34,7 +34,7 @@ Creates and returns a copy of the specified *table*, or of the *value* of **\*pr
 
 
 
-Should signal an error of *type* **type-error** if *table* is not a *pprint dispatch table*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *table* is not a *pprint dispatch table*. 
 
 
 

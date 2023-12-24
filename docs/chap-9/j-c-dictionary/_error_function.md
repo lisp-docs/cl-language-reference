@@ -1,4 +1,4 @@
-**error** *Function* 
+**error** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**error** *datum* &amp;rest *arguments →* 
+<ClLinks styled={true} term={"error"}><b>error</b></ClLinks> *datum* &amp;rest *arguments →* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*datum*, *arguments*—*designators* for a *condition* of default type **simple-error**. 
+*datum*, <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>—<ClLinks styled={true} term={"designator"}><i>designators</i></ClLinks> for a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of default type <ClLinks styled={true} term={"simple-error"}><b>simple-error</b></ClLinks>. 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-**error** effectively invokes **signal** on the denoted *condition*. 
+<ClLinks styled={true} term={"error"}><b>error</b></ClLinks> effectively invokes <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> on the denoted <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
-If the *condition* is not handled, (invoke-debugger *condition*) is done. As a consequence of calling **invoke-debugger**, **error** cannot directly return; the only exit from **error** can come by non-local transfer of control in a handler or by use of an interactive debugging command. 
+If the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is not handled, (invoke-debugger <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>) is done. As a consequence of calling <ClLinks styled={true} term={"invoke-debugger"}><b>invoke-debugger</b></ClLinks>, <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> cannot directly return; the only exit from <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> can come by non-local transfer of control in a handler or by use of an interactive debugging command. 
 
 
 
@@ -76,7 +76,7 @@ If the *condition* is not handled, (invoke-debugger *condition*) is done. As a c
 
 
 
-*Handlers* for the specified condition, if any, are invoked and might have side effects. Program execution might stop, and the debugger might be entered. 
+<ClLinks styled={true} term={"handler"}><i>Handlers</i></ClLinks> for the specified condition, if any, are invoked and might have side effects. Program execution might stop, and the debugger might be entered. 
 
 
 
@@ -88,11 +88,11 @@ Existing handler bindings.
 
 
 
-**\*break-on-signals\*** 
+<ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks> 
 
 
 
-Signals an error of *type* **type-error** if *datum* and *arguments* are not *designators* for a *condition*. 
+Signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *datum* and <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> are not <ClLinks styled={true} term={"designator"}><i>designators</i></ClLinks> for a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
@@ -100,7 +100,7 @@ Signals an error of *type* **type-error** if *datum* and *arguments* are not *de
 
 
 
-**cerror**, **signal**, **format**, **ignore-errors**, **\*break-on-signals\***, **handler-bind**, Section 9.1 (Condition 
+<ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks>, <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks>, <ClLinks styled={true} term={"format"}><b>format</b></ClLinks>, <ClLinks styled={true} term={"ignore-errors"}><b>ignore-errors</b></ClLinks>, <ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks>, <ClLinks styled={true} term={"handler-bind"}><b>handler-bind</b></ClLinks>, Section 9.1 (Condition 
 
 
 
@@ -136,7 +136,7 @@ Some implementations may provide debugger commands for interactively returning f
 
 
 
-In this scenario, there should be no chance that **error** will return and the button will get pushed. 
+In this scenario, there should be no chance that <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> will return and the button will get pushed. 
 
 
 

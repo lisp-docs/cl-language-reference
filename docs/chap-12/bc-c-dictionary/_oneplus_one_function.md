@@ -2,19 +2,19 @@
 
 **Syntax:**
 
-**1+** *number → successor*
+<ClLinks styled={true} term={"1+"}><b>1+</b></ClLinks> *number → successor*
 
-**1***− number → predecessor*
+<ClLinks styled={true} term={"1"}><b>1*</b></ClLinks>− number → predecessor*
 
 **Arguments and Values:**
 
-*number*—a *number* .
+<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> .
 
-*successor*, *predecessor*—a *number* .
+*successor*, *predecessor*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> .
 
 **Description:**
 
-**1+** returns a *number* that is one more than its argument *number*. **1-** returns a *number* that is one less than its argument *number*.
+<ClLinks styled={true} term={"1+"}><b>1+</b></ClLinks> returns a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> that is one more than its argument <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>. **1-** returns a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> that is one less than its argument <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>.
 
 **Examples:**
 
@@ -29,16 +29,16 @@
 
 **Exceptional Situations:**
 
-Might signal **type-error** if its *argument* is not a *number* . Might signal **arithmetic-error**.
+Might signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> is not a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
 
 **See Also:**
 
-**incf**, **decf**
+<ClLinks styled={true} term={"incf"}><b>incf</b></ClLinks>, <ClLinks styled={true} term={"decf"}><b>decf</b></ClLinks>
 
 **Notes:**
 
-(1+ *number*) *≡* (+ *number* 1)
+(1+ <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>) *≡* (+ <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> 1)
 
-(1- *number*) *≡* (- *number* 1)
+(1- <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>) *≡* (- <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> 1)
 
 Implementors are encouraged to make the performance of both the previous expressions be the same.

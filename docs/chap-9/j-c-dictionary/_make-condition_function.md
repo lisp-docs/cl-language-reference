@@ -1,4 +1,4 @@
-**make-condition** *Function* 
+**make-condition** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**make-condition** *type* &amp;rest *slot-initializations → condition* 
+<ClLinks styled={true} term={"make-condition"}><b>make-condition</b></ClLinks> <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> &amp;rest *slot-initializations → condition* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*type*—a *type specifier* (for a *subtype* of **condition**). 
+<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>—a *type specifier* (for a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>). 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*condition*—a *condition*. 
+<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-Constructs and returns a *condition* of type *type* using *slot-initializations* for the initial values of the slots. The newly created *condition* is returned. 
+Constructs and returns a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of type <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> using *slot-initializations* for the initial values of the slots. The newly created <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is returned. 
 
 
 
@@ -76,7 +76,7 @@ The set of defined *condition types*.
 
 
 
-**define-condition**, Section 9.1 (Condition System Concepts) 
+<ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks>, Section 9.1 (Condition System Concepts) 
 
 
 

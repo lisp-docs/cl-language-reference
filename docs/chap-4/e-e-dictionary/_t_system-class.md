@@ -6,7 +6,7 @@
 
 
 
-**t** 
+<ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The set of all *objects*. The *type* **t** is a *supertype* of every *type*, including itself. Every *object* is of *type* **t**. 
+The set of all <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>. The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> is a <ClLinks styled={true} term={"supertype"}><i>supertype</i></ClLinks> of every <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>, including itself. Every <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ Predicating.
 
 
 
-*predicate-name*—a *symbol*. 
+*predicate-name*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -50,7 +50,7 @@ Predicating.
 
 
 
-This denotes the set of all *objects* that satisfy the *predicate predicate-name*, which must be a *symbol* whose global *function* definition is a one-argument predicate. A name is required for *predicate-name*; *lambda expressions* are not allowed. For example, the *type specifier* (and integer (satisfies evenp)) denotes the set of all even integers. The form (typep *x* ’(satisfies *p*)) is equivalent to (if (*p x*) t nil).  
+This denotes the set of all <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> that satisfy the *predicate predicate-name*, which must be a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> whose global <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> definition is a one-argument predicate. A name is required for *predicate-name*; *lambda expressions* are not allowed. For example, the *type specifier* (and integer (satisfies evenp)) denotes the set of all even integers. The form (typep *x* ’(satisfies *p*)) is equivalent to (if (*p x*) t nil).  
 
 
 
@@ -58,7 +58,7 @@ This denotes the set of all *objects* that satisfy the *predicate predicate-name
 
 
 
-The argument is required. The *symbol* **\*** can be the argument, but it denotes itself (the *symbol* **\***), and does not represent an unspecified value. 
+The argument is required. The <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\*** can be the argument, but it denotes itself (the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***), and does not represent an unspecified value. 
 
 
 
@@ -66,7 +66,7 @@ The symbol **satisfies** is not valid as a *type specifier* .
 
 
 
-**member** *Type Specifier* 
+<ClLinks styled={true} term={"member"}><b>member</b></ClLinks> *Type Specifier* 
 
 
 
@@ -82,7 +82,7 @@ Combining.
 
 
 
-(member *\{object\}*\*) 
+(member <ClLinks styled={true} term={"object"}><i>\{object\}</i></ClLinks>\*) 
 
 
 
@@ -90,7 +90,7 @@ Combining.
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -98,11 +98,11 @@ Combining.
 
 
 
-This denotes the set containing the named *objects*. An *object* is of this *type* if and only if it is **eql** to one of the specified *objects*. 
+This denotes the set containing the named <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>. An <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of this <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> if and only if it is <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks> to one of the specified <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>. 
 
 
 
-The *type specifiers* (member) and **nil** are equivalent. **\*** can be among the *objects*, but if so it denotes itself (the symbol **\***) and does not represent an unspecified value. The symbol **member** is not valid as a *type specifier* ; and, specifically, it is not an abbreviation for either (member) or (member \*). 
+The *type specifiers* (member) and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> are equivalent. **\*** can be among the <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>, but if so it denotes itself (the symbol **\***) and does not represent an unspecified value. The symbol <ClLinks styled={true} term={"member"}><b>member</b></ClLinks> is not valid as a *type specifier* ; and, specifically, it is not an abbreviation for either (member) or (member \*). 
 
 
 
@@ -110,11 +110,11 @@ The *type specifiers* (member) and **nil** are equivalent. **\*** can be among t
 
 
 
-the *type* **eql** 
+the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks> 
 
 
 
-**not** *Type Specifier* 
+<ClLinks styled={true} term={"not"}><b>not</b></ClLinks> *Type Specifier* 
 
 
 
@@ -150,7 +150,7 @@ Combining.
 
 
 
-This denotes the set of all *objects* that are not of the *type typespec*. 
+This denotes the set of all <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> that are not of the *type typespec*. 
 
 
 
@@ -158,11 +158,11 @@ The argument is required, and cannot be **\***.
 
 
 
-The symbol **not** is not valid as a *type specifier* . 
+The symbol <ClLinks styled={true} term={"not"}><b>not</b></ClLinks> is not valid as a *type specifier* . 
 
 
 
-**and** *Type Specifier* 
+<ClLinks styled={true} term={"and"}><b>and</b></ClLinks> *Type Specifier* 
 
 
 
@@ -194,15 +194,15 @@ Combining.
 
 
 
-This denotes the set of all *objects* of the *type* determined by the intersection of the *typespecs*. **\*** is not permitted as an argument. 
+This denotes the set of all <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> determined by the intersection of the *typespecs*. **\*** is not permitted as an argument. 
 
 
 
-The *type specifiers* (and) and **t** are equivalent. The symbol **and** is not valid as a *type specifier* , and, specifically, it is not an abbreviation for (and). 
+The *type specifiers* (and) and <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> are equivalent. The symbol <ClLinks styled={true} term={"and"}><b>and</b></ClLinks> is not valid as a *type specifier* , and, specifically, it is not an abbreviation for (and). 
 
 
 
-**or** *Type Specifier* 
+<ClLinks styled={true} term={"or"}><b>or</b></ClLinks> *Type Specifier* 
 
 
 
@@ -238,7 +238,7 @@ Combining.
 
 
 
-This denotes the set of all *objects* of the *type* determined by the union of the *typespecs*. For example, the *type* **list** by definition is the same as (or null cons). Also, the value returned by **position** is an *object* of *type* (or null (integer 0 \*)); *i.e.*, either **nil** or a non-negative *integer* . 
+This denotes the set of all <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> determined by the union of the *typespecs*. For example, the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"list"}><b>list</b></ClLinks> by definition is the same as (or null cons). Also, the value returned by <ClLinks styled={true} term={"position"}><b>position</b></ClLinks> is an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> (or null (integer 0 \*)); *i.e.*, either <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> or a non-negative *integer* . 
 
 
 
@@ -246,11 +246,11 @@ This denotes the set of all *objects* of the *type* determined by the union of t
 
 
 
-The *type specifiers* (or) and **nil** are equivalent. The symbol **or** is not valid as a *type specifier* ; and, specifically, it is not an abbreviation for (or). 
+The *type specifiers* (or) and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> are equivalent. The symbol <ClLinks styled={true} term={"or"}><b>or</b></ClLinks> is not valid as a *type specifier* ; and, specifically, it is not an abbreviation for (or). 
 
 
 
-**values** *Type Specifier* 
+<ClLinks styled={true} term={"values"}><b>values</b></ClLinks> *Type Specifier* 
 
 
 
@@ -286,7 +286,7 @@ Specializing.
 
 
 
-This *type specifier* can be used only as the *value-type* in a **function** *type specifier* or a **the** *special form*. It is used to specify individual *types* when *multiple values* are involved. The **&amp;optional** and **&amp;rest** markers can appear in the *value-type* list; they indicate the parameter list of a *function* that, when given to **multiple-value-call** along with the values, would correctly receive those values. 
+This *type specifier* can be used only as the *value-type* in a <ClLinks styled={true} term={"function"}><b>function</b></ClLinks> *type specifier* or a <ClLinks styled={true} term={"the"}><b>the</b></ClLinks> *special form*. It is used to specify individual <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> when *multiple values* are involved. The **&amp;optional** and **&amp;rest** markers can appear in the *value-type* list; they indicate the parameter list of a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> that, when given to <ClLinks styled={true} term={"multiple-value-call"}><b>multiple-value-call</b></ClLinks> along with the values, would correctly receive those values. 
 
 
 
@@ -294,7 +294,7 @@ The symbol **\*** may not be among the *value-types*.
 
 
 
-The symbol **values** is not valid as a *type specifier* ; and, specifically, it is not an abbreviation for (values).  
+The symbol <ClLinks styled={true} term={"values"}><b>values</b></ClLinks> is not valid as a *type specifier* ; and, specifically, it is not an abbreviation for (values).  
 
 
 
@@ -302,7 +302,7 @@ The symbol **values** is not valid as a *type specifier* ; and, specifically, it
 
 
 
-**eql** *Type Specifier* 
+<ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks> *Type Specifier* 
 
 
 
@@ -318,7 +318,7 @@ Combining.
 
 
 
-(eql *object*) 
+(eql <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) 
 
 
 
@@ -326,7 +326,7 @@ Combining.
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -334,11 +334,11 @@ Combining.
 
 
 
-Represents the *type* of all *x* for which (eql *object x*) is true. 
+Represents the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> of all *x* for which (eql *object x*) is true. 
 
 
 
-The argument *object* is required. The *object* can be **\***, but if so it denotes itself (the symbol **\***) and does not represent an unspecified value. The *symbol* **eql** is not valid as an *atomic type specifier* . 
+The argument <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is required. The <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> can be **\***, but if so it denotes itself (the symbol **\***) and does not represent an unspecified value. The <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks> is not valid as an *atomic type specifier* . 
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-The *characters* with *case* are a subset of the *alphabetic*<sub>1</sub> *characters*. A *character* with *case* has the property of being either *uppercase* or *lowercase*. Every *character* with *case* is in one-to-one correspondence with some other *character* with the opposite *case*. 
+The <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> with <ClLinks styled={true} term={"case"}><i>case</i></ClLinks> are a subset of the <ClLinks styled={true} term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>1</sub> <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks>. A <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> with <ClLinks styled={true} term={"case"}><i>case</i></ClLinks> has the property of being either <ClLinks styled={true} term={"uppercase"}><i>uppercase</i></ClLinks> or <ClLinks styled={true} term={"lowercase"}><i>lowercase</i></ClLinks>. Every <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> with <ClLinks styled={true} term={"case"}><i>case</i></ClLinks> is in one-to-one correspondence with some other <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> with the opposite <ClLinks styled={true} term={"case"}><i>case</i></ClLinks>. 
 
 
 

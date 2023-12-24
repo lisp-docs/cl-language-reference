@@ -1,4 +1,4 @@
-**with-condition-restarts** *Macro* 
+**with-condition-restarts** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**with-condition-restarts** *condition-form restarts-form \{form\}*\* 
+<ClLinks styled={true} term={"with-condition-restarts"}><b>with-condition-restarts</b></ClLinks> *condition-form restarts-form \{form\}*\* 
 
 
 
@@ -18,27 +18,27 @@
 
 
 
-*condition-form*—a *form*; *evaluated* to produce a *condition*. 
+*condition-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; *evaluated* to produce a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
-*condition*—a *condition object* resulting from the *evaluation* of *condition-form*. 
+<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a *condition object* resulting from the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of *condition-form*. 
 
 
 
-*restart-form*—a *form*; *evaluated* to produce a *restart-list*. 
+*restart-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; *evaluated* to produce a *restart-list*. 
 
 
 
-*restart-list*—a *list* of *restart objects* resulting from the *evaluation* of *restart-form*. 
+*restart-list*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *restart objects* resulting from the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of *restart-form*. 
 
 
 
-*forms*—an *implicit progn*; evaluated. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*; evaluated. 
 
 
 
-*results*—the *values* returned by *forms*. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -58,11 +58,11 @@
 
 
 
-First, the *condition-form* and *restarts-form* are *evaluated* in normal left-to-right order; the *primary values* yielded by these *evaluations* are respectively called the *condition* and the *restart-list*. 
+First, the *condition-form* and *restarts-form* are *evaluated* in normal left-to-right order; the *primary values* yielded by these <ClLinks styled={true} term={"evaluation"}><i>evaluations</i></ClLinks> are respectively called the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> and the *restart-list*. 
 
 
 
-Next, the *forms* are *evaluated* in a *dynamic environment* in which each *restart* in *restart-list* is associated with the *condition*. See Section 9.1.4.2.4 (Associating a Restart with a Condition). 
+Next, the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are *evaluated* in a *dynamic environment* in which each <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> in *restart-list* is associated with the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. See Section 9.1.4.2.4 (Associating a Restart with a Condition). 
 
 
 
@@ -70,7 +70,7 @@ Next, the *forms* are *evaluated* in a *dynamic environment* in which each *rest
 
 
 
-**restart-case** 
+<ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> 
 
 
 
@@ -78,7 +78,7 @@ Next, the *forms* are *evaluated* in a *dynamic environment* in which each *rest
 
 
 
-Usually this *macro* is not used explicitly in code, since **restart-case** handles most of the common cases in a way that is syntactically more concise. 
+Usually this <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> is not used explicitly in code, since <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> handles most of the common cases in a way that is syntactically more concise. 
 
 
 

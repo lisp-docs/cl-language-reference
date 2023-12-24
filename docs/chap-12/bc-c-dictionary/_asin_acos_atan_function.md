@@ -1,4 +1,4 @@
-**asin, acos, atan** *Function* 
+**asin, acos, atan** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,15 +6,15 @@
 
 
 
-**asin** *number → radians* 
+<ClLinks styled={true} term={"asin"}><b>asin</b></ClLinks> *number → radians* 
 
 
 
-**acos** *number → radians* 
+<ClLinks styled={true} term={"acos"}><b>acos</b></ClLinks> *number → radians* 
 
 
 
-**atan** *number1* &amp;optional *number2 → radians* 
+<ClLinks styled={true} term={"atan"}><b>atan</b></ClLinks> *number1* &amp;optional *number2 → radians* 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-*number*—a *number* . 
+<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
 
 
 
-*number1*—a *number* if *number2* is not supplied, or a *real* if *number2* is supplied. 
+*number1*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> if *number2* is not supplied, or a *real* if *number2* is supplied. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-*radians*—a *number* (of radians). 
+*radians*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> (of radians). 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-**asin**, **acos**, and **atan** compute the arc sine, arc cosine, and arc tangent respectively. 
+<ClLinks styled={true} term={"asin"}><b>asin</b></ClLinks>, <ClLinks styled={true} term={"acos"}><b>acos</b></ClLinks>, and <ClLinks styled={true} term={"atan"}><b>atan</b></ClLinks> compute the arc sine, arc cosine, and arc tangent respectively. 
 
 
 
-The arc sine, arc cosine, and arc tangent (with only *number1* supplied) functions can be defined mathematically for *number* or *number1* specified as *x* as in Figure 12–14. 
+The arc sine, arc cosine, and arc tangent (with only *number1* supplied) functions can be defined mathematically for <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> or *number1* specified as *x* as in Figure 12–14. 
 
 
 
@@ -68,11 +68,11 @@ These formulae are mathematically correct, assuming completely accurate computat
 
 
 
-If both *number1* and *number2* are supplied for **atan**, the result is the arc tangent of *number1*/*number2*. The value of **atan** is always between *−π* (exclusive) and *π* (inclusive) when minus zero is not supported. The range of the two-argument arc tangent when minus zero is supported includes *−π*. 
+If both *number1* and *number2* are supplied for <ClLinks styled={true} term={"atan"}><b>atan</b></ClLinks>, the result is the arc tangent of *number1*/*number2*. The value of <ClLinks styled={true} term={"atan"}><b>atan</b></ClLinks> is always between *−π* (exclusive) and *π* (inclusive) when minus zero is not supported. The range of the two-argument arc tangent when minus zero is supported includes *−π*. 
 
 
 
-For a *real number1*, the result is a *real* and lies between *−π/*2 and *π/*2 (both exclusive). *number1* can be a *complex* if *number2* is not supplied. If both are supplied, *number2* can be zero provided *number1* is not zero. 
+For a *real number1*, the result is a *real* and lies between *−π/*2 and *π/*2 (both exclusive). *number1* can be a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> if *number2* is not supplied. If both are supplied, *number2* can be zero provided *number1* is not zero. 
 
 
 
@@ -180,7 +180,7 @@ arc tangent is identical to that of arc sine with the points *−π/*2 and *π/*
 
 
 
-For **atan**, the signs of *number1* (indicated as *x*) and *number2* (indicated as *y*) are used to derive quadrant information. Figure 12–15 details various special cases. The asterisk (\*) indicates that the entry in the figure applies to implementations that support minus zero. 
+For <ClLinks styled={true} term={"atan"}><b>atan</b></ClLinks>, the signs of *number1* (indicated as *x*) and *number2* (indicated as *y*) are used to derive quadrant information. Figure 12–15 details various special cases. The asterisk (\*) indicates that the entry in the figure applies to implementations that support minus zero. 
 
 
 
@@ -211,11 +211,11 @@ For **atan**, the signs of *number1* (indicated as *x*) and *number2* (indicated
 
 
 
-**acos** and **asin** should signal an error of *type* **type-error** if *number* is not a *number* . **atan** should signal **type-error** if one argument is supplied and that argument is not a *number* , or if two arguments are supplied and both of those arguments are not *reals*. 
+<ClLinks styled={true} term={"acos"}><b>acos</b></ClLinks> and <ClLinks styled={true} term={"asin"}><b>asin</b></ClLinks> should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is not a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . <ClLinks styled={true} term={"atan"}><b>atan</b></ClLinks> should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if one argument is supplied and that argument is not a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> , or if two arguments are supplied and both of those arguments are not *reals*. 
 
 
 
-**acos**, **asin**, and **atan** might signal **arithmetic-error**. 
+<ClLinks styled={true} term={"acos"}><b>acos</b></ClLinks>, <ClLinks styled={true} term={"asin"}><b>asin</b></ClLinks>, and <ClLinks styled={true} term={"atan"}><b>atan</b></ClLinks> might signal <ClLinks styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>. 
 
 
 
@@ -223,7 +223,7 @@ For **atan**, the signs of *number1* (indicated as *x*) and *number2* (indicated
 
 
 
-**log**, **sqrt**, Section 12.1.3.3 (Rule of Float Substitutability) 
+<ClLinks styled={true} term={"log"}><b>log</b></ClLinks>, <ClLinks styled={true} term={"sqrt"}><b>sqrt</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability) 
 
 
 
@@ -243,7 +243,7 @@ For **atan**, the signs of *number1* (indicated as *x*) and *number2* (indicated
 
 
 
-The result of either **asin** or **acos** can be a *complex* even if *number* is not a *complex* ; this occurs when the absolute value of *number* is greater than one. 
+The result of either <ClLinks styled={true} term={"asin"}><b>asin</b></ClLinks> or <ClLinks styled={true} term={"acos"}><b>acos</b></ClLinks> can be a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> even if <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is not a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> ; this occurs when the absolute value of <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is greater than one. 
 
 
 
@@ -286,7 +286,7 @@ pi → 3.141592653589793L0
 
 
 
-An approximation to *π* in some other precision can be obtained by writing (float pi x), where x is a *float* of the desired precision, or by writing (coerce pi *type*), where *type* is the desired type, such as **short-float**. 
+An approximation to *π* in some other precision can be obtained by writing (float pi x), where x is a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> of the desired precision, or by writing (coerce pi <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>), where <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> is the desired type, such as <ClLinks styled={true} term={"short-float"}><b>short-float</b></ClLinks>. 
 
 
 

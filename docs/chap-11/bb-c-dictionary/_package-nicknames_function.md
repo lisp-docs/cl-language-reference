@@ -1,4 +1,4 @@
-**package-nicknames** *Function* 
+**package-nicknames** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**package-nicknames** *package → nicknames* 
+<ClLinks styled={true} term={"package-nicknames"}><b>package-nicknames</b></ClLinks> *package → nicknames* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*package*—a *package designator* . 
+<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* . 
 
 
 
-*nicknames*—a *list* of *strings*. 
+<ClLinks styled={true} term={"nickname"}><i>nicknames</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the *list* of nickname *strings* for *package*, not including the name of *package*. 
+Returns the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of nickname <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks> for <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, not including the name of <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
 
 **Examples:**
 ```lisp
@@ -40,7 +40,7 @@ Returns the *list* of nickname *strings* for *package*, not including the name o
 
 
 
-Should signal an error of *type* **type-error** if *package* is not a *package designator* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is not a *package designator* . 
 
 
 

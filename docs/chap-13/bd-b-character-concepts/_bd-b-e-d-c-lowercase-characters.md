@@ -2,7 +2,7 @@
 
 
 
-A lowercase *character* is one that has a corresponding *uppercase character* that is *different* (and can be obtained using **char-upcase**). 
+A lowercase <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is one that has a corresponding *uppercase character* that is <ClLinks styled={true} term={"different"}><i>different</i></ClLinks> (and can be obtained using <ClLinks styled={true} term={"char-upcase"}><b>char-upcase</b></ClLinks>). 
 
 
 

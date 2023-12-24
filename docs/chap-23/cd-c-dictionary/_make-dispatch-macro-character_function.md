@@ -1,4 +1,4 @@
-**make-dispatch-macro-character** *Function* 
+**make-dispatch-macro-character** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**make-dispatch-macro-character** *char* &amp;optional *non-terminating-p readtable →* **t** 
+<ClLinks styled={true} term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></ClLinks> *char* &amp;optional *non-terminating-p readtable →* <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*char*—a *character* . 
+*char*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
-*non-terminating-p*—a *generalized boolean*. The default is *false*. 
+*non-terminating-p*—a *generalized boolean*. The default is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
-*readtable*—a *readtable*. The default is the *current readtable*. 
+<ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>—a <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>. The default is the *current readtable*. 
 
 
 
@@ -30,19 +30,15 @@
 
 
 
-**make-dispatch-macro-character** makes *char* be a *dispatching macro character* in *readtable*. 
+<ClLinks styled={true} term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></ClLinks> makes *char* be a *dispatching macro character* in <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>. 
 
 
 
-Initially, every *character* in the dispatch table associated with the *char* has an associated function that signals an error of *type* **reader-error**. 
-
-
+Initially, every <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> in the dispatch table associated with the *char* has an associated function that signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"reader-error"}><b>reader-error</b></ClLinks>. 
 
 
 
 
-
- 
 
 
 
@@ -50,7 +46,11 @@ Initially, every *character* in the dispatch table associated with the *char* ha
 
 
 
-If *non-terminating-p* is *true*, the *dispatching macro character* is made a *non-terminating macro character* ; if *non-terminating-p* is *false*, the *dispatching macro character* is made a *terminating macro character* . 
+ 
+
+
+
+If *non-terminating-p* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the *dispatching macro character* is made a *non-terminating macro character* ; if *non-terminating-p* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, the *dispatching macro character* is made a *terminating macro character* . 
 
 
 
@@ -67,7 +67,7 @@ If *non-terminating-p* is *true*, the *dispatching macro character* is made a *n
 
 
 
-**\*readtable\***, **set-dispatch-macro-character** 
+<ClLinks styled={true} term={"readtable"}><b>\*readtable\*</b></ClLinks>, **set-dispatch-macro-character** 
 
 
 

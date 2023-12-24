@@ -1,4 +1,4 @@
-**pprint-dispatch** *Function* 
+**pprint-dispatch** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**pprint-dispatch** *object* &amp;optional *table → function, found-p* 
+<ClLinks styled={true} term={"pprint-dispatch"}><b>pprint-dispatch</b></ClLinks> <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> &amp;optional *table → function, found-p* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*table*—a *pprint dispatch table*, or **nil**. The default is the *value* of **\*print-pprint-dispatch\***. *function*—a *function designator* . 
+*table*—a *pprint dispatch table*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. The default is the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></ClLinks>. <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a *function designator* . 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-Retrieves the highest priority function in *table* that is associated with a *type specifier* that matches *object*. The function is chosen by finding all of the *type specifiers* in *table* that match the *object* and selecting the highest priority function associated with any of these *type specifiers*. If there is more than one highest priority function, an arbitrary choice is made. If no *type specifiers* match the *object*, a function is returned that prints *object* using **print-object**. 
+Retrieves the highest priority function in *table* that is associated with a *type specifier* that matches <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. The function is chosen by finding all of the *type specifiers* in *table* that match the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> and selecting the highest priority function associated with any of these *type specifiers*. If there is more than one highest priority function, an arbitrary choice is made. If no *type specifiers* match the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>, a function is returned that prints <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> using <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks>. 
 
 
 
-The *secondary value*, *found-p*, is *true* if a matching *type specifier* was found in *table*, or *false* otherwise. 
+The *secondary value*, *found-p*, is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if a matching *type specifier* was found in *table*, or <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> otherwise. 
 
 
 
-If *table* is **nil**, retrieval is done in the *initial pprint dispatch table*. 
+If *table* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, retrieval is done in the *initial pprint dispatch table*. 
 
 
 
@@ -54,7 +54,7 @@ The state of the *table*.
 
 
 
-Should signal an error of *type* **type-error** if *table* is neither a *pprint-dispatch-table* nor **nil**. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *table* is neither a *pprint-dispatch-table* nor <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 

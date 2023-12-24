@@ -1,4 +1,4 @@
-**boundp** *Function* 
+**boundp** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**boundp** *symbol → generalized-boolean* 
+<ClLinks styled={true} term={"boundp"}><b>boundp</b></ClLinks> *symbol → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*symbol*—a *symbol*. 
+<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns *true* if *symbol* is *bound*; otherwise, returns *false*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -57,7 +57,7 @@ Returns *true* if *symbol* is *bound*; otherwise, returns *false*.
 
 
 
-Should signal an error of *type* **type-error** if *symbol* is not a *symbol*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -65,7 +65,7 @@ Should signal an error of *type* **type-error** if *symbol* is not a *symbol*.
 
 
 
-**set**, **setq**, **symbol-value**, **makunbound** 
+<ClLinks styled={true} term={"set"}><b>set</b></ClLinks>, <ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks>, <ClLinks styled={true} term={"symbol-value"}><b>symbol-value</b></ClLinks>, <ClLinks styled={true} term={"makunbound"}><b>makunbound</b></ClLinks> 
 
 
 
@@ -73,7 +73,7 @@ Should signal an error of *type* **type-error** if *symbol* is not a *symbol*.
 
 
 
-The *function* **bound** determines only whether a *symbol* has a value in the *global environment*; any *lexical bindings* are ignored. 
+The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> **bound** determines only whether a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> has a value in the *global environment*; any *lexical bindings* are ignored. 
 
 
 

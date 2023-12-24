@@ -6,7 +6,7 @@
 
 
 
-**if** *test-form then-form* [*else-form*] → \{result\}\* 
+<ClLinks styled={true} term={"if"}><b>if</b></ClLinks> *test-form then-form* [*else-form*] → \{result\}\* 
 
 
 
@@ -14,19 +14,19 @@
 
 
 
-*Test-form*—a *form*. 
+*Test-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*Then-form*—a *form*. 
+*Then-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*Else-form*—a *form*. The default is **nil**. 
+*Else-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*results*—if the *test-form yielded true*, the *values* returned by the *then-form*; otherwise, the *values* returned by the *else-form*. 
+*results*—if the *test-form yielded true*, the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the *then-form*; otherwise, the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the *else-form*. 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-**if** allows the execution of a *form* to be dependent on a single *test-form*. 
+<ClLinks styled={true} term={"if"}><b>if</b></ClLinks> allows the execution of a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> to be dependent on a single *test-form*. 
 
 
 
-First *test-form* is evaluated. If the result is *true*, then *then-form* is selected; otherwise *else-form* is selected. Whichever form is selected is then evaluated. 
+First *test-form* is evaluated. If the result is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, then *then-form* is selected; otherwise *else-form* is selected. Whichever form is selected is then evaluated. 
 
 
 
@@ -75,7 +75,7 @@ First *test-form* is evaluated. If the result is *true*, then *then-form* is sel
 
 
 
-**cond**, **unless**, **when** 
+<ClLinks styled={true} term={"cond"}><b>cond</b></ClLinks>, <ClLinks styled={true} term={"unless"}><b>unless</b></ClLinks>, <ClLinks styled={true} term={"when"}><b>when</b></ClLinks> 
 
 
 

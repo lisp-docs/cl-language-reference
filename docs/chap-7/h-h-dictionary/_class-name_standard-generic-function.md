@@ -6,7 +6,7 @@
 
 
 
-**class-name** *class ! name* 
+<ClLinks styled={true} term={"class-name"}><b>class-name</b></ClLinks> *class ! name* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-**class-name** (*class* **class**) 
+<ClLinks styled={true} term={"class-name"}><b>class-name</b></ClLinks> (<ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"class"}><b>class</b></ClLinks>) 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-*class*—a *class object*. 
+<ClLinks styled={true} term={"class"}><i>class</i></ClLinks>—a *class object*. 
 
 
 
-*name*—a *symbol*. 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Returns the *name* of the given *class*. 
+Returns the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the given <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ Returns the *name* of the given *class*.
 
 
 
-**find-class**, Section 4.3 (Classes) 
+<ClLinks styled={true} term={"find-class"}><b>find-class</b></ClLinks>, Section 4.3 (Classes) 
 
 
 
@@ -50,11 +50,11 @@ Returns the *name* of the given *class*.
 
 
 
-If *S* is a *symbol* such that *S* =(class-name *C*) and *C* =(find-class *S*), then *S* is the proper name of *C*. For further discussion, see Section 4.3 (Classes). 
+If *S* is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> such that *S* =(class-name *C*) and *C* =(find-class *S*), then *S* is the proper name of *C*. For further discussion, see Section 4.3 (Classes). 
 
 
 
-The name of an anonymous *class* is **nil**. 
+The name of an anonymous <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -86,7 +86,7 @@ The name of an anonymous *class* is **nil**.
 
 
 
-**(setf class-name)** *new-value* (*class* **class**) 
+**(setf class-name)** *new-value* (<ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"class"}><b>class</b></ClLinks>) 
 
 
 
@@ -94,11 +94,11 @@ The name of an anonymous *class* is **nil**.
 
 
 
-*new-value*—a *symbol*. 
+*new-value*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*class*—a *class*. 
+<ClLinks styled={true} term={"class"}><i>class</i></ClLinks>—a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. 
 
 
 
@@ -106,7 +106,7 @@ The name of an anonymous *class* is **nil**.
 
 
 
-The generic function (setf class-name) sets the name of a *class* object. 
+The generic function (setf class-name) sets the name of a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> object. 
 
 
 
@@ -114,7 +114,7 @@ The generic function (setf class-name) sets the name of a *class* object.
 
 
 
-**find-class**, *proper name*, Section 4.3 (Classes) 
+<ClLinks styled={true} term={"find-class"}><b>find-class</b></ClLinks>, *proper name*, Section 4.3 (Classes) 
 
 
 

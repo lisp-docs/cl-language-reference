@@ -1,5 +1,5 @@
 
-*Ratios* can be written as an optional *sign* followed by two non-empty sequences of *digits* separated by a *slash*; see Figure 2–9. The second sequence may not consist entirely of zeros. Examples of *ratios* are in Figure 2–13.  
+<ClLinks styled={true} term={"ratio"}><i>Ratios</i></ClLinks> can be written as an optional <ClLinks styled={true} term={"sign"}><i>sign</i></ClLinks> followed by two non-empty sequences of <ClLinks styled={true} term={"digit"}><i>digits</i></ClLinks> separated by a <ClLinks styled={true} term={"slash"}><i>slash</i></ClLinks>; see Figure 2–9. The second sequence may not consist entirely of zeros. Examples of <ClLinks styled={true} term={"ratio"}><i>ratios</i></ClLinks> are in Figure 2–13.  
 
 |<p>2/3 ;This is in canonical form </p>
 <p>4/6 ;A non-canonical form for 2/3 </p>
@@ -15,4 +15,4 @@
 
 **Figure 2–13. Examples of Ratios**
 
-For information on how *ratios* are printed, see Section 22.1.3.1.2 (Printing Ratios).
+For information on how <ClLinks styled={true} term={"ratio"}><i>ratios</i></ClLinks> are printed, see Section 22.1.3.1.2 (Printing Ratios).

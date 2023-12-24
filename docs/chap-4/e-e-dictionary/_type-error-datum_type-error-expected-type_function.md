@@ -1,4 +1,4 @@
-**type-error-datum, type-error-expected-type** *Function* 
+**type-error-datum, type-error-expected-type** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**type-error-datum** *condition → datum* 
+<ClLinks styled={true} term={"type-error-datum"}><b>type-error-datum</b></ClLinks> *condition → datum* 
 
 
 
-**type-error-expected-type** *condition → expected-type* 
+<ClLinks styled={true} term={"type-error-expected-type"}><b>type-error-expected-type</b></ClLinks> *condition → expected-type* 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-*condition*—a *condition* of *type* **type-error**. 
+<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks>. 
 
 
 
-*datum*—an *object*. 
+*datum*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-**type-error-datum** returns the offending datum in the *situation* represented by the *condition*. 
+<ClLinks styled={true} term={"type-error-datum"}><b>type-error-datum</b></ClLinks> returns the offending datum in the <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
-**type-error-expected-type** returns the expected type of the offending datum in the *situation* represented by the *condition*. 
+<ClLinks styled={true} term={"type-error-expected-type"}><b>type-error-expected-type</b></ClLinks> returns the expected type of the offending datum in the <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
@@ -65,7 +65,7 @@
 
 
 
-**type-error**, Chapter 9 (Conditions) 
+<ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks>, Chapter 9 (Conditions) 
 
 
 

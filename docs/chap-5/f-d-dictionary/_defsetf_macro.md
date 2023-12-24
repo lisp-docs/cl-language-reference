@@ -1,4 +1,4 @@
-**defsetf** *Macro* 
+**defsetf** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -10,7 +10,7 @@ The “short form”:
 
 
 
-**defsetf** *access-fn update-fn* [*documentation*] 
+<ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks> *access-fn update-fn* [*documentation*] 
 
 
 
@@ -22,7 +22,7 @@ The “long form”:
 
 
 
-**defsetf** *access-fn lambda-list* (*\{store-variable\}*\*) [[ *\{declaration\}*\* *| documentation* ]] *\{form\}*\* *! access-fn* 
+<ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks> *access-fn lambda-list* (*\{store-variable\}*\*) [[ <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* *! access-fn* 
 
 
 
@@ -30,11 +30,11 @@ The “long form”:
 
 
 
-*access-fn*—a *symbol* which names a *function* or a *macro*. 
+*access-fn*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> which names a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> or a <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks>. 
 
 
 
-*update-fn*—a *symbol* naming a *function* or *macro*. 
+*update-fn*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> naming a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> or <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks>. 
 
 
 
@@ -42,19 +42,19 @@ The “long form”:
 
 
 
-*store-variable*—a *symbol* (a *variable name*). 
+*store-variable*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> (a *variable name*). 
 
 
 
-*declaration*—a **declare** *expression*; not evaluated. 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*documentation*—a *string*; not evaluated. 
+*documentation*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>; not evaluated. 
 
 
 
-*form*—a *form*. 
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -70,7 +70,7 @@ Data and Control
 
 
 
-**defsetf** 
+<ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks> 
 
 
 
@@ -78,39 +78,39 @@ Data and Control
 
 
 
-**defsetf** defines how to **setf** a *place* of the form (*access-fn* ...) for relatively simple cases. (See **define-setf-expander** for more general access to this facility.) It must be the case that the *function* or *macro* named by *access-fn* evaluates all of its arguments. 
+<ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks> defines how to <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> of the form (*access-fn* ...) for relatively simple cases. (See <ClLinks styled={true} term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks> for more general access to this facility.) It must be the case that the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> or <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> named by *access-fn* evaluates all of its arguments. 
 
 
 
-**defsetf** may take one of two forms, called the “short form” and the “long form,” which are distinguished by the *type* of the second *argument*. 
+<ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks> may take one of two forms, called the “short form” and the “long form,” which are distinguished by the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> of the second <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks>. 
 
 
 
-When the short form is used, *update-fn* must name a *function* (or *macro*) that takes one more argument than *access-fn* takes. When **setf** is given a *place* that is a call on *access-fn*, it expands into a call on *update-fn* that is given all the arguments to *access-fn* and also, as its last argument, the new value (which must be returned by *update-fn* as its value). 
+When the short form is used, *update-fn* must name a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> (or <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks>) that takes one more argument than *access-fn* takes. When <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> is given a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> that is a call on *access-fn*, it expands into a call on *update-fn* that is given all the arguments to *access-fn* and also, as its last argument, the new value (which must be returned by *update-fn* as its value). 
 
 
 
-The long form **defsetf** resembles **defmacro**. The *lambda-list* describes the arguments of *access-fn*. The *store-variables* describe the value or values to be stored into the *place*. The *body* must compute the expansion of a **setf** of a call on *access-fn*. The expansion function is defined in the same *lexical environment* in which the **defsetf** *form* appears. 
+The long form <ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks> resembles <ClLinks styled={true} term={"defmacro"}><b>defmacro</b></ClLinks>. The *lambda-list* describes the arguments of *access-fn*. The *store-variables* describe the value or values to be stored into the <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. The *body* must compute the expansion of a <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of a call on *access-fn*. The expansion function is defined in the same *lexical environment* in which the <ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> appears. 
 
 
 
-During the evaluation of the *forms*, the variables in the *lambda-list* and the *store-variables* are bound to names of temporary variables, generated as if by **gensym** or **gentemp**, that will be bound by the expansion of **setf** to the values of those *subforms*. This binding permits the *forms* to be written without regard for order-of-evaluation issues. **defsetf** arranges for the temporary variables to be optimized out of the final result in cases where that is possible. 
+During the evaluation of the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>, the variables in the *lambda-list* and the *store-variables* are bound to names of temporary variables, generated as if by <ClLinks styled={true} term={"gensym"}><b>gensym</b></ClLinks> or <ClLinks styled={true} term={"gentemp"}><b>gentemp</b></ClLinks>, that will be bound by the expansion of <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> to the values of those <ClLinks styled={true} term={"subform"}><i>subforms</i></ClLinks>. This binding permits the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> to be written without regard for order-of-evaluation issues. <ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks> arranges for the temporary variables to be optimized out of the final result in cases where that is possible. 
 
 
 
-The body code in **defsetf** is implicitly enclosed in a *block* whose name is *access-fn* 
+The body code in <ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks> is implicitly enclosed in a <ClLinks styled={true} term={"block"}><i>block</i></ClLinks> whose name is *access-fn* 
 
 
 
-**defsetf** ensures that *subforms* of the *place* are evaluated exactly once. 
+<ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks> ensures that <ClLinks styled={true} term={"subform"}><i>subforms</i></ClLinks> of the <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> are evaluated exactly once. 
 
 
 
-*Documentation* is attached to *access-fn* as a *documentation string* of kind **setf**. 
+*Documentation* is attached to *access-fn* as a *documentation string* of kind <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>. 
 
 
 
-If a **defsetf** *form* appears as a *top level form*, the *compiler* must make the *setf expander* available so that it may be used to expand calls to **setf** later on in the *file*. Users must ensure that the *forms*, if any, can be evaluated at compile time if the *access-fn* is used in a *place* later in the same *file*. The *compiler* must make these *setf expanders* available to compile-time calls to **get-setf-expansion** when its *environment* argument is a value received as the *environment parameter* of a *macro*. 
+If a <ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> appears as a *top level form*, the <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> must make the *setf expander* available so that it may be used to expand calls to <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> later on in the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks>. Users must ensure that the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>, if any, can be evaluated at compile time if the *access-fn* is used in a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> later in the same <ClLinks styled={true} term={"file"}><i>file</i></ClLinks>. The <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> must make these *setf expanders* available to compile-time calls to <ClLinks styled={true} term={"get-setf-expansion"}><b>get-setf-expansion</b></ClLinks> when its <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> argument is a value received as the *environment parameter* of a <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks>. 
 
 
 
@@ -179,7 +179,7 @@ Data and Control
 
 
 
-**documentation**, **setf**, **define-setf-expander**, **get-setf-expansion**, Section 5.1 (Generalized Reference), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
+**documentation**, <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>, <ClLinks styled={true} term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>, <ClLinks styled={true} term={"get-setf-expansion"}><b>get-setf-expansion</b></ClLinks>, Section 5.1 (Generalized Reference), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
 
 
 
@@ -187,11 +187,11 @@ Data and Control
 
 
 
-*forms* must include provision for returning the correct value (the value or values of *store-variable*). This is handled by *forms* rather than by **defsetf** because in many cases this value can be returned at no extra cost, by calling a function that simultaneously stores into the *place* and returns the correct value. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> must include provision for returning the correct value (the value or values of *store-variable*). This is handled by <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> rather than by <ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks> because in many cases this value can be returned at no extra cost, by calling a function that simultaneously stores into the <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> and returns the correct value. 
 
 
 
-A **setf** of a call on *access-fn* also evaluates all of *access-fn*’s arguments; it cannot treat any of them specially. This means that **defsetf** cannot be used to describe how to store into a *generalized reference* to a byte, such as (ldb field reference). **define-setf-expander** is used to handle situations that do not fit the restrictions imposed by **defsetf** and gives the user additional control. 
+A <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of a call on *access-fn* also evaluates all of *access-fn*’s arguments; it cannot treat any of them specially. This means that <ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks> cannot be used to describe how to store into a *generalized reference* to a byte, such as (ldb field reference). <ClLinks styled={true} term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks> is used to handle situations that do not fit the restrictions imposed by <ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks> and gives the user additional control. 
 
 
 

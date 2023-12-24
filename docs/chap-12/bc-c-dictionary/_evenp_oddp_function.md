@@ -1,4 +1,4 @@
-**evenp, oddp** *Function* 
+**evenp, oddp** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**evenp** *integer → generalized-boolean* 
+<ClLinks styled={true} term={"evenp"}><b>evenp</b></ClLinks> *integer → generalized-boolean* 
 
 
 
-**oddp** *integer → generalized-boolean* 
+<ClLinks styled={true} term={"oddp"}><b>oddp</b></ClLinks> *integer → generalized-boolean* 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-**evenp** returns *true* if *integer* is even (divisible by two); otherwise, returns *false*. 
+<ClLinks styled={true} term={"evenp"}><b>evenp</b></ClLinks> returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if *integer* is even (divisible by two); otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
-**oddp** returns *true* if *integer* is odd (not divisible by two); otherwise, returns *false*. 
+<ClLinks styled={true} term={"oddp"}><b>oddp</b></ClLinks> returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if *integer* is odd (not divisible by two); otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 **Examples:**
 ```lisp
@@ -48,7 +48,7 @@
 
 
 
-Should signal an error of *type* **type-error** if *integer* is not an *integer* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *integer* is not an *integer* . 
 
 
 

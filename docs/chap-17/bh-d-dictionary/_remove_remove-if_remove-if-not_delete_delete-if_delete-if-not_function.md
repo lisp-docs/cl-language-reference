@@ -1,4 +1,4 @@
-**remove, remove-if, remove-if-not, delete, delete-if, delete-if-not** *Function* 
+**remove, remove-if, remove-if-not, delete, delete-if, delete-if-not** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,19 +6,19 @@
 
 
 
-**remove** *item sequence* &amp;key *from-end test test-not start end count key → result-sequence* **remove-if** *test sequence* &amp;key *from-end start end count key → result-sequence* 
+<ClLinks styled={true} term={"remove"}><b>remove</b></ClLinks> *item sequence* &amp;key *from-end test test-not start end count key → result-sequence* <ClLinks styled={true} term={"remove-if"}><b>remove-if</b></ClLinks> *test sequence* &amp;key *from-end start end count key → result-sequence* 
 
 
 
-**remove-if-not** *test sequence* &amp;key *from-end start end count key → result-sequence* 
+<ClLinks styled={true} term={"remove-if-not"}><b>remove-if-not</b></ClLinks> *test sequence* &amp;key *from-end start end count key → result-sequence* 
 
 
 
-**delete** *item sequence* &amp;key *from-end test test-not start end count key → result-sequence* **delete-if** *test sequence* &amp;key *from-end start end count key → result-sequence* 
+<ClLinks styled={true} term={"delete"}><b>delete</b></ClLinks> *item sequence* &amp;key *from-end test test-not start end count key → result-sequence* <ClLinks styled={true} term={"delete-if"}><b>delete-if</b></ClLinks> *test sequence* &amp;key *from-end start end count key → result-sequence* 
 
 
 
-**delete-if-not** *test sequence* &amp;key *from-end start end count key → result-sequence* 
+<ClLinks styled={true} term={"delete-if-not"}><b>delete-if-not</b></ClLinks> *test sequence* &amp;key *from-end start end count key → result-sequence* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*item*—an *object*. 
+*item*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-*test*—a *designator* for a *function* of one *argument* that returns a *generalized boolean*. *from-end*—a *generalized boolean*. The default is *false*. 
+*test*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> that returns a *generalized boolean*. *from-end*—a *generalized boolean*. The default is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
-*test*—a *designator* for a *function* of two *arguments* that returns a *generalized boolean*. 
+*test*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. 
 
 
 
@@ -54,19 +54,19 @@
 
 
 
-*test-not*—a *designator* for a *function* of two *arguments* that returns a *generalized boolean*. 
+*test-not*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. 
 
 
 
-*start*, *end*—*bounding index designators* of *sequence*. The defaults for *start* and *end* are 0 and **nil**, respectively. 
+*start*, *end*—*bounding index designators* of *sequence*. The defaults for *start* and *end* are 0 and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
-*count*—an *integer* or **nil**. The default is **nil**. 
+*count*—an *integer* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*key*—a *designator* for a *function* of one argument, or **nil**. 
+<ClLinks styled={true} term={"key"}><i>key</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -78,23 +78,23 @@
 
 
 
-**remove**, **remove-if**, and **remove-if-not** return a *sequence* from which the elements that *satisfy the test* have been removed. 
+<ClLinks styled={true} term={"remove"}><b>remove</b></ClLinks>, <ClLinks styled={true} term={"remove-if"}><b>remove-if</b></ClLinks>, and <ClLinks styled={true} term={"remove-if-not"}><b>remove-if-not</b></ClLinks> return a *sequence* from which the elements that *satisfy the test* have been removed. 
 
 
 
-**delete**, **delete-if**, and **delete-if-not** are like **remove**, **remove-if**, and **remove-if-not** respectively, but they may modify *sequence*. 
+<ClLinks styled={true} term={"delete"}><b>delete</b></ClLinks>, <ClLinks styled={true} term={"delete-if"}><b>delete-if</b></ClLinks>, and <ClLinks styled={true} term={"delete-if-not"}><b>delete-if-not</b></ClLinks> are like <ClLinks styled={true} term={"remove"}><b>remove</b></ClLinks>, <ClLinks styled={true} term={"remove-if"}><b>remove-if</b></ClLinks>, and <ClLinks styled={true} term={"remove-if-not"}><b>remove-if-not</b></ClLinks> respectively, but they may modify *sequence*. 
 
 
 
-If *sequence* is a *vector* , the result is a *vector* that has the same *actual array element type* as *sequence*. If *sequence* is a *list*, the result is a *list*. 
+If *sequence* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> , the result is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> that has the same *actual array element type* as *sequence*. If *sequence* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, the result is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
-Supplying a *from-end* of *true* matters only when the *count* is provided; in that case only the rightmost *count* elements *satisfying the test* are deleted. 
+Supplying a *from-end* of <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> matters only when the *count* is provided; in that case only the rightmost *count* elements *satisfying the test* are deleted. 
 
 
 
-*Count*, if supplied, limits the number of elements removed or deleted; if more than *count* elements *satisfy the test*, then of these elements only the leftmost or rightmost, depending on *from-end*, are deleted or removed, as many as specified by *count*. If *count* is supplied and negative, the behavior is as if zero had been supplied instead. If *count* is **nil**, all matching items are affected. 
+*Count*, if supplied, limits the number of elements removed or deleted; if more than *count* elements *satisfy the test*, then of these elements only the leftmost or rightmost, depending on *from-end*, are deleted or removed, as many as specified by *count*. If *count* is supplied and negative, the behavior is as if zero had been supplied instead. If *count* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, all matching items are affected. 
 
 
 
@@ -102,19 +102,19 @@ For all these functions, elements not removed or deleted occur in the same order
 
 
 
-**remove**, **remove-if**, **remove-if-not** return a *sequence* of the same *type* as *sequence* that has the same elements except that those in the subsequence *bounded* by *start* and *end* and *satisfying the test* have been removed. This is a non-destructive operation. If any elements need to be removed, the result will be a copy. The result of **remove** may share with *sequence*; the result may be *identical* to the input *sequence* if no elements need to be removed. 
+<ClLinks styled={true} term={"remove"}><b>remove</b></ClLinks>, <ClLinks styled={true} term={"remove-if"}><b>remove-if</b></ClLinks>, <ClLinks styled={true} term={"remove-if-not"}><b>remove-if-not</b></ClLinks> return a *sequence* of the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> as *sequence* that has the same elements except that those in the subsequence <ClLinks styled={true} term={"bounded"}><i>bounded</i></ClLinks> by *start* and *end* and *satisfying the test* have been removed. This is a non-destructive operation. If any elements need to be removed, the result will be a copy. The result of <ClLinks styled={true} term={"remove"}><b>remove</b></ClLinks> may share with *sequence*; the result may be <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> to the input *sequence* if no elements need to be removed. 
 
 
 
-**delete**, **delete-if**, and **delete-if-not** return a *sequence* of the same *type* as *sequence* that has the same elements except that those in the subsequence *bounded* by *start* and *end* and *satisfying the test* have been deleted. *Sequence* may be destroyed and used to construct the result; however, the result might or might not be *identical* to *sequence*. 
+<ClLinks styled={true} term={"delete"}><b>delete</b></ClLinks>, <ClLinks styled={true} term={"delete-if"}><b>delete-if</b></ClLinks>, and <ClLinks styled={true} term={"delete-if-not"}><b>delete-if-not</b></ClLinks> return a *sequence* of the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> as *sequence* that has the same elements except that those in the subsequence <ClLinks styled={true} term={"bounded"}><i>bounded</i></ClLinks> by *start* and *end* and *satisfying the test* have been deleted. *Sequence* may be destroyed and used to construct the result; however, the result might or might not be <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> to *sequence*. 
 
 
 
-**delete**, when *sequence* is a *list*, is permitted to **setf** any part, **car** or **cdr**, of the top-level list structure in that *sequence*. When *sequence* is a *vector* , **delete** is permitted to change the dimensions of the *vector* and to slide its elements into new positions without permuting them to produce the resulting *vector* . 
+<ClLinks styled={true} term={"delete"}><b>delete</b></ClLinks>, when *sequence* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, is permitted to <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> any part, <ClLinks styled={true} term={"car"}><b>car</b></ClLinks> or <ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks>, of the top-level list structure in that *sequence*. When *sequence* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> , <ClLinks styled={true} term={"delete"}><b>delete</b></ClLinks> is permitted to change the dimensions of the <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> and to slide its elements into new positions without permuting them to produce the resulting <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> . 
 
 
 
-**delete-if** is constrained to behave exactly as follows: 
+<ClLinks styled={true} term={"delete-if"}><b>delete-if</b></ClLinks> is constrained to behave exactly as follows: 
 
 
 
@@ -192,7 +192,7 @@ bar → ((C)) or ...
 
 
 
-For **delete**, **delete-if**, and **delete-if-not**, *sequence* may be destroyed and used to construct the result. 
+For <ClLinks styled={true} term={"delete"}><b>delete</b></ClLinks>, <ClLinks styled={true} term={"delete-if"}><b>delete-if</b></ClLinks>, and <ClLinks styled={true} term={"delete-if-not"}><b>delete-if-not</b></ClLinks>, *sequence* may be destroyed and used to construct the result. 
 
 
 
@@ -200,7 +200,7 @@ For **delete**, **delete-if**, and **delete-if-not**, *sequence* may be destroye
 
 
 
-Should be prepared to signal an error of *type* **type-error** if *sequence* is not a *proper sequence*. 
+Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. 
 
 
 
@@ -216,15 +216,15 @@ Section 3.2.1 (Compiler Terminology), Section 3.6 (Traversal Rules and Side Effe
 
 
 
-If *sequence* is a *vector* , the result might or might not be simple, and might or might not be *identical* to *sequence*. 
+If *sequence* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> , the result might or might not be simple, and might or might not be <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> to *sequence*. 
 
 
 
-The :test-not *argument* is deprecated. 
+The :test-not <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> is deprecated. 
 
 
 
-The functions **delete-if-not** and **remove-if-not** are deprecated. 
+The functions <ClLinks styled={true} term={"delete-if-not"}><b>delete-if-not</b></ClLinks> and <ClLinks styled={true} term={"remove-if-not"}><b>remove-if-not</b></ClLinks> are deprecated. 
 
 
 

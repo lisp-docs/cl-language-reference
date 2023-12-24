@@ -1,4 +1,4 @@
-**atom** *Type* 
+**atom** <ClLinks styled={true} term={"type"}><i>Type</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**atom**, **t** 
+<ClLinks styled={true} term={"atom"}><b>atom</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 

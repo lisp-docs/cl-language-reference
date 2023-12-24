@@ -1,4 +1,4 @@
-**values-list** *Function* 
+**values-list** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**values-list** *list ! \{element\}*\* 
+<ClLinks styled={true} term={"values-list"}><b>values-list</b></ClLinks> *list ! \{element\}*\* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*list*—a *list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
-*elements*—the *elements* of the *list*. 
+<ClLinks styled={true} term={"element"}><i>elements</i></ClLinks>—the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the *elements* of the *list* as *multiple values*<sub>2</sub>. 
+Returns the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> as *multiple values*<sub>2</sub>. 
 
 
 
@@ -43,7 +43,7 @@ Returns the *elements* of the *list* as *multiple values*<sub>2</sub>.
 
 
 
-Should signal **type-error** if its argument is not a *proper list*. 
+Should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a *proper list*. 
 
 
 
@@ -51,7 +51,7 @@ Should signal **type-error** if its argument is not a *proper list*.
 
 
 
-**multiple-value-bind**, **multiple-value-list**, **multiple-values-limit**, **values** 
+<ClLinks styled={true} term={"multiple-value-bind"}><b>multiple-value-bind</b></ClLinks>, <ClLinks styled={true} term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks>, <ClLinks styled={true} term={"multiple-values-limit"}><b>multiple-values-limit</b></ClLinks>, <ClLinks styled={true} term={"values"}><b>values</b></ClLinks> 
 
 
 
@@ -59,11 +59,11 @@ Should signal **type-error** if its argument is not a *proper list*.
 
 
 
-(values-list *list*) *⌘* (apply #’values *list*) 
+(values-list <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) *⌘* (apply #’values <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) 
 
 
 
-(equal *x* (multiple-value-list (values-list *x*))) returns *true* for all *lists x*. 
+(equal *x* (multiple-value-list (values-list *x*))) returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> for all *lists x*. 
 
 
 

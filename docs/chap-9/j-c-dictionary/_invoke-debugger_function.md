@@ -1,4 +1,4 @@
-**invoke-debugger** *Function* 
+**invoke-debugger** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**invoke-debugger** *condition →* 
+<ClLinks styled={true} term={"invoke-debugger"}><b>invoke-debugger</b></ClLinks> *condition →* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*condition*—a *condition object*. 
+<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a *condition object*. 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-**invoke-debugger** attempts to enter the debugger with *condition*. 
+<ClLinks styled={true} term={"invoke-debugger"}><b>invoke-debugger</b></ClLinks> attempts to enter the debugger with <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
-If **\*debugger-hook\*** is not **nil**, it should be a *function* (or the name of a *function*) to be called prior to entry to the standard debugger. The *function* is called with **\*debugger-hook\*** bound to **nil**, and the *function* must accept two arguments: the *condition* and the *value* of **\*debugger-hook\*** prior to binding it to **nil**. If the *function* returns normally, the standard debugger is entered. 
+If <ClLinks styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></ClLinks> is not <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, it should be a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> (or the name of a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>) to be called prior to entry to the standard debugger. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is called with <ClLinks styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></ClLinks> bound to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, and the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> must accept two arguments: the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> and the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></ClLinks> prior to binding it to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. If the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> returns normally, the standard debugger is entered. 
 
 
 
@@ -50,7 +50,7 @@ Debug>
 
 
 
-**\*debugger-hook\*** is bound to **nil**, program execution is discontinued, and the debugger is entered. 
+<ClLinks styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></ClLinks> is bound to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, program execution is discontinued, and the debugger is entered. 
 
 
 
@@ -58,7 +58,7 @@ Debug>
 
 
 
-**\*debug-io\*** and **\*debugger-hook\***. 
+**\*debug-io\*** and <ClLinks styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ Debug>
 
 
 
-**error**, **break** 
+<ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"break"}><b>break</b></ClLinks> 
 
 
 
@@ -82,7 +82,7 @@ Debug>
 
 
 
-**break** 
+<ClLinks styled={true} term={"break"}><b>break</b></ClLinks> 
 
 
 

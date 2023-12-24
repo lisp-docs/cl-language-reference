@@ -1,4 +1,4 @@
-**random** *Function* 
+**random** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**random** *limit* &amp;optional *random-state → random-number* 
+<ClLinks styled={true} term={"random"}><b>random</b></ClLinks> *limit* &amp;optional *random-state → random-number* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*limit*—a positive *integer* , or a positive *float*. 
+*limit*—a positive *integer* , or a positive <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*random-number*—a non-negative *number* less than *limit* and of the same *type* as *limit*. 
+*random-number*—a non-negative <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> less than *limit* and of the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> as *limit*. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns a pseudo-random number that is a non-negative *number* less than *limit* and of the same *type* as *limit*. 
+Returns a pseudo-random number that is a non-negative <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> less than *limit* and of the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> as *limit*. 
 
 
 
@@ -63,7 +63,7 @@ The *random-state* is modified.
 
 
 
-Should signal an error of *type* **type-error** if *limit* is not a positive *integer* or a positive *real*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *limit* is not a positive *integer* or a positive *real*. 
 
 
 
@@ -71,7 +71,7 @@ Should signal an error of *type* **type-error** if *limit* is not a positive *in
 
 
 
-**make-random-state**, **\*random-state\*** 
+<ClLinks styled={true} term={"make-random-state"}><b>make-random-state</b></ClLinks>, <ClLinks styled={true} term={"random-state"}><b>\*random-state\*</b></ClLinks> 
 
 
 

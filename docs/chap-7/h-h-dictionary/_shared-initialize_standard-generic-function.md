@@ -6,7 +6,7 @@
 
 
 
-**shared-initialize** *instance slot-names* &amp;rest *initargs* &amp;key &amp;allow-other-keys → instance 
+<ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks> *instance slot-names* &amp;rest *initargs* &amp;key &amp;allow-other-keys → instance 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-**shared-initialize** (*instance* **standard-object**) *slot-names* &amp;rest *initargs* 
+<ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks> (<ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> <ClLinks styled={true} term={"standard-object"}><b>standard-object</b></ClLinks>) *slot-names* &amp;rest *initargs* 
 
 
 
@@ -22,15 +22,15 @@
 
 
 
-*instance*—an *object*. 
+<ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*slot-names*—a *list* or **t**. 
+*slot-names*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> or <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>. 
 
 
 
-*initargs*—a *list* of *keyword/value pairs* (of initialization argument *names* and *values*). 
+*initargs*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *keyword/value pairs* (of initialization argument <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> and <ClLinks styled={true} term={"value"}><i>values</i></ClLinks>). 
 
 
 
@@ -38,19 +38,15 @@
 
 
 
-The generic function **shared-initialize** is used to fill the *slots* of an *instance* using *initargs* and :initform forms. It is called when an instance is created, when an instance is re-initialized, when an instance is updated to conform to a redefined *class*, and when an instance is updated to conform to a different *class*. The generic function **shared-initialize** is called by the system-supplied primary *method* for **initialize-instance**, **reinitialize-instance**, **update-instance-for-redefined-class**, and **update-instance-for-different-class**. 
+The generic function <ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks> is used to fill the <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> of an <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> using *initargs* and :initform forms. It is called when an instance is created, when an instance is re-initialized, when an instance is updated to conform to a redefined <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>, and when an instance is updated to conform to a different <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. The generic function <ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks> is called by the system-supplied primary <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> for <ClLinks styled={true} term={"initialize-instance"}><b>initialize-instance</b></ClLinks>, <ClLinks styled={true} term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks>, **update-instance-for-redefined-class**, and **update-instance-for-different-class**. 
 
 
 
-The generic function **shared-initialize** takes the following arguments: the *instance* to be initialized, a specification of a set of *slot-names accessible* in that *instance*, and any number of *initargs*. The arguments after the first two must form an *initialization argument list*. The system-supplied 
-
-
+The generic function <ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks> takes the following arguments: the <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> to be initialized, a specification of a set of *slot-names accessible* in that <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>, and any number of *initargs*. The arguments after the first two must form an *initialization argument list*. The system-supplied 
 
 
 
 
-
- 
 
 
 
@@ -58,23 +54,27 @@ The generic function **shared-initialize** takes the following arguments: the *i
 
 
 
-**shared-initialize** 
+ 
 
 
 
-primary *method* on **shared-initialize** initializes the *slots* with values according to the *initargs* and supplied :initform forms. *Slot-names* indicates which *slots* should be initialized according to their :initform forms if no *initargs* are provided for those *slots*. 
+<ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks> 
 
 
 
-The system-supplied primary *method* behaves as follows, regardless of whether the *slots* are local or shared: 
+primary <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> on <ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks> initializes the <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> with values according to the *initargs* and supplied :initform forms. *Slot-names* indicates which <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> should be initialized according to their :initform forms if no *initargs* are provided for those <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks>. 
 
 
 
-*•* If an *initarg* in the *initialization argument list* specifies a value for that *slot*, that value is stored into the *slot*, even if a value has already been stored in the *slot* before the *method* is run. 
+The system-supplied primary <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> behaves as follows, regardless of whether the <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> are local or shared: 
 
 
 
-*•* Any *slots* indicated by *slot-names* that are still unbound at this point are initialized according to their :initform forms. For any such *slot* that has an :initform form, that *form* is evaluated in the lexical environment of its defining **defclass** *form* and the result is stored into the *slot*. For example, if a *before method* stores a value in the *slot*, the :initform form will not be used to supply a value for the *slot*. 
+*•* If an *initarg* in the *initialization argument list* specifies a value for that <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>, that value is stored into the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>, even if a value has already been stored in the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> before the <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> is run. 
+
+
+
+*•* Any <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> indicated by *slot-names* that are still unbound at this point are initialized according to their :initform forms. For any such <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> that has an :initform form, that <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is evaluated in the lexical environment of its defining <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> and the result is stored into the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. For example, if a *before method* stores a value in the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>, the :initform form will not be used to supply a value for the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 
 
 
 
@@ -82,7 +82,7 @@ The system-supplied primary *method* behaves as follows, regardless of whether t
 
 
 
-The *slots-names* argument specifies the *slots* that are to be initialized according to their :initform forms if no initialization arguments apply. It can be a *list* of slot *names*, which specifies the set of those slot *names*; or it can be the *symbol* **t**, which specifies the set of all of the *slots*. 
+The *slots-names* argument specifies the <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> that are to be initialized according to their :initform forms if no initialization arguments apply. It can be a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of slot <ClLinks styled={true} term={"name"}><i>names</i></ClLinks>, which specifies the set of those slot <ClLinks styled={true} term={"name"}><i>names</i></ClLinks>; or it can be the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, which specifies the set of all of the <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks>. 
 
 
 
@@ -90,11 +90,11 @@ The *slots-names* argument specifies the *slots* that are to be initialized acco
 
 
 
-**initialize-instance**, **reinitialize-instance**, **update-instance-for-redefined-class**, 
+<ClLinks styled={true} term={"initialize-instance"}><b>initialize-instance</b></ClLinks>, <ClLinks styled={true} term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks>, **update-instance-for-redefined-class**, 
 
 
 
-**update-instance-for-different-class**, **slot-boundp**, **slot-makunbound**, Section 7.1 (Object Creation and Initialization), Section 7.1.4 (Rules for Initialization Arguments), Section 7.1.2 (Declaring the Validity of Initialization Arguments) 
+**update-instance-for-different-class**, <ClLinks styled={true} term={"slot-boundp"}><b>slot-boundp</b></ClLinks>, <ClLinks styled={true} term={"slot-makunbound"}><b>slot-makunbound</b></ClLinks>, Section 7.1 (Object Creation and Initialization), Section 7.1.4 (Rules for Initialization Arguments), Section 7.1.2 (Declaring the Validity of Initialization Arguments) 
 
 
 
@@ -102,15 +102,15 @@ The *slots-names* argument specifies the *slots* that are to be initialized acco
 
 
 
-*Initargs* are declared as valid by using the :initarg option to **defclass**, or by defining *methods* for **shared-initialize**. The keyword name of each keyword parameter specifier in the *lambda list* of any *method* defined on **shared-initialize** is declared as a valid *initarg* name for all *classes* for which that *method* is applicable. 
+*Initargs* are declared as valid by using the :initarg option to <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks>, or by defining <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> for <ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. The keyword name of each keyword parameter specifier in the *lambda list* of any <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> defined on <ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks> is declared as a valid *initarg* name for all *classes* for which that <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> is applicable. 
 
 
 
-Implementations are permitted to optimize :initform forms that neither produce nor depend on side effects, by evaluating these *forms* and storing them into slots before running any **initialize-instance** methods, rather than by handling them in the primary **initialize-instance** method. (This optimization might be implemented by having the **allocate-instance** method copy a prototype instance.) 
+Implementations are permitted to optimize :initform forms that neither produce nor depend on side effects, by evaluating these <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> and storing them into slots before running any <ClLinks styled={true} term={"initialize-instance"}><b>initialize-instance</b></ClLinks> methods, rather than by handling them in the primary <ClLinks styled={true} term={"initialize-instance"}><b>initialize-instance</b></ClLinks> method. (This optimization might be implemented by having the <ClLinks styled={true} term={"allocate-instance"}><b>allocate-instance</b></ClLinks> method copy a prototype instance.) 
 
 
 
-Implementations are permitted to optimize default initial value forms for *initargs* associated with slots by not actually creating the complete initialization argument *list* when the only *method* that would receive the complete *list* is the *method* on **standard-object**. In this case default initial value 
+Implementations are permitted to optimize default initial value forms for *initargs* associated with slots by not actually creating the complete initialization argument <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> when the only <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> that would receive the complete <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is the <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> on <ClLinks styled={true} term={"standard-object"}><b>standard-object</b></ClLinks>. In this case default initial value 
 
 
 

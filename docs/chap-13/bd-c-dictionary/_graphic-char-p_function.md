@@ -1,4 +1,4 @@
-**graphic-char-p** *Function* 
+**graphic-char-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**graphic-char-p** *char → generalized-boolean* 
+<ClLinks styled={true} term={"graphic-char-p"}><b>graphic-char-p</b></ClLinks> *char → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*char*—a *character* . 
+*char*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Returns *true* if *character* is a *graphic character* ; otherwise, returns *false*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is a *graphic character* ; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -55,7 +55,7 @@ Returns *true* if *character* is a *graphic character* ; otherwise, returns *fal
 
 
 
-Should signal an error of *type* **type-error** if *character* is not a *character* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is not a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -63,7 +63,7 @@ Should signal an error of *type* **type-error** if *character* is not a *charact
 
 
 
-**read**, Section 2.1 (Character Syntax), Section 13.1.10 (Documentation of Implementation-Defined Scripts) 
+<ClLinks styled={true} term={"read"}><b>read</b></ClLinks>, Section 2.1 (Character Syntax), Section 13.1.10 (Documentation of Implementation-Defined Scripts) 
 
 
 

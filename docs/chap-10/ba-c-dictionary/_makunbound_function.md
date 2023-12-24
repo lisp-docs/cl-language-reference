@@ -1,4 +1,4 @@
-**makunbound** *Function* 
+**makunbound** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**makunbound** *symbol → symbol* 
+<ClLinks styled={true} term={"makunbound"}><b>makunbound</b></ClLinks> *symbol → symbol* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*symbol*—a *symbol* 
+<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-Makes the *symbol* be *unbound*, regardless of whether it was previously *bound*. 
+Makes the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> be <ClLinks styled={true} term={"unbound"}><i>unbound</i></ClLinks>, regardless of whether it was previously <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks>. 
 
 
 
@@ -40,7 +40,7 @@ a → 1
 
 
 
-The *value cell* of *symbol* is modified. 
+The *value cell* of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is modified. 
 
 
 
@@ -48,7 +48,7 @@ The *value cell* of *symbol* is modified.
 
 
 
-Should signal an error of *type* **type-error** if *symbol* is not a *symbol*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -68,7 +68,7 @@ Should signal an error of *type* **type-error** if *symbol* is not a *symbol*.
 
 
 
-**boundp**, **fmakunbound** 
+<ClLinks styled={true} term={"boundp"}><b>boundp</b></ClLinks>, <ClLinks styled={true} term={"fmakunbound"}><b>fmakunbound</b></ClLinks> 
 
 
 

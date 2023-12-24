@@ -1,4 +1,4 @@
-**constantp** *Function* 
+**constantp** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**constantp** *form* &amp;optional *environment ! generalized-boolean* 
+<ClLinks styled={true} term={"constantp"}><b>constantp</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> &amp;optional *environment ! generalized-boolean* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*form*—a *form*. 
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*environment*—an *environment object*. The default is **nil**. 
+<ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>—an *environment object*. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -30,31 +30,31 @@
 
 
 
-Returns *true* if *form* can be determined by the *implementation* to be a *constant form* in the indicated *environment*; otherwise, it returns *false* indicating either that the *form* is not a *constant form* or that it cannot be determined whether or not *form* is a *constant form*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> can be determined by the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> to be a *constant form* in the indicated <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>; otherwise, it returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> indicating either that the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is not a *constant form* or that it cannot be determined whether or not <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is a *constant form*. 
 
 
 
-The following kinds of *forms* are considered *constant forms*: 
+The following kinds of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are considered *constant forms*: 
 
 
 
-*• Self-evaluating objects* (such as *numbers*, *characters*, and the various kinds of *arrays*) are always considered *constant forms* and must be recognized as such by **constantp**. 
+*• Self-evaluating objects* (such as <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks>, <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks>, and the various kinds of <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks>) are always considered *constant forms* and must be recognized as such by <ClLinks styled={true} term={"constantp"}><b>constantp</b></ClLinks>. 
 
 
 
-*• Constant variables*, such as *keywords*, symbols defined by Common Lisp as constant (such as **nil**, **t**, and **pi**), and symbols declared as constant by the user in the indicated *environment* using **defconstant** are always considered *constant forms* and must be recognized as such by **constantp**. 
+*• Constant variables*, such as <ClLinks styled={true} term={"keyword"}><i>keywords</i></ClLinks>, symbols defined by Common Lisp as constant (such as <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, and **pi**), and symbols declared as constant by the user in the indicated <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> using <ClLinks styled={true} term={"defconstant"}><b>defconstant</b></ClLinks> are always considered *constant forms* and must be recognized as such by <ClLinks styled={true} term={"constantp"}><b>constantp</b></ClLinks>. 
 
 
 
-*•* **quote** *forms* are always considered *constant forms* and must be recognized as such by **constantp**. 
+*•* <ClLinks styled={true} term={"quote"}><b>quote</b></ClLinks> <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are always considered *constant forms* and must be recognized as such by <ClLinks styled={true} term={"constantp"}><b>constantp</b></ClLinks>. 
 
 
 
-*•* An *implementation* is permitted, but not required, to detect additional *constant forms*. If it does, it is also permitted, but not required, to make use of information in the *environment*. Examples of *constant forms* for which **constantp** might or might not return *true* are: (sqrt pi), (+ 3 2), (length ’(a b c)), and (let ((x 7)) (zerop x)). 
+*•* An <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> is permitted, but not required, to detect additional *constant forms*. If it does, it is also permitted, but not required, to make use of information in the <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>. Examples of *constant forms* for which <ClLinks styled={true} term={"constantp"}><b>constantp</b></ClLinks> might or might not return <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> are: (sqrt pi), (+ 3 2), (length ’(a b c)), and (let ((x 7)) (zerop x)). 
 
 
 
-If an *implementation* chooses to make use of the *environment* information, such actions as expanding *macros* or performing function inlining are permitted to be used, but not required; however, expanding *compiler macros* is not permitted. 
+If an <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> chooses to make use of the <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> information, such actions as expanding <ClLinks styled={true} term={"macro"}><i>macros</i></ClLinks> or performing function inlining are permitted to be used, but not required; however, expanding *compiler macros* is not permitted. 
 
 
 
@@ -87,7 +87,7 @@ Evaluation and
 
 
 
-The state of the global environment (*e.g.*, which *symbols* have been declared to be the *names* of *constant variables*). 
+The state of the global environment (*e.g.*, which <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> have been declared to be the <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> of *constant variables*). 
 
 
 
@@ -95,7 +95,7 @@ The state of the global environment (*e.g.*, which *symbols* have been declared 
 
 
 
-**defconstant** 
+<ClLinks styled={true} term={"defconstant"}><b>defconstant</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**streamp** *Function* 
+**streamp** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**streamp** *object → generalized-boolean* 
+<ClLinks styled={true} term={"streamp"}><b>streamp</b></ClLinks> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Returns *true* if *object* is of *type* **stream**; otherwise, returns *false*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"stream"}><b>stream</b></ClLinks>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
-**streamp** is unaffected by whether *object*, if it is a *stream*, is *open* or closed. 
+<ClLinks styled={true} term={"streamp"}><b>streamp</b></ClLinks> is unaffected by whether <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>, if it is a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, is <ClLinks styled={true} term={"open"}><i>open</i></ClLinks> or closed. 
 
 
 
@@ -45,7 +45,7 @@ Returns *true* if *object* is of *type* **stream**; otherwise, returns *false*.
 
 
 
-(streamp *object*) *≡* (typep *object* ’stream) 
+(streamp <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’stream) 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**multiple-value-prog1** *first-form \{form\}*\* *! first-form-results* 
+<ClLinks styled={true} term={"multiple-value-prog1"}><b>multiple-value-prog1</b></ClLinks> *first-form \{form\}*\* *! first-form-results* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*first-form*—a *form*; evaluated as described below. 
+*first-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
 
 
 
-*form*—a *form*; evaluated as described below. 
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
 
 
 
-*first-form-results*—the *values* resulting from the *evaluation* of *first-form*. 
+*first-form-results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> resulting from the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of *first-form*. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-**multiple-value-prog1** evaluates *first-form* and saves all the values produced by that *form*. It then evaluates each *form* from left to right, discarding their values. 
+<ClLinks styled={true} term={"multiple-value-prog1"}><b>multiple-value-prog1</b></ClLinks> evaluates *first-form* and saves all the values produced by that <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. It then evaluates each <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> from left to right, discarding their values. 
 
 
 
@@ -48,7 +48,7 @@
 
 
 
-**prog1** 
+<ClLinks styled={true} term={"prog1"}><b>prog1</b></ClLinks> 
 
 
 
@@ -64,7 +64,7 @@
 
 
 
-**multiple-value-setq** 
+<ClLinks styled={true} term={"multiple-value-setq"}><b>multiple-value-setq</b></ClLinks> 
 
 
 

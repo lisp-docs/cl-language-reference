@@ -6,7 +6,7 @@
 
 
 
-**add-method** *generic-function method ! generic-function* 
+<ClLinks styled={true} term={"add-method"}><b>add-method</b></ClLinks> *generic-function method ! generic-function* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-**add-method** (*generic-function* **standard-generic-function**) 
+<ClLinks styled={true} term={"add-method"}><b>add-method</b></ClLinks> (*generic-function* <ClLinks styled={true} term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks>) 
 
 
 
-(*method* **method**) 
+(<ClLinks styled={true} term={"method"}><i>method</i></ClLinks> <ClLinks styled={true} term={"method"}><b>method</b></ClLinks>) 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*method*—a *method object*. 
+<ClLinks styled={true} term={"method"}><i>method</i></ClLinks>—a *method object*. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-The generic function **add-method** adds a *method* to a *generic function*. 
+The generic function <ClLinks styled={true} term={"add-method"}><b>add-method</b></ClLinks> adds a <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> to a *generic function*. 
 
 
 
@@ -54,7 +54,7 @@ The generic function **add-method** adds a *method* to a *generic function*.
 
 
 
-If *method* agrees with an existing *method* of *generic-function* on *parameter specializers* and *qualifiers*, the existing *method* is replaced. 
+If <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> agrees with an existing <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> of *generic-function* on *parameter specializers* and <ClLinks styled={true} term={"qualifier"}><i>qualifiers</i></ClLinks>, the existing <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> is replaced. 
 
 
 
@@ -62,11 +62,11 @@ If *method* agrees with an existing *method* of *generic-function* on *parameter
 
 
 
-The *lambda list* of the method function of *method* must be congruent with the *lambda list* of *generic-function*, or an error of *type* **error** is signaled. 
+The *lambda list* of the method function of <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> must be congruent with the *lambda list* of *generic-function*, or an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> is signaled. 
 
 
 
-If *method* is a *method object* of another *generic function*, an error of *type* **error** is signaled. 
+If <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> is a *method object* of another *generic function*, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> is signaled. 
 
 
 
@@ -74,7 +74,7 @@ If *method* is a *method object* of another *generic function*, an error of *typ
 
 
 
-**defmethod**, **defgeneric**, **find-method**, **remove-method**, Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers) 
+<ClLinks styled={true} term={"defmethod"}><b>defmethod</b></ClLinks>, <ClLinks styled={true} term={"defgeneric"}><b>defgeneric</b></ClLinks>, <ClLinks styled={true} term={"find-method"}><b>find-method</b></ClLinks>, <ClLinks styled={true} term={"remove-method"}><b>remove-method</b></ClLinks>, Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers) 
 
 
 

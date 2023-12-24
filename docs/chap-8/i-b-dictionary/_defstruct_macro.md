@@ -1,4 +1,4 @@
-**defstruct** *Macro* 
+**defstruct** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**defstruct** *name-and-options* [*documentation*] *\{↓slot-description\}*\* 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> *name-and-options* [*documentation*] *\{↓slot-description\}*\* 
 
 
 
@@ -98,7 +98,7 @@
 
 
 
-*type-option::*=(:type *type*) 
+*type-option::*=(:type <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>) 
 
 
 
@@ -122,7 +122,7 @@
 
 
 
-**defstruct** 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> 
 
 
 
@@ -154,11 +154,11 @@
 
 
 
-*constructor-name*—a *symbol*. 
+*constructor-name*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*copier-name*—a *symbol*. 
+*copier-name*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -170,7 +170,7 @@
 
 
 
-*predicate-name*—a *symbol*. 
+*predicate-name*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -178,11 +178,11 @@
 
 
 
-*slot-name*—a *symbol*. 
+*slot-name*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*slot-initform*—a *form*. 
+*slot-initform*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -190,15 +190,15 @@
 
 
 
-*structure-name*—a *symbol*. 
+*structure-name*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*type*—one of the *type specifiers* **list**, **vector**, or (vector *size*), or some other *type specifier* defined by the *implementation* to be appropriate. 
+<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>—one of the *type specifiers* <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>, <ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks>, or (vector *size*), or some other *type specifier* defined by the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> to be appropriate. 
 
 
 
-*documentation*—a *string*; not evaluated. 
+*documentation*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>; not evaluated. 
 
 
 
@@ -206,11 +206,11 @@
 
 
 
-**defstruct** defines a structured *type*, named *structure-type*, with named slots as specified by the *slot-options*. 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> defines a structured <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>, named *structure-type*, with named slots as specified by the *slot-options*. 
 
 
 
-**defstruct** defines *readers* for the slots and arranges for **setf** to work properly on such *reader* functions. Also, unless overridden, it defines a predicate named *name*-p, defines a constructor function named make-*constructor-name*, and defines a copier function named copy-*constructor-name*. All names of automatically created functions might automatically be declared **inline** (at the discretion of the *implementation*). 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> defines <ClLinks styled={true} term={"reader"}><i>readers</i></ClLinks> for the slots and arranges for <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> to work properly on such <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> functions. Also, unless overridden, it defines a predicate named <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>-p, defines a constructor function named make-*constructor-name*, and defines a copier function named copy-*constructor-name*. All names of automatically created functions might automatically be declared <ClLinks styled={true} term={"inline"}><b>inline</b></ClLinks> (at the discretion of the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>). 
 
 
 
@@ -230,15 +230,15 @@ If *documentation* is supplied, it is attached to *structure-name* as a *documen
 
 
 
-**defstruct** 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> 
 
 
 
-*documentation string* of kind **type** and as a *documentation string* to the *class object* for the *class* named *structure-name*. 
+*documentation string* of kind <ClLinks styled={true} term={"type"}><b>type</b></ClLinks> and as a *documentation string* to the *class object* for the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> named *structure-name*. 
 
 
 
-**defstruct** defines a constructor function that is used to create instances of the structure created by **defstruct**. The default name is make-*structure-name*. A different name can be supplied by giving the name as the argument to the *constructor* option. **nil** indicates that no constructor function will be created. 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> defines a constructor function that is used to create instances of the structure created by <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks>. The default name is make-*structure-name*. A different name can be supplied by giving the name as the argument to the *constructor* option. <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> indicates that no constructor function will be created. 
 
 
 
@@ -262,7 +262,7 @@ slot-keyword-2 form-2
 
 
 
-The arguments to the constructor function are all keyword arguments. Each slot keyword argument must be a keyword whose name corresponds to the name of a structure slot. All the *keywords* and *forms* are evaluated. If a slot is not initialized in this way, it is initialized by evaluating *slot-initform* in the slot description at the time the constructor function is called. If no *slot-initform* is supplied, the consequences are undefined if an attempt is later made to read the slot’s value before a value 
+The arguments to the constructor function are all keyword arguments. Each slot keyword argument must be a keyword whose name corresponds to the name of a structure slot. All the <ClLinks styled={true} term={"keyword"}><i>keywords</i></ClLinks> and <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are evaluated. If a slot is not initialized in this way, it is initialized by evaluating *slot-initform* in the slot description at the time the constructor function is called. If no *slot-initform* is supplied, the consequences are undefined if an attempt is later made to read the slot’s value before a value 
 
 
 
@@ -270,7 +270,7 @@ is explicitly assigned.
 
 
 
-Each *slot-initform* supplied for a **defstruct** component, when used by the constructor function for an otherwise unsupplied component, is re-evaluated on every call to the constructor function. The *slot-initform* is not evaluated unless it is needed in the creation of a particular structure instance. If it is never needed, there can be no type-mismatch error, even if the *type* of the slot is specified; no warning should be issued in this case. For example, in the following sequence, only the last call is an error. 
+Each *slot-initform* supplied for a <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> component, when used by the constructor function for an otherwise unsupplied component, is re-evaluated on every call to the constructor function. The *slot-initform* is not evaluated unless it is needed in the creation of a particular structure instance. If it is never needed, there can be no type-mismatch error, even if the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> of the slot is specified; no warning should be issued in this case. For example, in the following sequence, only the last call is an error. 
 
 
 
@@ -290,19 +290,15 @@ It is as if the *slot-initforms* were used as *initialization forms* for the *ke
 
 
 
-The *symbols* which name the slots must not be used by the *implementation* as the *names* for the *lambda variables* in the constructor function, since one or more of those *symbols* might have been proclaimed **special** or might be defined as the name of a *constant variable*. The slot default init forms are evaluated in the *lexical environment* in which the **defstruct** form itself appears and in the *dynamic environment* in which the call to the constructor function appears. 
+The <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> which name the slots must not be used by the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> as the <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> for the *lambda variables* in the constructor function, since one or more of those <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> might have been proclaimed <ClLinks styled={true} term={"special"}><b>special</b></ClLinks> or might be defined as the name of a *constant variable*. The slot default init forms are evaluated in the *lexical environment* in which the <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> form itself appears and in the *dynamic environment* in which the call to the constructor function appears. 
 
 
 
-For example, if the form (gensym) were used as an initialization form, either in the constructor function call or as the default initialization form in **defstruct**, then every call to the constructor function would call **gensym** once to generate a new *symbol*. 
-
-
+For example, if the form (gensym) were used as an initialization form, either in the constructor function call or as the default initialization form in <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks>, then every call to the constructor function would call <ClLinks styled={true} term={"gensym"}><b>gensym</b></ClLinks> once to generate a new <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
 
-
- 
 
 
 
@@ -310,11 +306,15 @@ For example, if the form (gensym) were used as an initialization form, either in
 
 
 
-**defstruct** 
+ 
 
 
 
-Each *slot-description* in **defstruct** can specify zero or more *slot-options*. A *slot-option* consists of a pair of a keyword and a value (which is not a form to be evaluated, but the value itself). For example: 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> 
+
+
+
+Each *slot-description* in <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> can specify zero or more *slot-options*. A *slot-option* consists of a pair of a keyword and a value (which is not a form to be evaluated, but the value itself). For example: 
 
 
 
@@ -350,11 +350,11 @@ The available slot-options are:
 
 
 
-:type *type* 
+:type <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> 
 
 
 
-This specifies that the contents of the slot is always of type *type*. This is entirely analogous to the declaration of a variable or function; it effectively declares the result type of the *reader* function. It is *implementation-dependent* whether the *type* is checked when initializing a slot or when assigning to it. *Type* is not evaluated; it must be a valid *type specifier* . 
+This specifies that the contents of the slot is always of type <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>. This is entirely analogous to the declaration of a variable or function; it effectively declares the result type of the <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> function. It is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> is checked when initializing a slot or when assigning to it. <ClLinks styled={true} term={"type"}><i>Type</i></ClLinks> is not evaluated; it must be a valid *type specifier* . 
 
 
 
@@ -362,15 +362,15 @@ This specifies that the contents of the slot is always of type *type*. This is e
 
 
 
-When *x* is *true*, this specifies that this slot cannot be altered; it will always contain the value supplied at construction time. **setf** will not accept the *reader* function for this slot. If *x* is *false*, this slot-option has no effect. *X* is not evaluated. 
+When *x* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, this specifies that this slot cannot be altered; it will always contain the value supplied at construction time. <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> will not accept the <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> function for this slot. If *x* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, this slot-option has no effect. *X* is not evaluated. 
 
 
 
-When this option is *false* or unsupplied, it is *implementation-dependent* whether the ability to *write* the slot is implemented by a *setf function* or a *setf expander* . 
+When this option is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> or unsupplied, it is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the ability to <ClLinks styled={true} term={"write"}><i>write</i></ClLinks> the slot is implemented by a *setf function* or a *setf expander* . 
 
 
 
-The following keyword options are available for use with **defstruct**. A **defstruct** option can be either a keyword or a *list* of a keyword and arguments for that keyword; specifying the keyword by itself is equivalent to specifying a list consisting of the keyword and no arguments. The syntax for **defstruct** options differs from the pair syntax used for slot-options. No part of any of these options is evaluated. 
+The following keyword options are available for use with <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks>. A <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> option can be either a keyword or a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of a keyword and arguments for that keyword; specifying the keyword by itself is equivalent to specifying a list consisting of the keyword and no arguments. The syntax for <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> options differs from the pair syntax used for slot-options. No part of any of these options is evaluated. 
 
 
 
@@ -378,19 +378,15 @@ The following keyword options are available for use with **defstruct**. A **defs
 
 
 
-This provides for automatic prefixing of names of *reader* (or *access*) functions. The default behavior is to begin the names of all the *reader* functions of a structure with the name of the structure followed by a hyphen. 
+This provides for automatic prefixing of names of <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> (or <ClLinks styled={true} term={"access"}><i>access</i></ClLinks>) functions. The default behavior is to begin the names of all the <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> functions of a structure with the name of the structure followed by a hyphen. 
 
 
 
-:conc-name supplies an alternate prefix to be used. If a hyphen is to be used as a separator, it must be supplied as part of the prefix. If :conc-name is **nil** or no argument is supplied, then no prefix is used; then the names of the *reader* functions are the same as the slot names. If a *non-nil* prefix is given, the name of the *reader function* for each slot is 
-
-
+:conc-name supplies an alternate prefix to be used. If a hyphen is to be used as a separator, it must be supplied as part of the prefix. If :conc-name is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> or no argument is supplied, then no prefix is used; then the names of the <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> functions are the same as the slot names. If a <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks> prefix is given, the name of the *reader function* for each slot is 
 
 
 
 
-
- 
 
 
 
@@ -398,15 +394,19 @@ This provides for automatic prefixing of names of *reader* (or *access*) functio
 
 
 
-**defstruct** 
+ 
 
 
 
-constructed by concatenating that prefix and the name of the slot, and interning the resulting *symbol* in the *package* that is current at the time the **defstruct** form is expanded. 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> 
 
 
 
-Note that no matter what is supplied for :conc-name, slot keywords that match the slot names with no prefix attached are used with a constructor function. The *reader* function name is used in conjunction with **setf**. Here is an example: 
+constructed by concatenating that prefix and the name of the slot, and interning the resulting <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> in the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> that is current at the time the <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> form is expanded. 
+
+
+
+Note that no matter what is supplied for :conc-name, slot keywords that match the slot names with no prefix attached are used with a constructor function. The <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> function name is used in conjunction with <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>. Here is an example: 
 
 
 
@@ -434,7 +434,7 @@ Note that no matter what is supplied for :conc-name, slot keywords that match th
 
 
 
-Whether or not the :conc-name option is explicitly supplied, the following rule governs name conflicts of generated *reader* (or *accessor* ) names: For any *structure type S*<sub>1</sub> having a *reader* function named *R* for a slot named *X*<sub>1</sub> that is inherited by another *structure type S*<sub>2</sub> that would have a *reader* function with the same name *R* for a slot named *X*<sub>2</sub>, no definition for *R* is generated by the definition of *S*<sub>2</sub>; instead, the definition of *R* is inherited from the definition of *S*<sub>1</sub>. (In such a case, if *X*<sub>1</sub> and *X*<sub>2</sub> are different slots, the *implementation* might signal a style warning.) 
+Whether or not the :conc-name option is explicitly supplied, the following rule governs name conflicts of generated <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> (or <ClLinks styled={true} term={"accessor"}><i>accessor</i></ClLinks> ) names: For any *structure type S*<sub>1</sub> having a <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> function named *R* for a slot named *X*<sub>1</sub> that is inherited by another *structure type S*<sub>2</sub> that would have a <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> function with the same name *R* for a slot named *X*<sub>2</sub>, no definition for *R* is generated by the definition of *S*<sub>2</sub>; instead, the definition of *R* is inherited from the definition of *S*<sub>1</sub>. (In such a case, if *X*<sub>1</sub> and *X*<sub>2</sub> are different slots, the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> might signal a style warning.) 
 
 
 
@@ -442,11 +442,11 @@ Whether or not the :conc-name option is explicitly supplied, the following rule 
 
 
 
-This option takes zero, one, or two arguments. If at least one argument is supplied and the first argument is not **nil**, then that argument is a *symbol* which specifies the name of the constructor function. If the argument is not supplied (or if the option itself is not supplied), the name of the constructor is produced by concatenating the string "MAKE-" and the name of the structure, interning the name in whatever *package* is current at the time **defstruct** is expanded. If the argument is provided and is **nil**, no constructor function is defined. 
+This option takes zero, one, or two arguments. If at least one argument is supplied and the first argument is not <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, then that argument is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> which specifies the name of the constructor function. If the argument is not supplied (or if the option itself is not supplied), the name of the constructor is produced by concatenating the string "MAKE-" and the name of the structure, interning the name in whatever <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is current at the time <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> is expanded. If the argument is provided and is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, no constructor function is defined. 
 
 
 
-If :constructor is given as (:constructor *name arglist*), then instead of making a keyword driven constructor function, **defstruct** defines a “positional” constructor function, taking arguments whose meaning is determined by the argument’s position and possibly by keywords. *Arglist* is used to describe what the arguments to the constructor will be. In the simplest case something like (:constructor make-foo (a b c)) defines make-foo to be a three-argument constructor function whose arguments are used to initialize the slots named a, b, and c. 
+If :constructor is given as (:constructor *name arglist*), then instead of making a keyword driven constructor function, <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> defines a “positional” constructor function, taking arguments whose meaning is determined by the argument’s position and possibly by keywords. *Arglist* is used to describe what the arguments to the constructor will be. In the simplest case something like (:constructor make-foo (a b c)) defines make-foo to be a three-argument constructor function whose arguments are used to initialize the slots named a, b, and c. 
 
 
 
@@ -474,19 +474,19 @@ It is permissible to use the :constructor option more than once, so that you can
 
 
 
-**defstruct** 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> 
 
 
 
-**defstruct** creates the default-named keyword constructor function only if no explicit :constructor options are specified, or if the :constructor option is specified without a *name* argument. 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> creates the default-named keyword constructor function only if no explicit :constructor options are specified, or if the :constructor option is specified without a <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> argument. 
 
 
 
-(:constructor nil) is meaningful only when there are no other :constructor options specified. It prevents **defstruct** from generating any constructors at all. 
+(:constructor nil) is meaningful only when there are no other :constructor options specified. It prevents <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> from generating any constructors at all. 
 
 
 
-Otherwise, **defstruct** creates a constructor function corresponding to each supplied :constructor option. It is permissible to specify multiple keyword constructor functions as well as multiple “boa constructors”. 
+Otherwise, <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> creates a constructor function corresponding to each supplied :constructor option. It is permissible to specify multiple keyword constructor functions as well as multiple “boa constructors”. 
 
 
 
@@ -494,11 +494,11 @@ Otherwise, **defstruct** creates a constructor function corresponding to each su
 
 
 
-This option takes one argument, a *symbol*, which specifies the name of the copier function. If the argument is not provided or if the option itself is not provided, the name of the copier is produced by concatenating the string "COPY-" and the name of the structure, interning the name in whatever *package* is current at the time **defstruct** is expanded. If the argument is provided and is **nil**, no copier function is defined. 
+This option takes one argument, a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, which specifies the name of the copier function. If the argument is not provided or if the option itself is not provided, the name of the copier is produced by concatenating the string "COPY-" and the name of the structure, interning the name in whatever <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is current at the time <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> is expanded. If the argument is provided and is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, no copier function is defined. 
 
 
 
-The automatically defined copier function is a function of one *argument*, which must be of the structure type being defined. The copier function creates a *fresh* structure that has the same *type* as its *argument*, and that has the *same* component values as the original structure; that is, the component values are not copied recursively. If the **defstruct** :type option was not used, the following equivalence applies: 
+The automatically defined copier function is a function of one <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks>, which must be of the structure type being defined. The copier function creates a <ClLinks styled={true} term={"fresh"}><i>fresh</i></ClLinks> structure that has the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> as its <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks>, and that has the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> component values as the original structure; that is, the component values are not copied recursively. If the <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> :type option was not used, the following equivalence applies: 
 
 
 
@@ -518,7 +518,7 @@ This option is used for building a new structure definition as an extension of a
 
 
 
-To make a new structure to represent an astronaut that has the attributes of name, age, and sex, and *functions* that operate on person structures, astronaut is defined with :include as follows: 
+To make a new structure to represent an astronaut that has the attributes of name, age, and sex, and <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> that operate on person structures, astronaut is defined with :include as follows: 
 
 
 
@@ -538,7 +538,7 @@ helmet-size
 
 
 
-:include causes the structure being defined to have the same slots as the included structure. This is done in such a way that the *reader* functions for the included structure also work on the structure being defined. In this example, an astronaut therefore has five slots: the three defined in person and the two defined in astronaut itself. The *reader* functions defined by the person structure can be applied to instances of the astronaut structure, and they work correctly. Moreover, astronaut has its own *reader* functions for components 
+:include causes the structure being defined to have the same slots as the included structure. This is done in such a way that the <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> functions for the included structure also work on the structure being defined. In this example, an astronaut therefore has five slots: the three defined in person and the two defined in astronaut itself. The <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> functions defined by the person structure can be applied to instances of the astronaut structure, and they work correctly. Moreover, astronaut has its own <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> functions for components 
 
 
 
@@ -554,7 +554,7 @@ helmet-size
 
 
 
-**defstruct** 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> 
 
 
 
@@ -602,15 +602,15 @@ defined by the person structure. The following examples illustrate the use of as
 
 
 
-The difference between the *reader* functions person-name and astro-name is that person-name can be correctly applied to any person, including an astronaut, while astro-name can be correctly applied only to an astronaut. An implementation might check for incorrect use of *reader* functions. 
+The difference between the <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> functions person-name and astro-name is that person-name can be correctly applied to any person, including an astronaut, while astro-name can be correctly applied only to an astronaut. An implementation might check for incorrect use of <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> functions. 
 
 
 
-At most one :include can be supplied in a single **defstruct**. The argument to :include is required and must be the name of some previously defined structure. If the structure being defined has no :type option, then the included structure must also have had no :type option supplied for it. If the structure being defined has a :type option, then the included structure must have been declared with a :type option specifying the same representation *type*. 
+At most one :include can be supplied in a single <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks>. The argument to :include is required and must be the name of some previously defined structure. If the structure being defined has no :type option, then the included structure must also have had no :type option supplied for it. If the structure being defined has a :type option, then the included structure must have been declared with a :type option specifying the same representation <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>. 
 
 
 
-If no :type option is involved, then the structure name of the including structure definition becomes the name of a *data type*, and therefore a valid *type specifier* recognizable by **typep**; it becomes a *subtype* of the included structure. In the above example, astronaut is a *subtype* of person; hence 
+If no :type option is involved, then the structure name of the including structure definition becomes the name of a *data type*, and therefore a valid *type specifier* recognizable by <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks>; it becomes a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of the included structure. In the above example, astronaut is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of person; hence 
 
 
 
@@ -630,7 +630,7 @@ The structure using :include can specify default values or slot-options for the 
 
 
 
-Each *slot-description* must have a *slot-name* that is the same as that of some slot in the included structure. If a *slot-description* has no *slot-initform*, then in the new structure the slot has no initial value. Otherwise its initial value form is replaced by the *slot-initform* in the *slot-description*. A normally writable slot can be made read-only. If a slot is read-only in the included structure, then it must also be so in the including structure. If a *type* is supplied for a slot, it must be a *subtype* of the *type* specified in the included structure. 
+Each *slot-description* must have a *slot-name* that is the same as that of some slot in the included structure. If a *slot-description* has no *slot-initform*, then in the new structure the slot has no initial value. Otherwise its initial value form is replaced by the *slot-initform* in the *slot-description*. A normally writable slot can be made read-only. If a slot is read-only in the included structure, then it must also be so in the including structure. If a <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> is supplied for a slot, it must be a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> specified in the included structure. 
 
 
 
@@ -646,7 +646,7 @@ Each *slot-description* must have a *slot-name* that is the same as that of some
 
 
 
-**defstruct** 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> 
 
 
 
@@ -730,7 +730,7 @@ commutative associative identity) → ANNOTATED-BINOP
 
 
 
-The first two **nil** elements stem from the :initial-offset of 2 in the definition of binop. The next four elements contain the structure name and three slots for binop. The next three **nil** elements stem from the :initial-offset of 3 in the definition of annotated-binop. The last three list elements contain the additional slots for an annotated-binop. 
+The first two <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> elements stem from the :initial-offset of 2 in the definition of binop. The next four elements contain the structure name and three slots for binop. The next three <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> elements stem from the :initial-offset of 3 in the definition of annotated-binop. The last three list elements contain the additional slots for an annotated-binop. 
 
 
 
@@ -738,7 +738,7 @@ The first two **nil** elements stem from the :initial-offset of 2 in the definit
 
 
 
-:initial-offset instructs **defstruct** to skip over a certain number of slots before it starts allocating the slots described in the body. This option’s argument is the number of slots **defstruct** should skip. :initial-offset can be used only if :type is also supplied. 
+:initial-offset instructs <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> to skip over a certain number of slots before it starts allocating the slots described in the body. This option’s argument is the number of slots <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> should skip. :initial-offset can be used only if :type is also supplied. 
 
 
 
@@ -778,7 +778,7 @@ would result in the following behavior for make-binop:
 
 
 
-**defstruct** 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> 
 
 
 
@@ -798,7 +798,7 @@ would result in the following behavior for make-binop:
 
 
 
-The selector functions binop-operator, binop-operand-1, and binop-operand-2 would be essentially equivalent to **third**, **fourth**, and **fifth**, respectively. Similarly, the form 
+The selector functions binop-operator, binop-operand-1, and binop-operand-2 would be essentially equivalent to <ClLinks styled={true} term={"third"}><b>third</b></ClLinks>, <ClLinks styled={true} term={"fourth"}><b>fourth</b></ClLinks>, and <ClLinks styled={true} term={"fifth"}><b>fifth</b></ClLinks>, respectively. Similarly, the form 
 
 
 
@@ -826,7 +826,7 @@ would result in the following behavior for make-binop:
 
 
 
-The first two **nil** elements stem from the :initial-offset of 2 in the definition of binop. The next four elements contain the structure name and three slots for binop. 
+The first two <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> elements stem from the :initial-offset of 2 in the definition of binop. The next four elements contain the structure name and three slots for binop. 
 
 
 
@@ -874,7 +874,7 @@ The effect of make-binop is simply to construct a list of length three:
 
 
 
-It is just like the function list except that it takes keyword arguments and performs slot defaulting appropriate to the binop conceptual data type. Similarly, the selector functions binop-operator, binop-operand-1, and binop-operand-2 are essentially equivalent to **car**, **cadr**, and **caddr**, respectively. They might not be completely equivalent because, for example, an implementation would be justified in adding error-checking code to ensure that the argument to each selector function is a length-3 list. 
+It is just like the function list except that it takes keyword arguments and performs slot defaulting appropriate to the binop conceptual data type. Similarly, the selector functions binop-operator, binop-operand-1, and binop-operand-2 are essentially equivalent to <ClLinks styled={true} term={"car"}><b>car</b></ClLinks>, <ClLinks styled={true} term={"cadr"}><b>cadr</b></ClLinks>, and <ClLinks styled={true} term={"caddr"}><b>caddr</b></ClLinks>, respectively. They might not be completely equivalent because, for example, an implementation would be justified in adding error-checking code to ensure that the argument to each selector function is a length-3 list. 
 
 
 
@@ -890,19 +890,19 @@ It is just like the function list except that it takes keyword arguments and per
 
 
 
-**defstruct** 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> 
 
 
 
-binop is a conceptual data type in that it is not made a part of the Common Lisp type system. **typep** does not recognize binop as a *type specifier* , and **type-of** returns list when given a binop structure. There is no way to distinguish a data structure constructed by make-binop from any other *list* that happens to have the correct structure. 
+binop is a conceptual data type in that it is not made a part of the Common Lisp type system. <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks> does not recognize binop as a *type specifier* , and <ClLinks styled={true} term={"type-of"}><b>type-of</b></ClLinks> returns list when given a binop structure. There is no way to distinguish a data structure constructed by make-binop from any other <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that happens to have the correct structure. 
 
 
 
-There is not any way to recover the structure name binop from a structure created by make-binop. This can only be done if the structure is named. A named structure has the property that, given an instance of the structure, the structure name (that names the type) can be reliably recovered. For structures defined with no :type option, the structure name actually becomes part of the Common Lisp data-type system. **type-of**, when applied to such a structure, returns the structure name as the *type* of the *object*; **typep** recognizes the structure name as a valid *type specifier* . 
+There is not any way to recover the structure name binop from a structure created by make-binop. This can only be done if the structure is named. A named structure has the property that, given an instance of the structure, the structure name (that names the type) can be reliably recovered. For structures defined with no :type option, the structure name actually becomes part of the Common Lisp data-type system. <ClLinks styled={true} term={"type-of"}><b>type-of</b></ClLinks>, when applied to such a structure, returns the structure name as the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> of the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>; <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks> recognizes the structure name as a valid *type specifier* . 
 
 
 
-For structures defined with a :type option, **type-of** returns a *type specifier* such as list or (vector t), depending on the type supplied to the :type option. The structure name does not become a valid *type specifier* . However, if the :named option is also supplied, then the first component of the structure (as created by a **defstruct** constructor function) always contains the structure name. This allows the structure name to be recovered from an instance of the structure and allows a reasonable predicate for the conceptual type to be defined: the automatically defined *name-p* predicate for the structure operates by first checking that its argument is of the proper type (**list**, (vector t), or whatever) and then checking whether the first component contains the appropriate type name. 
+For structures defined with a :type option, <ClLinks styled={true} term={"type-of"}><b>type-of</b></ClLinks> returns a *type specifier* such as list or (vector t), depending on the type supplied to the :type option. The structure name does not become a valid *type specifier* . However, if the :named option is also supplied, then the first component of the structure (as created by a <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> constructor function) always contains the structure name. This allows the structure name to be recovered from an instance of the structure and allows a reasonable predicate for the conceptual type to be defined: the automatically defined *name-p* predicate for the structure operates by first checking that its argument is of the proper type (<ClLinks styled={true} term={"list"}><b>list</b></ClLinks>, (vector t), or whatever) and then checking whether the first component contains the appropriate type name. 
 
 
 
@@ -938,7 +938,7 @@ As before, this defines a constructor function make-binop and three selector fun
 
 
 
-The structure has the same layout as before except that the structure name binop is included as the first list element. The selector functions binop-operator, binop-operand-1, and binop-operand-2 are essentially equivalent to **cadr**, **caddr**, and **cadddr**, respectively. The predicate binop-p is more or less equivalent to this definition: 
+The structure has the same layout as before except that the structure name binop is included as the first list element. The selector functions binop-operator, binop-operand-1, and binop-operand-2 are essentially equivalent to <ClLinks styled={true} term={"cadr"}><b>cadr</b></ClLinks>, <ClLinks styled={true} term={"caddr"}><b>caddr</b></ClLinks>, and <ClLinks styled={true} term={"cadddr"}><b>cadddr</b></ClLinks>, respectively. The predicate binop-p is more or less equivalent to this definition: 
 
 
 
@@ -950,7 +950,7 @@ The structure has the same layout as before except that the structure name binop
 
 
 
-The name binop is still not a valid *type specifier* recognizable to **typep**, but at least there is a way of distinguishing binop structures from other similarly defined structures. 
+The name binop is still not a valid *type specifier* recognizable to <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks>, but at least there is a way of distinguishing binop structures from other similarly defined structures. 
 
 
 
@@ -966,7 +966,7 @@ The name binop is still not a valid *type specifier* recognizable to **typep**, 
 
 
 
-**defstruct** 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> 
 
 
 
@@ -974,7 +974,7 @@ The name binop is still not a valid *type specifier* recognizable to **typep**, 
 
 
 
-This option takes one argument, which specifies the name of the type predicate. If the argument is not supplied or if the option itself is not supplied, the name of the predicate is made by concatenating the name of the structure to the string "-P", interning the name in whatever *package* is current at the time **defstruct** is expanded. If the argument is provided and is **nil**, no predicate is defined. A predicate can be defined only if the structure is named; if :type is supplied and :named is not supplied, then :predicate must either be unsupplied or have the value **nil**. 
+This option takes one argument, which specifies the name of the type predicate. If the argument is not supplied or if the option itself is not supplied, the name of the predicate is made by concatenating the name of the structure to the string "-P", interning the name in whatever <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is current at the time <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> is expanded. If the argument is provided and is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, no predicate is defined. A predicate can be defined only if the structure is named; if :type is supplied and :named is not supplied, then :predicate must either be unsupplied or have the value <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -982,11 +982,11 @@ This option takes one argument, which specifies the name of the type predicate. 
 
 
 
-The :print-function and :print-object options specify that a **print-object** *method* for *structures* of type *structure-name* should be generated. These options are not synonyms, but do perform a similar service; the choice of which option (:print-function or :print-object) is used affects how the function named *printer-name* is called. Only one of these options may be used, and these options may be used only if :type is not supplied. 
+The :print-function and :print-object options specify that a <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> for <ClLinks styled={true} term={"structure"}><i>structures</i></ClLinks> of type *structure-name* should be generated. These options are not synonyms, but do perform a similar service; the choice of which option (:print-function or :print-object) is used affects how the function named *printer-name* is called. Only one of these options may be used, and these options may be used only if :type is not supplied. 
 
 
 
-If the :print-function option is used, then when a structure of type *structure-name* is to be printed, the designated printer function is called on three *arguments*: 
+If the :print-function option is used, then when a structure of type *structure-name* is to be printed, the designated printer function is called on three <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>: 
 
 
 
@@ -994,7 +994,7 @@ If the :print-function option is used, then when a structure of type *structure-
 
 
 
-– a *stream* to print to. 
+– a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> to print to. 
 
 
 
@@ -1002,7 +1002,7 @@ If the :print-function option is used, then when a structure of type *structure-
 
 
 
-vary between *implementations*; however, it can reliably be compared against 
+vary between <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>; however, it can reliably be compared against 
 
 
 
@@ -1022,7 +1022,7 @@ Specifying (:print-function *printer-name*) is approximately equivalent to speci
 
 
 
-where the ⟨current-print-depth⟩ represents the printer’s belief of how deep it is currently printing. It is *implementation-dependent* whether ⟨current-print-depth⟩ is always 0 and *\*print-level\**, if *non-nil*, is re-bound to successively smaller values as printing descends recursively, or whether *current-print-depth* varies in value as printing descends recursively and *\*print-level\** remains constant during the same traversal. 
+where the ⟨current-print-depth⟩ represents the printer’s belief of how deep it is currently printing. It is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether ⟨current-print-depth⟩ is always 0 and *\*print-level\**, if <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, is re-bound to successively smaller values as printing descends recursively, or whether *current-print-depth* varies in value as printing descends recursively and *\*print-level\** remains constant during the same traversal. 
 
 
 
@@ -1054,7 +1054,7 @@ Specifying (:print-object *printer-name*) is equivalent to specifying:
 
 
 
-**defstruct** 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> 
 
 
 
@@ -1066,15 +1066,15 @@ Specifying (:print-object *printer-name*) is equivalent to specifying:
 
 
 
-If no :type option is supplied, and if either a :print-function or a :print-object option is supplied, and if no *printer-name* is supplied, then a **print-object** *method specialized* for *structure-name* is generated that calls a function that implements the default printing behavior for structures using #S notation; see Section 22.1.3.12 (Printing Structures). 
+If no :type option is supplied, and if either a :print-function or a :print-object option is supplied, and if no *printer-name* is supplied, then a <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> *method specialized* for *structure-name* is generated that calls a function that implements the default printing behavior for structures using #S notation; see Section 22.1.3.12 (Printing Structures). 
 
 
 
-If neither a :print-function nor a :print-object option is supplied, then **defstruct** does not generate a **print-object** *method specialized* for *structure-name* and some default behavior is inherited either from a structure named in an :include option or from the default behavior for printing structures; see the *function* **print-object** and Section 22.1.3.12 (Printing Structures). 
+If neither a :print-function nor a :print-object option is supplied, then <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> does not generate a <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> *method specialized* for *structure-name* and some default behavior is inherited either from a structure named in an :include option or from the default behavior for printing structures; see the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> and Section 22.1.3.12 (Printing Structures). 
 
 
 
-When **\*print-circle\*** is *true*, a user-defined print function can print *objects* to the supplied *stream* using **write**, **prin1**, **princ**, or **format** and expect circularities to be detected and printed using the #*n*# syntax. This applies to *methods* on **print-object** in addition to :print-function options. If a user-defined print function prints to a *stream* other than the one that was supplied, then circularity detection starts over for that *stream*. See the *variable* **\*print-circle\***. 
+When <ClLinks styled={true} term={"print-circle"}><b>\*print-circle\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, a user-defined print function can print <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> to the supplied <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> using <ClLinks styled={true} term={"write"}><b>write</b></ClLinks>, <ClLinks styled={true} term={"prin1"}><b>prin1</b></ClLinks>, <ClLinks styled={true} term={"princ"}><b>princ</b></ClLinks>, or <ClLinks styled={true} term={"format"}><b>format</b></ClLinks> and expect circularities to be detected and printed using the #*n*# syntax. This applies to <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> on <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> in addition to :print-function options. If a user-defined print function prints to a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> other than the one that was supplied, then circularity detection starts over for that <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. See the <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> <ClLinks styled={true} term={"print-circle"}><b>\*print-circle\*</b></ClLinks>. 
 
 
 
@@ -1082,11 +1082,11 @@ When **\*print-circle\*** is *true*, a user-defined print function can print *ob
 
 
 
-:type explicitly specifies the representation to be used for the structure. Its argument must be one of these *types*: 
+:type explicitly specifies the representation to be used for the structure. Its argument must be one of these <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>: 
 
 
 
-**vector** 
+<ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks> 
 
 
 
@@ -1094,7 +1094,7 @@ This produces the same result as specifying (vector t). The structure is
 
 
 
-represented as a general *vector* , storing components as vector elements. The first 
+represented as a general <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> , storing components as vector elements. The first 
 
 
 
@@ -1106,15 +1106,15 @@ component is vector element 1 if the structure is :named, and element 0 otherwis
 
 
 
-The structure is represented as a (possibly specialized) *vector* , storing components 
+The structure is represented as a (possibly specialized) <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> , storing components 
 
 
 
-as vector elements. Every component must be of a *type* that can be stored in 
+as vector elements. Every component must be of a <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> that can be stored in 
 
 
 
-a *vector* of the *type* specified. The first component is vector element 1 if the 
+a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> specified. The first component is vector element 1 if the 
 
 
 
@@ -1122,31 +1122,27 @@ structure is :named, and element 0 otherwise. The structure can be :named only i
 
 
 
-the *type* **symbol** is a *subtype* of the supplied *element-type*. 
+the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks> is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of the supplied *element-type*. 
 
 
 
-**list** 
+<ClLinks styled={true} term={"list"}><b>list</b></ClLinks> 
 
 
 
-The structure is represented as a *list*. The first component is the *cadr* if the 
+The structure is represented as a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. The first component is the <ClLinks styled={true} term={"cadr"}><i>cadr</i></ClLinks> if the 
 
 
 
-structure is :named, and the *car* if it is not :named. 
+structure is :named, and the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> if it is not :named. 
 
 
 
-Specifying this option has the effect of forcing a specific representation and of forcing the components to be stored in the order specified in **defstruct** in corresponding successive elements of the specified representation. It also prevents the structure name from becoming 
-
-
+Specifying this option has the effect of forcing a specific representation and of forcing the components to be stored in the order specified in <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> in corresponding successive elements of the specified representation. It also prevents the structure name from becoming 
 
 
 
 
-
- 
 
 
 
@@ -1154,11 +1150,15 @@ Specifying this option has the effect of forcing a specific representation and o
 
 
 
-**defstruct** 
+ 
 
 
 
-a valid *type specifier* recognizable by **typep**. 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> 
+
+
+
+a valid *type specifier* recognizable by <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks>. 
 
 
 
@@ -1170,7 +1170,7 @@ For example:
 
 
 
-should make a constructor that builds a *list* exactly like the one that **list** produces, with quux as its *car* . 
+should make a constructor that builds a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> exactly like the one that <ClLinks styled={true} term={"list"}><b>list</b></ClLinks> produces, with quux as its <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> . 
 
 
 
@@ -1198,19 +1198,19 @@ should return precisely what this one does
 
 
 
-If :type is not supplied, the structure is represented as an *object* of *type* **structure-object**. 
+If :type is not supplied, the structure is represented as an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"structure-object"}><b>structure-object</b></ClLinks>. 
 
 
 
-**defstruct** without a :type option defines a *class* with the structure name as its name. The *metaclass* of structure *instances* is **structure-class**. 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> without a :type option defines a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> with the structure name as its name. The <ClLinks styled={true} term={"metaclass"}><i>metaclass</i></ClLinks> of structure <ClLinks styled={true} term={"instance"}><i>instances</i></ClLinks> is <ClLinks styled={true} term={"structure-class"}><b>structure-class</b></ClLinks>. 
 
 
 
-The consequences of redefining a **defstruct** structure are undefined. 
+The consequences of redefining a <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> structure are undefined. 
 
 
 
-In the case where no **defstruct** options have been supplied, the following functions are automatically defined to operate on instances of the new structure: 
+In the case where no <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> options have been supplied, the following functions are automatically defined to operate on instances of the new structure: 
 
 
 
@@ -1218,7 +1218,7 @@ In the case where no **defstruct** options have been supplied, the following fun
 
 
 
-A predicate with the name *structure-name*-p is defined to test membership in the structure type. The predicate (*structure-name*-p *object*) is *true* if an *object* is of this *type*; otherwise it is *false*. **typep** can also be used with the name of the new *type* to test whether an *object* belongs to the *type*. Such a function call has the form (typep *object* ’*structure-name*). 
+A predicate with the name *structure-name*-p is defined to test membership in the structure type. The predicate (*structure-name*-p <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of this <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks> can also be used with the name of the new <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> to test whether an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> belongs to the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>. Such a function call has the form (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’*structure-name*). 
 
 
 
@@ -1226,7 +1226,7 @@ A predicate with the name *structure-name*-p is defined to test membership in th
 
 
 
-*Reader* functions are defined to *read* the components of the structure. For each slot name, there is a corresponding *reader* function with the name *structure-name*-*slot-name*. This function *reads* the contents of that slot. Each *reader* function takes one argument, which is an instance of the structure type. **setf** can be used with any of these *reader* functions to alter the slot contents. 
+<ClLinks styled={true} term={"reader"}><i>Reader</i></ClLinks> functions are defined to <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> the components of the structure. For each slot name, there is a corresponding <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> function with the name *structure-name*-*slot-name*. This function <ClLinks styled={true} term={"read"}><i>reads</i></ClLinks> the contents of that slot. Each <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> function takes one argument, which is an instance of the structure type. <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> can be used with any of these <ClLinks styled={true} term={"reader"}><i>reader</i></ClLinks> functions to alter the slot contents. 
 
 
 
@@ -1250,7 +1250,7 @@ A constructor function with the name make-*structure-name* is defined. This func
 
 
 
-**defstruct** 
+<ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> 
 
 
 
@@ -1258,11 +1258,11 @@ A constructor function with the name make-*structure-name* is defined. This func
 
 
 
-A copier function with the name copy-*structure-name* is defined. The copier function takes an object of the structure type and creates a new object of the same type that is a copy of the first. The copier function creates a new structure with the same component entries as the original. Corresponding components of the two structure instances are **eql**. 
+A copier function with the name copy-*structure-name* is defined. The copier function takes an object of the structure type and creates a new object of the same type that is a copy of the first. The copier function creates a new structure with the same component entries as the original. Corresponding components of the two structure instances are <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks>. 
 
 
 
-If a **defstruct** *form* appears as a *top level form*, the *compiler* must make the *structure type* name recognized as a valid *type* name in subsequent declarations (as for **deftype**) and make the structure slot readers known to **setf**. In addition, the *compiler* must save enough information about the *structure type* so that further **defstruct** definitions can use :include in a subsequent **deftype** in the same *file* to refer to the *structure type* name. The functions which **defstruct** generates are not defined in the compile time environment, although the *compiler* may save enough information about the functions to code subsequent calls inline. The #S *reader macro* might or might not recognize the newly defined *structure type* name at compile time. 
+If a <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> appears as a *top level form*, the <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> must make the *structure type* name recognized as a valid <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> name in subsequent declarations (as for <ClLinks styled={true} term={"deftype"}><b>deftype</b></ClLinks>) and make the structure slot readers known to <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>. In addition, the <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> must save enough information about the *structure type* so that further <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> definitions can use :include in a subsequent <ClLinks styled={true} term={"deftype"}><b>deftype</b></ClLinks> in the same <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> to refer to the *structure type* name. The functions which <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> generates are not defined in the compile time environment, although the <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> may save enough information about the functions to code subsequent calls inline. The #S *reader macro* might or might not recognize the newly defined *structure type* name at compile time. 
 
 
 
@@ -1392,7 +1392,7 @@ This alters the x-position of ship2 to be 100. This works because **defstruct** 
 
 
 
-If any two slot names (whether present directly or inherited by the :include option) are the *same* under **string=**, **defstruct** should signal an error of *type* **program-error**. 
+If any two slot names (whether present directly or inherited by the :include option) are the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> under <ClLinks styled={true} term={"string"}><b>string=</b></ClLinks>, <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"program-error"}><b>program-error</b></ClLinks>. 
 
 
 
@@ -1404,7 +1404,7 @@ The consequences are undefined if the *included-structure-name* does not name a 
 
 
 
-**documentation**, **print-object**, **setf**, **subtypep**, **type-of**, **typep**, Section 3.2 (Compilation) 
+**documentation**, <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks>, <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>, <ClLinks styled={true} term={"subtypep"}><b>subtypep</b></ClLinks>, <ClLinks styled={true} term={"type-of"}><b>type-of</b></ClLinks>, <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks>, Section 3.2 (Compilation) 
 
 
 
@@ -1412,7 +1412,7 @@ The consequences are undefined if the *included-structure-name* does not name a 
 
 
 
-The *printer-name* should observe the values of such printer-control variables as **\*print-escape\***. 
+The *printer-name* should observe the values of such printer-control variables as <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks>. 
 
 
 
@@ -1420,7 +1420,7 @@ The restriction against issuing a warning for type mismatches between a *slot-in
 
 
 
-The mechanism by which **defstruct** arranges for slot accessors to be usable with **setf** is *implementation-dependent*; for example, it may use *setf functions*, *setf expanders*, or some other *implementation-dependent* mechanism known to that *implementation*’s *code* for **setf**. 
+The mechanism by which <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> arranges for slot accessors to be usable with <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>; for example, it may use *setf functions*, *setf expanders*, or some other <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> mechanism known to that <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>’s <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> for <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>. 
 
 
 

@@ -1,4 +1,4 @@
-*∗***print-right-margin***∗ Variable* 
+*∗<ClLinks styled={true} term={"print-right-margin"}><b>*print-right-margin*</b></ClLinks>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-a non-negative *integer* , or **nil**. 
+a non-negative *integer* , or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -14,7 +14,7 @@ a non-negative *integer* , or **nil**.
 
 
 
-**nil**. 
+<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 

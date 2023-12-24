@@ -1,4 +1,4 @@
-**package-error-package** *Function* 
+**package-error-package** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**package-error-package** *condition → package* 
+<ClLinks styled={true} term={"package-error-package"}><b>package-error-package</b></ClLinks> *condition → package* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*condition*—a *condition* of *type* **package-error**. 
+<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"package-error"}><b>package-error</b></ClLinks>. 
 
 
 
-*package*—a *package designator* . 
+<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a *designator* for the offending *package* in the *situation* represented by the *condition*. 
+Returns a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for the offending <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> in the <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 **Examples:**
 ```lisp
@@ -41,7 +41,7 @@ Returns a *designator* for the offending *package* in the *situation* represente
 
 
 
-**package-error** 
+<ClLinks styled={true} term={"package-error"}><b>package-error</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-*∗***print-case***∗ Variable* 
+*∗<ClLinks styled={true} term={"print-case"}><b>*print-case*</b></ClLinks>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-One of the *symbols* :upcase, :downcase, or :capitalize. 
+One of the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> :upcase, :downcase, or :capitalize. 
 
 
 
@@ -14,7 +14,7 @@ One of the *symbols* :upcase, :downcase, or :capitalize.
 
 
 
-The *symbol* :upcase. 
+The <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> :upcase. 
 
 
 
@@ -22,11 +22,11 @@ The *symbol* :upcase.
 
 
 
-The *value* of **\*print-case\*** controls the case (upper, lower, or mixed) in which to print any uppercase characters in the names of *symbols* when vertical-bar syntax is not used. 
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-case"}><b>\*print-case\*</b></ClLinks> controls the case (upper, lower, or mixed) in which to print any uppercase characters in the names of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> when vertical-bar syntax is not used. 
 
 
 
-**\*print-case\*** has an effect at all times when the *value* of **\*print-escape\*** is *false*. **\*print-case\*** also has an effect when the *value* of **\*print-escape\*** is *true* unless inside an escape context (*i.e.*, unless between *vertical-bars* or after a *slash*). 
+<ClLinks styled={true} term={"print-case"}><b>\*print-case\*</b></ClLinks> has an effect at all times when the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. <ClLinks styled={true} term={"print-case"}><b>\*print-case\*</b></ClLinks> also has an effect when the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> unless inside an escape context (*i.e.*, unless between <ClLinks styled={true} term={"vertical-bar"}><i>vertical-bars</i></ClLinks> or after a <ClLinks styled={true} term={"slash"}><i>slash</i></ClLinks>). 
 
 
 
@@ -61,7 +61,7 @@ The *value* of **\*print-case\*** controls the case (upper, lower, or mixed) in 
 
 
 
-**write** 
+<ClLinks styled={true} term={"write"}><b>write</b></ClLinks> 
 
 
 
@@ -69,11 +69,11 @@ The *value* of **\*print-case\*** controls the case (upper, lower, or mixed) in 
 
 
 
-**read** normally converts lowercase characters appearing in *symbols* to corresponding uppercase characters, so that internally print names normally contain only uppercase characters. 
+<ClLinks styled={true} term={"read"}><b>read</b></ClLinks> normally converts lowercase characters appearing in <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> to corresponding uppercase characters, so that internally print names normally contain only uppercase characters. 
 
 
 
-If **\*print-escape\*** is *true*, lowercase characters in the *name* of a *symbol* are always printed in lowercase, and are preceded by a single escape character or enclosed by multiple escape characters; uppercase characters in the *name* of a *symbol* are printed in upper case, in lower case, or in mixed case so as to capitalize words, according to the value of **\*print-case\***. The convention for what constitutes a “word” is the same as for **string-capitalize**. 
+If <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, lowercase characters in the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> are always printed in lowercase, and are preceded by a single escape character or enclosed by multiple escape characters; uppercase characters in the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> are printed in upper case, in lower case, or in mixed case so as to capitalize words, according to the value of <ClLinks styled={true} term={"print-case"}><b>\*print-case\*</b></ClLinks>. The convention for what constitutes a “word” is the same as for **string-capitalize**. 
 
 
 

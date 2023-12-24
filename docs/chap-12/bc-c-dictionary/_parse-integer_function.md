@@ -1,4 +1,4 @@
-**parse-integer** *Function* 
+**parse-integer** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**parse-integer** *string* &amp;key *start end radix junk-allowed → integer, pos* 
+<ClLinks styled={true} term={"parse-integer"}><b>parse-integer</b></ClLinks> <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> &amp;key *start end radix junk-allowed → integer, pos* 
 
 
 
@@ -14,27 +14,23 @@
 
 
 
-*string*—a *string*. 
+<ClLinks styled={true} term={"string"}><i>string</i></ClLinks>—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
 
 
 
-*start*, *end*—*bounding index designators* of *string*. The defaults for *start* and *end* are 0 and **nil**, respectively. 
+*start*, *end*—*bounding index designators* of <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
-*radix*—a *radix* . The default is 10. 
+<ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks>—a <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> . The default is 10. 
 
 
 
-*junk-allowed*—a *generalized boolean*. The default is *false*. 
-
-
+*junk-allowed*—a *generalized boolean*. The default is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
 
-
- 
 
 
 
@@ -42,11 +38,15 @@
 
 
 
-*integer*—an *integer* or *false*. 
+ 
 
 
 
-*pos*—a *bounding index* of *string*. 
+*integer*—an *integer* or <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+
+
+
+*pos*—a *bounding index* of <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -54,27 +54,27 @@
 
 
 
-**parse-integer** parses an *integer* in the specified *radix* from the substring of *string* delimited by *start* and *end*. 
+<ClLinks styled={true} term={"parse-integer"}><b>parse-integer</b></ClLinks> parses an *integer* in the specified <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> from the substring of <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> delimited by *start* and *end*. 
 
 
 
-**parse-integer** expects an optional sign (+ or -) followed by a a non-empty sequence of digits to be interpreted in the specified *radix*. Optional leading and trailing *whitespace*<sub>1</sub> is ignored. 
+<ClLinks styled={true} term={"parse-integer"}><b>parse-integer</b></ClLinks> expects an optional sign (+ or -) followed by a a non-empty sequence of digits to be interpreted in the specified <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks>. Optional leading and trailing <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> is ignored. 
 
 
 
-**parse-integer** does not recognize the syntactic radix-specifier prefixes #O, #B, #X, and #*n*R, nor does it recognize a trailing decimal point. 
+<ClLinks styled={true} term={"parse-integer"}><b>parse-integer</b></ClLinks> does not recognize the syntactic radix-specifier prefixes #O, #B, #X, and #*n*R, nor does it recognize a trailing decimal point. 
 
 
 
-If *junk-allowed* is *false*, an error of *type* **parse-error** is signaled if substring does not consist entirely of the representation of a signed *integer* , possibly surrounded on either side by *whitespace*<sub>1</sub> *characters*. 
+If *junk-allowed* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"parse-error"}><b>parse-error</b></ClLinks> is signaled if substring does not consist entirely of the representation of a signed *integer* , possibly surrounded on either side by <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks>. 
 
 
 
-The first *value* returned is either the *integer* that was parsed, or else **nil** if no syntactically correct *integer* was seen but *junk-allowed* was *true*. 
+The first <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> returned is either the *integer* that was parsed, or else <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if no syntactically correct *integer* was seen but *junk-allowed* was <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 
 
 
 
-The second *value* is either the index into the *string* of the delimiter that terminated the parse, or the upper *bounding index* of the substring if the parse terminated at the end of the substring (as is always the case if *junk-allowed* is *false*). 
+The second <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is either the index into the <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> of the delimiter that terminated the parse, or the upper *bounding index* of the substring if the parse terminated at the end of the substring (as is always the case if *junk-allowed* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>). 
 
 
 
@@ -90,7 +90,7 @@ The second *value* is either the index into the *string* of the delimiter that t
 
 
 
-If *junk-allowed* is *false*, an error is signaled if substring does not consist entirely of the representation of an *integer* , possibly surrounded on either side by *whitespace*<sub>1</sub> characters. 
+If *junk-allowed* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, an error is signaled if substring does not consist entirely of the representation of an *integer* , possibly surrounded on either side by <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> characters. 
 
 
 

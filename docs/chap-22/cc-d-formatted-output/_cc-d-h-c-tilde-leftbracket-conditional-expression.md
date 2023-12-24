@@ -26,11 +26,11 @@ The *arg*th clause is selected, where the first clause is number 0. If a prefix 
 
 
 
-&#126;:[*alternative*&#126;;*consequent*&#126;] selects the *alternative* control string if *arg* is *false*, and selects the *consequent* control string otherwise. 
+&#126;:[*alternative*&#126;;*consequent*&#126;] selects the *alternative* control string if *arg* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, and selects the *consequent* control string otherwise. 
 
 
 
-&#126;@[*consequent*&#126;] tests the argument. If it is *true*, then the argument is not used up by the &#126;[ command but remains as the next one to be processed, and the one clause *consequent* is processed. If the *arg* is *false*, then the argument is used up, and the clause is not processed. The clause therefore should normally use exactly one argument, and may expect it to be *non-nil*. For example: 
+&#126;@[*consequent*&#126;] tests the argument. If it is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, then the argument is not used up by the &#126;[ command but remains as the next one to be processed, and the one clause *consequent* is processed. If the *arg* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, then the argument is used up, and the clause is not processed. The clause therefore should normally use exactly one argument, and may expect it to be <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>. For example: 
 
 
 
@@ -58,11 +58,11 @@ Note also that
 
 
 
-(format *stream* "...&#126;@[*str*&#126;]..." ...) 
+(format <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> "...&#126;@[*str*&#126;]..." ...) 
 
 
 
-*≡* (format *stream* "...&#126;:[&#126;;&#126;:\**str*&#126;]..." ...) 
+*≡* (format <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> "...&#126;:[&#126;;&#126;:\**str*&#126;]..." ...) 
 
 
 

@@ -1,4 +1,4 @@
-**fill-pointer** *Accessor* 
+**fill-pointer** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**fill-pointer** *vector → fill-pointer* 
+<ClLinks styled={true} term={"fill-pointer"}><b>fill-pointer</b></ClLinks> *vector → fill-pointer* 
 
 
 
-**(setf (fill-pointer** *vector***)** *new-fill-pointer***)** 
+**(setf (fill-pointer** <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>**)** *new-fill-pointer***)** 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-*vector*—a *vector* with a *fill pointer* . 
+<ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>—a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* . 
 
 
 
-*fill-pointer*, *new-fill-pointer*—a *valid fill pointer* for the *vector*. 
+*fill-pointer*, *new-fill-pointer*—a *valid fill pointer* for the <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*Accesses* the *fill pointer* of *vector*. 
+*Accesses* the *fill pointer* of <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>. 
 
 
 
@@ -52,7 +52,7 @@ a → #(0 1 4 9 NIL NIL NIL NIL)
 
 
 
-Should signal an error of *type* **type-error** if *vector* is not a *vector* with a *fill pointer* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> is not a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* . 
 
 
 
@@ -68,7 +68,7 @@ Should signal an error of *type* **type-error** if *vector* is not a *vector* wi
 
 
 
-**make-array**, **length** 
+<ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks styled={true} term={"length"}><b>length</b></ClLinks> 
 
 
 
@@ -76,7 +76,7 @@ Should signal an error of *type* **type-error** if *vector* is not a *vector* wi
 
 
 
-There is no *operator* that will remove a *vector* ’s *fill pointer* . 
+There is no <ClLinks styled={true} term={"operator"}><i>operator</i></ClLinks> that will remove a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> ’s *fill pointer* . 
 
 
 

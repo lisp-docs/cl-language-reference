@@ -1,4 +1,4 @@
-**read-delimited-list** *Function* 
+**read-delimited-list** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**read-delimited-list** *char* &amp;optional *input-stream recursive-p → list* 
+<ClLinks styled={true} term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks> *char* &amp;optional *input-stream recursive-p → list* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*char*—a *character* . 
+*char*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -22,19 +22,15 @@
 
 
 
-*recursive-p*—a *generalized boolean*. The default is *false*. 
+*recursive-p*—a *generalized boolean*. The default is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
-*list*—a *list* of the *objects* read. 
-
-
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> read. 
 
 
 
 
-
- 
 
 
 
@@ -42,7 +38,11 @@
 
 
 
-**read-delimited-list** 
+ 
+
+
+
+<ClLinks styled={true} term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks> 
 
 
 
@@ -50,23 +50,23 @@
 
 
 
-**read-delimited-list** reads *objects* from *input-stream* until the next character after an *object*’s representation (ignoring *whitespace*<sub>2</sub> characters and comments) is *char*. 
+<ClLinks styled={true} term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks> reads <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> from *input-stream* until the next character after an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>’s representation (ignoring <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> characters and comments) is *char*. 
 
 
 
-**read-delimited-list** looks ahead at each step for the next non-*whitespace*<sub>2</sub> *character* and peeks at it as if with **peek-char**. If it is *char*, then the *character* is consumed and the *list* of *objects* is returned. If it is a *constituent* or *escape character* , then **read** is used to read an *object*, which is added to the end of the *list*. If it is a *macro character* , its *reader macro function* is called; if the function returns a *value*, that *value* is added to the *list*. The peek-ahead process is then repeated. 
+<ClLinks styled={true} term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks> looks ahead at each step for the next non-<ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> and peeks at it as if with <ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks>. If it is *char*, then the <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is consumed and the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> is returned. If it is a <ClLinks styled={true} term={"constituent"}><i>constituent</i></ClLinks> or *escape character* , then <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> is used to read an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>, which is added to the end of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. If it is a *macro character* , its *reader macro function* is called; if the function returns a <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>, that <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is added to the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. The peek-ahead process is then repeated. 
 
 
 
-If *recursive-p* is *true*, this call is expected to be embedded in a higher-level call to **read** or a similar function. 
+If *recursive-p* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, this call is expected to be embedded in a higher-level call to <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> or a similar function. 
 
 
 
-It is an error to reach end-of-file during the operation of **read-delimited-list**. 
+It is an error to reach end-of-file during the operation of <ClLinks styled={true} term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks>. 
 
 
 
-The consequences are undefined if *char* has a *syntax type* of *whitespace*<sub>2</sub> in the *current readtable*. 
+The consequences are undefined if *char* has a *syntax type* of <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> in the *current readtable*. 
 
 **Examples:**
 ```lisp
@@ -99,7 +99,7 @@ This can be done by specifying a macro-character definition for #\&#123; that do
 
 
 
-**\*standard-input\***, **\*readtable\***, **\*terminal-io\***. 
+**\*standard-input\***, <ClLinks styled={true} term={"readtable"}><b>\*readtable\*</b></ClLinks>, <ClLinks styled={true} term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
 
 
 
@@ -107,7 +107,7 @@ This can be done by specifying a macro-character definition for #\&#123; that do
 
 
 
-**read**, **peek-char**, **read-char**, **unread-char**. 
+<ClLinks styled={true} term={"read"}><b>read</b></ClLinks>, <ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks>, <ClLinks styled={true} term={"read-char"}><b>read-char</b></ClLinks>, <ClLinks styled={true} term={"unread-char"}><b>unread-char</b></ClLinks>. 
 
 
 
@@ -115,7 +115,7 @@ This can be done by specifying a macro-character definition for #\&#123; that do
 
 
 
-**read-delimited-list** is intended for use in implementing *reader macros*. Usually it is desirable for *char* to be a *terminating macro character* so that it can be used to delimit tokens; however, **read-delimited-list** makes no attempt to alter the syntax specified for *char* by the current readtable. The caller must make any necessary changes to the readtable syntax explicitly. 
+<ClLinks styled={true} term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks> is intended for use in implementing *reader macros*. Usually it is desirable for *char* to be a *terminating macro character* so that it can be used to delimit tokens; however, <ClLinks styled={true} term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks> makes no attempt to alter the syntax specified for *char* by the current readtable. The caller must make any necessary changes to the readtable syntax explicitly. 
 
 
 

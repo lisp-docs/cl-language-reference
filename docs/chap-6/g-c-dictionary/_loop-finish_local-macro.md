@@ -6,7 +6,7 @@
 
 
 
-**loop-finish** *⟨no arguments⟩ →* 
+<ClLinks styled={true} term={"loop-finish"}><b>loop-finish</b></ClLinks> *⟨no arguments⟩ →* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The **loop-finish** *macro* can be used lexically within an extended **loop** *form* to terminate that *form* “normally.” That is, it transfers control to the loop epilogue of the lexically innermost extended **loop** *form*. This permits execution of any **finally** clause (for effect) and the return of any accumulated result. 
+The <ClLinks styled={true} term={"loop-finish"}><b>loop-finish</b></ClLinks> <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> can be used lexically within an extended <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> to terminate that <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> “normally.” That is, it transfers control to the loop epilogue of the lexically innermost extended <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. This permits execution of any **finally** clause (for effect) and the return of any accumulated result. 
 
 
 
@@ -74,7 +74,7 @@ Transfers control.
 
 
 
-Whether or not **loop-finish** is *fbound* in the *global environment* is *implementation-dependent*; however, the restrictions on redefinition and *shadowing* of **loop-finish** are the same as for *symbols* in the COMMON-LISP *package* which are *fbound* in the *global environment*. The consequences of attempting to use **loop-finish** outside of **loop** are undefined. 
+Whether or not <ClLinks styled={true} term={"loop-finish"}><b>loop-finish</b></ClLinks> is <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks> in the *global environment* is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>; however, the restrictions on redefinition and *shadowing* of <ClLinks styled={true} term={"loop-finish"}><b>loop-finish</b></ClLinks> are the same as for <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> in the COMMON-LISP <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> which are <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks> in the *global environment*. The consequences of attempting to use <ClLinks styled={true} term={"loop-finish"}><b>loop-finish</b></ClLinks> outside of <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> are undefined. 
 
 
 
@@ -82,7 +82,7 @@ Whether or not **loop-finish** is *fbound* in the *global environment* is *imple
 
 
 
-**loop**, Section 6.1 (The LOOP Facility) 
+<ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>, Section 6.1 (The LOOP Facility) 
 
 
 

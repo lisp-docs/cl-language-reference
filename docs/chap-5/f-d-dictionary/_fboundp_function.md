@@ -1,4 +1,4 @@
-**fboundp** *Function* 
+**fboundp** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**fboundp** *name → generalized-boolean* 
+<ClLinks styled={true} term={"fboundp"}><b>fboundp</b></ClLinks> *name → generalized-boolean* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*name*—a *function name*. 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a *function name*. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Returns *true* if *name* is *fbound*; otherwise, returns *false*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -65,7 +65,7 @@ Returns *true* if *name* is *fbound*; otherwise, returns *false*.
 
 
 
-Should signal an error of *type* **type-error** if *name* is not a *function name*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is not a *function name*. 
 
 
 
@@ -73,7 +73,7 @@ Should signal an error of *type* **type-error** if *name* is not a *function nam
 
 
 
-**symbol-function**, **fmakunbound**, **fdefinition** 
+<ClLinks styled={true} term={"symbol-function"}><b>symbol-function</b></ClLinks>, <ClLinks styled={true} term={"fmakunbound"}><b>fmakunbound</b></ClLinks>, <ClLinks styled={true} term={"fdefinition"}><b>fdefinition</b></ClLinks> 
 
 
 
@@ -93,11 +93,11 @@ Should signal an error of *type* **type-error** if *name* is not a *function nam
 
 
 
-It is permissible to call **symbol-function** on any *symbol* that is *fbound*. 
+It is permissible to call <ClLinks styled={true} term={"symbol-function"}><b>symbol-function</b></ClLinks> on any <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that is <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks>. 
 
 
 
-**fboundp** is sometimes used to “guard” an access to the *function cell*, as in: (if (fboundp x) (symbol-function x)) 
+<ClLinks styled={true} term={"fboundp"}><b>fboundp</b></ClLinks> is sometimes used to “guard” an access to the *function cell*, as in: (if (fboundp x) (symbol-function x)) 
 
 
 

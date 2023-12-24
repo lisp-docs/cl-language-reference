@@ -1,4 +1,4 @@
-**-** *Function*
+**-** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks>
 
 **Syntax:**
 
@@ -8,19 +8,19 @@
 
 **Arguments and Values:**
 
-*number*, *minuend*, *subtrahend*—a *number* .
+<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>, *minuend*, *subtrahend*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> .
 
-*negation*, *difference*—a *number* .
+*negation*, *difference*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> .
 
 **Description:**
 
-The *function* **-** performs arithmetic subtraction and negation.
+The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"-"}><b>-</b></ClLinks> performs arithmetic subtraction and negation.
 
-If only one *number* is supplied, the negation of that *number* is returned.
+If only one <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is supplied, the negation of that <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is returned.
 
-If more than one *argument* is given, it subtracts all of the *subtrahends* from the *minuend* and returns the result.
+If more than one <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> is given, it subtracts all of the *subtrahends* from the *minuend* and returns the result.
 
-The *function* **-** performs necessary type conversions.
+The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"-"}><b>-</b></ClLinks> performs necessary type conversions.
 
 **Examples:**
 
@@ -37,7 +37,7 @@ The *function* **-** performs necessary type conversions.
 
 **Exceptional Situations:**
 
-Might signal **type-error** if some *argument* is not a *number* . Might signal **arithmetic-error**.
+Might signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if some <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> is not a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
 
 **See Also:**
 

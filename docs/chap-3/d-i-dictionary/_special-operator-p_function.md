@@ -1,4 +1,4 @@
-**special-operator-p** *Function* 
+**special-operator-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**special-operator-p** *symbol ! generalized-boolean* 
+<ClLinks styled={true} term={"special-operator-p"}><b>special-operator-p</b></ClLinks> *symbol ! generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*symbol*—a *symbol*. 
+<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns *true* if *symbol* is a *special operator* ; otherwise, returns *false*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is a *special operator* ; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ Returns *true* if *symbol* is a *special operator* ; otherwise, returns *false*.
 
 
 
-Should signal **type-error** if its argument is not a *symbol*. 
+Should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ Historically, this function was called special-form-p. The name was finally decl
 
 
 
-**constantp** 
+<ClLinks styled={true} term={"constantp"}><b>constantp</b></ClLinks> 
 
 
 

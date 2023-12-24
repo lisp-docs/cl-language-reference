@@ -1,4 +1,4 @@
-**signal** *Function* 
+**signal** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**signal** *datum* &amp;rest *arguments →* **nil** 
+<ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> *datum* &amp;rest *arguments →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*datum*, *arguments*—*designators* for a *condition* of default type **simple-condition**. 
+*datum*, <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>—<ClLinks styled={true} term={"designator"}><i>designators</i></ClLinks> for a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of default type <ClLinks styled={true} term={"simple-condition"}><b>simple-condition</b></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*Signals* the *condition* denoted by the given *datum* and *arguments*. If the *condition* is not handled, **signal** returns **nil**. 
+<ClLinks styled={true} term={"signal"}><i>Signals</i></ClLinks> the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> denoted by the given *datum* and <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>. If the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is not handled, <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -62,7 +62,7 @@ Back to Lisp Toplevel
 
 
 
-The debugger might be entered due to **\*break-on-signals\***. 
+The debugger might be entered due to <ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks>. 
 
 
 
@@ -90,7 +90,7 @@ Existing handler bindings.
 
 
 
-**\*break-on-signals\*** 
+<ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks> 
 
 
 
@@ -98,7 +98,7 @@ Existing handler bindings.
 
 
 
-**\*break-on-signals\***, **error**, **simple-condition**, Section 9.1.4 (Signaling and Handling Conditions) 
+<ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks>, <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"simple-condition"}><b>simple-condition</b></ClLinks>, Section 9.1.4 (Signaling and Handling Conditions) 
 
 
 
@@ -106,7 +106,7 @@ Existing handler bindings.
 
 
 
-If (typep *datum* \*break-on-signals\*) *yields true*, the debugger is entered prior to beginning the signaling process. The **continue** *restart* can be used to continue with the signaling process. This is also true for all other *functions* and *macros* that should, might, or must *signal conditions*. 
+If (typep *datum* \*break-on-signals\*) *yields true*, the debugger is entered prior to beginning the signaling process. The **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> can be used to continue with the signaling process. This is also true for all other <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> and <ClLinks styled={true} term={"macro"}><i>macros</i></ClLinks> that should, might, or must *signal conditions*. 
 
 
 

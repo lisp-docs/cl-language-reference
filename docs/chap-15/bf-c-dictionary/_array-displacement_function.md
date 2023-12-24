@@ -1,4 +1,4 @@
-**array-displacement** *Function* 
+**array-displacement** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**array-displacement** *array → displaced-to, displaced-index-offset* 
+<ClLinks styled={true} term={"array-displacement"}><b>array-displacement</b></ClLinks> *array → displaced-to, displaced-index-offset* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*array*—an *array*. 
+<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
-*displaced-to*—an *array* or **nil**. 
+*displaced-to*—an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*displaced-index-offset*—a non-negative *fixnum*. 
+*displaced-index-offset*—a non-negative <ClLinks styled={true} term={"fixnum"}><i>fixnum</i></ClLinks>. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-If the *array* is a *displaced array*, returns the *values* of the :displaced-to and :displaced-index-offset options for the *array* (see the *functions* **make-array** and **adjust-array**). If the *array* is not a *displaced array*, **nil** and 0 are returned. 
+If the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is a *displaced array*, returns the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of the :displaced-to and :displaced-index-offset options for the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> (see the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> <ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks> and <ClLinks styled={true} term={"adjust-array"}><b>adjust-array</b></ClLinks>). If the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is not a *displaced array*, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> and 0 are returned. 
 
 
 
-If **array-displacement** is called on an *array* for which a *non-nil object* was provided as the :displaced-to *argument* to **make-array** or **adjust-array**, it must return that *object* as its first value. It is *implementation-dependent* whether **array-displacement** returns a *non-nil primary value* for any other *array*. 
+If <ClLinks styled={true} term={"array-displacement"}><b>array-displacement</b></ClLinks> is called on an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> for which a *non-nil object* was provided as the :displaced-to <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> to <ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks> or <ClLinks styled={true} term={"adjust-array"}><b>adjust-array</b></ClLinks>, it must return that <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> as its first value. It is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether <ClLinks styled={true} term={"array-displacement"}><b>array-displacement</b></ClLinks> returns a *non-nil primary value* for any other <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -61,7 +61,7 @@ If **array-displacement** is called on an *array* for which a *non-nil object* w
 
 
 
-Should signal an error of *type* **type-error** if *array* is not an *array*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is not an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -69,7 +69,7 @@ Should signal an error of *type* **type-error** if *array* is not an *array*.
 
 
 
-**make-array** 
+<ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks> 
 
 
 

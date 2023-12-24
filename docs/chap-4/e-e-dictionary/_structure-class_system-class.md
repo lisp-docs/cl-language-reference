@@ -6,7 +6,7 @@
 
 
 
-**structure-class**, **class**, **standard-object**, **t** 
+<ClLinks styled={true} term={"structure-class"}><b>structure-class</b></ClLinks>, <ClLinks styled={true} term={"class"}><b>class</b></ClLinks>, <ClLinks styled={true} term={"standard-object"}><b>standard-object</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,4 +14,4 @@
 
 
 
-All *classes* defined by means of **defstruct** are *instances* of the *class* **structure-class**. 
+All *classes* defined by means of <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> are <ClLinks styled={true} term={"instance"}><i>instances</i></ClLinks> of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"structure-class"}><b>structure-class</b></ClLinks>. 

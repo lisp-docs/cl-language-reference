@@ -2,7 +2,7 @@
 
 
 
-For example, suppose that in *implementation* A, the *features* spice and perq are *present*, but the *feature* lispm is not *present*; in *implementation* B, the feature lispm is *present*, but the *features* spice and perq are not *present*; and in *implementation* C, none of the features spice, *lispm*, or perq are *present*. Figure 24–1 shows some sample *expressions*, and how they would be *read* <sub>2</sub> in these *implementations*. 
+For example, suppose that in <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> A, the <ClLinks styled={true} term={"feature"}><i>features</i></ClLinks> spice and perq are <ClLinks styled={true} term={"present"}><i>present</i></ClLinks>, but the <ClLinks styled={true} term={"feature"}><i>feature</i></ClLinks> lispm is not <ClLinks styled={true} term={"present"}><i>present</i></ClLinks>; in <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> B, the feature lispm is <ClLinks styled={true} term={"present"}><i>present</i></ClLinks>, but the <ClLinks styled={true} term={"feature"}><i>features</i></ClLinks> spice and perq are not <ClLinks styled={true} term={"present"}><i>present</i></ClLinks>; and in <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> C, none of the features spice, *lispm*, or perq are <ClLinks styled={true} term={"present"}><i>present</i></ClLinks>. Figure 24–1 shows some sample <ClLinks styled={true} term={"expression"}><i>expressions</i></ClLinks>, and how they would be <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> <sub>2</sub> in these <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>. 
 
 
 

@@ -1,4 +1,4 @@
-**file-position** *Function* 
+**file-position** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**file-position** *stream → position* 
+<ClLinks styled={true} term={"file-position"}><b>file-position</b></ClLinks> *stream → position* 
 
 
 
-**file-position** *stream position-spec → success-p* 
+<ClLinks styled={true} term={"file-position"}><b>file-position</b></ClLinks> *stream position-spec → success-p* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*stream*—a *stream*. 
+<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*position*—a *file position* or **nil**. 
+*position*—a *file position* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -38,31 +38,27 @@
 
 
 
-Returns or changes the current position within a *stream*. 
+Returns or changes the current position within a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-When *position-spec* is not supplied, **file-position** returns the current *file position* in the *stream*, or **nil** if this cannot be determined. 
+When *position-spec* is not supplied, <ClLinks styled={true} term={"file-position"}><b>file-position</b></ClLinks> returns the current *file position* in the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if this cannot be determined. 
 
 
 
-When *position-spec* is supplied, the *file position* in *stream* is set to that *file position* (if possible). **file-position** returns *true* if the repositioning is performed successfully, or *false* if it is not. 
+When *position-spec* is supplied, the *file position* in <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is set to that *file position* (if possible). <ClLinks styled={true} term={"file-position"}><b>file-position</b></ClLinks> returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the repositioning is performed successfully, or <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> if it is not. 
 
 
 
-An *integer* returned by **file-position** of one argument should be acceptable as *position-spec* for use with the same file. 
+An *integer* returned by <ClLinks styled={true} term={"file-position"}><b>file-position</b></ClLinks> of one argument should be acceptable as *position-spec* for use with the same file. 
 
 
 
-For a character file, performing a single **read-char** or **write-char** operation may cause the file position to be increased by more than 1 because of character-set translations (such as translating between the Common Lisp #\Newline character and an external ASCII carriage-return/line-feed 
-
-
+For a character file, performing a single <ClLinks styled={true} term={"read-char"}><b>read-char</b></ClLinks> or <ClLinks styled={true} term={"write-char"}><b>write-char</b></ClLinks> operation may cause the file position to be increased by more than 1 because of character-set translations (such as translating between the Common Lisp #\Newline character and an external ASCII carriage-return/line-feed 
 
 
 
 
-
- 
 
 
 
@@ -70,11 +66,15 @@ For a character file, performing a single **read-char** or **write-char** operat
 
 
 
-**file-position** 
+ 
 
 
 
-sequence) and other aspects of the implementation. For a binary file, every **read-byte** or **write-byte** operation increases the file position by 1. 
+<ClLinks styled={true} term={"file-position"}><b>file-position</b></ClLinks> 
+
+
+
+sequence) and other aspects of the implementation. For a binary file, every <ClLinks styled={true} term={"read-byte"}><b>read-byte</b></ClLinks> or <ClLinks styled={true} term={"write-byte"}><b>write-byte</b></ClLinks> operation increases the file position by 1. 
 
 
 
@@ -118,7 +118,7 @@ sequence) and other aspects of the implementation. For a binary file, every **re
 
 
 
-When the *position-spec* argument is supplied, the *file position* in the *stream* might be moved. 
+When the *position-spec* argument is supplied, the *file position* in the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> might be moved. 
 
 
 
@@ -126,7 +126,7 @@ When the *position-spec* argument is supplied, the *file position* in the *strea
 
 
 
-The value returned by **file-position** increases monotonically as input or output operations are performed. 
+The value returned by <ClLinks styled={true} term={"file-position"}><b>file-position</b></ClLinks> increases monotonically as input or output operations are performed. 
 
 
 
@@ -154,7 +154,7 @@ If *position-spec* is supplied, but is too large or otherwise inappropriate, an 
 
 
 
-**file-length**, **file-string-length**, **open** 
+<ClLinks styled={true} term={"file-length"}><b>file-length</b></ClLinks>, <ClLinks styled={true} term={"file-string-length"}><b>file-string-length</b></ClLinks>, <ClLinks styled={true} term={"open"}><b>open</b></ClLinks> 
 
 
 
@@ -162,7 +162,7 @@ If *position-spec* is supplied, but is too large or otherwise inappropriate, an 
 
 
 
-Implementations that have character files represented as a sequence of records of bounded size might choose to encode the file position as, for example, ⟨record-number ⟩\*⟨max-record size⟩+⟨character-within-record⟩. This is a valid encoding because it increases monotonically as each character is read or written, though not necessarily by 1 at each step. An *integer* might then be considered “inappropriate” as *position-spec* to **file-position** if, when decoded into record number and character number, it turned out that the supplied record was too short for the specified character number. 
+Implementations that have character files represented as a sequence of records of bounded size might choose to encode the file position as, for example, ⟨record-number ⟩\*⟨max-record size⟩+⟨character-within-record⟩. This is a valid encoding because it increases monotonically as each character is read or written, though not necessarily by 1 at each step. An *integer* might then be considered “inappropriate” as *position-spec* to <ClLinks styled={true} term={"file-position"}><b>file-position</b></ClLinks> if, when decoded into record number and character number, it turned out that the supplied record was too short for the specified character number. 
 
 
 

@@ -1,4 +1,4 @@
-**declare** *Symbol* 
+**declare** <ClLinks styled={true} term={"symbol"}><i>Symbol</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**declare** *\{declaration-specifier\}*\* 
+<ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> *\{declaration-specifier\}*\* 
 
 
 
@@ -22,15 +22,11 @@
 
 
 
-A **declare** *expression*, sometimes called a *declaration*, can occur only at the beginning of the bodies of certain *forms*; that is, it may be preceded only by other **declare** *expressions*, or by a *documentation string* if the context permits. 
+A <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>, sometimes called a <ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>, can occur only at the beginning of the bodies of certain <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>; that is, it may be preceded only by other <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expressions</i></ClLinks>, or by a *documentation string* if the context permits. 
 
 
 
-A **declare** *expression* can occur in a *lambda expression* or in any of the *forms* listed in Figure 3–23. 
-
-
-
- 
+A <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> can occur in a *lambda expression* or in any of the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> listed in Figure 3–23. 
 
 
 
@@ -38,7 +34,11 @@ A **declare** *expression* can occur in a *lambda expression* or in any of the *
 
 
 
-**declare** 
+ 
+
+
+
+<ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> 
 
 
 
@@ -50,15 +50,15 @@ A **declare** *expression* can occur in a *lambda expression* or in any of the *
 
 
 
-A **declare** *expression* can only occur where specified by the syntax of these *forms*. The consequences of attempting to evaluate a **declare** *expression* are undefined. In situations where such *expressions* can appear, explicit checks are made for their presence and they are never actually evaluated; it is for this reason that they are called “**declare** *expressions*” rather than “**declare** *forms*.” 
+A <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> can only occur where specified by the syntax of these <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. The consequences of attempting to evaluate a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> are undefined. In situations where such <ClLinks styled={true} term={"expression"}><i>expressions</i></ClLinks> can appear, explicit checks are made for their presence and they are never actually evaluated; it is for this reason that they are called “<ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expressions</i></ClLinks>” rather than “<ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>.” 
 
 
 
-*Macro forms* cannot expand into declarations; **declare** *expressions* must appear as actual *subexpressions* of the *form* to which they refer. 
+*Macro forms* cannot expand into declarations; <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expressions</i></ClLinks> must appear as actual <ClLinks styled={true} term={"subexpression"}><i>subexpressions</i></ClLinks> of the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> to which they refer. 
 
 
 
-Figure 3–24 shows a list of *declaration identifiers* that can be used with **declare**. 
+Figure 3–24 shows a list of *declaration identifiers* that can be used with <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks>. 
 
 
 
@@ -70,7 +70,7 @@ Figure 3–24 shows a list of *declaration identifiers* that can be used with **
 
 
 
-An implementation is free to support other (*implementation-defined*) *declaration identifiers* as well. 
+An implementation is free to support other (<ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>) *declaration identifiers* as well. 
 
 **Examples:**
 ```lisp
@@ -93,7 +93,7 @@ reference to z in the third call to foo to be a dynamic reference; it does not r
 
 
 
-The consequences of trying to use a **declare** *expression* as a *form* to be *evaluated* are undefined. 
+The consequences of trying to use a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> as a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> to be *evaluated* are undefined. 
 
 
 
@@ -101,7 +101,7 @@ The consequences of trying to use a **declare** *expression* as a *form* to be *
 
 
 
-**proclaim**, Section 4.2.3 (Type Specifiers), **declaration**, **dynamic-extent**, **ftype**, **ignorable**, **ignore**, **inline**, **notinline**, **optimize**, **type** 
+<ClLinks styled={true} term={"proclaim"}><b>proclaim</b></ClLinks>, Section 4.2.3 (Type Specifiers), <ClLinks styled={true} term={"declaration"}><b>declaration</b></ClLinks>, <ClLinks styled={true} term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks>, <ClLinks styled={true} term={"ftype"}><b>ftype</b></ClLinks>, <ClLinks styled={true} term={"ignorable"}><b>ignorable</b></ClLinks>, <ClLinks styled={true} term={"ignore"}><b>ignore</b></ClLinks>, <ClLinks styled={true} term={"inline"}><b>inline</b></ClLinks>, <ClLinks styled={true} term={"notinline"}><b>notinline</b></ClLinks>, <ClLinks styled={true} term={"optimize"}><b>optimize</b></ClLinks>, <ClLinks styled={true} term={"type"}><b>type</b></ClLinks> 
 
 
 

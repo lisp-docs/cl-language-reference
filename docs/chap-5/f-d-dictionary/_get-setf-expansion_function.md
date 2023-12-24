@@ -1,4 +1,4 @@
-**get-setf-expansion** *Function* 
+**get-setf-expansion** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**get-setf-expansion** *place* &amp;optional *environment* 
+<ClLinks styled={true} term={"get-setf-expansion"}><b>get-setf-expansion</b></ClLinks> <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> &amp;optional <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-*place*—a *place*. 
+<ClLinks styled={true} term={"place"}><i>place</i></ClLinks>—a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. 
 
 
 
-*environment*—an *environment object*. 
+<ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>—an *environment object*. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Determines five values constituting the *setf expansion* for *place* in *environment*; see Section 5.1.1.2 (Setf Expansions). 
+Determines five values constituting the *setf expansion* for <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> in <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>; see Section 5.1.1.2 (Setf Expansions). 
 
 
 
@@ -50,7 +50,7 @@ Determines five values constituting the *setf expansion* for *place* in *environ
 
 
 
-If *environment* is not supplied or **nil**, the environment is the *null lexical environment*. 
+If <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> is not supplied or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, the environment is the *null lexical environment*. 
 
 **Examples:**
 ```lisp
@@ -76,7 +76,7 @@ If *environment* is not supplied or **nil**, the environment is the *null lexica
 
 
 
-**defsetf**, **define-setf-expander**, **setf** 
+<ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks>, <ClLinks styled={true} term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>, <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> 
 
 
 
@@ -84,7 +84,7 @@ If *environment* is not supplied or **nil**, the environment is the *null lexica
 
 
 
-Any *compound form* is a valid *place*, since any *compound form* whose *operator f* has no *setf expander* are expanded into a call to (setf *f* ). 
+Any *compound form* is a valid <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, since any *compound form* whose *operator f* has no *setf expander* are expanded into a call to (setf *f* ). 
 
 
 

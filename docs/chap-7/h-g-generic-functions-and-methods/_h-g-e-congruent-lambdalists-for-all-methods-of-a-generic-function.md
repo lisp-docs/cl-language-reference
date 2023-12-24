@@ -30,11 +30,11 @@ These rules define the congruence of a set of *lambda lists*, including the *lam
 
 
 
-4\. If the *generic function lambda list* mentions **&amp;key**, each method must accept all of the keyword names mentioned after **&amp;key**, either by accepting them explicitly, by specifying **&amp;allow-other-keys**, or by specifying **&amp;rest** but not **&amp;key**. Each method can accept additional keyword arguments of its own. The checking of the validity of keyword names is done in the generic function, not in each method. A method is invoked as if the keyword argument pair whose name is :allow-other-keys and whose value is *true* were supplied, though no such argument pair will be passed. 
+4\. If the *generic function lambda list* mentions **&amp;key**, each method must accept all of the keyword names mentioned after **&amp;key**, either by accepting them explicitly, by specifying **&amp;allow-other-keys**, or by specifying **&amp;rest** but not **&amp;key**. Each method can accept additional keyword arguments of its own. The checking of the validity of keyword names is done in the generic function, not in each method. A method is invoked as if the keyword argument pair whose name is :allow-other-keys and whose value is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> were supplied, though no such argument pair will be passed. 
 
 
 
-5\. The use of **&amp;allow-other-keys** need not be consistent across *lambda lists*. If **&amp;allow-other-keys** is mentioned in the *lambda list* of any applicable *method* or of the *generic function*, any keyword arguments may be mentioned in the call to the *generic function*. 
+5\. The use of **&amp;allow-other-keys** need not be consistent across *lambda lists*. If **&amp;allow-other-keys** is mentioned in the *lambda list* of any applicable <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> or of the *generic function*, any keyword arguments may be mentioned in the call to the *generic function*. 
 
 
 

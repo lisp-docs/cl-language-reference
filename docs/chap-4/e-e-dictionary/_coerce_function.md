@@ -1,4 +1,4 @@
-**coerce** *Function* 
+**coerce** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**coerce** *object result-type → result* 
+<ClLinks styled={true} term={"coerce"}><b>coerce</b></ClLinks> *object result-type → result* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*result*—an *object*, of *type result-type* except in situations described in Section 12.1.5.3 (Rule of Canonical Representation for Complex Rationals). 
+*result*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>, of *type result-type* except in situations described in Section 12.1.5.3 (Rule of Canonical Representation for Complex Rationals). 
 
 
 
@@ -30,19 +30,15 @@
 
 
 
-*Coerces* the *object* to *type result-type*. 
+<ClLinks styled={true} term={"coerce"}><i>Coerces</i></ClLinks> the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> to *type result-type*. 
 
 
 
-If *object* is already of *type result-type*, the *object* itself is returned, regardless of whether it would have been possible in general to coerce an *object* of some other *type* to *result-type*. 
+If <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is already of *type result-type*, the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> itself is returned, regardless of whether it would have been possible in general to coerce an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> of some other <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> to *result-type*. 
 
 
 
-Otherwise, the *object* is *coerced* to *type result-type* according to the following rules: 
-
-
-
-
+Otherwise, the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is *coerced* to *type result-type* according to the following rules: 
 
 
 
@@ -50,63 +46,67 @@ Otherwise, the *object* is *coerced* to *type result-type* according to the foll
 
 
 
-**coerce** 
 
 
 
-**sequence** 
+
+<ClLinks styled={true} term={"coerce"}><b>coerce</b></ClLinks> 
 
 
 
-If the *result-type* is a *recognizable subtype* of **list**, and the *object* is a *sequence*, then the *result* is a *list* that has the *same elements* as *object*. 
+<ClLinks styled={true} term={"sequence"}><b>sequence</b></ClLinks> 
 
 
 
-If the *result-type* is a *recognizable subtype* of **vector**, and the *object* is a *sequence*, then the *result* is a *vector* that has the *same elements* as *object*. If *result-type* is a specialized *type*, the *result* has an *actual array element type* that is the result of *upgrading* the element type part of that *specialized type*. If no element type is specified, the element type defaults to **t**. If the *implementation* cannot determine the element type, an error is signaled. 
+If the *result-type* is a *recognizable subtype* of <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>, and the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a *sequence*, then the *result* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that has the *same elements* as <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-**character** 
+If the *result-type* is a *recognizable subtype* of <ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks>, and the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a *sequence*, then the *result* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> that has the *same elements* as <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. If *result-type* is a specialized <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>, the *result* has an *actual array element type* that is the result of *upgrading* the element type part of that *specialized type*. If no element type is specified, the element type defaults to <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>. If the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> cannot determine the element type, an error is signaled. 
 
 
 
-If the *result-type* is **character** and the *object* is a *character designator* , the *result* is the *character* it denotes. 
+<ClLinks styled={true} term={"character"}><b>character</b></ClLinks> 
 
 
 
-**complex** 
+If the *result-type* is <ClLinks styled={true} term={"character"}><b>character</b></ClLinks> and the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a *character designator* , the *result* is the <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> it denotes. 
 
 
 
-If the *result-type* is **complex** and the *object* is a *real*, then the *result* is obtained by constructing a *complex* whose real part is the *object* and whose imaginary part is the result of *coercing* an *integer* zero to the *type* of the *object* (using **coerce**). (If the real part is a *rational*, however, then the result must be represented as a *rational* rather than a *complex* ; see Section 12.1.5.3 (Rule of Canonical Representation for Complex Rationals). So, for example, (coerce 3 ’complex) is permissible, but will return 3, which is not a *complex* .) 
+<ClLinks styled={true} term={"complex"}><b>complex</b></ClLinks> 
 
 
 
-**float** 
+If the *result-type* is <ClLinks styled={true} term={"complex"}><b>complex</b></ClLinks> and the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a *real*, then the *result* is obtained by constructing a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> whose real part is the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> and whose imaginary part is the result of *coercing* an *integer* zero to the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> of the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> (using <ClLinks styled={true} term={"coerce"}><b>coerce</b></ClLinks>). (If the real part is a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks>, however, then the result must be represented as a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> rather than a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> ; see Section 12.1.5.3 (Rule of Canonical Representation for Complex Rationals). So, for example, (coerce 3 ’complex) is permissible, but will return 3, which is not a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> .) 
 
 
 
-If the *result-type* is any of **float**, **short-float**, **single-float**, **double-float**, **long-float**, and the *object* is a *real*, then the *result* is a *float* of *type result-type* which is equal in sign and magnitude to the *object* to whatever degree of representational precision is permitted by that *float* representation. (If the *result-type* is **float** and *object* is not already a *float*, then the *result* is a *single float*.) 
+<ClLinks styled={true} term={"float"}><b>float</b></ClLinks> 
 
 
 
-**function** 
+If the *result-type* is any of <ClLinks styled={true} term={"float"}><b>float</b></ClLinks>, <ClLinks styled={true} term={"short-float"}><b>short-float</b></ClLinks>, <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks styled={true} term={"double-float"}><b>double-float</b></ClLinks>, <ClLinks styled={true} term={"long-float"}><b>long-float</b></ClLinks>, and the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a *real*, then the *result* is a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> of *type result-type* which is equal in sign and magnitude to the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> to whatever degree of representational precision is permitted by that <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> representation. (If the *result-type* is <ClLinks styled={true} term={"float"}><b>float</b></ClLinks> and <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is not already a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>, then the *result* is a *single float*.) 
 
 
 
-If the *result-type* is **function**, and *object* is any *function name* that is *fbound* but that is globally defined neither as a *macro name* nor as a *special operator* , then the *result* is the *functional value* of *object*. 
+<ClLinks styled={true} term={"function"}><b>function</b></ClLinks> 
 
 
 
-If the *result-type* is **function**, and *object* is a *lambda expression*, then the *result* is a *closure* of *object* in the *null lexical environment*. 
+If the *result-type* is <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>, and <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is any *function name* that is <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks> but that is globally defined neither as a *macro name* nor as a *special operator* , then the *result* is the *functional value* of <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-**t** 
+If the *result-type* is <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>, and <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a *lambda expression*, then the *result* is a <ClLinks styled={true} term={"closure"}><i>closure</i></ClLinks> of <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> in the *null lexical environment*. 
 
 
 
-Any *object* can be *coerced* to an *object* of *type* **t**. In this case, the *object* is simply returned. 
+<ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+
+
+
+Any <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> can be *coerced* to an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>. In this case, the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is simply returned. 
 
 **Examples:**
 ```lisp
@@ -135,19 +135,19 @@ All the following *forms* should signal an error:
 
 
 
-If a coercion is not possible, an error of *type* **type-error** is signaled. 
+If a coercion is not possible, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
 
 
 
-(coerce x ’nil) always signals an error of *type* **type-error**. 
+(coerce x ’nil) always signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks>. 
 
 
 
-An error of *type* **error** is signaled if the *result-type* is **function** but *object* is a *symbol* that is not *fbound* or if the *symbol* names a *macro* or a *special operator* . 
+An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> is signaled if the *result-type* is <ClLinks styled={true} term={"function"}><b>function</b></ClLinks> but <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that is not <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks> or if the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> names a <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> or a *special operator* . 
 
 
 
-An error of *type* **type-error** should be signaled if *result-type* specifies the number of elements and *object* is of a different length. 
+An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> should be signaled if *result-type* specifies the number of elements and <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of a different length. 
 
 
 
@@ -155,7 +155,7 @@ An error of *type* **type-error** should be signaled if *result-type* specifies 
 
 
 
-**rational**, **floor**, **char-code**, **char-int** 
+<ClLinks styled={true} term={"rational"}><b>rational</b></ClLinks>, <ClLinks styled={true} term={"floor"}><b>floor</b></ClLinks>, <ClLinks styled={true} term={"char-code"}><b>char-code</b></ClLinks>, <ClLinks styled={true} term={"char-int"}><b>char-int</b></ClLinks> 
 
 
 
@@ -163,7 +163,7 @@ An error of *type* **type-error** should be signaled if *result-type* specifies 
 
 
 
-Coercions from *floats* to *rationals* and from *ratios* to *integers* are not provided because of rounding problems. 
+Coercions from <ClLinks styled={true} term={"float"}><i>floats</i></ClLinks> to <ClLinks styled={true} term={"rational"}><i>rationals</i></ClLinks> and from <ClLinks styled={true} term={"ratio"}><i>ratios</i></ClLinks> to *integers* are not provided because of rounding problems. 
 
 
 
@@ -175,7 +175,7 @@ Coercions from *floats* to *rationals* and from *ratios* to *integers* are not p
 
 
 
-**deftype** 
+<ClLinks styled={true} term={"deftype"}><b>deftype</b></ClLinks> 
 
 
 

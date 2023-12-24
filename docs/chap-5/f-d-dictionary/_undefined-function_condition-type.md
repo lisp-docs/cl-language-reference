@@ -6,7 +6,7 @@
 
 
 
-**undefined-function**, **cell-error**, **error**, **serious-condition**, **condition**, **t** 
+<ClLinks styled={true} term={"undefined-function"}><b>undefined-function</b></ClLinks>, <ClLinks styled={true} term={"cell-error"}><b>cell-error</b></ClLinks>, <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"serious-condition"}><b>serious-condition</b></ClLinks>, <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-The *type* **undefined-function** consists of *error conditions* that represent attempts to *read* the definition of an *undefined function*. 
+The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"undefined-function"}><b>undefined-function</b></ClLinks> consists of *error conditions* that represent attempts to <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> the definition of an *undefined function*. 
 
 
 
-The name of the cell (see **cell-error**) is the *function name* which was *funbound*. 
+The name of the cell (see <ClLinks styled={true} term={"cell-error"}><b>cell-error</b></ClLinks>) is the *function name* which was <ClLinks styled={true} term={"funbound"}><i>funbound</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@ The name of the cell (see **cell-error**) is the *function name* which was *funb
 
 
 
-**cell-error-name** 
+<ClLinks styled={true} term={"cell-error-name"}><b>cell-error-name</b></ClLinks> 
 
 
 

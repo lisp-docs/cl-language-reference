@@ -1,4 +1,4 @@
-**deposit-field** *Function* 
+**deposit-field** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**deposit-field** *newbyte bytespec integer → result-integer* 
+<ClLinks styled={true} term={"deposit-field"}><b>deposit-field</b></ClLinks> *newbyte bytespec integer → result-integer* 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Replaces a field of bits within *integer*; specifically, returns an *integer* that contains the bits of *newbyte* within the *byte* specified by *bytespec*, and elsewhere contains the bits of *integer*. 
+Replaces a field of bits within *integer*; specifically, returns an *integer* that contains the bits of *newbyte* within the <ClLinks styled={true} term={"byte"}><i>byte</i></ClLinks> specified by *bytespec*, and elsewhere contains the bits of *integer*. 
 
 
 
@@ -50,7 +50,7 @@ Replaces a field of bits within *integer*; specifically, returns an *integer* th
 
 
 
-**byte**, **dpb** 
+<ClLinks styled={true} term={"byte"}><b>byte</b></ClLinks>, <ClLinks styled={true} term={"dpb"}><b>dpb</b></ClLinks> 
 
 
 
@@ -86,7 +86,7 @@ Replaces a field of bits within *integer*; specifically, returns an *integer* th
 
 
 
-**deposit-field** is to **mask-field** as **dpb** is to **ldb**. 
+<ClLinks styled={true} term={"deposit-field"}><b>deposit-field</b></ClLinks> is to <ClLinks styled={true} term={"mask-field"}><b>mask-field</b></ClLinks> as <ClLinks styled={true} term={"dpb"}><b>dpb</b></ClLinks> is to <ClLinks styled={true} term={"ldb"}><b>ldb</b></ClLinks>. 
 
 
 

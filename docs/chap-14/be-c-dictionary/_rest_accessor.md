@@ -1,4 +1,4 @@
-**rest** *Accessor* 
+**rest** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,10 +6,11 @@
 
 
 
-**rest** *list → tail* 
+<ClLinks styled={true} term={"rest"}><b>rest</b></ClLinks> *list → tail* 
 
 
 
+<!-- **(setf (rest** *list<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> *new-tail***)**  -->
 **(setf (rest** *list***)** *new-tail***)** 
 
 
@@ -18,11 +19,11 @@
 
 
 
-*list*—a *list*, which might be a *dotted list* or a *circular list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, which might be a *dotted list* or a *circular list*. 
 
 
 
-*tail*—an *object*. 
+<ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -30,15 +31,15 @@
 
 
 
-**rest** performs the same operation as **cdr**, but mnemonically complements **first**. Specifically, 
+<ClLinks styled={true} term={"rest"}><b>rest</b></ClLinks> performs the same operation as <ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks>, but mnemonically complements <ClLinks styled={true} term={"first"}><b>first</b></ClLinks>. Specifically, 
 
 
 
-(rest *list*) *≡* (cdr *list*) 
+(rest <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) *≡* (cdr <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) 
 
 
 
-(setf (rest *list*) *new-tail*) *≡* (setf (cdr *list*) *new-tail*) 
+(setf (rest <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) *new-tail*) *≡* (setf (cdr <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) *new-tail*) 
 
 
 
@@ -60,7 +61,7 @@
 
 
 
-**cdr**, **nthcdr** 
+<ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks>, <ClLinks styled={true} term={"nthcdr"}><b>nthcdr</b></ClLinks> 
 
 
 
@@ -68,7 +69,7 @@
 
 
 
-**rest** is often preferred stylistically over **cdr** when the argument is to being subjectively viewed as a *list* rather than as a *cons*. 
+<ClLinks styled={true} term={"rest"}><b>rest</b></ClLinks> is often preferred stylistically over <ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks> when the argument is to being subjectively viewed as a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> rather than as a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
 
 
 

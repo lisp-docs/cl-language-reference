@@ -1,4 +1,4 @@
-**array-row-major-index** *Function* 
+**array-row-major-index** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**array-row-major-index** *array* &amp;rest *subscripts → index* 
+<ClLinks styled={true} term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks> <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → index* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*array*—an *array*. 
+<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
-*subscripts*—a *list* of *valid array indices* for the *array*. 
+*subscripts*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *valid array indices* for the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
-*index*—a *valid array row-major index* for the *array*. 
+*index*—a *valid array row-major index* for the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-Computes the position according to the row-major ordering of *array* for the element that is specified by *subscripts*, and returns the offset of the element in the computed position from the beginning of *array*. 
+Computes the position according to the row-major ordering of <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> for the element that is specified by *subscripts*, and returns the offset of the element in the computed position from the beginning of <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
-For a one-dimensional *array*, the result of **array-row-major-index** equals *subscript*. **array-row-major-index** ignores *fill pointers*. 
+For a one-dimensional <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>, the result of <ClLinks styled={true} term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks> equals *subscript*. <ClLinks styled={true} term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks> ignores *fill pointers*. 
 
 
 
@@ -67,7 +67,7 @@ For a one-dimensional *array*, the result of **array-row-major-index** equals *s
 
 
 
-A possible definition of **array-row-major-index**, with no error-checking, is 
+A possible definition of <ClLinks styled={true} term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks>, with no error-checking, is 
 
 
 

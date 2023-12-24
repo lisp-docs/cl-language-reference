@@ -1,4 +1,4 @@
-**cell-error-name** *Function* 
+**cell-error-name** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**cell-error-name** *condition → name* 
+<ClLinks styled={true} term={"cell-error-name"}><b>cell-error-name</b></ClLinks> *condition → name* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*condition*—a *condition* of *type* **cell-error**. 
+<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"cell-error"}><b>cell-error</b></ClLinks>. 
 
 
 
-*name*—an *object*. 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Returns the *name* of the offending cell involved in the *situation* represented by *condition*. 
+Returns the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the offending cell involved in the <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks> represented by <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
-The nature of the result depends on the specific *type* of *condition*. For example, if the *condition* is of *type* **unbound-variable**, the result is the *name* of the *unbound variable* which was being *accessed*, if the *condition* is of *type* **undefined-function**, this is the *name* of the *undefined function* which was being *accessed*, and if the *condition* is of *type* **unbound-slot**, this is the *name* of the *slot* which was being *accessed*. 
+The nature of the result depends on the specific <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> of <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. For example, if the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"unbound-variable"}><b>unbound-variable</b></ClLinks>, the result is the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the *unbound variable* which was being *accessed*, if the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"undefined-function"}><b>undefined-function</b></ClLinks>, this is the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the *undefined function* which was being *accessed*, and if the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"unbound-slot"}><b>unbound-slot</b></ClLinks>, this is the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> which was being *accessed*. 
 
 
 
@@ -38,7 +38,7 @@ The nature of the result depends on the specific *type* of *condition*. For exam
 
 
 
-**cell-error**, **unbound-slot**, **unbound-variable**, **undefined-function**, Section 9.1 (Condition System Concepts) 
+<ClLinks styled={true} term={"cell-error"}><b>cell-error</b></ClLinks>, <ClLinks styled={true} term={"unbound-slot"}><b>unbound-slot</b></ClLinks>, <ClLinks styled={true} term={"unbound-variable"}><b>unbound-variable</b></ClLinks>, <ClLinks styled={true} term={"undefined-function"}><b>undefined-function</b></ClLinks>, Section 9.1 (Condition System Concepts) 
 
 
 

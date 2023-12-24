@@ -6,7 +6,7 @@
 
 
 
-**block** *name form*\* → \{result\}\* 
+<ClLinks styled={true} term={"block"}><b>block</b></ClLinks> *name form*\* → \{result\}\* 
 
 
 
@@ -26,15 +26,15 @@ Data and Control
 
 
 
-*name*—a *symbol*. 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*form*—a *form*. 
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*results*—the *values* of the *forms* if a *normal return* occurs, or else, if an *explicit return* occurs, the *values* that were transferred. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> if a *normal return* occurs, or else, if an *explicit return* occurs, the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> that were transferred. 
 
 
 
@@ -42,19 +42,19 @@ Data and Control
 
 
 
-**block** *establishes* a *block* named *name* and then evaluates *forms* as an *implicit progn*. 
+<ClLinks styled={true} term={"block"}><b>block</b></ClLinks> *establishes* a <ClLinks styled={true} term={"block"}><i>block</i></ClLinks> named <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> and then evaluates <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> as an *implicit progn*. 
 
 
 
-The *special operators* **block** and **return-from** work together to provide a structured, lexical, non-local exit facility. At any point lexically contained within *forms*, **return-from** can be used with the given *name* to return control and values from the **block** *form*, except when an intervening *block* with the same name has been *established*, in which case the outer *block* is shadowed by the inner one. 
+The *special operators* <ClLinks styled={true} term={"block"}><b>block</b></ClLinks> and <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks> work together to provide a structured, lexical, non-local exit facility. At any point lexically contained within <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>, <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks> can be used with the given <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> to return control and values from the <ClLinks styled={true} term={"block"}><b>block</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, except when an intervening <ClLinks styled={true} term={"block"}><i>block</i></ClLinks> with the same name has been *established*, in which case the outer <ClLinks styled={true} term={"block"}><i>block</i></ClLinks> is shadowed by the inner one. 
 
 
 
-The *block* named *name* has *lexical scope* and *dynamic extent*. 
+The <ClLinks styled={true} term={"block"}><i>block</i></ClLinks> named <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> has *lexical scope* and *dynamic extent*. 
 
 
 
-Once established, a *block* may only be exited once, whether by *normal return* or *explicit return*. 
+Once established, a <ClLinks styled={true} term={"block"}><i>block</i></ClLinks> may only be exited once, whether by *normal return* or *explicit return*. 
 
 **Examples:**
 ```lisp
@@ -78,7 +78,7 @@ Once established, a *block* may only be exited once, whether by *normal return* 
 
 
 
-**return**, **return-from**, Section 3.1 (Evaluation) 
+<ClLinks styled={true} term={"return"}><b>return</b></ClLinks>, <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks>, Section 3.1 (Evaluation) 
 
 
 
@@ -98,7 +98,7 @@ Once established, a *block* may only be exited once, whether by *normal return* 
 
 
 
-**catch** 
+<ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> 
 
 
 

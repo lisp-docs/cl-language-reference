@@ -1,4 +1,4 @@
-**incf, decf** *Macro* 
+**incf, decf** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**incf** *place* [*delta-form*] → new-value 
+<ClLinks styled={true} term={"incf"}><b>incf</b></ClLinks> <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> [*delta-form*] → new-value 
 
 
 
-**decf** *place* [*delta-form*] → new-value 
+<ClLinks styled={true} term={"decf"}><b>decf</b></ClLinks> <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> [*delta-form*] → new-value 
 
 
 
@@ -18,19 +18,19 @@
 
 
 
-*place*—a *place*. 
+<ClLinks styled={true} term={"place"}><i>place</i></ClLinks>—a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. 
 
 
 
-*delta-form*—a *form*; evaluated to produce a *delta*. The default is 1. 
+*delta-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated to produce a *delta*. The default is 1. 
 
 
 
-*delta*—a *number* . 
+*delta*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
 
 
 
-*new-value*—a *number* . 
+*new-value*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -50,11 +50,11 @@
 
 
 
-**incf** and **decf** are used for incrementing and decrementing the *value* of *place*, respectively. 
+<ClLinks styled={true} term={"incf"}><b>incf</b></ClLinks> and <ClLinks styled={true} term={"decf"}><b>decf</b></ClLinks> are used for incrementing and decrementing the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, respectively. 
 
 
 
-The *delta* is added to (in the case of **incf**) or subtracted from (in the case of **decf**) the number in *place* and the result is stored in *place*. 
+The *delta* is added to (in the case of <ClLinks styled={true} term={"incf"}><b>incf</b></ClLinks>) or subtracted from (in the case of <ClLinks styled={true} term={"decf"}><b>decf</b></ClLinks>) the number in <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> and the result is stored in <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. 
 
 
 
@@ -62,7 +62,7 @@ Any necessary type conversions are performed automatically.
 
 
 
-For information about the *evaluation* of *subforms* of *places*, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
+For information about the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks styled={true} term={"subform"}><i>subforms</i></ClLinks> of <ClLinks styled={true} term={"place"}><i>places</i></ClLinks>, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
 
 
 
@@ -85,7 +85,7 @@ n → 1.5
 
 
 
-*Place* is modified. 
+<ClLinks styled={true} term={"place"}><i>Place</i></ClLinks> is modified. 
 
 
 
@@ -93,7 +93,7 @@ n → 1.5
 
 
 
-**+**, **-**, **1+**, **1-**, **setf** 
+<ClLinks styled={true} term={"+"}><b>+</b></ClLinks>, <ClLinks styled={true} term={"-"}><b>-</b></ClLinks>, <ClLinks styled={true} term={"1+"}><b>1+</b></ClLinks>, **1-**, <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> 
 
 
 

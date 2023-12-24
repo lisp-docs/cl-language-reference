@@ -2,7 +2,7 @@
 
 
 
-The next *arg* is printed as a *float* in fixed-format notation. 
+The next *arg* is printed as a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> in fixed-format notation. 
 
 
 
@@ -22,19 +22,15 @@ are present or omitted according to whether they were present or omitted in the 
 
 
 
-If *arg* is a *rational* number, then it is coerced to be a *single float* and then printed. Alternatively, an implementation is permitted to process a *rational* number by any other method that has essentially the same behavior but avoids loss of precision or overflow because of the coercion. 
+If *arg* is a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> number, then it is coerced to be a *single float* and then printed. Alternatively, an implementation is permitted to process a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> number by any other method that has essentially the same behavior but avoids loss of precision or overflow because of the coercion. 
 
 
 
-If *arg* is a *complex* number or some non-numeric *object*, then it is printed using the format directive &#126;*w*D, thereby printing it in decimal radix and a minimum field width of *w*. 
-
-
+If *arg* is a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> number or some non-numeric <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>, then it is printed using the format directive &#126;*w*D, thereby printing it in decimal radix and a minimum field width of *w*. 
 
 
 
 
-
- 
 
 
 
@@ -42,7 +38,11 @@ If *arg* is a *complex* number or some non-numeric *object*, then it is printed 
 
 
 
-&#126;$ binds **\*print-escape\*** to *false* and **\*print-readably\*** to *false*. 
+ 
+
+
+
+&#126;$ binds <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> to <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> and <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> to <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 

@@ -1,4 +1,4 @@
-**sqrt, isqrt** *Function* 
+**sqrt, isqrt** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**sqrt** *number → root* 
+<ClLinks styled={true} term={"sqrt"}><b>sqrt</b></ClLinks> *number → root* 
 
 
 
-**isqrt** *natural → natural-root* 
+<ClLinks styled={true} term={"isqrt"}><b>isqrt</b></ClLinks> *natural → natural-root* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*number*, *root*—a *number* . 
+<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>, *root*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -30,19 +30,19 @@
 
 
 
-**sqrt** and **isqrt** compute square roots. 
+<ClLinks styled={true} term={"sqrt"}><b>sqrt</b></ClLinks> and <ClLinks styled={true} term={"isqrt"}><b>isqrt</b></ClLinks> compute square roots. 
 
 
 
-**sqrt** returns the *principal* square root of *number*. If the *number* is not a *complex* but is negative, then the result is a *complex* . 
+<ClLinks styled={true} term={"sqrt"}><b>sqrt</b></ClLinks> returns the <ClLinks styled={true} term={"principal"}><i>principal</i></ClLinks> square root of <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>. If the <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is not a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> but is negative, then the result is a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> . 
 
 
 
-**isqrt** returns the greatest *integer* less than or equal to the exact positive square root of *natural*. 
+<ClLinks styled={true} term={"isqrt"}><b>isqrt</b></ClLinks> returns the greatest *integer* less than or equal to the exact positive square root of *natural*. 
 
 
 
-If *number* is a positive *rational*, it is *implementation-dependent* whether *root* is a *rational* or a *float*. If *number* is a negative *rational*, it is *implementation-dependent* whether *root* is a *complex rational* or a *complex float*. 
+If <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is a positive <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks>, it is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether *root* is a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> or a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>. If <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is a negative <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks>, it is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether *root* is a *complex rational* or a *complex float*. 
 
 
 
@@ -83,11 +83,11 @@ The branch cut for square root lies along the negative real axis, continuous wit
 
 
 
-The *function* **sqrt** should signal **type-error** if its argument is not a *number* . 
+The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"sqrt"}><b>sqrt</b></ClLinks> should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
 
 
 
-The *function* **isqrt** should signal **type-error** if its argument is not a non-negative *integer* . The functions **sqrt** and **isqrt** might signal **arithmetic-error**. 
+The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"isqrt"}><b>isqrt</b></ClLinks> should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a non-negative *integer* . The functions <ClLinks styled={true} term={"sqrt"}><b>sqrt</b></ClLinks> and <ClLinks styled={true} term={"isqrt"}><b>isqrt</b></ClLinks> might signal <ClLinks styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>. 
 
 
 
@@ -95,7 +95,7 @@ The *function* **isqrt** should signal **type-error** if its argument is not a n
 
 
 
-**exp**, **log**, Section 12.1.3.3 (Rule of Float Substitutability) 
+<ClLinks styled={true} term={"exp"}><b>exp</b></ClLinks>, <ClLinks styled={true} term={"log"}><b>log</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability) 
 
 
 

@@ -1,4 +1,4 @@
-**listp** *Function* 
+**listp** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**listp** *object → generalized-boolean* 
+<ClLinks styled={true} term={"listp"}><b>listp</b></ClLinks> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns *true* if *object* is of *type* **list**; otherwise, returns *false*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -43,7 +43,7 @@ Returns *true* if *object* is of *type* **list**; otherwise, returns *false*.
 
 
 
-**consp** 
+<ClLinks styled={true} term={"consp"}><b>consp</b></ClLinks> 
 
 
 
@@ -51,11 +51,11 @@ Returns *true* if *object* is of *type* **list**; otherwise, returns *false*.
 
 
 
-If *object* is a *cons*, **listp** does not check whether *object* is a *proper list*; it returns *true* for any kind of *list*. 
+If <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>, <ClLinks styled={true} term={"listp"}><b>listp</b></ClLinks> does not check whether <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a *proper list*; it returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> for any kind of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
-(listp *object*) *≡* (typep *object* ’list) *≡* (typep *object* ’(or cons null)) 
+(listp <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’list) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’(or cons null)) 
 
 
 

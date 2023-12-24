@@ -1,4 +1,4 @@
-*∗***modules***∗ Variable* 
+*∗<ClLinks styled={true} term={"modules"}><b>*modules*</b></ClLinks>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-a *list* of *strings*. 
+a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks>. 
 
 
 
@@ -14,7 +14,7 @@ a *list* of *strings*.
 
 
 
-*implementation-dependent*. 
+<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ a *list* of *strings*.
 
 
 
-The *value* of **\*modules\*** is a list of names of the modules that have been loaded into the current *Lisp image*. 
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"modules"}><b>\*modules\*</b></ClLinks> is a list of names of the modules that have been loaded into the current *Lisp image*. 
 
 
 
@@ -30,7 +30,7 @@ The *value* of **\*modules\*** is a list of names of the modules that have been 
 
 
 
-**provide** 
+<ClLinks styled={true} term={"provide"}><b>provide</b></ClLinks> 
 
 
 
@@ -38,7 +38,7 @@ The *value* of **\*modules\*** is a list of names of the modules that have been 
 
 
 
-**provide**, **require** 
+<ClLinks styled={true} term={"provide"}><b>provide</b></ClLinks>, <ClLinks styled={true} term={"require"}><b>require</b></ClLinks> 
 
 
 
@@ -46,7 +46,7 @@ The *value* of **\*modules\*** is a list of names of the modules that have been 
 
 
 
-The variable **\*modules\*** is deprecated. 
+The variable <ClLinks styled={true} term={"modules"}><b>\*modules\*</b></ClLinks> is deprecated. 
 
 
 

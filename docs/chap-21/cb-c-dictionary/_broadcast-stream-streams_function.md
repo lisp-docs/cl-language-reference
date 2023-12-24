@@ -1,4 +1,4 @@
-**broadcast-stream-streams** *Function* 
+**broadcast-stream-streams** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**broadcast-stream-streams** *broadcast-stream → streams* 
+<ClLinks styled={true} term={"broadcast-stream-streams"}><b>broadcast-stream-streams</b></ClLinks> *broadcast-stream → streams* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*streams*—a *list* of *streams*. 
+<ClLinks styled={true} term={"stream"}><i>streams</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"stream"}><i>streams</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a *list* of output *streams* that constitute all the *streams* to which the *broadcast-stream* is broadcasting. 
+Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of output <ClLinks styled={true} term={"stream"}><i>streams</i></ClLinks> that constitute all the <ClLinks styled={true} term={"stream"}><i>streams</i></ClLinks> to which the *broadcast-stream* is broadcasting. 
 
 
 

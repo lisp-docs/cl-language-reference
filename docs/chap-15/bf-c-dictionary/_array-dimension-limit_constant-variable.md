@@ -6,7 +6,7 @@
 
 
 
-A positive *fixnum*, the exact magnitude of which is *implementation-dependent*, but which is not less than 1024. 
+A positive <ClLinks styled={true} term={"fixnum"}><i>fixnum</i></ClLinks>, the exact magnitude of which is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but which is not less than 1024. 
 
 
 
@@ -14,7 +14,7 @@ A positive *fixnum*, the exact magnitude of which is *implementation-dependent*,
 
 
 
-The upper exclusive bound on each individual *dimension* of an *array*. 
+The upper exclusive bound on each individual <ClLinks styled={true} term={"dimension"}><i>dimension</i></ClLinks> of an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ The upper exclusive bound on each individual *dimension* of an *array*.
 
 
 
-**make-array** 
+<ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks> 
 
 
 

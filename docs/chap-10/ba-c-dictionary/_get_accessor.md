@@ -1,4 +1,4 @@
-**get** *Accessor* 
+**get** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,10 +6,11 @@
 
 
 
-**get** *symbol indicator* &amp;optional *default → value* 
+<ClLinks styled={true} term={"get"}><b>get</b></ClLinks> *symbol indicator* &amp;optional *default → value* 
 
 
 
+<!-- **(setf (get** *symbol indicator* &amp;optional *default<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> *new-value***)**  -->
 **(setf (get** *symbol indicator* &amp;optional *default***)** *new-value***)** 
 
 
@@ -18,19 +19,19 @@
 
 
 
-*symbol*—a *symbol*. 
+<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*indicator*—an *object*. 
+<ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*default*—an *object*. The default is **nil**. 
+*default*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*value*—if the indicated property exists, the *object* that is its *value*; otherwise, the specified *default*. *new-value*—an *object*. 
+<ClLinks styled={true} term={"value"}><i>value</i></ClLinks>—if the indicated property exists, the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> that is its <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>; otherwise, the specified *default*. *new-value*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -38,7 +39,7 @@
 
 
 
-**get** finds a *property* on the *property list* <sub>2</sub> of *symbol* whose *property indicator* is *identical* to *indicator*, and returns its corresponding *property value*. If there are multiple *properties*<sub>1</sub> with that *property indicator* , **get** uses the first such *property*. If there is no *property* with that *property indicator* , *default* is returned. 
+<ClLinks styled={true} term={"get"}><b>get</b></ClLinks> finds a <ClLinks styled={true} term={"property"}><i>property</i></ClLinks> on the *property list* <sub>2</sub> of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> whose *property indicator* is <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> to <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks>, and returns its corresponding *property value*. If there are multiple *properties*<sub>1</sub> with that *property indicator* , <ClLinks styled={true} term={"get"}><b>get</b></ClLinks> uses the first such <ClLinks styled={true} term={"property"}><i>property</i></ClLinks>. If there is no <ClLinks styled={true} term={"property"}><i>property</i></ClLinks> with that *property indicator* , *default* is returned. 
 
 
 
@@ -54,11 +55,11 @@
 
 
 
-**get** 
+<ClLinks styled={true} term={"get"}><b>get</b></ClLinks> 
 
 
 
-**setf** of **get** may be used to associate a new *object* with an existing indicator already on the *symbol*’s *property list*, or to create a new assocation if none exists. If there are multiple *properties*<sub>1</sub> with that *property indicator* , **setf** of **get** associates the *new-value* with the first such *property*. When a **get** *form* is used as a **setf** *place*, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its *value* is ignored. 
+<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"get"}><b>get</b></ClLinks> may be used to associate a new <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> with an existing indicator already on the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>’s *property list*, or to create a new assocation if none exists. If there are multiple *properties*<sub>1</sub> with that *property indicator* , <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"get"}><b>get</b></ClLinks> associates the *new-value* with the first such <ClLinks styled={true} term={"property"}><i>property</i></ClLinks>. When a <ClLinks styled={true} term={"get"}><b>get</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is used as a <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is ignored. 
 
 
 
@@ -99,7 +100,7 @@
 
 
 
-Should signal an error of *type* **type-error** if *symbol* is not a *symbol*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -107,7 +108,7 @@ Should signal an error of *type* **type-error** if *symbol* is not a *symbol*.
 
 
 
-**getf**, **symbol-plist**, **remprop** 
+<ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks>, <ClLinks styled={true} term={"symbol-plist"}><b>symbol-plist</b></ClLinks>, <ClLinks styled={true} term={"remprop"}><b>remprop</b></ClLinks> 
 
 
 
@@ -131,11 +132,11 @@ Should signal an error of *type* **type-error** if *symbol* is not a *symbol*.
 
 
 
-*Numbers* and *characters* are not recommended for use as *indicators* in portable code since **get** tests with **eq** rather than **eql**, and consequently the effect of using such *indicators* is *implementation-dependent*. 
+<ClLinks styled={true} term={"number"}><i>Numbers</i></ClLinks> and <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> are not recommended for use as <ClLinks styled={true} term={"indicator"}><i>indicators</i></ClLinks> in portable code since <ClLinks styled={true} term={"get"}><b>get</b></ClLinks> tests with <ClLinks styled={true} term={"eq"}><b>eq</b></ClLinks> rather than <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks>, and consequently the effect of using such <ClLinks styled={true} term={"indicator"}><i>indicators</i></ClLinks> is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
-There is no way using **get** to distinguish an absent property from one whose value is *default*. However, see **get-properties**. 
+There is no way using <ClLinks styled={true} term={"get"}><b>get</b></ClLinks> to distinguish an absent property from one whose value is *default*. However, see <ClLinks styled={true} term={"get-properties"}><b>get-properties</b></ClLinks>. 
 
 
 

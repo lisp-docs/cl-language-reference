@@ -6,7 +6,7 @@ The top level loop is the Common Lisp mechanism by which the user normally inter
 
 
 
-The top level loop is not completely specified; thus the user interface is *implementation-defined*. The top level loop prints all values resulting from the evaluation of a *form*. Figure 25–1 lists variables that are maintained by the *Lisp read-eval-print loop*. 
+The top level loop is not completely specified; thus the user interface is <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. The top level loop prints all values resulting from the evaluation of a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. Figure 25–1 lists variables that are maintained by the *Lisp read-eval-print loop*. 
 
 
 

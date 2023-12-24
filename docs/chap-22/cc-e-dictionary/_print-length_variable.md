@@ -1,4 +1,4 @@
-*∗***print-length***∗ Variable* 
+*∗<ClLinks styled={true} term={"print-length"}><b>*print-length*</b></ClLinks>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-a non-negative *integer* , or **nil**. 
+a non-negative *integer* , or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -14,7 +14,7 @@ a non-negative *integer* , or **nil**.
 
 
 
-**nil**. 
+<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -22,19 +22,19 @@ a non-negative *integer* , or **nil**.
 
 
 
-**\*print-level\*** controls how many levels deep a nested *object* will print. If it is *false*, then no control is exercised. Otherwise, it is an *integer* indicating the maximum level to be printed. An *object* to be printed is at level 0; its components (as of a *list* or *vector* ) are at level 1; and so on. If an *object* 
+**\*print-level\*** controls how many levels deep a nested <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> will print. If it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, then no control is exercised. Otherwise, it is an *integer* indicating the maximum level to be printed. An <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> to be printed is at level 0; its components (as of a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> or <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> ) are at level 1; and so on. If an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> 
 
 
 
-to be recursively printed has components and is at a level equal to or greater than the *value* of **\*print-level\***, then the *object* is printed as “#”. 
+to be recursively printed has components and is at a level equal to or greater than the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*print-level\***, then the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is printed as “#”. 
 
 
 
-**\*print-length\*** controls how many elements at a given level are printed. If it is *false*, there is no limit to the number of components printed. Otherwise, it is an *integer* indicating the maximum number of *elements* of an *object* to be printed. If exceeded, the printer will print “...” in place of the other *elements*. In the case of a *dotted list*, if the *list* contains exactly as many *elements* as the *value* of **\*print-length\***, the terminating *atom* is printed rather than printing “...” 
+<ClLinks styled={true} term={"print-length"}><b>\*print-length\*</b></ClLinks> controls how many elements at a given level are printed. If it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, there is no limit to the number of components printed. Otherwise, it is an *integer* indicating the maximum number of <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> to be printed. If exceeded, the printer will print “...” in place of the other <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks>. In the case of a *dotted list*, if the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> contains exactly as many <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> as the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-length"}><b>\*print-length\*</b></ClLinks>, the terminating <ClLinks styled={true} term={"atom"}><i>atom</i></ClLinks> is printed rather than printing “...” 
 
 
 
-**\*print-level\*** and **\*print-length\*** affect the printing of an any *object* printed with a list-like syntax. They do not affect the printing of *symbols*, *strings*, and *bit vectors*. 
+**\*print-level\*** and <ClLinks styled={true} term={"print-length"}><b>\*print-length\*</b></ClLinks> affect the printing of an any <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> printed with a list-like syntax. They do not affect the printing of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>, <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks>, and *bit vectors*. 
 
 
 
@@ -94,7 +94,7 @@ to be recursively printed has components and is at a level equal to or greater t
 
 
 
-**write** 
+<ClLinks styled={true} term={"write"}><b>write</b></ClLinks> 
 
 
 

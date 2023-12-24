@@ -1,4 +1,4 @@
-**numerator, denominator** *Function* 
+**numerator, denominator** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**numerator** *rational → numerator* 
+<ClLinks styled={true} term={"numerator"}><b>numerator</b></ClLinks> *rational → numerator* 
 
 
 
-**denominator** *rational → denominator* 
+<ClLinks styled={true} term={"denominator"}><b>denominator</b></ClLinks> *rational → denominator* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*rational*—a *rational*. 
+<ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks>—a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks>. 
 
 
 
@@ -34,15 +34,15 @@
 
 
 
-**numerator** and **denominator** reduce *rational* to canonical form and compute the numerator or denominator of that number. 
+<ClLinks styled={true} term={"numerator"}><b>numerator</b></ClLinks> and <ClLinks styled={true} term={"denominator"}><b>denominator</b></ClLinks> reduce <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> to canonical form and compute the numerator or denominator of that number. 
 
 
 
-**numerator** and **denominator** return the numerator or denominator of the canonical form of *rational*. 
+<ClLinks styled={true} term={"numerator"}><b>numerator</b></ClLinks> and <ClLinks styled={true} term={"denominator"}><b>denominator</b></ClLinks> return the numerator or denominator of the canonical form of <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks>. 
 
 
 
-If *rational* is an *integer* , **numerator** returns *rational* and **denominator** returns 1. 
+If <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> is an *integer* , <ClLinks styled={true} term={"numerator"}><b>numerator</b></ClLinks> returns <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> and <ClLinks styled={true} term={"denominator"}><b>denominator</b></ClLinks> returns 1. 
 
 
 
@@ -61,7 +61,7 @@ If *rational* is an *integer* , **numerator** returns *rational* and **denominat
 
 
 
-**/** 
+<ClLinks styled={true} term={"/"}><b>/</b></ClLinks> 
 
 
 

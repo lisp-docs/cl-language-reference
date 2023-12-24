@@ -1,4 +1,4 @@
-**car, cdr, caar, cadr, cdar, cddr, caaar, caadr, cadar, caddr, cdaar, cdadr, cddar, cdddr, caaaar, caaadr, caadar, caaddr, cadaar, cadadr, caddar, cadddr, cdaaar, cdaadr, cdadar, cdaddr, cddaar, cddadr, cdddar, cddddr** *Accessor* 
+**car, cdr, caar, cadr, cdar, cddr, caaar, caadr, cadar, caddr, cdaar, cdadr, cddar, cdddr, caaaar, caaadr, caadar, caaddr, cadaar, cadadr, caddar, cadddr, cdaaar, cdaadr, cdadar, cdaddr, cddaar, cddadr, cdddar, cddddr** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -124,29 +124,147 @@
 
 **(setf (cddddr** *x***)** *new-object***)** 
 
+<!-- **(setf (car** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cdr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (caar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cadr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cdar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cddr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (caaar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (caadr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cadar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (caddr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cdaar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cdadr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cddar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cdddr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (caaaar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (caaadr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (caadar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (caaddr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cadaar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cadadr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (caddar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cadddr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cdaaar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cdaadr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cdadar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cdaddr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cddaar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cddadr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cdddar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+
+
+
+**(setf (cddddr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks>  -->
+
 
 
 **Pronunciation:** 
 
 
 
-**car** *x → object* **cdr** *x → object* 
+<ClLinks styled={true} term={"car"}><b>car</b></ClLinks> *x → object* <ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks> *x → object* 
 
 
 
-**caar** *x → object* **cadr** *x → object* **cdar** *x → object* **cddr** *x → object* 
+<ClLinks styled={true} term={"caar"}><b>caar</b></ClLinks> *x → object* <ClLinks styled={true} term={"cadr"}><b>cadr</b></ClLinks> *x → object* <ClLinks styled={true} term={"cdar"}><b>cdar</b></ClLinks> *x → object* <ClLinks styled={true} term={"cddr"}><b>cddr</b></ClLinks> *x → object* 
 
 
 
-**caaar** *x → object* **caadr** *x → object* **cadar** *x → object* **caddr** *x → object* **cdaar** *x → object* **cdadr** *x → object* **cddar** *x → object* **cdddr** *x → object* 
+<ClLinks styled={true} term={"caaar"}><b>caaar</b></ClLinks> *x → object* <ClLinks styled={true} term={"caadr"}><b>caadr</b></ClLinks> *x → object* <ClLinks styled={true} term={"cadar"}><b>cadar</b></ClLinks> *x → object* <ClLinks styled={true} term={"caddr"}><b>caddr</b></ClLinks> *x → object* <ClLinks styled={true} term={"cdaar"}><b>cdaar</b></ClLinks> *x → object* <ClLinks styled={true} term={"cdadr"}><b>cdadr</b></ClLinks> *x → object* <ClLinks styled={true} term={"cddar"}><b>cddar</b></ClLinks> *x → object* <ClLinks styled={true} term={"cdddr"}><b>cdddr</b></ClLinks> *x → object* 
 
 
 
-**caaaar** *x → object* **caaadr** *x → object* **caadar** *x → object* **caaddr** *x → object* **cadaar** *x → object* **cadadr** *x → object* **caddar** *x → object* **cadddr** *x → object* **cdaaar** *x → object* **cdaadr** *x → object* **cdadar** *x → object* **cdaddr** *x → object* **cddaar** *x → object* **cddadr** *x → object* **cdddar** *x → object* **cddddr** *x → object* 
+<ClLinks styled={true} term={"caaaar"}><b>caaaar</b></ClLinks> *x → object* <ClLinks styled={true} term={"caaadr"}><b>caaadr</b></ClLinks> *x → object* <ClLinks styled={true} term={"caadar"}><b>caadar</b></ClLinks> *x → object* <ClLinks styled={true} term={"caaddr"}><b>caaddr</b></ClLinks> *x → object* <ClLinks styled={true} term={"cadaar"}><b>cadaar</b></ClLinks> *x → object* <ClLinks styled={true} term={"cadadr"}><b>cadadr</b></ClLinks> *x → object* <ClLinks styled={true} term={"caddar"}><b>caddar</b></ClLinks> *x → object* <ClLinks styled={true} term={"cadddr"}><b>cadddr</b></ClLinks> *x → object* <ClLinks styled={true} term={"cdaaar"}><b>cdaaar</b></ClLinks> *x → object* <ClLinks styled={true} term={"cdaadr"}><b>cdaadr</b></ClLinks> *x → object* <ClLinks styled={true} term={"cdadar"}><b>cdadar</b></ClLinks> *x → object* <ClLinks styled={true} term={"cdaddr"}><b>cdaddr</b></ClLinks> *x → object* <ClLinks styled={true} term={"cddaar"}><b>cddaar</b></ClLinks> *x → object* <ClLinks styled={true} term={"cddadr"}><b>cddadr</b></ClLinks> *x → object* <ClLinks styled={true} term={"cdddar"}><b>cdddar</b></ClLinks> *x → object* <ClLinks styled={true} term={"cddddr"}><b>cddddr</b></ClLinks> *x → object* 
 
 
 
-**cadr**: [ **ka d*** **r** ] 
+<ClLinks styled={true} term={"cadr"}><b>cadr</b></ClLinks>: [ **ka d*** **r** ] 
 
 
 
@@ -166,15 +284,15 @@
 
 
 
-**caddr**: [ **kad***  **d*** **r** ] or [ **ka d\_ud*** **r** ] 
+<ClLinks styled={true} term={"caddr"}><b>caddr</b></ClLinks>: [ **kad***  **d*** **r** ] or [ **ka d\_ud*** **r** ] 
 
 
 
-**cdr**: [ **k\_u d*** **r** ] 
+<ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks>: [ **k\_u d*** **r** ] 
 
 
 
-**cddr**: [ **k\_ud***  **d*** **r** ] or [ **k***  **d\_ud*** **r** ] 
+<ClLinks styled={true} term={"cddr"}><b>cddr</b></ClLinks>: [ **k\_ud***  **d*** **r** ] or [ **k***  **d\_ud*** **r** ] 
 
 
 
@@ -182,15 +300,15 @@
 
 
 
-*x*—a *list*. 
+*x*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*new-object*—an *object*. 
+*new-object*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -198,15 +316,15 @@
 
 
 
-If *x* is a *cons*, **car** returns the *car* of that *cons*. If *x* is **nil**, **car** returns **nil**. 
+If *x* is a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>, <ClLinks styled={true} term={"car"}><b>car</b></ClLinks> returns the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of that <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. If *x* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, <ClLinks styled={true} term={"car"}><b>car</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-If *x* is a *cons*, **cdr** returns the *cdr* of that *cons*. If *x* is **nil**, **cdr** returns **nil**. 
+If *x* is a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>, <ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks> returns the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of that <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. If *x* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, <ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*Functions* are provided which perform compositions of up to four **car** and **cdr** operations. Their *names* consist of a C, followed by two, three, or four occurrences of A or D, and finally an R. The series of A’s and D’s in each *function*’s *name* is chosen to identify the series of **car** and **cdr** operations that is performed by the function. The order in which the A’s and D’s appear is the inverse of the order in which the corresponding operations are performed. Figure 14–6 defines the relationships precisely. 
+<ClLinks styled={true} term={"function"}><i>Functions</i></ClLinks> are provided which perform compositions of up to four <ClLinks styled={true} term={"car"}><b>car</b></ClLinks> and <ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks> operations. Their <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> consist of a C, followed by two, three, or four occurrences of A or D, and finally an R. The series of A’s and D’s in each <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>’s <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is chosen to identify the series of <ClLinks styled={true} term={"car"}><b>car</b></ClLinks> and <ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks> operations that is performed by the function. The order in which the A’s and D’s appear is the inverse of the order in which the corresponding operations are performed. Figure 14–6 defines the relationships precisely. 
 
 
 
@@ -240,7 +358,7 @@ If *x* is a *cons*, **cdr** returns the *cdr* of that *cons*. If *x* is **nil**,
 
 
 
-**setf** can also be used with any of these functions to change an existing component of *x*, but **setf** will not make new components. So, for example, the *car* of a *cons* can be assigned with **setf** of **car**, but the *car* of **nil** cannot be assigned with **setf** of **car**. Similarly, the *car* of the *car* of a *cons* whose *car* is a *cons* can be assigned with **setf** of **caar**, but neither **nil**nor a *cons* whose car is **nil** can be assigned with **setf** of **caar**. 
+<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> can also be used with any of these functions to change an existing component of *x*, but <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> will not make new components. So, for example, the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> can be assigned with <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"car"}><b>car</b></ClLinks>, but the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> cannot be assigned with <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"car"}><b>car</b></ClLinks>. Similarly, the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> whose <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> is a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> can be assigned with <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"caar"}><b>caar</b></ClLinks>, but neither <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>nor a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> whose car is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> can be assigned with <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"caar"}><b>caar</b></ClLinks>. 
 
 
 
@@ -266,7 +384,7 @@ The argument *x* is permitted to be a *dotted list* or a *circular list*.
 
 
 
-The functions **car** and **cdr** should signal **type-error** if they receive an argument which is not a *list*. The other functions (**caar**, **cadr**, *. . .* **cddddr**) should behave for the purpose of error checking as if defined by appropriate calls to **car** and **cdr**. 
+The functions <ClLinks styled={true} term={"car"}><b>car</b></ClLinks> and <ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks> should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if they receive an argument which is not a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. The other functions (<ClLinks styled={true} term={"caar"}><b>caar</b></ClLinks>, <ClLinks styled={true} term={"cadr"}><b>cadr</b></ClLinks>, *. . .* <ClLinks styled={true} term={"cddddr"}><b>cddddr</b></ClLinks>) should behave for the purpose of error checking as if defined by appropriate calls to <ClLinks styled={true} term={"car"}><b>car</b></ClLinks> and <ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks>. 
 
 
 
@@ -274,7 +392,7 @@ The functions **car** and **cdr** should signal **type-error** if they receive a
 
 
 
-**rplaca**, **first**, **rest** 
+<ClLinks styled={true} term={"rplaca"}><b>rplaca</b></ClLinks>, <ClLinks styled={true} term={"first"}><b>first</b></ClLinks>, <ClLinks styled={true} term={"rest"}><b>rest</b></ClLinks> 
 
 
 
@@ -282,7 +400,7 @@ The functions **car** and **cdr** should signal **type-error** if they receive a
 
 
 
-The *car* of a *cons* can also be altered by using **rplaca**, and the *cdr* of a *cons* can be altered by using **rplacd**. 
+The <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> can also be altered by using <ClLinks styled={true} term={"rplaca"}><b>rplaca</b></ClLinks>, and the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> can be altered by using <ClLinks styled={true} term={"rplacd"}><b>rplacd</b></ClLinks>. 
 
 
 

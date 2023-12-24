@@ -2,11 +2,11 @@
 
 
 
-*Packages* can be built up in layers. From one point of view, a *package* is a single collection of mappings from *strings* into *internal symbols* and *external symbols*. However, some of these mappings might be established within the *package* itself, while other mappings are inherited from other *packages* via **use-package**. A *symbol* is said to be *present* in a *package* if the mapping is in the *package* itself and is not inherited from somewhere else. 
+<ClLinks styled={true} term={"package"}><i>Packages</i></ClLinks> can be built up in layers. From one point of view, a <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is a single collection of mappings from <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks> into *internal symbols* and *external symbols*. However, some of these mappings might be established within the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> itself, while other mappings are inherited from other <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> via <ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks>. A <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is said to be <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in a <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> if the mapping is in the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> itself and is not inherited from somewhere else. 
 
 
 
-There is no way to inherit the *internal symbols* of another *package*; to refer to an *internal symbol* using the *Lisp reader* , a *package* containing the *symbol* must be made to be the *current package*, a *package prefix* must be used, or the *symbol* must be *imported* into the *current package*. 
+There is no way to inherit the *internal symbols* of another <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>; to refer to an *internal symbol* using the *Lisp reader* , a <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> containing the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> must be made to be the *current package*, a *package prefix* must be used, or the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> must be *imported* into the *current package*. 
 
 
 

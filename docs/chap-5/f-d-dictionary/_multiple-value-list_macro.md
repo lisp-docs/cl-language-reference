@@ -1,4 +1,4 @@
-**multiple-value-list** *Macro* 
+**multiple-value-list** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**multiple-value-list** *form ! list* 
+<ClLinks styled={true} term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks> *form ! list* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*form*—a *form*; evaluated as described below. 
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
 
 
 
-*list*—a *list* of the *values* returned by *form*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@ Data and Control
 
 
 
-**multiple-value-list** evaluates *form* and creates a *list* of the *multiple values*<sub>2</sub> it returns. 
+<ClLinks styled={true} term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks> evaluates <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> and creates a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the *multiple values*<sub>2</sub> it returns. 
 
 **Examples:**
 ```lisp
@@ -50,7 +50,7 @@ Data and Control
 
 
 
-**values-list**, **multiple-value-call** 
+<ClLinks styled={true} term={"values-list"}><b>values-list</b></ClLinks>, <ClLinks styled={true} term={"multiple-value-call"}><b>multiple-value-call</b></ClLinks> 
 
 
 
@@ -58,7 +58,7 @@ Data and Control
 
 
 
-**multiple-value-list** and **values-list** are inverses of each other. 
+<ClLinks styled={true} term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks> and <ClLinks styled={true} term={"values-list"}><b>values-list</b></ClLinks> are inverses of each other. 
 
 
 

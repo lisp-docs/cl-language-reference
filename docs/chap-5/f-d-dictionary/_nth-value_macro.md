@@ -1,4 +1,4 @@
-**nth-value** *Macro* 
+**nth-value** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**nth-value** *n form ! object* 
+<ClLinks styled={true} term={"nth-value"}><b>nth-value</b></ClLinks> *n form ! object* 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-*form*—a *form*; evaluated as described below. 
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Evaluates *n* and then *form*, returning as its only value the *n*th value *yielded* by *form*, or **nil** if *n* is greater than or equal to the number of *values* returned by *form*. (The first returned value is numbered 0.) 
+Evaluates *n* and then <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, returning as its only value the *n*th value *yielded* by <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if *n* is greater than or equal to the number of <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. (The first returned value is numbered 0.) 
 
 
 
@@ -55,7 +55,7 @@ Evaluates *n* and then *form*, returning as its only value the *n*th value *yiel
 
 
 
-**multiple-value-list**, **nth** 
+<ClLinks styled={true} term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks>, <ClLinks styled={true} term={"nth"}><b>nth</b></ClLinks> 
 
 
 
@@ -63,11 +63,11 @@ Evaluates *n* and then *form*, returning as its only value the *n*th value *yiel
 
 
 
-Operationally, the following relationship is true, although **nth-value** might be more ecient in some *implementations* because, for example, some *consing* might be avoided. 
+Operationally, the following relationship is true, although <ClLinks styled={true} term={"nth-value"}><b>nth-value</b></ClLinks> might be more ecient in some <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> because, for example, some *consing* might be avoided. 
 
 
 
-(nth-value *n form*) *⌘* (nth *n* (multiple-value-list *form*)) 
+(nth-value *n form*) *⌘* (nth *n* (multiple-value-list <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>)) 
 
 
 
@@ -79,7 +79,7 @@ Operationally, the following relationship is true, although **nth-value** might 
 
 
 
-**prog** (*\{var |* (*var* [*init-form*])*\}*\*) *\{declaration\}*\* *\{tag | statement\}*\* 
+**prog** (*\{var |* (*var* [*init-form*])*\}*\*) <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *\{tag | statement\}*\* 
 
 
 
@@ -87,7 +87,7 @@ Operationally, the following relationship is true, although **nth-value** might 
 
 
 
-**prog\*** (*\{var |* (*var* [*init-form*])*\}*\*) *\{declaration\}*\* *\{tag | statement\}*\* 
+**prog\*** (*\{var |* (*var* [*init-form*])*\}*\*) <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *\{tag | statement\}*\* 
 
 
 
@@ -103,15 +103,15 @@ Operationally, the following relationship is true, although **nth-value** might 
 
 
 
-*init-form*—a *form*. 
+*init-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*declaration*—a **declare** *expression*; not evaluated. 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*tag*—a *go tag*; not evaluated. 
+<ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>—a *go tag*; not evaluated. 
 
 
 
@@ -119,7 +119,7 @@ Operationally, the following relationship is true, although **nth-value** might 
 
 
 
-*results*—**nil** if a *normal return* occurs, or else, if an *explicit return* occurs, the *values* that were transferred. 
+*results*—<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if a *normal return* occurs, or else, if an *explicit return* occurs, the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> that were transferred. 
 
 
 
@@ -127,7 +127,7 @@ Operationally, the following relationship is true, although **nth-value** might 
 
 
 
-Three distinct operations are performed by **prog** and **prog\***: they bind local variables, they permit use of the **return** statement, and they permit use of the **go** statement. A typical **prog** looks like this: 
+Three distinct operations are performed by **prog** and **prog\***: they bind local variables, they permit use of the <ClLinks styled={true} term={"return"}><b>return</b></ClLinks> statement, and they permit use of the <ClLinks styled={true} term={"go"}><b>go</b></ClLinks> statement. A typical **prog** looks like this: 
 
 
 
@@ -135,7 +135,7 @@ Three distinct operations are performed by **prog** and **prog\***: they bind lo
 
 
 
-*\{declaration\}*\* 
+<ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* 
 
 
 
@@ -191,19 +191,19 @@ statement5
 
 
 
-For **prog**, *init-forms* are evaluated first, in the order in which they are supplied. The *vars* are then bound to the corresponding values in parallel. If no *init-form* is supplied for a given *var*, that *var* is bound to **nil**. 
+For **prog**, *init-forms* are evaluated first, in the order in which they are supplied. The *vars* are then bound to the corresponding values in parallel. If no *init-form* is supplied for a given *var*, that *var* is bound to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-The body of **prog** is executed as if it were a **tagbody** *form*; the **go** statement can be used to transfer control to a *tag*. *Tags* label *statements*. 
+The body of **prog** is executed as if it were a <ClLinks styled={true} term={"tagbody"}><b>tagbody</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; the <ClLinks styled={true} term={"go"}><b>go</b></ClLinks> statement can be used to transfer control to a <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>. <ClLinks styled={true} term={"tag"}><i>Tags</i></ClLinks> label *statements*. 
 
 
 
-**prog** implicitly establishes a **block** named **nil** around the entire **prog** *form*, so that **return** can be used at any time to exit from the **prog** *form*. 
+**prog** implicitly establishes a <ClLinks styled={true} term={"block"}><b>block</b></ClLinks> named <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> around the entire **prog** <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, so that <ClLinks styled={true} term={"return"}><b>return</b></ClLinks> can be used at any time to exit from the **prog** <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-The di↵erence between **prog\*** and **prog** is that in **prog\*** the *binding* and initialization of the *vars* is done *sequentially*, so that the *init-form* for each one can use the values of previous ones. 
+The di↵erence between **prog\*** and **prog** is that in **prog\*** the <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> and initialization of the *vars* is done <ClLinks styled={true} term={"sequentially"}><i>sequentially</i></ClLinks>, so that the *init-form* for each one can use the values of previous ones. 
 
 
 
@@ -255,7 +255,7 @@ Think of this function as being like a zipper."
 
 
 
-**block**, **let**, **tagbody**, **go**, **return**, Section 3.1 (Evaluation) 
+<ClLinks styled={true} term={"block"}><b>block</b></ClLinks>, <ClLinks styled={true} term={"let"}><b>let</b></ClLinks>, <ClLinks styled={true} term={"tagbody"}><b>tagbody</b></ClLinks>, <ClLinks styled={true} term={"go"}><b>go</b></ClLinks>, <ClLinks styled={true} term={"return"}><b>return</b></ClLinks>, Section 3.1 (Evaluation) 
 
 
 
@@ -263,7 +263,7 @@ Think of this function as being like a zipper."
 
 
 
-**prog** can be explained in terms of **block**, **let**, and **tagbody** as follows: 
+**prog** can be explained in terms of <ClLinks styled={true} term={"block"}><b>block</b></ClLinks>, <ClLinks styled={true} term={"let"}><b>let</b></ClLinks>, and <ClLinks styled={true} term={"tagbody"}><b>tagbody</b></ClLinks> as follows: 
 
 
 

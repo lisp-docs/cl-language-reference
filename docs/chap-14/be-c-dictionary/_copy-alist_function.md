@@ -1,4 +1,4 @@
-**copy-alist** *Function* 
+**copy-alist** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**copy-alist** *alist → new-alist* 
+<ClLinks styled={true} term={"copy-alist"}><b>copy-alist</b></ClLinks> *alist → new-alist* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*alist*—an *association list*. 
+<ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>—an *association list*. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-**copy-alist** returns a *copy* of *alist*. 
+<ClLinks styled={true} term={"copy-alist"}><b>copy-alist</b></ClLinks> returns a <ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks> of <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>. 
 
 
 
-The *list structure* of *alist* is copied, and the *elements* of *alist* which are *conses* are also copied (as *conses* only). Any other *objects* which are referred to, whether directly or indirectly, by the *alist* continue to be shared. 
+The *list structure* of <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> is copied, and the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> which are *conses* are also copied (as *conses* only). Any other <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> which are referred to, whether directly or indirectly, by the <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> continue to be shared. 
 
 
 
@@ -58,7 +58,7 @@ The *list structure* of *alist* is copied, and the *elements* of *alist* which a
 
 
 
-**copy-list** 
+<ClLinks styled={true} term={"copy-list"}><b>copy-list</b></ClLinks> 
 
 
 

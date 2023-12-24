@@ -2,7 +2,7 @@
 
 
 
-The *alphabetic*<sub>1</sub> *characters* are a subset of the *graphic characters*. Of the *standard characters*, only these are the *alphabetic*<sub>1</sub> *characters*: 
+The <ClLinks styled={true} term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>1</sub> <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> are a subset of the *graphic characters*. Of the *standard characters*, only these are the <ClLinks styled={true} term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>1</sub> <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks>: 
 
 
 

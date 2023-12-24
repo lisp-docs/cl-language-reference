@@ -1,4 +1,4 @@
-**integer-length** *Function* 
+**integer-length** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**integer-length** *integer → number-of-bits* 
+<ClLinks styled={true} term={"integer-length"}><b>integer-length</b></ClLinks> *integer → number-of-bits* 
 
 
 
@@ -50,7 +50,7 @@ Returns the number of bits needed to represent *integer* in binary two’s-compl
 
 
 
-Should signal an error of *type* **type-error** if *integer* is not an *integer* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *integer* is not an *integer* . 
 
 
 

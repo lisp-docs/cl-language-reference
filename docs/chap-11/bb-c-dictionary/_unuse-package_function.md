@@ -1,4 +1,4 @@
-**unuse-package** *Function* 
+**unuse-package** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**unuse-package** *packages-to-unuse* &amp;optional *package →* **t** 
+<ClLinks styled={true} term={"unuse-package"}><b>unuse-package</b></ClLinks> *packages-to-unuse* &amp;optional *package →* <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*packages-to-unuse*—a *designator* for a *list* of *package designators*. 
+*packages-to-unuse*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *package designators*. 
 
 
 
-*package*—a *package designator* . The default is the *current package*. 
+<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-**unuse-package** causes *package* to cease inheriting all the *external symbols* of *packages-to-unuse*; **unuse-package** undoes the effects of **use-package**. The *packages-to-unuse* are removed from the *use list* of *package*. 
+<ClLinks styled={true} term={"unuse-package"}><b>unuse-package</b></ClLinks> causes <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> to cease inheriting all the *external symbols* of *packages-to-unuse*; <ClLinks styled={true} term={"unuse-package"}><b>unuse-package</b></ClLinks> undoes the effects of <ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks>. The *packages-to-unuse* are removed from the *use list* of <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
 
 
 
-Any *symbols* that have been *imported* into *package* continue to be *present* in *package*. 
+Any <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> that have been *imported* into <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> continue to be <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
 
 **Examples:**
 ```lisp
@@ -48,7 +48,7 @@ Any *symbols* that have been *imported* into *package* continue to be *present* 
 
 
 
-The *use list* of *package* is modified. 
+The *use list* of <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is modified. 
 
 
 
@@ -64,7 +64,7 @@ Current state of the package system.
 
 
 
-**use-package**, **package-use-list** 
+<ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks styled={true} term={"package-use-list"}><b>package-use-list</b></ClLinks> 
 
 
 

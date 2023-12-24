@@ -1,4 +1,4 @@
-**break** *Function* 
+**break** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**break** &amp;optional *format-control* &amp;rest *format-arguments →* **nil** 
+<ClLinks styled={true} term={"break"}><b>break</b></ClLinks> &amp;optional *format-control* &amp;rest *format-arguments →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*format-control*—a *format control*. The default is *implementation-dependent*. 
+*format-control*—a *format control*. The default is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-**break** *formats format-control* and *format-arguments* and then goes directly into the debugger without allowing any possibility of interception by programmed error-handling facilities. 
+<ClLinks styled={true} term={"break"}><b>break</b></ClLinks> *formats format-control* and *format-arguments* and then goes directly into the debugger without allowing any possibility of interception by programmed error-handling facilities. 
 
 
 
-If the **continue** *restart* is used while in the debugger, **break** immediately returns **nil** without taking any unusual recovery action. 
+If the **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is used while in the debugger, <ClLinks styled={true} term={"break"}><b>break</b></ClLinks> immediately returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> without taking any unusual recovery action. 
 
 
 
-**break** binds **\*debugger-hook\*** to **nil** before attempting to enter the debugger. 
+<ClLinks styled={true} term={"break"}><b>break</b></ClLinks> binds <ClLinks styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></ClLinks> to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> before attempting to enter the debugger. 
 
 
 
@@ -71,7 +71,7 @@ The debugger is entered.
 
 
 
-**error**, **invoke-debugger**. 
+<ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"invoke-debugger"}><b>invoke-debugger</b></ClLinks>. 
 
 
 
@@ -79,7 +79,7 @@ The debugger is entered.
 
 
 
-**break** is used as a way of inserting temporary debugging “breakpoints” in a program, not as a way of signaling errors. For this reason, **break** does not take the *continue-format-control argument* that **cerror** takes. This and the lack of any possibility of interception by *condition handling* are the only program-visible differences between **break** and **cerror**. 
+<ClLinks styled={true} term={"break"}><b>break</b></ClLinks> is used as a way of inserting temporary debugging “breakpoints” in a program, not as a way of signaling errors. For this reason, <ClLinks styled={true} term={"break"}><b>break</b></ClLinks> does not take the *continue-format-control argument* that <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks> takes. This and the lack of any possibility of interception by *condition handling* are the only program-visible differences between <ClLinks styled={true} term={"break"}><b>break</b></ClLinks> and <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks>. 
 
 
 
@@ -95,11 +95,11 @@ The debugger is entered.
 
 
 
-The user interface aspects of **break** and **cerror** are permitted to vary more widely, in order to accomodate the interface needs of the *implementation*. For example, it is permissible for a *Lisp read-eval-print loop* to be entered by **break** rather than the conventional debugger. 
+The user interface aspects of <ClLinks styled={true} term={"break"}><b>break</b></ClLinks> and <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks> are permitted to vary more widely, in order to accomodate the interface needs of the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. For example, it is permissible for a *Lisp read-eval-print loop* to be entered by <ClLinks styled={true} term={"break"}><b>break</b></ClLinks> rather than the conventional debugger. 
 
 
 
-**break** could be defined by: 
+<ClLinks styled={true} term={"break"}><b>break</b></ClLinks> could be defined by: 
 
 
 

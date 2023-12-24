@@ -1,4 +1,4 @@
-*∗***print-radix***∗ Variable* 
+*∗<ClLinks styled={true} term={"print-radix"}><b>*print-radix*</b></ClLinks>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**\*print-base\***—a *radix* . **\*print-radix\***—a *generalized boolean*. 
+**\*print-base\***—a <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> . <ClLinks styled={true} term={"print-radix"}><b>\*print-radix\*</b></ClLinks>—a *generalized boolean*. 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The initial *value* of **\*print-base\*** is 10. The initial *value* of **\*print-radix\*** is *false*. 
+The initial <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*print-base\*** is 10. The initial <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-radix"}><b>\*print-radix\*</b></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -22,15 +22,15 @@ The initial *value* of **\*print-base\*** is 10. The initial *value* of **\*prin
 
 
 
-**\*print-base\*** and **\*print-radix\*** control the printing of *rationals*. The *value* of **\*print-base\*** is called the *current output base*. 
+**\*print-base\*** and <ClLinks styled={true} term={"print-radix"}><b>\*print-radix\*</b></ClLinks> control the printing of <ClLinks styled={true} term={"rational"}><i>rationals</i></ClLinks>. The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*print-base\*** is called the *current output base*. 
 
 
 
-The *value* of **\*print-base\*** is the *radix* in which the printer will print *rationals*. For radices above 10, letters of the alphabet are used to represent digits above 9. 
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*print-base\*** is the <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> in which the printer will print <ClLinks styled={true} term={"rational"}><i>rationals</i></ClLinks>. For radices above 10, letters of the alphabet are used to represent digits above 9. 
 
 
 
-If the *value* of **\*print-radix\*** is *true*, the printer will print a radix specifier to indicate the *radix* in which it is printing a *rational* number. The radix specifier is always printed using lowercase letters. If **\*print-base\*** is 2, 8, or 16, then the radix specifier used is #b, #o, or #x, respectively. For *integers*, base ten is indicated by a trailing decimal point instead of a leading radix specifier; for *ratios*, #10r is used. 
+If the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-radix"}><b>\*print-radix\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the printer will print a radix specifier to indicate the <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> in which it is printing a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> number. The radix specifier is always printed using lowercase letters. If **\*print-base\*** is 2, 8, or 16, then the radix specifier used is #b, #o, or #x, respectively. For *integers*, base ten is indicated by a trailing decimal point instead of a leading radix specifier; for <ClLinks styled={true} term={"ratio"}><i>ratios</i></ClLinks>, #10r is used. 
 
 
 
@@ -72,7 +72,7 @@ If the *value* of **\*print-radix\*** is *true*, the printer will print a radix 
 
 
 
-Might be *bound* by **format**, and **write**, **write-to-string**. 
+Might be <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks> by <ClLinks styled={true} term={"format"}><b>format</b></ClLinks>, and <ClLinks styled={true} term={"write"}><b>write</b></ClLinks>, <ClLinks styled={true} term={"write-to-string"}><b>write-to-string</b></ClLinks>. 
 
 
 
@@ -80,7 +80,7 @@ Might be *bound* by **format**, and **write**, **write-to-string**.
 
 
 
-**format**, **write**, **write-to-string** 
+<ClLinks styled={true} term={"format"}><b>format</b></ClLinks>, <ClLinks styled={true} term={"write"}><b>write</b></ClLinks>, <ClLinks styled={true} term={"write-to-string"}><b>write-to-string</b></ClLinks> 
 
 
 

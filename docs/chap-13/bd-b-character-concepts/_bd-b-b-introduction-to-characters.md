@@ -2,15 +2,15 @@
 
 
 
-A *character* is an *object* that represents a unitary token (*e.g.*, a letter, a special symbol, or a “control character”) in an aggregate quantity of text (*e.g.*, a *string* or a text *stream*). 
+A <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> that represents a unitary token (*e.g.*, a letter, a special symbol, or a “control character”) in an aggregate quantity of text (*e.g.*, a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> or a text <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>). 
 
 
 
-Common Lisp allows an implementation to provide support for international language *characters* as well as *characters* used in specialized arenas (*e.g.*, mathematics). 
+Common Lisp allows an implementation to provide support for international language <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> as well as <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> used in specialized arenas (*e.g.*, mathematics). 
 
 
 
-The following figures contain lists of *defined names* applicable to *characters*. 
+The following figures contain lists of *defined names* applicable to <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@ Figure 13–1 lists some *defined names* relating to *character attributes* and 
 
 
 
-Figure 13–2 lists some *character* construction and conversion *defined names*. 
+Figure 13–2 lists some <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> construction and conversion *defined names*. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**slot-unbound** *class instance slot-name → \{result\}*\* 
+<ClLinks styled={true} term={"slot-unbound"}><b>slot-unbound</b></ClLinks> *class instance slot-name → \{result\}*\* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-**slot-unbound** (*class* **t**) *instance slot-name* 
+<ClLinks styled={true} term={"slot-unbound"}><b>slot-unbound</b></ClLinks> (<ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>) *instance slot-name* 
 
 
 
@@ -22,19 +22,19 @@
 
 
 
-*class*—the *class* of the *instance*. 
+<ClLinks styled={true} term={"class"}><i>class</i></ClLinks>—the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> of the <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>. 
 
 
 
-*instance*—the *instance* in which an attempt was made to *read* the *unbound slot*. 
+<ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>—the <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> in which an attempt was made to <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> the *unbound slot*. 
 
 
 
-*slot-name*—the *name* of the *unbound slot*. 
+*slot-name*—the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the *unbound slot*. 
 
 
 
-*result*—an *object*. 
+*result*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -42,15 +42,15 @@
 
 
 
-The generic function **slot-unbound** is called when an unbound *slot* is read in an *instance* whose metaclass is **standard-class**. The default *method* signals an error of *type* **unbound-slot**. The name slot of the **unbound-slot** *condition* is initialized to the name of the offending variable, and the instance slot of the **unbound-slot** *condition* is initialized to the offending instance. 
+The generic function <ClLinks styled={true} term={"slot-unbound"}><b>slot-unbound</b></ClLinks> is called when an unbound <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> is read in an <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> whose metaclass is <ClLinks styled={true} term={"standard-class"}><b>standard-class</b></ClLinks>. The default <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"unbound-slot"}><b>unbound-slot</b></ClLinks>. The name slot of the <ClLinks styled={true} term={"unbound-slot"}><b>unbound-slot</b></ClLinks> <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is initialized to the name of the offending variable, and the instance slot of the <ClLinks styled={true} term={"unbound-slot"}><b>unbound-slot</b></ClLinks> <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is initialized to the offending instance. 
 
 
 
-The generic function **slot-unbound** is not intended to be called by programmers. Programmers may write *methods* for it. The *function* **slot-unbound** is called only indirectly by **slot-value**. 
+The generic function <ClLinks styled={true} term={"slot-unbound"}><b>slot-unbound</b></ClLinks> is not intended to be called by programmers. Programmers may write <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> for it. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"slot-unbound"}><b>slot-unbound</b></ClLinks> is called only indirectly by <ClLinks styled={true} term={"slot-value"}><b>slot-value</b></ClLinks>. 
 
 
 
-If **slot-unbound** returns, only the *primary value* will be used by the caller, and all other values will be ignored. 
+If <ClLinks styled={true} term={"slot-unbound"}><b>slot-unbound</b></ClLinks> returns, only the *primary value* will be used by the caller, and all other values will be ignored. 
 
 
 
@@ -58,7 +58,7 @@ If **slot-unbound** returns, only the *primary value* will be used by the caller
 
 
 
-The default *method* on **slot-unbound** signals an error of *type* **unbound-slot**. 
+The default <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> on <ClLinks styled={true} term={"slot-unbound"}><b>slot-unbound</b></ClLinks> signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"unbound-slot"}><b>unbound-slot</b></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ The default *method* on **slot-unbound** signals an error of *type* **unbound-sl
 
 
 
-**slot-makunbound** 
+<ClLinks styled={true} term={"slot-makunbound"}><b>slot-makunbound</b></ClLinks> 
 
 
 
@@ -86,7 +86,7 @@ The default *method* on **slot-unbound** signals an error of *type* **unbound-sl
 
 
 
-An unbound *slot* may occur if no :initform form was specified for the *slot* and the *slot* value has not been set, or if **slot-makunbound** has been called on the *slot*. 
+An unbound <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> may occur if no :initform form was specified for the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> and the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> value has not been set, or if <ClLinks styled={true} term={"slot-makunbound"}><b>slot-makunbound</b></ClLinks> has been called on the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 
 
 
 

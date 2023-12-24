@@ -2,23 +2,23 @@
 
 
 
-The object system supplies a set of meta-objects, called standard meta-objects. These include the *class* **standard-object** and *instances* of the classes **standard-method**, **standard-generic-function**, and **method-combination**. 
+The object system supplies a set of meta-objects, called standard meta-objects. These include the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"standard-object"}><b>standard-object</b></ClLinks> and <ClLinks styled={true} term={"instance"}><i>instances</i></ClLinks> of the classes <ClLinks styled={true} term={"standard-method"}><b>standard-method</b></ClLinks>, <ClLinks styled={true} term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks>, and <ClLinks styled={true} term={"method-combination"}><b>method-combination</b></ClLinks>. 
 
 
 
-*•* The *class* **standard-method** is the default *class* of *methods* defined by the **defmethod** and **defgeneric** *forms*. 
+*•* The <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"standard-method"}><b>standard-method</b></ClLinks> is the default <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> of <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> defined by the <ClLinks styled={true} term={"defmethod"}><b>defmethod</b></ClLinks> and <ClLinks styled={true} term={"defgeneric"}><b>defgeneric</b></ClLinks> <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
 
 
 
-*•* The *class* **standard-generic-function** is the default *class* of *generic functions* defined by the forms **defmethod**, **defgeneric**, and **defclass**. 
+*•* The <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks> is the default <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> of *generic functions* defined by the forms <ClLinks styled={true} term={"defmethod"}><b>defmethod</b></ClLinks>, <ClLinks styled={true} term={"defgeneric"}><b>defgeneric</b></ClLinks>, and <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks>. 
 
 
 
-*•* The *class* named **standard-object** is an *instance* of the *class* **standard-class** and is a *superclass* of every *class* that is an *instance* of **standard-class** except itself and **structure-class**. 
+*•* The <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> named <ClLinks styled={true} term={"standard-object"}><b>standard-object</b></ClLinks> is an <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"standard-class"}><b>standard-class</b></ClLinks> and is a <ClLinks styled={true} term={"superclass"}><i>superclass</i></ClLinks> of every <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> that is an <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> of <ClLinks styled={true} term={"standard-class"}><b>standard-class</b></ClLinks> except itself and <ClLinks styled={true} term={"structure-class"}><b>structure-class</b></ClLinks>. 
 
 
 
-*•* Every *method* combination object is an *instance* of a *subclass* of *class* **method-combination**. 
+*•* Every <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> combination object is an <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> of a <ClLinks styled={true} term={"subclass"}><i>subclass</i></ClLinks> of <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"method-combination"}><b>method-combination</b></ClLinks>. 
 
 
 

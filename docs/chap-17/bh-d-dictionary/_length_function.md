@@ -1,4 +1,4 @@
-**length** *Function* 
+**length** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**length** *sequence → n* 
+<ClLinks styled={true} term={"length"}><b>length</b></ClLinks> *sequence → n* 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Returns the number of *elements* in *sequence*. 
+Returns the number of <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> in *sequence*. 
 
 
 
-If *sequence* is a *vector* with a *fill pointer* , the active length as specified by the *fill pointer* is returned. 
+If *sequence* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , the active length as specified by the *fill pointer* is returned. 
 
 
 
@@ -50,7 +50,7 @@ If *sequence* is a *vector* with a *fill pointer* , the active length as specifi
 
 
 
-Should be prepared to signal an error of *type* **type-error** if *sequence* is not a *proper sequence*. 
+Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. 
 
 
 
@@ -58,7 +58,7 @@ Should be prepared to signal an error of *type* **type-error** if *sequence* is 
 
 
 
-**list-length**, **sequence** 
+<ClLinks styled={true} term={"list-length"}><b>list-length</b></ClLinks>, <ClLinks styled={true} term={"sequence"}><b>sequence</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**array-in-bounds-p** *Function* 
+**array-in-bounds-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**array-in-bounds-p** *array* &amp;rest *subscripts → generalized-boolean* 
+<ClLinks styled={true} term={"array-in-bounds-p"}><b>array-in-bounds-p</b></ClLinks> <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → generalized-boolean* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*array*—an *array*. 
+<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
-*subscripts*—a list of *integers* of length equal to the *rank* of the *array*. 
+*subscripts*—a list of *integers* of length equal to the <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks> of the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns *true* if the *subscripts* are all in bounds for *array*; otherwise returns *false*. (If *array* is a *vector* with a *fill pointer* , that *fill pointer* is ignored.) 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the *subscripts* are all in bounds for <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>; otherwise returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. (If <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , that *fill pointer* is ignored.) 
 
 
 
@@ -49,7 +49,7 @@ Returns *true* if the *subscripts* are all in bounds for *array*; otherwise retu
 
 
 
-**array-dimensions** 
+<ClLinks styled={true} term={"array-dimensions"}><b>array-dimensions</b></ClLinks> 
 
 
 

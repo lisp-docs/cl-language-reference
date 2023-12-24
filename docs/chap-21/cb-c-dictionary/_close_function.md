@@ -1,4 +1,4 @@
-**close** *Function* 
+**close** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**close** *stream* &amp;key *abort → result* 
+<ClLinks styled={true} term={"close"}><b>close</b></ClLinks> <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> &amp;key *abort → result* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*stream*—a *stream* (either *open* or *closed*). 
+<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> (either <ClLinks styled={true} term={"open"}><i>open</i></ClLinks> or <ClLinks styled={true} term={"closed"}><i>closed</i></ClLinks>). 
 
 
 
-*abort*—a *generalized boolean*. The default is *false*. 
+*abort*—a *generalized boolean*. The default is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
-*result*—**t** if the *stream* was *open* at the time it was received as an *argument*, or *implementation dependent* otherwise. 
+*result*—<ClLinks styled={true} term={"t"}><b>t</b></ClLinks> if the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> was <ClLinks styled={true} term={"open"}><i>open</i></ClLinks> at the time it was received as an <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks>, or *implementation dependent* otherwise. 
 
 
 
@@ -30,27 +30,27 @@
 
 
 
-**close** closes *stream*. Closing a *stream* means that it may no longer be used in input or output operations. The act of *closing* a *file stream* ends the association between the *stream* and its associated *file*; the transaction with the *file system* is terminated, and input/output may no longer be performed on the *stream*. 
+<ClLinks styled={true} term={"close"}><b>close</b></ClLinks> closes <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. Closing a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> means that it may no longer be used in input or output operations. The act of *closing* a *file stream* ends the association between the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> and its associated <ClLinks styled={true} term={"file"}><i>file</i></ClLinks>; the transaction with the *file system* is terminated, and input/output may no longer be performed on the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-If *abort* is *true*, an attempt is made to clean up any side effects of having created *stream*. If *stream* performs output to a file that was created when the *stream* was created, the file is deleted and any previously existing file is not superseded. 
+If *abort* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, an attempt is made to clean up any side effects of having created <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. If <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> performs output to a file that was created when the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> was created, the file is deleted and any previously existing file is not superseded. 
 
 
 
-It is permissible to close an already closed *stream*, but in that case the *result* is *implementation dependent*. 
+It is permissible to close an already closed <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, but in that case the *result* is *implementation dependent*. 
 
 
 
-After *stream* is closed, it is still possible to perform the following query operations upon it: **streamp**, **pathname**, **truename**, **merge-pathnames**, **pathname-host**, **pathname-device**, **pathname-directory**,**pathname-name**, **pathname-type**, **pathname-version**, **namestring**, **file-namestring**, **directory-namestring**, **host-namestring**, **enough-namestring**, **open**, **probe-file**, and **directory**. 
+After <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is closed, it is still possible to perform the following query operations upon it: <ClLinks styled={true} term={"streamp"}><b>streamp</b></ClLinks>, <ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks styled={true} term={"truename"}><b>truename</b></ClLinks>, <ClLinks styled={true} term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks>, **pathname-host**, **pathname-device**, **pathname-directory**,**pathname-name**, **pathname-type**, **pathname-version**, <ClLinks styled={true} term={"namestring"}><b>namestring</b></ClLinks>, <ClLinks styled={true} term={"file-namestring"}><b>file-namestring</b></ClLinks>, <ClLinks styled={true} term={"directory-namestring"}><b>directory-namestring</b></ClLinks>, <ClLinks styled={true} term={"host-namestring"}><b>host-namestring</b></ClLinks>, <ClLinks styled={true} term={"enough-namestring"}><b>enough-namestring</b></ClLinks>, <ClLinks styled={true} term={"open"}><b>open</b></ClLinks>, <ClLinks styled={true} term={"probe-file"}><b>probe-file</b></ClLinks>, and <ClLinks styled={true} term={"directory"}><b>directory</b></ClLinks>. 
 
 
 
-The effect of **close** on a *constructed stream* is to close the argument *stream* only. There is no effect on the *constituents* of *composite streams*. 
+The effect of <ClLinks styled={true} term={"close"}><b>close</b></ClLinks> on a *constructed stream* is to close the argument <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> only. There is no effect on the <ClLinks styled={true} term={"constituent"}><i>constituents</i></ClLinks> of *composite streams*. 
 
 
 
-For a *stream* created with **make-string-output-stream**, the result of **get-output-stream-string** is unspecified after **close**. 
+For a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> created with <ClLinks styled={true} term={"make-string-output-stream"}><b>make-string-output-stream</b></ClLinks>, the result of <ClLinks styled={true} term={"get-output-stream-string"}><b>get-output-stream-string</b></ClLinks> is unspecified after <ClLinks styled={true} term={"close"}><b>close</b></ClLinks>. 
 
 
 
@@ -78,7 +78,7 @@ For a *stream* created with **make-string-output-stream**, the result of **get-o
 
 
 
-The *stream* is *closed* (if necessary). If *abort* is *true* and the *stream* is an *output file stream*, its associated *file* might be deleted. 
+The <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is <ClLinks styled={true} term={"closed"}><i>closed</i></ClLinks> (if necessary). If *abort* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> and the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is an *output file stream*, its associated <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> might be deleted. 
 
 
 
@@ -86,7 +86,7 @@ The *stream* is *closed* (if necessary). If *abort* is *true* and the *stream* i
 
 
 
-**open** 
+<ClLinks styled={true} term={"open"}><b>open</b></ClLinks> 
 
 
 

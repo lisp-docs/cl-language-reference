@@ -1,4 +1,4 @@
-**identity** *Function* 
+**identity** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**identity** *object → object* 
+<ClLinks styled={true} term={"identity"}><b>identity</b></ClLinks> *object → object* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-Returns its argument *object*. 
+Returns its argument <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -37,15 +37,11 @@ Returns its argument *object*.
 
 
 
-**identity** is intended for use with functions that require a *function* as an argument. 
+<ClLinks styled={true} term={"identity"}><b>identity</b></ClLinks> is intended for use with functions that require a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> as an argument. 
 
 
 
-(eql x (identity x)) returns *true* for all possible values of *x*, but (eq x (identity x)) might return *false* when *x* is a *number* or *character* . 
-
-
-
-
+(eql x (identity x)) returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> for all possible values of *x*, but (eq x (identity x)) might return <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> when *x* is a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> or <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -57,7 +53,11 @@ Returns its argument *object*.
 
 
 
-**identity** could be defined by 
+
+
+
+
+<ClLinks styled={true} term={"identity"}><b>identity</b></ClLinks> could be defined by 
 
 
 

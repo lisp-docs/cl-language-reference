@@ -6,7 +6,7 @@
 
 
 
-**nil**. 
+<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-**nil** represents both *boolean* (and *generalized boolean*) *false* and the *empty list*. 
+<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> represents both <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks> (and *generalized boolean*) *false* and the *empty list*. 
 
 
 
@@ -28,7 +28,7 @@ nil → NIL
 
 
 
-**t** 
+<ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 

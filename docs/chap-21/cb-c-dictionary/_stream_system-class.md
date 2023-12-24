@@ -6,7 +6,7 @@
 
 
 
-**stream**, **t** 
+<ClLinks styled={true} term={"stream"}><b>stream</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A *stream* is an *object* that can be used with an input or output function to identify an appropriate source or sink of *characters* or *bytes* for that operation. 
+A <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> that can be used with an input or output function to identify an appropriate source or sink of <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> or <ClLinks styled={true} term={"byte"}><i>bytes</i></ClLinks> for that operation. 
 
 
 

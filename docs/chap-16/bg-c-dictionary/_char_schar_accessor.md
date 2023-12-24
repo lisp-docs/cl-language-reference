@@ -1,4 +1,4 @@
-**char, schar** *Accessor* 
+**char, schar** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**char** *string index → character* 
+<ClLinks styled={true} term={"char"}><b>char</b></ClLinks> *string index → character* 
 
 
 
-**schar** *string index → character* 
+<ClLinks styled={true} term={"schar"}><b>schar</b></ClLinks> *string index → character* 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-*string*—for **char**, a *string*; for **schar**, a *simple string*. 
+<ClLinks styled={true} term={"string"}><i>string</i></ClLinks>—for <ClLinks styled={true} term={"char"}><b>char</b></ClLinks>, a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>; for <ClLinks styled={true} term={"schar"}><b>schar</b></ClLinks>, a *simple string*. 
 
 
 
-*index*—a *valid array index* for the *string*. 
+*index*—a *valid array index* for the <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
 
 
 
-*character*, *new-character*—a *character* . 
+<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>, *new-character*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-**char** and **schar** *access* the *element* of *string* specified by *index*. 
+<ClLinks styled={true} term={"char"}><b>char</b></ClLinks> and <ClLinks styled={true} term={"schar"}><b>schar</b></ClLinks> <ClLinks styled={true} term={"access"}><i>access</i></ClLinks> the <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> of <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> specified by *index*. 
 
 
 
-**char** ignores *fill pointers* when *accessing elements*. 
+<ClLinks styled={true} term={"char"}><b>char</b></ClLinks> ignores *fill pointers* when *accessing elements*. 
 
 
 
@@ -77,7 +77,7 @@ my-filled-string → "AAACBD"
 
 
 
-**aref**, **elt**, Section 3.2.1 (Compiler Terminology) 
+<ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks>, <ClLinks styled={true} term={"elt"}><b>elt</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
 
 
 

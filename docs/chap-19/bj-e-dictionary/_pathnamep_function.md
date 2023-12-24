@@ -1,4 +1,4 @@
-**pathnamep** *Function* 
+**pathnamep** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**pathnamep** *object → generalized-boolean* 
+<ClLinks styled={true} term={"pathnamep"}><b>pathnamep</b></ClLinks> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns *true* if *object* is of *type* **pathname**; otherwise, returns *false*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -48,7 +48,7 @@ Returns *true* if *object* is of *type* **pathname**; otherwise, returns *false*
 
 
 
-(pathnamep *object*) *≡* (typep *object* ’pathname) 
+(pathnamep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’pathname) 
 
 
 
@@ -72,23 +72,23 @@ Returns *true* if *object* is of *type* **pathname**; otherwise, returns *false*
 
 
 
-**pathname-host** *pathname* &amp;key *case → host* 
+**pathname-host** <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> &amp;key *case → host* 
 
 
 
-**pathname-device** *pathname* &amp;key *case → device* 
+**pathname-device** <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> &amp;key *case → device* 
 
 
 
-**pathname-directory** *pathname* &amp;key *case → directory* 
+**pathname-directory** <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> &amp;key *case → directory* 
 
 
 
-**pathname-name** *pathname* &amp;key *case → name* 
+**pathname-name** <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> &amp;key *case → name* 
 
 
 
-**pathname-type** *pathname* &amp;key *case → type* 
+**pathname-type** <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> &amp;key *case → type* 
 
 
 
@@ -100,11 +100,11 @@ Returns *true* if *object* is of *type* **pathname**; otherwise, returns *false*
 
 
 
-*pathname*—a *pathname designator* . 
+<ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>—a *pathname designator* . 
 
 
 
-*case*—one of :local or :common. The default is :local. 
+<ClLinks styled={true} term={"case"}><i>case</i></ClLinks>—one of :local or :common. The default is :local. 
 
 
 
@@ -120,11 +120,11 @@ Returns *true* if *object* is of *type* **pathname**; otherwise, returns *false*
 
 
 
-*name*—a *valid pathname name*. 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a *valid pathname name*. 
 
 
 
-*type*—a *valid pathname type*. 
+<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>—a *valid pathname type*. 
 
 
 
@@ -136,15 +136,15 @@ Returns *true* if *object* is of *type* **pathname**; otherwise, returns *false*
 
 
 
-These functions return the components of *pathname*. 
+These functions return the components of <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>. 
 
 
 
-If the *pathname designator* is a *pathname*, it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
+If the *pathname designator* is a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>, it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
 
 
 
-If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in Pathname Components). 
+If <ClLinks styled={true} term={"case"}><i>case</i></ClLinks> is supplied, it is treated as described in Section 19.2.2.1.2 (Case in Pathname Components). 
 
 **Examples:**
 ```lisp
@@ -218,7 +218,7 @@ If *case* is supplied, it is treated as described in Section 19.2.2.1.2 (Case in
 
 
 
-The *implementation* and the host *file system*. 
+The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> and the host *file system*. 
 
 
 
@@ -226,7 +226,7 @@ The *implementation* and the host *file system*.
 
 
 
-Should signal an error of *type* **type-error** if its first argument is not a *pathname*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its first argument is not a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>. 
 
 
 
@@ -234,7 +234,7 @@ Should signal an error of *type* **type-error** if its first argument is not a *
 
 
 
-**pathname**, **logical-pathname**, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks styled={true} term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 

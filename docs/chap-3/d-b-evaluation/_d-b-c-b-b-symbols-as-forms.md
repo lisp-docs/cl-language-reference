@@ -2,19 +2,19 @@
 
 
 
-If a *form* is a *symbol*, then it is either a *symbol macro* or a *variable*. 
+If a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, then it is either a *symbol macro* or a <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>. 
 
 
 
-The *symbol* names a *symbol macro* if there is a *binding* of the *symbol* as a *symbol macro* in the current *lexical environment* (see **define-symbol-macro** and **symbol-macrolet**). If the *symbol* is a *symbol macro*, its expansion function is obtained. The expansion function is a function of two arguments, and is invoked by calling the *macroexpand hook* with the expansion function as its 
+The <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> names a *symbol macro* if there is a <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> of the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> as a *symbol macro* in the current *lexical environment* (see <ClLinks styled={true} term={"define-symbol-macro"}><b>define-symbol-macro</b></ClLinks> and <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>). If the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is a *symbol macro*, its expansion function is obtained. The expansion function is a function of two arguments, and is invoked by calling the *macroexpand hook* with the expansion function as its 
 
 
 
-first argument, the *symbol* as its second argument, and an *environment object* (corresponding to the current *lexical environment*) as its third argument. The *macroexpand hook*, in turn, calls the expansion function with the *form* as its first argument and the *environment* as its second argument. The *value* of the expansion function, which is passed through by the *macroexpand hook*, is a *form*. This resulting *form* is processed in place of the original *symbol*. 
+first argument, the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> as its second argument, and an *environment object* (corresponding to the current *lexical environment*) as its third argument. The *macroexpand hook*, in turn, calls the expansion function with the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> as its first argument and the <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> as its second argument. The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of the expansion function, which is passed through by the *macroexpand hook*, is a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. This resulting <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is processed in place of the original <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-If a *form* is a *symbol* that is not a *symbol macro*, then it is the *name* of a *variable*, and the *value* of that *variable* is returned. There are three kinds of variables: *lexical variables*, *dynamic variables*,  
+If a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that is not a *symbol macro*, then it is the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of a <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>, and the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of that <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> is returned. There are three kinds of variables: *lexical variables*, *dynamic variables*,  
 
 
 
@@ -22,15 +22,15 @@ If a *form* is a *symbol* that is not a *symbol macro*, then it is the *name* of
 
 
 
-and *constant variables*. A *variable* can store one *object*. The main operations on a *variable* are to *read* <sub>1</sub> and to *write*<sub>1</sub> its *value*. 
+and *constant variables*. A <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> can store one <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. The main operations on a <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> are to <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> <sub>1</sub> and to <ClLinks styled={true} term={"write"}><i>write</i></ClLinks><sub>1</sub> its <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>. 
 
 
 
-An error of *type* **unbound-variable** should be signaled if an *unbound variable* is referenced. 
+An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"unbound-variable"}><b>unbound-variable</b></ClLinks> should be signaled if an *unbound variable* is referenced. 
 
 
 
-*Non-constant variables* can be *assigned* by using **setq** or *bound* <sub>3</sub> by using **let**. Figure 3–1 lists some *defined names* that are applicable to assigning, binding, and defining *variables*. 
+*Non-constant variables* can be *assigned* by using <ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks> or <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks> <sub>3</sub> by using <ClLinks styled={true} term={"let"}><b>let</b></ClLinks>. Figure 3–1 lists some *defined names* that are applicable to assigning, binding, and defining <ClLinks styled={true} term={"variable"}><i>variables</i></ClLinks>. 
 
 
 

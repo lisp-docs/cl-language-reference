@@ -1,4 +1,4 @@
-*∗***print-lines***∗ Variable* 
+*∗<ClLinks styled={true} term={"print-lines"}><b>*print-lines*</b></ClLinks>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-a non-negative *integer* , or **nil**. 
+a non-negative *integer* , or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -14,7 +14,7 @@ a non-negative *integer* , or **nil**.
 
 
 
-**nil**. 
+<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -34,7 +34,7 @@ a non-negative *integer* , or **nil**.
 
 
 
-When the *value* of **\*print-lines\*** is other than **nil**, it is a limit on the number of output lines produced when something is pretty printed. If an attempt is made to go beyond that many lines, “..” is printed at the end of the last line followed by all of the suffixes (closing delimiters) that are pending to be printed. 
+When the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-lines"}><b>\*print-lines\*</b></ClLinks> is other than <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, it is a limit on the number of output lines produced when something is pretty printed. If an attempt is made to go beyond that many lines, “..” is printed at the end of the last line followed by all of the suffixes (closing delimiters) that are pending to be printed. 
 
 
 
@@ -57,7 +57,7 @@ The “..” notation is intentionally different than the “...” notation use
 
 
 
-This notation is used to increase the likelihood that the *Lisp reader* will signal an error if an attempt is later made to read the abbreviated output. Note however that if the truncation occurs in a *string*, as in "This string has been trunc..", the problem situation cannot be detected later and no such error will be signaled. 
+This notation is used to increase the likelihood that the *Lisp reader* will signal an error if an attempt is later made to read the abbreviated output. Note however that if the truncation occurs in a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, as in "This string has been trunc..", the problem situation cannot be detected later and no such error will be signaled. 
 
 
 

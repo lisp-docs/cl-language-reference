@@ -1,4 +1,4 @@
-**method-combination-error** *Function* 
+**method-combination-error** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**method-combination-error** *format-control* &amp;rest *args → implementation-dependent* 
+<ClLinks styled={true} term={"method-combination-error"}><b>method-combination-error</b></ClLinks> *format-control* &amp;rest *args → implementation-dependent* 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-The *function* **method-combination-error** is used to signal an error in method combination. 
+The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"method-combination-error"}><b>method-combination-error</b></ClLinks> is used to signal an error in method combination. 
 
 
 
-The error message is constructed by using a *format-control* suitable for **format** and any *args* to it. Because an implementation may need to add additional contextual information to the error message, **method-combination-error** should be called only within the dynamic extent of a method combination function. 
+The error message is constructed by using a *format-control* suitable for <ClLinks styled={true} term={"format"}><b>format</b></ClLinks> and any *args* to it. Because an implementation may need to add additional contextual information to the error message, <ClLinks styled={true} term={"method-combination-error"}><b>method-combination-error</b></ClLinks> should be called only within the dynamic extent of a method combination function. 
 
 
 
-Whether **method-combination-error** returns to its caller or exits via **throw** is *implementation dependent*. 
+Whether <ClLinks styled={true} term={"method-combination-error"}><b>method-combination-error</b></ClLinks> returns to its caller or exits via <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks> is *implementation dependent*. 
 
 
 
@@ -50,7 +50,7 @@ The debugger might be entered.
 
 
 
-**\*break-on-signals\*** 
+<ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks> 
 
 
 
@@ -58,7 +58,7 @@ The debugger might be entered.
 
 
 
-**define-method-combination** 
+<ClLinks styled={true} term={"define-method-combination"}><b>define-method-combination</b></ClLinks> 
 
 
 
@@ -74,7 +74,7 @@ The debugger might be entered.
 
 
 
-**signal** 
+<ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> 
 
 
 

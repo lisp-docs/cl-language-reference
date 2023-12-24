@@ -6,7 +6,7 @@
 
 
 
-**array**, **t** 
+<ClLinks styled={true} term={"array"}><b>array</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -18,7 +18,7 @@ An <i>array</i> contains <i>objects</i> arranged according to a Cartesian coordi
 
 
 
-When an *array* is created, the program requesting its creation may declare that all *elements* are of a particular *type*, called the *expressed array element type*. The implementation is permitted to *upgrade* this type in order to produce the *actual array element type*, which is the *element type* for the *array* is actually *specialized*. See the *function* **upgraded-array-element-type**. 
+When an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is created, the program requesting its creation may declare that all <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> are of a particular <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>, called the *expressed array element type*. The implementation is permitted to <ClLinks styled={true} term={"upgrade"}><i>upgrade</i></ClLinks> this type in order to produce the *actual array element type*, which is the *element type* for the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is actually <ClLinks styled={true} term={"specialized"}><i>specialized</i></ClLinks>. See the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks>. 
 
 
 
@@ -46,7 +46,7 @@ Specializing.
 
 
 
-*dimension*—a *valid array dimension*. 
+<ClLinks styled={true} term={"dimension"}><i>dimension</i></ClLinks>—a *valid array dimension*. 
 
 
 
@@ -54,7 +54,7 @@ Specializing.
 
 
 
-*rank*—a non-negative *fixnum*. 
+<ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks>—a non-negative <ClLinks styled={true} term={"fixnum"}><i>fixnum</i></ClLinks>. 
 
 
 
@@ -62,15 +62,15 @@ Specializing.
 
 
 
-This denotes the set of *arrays* whose *element type*, *rank*, and *dimensions* match any given *element-type*, *rank*, and *dimensions*. Specifically: 
+This denotes the set of <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> whose *element type*, *rank*, and <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks> match any given *element-type*, <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks>, and <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks>. Specifically: 
 
 
 
-If *element-type* is the *symbol* **\***, *arrays* are not excluded on the basis of their *element type*. Otherwise, only those *arrays* are included whose *actual array element type* is the result of *upgrading element-type*; see Section 15.1.2.1 (Array Upgrading). 
+If *element-type* is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***, <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> are not excluded on the basis of their *element type*. Otherwise, only those <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> are included whose *actual array element type* is the result of *upgrading element-type*; see Section 15.1.2.1 (Array Upgrading). 
 
 
 
-If the *dimension-spec* is a *rank*, the set includes only those *arrays* having that *rank*. If the *dimension-spec* is a *list* of *dimensions*, the set includes only those *arrays* having a *rank* given by the *length* of the *dimensions*, and having the indicated *dimensions*; in this case, **\*** matches any value for the corresponding *dimension*. If the *dimension-spec* is the *symbol* **\***, the set is not restricted on the basis of *rank* or *dimension*. 
+If the *dimension-spec* is a <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks>, the set includes only those <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> having that <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks>. If the *dimension-spec* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks>, the set includes only those <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> having a <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks> given by the <ClLinks styled={true} term={"length"}><i>length</i></ClLinks> of the <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks>, and having the indicated <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks>; in this case, **\*** matches any value for the corresponding <ClLinks styled={true} term={"dimension"}><i>dimension</i></ClLinks>. If the *dimension-spec* is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***, the set is not restricted on the basis of <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks> or <ClLinks styled={true} term={"dimension"}><i>dimension</i></ClLinks>. 
 
 
 
@@ -90,7 +90,7 @@ If the *dimension-spec* is a *rank*, the set includes only those *arrays* having
 
 
 
-**\*print-array\***, **aref**, **make-array**, **vector**, Section 2.4.8.12 (Sharpsign A), Section 22.1.3.8 (Printing Other Arrays) 
+<ClLinks styled={true} term={"print-array"}><b>\*print-array\*</b></ClLinks>, <ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks>, <ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks>, Section 2.4.8.12 (Sharpsign A), Section 22.1.3.8 (Printing Other Arrays) 
 
 
 
@@ -98,11 +98,11 @@ If the *dimension-spec* is a *rank*, the set includes only those *arrays* having
 
 
 
-Note that the type (array t) is a proper *subtype* of the type (array \*). The reason is that the type (array t) is the set of *arrays* that can hold any *object* (the *elements* are of *type* **t**, which includes all *objects*). On the other hand, the type (array \*) is the set of all *arrays* whatsoever, 
+Note that the type (array t) is a proper <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of the type (array \*). The reason is that the type (array t) is the set of <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> that can hold any <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> (the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> are of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, which includes all <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>). On the other hand, the type (array \*) is the set of all <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> whatsoever, 
 
 
 
-including for example *arrays* that can hold only *characters*. The type (array character) is not a *subtype* of the type (array t); the two sets are *disjoint* because the type (array character) is not the set of all *arrays* that can hold *characters*, but rather the set of *arrays* that are specialized to hold precisely *characters* and no other *objects*. 
+including for example <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> that can hold only <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks>. The type (array character) is not a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of the type (array t); the two sets are <ClLinks styled={true} term={"disjoint"}><i>disjoint</i></ClLinks> because the type (array character) is not the set of all <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> that can hold <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks>, but rather the set of <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> that are specialized to hold precisely <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> and no other <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>. 
 
 
 

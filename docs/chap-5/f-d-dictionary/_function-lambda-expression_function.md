@@ -1,4 +1,4 @@
-**function-lambda-expression** *Function* 
+**function-lambda-expression** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**function-lambda-expression** *function* 
+<ClLinks styled={true} term={"function-lambda-expression"}><b>function-lambda-expression</b></ClLinks> <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-*function*—a *function*. 
+<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
 
 
 
-*lambda-expression*—a *lambda expression* or **nil**. 
+*lambda-expression*—a *lambda expression* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*name*—an *object*. 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -38,19 +38,19 @@
 
 
 
-Returns information about *function* as follows: 
+Returns information about <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> as follows: 
 
 
 
-The *primary value*, *lambda-expression*, is *function*’s defining *lambda expression*, or **nil** if the information is not available. The *lambda expression* may have been pre-processed in some ways, but it should remain a suitable argument to **compile** or **function**. Any *implementation* may legitimately return **nil** as the *lambda-expression* of any *function*. 
+The *primary value*, *lambda-expression*, is <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>’s defining *lambda expression*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if the information is not available. The *lambda expression* may have been pre-processed in some ways, but it should remain a suitable argument to <ClLinks styled={true} term={"compile"}><b>compile</b></ClLinks> or <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>. Any <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> may legitimately return <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> as the *lambda-expression* of any <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
 
 
 
-The *secondary value*, *closure-p*, is **nil** if *function*’s definition was enclosed in the *null lexical environment* or something *non-nil* if *function*’s definition might have been enclosed in some *non-null lexical environment*. Any *implementation* may legitimately return *true* as the *closure-p* of any *function*. 
+The *secondary value*, *closure-p*, is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>’s definition was enclosed in the *null lexical environment* or something <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks> if <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>’s definition might have been enclosed in some *non-null lexical environment*. Any <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> may legitimately return <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> as the *closure-p* of any <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
 
 
 
-The *tertiary value*, *name*, is the “name” of *function*. The name is intended for debugging only and is not necessarily one that would be valid for use as a name in **defun** or **function**, for example. By convention, **nil** is used to mean that *function* has no name. Any *implementation* may legitimately return **nil** as the *name* of any *function*. 
+The *tertiary value*, *name*, is the “name” of <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. The name is intended for debugging only and is not necessarily one that would be valid for use as a name in <ClLinks styled={true} term={"defun"}><b>defun</b></ClLinks> or <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>, for example. By convention, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is used to mean that <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> has no name. Any <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> may legitimately return <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> as the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of any <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -101,7 +101,7 @@ The following examples illustrate some possible return values, but are not inten
 
 
 
-Although *implementations* are free to return “**nil**, *true*, **nil**” in all cases, they are encouraged to return a *lambda expression* as the *primary value* in the case where the argument was created by a call to **compile** or **eval** (as opposed to being created by *loading* a *compiled file*). 
+Although <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> are free to return “<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>” in all cases, they are encouraged to return a *lambda expression* as the *primary value* in the case where the argument was created by a call to <ClLinks styled={true} term={"compile"}><b>compile</b></ClLinks> or <ClLinks styled={true} term={"eval"}><b>eval</b></ClLinks> (as opposed to being created by *loading* a *compiled file*). 
 
 
 

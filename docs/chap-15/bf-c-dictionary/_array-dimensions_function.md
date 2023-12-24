@@ -1,4 +1,4 @@
-**array-dimensions** *Function* 
+**array-dimensions** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**array-dimensions** *array → dimensions* 
+<ClLinks styled={true} term={"array-dimensions"}><b>array-dimensions</b></ClLinks> *array → dimensions* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*array*—an *array*. 
+<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
-*dimensions*—a *list* of *integers*. 
+<ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *integers*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a *list* of the *dimensions* of *array*. (If *array* is a *vector* with a *fill pointer* , that *fill pointer* is ignored.) 
+Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks> of <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. (If <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , that *fill pointer* is ignored.) 
 
 
 
@@ -42,7 +42,7 @@ Returns a *list* of the *dimensions* of *array*. (If *array* is a *vector* with 
 
 
 
-Should signal an error of *type* **type-error** if its argument is not an *array*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -50,7 +50,7 @@ Should signal an error of *type* **type-error** if its argument is not an *array
 
 
 
-**array-dimension** 
+<ClLinks styled={true} term={"array-dimension"}><b>array-dimension</b></ClLinks> 
 
 
 

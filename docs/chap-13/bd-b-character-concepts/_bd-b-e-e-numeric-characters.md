@@ -10,7 +10,7 @@ The *numeric characters* are a subset of the *graphic characters*. Of the *stand
 
 
 
-For each *implementation-defined graphic character* that has no *case*, the *implementation* must define whether or not it is a *numeric character* . 
+For each *implementation-defined graphic character* that has no <ClLinks styled={true} term={"case"}><i>case</i></ClLinks>, the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> must define whether or not it is a *numeric character* . 
 
 
 

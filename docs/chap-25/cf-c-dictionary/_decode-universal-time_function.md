@@ -1,4 +1,4 @@
-**decode-universal-time** *Function* 
+**decode-universal-time** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**decode-universal-time** *universal-time* &amp;optional *time-zone* 
+<ClLinks styled={true} term={"decode-universal-time"}><b>decode-universal-time</b></ClLinks> *universal-time* &amp;optional *time-zone* 
 
 
 
@@ -38,7 +38,7 @@ Returns the *decoded time* represented by the given *universal time*.
 
 
 
-If *time-zone* is not supplied, it defaults to the current time zone adjusted for daylight saving time. If *time-zone* is supplied, daylight saving time information is ignored. The daylight saving time flag is **nil** if *time-zone* is supplied. 
+If *time-zone* is not supplied, it defaults to the current time zone adjusted for daylight saving time. If *time-zone* is supplied, daylight saving time information is ignored. The daylight saving time flag is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if *time-zone* is supplied. 
 
 
 
@@ -62,7 +62,7 @@ If *time-zone* is not supplied, it defaults to the current time zone adjusted fo
 
 
 
-*Implementation-dependent* mechanisms for calculating when or if daylight savings time is in effect for any given session. 
+<ClLinks styled={true} term={"implementation-dependent"}><i>Implementation-dependent</i></ClLinks> mechanisms for calculating when or if daylight savings time is in effect for any given session. 
 
 
 
@@ -70,7 +70,7 @@ If *time-zone* is not supplied, it defaults to the current time zone adjusted fo
 
 
 
-**encode-universal-time**, **get-universal-time**, Section 25.1.4 (Time) 
+<ClLinks styled={true} term={"encode-universal-time"}><b>encode-universal-time</b></ClLinks>, <ClLinks styled={true} term={"get-universal-time"}><b>get-universal-time</b></ClLinks>, Section 25.1.4 (Time) 
 
 
 

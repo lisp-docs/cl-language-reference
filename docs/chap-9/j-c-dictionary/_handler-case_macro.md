@@ -1,4 +1,4 @@
-**handler-case** *Macro* 
+**handler-case** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**handler-case** *expression* [[ *\{↓error-clause\}*\* *| ↓no-error-clause* ]] → \{result\}\* 
+<ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> [[ *\{↓error-clause\}*\* *| ↓no-error-clause* ]] → \{result\}\* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*error-clause::*=(*typespec* ([*var*]) *\{declaration\}*\* *\{form\}*\*) 
+*error-clause::*=(*typespec* ([*var*]) <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\*) 
 
 
 
-*no-error-clause::*=(:no-error *lambda-list \{declaration\}*\* *\{form\}*\*) 
+*no-error-clause::*=(:no-error *lambda-list \{declaration\}*\* <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\*) 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*expression*—a *form*. 
+<ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-**handler-case** 
+<ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks> 
 
 
 
@@ -58,15 +58,15 @@
 
 
 
-*declaration*—a **declare** *expression*; not evaluated. 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*form*—a *form*. 
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*results*—In the normal situation, the values returned are those that result from the evaluation of *expression*; in the exceptional situation when control is transferred to a *clause*, the value of the last *form* in that *clause* is returned. 
+*results*—In the normal situation, the values returned are those that result from the evaluation of <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; in the exceptional situation when control is transferred to a *clause*, the value of the last <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> in that *clause* is returned. 
 
 
 
@@ -74,15 +74,15 @@
 
 
 
-**handler-case** executes *expression* in a *dynamic environment* where various handlers are active. Each *error-clause* specifies how to handle a *condition* matching the indicated *typespec*. A *no-error-clause* allows the specification of a particular action if control returns normally. 
+<ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks> executes <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> in a *dynamic environment* where various handlers are active. Each *error-clause* specifies how to handle a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> matching the indicated *typespec*. A *no-error-clause* allows the specification of a particular action if control returns normally. 
 
 
 
-If a *condition* is signaled for which there is an appropriate *error-clause* during the execution of *expression* (*i.e.*, one for which (typep *condition* ’*typespec*) returns *true*) and if there is no intervening handler for a *condition* of that *type*, then control is transferred to the body of the relevant *error-clause*. In this case, the dynamic state is unwound appropriately (so that the handlers established around the *expression* are no longer active), and *var* is bound to the *condition* that had been signaled. If more than one case is provided, those cases are made accessible in parallel. That is, in 
+If a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is signaled for which there is an appropriate *error-clause* during the execution of <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> (*i.e.*, one for which (typep <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> ’*typespec*) returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>) and if there is no intervening handler for a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of that <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>, then control is transferred to the body of the relevant *error-clause*. In this case, the dynamic state is unwound appropriately (so that the handlers established around the <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> are no longer active), and *var* is bound to the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> that had been signaled. If more than one case is provided, those cases are made accessible in parallel. That is, in 
 
 
 
-(handler-case *form* 
+(handler-case <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> 
 
 
 
@@ -98,7 +98,7 @@ if the first *clause* (containing *form1*) has been selected, the handler for th
 
 
 
-The *clauses* are searched sequentially from top to bottom. If there is *type* overlap between *typespecs*, the earlier of the *clauses* is selected. 
+The *clauses* are searched sequentially from top to bottom. If there is <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> overlap between *typespecs*, the earlier of the *clauses* is selected. 
 
 
 
@@ -106,23 +106,19 @@ If *var* is not needed, it can be omitted. That is, a *clause* such as:
 
 
 
-(*typespec* (*var*) (declare (ignore *var*)) *form*) 
+(*typespec* (*var*) (declare (ignore *var*)) <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>) 
 
 
 
-can be written (*typespec* () *form*). 
+can be written (*typespec* () <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>). 
 
 
 
-If there are no *forms* in a selected *clause*, the case, and therefore **handler-case**, returns **nil**. If execution of *expression* returns normally and no *no-error-clause* exists, the values returned by *expression* are returned by **handler-case**. If execution of *expression* returns normally and a *no-error-clause* does exist, the values returned are used as arguments to the function described by constructing (lambda *lambda-list \{form\}*\*) from the *no-error-clause*, and the *values* of that function call are returned by **handler-case**. The handlers which were established around the *expression* are no longer active at the time of this call. 
-
-
+If there are no <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a selected *clause*, the case, and therefore <ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks>, returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. If execution of <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> returns normally and no *no-error-clause* exists, the values returned by <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> are returned by <ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks>. If execution of <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> returns normally and a *no-error-clause* does exist, the values returned are used as arguments to the function described by constructing (lambda *lambda-list \{form\}*\*) from the *no-error-clause*, and the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of that function call are returned by <ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks>. The handlers which were established around the <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> are no longer active at the time of this call. 
 
 
 
 
-
- 
 
 
 
@@ -130,7 +126,11 @@ If there are no *forms* in a selected *clause*, the case, and therefore **handle
 
 
 
-**handler-case** 
+ 
+
+
+
+<ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks> 
 
 
 
@@ -161,7 +161,7 @@ If there are no *forms* in a selected *clause*, the case, and therefore **handle
 
 
 
-**handler-bind**, **ignore-errors**, Section 9.1 (Condition System Concepts) **Notes:** 
+<ClLinks styled={true} term={"handler-bind"}><b>handler-bind</b></ClLinks>, <ClLinks styled={true} term={"ignore-errors"}><b>ignore-errors</b></ClLinks>, Section 9.1 (Condition System Concepts) **Notes:** 
 
 
 

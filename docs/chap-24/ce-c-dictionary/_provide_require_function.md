@@ -1,4 +1,4 @@
-**provide, require** *Function* 
+**provide, require** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**provide** *module-name → implementation-dependent* 
+<ClLinks styled={true} term={"provide"}><b>provide</b></ClLinks> *module-name → implementation-dependent* 
 
 
 
-**require** *module-name* &amp;optional *pathname-list → implementation-dependent* 
+<ClLinks styled={true} term={"require"}><b>require</b></ClLinks> *module-name* &amp;optional *pathname-list → implementation-dependent* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*pathname-list*—**nil**, or a *designator* for a *non-empty list* of *pathname designators*. The default is **nil**. 
+*pathname-list*—<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, or a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a *non-empty list* of *pathname designators*. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -30,19 +30,19 @@
 
 
 
-**provide** adds the *module-name* to the *list* held by **\*modules\***, if such a name is not already present. 
+<ClLinks styled={true} term={"provide"}><b>provide</b></ClLinks> adds the *module-name* to the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> held by <ClLinks styled={true} term={"modules"}><b>\*modules\*</b></ClLinks>, if such a name is not already present. 
 
 
 
-**require** tests for the presence of the *module-name* in the *list* held by **\*modules\***. If it is present, **require** immediately returns. Otherwise, an attempt is made to load an appropriate set of *files* as follows: The *pathname-list* argument, if *non-nil*, specifies a list of *pathnames* to be loaded in order, 
+<ClLinks styled={true} term={"require"}><b>require</b></ClLinks> tests for the presence of the *module-name* in the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> held by <ClLinks styled={true} term={"modules"}><b>\*modules\*</b></ClLinks>. If it is present, <ClLinks styled={true} term={"require"}><b>require</b></ClLinks> immediately returns. Otherwise, an attempt is made to load an appropriate set of <ClLinks styled={true} term={"file"}><i>files</i></ClLinks> as follows: The *pathname-list* argument, if <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, specifies a list of <ClLinks styled={true} term={"pathname"}><i>pathnames</i></ClLinks> to be loaded in order, 
 
 
 
-from left to right. If the *pathname-list* is **nil**, an *implementation-dependent* mechanism will be invoked in an attempt to load the module named *module-name*; if no such module can be loaded, an error of *type* **error** is signaled. 
+from left to right. If the *pathname-list* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, an <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> mechanism will be invoked in an attempt to load the module named *module-name*; if no such module can be loaded, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> is signaled. 
 
 
 
-Both functions use **string=** to test for the presence of a *module-name*. 
+Both functions use <ClLinks styled={true} term={"string"}><b>string=</b></ClLinks> to test for the presence of a *module-name*. 
 
 
 
@@ -72,7 +72,7 @@ System
 
 
 
-**provide** modifies **\*modules\***. 
+<ClLinks styled={true} term={"provide"}><b>provide</b></ClLinks> modifies <ClLinks styled={true} term={"modules"}><b>\*modules\*</b></ClLinks>. 
 
 
 
@@ -80,7 +80,7 @@ System
 
 
 
-The specific action taken by **require** is affected by calls to **provide** (or, in general, any changes to the *value* of **\*modules\***). 
+The specific action taken by <ClLinks styled={true} term={"require"}><b>require</b></ClLinks> is affected by calls to <ClLinks styled={true} term={"provide"}><b>provide</b></ClLinks> (or, in general, any changes to the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"modules"}><b>\*modules\*</b></ClLinks>). 
 
 
 
@@ -88,15 +88,15 @@ The specific action taken by **require** is affected by calls to **provide** (or
 
 
 
-Should signal an error of *type* **type-error** if *module-name* is not a *string designator* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *module-name* is not a *string designator* . 
 
 
 
-If **require** fails to perform the requested operation due to a problem while interacting with the *file system*, an error of *type* **file-error** is signaled. 
+If <ClLinks styled={true} term={"require"}><b>require</b></ClLinks> fails to perform the requested operation due to a problem while interacting with the *file system*, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
 
 
 
-An error of *type* **file-error** might be signaled if any *pathname* in *pathname-list* is a *designator* for a *wild pathname*. 
+An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> might be signaled if any <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> in *pathname-list* is a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a *wild pathname*. 
 
 
 
@@ -104,7 +104,7 @@ An error of *type* **file-error** might be signaled if any *pathname* in *pathna
 
 
 
-**\*modules\***, Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks styled={true} term={"modules"}><b>\*modules\*</b></ClLinks>, Section 19.1.2 (Pathnames as Filenames) 
 
 
 
@@ -112,11 +112,11 @@ An error of *type* **file-error** might be signaled if any *pathname* in *pathna
 
 
 
-The functions **provide** and **require** are deprecated. 
+The functions <ClLinks styled={true} term={"provide"}><b>provide</b></ClLinks> and <ClLinks styled={true} term={"require"}><b>require</b></ClLinks> are deprecated. 
 
 
 
-If a module consists of a single *package*, it is customary for the package and module names to be the same. 
+If a module consists of a single <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, it is customary for the package and module names to be the same. 
 
 
 

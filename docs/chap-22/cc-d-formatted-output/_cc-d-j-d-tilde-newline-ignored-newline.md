@@ -2,7 +2,7 @@
 
 
 
-*Tilde* immediately followed by a *newline* ignores the *newline* and any following non-newline *whitespace*<sub>1</sub> characters. With a :, the *newline* is ignored, but any following *whitespace*<sub>1</sub> is left in place. With an @, the *newline* is left in place, but any following *whitespace*<sub>1</sub> is ignored. For example: 
+*Tilde* immediately followed by a <ClLinks styled={true} term={"newline"}><i>newline</i></ClLinks> ignores the <ClLinks styled={true} term={"newline"}><i>newline</i></ClLinks> and any following non-newline <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> characters. With a :, the <ClLinks styled={true} term={"newline"}><i>newline</i></ClLinks> is ignored, but any following <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> is left in place. With an @, the <ClLinks styled={true} term={"newline"}><i>newline</i></ClLinks> is left in place, but any following <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> is ignored. For example: 
 
 
 

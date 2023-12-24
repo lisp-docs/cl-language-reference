@@ -1,4 +1,4 @@
-*∗***debugger-hook***∗ Variable* 
+*∗<ClLinks styled={true} term={"debugger-hook"}><b>*debugger-hook*</b></ClLinks>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-a *designator* for a *function* of two *arguments* (a *condition* and the *value* of **\*debugger-hook\*** at the time the debugger was entered), or **nil**. 
+a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> (a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> and the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></ClLinks> at the time the debugger was entered), or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -14,7 +14,7 @@ a *designator* for a *function* of two *arguments* (a *condition* and the *value
 
 
 
-**nil**. 
+<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ a *designator* for a *function* of two *arguments* (a *condition* and the *value
 
 
 
-When the *value* of **\*debugger-hook\*** is *non-nil*, it is called prior to normal entry into the debugger, either due to a call to **invoke-debugger** or due to automatic entry into the debugger from a call to **error** or **cerror** with a condition that is not handled. The *function* may either handle the *condition* (transfer control) or return normally (allowing the standard debugger to run). To minimize recursive errors while debugging, **\*debugger-hook\*** is bound to **nil** by **invoke-debugger** prior to calling the *function*. 
+When the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></ClLinks> is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, it is called prior to normal entry into the debugger, either due to a call to <ClLinks styled={true} term={"invoke-debugger"}><b>invoke-debugger</b></ClLinks> or due to automatic entry into the debugger from a call to <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> or <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks> with a condition that is not handled. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> may either handle the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> (transfer control) or return normally (allowing the standard debugger to run). To minimize recursive errors while debugging, <ClLinks styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></ClLinks> is bound to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> by <ClLinks styled={true} term={"invoke-debugger"}><b>invoke-debugger</b></ClLinks> prior to calling the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -68,7 +68,7 @@ When the *value* of **\*debugger-hook\*** is *non-nil*, it is called prior to no
 
 
 
-**invoke-debugger** 
+<ClLinks styled={true} term={"invoke-debugger"}><b>invoke-debugger</b></ClLinks> 
 
 
 
@@ -76,7 +76,7 @@ When the *value* of **\*debugger-hook\*** is *non-nil*, it is called prior to no
 
 
 
-When evaluating code typed in by the user interactively, it is sometimes useful to have the hook function bind **\*debugger-hook\*** to the *function* that was its second argument so that recursive errors can be handled using the same interactive facility. 
+When evaluating code typed in by the user interactively, it is sometimes useful to have the hook function bind <ClLinks styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></ClLinks> to the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> that was its second argument so that recursive errors can be handled using the same interactive facility. 
 
 
 

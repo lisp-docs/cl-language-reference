@@ -1,4 +1,4 @@
-**acons** *Function* 
+**acons** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**acons** *key datum alist → new-alist* 
+<ClLinks styled={true} term={"acons"}><b>acons</b></ClLinks> *key datum alist → new-alist* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*key*—an *object*. 
+<ClLinks styled={true} term={"key"}><i>key</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*datum*—an *object*. 
+*datum*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*alist*—an *association list*. 
+<ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>—an *association list*. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Creates a *fresh cons*, the *cdr* of which is *alist* and the *car* of which is another *fresh cons*, the *car* of which is *key* and the *cdr* of which is *datum*. 
+Creates a *fresh cons*, the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of which is <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> and the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of which is another *fresh cons*, the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of which is <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> and the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of which is *datum*. 
 
 
 
@@ -53,7 +53,7 @@ alist → NIL
 
 
 
-**assoc**, **pairlis** 
+<ClLinks styled={true} term={"assoc"}><b>assoc</b></ClLinks>, <ClLinks styled={true} term={"pairlis"}><b>pairlis</b></ClLinks> 
 
 
 
@@ -61,7 +61,7 @@ alist → NIL
 
 
 
-(acons *key datum alist*) *≡* (cons (cons *key datum*) *alist*) 
+(acons *key datum alist<ClLinks styled={true} term={"t"}><i>) </i></ClLinks>≡* (cons (cons *key datum*) *alist*) 
 
 
 

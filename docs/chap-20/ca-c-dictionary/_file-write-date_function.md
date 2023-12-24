@@ -1,4 +1,4 @@
-**file-write-date** *Function* 
+**file-write-date** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**file-write-date** *pathspec → date* 
+<ClLinks styled={true} term={"file-write-date"}><b>file-write-date</b></ClLinks> *pathspec → date* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*date*—a *universal time* or **nil**. 
+*date*—a *universal time* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a *universal time* representing the time at which the *file* specified by *pathspec* was last written (or created), or returns **nil** if such a time cannot be determined. 
+Returns a *universal time* representing the time at which the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> specified by *pathspec* was last written (or created), or returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if such a time cannot be determined. 
 
 
 
@@ -60,11 +60,11 @@ The host computer’s file system.
 
 
 
-An error of *type* **file-error** is signaled if *pathspec* is *wild*. 
+An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> is signaled if *pathspec* is <ClLinks styled={true} term={"wild"}><i>wild</i></ClLinks>. 
 
 
 
-An error of *type* **file-error** is signaled if the *file system* cannot perform the requested operation. 
+An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> is signaled if the *file system* cannot perform the requested operation. 
 
 
 

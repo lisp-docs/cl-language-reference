@@ -1,4 +1,4 @@
-**upgraded-array-element-type** *Function* 
+**upgraded-array-element-type** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**upgraded-array-element-type** *typespec* &amp;optional *environment → upgraded-typespec* 
+<ClLinks styled={true} term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks> *typespec* &amp;optional *environment → upgraded-typespec* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*environment*—an *environment object*. The default is **nil**, denoting the *null lexical environment* and the current *global environment*. 
+<ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>—an *environment object*. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, denoting the *null lexical environment* and the current *global environment*. 
 
 
 
@@ -30,23 +30,23 @@
 
 
 
-Returns the *element type* of the most *specialized array* representation capable of holding items of the *type* denoted by *typespec*. 
+Returns the *element type* of the most *specialized array* representation capable of holding items of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> denoted by *typespec*. 
 
 
 
-The *typespec* is a *subtype* of (and possibly *type equivalent* to) the *upgraded-typespec*. 
+The *typespec* is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of (and possibly *type equivalent* to) the *upgraded-typespec*. 
 
 
 
-If *typespec* is **bit**, the result is *type equivalent* to bit. If *typespec* is **base-char**, the result is *type equivalent* to base-char. If *typespec* is **character**, the result is *type equivalent* to character. 
+If *typespec* is <ClLinks styled={true} term={"bit"}><b>bit</b></ClLinks>, the result is *type equivalent* to bit. If *typespec* is <ClLinks styled={true} term={"base-char"}><b>base-char</b></ClLinks>, the result is *type equivalent* to base-char. If *typespec* is <ClLinks styled={true} term={"character"}><b>character</b></ClLinks>, the result is *type equivalent* to character. 
 
 
 
-The purpose of **upgraded-array-element-type** is to reveal how an implementation does its *upgrading*. 
+The purpose of <ClLinks styled={true} term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks> is to reveal how an implementation does its *upgrading*. 
 
 
 
-The *environment* is used to expand any *derived type specifiers* that are mentioned in the *typespec*. 
+The <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> is used to expand any *derived type specifiers* that are mentioned in the *typespec*. 
 
 
 
@@ -54,7 +54,7 @@ The *environment* is used to expand any *derived type specifiers* that are menti
 
 
 
-**array-element-type**, **make-array** 
+<ClLinks styled={true} term={"array-element-type"}><b>array-element-type</b></ClLinks>, <ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks> 
 
 
 
@@ -62,7 +62,7 @@ The *environment* is used to expand any *derived type specifiers* that are menti
 
 
 
-Except for storage allocation consequences and dealing correctly with the optional *environment argument*, **upgraded-array-element-type** could be defined as: 
+Except for storage allocation consequences and dealing correctly with the optional *environment argument*, <ClLinks styled={true} term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks> could be defined as: 
 
 
 

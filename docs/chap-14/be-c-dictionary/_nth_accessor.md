@@ -1,4 +1,4 @@
-**nth** *Accessor* 
+**nth** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,10 +6,11 @@
 
 
 
-**nth** *n list → object* 
+<ClLinks styled={true} term={"nth"}><b>nth</b></ClLinks> *n list → object* 
 
 
 
+<!-- **(setf (nth** *n list<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks>  -->
 **(setf (nth** *n list***)** *new-object***)** 
 
 
@@ -22,15 +23,15 @@
 
 
 
-*list*—a *list*, which might be a *dotted list* or a *circular list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, which might be a *dotted list* or a *circular list*. 
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*new-object*—an *object*. 
+*new-object*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -38,15 +39,15 @@
 
 
 
-**nth** locates the *n*th element of *list*, where the *car* of the *list* is the “zeroth” element. Specifically, (nth *n list*) *≡* (car (nthcdr *n list*)) 
+<ClLinks styled={true} term={"nth"}><b>nth</b></ClLinks> locates the *n*th element of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, where the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is the “zeroth” element. Specifically, (nth *n list<ClLinks styled={true} term={"t"}><i>) </i></ClLinks>≡* (car (nthcdr *n list*)) 
 
 
 
-**nth** may be used to specify a *place* to **setf**. Specifically, 
+<ClLinks styled={true} term={"nth"}><b>nth</b></ClLinks> may be used to specify a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> to <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>. Specifically, 
 
 
 
-(setf (nth *n list*) *new-object*) *≡* (setf (car (nthcdr *n list*)) *new-object*) 
+(setf (nth *n list<ClLinks styled={true} term={"t"}><i>) </i></ClLinks>new-object<ClLinks styled={true} term={"t"}><i>) </i></ClLinks>≡* (setf (car (nthcdr *n list<ClLinks styled={true} term={"t"}><i>)) </i></ClLinks>new-object*) 
 
 
 
@@ -65,7 +66,7 @@
 
 
 
-**elt**, **first**, **nthcdr** 
+<ClLinks styled={true} term={"elt"}><b>elt</b></ClLinks>, <ClLinks styled={true} term={"first"}><b>first</b></ClLinks>, <ClLinks styled={true} term={"nthcdr"}><b>nthcdr</b></ClLinks> 
 
 
 

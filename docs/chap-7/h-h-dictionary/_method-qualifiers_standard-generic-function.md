@@ -6,7 +6,7 @@
 
 
 
-**method-qualifiers** *method → qualifiers* 
+<ClLinks styled={true} term={"method-qualifiers"}><b>method-qualifiers</b></ClLinks> *method → qualifiers* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-**method-qualifiers** (*method* **standard-method**) 
+<ClLinks styled={true} term={"method-qualifiers"}><b>method-qualifiers</b></ClLinks> (<ClLinks styled={true} term={"method"}><i>method</i></ClLinks> <ClLinks styled={true} term={"standard-method"}><b>standard-method</b></ClLinks>) 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-*method*—a *method*. 
+<ClLinks styled={true} term={"method"}><i>method</i></ClLinks>—a <ClLinks styled={true} term={"method"}><i>method</i></ClLinks>. 
 
 
 
-*qualifiers*—a *proper list*. 
+<ClLinks styled={true} term={"qualifier"}><i>qualifiers</i></ClLinks>—a *proper list*. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-Returns a *list* of the *qualifiers* of the *method*. 
+Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the <ClLinks styled={true} term={"qualifier"}><i>qualifiers</i></ClLinks> of the <ClLinks styled={true} term={"method"}><i>method</i></ClLinks>. 
 
 
 
@@ -62,7 +62,7 @@ Returns a *list* of the *qualifiers* of the *method*.
 
 
 
-**define-method-combination** 
+<ClLinks styled={true} term={"define-method-combination"}><b>define-method-combination</b></ClLinks> 
 
 
 

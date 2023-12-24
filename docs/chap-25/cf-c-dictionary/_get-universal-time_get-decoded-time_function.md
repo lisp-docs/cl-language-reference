@@ -1,4 +1,4 @@
-**get-universal-time, get-decoded-time** *Function* 
+**get-universal-time, get-decoded-time** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**get-universal-time** *⟨no arguments⟩ → universal-time* 
+<ClLinks styled={true} term={"get-universal-time"}><b>get-universal-time</b></ClLinks> *⟨no arguments⟩ → universal-time* 
 
 
 
-**get-decoded-time** *⟨no arguments⟩* 
+<ClLinks styled={true} term={"get-decoded-time"}><b>get-decoded-time</b></ClLinks> *⟨no arguments⟩* 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-**get-universal-time** returns the current time, represented as a *universal time*. 
+<ClLinks styled={true} term={"get-universal-time"}><b>get-universal-time</b></ClLinks> returns the current time, represented as a *universal time*. 
 
 
 
-**get-decoded-time** returns the current time, represented as a *decoded time*. 
+<ClLinks styled={true} term={"get-decoded-time"}><b>get-decoded-time</b></ClLinks> returns the current time, represented as a *decoded time*. 
 
 
 
@@ -79,7 +79,7 @@ The time of day (*i.e.*, the passage of time), the system clock’s ability to k
 
 
 
-An error of *type* **error** might be signaled if the current time cannot be determined. 
+An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> might be signaled if the current time cannot be determined. 
 
 
 
@@ -87,7 +87,7 @@ An error of *type* **error** might be signaled if the current time cannot be det
 
 
 
-**decode-universal-time**, **encode-universal-time**, Section 25.1.4 (Time) 
+<ClLinks styled={true} term={"decode-universal-time"}><b>decode-universal-time</b></ClLinks>, <ClLinks styled={true} term={"encode-universal-time"}><b>encode-universal-time</b></ClLinks>, Section 25.1.4 (Time) 
 
 
 
@@ -99,7 +99,7 @@ An error of *type* **error** might be signaled if the current time cannot be det
 
 
 
-No *implementation* is required to have a way to verify that the time returned is correct. However, if an *implementation* provides a validity check (*e.g.*, the failure to have properly initialized the system clock can be reliably detected) and that validity check fails, the *implementation* is strongly encouraged (but not required) to signal an error of *type* **error** (rather than, for example, returning a known-to-be-wrong value) that is *correctable* by allowing the user to interactively set the correct time. 
+No <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> is required to have a way to verify that the time returned is correct. However, if an <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> provides a validity check (*e.g.*, the failure to have properly initialized the system clock can be reliably detected) and that validity check fails, the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> is strongly encouraged (but not required) to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> (rather than, for example, returning a known-to-be-wrong value) that is <ClLinks styled={true} term={"correctable"}><i>correctable</i></ClLinks> by allowing the user to interactively set the correct time. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**progv** *symbols values \{form\}*\* → \{result\}\* 
+<ClLinks styled={true} term={"progv"}><b>progv</b></ClLinks> *symbols values \{form\}*\* → \{result\}\* 
 
 
 
@@ -14,19 +14,19 @@
 
 
 
-*symbols*—a *list* of *symbols*; evaluated. 
+<ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>; evaluated. 
 
 
 
-*values*—a *list* of *objects*; evaluated. 
+<ClLinks styled={true} term={"value"}><i>values</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>; evaluated. 
 
 
 
-*forms*—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the *values* returned by the *forms*. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-**progv** creates new dynamic variable *bindings* and executes each *form* using those *bindings*. Each *form* is evaluated in order. 
+<ClLinks styled={true} term={"progv"}><b>progv</b></ClLinks> creates new dynamic variable <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks> and executes each <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> using those <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks>. Each <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is evaluated in order. 
 
 
 
-**progv** allows *binding* one or more dynamic variables whose names may be determined at run time. Each *form* is evaluated in order with the dynamic variables whose names are in *symbols* bound to corresponding *values*. If too few *values* are supplied, the remaining *symbols* are bound and then made to have no value. If too many *values* are supplied, the excess values are ignored. The *bindings* of the dynamic variables are undone on exit from **progv**. 
+<ClLinks styled={true} term={"progv"}><b>progv</b></ClLinks> allows <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> one or more dynamic variables whose names may be determined at run time. Each <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is evaluated in order with the dynamic variables whose names are in <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> bound to corresponding <ClLinks styled={true} term={"value"}><i>values</i></ClLinks>. If too few <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> are supplied, the remaining <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> are bound and then made to have no value. If too many <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> are supplied, the excess values are ignored. The <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks> of the dynamic variables are undone on exit from <ClLinks styled={true} term={"progv"}><b>progv</b></ClLinks>. 
 
 
 
@@ -61,7 +61,7 @@ Assuming \*x\* is not globally special,
 
 
 
-**let**, Section 3.1 (Evaluation) 
+<ClLinks styled={true} term={"let"}><b>let</b></ClLinks>, Section 3.1 (Evaluation) 
 
 
 
@@ -69,7 +69,7 @@ Assuming \*x\* is not globally special,
 
 
 
-Among other things, **progv** is useful when writing interpreters for languages embedded in Lisp; it provides a handle on the mechanism for *binding dynamic variables*. 
+Among other things, <ClLinks styled={true} term={"progv"}><b>progv</b></ClLinks> is useful when writing interpreters for languages embedded in Lisp; it provides a handle on the mechanism for *binding dynamic variables*. 
 
 
 

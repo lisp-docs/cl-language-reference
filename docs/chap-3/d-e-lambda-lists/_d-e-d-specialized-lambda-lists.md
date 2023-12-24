@@ -2,7 +2,7 @@
 
 
 
-A *specialized lambda list* is used to *specialize* a *method* for a particular *signature* and to describe how *arguments* matching that *signature* are received by the *method*. The *defined names* in Figure 3–15 use *specialized lambda lists* in some way; see the dictionary entry for each for information about how. 
+A *specialized lambda list* is used to <ClLinks styled={true} term={"specialize"}><i>specialize</i></ClLinks> a <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> for a particular <ClLinks styled={true} term={"signature"}><i>signature</i></ClLinks> and to describe how <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> matching that <ClLinks styled={true} term={"signature"}><i>signature</i></ClLinks> are received by the <ClLinks styled={true} term={"method"}><i>method</i></ClLinks>. The *defined names* in Figure 3–15 use *specialized lambda lists* in some way; see the dictionary entry for each for information about how. 
 
 
 
@@ -34,7 +34,7 @@ A *specialized lambda list* can contain the *lambda list keywords* shown in Figu
 
 
 
-A *specialized lambda list* is syntactically the same as an *ordinary lambda list* except that each *required parameter* may optionally be associated with a *class* or *object* for which that *parameter* is *specialized*. 
+A *specialized lambda list* is syntactically the same as an *ordinary lambda list* except that each *required parameter* may optionally be associated with a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> or <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> for which that <ClLinks styled={true} term={"parameter"}><i>parameter</i></ClLinks> is <ClLinks styled={true} term={"specialized"}><i>specialized</i></ClLinks>. 
 
 
 

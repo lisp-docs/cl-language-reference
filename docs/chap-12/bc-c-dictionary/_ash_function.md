@@ -1,4 +1,4 @@
-**ash** *Function* 
+**ash** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**ash** *integer count → shifted-integer* 
+<ClLinks styled={true} term={"ash"}><b>ash</b></ClLinks> *integer count → shifted-integer* 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-**ash** performs the arithmetic shift operation on the binary representation of *integer*, which is treated as if it were binary. 
+<ClLinks styled={true} term={"ash"}><b>ash</b></ClLinks> performs the arithmetic shift operation on the binary representation of *integer*, which is treated as if it were binary. 
 
 
 
-**ash** shifts *integer* arithmetically left by *count* bit positions if *count* is positive, or right *count* bit positions if *count* is negative. The shifted value of the same sign as *integer* is returned. 
+<ClLinks styled={true} term={"ash"}><b>ash</b></ClLinks> shifts *integer* arithmetically left by *count* bit positions if *count* is positive, or right *count* bit positions if *count* is negative. The shifted value of the same sign as *integer* is returned. 
 
 
 
@@ -42,7 +42,7 @@ Mathematically speaking, <b>ash</b> performs the computation floor(<i>integer·<
 
 
 
-**ash** is defined to behave as if *integer* were represented in two’s complement form, regardless of how *integers* are represented internally. 
+<ClLinks styled={true} term={"ash"}><b>ash</b></ClLinks> is defined to behave as if *integer* were represented in two’s complement form, regardless of how *integers* are represented internally. 
 
 
 
@@ -59,7 +59,7 @@ Mathematically speaking, <b>ash</b> performs the computation floor(<i>integer·<
 
 
 
-Should signal an error of *type* **type-error** if *integer* is not an *integer* . Should signal an error of *type* **type-error** if *count* is not an *integer* . Might signal **arithmetic-error**. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *integer* is not an *integer* . Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *count* is not an *integer* . Might signal <ClLinks styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>. 
 
 
 
@@ -87,7 +87,7 @@ Should signal an error of *type* **type-error** if *integer* is not an *integer*
 
 
 
-**integer-length** 
+<ClLinks styled={true} term={"integer-length"}><b>integer-length</b></ClLinks> 
 
 
 

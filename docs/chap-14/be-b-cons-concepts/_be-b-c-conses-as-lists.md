@@ -2,23 +2,23 @@
 
 
 
-A *list* is a chain of *conses* in which the *car* of each *cons* is an *element* of the *list*, and the *cdr* of each *cons* is either the next link in the chain or a terminating *atom*. 
+A <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a chain of *conses* in which the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of each <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> is an <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, and the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of each <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> is either the next link in the chain or a terminating <ClLinks styled={true} term={"atom"}><i>atom</i></ClLinks>. 
 
 
 
-A *proper list* is a *list* terminated by the *empty list*. The *empty list* is a *proper list*, but is not a *cons*. 
+A *proper list* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> terminated by the *empty list*. The *empty list* is a *proper list*, but is not a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
 
 
 
-An *improper list* is a *list* that is not a *proper list*; that is, it is a *circular list* or a *dotted list*. 
+An *improper list* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that is not a *proper list*; that is, it is a *circular list* or a *dotted list*. 
 
 
 
-A *dotted list* is a *list* that has a terminating *atom* that is not the *empty list*. A *non-nil atom* by itself is not considered to be a *list* of any kind—not even a *dotted list*. 
+A *dotted list* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that has a terminating <ClLinks styled={true} term={"atom"}><i>atom</i></ClLinks> that is not the *empty list*. A *non-nil atom* by itself is not considered to be a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of any kind—not even a *dotted list*. 
 
 
 
-A *circular list* is a chain of *conses* that has no termination because some *cons* in the chain is the *cdr* of a later *cons*. 
+A *circular list* is a chain of *conses* that has no termination because some <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> in the chain is the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of a later <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**load-time-value** *form* &amp;optional *read-only-p → object* 
+<ClLinks styled={true} term={"load-time-value"}><b>load-time-value</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> &amp;optional *read-only-p → object* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*form*—a *form*; evaluated as described below. 
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
 
 
 
-*read-only-p*—a *boolean*; not evaluated. 
+*read-only-p*—a <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks>; not evaluated. 
 
 
 
-*object*—the *primary value* resulting from evaluating *form*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—the *primary value* resulting from evaluating <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -30,23 +30,23 @@
 
 
 
-**load-time-value** provides a mechanism for delaying evaluation of *form* until the expression is in the run-time environment; see Section 3.2 (Compilation). 
+<ClLinks styled={true} term={"load-time-value"}><b>load-time-value</b></ClLinks> provides a mechanism for delaying evaluation of <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> until the expression is in the run-time environment; see Section 3.2 (Compilation). 
 
 
 
-*Read-only-p* designates whether the result can be considered a *constant object*. If **t**, the result is a read-only quantity that can, if appropriate to the *implementation*, be copied into read-only space and/or *coalesced* with *similar constant objects* from other *programs*. If **nil** (the default), the result must be neither copied nor coalesced; it must be considered to be potentially modifiable data. 
+*Read-only-p* designates whether the result can be considered a *constant object*. If <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, the result is a read-only quantity that can, if appropriate to the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>, be copied into read-only space and/or *coalesced* with *similar constant objects* from other <ClLinks styled={true} term={"program"}><i>programs</i></ClLinks>. If <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> (the default), the result must be neither copied nor coalesced; it must be considered to be potentially modifiable data. 
 
 
 
-If a **load-time-value** expression is processed by **compile-file**, the compiler performs its normal semantic processing (such as macro expansion and translation into machine code) on *form*, but arranges for the execution of *form* to occur at load time in a *null lexical environment*, with the result of this *evaluation* then being treated as a *literal object* at run time. It is guaranteed that 
+If a <ClLinks styled={true} term={"load-time-value"}><b>load-time-value</b></ClLinks> expression is processed by <ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks>, the compiler performs its normal semantic processing (such as macro expansion and translation into machine code) on <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, but arranges for the execution of <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> to occur at load time in a *null lexical environment*, with the result of this <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> then being treated as a *literal object* at run time. It is guaranteed that 
 
 
 
-the evaluation of *form* will take place only once when the *file* is *loaded*, but the order of evaluation with respect to the evaluation of *top level forms* in the file is *implementation-dependent*. 
+the evaluation of <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> will take place only once when the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> is *loaded*, but the order of evaluation with respect to the evaluation of *top level forms* in the file is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
-If a **load-time-value** expression appears within a function compiled with **compile**, the *form* is evaluated at compile time in a *null lexical environment*. The result of this compile-time evaluation is treated as a *literal object* in the compiled code.  
+If a <ClLinks styled={true} term={"load-time-value"}><b>load-time-value</b></ClLinks> expression appears within a function compiled with <ClLinks styled={true} term={"compile"}><b>compile</b></ClLinks>, the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is evaluated at compile time in a *null lexical environment*. The result of this compile-time evaluation is treated as a *literal object* in the compiled code.  
 
 
 
@@ -54,19 +54,19 @@ If a **load-time-value** expression appears within a function compiled with **co
 
 
 
-**load-time-value** 
+<ClLinks styled={true} term={"load-time-value"}><b>load-time-value</b></ClLinks> 
 
 
 
-If a **load-time-value** expression is processed by **eval**, *form* is evaluated in a *null lexical environment*, and one value is returned. Implementations that implicitly compile (or partially compile) expressions processed by **eval** might evaluate *form* only once, at the time this compilation is performed. 
+If a <ClLinks styled={true} term={"load-time-value"}><b>load-time-value</b></ClLinks> expression is processed by <ClLinks styled={true} term={"eval"}><b>eval</b></ClLinks>, <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is evaluated in a *null lexical environment*, and one value is returned. Implementations that implicitly compile (or partially compile) expressions processed by <ClLinks styled={true} term={"eval"}><b>eval</b></ClLinks> might evaluate <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> only once, at the time this compilation is performed. 
 
 
 
-If the *same list* (load-time-value *form*) is evaluated or compiled more than once, it is *implementation-dependent* whether *form* is evaluated only once or is evaluated more than once. This can happen both when an expression being evaluated or compiled shares substructure, and when the *same form* is processed by **eval** or **compile** multiple times. Since a **load-time-value** expression can be referenced in more than one place and can be evaluated multiple times by **eval**, it is *implementation-dependent* whether each execution returns a fresh *object* or returns the same *object* as some other execution. Users must use caution when destructively modifying the resulting *object*. 
+If the *same list* (load-time-value <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>) is evaluated or compiled more than once, it is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is evaluated only once or is evaluated more than once. This can happen both when an expression being evaluated or compiled shares substructure, and when the *same form* is processed by <ClLinks styled={true} term={"eval"}><b>eval</b></ClLinks> or <ClLinks styled={true} term={"compile"}><b>compile</b></ClLinks> multiple times. Since a <ClLinks styled={true} term={"load-time-value"}><b>load-time-value</b></ClLinks> expression can be referenced in more than one place and can be evaluated multiple times by <ClLinks styled={true} term={"eval"}><b>eval</b></ClLinks>, it is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether each execution returns a fresh <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> or returns the same <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> as some other execution. Users must use caution when destructively modifying the resulting <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-If two lists (load-time-value *form*) that are the *same* under **equal** but are not *identical* are evaluated or compiled, their values always come from distinct evaluations of *form*. Their *values* may not be coalesced unless *read-only-p* is **t**. 
+If two lists (load-time-value <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>) that are the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> under <ClLinks styled={true} term={"equal"}><b>equal</b></ClLinks> but are not <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> are evaluated or compiled, their values always come from distinct evaluations of <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. Their <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> may not be coalesced unless *read-only-p* is <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>. 
 
 
 
@@ -108,7 +108,7 @@ If two lists (load-time-value *form*) that are the *same* under **equal** but ar
 
 
 
-**compile-file**, **compile**, **eval**, Section 3.2.2.2 (Minimal Compilation), Section 3.2 (Compilation) 
+<ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks styled={true} term={"compile"}><b>compile</b></ClLinks>, <ClLinks styled={true} term={"eval"}><b>eval</b></ClLinks>, Section 3.2.2.2 (Minimal Compilation), Section 3.2 (Compilation) 
 
 
 
@@ -116,11 +116,11 @@ If two lists (load-time-value *form*) that are the *same* under **equal** but ar
 
 
 
-**load-time-value** must appear outside of quoted structure in a “for *evaluation*” position. In situations which would appear to call for use of **load-time-value** within a quoted structure, the *backquote reader macro* is probably called for; see Section 2.4.6 (Backquote). 
+<ClLinks styled={true} term={"load-time-value"}><b>load-time-value</b></ClLinks> must appear outside of quoted structure in a “for <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks>” position. In situations which would appear to call for use of <ClLinks styled={true} term={"load-time-value"}><b>load-time-value</b></ClLinks> within a quoted structure, the *backquote reader macro* is probably called for; see Section 2.4.6 (Backquote). 
 
 
 
-Specifying **nil** for *read-only-p* is not a way to force an object to become modifiable if it has already been made read-only. It is only a way to say that, for an object that is modifiable, this operation is not intended to make that object read-only. 
+Specifying <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> for *read-only-p* is not a way to force an object to become modifiable if it has already been made read-only. It is only a way to say that, for an object that is modifiable, this operation is not intended to make that object read-only. 
 
 
 

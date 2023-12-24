@@ -6,7 +6,7 @@ Fonts are used in this document to convey information.
 
 
 
-*name* 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks> 
 
 
 
@@ -14,15 +14,15 @@ Denotes a formal term whose meaning is defined in the Glossary. When this font i
 
 
 
-Sometimes a glossary term appears subscripted, as in “*whitespace*<sub>2</sub>.” Such a notation selects one particular Glossary definition out of several, in this case the second. The subscript notation for Glossary terms is generally used where the context might be insufficient to disambiguate among the available definitions. 
+Sometimes a glossary term appears subscripted, as in “<ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub>.” Such a notation selects one particular Glossary definition out of several, in this case the second. The subscript notation for Glossary terms is generally used where the context might be insufficient to disambiguate among the available definitions. 
 
 
 
-*name* 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks> 
 
 
 
-Denotes the introduction of a formal term locally to the current text. There is still a corresponding glossary entry, and is formally equivalent to a use of “*name*,” but the hope is that making such uses conspicuous will save the reader a trip to the glossary in some cases. 
+Denotes the introduction of a formal term locally to the current text. There is still a corresponding glossary entry, and is formally equivalent to a use of “<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>,” but the hope is that making such uses conspicuous will save the reader a trip to the glossary in some cases. 
 
 
 
@@ -30,7 +30,7 @@ Denotes the introduction of a formal term locally to the current text. There is 
 
 
 
-Denotes a symbol in the COMMON-LISP *package*. For information about *case* conventions, see Section 1.4.1.4.1 (Case in Symbols). 
+Denotes a symbol in the COMMON-LISP <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. For information about <ClLinks styled={true} term={"case"}><i>case</i></ClLinks> conventions, see Section 1.4.1.4.1 (Case in Symbols). 
 
 
 
@@ -38,19 +38,19 @@ name
 
 
 
-Denotes a sample *name* or piece of *code* that a programmer might write in Common Lisp. 
+Denotes a sample <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> or piece of <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> that a programmer might write in Common Lisp. 
 
 
 
-This font is also used for certain *standardized* names that are not names of *external symbols* of the COMMON-LISP *package*, such as *keywords*<sub>1</sub>, *package names*, and *loop keywords*. 
+This font is also used for certain <ClLinks styled={true} term={"standardized"}><i>standardized</i></ClLinks> names that are not names of *external symbols* of the COMMON-LISP <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, such as <ClLinks styled={true} term={"keyword"}><i>keywords</i></ClLinks><sub>1</sub>, *package names*, and *loop keywords*. 
 
 
 
-*name* 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks> 
 
 
 
-Denotes the name of a *parameter* or *value*. 
+Denotes the name of a <ClLinks styled={true} term={"parameter"}><i>parameter</i></ClLinks> or <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>. 
 
 
 

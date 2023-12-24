@@ -2,7 +2,7 @@
 
 
 
-The *d-type-spec* argument is used for destructuring. If the *d-type-spec* argument consists solely of the *type* **fixnum**, **float**, **t**, or **nil**, the of-type keyword is optional. The of-type construct is optional in these cases to provide backwards compatibility; thus, the following two expressions are the same: 
+The *d-type-spec* argument is used for destructuring. If the *d-type-spec* argument consists solely of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"fixnum"}><b>fixnum</b></ClLinks>, <ClLinks styled={true} term={"float"}><b>float</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, the of-type keyword is optional. The of-type construct is optional in these cases to provide backwards compatibility; thus, the following two expressions are the same: 
 
 
 
@@ -34,27 +34,23 @@ in l do ...)
 
 
 
-A *type specifier* for a destructuring pattern is a *tree* of *type specifiers* with the same shape as the *tree* of *variable names*, with the following exceptions: 
+A *type specifier* for a destructuring pattern is a <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> of *type specifiers* with the same shape as the <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> of *variable names*, with the following exceptions: 
 
 
 
-*•* When aligning the *trees*, an *atom* in the *tree* of *type specifiers* that matches a *cons* in the variable tree declares the same *type* for each variable in the subtree rooted at the *cons*. 
+*•* When aligning the <ClLinks styled={true} term={"tree"}><i>trees</i></ClLinks>, an <ClLinks styled={true} term={"atom"}><i>atom</i></ClLinks> in the <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> of *type specifiers* that matches a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> in the variable tree declares the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> for each variable in the subtree rooted at the <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
 
 
 
-*•* A *cons* in the *tree* of *type specifiers* that matches an *atom* in the *tree* of *variable names* is a *compound type specifer* . 
+*•* A <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> in the <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> of *type specifiers* that matches an <ClLinks styled={true} term={"atom"}><i>atom</i></ClLinks> in the <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> of *variable names* is a *compound type specifer* . 
 
 
 
-Destructuring allows *binding* of a set of variables to a corresponding set of values anywhere that a value can normally be bound to a single variable. During **loop** expansion, each variable in the 
-
-
+Destructuring allows <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> of a set of variables to a corresponding set of values anywhere that a value can normally be bound to a single variable. During <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> expansion, each variable in the 
 
 
 
 
-
- 
 
 
 
@@ -62,11 +58,15 @@ Destructuring allows *binding* of a set of variables to a corresponding set of v
 
 
 
-variable list is matched with the values in the values list. If there are more variables in the variable list than there are values in the values list, the remaining variables are given a value of **nil**. If there are more values than variables listed, the extra values are discarded. 
+ 
 
 
 
-To assign values from a list to the variables a, b, and c, the for clause could be used to bind the variable numlist to the *car* of the supplied *form*, and then another for clause could be used to bind the variables a, b, and c *sequentially*. 
+variable list is matched with the values in the values list. If there are more variables in the variable list than there are values in the values list, the remaining variables are given a value of <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. If there are more values than variables listed, the extra values are discarded. 
+
+
+
+To assign values from a list to the variables a, b, and c, the for clause could be used to bind the variable numlist to the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of the supplied <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, and then another for clause could be used to bind the variables a, b, and c <ClLinks styled={true} term={"sequentially"}><i>sequentially</i></ClLinks>. 
 
 
 
@@ -98,7 +98,7 @@ collect (list c b a))
 
 
 
-Destructuring makes this process easier by allowing the variables to be bound in each loop iteration. *Types* can be declared by using a list of *type-spec* arguments. If all the *types* are the same, a shorthand destructuring syntax can be used, as the second example illustrates. 
+Destructuring makes this process easier by allowing the variables to be bound in each loop iteration. <ClLinks styled={true} term={"type"}><i>Types</i></ClLinks> can be declared by using a list of *type-spec* arguments. If all the <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> are the same, a shorthand destructuring syntax can be used, as the second example illustrates. 
 
 
 
@@ -142,7 +142,7 @@ collect (list c b a))
 
 
 
-If destructuring is used to declare or initialize a number of groups of variables into *types*, the *loop keyword* and can be used to simplify the process further. ;; Initialize and declare variables in parallel by using the AND construct. 
+If destructuring is used to declare or initialize a number of groups of variables into <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>, the *loop keyword* and can be used to simplify the process further. ;; Initialize and declare variables in parallel by using the AND construct. 
 
 
 
@@ -166,7 +166,7 @@ return (list a b c d e f))
 
 
 
-If **nil** is used in a destructuring list, no variable is provided for its place. 
+If <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is used in a destructuring list, no variable is provided for its place. 
 
 
 
@@ -226,7 +226,7 @@ collect (list a b c d))
 
 
 
-An error of *type* **program-error** is signaled (at macro expansion time) if the same variable is bound twice in any variable-binding clause of a single **loop** expression. Such variables include local variables, iteration control variables, and variables found by destructuring. 
+An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"program-error"}><b>program-error</b></ClLinks> is signaled (at macro expansion time) if the same variable is bound twice in any variable-binding clause of a single <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> expression. Such variables include local variables, iteration control variables, and variables found by destructuring. 
 
 
 

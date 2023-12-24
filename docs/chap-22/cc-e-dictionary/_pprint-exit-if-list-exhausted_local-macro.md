@@ -6,7 +6,7 @@
 
 
 
-**pprint-exit-if-list-exhausted** *⟨no arguments⟩ →* **nil** 
+<ClLinks styled={true} term={"pprint-exit-if-list-exhausted"}><b>pprint-exit-if-list-exhausted</b></ClLinks> *⟨no arguments⟩ →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-Tests whether or not the *list* passed to the *lexically current logical block* has been exhausted; see Section 22.2.1.1 (Dynamic Control of the Arrangement of Output). If this *list* has been reduced to **nil**, **pprint-exit-if-list-exhausted** terminates the execution of the *lexically current logical block* except for the printing of the suffix. Otherwise **pprint-exit-if-list-exhausted** returns **nil**. 
+Tests whether or not the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> passed to the *lexically current logical block* has been exhausted; see Section 22.2.1.1 (Dynamic Control of the Arrangement of Output). If this <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> has been reduced to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, <ClLinks styled={true} term={"pprint-exit-if-list-exhausted"}><b>pprint-exit-if-list-exhausted</b></ClLinks> terminates the execution of the *lexically current logical block* except for the printing of the suffix. Otherwise <ClLinks styled={true} term={"pprint-exit-if-list-exhausted"}><b>pprint-exit-if-list-exhausted</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-Whether or not **pprint-exit-if-list-exhausted** is *fbound* in the *global environment* is *implementation dependent*; however, the restrictions on redefinition and *shadowing* of **pprint-exit-if-list-exhausted** are the same as for *symbols* in the COMMON-LISP *package* which are *fbound* in the *global environment*. The consequences of attempting to use **pprint-exit-if-list-exhausted** outside of **pprint-logical-block** are undefined. 
+Whether or not <ClLinks styled={true} term={"pprint-exit-if-list-exhausted"}><b>pprint-exit-if-list-exhausted</b></ClLinks> is <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks> in the *global environment* is *implementation dependent*; however, the restrictions on redefinition and *shadowing* of <ClLinks styled={true} term={"pprint-exit-if-list-exhausted"}><b>pprint-exit-if-list-exhausted</b></ClLinks> are the same as for <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> in the COMMON-LISP <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> which are <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks> in the *global environment*. The consequences of attempting to use <ClLinks styled={true} term={"pprint-exit-if-list-exhausted"}><b>pprint-exit-if-list-exhausted</b></ClLinks> outside of <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks> are undefined. 
 
 
 
@@ -26,7 +26,7 @@ Whether or not **pprint-exit-if-list-exhausted** is *fbound* in the *global envi
 
 
 
-An error is signaled (at macro expansion time or at run time) if **pprint-exit-if-list-exhausted** is used anywhere other than lexically within a call on **pprint-logical-block**. Also, the consequences of executing **pprint-if-list-exhausted** outside of the dynamic extent of the **pprint-logical-block** which lexically contains it are undefined. 
+An error is signaled (at macro expansion time or at run time) if <ClLinks styled={true} term={"pprint-exit-if-list-exhausted"}><b>pprint-exit-if-list-exhausted</b></ClLinks> is used anywhere other than lexically within a call on <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks>. Also, the consequences of executing **pprint-if-list-exhausted** outside of the dynamic extent of the <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks> which lexically contains it are undefined. 
 
 
 
@@ -34,7 +34,7 @@ An error is signaled (at macro expansion time or at run time) if **pprint-exit-i
 
 
 
-**pprint-logical-block**, **pprint-pop**. 
+<ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks>, <ClLinks styled={true} term={"pprint-pop"}><b>pprint-pop</b></ClLinks>. 
 
 
 

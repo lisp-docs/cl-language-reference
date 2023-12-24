@@ -1,4 +1,4 @@
-**assert** *Macro* 
+**assert** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**assert** *test-form* [(*\{place\}*\*) [*datum-form \{argument-form\}*\*]] 
+<ClLinks styled={true} term={"assert"}><b>assert</b></ClLinks> *test-form* [(<ClLinks styled={true} term={"place"}><i>\{place\}</i></ClLinks>\*) [*datum-form \{argument-form\}*\*]] 
 
 
 
-→ **nil** 
+→ <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -18,31 +18,27 @@
 
 
 
-*test-form*—a *form*; always evaluated. 
+*test-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; always evaluated. 
 
 
 
-*place*—a *place*; evaluated if an error is signaled. 
+<ClLinks styled={true} term={"place"}><i>place</i></ClLinks>—a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>; evaluated if an error is signaled. 
 
 
 
-*datum-form*—a *form* that evaluates to a *datum*. Evaluated each time an error is to be signaled, or not at all if no error is to be signaled. 
+*datum-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a *datum*. Evaluated each time an error is to be signaled, or not at all if no error is to be signaled. 
 
 
 
-*argument-form*—a *form* that evaluates to an *argument*. Evaluated each time an error is to be signaled, or not at all if no error is to be signaled. 
+*argument-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to an <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks>. Evaluated each time an error is to be signaled, or not at all if no error is to be signaled. 
 
 
 
-*datum*, *arguments*—*designators* for a *condition* of default type **error**. (These *designators* are the result of evaluating *datum-form* and each of the *argument-forms*.) 
-
-
+*datum*, <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>—<ClLinks styled={true} term={"designator"}><i>designators</i></ClLinks> for a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of default type <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>. (These <ClLinks styled={true} term={"designator"}><i>designators</i></ClLinks> are the result of evaluating *datum-form* and each of the *argument-forms*.) 
 
 
 
 
-
- 
 
 
 
@@ -50,7 +46,11 @@
 
 
 
-**assert** 
+ 
+
+
+
+<ClLinks styled={true} term={"assert"}><b>assert</b></ClLinks> 
 
 
 
@@ -58,11 +58,11 @@
 
 
 
-**assert** assures that *test-form* evaluates to *true*. If *test-form* evaluates to *false*, **assert** signals a *correctable error* (denoted by *datum* and *arguments*). Continuing from this error using the **continue** *restart* makes it possible for the user to alter the values of the *places* before **assert** evaluates *test-form* again. If the value of *test-form* is *non-nil*, **assert** returns **nil**. 
+<ClLinks styled={true} term={"assert"}><b>assert</b></ClLinks> assures that *test-form* evaluates to <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. If *test-form* evaluates to <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, <ClLinks styled={true} term={"assert"}><b>assert</b></ClLinks> signals a *correctable error* (denoted by *datum* and <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>). Continuing from this error using the **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> makes it possible for the user to alter the values of the <ClLinks styled={true} term={"place"}><i>places</i></ClLinks> before <ClLinks styled={true} term={"assert"}><b>assert</b></ClLinks> evaluates *test-form* again. If the value of *test-form* is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, <ClLinks styled={true} term={"assert"}><b>assert</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-The *places* are *generalized references* to data upon which *test-form* depends, whose values can be changed by the user in attempting to correct the error. *Subforms* of each *place* are only evaluated if an error is signaled, and might be re-evaluated if the error is re-signaled (after continuing without actually fixing the problem). The order of evaluation of the *places* is not specified; see Section 5.1.1.1 (Evaluation of Subforms to Places). If a *place form* is supplied that produces more values than there are store variables, the extra values are ignored. If the supplied *form* produces fewer values than there are store variables, the missing values are set to **nil**. 
+The <ClLinks styled={true} term={"place"}><i>places</i></ClLinks> are *generalized references* to data upon which *test-form* depends, whose values can be changed by the user in attempting to correct the error. <ClLinks styled={true} term={"subform"}><i>Subforms</i></ClLinks> of each <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> are only evaluated if an error is signaled, and might be re-evaluated if the error is re-signaled (after continuing without actually fixing the problem). The order of evaluation of the <ClLinks styled={true} term={"place"}><i>places</i></ClLinks> is not specified; see Section 5.1.1.1 (Evaluation of Subforms to Places). If a *place form* is supplied that produces more values than there are store variables, the extra values are ignored. If the supplied <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> produces fewer values than there are store variables, the missing values are set to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -113,7 +113,7 @@ The *places* are *generalized references* to data upon which *test-form* depends
 
 
 
-**\*break-on-signals\*** 
+<ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks> 
 
 
 
@@ -125,7 +125,7 @@ The set of active *condition handlers*.
 
 
 
-**check-type**, **error**, Section 5.1 (Generalized Reference) 
+<ClLinks styled={true} term={"check-type"}><b>check-type</b></ClLinks>, <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, Section 5.1 (Generalized Reference) 
 
 
 
@@ -133,7 +133,7 @@ The set of active *condition handlers*.
 
 
 
-The debugger need not include the *test-form* in the error message, and the *places* should not be included in the message, but they should be made available for the user’s perusal. If the user gives the “continue” command, the values of any of the references can be altered. The details of this depend on the implementation’s style of user interface. 
+The debugger need not include the *test-form* in the error message, and the <ClLinks styled={true} term={"place"}><i>places</i></ClLinks> should not be included in the message, but they should be made available for the user’s perusal. If the user gives the “continue” command, the values of any of the references can be altered. The details of this depend on the implementation’s style of user interface. 
 
 
 

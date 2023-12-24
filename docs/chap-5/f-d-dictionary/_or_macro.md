@@ -1,20 +1,20 @@
-**or** *Macro*
+**or** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks>
 
 **Syntax:**
 
-**or** *\{form\}*\* → \{results\}\*
+<ClLinks styled={true} term={"or"}><b>or</b></ClLinks> <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* → \{results\}\*
 
 **Arguments and Values:**
 
-*form*—a *form*.
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>.
 
-*results*—the *values* or *primary value* (see below) resulting from the evaluation of the last *form* executed or **nil**.
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> or *primary value* (see below) resulting from the evaluation of the last <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> executed or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>.
 
 **Description:**
 
-**or** evaluates each *form*, one at a time, from left to right. The evaluation of all *forms* terminates when a *form* evaluates to *true* (*i.e.*, something other than **nil**).
+<ClLinks styled={true} term={"or"}><b>or</b></ClLinks> evaluates each <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, one at a time, from left to right. The evaluation of all <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> terminates when a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> evaluates to <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> (*i.e.*, something other than <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>).
 
-If the *evaluation* of any *form* other than the last returns a *primary value* that is *true*, **or** immediately returns that *value* (but no additional *values*) without evaluating the remaining *forms*. If every *form* but the last returns *false* as its *primary value*, **or** returns all *values* returned by the last *form*. If no *forms* are supplied, **or** returns **nil**.
+If the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of any <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> other than the last returns a *primary value* that is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, <ClLinks styled={true} term={"or"}><b>or</b></ClLinks> immediately returns that <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> (but no additional <ClLinks styled={true} term={"value"}><i>values</i></ClLinks>) without evaluating the remaining <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. If every <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> but the last returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> as its *primary value*, <ClLinks styled={true} term={"or"}><b>or</b></ClLinks> returns all <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the last <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. If no <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are supplied, <ClLinks styled={true} term={"or"}><b>or</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>.
 
 **Examples:**
 
@@ -40,10 +40,10 @@ temp3 → 30
 
 **See Also:**
 
-**and**, **some**, **unless**
+<ClLinks styled={true} term={"and"}><b>and</b></ClLinks>, <ClLinks styled={true} term={"some"}><b>some</b></ClLinks>, <ClLinks styled={true} term={"unless"}><b>unless</b></ClLinks>
 
 :::info
 
-We fixed the examples so that it uses **defparameter** to initialize the variables.
+We fixed the examples so that it uses <ClLinks styled={true} term={"defparameter"}><b>defparameter</b></ClLinks> to initialize the variables.
 
 :::

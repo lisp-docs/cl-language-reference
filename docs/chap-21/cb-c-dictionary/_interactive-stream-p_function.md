@@ -1,4 +1,4 @@
-**interactive-stream-p** *Function* 
+**interactive-stream-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**interactive-stream-p** *stream → generalized-boolean* 
+<ClLinks styled={true} term={"interactive-stream-p"}><b>interactive-stream-p</b></ClLinks> *stream → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*stream*—a *stream*. 
+<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns *true* if *stream* is an *interactive stream*; otherwise, returns *false*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is an *interactive stream*; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -47,7 +47,7 @@ Is it safe to proceed? " error)
 
 
 
-Should signal an error of *type* **type-error** if *stream* is not a *stream*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
 
 
 

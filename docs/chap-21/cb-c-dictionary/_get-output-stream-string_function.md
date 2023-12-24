@@ -1,4 +1,4 @@
-**get-output-stream-string** *Function* 
+**get-output-stream-string** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**get-output-stream-string** *string-output-stream → string* 
+<ClLinks styled={true} term={"get-output-stream-string"}><b>get-output-stream-string</b></ClLinks> *string-output-stream → string* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*string-output-stream*—a *stream*. 
+*string-output-stream*—a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-*string*—a *string*. 
+<ClLinks styled={true} term={"string"}><i>string</i></ClLinks>—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a *string* containing, in order, all the *characters* that have been output to *string-output stream*. This operation clears any *characters* on *string-output-stream*, so the *string* contains only those *characters* which have been output since the last call to **get-output-stream-string** or since the creation of the *string-output-stream*, whichever occurred most recently. 
+Returns a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> containing, in order, all the <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> that have been output to *string-output stream*. This operation clears any <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> on *string-output-stream*, so the <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> contains only those <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> which have been output since the last call to <ClLinks styled={true} term={"get-output-stream-string"}><b>get-output-stream-string</b></ClLinks> or since the creation of the *string-output-stream*, whichever occurred most recently. 
 
 
 
@@ -52,11 +52,11 @@ The *string-output-stream* is cleared.
 
 
 
-The consequences are undefined if *stream-output-string* is *closed*. 
+The consequences are undefined if *stream-output-string* is <ClLinks styled={true} term={"closed"}><i>closed</i></ClLinks>. 
 
 
 
-The consequences are undefined if *string-output-stream* is a *stream* that was not produced by **make-string-output-stream**. The consequences are undefined if *string-output-stream* was created implicitly by **with-output-to-string** or **format**. 
+The consequences are undefined if *string-output-stream* is a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> that was not produced by <ClLinks styled={true} term={"make-string-output-stream"}><b>make-string-output-stream</b></ClLinks>. The consequences are undefined if *string-output-stream* was created implicitly by <ClLinks styled={true} term={"with-output-to-string"}><b>with-output-to-string</b></ClLinks> or <ClLinks styled={true} term={"format"}><b>format</b></ClLinks>. 
 
 
 
@@ -64,7 +64,7 @@ The consequences are undefined if *string-output-stream* is a *stream* that was 
 
 
 
-**make-string-output-stream** 
+<ClLinks styled={true} term={"make-string-output-stream"}><b>make-string-output-stream</b></ClLinks> 
 
 
 

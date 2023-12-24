@@ -1,4 +1,4 @@
-**ldiff, tailp** *Function* 
+**ldiff, tailp** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**ldiff** *list object → result-list* 
+<ClLinks styled={true} term={"ldiff"}><b>ldiff</b></ClLinks> *list object → result-list* 
 
 
 
-**tailp** *object list → generalized-boolean* 
+<ClLinks styled={true} term={"tailp"}><b>tailp</b></ClLinks> *object list → generalized-boolean* 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-*list*—a *list*, which might be a *dotted list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, which might be a *dotted list*. 
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*result-list*—a *list*. 
+*result-list*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -54,11 +54,11 @@
 
 
 
-If *object* is the *same* as some *tail* of *list*, **tailp** returns *true*; otherwise, it returns *false*. 
+If <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> as some <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, <ClLinks styled={true} term={"tailp"}><b>tailp</b></ClLinks> returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>; otherwise, it returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
-If *object* is the *same* as some *tail* of *list*, **ldiff** returns a *fresh list* of the *elements* of *list* that precede **object** in the *list structure* of *list*; otherwise, it returns a *copy*<sub>2</sub> of *list*. 
+If <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> as some <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, <ClLinks styled={true} term={"ldiff"}><b>ldiff</b></ClLinks> returns a *fresh list* of the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that precede **object** in the *list structure* of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>; otherwise, it returns a <ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks><sub>2</sub> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -101,7 +101,7 @@ If *object* is the *same* as some *tail* of *list*, **ldiff** returns a *fresh l
 
 
 
-Neither **ldiff** nor **tailp** modifies either of its *arguments*. 
+Neither <ClLinks styled={true} term={"ldiff"}><b>ldiff</b></ClLinks> nor <ClLinks styled={true} term={"tailp"}><b>tailp</b></ClLinks> modifies either of its <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>. 
 
 
 
@@ -109,7 +109,7 @@ Neither **ldiff** nor **tailp** modifies either of its *arguments*.
 
 
 
-Should be prepared to signal an error of *type* **type-error** if *list* is not a *proper list* or a *dotted list*. 
+Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is not a *proper list* or a *dotted list*. 
 
 
 
@@ -125,7 +125,7 @@ Should be prepared to signal an error of *type* **type-error** if *list* is not 
 
 
 
-**set-difference** 
+<ClLinks styled={true} term={"set-difference"}><b>set-difference</b></ClLinks> 
 
 
 
@@ -133,11 +133,11 @@ Should be prepared to signal an error of *type* **type-error** if *list* is not 
 
 
 
-If the *list* is a *circular list*, **tailp** will reliably *yield* a *value* only if the given *object* is in fact a *tail* of *list*. Otherwise, the consequences are unspecified: a given *implementation* which detects the circularity must return *false*, but since an *implementation* is not obliged to detect such a *situation*, **tailp** might just loop indefinitely without returning in that case. 
+If the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a *circular list*, <ClLinks styled={true} term={"tailp"}><b>tailp</b></ClLinks> will reliably <ClLinks styled={true} term={"yield"}><i>yield</i></ClLinks> a <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> only if the given <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is in fact a <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. Otherwise, the consequences are unspecified: a given <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> which detects the circularity must return <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, but since an <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> is not obliged to detect such a <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks>, <ClLinks styled={true} term={"tailp"}><b>tailp</b></ClLinks> might just loop indefinitely without returning in that case. 
 
 
 
-**tailp** could be defined as follows: 
+<ClLinks styled={true} term={"tailp"}><b>tailp</b></ClLinks> could be defined as follows: 
 
 
 
@@ -161,7 +161,7 @@ If the *list* is a *circular list*, **tailp** will reliably *yield* a *value* on
 
 
 
-and **ldiff** could be defined by: 
+and <ClLinks styled={true} term={"ldiff"}><b>ldiff</b></ClLinks> could be defined by: 
 
 
 

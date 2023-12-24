@@ -1,4 +1,4 @@
-**abs** *Function* 
+**abs** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**abs** *number → absolute-value* 
+<ClLinks styled={true} term={"abs"}><b>abs</b></ClLinks> *number → absolute-value* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*number*—a *number* . 
+<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-**abs** returns the absolute value of *number*. 
+<ClLinks styled={true} term={"abs"}><b>abs</b></ClLinks> returns the absolute value of <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>. 
 
 
 
-If *number* is a *real*, the result is of the same *type* as *number*. 
+If <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is a *real*, the result is of the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> as <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>. 
 
 
 
-If *number* is a *complex* , the result is a positive *real* with the same magnitude as *number*. The result can be a *float* even if *number*’s components are *rationals* and an exact rational result would have been possible. Thus the result of (abs #c(3 4)) can be either 5 or 5.0, depending on the implementation. 
+If <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> , the result is a positive *real* with the same magnitude as <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>. The result can be a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> even if <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>’s components are <ClLinks styled={true} term={"rational"}><i>rationals</i></ClLinks> and an exact rational result would have been possible. Thus the result of (abs #c(3 4)) can be either 5 or 5.0, depending on the implementation. 
 
 
 
@@ -65,11 +65,11 @@ Section 12.1.3.3 (Rule of Float Substitutability)
 
 
 
-If *number* is a *complex* , the result is equivalent to the following: 
+If <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> , the result is equivalent to the following: 
 
 
 
-(sqrt (+ (expt (realpart *number*) 2) (expt (imagpart *number*) 2))) 
+(sqrt (+ (expt (realpart <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>) 2) (expt (imagpart <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>) 2))) 
 
 
 

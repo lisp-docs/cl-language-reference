@@ -1,4 +1,4 @@
-**room** *Function* 
+**room** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**room** &amp;optional *x → implementation-dependent* 
+<ClLinks styled={true} term={"room"}><b>room</b></ClLinks> &amp;optional *x → implementation-dependent* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*x*—one of **t**, **nil**, or :default. 
+*x*—one of <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, or :default. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-**room** prints, to *standard output*, information about the state of internal storage and its management. This might include descriptions of the amount of memory in use and the degree of memory compaction, possibly broken down by internal data type if that is appropriate. The nature and format of the printed information is *implementation-dependent*. The intent is to provide information that a *programmer* might use to tune a *program* for a particular *implementation*. 
+<ClLinks styled={true} term={"room"}><b>room</b></ClLinks> prints, to *standard output*, information about the state of internal storage and its management. This might include descriptions of the amount of memory in use and the degree of memory compaction, possibly broken down by internal data type if that is appropriate. The nature and format of the printed information is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. The intent is to provide information that a <ClLinks styled={true} term={"programmer"}><i>programmer</i></ClLinks> might use to tune a <ClLinks styled={true} term={"program"}><i>program</i></ClLinks> for a particular <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 

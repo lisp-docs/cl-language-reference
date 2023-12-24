@@ -1,4 +1,4 @@
-**set-difference, nset-difference** *Function* 
+**set-difference, nset-difference** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**set-difference** *list-1 list-2* &amp;key *key test test-not → result-list* 
+<ClLinks styled={true} term={"set-difference"}><b>set-difference</b></ClLinks> *list-1 list-2* &amp;key *key test test-not → result-list* 
 
 
 
-**nset-difference** *list-1 list-2* &amp;key *key test test-not → result-list* 
+<ClLinks styled={true} term={"nset-difference"}><b>nset-difference</b></ClLinks> *list-1 list-2* &amp;key *key test test-not → result-list* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*test*—a *designator* for a *function* of two *arguments* that returns a *generalized boolean*. *test-not*—a *designator* for a *function* of two *arguments* that returns a *generalized boolean*. 
+*test*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-*key*—a *designator* for a *function* of one argument, or **nil**. 
+<ClLinks styled={true} term={"key"}><i>key</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*result-list*—a *list*. 
+*result-list*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -58,11 +58,11 @@
 
 
 
-**set-difference** returns a *list* of elements of *list-1* that do not appear in *list-2*. 
+<ClLinks styled={true} term={"set-difference"}><b>set-difference</b></ClLinks> returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of elements of *list-1* that do not appear in *list-2*. 
 
 
 
-**nset-difference** is the destructive version of **set-difference**. It may destroy *list-1*. 
+<ClLinks styled={true} term={"nset-difference"}><b>nset-difference</b></ClLinks> is the destructive version of <ClLinks styled={true} term={"set-difference"}><b>set-difference</b></ClLinks>. It may destroy *list-1*. 
 
 
 
@@ -78,7 +78,7 @@ An element of *list-1* appears in the result if and only if it does not match an
 
 
 
-There is no guarantee that the order of elements in the result will reflect the ordering of the arguments in any particular way. The result *list* may share cells with, or be **eq** to, either of *list-1* or *list-2*, if appropriate. 
+There is no guarantee that the order of elements in the result will reflect the ordering of the arguments in any particular way. The result <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> may share cells with, or be <ClLinks styled={true} term={"eq"}><b>eq</b></ClLinks> to, either of *list-1* or *list-2*, if appropriate. 
 
 
 
@@ -114,7 +114,7 @@ lst2 → (("c" . "a") ("e" . "b") ("d" . "a"))
 
 
 
-**nset-difference** may destroy *list-1*. 
+<ClLinks styled={true} term={"nset-difference"}><b>nset-difference</b></ClLinks> may destroy *list-1*. 
 
 
 
@@ -122,7 +122,7 @@ lst2 → (("c" . "a") ("e" . "b") ("d" . "a"))
 
 
 
-Should be prepared to signal an error of *type* **type-error** if *list-1* and *list-2* are not *proper lists*. 
+Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *list-1* and *list-2* are not *proper lists*. 
 
 
 

@@ -2,11 +2,11 @@
 
 
 
-A *cons* that is used as a *form* is called a *compound form*. 
+A <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> that is used as a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is called a *compound form*. 
 
 
 
-If the *car* of that *compound form* is a *symbol*, that *symbol* is the *name* of an *operator* , and the *form* is either a *special form*, a *macro form*, or a *function form*, depending on the *function binding* of the *operator* in the current *lexical environment*. If the *operator* is neither a *special operator*  
+If the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of that *compound form* is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, that <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of an <ClLinks styled={true} term={"operator"}><i>operator</i></ClLinks> , and the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is either a *special form*, a *macro form*, or a *function form*, depending on the *function binding* of the <ClLinks styled={true} term={"operator"}><i>operator</i></ClLinks> in the current *lexical environment*. If the <ClLinks styled={true} term={"operator"}><i>operator</i></ClLinks> is neither a *special operator*  
 
 
 
@@ -14,11 +14,11 @@ If the *car* of that *compound form* is a *symbol*, that *symbol* is the *name* 
 
 
 
-nor a *macro name*, it is assumed to be a *function name* (even if there is no definition for such a *function*). 
+nor a *macro name*, it is assumed to be a *function name* (even if there is no definition for such a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>). 
 
 
 
-If the *car* of the *compound form* is not a *symbol*, then that *car* must be a *lambda expression*, in which case the *compound form* is a *lambda form*. 
+If the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of the *compound form* is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, then that <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> must be a *lambda expression*, in which case the *compound form* is a *lambda form*. 
 
 
 

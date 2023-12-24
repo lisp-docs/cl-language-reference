@@ -1,4 +1,4 @@
-**unread-char** *Function* 
+**unread-char** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**unread-char** *character* &amp;optional *input-stream →* **nil** 
+<ClLinks styled={true} term={"unread-char"}><b>unread-char</b></ClLinks> <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> &amp;optional *input-stream →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*character*—a *character* ; must be the last *character* that was read from *input-stream*. *input-stream*—an *input stream designator* . The default is *standard input*. 
+<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> ; must be the last <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> that was read from *input-stream*. *input-stream*—an *input stream designator* . The default is *standard input*. 
 
 
 
@@ -22,19 +22,19 @@
 
 
 
-**unread-char** places *character* back onto the front of *input-stream* so that it will again be the next character in *input-stream*. 
+<ClLinks styled={true} term={"unread-char"}><b>unread-char</b></ClLinks> places <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> back onto the front of *input-stream* so that it will again be the next character in *input-stream*. 
 
 
 
-When *input-stream* is an *echo stream*, no attempt is made to undo any echoing of the character that might already have been done on *input-stream*. However, characters placed on *input-stream* by **unread-char** are marked in such a way as to inhibit later re-echo by **read-char**. 
+When *input-stream* is an *echo stream*, no attempt is made to undo any echoing of the character that might already have been done on *input-stream*. However, characters placed on *input-stream* by <ClLinks styled={true} term={"unread-char"}><b>unread-char</b></ClLinks> are marked in such a way as to inhibit later re-echo by <ClLinks styled={true} term={"read-char"}><b>read-char</b></ClLinks>. 
 
 
 
-It is an error to invoke **unread-char** twice consecutively on the same *stream* without an intervening call to **read-char** (or some other input operation which implicitly reads characters) on that *stream*. 
+It is an error to invoke <ClLinks styled={true} term={"unread-char"}><b>unread-char</b></ClLinks> twice consecutively on the same <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> without an intervening call to <ClLinks styled={true} term={"read-char"}><b>read-char</b></ClLinks> (or some other input operation which implicitly reads characters) on that <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-Invoking **peek-char** or **read-char** commits all previous characters. The consequences of invoking **unread-char** on any character preceding that which is returned by **peek-char** (including those passed over by **peek-char** that has a *non-nil peek-type*) are unspecified. In particular, the consequences of invoking **unread-char** after **peek-char** are unspecified. 
+Invoking <ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks> or <ClLinks styled={true} term={"read-char"}><b>read-char</b></ClLinks> commits all previous characters. The consequences of invoking <ClLinks styled={true} term={"unread-char"}><b>unread-char</b></ClLinks> on any character preceding that which is returned by <ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks> (including those passed over by <ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks> that has a *non-nil peek-type*) are unspecified. In particular, the consequences of invoking <ClLinks styled={true} term={"unread-char"}><b>unread-char</b></ClLinks> after <ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks> are unspecified. 
 
 
 
@@ -58,7 +58,7 @@ Invoking **peek-char** or **read-char** commits all previous characters. The con
 
 
 
-**\*standard-input\***, **\*terminal-io\***. 
+**\*standard-input\***, <ClLinks styled={true} term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ Invoking **peek-char** or **read-char** commits all previous characters. The con
 
 
 
-**peek-char**, **read-char**, Section 21.1 (Stream Concepts) 
+<ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks>, <ClLinks styled={true} term={"read-char"}><b>read-char</b></ClLinks>, Section 21.1 (Stream Concepts) 
 
 
 
@@ -74,7 +74,7 @@ Invoking **peek-char** or **read-char** commits all previous characters. The con
 
 
 
-**unread-char** is intended to be an efficient mechanism for allowing the *Lisp reader* and other parsers to perform one-character lookahead in *input-stream*. 
+<ClLinks styled={true} term={"unread-char"}><b>unread-char</b></ClLinks> is intended to be an efficient mechanism for allowing the *Lisp reader* and other parsers to perform one-character lookahead in *input-stream*. 
 
 
 

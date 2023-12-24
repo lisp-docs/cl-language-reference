@@ -1,16 +1,16 @@
-**loop** *Macro*
+**loop** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks>
 
 **Syntax:**
 
-The “simple” **loop** *form*:
+The “simple” <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>:
 
-**loop** *\{compound-form\}*\* → \{result\}\*
+<ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> *\{compound-form\}*\* → \{result\}\*
 
-The “extended” **loop** *form*:
+The “extended” <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>:
 
-**loop** [*↓name-clause*] *\{↓variable-clause\}*\* *\{↓main-clause\}*\* → \{result\}\*
+<ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> [*↓name-clause*] *\{↓variable-clause\}*\* *\{↓main-clause\}*\* → \{result\}\*
 
-*name-clause::*=named *name*
+*name-clause::*=named <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>
 
 *variable-clause::*=*↓with-clause | ↓initial-final | ↓for-as-clause*
 
@@ -18,17 +18,17 @@ The “extended” **loop** *form*:
 
 *main-clause::*=*↓unconditional | ↓accumulation | ↓conditional | ↓termination-test | ↓initial-final initial-final::*=initially *\{compound-form\}*<sup>+</sup>*|* finally *\{compound-form\}*<sup>+</sup>
 
-*unconditional::*=*\{*do *|* doing*\} \{compound-form\}*<sup>+</sup>*|* return *\{form |* it*\}*
+*unconditional::*=*\{*do *|* doing*\} \{compound-form\}*<sup>+</sup>*|* return *\{form |* it<ClLinks styled={true} term={"t"}><i>\}</i></ClLinks>
 
 *accumulation::*=*↓list-accumulation | ↓numeric-accumulation*
 
-*list-accumulation::*=*\{*collect *|* collecting *|* append *|* appending *|* nconc *|* nconcing*\} \{form |* it*\}* [into *simple-var*]
+*list-accumulation::*=*\{*collect *|* collecting *|* append *|* appending *|* nconc *|* nconcing*\} \{form |* it<ClLinks styled={true} term={"t"}><i>\}</i></ClLinks> [into *simple-var*]
 
-**loop**
+<ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>
 
 *numeric-accumulation::*=*\{*count *|* counting *|* sum *|* summing *|*
 
-maximize *|* maximizing *|* minimize *|* minimizing*\} \{form |* it*\}*
+maximize *|* maximizing *|* minimize *|* minimizing*\} \{form |* it<ClLinks styled={true} term={"t"}><i>\}</i></ClLinks>
 
 [into *simple-var*] [*type-spec*]
 
@@ -56,7 +56,7 @@ maximize *|* maximizing *|* minimize *|* minimizing*\} \{form |* it*\}*
 
 *for-as-equals-then::*=*var* [*type-spec*] = *form1* [then *form2*]
 
-*for-as-across::*=*var* [*type-spec*] across *vector*
+*for-as-across::*=*var* [*type-spec*] across <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>
 
 *for-as-hash::*=*var* [*type-spec*] being *\{*each *|* the*\}*
 
@@ -68,7 +68,7 @@ maximize *|* maximizing *|* minimize *|* minimizing*\} \{form |* it*\}*
 
 [using (hash-key *other-var*)]*\}*
 
-**loop**
+<ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>
 
 *for-as-package::*=*var* [*type-spec*] being *\{*each *|* the*\}*
 
@@ -82,7 +82,7 @@ external-symbol *|* external-symbols*\}*
 
 *type-spec::*=*↓simple-type-spec | ↓destructured-type-spec*
 
-*simple-type-spec::*=**fixnum** *|* **float** *|* **t** *|* **nil**
+*simple-type-spec::*=<ClLinks styled={true} term={"fixnum"}><b>fixnum</b></ClLinks> *|* <ClLinks styled={true} term={"float"}><b>float</b></ClLinks> *|* <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> *|* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>
 
 *destructured-type-spec::*=of-type *d-type-spec*
 
@@ -96,31 +96,31 @@ external-symbol *|* external-symbols*\}*
 
 *other-var::*=*↓d-var-spec*
 
-*d-var-spec::*=*simple-var |* **nil** *|* (*↓d-var-spec* . *↓d-var-spec*)
+*d-var-spec::*=*simple-var |* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> *|* (*↓d-var-spec* . *↓d-var-spec*)
 
 **Arguments and Values:**
 
 *compound-form*—a *compound form*.
 
-*name*—a *symbol*.
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>.
 
-*simple-var*—a *symbol* (a *variable* name).
+*simple-var*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> (a <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> name).
 
-*form*, *form1*, *form2*, *form3*—a *form*.
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, *form1*, *form2*, *form3*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>.
 
-*step-fun*—a *form* that evaluates to a *function* of one *argument*.
+*step-fun*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks>.
 
-*vector*—a *form* that evaluates to a *vector* .
+<ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> .
 
-*hash-table*—a *form* that evaluates to a *hash table*.
+*hash-table*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a *hash table*.
 
-*package*—a *form* that evaluates to a *package designator* .
+<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a *package designator* .
 
 *type-specifier*—a *type specifier* . This might be either an *atomic type specifier* or a *compound type specifier* , which introduces some additional complications to proper parsing in the face of destructuring; for further information, see Section 6.1.1.7 (Destructuring).
 
-*result*—an *object*.
+*result*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>.
 
-**loop**
+<ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>
 
 **Description:**
 
@@ -168,10 +168,10 @@ For details, see Section 6.1 (The LOOP Facility).
 
 **See Also:**
 
-**do**, **dolist**, **dotimes**, **return**, **go**, **throw**, Section 6.1.1.7 (Destructuring)
+<ClLinks styled={true} term={"do"}><b>do</b></ClLinks>, <ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks>, <ClLinks styled={true} term={"dotimes"}><b>dotimes</b></ClLinks>, <ClLinks styled={true} term={"return"}><b>return</b></ClLinks>, <ClLinks styled={true} term={"go"}><b>go</b></ClLinks>, <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks>, Section 6.1.1.7 (Destructuring)
 
 **Notes:**
 
-Except that **loop-finish** cannot be used within a simple **loop** *form*, a simple **loop** *form* is related to an extended **loop** *form* in the following way:
+Except that <ClLinks styled={true} term={"loop-finish"}><b>loop-finish</b></ClLinks> cannot be used within a simple <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, a simple <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is related to an extended <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> in the following way:
 
 (loop *\{compound-form\}*\*) *≡* (loop do *\{compound-form\}*\*)

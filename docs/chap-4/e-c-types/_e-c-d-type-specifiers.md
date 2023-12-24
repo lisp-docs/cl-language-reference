@@ -2,7 +2,7 @@
 
 
 
-*Type specifiers* can be *symbols*, *classes*, or *lists*. Figure 4–2 lists *symbols* that are *standardized atomic type specifiers*, and Figure 4–3 lists *standardized compound type specifier names*. For syntax information, see the dictionary entry for the corresponding *type specifier* . It is possible to define new *type specifiers* using **defclass**, **define-condition**, **defstruct**, or **deftype**.  
+*Type specifiers* can be <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>, *classes*, or <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>. Figure 4–2 lists <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> that are *standardized atomic type specifiers*, and Figure 4–3 lists *standardized compound type specifier names*. For syntax information, see the dictionary entry for the corresponding *type specifier* . It is possible to define new *type specifiers* using <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks>, <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks>, or <ClLinks styled={true} term={"deftype"}><b>deftype</b></ClLinks>.  
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-If a *type specifier* is a *list*, the *car* of the *list* is a *symbol*, and the rest of the *list* is subsidiary *type* information. Such a *type specifier* is called a *compound type specifier*. Except as explicitly stated otherwise, the subsidiary items can be unspecified. The unspecified subsidiary items are indicated by writing \*. For example, to completely specify a *vector* , the *type* of the elements and the length of the *vector* must be present. 
+If a *type specifier* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, and the rest of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is subsidiary <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> information. Such a *type specifier* is called a *compound type specifier*. Except as explicitly stated otherwise, the subsidiary items can be unspecified. The unspecified subsidiary items are indicated by writing \*. For example, to completely specify a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> , the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> of the elements and the length of the <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> must be present. 
 
 
 
@@ -50,11 +50,11 @@ The following leaves the element type unspecified:
 
 
 
-Suppose that two *type specifiers* are the same except that the first has a \* where the second has a more explicit specification. Then the second denotes a *subtype* of the *type* denoted by the first. 
+Suppose that two *type specifiers* are the same except that the first has a \* where the second has a more explicit specification. Then the second denotes a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> denoted by the first. 
 
 
 
-If a *list* has one or more unspecified items at the end, those items can be dropped. If dropping all occurrences of \* results in a *singleton list*, then the parentheses can be dropped as well (the list can be replaced by the *symbol* in its *car* ). For example, (vector double-float \*) can be abbreviated to (vector double-float), and (vector \* \*) can be abbreviated to (vector) and then to vector. 
+If a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> has one or more unspecified items at the end, those items can be dropped. If dropping all occurrences of \* results in a *singleton list*, then the parentheses can be dropped as well (the list can be replaced by the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> in its <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> ). For example, (vector double-float \*) can be abbreviated to (vector double-float), and (vector \* \*) can be abbreviated to (vector) and then to vector. 
 
 
 
@@ -90,11 +90,11 @@ New *type specifiers* can come into existence in two ways.
 
 
 
-*•* Defining a structure by using **defstruct** without using the :type specifier or defining a *class* by using **defclass** or **define-condition** automatically causes the name of the structure or class to be a new *type specifier symbol*. 
+*•* Defining a structure by using <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> without using the :type specifier or defining a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> by using <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks> or <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks> automatically causes the name of the structure or class to be a new *type specifier symbol*. 
 
 
 
-*•* **deftype** can be used to define *derived type specifiers*, which act as ‘abbreviations’ for other *type specifiers*. 
+*•* <ClLinks styled={true} term={"deftype"}><b>deftype</b></ClLinks> can be used to define *derived type specifiers*, which act as ‘abbreviations’ for other *type specifiers*. 
 
 
 
@@ -110,11 +110,11 @@ A *class object* can be used as a *type specifier* . When used this way, it deno
 
 
 
-of that *class*. 
+of that <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. 
 
 
 
-Figure 4–5 shows some *defined names* relating to *types* and *declarations*. 
+Figure 4–5 shows some *defined names* relating to <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> and <ClLinks styled={true} term={"declaration"}><i>declarations</i></ClLinks>. 
 
 
 

@@ -1,4 +1,4 @@
-**make-string** *Function* 
+**make-string** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**make-string** *size* &amp;key *initial-element element-type → string* 
+<ClLinks styled={true} term={"make-string"}><b>make-string</b></ClLinks> *size* &amp;key *initial-element element-type → string* 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-*initial-element*—a *character* . The default is *implementation-dependent*. 
+*initial-element*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . The default is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
-*element-type*—a *type specifier* . The default is **character**. 
+*element-type*—a *type specifier* . The default is <ClLinks styled={true} term={"character"}><b>character</b></ClLinks>. 
 
 
 
-*string*—a *simple string*. 
+<ClLinks styled={true} term={"string"}><i>string</i></ClLinks>—a *simple string*. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-**make-string** returns a *simple string* of length *size* whose elements have been initialized to *initial-element*. 
+<ClLinks styled={true} term={"make-string"}><b>make-string</b></ClLinks> returns a *simple string* of length *size* whose elements have been initialized to *initial-element*. 
 
 
 
-The *element-type* names the *type* of the *elements* of the *string*; a *string* is constructed of the most *specialized type* that can accommodate *elements* of the given *type*. 
+The *element-type* names the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> of the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>; a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> is constructed of the most *specialized type* that can accommodate <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the given <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>. 
 
 
 
@@ -53,7 +53,7 @@ The *element-type* names the *type* of the *elements* of the *string*; a *string
 
 
 
-The *implementation*. 
+The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 

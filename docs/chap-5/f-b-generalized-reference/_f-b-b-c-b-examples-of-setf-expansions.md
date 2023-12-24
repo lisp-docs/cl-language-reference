@@ -54,7 +54,7 @@ For (subseq *seq s e*):
 
 
 
-In some cases, if a *subform* of a *place* is itself a *place*, it is necessary to expand the *subform* in order to compute some of the values in the expansion of the outer *place*. For (ldb *bs* (car *exp*)): 
+In some cases, if a <ClLinks styled={true} term={"subform"}><i>subform</i></ClLinks> of a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> is itself a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, it is necessary to expand the <ClLinks styled={true} term={"subform"}><i>subform</i></ClLinks> in order to compute some of the values in the expansion of the outer <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. For (ldb *bs* (car *exp*)): 
 
 
 

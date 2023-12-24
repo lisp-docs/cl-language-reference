@@ -2,7 +2,7 @@
 
 
 
-A *define-method-combination arguments lambda list* is used by the :arguments option to **define-method-combination**. 
+A *define-method-combination arguments lambda list* is used by the :arguments option to <ClLinks styled={true} term={"define-method-combination"}><b>define-method-combination</b></ClLinks>. 
 
 
 

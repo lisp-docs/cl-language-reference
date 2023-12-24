@@ -1,8 +1,8 @@
-**peek-char** *Function* **Syntax:** 
+**peek-char** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> **Syntax:** 
 
 
 
-**peek-char** &amp;optional *peek-type input-stream eof-error-p eof-value recursive-p* 
+<ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks> &amp;optional *peek-type input-stream eof-error-p eof-value recursive-p* 
 
 
 
@@ -10,7 +10,7 @@
 
 
 
-*peek-type*—a *character* or **t** or **nil**. 
+*peek-type*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> or <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -22,19 +22,19 @@
 
 
 
-*eof-error-p*—a *generalized boolean*. The default is *true*. 
+*eof-error-p*—a *generalized boolean*. The default is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 
 
 
 
-*eof-value*—an *object*. The default is **nil**. 
+*eof-value*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*recursive-p*—a *generalized boolean*. The default is *false*. 
+*recursive-p*—a *generalized boolean*. The default is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
-*char*—a *character* or the *eof-value*. 
+*char*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> or the *eof-value*. 
 
 
 
@@ -42,23 +42,23 @@
 
 
 
-**peek-char** obtains the next character in *input-stream* without actually reading it, thus leaving the character to be read at a later time. It can also be used to skip over and discard intervening characters in the *input-stream* until a particular character is found. 
+<ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks> obtains the next character in *input-stream* without actually reading it, thus leaving the character to be read at a later time. It can also be used to skip over and discard intervening characters in the *input-stream* until a particular character is found. 
 
 
 
-If *peek-type* is not supplied or **nil**, **peek-char** returns the next character to be read from *input-stream*, without actually removing it from *input-stream*. The next time input is done from *input-stream*, the character will still be there. If *peek-type* is **t**, then **peek-char** skips over *whitespace*<sub>2</sub> *characters*, but not comments, and then performs the peeking operation on the next character. The last character examined, the one that starts an *object*, is not removed from *input-stream*. If *peek-type* is a *character* , then **peek-char** skips over input characters until a character that is **char=** to that *character* is found; that character is left in *input-stream*. 
+If *peek-type* is not supplied or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, <ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks> returns the next character to be read from *input-stream*, without actually removing it from *input-stream*. The next time input is done from *input-stream*, the character will still be there. If *peek-type* is <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, then <ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks> skips over <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks>, but not comments, and then performs the peeking operation on the next character. The last character examined, the one that starts an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>, is not removed from *input-stream*. If *peek-type* is a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> , then <ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks> skips over input characters until a character that is <ClLinks styled={true} term={"char="}><b>char=</b></ClLinks> to that <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is found; that character is left in *input-stream*. 
 
 
 
-If an *end of file*<sub>2</sub> occurs and *eof-error-p* is *false*, *eof-value* is returned. 
+If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, *eof-value* is returned. 
 
 
 
-If *recursive-p* is *true*, this call is expected to be embedded in a higher-level call to **read** or a similar *function* used by the *Lisp reader* . 
+If *recursive-p* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, this call is expected to be embedded in a higher-level call to <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> or a similar <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> used by the *Lisp reader* . 
 
 
 
-When *input-stream* is an *echo stream*, characters that are only peeked at are not echoed. In the case that *peek-type* is not **nil**, the characters that are passed by **peek-char** are treated as if by **read-char**, and so are echoed unless they have been marked otherwise by **unread-char**. 
+When *input-stream* is an *echo stream*, characters that are only peeked at are not echoed. In the case that *peek-type* is not <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, the characters that are passed by <ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks> are treated as if by <ClLinks styled={true} term={"read-char"}><b>read-char</b></ClLinks>, and so are echoed unless they have been marked otherwise by <ClLinks styled={true} term={"unread-char"}><b>unread-char</b></ClLinks>. 
 
 
 
@@ -81,7 +81,7 @@ When *input-stream* is an *echo stream*, characters that are only peeked at are 
 
 
 
-**\*readtable\***, **\*standard-input\***, **\*terminal-io\***. 
+<ClLinks styled={true} term={"readtable"}><b>\*readtable\*</b></ClLinks>, **\*standard-input\***, <ClLinks styled={true} term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
 
 
 
@@ -89,12 +89,12 @@ When *input-stream* is an *echo stream*, characters that are only peeked at are 
 
 
 
-If *eof-error-p* is *true* and an *end of file*<sub>2</sub> occurs an error of *type* **end-of-file** is signaled. 
+If *eof-error-p* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> and an *end of file*<sub>2</sub> occurs an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled. 
 
 
 
-If *peek-type* is a *character* , an *end of file*<sub>2</sub> occurs, and *eof-error-p* is *true*, an error of *type* **end-of-file** is signaled. 
+If *peek-type* is a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> , an *end of file*<sub>2</sub> occurs, and *eof-error-p* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled. 
 
 
 
-If *recursive-p* is *true* and an *end of file*<sub>2</sub> occurs, an error of *type* **end-of-file** is signaled. 
+If *recursive-p* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> and an *end of file*<sub>2</sub> occurs, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled. 

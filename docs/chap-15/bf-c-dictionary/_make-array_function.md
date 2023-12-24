@@ -1,4 +1,4 @@
-**make-array** *Function* 
+**make-array** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**make-array** *dimensions* &amp;key *element-type* 
+<ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks> <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks> &amp;key *element-type* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*adjustable* 
+<ClLinks styled={true} term={"adjustable"}><i>adjustable</i></ClLinks> 
 
 
 
@@ -42,31 +42,31 @@
 
 
 
-*dimensions*—a *designator* for a *list* of *valid array dimensions*. 
+<ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *valid array dimensions*. 
 
 
 
-*element-type*—a *type specifier* . The default is **t**. 
+*element-type*—a *type specifier* . The default is <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>. 
 
 
 
-*initial-element*—an *object*. 
+*initial-element*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*initial-contents*—an *object*. 
+*initial-contents*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*adjustable*—a *generalized boolean*. The default is **nil**. 
+<ClLinks styled={true} term={"adjustable"}><i>adjustable</i></ClLinks>—a *generalized boolean*. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*fill-pointer*—a *valid fill pointer* for the *array* to be created, or **t** or **nil**. The default is **nil**. 
+*fill-pointer*—a *valid fill pointer* for the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> to be created, or <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*displaced-to*—an *array* or **nil**. The default is **nil**. This option must not be supplied if either *initial-element* or *initial-contents* is supplied. 
+*displaced-to*—an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. This option must not be supplied if either *initial-element* or *initial-contents* is supplied. 
 
 
 
@@ -74,7 +74,7 @@
 
 
 
-*new-array*—an *array*. 
+*new-array*—an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -90,7 +90,7 @@
 
 
 
-**make-array** 
+<ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks> 
 
 
 
@@ -98,23 +98,23 @@
 
 
 
-Creates and returns an *array* constructed of the most *specialized type* that can accommodate elements of *type* given by *element-type*. If *dimensions* is **nil** then a zero-dimensional *array* is created. 
+Creates and returns an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> constructed of the most *specialized type* that can accommodate elements of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> given by *element-type*. If <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> then a zero-dimensional <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is created. 
 
 
 
-*Dimensions* represents the dimensionality of the new *array*. 
+<ClLinks styled={true} term={"dimension"}><i>Dimensions</i></ClLinks> represents the dimensionality of the new <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
-*element-type* indicates the *type* of the elements intended to be stored in the *new-array*. The *new-array* can actually store any *objects* of the *type* which results from *upgrading element-type*; see Section 15.1.2.1 (Array Upgrading). 
+*element-type* indicates the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> of the elements intended to be stored in the *new-array*. The *new-array* can actually store any <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> which results from *upgrading element-type*; see Section 15.1.2.1 (Array Upgrading). 
 
 
 
-If *initial-element* is supplied, it is used to initialize each *element* of *new-array*. If *initial-element* is supplied, it must be of the *type* given by *element-type*. *initial-element* cannot be supplied if either the :initial-contents option is supplied or *displaced-to* is *non-nil*. If *initial-element* is not supplied, the consequences of later reading an uninitialized *element* of *new-array* are undefined unless either *initial-contents* is supplied or *displaced-to* is *non-nil*. 
+If *initial-element* is supplied, it is used to initialize each <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> of *new-array*. If *initial-element* is supplied, it must be of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> given by *element-type*. *initial-element* cannot be supplied if either the :initial-contents option is supplied or *displaced-to* is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>. If *initial-element* is not supplied, the consequences of later reading an uninitialized <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> of *new-array* are undefined unless either *initial-contents* is supplied or *displaced-to* is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>. 
 
 
 
-*initial-contents* is used to initialize the contents of *array*. For example: 
+*initial-contents* is used to initialize the contents of <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. For example: 
 
 
 
@@ -138,31 +138,27 @@ If *initial-element* is supplied, it is used to initialize each *element* of *ne
 
 
 
-*initial-contents* is composed of a nested structure of *sequences*. The numbers of levels in the structure must equal the rank of *array*. Each leaf of the nested structure must be of the *type* given by *element-type*. If *array* is zero-dimensional, then *initial-contents* specifies the single *element*. Otherwise, *initial-contents* must be a *sequence* whose length is equal to the first dimension; each element must be a nested structure for an *array* whose dimensions are the remaining dimensions, and so on. *Initial-contents* cannot be supplied if either *initial-element* is supplied or *displaced-to* is *non-nil*. If *initial-contents* is not supplied, the consequences of later reading an uninitialized *element* of *new-array* are undefined unless either *initial-element* is supplied or *displaced-to* is *non-nil*. 
+*initial-contents* is composed of a nested structure of *sequences*. The numbers of levels in the structure must equal the rank of <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. Each leaf of the nested structure must be of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> given by *element-type*. If <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is zero-dimensional, then *initial-contents* specifies the single <ClLinks styled={true} term={"element"}><i>element</i></ClLinks>. Otherwise, *initial-contents* must be a *sequence* whose length is equal to the first dimension; each element must be a nested structure for an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> whose dimensions are the remaining dimensions, and so on. *Initial-contents* cannot be supplied if either *initial-element* is supplied or *displaced-to* is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>. If *initial-contents* is not supplied, the consequences of later reading an uninitialized <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> of *new-array* are undefined unless either *initial-element* is supplied or *displaced-to* is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>. 
 
 
 
-If *adjustable* is *non-nil*, the array is *expressly adjustable* (and so *actually adjustable*); otherwise, the array is not *expressly adjustable* (and it is *implementation-dependent* whether the array is *actually adjustable*). 
+If <ClLinks styled={true} term={"adjustable"}><i>adjustable</i></ClLinks> is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, the array is *expressly adjustable* (and so *actually adjustable*); otherwise, the array is not *expressly adjustable* (and it is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the array is *actually adjustable*). 
 
 
 
-If *fill-pointer* is *non-nil*, the *array* must be one-dimensional; that is, the *array* must be a *vector* . If *fill-pointer* is **t**, the length of the *vector* is used to initialize the *fill pointer* . If *fill-pointer* is an *integer* , it becomes the initial *fill pointer* for the *vector* . 
+If *fill-pointer* is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> must be one-dimensional; that is, the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> must be a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> . If *fill-pointer* is <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, the length of the <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> is used to initialize the *fill pointer* . If *fill-pointer* is an *integer* , it becomes the initial *fill pointer* for the <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> . 
 
 
 
-If *displaced-to* is *non-nil*, **make-array** will create a *displaced array* and *displaced-to* is the *target* of that *displaced array*. In that case, the consequences are undefined if the *actual array element type* of *displaced-to* is not *type equivalent* to the *actual array element type* of the *array* being created. If *displaced-to* is **nil**, the *array* is not a *displaced array*. 
+If *displaced-to* is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, <ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks> will create a *displaced array* and *displaced-to* is the <ClLinks styled={true} term={"target"}><i>target</i></ClLinks> of that *displaced array*. In that case, the consequences are undefined if the *actual array element type* of *displaced-to* is not *type equivalent* to the *actual array element type* of the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> being created. If *displaced-to* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is not a *displaced array*. 
 
 
 
-The *displaced-index-offset* is made to be the index offset of the *array*. When an array A is given as the :displaced-to *argument* to **make-array** when creating array B, then array B is said to be 
-
-
+The *displaced-index-offset* is made to be the index offset of the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. When an array A is given as the :displaced-to <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> to <ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks> when creating array B, then array B is said to be 
 
 
 
 
-
- 
 
 
 
@@ -170,23 +166,27 @@ The *displaced-index-offset* is made to be the index offset of the *array*. When
 
 
 
-**make-array** 
+ 
 
 
 
-displaced to array A. The total number of elements in an *array*, called the total size of the *array*, is calculated as the product of all the dimensions. It is required that the total size of A be no smaller than the sum of the total size of B plus the offset n supplied by the *displaced-index-offset*. The effect of displacing is that array B does not have any elements of its own, but instead maps *accesses* to itself into *accesses* to array A. The mapping treats both *arrays* as if they were one-dimensional by taking the elements in row-major order, and then maps an *access* to element k of array B to an *access* to element k+n of array A. 
+<ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks> 
 
 
 
-If **make-array** is called with *adjustable*, *fill-pointer*, and *displaced-to* each **nil**, then the result is a *simple array*. If **make-array** is called with one or more of *adjustable*, *fill-pointer*, or *displaced-to* being *true*, whether the resulting *array* is a *simple array* is *implementation-dependent*. 
+displaced to array A. The total number of elements in an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>, called the total size of the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>, is calculated as the product of all the dimensions. It is required that the total size of A be no smaller than the sum of the total size of B plus the offset n supplied by the *displaced-index-offset*. The effect of displacing is that array B does not have any elements of its own, but instead maps *accesses* to itself into *accesses* to array A. The mapping treats both <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> as if they were one-dimensional by taking the elements in row-major order, and then maps an <ClLinks styled={true} term={"access"}><i>access</i></ClLinks> to element k of array B to an <ClLinks styled={true} term={"access"}><i>access</i></ClLinks> to element k+n of array A. 
 
 
 
-When an array A is given as the :displaced-to *argument* to **make-array** when creating array B, then array B is said to be displaced to array A. The total number of elements in an *array*, called the total size of the *array*, is calculated as the product of all the dimensions. The consequences are unspecified if the total size of A is smaller than the sum of the total size of B plus the offset n supplied by the *displaced-index-offset*. The effect of displacing is that array B does not have any 
+If <ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks> is called with <ClLinks styled={true} term={"adjustable"}><i>adjustable</i></ClLinks>, *fill-pointer*, and *displaced-to* each <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, then the result is a *simple array*. If <ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks> is called with one or more of <ClLinks styled={true} term={"adjustable"}><i>adjustable</i></ClLinks>, *fill-pointer*, or *displaced-to* being <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, whether the resulting <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is a *simple array* is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
-elements of its own, but instead maps *accesses* to itself into *accesses* to array A. The mapping treats both *arrays* as if they were one-dimensional by taking the elements in row-major order, and then maps an *access* to element k of array B to an *access* to *element* k+n of array A. 
+When an array A is given as the :displaced-to <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> to <ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks> when creating array B, then array B is said to be displaced to array A. The total number of elements in an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>, called the total size of the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>, is calculated as the product of all the dimensions. The consequences are unspecified if the total size of A is smaller than the sum of the total size of B plus the offset n supplied by the *displaced-index-offset*. The effect of displacing is that array B does not have any 
+
+
+
+elements of its own, but instead maps *accesses* to itself into *accesses* to array A. The mapping treats both <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> as if they were one-dimensional by taking the elements in row-major order, and then maps an <ClLinks styled={true} term={"access"}><i>access</i></ClLinks> to element k of array B to an <ClLinks styled={true} term={"access"}><i>access</i></ClLinks> to <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> k+n of array A. 
 
 
 
@@ -256,7 +256,7 @@ The last example depends on the fact that *arrays* are, in effect, stored in row
 
 
 
-**adjustable-array-p**, **aref**, **arrayp**, **array-element-type**, **array-rank-limit**, **array-dimension-limit**, **fill-pointer**, **upgraded-array-element-type** 
+**adjustable-array-p**, <ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks>, <ClLinks styled={true} term={"arrayp"}><b>arrayp</b></ClLinks>, <ClLinks styled={true} term={"array-element-type"}><b>array-element-type</b></ClLinks>, <ClLinks styled={true} term={"array-rank-limit"}><b>array-rank-limit</b></ClLinks>, <ClLinks styled={true} term={"array-dimension-limit"}><b>array-dimension-limit</b></ClLinks>, <ClLinks styled={true} term={"fill-pointer"}><b>fill-pointer</b></ClLinks>, <ClLinks styled={true} term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks> 
 
 
 
@@ -264,7 +264,7 @@ The last example depends on the fact that *arrays* are, in effect, stored in row
 
 
 
-There is no specified way to create an *array* for which **adjustable-array-p** definitely returns *false*. There is no specified way to create an *array* that is not a *simple array*. 
+There is no specified way to create an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> for which **adjustable-array-p** definitely returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. There is no specified way to create an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> that is not a *simple array*. 
 
 
 
@@ -280,7 +280,7 @@ There is no specified way to create an *array* for which **adjustable-array-p** 
 
 
 
-**adjust-array** 
+<ClLinks styled={true} term={"adjust-array"}><b>adjust-array</b></ClLinks> 
 
 
 

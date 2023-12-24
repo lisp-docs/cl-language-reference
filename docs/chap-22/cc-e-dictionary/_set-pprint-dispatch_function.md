@@ -1,4 +1,4 @@
-**set-pprint-dispatch** *Function* 
+**set-pprint-dispatch** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**set-pprint-dispatch** *type-specifier function* &amp;optional *priority table →* **nil** 
+<ClLinks styled={true} term={"set-pprint-dispatch"}><b>set-pprint-dispatch</b></ClLinks> *type-specifier function* &amp;optional *priority table →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*function*—a *function*, a *function name*, or **nil**. 
+<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, a *function name*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*table*—a *pprint dispatch table*. The default is the *value* of **\*print-pprint-dispatch\***. 
+*table*—a *pprint dispatch table*. The default is the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></ClLinks>. 
 
 
 
@@ -46,11 +46,11 @@ Installs an entry into the *pprint dispatch table* which is *table*.
 
 
 
-*Type-specifier* is the *key* of the entry. The first action of **set-pprint-dispatch** is to remove any pre-existing entry associated with *type-specifier*. This guarantees that there will never be two entries associated with the same *type specifier* in a given *pprint dispatch table*. Equality of *type specifiers* is tested by **equal**. 
+*Type-specifier* is the <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> of the entry. The first action of <ClLinks styled={true} term={"set-pprint-dispatch"}><b>set-pprint-dispatch</b></ClLinks> is to remove any pre-existing entry associated with *type-specifier*. This guarantees that there will never be two entries associated with the same *type specifier* in a given *pprint dispatch table*. Equality of *type specifiers* is tested by <ClLinks styled={true} term={"equal"}><b>equal</b></ClLinks>. 
 
 
 
-Two values are associated with each *type specifier* in a *pprint dispatch table*: a *function* and a *priority*. The *function* must accept two arguments: the *stream* to which output is sent and the *object* to be printed. The *function* should *pretty print* the *object* to the *stream*. The *function* can assume that object satisfies the *type* given by *type-specifier* . The *function* must obey **\*print-readably\***. Any values returned by the *function* are ignored. 
+Two values are associated with each *type specifier* in a *pprint dispatch table*: a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> and a *priority*. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> must accept two arguments: the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> to which output is sent and the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> to be printed. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> should *pretty print* the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> to the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> can assume that object satisfies the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> given by *type-specifier* . The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> must obey <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks>. Any values returned by the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> are ignored. 
 
 
 
@@ -58,7 +58,7 @@ Two values are associated with each *type specifier* in a *pprint dispatch table
 
 
 
-It is permissible for *function* to be **nil**. In this situation, there will be no *type-specifier* entry in *table* after **set-pprint-dispatch** returns. 
+It is permissible for <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> to be <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. In this situation, there will be no *type-specifier* entry in *table* after <ClLinks styled={true} term={"set-pprint-dispatch"}><b>set-pprint-dispatch</b></ClLinks> returns. 
 
 
 
@@ -74,7 +74,7 @@ An error is signaled if *priority* is not a *real*.
 
 
 
-Since *pprint dispatch tables* are often used to control the pretty printing of Lisp code, it is common for the *type-specifier* to be an *expression* of the form 
+Since *pprint dispatch tables* are often used to control the pretty printing of Lisp code, it is common for the *type-specifier* to be an <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> of the form 
 
 
 
@@ -82,7 +82,7 @@ Since *pprint dispatch tables* are often used to control the pretty printing of 
 
 
 
-This signifies that the corresponding object must be a cons cell whose *car* matches the *type specifier car-type* and whose *cdr* matches the *type specifier cdr-type*. The *cdr-type* can be omitted in which case it defaults to **t**. 
+This signifies that the corresponding object must be a cons cell whose <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> matches the *type specifier car-type* and whose <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> matches the *type specifier cdr-type*. The *cdr-type* can be omitted in which case it defaults to <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>. 
 
 
 

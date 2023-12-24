@@ -1,4 +1,4 @@
-**hash-table-rehash-size** *Function* 
+**hash-table-rehash-size** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**hash-table-rehash-size** *hash-table → rehash-size* 
+<ClLinks styled={true} term={"hash-table-rehash-size"}><b>hash-table-rehash-size</b></ClLinks> *hash-table → rehash-size* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*rehash-size*—a *real* of *type* (or (integer 1 \*) (float (1.0) \*)). 
+*rehash-size*—a *real* of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> (or (integer 1 \*) (float (1.0) \*)). 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the current rehash size of *hash-table*, suitable for use in a call to **make-hash-table** in order to produce a *hash table* with state corresponding to the current state of the *hash-table*. 
+Returns the current rehash size of *hash-table*, suitable for use in a call to <ClLinks styled={true} term={"make-hash-table"}><b>make-hash-table</b></ClLinks> in order to produce a *hash table* with state corresponding to the current state of the *hash-table*. 
 
 
 
@@ -42,7 +42,7 @@ Returns the current rehash size of *hash-table*, suitable for use in a call to *
 
 
 
-Should signal an error of *type* **type-error** if *hash-table* is not a *hash table*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *hash-table* is not a *hash table*. 
 
 
 
@@ -50,7 +50,7 @@ Should signal an error of *type* **type-error** if *hash-table* is not a *hash t
 
 
 
-**make-hash-table**, **hash-table-rehash-threshold** 
+<ClLinks styled={true} term={"make-hash-table"}><b>make-hash-table</b></ClLinks>, <ClLinks styled={true} term={"hash-table-rehash-threshold"}><b>hash-table-rehash-threshold</b></ClLinks> 
 
 
 
@@ -74,7 +74,7 @@ Hash
 
 
 
-is a *float*, indicating that the rate of growth of the *hash-table* when rehashed is intended to be multiplicative. However, this value is only advice to the *implementation*; the actual amount by which the *hash-table* will grow upon rehash is *implementation-dependent*. 
+is a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>, indicating that the rate of growth of the *hash-table* when rehashed is intended to be multiplicative. However, this value is only advice to the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>; the actual amount by which the *hash-table* will grow upon rehash is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-**logical-pathname**, **pathname**, **t** 
+<ClLinks styled={true} term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, <ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A *pathname* that uses a *namestring* syntax that is *implementation-independent*, and that has component values that are *implementation-independent*. *Logical pathnames* do not refer directly to *filenames* 
+A <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> that uses a <ClLinks styled={true} term={"namestring"}><i>namestring</i></ClLinks> syntax that is <ClLinks styled={true} term={"implementation-independent"}><i>implementation-independent</i></ClLinks>, and that has component values that are <ClLinks styled={true} term={"implementation-independent"}><i>implementation-independent</i></ClLinks>. *Logical pathnames* do not refer directly to <ClLinks styled={true} term={"filename"}><i>filenames</i></ClLinks> 
 
 
 

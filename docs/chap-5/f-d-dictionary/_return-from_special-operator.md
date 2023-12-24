@@ -6,7 +6,7 @@
 
 
 
-**return-from** *name* [*result*] → 
+<ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks> <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> [*result*] → 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*name*—a *block tag*; not evaluated. 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a *block tag*; not evaluated. 
 
 
 
-*result*—a *form*; evaluated. The default is **nil**. 
+*result*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-Returns control and *multiple values*<sub>2</sub> from a lexically enclosing *block*. 
+Returns control and *multiple values*<sub>2</sub> from a lexically enclosing <ClLinks styled={true} term={"block"}><i>block</i></ClLinks>. 
 
 
 
-A **block** *form* named *name* must lexically enclose the occurrence of **return-from**; any *values yielded* by the *evaluation* of *result* are immediately returned from the innermost such lexically enclosing *block*. 
+A <ClLinks styled={true} term={"block"}><b>block</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> named <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> must lexically enclose the occurrence of <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks>; any *values yielded* by the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of *result* are immediately returned from the innermost such lexically enclosing <ClLinks styled={true} term={"block"}><i>block</i></ClLinks>. 
 
 
 
-The transfer of control initiated by **return-from** is performed as described in Section 5.2 (Transfer of Control to an Exit Point). 
+The transfer of control initiated by <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks> is performed as described in Section 5.2 (Transfer of Control to an Exit Point). 
 
 
 
@@ -100,7 +100,7 @@ The following has undefined consequences because the **block** *form* exits norm
 
 
 
-**block**, **return**, Section 3.1 (Evaluation) 
+<ClLinks styled={true} term={"block"}><b>block</b></ClLinks>, <ClLinks styled={true} term={"return"}><b>return</b></ClLinks>, Section 3.1 (Evaluation) 
 
 
 

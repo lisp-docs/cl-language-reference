@@ -1,4 +1,4 @@
-**write-to-string, prin1-to-string, princ-to-string** *Function* 
+**write-to-string, prin1-to-string, princ-to-string** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**write-to-string** *object* &amp;key *array base case circle escape gensym* 
+<ClLinks styled={true} term={"write-to-string"}><b>write-to-string</b></ClLinks> <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> &amp;key *array base case circle escape gensym* 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-**prin1-to-string** *object → string* 
+<ClLinks styled={true} term={"prin1-to-string"}><b>prin1-to-string</b></ClLinks> *object → string* 
 
 
 
-**princ-to-string** *object → string* 
+<ClLinks styled={true} term={"princ-to-string"}><b>princ-to-string</b></ClLinks> *object → string* 
 
 
 
@@ -34,15 +34,15 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*array*—a *generalized boolean*. 
+<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—a *generalized boolean*. 
 
 
 
-*base*—a *radix* . 
+*base*—a <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> . 
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-*case*—a *symbol* of *type* (member :upcase :downcase :capitalize). 
+<ClLinks styled={true} term={"case"}><i>case</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> (member :upcase :downcase :capitalize). 
 
 
 
@@ -70,27 +70,27 @@
 
 
 
-*escape*—a *generalized boolean*. 
+<ClLinks styled={true} term={"escape"}><i>escape</i></ClLinks>—a *generalized boolean*. 
 
 
 
-*gensym*—a *generalized boolean*. 
+<ClLinks styled={true} term={"gensym"}><i>gensym</i></ClLinks>—a *generalized boolean*. 
 
 
 
-*length*—a non-negative *integer* , or **nil**. 
+<ClLinks styled={true} term={"length"}><i>length</i></ClLinks>—a non-negative *integer* , or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*level*—a non-negative *integer* , or **nil**. 
+*level*—a non-negative *integer* , or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*lines*—a non-negative *integer* , or **nil**. 
+*lines*—a non-negative *integer* , or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*miser-width*—a non-negative *integer* , or **nil**. 
+*miser-width*—a non-negative *integer* , or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -102,19 +102,19 @@
 
 
 
-*radix*—a *generalized boolean*. 
+<ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks>—a *generalized boolean*. 
 
 
 
-*readably*—a *generalized boolean*. 
+<ClLinks styled={true} term={"readably"}><i>readably</i></ClLinks>—a *generalized boolean*. 
 
 
 
-*right-margin*—a non-negative *integer* , or **nil**. 
+*right-margin*—a non-negative *integer* , or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*string*—a *string*. 
+<ClLinks styled={true} term={"string"}><i>string</i></ClLinks>—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -122,27 +122,27 @@
 
 
 
-**write-to-string**, **prin1-to-string**, and **princ-to-string** are used to create a *string* consisting of the printed representation of *object*. *Object* is effectively printed as if by **write**, **prin1**, or **princ**, respectively, and the *characters* that would be output are made into a *string*. 
+<ClLinks styled={true} term={"write-to-string"}><b>write-to-string</b></ClLinks>, <ClLinks styled={true} term={"prin1-to-string"}><b>prin1-to-string</b></ClLinks>, and <ClLinks styled={true} term={"princ-to-string"}><b>princ-to-string</b></ClLinks> are used to create a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> consisting of the printed representation of <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. <ClLinks styled={true} term={"object"}><i>Object</i></ClLinks> is effectively printed as if by <ClLinks styled={true} term={"write"}><b>write</b></ClLinks>, <ClLinks styled={true} term={"prin1"}><b>prin1</b></ClLinks>, or <ClLinks styled={true} term={"princ"}><b>princ</b></ClLinks>, respectively, and the <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> that would be output are made into a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
 
 
 
-**write-to-string** is the general output function. It has the ability to specify all the parameters applicable to the printing of *object*. 
+<ClLinks styled={true} term={"write-to-string"}><b>write-to-string</b></ClLinks> is the general output function. It has the ability to specify all the parameters applicable to the printing of <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-**prin1-to-string** acts like **write-to-string** with :escape t, that is, escape characters are written where appropriate. 
+<ClLinks styled={true} term={"prin1-to-string"}><b>prin1-to-string</b></ClLinks> acts like <ClLinks styled={true} term={"write-to-string"}><b>write-to-string</b></ClLinks> with :escape t, that is, escape characters are written where appropriate. 
 
 
 
-**princ-to-string** acts like **write-to-string** with :escape nil :readably nil. Thus no *escape characters* are written. 
+<ClLinks styled={true} term={"princ-to-string"}><b>princ-to-string</b></ClLinks> acts like <ClLinks styled={true} term={"write-to-string"}><b>write-to-string</b></ClLinks> with :escape nil :readably nil. Thus no *escape characters* are written. 
 
 
 
-All other keywords that would be specified to **write-to-string** are default values when **prin1-to-string** or **princ-to-string** is invoked. 
+All other keywords that would be specified to <ClLinks styled={true} term={"write-to-string"}><b>write-to-string</b></ClLinks> are default values when <ClLinks styled={true} term={"prin1-to-string"}><b>prin1-to-string</b></ClLinks> or <ClLinks styled={true} term={"princ-to-string"}><b>princ-to-string</b></ClLinks> is invoked. 
 
 
 
-The meanings and defaults for the keyword arguments to **write-to-string** are the same as those for **write**. 
+The meanings and defaults for the keyword arguments to <ClLinks styled={true} term={"write-to-string"}><b>write-to-string</b></ClLinks> are the same as those for <ClLinks styled={true} term={"write"}><b>write</b></ClLinks>. 
 
 
 
@@ -160,7 +160,7 @@ The meanings and defaults for the keyword arguments to **write-to-string** are t
 
 
 
-**\*print-escape\***, **\*print-radix\***, **\*print-base\***, **\*print-circle\***, **\*print-pretty\***, **\*print-level\***, **\*print-length\***, **\*print-case\***, **\*print-gensym\***, **\*print-array\***, **\*read-default-float-format\***. 
+<ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks>, <ClLinks styled={true} term={"print-radix"}><b>\*print-radix\*</b></ClLinks>, **\*print-base\***, <ClLinks styled={true} term={"print-circle"}><b>\*print-circle\*</b></ClLinks>, <ClLinks styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks>, **\*print-level\***, <ClLinks styled={true} term={"print-length"}><b>\*print-length\*</b></ClLinks>, <ClLinks styled={true} term={"print-case"}><b>\*print-case\*</b></ClLinks>, <ClLinks styled={true} term={"print-gensym"}><b>\*print-gensym\*</b></ClLinks>, <ClLinks styled={true} term={"print-array"}><b>\*print-array\*</b></ClLinks>, <ClLinks styled={true} term={"read-default-float-format"}><b>\*read-default-float-format\*</b></ClLinks>. 
 
 
 
@@ -168,7 +168,7 @@ The meanings and defaults for the keyword arguments to **write-to-string** are t
 
 
 
-**write** 
+<ClLinks styled={true} term={"write"}><b>write</b></ClLinks> 
 
 
 
@@ -188,7 +188,7 @@ The meanings and defaults for the keyword arguments to **write-to-string** are t
 
 
 
-(princ-to-string *object*) 
+(princ-to-string <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) 
 
 
 
@@ -196,11 +196,11 @@ The meanings and defaults for the keyword arguments to **write-to-string** are t
 
 
 
-(princ *object* string-stream)) 
+(princ <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> string-stream)) 
 
 
 
-(prin1-to-string *object*) 
+(prin1-to-string <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) 
 
 
 
@@ -208,7 +208,7 @@ The meanings and defaults for the keyword arguments to **write-to-string** are t
 
 
 
-(prin1 *object* string-stream)) 
+(prin1 <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> string-stream)) 
 
 
 

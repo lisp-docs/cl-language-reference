@@ -1,4 +1,4 @@
-**sxhash** *Function* 
+**sxhash** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**sxhash** *object → hash-code* 
+<ClLinks styled={true} term={"sxhash"}><b>sxhash</b></ClLinks> *object → hash-code* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*object*—an *object*. 
+<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*hash-code*—a non-negative *fixnum*. 
+*hash-code*—a non-negative <ClLinks styled={true} term={"fixnum"}><i>fixnum</i></ClLinks>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-**sxhash** returns a hash code for *object*. 
+<ClLinks styled={true} term={"sxhash"}><b>sxhash</b></ClLinks> returns a hash code for <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-The manner in which the hash code is computed is *implementation-dependent*, but subject to certain constraints: 
+The manner in which the hash code is computed is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but subject to certain constraints: 
 
 
 
@@ -38,11 +38,11 @@ The manner in which the hash code is computed is *implementation-dependent*, but
 
 
 
-2\. For any two *objects*, *x* and *y*, both of which are *bit vectors*, *characters*, *conses*, *numbers*, *pathnames*, *strings*, or *symbols*, and which are *similar* , (sxhash *x*) and (sxhash *y*) *yield* the same mathematical value even if *x* and *y* exist in different *Lisp images* of the same *implementation*. See Section 3.2.4 (Literal Objects in Compiled Files). 
+2\. For any two <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>, *x* and *y*, both of which are *bit vectors*, *characters*, *conses*, *numbers*, *pathnames*, *strings*, or <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>, and which are <ClLinks styled={true} term={"similar"}><i>similar</i></ClLinks> , (sxhash *x*) and (sxhash *y*) <ClLinks styled={true} term={"yield"}><i>yield</i></ClLinks> the same mathematical value even if *x* and *y* exist in different *Lisp images* of the same <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. See Section 3.2.4 (Literal Objects in Compiled Files). 
 
 
 
-3\. The *hash-code* for an *object* is always the *same* within a single *session* provided that the *object* is not visibly modified with regard to the equivalence test **equal**. See Section 18.1.2 (Modifying Hash Table Keys). 
+3\. The *hash-code* for an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is always the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> within a single <ClLinks styled={true} term={"session"}><i>session</i></ClLinks> provided that the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is not visibly modified with regard to the equivalence test <ClLinks styled={true} term={"equal"}><b>equal</b></ClLinks>. See Section 18.1.2 (Modifying Hash Table Keys). 
 
 
 
@@ -58,15 +58,15 @@ Hash
 
 
 
-**sxhash** 
+<ClLinks styled={true} term={"sxhash"}><b>sxhash</b></ClLinks> 
 
 
 
-4\. The *hash-code* is intended for hashing. This places no verifiable constraint on a *conforming implementation*, but the intent is that an *implementation* should make a good-faith effort to produce *hash-codes* that are well distributed within the range of non-negative *fixnums*. 
+4\. The *hash-code* is intended for hashing. This places no verifiable constraint on a *conforming implementation*, but the intent is that an <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> should make a good-faith effort to produce *hash-codes* that are well distributed within the range of non-negative <ClLinks styled={true} term={"fixnum"}><i>fixnums</i></ClLinks>. 
 
 
 
-5\. Computation of the *hash-code* must terminate, even if the *object* contains circularities. 
+5\. Computation of the *hash-code* must terminate, even if the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> contains circularities. 
 
 **Examples:**
 ```lisp
@@ -82,7 +82,7 @@ Hash
 
 
 
-The *implementation*. 
+The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 
@@ -90,19 +90,19 @@ The *implementation*.
 
 
 
-Many common hashing needs are satisfied by **make-hash-table** and the related functions on *hash tables*. **sxhash** is intended for use where the pre-defined abstractions are insufficient. Its main intent is to allow the user a convenient means of implementing more complicated hashing paradigms than are provided through *hash tables*. 
+Many common hashing needs are satisfied by <ClLinks styled={true} term={"make-hash-table"}><b>make-hash-table</b></ClLinks> and the related functions on *hash tables*. <ClLinks styled={true} term={"sxhash"}><b>sxhash</b></ClLinks> is intended for use where the pre-defined abstractions are insufficient. Its main intent is to allow the user a convenient means of implementing more complicated hashing paradigms than are provided through *hash tables*. 
 
 
 
-The hash codes returned by **sxhash** are not necessarily related to any hashing strategy used by any other *function* in Common Lisp. 
+The hash codes returned by <ClLinks styled={true} term={"sxhash"}><b>sxhash</b></ClLinks> are not necessarily related to any hashing strategy used by any other <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> in Common Lisp. 
 
 
 
-For *objects* of *types* that **equal** compares with **eq**, item 3 requires that the *hash-code* be based on some immutable quality of the identity of the object. Another legitimate implementation technique would be to have **sxhash** assign (and cache) a random hash code for these *objects*, since there is no requirement that *similar* but non-**eq** objects have the same hash code. 
+For <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> that <ClLinks styled={true} term={"equal"}><b>equal</b></ClLinks> compares with <ClLinks styled={true} term={"eq"}><b>eq</b></ClLinks>, item 3 requires that the *hash-code* be based on some immutable quality of the identity of the object. Another legitimate implementation technique would be to have <ClLinks styled={true} term={"sxhash"}><b>sxhash</b></ClLinks> assign (and cache) a random hash code for these <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>, since there is no requirement that <ClLinks styled={true} term={"similar"}><i>similar</i></ClLinks> but non-<ClLinks styled={true} term={"eq"}><b>eq</b></ClLinks> objects have the same hash code. 
 
 
 
-Although *similarity* is defined for *symbols* in terms of both the *symbol*’s *name* and the *packages* in which the *symbol* is *accessible*, item 3 disallows using *package* information to compute the hash code, since changes to the package status of a symbol are not visible to *equal*. 
+Although <ClLinks styled={true} term={"similarity"}><i>similarity</i></ClLinks> is defined for <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> in terms of both the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> and the <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> in which the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks>, item 3 disallows using <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> information to compute the hash code, since changes to the package status of a symbol are not visible to *equal*. 
 
 
 

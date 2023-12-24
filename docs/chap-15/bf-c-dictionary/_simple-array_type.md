@@ -1,4 +1,4 @@
-**simple-array** *Type* 
+**simple-array** <ClLinks styled={true} term={"type"}><i>Type</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**simple-array**, **array**, **t** 
+<ClLinks styled={true} term={"simple-array"}><b>simple-array</b></ClLinks>, <ClLinks styled={true} term={"array"}><b>array</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-The *type* of an *array* that is not displaced to another *array*, has no *fill pointer* , and is not *expressly adjustable* is a *subtype* of *type* **simple-array**. The concept of a *simple array* exists to allow the implementation to use a specialized representation and to allow the user to declare that certain values will always be *simple arrays*. 
+The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> of an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> that is not displaced to another <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>, has no *fill pointer* , and is not *expressly adjustable* is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"simple-array"}><b>simple-array</b></ClLinks>. The concept of a *simple array* exists to allow the implementation to use a specialized representation and to allow the user to declare that certain values will always be *simple arrays*. 
 
 
 
-The *types* **simple-vector**, **simple-string**, and **simple-bit-vector** are *disjoint subtypes* of *type* **simple-array**, for they respectively mean (simple-array t (\*)), the union of all (simple-array *c* (\*)) for any *c* being a *subtype* of *type* **character**, and (simple-array bit (\*)). 
+The <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> <ClLinks styled={true} term={"simple-vector"}><b>simple-vector</b></ClLinks>, <ClLinks styled={true} term={"simple-string"}><b>simple-string</b></ClLinks>, and <ClLinks styled={true} term={"simple-bit-vector"}><b>simple-bit-vector</b></ClLinks> are *disjoint subtypes* of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"simple-array"}><b>simple-array</b></ClLinks>, for they respectively mean (simple-array t (\*)), the union of all (simple-array *c* (\*)) for any *c* being a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"character"}><b>character</b></ClLinks>, and (simple-array bit (\*)). 
 
 
 
@@ -46,7 +46,7 @@ Specializing.
 
 
 
-*dimension*—a *valid array dimension*. 
+<ClLinks styled={true} term={"dimension"}><i>dimension</i></ClLinks>—a *valid array dimension*. 
 
 
 
@@ -54,7 +54,7 @@ Specializing.
 
 
 
-*rank*—a non-negative *fixnum*. 
+<ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks>—a non-negative <ClLinks styled={true} term={"fixnum"}><i>fixnum</i></ClLinks>. 
 
 
 
@@ -74,7 +74,7 @@ Specializing.
 
 
 
-This *compound type specifier* is treated exactly as the corresponding *compound type specifier* for *type* **array** would be treated, except that the set is further constrained to include only *simple arrays*. 
+This *compound type specifier* is treated exactly as the corresponding *compound type specifier* for <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"array"}><b>array</b></ClLinks> would be treated, except that the set is further constrained to include only *simple arrays*. 
 
 
 
@@ -82,11 +82,11 @@ This *compound type specifier* is treated exactly as the corresponding *compound
 
 
 
-It is *implementation-dependent* whether *displaced arrays*, *vectors* with *fill pointers*, or arrays that are *actually adjustable* are *simple arrays*. 
+It is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether *displaced arrays*, *vectors* with *fill pointers*, or arrays that are *actually adjustable* are *simple arrays*. 
 
 
 
-(simple-array \*) refers to all *simple arrays* regardless of element type, (simple-array *type specifier*) refers only to those *simple arrays* that can result from giving *type-specifier* as the :element-type argument to **make-array**. 
+(simple-array \*) refers to all *simple arrays* regardless of element type, (simple-array *type specifier*) refers only to those *simple arrays* that can result from giving *type-specifier* as the :element-type argument to <ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks>. 
 
 
 

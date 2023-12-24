@@ -1,4 +1,4 @@
-*∗***default-pathname-defaults***∗ Variable* 
+*∗<ClLinks styled={true} term={"default-pathname-defaults"}><b>*default-pathname-defaults*</b></ClLinks>∗ Variable* 
 
 
 
@@ -22,7 +22,7 @@ An *implementation-dependent pathname*, typically in the working directory that 
 
 
 
-a *pathname*, used as the default whenever a *function* needs a default *pathname* and one is not supplied. 
+a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>, used as the default whenever a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> needs a default <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> and one is not supplied. 
 
 
 
@@ -43,7 +43,7 @@ a *pathname*, used as the default whenever a *function* needs a default *pathnam
 
 
 
-The *implementation*. 
+The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 

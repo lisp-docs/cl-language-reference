@@ -1,4 +1,4 @@
-*∗***read-default-float-format***∗ Variable* 
+*∗<ClLinks styled={true} term={"read-default-float-format"}><b>*read-default-float-format*</b></ClLinks>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-one of the *atomic type specifiers* **short-float**, **single-float**, **double-float**, or **long-float**, or else some other *type specifier* defined by the *implementation* to be acceptable. 
+one of the *atomic type specifiers* <ClLinks styled={true} term={"short-float"}><b>short-float</b></ClLinks>, <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks styled={true} term={"double-float"}><b>double-float</b></ClLinks>, or <ClLinks styled={true} term={"long-float"}><b>long-float</b></ClLinks>, or else some other *type specifier* defined by the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> to be acceptable. 
 
 
 
@@ -26,7 +26,7 @@ one of the *atomic type specifiers* **short-float**, **single-float**, **double-
 
 
 
-The *symbol* **single-float**. 
+The <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@ Controls the floating-point format that is to be used when reading a floating-po
 
 
 
-The printer uses **\*read-default-float-format\*** to guide the choice of *exponent markers* when printing floating-point numbers. 
+The printer uses <ClLinks styled={true} term={"read-default-float-format"}><b>\*read-default-float-format\*</b></ClLinks> to guide the choice of *exponent markers* when printing floating-point numbers. 
 
 
 
@@ -64,7 +64,7 @@ a *generalized boolean*.
 
 
 
-*true*. 
+<ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 
 
 
 
@@ -72,7 +72,7 @@ a *generalized boolean*.
 
 
 
-If it is *true*, the #. *reader macro* has its normal effect. Otherwise, that *reader macro* signals an error of *type* **reader-error**. 
+If it is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the #. *reader macro* has its normal effect. Otherwise, that *reader macro* signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"reader-error"}><b>reader-error</b></ClLinks>. 
 
 
 
@@ -80,7 +80,7 @@ If it is *true*, the #. *reader macro* has its normal effect. Otherwise, that *r
 
 
 
-**\*print-readably\*** 
+<ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> 
 
 
 
@@ -88,7 +88,7 @@ If it is *true*, the #. *reader macro* has its normal effect. Otherwise, that *r
 
 
 
-If **\*read-eval\*** is *false* and **\*print-readably\*** is *true*, any *method* for **print-object** that would output a reference to the #. *reader macro* either outputs something different or signals an error of *type* **print-not-readable**. 
+If **\*read-eval\*** is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> and <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, any <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> for <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> that would output a reference to the #. *reader macro* either outputs something different or signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"print-not-readable"}><b>print-not-readable</b></ClLinks>. 
 
 
 

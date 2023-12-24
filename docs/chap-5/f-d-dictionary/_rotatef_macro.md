@@ -1,4 +1,4 @@
-**rotatef** *Macro* 
+**rotatef** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**rotatef** *\{place\}*\* *!* **nil** 
+<ClLinks styled={true} term={"rotatef"}><b>rotatef</b></ClLinks> <ClLinks styled={true} term={"place"}><i>\{place\}</i></ClLinks>\* *!* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*place*—a *place*. 
+<ClLinks styled={true} term={"place"}><i>place</i></ClLinks>—a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. 
 
 
 
@@ -22,19 +22,19 @@
 
 
 
-**rotatef** modifies the values of each *place* by rotating values from one *place* into another. 
+<ClLinks styled={true} term={"rotatef"}><b>rotatef</b></ClLinks> modifies the values of each <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> by rotating values from one <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> into another. 
 
 
 
-If a *place* produces more values than there are store variables, the extra values are ignored. If a *place* produces fewer values than there are store variables, the missing values are set to **nil**. 
+If a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> produces more values than there are store variables, the extra values are ignored. If a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> produces fewer values than there are store variables, the missing values are set to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-In the form (rotatef *place1 place2* ... *placen*), the values in *place1* through *placen* are *read* and *written*. Values 2 through *n* and value 1 are then stored into *place1* through *placen*. It is as if all the places form an end-around shift register that is rotated one place to the left, with the value of *place1* being shifted around the end to *placen*. 
+In the form (rotatef *place1 place2* ... *placen*), the values in *place1* through *placen* are <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> and *written*. Values 2 through *n* and value 1 are then stored into *place1* through *placen*. It is as if all the places form an end-around shift register that is rotated one place to the left, with the value of *place1* being shifted around the end to *placen*. 
 
 
 
-For information about the *evaluation* of *subforms* of *places*, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
+For information about the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks styled={true} term={"subform"}><i>subforms</i></ClLinks> of <ClLinks styled={true} term={"place"}><i>places</i></ClLinks>, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
 
 
 
@@ -53,7 +53,7 @@ For information about the *evaluation* of *subforms* of *places*, see Section 5.
 
 
 
-**define-setf-expander**, **defsetf**, **setf**, **shiftf**, **\*macroexpand-hook\***, Section 5.1 (Generalized Reference) 
+<ClLinks styled={true} term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>, <ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks>, <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>, <ClLinks styled={true} term={"shiftf"}><b>shiftf</b></ClLinks>, **\*macroexpand-hook\***, Section 5.1 (Generalized Reference) 
 
 
 
@@ -81,7 +81,7 @@ The e↵ect of (rotatef *place1 place2* ... *placen*) is roughly equivalent to
 
 
 
-except that the latter would evaluate any *subforms* of each place twice, whereas **rotatef** evaluates them once. 
+except that the latter would evaluate any <ClLinks styled={true} term={"subform"}><i>subforms</i></ClLinks> of each place twice, whereas <ClLinks styled={true} term={"rotatef"}><b>rotatef</b></ClLinks> evaluates them once. 
 
 
 

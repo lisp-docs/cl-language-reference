@@ -2,21 +2,21 @@
 
 **Syntax:**
 
-**progn** *\{form\}*\* *! \{result\}*\*
+<ClLinks styled={true} term={"progn"}><b>progn</b></ClLinks> <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* *! \{result\}*\*
 
 **Arguments and Values:**
 
-*forms*—an *implicit progn*.
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*.
 
-*results*—the *values* of the *forms*.
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>.
 
 **Description:**
 
-**progn** evaluates *forms*, in the order in which they are given.
+<ClLinks styled={true} term={"progn"}><b>progn</b></ClLinks> evaluates <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>, in the order in which they are given.
 
-The values of each *form* but the last are discarded.
+The values of each <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> but the last are discarded.
 
-If **progn** appears as a *top level form*, then all *forms* within that **progn** are considered by the compiler to be *top level forms*.
+If <ClLinks styled={true} term={"progn"}><b>progn</b></ClLinks> appears as a *top level form*, then all <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> within that <ClLinks styled={true} term={"progn"}><b>progn</b></ClLinks> are considered by the compiler to be *top level forms*.
 
 **Examples:**
 
@@ -35,11 +35,11 @@ a *!* NIL
 
 **See Also:**
 
-**prog1**, **prog2**, Section 3.1 (Evaluation)
+<ClLinks styled={true} term={"prog1"}><b>prog1</b></ClLinks>, <ClLinks styled={true} term={"prog2"}><b>prog2</b></ClLinks>, Section 3.1 (Evaluation)
 
 **Notes:**
 
-Many places in Common Lisp involve syntax that uses *implicit progns*. That is, part of their syntax allows many *forms* to be written that are to be evaluated sequentially, discarding the results of all *forms* but the last and returning the results of the last *form*. Such places include, but are not limited to, the following: the body of a *lambda expression*; the bodies of various control and conditional *forms* (*e.g.*, **case**, **catch**, **progn**, and **when**).
+Many places in Common Lisp involve syntax that uses *implicit progns*. That is, part of their syntax allows many <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> to be written that are to be evaluated sequentially, discarding the results of all <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> but the last and returning the results of the last <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. Such places include, but are not limited to, the following: the body of a *lambda expression*; the bodies of various control and conditional <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> (*e.g.*, <ClLinks styled={true} term={"case"}><b>case</b></ClLinks>, <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks>, <ClLinks styled={true} term={"progn"}><b>progn</b></ClLinks>, and <ClLinks styled={true} term={"when"}><b>when</b></ClLinks>).
 
 :::info
 

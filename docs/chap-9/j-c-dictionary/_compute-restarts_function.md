@@ -1,4 +1,4 @@
-**compute-restarts** *Function* 
+**compute-restarts** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**compute-restarts** &amp;optional *condition → restarts* 
+<ClLinks styled={true} term={"compute-restarts"}><b>compute-restarts</b></ClLinks> &amp;optional *condition → restarts* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*condition*—a *condition object*, or **nil**. 
+<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a *condition object*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*restarts*—a *list* of *restarts*. 
+<ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks>. 
 
 
 
@@ -26,23 +26,23 @@
 
 
 
-**compute-restarts** uses the dynamic state of the program to compute a *list* of the *restarts* which are currently active. 
+<ClLinks styled={true} term={"compute-restarts"}><b>compute-restarts</b></ClLinks> uses the dynamic state of the program to compute a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> which are currently active. 
 
 
 
-The resulting *list* is ordered so that the innermost (more-recently established) restarts are nearer the head of the *list*. 
+The resulting <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is ordered so that the innermost (more-recently established) restarts are nearer the head of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
-When *condition* is *non-nil*, only those *restarts* are considered that are either explicitly associated with that *condition*, or not associated with any *condition*; that is, the excluded *restarts* are those that are associated with a non-empty set of *conditions* of which the given *condition* is not an *element*. If *condition* is **nil**, all *restarts* are considered. 
+When <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, only those <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> are considered that are either explicitly associated with that <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>, or not associated with any <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>; that is, the excluded <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> are those that are associated with a non-empty set of <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> of which the given <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is not an <ClLinks styled={true} term={"element"}><i>element</i></ClLinks>. If <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, all <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> are considered. 
 
 
 
-**compute-restarts** returns all *applicable restarts*, including anonymous ones, even if some of them have the same name as others and would therefore not be found by **find-restart** when given a *symbol* argument. 
+<ClLinks styled={true} term={"compute-restarts"}><b>compute-restarts</b></ClLinks> returns all *applicable restarts*, including anonymous ones, even if some of them have the same name as others and would therefore not be found by <ClLinks styled={true} term={"find-restart"}><b>find-restart</b></ClLinks> when given a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> argument. 
 
 
 
-Implementations are permitted, but not required, to return *distinct lists* from repeated calls to **compute-restarts** while in the same dynamic environment. The consequences are undefined if the *list* returned by **compute-restarts** is every modified. 
+Implementations are permitted, but not required, to return *distinct lists* from repeated calls to <ClLinks styled={true} term={"compute-restarts"}><b>compute-restarts</b></ClLinks> while in the same dynamic environment. The consequences are undefined if the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> returned by <ClLinks styled={true} term={"compute-restarts"}><b>compute-restarts</b></ClLinks> is every modified. 
 
 
 
@@ -96,7 +96,7 @@ Existing restarts.
 
 
 
-**find-restart**, **invoke-restart**, **restart-bind** 
+<ClLinks styled={true} term={"find-restart"}><b>find-restart</b></ClLinks>, <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, <ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks> 
 
 
 

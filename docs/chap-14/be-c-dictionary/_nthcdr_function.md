@@ -1,4 +1,4 @@
-**nthcdr** *Function* 
+**nthcdr** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**nthcdr** *n list → tail* 
+<ClLinks styled={true} term={"nthcdr"}><b>nthcdr</b></ClLinks> *n list → tail* 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-*list*—a *list*, which might be a *dotted list* or a *circular list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, which might be a *dotted list* or a *circular list*. 
 
 
 
-*tail*—an *object*. 
+<ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns the *tail* of *list* that would be obtained by calling **cdr** *n* times in succession. 
+Returns the <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that would be obtained by calling <ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks> *n* times in succession. 
 
 
 
@@ -60,11 +60,11 @@ Error: Attempted to take CDR of 1.
 
 
 
-Should signal an error of *type* **type-error** if *n* is not a non-negative *integer* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *n* is not a non-negative *integer* . 
 
 
 
-For *n* being an integer greater than 1, the error checking done by (nthcdr *n list*) is the same as for (nthcdr (- *n* 1) (cdr *list*)); see the *function* **cdr**. 
+For *n* being an integer greater than 1, the error checking done by (nthcdr *n list*) is the same as for (nthcdr (- *n* 1) (cdr <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>)); see the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks>. 
 
 
 
@@ -72,7 +72,7 @@ For *n* being an integer greater than 1, the error checking done by (nthcdr *n l
 
 
 
-**cdr**, **nth**, **rest** 
+<ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks>, <ClLinks styled={true} term={"nth"}><b>nth</b></ClLinks>, <ClLinks styled={true} term={"rest"}><b>rest</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**make-broadcast-stream** *Function* 
+**make-broadcast-stream** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**make-broadcast-stream** &amp;rest *streams → broadcast-stream* 
+<ClLinks styled={true} term={"make-broadcast-stream"}><b>make-broadcast-stream</b></ClLinks> &amp;rest *streams → broadcast-stream* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*stream*—an *output stream*. 
+<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—an *output stream*. 
 
 
 
@@ -48,7 +48,7 @@ Returns a *broadcast stream*.
 
 
 
-Should signal an error of *type* **type-error** if any *stream* is not an *output stream*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if any <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is not an *output stream*. 
 
 
 
@@ -56,7 +56,7 @@ Should signal an error of *type* **type-error** if any *stream* is not an *outpu
 
 
 
-**broadcast-stream-streams** 
+<ClLinks styled={true} term={"broadcast-stream-streams"}><b>broadcast-stream-streams</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**mod, rem** *Function* 
+**mod, rem** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-**mod** *number divisor → modulus* 
+<ClLinks styled={true} term={"mod"}><b>mod</b></ClLinks> *number divisor → modulus* 
 
 
 
-**rem** *number divisor → remainder* 
+<ClLinks styled={true} term={"rem"}><b>rem</b></ClLinks> *number divisor → remainder* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*number*—a *real*. 
+<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a *real*. 
 
 
 
@@ -34,19 +34,19 @@
 
 
 
-**mod** and **rem** are generalizations of the modulus and remainder functions respectively. 
+<ClLinks styled={true} term={"mod"}><b>mod</b></ClLinks> and <ClLinks styled={true} term={"rem"}><b>rem</b></ClLinks> are generalizations of the modulus and remainder functions respectively. 
 
 
 
-**mod** performs the operation **floor** on *number* and *divisor* and returns the remainder of the **floor** operation. 
+<ClLinks styled={true} term={"mod"}><b>mod</b></ClLinks> performs the operation <ClLinks styled={true} term={"floor"}><b>floor</b></ClLinks> on <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> and *divisor* and returns the remainder of the <ClLinks styled={true} term={"floor"}><b>floor</b></ClLinks> operation. 
 
 
 
-**rem** performs the operation **truncate** on *number* and *divisor* and returns the remainder of the **truncate** operation. 
+<ClLinks styled={true} term={"rem"}><b>rem</b></ClLinks> performs the operation <ClLinks styled={true} term={"truncate"}><b>truncate</b></ClLinks> on <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> and *divisor* and returns the remainder of the <ClLinks styled={true} term={"truncate"}><b>truncate</b></ClLinks> operation. 
 
 
 
-**mod** and **rem** are the modulus and remainder functions when *number* and *divisor* are *integers*. 
+<ClLinks styled={true} term={"mod"}><b>mod</b></ClLinks> and <ClLinks styled={true} term={"rem"}><b>rem</b></ClLinks> are the modulus and remainder functions when <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> and *divisor* are *integers*. 
 
 **Examples:**
 ```lisp
@@ -74,7 +74,7 @@
 
 
 
-**floor**, **truncate** 
+<ClLinks styled={true} term={"floor"}><b>floor</b></ClLinks>, <ClLinks styled={true} term={"truncate"}><b>truncate</b></ClLinks> 
 
 
 
@@ -82,7 +82,7 @@
 
 
 
-The result of **mod** is either zero or a *real* with the same sign as *divisor*. 
+The result of <ClLinks styled={true} term={"mod"}><b>mod</b></ClLinks> is either zero or a *real* with the same sign as *divisor*. 
 
 
 

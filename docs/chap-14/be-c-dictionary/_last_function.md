@@ -1,4 +1,4 @@
-**last** *Function* 
+**last** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**last** *list* &amp;optional *n → tail* 
+<ClLinks styled={true} term={"last"}><b>last</b></ClLinks> <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> &amp;optional *n → tail* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*list*—a *list*, which might be a *dotted list* but must not be a *circular list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, which might be a *dotted list* but must not be a *circular list*. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*tail*—an *object*. 
+<ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-**last** returns the last *n conses* (not the last *n* elements) of *list*). If *list* is (), **last** returns (). 
+<ClLinks styled={true} term={"last"}><b>last</b></ClLinks> returns the last *n conses* (not the last *n* elements) of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>). If <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is (), <ClLinks styled={true} term={"last"}><b>last</b></ClLinks> returns (). 
 
 
 
-If *n* is zero, the atom that terminates *list* is returned. If *n* is greater than or equal to the number of *cons* cells in *list*, the result is *list*. 
+If *n* is zero, the atom that terminates <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is returned. If *n* is greater than or equal to the number of <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> cells in <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, the result is <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ If *n* is zero, the atom that terminates *list* is returned. If *n* is greater t
 
 
 
-The consequences are undefined if *list* is a *circular list*. Should signal an error of *type* **type-error** if *n* is not a non-negative *integer* . 
+The consequences are undefined if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a *circular list*. Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *n* is not a non-negative *integer* . 
 
 
 
@@ -74,7 +74,7 @@ The consequences are undefined if *list* is a *circular list*. Should signal an 
 
 
 
-**butlast**, **nth** 
+<ClLinks styled={true} term={"butlast"}><b>butlast</b></ClLinks>, <ClLinks styled={true} term={"nth"}><b>nth</b></ClLinks> 
 
 
 
@@ -82,7 +82,7 @@ The consequences are undefined if *list* is a *circular list*. Should signal an 
 
 
 
-The following code could be used to define **last**. 
+The following code could be used to define <ClLinks styled={true} term={"last"}><b>last</b></ClLinks>. 
 
 
 

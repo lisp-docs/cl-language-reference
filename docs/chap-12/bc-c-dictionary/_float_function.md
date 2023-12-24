@@ -1,4 +1,4 @@
-**float** *Function* 
+**float** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**float** *number* &amp;optional *prototype ! float* 
+<ClLinks styled={true} term={"float"}><b>float</b></ClLinks> <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> &amp;optional *prototype ! float* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*number*—a *real*. 
+<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a *real*. 
 
 
 
-*prototype*—a *float*. 
+*prototype*—a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>. 
 
 
 
-*float*—a *float*. 
+<ClLinks styled={true} term={"float"}><i>float</i></ClLinks>—a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>. 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-**float** converts a *real* number to a *float*. 
+<ClLinks styled={true} term={"float"}><b>float</b></ClLinks> converts a *real* number to a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>. 
 
 
 
-If a *prototype* is supplied, a *float* is returned that is mathematically equal to *number* but has the same format as *prototype*. 
+If a *prototype* is supplied, a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> is returned that is mathematically equal to <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> but has the same format as *prototype*. 
 
 
 
-If *prototype* is not supplied, then if the *number* is already a *float*, it is returned; otherwise, a *float* is returned that is mathematically equal to *number* but is a *single float*. 
+If *prototype* is not supplied, then if the <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is already a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>, it is returned; otherwise, a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> is returned that is mathematically equal to <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> but is a *single float*. 
 
 
 
@@ -61,7 +61,7 @@ If *prototype* is not supplied, then if the *number* is already a *float*, it is
 
 
 
-**coerce** 
+<ClLinks styled={true} term={"coerce"}><b>coerce</b></ClLinks> 
 
 
 

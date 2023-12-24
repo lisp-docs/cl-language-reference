@@ -1,4 +1,4 @@
-**adjoin** *Function* 
+**adjoin** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**adjoin** *item list* &amp;key *key test test-not → new-list* 
+<ClLinks styled={true} term={"adjoin"}><b>adjoin</b></ClLinks> *item list* &amp;key *key test test-not → new-list* 
 
 
 
@@ -14,19 +14,19 @@
 
 
 
-*item*—an *object*. 
+*item*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*list*—a *proper list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a *proper list*. 
 
 
 
-*test*—a *designator* for a *function* of two *arguments* that returns a *generalized boolean*. *test-not*—a *designator* for a *function* of two *arguments* that returns a *generalized boolean*. *key*—a *designator* for a *function* of one argument, or **nil**. 
+*test*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *key*—a *designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*new-list*—a *list*. 
+*new-list*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-Tests whether *item* is the same as an existing element of *list*. If the *item* is not an existing element, **adjoin** adds it to *list* (as if by **cons**) and returns the resulting *list*; otherwise, nothing is added and the original *list* is returned. 
+Tests whether *item* is the same as an existing element of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. If the *item* is not an existing element, <ClLinks styled={true} term={"adjoin"}><b>adjoin</b></ClLinks> adds it to <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> (as if by <ClLinks styled={true} term={"cons"}><b>cons</b></ClLinks>) and returns the resulting <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>; otherwise, nothing is added and the original <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is returned. 
 
 
 
-The *test*, *test-not*, and *key* affect how it is determined whether *item* is the same as an *element* of *list*. For details, see Section 17.2.1 (Satisfying a Two-Argument Test). 
+The *test*, *test-not*, and <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> affect how it is determined whether *item* is the same as an <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. For details, see Section 17.2.1 (Satisfying a Two-Argument Test). 
 
 
 
@@ -59,7 +59,7 @@ slist → NIL
 
 
 
-Should be prepared to signal an error of *type* **type-error** if *list* is not a *proper list*. 
+Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is not a *proper list*. 
 
 
 
@@ -67,7 +67,7 @@ Should be prepared to signal an error of *type* **type-error** if *list* is not 
 
 
 
-**pushnew**, Section 3.6 (Traversal Rules and Side Effects) 
+<ClLinks styled={true} term={"pushnew"}><b>pushnew</b></ClLinks>, Section 3.6 (Traversal Rules and Side Effects) 
 
 
 

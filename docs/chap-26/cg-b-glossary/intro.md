@@ -39,7 +39,7 @@ Each entry in this glossary has the following parts:
 
 
 
-– an optional context, present if this definition is meaningful only in that context. For example, “(of a *symbol*)”. 
+– an optional context, present if this definition is meaningful only in that context. For example, “(of a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>)”. 
 
 
 
@@ -59,7 +59,7 @@ Words in *this font* are words with entries in the glossary. Words in example se
 
 
 
-When an ambiguity arises, the longest matching substring has precedence. For example, “*complex float*” refers to a single glossary entry for “*complex float*” rather than the combined meaning of the glossary terms “*complex*” and “*float*.” 
+When an ambiguity arises, the longest matching substring has precedence. For example, “*complex float*” refers to a single glossary entry for “*complex float*” rather than the combined meaning of the glossary terms “<ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks>” and “<ClLinks styled={true} term={"float"}><i>float</i></ClLinks>.” 
 
 
 
@@ -99,7 +99,7 @@ The following are abbreviations used in the glossary:
 
 
 
-**()** [ **nil** ], *n.* an alternative notation for writing the symbol **nil**, used to emphasize the use of *nil* as an *empty list*. 
+**()** [ <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> ], *n.* an alternative notation for writing the symbol <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, used to emphasize the use of <ClLinks styled={true} term={"nil"}><i>nil</i></ClLinks> as an *empty list*. 
 
 
 

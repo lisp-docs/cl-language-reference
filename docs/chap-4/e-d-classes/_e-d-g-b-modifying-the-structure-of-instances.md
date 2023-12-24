@@ -2,7 +2,7 @@
 
 
 
-The first step modifies the structure of *instances* of the redefined *class* to conform to its new *class* definition. *Local slots* specified by the new *class* definition that are not specified as either local or shared by the old *class* are added, and *slots* not specified as either local or shared by the new *class* definition that are specified as local by the old *class* are discarded. The *names* of these added and discarded *slots* are passed as arguments to **update-instance-for-redefined-class** as described in 
+The first step modifies the structure of <ClLinks styled={true} term={"instance"}><i>instances</i></ClLinks> of the redefined <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> to conform to its new <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> definition. *Local slots* specified by the new <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> definition that are not specified as either local or shared by the old <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> are added, and <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> not specified as either local or shared by the new <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> definition that are specified as local by the old <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> are discarded. The <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> of these added and discarded <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> are passed as arguments to **update-instance-for-redefined-class** as described in 
 
 
 
@@ -14,7 +14,7 @@ The values of *local slots* specified by both the new and old *classes* are reta
 
 
 
-The value of a *slot* that is specified as shared in the old *class* and as local in the new *class* is retained. If such a *shared slot* was unbound, the *local slot* is unbound.  
+The value of a <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> that is specified as shared in the old <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> and as local in the new <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> is retained. If such a *shared slot* was unbound, the *local slot* is unbound.  
 
 
 

@@ -1,4 +1,4 @@
-**array-has-fill-pointer-p** *Function* 
+**array-has-fill-pointer-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**array-has-fill-pointer-p** *array → generalized-boolean* 
+<ClLinks styled={true} term={"array-has-fill-pointer-p"}><b>array-has-fill-pointer-p</b></ClLinks> *array → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*array*—an *array*. 
+<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns *true* if *array* has a *fill pointer* ; otherwise returns *false*. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> has a *fill pointer* ; otherwise returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -48,7 +48,7 @@ Returns *true* if *array* has a *fill pointer* ; otherwise returns *false*.
 
 
 
-Should signal an error of *type* **type-error** if its argument is not an *array*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -56,7 +56,7 @@ Should signal an error of *type* **type-error** if its argument is not an *array
 
 
 
-**make-array**, **fill-pointer** 
+<ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks styled={true} term={"fill-pointer"}><b>fill-pointer</b></ClLinks> 
 
 
 
@@ -64,7 +64,7 @@ Should signal an error of *type* **type-error** if its argument is not an *array
 
 
 
-Since *arrays* of *rank* other than one cannot have a *fill pointer* , **array-has-fill-pointer-p** always returns **nil** when its argument is such an array. 
+Since <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> of <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks> other than one cannot have a *fill pointer* , <ClLinks styled={true} term={"array-has-fill-pointer-p"}><b>array-has-fill-pointer-p</b></ClLinks> always returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> when its argument is such an array. 
 
 
 

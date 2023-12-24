@@ -6,7 +6,7 @@
 
 
 
-**arithmetic-error**, **error**, **serious-condition**, **condition**, **t** 
+<ClLinks styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>, <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"serious-condition"}><b>serious-condition</b></ClLinks>, <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The *type* **arithmetic-error** consists of error conditions that occur during arithmetic operations. The operation and operands are initialized with the initialization arguments named :operation and :operands to **make-condition**, and are *accessed* by the functions **arithmetic-error-operation** and **arithmetic-error-operands**. 
+The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks> consists of error conditions that occur during arithmetic operations. The operation and operands are initialized with the initialization arguments named :operation and :operands to <ClLinks styled={true} term={"make-condition"}><b>make-condition</b></ClLinks>, and are *accessed* by the functions **arithmetic-error-operation** and **arithmetic-error-operands**. 
 
 
 
@@ -46,11 +46,11 @@ The *type* **arithmetic-error** consists of error conditions that occur during a
 
 
 
-*condition*—a *condition* of *type* **arithmetic-error**. 
+<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>. 
 
 
 
-*operands*—a *list*. 
+*operands*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -62,7 +62,7 @@ The *type* **arithmetic-error** consists of error conditions that occur during a
 
 
 
-**arithmetic-error-operands** returns a *list* of the operands which were used in the o↵ending call to the operation that signaled the *condition*. 
+**arithmetic-error-operands** returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the operands which were used in the o↵ending call to the operation that signaled the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
@@ -78,7 +78,7 @@ The *type* **arithmetic-error** consists of error conditions that occur during a
 
 
 
-**arithmetic-error-operation** returns a *list* of the o↵ending operation in the o↵ending call that signaled the *condition*. 
+**arithmetic-error-operation** returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the o↵ending operation in the o↵ending call that signaled the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
@@ -86,7 +86,7 @@ The *type* **arithmetic-error** consists of error conditions that occur during a
 
 
 
-**arithmetic-error**, Chapter 9 (Conditions) 
+<ClLinks styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>, Chapter 9 (Conditions) 
 
 
 

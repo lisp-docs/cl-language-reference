@@ -1,4 +1,4 @@
-**with-simple-restart** *Macro* 
+**with-simple-restart** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**with-simple-restart** (*name format-control \{format-argument\}*\*) *\{form\}*\* 
+<ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks> (*name format-control \{format-argument\}*\*) <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*name*—a *symbol*. 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-*format-argument*—an *object* (*i.e.*, a *format argument*). 
+*format-argument*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> (*i.e.*, a *format argument*). 
 
 
 
-*forms*—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—in the normal situation, the *values* returned by the *forms*; in the exceptional situation where the *restart* named *name* is invoked, two values—**nil** and **t**. 
+*results*—in the normal situation, the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>; in the exceptional situation where the <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> named <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is invoked, two values—<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> and <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>. 
 
 
 
@@ -42,27 +42,23 @@
 
 
 
-**with-simple-restart** establishes a restart. 
+<ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks> establishes a restart. 
 
 
 
-If the restart designated by *name* is not invoked while executing *forms*, all values returned by the last of *forms* are returned. If the restart designated by *name* is invoked, control is transferred to **with-simple-restart**, which returns two values, **nil** and **t**. 
+If the restart designated by <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is not invoked while executing <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>, all values returned by the last of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are returned. If the restart designated by <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is invoked, control is transferred to <ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks>, which returns two values, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> and <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>. 
 
 
 
-If *name* is **nil**, an anonymous restart is established. 
+If <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, an anonymous restart is established. 
 
 
 
-The *format-control* and *format-arguments* are used report the *restart*. 
-
-
+The *format-control* and *format-arguments* are used report the <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>. 
 
 
 
 
-
- 
 
 
 
@@ -70,7 +66,11 @@ The *format-control* and *format-arguments* are used report the *restart*.
 
 
 
-**with-simple-restart** 
+ 
+
+
+
+<ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks> 
 
 
 
@@ -118,7 +118,7 @@ COMPUTE-POWER-OF-2
 
 
 
-**restart-case** 
+<ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> 
 
 
 
@@ -126,7 +126,7 @@ COMPUTE-POWER-OF-2
 
 
 
-**with-simple-restart** is shorthand for one of the most common uses of **restart-case**. 
+<ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks> is shorthand for one of the most common uses of <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>. 
 
 
 
@@ -138,7 +138,7 @@ COMPUTE-POWER-OF-2
 
 
 
-**with-simple-restart** could be defined by: 
+<ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks> could be defined by: 
 
 
 
@@ -174,11 +174,11 @@ COMPUTE-POWER-OF-2
 
 
 
-Because the second return value is **t** in the exceptional case, it is common (but not required) to arrange for the second return value in the normal case to be missing or **nil** so that the two situations can be distinguished. 
+Because the second return value is <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> in the exceptional case, it is common (but not required) to arrange for the second return value in the normal case to be missing or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> so that the two situations can be distinguished. 
 
 
 
-**abort** *Restart* 
+**abort** <ClLinks styled={true} term={"restart"}><i>Restart</i></ClLinks> 
 
 
 
@@ -206,7 +206,7 @@ The intent of the **abort** restart is to allow return to the innermost “comma
 
 
 
-Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), **invoke-restart**, **abort** (*function*) 
+Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, **abort** (<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>) 
 
 
 
@@ -222,7 +222,7 @@ Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), **invoke
 
 
 
-**continue** *Restart* 
+**continue** <ClLinks styled={true} term={"restart"}><i>Restart</i></ClLinks> 
 
 
 
@@ -238,7 +238,7 @@ None.
 
 
 
-The **continue** *restart* is generally part of protocols where there is a single “obvious” way to continue, such as in **break** and **cerror**. Some user-defined protocols may also wish to incorporate it for similar reasons. In general, however, it is more reliable to design a special purpose restart with a name that more directly suits the particular application. 
+The **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is generally part of protocols where there is a single “obvious” way to continue, such as in <ClLinks styled={true} term={"break"}><b>break</b></ClLinks> and <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks>. Some user-defined protocols may also wish to incorporate it for similar reasons. In general, however, it is more reliable to design a special purpose restart with a name that more directly suits the particular application. 
 
 
 
@@ -259,11 +259,11 @@ The **continue** *restart* is generally part of protocols where there is a singl
 
 
 
-Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), **invoke-restart**, **continue** (*function*), **assert**, **cerror** 
+Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, **continue** (<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>), <ClLinks styled={true} term={"assert"}><b>assert</b></ClLinks>, <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks> 
 
 
 
-**muffle-warning** *Restart* 
+**muffle-warning** <ClLinks styled={true} term={"restart"}><i>Restart</i></ClLinks> 
 
 
 
@@ -279,7 +279,7 @@ None.
 
 
 
-This *restart* is established by **warn** so that *handlers* of **warning** *conditions* have a way to tell **warn** that a warning has already been dealt with and that no further action is warranted. 
+This <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is established by <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> so that <ClLinks styled={true} term={"handler"}><i>handlers</i></ClLinks> of <ClLinks styled={true} term={"warning"}><b>warning</b></ClLinks> <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> have a way to tell <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> that a warning has already been dealt with and that no further action is warranted. 
 
 
 
@@ -323,11 +323,11 @@ This *restart* is established by **warn** so that *handlers* of **warning** *con
 
 
 
-Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), **invoke-restart**, **muffle-warning** (*function*), **warn** 
+Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, **muffle-warning** (<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>), <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> 
 
 
 
-**store-value** *Restart* 
+**store-value** <ClLinks styled={true} term={"restart"}><i>Restart</i></ClLinks> 
 
 
 
@@ -343,7 +343,7 @@ a value to use instead (on an ongoing basis).
 
 
 
-The **store-value** *restart* is generally used by *handlers* trying to recover from errors of *types* such as **cell-error** or **type-error**, which may wish to supply a replacement datum to be stored permanently. 
+The **store-value** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is generally used by <ClLinks styled={true} term={"handler"}><i>handlers</i></ClLinks> trying to recover from errors of <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> such as <ClLinks styled={true} term={"cell-error"}><b>cell-error</b></ClLinks> or <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks>, which may wish to supply a replacement datum to be stored permanently. 
 
 
 
@@ -370,11 +370,11 @@ x)) → 3.0
 
 
 
-Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), **invoke-restart**, **store-value** (*function*), **ccase**, **check-type**, **ctypecase**, **use-value** (*function* and *restart*) 
+Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, **store-value** (<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>), <ClLinks styled={true} term={"ccase"}><b>ccase</b></ClLinks>, <ClLinks styled={true} term={"check-type"}><b>check-type</b></ClLinks>, <ClLinks styled={true} term={"ctypecase"}><b>ctypecase</b></ClLinks>, **use-value** (<ClLinks styled={true} term={"function"}><i>function</i></ClLinks> and <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>) 
 
 
 
-**use-value** *Restart* 
+**use-value** <ClLinks styled={true} term={"restart"}><i>Restart</i></ClLinks> 
 
 
 
@@ -390,7 +390,7 @@ a value to use instead (once).
 
 
 
-The **use-value** *restart* is generally used by *handlers* trying to recover from errors of *types* such as **cell-error**, where the handler may wish to supply a replacement datum for one-time use. 
+The **use-value** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is generally used by <ClLinks styled={true} term={"handler"}><i>handlers</i></ClLinks> trying to recover from errors of <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> such as <ClLinks styled={true} term={"cell-error"}><b>cell-error</b></ClLinks>, where the handler may wish to supply a replacement datum for one-time use. 
 
 
 
@@ -398,7 +398,7 @@ The **use-value** *restart* is generally used by *handlers* trying to recover fr
 
 
 
-Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), **invoke-restart**, **use-value** (*function*), **store-value** (*function* and *restart*) 
+Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, **use-value** (<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>), **store-value** (<ClLinks styled={true} term={"function"}><i>function</i></ClLinks> and <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>) 
 
 
 
@@ -414,7 +414,7 @@ Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), **invoke
 
 
 
-**continue** &amp;optional *condition →* **nil** 
+**continue** &amp;optional *condition →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -422,11 +422,11 @@ Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), **invoke
 
 
 
-**store-value** *value* &amp;optional *condition →* **nil** 
+**store-value** <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> &amp;optional *condition →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
-**use-value** *value* &amp;optional *condition →* **nil** 
+**use-value** <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> &amp;optional *condition →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -450,11 +450,11 @@ Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), **invoke
 
 
 
-*value*—an *object*. 
+<ClLinks styled={true} term={"value"}><i>value</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*condition*—a *condition object*, or **nil**. 
+<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a *condition object*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -462,15 +462,15 @@ Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), **invoke
 
 
 
-Transfers control to the most recently established *applicable restart* having the same name as the function. That is, the *function* **abort** searches for an *applicable* **abort** *restart*, the *function* **continue** searches for an *applicable* **continue** *restart*, and so on. 
+Transfers control to the most recently established *applicable restart* having the same name as the function. That is, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> **abort** searches for an <ClLinks styled={true} term={"applicable"}><i>applicable</i></ClLinks> **abort** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> **continue** searches for an <ClLinks styled={true} term={"applicable"}><i>applicable</i></ClLinks> **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, and so on. 
 
 
 
-If no such *restart* exists, the functions **continue**, **store-value**, and **use-value** return **nil**, and the functions **abort** and **muffle-warning** signal an error of *type* **control-error**. 
+If no such <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> exists, the functions **continue**, **store-value**, and **use-value** return <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, and the functions **abort** and **muffle-warning** signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"control-error"}><b>control-error</b></ClLinks>. 
 
 
 
-When *condition* is *non-nil*, only those *restarts* are considered that are either explicitly associated with that *condition*, or not associated with any *condition*; that is, the excluded *restarts* are those that are associated with a non-empty set of *conditions* of which the given *condition* is not an *element*. If *condition* is **nil**, all *restarts* are considered. 
+When <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, only those <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> are considered that are either explicitly associated with that <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>, or not associated with any <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>; that is, the excluded <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> are those that are associated with a non-empty set of <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> of which the given <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is not an <ClLinks styled={true} term={"element"}><i>element</i></ClLinks>. If <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, all <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> are considered. 
 
 
 
@@ -587,7 +587,7 @@ When *condition* is *non-nil*, only those *restarts* are considered that are eit
 
 
 
-A transfer of control may occur if an appropriate *restart* is available, or (in the case of the *function* **abort** or the *function* **muffle-warning**) execution may be stopped. 
+A transfer of control may occur if an appropriate <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is available, or (in the case of the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> **abort** or the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> **muffle-warning**) execution may be stopped. 
 
 
 
@@ -595,7 +595,7 @@ A transfer of control may occur if an appropriate *restart* is available, or (in
 
 
 
-Each of these functions can be affected by the presence of a *restart* having the same name. 
+Each of these functions can be affected by the presence of a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> having the same name. 
 
 
 
@@ -615,7 +615,7 @@ Each of these functions can be affected by the presence of a *restart* having th
 
 
 
-If an appropriate **abort** *restart* is not available for the *function* **abort**, or an appropriate **muffle-warning** *restart* is not available for the *function* **muffle-warning**, an error of *type* **control-error** is signaled. 
+If an appropriate **abort** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is not available for the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> **abort**, or an appropriate **muffle-warning** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is not available for the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> **muffle-warning**, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"control-error"}><b>control-error</b></ClLinks> is signaled. 
 
 
 
@@ -623,7 +623,7 @@ If an appropriate **abort** *restart* is not available for the *function* **abor
 
 
 
-**invoke-restart**, Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), **assert**, **ccase**, **cerror**, **check-type**, **ctypecase**, **use-value**, **warn** 
+<ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks styled={true} term={"assert"}><b>assert</b></ClLinks>, <ClLinks styled={true} term={"ccase"}><b>ccase</b></ClLinks>, <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks>, <ClLinks styled={true} term={"check-type"}><b>check-type</b></ClLinks>, <ClLinks styled={true} term={"ctypecase"}><b>ctypecase</b></ClLinks>, **use-value**, <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> 
 
 
 
@@ -643,5 +643,5 @@ If an appropriate **abort** *restart* is not available for the *function* **abor
 
 
 
-No functions defined in this specification are required to provide a **use-value** *restart*. 
+No functions defined in this specification are required to provide a **use-value** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>. 
 

@@ -1,4 +1,4 @@
-**mapc, mapcar, mapcan, mapl, maplist, mapcon** *Function* 
+**mapc, mapcar, mapcan, mapl, maplist, mapcon** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,23 +6,23 @@
 
 
 
-**mapc** *function* &amp;rest *lists*<sup>+</sup> → list-1 
+<ClLinks styled={true} term={"mapc"}><b>mapc</b></ClLinks> <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> &amp;rest <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks><sup>+</sup> → list-1 
 
 
 
-**mapcar** *function* &amp;rest *lists*<sup>+</sup> → result-list 
+<ClLinks styled={true} term={"mapcar"}><b>mapcar</b></ClLinks> <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> &amp;rest <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks><sup>+</sup> → result-list 
 
 
 
-**mapcan** *function* &amp;rest *lists*<sup>+</sup> → concatenated-results 
+<ClLinks styled={true} term={"mapcan"}><b>mapcan</b></ClLinks> <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> &amp;rest <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks><sup>+</sup> → concatenated-results 
 
 
 
-**mapl** *function* &amp;rest *lists*<sup>+</sup> → list-1 
+<ClLinks styled={true} term={"mapl"}><b>mapl</b></ClLinks> <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> &amp;rest <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks><sup>+</sup> → list-1 
 
 
 
-**maplist** *function* &amp;rest *lists*<sup>+</sup> → result-list 
+<ClLinks styled={true} term={"maplist"}><b>maplist</b></ClLinks> <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> &amp;rest <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks><sup>+</sup> → result-list 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-**mapcon** *function* &amp;rest *lists*<sup>+</sup> → concatenated-results 
+<ClLinks styled={true} term={"mapcon"}><b>mapcon</b></ClLinks> <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> &amp;rest <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks><sup>+</sup> → concatenated-results 
 
 
 
@@ -50,19 +50,19 @@
 
 
 
-*function*—a *designator* for a *function* that must take as many *arguments* as there are *lists*. *list*—a *proper list*. 
+<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> that must take as many <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> as there are <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>. <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a *proper list*. 
 
 
 
-*list-1*—the first *list* (which must be a *proper list*). 
+*list-1*—the first <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> (which must be a *proper list*). 
 
 
 
-*result-list*—a *list*. 
+*result-list*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
-*concatenated-results*—a *list*. 
+*concatenated-results*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -70,31 +70,31 @@
 
 
 
-The mapping operation involves applying *function* to successive sets of arguments in which one argument is obtained from each *sequence*. Except for **mapc** and **mapl**, the result contains the results returned by *function*. In the cases of **mapc** and **mapl**, the resulting *sequence* is *list*. 
+The mapping operation involves applying <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> to successive sets of arguments in which one argument is obtained from each *sequence*. Except for <ClLinks styled={true} term={"mapc"}><b>mapc</b></ClLinks> and <ClLinks styled={true} term={"mapl"}><b>mapl</b></ClLinks>, the result contains the results returned by <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. In the cases of <ClLinks styled={true} term={"mapc"}><b>mapc</b></ClLinks> and <ClLinks styled={true} term={"mapl"}><b>mapl</b></ClLinks>, the resulting *sequence* is <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
-*function* is called first on all the elements with index 0, then on all those with index 1, and so on. *result-type* specifies the *type* of the resulting *sequence*. If *function* is a *symbol*, it is **coerce**d to a *function* as if by **symbol-function**. 
+<ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is called first on all the elements with index 0, then on all those with index 1, and so on. *result-type* specifies the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> of the resulting *sequence*. If <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, it is <ClLinks styled={true} term={"coerce"}><b>coerce</b></ClLinks>d to a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> as if by <ClLinks styled={true} term={"symbol-function"}><b>symbol-function</b></ClLinks>. 
 
 
 
-**mapcar** operates on successive *elements* of the *lists*. *function* is applied to the first *element* of each *list*, then to the second *element* of each *list*, and so on. The iteration terminates when the shortest *list* runs out, and excess elements in other lists are ignored. The value returned by **mapcar** is a *list* of the results of successive calls to *function*. 
+<ClLinks styled={true} term={"mapcar"}><b>mapcar</b></ClLinks> operates on successive <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>. <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is applied to the first <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> of each <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, then to the second <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> of each <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, and so on. The iteration terminates when the shortest <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> runs out, and excess elements in other lists are ignored. The value returned by <ClLinks styled={true} term={"mapcar"}><b>mapcar</b></ClLinks> is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the results of successive calls to <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
 
 
 
-**mapc** is like **mapcar** except that the results of applying *function* are not accumulated. The *list* argument is returned. 
+<ClLinks styled={true} term={"mapc"}><b>mapc</b></ClLinks> is like <ClLinks styled={true} term={"mapcar"}><b>mapcar</b></ClLinks> except that the results of applying <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> are not accumulated. The <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> argument is returned. 
 
 
 
-**maplist** is like **mapcar** except that *function* is applied to successive sublists of the *lists*. *function* is first applied to the *lists* themselves, and then to the *cdr* of each *list*, and then to the *cdr* of the *cdr* of each *list*, and so on. 
+<ClLinks styled={true} term={"maplist"}><b>maplist</b></ClLinks> is like <ClLinks styled={true} term={"mapcar"}><b>mapcar</b></ClLinks> except that <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is applied to successive sublists of the <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>. <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is first applied to the <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks> themselves, and then to the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of each <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, and then to the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of each <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, and so on. 
 
 
 
-**mapl** is like **maplist** except that the results of applying *function* are not accumulated; *list-1* is returned. 
+<ClLinks styled={true} term={"mapl"}><b>mapl</b></ClLinks> is like <ClLinks styled={true} term={"maplist"}><b>maplist</b></ClLinks> except that the results of applying <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> are not accumulated; *list-1* is returned. 
 
 
 
-**mapcan** and **mapcon** are like **mapcar** and **maplist** respectively, except that the results of applying *function* are combined into a *list* by the use of **nconc** rather than **list**. That is, 
+<ClLinks styled={true} term={"mapcan"}><b>mapcan</b></ClLinks> and <ClLinks styled={true} term={"mapcon"}><b>mapcon</b></ClLinks> are like <ClLinks styled={true} term={"mapcar"}><b>mapcar</b></ClLinks> and <ClLinks styled={true} term={"maplist"}><b>maplist</b></ClLinks> respectively, except that the results of applying <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> are combined into a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> by the use of <ClLinks styled={true} term={"nconc"}><b>nconc</b></ClLinks> rather than <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>. That is, 
 
 
 
@@ -106,7 +106,7 @@ The mapping operation involves applying *function* to successive sets of argumen
 
 
 
-and similarly for the relationship between **mapcan** and **mapcar**. 
+and similarly for the relationship between <ClLinks styled={true} term={"mapcan"}><b>mapcan</b></ClLinks> and <ClLinks styled={true} term={"mapcar"}><b>mapcar</b></ClLinks>. 
 
 
 
@@ -148,7 +148,7 @@ In this case the function serves as a filter; this is a standard Lisp idiom usin
 
 
 
-Should be prepared to signal an error of *type* **type-error** if any *list* is not a *proper list*. 
+Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if any <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is not a *proper list*. 
 
 
 
@@ -156,7 +156,7 @@ Should be prepared to signal an error of *type* **type-error** if any *list* is 
 
 
 
-**dolist**, **map**, Section 3.6 (Traversal Rules and Side Effects) 
+<ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks>, <ClLinks styled={true} term={"map"}><b>map</b></ClLinks>, Section 3.6 (Traversal Rules and Side Effects) 
 
 
 

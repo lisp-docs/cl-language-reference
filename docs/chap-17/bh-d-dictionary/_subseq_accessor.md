@@ -1,4 +1,4 @@
-**subseq** *Accessor* 
+**subseq** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**subseq** *sequence start* &amp;optional *end → subsequence* 
+<ClLinks styled={true} term={"subseq"}><b>subseq</b></ClLinks> *sequence start* &amp;optional *end → subsequence* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*start*, *end*—*bounding index designators* of *sequence*. The default for *end* is **nil**. 
+*start*, *end*—*bounding index designators* of *sequence*. The default for *end* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-**subseq** creates a *sequence* that is a copy of the subsequence of *sequence bounded* by *start* and *end*. 
+<ClLinks styled={true} term={"subseq"}><b>subseq</b></ClLinks> creates a *sequence* that is a copy of the subsequence of *sequence bounded* by *start* and *end*. 
 
 
 
@@ -46,23 +46,19 @@
 
 
 
-**subseq** always allocates a new *sequence* for a result; it never shares storage with an old *sequence*. The result subsequence is always of the same *type* as *sequence*. 
+<ClLinks styled={true} term={"subseq"}><b>subseq</b></ClLinks> always allocates a new *sequence* for a result; it never shares storage with an old *sequence*. The result subsequence is always of the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> as *sequence*. 
 
 
 
-If *sequence* is a *vector* , the result is a *fresh simple array* of *rank* one that has the same *actual array element type* as *sequence*. If *sequence* is a *list*, the result is a *fresh list*. 
+If *sequence* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> , the result is a *fresh simple array* of <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks> one that has the same *actual array element type* as *sequence*. If *sequence* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, the result is a *fresh list*. 
 
 
 
-**setf** may be used with **subseq** to destructively replace *elements* of a subsequence with *elements* taken from a *sequence* of new values. If the subsequence and the new sequence are not of equal 
-
-
+<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> may be used with <ClLinks styled={true} term={"subseq"}><b>subseq</b></ClLinks> to destructively replace <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of a subsequence with <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> taken from a *sequence* of new values. If the subsequence and the new sequence are not of equal 
 
 
 
 
-
- 
 
 
 
@@ -70,7 +66,11 @@ If *sequence* is a *vector* , the result is a *fresh simple array* of *rank* one
 
 
 
-length, the shorter length determines the number of elements that are replaced. The remaining *elements* at the end of the longer sequence are not modified in the operation. 
+ 
+
+
+
+length, the shorter length determines the number of elements that are replaced. The remaining <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> at the end of the longer sequence are not modified in the operation. 
 
 
 
@@ -90,7 +90,7 @@ str → "A123ab"
 
 
 
-Should be prepared to signal an error of *type* **type-error** if *sequence* is not a *proper sequence*. Should be prepared to signal an error of *type* **type-error** if *new-subsequence* is not a *proper sequence*. 
+Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *new-subsequence* is not a *proper sequence*. 
 
 
 
@@ -98,7 +98,7 @@ Should be prepared to signal an error of *type* **type-error** if *sequence* is 
 
 
 
-**replace** 
+<ClLinks styled={true} term={"replace"}><b>replace</b></ClLinks> 
 
 
 

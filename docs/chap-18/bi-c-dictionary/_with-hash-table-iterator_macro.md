@@ -1,4 +1,4 @@
-**with-hash-table-iterator** *Macro* 
+**with-hash-table-iterator** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**with-hash-table-iterator** (*name hash-table*) *\{declaration\}*\* *\{form\}*\* → \{result\}\* 
+<ClLinks styled={true} term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></ClLinks> (*name hash-table*) *\{declaration\}*\* <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
 
 
 
@@ -14,23 +14,23 @@
 
 
 
-*name*—a name suitable for the first argument to **macrolet**. 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a name suitable for the first argument to <ClLinks styled={true} term={"macrolet"}><b>macrolet</b></ClLinks>. 
 
 
 
-*hash-table*—a *form*, evaluated once, that should produce a *hash table*. 
+*hash-table*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, evaluated once, that should produce a *hash table*. 
 
 
 
-*declaration*—a **declare** *expression*; not evaluated. 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*forms*—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the *values* returned by *forms*. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -38,15 +38,15 @@
 
 
 
-Within the lexical scope of the body, *name* is defined via **macrolet** such that successive invocations of (*name*) return the items, one by one, from the *hash table* that is obtained by evaluating *hash-table* only once. 
+Within the lexical scope of the body, <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is defined via <ClLinks styled={true} term={"macrolet"}><b>macrolet</b></ClLinks> such that successive invocations of (<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>) return the items, one by one, from the *hash table* that is obtained by evaluating *hash-table* only once. 
 
 
 
-An invocation (*name*) returns three values as follows: 
+An invocation (<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>) returns three values as follows: 
 
 
 
-1\. A *generalized boolean* that is *true* if an entry is returned. 
+1\. A *generalized boolean* that is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if an entry is returned. 
 
 
 
@@ -58,15 +58,15 @@ An invocation (*name*) returns three values as follows:
 
 
 
-After all entries have been returned by successive invocations of (*name*), then only one value is returned, namely **nil**. 
+After all entries have been returned by successive invocations of (<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>), then only one value is returned, namely <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-It is unspecified what happens if any of the implicit interior state of an iteration is returned outside the dynamic extent of the **with-hash-table-iterator** *form* such as by returning some *closure* over the invocation *form*. 
+It is unspecified what happens if any of the implicit interior state of an iteration is returned outside the dynamic extent of the <ClLinks styled={true} term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> such as by returning some <ClLinks styled={true} term={"closure"}><i>closure</i></ClLinks> over the invocation <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-Any number of invocations of **with-hash-table-iterator** can be nested, and the body of the innermost one can invoke all of the locally *established macros*, provided all of those *macros* have *distinct* names. 
+Any number of invocations of <ClLinks styled={true} term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></ClLinks> can be nested, and the body of the innermost one can invoke all of the locally *established macros*, provided all of those <ClLinks styled={true} term={"macro"}><i>macros</i></ClLinks> have <ClLinks styled={true} term={"distinct"}><i>distinct</i></ClLinks> names. 
 
 
 
@@ -108,7 +108,7 @@ The following could be an acceptable definition of **maphash**, implemented by *
 
 
 
-The consequences are undefined if the local function named *name established* by **with-hash-table-iterator** is called after it has returned *false* as its *primary value*. 
+The consequences are undefined if the local function named *name established* by <ClLinks styled={true} term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></ClLinks> is called after it has returned <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> as its *primary value*. 
 
 
 
