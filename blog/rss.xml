@@ -4,10 +4,31 @@
         <title>Common Lisp (New) Language Reference Blog</title>
         <link>https://lisp-docs.github.io/cl-language-reference/blog</link>
         <description>Common Lisp (New) Language Reference Blog</description>
-        <lastBuildDate>Thu, 21 Dec 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 24 Dec 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Beta Version Released!]]></title>
+            <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/24/</link>
+            <guid>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/24/</guid>
+            <pubDate>Sun, 24 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Finally, I can announe that the beta version is out!]]></description>
+            <content:encoded><![CDATA[<p>Finally, I can announe that the <strong>beta version</strong> is out!</p>
+<p>This is what I updated since last time:</p>
+<ul>
+<li>Parsed again all the specification to account for missing/overwritten pages because of similarly named items.</li>
+<li>Added glossary definition tooltips everywhere I could (programatically, we can add more by hand by identifying any place missing a definition).</li>
+<li>Added all the links of "See Also" and any time something is referenced in the text of the specification, the link for that item should now be working.</li>
+<li>Added a lot of code blocks for example sections to provide syntax highlighting. Not all of the code in the reference is inside a code block, but most of them are. The rest most be parsed manually.</li>
+</ul>
+<p>Enjoy!</p>]]></content:encoded>
+            <category>status</category>
+            <category>beta</category>
+            <category>beginning</category>
+            <category>tooltips</category>
+            <category>parsing</category>
+        </item>
         <item>
             <title><![CDATA[Update: Last Parsing of the Spec Done!]]></title>
             <link>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/21/</link>

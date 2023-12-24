@@ -2,11 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lisp-docs.github.io/cl-language-reference/blog</id>
     <title>Common Lisp (New) Language Reference Blog</title>
-    <updated>2023-12-21T00:00:00.000Z</updated>
+    <updated>2023-12-24T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lisp-docs.github.io/cl-language-reference/blog"/>
     <subtitle>Common Lisp (New) Language Reference Blog</subtitle>
     <icon>https://lisp-docs.github.io/cl-language-reference/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Beta Version Released!]]></title>
+        <id>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/24/</id>
+        <link href="https://lisp-docs.github.io/cl-language-reference/blog/2023/12/24/"/>
+        <updated>2023-12-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Finally, I can announe that the beta version is out!]]></summary>
+        <content type="html"><![CDATA[<p>Finally, I can announe that the <strong>beta version</strong> is out!</p>
+<p>This is what I updated since last time:</p>
+<ul>
+<li>Parsed again all the specification to account for missing/overwritten pages because of similarly named items.</li>
+<li>Added glossary definition tooltips everywhere I could (programatically, we can add more by hand by identifying any place missing a definition).</li>
+<li>Added all the links of "See Also" and any time something is referenced in the text of the specification, the link for that item should now be working.</li>
+<li>Added a lot of code blocks for example sections to provide syntax highlighting. Not all of the code in the reference is inside a code block, but most of them are. The rest most be parsed manually.</li>
+</ul>
+<p>Enjoy!</p>]]></content>
+        <author>
+            <name>Daniel N</name>
+            <uri>https://github.com/daninus14</uri>
+        </author>
+        <category label="status" term="status"/>
+        <category label="beta" term="beta"/>
+        <category label="beginning" term="beginning"/>
+        <category label="tooltips" term="tooltips"/>
+        <category label="parsing" term="parsing"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Update: Last Parsing of the Spec Done!]]></title>
         <id>https://lisp-docs.github.io/cl-language-reference/blog/2023/12/21/</id>
