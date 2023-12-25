@@ -3,7 +3,7 @@
 
 
 
-A simple <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> <ClLinks >form</ClLinks> is one that has a body containing only *compound forms*. Each <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is *evaluated* in turn from left to right. When the last <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> has been *evaluated*, then the first <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is evaluated again, and so on, in a never-ending cycle. A simple <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> establishes an *implicit block* named 
+A simple <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is one that has a body containing only *compound forms*. Each <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is *evaluated* in turn from left to right. When the last <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> has been *evaluated*, then the first <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is evaluated again, and so on, in a never-ending cycle. A simple <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> establishes an *implicit block* named 
 
 
 
