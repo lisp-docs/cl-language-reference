@@ -16,7 +16,9 @@ The macro <DictionaryLink styled={true} term={"and"}><b>and</b></DictionaryLink>
 
 If no <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are supplied, (and) returns <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>.
 
-<DictionaryLink styled={true} term={"and"}><b>and</b></DictionaryLink> passes back multiple values from the last <GlossaryTerm styled={true} term={"subform"}><i>subform</i></GlossaryTerm> but not from subforms other than the last. **Examples:**
+<DictionaryLink styled={true} term={"and"}><b>and</b></DictionaryLink> passes back multiple values from the last <GlossaryTerm styled={true} term={"subform"}><i>subform</i></GlossaryTerm> but not from subforms other than the last. 
+
+**Examples:**
 
 ```lisp
 
