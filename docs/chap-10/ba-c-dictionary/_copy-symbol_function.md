@@ -1,4 +1,4 @@
-**copy-symbol** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**copy-symbol** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"copy-symbol"}><b>copy-symbol</b></ClLinks> <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> &amp;optional *copy-properties → new-symbol* 
+<ClLinks  term={"copy-symbol"}><b>copy-symbol</b></ClLinks> <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> &amp;optional *copy-properties → new-symbol* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*copy-properties*—a *generalized boolean*. The default is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+*copy-properties*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-*new-symbol*—a <ClLinks styled={true} term={"fresh"}><i>fresh</i></ClLinks>, *uninterned symbol*. 
+*new-symbol*—a <ClLinks  term={"fresh"}><i>fresh</i></ClLinks>, *uninterned symbol*. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<ClLinks styled={true} term={"copy-symbol"}><b>copy-symbol</b></ClLinks> returns a <ClLinks styled={true} term={"fresh"}><i>fresh</i></ClLinks>, *uninterned symbol*, the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of which is <ClLinks styled={true} term={"string"}><b>string=</b></ClLinks> to and possibly the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> as the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the given <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+<ClLinks  term={"copy-symbol"}><b>copy-symbol</b></ClLinks> returns a <ClLinks  term={"fresh"}><i>fresh</i></ClLinks>, *uninterned symbol*, the <ClLinks  term={"name"}><i>name</i></ClLinks> of which is <ClLinks  term={"string"}><b>string=</b></ClLinks> to and possibly the <ClLinks  term={"same"}><i>same</i></ClLinks> as the <ClLinks  term={"name"}><i>name</i></ClLinks> of the given <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-If *copy-properties* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, the *new-symbol* is neither <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks> nor <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks> and has a *null property list*. If *copy-properties* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, then the initial <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of *new-symbol* is the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, the initial <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> definition of *new-symbol* is the *functional value* of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, and the *property list* of *new-symbol* is a <ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks><sub>2</sub> of the *property list* of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+If *copy-properties* is <ClLinks  term={"false"}><i>false</i></ClLinks>, the *new-symbol* is neither <ClLinks  term={"bound"}><i>bound</i></ClLinks> nor <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> and has a *null property list*. If *copy-properties* is <ClLinks  term={"true"}><i>true</i></ClLinks>, then the initial <ClLinks  term={"value"}><i>value</i></ClLinks> of *new-symbol* is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, the initial <ClLinks  term={"function"}><i>function</i></ClLinks> definition of *new-symbol* is the *functional value* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, and the *property list* of *new-symbol* is a <ClLinks  term={"copy"}><i>copy</i></ClLinks><sub>2</sub> of the *property list* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -69,7 +69,7 @@ If *copy-properties* is <ClLinks styled={true} term={"false"}><i>false</i></ClLi
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -77,7 +77,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"make-symbol"}><b>make-symbol</b></ClLinks> 
+<ClLinks  term={"make-symbol"}><b>make-symbol</b></ClLinks> 
 
 
 
@@ -85,7 +85,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-Implementors are encouraged not to copy the <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> which is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> unnecessarily. Unless there is a good reason to do so, the normal implementation strategy is for the *new-symbol*’s <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> to be <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> to the given <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>. 
+Implementors are encouraged not to copy the <ClLinks  term={"string"}><i>string</i></ClLinks> which is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks  term={"name"}><i>name</i></ClLinks> unnecessarily. Unless there is a good reason to do so, the normal implementation strategy is for the *new-symbol*’s <ClLinks  term={"name"}><i>name</i></ClLinks> to be <ClLinks  term={"identical"}><i>identical</i></ClLinks> to the given <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks  term={"name"}><i>name</i></ClLinks>. 
 
 
 

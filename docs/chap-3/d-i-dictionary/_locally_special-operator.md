@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"locally"}><b>locally</b></ClLinks> <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* *! \{result\}*\* 
+<ClLinks  term={"locally"}><b>locally</b></ClLinks> <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* *! \{result\}*\* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks styled={true} term={"declaration"}><i>Declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>Declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Sequentially evaluates a body of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a *lexical environment* where the given <ClLinks styled={true} term={"declaration"}><i>declarations</i></ClLinks> have e↵ect. 
+Sequentially evaluates a body of <ClLinks  term={"form"}><i>forms</i></ClLinks> in a *lexical environment* where the given <ClLinks  term={"declaration"}><i>declarations</i></ClLinks> have e↵ect. 
 
 
 
@@ -70,7 +70,7 @@ Sequentially evaluates a body of <ClLinks styled={true} term={"form"}><i>forms</
 
 
 
-<ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> 
+<ClLinks  term={"declare"}><b>declare</b></ClLinks> 
 
 
 
@@ -78,19 +78,15 @@ Sequentially evaluates a body of <ClLinks styled={true} term={"form"}><i>forms</
 
 
 
-The <ClLinks styled={true} term={"special"}><b>special</b></ClLinks> declaration may be used with <ClLinks styled={true} term={"locally"}><b>locally</b></ClLinks> to a↵ect references to, rather than <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks> of, <ClLinks styled={true} term={"variable"}><i>variables</i></ClLinks>. 
+The <ClLinks  term={"special"}><b>special</b></ClLinks> declaration may be used with <ClLinks  term={"locally"}><b>locally</b></ClLinks> to a↵ect references to, rather than <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of, <ClLinks  term={"variable"}><i>variables</i></ClLinks>. 
 
 
 
-If a <ClLinks styled={true} term={"locally"}><b>locally</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is a *top level form*, the body <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are also processed as *top level forms*. See Section 3.2.3 (File Compilation). 
-
-
+If a <ClLinks  term={"locally"}><b>locally</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is a *top level form*, the body <ClLinks  term={"form"}><i>forms</i></ClLinks> are also processed as *top level forms*. See Section 3.2.3 (File Compilation). 
 
 
 
 
-
- 
 
 
 
@@ -98,7 +94,11 @@ If a <ClLinks styled={true} term={"locally"}><b>locally</b></ClLinks> <ClLinks s
 
 
 
-<ClLinks styled={true} term={"the"}><b>the</b></ClLinks> 
+ 
+
+
+
+<ClLinks  term={"the"}><b>the</b></ClLinks> 
 
 
 

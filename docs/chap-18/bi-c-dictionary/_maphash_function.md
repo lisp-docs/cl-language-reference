@@ -1,4 +1,4 @@
-**maphash** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**maphash** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"maphash"}><b>maphash</b></ClLinks> *function hash-table →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
+<ClLinks  term={"maphash"}><b>maphash</b></ClLinks> *function hash-table →* <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>, the <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> and the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>. 
+<ClLinks  term={"function"}><i>function</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks>, the <ClLinks  term={"key"}><i>key</i></ClLinks> and the <ClLinks  term={"value"}><i>value</i></ClLinks>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Iterates over all entries in the *hash-table*. For each entry, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is called with two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>–the <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> and the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of that entry. 
+Iterates over all entries in the *hash-table*. For each entry, the <ClLinks  term={"function"}><i>function</i></ClLinks> is called with two <ClLinks  term={"argument"}><i>arguments</i></ClLinks>–the <ClLinks  term={"key"}><i>key</i></ClLinks> and the <ClLinks  term={"value"}><i>value</i></ClLinks> of that entry. 
 
 
 
-The consequences are unspecified if any attempt is made to add or remove an entry from the *hash-table* while a <ClLinks styled={true} term={"maphash"}><b>maphash</b></ClLinks> is in progress, with two exceptions: the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> can use can use <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"gethash"}><b>gethash</b></ClLinks> to change the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> part of the entry currently being processed, or it can use <ClLinks styled={true} term={"remhash"}><b>remhash</b></ClLinks> to remove that entry. 
+The consequences are unspecified if any attempt is made to add or remove an entry from the *hash-table* while a <ClLinks  term={"maphash"}><b>maphash</b></ClLinks> is in progress, with two exceptions: the <ClLinks  term={"function"}><i>function</i></ClLinks> can use can use <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"gethash"}><b>gethash</b></ClLinks> to change the <ClLinks  term={"value"}><i>value</i></ClLinks> part of the entry currently being processed, or it can use <ClLinks  term={"remhash"}><b>remhash</b></ClLinks> to remove that entry. 
 
 
 
@@ -62,7 +62,7 @@ The consequences are unspecified if any attempt is made to add or remove an entr
 
 
 
-None, other than any which might be done by the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
+None, other than any which might be done by the <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -82,7 +82,7 @@ None, other than any which might be done by the <ClLinks styled={true} term={"fu
 
 
 
-<ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>, <ClLinks styled={true} term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></ClLinks>, Section 3.6 (Traversal Rules and Side Effects) 
+<ClLinks  term={"loop"}><b>loop</b></ClLinks>, <ClLinks  term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></ClLinks>, Section 3.6 (Traversal Rules and Side Effects) 
 
 
 

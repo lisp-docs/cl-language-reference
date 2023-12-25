@@ -1,4 +1,4 @@
-**array-in-bounds-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**array-in-bounds-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"array-in-bounds-p"}><b>array-in-bounds-p</b></ClLinks> <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → generalized-boolean* 
+<ClLinks  term={"array-in-bounds-p"}><b>array-in-bounds-p</b></ClLinks> <ClLinks  term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → generalized-boolean* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
+<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
-*subscripts*—a list of *integers* of length equal to the <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks> of the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
+*subscripts*—a list of *integers* of length equal to the <ClLinks  term={"rank"}><i>rank</i></ClLinks> of the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the *subscripts* are all in bounds for <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>; otherwise returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. (If <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , that *fill pointer* is ignored.) 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the *subscripts* are all in bounds for <ClLinks  term={"array"}><i>array</i></ClLinks>; otherwise returns <ClLinks  term={"false"}><i>false</i></ClLinks>. (If <ClLinks  term={"array"}><i>array</i></ClLinks> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , that *fill pointer* is ignored.) 
 
 
 
@@ -47,7 +47,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the *subsc
 
 
 
-<ClLinks styled={true} term={"array-dimensions"}><b>array-dimensions</b></ClLinks> 
+<ClLinks  term={"array-dimensions"}><b>array-dimensions</b></ClLinks> 
 
 
 

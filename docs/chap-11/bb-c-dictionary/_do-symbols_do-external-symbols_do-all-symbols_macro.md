@@ -1,4 +1,4 @@
-**do-symbols, do-external-symbols, do-all-symbols** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**do-symbols, do-external-symbols, do-all-symbols** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,23 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"do-symbols"}><b>do-symbols</b></ClLinks> (*var* [<ClLinks styled={true} term={"package"}><i>package</i></ClLinks> [*result-form*]]) 
+<ClLinks  term={"do-symbols"}><b>do-symbols</b></ClLinks> (*var* [<ClLinks  term={"package"}><i>package</i></ClLinks> [*result-form*]]) 
 
 
 
-<ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *\{tag | statement\}*\* 
-
-
-
-→ \{result\}\* 
-
-
-
-<ClLinks styled={true} term={"do-external-symbols"}><b>do-external-symbols</b></ClLinks> (*var* [<ClLinks styled={true} term={"package"}><i>package</i></ClLinks> [*result-form*]]) 
-
-
-
-<ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *\{tag | statement\}*\* 
+<ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *\{tag | statement\}*\* 
 
 
 
@@ -30,11 +18,23 @@
 
 
 
-<ClLinks styled={true} term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> (*var* [*result-form*]) 
+<ClLinks  term={"do-external-symbols"}><b>do-external-symbols</b></ClLinks> (*var* [<ClLinks  term={"package"}><i>package</i></ClLinks> [*result-form*]]) 
 
 
 
-<ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *\{tag | statement\}*\* 
+<ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *\{tag | statement\}*\* 
+
+
+
+→ \{result\}\* 
+
+
+
+<ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> (*var* [*result-form*]) 
+
+
+
+<ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *\{tag | statement\}*\* 
 
 
 
@@ -50,19 +50,19 @@
 
 
 
-<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* ; evaluated. The default in <ClLinks styled={true} term={"do-symbols"}><b>do-symbols</b></ClLinks> and <ClLinks styled={true} term={"do-external-symbols"}><b>do-external-symbols</b></ClLinks> is the *current package*. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* ; evaluated. The default in <ClLinks  term={"do-symbols"}><b>do-symbols</b></ClLinks> and <ClLinks  term={"do-external-symbols"}><b>do-external-symbols</b></ClLinks> is the *current package*. 
 
 
 
-*result-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated as described below. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*result-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated as described below. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-<ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>—a *go tag*; not evaluated. 
+<ClLinks  term={"tag"}><i>tag</i></ClLinks>—a *go tag*; not evaluated. 
 
 
 
@@ -70,7 +70,7 @@
 
 
 
-*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the *result-form* if a *normal return* occurs, or else, if an *explicit return* occurs, the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> that were transferred. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the *result-form* if a *normal return* occurs, or else, if an *explicit return* occurs, the <ClLinks  term={"value"}><i>values</i></ClLinks> that were transferred. 
 
 
 
@@ -78,7 +78,7 @@
 
 
 
-<ClLinks styled={true} term={"do-symbols"}><b>do-symbols</b></ClLinks>, <ClLinks styled={true} term={"do-external-symbols"}><b>do-external-symbols</b></ClLinks>, and <ClLinks styled={true} term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> iterate over the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> of <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks>. For each <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> in the set of <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> chosen, the *var* is bound to the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, and the *statements* in the body are executed. When all the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> have been processed, *result-form* is evaluated and returned as the value of the macro. 
+<ClLinks  term={"do-symbols"}><b>do-symbols</b></ClLinks>, <ClLinks  term={"do-external-symbols"}><b>do-external-symbols</b></ClLinks>, and <ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> iterate over the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> of <ClLinks  term={"package"}><i>packages</i></ClLinks>. For each <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in the set of <ClLinks  term={"package"}><i>packages</i></ClLinks> chosen, the *var* is bound to the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, and the *statements* in the body are executed. When all the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> have been processed, *result-form* is evaluated and returned as the value of the macro. 
 
 
 
@@ -98,35 +98,35 @@
 
 
 
-<ClLinks styled={true} term={"do-symbols"}><b>do-symbols</b></ClLinks> iterates over the *symbols accessible* in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. *Statements* may execute more than once for <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> that are inherited from multiple <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks>. 
+<ClLinks  term={"do-symbols"}><b>do-symbols</b></ClLinks> iterates over the *symbols accessible* in <ClLinks  term={"package"}><i>package</i></ClLinks>. *Statements* may execute more than once for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are inherited from multiple <ClLinks  term={"package"}><i>packages</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> iterates on every *registered package*. <ClLinks styled={true} term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> will not process every <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> whatsoever, because a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> not <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in any *registered package* will not be processed. <ClLinks styled={true} term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> may cause a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that is <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in several <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> to be processed more than once. 
+<ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> iterates on every *registered package*. <ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> will not process every <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whatsoever, because a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> not <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in any *registered package* will not be processed. <ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> may cause a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is <ClLinks  term={"present"}><i>present</i></ClLinks> in several <ClLinks  term={"package"}><i>packages</i></ClLinks> to be processed more than once. 
 
 
 
-<ClLinks styled={true} term={"do-external-symbols"}><b>do-external-symbols</b></ClLinks> iterates on the external symbols of <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
+<ClLinks  term={"do-external-symbols"}><b>do-external-symbols</b></ClLinks> iterates on the external symbols of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-When *result-form* is evaluated, *var* is bound and has the value <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+When *result-form* is evaluated, *var* is bound and has the value <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-An *implicit block* named <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> surrounds the entire <ClLinks styled={true} term={"do-symbols"}><b>do-symbols</b></ClLinks>, <ClLinks styled={true} term={"do-external-symbols"}><b>do-external-symbols</b></ClLinks>, or <ClLinks styled={true} term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. <ClLinks styled={true} term={"return"}><b>return</b></ClLinks> or <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks> may be used to terminate the iteration prematurely. 
+An *implicit block* named <ClLinks  term={"nil"}><b>nil</b></ClLinks> surrounds the entire <ClLinks  term={"do-symbols"}><b>do-symbols</b></ClLinks>, <ClLinks  term={"do-external-symbols"}><b>do-external-symbols</b></ClLinks>, or <ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. <ClLinks  term={"return"}><b>return</b></ClLinks> or <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> may be used to terminate the iteration prematurely. 
 
 
 
-If execution of the body affects which <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> are contained in the set of <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> over which iteration is occurring, other than to remove the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> currently the value of *var* by using <ClLinks styled={true} term={"unintern"}><b>unintern</b></ClLinks>, the consequences are undefined. 
+If execution of the body affects which <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are contained in the set of <ClLinks  term={"package"}><i>packages</i></ClLinks> over which iteration is occurring, other than to remove the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> currently the value of *var* by using <ClLinks  term={"unintern"}><b>unintern</b></ClLinks>, the consequences are undefined. 
 
 
 
-For each of these macros, the <ClLinks styled={true} term={"scope"}><i>scope</i></ClLinks> of the name binding does not include any initial value form, but the optional result forms are included. 
+For each of these macros, the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of the name binding does not include any initial value form, but the optional result forms are included. 
 
 
 
-Any <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks> in the body is treated as with <ClLinks styled={true} term={"tagbody"}><b>tagbody</b></ClLinks>. 
+Any <ClLinks  term={"tag"}><i>tag</i></ClLinks> in the body is treated as with <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks>. 
 
 
 
@@ -158,7 +158,7 @@ Any <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks> in the body is trea
 
 
 
-<ClLinks styled={true} term={"intern"}><b>intern</b></ClLinks>, <ClLinks styled={true} term={"export"}><b>export</b></ClLinks>, Section 3.6 (Traversal Rules and Side Effects) 
+<ClLinks  term={"intern"}><b>intern</b></ClLinks>, <ClLinks  term={"export"}><b>export</b></ClLinks>, Section 3.6 (Traversal Rules and Side Effects) 
 
 
 

@@ -3,7 +3,7 @@
 
 
 
-The <ClLinks styled={true} term={"backquote"}><i>backquote</i></ClLinks> introduces a template of a data structure to be built. For example, writing ‘(cond ((numberp ,x) ,@y) (t (print ,x) ,@y)) 
+The <ClLinks  term={"backquote"}><i>backquote</i></ClLinks> introduces a template of a data structure to be built. For example, writing ‘(cond ((numberp ,x) ,@y) (t (print ,x) ,@y)) 
 
 
 
@@ -23,11 +23,11 @@ is roughly equivalent to writing
 
 
 
-Where a comma occurs in the template, the <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> following the comma is to be evaluated to produce an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> to be inserted at that point. Assume b has the value 3, for example, then evaluating the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> denoted by ‘(a b ,b ,(+ b 1) b) produces the result (a b 3 4 b). 
+Where a comma occurs in the template, the <ClLinks  term={"expression"}><i>expression</i></ClLinks> following the comma is to be evaluated to produce an <ClLinks  term={"object"}><i>object</i></ClLinks> to be inserted at that point. Assume b has the value 3, for example, then evaluating the <ClLinks  term={"form"}><i>form</i></ClLinks> denoted by ‘(a b ,b ,(+ b 1) b) produces the result (a b 3 4 b). 
 
 
 
-If a comma is immediately followed by an <ClLinks styled={true} term={"at-sign"}><i>at-sign</i></ClLinks>, then the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> following the <ClLinks styled={true} term={"at-sign"}><i>at-sign</i></ClLinks> is evaluated to produce a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>. These <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> are then “spliced” into place in the template. For example, if x has the value (a b c), then 
+If a comma is immediately followed by an <ClLinks  term={"at-sign"}><i>at-sign</i></ClLinks>, then the <ClLinks  term={"form"}><i>form</i></ClLinks> following the <ClLinks  term={"at-sign"}><i>at-sign</i></ClLinks> is evaluated to produce a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"object"}><i>objects</i></ClLinks>. These <ClLinks  term={"object"}><i>objects</i></ClLinks> are then “spliced” into place in the template. For example, if x has the value (a b c), then 
 
 
 
@@ -47,15 +47,15 @@ The backquote syntax can be summarized formally as follows.
 
 
 
-*•* ‘*basic* is the same as ’*basic*, that is, (quote *basic*), for any *expression basic* that is not a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> or a general <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> . 
+*•* ‘*basic* is the same as ’*basic*, that is, (quote *basic*), for any *expression basic* that is not a <ClLinks  term={"list"}><i>list</i></ClLinks> or a general <ClLinks  term={"vector"}><i>vector</i></ClLinks> . 
 
 
 
-*•* ‘,<ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is the same as <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, for any <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, provided that the representation of <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> does not begin with <ClLinks styled={true} term={"at-sign"}><i>at-sign</i></ClLinks> or <ClLinks styled={true} term={"dot"}><i>dot</i></ClLinks>. (A similar caveat holds for all occurrences of a form after a <ClLinks styled={true} term={"comma"}><i>comma</i></ClLinks>.) 
+*•* ‘,<ClLinks  term={"form"}><i>form</i></ClLinks> is the same as <ClLinks  term={"form"}><i>form</i></ClLinks>, for any <ClLinks  term={"form"}><i>form</i></ClLinks>, provided that the representation of <ClLinks  term={"form"}><i>form</i></ClLinks> does not begin with <ClLinks  term={"at-sign"}><i>at-sign</i></ClLinks> or <ClLinks  term={"dot"}><i>dot</i></ClLinks>. (A similar caveat holds for all occurrences of a form after a <ClLinks  term={"comma"}><i>comma</i></ClLinks>.) 
 
 
 
-*•* ‘,@<ClLinks styled={true} term={"form"}><i>form</i></ClLinks> has undefined consequences. 
+*•* ‘,@<ClLinks  term={"form"}><i>form</i></ClLinks> has undefined consequences. 
 
 
 
@@ -71,19 +71,19 @@ where the brackets are used to indicate a transformation of an *xj* as follows:
 
 
 
-– [<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>] is interpreted as (list ‘<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>), which contains a backquoted form that must then be further interpreted. 
+– [<ClLinks  term={"form"}><i>form</i></ClLinks>] is interpreted as (list ‘<ClLinks  term={"form"}><i>form</i></ClLinks>), which contains a backquoted form that must then be further interpreted. 
 
 
 
-– [,<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>] is interpreted as (list <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>). 
+– [,<ClLinks  term={"form"}><i>form</i></ClLinks>] is interpreted as (list <ClLinks  term={"form"}><i>form</i></ClLinks>). 
 
 
 
-– [,@<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>] is interpreted as <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+– [,@<ClLinks  term={"form"}><i>form</i></ClLinks>] is interpreted as <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*•* ‘(x1 x2 x3 ... xn) may be interpreted to mean the same as the backquoted form ‘(x1 x2 x3 ... xn . <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>), thereby reducing it to the previous case. 
+*•* ‘(x1 x2 x3 ... xn) may be interpreted to mean the same as the backquoted form ‘(x1 x2 x3 ... xn . <ClLinks  term={"nil"}><b>nil</b></ClLinks>), thereby reducing it to the previous case. 
 
 
 
@@ -107,15 +107,15 @@ where the brackets indicate a transformation of an xj as described above.
 
 
 
-Anywhere “,@” may be used, the syntax “,.” may be used instead to indicate that it is permissible to operate *destructively* on the *list structure* produced by the form following the “,.” (in effect, to use <ClLinks styled={true} term={"nconc"}><b>nconc</b></ClLinks> instead of <ClLinks styled={true} term={"append"}><b>append</b></ClLinks>). 
+Anywhere “,@” may be used, the syntax “,.” may be used instead to indicate that it is permissible to operate *destructively* on the *list structure* produced by the form following the “,.” (in effect, to use <ClLinks  term={"nconc"}><b>nconc</b></ClLinks> instead of <ClLinks  term={"append"}><b>append</b></ClLinks>). 
 
 
 
-If the backquote syntax is nested, the innermost backquoted form should be expanded first. This means that if several commas occur in a row, the leftmost one belongs to the innermost <ClLinks styled={true} term={"backquote"}><i>backquote</i></ClLinks>. 
+If the backquote syntax is nested, the innermost backquoted form should be expanded first. This means that if several commas occur in a row, the leftmost one belongs to the innermost <ClLinks  term={"backquote"}><i>backquote</i></ClLinks>. 
 
 
 
-An <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> is free to interpret a backquoted *form F*<sub>1</sub> as any *form F*<sub>2</sub> that, when evaluated, will produce a result that is the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> under <ClLinks styled={true} term={"equal"}><b>equal</b></ClLinks> as the result implied by the above definition, provided that the side-effect behavior of the substitute *form F*<sub>2</sub> is also consistent with the  
+An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is free to interpret a backquoted *form F*<sub>1</sub> as any *form F*<sub>2</sub> that, when evaluated, will produce a result that is the <ClLinks  term={"same"}><i>same</i></ClLinks> under <ClLinks  term={"equal"}><b>equal</b></ClLinks> as the result implied by the above definition, provided that the side-effect behavior of the substitute *form F*<sub>2</sub> is also consistent with the  
 
 
 
@@ -123,7 +123,7 @@ An <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks
 
 
 
-description given above. The constructed copy of the template might or might not share <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> structure with the template itself. As an example, the above definition implies that 
+description given above. The constructed copy of the template might or might not share <ClLinks  term={"list"}><i>list</i></ClLinks> structure with the template itself. As an example, the above definition implies that 
 
 
 
@@ -135,7 +135,7 @@ will be interpreted as if it were
 
 
 
-(append (list (append (list a) (list ’b) ’<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>)) (list c) d ’<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>) 
+(append (list (append (list a) (list ’b) ’<ClLinks  term={"nil"}><b>nil</b></ClLinks>)) (list c) d ’<ClLinks  term={"nil"}><b>nil</b></ClLinks>) 
 
 
 

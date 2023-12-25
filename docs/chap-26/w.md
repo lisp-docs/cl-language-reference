@@ -15,19 +15,19 @@ sidebar_position: 119
 
 
 
-**wild** *adj.* 1. (of a <ClLinks styled={true} term={"namestring"}><i>namestring</i></ClLinks>) using an <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks> syntax for naming files, which might “match” any of possibly several possible <ClLinks styled={true} term={"filename"}><i>filenames</i></ClLinks>, and which can therefore be used to refer to the aggregate of the <ClLinks styled={true} term={"file"}><i>files</i></ClLinks> named by those <ClLinks styled={true} term={"filename"}><i>filenames</i></ClLinks>. 2. (of a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>) a structured representation of a name which might “match” any of 
+**wild** *adj.* 1. (of a <ClLinks  term={"namestring"}><i>namestring</i></ClLinks>) using an <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> syntax for naming files, which might “match” any of possibly several possible <ClLinks  term={"filename"}><i>filenames</i></ClLinks>, and which can therefore be used to refer to the aggregate of the <ClLinks  term={"file"}><i>files</i></ClLinks> named by those <ClLinks  term={"filename"}><i>filenames</i></ClLinks>. 2. (of a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>) a structured representation of a name which might “match” any of 
 
 
 
-possibly several <ClLinks styled={true} term={"pathname"}><i>pathnames</i></ClLinks>, and which can therefore be used to refer to the aggregate of the <ClLinks styled={true} term={"file"}><i>files</i></ClLinks> named by those <ClLinks styled={true} term={"pathname"}><i>pathnames</i></ClLinks>. The set of *wild pathnames* includes, but is not restricted to, <ClLinks styled={true} term={"pathname"}><i>pathnames</i></ClLinks> which have a component which is :wild, or which have a directory component which contains :wild or :wild-inferors. See the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"wild-pathname-p"}><b>wild-pathname-p</b></ClLinks>. 
+possibly several <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks>, and which can therefore be used to refer to the aggregate of the <ClLinks  term={"file"}><i>files</i></ClLinks> named by those <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks>. The set of *wild pathnames* includes, but is not restricted to, <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks> which have a component which is :wild, or which have a directory component which contains :wild or :wild-inferors. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"wild-pathname-p"}><b>wild-pathname-p</b></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"write"}><b>write</b></ClLinks> *v.t.* 1. (a <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> or <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> or component) to change the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of the <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> or <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 2. (an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> to a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>) to output a representation of the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> to the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
+<ClLinks  term={"write"}><b>write</b></ClLinks> *v.t.* 1. (a <ClLinks  term={"binding"}><i>binding</i></ClLinks> or <ClLinks  term={"slot"}><i>slot</i></ClLinks> or component) to change the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"binding"}><i>binding</i></ClLinks> or <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 2. (an <ClLinks  term={"object"}><i>object</i></ClLinks> to a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) to output a representation of the <ClLinks  term={"object"}><i>object</i></ClLinks> to the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-**writer** *n.* a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> that <ClLinks styled={true} term={"write"}><i>writes</i></ClLinks><sub>1</sub> a <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> or <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 
+**writer** *n.* a <ClLinks  term={"function"}><i>function</i></ClLinks> that <ClLinks  term={"write"}><i>writes</i></ClLinks><sub>1</sub> a <ClLinks  term={"variable"}><i>variable</i></ClLinks> or <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
 
 
 

@@ -1,4 +1,4 @@
-**slot-exists-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**slot-exists-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"slot-exists-p"}><b>slot-exists-p</b></ClLinks> *object slot-name → generalized-boolean* 
+<ClLinks  term={"slot-exists-p"}><b>slot-exists-p</b></ClLinks> *object slot-name → generalized-boolean* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*slot-name*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+*slot-name*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> has a <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> named *slot-name*. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the <ClLinks  term={"object"}><i>object</i></ClLinks> has a <ClLinks  term={"slot"}><i>slot</i></ClLinks> named *slot-name*. 
 
 
 
@@ -38,7 +38,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the <ClLin
 
 
 
-<ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> 
+<ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks> 
 
 
 
@@ -46,7 +46,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the <ClLin
 
 
 
-<ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks styled={true} term={"slot-missing"}><b>slot-missing</b></ClLinks> 
+<ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> 
 
 
 
@@ -54,7 +54,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the <ClLin
 
 
 
-Although no <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> is required to do so, implementors are strongly encouraged to implement the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"slot-exists-p"}><b>slot-exists-p</b></ClLinks> using the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> slot-exists-p-using-class described in the *Metaobject Protocol*. 
+Although no <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is required to do so, implementors are strongly encouraged to implement the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"slot-exists-p"}><b>slot-exists-p</b></ClLinks> using the <ClLinks  term={"function"}><i>function</i></ClLinks> slot-exists-p-using-class described in the *Metaobject Protocol*. 
 
 
 

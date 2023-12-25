@@ -1,4 +1,4 @@
-**array-element-type** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**array-element-type** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"array-element-type"}><b>array-element-type</b></ClLinks> *array → typespec* 
+<ClLinks  term={"array-element-type"}><b>array-element-type</b></ClLinks> *array → typespec* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
+<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a *type specifier* which represents the *actual array element type* of the array, which is the set of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> that such an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> can hold. (Because of *array upgrading*, this *type specifier* can in some cases denote a <ClLinks styled={true} term={"supertype"}><i>supertype</i></ClLinks> of the *expressed array element type* of the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>.) 
+Returns a *type specifier* which represents the *actual array element type* of the array, which is the set of <ClLinks  term={"object"}><i>objects</i></ClLinks> that such an <ClLinks  term={"array"}><i>array</i></ClLinks> can hold. (Because of *array upgrading*, this *type specifier* can in some cases denote a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of the *expressed array element type* of the <ClLinks  term={"array"}><i>array</i></ClLinks>.) 
 
 
 
@@ -56,7 +56,7 @@ could be (mod 5), (mod 8), fixnum, t, or any other type of which (mod 5) is a *s
 
 
 
-The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
+The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 
@@ -64,7 +64,7 @@ The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLink
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -72,7 +72,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"array"}><b>array</b></ClLinks>, <ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks styled={true} term={"subtypep"}><b>subtypep</b></ClLinks>, <ClLinks styled={true} term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks> 
+<ClLinks  term={"array"}><b>array</b></ClLinks>, <ClLinks  term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks>, <ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**make-pathname** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**make-pathname** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"make-pathname"}><b>make-pathname</b></ClLinks> &amp;key *host device directory name type version defaults case* 
+<ClLinks  term={"make-pathname"}><b>make-pathname</b></ClLinks> &amp;key *host device directory name type version defaults case* 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-*directory*—a *valid pathname directory*. Complicated defaulting behavior; see below. <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a *valid pathname name*. Complicated defaulting behavior; see below. 
+*directory*—a *valid pathname directory*. Complicated defaulting behavior; see below. <ClLinks  term={"name"}><i>name</i></ClLinks>—a *valid pathname name*. Complicated defaulting behavior; see below. 
 
 
 
-<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>—a *valid pathname type*. Complicated defaulting behavior; see below. 
+<ClLinks  term={"type"}><i>type</i></ClLinks>—a *valid pathname type*. Complicated defaulting behavior; see below. 
 
 
 
@@ -34,15 +34,15 @@
 
 
 
-*defaults*—a *pathname designator* . The default is a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> whose host component is the same as the host component of the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></ClLinks>, and whose other components are all <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*defaults*—a *pathname designator* . The default is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> whose host component is the same as the host component of the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></ClLinks>, and whose other components are all <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"case"}><i>case</i></ClLinks>—one of :common or :local. The default is :local. 
+<ClLinks  term={"case"}><i>case</i></ClLinks>—one of :common or :local. The default is :local. 
 
 
 
-<ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>—a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>. 
+<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
 
 
 
@@ -50,31 +50,27 @@
 
 
 
-Constructs and returns a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> from the supplied keyword arguments. 
+Constructs and returns a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> from the supplied keyword arguments. 
 
 
 
-After the components supplied explicitly by *host*, *device*, *directory*, <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>, <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>, and *version* are filled in, the merging rules used by <ClLinks styled={true} term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks> are used to fill in any unsupplied components from the defaults supplied by *defaults*. 
+After the components supplied explicitly by *host*, *device*, *directory*, <ClLinks  term={"name"}><i>name</i></ClLinks>, <ClLinks  term={"type"}><i>type</i></ClLinks>, and *version* are filled in, the merging rules used by <ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks> are used to fill in any unsupplied components from the defaults supplied by *defaults*. 
 
 
 
-Whenever a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> is constructed the components may be canonicalized if appropriate. For the explanation of the arguments that can be supplied for each component, see Section 19.2.1 (Pathname Components). 
+Whenever a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is constructed the components may be canonicalized if appropriate. For the explanation of the arguments that can be supplied for each component, see Section 19.2.1 (Pathname Components). 
 
 
 
-If <ClLinks styled={true} term={"case"}><i>case</i></ClLinks> is supplied, it is treated as described in Section 19.2.2.1.2 (Case in Pathname Components). 
+If <ClLinks  term={"case"}><i>case</i></ClLinks> is supplied, it is treated as described in Section 19.2.2.1.2 (Case in Pathname Components). 
 
 
 
-The resulting <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> is a *logical pathname* if and only its host component is a *logical host* or a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that names a defined *logical host*. 
-
-
+The resulting <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a *logical pathname* if and only its host component is a *logical host* or a <ClLinks  term={"string"}><i>string</i></ClLinks> that names a defined *logical host*. 
 
 
 
 
-
- 
 
 
 
@@ -82,11 +78,15 @@ The resulting <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>
 
 
 
-<ClLinks styled={true} term={"make-pathname"}><b>make-pathname</b></ClLinks> 
+ 
 
 
 
-If the *directory* is a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, it should be the name of a top level directory, and should not contain any punctuation characters; that is, specifying a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, *str*, is equivalent to specifying the list (:absolute *str*). Specifying the symbol :wild is equivalent to specifying the list (:absolute :wild-inferiors), or (:absolute :wild) in a file system that does not support :wild-inferiors. 
+<ClLinks  term={"make-pathname"}><b>make-pathname</b></ClLinks> 
+
+
+
+If the *directory* is a <ClLinks  term={"string"}><i>string</i></ClLinks>, it should be the name of a top level directory, and should not contain any punctuation characters; that is, specifying a <ClLinks  term={"string"}><i>string</i></ClLinks>, *str*, is equivalent to specifying the list (:absolute *str*). Specifying the symbol :wild is equivalent to specifying the list (:absolute :wild-inferiors), or (:absolute :wild) in a file system that does not support :wild-inferiors. 
 
 
 
@@ -140,7 +140,7 @@ The *file system*.
 
 
 
-<ClLinks styled={true} term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks>, <ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks styled={true} term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 

@@ -1,4 +1,4 @@
-**elt** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
+**elt** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"elt"}><b>elt</b></ClLinks> *sequence index → object* 
+<ClLinks  term={"elt"}><b>elt</b></ClLinks> *sequence index → object* 
 
 
 
-<!-- **(setf (elt** *sequence index***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks>  -->
+<!-- **(setf (elt** *sequence index***)** *new-object<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
 **(setf (elt** *sequence index***)** *new-object***)** 
 
 
@@ -27,11 +27,11 @@
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*new-object*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+*new-object*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -39,7 +39,7 @@
 
 
 
-*Accesses* the <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> of *sequence* specified by *index*. 
+*Accesses* the <ClLinks  term={"element"}><i>element</i></ClLinks> of *sequence* specified by *index*. 
 
 
 
@@ -54,7 +54,7 @@ str → "#123456789"
 
 
 
-Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *index* is not a *valid sequence index* for *sequence*. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *index* is not a *valid sequence index* for *sequence*. 
 
 
 
@@ -62,7 +62,7 @@ Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i
 
 
 
-<ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks>, <ClLinks styled={true} term={"nth"}><b>nth</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
+<ClLinks  term={"aref"}><b>aref</b></ClLinks>, <ClLinks  term={"nth"}><b>nth</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
 
 
 
@@ -70,7 +70,7 @@ Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i
 
 
 
-<ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks> may be used to *access vector* elements that are beyond the <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> ’s *fill pointer* . 
+<ClLinks  term={"aref"}><b>aref</b></ClLinks> may be used to *access vector* elements that are beyond the <ClLinks  term={"vector"}><i>vector</i></ClLinks> ’s *fill pointer* . 
 
 
 

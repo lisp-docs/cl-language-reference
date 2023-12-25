@@ -2,7 +2,7 @@
 
 
 
-The generic function <ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks> behaves as if it were defined as follows, except that certain optimizations are permitted: 
+The generic function <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> behaves as if it were defined as follows, except that certain optimizations are permitted: 
 
 
 
@@ -34,7 +34,7 @@ instance))
 
 
 
-The elided code in the definition of <ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks> augments the initargs with any *defaulted initialization arguments* and checks the resulting initialization arguments to determine whether 
+The elided code in the definition of <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> augments the initargs with any *defaulted initialization arguments* and checks the resulting initialization arguments to determine whether 
 
 
 
@@ -50,11 +50,11 @@ The elided code in the definition of <ClLinks styled={true} term={"make-instance
 
 
 
-an initialization argument was supplied that neither filled a <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> nor supplied an argument to an applicable <ClLinks styled={true} term={"method"}><i>method</i></ClLinks>. 
+an initialization argument was supplied that neither filled a <ClLinks  term={"slot"}><i>slot</i></ClLinks> nor supplied an argument to an applicable <ClLinks  term={"method"}><i>method</i></ClLinks>. 
 
 
 
-The generic function <ClLinks styled={true} term={"initialize-instance"}><b>initialize-instance</b></ClLinks> behaves as if it were defined as follows, except that certain optimizations are permitted: 
+The generic function <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks> behaves as if it were defined as follows, except that certain optimizations are permitted: 
 
 
 
@@ -70,11 +70,11 @@ These procedures can be customized.
 
 
 
-Customizing at the Programmer Interface level includes using the :initform, :initarg, and :default-initargs options to <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks>, as well as defining <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> for <ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks>, <ClLinks styled={true} term={"allocate-instance"}><b>allocate-instance</b></ClLinks>, and <ClLinks styled={true} term={"initialize-instance"}><b>initialize-instance</b></ClLinks>. It is also possible to define <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> for <ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks>, which would be invoked by the generic functions <ClLinks styled={true} term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks>, **update-instance-for-redefined-class**, **update-instance-for-different-class**, and <ClLinks styled={true} term={"initialize-instance"}><b>initialize-instance</b></ClLinks>. The meta-object level supports additional customization. 
+Customizing at the Programmer Interface level includes using the :initform, :initarg, and :default-initargs options to <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, as well as defining <ClLinks  term={"method"}><i>methods</i></ClLinks> for <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks>, <ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks>, and <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks>. It is also possible to define <ClLinks  term={"method"}><i>methods</i></ClLinks> for <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>, which would be invoked by the generic functions <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks>, **update-instance-for-redefined-class**, **update-instance-for-different-class**, and <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks>. The meta-object level supports additional customization. 
 
 
 
-Implementations are permitted to make certain optimizations to <ClLinks styled={true} term={"initialize-instance"}><b>initialize-instance</b></ClLinks> and <ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. The description of <ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks> in Chapter 7 mentions the possible optimizations. 
+Implementations are permitted to make certain optimizations to <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks> and <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. The description of <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> in Chapter 7 mentions the possible optimizations. 
 
 
 

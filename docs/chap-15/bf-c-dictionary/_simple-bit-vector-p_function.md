@@ -1,4 +1,4 @@
-**simple-bit-vector-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**simple-bit-vector-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"simple-bit-vector-p"}><b>simple-bit-vector-p</b></ClLinks> *object → generalized-boolean* 
+<ClLinks  term={"simple-bit-vector-p"}><b>simple-bit-vector-p</b></ClLinks> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"simple-bit-vector"}><b>simple-bit-vector</b></ClLinks>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"simple-bit-vector"}><b>simple-bit-vector</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 
 
-<ClLinks styled={true} term={"simple-bit-vector-p"}><b>simple-bit-vector-p</b></ClLinks> 
+<ClLinks  term={"simple-bit-vector-p"}><b>simple-bit-vector-p</b></ClLinks> 
 
 
 
@@ -55,7 +55,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 
 
-<ClLinks styled={true} term={"simple-vector-p"}><b>simple-vector-p</b></ClLinks> 
+<ClLinks  term={"simple-vector-p"}><b>simple-vector-p</b></ClLinks> 
 
 
 
@@ -63,5 +63,5 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 
 
-(simple-bit-vector-p <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’simple-bit-vector) 
+(simple-bit-vector-p <ClLinks  term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks  term={"object"}><i>object</i></ClLinks> ’simple-bit-vector) 
 

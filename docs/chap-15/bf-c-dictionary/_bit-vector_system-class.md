@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"bit-vector"}><b>bit-vector</b></ClLinks>, <ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks>, <ClLinks styled={true} term={"array"}><b>array</b></ClLinks>, <ClLinks styled={true} term={"sequence"}><b>sequence</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<ClLinks  term={"bit-vector"}><b>bit-vector</b></ClLinks>, <ClLinks  term={"vector"}><b>vector</b></ClLinks>, <ClLinks  term={"array"}><b>array</b></ClLinks>, <ClLinks  term={"sequence"}><b>sequence</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-A *bit vector* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> the *element type* of which is <ClLinks styled={true} term={"bit"}><i>bit</i></ClLinks>. 
+A *bit vector* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> the *element type* of which is <ClLinks  term={"bit"}><i>bit</i></ClLinks>. 
 
 
 
-The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"bit-vector"}><b>bit-vector</b></ClLinks> is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks>, for <ClLinks styled={true} term={"bit-vector"}><b>bit-vector</b></ClLinks> means (vector bit). 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"bit-vector"}><b>bit-vector</b></ClLinks> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"vector"}><b>vector</b></ClLinks>, for <ClLinks  term={"bit-vector"}><b>bit-vector</b></ClLinks> means (vector bit). 
 
 
 
@@ -42,7 +42,7 @@ Abbreviating.
 
 
 
-*size*—a non-negative <ClLinks styled={true} term={"fixnum"}><i>fixnum</i></ClLinks>, or the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*size*—a non-negative <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>, or the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 
@@ -50,7 +50,7 @@ Abbreviating.
 
 
 
-This denotes the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> as the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> (array bit (*size*)); that is, the set of *bit vectors* of size *size*. 
+This denotes the same <ClLinks  term={"type"}><i>type</i></ClLinks> as the <ClLinks  term={"type"}><i>type</i></ClLinks> (array bit (*size*)); that is, the set of *bit vectors* of size *size*. 
 
 
 

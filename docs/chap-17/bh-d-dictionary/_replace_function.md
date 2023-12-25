@@ -1,4 +1,4 @@
-**replace** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**replace** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"replace"}><b>replace</b></ClLinks> *sequence-1 sequence-2* &amp;key *start1 end1 start2 end2 → sequence-1* 
+<ClLinks  term={"replace"}><b>replace</b></ClLinks> *sequence-1 sequence-2* &amp;key *start1 end1 start2 end2 → sequence-1* 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-*start1*, *end1*—*bounding index designators* of *sequence-1*. The defaults for *start1* and *end1* are 0 and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start1*, *end1*—*bounding index designators* of *sequence-1*. The defaults for *start1* and *end1* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
-*start2*, *end2*—*bounding index designators* of *sequence-2*. The defaults for *start2* and *end2* are 0 and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start2*, *end2*—*bounding index designators* of *sequence-2*. The defaults for *start2* and *end2* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-Destructively modifies *sequence-1* by replacing the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of *subsequence-1 bounded* by *start1* and *end1* with the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of *subsequence-2 bounded* by *start2* and *end2*. 
+Destructively modifies *sequence-1* by replacing the <ClLinks  term={"element"}><i>elements</i></ClLinks> of *subsequence-1 bounded* by *start1* and *end1* with the <ClLinks  term={"element"}><i>elements</i></ClLinks> of *subsequence-2 bounded* by *start2* and *end2*. 
 
 
 
-*Sequence-1* is destructively modified by copying successive <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> into it from *sequence-2*. <ClLinks styled={true} term={"element"}><i>Elements</i></ClLinks> of the subsequence of *sequence-2 bounded* by *start2* and *end2* are copied into the subsequence of *sequence-1 bounded* by *start1* and *end1*. If these subsequences are not of the same length, then the shorter length determines how many <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> are copied; the extra <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> near the end of the longer subsequence are not involved in the operation. The number of elements copied can be expressed as: 
+*Sequence-1* is destructively modified by copying successive <ClLinks  term={"element"}><i>elements</i></ClLinks> into it from *sequence-2*. <ClLinks  term={"element"}><i>Elements</i></ClLinks> of the subsequence of *sequence-2 bounded* by *start2* and *end2* are copied into the subsequence of *sequence-1 bounded* by *start1* and *end1*. If these subsequences are not of the same length, then the shorter length determines how many <ClLinks  term={"element"}><i>elements</i></ClLinks> are copied; the extra <ClLinks  term={"element"}><i>elements</i></ClLinks> near the end of the longer subsequence are not involved in the operation. The number of elements copied can be expressed as: 
 
 
 
@@ -58,7 +58,7 @@ Destructively modifies *sequence-1* by replacing the <ClLinks styled={true} term
 
 
 
-If *sequence-1* and *sequence-2* are the *same object* and the region being modified overlaps the region being copied from, then it is as if the entire source region were copied to another place and only then copied back into the target region. However, if *sequence-1* and *sequence-2* are not the same, but the region being modified overlaps the region being copied from (perhaps because of shared list structure or displaced <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks>), then after the <ClLinks styled={true} term={"replace"}><b>replace</b></ClLinks> operation the subsequence of *sequence-1* being modified will have unpredictable contents. It is an error if the elements of *sequence-2* are not of a <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> that can be stored into *sequence-1*. 
+If *sequence-1* and *sequence-2* are the *same object* and the region being modified overlaps the region being copied from, then it is as if the entire source region were copied to another place and only then copied back into the target region. However, if *sequence-1* and *sequence-2* are not the same, but the region being modified overlaps the region being copied from (perhaps because of shared list structure or displaced <ClLinks  term={"array"}><i>arrays</i></ClLinks>), then after the <ClLinks  term={"replace"}><b>replace</b></ClLinks> operation the subsequence of *sequence-1* being modified will have unpredictable contents. It is an error if the elements of *sequence-2* are not of a <ClLinks  term={"type"}><i>type</i></ClLinks> that can be stored into *sequence-1*. 
 
 
 
@@ -83,7 +83,7 @@ The *sequence-1* is modified.
 
 
 
-<ClLinks styled={true} term={"fill"}><b>fill</b></ClLinks> 
+<ClLinks  term={"fill"}><b>fill</b></ClLinks> 
 
 
 
@@ -167,11 +167,11 @@ The *sequence-1* is modified.
 
 
 
-*newitem*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+*newitem*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*olditem*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+*olditem*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -179,23 +179,23 @@ The *sequence-1* is modified.
 
 
 
-<ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> that returns a *generalized boolean*. *from-end*—a *generalized boolean*. The default is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+<ClLinks  term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one <ClLinks  term={"argument"}><i>argument</i></ClLinks> that returns a *generalized boolean*. *from-end*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-*test*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. 
+*test*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks  term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. 
 
 
 
-*start*, *end*—*bounding index designators* of *sequence*. The defaults for *start* and *end* are 0 and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—*bounding index designators* of *sequence*. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
-*count*—an *integer* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*count*—an *integer* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"key"}><i>key</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -207,7 +207,7 @@ The *sequence-1* is modified.
 
 
 
-**substitute**, **substitute-if**, and **substitute-if-not** return a copy of *sequence* in which each <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> that *satisfies the test* has been replaced with *newitem*. 
+**substitute**, **substitute-if**, and **substitute-if-not** return a copy of *sequence* in which each <ClLinks  term={"element"}><i>element</i></ClLinks> that *satisfies the test* has been replaced with *newitem*. 
 
 
 
@@ -215,19 +215,19 @@ The *sequence-1* is modified.
 
 
 
-If *sequence* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> , the result is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> that has the same *actual array element type* as *sequence*. If *sequence* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, the result is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the result is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> that has the same *actual array element type* as *sequence*. If *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, the result is a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
-*Count*, if supplied, limits the number of elements altered; if more than *count elements satisfy the test*, then of these <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> only the leftmost or rightmost, depending on *from-end*, are replaced, as many as specified by *count*. If *count* is supplied and negative, the behavior is as if zero had been supplied instead. If *count* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, all matching items are affected. 
+*Count*, if supplied, limits the number of elements altered; if more than *count elements satisfy the test*, then of these <ClLinks  term={"element"}><i>elements</i></ClLinks> only the leftmost or rightmost, depending on *from-end*, are replaced, as many as specified by *count*. If *count* is supplied and negative, the behavior is as if zero had been supplied instead. If *count* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, all matching items are affected. 
 
 
 
-Supplying a *from-end* of <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> matters only when the *count* is provided (and <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>); in that case, only the rightmost *count elements satisfying the test* are removed (instead of the leftmost). 
+Supplying a *from-end* of <ClLinks  term={"true"}><i>true</i></ClLinks> matters only when the *count* is provided (and <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>); in that case, only the rightmost *count elements satisfying the test* are removed (instead of the leftmost). 
 
 
 
-<ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks>, *test*, and *test-not* might be called more than once for each *sequence element*, and their side effects can happen in any order. 
+<ClLinks  term={"predicate"}><i>predicate</i></ClLinks>, *test*, and *test-not* might be called more than once for each *sequence element*, and their side effects can happen in any order. 
 
 
 
@@ -247,15 +247,15 @@ Supplying a *from-end* of <ClLinks styled={true} term={"true"}><i>true</i></ClLi
 
 
 
-The result of all these functions is a *sequence* of the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> as *sequence* that has the same elements except that those in the subsequence <ClLinks styled={true} term={"bounded"}><i>bounded</i></ClLinks> by *start* and *end* and *satisfying the test* have been replaced by *newitem*. 
+The result of all these functions is a *sequence* of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *sequence* that has the same elements except that those in the subsequence <ClLinks  term={"bounded"}><i>bounded</i></ClLinks> by *start* and *end* and *satisfying the test* have been replaced by *newitem*. 
 
 
 
-**substitute**, **substitute-if**, and **substitute-if-not** return a *sequence* which can share with *sequence* or may be <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> to the input *sequence* if no elements need to be changed. 
+**substitute**, **substitute-if**, and **substitute-if-not** return a *sequence* which can share with *sequence* or may be <ClLinks  term={"identical"}><i>identical</i></ClLinks> to the input *sequence* if no elements need to be changed. 
 
 
 
-**nsubstitute** and **nsubstitute-if** are required to <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> any <ClLinks styled={true} term={"car"}><b>car</b></ClLinks> (if *sequence* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) or <ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks> (if *sequence* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> ) of *sequence* that is required to be replaced with *newitem*. If *sequence* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, none of the <ClLinks styled={true} term={"cdr"}><i>cdrs</i></ClLinks> of the top-level <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> can be modified. 
+**nsubstitute** and **nsubstitute-if** are required to <ClLinks  term={"setf"}><b>setf</b></ClLinks> any <ClLinks  term={"car"}><b>car</b></ClLinks> (if *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>) or <ClLinks  term={"aref"}><b>aref</b></ClLinks> (if *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> ) of *sequence* that is required to be replaced with *newitem*. If *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, none of the <ClLinks  term={"cdr"}><i>cdrs</i></ClLinks> of the top-level <ClLinks  term={"list"}><i>list</i></ClLinks> can be modified. 
 
 
 
@@ -292,7 +292,7 @@ alpha-tester → "abz"
 
 
 
-Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. 
 
 
 
@@ -300,7 +300,7 @@ Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i
 
 
 
-<ClLinks styled={true} term={"subst"}><b>subst</b></ClLinks>, <ClLinks styled={true} term={"nsubst"}><b>nsubst</b></ClLinks>, Section 3.2.1 (Compiler Terminology), Section 3.6 (Traversal Rules and Side Effects) 
+<ClLinks  term={"subst"}><b>subst</b></ClLinks>, <ClLinks  term={"nsubst"}><b>nsubst</b></ClLinks>, Section 3.2.1 (Compiler Terminology), Section 3.6 (Traversal Rules and Side Effects) 
 
 
 
@@ -308,7 +308,7 @@ Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i
 
 
 
-If *sequence* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> , the result might or might not be simple, and might or might not be <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> 
+If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the result might or might not be simple, and might or might not be <ClLinks  term={"identical"}><i>identical</i></ClLinks> 
 
 
 
@@ -324,7 +324,7 @@ to *sequence*.
 
 
 
-The :test-not <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> is deprecated. 
+The :test-not <ClLinks  term={"argument"}><i>argument</i></ClLinks> is deprecated. 
 
 
 

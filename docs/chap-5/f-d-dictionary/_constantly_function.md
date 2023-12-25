@@ -1,4 +1,4 @@
-**constantly** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**constantly** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"constantly"}><b>constantly</b></ClLinks> *value → function* 
+<ClLinks  term={"constantly"}><b>constantly</b></ClLinks> *value → function* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"value"}><i>value</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks  term={"value"}><i>value</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
+<ClLinks  term={"function"}><i>function</i></ClLinks>—a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks styled={true} term={"constantly"}><b>constantly</b></ClLinks> returns a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> that accepts any number of arguments, that has no side-effects, and that always returns <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>. 
+<ClLinks  term={"constantly"}><b>constantly</b></ClLinks> returns a <ClLinks  term={"function"}><i>function</i></ClLinks> that accepts any number of arguments, that has no side-effects, and that always returns <ClLinks  term={"value"}><i>value</i></ClLinks>. 
 
 
 
@@ -43,7 +43,7 @@
 
 
 
-<ClLinks styled={true} term={"identity"}><b>identity</b></ClLinks> 
+<ClLinks  term={"identity"}><b>identity</b></ClLinks> 
 
 
 
@@ -51,7 +51,7 @@
 
 
 
-<ClLinks styled={true} term={"constantly"}><b>constantly</b></ClLinks> could be defined by: 
+<ClLinks  term={"constantly"}><b>constantly</b></ClLinks> could be defined by: 
 
 
 

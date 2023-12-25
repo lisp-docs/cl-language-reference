@@ -1,4 +1,4 @@
-**package-nicknames** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**package-nicknames** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"package-nicknames"}><b>package-nicknames</b></ClLinks> *package → nicknames* 
+<ClLinks  term={"package-nicknames"}><b>package-nicknames</b></ClLinks> *package → nicknames* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* . 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . 
 
 
 
-<ClLinks styled={true} term={"nickname"}><i>nicknames</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks>. 
+<ClLinks  term={"nickname"}><i>nicknames</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of nickname <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks> for <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, not including the name of <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
+Returns the <ClLinks  term={"list"}><i>list</i></ClLinks> of nickname <ClLinks  term={"string"}><i>strings</i></ClLinks> for <ClLinks  term={"package"}><i>package</i></ClLinks>, not including the name of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 **Examples:**
 ```lisp
@@ -38,7 +38,7 @@ Returns the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of nickna
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is not a *package designator* . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a *package designator* . 
 
 
 

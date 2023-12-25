@@ -1,4 +1,4 @@
-**symbol-function** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
+**symbol-function** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"symbol-function"}><b>symbol-function</b></ClLinks> *symbol → contents* 
+<ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> *symbol → contents* 
 
 
 
-**(setf (symbol-function** <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>**)** *new-contents***)** 
+**(setf (symbol-function** <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>**)** *new-contents***)** 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*contents*— If the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is globally defined as a <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> or a *special operator* , an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> of <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> nature and identity is returned. If the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is not globally defined as either a <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> or a *special operator* , and if the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks>, a *function object* is returned. 
+*contents*— If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is globally defined as a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or a *special operator* , an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> nature and identity is returned. If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not globally defined as either a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or a *special operator* , and if the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>, a *function object* is returned. 
 
 
 
-*new-contents*—a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
+*new-contents*—a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-*Accesses* the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>’s *function cell*. 
+*Accesses* the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s *function cell*. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-<ClLinks styled={true} term={"symbol-function"}><b>symbol-function</b></ClLinks> 
+<ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> 
 
 
 
@@ -93,7 +93,7 @@
 
 
 
-<ClLinks styled={true} term={"defun"}><b>defun</b></ClLinks> 
+<ClLinks  term={"defun"}><b>defun</b></ClLinks> 
 
 
 
@@ -101,11 +101,11 @@
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-Should signal <ClLinks styled={true} term={"undefined-function"}><b>undefined-function</b></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is not <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks> and an attempt is made to <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> its definition. (No such error is signaled on an attempt to <ClLinks styled={true} term={"write"}><i>write</i></ClLinks> its definition.) 
+Should signal <ClLinks  term={"undefined-function"}><b>undefined-function</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> and an attempt is made to <ClLinks  term={"read"}><i>read</i></ClLinks> its definition. (No such error is signaled on an attempt to <ClLinks  term={"write"}><i>write</i></ClLinks> its definition.) 
 
 
 
@@ -113,7 +113,7 @@ Should signal <ClLinks styled={true} term={"undefined-function"}><b>undefined-fu
 
 
 
-<ClLinks styled={true} term={"fboundp"}><b>fboundp</b></ClLinks>, <ClLinks styled={true} term={"fmakunbound"}><b>fmakunbound</b></ClLinks>, <ClLinks styled={true} term={"macro-function"}><b>macro-function</b></ClLinks>, <ClLinks styled={true} term={"special-operator-p"}><b>special-operator-p</b></ClLinks> 
+<ClLinks  term={"fboundp"}><b>fboundp</b></ClLinks>, <ClLinks  term={"fmakunbound"}><b>fmakunbound</b></ClLinks>, <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks>, <ClLinks  term={"special-operator-p"}><b>special-operator-p</b></ClLinks> 
 
 
 
@@ -133,19 +133,19 @@ Should signal <ClLinks styled={true} term={"undefined-function"}><b>undefined-fu
 
 
 
-<ClLinks styled={true} term={"symbol-function"}><b>symbol-function</b></ClLinks> cannot <ClLinks styled={true} term={"access"}><i>access</i></ClLinks> the value of a lexical function name produced by <ClLinks styled={true} term={"flet"}><b>flet</b></ClLinks> or <ClLinks styled={true} term={"labels"}><b>labels</b></ClLinks>; it can <ClLinks styled={true} term={"access"}><i>access</i></ClLinks> only the global function value. 
+<ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> cannot <ClLinks  term={"access"}><i>access</i></ClLinks> the value of a lexical function name produced by <ClLinks  term={"flet"}><b>flet</b></ClLinks> or <ClLinks  term={"labels"}><b>labels</b></ClLinks>; it can <ClLinks  term={"access"}><i>access</i></ClLinks> only the global function value. 
 
 
 
-<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> may be used with <ClLinks styled={true} term={"symbol-function"}><b>symbol-function</b></ClLinks> to replace a global function definition when the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>’s function definition does not represent a *special operator* . 
+<ClLinks  term={"setf"}><b>setf</b></ClLinks> may be used with <ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> to replace a global function definition when the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s function definition does not represent a *special operator* . 
 
 
 
-(symbol-function <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>) *≡* (fdefinition <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>) 
+(symbol-function <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) *≡* (fdefinition <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) 
 
 
 
-However, <ClLinks styled={true} term={"fdefinition"}><b>fdefinition</b></ClLinks> accepts arguments other than just <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>. 
+However, <ClLinks  term={"fdefinition"}><b>fdefinition</b></ClLinks> accepts arguments other than just <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 

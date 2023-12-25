@@ -1,4 +1,4 @@
-**array-has-fill-pointer-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**array-has-fill-pointer-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"array-has-fill-pointer-p"}><b>array-has-fill-pointer-p</b></ClLinks> *array → generalized-boolean* 
+<ClLinks  term={"array-has-fill-pointer-p"}><b>array-has-fill-pointer-p</b></ClLinks> *array → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
+<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> has a *fill pointer* ; otherwise returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"array"}><i>array</i></ClLinks> has a *fill pointer* ; otherwise returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -45,7 +45,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -53,7 +53,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks styled={true} term={"fill-pointer"}><b>fill-pointer</b></ClLinks> 
+<ClLinks  term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks  term={"fill-pointer"}><b>fill-pointer</b></ClLinks> 
 
 
 
@@ -61,7 +61,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-Since <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> of <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks> other than one cannot have a *fill pointer* , <ClLinks styled={true} term={"array-has-fill-pointer-p"}><b>array-has-fill-pointer-p</b></ClLinks> always returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> when its argument is such an array. 
+Since <ClLinks  term={"array"}><i>arrays</i></ClLinks> of <ClLinks  term={"rank"}><i>rank</i></ClLinks> other than one cannot have a *fill pointer* , <ClLinks  term={"array-has-fill-pointer-p"}><b>array-has-fill-pointer-p</b></ClLinks> always returns <ClLinks  term={"nil"}><b>nil</b></ClLinks> when its argument is such an array. 
 
 
 

@@ -1,8 +1,8 @@
-**read-char-no-hang** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> **Syntax:** 
+**read-char-no-hang** <ClLinks  term={"function"}><i>Function</i></ClLinks> **Syntax:** 
 
 
 
-<ClLinks styled={true} term={"read-char-no-hang"}><b>read-char-no-hang</b></ClLinks> &amp;optional *input-stream eof-error-p eof-value recursive-p* 
+<ClLinks  term={"read-char-no-hang"}><b>read-char-no-hang</b></ClLinks> &amp;optional *input-stream eof-error-p eof-value recursive-p* 
 
 
 
@@ -18,19 +18,19 @@
 
 
 
-*eof-error-p*—a *generalized boolean*. The default is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 
+*eof-error-p*—a *generalized boolean*. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 
-*eof-value*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*recursive-p*—a *generalized boolean*. The default is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+*recursive-p*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-*char*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> or the *eof-value*. 
+*char*—a <ClLinks  term={"character"}><i>character</i></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks> or the *eof-value*. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-<ClLinks styled={true} term={"read-char-no-hang"}><b>read-char-no-hang</b></ClLinks> returns a character from *input-stream* if such a character is available. If no character is available, <ClLinks styled={true} term={"read-char-no-hang"}><b>read-char-no-hang</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"read-char-no-hang"}><b>read-char-no-hang</b></ClLinks> returns a character from *input-stream* if such a character is available. If no character is available, <ClLinks  term={"read-char-no-hang"}><b>read-char-no-hang</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -54,11 +54,11 @@
 
 
 
-If *recursive-p* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, this call is expected to be embedded in a higher-level call to <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> or a similar <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> used by the *Lisp reader* . 
+If *recursive-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, this call is expected to be embedded in a higher-level call to <ClLinks  term={"read"}><b>read</b></ClLinks> or a similar <ClLinks  term={"function"}><i>function</i></ClLinks> used by the *Lisp reader* . 
 
 
 
-If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, *eof-value* is returned. 
+If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <ClLinks  term={"false"}><i>false</i></ClLinks>, *eof-value* is returned. 
 
 
 
@@ -88,7 +88,7 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <ClLinks styled={tru
 
 
 
-**\*standard-input\***, <ClLinks styled={true} term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
+**\*standard-input\***, <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
 
 
 
@@ -96,11 +96,11 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <ClLinks styled={tru
 
 
 
-If an *end of file*<sub>2</sub> occurs when *eof-error-p* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled . **See Also:** 
+If an *end of file*<sub>2</sub> occurs when *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled . **See Also:** 
 
 
 
-<ClLinks styled={true} term={"listen"}><b>listen</b></ClLinks> 
+<ClLinks  term={"listen"}><b>listen</b></ClLinks> 
 
 
 
@@ -108,7 +108,7 @@ If an *end of file*<sub>2</sub> occurs when *eof-error-p* is <ClLinks styled={tr
 
 
 
-<ClLinks styled={true} term={"read-char-no-hang"}><b>read-char-no-hang</b></ClLinks> is exactly like <ClLinks styled={true} term={"read-char"}><b>read-char</b></ClLinks>, except that if it would be necessary to wait in order to get a character (as from a keyboard), <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is immediately returned without waiting. 
+<ClLinks  term={"read-char-no-hang"}><b>read-char-no-hang</b></ClLinks> is exactly like <ClLinks  term={"read-char"}><b>read-char</b></ClLinks>, except that if it would be necessary to wait in order to get a character (as from a keyboard), <ClLinks  term={"nil"}><b>nil</b></ClLinks> is immediately returned without waiting. 
 
 
 

@@ -1,4 +1,4 @@
-**sqrt, isqrt** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**sqrt, isqrt** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"sqrt"}><b>sqrt</b></ClLinks> *number → root* 
+<ClLinks  term={"sqrt"}><b>sqrt</b></ClLinks> *number → root* 
 
 
 
-<ClLinks styled={true} term={"isqrt"}><b>isqrt</b></ClLinks> *natural → natural-root* 
+<ClLinks  term={"isqrt"}><b>isqrt</b></ClLinks> *natural → natural-root* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>, *root*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
+<ClLinks  term={"number"}><i>number</i></ClLinks>, *root*—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -30,19 +30,19 @@
 
 
 
-<ClLinks styled={true} term={"sqrt"}><b>sqrt</b></ClLinks> and <ClLinks styled={true} term={"isqrt"}><b>isqrt</b></ClLinks> compute square roots. 
+<ClLinks  term={"sqrt"}><b>sqrt</b></ClLinks> and <ClLinks  term={"isqrt"}><b>isqrt</b></ClLinks> compute square roots. 
 
 
 
-<ClLinks styled={true} term={"sqrt"}><b>sqrt</b></ClLinks> returns the <ClLinks styled={true} term={"principal"}><i>principal</i></ClLinks> square root of <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>. If the <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is not a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> but is negative, then the result is a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> . 
+<ClLinks  term={"sqrt"}><b>sqrt</b></ClLinks> returns the <ClLinks  term={"principal"}><i>principal</i></ClLinks> square root of <ClLinks  term={"number"}><i>number</i></ClLinks>. If the <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"complex"}><i>complex</i></ClLinks> but is negative, then the result is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> . 
 
 
 
-<ClLinks styled={true} term={"isqrt"}><b>isqrt</b></ClLinks> returns the greatest *integer* less than or equal to the exact positive square root of *natural*. 
+<ClLinks  term={"isqrt"}><b>isqrt</b></ClLinks> returns the greatest *integer* less than or equal to the exact positive square root of *natural*. 
 
 
 
-If <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is a positive <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks>, it is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether *root* is a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> or a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>. If <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is a negative <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks>, it is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether *root* is a *complex rational* or a *complex float*. 
+If <ClLinks  term={"number"}><i>number</i></ClLinks> is a positive <ClLinks  term={"rational"}><i>rational</i></ClLinks>, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether *root* is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> or a <ClLinks  term={"float"}><i>float</i></ClLinks>. If <ClLinks  term={"number"}><i>number</i></ClLinks> is a negative <ClLinks  term={"rational"}><i>rational</i></ClLinks>, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether *root* is a *complex rational* or a *complex float*. 
 
 
 
@@ -79,11 +79,11 @@ The branch cut for square root lies along the negative real axis, continuous wit
 
 
 
-The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"sqrt"}><b>sqrt</b></ClLinks> should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
+The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"sqrt"}><b>sqrt</b></ClLinks> should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 
-The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"isqrt"}><b>isqrt</b></ClLinks> should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a non-negative *integer* . The functions <ClLinks styled={true} term={"sqrt"}><b>sqrt</b></ClLinks> and <ClLinks styled={true} term={"isqrt"}><b>isqrt</b></ClLinks> might signal <ClLinks styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>. 
+The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"isqrt"}><b>isqrt</b></ClLinks> should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a non-negative *integer* . The functions <ClLinks  term={"sqrt"}><b>sqrt</b></ClLinks> and <ClLinks  term={"isqrt"}><b>isqrt</b></ClLinks> might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>. 
 
 
 
@@ -91,7 +91,7 @@ The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks 
 
 
 
-<ClLinks styled={true} term={"exp"}><b>exp</b></ClLinks>, <ClLinks styled={true} term={"log"}><b>log</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability) 
+<ClLinks  term={"exp"}><b>exp</b></ClLinks>, <ClLinks  term={"log"}><b>log</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability) 
 
 
 

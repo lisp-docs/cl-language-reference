@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"standard-method"}><b>standard-method</b></ClLinks>, <ClLinks styled={true} term={"method"}><b>method</b></ClLinks>, <ClLinks styled={true} term={"standard-object"}><b>standard-object</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<ClLinks  term={"standard-method"}><b>standard-method</b></ClLinks>, <ClLinks  term={"method"}><b>method</b></ClLinks>, <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"standard-method"}><b>standard-method</b></ClLinks> is the default <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> of <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> defined by the <ClLinks styled={true} term={"defmethod"}><b>defmethod</b></ClLinks> and <ClLinks styled={true} term={"defgeneric"}><b>defgeneric</b></ClLinks> <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
+The <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-method"}><b>standard-method</b></ClLinks> is the default <ClLinks  term={"class"}><i>class</i></ClLinks> of <ClLinks  term={"method"}><i>methods</i></ClLinks> defined by the <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> and <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 

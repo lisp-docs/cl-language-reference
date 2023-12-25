@@ -1,4 +1,4 @@
-**map-into** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**map-into** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"map-into"}><b>map-into</b></ClLinks> *result-sequence function* &amp;rest *sequences → result-sequence* 
+<ClLinks  term={"map-into"}><b>map-into</b></ClLinks> *result-sequence function* &amp;rest *sequences → result-sequence* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of as many <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> as there are *sequences*. *sequence*—a *proper sequence*. 
+<ClLinks  term={"function"}><i>function</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of as many <ClLinks  term={"argument"}><i>arguments</i></ClLinks> as there are *sequences*. *sequence*—a *proper sequence*. 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-Destructively modifies *result-sequence* to contain the results of applying <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> to each element in the argument *sequences* in turn. 
+Destructively modifies *result-sequence* to contain the results of applying <ClLinks  term={"function"}><i>function</i></ClLinks> to each element in the argument *sequences* in turn. 
 
 
 
-*result-sequence* and each element of *sequences* can each be either a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> or a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> . If *result-sequence* and each element of *sequences* are not all the same length, the iteration terminates when the shortest *sequence* (of any of the *sequences* or the *result-sequence*) is exhausted. If *result-sequence* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , the *fill pointer* is ignored when deciding how many iterations to perform, and afterwards the *fill pointer* is set to the number of times <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> was applied. If *result-sequence* is longer than the shortest element of *sequences*, extra elements at the end of *result-sequence* are left unchanged. If *result-sequence* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, <ClLinks styled={true} term={"map-into"}><b>map-into</b></ClLinks> immediately returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, since <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is a *sequence* of length zero. 
+*result-sequence* and each element of *sequences* can each be either a <ClLinks  term={"list"}><i>list</i></ClLinks> or a <ClLinks  term={"vector"}><i>vector</i></ClLinks> . If *result-sequence* and each element of *sequences* are not all the same length, the iteration terminates when the shortest *sequence* (of any of the *sequences* or the *result-sequence*) is exhausted. If *result-sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , the *fill pointer* is ignored when deciding how many iterations to perform, and afterwards the *fill pointer* is set to the number of times <ClLinks  term={"function"}><i>function</i></ClLinks> was applied. If *result-sequence* is longer than the shortest element of *sequences*, extra elements at the end of *result-sequence* are left unchanged. If *result-sequence* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, <ClLinks  term={"map-into"}><b>map-into</b></ClLinks> immediately returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>, since <ClLinks  term={"nil"}><b>nil</b></ClLinks> is a *sequence* of length zero. 
 
 
 
-If <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> has side effects, it can count on being called first on all of the elements with index 0, then on all of those numbered 1, and so on. 
+If <ClLinks  term={"function"}><i>function</i></ClLinks> has side effects, it can count on being called first on all of the elements with index 0, then on all of those numbered 1, and so on. 
 
 
 
@@ -53,7 +53,7 @@ a → (#:G9090 #:G9091 #:G9092 #:G9093)
 
 
 
-Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *result-sequence* is not a *proper sequence*. Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *result-sequence* is not a *proper sequence*. Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. 
 
 
 
@@ -61,7 +61,7 @@ Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i
 
 
 
-<ClLinks styled={true} term={"map-into"}><b>map-into</b></ClLinks> differs from <ClLinks styled={true} term={"map"}><b>map</b></ClLinks> in that it modifies an existing *sequence* rather than creating a new one. In addition, <ClLinks styled={true} term={"map-into"}><b>map-into</b></ClLinks> can be called with only two arguments, while <ClLinks styled={true} term={"map"}><b>map</b></ClLinks> requires at least three 
+<ClLinks  term={"map-into"}><b>map-into</b></ClLinks> differs from <ClLinks  term={"map"}><b>map</b></ClLinks> in that it modifies an existing *sequence* rather than creating a new one. In addition, <ClLinks  term={"map-into"}><b>map-into</b></ClLinks> can be called with only two arguments, while <ClLinks  term={"map"}><b>map</b></ClLinks> requires at least three 
 
 
 
@@ -81,7 +81,7 @@ arguments.
 
 
 
-<ClLinks styled={true} term={"map-into"}><b>map-into</b></ClLinks> could be defined by: 
+<ClLinks  term={"map-into"}><b>map-into</b></ClLinks> could be defined by: 
 
 
 

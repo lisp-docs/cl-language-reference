@@ -1,4 +1,4 @@
-**bit, sbit** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
+**bit, sbit** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,20 +6,20 @@
 
 
 
-<ClLinks styled={true} term={"bit"}><b>bit</b></ClLinks> *bit-array* &amp;rest *subscripts → bit* 
+<ClLinks  term={"bit"}><b>bit</b></ClLinks> *bit-array* &amp;rest *subscripts → bit* 
 
 
 
-<!-- <ClLinks styled={true} term={"sbit"}><b>sbit</b></ClLinks> *bit-array* &amp;rest *subscripts → bit*  -->
+<!-- <ClLinks  term={"sbit"}><b>sbit</b></ClLinks> *bit-array* &amp;rest *subscripts → bit*  -->
 **sbit** *bit-array* &amp;rest *subscripts → bit* 
 
 
 
-<!-- **(setf (bit** *bit-array* &amp;rest *subscripts***)** *new-bit<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks>  -->
+<!-- **(setf (bit** *bit-array* &amp;rest *subscripts***)** *new-bit<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
 
 
 
-<!-- **(setf (sbit** *bit-array* &amp;rest *subscripts***)** *new-bit<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks>  -->
+<!-- **(setf (sbit** *bit-array* &amp;rest *subscripts***)** *new-bit<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
 **(setf (bit** *bit-array* &amp;rest *subscripts***)** *new-bit***)** 
 
 
@@ -32,15 +32,15 @@
 
 
 
-*bit-array*—for <ClLinks styled={true} term={"bit"}><b>bit</b></ClLinks>, a *bit array*; for <ClLinks styled={true} term={"sbit"}><b>sbit</b></ClLinks>, a *simple bit array*. 
+*bit-array*—for <ClLinks  term={"bit"}><b>bit</b></ClLinks>, a *bit array*; for <ClLinks  term={"sbit"}><b>sbit</b></ClLinks>, a *simple bit array*. 
 
 
 
-*subscripts*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *valid array indices* for the *bit-array*. 
+*subscripts*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *valid array indices* for the *bit-array*. 
 
 
 
-<ClLinks styled={true} term={"bit"}><i>bit</i></ClLinks>—a <ClLinks styled={true} term={"bit"}><i>bit</i></ClLinks>. 
+<ClLinks  term={"bit"}><i>bit</i></ClLinks>—a <ClLinks  term={"bit"}><i>bit</i></ClLinks>. 
 
 
 
@@ -48,11 +48,11 @@
 
 
 
-<ClLinks styled={true} term={"bit"}><b>bit</b></ClLinks> and <ClLinks styled={true} term={"sbit"}><b>sbit</b></ClLinks> <ClLinks styled={true} term={"access"}><i>access</i></ClLinks> the *bit-array element* specified by *subscripts*. 
+<ClLinks  term={"bit"}><b>bit</b></ClLinks> and <ClLinks  term={"sbit"}><b>sbit</b></ClLinks> <ClLinks  term={"access"}><i>access</i></ClLinks> the *bit-array element* specified by *subscripts*. 
 
 
 
-These <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> ignore the *fill pointer* when *accessing elements*. 
+These <ClLinks  term={"function"}><i>functions</i></ClLinks> ignore the *fill pointer* when *accessing elements*. 
 
 
 
@@ -75,7 +75,7 @@ These <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> ignore
 
 
 
-<ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
+<ClLinks  term={"aref"}><b>aref</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
 
 
 
@@ -83,11 +83,11 @@ These <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> ignore
 
 
 
-<ClLinks styled={true} term={"bit"}><b>bit</b></ClLinks> and <ClLinks styled={true} term={"sbit"}><b>sbit</b></ClLinks> are like <ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks> except that they require <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> to be a *bit array* and a *simple bit array*, respectively. 
+<ClLinks  term={"bit"}><b>bit</b></ClLinks> and <ClLinks  term={"sbit"}><b>sbit</b></ClLinks> are like <ClLinks  term={"aref"}><b>aref</b></ClLinks> except that they require <ClLinks  term={"array"}><i>arrays</i></ClLinks> to be a *bit array* and a *simple bit array*, respectively. 
 
 
 
-<ClLinks styled={true} term={"bit"}><b>bit</b></ClLinks> and <ClLinks styled={true} term={"sbit"}><b>sbit</b></ClLinks>, unlike <ClLinks styled={true} term={"char"}><b>char</b></ClLinks> and <ClLinks styled={true} term={"schar"}><b>schar</b></ClLinks>, allow the first argument to be an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> of any <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks>. 
+<ClLinks  term={"bit"}><b>bit</b></ClLinks> and <ClLinks  term={"sbit"}><b>sbit</b></ClLinks>, unlike <ClLinks  term={"char"}><b>char</b></ClLinks> and <ClLinks  term={"schar"}><b>schar</b></ClLinks>, allow the first argument to be an <ClLinks  term={"array"}><i>array</i></ClLinks> of any <ClLinks  term={"rank"}><i>rank</i></ClLinks>. 
 
 
 
@@ -151,11 +151,11 @@ These <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> ignore
 
 
 
-*Opt-arg*—a *bit array*, or <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*Opt-arg*—a *bit array*, or <ClLinks  term={"t"}><b>t</b></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*Bit-array*, *bit-array1*, *bit-array2*, and *opt-arg* (if an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>) must all be of the same <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks> and <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks>. 
+*Bit-array*, *bit-array1*, *bit-array2*, and *opt-arg* (if an <ClLinks  term={"array"}><i>array</i></ClLinks>) must all be of the same <ClLinks  term={"rank"}><i>rank</i></ClLinks> and <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>. 
 
 
 
@@ -167,7 +167,7 @@ These <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> ignore
 
 
 
-These functions perform bit-wise logical operations on *bit-array1* and *bit-array2* and return an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> of matching <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks> and <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks>, such that any given bit of the result is produced by operating on corresponding bits from each of the arguments. 
+These functions perform bit-wise logical operations on *bit-array1* and *bit-array2* and return an <ClLinks  term={"array"}><i>array</i></ClLinks> of matching <ClLinks  term={"rank"}><i>rank</i></ClLinks> and <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>, such that any given bit of the result is produced by operating on corresponding bits from each of the arguments. 
 
 
 
@@ -183,15 +183,15 @@ These functions perform bit-wise logical operations on *bit-array1* and *bit-arr
 
 
 
-In the case of **bit-not**, an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> of <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks> and <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks> matching *bit-array* is returned that contains a copy of *bit-array* with all the bits inverted. 
+In the case of **bit-not**, an <ClLinks  term={"array"}><i>array</i></ClLinks> of <ClLinks  term={"rank"}><i>rank</i></ClLinks> and <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> matching *bit-array* is returned that contains a copy of *bit-array* with all the bits inverted. 
 
 
 
-If *opt-arg* is of type (array bit) the contents of the result are destructively placed into *opt-arg*. If *opt-arg* is the symbol <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, *bit-array* or *bit-array1* is replaced with the result; if *opt-arg* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> or omitted, a new <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is created to contain the result. 
+If *opt-arg* is of type (array bit) the contents of the result are destructively placed into *opt-arg*. If *opt-arg* is the symbol <ClLinks  term={"t"}><b>t</b></ClLinks>, *bit-array* or *bit-array1* is replaced with the result; if *opt-arg* is <ClLinks  term={"nil"}><b>nil</b></ClLinks> or omitted, a new <ClLinks  term={"array"}><i>array</i></ClLinks> is created to contain the result. 
 
 
 
-Figure 15–4 indicates the logical operation performed by each of the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks>. 
+Figure 15–4 indicates the logical operation performed by each of the <ClLinks  term={"function"}><i>functions</i></ClLinks>. 
 
 
 
@@ -228,7 +228,7 @@ Figure 15–4 indicates the logical operation performed by each of the <ClLinks 
 
 
 
-<ClLinks styled={true} term={"lognot"}><b>lognot</b></ClLinks>, <ClLinks styled={true} term={"logand"}><b>logand</b></ClLinks> 
+<ClLinks  term={"lognot"}><b>lognot</b></ClLinks>, <ClLinks  term={"logand"}><b>logand</b></ClLinks> 
 
 
 

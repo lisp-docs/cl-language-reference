@@ -1,4 +1,4 @@
-**set-macro-character, get-macro-character** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**set-macro-character, get-macro-character** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"get-macro-character"}><b>get-macro-character</b></ClLinks> *char* &amp;optional *readtable → function, non-terminating-p* 
+<ClLinks  term={"get-macro-character"}><b>get-macro-character</b></ClLinks> *char* &amp;optional *readtable → function, non-terminating-p* 
 
 
 
-<ClLinks styled={true} term={"set-macro-character"}><b>set-macro-character</b></ClLinks> *char new-function* &amp;optional *non-terminating-p readtable →* <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<ClLinks  term={"set-macro-character"}><b>set-macro-character</b></ClLinks> *char new-function* &amp;optional *non-terminating-p readtable →* <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-*char*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
+*char*—a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
 
 
 
-*non-terminating-p*—a *generalized boolean*. The default is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+*non-terminating-p*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-<ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>—a *readtable designator* . The default is the *current readtable*. 
+<ClLinks  term={"readtable"}><i>readtable</i></ClLinks>—a *readtable designator* . The default is the *current readtable*. 
 
 
 
-<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, or a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>. 
+<ClLinks  term={"function"}><i>function</i></ClLinks>—<ClLinks  term={"nil"}><b>nil</b></ClLinks>, or a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks>. 
 
 
 
@@ -58,11 +58,11 @@
 
 
 
-<ClLinks styled={true} term={"get-macro-character"}><b>get-macro-character</b></ClLinks> returns as its *primary value*, *function*, the *reader macro function* associated with *char* in <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> (if any), or else <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if *char* is not a *macro character* in <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>. The *secondary value*, *non-terminating-p*, is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if *char* is a *non-terminating macro character* ; otherwise, it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+<ClLinks  term={"get-macro-character"}><b>get-macro-character</b></ClLinks> returns as its *primary value*, *function*, the *reader macro function* associated with *char* in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> (if any), or else <ClLinks  term={"nil"}><b>nil</b></ClLinks> if *char* is not a *macro character* in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. The *secondary value*, *non-terminating-p*, is <ClLinks  term={"true"}><i>true</i></ClLinks> if *char* is a *non-terminating macro character* ; otherwise, it is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"set-macro-character"}><b>set-macro-character</b></ClLinks> causes *char* to be a *macro character* associated with the *reader macro function new-function* (or the <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for *new-function*) in <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>. If *non-terminating-p* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, *char* becomes a *non-terminating macro character* ; otherwise it becomes a *terminating macro character* . 
+<ClLinks  term={"set-macro-character"}><b>set-macro-character</b></ClLinks> causes *char* to be a *macro character* associated with the *reader macro function new-function* (or the <ClLinks  term={"designator"}><i>designator</i></ClLinks> for *new-function*) in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. If *non-terminating-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, *char* becomes a *non-terminating macro character* ; otherwise it becomes a *terminating macro character* . 
 
 
 
@@ -90,7 +90,7 @@
 
 
 
-The <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> is modified. 
+The <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is modified. 
 
 
 
@@ -98,7 +98,7 @@ The <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> is modi
 
 
 
-<ClLinks styled={true} term={"readtable"}><b>\*readtable\*</b></ClLinks> 
+<ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks> 
 
 
 

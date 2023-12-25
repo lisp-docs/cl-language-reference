@@ -1,4 +1,4 @@
-**declaration** <ClLinks styled={true} term={"declaration"}><i>Declaration</i></ClLinks> 
+**declaration** <ClLinks  term={"declaration"}><i>Declaration</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-(declaration <ClLinks styled={true} term={"name"}><i>\{name\}</i></ClLinks>\*) 
+(declaration <ClLinks  term={"name"}><i>\{name\}</i></ClLinks>\*) 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks styled={true} term={"proclamation"}><i>proclamation</i></ClLinks> only 
+<ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks> only 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Advises the compiler that each <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is a valid but potentially non-standard declaration name. The purpose of this is to tell one compiler not to issue warnings for declarations meant for another compiler or other program processor. 
+Advises the compiler that each <ClLinks  term={"name"}><i>name</i></ClLinks> is a valid but potentially non-standard declaration name. The purpose of this is to tell one compiler not to issue warnings for declarations meant for another compiler or other program processor. 
 
 
 
@@ -47,7 +47,7 @@ Advises the compiler that each <ClLinks styled={true} term={"name"}><i>name</i><
 
 
 
-<ClLinks styled={true} term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks styled={true} term={"proclaim"}><b>proclaim</b></ClLinks> 
+<ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> 
 
 
 

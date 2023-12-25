@@ -1,4 +1,4 @@
-**type** <ClLinks styled={true} term={"declaration"}><i>Declaration</i></ClLinks> 
+**type** <ClLinks  term={"declaration"}><i>Declaration</i></ClLinks> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks> or <ClLinks styled={true} term={"proclamation"}><i>proclamation</i></ClLinks> 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks> or <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks> 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> 
+<ClLinks  term={"variable"}><i>variable</i></ClLinks> 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-A↵ects only variable <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks> and specifies that the *vars* take on values only of the specified *typespec*. In particular, values assigned to the variables by <ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks>, as well as the initial values of the *vars* must be of the specified *typespec*. <ClLinks styled={true} term={"type"}><b>type</b></ClLinks> declarations never apply to function <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks> (see <ClLinks styled={true} term={"ftype"}><b>ftype</b></ClLinks>). 
+A↵ects only variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> and specifies that the *vars* take on values only of the specified *typespec*. In particular, values assigned to the variables by <ClLinks  term={"setq"}><b>setq</b></ClLinks>, as well as the initial values of the *vars* must be of the specified *typespec*. <ClLinks  term={"type"}><b>type</b></ClLinks> declarations never apply to function <ClLinks  term={"binding"}><i>bindings</i></ClLinks> (see <ClLinks  term={"ftype"}><b>ftype</b></ClLinks>). 
 
 
 
-A type declaration of a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> defined by <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> is equivalent to wrapping a <ClLinks styled={true} term={"the"}><b>the</b></ClLinks> expression around the expansion of that <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, although the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>’s *macro expansion* is not actually a↵ected. 
+A type declaration of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> defined by <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> is equivalent to wrapping a <ClLinks  term={"the"}><b>the</b></ClLinks> expression around the expansion of that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, although the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s *macro expansion* is not actually a↵ected. 
 
 
 
@@ -58,19 +58,19 @@ The meaning of a type declaration is equivalent to changing each reference to a 
 
 
 
-A <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> declaration is valid in all declarations. The interpretation of a type declaration is as follows: 
+A <ClLinks  term={"type"}><i>type</i></ClLinks> declaration is valid in all declarations. The interpretation of a type declaration is as follows: 
 
 
 
-1\. During the execution of any reference to the declared variable within the scope of the declaration, the consequences are undefined if the value of the declared variable is not of the declared <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>. 
+1\. During the execution of any reference to the declared variable within the scope of the declaration, the consequences are undefined if the value of the declared variable is not of the declared <ClLinks  term={"type"}><i>type</i></ClLinks>. 
 
 
 
-2\. During the execution of any <ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks> of the declared variable within the scope of the declaration, the consequences are undefined if the newly assigned value of the declared variable is not of the declared <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>. 
+2\. During the execution of any <ClLinks  term={"setq"}><b>setq</b></ClLinks> of the declared variable within the scope of the declaration, the consequences are undefined if the newly assigned value of the declared variable is not of the declared <ClLinks  term={"type"}><i>type</i></ClLinks>. 
 
 
 
-3\. At the moment the scope of the declaration is entered, the consequences are undefined if the value of the declared variable is not of the declared <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>. 
+3\. At the moment the scope of the declaration is entered, the consequences are undefined if the value of the declared variable is not of the declared <ClLinks  term={"type"}><i>type</i></ClLinks>. 
 
 
 
@@ -86,31 +86,31 @@ Evaluation and
 
 
 
-<ClLinks styled={true} term={"type"}><b>type</b></ClLinks> 
+<ClLinks  term={"type"}><b>type</b></ClLinks> 
 
 
 
-A <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> declaration a↵ects only variable references within its scope. 
+A <ClLinks  term={"type"}><i>type</i></ClLinks> declaration a↵ects only variable references within its scope. 
 
 
 
-If nested <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> declarations refer to the same variable, then the value of the variable must be a member of the intersection of the declared <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>. 
+If nested <ClLinks  term={"type"}><i>type</i></ClLinks> declarations refer to the same variable, then the value of the variable must be a member of the intersection of the declared <ClLinks  term={"type"}><i>types</i></ClLinks>. 
 
 
 
-If there is a local type declaration for a dynamic variable, and there is also a global type proclamation for that same variable, then the value of the variable within the scope of the local declaration must be a member of the intersection of the two declared <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>. 
+If there is a local type declaration for a dynamic variable, and there is also a global type proclamation for that same variable, then the value of the variable within the scope of the local declaration must be a member of the intersection of the two declared <ClLinks  term={"type"}><i>types</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"type"}><b>type</b></ClLinks> declarations can be *free declarations* or *bound declarations*. 
+<ClLinks  term={"type"}><b>type</b></ClLinks> declarations can be *free declarations* or *bound declarations*. 
 
 
 
-A <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> cannot be both the name of a <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> and the name of a declaration. Defining a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> as the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>, <ClLinks styled={true} term={"structure"}><i>structure</i></ClLinks>, <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>, or <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>, when the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> has been *declared* as a declaration name, or vice versa, signals an error. 
+A <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> cannot be both the name of a <ClLinks  term={"type"}><i>type</i></ClLinks> and the name of a declaration. Defining a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> as the <ClLinks  term={"name"}><i>name</i></ClLinks> of a <ClLinks  term={"class"}><i>class</i></ClLinks>, <ClLinks  term={"structure"}><i>structure</i></ClLinks>, <ClLinks  term={"condition"}><i>condition</i></ClLinks>, or <ClLinks  term={"type"}><i>type</i></ClLinks>, when the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> has been *declared* as a declaration name, or vice versa, signals an error. 
 
 
 
-Within the *lexical scope* of an <ClLinks styled={true} term={"array"}><b>array</b></ClLinks> type declaration, all references to *array elements* are assumed to satisfy the *expressed array element type* (as opposed to the *upgraded array element type*). A compiler can treat the code within the scope of the <ClLinks styled={true} term={"array"}><b>array</b></ClLinks> type declaration as if each <ClLinks styled={true} term={"access"}><i>access</i></ClLinks> of an *array element* were surrounded by an appropriate <ClLinks styled={true} term={"the"}><b>the</b></ClLinks> form. 
+Within the *lexical scope* of an <ClLinks  term={"array"}><b>array</b></ClLinks> type declaration, all references to *array elements* are assumed to satisfy the *expressed array element type* (as opposed to the *upgraded array element type*). A compiler can treat the code within the scope of the <ClLinks  term={"array"}><b>array</b></ClLinks> type declaration as if each <ClLinks  term={"access"}><i>access</i></ClLinks> of an *array element* were surrounded by an appropriate <ClLinks  term={"the"}><b>the</b></ClLinks> form. 
 
 
 
@@ -164,7 +164,7 @@ Given an implementation in which *fixnums* are 29 bits but **fixnum** *arrays* a
 
 
 
-<ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks>, <ClLinks styled={true} term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks styled={true} term={"proclaim"}><b>proclaim</b></ClLinks> 
+<ClLinks  term={"declare"}><b>declare</b></ClLinks>, <ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> 
 
 
 
@@ -176,7 +176,7 @@ Given an implementation in which *fixnums* are 29 bits but **fixnum** *arrays* a
 
 
 
-A <ClLinks styled={true} term={"type"}><b>type</b></ClLinks> declaration for the arguments to a function does not necessarily imply anything about the type of the result. The following function is not permitted to be compiled using *implementation-dependent fixnum*-only arithmetic: 
+A <ClLinks  term={"type"}><b>type</b></ClLinks> declaration for the arguments to a function does not necessarily imply anything about the type of the result. The following function is not permitted to be compiled using *implementation-dependent fixnum*-only arithmetic: 
 
 
 
@@ -184,7 +184,7 @@ A <ClLinks styled={true} term={"type"}><b>type</b></ClLinks> declaration for the
 
 
 
-To see why, consider (f most-positive-fixnum 1). Common Lisp defines that F must return a *bignum* here, rather than signal an error or produce a mathematically incorrect result. If you have special knowledge such “<ClLinks styled={true} term={"fixnum"}><i>fixnum</i></ClLinks> overflow” cases will not come up, you can declare the result value to be in the <ClLinks styled={true} term={"fixnum"}><i>fixnum</i></ClLinks> range, enabling some compilers to use more ecient arithmetic: 
+To see why, consider (f most-positive-fixnum 1). Common Lisp defines that F must return a *bignum* here, rather than signal an error or produce a mathematically incorrect result. If you have special knowledge such “<ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks> overflow” cases will not come up, you can declare the result value to be in the <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks> range, enabling some compilers to use more ecient arithmetic: 
 
 
 
@@ -228,7 +228,7 @@ intermediate value growing too large, the following will not cause *implementati
 
 
 
-To see why, consider (f most-positive-fixnum 1 -1). Although the arguments and the result are all <ClLinks styled={true} term={"fixnum"}><i>fixnums</i></ClLinks>, an intermediate value is not a <ClLinks styled={true} term={"fixnum"}><i>fixnum</i></ClLinks>. If it is important that *implementation-dependent fixnum*-only arithmetic be selected in <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> that provide it, consider writing something like this instead: 
+To see why, consider (f most-positive-fixnum 1 -1). Although the arguments and the result are all <ClLinks  term={"fixnum"}><i>fixnums</i></ClLinks>, an intermediate value is not a <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>. If it is important that *implementation-dependent fixnum*-only arithmetic be selected in <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> that provide it, consider writing something like this instead: 
 
 
 

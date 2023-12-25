@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"quote"}><b>quote</b></ClLinks> *object → object* 
+<ClLinks  term={"quote"}><b>quote</b></ClLinks> *object → object* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>; not evaluated. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>; not evaluated. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-The <ClLinks styled={true} term={"quote"}><b>quote</b></ClLinks> *special operator* just returns <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+The <ClLinks  term={"quote"}><b>quote</b></ClLinks> *special operator* just returns <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -62,11 +62,11 @@ Section 3.1 (Evaluation), Section 2.4.3 (Single-Quote), Section 3.2.1 (Compiler 
 
 
 
-The textual notation ’<ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is equivalent to (quote <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>); see Section 3.2.1 (Compiler Terminology). 
+The textual notation ’<ClLinks  term={"object"}><i>object</i></ClLinks> is equivalent to (quote <ClLinks  term={"object"}><i>object</i></ClLinks>); see Section 3.2.1 (Compiler Terminology). 
 
 
 
-Some <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>, called *self-evaluating objects*, do not require quotation by <ClLinks styled={true} term={"quote"}><b>quote</b></ClLinks>. However, <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> and <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks> are used to represent parts of programs, and so would not be useable as constant data in a program without <ClLinks styled={true} term={"quote"}><b>quote</b></ClLinks>. Since <ClLinks styled={true} term={"quote"}><b>quote</b></ClLinks> suppresses the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of these <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>, they become data rather than program. 
+Some <ClLinks  term={"object"}><i>objects</i></ClLinks>, called *self-evaluating objects*, do not require quotation by <ClLinks  term={"quote"}><b>quote</b></ClLinks>. However, <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> and <ClLinks  term={"list"}><i>lists</i></ClLinks> are used to represent parts of programs, and so would not be useable as constant data in a program without <ClLinks  term={"quote"}><b>quote</b></ClLinks>. Since <ClLinks  term={"quote"}><b>quote</b></ClLinks> suppresses the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of these <ClLinks  term={"object"}><i>objects</i></ClLinks>, they become data rather than program. 
 
 
 

@@ -1,4 +1,4 @@
-**use-package** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**use-package** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks> *packages-to-use* &amp;optional *package →* <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<ClLinks  term={"use-package"}><b>use-package</b></ClLinks> *packages-to-use* &amp;optional *package →* <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*packages-to-use*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *package designators*. The KEYWORD <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> may not be supplied. 
+*packages-to-use*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of *package designators*. The KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks> may not be supplied. 
 
 
 
-<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. The <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> cannot be the KEYWORD <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. The <ClLinks  term={"package"}><i>package</i></ClLinks> cannot be the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-<ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks> causes <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> to inherit all the *external symbols* of *packages-to-use*. The inherited <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> become <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> as *internal symbols* of <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
+<ClLinks  term={"use-package"}><b>use-package</b></ClLinks> causes <ClLinks  term={"package"}><i>package</i></ClLinks> to inherit all the *external symbols* of *packages-to-use*. The inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> become <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as *internal symbols* of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-*Packages-to-use* are added to the *use list* of <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> if they are not there already. All *external symbols* in *packages-to-use* become <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> as *internal symbols*. <ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks> does not cause any new <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> to be <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> but only makes them <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> by inheritance. 
+*Packages-to-use* are added to the *use list* of <ClLinks  term={"package"}><i>package</i></ClLinks> if they are not there already. All *external symbols* in *packages-to-use* become <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> as *internal symbols*. <ClLinks  term={"use-package"}><b>use-package</b></ClLinks> does not cause any new <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> to be <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> but only makes them <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> by inheritance. 
 
 
 
-<ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks> checks for name conflicts between the newly imported symbols and those already <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. A name conflict in <ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks> between two external symbols inherited by <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> from *packages-to-use* may be resolved in favor of either <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> by *importing* one of them into <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> and making it a shadowing symbol. 
+<ClLinks  term={"use-package"}><b>use-package</b></ClLinks> checks for name conflicts between the newly imported symbols and those already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. A name conflict in <ClLinks  term={"use-package"}><b>use-package</b></ClLinks> between two external symbols inherited by <ClLinks  term={"package"}><i>package</i></ClLinks> from *packages-to-use* may be resolved in favor of either <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by *importing* one of them into <ClLinks  term={"package"}><i>package</i></ClLinks> and making it a shadowing symbol. 
 
 
 
@@ -51,7 +51,7 @@
 
 
 
-The *use list* of <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> may be modified. 
+The *use list* of <ClLinks  term={"package"}><i>package</i></ClLinks> may be modified. 
 
 
 
@@ -59,7 +59,7 @@ The *use list* of <ClLinks styled={true} term={"package"}><i>package</i></ClLink
 
 
 
-<ClLinks styled={true} term={"unuse-package"}><b>unuse-package</b></ClLinks>, <ClLinks styled={true} term={"package-use-list"}><b>package-use-list</b></ClLinks>, Section 11.1 (Package Concepts) 
+<ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks>, <ClLinks  term={"package-use-list"}><b>package-use-list</b></ClLinks>, Section 11.1 (Package Concepts) 
 
 
 
@@ -67,7 +67,7 @@ The *use list* of <ClLinks styled={true} term={"package"}><i>package</i></ClLink
 
 
 
-It is permissible for a *package P*<sub>1</sub> to <ClLinks styled={true} term={"use"}><i>use</i></ClLinks> a *package P*<sub>2</sub> even if *P*<sub>2</sub> already uses *P*<sub>1</sub>. The using of <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> is not transitive, so no problem results from the apparent circularity. 
+It is permissible for a *package P*<sub>1</sub> to <ClLinks  term={"use"}><i>use</i></ClLinks> a *package P*<sub>2</sub> even if *P*<sub>2</sub> already uses *P*<sub>1</sub>. The using of <ClLinks  term={"package"}><i>packages</i></ClLinks> is not transitive, so no problem results from the apparent circularity. 
 
 
 
@@ -83,7 +83,7 @@ It is permissible for a *package P*<sub>1</sub> to <ClLinks styled={true} term={
 
 
 
-<ClLinks styled={true} term={"defpackage"}><b>defpackage</b></ClLinks> 
+<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> 
 
 
 

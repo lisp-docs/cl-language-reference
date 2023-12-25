@@ -2,7 +2,7 @@
 
 
 
-If **&amp;key** is present, all specifiers up to the next *lambda list keyword* or the end of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> are keyword parameter specifiers. When keyword parameters are processed, the same arguments are processed that would be made into a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> for a *rest parameter* . It is permitted to specify both **&amp;rest** and **&amp;key**. In this case the remaining arguments are used for both purposes; that is, all remaining arguments are made into a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> for the *rest parameter* , and are also processed for the **&amp;key** parameters. If **&amp;key** is specified, there must remain an even number of arguments; see Section 3.5.1.6 (Odd Number of Keyword Arguments). These arguments are considered as pairs, the first argument in each pair being interpreted as a name and the second as the corresponding value. The first <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> of each pair must be a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>; see Section 3.5.1.5 (Invalid Keyword  
+If **&amp;key** is present, all specifiers up to the next *lambda list keyword* or the end of the <ClLinks  term={"list"}><i>list</i></ClLinks> are keyword parameter specifiers. When keyword parameters are processed, the same arguments are processed that would be made into a <ClLinks  term={"list"}><i>list</i></ClLinks> for a *rest parameter* . It is permitted to specify both **&amp;rest** and **&amp;key**. In this case the remaining arguments are used for both purposes; that is, all remaining arguments are made into a <ClLinks  term={"list"}><i>list</i></ClLinks> for the *rest parameter* , and are also processed for the **&amp;key** parameters. If **&amp;key** is specified, there must remain an even number of arguments; see Section 3.5.1.6 (Odd Number of Keyword Arguments). These arguments are considered as pairs, the first argument in each pair being interpreted as a name and the second as the corresponding value. The first <ClLinks  term={"object"}><i>object</i></ClLinks> of each pair must be a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>; see Section 3.5.1.5 (Invalid Keyword  
 
 
 
@@ -14,7 +14,7 @@ Arguments). The keyword parameter specifiers may optionally be followed by the *
 
 
 
-In each keyword parameter specifier must be a name *var* for the parameter variable. If the *var* appears alone or in a (*var init-form*) combination, the keyword name used when matching <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> to <ClLinks styled={true} term={"parameter"}><i>parameters</i></ClLinks> is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> in the KEYWORD <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> (under <ClLinks styled={true} term={"string"}><b>string=</b></ClLinks>) as *var*’s. If the notation ((*keyword-name var*) *init-form*) is used, then the keyword name used to match <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> to <ClLinks styled={true} term={"parameter"}><i>parameters</i></ClLinks> is *keyword-name*, which may be a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> in any <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. (Of course, if it is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> in the KEYWORD <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, it does not necessarily self-evaluate, so care must be taken when calling the function to make sure that normal evaluation still yields the keyword name.) Thus 
+In each keyword parameter specifier must be a name *var* for the parameter variable. If the *var* appears alone or in a (*var init-form*) combination, the keyword name used when matching <ClLinks  term={"argument"}><i>arguments</i></ClLinks> to <ClLinks  term={"parameter"}><i>parameters</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks> whose <ClLinks  term={"name"}><i>name</i></ClLinks> is the <ClLinks  term={"same"}><i>same</i></ClLinks> (under <ClLinks  term={"string"}><b>string=</b></ClLinks>) as *var*’s. If the notation ((*keyword-name var*) *init-form*) is used, then the keyword name used to match <ClLinks  term={"argument"}><i>arguments</i></ClLinks> to <ClLinks  term={"parameter"}><i>parameters</i></ClLinks> is *keyword-name*, which may be a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in any <ClLinks  term={"package"}><i>package</i></ClLinks>. (Of course, if it is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>, it does not necessarily self-evaluate, so care must be taken when calling the function to make sure that normal evaluation still yields the keyword name.) Thus 
 
 
 
@@ -30,11 +30,11 @@ means exactly the same as
 
 
 
-The keyword parameter specifiers are, like all parameter specifiers, effectively processed from left to right. For each keyword parameter specifier, if there is an argument pair whose name matches that specifier’s name (that is, the names are <ClLinks styled={true} term={"eq"}><b>eq</b></ClLinks>), then the parameter variable for that specifier is bound to the second item (the value) of that argument pair. If more than one such argument pair 
+The keyword parameter specifiers are, like all parameter specifiers, effectively processed from left to right. For each keyword parameter specifier, if there is an argument pair whose name matches that specifier’s name (that is, the names are <ClLinks  term={"eq"}><b>eq</b></ClLinks>), then the parameter variable for that specifier is bound to the second item (the value) of that argument pair. If more than one such argument pair 
 
 
 
-matches, the leftmost argument pair is used. If no such argument pair exists, then the *init-form* for that specifier is evaluated and the parameter variable is bound to that value (or to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if no *init-form* was specified). *supplied-p-parameter* is treated as for **&amp;optional** parameters: it is bound to <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if there was a matching argument pair, and to <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> otherwise. 
+matches, the leftmost argument pair is used. If no such argument pair exists, then the *init-form* for that specifier is evaluated and the parameter variable is bound to that value (or to <ClLinks  term={"nil"}><b>nil</b></ClLinks> if no *init-form* was specified). *supplied-p-parameter* is treated as for **&amp;optional** parameters: it is bound to <ClLinks  term={"true"}><i>true</i></ClLinks> if there was a matching argument pair, and to <ClLinks  term={"false"}><i>false</i></ClLinks> otherwise. 
 
 
 
@@ -46,7 +46,7 @@ If keyword argument checking is suppressed, then it is permitted for an argument
 
 
 
-Note that if **&amp;key** is present, a keyword argument of :allow-other-keys is always permitted— regardless of whether the associated value is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> or <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. However, if the value is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, other non-matching keywords are not tolerated (unless **&amp;allow-other-keys** was used). 
+Note that if **&amp;key** is present, a keyword argument of :allow-other-keys is always permitted— regardless of whether the associated value is <ClLinks  term={"true"}><i>true</i></ClLinks> or <ClLinks  term={"false"}><i>false</i></ClLinks>. However, if the value is <ClLinks  term={"false"}><i>false</i></ClLinks>, other non-matching keywords are not tolerated (unless **&amp;allow-other-keys** was used). 
 
 
 

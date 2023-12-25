@@ -1,4 +1,4 @@
-**load-logical-pathname-translations** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**load-logical-pathname-translations** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*host*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
+*host*—a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Searches for and loads the definition of a *logical host* named *host*, if it is not already defined. The specific nature of the search is <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
+Searches for and loads the definition of a *logical host* named *host*, if it is not already defined. The specific nature of the search is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ Searches for and loads the definition of a *logical host* named *host*, if it is
 
 
 
-If the *host* is already defined, no attempt to find or load a definition is attempted, and <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> is returned. If the *host* is not already defined, but a definition is successfully found and loaded, <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> is returned. Otherwise, an error is signaled. 
+If the *host* is already defined, no attempt to find or load a definition is attempted, and <ClLinks  term={"false"}><i>false</i></ClLinks> is returned. If the *host* is not already defined, but a definition is successfully found and loaded, <ClLinks  term={"true"}><i>true</i></ClLinks> is returned. Otherwise, an error is signaled. 
 
 
 
@@ -63,7 +63,7 @@ If the *host* is already defined, no attempt to find or load a definition is att
 
 
 
-If no definition is found, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> is signaled. 
+If no definition is found, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
 
 
 
@@ -71,7 +71,7 @@ If no definition is found, an error of <ClLinks styled={true} term={"type"}><i>t
 
 
 
-<ClLinks styled={true} term={"logical-pathname"}><b>logical-pathname</b></ClLinks> 
+<ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks> 
 
 
 
@@ -79,7 +79,7 @@ If no definition is found, an error of <ClLinks styled={true} term={"type"}><i>t
 
 
 
-*Logical pathname* definitions will be created not just by *implementors* but also by <ClLinks styled={true} term={"programmer"}><i>programmers</i></ClLinks>. As such, it is important that the search strategy be documented. For example, an <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> might define that the definition of a *host* is to be found in a file called “*host*.translations” in some specifically named directory. 
+*Logical pathname* definitions will be created not just by *implementors* but also by <ClLinks  term={"programmer"}><i>programmers</i></ClLinks>. As such, it is important that the search strategy be documented. For example, an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might define that the definition of a *host* is to be found in a file called “*host*.translations” in some specifically named directory. 
 
 
 

@@ -1,4 +1,4 @@
-**psetq** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**psetq** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"psetq"}><b>psetq</b></ClLinks> *\{↓pair\}*\* → <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
+<ClLinks  term={"psetq"}><b>psetq</b></ClLinks> *\{↓pair\}*\* → <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"psetq"}><b>psetq</b></ClLinks>: [ **p—e set kyu-** ] 
+<ClLinks  term={"psetq"}><b>psetq</b></ClLinks>: [ **p—e set kyu-** ] 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-*var*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> naming a <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> other than a *constant variable*. 
+*var*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming a <ClLinks  term={"variable"}><i>variable</i></ClLinks> other than a *constant variable*. 
 
 
 
-<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -38,15 +38,15 @@
 
 
 
-Assigns values to <ClLinks styled={true} term={"variable"}><i>variables</i></ClLinks>. 
+Assigns values to <ClLinks  term={"variable"}><i>variables</i></ClLinks>. 
 
 
 
-This is just like <ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks>, except that the assignments happen “in parallel.” That is, first all of the forms are evaluated, and only then are the variables set to the resulting values. In this way, the assignment to one variable does not affect the value computation of another in the way that would occur with <ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks>’s sequential assignment. 
+This is just like <ClLinks  term={"setq"}><b>setq</b></ClLinks>, except that the assignments happen “in parallel.” That is, first all of the forms are evaluated, and only then are the variables set to the resulting values. In this way, the assignment to one variable does not affect the value computation of another in the way that would occur with <ClLinks  term={"setq"}><b>setq</b></ClLinks>’s sequential assignment. 
 
 
 
-If any *var* refers to a <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> made by <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>, then that *var* is treated as if <ClLinks styled={true} term={"psetf"}><b>psetf</b></ClLinks> (not <ClLinks styled={true} term={"psetq"}><b>psetq</b></ClLinks>) had been used. 
+If any *var* refers to a <ClLinks  term={"binding"}><i>binding</i></ClLinks> made by <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>, then that *var* is treated as if <ClLinks  term={"psetf"}><b>psetf</b></ClLinks> (not <ClLinks  term={"psetq"}><b>psetq</b></ClLinks>) had been used. 
 
 
 
@@ -94,7 +94,7 @@ c → 3
 
 
 
-The values of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are assigned to *vars*. 
+The values of <ClLinks  term={"form"}><i>forms</i></ClLinks> are assigned to *vars*. 
 
 
 
@@ -102,7 +102,7 @@ The values of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are as
 
 
 
-<ClLinks styled={true} term={"psetf"}><b>psetf</b></ClLinks>, <ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks> 
+<ClLinks  term={"psetf"}><b>psetf</b></ClLinks>, <ClLinks  term={"setq"}><b>setq</b></ClLinks> 
 
 
 

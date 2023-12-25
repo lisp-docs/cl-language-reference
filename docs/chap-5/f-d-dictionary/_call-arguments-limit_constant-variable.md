@@ -6,7 +6,7 @@
 
 
 
-An integer not smaller than 50 and at least as great as the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></ClLinks>, the exact magnitude of which is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+An integer not smaller than 50 and at least as great as the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></ClLinks>, the exact magnitude of which is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -14,7 +14,7 @@ An integer not smaller than 50 and at least as great as the <ClLinks styled={tru
 
 
 
-The upper exclusive bound on the number of <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that may be passed to a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
+The upper exclusive bound on the number of <ClLinks  term={"argument"}><i>arguments</i></ClLinks> that may be passed to a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ The upper exclusive bound on the number of <ClLinks styled={true} term={"argumen
 
 
 
-<ClLinks styled={true} term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></ClLinks>, <ClLinks styled={true} term={"multiple-values-limit"}><b>multiple-values-limit</b></ClLinks> 
+<ClLinks  term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></ClLinks>, <ClLinks  term={"multiple-values-limit"}><b>multiple-values-limit</b></ClLinks> 
 
 
 

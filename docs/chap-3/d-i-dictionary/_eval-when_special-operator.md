@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"eval-when"}><b>eval-when</b></ClLinks> (<ClLinks styled={true} term={"situation"}><i>\{situation\}</i></ClLinks>\*) <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
+<ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> (<ClLinks  term={"situation"}><i>\{situation\}</i></ClLinks>\*) <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks>—One of the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> :compile-toplevel, :load-toplevel, :execute, <ClLinks styled={true} term={"compile"}><b>compile</b></ClLinks>, <ClLinks styled={true} term={"load"}><b>load</b></ClLinks>, or <ClLinks styled={true} term={"eval"}><b>eval</b></ClLinks>. The use of <ClLinks styled={true} term={"eval"}><b>eval</b></ClLinks>, <ClLinks styled={true} term={"compile"}><b>compile</b></ClLinks>, and <ClLinks styled={true} term={"load"}><b>load</b></ClLinks> is deprecated. 
+<ClLinks  term={"situation"}><i>situation</i></ClLinks>—One of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> :compile-toplevel, :load-toplevel, :execute, <ClLinks  term={"compile"}><b>compile</b></ClLinks>, <ClLinks  term={"load"}><b>load</b></ClLinks>, or <ClLinks  term={"eval"}><b>eval</b></ClLinks>. The use of <ClLinks  term={"eval"}><b>eval</b></ClLinks>, <ClLinks  term={"compile"}><b>compile</b></ClLinks>, and <ClLinks  term={"load"}><b>load</b></ClLinks> is deprecated. 
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> if they are executed, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if they are not. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks> if they are executed, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if they are not. 
 
 
 
@@ -30,19 +30,19 @@
 
 
 
-The body of an <ClLinks styled={true} term={"eval-when"}><b>eval-when</b></ClLinks> form is processed as an *implicit progn*, but only in the <ClLinks styled={true} term={"situation"}><i>situations</i></ClLinks> listed. 
+The body of an <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> form is processed as an *implicit progn*, but only in the <ClLinks  term={"situation"}><i>situations</i></ClLinks> listed. 
 
 
 
-The use of the <ClLinks styled={true} term={"situation"}><i>situations</i></ClLinks> :compile-toplevel (or compile) and :load-toplevel (or load) controls whether and when <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> occurs when <ClLinks styled={true} term={"eval-when"}><b>eval-when</b></ClLinks> appears as a *top level form* in code processed by <ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks>. See Section 3.2.3 (File Compilation). 
+The use of the <ClLinks  term={"situation"}><i>situations</i></ClLinks> :compile-toplevel (or compile) and :load-toplevel (or load) controls whether and when <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> occurs when <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> appears as a *top level form* in code processed by <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>. See Section 3.2.3 (File Compilation). 
 
 
 
-The use of the <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks> :execute (or eval) controls whether evaluation occurs for other <ClLinks styled={true} term={"eval-when"}><b>eval-when</b></ClLinks> <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>; that is, those that are not *top level forms*, or those in code processed by <ClLinks styled={true} term={"eval"}><b>eval</b></ClLinks> or <ClLinks styled={true} term={"compile"}><b>compile</b></ClLinks>. If the :execute situation is specified in such a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, then the body <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are processed as an *implicit progn*; otherwise, the <ClLinks styled={true} term={"eval-when"}><b>eval-when</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+The use of the <ClLinks  term={"situation"}><i>situation</i></ClLinks> :execute (or eval) controls whether evaluation occurs for other <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> <ClLinks  term={"form"}><i>forms</i></ClLinks>; that is, those that are not *top level forms*, or those in code processed by <ClLinks  term={"eval"}><b>eval</b></ClLinks> or <ClLinks  term={"compile"}><b>compile</b></ClLinks>. If the :execute situation is specified in such a <ClLinks  term={"form"}><i>form</i></ClLinks>, then the body <ClLinks  term={"form"}><i>forms</i></ClLinks> are processed as an *implicit progn*; otherwise, the <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"eval-when"}><b>eval-when</b></ClLinks> normally appears as a *top level form*, but it is meaningful for it to appear as a *non-top-level form*. However, the compile-time side effects described in Section 3.2 (Compilation) only take place when <ClLinks styled={true} term={"eval-when"}><b>eval-when</b></ClLinks> appears as a *top level form*. 
+<ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> normally appears as a *top level form*, but it is meaningful for it to appear as a *non-top-level form*. However, the compile-time side effects described in Section 3.2 (Compilation) only take place when <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> appears as a *top level form*. 
 
 
 
@@ -100,7 +100,7 @@ This causes the call to **set-macro-character** to be executed in the compiler�
 
 
 
-<ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks>, Section 3.2 (Compilation) 
+<ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, Section 3.2 (Compilation) 
 
 
 
@@ -108,15 +108,15 @@ This causes the call to **set-macro-character** to be executed in the compiler�
 
 
 
-The following effects are logical consequences of the definition of <ClLinks styled={true} term={"eval-when"}><b>eval-when</b></ClLinks>: 
+The following effects are logical consequences of the definition of <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks>: 
 
 
 
-*•* Execution of a single <ClLinks styled={true} term={"eval-when"}><b>eval-when</b></ClLinks> expression executes the body code at most once. 
+*•* Execution of a single <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> expression executes the body code at most once. 
 
 
 
-*• Macros* intended for use in *top level forms* should be written so that side-effects are done by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in the macro expansion. The macro-expander itself should not do the side-effects. 
+*• Macros* intended for use in *top level forms* should be written so that side-effects are done by the <ClLinks  term={"form"}><i>forms</i></ClLinks> in the macro expansion. The macro-expander itself should not do the side-effects. 
 
 
 
@@ -152,11 +152,11 @@ Right:
 
 
 
-Adherence to this convention means that such <ClLinks styled={true} term={"macro"}><i>macros</i></ClLinks> behave intuitively when appearing as *non-top-level forms*. 
+Adherence to this convention means that such <ClLinks  term={"macro"}><i>macros</i></ClLinks> behave intuitively when appearing as *non-top-level forms*. 
 
 
 
-*•* Placing a variable binding around an <ClLinks styled={true} term={"eval-when"}><b>eval-when</b></ClLinks> reliably captures the binding because the compile-time-too mode cannot occur (*i.e.*, introducing a variable binding means that the <ClLinks styled={true} term={"eval-when"}><b>eval-when</b></ClLinks> is not a *top level form*). For example, 
+*•* Placing a variable binding around an <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> reliably captures the binding because the compile-time-too mode cannot occur (*i.e.*, introducing a variable binding means that the <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> is not a *top level form*). For example, 
 
 
 
@@ -168,7 +168,7 @@ Adherence to this convention means that such <ClLinks styled={true} term={"macro
 
 
 
-prints 3 at execution (*i.e.*, load) time, and does not print anything at compile time. This is important so that expansions of <ClLinks styled={true} term={"defun"}><b>defun</b></ClLinks> and <ClLinks styled={true} term={"defmacro"}><b>defmacro</b></ClLinks> can be done in terms of <ClLinks styled={true} term={"eval-when"}><b>eval-when</b></ClLinks> and can correctly capture the *lexical environment*. 
+prints 3 at execution (*i.e.*, load) time, and does not print anything at compile time. This is important so that expansions of <ClLinks  term={"defun"}><b>defun</b></ClLinks> and <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> can be done in terms of <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> and can correctly capture the *lexical environment*. 
 
 
 

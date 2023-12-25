@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks> <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> &amp;optional *environment → creation-form*[*, initialization-form*] 
+<ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> <ClLinks  term={"object"}><i>object</i></ClLinks> &amp;optional *environment → creation-form*[*, initialization-form*] 
 
 
 
@@ -14,19 +14,19 @@
 
 
 
-<ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks> (<ClLinks styled={true} term={"object"}><i>object</i></ClLinks> <ClLinks styled={true} term={"standard-object"}><b>standard-object</b></ClLinks>) &amp;optional <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> 
+<ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> (<ClLinks  term={"object"}><i>object</i></ClLinks> <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>) &amp;optional <ClLinks  term={"environment"}><i>environment</i></ClLinks> 
 
 
 
-<ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks> (<ClLinks styled={true} term={"object"}><i>object</i></ClLinks> <ClLinks styled={true} term={"structure-object"}><b>structure-object</b></ClLinks>) &amp;optional <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> 
+<ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> (<ClLinks  term={"object"}><i>object</i></ClLinks> <ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks>) &amp;optional <ClLinks  term={"environment"}><i>environment</i></ClLinks> 
 
 
 
-<ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks> (<ClLinks styled={true} term={"object"}><i>object</i></ClLinks> <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>) &amp;optional <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> 
+<ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> (<ClLinks  term={"object"}><i>object</i></ClLinks> <ClLinks  term={"condition"}><b>condition</b></ClLinks>) &amp;optional <ClLinks  term={"environment"}><i>environment</i></ClLinks> 
 
 
 
-<ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks> (<ClLinks styled={true} term={"object"}><i>object</i></ClLinks> <ClLinks styled={true} term={"class"}><b>class</b></ClLinks>) &amp;optional <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> 
+<ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> (<ClLinks  term={"object"}><i>object</i></ClLinks> <ClLinks  term={"class"}><b>class</b></ClLinks>) &amp;optional <ClLinks  term={"environment"}><i>environment</i></ClLinks> 
 
 
 
@@ -34,19 +34,19 @@
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>—an *environment object*. 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an *environment object*. 
 
 
 
-*creation-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+*creation-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*initialization-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+*initialization-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -54,27 +54,23 @@
 
 
 
-The *generic function* <ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks> creates and returns one or two <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>, a *creation-form* and an *initialization-form*, that enable <ClLinks styled={true} term={"load"}><b>load</b></ClLinks> to construct an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> equivalent to <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. <ClLinks styled={true} term={"environment"}><i>Environment</i></ClLinks> is an *environment object* corresponding to the *lexical environment* in which the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> will be processed. 
+The *generic function* <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> creates and returns one or two <ClLinks  term={"form"}><i>forms</i></ClLinks>, a *creation-form* and an *initialization-form*, that enable <ClLinks  term={"load"}><b>load</b></ClLinks> to construct an <ClLinks  term={"object"}><i>object</i></ClLinks> equivalent to <ClLinks  term={"object"}><i>object</i></ClLinks>. <ClLinks  term={"environment"}><i>Environment</i></ClLinks> is an *environment object* corresponding to the *lexical environment* in which the <ClLinks  term={"form"}><i>forms</i></ClLinks> will be processed. 
 
 
 
-The *file compiler* calls <ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks> to process certain *classes* of *literal objects*; see Section 3.2.4.4 (Additional Constraints on Externalizable Objects). 
+The *file compiler* calls <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> to process certain *classes* of *literal objects*; see Section 3.2.4.4 (Additional Constraints on Externalizable Objects). 
 
 
 
-*Conforming programs* may call <ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks> directly, providing <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a *generalized instance* of <ClLinks styled={true} term={"standard-object"}><b>standard-object</b></ClLinks>, <ClLinks styled={true} term={"structure-object"}><b>structure-object</b></ClLinks>, or <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>. 
+*Conforming programs* may call <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> directly, providing <ClLinks  term={"object"}><i>object</i></ClLinks> is a *generalized instance* of <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>, <ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks>, or <ClLinks  term={"condition"}><b>condition</b></ClLinks>. 
 
 
 
-The creation form is a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that, when evaluated at <ClLinks styled={true} term={"load"}><b>load</b></ClLinks> time, should return an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> that is equivalent to <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. The exact meaning of equivalent depends on the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> of <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> and is up to the programmer who defines a <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> for <ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks>; see Section 3.2.4 (Literal Objects in Compiled Files). 
-
-
+The creation form is a <ClLinks  term={"form"}><i>form</i></ClLinks> that, when evaluated at <ClLinks  term={"load"}><b>load</b></ClLinks> time, should return an <ClLinks  term={"object"}><i>object</i></ClLinks> that is equivalent to <ClLinks  term={"object"}><i>object</i></ClLinks>. The exact meaning of equivalent depends on the <ClLinks  term={"type"}><i>type</i></ClLinks> of <ClLinks  term={"object"}><i>object</i></ClLinks> and is up to the programmer who defines a <ClLinks  term={"method"}><i>method</i></ClLinks> for <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks>; see Section 3.2.4 (Literal Objects in Compiled Files). 
 
 
 
 
-
- 
 
 
 
@@ -82,11 +78,15 @@ The creation form is a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks
 
 
 
-<ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks> 
+ 
 
 
 
-The initialization form is a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that, when evaluated at <ClLinks styled={true} term={"load"}><b>load</b></ClLinks> time, should perform further initialization of the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. The value returned by the initialization form is ignored. If <ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks> returns only one value, the initialization form is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, which has no effect. If <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> appears as a constant in the initialization form, at <ClLinks styled={true} term={"load"}><b>load</b></ClLinks> time it will be replaced by the equivalent <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> constructed by the creation form; this is how the further initialization gains access to the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> 
+
+
+
+The initialization form is a <ClLinks  term={"form"}><i>form</i></ClLinks> that, when evaluated at <ClLinks  term={"load"}><b>load</b></ClLinks> time, should perform further initialization of the <ClLinks  term={"object"}><i>object</i></ClLinks>. The value returned by the initialization form is ignored. If <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> returns only one value, the initialization form is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, which has no effect. If <ClLinks  term={"object"}><i>object</i></ClLinks> appears as a constant in the initialization form, at <ClLinks  term={"load"}><b>load</b></ClLinks> time it will be replaced by the equivalent <ClLinks  term={"object"}><i>object</i></ClLinks> constructed by the creation form; this is how the further initialization gains access to the <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -94,35 +94,31 @@ Both the *creation-form* and the *initialization-form* may contain references to
 
 
 
-The creation form for an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is always *evaluated* before the initialization form for that <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. When either the creation form or the initialization form references other <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> that have not been referenced earlier in the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> being *compiled*, the <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> ensures that all of the referenced <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> have been created before *evaluating* the referencing <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. When the referenced <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of a <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> which the *file compiler* processes using <ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks>, this involves *evaluating* the creation form returned for it. (This is the reason for the prohibition against circular references among creation forms). 
+The creation form for an <ClLinks  term={"object"}><i>object</i></ClLinks> is always *evaluated* before the initialization form for that <ClLinks  term={"object"}><i>object</i></ClLinks>. When either the creation form or the initialization form references other <ClLinks  term={"object"}><i>objects</i></ClLinks> that have not been referenced earlier in the <ClLinks  term={"file"}><i>file</i></ClLinks> being *compiled*, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> ensures that all of the referenced <ClLinks  term={"object"}><i>objects</i></ClLinks> have been created before *evaluating* the referencing <ClLinks  term={"form"}><i>form</i></ClLinks>. When the referenced <ClLinks  term={"object"}><i>object</i></ClLinks> is of a <ClLinks  term={"type"}><i>type</i></ClLinks> which the *file compiler* processes using <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks>, this involves *evaluating* the creation form returned for it. (This is the reason for the prohibition against circular references among creation forms). 
 
 
 
-Each initialization form is *evaluated* as soon as possible after its associated creation form, as determined by data flow. If the initialization form for an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> does not reference any other <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> not referenced earlier in the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> and processed by the *file compiler* using <ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks>, the initialization form is evaluated immediately after the creation form. If a creation or initialization form *F* does contain references to such <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>, the creation forms for those other objects are evaluated before *F*, and the initialization forms for those other <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> are also evaluated before *F* whenever they do not depend on the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> created or initialized by *F*. Where these rules do not uniquely determine an order of <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> between two creation/initialization forms, the order of <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> is unspecified. 
+Each initialization form is *evaluated* as soon as possible after its associated creation form, as determined by data flow. If the initialization form for an <ClLinks  term={"object"}><i>object</i></ClLinks> does not reference any other <ClLinks  term={"object"}><i>objects</i></ClLinks> not referenced earlier in the <ClLinks  term={"file"}><i>file</i></ClLinks> and processed by the *file compiler* using <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks>, the initialization form is evaluated immediately after the creation form. If a creation or initialization form *F* does contain references to such <ClLinks  term={"object"}><i>objects</i></ClLinks>, the creation forms for those other objects are evaluated before *F*, and the initialization forms for those other <ClLinks  term={"object"}><i>objects</i></ClLinks> are also evaluated before *F* whenever they do not depend on the <ClLinks  term={"object"}><i>object</i></ClLinks> created or initialized by *F*. Where these rules do not uniquely determine an order of <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> between two creation/initialization forms, the order of <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> is unspecified. 
 
 
 
-While these creation and initialization forms are being evaluated, the <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> are possibly in an uninitialized state, analogous to the state of an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> between the time it has been created by <ClLinks styled={true} term={"allocate-instance"}><b>allocate-instance</b></ClLinks> and it has been processed fully by <ClLinks styled={true} term={"initialize-instance"}><b>initialize-instance</b></ClLinks>. Programmers writing 
+While these creation and initialization forms are being evaluated, the <ClLinks  term={"object"}><i>objects</i></ClLinks> are possibly in an uninitialized state, analogous to the state of an <ClLinks  term={"object"}><i>object</i></ClLinks> between the time it has been created by <ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks> and it has been processed fully by <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks>. Programmers writing 
 
 
 
-<ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> for <ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks> must take care in manipulating <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> not to depend on <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> that have not yet been initialized. 
+<ClLinks  term={"method"}><i>methods</i></ClLinks> for <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> must take care in manipulating <ClLinks  term={"object"}><i>objects</i></ClLinks> not to depend on <ClLinks  term={"slot"}><i>slots</i></ClLinks> that have not yet been initialized. 
 
 
 
-It is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether <ClLinks styled={true} term={"load"}><b>load</b></ClLinks> calls <ClLinks styled={true} term={"eval"}><b>eval</b></ClLinks> on the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> or does some other operation that has an equivalent effect. For example, the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> might be translated into different but equivalent <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> and then evaluated, they might be compiled and the resulting functions called by <ClLinks styled={true} term={"load"}><b>load</b></ClLinks>, or they might be interpreted by a special-purpose function different from <ClLinks styled={true} term={"eval"}><b>eval</b></ClLinks>. All that is required is that the effect be equivalent to evaluating the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
+It is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether <ClLinks  term={"load"}><b>load</b></ClLinks> calls <ClLinks  term={"eval"}><b>eval</b></ClLinks> on the <ClLinks  term={"form"}><i>forms</i></ClLinks> or does some other operation that has an equivalent effect. For example, the <ClLinks  term={"form"}><i>forms</i></ClLinks> might be translated into different but equivalent <ClLinks  term={"form"}><i>forms</i></ClLinks> and then evaluated, they might be compiled and the resulting functions called by <ClLinks  term={"load"}><b>load</b></ClLinks>, or they might be interpreted by a special-purpose function different from <ClLinks  term={"eval"}><b>eval</b></ClLinks>. All that is required is that the effect be equivalent to evaluating the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
-The *method specialized* on <ClLinks styled={true} term={"class"}><b>class</b></ClLinks> returns a creation <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> using the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> if the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> has a *proper name* in <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>, signaling an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> if it does not have a *proper name*. *Evaluation* of the creation <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> uses the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> to find the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> with that <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>, as if by 
-
-
+The *method specialized* on <ClLinks  term={"class"}><b>class</b></ClLinks> returns a creation <ClLinks  term={"form"}><i>form</i></ClLinks> using the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"class"}><i>class</i></ClLinks> if the <ClLinks  term={"class"}><i>class</i></ClLinks> has a *proper name* in <ClLinks  term={"environment"}><i>environment</i></ClLinks>, signaling an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> if it does not have a *proper name*. *Evaluation* of the creation <ClLinks  term={"form"}><i>form</i></ClLinks> uses the <ClLinks  term={"name"}><i>name</i></ClLinks> to find the <ClLinks  term={"class"}><i>class</i></ClLinks> with that <ClLinks  term={"name"}><i>name</i></ClLinks>, as if by 
 
 
 
 
-
- 
 
 
 
@@ -130,15 +126,19 @@ The *method specialized* on <ClLinks styled={true} term={"class"}><b>class</b></
 
 
 
-<ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks> 
+ 
 
 
 
-*calling* <ClLinks styled={true} term={"find-class"}><b>find-class</b></ClLinks>. If a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> with that <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> has not been defined, then a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> may be computed in an <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks> manner. If a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> cannot be returned as the result of *evaluating* the creation <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, then an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> is signaled. 
+<ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> 
 
 
 
-Both *conforming implementations* and *conforming programs* may further <ClLinks styled={true} term={"specialize"}><i>specialize</i></ClLinks> <ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks>. 
+*calling* <ClLinks  term={"find-class"}><b>find-class</b></ClLinks>. If a <ClLinks  term={"class"}><i>class</i></ClLinks> with that <ClLinks  term={"name"}><i>name</i></ClLinks> has not been defined, then a <ClLinks  term={"class"}><i>class</i></ClLinks> may be computed in an <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> manner. If a <ClLinks  term={"class"}><i>class</i></ClLinks> cannot be returned as the result of *evaluating* the creation <ClLinks  term={"form"}><i>form</i></ClLinks>, then an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+
+
+
+Both *conforming implementations* and *conforming programs* may further <ClLinks  term={"specialize"}><i>specialize</i></ClLinks> <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks>. 
 
 
 
@@ -211,11 +211,11 @@ In the following example, the data structure to be dumped has no special propert
 
 
 
-The *methods specialized* on <ClLinks styled={true} term={"standard-object"}><b>standard-object</b></ClLinks>, <ClLinks styled={true} term={"structure-object"}><b>structure-object</b></ClLinks>, and <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks> all signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>. 
+The *methods specialized* on <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>, <ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks>, and <ClLinks  term={"condition"}><b>condition</b></ClLinks> all signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks>. 
 
 
 
-It is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether *calling* <ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks> on a *generalized instance* of a *system class* signals an error or returns creation and initialization <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
+It is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether *calling* <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> on a *generalized instance* of a *system class* signals an error or returns creation and initialization <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -223,7 +223,7 @@ It is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation
 
 
 
-<ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks styled={true} term={"make-load-form-saving-slots"}><b>make-load-form-saving-slots</b></ClLinks>, Section 3.2.4.4 (Additional Constraints on Externaliz able Objects) Section 3.1 (Evaluation), Section 3.2 (Compilation) 
+<ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks  term={"make-load-form-saving-slots"}><b>make-load-form-saving-slots</b></ClLinks>, Section 3.2.4.4 (Additional Constraints on Externaliz able Objects) Section 3.1 (Evaluation), Section 3.2 (Compilation) 
 
 
 
@@ -231,11 +231,11 @@ It is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation
 
 
 
-The *file compiler* calls <ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks> in specific circumstances detailed in Section 3.2.4.4 (Additional Constraints on Externalizable Objects). 
+The *file compiler* calls <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> in specific circumstances detailed in Section 3.2.4.4 (Additional Constraints on Externalizable Objects). 
 
 
 
-Some <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> may provide facilities for defining new *subclasses* of *classes* which are specified as *system classes*. (Some likely candidates include <ClLinks styled={true} term={"generic-function"}><b>generic-function</b></ClLinks>, <ClLinks styled={true} term={"method"}><b>method</b></ClLinks>, and <ClLinks styled={true} term={"stream"}><b>stream</b></ClLinks>). Such <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> should document how the *file compiler* processes <ClLinks styled={true} term={"instance"}><i>instances</i></ClLinks> of such *classes* when encountered as *literal objects*, and should document any relevant <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> for <ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks>. 
+Some <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> may provide facilities for defining new *subclasses* of *classes* which are specified as *system classes*. (Some likely candidates include <ClLinks  term={"generic-function"}><b>generic-function</b></ClLinks>, <ClLinks  term={"method"}><b>method</b></ClLinks>, and <ClLinks  term={"stream"}><b>stream</b></ClLinks>). Such <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> should document how the *file compiler* processes <ClLinks  term={"instance"}><i>instances</i></ClLinks> of such *classes* when encountered as *literal objects*, and should document any relevant <ClLinks  term={"method"}><i>methods</i></ClLinks> for <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks>. 
 
 
 

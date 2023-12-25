@@ -6,7 +6,7 @@
 
 
 
-**update-instance-for-redefined-class** <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> 
+**update-instance-for-redefined-class** <ClLinks  term={"instance"}><i>instance</i></ClLinks> 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-**update-instance-for-redefined-class** (<ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> <ClLinks styled={true} term={"standard-object"}><b>standard-object</b></ClLinks>) 
+**update-instance-for-redefined-class** (<ClLinks  term={"instance"}><i>instance</i></ClLinks> <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>) 
 
 
 
@@ -66,19 +66,19 @@
 
 
 
-<ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks  term={"instance"}><i>instance</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*added-slots*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+*added-slots*—a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
-*discarded-slots*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+*discarded-slots*—a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
-*property-list*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+*property-list*—a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -86,7 +86,7 @@
 
 
 
-*result*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+*result*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -94,19 +94,19 @@
 
 
 
-The *generic function* **update-instance-for-redefined-class** is not intended to be called by programmers. Programmers may write <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> for it. The *generic func tion* **update-instance-for-redefined-class** is called by the mechanism activated by <ClLinks styled={true} term={"make-instances-obsolete"}><b>make-instances-obsolete</b></ClLinks>. 
+The *generic function* **update-instance-for-redefined-class** is not intended to be called by programmers. Programmers may write <ClLinks  term={"method"}><i>methods</i></ClLinks> for it. The *generic func tion* **update-instance-for-redefined-class** is called by the mechanism activated by <ClLinks  term={"make-instances-obsolete"}><b>make-instances-obsolete</b></ClLinks>. 
 
 
 
-The system-supplied primary <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> on **update-instance-for-redefined-class** checks the validity of *initargs* and signals an error if an *initarg* is supplied that is not declared as valid. This <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> then initializes <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> with values according to the *initargs*, and initializes the newly *added-slots* with values according to their :initform forms. It does this by calling the generic function <ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks> 
+The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> on **update-instance-for-redefined-class** checks the validity of *initargs* and signals an error if an *initarg* is supplied that is not declared as valid. This <ClLinks  term={"method"}><i>method</i></ClLinks> then initializes <ClLinks  term={"slot"}><i>slots</i></ClLinks> with values according to the *initargs*, and initializes the newly *added-slots* with values according to their :initform forms. It does this by calling the generic function <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> 
 
 
 
-with the following arguments: the <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>, a list of names of the newly *added-slots* to <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>, and the *initargs* it received. Newly *added-slots* are those *local slots* for which no <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> of the same name exists in the old version of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. 
+with the following arguments: the <ClLinks  term={"instance"}><i>instance</i></ClLinks>, a list of names of the newly *added-slots* to <ClLinks  term={"instance"}><i>instance</i></ClLinks>, and the *initargs* it received. Newly *added-slots* are those *local slots* for which no <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the same name exists in the old version of the <ClLinks  term={"class"}><i>class</i></ClLinks>. 
 
 
 
-When <ClLinks styled={true} term={"make-instances-obsolete"}><b>make-instances-obsolete</b></ClLinks> is invoked or when a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> has been redefined and an <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> is being updated, a *property-list* is created that captures the slot names and values of all the *discarded slots* with values in the original <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>. The structure of the <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks> is transformed so that it conforms to the current class definition. The arguments to **update-instance-for-redefined-class** are this transformed <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>, a list of *added-slots* to the <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>, a list *discarded-slots* from the <ClLinks styled={true} term={"instance"}><i>instance</i></ClLinks>, and the *property-list* containing the slot names and values for <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> that were discarded and had values. Included in this list of discarded <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> are <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> that were local in the old <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> and are shared in the new <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. 
+When <ClLinks  term={"make-instances-obsolete"}><b>make-instances-obsolete</b></ClLinks> is invoked or when a <ClLinks  term={"class"}><i>class</i></ClLinks> has been redefined and an <ClLinks  term={"instance"}><i>instance</i></ClLinks> is being updated, a *property-list* is created that captures the slot names and values of all the *discarded slots* with values in the original <ClLinks  term={"instance"}><i>instance</i></ClLinks>. The structure of the <ClLinks  term={"instance"}><i>instance</i></ClLinks> is transformed so that it conforms to the current class definition. The arguments to **update-instance-for-redefined-class** are this transformed <ClLinks  term={"instance"}><i>instance</i></ClLinks>, a list of *added-slots* to the <ClLinks  term={"instance"}><i>instance</i></ClLinks>, a list *discarded-slots* from the <ClLinks  term={"instance"}><i>instance</i></ClLinks>, and the *property-list* containing the slot names and values for <ClLinks  term={"slot"}><i>slots</i></ClLinks> that were discarded and had values. Included in this list of discarded <ClLinks  term={"slot"}><i>slots</i></ClLinks> are <ClLinks  term={"slot"}><i>slots</i></ClLinks> that were local in the old <ClLinks  term={"class"}><i>class</i></ClLinks> and are shared in the new <ClLinks  term={"class"}><i>class</i></ClLinks>. 
 
 
 
@@ -160,7 +160,7 @@ The value returned by **update-instance-for-redefined-class** is ignored.
 
 
 
-The system-supplied primary <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> on **update-instance-for-redefined-class** signals an error if an *initarg* is supplied that is not declared as valid. 
+The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> on **update-instance-for-redefined-class** signals an error if an *initarg* is supplied that is not declared as valid. 
 
 
 
@@ -168,7 +168,7 @@ The system-supplied primary <ClLinks styled={true} term={"method"}><i>method</i>
 
 
 
-<ClLinks styled={true} term={"make-instances-obsolete"}><b>make-instances-obsolete</b></ClLinks>, <ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks>, Section 4.3.6 (Redefining Classes), Section 7.1.4 (Rules for Initialization Arguments), Section 7.1.2 (Declaring the Validity of Initialization Arguments) 
+<ClLinks  term={"make-instances-obsolete"}><b>make-instances-obsolete</b></ClLinks>, <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>, Section 4.3.6 (Redefining Classes), Section 7.1.4 (Rules for Initialization Arguments), Section 7.1.2 (Declaring the Validity of Initialization Arguments) 
 
 
 
@@ -176,7 +176,7 @@ The system-supplied primary <ClLinks styled={true} term={"method"}><i>method</i>
 
 
 
-*Initargs* are declared as valid by using the :initarg option to <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks>, or by defining <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> for **update-instance-for-redefined-class** or <ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. The keyword name of each keyword parameter specifier in the *lambda list* of any <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> defined on **update-instance-for-redefined-class** or <ClLinks styled={true} term={"shared-initialize"}><b>shared-initialize</b></ClLinks> is declared as a valid *initarg* name for all *classes* for which that <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> is applicable. 
+*Initargs* are declared as valid by using the :initarg option to <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, or by defining <ClLinks  term={"method"}><i>methods</i></ClLinks> for **update-instance-for-redefined-class** or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. The keyword name of each keyword parameter specifier in the *lambda list* of any <ClLinks  term={"method"}><i>method</i></ClLinks> defined on **update-instance-for-redefined-class** or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> is declared as a valid *initarg* name for all *classes* for which that <ClLinks  term={"method"}><i>method</i></ClLinks> is applicable. 
 
 
 

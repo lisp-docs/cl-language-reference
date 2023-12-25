@@ -1,4 +1,4 @@
-**file-write-date** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**file-write-date** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"file-write-date"}><b>file-write-date</b></ClLinks> *pathspec → date* 
+<ClLinks  term={"file-write-date"}><b>file-write-date</b></ClLinks> *pathspec → date* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*date*—a *universal time* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*date*—a *universal time* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a *universal time* representing the time at which the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> specified by *pathspec* was last written (or created), or returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if such a time cannot be determined. 
+Returns a *universal time* representing the time at which the <ClLinks  term={"file"}><i>file</i></ClLinks> specified by *pathspec* was last written (or created), or returns <ClLinks  term={"nil"}><b>nil</b></ClLinks> if such a time cannot be determined. 
 
 
 
@@ -57,11 +57,11 @@ The host computer’s file system.
 
 
 
-An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> is signaled if *pathspec* is <ClLinks styled={true} term={"wild"}><i>wild</i></ClLinks>. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if *pathspec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
 
 
 
-An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> is signaled if the *file system* cannot perform the requested operation. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if the *file system* cannot perform the requested operation. 
 
 
 

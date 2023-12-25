@@ -1,4 +1,4 @@
-*∗<ClLinks styled={true} term={"modules"}><b>*modules*</b></ClLinks>∗ Variable* 
+*∗<ClLinks  term={"modules"}><b>*modules*</b></ClLinks>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks>. 
+a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
 
 
 
@@ -14,7 +14,7 @@ a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled=
 
 
 
-<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled=
 
 
 
-The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"modules"}><b>\*modules\*</b></ClLinks> is a list of names of the modules that have been loaded into the current *Lisp image*. 
+The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"modules"}><b>\*modules\*</b></ClLinks> is a list of names of the modules that have been loaded into the current *Lisp image*. 
 
 
 
@@ -30,7 +30,7 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks sty
 
 
 
-<ClLinks styled={true} term={"provide"}><b>provide</b></ClLinks> 
+<ClLinks  term={"provide"}><b>provide</b></ClLinks> 
 
 
 
@@ -38,7 +38,7 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks sty
 
 
 
-<ClLinks styled={true} term={"provide"}><b>provide</b></ClLinks>, <ClLinks styled={true} term={"require"}><b>require</b></ClLinks> 
+<ClLinks  term={"provide"}><b>provide</b></ClLinks>, <ClLinks  term={"require"}><b>require</b></ClLinks> 
 
 
 
@@ -46,7 +46,7 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks sty
 
 
 
-The variable <ClLinks styled={true} term={"modules"}><b>\*modules\*</b></ClLinks> is deprecated. 
+The variable <ClLinks  term={"modules"}><b>\*modules\*</b></ClLinks> is deprecated. 
 
 
 

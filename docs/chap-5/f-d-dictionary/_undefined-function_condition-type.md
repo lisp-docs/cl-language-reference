@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"undefined-function"}><b>undefined-function</b></ClLinks>, <ClLinks styled={true} term={"cell-error"}><b>cell-error</b></ClLinks>, <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"serious-condition"}><b>serious-condition</b></ClLinks>, <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<ClLinks  term={"undefined-function"}><b>undefined-function</b></ClLinks>, <ClLinks  term={"cell-error"}><b>cell-error</b></ClLinks>, <ClLinks  term={"error"}><b>error</b></ClLinks>, <ClLinks  term={"serious-condition"}><b>serious-condition</b></ClLinks>, <ClLinks  term={"condition"}><b>condition</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"undefined-function"}><b>undefined-function</b></ClLinks> consists of *error conditions* that represent attempts to <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> the definition of an *undefined function*. 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"undefined-function"}><b>undefined-function</b></ClLinks> consists of *error conditions* that represent attempts to <ClLinks  term={"read"}><i>read</i></ClLinks> the definition of an *undefined function*. 
 
 
 
-The name of the cell (see <ClLinks styled={true} term={"cell-error"}><b>cell-error</b></ClLinks>) is the *function name* which was <ClLinks styled={true} term={"funbound"}><i>funbound</i></ClLinks>. 
+The name of the cell (see <ClLinks  term={"cell-error"}><b>cell-error</b></ClLinks>) is the *function name* which was <ClLinks  term={"funbound"}><i>funbound</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@ The name of the cell (see <ClLinks styled={true} term={"cell-error"}><b>cell-err
 
 
 
-<ClLinks styled={true} term={"cell-error-name"}><b>cell-error-name</b></ClLinks> 
+<ClLinks  term={"cell-error-name"}><b>cell-error-name</b></ClLinks> 
 
 
 

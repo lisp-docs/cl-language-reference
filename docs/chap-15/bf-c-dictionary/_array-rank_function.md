@@ -1,4 +1,4 @@
-**array-rank** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**array-rank** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"array-rank"}><b>array-rank</b></ClLinks> *array → rank* 
+<ClLinks  term={"array-rank"}><b>array-rank</b></ClLinks> *array → rank* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
+<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks>—a non-negative *integer* . 
+<ClLinks  term={"rank"}><i>rank</i></ClLinks>—a non-negative *integer* . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the number of <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks> of <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
+Returns the number of <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> of <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -41,7 +41,7 @@ Returns the number of <ClLinks styled={true} term={"dimension"}><i>dimensions</i
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -49,7 +49,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"array-rank-limit"}><b>array-rank-limit</b></ClLinks>, <ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks> 
+<ClLinks  term={"array-rank-limit"}><b>array-rank-limit</b></ClLinks>, <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> 
 
 
 

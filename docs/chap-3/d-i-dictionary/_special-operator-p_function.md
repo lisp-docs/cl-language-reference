@@ -1,4 +1,4 @@
-**special-operator-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**special-operator-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"special-operator-p"}><b>special-operator-p</b></ClLinks> *symbol ! generalized-boolean* 
+<ClLinks  term={"special-operator-p"}><b>special-operator-p</b></ClLinks> *symbol ! generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is a *special operator* ; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is a *special operator* ; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -40,7 +40,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 
 
-Should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -64,7 +64,7 @@ Historically, this function was called special-form-p. The name was finally decl
 
 
 
-<ClLinks styled={true} term={"constantp"}><b>constantp</b></ClLinks> 
+<ClLinks  term={"constantp"}><b>constantp</b></ClLinks> 
 
 
 

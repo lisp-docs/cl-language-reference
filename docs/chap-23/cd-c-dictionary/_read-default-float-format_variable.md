@@ -1,4 +1,4 @@
-*∗<ClLinks styled={true} term={"read-default-float-format"}><b>*read-default-float-format*</b></ClLinks>∗ Variable* 
+*∗<ClLinks  term={"read-default-float-format"}><b>*read-default-float-format*</b></ClLinks>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-one of the *atomic type specifiers* <ClLinks styled={true} term={"short-float"}><b>short-float</b></ClLinks>, <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks styled={true} term={"double-float"}><b>double-float</b></ClLinks>, or <ClLinks styled={true} term={"long-float"}><b>long-float</b></ClLinks>, or else some other *type specifier* defined by the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> to be acceptable. 
+one of the *atomic type specifiers* <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>, <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>, or <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>, or else some other *type specifier* defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be acceptable. 
 
 
 
@@ -26,7 +26,7 @@ one of the *atomic type specifiers* <ClLinks styled={true} term={"short-float"}>
 
 
 
-The <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks>. 
+The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@ Controls the floating-point format that is to be used when reading a floating-po
 
 
 
-The printer uses <ClLinks styled={true} term={"read-default-float-format"}><b>\*read-default-float-format\*</b></ClLinks> to guide the choice of *exponent markers* when printing floating-point numbers. 
+The printer uses <ClLinks  term={"read-default-float-format"}><b>\*read-default-float-format\*</b></ClLinks> to guide the choice of *exponent markers* when printing floating-point numbers. 
 
 
 
@@ -62,7 +62,7 @@ a *generalized boolean*.
 
 
 
-<ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 
+<ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 
@@ -70,7 +70,7 @@ a *generalized boolean*.
 
 
 
-If it is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the #. *reader macro* has its normal effect. Otherwise, that *reader macro* signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"reader-error"}><b>reader-error</b></ClLinks>. 
+If it is <ClLinks  term={"true"}><i>true</i></ClLinks>, the #. *reader macro* has its normal effect. Otherwise, that *reader macro* signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"reader-error"}><b>reader-error</b></ClLinks>. 
 
 
 
@@ -78,7 +78,7 @@ If it is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the #. *rea
 
 
 
-<ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> 
+<ClLinks  term={"print-readably"}><b>\*print-readably\*</b></ClLinks> 
 
 
 
@@ -86,7 +86,7 @@ If it is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the #. *rea
 
 
 
-If **\*read-eval\*** is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> and <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, any <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> for <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> that would output a reference to the #. *reader macro* either outputs something different or signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"print-not-readable"}><b>print-not-readable</b></ClLinks>. 
+If **\*read-eval\*** is <ClLinks  term={"false"}><i>false</i></ClLinks> and <ClLinks  term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks>, any <ClLinks  term={"method"}><i>method</i></ClLinks> for <ClLinks  term={"print-object"}><b>print-object</b></ClLinks> that would output a reference to the #. *reader macro* either outputs something different or signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"print-not-readable"}><b>print-not-readable</b></ClLinks>. 
 
 
 

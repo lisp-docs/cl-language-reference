@@ -1,4 +1,4 @@
-**log** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**log** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"log"}><b>log</b></ClLinks> <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> &amp;optional *base → logarithm* 
+<ClLinks  term={"log"}><b>log</b></ClLinks> <ClLinks  term={"number"}><i>number</i></ClLinks> &amp;optional *base → logarithm* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a non-zero <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
+<ClLinks  term={"number"}><i>number</i></ClLinks>—a non-zero <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 
-*base*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
+*base*—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 
-*logarithm*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
+*logarithm*—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks styled={true} term={"log"}><b>log</b></ClLinks> returns the logarithm of <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> in base *base*. If *base* is not supplied its value is *e*, the base of the natural logarithms. 
+<ClLinks  term={"log"}><b>log</b></ClLinks> returns the logarithm of <ClLinks  term={"number"}><i>number</i></ClLinks> in base *base*. If *base* is not supplied its value is *e*, the base of the natural logarithms. 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-<ClLinks styled={true} term={"log"}><b>log</b></ClLinks> 
+<ClLinks  term={"log"}><b>log</b></ClLinks> 
 
 
 
-<ClLinks styled={true} term={"log"}><b>log</b></ClLinks> may return a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> when given a *real* negative <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>. 
+<ClLinks  term={"log"}><b>log</b></ClLinks> may return a <ClLinks  term={"complex"}><i>complex</i></ClLinks> when given a *real* negative <ClLinks  term={"number"}><i>number</i></ClLinks>. 
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-If *base* is zero, <ClLinks styled={true} term={"log"}><b>log</b></ClLinks> returns zero. 
+If *base* is zero, <ClLinks  term={"log"}><b>log</b></ClLinks> returns zero. 
 
 
 
@@ -90,7 +90,7 @@ The two-argument logarithm function is defined as
 
 
 
-*≡* (/ (log <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>) (log *base*)) 
+*≡* (/ (log <ClLinks  term={"number"}><i>number</i></ClLinks>) (log *base*)) 
 
 
 
@@ -135,7 +135,7 @@ The implementation.
 
 
 
-<ClLinks styled={true} term={"exp"}><b>exp</b></ClLinks>, <ClLinks styled={true} term={"expt"}><b>expt</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability) 
+<ClLinks  term={"exp"}><b>exp</b></ClLinks>, <ClLinks  term={"expt"}><b>expt</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability) 
 
 
 

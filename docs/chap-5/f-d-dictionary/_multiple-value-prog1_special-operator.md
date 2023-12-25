@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"multiple-value-prog1"}><b>multiple-value-prog1</b></ClLinks> *first-form \{form\}*\* *! first-form-results* 
+<ClLinks  term={"multiple-value-prog1"}><b>multiple-value-prog1</b></ClLinks> *first-form \{form\}*\* *! first-form-results* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*first-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
+*first-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
 
 
 
-<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
+<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
 
 
 
-*first-form-results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> resulting from the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of *first-form*. 
+*first-form-results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of *first-form*. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks styled={true} term={"multiple-value-prog1"}><b>multiple-value-prog1</b></ClLinks> evaluates *first-form* and saves all the values produced by that <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. It then evaluates each <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> from left to right, discarding their values. 
+<ClLinks  term={"multiple-value-prog1"}><b>multiple-value-prog1</b></ClLinks> evaluates *first-form* and saves all the values produced by that <ClLinks  term={"form"}><i>form</i></ClLinks>. It then evaluates each <ClLinks  term={"form"}><i>form</i></ClLinks> from left to right, discarding their values. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-<ClLinks styled={true} term={"prog1"}><b>prog1</b></ClLinks> 
+<ClLinks  term={"prog1"}><b>prog1</b></ClLinks> 
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-<ClLinks styled={true} term={"multiple-value-setq"}><b>multiple-value-setq</b></ClLinks> 
+<ClLinks  term={"multiple-value-setq"}><b>multiple-value-setq</b></ClLinks> 
 
 
 

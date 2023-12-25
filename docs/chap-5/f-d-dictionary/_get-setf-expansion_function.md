@@ -1,4 +1,4 @@
-**get-setf-expansion** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**get-setf-expansion** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"get-setf-expansion"}><b>get-setf-expansion</b></ClLinks> <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> &amp;optional <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> 
+<ClLinks  term={"get-setf-expansion"}><b>get-setf-expansion</b></ClLinks> <ClLinks  term={"place"}><i>place</i></ClLinks> &amp;optional <ClLinks  term={"environment"}><i>environment</i></ClLinks> 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-<ClLinks styled={true} term={"place"}><i>place</i></ClLinks>—a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. 
+<ClLinks  term={"place"}><i>place</i></ClLinks>—a <ClLinks  term={"place"}><i>place</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>—an *environment object*. 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an *environment object*. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Determines five values constituting the *setf expansion* for <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> in <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>; see Section 5.1.1.2 (Setf Expansions). 
+Determines five values constituting the *setf expansion* for <ClLinks  term={"place"}><i>place</i></ClLinks> in <ClLinks  term={"environment"}><i>environment</i></ClLinks>; see Section 5.1.1.2 (Setf Expansions). 
 
 
 
@@ -50,7 +50,7 @@ Determines five values constituting the *setf expansion* for <ClLinks styled={tr
 
 
 
-If <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> is not supplied or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, the environment is the *null lexical environment*. 
+If <ClLinks  term={"environment"}><i>environment</i></ClLinks> is not supplied or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the environment is the *null lexical environment*. 
 
 **Examples:**
 ```lisp
@@ -74,7 +74,7 @@ If <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> is n
 
 
 
-<ClLinks styled={true} term={"defsetf"}><b>defsetf</b></ClLinks>, <ClLinks styled={true} term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>, <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> 
+<ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks>, <ClLinks  term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>, <ClLinks  term={"setf"}><b>setf</b></ClLinks> 
 
 
 
@@ -82,7 +82,7 @@ If <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> is n
 
 
 
-Any *compound form* is a valid <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, since any *compound form* whose *operator f* has no *setf expander* are expanded into a call to (setf *f* ). 
+Any *compound form* is a valid <ClLinks  term={"place"}><i>place</i></ClLinks>, since any *compound form* whose *operator f* has no *setf expander* are expanded into a call to (setf *f* ). 
 
 
 

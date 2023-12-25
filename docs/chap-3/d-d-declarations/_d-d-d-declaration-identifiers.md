@@ -22,7 +22,7 @@ Figure 3–9 shows a list of all *declaration identifiers* defined by this stand
 
 
 
-An implementation is free to support other (<ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>) *declaration identifiers* as well. A warning might be issued if a *declaration identifier* is not among those defined above, is not defined by the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>, is not a *type name*, and has not been declared in a <ClLinks styled={true} term={"declaration"}><b>declaration</b></ClLinks> <ClLinks styled={true} term={"proclamation"}><i>proclamation</i></ClLinks>. 
+An implementation is free to support other (<ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>) *declaration identifiers* as well. A warning might be issued if a *declaration identifier* is not among those defined above, is not defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>, is not a *type name*, and has not been declared in a <ClLinks  term={"declaration"}><b>declaration</b></ClLinks> <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks>. 
 
 
 

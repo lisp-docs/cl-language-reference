@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"tagbody"}><b>tagbody</b></ClLinks> *\{tag | statement\}*\* → <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
+<ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> *\{tag | statement\}*\* → <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>—a *go tag*; not evaluated. 
+<ClLinks  term={"tag"}><i>tag</i></ClLinks>—a *go tag*; not evaluated. 
 
 
 
@@ -26,19 +26,19 @@
 
 
 
-Executes zero or more *statements* in a *lexical environment* that provides for control transfers to labels indicated by the <ClLinks styled={true} term={"tag"}><i>tags</i></ClLinks>. 
+Executes zero or more *statements* in a *lexical environment* that provides for control transfers to labels indicated by the <ClLinks  term={"tag"}><i>tags</i></ClLinks>. 
 
 
 
-The *statements* in a <ClLinks styled={true} term={"tagbody"}><b>tagbody</b></ClLinks> are *evaluated* in order from left to right, and their <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> are discarded. If at any time there are no remaining *statements*, <ClLinks styled={true} term={"tagbody"}><b>tagbody</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. However, if (go <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>) is *evaluated*, control jumps to the part of the body labeled with the <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>. (Tags are compared with <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks>.) 
+The *statements* in a <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> are *evaluated* in order from left to right, and their <ClLinks  term={"value"}><i>values</i></ClLinks> are discarded. If at any time there are no remaining *statements*, <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. However, if (go <ClLinks  term={"tag"}><i>tag</i></ClLinks>) is *evaluated*, control jumps to the part of the body labeled with the <ClLinks  term={"tag"}><i>tag</i></ClLinks>. (Tags are compared with <ClLinks  term={"eql"}><b>eql</b></ClLinks>.) 
 
 
 
-A <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks> established by <ClLinks styled={true} term={"tagbody"}><b>tagbody</b></ClLinks> has *lexical scope* and has *dynamic extent*. Once <ClLinks styled={true} term={"tagbody"}><b>tagbody</b></ClLinks> has been exited, it is no longer valid to <ClLinks styled={true} term={"go"}><b>go</b></ClLinks> to a <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks> in its body. It is permissible for <ClLinks styled={true} term={"go"}><b>go</b></ClLinks> to jump to a <ClLinks styled={true} term={"tagbody"}><b>tagbody</b></ClLinks> that is not the innermost <ClLinks styled={true} term={"tagbody"}><b>tagbody</b></ClLinks> containing that <ClLinks styled={true} term={"go"}><b>go</b></ClLinks>; the <ClLinks styled={true} term={"tag"}><i>tags</i></ClLinks> established by a <ClLinks styled={true} term={"tagbody"}><b>tagbody</b></ClLinks> only shadow other <ClLinks styled={true} term={"tag"}><i>tags</i></ClLinks> of like name. 
+A <ClLinks  term={"tag"}><i>tag</i></ClLinks> established by <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> has *lexical scope* and has *dynamic extent*. Once <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> has been exited, it is no longer valid to <ClLinks  term={"go"}><b>go</b></ClLinks> to a <ClLinks  term={"tag"}><i>tag</i></ClLinks> in its body. It is permissible for <ClLinks  term={"go"}><b>go</b></ClLinks> to jump to a <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> that is not the innermost <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> containing that <ClLinks  term={"go"}><b>go</b></ClLinks>; the <ClLinks  term={"tag"}><i>tags</i></ClLinks> established by a <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> only shadow other <ClLinks  term={"tag"}><i>tags</i></ClLinks> of like name. 
 
 
 
-The determination of which elements of the body are <ClLinks styled={true} term={"tag"}><i>tags</i></ClLinks> and which are *statements* is made prior to any *macro expansion* of that element. If a *statement* is a *macro form* and its *macro expansion* is an <ClLinks styled={true} term={"atom"}><i>atom</i></ClLinks>, that <ClLinks styled={true} term={"atom"}><i>atom</i></ClLinks> is treated as a *statement*, not a <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>. 
+The determination of which elements of the body are <ClLinks  term={"tag"}><i>tags</i></ClLinks> and which are *statements* is made prior to any *macro expansion* of that element. If a *statement* is a *macro form* and its *macro expansion* is an <ClLinks  term={"atom"}><i>atom</i></ClLinks>, that <ClLinks  term={"atom"}><i>atom</i></ClLinks> is treated as a *statement*, not a <ClLinks  term={"tag"}><i>tag</i></ClLinks>. 
 
 
 
@@ -83,7 +83,7 @@ The determination of which elements of the body are <ClLinks styled={true} term=
 
 
 
-<ClLinks styled={true} term={"go"}><b>go</b></ClLinks> 
+<ClLinks  term={"go"}><b>go</b></ClLinks> 
 
 
 
@@ -91,7 +91,7 @@ The determination of which elements of the body are <ClLinks styled={true} term=
 
 
 
-The <ClLinks styled={true} term={"macro"}><i>macros</i></ClLinks> in Figure 5–10 have *implicit tagbodies*. 
+The <ClLinks  term={"macro"}><i>macros</i></ClLinks> in Figure 5–10 have *implicit tagbodies*. 
 
 
 

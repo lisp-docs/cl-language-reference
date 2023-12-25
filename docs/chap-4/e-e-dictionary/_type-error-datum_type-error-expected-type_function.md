@@ -1,4 +1,4 @@
-**type-error-datum, type-error-expected-type** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**type-error-datum, type-error-expected-type** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"type-error-datum"}><b>type-error-datum</b></ClLinks> *condition → datum* 
+<ClLinks  term={"type-error-datum"}><b>type-error-datum</b></ClLinks> *condition → datum* 
 
 
 
-<ClLinks styled={true} term={"type-error-expected-type"}><b>type-error-expected-type</b></ClLinks> *condition → expected-type* 
+<ClLinks  term={"type-error-expected-type"}><b>type-error-expected-type</b></ClLinks> *condition → expected-type* 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks>. 
+<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks>. 
 
 
 
-*datum*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+*datum*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<ClLinks styled={true} term={"type-error-datum"}><b>type-error-datum</b></ClLinks> returns the offending datum in the <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
+<ClLinks  term={"type-error-datum"}><b>type-error-datum</b></ClLinks> returns the offending datum in the <ClLinks  term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks  term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"type-error-expected-type"}><b>type-error-expected-type</b></ClLinks> returns the expected type of the offending datum in the <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
+<ClLinks  term={"type-error-expected-type"}><b>type-error-expected-type</b></ClLinks> returns the expected type of the offending datum in the <ClLinks  term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks  term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-<ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks>, Chapter 9 (Conditions) 
+<ClLinks  term={"type-error"}><b>type-error</b></ClLinks>, Chapter 9 (Conditions) 
 
 
 

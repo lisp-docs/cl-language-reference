@@ -1,4 +1,4 @@
-**byte, byte-size, byte-position** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**byte, byte-size, byte-position** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,15 +6,15 @@
 
 
 
-<ClLinks styled={true} term={"byte"}><b>byte</b></ClLinks> *size position → bytespec* 
+<ClLinks  term={"byte"}><b>byte</b></ClLinks> *size position → bytespec* 
 
 
 
-<ClLinks styled={true} term={"byte-size"}><b>byte-size</b></ClLinks> *bytespec → size* 
+<ClLinks  term={"byte-size"}><b>byte-size</b></ClLinks> *bytespec → size* 
 
 
 
-<ClLinks styled={true} term={"byte-position"}><b>byte-position</b></ClLinks> *bytespec → position* 
+<ClLinks  term={"byte-position"}><b>byte-position</b></ClLinks> *bytespec → position* 
 
 
 
@@ -38,11 +38,11 @@
 
 
 
-<ClLinks styled={true} term={"byte-size"}><b>byte-size</b></ClLinks> returns the number of bits specified by *bytespec*. 
+<ClLinks  term={"byte-size"}><b>byte-size</b></ClLinks> returns the number of bits specified by *bytespec*. 
 
 
 
-<ClLinks styled={true} term={"byte-position"}><b>byte-position</b></ClLinks> returns the position specified by *bytespec*. 
+<ClLinks  term={"byte-position"}><b>byte-position</b></ClLinks> returns the position specified by *bytespec*. 
 
 
 
@@ -56,7 +56,7 @@
 
 
 
-<ClLinks styled={true} term={"ldb"}><b>ldb</b></ClLinks>, <ClLinks styled={true} term={"dpb"}><b>dpb</b></ClLinks> 
+<ClLinks  term={"ldb"}><b>ldb</b></ClLinks>, <ClLinks  term={"dpb"}><b>dpb</b></ClLinks> 
 
 
 
@@ -84,7 +84,7 @@
 
 
 
-A <ClLinks styled={true} term={"byte"}><i>byte</i></ClLinks> of *size* of 0 is permissible; it refers to a <ClLinks styled={true} term={"byte"}><i>byte</i></ClLinks> of width zero. For example, 
+A <ClLinks  term={"byte"}><i>byte</i></ClLinks> of *size* of 0 is permissible; it refers to a <ClLinks  term={"byte"}><i>byte</i></ClLinks> of width zero. For example, 
 
 
 

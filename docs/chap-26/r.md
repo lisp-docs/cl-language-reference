@@ -11,27 +11,23 @@ sidebar_position: 114
 
 
 
-35, respectively. Case is not significant in parsing numbers of radix greater than 10, so “9b8a” and “9B8A” denote the same <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> 16 number.) 
+35, respectively. Case is not significant in parsing numbers of radix greater than 10, so “9b8a” and “9B8A” denote the same <ClLinks  term={"radix"}><i>radix</i></ClLinks> 16 number.) 
 
 
 
-**random state** *n.* an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"random-state"}><b>random-state</b></ClLinks>. 
+**random state** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"random-state"}><b>random-state</b></ClLinks>. 
 
 
 
-**rank** *n.* a non-negative *integer* indicating the number of <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks> of an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
+**rank** *n.* a non-negative *integer* indicating the number of <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> of an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"ratio"}><b>ratio</b></ClLinks> *n.* an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"ratio"}><b>ratio</b></ClLinks>. 
-
-
+<ClLinks  term={"ratio"}><b>ratio</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"ratio"}><b>ratio</b></ClLinks>. 
 
 
 
 
-
- 
 
 
 
@@ -39,23 +35,27 @@ sidebar_position: 114
 
 
 
-**ratio marker** *n.* a character which is used in the textual notation for a <ClLinks styled={true} term={"ratio"}><i>ratio</i></ClLinks> to separate the numerator from the denominator, and which is <ClLinks styled={true} term={"slash"}><i>slash</i></ClLinks> in the *standard readtable*. See Section 2.1 (Character Syntax). 
+ 
 
 
 
-<ClLinks styled={true} term={"rational"}><b>rational</b></ClLinks> *n.* an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"rational"}><b>rational</b></ClLinks>. 
+**ratio marker** *n.* a character which is used in the textual notation for a <ClLinks  term={"ratio"}><i>ratio</i></ClLinks> to separate the numerator from the denominator, and which is <ClLinks  term={"slash"}><i>slash</i></ClLinks> in the *standard readtable*. See Section 2.1 (Character Syntax). 
 
 
 
-<ClLinks styled={true} term={"read"}><b>read</b></ClLinks> *v.t.* 1. (a <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> or <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> or component) to obtain the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of the <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> or <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 2. (an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> from a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>) to parse an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> from its representation on the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
+<ClLinks  term={"rational"}><b>rational</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"rational"}><b>rational</b></ClLinks>. 
 
 
 
-**readably** *adv.* (of a manner of printing an *object O*<sub>1</sub>) in such a way as to permit the *Lisp Reader* to later *parse* the printed output into an *object O*<sub>2</sub> that is <ClLinks styled={true} term={"similar"}><i>similar</i></ClLinks> to *O*<sub>1</sub>. 
+<ClLinks  term={"read"}><b>read</b></ClLinks> *v.t.* 1. (a <ClLinks  term={"binding"}><i>binding</i></ClLinks> or <ClLinks  term={"slot"}><i>slot</i></ClLinks> or component) to obtain the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"binding"}><i>binding</i></ClLinks> or <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 2. (an <ClLinks  term={"object"}><i>object</i></ClLinks> from a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) to parse an <ClLinks  term={"object"}><i>object</i></ClLinks> from its representation on the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-**reader** *n.* 1. a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> that <ClLinks styled={true} term={"read"}><i>reads</i></ClLinks><sub>1</sub> a <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> or <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 2. the *Lisp reader* . 
+**readably** *adv.* (of a manner of printing an *object O*<sub>1</sub>) in such a way as to permit the *Lisp Reader* to later *parse* the printed output into an *object O*<sub>2</sub> that is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to *O*<sub>1</sub>. 
+
+
+
+**reader** *n.* 1. a <ClLinks  term={"function"}><i>function</i></ClLinks> that <ClLinks  term={"read"}><i>reads</i></ClLinks><sub>1</sub> a <ClLinks  term={"variable"}><i>variable</i></ClLinks> or <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 2. the *Lisp reader* . 
 
 
 
@@ -63,19 +63,19 @@ sidebar_position: 114
 
 
 
-<ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> that defines special-purpose syntax for use by the *Lisp reader* , and that is implemented by a *reader macro function*. See Section 2.2 (Reader Algorithm). 2. the <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> or <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> that introduce a *reader macro*<sub>1</sub>; that is, a *macro character* or the conceptual pairing of a *dispatching macro character* and the <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> that follows 
+<ClLinks  term={"character"}><i>characters</i></ClLinks> that defines special-purpose syntax for use by the *Lisp reader* , and that is implemented by a *reader macro function*. See Section 2.2 (Reader Algorithm). 2. the <ClLinks  term={"character"}><i>character</i></ClLinks> or <ClLinks  term={"character"}><i>characters</i></ClLinks> that introduce a *reader macro*<sub>1</sub>; that is, a *macro character* or the conceptual pairing of a *dispatching macro character* and the <ClLinks  term={"character"}><i>character</i></ClLinks> that follows 
 
 
 
-it. (A *reader macro* is not a kind of <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks>.) 
+it. (A *reader macro* is not a kind of <ClLinks  term={"macro"}><i>macro</i></ClLinks>.) 
 
 
 
-**reader macro function** *n.* a *function designator* that denotes a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> 
+**reader macro function** *n.* a *function designator* that denotes a <ClLinks  term={"function"}><i>function</i></ClLinks> 
 
 
 
-that implements a *reader macro*<sub>2</sub>. See the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> <ClLinks styled={true} term={"set-macro-character"}><b>set-macro-character</b></ClLinks> and 
+that implements a *reader macro*<sub>2</sub>. See the <ClLinks  term={"function"}><i>functions</i></ClLinks> <ClLinks  term={"set-macro-character"}><b>set-macro-character</b></ClLinks> and 
 
 
 
@@ -83,11 +83,11 @@ that implements a *reader macro*<sub>2</sub>. See the <ClLinks styled={true} ter
 
 
 
-<ClLinks styled={true} term={"readtable"}><b>readtable</b></ClLinks> *n.* an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"readtable"}><b>readtable</b></ClLinks>. 
+<ClLinks  term={"readtable"}><b>readtable</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"readtable"}><b>readtable</b></ClLinks>. 
 
 
 
-**readtable case** *n.* an attribute of a <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> whose value is a *case sensitivity mode*, and that selects the manner in which <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> in a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> are to be treated by the *Lisp reader* and the *Lisp printer* . See Section 23.1.2 (Effect of Readtable Case on the Lisp Reader) and Section 22.1.3.3.2 (Effect of Readtable Case on the Lisp 
+**readtable case** *n.* an attribute of a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> whose value is a *case sensitivity mode*, and that selects the manner in which <ClLinks  term={"character"}><i>characters</i></ClLinks> in a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks  term={"name"}><i>name</i></ClLinks> are to be treated by the *Lisp reader* and the *Lisp printer* . See Section 23.1.2 (Effect of Readtable Case on the Lisp Reader) and Section 22.1.3.3.2 (Effect of Readtable Case on the Lisp 
 
 
 
@@ -95,23 +95,19 @@ Printer).
 
 
 
-**readtable designator** *n.* a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>; that is, an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> and that is one of: <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> (denoting the *standard readtable*), or a <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> (denoting itself). 
+**readtable designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> and that is one of: <ClLinks  term={"nil"}><b>nil</b></ClLinks> (denoting the *standard readtable*), or a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> (denoting itself). 
 
 
 
-**recognizable subtype** *n.* (of a <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>) a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> which can be reliably detected to be such by the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. See the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"subtypep"}><b>subtypep</b></ClLinks>. 
+**recognizable subtype** *n.* (of a <ClLinks  term={"type"}><i>type</i></ClLinks>) a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> which can be reliably detected to be such by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks>. 
 
 
 
-**reference** *n.*, *v.t.* 1. *n.* an act or occurrence of referring to an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>, a <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks>, an *exit point*, a <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>, or an <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>. 2. *v.t.* to refer to an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>, a <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks>, an *exit point*, a <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>, or an <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>, usually by <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>. 
-
-
+**reference** *n.*, *v.t.* 1. *n.* an act or occurrence of referring to an <ClLinks  term={"object"}><i>object</i></ClLinks>, a <ClLinks  term={"binding"}><i>binding</i></ClLinks>, an *exit point*, a <ClLinks  term={"tag"}><i>tag</i></ClLinks>, or an <ClLinks  term={"environment"}><i>environment</i></ClLinks>. 2. *v.t.* to refer to an <ClLinks  term={"object"}><i>object</i></ClLinks>, a <ClLinks  term={"binding"}><i>binding</i></ClLinks>, an *exit point*, a <ClLinks  term={"tag"}><i>tag</i></ClLinks>, or an <ClLinks  term={"environment"}><i>environment</i></ClLinks>, usually by <ClLinks  term={"name"}><i>name</i></ClLinks>. 
 
 
 
 
-
- 
 
 
 
@@ -119,23 +115,27 @@ Printer).
 
 
 
-**registered package** *n.* a *package object* that is installed in the *package registry*. (Every *registered package* has a <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> that is a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, as well as zero or more <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> nicknames. All <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> that are initially specified by Common Lisp or created by <ClLinks styled={true} term={"make-package"}><b>make-package</b></ClLinks> or <ClLinks styled={true} term={"defpackage"}><b>defpackage</b></ClLinks> are *registered packages*. *Registered packages* can be turned into *unregistered packages* by <ClLinks styled={true} term={"delete-package"}><b>delete-package</b></ClLinks>.) 
+ 
 
 
 
-**relative** *adj.* 1. (of a <ClLinks styled={true} term={"time"}><i>time</i></ClLinks>) representing an offset from an *absolute time* in the 
+**registered package** *n.* a *package object* that is installed in the *package registry*. (Every *registered package* has a <ClLinks  term={"name"}><i>name</i></ClLinks> that is a <ClLinks  term={"string"}><i>string</i></ClLinks>, as well as zero or more <ClLinks  term={"string"}><i>string</i></ClLinks> nicknames. All <ClLinks  term={"package"}><i>packages</i></ClLinks> that are initially specified by Common Lisp or created by <ClLinks  term={"make-package"}><b>make-package</b></ClLinks> or <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> are *registered packages*. *Registered packages* can be turned into *unregistered packages* by <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks>.) 
 
 
 
-units appropriate to that time. For example, a *relative internal time* is the difference between two *absolute internal times*, and is measured in *internal time units*. 2. (of a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>) representing a position in a directory hierarchy by motion from a position other than the root, which might therefore vary. “The notation #P"../foo.text" 
+**relative** *adj.* 1. (of a <ClLinks  term={"time"}><i>time</i></ClLinks>) representing an offset from an *absolute time* in the 
 
 
 
-denotes a relative pathname if the host file system is Unix.” See <ClLinks styled={true} term={"absolute"}><i>absolute</i></ClLinks>. 
+units appropriate to that time. For example, a *relative internal time* is the difference between two *absolute internal times*, and is measured in *internal time units*. 2. (of a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>) representing a position in a directory hierarchy by motion from a position other than the root, which might therefore vary. “The notation #P"../foo.text" 
 
 
 
-**repertoire** *n.*, *ISO* a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"character"}><b>character</b></ClLinks>. See Section 13.1.2.2 (Character 
+denotes a relative pathname if the host file system is Unix.” See <ClLinks  term={"absolute"}><i>absolute</i></ClLinks>. 
+
+
+
+**repertoire** *n.*, *ISO* a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"character"}><b>character</b></ClLinks>. See Section 13.1.2.2 (Character 
 
 
 
@@ -143,7 +143,7 @@ Repertoires).
 
 
 
-**report** *n.* (of a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>) to <ClLinks styled={true} term={"call"}><i>call</i></ClLinks> the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> on the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> in an <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> where the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+**report** *n.* (of a <ClLinks  term={"condition"}><i>condition</i></ClLinks>) to <ClLinks  term={"call"}><i>call</i></ClLinks> the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"print-object"}><b>print-object</b></ClLinks> on the <ClLinks  term={"condition"}><i>condition</i></ClLinks> in an <ClLinks  term={"environment"}><i>environment</i></ClLinks> where the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -151,31 +151,31 @@ Repertoires).
 
 
 
-**required parameter** *n.* A <ClLinks styled={true} term={"parameter"}><i>parameter</i></ClLinks> for which a corresponding positional <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> must be supplied when *calling* the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
+**required parameter** *n.* A <ClLinks  term={"parameter"}><i>parameter</i></ClLinks> for which a corresponding positional <ClLinks  term={"argument"}><i>argument</i></ClLinks> must be supplied when *calling* the <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
-**rest list** *n.* (of a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> having a *rest parameter* ) The <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> to which the *rest parameter* is <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks> on some particular <ClLinks styled={true} term={"call"}><i>call</i></ClLinks> to the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
+**rest list** *n.* (of a <ClLinks  term={"function"}><i>function</i></ClLinks> having a *rest parameter* ) The <ClLinks  term={"list"}><i>list</i></ClLinks> to which the *rest parameter* is <ClLinks  term={"bound"}><i>bound</i></ClLinks> on some particular <ClLinks  term={"call"}><i>call</i></ClLinks> to the <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
-**rest parameter** *n.* A <ClLinks styled={true} term={"parameter"}><i>parameter</i></ClLinks> which was introduced by **&amp;rest**. 
+**rest parameter** *n.* A <ClLinks  term={"parameter"}><i>parameter</i></ClLinks> which was introduced by **&amp;rest**. 
 
 
 
-<ClLinks styled={true} term={"restart"}><b>restart</b></ClLinks> *n.* an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"restart"}><b>restart</b></ClLinks>. 
+<ClLinks  term={"restart"}><b>restart</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"restart"}><b>restart</b></ClLinks>. 
 
 
 
-**restart designator** *n.* a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>; that is, an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> and that is one of: a *non-nil symbol* (denoting the most recently established *active restart* whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is that <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>), or a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> (denoting itself). 
+**restart designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"restart"}><i>restart</i></ClLinks>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks  term={"restart"}><i>restart</i></ClLinks> and that is one of: a *non-nil symbol* (denoting the most recently established *active restart* whose <ClLinks  term={"name"}><i>name</i></ClLinks> is that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>), or a <ClLinks  term={"restart"}><i>restart</i></ClLinks> (denoting itself). 
 
 
 
-**restart function** *n.* a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> that invokes a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, as if by <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>. 
+**restart function** *n.* a <ClLinks  term={"function"}><i>function</i></ClLinks> that invokes a <ClLinks  term={"restart"}><i>restart</i></ClLinks>, as if by <ClLinks  term={"invoke-restart"}><b>invoke-restart</b></ClLinks>. 
 
 
 
-The primary purpose of a *restart function* is to provide an alternate interface. By convention, a *restart function* usually has the same name as the <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> which it invokes. Figure 26–4 shows a list of the *standardized restart functions*. 
+The primary purpose of a *restart function* is to provide an alternate interface. By convention, a *restart function* usually has the same name as the <ClLinks  term={"restart"}><i>restart</i></ClLinks> which it invokes. Figure 26–4 shows a list of the *standardized restart functions*. 
 
 
 
@@ -203,11 +203,11 @@ The primary purpose of a *restart function* is to provide an alternate interface
 
 
 
-<ClLinks styled={true} term={"return"}><b>return</b></ClLinks> *v.t.* (of <ClLinks styled={true} term={"value"}><i>values</i></ClLinks>) 1. (from a <ClLinks styled={true} term={"block"}><i>block</i></ClLinks>) to transfer control and <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> from the <ClLinks styled={true} term={"block"}><i>block</i></ClLinks>; that is, to cause the <ClLinks styled={true} term={"block"}><i>block</i></ClLinks> to <ClLinks styled={true} term={"yield"}><i>yield</i></ClLinks> the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> immediately without doing any further evaluation of the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in its body. 2. (from a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>) to <ClLinks styled={true} term={"yield"}><i>yield</i></ClLinks> the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks>. 
+<ClLinks  term={"return"}><b>return</b></ClLinks> *v.t.* (of <ClLinks  term={"value"}><i>values</i></ClLinks>) 1. (from a <ClLinks  term={"block"}><i>block</i></ClLinks>) to transfer control and <ClLinks  term={"value"}><i>values</i></ClLinks> from the <ClLinks  term={"block"}><i>block</i></ClLinks>; that is, to cause the <ClLinks  term={"block"}><i>block</i></ClLinks> to <ClLinks  term={"yield"}><i>yield</i></ClLinks> the <ClLinks  term={"value"}><i>values</i></ClLinks> immediately without doing any further evaluation of the <ClLinks  term={"form"}><i>forms</i></ClLinks> in its body. 2. (from a <ClLinks  term={"form"}><i>form</i></ClLinks>) to <ClLinks  term={"yield"}><i>yield</i></ClLinks> the <ClLinks  term={"value"}><i>values</i></ClLinks>. 
 
 
 
-**return value** *n. Trad.* a <ClLinks styled={true} term={"value"}><i>value</i></ClLinks><sub>1</sub> 
+**return value** *n. Trad.* a <ClLinks  term={"value"}><i>value</i></ClLinks><sub>1</sub> 
 
 
 
@@ -223,7 +223,7 @@ parenthesis” or “close parenthesis” See Figure 2–5.
 
 
 
-**run-time compiler** *n.* refers to the <ClLinks styled={true} term={"compile"}><b>compile</b></ClLinks> function or to *implicit compilation*, for which the compilation and run-time <ClLinks styled={true} term={"environment"}><i>environments</i></ClLinks> are maintained in the same *Lisp image*. 
+**run-time compiler** *n.* refers to the <ClLinks  term={"compile"}><b>compile</b></ClLinks> function or to *implicit compilation*, for which the compilation and run-time <ClLinks  term={"environment"}><i>environments</i></ClLinks> are maintained in the same *Lisp image*. 
 
 
 
@@ -231,7 +231,7 @@ parenthesis” or “close parenthesis” See Figure 2–5.
 
 
 
-**run-time environment** *n.* the <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> in which a program is *executed*. 
+**run-time environment** *n.* the <ClLinks  term={"environment"}><i>environment</i></ClLinks> in which a program is *executed*. 
 
 
 

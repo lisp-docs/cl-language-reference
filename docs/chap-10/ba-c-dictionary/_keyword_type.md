@@ -1,4 +1,4 @@
-**keyword** <ClLinks styled={true} term={"type"}><i>Type</i></ClLinks> 
+**keyword** <ClLinks  term={"type"}><i>Type</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"keyword"}><b>keyword</b></ClLinks>, <ClLinks styled={true} term={"symbol"}><b>symbol</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<ClLinks  term={"keyword"}><b>keyword</b></ClLinks>, <ClLinks  term={"symbol"}><b>symbol</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,23 +14,23 @@
 
 
 
-The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"keyword"}><b>keyword</b></ClLinks> includes all *symbols interned* the KEYWORD <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"keyword"}><b>keyword</b></ClLinks> includes all *symbols interned* the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-*Interning* a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> in the KEYWORD <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> has three automatic effects: 
+*Interning* a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks> has three automatic effects: 
 
 
 
-1\. It causes the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> to become <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks> to itself. 
+1\. It causes the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to become <ClLinks  term={"bound"}><i>bound</i></ClLinks> to itself. 
 
 
 
-2\. It causes the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> to become an *external symbol* of the KEYWORD <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
+2\. It causes the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to become an *external symbol* of the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-3\. It causes the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> to become a *constant variable*. 
+3\. It causes the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to become a *constant variable*. 
 
 
 
@@ -38,7 +38,7 @@ The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={
 
 
 
-<ClLinks styled={true} term={"keywordp"}><b>keywordp</b></ClLinks> 
+<ClLinks  term={"keywordp"}><b>keywordp</b></ClLinks> 
 
 
 

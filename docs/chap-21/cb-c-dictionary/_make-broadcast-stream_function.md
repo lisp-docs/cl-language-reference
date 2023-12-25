@@ -1,4 +1,4 @@
-**make-broadcast-stream** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**make-broadcast-stream** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"make-broadcast-stream"}><b>make-broadcast-stream</b></ClLinks> &amp;rest *streams → broadcast-stream* 
+<ClLinks  term={"make-broadcast-stream"}><b>make-broadcast-stream</b></ClLinks> &amp;rest *streams → broadcast-stream* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—an *output stream*. 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks>—an *output stream*. 
 
 
 
@@ -44,7 +44,7 @@ Returns a *broadcast stream*.
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if any <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is not an *output stream*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if any <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not an *output stream*. 
 
 
 
@@ -52,7 +52,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"broadcast-stream-streams"}><b>broadcast-stream-streams</b></ClLinks> 
+<ClLinks  term={"broadcast-stream-streams"}><b>broadcast-stream-streams</b></ClLinks> 
 
 
 

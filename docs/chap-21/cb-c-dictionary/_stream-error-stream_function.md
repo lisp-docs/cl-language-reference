@@ -1,4 +1,4 @@
-**stream-error-stream** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**stream-error-stream** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"stream-error-stream"}><b>stream-error-stream</b></ClLinks> *condition → stream* 
+<ClLinks  term={"stream-error-stream"}><b>stream-error-stream</b></ClLinks> *condition → stream* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> **stream-error**. 
+<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> **stream-error**. 
 
 
 
-<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the offending <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> of a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> **stream-error**. 
+Returns the offending <ClLinks  term={"stream"}><i>stream</i></ClLinks> of a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> **stream-error**. 
 
 
 

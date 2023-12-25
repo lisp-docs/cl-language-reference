@@ -1,4 +1,4 @@
-**package-shadowing-symbols** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**package-shadowing-symbols** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"package-shadowing-symbols"}><b>package-shadowing-symbols</b></ClLinks> *package → symbols* 
+<ClLinks  term={"package-shadowing-symbols"}><b>package-shadowing-symbols</b></ClLinks> *package → symbols* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* . 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . 
 
 
 
-<ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>. 
+<ClLinks  term={"symbol"}><i>symbols</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> that have been declared as *shadowing symbols* in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> by <ClLinks styled={true} term={"shadow"}><b>shadow</b></ClLinks> or <ClLinks styled={true} term={"shadowing-import"}><b>shadowing-import</b></ClLinks> (or the equivalent <ClLinks styled={true} term={"defpackage"}><b>defpackage</b></ClLinks> options). All <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> on this <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> are <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
+Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that have been declared as *shadowing symbols* in <ClLinks  term={"package"}><i>package</i></ClLinks> by <ClLinks  term={"shadow"}><b>shadow</b></ClLinks> or <ClLinks  term={"shadowing-import"}><b>shadowing-import</b></ClLinks> (or the equivalent <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> options). All <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> on this <ClLinks  term={"list"}><i>list</i></ClLinks> are <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -43,7 +43,7 @@ Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is not a *package designator* . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a *package designator* . 
 
 
 
@@ -51,7 +51,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"shadow"}><b>shadow</b></ClLinks>, <ClLinks styled={true} term={"shadowing-import"}><b>shadowing-import</b></ClLinks> 
+<ClLinks  term={"shadow"}><b>shadow</b></ClLinks>, <ClLinks  term={"shadowing-import"}><b>shadowing-import</b></ClLinks> 
 
 
 
@@ -59,7 +59,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-Whether the list of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> is <ClLinks styled={true} term={"fresh"}><i>fresh</i></ClLinks> is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+Whether the list of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is <ClLinks  term={"fresh"}><i>fresh</i></ClLinks> is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 

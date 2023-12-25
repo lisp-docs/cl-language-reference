@@ -1,4 +1,4 @@
-**readtablep** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**readtablep** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"readtablep"}><b>readtablep</b></ClLinks> *object → generalized-boolean* 
+<ClLinks  term={"readtablep"}><b>readtablep</b></ClLinks> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"readtable"}><b>readtable</b></ClLinks>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"readtable"}><b>readtable</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -41,7 +41,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 
 
-(readtablep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’readtable) 
+(readtablep <ClLinks  term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks  term={"object"}><i>object</i></ClLinks> ’readtable) 
 
 
 
@@ -73,7 +73,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 
 
-**set-dispatch-macro-character** *disp-char sub-char new-function* &amp;optional *readtable →* <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+**set-dispatch-macro-character** *disp-char sub-char new-function* &amp;optional *readtable →* <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -81,19 +81,19 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 
 
-*disp-char*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
+*disp-char*—a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
 
 
 
-*sub-char*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
+*sub-char*—a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
 
 
 
-<ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>—a *readtable designator* . The default is the *current readtable*. 
+<ClLinks  term={"readtable"}><i>readtable</i></ClLinks>—a *readtable designator* . The default is the *current readtable*. 
 
 
 
-<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a *function designator* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"function"}><i>function</i></ClLinks>—a *function designator* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -109,7 +109,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 
 
-**set-dispatch-macro-character** installs a *new-function* to be called when a particular *dispatching macro character* pair is read. *New-function* is installed as the dispatch function to be called when <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> is in use and when *disp-char* is followed by *sub-char*. 
+**set-dispatch-macro-character** installs a *new-function* to be called when a particular *dispatching macro character* pair is read. *New-function* is installed as the dispatch function to be called when <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is in use and when *disp-char* is followed by *sub-char*. 
 
 
 
@@ -117,11 +117,11 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 
 
 
-**get-dispatch-macro-character** retrieves the dispatch function associated with *disp-char* and *sub-char* in <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>. 
+**get-dispatch-macro-character** retrieves the dispatch function associated with *disp-char* and *sub-char* in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
 
 
 
-**get-dispatch-macro-character** returns the macro-character function for *sub-char* under *disp char*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if there is no function associated with *sub-char*. If *sub-char* is a decimal digit, **get-dispatch-macro-character** returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+**get-dispatch-macro-character** returns the macro-character function for *sub-char* under *disp char*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if there is no function associated with *sub-char*. If *sub-char* is a decimal digit, **get-dispatch-macro-character** returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -158,7 +158,7 @@ Section 2.1.4.4 (Macro Characters)
 
 
 
-The <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> is modified. 
+The <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is modified. 
 
 
 
@@ -166,7 +166,7 @@ The <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> is modi
 
 
 
-<ClLinks styled={true} term={"readtable"}><b>\*readtable\*</b></ClLinks>. 
+<ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks>. 
 
 
 
@@ -174,7 +174,7 @@ The <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> is modi
 
 
 
-For either function, an error is signaled if *disp-char* is not a *dispatching macro character* in <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>. 
+For either function, an error is signaled if *disp-char* is not a *dispatching macro character* in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
 
 
 
@@ -182,7 +182,7 @@ For either function, an error is signaled if *disp-char* is not a *dispatching m
 
 
 
-<ClLinks styled={true} term={"readtable"}><b>\*readtable\*</b></ClLinks> 
+<ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks> 
 
 
 
@@ -190,7 +190,7 @@ For either function, an error is signaled if *disp-char* is not a *dispatching m
 
 
 
-It is necessary to use <ClLinks styled={true} term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></ClLinks> to set up the dispatch character before specifying its sub-characters. 
+It is necessary to use <ClLinks  term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></ClLinks> to set up the dispatch character before specifying its sub-characters. 
 
 
 

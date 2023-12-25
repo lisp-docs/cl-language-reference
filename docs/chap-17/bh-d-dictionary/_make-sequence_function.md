@@ -1,4 +1,4 @@
-**make-sequence** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**make-sequence** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"make-sequence"}><b>make-sequence</b></ClLinks> *result-type size* &amp;key *initial-element → sequence* 
+<ClLinks  term={"make-sequence"}><b>make-sequence</b></ClLinks> *result-type size* &amp;key *initial-element → sequence* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*result-type*—a <ClLinks styled={true} term={"sequence"}><b>sequence</b></ClLinks> *type specifier* . 
+*result-type*—a <ClLinks  term={"sequence"}><b>sequence</b></ClLinks> *type specifier* . 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*initial-element*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. The default is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+*initial-element*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -34,15 +34,15 @@
 
 
 
-Returns a *sequence* of the type *result-type* and of length *size*, each of the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of which has been initialized to *initial-element*. 
+Returns a *sequence* of the type *result-type* and of length *size*, each of the <ClLinks  term={"element"}><i>elements</i></ClLinks> of which has been initialized to *initial-element*. 
 
 
 
-If the *result-type* is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>, the result will be a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"list"}><b>list</b></ClLinks>, the result will be a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
-If the *result-type* is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks>, then if the implementation can determine the element type specified for the *result-type*, the element type of the resulting array is the result of *upgrading* that element type; or, if the implementation can determine that the element type is unspecified (or \*), the element type of the resulting array is <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>; otherwise, an error is signaled. 
+If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"vector"}><b>vector</b></ClLinks>, then if the implementation can determine the element type specified for the *result-type*, the element type of the resulting array is the result of *upgrading* that element type; or, if the implementation can determine that the element type is unspecified (or \*), the element type of the resulting array is <ClLinks  term={"t"}><b>t</b></ClLinks>; otherwise, an error is signaled. 
 
 
 
@@ -61,7 +61,7 @@ If the *result-type* is a <ClLinks styled={true} term={"subtype"}><i>subtype</i>
 
 
 
-The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
+The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 
@@ -69,7 +69,7 @@ The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLink
 
 
 
-The consequences are unspecified if *initial-element* is not an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> which can be stored in the resulting *sequence*. 
+The consequences are unspecified if *initial-element* is not an <ClLinks  term={"object"}><i>object</i></ClLinks> which can be stored in the resulting *sequence*. 
 
 
 
@@ -85,11 +85,11 @@ The consequences are unspecified if *initial-element* is not an <ClLinks styled=
 
 
 
-An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> must be signaled if the *result-type* is neither a *recognizable subtype* of <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>, nor a *recognizable subtype* of <ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks>. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> must be signaled if the *result-type* is neither a *recognizable subtype* of <ClLinks  term={"list"}><b>list</b></ClLinks>, nor a *recognizable subtype* of <ClLinks  term={"vector"}><b>vector</b></ClLinks>. 
 
 
 
-An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> should be signaled if *result-type* specifies the number of elements and *size* is different from that number. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> should be signaled if *result-type* specifies the number of elements and *size* is different from that number. 
 
 
 
@@ -97,7 +97,7 @@ An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks 
 
 
 
-<ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks styled={true} term={"make-list"}><b>make-list</b></ClLinks> 
+<ClLinks  term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks  term={"make-list"}><b>make-list</b></ClLinks> 
 
 
 

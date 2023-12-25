@@ -1,4 +1,4 @@
-**not** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**not** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"not"}><b>not</b></ClLinks> *x → boolean* 
+<ClLinks  term={"not"}><b>not</b></ClLinks> *x → boolean* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*x*—a *generalized boolean* (*i.e.*, any <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>). 
+*x*—a *generalized boolean* (*i.e.*, any <ClLinks  term={"object"}><i>object</i></ClLinks>). 
 
 
 
-<ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks>—a <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks>. 
+<ClLinks  term={"boolean"}><i>boolean</i></ClLinks>—a <ClLinks  term={"boolean"}><i>boolean</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> if *x* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>; otherwise, returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+Returns <ClLinks  term={"t"}><b>t</b></ClLinks> if *x* is <ClLinks  term={"false"}><i>false</i></ClLinks>; otherwise, returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -43,7 +43,7 @@ Returns <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> if *x* is <ClLinks 
 
 
 
-<ClLinks styled={true} term={"null"}><b>null</b></ClLinks> 
+<ClLinks  term={"null"}><b>null</b></ClLinks> 
 
 
 
@@ -51,7 +51,7 @@ Returns <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> if *x* is <ClLinks 
 
 
 
-<ClLinks styled={true} term={"not"}><b>not</b></ClLinks> is intended to be used to invert the ‘truth value’ of a <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks> (or *generalized boolean*) whereas <ClLinks styled={true} term={"null"}><b>null</b></ClLinks> is intended to be used to test for the *empty list*. Operationally, <ClLinks styled={true} term={"not"}><b>not</b></ClLinks> and <ClLinks styled={true} term={"null"}><b>null</b></ClLinks> compute the same result; which to use is a matter of style. 
+<ClLinks  term={"not"}><b>not</b></ClLinks> is intended to be used to invert the ‘truth value’ of a <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> (or *generalized boolean*) whereas <ClLinks  term={"null"}><b>null</b></ClLinks> is intended to be used to test for the *empty list*. Operationally, <ClLinks  term={"not"}><b>not</b></ClLinks> and <ClLinks  term={"null"}><b>null</b></ClLinks> compute the same result; which to use is a matter of style. 
 
 
 

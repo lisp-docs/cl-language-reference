@@ -2,7 +2,7 @@
 
 
 
-The *compound type specifier* form of the numeric *type specifiers* permit the user to specify an interval on the real number line which describe a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> which would be described by the corresponding *atomic type specifier* . A <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of some *type T* is specified using an ordered pair of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> called *interval designators* for *type T*. 
+The *compound type specifier* form of the numeric *type specifiers* permit the user to specify an interval on the real number line which describe a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> which would be described by the corresponding *atomic type specifier* . A <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of some *type T* is specified using an ordered pair of <ClLinks  term={"object"}><i>objects</i></ClLinks> called *interval designators* for *type T*. 
 
 
 
@@ -26,15 +26,15 @@ a number *N* of *type T*
 
 
 
-This denotes a lower inclusive bound of *N*. That is, <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"t"}><i>T</i></ClLinks> will be greater than or equal to *N*. 
+This denotes a lower inclusive bound of *N*. That is, <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"t"}><i>T</i></ClLinks> will be greater than or equal to *N*. 
 
 
 
-a *singleton list* whose <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> is a number *M* of *type T* 
+a *singleton list* whose <ClLinks  term={"element"}><i>element</i></ClLinks> is a number *M* of *type T* 
 
 
 
-This denotes a lower exclusive bound of *M*. That is, <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"t"}><i>T</i></ClLinks> will be greater than *M*. 
+This denotes a lower exclusive bound of *M*. That is, <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"t"}><i>T</i></ClLinks> will be greater than *M*. 
 
 
 
@@ -54,15 +54,15 @@ a number *N* of *type T*
 
 
 
-This denotes an upper inclusive bound of *N*. That is, <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"t"}><i>T</i></ClLinks> will be less than or equal to *N*. 
+This denotes an upper inclusive bound of *N*. That is, <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"t"}><i>T</i></ClLinks> will be less than or equal to *N*. 
 
 
 
-a *singleton list* whose <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> is a number *M* of *type T* 
+a *singleton list* whose <ClLinks  term={"element"}><i>element</i></ClLinks> is a number *M* of *type T* 
 
 
 
-This denotes an upper exclusive bound of *M*. That is, <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"t"}><i>T</i></ClLinks> will be less than *M*. 
+This denotes an upper exclusive bound of *M*. That is, <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"t"}><i>T</i></ClLinks> will be less than *M*. 
 
 
 

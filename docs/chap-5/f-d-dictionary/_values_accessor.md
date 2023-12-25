@@ -1,4 +1,4 @@
-**values** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
+**values** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"values"}><b>values</b></ClLinks> &amp;rest *object ! \{object\}*\* 
+<ClLinks  term={"values"}><b>values</b></ClLinks> &amp;rest *object ! \{object\}*\* 
 
 
 
-**(setf (values** &amp;rest <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>**)** *new-values***)** 
+**(setf (values** &amp;rest <ClLinks  term={"place"}><i>place</i></ClLinks>**)** *new-values***)** 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"place"}><i>place</i></ClLinks>—a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. 
+<ClLinks  term={"place"}><i>place</i></ClLinks>—a <ClLinks  term={"place"}><i>place</i></ClLinks>. 
 
 
 
-*new-value*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+*new-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<ClLinks styled={true} term={"values"}><b>values</b></ClLinks> returns the <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> as *multiple values*<sub>2</sub>. 
+<ClLinks  term={"values"}><b>values</b></ClLinks> returns the <ClLinks  term={"object"}><i>objects</i></ClLinks> as *multiple values*<sub>2</sub>. 
 
 
 
-<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"values"}><b>values</b></ClLinks> is used to store the *multiple values*<sub>2</sub> *new-values* into the <ClLinks styled={true} term={"place"}><i>places</i></ClLinks>. See Section 5.1.2.3 (VALUES Forms as Places). 
+<ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"values"}><b>values</b></ClLinks> is used to store the *multiple values*<sub>2</sub> *new-values* into the <ClLinks  term={"place"}><i>places</i></ClLinks>. See Section 5.1.2.3 (VALUES Forms as Places). 
 
 
 
@@ -67,7 +67,7 @@ This works because **values** returns exactly one value for each of *args*; as f
 
 
 
-<ClLinks styled={true} term={"values-list"}><b>values-list</b></ClLinks>, <ClLinks styled={true} term={"multiple-value-bind"}><b>multiple-value-bind</b></ClLinks>, <ClLinks styled={true} term={"multiple-values-limit"}><b>multiple-values-limit</b></ClLinks>, Section 3.1 (Evaluation) 
+<ClLinks  term={"values-list"}><b>values-list</b></ClLinks>, <ClLinks  term={"multiple-value-bind"}><b>multiple-value-bind</b></ClLinks>, <ClLinks  term={"multiple-values-limit"}><b>multiple-values-limit</b></ClLinks>, Section 3.1 (Evaluation) 
 
 
 
@@ -75,7 +75,7 @@ This works because **values** returns exactly one value for each of *args*; as f
 
 
 
-Since <ClLinks styled={true} term={"values"}><b>values</b></ClLinks> is a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, not a <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> or *special form*, it receives as <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> only the *primary values* of its *argument forms*. 
+Since <ClLinks  term={"values"}><b>values</b></ClLinks> is a <ClLinks  term={"function"}><i>function</i></ClLinks>, not a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or *special form*, it receives as <ClLinks  term={"argument"}><i>arguments</i></ClLinks> only the *primary values* of its *argument forms*. 
 
 
 

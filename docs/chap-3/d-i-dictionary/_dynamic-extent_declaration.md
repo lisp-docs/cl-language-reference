@@ -1,4 +1,4 @@
-**dynamic-extent** <ClLinks styled={true} term={"declaration"}><i>Declaration</i></ClLinks> 
+**dynamic-extent** <ClLinks  term={"declaration"}><i>Declaration</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-(dynamic-extent [[ *\{var\}*\* | (<ClLinks styled={true} term={"function"}><b>function</b></ClLinks> *fn*)\* ]]) 
+(dynamic-extent [[ *\{var\}*\* | (<ClLinks  term={"function"}><b>function</b></ClLinks> *fn*)\* ]]) 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks> 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks> 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>, <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> 
+<ClLinks  term={"variable"}><i>variable</i></ClLinks>, <ClLinks  term={"function"}><i>function</i></ClLinks> 
 
 
 
@@ -58,19 +58,19 @@ Evaluation and
 
 
 
-<ClLinks styled={true} term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> 
+<ClLinks  term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> 
 
 
 
-The compiler is permitted to use this information in any way that is appropriate to the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> and that does not conflict with the semantics of Common Lisp. 
+The compiler is permitted to use this information in any way that is appropriate to the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> and that does not conflict with the semantics of Common Lisp. 
 
 
 
-<ClLinks styled={true} term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> declarations can be *free declarations* or *bound declarations*. 
+<ClLinks  term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> declarations can be *free declarations* or *bound declarations*. 
 
 
 
-The *vars* and *fns* named in a <ClLinks styled={true} term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> declaration must not refer to *symbol macro* or <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> bindings. 
+The *vars* and *fns* named in a <ClLinks  term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> declaration must not refer to *symbol macro* or <ClLinks  term={"macro"}><i>macro</i></ClLinks> bindings. 
 
 
 
@@ -168,7 +168,7 @@ The following are in error, since the value of x is used outside of its *extent*
 
 
 
-<ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> 
+<ClLinks  term={"declare"}><b>declare</b></ClLinks> 
 
 
 
@@ -176,7 +176,7 @@ The following are in error, since the value of x is used outside of its *extent*
 
 
 
-The most common optimization is to *stack allocate* the initial value of the <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> named by the *vars*. 
+The most common optimization is to *stack allocate* the initial value of the <ClLinks  term={"object"}><i>objects</i></ClLinks> named by the *vars*. 
 
 
 
@@ -196,7 +196,7 @@ It is permissible for an implementation to simply ignore this declaration.
 
 
 
-<ClLinks styled={true} term={"type"}><b>type</b></ClLinks> 
+<ClLinks  term={"type"}><b>type</b></ClLinks> 
 
 
 

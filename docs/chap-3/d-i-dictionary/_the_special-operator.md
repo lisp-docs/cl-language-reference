@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"the"}><b>the</b></ClLinks> *value-type form ! \{result\}*\* 
+<ClLinks  term={"the"}><b>the</b></ClLinks> *value-type form ! \{result\}*\* 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated. 
+<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated. 
 
 
 
-*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> resulting from the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. These <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> must conform to the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> supplied by *value-type*; see below. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks  term={"form"}><i>form</i></ClLinks>. These <ClLinks  term={"value"}><i>values</i></ClLinks> must conform to the <ClLinks  term={"type"}><i>type</i></ClLinks> supplied by *value-type*; see below. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-It is permissible for <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> to <ClLinks styled={true} term={"yield"}><i>yield</i></ClLinks> a di↵erent number of <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> than are specified by *value-type*, provided that the values for which <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> are declared are indeed of those <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>. Missing values are treated as <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> for the purposes of checking their <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>. 
+It is permissible for <ClLinks  term={"form"}><i>form</i></ClLinks> to <ClLinks  term={"yield"}><i>yield</i></ClLinks> a di↵erent number of <ClLinks  term={"value"}><i>values</i></ClLinks> than are specified by *value-type*, provided that the values for which <ClLinks  term={"type"}><i>types</i></ClLinks> are declared are indeed of those <ClLinks  term={"type"}><i>types</i></ClLinks>. Missing values are treated as <ClLinks  term={"nil"}><b>nil</b></ClLinks> for the purposes of checking their <ClLinks  term={"type"}><i>types</i></ClLinks>. 
 
 
 
-Regardless of number of <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> declared by *value-type*, the number of <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"the"}><b>the</b></ClLinks> *special form* is the same as the number of <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+Regardless of number of <ClLinks  term={"value"}><i>values</i></ClLinks> declared by *value-type*, the number of <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"the"}><b>the</b></ClLinks> *special form* is the same as the number of <ClLinks  term={"value"}><i>values</i></ClLinks> returned by <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -67,7 +67,7 @@ Evaluation and
 
 
 
-The consequences are undefined if the *values yielded* by the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> are not of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> specified by *value-type*. 
+The consequences are undefined if the *values yielded* by the <ClLinks  term={"form"}><i>form</i></ClLinks> are not of the <ClLinks  term={"type"}><i>type</i></ClLinks> specified by *value-type*. 
 
 
 
@@ -75,7 +75,7 @@ The consequences are undefined if the *values yielded* by the <ClLinks styled={t
 
 
 
-<ClLinks styled={true} term={"values"}><b>values</b></ClLinks> 
+<ClLinks  term={"values"}><b>values</b></ClLinks> 
 
 
 
@@ -83,7 +83,7 @@ The consequences are undefined if the *values yielded* by the <ClLinks styled={t
 
 
 
-The <ClLinks styled={true} term={"values"}><b>values</b></ClLinks> *type specifier* can be used to indicate the types of *multiple values*: 
+The <ClLinks  term={"values"}><b>values</b></ClLinks> *type specifier* can be used to indicate the types of *multiple values*: 
 
 
 
@@ -99,7 +99,7 @@ The <ClLinks styled={true} term={"values"}><b>values</b></ClLinks> *type specifi
 
 
 
-<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> can be used with <ClLinks styled={true} term={"the"}><b>the</b></ClLinks> type declarations. In this case the declaration is transferred to the form that specifies the new value. The resulting <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is then analyzed. 
+<ClLinks  term={"setf"}><b>setf</b></ClLinks> can be used with <ClLinks  term={"the"}><b>the</b></ClLinks> type declarations. In this case the declaration is transferred to the form that specifies the new value. The resulting <ClLinks  term={"setf"}><b>setf</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is then analyzed. 
 
 
 

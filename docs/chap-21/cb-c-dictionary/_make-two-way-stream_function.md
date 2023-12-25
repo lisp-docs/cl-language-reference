@@ -1,4 +1,4 @@
-**make-two-way-stream** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**make-two-way-stream** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"make-two-way-stream"}><b>make-two-way-stream</b></ClLinks> *input-stream output-stream → two-way-stream* 
+<ClLinks  term={"make-two-way-stream"}><b>make-two-way-stream</b></ClLinks> *input-stream output-stream → two-way-stream* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*input-stream*—a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
+*input-stream*—a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-*output-stream*—a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
+*output-stream*—a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -47,7 +47,7 @@ what-is-read → INPUT...
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *input-stream* is not an *input stream*. Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *output-stream* is not an *output stream*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *input-stream* is not an *input stream*. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *output-stream* is not an *output stream*. 
 
 
 
@@ -99,7 +99,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-**two-way-stream-input-stream** returns the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> from which *two-way-stream* receives input. **two-way-stream-output-stream** returns the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> to which *two-way-stream* sends output. 
+**two-way-stream-input-stream** returns the <ClLinks  term={"stream"}><i>stream</i></ClLinks> from which *two-way-stream* receives input. **two-way-stream-output-stream** returns the <ClLinks  term={"stream"}><i>stream</i></ClLinks> to which *two-way-stream* sends output. 
 
 
 

@@ -1,4 +1,4 @@
-**complex** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**complex** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"complex"}><b>complex</b></ClLinks> *realpart* &amp;optional *imagpart → complex* 
+<ClLinks  term={"complex"}><b>complex</b></ClLinks> *realpart* &amp;optional *imagpart → complex* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks>—a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> or a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> . 
+<ClLinks  term={"complex"}><i>complex</i></ClLinks>—a <ClLinks  term={"rational"}><i>rational</i></ClLinks> or a <ClLinks  term={"complex"}><i>complex</i></ClLinks> . 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-<ClLinks styled={true} term={"complex"}><b>complex</b></ClLinks> returns a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> whose real part is *realpart* and whose imaginary part is *imagpart*. 
+<ClLinks  term={"complex"}><b>complex</b></ClLinks> returns a <ClLinks  term={"number"}><i>number</i></ClLinks> whose real part is *realpart* and whose imaginary part is *imagpart*. 
 
 
 
-If *realpart* is a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> and *imagpart* is the <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> number zero, the result of <ClLinks styled={true} term={"complex"}><b>complex</b></ClLinks> is *realpart*, a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks>. Otherwise, the result is a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> . 
+If *realpart* is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> and *imagpart* is the <ClLinks  term={"rational"}><i>rational</i></ClLinks> number zero, the result of <ClLinks  term={"complex"}><b>complex</b></ClLinks> is *realpart*, a <ClLinks  term={"rational"}><i>rational</i></ClLinks>. Otherwise, the result is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> . 
 
 
 
-If either *realpart* or *imagpart* is a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>, the non-<ClLinks styled={true} term={"float"}><i>float</i></ClLinks> is converted to a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> before the <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> is created. If *imagpart* is not supplied, the imaginary part is a zero of the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> as *realpart*; *i.e.*, (coerce 0 (type-of *realpart*)) is effectively used. 
+If either *realpart* or *imagpart* is a <ClLinks  term={"float"}><i>float</i></ClLinks>, the non-<ClLinks  term={"float"}><i>float</i></ClLinks> is converted to a <ClLinks  term={"float"}><i>float</i></ClLinks> before the <ClLinks  term={"complex"}><i>complex</i></ClLinks> is created. If *imagpart* is not supplied, the imaginary part is a zero of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *realpart*; *i.e.*, (coerce 0 (type-of *realpart*)) is effectively used. 
 
 
 
@@ -58,7 +58,7 @@ Type upgrading implies a movement upwards in the type hierarchy lattice. In the 
 
 
 
-<ClLinks styled={true} term={"realpart"}><b>realpart</b></ClLinks>, <ClLinks styled={true} term={"imagpart"}><b>imagpart</b></ClLinks>, Section 2.4.8.11 (Sharpsign C) 
+<ClLinks  term={"realpart"}><b>realpart</b></ClLinks>, <ClLinks  term={"imagpart"}><b>imagpart</b></ClLinks>, Section 2.4.8.11 (Sharpsign C) 
 
 
 

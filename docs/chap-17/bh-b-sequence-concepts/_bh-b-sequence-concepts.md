@@ -2,15 +2,15 @@
 
 
 
-A *sequence* is an ordered collection of <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks>, implemented as either a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> or a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+A *sequence* is an ordered collection of <ClLinks  term={"element"}><i>elements</i></ClLinks>, implemented as either a <ClLinks  term={"vector"}><i>vector</i></ClLinks> or a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
-*Sequences* can be created by the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"make-sequence"}><b>make-sequence</b></ClLinks>, as well as other <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> that create <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> that are <ClLinks styled={true} term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks styled={true} term={"sequence"}><b>sequence</b></ClLinks> (*e.g.*, <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>, <ClLinks styled={true} term={"make-list"}><b>make-list</b></ClLinks>, <ClLinks styled={true} term={"mapcar"}><b>mapcar</b></ClLinks>, and <ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks>). 
+*Sequences* can be created by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"make-sequence"}><b>make-sequence</b></ClLinks>, as well as other <ClLinks  term={"function"}><i>functions</i></ClLinks> that create <ClLinks  term={"object"}><i>objects</i></ClLinks> of <ClLinks  term={"type"}><i>types</i></ClLinks> that are <ClLinks  term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks  term={"sequence"}><b>sequence</b></ClLinks> (*e.g.*, <ClLinks  term={"list"}><b>list</b></ClLinks>, <ClLinks  term={"make-list"}><b>make-list</b></ClLinks>, <ClLinks  term={"mapcar"}><b>mapcar</b></ClLinks>, and <ClLinks  term={"vector"}><b>vector</b></ClLinks>). 
 
 
 
-A *sequence function* is a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> defined by this specification or added as an extension by the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> that operates on one or more *sequences*. Whenever a *sequence function* must construct and return a new <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> , it always returns a *simple vector* . Similarly, any <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks> constructed will be *simple strings*. 
+A *sequence function* is a <ClLinks  term={"function"}><i>function</i></ClLinks> defined by this specification or added as an extension by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> that operates on one or more *sequences*. Whenever a *sequence function* must construct and return a new <ClLinks  term={"vector"}><i>vector</i></ClLinks> , it always returns a *simple vector* . Similarly, any <ClLinks  term={"string"}><i>strings</i></ClLinks> constructed will be *simple strings*. 
 
 
 

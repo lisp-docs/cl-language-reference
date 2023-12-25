@@ -1,4 +1,4 @@
-**file-author** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**file-author** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"file-author"}><b>file-author</b></ClLinks> *pathspec → author* 
+<ClLinks  term={"file-author"}><b>file-author</b></ClLinks> *pathspec → author* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*author*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*author*—a <ClLinks  term={"string"}><i>string</i></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Returns a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> naming the author of the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> specified by *pathspec*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if the author’s name cannot be determined. 
+Returns a <ClLinks  term={"string"}><i>string</i></ClLinks> naming the author of the <ClLinks  term={"file"}><i>file</i></ClLinks> specified by *pathspec*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if the author’s name cannot be determined. 
 
 
 
@@ -56,7 +56,7 @@ The host computer’s file system.
 
 
 
-Other users of the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> named by *pathspec*. 
+Other users of the <ClLinks  term={"file"}><i>file</i></ClLinks> named by *pathspec*. 
 
 
 
@@ -64,11 +64,11 @@ Other users of the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> na
 
 
 
-An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> is signaled if *pathspec* is <ClLinks styled={true} term={"wild"}><i>wild</i></ClLinks>. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if *pathspec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
 
 
 
-An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> is signaled if the *file system* cannot perform the requested operation. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if the *file system* cannot perform the requested operation. 
 
 
 
@@ -76,7 +76,7 @@ An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks 
 
 
 
-<ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks styled={true} term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 

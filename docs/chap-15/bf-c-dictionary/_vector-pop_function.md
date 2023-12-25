@@ -1,4 +1,4 @@
-**vector-pop** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**vector-pop** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"vector-pop"}><b>vector-pop</b></ClLinks> *vector → element* 
+<ClLinks  term={"vector-pop"}><b>vector-pop</b></ClLinks> *vector → element* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>—a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* . 
+<ClLinks  term={"vector"}><i>vector</i></ClLinks>—a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* . 
 
 
 
-<ClLinks styled={true} term={"element"}><i>element</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks  term={"element"}><i>element</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Decreases the *fill pointer* of <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> by one, and retrieves the <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> of <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> that is designated by the new *fill pointer* . 
+Decreases the *fill pointer* of <ClLinks  term={"vector"}><i>vector</i></ClLinks> by one, and retrieves the <ClLinks  term={"element"}><i>element</i></ClLinks> of <ClLinks  term={"vector"}><i>vector</i></ClLinks> that is designated by the new *fill pointer* . 
 
 
 
@@ -73,11 +73,11 @@ The value of the *fill pointer* .
 
 
 
-An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> is signaled if <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> does not have a *fill pointer* . 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled if <ClLinks  term={"vector"}><i>vector</i></ClLinks> does not have a *fill pointer* . 
 
 
 
-If the *fill pointer* is zero, <ClLinks styled={true} term={"vector-pop"}><b>vector-pop</b></ClLinks> signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>. 
+If the *fill pointer* is zero, <ClLinks  term={"vector-pop"}><b>vector-pop</b></ClLinks> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks>. 
 
 
 
@@ -85,7 +85,7 @@ If the *fill pointer* is zero, <ClLinks styled={true} term={"vector-pop"}><b>vec
 
 
 
-<ClLinks styled={true} term={"vector-push"}><b>vector-push</b></ClLinks>, <ClLinks styled={true} term={"vector-push-extend"}><b>vector-push-extend</b></ClLinks>, <ClLinks styled={true} term={"fill-pointer"}><b>fill-pointer</b></ClLinks> 
+<ClLinks  term={"vector-push"}><b>vector-push</b></ClLinks>, <ClLinks  term={"vector-push-extend"}><b>vector-push-extend</b></ClLinks>, <ClLinks  term={"fill-pointer"}><b>fill-pointer</b></ClLinks> 
 
 
 

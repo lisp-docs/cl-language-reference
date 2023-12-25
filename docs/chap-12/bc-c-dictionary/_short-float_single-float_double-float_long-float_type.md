@@ -1,4 +1,4 @@
-**short-float, single-float, double-float, long-float** <ClLinks styled={true} term={"type"}><i>Type</i></ClLinks> 
+**short-float, single-float, double-float, long-float** <ClLinks  term={"type"}><i>Type</i></ClLinks> 
 
 
 
@@ -6,19 +6,19 @@
 
 
 
-<ClLinks styled={true} term={"short-float"}><b>short-float</b></ClLinks>: <ClLinks styled={true} term={"short-float"}><b>short-float</b></ClLinks>, <ClLinks styled={true} term={"float"}><b>float</b></ClLinks>, <ClLinks styled={true} term={"real"}><b>real</b></ClLinks>, <ClLinks styled={true} term={"number"}><b>number</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<ClLinks  term={"short-float"}><b>short-float</b></ClLinks>: <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>, <ClLinks  term={"float"}><b>float</b></ClLinks>, <ClLinks  term={"real"}><b>real</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
-<ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks>: <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks styled={true} term={"float"}><b>float</b></ClLinks>, <ClLinks styled={true} term={"real"}><b>real</b></ClLinks>, <ClLinks styled={true} term={"number"}><b>number</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<ClLinks  term={"single-float"}><b>single-float</b></ClLinks>: <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks  term={"float"}><b>float</b></ClLinks>, <ClLinks  term={"real"}><b>real</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
-<ClLinks styled={true} term={"double-float"}><b>double-float</b></ClLinks>: <ClLinks styled={true} term={"double-float"}><b>double-float</b></ClLinks>, <ClLinks styled={true} term={"float"}><b>float</b></ClLinks>, <ClLinks styled={true} term={"real"}><b>real</b></ClLinks>, <ClLinks styled={true} term={"number"}><b>number</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<ClLinks  term={"double-float"}><b>double-float</b></ClLinks>: <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>, <ClLinks  term={"float"}><b>float</b></ClLinks>, <ClLinks  term={"real"}><b>real</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
-<ClLinks styled={true} term={"long-float"}><b>long-float</b></ClLinks>: <ClLinks styled={true} term={"long-float"}><b>long-float</b></ClLinks>, <ClLinks styled={true} term={"float"}><b>float</b></ClLinks>, <ClLinks styled={true} term={"real"}><b>real</b></ClLinks>, <ClLinks styled={true} term={"number"}><b>number</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<ClLinks  term={"long-float"}><b>long-float</b></ClLinks>: <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>, <ClLinks  term={"float"}><b>float</b></ClLinks>, <ClLinks  term={"real"}><b>real</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-For the four defined <ClLinks styled={true} term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"float"}><b>float</b></ClLinks>, it is true that intermediate between the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"short-float"}><b>short-float</b></ClLinks> and the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"long-float"}><b>long-float</b></ClLinks> are the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks> and the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"double-float"}><b>double-float</b></ClLinks>. The precise definition of these categories is <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. The precision (measured in “bits”, computed as *p* log<sub>2</sub>*b*) and the exponent size (also measured in “bits,” computed as log<sub>2</sub>(*n* + 1), where *n* is the maximum exponent value) is recommended to be at least as great as the values in Figure 12–12. Each of the defined <ClLinks styled={true} term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"float"}><b>float</b></ClLinks> might or might not have a minus zero. 
+For the four defined <ClLinks  term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"float"}><b>float</b></ClLinks>, it is true that intermediate between the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"short-float"}><b>short-float</b></ClLinks> and the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"long-float"}><b>long-float</b></ClLinks> are the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks> and the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>. The precise definition of these categories is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. The precision (measured in “bits”, computed as *p* log<sub>2</sub>*b*) and the exponent size (also measured in “bits,” computed as log<sub>2</sub>(*n* + 1), where *n* is the maximum exponent value) is recommended to be at least as great as the values in Figure 12–12. Each of the defined <ClLinks  term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"float"}><b>float</b></ClLinks> might or might not have a minus zero. 
 
 
 
@@ -44,11 +44,11 @@ For the four defined <ClLinks styled={true} term={"subtype"}><i>subtypes</i></Cl
 
 
 
-There can be fewer than four internal representations for <ClLinks styled={true} term={"float"}><i>floats</i></ClLinks>. If there are fewer distinct representations, the following rules apply: 
+There can be fewer than four internal representations for <ClLinks  term={"float"}><i>floats</i></ClLinks>. If there are fewer distinct representations, the following rules apply: 
 
 
 
-– If there is only one, it is the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks>. In this representation, an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is simultaneously of <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks styled={true} term={"double-float"}><b>double-float</b></ClLinks>, <ClLinks styled={true} term={"short-float"}><b>short-float</b></ClLinks>, and <ClLinks styled={true} term={"long-float"}><b>long-float</b></ClLinks>. 
+– If there is only one, it is the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>. In this representation, an <ClLinks  term={"object"}><i>object</i></ClLinks> is simultaneously of <ClLinks  term={"type"}><i>types</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>, <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>, and <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>. 
 
 
 
@@ -68,11 +68,11 @@ There can be fewer than four internal representations for <ClLinks styled={true}
 
 
 
-*•* Two <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> are provided: <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks> and <ClLinks styled={true} term={"short-float"}><b>short-float</b></ClLinks>. An <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is simultaneously of <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks styled={true} term={"double-float"}><b>double-float</b></ClLinks>, and <ClLinks styled={true} term={"long-float"}><b>long-float</b></ClLinks>. 
+*•* Two <ClLinks  term={"type"}><i>types</i></ClLinks> are provided: <ClLinks  term={"single-float"}><b>single-float</b></ClLinks> and <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>. An <ClLinks  term={"object"}><i>object</i></ClLinks> is simultaneously of <ClLinks  term={"type"}><i>types</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>, and <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>. 
 
 
 
-*•* Two <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> are provided: <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks> and <ClLinks styled={true} term={"double-float"}><b>double-float</b></ClLinks>. An <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is simultaneously of <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks> and <ClLinks styled={true} term={"short-float"}><b>short-float</b></ClLinks>, or <ClLinks styled={true} term={"double-float"}><b>double-float</b></ClLinks> and <ClLinks styled={true} term={"long-float"}><b>long-float</b></ClLinks>. 
+*•* Two <ClLinks  term={"type"}><i>types</i></ClLinks> are provided: <ClLinks  term={"single-float"}><b>single-float</b></ClLinks> and <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>. An <ClLinks  term={"object"}><i>object</i></ClLinks> is simultaneously of <ClLinks  term={"type"}><i>types</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks> and <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>, or <ClLinks  term={"double-float"}><b>double-float</b></ClLinks> and <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>. 
 
 
 
@@ -80,11 +80,11 @@ There can be fewer than four internal representations for <ClLinks styled={true}
 
 
 
-*•* Three <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> are provided: <ClLinks styled={true} term={"short-float"}><b>short-float</b></ClLinks>, <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks>, and <ClLinks styled={true} term={"double-float"}><b>double-float</b></ClLinks>. An <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> can simultaneously be of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"double-float"}><b>double-float</b></ClLinks> and <ClLinks styled={true} term={"long-float"}><b>long-float</b></ClLinks>. 
+*•* Three <ClLinks  term={"type"}><i>types</i></ClLinks> are provided: <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>, <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, and <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>. An <ClLinks  term={"object"}><i>object</i></ClLinks> can simultaneously be of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"double-float"}><b>double-float</b></ClLinks> and <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>. 
 
 
 
-*•* Three <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> are provided: <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks styled={true} term={"double-float"}><b>double-float</b></ClLinks>, and <ClLinks styled={true} term={"long-float"}><b>long-float</b></ClLinks>. An <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> can simultaneously be of <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks> and <ClLinks styled={true} term={"short-float"}><b>short-float</b></ClLinks>. 
+*•* Three <ClLinks  term={"type"}><i>types</i></ClLinks> are provided: <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>, and <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>. An <ClLinks  term={"object"}><i>object</i></ClLinks> can simultaneously be of <ClLinks  term={"type"}><i>types</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks> and <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>. 
 
 
 
@@ -120,19 +120,19 @@ Abbreviating.
 
 
 
-*short-lower-limit*, *short-upper-limit*—*interval designators* for <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"short-float"}><b>short-float</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*short-lower-limit*, *short-upper-limit*—*interval designators* for <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 
-*single-lower-limit*, *single-upper-limit*—*interval designators* for <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"single-float"}><b>single-float</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*single-lower-limit*, *single-upper-limit*—*interval designators* for <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 
-*double-lower-limit*, *double-upper-limit*—*interval designators* for <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"double-float"}><b>double-float</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*double-lower-limit*, *double-upper-limit*—*interval designators* for <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 
-*long-lower-limit*, *long-upper-limit*—*interval designators* for <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"long-float"}><b>long-float</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*long-lower-limit*, *long-upper-limit*—*interval designators* for <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 
@@ -140,7 +140,7 @@ Abbreviating.
 
 
 
-Each of these denotes the set of <ClLinks styled={true} term={"float"}><i>floats</i></ClLinks> of the indicated <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> that are on the interval specified by the *interval designators*. 
+Each of these denotes the set of <ClLinks  term={"float"}><i>floats</i></ClLinks> of the indicated <ClLinks  term={"type"}><i>type</i></ClLinks> that are on the interval specified by the *interval designators*. 
 
 
 

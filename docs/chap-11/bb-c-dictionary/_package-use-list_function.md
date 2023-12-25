@@ -1,4 +1,4 @@
-**package-use-list** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**package-use-list** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"package-use-list"}><b>package-use-list</b></ClLinks> *package → use-list* 
+<ClLinks  term={"package-use-list"}><b>package-use-list</b></ClLinks> *package → use-list* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* . 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . 
 
 
 
-*use-list*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *package objects*. 
+*use-list*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *package objects*. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of other <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> used by <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
+Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of other <ClLinks  term={"package"}><i>packages</i></ClLinks> used by <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -52,7 +52,7 @@ Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of other <C
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is not a *package designator* . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a *package designator* . 
 
 
 
@@ -60,7 +60,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks styled={true} term={"unuse-package"}><b>unuse-package</b></ClLinks> 
+<ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**write-char** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**write-char** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"write-char"}><b>write-char</b></ClLinks> <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> &amp;optional *output-stream → character* 
+<ClLinks  term={"write-char"}><b>write-char</b></ClLinks> <ClLinks  term={"character"}><i>character</i></ClLinks> &amp;optional *output-stream → character* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
+<ClLinks  term={"character"}><i>character</i></ClLinks>—a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks styled={true} term={"write-char"}><b>write-char</b></ClLinks> outputs <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> to *output-stream*. 
+<ClLinks  term={"write-char"}><b>write-char</b></ClLinks> outputs <ClLinks  term={"character"}><i>character</i></ClLinks> to *output-stream*. 
 
 
 
@@ -53,7 +53,7 @@ The *output-stream* is modified.
 
 
 
-**\*standard-output\***, <ClLinks styled={true} term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
+**\*standard-output\***, <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
 
 
 
@@ -61,7 +61,7 @@ The *output-stream* is modified.
 
 
 
-<ClLinks styled={true} term={"read-char"}><b>read-char</b></ClLinks>, <ClLinks styled={true} term={"write-byte"}><b>write-byte</b></ClLinks>, <ClLinks styled={true} term={"write-sequence"}><b>write-sequence</b></ClLinks> 
+<ClLinks  term={"read-char"}><b>read-char</b></ClLinks>, <ClLinks  term={"write-byte"}><b>write-byte</b></ClLinks>, <ClLinks  term={"write-sequence"}><b>write-sequence</b></ClLinks> 
 
 
 
@@ -77,7 +77,7 @@ The *output-stream* is modified.
 
 
 
-<ClLinks styled={true} term={"read-line"}><b>read-line</b></ClLinks> 
+<ClLinks  term={"read-line"}><b>read-line</b></ClLinks> 
 
 
 

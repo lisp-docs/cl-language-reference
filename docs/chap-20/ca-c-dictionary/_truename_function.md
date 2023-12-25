@@ -1,4 +1,4 @@
-**truename** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**truename** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"truename"}><b>truename</b></ClLinks> *filespec → truename* 
+<ClLinks  term={"truename"}><b>truename</b></ClLinks> *filespec → truename* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"truename"}><i>truename</i></ClLinks>—a *physical pathname*. 
+<ClLinks  term={"truename"}><i>truename</i></ClLinks>—a *physical pathname*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks styled={true} term={"truename"}><b>truename</b></ClLinks> tries to find the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> indicated by *filespec* and returns its <ClLinks styled={true} term={"truename"}><i>truename</i></ClLinks>. If the *filespec designator* is an open <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, its associated <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> is used. If *filespec* is a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, <ClLinks styled={true} term={"truename"}><b>truename</b></ClLinks> can be used whether the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is open or closed. It is permissible for <ClLinks styled={true} term={"truename"}><b>truename</b></ClLinks> to return more specific information after the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is closed than when the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> was open. If *filespec* is a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
+<ClLinks  term={"truename"}><b>truename</b></ClLinks> tries to find the <ClLinks  term={"file"}><i>file</i></ClLinks> indicated by *filespec* and returns its <ClLinks  term={"truename"}><i>truename</i></ClLinks>. If the *filespec designator* is an open <ClLinks  term={"stream"}><i>stream</i></ClLinks>, its associated <ClLinks  term={"file"}><i>file</i></ClLinks> is used. If *filespec* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, <ClLinks  term={"truename"}><b>truename</b></ClLinks> can be used whether the <ClLinks  term={"stream"}><i>stream</i></ClLinks> is open or closed. It is permissible for <ClLinks  term={"truename"}><b>truename</b></ClLinks> to return more specific information after the <ClLinks  term={"stream"}><i>stream</i></ClLinks> is closed than when the <ClLinks  term={"stream"}><i>stream</i></ClLinks> was open. If *filespec* is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
 
 
 
@@ -61,11 +61,11 @@
 
 
 
-An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> is signaled if an appropriate <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> cannot be located within the *file system* for the given *filespec*, or if the *file system* cannot perform the requested operation. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if an appropriate <ClLinks  term={"file"}><i>file</i></ClLinks> cannot be located within the *file system* for the given *filespec*, or if the *file system* cannot perform the requested operation. 
 
 
 
-An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> is signaled if <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> is <ClLinks styled={true} term={"wild"}><i>wild</i></ClLinks>. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
 
 
 
@@ -73,7 +73,7 @@ An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks 
 
 
 
-<ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks styled={true} term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 
@@ -81,4 +81,4 @@ An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks 
 
 
 
-<ClLinks styled={true} term={"truename"}><b>truename</b></ClLinks> may be used to account for any <ClLinks styled={true} term={"filename"}><i>filename</i></ClLinks> translations performed by the *file system*. 
+<ClLinks  term={"truename"}><b>truename</b></ClLinks> may be used to account for any <ClLinks  term={"filename"}><i>filename</i></ClLinks> translations performed by the *file system*. 

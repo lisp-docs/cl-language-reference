@@ -2,7 +2,7 @@
 
 
 
-The following examples illustrate some of the many ways in which the <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> nature of the modification can manifest itself. 
+The following examples illustrate some of the many ways in which the <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> nature of the modification can manifest itself. 
 
 
 

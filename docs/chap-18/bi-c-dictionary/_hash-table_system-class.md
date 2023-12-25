@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"hash-table"}><b>hash-table</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<ClLinks  term={"hash-table"}><b>hash-table</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*Hash tables* provide a way of mapping any <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> (a <ClLinks styled={true} term={"key"}><i>key</i></ClLinks>) to an associated <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> (a <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>). 
+*Hash tables* provide a way of mapping any <ClLinks  term={"object"}><i>object</i></ClLinks> (a <ClLinks  term={"key"}><i>key</i></ClLinks>) to an associated <ClLinks  term={"object"}><i>object</i></ClLinks> (a <ClLinks  term={"value"}><i>value</i></ClLinks>). 
 
 
 

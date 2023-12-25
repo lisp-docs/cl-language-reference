@@ -1,4 +1,4 @@
-**package-error-package** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**package-error-package** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"package-error-package"}><b>package-error-package</b></ClLinks> *condition → package* 
+<ClLinks  term={"package-error-package"}><b>package-error-package</b></ClLinks> *condition → package* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"package-error"}><b>package-error</b></ClLinks>. 
+<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* . 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for the offending <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> in the <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
+Returns a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for the offending <ClLinks  term={"package"}><i>package</i></ClLinks> in the <ClLinks  term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks  term={"condition"}><i>condition</i></ClLinks>. 
 
 **Examples:**
 ```lisp
@@ -39,7 +39,7 @@ Returns a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks>
 
 
 
-<ClLinks styled={true} term={"package-error"}><b>package-error</b></ClLinks> 
+<ClLinks  term={"package-error"}><b>package-error</b></ClLinks> 
 
 
 

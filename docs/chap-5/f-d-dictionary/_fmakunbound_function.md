@@ -1,4 +1,4 @@
-**fmakunbound** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**fmakunbound** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"fmakunbound"}><b>fmakunbound</b></ClLinks> *name → name* 
+<ClLinks  term={"fmakunbound"}><b>fmakunbound</b></ClLinks> *name → name* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a *function name*. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a *function name*. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Removes the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> or <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> definition, if any, of <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> in the *global environment*. 
+Removes the <ClLinks  term={"function"}><i>function</i></ClLinks> or <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition, if any, of <ClLinks  term={"name"}><i>name</i></ClLinks> in the *global environment*. 
 
 **Examples:**
 ```lisp
@@ -45,11 +45,11 @@ Removes the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> o
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is not a *function name*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"name"}><i>name</i></ClLinks> is not a *function name*. 
 
 
 
-The consequences are undefined if <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is a *special operator* . 
+The consequences are undefined if <ClLinks  term={"name"}><i>name</i></ClLinks> is a *special operator* . 
 
 
 
@@ -57,7 +57,7 @@ The consequences are undefined if <ClLinks styled={true} term={"name"}><i>name</
 
 
 
-<ClLinks styled={true} term={"fboundp"}><b>fboundp</b></ClLinks>, <ClLinks styled={true} term={"makunbound"}><b>makunbound</b></ClLinks> 
+<ClLinks  term={"fboundp"}><b>fboundp</b></ClLinks>, <ClLinks  term={"makunbound"}><b>makunbound</b></ClLinks> 
 
 
 

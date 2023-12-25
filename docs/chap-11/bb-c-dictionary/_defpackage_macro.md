@@ -1,4 +1,4 @@
-**defpackage** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**defpackage** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,15 +6,15 @@
 
 
 
-<ClLinks styled={true} term={"defpackage"}><b>defpackage</b></ClLinks> *defined-package-name* [[ *↓option* ]] → package 
+<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> *defined-package-name* [[ *↓option* ]] → package 
 
 
 
-*option::*=*\{*(:nicknames <ClLinks styled={true} term={"nickname"}><i>\{nickname\}</i></ClLinks>\*)*\}*\* *|* 
+*option::*=*\{*(:nicknames <ClLinks  term={"nickname"}><i>\{nickname\}</i></ClLinks>\*)*\}*\* *|* 
 
 
 
-(:documentation <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>) *|* 
+(:documentation <ClLinks  term={"string"}><i>string</i></ClLinks>) *|* 
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-<ClLinks styled={true} term={"nickname"}><i>nickname</i></ClLinks>—a *string designator* . 
+<ClLinks  term={"nickname"}><i>nickname</i></ClLinks>—a *string designator* . 
 
 
 
@@ -66,7 +66,7 @@
 
 
 
-<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> named *package-name*. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—the <ClLinks  term={"package"}><i>package</i></ClLinks> named *package-name*. 
 
 
 
@@ -74,11 +74,11 @@
 
 
 
-<ClLinks styled={true} term={"defpackage"}><b>defpackage</b></ClLinks> creates a <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> as specified and returns the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
+<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> creates a <ClLinks  term={"package"}><i>package</i></ClLinks> as specified and returns the <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-If *defined-package-name* already refers to an existing <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, the name-to-package mapping for that name is not changed. If the new definition is at variance with the current state of that <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, the consequences are undefined; an implementation might choose to modify the existing <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> to reflect the new definition. If *defined-package-name* is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, its <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is used. 
+If *defined-package-name* already refers to an existing <ClLinks  term={"package"}><i>package</i></ClLinks>, the name-to-package mapping for that name is not changed. If the new definition is at variance with the current state of that <ClLinks  term={"package"}><i>package</i></ClLinks>, the consequences are undefined; an implementation might choose to modify the existing <ClLinks  term={"package"}><i>package</i></ClLinks> to reflect the new definition. If *defined-package-name* is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, its <ClLinks  term={"name"}><i>name</i></ClLinks> is used. 
 
 
 
@@ -90,7 +90,7 @@ The standard *options* are described below.
 
 
 
-The arguments to :nicknames set the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>’s nicknames to the supplied names. 
+The arguments to :nicknames set the <ClLinks  term={"package"}><i>package</i></ClLinks>’s nicknames to the supplied names. 
 
 
 
@@ -110,11 +110,11 @@ The argument to :documentation specifies a *documentation string*; it is attache
 
 
 
-<ClLinks styled={true} term={"defpackage"}><b>defpackage</b></ClLinks> 
+<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> 
 
 
 
-*documentation string* to the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. At most one :documentation option can appear in a single <ClLinks styled={true} term={"defpackage"}><b>defpackage</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+*documentation string* to the <ClLinks  term={"package"}><i>package</i></ClLinks>. At most one :documentation option can appear in a single <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -122,7 +122,7 @@ The argument to :documentation specifies a *documentation string*; it is attache
 
 
 
-The arguments to :use set the <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> that the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> named by *package-name* will inherit from. If :use is not supplied, it defaults to the same <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> value as the :use <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> to <ClLinks styled={true} term={"make-package"}><b>make-package</b></ClLinks>. 
+The arguments to :use set the <ClLinks  term={"package"}><i>packages</i></ClLinks> that the <ClLinks  term={"package"}><i>package</i></ClLinks> named by *package-name* will inherit from. If :use is not supplied, it defaults to the same <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> value as the :use <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <ClLinks  term={"make-package"}><b>make-package</b></ClLinks>. 
 
 
 
@@ -130,7 +130,7 @@ The arguments to :use set the <ClLinks styled={true} term={"package"}><i>package
 
 
 
-The arguments to :shadow, *symbol-names*, name <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> that are to be created in the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> being defined. These <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> are added to the list of shadowing <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> effectively as if by <ClLinks styled={true} term={"shadow"}><b>shadow</b></ClLinks>. 
+The arguments to :shadow, *symbol-names*, name <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are to be created in the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined. These <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are added to the list of shadowing <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> effectively as if by <ClLinks  term={"shadow"}><b>shadow</b></ClLinks>. 
 
 
 
@@ -138,7 +138,7 @@ The arguments to :shadow, *symbol-names*, name <ClLinks styled={true} term={"sym
 
 
 
-The <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found (involving a lookup as if by <ClLinks styled={true} term={"find-symbol"}><b>find-symbol</b></ClLinks>) in the specified *package-name*. The resulting <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> are *imported* into the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> being defined, and placed on the shadowing symbols list as if by <ClLinks styled={true} term={"shadowing-import"}><b>shadowing-import</b></ClLinks>. In no case are <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> created in any <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> other than the one being defined. 
+The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found (involving a lookup as if by <ClLinks  term={"find-symbol"}><b>find-symbol</b></ClLinks>) in the specified *package-name*. The resulting <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are *imported* into the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined, and placed on the shadowing symbols list as if by <ClLinks  term={"shadowing-import"}><b>shadowing-import</b></ClLinks>. In no case are <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> created in any <ClLinks  term={"package"}><i>package</i></ClLinks> other than the one being defined. 
 
 
 
@@ -146,7 +146,7 @@ The <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> named by the
 
 
 
-The <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found in the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> named by *package-name* and they are *imported* into the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> being defined. In no case are <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> created in any <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> other than the one being defined. 
+The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found in the <ClLinks  term={"package"}><i>package</i></ClLinks> named by *package-name* and they are *imported* into the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined. In no case are <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> created in any <ClLinks  term={"package"}><i>package</i></ClLinks> other than the one being defined. 
 
 
 
@@ -154,7 +154,7 @@ The <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> named by the
 
 
 
-The <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found or created in the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> being defined and <ClLinks styled={true} term={"exported"}><i>exported</i></ClLinks>. The :export option interacts with the :use option, since inherited <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> can be used rather than new ones created. The :export option interacts with the :import-from and :shadowing-import-from options, since *imported* symbols can be used rather than new ones created. If an argument to the :export option is <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> as an (inherited) *internal symbol* via <ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks>, that the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> named by *symbol-name* is first *imported* into the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> being defined, and is then <ClLinks styled={true} term={"exported"}><i>exported</i></ClLinks> from that <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
+The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found or created in the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined and <ClLinks  term={"exported"}><i>exported</i></ClLinks>. The :export option interacts with the :use option, since inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> can be used rather than new ones created. The :export option interacts with the :import-from and :shadowing-import-from options, since *imported* symbols can be used rather than new ones created. If an argument to the :export option is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as an (inherited) *internal symbol* via <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, that the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> named by *symbol-name* is first *imported* into the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined, and is then <ClLinks  term={"exported"}><i>exported</i></ClLinks> from that <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -162,7 +162,7 @@ The <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> named by the
 
 
 
-The <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found or created in the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> being defined. The :intern option interacts with the :use option, since inherited <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> can be used rather than new ones created. 
+The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found or created in the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined. The :intern option interacts with the :use option, since inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> can be used rather than new ones created. 
 
 
 
@@ -170,7 +170,7 @@ The <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> named by the
 
 
 
-The argument to the :size option declares the approximate number of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> expected in the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. This is an efficiency hint only and might be ignored by an implementation. 
+The argument to the :size option declares the approximate number of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> expected in the <ClLinks  term={"package"}><i>package</i></ClLinks>. This is an efficiency hint only and might be ignored by an implementation. 
 
 
 
@@ -186,11 +186,11 @@ The argument to the :size option declares the approximate number of <ClLinks sty
 
 
 
-<ClLinks styled={true} term={"defpackage"}><b>defpackage</b></ClLinks> 
+<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> 
 
 
 
-The order in which the options appear in a <ClLinks styled={true} term={"defpackage"}><b>defpackage</b></ClLinks> form is irrelevant. The order in which they are executed is as follows: 
+The order in which the options appear in a <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> form is irrelevant. The order in which they are executed is as follows: 
 
 
 
@@ -210,11 +210,11 @@ The order in which the options appear in a <ClLinks styled={true} term={"defpack
 
 
 
-Shadows are established first, since they might be necessary to block spurious name conflicts when the :use option is processed. The :use option is executed next so that :intern and :export options can refer to normally inherited <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>. The :export option is executed last so that it can refer to <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> created by any of the other options; in particular, *shadowing symbols* and *imported symbols* can be made external. 
+Shadows are established first, since they might be necessary to block spurious name conflicts when the :use option is processed. The :use option is executed next so that :intern and :export options can refer to normally inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. The :export option is executed last so that it can refer to <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> created by any of the other options; in particular, *shadowing symbols* and *imported symbols* can be made external. 
 
 
 
-If a defpackage <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> appears as a *top level form*, all of the actions normally performed by this <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> at load time must also be performed at compile time. 
+If a defpackage <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a *top level form*, all of the actions normally performed by this <ClLinks  term={"macro"}><i>macro</i></ClLinks> at load time must also be performed at compile time. 
 
 
 
@@ -239,7 +239,7 @@ If a defpackage <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> appea
 
 
 
-Existing <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks>. 
+Existing <ClLinks  term={"package"}><i>packages</i></ClLinks>. 
 
 
 
@@ -247,19 +247,15 @@ Existing <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks>.
 
 
 
-If one of the supplied :nicknames already refers to an existing <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"package-error"}><b>package-error</b></ClLinks> is signaled. 
+If one of the supplied :nicknames already refers to an existing <ClLinks  term={"package"}><i>package</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> is signaled. 
 
 
 
-An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"program-error"}><b>program-error</b></ClLinks> should be signaled if :size or :documentation appears more than once. 
-
-
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> should be signaled if :size or :documentation appears more than once. 
 
 
 
 
-
- 
 
 
 
@@ -267,23 +263,27 @@ An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks 
 
 
 
-<ClLinks styled={true} term={"defpackage"}><b>defpackage</b></ClLinks> 
+ 
 
 
 
-Since <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> might allow extended *options* an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"program-error"}><b>program-error</b></ClLinks> should be signaled if an *option* is present that is not actually supported in the host <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
+<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> 
 
 
 
-The collection of *symbol-name* arguments given to the options :shadow, :intern, :import-from, and :shadowing-import-from must all be disjoint; additionally, the *symbol-name* arguments given to :export and :intern must be disjoint. Disjoint in this context is defined as no two of the *symbol-names* being <ClLinks styled={true} term={"string"}><b>string=</b></ClLinks> with each other. If either condition is violated, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"program-error"}><b>program-error</b></ClLinks> should be signaled. 
+Since <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> might allow extended *options* an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> should be signaled if an *option* is present that is not actually supported in the host <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 
-For the :shadowing-import-from and :import-from options, a *correctable error* of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"package-error"}><b>package-error</b></ClLinks> is signaled if no <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> named by *package-name* for one of the argument *symbol-names*. 
+The collection of *symbol-name* arguments given to the options :shadow, :intern, :import-from, and :shadowing-import-from must all be disjoint; additionally, the *symbol-name* arguments given to :export and :intern must be disjoint. Disjoint in this context is defined as no two of the *symbol-names* being <ClLinks  term={"string"}><b>string=</b></ClLinks> with each other. If either condition is violated, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> should be signaled. 
 
 
 
-Name conflict errors are handled by the underlying calls to <ClLinks styled={true} term={"make-package"}><b>make-package</b></ClLinks>, <ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks styled={true} term={"import"}><b>import</b></ClLinks>, and <ClLinks styled={true} term={"export"}><b>export</b></ClLinks>. See Section 11.1 (Package Concepts). 
+For the :shadowing-import-from and :import-from options, a *correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> is signaled if no <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks> named by *package-name* for one of the argument *symbol-names*. 
+
+
+
+Name conflict errors are handled by the underlying calls to <ClLinks  term={"make-package"}><b>make-package</b></ClLinks>, <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks  term={"import"}><b>import</b></ClLinks>, and <ClLinks  term={"export"}><b>export</b></ClLinks>. See Section 11.1 (Package Concepts). 
 
 
 
@@ -299,15 +299,15 @@ Name conflict errors are handled by the underlying calls to <ClLinks styled={tru
 
 
 
-The :intern option is useful if an :import-from or a :shadowing-import-from option in a subsequent call to <ClLinks styled={true} term={"defpackage"}><b>defpackage</b></ClLinks> (for some other <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>) expects to find these *symbols accessible* but not necessarily external. 
+The :intern option is useful if an :import-from or a :shadowing-import-from option in a subsequent call to <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> (for some other <ClLinks  term={"package"}><i>package</i></ClLinks>) expects to find these *symbols accessible* but not necessarily external. 
 
 
 
-It is recommended that the entire <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> definition is put in a single place, and that all the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> definitions of a program are in a single file. This file can be *loaded* before *loading* or compiling anything else that depends on those <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks>. Such a file can be read in the COMMON-LISP-USER <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, avoiding any initial state issues. 
+It is recommended that the entire <ClLinks  term={"package"}><i>package</i></ClLinks> definition is put in a single place, and that all the <ClLinks  term={"package"}><i>package</i></ClLinks> definitions of a program are in a single file. This file can be *loaded* before *loading* or compiling anything else that depends on those <ClLinks  term={"package"}><i>packages</i></ClLinks>. Such a file can be read in the COMMON-LISP-USER <ClLinks  term={"package"}><i>package</i></ClLinks>, avoiding any initial state issues. 
 
 
 
-<ClLinks styled={true} term={"defpackage"}><b>defpackage</b></ClLinks> cannot be used to create two “mutually recursive” packages, such as: 
+<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> cannot be used to create two “mutually recursive” packages, such as: 
 
 
 
@@ -339,15 +339,15 @@ It is recommended that the entire <ClLinks styled={true} term={"package"}><i>pac
 
 
 
-However, nothing prevents the user from using the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>-affecting functions such as <ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks styled={true} term={"import"}><b>import</b></ClLinks>, and <ClLinks styled={true} term={"export"}><b>export</b></ClLinks> to establish such links after a more standard use of <ClLinks styled={true} term={"defpackage"}><b>defpackage</b></ClLinks>. 
+However, nothing prevents the user from using the <ClLinks  term={"package"}><i>package</i></ClLinks>-affecting functions such as <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks  term={"import"}><b>import</b></ClLinks>, and <ClLinks  term={"export"}><b>export</b></ClLinks> to establish such links after a more standard use of <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks>. 
 
 
 
-The macroexpansion of <ClLinks styled={true} term={"defpackage"}><b>defpackage</b></ClLinks> could usefully canonicalize the names into <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks>, so that even if a source file has random <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> in the <ClLinks styled={true} term={"defpackage"}><b>defpackage</b></ClLinks> form, the compiled file would only contain <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks>. 
+The macroexpansion of <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> could usefully canonicalize the names into <ClLinks  term={"string"}><i>strings</i></ClLinks>, so that even if a source file has random <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> in the <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> form, the compiled file would only contain <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
 
 
 
-Frequently additional <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> options take the form of a <ClLinks styled={true} term={"keyword"}><i>keyword</i></ClLinks> standing by itself as an abbreviation for a list (keyword T); this syntax should be properly reported as an 
+Frequently additional <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> options take the form of a <ClLinks  term={"keyword"}><i>keyword</i></ClLinks> standing by itself as an abbreviation for a list (keyword T); this syntax should be properly reported as an 
 
 
 

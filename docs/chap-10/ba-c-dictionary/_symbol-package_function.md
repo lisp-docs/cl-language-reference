@@ -1,4 +1,4 @@
-**symbol-package** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**symbol-package** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"symbol-package"}><b>symbol-package</b></ClLinks> *symbol → contents* 
+<ClLinks  term={"symbol-package"}><b>symbol-package</b></ClLinks> *symbol → contents* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*contents*—a *package object* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*contents*—a *package object* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the *home package* of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+Returns the *home package* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -60,7 +60,7 @@ Returns the *home package* of <ClLinks styled={true} term={"symbol"}><i>symbol</
 
 
 
-<ClLinks styled={true} term={"import"}><b>import</b></ClLinks>, <ClLinks styled={true} term={"intern"}><b>intern</b></ClLinks>, <ClLinks styled={true} term={"unintern"}><b>unintern</b></ClLinks> 
+<ClLinks  term={"import"}><b>import</b></ClLinks>, <ClLinks  term={"intern"}><b>intern</b></ClLinks>, <ClLinks  term={"unintern"}><b>unintern</b></ClLinks> 
 
 
 
@@ -68,7 +68,7 @@ Returns the *home package* of <ClLinks styled={true} term={"symbol"}><i>symbol</
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -88,7 +88,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"intern"}><b>intern</b></ClLinks> 
+<ClLinks  term={"intern"}><b>intern</b></ClLinks> 
 
 
 

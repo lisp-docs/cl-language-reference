@@ -1,4 +1,4 @@
-**clear-input** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**clear-input** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"clear-input"}><b>clear-input</b></ClLinks> &amp;optional *input-stream →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
+<ClLinks  term={"clear-input"}><b>clear-input</b></ClLinks> &amp;optional *input-stream →* <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -26,7 +26,7 @@ Clears any available input from *input-stream*.
 
 
 
-If <ClLinks styled={true} term={"clear-input"}><b>clear-input</b></ClLinks> does not make sense for *input-stream*, then <ClLinks styled={true} term={"clear-input"}><b>clear-input</b></ClLinks> does nothing. 
+If <ClLinks  term={"clear-input"}><b>clear-input</b></ClLinks> does not make sense for *input-stream*, then <ClLinks  term={"clear-input"}><b>clear-input</b></ClLinks> does nothing. 
 
 **Examples:**
 ```lisp
@@ -80,7 +80,7 @@ The *input-stream* is modified.
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *input-stream* is not a *stream designator* . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *input-stream* is not a *stream designator* . 
 
 
 
@@ -88,7 +88,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"clear-output"}><b>clear-output</b></ClLinks> 
+<ClLinks  term={"clear-output"}><b>clear-output</b></ClLinks> 
 
 
 

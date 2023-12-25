@@ -1,4 +1,4 @@
-**signed-byte** <ClLinks styled={true} term={"type"}><i>Type</i></ClLinks> 
+**signed-byte** <ClLinks  term={"type"}><i>Type</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"signed-byte"}><b>signed-byte</b></ClLinks>, <ClLinks styled={true} term={"integer"}><b>integer</b></ClLinks>, <ClLinks styled={true} term={"rational"}><b>rational</b></ClLinks>, <ClLinks styled={true} term={"real"}><b>real</b></ClLinks>, <ClLinks styled={true} term={"number"}><b>number</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<ClLinks  term={"signed-byte"}><b>signed-byte</b></ClLinks>, <ClLinks  term={"integer"}><b>integer</b></ClLinks>, <ClLinks  term={"rational"}><b>rational</b></ClLinks>, <ClLinks  term={"real"}><b>real</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The atomic *type specifier* <ClLinks styled={true} term={"signed-byte"}><b>signed-byte</b></ClLinks> denotes the same type as is denoted by the *type specifier* <ClLinks styled={true} term={"integer"}><b>integer</b></ClLinks>; however, the list forms of these two *type specifiers* have different semantics. 
+The atomic *type specifier* <ClLinks  term={"signed-byte"}><b>signed-byte</b></ClLinks> denotes the same type as is denoted by the *type specifier* <ClLinks  term={"integer"}><b>integer</b></ClLinks>; however, the list forms of these two *type specifiers* have different semantics. 
 
 
 

@@ -1,4 +1,4 @@
-**pathname** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**pathname** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks> *pathspec → pathname* 
+<ClLinks  term={"pathname"}><b>pathname</b></ClLinks> *pathspec → pathname* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>—a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>. 
+<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> denoted by *pathspec*. 
+Returns the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> denoted by *pathspec*. 
 
 
 
@@ -42,11 +42,11 @@ Returns the <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> d
 
 
 
-<ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks> 
+<ClLinks  term={"pathname"}><b>pathname</b></ClLinks> 
 
 
 
-If the *pathspec designator* is a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> can be either open or closed; in both cases, the <ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks> returned corresponds to the <ClLinks styled={true} term={"filename"}><i>filename</i></ClLinks> used to open the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks>. <ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks> returns the same <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> for a *file stream* after it is closed as it did when it was open. 
+If the *pathspec designator* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, the <ClLinks  term={"stream"}><i>stream</i></ClLinks> can be either open or closed; in both cases, the <ClLinks  term={"pathname"}><b>pathname</b></ClLinks> returned corresponds to the <ClLinks  term={"filename"}><i>filename</i></ClLinks> used to open the <ClLinks  term={"file"}><i>file</i></ClLinks>. <ClLinks  term={"pathname"}><b>pathname</b></ClLinks> returns the same <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> for a *file stream* after it is closed as it did when it was open. 
 
 
 
@@ -95,7 +95,7 @@ If the *pathspec designator* is a *file stream* created by opening a *logical pa
 
 
 
-<ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks styled={true} term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as 
+<ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as 
 
 
 

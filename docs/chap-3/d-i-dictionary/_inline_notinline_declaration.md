@@ -1,4 +1,4 @@
-**inline, notinline** <ClLinks styled={true} term={"declaration"}><i>Declaration</i></ClLinks> 
+**inline, notinline** <ClLinks  term={"declaration"}><i>Declaration</i></ClLinks> 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks> or <ClLinks styled={true} term={"proclamation"}><i>proclamation</i></ClLinks> 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks> or <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks> 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks styled={true} term={"function"}><i>function</i></ClLinks> 
+<ClLinks  term={"function"}><i>function</i></ClLinks> 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-<ClLinks styled={true} term={"inline"}><b>inline</b></ClLinks> specifies that it is desirable for the compiler to produce inline calls to the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> named by *function-names*; that is, the code for a specified *function-name* should be integrated into the calling routine, appearing “in line” in place of a procedure call. A compiler is free to ignore this declaration. <ClLinks styled={true} term={"inline"}><b>inline</b></ClLinks> declarations never apply to variable <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks>. 
+<ClLinks  term={"inline"}><b>inline</b></ClLinks> specifies that it is desirable for the compiler to produce inline calls to the <ClLinks  term={"function"}><i>functions</i></ClLinks> named by *function-names*; that is, the code for a specified *function-name* should be integrated into the calling routine, appearing “in line” in place of a procedure call. A compiler is free to ignore this declaration. <ClLinks  term={"inline"}><b>inline</b></ClLinks> declarations never apply to variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. 
 
 
 
-If one of the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> mentioned has a lexically apparent local definition (as made by <ClLinks styled={true} term={"flet"}><b>flet</b></ClLinks> or <ClLinks styled={true} term={"labels"}><b>labels</b></ClLinks>), then the declaration applies to that local definition and not to the global function definition. 
+If one of the <ClLinks  term={"function"}><i>functions</i></ClLinks> mentioned has a lexically apparent local definition (as made by <ClLinks  term={"flet"}><b>flet</b></ClLinks> or <ClLinks  term={"labels"}><b>labels</b></ClLinks>), then the declaration applies to that local definition and not to the global function definition. 
 
 
 
@@ -66,11 +66,11 @@ If one of the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks
 
 
 
-While no *conforming implementation* is required to perform inline expansion of user-defined functions, those <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> that do attempt to recognize the following paradigm: 
+While no *conforming implementation* is required to perform inline expansion of user-defined functions, those <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> that do attempt to recognize the following paradigm: 
 
 
 
-To define a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> f that is not <ClLinks styled={true} term={"inline"}><b>inline</b></ClLinks> by default but for which (declare (inline f)) will make *f* be locally inlined, the proper definition sequence is: 
+To define a <ClLinks  term={"function"}><i>function</i></ClLinks> f that is not <ClLinks  term={"inline"}><b>inline</b></ClLinks> by default but for which (declare (inline f)) will make *f* be locally inlined, the proper definition sequence is: 
 
 
 
@@ -86,23 +86,23 @@ To define a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> f
 
 
 
-The <ClLinks styled={true} term={"inline"}><b>inline</b></ClLinks> proclamation preceding the <ClLinks styled={true} term={"defun"}><b>defun</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> ensures that the <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> has the opportunity save the information necessary for inline expansion, and the <ClLinks styled={true} term={"notinline"}><b>notinline</b></ClLinks> proclamation following the <ClLinks styled={true} term={"defun"}><b>defun</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> prevents f from being expanded inline everywhere. 
+The <ClLinks  term={"inline"}><b>inline</b></ClLinks> proclamation preceding the <ClLinks  term={"defun"}><b>defun</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> ensures that the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> has the opportunity save the information necessary for inline expansion, and the <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> proclamation following the <ClLinks  term={"defun"}><b>defun</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> prevents f from being expanded inline everywhere. 
 
 
 
-<ClLinks styled={true} term={"notinline"}><b>notinline</b></ClLinks> specifies that it is undesirable to compile the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> named by *function-names* in-line. A compiler is not free to ignore this declaration; calls to the specified functions must be implemented as out-of-line subroutine calls. 
+<ClLinks  term={"notinline"}><b>notinline</b></ClLinks> specifies that it is undesirable to compile the <ClLinks  term={"function"}><i>functions</i></ClLinks> named by *function-names* in-line. A compiler is not free to ignore this declaration; calls to the specified functions must be implemented as out-of-line subroutine calls. 
 
 
 
-If one of the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> mentioned has a lexically apparent local definition (as made by <ClLinks styled={true} term={"flet"}><b>flet</b></ClLinks> or <ClLinks styled={true} term={"labels"}><b>labels</b></ClLinks>), then the declaration applies to that local definition and not to the global function definition. 
+If one of the <ClLinks  term={"function"}><i>functions</i></ClLinks> mentioned has a lexically apparent local definition (as made by <ClLinks  term={"flet"}><b>flet</b></ClLinks> or <ClLinks  term={"labels"}><b>labels</b></ClLinks>), then the declaration applies to that local definition and not to the global function definition. 
 
 
 
-In the presence of a *compiler macro* definition for *function-name*, a <ClLinks styled={true} term={"notinline"}><b>notinline</b></ClLinks> declaration prevents that *compiler macro* from being used. An <ClLinks styled={true} term={"inline"}><b>inline</b></ClLinks> declaration may be used to encourage use of *compiler macro* definitions. <ClLinks styled={true} term={"inline"}><b>inline</b></ClLinks> and <ClLinks styled={true} term={"notinline"}><b>notinline</b></ClLinks> declarations otherwise have no e↵ect when the lexically visible definition of *function-name* is a <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> definition. 
+In the presence of a *compiler macro* definition for *function-name*, a <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> declaration prevents that *compiler macro* from being used. An <ClLinks  term={"inline"}><b>inline</b></ClLinks> declaration may be used to encourage use of *compiler macro* definitions. <ClLinks  term={"inline"}><b>inline</b></ClLinks> and <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> declarations otherwise have no e↵ect when the lexically visible definition of *function-name* is a <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition. 
 
 
 
-<ClLinks styled={true} term={"inline"}><b>inline</b></ClLinks> and <ClLinks styled={true} term={"notinline"}><b>notinline</b></ClLinks> declarations can be *free declarations* or *bound declarations*. <ClLinks styled={true} term={"inline"}><b>inline</b></ClLinks> and <ClLinks styled={true} term={"notinline"}><b>notinline</b></ClLinks> declarations of functions that appear before the body of a <ClLinks styled={true} term={"flet"}><b>flet</b></ClLinks> or <ClLinks styled={true} term={"labels"}><b>labels</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that defines that function are *bound declarations*. Such declarations in other contexts are *free declarations*. 
+<ClLinks  term={"inline"}><b>inline</b></ClLinks> and <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> declarations can be *free declarations* or *bound declarations*. <ClLinks  term={"inline"}><b>inline</b></ClLinks> and <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> declarations of functions that appear before the body of a <ClLinks  term={"flet"}><b>flet</b></ClLinks> or <ClLinks  term={"labels"}><b>labels</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> that defines that function are *bound declarations*. Such declarations in other contexts are *free declarations*. 
 
 
 
@@ -133,7 +133,7 @@ Evaluation and
 
 
 
-<ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks>, <ClLinks styled={true} term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks styled={true} term={"proclaim"}><b>proclaim</b></ClLinks> 
+<ClLinks  term={"declare"}><b>declare</b></ClLinks>, <ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> 
 
 
 

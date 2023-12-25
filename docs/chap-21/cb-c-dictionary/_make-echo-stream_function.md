@@ -1,4 +1,4 @@
-**make-echo-stream** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**make-echo-stream** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"make-echo-stream"}><b>make-echo-stream</b></ClLinks> *input-stream output-stream → echo-stream* 
+<ClLinks  term={"make-echo-stream"}><b>make-echo-stream</b></ClLinks> *input-stream output-stream → echo-stream* 
 
 
 
@@ -50,7 +50,7 @@ Creates and returns an *echo stream* that takes input from *input-stream* and se
 
 
 
-**echo-stream-input-stream**, **echo-stream-output-stream**, **make-two-way-stream concatenated-stream-streams** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**echo-stream-input-stream**, **echo-stream-output-stream**, **make-two-way-stream concatenated-stream-streams** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -70,7 +70,7 @@ Creates and returns an *echo stream* that takes input from *input-stream* and se
 
 
 
-<ClLinks styled={true} term={"stream"}><i>streams</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *input streams*. 
+<ClLinks  term={"stream"}><i>streams</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *input streams*. 
 
 
 
@@ -90,8 +90,8 @@ Creates and returns an *echo stream* that takes input from *input-stream* and se
 
 
 
-Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *input streams* that constitute the ordered set of <ClLinks styled={true} term={"stream"}><i>streams</i></ClLinks> the *concatenated-stream* still has to read from, starting with the current one it is reading from. The list may be *empty* if no more <ClLinks styled={true} term={"stream"}><i>streams</i></ClLinks> remain to be read. 
+Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of *input streams* that constitute the ordered set of <ClLinks  term={"stream"}><i>streams</i></ClLinks> the *concatenated-stream* still has to read from, starting with the current one it is reading from. The list may be *empty* if no more <ClLinks  term={"stream"}><i>streams</i></ClLinks> remain to be read. 
 
 
 
-The consequences are undefined if the *list structure* of the <ClLinks styled={true} term={"stream"}><i>streams</i></ClLinks> is ever modified. 
+The consequences are undefined if the *list structure* of the <ClLinks  term={"stream"}><i>streams</i></ClLinks> is ever modified. 

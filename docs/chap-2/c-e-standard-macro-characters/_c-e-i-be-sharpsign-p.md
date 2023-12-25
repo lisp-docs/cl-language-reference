@@ -10,7 +10,7 @@
 
 
 
-For information on how the *Lisp printer* prints <ClLinks styled={true} term={"pathname"}><i>pathnames</i></ClLinks>, see Section 22.1.3.11 (Printing Pathnames). 
+For information on how the *Lisp printer* prints <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks>, see Section 22.1.3.11 (Printing Pathnames). 
 
 
 

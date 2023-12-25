@@ -1,4 +1,4 @@
-**symbol-name** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**symbol-name** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"symbol-name"}><b>symbol-name</b></ClLinks> *symbol → name* 
+<ClLinks  term={"symbol-name"}><b>symbol-name</b></ClLinks> *symbol → name* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks styled={true} term={"symbol-name"}><b>symbol-name</b></ClLinks> returns the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. The consequences are undefined if <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is ever modified. 
+<ClLinks  term={"symbol-name"}><b>symbol-name</b></ClLinks> returns the <ClLinks  term={"name"}><i>name</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. The consequences are undefined if <ClLinks  term={"name"}><i>name</i></ClLinks> is ever modified. 
 
 
 
@@ -40,7 +40,7 @@
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -56,7 +56,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"symbol-package"}><b>symbol-package</b></ClLinks> 
+<ClLinks  term={"symbol-package"}><b>symbol-package</b></ClLinks> 
 
 
 

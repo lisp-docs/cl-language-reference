@@ -1,4 +1,4 @@
-**hash-table-size** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**hash-table-size** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"hash-table-size"}><b>hash-table-size</b></ClLinks> *hash-table → size* 
+<ClLinks  term={"hash-table-size"}><b>hash-table-size</b></ClLinks> *hash-table → size* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the current size of *hash-table*, which is suitable for use in a call to <ClLinks styled={true} term={"make-hash-table"}><b>make-hash-table</b></ClLinks> in order to produce a *hash table* with state corresponding to the current state of the *hash-table*. 
+Returns the current size of *hash-table*, which is suitable for use in a call to <ClLinks  term={"make-hash-table"}><b>make-hash-table</b></ClLinks> in order to produce a *hash table* with state corresponding to the current state of the *hash-table*. 
 
 
 
@@ -34,7 +34,7 @@ Returns the current size of *hash-table*, which is suitable for use in a call to
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *hash-table* is not a *hash table*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *hash-table* is not a *hash table*. 
 
 
 
@@ -42,7 +42,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"hash-table-count"}><b>hash-table-count</b></ClLinks>, <ClLinks styled={true} term={"make-hash-table"}><b>make-hash-table</b></ClLinks> 
+<ClLinks  term={"hash-table-count"}><b>hash-table-count</b></ClLinks>, <ClLinks  term={"make-hash-table"}><b>make-hash-table</b></ClLinks> 
 
 
 

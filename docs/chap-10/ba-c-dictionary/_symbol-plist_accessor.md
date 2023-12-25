@@ -1,4 +1,4 @@
-**symbol-plist** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
+**symbol-plist** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"symbol-plist"}><b>symbol-plist</b></ClLinks> *symbol → plist* 
+<ClLinks  term={"symbol-plist"}><b>symbol-plist</b></ClLinks> *symbol → plist* 
 
 
 
-<!-- **(setf (symbol-plist** <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>**)** *new-plist<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks>  -->
+<!-- **(setf (symbol-plist** <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>**)** *new-plist<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
 **(setf (symbol-plist** *symbol***)** *new-plist***)** 
 
 
@@ -19,11 +19,11 @@
 
 
 
-<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks>, *new-plist*—a *property list*. 
+<ClLinks  term={"plist"}><i>plist</i></ClLinks>, *new-plist*—a *property list*. 
 
 
 
@@ -31,7 +31,7 @@
 
 
 
-*Accesses* the *property list* of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+*Accesses* the *property list* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -58,7 +58,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"get"}><b>get</b></ClLinks>, <ClLinks styled={true} term={"remprop"}><b>remprop</b></ClLinks> 
+<ClLinks  term={"get"}><b>get</b></ClLinks>, <ClLinks  term={"remprop"}><b>remprop</b></ClLinks> 
 
 
 
@@ -66,7 +66,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-The use of <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> should be avoided, since a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>’s *property list* is a global resource that can contain information established and depended upon by unrelated programs in the same *Lisp image*. 
+The use of <ClLinks  term={"setf"}><b>setf</b></ClLinks> should be avoided, since a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s *property list* is a global resource that can contain information established and depended upon by unrelated programs in the same *Lisp image*. 
 
 
 
@@ -82,7 +82,7 @@ The use of <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> should be 
 
 
 
-<ClLinks styled={true} term={"symbol-value"}><b>symbol-value</b></ClLinks> 
+<ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> 
 
 
 

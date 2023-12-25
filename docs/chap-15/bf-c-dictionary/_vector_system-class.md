@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks>, <ClLinks styled={true} term={"array"}><b>array</b></ClLinks>, <ClLinks styled={true} term={"sequence"}><b>sequence</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<ClLinks  term={"vector"}><b>vector</b></ClLinks>, <ClLinks  term={"array"}><b>array</b></ClLinks>, <ClLinks  term={"sequence"}><b>sequence</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-Any one-dimensional <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> . 
+Any one-dimensional <ClLinks  term={"array"}><i>array</i></ClLinks> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> . 
 
 
 
-The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks> is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"array"}><b>array</b></ClLinks>; for all <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> x, (vector x) is the same as (array x (\*)). The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> (vector t), the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"string"}><b>string</b></ClLinks>, and the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"bit-vector"}><b>bit-vector</b></ClLinks> are *disjoint subtypes* of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks>. 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"vector"}><b>vector</b></ClLinks> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"array"}><b>array</b></ClLinks>; for all <ClLinks  term={"type"}><i>types</i></ClLinks> x, (vector x) is the same as (array x (\*)). The <ClLinks  term={"type"}><i>type</i></ClLinks> (vector t), the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"string"}><b>string</b></ClLinks>, and the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"bit-vector"}><b>bit-vector</b></ClLinks> are *disjoint subtypes* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"vector"}><b>vector</b></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ Specializing.
 
 
 
-*size*—a non-negative <ClLinks styled={true} term={"fixnum"}><i>fixnum</i></ClLinks>. 
+*size*—a non-negative <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>. 
 
 
 
@@ -54,19 +54,15 @@ Specializing.
 
 
 
-This denotes the set of specialized <ClLinks styled={true} term={"vector"}><i>vectors</i></ClLinks> whose *element type* and <ClLinks styled={true} term={"dimension"}><i>dimension</i></ClLinks> match the specified values. Specifically: 
+This denotes the set of specialized <ClLinks  term={"vector"}><i>vectors</i></ClLinks> whose *element type* and <ClLinks  term={"dimension"}><i>dimension</i></ClLinks> match the specified values. Specifically: 
 
 
 
-If *element-type* is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***, <ClLinks styled={true} term={"vector"}><i>vectors</i></ClLinks> are not excluded on the basis of their *element type*. Otherwise, only those <ClLinks styled={true} term={"vector"}><i>vectors</i></ClLinks> are included whose *actual array element type* is the result of *upgrading element-type*; see Section 15.1.2.1 (Array Upgrading). 
-
-
+If *element-type* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***, <ClLinks  term={"vector"}><i>vectors</i></ClLinks> are not excluded on the basis of their *element type*. Otherwise, only those <ClLinks  term={"vector"}><i>vectors</i></ClLinks> are included whose *actual array element type* is the result of *upgrading element-type*; see Section 15.1.2.1 (Array Upgrading). 
 
 
 
 
-
- 
 
 
 
@@ -74,7 +70,11 @@ If *element-type* is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></C
 
 
 
-If a *size* is specified, the set includes only those <ClLinks styled={true} term={"vector"}><i>vectors</i></ClLinks> whose only <ClLinks styled={true} term={"dimension"}><i>dimension</i></ClLinks> is *size*. If the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\*** is specified instead of a *size*, the set is not restricted on the basis of <ClLinks styled={true} term={"dimension"}><i>dimension</i></ClLinks>. 
+ 
+
+
+
+If a *size* is specified, the set includes only those <ClLinks  term={"vector"}><i>vectors</i></ClLinks> whose only <ClLinks  term={"dimension"}><i>dimension</i></ClLinks> is *size*. If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\*** is specified instead of a *size*, the set is not restricted on the basis of <ClLinks  term={"dimension"}><i>dimension</i></ClLinks>. 
 
 
 
@@ -90,19 +90,19 @@ Section 15.1.2.2 (Required Kinds of Specialized Arrays), Section 2.4.8.3 (Sharps
 
 
 
-The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> (vector *e s*) is equivalent to the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> (array *e* (*s*)). 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> (vector *e s*) is equivalent to the <ClLinks  term={"type"}><i>type</i></ClLinks> (array *e* (*s*)). 
 
 
 
-The type (vector bit) has the name <ClLinks styled={true} term={"bit-vector"}><b>bit-vector</b></ClLinks>. 
+The type (vector bit) has the name <ClLinks  term={"bit-vector"}><b>bit-vector</b></ClLinks>. 
 
 
 
-The union of all <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> (vector *C*), where *C* is any <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"character"}><b>character</b></ClLinks>, has the name <ClLinks styled={true} term={"string"}><b>string</b></ClLinks>. 
+The union of all <ClLinks  term={"type"}><i>types</i></ClLinks> (vector *C*), where *C* is any <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"character"}><b>character</b></ClLinks>, has the name <ClLinks  term={"string"}><b>string</b></ClLinks>. 
 
 
 
-(vector \*) refers to all <ClLinks styled={true} term={"vector"}><i>vectors</i></ClLinks> regardless of element type, (vector *type-specifier*) refers only to those <ClLinks styled={true} term={"vector"}><i>vectors</i></ClLinks> that can result from giving *type-specifier* as the :element-type argument to <ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks>. 
+(vector \*) refers to all <ClLinks  term={"vector"}><i>vectors</i></ClLinks> regardless of element type, (vector *type-specifier*) refers only to those <ClLinks  term={"vector"}><i>vectors</i></ClLinks> that can result from giving *type-specifier* as the :element-type argument to <ClLinks  term={"make-array"}><b>make-array</b></ClLinks>. 
 
 
 

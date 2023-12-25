@@ -1,4 +1,4 @@
-**cis** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**cis** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"cis"}><b>cis</b></ClLinks> *radians → number* 
+<ClLinks  term={"cis"}><b>cis</b></ClLinks> *radians → number* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> . 
+<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"complex"}><i>complex</i></ClLinks> . 
 
 
 

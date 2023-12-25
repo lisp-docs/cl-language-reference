@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"find-method"}><b>find-method</b></ClLinks> *generic-function method-qualifiers specializers* &amp;optional *errorp* 
+<ClLinks  term={"find-method"}><b>find-method</b></ClLinks> *generic-function method-qualifiers specializers* &amp;optional *errorp* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"find-method"}><b>find-method</b></ClLinks> (*generic-function* <ClLinks styled={true} term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks>) 
+<ClLinks  term={"find-method"}><b>find-method</b></ClLinks> (*generic-function* <ClLinks  term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks>) 
 
 
 
@@ -34,19 +34,19 @@
 
 
 
-*method-qualifiers*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+*method-qualifiers*—a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
-*specializers*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+*specializers*—a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
-*errorp*—a *generalized boolean*. The default is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 
+*errorp*—a *generalized boolean*. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"method"}><i>method</i></ClLinks>—a *method object*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"method"}><i>method</i></ClLinks>—a *method object*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -54,19 +54,15 @@
 
 
 
-The *generic function* <ClLinks styled={true} term={"find-method"}><b>find-method</b></ClLinks> takes a *generic function* and returns the *method object* that agrees on <ClLinks styled={true} term={"qualifier"}><i>qualifiers</i></ClLinks> and *parameter specializers* with the *method-qualifiers* and *specializers* arguments of <ClLinks styled={true} term={"find-method"}><b>find-method</b></ClLinks>. *Method-qualifiers* contains the method <ClLinks styled={true} term={"qualifier"}><i>qualifiers</i></ClLinks> for the <ClLinks styled={true} term={"method"}><i>method</i></ClLinks>. The order of the method <ClLinks styled={true} term={"qualifier"}><i>qualifiers</i></ClLinks> is significant. For a definition of agreement in this context, see Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers). 
+The *generic function* <ClLinks  term={"find-method"}><b>find-method</b></ClLinks> takes a *generic function* and returns the *method object* that agrees on <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> and *parameter specializers* with the *method-qualifiers* and *specializers* arguments of <ClLinks  term={"find-method"}><b>find-method</b></ClLinks>. *Method-qualifiers* contains the method <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> for the <ClLinks  term={"method"}><i>method</i></ClLinks>. The order of the method <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> is significant. For a definition of agreement in this context, see Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers). 
 
 
 
-The *specializers* argument contains the parameter specializers for the <ClLinks styled={true} term={"method"}><i>method</i></ClLinks>. It must correspond in length to the number of required arguments of the *generic function*, or an error is signaled. This means that to obtain the default <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> on a given *generic-function*, a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> whose elements are the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> must be given. 
-
-
+The *specializers* argument contains the parameter specializers for the <ClLinks  term={"method"}><i>method</i></ClLinks>. It must correspond in length to the number of required arguments of the *generic function*, or an error is signaled. This means that to obtain the default <ClLinks  term={"method"}><i>method</i></ClLinks> on a given *generic-function*, a <ClLinks  term={"list"}><i>list</i></ClLinks> whose elements are the <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks> must be given. 
 
 
 
 
-
- 
 
 
 
@@ -74,7 +70,11 @@ The *specializers* argument contains the parameter specializers for the <ClLinks
 
 
 
-If there is no such <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> and *errorp* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, <ClLinks styled={true} term={"find-method"}><b>find-method</b></ClLinks> signals an error. If there is no such <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> and *errorp* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, <ClLinks styled={true} term={"find-method"}><b>find-method</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+ 
+
+
+
+If there is no such <ClLinks  term={"method"}><i>method</i></ClLinks> and *errorp* is <ClLinks  term={"true"}><i>true</i></ClLinks>, <ClLinks  term={"find-method"}><b>find-method</b></ClLinks> signals an error. If there is no such <ClLinks  term={"method"}><i>method</i></ClLinks> and *errorp* is <ClLinks  term={"false"}><i>false</i></ClLinks>, <ClLinks  term={"find-method"}><b>find-method</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -92,7 +92,7 @@ If there is no such <ClLinks styled={true} term={"method"}><i>method</i></ClLink
 
 
 
-<ClLinks styled={true} term={"add-method"}><b>add-method</b></ClLinks>, <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks styled={true} term={"defgeneric"}><b>defgeneric</b></ClLinks>, <ClLinks styled={true} term={"defmethod"}><b>defmethod</b></ClLinks> 
+<ClLinks  term={"add-method"}><b>add-method</b></ClLinks>, <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks>, <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> 
 
 
 
@@ -100,11 +100,11 @@ If there is no such <ClLinks styled={true} term={"method"}><i>method</i></ClLink
 
 
 
-If the *specializers* argument does not correspond in length to the number of required arguments of the *generic-function*, an an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> is signaled. 
+If the *specializers* argument does not correspond in length to the number of required arguments of the *generic-function*, an an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
 
 
 
-If there is no such <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> and *errorp* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, <ClLinks styled={true} term={"find-method"}><b>find-method</b></ClLinks> signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>. 
+If there is no such <ClLinks  term={"method"}><i>method</i></ClLinks> and *errorp* is <ClLinks  term={"true"}><i>true</i></ClLinks>, <ClLinks  term={"find-method"}><b>find-method</b></ClLinks> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks>. 
 
 
 

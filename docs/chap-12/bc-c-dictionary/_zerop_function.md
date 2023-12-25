@@ -1,4 +1,4 @@
-**zerop** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**zerop** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"zerop"}><b>zerop</b></ClLinks> *number → generalized-boolean* 
+<ClLinks  term={"zerop"}><b>zerop</b></ClLinks> *number → generalized-boolean* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
+<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is zero (*integer* , <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>, or <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> ); otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"number"}><i>number</i></ClLinks> is zero (*integer* , <ClLinks  term={"float"}><i>float</i></ClLinks>, or <ClLinks  term={"complex"}><i>complex</i></ClLinks> ); otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-Regardless of whether an <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> provides distinct representations for positive and negative floating-point zeros, (zerop -0.0) always returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 
+Regardless of whether an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> provides distinct representations for positive and negative floating-point zeros, (zerop -0.0) always returns <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 
@@ -54,7 +54,7 @@ Regardless of whether an <ClLinks styled={true} term={"implementation"}><i>imple
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is not a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -62,7 +62,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-(zerop <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>) *≡* (= <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> 0) 
+(zerop <ClLinks  term={"number"}><i>number</i></ClLinks>) *≡* (= <ClLinks  term={"number"}><i>number</i></ClLinks> 0) 
 
 
 

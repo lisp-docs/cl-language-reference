@@ -1,4 +1,4 @@
-**stream-external-format** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**stream-external-format** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"stream-external-format"}><b>stream-external-format</b></ClLinks> *stream → format* 
+<ClLinks  term={"stream-external-format"}><b>stream-external-format</b></ClLinks> *stream → format* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—a *file stream*. 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a *file stream*. 
 
 
 
-<ClLinks styled={true} term={"format"}><i>format</i></ClLinks>—an *external file format*. 
+<ClLinks  term={"format"}><i>format</i></ClLinks>—an *external file format*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns an *external file format designator* for the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
+Returns an *external file format designator* for the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -46,7 +46,7 @@ Returns an *external file format designator* for the <ClLinks styled={true} term
 
 
 
-the :external-format <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> to the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"open"}><b>open</b></ClLinks> and the <ClLinks styled={true} term={"with-open-file"}><b>with-open-file</b></ClLinks> <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks>. 
+the :external-format <ClLinks  term={"argument"}><i>argument</i></ClLinks> to the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"open"}><b>open</b></ClLinks> and the <ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> <ClLinks  term={"macro"}><i>macro</i></ClLinks>. 
 
 
 
@@ -54,7 +54,7 @@ the :external-format <ClLinks styled={true} term={"argument"}><i>argument</i></C
 
 
 
-The <ClLinks styled={true} term={"format"}><i>format</i></ClLinks> returned is not necessarily meaningful to other <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>. 
+The <ClLinks  term={"format"}><i>format</i></ClLinks> returned is not necessarily meaningful to other <ClLinks  term={"implementation"}><i>implementations</i></ClLinks>. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"package"}><b>package</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<ClLinks  term={"package"}><b>package</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is a <ClLinks styled={true} term={"namespace"}><i>namespace</i></ClLinks> that maps *symbol names* to <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>; see Section 11.1 (Package Concepts). 
+A <ClLinks  term={"package"}><i>package</i></ClLinks> is a <ClLinks  term={"namespace"}><i>namespace</i></ClLinks> that maps *symbol names* to <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>; see Section 11.1 (Package Concepts). 
 
 
 

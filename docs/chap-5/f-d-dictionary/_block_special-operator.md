@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"block"}><b>block</b></ClLinks> *name form*\* → \{result\}\* 
+<ClLinks  term={"block"}><b>block</b></ClLinks> *name form*\* → \{result\}\* 
 
 
 
@@ -26,15 +26,15 @@ Data and Control
 
 
 
-<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> if a *normal return* occurs, or else, if an *explicit return* occurs, the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> that were transferred. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks> if a *normal return* occurs, or else, if an *explicit return* occurs, the <ClLinks  term={"value"}><i>values</i></ClLinks> that were transferred. 
 
 
 
@@ -42,19 +42,19 @@ Data and Control
 
 
 
-<ClLinks styled={true} term={"block"}><b>block</b></ClLinks> *establishes* a <ClLinks styled={true} term={"block"}><i>block</i></ClLinks> named <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> and then evaluates <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> as an *implicit progn*. 
+<ClLinks  term={"block"}><b>block</b></ClLinks> *establishes* a <ClLinks  term={"block"}><i>block</i></ClLinks> named <ClLinks  term={"name"}><i>name</i></ClLinks> and then evaluates <ClLinks  term={"form"}><i>forms</i></ClLinks> as an *implicit progn*. 
 
 
 
-The *special operators* <ClLinks styled={true} term={"block"}><b>block</b></ClLinks> and <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks> work together to provide a structured, lexical, non-local exit facility. At any point lexically contained within <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>, <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks> can be used with the given <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> to return control and values from the <ClLinks styled={true} term={"block"}><b>block</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, except when an intervening <ClLinks styled={true} term={"block"}><i>block</i></ClLinks> with the same name has been *established*, in which case the outer <ClLinks styled={true} term={"block"}><i>block</i></ClLinks> is shadowed by the inner one. 
+The *special operators* <ClLinks  term={"block"}><b>block</b></ClLinks> and <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> work together to provide a structured, lexical, non-local exit facility. At any point lexically contained within <ClLinks  term={"form"}><i>forms</i></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> can be used with the given <ClLinks  term={"name"}><i>name</i></ClLinks> to return control and values from the <ClLinks  term={"block"}><b>block</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>, except when an intervening <ClLinks  term={"block"}><i>block</i></ClLinks> with the same name has been *established*, in which case the outer <ClLinks  term={"block"}><i>block</i></ClLinks> is shadowed by the inner one. 
 
 
 
-The <ClLinks styled={true} term={"block"}><i>block</i></ClLinks> named <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> has *lexical scope* and *dynamic extent*. 
+The <ClLinks  term={"block"}><i>block</i></ClLinks> named <ClLinks  term={"name"}><i>name</i></ClLinks> has *lexical scope* and *dynamic extent*. 
 
 
 
-Once established, a <ClLinks styled={true} term={"block"}><i>block</i></ClLinks> may only be exited once, whether by *normal return* or *explicit return*. 
+Once established, a <ClLinks  term={"block"}><i>block</i></ClLinks> may only be exited once, whether by *normal return* or *explicit return*. 
 
 **Examples:**
 ```lisp
@@ -76,7 +76,7 @@ Once established, a <ClLinks styled={true} term={"block"}><i>block</i></ClLinks>
 
 
 
-<ClLinks styled={true} term={"return"}><b>return</b></ClLinks>, <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks>, Section 3.1 (Evaluation) 
+<ClLinks  term={"return"}><b>return</b></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, Section 3.1 (Evaluation) 
 
 
 
@@ -96,7 +96,7 @@ Once established, a <ClLinks styled={true} term={"block"}><i>block</i></ClLinks>
 
 
 
-<ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> 
+<ClLinks  term={"catch"}><b>catch</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**defmacro** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**defmacro** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"defmacro"}><b>defmacro</b></ClLinks> *name lambda-list* [[ <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* 
+<ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> *name lambda-list* [[ <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*documentation*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>; not evaluated. 
+*documentation*—a <ClLinks  term={"string"}><i>string</i></ClLinks>; not evaluated. 
 
 
 
-<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>.  
+<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>.  
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<ClLinks styled={true} term={"defmacro"}><b>defmacro</b></ClLinks> 
+<ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-Defines <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> as a <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> by associating a *macro function* with that <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> in the global environment. The *macro function* is defined in the same *lexical environment* in which the <ClLinks styled={true} term={"defmacro"}><b>defmacro</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> appears. 
+Defines <ClLinks  term={"name"}><i>name</i></ClLinks> as a <ClLinks  term={"macro"}><i>macro</i></ClLinks> by associating a *macro function* with that <ClLinks  term={"name"}><i>name</i></ClLinks> in the global environment. The *macro function* is defined in the same *lexical environment* in which the <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears. 
 
 
 
@@ -58,7 +58,7 @@ The parameter variables in *lambda-list* are bound to destructured portions of t
 
 
 
-The expansion function accepts two arguments, a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> and an <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>. The expansion function returns a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. The body of the expansion function is specified by <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. <ClLinks styled={true} term={"form"}><i>Forms</i></ClLinks> are executed in order. The value of the last <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> executed is returned as the expansion of the <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks>. The body <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> of the expansion function (but not the *lambda-list*) are implicitly enclosed in a <ClLinks styled={true} term={"block"}><i>block</i></ClLinks> whose name is <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>. 
+The expansion function accepts two arguments, a <ClLinks  term={"form"}><i>form</i></ClLinks> and an <ClLinks  term={"environment"}><i>environment</i></ClLinks>. The expansion function returns a <ClLinks  term={"form"}><i>form</i></ClLinks>. The body of the expansion function is specified by <ClLinks  term={"form"}><i>forms</i></ClLinks>. <ClLinks  term={"form"}><i>Forms</i></ClLinks> are executed in order. The value of the last <ClLinks  term={"form"}><i>form</i></ClLinks> executed is returned as the expansion of the <ClLinks  term={"macro"}><i>macro</i></ClLinks>. The body <ClLinks  term={"form"}><i>forms</i></ClLinks> of the expansion function (but not the *lambda-list*) are implicitly enclosed in a <ClLinks  term={"block"}><i>block</i></ClLinks> whose name is <ClLinks  term={"name"}><i>name</i></ClLinks>. 
 
 
 
@@ -66,23 +66,23 @@ The *lambda-list* conforms to the requirements described in Section 3.4.4 (Macro
 
 
 
-*Documentation* is attached as a *documentation string* to <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> (as kind <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>) and to the *macro function*. 
+*Documentation* is attached as a *documentation string* to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind <ClLinks  term={"function"}><b>function</b></ClLinks>) and to the *macro function*. 
 
 
 
-<ClLinks styled={true} term={"defmacro"}><b>defmacro</b></ClLinks> can be used to redefine a <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> or to replace a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> definition with a <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> definition. 
+<ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> can be used to redefine a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or to replace a <ClLinks  term={"function"}><i>function</i></ClLinks> definition with a <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition. 
 
 
 
-Recursive expansion of the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> returned must terminate, including the expansion of other <ClLinks styled={true} term={"macro"}><i>macros</i></ClLinks> which are <ClLinks styled={true} term={"subform"}><i>subforms</i></ClLinks> of other <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> returned. 
+Recursive expansion of the <ClLinks  term={"form"}><i>form</i></ClLinks> returned must terminate, including the expansion of other <ClLinks  term={"macro"}><i>macros</i></ClLinks> which are <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of other <ClLinks  term={"form"}><i>forms</i></ClLinks> returned. 
 
 
 
-The consequences are undefined if the result of fully macroexpanding a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> contains any *circular list structure* except in *literal objects*. 
+The consequences are undefined if the result of fully macroexpanding a <ClLinks  term={"form"}><i>form</i></ClLinks> contains any *circular list structure* except in *literal objects*. 
 
 
 
-If a <ClLinks styled={true} term={"defmacro"}><b>defmacro</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> appears as a *top level form*, the <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> must store the <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> definition at compile time, so that occurrences of the macro later on in the file can be expanded correctly. Users must ensure that the body of the <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> can be evaluated at compile time if it is referenced within the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> being *compiled*. 
+If a <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a *top level form*, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must store the <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition at compile time, so that occurrences of the macro later on in the file can be expanded correctly. Users must ensure that the body of the <ClLinks  term={"macro"}><i>macro</i></ClLinks> can be evaluated at compile time if it is referenced within the <ClLinks  term={"file"}><i>file</i></ClLinks> being *compiled*. 
 
 
 
@@ -145,11 +145,11 @@ T
 
 
 
-<ClLinks styled={true} term={"define-compiler-macro"}><b>define-compiler-macro</b></ClLinks>, <ClLinks styled={true} term={"destructuring-bind"}><b>destructuring-bind</b></ClLinks>, **documentation**, <ClLinks styled={true} term={"macroexpand"}><b>macroexpand</b></ClLinks>, 
+<ClLinks  term={"define-compiler-macro"}><b>define-compiler-macro</b></ClLinks>, <ClLinks  term={"destructuring-bind"}><b>destructuring-bind</b></ClLinks>, **documentation**, <ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks>, 
 
 
 
-**\*macroexpand-hook\***, <ClLinks styled={true} term={"macrolet"}><b>macrolet</b></ClLinks>, <ClLinks styled={true} term={"macro-function"}><b>macro-function</b></ClLinks>, Section 3.1 (Evaluation), Section 3.2 (Compilation), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
+**\*macroexpand-hook\***, <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>, <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks>, Section 3.1 (Evaluation), Section 3.2 (Compilation), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
 
 
 

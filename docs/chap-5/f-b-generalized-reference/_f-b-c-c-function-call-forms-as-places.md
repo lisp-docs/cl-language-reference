@@ -2,7 +2,7 @@
 
 
 
-A *function form* can be used as a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> if it falls into one of the following categories: 
+A *function form* can be used as a <ClLinks  term={"place"}><i>place</i></ClLinks> if it falls into one of the following categories: 
 
 
 
@@ -34,19 +34,15 @@ Data and Control
 
 
 
-In the case of <ClLinks styled={true} term={"subseq"}><b>subseq</b></ClLinks>, the replacement value must be a *sequence* whose elements might be contained by the sequence argument to <ClLinks styled={true} term={"subseq"}><b>subseq</b></ClLinks>, but does not have to be a *sequence* of the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> as the *sequence* of which the subsequence is specified. If the length of the replacement value does not equal the length of the subsequence to be replaced, then the shorter length determines the number of elements to be stored, as for <ClLinks styled={true} term={"replace"}><b>replace</b></ClLinks>. 
+In the case of <ClLinks  term={"subseq"}><b>subseq</b></ClLinks>, the replacement value must be a *sequence* whose elements might be contained by the sequence argument to <ClLinks  term={"subseq"}><b>subseq</b></ClLinks>, but does not have to be a *sequence* of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as the *sequence* of which the subsequence is specified. If the length of the replacement value does not equal the length of the subsequence to be replaced, then the shorter length determines the number of elements to be stored, as for <ClLinks  term={"replace"}><b>replace</b></ClLinks>. 
 
 
 
-*•* A function call form whose first element is the name of a selector function constructed by <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks>. The function name must refer to the global function definition, rather than a locally defined <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
+*•* A function call form whose first element is the name of a selector function constructed by <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks>. The function name must refer to the global function definition, rather than a locally defined <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
-*•* A function call form whose first element is the name of any one of the functions in Figure 5–8, provided that the supplied argument to that function is in turn a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> form; in this case the new <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> has stored back into it the result of applying the supplied “update” function. 
-
-
-
-
+*•* A function call form whose first element is the name of any one of the functions in Figure 5–8, provided that the supplied argument to that function is in turn a <ClLinks  term={"place"}><i>place</i></ClLinks> form; in this case the new <ClLinks  term={"place"}><i>place</i></ClLinks> has stored back into it the result of applying the supplied “update” function. 
 
 
 
@@ -58,11 +54,15 @@ In the case of <ClLinks styled={true} term={"subseq"}><b>subseq</b></ClLinks>, t
 
 
 
-|**Function name Argument that is a** <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> **Update function used**|
+
+
+
+
+|**Function name Argument that is a** <ClLinks  term={"place"}><i>place</i></ClLinks> **Update function used**|
 
 | :- |
 
-|<p><ClLinks styled={true} term={"ldb"}><b>ldb</b></ClLinks> second <ClLinks styled={true} term={"dpb"}><b>dpb</b></ClLinks> </p><p><ClLinks styled={true} term={"mask-field"}><b>mask-field</b></ClLinks> second <ClLinks styled={true} term={"deposit-field"}><b>deposit-field</b></ClLinks> </p><p><ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> first <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks></p>|
+|<p><ClLinks  term={"ldb"}><b>ldb</b></ClLinks> second <ClLinks  term={"dpb"}><b>dpb</b></ClLinks> </p><p><ClLinks  term={"mask-field"}><b>mask-field</b></ClLinks> second <ClLinks  term={"deposit-field"}><b>deposit-field</b></ClLinks> </p><p><ClLinks  term={"getf"}><b>getf</b></ClLinks> first <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks></p>|
 
 
 
@@ -72,15 +72,15 @@ In the case of <ClLinks styled={true} term={"subseq"}><b>subseq</b></ClLinks>, t
 
 
 
-During the <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> expansion of these <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>, it is necessary to call <ClLinks styled={true} term={"get-setf-expansion"}><b>get-setf-expansion</b></ClLinks> in order to figure out how the inner, nested generalized variable must be treated. 
+During the <ClLinks  term={"setf"}><b>setf</b></ClLinks> expansion of these <ClLinks  term={"form"}><i>forms</i></ClLinks>, it is necessary to call <ClLinks  term={"get-setf-expansion"}><b>get-setf-expansion</b></ClLinks> in order to figure out how the inner, nested generalized variable must be treated. 
 
 
 
-The information from <ClLinks styled={true} term={"get-setf-expansion"}><b>get-setf-expansion</b></ClLinks> is used as follows. 
+The information from <ClLinks  term={"get-setf-expansion"}><b>get-setf-expansion</b></ClLinks> is used as follows. 
 
 
 
-<ClLinks styled={true} term={"ldb"}><b>ldb</b></ClLinks> 
+<ClLinks  term={"ldb"}><b>ldb</b></ClLinks> 
 
 
 
@@ -92,7 +92,7 @@ In a form such as:
 
 
 
-the place referred to by the *place-form* must always be both <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> and *written*; note 
+the place referred to by the *place-form* must always be both <ClLinks  term={"read"}><i>read</i></ClLinks> and *written*; note 
 
 
 
@@ -100,11 +100,11 @@ that the update is to the generalized variable specified by *place-form*, not to
 
 
 
-object of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"integer"}><b>integer</b></ClLinks>. 
+object of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"integer"}><b>integer</b></ClLinks>. 
 
 
 
-Thus this <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> should generate code to do the following: 
+Thus this <ClLinks  term={"setf"}><b>setf</b></ClLinks> should generate code to do the following: 
 
 
 
@@ -120,11 +120,11 @@ Thus this <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> should gene
 
 
 
-4\. Do the <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> from *place-form*. 
+4\. Do the <ClLinks  term={"read"}><i>read</i></ClLinks> from *place-form*. 
 
 
 
-5\. Do the <ClLinks styled={true} term={"write"}><i>write</i></ClLinks> into *place-form* with the given bits of the *integer* fetched in 
+5\. Do the <ClLinks  term={"write"}><i>write</i></ClLinks> into *place-form* with the given bits of the *integer* fetched in 
 
 
 
@@ -144,7 +144,7 @@ is to that altered *integer* , because step 4 is done after the *value-form* eva
 
 
 
-Nevertheless, the evaluations required for <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> the temporary variables are 
+Nevertheless, the evaluations required for <ClLinks  term={"binding"}><i>binding</i></ClLinks> the temporary variables are 
 
 
 
@@ -200,15 +200,15 @@ Data and Control
 
 
 
-<ClLinks styled={true} term={"mask-field"}><b>mask-field</b></ClLinks> 
+<ClLinks  term={"mask-field"}><b>mask-field</b></ClLinks> 
 
 
 
-This case is the same as <ClLinks styled={true} term={"ldb"}><b>ldb</b></ClLinks> in all essential aspects. 
+This case is the same as <ClLinks  term={"ldb"}><b>ldb</b></ClLinks> in all essential aspects. 
 
 
 
-<ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> 
+<ClLinks  term={"getf"}><b>getf</b></ClLinks> 
 
 
 
@@ -220,7 +220,7 @@ In a form such as:
 
 
 
-the place referred to by *place-form* must always be both <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> and *written*; note that 
+the place referred to by *place-form* must always be both <ClLinks  term={"read"}><i>read</i></ClLinks> and *written*; note that 
 
 
 
@@ -228,11 +228,11 @@ the update is to the generalized variable specified by *place-form*, not necessa
 
 
 
-the particular <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that is the property list in question. 
+the particular <ClLinks  term={"list"}><i>list</i></ClLinks> that is the property list in question. 
 
 
 
-Thus this <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> should generate code to do the following: 
+Thus this <ClLinks  term={"setf"}><b>setf</b></ClLinks> should generate code to do the following: 
 
 
 
@@ -248,11 +248,11 @@ Thus this <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> should gene
 
 
 
-4\. Do the <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> from *place-form*. 
+4\. Do the <ClLinks  term={"read"}><i>read</i></ClLinks> from *place-form*. 
 
 
 
-5\. Do the <ClLinks styled={true} term={"write"}><i>write</i></ClLinks> into *place-form* with a possibly-new property list obtained 
+5\. Do the <ClLinks  term={"write"}><i>write</i></ClLinks> into *place-form* with a possibly-new property list obtained 
 
 
 
@@ -296,7 +296,7 @@ denoted by *ind-form* is to that altered list, because step 4 is done after the
 
 
 
-*value-form* evaluation. Nevertheless, the evaluations required for <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> the 
+*value-form* evaluation. Nevertheless, the evaluations required for <ClLinks  term={"binding"}><i>binding</i></ClLinks> the 
 
 
 

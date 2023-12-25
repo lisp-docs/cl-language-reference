@@ -1,4 +1,4 @@
-**length** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**length** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"length"}><b>length</b></ClLinks> *sequence → n* 
+<ClLinks  term={"length"}><b>length</b></ClLinks> *sequence → n* 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Returns the number of <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> in *sequence*. 
+Returns the number of <ClLinks  term={"element"}><i>elements</i></ClLinks> in *sequence*. 
 
 
 
-If *sequence* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , the active length as specified by the *fill pointer* is returned. 
+If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , the active length as specified by the *fill pointer* is returned. 
 
 
 
@@ -48,7 +48,7 @@ If *sequence* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks
 
 
 
-Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. 
 
 
 
@@ -56,7 +56,7 @@ Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i
 
 
 
-<ClLinks styled={true} term={"list-length"}><b>list-length</b></ClLinks>, <ClLinks styled={true} term={"sequence"}><b>sequence</b></ClLinks> 
+<ClLinks  term={"list-length"}><b>list-length</b></ClLinks>, <ClLinks  term={"sequence"}><b>sequence</b></ClLinks> 
 
 
 

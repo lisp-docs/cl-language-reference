@@ -1,4 +1,4 @@
-**makunbound** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**makunbound** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"makunbound"}><b>makunbound</b></ClLinks> *symbol → symbol* 
+<ClLinks  term={"makunbound"}><b>makunbound</b></ClLinks> *symbol → symbol* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-Makes the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> be <ClLinks styled={true} term={"unbound"}><i>unbound</i></ClLinks>, regardless of whether it was previously <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks>. 
+Makes the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> be <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>, regardless of whether it was previously <ClLinks  term={"bound"}><i>bound</i></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@ a → 1
 
 
 
-The *value cell* of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is modified. 
+The *value cell* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is modified. 
 
 
 
@@ -46,7 +46,7 @@ The *value cell* of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLink
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"boundp"}><b>boundp</b></ClLinks>, <ClLinks styled={true} term={"fmakunbound"}><b>fmakunbound</b></ClLinks> 
+<ClLinks  term={"boundp"}><b>boundp</b></ClLinks>, <ClLinks  term={"fmakunbound"}><b>fmakunbound</b></ClLinks> 
 
 
 

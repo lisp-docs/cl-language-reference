@@ -1,24 +1,24 @@
-**sinh, cosh, tanh, asinh, acosh, atanh** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks>
+**sinh, cosh, tanh, asinh, acosh, atanh** <ClLinks  term={"function"}><i>Function</i></ClLinks>
 
 **Syntax:**
 
-<ClLinks styled={true} term={"sinh"}><b>sinh</b></ClLinks> *number → result*
+<ClLinks  term={"sinh"}><b>sinh</b></ClLinks> *number → result*
 
-<ClLinks styled={true} term={"cosh"}><b>cosh</b></ClLinks> *number → result*
+<ClLinks  term={"cosh"}><b>cosh</b></ClLinks> *number → result*
 
-<ClLinks styled={true} term={"tanh"}><b>tanh</b></ClLinks> *number → result*
+<ClLinks  term={"tanh"}><b>tanh</b></ClLinks> *number → result*
 
-<ClLinks styled={true} term={"asinh"}><b>asinh</b></ClLinks> *number → result*
+<ClLinks  term={"asinh"}><b>asinh</b></ClLinks> *number → result*
 
-<ClLinks styled={true} term={"acosh"}><b>acosh</b></ClLinks> *number → result*
+<ClLinks  term={"acosh"}><b>acosh</b></ClLinks> *number → result*
 
-<ClLinks styled={true} term={"atanh"}><b>atanh</b></ClLinks> *number → result*
+<ClLinks  term={"atanh"}><b>atanh</b></ClLinks> *number → result*
 
 **Arguments and Values:**
 
-<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> .
+<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> .
 
-*result*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> .
+*result*—a <ClLinks  term={"number"}><i>number</i></ClLinks> .
 
 **Description:**
 
@@ -77,14 +77,14 @@ The branch cut for the inverse hyperbolic tangent function is in two pieces: one
 
 **Exceptional Situations:**
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is not a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
 
 **See Also:**
 
-<ClLinks styled={true} term={"log"}><b>log</b></ClLinks>, <ClLinks styled={true} term={"sqrt"}><b>sqrt</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability)
+<ClLinks  term={"log"}><b>log</b></ClLinks>, <ClLinks  term={"sqrt"}><b>sqrt</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability)
 
 **Notes:**
 
-The result of <ClLinks styled={true} term={"acosh"}><b>acosh</b></ClLinks> may be a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> even if <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is not a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> ; this occurs when <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is less than one. Also, the result of <ClLinks styled={true} term={"atanh"}><b>atanh</b></ClLinks> may be a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> even if <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is not a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> ; this occurs when the absolute value of <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is greater than one.
+The result of <ClLinks  term={"acosh"}><b>acosh</b></ClLinks> may be a <ClLinks  term={"complex"}><i>complex</i></ClLinks> even if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ; this occurs when <ClLinks  term={"number"}><i>number</i></ClLinks> is less than one. Also, the result of <ClLinks  term={"atanh"}><b>atanh</b></ClLinks> may be a <ClLinks  term={"complex"}><i>complex</i></ClLinks> even if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ; this occurs when the absolute value of <ClLinks  term={"number"}><i>number</i></ClLinks> is greater than one.
 
 The branch cut formulae are mathematically correct, assuming completely accurate computation. Implementors should consult a good text on numerical analysis. The formulae given above are not necessarily the simplest ones for real-valued computations; they are chosen to define the branch cuts in desirable ways for the complex case.

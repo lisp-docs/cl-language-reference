@@ -1,4 +1,4 @@
-**gcd** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**gcd** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"gcd"}><b>gcd</b></ClLinks> &amp;rest *integers → greatest-common-denominator* 
+<ClLinks  term={"gcd"}><b>gcd</b></ClLinks> &amp;rest *integers → greatest-common-denominator* 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Returns the greatest common divisor of *integers*. If only one *integer* is supplied, its absolute value is returned. If no *integers* are given, <ClLinks styled={true} term={"gcd"}><b>gcd</b></ClLinks> returns 0, which is an identity for this operation. 
+Returns the greatest common divisor of *integers*. If only one *integer* is supplied, its absolute value is returned. If no *integers* are given, <ClLinks  term={"gcd"}><b>gcd</b></ClLinks> returns 0, which is an identity for this operation. 
 
 
 
@@ -57,7 +57,7 @@ Returns the greatest common divisor of *integers*. If only one *integer* is supp
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if any *integer* is not an *integer* . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if any *integer* is not an *integer* . 
 
 
 
@@ -65,7 +65,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"lcm"}><b>lcm</b></ClLinks> 
+<ClLinks  term={"lcm"}><b>lcm</b></ClLinks> 
 
 
 

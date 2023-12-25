@@ -1,4 +1,4 @@
-**stream-element-type** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**stream-element-type** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"stream-element-type"}><b>stream-element-type</b></ClLinks> *stream → typespec* 
+<ClLinks  term={"stream-element-type"}><b>stream-element-type</b></ClLinks> *stream → typespec* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<ClLinks styled={true} term={"stream-element-type"}><b>stream-element-type</b></ClLinks> returns a *type specifier* that indicates the <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> that may be read from or written to <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
+<ClLinks  term={"stream-element-type"}><b>stream-element-type</b></ClLinks> returns a *type specifier* that indicates the <ClLinks  term={"type"}><i>types</i></ClLinks> of <ClLinks  term={"object"}><i>objects</i></ClLinks> that may be read from or written to <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"stream"}><i>Streams</i></ClLinks> created by <ClLinks styled={true} term={"open"}><b>open</b></ClLinks> have an *element type* restricted to <ClLinks styled={true} term={"integer"}><b>integer</b></ClLinks> or a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"character"}><b>character</b></ClLinks>. 
+<ClLinks  term={"stream"}><i>Streams</i></ClLinks> created by <ClLinks  term={"open"}><b>open</b></ClLinks> have an *element type* restricted to <ClLinks  term={"integer"}><b>integer</b></ClLinks> or a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks>. 
 
 **Examples:**
 ```lisp
@@ -56,7 +56,7 @@
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 

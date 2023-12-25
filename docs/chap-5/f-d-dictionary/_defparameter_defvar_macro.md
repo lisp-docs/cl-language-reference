@@ -1,4 +1,4 @@
-**defparameter, defvar** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**defparameter, defvar** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"defparameter"}><b>defparameter</b></ClLinks> *name initial-value* [*documentation*] → name 
+<ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks> *name initial-value* [*documentation*] → name 
 
 
 
-<ClLinks styled={true} term={"defvar"}><b>defvar</b></ClLinks> <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> [*initial-value* [*documentation*]] → name 
+<ClLinks  term={"defvar"}><b>defvar</b></ClLinks> <ClLinks  term={"name"}><i>name</i></ClLinks> [*initial-value* [*documentation*]] → name 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>; not evaluated. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>; not evaluated. 
 
 
 
-*initial-value*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; for <ClLinks styled={true} term={"defparameter"}><b>defparameter</b></ClLinks>, it is always *evaluated*, but for <ClLinks styled={true} term={"defvar"}><b>defvar</b></ClLinks> it is *evaluated* only if <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is not already <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks>. 
+*initial-value*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; for <ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks>, it is always *evaluated*, but for <ClLinks  term={"defvar"}><b>defvar</b></ClLinks> it is *evaluated* only if <ClLinks  term={"name"}><i>name</i></ClLinks> is not already <ClLinks  term={"bound"}><i>bound</i></ClLinks>. 
 
 
 
-*documentation*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>; not evaluated. 
+*documentation*—a <ClLinks  term={"string"}><i>string</i></ClLinks>; not evaluated. 
 
 
 
@@ -34,23 +34,23 @@
 
 
 
-<ClLinks styled={true} term={"defparameter"}><b>defparameter</b></ClLinks> and <ClLinks styled={true} term={"defvar"}><b>defvar</b></ClLinks> *establish name* as a *dynamic variable*. 
+<ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks> and <ClLinks  term={"defvar"}><b>defvar</b></ClLinks> *establish name* as a *dynamic variable*. 
 
 
 
-<ClLinks styled={true} term={"defparameter"}><b>defparameter</b></ClLinks> unconditionally <ClLinks styled={true} term={"assign"}><i>assigns</i></ClLinks> the *initial-value* to the *dynamic variable* named <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>. <ClLinks styled={true} term={"defvar"}><b>defvar</b></ClLinks>, by contrast, *assigns initial-value* (if supplied) to the *dynamic variable* named <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> only if <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is not already <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks>. 
+<ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks> unconditionally <ClLinks  term={"assign"}><i>assigns</i></ClLinks> the *initial-value* to the *dynamic variable* named <ClLinks  term={"name"}><i>name</i></ClLinks>. <ClLinks  term={"defvar"}><b>defvar</b></ClLinks>, by contrast, *assigns initial-value* (if supplied) to the *dynamic variable* named <ClLinks  term={"name"}><i>name</i></ClLinks> only if <ClLinks  term={"name"}><i>name</i></ClLinks> is not already <ClLinks  term={"bound"}><i>bound</i></ClLinks>. 
 
 
 
-If no *initial-value* is supplied, <ClLinks styled={true} term={"defvar"}><b>defvar</b></ClLinks> leaves the *value cell* of the *dynamic variable* named <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> undisturbed; if <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> was previously <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks>, its old <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> persists, and if it was previously <ClLinks styled={true} term={"unbound"}><i>unbound</i></ClLinks>, it remains <ClLinks styled={true} term={"unbound"}><i>unbound</i></ClLinks>. 
+If no *initial-value* is supplied, <ClLinks  term={"defvar"}><b>defvar</b></ClLinks> leaves the *value cell* of the *dynamic variable* named <ClLinks  term={"name"}><i>name</i></ClLinks> undisturbed; if <ClLinks  term={"name"}><i>name</i></ClLinks> was previously <ClLinks  term={"bound"}><i>bound</i></ClLinks>, its old <ClLinks  term={"value"}><i>value</i></ClLinks> persists, and if it was previously <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>, it remains <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>. 
 
 
 
-If *documentation* is supplied, it is attached to <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> as a *documentation string* of kind **variable**. 
+If *documentation* is supplied, it is attached to <ClLinks  term={"name"}><i>name</i></ClLinks> as a *documentation string* of kind **variable**. 
 
 
 
-<ClLinks styled={true} term={"defparameter"}><b>defparameter</b></ClLinks> and <ClLinks styled={true} term={"defvar"}><b>defvar</b></ClLinks> normally appear as a *top level form*, but it is meaningful for them to appear as *non-top-level forms*. However, the compile-time side effects described below only take place when they appear as *top level forms*. 
+<ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks> and <ClLinks  term={"defvar"}><b>defvar</b></ClLinks> normally appear as a *top level form*, but it is meaningful for them to appear as *non-top-level forms*. However, the compile-time side effects described below only take place when they appear as *top level forms*. 
 
 
 
@@ -112,11 +112,11 @@ The choice of whether to use **defparameter** or **defvar** has visible conseque
 
 
 
-If a <ClLinks styled={true} term={"defvar"}><b>defvar</b></ClLinks> or <ClLinks styled={true} term={"defparameter"}><b>defparameter</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> appears as a *top level form*, the <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> must recognize that the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> has been proclaimed <ClLinks styled={true} term={"special"}><b>special</b></ClLinks>. However, it must neither <ClLinks styled={true} term={"evaluate"}><i>evaluate</i></ClLinks> the *initial-value form* nor <ClLinks styled={true} term={"assign"}><i>assign</i></ClLinks> the *dynamic variable* named <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> at compile time. 
+If a <ClLinks  term={"defvar"}><b>defvar</b></ClLinks> or <ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a *top level form*, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must recognize that the <ClLinks  term={"name"}><i>name</i></ClLinks> has been proclaimed <ClLinks  term={"special"}><b>special</b></ClLinks>. However, it must neither <ClLinks  term={"evaluate"}><i>evaluate</i></ClLinks> the *initial-value form* nor <ClLinks  term={"assign"}><i>assign</i></ClLinks> the *dynamic variable* named <ClLinks  term={"name"}><i>name</i></ClLinks> at compile time. 
 
 
 
-There may be additional (<ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>) compile-time or run-time side effects, as long as such effects do not interfere with the correct operation of *conforming programs*. 
+There may be additional (<ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>) compile-time or run-time side effects, as long as such effects do not interfere with the correct operation of *conforming programs*. 
 
 
 
@@ -124,7 +124,7 @@ There may be additional (<ClLinks styled={true} term={"implementation-defined"}>
 
 
 
-<ClLinks styled={true} term={"defvar"}><b>defvar</b></ClLinks> is affected by whether <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is already <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks>. 
+<ClLinks  term={"defvar"}><b>defvar</b></ClLinks> is affected by whether <ClLinks  term={"name"}><i>name</i></ClLinks> is already <ClLinks  term={"bound"}><i>bound</i></ClLinks>. 
 
 
 
@@ -132,7 +132,7 @@ There may be additional (<ClLinks styled={true} term={"implementation-defined"}>
 
 
 
-<ClLinks styled={true} term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks styled={true} term={"defconstant"}><b>defconstant</b></ClLinks>, **documentation**, Section 3.2 (Compilation) 
+<ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks>, **documentation**, Section 3.2 (Compilation) 
 
 
 
@@ -140,15 +140,15 @@ There may be additional (<ClLinks styled={true} term={"implementation-defined"}>
 
 
 
-It is customary to name *dynamic variables* with an <ClLinks styled={true} term={"asterisk"}><i>asterisk</i></ClLinks> at the beginning and end of the name. e.g., \*foo\* is a good name for a *dynamic variable*, but not for a *lexical variable*; foo is a good name for a *lexical variable*, but not for a *dynamic variable*. This naming convention is observed for all *defined names* in Common Lisp; however, neither *conforming programs* nor *conforming implementations* are obliged to adhere to this convention. 
+It is customary to name *dynamic variables* with an <ClLinks  term={"asterisk"}><i>asterisk</i></ClLinks> at the beginning and end of the name. e.g., \*foo\* is a good name for a *dynamic variable*, but not for a *lexical variable*; foo is a good name for a *lexical variable*, but not for a *dynamic variable*. This naming convention is observed for all *defined names* in Common Lisp; however, neither *conforming programs* nor *conforming implementations* are obliged to adhere to this convention. 
 
 
 
-The intent of the permission for additional side effects is to allow <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> to do normal “bookkeeping” that accompanies definitions. For example, the *macro expansion* of a <ClLinks styled={true} term={"defvar"}><b>defvar</b></ClLinks> or <ClLinks styled={true} term={"defparameter"}><b>defparameter</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> might include code that arranges to record the name of the source file in which the definition occurs. 
+The intent of the permission for additional side effects is to allow <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> to do normal “bookkeeping” that accompanies definitions. For example, the *macro expansion* of a <ClLinks  term={"defvar"}><b>defvar</b></ClLinks> or <ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> might include code that arranges to record the name of the source file in which the definition occurs. 
 
 
 
-<ClLinks styled={true} term={"defparameter"}><b>defparameter</b></ClLinks> and <ClLinks styled={true} term={"defvar"}><b>defvar</b></ClLinks> might be defined as follows: 
+<ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks> and <ClLinks  term={"defvar"}><b>defvar</b></ClLinks> might be defined as follows: 
 
 
 

@@ -1,4 +1,4 @@
-**list-all-packages** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**list-all-packages** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"list-all-packages"}><b>list-all-packages</b></ClLinks> *⟨no arguments⟩ → packages* 
+<ClLinks  term={"list-all-packages"}><b>list-all-packages</b></ClLinks> *⟨no arguments⟩ → packages* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"package"}><i>packages</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *package objects*. 
+<ClLinks  term={"package"}><i>packages</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *package objects*. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks styled={true} term={"list-all-packages"}><b>list-all-packages</b></ClLinks> returns a *fresh list* of all *registered packages*. 
+<ClLinks  term={"list-all-packages"}><b>list-all-packages</b></ClLinks> returns a *fresh list* of all *registered packages*. 
 
 
 
@@ -36,7 +36,7 @@
 
 
 
-<ClLinks styled={true} term={"defpackage"}><b>defpackage</b></ClLinks>, <ClLinks styled={true} term={"delete-package"}><b>delete-package</b></ClLinks>, <ClLinks styled={true} term={"make-package"}><b>make-package</b></ClLinks> 
+<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks>, <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks>, <ClLinks  term={"make-package"}><b>make-package</b></ClLinks> 
 
 
 

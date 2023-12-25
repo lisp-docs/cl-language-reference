@@ -1,4 +1,4 @@
-**ldb-test** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**ldb-test** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"ldb-test"}><b>ldb-test</b></ClLinks> *bytespec integer ! generalized-boolean* 
+<ClLinks  term={"ldb-test"}><b>ldb-test</b></ClLinks> *bytespec integer ! generalized-boolean* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if any of the bits of the byte in *integer* specified by *bytespec* is non-zero; otherwise returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if any of the bits of the byte in *integer* specified by *bytespec* is non-zero; otherwise returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -44,7 +44,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if any of the
 
 
 
-<ClLinks styled={true} term={"byte"}><b>byte</b></ClLinks>, <ClLinks styled={true} term={"ldb"}><b>ldb</b></ClLinks>, <ClLinks styled={true} term={"zerop"}><b>zerop</b></ClLinks> 
+<ClLinks  term={"byte"}><b>byte</b></ClLinks>, <ClLinks  term={"ldb"}><b>ldb</b></ClLinks>, <ClLinks  term={"zerop"}><b>zerop</b></ClLinks> 
 
 
 

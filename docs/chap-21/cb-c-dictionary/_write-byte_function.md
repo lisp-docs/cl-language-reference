@@ -1,4 +1,4 @@
-**write-byte** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**write-byte** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"write-byte"}><b>write-byte</b></ClLinks> *byte stream → byte* 
+<ClLinks  term={"write-byte"}><b>write-byte</b></ClLinks> *byte stream → byte* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"byte"}><i>byte</i></ClLinks>—an *integer* of the *stream element type* of <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
+<ClLinks  term={"byte"}><i>byte</i></ClLinks>—an *integer* of the *stream element type* of <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—a *binary output stream*. 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a *binary output stream*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks styled={true} term={"write-byte"}><b>write-byte</b></ClLinks> writes one byte, <ClLinks styled={true} term={"byte"}><i>byte</i></ClLinks>, to <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
+<ClLinks  term={"write-byte"}><b>write-byte</b></ClLinks> writes one byte, <ClLinks  term={"byte"}><i>byte</i></ClLinks>, to <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is modified. 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks> is modified. 
 
 
 
@@ -49,7 +49,7 @@
 
 
 
-The *element type* of the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
+The *element type* of the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -57,11 +57,11 @@ The *element type* of the <ClLinks styled={true} term={"stream"}><i>stream</i></
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> if <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is not a *binary output stream*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a *binary output stream*. 
 
 
 
-Might signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"byte"}><i>byte</i></ClLinks> is not an *integer* of the *stream element type* of <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
+Might signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"byte"}><i>byte</i></ClLinks> is not an *integer* of the *stream element type* of <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -69,7 +69,7 @@ Might signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLin
 
 
 
-<ClLinks styled={true} term={"read-byte"}><b>read-byte</b></ClLinks>, <ClLinks styled={true} term={"write-char"}><b>write-char</b></ClLinks>, <ClLinks styled={true} term={"write-sequence"}><b>write-sequence</b></ClLinks> 
+<ClLinks  term={"read-byte"}><b>read-byte</b></ClLinks>, <ClLinks  term={"write-char"}><b>write-char</b></ClLinks>, <ClLinks  term={"write-sequence"}><b>write-sequence</b></ClLinks> 
 
 
 
@@ -85,7 +85,7 @@ Might signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLin
 
 
 
-<ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks> 
+<ClLinks  term={"peek-char"}><b>peek-char</b></ClLinks> 
 
 
 

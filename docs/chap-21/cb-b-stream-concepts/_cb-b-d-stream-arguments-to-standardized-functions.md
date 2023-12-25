@@ -1,5 +1,5 @@
 
- The <ClLinks styled={true} term={"operator"}><i>operators</i></ClLinks> in Figure 21–7 accept *stream arguments* that might be either <ClLinks styled={true} term={"open"}><i>open</i></ClLinks> or *closed streams*. 
+ The <ClLinks  term={"operator"}><i>operators</i></ClLinks> in Figure 21–7 accept *stream arguments* that might be either <ClLinks  term={"open"}><i>open</i></ClLinks> or *closed streams*. 
 
 
 
@@ -15,7 +15,7 @@
 
 
 
-The <ClLinks styled={true} term={"operator"}><i>operators</i></ClLinks> in Figure 21–8 accept *stream arguments* that must be *open streams*. 
+The <ClLinks  term={"operator"}><i>operators</i></ClLinks> in Figure 21–8 accept *stream arguments* that must be *open streams*. 
 
 
 

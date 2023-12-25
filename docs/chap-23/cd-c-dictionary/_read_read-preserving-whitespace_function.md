@@ -1,4 +1,4 @@
-**read, read-preserving-whitespace** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**read, read-preserving-whitespace** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"read"}><b>read</b></ClLinks> &amp;optional *input-stream eof-error-p eof-value recursive-p → object* 
+<ClLinks  term={"read"}><b>read</b></ClLinks> &amp;optional *input-stream eof-error-p eof-value recursive-p → object* 
 
 
 
-<ClLinks styled={true} term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> &amp;optional *input-stream eof-error-p* 
+<ClLinks  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> &amp;optional *input-stream eof-error-p* 
 
 
 
@@ -30,19 +30,19 @@
 
 
 
-*eof-error-p*—a *generalized boolean*. The default is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 
+*eof-error-p*—a *generalized boolean*. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 
-*eof-value*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*recursive-p*—a *generalized boolean*. The default is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+*recursive-p*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> (parsed by the *Lisp reader* ) or the *eof-value*. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks> (parsed by the *Lisp reader* ) or the *eof-value*. 
 
 
 
@@ -50,11 +50,11 @@
 
 
 
-<ClLinks styled={true} term={"read"}><b>read</b></ClLinks> parses the printed representation of an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> from *input-stream* and builds such an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks  term={"read"}><b>read</b></ClLinks> parses the printed representation of an <ClLinks  term={"object"}><i>object</i></ClLinks> from *input-stream* and builds such an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> is like <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> but preserves any <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> that delimits the printed representation of the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. <ClLinks styled={true} term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> is exactly like <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> when the *recursive-p argument* to <ClLinks styled={true} term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 
+<ClLinks  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> is like <ClLinks  term={"read"}><b>read</b></ClLinks> but preserves any <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks  term={"character"}><i>character</i></ClLinks> that delimits the printed representation of the <ClLinks  term={"object"}><i>object</i></ClLinks>. <ClLinks  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> is exactly like <ClLinks  term={"read"}><b>read</b></ClLinks> when the *recursive-p argument* to <ClLinks  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 
@@ -74,19 +74,19 @@
 
 
 
-When <ClLinks styled={true} term={"read-suppress"}><b>\*read-suppress\*</b></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> throws away the delimiting <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> required by certain printed representations if it is a <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> ; but <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> preserves the character (using <ClLinks styled={true} term={"unread-char"}><b>unread-char</b></ClLinks>) if it is syntactically meaningful, because it could be the start of the next expression. 
+When <ClLinks  term={"read-suppress"}><b>\*read-suppress\*</b></ClLinks> is <ClLinks  term={"false"}><i>false</i></ClLinks>, <ClLinks  term={"read"}><b>read</b></ClLinks> throws away the delimiting <ClLinks  term={"character"}><i>character</i></ClLinks> required by certain printed representations if it is a <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks  term={"character"}><i>character</i></ClLinks> ; but <ClLinks  term={"read"}><b>read</b></ClLinks> preserves the character (using <ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks>) if it is syntactically meaningful, because it could be the start of the next expression. 
 
 
 
-If a file ends in a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> immediately followed by an *end of file*<sub>1</sub>, <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> reads the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> successfully; when called again, it sees the *end of file*<sub>1</sub> and only then acts according to *eof-error-p*. If a file contains ignorable text at the end, such as blank lines and comments, <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> does not consider it to end in the middle of an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+If a file ends in a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> or a <ClLinks  term={"number"}><i>number</i></ClLinks> immediately followed by an *end of file*<sub>1</sub>, <ClLinks  term={"read"}><b>read</b></ClLinks> reads the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> or <ClLinks  term={"number"}><i>number</i></ClLinks> successfully; when called again, it sees the *end of file*<sub>1</sub> and only then acts according to *eof-error-p*. If a file contains ignorable text at the end, such as blank lines and comments, <ClLinks  term={"read"}><b>read</b></ClLinks> does not consider it to end in the middle of an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-If *recursive-p* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the call to <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> is expected to be made from within some function that itself has been called from <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> or from a similar input function, rather than from the top level. 
+If *recursive-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, the call to <ClLinks  term={"read"}><b>read</b></ClLinks> is expected to be made from within some function that itself has been called from <ClLinks  term={"read"}><b>read</b></ClLinks> or from a similar input function, rather than from the top level. 
 
 
 
-Both functions return the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> read from *input-stream*. *Eof-value* is returned if *eof-error-p* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> and end of file is reached before the beginning of an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+Both functions return the <ClLinks  term={"object"}><i>object</i></ClLinks> read from *input-stream*. *Eof-value* is returned if *eof-error-p* is <ClLinks  term={"false"}><i>false</i></ClLinks> and end of file is reached before the beginning of an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -127,7 +127,7 @@ Both functions return the <ClLinks styled={true} term={"object"}><i>object</i></
 
 
 
-**\*standard-input\***, <ClLinks styled={true} term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>, <ClLinks styled={true} term={"readtable"}><b>\*readtable\*</b></ClLinks>, <ClLinks styled={true} term={"read-default-float-format"}><b>\*read-default-float-format\*</b></ClLinks>, **\*read-base\***, <ClLinks styled={true} term={"read-suppress"}><b>\*read-suppress\*</b></ClLinks>, <ClLinks styled={true} term={"package"}><b>\*package\*</b></ClLinks>, **\*read-eval\***. 
+**\*standard-input\***, <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>, <ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks>, <ClLinks  term={"read-default-float-format"}><b>\*read-default-float-format\*</b></ClLinks>, **\*read-base\***, <ClLinks  term={"read-suppress"}><b>\*read-suppress\*</b></ClLinks>, <ClLinks  term={"package"}><b>\*package\*</b></ClLinks>, **\*read-eval\***. 
 
 
 
@@ -135,11 +135,11 @@ Both functions return the <ClLinks styled={true} term={"object"}><i>object</i></
 
 
 
-<ClLinks styled={true} term={"read"}><b>read</b></ClLinks> signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"end-of-file"}><b>end-of-file</b></ClLinks>, regardless of *eof-error-p*, if the file ends in the middle of an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> representation. For example, if a file does not contain enough right parentheses to balance the left parentheses in it, <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> signals an error. This is detected when <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> or <ClLinks styled={true} term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> is called with *recursive-p* and *eof-error-p non-nil*, and end-of-file is reached before the beginning of an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks  term={"read"}><b>read</b></ClLinks> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"end-of-file"}><b>end-of-file</b></ClLinks>, regardless of *eof-error-p*, if the file ends in the middle of an <ClLinks  term={"object"}><i>object</i></ClLinks> representation. For example, if a file does not contain enough right parentheses to balance the left parentheses in it, <ClLinks  term={"read"}><b>read</b></ClLinks> signals an error. This is detected when <ClLinks  term={"read"}><b>read</b></ClLinks> or <ClLinks  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> is called with *recursive-p* and *eof-error-p non-nil*, and end-of-file is reached before the beginning of an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-If *eof-error-p* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled at the end of file. 
+If *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled at the end of file. 
 
 
 
@@ -147,7 +147,7 @@ If *eof-error-p* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, 
 
 
 
-<ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks>, <ClLinks styled={true} term={"read-char"}><b>read-char</b></ClLinks>, <ClLinks styled={true} term={"unread-char"}><b>unread-char</b></ClLinks>, <ClLinks styled={true} term={"read-from-string"}><b>read-from-string</b></ClLinks>, <ClLinks styled={true} term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks>, <ClLinks styled={true} term={"parse-integer"}><b>parse-integer</b></ClLinks>, Chapter 2 (Syntax), Section 23.1 (Reader Concepts) 
+<ClLinks  term={"peek-char"}><b>peek-char</b></ClLinks>, <ClLinks  term={"read-char"}><b>read-char</b></ClLinks>, <ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks>, <ClLinks  term={"read-from-string"}><b>read-from-string</b></ClLinks>, <ClLinks  term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks>, <ClLinks  term={"parse-integer"}><b>parse-integer</b></ClLinks>, Chapter 2 (Syntax), Section 23.1 (Reader Concepts) 
 
 
 

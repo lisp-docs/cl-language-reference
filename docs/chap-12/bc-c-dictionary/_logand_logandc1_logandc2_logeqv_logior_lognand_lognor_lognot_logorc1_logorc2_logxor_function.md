@@ -1,4 +1,4 @@
-**logand, logandc1, logandc2, logeqv, logior, lognand, lognor, lognot, logorc1, logorc2, logxor** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**logand, logandc1, logandc2, logeqv, logior, lognand, lognor, lognot, logorc1, logorc2, logxor** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,47 +6,47 @@
 
 
 
-<ClLinks styled={true} term={"logand"}><b>logand</b></ClLinks> &amp;rest *integers → result-integer* 
+<ClLinks  term={"logand"}><b>logand</b></ClLinks> &amp;rest *integers → result-integer* 
 
 
 
-<ClLinks styled={true} term={"logandc1"}><b>logandc1</b></ClLinks> *integer-1 integer-2 → result-integer* 
+<ClLinks  term={"logandc1"}><b>logandc1</b></ClLinks> *integer-1 integer-2 → result-integer* 
 
 
 
-<ClLinks styled={true} term={"logandc2"}><b>logandc2</b></ClLinks> *integer-1 integer-2 → result-integer* 
+<ClLinks  term={"logandc2"}><b>logandc2</b></ClLinks> *integer-1 integer-2 → result-integer* 
 
 
 
-<ClLinks styled={true} term={"logeqv"}><b>logeqv</b></ClLinks> &amp;rest *integers → result-integer* 
+<ClLinks  term={"logeqv"}><b>logeqv</b></ClLinks> &amp;rest *integers → result-integer* 
 
 
 
-<ClLinks styled={true} term={"logior"}><b>logior</b></ClLinks> &amp;rest *integers → result-integer* 
+<ClLinks  term={"logior"}><b>logior</b></ClLinks> &amp;rest *integers → result-integer* 
 
 
 
-<ClLinks styled={true} term={"lognand"}><b>lognand</b></ClLinks> *integer-1 integer-2 → result-integer* 
+<ClLinks  term={"lognand"}><b>lognand</b></ClLinks> *integer-1 integer-2 → result-integer* 
 
 
 
-<ClLinks styled={true} term={"lognor"}><b>lognor</b></ClLinks> *integer-1 integer-2 → result-integer* 
+<ClLinks  term={"lognor"}><b>lognor</b></ClLinks> *integer-1 integer-2 → result-integer* 
 
 
 
-<ClLinks styled={true} term={"lognot"}><b>lognot</b></ClLinks> *integer → result-integer* 
+<ClLinks  term={"lognot"}><b>lognot</b></ClLinks> *integer → result-integer* 
 
 
 
-<ClLinks styled={true} term={"logorc1"}><b>logorc1</b></ClLinks> *integer-1 integer-2 → result-integer* 
+<ClLinks  term={"logorc1"}><b>logorc1</b></ClLinks> *integer-1 integer-2 → result-integer* 
 
 
 
-<ClLinks styled={true} term={"logorc2"}><b>logorc2</b></ClLinks> *integer-1 integer-2 → result-integer* 
+<ClLinks  term={"logorc2"}><b>logorc2</b></ClLinks> *integer-1 integer-2 → result-integer* 
 
 
 
-<ClLinks styled={true} term={"logxor"}><b>logxor</b></ClLinks> &amp;rest *integers → result-integer* 
+<ClLinks  term={"logxor"}><b>logxor</b></ClLinks> &amp;rest *integers → result-integer* 
 
 
 
@@ -78,11 +78,11 @@
 
 
 
-The <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> <ClLinks styled={true} term={"logandc1"}><b>logandc1</b></ClLinks>, <ClLinks styled={true} term={"logandc2"}><b>logandc2</b></ClLinks>, <ClLinks styled={true} term={"logand"}><b>logand</b></ClLinks>, <ClLinks styled={true} term={"logeqv"}><b>logeqv</b></ClLinks>, <ClLinks styled={true} term={"logior"}><b>logior</b></ClLinks>, <ClLinks styled={true} term={"lognand"}><b>lognand</b></ClLinks>, <ClLinks styled={true} term={"lognor"}><b>lognor</b></ClLinks>, <ClLinks styled={true} term={"lognot"}><b>lognot</b></ClLinks>, <ClLinks styled={true} term={"logorc1"}><b>logorc1</b></ClLinks>, <ClLinks styled={true} term={"logorc2"}><b>logorc2</b></ClLinks>, and <ClLinks styled={true} term={"logxor"}><b>logxor</b></ClLinks> perform bit-wise logical operations on their <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>, that are treated as if they were binary. 
+The <ClLinks  term={"function"}><i>functions</i></ClLinks> <ClLinks  term={"logandc1"}><b>logandc1</b></ClLinks>, <ClLinks  term={"logandc2"}><b>logandc2</b></ClLinks>, <ClLinks  term={"logand"}><b>logand</b></ClLinks>, <ClLinks  term={"logeqv"}><b>logeqv</b></ClLinks>, <ClLinks  term={"logior"}><b>logior</b></ClLinks>, <ClLinks  term={"lognand"}><b>lognand</b></ClLinks>, <ClLinks  term={"lognor"}><b>lognor</b></ClLinks>, <ClLinks  term={"lognot"}><b>lognot</b></ClLinks>, <ClLinks  term={"logorc1"}><b>logorc1</b></ClLinks>, <ClLinks  term={"logorc2"}><b>logorc2</b></ClLinks>, and <ClLinks  term={"logxor"}><b>logxor</b></ClLinks> perform bit-wise logical operations on their <ClLinks  term={"argument"}><i>arguments</i></ClLinks>, that are treated as if they were binary. 
 
 
 
-Figure 12–18 lists the meaning of each of the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks>. Where an ‘identity’ is shown, it indicates the *value yielded* by the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> when no <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> are supplied. 
+Figure 12–18 lists the meaning of each of the <ClLinks  term={"function"}><i>functions</i></ClLinks>. Where an ‘identity’ is shown, it indicates the *value yielded* by the <ClLinks  term={"function"}><i>function</i></ClLinks> when no <ClLinks  term={"argument"}><i>arguments</i></ClLinks> are supplied. 
 
 
 
@@ -106,7 +106,7 @@ Figure 12–18 lists the meaning of each of the <ClLinks styled={true} term={"fu
 
 | :- |
 
-|<p><ClLinks styled={true} term={"logandc1"}><b>logandc1</b></ClLinks> — and complement of *integer-1* with *integer-2* <ClLinks styled={true} term={"logandc2"}><b>logandc2</b></ClLinks> — and *integer-1* with complement of *integer-2* <ClLinks styled={true} term={"logand"}><b>logand</b></ClLinks> -1 and </p><p><ClLinks styled={true} term={"logeqv"}><b>logeqv</b></ClLinks> -1 equivalence (exclusive nor) </p><p><ClLinks styled={true} term={"logior"}><b>logior</b></ClLinks> 0 inclusive or </p><p><ClLinks styled={true} term={"lognand"}><b>lognand</b></ClLinks> — complement of *integer-1* and *integer-2* <ClLinks styled={true} term={"lognor"}><b>lognor</b></ClLinks> — complement of *integer-1* or *integer-2* <ClLinks styled={true} term={"lognot"}><b>lognot</b></ClLinks> — complement </p><p><ClLinks styled={true} term={"logorc1"}><b>logorc1</b></ClLinks> — or complement of *integer-1* with *integer-2* <ClLinks styled={true} term={"logorc2"}><b>logorc2</b></ClLinks> — or *integer-1* with complement of *integer-2* <ClLinks styled={true} term={"logxor"}><b>logxor</b></ClLinks> 0 exclusive or</p>|
+|<p><ClLinks  term={"logandc1"}><b>logandc1</b></ClLinks> — and complement of *integer-1* with *integer-2* <ClLinks  term={"logandc2"}><b>logandc2</b></ClLinks> — and *integer-1* with complement of *integer-2* <ClLinks  term={"logand"}><b>logand</b></ClLinks> -1 and </p><p><ClLinks  term={"logeqv"}><b>logeqv</b></ClLinks> -1 equivalence (exclusive nor) </p><p><ClLinks  term={"logior"}><b>logior</b></ClLinks> 0 inclusive or </p><p><ClLinks  term={"lognand"}><b>lognand</b></ClLinks> — complement of *integer-1* and *integer-2* <ClLinks  term={"lognor"}><b>lognor</b></ClLinks> — complement of *integer-1* or *integer-2* <ClLinks  term={"lognot"}><b>lognot</b></ClLinks> — complement </p><p><ClLinks  term={"logorc1"}><b>logorc1</b></ClLinks> — or complement of *integer-1* with *integer-2* <ClLinks  term={"logorc2"}><b>logorc2</b></ClLinks> — or *integer-1* with complement of *integer-2* <ClLinks  term={"logxor"}><b>logxor</b></ClLinks> 0 exclusive or</p>|
 
 
 
@@ -159,7 +159,7 @@ Negative *integers* are treated as if they were in two’s-complement notation.
 
 
 
-Should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if any argument is not an *integer* . 
+Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if any argument is not an *integer* . 
 
 
 
@@ -167,7 +167,7 @@ Should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLi
 
 
 
-<ClLinks styled={true} term={"boole"}><b>boole</b></ClLinks> 
+<ClLinks  term={"boole"}><b>boole</b></ClLinks> 
 
 
 
@@ -175,7 +175,7 @@ Should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLi
 
 
 
-(logbitp *k* -1) returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> for all values of *k*. 
+(logbitp *k* -1) returns <ClLinks  term={"true"}><i>true</i></ClLinks> for all values of *k*. 
 
 
 

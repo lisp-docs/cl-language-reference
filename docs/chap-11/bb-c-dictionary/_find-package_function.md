@@ -1,4 +1,4 @@
-**find-package** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**find-package** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"find-package"}><b>find-package</b></ClLinks> *name → package* 
+<ClLinks  term={"find-package"}><b>find-package</b></ClLinks> *name → package* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a *string designator* or a *package object*. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a *string designator* or a *package object*. 
 
 
 
-<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package object* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package object* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-If <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is a *string designator* , <ClLinks styled={true} term={"find-package"}><b>find-package</b></ClLinks> locates and returns the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> whose name or nickname is <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>. This search is case sensitive. If there is no such <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, <ClLinks styled={true} term={"find-package"}><b>find-package</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+If <ClLinks  term={"name"}><i>name</i></ClLinks> is a *string designator* , <ClLinks  term={"find-package"}><b>find-package</b></ClLinks> locates and returns the <ClLinks  term={"package"}><i>package</i></ClLinks> whose name or nickname is <ClLinks  term={"name"}><i>name</i></ClLinks>. This search is case sensitive. If there is no such <ClLinks  term={"package"}><i>package</i></ClLinks>, <ClLinks  term={"find-package"}><b>find-package</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-If <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is a *package object*, that *package object* is returned. 
+If <ClLinks  term={"name"}><i>name</i></ClLinks> is a *package object*, that *package object* is returned. 
 
 
 
@@ -44,11 +44,11 @@ If <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is a *package obje
 
 
 
-The set of <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> created by the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
+The set of <ClLinks  term={"package"}><i>packages</i></ClLinks> created by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"defpackage"}><b>defpackage</b></ClLinks>, <ClLinks styled={true} term={"delete-package"}><b>delete-package</b></ClLinks>, <ClLinks styled={true} term={"make-package"}><b>make-package</b></ClLinks>, <ClLinks styled={true} term={"rename-package"}><b>rename-package</b></ClLinks> 
+<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks>, <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks>, <ClLinks  term={"make-package"}><b>make-package</b></ClLinks>, <ClLinks  term={"rename-package"}><b>rename-package</b></ClLinks> 
 
 
 
@@ -56,7 +56,7 @@ The set of <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> cre
 
 
 
-<ClLinks styled={true} term={"make-package"}><b>make-package</b></ClLinks> 
+<ClLinks  term={"make-package"}><b>make-package</b></ClLinks> 
 
 
 

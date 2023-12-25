@@ -1,4 +1,4 @@
-**keywordp** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**keywordp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"keywordp"}><b>keywordp</b></ClLinks> *object → generalized-boolean* 
+<ClLinks  term={"keywordp"}><b>keywordp</b></ClLinks> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a <ClLinks styled={true} term={"keyword"}><i>keyword</i></ClLinks> <sub>1</sub>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is a <ClLinks  term={"keyword"}><i>keyword</i></ClLinks> <sub>1</sub>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -47,7 +47,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 
 
-<ClLinks styled={true} term={"constantp"}><b>constantp</b></ClLinks>, <ClLinks styled={true} term={"keyword"}><b>keyword</b></ClLinks>, <ClLinks styled={true} term={"symbolp"}><b>symbolp</b></ClLinks>, <ClLinks styled={true} term={"symbol-package"}><b>symbol-package</b></ClLinks> 
+<ClLinks  term={"constantp"}><b>constantp</b></ClLinks>, <ClLinks  term={"keyword"}><b>keyword</b></ClLinks>, <ClLinks  term={"symbolp"}><b>symbolp</b></ClLinks>, <ClLinks  term={"symbol-package"}><b>symbol-package</b></ClLinks> 
 
 
 

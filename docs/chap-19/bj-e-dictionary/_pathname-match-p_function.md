@@ -1,4 +1,4 @@
-**pathname-match-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**pathname-match-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"pathname-match-p"}><b>pathname-match-p</b></ClLinks> *pathname wildcard → generalized-boolean* 
+<ClLinks  term={"pathname-match-p"}><b>pathname-match-p</b></ClLinks> *pathname wildcard → generalized-boolean* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>—a *pathname designator* . 
+<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a *pathname designator* . 
 
 
 
-*wildcard*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a *wild pathname*. 
+*wildcard*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a *wild pathname*. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<ClLinks styled={true} term={"pathname-match-p"}><b>pathname-match-p</b></ClLinks> returns true if <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> matches *wildcard*, otherwise <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. The matching rules are <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks> but should be consistent with <ClLinks styled={true} term={"directory"}><b>directory</b></ClLinks>. Missing components of *wildcard* default to :wild. 
+<ClLinks  term={"pathname-match-p"}><b>pathname-match-p</b></ClLinks> returns true if <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> matches *wildcard*, otherwise <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The matching rules are <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> but should be consistent with <ClLinks  term={"directory"}><b>directory</b></ClLinks>. Missing components of *wildcard* default to :wild. 
 
 
 
-It is valid for <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> to be a wild <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>; a wildcard field in <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> only matches a wildcard field in *wildcard* (*i.e.*, <ClLinks styled={true} term={"pathname-match-p"}><b>pathname-match-p</b></ClLinks> is not commutative). It is valid for *wildcard* to be a non-wild <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>. 
+It is valid for <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> to be a wild <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>; a wildcard field in <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> only matches a wildcard field in *wildcard* (*i.e.*, <ClLinks  term={"pathname-match-p"}><b>pathname-match-p</b></ClLinks> is not commutative). It is valid for *wildcard* to be a non-wild <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ It is valid for <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLink
 
 
 
-If <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> or *wildcard* is not a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>, <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, or *stream associated with a file* an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
+If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> or *wildcard* is not a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, <ClLinks  term={"string"}><i>string</i></ClLinks>, or *stream associated with a file* an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
 
 
 
@@ -50,7 +50,7 @@ If <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> or *wildca
 
 
 
-<ClLinks styled={true} term={"directory"}><b>directory</b></ClLinks>, <ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks styled={true} term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks  term={"directory"}><b>directory</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 
@@ -66,7 +66,7 @@ If <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> or *wildca
 
 
 
-<ClLinks styled={true} term={"translate-logical-pathname"}><b>translate-logical-pathname</b></ClLinks> 
+<ClLinks  term={"translate-logical-pathname"}><b>translate-logical-pathname</b></ClLinks> 
 
 
 

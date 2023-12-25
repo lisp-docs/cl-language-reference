@@ -1,4 +1,4 @@
-**complement** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**complement** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"complement"}><b>complement</b></ClLinks> *function → complement-function* 
+<ClLinks  term={"complement"}><b>complement</b></ClLinks> *function → complement-function* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
+<ClLinks  term={"function"}><i>function</i></ClLinks>—a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
-*complement-function*—a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
+*complement-function*—a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> that takes the same <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> as <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, and has the same side-effect behavior as <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, but returns only a single value: a *generalized boolean* with the opposite truth value of that which would be returned as the *primary value* of <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. That is, when the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> would have returned <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> as its *primary value* the *complement-function* returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, and when the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> would have returned <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> as its *primary value* the *complement-function* returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 
+Returns a <ClLinks  term={"function"}><i>function</i></ClLinks> that takes the same <ClLinks  term={"argument"}><i>arguments</i></ClLinks> as <ClLinks  term={"function"}><i>function</i></ClLinks>, and has the same side-effect behavior as <ClLinks  term={"function"}><i>function</i></ClLinks>, but returns only a single value: a *generalized boolean* with the opposite truth value of that which would be returned as the *primary value* of <ClLinks  term={"function"}><i>function</i></ClLinks>. That is, when the <ClLinks  term={"function"}><i>function</i></ClLinks> would have returned <ClLinks  term={"true"}><i>true</i></ClLinks> as its *primary value* the *complement-function* returns <ClLinks  term={"false"}><i>false</i></ClLinks>, and when the <ClLinks  term={"function"}><i>function</i></ClLinks> would have returned <ClLinks  term={"false"}><i>false</i></ClLinks> as its *primary value* the *complement-function* returns <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 
@@ -41,7 +41,7 @@ Returns a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> tha
 
 
 
-<ClLinks styled={true} term={"not"}><b>not</b></ClLinks> 
+<ClLinks  term={"not"}><b>not</b></ClLinks> 
 
 
 
@@ -57,7 +57,7 @@ In Common Lisp, functions with names like “*xxx*-if-not” are related to func
 
 
 
-(*xxx*-if-not *f* . <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>) *≡* (*xxx*-if (complement *f*) . <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>) 
+(*xxx*-if-not *f* . <ClLinks  term={"argument"}><i>arguments</i></ClLinks>) *≡* (*xxx*-if (complement *f*) . <ClLinks  term={"argument"}><i>arguments</i></ClLinks>) 
 
 
 
@@ -85,7 +85,7 @@ Data and Control
 
 
 
-Note that since the “*xxx*-if-not” <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> and the :test-not arguments have been deprecated, uses of “*xxx*-if” <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> or :test arguments with <ClLinks styled={true} term={"complement"}><b>complement</b></ClLinks> are preferred. 
+Note that since the “*xxx*-if-not” <ClLinks  term={"function"}><i>functions</i></ClLinks> and the :test-not arguments have been deprecated, uses of “*xxx*-if” <ClLinks  term={"function"}><i>functions</i></ClLinks> or :test arguments with <ClLinks  term={"complement"}><b>complement</b></ClLinks> are preferred. 
 
 
 

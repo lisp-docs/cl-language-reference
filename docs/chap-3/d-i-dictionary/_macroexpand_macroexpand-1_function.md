@@ -1,4 +1,4 @@
-**macroexpand, macroexpand-1** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**macroexpand, macroexpand-1** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"macroexpand"}><b>macroexpand</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> &amp;optional *env → expansion, expanded-p* 
+<ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> &amp;optional *env → expansion, expanded-p* 
 
 
 
-<ClLinks styled={true} term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> &amp;optional *env → expansion, expanded-p* 
+<ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> &amp;optional *env → expansion, expanded-p* 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*env*—an *environment object*. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*env*—an *environment object*. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*expansion*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+*expansion*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -38,27 +38,27 @@
 
 
 
-<ClLinks styled={true} term={"macroexpand"}><b>macroexpand</b></ClLinks> and <ClLinks styled={true} term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> expand <ClLinks styled={true} term={"macro"}><i>macros</i></ClLinks>. 
+<ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> and <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> expand <ClLinks  term={"macro"}><i>macros</i></ClLinks>. 
 
 
 
-If <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is a *macro form*, then <ClLinks styled={true} term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> expands the *macro form* call once. 
+If <ClLinks  term={"form"}><i>form</i></ClLinks> is a *macro form*, then <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> expands the *macro form* call once. 
 
 
 
-<ClLinks styled={true} term={"macroexpand"}><b>macroexpand</b></ClLinks> repeatedly expands <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> until it is no longer a *macro form*. In effect, <ClLinks styled={true} term={"macroexpand"}><b>macroexpand</b></ClLinks> calls <ClLinks styled={true} term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> repeatedly until the *secondary value* it returns is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> repeatedly expands <ClLinks  term={"form"}><i>form</i></ClLinks> until it is no longer a *macro form*. In effect, <ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> calls <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> repeatedly until the *secondary value* it returns is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-If <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is a *macro form*, then the *expansion* is a *macro expansion* and *expanded-p* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. Otherwise, the *expansion* is the given <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> and *expanded-p* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+If <ClLinks  term={"form"}><i>form</i></ClLinks> is a *macro form*, then the *expansion* is a *macro expansion* and *expanded-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>. Otherwise, the *expansion* is the given <ClLinks  term={"form"}><i>form</i></ClLinks> and *expanded-p* is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-Macro expansion is carried out as follows. Once <ClLinks styled={true} term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> has determined that the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is a *macro form*, it obtains an appropriate expansion <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> for the <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> or *symbol macro*. The value of **\*macroexpand-hook\*** is coerced to a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> and then called as a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of three arguments: the expansion <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, and the *env*. The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> returned from this call is taken to be the expansion of the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+Macro expansion is carried out as follows. Once <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> has determined that the <ClLinks  term={"form"}><i>form</i></ClLinks> is a *macro form*, it obtains an appropriate expansion <ClLinks  term={"function"}><i>function</i></ClLinks> for the <ClLinks  term={"macro"}><i>macro</i></ClLinks> or *symbol macro*. The value of **\*macroexpand-hook\*** is coerced to a <ClLinks  term={"function"}><i>function</i></ClLinks> and then called as a <ClLinks  term={"function"}><i>function</i></ClLinks> of three arguments: the expansion <ClLinks  term={"function"}><i>function</i></ClLinks>, the <ClLinks  term={"form"}><i>form</i></ClLinks>, and the *env*. The <ClLinks  term={"value"}><i>value</i></ClLinks> returned from this call is taken to be the expansion of the <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-In addition to <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> definitions in the global environment, any local macro definitions established within *env* by <ClLinks styled={true} term={"macrolet"}><b>macrolet</b></ClLinks> or <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> are considered. If only <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is supplied as an argument, then the environment is effectively null, and only global macro definitions as established by <ClLinks styled={true} term={"defmacro"}><b>defmacro</b></ClLinks> are considered. <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> definitions are shadowed by local <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> definitions. 
+In addition to <ClLinks  term={"macro"}><i>macro</i></ClLinks> definitions in the global environment, any local macro definitions established within *env* by <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> or <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> are considered. If only <ClLinks  term={"form"}><i>form</i></ClLinks> is supplied as an argument, then the environment is effectively null, and only global macro definitions as established by <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> are considered. <ClLinks  term={"macro"}><i>Macro</i></ClLinks> definitions are shadowed by local <ClLinks  term={"function"}><i>function</i></ClLinks> definitions. 
 
 
 
@@ -127,7 +127,7 @@ In addition to <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> defi
 
 
 
-<ClLinks styled={true} term={"defmacro"}><b>defmacro</b></ClLinks>, <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"macro-function"}><b>macro-function</b></ClLinks>, <ClLinks styled={true} term={"macrolet"}><b>macrolet</b></ClLinks>, <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> 
+<ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks>, <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks>, <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>, <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> 
 
 
 
@@ -135,7 +135,7 @@ In addition to <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> defi
 
 
 
-**\*macroexpand-hook\***, <ClLinks styled={true} term={"defmacro"}><b>defmacro</b></ClLinks>, <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"macro-function"}><b>macro-function</b></ClLinks>, <ClLinks styled={true} term={"macrolet"}><b>macrolet</b></ClLinks>, <ClLinks styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>, Section 3.1 (Evaluation) 
+**\*macroexpand-hook\***, <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks>, <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks>, <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>, <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>, Section 3.1 (Evaluation) 
 
 
 
@@ -143,7 +143,7 @@ In addition to <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> defi
 
 
 
-Neither <ClLinks styled={true} term={"macroexpand"}><b>macroexpand</b></ClLinks> nor <ClLinks styled={true} term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> makes any explicit attempt to expand *macro forms* that are either <ClLinks styled={true} term={"subform"}><i>subforms</i></ClLinks> of the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> or <ClLinks styled={true} term={"subform"}><i>subforms</i></ClLinks> of the *expansion*. Such expansion might occur implicitly, however, due to the semantics or implementation of the *macro function*. 
+Neither <ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> nor <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> makes any explicit attempt to expand *macro forms* that are either <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the <ClLinks  term={"form"}><i>form</i></ClLinks> or <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the *expansion*. Such expansion might occur implicitly, however, due to the semantics or implementation of the *macro function*. 
 
 
 

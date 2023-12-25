@@ -1,4 +1,4 @@
-**when, unless** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**when, unless** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"when"}><b>when</b></ClLinks> *test-form \{form\}*\* → \{result\}\* 
+<ClLinks  term={"when"}><b>when</b></ClLinks> *test-form \{form\}*\* → \{result\}\* 
 
 
 
-<ClLinks styled={true} term={"unless"}><b>unless</b></ClLinks> *test-form \{form\}*\* → \{result\}\* 
+<ClLinks  term={"unless"}><b>unless</b></ClLinks> *test-form \{form\}*\* → \{result\}\* 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-*test-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+*test-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a <ClLinks styled={true} term={"when"}><b>when</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> if the *test-form yields true* or in an <ClLinks styled={true} term={"unless"}><b>unless</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> if the *test-form yields false*; otherwise <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks> in a <ClLinks  term={"when"}><b>when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> if the *test-form yields true* or in an <ClLinks  term={"unless"}><b>unless</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> if the *test-form yields false*; otherwise <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<ClLinks styled={true} term={"when"}><b>when</b></ClLinks> and <ClLinks styled={true} term={"unless"}><b>unless</b></ClLinks> allow the execution of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> to be dependent on a single *test-form*. 
+<ClLinks  term={"when"}><b>when</b></ClLinks> and <ClLinks  term={"unless"}><b>unless</b></ClLinks> allow the execution of <ClLinks  term={"form"}><i>forms</i></ClLinks> to be dependent on a single *test-form*. 
 
 
 
-In a <ClLinks styled={true} term={"when"}><b>when</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, if the *test-form yields true*, the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are *evaluated* in order from left to right and the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are returned from the <ClLinks styled={true} term={"when"}><b>when</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. Otherwise, if the *test-form yields false*, the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are not *evaluated*, and the <ClLinks styled={true} term={"when"}><b>when</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+In a <ClLinks  term={"when"}><b>when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>, if the *test-form yields true*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are *evaluated* in order from left to right and the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks> are returned from the <ClLinks  term={"when"}><b>when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. Otherwise, if the *test-form yields false*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are not *evaluated*, and the <ClLinks  term={"when"}><b>when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -58,7 +58,7 @@ In a <ClLinks styled={true} term={"when"}><b>when</b></ClLinks> <ClLinks styled=
 
 
 
-In an <ClLinks styled={true} term={"unless"}><b>unless</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, if the *test-form yields false*, the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are *evaluated* in order from left to right and the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are returned from the <ClLinks styled={true} term={"unless"}><b>unless</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. Otherwise, if the *test-form yields false*, the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are not *evaluated*, and the <ClLinks styled={true} term={"unless"}><b>unless</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+In an <ClLinks  term={"unless"}><b>unless</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>, if the *test-form yields false*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are *evaluated* in order from left to right and the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks> are returned from the <ClLinks  term={"unless"}><b>unless</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. Otherwise, if the *test-form yields false*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are not *evaluated*, and the <ClLinks  term={"unless"}><b>unless</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -93,7 +93,7 @@ In an <ClLinks styled={true} term={"unless"}><b>unless</b></ClLinks> <ClLinks st
 
 
 
-<ClLinks styled={true} term={"and"}><b>and</b></ClLinks>, <ClLinks styled={true} term={"cond"}><b>cond</b></ClLinks>, <ClLinks styled={true} term={"if"}><b>if</b></ClLinks>, <ClLinks styled={true} term={"or"}><b>or</b></ClLinks> 
+<ClLinks  term={"and"}><b>and</b></ClLinks>, <ClLinks  term={"cond"}><b>cond</b></ClLinks>, <ClLinks  term={"if"}><b>if</b></ClLinks>, <ClLinks  term={"or"}><b>or</b></ClLinks> 
 
 
 
@@ -101,7 +101,7 @@ In an <ClLinks styled={true} term={"unless"}><b>unless</b></ClLinks> <ClLinks st
 
 
 
-(when *test \{form\}*<sup>+</sup>) *≡* (and *test* (progn <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>)) 
+(when *test \{form\}*<sup>+</sup>) *≡* (and *test* (progn <ClLinks  term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>)) 
 
 
 
@@ -109,23 +109,23 @@ In an <ClLinks styled={true} term={"unless"}><b>unless</b></ClLinks> <ClLinks st
 
 
 
-(when *test \{form\}*<sup>+</sup>) *≡* (if *test* (progn <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>) nil) 
+(when *test \{form\}*<sup>+</sup>) *≡* (if *test* (progn <ClLinks  term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>) nil) 
 
 
 
-(when *test \{form\}*<sup>+</sup>) *≡* (unless (not *test*) <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>) 
+(when *test \{form\}*<sup>+</sup>) *≡* (unless (not *test*) <ClLinks  term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>) 
 
 
 
-(unless *test \{form\}*<sup>+</sup>) *≡* (cond ((not *test*) <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>)) 
+(unless *test \{form\}*<sup>+</sup>) *≡* (cond ((not *test*) <ClLinks  term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>)) 
 
 
 
-(unless *test \{form\}*<sup>+</sup>) *≡* (if *test* nil (progn <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>)) 
+(unless *test \{form\}*<sup>+</sup>) *≡* (if *test* nil (progn <ClLinks  term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>)) 
 
 
 
-(unless *test \{form\}*<sup>+</sup>) *≡* (when (not *test*) <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>) 
+(unless *test \{form\}*<sup>+</sup>) *≡* (when (not *test*) <ClLinks  term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>) 
 
 
 

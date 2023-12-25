@@ -1,4 +1,4 @@
-**-** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks>
+**-** <ClLinks  term={"function"}><i>Function</i></ClLinks>
 
 **Syntax:**
 
@@ -8,19 +8,19 @@
 
 **Arguments and Values:**
 
-<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>, *minuend*, *subtrahend*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> .
+<ClLinks  term={"number"}><i>number</i></ClLinks>, *minuend*, *subtrahend*—a <ClLinks  term={"number"}><i>number</i></ClLinks> .
 
-*negation*, *difference*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> .
+*negation*, *difference*—a <ClLinks  term={"number"}><i>number</i></ClLinks> .
 
 **Description:**
 
-The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"-"}><b>-</b></ClLinks> performs arithmetic subtraction and negation.
+The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"-"}><b>-</b></ClLinks> performs arithmetic subtraction and negation.
 
-If only one <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is supplied, the negation of that <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is returned.
+If only one <ClLinks  term={"number"}><i>number</i></ClLinks> is supplied, the negation of that <ClLinks  term={"number"}><i>number</i></ClLinks> is returned.
 
-If more than one <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> is given, it subtracts all of the *subtrahends* from the *minuend* and returns the result.
+If more than one <ClLinks  term={"argument"}><i>argument</i></ClLinks> is given, it subtracts all of the *subtrahends* from the *minuend* and returns the result.
 
-The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"-"}><b>-</b></ClLinks> performs necessary type conversions.
+The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"-"}><b>-</b></ClLinks> performs necessary type conversions.
 
 **Examples:**
 
@@ -35,7 +35,7 @@ The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks 
 
 **Exceptional Situations:**
 
-Might signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if some <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> is not a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
+Might signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if some <ClLinks  term={"argument"}><i>argument</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
 
 **See Also:**
 

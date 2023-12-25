@@ -1,4 +1,4 @@
-**copy-seq** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**copy-seq** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"copy-seq"}><b>copy-seq</b></ClLinks> *sequence → copied-sequence* 
+<ClLinks  term={"copy-seq"}><b>copy-seq</b></ClLinks> *sequence → copied-sequence* 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Creates a copy of *sequence*. The <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the new *sequence* are the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> as the corresponding <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the given *sequence*. 
+Creates a copy of *sequence*. The <ClLinks  term={"element"}><i>elements</i></ClLinks> of the new *sequence* are the <ClLinks  term={"same"}><i>same</i></ClLinks> as the corresponding <ClLinks  term={"element"}><i>elements</i></ClLinks> of the given *sequence*. 
 
 
 
-If *sequence* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> , the result is a *fresh simple array* of <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks> one that has the same *actual array element type* as *sequence*. If *sequence* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, the result is a *fresh list*. 
+If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the result is a *fresh simple array* of <ClLinks  term={"rank"}><i>rank</i></ClLinks> one that has the same *actual array element type* as *sequence*. If *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, the result is a *fresh list*. 
 
 
 
@@ -44,7 +44,7 @@ If *sequence* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks
 
 
 
-Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. 
 
 
 
@@ -52,7 +52,7 @@ Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i
 
 
 
-<ClLinks styled={true} term={"copy-list"}><b>copy-list</b></ClLinks> 
+<ClLinks  term={"copy-list"}><b>copy-list</b></ClLinks> 
 
 
 

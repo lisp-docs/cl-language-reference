@@ -1,4 +1,4 @@
-**values-list** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**values-list** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"values-list"}><b>values-list</b></ClLinks> *list ! \{element\}*\* 
+<ClLinks  term={"values-list"}><b>values-list</b></ClLinks> *list ! \{element\}*\* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+<ClLinks  term={"list"}><i>list</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"element"}><i>elements</i></ClLinks>—the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+<ClLinks  term={"element"}><i>elements</i></ClLinks>—the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> as *multiple values*<sub>2</sub>. 
+Returns the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks> as *multiple values*<sub>2</sub>. 
 
 
 
@@ -41,7 +41,7 @@ Returns the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of
 
 
 
-Should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a *proper list*. 
+Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a *proper list*. 
 
 
 
@@ -49,7 +49,7 @@ Should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLi
 
 
 
-<ClLinks styled={true} term={"multiple-value-bind"}><b>multiple-value-bind</b></ClLinks>, <ClLinks styled={true} term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks>, <ClLinks styled={true} term={"multiple-values-limit"}><b>multiple-values-limit</b></ClLinks>, <ClLinks styled={true} term={"values"}><b>values</b></ClLinks> 
+<ClLinks  term={"multiple-value-bind"}><b>multiple-value-bind</b></ClLinks>, <ClLinks  term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks>, <ClLinks  term={"multiple-values-limit"}><b>multiple-values-limit</b></ClLinks>, <ClLinks  term={"values"}><b>values</b></ClLinks> 
 
 
 
@@ -57,11 +57,11 @@ Should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLi
 
 
 
-(values-list <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) *⌘* (apply #’values <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) 
+(values-list <ClLinks  term={"list"}><i>list</i></ClLinks>) *⌘* (apply #’values <ClLinks  term={"list"}><i>list</i></ClLinks>) 
 
 
 
-(equal *x* (multiple-value-list (values-list *x*))) returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> for all *lists x*. 
+(equal *x* (multiple-value-list (values-list *x*))) returns <ClLinks  term={"true"}><i>true</i></ClLinks> for all *lists x*. 
 
 
 

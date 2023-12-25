@@ -2,7 +2,7 @@
 
 
 
-An <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> of <ClLinks styled={true} term={"rank"}><i>rank</i></ClLinks> one (*i.e.*, a one-dimensional <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>) is called a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>. 
+An <ClLinks  term={"array"}><i>array</i></ClLinks> of <ClLinks  term={"rank"}><i>rank</i></ClLinks> one (*i.e.*, a one-dimensional <ClLinks  term={"array"}><i>array</i></ClLinks>) is called a <ClLinks  term={"vector"}><i>vector</i></ClLinks>. 
 
 
 

@@ -2,11 +2,11 @@
 
 
 
-<ClLinks styled={true} term={"vector"}><i>Vectors</i></ClLinks> whose <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> are restricted to <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"character"}><b>character</b></ClLinks> or a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"character"}><b>character</b></ClLinks> are called <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks>. <ClLinks styled={true} term={"string"}><i>Strings</i></ClLinks> are of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"string"}><b>string</b></ClLinks>. Figure 15–2 lists some *defined names* related to <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks>. 
+<ClLinks  term={"vector"}><i>Vectors</i></ClLinks> whose <ClLinks  term={"element"}><i>elements</i></ClLinks> are restricted to <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks> or a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"character"}><b>character</b></ClLinks> are called <ClLinks  term={"string"}><i>strings</i></ClLinks>. <ClLinks  term={"string"}><i>Strings</i></ClLinks> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"string"}><b>string</b></ClLinks>. Figure 15–2 lists some *defined names* related to <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"string"}><i>Strings</i></ClLinks> are *specialized arrays* and might logically have been included in this chapter. However, for purposes of readability most information about <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks> does not appear in this chapter; see instead Chapter 16 (Strings). 
+<ClLinks  term={"string"}><i>Strings</i></ClLinks> are *specialized arrays* and might logically have been included in this chapter. However, for purposes of readability most information about <ClLinks  term={"string"}><i>strings</i></ClLinks> does not appear in this chapter; see instead Chapter 16 (Strings). 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks styled={true} term={"vector"}><i>Vectors</i></ClLinks> whose <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> are restricted to <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"bit"}><b>bit</b></ClLinks> are called *bit vectors*. *Bit vectors* are of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"bit-vector"}><b>bit-vector</b></ClLinks>. Figure 15–3 lists some *defined names* for operations on *bit arrays*. 
+<ClLinks  term={"vector"}><i>Vectors</i></ClLinks> whose <ClLinks  term={"element"}><i>elements</i></ClLinks> are restricted to <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"bit"}><b>bit</b></ClLinks> are called *bit vectors*. *Bit vectors* are of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"bit-vector"}><b>bit-vector</b></ClLinks>. Figure 15–3 lists some *defined names* for operations on *bit arrays*. 
 
 
 

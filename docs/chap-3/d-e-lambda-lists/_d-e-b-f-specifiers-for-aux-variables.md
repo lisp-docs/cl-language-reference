@@ -6,7 +6,7 @@ These are not really parameters. If the *lambda list keyword* **&amp;aux** is pr
 
 
 
-evaluated and *var* is bound to that value (or to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if no *init-form* was specified). **&amp;aux** variable processing is analogous to <ClLinks styled={true} term={"let"}><b>let\*</b></ClLinks> processing. 
+evaluated and *var* is bound to that value (or to <ClLinks  term={"nil"}><b>nil</b></ClLinks> if no *init-form* was specified). **&amp;aux** variable processing is analogous to <ClLinks  term={"let"}><b>let\*</b></ClLinks> processing. 
 
 
 

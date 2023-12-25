@@ -2,7 +2,7 @@
 
 
 
-These are all the parameter specifiers up to the first *lambda list keyword*; if there are no *lambda list keywords*, then all the specifiers are for required parameters. Each required parameter is specified by a parameter variable *var*. *var* is bound as a lexical variable unless it is declared <ClLinks styled={true} term={"special"}><b>special</b></ClLinks>. 
+These are all the parameter specifiers up to the first *lambda list keyword*; if there are no *lambda list keywords*, then all the specifiers are for required parameters. Each required parameter is specified by a parameter variable *var*. *var* is bound as a lexical variable unless it is declared <ClLinks  term={"special"}><b>special</b></ClLinks>. 
 
 
 

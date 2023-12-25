@@ -1,4 +1,4 @@
-**file-string-length** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**file-string-length** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"file-string-length"}><b>file-string-length</b></ClLinks> *stream object → length* 
+<ClLinks  term={"file-string-length"}><b>file-string-length</b></ClLinks> *stream object → length* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—an *output character file stream*. 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks>—an *output character file stream*. 
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> or a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks> or a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
 
 
 
-<ClLinks styled={true} term={"length"}><i>length</i></ClLinks>—a non-negative *integer* , or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"length"}><i>length</i></ClLinks>—a non-negative *integer* , or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -30,19 +30,15 @@
 
 
 
-<ClLinks styled={true} term={"file-string-length"}><b>file-string-length</b></ClLinks> returns the difference between what (file-position <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>) would be after writing <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> and its current value, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if this cannot be determined. 
+<ClLinks  term={"file-string-length"}><b>file-string-length</b></ClLinks> returns the difference between what (file-position <ClLinks  term={"stream"}><i>stream</i></ClLinks>) would be after writing <ClLinks  term={"object"}><i>object</i></ClLinks> and its current value, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if this cannot be determined. 
 
 
 
-The returned value corresponds to the current state of <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> at the time of the call and might not be the same if it is called again when the state of the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> has changed. 
-
-
+The returned value corresponds to the current state of <ClLinks  term={"stream"}><i>stream</i></ClLinks> at the time of the call and might not be the same if it is called again when the state of the <ClLinks  term={"stream"}><i>stream</i></ClLinks> has changed. 
 
 
 
 
-
- 
 
 
 
@@ -50,7 +46,11 @@ The returned value corresponds to the current state of <ClLinks styled={true} te
 
 
 
-<ClLinks styled={true} term={"open"}><b>open</b></ClLinks> 
+ 
+
+
+
+<ClLinks  term={"open"}><b>open</b></ClLinks> 
 
 
 

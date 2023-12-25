@@ -1,4 +1,4 @@
-**concatenate** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**concatenate** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"concatenate"}><b>concatenate</b></ClLinks> *result-type* &amp;rest *sequences → result-sequence* 
+<ClLinks  term={"concatenate"}><b>concatenate</b></ClLinks> *result-type* &amp;rest *sequences → result-sequence* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*result-type*—a <ClLinks styled={true} term={"sequence"}><b>sequence</b></ClLinks> *type specifier* . 
+*result-type*—a <ClLinks  term={"sequence"}><b>sequence</b></ClLinks> *type specifier* . 
 
 
 
@@ -30,23 +30,19 @@
 
 
 
-<ClLinks styled={true} term={"concatenate"}><b>concatenate</b></ClLinks> returns a *sequence* that contains all the individual elements of all the *sequences* in the order that they are supplied. The *sequence* is of type *result-type*, which must be a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"sequence"}><b>sequence</b></ClLinks>. 
+<ClLinks  term={"concatenate"}><b>concatenate</b></ClLinks> returns a *sequence* that contains all the individual elements of all the *sequences* in the order that they are supplied. The *sequence* is of type *result-type*, which must be a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"sequence"}><b>sequence</b></ClLinks>. 
 
 
 
-All of the *sequences* are copied from; the result does not share any structure with any of the *sequences*. Therefore, if only one *sequence* is provided and it is of type *result-type*, <ClLinks styled={true} term={"concatenate"}><b>concatenate</b></ClLinks> is required to copy *sequence* rather than simply returning it. 
+All of the *sequences* are copied from; the result does not share any structure with any of the *sequences*. Therefore, if only one *sequence* is provided and it is of type *result-type*, <ClLinks  term={"concatenate"}><b>concatenate</b></ClLinks> is required to copy *sequence* rather than simply returning it. 
 
 
 
-It is an error if any element of the *sequences* cannot be an element of the *sequence* result. If the *result-type* is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>, the result will be a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
-
-
+It is an error if any element of the *sequences* cannot be an element of the *sequence* result. If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"list"}><b>list</b></ClLinks>, the result will be a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
 
-
- 
 
 
 
@@ -54,7 +50,11 @@ It is an error if any element of the *sequences* cannot be an element of the *se
 
 
 
-If the *result-type* is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks>, then if the implementation can determine the element type specified for the *result-type*, the element type of the resulting array is the result of *upgrading* that element type; or, if the implementation can determine that the element type is unspecified (or \*), the element type of the resulting array is <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>; otherwise, an error is signaled. 
+ 
+
+
+
+If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"vector"}><b>vector</b></ClLinks>, then if the implementation can determine the element type specified for the *result-type*, the element type of the resulting array is the result of *upgrading* that element type; or, if the implementation can determine that the element type is unspecified (or \*), the element type of the resulting array is <ClLinks  term={"t"}><b>t</b></ClLinks>; otherwise, an error is signaled. 
 
 
 
@@ -70,11 +70,11 @@ If the *result-type* is a <ClLinks styled={true} term={"subtype"}><i>subtype</i>
 
 
 
-An error is signaled if the *result-type* is neither a *recognizable subtype* of <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>, nor a *recognizable subtype* of <ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks>. 
+An error is signaled if the *result-type* is neither a *recognizable subtype* of <ClLinks  term={"list"}><b>list</b></ClLinks>, nor a *recognizable subtype* of <ClLinks  term={"vector"}><b>vector</b></ClLinks>. 
 
 
 
-An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> should be signaled if *result-type* specifies the number of elements and the sum of *sequences* is different from that number. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> should be signaled if *result-type* specifies the number of elements and the sum of *sequences* is different from that number. 
 
 
 
@@ -82,7 +82,7 @@ An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks 
 
 
 
-<ClLinks styled={true} term={"append"}><b>append</b></ClLinks> 
+<ClLinks  term={"append"}><b>append</b></ClLinks> 
 
 
 

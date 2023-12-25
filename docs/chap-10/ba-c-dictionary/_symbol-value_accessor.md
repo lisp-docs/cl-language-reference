@@ -1,4 +1,4 @@
-**symbol-value** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
+**symbol-value** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"symbol-value"}><b>symbol-value</b></ClLinks> *symbol → value* 
+<ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> *symbol → value* 
 
 
 
-**(setf (symbol-value** <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>**)** *new-value***)** 
+**(setf (symbol-value** <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>**)** *new-value***)** 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that must have a <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that must have a <ClLinks  term={"value"}><i>value</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"value"}><i>value</i></ClLinks>, *new-value*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks  term={"value"}><i>value</i></ClLinks>, *new-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*Accesses* the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>’s *value cell*. 
+*Accesses* the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s *value cell*. 
 
 
 
@@ -71,7 +71,7 @@ a → 3
 
 
 
-<ClLinks styled={true} term={"makunbound"}><b>makunbound</b></ClLinks>, <ClLinks styled={true} term={"set"}><b>set</b></ClLinks>, <ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks> 
+<ClLinks  term={"makunbound"}><b>makunbound</b></ClLinks>, <ClLinks  term={"set"}><b>set</b></ClLinks>, <ClLinks  term={"setq"}><b>setq</b></ClLinks> 
 
 
 
@@ -79,11 +79,11 @@ a → 3
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-Should signal <ClLinks styled={true} term={"unbound-variable"}><b>unbound-variable</b></ClLinks> if <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks styled={true} term={"unbound"}><i>unbound</i></ClLinks> and an attempt is made to <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> its <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>. (No such error is signaled on an attempt to <ClLinks styled={true} term={"write"}><i>write</i></ClLinks> its <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>.) 
+Should signal <ClLinks  term={"unbound-variable"}><b>unbound-variable</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"unbound"}><i>unbound</i></ClLinks> and an attempt is made to <ClLinks  term={"read"}><i>read</i></ClLinks> its <ClLinks  term={"value"}><i>value</i></ClLinks>. (No such error is signaled on an attempt to <ClLinks  term={"write"}><i>write</i></ClLinks> its <ClLinks  term={"value"}><i>value</i></ClLinks>.) 
 
 
 
@@ -91,7 +91,7 @@ Should signal <ClLinks styled={true} term={"unbound-variable"}><b>unbound-variab
 
 
 
-<ClLinks styled={true} term={"boundp"}><b>boundp</b></ClLinks>, <ClLinks styled={true} term={"makunbound"}><b>makunbound</b></ClLinks>, <ClLinks styled={true} term={"set"}><b>set</b></ClLinks>, <ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks> 
+<ClLinks  term={"boundp"}><b>boundp</b></ClLinks>, <ClLinks  term={"makunbound"}><b>makunbound</b></ClLinks>, <ClLinks  term={"set"}><b>set</b></ClLinks>, <ClLinks  term={"setq"}><b>setq</b></ClLinks> 
 
 
 
@@ -99,7 +99,7 @@ Should signal <ClLinks styled={true} term={"unbound-variable"}><b>unbound-variab
 
 
 
-<ClLinks styled={true} term={"symbol-value"}><b>symbol-value</b></ClLinks> can be used to get the value of a *constant variable*. <ClLinks styled={true} term={"symbol-value"}><b>symbol-value</b></ClLinks> cannot <ClLinks styled={true} term={"access"}><i>access</i></ClLinks> the value of a *lexical variable*. 
+<ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> can be used to get the value of a *constant variable*. <ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> cannot <ClLinks  term={"access"}><i>access</i></ClLinks> the value of a *lexical variable*. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"echo-stream"}><b>echo-stream</b></ClLinks>, <ClLinks styled={true} term={"stream"}><b>stream</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<ClLinks  term={"echo-stream"}><b>echo-stream</b></ClLinks>, <ClLinks  term={"stream"}><b>stream</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -18,7 +18,7 @@ An *echo stream* is a *bidirectional stream* that gets its input from an associa
 
 
 
-All input taken from the *input stream* is echoed to the *output stream*. Whether the input is echoed immediately after it is encountered, or after it has been read from the *input stream* is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+All input taken from the *input stream* is echoed to the *output stream*. Whether the input is echoed immediately after it is encountered, or after it has been read from the *input stream* is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@ All input taken from the *input stream* is echoed to the *output stream*. Whethe
 
 
 
-**echo-stream-input-stream**, **echo-stream-output-stream**, <ClLinks styled={true} term={"make-echo-stream"}><b>make-echo-stream</b></ClLinks> 
+**echo-stream-input-stream**, **echo-stream-output-stream**, <ClLinks  term={"make-echo-stream"}><b>make-echo-stream</b></ClLinks> 
 
 
 

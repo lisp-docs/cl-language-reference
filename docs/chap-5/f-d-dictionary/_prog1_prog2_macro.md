@@ -1,4 +1,4 @@
-**prog1, prog2** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**prog1, prog2** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"prog1"}><b>prog1</b></ClLinks> *first-form \{form\}*\* *! result-1* 
+<ClLinks  term={"prog1"}><b>prog1</b></ClLinks> *first-form \{form\}*\* *! result-1* 
 
 
 
-<ClLinks styled={true} term={"prog2"}><b>prog2</b></ClLinks> *first-form second-form \{form\}*\* *! result-2* 
+<ClLinks  term={"prog2"}><b>prog2</b></ClLinks> *first-form second-form \{form\}*\* *! result-2* 
 
 
 
@@ -18,19 +18,19 @@
 
 
 
-*first-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
+*first-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
 
 
 
-*second-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
+*second-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*; evaluated as described below. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*; evaluated as described below. 
 
 
 
-*result-1*—the *primary value* resulting from the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of *first-form*. 
+*result-1*—the *primary value* resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of *first-form*. 
 
 
 
@@ -50,7 +50,7 @@ Data and Control
 
 
 
-*result-2*—the *primary value* resulting from the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of *second-form*. 
+*result-2*—the *primary value* resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of *second-form*. 
 
 
 
@@ -58,11 +58,11 @@ Data and Control
 
 
 
-<ClLinks styled={true} term={"prog1"}><b>prog1</b></ClLinks> *evaluates first-form* and then <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>, *yielding* as its only <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> the *primary value yielded* by *first-form*. 
+<ClLinks  term={"prog1"}><b>prog1</b></ClLinks> *evaluates first-form* and then <ClLinks  term={"form"}><i>forms</i></ClLinks>, *yielding* as its only <ClLinks  term={"value"}><i>value</i></ClLinks> the *primary value yielded* by *first-form*. 
 
 
 
-<ClLinks styled={true} term={"prog2"}><b>prog2</b></ClLinks> *evaluates first-form*, then *second-form*, and then <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>, *yielding* as its only <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> the *primary value yielded* by *first-form*. 
+<ClLinks  term={"prog2"}><b>prog2</b></ClLinks> *evaluates first-form*, then *second-form*, and then <ClLinks  term={"form"}><i>forms</i></ClLinks>, *yielding* as its only <ClLinks  term={"value"}><i>value</i></ClLinks> the *primary value yielded* by *first-form*. 
 
 
 
@@ -97,7 +97,7 @@ temp *!* 4
 
 
 
-<ClLinks styled={true} term={"multiple-value-prog1"}><b>multiple-value-prog1</b></ClLinks>, <ClLinks styled={true} term={"progn"}><b>progn</b></ClLinks> 
+<ClLinks  term={"multiple-value-prog1"}><b>multiple-value-prog1</b></ClLinks>, <ClLinks  term={"progn"}><b>progn</b></ClLinks> 
 
 
 
@@ -105,15 +105,15 @@ temp *!* 4
 
 
 
-<ClLinks styled={true} term={"prog1"}><b>prog1</b></ClLinks> and <ClLinks styled={true} term={"prog2"}><b>prog2</b></ClLinks> are typically used to <ClLinks styled={true} term={"evaluate"}><i>evaluate</i></ClLinks> one or more <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> with side e↵ects and return a <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> that must be computed before some or all of the side e↵ects happen. 
+<ClLinks  term={"prog1"}><b>prog1</b></ClLinks> and <ClLinks  term={"prog2"}><b>prog2</b></ClLinks> are typically used to <ClLinks  term={"evaluate"}><i>evaluate</i></ClLinks> one or more <ClLinks  term={"form"}><i>forms</i></ClLinks> with side e↵ects and return a <ClLinks  term={"value"}><i>value</i></ClLinks> that must be computed before some or all of the side e↵ects happen. 
 
 
 
-(prog1 <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\*) *⌘* (values (multiple-value-prog1 <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\*)) 
+(prog1 <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\*) *⌘* (values (multiple-value-prog1 <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\*)) 
 
 
 
-(prog2 *form1 \{form\}*\*) *⌘* (let () *form1* (prog1 <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\*)) 
+(prog2 *form1 \{form\}*\*) *⌘* (let () *form1* (prog1 <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\*)) 
 
 
 

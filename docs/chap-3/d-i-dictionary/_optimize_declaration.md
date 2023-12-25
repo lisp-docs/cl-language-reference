@@ -1,4 +1,4 @@
-**optimize** <ClLinks styled={true} term={"declaration"}><i>Declaration</i></ClLinks> 
+**optimize** <ClLinks  term={"declaration"}><i>Declaration</i></ClLinks> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"value"}><i>value</i></ClLinks>—one of the *integers* 0, 1, 2, or 3. 
+<ClLinks  term={"value"}><i>value</i></ClLinks>—one of the *integers* 0, 1, 2, or 3. 
 
 
 
@@ -34,7 +34,7 @@ Evaluation and
 
 
 
-<ClLinks styled={true} term={"optimize"}><b>optimize</b></ClLinks> 
+<ClLinks  term={"optimize"}><b>optimize</b></ClLinks> 
 
 
 
@@ -42,7 +42,7 @@ Evaluation and
 
 
 
-<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks> or <ClLinks styled={true} term={"proclamation"}><i>proclamation</i></ClLinks> 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks> or <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks> 
 
 
 
@@ -50,7 +50,7 @@ Evaluation and
 
 
 
-Advises the compiler that each *quality* should be given attention according to the specified corresponding <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>. Each *quality* must be a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> naming an *optimize quality*; the names and meanings of the standard *optimize qualities* are shown in Figure 3–25. 
+Advises the compiler that each *quality* should be given attention according to the specified corresponding <ClLinks  term={"value"}><i>value</i></ClLinks>. Each *quality* must be a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming an *optimize quality*; the names and meanings of the standard *optimize qualities* are shown in Figure 3–25. 
 
 
 
@@ -72,11 +72,11 @@ There may be other, *implementation-defined optimize qualities*.
 
 
 
-A <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> 0 means that the corresponding *quality* is totally unimportant, and 3 that the *quality* is extremely important; 1 and 2 are intermediate values, with 1 the neutral value. (*quality* 3) can be abbreviated to *quality*. 
+A <ClLinks  term={"value"}><i>value</i></ClLinks> 0 means that the corresponding *quality* is totally unimportant, and 3 that the *quality* is extremely important; 1 and 2 are intermediate values, with 1 the neutral value. (*quality* 3) can be abbreviated to *quality*. 
 
 
 
-Note that <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> which has the optimization (safety 3), or just **safety**, is called *safe code*. The consequences are unspecified if a *quality* appears more than once with *di↵erent values*. 
+Note that <ClLinks  term={"code"}><i>code</i></ClLinks> which has the optimization (safety 3), or just **safety**, is called *safe code*. The consequences are unspecified if a *quality* appears more than once with *di↵erent values*. 
 
 **Examples:**
 ```lisp
@@ -96,7 +96,7 @@ Note that <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> which has t
 
 
 
-<ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks>, <ClLinks styled={true} term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks styled={true} term={"proclaim"}><b>proclaim</b></ClLinks>, Section 3.3.4 (Declaration Scope) 
+<ClLinks  term={"declare"}><b>declare</b></ClLinks>, <ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks>, Section 3.3.4 (Declaration Scope) 
 
 
 
@@ -104,7 +104,7 @@ Note that <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> which has t
 
 
 
-An <ClLinks styled={true} term={"optimize"}><b>optimize</b></ClLinks> declaration never applies to either a <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> or a *function binding*. An **optimize 3–96** Programming Language—Common Lisp
+An <ClLinks  term={"optimize"}><b>optimize</b></ClLinks> declaration never applies to either a <ClLinks  term={"variable"}><i>variable</i></ClLinks> or a *function binding*. An **optimize 3–96** Programming Language—Common Lisp
 
 
 

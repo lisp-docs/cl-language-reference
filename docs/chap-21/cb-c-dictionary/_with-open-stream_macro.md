@@ -1,4 +1,4 @@
-**with-open-stream** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**with-open-stream** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"with-open-stream"}><b>with-open-stream</b></ClLinks> (*var stream*) *\{declaration\}*\* <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* 
+<ClLinks  term={"with-open-stream"}><b>with-open-stream</b></ClLinks> (*var stream*) *\{declaration\}*\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -22,19 +22,19 @@
 
 
 
-<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated to produce a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated to produce a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -42,15 +42,15 @@
 
 
 
-<ClLinks styled={true} term={"with-open-stream"}><b>with-open-stream</b></ClLinks> performs a series of operations on <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, returns a value, and then closes the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
+<ClLinks  term={"with-open-stream"}><b>with-open-stream</b></ClLinks> performs a series of operations on <ClLinks  term={"stream"}><i>stream</i></ClLinks>, returns a value, and then closes the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-*Var* is bound to the value of <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, and then <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are executed as an *implicit progn*. *stream* is automatically closed on exit from <ClLinks styled={true} term={"with-open-stream"}><b>with-open-stream</b></ClLinks>, no matter whether the exit is normal or abnormal. The <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> has *dynamic extent*; its <ClLinks styled={true} term={"extent"}><i>extent</i></ClLinks> ends when the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is exited. 
+*Var* is bound to the value of <ClLinks  term={"stream"}><i>stream</i></ClLinks>, and then <ClLinks  term={"form"}><i>forms</i></ClLinks> are executed as an *implicit progn*. *stream* is automatically closed on exit from <ClLinks  term={"with-open-stream"}><b>with-open-stream</b></ClLinks>, no matter whether the exit is normal or abnormal. The <ClLinks  term={"stream"}><i>stream</i></ClLinks> has *dynamic extent*; its <ClLinks  term={"extent"}><i>extent</i></ClLinks> ends when the <ClLinks  term={"form"}><i>form</i></ClLinks> is exited. 
 
 
 
-The consequences are undefined if an attempt is made to <ClLinks styled={true} term={"assign"}><i>assign</i></ClLinks> the the *variable var* with the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
+The consequences are undefined if an attempt is made to <ClLinks  term={"assign"}><i>assign</i></ClLinks> the the *variable var* with the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -65,7 +65,7 @@ The consequences are undefined if an attempt is made to <ClLinks styled={true} t
 
 
 
-The <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is closed (upon exit). 
+The <ClLinks  term={"stream"}><i>stream</i></ClLinks> is closed (upon exit). 
 
 
 
@@ -73,7 +73,7 @@ The <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is closed (up
 
 
 
-<ClLinks styled={true} term={"close"}><b>close</b></ClLinks> 
+<ClLinks  term={"close"}><b>close</b></ClLinks> 
 
 
 

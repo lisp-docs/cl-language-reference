@@ -2,7 +2,7 @@
 
 
 
-As examples, the <ClLinks styled={true} term={"token"}><i>tokens</i></ClLinks> in Figure 2–10 are *potential numbers*, but they are not actually numbers, and so are reserved <ClLinks styled={true} term={"token"}><i>tokens</i></ClLinks>; a *conforming implementation* is permitted, but not required, to define their meaning. 
+As examples, the <ClLinks  term={"token"}><i>tokens</i></ClLinks> in Figure 2–10 are *potential numbers*, but they are not actually numbers, and so are reserved <ClLinks  term={"token"}><i>tokens</i></ClLinks>; a *conforming implementation* is permitted, but not required, to define their meaning. 
 
 
 
@@ -14,7 +14,7 @@ As examples, the <ClLinks styled={true} term={"token"}><i>tokens</i></ClLinks> i
 
 
 
-The <ClLinks styled={true} term={"token"}><i>tokens</i></ClLinks> in Figure 2–11 are not *potential numbers*; they are always treated as <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>: 
+The <ClLinks  term={"token"}><i>tokens</i></ClLinks> in Figure 2–11 are not *potential numbers*; they are always treated as <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>: 
 
 
 
@@ -30,7 +30,7 @@ The <ClLinks styled={true} term={"token"}><i>tokens</i></ClLinks> in Figure 2–
 
 
 
-The <ClLinks styled={true} term={"token"}><i>tokens</i></ClLinks> in Figure 2–12 are *potential numbers* if the *current input base* is 16, but they are always treated as <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> if the *current input base* is 10. 
+The <ClLinks  term={"token"}><i>tokens</i></ClLinks> in Figure 2–12 are *potential numbers* if the *current input base* is 16, but they are always treated as <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> if the *current input base* is 10. 
 
 
 

@@ -1,4 +1,4 @@
-**with-open-file** <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> 
+**with-open-file** <ClLinks  term={"macro"}><i>macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"with-open-file"}><b>with-open-file</b></ClLinks> (*stream filespec \{options\}*\*) <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* 
+<ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> (*stream filespec \{options\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> – a variable. 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks> – a variable. 
 
 
 
@@ -26,19 +26,19 @@
 
 
 
-*options* – <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>; evaluated. 
+*options* – <ClLinks  term={"form"}><i>forms</i></ClLinks>; evaluated. 
 
 
 
-<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -46,27 +46,23 @@
 
 
 
-<ClLinks styled={true} term={"with-open-file"}><b>with-open-file</b></ClLinks> uses <ClLinks styled={true} term={"open"}><b>open</b></ClLinks> to create a *file stream* to <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> named by *filespec*. *Filespec* is the name of the file to be opened. *Options* are used as keyword arguments to <ClLinks styled={true} term={"open"}><b>open</b></ClLinks>. 
+<ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> uses <ClLinks  term={"open"}><b>open</b></ClLinks> to create a *file stream* to <ClLinks  term={"file"}><i>file</i></ClLinks> named by *filespec*. *Filespec* is the name of the file to be opened. *Options* are used as keyword arguments to <ClLinks  term={"open"}><b>open</b></ClLinks>. 
 
 
 
-The *stream object* to which the *stream variable* is <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks> has *dynamic extent*; its <ClLinks styled={true} term={"extent"}><i>extent</i></ClLinks> ends when the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is exited. 
+The *stream object* to which the *stream variable* is <ClLinks  term={"bound"}><i>bound</i></ClLinks> has *dynamic extent*; its <ClLinks  term={"extent"}><i>extent</i></ClLinks> ends when the <ClLinks  term={"form"}><i>form</i></ClLinks> is exited. 
 
 
 
-<ClLinks styled={true} term={"with-open-file"}><b>with-open-file</b></ClLinks> evaluates the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> as an *implicit progn* with <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> bound to the value returned by <ClLinks styled={true} term={"open"}><b>open</b></ClLinks>. 
+<ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> evaluates the <ClLinks  term={"form"}><i>forms</i></ClLinks> as an *implicit progn* with <ClLinks  term={"stream"}><i>stream</i></ClLinks> bound to the value returned by <ClLinks  term={"open"}><b>open</b></ClLinks>. 
 
 
 
-When control leaves the body, either normally or abnormally (such as by use of <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks>), the file is automatically closed. If a new output file is being written, and control leaves abnormally, the file is aborted and the file system is left, so far as possible, as if the file had never been opened. 
-
-
+When control leaves the body, either normally or abnormally (such as by use of <ClLinks  term={"throw"}><b>throw</b></ClLinks>), the file is automatically closed. If a new output file is being written, and control leaves abnormally, the file is aborted and the file system is left, so far as possible, as if the file had never been opened. 
 
 
 
 
-
- 
 
 
 
@@ -74,15 +70,19 @@ When control leaves the body, either normally or abnormally (such as by use of <
 
 
 
-<ClLinks styled={true} term={"with-open-file"}><b>with-open-file</b></ClLinks> 
+ 
 
 
 
-It is possible by the use of :if-exists nil or :if-does-not-exist nil for <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> to be bound to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. Users of :if-does-not-exist nil should check for a valid <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. 
+<ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> 
 
 
 
-The consequences are undefined if an attempt is made to <ClLinks styled={true} term={"assign"}><i>assign</i></ClLinks> the *stream variable*. The compiler may choose to issue a warning if such an attempt is detected. 
+It is possible by the use of :if-exists nil or :if-does-not-exist nil for <ClLinks  term={"stream"}><i>stream</i></ClLinks> to be bound to <ClLinks  term={"nil"}><b>nil</b></ClLinks>. Users of :if-does-not-exist nil should check for a valid <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+
+
+
+The consequences are undefined if an attempt is made to <ClLinks  term={"assign"}><i>assign</i></ClLinks> the *stream variable*. The compiler may choose to issue a warning if such an attempt is detected. 
 
 
 
@@ -115,7 +115,7 @@ The consequences are undefined if an attempt is made to <ClLinks styled={true} t
 
 
 
-Creates a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> to the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> named by <ClLinks styled={true} term={"filename"}><i>filename</i></ClLinks> (upon entry), and closes the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> (upon exit). In some <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>, the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> might be locked in some way while it is open. If the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is an *output stream*, a <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> might be created. 
+Creates a <ClLinks  term={"stream"}><i>stream</i></ClLinks> to the <ClLinks  term={"file"}><i>file</i></ClLinks> named by <ClLinks  term={"filename"}><i>filename</i></ClLinks> (upon entry), and closes the <ClLinks  term={"stream"}><i>stream</i></ClLinks> (upon exit). In some <ClLinks  term={"implementation"}><i>implementations</i></ClLinks>, the <ClLinks  term={"file"}><i>file</i></ClLinks> might be locked in some way while it is open. If the <ClLinks  term={"stream"}><i>stream</i></ClLinks> is an *output stream*, a <ClLinks  term={"file"}><i>file</i></ClLinks> might be created. 
 
 
 
@@ -131,7 +131,7 @@ The host computer’s file system.
 
 
 
-See the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"open"}><b>open</b></ClLinks>. 
+See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"open"}><b>open</b></ClLinks>. 
 
 
 
@@ -151,4 +151,4 @@ See the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLi
 
 
 
-<ClLinks styled={true} term={"open"}><b>open</b></ClLinks>, <ClLinks styled={true} term={"close"}><b>close</b></ClLinks>, <ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks styled={true} term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks  term={"open"}><b>open</b></ClLinks>, <ClLinks  term={"close"}><b>close</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 19.1.2 (Pathnames as Filenames) 

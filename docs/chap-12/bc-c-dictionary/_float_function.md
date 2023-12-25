@@ -1,4 +1,4 @@
-**float** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**float** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"float"}><b>float</b></ClLinks> <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> &amp;optional *prototype ! float* 
+<ClLinks  term={"float"}><b>float</b></ClLinks> <ClLinks  term={"number"}><i>number</i></ClLinks> &amp;optional *prototype ! float* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a *real*. 
+<ClLinks  term={"number"}><i>number</i></ClLinks>—a *real*. 
 
 
 
-*prototype*—a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>. 
+*prototype*—a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"float"}><i>float</i></ClLinks>—a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>. 
+<ClLinks  term={"float"}><i>float</i></ClLinks>—a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-<ClLinks styled={true} term={"float"}><b>float</b></ClLinks> converts a *real* number to a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>. 
+<ClLinks  term={"float"}><b>float</b></ClLinks> converts a *real* number to a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
 
 
 
-If a *prototype* is supplied, a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> is returned that is mathematically equal to <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> but has the same format as *prototype*. 
+If a *prototype* is supplied, a <ClLinks  term={"float"}><i>float</i></ClLinks> is returned that is mathematically equal to <ClLinks  term={"number"}><i>number</i></ClLinks> but has the same format as *prototype*. 
 
 
 
-If *prototype* is not supplied, then if the <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is already a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>, it is returned; otherwise, a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> is returned that is mathematically equal to <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> but is a *single float*. 
+If *prototype* is not supplied, then if the <ClLinks  term={"number"}><i>number</i></ClLinks> is already a <ClLinks  term={"float"}><i>float</i></ClLinks>, it is returned; otherwise, a <ClLinks  term={"float"}><i>float</i></ClLinks> is returned that is mathematically equal to <ClLinks  term={"number"}><i>number</i></ClLinks> but is a *single float*. 
 
 
 
@@ -58,7 +58,7 @@ If *prototype* is not supplied, then if the <ClLinks styled={true} term={"number
 
 
 
-<ClLinks styled={true} term={"coerce"}><b>coerce</b></ClLinks> 
+<ClLinks  term={"coerce"}><b>coerce</b></ClLinks> 
 
 
 

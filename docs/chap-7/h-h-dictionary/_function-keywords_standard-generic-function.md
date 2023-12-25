@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"function-keywords"}><b>function-keywords</b></ClLinks> *method → keys, allow-other-keys-p* 
+<ClLinks  term={"function-keywords"}><b>function-keywords</b></ClLinks> *method → keys, allow-other-keys-p* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"function-keywords"}><b>function-keywords</b></ClLinks> (<ClLinks styled={true} term={"method"}><i>method</i></ClLinks> <ClLinks styled={true} term={"standard-method"}><b>standard-method</b></ClLinks>) 
+<ClLinks  term={"function-keywords"}><b>function-keywords</b></ClLinks> (<ClLinks  term={"method"}><i>method</i></ClLinks> <ClLinks  term={"standard-method"}><b>standard-method</b></ClLinks>) 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-<ClLinks styled={true} term={"method"}><i>method</i></ClLinks>—a <ClLinks styled={true} term={"method"}><i>method</i></ClLinks>. 
+<ClLinks  term={"method"}><i>method</i></ClLinks>—a <ClLinks  term={"method"}><i>method</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"key"}><i>keys</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+<ClLinks  term={"key"}><i>keys</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -38,11 +38,11 @@
 
 
 
-Returns the keyword parameter specifiers for a <ClLinks styled={true} term={"method"}><i>method</i></ClLinks>. 
+Returns the keyword parameter specifiers for a <ClLinks  term={"method"}><i>method</i></ClLinks>. 
 
 
 
-Two values are returned: a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the explicitly named keywords and a *generalized boolean* that states whether **&amp;allow-other-keys** had been specified in the <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> definition. 
+Two values are returned: a <ClLinks  term={"list"}><i>list</i></ClLinks> of the explicitly named keywords and a *generalized boolean* that states whether **&amp;allow-other-keys** had been specified in the <ClLinks  term={"method"}><i>method</i></ClLinks> definition. 
 
 
 
@@ -70,7 +70,7 @@ Two values are returned: a <ClLinks styled={true} term={"list"}><i>list</i></ClL
 
 
 
-<ClLinks styled={true} term={"defmethod"}><b>defmethod</b></ClLinks> 
+<ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> 
 
 
 
@@ -90,7 +90,7 @@ Two values are returned: a <ClLinks styled={true} term={"list"}><i>list</i></ClL
 
 
 
-<ClLinks styled={true} term={"defmethod"}><b>defmethod</b></ClLinks> 
+<ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> 
 
 
 

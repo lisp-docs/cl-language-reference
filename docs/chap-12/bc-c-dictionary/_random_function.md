@@ -1,4 +1,4 @@
-**random** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**random** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"random"}><b>random</b></ClLinks> *limit* &amp;optional *random-state → random-number* 
+<ClLinks  term={"random"}><b>random</b></ClLinks> *limit* &amp;optional *random-state → random-number* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*limit*—a positive *integer* , or a positive <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>. 
+*limit*—a positive *integer* , or a positive <ClLinks  term={"float"}><i>float</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*random-number*—a non-negative <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> less than *limit* and of the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> as *limit*. 
+*random-number*—a non-negative <ClLinks  term={"number"}><i>number</i></ClLinks> less than *limit* and of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *limit*. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns a pseudo-random number that is a non-negative <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> less than *limit* and of the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> as *limit*. 
+Returns a pseudo-random number that is a non-negative <ClLinks  term={"number"}><i>number</i></ClLinks> less than *limit* and of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *limit*. 
 
 
 
@@ -61,7 +61,7 @@ The *random-state* is modified.
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *limit* is not a positive *integer* or a positive *real*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *limit* is not a positive *integer* or a positive *real*. 
 
 
 
@@ -69,7 +69,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"make-random-state"}><b>make-random-state</b></ClLinks>, <ClLinks styled={true} term={"random-state"}><b>\*random-state\*</b></ClLinks> 
+<ClLinks  term={"make-random-state"}><b>make-random-state</b></ClLinks>, <ClLinks  term={"random-state"}><b>\*random-state\*</b></ClLinks> 
 
 
 

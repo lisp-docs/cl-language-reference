@@ -1,4 +1,4 @@
-**clrhash** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**clrhash** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"clrhash"}><b>clrhash</b></ClLinks> *hash-table → hash-table* 
+<ClLinks  term={"clrhash"}><b>clrhash</b></ClLinks> *hash-table → hash-table* 
 
 
 

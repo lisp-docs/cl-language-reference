@@ -1,4 +1,4 @@
- Figure 12–7 shows *defined names* relating to <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> details about <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks>. 
+ Figure 12–7 shows *defined names* relating to <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> details about <ClLinks  term={"number"}><i>numbers</i></ClLinks>. 
 
 
 

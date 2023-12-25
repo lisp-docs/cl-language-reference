@@ -1,4 +1,4 @@
-**set** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**set** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"set"}><b>set</b></ClLinks> *symbol value → value* 
+<ClLinks  term={"set"}><b>set</b></ClLinks> *symbol value → value* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"value"}><i>value</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks  term={"value"}><i>value</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<ClLinks styled={true} term={"set"}><b>set</b></ClLinks> changes the contents of the *value cell* of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> to the given <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>. 
+<ClLinks  term={"set"}><b>set</b></ClLinks> changes the contents of the *value cell* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to the given <ClLinks  term={"value"}><i>value</i></ClLinks>. 
 
 
 
-(set *symbol value*) *≡* (setf (symbol-value <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>) <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>) 
+(set *symbol value*) *≡* (setf (symbol-value <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) <ClLinks  term={"value"}><i>value</i></ClLinks>) 
 
 
 
@@ -74,7 +74,7 @@ n → 44
 
 
 
-The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is changed. 
+The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is changed. 
 
 
 
@@ -82,7 +82,7 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks sty
 
 
 
-<ClLinks styled={true} term={"setq"}><b>setq</b></ClLinks>, <ClLinks styled={true} term={"progv"}><b>progv</b></ClLinks>, <ClLinks styled={true} term={"symbol-value"}><b>symbol-value</b></ClLinks> 
+<ClLinks  term={"setq"}><b>setq</b></ClLinks>, <ClLinks  term={"progv"}><b>progv</b></ClLinks>, <ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> 
 
 
 
@@ -90,11 +90,11 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks sty
 
 
 
-The function <ClLinks styled={true} term={"set"}><b>set</b></ClLinks> is deprecated. 
+The function <ClLinks  term={"set"}><b>set</b></ClLinks> is deprecated. 
 
 
 
-<ClLinks styled={true} term={"set"}><b>set</b></ClLinks> cannot change the value of a *lexical variable*. 
+<ClLinks  term={"set"}><b>set</b></ClLinks> cannot change the value of a *lexical variable*. 
 
 
 

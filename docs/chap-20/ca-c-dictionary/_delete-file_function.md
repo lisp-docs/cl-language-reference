@@ -1,4 +1,4 @@
-**delete-file** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**delete-file** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"delete-file"}><b>delete-file</b></ClLinks> *filespec →* <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<ClLinks  term={"delete-file"}><b>delete-file</b></ClLinks> *filespec →* <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-Deletes the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> specified by *filespec*. 
+Deletes the <ClLinks  term={"file"}><i>file</i></ClLinks> specified by *filespec*. 
 
 
 
-If the *filespec designator* is an open <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, then *filespec* and the file associated with it are affected (if the file system permits), in which case *filespec* might be closed immediately, and the deletion 
+If the *filespec designator* is an open <ClLinks  term={"stream"}><i>stream</i></ClLinks>, then *filespec* and the file associated with it are affected (if the file system permits), in which case *filespec* might be closed immediately, and the deletion 
 
 
 
@@ -46,15 +46,15 @@ might be immediate or delayed until *filespec* is explicitly closed, depending o
 
 
 
-It is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether an attempt to delete a nonexistent file is considered to be successful. 
+It is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether an attempt to delete a nonexistent file is considered to be successful. 
 
 
 
-<ClLinks styled={true} term={"delete-file"}><b>delete-file</b></ClLinks> returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if it succeeds, or signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> if it does not. 
+<ClLinks  term={"delete-file"}><b>delete-file</b></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if it succeeds, or signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> if it does not. 
 
 
 
-The consequences are undefined if *filespec* has a <ClLinks styled={true} term={"wild"}><i>wild</i></ClLinks> component, or if *filespec* has a <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> component and the file system does not permit a <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> component. 
+The consequences are undefined if *filespec* has a <ClLinks  term={"wild"}><i>wild</i></ClLinks> component, or if *filespec* has a <ClLinks  term={"nil"}><b>nil</b></ClLinks> component and the file system does not permit a <ClLinks  term={"nil"}><b>nil</b></ClLinks> component. 
 
 
 
@@ -74,11 +74,11 @@ The consequences are undefined if *filespec* has a <ClLinks styled={true} term={
 
 
 
-If the deletion operation is not successful, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
+If the deletion operation is not successful, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
 
 
 
-An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> might be signaled if *filespec* is <ClLinks styled={true} term={"wild"}><i>wild</i></ClLinks>. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> might be signaled if *filespec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
 
 
 
@@ -86,7 +86,7 @@ An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks 
 
 
 
-<ClLinks styled={true} term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks styled={true} term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 

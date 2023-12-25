@@ -2,11 +2,11 @@
 
 
 
-Since all <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks> are <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks>, all rules which apply generally to <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> also apply to <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks>. See Section 15.1 (Array Concepts). 
+Since all <ClLinks  term={"string"}><i>strings</i></ClLinks> are <ClLinks  term={"array"}><i>arrays</i></ClLinks>, all rules which apply generally to <ClLinks  term={"array"}><i>arrays</i></ClLinks> also apply to <ClLinks  term={"string"}><i>strings</i></ClLinks>. See Section 15.1 (Array Concepts). 
 
 
 
-For example, <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks> can have *fill pointers*, and <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks> are also subject to the rules of *element type upgrading* that apply to <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks>. 
+For example, <ClLinks  term={"string"}><i>strings</i></ClLinks> can have *fill pointers*, and <ClLinks  term={"string"}><i>strings</i></ClLinks> are also subject to the rules of *element type upgrading* that apply to <ClLinks  term={"array"}><i>arrays</i></ClLinks>. 
 
 
 

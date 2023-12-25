@@ -1,4 +1,4 @@
-**fboundp** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**fboundp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"fboundp"}><b>fboundp</b></ClLinks> *name → generalized-boolean* 
+<ClLinks  term={"fboundp"}><b>fboundp</b></ClLinks> *name → generalized-boolean* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a *function name*. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a *function name*. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"name"}><i>name</i></ClLinks> is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -63,7 +63,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is not a *function name*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"name"}><i>name</i></ClLinks> is not a *function name*. 
 
 
 
@@ -71,7 +71,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"symbol-function"}><b>symbol-function</b></ClLinks>, <ClLinks styled={true} term={"fmakunbound"}><b>fmakunbound</b></ClLinks>, <ClLinks styled={true} term={"fdefinition"}><b>fdefinition</b></ClLinks> 
+<ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks>, <ClLinks  term={"fmakunbound"}><b>fmakunbound</b></ClLinks>, <ClLinks  term={"fdefinition"}><b>fdefinition</b></ClLinks> 
 
 
 
@@ -91,11 +91,11 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-It is permissible to call <ClLinks styled={true} term={"symbol-function"}><b>symbol-function</b></ClLinks> on any <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that is <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks>. 
+It is permissible to call <ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> on any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"fboundp"}><b>fboundp</b></ClLinks> is sometimes used to “guard” an access to the *function cell*, as in: (if (fboundp x) (symbol-function x)) 
+<ClLinks  term={"fboundp"}><b>fboundp</b></ClLinks> is sometimes used to “guard” an access to the *function cell*, as in: (if (fboundp x) (symbol-function x)) 
 
 
 

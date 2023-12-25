@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"unwind-protect"}><b>unwind-protect</b></ClLinks> *protected-form \{cleanup-form\}*\* → \{result\}\* 
+<ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> *protected-form \{cleanup-form\}*\* → \{result\}\* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*protected-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+*protected-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*cleanup-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+*cleanup-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of the *protected-form*. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the *protected-form*. 
 
 
 
@@ -30,19 +30,19 @@
 
 
 
-<ClLinks styled={true} term={"unwind-protect"}><b>unwind-protect</b></ClLinks> evaluates *protected-form* and guarantees that *cleanup-forms* are executed before <ClLinks styled={true} term={"unwind-protect"}><b>unwind-protect</b></ClLinks> exits, whether it terminates normally or is aborted by a control transfer of some kind. <ClLinks styled={true} term={"unwind-protect"}><b>unwind-protect</b></ClLinks> is intended to be used to make sure that certain side effects take place after the evaluation of *protected-form*. 
+<ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> evaluates *protected-form* and guarantees that *cleanup-forms* are executed before <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> exits, whether it terminates normally or is aborted by a control transfer of some kind. <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> is intended to be used to make sure that certain side effects take place after the evaluation of *protected-form*. 
 
 
 
-If a *non-local exit* occurs during execution of *cleanup-forms*, no special action is taken. The *cleanup-forms* of <ClLinks styled={true} term={"unwind-protect"}><b>unwind-protect</b></ClLinks> are not protected by that <ClLinks styled={true} term={"unwind-protect"}><b>unwind-protect</b></ClLinks>. 
+If a *non-local exit* occurs during execution of *cleanup-forms*, no special action is taken. The *cleanup-forms* of <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> are not protected by that <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"unwind-protect"}><b>unwind-protect</b></ClLinks> protects against all attempts to exit from *protected-form*, including <ClLinks styled={true} term={"go"}><b>go</b></ClLinks>, <ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks>, <ClLinks styled={true} term={"ignore-errors"}><b>ignore-errors</b></ClLinks>, <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>, <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks>, <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks>, and <ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks>. 
+<ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> protects against all attempts to exit from *protected-form*, including <ClLinks  term={"go"}><b>go</b></ClLinks>, <ClLinks  term={"handler-case"}><b>handler-case</b></ClLinks>, <ClLinks  term={"ignore-errors"}><b>ignore-errors</b></ClLinks>, <ClLinks  term={"restart-case"}><b>restart-case</b></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, <ClLinks  term={"throw"}><b>throw</b></ClLinks>, and <ClLinks  term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks>. 
 
 
 
-Undoing of <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> and *restart bindings* during an exit happens in parallel with the undoing of the bindings of *dynamic variables* and <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> tags, in the reverse order in which they were established. The effect of this is that *cleanup-form* sees the same <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> and *restart bindings*, as well as *dynamic variable bindings* and <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> tags, as were visible when the <ClLinks styled={true} term={"unwind-protect"}><b>unwind-protect</b></ClLinks> was entered. 
+Undoing of <ClLinks  term={"handler"}><i>handler</i></ClLinks> and *restart bindings* during an exit happens in parallel with the undoing of the bindings of *dynamic variables* and <ClLinks  term={"catch"}><b>catch</b></ClLinks> tags, in the reverse order in which they were established. The effect of this is that *cleanup-form* sees the same <ClLinks  term={"handler"}><i>handler</i></ClLinks> and *restart bindings*, as well as *dynamic variable bindings* and <ClLinks  term={"catch"}><b>catch</b></ClLinks> tags, as were visible when the <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> was entered. 
 
 
 
@@ -148,4 +148,4 @@ Data and Control
 
 
 
-<ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks>, <ClLinks styled={true} term={"go"}><b>go</b></ClLinks>, <ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks>, <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>, <ClLinks styled={true} term={"return"}><b>return</b></ClLinks>, <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks>, <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks>, Section 3.1 (Evaluation) 
+<ClLinks  term={"catch"}><b>catch</b></ClLinks>, <ClLinks  term={"go"}><b>go</b></ClLinks>, <ClLinks  term={"handler-case"}><b>handler-case</b></ClLinks>, <ClLinks  term={"restart-case"}><b>restart-case</b></ClLinks>, <ClLinks  term={"return"}><b>return</b></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, <ClLinks  term={"throw"}><b>throw</b></ClLinks>, Section 3.1 (Evaluation) 

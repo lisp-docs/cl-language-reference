@@ -1,4 +1,4 @@
-**fill-pointer** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
+**fill-pointer** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"fill-pointer"}><b>fill-pointer</b></ClLinks> *vector → fill-pointer* 
+<ClLinks  term={"fill-pointer"}><b>fill-pointer</b></ClLinks> *vector → fill-pointer* 
 
 
 
-**(setf (fill-pointer** <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>**)** *new-fill-pointer***)** 
+**(setf (fill-pointer** <ClLinks  term={"vector"}><i>vector</i></ClLinks>**)** *new-fill-pointer***)** 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-<ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>—a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* . 
+<ClLinks  term={"vector"}><i>vector</i></ClLinks>—a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* . 
 
 
 
-*fill-pointer*, *new-fill-pointer*—a *valid fill pointer* for the <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>. 
+*fill-pointer*, *new-fill-pointer*—a *valid fill pointer* for the <ClLinks  term={"vector"}><i>vector</i></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*Accesses* the *fill pointer* of <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>. 
+*Accesses* the *fill pointer* of <ClLinks  term={"vector"}><i>vector</i></ClLinks>. 
 
 
 
@@ -50,7 +50,7 @@ a → #(0 1 4 9 NIL NIL NIL NIL)
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> is not a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"vector"}><i>vector</i></ClLinks> is not a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* . 
 
 
 
@@ -66,7 +66,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks styled={true} term={"length"}><b>length</b></ClLinks> 
+<ClLinks  term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks  term={"length"}><b>length</b></ClLinks> 
 
 
 
@@ -74,7 +74,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-There is no <ClLinks styled={true} term={"operator"}><i>operator</i></ClLinks> that will remove a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> ’s *fill pointer* . 
+There is no <ClLinks  term={"operator"}><i>operator</i></ClLinks> that will remove a <ClLinks  term={"vector"}><i>vector</i></ClLinks> ’s *fill pointer* . 
 
 
 

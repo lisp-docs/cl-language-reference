@@ -1,4 +1,4 @@
-*∗<ClLinks styled={true} term={"package"}><b><ClLinks styled={true} term={"package"}><i>package</i></ClLinks></b></ClLinks>∗ Variable* 
+*∗<ClLinks  term={"package"}><b><ClLinks  term={"package"}><i>package</i></ClLinks></b></ClLinks>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a *package object*.
 
 
 
-the COMMON-LISP-USER <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
+the COMMON-LISP-USER <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ the COMMON-LISP-USER <ClLinks styled={true} term={"package"}><i>package</i></ClL
 
 
 
-Whatever *package object* is currently the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"package"}><b>\*package\*</b></ClLinks> is referred to as the *current package*. 
+Whatever *package object* is currently the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"package"}><b>\*package\*</b></ClLinks> is referred to as the *current package*. 
 
 **Examples:**
 ```lisp
@@ -50,7 +50,7 @@ Whatever *package object* is currently the <ClLinks styled={true} term={"value"}
 
 
 
-<ClLinks styled={true} term={"load"}><b>load</b></ClLinks>, <ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks styled={true} term={"in-package"}><b>in-package</b></ClLinks> 
+<ClLinks  term={"load"}><b>load</b></ClLinks>, <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks  term={"in-package"}><b>in-package</b></ClLinks> 
 
 
 
@@ -58,7 +58,7 @@ Whatever *package object* is currently the <ClLinks styled={true} term={"value"}
 
 
 
-<ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks styled={true} term={"in-package"}><b>in-package</b></ClLinks>, <ClLinks styled={true} term={"load"}><b>load</b></ClLinks>, <ClLinks styled={true} term={"package"}><b>package</b></ClLinks> 
+<ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks  term={"in-package"}><b>in-package</b></ClLinks>, <ClLinks  term={"load"}><b>load</b></ClLinks>, <ClLinks  term={"package"}><b>package</b></ClLinks> 
 
 
 

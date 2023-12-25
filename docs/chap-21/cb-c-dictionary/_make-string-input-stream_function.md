@@ -1,4 +1,4 @@
-**make-string-input-stream** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**make-string-input-stream** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"make-string-input-stream"}><b>make-string-input-stream</b></ClLinks> <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> &amp;optional *start end → string-stream* 
+<ClLinks  term={"make-string-input-stream"}><b>make-string-input-stream</b></ClLinks> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *start end → string-stream* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"string"}><i>string</i></ClLinks>—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
+<ClLinks  term={"string"}><i>string</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
-*start*, *end*—*bounding index designators* of <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—*bounding index designators* of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns an *input string stream*. This <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> will supply, in order, the <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> in the substring of *string bounded* by *start* and *end*. After the last <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> has been supplied, the *string stream* will then be at *end of file*. 
+Returns an *input string stream*. This <ClLinks  term={"stream"}><i>stream</i></ClLinks> will supply, in order, the <ClLinks  term={"character"}><i>characters</i></ClLinks> in the substring of *string bounded* by *start* and *end*. After the last <ClLinks  term={"character"}><i>character</i></ClLinks> has been supplied, the *string stream* will then be at *end of file*. 
 
 
 
@@ -47,7 +47,7 @@ Returns an *input string stream*. This <ClLinks styled={true} term={"stream"}><i
 
 
 
-<ClLinks styled={true} term={"with-input-from-string"}><b>with-input-from-string</b></ClLinks> 
+<ClLinks  term={"with-input-from-string"}><b>with-input-from-string</b></ClLinks> 
 
 
 

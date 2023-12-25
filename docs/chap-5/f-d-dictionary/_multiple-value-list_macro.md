@@ -1,4 +1,4 @@
-**multiple-value-list** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**multiple-value-list** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks> *form ! list* 
+<ClLinks  term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks> *form ! list* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
+<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
 
 
 
-<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+<ClLinks  term={"list"}><i>list</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@ Data and Control
 
 
 
-<ClLinks styled={true} term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks> evaluates <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> and creates a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the *multiple values*<sub>2</sub> it returns. 
+<ClLinks  term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks> evaluates <ClLinks  term={"form"}><i>form</i></ClLinks> and creates a <ClLinks  term={"list"}><i>list</i></ClLinks> of the *multiple values*<sub>2</sub> it returns. 
 
 **Examples:**
 ```lisp
@@ -48,7 +48,7 @@ Data and Control
 
 
 
-<ClLinks styled={true} term={"values-list"}><b>values-list</b></ClLinks>, <ClLinks styled={true} term={"multiple-value-call"}><b>multiple-value-call</b></ClLinks> 
+<ClLinks  term={"values-list"}><b>values-list</b></ClLinks>, <ClLinks  term={"multiple-value-call"}><b>multiple-value-call</b></ClLinks> 
 
 
 
@@ -56,7 +56,7 @@ Data and Control
 
 
 
-<ClLinks styled={true} term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks> and <ClLinks styled={true} term={"values-list"}><b>values-list</b></ClLinks> are inverses of each other. 
+<ClLinks  term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks> and <ClLinks  term={"values-list"}><b>values-list</b></ClLinks> are inverses of each other. 
 
 
 

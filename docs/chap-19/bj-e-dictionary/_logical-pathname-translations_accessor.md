@@ -1,4 +1,4 @@
-**logical-pathname-translations** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
+**logical-pathname-translations** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"logical-pathname-translations"}><b>logical-pathname-translations</b></ClLinks> *host → translations* 
+<ClLinks  term={"logical-pathname-translations"}><b>logical-pathname-translations</b></ClLinks> *host → translations* 
 
 
 
-<!-- **(setf (logical-pathname-translations** *host<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> *new-translations***)**  -->
+<!-- **(setf (logical-pathname-translations** *host<ClLinks  term={"t"}><b>*)</b></ClLinks> *new-translations***)**  -->
 **(setf (logical-pathname-translations** *host***)** *new-translations***)** 
 
 
@@ -23,7 +23,7 @@
 
 
 
-*translations*, *new-translations*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+*translations*, *new-translations*—a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -39,7 +39,7 @@
 
 
 
-<ClLinks styled={true} term={"logical-pathname-translations"}><b>logical-pathname-translations</b></ClLinks> 
+<ClLinks  term={"logical-pathname-translations"}><b>logical-pathname-translations</b></ClLinks> 
 
 
 
@@ -47,19 +47,19 @@
 
 
 
-Returns the host’s <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of translations. Each translation is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of at least two elements: *from-wildcard* and *to-wildcard*. Any additional elements are <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. *From-wildcard* is a *logical pathname* whose host is *host*. *To-wildcard* is a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>. 
+Returns the host’s <ClLinks  term={"list"}><i>list</i></ClLinks> of translations. Each translation is a <ClLinks  term={"list"}><i>list</i></ClLinks> of at least two elements: *from-wildcard* and *to-wildcard*. Any additional elements are <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. *From-wildcard* is a *logical pathname* whose host is *host*. *To-wildcard* is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
 
 
 
-(setf (logical-pathname-translations *host*) *translations*) sets a *logical pathname* host’s <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *translations*. If *host* is a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that has not been previously used as a *logical pathname* host, a new *logical pathname* host is defined; otherwise an existing host’s translations are replaced. *logical pathname* host names are compared with **string-equal**. 
+(setf (logical-pathname-translations *host*) *translations*) sets a *logical pathname* host’s <ClLinks  term={"list"}><i>list</i></ClLinks> of *translations*. If *host* is a <ClLinks  term={"string"}><i>string</i></ClLinks> that has not been previously used as a *logical pathname* host, a new *logical pathname* host is defined; otherwise an existing host’s translations are replaced. *logical pathname* host names are compared with **string-equal**. 
 
 
 
-When setting the translations list, each *from-wildcard* can be a *logical pathname* whose host is *host* or a *logical pathname* namestring parseable by (parse-namestring *string host*), where *host* represents the appropriate <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> as defined by <ClLinks styled={true} term={"parse-namestring"}><b>parse-namestring</b></ClLinks>. Each *to-wildcard* can be anything coercible to a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> by (pathname *to-wildcard*). If *to-wildcard* coerces to a *logical pathname*, <ClLinks styled={true} term={"translate-logical-pathname"}><b>translate-logical-pathname</b></ClLinks> will perform repeated translation steps when it uses it. 
+When setting the translations list, each *from-wildcard* can be a *logical pathname* whose host is *host* or a *logical pathname* namestring parseable by (parse-namestring *string host*), where *host* represents the appropriate <ClLinks  term={"object"}><i>object</i></ClLinks> as defined by <ClLinks  term={"parse-namestring"}><b>parse-namestring</b></ClLinks>. Each *to-wildcard* can be anything coercible to a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> by (pathname *to-wildcard*). If *to-wildcard* coerces to a *logical pathname*, <ClLinks  term={"translate-logical-pathname"}><b>translate-logical-pathname</b></ClLinks> will perform repeated translation steps when it uses it. 
 
 
 
-*host* is either the host component of a *logical pathname* or a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that has been defined as a *logical pathname* host name by <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"logical-pathname-translations"}><b>logical-pathname-translations</b></ClLinks>. 
+*host* is either the host component of a *logical pathname* or a <ClLinks  term={"string"}><i>string</i></ClLinks> that has been defined as a *logical pathname* host name by <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"logical-pathname-translations"}><b>logical-pathname-translations</b></ClLinks>. 
 
 
 
@@ -172,7 +172,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 
 
 
-If *host* is incorrectly supplied, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
+If *host* is incorrectly supplied, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
 
 
 
@@ -180,7 +180,7 @@ If *host* is incorrectly supplied, an error of <ClLinks styled={true} term={"typ
 
 
 
-<ClLinks styled={true} term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 19.1.2 (Pathnames as Filenames) 
 
 
 
@@ -188,7 +188,7 @@ If *host* is incorrectly supplied, an error of <ClLinks styled={true} term={"typ
 
 
 
-Implementations can define additional <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> that operate on *logical pathname* hosts, for example to specify additional translation rules or options. 
+Implementations can define additional <ClLinks  term={"function"}><i>functions</i></ClLinks> that operate on *logical pathname* hosts, for example to specify additional translation rules or options. 
 
 
 

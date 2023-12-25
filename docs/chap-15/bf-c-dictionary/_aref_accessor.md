@@ -1,4 +1,4 @@
-**aref** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
+**aref** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks> <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → element* 
+<ClLinks  term={"aref"}><b>aref</b></ClLinks> <ClLinks  term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → element* 
 
 
 
-<!-- **(setf (aref** <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts***)** *new-element<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks>  -->
+<!-- **(setf (aref** <ClLinks  term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts***)** *new-element<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
 **(setf (aref** *array* &amp;rest *subscripts***)** *new-element***)** 
 
 
@@ -19,15 +19,15 @@
 
 
 
-<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
+<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
-*subscripts*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *valid array indices* for the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
+*subscripts*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *valid array indices* for the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"element"}><i>element</i></ClLinks>, *new-element*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks  term={"element"}><i>element</i></ClLinks>, *new-element*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -35,11 +35,11 @@
 
 
 
-*Accesses* the *array element* specified by the *subscripts*. If no *subscripts* are supplied and <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is zero rank, <ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks> *accesses* the sole element of <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
+*Accesses* the *array element* specified by the *subscripts*. If no *subscripts* are supplied and <ClLinks  term={"array"}><i>array</i></ClLinks> is zero rank, <ClLinks  term={"aref"}><b>aref</b></ClLinks> *accesses* the sole element of <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks> ignores *fill pointers*. It is permissible to use <ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks> to <ClLinks styled={true} term={"access"}><i>access</i></ClLinks> any *array element*, whether <ClLinks styled={true} term={"active"}><i>active</i></ClLinks> or not. 
+<ClLinks  term={"aref"}><b>aref</b></ClLinks> ignores *fill pointers*. It is permissible to use <ClLinks  term={"aref"}><b>aref</b></ClLinks> to <ClLinks  term={"access"}><i>access</i></ClLinks> any *array element*, whether <ClLinks  term={"active"}><i>active</i></ClLinks> or not. 
 
 
 
@@ -64,7 +64,7 @@ If the variable foo names a 3-by-5 array, then the first index could be 0, 1, or
 
 
 
-<ClLinks styled={true} term={"bit"}><b>bit</b></ClLinks>, <ClLinks styled={true} term={"char"}><b>char</b></ClLinks>, <ClLinks styled={true} term={"elt"}><b>elt</b></ClLinks>, <ClLinks styled={true} term={"row-major-aref"}><b>row-major-aref</b></ClLinks>, <ClLinks styled={true} term={"svref"}><b>svref</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
+<ClLinks  term={"bit"}><b>bit</b></ClLinks>, <ClLinks  term={"char"}><b>char</b></ClLinks>, <ClLinks  term={"elt"}><b>elt</b></ClLinks>, <ClLinks  term={"row-major-aref"}><b>row-major-aref</b></ClLinks>, <ClLinks  term={"svref"}><b>svref</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
 
 
 

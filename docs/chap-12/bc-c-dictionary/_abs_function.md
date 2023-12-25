@@ -1,4 +1,4 @@
-**abs** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**abs** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"abs"}><b>abs</b></ClLinks> *number → absolute-value* 
+<ClLinks  term={"abs"}><b>abs</b></ClLinks> *number → absolute-value* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
+<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-<ClLinks styled={true} term={"abs"}><b>abs</b></ClLinks> returns the absolute value of <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>. 
+<ClLinks  term={"abs"}><b>abs</b></ClLinks> returns the absolute value of <ClLinks  term={"number"}><i>number</i></ClLinks>. 
 
 
 
-If <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is a *real*, the result is of the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> as <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>. 
+If <ClLinks  term={"number"}><i>number</i></ClLinks> is a *real*, the result is of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as <ClLinks  term={"number"}><i>number</i></ClLinks>. 
 
 
 
-If <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> , the result is a positive *real* with the same magnitude as <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>. The result can be a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> even if <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>’s components are <ClLinks styled={true} term={"rational"}><i>rationals</i></ClLinks> and an exact rational result would have been possible. Thus the result of (abs #c(3 4)) can be either 5 or 5.0, depending on the implementation. 
+If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> , the result is a positive *real* with the same magnitude as <ClLinks  term={"number"}><i>number</i></ClLinks>. The result can be a <ClLinks  term={"float"}><i>float</i></ClLinks> even if <ClLinks  term={"number"}><i>number</i></ClLinks>’s components are <ClLinks  term={"rational"}><i>rationals</i></ClLinks> and an exact rational result would have been possible. Thus the result of (abs #c(3 4)) can be either 5 or 5.0, depending on the implementation. 
 
 
 
@@ -61,11 +61,11 @@ Section 12.1.3.3 (Rule of Float Substitutability)
 
 
 
-If <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> is a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> , the result is equivalent to the following: 
+If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> , the result is equivalent to the following: 
 
 
 
-(sqrt (+ (expt (realpart <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>) 2) (expt (imagpart <ClLinks styled={true} term={"number"}><i>number</i></ClLinks>) 2))) 
+(sqrt (+ (expt (realpart <ClLinks  term={"number"}><i>number</i></ClLinks>) 2) (expt (imagpart <ClLinks  term={"number"}><i>number</i></ClLinks>) 2))) 
 
 
 

@@ -1,4 +1,4 @@
-**svref** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
+**svref** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"svref"}><b>svref</b></ClLinks> *simple-vector index → element* 
+<ClLinks  term={"svref"}><b>svref</b></ClLinks> *simple-vector index → element* 
 
 
 
-<!-- **(setf (svref** *simple-vector index***)** *new-element<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks>  -->
+<!-- **(setf (svref** *simple-vector index***)** *new-element<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
 **(setf (svref** *simple-vector index***)** *new-element***)** 
 
 
@@ -39,7 +39,7 @@
 
 
 
-<ClLinks styled={true} term={"element"}><i>element</i></ClLinks>, *new-element*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> (whose <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of the *array element type* of the *simple-vector*). 
+<ClLinks  term={"element"}><i>element</i></ClLinks>, *new-element*—an <ClLinks  term={"object"}><i>object</i></ClLinks> (whose <ClLinks  term={"type"}><i>type</i></ClLinks> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the *array element type* of the *simple-vector*). 
 
 
 
@@ -47,7 +47,7 @@
 
 
 
-*Accesses* the <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> of *simple-vector* specified by *index*. 
+*Accesses* the <ClLinks  term={"element"}><i>element</i></ClLinks> of *simple-vector* specified by *index*. 
 
 
 
@@ -63,7 +63,7 @@ v → #(1 NEWCOMER SIRENS)
 
 
 
-<ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks>, <ClLinks styled={true} term={"sbit"}><b>sbit</b></ClLinks>, <ClLinks styled={true} term={"schar"}><b>schar</b></ClLinks>, <ClLinks styled={true} term={"vector"}><b>vector</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
+<ClLinks  term={"aref"}><b>aref</b></ClLinks>, <ClLinks  term={"sbit"}><b>sbit</b></ClLinks>, <ClLinks  term={"schar"}><b>schar</b></ClLinks>, <ClLinks  term={"vector"}><b>vector</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
 
 
 
@@ -71,7 +71,7 @@ v → #(1 NEWCOMER SIRENS)
 
 
 
-<ClLinks styled={true} term={"svref"}><b>svref</b></ClLinks> is identical to <ClLinks styled={true} term={"aref"}><b>aref</b></ClLinks> except that it requires its first argument to be a *simple vector* . (svref *v i*) *≡* (aref (the simple-vector *v*) *i*) 
+<ClLinks  term={"svref"}><b>svref</b></ClLinks> is identical to <ClLinks  term={"aref"}><b>aref</b></ClLinks> except that it requires its first argument to be a *simple vector* . (svref *v i*) *≡* (aref (the simple-vector *v*) *i*) 
 
 
 

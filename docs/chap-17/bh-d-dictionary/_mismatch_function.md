@@ -1,4 +1,4 @@
-**mismatch** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**mismatch** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"mismatch"}><b>mismatch</b></ClLinks> *sequence-1 sequence-2* &amp;key *from-end test test-not key start1 start2 end1 end2 → position* 
+<ClLinks  term={"mismatch"}><b>mismatch</b></ClLinks> *sequence-1 sequence-2* &amp;key *from-end test test-not key start1 start2 end1 end2 → position* 
 
 
 
@@ -22,27 +22,27 @@
 
 
 
-*from-end*—a *generalized boolean*. The default is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+*from-end*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-*test*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. 
+*test*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks  term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. 
 
 
 
-*start1*, *end1*—*bounding index designators* of *sequence-1*. The defaults for *start1* and *end1* are 0 and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start1*, *end1*—*bounding index designators* of *sequence-1*. The defaults for *start1* and *end1* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
-*start2*, *end2*—*bounding index designators* of *sequence-2*. The defaults for *start2* and *end2* are 0 and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start2*, *end2*—*bounding index designators* of *sequence-2*. The defaults for *start2* and *end2* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
-<ClLinks styled={true} term={"key"}><i>key</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*position*—a *bounding index* of *sequence-1*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*position*—a *bounding index* of *sequence-1*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -50,19 +50,15 @@
 
 
 
-The specified subsequences of *sequence-1* and *sequence-2* are compared element-wise. The <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> argument is used for both the *sequence-1* and the *sequence-2*. 
+The specified subsequences of *sequence-1* and *sequence-2* are compared element-wise. The <ClLinks  term={"key"}><i>key</i></ClLinks> argument is used for both the *sequence-1* and the *sequence-2*. 
 
 
 
-If *sequence-1* and *sequence-2* are of equal length and match in every element, the result is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. Otherwise, the result is a non-negative *integer* , the index within *sequence-1* of the leftmost or rightmost position, depending on *from-end*, at which the two subsequences fail to match. If one subsequence is shorter than and a matching prefix of the other, the result is the index relative to *sequence-1* beyond the last position tested. 
-
-
+If *sequence-1* and *sequence-2* are of equal length and match in every element, the result is <ClLinks  term={"false"}><i>false</i></ClLinks>. Otherwise, the result is a non-negative *integer* , the index within *sequence-1* of the leftmost or rightmost position, depending on *from-end*, at which the two subsequences fail to match. If one subsequence is shorter than and a matching prefix of the other, the result is the index relative to *sequence-1* beyond the last position tested. 
 
 
 
 
-
- 
 
 
 
@@ -70,7 +66,11 @@ If *sequence-1* and *sequence-2* are of equal length and match in every element,
 
 
 
-If *from-end* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, then one plus the index of the rightmost position in which the *sequences* differ is returned. In effect, the subsequences are aligned at their right-hand ends; then, the last elements are compared, the penultimate elements, and so on. The index returned is an index relative to *sequence-1*. 
+ 
+
+
+
+If *from-end* is <ClLinks  term={"true"}><i>true</i></ClLinks>, then one plus the index of the rightmost position in which the *sequences* differ is returned. In effect, the subsequences are aligned at their right-hand ends; then, the last elements are compared, the penultimate elements, and so on. The index returned is an index relative to *sequence-1*. 
 
 
 
@@ -93,7 +93,7 @@ Section 3.6 (Traversal Rules and Side Effects)
 
 
 
-The :test-not <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> is deprecated. 
+The :test-not <ClLinks  term={"argument"}><i>argument</i></ClLinks> is deprecated. 
 
 
 

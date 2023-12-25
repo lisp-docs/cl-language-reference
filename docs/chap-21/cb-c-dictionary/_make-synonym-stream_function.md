@@ -1,4 +1,4 @@
-**make-synonym-stream** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**make-synonym-stream** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"make-synonym-stream"}><b>make-synonym-stream</b></ClLinks> *symbol → synonym-stream* 
+<ClLinks  term={"make-synonym-stream"}><b>make-synonym-stream</b></ClLinks> *symbol → synonym-stream* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that names a *dynamic variable*. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that names a *dynamic variable*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a *synonym stream* whose *synonym stream symbol* is <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+Returns a *synonym stream* whose *synonym stream symbol* is <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -48,7 +48,7 @@ Returns a *synonym stream* whose *synonym stream symbol* is <ClLinks styled={tru
 
 
 
-Should signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 

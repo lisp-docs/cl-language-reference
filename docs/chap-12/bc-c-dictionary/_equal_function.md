@@ -1,54 +1,54 @@
-**=, /=, \<, \>, \<=, \>=** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks>
+**=, /=, \<, \>, \<=, \>=** <ClLinks  term={"function"}><i>Function</i></ClLinks>
 
 **Syntax:**
 
-<ClLinks styled={true} term={"="}><b>=</b></ClLinks> &amp;rest <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
+<ClLinks  term={"="}><b>=</b></ClLinks> &amp;rest <ClLinks  term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
 
-<ClLinks styled={true} term={"/="}><b>/=</b></ClLinks> &amp;rest <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
+<ClLinks  term={"/="}><b>/=</b></ClLinks> &amp;rest <ClLinks  term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
 
-&lt; &amp;rest <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
+&lt; &amp;rest <ClLinks  term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
 
-&gt; &amp;rest <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
+&gt; &amp;rest <ClLinks  term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
 
-&lt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks> &amp;rest <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
+&lt;<ClLinks  term={"="}><b>=</b></ClLinks> &amp;rest <ClLinks  term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
 
-&gt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks> &amp;rest <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
+&gt;<ClLinks  term={"="}><b>=</b></ClLinks> &amp;rest <ClLinks  term={"number"}><i>numbers</i></ClLinks><sup>+</sup> → generalized-boolean
 
 **Arguments and Values:**
 
-<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—for &lt;, &gt;, &lt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks>, &gt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks>: a *real*; for <ClLinks styled={true} term={"="}><b>=</b></ClLinks>, <ClLinks styled={true} term={"/="}><b>/=</b></ClLinks>: a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> .
+<ClLinks  term={"number"}><i>number</i></ClLinks>—for &lt;, &gt;, &lt;<ClLinks  term={"="}><b>=</b></ClLinks>, &gt;<ClLinks  term={"="}><b>=</b></ClLinks>: a *real*; for <ClLinks  term={"="}><b>=</b></ClLinks>, <ClLinks  term={"/="}><b>/=</b></ClLinks>: a <ClLinks  term={"number"}><i>number</i></ClLinks> .
 
 *generalized-boolean*—a *generalized boolean*.
 
 **Description:**
 
-<ClLinks styled={true} term={"="}><b>=</b></ClLinks>, <ClLinks styled={true} term={"/="}><b>/=</b></ClLinks>, &lt;, &gt;, &lt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks>, and &gt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks> perform arithmetic comparisons on their arguments as follows: <ClLinks styled={true} term={"="}><b>=</b></ClLinks>
+<ClLinks  term={"="}><b>=</b></ClLinks>, <ClLinks  term={"/="}><b>/=</b></ClLinks>, &lt;, &gt;, &lt;<ClLinks  term={"="}><b>=</b></ClLinks>, and &gt;<ClLinks  term={"="}><b>=</b></ClLinks> perform arithmetic comparisons on their arguments as follows: <ClLinks  term={"="}><b>=</b></ClLinks>
 
-The value of <ClLinks styled={true} term={"="}><b>=</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if all <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks> are the same in value; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. Two *complexes* are considered equal by <ClLinks styled={true} term={"="}><b>=</b></ClLinks> if their real and imaginary parts are equal according to <ClLinks styled={true} term={"="}><b>=</b></ClLinks>.
+The value of <ClLinks  term={"="}><b>=</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks> if all <ClLinks  term={"number"}><i>numbers</i></ClLinks> are the same in value; otherwise it is <ClLinks  term={"false"}><i>false</i></ClLinks>. Two *complexes* are considered equal by <ClLinks  term={"="}><b>=</b></ClLinks> if their real and imaginary parts are equal according to <ClLinks  term={"="}><b>=</b></ClLinks>.
 
-<ClLinks styled={true} term={"/="}><b>/=</b></ClLinks>
+<ClLinks  term={"/="}><b>/=</b></ClLinks>
 
-The value of <ClLinks styled={true} term={"/="}><b>/=</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if no two <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks> are the same in value; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>.
+The value of <ClLinks  term={"/="}><b>/=</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks> if no two <ClLinks  term={"number"}><i>numbers</i></ClLinks> are the same in value; otherwise it is <ClLinks  term={"false"}><i>false</i></ClLinks>.
 
 **=, /=,** *&lt;***,** *&gt;***,** *&lt;***=,** *&gt;***=**
 
 &lt;
 
-The value of &lt; is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks> are in monotonically increasing order; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>.
+The value of &lt; is <ClLinks  term={"true"}><i>true</i></ClLinks> if the <ClLinks  term={"number"}><i>numbers</i></ClLinks> are in monotonically increasing order; otherwise it is <ClLinks  term={"false"}><i>false</i></ClLinks>.
 
 &gt;
 
-The value of &gt; is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks> are in monotonically decreasing order; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>.
+The value of &gt; is <ClLinks  term={"true"}><i>true</i></ClLinks> if the <ClLinks  term={"number"}><i>numbers</i></ClLinks> are in monotonically decreasing order; otherwise it is <ClLinks  term={"false"}><i>false</i></ClLinks>.
 
-&lt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks>
+&lt;<ClLinks  term={"="}><b>=</b></ClLinks>
 
-The value of &lt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks> are in monotonically nondecreasing order; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>.
+The value of &lt;<ClLinks  term={"="}><b>=</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks> if the <ClLinks  term={"number"}><i>numbers</i></ClLinks> are in monotonically nondecreasing order; otherwise it is <ClLinks  term={"false"}><i>false</i></ClLinks>.
 
-&gt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks>
+&gt;<ClLinks  term={"="}><b>=</b></ClLinks>
 
-The value of &gt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the <ClLinks styled={true} term={"number"}><i>numbers</i></ClLinks> are in monotonically nonincreasing order; otherwise it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>.
+The value of &gt;<ClLinks  term={"="}><b>=</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks> if the <ClLinks  term={"number"}><i>numbers</i></ClLinks> are in monotonically nonincreasing order; otherwise it is <ClLinks  term={"false"}><i>false</i></ClLinks>.
 
-<ClLinks styled={true} term={"="}><b>=</b></ClLinks>, <ClLinks styled={true} term={"/="}><b>/=</b></ClLinks>, &lt;, &gt;, &lt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks>, and &gt;<ClLinks styled={true} term={"="}><b>=</b></ClLinks> perform necessary type conversions.
+<ClLinks  term={"="}><b>=</b></ClLinks>, <ClLinks  term={"/="}><b>/=</b></ClLinks>, &lt;, &gt;, &lt;<ClLinks  term={"="}><b>=</b></ClLinks>, and &gt;<ClLinks  term={"="}><b>=</b></ClLinks> perform necessary type conversions.
 
 **Examples:**
 
@@ -104,8 +104,8 @@ The uses of these functions are illustrated in Figure 12–13.
 
 **Exceptional Situations:**
 
-Might signal <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if some <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> is not a *real*. Might signal <ClLinks styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks> if otherwise unable to fulfill its contract.
+Might signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if some <ClLinks  term={"argument"}><i>argument</i></ClLinks> is not a *real*. Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks> if otherwise unable to fulfill its contract.
 
 **Notes:**
 
-<ClLinks styled={true} term={"="}><b>=</b></ClLinks> differs from <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks> in that `(= 0.0 -0.0)` is always true, because <ClLinks styled={true} term={"="}><b>=</b></ClLinks> compares the mathematical values of its operands, whereas <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks> compares the representational values, so to speak.
+<ClLinks  term={"="}><b>=</b></ClLinks> differs from <ClLinks  term={"eql"}><b>eql</b></ClLinks> in that `(= 0.0 -0.0)` is always true, because <ClLinks  term={"="}><b>=</b></ClLinks> compares the mathematical values of its operands, whereas <ClLinks  term={"eql"}><b>eql</b></ClLinks> compares the representational values, so to speak.

@@ -1,4 +1,4 @@
-**ldb** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
+**ldb** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"ldb"}><b>ldb</b></ClLinks> *bytespec integer ! byte* 
+<ClLinks  term={"ldb"}><b>ldb</b></ClLinks> *bytespec integer ! byte* 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks styled={true} term={"byte"}><i>byte</i></ClLinks>, *new-byte*—a non-negative *integer* . 
+<ClLinks  term={"byte"}><i>byte</i></ClLinks>, *new-byte*—a non-negative *integer* . 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<ClLinks styled={true} term={"ldb"}><b>ldb</b></ClLinks> extracts and returns the <ClLinks styled={true} term={"byte"}><i>byte</i></ClLinks> of *integer* specified by *bytespec*. 
+<ClLinks  term={"ldb"}><b>ldb</b></ClLinks> extracts and returns the <ClLinks  term={"byte"}><i>byte</i></ClLinks> of *integer* specified by *bytespec*. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> may be used with <ClLinks styled={true} term={"ldb"}><b>ldb</b></ClLinks> to modify a byte within the *integer* that is stored in a given <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. The order of evaluation, when an <ClLinks styled={true} term={"ldb"}><b>ldb</b></ClLinks> form is supplied to <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>, is exactly left-to-right. The e↵ect is to perform a <ClLinks styled={true} term={"dpb"}><b>dpb</b></ClLinks> operation and then store the result back into the <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. 
+<ClLinks  term={"setf"}><b>setf</b></ClLinks> may be used with <ClLinks  term={"ldb"}><b>ldb</b></ClLinks> to modify a byte within the *integer* that is stored in a given <ClLinks  term={"place"}><i>place</i></ClLinks>. The order of evaluation, when an <ClLinks  term={"ldb"}><b>ldb</b></ClLinks> form is supplied to <ClLinks  term={"setf"}><b>setf</b></ClLinks>, is exactly left-to-right. The e↵ect is to perform a <ClLinks  term={"dpb"}><b>dpb</b></ClLinks> operation and then store the result back into the <ClLinks  term={"place"}><i>place</i></ClLinks>. 
 
 
 
@@ -65,7 +65,7 @@ a *!* (10)
 
 
 
-<ClLinks styled={true} term={"byte"}><b>byte</b></ClLinks>, <ClLinks styled={true} term={"byte-position"}><b>byte-position</b></ClLinks>, <ClLinks styled={true} term={"byte-size"}><b>byte-size</b></ClLinks>, <ClLinks styled={true} term={"dpb"}><b>dpb</b></ClLinks> 
+<ClLinks  term={"byte"}><b>byte</b></ClLinks>, <ClLinks  term={"byte-position"}><b>byte-position</b></ClLinks>, <ClLinks  term={"byte-size"}><b>byte-size</b></ClLinks>, <ClLinks  term={"dpb"}><b>dpb</b></ClLinks> 
 
 
 

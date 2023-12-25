@@ -1,4 +1,4 @@
-**case, ccase, ecase** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**case, ccase, ecase** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,15 +6,15 @@
 
 
 
-<ClLinks styled={true} term={"case"}><b>case</b></ClLinks> *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] → \{result\}\* 
+<ClLinks  term={"case"}><b>case</b></ClLinks> *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] → \{result\}\* 
 
 
 
-<ClLinks styled={true} term={"ccase"}><b>ccase</b></ClLinks> *keyplace \{↓normal-clause\}*\* → \{result\}\* 
+<ClLinks  term={"ccase"}><b>ccase</b></ClLinks> *keyplace \{↓normal-clause\}*\* → \{result\}\* 
 
 
 
-<ClLinks styled={true} term={"ecase"}><b>ecase</b></ClLinks> *keyform \{↓normal-clause\}*\* → \{result\}\* 
+<ClLinks  term={"ecase"}><b>ecase</b></ClLinks> *keyform \{↓normal-clause\}*\* → \{result\}\* 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-*keyform*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated to produce a *test-key*. 
+*keyform*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated to produce a *test-key*. 
 
 
 
-*keyplace*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated initially to produce a *test-key*. Possibly also used later as a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> if no <ClLinks styled={true} term={"key"}><i>keys</i></ClLinks> match. 
+*keyplace*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated initially to produce a *test-key*. Possibly also used later as a <ClLinks  term={"place"}><i>place</i></ClLinks> if no <ClLinks  term={"key"}><i>keys</i></ClLinks> match. 
 
 
 
@@ -46,15 +46,15 @@
 
 
 
-<ClLinks styled={true} term={"key"}><i>keys</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>. In the case of <ClLinks styled={true} term={"case"}><b>case</b></ClLinks>, the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> and **otherwise** may not be used as the *keys designator* . To refer to these <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> by themselves as <ClLinks styled={true} term={"key"}><i>keys</i></ClLinks>, the designators (t) and (otherwise), respectively, must be used instead. 
+<ClLinks  term={"key"}><i>keys</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"object"}><i>objects</i></ClLinks>. In the case of <ClLinks  term={"case"}><b>case</b></ClLinks>, the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks> and **otherwise** may not be used as the *keys designator* . To refer to these <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> by themselves as <ClLinks  term={"key"}><i>keys</i></ClLinks>, the designators (t) and (otherwise), respectively, must be used instead. 
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in the matching *clause*. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks> in the matching *clause*. 
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-These <ClLinks styled={true} term={"macro"}><i>macros</i></ClLinks> allow the conditional execution of a body of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a *clause* that is selected by matching the *test-key* on the basis of its identity. 
+These <ClLinks  term={"macro"}><i>macros</i></ClLinks> allow the conditional execution of a body of <ClLinks  term={"form"}><i>forms</i></ClLinks> in a *clause* that is selected by matching the *test-key* on the basis of its identity. 
 
 
 
@@ -70,11 +70,11 @@ The *keyform* or *keyplace* is *evaluated* to produce the *test-key*.
 
 
 
-Each of the *normal-clauses* is then considered in turn. If the *test-key* is the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> as any <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> for that *clause*, the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <ClLinks styled={true} term={"case"}><b>case</b></ClLinks>, <ClLinks styled={true} term={"ccase"}><b>ccase</b></ClLinks>, or <ClLinks styled={true} term={"ecase"}><b>ecase</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+Each of the *normal-clauses* is then considered in turn. If the *test-key* is the <ClLinks  term={"same"}><i>same</i></ClLinks> as any <ClLinks  term={"key"}><i>key</i></ClLinks> for that *clause*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks  term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <ClLinks  term={"case"}><b>case</b></ClLinks>, <ClLinks  term={"ccase"}><b>ccase</b></ClLinks>, or <ClLinks  term={"ecase"}><b>ecase</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-These <ClLinks styled={true} term={"macro"}><i>macros</i></ClLinks> differ only in their *behavior* when no *normal-clause* matches; specifically: <ClLinks styled={true} term={"case"}><b>case</b></ClLinks> 
+These <ClLinks  term={"macro"}><i>macros</i></ClLinks> differ only in their *behavior* when no *normal-clause* matches; specifically: <ClLinks  term={"case"}><b>case</b></ClLinks> 
 
 
 
@@ -94,23 +94,23 @@ If no *normal-clause* matches, and there is an *otherwise-clause*, then that *ot
 
 
 
-automatically matches; the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <ClLinks styled={true} term={"case"}><b>case</b></ClLinks>. 
+automatically matches; the <ClLinks  term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks  term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <ClLinks  term={"case"}><b>case</b></ClLinks>. 
 
 
 
-If there is no *otherwise-clause*, <ClLinks styled={true} term={"case"}><b>case</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+If there is no *otherwise-clause*, <ClLinks  term={"case"}><b>case</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"ccase"}><b>ccase</b></ClLinks> 
+<ClLinks  term={"ccase"}><b>ccase</b></ClLinks> 
 
 
 
-If no *normal-clause* matches, a *correctable error* of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (member *key1 key2* ...). The **store-value** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> can be used to correct the error. 
+If no *normal-clause* matches, a *correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (member *key1 key2* ...). The **store-value** <ClLinks  term={"restart"}><i>restart</i></ClLinks> can be used to correct the error. 
 
 
 
-If the **store-value** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is invoked, its <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> becomes the new *test-key*, and is stored in *keyplace* as if by (setf *keyplace test-key*). Then <ClLinks styled={true} term={"ccase"}><b>ccase</b></ClLinks> starts over, considering each *clause* anew. 
+If the **store-value** <ClLinks  term={"restart"}><i>restart</i></ClLinks> is invoked, its <ClLinks  term={"argument"}><i>argument</i></ClLinks> becomes the new *test-key*, and is stored in *keyplace* as if by (setf *keyplace test-key*). Then <ClLinks  term={"ccase"}><b>ccase</b></ClLinks> starts over, considering each *clause* anew. 
 
 
 
@@ -118,15 +118,15 @@ The subforms of *keyplace* might be evaluated again if none of the cases holds.
 
 
 
-<ClLinks styled={true} term={"ecase"}><b>ecase</b></ClLinks> 
+<ClLinks  term={"ecase"}><b>ecase</b></ClLinks> 
 
 
 
-If no *normal-clause* matches, a *non-correctable error* of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (member *key1 key2* ...). 
+If no *normal-clause* matches, a *non-correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (member *key1 key2* ...). 
 
 
 
-Note that in contrast with <ClLinks styled={true} term={"ccase"}><b>ccase</b></ClLinks>, the caller of <ClLinks styled={true} term={"ecase"}><b>ecase</b></ClLinks> may rely on the fact that <ClLinks styled={true} term={"ecase"}><b>ecase</b></ClLinks> does not return if a *normal-clause* does not match. 
+Note that in contrast with <ClLinks  term={"ccase"}><b>ccase</b></ClLinks>, the caller of <ClLinks  term={"ecase"}><b>ecase</b></ClLinks> may rely on the fact that <ClLinks  term={"ecase"}><b>ecase</b></ClLinks> does not return if a *normal-clause* does not match. 
 
 
 
@@ -168,7 +168,7 @@ Data and Control
 
 
 
-The debugger might be entered. If the **store-value** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is invoked, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of *keyplace* might be changed. 
+The debugger might be entered. If the **store-value** <ClLinks  term={"restart"}><i>restart</i></ClLinks> is invoked, the <ClLinks  term={"value"}><i>value</i></ClLinks> of *keyplace* might be changed. 
 
 
 
@@ -176,7 +176,7 @@ The debugger might be entered. If the **store-value** <ClLinks styled={true} ter
 
 
 
-<ClLinks styled={true} term={"ccase"}><b>ccase</b></ClLinks> and <ClLinks styled={true} term={"ecase"}><b>ecase</b></ClLinks>, since they might signal an error, are potentially affected by existing <ClLinks styled={true} term={"handler"}><i>handlers</i></ClLinks> and **\*debug-io\***. 
+<ClLinks  term={"ccase"}><b>ccase</b></ClLinks> and <ClLinks  term={"ecase"}><b>ecase</b></ClLinks>, since they might signal an error, are potentially affected by existing <ClLinks  term={"handler"}><i>handlers</i></ClLinks> and **\*debug-io\***. 
 
 
 
@@ -184,7 +184,7 @@ The debugger might be entered. If the **store-value** <ClLinks styled={true} ter
 
 
 
-<ClLinks styled={true} term={"ccase"}><b>ccase</b></ClLinks> and <ClLinks styled={true} term={"ecase"}><b>ecase</b></ClLinks> signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if no *normal-clause* matches. 
+<ClLinks  term={"ccase"}><b>ccase</b></ClLinks> and <ClLinks  term={"ecase"}><b>ecase</b></ClLinks> signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if no *normal-clause* matches. 
 
 
 
@@ -192,7 +192,7 @@ The debugger might be entered. If the **store-value** <ClLinks styled={true} ter
 
 
 
-<ClLinks styled={true} term={"cond"}><b>cond</b></ClLinks>, <ClLinks styled={true} term={"typecase"}><b>typecase</b></ClLinks>, <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>, Section 5.1 (Generalized Reference) 
+<ClLinks  term={"cond"}><b>cond</b></ClLinks>, <ClLinks  term={"typecase"}><b>typecase</b></ClLinks>, <ClLinks  term={"setf"}><b>setf</b></ClLinks>, Section 5.1 (Generalized Reference) 
 
 
 
@@ -204,7 +204,7 @@ The debugger might be entered. If the **store-value** <ClLinks styled={true} ter
 
 
 
-*\{*((<ClLinks styled={true} term={"key"}><i>\{key\}</i></ClLinks>\*) <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\*)*\}*\*) 
+*\{*((<ClLinks  term={"key"}><i>\{key\}</i></ClLinks>\*) <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\*)*\}*\*) 
 
 
 
@@ -216,11 +216,11 @@ The debugger might be entered. If the **store-value** <ClLinks styled={true} ter
 
 
 
-(cond *\{*((member #1# ’(<ClLinks styled={true} term={"key"}><i>\{key\}</i></ClLinks>\*)) <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\*)*\}*\*)) 
+(cond *\{*((member #1# ’(<ClLinks  term={"key"}><i>\{key\}</i></ClLinks>\*)) <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\*)*\}*\*)) 
 
 
 
-The specific error message used by <ClLinks styled={true} term={"ecase"}><b>ecase</b></ClLinks> and <ClLinks styled={true} term={"ccase"}><b>ccase</b></ClLinks> can vary between implementations. In situations where control of the specific wording of the error message is important, it is better to use <ClLinks styled={true} term={"case"}><b>case</b></ClLinks> with an *otherwise-clause* that explicitly signals an error with an appropriate message. 
+The specific error message used by <ClLinks  term={"ecase"}><b>ecase</b></ClLinks> and <ClLinks  term={"ccase"}><b>ccase</b></ClLinks> can vary between implementations. In situations where control of the specific wording of the error message is important, it is better to use <ClLinks  term={"case"}><b>case</b></ClLinks> with an *otherwise-clause* that explicitly signals an error with an appropriate message. 
 
 
 

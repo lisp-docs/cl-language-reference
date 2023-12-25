@@ -1,20 +1,20 @@
-**or** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks>
+**or** <ClLinks  term={"macro"}><i>Macro</i></ClLinks>
 
 **Syntax:**
 
-<ClLinks styled={true} term={"or"}><b>or</b></ClLinks> <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* → \{results\}\*
+<ClLinks  term={"or"}><b>or</b></ClLinks> <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{results\}\*
 
 **Arguments and Values:**
 
-<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>.
+<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>.
 
-*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> or *primary value* (see below) resulting from the evaluation of the last <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> executed or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>.
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> or *primary value* (see below) resulting from the evaluation of the last <ClLinks  term={"form"}><i>form</i></ClLinks> executed or <ClLinks  term={"nil"}><b>nil</b></ClLinks>.
 
 **Description:**
 
-<ClLinks styled={true} term={"or"}><b>or</b></ClLinks> evaluates each <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, one at a time, from left to right. The evaluation of all <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> terminates when a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> evaluates to <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> (*i.e.*, something other than <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>).
+<ClLinks  term={"or"}><b>or</b></ClLinks> evaluates each <ClLinks  term={"form"}><i>form</i></ClLinks>, one at a time, from left to right. The evaluation of all <ClLinks  term={"form"}><i>forms</i></ClLinks> terminates when a <ClLinks  term={"form"}><i>form</i></ClLinks> evaluates to <ClLinks  term={"true"}><i>true</i></ClLinks> (*i.e.*, something other than <ClLinks  term={"nil"}><b>nil</b></ClLinks>).
 
-If the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of any <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> other than the last returns a *primary value* that is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, <ClLinks styled={true} term={"or"}><b>or</b></ClLinks> immediately returns that <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> (but no additional <ClLinks styled={true} term={"value"}><i>values</i></ClLinks>) without evaluating the remaining <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. If every <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> but the last returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> as its *primary value*, <ClLinks styled={true} term={"or"}><b>or</b></ClLinks> returns all <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the last <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. If no <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are supplied, <ClLinks styled={true} term={"or"}><b>or</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>.
+If the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of any <ClLinks  term={"form"}><i>form</i></ClLinks> other than the last returns a *primary value* that is <ClLinks  term={"true"}><i>true</i></ClLinks>, <ClLinks  term={"or"}><b>or</b></ClLinks> immediately returns that <ClLinks  term={"value"}><i>value</i></ClLinks> (but no additional <ClLinks  term={"value"}><i>values</i></ClLinks>) without evaluating the remaining <ClLinks  term={"form"}><i>forms</i></ClLinks>. If every <ClLinks  term={"form"}><i>form</i></ClLinks> but the last returns <ClLinks  term={"false"}><i>false</i></ClLinks> as its *primary value*, <ClLinks  term={"or"}><b>or</b></ClLinks> returns all <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the last <ClLinks  term={"form"}><i>form</i></ClLinks>. If no <ClLinks  term={"form"}><i>forms</i></ClLinks> are supplied, <ClLinks  term={"or"}><b>or</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>.
 
 **Examples:**
 
@@ -38,10 +38,10 @@ temp3 → 30
 
 **See Also:**
 
-<ClLinks styled={true} term={"and"}><b>and</b></ClLinks>, <ClLinks styled={true} term={"some"}><b>some</b></ClLinks>, <ClLinks styled={true} term={"unless"}><b>unless</b></ClLinks>
+<ClLinks  term={"and"}><b>and</b></ClLinks>, <ClLinks  term={"some"}><b>some</b></ClLinks>, <ClLinks  term={"unless"}><b>unless</b></ClLinks>
 
 :::info
 
-We fixed the examples so that it uses <ClLinks styled={true} term={"defparameter"}><b>defparameter</b></ClLinks> to initialize the variables.
+We fixed the examples so that it uses <ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks> to initialize the variables.
 
 :::

@@ -1,4 +1,4 @@
-**class-of** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**class-of** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"class-of"}><b>class-of</b></ClLinks> *object ! class* 
+<ClLinks  term={"class-of"}><b>class-of</b></ClLinks> *object ! class* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"class"}><i>class</i></ClLinks>—a *class object*. 
+<ClLinks  term={"class"}><i>class</i></ClLinks>—a *class object*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> of which the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a *direct instance*. 
+Returns the <ClLinks  term={"class"}><i>class</i></ClLinks> of which the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *direct instance*. 
 
 
 
@@ -46,7 +46,7 @@ Returns the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> of whic
 
 
 
-<ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks>, <ClLinks styled={true} term={"type-of"}><b>type-of</b></ClLinks> 
+<ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks>, <ClLinks  term={"type-of"}><b>type-of</b></ClLinks> 
 
 
 

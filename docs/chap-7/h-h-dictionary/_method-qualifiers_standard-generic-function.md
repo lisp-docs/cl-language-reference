@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"method-qualifiers"}><b>method-qualifiers</b></ClLinks> *method → qualifiers* 
+<ClLinks  term={"method-qualifiers"}><b>method-qualifiers</b></ClLinks> *method → qualifiers* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks styled={true} term={"method-qualifiers"}><b>method-qualifiers</b></ClLinks> (<ClLinks styled={true} term={"method"}><i>method</i></ClLinks> <ClLinks styled={true} term={"standard-method"}><b>standard-method</b></ClLinks>) 
+<ClLinks  term={"method-qualifiers"}><b>method-qualifiers</b></ClLinks> (<ClLinks  term={"method"}><i>method</i></ClLinks> <ClLinks  term={"standard-method"}><b>standard-method</b></ClLinks>) 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<ClLinks styled={true} term={"method"}><i>method</i></ClLinks>—a <ClLinks styled={true} term={"method"}><i>method</i></ClLinks>. 
+<ClLinks  term={"method"}><i>method</i></ClLinks>—a <ClLinks  term={"method"}><i>method</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"qualifier"}><i>qualifiers</i></ClLinks>—a *proper list*. 
+<ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>—a *proper list*. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the <ClLinks styled={true} term={"qualifier"}><i>qualifiers</i></ClLinks> of the <ClLinks styled={true} term={"method"}><i>method</i></ClLinks>. 
+Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> of the <ClLinks  term={"method"}><i>method</i></ClLinks>. 
 
 
 
@@ -60,7 +60,7 @@ Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the <ClL
 
 
 
-<ClLinks styled={true} term={"define-method-combination"}><b>define-method-combination</b></ClLinks> 
+<ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks> 
 
 
 

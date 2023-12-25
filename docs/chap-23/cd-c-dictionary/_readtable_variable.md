@@ -1,4 +1,4 @@
-*∗<ClLinks styled={true} term={"readtable"}><b><ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks></b></ClLinks>∗ Variable* 
+*∗<ClLinks  term={"readtable"}><b><ClLinks  term={"readtable"}><i>readtable</i></ClLinks></b></ClLinks>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-a <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>. 
+a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
 
 
 
@@ -14,7 +14,7 @@ a <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks>.
 
 
 
-A <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> that conforms to the description of Common Lisp syntax in Chapter 2 (Syntax). 
+A <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> that conforms to the description of Common Lisp syntax in Chapter 2 (Syntax). 
 
 
 
@@ -22,7 +22,7 @@ A <ClLinks styled={true} term={"readtable"}><i>readtable</i></ClLinks> that conf
 
 
 
-The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"readtable"}><b>\*readtable\*</b></ClLinks> is called the *current readtable*. It controls the parsing behavior of the *Lisp reader* , and can also influence the *Lisp printer* (*e.g.*, see the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"readtable-case"}><b>readtable-case</b></ClLinks>). 
+The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks> is called the *current readtable*. It controls the parsing behavior of the *Lisp reader* , and can also influence the *Lisp printer* (*e.g.*, see the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"readtable-case"}><b>readtable-case</b></ClLinks>). 
 
 
 
@@ -42,7 +42,7 @@ zvar → 123
 
 
 
-<ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks styled={true} term={"load"}><b>load</b></ClLinks> 
+<ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks  term={"load"}><b>load</b></ClLinks> 
 
 
 
@@ -50,7 +50,7 @@ zvar → 123
 
 
 
-<ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks styled={true} term={"load"}><b>load</b></ClLinks>, <ClLinks styled={true} term={"readtable"}><b>readtable</b></ClLinks>, Section 2.1.1.1 (The Current Readtable) 
+<ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks  term={"load"}><b>load</b></ClLinks>, <ClLinks  term={"readtable"}><b>readtable</b></ClLinks>, Section 2.1.1.1 (The Current Readtable) 
 
 
 

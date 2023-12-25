@@ -1,4 +1,4 @@
-**write-string, write-line** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**write-string, write-line** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"write-string"}><b>write-string</b></ClLinks> <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> &amp;optional *output-stream* &amp;key *start end → string* 
+<ClLinks  term={"write-string"}><b>write-string</b></ClLinks> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *output-stream* &amp;key *start end → string* 
 
 
 
-<ClLinks styled={true} term={"write-line"}><b>write-line</b></ClLinks> <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> &amp;optional *output-stream* &amp;key *start end → string* 
+<ClLinks  term={"write-line"}><b>write-line</b></ClLinks> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *output-stream* &amp;key *start end → string* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"string"}><i>string</i></ClLinks>—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
+<ClLinks  term={"string"}><i>string</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*start*, *end*—*bounding index designators* of <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—*bounding index designators* of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks styled={true} term={"write-string"}><b>write-string</b></ClLinks> writes the <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> of the subsequence of *string bounded* by *start* and *end* to *output-stream*. <ClLinks styled={true} term={"write-line"}><b>write-line</b></ClLinks> does the same thing, but then outputs a newline afterwards. 
+<ClLinks  term={"write-string"}><b>write-string</b></ClLinks> writes the <ClLinks  term={"character"}><i>characters</i></ClLinks> of the subsequence of *string bounded* by *start* and *end* to *output-stream*. <ClLinks  term={"write-line"}><b>write-line</b></ClLinks> does the same thing, but then outputs a newline afterwards. 
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-**\*standard-output\***, <ClLinks styled={true} term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
+**\*standard-output\***, <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@
 
 
 
-<ClLinks styled={true} term={"read-line"}><b>read-line</b></ClLinks>, <ClLinks styled={true} term={"write-char"}><b>write-char</b></ClLinks> 
+<ClLinks  term={"read-line"}><b>read-line</b></ClLinks>, <ClLinks  term={"write-char"}><b>write-char</b></ClLinks> 
 
 
 
@@ -74,7 +74,7 @@
 
 
 
-<ClLinks styled={true} term={"write-line"}><b>write-line</b></ClLinks> and <ClLinks styled={true} term={"write-string"}><b>write-string</b></ClLinks> return <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, not the substring <ClLinks styled={true} term={"bounded"}><i>bounded</i></ClLinks> by *start* and *end*. 
+<ClLinks  term={"write-line"}><b>write-line</b></ClLinks> and <ClLinks  term={"write-string"}><b>write-string</b></ClLinks> return <ClLinks  term={"string"}><i>string</i></ClLinks>, not the substring <ClLinks  term={"bounded"}><i>bounded</i></ClLinks> by *start* and *end*. 
 
 
 

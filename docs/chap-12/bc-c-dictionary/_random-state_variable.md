@@ -1,4 +1,4 @@
-*∗<ClLinks styled={true} term={"*random-state*"}><b>*random-state*</b></ClLinks>∗ Variable* 
+*∗<ClLinks  term={"*random-state*"}><b>*random-state*</b></ClLinks>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a *random state*.
 
 
 
-<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ a *random state*.
 
 
 
-The *current random state*, which is used, for example, by the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"random"}><b>random</b></ClLinks> when a *random state* is not explicitly supplied. 
+The *current random state*, which is used, for example, by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"random"}><b>random</b></ClLinks> when a *random state* is not explicitly supplied. 
 
 
 
@@ -59,11 +59,11 @@ The *current random state*, which is used, for example, by the <ClLinks styled={
 
 
 
-The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
+The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"random"}><b>random</b></ClLinks>. 
+<ClLinks  term={"random"}><b>random</b></ClLinks>. 
 
 
 
@@ -71,7 +71,7 @@ The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLink
 
 
 
-<ClLinks styled={true} term={"make-random-state"}><b>make-random-state</b></ClLinks>, <ClLinks styled={true} term={"random"}><b>random</b></ClLinks>, <ClLinks styled={true} term={"random-state"}><b>random-state</b></ClLinks> 
+<ClLinks  term={"make-random-state"}><b>make-random-state</b></ClLinks>, <ClLinks  term={"random"}><b>random</b></ClLinks>, <ClLinks  term={"random-state"}><b>random-state</b></ClLinks> 
 
 
 
@@ -79,7 +79,7 @@ The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLink
 
 
 
-<ClLinks styled={true} term={"binding"}><i>Binding</i></ClLinks> <ClLinks styled={true} term={"random-state"}><b>\*random-state\*</b></ClLinks> to a different *random state object* correctly saves and restores the old *random state object*. 
+<ClLinks  term={"binding"}><i>Binding</i></ClLinks> <ClLinks  term={"random-state"}><b>\*random-state\*</b></ClLinks> to a different *random state object* correctly saves and restores the old *random state object*. 
 
 
 

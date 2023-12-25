@@ -1,4 +1,4 @@
-**sin, cos, tan** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**sin, cos, tan** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,15 +6,15 @@
 
 
 
-<ClLinks styled={true} term={"sin"}><b>sin</b></ClLinks> *radians → number* 
+<ClLinks  term={"sin"}><b>sin</b></ClLinks> *radians → number* 
 
 
 
-<ClLinks styled={true} term={"cos"}><b>cos</b></ClLinks> *radians → number* 
+<ClLinks  term={"cos"}><b>cos</b></ClLinks> *radians → number* 
 
 
 
-<ClLinks styled={true} term={"tan"}><b>tan</b></ClLinks> *radians → number* 
+<ClLinks  term={"tan"}><b>tan</b></ClLinks> *radians → number* 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-*radians*—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> given in radians. 
+*radians*—a <ClLinks  term={"number"}><i>number</i></ClLinks> given in radians. 
 
 
 
-<ClLinks styled={true} term={"number"}><i>number</i></ClLinks>—a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . 
+<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks styled={true} term={"sin"}><b>sin</b></ClLinks>, <ClLinks styled={true} term={"cos"}><b>cos</b></ClLinks>, and <ClLinks styled={true} term={"tan"}><b>tan</b></ClLinks> return the sine, cosine, and tangent, respectively, of *radians*. 
+<ClLinks  term={"sin"}><b>sin</b></ClLinks>, <ClLinks  term={"cos"}><b>cos</b></ClLinks>, and <ClLinks  term={"tan"}><b>tan</b></ClLinks> return the sine, cosine, and tangent, respectively, of *radians*. 
 
 
 
@@ -48,7 +48,7 @@
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *radians* is not a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *radians* is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>. 
 
 
 
@@ -56,7 +56,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"asin"}><b>asin</b></ClLinks>, <ClLinks styled={true} term={"acos"}><b>acos</b></ClLinks>, <ClLinks styled={true} term={"atan"}><b>atan</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability) 
+<ClLinks  term={"asin"}><b>asin</b></ClLinks>, <ClLinks  term={"acos"}><b>acos</b></ClLinks>, <ClLinks  term={"atan"}><b>atan</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability) 
 
 
 

@@ -1,4 +1,4 @@
-**shadowing-import** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**shadowing-import** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"shadowing-import"}><b>shadowing-import</b></ClLinks> <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> &amp;optional *package →* <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<ClLinks  term={"shadowing-import"}><b>shadowing-import</b></ClLinks> <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> &amp;optional *package →* <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>. 
+<ClLinks  term={"symbol"}><i>symbols</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"package"}><i>package</i></ClLinks> —a *package designator* . The default is the *current package*. 
+<ClLinks  term={"package"}><i>package</i></ClLinks> —a *package designator* . The default is the *current package*. 
 
 
 
@@ -26,19 +26,15 @@
 
 
 
-<ClLinks styled={true} term={"shadowing-import"}><b>shadowing-import</b></ClLinks> is like <ClLinks styled={true} term={"import"}><b>import</b></ClLinks>, but it does not signal an error even if the importation of a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> would shadow some <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> already <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
+<ClLinks  term={"shadowing-import"}><b>shadowing-import</b></ClLinks> is like <ClLinks  term={"import"}><b>import</b></ClLinks>, but it does not signal an error even if the importation of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> would shadow some <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"shadowing-import"}><b>shadowing-import</b></ClLinks> inserts each of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> into <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> as an internal symbol, regardless of whether another <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> of the same name is shadowed by this action. If a different <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> of the same name is already <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, that <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is first <ClLinks styled={true} term={"uninterned"}><i>uninterned</i></ClLinks> from <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. The new <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is added to <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>’s shadowing-symbols list. 
-
-
+<ClLinks  term={"shadowing-import"}><b>shadowing-import</b></ClLinks> inserts each of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> into <ClLinks  term={"package"}><i>package</i></ClLinks> as an internal symbol, regardless of whether another <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> of the same name is shadowed by this action. If a different <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> of the same name is already <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is first <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> from <ClLinks  term={"package"}><i>package</i></ClLinks>. The new <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is added to <ClLinks  term={"package"}><i>package</i></ClLinks>’s shadowing-symbols list. 
 
 
 
 
-
- 
 
 
 
@@ -46,7 +42,11 @@
 
 
 
-<ClLinks styled={true} term={"shadowing-import"}><b>shadowing-import</b></ClLinks> does name-conflict checking to the extent that it checks whether a distinct existing <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> with the same name is <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks>; if so, it is shadowed by the new <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, which implies that it must be uninterned if it was <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. 
+ 
+
+
+
+<ClLinks  term={"shadowing-import"}><b>shadowing-import</b></ClLinks> does name-conflict checking to the extent that it checks whether a distinct existing <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> with the same name is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks>; if so, it is shadowed by the new <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, which implies that it must be uninterned if it was <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -63,11 +63,11 @@
 
 
 
-<ClLinks styled={true} term={"shadowing-import"}><b>shadowing-import</b></ClLinks> changes the state of the package system in such a way that the consistency rules do not hold across the change. 
+<ClLinks  term={"shadowing-import"}><b>shadowing-import</b></ClLinks> changes the state of the package system in such a way that the consistency rules do not hold across the change. 
 
 
 
-<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>’s shadowing-symbols list is modified. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>’s shadowing-symbols list is modified. 
 
 
 
@@ -83,7 +83,7 @@ Current state of the package system.
 
 
 
-<ClLinks styled={true} term={"import"}><b>import</b></ClLinks>, <ClLinks styled={true} term={"unintern"}><b>unintern</b></ClLinks>, <ClLinks styled={true} term={"package-shadowing-symbols"}><b>package-shadowing-symbols</b></ClLinks> 
+<ClLinks  term={"import"}><b>import</b></ClLinks>, <ClLinks  term={"unintern"}><b>unintern</b></ClLinks>, <ClLinks  term={"package-shadowing-symbols"}><b>package-shadowing-symbols</b></ClLinks> 
 
 
 

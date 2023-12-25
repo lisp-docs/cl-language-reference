@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks> *tag result-form →* 
+<ClLinks  term={"throw"}><b>throw</b></ClLinks> *tag result-form →* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>—a *catch tag*; evaluated. 
+<ClLinks  term={"tag"}><i>tag</i></ClLinks>—a *catch tag*; evaluated. 
 
 
 
-*result-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
+*result-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
 
 
 
@@ -34,7 +34,7 @@ Data and Control
 
 
 
-<ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks> 
+<ClLinks  term={"throw"}><b>throw</b></ClLinks> 
 
 
 
@@ -42,15 +42,15 @@ Data and Control
 
 
 
-<ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks> causes a non-local control transfer to a <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> whose tag is <ClLinks styled={true} term={"eq"}><b>eq</b></ClLinks> to <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>. 
+<ClLinks  term={"throw"}><b>throw</b></ClLinks> causes a non-local control transfer to a <ClLinks  term={"catch"}><b>catch</b></ClLinks> whose tag is <ClLinks  term={"eq"}><b>eq</b></ClLinks> to <ClLinks  term={"tag"}><i>tag</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"tag"}><i>Tag</i></ClLinks> is evaluated first to produce an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> called the throw tag; then *result-form* is evaluated, and its results are saved. If the *result-form* produces multiple values, then all the values are saved. The most recent outstanding <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> whose <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks> is <ClLinks styled={true} term={"eq"}><b>eq</b></ClLinks> to the throw tag is exited; the saved results are returned as the value or values of <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks>. 
+<ClLinks  term={"tag"}><i>Tag</i></ClLinks> is evaluated first to produce an <ClLinks  term={"object"}><i>object</i></ClLinks> called the throw tag; then *result-form* is evaluated, and its results are saved. If the *result-form* produces multiple values, then all the values are saved. The most recent outstanding <ClLinks  term={"catch"}><b>catch</b></ClLinks> whose <ClLinks  term={"tag"}><i>tag</i></ClLinks> is <ClLinks  term={"eq"}><b>eq</b></ClLinks> to the throw tag is exited; the saved results are returned as the value or values of <ClLinks  term={"catch"}><b>catch</b></ClLinks>. 
 
 
 
-The transfer of control initiated by <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks> is performed as described in Section 5.2 (Transfer of Control to an Exit Point). 
+The transfer of control initiated by <ClLinks  term={"throw"}><b>throw</b></ClLinks> is performed as described in Section 5.2 (Transfer of Control to an Exit Point). 
 
 
 
@@ -94,7 +94,7 @@ If there is no outstanding *catch tag* that matches the throw tag, no unwinding 
 
 
 
-performed, and an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"control-error"}><b>control-error</b></ClLinks> is signaled. When the error is signaled, the *dynamic environment* is that which was in force at the point of the <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks>. 
+performed, and an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"control-error"}><b>control-error</b></ClLinks> is signaled. When the error is signaled, the *dynamic environment* is that which was in force at the point of the <ClLinks  term={"throw"}><b>throw</b></ClLinks>. 
 
 
 
@@ -102,7 +102,7 @@ performed, and an error of <ClLinks styled={true} term={"type"}><i>type</i></ClL
 
 
 
-<ClLinks styled={true} term={"block"}><b>block</b></ClLinks>, <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks>, <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks>, <ClLinks styled={true} term={"unwind-protect"}><b>unwind-protect</b></ClLinks>, Section 3.1 (Evaluation) 
+<ClLinks  term={"block"}><b>block</b></ClLinks>, <ClLinks  term={"catch"}><b>catch</b></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks>, Section 3.1 (Evaluation) 
 
 
 
@@ -110,7 +110,7 @@ performed, and an error of <ClLinks styled={true} term={"type"}><i>type</i></ClL
 
 
 
-<ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks> and <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks> are normally used when the *exit point* must have *dynamic scope* (*e.g.*, the <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks> is not lexically enclosed by the <ClLinks styled={true} term={"catch"}><b>catch</b></ClLinks>), while <ClLinks styled={true} term={"block"}><b>block</b></ClLinks> and <ClLinks styled={true} term={"return"}><b>return</b></ClLinks> are used when *lexical scope* is sufficient. 
+<ClLinks  term={"catch"}><b>catch</b></ClLinks> and <ClLinks  term={"throw"}><b>throw</b></ClLinks> are normally used when the *exit point* must have *dynamic scope* (*e.g.*, the <ClLinks  term={"throw"}><b>throw</b></ClLinks> is not lexically enclosed by the <ClLinks  term={"catch"}><b>catch</b></ClLinks>), while <ClLinks  term={"block"}><b>block</b></ClLinks> and <ClLinks  term={"return"}><b>return</b></ClLinks> are used when *lexical scope* is sufficient. 
 
 
 

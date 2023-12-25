@@ -1,4 +1,4 @@
-**find-symbol** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**find-symbol** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"find-symbol"}><b>find-symbol</b></ClLinks> <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> &amp;optional *package → symbol, status* 
+<ClLinks  term={"find-symbol"}><b>find-symbol</b></ClLinks> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *package → symbol, status* 
 
 
 
@@ -14,27 +14,23 @@
 
 
 
-<ClLinks styled={true} term={"string"}><i>string</i></ClLinks>—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
+<ClLinks  term={"string"}><i>string</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. 
 
 
 
-<ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> accessible in the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> accessible in the <ClLinks  term={"package"}><i>package</i></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*status*—one of :inherited, :external, :internal, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
-
-
+*status*—one of :inherited, :external, :internal, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
 
-
- 
 
 
 
@@ -42,7 +38,11 @@
 
 
 
-<ClLinks styled={true} term={"find-symbol"}><b>find-symbol</b></ClLinks> 
+ 
+
+
+
+<ClLinks  term={"find-symbol"}><b>find-symbol</b></ClLinks> 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-<ClLinks styled={true} term={"find-symbol"}><b>find-symbol</b></ClLinks> locates a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> in a <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. If a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> named <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> is found in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, directly or by inheritance, the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> found is returned as the first value; the second value is as follows: 
+<ClLinks  term={"find-symbol"}><b>find-symbol</b></ClLinks> locates a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose <ClLinks  term={"name"}><i>name</i></ClLinks> is <ClLinks  term={"string"}><i>string</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>. If a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> named <ClLinks  term={"string"}><i>string</i></ClLinks> is found in <ClLinks  term={"package"}><i>package</i></ClLinks>, directly or by inheritance, the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> found is returned as the first value; the second value is as follows: 
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-If the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> as an *internal symbol*. 
+If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> as an *internal symbol*. 
 
 
 
@@ -66,7 +66,7 @@ If the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is <ClLink
 
 
 
-If the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> as an *external symbol*. 
+If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> as an *external symbol*. 
 
 
 
@@ -74,7 +74,7 @@ If the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is <ClLink
 
 
 
-If the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is inherited by <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> through <ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks>, but is not <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. If no such <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, both values are <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is inherited by <ClLinks  term={"package"}><i>package</i></ClLinks> through <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, but is not <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. If no such <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, both values are <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -104,7 +104,7 @@ If the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is inherit
 
 
 
-<ClLinks styled={true} term={"intern"}><b>intern</b></ClLinks>, <ClLinks styled={true} term={"import"}><b>import</b></ClLinks>, <ClLinks styled={true} term={"export"}><b>export</b></ClLinks>, <ClLinks styled={true} term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks styled={true} term={"unintern"}><b>unintern</b></ClLinks>, <ClLinks styled={true} term={"unexport"}><b>unexport</b></ClLinks>, <ClLinks styled={true} term={"unuse-package"}><b>unuse-package</b></ClLinks> 
+<ClLinks  term={"intern"}><b>intern</b></ClLinks>, <ClLinks  term={"import"}><b>import</b></ClLinks>, <ClLinks  term={"export"}><b>export</b></ClLinks>, <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks  term={"unintern"}><b>unintern</b></ClLinks>, <ClLinks  term={"unexport"}><b>unexport</b></ClLinks>, <ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> 
 
 
 
@@ -112,7 +112,7 @@ If the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is inherit
 
 
 
-<ClLinks styled={true} term={"intern"}><b>intern</b></ClLinks>, <ClLinks styled={true} term={"find-all-symbols"}><b>find-all-symbols</b></ClLinks> 
+<ClLinks  term={"intern"}><b>intern</b></ClLinks>, <ClLinks  term={"find-all-symbols"}><b>find-all-symbols</b></ClLinks> 
 
 
 
@@ -132,4 +132,4 @@ If the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is inherit
 
 
 
-<ClLinks styled={true} term={"find-symbol"}><b>find-symbol</b></ClLinks> is operationally equivalent to <ClLinks styled={true} term={"intern"}><b>intern</b></ClLinks>, except that it never creates a new <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+<ClLinks  term={"find-symbol"}><b>find-symbol</b></ClLinks> is operationally equivalent to <ClLinks  term={"intern"}><b>intern</b></ClLinks>, except that it never creates a new <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 

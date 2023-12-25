@@ -18,7 +18,7 @@ Figure 2–21 contains examples of the use of #C.
 
 
 
-|<p>#C(3.0s1 2.0s-1) ;A <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> with *small float* parts. </p><p>#C(5 -3) ;A “Gaussian integer” </p><p>#C(5/3 7.0) ;Will be converted internally to #C(1.66666 7.0) #C(0 1) ;The imaginary unit; that is, i.</p>|
+|<p>#C(3.0s1 2.0s-1) ;A <ClLinks  term={"complex"}><i>complex</i></ClLinks> with *small float* parts. </p><p>#C(5 -3) ;A “Gaussian integer” </p><p>#C(5/3 7.0) ;Will be converted internally to #C(1.66666 7.0) #C(0 1) ;The imaginary unit; that is, i.</p>|
 
 | :- |
 

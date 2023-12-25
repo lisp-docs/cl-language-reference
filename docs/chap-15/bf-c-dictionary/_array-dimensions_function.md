@@ -1,4 +1,4 @@
-**array-dimensions** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**array-dimensions** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"array-dimensions"}><b>array-dimensions</b></ClLinks> *array → dimensions* 
+<ClLinks  term={"array-dimensions"}><b>array-dimensions</b></ClLinks> *array → dimensions* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
+<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *integers*. 
+<ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *integers*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the <ClLinks styled={true} term={"dimension"}><i>dimensions</i></ClLinks> of <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. (If <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , that *fill pointer* is ignored.) 
+Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> of <ClLinks  term={"array"}><i>array</i></ClLinks>. (If <ClLinks  term={"array"}><i>array</i></ClLinks> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , that *fill pointer* is ignored.) 
 
 
 
@@ -40,7 +40,7 @@ Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the <ClL
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -48,7 +48,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"array-dimension"}><b>array-dimension</b></ClLinks> 
+<ClLinks  term={"array-dimension"}><b>array-dimension</b></ClLinks> 
 
 
 

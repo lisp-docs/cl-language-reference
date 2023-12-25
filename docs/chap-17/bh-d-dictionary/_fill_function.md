@@ -1,4 +1,4 @@
-**fill** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**fill** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"fill"}><b>fill</b></ClLinks> *sequence item* &amp;key *start end → sequence* 
+<ClLinks  term={"fill"}><b>fill</b></ClLinks> *sequence item* &amp;key *start end → sequence* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*start*, *end*—*bounding index designators* of *sequence*. The defaults for *start* and *end* are 0 and <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—*bounding index designators* of *sequence*. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Replaces the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of *sequence bounded* by *start* and *end* with *item*. 
+Replaces the <ClLinks  term={"element"}><i>elements</i></ClLinks> of *sequence bounded* by *start* and *end* with *item*. 
 
 
 
@@ -56,7 +56,7 @@ x → #(P P P P P)
 
 
 
-Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *start* is not a non-negative *integer* . Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *end* is not a non-negative *integer* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *start* is not a non-negative *integer* . Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *end* is not a non-negative *integer* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -64,7 +64,7 @@ Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i
 
 
 
-<ClLinks styled={true} term={"replace"}><b>replace</b></ClLinks>, **nsubstitute** 
+<ClLinks  term={"replace"}><b>replace</b></ClLinks>, **nsubstitute** 
 
 
 
@@ -88,7 +88,7 @@ Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i
 
 
 
-<ClLinks styled={true} term={"make-sequence"}><b>make-sequence</b></ClLinks> 
+<ClLinks  term={"make-sequence"}><b>make-sequence</b></ClLinks> 
 
 
 
