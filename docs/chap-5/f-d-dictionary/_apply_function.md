@@ -2,7 +2,7 @@
 
 **Syntax:**
 
-<ClLinks  term={"apply"}><b>apply</b></ClLinks> <ClLinks  term={"function"}><i>function</i></ClLinks> &amp;rest *args*<sup>+</sup> → \{result\}\*
+<DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> <ClLinks  term={"function"}><i>function</i></ClLinks> &amp;rest *args*<sup>+</sup> → \{result\}\*
 
 **Arguments and Values:**
 
@@ -16,9 +16,9 @@
 
 *Applies* the <ClLinks  term={"function"}><i>function</i></ClLinks> to the *args*.
 
-When the <ClLinks  term={"function"}><i>function</i></ClLinks> receives its arguments via **&amp;rest**, it is permissible (but not required) for the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to <ClLinks  term={"bind"}><i>bind</i></ClLinks> the *rest parameter* to an <ClLinks  term={"object"}><i>object</i></ClLinks> that shares structure with the last argument to <ClLinks  term={"apply"}><b>apply</b></ClLinks>. Because a <ClLinks  term={"function"}><i>function</i></ClLinks> can neither detect whether it was called via <ClLinks  term={"apply"}><b>apply</b></ClLinks> nor whether (if so) the last argument to <ClLinks  term={"apply"}><b>apply</b></ClLinks> was a <ClLinks  term={"constant"}><i>constant</i></ClLinks>, *conforming programs* must neither rely on the <ClLinks  term={"list"}><i>list</i></ClLinks> structure of a *rest list* to be freshly consed, nor modify that <ClLinks  term={"list"}><i>list</i></ClLinks> structure.
+When the <ClLinks  term={"function"}><i>function</i></ClLinks> receives its arguments via **&amp;rest**, it is permissible (but not required) for the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to <ClLinks  term={"bind"}><i>bind</i></ClLinks> the *rest parameter* to an <ClLinks  term={"object"}><i>object</i></ClLinks> that shares structure with the last argument to <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink>. Because a <ClLinks  term={"function"}><i>function</i></ClLinks> can neither detect whether it was called via <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> nor whether (if so) the last argument to <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> was a <ClLinks  term={"constant"}><i>constant</i></ClLinks>, *conforming programs* must neither rely on the <ClLinks  term={"list"}><i>list</i></ClLinks> structure of a *rest list* to be freshly consed, nor modify that <ClLinks  term={"list"}><i>list</i></ClLinks> structure.
 
-<ClLinks  term={"setf"}><b>setf</b></ClLinks> can be used with <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> in certain circumstances; see Section 5.1.2.5 (APPLY Forms as Places).
+<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> can be used with <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> in certain circumstances; see Section 5.1.2.5 (APPLY Forms as Places).
 
 **Examples:**
 
@@ -46,4 +46,4 @@ When the <ClLinks  term={"function"}><i>function</i></ClLinks> receives its argu
 
 **See Also:**
 
-<ClLinks  term={"funcall"}><b>funcall</b></ClLinks>, <ClLinks  term={"fdefinition"}><b>fdefinition</b></ClLinks>, <ClLinks  term={"function"}><b>function</b></ClLinks>, Section 3.1 (Evaluation), Section 5.1.2.5 (APPLY Forms as Places)
+<DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink>, <DictionaryLink  term={"fdefinition"}><b>fdefinition</b></DictionaryLink>, <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>, Section 3.1 (Evaluation), Section 5.1.2.5 (APPLY Forms as Places)
