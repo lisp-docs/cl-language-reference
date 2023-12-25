@@ -6,11 +6,11 @@
 
 
 
-<DictionaryLink styled={true} term={"incf"}><b>incf</b></DictionaryLink> <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> [*delta-form*] *→ new-value* 
+<DictionaryLink styled={true} term={"incf"}><b>incf</b></DictionaryLink> <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> [*delta-form*] → new-value 
 
 
 
-<DictionaryLink styled={true} term={"decf"}><b>decf</b></DictionaryLink> <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> [*delta-form*] *→ new-value* 
+<DictionaryLink styled={true} term={"decf"}><b>decf</b></DictionaryLink> <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> [*delta-form*] → new-value 
 
 
 

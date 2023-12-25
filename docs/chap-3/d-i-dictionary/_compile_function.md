@@ -78,9 +78,9 @@ The *tertiary value*, *failure-p*, is <GlossaryTerm styled={true} term={"false"}
 ```lisp
 
 (defun foo () "bar") → FOO 
-(compiled-function-p #’foo) *→ implementation-dependent* 
+(compiled-function-p #’foo) → implementation-dependent 
 (compile ’foo) → FOO 
-(compiled-function-p #’foo) *→ true* 
+(compiled-function-p #’foo) → true 
 (setf (symbol-function ’foo) 
       (compile nil ’(lambda () "replaced"))) → #<Compiled-Function> 
 (foo) → "replaced" 

@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"make-instance"}><b>make-instance</b></DictionaryLink> <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> &amp;rest *initargs* &amp;key &amp;allow-other-keys *→ instance* 
+<DictionaryLink styled={true} term={"make-instance"}><b>make-instance</b></DictionaryLink> <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> &amp;rest *initargs* &amp;key &amp;allow-other-keys → instance 
 
 
 

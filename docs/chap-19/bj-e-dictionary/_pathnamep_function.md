@@ -34,14 +34,14 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 ```lisp
  
 (setq q "test") → "test" 
-(pathnamep q) *→ false* 
+(pathnamep q) → false 
 (setq q (pathname "test")) 
 → #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME "test" :TYPE NIL 
 :VERSION NIL) 
-(pathnamep q) *→ true* 
+(pathnamep q) → true 
 (setq q (logical-pathname "SYS:SITE;FOO.SYSTEM")) 
 → #P"SYS:SITE;FOO.SYSTEM" 
-(pathnamep q) *→ true* 
+(pathnamep q) → true 
 
 ```
 **Notes:** 

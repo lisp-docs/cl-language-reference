@@ -10,7 +10,7 @@
 
 
 
-<DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink> *numerator* &amp;rest *denominators*<sup>+</sup> *→ quotient* 
+<DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink> *numerator* &amp;rest *denominators*<sup>+</sup> → quotient 
 
 
 

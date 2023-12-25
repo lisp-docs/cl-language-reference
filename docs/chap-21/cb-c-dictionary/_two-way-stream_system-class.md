@@ -57,12 +57,12 @@ A *bidirectional composite stream* that receives its input from an associated *i
 **input-stream-p** returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is an *input stream*; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. **output-stream-p** returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is an *output stream*; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. **Examples:**
 ```lisp
 
-(input-stream-p \*standard-input\*) *→ true* 
-(input-stream-p \*terminal-io\*) *→ true* 
-(input-stream-p (make-string-output-stream)) *→ false* 
-(output-stream-p \*standard-output\*) *→ true* 
-(output-stream-p \*terminal-io\*) *→ true* 
-(output-stream-p (make-string-input-stream "jr")) *→ false* 
+(input-stream-p \*standard-input\*) → true 
+(input-stream-p \*terminal-io\*) → true 
+(input-stream-p (make-string-output-stream)) → false 
+(output-stream-p \*standard-output\*) → true 
+(output-stream-p \*terminal-io\*) → true 
+(output-stream-p (make-string-input-stream "jr")) → false 
 
 ```
 **Exceptional Situations:** 

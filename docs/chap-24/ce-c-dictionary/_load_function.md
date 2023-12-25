@@ -14,7 +14,7 @@
 
 
 
-*→ generalized-boolean* 
+→ generalized-boolean 
 
 
 
@@ -121,18 +121,18 @@ The *external-format* specifies the *external file format* to be used when openi
 (with-open-file (str "data.in" :direction :output :if-exists :error) 
   (print 1 str) (print ’(setq a 888) str) t) 
 → T 
-(load "data.in") *→ true* 
+(load "data.in") → true 
 a → 888 
 (load (setq p (merge-pathnames "data.in")) :verbose t) 
 					; Loading contents of file /fred/data.in 
 					; Finished loading /fred/data.in 
-*→ true* 
+→ true 
 (load p :print t) 
 					; Loading contents of file /fred/data.in 
 					; 1 
 					; 888 
 					; Finished loading /fred/data.in 
-*→ true* 
+→ true 
 System 
 
 

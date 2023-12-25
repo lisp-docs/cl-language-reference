@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"compile-file-pathname"}><b>compile-file-pathname</b></DictionaryLink> *input-file* &amp;key *output-file* &amp;allow-other-keys *→ pathname* 
+<DictionaryLink styled={true} term={"compile-file-pathname"}><b>compile-file-pathname</b></DictionaryLink> *input-file* &amp;key *output-file* &amp;allow-other-keys → pathname 
 
 
 

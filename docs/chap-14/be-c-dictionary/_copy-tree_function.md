@@ -51,10 +51,10 @@ If <GlossaryTerm styled={true} term={"tree"}><i>tree</i></GlossaryTerm> is not a
 (setq copy-as-list (copy-list object)) 
 (setq copy-as-alist (copy-alist object)) 
 (setq copy-as-tree (copy-tree object)) 
-(eq object object-too) *→ true* 
-(eq copy-as-tree object) *→ false* 
-(eql copy-as-tree object) *→ false* 
-(equal copy-as-tree object) *→ true* 
+(eq object object-too) → true 
+(eq copy-as-tree object) → false 
+(eql copy-as-tree object) → false 
+(equal copy-as-tree object) → true 
 (setf (first (cdr (second object))) "a" 
       (car (second object)) "two" 
       (car object) ’(one . 1)) → (ONE . 1) 

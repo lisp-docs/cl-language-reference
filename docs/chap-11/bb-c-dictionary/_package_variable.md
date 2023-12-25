@@ -41,10 +41,10 @@ Whatever *package object* is currently the <GlossaryTerm styled={true} term={"va
 (list (symbol-package (read-from-string "just-testing")) 
       \*package\*) 
 → (#<PACKAGE "COMMON-LISP-USER"> #<PACKAGE "COMMON-LISP-USER">) 
-(eq ’foo (intern "FOO")) *→ true* 
+(eq ’foo (intern "FOO")) → true 
 (eq ’foo (let ((\*package\* (find-package ’sample-package))) 
 	   (intern "FOO"))) 
-*→ false* 
+→ false 
 
 ```
 **Affected By:** 

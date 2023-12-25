@@ -62,7 +62,7 @@ It is possible for both <DictionaryLink styled={true} term={"macro-function"}><b
 ```lisp
 
 (defmacro macfun (x) ’(macro-function ’macfun)) → MACFUN 
-(not (macro-function ’macfun)) *→ false* 
+(not (macro-function ’macfun)) → false 
 (macrolet ((foo (&environment env) 
 	     (if (macro-function ’bar env) 
 		 ”yes 

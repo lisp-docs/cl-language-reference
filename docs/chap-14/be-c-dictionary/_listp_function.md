@@ -33,10 +33,10 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(listp nil) *→ true* 
-(listp (cons 1 2)) *→ true* 
-(listp (make-array 6)) *→ false* 
-(listp t) *→ false* 
+(listp nil) → true 
+(listp (cons 1 2)) → true 
+(listp (make-array 6)) → false 
+(listp t) → false 
 
 ```
 **See Also:** 

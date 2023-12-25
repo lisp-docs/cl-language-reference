@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"map"}><b>map</b></DictionaryLink> *result-type function* &amp;rest *sequences*<sup>+</sup> *→ result* 
+<DictionaryLink styled={true} term={"map"}><b>map</b></DictionaryLink> *result-type function* &amp;rest *sequences*<sup>+</sup> → result 
 
 
 

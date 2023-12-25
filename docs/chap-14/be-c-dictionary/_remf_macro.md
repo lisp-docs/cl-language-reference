@@ -59,8 +59,8 @@ For information about the <GlossaryTerm styled={true} term={"evaluation"}><i>eva
 
 (setq x (cons () ())) → (NIL) 
 (setf (getf (car x) ’prop1) ’val1) → VAL1 
-(remf (car x) ’prop1) *→ true* 
-(remf (car x) ’prop1) *→ false* 
+(remf (car x) ’prop1) → true 
+(remf (car x) ’prop1) → false 
 
 ```
 **Side Effects:** 

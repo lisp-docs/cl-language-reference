@@ -108,7 +108,7 @@ For <DictionaryLink styled={true} term={"nsubst"}><b>nsubst</b></DictionaryLink>
 (setq tree1 ’(1 (1 2) (1 2 3) (1 2 3 4))) → (1 (1 2) (1 2 3) (1 2 3 4)) 
 (subst "two" 2 tree1) → (1 (1 "two") (1 "two" 3) (1 "two" 3 4)) 
 (subst "five" 5 tree1) → (1 (1 2) (1 2 3) (1 2 3 4)) 
-(eq tree1 (subst "five" 5 tree1)) *→ implementation-dependent* 
+(eq tree1 (subst "five" 5 tree1)) → implementation-dependent 
 (subst ’tempest ’hurricane 
 	’(shakespeare wrote (the hurricane))) 
 → (SHAKESPEARE WROTE (THE TEMPEST)) 

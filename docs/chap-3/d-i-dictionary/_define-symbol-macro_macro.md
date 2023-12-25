@@ -10,7 +10,7 @@
 
 
 
-*→ symbol* 
+→ symbol 
 
 
 

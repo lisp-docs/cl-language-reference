@@ -33,16 +33,16 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(keywordp ’elephant) *→ false* 
-(keywordp 12) *→ false* 
-(keywordp :test) *→ true* 
-(keywordp ’:test) *→ true* 
-(keywordp nil) *→ false* 
-(keywordp :nil) *→ true* 
-(keywordp ’(:test)) *→ false* 
-(keywordp "hello") *→ false* 
-(keywordp ":hello") *→ false* 
-(keywordp ’&optional) *→ false* 
+(keywordp ’elephant) → false 
+(keywordp 12) → false 
+(keywordp :test) → true 
+(keywordp ’:test) → true 
+(keywordp nil) → false 
+(keywordp :nil) → true 
+(keywordp ’(:test)) → false 
+(keywordp "hello") → false 
+(keywordp ":hello") → false 
+(keywordp ’&optional) → false 
 
 ```
 **See Also:** 

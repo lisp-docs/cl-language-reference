@@ -30,10 +30,10 @@ Makes the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTer
 ```lisp
 
 (setf (symbol-value ’a) 1) 
-(boundp ’a) *→ true* 
+(boundp ’a) → true 
 a → 1 
 (makunbound ’a) → A 
-(boundp ’a) *→ false* 
+(boundp ’a) → false 
 
 ```
 **Side Effects:** 

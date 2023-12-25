@@ -33,9 +33,9 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(random-state-p \*random-state\*) *→ true* 
-(random-state-p (make-random-state)) *→ true* 
-(random-state-p ’test-function) *→ false* 
+(random-state-p \*random-state\*) → true 
+(random-state-p (make-random-state)) → true 
+(random-state-p ’test-function) → false 
 
 ```
 **See Also:** 

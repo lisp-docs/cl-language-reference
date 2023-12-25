@@ -71,7 +71,7 @@ For a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> c
 
 (setq s (make-broadcast-stream)) → #<BROADCAST-STREAM> 
 (close s) → T 
-(output-stream-p s) *→ true* 
+(output-stream-p s) → true 
 
 ```
 **Side Effects:** 

@@ -45,10 +45,10 @@ An approximately uniform choice distribution is used. If *limit* is an *integer*
 **Examples:**
 ```lisp
 
-(<= 0 (random 1000) 1000) *→ true* 
+(<= 0 (random 1000) 1000) → true 
 (let ((state1 (make-random-state)) 
       (state2 (make-random-state))) 
-  (= (random 1000 state1) (random 1000 state2))) *→ true* 
+  (= (random 1000 state1) (random 1000 state2))) → true 
 
 ```
 **Side Effects:** 

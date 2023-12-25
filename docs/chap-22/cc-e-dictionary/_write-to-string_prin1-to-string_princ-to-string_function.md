@@ -18,7 +18,7 @@
 
 
 
-*→ string* 
+→ string 
 
 
 

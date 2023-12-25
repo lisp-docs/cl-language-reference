@@ -38,7 +38,7 @@ Decreases the *fill pointer* of <GlossaryTerm styled={true} term={"vector"}><i>v
 				  :fill-pointer 2 
 				  :initial-element ’sisyphus))) → 2 
 (fill-pointer fa) → 3 
-(eq (vector-pop fa) fable) *→ true* 
+(eq (vector-pop fa) fable) → true 
 (vector-pop fa) → SISYPHUS 
 (fill-pointer fa) → 1 
 

@@ -33,9 +33,9 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(rationalp 12) *→ true* 
-(rationalp 6/5) *→ true* 
-(rationalp 1.212) *→ false* 
+(rationalp 12) → true 
+(rationalp 6/5) → true 
+(rationalp 1.212) → false 
 
 ```
 **See Also:** 

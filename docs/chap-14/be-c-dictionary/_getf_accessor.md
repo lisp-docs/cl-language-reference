@@ -82,14 +82,14 @@
 (getf x ’prop1 7) → 7 
 (getf x ’prop1) → NIL 
 (setf (getf x ’prop1) ’val1) → VAL1 
-(eq (getf x ’prop1) ’val1) *→ true* 
+(eq (getf x ’prop1) ’val1) → true 
 (getf x ’prop1) → VAL1 
 (getf x ’prop1 7) → VAL1 
 x → (PROP1 VAL1) 
 ;; Examples of implementation variation permitted. 
 (setq foo (list ’a ’b ’c ’d ’e ’f)) → (A B C D E F) 
 (setq bar (cddr foo)) → (C D E F) 
-(remf foo ’c) *→ true* 
+(remf foo ’c) → true 
 foo → (A B E F) 
 bar 
 → (C D E F) 

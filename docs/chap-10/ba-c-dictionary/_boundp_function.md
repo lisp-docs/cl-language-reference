@@ -46,11 +46,11 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 ```lisp
 
 (setq x 1) → 1 
-(boundp ’x) *→ true* 
+(boundp ’x) → true 
 (makunbound ’x) → X 
-(boundp ’x) *→ false* 
-(let ((x 2)) (boundp ’x)) *→ false* 
-(let ((x 2)) (declare (special x)) (boundp ’x)) *→ true* 
+(boundp ’x) → false 
+(let ((x 2)) (boundp ’x)) → false 
+(let ((x 2)) (declare (special x)) (boundp ’x)) → true 
 
 ```
 **Exceptional Situations:** 

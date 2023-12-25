@@ -45,9 +45,9 @@ Regardless of whether an <GlossaryTerm styled={true} term={"implementation"}><i>
 **Examples:**
 ```lisp
 
-(minusp -1) *→ true* 
-(plusp 0) *→ false* 
-(plusp least-positive-single-float) *→ true* 
+(minusp -1) → true 
+(plusp 0) → false 
+(plusp least-positive-single-float) → true 
 
 ```
 **Exceptional Situations:** 

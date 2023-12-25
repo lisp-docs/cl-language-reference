@@ -97,7 +97,7 @@ The consequences are undefined if an attempt is made to <GlossaryTerm styled={tr
 :fill-pointer 0 :adjustable t)) → "" 
 (with-output-to-string (s fstr) 
 (format s "here’s some output") 
-(input-stream-p s)) *→ false* 
+(input-stream-p s)) → false 
 fstr → "here’s some output" 
 
 ```

@@ -76,11 +76,11 @@
       (funcall (function twice) 3) 
       (funcall (symbol-function ’twice) 3)) 
 → ((3 3) (3 3) (3 3)) 
-(fboundp ’defun) *→ true* 
+(fboundp ’defun) → true 
 (symbol-function ’defun) 
-*→ implementation-dependent* 
+→ implementation-dependent 
 (functionp (symbol-function ’defun)) 
-*→ implementation-dependent* 
+→ implementation-dependent 
 (defun symbol-function-or-nil (symbol) 
   (if (and (fboundp symbol) 
 	   (not (macro-function symbol)) 

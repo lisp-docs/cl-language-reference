@@ -33,11 +33,11 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(standard-char-p #\Space) *→ true* 
-(standard-char-p #\~) *→ true* 
+(standard-char-p #\Space) → true 
+(standard-char-p #\~) → true 
 ;; This next example presupposes an implementation 
 ;; in which #\Bell is a defined character. 
-(standard-char-p #\Bell) *→ false* 
+(standard-char-p #\Bell) → false 
 
 ```
 **Exceptional Situations:** 

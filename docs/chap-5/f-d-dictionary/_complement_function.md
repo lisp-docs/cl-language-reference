@@ -33,10 +33,10 @@ Returns a <GlossaryTerm styled={true} term={"function"}><i>function</i></Glossar
 **Examples:**
 ```lisp
 
-(funcall (complement #’zerop) 1) *→ true* 
-(funcall (complement #’characterp) #\A) *→ false* 
-(funcall (complement #’member) ’a ’(a b c)) *→ false* 
-(funcall (complement #’member) ’d ’(a b c)) *→ true* 
+(funcall (complement #’zerop) 1) → true 
+(funcall (complement #’characterp) #\A) → false 
+(funcall (complement #’member) ’a ’(a b c)) → false 
+(funcall (complement #’member) ’d ’(a b c)) → true 
 
 ```
 **See Also:** 

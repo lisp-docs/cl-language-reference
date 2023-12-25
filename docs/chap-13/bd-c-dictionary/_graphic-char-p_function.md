@@ -45,10 +45,10 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(graphic-char-p #\G) *→ true* 
-(graphic-char-p #\#) *→ true* 
-(graphic-char-p #\Space) *→ true* 
-(graphic-char-p #\Newline) *→ false* 
+(graphic-char-p #\G) → true 
+(graphic-char-p #\#) → true 
+(graphic-char-p #\Space) → true 
+(graphic-char-p #\Newline) → false 
 
 ```
 **Exceptional Situations:** 

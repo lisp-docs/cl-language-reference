@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"directory"}><b>directory</b></DictionaryLink> *pathspec* &amp;key *→ pathnames* 
+<DictionaryLink styled={true} term={"directory"}><b>directory</b></DictionaryLink> *pathspec* &amp;key → pathnames 
 
 
 

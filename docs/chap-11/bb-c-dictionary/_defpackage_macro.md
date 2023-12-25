@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"defpackage"}><b>defpackage</b></DictionaryLink> *defined-package-name* [[ *↓option* ]] *→ package* 
+<DictionaryLink styled={true} term={"defpackage"}><b>defpackage</b></DictionaryLink> *defined-package-name* [[ *↓option* ]] → package 
 
 
 

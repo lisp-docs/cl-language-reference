@@ -197,11 +197,11 @@ after macro expansion. The occurrences of x and flag legitimately refer to the p
 (flet ((dummy-function () ’shadow)) 
   (funcall #’dummy-function)) → SHADOW 
 (eq (funcall #’dummy-function) (funcall ’dummy-function)) 
-*→ true* 
+→ true 
 (flet ((dummy-function () ’shadow)) 
   (eq (funcall #’dummy-function) 
       (funcall ’dummy-function))) 
-*→ false* 
+→ false 
 (defun recursive-times (k n) 
   (labels ((temp (n) 
 	     (if (zerop n) 0 (+ k (temp (1- n)))))) 

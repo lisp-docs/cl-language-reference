@@ -33,10 +33,10 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(simple-string-p "aaaaaa") *→ true* 
+(simple-string-p "aaaaaa") → true 
 (simple-string-p (make-array 6 
 			     :element-type ’character 
-			     :fill-pointer t)) *→ false* 
+			     :fill-pointer t)) → false 
 
 
 

@@ -38,7 +38,7 @@ Returns a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> t
 
 
 
-(nconc <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>) *→ list* 
+(nconc <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>) → list 
 
 
 

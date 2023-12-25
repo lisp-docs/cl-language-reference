@@ -45,10 +45,10 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(consp nil) *→ false* 
-(consp (cons 1 2)) *→ true* 
+(consp nil) → false 
+(consp (cons 1 2)) → true 
 The *empty list* is not a *cons*, so 
-(consp ’()) *≡* (consp ’nil) *→ false* 
+(consp ’()) *≡* (consp ’nil) → false 
 
 ```
 **See Also:** 

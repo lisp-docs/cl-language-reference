@@ -76,9 +76,9 @@ After this operation completes, the *home package* of any <GlossaryTerm styled={
 (find-symbol "FOO" \*bar-package\*) → FOO:FOO, :EXTERNAL 
 (find-symbol "FOO" \*baz-package\*) → FOO:FOO, :INHERITED 
 (find-symbol "BAR" \*baz-package\*) → BAR:BAR, :INHERITED 
-(packagep \*foo-package\*) *→ true* 
-(packagep \*bar-package\*) *→ true* 
-(packagep \*baz-package\*) *→ true* 
+(packagep \*foo-package\*) → true 
+(packagep \*bar-package\*) → true 
+(packagep \*baz-package\*) → true 
 (package-name \*foo-package\*) → "FOO" 
 (package-name \*bar-package\*) → "BAR" 
 (package-name \*baz-package\*) → "BAZ" 

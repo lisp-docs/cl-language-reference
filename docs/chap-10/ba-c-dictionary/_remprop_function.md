@@ -59,14 +59,14 @@ The *property indicator* and the corresponding *property value* are removed in a
 
 
 
-(remprop test ’approximation) *→ true* 
+(remprop test ’approximation) → true 
 (get test ’approximation) → NIL 
 (symbol-plist test) 
 → (ERROR-RANGE NOTICEABLE CONSTANT T) 
 (remprop test ’approximation) → NIL 
 (symbol-plist test) 
 → (ERROR-RANGE NOTICEABLE CONSTANT T) 
-(remprop test ’error-range) *→ true* 
+(remprop test ’error-range) → true 
 (setf (get test ’approximation) 3) → 3 
 (symbol-plist test) 
 → (APPROXIMATION 3 CONSTANT T) 

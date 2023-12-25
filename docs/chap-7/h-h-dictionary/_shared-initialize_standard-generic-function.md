@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink> *instance slot-names* &amp;rest *initargs* &amp;key &amp;allow-other-keys *→ instance* 
+<DictionaryLink styled={true} term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink> *instance slot-names* &amp;rest *initargs* &amp;key &amp;allow-other-keys → instance 
 
 
 

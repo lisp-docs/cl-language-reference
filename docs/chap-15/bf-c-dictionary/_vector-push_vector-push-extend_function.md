@@ -65,7 +65,7 @@
 				  
 				  :initial-element ’first-one))) → 2 
 (fill-pointer fa) → 3 
-(eq (aref fa 2) fable) *→ true* 
+(eq (aref fa 2) fable) → true 
 (vector-push-extend #\X 
 		    (setq aa 
 			  (make-array 5 

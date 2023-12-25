@@ -33,12 +33,12 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(symbolp ’elephant) *→ true* 
-(symbolp 12) *→ false* 
-(symbolp nil) *→ true* 
-(symbolp ’()) *→ true* 
-(symbolp :test) *→ true* 
-(symbolp "hello") *→ false* 
+(symbolp ’elephant) → true 
+(symbolp 12) → false 
+(symbolp nil) → true 
+(symbolp ’()) → true 
+(symbolp :test) → true 
+(symbolp "hello") → false 
 
 ```
 **See Also:** 

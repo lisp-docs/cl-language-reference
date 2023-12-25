@@ -33,15 +33,15 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(arrayp (make-array ’(2 3 4) :adjustable t)) *→ true* 
-(arrayp (make-array 6)) *→ true* 
-(arrayp #\*1011) *→ true* 
+(arrayp (make-array ’(2 3 4) :adjustable t)) → true 
+(arrayp (make-array 6)) → true 
+(arrayp #\*1011) → true 
 
 
 
-(arrayp "hi") *→ true* 
-(arrayp ’hi) *→ false* 
-(arrayp 12) *→ false* 
+(arrayp "hi") → true 
+(arrayp ’hi) → false 
+(arrayp 12) → false 
 
 ```
 **See Also:** 

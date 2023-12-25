@@ -45,11 +45,11 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(vectorp "aaaaaa") *→ true* 
-(vectorp (make-array 6 :fill-pointer t)) *→ true* 
-(vectorp (make-array ’(2 3 4))) *→ false* 
-(vectorp #\*11) *→ true* 
-(vectorp #b11) *→ false* 
+(vectorp "aaaaaa") → true 
+(vectorp (make-array 6 :fill-pointer t)) → true 
+(vectorp (make-array ’(2 3 4))) → false 
+(vectorp #\*11) → true 
+(vectorp #b11) → false 
 
 ```
 **Notes:** 

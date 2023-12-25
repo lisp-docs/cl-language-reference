@@ -56,7 +56,7 @@ Within this document only, <DictionaryLink styled={true} term={"nil"}><b>nil</b>
 
 
 
-(not nil) *→ true* ;Emphasize use as Boolean false 
+(not nil) → true ;Emphasize use as Boolean false 
 
 
 

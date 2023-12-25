@@ -62,10 +62,10 @@ is a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> , 
 str → "abc" 
 (setq str (copy-seq str)) → "abc" 
 (nreverse str) → "cba" 
-str *→ implementation-dependent* 
+str → implementation-dependent 
 (setq l (list 1 2 3)) → (1 2 3) 
 (nreverse l) → (3 2 1) 
-l *→ implementation-dependent* 
+l → implementation-dependent 
 
 ```
 **Side Effects:** 

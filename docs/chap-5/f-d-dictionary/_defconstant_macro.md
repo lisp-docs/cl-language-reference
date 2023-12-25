@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"defconstant"}><b>defconstant</b></DictionaryLink> *name initial-value* [*documentation*] *→ name* 
+<DictionaryLink styled={true} term={"defconstant"}><b>defconstant</b></DictionaryLink> *name initial-value* [*documentation*] → name 
 
 
 
@@ -87,7 +87,7 @@ Data and Control
 
 (defconstant this-is-a-constant ’never-changing "for a test") → THIS-IS-A-CONSTANT this-is-a-constant → NEVER-CHANGING 
 (documentation ’this-is-a-constant ’variable) → "for a test" 
-(constantp ’this-is-a-constant) *→ true* 
+(constantp ’this-is-a-constant) → true 
 
 ```
 **See Also:** 

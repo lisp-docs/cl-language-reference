@@ -33,9 +33,9 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(endp nil) *→ true* 
-(endp ’(1 2)) *→ false* 
-(endp (cddr ’(1 2))) *→ true* 
+(endp nil) → true 
+(endp ’(1 2)) → false 
+(endp (cddr ’(1 2))) → true 
 
 ```
 **Exceptional Situations:** 

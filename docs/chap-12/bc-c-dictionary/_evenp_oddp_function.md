@@ -37,9 +37,9 @@
 <DictionaryLink styled={true} term={"oddp"}><b>oddp</b></DictionaryLink> returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if *integer* is odd (not divisible by two); otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. **Examples:**
 ```lisp
 
-(evenp 0) *→ true* 
-(oddp 10000000000000000000000) *→ false* 
-(oddp -1) *→ true* 
+(evenp 0) → true 
+(oddp 10000000000000000000000) → false 
+(oddp -1) → true 
 
 ```
 **Exceptional Situations:** 

@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"change-class"}><b>change-class</b></DictionaryLink> *instance new-class* &amp;key &amp;allow-other-keys *→ instance* 
+<DictionaryLink styled={true} term={"change-class"}><b>change-class</b></DictionaryLink> *instance new-class* &amp;key &amp;allow-other-keys → instance 
 
 
 

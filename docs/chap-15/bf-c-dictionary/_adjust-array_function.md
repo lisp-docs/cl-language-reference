@@ -30,7 +30,7 @@
 
 
 
-*→ adjusted-array* 
+→ adjusted-array 
 
 
 
@@ -308,8 +308,8 @@ Returns true if and only if <DictionaryLink styled={true} term={"adjust-array"}>
 	     
 	     
 	     :adjustable t 
-	     :fill-pointer 3)) *→ true* 
-(adjustable-array-p (make-array 4)) *→ implementation-dependent* 
+	     :fill-pointer 3)) → true 
+(adjustable-array-p (make-array 4)) → implementation-dependent 
 
 ```
 **Exceptional Situations:** 

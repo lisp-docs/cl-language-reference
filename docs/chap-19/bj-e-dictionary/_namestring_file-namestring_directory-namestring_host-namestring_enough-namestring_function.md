@@ -106,7 +106,7 @@ It is not necessarily possible to construct a valid <GlossaryTerm styled={true} 
 → #S(PATHNAME :HOST "kathy" :DEVICE NIL :DIRECTORY *directory-name* 
 		:NAME "getty" :TYPE NIL :VERSION NIL) 
 (file-namestring q) → "getty" 
-(directory-namestring q) *→ directory-name* 
+(directory-namestring q) → directory-name 
 (host-namestring q) → "kathy" 
 ;;;Using Unix syntax and the wildcard conventions used by the 
 ;;;particular version of Unix on which this example was created: 

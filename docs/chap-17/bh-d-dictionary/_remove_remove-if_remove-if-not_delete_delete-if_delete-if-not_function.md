@@ -157,7 +157,7 @@ For all these functions, elements not removed or deleted occur in the same order
 (setq lst ’(list of four elements)) → (LIST OF FOUR ELEMENTS) 
 (setq lst2 (copy-seq lst)) → (LIST OF FOUR ELEMENTS) 
 (setq lst3 (delete ’four lst)) → (LIST OF ELEMENTS) 
-(equal lst lst2) *→ false* 
+(equal lst lst2) → false 
 (remove-if #’oddp ’(1 2 4 1 3 4 5)) → (2 4 4) 
 (remove-if #’evenp ’(1 2 4 1 3 4 5) :count 1 :from-end t) 
 → (1 2 4 1 3 5) 
@@ -177,7 +177,7 @@ For all these functions, elements not removed or deleted occur in the same order
 (delete-if #’evenp tester :count 1 :from-end t) → (1 2 4 1 3 5) 
 (setq tester (list 1 2 3 4 5 6)) → (1 2 3 4 5 6) 
 (delete-if #’evenp tester) → (1 3 5) 
-tester *→ implementation-dependent* 
+tester → implementation-dependent 
 (setq foo (list ’a ’b ’c)) → (A B C) 
 (setq bar (cdr foo)) → (B C) 
 (setq foo (delete ’b foo)) → (A C) 

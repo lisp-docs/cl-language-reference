@@ -33,9 +33,9 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(packagep \*package\*) *→ true* 
-(packagep ’common-lisp) *→ false* 
-(packagep (find-package ’common-lisp)) *→ true* 
+(packagep \*package\*) → true 
+(packagep ’common-lisp) → false 
+(packagep (find-package ’common-lisp)) → true 
 
 ```
 **Notes:** 

@@ -37,7 +37,7 @@ Returns the *character object* whose <GlossaryTerm styled={true} term={"name"}><
 (name-char "space") → #\Space 
 (name-char "Space") → #\Space 
 (let ((x (char-name #\a))) 
-  (or (not x) (eql (name-char x) #\a))) *→ true* 
+  (or (not x) (eql (name-char x) #\a))) → true 
 
 ```
 **Exceptional Situations:** 

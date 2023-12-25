@@ -45,8 +45,8 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(stringp "aaaaaa") *→ true* 
-(stringp #\a) *→ false* 
+(stringp "aaaaaa") → true 
+(stringp #\a) → false 
 
 ```
 **See Also:** 

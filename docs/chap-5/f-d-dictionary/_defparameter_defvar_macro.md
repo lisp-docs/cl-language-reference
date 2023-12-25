@@ -6,11 +6,11 @@
 
 
 
-<DictionaryLink styled={true} term={"defparameter"}><b>defparameter</b></DictionaryLink> *name initial-value* [*documentation*] *→ name* 
+<DictionaryLink styled={true} term={"defparameter"}><b>defparameter</b></DictionaryLink> *name initial-value* [*documentation*] → name 
 
 
 
-<DictionaryLink styled={true} term={"defvar"}><b>defvar</b></DictionaryLink> <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> [*initial-value* [*documentation*]] *→ name* 
+<DictionaryLink styled={true} term={"defvar"}><b>defvar</b></DictionaryLink> <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> [*initial-value* [*documentation*]] → name 
 
 
 
@@ -75,13 +75,13 @@ If *documentation* is supplied, it is attached to <GlossaryTerm styled={true} te
 
 (defparameter \*p\* 1) → \*P\* 
 \*p\* → 1 
-(constantp ’\*p\*) *→ false* 
+(constantp ’\*p\*) → false 
 (setq \*p\* 2) → 2 
 (defparameter \*p\* 3) → \*P\* 
 \*p\* → 3 
 (defvar \*v\* 1) → \*V\* 
 \*v\* → 1 
-(constantp ’\*v\*) *→ false* 
+(constantp ’\*v\*) → false 
 (setq \*v\* 2) → 2 
 (defvar \*v\* 3) → \*V\* 
 \*v\* → 2 

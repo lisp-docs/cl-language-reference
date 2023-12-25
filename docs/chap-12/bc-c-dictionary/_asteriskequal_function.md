@@ -6,27 +6,27 @@
 
 
 
-<DictionaryLink styled={true} term={"="}><b>=</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+<DictionaryLink styled={true} term={"="}><b>=</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 
-<DictionaryLink styled={true} term={"/="}><b>/=</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+<DictionaryLink styled={true} term={"/="}><b>/=</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 
-&lt; &amp;rest <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+&lt; &amp;rest <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 
-\&gt; &amp;rest <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+\&gt; &amp;rest <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 
-&lt;<DictionaryLink styled={true} term={"="}><b>=</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+&lt;<DictionaryLink styled={true} term={"="}><b>=</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 
-\&gt;<DictionaryLink styled={true} term={"="}><b>=</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+\&gt;<DictionaryLink styled={true} term={"="}><b>=</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 

@@ -14,7 +14,7 @@
 
 
 
-*→ result-sequence* 
+→ result-sequence 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*→ result-sequence* 
+→ result-sequence 
 
 
 

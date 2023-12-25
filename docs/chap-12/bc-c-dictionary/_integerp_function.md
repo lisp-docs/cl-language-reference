@@ -33,10 +33,10 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(integerp 1) *→ true* 
-(integerp (expt 2 130)) *→ true* 
-(integerp 6/5) *→ false* 
-(integerp nil) *→ false* 
+(integerp 1) → true 
+(integerp (expt 2 130)) → true 
+(integerp 6/5) → false 
+(integerp nil) → false 
 
 ```
 **Notes:** 

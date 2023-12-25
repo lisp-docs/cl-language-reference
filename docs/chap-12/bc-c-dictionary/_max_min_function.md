@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"max"}><b>max</b></DictionaryLink> &amp;rest *reals*<sup>+</sup> *→ max-real* 
+<DictionaryLink styled={true} term={"max"}><b>max</b></DictionaryLink> &amp;rest *reals*<sup>+</sup> → max-real 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<DictionaryLink styled={true} term={"min"}><b>min</b></DictionaryLink> &amp;rest *reals*<sup>+</sup> *→ min-real* 
+<DictionaryLink styled={true} term={"min"}><b>min</b></DictionaryLink> &amp;rest *reals*<sup>+</sup> → min-real 
 
 
 

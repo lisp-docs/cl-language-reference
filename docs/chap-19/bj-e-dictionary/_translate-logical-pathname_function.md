@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"translate-logical-pathname"}><b>translate-logical-pathname</b></DictionaryLink> <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> &amp;key *→ physical-pathname* 
+<DictionaryLink styled={true} term={"translate-logical-pathname"}><b>translate-logical-pathname</b></DictionaryLink> <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> &amp;key → physical-pathname 
 
 
 

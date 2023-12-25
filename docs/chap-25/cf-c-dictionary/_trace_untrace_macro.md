@@ -6,11 +6,11 @@
 
 
 
-<DictionaryLink styled={true} term={"trace"}><b>trace</b></DictionaryLink> *\{function-name\}*\* *→ trace-result* 
+<DictionaryLink styled={true} term={"trace"}><b>trace</b></DictionaryLink> *\{function-name\}*\* → trace-result 
 
 
 
-<DictionaryLink styled={true} term={"untrace"}><b>untrace</b></DictionaryLink> *\{function-name\}*\* *→ untrace-result* 
+<DictionaryLink styled={true} term={"untrace"}><b>untrace</b></DictionaryLink> *\{function-name\}*\* → untrace-result 
 
 
 

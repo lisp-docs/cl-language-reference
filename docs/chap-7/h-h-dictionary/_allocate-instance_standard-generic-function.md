@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> &amp;rest *initargs* &amp;key &amp;allow-other-keys *→ new-instance* 
+<DictionaryLink styled={true} term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> &amp;rest *initargs* &amp;key &amp;allow-other-keys → new-instance 
 
 
 

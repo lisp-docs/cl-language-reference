@@ -40,9 +40,9 @@ It is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implement
 (setq temp-string "temp") → "temp" 
 (setq temp-symbol (make-symbol temp-string)) → #:|temp| 
 (symbol-name temp-symbol) → "temp" 
-(eq (symbol-name temp-symbol) temp-string) *→ implementation-dependent* 
+(eq (symbol-name temp-symbol) temp-string) → implementation-dependent 
 (find-symbol "temp") → NIL, NIL 
-(eq (make-symbol temp-string) (make-symbol temp-string)) *→ false* 
+(eq (make-symbol temp-string) (make-symbol temp-string)) → false 
 
 ```
 **Exceptional Situations:** 

@@ -40,9 +40,9 @@ Removes the entry for <GlossaryTerm styled={true} term={"key"}><i>key</i></Gloss
 (setq table (make-hash-table)) → #<HASH-TABLE EQL 0/120 32115666> 
 (setf (gethash 100 table) "C") → "C" 
 (gethash 100 table) → "C", *true* 
-(remhash 100 table) *→ true* 
+(remhash 100 table) → true 
 (gethash 100 table) → NIL, *false* 
-(remhash 100 table) *→ false* 
+(remhash 100 table) → false 
 
 ```
 **Side Effects:** 

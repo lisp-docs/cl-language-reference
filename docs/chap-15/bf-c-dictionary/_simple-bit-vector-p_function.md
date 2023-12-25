@@ -49,8 +49,8 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(simple-bit-vector-p (make-array 6)) *→ false* 
-(simple-bit-vector-p #\*) *→ true* 
+(simple-bit-vector-p (make-array 6)) → false 
+(simple-bit-vector-p #\*) → true 
 
 ```
 **See Also:** 

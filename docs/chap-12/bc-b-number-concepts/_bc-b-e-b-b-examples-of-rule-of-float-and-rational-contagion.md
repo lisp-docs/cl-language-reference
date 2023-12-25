@@ -12,8 +12,8 @@
 ;;; This example assumes an implementation in which the default float 
 ;;; format is IEEE single-float, IEEE double-float, or some other format 
 ;;; in which 5/7 is rounded upwards by FLOAT. 
-(< 5/7 (float 5/7)) *→ true* 
-(< 5/7 (rational (float 5/7))) *→ true* 
-(< (float 5/7) (float 5/7)) *→ false* 
+(< 5/7 (float 5/7)) → true 
+(< 5/7 (rational (float 5/7))) → true 
+(< (float 5/7) (float 5/7)) → false 
 
 ```

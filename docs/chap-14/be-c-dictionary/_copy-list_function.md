@@ -40,9 +40,9 @@ Only the *list structure* of <GlossaryTerm styled={true} term={"list"}><i>list</
 (setq lst (list 1 (list 2 3))) → (1 (2 3)) 
 (setq slst lst) → (1 (2 3)) 
 (setq clst (copy-list lst)) → (1 (2 3)) 
-(eq slst lst) *→ true* 
-(eq clst lst) *→ false* 
-(equal clst lst) *→ true* 
+(eq slst lst) → true 
+(eq clst lst) → false 
+(equal clst lst) → true 
 (rplaca lst "one") → ("one" (2 3)) 
 slst → ("one" (2 3)) 
 clst → (1 (2 3)) 

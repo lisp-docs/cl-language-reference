@@ -108,7 +108,7 @@ The *sequence-1* is modified.
 
 
 
-*→ result-sequence* 
+→ result-sequence 
 
 
 
@@ -116,7 +116,7 @@ The *sequence-1* is modified.
 
 
 
-*→ result-sequence* 
+→ result-sequence 
 
 
 
@@ -124,7 +124,7 @@ The *sequence-1* is modified.
 
 
 
-*→ result-sequence* 
+→ result-sequence 
 
 
 
@@ -152,7 +152,7 @@ The *sequence-1* is modified.
 
 
 
-*→ sequence* 
+→ sequence 
 
 
 
@@ -160,7 +160,7 @@ The *sequence-1* is modified.
 
 
 
-*→ sequence* 
+→ sequence 
 
 
 

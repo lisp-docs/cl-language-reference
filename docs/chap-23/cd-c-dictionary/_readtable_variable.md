@@ -29,7 +29,7 @@ The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <D
 **Examples:**
 ```lisp
 
-(readtablep \*readtable\*) *→ true* 
+(readtablep \*readtable\*) → true 
 
 
 

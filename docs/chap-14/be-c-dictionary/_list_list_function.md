@@ -10,7 +10,7 @@
 
 
 
-<DictionaryLink styled={true} term={"list"}><b>list\*</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm><sup>+</sup> *→ result* 
+<DictionaryLink styled={true} term={"list"}><b>list\*</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm><sup>+</sup> → result 
 
 
 
@@ -58,7 +58,7 @@ If <DictionaryLink styled={true} term={"list"}><b>list\*</b></DictionaryLink> re
 (list\* a 2) → (1 . 2) 
 (list) → NIL ;*i.e.*, () 
 (setq a ’(1 2)) → (1 2) 
-(eq a (list\* a)) *→ true* 
+(eq a (list\* a)) → true 
 (list 3 4 ’a (car ’(b . c)) (+ 6 -2)) → (3 4 A B 4) 
 (list\* ’a ’b ’c ’d) *≡* (cons ’a (cons ’b (cons ’c ’d))) → (A B C . D) 
 (list\* ’a ’b ’c ’(d e f)) → (A B C D E F) 

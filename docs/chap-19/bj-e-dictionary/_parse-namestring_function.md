@@ -148,7 +148,7 @@ If *thing* contains an explicit host name and no explicit device name, then it i
 (setq q (parse-namestring "test")) 
 → #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME "test" 
 		:TYPE NIL :VERSION NIL) 
-(pathnamep q) *→ true* 
+(pathnamep q) → true 
 (parse-namestring "test") 
 → #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME "test" 
 		:TYPE NIL :VERSION NIL), 4 

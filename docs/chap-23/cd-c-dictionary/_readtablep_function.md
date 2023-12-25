@@ -33,9 +33,9 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
  
-(readtablep \*readtable\*) *→ true* 
-(readtablep (copy-readtable)) *→ true* 
-(readtablep ’\*readtable\*) *→ false* 
+(readtablep \*readtable\*) → true 
+(readtablep (copy-readtable)) → true 
+(readtablep ’\*readtable\*) → false 
 
 ```
 **Notes:** 

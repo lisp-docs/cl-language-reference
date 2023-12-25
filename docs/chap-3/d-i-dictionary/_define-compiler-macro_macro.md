@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"define-compiler-macro"}><b>define-compiler-macro</b></DictionaryLink> *name lambda-list* [[ <GlossaryTerm styled={true} term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* *| documentation* ]] <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* *→ name* 
+<DictionaryLink styled={true} term={"define-compiler-macro"}><b>define-compiler-macro</b></DictionaryLink> *name lambda-list* [[ <GlossaryTerm styled={true} term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* *| documentation* ]] <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* → name 
 
 
 

@@ -6,23 +6,23 @@
 
 
 
-<DictionaryLink styled={true} term={"mapc"}><b>mapc</b></DictionaryLink> <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> &amp;rest <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm><sup>+</sup> *→ list-1* 
+<DictionaryLink styled={true} term={"mapc"}><b>mapc</b></DictionaryLink> <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> &amp;rest <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm><sup>+</sup> → list-1 
 
 
 
-<DictionaryLink styled={true} term={"mapcar"}><b>mapcar</b></DictionaryLink> <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> &amp;rest <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm><sup>+</sup> *→ result-list* 
+<DictionaryLink styled={true} term={"mapcar"}><b>mapcar</b></DictionaryLink> <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> &amp;rest <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm><sup>+</sup> → result-list 
 
 
 
-<DictionaryLink styled={true} term={"mapcan"}><b>mapcan</b></DictionaryLink> <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> &amp;rest <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm><sup>+</sup> *→ concatenated-results* 
+<DictionaryLink styled={true} term={"mapcan"}><b>mapcan</b></DictionaryLink> <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> &amp;rest <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm><sup>+</sup> → concatenated-results 
 
 
 
-<DictionaryLink styled={true} term={"mapl"}><b>mapl</b></DictionaryLink> <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> &amp;rest <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm><sup>+</sup> *→ list-1* 
+<DictionaryLink styled={true} term={"mapl"}><b>mapl</b></DictionaryLink> <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> &amp;rest <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm><sup>+</sup> → list-1 
 
 
 
-<DictionaryLink styled={true} term={"maplist"}><b>maplist</b></DictionaryLink> <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> &amp;rest <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm><sup>+</sup> *→ result-list* 
+<DictionaryLink styled={true} term={"maplist"}><b>maplist</b></DictionaryLink> <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> &amp;rest <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm><sup>+</sup> → result-list 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<DictionaryLink styled={true} term={"mapcon"}><b>mapcon</b></DictionaryLink> <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> &amp;rest <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm><sup>+</sup> *→ concatenated-results* 
+<DictionaryLink styled={true} term={"mapcon"}><b>mapcon</b></DictionaryLink> <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> &amp;rest <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm><sup>+</sup> → concatenated-results 
 
 
 

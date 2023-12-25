@@ -67,7 +67,7 @@ Section 12.1.1 (Numeric Operations), Section 12.1.3 (Rational Computations), Sec
 
 
 
-*− minuend* &amp;rest *subtrahends*<sup>+</sup> *→ difference* 
+*− minuend* &amp;rest *subtrahends*<sup>+</sup> → difference 
 
 
 
@@ -121,7 +121,7 @@ The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>
 (- 55.55) → -55.55 
 (- #c(3 -5)) → #C(-3 5) 
 (- 0) → 0 
-(eql (- 0.0) -0.0) *→ true* 
+(eql (- 0.0) -0.0) → true 
 (- #c(100 45) #c(0 45)) → 100 
 (- 10 1 2 3 4) → 0 
 

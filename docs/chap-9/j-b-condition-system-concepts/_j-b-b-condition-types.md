@@ -22,7 +22,7 @@ All <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTer
 
 
 
-(typep *c* ’condition) *→ true* 
+(typep *c* ’condition) → true 
 
 
 

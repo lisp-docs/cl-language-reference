@@ -50,51 +50,51 @@ The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <Dictio
 
 
 
-<DictionaryLink styled={true} term={"char"}><b>char</b></DictionaryLink>= &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+<DictionaryLink styled={true} term={"char"}><b>char</b></DictionaryLink>= &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 
-<DictionaryLink styled={true} term={"char"}><b>char*</b></DictionaryLink>/* = &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+<DictionaryLink styled={true} term={"char"}><b>char*</b></DictionaryLink>/* = &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 
-<DictionaryLink styled={true} term={"char"}><b>char</b></DictionaryLink>&lt; &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+<DictionaryLink styled={true} term={"char"}><b>char</b></DictionaryLink>&lt; &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 
-<DictionaryLink styled={true} term={"char"}><b>char</b></DictionaryLink>&gt; &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+<DictionaryLink styled={true} term={"char"}><b>char</b></DictionaryLink>&gt; &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 
-<DictionaryLink styled={true} term={"char"}><b>char</b></DictionaryLink>&lt;= &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+<DictionaryLink styled={true} term={"char"}><b>char</b></DictionaryLink>&lt;= &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 
-<DictionaryLink styled={true} term={"char"}><b>char</b></DictionaryLink>&gt;= &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+<DictionaryLink styled={true} term={"char"}><b>char</b></DictionaryLink>&gt;= &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 
-<DictionaryLink styled={true} term={"char-equal"}><b>char-equal</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+<DictionaryLink styled={true} term={"char-equal"}><b>char-equal</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 
-<DictionaryLink styled={true} term={"char-not-equal"}><b>char-not-equal</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+<DictionaryLink styled={true} term={"char-not-equal"}><b>char-not-equal</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 
-<DictionaryLink styled={true} term={"char-lessp"}><b>char-lessp</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+<DictionaryLink styled={true} term={"char-lessp"}><b>char-lessp</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 
-<DictionaryLink styled={true} term={"char-greaterp"}><b>char-greaterp</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+<DictionaryLink styled={true} term={"char-greaterp"}><b>char-greaterp</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 
-<DictionaryLink styled={true} term={"char-not-greaterp"}><b>char-not-greaterp</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+<DictionaryLink styled={true} term={"char-not-greaterp"}><b>char-not-greaterp</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 
-<DictionaryLink styled={true} term={"char-not-lessp"}><b>char-not-lessp</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> *→ generalized-boolean* 
+<DictionaryLink styled={true} term={"char-not-lessp"}><b>char-not-lessp</b></DictionaryLink> &amp;rest <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm><sup>+</sup> → generalized-boolean 
 
 
 
@@ -165,40 +165,40 @@ If two <GlossaryTerm styled={true} term={"character"}><i>characters</i></Glossar
 **Examples:**
 ```lisp
 
-(char= #\d #\d) *→ true* 
-(char= #\A #\a) *→ false* 
-(char= #\d #\x) *→ false* 
-(char= #\d #\D) *→ false* 
-(char/= #\d #\d) *→ false* 
-(char/= #\d #\x) *→ true* 
-(char/= #\d #\D) *→ true* 
-(char= #\d #\d #\d #\d) *→ true* 
-(char/= #\d #\d #\d #\d) *→ false* 
-(char= #\d #\d #\x #\d) *→ false* 
-(char/= #\d #\d #\x #\d) *→ false* 
-(char= #\d #\y #\x #\c) *→ false* 
-(char/= #\d #\y #\x #\c) *→ true* 
-(char= #\d #\c #\d) *→ false* 
-(char/= #\d #\c #\d) *→ false* 
-(char< #\d #\x) *→ true* 
-(char<= #\d #\x) *→ true* 
-(char< #\d #\d) *→ false* 
-(char<= #\d #\d) *→ true* 
-(char< #\a #\e #\y #\z) *→ true* 
-(char<= #\a #\e #\y #\z) *→ true* 
-(char< #\a #\e #\e #\y) *→ false* 
-(char<= #\a #\e #\e #\y) *→ true* 
-(char> #\e #\d) *→ true* 
-(char>= #\e #\d) *→ true* 
-(char> #\d #\c #\b #\a) *→ true* 
-(char>= #\d #\c #\b #\a) *→ true* 
-(char> #\d #\d #\c #\a) *→ false* 
-(char>= #\d #\d #\c #\a) *→ true* 
-(char> #\e #\d #\b #\c #\a) *→ false* 
-(char>= #\e #\d #\b #\c #\a) *→ false* 
-(char> #\z #\A) *→ implementation-dependent* 
-(char> #\Z #\a) *→ implementation-dependent* 
-(char-equal #\A #\a) *→ true* 
+(char= #\d #\d) → true 
+(char= #\A #\a) → false 
+(char= #\d #\x) → false 
+(char= #\d #\D) → false 
+(char/= #\d #\d) → false 
+(char/= #\d #\x) → true 
+(char/= #\d #\D) → true 
+(char= #\d #\d #\d #\d) → true 
+(char/= #\d #\d #\d #\d) → false 
+(char= #\d #\d #\x #\d) → false 
+(char/= #\d #\d #\x #\d) → false 
+(char= #\d #\y #\x #\c) → false 
+(char/= #\d #\y #\x #\c) → true 
+(char= #\d #\c #\d) → false 
+(char/= #\d #\c #\d) → false 
+(char< #\d #\x) → true 
+(char<= #\d #\x) → true 
+(char< #\d #\d) → false 
+(char<= #\d #\d) → true 
+(char< #\a #\e #\y #\z) → true 
+(char<= #\a #\e #\y #\z) → true 
+(char< #\a #\e #\e #\y) → false 
+(char<= #\a #\e #\e #\y) → true 
+(char> #\e #\d) → true 
+(char>= #\e #\d) → true 
+(char> #\d #\c #\b #\a) → true 
+(char>= #\d #\c #\b #\a) → true 
+(char> #\d #\d #\c #\a) → false 
+(char>= #\d #\d #\c #\a) → true 
+(char> #\e #\d #\b #\c #\a) → false 
+(char>= #\e #\d #\b #\c #\a) → false 
+(char> #\z #\A) → implementation-dependent 
+(char> #\Z #\a) → implementation-dependent 
+(char-equal #\A #\a) → true 
 
 
 

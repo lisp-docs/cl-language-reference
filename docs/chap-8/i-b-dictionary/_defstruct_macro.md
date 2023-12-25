@@ -10,7 +10,7 @@
 
 
 
-*→ structure-name* 
+→ structure-name 
 
 
 
@@ -614,7 +614,7 @@ If no :type option is involved, then the structure name of the including structu
 
 
 
-(typep (make-astronaut) ’person) *→ true* 
+(typep (make-astronaut) ’person) → true 
 
 
 
@@ -1310,7 +1310,7 @@ This alters the x-position of ship2 to be 100. This works because **defstruct** 
 					;create a town instance 
 (setq town1 (make-town :area 0 :watertowers 0)) → #S(TOWN...) 
 					;town’s predicate recognizes the new instance 
-(town-p town1) *→ true* 
+(town-p town1) → true 
 					;new town’s area is as specified by make-town 
 (town-area town1) → 0 
 					;new town’s elevation has initial value 
@@ -1320,7 +1320,7 @@ This alters the x-position of ship2 to be 100. This works because **defstruct** 
 (town-population town1) → 99 
 					;copier function makes a copy of town1 
 (setq town2 (copy-town town1)) → #S(TOWN...) 
-(= (town-population town1) (town-population town2)) *→ true* 
+(= (town-population town1) (town-population town2)) → true 
 					;since elevation is a read-only slot, its value can be set only 
 
 
@@ -1343,7 +1343,7 @@ This alters the x-position of ship2 to be 100. This works because **defstruct** 
 		  (:predicate is-a-bozo-p)) 
   nose-color frizzy-hair-p polkadots) → klown 
 					;custom constructor now exists 
-(fboundp ’make-up-klown) *→ true* 
+(fboundp ’make-up-klown) → true 
 ;;; 
 ;;; Example 3 
 ;;; define a vehicle structure type 
@@ -1382,7 +1382,7 @@ This alters the x-position of ship2 to be 100. This works because **defstruct** 
 					;a and b set, c and f defaulted 
   (setq x (create-dfs-boa 1 2)) → #(DFS-BOA...) 
   (dfs-boa-b x) → 2 
-  (eq (dfs-boa-c x) ’cc) *→ true* 
+  (eq (dfs-boa-c x) ’cc) → true 
 					;a, b, and c set, and the rest are collected into d 
   (setq x (create-dfs-boa 1 2 3 4 5 6)) → #(DFS-BOA...) 
   (dfs-boa-d x) → (4 5 6) 

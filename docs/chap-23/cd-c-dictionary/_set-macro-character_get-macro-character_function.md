@@ -70,7 +70,7 @@
 ```lisp
 
 (get-macro-character #\\&#123;) → NIL, *false* 
-		     (not (get-macro-character #\;)) *→ false* 
+		     (not (get-macro-character #\;)) → false 
 		     The following is a possible definition for the *single-quote reader macro* in *standard syntax* : 
 		     (defun single-quote-reader (stream char) 
 		       (declare (ignore char)) 

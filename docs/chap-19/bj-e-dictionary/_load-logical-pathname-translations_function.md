@@ -54,11 +54,11 @@ If the *host* is already defined, no attempt to find or load a definition is att
 (load-logical-pathname-translations "HACKS") 
 ▷ ;; Loading SYS:SITE;HACKS.TRANSLATIONS 
 ▷ ;; Loading done. 
-*→ true* 
+→ true 
 (translate-logical-pathname "hacks:weather;barometer.lisp.newest") 
 → #P"HELIUM:[SHARED.HACKS.WEATHER]BAROMETER.LSP;0" 
 (load-logical-pathname-translations "HACKS") 
-*→ false* 
+→ false 
 
 ```
 **Exceptional Situations:** 

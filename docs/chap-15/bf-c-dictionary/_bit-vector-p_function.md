@@ -35,9 +35,9 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 
 (bit-vector-p (make-array 6 
 			  :element-type ’bit 
-			  :fill-pointer t)) *→ true* 
-(bit-vector-p #\*) *→ true* 
-(bit-vector-p (make-array 6)) *→ false* 
+			  :fill-pointer t)) → true 
+(bit-vector-p #\*) → true 
+(bit-vector-p (make-array 6)) → false 
 
 ```
 **See Also:** 

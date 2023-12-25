@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"lambda"}><b>lambda</b></DictionaryLink> *lambda-list* [[ <GlossaryTerm styled={true} term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* *| documentation* ]] <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* *→ function* 
+<DictionaryLink styled={true} term={"lambda"}><b>lambda</b></DictionaryLink> *lambda-list* [[ <GlossaryTerm styled={true} term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* *| documentation* ]] <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* → function 
 
 
 

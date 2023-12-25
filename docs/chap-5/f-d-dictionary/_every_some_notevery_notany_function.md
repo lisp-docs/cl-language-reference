@@ -6,19 +6,19 @@
 
 
 
-<DictionaryLink styled={true} term={"every"}><b>every</b></DictionaryLink> <GlossaryTerm styled={true} term={"predicate"}><i>predicate</i></GlossaryTerm> &amp;rest *sequences*<sup>+</sup> *→ generalized-boolean* 
+<DictionaryLink styled={true} term={"every"}><b>every</b></DictionaryLink> <GlossaryTerm styled={true} term={"predicate"}><i>predicate</i></GlossaryTerm> &amp;rest *sequences*<sup>+</sup> → generalized-boolean 
 
 
 
-<DictionaryLink styled={true} term={"some"}><b>some</b></DictionaryLink> <GlossaryTerm styled={true} term={"predicate"}><i>predicate</i></GlossaryTerm> &amp;rest *sequences*<sup>+</sup> *→ result* 
+<DictionaryLink styled={true} term={"some"}><b>some</b></DictionaryLink> <GlossaryTerm styled={true} term={"predicate"}><i>predicate</i></GlossaryTerm> &amp;rest *sequences*<sup>+</sup> → result 
 
 
 
-<DictionaryLink styled={true} term={"notevery"}><b>notevery</b></DictionaryLink> <GlossaryTerm styled={true} term={"predicate"}><i>predicate</i></GlossaryTerm> &amp;rest *sequences*<sup>+</sup> *→ generalized-boolean* 
+<DictionaryLink styled={true} term={"notevery"}><b>notevery</b></DictionaryLink> <GlossaryTerm styled={true} term={"predicate"}><i>predicate</i></GlossaryTerm> &amp;rest *sequences*<sup>+</sup> → generalized-boolean 
 
 
 
-<DictionaryLink styled={true} term={"notany"}><b>notany</b></DictionaryLink> <GlossaryTerm styled={true} term={"predicate"}><i>predicate</i></GlossaryTerm> &amp;rest *sequences*<sup>+</sup> *→ generalized-boolean* 
+<DictionaryLink styled={true} term={"notany"}><b>notany</b></DictionaryLink> <GlossaryTerm styled={true} term={"predicate"}><i>predicate</i></GlossaryTerm> &amp;rest *sequences*<sup>+</sup> → generalized-boolean 
 
 
 
@@ -81,10 +81,10 @@ Data and Control
 **Examples:**
 ```lisp
 
-(every #’characterp "abc") *→ true* 
-(some #’= ’(1 2 3 4 5) ’(5 4 3 2 1)) *→ true* 
-(notevery #’< ’(1 2 3 4) ’(5 6 7 8) ’(9 10 11 12)) *→ false* 
-(notany #’> ’(1 2 3 4) ’(5 6 7 8) ’(9 10 11 12)) *→ true* 
+(every #’characterp "abc") → true 
+(some #’= ’(1 2 3 4 5) ’(5 4 3 2 1)) → true 
+(notevery #’< ’(1 2 3 4) ’(5 6 7 8) ’(9 10 11 12)) → false 
+(notany #’> ’(1 2 3 4) ’(5 6 7 8) ’(9 10 11 12)) → true 
 
 ```
 **Exceptional Situations:** 

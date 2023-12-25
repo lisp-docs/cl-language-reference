@@ -33,12 +33,12 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(alpha-char-p #\a) *→ true* 
-(alpha-char-p #\5) *→ false* 
-(alpha-char-p #\Newline) *→ false* 
+(alpha-char-p #\a) → true 
+(alpha-char-p #\5) → false 
+(alpha-char-p #\Newline) → false 
 ;; This next example presupposes an implementation 
 ;; in which #\*α* is a defined character. 
-(alpha-char-p #\*α*) *→ implementation-dependent* 
+(alpha-char-p #\*α*) → implementation-dependent 
 
 ```
 **Affected By:** 

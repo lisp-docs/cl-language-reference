@@ -62,7 +62,7 @@ b. the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> retu
 
 
 
-(subtypep (type-of <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>) (class-of <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>)) *→ true*, *true* 
+(subtypep (type-of <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>) (class-of <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>)) → true, *true* 
 
 
 
@@ -89,14 +89,14 @@ b. the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> retu
 (type-of "abc") 
 → STRING 
 <i><sup>or</sup>→</i> (STRING 3) 
-(subtypep (type-of "abc") ’string) *→ true*, *true* 
+(subtypep (type-of "abc") ’string) → true, *true* 
 (type-of (expt 2 40)) 
 → BIGNUM 
 <i><sup>or</sup>→</i> INTEGER 
 <i><sup>or</sup>→</i> (INTEGER 1099511627776 1099511627776) 
 <i><sup>or</sup>→</i> SYSTEM::TWO-WORD-BIGNUM 
 <i><sup>or</sup>→</i> FIXNUM 
-(subtypep (type-of 112312) ’integer) *→ true*, *true* 
+(subtypep (type-of 112312) ’integer) → true, *true* 
 (defvar \*foo\* (make-array 5 :element-type t)) → \*FOO\* 
 (class-name (class-of \*foo\*)) → VECTOR  
 

@@ -43,11 +43,11 @@ If *weight* is greater than or equal to <GlossaryTerm styled={true} term={"radix
 
 (digit-char 0) → #\0 
 (digit-char 10 11) → #\A 
-(digit-char 10 10) *→ false* 
+(digit-char 10 10) → false 
 (digit-char 7) → #\7 
-(digit-char 12) *→ false* 
+(digit-char 12) → false 
 (digit-char 12 16) → #\C ;not #\c 
-(digit-char 6 2) *→ false* 
+(digit-char 6 2) → false 
 (digit-char 1 2) → #\1 
 
 ```

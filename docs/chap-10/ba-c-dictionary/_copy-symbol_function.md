@@ -47,22 +47,22 @@ If *copy-properties* is <GlossaryTerm styled={true} term={"false"}><i>false</i><
 (setq fred-clone-1b (copy-symbol fred nil)) → #:FRED-SMITH 
 (setq fred-clone-2a (copy-symbol fred t)) → #:FRED-SMITH 
 (setq fred-clone-2b (copy-symbol fred t)) → #:FRED-SMITH 
-(eq fred fred-clone-1a) *→ false* 
-(eq fred-clone-1a fred-clone-1b) *→ false* 
-(eq fred-clone-2a fred-clone-2b) *→ false* 
-(eq fred-clone-1a fred-clone-2a) *→ false* 
+(eq fred fred-clone-1a) → false 
+(eq fred-clone-1a fred-clone-1b) → false 
+(eq fred-clone-2a fred-clone-2b) → false 
+(eq fred-clone-1a fred-clone-2a) → false 
 (symbol-value fred) → 3 
-(boundp fred-clone-1a) *→ false* 
+(boundp fred-clone-1a) → false 
 (symbol-value fred-clone-2a) → 3 
 (setf (symbol-value fred-clone-2a) 4) → 4 
 (symbol-value fred) → 3 
 (symbol-value fred-clone-2a) → 4 
 (symbol-value fred-clone-2b) → 3 
-(boundp fred-clone-1a) *→ false* 
+(boundp fred-clone-1a) → false 
 (setf (symbol-function fred) #’(lambda (x) x)) → #<FUNCTION anonymous> 
-(fboundp fred) *→ true* 
-(fboundp fred-clone-1a) *→ false* 
-(fboundp fred-clone-2a) *→ false* 
+(fboundp fred) → true 
+(fboundp fred-clone-1a) → false 
+(fboundp fred-clone-2a) → false 
 
 
 

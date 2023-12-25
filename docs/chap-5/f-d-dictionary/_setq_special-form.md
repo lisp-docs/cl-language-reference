@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"setq"}><b>setq</b></DictionaryLink> *\{↓pair\}*\* *→ result* 
+<DictionaryLink styled={true} term={"setq"}><b>setq</b></DictionaryLink> *\{↓pair\}*\* → result 
 
 
 

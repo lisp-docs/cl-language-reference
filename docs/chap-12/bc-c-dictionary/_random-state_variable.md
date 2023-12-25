@@ -41,7 +41,7 @@ The *current random state*, which is used, for example, by the <GlossaryTerm sty
 **Examples:**
 ```lisp
 
-(random-state-p \*random-state\*) *→ true* 
+(random-state-p \*random-state\*) → true 
 (setq snap-shot (make-random-state)) 
 ;; The series from any given point is random, 
 ;; but if you backtrack to that point, you get the same series. 

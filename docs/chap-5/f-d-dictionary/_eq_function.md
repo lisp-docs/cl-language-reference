@@ -33,42 +33,42 @@
 Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if its <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> are the same, identical <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. **Examples:**
 ```lisp
 
-(eq ’a ’b) *→ false* 
-(eq ’a ’a) *→ true* 
+(eq ’a ’b) → false 
+(eq ’a ’a) → true 
 (eq 3 3) 
-*→ true* 
+→ true 
 <i><sup>or</sup>→ false</i> 
-(eq 3 3.0) *→ false* 
+(eq 3 3.0) → false 
 (eq 3.0 3.0) 
-*→ true* 
+→ true 
 <i><sup>or</sup>→ false</i> 
 
 
 
 **eq** 
 (eq #c(3 -4) #c(3 -4)) 
-*→ true* 
+→ true 
 <i><sup>or</sup>→ false</i> 
-(eq #c(3 -4.0) #c(3 -4)) *→ false* 
-(eq (cons ’a ’b) (cons ’a ’c)) *→ false* 
-(eq (cons ’a ’b) (cons ’a ’b)) *→ false* 
+(eq #c(3 -4.0) #c(3 -4)) → false 
+(eq (cons ’a ’b) (cons ’a ’c)) → false 
+(eq (cons ’a ’b) (cons ’a ’b)) → false 
 (eq ’(a . b) ’(a . b)) 
-*→ true* 
+→ true 
 <i><sup>or</sup>→ false</i> 
-(progn (setq x (cons ’a ’b)) (eq x x)) *→ true* 
-(progn (setq x ’(a . b)) (eq x x)) *→ true* 
+(progn (setq x (cons ’a ’b)) (eq x x)) → true 
+(progn (setq x ’(a . b)) (eq x x)) → true 
 (eq #\A #\A) 
-*→ true* 
+→ true 
 <i><sup>or</sup>→ false</i> 
-(let ((x "Foo")) (eq x x)) *→ true* 
+(let ((x "Foo")) (eq x x)) → true 
 (eq "Foo" "Foo") 
-*→ true* 
+→ true 
 <i><sup>or</sup>→ false</i> 
-(eq "Foo" (copy-seq "Foo")) *→ false* 
-(eq "FOO" "foo") *→ false* 
-(eq "string-seq" (copy-seq "string-seq")) *→ false* 
+(eq "Foo" (copy-seq "Foo")) → false 
+(eq "FOO" "foo") → false 
+(eq "string-seq" (copy-seq "string-seq")) → false 
 (let ((x 5)) (eq x x)) 
-*→ true* 
+→ true 
 <i><sup>or</sup>→ false</i> 
 
 ```

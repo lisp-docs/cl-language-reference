@@ -69,11 +69,11 @@ Hash
 5\. Computation of the *hash-code* must terminate, even if the <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> contains circularities. **Examples:**
 ```lisp
 
-(= (sxhash (list ’list "ab")) (sxhash (list ’list "ab"))) *→ true* 
-(= (sxhash "a") (sxhash (make-string 1 :initial-element #\a))) *→ true* 
+(= (sxhash (list ’list "ab")) (sxhash (list ’list "ab"))) → true 
+(= (sxhash "a") (sxhash (make-string 1 :initial-element #\a))) → true 
 (let ((r (make-random-state))) 
   (= (sxhash r) (sxhash (make-random-state r)))) 
-*→ implementation-dependent* 
+→ implementation-dependent 
 
 ```
 **Affected By:** 

@@ -14,7 +14,7 @@
 
 
 
-*→ universal-time* 
+→ universal-time 
 
 
 

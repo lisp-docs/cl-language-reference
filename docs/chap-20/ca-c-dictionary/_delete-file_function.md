@@ -65,11 +65,11 @@ The consequences are undefined if *filespec* has a <GlossaryTerm styled={true} t
 → NIL 
 (setq p (probe-file "delete-me.text")) → #P"R:>fred>delete-me.text.1" 
 (delete-file p) → T 
-(probe-file "delete-me.text") *→ false* 
+(probe-file "delete-me.text") → false 
 (with-open-file (s "delete-me.text" :direction :output :if-exists :error) 
   (delete-file s)) 
 → T 
-(probe-file "delete-me.text") *→ false* 
+(probe-file "delete-me.text") → false 
 
 ```
 **Exceptional Situations:** 

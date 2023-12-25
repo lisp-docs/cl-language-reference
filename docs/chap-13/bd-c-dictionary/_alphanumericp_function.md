@@ -33,10 +33,10 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(alphanumericp #\Z) *→ true* 
-(alphanumericp #\9) *→ true* 
-(alphanumericp #\Newline) *→ false* 
-(alphanumericp #\#) *→ false* 
+(alphanumericp #\Z) → true 
+(alphanumericp #\9) → true 
+(alphanumericp #\Newline) → false 
+(alphanumericp #\#) → false 
 
 ```
 **Affected By:** 

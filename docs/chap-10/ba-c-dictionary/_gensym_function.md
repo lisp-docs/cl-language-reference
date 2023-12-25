@@ -45,7 +45,7 @@ If and only if no explicit suffix is supplied, <DictionaryLink styled={true} ter
 (symbol-package sym1) → NIL 
 (setq sym2 (gensym 100)) → #:G100 
 (setq sym3 (gensym 100)) → #:G100 
-(eq sym2 sym3) *→ false* 
+(eq sym2 sym3) → false 
 (find-symbol "G100") → NIL, NIL 
 
 

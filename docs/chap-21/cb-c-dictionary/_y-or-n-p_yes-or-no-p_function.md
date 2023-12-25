@@ -71,14 +71,14 @@ All input and output are performed using *query I/O*.
 
 (y-or-n-p "(t or nil) given by") 
 ▷ (t or nil) given by (Y or N) Y 
-*→ true* 
+→ true 
 (yes-or-no-p "a ~S message" ’frightening) 
 ▷ a FRIGHTENING message (Yes or No) no 
-*→ false* 
+→ false 
 (y-or-n-p "Produce listing file?") 
 ▷ Produce listing file? 
 ▷ Please respond with Y or N. n 
-*→ false* 
+→ false 
 
 ```
 **Side Effects:** 

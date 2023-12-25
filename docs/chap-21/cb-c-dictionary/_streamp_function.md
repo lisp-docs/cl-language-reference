@@ -37,8 +37,8 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(streamp \*terminal-io\*) *→ true* 
-(streamp 1) *→ false* 
+(streamp \*terminal-io\*) → true 
+(streamp 1) → false 
 
 ```
 **Notes:** 

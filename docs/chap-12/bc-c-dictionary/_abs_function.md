@@ -50,7 +50,7 @@ If <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> is a
 (abs #c(5.0 -5.0)) → 7.071068 
 (abs #c(5 5)) → 7.071068 
 (abs #c(3/5 4/5)) → 1 or approximately 1.0 
-(eql (abs -0.0) -0.0) *→ true* 
+(eql (abs -0.0) -0.0) → true 
 
 ```
 **See Also:** 

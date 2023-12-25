@@ -37,13 +37,13 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 Negative *integer-1* and *integer-2* are treated as if they were represented in two’s-complement binary. **Examples:**
 ```lisp
 
-(logtest 1 7) *→ true* 
-(logtest 1 2) *→ false* 
+(logtest 1 7) → true 
+(logtest 1 2) → false 
 
 
 
-(logtest -2 -1) *→ true* 
-(logtest 0 -1) *→ false* 
+(logtest -2 -1) → true 
+(logtest 0 -1) → false 
 
 ```
 **Exceptional Situations:** 

@@ -49,7 +49,7 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(open-stream-p \*standard-input\*) *→ true* 
+(open-stream-p \*standard-input\*) → true 
 
 ```
 **Affected By:** 

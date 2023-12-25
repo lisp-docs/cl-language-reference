@@ -48,7 +48,7 @@ Causes execution to cease and become dormant for approximately the seconds of re
 (let ((then (get-universal-time)) 
       (now (progn (sleep 10) (get-universal-time)))) 
   (>= (- now then) 10)) 
-*→ true* 
+→ true 
 
 ```
 **Side Effects:** 

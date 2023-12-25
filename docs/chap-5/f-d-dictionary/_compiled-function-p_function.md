@@ -47,18 +47,18 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 
 (defun f (x) x) → F 
 (compiled-function-p #’f) 
-*→ false* 
+→ false 
 <i><sup>or</sup>→ true</i> 
-(compiled-function-p ’f) *→ false* 
+(compiled-function-p ’f) → false 
 (compile ’f) → F 
-(compiled-function-p #’f) *→ true* 
-(compiled-function-p ’f) *→ false* 
+(compiled-function-p #’f) → true 
+(compiled-function-p ’f) → false 
 (compiled-function-p (compile nil ’(lambda (x) x))) 
-*→ true* 
+→ true 
 (compiled-function-p #’(lambda (x) x)) 
-*→ false* 
+→ false 
 <i><sup>or</sup>→ true</i> 
-(compiled-function-p ’(lambda (x) x)) *→ false* 
+(compiled-function-p ’(lambda (x) x)) → false 
 
 ```
 **See Also:** 

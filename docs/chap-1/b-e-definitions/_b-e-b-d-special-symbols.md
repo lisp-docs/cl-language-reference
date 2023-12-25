@@ -102,7 +102,7 @@ indicates that <DictionaryLink styled={true} term={"nil"}><b>nil</b></Dictionary
 
 
 
-(char-name #\a) *→ implementation-dependent* 
+(char-name #\a) → implementation-dependent 
 
 
 

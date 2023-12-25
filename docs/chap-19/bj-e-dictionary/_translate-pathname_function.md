@@ -10,7 +10,7 @@
 
 
 
-*→ translated-pathname* 
+→ translated-pathname 
 
 
 

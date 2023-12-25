@@ -50,9 +50,9 @@ Tests whether *char* is a digit in the specified <GlossaryTerm styled={true} ter
 ```lisp
 
 (digit-char-p #\5) → 5 
-(digit-char-p #\5 2) *→ false* 
-(digit-char-p #\A) *→ false* 
-(digit-char-p #\a) *→ false* 
+(digit-char-p #\5 2) → false 
+(digit-char-p #\A) → false 
+(digit-char-p #\a) → false 
 (digit-char-p #\A 11) → 10 
 (digit-char-p #\a 11) → 10 
 (mapcar #’(lambda (radix) 
