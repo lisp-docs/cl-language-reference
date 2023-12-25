@@ -144,8 +144,8 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Cl Technical Reference",
-                to: "/docs/intro",
+                label: "CL Technical Reference",
+                to: "/",
               },
               {
                 label: "CL Tutorial",
