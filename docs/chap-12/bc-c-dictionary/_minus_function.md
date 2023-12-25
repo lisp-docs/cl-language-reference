@@ -1,4 +1,4 @@
-**-** <ClLinks  term={"function"}><i>Function</i></ClLinks>
+**-** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm>
 
 **Syntax:**
 
@@ -8,19 +8,19 @@
 
 **Arguments and Values:**
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>, *minuend*, *subtrahend*—a <ClLinks  term={"number"}><i>number</i></ClLinks> .
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>, *minuend*, *subtrahend*—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> .
 
-*negation*, *difference*—a <ClLinks  term={"number"}><i>number</i></ClLinks> .
+*negation*, *difference*—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> .
 
 **Description:**
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"-"}><b>-</b></ClLinks> performs arithmetic subtraction and negation.
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <ClLinks  term={"-"}><b>-</b></ClLinks> performs arithmetic subtraction and negation.
 
-If only one <ClLinks  term={"number"}><i>number</i></ClLinks> is supplied, the negation of that <ClLinks  term={"number"}><i>number</i></ClLinks> is returned.
+If only one <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is supplied, the negation of that <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is returned.
 
-If more than one <ClLinks  term={"argument"}><i>argument</i></ClLinks> is given, it subtracts all of the *subtrahends* from the *minuend* and returns the result.
+If more than one <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> is given, it subtracts all of the *subtrahends* from the *minuend* and returns the result.
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"-"}><b>-</b></ClLinks> performs necessary type conversions.
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <ClLinks  term={"-"}><b>-</b></ClLinks> performs necessary type conversions.
 
 **Examples:**
 
@@ -35,7 +35,7 @@ The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"-"}><
 
 **Exceptional Situations:**
 
-Might signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if some <ClLinks  term={"argument"}><i>argument</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
+Might signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if some <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> is not a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
 
 **See Also:**
 

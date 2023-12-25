@@ -2,7 +2,7 @@
 
 
 
-The figures on the next twelve pages contain a complete enumeration of the 978 *external symbols* in the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+The figures on the next twelve pages contain a complete enumeration of the 978 *external symbols* in the COMMON-LISP <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 

@@ -1,5 +1,5 @@
 
-<ClLinks  term={"ratio"}><i>Ratios</i></ClLinks> can be written as an optional <ClLinks  term={"sign"}><i>sign</i></ClLinks> followed by two non-empty sequences of <ClLinks  term={"digit"}><i>digits</i></ClLinks> separated by a <ClLinks  term={"slash"}><i>slash</i></ClLinks>; see Figure 2–9. The second sequence may not consist entirely of zeros. Examples of <ClLinks  term={"ratio"}><i>ratios</i></ClLinks> are in Figure 2–13.  
+<GlossaryTerm  term={"ratio"}><i>Ratios</i></GlossaryTerm> can be written as an optional <GlossaryTerm  term={"sign"}><i>sign</i></GlossaryTerm> followed by two non-empty sequences of <GlossaryTerm  term={"digit"}><i>digits</i></GlossaryTerm> separated by a <GlossaryTerm  term={"slash"}><i>slash</i></GlossaryTerm>; see Figure 2–9. The second sequence may not consist entirely of zeros. Examples of <GlossaryTerm  term={"ratio"}><i>ratios</i></GlossaryTerm> are in Figure 2–13.  
 
 |<p>2/3 ;This is in canonical form </p>
 <p>4/6 ;A non-canonical form for 2/3 </p>
@@ -15,4 +15,4 @@
 
 **Figure 2–13. Examples of Ratios**
 
-For information on how <ClLinks  term={"ratio"}><i>ratios</i></ClLinks> are printed, see Section 22.1.3.1.2 (Printing Ratios).
+For information on how <GlossaryTerm  term={"ratio"}><i>ratios</i></GlossaryTerm> are printed, see Section 22.1.3.1.2 (Printing Ratios).

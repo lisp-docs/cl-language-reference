@@ -34,7 +34,7 @@ a non-negative *integer* , or <ClLinks  term={"nil"}><b>nil</b></ClLinks>.
 
 
 
-When the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"print-lines"}><b>\*print-lines\*</b></ClLinks> is other than <ClLinks  term={"nil"}><b>nil</b></ClLinks>, it is a limit on the number of output lines produced when something is pretty printed. If an attempt is made to go beyond that many lines, “..” is printed at the end of the last line followed by all of the suffixes (closing delimiters) that are pending to be printed. 
+When the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <ClLinks  term={"print-lines"}><b>\*print-lines\*</b></ClLinks> is other than <ClLinks  term={"nil"}><b>nil</b></ClLinks>, it is a limit on the number of output lines produced when something is pretty printed. If an attempt is made to go beyond that many lines, “..” is printed at the end of the last line followed by all of the suffixes (closing delimiters) that are pending to be printed. 
 
 
 
@@ -55,7 +55,7 @@ The “..” notation is intentionally different than the “...” notation use
 
 
 
-This notation is used to increase the likelihood that the *Lisp reader* will signal an error if an attempt is later made to read the abbreviated output. Note however that if the truncation occurs in a <ClLinks  term={"string"}><i>string</i></ClLinks>, as in "This string has been trunc..", the problem situation cannot be detected later and no such error will be signaled. 
+This notation is used to increase the likelihood that the *Lisp reader* will signal an error if an attempt is later made to read the abbreviated output. Note however that if the truncation occurs in a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>, as in "This string has been trunc..", the problem situation cannot be detected later and no such error will be signaled. 
 
 
 

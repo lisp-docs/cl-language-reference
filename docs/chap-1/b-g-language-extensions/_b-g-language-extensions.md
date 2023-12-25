@@ -2,7 +2,7 @@
 
 
 
-A language extension is any documented <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> behavior of a *defined name* in this standard that varies from the behavior described in this standard, or a documented consequence of a situation that the standard specifies as undefined, unspecified, or extendable by the implementation. For example, if this standard says that “the results are unspecified,” an extension would be to specify the results. 
+A language extension is any documented <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm> behavior of a *defined name* in this standard that varies from the behavior described in this standard, or a documented consequence of a situation that the standard specifies as undefined, unspecified, or extendable by the implementation. For example, if this standard says that “the results are unspecified,” an extension would be to specify the results. 
 
 
 
@@ -34,11 +34,11 @@ An implementation must return exactly the number of return values specified by t
 
 
 
-No output can be produced by a function other than that specified in the standard or due to the signaling of <ClLinks  term={"condition"}><i>conditions</i></ClLinks> detected by the function. 
+No output can be produced by a function other than that specified in the standard or due to the signaling of <GlossaryTerm  term={"condition"}><i>conditions</i></GlossaryTerm> detected by the function. 
 
 
 
-Unsolicited output, such as garbage collection notifications and autoload heralds, should not go directly to the <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is the value of a <ClLinks  term={"stream"}><i>stream</i></ClLinks> variable defined in this standard, but can go indirectly to *terminal I/O* by using a *synonym stream* to <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
+Unsolicited output, such as garbage collection notifications and autoload heralds, should not go directly to the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> that is the value of a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> variable defined in this standard, but can go indirectly to *terminal I/O* by using a *synonym stream* to <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
 
 
 
@@ -50,7 +50,7 @@ Progress reports from such functions as <ClLinks  term={"load"}><b>load</b></ClL
 
 
 
-<ClLinks  term={"macro"}><i>Macros</i></ClLinks> and *special operators* defined in this standard must not be <ClLinks  term={"function"}><i>functions</i></ClLinks>.  
+<GlossaryTerm  term={"macro"}><i>Macros</i></GlossaryTerm> and *special operators* defined in this standard must not be <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm>.  
 
 
 

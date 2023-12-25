@@ -4,11 +4,11 @@
 
 **Constant Value:**
 
-The identity and nature of the <ClLinks  term={"value"}><i>values</i></ClLinks> of each of these <ClLinks  term={"variable"}><i>variables</i></ClLinks> is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, except that it must be <ClLinks  term={"distinct"}><i>distinct</i></ClLinks> from each of the <ClLinks  term={"value"}><i>values</i></ClLinks> of the others, and it must be a valid first <ClLinks  term={"argument"}><i>argument</i></ClLinks> to the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"boole"}><b>boole</b></ClLinks>.
+The identity and nature of the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> of each of these <GlossaryTerm  term={"variable"}><i>variables</i></GlossaryTerm> is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>, except that it must be <GlossaryTerm  term={"distinct"}><i>distinct</i></GlossaryTerm> from each of the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> of the others, and it must be a valid first <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> to the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <ClLinks  term={"boole"}><b>boole</b></ClLinks>.
 
 **Description:**
 
-Each of these <ClLinks  term={"constant"}><i>constants</i></ClLinks> has a <ClLinks  term={"value"}><i>value</i></ClLinks> which is one of the sixteen possible *bit-wise logical operation specifiers*.
+Each of these <GlossaryTerm  term={"constant"}><i>constants</i></GlossaryTerm> has a <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> which is one of the sixteen possible *bit-wise logical operation specifiers*.
 
 **Examples:**
 

@@ -1,4 +1,4 @@
-**sinh, cosh, tanh, asinh, acosh, atanh** <ClLinks  term={"function"}><i>Function</i></ClLinks>
+**sinh, cosh, tanh, asinh, acosh, atanh** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm>
 
 **Syntax:**
 
@@ -16,9 +16,9 @@
 
 **Arguments and Values:**
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> .
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> .
 
-*result*—a <ClLinks  term={"number"}><i>number</i></ClLinks> .
+*result*—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> .
 
 **Description:**
 
@@ -77,7 +77,7 @@ The branch cut for the inverse hyperbolic tangent function is in two pieces: one
 
 **Exceptional Situations:**
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is not a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
 
 **See Also:**
 
@@ -85,6 +85,6 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 **Notes:**
 
-The result of <ClLinks  term={"acosh"}><b>acosh</b></ClLinks> may be a <ClLinks  term={"complex"}><i>complex</i></ClLinks> even if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ; this occurs when <ClLinks  term={"number"}><i>number</i></ClLinks> is less than one. Also, the result of <ClLinks  term={"atanh"}><b>atanh</b></ClLinks> may be a <ClLinks  term={"complex"}><i>complex</i></ClLinks> even if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ; this occurs when the absolute value of <ClLinks  term={"number"}><i>number</i></ClLinks> is greater than one.
+The result of <ClLinks  term={"acosh"}><b>acosh</b></ClLinks> may be a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> even if <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is not a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> ; this occurs when <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is less than one. Also, the result of <ClLinks  term={"atanh"}><b>atanh</b></ClLinks> may be a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> even if <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is not a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> ; this occurs when the absolute value of <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is greater than one.
 
 The branch cut formulae are mathematically correct, assuming completely accurate computation. Implementors should consult a good text on numerical analysis. The formulae given above are not necessarily the simplest ones for real-valued computations; they are chosen to define the branch cuts in desirable ways for the complex case.
