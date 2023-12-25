@@ -3,11 +3,11 @@
 
 
 
-A <ClLinks styled={true} term={"feature"}><i>feature</i></ClLinks> is an aspect or attribute of Common Lisp, of the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>, or of the <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>. A <ClLinks styled={true} term={"feature"}><i>feature</i></ClLinks> is identified by a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+A <GlossaryTerm styled={true} term={"feature"}><i>feature</i></GlossaryTerm> is an aspect or attribute of Common Lisp, of the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>, or of the <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm>. A <GlossaryTerm styled={true} term={"feature"}><i>feature</i></GlossaryTerm> is identified by a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-A <ClLinks styled={true} term={"feature"}><i>feature</i></ClLinks> is said to be <ClLinks styled={true} term={"present"}><i>present</i></ClLinks> in a *Lisp image* if and only if the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> naming it is an <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> held by the <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> <ClLinks styled={true} term={"features"}><b>\*features\*</b></ClLinks>, which is called the *features list*. 
+A <GlossaryTerm styled={true} term={"feature"}><i>feature</i></GlossaryTerm> is said to be <GlossaryTerm styled={true} term={"present"}><i>present</i></GlossaryTerm> in a *Lisp image* if and only if the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> naming it is an <GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> held by the <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm> <DictionaryLink styled={true} term={"features"}><b>\*features\*</b></DictionaryLink>, which is called the *features list*. 
 
 
 

@@ -1,4 +1,4 @@
-**complement** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**complement** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"complement"}><b>complement</b></ClLinks> *function → complement-function* 
+<DictionaryLink styled={true} term={"complement"}><b>complement</b></DictionaryLink> *function → complement-function* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 
-*complement-function*—a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+*complement-function*—a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 
@@ -26,22 +26,24 @@
 
 
 
-Returns a <ClLinks  term={"function"}><i>function</i></ClLinks> that takes the same <ClLinks  term={"argument"}><i>arguments</i></ClLinks> as <ClLinks  term={"function"}><i>function</i></ClLinks>, and has the same side-effect behavior as <ClLinks  term={"function"}><i>function</i></ClLinks>, but returns only a single value: a *generalized boolean* with the opposite truth value of that which would be returned as the *primary value* of <ClLinks  term={"function"}><i>function</i></ClLinks>. That is, when the <ClLinks  term={"function"}><i>function</i></ClLinks> would have returned <ClLinks  term={"true"}><i>true</i></ClLinks> as its *primary value* the *complement-function* returns <ClLinks  term={"false"}><i>false</i></ClLinks>, and when the <ClLinks  term={"function"}><i>function</i></ClLinks> would have returned <ClLinks  term={"false"}><i>false</i></ClLinks> as its *primary value* the *complement-function* returns <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+Returns a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> that takes the same <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> as <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>, and has the same side-effect behavior as <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>, but returns only a single value: a *generalized boolean* with the opposite truth value of that which would be returned as the *primary value* of <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>. That is, when the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> would have returned <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> as its *primary value* the *complement-function* returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>, and when the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> would have returned <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> as its *primary value* the *complement-function* returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>. 
 
 
 
 **Examples:**
 ```lisp
-(funcall (complement #’zerop) 1) → true 
-(funcall (complement #’characterp) #\A) → false 
-(funcall (complement #’member) ’a ’(a b c)) → false 
-(funcall (complement #’member) ’d ’(a b c)) → true 
+
+(funcall (complement #’zerop) 1) *→ true* 
+(funcall (complement #’characterp) #\A) *→ false* 
+(funcall (complement #’member) ’a ’(a b c)) *→ false* 
+(funcall (complement #’member) ’d ’(a b c)) *→ true* 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"not"}><b>not</b></ClLinks> 
+<DictionaryLink styled={true} term={"not"}><b>not</b></DictionaryLink> 
 
 
 
@@ -57,7 +59,7 @@ In Common Lisp, functions with names like “*xxx*-if-not” are related to func
 
 
 
-(*xxx*-if-not *f* . <ClLinks  term={"argument"}><i>arguments</i></ClLinks>) *≡* (*xxx*-if (complement *f*) . <ClLinks  term={"argument"}><i>arguments</i></ClLinks>) 
+(*xxx*-if-not *f* . <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm>) *≡* (*xxx*-if (complement *f*) . <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm>) 
 
 
 
@@ -69,7 +71,7 @@ For example,
 
 
 
-(find-if (complement #’zerop) ’(0 0 3)) → 3 
+(find-if (complement #’zerop) ’(0 0 3)) *→* 3 
 
 
 
@@ -85,7 +87,7 @@ Data and Control
 
 
 
-Note that since the “*xxx*-if-not” <ClLinks  term={"function"}><i>functions</i></ClLinks> and the :test-not arguments have been deprecated, uses of “*xxx*-if” <ClLinks  term={"function"}><i>functions</i></ClLinks> or :test arguments with <ClLinks  term={"complement"}><b>complement</b></ClLinks> are preferred. 
+Note that since the “*xxx*-if-not” <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> and the :test-not arguments have been deprecated, uses of “*xxx*-if” <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> or :test arguments with <DictionaryLink styled={true} term={"complement"}><b>complement</b></DictionaryLink> are preferred. 
 
 
 

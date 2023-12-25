@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"string"}><b>string</b></ClLinks>, <ClLinks  term={"vector"}><b>vector</b></ClLinks>, <ClLinks  term={"array"}><b>array</b></ClLinks>, <ClLinks  term={"sequence"}><b>sequence</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"string"}><b>string</b></DictionaryLink>, <DictionaryLink styled={true} term={"vector"}><b>vector</b></DictionaryLink>, <DictionaryLink styled={true} term={"array"}><b>array</b></DictionaryLink>, <DictionaryLink styled={true} term={"sequence"}><b>sequence</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A <ClLinks  term={"string"}><i>string</i></ClLinks> is a *specialized vector* whose <ClLinks  term={"element"}><i>elements</i></ClLinks> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks> or a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks>. When used as a *type specifier* for object creation, <ClLinks  term={"string"}><b>string</b></ClLinks> means (vector character). 
+A <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> is a *specialized vector* whose <GlossaryTerm styled={true} term={"element"}><i>elements</i></GlossaryTerm> are of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink> or a <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink>. When used as a *type specifier* for object creation, <DictionaryLink styled={true} term={"string"}><b>string</b></DictionaryLink> means (vector character). 
 
 
 
@@ -38,7 +38,7 @@ Abbreviating.
 
 
 
-*size*—a non-negative <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>, or the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*size*—a non-negative <GlossaryTerm styled={true} term={"fixnum"}><i>fixnum</i></GlossaryTerm>, or the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> **\***. 
 
 
 
@@ -46,7 +46,7 @@ Abbreviating.
 
 
 
-This denotes the union of all <ClLinks  term={"type"}><i>types</i></ClLinks> (array *c* (*size*)) for all *subtypes c* of <ClLinks  term={"character"}><b>character</b></ClLinks>; that is, the set of <ClLinks  term={"string"}><i>strings</i></ClLinks> of size *size*. 
+This denotes the union of all <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> (array *c* (*size*)) for all *subtypes c* of <DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink>; that is, the set of <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm> of size *size*. 
 
 
 

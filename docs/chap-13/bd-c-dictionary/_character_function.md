@@ -1,4 +1,4 @@
-**character** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**character** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"character"}><b>character</b></ClLinks> *character → denoted-character* 
+<DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink> *character → denoted-character* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>—a *character designator* . 
+<GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm>—a *character designator* . 
 
 
 
-*denoted-character*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
+*denoted-character*—a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> denoted by the *character designator* . 
+Returns the <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> denoted by the *character designator* . 
 
 
 
@@ -44,18 +44,20 @@ Returns the <ClLinks styled={true} term={"character"}><i>character</i></ClLinks>
 
 **Examples:**
 ```lisp
-(character #\a) → #\a 
-(character "a") → #\a 
-(character ’a) → #\A 
-(character ’\a) → #\a 
+
+(character #\a) *→* #\a 
+(character "a") *→* #\a 
+(character ’a) *→* #\A 
+(character ’\a) *→* #\a 
 (character 65.) is an error. 
 (character ’apple) is an error. 
+
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is not a *character designator* . 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is not a *character designator* . 
 
 
 
@@ -63,7 +65,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"coerce"}><b>coerce</b></ClLinks> 
+<DictionaryLink styled={true} term={"coerce"}><b>coerce</b></DictionaryLink> 
 
 
 
@@ -71,7 +73,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-(character <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) *≡* (coerce <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’character) 
+(character <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>) *≡* (coerce <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> ’character) 
 
 
 

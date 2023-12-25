@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> <ClLinks  term={"instance"}><i>instance</i></ClLinks> &amp;rest *initargs* &amp;key &amp;allow-other-keys → instance 
+<DictionaryLink styled={true} term={"reinitialize-instance"}><b>reinitialize-instance</b></DictionaryLink> <GlossaryTerm styled={true} term={"instance"}><i>instance</i></GlossaryTerm> &amp;rest *initargs* &amp;key &amp;allow-other-keys *→ instance* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> (<ClLinks  term={"instance"}><i>instance</i></ClLinks> <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>) &amp;rest *initargs* 
+<DictionaryLink styled={true} term={"reinitialize-instance"}><b>reinitialize-instance</b></DictionaryLink> (<GlossaryTerm styled={true} term={"instance"}><i>instance</i></GlossaryTerm> <DictionaryLink styled={true} term={"standard-object"}><b>standard-object</b></DictionaryLink>) &amp;rest *initargs* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"instance"}><i>instance</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"instance"}><i>instance</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-The *generic function* <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> can be used to change the values of *local slots* of an <ClLinks  term={"instance"}><i>instance</i></ClLinks> according to *initargs*. This *generic function* can be called by users. 
+The *generic function* <DictionaryLink styled={true} term={"reinitialize-instance"}><b>reinitialize-instance</b></DictionaryLink> can be used to change the values of *local slots* of an <GlossaryTerm styled={true} term={"instance"}><i>instance</i></GlossaryTerm> according to *initargs*. This *generic function* can be called by users. 
 
 
 
-The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> for <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> checks the validity of *initargs* and signals an error if an *initarg* is supplied that is not declared as valid. The <ClLinks  term={"method"}><i>method</i></ClLinks> then calls the generic function <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> with the following arguments: the <ClLinks  term={"instance"}><i>instance</i></ClLinks>, <ClLinks  term={"nil"}><b>nil</b></ClLinks> (which means no <ClLinks  term={"slot"}><i>slots</i></ClLinks> should be initialized according to their initforms), and the *initargs* it received. 
+The system-supplied primary <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> for <DictionaryLink styled={true} term={"reinitialize-instance"}><b>reinitialize-instance</b></DictionaryLink> checks the validity of *initargs* and signals an error if an *initarg* is supplied that is not declared as valid. The <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> then calls the generic function <DictionaryLink styled={true} term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink> with the following arguments: the <GlossaryTerm styled={true} term={"instance"}><i>instance</i></GlossaryTerm>, <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> (which means no <GlossaryTerm styled={true} term={"slot"}><i>slots</i></GlossaryTerm> should be initialized according to their initforms), and the *initargs* it received. 
 
 
 
@@ -46,7 +46,7 @@ The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> fo
 
 
 
-The *generic function* <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> changes the values of *local slots*. 
+The *generic function* <DictionaryLink styled={true} term={"reinitialize-instance"}><b>reinitialize-instance</b></DictionaryLink> changes the values of *local slots*. 
 
 
 
@@ -66,7 +66,7 @@ The *generic function* <ClLinks  term={"reinitialize-instance"}><b>reinitialize-
 
 
 
-The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> for <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> signals an error if an *initarg* is supplied that is not declared as valid. 
+The system-supplied primary <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> for <DictionaryLink styled={true} term={"reinitialize-instance"}><b>reinitialize-instance</b></DictionaryLink> signals an error if an *initarg* is supplied that is not declared as valid. 
 
 
 
@@ -74,11 +74,11 @@ The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> fo
 
 
 
-<ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks>, <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>, **update-instance-for-redefined-class**, 
+<DictionaryLink styled={true} term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink>, <DictionaryLink styled={true} term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink>, **update-instance-for-redefined-class**, 
 
 
 
-**update-instance-for-different-class**, <ClLinks  term={"slot-boundp"}><b>slot-boundp</b></ClLinks>, <ClLinks  term={"slot-makunbound"}><b>slot-makunbound</b></ClLinks>, Section 7.3 (Reinitial izing an Instance), Section 7.1.4 (Rules for Initialization Arguments), Section 7.1.2 (Declaring the Validity of Initialization Arguments) 
+**update-instance-for-different-class**, <DictionaryLink styled={true} term={"slot-boundp"}><b>slot-boundp</b></DictionaryLink>, <DictionaryLink styled={true} term={"slot-makunbound"}><b>slot-makunbound</b></DictionaryLink>, Section 7.3 (Reinitial izing an Instance), Section 7.1.4 (Rules for Initialization Arguments), Section 7.1.2 (Declaring the Validity of Initialization Arguments) 
 
 
 
@@ -86,7 +86,7 @@ The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> fo
 
 
 
-*Initargs* are declared as valid by using the :initarg option to <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, or by defining <ClLinks  term={"method"}><i>methods</i></ClLinks> for <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. The keyword name of each keyword parameter specifier in the *lambda list* of any <ClLinks  term={"method"}><i>method</i></ClLinks> defined on <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> is declared as a valid initialization argument name for all *classes* for which that <ClLinks  term={"method"}><i>method</i></ClLinks> is applicable. 
+*Initargs* are declared as valid by using the :initarg option to <DictionaryLink styled={true} term={"defclass"}><b>defclass</b></DictionaryLink>, or by defining <GlossaryTerm styled={true} term={"method"}><i>methods</i></GlossaryTerm> for <DictionaryLink styled={true} term={"reinitialize-instance"}><b>reinitialize-instance</b></DictionaryLink> or <DictionaryLink styled={true} term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink>. The keyword name of each keyword parameter specifier in the *lambda list* of any <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> defined on <DictionaryLink styled={true} term={"reinitialize-instance"}><b>reinitialize-instance</b></DictionaryLink> or <DictionaryLink styled={true} term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink> is declared as a valid initialization argument name for all *classes* for which that <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> is applicable. 
 
 
 

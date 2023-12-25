@@ -1,4 +1,4 @@
-**file-error-pathname** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**file-error-pathname** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"file-error-pathname"}><b>file-error-pathname</b></ClLinks> *condition → pathspec* 
+<DictionaryLink styled={true} term={"file-error-pathname"}><b>file-error-pathname</b></DictionaryLink> *condition → pathspec* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"file-error"}><b>file-error</b></DictionaryLink>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the “offending pathname” of a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks>. 
+Returns the “offending pathname” of a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"file-error"}><b>file-error</b></DictionaryLink>. 
 
 
 
@@ -38,7 +38,7 @@ Returns the “offending pathname” of a <ClLinks  term={"condition"}><i>condit
 
 
 
-<ClLinks  term={"file-error"}><b>file-error</b></ClLinks>, Chapter 9 (Conditions) 
+<DictionaryLink styled={true} term={"file-error"}><b>file-error</b></DictionaryLink>, Chapter 9 (Conditions) 
 
 
 

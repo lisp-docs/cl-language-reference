@@ -6,15 +6,15 @@
 
 
 
-When the *token x* is a single <ClLinks  term={"character"}><i>character</i></ClLinks> long, this parses as the literal *character char*. *Uppercase* and <ClLinks  term={"lowercase"}><i>lowercase</i></ClLinks> letters are distinguished after #\; #\A and #\a denote different *character objects*. Any single <ClLinks  term={"character"}><i>character</i></ClLinks> works after #\, even those that are normally special to <ClLinks  term={"read"}><b>read</b></ClLinks>, such as <ClLinks  term={"left-parenthesis"}><i>left-parenthesis</i></ClLinks> and <ClLinks  term={"right-parenthesis"}><i>right-parenthesis</i></ClLinks>. 
+When the *token x* is a single <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> long, this parses as the literal *character char*. *Uppercase* and <GlossaryTerm styled={true} term={"lowercase"}><i>lowercase</i></GlossaryTerm> letters are distinguished after #\; #\A and #\a denote different *character objects*. Any single <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> works after #\, even those that are normally special to <DictionaryLink styled={true} term={"read"}><b>read</b></DictionaryLink>, such as <GlossaryTerm styled={true} term={"left-parenthesis"}><i>left-parenthesis</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"right-parenthesis"}><i>right-parenthesis</i></GlossaryTerm>. 
 
 
 
-In the single <ClLinks  term={"character"}><i>character</i></ClLinks> case, the *x* must be followed by a non-constituent <ClLinks  term={"character"}><i>character</i></ClLinks> . After #\ is read, the reader backs up over the <ClLinks  term={"slash"}><i>slash</i></ClLinks> and then reads a <ClLinks  term={"token"}><i>token</i></ClLinks>, treating the initial <ClLinks  term={"slash"}><i>slash</i></ClLinks> as a *single escape character* (whether it really is or not in the *current readtable*). 
+In the single <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> case, the *x* must be followed by a non-constituent <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . After #\ is read, the reader backs up over the <GlossaryTerm styled={true} term={"slash"}><i>slash</i></GlossaryTerm> and then reads a <GlossaryTerm styled={true} term={"token"}><i>token</i></GlossaryTerm>, treating the initial <GlossaryTerm styled={true} term={"slash"}><i>slash</i></GlossaryTerm> as a *single escape character* (whether it really is or not in the *current readtable*). 
 
 
 
-When the *token x* is more than one <ClLinks  term={"character"}><i>character</i></ClLinks> long, the *x* must have the syntax of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> with no embedded *package markers*. In this case, the *sharpsign backslash* notation parses as the <ClLinks  term={"character"}><i>character</i></ClLinks> whose <ClLinks  term={"name"}><i>name</i></ClLinks> is (string-upcase *x*); see Section 13.1.7 (Character Names). 
+When the *token x* is more than one <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> long, the *x* must have the syntax of a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> with no embedded *package markers*. In this case, the *sharpsign backslash* notation parses as the <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> whose <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is (string-upcase *x*); see Section 13.1.7 (Character Names). 
 
 
 

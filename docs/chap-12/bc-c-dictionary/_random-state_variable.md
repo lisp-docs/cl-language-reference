@@ -1,4 +1,4 @@
-*∗<ClLinks  term={"*random-state*"}><b>*random-state*</b></ClLinks>∗ Variable* 
+*∗<DictionaryLink styled={true} term={"*random-state*"}><b>*random-state*</b></DictionaryLink>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a *random state*.
 
 
 
-<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@ a *random state*.
 
 
 
-The *current random state*, which is used, for example, by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"random"}><b>random</b></ClLinks> when a *random state* is not explicitly supplied. 
+The *current random state*, which is used, for example, by the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"random"}><b>random</b></DictionaryLink> when a *random state* is not explicitly supplied. 
 
 
 
@@ -40,7 +40,8 @@ The *current random state*, which is used, for example, by the <ClLinks  term={"
 
 **Examples:**
 ```lisp
-(random-state-p \*random-state\*) → true 
+
+(random-state-p \*random-state\*) *→ true* 
 (setq snap-shot (make-random-state)) 
 ;; The series from any given point is random, 
 ;; but if you backtrack to that point, you get the same series. 
@@ -50,20 +51,21 @@ The *current random state*, which is used, for example, by the <ClLinks  term={"
       (loop for i from 1 to 10 collect (random)) 
       (let ((\*random-state\* snap-shot)) 
 	(loop for i from 1 to 10 collect (random)))) 
-→ ((19 16 44 19 96 15 76 96 13 61) 
-   (19 16 44 19 96 15 76 96 13 61) 
-   (16 67 0 43 70 79 58 5 63 50) 
-   (16 67 0 43 70 79 58 5 63 50)) 
+*→* ((19 16 44 19 96 15 76 96 13 61) 
+     (19 16 44 19 96 15 76 96 13 61) 
+     (16 67 0 43 70 79 58 5 63 50) 
+     (16 67 0 43 70 79 58 5 63 50)) 
+
 ```
 **Affected By:** 
 
 
 
-The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"random"}><b>random</b></ClLinks>. 
+<DictionaryLink styled={true} term={"random"}><b>random</b></DictionaryLink>. 
 
 
 
@@ -71,7 +73,7 @@ The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>.
 
 
 
-<ClLinks  term={"make-random-state"}><b>make-random-state</b></ClLinks>, <ClLinks  term={"random"}><b>random</b></ClLinks>, <ClLinks  term={"random-state"}><b>random-state</b></ClLinks> 
+<DictionaryLink styled={true} term={"make-random-state"}><b>make-random-state</b></DictionaryLink>, <DictionaryLink styled={true} term={"random"}><b>random</b></DictionaryLink>, <DictionaryLink styled={true} term={"random-state"}><b>random-state</b></DictionaryLink> 
 
 
 
@@ -79,7 +81,7 @@ The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>.
 
 
 
-<ClLinks  term={"binding"}><i>Binding</i></ClLinks> <ClLinks  term={"random-state"}><b>\*random-state\*</b></ClLinks> to a different *random state object* correctly saves and restores the old *random state object*. 
+<GlossaryTerm styled={true} term={"binding"}><i>Binding</i></GlossaryTerm> <DictionaryLink styled={true} term={"random-state"}><b>\*random-state\*</b></DictionaryLink> to a different *random state object* correctly saves and restores the old *random state object*. 
 
 
 

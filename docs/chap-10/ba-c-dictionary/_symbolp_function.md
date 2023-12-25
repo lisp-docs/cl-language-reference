@@ -1,4 +1,4 @@
-**symbolp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**symbolp** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"symbolp"}><b>symbolp</b></ClLinks> *object → generalized-boolean* 
+<DictionaryLink styled={true} term={"symbolp"}><b>symbolp</b></DictionaryLink> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -26,24 +26,26 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"symbol"}><b>symbol</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"symbol"}><b>symbol</b></DictionaryLink>; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
 **Examples:**
 ```lisp
-(symbolp ’elephant) → true 
-(symbolp 12) → false 
-(symbolp nil) → true 
-(symbolp ’()) → true 
-(symbolp :test) → true 
-(symbolp "hello") → false 
+
+(symbolp ’elephant) *→ true* 
+(symbolp 12) *→ false* 
+(symbolp nil) *→ true* 
+(symbolp ’()) *→ true* 
+(symbolp :test) *→ true* 
+(symbolp "hello") *→ false* 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"keywordp"}><b>keywordp</b></ClLinks>, <ClLinks  term={"symbol"}><b>symbol</b></ClLinks>, <ClLinks  term={"typep"}><b>typep</b></ClLinks> 
+<DictionaryLink styled={true} term={"keywordp"}><b>keywordp</b></DictionaryLink>, <DictionaryLink styled={true} term={"symbol"}><b>symbol</b></DictionaryLink>, <DictionaryLink styled={true} term={"typep"}><b>typep</b></DictionaryLink> 
 
 
 
@@ -63,7 +65,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-(symbolp <ClLinks  term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks  term={"object"}><i>object</i></ClLinks> ’symbol) 
+(symbolp <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>) *≡* (typep <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> ’symbol) 
 
 
 

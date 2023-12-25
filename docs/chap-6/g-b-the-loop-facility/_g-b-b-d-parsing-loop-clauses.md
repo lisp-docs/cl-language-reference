@@ -2,7 +2,7 @@
 
 
 
-The syntactic parts of an extended <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> are called clauses; the rules for parsing are determined by that clause’s keyword. The following example shows a <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> with six clauses: 
+The syntactic parts of an extended <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> are called clauses; the rules for parsing are determined by that clause’s keyword. The following example shows a <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> with six clauses: 
 
 
 
@@ -34,7 +34,7 @@ finally (format t "About to exit!")) ; sixth clause
 
 
 
-Each *loop keyword* introduces either a compound loop clause or a simple loop clause that can consist of a *loop keyword* followed by a single <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. The number of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a clause is determined by the *loop keyword* that begins the clause and by the auxiliary keywords in the clause. The keywords do, doing, initially, and finally are the only loop keywords that can take any number of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> and group them as an *implicit progn*. 
+Each *loop keyword* introduces either a compound loop clause or a simple loop clause that can consist of a *loop keyword* followed by a single <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. The number of <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> in a clause is determined by the *loop keyword* that begins the clause and by the auxiliary keywords in the clause. The keywords do, doing, initially, and finally are the only loop keywords that can take any number of <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> and group them as an *implicit progn*. 
 
 
 
@@ -42,7 +42,7 @@ Loop clauses can contain auxiliary keywords, which are sometimes called preposit
 
 
 
-For detailed information about <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> syntax, see the <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>. 
+For detailed information about <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> syntax, see the <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink>. 
 
 
 

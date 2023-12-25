@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"method-qualifiers"}><b>method-qualifiers</b></ClLinks> *method → qualifiers* 
+<DictionaryLink styled={true} term={"method-qualifiers"}><b>method-qualifiers</b></DictionaryLink> *method → qualifiers* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"method-qualifiers"}><b>method-qualifiers</b></ClLinks> (<ClLinks  term={"method"}><i>method</i></ClLinks> <ClLinks  term={"standard-method"}><b>standard-method</b></ClLinks>) 
+<DictionaryLink styled={true} term={"method-qualifiers"}><b>method-qualifiers</b></DictionaryLink> (<GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> <DictionaryLink styled={true} term={"standard-method"}><b>standard-method</b></DictionaryLink>) 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<ClLinks  term={"method"}><i>method</i></ClLinks>—a <ClLinks  term={"method"}><i>method</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>—a *proper list*. 
+<GlossaryTerm styled={true} term={"qualifier"}><i>qualifiers</i></GlossaryTerm>—a *proper list*. 
 
 
 
@@ -46,21 +46,23 @@
 
 
 
-Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> of the <ClLinks  term={"method"}><i>method</i></ClLinks>. 
+Returns a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"qualifier"}><i>qualifiers</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm>. 
 
 
 
 **Examples:**
 ```lisp
+
 (defmethod some-gf :before ((a integer)) a) 
-→ #<STANDARD-METHOD SOME-GF (:BEFORE) (INTEGER) 42736540> 
-(method-qualifiers \*) → (:BEFORE) 
+*→* #<STANDARD-METHOD SOME-GF (:BEFORE) (INTEGER) 42736540> 
+(method-qualifiers \*) *→* (:BEFORE) 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks> 
+<DictionaryLink styled={true} term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> 
 
 
 

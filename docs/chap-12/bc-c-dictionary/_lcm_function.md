@@ -1,4 +1,4 @@
-**lcm** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**lcm** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"lcm"}><b>lcm</b></ClLinks> &amp;rest *integers → least-common-multiple* 
+<DictionaryLink styled={true} term={"lcm"}><b>lcm</b></DictionaryLink> &amp;rest *integers → least-common-multiple* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"lcm"}><b>lcm</b></ClLinks> returns the least common multiple of the *integers*. 
+<DictionaryLink styled={true} term={"lcm"}><b>lcm</b></DictionaryLink> returns the least common multiple of the *integers*. 
 
 
 
@@ -76,18 +76,20 @@ For three or more arguments,
 
 **Examples:**
 ```lisp
-(lcm 10) → 10 
-(lcm 25 30) → 150 
-(lcm -24 18 10) → 360 
-(lcm 14 35) → 70 
-(lcm 0 5) → 0 
-(lcm 1 2 3 4 5 6) → 60 
+
+(lcm 10) *→* 10 
+(lcm 25 30) *→* 150 
+(lcm -24 18 10) *→* 360 
+(lcm 14 35) *→* 70 
+(lcm 0 5) *→* 0 
+(lcm 1 2 3 4 5 6) *→* 60 
+
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if any argument is not an *integer* . 
+Should signal <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if any argument is not an *integer* . 
 
 
 
@@ -95,7 +97,7 @@ Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if any a
 
 
 
-<ClLinks  term={"gcd"}><b>gcd</b></ClLinks> 
+<DictionaryLink styled={true} term={"gcd"}><b>gcd</b></DictionaryLink> 
 
 
 

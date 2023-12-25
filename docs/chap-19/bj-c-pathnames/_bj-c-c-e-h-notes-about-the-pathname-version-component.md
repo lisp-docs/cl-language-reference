@@ -10,7 +10,7 @@ It is suggested, but not required, that implementations do the following:
 
 
 
-*•* Recognize the symbol :oldest to designate the smallest existing version number. *•* Use <ClLinks  term={"keyword"}><i>keywords</i></ClLinks> for other special versions. 
+*•* Recognize the symbol :oldest to designate the smallest existing version number. *•* Use <GlossaryTerm styled={true} term={"keyword"}><i>keywords</i></GlossaryTerm> for other special versions. 
 
 
 

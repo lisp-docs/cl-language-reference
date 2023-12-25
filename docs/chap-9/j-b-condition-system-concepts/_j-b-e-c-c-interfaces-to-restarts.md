@@ -2,11 +2,11 @@
 
 
 
-Some <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> have functional interfaces, such as **abort**, **continue**, **muffle-warning**, **store-value**, and **use-value**. They are ordinary functions that use <ClLinks styled={true} term={"find-restart"}><b>find-restart</b></ClLinks> and <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks> internally, that have the same name as the <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> they manipulate, and that are provided simply for notational convenience. 
+Some <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> have functional interfaces, such as **abort**, **continue**, **muffle-warning**, **store-value**, and **use-value**. They are ordinary functions that use <DictionaryLink styled={true} term={"find-restart"}><b>find-restart</b></DictionaryLink> and <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink> internally, that have the same name as the <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> they manipulate, and that are provided simply for notational convenience. 
 
 
 
-Figure 9–6 shows *defined names* relating to <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks>. 
+Figure 9–6 shows *defined names* relating to <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm>. 
 
 
 

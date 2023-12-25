@@ -1,4 +1,4 @@
-**package-nicknames** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**package-nicknames** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"package-nicknames"}><b>package-nicknames</b></ClLinks> *package → nicknames* 
+<DictionaryLink styled={true} term={"package-nicknames"}><b>package-nicknames</b></DictionaryLink> *package → nicknames* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . 
+<GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>—a *package designator* . 
 
 
 
-<ClLinks  term={"nickname"}><i>nicknames</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"nickname"}><i>nicknames</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm>. 
 
 
 
@@ -26,19 +26,19 @@
 
 
 
-Returns the <ClLinks  term={"list"}><i>list</i></ClLinks> of nickname <ClLinks  term={"string"}><i>strings</i></ClLinks> for <ClLinks  term={"package"}><i>package</i></ClLinks>, not including the name of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
-
-**Examples:**
+Returns the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of nickname <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm> for <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>, not including the name of <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. **Examples:**
 ```lisp
+
 (package-nicknames (make-package ’temporary 
 				  :nicknames ’("TEMP" "temp"))) 
-→ ("temp" "TEMP") 
+*→* ("temp" "TEMP") 
+
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a *package designator* . 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> is not a *package designator* . 
 
 
 

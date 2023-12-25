@@ -2,7 +2,7 @@
 
 
 
-An *ordinary lambda list* is used to describe how a set of <ClLinks  term={"argument"}><i>arguments</i></ClLinks> is received by an *ordinary function*. The *defined names* in Figure 3–12 are those which use *ordinary lambda lists*:  
+An *ordinary lambda list* is used to describe how a set of <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> is received by an *ordinary function*. The *defined names* in Figure 3–12 are those which use *ordinary lambda lists*:  
 
 
 
@@ -38,7 +38,7 @@ An *ordinary lambda list* can contain the *lambda list keywords* shown in Figure
 
 
 
-Each <ClLinks  term={"element"}><i>element</i></ClLinks> of a *lambda list* is either a parameter specifier or a *lambda list keyword*. Implementations are free to provide additional *lambda list keywords*. For a list of all *lambda list keywords* used by the implementation, see <ClLinks  term={"lambda-list-keywords"}><b>lambda-list-keywords</b></ClLinks>. 
+Each <GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm> of a *lambda list* is either a parameter specifier or a *lambda list keyword*. Implementations are free to provide additional *lambda list keywords*. For a list of all *lambda list keywords* used by the implementation, see <DictionaryLink styled={true} term={"lambda-list-keywords"}><b>lambda-list-keywords</b></DictionaryLink>. 
 
 
 
@@ -70,15 +70,15 @@ The syntax for *ordinary lambda lists* is as follows:
 
 
 
-A *var* or *supplied-p-parameter* must be a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is not the name of a *constant variable*. 
+A *var* or *supplied-p-parameter* must be a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> that is not the name of a *constant variable*. 
 
 
 
-An *init-form* can be any <ClLinks  term={"form"}><i>form</i></ClLinks>. Whenever any *init-form* is evaluated for any parameter specifier, that <ClLinks  term={"form"}><i>form</i></ClLinks> may refer to any parameter variable to the left of the specifier in which the *init-form* appears, including any *supplied-p-parameter* variables, and may rely on the fact that no other parameter variable has yet been bound (including its own parameter variable). 
+An *init-form* can be any <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. Whenever any *init-form* is evaluated for any parameter specifier, that <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> may refer to any parameter variable to the left of the specifier in which the *init-form* appears, including any *supplied-p-parameter* variables, and may rely on the fact that no other parameter variable has yet been bound (including its own parameter variable). 
 
 
 
-A *keyword-name* can be any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, but by convention is normally a <ClLinks  term={"keyword"}><i>keyword</i></ClLinks> <sub>1</sub>; all *standardized functions* follow that convention. 
+A *keyword-name* can be any <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>, but by convention is normally a <GlossaryTerm styled={true} term={"keyword"}><i>keyword</i></GlossaryTerm> <sub>1</sub>; all *standardized functions* follow that convention. 
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-A lowercase <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is one that has a corresponding *uppercase character* that is <ClLinks styled={true} term={"different"}><i>different</i></ClLinks> (and can be obtained using <ClLinks styled={true} term={"char-upcase"}><b>char-upcase</b></ClLinks>). 
+A lowercase <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> is one that has a corresponding *uppercase character* that is <GlossaryTerm styled={true} term={"different"}><i>different</i></GlossaryTerm> (and can be obtained using <DictionaryLink styled={true} term={"char-upcase"}><b>char-upcase</b></DictionaryLink>). 
 
 
 

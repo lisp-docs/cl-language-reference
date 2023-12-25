@@ -1,4 +1,4 @@
-**constantp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**constantp** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"constantp"}><b>constantp</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> &amp;optional *environment ! generalized-boolean* 
+<DictionaryLink styled={true} term={"constantp"}><b>constantp</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> &amp;optional *environment ! generalized-boolean* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an *environment object*. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm>—an *environment object*. The default is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -30,41 +30,43 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"form"}><i>form</i></ClLinks> can be determined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be a *constant form* in the indicated <ClLinks  term={"environment"}><i>environment</i></ClLinks>; otherwise, it returns <ClLinks  term={"false"}><i>false</i></ClLinks> indicating either that the <ClLinks  term={"form"}><i>form</i></ClLinks> is not a *constant form* or that it cannot be determined whether or not <ClLinks  term={"form"}><i>form</i></ClLinks> is a *constant form*. 
+Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> can be determined by the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> to be a *constant form* in the indicated <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm>; otherwise, it returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> indicating either that the <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is not a *constant form* or that it cannot be determined whether or not <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is a *constant form*. 
 
 
 
-The following kinds of <ClLinks  term={"form"}><i>forms</i></ClLinks> are considered *constant forms*: 
+The following kinds of <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are considered *constant forms*: 
 
 
 
-*• Self-evaluating objects* (such as <ClLinks  term={"number"}><i>numbers</i></ClLinks>, <ClLinks  term={"character"}><i>characters</i></ClLinks>, and the various kinds of <ClLinks  term={"array"}><i>arrays</i></ClLinks>) are always considered *constant forms* and must be recognized as such by <ClLinks  term={"constantp"}><b>constantp</b></ClLinks>. 
+*• Self-evaluating objects* (such as <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm>, and the various kinds of <GlossaryTerm styled={true} term={"array"}><i>arrays</i></GlossaryTerm>) are always considered *constant forms* and must be recognized as such by <DictionaryLink styled={true} term={"constantp"}><b>constantp</b></DictionaryLink>. 
 
 
 
-*• Constant variables*, such as <ClLinks  term={"keyword"}><i>keywords</i></ClLinks>, symbols defined by Common Lisp as constant (such as <ClLinks  term={"nil"}><b>nil</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks>, and **pi**), and symbols declared as constant by the user in the indicated <ClLinks  term={"environment"}><i>environment</i></ClLinks> using <ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks> are always considered *constant forms* and must be recognized as such by <ClLinks  term={"constantp"}><b>constantp</b></ClLinks>. 
+*• Constant variables*, such as <GlossaryTerm styled={true} term={"keyword"}><i>keywords</i></GlossaryTerm>, symbols defined by Common Lisp as constant (such as <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>, and **pi**), and symbols declared as constant by the user in the indicated <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm> using <DictionaryLink styled={true} term={"defconstant"}><b>defconstant</b></DictionaryLink> are always considered *constant forms* and must be recognized as such by <DictionaryLink styled={true} term={"constantp"}><b>constantp</b></DictionaryLink>. 
 
 
 
-*•* <ClLinks  term={"quote"}><b>quote</b></ClLinks> <ClLinks  term={"form"}><i>forms</i></ClLinks> are always considered *constant forms* and must be recognized as such by <ClLinks  term={"constantp"}><b>constantp</b></ClLinks>. 
+*•* <DictionaryLink styled={true} term={"quote"}><b>quote</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are always considered *constant forms* and must be recognized as such by <DictionaryLink styled={true} term={"constantp"}><b>constantp</b></DictionaryLink>. 
 
 
 
-*•* An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is permitted, but not required, to detect additional *constant forms*. If it does, it is also permitted, but not required, to make use of information in the <ClLinks  term={"environment"}><i>environment</i></ClLinks>. Examples of *constant forms* for which <ClLinks  term={"constantp"}><b>constantp</b></ClLinks> might or might not return <ClLinks  term={"true"}><i>true</i></ClLinks> are: (sqrt pi), (+ 3 2), (length ’(a b c)), and (let ((x 7)) (zerop x)). 
+*•* An <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> is permitted, but not required, to detect additional *constant forms*. If it does, it is also permitted, but not required, to make use of information in the <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm>. Examples of *constant forms* for which <DictionaryLink styled={true} term={"constantp"}><b>constantp</b></DictionaryLink> might or might not return <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> are: (sqrt pi), (+ 3 2), (length ’(a b c)), and (let ((x 7)) (zerop x)). 
 
 
 
-If an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> chooses to make use of the <ClLinks  term={"environment"}><i>environment</i></ClLinks> information, such actions as expanding <ClLinks  term={"macro"}><i>macros</i></ClLinks> or performing function inlining are permitted to be used, but not required; however, expanding *compiler macros* is not permitted. 
+If an <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> chooses to make use of the <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm> information, such actions as expanding <GlossaryTerm styled={true} term={"macro"}><i>macros</i></GlossaryTerm> or performing function inlining are permitted to be used, but not required; however, expanding *compiler macros* is not permitted. 
 
 
 
 **Examples:**
 ```lisp
+
 (constantp 1) *! true* 
 (constantp ’temp) *! false* 
 (constantp ”temp)) *! true* 
 (defconstant this-is-a-constant ’never-changing) *!* THIS-IS-A-CONSTANT 
 Evaluation and 
+
 
 **constantp** 
 (constantp ’this-is-a-constant) *! true* 
@@ -79,12 +81,13 @@ Evaluation and
 (constantp ’(values this-is-a-constant)) *! implementation-dependent* 
 (constantp ’(values ’x ’y)) *! implementation-dependent* 
 (constantp ’(let ((a ’(a b c))) (+ (length a) 6))) *! implementation-dependent* 
+
 ```
 **Aected By:** 
 
 
 
-The state of the global environment (*e.g.*, which <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> have been declared to be the <ClLinks  term={"name"}><i>names</i></ClLinks> of *constant variables*). 
+The state of the global environment (*e.g.*, which <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> have been declared to be the <GlossaryTerm styled={true} term={"name"}><i>names</i></GlossaryTerm> of *constant variables*). 
 
 
 
@@ -92,7 +95,7 @@ The state of the global environment (*e.g.*, which <ClLinks  term={"symbol"}><i>
 
 
 
-<ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks> 
+<DictionaryLink styled={true} term={"defconstant"}><b>defconstant</b></DictionaryLink> 
 
 
 

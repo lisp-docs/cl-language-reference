@@ -6,7 +6,7 @@ A *generic function lambda list* is used to describe the overall shape of the ar
 
 
 
-A *generic function lambda list* is used by <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks>. 
+A *generic function lambda list* is used by <DictionaryLink styled={true} term={"defgeneric"}><b>defgeneric</b></DictionaryLink>. 
 
 
 

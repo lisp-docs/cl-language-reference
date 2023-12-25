@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"remove-method"}><b>remove-method</b></ClLinks> *generic-function method → generic-function* 
+<DictionaryLink styled={true} term={"remove-method"}><b>remove-method</b></DictionaryLink> *generic-function method → generic-function* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"remove-method"}><b>remove-method</b></ClLinks> (*generic-function* <ClLinks  term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks>) 
+<DictionaryLink styled={true} term={"remove-method"}><b>remove-method</b></DictionaryLink> (*generic-function* <DictionaryLink styled={true} term={"standard-generic-function"}><b>standard-generic-function</b></DictionaryLink>) 
 
 
 
-<ClLinks  term={"method"}><i>method</i></ClLinks> 
+<GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"method"}><i>method</i></ClLinks>—a <ClLinks  term={"method"}><i>method</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm>. 
 
 
 
@@ -38,11 +38,11 @@
 
 
 
-The *generic function* <ClLinks  term={"remove-method"}><b>remove-method</b></ClLinks> removes a <ClLinks  term={"method"}><i>method</i></ClLinks> from *generic-function* by modifying the *generic-function* (if necessary). 
+The *generic function* <DictionaryLink styled={true} term={"remove-method"}><b>remove-method</b></DictionaryLink> removes a <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> from *generic-function* by modifying the *generic-function* (if necessary). 
 
 
 
-<ClLinks  term={"remove-method"}><b>remove-method</b></ClLinks> must not signal an error if the <ClLinks  term={"method"}><i>method</i></ClLinks> is not one of the <ClLinks  term={"method"}><i>methods</i></ClLinks> on the *generic-function*. 
+<DictionaryLink styled={true} term={"remove-method"}><b>remove-method</b></DictionaryLink> must not signal an error if the <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> is not one of the <GlossaryTerm styled={true} term={"method"}><i>methods</i></GlossaryTerm> on the *generic-function*. 
 
 
 
@@ -50,7 +50,7 @@ The *generic function* <ClLinks  term={"remove-method"}><b>remove-method</b></Cl
 
 
 
-<ClLinks  term={"find-method"}><b>find-method</b></ClLinks> 
+<DictionaryLink styled={true} term={"find-method"}><b>find-method</b></DictionaryLink> 
 
 
 

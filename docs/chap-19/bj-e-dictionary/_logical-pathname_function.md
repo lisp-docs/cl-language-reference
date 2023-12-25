@@ -1,4 +1,4 @@
-**logical-pathname** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**logical-pathname** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks> *pathspec → logical-pathname* 
+<DictionaryLink styled={true} term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink> *pathspec → logical-pathname* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*pathspec*—a *logical pathname*, a *logical pathname namestring*, or a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+*pathspec*—a *logical pathname*, a *logical pathname namestring*, or a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks> converts *pathspec* to a *logical pathname* and returns the new *logical pathname*. If *pathspec* is a *logical pathname namestring*, it should contain a host component and its following <ClLinks  term={"colon"}><i>colon</i></ClLinks>. If *pathspec* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, it should be one for which <ClLinks  term={"pathname"}><b>pathname</b></ClLinks> returns a *logical pathname*. 
+<DictionaryLink styled={true} term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink> converts *pathspec* to a *logical pathname* and returns the new *logical pathname*. If *pathspec* is a *logical pathname namestring*, it should contain a host component and its following <GlossaryTerm styled={true} term={"colon"}><i>colon</i></GlossaryTerm>. If *pathspec* is a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>, it should be one for which <DictionaryLink styled={true} term={"pathname"}><b>pathname</b></DictionaryLink> returns a *logical pathname*. 
 
 
 
-If *pathspec* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, the <ClLinks  term={"stream"}><i>stream</i></ClLinks> can be either open or closed. <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks> returns the same *logical pathname* after a file is closed as it did when the file was open. It is an error if *pathspec* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is created with <ClLinks  term={"make-two-way-stream"}><b>make-two-way-stream</b></ClLinks>, <ClLinks  term={"make-echo-stream"}><b>make-echo-stream</b></ClLinks>, <ClLinks  term={"make-broadcast-stream"}><b>make-broadcast-stream</b></ClLinks>, <ClLinks  term={"make-concatenated-stream"}><b>make-concatenated-stream</b></ClLinks>, <ClLinks  term={"make-string-input-stream"}><b>make-string-input-stream</b></ClLinks>, or <ClLinks  term={"make-string-output-stream"}><b>make-string-output-stream</b></ClLinks>. 
+If *pathspec* is a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> can be either open or closed. <DictionaryLink styled={true} term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink> returns the same *logical pathname* after a file is closed as it did when the file was open. It is an error if *pathspec* is a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> that is created with <DictionaryLink styled={true} term={"make-two-way-stream"}><b>make-two-way-stream</b></DictionaryLink>, <DictionaryLink styled={true} term={"make-echo-stream"}><b>make-echo-stream</b></DictionaryLink>, <DictionaryLink styled={true} term={"make-broadcast-stream"}><b>make-broadcast-stream</b></DictionaryLink>, <DictionaryLink styled={true} term={"make-concatenated-stream"}><b>make-concatenated-stream</b></DictionaryLink>, <DictionaryLink styled={true} term={"make-string-input-stream"}><b>make-string-input-stream</b></DictionaryLink>, or <DictionaryLink styled={true} term={"make-string-output-stream"}><b>make-string-output-stream</b></DictionaryLink>. 
 
 
 
@@ -38,7 +38,7 @@ If *pathspec* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, the <ClLin
 
 
 
-Signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *pathspec* isn’t supplied correctly. 
+Signals an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *pathspec* isn’t supplied correctly. 
 
 
 
@@ -46,7 +46,7 @@ Signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term
 
 
 
-<ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, <ClLinks  term={"translate-logical-pathname"}><b>translate-logical-pathname</b></ClLinks>, Section 19.3 (Logical Pathnames) 
+<DictionaryLink styled={true} term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, <DictionaryLink styled={true} term={"translate-logical-pathname"}><b>translate-logical-pathname</b></DictionaryLink>, Section 19.3 (Logical Pathnames) 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"quote"}><b>quote</b></ClLinks> *object → object* 
+<DictionaryLink styled={true} term={"quote"}><b>quote</b></DictionaryLink> *object → object* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>; not evaluated. 
+<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>; not evaluated. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-The <ClLinks  term={"quote"}><b>quote</b></ClLinks> *special operator* just returns <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+The <DictionaryLink styled={true} term={"quote"}><b>quote</b></DictionaryLink> *special operator* just returns <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -32,23 +32,26 @@ The consequences are undefined if *literal objects* (including *quoted objects*)
 
 **Examples:**
 ```lisp
-(setq a 1) → 1 
-(quote (setq a 3)) → (SETQ A 3) 
-a → 1 
-’a → A 
-”a → (QUOTE A)  
-”’a → (QUOTE (QUOTE A)) 
-(setq a 43) → 43 
-(list a (cons a 3)) → (43 (43 . 3)) 
-(list (quote a) (quote (cons a 3))) → (A (CONS A 3)) 
-1 → 1 
-’1 → 1 
-"foo" → "foo" 
-’"foo" → "foo" 
-(car ’(a b)) → A 
-’(car ’(a b)) → (CAR (QUOTE (A B))) 
-#(car ’(a b)) → #(CAR (QUOTE (A B))) 
-’#(car ’(a b)) → #(CAR (QUOTE (A B))) 
+
+(setq a 1) *→* 1 
+(quote (setq a 3)) *→* (SETQ A 3) 
+a *→* 1 
+’a *→* A 
+”a *→* (QUOTE A)  
+
+”’a *→* (QUOTE (QUOTE A)) 
+(setq a 43) *→* 43 
+(list a (cons a 3)) *→* (43 (43 . 3)) 
+(list (quote a) (quote (cons a 3))) *→* (A (CONS A 3)) 
+1 *→* 1 
+’1 *→* 1 
+"foo" *→* "foo" 
+’"foo" *→* "foo" 
+(car ’(a b)) *→* A 
+’(car ’(a b)) *→* (CAR (QUOTE (A B))) 
+#(car ’(a b)) *→* #(CAR (QUOTE (A B))) 
+’#(car ’(a b)) *→* #(CAR (QUOTE (A B))) 
+
 ```
 **See Also:** 
 
@@ -62,11 +65,11 @@ Section 3.1 (Evaluation), Section 2.4.3 (Single-Quote), Section 3.2.1 (Compiler 
 
 
 
-The textual notation ’<ClLinks  term={"object"}><i>object</i></ClLinks> is equivalent to (quote <ClLinks  term={"object"}><i>object</i></ClLinks>); see Section 3.2.1 (Compiler Terminology). 
+The textual notation ’<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is equivalent to (quote <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>); see Section 3.2.1 (Compiler Terminology). 
 
 
 
-Some <ClLinks  term={"object"}><i>objects</i></ClLinks>, called *self-evaluating objects*, do not require quotation by <ClLinks  term={"quote"}><b>quote</b></ClLinks>. However, <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> and <ClLinks  term={"list"}><i>lists</i></ClLinks> are used to represent parts of programs, and so would not be useable as constant data in a program without <ClLinks  term={"quote"}><b>quote</b></ClLinks>. Since <ClLinks  term={"quote"}><b>quote</b></ClLinks> suppresses the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of these <ClLinks  term={"object"}><i>objects</i></ClLinks>, they become data rather than program. 
+Some <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm>, called *self-evaluating objects*, do not require quotation by <DictionaryLink styled={true} term={"quote"}><b>quote</b></DictionaryLink>. However, <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm> are used to represent parts of programs, and so would not be useable as constant data in a program without <DictionaryLink styled={true} term={"quote"}><b>quote</b></DictionaryLink>. Since <DictionaryLink styled={true} term={"quote"}><b>quote</b></DictionaryLink> suppresses the <GlossaryTerm styled={true} term={"evaluation"}><i>evaluation</i></GlossaryTerm> of these <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm>, they become data rather than program. 
 
 
 

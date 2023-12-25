@@ -1,4 +1,4 @@
-**invoke-restart** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**invoke-restart** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks> <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> &amp;rest *arguments → \{result\}*\* 
+<DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink> <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> &amp;rest *arguments → \{result\}*\* 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-<ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>—a *restart designator* . 
+<GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm>—a *restart designator* . 
 
 
 
-<ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> associated with <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, if that <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> returns. 
+*results*—the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> associated with <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm>, if that <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> returns. 
 
 
 
@@ -42,12 +42,13 @@
 
 
 
-Calls the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> associated with <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, passing <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> to it. <ClLinks styled={true} term={"restart"}><i>Restart</i></ClLinks> must be valid in the current *dynamic environment*. 
+Calls the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> associated with <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm>, passing <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> to it. <GlossaryTerm styled={true} term={"restart"}><i>Restart</i></GlossaryTerm> must be valid in the current *dynamic environment*. 
 
 
 
 **Examples:**
 ```lisp
+
 (defun add3 (x) (check-type x number) (+ x 3)) 
 (foo ’seven) 
 ▷ Error: The value SEVEN was not of type NUMBER. 
@@ -55,7 +56,8 @@ Calls the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> ass
 ▷ 1: Specify a different value to use. 
 ▷ 2: Return to Lisp Toplevel. 
 ▷ Debug> (invoke-restart ’store-value 7) 
-→ 10 
+*→* 10 
+
 ```
 **Side Effects:** 
 
@@ -77,7 +79,7 @@ Existing restarts.
 
 
 
-If <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is not valid, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"control-error"}><b>control-error</b></ClLinks> is signaled. 
+If <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> is not valid, an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"control-error"}><b>control-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -85,7 +87,7 @@ If <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is not valid
 
 
 
-<ClLinks styled={true} term={"find-restart"}><b>find-restart</b></ClLinks>, <ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks>, <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>, <ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> 
+<DictionaryLink styled={true} term={"find-restart"}><b>find-restart</b></DictionaryLink>, <DictionaryLink styled={true} term={"restart-bind"}><b>restart-bind</b></DictionaryLink>, <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink>, <DictionaryLink styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></DictionaryLink> 
 
 
 
@@ -93,19 +95,15 @@ If <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is not valid
 
 
 
-The most common use for <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks> is in a <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> . It might be used explicitly, or implicitly through <ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> or a *restart function*. 
+The most common use for <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink> is in a <GlossaryTerm styled={true} term={"handler"}><i>handler</i></GlossaryTerm> . It might be used explicitly, or implicitly through <DictionaryLink styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></DictionaryLink> or a *restart function*. 
 
 
 
-*Restart functions* call <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, not vice versa. That is, *invoke-restart* provides primitive functionality, and *restart functions* are non-essential “syntactic sugar.” 
-
-
+*Restart functions* call <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink>, not vice versa. That is, *invoke-restart* provides primitive functionality, and *restart functions* are non-essential “syntactic sugar.” 
 
 
 
 
-
- 
 
 
 
@@ -113,7 +111,11 @@ The most common use for <ClLinks styled={true} term={"invoke-restart"}><b>invoke
 
 
 
-<ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> 
+ 
+
+
+
+<DictionaryLink styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></DictionaryLink> 
 
 
 

@@ -1,4 +1,4 @@
-**unsigned-byte** <ClLinks  term={"type"}><i>Type</i></ClLinks> 
+**unsigned-byte** <GlossaryTerm styled={true} term={"type"}><i>Type</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"unsigned-byte"}><b>unsigned-byte</b></ClLinks>, <ClLinks  term={"signed-byte"}><b>signed-byte</b></ClLinks>, <ClLinks  term={"integer"}><b>integer</b></ClLinks>, <ClLinks  term={"rational"}><b>rational</b></ClLinks>, <ClLinks  term={"real"}><b>real</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"unsigned-byte"}><b>unsigned-byte</b></DictionaryLink>, <DictionaryLink styled={true} term={"signed-byte"}><b>signed-byte</b></DictionaryLink>, <DictionaryLink styled={true} term={"integer"}><b>integer</b></DictionaryLink>, <DictionaryLink styled={true} term={"rational"}><b>rational</b></DictionaryLink>, <DictionaryLink styled={true} term={"real"}><b>real</b></DictionaryLink>, <DictionaryLink styled={true} term={"number"}><b>number</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The atomic *type specifier* <ClLinks  term={"unsigned-byte"}><b>unsigned-byte</b></ClLinks> denotes the same type as is denoted by the *type specifier* (integer 0 \*). 
+The atomic *type specifier* <DictionaryLink styled={true} term={"unsigned-byte"}><b>unsigned-byte</b></DictionaryLink> denotes the same type as is denoted by the *type specifier* (integer 0 \*). 
 
 
 
@@ -54,7 +54,7 @@ This denotes the set of non-negative <i>integers</i> that can be represented in 
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> (unsigned-byte 1) is also called <ClLinks  term={"bit"}><b>bit</b></ClLinks>. 
+The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> (unsigned-byte 1) is also called <DictionaryLink styled={true} term={"bit"}><b>bit</b></DictionaryLink>. 
 
 
 
@@ -70,7 +70,7 @@ The <ClLinks  term={"type"}><i>type</i></ClLinks> (unsigned-byte 1) is also call
 
 
 
-<ClLinks  term={"mod"}><b>mod</b></ClLinks> *Type Specifier* 
+<DictionaryLink styled={true} term={"mod"}><b>mod</b></DictionaryLink> *Type Specifier* 
 
 
 
@@ -110,7 +110,7 @@ The argument is required, and cannot be **\***.
 
 
 
-The symbol <ClLinks  term={"mod"}><b>mod</b></ClLinks> is not valid as a *type specifier* . 
+The symbol <DictionaryLink styled={true} term={"mod"}><b>mod</b></DictionaryLink> is not valid as a *type specifier* . 
 
 
 

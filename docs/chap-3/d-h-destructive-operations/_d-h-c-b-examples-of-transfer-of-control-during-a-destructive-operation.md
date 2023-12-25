@@ -2,7 +2,7 @@
 
 
 
-The following examples illustrate some of the many ways in which the <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> nature of the modification can manifest itself. 
+The following examples illustrate some of the many ways in which the <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> nature of the modification can manifest itself. 
 
 
 
@@ -18,7 +18,7 @@ a)
 
 
 
-→ (1 2 3 4 6 7 FIVE) 
+*→* (1 2 3 4 6 7 FIVE) 
 
 
 
@@ -34,7 +34,7 @@ a)
 
 
 
-(sort a #’(lambda (x y) (if (zerop (random 5)) (return-from foo a) (&gt; x y))))) → (1 2 3 4 5 6 7 8 9 10) 
+(sort a #’(lambda (x y) (if (zerop (random 5)) (return-from foo a) (&gt; x y))))) *→* (1 2 3 4 5 6 7 8 9 10) 
 
 
 

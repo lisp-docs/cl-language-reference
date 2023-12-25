@@ -2,7 +2,7 @@
 
 
 
-Most <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> have more than one possible textual representation. For example, the positive *integer* with a magnitude of twenty-seven can be textually expressed in any of these ways: 
+Most <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> have more than one possible textual representation. For example, the positive *integer* with a magnitude of twenty-seven can be textually expressed in any of these ways: 
 
 
 
@@ -30,15 +30,15 @@ B
 
 
 
-In general, from the point of view of the *Lisp reader* , wherever <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks> is permissible in a textual representation, any number of <ClLinks styled={true} term={"space"}><i>spaces</i></ClLinks> and <ClLinks styled={true} term={"newline"}><i>newlines</i></ClLinks> can appear in *standard syntax* . 
+In general, from the point of view of the *Lisp reader* , wherever <GlossaryTerm styled={true} term={"whitespace"}><i>whitespace</i></GlossaryTerm> is permissible in a textual representation, any number of <GlossaryTerm styled={true} term={"space"}><i>spaces</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"newline"}><i>newlines</i></GlossaryTerm> can appear in *standard syntax* . 
 
 
 
-When a function such as <ClLinks styled={true} term={"print"}><b>print</b></ClLinks> produces a printed representation, it must choose from among many possible textual representations. In most cases, it chooses a program readable representation, but in certain cases it might use a more compact notation that is not program-readable. 
+When a function such as <DictionaryLink styled={true} term={"print"}><b>print</b></DictionaryLink> produces a printed representation, it must choose from among many possible textual representations. In most cases, it chooses a program readable representation, but in certain cases it might use a more compact notation that is not program-readable. 
 
 
 
-A number of option variables, called *printer control variables*, are provided to permit control of individual aspects of the printed representation of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>. Figure 22–1 shows the *standardized printer control variables*; there might also be *implementation-defined printer control variables*. 
+A number of option variables, called *printer control variables*, are provided to permit control of individual aspects of the printed representation of <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm>. Figure 22–1 shows the *standardized printer control variables*; there might also be *implementation-defined printer control variables*. 
 
 
 

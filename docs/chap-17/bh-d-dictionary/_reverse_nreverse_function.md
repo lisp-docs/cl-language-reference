@@ -1,49 +1,95 @@
-**reverse, nreverse** <ClLinks  term={"function"}><i>Function</i></ClLinks>
+**reverse, nreverse** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
-**Syntax:**
 
-<ClLinks  term={"reverse"}><b>reverse</b></ClLinks> *sequence → reversed-sequence*
 
-<ClLinks  term={"nreverse"}><b>nreverse</b></ClLinks> *sequence → reversed-sequence*
+**Syntax:** 
 
-**Arguments and Values:**
 
-*sequence*—a *proper sequence*.
 
-*reversed-sequence*—a *sequence*.
+<DictionaryLink styled={true} term={"reverse"}><b>reverse</b></DictionaryLink> *sequence → reversed-sequence* 
 
-**Description:**
 
-<ClLinks  term={"reverse"}><b>reverse</b></ClLinks> and <ClLinks  term={"nreverse"}><b>nreverse</b></ClLinks> return a new *sequence* of the same kind as *sequence*, containing the same <ClLinks  term={"element"}><i>elements</i></ClLinks>, but in reverse order.
 
-<ClLinks  term={"reverse"}><b>reverse</b></ClLinks> and <ClLinks  term={"nreverse"}><b>nreverse</b></ClLinks> differ in that <ClLinks  term={"reverse"}><b>reverse</b></ClLinks> always creates and returns a new *sequence*, whereas <ClLinks  term={"nreverse"}><b>nreverse</b></ClLinks> might modify and return the given *sequence*. <ClLinks  term={"reverse"}><b>reverse</b></ClLinks> never modifies the given *sequence*.
+<DictionaryLink styled={true} term={"nreverse"}><b>nreverse</b></DictionaryLink> *sequence → reversed-sequence* 
 
-For <ClLinks  term={"reverse"}><b>reverse</b></ClLinks>, if *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the result is a *fresh simple array* of <ClLinks  term={"rank"}><i>rank</i></ClLinks> one that has the same *actual array element type* as *sequence*. If *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, the result is a *fresh list*.
 
-For <ClLinks  term={"nreverse"}><b>nreverse</b></ClLinks>, if *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the result is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> that has the same *actual array element type* as *sequence*. If *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, the result is a <ClLinks  term={"list"}><i>list</i></ClLinks>.
 
-For <ClLinks  term={"nreverse"}><b>nreverse</b></ClLinks>, *sequence* might be destroyed and re-used to produce the result. The result might or might not be <ClLinks  term={"identical"}><i>identical</i></ClLinks> to *sequence*. Specifically, when *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, <ClLinks  term={"nreverse"}><b>nreverse</b></ClLinks> is permitted to <ClLinks  term={"setf"}><b>setf</b></ClLinks> any part, <ClLinks  term={"car"}><b>car</b></ClLinks> or <ClLinks  term={"cdr"}><b>cdr</b></ClLinks>, of any <ClLinks  term={"cons"}><i>cons</i></ClLinks> that is part of the *list structure* of *sequence*. When *sequence*
+**Arguments and Values:** 
 
-is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , <ClLinks  term={"nreverse"}><b>nreverse</b></ClLinks> is permitted to re-order the elements of *sequence* in order to produce the resulting <ClLinks  term={"vector"}><i>vector</i></ClLinks> .
+
+
+*sequence*—a *proper sequence*. 
+
+
+
+*reversed-sequence*—a *sequence*. 
+
+
+
+**Description:** 
+
+
+
+<DictionaryLink styled={true} term={"reverse"}><b>reverse</b></DictionaryLink> and <DictionaryLink styled={true} term={"nreverse"}><b>nreverse</b></DictionaryLink> return a new *sequence* of the same kind as *sequence*, containing the same <GlossaryTerm styled={true} term={"element"}><i>elements</i></GlossaryTerm>, but in reverse order. 
+
+
+
+<DictionaryLink styled={true} term={"reverse"}><b>reverse</b></DictionaryLink> and <DictionaryLink styled={true} term={"nreverse"}><b>nreverse</b></DictionaryLink> differ in that <DictionaryLink styled={true} term={"reverse"}><b>reverse</b></DictionaryLink> always creates and returns a new *sequence*, whereas <DictionaryLink styled={true} term={"nreverse"}><b>nreverse</b></DictionaryLink> might modify and return the given *sequence*. <DictionaryLink styled={true} term={"reverse"}><b>reverse</b></DictionaryLink> never modifies the given *sequence*. 
+
+
+
+For <DictionaryLink styled={true} term={"reverse"}><b>reverse</b></DictionaryLink>, if *sequence* is a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> , the result is a *fresh simple array* of <GlossaryTerm styled={true} term={"rank"}><i>rank</i></GlossaryTerm> one that has the same *actual array element type* as *sequence*. If *sequence* is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>, the result is a *fresh list*. 
+
+
+
+For <DictionaryLink styled={true} term={"nreverse"}><b>nreverse</b></DictionaryLink>, if *sequence* is a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> , the result is a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> that has the same *actual array element type* as *sequence*. If *sequence* is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>, the result is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. 
+
+
+
+For <DictionaryLink styled={true} term={"nreverse"}><b>nreverse</b></DictionaryLink>, *sequence* might be destroyed and re-used to produce the result. The result might or might not be <GlossaryTerm styled={true} term={"identical"}><i>identical</i></GlossaryTerm> to *sequence*. Specifically, when *sequence* is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>, <DictionaryLink styled={true} term={"nreverse"}><b>nreverse</b></DictionaryLink> is permitted to <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> any part, <DictionaryLink styled={true} term={"car"}><b>car</b></DictionaryLink> or <DictionaryLink styled={true} term={"cdr"}><b>cdr</b></DictionaryLink>, of any <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> that is part of the *list structure* of *sequence*. When *sequence* 
+
+
+
+is a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> , <DictionaryLink styled={true} term={"nreverse"}><b>nreverse</b></DictionaryLink> is permitted to re-order the elements of *sequence* in order to produce the resulting <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> . 
+
+
 
 **Examples:**
-
 ```lisp
-(setq str "abc") → "abc" 
-(reverse str) → "cba" 
-str → "abc" 
-(setq str (copy-seq str)) → "abc" 
-(nreverse str) → "cba" 
-str → implementation-dependent 
-(setq l (list 1 2 3)) → (1 2 3) 
-(nreverse l) → (3 2 1) 
-l → implementation-dependent 
+
+(setq str "abc") *→* "abc" 
+(reverse str) *→* "cba" 
+str *→* "abc" 
+(setq str (copy-seq str)) *→* "abc" 
+(nreverse str) *→* "cba" 
+str *→ implementation-dependent* 
+(setq l (list 1 2 3)) *→* (1 2 3) 
+(nreverse l) *→* (3 2 1) 
+l *→ implementation-dependent* 
+
 ```
+**Side Effects:** 
 
-**Side Effects:**
 
-<ClLinks  term={"nreverse"}><b>nreverse</b></ClLinks> might either create a new *sequence*, modify the argument *sequence*, or both. (<ClLinks  term={"reverse"}><b>reverse</b></ClLinks> does not modify *sequence*.)
 
-**Exceptional Situations:**
+<DictionaryLink styled={true} term={"nreverse"}><b>nreverse</b></DictionaryLink> might either create a new *sequence*, modify the argument *sequence*, or both. (<DictionaryLink styled={true} term={"reverse"}><b>reverse</b></DictionaryLink> does not modify *sequence*.) 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*.
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+**Exceptional Situations:** 
+
+
+
+Should be prepared to signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a *proper sequence*. 

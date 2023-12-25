@@ -1,4 +1,4 @@
-**sleep** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**sleep** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"sleep"}><b>sleep</b></ClLinks> *seconds →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
+<DictionaryLink styled={true} term={"sleep"}><b>sleep</b></DictionaryLink> *seconds →* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -40,14 +40,16 @@ Causes execution to cease and become dormant for approximately the seconds of re
 
 **Examples:**
 ```lisp
-(sleep 1) → NIL 
+
+(sleep 1) *→* NIL 
 ;; Actually, since SLEEP is permitted to use approximate timing, 
 ;; this might not always yield true, but it will often enough that 
 ;; we felt it to be a productive example of the intent. 
 (let ((then (get-universal-time)) 
       (now (progn (sleep 10) (get-universal-time)))) 
   (>= (- now then) 10)) 
-→ true 
+*→ true* 
+
 ```
 **Side Effects:** 
 
@@ -69,7 +71,7 @@ The granularity of the scheduler.
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *seconds* is not a non-negative *real*. 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *seconds* is not a non-negative *real*. 
 
 
 

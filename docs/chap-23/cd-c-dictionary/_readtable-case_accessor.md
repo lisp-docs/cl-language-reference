@@ -1,4 +1,4 @@
-**readtable-case** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**readtable-case** <GlossaryTerm styled={true} term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"readtable-case"}><b>readtable-case</b></ClLinks> *readtable → mode* 
+<DictionaryLink styled={true} term={"readtable-case"}><b>readtable-case</b></DictionaryLink> *readtable → mode* 
 
 
 
-**(setf (readtable-case** <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>**)** *mode***)** 
+**(setf (readtable-case** <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm>**)** *mode***)** 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"readtable"}><i>readtable</i></ClLinks>—a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm>. 
 
 
 
@@ -42,19 +42,21 @@
 
 
 
-*Accesses* the *readtable case* of <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>, which affects the way in which the *Lisp Reader* reads <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> and the way in which the *Lisp Printer* writes <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
+*Accesses* the *readtable case* of <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm>, which affects the way in which the *Lisp Reader* reads <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> and the way in which the *Lisp Printer* writes <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm>. 
 
 
 
 **Examples:**
 ```lisp
+
 See Section 23.1.2.1 (Examples of Effect of Readtable Case on the Lisp Reader) and Section 22.1.3.3.2.1 (Examples of Effect of Readtable Case on the Lisp Printer). 
+
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is not a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *mode* is not a *case sensitivity mode*. 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm>. Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *mode* is not a *case sensitivity mode*. 
 
 
 
@@ -62,7 +64,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks>, <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks>, Section 2.2 (Reader Algorithm), Section 23.1.2 (Effect of Readtable Case on the Lisp Reader), Section 22.1.3.3.2 (Effect of Readtable Case on the Lisp Printer) 
+<DictionaryLink styled={true} term={"readtable"}><b>\*readtable\*</b></DictionaryLink>, <DictionaryLink styled={true} term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink>, Section 2.2 (Reader Algorithm), Section 23.1.2 (Effect of Readtable Case on the Lisp Reader), Section 22.1.3.3.2 (Effect of Readtable Case on the Lisp Printer) 
 
 
 
@@ -70,7 +72,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"copy-readtable"}><b>copy-readtable</b></ClLinks> copies the *readtable case* of the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
+<DictionaryLink styled={true} term={"copy-readtable"}><b>copy-readtable</b></DictionaryLink> copies the *readtable case* of the <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm>. 
 
 
 

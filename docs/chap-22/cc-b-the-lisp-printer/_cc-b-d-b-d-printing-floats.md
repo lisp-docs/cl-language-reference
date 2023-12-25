@@ -11,5 +11,5 @@ For non-zero magnitudes outside of the range 10<sup><i>−</i>3</sup>to 10<sup>7
 
 
 
-For related information about the syntax of a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>, see Section 2.3.2.2 (Syntax of a Float).
+For related information about the syntax of a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm>, see Section 2.3.2.2 (Syntax of a Float).
  

@@ -1,4 +1,4 @@
-**formatter** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**formatter** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"formatter"}><b>formatter</b></ClLinks> *control-string → function* 
+<DictionaryLink styled={true} term={"formatter"}><b>formatter</b></DictionaryLink> *control-string → function* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> which has behavior equivalent to: 
+Returns a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> which has behavior equivalent to: 
 
 
 
@@ -42,19 +42,23 @@ Returns a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> whi
 
 
 
-where *arguments-tail* is either the tail of <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> which has as its <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> the argument that would be processed next if there were more format directives in the *control-string*, or else <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if no more <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> follow the most recently processed argument. 
+where *arguments-tail* is either the tail of <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> which has as its <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> the argument that would be processed next if there were more format directives in the *control-string*, or else <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if no more <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> follow the most recently processed argument. 
 
 
 
 **Examples:**
 ```lisp
+
 (funcall (formatter "~&~A~A") \*standard-output\* ’a ’b ’c) 
 ▷ AB 
-→ (C) 
+*→* (C) 
+
+
 
 (format t (formatter "~&~A~A") ’a ’b ’c) 
 ▷ AB 
-→ NIL 
+*→* NIL 
+
 ```
 **Exceptional Situations:** 
 
@@ -68,7 +72,7 @@ Might signal an error (at macro expansion time or at run time) if the argument i
 
 
 
-<ClLinks styled={true} term={"format"}><b>format</b></ClLinks> 
+<DictionaryLink styled={true} term={"format"}><b>format</b></DictionaryLink> 
 
 
 

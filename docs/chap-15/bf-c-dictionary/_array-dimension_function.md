@@ -1,4 +1,4 @@
-**array-dimension** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**array-dimension** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"array-dimension"}><b>array-dimension</b></ClLinks> *array axis-number → dimension* 
+<DictionaryLink styled={true} term={"array-dimension"}><b>array-dimension</b></DictionaryLink> *array axis-number → dimension* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-*axis-number*—an *integer* greater than or equal to zero and less than the <ClLinks  term={"rank"}><i>rank</i></ClLinks> of the <ClLinks  term={"array"}><i>array</i></ClLinks>. <ClLinks  term={"dimension"}><i>dimension</i></ClLinks>—a non-negative *integer* . 
+*axis-number*—an *integer* greater than or equal to zero and less than the <GlossaryTerm styled={true} term={"rank"}><i>rank</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"dimension"}><i>dimension</i></GlossaryTerm>—a non-negative *integer* . 
 
 
 
@@ -26,12 +26,12 @@
 
 
 
-<ClLinks  term={"array-dimension"}><b>array-dimension</b></ClLinks> returns the *axis-number dimension*<sub>1</sub> of <ClLinks  term={"array"}><i>array</i></ClLinks>. (Any *fill pointer* is ignored.) 
-
-**Examples:**
+<DictionaryLink styled={true} term={"array-dimension"}><b>array-dimension</b></DictionaryLink> returns the *axis-number dimension*<sub>1</sub> of <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. (Any *fill pointer* is ignored.) **Examples:**
 ```lisp
-(array-dimension (make-array 4) 0) → 4 
-(array-dimension (make-array ’(2 3)) 1) → 3 
+
+(array-dimension (make-array 4) 0) *→* 4 
+(array-dimension (make-array ’(2 3)) 1) *→* 3 
+
 ```
 **Affected By:** 
 
@@ -45,7 +45,7 @@ None.
 
 
 
-<ClLinks  term={"array-dimensions"}><b>array-dimensions</b></ClLinks>, <ClLinks  term={"length"}><b>length</b></ClLinks> 
+<DictionaryLink styled={true} term={"array-dimensions"}><b>array-dimensions</b></DictionaryLink>, <DictionaryLink styled={true} term={"length"}><b>length</b></DictionaryLink> 
 
 
 

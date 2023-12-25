@@ -1,4 +1,4 @@
-**pairlis** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**pairlis** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"pairlis"}><b>pairlis</b></ClLinks> *keys data* &amp;optional *alist → new-alist* 
+<DictionaryLink styled={true} term={"pairlis"}><b>pairlis</b></DictionaryLink> *keys data* &amp;optional *alist → new-alist* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"key"}><i>keys</i></ClLinks>—a *proper list*. 
+<GlossaryTerm styled={true} term={"key"}><i>keys</i></GlossaryTerm>—a *proper list*. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>—an *association list*. The default is the *empty list*. 
+<GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm>—an *association list*. The default is the *empty list*. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-Returns an *association list* that associates elements of <ClLinks styled={true} term={"key"}><i>keys</i></ClLinks> to corresponding elements of *data*. The consequences are undefined if <ClLinks styled={true} term={"key"}><i>keys</i></ClLinks> and *data* are not of the same <ClLinks styled={true} term={"length"}><i>length</i></ClLinks>. 
+Returns an *association list* that associates elements of <GlossaryTerm styled={true} term={"key"}><i>keys</i></GlossaryTerm> to corresponding elements of *data*. The consequences are undefined if <GlossaryTerm styled={true} term={"key"}><i>keys</i></GlossaryTerm> and *data* are not of the same <GlossaryTerm styled={true} term={"length"}><i>length</i></GlossaryTerm>. 
 
 
 
-If <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> is supplied, <ClLinks styled={true} term={"pairlis"}><b>pairlis</b></ClLinks> returns a modified <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> with the new pairs prepended to it. The new pairs may appear in the resulting *association list* in either forward or backward order. The result of 
+If <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm> is supplied, <DictionaryLink styled={true} term={"pairlis"}><b>pairlis</b></DictionaryLink> returns a modified <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm> with the new pairs prepended to it. The new pairs may appear in the resulting *association list* in either forward or backward order. The result of 
 
 
 
@@ -76,19 +76,21 @@ or
 
 **Examples:**
 ```lisp
+
 (setq keys ’(1 2 3) 
       data ’("one" "two" "three") 
-      alist ’((4 . "four"))) → ((4 . "four")) 
-(pairlis keys data) → ((3 . "three") (2 . "two") (1 . "one")) 
+      alist ’((4 . "four"))) *→* ((4 . "four")) 
+(pairlis keys data) *→* ((3 . "three") (2 . "two") (1 . "one")) 
 (pairlis keys data alist) 
-→ ((3 . "three") (2 . "two") (1 . "one") (4 . "four")) 
-alist → ((4 . "four")) 
+*→* ((3 . "three") (2 . "two") (1 . "one") (4 . "four")) 
+alist *→* ((4 . "four")) 
+
 ```
 **Exceptional Situations:** 
 
 
 
-Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"key"}><i>keys</i></ClLinks> and *data* are not *proper lists*. 
+Should be prepared to signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"key"}><i>keys</i></GlossaryTerm> and *data* are not *proper lists*. 
 
 
 
@@ -96,7 +98,7 @@ Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i
 
 
 
-<ClLinks styled={true} term={"acons"}><b>acons</b></ClLinks> 
+<DictionaryLink styled={true} term={"acons"}><b>acons</b></DictionaryLink> 
 
 
 

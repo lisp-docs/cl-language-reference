@@ -2,43 +2,39 @@
 
 
 
-The interactive condition handler returns only through non-local transfer of control to specially defined <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> that can be set up either by the system or by user code. Transferring control to a restart is called “invoking” the restart. Like handlers, active <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> are *established* dynamically, and only active <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> can be invoked. An active <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> can be invoked by the user from the debugger or by a program by using <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>. 
+The interactive condition handler returns only through non-local transfer of control to specially defined <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> that can be set up either by the system or by user code. Transferring control to a restart is called “invoking” the restart. Like handlers, active <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> are *established* dynamically, and only active <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> can be invoked. An active <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> can be invoked by the user from the debugger or by a program by using <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink>. 
 
 
 
-A <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> contains a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> to be *called* when the <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is invoked, an optional name that can be used to find or invoke the <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, and an optional set of interaction information for the debugger to use to enable the user to manually invoke a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>. 
+A <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> contains a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> to be *called* when the <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> is invoked, an optional name that can be used to find or invoke the <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm>, and an optional set of interaction information for the debugger to use to enable the user to manually invoke a <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm>. 
 
 
 
-The name of a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is used by <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>. <ClLinks styled={true} term={"restart"}><i>Restarts</i></ClLinks> that can be invoked only within the debugger do not need names. 
+The name of a <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> is used by <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink>. <GlossaryTerm styled={true} term={"restart"}><i>Restarts</i></GlossaryTerm> that can be invoked only within the debugger do not need names. 
 
 
 
-<ClLinks styled={true} term={"restart"}><i>Restarts</i></ClLinks> can be established by using <ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks>, <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>, and <ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks>. A <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> function can itself invoke any other <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> that was active at the time of establishment of the <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> of which the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is part. 
+<GlossaryTerm styled={true} term={"restart"}><i>Restarts</i></GlossaryTerm> can be established by using <DictionaryLink styled={true} term={"restart-bind"}><b>restart-bind</b></DictionaryLink>, <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink>, and <DictionaryLink styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></DictionaryLink>. A <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> function can itself invoke any other <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> that was active at the time of establishment of the <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> of which the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> is part. 
 
 
 
-The *restarts established* by a <ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, a <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, or a <ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> have *dynamic extent* which extends for the duration of that <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>’s execution. 
+The *restarts established* by a <DictionaryLink styled={true} term={"restart-bind"}><b>restart-bind</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>, a <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>, or a <DictionaryLink styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> have *dynamic extent* which extends for the duration of that <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>’s execution. 
 
 
 
-<ClLinks styled={true} term={"restart"}><i>Restarts</i></ClLinks> of the same name can be ordered from least recent to most recent according to the following two rules: 
+<GlossaryTerm styled={true} term={"restart"}><i>Restarts</i></GlossaryTerm> of the same name can be ordered from least recent to most recent according to the following two rules: 
 
 
 
-1\. Each <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> in a set of active restarts *R*<sub>1</sub> is more recent than every <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> in a set *R*<sub>2</sub> if the <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> in *R*<sub>2</sub> were active when the <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> in *R*<sub>1</sub> were established. 
+1\. Each <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> in a set of active restarts *R*<sub>1</sub> is more recent than every <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> in a set *R*<sub>2</sub> if the <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> in *R*<sub>2</sub> were active when the <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> in *R*<sub>1</sub> were established. 
 
 
 
-2\. Let *r*<sub>1</sub> and *r*<sub>2</sub> be two active <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> with the same name established by the same <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. Then *r*<sub>1</sub> is more recent than *r*<sub>2</sub> if *r*<sub>1</sub> was defined to the left of *r*<sub>2</sub> in the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that established them. 
-
-
+2\. Let *r*<sub>1</sub> and *r*<sub>2</sub> be two active <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> with the same name established by the same <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. Then *r*<sub>1</sub> is more recent than *r*<sub>2</sub> if *r*<sub>1</sub> was defined to the left of *r*<sub>2</sub> in the <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> that established them. 
 
 
 
 
-
- 
 
 
 
@@ -46,7 +42,11 @@ The *restarts established* by a <ClLinks styled={true} term={"restart-bind"}><b>
 
 
 
-If a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is invoked but does not transfer control, the values resulting from the <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> function are returned by the function that invoked the restart, either <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks> or <ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks>. 
+ 
+
+
+
+If a <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> is invoked but does not transfer control, the values resulting from the <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> function are returned by the function that invoked the restart, either <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink> or <DictionaryLink styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></DictionaryLink>. 
 
 
 

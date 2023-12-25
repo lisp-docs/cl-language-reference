@@ -1,4 +1,4 @@
-**make-concatenated-stream** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**make-concatenated-stream** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"make-concatenated-stream"}><b>make-concatenated-stream</b></ClLinks> &amp;rest *input-streams → concatenated-stream* 
+<DictionaryLink styled={true} term={"make-concatenated-stream"}><b>make-concatenated-stream</b></DictionaryLink> &amp;rest *input-streams → concatenated-stream* 
 
 
 
@@ -26,19 +26,19 @@
 
 
 
-Returns a *concatenated stream* that has the indicated *input-streams* initially associated with it. 
-
-**Examples:**
+Returns a *concatenated stream* that has the indicated *input-streams* initially associated with it. **Examples:**
 ```lisp
+
 (read (make-concatenated-stream 
        (make-string-input-stream "1") 
-       (make-string-input-stream "2"))) → 12 
+       (make-string-input-stream "2"))) *→* 12 
+
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if any argument is not an *input stream*. 
+Should signal <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if any argument is not an *input stream*. 
 
 
 

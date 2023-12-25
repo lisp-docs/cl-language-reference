@@ -1,4 +1,4 @@
-**name-char** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**name-char** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"name-char"}><b>name-char</b></ClLinks> *name → char-p* 
+<DictionaryLink styled={true} term={"name-char"}><b>name-char</b></DictionaryLink> *name → char-p* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a *string designator* . 
+<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a *string designator* . 
 
 
 
-*char-p*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*char-p*—a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -26,23 +26,25 @@
 
 
 
-Returns the *character object* whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> (as determined by **string-equal**—*i.e.*, lookup is not case sensitive). If such a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> does not exist, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is returned. 
+Returns the *character object* whose <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> (as determined by **string-equal**—*i.e.*, lookup is not case sensitive). If such a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> does not exist, <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is returned. 
 
 
 
 **Examples:**
 ```lisp
-(name-char ’space) → #\Space 
-(name-char "space") → #\Space 
-(name-char "Space") → #\Space 
+
+(name-char ’space) *→* #\Space 
+(name-char "space") *→* #\Space 
+(name-char "Space") *→* #\Space 
 (let ((x (char-name #\a))) 
-  (or (not x) (eql (name-char x) #\a))) → true 
+  (or (not x) (eql (name-char x) #\a))) *→ true* 
+
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is not a *string designator* . 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is not a *string designator* . 
 
 
 
@@ -50,7 +52,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"char-name"}><b>char-name</b></ClLinks> 
+<DictionaryLink styled={true} term={"char-name"}><b>char-name</b></DictionaryLink> 
 
 
 

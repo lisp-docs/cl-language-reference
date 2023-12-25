@@ -1,4 +1,4 @@
-**define-modify-macro** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**define-modify-macro** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks> *name lambda-list function* [*documentation*] *! name* 
+<DictionaryLink styled={true} term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink> *name lambda-list function* [*documentation*] *! name* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-*documentation*—a <ClLinks  term={"string"}><i>string</i></ClLinks>; not evaluated. 
+*documentation*—a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>; not evaluated. 
 
 
 
@@ -34,23 +34,23 @@
 
 
 
-<ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks> defines a <ClLinks  term={"macro"}><i>macro</i></ClLinks> named <ClLinks  term={"name"}><i>name</i></ClLinks> to <ClLinks  term={"read"}><i>read</i></ClLinks> and <ClLinks  term={"write"}><i>write</i></ClLinks> a <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+<DictionaryLink styled={true} term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink> defines a <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> named <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> to <GlossaryTerm styled={true} term={"read"}><i>read</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"write"}><i>write</i></GlossaryTerm> a <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>. 
 
 
 
-The arguments to the new <ClLinks  term={"macro"}><i>macro</i></ClLinks> are a <ClLinks  term={"place"}><i>place</i></ClLinks>, followed by the arguments that are supplied in *lambda-list*. <ClLinks  term={"macro"}><i>Macros</i></ClLinks> defined with <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks> correctly pass the *environment parameter* to <ClLinks  term={"get-setf-expansion"}><b>get-setf-expansion</b></ClLinks>. 
+The arguments to the new <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> are a <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>, followed by the arguments that are supplied in *lambda-list*. <GlossaryTerm styled={true} term={"macro"}><i>Macros</i></GlossaryTerm> defined with <DictionaryLink styled={true} term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink> correctly pass the *environment parameter* to <DictionaryLink styled={true} term={"get-setf-expansion"}><b>get-setf-expansion</b></DictionaryLink>. 
 
 
 
-When the <ClLinks  term={"macro"}><i>macro</i></ClLinks> is invoked, <ClLinks  term={"function"}><i>function</i></ClLinks> is applied to the old contents of the <ClLinks  term={"place"}><i>place</i></ClLinks> and the *lambda-list* arguments to obtain the new value, and the <ClLinks  term={"place"}><i>place</i></ClLinks> is updated to contain the result. 
+When the <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> is invoked, <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> is applied to the old contents of the <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> and the *lambda-list* arguments to obtain the new value, and the <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> is updated to contain the result. 
 
 
 
-Except for the issue of avoiding multiple evaluation (see below), the expansion of a <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks> is equivalent to the following: 
+Except for the issue of avoiding multiple evaluation (see below), the expansion of a <DictionaryLink styled={true} term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink> is equivalent to the following: 
 
 
 
-(defmacro <ClLinks  term={"name"}><i>name</i></ClLinks> (reference . *lambda-list*) 
+(defmacro <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> (reference . *lambda-list*) 
 
 
 
@@ -62,7 +62,7 @@ Except for the issue of avoiding multiple evaluation (see below), the expansion 
 
 
 
-(<ClLinks  term={"function"}><i>function</i></ClLinks> ,reference ,*arg1* ,*arg2* ...))) 
+(<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> ,reference ,*arg1* ,*arg2* ...))) 
 
 
 
@@ -70,15 +70,15 @@ where *arg1*, *arg2*, ..., are the parameters appearing in *lambda-list*; approp
 
 
 
-The <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the macro calls defined by <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks> are evaluated as specified in Section 5.1.1.1 (Evaluation of Subforms to Places). 
+The <GlossaryTerm styled={true} term={"subform"}><i>subforms</i></GlossaryTerm> of the macro calls defined by <DictionaryLink styled={true} term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink> are evaluated as specified in Section 5.1.1.1 (Evaluation of Subforms to Places). 
 
 
 
-*Documentation* is attached as a *documentation string* to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind <ClLinks  term={"function"}><b>function</b></ClLinks>) and to the *macro function*. 
+*Documentation* is attached as a *documentation string* to <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> (as kind <DictionaryLink styled={true} term={"function"}><b>function</b></DictionaryLink>) and to the *macro function*. 
 
 
 
-If a <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a *top level form*, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must store the <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition at compile time, so that occurrences of the macro later on in the file can be expanded correctly. 
+If a <DictionaryLink styled={true} term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> appears as a *top level form*, the <GlossaryTerm styled={true} term={"compiler"}><i>compiler</i></GlossaryTerm> must store the <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> definition at compile time, so that occurrences of the macro later on in the file can be expanded correctly. 
 
 
 
@@ -96,6 +96,7 @@ If a <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks>
 
 **Examples:**
 ```lisp
+
 (define-modify-macro appendf (&rest args) 
   append "Append onto list") *!* APPENDF 
 (setq x ’(a b c) y x) *!* (A B C) 
@@ -104,12 +105,13 @@ x *!* (A B C D E F 1 2 3)
 y *!* (A B C) 
 (define-modify-macro new-incf (&optional (delta 1)) +) 
 (define-modify-macro unionf (other-set &rest keywords) union) 
+
 ```
 **Side Eects:** 
 
 
 
-A macro definition is assigned to <ClLinks  term={"name"}><i>name</i></ClLinks>. 
+A macro definition is assigned to <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>. 
 
 
 
@@ -117,7 +119,7 @@ A macro definition is assigned to <ClLinks  term={"name"}><i>name</i></ClLinks>.
 
 
 
-<ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks>, <ClLinks  term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>, **documentation**, Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
+<DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink>, <DictionaryLink styled={true} term={"define-setf-expander"}><b>define-setf-expander</b></DictionaryLink>, **documentation**, Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
 
 
 

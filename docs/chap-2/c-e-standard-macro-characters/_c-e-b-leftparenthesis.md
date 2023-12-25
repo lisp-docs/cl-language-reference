@@ -2,7 +2,7 @@
 
 
 
-The <ClLinks  term={"left-parenthesis"}><i>left-parenthesis</i></ClLinks> initiates reading of a <ClLinks  term={"list"}><i>list</i></ClLinks>. <ClLinks  term={"read"}><b>read</b></ClLinks> is called recursively to read successive <ClLinks  term={"object"}><i>objects</i></ClLinks> until a right parenthesis is found in the input <ClLinks  term={"stream"}><i>stream</i></ClLinks>. A <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"object"}><i>objects</i></ClLinks> read is returned. Thus 
+The <GlossaryTerm styled={true} term={"left-parenthesis"}><i>left-parenthesis</i></GlossaryTerm> initiates reading of a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. <DictionaryLink styled={true} term={"read"}><b>read</b></DictionaryLink> is called recursively to read successive <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> until a right parenthesis is found in the input <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. A <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> read is returned. Thus 
 
 
 
@@ -10,15 +10,15 @@ The <ClLinks  term={"left-parenthesis"}><i>left-parenthesis</i></ClLinks> initia
 
 
 
-is read as a <ClLinks  term={"list"}><i>list</i></ClLinks> of three <ClLinks  term={"object"}><i>objects</i></ClLinks> (the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> a, b, and c). The right parenthesis need not immediately follow the printed representation of the last <ClLinks  term={"object"}><i>object</i></ClLinks>; <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> characters and comments may precede it. 
+is read as a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of three <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> (the <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> a, b, and c). The right parenthesis need not immediately follow the printed representation of the last <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>; <GlossaryTerm styled={true} term={"whitespace"}><i>whitespace</i></GlossaryTerm><sub>2</sub> characters and comments may precede it. 
 
 
 
-If no <ClLinks  term={"object"}><i>objects</i></ClLinks> precede the right parenthesis, it reads as a <ClLinks  term={"list"}><i>list</i></ClLinks> of zero <ClLinks  term={"object"}><i>objects</i></ClLinks> (the *empty list*). 
+If no <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> precede the right parenthesis, it reads as a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of zero <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> (the *empty list*). 
 
 
 
-If a <ClLinks  term={"token"}><i>token</i></ClLinks> that is just a dot not immediately preceded by an escape character is read after some <ClLinks  term={"object"}><i>object</i></ClLinks> then exactly one more <ClLinks  term={"object"}><i>object</i></ClLinks> must follow the dot, possibly preceded or followed by <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> or a comment, followed by the right parenthesis: 
+If a <GlossaryTerm styled={true} term={"token"}><i>token</i></GlossaryTerm> that is just a dot not immediately preceded by an escape character is read after some <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> then exactly one more <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> must follow the dot, possibly preceded or followed by <GlossaryTerm styled={true} term={"whitespace"}><i>whitespace</i></GlossaryTerm><sub>2</sub> or a comment, followed by the right parenthesis: 
 
 
 
@@ -26,7 +26,7 @@ If a <ClLinks  term={"token"}><i>token</i></ClLinks> that is just a dot not imme
 
 
 
-This means that the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> of the last <ClLinks  term={"cons"}><i>cons</i></ClLinks> in the <ClLinks  term={"list"}><i>list</i></ClLinks> is not <ClLinks  term={"nil"}><b>nil</b></ClLinks>, but rather the <ClLinks  term={"object"}><i>object</i></ClLinks> whose representation followed the dot. The above example might have been the result of evaluating 
+This means that the <GlossaryTerm styled={true} term={"cdr"}><i>cdr</i></GlossaryTerm> of the last <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> is not <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, but rather the <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> whose representation followed the dot. The above example might have been the result of evaluating 
 
 
 
@@ -38,11 +38,11 @@ Similarly,
 
 
 
-(cons ’this-one ’that-one) → (this-one . that-one) 
+(cons ’this-one ’that-one) *→* (this-one . that-one) 
 
 
 
-It is permissible for the <ClLinks  term={"object"}><i>object</i></ClLinks> following the dot to be a <ClLinks  term={"list"}><i>list</i></ClLinks>: 
+It is permissible for the <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> following the dot to be a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>: 
 
 
 
@@ -50,7 +50,7 @@ It is permissible for the <ClLinks  term={"object"}><i>object</i></ClLinks> foll
 
 
 
-For information on how the *Lisp printer* prints <ClLinks  term={"list"}><i>lists</i></ClLinks> and *conses*, see Section 22.1.3.5 (Printing Lists and Conses). 
+For information on how the *Lisp printer* prints <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm> and *conses*, see Section 22.1.3.5 (Printing Lists and Conses). 
 
 
 

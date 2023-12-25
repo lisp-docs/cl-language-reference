@@ -1,4 +1,4 @@
-**ldb-test** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**ldb-test** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"ldb-test"}><b>ldb-test</b></ClLinks> *bytespec integer ! generalized-boolean* 
+<DictionaryLink styled={true} term={"ldb-test"}><b>ldb-test</b></DictionaryLink> *bytespec integer ! generalized-boolean* 
 
 
 
@@ -30,21 +30,23 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if any of the bits of the byte in *integer* specified by *bytespec* is non-zero; otherwise returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if any of the bits of the byte in *integer* specified by *bytespec* is non-zero; otherwise returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
 **Examples:**
 ```lisp
+
 (ldb-test (byte 4 1) 16) *! true* 
 (ldb-test (byte 3 1) 16) *! false* 
 (ldb-test (byte 3 2) 16) *! true* 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"byte"}><b>byte</b></ClLinks>, <ClLinks  term={"ldb"}><b>ldb</b></ClLinks>, <ClLinks  term={"zerop"}><b>zerop</b></ClLinks> 
+<DictionaryLink styled={true} term={"byte"}><b>byte</b></DictionaryLink>, <DictionaryLink styled={true} term={"ldb"}><b>ldb</b></DictionaryLink>, <DictionaryLink styled={true} term={"zerop"}><b>zerop</b></DictionaryLink> 
 
 
 

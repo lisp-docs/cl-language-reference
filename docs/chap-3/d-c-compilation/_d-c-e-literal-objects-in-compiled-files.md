@@ -2,11 +2,11 @@
 
 
 
-The functions <ClLinks  term={"eval"}><b>eval</b></ClLinks> and <ClLinks  term={"compile"}><b>compile</b></ClLinks> are required to ensure that *literal objects* referenced within the resulting interpreted or compiled code objects are the <ClLinks  term={"same"}><i>same</i></ClLinks> as the corresponding <ClLinks  term={"object"}><i>objects</i></ClLinks> in the *source code*. <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, on the other hand, must produce a *compiled file* that, when loaded with <ClLinks  term={"load"}><b>load</b></ClLinks>, constructs the <ClLinks  term={"object"}><i>objects</i></ClLinks> defined by the *source code* and produces references to them. 
+The functions <DictionaryLink styled={true} term={"eval"}><b>eval</b></DictionaryLink> and <DictionaryLink styled={true} term={"compile"}><b>compile</b></DictionaryLink> are required to ensure that *literal objects* referenced within the resulting interpreted or compiled code objects are the <GlossaryTerm styled={true} term={"same"}><i>same</i></GlossaryTerm> as the corresponding <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> in the *source code*. <DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink>, on the other hand, must produce a *compiled file* that, when loaded with <DictionaryLink styled={true} term={"load"}><b>load</b></DictionaryLink>, constructs the <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> defined by the *source code* and produces references to them. 
 
 
 
-In the case of <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks  term={"object"}><i>objects</i></ClLinks> constructed by <ClLinks  term={"load"}><b>load</b></ClLinks> of the *compiled file* cannot be spoken of as being the <ClLinks  term={"same"}><i>same</i></ClLinks> as the <ClLinks  term={"object"}><i>objects</i></ClLinks> constructed at compile time, because the *compiled file* may be loaded into a different *Lisp image* than the one in which it was compiled. This section defines the concept of <ClLinks  term={"similarity"}><i>similarity</i></ClLinks> which relates <ClLinks  term={"object"}><i>objects</i></ClLinks> in the *evaluation environment* to the corresponding <ClLinks  term={"object"}><i>objects</i></ClLinks> in 
+In the case of <DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink>, <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> constructed by <DictionaryLink styled={true} term={"load"}><b>load</b></DictionaryLink> of the *compiled file* cannot be spoken of as being the <GlossaryTerm styled={true} term={"same"}><i>same</i></GlossaryTerm> as the <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> constructed at compile time, because the *compiled file* may be loaded into a different *Lisp image* than the one in which it was compiled. This section defines the concept of <GlossaryTerm styled={true} term={"similarity"}><i>similarity</i></GlossaryTerm> which relates <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> in the *evaluation environment* to the corresponding <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> in 
 
 
 
@@ -14,7 +14,7 @@ the *run-time environment*.
 
 
 
-The constraints on *literal objects* described in this section apply only to <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>; <ClLinks  term={"eval"}><b>eval</b></ClLinks> and <ClLinks  term={"compile"}><b>compile</b></ClLinks> do not copy or coalesce constants. 
+The constraints on *literal objects* described in this section apply only to <DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink>; <DictionaryLink styled={true} term={"eval"}><b>eval</b></DictionaryLink> and <DictionaryLink styled={true} term={"compile"}><b>compile</b></DictionaryLink> do not copy or coalesce constants. 
 
 
 

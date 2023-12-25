@@ -1,4 +1,4 @@
-**mod, rem** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**mod, rem** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"mod"}><b>mod</b></ClLinks> *number divisor → modulus* 
+<DictionaryLink styled={true} term={"mod"}><b>mod</b></DictionaryLink> *number divisor → modulus* 
 
 
 
-<ClLinks  term={"rem"}><b>rem</b></ClLinks> *number divisor → remainder* 
+<DictionaryLink styled={true} term={"rem"}><b>rem</b></DictionaryLink> *number divisor → remainder* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a *real*. 
+<GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>—a *real*. 
 
 
 
@@ -34,36 +34,37 @@
 
 
 
-<ClLinks  term={"mod"}><b>mod</b></ClLinks> and <ClLinks  term={"rem"}><b>rem</b></ClLinks> are generalizations of the modulus and remainder functions respectively. 
+<DictionaryLink styled={true} term={"mod"}><b>mod</b></DictionaryLink> and <DictionaryLink styled={true} term={"rem"}><b>rem</b></DictionaryLink> are generalizations of the modulus and remainder functions respectively. 
 
 
 
-<ClLinks  term={"mod"}><b>mod</b></ClLinks> performs the operation <ClLinks  term={"floor"}><b>floor</b></ClLinks> on <ClLinks  term={"number"}><i>number</i></ClLinks> and *divisor* and returns the remainder of the <ClLinks  term={"floor"}><b>floor</b></ClLinks> operation. 
+<DictionaryLink styled={true} term={"mod"}><b>mod</b></DictionaryLink> performs the operation <DictionaryLink styled={true} term={"floor"}><b>floor</b></DictionaryLink> on <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> and *divisor* and returns the remainder of the <DictionaryLink styled={true} term={"floor"}><b>floor</b></DictionaryLink> operation. 
 
 
 
-<ClLinks  term={"rem"}><b>rem</b></ClLinks> performs the operation <ClLinks  term={"truncate"}><b>truncate</b></ClLinks> on <ClLinks  term={"number"}><i>number</i></ClLinks> and *divisor* and returns the remainder of the <ClLinks  term={"truncate"}><b>truncate</b></ClLinks> operation. 
+<DictionaryLink styled={true} term={"rem"}><b>rem</b></DictionaryLink> performs the operation <DictionaryLink styled={true} term={"truncate"}><b>truncate</b></DictionaryLink> on <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> and *divisor* and returns the remainder of the <DictionaryLink styled={true} term={"truncate"}><b>truncate</b></DictionaryLink> operation. 
 
 
 
-<ClLinks  term={"mod"}><b>mod</b></ClLinks> and <ClLinks  term={"rem"}><b>rem</b></ClLinks> are the modulus and remainder functions when <ClLinks  term={"number"}><i>number</i></ClLinks> and *divisor* are *integers*. 
-
-**Examples:**
+<DictionaryLink styled={true} term={"mod"}><b>mod</b></DictionaryLink> and <DictionaryLink styled={true} term={"rem"}><b>rem</b></DictionaryLink> are the modulus and remainder functions when <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> and *divisor* are *integers*. **Examples:**
 ```lisp
-(rem -1 5) → -1 
-(mod -1 5) → 4 
-(mod 13 4) → 1 
-(rem 13 4) → 1 
-(mod -13 4) → 3 
-(rem -13 4) → -1 
-(mod 13 -4) → -3 
-(rem 13 -4) → 1 
-(mod -13 -4) → -1 
-(rem -13 -4) → -1 
-(mod 13.4 1) → 0.4 
-(rem 13.4 1) → 0.4 
-(mod -13.4 1) → 0.6 
-(rem -13.4 1) → -0.4 
+
+(rem -1 5) *→* -1 
+(mod -1 5) *→* 4 
+(mod 13 4) *→* 1 
+(rem 13 4) *→* 1 
+(mod -13 4) *→* 3 
+(rem -13 4) *→* -1 
+(mod 13 -4) *→* -3 
+(rem 13 -4) *→* 1 
+(mod -13 -4) *→* -1 
+(rem -13 -4) *→* -1 
+(mod 13.4 1) *→* 0.4 
+(rem 13.4 1) *→* 0.4 
+(mod -13.4 1) *→* 0.6 
+(rem -13.4 1) *→* -0.4 
+
+
 
 
 ```
@@ -71,7 +72,7 @@
 
 
 
-<ClLinks  term={"floor"}><b>floor</b></ClLinks>, <ClLinks  term={"truncate"}><b>truncate</b></ClLinks> 
+<DictionaryLink styled={true} term={"floor"}><b>floor</b></DictionaryLink>, <DictionaryLink styled={true} term={"truncate"}><b>truncate</b></DictionaryLink> 
 
 
 
@@ -79,7 +80,7 @@
 
 
 
-The result of <ClLinks  term={"mod"}><b>mod</b></ClLinks> is either zero or a *real* with the same sign as *divisor*. 
+The result of <DictionaryLink styled={true} term={"mod"}><b>mod</b></DictionaryLink> is either zero or a *real* with the same sign as *divisor*. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-A positive *integer* , the magnitude of which is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+A positive *integer* , the magnitude of which is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@ The number of *internal time units* in one second.
 
 
 
-<ClLinks styled={true} term={"get-internal-run-time"}><b>get-internal-run-time</b></ClLinks>, <ClLinks styled={true} term={"get-internal-real-time"}><b>get-internal-real-time</b></ClLinks> 
+<DictionaryLink styled={true} term={"get-internal-run-time"}><b>get-internal-run-time</b></DictionaryLink>, <DictionaryLink styled={true} term={"get-internal-real-time"}><b>get-internal-real-time</b></DictionaryLink> 
 
 
 

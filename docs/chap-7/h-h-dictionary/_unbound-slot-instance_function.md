@@ -1,4 +1,4 @@
-**unbound-slot-instance** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**unbound-slot-instance** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"unbound-slot-instance"}><b>unbound-slot-instance</b></ClLinks> *condition ! instance* 
+<DictionaryLink styled={true} term={"unbound-slot-instance"}><b>unbound-slot-instance</b></DictionaryLink> *condition ! instance* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"unbound-slot"}><b>unbound-slot</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"unbound-slot"}><b>unbound-slot</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"instance"}><i>instance</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"instance"}><i>instance</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the instance which had the unbound slot in the <ClLinks  term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks  term={"condition"}><i>condition</i></ClLinks>. 
+Returns the instance which had the unbound slot in the <GlossaryTerm styled={true} term={"situation"}><i>situation</i></GlossaryTerm> represented by the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@ Returns the instance which had the unbound slot in the <ClLinks  term={"situatio
 
 
 
-<ClLinks  term={"cell-error-name"}><b>cell-error-name</b></ClLinks>, <ClLinks  term={"unbound-slot"}><b>unbound-slot</b></ClLinks>, Section 9.1 (Condition System Concepts) 
+<DictionaryLink styled={true} term={"cell-error-name"}><b>cell-error-name</b></DictionaryLink>, <DictionaryLink styled={true} term={"unbound-slot"}><b>unbound-slot</b></DictionaryLink>, Section 9.1 (Condition System Concepts) 
 
 
 

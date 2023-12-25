@@ -1,4 +1,4 @@
-**make-pathname** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**make-pathname** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"make-pathname"}><b>make-pathname</b></ClLinks> &amp;key *host device directory name type version defaults case* 
+<DictionaryLink styled={true} term={"make-pathname"}><b>make-pathname</b></DictionaryLink> &amp;key *host device directory name type version defaults case* 
 
 
 
-→ pathname 
+*→ pathname* 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-*directory*—a *valid pathname directory*. Complicated defaulting behavior; see below. <ClLinks  term={"name"}><i>name</i></ClLinks>—a *valid pathname name*. Complicated defaulting behavior; see below. 
+*directory*—a *valid pathname directory*. Complicated defaulting behavior; see below. <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a *valid pathname name*. Complicated defaulting behavior; see below. 
 
 
 
-<ClLinks  term={"type"}><i>type</i></ClLinks>—a *valid pathname type*. Complicated defaulting behavior; see below. 
+<GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>—a *valid pathname type*. Complicated defaulting behavior; see below. 
 
 
 
@@ -34,15 +34,15 @@
 
 
 
-*defaults*—a *pathname designator* . The default is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> whose host component is the same as the host component of the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></ClLinks>, and whose other components are all <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*defaults*—a *pathname designator* . The default is a <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> whose host component is the same as the host component of the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></DictionaryLink>, and whose other components are all <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"case"}><i>case</i></ClLinks>—one of :common or :local. The default is :local. 
+<GlossaryTerm styled={true} term={"case"}><i>case</i></GlossaryTerm>—one of :common or :local. The default is :local. 
 
 
 
-<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm>. 
 
 
 
@@ -50,31 +50,27 @@
 
 
 
-Constructs and returns a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> from the supplied keyword arguments. 
+Constructs and returns a <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> from the supplied keyword arguments. 
 
 
 
-After the components supplied explicitly by *host*, *device*, *directory*, <ClLinks  term={"name"}><i>name</i></ClLinks>, <ClLinks  term={"type"}><i>type</i></ClLinks>, and *version* are filled in, the merging rules used by <ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks> are used to fill in any unsupplied components from the defaults supplied by *defaults*. 
+After the components supplied explicitly by *host*, *device*, *directory*, <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>, and *version* are filled in, the merging rules used by <DictionaryLink styled={true} term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> are used to fill in any unsupplied components from the defaults supplied by *defaults*. 
 
 
 
-Whenever a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is constructed the components may be canonicalized if appropriate. For the explanation of the arguments that can be supplied for each component, see Section 19.2.1 (Pathname Components). 
+Whenever a <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> is constructed the components may be canonicalized if appropriate. For the explanation of the arguments that can be supplied for each component, see Section 19.2.1 (Pathname Components). 
 
 
 
-If <ClLinks  term={"case"}><i>case</i></ClLinks> is supplied, it is treated as described in Section 19.2.2.1.2 (Case in Pathname Components). 
+If <GlossaryTerm styled={true} term={"case"}><i>case</i></GlossaryTerm> is supplied, it is treated as described in Section 19.2.2.1.2 (Case in Pathname Components). 
 
 
 
-The resulting <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a *logical pathname* if and only its host component is a *logical host* or a <ClLinks  term={"string"}><i>string</i></ClLinks> that names a defined *logical host*. 
-
-
+The resulting <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> is a *logical pathname* if and only its host component is a *logical host* or a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> that names a defined *logical host*. 
 
 
 
 
-
- 
 
 
 
@@ -82,22 +78,27 @@ The resulting <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a *logica
 
 
 
-<ClLinks  term={"make-pathname"}><b>make-pathname</b></ClLinks> 
+ 
 
 
 
-If the *directory* is a <ClLinks  term={"string"}><i>string</i></ClLinks>, it should be the name of a top level directory, and should not contain any punctuation characters; that is, specifying a <ClLinks  term={"string"}><i>string</i></ClLinks>, *str*, is equivalent to specifying the list (:absolute *str*). Specifying the symbol :wild is equivalent to specifying the list (:absolute :wild-inferiors), or (:absolute :wild) in a file system that does not support :wild-inferiors. 
+<DictionaryLink styled={true} term={"make-pathname"}><b>make-pathname</b></DictionaryLink> 
+
+
+
+If the *directory* is a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>, it should be the name of a top level directory, and should not contain any punctuation characters; that is, specifying a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>, *str*, is equivalent to specifying the list (:absolute *str*). Specifying the symbol :wild is equivalent to specifying the list (:absolute :wild-inferiors), or (:absolute :wild) in a file system that does not support :wild-inferiors. 
 
 
 
 **Examples:**
 ```lisp
+
 ;; Implementation A – an implementation with access to a single 
 ;; Unix file system. This implementation happens to never display 
 ;; the ‘host’ information in a namestring, since there is only one host. 
 (make-pathname :directory ’(:absolute "public" "games") 
 	       :name "chess" :type "db") 
-→ #P"/public/games/chess.db" 
+*→* #P"/public/games/chess.db" 
 ;; Implementation B – an implementation with access to one or more 
 ;; VMS file systems. This implementation displays ‘host’ information 
 ;; in the namestring only when the host is not the local host. 
@@ -105,11 +106,11 @@ If the *directory* is a <ClLinks  term={"string"}><i>string</i></ClLinks>, it sh
 ;; file name. 
 (make-pathname :directory ’(:absolute "PUBLIC" "GAMES") 
 	       :name "CHESS" :type "DB") 
-→ #P"SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
+*→* #P"SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
 (make-pathname :host "BOBBY" 
 	       :directory ’(:absolute "PUBLIC" "GAMES") 
 	       :name "CHESS" :type "DB") 
-→ #P"BOBBY::SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
+*→* #P"BOBBY::SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
 ;; Implementation C – an implementation with simultaneous access to 
 ;; multiple file systems from the same Lisp image. In this 
 ;; implementation, there is a convention that any text preceding the 
@@ -125,8 +126,11 @@ If the *directory* is a <ClLinks  term={"string"}><i>string</i></ClLinks>, it sh
 ▷ #P"MY-LISPM:>public>games>chess.db" 
 ▷ #P"MY-VAX:SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
 
+
+
 ▷ #P"MY-UNIX:/PUBLIC/GAMES/CHESS.DB" 
-→ NIL 
+*→* NIL 
+
 ```
 **Affected By:** 
 
@@ -140,7 +144,7 @@ The *file system*.
 
 
 
-<ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<DictionaryLink styled={true} term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink>, <DictionaryLink styled={true} term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink styled={true} term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 

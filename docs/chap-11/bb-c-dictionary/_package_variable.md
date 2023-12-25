@@ -1,4 +1,4 @@
-*∗<ClLinks  term={"package"}><b><ClLinks  term={"package"}><i>package</i></ClLinks></b></ClLinks>∗ Variable* 
+*∗<DictionaryLink styled={true} term={"package"}><b><GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm></b></DictionaryLink>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a *package object*.
 
 
 
-the COMMON-LISP-USER <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+the COMMON-LISP-USER <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
@@ -22,35 +22,36 @@ the COMMON-LISP-USER <ClLinks  term={"package"}><i>package</i></ClLinks>.
 
 
 
-Whatever *package object* is currently the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"package"}><b>\*package\*</b></ClLinks> is referred to as the *current package*. 
-
-**Examples:**
+Whatever *package object* is currently the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"package"}><b>\*package\*</b></DictionaryLink> is referred to as the *current package*. **Examples:**
 ```lisp
-(in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
-\*package\* → #<PACKAGE "COMMON-LISP-USER"> 
+
+(in-package "COMMON-LISP-USER") *→* #<PACKAGE "COMMON-LISP-USER"> 
+\*package\* *→* #<PACKAGE "COMMON-LISP-USER"> 
 (make-package "SAMPLE-PACKAGE" :use ’("COMMON-LISP")) 
-→ #<PACKAGE "SAMPLE-PACKAGE"> 
+*→* #<PACKAGE "SAMPLE-PACKAGE"> 
 (list 
+
  
  
  (symbol-package 
   (let ((\*package\* (find-package ’sample-package))) 
     (setq \*some-symbol\* (read-from-string "just-testing")))) 
  \*package\*) 
-→ (#<PACKAGE "SAMPLE-PACKAGE"> #<PACKAGE "COMMON-LISP-USER">) 
+*→* (#<PACKAGE "SAMPLE-PACKAGE"> #<PACKAGE "COMMON-LISP-USER">) 
 (list (symbol-package (read-from-string "just-testing")) 
       \*package\*) 
-→ (#<PACKAGE "COMMON-LISP-USER"> #<PACKAGE "COMMON-LISP-USER">) 
-(eq ’foo (intern "FOO")) → true 
+*→* (#<PACKAGE "COMMON-LISP-USER"> #<PACKAGE "COMMON-LISP-USER">) 
+(eq ’foo (intern "FOO")) *→ true* 
 (eq ’foo (let ((\*package\* (find-package ’sample-package))) 
 	   (intern "FOO"))) 
-→ false 
+*→ false* 
+
 ```
 **Affected By:** 
 
 
 
-<ClLinks  term={"load"}><b>load</b></ClLinks>, <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks  term={"in-package"}><b>in-package</b></ClLinks> 
+<DictionaryLink styled={true} term={"load"}><b>load</b></DictionaryLink>, <DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink>, <DictionaryLink styled={true} term={"in-package"}><b>in-package</b></DictionaryLink> 
 
 
 
@@ -58,7 +59,7 @@ Whatever *package object* is currently the <ClLinks  term={"value"}><i>value</i>
 
 
 
-<ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks  term={"in-package"}><b>in-package</b></ClLinks>, <ClLinks  term={"load"}><b>load</b></ClLinks>, <ClLinks  term={"package"}><b>package</b></ClLinks> 
+<DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink>, <DictionaryLink styled={true} term={"in-package"}><b>in-package</b></DictionaryLink>, <DictionaryLink styled={true} term={"load"}><b>load</b></DictionaryLink>, <DictionaryLink styled={true} term={"package"}><b>package</b></DictionaryLink> 
 
 
 

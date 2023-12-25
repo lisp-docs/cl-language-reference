@@ -2,7 +2,7 @@
 
 
 
-The next *arg* is printed as a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks>. 
+The next *arg* is printed as a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm>. 
 
 
 
@@ -50,15 +50,15 @@ If *w* is omitted, then if the magnitude of *arg* is so large (or, if *d* is als
 
 
 
-If *arg* is a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> number, then it is coerced to be a *single float* and then printed. Alternatively, an implementation is permitted to process a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> number by any other method that has essentially the same behavior but avoids loss of precision or overflow because of the coercion. If *w* and *d* are not supplied and the number has no exact decimal representation, for example 1/3, some precision cutoff must be chosen by the implementation since only a finite number of digits may be printed. 
+If *arg* is a <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm> number, then it is coerced to be a *single float* and then printed. Alternatively, an implementation is permitted to process a <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm> number by any other method that has essentially the same behavior but avoids loss of precision or overflow because of the coercion. If *w* and *d* are not supplied and the number has no exact decimal representation, for example 1/3, some precision cutoff must be chosen by the implementation since only a finite number of digits may be printed. 
 
 
 
-If *arg* is a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> number or some non-numeric <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>, then it is printed using the format directive &#126;*w*D, thereby printing it in decimal radix and a minimum field width of *w*. 
+If *arg* is a <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> number or some non-numeric <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>, then it is printed using the format directive &#126;*w*D, thereby printing it in decimal radix and a minimum field width of *w*. 
 
 
 
-&#126;F binds <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> to <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> and <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> to <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+&#126;F binds <DictionaryLink styled={true} term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> to <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> and <DictionaryLink styled={true} term={"print-readably"}><b>\*print-readably\*</b></DictionaryLink> to <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 

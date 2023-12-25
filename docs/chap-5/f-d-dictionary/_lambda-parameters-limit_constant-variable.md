@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but not smaller than 50. 
+<GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>, but not smaller than 50. 
 
 
 
@@ -22,7 +22,7 @@ A positive *integer* that is the upper exclusive bound on the number of *paramet
 
 
 
-<ClLinks  term={"call-arguments-limit"}><b>call-arguments-limit</b></ClLinks> 
+<DictionaryLink styled={true} term={"call-arguments-limit"}><b>call-arguments-limit</b></DictionaryLink> 
 
 
 
@@ -30,7 +30,7 @@ A positive *integer* that is the upper exclusive bound on the number of *paramet
 
 
 
-Implementors are encouraged to make the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></ClLinks> as large as possible. 
+Implementors are encouraged to make the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></DictionaryLink> as large as possible. 
 
 
 
@@ -42,7 +42,7 @@ Implementors are encouraged to make the <ClLinks  term={"value"}><i>value</i></C
 
 
 
-<ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks> 
+<DictionaryLink styled={true} term={"defconstant"}><b>defconstant</b></DictionaryLink> 
 
 
 

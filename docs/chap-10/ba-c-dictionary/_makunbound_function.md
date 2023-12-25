@@ -1,4 +1,4 @@
-**makunbound** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**makunbound** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"makunbound"}><b>makunbound</b></ClLinks> *symbol → symbol* 
+<DictionaryLink styled={true} term={"makunbound"}><b>makunbound</b></DictionaryLink> *symbol → symbol* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> 
+<GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> 
 
 
 
@@ -22,23 +22,25 @@
 
 
 
-Makes the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> be <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>, regardless of whether it was previously <ClLinks  term={"bound"}><i>bound</i></ClLinks>. 
+Makes the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> be <GlossaryTerm styled={true} term={"unbound"}><i>unbound</i></GlossaryTerm>, regardless of whether it was previously <GlossaryTerm styled={true} term={"bound"}><i>bound</i></GlossaryTerm>. 
 
 
 
 **Examples:**
 ```lisp
+
 (setf (symbol-value ’a) 1) 
-(boundp ’a) → true 
-a → 1 
-(makunbound ’a) → A 
-(boundp ’a) → false 
+(boundp ’a) *→ true* 
+a *→* 1 
+(makunbound ’a) *→* A 
+(boundp ’a) *→ false* 
+
 ```
 **Side Effects:** 
 
 
 
-The *value cell* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is modified. 
+The *value cell* of <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is modified. 
 
 
 
@@ -46,7 +48,7 @@ The *value cell* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is modifie
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -66,7 +68,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"boundp"}><b>boundp</b></ClLinks>, <ClLinks  term={"fmakunbound"}><b>fmakunbound</b></ClLinks> 
+<DictionaryLink styled={true} term={"boundp"}><b>boundp</b></DictionaryLink>, <DictionaryLink styled={true} term={"fmakunbound"}><b>fmakunbound</b></DictionaryLink> 
 
 
 

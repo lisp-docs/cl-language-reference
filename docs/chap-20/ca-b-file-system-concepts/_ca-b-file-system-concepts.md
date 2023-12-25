@@ -2,15 +2,15 @@
 
 
 
-This section describes the Common Lisp interface to file systems. The model used by this interface assumes that <ClLinks  term={"file"}><i>files</i></ClLinks> are named by <ClLinks  term={"filename"}><i>filenames</i></ClLinks>, that a <ClLinks  term={"filename"}><i>filename</i></ClLinks> can be represented by a *pathname object*, and that given a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> a <ClLinks  term={"stream"}><i>stream</i></ClLinks> can be constructed that connects to a <ClLinks  term={"file"}><i>file</i></ClLinks> whose <ClLinks  term={"filename"}><i>filename</i></ClLinks> it represents. 
+This section describes the Common Lisp interface to file systems. The model used by this interface assumes that <GlossaryTerm styled={true} term={"file"}><i>files</i></GlossaryTerm> are named by <GlossaryTerm styled={true} term={"filename"}><i>filenames</i></GlossaryTerm>, that a <GlossaryTerm styled={true} term={"filename"}><i>filename</i></GlossaryTerm> can be represented by a *pathname object*, and that given a <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> can be constructed that connects to a <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm> whose <GlossaryTerm styled={true} term={"filename"}><i>filename</i></GlossaryTerm> it represents. 
 
 
 
-For information about opening and closing <ClLinks  term={"file"}><i>files</i></ClLinks>, and manipulating their contents, see Chapter 21 (Streams). 
+For information about opening and closing <GlossaryTerm styled={true} term={"file"}><i>files</i></GlossaryTerm>, and manipulating their contents, see Chapter 21 (Streams). 
 
 
 
-Figure 20–1 lists some <ClLinks  term={"operator"}><i>operators</i></ClLinks> that are applicable to <ClLinks  term={"file"}><i>files</i></ClLinks> and directories. 
+Figure 20–1 lists some <GlossaryTerm styled={true} term={"operator"}><i>operators</i></GlossaryTerm> that are applicable to <GlossaryTerm styled={true} term={"file"}><i>files</i></GlossaryTerm> and directories. 
 
 
 

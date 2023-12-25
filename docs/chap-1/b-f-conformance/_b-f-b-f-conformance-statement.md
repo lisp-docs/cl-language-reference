@@ -10,7 +10,7 @@ A *conforming implementation* shall produce a conformance statement as a consequ
 
 
 
-If the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> conforms with some but not all of the requirements of this standard, then the conformance statement shall be 
+If the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> conforms with some but not all of the requirements of this standard, then the conformance statement shall be 
 
 
 

@@ -1,4 +1,4 @@
-**simple-vector-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**simple-vector-p** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"simple-vector-p"}><b>simple-vector-p</b></ClLinks> *object → generalized-boolean* 
+<DictionaryLink styled={true} term={"simple-vector-p"}><b>simple-vector-p</b></DictionaryLink> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -26,21 +26,23 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"simple-vector"}><b>simple-vector</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>.. 
+Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"simple-vector"}><b>simple-vector</b></DictionaryLink>; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>.. 
 
 
 
 **Examples:**
 ```lisp
-(simple-vector-p (make-array 6)) → true 
-(simple-vector-p "aaaaaa") → false 
-(simple-vector-p (make-array 6 :fill-pointer t)) → false 
+
+(simple-vector-p (make-array 6)) *→ true* 
+(simple-vector-p "aaaaaa") *→ false* 
+(simple-vector-p (make-array 6 :fill-pointer t)) *→ false* 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"simple-vector"}><b>simple-vector</b></ClLinks> 
+<DictionaryLink styled={true} term={"simple-vector"}><b>simple-vector</b></DictionaryLink> 
 
 
 
@@ -48,7 +50,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-(simple-vector-p <ClLinks  term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks  term={"object"}><i>object</i></ClLinks> ’simple-vector) 
+(simple-vector-p <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>) *≡* (typep <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> ’simple-vector) 
 
 
 

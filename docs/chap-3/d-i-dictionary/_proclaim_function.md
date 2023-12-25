@@ -1,4 +1,4 @@
-**proclaim** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**proclaim** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> *declaration-specifier ! implementation-dependent* 
+<DictionaryLink styled={true} term={"proclaim"}><b>proclaim</b></DictionaryLink> *declaration-specifier ! implementation-dependent* 
 
 
 
@@ -22,23 +22,19 @@
 
 
 
-*Establishes* the <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> specified by *declaration-specifier* in the *global environment*. 
+*Establishes* the <GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm> specified by *declaration-specifier* in the *global environment*. 
 
 
 
-Such a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, sometimes called a *global declaration* or a <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks>, is always in force unless locally *shadowed*. 
+Such a <GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm>, sometimes called a *global declaration* or a <GlossaryTerm styled={true} term={"proclamation"}><i>proclamation</i></GlossaryTerm>, is always in force unless locally *shadowed*. 
 
 
 
-<ClLinks  term={"name"}><i>Names</i></ClLinks> of <ClLinks  term={"variable"}><i>variables</i></ClLinks> and <ClLinks  term={"function"}><i>functions</i></ClLinks> within *declaration-specifier* refer to *dynamic variables* and global <ClLinks  term={"function"}><i>function</i></ClLinks> definitions, respectively. 
-
-
+<GlossaryTerm styled={true} term={"name"}><i>Names</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"variable"}><i>variables</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> within *declaration-specifier* refer to *dynamic variables* and global <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> definitions, respectively. 
 
 
 
 
-
- 
 
 
 
@@ -46,7 +42,11 @@ Such a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, sometimes ca
 
 
 
-Figure 3–22 shows a list of *declaration identifiers* that can be used with <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks>. 
+ 
+
+
+
+Figure 3–22 shows a list of *declaration identifiers* that can be used with <DictionaryLink styled={true} term={"proclaim"}><b>proclaim</b></DictionaryLink>. 
 
 
 
@@ -58,10 +58,9 @@ Figure 3–22 shows a list of *declaration identifiers* that can be used with <C
 
 
 
-An implementation is free to support other (<ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>) *declaration identifiers* as well. 
-
-**Examples:**
+An implementation is free to support other (<GlossaryTerm styled={true} term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>) *declaration identifiers* as well. **Examples:**
 ```lisp
+
 (defun declare-variable-types-globally (type vars) 
   (proclaim ‘(type ,type ,@vars)) 
   type) 
@@ -69,12 +68,13 @@ An implementation is free to support other (<ClLinks  term={"implementation-defi
 ;; must always contain a float. 
 (declare-variable-types-globally ’float ’(\*tolerance\*)) 
 *!* FLOAT 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks  term={"declare"}><b>declare</b></ClLinks>, Section 3.2 (Compilation) 
+<DictionaryLink styled={true} term={"declaim"}><b>declaim</b></DictionaryLink>, <DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink>, Section 3.2 (Compilation) 
 
 
 
@@ -82,7 +82,7 @@ An implementation is free to support other (<ClLinks  term={"implementation-defi
 
 
 
-Although the *execution* of a <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> has e↵ects that might a↵ect compilation, the compiler does not make any attempt to recognize and specially process <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> <ClLinks  term={"form"}><i>forms</i></ClLinks>. A <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks> such as the following, even if a *top level form*, does not have any e↵ect until it is executed: 
+Although the *execution* of a <DictionaryLink styled={true} term={"proclaim"}><b>proclaim</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> has e↵ects that might a↵ect compilation, the compiler does not make any attempt to recognize and specially process <DictionaryLink styled={true} term={"proclaim"}><b>proclaim</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. A <GlossaryTerm styled={true} term={"proclamation"}><i>proclamation</i></GlossaryTerm> such as the following, even if a *top level form*, does not have any e↵ect until it is executed: 
 
 
 
@@ -90,7 +90,7 @@ Although the *execution* of a <ClLinks  term={"proclaim"}><b>proclaim</b></ClLin
 
 
 
-If compile time side e↵ects are desired, <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> may be useful. For example: 
+If compile time side e↵ects are desired, <DictionaryLink styled={true} term={"eval-when"}><b>eval-when</b></DictionaryLink> may be useful. For example: 
 
 
 
@@ -102,8 +102,8 @@ If compile time side e↵ects are desired, <ClLinks  term={"eval-when"}><b>eval-
 
 
 
-In most such cases, however, it is preferrable to use <ClLinks  term={"declaim"}><b>declaim</b></ClLinks> for this purpose. 
+In most such cases, however, it is preferrable to use <DictionaryLink styled={true} term={"declaim"}><b>declaim</b></DictionaryLink> for this purpose. 
 
 
 
-Since <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> <ClLinks  term={"form"}><i>forms</i></ClLinks> are ordinary *function forms*, *macro forms* can expand into them. 
+Since <DictionaryLink styled={true} term={"proclaim"}><b>proclaim</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are ordinary *function forms*, *macro forms* can expand into them. 

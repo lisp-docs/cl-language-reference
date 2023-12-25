@@ -1,4 +1,4 @@
-**find-restart** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**find-restart** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"find-restart"}><b>find-restart</b></ClLinks> <ClLinks styled={true} term={"identifier"}><i>identifier</i></ClLinks> &amp;optional <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> 
+<DictionaryLink styled={true} term={"find-restart"}><b>find-restart</b></DictionaryLink> <GlossaryTerm styled={true} term={"identifier"}><i>identifier</i></GlossaryTerm> &amp;optional <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> 
 
 
 
@@ -18,15 +18,15 @@ restart
 
 
 
-<ClLinks styled={true} term={"identifier"}><i>identifier</i></ClLinks>—a *non-nil symbol*, or a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"identifier"}><i>identifier</i></GlossaryTerm>—a *non-nil symbol*, or a <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a *condition object*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>—a *condition object*, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-<ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>—a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -34,7 +34,7 @@ restart
 
 
 
-<ClLinks styled={true} term={"find-restart"}><b>find-restart</b></ClLinks> searches for a particular <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> in the current *dynamic environment*. 
+<DictionaryLink styled={true} term={"find-restart"}><b>find-restart</b></DictionaryLink> searches for a particular <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> in the current *dynamic environment*. 
 
 
 
@@ -46,26 +46,26 @@ restart
 
 
 
-When <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, only those <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> are considered that are either explicitly associated with that <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>, or not associated with any <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>; that is, the excluded <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> are those that are associated with a non-empty set of <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> of which the given <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is not an <ClLinks styled={true} term={"element"}><i>element</i></ClLinks>. If <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, all <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> are considered. 
+When <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"non-nil"}><i>non-nil</i></GlossaryTerm>, only those <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> are considered that are either explicitly associated with that <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>, or not associated with any <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>; that is, the excluded <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> are those that are associated with a non-empty set of <GlossaryTerm styled={true} term={"condition"}><i>conditions</i></GlossaryTerm> of which the given <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is not an <GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm>. If <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, all <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> are considered. 
 
 
 
-If <ClLinks styled={true} term={"identifier"}><i>identifier</i></ClLinks> is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, then the innermost (most recently established) *applicable restart* with that <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is returned. <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is returned if no such restart is found. 
+If <GlossaryTerm styled={true} term={"identifier"}><i>identifier</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>, then the innermost (most recently established) *applicable restart* with that <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is returned. <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is returned if no such restart is found. 
 
 
 
-If <ClLinks styled={true} term={"identifier"}><i>identifier</i></ClLinks> is a currently active restart, then it is returned. Otherwise, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is returned. 
-
-**Examples:**
+If <GlossaryTerm styled={true} term={"identifier"}><i>identifier</i></GlossaryTerm> is a currently active restart, then it is returned. Otherwise, <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is returned. **Examples:**
 ```lisp
+
 (restart-case 
     (let ((r (find-restart ’my-restart))) 
       (format t "~S is named ~S" r (restart-name r))) 
   (my-restart () nil)) 
 ▷ #<RESTART 32307325> is named MY-RESTART 
-→ NIL 
+*→* NIL 
 (find-restart ’my-restart) 
-→ NIL 
+*→* NIL 
+
 ```
 **Affected By:** 
 
@@ -75,7 +75,7 @@ Existing restarts.
 
 
 
-<ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>, <ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks>, <ClLinks styled={true} term={"with-condition-restarts"}><b>with-condition-restarts</b></ClLinks>. 
+<DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink>, <DictionaryLink styled={true} term={"restart-bind"}><b>restart-bind</b></DictionaryLink>, <DictionaryLink styled={true} term={"with-condition-restarts"}><b>with-condition-restarts</b></DictionaryLink>. 
 
 
 
@@ -83,7 +83,7 @@ Existing restarts.
 
 
 
-<ClLinks styled={true} term={"compute-restarts"}><b>compute-restarts</b></ClLinks> 
+<DictionaryLink styled={true} term={"compute-restarts"}><b>compute-restarts</b></DictionaryLink> 
 
 
 
@@ -91,15 +91,15 @@ Existing restarts.
 
 
 
-(find-restart <ClLinks styled={true} term={"identifier"}><i>identifier</i></ClLinks>) 
+(find-restart <GlossaryTerm styled={true} term={"identifier"}><i>identifier</i></GlossaryTerm>) 
 
 
 
-*≡* (find <ClLinks styled={true} term={"identifier"}><i>identifier</i></ClLinks> (compute-restarts) :key :restart-name) 
+*≡* (find <GlossaryTerm styled={true} term={"identifier"}><i>identifier</i></GlossaryTerm> (compute-restarts) :key :restart-name) 
 
 
 
-Although anonymous restarts have a name of <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, the consequences are unspecified if <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is given as an <ClLinks styled={true} term={"identifier"}><i>identifier</i></ClLinks>. Occasionally, programmers lament that <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is not permissible as an <ClLinks styled={true} term={"identifier"}><i>identifier</i></ClLinks> argument. In most such cases, <ClLinks styled={true} term={"compute-restarts"}><b>compute-restarts</b></ClLinks> can probably be used to simulate the desired effect. 
+Although anonymous restarts have a name of <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, the consequences are unspecified if <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is given as an <GlossaryTerm styled={true} term={"identifier"}><i>identifier</i></GlossaryTerm>. Occasionally, programmers lament that <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is not permissible as an <GlossaryTerm styled={true} term={"identifier"}><i>identifier</i></GlossaryTerm> argument. In most such cases, <DictionaryLink styled={true} term={"compute-restarts"}><b>compute-restarts</b></DictionaryLink> can probably be used to simulate the desired effect. 
 
 
 

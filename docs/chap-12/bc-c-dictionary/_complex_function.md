@@ -1,4 +1,4 @@
-**complex** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**complex** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"complex"}><b>complex</b></ClLinks> *realpart* &amp;optional *imagpart → complex* 
+<DictionaryLink styled={true} term={"complex"}><b>complex</b></DictionaryLink> *realpart* &amp;optional *imagpart → complex* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"complex"}><i>complex</i></ClLinks>—a <ClLinks  term={"rational"}><i>rational</i></ClLinks> or a <ClLinks  term={"complex"}><i>complex</i></ClLinks> . 
+<GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> . 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-<ClLinks  term={"complex"}><b>complex</b></ClLinks> returns a <ClLinks  term={"number"}><i>number</i></ClLinks> whose real part is *realpart* and whose imaginary part is *imagpart*. 
+<DictionaryLink styled={true} term={"complex"}><b>complex</b></DictionaryLink> returns a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> whose real part is *realpart* and whose imaginary part is *imagpart*. 
 
 
 
-If *realpart* is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> and *imagpart* is the <ClLinks  term={"rational"}><i>rational</i></ClLinks> number zero, the result of <ClLinks  term={"complex"}><b>complex</b></ClLinks> is *realpart*, a <ClLinks  term={"rational"}><i>rational</i></ClLinks>. Otherwise, the result is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> . 
+If *realpart* is a <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm> and *imagpart* is the <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm> number zero, the result of <DictionaryLink styled={true} term={"complex"}><b>complex</b></DictionaryLink> is *realpart*, a <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm>. Otherwise, the result is a <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> . 
 
 
 
-If either *realpart* or *imagpart* is a <ClLinks  term={"float"}><i>float</i></ClLinks>, the non-<ClLinks  term={"float"}><i>float</i></ClLinks> is converted to a <ClLinks  term={"float"}><i>float</i></ClLinks> before the <ClLinks  term={"complex"}><i>complex</i></ClLinks> is created. If *imagpart* is not supplied, the imaginary part is a zero of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *realpart*; *i.e.*, (coerce 0 (type-of *realpart*)) is effectively used. 
+If either *realpart* or *imagpart* is a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm>, the non-<GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> is converted to a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> before the <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> is created. If *imagpart* is not supplied, the imaginary part is a zero of the same <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> as *realpart*; *i.e.*, (coerce 0 (type-of *realpart*)) is effectively used. 
 
 
 
@@ -48,17 +48,19 @@ Type upgrading implies a movement upwards in the type hierarchy lattice. In the 
 
 **Examples:**
 ```lisp
-(complex 0) → 0 
-(complex 0.0) → #C(0.0 0.0) 
-(complex 1 1/2) → #C(1 1/2) 
-(complex 1 .99) → #C(1.0 0.99) 
-(complex 3/2 0.0) → #C(1.5 0.0) 
+
+(complex 0) *→* 0 
+(complex 0.0) *→* #C(0.0 0.0) 
+(complex 1 1/2) *→* #C(1 1/2) 
+(complex 1 .99) *→* #C(1.0 0.99) 
+(complex 3/2 0.0) *→* #C(1.5 0.0) 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"realpart"}><b>realpart</b></ClLinks>, <ClLinks  term={"imagpart"}><b>imagpart</b></ClLinks>, Section 2.4.8.11 (Sharpsign C) 
+<DictionaryLink styled={true} term={"realpart"}><b>realpart</b></DictionaryLink>, <DictionaryLink styled={true} term={"imagpart"}><b>imagpart</b></DictionaryLink>, Section 2.4.8.11 (Sharpsign C) 
 
 
 

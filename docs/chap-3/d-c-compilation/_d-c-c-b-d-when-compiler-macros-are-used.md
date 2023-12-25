@@ -2,15 +2,15 @@
 
 
 
-The presence of a *compiler macro* definition for a <ClLinks  term={"function"}><i>function</i></ClLinks> or <ClLinks  term={"macro"}><i>macro</i></ClLinks> indicates that it is desirable for the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> to use the expansion of the *compiler macro* instead of the original *function form* or *macro form*. However, no language processor (compiler, evaluator, or other code walker) is ever required to actually invoke *compiler macro functions*, or to make use of the resulting expansion if it does invoke a *compiler macro function*. 
+The presence of a *compiler macro* definition for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> indicates that it is desirable for the <GlossaryTerm styled={true} term={"compiler"}><i>compiler</i></GlossaryTerm> to use the expansion of the *compiler macro* instead of the original *function form* or *macro form*. However, no language processor (compiler, evaluator, or other code walker) is ever required to actually invoke *compiler macro functions*, or to make use of the resulting expansion if it does invoke a *compiler macro function*. 
 
 
 
-When the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> encounters a <ClLinks  term={"form"}><i>form</i></ClLinks> during processing that represents a call to a *compiler macro name* (that is not declared <ClLinks  term={"notinline"}><b>notinline</b></ClLinks>), the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> might expand the *compiler macro*, and might use the expansion in place of the original <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+When the <GlossaryTerm styled={true} term={"compiler"}><i>compiler</i></GlossaryTerm> encounters a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> during processing that represents a call to a *compiler macro name* (that is not declared <DictionaryLink styled={true} term={"notinline"}><b>notinline</b></DictionaryLink>), the <GlossaryTerm styled={true} term={"compiler"}><i>compiler</i></GlossaryTerm> might expand the *compiler macro*, and might use the expansion in place of the original <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-When <ClLinks  term={"eval"}><b>eval</b></ClLinks> encounters a <ClLinks  term={"form"}><i>form</i></ClLinks> during processing that represents a call to a *compiler macro name* (that is not declared <ClLinks  term={"notinline"}><b>notinline</b></ClLinks>), <ClLinks  term={"eval"}><b>eval</b></ClLinks> might expand the *compiler macro*, and might use the expansion in place of the original <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+When <DictionaryLink styled={true} term={"eval"}><b>eval</b></DictionaryLink> encounters a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> during processing that represents a call to a *compiler macro name* (that is not declared <DictionaryLink styled={true} term={"notinline"}><b>notinline</b></DictionaryLink>), <DictionaryLink styled={true} term={"eval"}><b>eval</b></DictionaryLink> might expand the *compiler macro*, and might use the expansion in place of the original <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@ There are two situations in which a *compiler macro* definition must not be appl
 
 
 
-*•* The function name has been declared or proclaimed <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> and the call form appears within the scope of the declaration. 
+*•* The function name has been declared or proclaimed <DictionaryLink styled={true} term={"notinline"}><b>notinline</b></DictionaryLink> and the call form appears within the scope of the declaration. 
 
 
 

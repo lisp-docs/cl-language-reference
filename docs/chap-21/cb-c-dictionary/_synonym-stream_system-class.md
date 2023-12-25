@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"synonym-stream"}><b>synonym-stream</b></ClLinks>, <ClLinks  term={"stream"}><b>stream</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"synonym-stream"}><b>synonym-stream</b></DictionaryLink>, <DictionaryLink styled={true} term={"stream"}><b>stream</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-A <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is an alias for another <ClLinks  term={"stream"}><i>stream</i></ClLinks>, which is the <ClLinks  term={"value"}><i>value</i></ClLinks> of a *dynamic variable* whose <ClLinks  term={"name"}><i>name</i></ClLinks> is the *synonym stream symbol* of the *synonym stream*. 
+A <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> that is an alias for another <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>, which is the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of a *dynamic variable* whose <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is the *synonym stream symbol* of the *synonym stream*. 
 
 
 
-Any operations on a *synonym stream* will be performed on the <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is then the <ClLinks  term={"value"}><i>value</i></ClLinks> of the *dynamic variable* named by the *synonym stream symbol*. If the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"variable"}><i>variable</i></ClLinks> should change, or if the <ClLinks  term={"variable"}><i>variable</i></ClLinks> should be <ClLinks  term={"bound"}><i>bound</i></ClLinks>, then the <ClLinks  term={"stream"}><i>stream</i></ClLinks> will operate on the new <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"variable"}><i>variable</i></ClLinks>. 
+Any operations on a *synonym stream* will be performed on the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> that is then the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of the *dynamic variable* named by the *synonym stream symbol*. If the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm> should change, or if the <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm> should be <GlossaryTerm styled={true} term={"bound"}><i>bound</i></GlossaryTerm>, then the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> will operate on the new <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@ Any operations on a *synonym stream* will be performed on the <ClLinks  term={"s
 
 
 
-<ClLinks  term={"make-synonym-stream"}><b>make-synonym-stream</b></ClLinks>, <ClLinks  term={"synonym-stream-symbol"}><b>synonym-stream-symbol</b></ClLinks> 
+<DictionaryLink styled={true} term={"make-synonym-stream"}><b>make-synonym-stream</b></DictionaryLink>, <DictionaryLink styled={true} term={"synonym-stream-symbol"}><b>synonym-stream-symbol</b></DictionaryLink> 
 
 
 

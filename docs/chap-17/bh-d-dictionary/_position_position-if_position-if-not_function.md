@@ -1,4 +1,4 @@
-**position, position-if, position-if-not** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**position, position-if, position-if-not** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,15 +6,15 @@
 
 
 
-<ClLinks  term={"position"}><b>position</b></ClLinks> *item sequence* &amp;key *from-end test test-not start end key → position* 
+<DictionaryLink styled={true} term={"position"}><b>position</b></DictionaryLink> *item sequence* &amp;key *from-end test test-not start end key → position* 
 
 
 
-<ClLinks  term={"position-if"}><b>position-if</b></ClLinks> *predicate sequence* &amp;key *from-end start end key → position* 
+<DictionaryLink styled={true} term={"position-if"}><b>position-if</b></DictionaryLink> *predicate sequence* &amp;key *from-end start end key → position* 
 
 
 
-<ClLinks  term={"position-if-not"}><b>position-if-not</b></ClLinks> *predicate sequence* &amp;key *from-end start end key → position* 
+<DictionaryLink styled={true} term={"position-if-not"}><b>position-if-not</b></DictionaryLink> *predicate sequence* &amp;key *from-end start end key → position* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*item*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*item*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument that returns a *generalized boolean*. 
+<GlossaryTerm styled={true} term={"predicate"}><i>predicate</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of one argument that returns a *generalized boolean*. 
 
 
 
@@ -42,23 +42,23 @@
 
 
 
-*from-end*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*from-end*—a *generalized boolean*. The default is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-*test*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks  term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. 
+*test*—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> that returns a *generalized boolean*. *test-not<GlossaryTerm styled={true} term={"t"}><i>—a </i></GlossaryTerm>designator* for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> that returns a *generalized boolean*. 
 
 
 
-*start*, *end*—*bounding index designators* of *sequence*. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—*bounding index designators* of *sequence*. The defaults for *start* and *end* are 0 and <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
-<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of one argument, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-*position*—a *bounding index* of *sequence*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*position*—a *bounding index* of *sequence*, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -66,26 +66,28 @@
 
 
 
-<ClLinks  term={"position"}><b>position</b></ClLinks>, <ClLinks  term={"position-if"}><b>position-if</b></ClLinks>, and <ClLinks  term={"position-if-not"}><b>position-if-not</b></ClLinks> each search *sequence* for an <ClLinks  term={"element"}><i>element</i></ClLinks> that *satisfies the test*. 
+<DictionaryLink styled={true} term={"position"}><b>position</b></DictionaryLink>, <DictionaryLink styled={true} term={"position-if"}><b>position-if</b></DictionaryLink>, and <DictionaryLink styled={true} term={"position-if-not"}><b>position-if-not</b></DictionaryLink> each search *sequence* for an <GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm> that *satisfies the test*. 
 
 
 
-The *position* returned is the index within *sequence* of the leftmost (if *from-end* is <ClLinks  term={"true"}><i>true</i></ClLinks>) or of the rightmost (if *from-end* is <ClLinks  term={"false"}><i>false</i></ClLinks>) <ClLinks  term={"element"}><i>element</i></ClLinks> that *satisfies the test*; otherwise <ClLinks  term={"nil"}><b>nil</b></ClLinks> is returned. The index returned is relative to the left-hand end of the entire *sequence*, regardless of the value of *start*, *end*, or *from-end*. 
+The *position* returned is the index within *sequence* of the leftmost (if *from-end* is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>) or of the rightmost (if *from-end* is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>) <GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm> that *satisfies the test*; otherwise <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is returned. The index returned is relative to the left-hand end of the entire *sequence*, regardless of the value of *start*, *end*, or *from-end*. 
 
 
 
 **Examples:**
 ```lisp
-(position #\a "baobab" :from-end t) → 4 
-(position-if #’oddp ’((1) (2) (3) (4)) :start 1 :key #’car) → 2 
-(position 595 ’()) → NIL 
-(position-if-not #’integerp ’(1 2 3 4 5.0)) → 4 
+
+(position #\a "baobab" :from-end t) *→* 4 
+(position-if #’oddp ’((1) (2) (3) (4)) :start 1 :key #’car) *→* 2 
+(position 595 ’()) *→* NIL 
+(position-if-not #’integerp ’(1 2 3 4 5.0)) *→* 4 
+
 ```
 **Exceptional Situations:** 
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. 
+Should be prepared to signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a *proper sequence*. 
 
 
 
@@ -93,7 +95,7 @@ Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-<ClLinks  term={"find"}><b>find</b></ClLinks>, Section 3.6 (Traversal Rules and Side Effects) 
+<DictionaryLink styled={true} term={"find"}><b>find</b></DictionaryLink>, Section 3.6 (Traversal Rules and Side Effects) 
 
 
 
@@ -101,19 +103,15 @@ Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-The :test-not <ClLinks  term={"argument"}><i>argument</i></ClLinks> is deprecated. 
+The :test-not <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm> is deprecated. 
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"position-if-not"}><b>position-if-not</b></ClLinks> is deprecated. 
-
-
+The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"position-if-not"}><b>position-if-not</b></DictionaryLink> is deprecated. 
 
 
 
 
-
- 
 
 
 
@@ -121,7 +119,11 @@ The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"posit
 
 
 
-<ClLinks  term={"search"}><b>search</b></ClLinks> 
+ 
+
+
+
+<DictionaryLink styled={true} term={"search"}><b>search</b></DictionaryLink> 
 
 
 

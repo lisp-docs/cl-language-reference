@@ -1,4 +1,4 @@
-**array-rank** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**array-rank** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"array-rank"}><b>array-rank</b></ClLinks> *array → rank* 
+<DictionaryLink styled={true} term={"array-rank"}><b>array-rank</b></DictionaryLink> *array → rank* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"rank"}><i>rank</i></ClLinks>—a non-negative *integer* . 
+<GlossaryTerm styled={true} term={"rank"}><i>rank</i></GlossaryTerm>—a non-negative *integer* . 
 
 
 
@@ -26,22 +26,24 @@
 
 
 
-Returns the number of <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> of <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+Returns the number of <GlossaryTerm styled={true} term={"dimension"}><i>dimensions</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
 **Examples:**
 ```lisp
-(array-rank (make-array ’())) → 0 
-(array-rank (make-array 4)) → 1 
-(array-rank (make-array ’(4))) → 1 
-(array-rank (make-array ’(2 3))) → 2 
+
+(array-rank (make-array ’())) *→* 0 
+(array-rank (make-array 4)) *→* 1 
+(array-rank (make-array ’(4))) *→* 1 
+(array-rank (make-array ’(2 3))) *→* 2 
+
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
@@ -49,7 +51,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"array-rank-limit"}><b>array-rank-limit</b></ClLinks>, <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> 
+<DictionaryLink styled={true} term={"array-rank-limit"}><b>array-rank-limit</b></DictionaryLink>, <DictionaryLink styled={true} term={"make-array"}><b>make-array</b></DictionaryLink> 
 
 
 

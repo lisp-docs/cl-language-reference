@@ -1,4 +1,4 @@
-**find-package** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**find-package** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"find-package"}><b>find-package</b></ClLinks> *name → package* 
+<DictionaryLink styled={true} term={"find-package"}><b>find-package</b></DictionaryLink> *name → package* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a *string designator* or a *package object*. 
+<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a *string designator* or a *package object*. 
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package object* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>—a *package object* or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -26,29 +26,31 @@
 
 
 
-If <ClLinks  term={"name"}><i>name</i></ClLinks> is a *string designator* , <ClLinks  term={"find-package"}><b>find-package</b></ClLinks> locates and returns the <ClLinks  term={"package"}><i>package</i></ClLinks> whose name or nickname is <ClLinks  term={"name"}><i>name</i></ClLinks>. This search is case sensitive. If there is no such <ClLinks  term={"package"}><i>package</i></ClLinks>, <ClLinks  term={"find-package"}><b>find-package</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+If <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is a *string designator* , <DictionaryLink styled={true} term={"find-package"}><b>find-package</b></DictionaryLink> locates and returns the <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> whose name or nickname is <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>. This search is case sensitive. If there is no such <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>, <DictionaryLink styled={true} term={"find-package"}><b>find-package</b></DictionaryLink> returns <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-If <ClLinks  term={"name"}><i>name</i></ClLinks> is a *package object*, that *package object* is returned. 
+If <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is a *package object*, that *package object* is returned. 
 
 
 
 **Examples:**
 ```lisp
-(find-package ’common-lisp) → #<PACKAGE "COMMON-LISP"> 
-(find-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
-(find-package ’not-there) → NIL 
+
+(find-package ’common-lisp) *→* #<PACKAGE "COMMON-LISP"> 
+(find-package "COMMON-LISP-USER") *→* #<PACKAGE "COMMON-LISP-USER"> 
+(find-package ’not-there) *→* NIL 
+
 ```
 **Affected By:** 
 
 
 
-The set of <ClLinks  term={"package"}><i>packages</i></ClLinks> created by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+The set of <GlossaryTerm styled={true} term={"package"}><i>packages</i></GlossaryTerm> created by the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks>, <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks>, <ClLinks  term={"make-package"}><b>make-package</b></ClLinks>, <ClLinks  term={"rename-package"}><b>rename-package</b></ClLinks> 
+<DictionaryLink styled={true} term={"defpackage"}><b>defpackage</b></DictionaryLink>, <DictionaryLink styled={true} term={"delete-package"}><b>delete-package</b></DictionaryLink>, <DictionaryLink styled={true} term={"make-package"}><b>make-package</b></DictionaryLink>, <DictionaryLink styled={true} term={"rename-package"}><b>rename-package</b></DictionaryLink> 
 
 
 
@@ -56,7 +58,7 @@ The set of <ClLinks  term={"package"}><i>packages</i></ClLinks> created by the <
 
 
 
-<ClLinks  term={"make-package"}><b>make-package</b></ClLinks> 
+<DictionaryLink styled={true} term={"make-package"}><b>make-package</b></DictionaryLink> 
 
 
 

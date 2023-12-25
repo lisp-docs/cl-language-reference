@@ -2,11 +2,11 @@
 
 
 
-For each of the “read-modify-write” <ClLinks  term={"operator"}><i>operators</i></ClLinks> in Figure 5–9, and for any additional <ClLinks  term={"macro"}><i>macros</i></ClLinks> defined by the <ClLinks  term={"programmer"}><i>programmer</i></ClLinks> using <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks>, an exception is made to the normal rule of left-to-right evaluation of arguments. Evaluation of *argument forms* occurs in left-to-right order, with the exception that for the *place argument*, the actual <ClLinks  term={"read"}><i>read</i></ClLinks> of the “old value” from that <ClLinks  term={"place"}><i>place</i></ClLinks> happens after all of the *argument form evaluations*, and just before a “new value” is computed and *written* back into the <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+For each of the “read-modify-write” <GlossaryTerm styled={true} term={"operator"}><i>operators</i></GlossaryTerm> in Figure 5–9, and for any additional <GlossaryTerm styled={true} term={"macro"}><i>macros</i></GlossaryTerm> defined by the <GlossaryTerm styled={true} term={"programmer"}><i>programmer</i></GlossaryTerm> using <DictionaryLink styled={true} term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink>, an exception is made to the normal rule of left-to-right evaluation of arguments. Evaluation of *argument forms* occurs in left-to-right order, with the exception that for the *place argument*, the actual <GlossaryTerm styled={true} term={"read"}><i>read</i></GlossaryTerm> of the “old value” from that <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> happens after all of the *argument form evaluations*, and just before a “new value” is computed and *written* back into the <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>. 
 
 
 
-Specifically, each of these <ClLinks  term={"operator"}><i>operators</i></ClLinks> can be viewed as involving a <ClLinks  term={"form"}><i>form</i></ClLinks> with the following general syntax: 
+Specifically, each of these <GlossaryTerm styled={true} term={"operator"}><i>operators</i></GlossaryTerm> can be viewed as involving a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> with the following general syntax: 
 
 
 
@@ -14,23 +14,23 @@ Specifically, each of these <ClLinks  term={"operator"}><i>operators</i></ClLink
 
 
 
-The evaluation of each such <ClLinks  term={"form"}><i>form</i></ClLinks> proceeds like this: 
+The evaluation of each such <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> proceeds like this: 
 
 
 
-1\. <ClLinks  term={"evaluate"}><i>Evaluate</i></ClLinks> each of the *preceding-forms*, in left-to-right order. 
+1\. <GlossaryTerm styled={true} term={"evaluate"}><i>Evaluate</i></GlossaryTerm> each of the *preceding-forms*, in left-to-right order. 
 
 
 
-2\. <ClLinks  term={"evaluate"}><i>Evaluate</i></ClLinks> the <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the <ClLinks  term={"place"}><i>place</i></ClLinks>, in the order specified by the second value of the *setf expansion* for that <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+2\. <GlossaryTerm styled={true} term={"evaluate"}><i>Evaluate</i></GlossaryTerm> the <GlossaryTerm styled={true} term={"subform"}><i>subforms</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>, in the order specified by the second value of the *setf expansion* for that <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>. 
 
 
 
-3\. <ClLinks  term={"evaluate"}><i>Evaluate</i></ClLinks> each of the *following-forms*, in left-to-right order. 
+3\. <GlossaryTerm styled={true} term={"evaluate"}><i>Evaluate</i></GlossaryTerm> each of the *following-forms*, in left-to-right order. 
 
 
 
-4\. <ClLinks  term={"read"}><i>Read</i></ClLinks> the old value from <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+4\. <GlossaryTerm styled={true} term={"read"}><i>Read</i></GlossaryTerm> the old value from <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>. 
 
 
 
@@ -38,7 +38,7 @@ The evaluation of each such <ClLinks  term={"form"}><i>form</i></ClLinks> procee
 
 
 
-6\. Store the new value into <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+6\. Store the new value into <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>. 
 
 
 

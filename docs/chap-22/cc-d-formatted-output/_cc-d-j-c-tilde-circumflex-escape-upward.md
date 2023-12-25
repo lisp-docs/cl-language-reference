@@ -22,15 +22,15 @@ but no more segments are processed before doing the justification. &#126;<i><sup
 
 
 
-(format nil donestr) → "Done." 
+(format nil donestr) *→* "Done." 
 
 
 
-(format nil donestr 3) → "Done. 3 warnings." 
+(format nil donestr 3) *→* "Done. 3 warnings." 
 
 
 
-(format nil donestr 1 5) → "Done. 1 warning. 5 errors." 
+(format nil donestr 1 5) *→* "Done. 1 warning. 5 errors." 
 
 
 
@@ -74,15 +74,15 @@ If &#126;<i><sup>∧</sup></i> appears within a &#126;[ or &#126;( construct, th
 
 
 
-(format nil tellstr 23) → "Twenty-three!" 
+(format nil tellstr 23) *→* "Twenty-three!" 
 
 
 
-(format nil tellstr nil "losers") → " Losers!" 
+(format nil tellstr nil "losers") *→* " Losers!" 
 
 
 
-(format nil tellstr 23 "losers") → "Twenty-three losers!" 
+(format nil tellstr 23 "losers") *→* "Twenty-three losers!" 
 
 
 
@@ -94,7 +94,7 @@ Following are examples of the use of &#126;<i><sup>∧</sup></i> within a &#126;
 
 
 
-→ " FOO" 
+*→* " FOO" 
 
 
 
@@ -102,7 +102,7 @@ Following are examples of the use of &#126;<i><sup>∧</sup></i> within a &#126;
 
 
 
-→ "FOO BAR" 
+*→* "FOO BAR" 
 
 
 
@@ -110,7 +110,7 @@ Following are examples of the use of &#126;<i><sup>∧</sup></i> within a &#126;
 
 
 
-→ "FOO BAR BAZ" 
+*→* "FOO BAR BAZ" 
 
 
 

@@ -1,4 +1,4 @@
-**standard-object** <ClLinks  term={"class"}><i>Class</i></ClLinks> 
+**standard-object** <GlossaryTerm styled={true} term={"class"}><i>Class</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"standard-object"}><b>standard-object</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks> is an <ClLinks  term={"instance"}><i>instance</i></ClLinks> of <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks> and is a <ClLinks  term={"superclass"}><i>superclass</i></ClLinks> of every <ClLinks  term={"class"}><i>class</i></ClLinks> that is an <ClLinks  term={"instance"}><i>instance</i></ClLinks> of <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks> except itself.  
+The <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink styled={true} term={"standard-object"}><b>standard-object</b></DictionaryLink> is an <GlossaryTerm styled={true} term={"instance"}><i>instance</i></GlossaryTerm> of <DictionaryLink styled={true} term={"standard-class"}><b>standard-class</b></DictionaryLink> and is a <GlossaryTerm styled={true} term={"superclass"}><i>superclass</i></GlossaryTerm> of every <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> that is an <GlossaryTerm styled={true} term={"instance"}><i>instance</i></GlossaryTerm> of <DictionaryLink styled={true} term={"standard-class"}><b>standard-class</b></DictionaryLink> except itself.  
 
 
 

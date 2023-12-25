@@ -2,7 +2,7 @@
 
 
 
-Especially if it is long, it is permissible and appropriate for a *report message* to contain one or more embedded <ClLinks styled={true} term={"newline"}><i>newlines</i></ClLinks>. 
+Especially if it is long, it is permissible and appropriate for a *report message* to contain one or more embedded <GlossaryTerm styled={true} term={"newline"}><i>newlines</i></GlossaryTerm>. 
 
 
 

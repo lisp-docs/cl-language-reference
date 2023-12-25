@@ -1,4 +1,4 @@
-**rename-package** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**rename-package** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"rename-package"}><b>rename-package</b></ClLinks> *package new-name* &amp;optional *new-nicknames → package-object* 
+<DictionaryLink styled={true} term={"rename-package"}><b>rename-package</b></DictionaryLink> *package new-name* &amp;optional *new-nicknames → package-object* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . 
+<GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>—a *package designator* . 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*new-nicknames*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *string designators*. The default is the *empty list*. 
+*new-nicknames*—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of *string designators*. The default is the *empty list*. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Replaces the name and nicknames of <ClLinks  term={"package"}><i>package</i></ClLinks>. The old name and all of the old nicknames of <ClLinks  term={"package"}><i>package</i></ClLinks> are eliminated and are replaced by *new-name* and *new-nicknames*. 
+Replaces the name and nicknames of <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. The old name and all of the old nicknames of <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> are eliminated and are replaced by *new-name* and *new-nicknames*. 
 
 
 
@@ -56,19 +56,21 @@ The consequences are undefined if *new-name* or any *new-nickname* conflicts wit
 
 **Examples:**
 ```lisp
-(make-package ’temporary :nicknames ’("TEMP")) → #<PACKAGE "TEMPORARY"> 
-(rename-package ’temp ’ephemeral) → #<PACKAGE "EPHEMERAL"> 
-(package-nicknames (find-package ’ephemeral)) → () 
-(find-package ’temporary) → NIL 
+
+(make-package ’temporary :nicknames ’("TEMP")) *→* #<PACKAGE "TEMPORARY"> 
+(rename-package ’temp ’ephemeral) *→* #<PACKAGE "EPHEMERAL"> 
+(package-nicknames (find-package ’ephemeral)) *→* () 
+(find-package ’temporary) *→* NIL 
 (rename-package ’ephemeral ’temporary ’(temp fleeting)) 
-→ #<PACKAGE "TEMPORARY"> 
-(package-nicknames (find-package ’temp)) → ("TEMP" "FLEETING") 
+*→* #<PACKAGE "TEMPORARY"> 
+(package-nicknames (find-package ’temp)) *→* ("TEMP" "FLEETING") 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"make-package"}><b>make-package</b></ClLinks> 
+<DictionaryLink styled={true} term={"make-package"}><b>make-package</b></DictionaryLink> 
 
 
 

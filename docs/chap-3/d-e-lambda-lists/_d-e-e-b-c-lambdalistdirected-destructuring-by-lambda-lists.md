@@ -2,7 +2,7 @@
 
 
 
-An extension of data-directed destructuring of <ClLinks  term={"tree"}><i>trees</i></ClLinks> is lambda-list-directed destructuring. This derives from the analogy between the three-element destructuring pattern 
+An extension of data-directed destructuring of <GlossaryTerm styled={true} term={"tree"}><i>trees</i></GlossaryTerm> is lambda-list-directed destructuring. This derives from the analogy between the three-element destructuring pattern 
 
 
 
@@ -42,7 +42,7 @@ Each following element is a variable or a list of a destructuring pattern, a def
 
 
 
-to match against this destructuring (sub)-pattern, the default form is evaluated and destructured instead. The supplied-p variable receives the value <ClLinks  term={"nil"}><b>nil</b></ClLinks> if the default form is used, <ClLinks  term={"t"}><b>t</b></ClLinks> otherwise. 
+to match against this destructuring (sub)-pattern, the default form is evaluated and destructured instead. The supplied-p variable receives the value <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if the default form is used, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> otherwise. 
 
 
 
@@ -50,7 +50,7 @@ to match against this destructuring (sub)-pattern, the default form is evaluated
 
 
 
-The next element is a destructuring pattern that matches the rest of the list. **&amp;body** is identical to **&amp;rest** but declares that what is being matched is a list of forms that constitutes the body of <ClLinks  term={"form"}><i>form</i></ClLinks>. This next element must be the last unless a *lambda list keyword* follows it. 
+The next element is a destructuring pattern that matches the rest of the list. **&amp;body** is identical to **&amp;rest** but declares that what is being matched is a list of forms that constitutes the body of <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. This next element must be the last unless a *lambda list keyword* follows it. 
 
 
 
@@ -66,7 +66,7 @@ The remaining elements are not destructuring patterns at all, but are auxiliary 
 
 
 
-The next element is a destructuring pattern that matches the entire form in a macro, or the entire <ClLinks  term={"subexpression"}><i>subexpression</i></ClLinks> at inner levels. 
+The next element is a destructuring pattern that matches the entire form in a macro, or the entire <GlossaryTerm styled={true} term={"subexpression"}><i>subexpression</i></GlossaryTerm> at inner levels. 
 
 
 
@@ -78,7 +78,7 @@ Each following element is one of
 
 
 
-a <ClLinks  term={"variable"}><i>variable</i></ClLinks>, 
+a <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>, 
 
 
 

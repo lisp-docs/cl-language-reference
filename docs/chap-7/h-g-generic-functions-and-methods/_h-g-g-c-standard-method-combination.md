@@ -2,27 +2,27 @@
 
 
 
-Standard method combination is supported by the <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks>. It is used if no other type of method combination is specified or if the built-in method combination type **standard** is specified. 
+Standard method combination is supported by the <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink styled={true} term={"standard-generic-function"}><b>standard-generic-function</b></DictionaryLink>. It is used if no other type of method combination is specified or if the built-in method combination type **standard** is specified. 
 
 
 
-Primary methods define the main action of the effective method, while auxiliary methods modify that action in one of three ways. A primary method has no method <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>. 
+Primary methods define the main action of the effective method, while auxiliary methods modify that action in one of three ways. A primary method has no method <GlossaryTerm styled={true} term={"qualifier"}><i>qualifiers</i></GlossaryTerm>. 
 
 
 
-An auxiliary method is a method whose <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> is :before, :after, or :around. Standard method combination allows no more than one <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> per method; if a method definition specifies more than one <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> per method, an error is signaled. 
+An auxiliary method is a method whose <GlossaryTerm styled={true} term={"qualifier"}><i>qualifier</i></GlossaryTerm> is :before, :after, or :around. Standard method combination allows no more than one <GlossaryTerm styled={true} term={"qualifier"}><i>qualifier</i></GlossaryTerm> per method; if a method definition specifies more than one <GlossaryTerm styled={true} term={"qualifier"}><i>qualifier</i></GlossaryTerm> per method, an error is signaled. 
 
 
 
-*•* A *before method* has the keyword :before as its only <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> . A *before method* specifies <ClLinks  term={"code"}><i>code</i></ClLinks> that is to be run before any *primary methods*. 
+*•* A *before method* has the keyword :before as its only <GlossaryTerm styled={true} term={"qualifier"}><i>qualifier</i></GlossaryTerm> . A *before method* specifies <GlossaryTerm styled={true} term={"code"}><i>code</i></GlossaryTerm> that is to be run before any *primary methods*. 
 
 
 
-*•* An *after method* has the keyword :after as its only <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> . An *after method* specifies <ClLinks  term={"code"}><i>code</i></ClLinks> that is to be run after *primary methods*. 
+*•* An *after method* has the keyword :after as its only <GlossaryTerm styled={true} term={"qualifier"}><i>qualifier</i></GlossaryTerm> . An *after method* specifies <GlossaryTerm styled={true} term={"code"}><i>code</i></GlossaryTerm> that is to be run after *primary methods*. 
 
 
 
-*•* An *around method* has the keyword :around as its only <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> . An *around method* specifies <ClLinks  term={"code"}><i>code</i></ClLinks> that is to be run instead of other *applicable methods*, but which might contain explicit <ClLinks  term={"code"}><i>code</i></ClLinks> which calls some of those *shadowed methods* (via <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks>). 
+*•* An *around method* has the keyword :around as its only <GlossaryTerm styled={true} term={"qualifier"}><i>qualifier</i></GlossaryTerm> . An *around method* specifies <GlossaryTerm styled={true} term={"code"}><i>code</i></GlossaryTerm> that is to be run instead of other *applicable methods*, but which might contain explicit <GlossaryTerm styled={true} term={"code"}><i>code</i></GlossaryTerm> which calls some of those *shadowed methods* (via <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink>). 
 
 
 
@@ -34,7 +34,7 @@ The semantics of standard method combination is as follows:
 
 
 
-*•* Inside the body of an *around method*, <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> can be used to call the *next method*. When the next method returns, the *around method* can execute more code, perhaps based on the returned value or values. The *generic function* <ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> is invoked if <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is used and there is no *applicable method* to call. The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> may be used to determine whether a *next method* exists. 
+*•* Inside the body of an *around method*, <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> can be used to call the *next method*. When the next method returns, the *around method* can execute more code, perhaps based on the returned value or values. The *generic function* <DictionaryLink styled={true} term={"no-next-method"}><b>no-next-method</b></DictionaryLink> is invoked if <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is used and there is no *applicable method* to call. The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"next-method-p"}><b>next-method-p</b></DictionaryLink> may be used to determine whether a *next method* exists. 
 
 
 
@@ -50,11 +50,11 @@ The semantics of standard method combination is as follows:
 
 
 
-*•* If an *around method* invokes <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks>, the next most specific *around method* is called, if one is applicable. If there are no *around methods* or if <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is called by the least specific *around method*, the other methods are called as follows: 
+*•* If an *around method* invokes <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink>, the next most specific *around method* is called, if one is applicable. If there are no *around methods* or if <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is called by the least specific *around method*, the other methods are called as follows: 
 
 
 
-– All the *before methods* are called, in most-specific-first order. Their values are ignored. An error is signaled if <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is used in a *before method*. 
+– All the *before methods* are called, in most-specific-first order. Their values are ignored. An error is signaled if <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is used in a *before method*. 
 
 
 
@@ -62,7 +62,7 @@ The semantics of standard method combination is as follows:
 
 
 
-method, <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> may be used to call the next most specific primary 
+method, <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> may be used to call the next most specific primary 
 
 
 
@@ -74,15 +74,15 @@ more code, perhaps based on the returned value or values. The generic function
 
 
 
-<ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> is invoked if <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is used and there are no more 
+<DictionaryLink styled={true} term={"no-next-method"}><b>no-next-method</b></DictionaryLink> is invoked if <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is used and there are no more 
 
 
 
-applicable primary methods. The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> may be used to 
+applicable primary methods. The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"next-method-p"}><b>next-method-p</b></DictionaryLink> may be used to 
 
 
 
-determine whether a *next method* exists. If <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is not used, only 
+determine whether a *next method* exists. If <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is not used, only 
 
 
 
@@ -94,11 +94,11 @@ the most specific *primary method* is called.
 
 
 
-ignored. An error is signaled if <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is used in an *after method*. 
+ignored. An error is signaled if <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is used in an *after method*. 
 
 
 
-*•* If no *around methods* were invoked, the most specific primary method supplies the value or values returned by the generic function. The value or values returned by the invocation of <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> in the least specific *around method* are those returned by the most specific primary method. 
+*•* If no *around methods* were invoked, the most specific primary method supplies the value or values returned by the generic function. The value or values returned by the invocation of <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> in the least specific *around method* are those returned by the most specific primary method. 
 
 
 
@@ -114,7 +114,7 @@ By contrast, all *around methods* run before any other methods run. Thus a less 
 
 
 
-If only primary methods are used and if <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is not used, only the most specific method is invoked; that is, more specific methods shadow more general ones. 
+If only primary methods are used and if <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is not used, only the most specific method is invoked; that is, more specific methods shadow more general ones. 
 
 
 

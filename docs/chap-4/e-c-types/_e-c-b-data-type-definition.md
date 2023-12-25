@@ -2,7 +2,7 @@
 
 
 
-Information about <ClLinks  term={"type"}><i>type</i></ClLinks> usage is located in the sections specified in Figure 4–1. Figure 4–7 lists some *classes* that are particularly relevant to the object system. Figure 9–1 lists the defined *condition types*. 
+Information about <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> usage is located in the sections specified in Figure 4–1. Figure 4–7 lists some *classes* that are particularly relevant to the object system. Figure 9–1 lists the defined *condition types*. 
 
 
 

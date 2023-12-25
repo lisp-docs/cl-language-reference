@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"add-method"}><b>add-method</b></ClLinks> *generic-function method ! generic-function* 
+<DictionaryLink styled={true} term={"add-method"}><b>add-method</b></DictionaryLink> *generic-function method ! generic-function* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"add-method"}><b>add-method</b></ClLinks> (*generic-function* <ClLinks  term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks>) 
+<DictionaryLink styled={true} term={"add-method"}><b>add-method</b></DictionaryLink> (*generic-function* <DictionaryLink styled={true} term={"standard-generic-function"}><b>standard-generic-function</b></DictionaryLink>) 
 
 
 
-(<ClLinks  term={"method"}><i>method</i></ClLinks> <ClLinks  term={"method"}><b>method</b></ClLinks>) 
+(<GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> <DictionaryLink styled={true} term={"method"}><b>method</b></DictionaryLink>) 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"method"}><i>method</i></ClLinks>—a *method object*. 
+<GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm>—a *method object*. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-The generic function <ClLinks  term={"add-method"}><b>add-method</b></ClLinks> adds a <ClLinks  term={"method"}><i>method</i></ClLinks> to a *generic function*. 
+The generic function <DictionaryLink styled={true} term={"add-method"}><b>add-method</b></DictionaryLink> adds a <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> to a *generic function*. 
 
 
 
@@ -54,7 +54,7 @@ The generic function <ClLinks  term={"add-method"}><b>add-method</b></ClLinks> a
 
 
 
-If <ClLinks  term={"method"}><i>method</i></ClLinks> agrees with an existing <ClLinks  term={"method"}><i>method</i></ClLinks> of *generic-function* on *parameter specializers* and <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>, the existing <ClLinks  term={"method"}><i>method</i></ClLinks> is replaced. 
+If <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> agrees with an existing <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> of *generic-function* on *parameter specializers* and <GlossaryTerm styled={true} term={"qualifier"}><i>qualifiers</i></GlossaryTerm>, the existing <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> is replaced. 
 
 
 
@@ -62,11 +62,11 @@ If <ClLinks  term={"method"}><i>method</i></ClLinks> agrees with an existing <Cl
 
 
 
-The *lambda list* of the method function of <ClLinks  term={"method"}><i>method</i></ClLinks> must be congruent with the *lambda list* of *generic-function*, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+The *lambda list* of the method function of <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> must be congruent with the *lambda list* of *generic-function*, or an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
-If <ClLinks  term={"method"}><i>method</i></ClLinks> is a *method object* of another *generic function*, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> is a *method object* of another *generic function*, an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
@@ -74,7 +74,7 @@ If <ClLinks  term={"method"}><i>method</i></ClLinks> is a *method object* of ano
 
 
 
-<ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks>, <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks>, <ClLinks  term={"find-method"}><b>find-method</b></ClLinks>, <ClLinks  term={"remove-method"}><b>remove-method</b></ClLinks>, Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers) 
+<DictionaryLink styled={true} term={"defmethod"}><b>defmethod</b></DictionaryLink>, <DictionaryLink styled={true} term={"defgeneric"}><b>defgeneric</b></DictionaryLink>, <DictionaryLink styled={true} term={"find-method"}><b>find-method</b></DictionaryLink>, <DictionaryLink styled={true} term={"remove-method"}><b>remove-method</b></DictionaryLink>, Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers) 
 
 
 

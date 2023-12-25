@@ -2,23 +2,23 @@
 
 
 
-Except where explicitly allowed, the consequences are undefined if any of the following actions are performed on an *external symbol* of the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks>: 
+Except where explicitly allowed, the consequences are undefined if any of the following actions are performed on an *external symbol* of the COMMON-LISP <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>: 
 
 
 
-1\. <ClLinks  term={"binding"}><i>Binding</i></ClLinks> or altering its value (lexically or dynamically). (Some exceptions are noted below.) 2. Defining, undefining, or <ClLinks  term={"binding"}><i>binding</i></ClLinks> it as a <ClLinks  term={"function"}><i>function</i></ClLinks>. (Some exceptions are noted below.) 
+1\. <GlossaryTerm styled={true} term={"binding"}><i>Binding</i></GlossaryTerm> or altering its value (lexically or dynamically). (Some exceptions are noted below.) 2. Defining, undefining, or <GlossaryTerm styled={true} term={"binding"}><i>binding</i></GlossaryTerm> it as a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>. (Some exceptions are noted below.) 
 
 
 
-3\. Defining, undefining, or <ClLinks  term={"binding"}><i>binding</i></ClLinks> it as a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or *compiler macro*. (Some exceptions are noted below.) 
+3\. Defining, undefining, or <GlossaryTerm styled={true} term={"binding"}><i>binding</i></GlossaryTerm> it as a <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> or *compiler macro*. (Some exceptions are noted below.) 
 
 
 
-4\. Defining it as a *type specifier* (via <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks>, <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks  term={"deftype"}><b>deftype</b></ClLinks>, <ClLinks  term={"define-condition"}><b>define-condition</b></ClLinks>). 5. Defining it as a structure (via <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks>). 
+4\. Defining it as a *type specifier* (via <DictionaryLink styled={true} term={"defstruct"}><b>defstruct</b></DictionaryLink>, <DictionaryLink styled={true} term={"defclass"}><b>defclass</b></DictionaryLink>, <DictionaryLink styled={true} term={"deftype"}><b>deftype</b></DictionaryLink>, <DictionaryLink styled={true} term={"define-condition"}><b>define-condition</b></DictionaryLink>). 5. Defining it as a structure (via <DictionaryLink styled={true} term={"defstruct"}><b>defstruct</b></DictionaryLink>). 
 
 
 
-6\. Defining it as a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> with a <ClLinks  term={"declaration"}><b>declaration</b></ClLinks> <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks>. 
+6\. Defining it as a <GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm> with a <DictionaryLink styled={true} term={"declaration"}><b>declaration</b></DictionaryLink> <GlossaryTerm styled={true} term={"proclamation"}><i>proclamation</i></GlossaryTerm>. 
 
 
 
@@ -42,23 +42,23 @@ Except where explicitly allowed, the consequences are undefined if any of the fo
 
 
 
-9\. Tracing it (via <ClLinks  term={"trace"}><b>trace</b></ClLinks>). 
+9\. Tracing it (via <DictionaryLink styled={true} term={"trace"}><b>trace</b></DictionaryLink>). 
 
 
 
-10\. Declaring or proclaiming it <ClLinks  term={"special"}><b>special</b></ClLinks> (via <ClLinks  term={"declare"}><b>declare</b></ClLinks>, <ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, or <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks>). 
+10\. Declaring or proclaiming it <DictionaryLink styled={true} term={"special"}><b>special</b></DictionaryLink> (via <DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink>, <DictionaryLink styled={true} term={"declaim"}><b>declaim</b></DictionaryLink>, or <DictionaryLink styled={true} term={"proclaim"}><b>proclaim</b></DictionaryLink>). 
 
 
 
-11\. Declaring or proclaiming its <ClLinks  term={"type"}><b>type</b></ClLinks> or <ClLinks  term={"ftype"}><b>ftype</b></ClLinks> (via <ClLinks  term={"declare"}><b>declare</b></ClLinks>, <ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, or <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks>). (Some exceptions are noted below.) 
+11\. Declaring or proclaiming its <DictionaryLink styled={true} term={"type"}><b>type</b></DictionaryLink> or <DictionaryLink styled={true} term={"ftype"}><b>ftype</b></DictionaryLink> (via <DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink>, <DictionaryLink styled={true} term={"declaim"}><b>declaim</b></DictionaryLink>, or <DictionaryLink styled={true} term={"proclaim"}><b>proclaim</b></DictionaryLink>). (Some exceptions are noted below.) 
 
 
 
-12\. Removing it from the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+12\. Removing it from the COMMON-LISP <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
-13\. Defining a *setf expander* for it (via <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks> or **define-setf-method**). 
+13\. Defining a *setf expander* for it (via <DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink> or **define-setf-method**). 
 
 
 
@@ -66,11 +66,11 @@ Except where explicitly allowed, the consequences are undefined if any of the fo
 
 
 
-15\. Defining it as a *method combination* type (via <ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks>). 
+15\. Defining it as a *method combination* type (via <DictionaryLink styled={true} term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink>). 
 
 
 
-16\. Using it as the class-name argument to <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"find-class"}><b>find-class</b></ClLinks>. 
+16\. Using it as the class-name argument to <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink styled={true} term={"find-class"}><b>find-class</b></DictionaryLink>. 
 
 
 
@@ -82,7 +82,7 @@ Except where explicitly allowed, the consequences are undefined if any of the fo
 
 
 
-19\. Defining a <ClLinks  term={"method"}><i>method</i></ClLinks> for a *standardized generic function* which is <ClLinks  term={"applicable"}><i>applicable</i></ClLinks> when all of the <ClLinks  term={"argument"}><i>arguments</i></ClLinks> are *direct instances* of *standardized classes*. 
+19\. Defining a <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> for a *standardized generic function* which is <GlossaryTerm styled={true} term={"applicable"}><i>applicable</i></GlossaryTerm> when all of the <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> are *direct instances* of *standardized classes*. 
 
 
 

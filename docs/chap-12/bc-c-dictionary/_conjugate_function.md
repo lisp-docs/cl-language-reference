@@ -1,4 +1,4 @@
-**conjugate** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**conjugate** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"conjugate"}><b>conjugate</b></ClLinks> *number → conjugate* 
+<DictionaryLink styled={true} term={"conjugate"}><b>conjugate</b></DictionaryLink> *number → conjugate* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+<GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
-*conjugate*—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+*conjugate*—a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the complex conjugate of <ClLinks  term={"number"}><i>number</i></ClLinks>. The conjugate of a *real* number is itself. 
+Returns the complex conjugate of <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>. The conjugate of a *real* number is itself. 
 
 
 
@@ -40,18 +40,20 @@ Returns the complex conjugate of <ClLinks  term={"number"}><i>number</i></ClLink
 
 **Examples:**
 ```lisp
-(conjugate #c(0 -1)) → #C(0 1) 
-(conjugate #c(1 1)) → #C(1 -1) 
-(conjugate 1.5) → 1.5 
-(conjugate #C(3/5 4/5)) → #C(3/5 -4/5) 
-(conjugate #C(0.0D0 -1.0D0)) → #C(0.0D0 1.0D0) 
-(conjugate 3.7) → 3.7 
+
+(conjugate #c(0 -1)) *→* #C(0 1) 
+(conjugate #c(1 1)) *→* #C(1 -1) 
+(conjugate 1.5) *→* 1.5 
+(conjugate #C(3/5 4/5)) *→* #C(3/5 -4/5) 
+(conjugate #C(0.0D0 -1.0D0)) *→* #C(0.0D0 1.0D0) 
+(conjugate 3.7) *→* 3.7 
+
 ```
 **Notes:** 
 
 
 
-For a <ClLinks  term={"complex"}><i>complex</i></ClLinks> number z, 
+For a <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> number z, 
 
 
 

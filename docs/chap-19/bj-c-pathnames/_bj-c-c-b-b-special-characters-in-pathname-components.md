@@ -1,15 +1,25 @@
+ 
 
-<ClLinks  term={"string"}><i>Strings</i></ClLinks> in <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> component values never contain special <ClLinks  term={"character"}><i>characters</i></ClLinks> that represent separation between <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> fields, such as <ClLinks  term={"slash"}><i>slash</i></ClLinks> in Unix <ClLinks  term={"filename"}><i>filenames</i></ClLinks>. Whether separator <ClLinks  term={"character"}><i>characters</i></ClLinks> are permitted as part of a <ClLinks  term={"string"}><i>string</i></ClLinks> in a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> component is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>; however, if the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> does permit it, it must arrange to properly “quote” the character for the *file system* when constructing a <ClLinks  term={"namestring"}><i>namestring</i></ClLinks>. For example,
 
-<!-- replaced ∧ with ^ -->
 
-```lisp
-;; In a TOPS-20 implementation, which uses ^V to quote
-(NAMESTRING (MAKE-PATHNAME :HOST "OZ" :NAME "<TEST>"))
-→ #P"OZ:PS:^V<TEST^V>"
-NOT → #P"OZ:PS:<TEST>"
-```
+<GlossaryTerm styled={true} term={"string"}><i>Strings</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> component values never contain special <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> that represent separation between <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> fields, such as <GlossaryTerm styled={true} term={"slash"}><i>slash</i></GlossaryTerm> in Unix <GlossaryTerm styled={true} term={"filename"}><i>filenames</i></GlossaryTerm>. Whether separator <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> are permitted as part of a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> in a <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> component is <GlossaryTerm styled={true} term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>; however, if the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> does permit it, it must arrange to properly “quote” the character for the *file system* when constructing a <GlossaryTerm styled={true} term={"namestring"}><i>namestring</i></GlossaryTerm>. For example, 
 
-:::info
-Replaced `∧` with `^`
-:::
+
+
+;; In a TOPS-20 implementation, which uses <i><sup>∧</sup></i>V to quote 
+
+
+
+(NAMESTRING (MAKE-PATHNAME :HOST "OZ" :NAME "&lt;TEST&gt;")) 
+
+
+
+<i>→</i> #P"OZ:PS:<i><sup>∧</sup></i>V<test<i><sup>∧</sup>V&gt;" 
+
+
+
+<i><sup>not</sup> →</i> #P"OZ:PS:&lt;TEST&gt;" 
+
+
+
+</test<i>

@@ -1,4 +1,4 @@
-**write-byte** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**write-byte** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"write-byte"}><b>write-byte</b></ClLinks> *byte stream → byte* 
+<DictionaryLink styled={true} term={"write-byte"}><b>write-byte</b></DictionaryLink> *byte stream → byte* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"byte"}><i>byte</i></ClLinks>—an *integer* of the *stream element type* of <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"byte"}><i>byte</i></GlossaryTerm>—an *integer* of the *stream element type* of <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a *binary output stream*. 
+<GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>—a *binary output stream*. 
 
 
 
@@ -26,22 +26,24 @@
 
 
 
-<ClLinks  term={"write-byte"}><b>write-byte</b></ClLinks> writes one byte, <ClLinks  term={"byte"}><i>byte</i></ClLinks>, to <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<DictionaryLink styled={true} term={"write-byte"}><b>write-byte</b></DictionaryLink> writes one byte, <GlossaryTerm styled={true} term={"byte"}><i>byte</i></GlossaryTerm>, to <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
 **Examples:**
 ```lisp
+
 (with-open-file (s "temp-bytes" 
 		   :direction :output 
 		   :element-type ’unsigned-byte) 
-  (write-byte 101 s)) → 101 
+  (write-byte 101 s)) *→* 101 
+
 ```
 **Side Effects:** 
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks> is modified. 
+<GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is modified. 
 
 
 
@@ -49,7 +51,7 @@
 
 
 
-The *element type* of the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+The *element type* of the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
@@ -57,11 +59,11 @@ The *element type* of the <ClLinks  term={"stream"}><i>stream</i></ClLinks>.
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a *binary output stream*. 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is not a *binary output stream*. 
 
 
 
-Might signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"byte"}><i>byte</i></ClLinks> is not an *integer* of the *stream element type* of <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Might signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"byte"}><i>byte</i></GlossaryTerm> is not an *integer* of the *stream element type* of <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
@@ -69,7 +71,7 @@ Might signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks 
 
 
 
-<ClLinks  term={"read-byte"}><b>read-byte</b></ClLinks>, <ClLinks  term={"write-char"}><b>write-char</b></ClLinks>, <ClLinks  term={"write-sequence"}><b>write-sequence</b></ClLinks> 
+<DictionaryLink styled={true} term={"read-byte"}><b>read-byte</b></DictionaryLink>, <DictionaryLink styled={true} term={"write-char"}><b>write-char</b></DictionaryLink>, <DictionaryLink styled={true} term={"write-sequence"}><b>write-sequence</b></DictionaryLink> 
 
 
 
@@ -85,7 +87,7 @@ Might signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks 
 
 
 
-<ClLinks  term={"peek-char"}><b>peek-char</b></ClLinks> 
+<DictionaryLink styled={true} term={"peek-char"}><b>peek-char</b></DictionaryLink> 
 
 
 

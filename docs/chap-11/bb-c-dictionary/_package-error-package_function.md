@@ -1,4 +1,4 @@
-**package-error-package** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**package-error-package** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"package-error-package"}><b>package-error-package</b></ClLinks> *condition → package* 
+<DictionaryLink styled={true} term={"package-error-package"}><b>package-error-package</b></DictionaryLink> *condition → package* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"package-error"}><b>package-error</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . 
+<GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>—a *package designator* . 
 
 
 
@@ -26,20 +26,20 @@
 
 
 
-Returns a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for the offending <ClLinks  term={"package"}><i>package</i></ClLinks> in the <ClLinks  term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks  term={"condition"}><i>condition</i></ClLinks>. 
-
-**Examples:**
+Returns a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for the offending <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"situation"}><i>situation</i></GlossaryTerm> represented by the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>. **Examples:**
 ```lisp
+
 (package-error-package 
  (make-condition ’package-error 
 		  :package (find-package "COMMON-LISP"))) 
-→ #<Package "COMMON-LISP"> 
+*→* #<Package "COMMON-LISP"> 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"package-error"}><b>package-error</b></ClLinks> 
+<DictionaryLink styled={true} term={"package-error"}><b>package-error</b></DictionaryLink> 
 
 
 

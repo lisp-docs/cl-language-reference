@@ -26,11 +26,11 @@ The *arg*th clause is selected, where the first clause is number 0. If a prefix 
 
 
 
-&#126;:[*alternative*&#126;;*consequent*&#126;] selects the *alternative* control string if *arg* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, and selects the *consequent* control string otherwise. 
+&#126;:[*alternative*&#126;;*consequent*&#126;] selects the *alternative* control string if *arg* is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>, and selects the *consequent* control string otherwise. 
 
 
 
-&#126;@[*consequent*&#126;] tests the argument. If it is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, then the argument is not used up by the &#126;[ command but remains as the next one to be processed, and the one clause *consequent* is processed. If the *arg* is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, then the argument is used up, and the clause is not processed. The clause therefore should normally use exactly one argument, and may expect it to be <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>. For example: 
+&#126;@[*consequent*&#126;] tests the argument. If it is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, then the argument is not used up by the &#126;[ command but remains as the next one to be processed, and the one clause *consequent* is processed. If the *arg* is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>, then the argument is used up, and the clause is not processed. The clause therefore should normally use exactly one argument, and may expect it to be <GlossaryTerm styled={true} term={"non-nil"}><i>non-nil</i></GlossaryTerm>. For example: 
 
 
 
@@ -50,7 +50,7 @@ The *arg*th clause is selected, where the first clause is number 0. If a prefix 
 
 
 
-→ " print length = 5" 
+*→* " print length = 5" 
 
 
 
@@ -58,11 +58,11 @@ Note also that
 
 
 
-(format <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> "...&#126;@[*str*&#126;]..." ...) 
+(format <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> "...&#126;@[*str*&#126;]..." ...) 
 
 
 
-*≡* (format <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> "...&#126;:[&#126;;&#126;:\**str*&#126;]..." ...) 
+*≡* (format <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> "...&#126;:[&#126;;&#126;:\**str*&#126;]..." ...) 
 
 
 
@@ -90,23 +90,23 @@ The combination of &#126;[ and # is useful, for example, for dealing with Englis
 
 
 
-(format nil foo) → "Items: none." 
+(format nil foo) *→* "Items: none." 
 
 
 
-(format nil foo ’foo) → "Items: FOO." 
+(format nil foo ’foo) *→* "Items: FOO." 
 
 
 
-(format nil foo ’foo ’bar) → "Items: FOO and BAR." 
+(format nil foo ’foo ’bar) *→* "Items: FOO and BAR." 
 
 
 
-(format nil foo ’foo ’bar ’baz) → "Items: FOO, BAR, and BAZ." 
+(format nil foo ’foo ’bar ’baz) *→* "Items: FOO, BAR, and BAZ." 
 
 
 
-(format nil foo ’foo ’bar ’baz ’quux) → "Items: FOO, BAR, BAZ, and QUUX." 
+(format nil foo ’foo ’bar ’baz ’quux) *→* "Items: FOO, BAR, BAZ, and QUUX." 
 
 
 

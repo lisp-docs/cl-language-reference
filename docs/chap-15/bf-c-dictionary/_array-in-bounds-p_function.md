@@ -1,4 +1,4 @@
-**array-in-bounds-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**array-in-bounds-p** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"array-in-bounds-p"}><b>array-in-bounds-p</b></ClLinks> <ClLinks  term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → generalized-boolean* 
+<DictionaryLink styled={true} term={"array-in-bounds-p"}><b>array-in-bounds-p</b></DictionaryLink> <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> &amp;rest *subscripts → generalized-boolean* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-*subscripts*—a list of *integers* of length equal to the <ClLinks  term={"rank"}><i>rank</i></ClLinks> of the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+*subscripts*—a list of *integers* of length equal to the <GlossaryTerm styled={true} term={"rank"}><i>rank</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
@@ -30,24 +30,26 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the *subscripts* are all in bounds for <ClLinks  term={"array"}><i>array</i></ClLinks>; otherwise returns <ClLinks  term={"false"}><i>false</i></ClLinks>. (If <ClLinks  term={"array"}><i>array</i></ClLinks> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , that *fill pointer* is ignored.) 
+Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if the *subscripts* are all in bounds for <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>; otherwise returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. (If <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> with a *fill pointer* , that *fill pointer* is ignored.) 
 
 
 
 **Examples:**
 ```lisp
+
 (setq a (make-array ’(7 11) :element-type ’string-char)) 
-(array-in-bounds-p a 0 0) → true 
-(array-in-bounds-p a 6 10) → true 
-(array-in-bounds-p a 0 -1) → false 
-(array-in-bounds-p a 0 11) → false 
-(array-in-bounds-p a 7 0) → false 
+(array-in-bounds-p a 0 0) *→ true* 
+(array-in-bounds-p a 6 10) *→ true* 
+(array-in-bounds-p a 0 -1) *→ false* 
+(array-in-bounds-p a 0 11) *→ false* 
+(array-in-bounds-p a 7 0) *→ false* 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"array-dimensions"}><b>array-dimensions</b></ClLinks> 
+<DictionaryLink styled={true} term={"array-dimensions"}><b>array-dimensions</b></DictionaryLink> 
 
 
 

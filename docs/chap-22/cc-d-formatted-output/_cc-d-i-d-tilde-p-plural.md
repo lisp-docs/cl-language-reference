@@ -2,7 +2,7 @@
 
 
 
-If *arg* is not <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks> to the integer 1, a lowercase s is printed; if *arg* is <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks> to 1, nothing is printed. If *arg* is a floating-point 1.0, the s is printed. 
+If *arg* is not <DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink> to the integer 1, a lowercase s is printed; if *arg* is <DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink> to 1, nothing is printed. If *arg* is a floating-point 1.0, the s is printed. 
 
 
 
@@ -14,19 +14,15 @@ If *arg* is not <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks> to the 
 
 
 
-(format nil "&#126;D tr&#126;:@P/&#126;D win&#126;:P" 7 1) → "7 tries/1 win" 
+(format nil "&#126;D tr&#126;:@P/&#126;D win&#126;:P" 7 1) *→* "7 tries/1 win" 
 
 
 
-(format nil "&#126;D tr&#126;:@P/&#126;D win&#126;:P" 1 0) → "1 try/0 wins" 
-
-
+(format nil "&#126;D tr&#126;:@P/&#126;D win&#126;:P" 1 0) *→* "1 try/0 wins" 
 
 
 
 
-
- 
 
 
 
@@ -34,7 +30,11 @@ If *arg* is not <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks> to the 
 
 
 
-(format nil "&#126;D tr&#126;:@P/&#126;D win&#126;:P" 1 3) → "1 try/3 wins" 
+ 
+
+
+
+(format nil "&#126;D tr&#126;:@P/&#126;D win&#126;:P" 1 3) *→* "1 try/3 wins" 
 
 
 

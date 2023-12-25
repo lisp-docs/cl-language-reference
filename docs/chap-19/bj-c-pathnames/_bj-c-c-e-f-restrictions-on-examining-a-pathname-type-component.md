@@ -1,4 +1,4 @@
- The type might be a <ClLinks  term={"string"}><i>string</i></ClLinks>, :wild, :unspecific, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+ The type might be a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>, :wild, :unspecific, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 

@@ -1,4 +1,4 @@
-**atom** <ClLinks styled={true} term={"type"}><i>Type</i></ClLinks> 
+**atom** <GlossaryTerm styled={true} term={"type"}><i>Type</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"atom"}><b>atom</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"atom"}><b>atom</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 

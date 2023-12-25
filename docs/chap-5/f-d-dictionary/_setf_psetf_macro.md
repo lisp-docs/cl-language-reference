@@ -1,4 +1,4 @@
-**setf, psetf** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**setf, psetf** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"setf"}><b>setf</b></ClLinks> *\{#pair\}*\* *! \{result\}*\* 
+<DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> *\{#pair\}*\* *! \{result\}*\* 
 
 
 
-<ClLinks  term={"psetf"}><b>psetf</b></ClLinks> *\{#pair\}*\* *!* <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
+<DictionaryLink styled={true} term={"psetf"}><b>psetf</b></DictionaryLink> *\{#pair\}*\* *!* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -38,15 +38,15 @@ Data and Control
 
 
 
-<ClLinks  term={"place"}><i>place</i></ClLinks>—a <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>. 
 
 
 
-*newvalue*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+*newvalue*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-*results*—the *multiple values*<sub>2</sub> returned by the storing form for the last <ClLinks  term={"place"}><i>place</i></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if there are no *pairs*. 
+*results*—the *multiple values*<sub>2</sub> returned by the storing form for the last <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if there are no *pairs*. 
 
 
 
@@ -54,11 +54,11 @@ Data and Control
 
 
 
-<ClLinks  term={"setf"}><b>setf</b></ClLinks> changes the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"place"}><i>place</i></ClLinks> to be *newvalue*. 
+<DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> changes the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> to be *newvalue*. 
 
 
 
-(setf place newvalue) expands into an update form that stores the result of evaluating *newvalue* into the location referred to by <ClLinks  term={"place"}><i>place</i></ClLinks>. Some <ClLinks  term={"place"}><i>place</i></ClLinks> forms involve uses of accessors that take optional arguments. Whether those optional arguments are permitted by <ClLinks  term={"setf"}><b>setf</b></ClLinks>, or what their use is, is up to the <ClLinks  term={"setf"}><b>setf</b></ClLinks> expander function and is not under the control of <ClLinks  term={"setf"}><b>setf</b></ClLinks>. The documentation for any <ClLinks  term={"function"}><i>function</i></ClLinks> that accepts **&amp;optional**, **&amp;rest**, or &amp;key arguments and that claims to be usable with <ClLinks  term={"setf"}><b>setf</b></ClLinks> must specify how those arguments are treated. 
+(setf place newvalue) expands into an update form that stores the result of evaluating *newvalue* into the location referred to by <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>. Some <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> forms involve uses of accessors that take optional arguments. Whether those optional arguments are permitted by <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink>, or what their use is, is up to the <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> expander function and is not under the control of <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink>. The documentation for any <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> that accepts **&amp;optional**, **&amp;rest**, or &amp;key arguments and that claims to be usable with <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> must specify how those arguments are treated. 
 
 
 
@@ -102,14 +102,13 @@ is precisely equivalent to
 
 
 
-For <ClLinks  term={"psetf"}><b>psetf</b></ClLinks>, if more than one *pair* is supplied then the assignments of new values to places are done in parallel. More precisely, all <ClLinks  term={"subform"}><i>subforms</i></ClLinks> (in both the <ClLinks  term={"place"}><i>place</i></ClLinks> and *newvalue forms*) that are to be evaluated are evaluated from left to right; after all evaluations have been performed, all of the assignments are performed in an unpredictable order. 
+For <DictionaryLink styled={true} term={"psetf"}><b>psetf</b></DictionaryLink>, if more than one *pair* is supplied then the assignments of new values to places are done in parallel. More precisely, all <GlossaryTerm styled={true} term={"subform"}><i>subforms</i></GlossaryTerm> (in both the <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> and *newvalue forms*) that are to be evaluated are evaluated from left to right; after all evaluations have been performed, all of the assignments are performed in an unpredictable order. 
 
 
 
-For detailed treatment of the expansion of <ClLinks  term={"setf"}><b>setf</b></ClLinks> and <ClLinks  term={"psetf"}><b>psetf</b></ClLinks>, see Section 5.1.2 (Kinds of Places). 
-
-**Examples:**
+For detailed treatment of the expansion of <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> and <DictionaryLink styled={true} term={"psetf"}><b>psetf</b></DictionaryLink>, see Section 5.1.2 (Kinds of Places). **Examples:**
 ```lisp
+
 (setq x (cons ’a ’b) y (list 1 2 3)) *!* (1 2 3) 
 (setf (car x) ’x (cadr y) (car x) (cdr x) y) *!* (1 X 3) 
 x *!* (X 1 X 3) 
@@ -118,13 +117,16 @@ y *!* (1 X 3)
 (psetf (car x) ’x (cadr y) (car x) (cdr x) y) *!* NIL 
 x *!* (X 1 A 3) 
 
+
+
 y *!* (1 A 3) 
+
 ```
 **Aected By:** 
 
 
 
-<ClLinks  term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>, <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks>, **\*macroexpand-hook\*** 
+<DictionaryLink styled={true} term={"define-setf-expander"}><b>define-setf-expander</b></DictionaryLink>, <DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink>, **\*macroexpand-hook\*** 
 
 
 
@@ -132,7 +134,7 @@ y *!* (1 A 3)
 
 
 
-<ClLinks  term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>, <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks>, <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks>, <ClLinks  term={"rotatef"}><b>rotatef</b></ClLinks>, <ClLinks  term={"shiftf"}><b>shiftf</b></ClLinks>, Section 5.1 (Generalized Reference) 
+<DictionaryLink styled={true} term={"define-setf-expander"}><b>define-setf-expander</b></DictionaryLink>, <DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink>, <DictionaryLink styled={true} term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink>, <DictionaryLink styled={true} term={"rotatef"}><b>rotatef</b></DictionaryLink>, <DictionaryLink styled={true} term={"shiftf"}><b>shiftf</b></DictionaryLink>, Section 5.1 (Generalized Reference) 
 
 
 

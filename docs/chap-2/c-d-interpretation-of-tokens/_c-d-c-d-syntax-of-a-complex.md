@@ -2,11 +2,11 @@
 
 
 
-A <ClLinks  term={"complex"}><i>complex</i></ClLinks> has a Cartesian structure, with a real part and an imaginary part each of which is a *real*. The parts of a <ClLinks  term={"complex"}><i>complex</i></ClLinks> are not necessarily <ClLinks  term={"float"}><i>floats</i></ClLinks> but both parts must be of the same <ClLinks  term={"type"}><i>type</i></ClLinks>: either both are <ClLinks  term={"rational"}><i>rationals</i></ClLinks>, or both are of the same *float subtype*. When constructing a <ClLinks  term={"complex"}><i>complex</i></ClLinks> , if the specified parts are not the same <ClLinks  term={"type"}><i>type</i></ClLinks>, the parts are converted to be the same <ClLinks  term={"type"}><i>type</i></ClLinks> internally 
+A <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> has a Cartesian structure, with a real part and an imaginary part each of which is a *real*. The parts of a <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> are not necessarily <GlossaryTerm styled={true} term={"float"}><i>floats</i></GlossaryTerm> but both parts must be of the same <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>: either both are <GlossaryTerm styled={true} term={"rational"}><i>rationals</i></GlossaryTerm>, or both are of the same *float subtype*. When constructing a <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> , if the specified parts are not the same <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>, the parts are converted to be the same <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> internally 
 
 
 
-(*i.e.*, the <ClLinks  term={"rational"}><i>rational</i></ClLinks> part is converted to a <ClLinks  term={"float"}><i>float</i></ClLinks>). An <ClLinks  term={"object"}><i>object</i></ClLinks> of type (complex rational) is converted internally and represented thereafter as a <ClLinks  term={"rational"}><i>rational</i></ClLinks> if its imaginary part is an *integer* whose value is 0. 
+(*i.e.*, the <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm> part is converted to a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm>). An <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> of type (complex rational) is converted internally and represented thereafter as a <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm> if its imaginary part is an *integer* whose value is 0. 
 
 
 

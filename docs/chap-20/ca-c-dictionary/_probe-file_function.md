@@ -1,4 +1,4 @@
-**probe-file** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**probe-file** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"probe-file"}><b>probe-file</b></ClLinks> *pathspec → truename* 
+<DictionaryLink styled={true} term={"probe-file"}><b>probe-file</b></DictionaryLink> *pathspec → truename* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"truename"}><i>truename</i></ClLinks>—a *physical pathname* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"truename"}><i>truename</i></GlossaryTerm>—a *physical pathname* or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -38,15 +38,15 @@
 
 
 
-<ClLinks  term={"probe-file"}><b>probe-file</b></ClLinks> tests whether a file exists. 
+<DictionaryLink styled={true} term={"probe-file"}><b>probe-file</b></DictionaryLink> tests whether a file exists. 
 
 
 
-<ClLinks  term={"probe-file"}><b>probe-file</b></ClLinks> returns <ClLinks  term={"false"}><i>false</i></ClLinks> if there is no file named *pathspec*, and otherwise returns the <ClLinks  term={"truename"}><i>truename</i></ClLinks> of *pathspec*. 
+<DictionaryLink styled={true} term={"probe-file"}><b>probe-file</b></DictionaryLink> returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> if there is no file named *pathspec*, and otherwise returns the <GlossaryTerm styled={true} term={"truename"}><i>truename</i></GlossaryTerm> of *pathspec*. 
 
 
 
-If the *pathspec designator* is an open <ClLinks  term={"stream"}><i>stream</i></ClLinks>, then <ClLinks  term={"probe-file"}><b>probe-file</b></ClLinks> produces the <ClLinks  term={"truename"}><i>truename</i></ClLinks> of its associated <ClLinks  term={"file"}><i>file</i></ClLinks>. If *pathspec* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, whether open or closed, it is coerced to a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> as if by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>. 
+If the *pathspec designator* is an open <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>, then <DictionaryLink styled={true} term={"probe-file"}><b>probe-file</b></DictionaryLink> produces the <GlossaryTerm styled={true} term={"truename"}><i>truename</i></GlossaryTerm> of its associated <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm>. If *pathspec* is a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>, whether open or closed, it is coerced to a <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> as if by the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"pathname"}><b>pathname</b></DictionaryLink>. 
 
 
 
@@ -62,11 +62,11 @@ The host computer’s file system.
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if *pathspec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
+An error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if *pathspec* is <GlossaryTerm styled={true} term={"wild"}><i>wild</i></GlossaryTerm>. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if the *file system* cannot perform the requested operation. 
+An error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if the *file system* cannot perform the requested operation. 
 
 
 
@@ -74,7 +74,7 @@ An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-
 
 
 
-<ClLinks  term={"truename"}><b>truename</b></ClLinks>, <ClLinks  term={"open"}><b>open</b></ClLinks>, <ClLinks  term={"ensure-directories-exist"}><b>ensure-directories-exist</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 21.1.1.1.2 (Open and Closed Streams), Section 19.1.2 (Pathnames as Filenames) 
+<DictionaryLink styled={true} term={"truename"}><b>truename</b></DictionaryLink>, <DictionaryLink styled={true} term={"open"}><b>open</b></DictionaryLink>, <DictionaryLink styled={true} term={"ensure-directories-exist"}><b>ensure-directories-exist</b></DictionaryLink>, <DictionaryLink styled={true} term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink styled={true} term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, Section 20.1 (File System Concepts), Section 21.1.1.1.2 (Open and Closed Streams), Section 19.1.2 (Pathnames as Filenames) 
 
 
 

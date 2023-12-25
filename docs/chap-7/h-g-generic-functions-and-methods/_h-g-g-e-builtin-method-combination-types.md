@@ -2,7 +2,7 @@
 
 
 
-The object system provides a set of built-in method combination types. To specify that a generic function is to use one of these method combination types, the name of the method combination type is given as the argument to the :method-combination option to <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> or to the :method-combination option to any of the other operators that specify generic function options. 
+The object system provides a set of built-in method combination types. To specify that a generic function is to use one of these method combination types, the name of the method combination type is given as the argument to the :method-combination option to <DictionaryLink styled={true} term={"defgeneric"}><b>defgeneric</b></DictionaryLink> or to the :method-combination option to any of the other operators that specify generic function options. 
 
 
 
@@ -26,15 +26,15 @@ The semantics of the **standard** built-in method combination type is described 
 
 
 
-The simple built-in method combination types act as though they were defined by the short form of <ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks>. They recognize two roles for <ClLinks  term={"method"}><i>methods</i></ClLinks>: 
+The simple built-in method combination types act as though they were defined by the short form of <DictionaryLink styled={true} term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink>. They recognize two roles for <GlossaryTerm styled={true} term={"method"}><i>methods</i></GlossaryTerm>: 
 
 
 
-*•* An *around method* has the keyword symbol :around as its sole <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> . The meaning of :around <ClLinks  term={"method"}><i>methods</i></ClLinks> is the same as in standard method combination. Use of the functions <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> and <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> is supported in *around methods*. 
+*•* An *around method* has the keyword symbol :around as its sole <GlossaryTerm styled={true} term={"qualifier"}><i>qualifier</i></GlossaryTerm> . The meaning of :around <GlossaryTerm styled={true} term={"method"}><i>methods</i></GlossaryTerm> is the same as in standard method combination. Use of the functions <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> and <DictionaryLink styled={true} term={"next-method-p"}><b>next-method-p</b></DictionaryLink> is supported in *around methods*. 
 
 
 
-*•* A primary method has the name of the method combination type as its sole <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> . For example, the built-in method combination type and recognizes methods whose sole <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> is and; these are primary methods. Use of the functions <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> and <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> is not supported in *primary methods*. 
+*•* A primary method has the name of the method combination type as its sole <GlossaryTerm styled={true} term={"qualifier"}><i>qualifier</i></GlossaryTerm> . For example, the built-in method combination type and recognizes methods whose sole <GlossaryTerm styled={true} term={"qualifier"}><i>qualifier</i></GlossaryTerm> is and; these are primary methods. Use of the functions <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> and <DictionaryLink styled={true} term={"next-method-p"}><b>next-method-p</b></DictionaryLink> is not supported in *primary methods*. 
 
 
 
@@ -46,7 +46,7 @@ The semantics of the simple built-in method combination types is as follows:
 
 
 
-*•* Inside the body of an *around method*, the function <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> can be used to call the *next method*. The *generic function* <ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> is invoked if <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is used and there is no applicable method to call. The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> may be used to determine whether a *next method* exists. When the *next method* returns, the *around method* can execute more code, perhaps based on the returned value or values. 
+*•* Inside the body of an *around method*, the function <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> can be used to call the *next method*. The *generic function* <DictionaryLink styled={true} term={"no-next-method"}><b>no-next-method</b></DictionaryLink> is invoked if <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is used and there is no applicable method to call. The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"next-method-p"}><b>next-method-p</b></DictionaryLink> may be used to determine whether a *next method* exists. When the *next method* returns, the *around method* can execute more code, perhaps based on the returned value or values. 
 
 
 
@@ -62,7 +62,7 @@ The semantics of the simple built-in method combination types is as follows:
 
 
 
-*•* If an *around method* invokes <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks>, the next most specific *around method* is called, if one is applicable. If there are no *around methods* or if <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is called by the least specific *around method*, a Lisp form derived from the name of the built-in method combination type and from the list of applicable primary methods is evaluated to produce the value of the generic function. Suppose the name of the method combination type is <ClLinks  term={"operator"}><i>operator</i></ClLinks> and the call to the generic function is of the form 
+*•* If an *around method* invokes <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink>, the next most specific *around method* is called, if one is applicable. If there are no *around methods* or if <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is called by the least specific *around method*, a Lisp form derived from the name of the built-in method combination type and from the list of applicable primary methods is evaluated to produce the value of the generic function. Suppose the name of the method combination type is <GlossaryTerm styled={true} term={"operator"}><i>operator</i></GlossaryTerm> and the call to the generic function is of the form 
 
 
 
@@ -82,7 +82,7 @@ The default order for the primary methods is :most-specific-first. However, the 
 
 
 
-The simple built-in method combination types require exactly one <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> per method. An error is signaled if there are applicable methods with no <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> or with <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> that are not supported by the method combination type. An error is signaled if there are applicable *around methods* and no applicable primary methods. 
+The simple built-in method combination types require exactly one <GlossaryTerm styled={true} term={"qualifier"}><i>qualifier</i></GlossaryTerm> per method. An error is signaled if there are applicable methods with no <GlossaryTerm styled={true} term={"qualifier"}><i>qualifiers</i></GlossaryTerm> or with <GlossaryTerm styled={true} term={"qualifier"}><i>qualifiers</i></GlossaryTerm> that are not supported by the method combination type. An error is signaled if there are applicable *around methods* and no applicable primary methods. 
 
 
 

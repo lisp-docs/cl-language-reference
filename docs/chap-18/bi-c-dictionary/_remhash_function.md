@@ -1,4 +1,4 @@
-**remhash** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**remhash** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"remhash"}><b>remhash</b></ClLinks> *key hash-table → generalized-boolean* 
+<DictionaryLink styled={true} term={"remhash"}><b>remhash</b></DictionaryLink> *key hash-table → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"key"}><i>key</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -30,18 +30,20 @@
 
 
 
-Removes the entry for <ClLinks  term={"key"}><i>key</i></ClLinks> in *hash-table*, if any. Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if there was such an entry, or <ClLinks  term={"false"}><i>false</i></ClLinks> otherwise. 
+Removes the entry for <GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm> in *hash-table*, if any. Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if there was such an entry, or <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> otherwise. 
 
 
 
 **Examples:**
 ```lisp
-(setq table (make-hash-table)) → #<HASH-TABLE EQL 0/120 32115666> 
-(setf (gethash 100 table) "C") → "C" 
-(gethash 100 table) → "C", *true* 
-(remhash 100 table) → true 
-(gethash 100 table) → NIL, *false* 
-(remhash 100 table) → false 
+
+(setq table (make-hash-table)) *→* #<HASH-TABLE EQL 0/120 32115666> 
+(setf (gethash 100 table) "C") *→* "C" 
+(gethash 100 table) *→* "C", *true* 
+(remhash 100 table) *→ true* 
+(gethash 100 table) *→* NIL, *false* 
+(remhash 100 table) *→ false* 
+
 ```
 **Side Effects:** 
 
@@ -63,7 +65,7 @@ Hash
 
 
 
-<ClLinks  term={"maphash"}><b>maphash</b></ClLinks> 
+<DictionaryLink styled={true} term={"maphash"}><b>maphash</b></DictionaryLink> 
 
 
 

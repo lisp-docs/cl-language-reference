@@ -1,4 +1,4 @@
-**vector-pop** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**vector-pop** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"vector-pop"}><b>vector-pop</b></ClLinks> *vector → element* 
+<DictionaryLink styled={true} term={"vector-pop"}><b>vector-pop</b></DictionaryLink> *vector → element* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"vector"}><i>vector</i></ClLinks>—a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* . 
+<GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> with a *fill pointer* . 
 
 
 
-<ClLinks  term={"element"}><i>element</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -26,20 +26,22 @@
 
 
 
-Decreases the *fill pointer* of <ClLinks  term={"vector"}><i>vector</i></ClLinks> by one, and retrieves the <ClLinks  term={"element"}><i>element</i></ClLinks> of <ClLinks  term={"vector"}><i>vector</i></ClLinks> that is designated by the new *fill pointer* . 
+Decreases the *fill pointer* of <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> by one, and retrieves the <GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> that is designated by the new *fill pointer* . 
 
 
 
 **Examples:**
 ```lisp
+
 (vector-push (setq fable (list ’fable)) 
 	     (setq fa (make-array 8 
 				  :fill-pointer 2 
-				  :initial-element ’sisyphus))) → 2 
-(fill-pointer fa) → 3 
-(eq (vector-pop fa) fable) → true 
-(vector-pop fa) → SISYPHUS 
-(fill-pointer fa) → 1 
+				  :initial-element ’sisyphus))) *→* 2 
+(fill-pointer fa) *→* 3 
+(eq (vector-pop fa) fable) *→ true* 
+(vector-pop fa) *→* SISYPHUS 
+(fill-pointer fa) *→* 1 
+
 ```
 **Side Effects:** 
 
@@ -73,11 +75,11 @@ The value of the *fill pointer* .
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled if <ClLinks  term={"vector"}><i>vector</i></ClLinks> does not have a *fill pointer* . 
+An error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> is signaled if <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> does not have a *fill pointer* . 
 
 
 
-If the *fill pointer* is zero, <ClLinks  term={"vector-pop"}><b>vector-pop</b></ClLinks> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks>. 
+If the *fill pointer* is zero, <DictionaryLink styled={true} term={"vector-pop"}><b>vector-pop</b></DictionaryLink> signals an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink>. 
 
 
 
@@ -85,7 +87,7 @@ If the *fill pointer* is zero, <ClLinks  term={"vector-pop"}><b>vector-pop</b></
 
 
 
-<ClLinks  term={"vector-push"}><b>vector-push</b></ClLinks>, <ClLinks  term={"vector-push-extend"}><b>vector-push-extend</b></ClLinks>, <ClLinks  term={"fill-pointer"}><b>fill-pointer</b></ClLinks> 
+<DictionaryLink styled={true} term={"vector-push"}><b>vector-push</b></DictionaryLink>, <DictionaryLink styled={true} term={"vector-push-extend"}><b>vector-push-extend</b></DictionaryLink>, <DictionaryLink styled={true} term={"fill-pointer"}><b>fill-pointer</b></DictionaryLink> 
 
 
 

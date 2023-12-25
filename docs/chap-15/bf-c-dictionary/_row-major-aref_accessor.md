@@ -1,4 +1,4 @@
-**row-major-aref** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**row-major-aref** <GlossaryTerm styled={true} term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -6,12 +6,11 @@
 
 
 
-<ClLinks  term={"row-major-aref"}><b>row-major-aref</b></ClLinks> *array index → element* 
+<DictionaryLink styled={true} term={"row-major-aref"}><b>row-major-aref</b></DictionaryLink> *array index → element* 
 
 
 
-<!-- **(setf (row-major-aref** *array index***)** *new-element<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
-**(setf (row-major-aref** *array index***)** *new-element***)** 
+**(setf (row-major-aref** *array index***)** *new-element<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
@@ -19,15 +18,15 @@
 
 
 
-<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-*index*—a *valid array row-major index* for the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+*index*—a *valid array row-major index* for the <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"element"}><i>element</i></ClLinks>, *new-element*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm>, *new-element*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -35,11 +34,11 @@
 
 
 
-Considers <ClLinks  term={"array"}><i>array</i></ClLinks> as a <ClLinks  term={"vector"}><i>vector</i></ClLinks> by viewing its <ClLinks  term={"element"}><i>elements</i></ClLinks> in row-major order, and returns the <ClLinks  term={"element"}><i>element</i></ClLinks> of that <ClLinks  term={"vector"}><i>vector</i></ClLinks> which is referred to by the given *index*. 
+Considers <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> as a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> by viewing its <GlossaryTerm styled={true} term={"element"}><i>elements</i></GlossaryTerm> in row-major order, and returns the <GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm> of that <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> which is referred to by the given *index*. 
 
 
 
-<ClLinks  term={"row-major-aref"}><b>row-major-aref</b></ClLinks> is valid for use with <ClLinks  term={"setf"}><b>setf</b></ClLinks>. 
+<DictionaryLink styled={true} term={"row-major-aref"}><b>row-major-aref</b></DictionaryLink> is valid for use with <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink>. 
 
 
 
@@ -47,7 +46,7 @@ Considers <ClLinks  term={"array"}><i>array</i></ClLinks> as a <ClLinks  term={"
 
 
 
-<ClLinks  term={"aref"}><b>aref</b></ClLinks>, <ClLinks  term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks> 
+<DictionaryLink styled={true} term={"aref"}><b>aref</b></DictionaryLink>, <DictionaryLink styled={true} term={"array-row-major-index"}><b>array-row-major-index</b></DictionaryLink> 
 
 
 

@@ -1,4 +1,4 @@
-*∗<ClLinks  term={"read-default-float-format"}><b>*read-default-float-format*</b></ClLinks>∗ Variable* 
+*∗<DictionaryLink styled={true} term={"read-default-float-format"}><b>*read-default-float-format*</b></DictionaryLink>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-one of the *atomic type specifiers* <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>, <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>, or <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>, or else some other *type specifier* defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be acceptable. 
+one of the *atomic type specifiers* <DictionaryLink styled={true} term={"short-float"}><b>short-float</b></DictionaryLink>, <DictionaryLink styled={true} term={"single-float"}><b>single-float</b></DictionaryLink>, <DictionaryLink styled={true} term={"double-float"}><b>double-float</b></DictionaryLink>, or <DictionaryLink styled={true} term={"long-float"}><b>long-float</b></DictionaryLink>, or else some other *type specifier* defined by the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> to be acceptable. 
 
 
 
@@ -26,7 +26,7 @@ one of the *atomic type specifiers* <ClLinks  term={"short-float"}><b>short-floa
 
 
 
-The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>. 
+The <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> <DictionaryLink styled={true} term={"single-float"}><b>single-float</b></DictionaryLink>. 
 
 
 
@@ -38,17 +38,19 @@ Controls the floating-point format that is to be used when reading a floating-po
 
 
 
-The printer uses <ClLinks  term={"read-default-float-format"}><b>\*read-default-float-format\*</b></ClLinks> to guide the choice of *exponent markers* when printing floating-point numbers. 
+The printer uses <DictionaryLink styled={true} term={"read-default-float-format"}><b>\*read-default-float-format\*</b></DictionaryLink> to guide the choice of *exponent markers* when printing floating-point numbers. 
 
 
 
 **Examples:**
 ```lisp
+
 (let ((\*read-default-float-format\* ’double-float)) 
   (read-from-string "(1.0 1.0e0 1.0s0 1.0f0 1.0d0 1.0L0)")) 
-→ (1.0 1.0 1.0 1.0 1.0 1.0) ;Implementation has float format F. 
-→ (1.0 1.0 1.0s0 1.0 1.0 1.0) ;Implementation has float formats S and F. → (1.0d0 1.0d0 1.0 1.0 1.0d0 1.0d0) ;Implementation has float formats F and D. → (1.0d0 1.0d0 1.0s0 1.0 1.0d0 1.0d0) ;Implementation has float formats S, F, D. → (1.0d0 1.0d0 1.0 1.0 1.0d0 1.0L0) ;Implementation has float formats F, D, L. → (1.0d0 1.0d0 1.0s0 1.0 1.0d0 1.0L0) ;Implementation has formats S, F, D, L. 
+*→* (1.0 1.0 1.0 1.0 1.0 1.0) ;Implementation has float format F. 
+*→* (1.0 1.0 1.0s0 1.0 1.0 1.0) ;Implementation has float formats S and F. *→* (1.0d0 1.0d0 1.0 1.0 1.0d0 1.0d0) ;Implementation has float formats F and D. *→* (1.0d0 1.0d0 1.0s0 1.0 1.0d0 1.0d0) ;Implementation has float formats S, F, D. *→* (1.0d0 1.0d0 1.0 1.0 1.0d0 1.0L0) ;Implementation has float formats F, D, L. *→* (1.0d0 1.0d0 1.0s0 1.0 1.0d0 1.0L0) ;Implementation has formats S, F, D, L. 
 *∗***read-eval***∗ Variable* 
+
 ```
 **Value Type:** 
 
@@ -62,7 +64,7 @@ a *generalized boolean*.
 
 
 
-<ClLinks  term={"true"}><i>true</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>. 
 
 
 
@@ -70,7 +72,7 @@ a *generalized boolean*.
 
 
 
-If it is <ClLinks  term={"true"}><i>true</i></ClLinks>, the #. *reader macro* has its normal effect. Otherwise, that *reader macro* signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"reader-error"}><b>reader-error</b></ClLinks>. 
+If it is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, the #. *reader macro* has its normal effect. Otherwise, that *reader macro* signals an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"reader-error"}><b>reader-error</b></DictionaryLink>. 
 
 
 
@@ -78,7 +80,7 @@ If it is <ClLinks  term={"true"}><i>true</i></ClLinks>, the #. *reader macro* ha
 
 
 
-<ClLinks  term={"print-readably"}><b>\*print-readably\*</b></ClLinks> 
+<DictionaryLink styled={true} term={"print-readably"}><b>\*print-readably\*</b></DictionaryLink> 
 
 
 
@@ -86,7 +88,7 @@ If it is <ClLinks  term={"true"}><i>true</i></ClLinks>, the #. *reader macro* ha
 
 
 
-If **\*read-eval\*** is <ClLinks  term={"false"}><i>false</i></ClLinks> and <ClLinks  term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks>, any <ClLinks  term={"method"}><i>method</i></ClLinks> for <ClLinks  term={"print-object"}><b>print-object</b></ClLinks> that would output a reference to the #. *reader macro* either outputs something different or signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"print-not-readable"}><b>print-not-readable</b></ClLinks>. 
+If **\*read-eval\*** is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> and <DictionaryLink styled={true} term={"print-readably"}><b>\*print-readably\*</b></DictionaryLink> is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, any <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> for <DictionaryLink styled={true} term={"print-object"}><b>print-object</b></DictionaryLink> that would output a reference to the #. *reader macro* either outputs something different or signals an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"print-not-readable"}><b>print-not-readable</b></DictionaryLink>. 
 
 
 

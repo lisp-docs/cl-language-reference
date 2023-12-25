@@ -1,4 +1,4 @@
-**multiple-value-setq** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**multiple-value-setq** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"multiple-value-setq"}><b>multiple-value-setq</b></ClLinks> *vars form ! result* 
+<DictionaryLink styled={true} term={"multiple-value-setq"}><b>multiple-value-setq</b></DictionaryLink> *vars form ! result* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*vars*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are either *variable names* or <ClLinks  term={"name"}><i>names</i></ClLinks> of *symbol macros*. 
+*vars*—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> that are either *variable names* or <GlossaryTerm styled={true} term={"name"}><i>names</i></GlossaryTerm> of *symbol macros*. 
 
 
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-*result*—The *primary value* returned by the <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+*result*—The *primary value* returned by the <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<ClLinks  term={"multiple-value-setq"}><b>multiple-value-setq</b></ClLinks> assigns values to *vars*. 
+<DictionaryLink styled={true} term={"multiple-value-setq"}><b>multiple-value-setq</b></DictionaryLink> assigns values to *vars*. 
 
 
 
-The <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated, and each *var* is *assigned* to the corresponding <ClLinks  term={"value"}><i>value</i></ClLinks> returned by that <ClLinks  term={"form"}><i>form</i></ClLinks>. If there are more *vars* than <ClLinks  term={"value"}><i>values</i></ClLinks> returned, <ClLinks  term={"nil"}><b>nil</b></ClLinks> is *assigned* to the extra *vars*. If there are more <ClLinks  term={"value"}><i>values</i></ClLinks> than *vars*, the extra <ClLinks  term={"value"}><i>values</i></ClLinks> are discarded. 
+The <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is evaluated, and each *var* is *assigned* to the corresponding <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> returned by that <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. If there are more *vars* than <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned, <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is *assigned* to the extra *vars*. If there are more <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> than *vars*, the extra <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> are discarded. 
 
 
 
@@ -50,12 +50,13 @@ is defined to always behave in the same way as
 
 
 
-in order that the rules for order of evaluation and side-e↵ects be consistent with those used by <ClLinks  term={"setf"}><b>setf</b></ClLinks>. See Section 5.1.2.3 (VALUES Forms as Places). 
+in order that the rules for order of evaluation and side-e↵ects be consistent with those used by <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink>. See Section 5.1.2.3 (VALUES Forms as Places). 
 
 
 
 **Examples:**
 ```lisp
+
 (multiple-value-setq (quotient remainder) (truncate 3.2 2)) *!* 1 
 quotient *!* 1 
 remainder *!* 1.2 
@@ -66,12 +67,13 @@ c *!* NIL
 (multiple-value-setq (a b) (values 4 5 6)) *!* 4 
 a *!* 4 
 b *!* 5 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"setq"}><b>setq</b></ClLinks>, <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> 
+<DictionaryLink styled={true} term={"setq"}><b>setq</b></DictionaryLink>, <DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> 
 
 
 

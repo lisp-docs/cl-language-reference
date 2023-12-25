@@ -1,4 +1,4 @@
-**slot-value** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**slot-value** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks> *object slot-name → value* 
+<DictionaryLink styled={true} term={"slot-value"}><b>slot-value</b></DictionaryLink> *object slot-name → value* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"value"}><i>value</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -30,32 +30,35 @@
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks> returns the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"slot"}><i>slot</i></ClLinks> named *slot-name* in the <ClLinks  term={"object"}><i>object</i></ClLinks>. If there is no <ClLinks  term={"slot"}><i>slot</i></ClLinks> named *slot-name*, <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> is called. If the <ClLinks  term={"slot"}><i>slot</i></ClLinks> is unbound, <ClLinks  term={"slot-unbound"}><b>slot-unbound</b></ClLinks> is called. 
+The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"slot-value"}><b>slot-value</b></DictionaryLink> returns the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"slot"}><i>slot</i></GlossaryTerm> named *slot-name* in the <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. If there is no <GlossaryTerm styled={true} term={"slot"}><i>slot</i></GlossaryTerm> named *slot-name*, <DictionaryLink styled={true} term={"slot-missing"}><b>slot-missing</b></DictionaryLink> is called. If the <GlossaryTerm styled={true} term={"slot"}><i>slot</i></GlossaryTerm> is unbound, <DictionaryLink styled={true} term={"slot-unbound"}><b>slot-unbound</b></DictionaryLink> is called. 
 
 
 
-The macro <ClLinks  term={"setf"}><b>setf</b></ClLinks> can be used with <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks> to change the value of a <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
+The macro <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> can be used with <DictionaryLink styled={true} term={"slot-value"}><b>slot-value</b></DictionaryLink> to change the value of a <GlossaryTerm styled={true} term={"slot"}><i>slot</i></GlossaryTerm>. 
 
 
 
 **Examples:**
 ```lisp
+
 (defclass foo () 
   ((a :accessor foo-a :initarg :a :initform 1) 
    (b :accessor foo-b :initarg :b) 
    (c :accessor foo-c :initform 3))) 
-→ #<STANDARD-CLASS FOO 244020371> 
+*→* #<STANDARD-CLASS FOO 244020371> 
 (setq foo1 (make-instance ’foo :a ’one :b ’two)) 
-→ #<FOO 36325624> 
-(slot-value foo1 ’a) → ONE 
-(slot-value foo1 ’b) → TWO 
-(slot-value foo1 ’c) → 3 
-(setf (slot-value foo1 ’a) ’uno) → UNO 
-(slot-value foo1 ’a) → UNO 
+*→* #<FOO 36325624> 
+(slot-value foo1 ’a) *→* ONE 
+(slot-value foo1 ’b) *→* TWO 
+(slot-value foo1 ’c) *→* 3 
+(setf (slot-value foo1 ’a) ’uno) *→* UNO 
+(slot-value foo1 ’a) *→* UNO 
 (defmethod foo-method ((x foo)) 
   (slot-value x ’a)) 
-→ #<STANDARD-METHOD FOO-METHOD (FOO) 42720573> 
-(foo-method foo1) → UNO 
+*→* #<STANDARD-METHOD FOO-METHOD (FOO) 42720573> 
+(foo-method foo1) *→* UNO 
+
+
 
 
 ```
@@ -63,15 +66,15 @@ The macro <ClLinks  term={"setf"}><b>setf</b></ClLinks> can be used with <ClLink
 
 
 
-If an attempt is made to read a <ClLinks  term={"slot"}><i>slot</i></ClLinks> and no <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the name *slot-name* exists in the <ClLinks  term={"object"}><i>object</i></ClLinks>, <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> is called as follows: 
+If an attempt is made to read a <GlossaryTerm styled={true} term={"slot"}><i>slot</i></GlossaryTerm> and no <GlossaryTerm styled={true} term={"slot"}><i>slot</i></GlossaryTerm> of the name *slot-name* exists in the <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>, <DictionaryLink styled={true} term={"slot-missing"}><b>slot-missing</b></DictionaryLink> is called as follows: 
 
 
 
-(slot-missing (class-of <ClLinks  term={"instance"}><i>instance</i></ClLinks>) 
+(slot-missing (class-of <GlossaryTerm styled={true} term={"instance"}><i>instance</i></GlossaryTerm>) 
 
 
 
-<ClLinks  term={"instance"}><i>instance</i></ClLinks> 
+<GlossaryTerm styled={true} term={"instance"}><i>instance</i></GlossaryTerm> 
 
 
 
@@ -83,19 +86,19 @@ If an attempt is made to read a <ClLinks  term={"slot"}><i>slot</i></ClLinks> an
 
 
 
-(If <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> is invoked, its *primary value* is returned by <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks>.) 
+(If <DictionaryLink styled={true} term={"slot-missing"}><b>slot-missing</b></DictionaryLink> is invoked, its *primary value* is returned by <DictionaryLink styled={true} term={"slot-value"}><b>slot-value</b></DictionaryLink>.) 
 
 
 
-If an attempt is made to write a <ClLinks  term={"slot"}><i>slot</i></ClLinks> and no <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the name *slot-name* exists in the <ClLinks  term={"object"}><i>object</i></ClLinks>, <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> is called as follows: 
+If an attempt is made to write a <GlossaryTerm styled={true} term={"slot"}><i>slot</i></GlossaryTerm> and no <GlossaryTerm styled={true} term={"slot"}><i>slot</i></GlossaryTerm> of the name *slot-name* exists in the <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>, <DictionaryLink styled={true} term={"slot-missing"}><b>slot-missing</b></DictionaryLink> is called as follows: 
 
 
 
-(slot-missing (class-of <ClLinks  term={"instance"}><i>instance</i></ClLinks>) 
+(slot-missing (class-of <GlossaryTerm styled={true} term={"instance"}><i>instance</i></GlossaryTerm>) 
 
 
 
-<ClLinks  term={"instance"}><i>instance</i></ClLinks> 
+<GlossaryTerm styled={true} term={"instance"}><i>instance</i></GlossaryTerm> 
 
 
 
@@ -111,11 +114,11 @@ If an attempt is made to write a <ClLinks  term={"slot"}><i>slot</i></ClLinks> a
 
 
 
-(If <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> returns in this case, any <ClLinks  term={"value"}><i>values</i></ClLinks> are ignored.) 
+(If <DictionaryLink styled={true} term={"slot-missing"}><b>slot-missing</b></DictionaryLink> returns in this case, any <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> are ignored.) 
 
 
 
-The specific behavior depends on <ClLinks  term={"object"}><i>object</i></ClLinks>’s <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks>. An error is never signaled if <ClLinks  term={"object"}><i>object</i></ClLinks> has <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks> <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks>. An error is always signaled if <ClLinks  term={"object"}><i>object</i></ClLinks> has <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks> <ClLinks  term={"built-in-class"}><b>built-in-class</b></ClLinks>. The consequences are unspecified if <ClLinks  term={"object"}><i>object</i></ClLinks> has any other <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks>–an error might or might not be signaled in this situation. Note in particular that the behavior for <ClLinks  term={"condition"}><i>conditions</i></ClLinks> and <ClLinks  term={"structure"}><i>structures</i></ClLinks> is not specified. 
+The specific behavior depends on <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>’s <GlossaryTerm styled={true} term={"metaclass"}><i>metaclass</i></GlossaryTerm>. An error is never signaled if <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> has <GlossaryTerm styled={true} term={"metaclass"}><i>metaclass</i></GlossaryTerm> <DictionaryLink styled={true} term={"standard-class"}><b>standard-class</b></DictionaryLink>. An error is always signaled if <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> has <GlossaryTerm styled={true} term={"metaclass"}><i>metaclass</i></GlossaryTerm> <DictionaryLink styled={true} term={"built-in-class"}><b>built-in-class</b></DictionaryLink>. The consequences are unspecified if <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> has any other <GlossaryTerm styled={true} term={"metaclass"}><i>metaclass</i></GlossaryTerm>–an error might or might not be signaled in this situation. Note in particular that the behavior for <GlossaryTerm styled={true} term={"condition"}><i>conditions</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"structure"}><i>structures</i></GlossaryTerm> is not specified. 
 
 
 
@@ -123,7 +126,7 @@ The specific behavior depends on <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-<ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks>, <ClLinks  term={"slot-unbound"}><b>slot-unbound</b></ClLinks>, <ClLinks  term={"with-slots"}><b>with-slots</b></ClLinks> 
+<DictionaryLink styled={true} term={"slot-missing"}><b>slot-missing</b></DictionaryLink>, <DictionaryLink styled={true} term={"slot-unbound"}><b>slot-unbound</b></DictionaryLink>, <DictionaryLink styled={true} term={"with-slots"}><b>with-slots</b></DictionaryLink> 
 
 
 
@@ -131,11 +134,11 @@ The specific behavior depends on <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-Although no <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is required to do so, implementors are strongly encouraged to implement the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks> using the <ClLinks  term={"function"}><i>function</i></ClLinks> slot-value-using-class described in the *Metaobject Protocol*. 
+Although no <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> is required to do so, implementors are strongly encouraged to implement the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"slot-value"}><b>slot-value</b></DictionaryLink> using the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> slot-value-using-class described in the *Metaobject Protocol*. 
 
 
 
-Implementations may optimize <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks> by compiling it inline. 
+Implementations may optimize <DictionaryLink styled={true} term={"slot-value"}><b>slot-value</b></DictionaryLink> by compiling it inline. 
 
 
 

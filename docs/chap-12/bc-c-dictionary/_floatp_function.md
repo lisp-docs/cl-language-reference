@@ -1,4 +1,4 @@
-**floatp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**floatp** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"floatp"}><b>floatp</b></ClLinks> <ClLinks  term={"object"}><i>object</i></ClLinks> 
+<DictionaryLink styled={true} term={"floatp"}><b>floatp</b></DictionaryLink> <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@ generalized-boolean
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -30,22 +30,24 @@ generalized-boolean
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"float"}><b>float</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"float"}><b>float</b></DictionaryLink>; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
 **Examples:**
 ```lisp
+
 (floatp 1.2d2) *! true* 
 (floatp 1.212) *! true* 
 (floatp 1.2s2) *! true* 
 (floatp (expt 2 130)) *! false* 
+
 ```
 **Notes:** 
 
 
 
-(floatp <ClLinks  term={"object"}><i>object</i></ClLinks>) *⌘* (typep <ClLinks  term={"object"}><i>object</i></ClLinks> ’float) 
+(floatp <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>) *⌘* (typep <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> ’float) 
 
 
 
@@ -69,7 +71,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
@@ -77,15 +79,15 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-These *constant variables* provide a way for programs to examine the <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> limits for the various float formats. 
+These *constant variables* provide a way for programs to examine the <GlossaryTerm styled={true} term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm> limits for the various float formats. 
 
 
 
-Of these <ClLinks  term={"variable"}><i>variables</i></ClLinks>, each which has “-normalized” in its <ClLinks  term={"name"}><i>name</i></ClLinks> must have a <ClLinks  term={"value"}><i>value</i></ClLinks> which is a *normalized float*, and each which does not have “-normalized” in its name may have a <ClLinks  term={"value"}><i>value</i></ClLinks> which is either a *normalized float* or a *denormalized float*, as appropriate. 
+Of these <GlossaryTerm styled={true} term={"variable"}><i>variables</i></GlossaryTerm>, each which has “-normalized” in its <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> must have a <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> which is a *normalized float*, and each which does not have “-normalized” in its name may have a <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> which is either a *normalized float* or a *denormalized float*, as appropriate. 
 
 
 
-Of these <ClLinks  term={"variable"}><i>variables</i></ClLinks>, each which has “short-float” in its name must have a <ClLinks  term={"value"}><i>value</i></ClLinks> which is a *short float*, each which has “single-float” in its name must have a <ClLinks  term={"value"}><i>value</i></ClLinks> which is a *single float*, each which has “double-float” in its name must have a <ClLinks  term={"value"}><i>value</i></ClLinks> which is a *double float*, and each which has “long-float” in its name must have a <ClLinks  term={"value"}><i>value</i></ClLinks> which is a *long float*. 
+Of these <GlossaryTerm styled={true} term={"variable"}><i>variables</i></GlossaryTerm>, each which has “short-float” in its name must have a <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> which is a *short float*, each which has “single-float” in its name must have a <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> which is a *single float*, each which has “double-float” in its name must have a <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> which is a *double float*, and each which has “long-float” in its name must have a <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> which is a *long float*. 
 
 
 
@@ -97,7 +99,7 @@ Of these <ClLinks  term={"variable"}><i>variables</i></ClLinks>, each which has 
 
 
 
-Each of these *constant variables* has as its <ClLinks  term={"value"}><i>value</i></ClLinks> the positive <ClLinks  term={"float"}><i>float</i></ClLinks> of the largest magnitude 
+Each of these *constant variables* has as its <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> the positive <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> of the largest magnitude 
 
 
 
@@ -129,7 +131,7 @@ Each of these *constant variables* has as its <ClLinks  term={"value"}><i>value<
 
 
 
-Each of these *constant variables* has as its <ClLinks  term={"value"}><i>value</i></ClLinks> the smallest positive (nonzero) <ClLinks  term={"float"}><i>float</i></ClLinks> for the float format implied by its name. 
+Each of these *constant variables* has as its <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> the smallest positive (nonzero) <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> for the float format implied by its name. 
 
 
 
@@ -149,7 +151,7 @@ Each of these *constant variables* has as its <ClLinks  term={"value"}><i>value<
 
 
 
-Each of these *constant variables* has as its <ClLinks  term={"value"}><i>value</i></ClLinks> the negative (nonzero) <ClLinks  term={"float"}><i>float</i></ClLinks> of the smallest magnitude for the float format implied by its name. (If an implementation supports minus zero as a *di↵erent object* from positive zero, this value must not be minus zero.) 
+Each of these *constant variables* has as its <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> the negative (nonzero) <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> of the smallest magnitude for the float format implied by its name. (If an implementation supports minus zero as a *di↵erent object* from positive zero, this value must not be minus zero.) 
 
 
 
@@ -161,7 +163,7 @@ Each of these *constant variables* has as its <ClLinks  term={"value"}><i>value<
 
 
 
-Each of these *constant variables* has as its <ClLinks  term={"value"}><i>value</i></ClLinks> the negative <ClLinks  term={"float"}><i>float</i></ClLinks> of the largest magnitude (closest in value to, but not equal to, negative infinity) for the float format implied by its name. 
+Each of these *constant variables* has as its <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> the negative <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> of the largest magnitude (closest in value to, but not equal to, negative infinity) for the float format implied by its name. 
 
 
 

@@ -1,4 +1,4 @@
-**array-row-major-index** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**array-row-major-index** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks> <ClLinks  term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → index* 
+<DictionaryLink styled={true} term={"array-row-major-index"}><b>array-row-major-index</b></DictionaryLink> <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> &amp;rest *subscripts → index* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-*subscripts*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *valid array indices* for the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+*subscripts*—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of *valid array indices* for the <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-*index*—a *valid array row-major index* for the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+*index*—a *valid array row-major index* for the <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
@@ -42,30 +42,32 @@
 
 
 
-Computes the position according to the row-major ordering of <ClLinks  term={"array"}><i>array</i></ClLinks> for the element that is specified by *subscripts*, and returns the offset of the element in the computed position from the beginning of <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+Computes the position according to the row-major ordering of <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> for the element that is specified by *subscripts*, and returns the offset of the element in the computed position from the beginning of <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-For a one-dimensional <ClLinks  term={"array"}><i>array</i></ClLinks>, the result of <ClLinks  term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks> equals *subscript*. <ClLinks  term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks> ignores *fill pointers*. 
+For a one-dimensional <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>, the result of <DictionaryLink styled={true} term={"array-row-major-index"}><b>array-row-major-index</b></DictionaryLink> equals *subscript*. <DictionaryLink styled={true} term={"array-row-major-index"}><b>array-row-major-index</b></DictionaryLink> ignores *fill pointers*. 
 
 
 
 **Examples:**
 ```lisp
+
 (setq a (make-array ’(4 7) :element-type ’(unsigned-byte 8))) 
-(array-row-major-index a 1 2) → 9 
+(array-row-major-index a 1 2) *→* 9 
 (array-row-major-index 
  (make-array ’(2 3 4) 
 	      :element-type ’(unsigned-byte 8) 
 	      :displaced-to a 
 	      :displaced-index-offset 4) 
- 0 2 1) → 9 
+ 0 2 1) *→* 9 
+
 ```
 **Notes:** 
 
 
 
-A possible definition of <ClLinks  term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks>, with no error-checking, is 
+A possible definition of <DictionaryLink styled={true} term={"array-row-major-index"}><b>array-row-major-index</b></DictionaryLink>, with no error-checking, is 
 
 
 

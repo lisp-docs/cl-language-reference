@@ -1,4 +1,4 @@
-**compiler-macro-function** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**compiler-macro-function** <GlossaryTerm styled={true} term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -6,12 +6,11 @@
 
 
 
-<ClLinks  term={"compiler-macro-function"}><b>compiler-macro-function</b></ClLinks> <ClLinks  term={"name"}><i>name</i></ClLinks> &amp;optional *environment → function* 
+<DictionaryLink styled={true} term={"compiler-macro-function"}><b>compiler-macro-function</b></DictionaryLink> <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> &amp;optional *environment → function* 
 
 
 
-<!-- **(setf (compiler-macro-function** <ClLinks  term={"name"}><i>name</i></ClLinks> &amp;optional *environment<ClLinks  term={"t"}><b>*)</b></ClLinks> *new-function***)**  -->
-**(setf (compiler-macro-function** *name* &amp;optional *environment***)** *new-function***)** 
+**(setf (compiler-macro-function** <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> &amp;optional *environment<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> *new-function***)** 
 
 
 
@@ -19,15 +18,15 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a *function name*. 
+<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a *function name*. 
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an *environment object*. 
+<GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm>—an *environment object*. 
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>, *new-function*—a *compiler macro function*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>, *new-function*—a *compiler macro function*, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -35,7 +34,7 @@
 
 
 
-*Accesses* the *compiler macro function* named <ClLinks  term={"name"}><i>name</i></ClLinks>, if any, in the <ClLinks  term={"environment"}><i>environment</i></ClLinks>.  
+*Accesses* the *compiler macro function* named <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>, if any, in the <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm>.  
 
 
 
@@ -43,7 +42,7 @@
 
 
 
-A value of <ClLinks  term={"nil"}><b>nil</b></ClLinks> denotes the absence of a *compiler macro function* named <ClLinks  term={"name"}><i>name</i></ClLinks>. 
+A value of <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> denotes the absence of a *compiler macro function* named <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>. 
 
 
 
@@ -51,7 +50,7 @@ A value of <ClLinks  term={"nil"}><b>nil</b></ClLinks> denotes the absence of a 
 
 
 
-The consequences are undefined if <ClLinks  term={"environment"}><i>environment</i></ClLinks> is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks> in a use of <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"compiler-macro-function"}><b>compiler-macro-function</b></ClLinks>. 
+The consequences are undefined if <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"non-nil"}><i>non-nil</i></GlossaryTerm> in a use of <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink styled={true} term={"compiler-macro-function"}><b>compiler-macro-function</b></DictionaryLink>. 
 
 
 
@@ -59,7 +58,7 @@ The consequences are undefined if <ClLinks  term={"environment"}><i>environment<
 
 
 
-<ClLinks  term={"define-compiler-macro"}><b>define-compiler-macro</b></ClLinks>, Section 3.2.2.1 (Compiler Macros) 
+<DictionaryLink styled={true} term={"define-compiler-macro"}><b>define-compiler-macro</b></DictionaryLink>, Section 3.2.2.1 (Compiler Macros) 
 
 
 

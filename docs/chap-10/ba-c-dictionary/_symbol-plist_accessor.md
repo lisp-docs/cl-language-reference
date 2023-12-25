@@ -1,4 +1,4 @@
-**symbol-plist** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**symbol-plist** <GlossaryTerm styled={true} term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -6,12 +6,11 @@
 
 
 
-<ClLinks  term={"symbol-plist"}><b>symbol-plist</b></ClLinks> *symbol → plist* 
+<DictionaryLink styled={true} term={"symbol-plist"}><b>symbol-plist</b></DictionaryLink> *symbol → plist* 
 
 
 
-<!-- **(setf (symbol-plist** <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>**)** *new-plist<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
-**(setf (symbol-plist** *symbol***)** *new-plist***)** 
+**(setf (symbol-plist** <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>**)** *new-plist<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
@@ -19,11 +18,11 @@
 
 
 
-<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"plist"}><i>plist</i></ClLinks>, *new-plist*—a *property list*. 
+<GlossaryTerm styled={true} term={"plist"}><i>plist</i></GlossaryTerm>, *new-plist*—a *property list*. 
 
 
 
@@ -31,26 +30,28 @@
 
 
 
-*Accesses* the *property list* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+*Accesses* the *property list* of <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
 **Examples:**
 ```lisp
-(setq sym (gensym)) → #:G9723 
-(symbol-plist sym) → () 
-(setf (get sym ’prop1) ’val1) → VAL1 
-(symbol-plist sym) → (PROP1 VAL1) 
-(setf (get sym ’prop2) ’val2) → VAL2 
-(symbol-plist sym) → (PROP2 VAL2 PROP1 VAL1) 
-(setf (symbol-plist sym) (list ’prop3 ’val3)) → (PROP3 VAL3) 
-(symbol-plist sym) → (PROP3 VAL3) 
+
+(setq sym (gensym)) *→* #:G9723 
+(symbol-plist sym) *→* () 
+(setf (get sym ’prop1) ’val1) *→* VAL1 
+(symbol-plist sym) *→* (PROP1 VAL1) 
+(setf (get sym ’prop2) ’val2) *→* VAL2 
+(symbol-plist sym) *→* (PROP2 VAL2 PROP1 VAL1) 
+(setf (symbol-plist sym) (list ’prop3 ’val3)) *→* (PROP3 VAL3) 
+(symbol-plist sym) *→* (PROP3 VAL3) 
+
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -58,7 +59,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"get"}><b>get</b></ClLinks>, <ClLinks  term={"remprop"}><b>remprop</b></ClLinks> 
+<DictionaryLink styled={true} term={"get"}><b>get</b></DictionaryLink>, <DictionaryLink styled={true} term={"remprop"}><b>remprop</b></DictionaryLink> 
 
 
 
@@ -66,7 +67,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-The use of <ClLinks  term={"setf"}><b>setf</b></ClLinks> should be avoided, since a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s *property list* is a global resource that can contain information established and depended upon by unrelated programs in the same *Lisp image*. 
+The use of <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> should be avoided, since a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>’s *property list* is a global resource that can contain information established and depended upon by unrelated programs in the same *Lisp image*. 
 
 
 
@@ -82,7 +83,7 @@ The use of <ClLinks  term={"setf"}><b>setf</b></ClLinks> should be avoided, sinc
 
 
 
-<ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> 
+<DictionaryLink styled={true} term={"symbol-value"}><b>symbol-value</b></DictionaryLink> 
 
 
 

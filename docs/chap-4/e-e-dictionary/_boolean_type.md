@@ -1,4 +1,4 @@
-**boolean** <ClLinks  term={"type"}><i>Type</i></ClLinks> 
+**boolean** <GlossaryTerm styled={true} term={"type"}><i>Type</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"boolean"}><b>boolean</b></ClLinks>, <ClLinks  term={"symbol"}><b>symbol</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"boolean"}><b>boolean</b></DictionaryLink>, <DictionaryLink styled={true} term={"symbol"}><b>symbol</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"boolean"}><b>boolean</b></ClLinks> contains the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks> and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, which represent true and false, respectively. 
+The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"boolean"}><b>boolean</b></DictionaryLink> contains the <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> and <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, which represent true and false, respectively. 
 
 
 
@@ -22,7 +22,7 @@ The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"boolean"}><b>
 
 
 
-<ClLinks  term={"t"}><b>t</b></ClLinks> (*constant variable*), <ClLinks  term={"nil"}><b>nil</b></ClLinks> (*constant variable*), <ClLinks  term={"if"}><b>if</b></ClLinks>, <ClLinks  term={"not"}><b>not</b></ClLinks>, <ClLinks  term={"complement"}><b>complement</b></ClLinks> 
+<DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> (*constant variable*), <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> (*constant variable*), <DictionaryLink styled={true} term={"if"}><b>if</b></DictionaryLink>, <DictionaryLink styled={true} term={"not"}><b>not</b></DictionaryLink>, <DictionaryLink styled={true} term={"complement"}><b>complement</b></DictionaryLink> 
 
 
 
@@ -30,7 +30,7 @@ The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"boolean"}><b>
 
 
 
-Conditional operations, such as <ClLinks  term={"if"}><b>if</b></ClLinks>, permit the use of *generalized booleans*, not just <ClLinks  term={"boolean"}><i>booleans</i></ClLinks>; any <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks> value, not just <ClLinks  term={"t"}><b>t</b></ClLinks>, counts as true for a *generalized boolean*. However, as a matter of convention, the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks> is considered the canonical value to use even for a *generalized boolean* when no better choice presents itself.  
+Conditional operations, such as <DictionaryLink styled={true} term={"if"}><b>if</b></DictionaryLink>, permit the use of *generalized booleans*, not just <GlossaryTerm styled={true} term={"boolean"}><i>booleans</i></GlossaryTerm>; any <GlossaryTerm styled={true} term={"non-nil"}><i>non-nil</i></GlossaryTerm> value, not just <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>, counts as true for a *generalized boolean*. However, as a matter of convention, the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> is considered the canonical value to use even for a *generalized boolean* when no better choice presents itself.  
 
 
 
@@ -38,7 +38,7 @@ Conditional operations, such as <ClLinks  term={"if"}><b>if</b></ClLinks>, permi
 
 
 
-<ClLinks  term={"function"}><b>function</b></ClLinks> 
+<DictionaryLink styled={true} term={"function"}><b>function</b></DictionaryLink> 
 
 
 

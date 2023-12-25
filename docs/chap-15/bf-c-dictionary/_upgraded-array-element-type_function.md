@@ -1,4 +1,4 @@
-**upgraded-array-element-type** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**upgraded-array-element-type** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks> *typespec* &amp;optional *environment → upgraded-typespec* 
+<DictionaryLink styled={true} term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></DictionaryLink> *typespec* &amp;optional *environment → upgraded-typespec* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an *environment object*. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, denoting the *null lexical environment* and the current *global environment*. 
+<GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm>—an *environment object*. The default is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, denoting the *null lexical environment* and the current *global environment*. 
 
 
 
@@ -30,23 +30,23 @@
 
 
 
-Returns the *element type* of the most *specialized array* representation capable of holding items of the <ClLinks  term={"type"}><i>type</i></ClLinks> denoted by *typespec*. 
+Returns the *element type* of the most *specialized array* representation capable of holding items of the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> denoted by *typespec*. 
 
 
 
-The *typespec* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of (and possibly *type equivalent* to) the *upgraded-typespec*. 
+The *typespec* is a <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> of (and possibly *type equivalent* to) the *upgraded-typespec*. 
 
 
 
-If *typespec* is <ClLinks  term={"bit"}><b>bit</b></ClLinks>, the result is *type equivalent* to bit. If *typespec* is <ClLinks  term={"base-char"}><b>base-char</b></ClLinks>, the result is *type equivalent* to base-char. If *typespec* is <ClLinks  term={"character"}><b>character</b></ClLinks>, the result is *type equivalent* to character. 
+If *typespec* is <DictionaryLink styled={true} term={"bit"}><b>bit</b></DictionaryLink>, the result is *type equivalent* to bit. If *typespec* is <DictionaryLink styled={true} term={"base-char"}><b>base-char</b></DictionaryLink>, the result is *type equivalent* to base-char. If *typespec* is <DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink>, the result is *type equivalent* to character. 
 
 
 
-The purpose of <ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks> is to reveal how an implementation does its *upgrading*. 
+The purpose of <DictionaryLink styled={true} term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></DictionaryLink> is to reveal how an implementation does its *upgrading*. 
 
 
 
-The <ClLinks  term={"environment"}><i>environment</i></ClLinks> is used to expand any *derived type specifiers* that are mentioned in the *typespec*. 
+The <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm> is used to expand any *derived type specifiers* that are mentioned in the *typespec*. 
 
 
 
@@ -54,7 +54,7 @@ The <ClLinks  term={"environment"}><i>environment</i></ClLinks> is used to expan
 
 
 
-<ClLinks  term={"array-element-type"}><b>array-element-type</b></ClLinks>, <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> 
+<DictionaryLink styled={true} term={"array-element-type"}><b>array-element-type</b></DictionaryLink>, <DictionaryLink styled={true} term={"make-array"}><b>make-array</b></DictionaryLink> 
 
 
 
@@ -62,7 +62,7 @@ The <ClLinks  term={"environment"}><i>environment</i></ClLinks> is used to expan
 
 
 
-Except for storage allocation consequences and dealing correctly with the optional *environment argument*, <ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks> could be defined as: 
+Except for storage allocation consequences and dealing correctly with the optional *environment argument*, <DictionaryLink styled={true} term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></DictionaryLink> could be defined as: 
 
 
 

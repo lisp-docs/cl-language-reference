@@ -1,4 +1,4 @@
-**null** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**null** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"null"}><b>null</b></ClLinks> *object → boolean* 
+<DictionaryLink styled={true} term={"null"}><b>null</b></DictionaryLink> *object → boolean* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks>—a <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"boolean"}><i>boolean</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"boolean"}><i>boolean</i></GlossaryTerm>. 
 
 
 
@@ -38,22 +38,24 @@
 
 
 
-Returns <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is the *empty list*; otherwise, returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+Returns <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> if <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is the *empty list*; otherwise, returns <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
 **Examples:**
 ```lisp
-(null ’()) → T 
-(null nil) → T 
-(null t) → NIL 
-(null 1) → NIL 
+
+(null ’()) *→* T 
+(null nil) *→* T 
+(null t) *→* NIL 
+(null 1) *→* NIL 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks styled={true} term={"not"}><b>not</b></ClLinks> 
+<DictionaryLink styled={true} term={"not"}><b>not</b></DictionaryLink> 
 
 
 
@@ -61,11 +63,11 @@ Returns <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> if <ClLinks styled=
 
 
 
-<ClLinks styled={true} term={"null"}><b>null</b></ClLinks> is intended to be used to test for the *empty list* whereas <ClLinks styled={true} term={"not"}><b>not</b></ClLinks> is intended to be used to invert a <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks> (or *generalized boolean*). Operationally, <ClLinks styled={true} term={"null"}><b>null</b></ClLinks> and <ClLinks styled={true} term={"not"}><b>not</b></ClLinks> compute the same result; which to use is a matter of style. 
+<DictionaryLink styled={true} term={"null"}><b>null</b></DictionaryLink> is intended to be used to test for the *empty list* whereas <DictionaryLink styled={true} term={"not"}><b>not</b></DictionaryLink> is intended to be used to invert a <GlossaryTerm styled={true} term={"boolean"}><i>boolean</i></GlossaryTerm> (or *generalized boolean*). Operationally, <DictionaryLink styled={true} term={"null"}><b>null</b></DictionaryLink> and <DictionaryLink styled={true} term={"not"}><b>not</b></DictionaryLink> compute the same result; which to use is a matter of style. 
 
 
 
-(null <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’null) *≡* (eq <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’()) 
+(null <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>) *≡* (typep <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> ’null) *≡* (eq <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> ’()) 
 
 
 

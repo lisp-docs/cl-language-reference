@@ -1,4 +1,5 @@
 ```lisp
+
 The following are some examples that exploit the #|...|# notation: 
 ;;; In this example, some debugging code is commented out with #|...|# 
 ;;; Note that this kind of comment can occur in the middle of a line 
@@ -11,13 +12,13 @@ The following are some examples that exploit the #|...|# notation:
 ;;; so nesting works naturally. 
 (defun mention-fun-fact-1a () 
   (format t "CL uses ; and #|...|# in comments.")) 
-→ MENTION-FUN-FACT-1A 
+*→* MENTION-FUN-FACT-1A 
 (mention-fun-fact-1a) 
 ▷ CL uses ; and #|...|# in comments. 
-→ NIL 
+*→* NIL 
 #| (defun mention-fun-fact-1b () 
 (format t "CL uses ; and #|...|# in comments.")) |# 
-(fboundp ’mention-fun-fact-1b) → NIL 
+(fboundp ’mention-fun-fact-1b) *→* NIL 
 ;;; In this example, vertical-bar followed by sharpsign needed to appear 
 ;;; in a string without any matching sharpsign followed by vertical-bar 
 ;;; having preceded this. To compensate, the programmer has included a 
@@ -26,13 +27,14 @@ The following are some examples that exploit the #|...|# notation:
 ;;; allowing the outer #| ... |# pair match. If the slash were not present, ;;; the outer comment would terminate prematurely. 
 (defun mention-fun-fact-2a () 
   (format t "Don’t use |\# unmatched or you’ll get in trouble!")) 
-→ MENTION-FUN-FACT-2A 
+*→* MENTION-FUN-FACT-2A 
 (mention-fun-fact-2a) 
 ▷ Don’t use |# unmatched or you’ll get in trouble! 
-→ NIL 
+*→* NIL 
 #| (defun mention-fun-fact-2b ()  
+
      (format t "Don’t use |\# unmatched or you’ll get in trouble!") |# 
-(fboundp ’mention-fun-fact-2b) → NIL 
+(fboundp ’mention-fun-fact-2b) *→* NIL 
 ;;; In this example, the programmer attacks the mismatch problem in a 
 ;;; different way. The sharpsign vertical bar in the comment is not needed 
 ;;; for the correct parsing of the program normally (as in case 3a), but 
@@ -40,13 +42,14 @@ The following are some examples that exploit the #|...|# notation:
 ;;; a program is commented out (as in case 3b). 
 (defun mention-fun-fact-3a () ; #| 
      (format t "Don’t use |# unmatched or you’ll get in trouble!")) 
-→ MENTION-FUN-FACT-3A 
+*→* MENTION-FUN-FACT-3A 
 (mention-fun-fact-3a) 
 ▷ Don’t use |# unmatched or you’ll get in trouble! 
-→ NIL 
+*→* NIL 
 #| 
 (defun mention-fun-fact-3b () ; #| 
   (format t "Don’t use |# unmatched or you’ll get in trouble!")) 
 |# 
-(fboundp ’mention-fun-fact-3b) → NIL 
+(fboundp ’mention-fun-fact-3b) *→* NIL 
+
 ```

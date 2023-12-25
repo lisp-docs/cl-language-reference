@@ -1,4 +1,4 @@
-**array-dimensions** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**array-dimensions** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"array-dimensions"}><b>array-dimensions</b></ClLinks> *array → dimensions* 
+<DictionaryLink styled={true} term={"array-dimensions"}><b>array-dimensions</b></DictionaryLink> *array → dimensions* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *integers*. 
+<GlossaryTerm styled={true} term={"dimension"}><i>dimensions</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of *integers*. 
 
 
 
@@ -26,21 +26,23 @@
 
 
 
-Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> of <ClLinks  term={"array"}><i>array</i></ClLinks>. (If <ClLinks  term={"array"}><i>array</i></ClLinks> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , that *fill pointer* is ignored.) 
+Returns a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"dimension"}><i>dimensions</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. (If <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> with a *fill pointer* , that *fill pointer* is ignored.) 
 
 
 
 **Examples:**
 ```lisp
-(array-dimensions (make-array 4)) → (4) 
-(array-dimensions (make-array ’(2 3))) → (2 3) 
-(array-dimensions (make-array 4 :fill-pointer 2)) → (4) 
+
+(array-dimensions (make-array 4)) *→* (4) 
+(array-dimensions (make-array ’(2 3))) *→* (2 3) 
+(array-dimensions (make-array 4 :fill-pointer 2)) *→* (4) 
+
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
@@ -48,7 +50,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"array-dimension"}><b>array-dimension</b></ClLinks> 
+<DictionaryLink styled={true} term={"array-dimension"}><b>array-dimension</b></DictionaryLink> 
 
 
 

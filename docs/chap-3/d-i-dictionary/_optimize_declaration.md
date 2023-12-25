@@ -1,4 +1,4 @@
-**optimize** <ClLinks  term={"declaration"}><i>Declaration</i></ClLinks> 
+**optimize** <GlossaryTerm styled={true} term={"declaration"}><i>Declaration</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"value"}><i>value</i></ClLinks>—one of the *integers* 0, 1, 2, or 3. 
+<GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm>—one of the *integers* 0, 1, 2, or 3. 
 
 
 
@@ -34,7 +34,7 @@ Evaluation and
 
 
 
-<ClLinks  term={"optimize"}><b>optimize</b></ClLinks> 
+<DictionaryLink styled={true} term={"optimize"}><b>optimize</b></DictionaryLink> 
 
 
 
@@ -42,7 +42,7 @@ Evaluation and
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks> or <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks> 
+<GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"proclamation"}><i>proclamation</i></GlossaryTerm> 
 
 
 
@@ -50,7 +50,7 @@ Evaluation and
 
 
 
-Advises the compiler that each *quality* should be given attention according to the specified corresponding <ClLinks  term={"value"}><i>value</i></ClLinks>. Each *quality* must be a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming an *optimize quality*; the names and meanings of the standard *optimize qualities* are shown in Figure 3–25. 
+Advises the compiler that each *quality* should be given attention according to the specified corresponding <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm>. Each *quality* must be a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> naming an *optimize quality*; the names and meanings of the standard *optimize qualities* are shown in Figure 3–25. 
 
 
 
@@ -72,14 +72,13 @@ There may be other, *implementation-defined optimize qualities*.
 
 
 
-A <ClLinks  term={"value"}><i>value</i></ClLinks> 0 means that the corresponding *quality* is totally unimportant, and 3 that the *quality* is extremely important; 1 and 2 are intermediate values, with 1 the neutral value. (*quality* 3) can be abbreviated to *quality*. 
+A <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> 0 means that the corresponding *quality* is totally unimportant, and 3 that the *quality* is extremely important; 1 and 2 are intermediate values, with 1 the neutral value. (*quality* 3) can be abbreviated to *quality*. 
 
 
 
-Note that <ClLinks  term={"code"}><i>code</i></ClLinks> which has the optimization (safety 3), or just **safety**, is called *safe code*. The consequences are unspecified if a *quality* appears more than once with *di↵erent values*. 
-
-**Examples:**
+Note that <GlossaryTerm styled={true} term={"code"}><i>code</i></GlossaryTerm> which has the optimization (safety 3), or just **safety**, is called *safe code*. The consequences are unspecified if a *quality* appears more than once with *di↵erent values*. **Examples:**
 ```lisp
+
 (defun often-used-subroutine (x y) 
   (declare (optimize (safety 2))) 
   (error-check x y) 
@@ -91,12 +90,13 @@ Note that <ClLinks  term={"code"}><i>code</i></ClLinks> which has the optimizati
     (declare (optimize speed)) 
     (declare (fixnum i)) 
     )) 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"declare"}><b>declare</b></ClLinks>, <ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks>, Section 3.3.4 (Declaration Scope) 
+<DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink>, <DictionaryLink styled={true} term={"declaim"}><b>declaim</b></DictionaryLink>, <DictionaryLink styled={true} term={"proclaim"}><b>proclaim</b></DictionaryLink>, Section 3.3.4 (Declaration Scope) 
 
 
 
@@ -104,7 +104,7 @@ Note that <ClLinks  term={"code"}><i>code</i></ClLinks> which has the optimizati
 
 
 
-An <ClLinks  term={"optimize"}><b>optimize</b></ClLinks> declaration never applies to either a <ClLinks  term={"variable"}><i>variable</i></ClLinks> or a *function binding*. An **optimize 3–96** Programming Language—Common Lisp
+An <DictionaryLink styled={true} term={"optimize"}><b>optimize</b></DictionaryLink> declaration never applies to either a <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm> or a *function binding*. An **optimize 3–96** Programming Language—Common Lisp
 
 
 

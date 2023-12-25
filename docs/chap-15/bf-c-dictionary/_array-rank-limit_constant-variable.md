@@ -6,7 +6,7 @@
 
 
 
-A positive <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>, the exact magnitude of which is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but which is not less than 8. 
+A positive <GlossaryTerm styled={true} term={"fixnum"}><i>fixnum</i></GlossaryTerm>, the exact magnitude of which is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>, but which is not less than 8. 
 
 
 
@@ -14,7 +14,7 @@ A positive <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>, the exact magnitud
 
 
 
-The upper exclusive bound on the <ClLinks  term={"rank"}><i>rank</i></ClLinks> of an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+The upper exclusive bound on the <GlossaryTerm styled={true} term={"rank"}><i>rank</i></GlossaryTerm> of an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@ The upper exclusive bound on the <ClLinks  term={"rank"}><i>rank</i></ClLinks> o
 
 
 
-<ClLinks  term={"make-array"}><b>make-array</b></ClLinks> 
+<DictionaryLink styled={true} term={"make-array"}><b>make-array</b></DictionaryLink> 
 
 
 

@@ -1,4 +1,4 @@
-**read-char** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**read-char** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"read-char"}><b>read-char</b></ClLinks> &amp;optional *input-stream eof-error-p eof-value recursive-p → char* 
+<DictionaryLink styled={true} term={"read-char"}><b>read-char</b></DictionaryLink> &amp;optional *input-stream eof-error-p eof-value recursive-p → char* 
 
 
 
@@ -18,19 +18,19 @@
 
 
 
-*eof-error-p*—a *generalized boolean*. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+*eof-error-p*—a *generalized boolean*. The default is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>. 
 
 
 
-*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*eof-value*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. The default is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-*recursive-p*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*recursive-p*—a *generalized boolean*. The default is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-*char*—a <ClLinks  term={"character"}><i>character</i></ClLinks> or the *eof-value*. 
+*char*—a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> or the *eof-value*. 
 
 
 
@@ -38,19 +38,19 @@
 
 
 
-<ClLinks  term={"read-char"}><b>read-char</b></ClLinks> returns the next <ClLinks  term={"character"}><i>character</i></ClLinks> from *input-stream*. 
+<DictionaryLink styled={true} term={"read-char"}><b>read-char</b></DictionaryLink> returns the next <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> from *input-stream*. 
 
 
 
-When *input-stream* is an *echo stream*, the character is echoed on *input-stream* the first time the character is seen. Characters that are not echoed by <ClLinks  term={"read-char"}><b>read-char</b></ClLinks> are those that were put there by <ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks> and hence are assumed to have been echoed already by a previous call to <ClLinks  term={"read-char"}><b>read-char</b></ClLinks>. 
+When *input-stream* is an *echo stream*, the character is echoed on *input-stream* the first time the character is seen. Characters that are not echoed by <DictionaryLink styled={true} term={"read-char"}><b>read-char</b></DictionaryLink> are those that were put there by <DictionaryLink styled={true} term={"unread-char"}><b>unread-char</b></DictionaryLink> and hence are assumed to have been echoed already by a previous call to <DictionaryLink styled={true} term={"read-char"}><b>read-char</b></DictionaryLink>. 
 
 
 
-If *recursive-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, this call is expected to be embedded in a higher-level call to <ClLinks  term={"read"}><b>read</b></ClLinks> or a similar <ClLinks  term={"function"}><i>function</i></ClLinks> used by the *Lisp reader* . 
+If *recursive-p* is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, this call is expected to be embedded in a higher-level call to <DictionaryLink styled={true} term={"read"}><b>read</b></DictionaryLink> or a similar <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> used by the *Lisp reader* . 
 
 
 
-If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <ClLinks  term={"false"}><i>false</i></ClLinks>, *eof-value* is returned. 
+If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>, *eof-value* is returned. 
 
 
 
@@ -68,18 +68,20 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <ClLinks  term={"fal
 
 **Examples:**
 ```lisp
+
 (with-input-from-string (is "0123") 
   (do ((c (read-char is) (read-char is nil ’the-end))) 
       ((not (characterp c))) 
     (format t "~S " c))) 
 ▷ #\0 #\1 #\2 #\3 
-→ NIL 
+*→* NIL 
+
 ```
 **Affected By:** 
 
 
 
-**\*standard-input\***, <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
+**\*standard-input\***, <DictionaryLink styled={true} term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>. 
 
 
 
@@ -87,7 +89,7 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <ClLinks  term={"fal
 
 
 
-If an *end of file*<sub>2</sub> occurs before a character can be read, and *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled. 
+If an *end of file*<sub>2</sub> occurs before a character can be read, and *eof-error-p* is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled. 
 
 
 
@@ -95,7 +97,7 @@ If an *end of file*<sub>2</sub> occurs before a character can be read, and *eof-
 
 
 
-<ClLinks  term={"read-byte"}><b>read-byte</b></ClLinks>, <ClLinks  term={"read-sequence"}><b>read-sequence</b></ClLinks>, <ClLinks  term={"write-char"}><b>write-char</b></ClLinks>, <ClLinks  term={"read"}><b>read</b></ClLinks> 
+<DictionaryLink styled={true} term={"read-byte"}><b>read-byte</b></DictionaryLink>, <DictionaryLink styled={true} term={"read-sequence"}><b>read-sequence</b></DictionaryLink>, <DictionaryLink styled={true} term={"write-char"}><b>write-char</b></DictionaryLink>, <DictionaryLink styled={true} term={"read"}><b>read</b></DictionaryLink> 
 
 
 
@@ -103,7 +105,7 @@ If an *end of file*<sub>2</sub> occurs before a character can be read, and *eof-
 
 
 
-The corresponding output function is <ClLinks  term={"write-char"}><b>write-char</b></ClLinks>. 
+The corresponding output function is <DictionaryLink styled={true} term={"write-char"}><b>write-char</b></DictionaryLink>. 
 
 
 

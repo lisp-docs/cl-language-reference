@@ -1,4 +1,4 @@
-*∗<ClLinks styled={true} term={"print-miser-width"}><b>*print-miser-width*</b></ClLinks>∗ Variable* 
+*∗<DictionaryLink styled={true} term={"print-miser-width"}><b>*print-miser-width*</b></DictionaryLink>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-a non-negative *integer* , or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+a non-negative *integer* , or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -14,7 +14,7 @@ a non-negative *integer* , or <ClLinks styled={true} term={"nil"}><b>nil</b></Cl
 
 
 
-<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> 
+<GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> 
 
 
 
@@ -22,7 +22,7 @@ a non-negative *integer* , or <ClLinks styled={true} term={"nil"}><b>nil</b></Cl
 
 
 
-If it is not <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, the *pretty printer* switches to a compact style of output (called miser style) whenever the width available for printing a substructure is less than or equal to this many <ClLinks styled={true} term={"em"}><i>ems</i></ClLinks>. 
+If it is not <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, the *pretty printer* switches to a compact style of output (called miser style) whenever the width available for printing a substructure is less than or equal to this many <GlossaryTerm styled={true} term={"em"}><i>ems</i></GlossaryTerm>. 
 
 
 

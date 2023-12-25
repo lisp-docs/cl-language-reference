@@ -1,4 +1,4 @@
-**abs** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**abs** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"abs"}><b>abs</b></ClLinks> *number → absolute-value* 
+<DictionaryLink styled={true} term={"abs"}><b>abs</b></DictionaryLink> *number → absolute-value* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+<GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
@@ -26,28 +26,32 @@
 
 
 
-<ClLinks  term={"abs"}><b>abs</b></ClLinks> returns the absolute value of <ClLinks  term={"number"}><i>number</i></ClLinks>. 
+<DictionaryLink styled={true} term={"abs"}><b>abs</b></DictionaryLink> returns the absolute value of <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>. 
 
 
 
-If <ClLinks  term={"number"}><i>number</i></ClLinks> is a *real*, the result is of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as <ClLinks  term={"number"}><i>number</i></ClLinks>. 
+If <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> is a *real*, the result is of the same <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> as <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>. 
 
 
 
-If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> , the result is a positive *real* with the same magnitude as <ClLinks  term={"number"}><i>number</i></ClLinks>. The result can be a <ClLinks  term={"float"}><i>float</i></ClLinks> even if <ClLinks  term={"number"}><i>number</i></ClLinks>’s components are <ClLinks  term={"rational"}><i>rationals</i></ClLinks> and an exact rational result would have been possible. Thus the result of (abs #c(3 4)) can be either 5 or 5.0, depending on the implementation. 
+If <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> , the result is a positive *real* with the same magnitude as <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>. The result can be a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> even if <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>’s components are <GlossaryTerm styled={true} term={"rational"}><i>rationals</i></GlossaryTerm> and an exact rational result would have been possible. Thus the result of (abs #c(3 4)) can be either 5 or 5.0, depending on the implementation. 
 
 
 
 **Examples:**
 ```lisp
-(abs 0) → 0 
 
-(abs 12/13) → 12/13 
-(abs -1.09) → 1.09 
-(abs #c(5.0 -5.0)) → 7.071068 
-(abs #c(5 5)) → 7.071068 
-(abs #c(3/5 4/5)) → 1 or approximately 1.0 
-(eql (abs -0.0) -0.0) → true 
+(abs 0) *→* 0 
+
+
+
+(abs 12/13) *→* 12/13 
+(abs -1.09) *→* 1.09 
+(abs #c(5.0 -5.0)) *→* 7.071068 
+(abs #c(5 5)) *→* 7.071068 
+(abs #c(3/5 4/5)) *→* 1 or approximately 1.0 
+(eql (abs -0.0) -0.0) *→ true* 
+
 ```
 **See Also:** 
 
@@ -61,11 +65,11 @@ Section 12.1.3.3 (Rule of Float Substitutability)
 
 
 
-If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> , the result is equivalent to the following: 
+If <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> , the result is equivalent to the following: 
 
 
 
-(sqrt (+ (expt (realpart <ClLinks  term={"number"}><i>number</i></ClLinks>) 2) (expt (imagpart <ClLinks  term={"number"}><i>number</i></ClLinks>) 2))) 
+(sqrt (+ (expt (realpart <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>) 2) (expt (imagpart <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>) 2))) 
 
 
 

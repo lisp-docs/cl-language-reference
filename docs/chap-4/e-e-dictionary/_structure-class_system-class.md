@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"structure-class"}><b>structure-class</b></ClLinks>, <ClLinks  term={"class"}><b>class</b></ClLinks>, <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"structure-class"}><b>structure-class</b></DictionaryLink>, <DictionaryLink styled={true} term={"class"}><b>class</b></DictionaryLink>, <DictionaryLink styled={true} term={"standard-object"}><b>standard-object</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,4 +14,4 @@
 
 
 
-All *classes* defined by means of <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks> are <ClLinks  term={"instance"}><i>instances</i></ClLinks> of the <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"structure-class"}><b>structure-class</b></ClLinks>. 
+All *classes* defined by means of <DictionaryLink styled={true} term={"defstruct"}><b>defstruct</b></DictionaryLink> are <GlossaryTerm styled={true} term={"instance"}><i>instances</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink styled={true} term={"structure-class"}><b>structure-class</b></DictionaryLink>. 

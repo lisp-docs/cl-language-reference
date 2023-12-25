@@ -2,11 +2,11 @@
 
 
 
-It is not permitted to supply a keyword argument to a <ClLinks  term={"function"}><i>function</i></ClLinks> using a name that is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+It is not permitted to supply a keyword argument to a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> using a name that is not a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-If this <ClLinks  term={"situation"}><i>situation</i></ClLinks> occurs in a *safe call*, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> must be signaled unless keyword argument checking is suppressed as described in Section 3.4.1.4.1 (Suppressing Keyword Argument Checking); and in an *unsafe call* the <ClLinks  term={"situation"}><i>situation</i></ClLinks> has undefined consequences. 
+If this <GlossaryTerm styled={true} term={"situation"}><i>situation</i></GlossaryTerm> occurs in a *safe call*, an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"program-error"}><b>program-error</b></DictionaryLink> must be signaled unless keyword argument checking is suppressed as described in Section 3.4.1.4.1 (Suppressing Keyword Argument Checking); and in an *unsafe call* the <GlossaryTerm styled={true} term={"situation"}><i>situation</i></GlossaryTerm> has undefined consequences. 
 
 
 

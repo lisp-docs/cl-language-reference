@@ -1,4 +1,4 @@
-**stream-external-format** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**stream-external-format** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"stream-external-format"}><b>stream-external-format</b></ClLinks> *stream → format* 
+<DictionaryLink styled={true} term={"stream-external-format"}><b>stream-external-format</b></DictionaryLink> *stream → format* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a *file stream*. 
+<GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>—a *file stream*. 
 
 
 
-<ClLinks  term={"format"}><i>format</i></ClLinks>—an *external file format*. 
+<GlossaryTerm styled={true} term={"format"}><i>format</i></GlossaryTerm>—an *external file format*. 
 
 
 
@@ -26,27 +26,30 @@
 
 
 
-Returns an *external file format designator* for the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Returns an *external file format designator* for the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
 **Examples:**
 ```lisp
+
 (with-open-file (stream "test" :direction :output) 
+
   
   
   (stream-external-format stream)) 
-→ :DEFAULT 
+*→* :DEFAULT 
 <i><sup>or</sup>→</i> :ISO8859/1-1987 
 <i><sup>or</sup>→</i> (:ASCII :SAIL) 
 <i><sup>or</sup>→</i> ACME::PROPRIETARY-FILE-FORMAT-17 
 <i><sup>or</sup>→</i> #<FILE-FORMAT :ISO646-1983 2343673> 
+
 ```
 **See Also:** 
 
 
 
-the :external-format <ClLinks  term={"argument"}><i>argument</i></ClLinks> to the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"open"}><b>open</b></ClLinks> and the <ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> <ClLinks  term={"macro"}><i>macro</i></ClLinks>. 
+the :external-format <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm> to the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"open"}><b>open</b></DictionaryLink> and the <DictionaryLink styled={true} term={"with-open-file"}><b>with-open-file</b></DictionaryLink> <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm>. 
 
 
 
@@ -54,7 +57,7 @@ the :external-format <ClLinks  term={"argument"}><i>argument</i></ClLinks> to th
 
 
 
-The <ClLinks  term={"format"}><i>format</i></ClLinks> returned is not necessarily meaningful to other <ClLinks  term={"implementation"}><i>implementations</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"format"}><i>format</i></GlossaryTerm> returned is not necessarily meaningful to other <GlossaryTerm styled={true} term={"implementation"}><i>implementations</i></GlossaryTerm>. 
 
 
 

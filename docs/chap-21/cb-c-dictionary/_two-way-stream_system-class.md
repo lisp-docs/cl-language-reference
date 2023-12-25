@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"two-way-stream"}><b>two-way-stream</b></ClLinks>, <ClLinks  term={"stream"}><b>stream</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"two-way-stream"}><b>two-way-stream</b></DictionaryLink>, <DictionaryLink styled={true} term={"stream"}><b>stream</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -22,7 +22,7 @@ A *bidirectional composite stream* that receives its input from an associated *i
 
 
 
-<ClLinks  term={"make-two-way-stream"}><b>make-two-way-stream</b></ClLinks>, **two-way-stream-input-stream**, **two-way-stream-output-stream input-stream-p, output-stream-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+<DictionaryLink styled={true} term={"make-two-way-stream"}><b>make-two-way-stream</b></DictionaryLink>, **two-way-stream-input-stream**, **two-way-stream-output-stream input-stream-p, output-stream-p** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -42,7 +42,7 @@ A *bidirectional composite stream* that receives its input from an associated *i
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
@@ -54,22 +54,22 @@ A *bidirectional composite stream* that receives its input from an associated *i
 
 
 
-**input-stream-p** returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is an *input stream*; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. **output-stream-p** returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is an *output stream*; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
-
-**Examples:**
+**input-stream-p** returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is an *input stream*; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. **output-stream-p** returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is an *output stream*; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. **Examples:**
 ```lisp
-(input-stream-p \*standard-input\*) → true 
-(input-stream-p \*terminal-io\*) → true 
-(input-stream-p (make-string-output-stream)) → false 
-(output-stream-p \*standard-output\*) → true 
-(output-stream-p \*terminal-io\*) → true 
-(output-stream-p (make-string-input-stream "jr")) → false 
+
+(input-stream-p \*standard-input\*) *→ true* 
+(input-stream-p \*terminal-io\*) *→ true* 
+(input-stream-p (make-string-output-stream)) *→ false* 
+(output-stream-p \*standard-output\*) *→ true* 
+(output-stream-p \*terminal-io\*) *→ true* 
+(output-stream-p (make-string-input-stream "jr")) *→ false* 
+
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 

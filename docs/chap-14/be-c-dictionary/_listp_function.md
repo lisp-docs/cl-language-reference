@@ -1,4 +1,4 @@
-**listp** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**listp** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"listp"}><b>listp</b></ClLinks> *object → generalized-boolean* 
+<DictionaryLink styled={true} term={"listp"}><b>listp</b></DictionaryLink> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -26,22 +26,24 @@
 
 
 
-Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"list"}><b>list</b></DictionaryLink>; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
 **Examples:**
 ```lisp
-(listp nil) → true 
-(listp (cons 1 2)) → true 
-(listp (make-array 6)) → false 
-(listp t) → false 
+
+(listp nil) *→ true* 
+(listp (cons 1 2)) *→ true* 
+(listp (make-array 6)) *→ false* 
+(listp t) *→ false* 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks styled={true} term={"consp"}><b>consp</b></ClLinks> 
+<DictionaryLink styled={true} term={"consp"}><b>consp</b></DictionaryLink> 
 
 
 
@@ -49,11 +51,11 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 
 
-If <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>, <ClLinks styled={true} term={"listp"}><b>listp</b></ClLinks> does not check whether <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a *proper list*; it returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> for any kind of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+If <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm>, <DictionaryLink styled={true} term={"listp"}><b>listp</b></DictionaryLink> does not check whether <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is a *proper list*; it returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> for any kind of <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
-(listp <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’list) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’(or cons null)) 
+(listp <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>) *≡* (typep <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> ’list) *≡* (typep <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> ’(or cons null)) 
 
 
 

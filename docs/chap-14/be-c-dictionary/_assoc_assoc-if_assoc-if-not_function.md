@@ -1,4 +1,4 @@
-**assoc, assoc-if, assoc-if-not** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**assoc, assoc-if, assoc-if-not** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"assoc"}><b>assoc</b></ClLinks> *item alist* &amp;key *key test test-not → entry* 
+<DictionaryLink styled={true} term={"assoc"}><b>assoc</b></DictionaryLink> *item alist* &amp;key *key test test-not → entry* 
 
 
 
-<ClLinks styled={true} term={"assoc-if"}><b>assoc-if</b></ClLinks> *predicate alist* &amp;key *key → entry* 
+<DictionaryLink styled={true} term={"assoc-if"}><b>assoc-if</b></DictionaryLink> *predicate alist* &amp;key *key → entry* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks styled={true} term={"assoc-if-not"}><b>assoc-if-not</b></ClLinks> *predicate alist* &amp;key *key → entry* 
+<DictionaryLink styled={true} term={"assoc-if-not"}><b>assoc-if-not</b></DictionaryLink> *predicate alist* &amp;key *key → entry* 
 
 
 
@@ -38,19 +38,19 @@
 
 
 
-*item*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+*item*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>—an *association list*. 
+<GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm>—an *association list*. 
 
 
 
-<ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> that returns a *generalized boolean*. *test<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *key*—a *designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"predicate"}><i>predicate</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of one <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm> that returns a *generalized boolean*. *test<GlossaryTerm styled={true} term={"t"}><i>—a </i></GlossaryTerm>designator* for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> that returns a *generalized boolean*. *test-not<GlossaryTerm styled={true} term={"t"}><i>—a </i></GlossaryTerm>designator* for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> that returns a *generalized boolean*. *key*—a *designator* for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of one argument, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-*entry*—a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> that is an <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> of <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*entry*—a <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> that is an <GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm>, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -58,34 +58,35 @@
 
 
 
-<ClLinks styled={true} term={"assoc"}><b>assoc</b></ClLinks>, <ClLinks styled={true} term={"assoc-if"}><b>assoc-if</b></ClLinks>, and <ClLinks styled={true} term={"assoc-if-not"}><b>assoc-if-not</b></ClLinks> return the first <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> in <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> whose *car satisfies the test*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if no such <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> is found. 
+<DictionaryLink styled={true} term={"assoc"}><b>assoc</b></DictionaryLink>, <DictionaryLink styled={true} term={"assoc-if"}><b>assoc-if</b></DictionaryLink>, and <DictionaryLink styled={true} term={"assoc-if-not"}><b>assoc-if-not</b></DictionaryLink> return the first <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm> whose *car satisfies the test*, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if no such <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> is found. 
 
 
 
-For <ClLinks styled={true} term={"assoc"}><b>assoc</b></ClLinks>, <ClLinks styled={true} term={"assoc-if"}><b>assoc-if</b></ClLinks>, and <ClLinks styled={true} term={"assoc-if-not"}><b>assoc-if-not</b></ClLinks>, if <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> appears in <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> in place of a pair, it is ignored. 
-
-**Examples:**
+For <DictionaryLink styled={true} term={"assoc"}><b>assoc</b></DictionaryLink>, <DictionaryLink styled={true} term={"assoc-if"}><b>assoc-if</b></DictionaryLink>, and <DictionaryLink styled={true} term={"assoc-if-not"}><b>assoc-if-not</b></DictionaryLink>, if <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> appears in <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm> in place of a pair, it is ignored. **Examples:**
 ```lisp
-(setq values ’((x . 100) (y . 200) (z . 50))) → ((X . 100) (Y . 200) (Z . 50)) (assoc ’y values) → (Y . 200) 
-(rplacd (assoc ’y values) 201) → (Y . 201) 
-(assoc ’y values) → (Y . 201) 
+
+(setq values ’((x . 100) (y . 200) (z . 50))) *→* ((X . 100) (Y . 200) (Z . 50)) (assoc ’y values) *→* (Y . 200) 
+(rplacd (assoc ’y values) 201) *→* (Y . 201) 
+(assoc ’y values) *→* (Y . 201) 
 (setq alist ’((1 . "one")(2 . "two")(3 . "three"))) 
-→ ((1 . "one") (2 . "two") (3 . "three")) 
-(assoc 2 alist) → (2 . "two") 
-(assoc-if #’evenp alist) → (2 . "two") 
-(assoc-if-not #’(lambda(x) (< x 3)) alist) → (3 . "three") 
-(setq alist ’(("one" . 1)("two" . 2))) → (("one" . 1) ("two" . 2)) 
-(assoc "one" alist) → NIL 
-(assoc "one" alist :test #’equalp) → ("one" . 1) 
-(assoc "two" alist :key #’(lambda(x) (char x 2))) → NIL 
-(assoc #\o alist :key #’(lambda(x) (char x 2))) → ("two" . 2) 
-(assoc ’r ’((a . b) (c . d) (r . x) (s . y) (r . z))) → (R . X) 
-(assoc ’goo ’((foo . bar) (zoo . goo))) → NIL 
-(assoc ’2 ’((1 a b c) (2 b c d) (-7 x y z))) → (2 B C D) 
+*→* ((1 . "one") (2 . "two") (3 . "three")) 
+(assoc 2 alist) *→* (2 . "two") 
+(assoc-if #’evenp alist) *→* (2 . "two") 
+(assoc-if-not #’(lambda(x) (< x 3)) alist) *→* (3 . "three") 
+(setq alist ’(("one" . 1)("two" . 2))) *→* (("one" . 1) ("two" . 2)) 
+(assoc "one" alist) *→* NIL 
+(assoc "one" alist :test #’equalp) *→* ("one" . 1) 
+(assoc "two" alist :key #’(lambda(x) (char x 2))) *→* NIL 
+(assoc #\o alist :key #’(lambda(x) (char x 2))) *→* ("two" . 2) 
+(assoc ’r ’((a . b) (c . d) (r . x) (s . y) (r . z))) *→* (R . X) 
+(assoc ’goo ’((foo . bar) (zoo . goo))) *→* NIL 
+(assoc ’2 ’((1 a b c) (2 b c d) (-7 x y z))) *→* (2 B C D) 
 (setq alist ’(("one" . 1) ("2" . 2) ("three" . 3))) 
-→ (("one" . 1) ("2" . 2) ("three" . 3)) 
+*→* (("one" . 1) ("2" . 2) ("three" . 3)) 
 (assoc-if-not #’alpha-char-p alist 
-		:key #’(lambda (x) (char x 0))) → ("2" . 2) 
+		:key #’(lambda (x) (char x 0))) *→* ("2" . 2) 
+
+
 
 
 ```
@@ -93,7 +94,7 @@ For <ClLinks styled={true} term={"assoc"}><b>assoc</b></ClLinks>, <ClLinks style
 
 
 
-Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> is not an *association list*. 
+Should be prepared to signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm> is not an *association list*. 
 
 
 
@@ -101,7 +102,7 @@ Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i
 
 
 
-<ClLinks styled={true} term={"rassoc"}><b>rassoc</b></ClLinks>, <ClLinks styled={true} term={"find"}><b>find</b></ClLinks>, <ClLinks styled={true} term={"member"}><b>member</b></ClLinks>, <ClLinks styled={true} term={"position"}><b>position</b></ClLinks>, Section 3.6 (Traversal Rules and Side Effects) 
+<DictionaryLink styled={true} term={"rassoc"}><b>rassoc</b></DictionaryLink>, <DictionaryLink styled={true} term={"find"}><b>find</b></DictionaryLink>, <DictionaryLink styled={true} term={"member"}><b>member</b></DictionaryLink>, <DictionaryLink styled={true} term={"position"}><b>position</b></DictionaryLink>, Section 3.6 (Traversal Rules and Side Effects) 
 
 
 
@@ -113,11 +114,11 @@ The :test-not parameter is deprecated.
 
 
 
-The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"assoc-if-not"}><b>assoc-if-not</b></ClLinks> is deprecated. 
+The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"assoc-if-not"}><b>assoc-if-not</b></DictionaryLink> is deprecated. 
 
 
 
-It is possible to <ClLinks styled={true} term={"rplacd"}><b>rplacd</b></ClLinks> the result of <ClLinks styled={true} term={"assoc"}><b>assoc</b></ClLinks>, provided that it is not <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, in order to “update” <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>. The two expressions 
+It is possible to <DictionaryLink styled={true} term={"rplacd"}><b>rplacd</b></DictionaryLink> the result of <DictionaryLink styled={true} term={"assoc"}><b>assoc</b></DictionaryLink>, provided that it is not <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, in order to “update” <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm>. The two expressions 
 
 
 
@@ -133,7 +134,7 @@ and
 
 
 
-are equivalent in meaning with one exception: if <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> appears in <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> in place of a pair, and *item* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, <ClLinks styled={true} term={"find"}><b>find</b></ClLinks> will compute the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of the <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> in <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>, find that it is equal to *item*, and return <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, whereas <ClLinks styled={true} term={"assoc"}><b>assoc</b></ClLinks> will ignore the <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> in <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> and continue to search for an actual <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> whose <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+are equivalent in meaning with one exception: if <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> appears in <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm> in place of a pair, and *item* is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, <DictionaryLink styled={true} term={"find"}><b>find</b></DictionaryLink> will compute the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> of the <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> in <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm>, find that it is equal to *item*, and return <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, whereas <DictionaryLink styled={true} term={"assoc"}><b>assoc</b></DictionaryLink> will ignore the <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> in <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm> and continue to search for an actual <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> whose <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 

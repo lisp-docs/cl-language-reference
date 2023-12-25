@@ -1,4 +1,4 @@
-**log** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**log** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"log"}><b>log</b></ClLinks> <ClLinks  term={"number"}><i>number</i></ClLinks> &amp;optional *base → logarithm* 
+<DictionaryLink styled={true} term={"log"}><b>log</b></DictionaryLink> <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> &amp;optional *base → logarithm* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a non-zero <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+<GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>—a non-zero <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
-*base*—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+*base*—a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
-*logarithm*—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+*logarithm*—a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"log"}><b>log</b></ClLinks> returns the logarithm of <ClLinks  term={"number"}><i>number</i></ClLinks> in base *base*. If *base* is not supplied its value is *e*, the base of the natural logarithms. 
+<DictionaryLink styled={true} term={"log"}><b>log</b></DictionaryLink> returns the logarithm of <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> in base *base*. If *base* is not supplied its value is *e*, the base of the natural logarithms. 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-<ClLinks  term={"log"}><b>log</b></ClLinks> 
+<DictionaryLink styled={true} term={"log"}><b>log</b></DictionaryLink> 
 
 
 
-<ClLinks  term={"log"}><b>log</b></ClLinks> may return a <ClLinks  term={"complex"}><i>complex</i></ClLinks> when given a *real* negative <ClLinks  term={"number"}><i>number</i></ClLinks>. 
+<DictionaryLink styled={true} term={"log"}><b>log</b></DictionaryLink> may return a <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> when given a *real* negative <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>. 
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-If *base* is zero, <ClLinks  term={"log"}><b>log</b></ClLinks> returns zero. 
+If *base* is zero, <DictionaryLink styled={true} term={"log"}><b>log</b></DictionaryLink> returns zero. 
 
 
 
@@ -90,7 +90,7 @@ The two-argument logarithm function is defined as
 
 
 
-*≡* (/ (log <ClLinks  term={"number"}><i>number</i></ClLinks>) (log *base*)) 
+*≡* (/ (log <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>) (log *base*)) 
 
 
 
@@ -100,16 +100,18 @@ This defines the *principal values* precisely. The range of the two-argument log
 
 **Examples:**
 ```lisp
+
 (log 100 10) 
-→ 2.0 
-→ 2 
-(log 100.0 10) → 2.0 
+*→* 2.0 
+*→* 2 
+(log 100.0 10) *→* 2.0 
 (log #c(0 1) #c(0 -1)) 
-→ #C(-1.0 0.0) 
+*→* #C(-1.0 0.0) 
 <i><sup>or</sup>→</i> #C(-1 0) 
-(log 8.0 2) → 3.0 
-(log #c(-16 16) #c(2 2)) → 3 or approximately #c(3.0 0.0) 
+(log 8.0 2) *→* 3.0 
+(log #c(-16 16) #c(2 2)) *→* 3 or approximately #c(3.0 0.0) 
 or approximately 3.0 (unlikely) 
+
 ```
 **Affected By:** 
 
@@ -135,7 +137,7 @@ The implementation.
 
 
 
-<ClLinks  term={"exp"}><b>exp</b></ClLinks>, <ClLinks  term={"expt"}><b>expt</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability) 
+<DictionaryLink styled={true} term={"exp"}><b>exp</b></DictionaryLink>, <DictionaryLink styled={true} term={"expt"}><b>expt</b></DictionaryLink>, Section 12.1.3.3 (Rule of Float Substitutability) 
 
 
 

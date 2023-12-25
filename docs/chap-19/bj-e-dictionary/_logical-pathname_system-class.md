@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, <DictionaryLink styled={true} term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> that uses a <ClLinks  term={"namestring"}><i>namestring</i></ClLinks> syntax that is <ClLinks  term={"implementation-independent"}><i>implementation-independent</i></ClLinks>, and that has component values that are <ClLinks  term={"implementation-independent"}><i>implementation-independent</i></ClLinks>. *Logical pathnames* do not refer directly to <ClLinks  term={"filename"}><i>filenames</i></ClLinks> 
+A <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> that uses a <GlossaryTerm styled={true} term={"namestring"}><i>namestring</i></GlossaryTerm> syntax that is <GlossaryTerm styled={true} term={"implementation-independent"}><i>implementation-independent</i></GlossaryTerm>, and that has component values that are <GlossaryTerm styled={true} term={"implementation-independent"}><i>implementation-independent</i></GlossaryTerm>. *Logical pathnames* do not refer directly to <GlossaryTerm styled={true} term={"filename"}><i>filenames</i></GlossaryTerm> 
 
 
 

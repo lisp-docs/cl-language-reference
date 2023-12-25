@@ -1,36 +1,79 @@
-**return** <ClLinks  term={"macro"}><i>Macro</i></ClLinks>
+**return** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
 
-**Syntax:**
 
-<ClLinks  term={"return"}><b>return</b></ClLinks> [*result*] →
 
-**Arguments and Values:**
+**Syntax:** 
 
-*result*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>.
 
-**Description:**
 
-Returns, as if by <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, from the <ClLinks  term={"block"}><i>block</i></ClLinks> named <ClLinks  term={"nil"}><b>nil</b></ClLinks>.
+<DictionaryLink styled={true} term={"return"}><b>return</b></DictionaryLink> [*result*] *→* 
+
+
+
+**Arguments and Values:** 
+
+
+
+*result*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>; evaluated. The default is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+
+
+
+**Description:** 
+
+
+
+Returns, as if by <DictionaryLink styled={true} term={"return-from"}><b>return-from</b></DictionaryLink>, from the <GlossaryTerm styled={true} term={"block"}><i>block</i></GlossaryTerm> named <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+
+
 
 **Examples:**
-
 ```lisp
-(block nil (return) 1) → NIL 
-(block nil (return 1) 2) → 1 
-(block nil (return (values 1 2)) 3) → 1, 2 
-(block nil (block alpha (return 1) 2)) → 1 
-(block alpha (block nil (return 1)) 2) → 2 
-(block nil (block nil (return 1) 2)) → 1 
+
+(block nil (return) 1) *→* NIL 
+(block nil (return 1) 2) *→* 1 
+(block nil (return (values 1 2)) 3) *→* 1, 2 
+(block nil (block alpha (return 1) 2)) *→* 1 
+(block alpha (block nil (return 1)) 2) *→* 2 
+(block nil (block nil (return 1) 2)) *→* 1 
+
 ```
+**See Also:** 
 
-**See Also:**
 
-<ClLinks  term={"block"}><b>block</b></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, Section 3.1 (Evaluation)
 
-**Notes:**
+<DictionaryLink styled={true} term={"block"}><b>block</b></DictionaryLink>, <DictionaryLink styled={true} term={"return-from"}><b>return-from</b></DictionaryLink>, Section 3.1 (Evaluation) 
 
-(return) *≡* (return-from nil)
 
-(return <ClLinks  term={"form"}><i>form</i></ClLinks>) *≡* (return-from nil <ClLinks  term={"form"}><i>form</i></ClLinks>)
 
-The *implicit blocks established* by <ClLinks  term={"macro"}><i>macros</i></ClLinks> such as <ClLinks  term={"do"}><b>do</b></ClLinks> are often named <ClLinks  term={"nil"}><b>nil</b></ClLinks>, so that <ClLinks  term={"return"}><b>return</b></ClLinks> can be used to exit from such <ClLinks  term={"form"}><i>forms</i></ClLinks>.
+**Notes:** 
+
+
+
+(return) *≡* (return-from nil) 
+
+
+
+(return <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>) *≡* (return-from nil <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>) 
+
+
+
+The *implicit blocks established* by <GlossaryTerm styled={true} term={"macro"}><i>macros</i></GlossaryTerm> such as <DictionaryLink styled={true} term={"do"}><b>do</b></DictionaryLink> are often named <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, so that <DictionaryLink styled={true} term={"return"}><b>return</b></DictionaryLink> can be used to exit from such <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. 
+
+
+
+Data and Control 
+
+
+
+
+
+
+
+
+
+
+
+<DictionaryLink styled={true} term={"tagbody"}><b>tagbody</b></DictionaryLink> 
+
+
+

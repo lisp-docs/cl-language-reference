@@ -2,7 +2,7 @@
 
 
 
-In the *for-as-arithmetic* subclause, the for or as construct iterates from the value supplied by *form1* to the value supplied by *form2* in increments or decrements denoted by *form3*. Each expression is evaluated only once and must evaluate to a <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . The variable *var* is bound to the value of *form1* in the first iteration and is *stepped* <sub>1</sub> by the value of *form3* in each succeeding iteration, or by 1 if *form3* is not provided. The following *loop keywords* serve as valid prepositions within this syntax. At least one of the prepositions must be used; and at most one from each line may be used in a single subclause. 
+In the *for-as-arithmetic* subclause, the for or as construct iterates from the value supplied by *form1* to the value supplied by *form2* in increments or decrements denoted by *form3*. Each expression is evaluated only once and must evaluate to a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . The variable *var* is bound to the value of *form1* in the first iteration and is *stepped* <sub>1</sub> by the value of *form3* in each succeeding iteration, or by 1 if *form3* is not provided. The following *loop keywords* serve as valid prepositions within this syntax. At least one of the prepositions must be used; and at most one from each line may be used in a single subclause. 
 
 
 
@@ -26,7 +26,7 @@ The prepositional phrases in each subclause may appear in any order. For example
 
 
 
-→ (1 3 5 7 9) 
+*→* (1 3 5 7 9) 
 
 
 
@@ -34,7 +34,7 @@ The prepositional phrases in each subclause may appear in any order. For example
 
 
 
-→ (2 4 6 8 10) 
+*→* (2 4 6 8 10) 
 
 
 
@@ -82,7 +82,7 @@ downto, upto
 
 
 
-The *loop keyword* downto specifies decremental *stepping*; the *loop keyword* upto specifies incremental *stepping*. In both cases, the amount of change on each step is specified by *form3*, and the <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> terminates when the variable *var* passes the value of *form2*. Since there is no default for *form1* in decremental *stepping*<sub>1</sub>, a *form1* value must be supplied (using from or downfrom) when downto is supplied. 
+The *loop keyword* downto specifies decremental *stepping*; the *loop keyword* upto specifies incremental *stepping*. In both cases, the amount of change on each step is specified by *form3*, and the <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> terminates when the variable *var* passes the value of *form2*. Since there is no default for *form1* in decremental *stepping*<sub>1</sub>, a *form1* value must be supplied (using from or downfrom) when downto is supplied. 
 
 
 
@@ -98,7 +98,7 @@ by
 
 
 
-The *loop keyword* by marks the increment or decrement supplied by *form3*. The value of *form3* can be any positive <ClLinks styled={true} term={"number"}><i>number</i></ClLinks> . The default value is 1. 
+The *loop keyword* by marks the increment or decrement supplied by *form3*. The value of *form3* can be any positive <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . The default value is 1. 
 
 
 

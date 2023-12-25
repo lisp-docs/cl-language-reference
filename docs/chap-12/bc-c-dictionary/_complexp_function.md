@@ -1,4 +1,4 @@
-**complexp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**complexp** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"complexp"}><b>complexp</b></ClLinks> *object → generalized-boolean* 
+<DictionaryLink styled={true} term={"complexp"}><b>complexp</b></DictionaryLink> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -26,20 +26,22 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"complex"}><b>complex</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"complex"}><b>complex</b></DictionaryLink>; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
 **Examples:**
 ```lisp
-(complexp 1.2d2) → false 
-(complexp #c(5/3 7.2)) → true 
+
+(complexp 1.2d2) *→ false* 
+(complexp #c(5/3 7.2)) *→ true* 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"complex"}><b>complex</b></ClLinks> (<ClLinks  term={"function"}><i>function</i></ClLinks> and <ClLinks  term={"type"}><i>type</i></ClLinks>), <ClLinks  term={"typep"}><b>typep</b></ClLinks> 
+<DictionaryLink styled={true} term={"complex"}><b>complex</b></DictionaryLink> (<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>), <DictionaryLink styled={true} term={"typep"}><b>typep</b></DictionaryLink> 
 
 
 
@@ -47,7 +49,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-(complexp <ClLinks  term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks  term={"object"}><i>object</i></ClLinks> ’complex) 
+(complexp <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>) *≡* (typep <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> ’complex) 
 
 
 

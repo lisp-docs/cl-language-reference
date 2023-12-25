@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> *protected-form \{cleanup-form\}*\* → \{result\}\* 
+<DictionaryLink styled={true} term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> *protected-form \{cleanup-form\}*\* *→ \{result\}*\* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*protected-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+*protected-form*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-*cleanup-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+*cleanup-form*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the *protected-form*. 
+*results*—the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of the *protected-form*. 
 
 
 
@@ -30,27 +30,29 @@
 
 
 
-<ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> evaluates *protected-form* and guarantees that *cleanup-forms* are executed before <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> exits, whether it terminates normally or is aborted by a control transfer of some kind. <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> is intended to be used to make sure that certain side effects take place after the evaluation of *protected-form*. 
+<DictionaryLink styled={true} term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> evaluates *protected-form* and guarantees that *cleanup-forms* are executed before <DictionaryLink styled={true} term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> exits, whether it terminates normally or is aborted by a control transfer of some kind. <DictionaryLink styled={true} term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> is intended to be used to make sure that certain side effects take place after the evaluation of *protected-form*. 
 
 
 
-If a *non-local exit* occurs during execution of *cleanup-forms*, no special action is taken. The *cleanup-forms* of <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> are not protected by that <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks>. 
+If a *non-local exit* occurs during execution of *cleanup-forms*, no special action is taken. The *cleanup-forms* of <DictionaryLink styled={true} term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> are not protected by that <DictionaryLink styled={true} term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> protects against all attempts to exit from *protected-form*, including <ClLinks  term={"go"}><b>go</b></ClLinks>, <ClLinks  term={"handler-case"}><b>handler-case</b></ClLinks>, <ClLinks  term={"ignore-errors"}><b>ignore-errors</b></ClLinks>, <ClLinks  term={"restart-case"}><b>restart-case</b></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, <ClLinks  term={"throw"}><b>throw</b></ClLinks>, and <ClLinks  term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks>. 
+<DictionaryLink styled={true} term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> protects against all attempts to exit from *protected-form*, including <DictionaryLink styled={true} term={"go"}><b>go</b></DictionaryLink>, <DictionaryLink styled={true} term={"handler-case"}><b>handler-case</b></DictionaryLink>, <DictionaryLink styled={true} term={"ignore-errors"}><b>ignore-errors</b></DictionaryLink>, <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink>, <DictionaryLink styled={true} term={"return-from"}><b>return-from</b></DictionaryLink>, <DictionaryLink styled={true} term={"throw"}><b>throw</b></DictionaryLink>, and <DictionaryLink styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></DictionaryLink>. 
 
 
 
-Undoing of <ClLinks  term={"handler"}><i>handler</i></ClLinks> and *restart bindings* during an exit happens in parallel with the undoing of the bindings of *dynamic variables* and <ClLinks  term={"catch"}><b>catch</b></ClLinks> tags, in the reverse order in which they were established. The effect of this is that *cleanup-form* sees the same <ClLinks  term={"handler"}><i>handler</i></ClLinks> and *restart bindings*, as well as *dynamic variable bindings* and <ClLinks  term={"catch"}><b>catch</b></ClLinks> tags, as were visible when the <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> was entered. 
+Undoing of <GlossaryTerm styled={true} term={"handler"}><i>handler</i></GlossaryTerm> and *restart bindings* during an exit happens in parallel with the undoing of the bindings of *dynamic variables* and <DictionaryLink styled={true} term={"catch"}><b>catch</b></DictionaryLink> tags, in the reverse order in which they were established. The effect of this is that *cleanup-form* sees the same <GlossaryTerm styled={true} term={"handler"}><i>handler</i></GlossaryTerm> and *restart bindings*, as well as *dynamic variable bindings* and <DictionaryLink styled={true} term={"catch"}><b>catch</b></DictionaryLink> tags, as were visible when the <DictionaryLink styled={true} term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> was entered. 
 
 
 
 **Examples:**
 ```lisp
+
 (tagbody 
    (let ((x 3)) 
      Data and Control 
+
 
      **unwind-protect** 
      (unwind-protect 
@@ -62,14 +64,14 @@ When **go** is executed, the call to **print** is executed first, and then the t
 (defun dummy-function (x) 
   (setq state ’running) 
   (unless (numberp x) (throw ’abort ’not-a-number)) 
-  (setq state (1+ x))) → DUMMY-FUNCTION 
-(catch ’abort (dummy-function 1)) → 2 
-state → 2 
-(catch ’abort (dummy-function ’trash)) → NOT-A-NUMBER 
-state → RUNNING 
+  (setq state (1+ x))) *→* DUMMY-FUNCTION 
+(catch ’abort (dummy-function 1)) *→* 2 
+state *→* 2 
+(catch ’abort (dummy-function ’trash)) *→* NOT-A-NUMBER 
+state *→* RUNNING 
 (catch ’abort (unwind-protect (dummy-function ’trash) 
-		(setq state ’aborted))) → NOT-A-NUMBER 
-state → ABORTED 
+		(setq state ’aborted))) *→* NOT-A-NUMBER 
+state *→* ABORTED 
 The following code is not correct: 
 (unwind-protect 
      (progn (incf \*access-count\*) 
@@ -89,6 +91,8 @@ If an exit occurs before completion of **incf**, the **decf** *form* is executed
 (block a 
   (block b 
     (unwind-protect (return-from a 1) 
+
+
 
       **unwind-protect** 
       (return-from b 2)))) 
@@ -129,6 +133,7 @@ If an exit occurs before completion of **incf**, the **decf** *form* is executed
       (print ’xxx)))) 
 Data and Control 
 
+
 ;;; The following returns 4; XXX is not printed. 
 ;;; The (THROW ’FOO ...) has no effect on the scope of the BAR 
 ;;; catch tag or the extent of the (CATCH ’BAR ...) exit. 
@@ -143,9 +148,10 @@ Data and Control
     (declare (special x)) 
     (unwind-protect (return) 
       (print x)))) 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"catch"}><b>catch</b></ClLinks>, <ClLinks  term={"go"}><b>go</b></ClLinks>, <ClLinks  term={"handler-case"}><b>handler-case</b></ClLinks>, <ClLinks  term={"restart-case"}><b>restart-case</b></ClLinks>, <ClLinks  term={"return"}><b>return</b></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, <ClLinks  term={"throw"}><b>throw</b></ClLinks>, Section 3.1 (Evaluation) 
+<DictionaryLink styled={true} term={"catch"}><b>catch</b></DictionaryLink>, <DictionaryLink styled={true} term={"go"}><b>go</b></DictionaryLink>, <DictionaryLink styled={true} term={"handler-case"}><b>handler-case</b></DictionaryLink>, <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink>, <DictionaryLink styled={true} term={"return"}><b>return</b></DictionaryLink>, <DictionaryLink styled={true} term={"return-from"}><b>return-from</b></DictionaryLink>, <DictionaryLink styled={true} term={"throw"}><b>throw</b></DictionaryLink>, Section 3.1 (Evaluation) 

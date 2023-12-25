@@ -1,4 +1,4 @@
-**logbitp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**logbitp** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"logbitp"}><b>logbitp</b></ClLinks> *index integer → generalized-boolean* 
+<DictionaryLink styled={true} term={"logbitp"}><b>logbitp</b></DictionaryLink> *index integer → generalized-boolean* 
 
 
 
@@ -52,18 +52,20 @@ Negative *integers* are treated as if they were in two’s-complement notation.
 
 **Examples:**
 ```lisp
-(logbitp 1 1) → false 
-(logbitp 0 1) → true 
-(logbitp 3 10) → true 
-(logbitp 1000000 -1) → true 
-(logbitp 2 6) → true 
-(logbitp 0 6) → false 
+
+(logbitp 1 1) *→ false* 
+(logbitp 0 1) *→ true* 
+(logbitp 3 10) *→ true* 
+(logbitp 1000000 -1) *→ true* 
+(logbitp 2 6) *→ true* 
+(logbitp 0 6) *→ false* 
+
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *index* is not a non-negative *integer* . Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *integer* is not an *integer* . 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *index* is not a non-negative *integer* . Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *integer* is not an *integer* . 
 
 
 

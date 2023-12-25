@@ -1,4 +1,4 @@
-**software-type, software-version** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**software-type, software-version** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"software-type"}><b>software-type</b></ClLinks> *⟨no arguments⟩ → description* 
+<DictionaryLink styled={true} term={"software-type"}><b>software-type</b></DictionaryLink> *hno argumentsi → description* 
 
 
 
-<ClLinks styled={true} term={"software-version"}><b>software-version</b></ClLinks> *⟨no arguments⟩ → description* 
+<DictionaryLink styled={true} term={"software-version"}><b>software-version</b></DictionaryLink> *hno argumentsi → description* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*description*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*description*—a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -26,18 +26,20 @@
 
 
 
-<ClLinks styled={true} term={"software-type"}><b>software-type</b></ClLinks> returns a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that identifies the generic name of any relevant supporting software, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if no appropriate or relevant result can be produced. 
+<DictionaryLink styled={true} term={"software-type"}><b>software-type</b></DictionaryLink> returns a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> that identifies the generic name of any relevant supporting software, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if no appropriate or relevant result can be produced. 
 
 
 
-<ClLinks styled={true} term={"software-version"}><b>software-version</b></ClLinks> returns a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that identifies the version of any relevant supporting software, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if no appropriate or relevant result can be produced. 
+<DictionaryLink styled={true} term={"software-version"}><b>software-version</b></DictionaryLink> returns a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> that identifies the version of any relevant supporting software, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if no appropriate or relevant result can be produced. 
 
 
 
 **Examples:**
 ```lisp
-(software-type) → "Multics" 
-(software-version) → "1.3x" 
+
+(software-type) *→* "Multics" 
+(software-version) *→* "1.3x" 
+
 ```
 **Affected By:** 
 
@@ -51,7 +53,7 @@ Operating system environment.
 
 
 
-This information should be of use to maintainers of the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
+This information should be of use to maintainers of the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 
@@ -67,7 +69,7 @@ This information should be of use to maintainers of the <ClLinks styled={true} t
 
 
 
-<ClLinks styled={true} term={"user-homedir-pathname"}><b>user-homedir-pathname</b></ClLinks> 
+<DictionaryLink styled={true} term={"user-homedir-pathname"}><b>user-homedir-pathname</b></DictionaryLink> 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> &amp;rest *args → \{result\}*\* 
+<DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> &amp;rest *args → \{result\}*\* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*arg*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*arg*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"method"}><i>method</i></ClLinks> it calls. 
+*results*—the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> it calls. 
 
 
 
@@ -26,35 +26,31 @@
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> can be used within the body <ClLinks  term={"form"}><i>forms</i></ClLinks> (but not the *lambda list*) of a <ClLinks  term={"method"}><i>method</i></ClLinks> defined by a *method-defining form* to call the *next method*. 
+The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> can be used within the body <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> (but not the *lambda list*) of a <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> defined by a *method-defining form* to call the *next method*. 
 
 
 
-If there is no next <ClLinks  term={"method"}><i>method</i></ClLinks>, the generic function <ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> is called. 
+If there is no next <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm>, the generic function <DictionaryLink styled={true} term={"no-next-method"}><b>no-next-method</b></DictionaryLink> is called. 
 
 
 
-The type of method combination used determines which <ClLinks  term={"method"}><i>methods</i></ClLinks> can invoke <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks>. The standard *method combination* type allows <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> to be used within primary <ClLinks  term={"method"}><i>methods</i></ClLinks> and *around methods*. For generic functions using a type of method combination defined by the short form of <ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks>, <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> can be used in *around methods* only. 
+The type of method combination used determines which <GlossaryTerm styled={true} term={"method"}><i>methods</i></GlossaryTerm> can invoke <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink>. The standard *method combination* type allows <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> to be used within primary <GlossaryTerm styled={true} term={"method"}><i>methods</i></GlossaryTerm> and *around methods*. For generic functions using a type of method combination defined by the short form of <DictionaryLink styled={true} term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink>, <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> can be used in *around methods* only. 
 
 
 
-When <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is called with no arguments, it passes the current <ClLinks  term={"method"}><i>method</i></ClLinks>’s original arguments to the next <ClLinks  term={"method"}><i>method</i></ClLinks>. Neither argument defaulting, nor using <ClLinks  term={"setq"}><b>setq</b></ClLinks>, nor rebinding variables with the same <ClLinks  term={"name"}><i>names</i></ClLinks> as parameters of the <ClLinks  term={"method"}><i>method</i></ClLinks> affects the values <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> passes to the <ClLinks  term={"method"}><i>method</i></ClLinks> it calls. 
+When <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is called with no arguments, it passes the current <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm>’s original arguments to the next <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm>. Neither argument defaulting, nor using <DictionaryLink styled={true} term={"setq"}><b>setq</b></DictionaryLink>, nor rebinding variables with the same <GlossaryTerm styled={true} term={"name"}><i>names</i></GlossaryTerm> as parameters of the <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> affects the values <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> passes to the <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> it calls. 
 
 
 
-When <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is called with arguments, the *next method* is called with those arguments. 
+When <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is called with arguments, the *next method* is called with those arguments. 
 
 
 
-If <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is called with arguments but omits optional arguments, the *next method* called defaults those arguments. 
+If <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is called with arguments but omits optional arguments, the *next method* called defaults those arguments. 
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> returns any <ClLinks  term={"value"}><i>values</i></ClLinks> that are returned by the *next method*. 
-
-
-
- 
+The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> returns any <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> that are returned by the *next method*. 
 
 
 
@@ -62,11 +58,15 @@ The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"call-
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> has *lexical scope* and *indefinite extent* and can only be used within the body of a <ClLinks  term={"method"}><i>method</i></ClLinks> defined by a *method-defining form*. 
+ 
 
 
 
-Whether or not <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> in the *global environment* is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>; however, the restrictions on redefinition and *shadowing* of <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> are the same as for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> in the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks> which are <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> in the *global environment*. The consequences of attempting to use <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> outside of a *method-defining form* are undefined. 
+The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> has *lexical scope* and *indefinite extent* and can only be used within the body of a <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> defined by a *method-defining form*. 
+
+
+
+Whether or not <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is <GlossaryTerm styled={true} term={"fbound"}><i>fbound</i></GlossaryTerm> in the *global environment* is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>; however, the restrictions on redefinition and *shadowing* of <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> are the same as for <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> in the COMMON-LISP <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> which are <GlossaryTerm styled={true} term={"fbound"}><i>fbound</i></GlossaryTerm> in the *global environment*. The consequences of attempting to use <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> outside of a *method-defining form* are undefined. 
 
 
 
@@ -74,7 +74,7 @@ Whether or not <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLi
 
 
 
-<ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks>, <ClLinks  term={"call-method"}><b>call-method</b></ClLinks>, <ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks>. 
+<DictionaryLink styled={true} term={"defmethod"}><b>defmethod</b></DictionaryLink>, <DictionaryLink styled={true} term={"call-method"}><b>call-method</b></DictionaryLink>, <DictionaryLink styled={true} term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink>. 
 
 
 
@@ -82,7 +82,7 @@ Whether or not <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLi
 
 
 
-When providing arguments to <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks>, the following rule must be satisfied or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> should be signaled: the ordered set of *applicable methods* for a changed set of arguments for <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> must be the same as the ordered set of *applicable methods* for the original arguments to the *generic function*. Optimizations of the error checking are possible, but they must not change the semantics of <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks>. 
+When providing arguments to <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink>, the following rule must be satisfied or an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink> should be signaled: the ordered set of *applicable methods* for a changed set of arguments for <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> must be the same as the ordered set of *applicable methods* for the original arguments to the *generic function*. Optimizations of the error checking are possible, but they must not change the semantics of <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink>. 
 
 
 
@@ -90,7 +90,7 @@ When providing arguments to <ClLinks  term={"call-next-method"}><b>call-next-met
 
 
 
-<ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks>, <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks>, <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks>, <ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks>, <ClLinks  term={"call-method"}><b>call-method</b></ClLinks>, Section 7.6.6 (Method Selection and Combination), Section 7.6.6.2 (Standard Method Combination), Section 7.6.6.4 (Built-in Method Combination Types) 
+<DictionaryLink styled={true} term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink>, <DictionaryLink styled={true} term={"defmethod"}><b>defmethod</b></DictionaryLink>, <DictionaryLink styled={true} term={"next-method-p"}><b>next-method-p</b></DictionaryLink>, <DictionaryLink styled={true} term={"no-next-method"}><b>no-next-method</b></DictionaryLink>, <DictionaryLink styled={true} term={"call-method"}><b>call-method</b></DictionaryLink>, Section 7.6.6 (Method Selection and Combination), Section 7.6.6.2 (Standard Method Combination), Section 7.6.6.4 (Built-in Method Combination Types) 
 
 
 

@@ -1,4 +1,4 @@
-**bit, sbit** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**bit, sbit** <GlossaryTerm styled={true} term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -6,25 +6,19 @@
 
 
 
-<ClLinks  term={"bit"}><b>bit</b></ClLinks> *bit-array* &amp;rest *subscripts → bit* 
+<DictionaryLink styled={true} term={"bit"}><b>bit</b></DictionaryLink> *bit-array* &amp;rest *subscripts → bit* 
 
 
 
-<!-- <ClLinks  term={"sbit"}><b>sbit</b></ClLinks> *bit-array* &amp;rest *subscripts → bit*  -->
-**sbit** *bit-array* &amp;rest *subscripts → bit* 
+<DictionaryLink styled={true} term={"sbit"}><b>sbit</b></DictionaryLink> *bit-array* &amp;rest *subscripts → bit* 
 
 
 
-<!-- **(setf (bit** *bit-array* &amp;rest *subscripts***)** *new-bit<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
+**(setf (bit** *bit-array* &amp;rest *subscripts***)** *new-bit<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-<!-- **(setf (sbit** *bit-array* &amp;rest *subscripts***)** *new-bit<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
-**(setf (bit** *bit-array* &amp;rest *subscripts***)** *new-bit***)** 
-
-
-
-**(setf (sbit** *bit-array* &amp;rest *subscripts***)** *new-bit***)** 
+**(setf (sbit** *bit-array* &amp;rest *subscripts***)** *new-bit<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
@@ -32,15 +26,15 @@
 
 
 
-*bit-array*—for <ClLinks  term={"bit"}><b>bit</b></ClLinks>, a *bit array*; for <ClLinks  term={"sbit"}><b>sbit</b></ClLinks>, a *simple bit array*. 
+*bit-array*—for <DictionaryLink styled={true} term={"bit"}><b>bit</b></DictionaryLink>, a *bit array*; for <DictionaryLink styled={true} term={"sbit"}><b>sbit</b></DictionaryLink>, a *simple bit array*. 
 
 
 
-*subscripts*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *valid array indices* for the *bit-array*. 
+*subscripts*—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of *valid array indices* for the *bit-array*. 
 
 
 
-<ClLinks  term={"bit"}><i>bit</i></ClLinks>—a <ClLinks  term={"bit"}><i>bit</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"bit"}><i>bit</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"bit"}><i>bit</i></GlossaryTerm>. 
 
 
 
@@ -48,11 +42,11 @@
 
 
 
-<ClLinks  term={"bit"}><b>bit</b></ClLinks> and <ClLinks  term={"sbit"}><b>sbit</b></ClLinks> <ClLinks  term={"access"}><i>access</i></ClLinks> the *bit-array element* specified by *subscripts*. 
+<DictionaryLink styled={true} term={"bit"}><b>bit</b></DictionaryLink> and <DictionaryLink styled={true} term={"sbit"}><b>sbit</b></DictionaryLink> <GlossaryTerm styled={true} term={"access"}><i>access</i></GlossaryTerm> the *bit-array element* specified by *subscripts*. 
 
 
 
-These <ClLinks  term={"function"}><i>functions</i></ClLinks> ignore the *fill pointer* when *accessing elements*. 
+These <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> ignore the *fill pointer* when *accessing elements*. 
 
 
 
@@ -62,20 +56,22 @@ These <ClLinks  term={"function"}><i>functions</i></ClLinks> ignore the *fill po
 (bit (setq ba (make-array 8 
 :element-type ’bit 
 :initial-element 1)) 
-\3) → 1 
-(setf (bit ba 3) 0) → 0 
-(bit ba 3) → 0 
-(sbit ba 5) → 1 
-(setf (sbit ba 5) 1) → 1 
+\3) *→* 1 
+(setf (bit ba 3) 0) *→* 0 
+(bit ba 3) *→* 0 
+(sbit ba 5) *→* 1 
+(setf (sbit ba 5) 1) *→* 1 
+
  
  
-(sbit ba 5) → 1 
+(sbit ba 5) *→* 1 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"aref"}><b>aref</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
+<DictionaryLink styled={true} term={"aref"}><b>aref</b></DictionaryLink>, Section 3.2.1 (Compiler Terminology) 
 
 
 
@@ -83,11 +79,11 @@ These <ClLinks  term={"function"}><i>functions</i></ClLinks> ignore the *fill po
 
 
 
-<ClLinks  term={"bit"}><b>bit</b></ClLinks> and <ClLinks  term={"sbit"}><b>sbit</b></ClLinks> are like <ClLinks  term={"aref"}><b>aref</b></ClLinks> except that they require <ClLinks  term={"array"}><i>arrays</i></ClLinks> to be a *bit array* and a *simple bit array*, respectively. 
+<DictionaryLink styled={true} term={"bit"}><b>bit</b></DictionaryLink> and <DictionaryLink styled={true} term={"sbit"}><b>sbit</b></DictionaryLink> are like <DictionaryLink styled={true} term={"aref"}><b>aref</b></DictionaryLink> except that they require <GlossaryTerm styled={true} term={"array"}><i>arrays</i></GlossaryTerm> to be a *bit array* and a *simple bit array*, respectively. 
 
 
 
-<ClLinks  term={"bit"}><b>bit</b></ClLinks> and <ClLinks  term={"sbit"}><b>sbit</b></ClLinks>, unlike <ClLinks  term={"char"}><b>char</b></ClLinks> and <ClLinks  term={"schar"}><b>schar</b></ClLinks>, allow the first argument to be an <ClLinks  term={"array"}><i>array</i></ClLinks> of any <ClLinks  term={"rank"}><i>rank</i></ClLinks>. 
+<DictionaryLink styled={true} term={"bit"}><b>bit</b></DictionaryLink> and <DictionaryLink styled={true} term={"sbit"}><b>sbit</b></DictionaryLink>, unlike <DictionaryLink styled={true} term={"char"}><b>char</b></DictionaryLink> and <DictionaryLink styled={true} term={"schar"}><b>schar</b></DictionaryLink>, allow the first argument to be an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> of any <GlossaryTerm styled={true} term={"rank"}><i>rank</i></GlossaryTerm>. 
 
 
 
@@ -151,11 +147,11 @@ These <ClLinks  term={"function"}><i>functions</i></ClLinks> ignore the *fill po
 
 
 
-*Opt-arg*—a *bit array*, or <ClLinks  term={"t"}><b>t</b></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*Opt-arg*—a *bit array*, or <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. The default is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-*Bit-array*, *bit-array1*, *bit-array2*, and *opt-arg* (if an <ClLinks  term={"array"}><i>array</i></ClLinks>) must all be of the same <ClLinks  term={"rank"}><i>rank</i></ClLinks> and <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>. 
+*Bit-array*, *bit-array1*, *bit-array2*, and *opt-arg* (if an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>) must all be of the same <GlossaryTerm styled={true} term={"rank"}><i>rank</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"dimension"}><i>dimensions</i></GlossaryTerm>. 
 
 
 
@@ -167,7 +163,7 @@ These <ClLinks  term={"function"}><i>functions</i></ClLinks> ignore the *fill po
 
 
 
-These functions perform bit-wise logical operations on *bit-array1* and *bit-array2* and return an <ClLinks  term={"array"}><i>array</i></ClLinks> of matching <ClLinks  term={"rank"}><i>rank</i></ClLinks> and <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>, such that any given bit of the result is produced by operating on corresponding bits from each of the arguments. 
+These functions perform bit-wise logical operations on *bit-array1* and *bit-array2* and return an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> of matching <GlossaryTerm styled={true} term={"rank"}><i>rank</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"dimension"}><i>dimensions</i></GlossaryTerm>, such that any given bit of the result is produced by operating on corresponding bits from each of the arguments. 
 
 
 
@@ -183,15 +179,15 @@ These functions perform bit-wise logical operations on *bit-array1* and *bit-arr
 
 
 
-In the case of **bit-not**, an <ClLinks  term={"array"}><i>array</i></ClLinks> of <ClLinks  term={"rank"}><i>rank</i></ClLinks> and <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> matching *bit-array* is returned that contains a copy of *bit-array* with all the bits inverted. 
+In the case of **bit-not**, an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"rank"}><i>rank</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"dimension"}><i>dimensions</i></GlossaryTerm> matching *bit-array* is returned that contains a copy of *bit-array* with all the bits inverted. 
 
 
 
-If *opt-arg* is of type (array bit) the contents of the result are destructively placed into *opt-arg*. If *opt-arg* is the symbol <ClLinks  term={"t"}><b>t</b></ClLinks>, *bit-array* or *bit-array1* is replaced with the result; if *opt-arg* is <ClLinks  term={"nil"}><b>nil</b></ClLinks> or omitted, a new <ClLinks  term={"array"}><i>array</i></ClLinks> is created to contain the result. 
+If *opt-arg* is of type (array bit) the contents of the result are destructively placed into *opt-arg*. If *opt-arg* is the symbol <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>, *bit-array* or *bit-array1* is replaced with the result; if *opt-arg* is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> or omitted, a new <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> is created to contain the result. 
 
 
 
-Figure 15–4 indicates the logical operation performed by each of the <ClLinks  term={"function"}><i>functions</i></ClLinks>. 
+Figure 15–4 indicates the logical operation performed by each of the <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm>. 
 
 
 
@@ -211,24 +207,26 @@ Figure 15–4 indicates the logical operation performed by each of the <ClLinks 
 
 **Examples:**
 ```lisp
-(bit-and (setq ba #\*11101010) #\*01101011) → #\*01101010 
-(bit-and #\*1100 #\*1010) → #\*1000 
-(bit-andc1 #\*1100 #\*1010) → #\*0010 
-(setq rba (bit-andc2 ba #\*00110011 t)) → #\*11001000 
-(eq rba ba) → true 
-(bit-not (setq ba #\*11101010)) → #\*00010101 
+
+(bit-and (setq ba #\*11101010) #\*01101011) *→* #\*01101010 
+(bit-and #\*1100 #\*1010) *→* #\*1000 
+(bit-andc1 #\*1100 #\*1010) *→* #\*0010 
+(setq rba (bit-andc2 ba #\*00110011 t)) *→* #\*11001000 
+(eq rba ba) *→ true* 
+(bit-not (setq ba #\*11101010)) *→* #\*00010101 
 (setq rba (bit-not ba 
 		   (setq tba (make-array 8 
 					 :element-type ’bit)))) 
-→ #\*00010101 
-(equal rba tba) → true 
-(bit-xor #\*1100 #\*1010) → #\*0110 
+*→* #\*00010101 
+(equal rba tba) *→ true* 
+(bit-xor #\*1100 #\*1010) *→* #\*0110 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"lognot"}><b>lognot</b></ClLinks>, <ClLinks  term={"logand"}><b>logand</b></ClLinks> 
+<DictionaryLink styled={true} term={"lognot"}><b>lognot</b></DictionaryLink>, <DictionaryLink styled={true} term={"logand"}><b>logand</b></DictionaryLink> 
 
 
 

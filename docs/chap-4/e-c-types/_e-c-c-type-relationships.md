@@ -2,27 +2,23 @@
 
 
 
-*•* The <ClLinks  term={"type"}><i>types</i></ClLinks> <ClLinks  term={"cons"}><b>cons</b></ClLinks>, <ClLinks  term={"symbol"}><b>symbol</b></ClLinks>, <ClLinks  term={"array"}><b>array</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"character"}><b>character</b></ClLinks>, <ClLinks  term={"hash-table"}><b>hash-table</b></ClLinks>, <ClLinks  term={"function"}><b>function</b></ClLinks>, <ClLinks  term={"readtable"}><b>readtable</b></ClLinks>, <ClLinks  term={"package"}><b>package</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"stream"}><b>stream</b></ClLinks>, <ClLinks  term={"random-state"}><b>random-state</b></ClLinks>, <ClLinks  term={"condition"}><b>condition</b></ClLinks>, <ClLinks  term={"restart"}><b>restart</b></ClLinks>, and any single other <ClLinks  term={"type"}><i>type</i></ClLinks> created by <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks>, <ClLinks  term={"define-condition"}><b>define-condition</b></ClLinks>, or <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> are *pairwise disjoint*, except for type relations explicitly established by specifying *superclasses* in <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> or <ClLinks  term={"define-condition"}><b>define-condition</b></ClLinks> or the :include option of **destruct**. 
+*•* The <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> <DictionaryLink styled={true} term={"cons"}><b>cons</b></DictionaryLink>, <DictionaryLink styled={true} term={"symbol"}><b>symbol</b></DictionaryLink>, <DictionaryLink styled={true} term={"array"}><b>array</b></DictionaryLink>, <DictionaryLink styled={true} term={"number"}><b>number</b></DictionaryLink>, <DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink>, <DictionaryLink styled={true} term={"hash-table"}><b>hash-table</b></DictionaryLink>, <DictionaryLink styled={true} term={"function"}><b>function</b></DictionaryLink>, <DictionaryLink styled={true} term={"readtable"}><b>readtable</b></DictionaryLink>, <DictionaryLink styled={true} term={"package"}><b>package</b></DictionaryLink>, <DictionaryLink styled={true} term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink styled={true} term={"stream"}><b>stream</b></DictionaryLink>, <DictionaryLink styled={true} term={"random-state"}><b>random-state</b></DictionaryLink>, <DictionaryLink styled={true} term={"condition"}><b>condition</b></DictionaryLink>, <DictionaryLink styled={true} term={"restart"}><b>restart</b></DictionaryLink>, and any single other <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> created by <DictionaryLink styled={true} term={"defstruct"}><b>defstruct</b></DictionaryLink>, <DictionaryLink styled={true} term={"define-condition"}><b>define-condition</b></DictionaryLink>, or <DictionaryLink styled={true} term={"defclass"}><b>defclass</b></DictionaryLink> are *pairwise disjoint*, except for type relations explicitly established by specifying *superclasses* in <DictionaryLink styled={true} term={"defclass"}><b>defclass</b></DictionaryLink> or <DictionaryLink styled={true} term={"define-condition"}><b>define-condition</b></DictionaryLink> or the :include option of **destruct**. 
 
 
 
-*•* Any two <ClLinks  term={"type"}><i>types</i></ClLinks> created by <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks> are <ClLinks  term={"disjoint"}><i>disjoint</i></ClLinks> unless one is a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of the other by virtue of the <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks> :include option. 
+*•* Any two <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> created by <DictionaryLink styled={true} term={"defstruct"}><b>defstruct</b></DictionaryLink> are <GlossaryTerm styled={true} term={"disjoint"}><i>disjoint</i></GlossaryTerm> unless one is a <GlossaryTerm styled={true} term={"supertype"}><i>supertype</i></GlossaryTerm> of the other by virtue of the <DictionaryLink styled={true} term={"defstruct"}><b>defstruct</b></DictionaryLink> :include option. 
 
 
 
-*•* Any two *distinct classes* created by <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> or <ClLinks  term={"define-condition"}><b>define-condition</b></ClLinks> are <ClLinks  term={"disjoint"}><i>disjoint</i></ClLinks> unless they have a common <ClLinks  term={"subclass"}><i>subclass</i></ClLinks> or one <ClLinks  term={"class"}><i>class</i></ClLinks> is a <ClLinks  term={"subclass"}><i>subclass</i></ClLinks> of the other. 
+*•* Any two *distinct classes* created by <DictionaryLink styled={true} term={"defclass"}><b>defclass</b></DictionaryLink> or <DictionaryLink styled={true} term={"define-condition"}><b>define-condition</b></DictionaryLink> are <GlossaryTerm styled={true} term={"disjoint"}><i>disjoint</i></GlossaryTerm> unless they have a common <GlossaryTerm styled={true} term={"subclass"}><i>subclass</i></GlossaryTerm> or one <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"subclass"}><i>subclass</i></GlossaryTerm> of the other. 
 
 
 
-*•* An implementation may be extended to add other <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> relationships between the specified <ClLinks  term={"type"}><i>types</i></ClLinks>, as long as they do not violate the type relationships and disjointness requirements specified here. An implementation may define additional <ClLinks  term={"type"}><i>types</i></ClLinks> that are <ClLinks  term={"subtype"}><i>subtypes</i></ClLinks> or <ClLinks  term={"supertype"}><i>supertypes</i></ClLinks> of any specified <ClLinks  term={"type"}><i>types</i></ClLinks>, as long as each additional <ClLinks  term={"type"}><i>type</i></ClLinks> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of 
+*•* An implementation may be extended to add other <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> relationships between the specified <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm>, as long as they do not violate the type relationships and disjointness requirements specified here. An implementation may define additional <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> that are <GlossaryTerm styled={true} term={"subtype"}><i>subtypes</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"supertype"}><i>supertypes</i></GlossaryTerm> of any specified <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm>, as long as each additional <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> of 
 
 
 
-<ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks> and a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"nil"}><b>nil</b></ClLinks> and the disjointness requirements are not violated. 
-
-
-
-
+<GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> and a <GlossaryTerm styled={true} term={"supertype"}><i>supertype</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> and the disjointness requirements are not violated. 
 
 
 
@@ -30,7 +26,11 @@
 
 
 
-At the discretion of the implementation, either <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks> or <ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks> might appear in any class precedence list for a *system class* that does not already specify either <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks> or <ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks>. If it does, it must precede the <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks> and follow all other *standardized classes*. 
+
+
+
+
+At the discretion of the implementation, either <DictionaryLink styled={true} term={"standard-object"}><b>standard-object</b></DictionaryLink> or <DictionaryLink styled={true} term={"structure-object"}><b>structure-object</b></DictionaryLink> might appear in any class precedence list for a *system class* that does not already specify either <DictionaryLink styled={true} term={"standard-object"}><b>standard-object</b></DictionaryLink> or <DictionaryLink styled={true} term={"structure-object"}><b>structure-object</b></DictionaryLink>. If it does, it must precede the <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> and follow all other *standardized classes*. 
 
 
 

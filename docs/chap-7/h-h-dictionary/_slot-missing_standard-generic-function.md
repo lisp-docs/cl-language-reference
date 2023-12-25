@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> *class object slot-name operation* &amp;optional *new-value → \{result\}*\* 
+<DictionaryLink styled={true} term={"slot-missing"}><b>slot-missing</b></DictionaryLink> *class object slot-name operation* &amp;optional *new-value → \{result\}*\* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> (<ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks>) *object slot-name* 
+<DictionaryLink styled={true} term={"slot-missing"}><b>slot-missing</b></DictionaryLink> (<GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>) *object slot-name* 
 
 
 
@@ -26,23 +26,23 @@
 
 
 
-<ClLinks  term={"class"}><i>class</i></ClLinks>—the <ClLinks  term={"class"}><i>class</i></ClLinks> of <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm>—the <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-*slot-name*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> (the <ClLinks  term={"name"}><i>name</i></ClLinks> of a would-be <ClLinks  term={"slot"}><i>slot</i></ClLinks>). 
+*slot-name*—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> (the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> of a would-be <GlossaryTerm styled={true} term={"slot"}><i>slot</i></GlossaryTerm>). 
 
 
 
-*operation*—one of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> <ClLinks  term={"setf"}><b>setf</b></ClLinks>, <ClLinks  term={"slot-boundp"}><b>slot-boundp</b></ClLinks>, <ClLinks  term={"slot-makunbound"}><b>slot-makunbound</b></ClLinks>, or <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks>. *new-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*operation*—one of the <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink>, <DictionaryLink styled={true} term={"slot-boundp"}><b>slot-boundp</b></DictionaryLink>, <DictionaryLink styled={true} term={"slot-makunbound"}><b>slot-makunbound</b></DictionaryLink>, or <DictionaryLink styled={true} term={"slot-value"}><b>slot-value</b></DictionaryLink>. *new-value*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-*result*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*result*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -50,35 +50,35 @@
 
 
 
-The generic function <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> is invoked when an attempt is made to <ClLinks  term={"access"}><i>access</i></ClLinks> a <ClLinks  term={"slot"}><i>slot</i></ClLinks> in an <ClLinks  term={"object"}><i>object</i></ClLinks> whose <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks> is <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks> and the <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the name *slot-name* is not a <ClLinks  term={"name"}><i>name</i></ClLinks> of a <ClLinks  term={"slot"}><i>slot</i></ClLinks> in that <ClLinks  term={"class"}><i>class</i></ClLinks>. The default <ClLinks  term={"method"}><i>method</i></ClLinks> signals an error. 
+The generic function <DictionaryLink styled={true} term={"slot-missing"}><b>slot-missing</b></DictionaryLink> is invoked when an attempt is made to <GlossaryTerm styled={true} term={"access"}><i>access</i></GlossaryTerm> a <GlossaryTerm styled={true} term={"slot"}><i>slot</i></GlossaryTerm> in an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> whose <GlossaryTerm styled={true} term={"metaclass"}><i>metaclass</i></GlossaryTerm> is <DictionaryLink styled={true} term={"standard-class"}><b>standard-class</b></DictionaryLink> and the <GlossaryTerm styled={true} term={"slot"}><i>slot</i></GlossaryTerm> of the name *slot-name* is not a <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> of a <GlossaryTerm styled={true} term={"slot"}><i>slot</i></GlossaryTerm> in that <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm>. The default <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> signals an error. 
 
 
 
-The generic function <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> is not intended to be called by programmers. Programmers may write <ClLinks  term={"method"}><i>methods</i></ClLinks> for it. 
+The generic function <DictionaryLink styled={true} term={"slot-missing"}><b>slot-missing</b></DictionaryLink> is not intended to be called by programmers. Programmers may write <GlossaryTerm styled={true} term={"method"}><i>methods</i></GlossaryTerm> for it. 
 
 
 
-The generic function <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> may be called during evaluation of <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks>, (setf slot-value), <ClLinks  term={"slot-boundp"}><b>slot-boundp</b></ClLinks>, and <ClLinks  term={"slot-makunbound"}><b>slot-makunbound</b></ClLinks>. For each of these operations the corresponding <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> for the *operation* argument is <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks>, <ClLinks  term={"setf"}><b>setf</b></ClLinks>, <ClLinks  term={"slot-boundp"}><b>slot-boundp</b></ClLinks>, and <ClLinks  term={"slot-makunbound"}><b>slot-makunbound</b></ClLinks> respectively. 
+The generic function <DictionaryLink styled={true} term={"slot-missing"}><b>slot-missing</b></DictionaryLink> may be called during evaluation of <DictionaryLink styled={true} term={"slot-value"}><b>slot-value</b></DictionaryLink>, (setf slot-value), <DictionaryLink styled={true} term={"slot-boundp"}><b>slot-boundp</b></DictionaryLink>, and <DictionaryLink styled={true} term={"slot-makunbound"}><b>slot-makunbound</b></DictionaryLink>. For each of these operations the corresponding <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> for the *operation* argument is <DictionaryLink styled={true} term={"slot-value"}><b>slot-value</b></DictionaryLink>, <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink>, <DictionaryLink styled={true} term={"slot-boundp"}><b>slot-boundp</b></DictionaryLink>, and <DictionaryLink styled={true} term={"slot-makunbound"}><b>slot-makunbound</b></DictionaryLink> respectively. 
 
 
 
-The optional *new-value* argument to <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> is used when the operation is attempting to set the value of the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
+The optional *new-value* argument to <DictionaryLink styled={true} term={"slot-missing"}><b>slot-missing</b></DictionaryLink> is used when the operation is attempting to set the value of the <GlossaryTerm styled={true} term={"slot"}><i>slot</i></GlossaryTerm>. 
 
 
 
-If <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> returns, its values will be treated as follows: 
+If <DictionaryLink styled={true} term={"slot-missing"}><b>slot-missing</b></DictionaryLink> returns, its values will be treated as follows: 
 
 
 
-*•* If the *operation* is <ClLinks  term={"setf"}><b>setf</b></ClLinks> or <ClLinks  term={"slot-makunbound"}><b>slot-makunbound</b></ClLinks>, any <ClLinks  term={"value"}><i>values</i></ClLinks> will be ignored by the caller. 
+*•* If the *operation* is <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> or <DictionaryLink styled={true} term={"slot-makunbound"}><b>slot-makunbound</b></DictionaryLink>, any <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> will be ignored by the caller. 
 
 
 
-*•* If the *operation* is <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks>, only the *primary value* will be used by the caller, and all other values will be ignored. 
+*•* If the *operation* is <DictionaryLink styled={true} term={"slot-value"}><b>slot-value</b></DictionaryLink>, only the *primary value* will be used by the caller, and all other values will be ignored. 
 
 
 
-*•* If the *operation* is <ClLinks  term={"slot-boundp"}><b>slot-boundp</b></ClLinks>, any *boolean equivalent* of the *primary value* of the <ClLinks  term={"method"}><i>method</i></ClLinks> might be is used, and all other values will be ignored. 
+*•* If the *operation* is <DictionaryLink styled={true} term={"slot-boundp"}><b>slot-boundp</b></DictionaryLink>, any *boolean equivalent* of the *primary value* of the <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> might be is used, and all other values will be ignored. 
 
 
 
@@ -98,7 +98,7 @@ If <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> returns, its va
 
 
 
-The default <ClLinks  term={"method"}><i>method</i></ClLinks> on <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks>. 
+The default <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> on <DictionaryLink styled={true} term={"slot-missing"}><b>slot-missing</b></DictionaryLink> signals an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink>. 
 
 
 
@@ -106,7 +106,7 @@ The default <ClLinks  term={"method"}><i>method</i></ClLinks> on <ClLinks  term=
 
 
 
-<ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks  term={"slot-exists-p"}><b>slot-exists-p</b></ClLinks>, <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks> 
+<DictionaryLink styled={true} term={"defclass"}><b>defclass</b></DictionaryLink>, <DictionaryLink styled={true} term={"slot-exists-p"}><b>slot-exists-p</b></DictionaryLink>, <DictionaryLink styled={true} term={"slot-value"}><b>slot-value</b></DictionaryLink> 
 
 
 
@@ -114,7 +114,7 @@ The default <ClLinks  term={"method"}><i>method</i></ClLinks> on <ClLinks  term=
 
 
 
-The set of arguments (including the <ClLinks  term={"class"}><i>class</i></ClLinks> of the instance) facilitates defining methods on the metaclass for <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks>. 
+The set of arguments (including the <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> of the instance) facilitates defining methods on the metaclass for <DictionaryLink styled={true} term={"slot-missing"}><b>slot-missing</b></DictionaryLink>. 
 
 
 

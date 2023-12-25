@@ -1,4 +1,4 @@
-**byte, byte-size, byte-position** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**byte, byte-size, byte-position** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,15 +6,15 @@
 
 
 
-<ClLinks  term={"byte"}><b>byte</b></ClLinks> *size position → bytespec* 
+<DictionaryLink styled={true} term={"byte"}><b>byte</b></DictionaryLink> *size position → bytespec* 
 
 
 
-<ClLinks  term={"byte-size"}><b>byte-size</b></ClLinks> *bytespec → size* 
+<DictionaryLink styled={true} term={"byte-size"}><b>byte-size</b></DictionaryLink> *bytespec → size* 
 
 
 
-<ClLinks  term={"byte-position"}><b>byte-position</b></ClLinks> *bytespec → position* 
+<DictionaryLink styled={true} term={"byte-position"}><b>byte-position</b></DictionaryLink> *bytespec → position* 
 
 
 
@@ -38,25 +38,27 @@
 
 
 
-<ClLinks  term={"byte-size"}><b>byte-size</b></ClLinks> returns the number of bits specified by *bytespec*. 
+<DictionaryLink styled={true} term={"byte-size"}><b>byte-size</b></DictionaryLink> returns the number of bits specified by *bytespec*. 
 
 
 
-<ClLinks  term={"byte-position"}><b>byte-position</b></ClLinks> returns the position specified by *bytespec*. 
+<DictionaryLink styled={true} term={"byte-position"}><b>byte-position</b></DictionaryLink> returns the position specified by *bytespec*. 
 
 
 
 **Examples:**
 ```lisp
-(setq b (byte 100 200)) → #<BYTE-SPECIFIER size 100 position 200> 
-(byte-size b) → 100 
-(byte-position b) → 200 
+
+(setq b (byte 100 200)) *→* #<BYTE-SPECIFIER size 100 position 200> 
+(byte-size b) *→* 100 
+(byte-position b) *→* 200 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"ldb"}><b>ldb</b></ClLinks>, <ClLinks  term={"dpb"}><b>dpb</b></ClLinks> 
+<DictionaryLink styled={true} term={"ldb"}><b>ldb</b></DictionaryLink>, <DictionaryLink styled={true} term={"dpb"}><b>dpb</b></DictionaryLink> 
 
 
 
@@ -84,15 +86,15 @@
 
 
 
-A <ClLinks  term={"byte"}><i>byte</i></ClLinks> of *size* of 0 is permissible; it refers to a <ClLinks  term={"byte"}><i>byte</i></ClLinks> of width zero. For example, 
+A <GlossaryTerm styled={true} term={"byte"}><i>byte</i></GlossaryTerm> of *size* of 0 is permissible; it refers to a <GlossaryTerm styled={true} term={"byte"}><i>byte</i></GlossaryTerm> of width zero. For example, 
 
 
 
-(ldb (byte 0 3) #o7777) → 0 
+(ldb (byte 0 3) #o7777) *→* 0 
 
 
 
-(dpb #o7777 (byte 0 3) 0) → 0 
+(dpb #o7777 (byte 0 3) 0) *→* 0 
 
 
 

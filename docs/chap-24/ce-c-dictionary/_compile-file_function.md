@@ -1,4 +1,4 @@
-**compile-file** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**compile-file** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> *input-file* &amp;key *output-file verbose* 
+<DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink> *input-file* &amp;key *output-file verbose* 
 
 
 
@@ -22,19 +22,19 @@
 
 
 
-*input-file*—a *pathname designator* . (Default fillers for unspecified components are taken from <ClLinks  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></ClLinks>.) 
+*input-file*—a *pathname designator* . (Default fillers for unspecified components are taken from <DictionaryLink styled={true} term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></DictionaryLink>.) 
 
 
 
-*output-file*—a *pathname designator* . The default is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
+*output-file*—a *pathname designator* . The default is <GlossaryTerm styled={true} term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>. 
 
 
 
-*verbose*—a *generalized boolean*. The default is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"compile-verbose"}><b>\*compile-verbose\*</b></ClLinks>. 
+*verbose*—a *generalized boolean*. The default is the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"compile-verbose"}><b>\*compile-verbose\*</b></DictionaryLink>. 
 
 
 
-*print*—a *generalized boolean*. The default is the <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*compile-print\***. 
+*print*—a *generalized boolean*. The default is the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of **\*compile-print\***. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-*output-truename*—a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> (the <ClLinks  term={"truename"}><b>truename</b></ClLinks> of the output <ClLinks  term={"file"}><i>file</i></ClLinks>), or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*output-truename*—a <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> (the <DictionaryLink styled={true} term={"truename"}><b>truename</b></DictionaryLink> of the output <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm>), or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -58,31 +58,27 @@
 
 
 
-<ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> transforms the contents of the file specified by *input-file* into <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> binary data which are placed in the file specified by *output-file*. 
+<DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink> transforms the contents of the file specified by *input-file* into <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> binary data which are placed in the file specified by *output-file*. 
 
 
 
-The <ClLinks  term={"file"}><i>file</i></ClLinks> to which *input-file* refers should be a *source file*. *output-file* can be used to specify an output <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>; the actual <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> of the *compiled file* to which *compiled code* will be output is computed as if by calling <ClLinks  term={"compile-file-pathname"}><b>compile-file-pathname</b></ClLinks>. 
+The <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm> to which *input-file* refers should be a *source file*. *output-file* can be used to specify an output <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm>; the actual <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> of the *compiled file* to which *compiled code* will be output is computed as if by calling <DictionaryLink styled={true} term={"compile-file-pathname"}><b>compile-file-pathname</b></DictionaryLink>. 
 
 
 
-If *input-file* or *output-file* is a *logical pathname*, it is translated into a *physical pathname* as if by calling <ClLinks  term={"translate-logical-pathname"}><b>translate-logical-pathname</b></ClLinks>. 
+If *input-file* or *output-file* is a *logical pathname*, it is translated into a *physical pathname* as if by calling <DictionaryLink styled={true} term={"translate-logical-pathname"}><b>translate-logical-pathname</b></DictionaryLink>. 
 
 
 
-If *verbose* is <ClLinks  term={"true"}><i>true</i></ClLinks>, <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> prints a message in the form of a comment (*i.e.*, with a leading <ClLinks  term={"semicolon"}><i>semicolon</i></ClLinks>) to *standard output* indicating what <ClLinks  term={"file"}><i>file</i></ClLinks> is being *compiled* and other useful information. If *verbose* is <ClLinks  term={"false"}><i>false</i></ClLinks>, <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> does not print this information. 
+If *verbose* is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, <DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink> prints a message in the form of a comment (*i.e.*, with a leading <GlossaryTerm styled={true} term={"semicolon"}><i>semicolon</i></GlossaryTerm>) to *standard output* indicating what <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm> is being *compiled* and other useful information. If *verbose* is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>, <DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink> does not print this information. 
 
 
 
-If *print* is <ClLinks  term={"true"}><i>true</i></ClLinks>, information about *top level forms* in the file being compiled is printed to *standard output*. Exactly what is printed is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but nevertheless some information is printed. If *print* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, no information is printed. 
+If *print* is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, information about *top level forms* in the file being compiled is printed to *standard output*. Exactly what is printed is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>, but nevertheless some information is printed. If *print* is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, no information is printed. 
 
 
 
-The *external-format* specifies the *external file format* to be used when opening the <ClLinks  term={"file"}><i>file</i></ClLinks>; see the System 
-
-
-
- 
+The *external-format* specifies the *external file format* to be used when opening the <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm>; see the System 
 
 
 
@@ -90,47 +86,51 @@ The *external-format* specifies the *external file format* to be used when openi
 
 
 
-<ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> 
+ 
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"open"}><b>open</b></ClLinks>. <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> and <ClLinks  term={"load"}><b>load</b></ClLinks> must cooperate in such a way that the resulting *compiled file* can be *loaded* without specifying an *external file format* anew; see the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"load"}><b>load</b></ClLinks>. 
+<DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink> 
 
 
 
-<ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> binds <ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks> and <ClLinks  term={"package"}><b>\*package\*</b></ClLinks> to the values they held before processing the file. 
+<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"open"}><b>open</b></DictionaryLink>. <DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink> and <DictionaryLink styled={true} term={"load"}><b>load</b></DictionaryLink> must cooperate in such a way that the resulting *compiled file* can be *loaded* without specifying an *external file format* anew; see the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"load"}><b>load</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"compile-file-truename"}><b>\*compile-file-truename\*</b></ClLinks> is bound by <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> to hold the <ClLinks  term={"truename"}><i>truename</i></ClLinks> of the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> of the file being compiled. 
+<DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink> binds <DictionaryLink styled={true} term={"readtable"}><b>\*readtable\*</b></DictionaryLink> and <DictionaryLink styled={true} term={"package"}><b>\*package\*</b></DictionaryLink> to the values they held before processing the file. 
 
 
 
-<ClLinks  term={"compile-file-pathname"}><b>\*compile-file-pathname\*</b></ClLinks> is bound by <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> to hold a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> denoted by the first argu ment to <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, merged against the defaults; that is, (pathname (merge-pathnames *input-file*)). 
+<DictionaryLink styled={true} term={"compile-file-truename"}><b>\*compile-file-truename\*</b></DictionaryLink> is bound by <DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink> to hold the <GlossaryTerm styled={true} term={"truename"}><i>truename</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> of the file being compiled. 
 
 
 
-The compiled <ClLinks  term={"function"}><i>functions</i></ClLinks> contained in the *compiled file* become available for use when the *compiled file* is *loaded* into Lisp. Any function definition that is processed by the compiler, including #’(lambda ...) forms and local function definitions made by <ClLinks  term={"flet"}><b>flet</b></ClLinks>, <ClLinks  term={"labels"}><b>labels</b></ClLinks> and <ClLinks  term={"defun"}><b>defun</b></ClLinks> forms, result in an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"compiled-function"}><b>compiled-function</b></ClLinks>. 
+<DictionaryLink styled={true} term={"compile-file-pathname"}><b>\*compile-file-pathname\*</b></DictionaryLink> is bound by <DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink> to hold a <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> denoted by the first argu ment to <DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink>, merged against the defaults; that is, (pathname (merge-pathnames *input-file*)). 
 
 
 
-The *primary value* returned by <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, *output-truename*, is the <ClLinks  term={"truename"}><b>truename</b></ClLinks> of the output file, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if the file could not be created. 
+The compiled <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> contained in the *compiled file* become available for use when the *compiled file* is *loaded* into Lisp. Any function definition that is processed by the compiler, including #’(lambda ...) forms and local function definitions made by <DictionaryLink styled={true} term={"flet"}><b>flet</b></DictionaryLink>, <DictionaryLink styled={true} term={"labels"}><b>labels</b></DictionaryLink> and <DictionaryLink styled={true} term={"defun"}><b>defun</b></DictionaryLink> forms, result in an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"compiled-function"}><b>compiled-function</b></DictionaryLink>. 
 
 
 
-The *secondary value*, *warnings-p*, is <ClLinks  term={"false"}><i>false</i></ClLinks> if no <ClLinks  term={"condition"}><i>conditions</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> or <ClLinks  term={"warning"}><b>warning</b></ClLinks> were detected by the compiler, and <ClLinks  term={"true"}><i>true</i></ClLinks> otherwise. 
+The *primary value* returned by <DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink>, *output-truename*, is the <DictionaryLink styled={true} term={"truename"}><b>truename</b></DictionaryLink> of the output file, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if the file could not be created. 
 
 
 
-The *tertiary value*, *failure-p*, is <ClLinks  term={"false"}><i>false</i></ClLinks> if no <ClLinks  term={"condition"}><i>conditions</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> or <ClLinks  term={"warning"}><b>warning</b></ClLinks> (other than <ClLinks  term={"style-warning"}><b>style-warning</b></ClLinks>) were detected by the compiler, and <ClLinks  term={"true"}><i>true</i></ClLinks> otherwise. 
+The *secondary value*, *warnings-p*, is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> if no <GlossaryTerm styled={true} term={"condition"}><i>conditions</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink> or <DictionaryLink styled={true} term={"warning"}><b>warning</b></DictionaryLink> were detected by the compiler, and <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> otherwise. 
 
 
 
-For general information about how <ClLinks  term={"file"}><i>files</i></ClLinks> are processed by the *file compiler* , see Section 3.2.3 (File Compilation). 
+The *tertiary value*, *failure-p*, is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> if no <GlossaryTerm styled={true} term={"condition"}><i>conditions</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink> or <DictionaryLink styled={true} term={"warning"}><b>warning</b></DictionaryLink> (other than <DictionaryLink styled={true} term={"style-warning"}><b>style-warning</b></DictionaryLink>) were detected by the compiler, and <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> otherwise. 
 
 
 
-<ClLinks  term={"program"}><i>Programs</i></ClLinks> to be compiled by the *file compiler* must only contain *externalizable objects*; for details on such <ClLinks  term={"object"}><i>objects</i></ClLinks>, see Section 3.2.4 (Literal Objects in Compiled Files). For information on how to extend the set of *externalizable objects*, see the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> and Section 3.2.4.4 (Additional Constraints on Externalizable Objects). 
+For general information about how <GlossaryTerm styled={true} term={"file"}><i>files</i></GlossaryTerm> are processed by the *file compiler* , see Section 3.2.3 (File Compilation). 
+
+
+
+<GlossaryTerm styled={true} term={"program"}><i>Programs</i></GlossaryTerm> to be compiled by the *file compiler* must only contain *externalizable objects*; for details on such <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm>, see Section 3.2.4 (Literal Objects in Compiled Files). For information on how to extend the set of *externalizable objects*, see the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"make-load-form"}><b>make-load-form</b></DictionaryLink> and Section 3.2.4.4 (Additional Constraints on Externalizable Objects). 
 
 
 
@@ -138,7 +138,7 @@ For general information about how <ClLinks  term={"file"}><i>files</i></ClLinks>
 
 
 
-**\*error-output\***, **\*standard-output\***, <ClLinks  term={"compile-verbose"}><b>\*compile-verbose\*</b></ClLinks>, **\*compile-print\*** 
+**\*error-output\***, **\*standard-output\***, <DictionaryLink styled={true} term={"compile-verbose"}><b>\*compile-verbose\*</b></DictionaryLink>, **\*compile-print\*** 
 
 
 
@@ -154,11 +154,11 @@ For information about errors detected during the compilation process, see Sectio
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> might be signaled if (wild-pathname-p *input-file*) returns true. 
+An error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"file-error"}><b>file-error</b></DictionaryLink> might be signaled if (wild-pathname-p *input-file*) returns true. 
 
 
 
-If either the attempt to open the *source file* for input or the attempt to open the *compiled file* for output fails, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
+If either the attempt to open the *source file* for input or the attempt to open the *compiled file* for output fails, an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -178,7 +178,7 @@ If either the attempt to open the *source file* for input or the attempt to open
 
 
 
-<ClLinks  term={"compile"}><b>compile</b></ClLinks>, <ClLinks  term={"declare"}><b>declare</b></ClLinks>, <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<DictionaryLink styled={true} term={"compile"}><b>compile</b></DictionaryLink>, <DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink>, <DictionaryLink styled={true} term={"eval-when"}><b>eval-when</b></DictionaryLink>, <DictionaryLink styled={true} term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink styled={true} term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 

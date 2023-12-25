@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"serious-condition"}><b>serious-condition</b></ClLinks>, <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink>, <DictionaryLink styled={true} term={"serious-condition"}><b>serious-condition</b></DictionaryLink>, <DictionaryLink styled={true} term={"condition"}><b>condition</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> consists of all <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> that represent <ClLinks styled={true} term={"error"}><i>errors</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink> consists of all <GlossaryTerm styled={true} term={"condition"}><i>conditions</i></GlossaryTerm> that represent <GlossaryTerm styled={true} term={"error"}><i>errors</i></GlossaryTerm>. 
 
 
 

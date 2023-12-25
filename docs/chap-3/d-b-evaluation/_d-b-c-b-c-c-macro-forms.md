@@ -2,11 +2,11 @@
 
 
 
-If the <ClLinks  term={"operator"}><i>operator</i></ClLinks> names a <ClLinks  term={"macro"}><i>macro</i></ClLinks>, its associated *macro function* is applied to the entire <ClLinks  term={"form"}><i>form</i></ClLinks> and the result of that application is used in place of the original <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+If the <GlossaryTerm styled={true} term={"operator"}><i>operator</i></GlossaryTerm> names a <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm>, its associated *macro function* is applied to the entire <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> and the result of that application is used in place of the original <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-Specifically, a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> names a <ClLinks  term={"macro"}><i>macro</i></ClLinks> in a given *lexical environment* if <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks> of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> and that <ClLinks  term={"environment"}><i>environment</i></ClLinks>. The <ClLinks  term={"function"}><i>function</i></ClLinks> returned by <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks> is a <ClLinks  term={"function"}><i>function</i></ClLinks> of two arguments, called the expansion function. The expansion function is invoked by calling the *macroexpand hook* with the expansion function as its first argument, the entire *macro form* as its  
+Specifically, a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> names a <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> in a given *lexical environment* if <DictionaryLink styled={true} term={"macro-function"}><b>macro-function</b></DictionaryLink> is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> and that <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> returned by <DictionaryLink styled={true} term={"macro-function"}><b>macro-function</b></DictionaryLink> is a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of two arguments, called the expansion function. The expansion function is invoked by calling the *macroexpand hook* with the expansion function as its first argument, the entire *macro form* as its  
 
 
 
@@ -14,23 +14,23 @@ Specifically, a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> names a <ClLin
 
 
 
-second argument, and an *environment object* (corresponding to the current *lexical environment*) as its third argument. The *macroexpand hook*, in turn, calls the expansion function with the <ClLinks  term={"form"}><i>form</i></ClLinks> as its first argument and the <ClLinks  term={"environment"}><i>environment</i></ClLinks> as its second argument. The <ClLinks  term={"value"}><i>value</i></ClLinks> of the expansion function, which is passed through by the *macroexpand hook*, is a <ClLinks  term={"form"}><i>form</i></ClLinks>. The returned <ClLinks  term={"form"}><i>form</i></ClLinks> is *evaluated* in place of the original <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+second argument, and an *environment object* (corresponding to the current *lexical environment*) as its third argument. The *macroexpand hook*, in turn, calls the expansion function with the <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> as its first argument and the <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm> as its second argument. The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of the expansion function, which is passed through by the *macroexpand hook*, is a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. The returned <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is *evaluated* in place of the original <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-The consequences are undefined if a *macro function* destructively modifies any part of its <ClLinks  term={"form"}><i>form</i></ClLinks> argument. 
+The consequences are undefined if a *macro function* destructively modifies any part of its <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> argument. 
 
 
 
-A *macro name* is not a *function designator* , and cannot be used as the <ClLinks  term={"function"}><i>function</i></ClLinks> argument to <ClLinks  term={"function"}><i>functions</i></ClLinks> such as <ClLinks  term={"apply"}><b>apply</b></ClLinks>, <ClLinks  term={"funcall"}><b>funcall</b></ClLinks>, or <ClLinks  term={"map"}><b>map</b></ClLinks>. 
+A *macro name* is not a *function designator* , and cannot be used as the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> argument to <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> such as <DictionaryLink styled={true} term={"apply"}><b>apply</b></DictionaryLink>, <DictionaryLink styled={true} term={"funcall"}><b>funcall</b></DictionaryLink>, or <DictionaryLink styled={true} term={"map"}><b>map</b></DictionaryLink>. 
 
 
 
-An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is free to implement a Common Lisp *special operator* as a <ClLinks  term={"macro"}><i>macro</i></ClLinks>. An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is free to implement any *macro operator* as a *special operator* , but only if an equivalent definition of the <ClLinks  term={"macro"}><i>macro</i></ClLinks> is also provided. 
+An <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> is free to implement a Common Lisp *special operator* as a <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm>. An <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> is free to implement any *macro operator* as a *special operator* , but only if an equivalent definition of the <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> is also provided. 
 
 
 
-Figure 3–3 lists some *defined names* that are applicable to <ClLinks  term={"macro"}><i>macros</i></ClLinks>. 
+Figure 3–3 lists some *defined names* that are applicable to <GlossaryTerm styled={true} term={"macro"}><i>macros</i></GlossaryTerm>. 
 
 
 

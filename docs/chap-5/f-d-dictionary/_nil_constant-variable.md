@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -14,19 +14,21 @@
 
 
 
-<ClLinks  term={"nil"}><b>nil</b></ClLinks> represents both <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> (and *generalized boolean*) *false* and the *empty list*. 
+<DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> represents both <GlossaryTerm styled={true} term={"boolean"}><i>boolean</i></GlossaryTerm> (and *generalized boolean*) *false* and the *empty list*. 
 
 
 
 **Examples:**
 ```lisp
-nil → NIL 
+
+nil *→* NIL 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 

@@ -1,4 +1,4 @@
-**atom** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**atom** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"atom"}><b>atom</b></ClLinks> *object → generalized-boolean* 
+<DictionaryLink styled={true} term={"atom"}><b>atom</b></DictionaryLink> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -26,17 +26,20 @@
 
 
 
-Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"atom"}><b>atom</b></ClLinks>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"atom"}><b>atom</b></DictionaryLink>; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
 **Examples:**
 ```lisp
-(atom ’sss) → true 
-(atom (cons 1 2)) → false 
-(atom nil) → true 
-(atom ’()) → true 
-(atom 3) → true 
+
+(atom ’sss) *→ true* 
+(atom (cons 1 2)) *→ false* 
+(atom nil) *→ true* 
+(atom ’()) *→ true* 
+(atom 3) *→ true* 
+
+
 
 
 ```
@@ -44,11 +47,11 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 
 
-(atom <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’atom) *≡* (not (consp <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>)) 
+(atom <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>) *≡* (typep <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> ’atom) *≡* (not (consp <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>)) 
 
 
 
-*≡* (not (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’cons)) *≡* (typep <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> ’(not cons)) 
+*≡* (not (typep <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> ’cons)) *≡* (typep <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> ’(not cons)) 
 
 
 

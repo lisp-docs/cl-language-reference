@@ -1,4 +1,4 @@
-**eql** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**eql** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"eql"}><b>eql</b></ClLinks> *x y → generalized-boolean* 
+<DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink> *x y → generalized-boolean* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*x*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*x*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-*y*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*y*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -30,60 +30,64 @@
 
 
 
-The value of <ClLinks  term={"eql"}><b>eql</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks> of two objects, *x* and *y*, in the folowing cases: 
+The value of <DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink> is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> of two objects, *x* and *y*, in the folowing cases: 
 
 
 
-1\. If *x* and *y* are <ClLinks  term={"eq"}><b>eq</b></ClLinks>. 
+1\. If *x* and *y* are <DictionaryLink styled={true} term={"eq"}><b>eq</b></DictionaryLink>. 
 
 
 
-2\. If *x* and *y* are both <ClLinks  term={"number"}><i>numbers</i></ClLinks> of the same <ClLinks  term={"type"}><i>type</i></ClLinks> and the same value. 
+2\. If *x* and *y* are both <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm> of the same <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> and the same value. 
 
 
 
-3\. If they are both <ClLinks  term={"character"}><i>characters</i></ClLinks> that represent the same character. 
+3\. If they are both <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> that represent the same character. 
 
 
 
-Otherwise the value of <ClLinks  term={"eql"}><b>eql</b></ClLinks> is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Otherwise the value of <DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink> is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-If an implementation supports positive and negative zeros as <ClLinks  term={"distinct"}><i>distinct</i></ClLinks> values, then (eql 0.0 -0.0) returns <ClLinks  term={"false"}><i>false</i></ClLinks>. Otherwise, when the syntax -0.0 is read it is interpreted as the value 0.0, and so (eql 0.0 -0.0) returns <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+If an implementation supports positive and negative zeros as <GlossaryTerm styled={true} term={"distinct"}><i>distinct</i></GlossaryTerm> values, then (eql 0.0 -0.0) returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. Otherwise, when the syntax -0.0 is read it is interpreted as the value 0.0, and so (eql 0.0 -0.0) returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>. 
 
 
 
 **Examples:**
 ```lisp
-(eql ’a ’b) → false 
-(eql ’a ’a) → true 
-(eql 3 3) → true 
-(eql 3 3.0) → false 
-(eql 3.0 3.0) → true 
-(eql #c(3 -4) #c(3 -4)) → true 
-(eql #c(3 -4.0) #c(3 -4)) → false 
-(eql (cons ’a ’b) (cons ’a ’c)) → false 
 
-(eql (cons ’a ’b) (cons ’a ’b)) → false 
+(eql ’a ’b) *→ false* 
+(eql ’a ’a) *→ true* 
+(eql 3 3) *→ true* 
+(eql 3 3.0) *→ false* 
+(eql 3.0 3.0) *→ true* 
+(eql #c(3 -4) #c(3 -4)) *→ true* 
+(eql #c(3 -4.0) #c(3 -4)) *→ false* 
+(eql (cons ’a ’b) (cons ’a ’c)) *→ false* 
+
+
+
+(eql (cons ’a ’b) (cons ’a ’b)) *→ false* 
 (eql ’(a . b) ’(a . b)) 
-→ true 
+*→ true* 
 <i><sup>or</sup>→ false</i> 
-(progn (setq x (cons ’a ’b)) (eql x x)) → true 
-(progn (setq x ’(a . b)) (eql x x)) → true 
-(eql #\A #\A) → true 
+(progn (setq x (cons ’a ’b)) (eql x x)) *→ true* 
+(progn (setq x ’(a . b)) (eql x x)) *→ true* 
+(eql #\A #\A) *→ true* 
 (eql "Foo" "Foo") 
-→ true 
+*→ true* 
 <i><sup>or</sup>→ false</i> 
-(eql "Foo" (copy-seq "Foo")) → false 
-(eql "FOO" "foo") → false 
+(eql "Foo" (copy-seq "Foo")) *→ false* 
+(eql "FOO" "foo") *→ false* 
 Normally (eql 1.0s0 1.0d0) is false, under the assumption that 1.0s0 and 1.0d0 are of distinct data types. However, implementations that do not provide four distinct floating-point formats are permitted to “collapse” the four formats into some smaller number of them; in such an implementation (eql 1.0s0 1.0d0) might be true. 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"eq"}><b>eq</b></ClLinks>, <ClLinks  term={"equal"}><b>equal</b></ClLinks>, <ClLinks  term={"equalp"}><b>equalp</b></ClLinks>, <ClLinks  term={"="}><b>=</b></ClLinks>, <ClLinks  term={"char="}><b>char=</b></ClLinks> 
+<DictionaryLink styled={true} term={"eq"}><b>eq</b></DictionaryLink>, <DictionaryLink styled={true} term={"equal"}><b>equal</b></DictionaryLink>, <DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink>, <DictionaryLink styled={true} term={"="}><b>=</b></DictionaryLink>, <DictionaryLink styled={true} term={"char="}><b>char=</b></DictionaryLink> 
 
 
 
@@ -91,19 +95,19 @@ Normally (eql 1.0s0 1.0d0) is false, under the assumption that 1.0s0 and 1.0d0 a
 
 
 
-<ClLinks  term={"eql"}><b>eql</b></ClLinks> is the same as <ClLinks  term={"eq"}><b>eq</b></ClLinks>, except that if the arguments are <ClLinks  term={"character"}><i>characters</i></ClLinks> or <ClLinks  term={"number"}><i>numbers</i></ClLinks> of the same type then their values are compared. Thus <ClLinks  term={"eql"}><b>eql</b></ClLinks> tells whether two <ClLinks  term={"object"}><i>objects</i></ClLinks> are conceptually the same, whereas <ClLinks  term={"eq"}><b>eq</b></ClLinks> tells whether two <ClLinks  term={"object"}><i>objects</i></ClLinks> are implementationally identical. It is for this reason that <ClLinks  term={"eql"}><b>eql</b></ClLinks>, not <ClLinks  term={"eq"}><b>eq</b></ClLinks>, is the default comparison predicate for <ClLinks  term={"operator"}><i>operators</i></ClLinks> that take *sequences* as arguments. 
+<DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink> is the same as <DictionaryLink styled={true} term={"eq"}><b>eq</b></DictionaryLink>, except that if the arguments are <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm> of the same type then their values are compared. Thus <DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink> tells whether two <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> are conceptually the same, whereas <DictionaryLink styled={true} term={"eq"}><b>eq</b></DictionaryLink> tells whether two <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> are implementationally identical. It is for this reason that <DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink>, not <DictionaryLink styled={true} term={"eq"}><b>eq</b></DictionaryLink>, is the default comparison predicate for <GlossaryTerm styled={true} term={"operator"}><i>operators</i></GlossaryTerm> that take *sequences* as arguments. 
 
 
 
-<ClLinks  term={"eql"}><b>eql</b></ClLinks> may not be true of two <ClLinks  term={"float"}><i>floats</i></ClLinks> even when they represent the same value. <ClLinks  term={"="}><b>=</b></ClLinks> is used to compare mathematical values. 
+<DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink> may not be true of two <GlossaryTerm styled={true} term={"float"}><i>floats</i></GlossaryTerm> even when they represent the same value. <DictionaryLink styled={true} term={"="}><b>=</b></DictionaryLink> is used to compare mathematical values. 
 
 
 
-Two <ClLinks  term={"complex"}><i>complex</i></ClLinks> numbers are considered to be <ClLinks  term={"eql"}><b>eql</b></ClLinks> if their real parts are <ClLinks  term={"eql"}><b>eql</b></ClLinks> and their imaginary parts are <ClLinks  term={"eql"}><b>eql</b></ClLinks>. For example, (eql #C(4 5) #C(4 5)) is <ClLinks  term={"true"}><i>true</i></ClLinks> and (eql #C(4 5) #C(4.0 5.0)) is <ClLinks  term={"false"}><i>false</i></ClLinks>. Note that while (eql #C(5.0 0.0) 5.0) is <ClLinks  term={"false"}><i>false</i></ClLinks>, (eql #C(5 0) 5) is <ClLinks  term={"true"}><i>true</i></ClLinks>. In the case of 
+Two <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> numbers are considered to be <DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink> if their real parts are <DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink> and their imaginary parts are <DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink>. For example, (eql #C(4 5) #C(4 5)) is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> and (eql #C(4 5) #C(4.0 5.0)) is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. Note that while (eql #C(5.0 0.0) 5.0) is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>, (eql #C(5 0) 5) is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>. In the case of 
 
 
 
-(eql #C(5.0 0.0) 5.0) the two arguments are of different types, and so cannot satisfy <ClLinks  term={"eql"}><b>eql</b></ClLinks>. In the case of (eql #C(5 0) 5), #C(5 0) is not a <ClLinks  term={"complex"}><i>complex</i></ClLinks> number, but is automatically reduced to the *integer* 5. 
+(eql #C(5.0 0.0) 5.0) the two arguments are of different types, and so cannot satisfy <DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink>. In the case of (eql #C(5 0) 5), #C(5 0) is not a <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> number, but is automatically reduced to the *integer* 5. 
 
 
 

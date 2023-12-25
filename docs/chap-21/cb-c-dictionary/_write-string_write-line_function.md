@@ -1,4 +1,4 @@
-**write-string, write-line** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**write-string, write-line** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"write-string"}><b>write-string</b></ClLinks> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *output-stream* &amp;key *start end → string* 
+<DictionaryLink styled={true} term={"write-string"}><b>write-string</b></DictionaryLink> <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> &amp;optional *output-stream* &amp;key *start end → string* 
 
 
 
-<ClLinks  term={"write-line"}><b>write-line</b></ClLinks> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *output-stream* &amp;key *start end → string* 
+<DictionaryLink styled={true} term={"write-line"}><b>write-line</b></DictionaryLink> <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> &amp;optional *output-stream* &amp;key *start end → string* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"string"}><i>string</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*start*, *end*—*bounding index designators* of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—*bounding index designators* of <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>. The defaults for *start* and *end* are 0 and <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
@@ -34,15 +34,16 @@
 
 
 
-<ClLinks  term={"write-string"}><b>write-string</b></ClLinks> writes the <ClLinks  term={"character"}><i>characters</i></ClLinks> of the subsequence of *string bounded* by *start* and *end* to *output-stream*. <ClLinks  term={"write-line"}><b>write-line</b></ClLinks> does the same thing, but then outputs a newline afterwards. 
+<DictionaryLink styled={true} term={"write-string"}><b>write-string</b></DictionaryLink> writes the <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> of the subsequence of *string bounded* by *start* and *end* to *output-stream*. <DictionaryLink styled={true} term={"write-line"}><b>write-line</b></DictionaryLink> does the same thing, but then outputs a newline afterwards. 
 
 
 
 **Examples:**
 ```lisp
+
 (prog1 (write-string "books" nil :end 4) (write-string "worms")) 
 ▷ bookworms 
-→ "books" 
+*→* "books" 
 (progn (write-char #\\*) 
        (write-line "test12" \*standard-output\* :end 5) 
        (write-line "\*test2") 
@@ -50,15 +51,18 @@
        nil) 
 ▷ \*test1 
 
+
+
 ▷ \*test2 
 ▷ \* 
-→ NIL 
+*→* NIL 
+
 ```
 **Affected By:** 
 
 
 
-**\*standard-output\***, <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
+**\*standard-output\***, <DictionaryLink styled={true} term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>. 
 
 
 
@@ -66,7 +70,7 @@
 
 
 
-<ClLinks  term={"read-line"}><b>read-line</b></ClLinks>, <ClLinks  term={"write-char"}><b>write-char</b></ClLinks> 
+<DictionaryLink styled={true} term={"read-line"}><b>read-line</b></DictionaryLink>, <DictionaryLink styled={true} term={"write-char"}><b>write-char</b></DictionaryLink> 
 
 
 
@@ -74,7 +78,7 @@
 
 
 
-<ClLinks  term={"write-line"}><b>write-line</b></ClLinks> and <ClLinks  term={"write-string"}><b>write-string</b></ClLinks> return <ClLinks  term={"string"}><i>string</i></ClLinks>, not the substring <ClLinks  term={"bounded"}><i>bounded</i></ClLinks> by *start* and *end*. 
+<DictionaryLink styled={true} term={"write-line"}><b>write-line</b></DictionaryLink> and <DictionaryLink styled={true} term={"write-string"}><b>write-string</b></DictionaryLink> return <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>, not the substring <GlossaryTerm styled={true} term={"bounded"}><i>bounded</i></GlossaryTerm> by *start* and *end*. 
 
 
 

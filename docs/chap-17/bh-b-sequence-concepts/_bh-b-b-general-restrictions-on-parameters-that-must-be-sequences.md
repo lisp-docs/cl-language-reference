@@ -2,7 +2,7 @@
 
 
 
-In general, <ClLinks  term={"list"}><i>lists</i></ClLinks> (including *association lists* and *property lists*) that are treated as *sequences* must be *proper lists*. 
+In general, <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm> (including *association lists* and *property lists*) that are treated as *sequences* must be *proper lists*. 
 
 
 

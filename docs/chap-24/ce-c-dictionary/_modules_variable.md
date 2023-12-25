@@ -1,4 +1,4 @@
-*∗<ClLinks  term={"modules"}><b>*modules*</b></ClLinks>∗ Variable* 
+*∗<DictionaryLink styled={true} term={"modules"}><b>*modules*</b></DictionaryLink>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
+a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm>. 
 
 
 
@@ -14,7 +14,7 @@ a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"string"}><i>
 
 
 
-<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@ a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"string"}><i>
 
 
 
-The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"modules"}><b>\*modules\*</b></ClLinks> is a list of names of the modules that have been loaded into the current *Lisp image*. 
+The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"modules"}><b>\*modules\*</b></DictionaryLink> is a list of names of the modules that have been loaded into the current *Lisp image*. 
 
 
 
@@ -30,7 +30,7 @@ The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"modules"
 
 
 
-<ClLinks  term={"provide"}><b>provide</b></ClLinks> 
+<DictionaryLink styled={true} term={"provide"}><b>provide</b></DictionaryLink> 
 
 
 
@@ -38,7 +38,7 @@ The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"modules"
 
 
 
-<ClLinks  term={"provide"}><b>provide</b></ClLinks>, <ClLinks  term={"require"}><b>require</b></ClLinks> 
+<DictionaryLink styled={true} term={"provide"}><b>provide</b></DictionaryLink>, <DictionaryLink styled={true} term={"require"}><b>require</b></DictionaryLink> 
 
 
 
@@ -46,7 +46,7 @@ The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"modules"
 
 
 
-The variable <ClLinks  term={"modules"}><b>\*modules\*</b></ClLinks> is deprecated. 
+The variable <DictionaryLink styled={true} term={"modules"}><b>\*modules\*</b></DictionaryLink> is deprecated. 
 
 
 

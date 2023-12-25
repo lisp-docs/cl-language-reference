@@ -2,7 +2,7 @@
 
 
 
-A *serious condition* is a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> serious enough to require interactive intervention if not handled. *Serious conditions* are typically signaled with <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> or <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks>; non-serious <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> are typically signaled with <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> or <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks>. 
+A *serious condition* is a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> serious enough to require interactive intervention if not handled. *Serious conditions* are typically signaled with <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink> or <DictionaryLink styled={true} term={"cerror"}><b>cerror</b></DictionaryLink>; non-serious <GlossaryTerm styled={true} term={"condition"}><i>conditions</i></GlossaryTerm> are typically signaled with <DictionaryLink styled={true} term={"signal"}><b>signal</b></DictionaryLink> or <DictionaryLink styled={true} term={"warn"}><b>warn</b></DictionaryLink>. 
 
 
 

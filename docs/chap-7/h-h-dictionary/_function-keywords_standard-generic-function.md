@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"function-keywords"}><b>function-keywords</b></ClLinks> *method → keys, allow-other-keys-p* 
+<DictionaryLink styled={true} term={"function-keywords"}><b>function-keywords</b></DictionaryLink> *method → keys, allow-other-keys-p* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"function-keywords"}><b>function-keywords</b></ClLinks> (<ClLinks  term={"method"}><i>method</i></ClLinks> <ClLinks  term={"standard-method"}><b>standard-method</b></ClLinks>) 
+<DictionaryLink styled={true} term={"function-keywords"}><b>function-keywords</b></DictionaryLink> (<GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> <DictionaryLink styled={true} term={"standard-method"}><b>standard-method</b></DictionaryLink>) 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-<ClLinks  term={"method"}><i>method</i></ClLinks>—a <ClLinks  term={"method"}><i>method</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"key"}><i>keys</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"key"}><i>keys</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
@@ -38,39 +38,41 @@
 
 
 
-Returns the keyword parameter specifiers for a <ClLinks  term={"method"}><i>method</i></ClLinks>. 
+Returns the keyword parameter specifiers for a <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm>. 
 
 
 
-Two values are returned: a <ClLinks  term={"list"}><i>list</i></ClLinks> of the explicitly named keywords and a *generalized boolean* that states whether **&amp;allow-other-keys** had been specified in the <ClLinks  term={"method"}><i>method</i></ClLinks> definition. 
+Two values are returned: a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of the explicitly named keywords and a *generalized boolean* that states whether **&amp;allow-other-keys** had been specified in the <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> definition. 
 
 
 
 **Examples:**
 ```lisp
+
 (defmethod gf1 ((a integer) &optional (b 2) 
 		&key (c 3) ((:dee d) 4) e ((eff f))) 
-  (list a b c d e f)) 
-→ #<STANDARD-METHOD GF1 (INTEGER) 36324653> 
+    (list a b c d e f)) 
+*→* #<STANDARD-METHOD GF1 (INTEGER) 36324653> 
 (find-method #’gf1 ’() (list (find-class ’integer))) 
-→ #<STANDARD-METHOD GF1 (INTEGER) 36324653> 
+*→* #<STANDARD-METHOD GF1 (INTEGER) 36324653> 
 (function-keywords \*) 
-→ (:C :DEE :E EFF), *false* 
+*→* (:C :DEE :E EFF), *false* 
 (defmethod gf2 ((a integer)) 
-  (list a b c d e f)) 
-→ #<STANDARD-METHOD GF2 (INTEGER) 42701775> 
+    (list a b c d e f)) 
+*→* #<STANDARD-METHOD GF2 (INTEGER) 42701775> 
 (function-keywords (find-method #’gf1 ’() (list (find-class ’integer)))) 
-→ (), *false* 
+*→* (), *false* 
 (defmethod gf3 ((a integer) &key b c d &allow-other-keys) 
-  (list a b c d e f)) 
+    (list a b c d e f)) 
 (function-keywords \*) 
-→ (:B :C :D), *true* 
+*→* (:B :C :D), *true* 
+
 ```
 **Affected By:** 
 
 
 
-<ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> 
+<DictionaryLink styled={true} term={"defmethod"}><b>defmethod</b></DictionaryLink> 
 
 
 
@@ -90,7 +92,7 @@ Two values are returned: a <ClLinks  term={"list"}><i>list</i></ClLinks> of the 
 
 
 
-<ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> 
+<DictionaryLink styled={true} term={"defmethod"}><b>defmethod</b></DictionaryLink> 
 
 
 

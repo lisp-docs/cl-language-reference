@@ -1,4 +1,4 @@
-**set-syntax-from-char** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**set-syntax-from-char** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"set-syntax-from-char"}><b>set-syntax-from-char</b></ClLinks> *to-char from-char* &amp;optional *to-readtable from-readtable →* <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"set-syntax-from-char"}><b>set-syntax-from-char</b></DictionaryLink> *to-char from-char* &amp;optional *to-readtable from-readtable →* <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*to-char*—a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
+*to-char*—a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
 
 
 
-*from-char*—a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
+*from-char*—a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
 
 
 
-*to-readtable*—a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. The default is the *current readtable*. 
+*to-readtable*—a <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm>. The default is the *current readtable*. 
 
 
 
@@ -34,22 +34,24 @@
 
 
 
-<ClLinks  term={"set-syntax-from-char"}><b>set-syntax-from-char</b></ClLinks> makes the syntax of *to-char* in *to-readtable* be the same as the syntax of *from-char* in *from-readtable*. 
+<DictionaryLink styled={true} term={"set-syntax-from-char"}><b>set-syntax-from-char</b></DictionaryLink> makes the syntax of *to-char* in *to-readtable* be the same as the syntax of *from-char* in *from-readtable*. 
 
 
 
-<ClLinks  term={"set-syntax-from-char"}><b>set-syntax-from-char</b></ClLinks> copies the *syntax types* of *from-char*. If *from-char* is a *macro character* , its *reader macro function* is copied also. If the character is a *dispatching macro character* , its entire dispatch table of *reader macro functions* is copied. The *constituent traits* of *from-char* are not copied. 
+<DictionaryLink styled={true} term={"set-syntax-from-char"}><b>set-syntax-from-char</b></DictionaryLink> copies the *syntax types* of *from-char*. If *from-char* is a *macro character* , its *reader macro function* is copied also. If the character is a *dispatching macro character* , its entire dispatch table of *reader macro functions* is copied. The *constituent traits* of *from-char* are not copied. 
 
 
 
-A macro definition from a character such as " can be copied to another character; the standard definition for " looks for another character that is the same as the character that invoked it. The definition of ( can not be meaningfully copied to \{, on the other hand. The result is that <ClLinks  term={"list"}><i>lists</i></ClLinks> are of the form \{a b c), not \{a b c\}, because the definition always looks for a closing parenthesis, not a closing brace. 
+A macro definition from a character such as " can be copied to another character; the standard definition for " looks for another character that is the same as the character that invoked it. The definition of ( can not be meaningfully copied to \{, on the other hand. The result is that <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm> are of the form \{a b c), not \{a b c\}, because the definition always looks for a closing parenthesis, not a closing brace. 
 
 
 
 **Examples:**
 ```lisp
-(set-syntax-from-char #\7 #\;) → T 
-123579 → 1235 
+
+(set-syntax-from-char #\7 #\;) *→* T 
+123579 *→* 1235 
+
 ```
 **Side Effects:** 
 
@@ -71,7 +73,7 @@ The existing values in the *from-readtable*.
 
 
 
-<ClLinks  term={"set-macro-character"}><b>set-macro-character</b></ClLinks>, <ClLinks  term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></ClLinks>, Section 2.1.4 (Character Syntax Types) 
+<DictionaryLink styled={true} term={"set-macro-character"}><b>set-macro-character</b></DictionaryLink>, <DictionaryLink styled={true} term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></DictionaryLink>, Section 2.1.4 (Character Syntax Types) 
 
 
 
@@ -87,7 +89,7 @@ The existing values in the *from-readtable*.
 
 
 
-The *constituent traits* of a <ClLinks  term={"character"}><i>character</i></ClLinks> are “hard wired” into the parser for extended <ClLinks  term={"token"}><i>tokens</i></ClLinks>. For example, if the definition of S is copied to \*, then \* will become a <ClLinks  term={"constituent"}><i>constituent</i></ClLinks> that is <ClLinks  term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>2</sub> but that cannot be used as a *short float exponent marker* . For further information, see Section 2.1.4.2 (Constituent Traits). 
+The *constituent traits* of a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> are “hard wired” into the parser for extended <GlossaryTerm styled={true} term={"token"}><i>tokens</i></GlossaryTerm>. For example, if the definition of S is copied to \*, then \* will become a <GlossaryTerm styled={true} term={"constituent"}><i>constituent</i></GlossaryTerm> that is <GlossaryTerm styled={true} term={"alphabetic"}><i>alphabetic</i></GlossaryTerm><sub>2</sub> but that cannot be used as a *short float exponent marker* . For further information, see Section 2.1.4.2 (Constituent Traits). 
 
 
 

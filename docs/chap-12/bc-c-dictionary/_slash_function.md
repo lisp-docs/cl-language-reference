@@ -1,52 +1,187 @@
-**/** <ClLinks  term={"function"}><i>Function</i></ClLinks>
+**/** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
-**Syntax:**
 
-<ClLinks  term={"/"}><b>/</b></ClLinks> *number → reciprocal*
 
-<ClLinks  term={"/"}><b>/</b></ClLinks> *numerator* &amp;rest *denominators*<sup>+</sup> → quotient
+**Syntax:** 
 
-**Arguments and Values:**
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>, *denominator*—a non-zero <ClLinks  term={"number"}><i>number</i></ClLinks> .
 
-*numerator*, *quotient*, *reciprocal*—a <ClLinks  term={"number"}><i>number</i></ClLinks> .
+<DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink> *number → reciprocal* 
 
-**Description:**
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"/"}><b>/</b></ClLinks> performs division or reciprocation.
 
-If no *denominators* are supplied, the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"/"}><b>/</b></ClLinks> returns the reciprocal of <ClLinks  term={"number"}><i>number</i></ClLinks>.
+<DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink> *numerator* &amp;rest *denominators*<sup>+</sup> *→ quotient* 
 
-If at least one *denominator* is supplied, the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"/"}><b>/</b></ClLinks> divides the *numerator* by all of the *denominators* and returns the resulting *quotient*.
 
-If each <ClLinks  term={"argument"}><i>argument</i></ClLinks> is either an *integer* or a <ClLinks  term={"ratio"}><i>ratio</i></ClLinks>, and the result is not an *integer* , then it is a <ClLinks  term={"ratio"}><i>ratio</i></ClLinks>.
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"/"}><b>/</b></ClLinks> performs necessary type conversions.
+**Arguments and Values:** 
 
-If any <ClLinks  term={"argument"}><i>argument</i></ClLinks> is a <ClLinks  term={"float"}><i>float</i></ClLinks> then the rules of floating-point contagion apply; see Section 12.1.4 (Floating-point Computations).
+
+
+<GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>, *denominator*—a non-zero <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . 
+
+
+
+*numerator*, *quotient*, *reciprocal*—a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . 
+
+
+
+**Description:** 
+
+
+
+The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink> performs division or reciprocation. 
+
+
+
+If no *denominators* are supplied, the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink> returns the reciprocal of <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>. 
+
+
+
+If at least one *denominator* is supplied, the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink> divides the *numerator* by all of the *denominators* and returns the resulting *quotient*. 
+
+
+
+If each <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm> is either an *integer* or a <GlossaryTerm styled={true} term={"ratio"}><i>ratio</i></GlossaryTerm>, and the result is not an *integer* , then it is a <GlossaryTerm styled={true} term={"ratio"}><i>ratio</i></GlossaryTerm>. 
+
+
+
+ 
+
+
+
+ 
+
+
+
+The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink> performs necessary type conversions. 
+
+
+
+If any <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> then the rules of floating-point contagion apply; see Section 12.1.4 (Floating-point Computations). 
+
+
 
 **Examples:**
+```lisp
+ 
+(/ 12 4) *→* 3 
+(/ 13 4) *→* 13/4 
+(/ -8) *→* -1/8 
+(/ 3 4 5) *→* 3/20 
+(/ 0.5) *→* 2.0 
+(/ 20 5) *→* 4 
+(/ 5 20) *→* 1/4 
+(/ 60 -2 3 5.0) *→* -2.0 
+(/ 2 #c(2 2)) *→* #C(1/2 -1/2) 
 
+```
+**Exceptional Situations:** 
+
+
+
+The consequences are unspecified if any <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm> other than the first is zero. If there is only one <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm>, the consequences are unspecified if it is zero. 
+
+
+
+Might signal <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if some <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . Might signal <DictionaryLink styled={true} term={"division-by-zero"}><b>division-by-zero</b></DictionaryLink> if division by zero is attempted. Might signal <DictionaryLink styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>. 
+
+
+
+**See Also:** 
+
+
+
+<DictionaryLink styled={true} term={"floor"}><b>floor</b></DictionaryLink>, <DictionaryLink styled={true} term={"ceiling"}><b>ceiling</b></DictionaryLink>, <DictionaryLink styled={true} term={"truncate"}><b>truncate</b></DictionaryLink>, <DictionaryLink styled={true} term={"round"}><b>round</b></DictionaryLink> 
+
+
+
+**1+, 1***− Function* 
+
+
+
+**Syntax:** 
+
+
+
+<DictionaryLink styled={true} term={"1+"}><b>1+</b></DictionaryLink> *number → successor* 
+
+
+
+<DictionaryLink styled={true} term={"1"}><b>1*</b></DictionaryLink>− number → predecessor* 
+
+
+
+**Arguments and Values:** 
+
+
+
+<GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . 
+
+
+
+*successor*, *predecessor*—a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . 
+
+
+
+**Description:** 
+
+
+
+<DictionaryLink styled={true} term={"1+"}><b>1+</b></DictionaryLink> returns a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> that is one more than its argument <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>. **1-** returns a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> that is one less than its argument <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>. 
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+**Examples:**
 ```lisp
 
-(/ 12 4) → 3 
-(/ 13 4) → 13/4 
-(/ -8) → -1/8 
-(/ 3 4 5) → 3/20 
-(/ 0.5) → 2.0 
-(/ 20 5) → 4 
-(/ 5 20) → 1/4 
-(/ 60 -2 3 5.0) → -2.0 
-(/ 2 #c(2 2)) → #C(1/2 -1/2) 
+(1+ 99) *→* 100 
+(1- 100) *→* 99 
+(1+ (complex 0.0)) *→* #C(1.0 0.0) 
+(1- 5/3) *→* 2/3 
+
 ```
+**Exceptional Situations:** 
 
-**Exceptional Situations:**
 
-The consequences are unspecified if any <ClLinks  term={"argument"}><i>argument</i></ClLinks> other than the first is zero. If there is only one <ClLinks  term={"argument"}><i>argument</i></ClLinks>, the consequences are unspecified if it is zero.
 
-Might signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if some <ClLinks  term={"argument"}><i>argument</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks  term={"division-by-zero"}><b>division-by-zero</b></ClLinks> if division by zero is attempted. Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
+Might signal <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if its <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . Might signal <DictionaryLink styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>. 
 
-**See Also:**
 
-<ClLinks  term={"floor"}><b>floor</b></ClLinks>, <ClLinks  term={"ceiling"}><b>ceiling</b></ClLinks>, <ClLinks  term={"truncate"}><b>truncate</b></ClLinks>, <ClLinks  term={"round"}><b>round</b></ClLinks>
+
+**See Also:** 
+
+
+
+<DictionaryLink styled={true} term={"incf"}><b>incf</b></DictionaryLink>, <DictionaryLink styled={true} term={"decf"}><b>decf</b></DictionaryLink> 
+
+
+
+**Notes:** 
+
+
+
+(1+ <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>) *≡* (+ <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> 1) 
+
+
+
+(1- <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>) *≡* (- <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> 1) 
+
+
+
+Implementors are encouraged to make the performance of both the previous expressions be the same. 
+
+
+

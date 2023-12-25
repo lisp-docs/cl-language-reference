@@ -1,4 +1,4 @@
-**time** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**time** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"time"}><b>time</b></ClLinks> *form → \{result\}*\* 
+<DictionaryLink styled={true} term={"time"}><b>time</b></DictionaryLink> *form → \{result\}*\* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
+<GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>; evaluated as described below. 
 
 
 
-*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+*results*—the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<ClLinks styled={true} term={"time"}><b>time</b></ClLinks> evaluates <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> in the current <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> (lexical and dynamic). A call to <ClLinks styled={true} term={"time"}><b>time</b></ClLinks> can be compiled. 
+<DictionaryLink styled={true} term={"time"}><b>time</b></DictionaryLink> evaluates <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> in the current <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm> (lexical and dynamic). A call to <DictionaryLink styled={true} term={"time"}><b>time</b></DictionaryLink> can be compiled. 
 
 
 
-<ClLinks styled={true} term={"time"}><b>time</b></ClLinks> prints various timing data and other information to *trace output*. The nature and format of the printed information is <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. Implementations are encouraged to provide such information as elapsed real time, machine run time, and storage management statistics. 
+<DictionaryLink styled={true} term={"time"}><b>time</b></DictionaryLink> prints various timing data and other information to *trace output*. The nature and format of the printed information is <GlossaryTerm styled={true} term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>. Implementations are encouraged to provide such information as elapsed real time, machine run time, and storage management statistics. 
 
 
 
@@ -62,7 +62,7 @@ The magnitude of the results may depend on the hardware, the operating system, t
 
 
 
-<ClLinks styled={true} term={"get-internal-real-time"}><b>get-internal-real-time</b></ClLinks>, <ClLinks styled={true} term={"get-internal-run-time"}><b>get-internal-run-time</b></ClLinks> 
+<DictionaryLink styled={true} term={"get-internal-real-time"}><b>get-internal-real-time</b></DictionaryLink>, <DictionaryLink styled={true} term={"get-internal-run-time"}><b>get-internal-run-time</b></DictionaryLink> 
 
 
 

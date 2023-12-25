@@ -1,4 +1,4 @@
-**constantly** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**constantly** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"constantly"}><b>constantly</b></ClLinks> *value → function* 
+<DictionaryLink styled={true} term={"constantly"}><b>constantly</b></DictionaryLink> *value → function* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"value"}><i>value</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 
@@ -26,24 +26,26 @@
 
 
 
-<ClLinks  term={"constantly"}><b>constantly</b></ClLinks> returns a <ClLinks  term={"function"}><i>function</i></ClLinks> that accepts any number of arguments, that has no side-effects, and that always returns <ClLinks  term={"value"}><i>value</i></ClLinks>. 
+<DictionaryLink styled={true} term={"constantly"}><b>constantly</b></DictionaryLink> returns a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> that accepts any number of arguments, that has no side-effects, and that always returns <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm>. 
 
 
 
 **Examples:**
 ```lisp
-(mapcar (constantly 3) ’(a b c d)) → (3 3 3 3) 
+
+(mapcar (constantly 3) ’(a b c d)) *→* (3 3 3 3) 
 (defmacro with-vars (vars &body forms) 
   ‘((lambda ,vars ,@forms) ,@(mapcar (constantly nil) vars))) 
-→ WITH-VARS 
+*→* WITH-VARS 
 (macroexpand ’(with-vars (a b) (setq a 3 b (\* a a)) (list a b))) 
-→ ((LAMBDA (A B) (SETQ A 3 B (\* A A)) (LIST A B)) NIL NIL), *true* 
+*→* ((LAMBDA (A B) (SETQ A 3 B (\* A A)) (LIST A B)) NIL NIL), *true* 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"identity"}><b>identity</b></ClLinks> 
+<DictionaryLink styled={true} term={"identity"}><b>identity</b></DictionaryLink> 
 
 
 
@@ -51,7 +53,7 @@
 
 
 
-<ClLinks  term={"constantly"}><b>constantly</b></ClLinks> could be defined by: 
+<DictionaryLink styled={true} term={"constantly"}><b>constantly</b></DictionaryLink> could be defined by: 
 
 
 

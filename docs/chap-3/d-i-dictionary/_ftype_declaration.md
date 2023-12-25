@@ -1,4 +1,4 @@
-**ftype** <ClLinks  term={"declaration"}><i>Declaration</i></ClLinks> 
+**ftype** <GlossaryTerm styled={true} term={"declaration"}><i>Declaration</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"type"}><i>type</i></ClLinks>—a *type specifier* . 
+<GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>—a *type specifier* . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks> or <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks> 
+<GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"proclamation"}><i>proclamation</i></GlossaryTerm> 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks> 
+<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-Specifies that the <ClLinks  term={"function"}><i>functions</i></ClLinks> named by *function-names* are of the functional type <ClLinks  term={"type"}><i>type</i></ClLinks>. For example: 
+Specifies that the <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> named by *function-names* are of the functional type <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>. For example: 
 
 
 
@@ -54,15 +54,15 @@ Specifies that the <ClLinks  term={"function"}><i>functions</i></ClLinks> named 
 
 
 
-If one of the <ClLinks  term={"function"}><i>functions</i></ClLinks> mentioned has a lexically apparent local definition (as made by <ClLinks  term={"flet"}><b>flet</b></ClLinks> or <ClLinks  term={"labels"}><b>labels</b></ClLinks>), then the declaration applies to that local definition and not to the global function definition. <ClLinks  term={"ftype"}><b>ftype</b></ClLinks> declarations never apply to variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> (see type). 
+If one of the <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> mentioned has a lexically apparent local definition (as made by <DictionaryLink styled={true} term={"flet"}><b>flet</b></DictionaryLink> or <DictionaryLink styled={true} term={"labels"}><b>labels</b></DictionaryLink>), then the declaration applies to that local definition and not to the global function definition. <DictionaryLink styled={true} term={"ftype"}><b>ftype</b></DictionaryLink> declarations never apply to variable <GlossaryTerm styled={true} term={"binding"}><i>bindings</i></GlossaryTerm> (see type). 
 
 
 
-The lexically apparent bindings of *function-names* must not be <ClLinks  term={"macro"}><i>macro</i></ClLinks> definitions. (This is because <ClLinks  term={"ftype"}><b>ftype</b></ClLinks> declares the functional definition of each *function name* to be of a particular subtype of <ClLinks  term={"function"}><b>function</b></ClLinks>, and <ClLinks  term={"macro"}><i>macros</i></ClLinks> do not denote <ClLinks  term={"function"}><i>functions</i></ClLinks>.) 
+The lexically apparent bindings of *function-names* must not be <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> definitions. (This is because <DictionaryLink styled={true} term={"ftype"}><b>ftype</b></DictionaryLink> declares the functional definition of each *function name* to be of a particular subtype of <DictionaryLink styled={true} term={"function"}><b>function</b></DictionaryLink>, and <GlossaryTerm styled={true} term={"macro"}><i>macros</i></GlossaryTerm> do not denote <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm>.) 
 
 
 
-<ClLinks  term={"ftype"}><b>ftype</b></ClLinks> declarations can be *free declarations* or *bound declarations*. <ClLinks  term={"ftype"}><b>ftype</b></ClLinks> declarations of functions that appear before the body of a <ClLinks  term={"flet"}><b>flet</b></ClLinks> or <ClLinks  term={"labels"}><b>labels</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> that defines that function are *bound declarations*. Such declarations in other contexts are *free declarations*. 
+<DictionaryLink styled={true} term={"ftype"}><b>ftype</b></DictionaryLink> declarations can be *free declarations* or *bound declarations*. <DictionaryLink styled={true} term={"ftype"}><b>ftype</b></DictionaryLink> declarations of functions that appear before the body of a <DictionaryLink styled={true} term={"flet"}><b>flet</b></DictionaryLink> or <DictionaryLink styled={true} term={"labels"}><b>labels</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> that defines that function are *bound declarations*. Such declarations in other contexts are *free declarations*. 
 
 
 
@@ -70,7 +70,7 @@ The lexically apparent bindings of *function-names* must not be <ClLinks  term={
 
 
 
-<ClLinks  term={"declare"}><b>declare</b></ClLinks>, <ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> 
+<DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink>, <DictionaryLink styled={true} term={"declaim"}><b>declaim</b></DictionaryLink>, <DictionaryLink styled={true} term={"proclaim"}><b>proclaim</b></DictionaryLink> 
 
 
 

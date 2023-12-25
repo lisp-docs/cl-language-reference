@@ -1,4 +1,4 @@
-**equalp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**equalp** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"equalp"}><b>equalp</b></ClLinks> *x y → generalized-boolean* 
+<DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink> *x y → generalized-boolean* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*x*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*x*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-*y*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*y*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -30,23 +30,23 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if *x* and *y* are <ClLinks  term={"equal"}><b>equal</b></ClLinks>, or if they have components that are of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as each other and if those components are <ClLinks  term={"equalp"}><b>equalp</b></ClLinks>; specifically, <ClLinks  term={"equalp"}><b>equalp</b></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks> in the following cases: 
+Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if *x* and *y* are <DictionaryLink styled={true} term={"equal"}><b>equal</b></DictionaryLink>, or if they have components that are of the same <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> as each other and if those components are <DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink>; specifically, <DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink> returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> in the following cases: 
 
 
 
-<ClLinks  term={"character"}><i>Characters</i></ClLinks> 
+<GlossaryTerm styled={true} term={"character"}><i>Characters</i></GlossaryTerm> 
 
 
 
-If two <ClLinks  term={"character"}><i>characters</i></ClLinks> are <ClLinks  term={"char-equal"}><b>char-equal</b></ClLinks>. 
+If two <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> are <DictionaryLink styled={true} term={"char-equal"}><b>char-equal</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"number"}><i>Numbers</i></ClLinks> 
+<GlossaryTerm styled={true} term={"number"}><i>Numbers</i></GlossaryTerm> 
 
 
 
-If two <ClLinks  term={"number"}><i>numbers</i></ClLinks> are the <ClLinks  term={"same"}><i>same</i></ClLinks> under <ClLinks  term={"="}><b>=</b></ClLinks>. 
+If two <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm> are the <GlossaryTerm styled={true} term={"same"}><i>same</i></GlossaryTerm> under <DictionaryLink styled={true} term={"="}><b>=</b></DictionaryLink>. 
 
 
 
@@ -54,19 +54,15 @@ If two <ClLinks  term={"number"}><i>numbers</i></ClLinks> are the <ClLinks  term
 
 
 
-If the two <ClLinks  term={"car"}><i>cars</i></ClLinks> in the *conses* are <ClLinks  term={"equalp"}><b>equalp</b></ClLinks> and the two <ClLinks  term={"cdr"}><i>cdrs</i></ClLinks> in the *conses* are <ClLinks  term={"equalp"}><b>equalp</b></ClLinks>. 
+If the two <GlossaryTerm styled={true} term={"car"}><i>cars</i></GlossaryTerm> in the *conses* are <DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink> and the two <GlossaryTerm styled={true} term={"cdr"}><i>cdrs</i></GlossaryTerm> in the *conses* are <DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"array"}><i>Arrays</i></ClLinks> 
+<GlossaryTerm styled={true} term={"array"}><i>Arrays</i></GlossaryTerm> 
 
 
 
-If two <ClLinks  term={"array"}><i>arrays</i></ClLinks> have the same number of dimensions, the dimensions match, and the corresponding *active elements* are <ClLinks  term={"equalp"}><b>equalp</b></ClLinks>. The <ClLinks  term={"type"}><i>types</i></ClLinks> for which the <ClLinks  term={"array"}><i>arrays</i></ClLinks> are <ClLinks  term={"specialized"}><i>specialized</i></ClLinks> need not match; for example, a <ClLinks  term={"string"}><i>string</i></ClLinks> and a general <ClLinks  term={"array"}><i>array</i></ClLinks> that happens to contain the same <ClLinks  term={"character"}><i>characters</i></ClLinks> are <ClLinks  term={"equalp"}><b>equalp</b></ClLinks>. Because <ClLinks  term={"equalp"}><b>equalp</b></ClLinks> performs <ClLinks  term={"element"}><i>element</i></ClLinks>-by-<ClLinks  term={"element"}><i>element</i></ClLinks> comparisons of <ClLinks  term={"string"}><i>strings</i></ClLinks> and ignores the <ClLinks  term={"case"}><i>case</i></ClLinks> of <ClLinks  term={"character"}><i>characters</i></ClLinks>, <ClLinks  term={"case"}><i>case</i></ClLinks> distinctions are ignored when <ClLinks  term={"equalp"}><b>equalp</b></ClLinks> compares <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
-
-
-
-
+If two <GlossaryTerm styled={true} term={"array"}><i>arrays</i></GlossaryTerm> have the same number of dimensions, the dimensions match, and the corresponding *active elements* are <DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink>. The <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> for which the <GlossaryTerm styled={true} term={"array"}><i>arrays</i></GlossaryTerm> are <GlossaryTerm styled={true} term={"specialized"}><i>specialized</i></GlossaryTerm> need not match; for example, a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> and a general <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> that happens to contain the same <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> are <DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink>. Because <DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink> performs <GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm>-by-<GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm> comparisons of <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm> and ignores the <GlossaryTerm styled={true} term={"case"}><i>case</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"case"}><i>case</i></GlossaryTerm> distinctions are ignored when <DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink> compares <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm>. 
 
 
 
@@ -78,15 +74,19 @@ If two <ClLinks  term={"array"}><i>arrays</i></ClLinks> have the same number of 
 
 
 
-<ClLinks  term={"equalp"}><b>equalp</b></ClLinks> 
 
 
 
-<ClLinks  term={"structure"}><i>Structures</i></ClLinks> 
+
+<DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink> 
 
 
 
-If two *structures S*<sub>1</sub> and *S*<sub>2</sub> have the same <ClLinks  term={"class"}><i>class</i></ClLinks> and the value of each <ClLinks  term={"slot"}><i>slot</i></ClLinks> in *S*<sub>1</sub> is the <ClLinks  term={"same"}><i>same</i></ClLinks> under <ClLinks  term={"equalp"}><b>equalp</b></ClLinks> as the value of the corresponding <ClLinks  term={"slot"}><i>slot</i></ClLinks> in *S*<sub>2</sub>. 
+<GlossaryTerm styled={true} term={"structure"}><i>Structures</i></GlossaryTerm> 
+
+
+
+If two *structures S*<sub>1</sub> and *S*<sub>2</sub> have the same <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> and the value of each <GlossaryTerm styled={true} term={"slot"}><i>slot</i></GlossaryTerm> in *S*<sub>1</sub> is the <GlossaryTerm styled={true} term={"same"}><i>same</i></GlossaryTerm> under <DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink> as the value of the corresponding <GlossaryTerm styled={true} term={"slot"}><i>slot</i></GlossaryTerm> in *S*<sub>2</sub>. 
 
 
 
@@ -94,11 +94,11 @@ If two *structures S*<sub>1</sub> and *S*<sub>2</sub> have the same <ClLinks  te
 
 
 
-<ClLinks  term={"equalp"}><b>equalp</b></ClLinks> descends *hash-tables* by first comparing the count of entries and the :test function; if those are the same, it compares the keys of the tables using the :test function and then the values of the matching keys using <ClLinks  term={"equalp"}><b>equalp</b></ClLinks> recursively. 
+<DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink> descends *hash-tables* by first comparing the count of entries and the :test function; if those are the same, it compares the keys of the tables using the :test function and then the values of the matching keys using <DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink> recursively. 
 
 
 
-<ClLinks  term={"equalp"}><b>equalp</b></ClLinks> does not descend any <ClLinks  term={"object"}><i>objects</i></ClLinks> other than the ones explicitly specified above. Figure 5–13 summarizes the information given in the previous list. In addition, the figure specifies the priority of the behavior of <ClLinks  term={"equalp"}><b>equalp</b></ClLinks>, with upper entries taking priority over lower ones. 
+<DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink> does not descend any <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> other than the ones explicitly specified above. Figure 5–13 summarizes the information given in the previous list. In addition, the figure specifies the priority of the behavior of <DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink>, with upper entries taking priority over lower ones. 
 
 
 
@@ -106,7 +106,7 @@ If two *structures S*<sub>1</sub> and *S*<sub>2</sub> have the same <ClLinks  te
 
 | :- |
 
-|<p><ClLinks  term={"number"}><i>number</i></ClLinks> uses <ClLinks  term={"="}><b>=</b></ClLinks> </p><p><ClLinks  term={"character"}><i>character</i></ClLinks> uses <ClLinks  term={"char-equal"}><b>char-equal</b></ClLinks> </p><p><ClLinks  term={"cons"}><i>cons</i></ClLinks> descends </p><p>*bit vector* descends </p><p><ClLinks  term={"string"}><i>string</i></ClLinks> descends </p><p><ClLinks  term={"pathname"}><i>pathname</i></ClLinks> same as <ClLinks  term={"equal"}><b>equal</b></ClLinks> </p><p><ClLinks  term={"structure"}><i>structure</i></ClLinks> descends, as described above </p><p>Other <ClLinks  term={"array"}><i>array</i></ClLinks> descends </p><p>*hash table* descends, as described above </p><p>Other <ClLinks  term={"object"}><i>object</i></ClLinks> uses <ClLinks  term={"eq"}><b>eq</b></ClLinks></p>|
+|<p><GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> uses <DictionaryLink styled={true} term={"="}><b>=</b></DictionaryLink> </p><p><GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> uses <DictionaryLink styled={true} term={"char-equal"}><b>char-equal</b></DictionaryLink> </p><p><GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> descends </p><p>*bit vector* descends </p><p><GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> descends </p><p><GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> same as <DictionaryLink styled={true} term={"equal"}><b>equal</b></DictionaryLink> </p><p><GlossaryTerm styled={true} term={"structure"}><i>structure</i></GlossaryTerm> descends, as described above </p><p>Other <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> descends </p><p>*hash table* descends, as described above </p><p>Other <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> uses <DictionaryLink styled={true} term={"eq"}><b>eq</b></DictionaryLink></p>|
 
 
 
@@ -118,38 +118,41 @@ If two *structures S*<sub>1</sub> and *S*<sub>2</sub> have the same <ClLinks  te
 
 **Examples:**
 ```lisp
-(equalp ’a ’b) → false 
-(equalp ’a ’a) → true 
-(equalp 3 3) → true 
-(equalp 3 3.0) → true 
-(equalp 3.0 3.0) → true 
-(equalp #c(3 -4) #c(3 -4)) → true 
-(equalp #c(3 -4.0) #c(3 -4)) → true 
-(equalp (cons ’a ’b) (cons ’a ’c)) → false 
-(equalp (cons ’a ’b) (cons ’a ’b)) → true 
-(equalp #\A #\A) → true 
-(equalp #\A #\a) → true 
-(equalp "Foo" "Foo") → true 
-(equalp "Foo" (copy-seq "Foo")) → true 
+
+(equalp ’a ’b) *→ false* 
+(equalp ’a ’a) *→ true* 
+(equalp 3 3) *→ true* 
+(equalp 3 3.0) *→ true* 
+(equalp 3.0 3.0) *→ true* 
+(equalp #c(3 -4) #c(3 -4)) *→ true* 
+(equalp #c(3 -4.0) #c(3 -4)) *→ true* 
+(equalp (cons ’a ’b) (cons ’a ’c)) *→ false* 
+(equalp (cons ’a ’b) (cons ’a ’b)) *→ true* 
+(equalp #\A #\A) *→ true* 
+(equalp #\A #\a) *→ true* 
+(equalp "Foo" "Foo") *→ true* 
+(equalp "Foo" (copy-seq "Foo")) *→ true* 
 Data and Control 
 
-(equalp "FOO" "foo") → true 
+
+(equalp "FOO" "foo") *→ true* 
 (setq array1 (make-array 6 :element-type ’integer 
 			 :initial-contents ’(1 1 1 3 5 7))) 
-→ #(1 1 1 3 5 7) 
+*→* #(1 1 1 3 5 7) 
 (setq array2 (make-array 8 :element-type ’integer 
 			 :initial-contents ’(1 1 1 3 5 7 2 6) 
 			 :fill-pointer 6)) 
-→ #(1 1 1 3 5 7) 
-(equalp array1 array2) → true 
-(setq vector1 (vector 1 1 1 3 5 7)) → #(1 1 1 3 5 7) 
-(equalp array1 vector1) → true 
+*→* #(1 1 1 3 5 7) 
+(equalp array1 array2) *→ true* 
+(setq vector1 (vector 1 1 1 3 5 7)) *→* #(1 1 1 3 5 7) 
+(equalp array1 vector1) *→ true* 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"eq"}><b>eq</b></ClLinks>, <ClLinks  term={"eql"}><b>eql</b></ClLinks>, <ClLinks  term={"equal"}><b>equal</b></ClLinks>, <ClLinks  term={"="}><b>=</b></ClLinks>, <ClLinks  term={"string"}><b>string=</b></ClLinks>, **string-equal**, <ClLinks  term={"char="}><b>char=</b></ClLinks>, <ClLinks  term={"char-equal"}><b>char-equal</b></ClLinks> 
+<DictionaryLink styled={true} term={"eq"}><b>eq</b></DictionaryLink>, <DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink>, <DictionaryLink styled={true} term={"equal"}><b>equal</b></DictionaryLink>, <DictionaryLink styled={true} term={"="}><b>=</b></DictionaryLink>, <DictionaryLink styled={true} term={"string"}><b>string=</b></DictionaryLink>, **string-equal**, <DictionaryLink styled={true} term={"char="}><b>char=</b></DictionaryLink>, <DictionaryLink styled={true} term={"char-equal"}><b>char-equal</b></DictionaryLink> 
 
 
 
@@ -157,7 +160,7 @@ Data and Control
 
 
 
-<ClLinks  term={"object"}><i>Object</i></ClLinks> equality is not a concept for which there is a uniquely determined correct algorithm. The appropriateness of an equality predicate can be judged only in the context of the needs of some particular program. Although these functions take any type of argument and their names sound very generic, <ClLinks  term={"equal"}><b>equal</b></ClLinks> and <ClLinks  term={"equalp"}><b>equalp</b></ClLinks> are not appropriate for every application. 
+<GlossaryTerm styled={true} term={"object"}><i>Object</i></GlossaryTerm> equality is not a concept for which there is a uniquely determined correct algorithm. The appropriateness of an equality predicate can be judged only in the context of the needs of some particular program. Although these functions take any type of argument and their names sound very generic, <DictionaryLink styled={true} term={"equal"}><b>equal</b></DictionaryLink> and <DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink> are not appropriate for every application. 
 
 
 

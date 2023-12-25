@@ -2,7 +2,7 @@
 
 
 
-An extended <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is one that has a body containing *atomic expressions*. When the <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> processes such a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, it invokes a facility that is commonly called “the Loop Facility.” 
+An extended <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is one that has a body containing *atomic expressions*. When the <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> processes such a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>, it invokes a facility that is commonly called “the Loop Facility.” 
 
 
 
@@ -10,7 +10,7 @@ The Loop Facility provides standardized access to mechanisms commonly used in it
 
 
 
-The body of an extended <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is divided into <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> clauses, each which is in turn made up of *loop keywords* and <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
+The body of an extended <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is divided into <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> clauses, each which is in turn made up of *loop keywords* and <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. 
 
 
 

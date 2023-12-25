@@ -2,7 +2,7 @@
 
 
 
-An English language description of what <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> the <ClLinks styled={true} term={"operator"}><i>operator</i></ClLinks> accepts and what <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> it returns, including information about defaults for <ClLinks styled={true} term={"parameter"}><i>parameters</i></ClLinks> corresponding to omittable <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> (such as *optional parameters* and *keyword parameters*). For *special operators* and <ClLinks styled={true} term={"macro"}><i>macros</i></ClLinks>, their <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> are not *evaluated* unless it is explicitly stated in their descriptions that they are *evaluated*. 
+An English language description of what <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> the <GlossaryTerm styled={true} term={"operator"}><i>operator</i></GlossaryTerm> accepts and what <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> it returns, including information about defaults for <GlossaryTerm styled={true} term={"parameter"}><i>parameters</i></GlossaryTerm> corresponding to omittable <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> (such as *optional parameters* and *keyword parameters*). For *special operators* and <GlossaryTerm styled={true} term={"macro"}><i>macros</i></GlossaryTerm>, their <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> are not *evaluated* unless it is explicitly stated in their descriptions that they are *evaluated*. 
 
 
 

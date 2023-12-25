@@ -1,4 +1,4 @@
-**make-dispatch-macro-character** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**make-dispatch-macro-character** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></ClLinks> *char* &amp;optional *non-terminating-p readtable →* <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></DictionaryLink> *char* &amp;optional *non-terminating-p readtable →* <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*char*—a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
+*char*—a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
 
 
 
-*non-terminating-p*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*non-terminating-p*—a *generalized boolean*. The default is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"readtable"}><i>readtable</i></ClLinks>—a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. The default is the *current readtable*. 
+<GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm>. The default is the *current readtable*. 
 
 
 
@@ -30,19 +30,15 @@
 
 
 
-<ClLinks  term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></ClLinks> makes *char* be a *dispatching macro character* in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
+<DictionaryLink styled={true} term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></DictionaryLink> makes *char* be a *dispatching macro character* in <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm>. 
 
 
 
-Initially, every <ClLinks  term={"character"}><i>character</i></ClLinks> in the dispatch table associated with the *char* has an associated function that signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"reader-error"}><b>reader-error</b></ClLinks>. 
-
-
+Initially, every <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> in the dispatch table associated with the *char* has an associated function that signals an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"reader-error"}><b>reader-error</b></DictionaryLink>. 
 
 
 
 
-
- 
 
 
 
@@ -50,22 +46,28 @@ Initially, every <ClLinks  term={"character"}><i>character</i></ClLinks> in the 
 
 
 
-If *non-terminating-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, the *dispatching macro character* is made a *non-terminating macro character* ; if *non-terminating-p* is <ClLinks  term={"false"}><i>false</i></ClLinks>, the *dispatching macro character* is made a *terminating macro character* . 
+ 
+
+
+
+If *non-terminating-p* is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, the *dispatching macro character* is made a *non-terminating macro character* ; if *non-terminating-p* is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>, the *dispatching macro character* is made a *terminating macro character* . 
 
 
 
 **Examples:**
 ```lisp
-(get-macro-character #\\&#123;) → NIL, *false* 
-		     (make-dispatch-macro-character #\\&#123;) → T 
-						    (not (get-macro-character #\\&#123;)) → false 
+
+(get-macro-character #\\&#123;) *→* NIL, *false* 
+		     (make-dispatch-macro-character #\\&#123;) *→* T 
+						    (not (get-macro-character #\\&#123;)) *→ false* 
 									      The *readtable* is altered. 
+
 ```
 **See Also:** 
 
 
 
-<ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks>, **set-dispatch-macro-character** 
+<DictionaryLink styled={true} term={"readtable"}><b>\*readtable\*</b></DictionaryLink>, **set-dispatch-macro-character** 
 
 
 

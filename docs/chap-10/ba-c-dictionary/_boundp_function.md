@@ -1,4 +1,4 @@
-**boundp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**boundp** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"boundp"}><b>boundp</b></ClLinks> *symbol → generalized-boolean* 
+<DictionaryLink styled={true} term={"boundp"}><b>boundp</b></DictionaryLink> *symbol → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"bound"}><i>bound</i></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"bound"}><i>bound</i></GlossaryTerm>; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
@@ -44,18 +44,20 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"symbol
 
 **Examples:**
 ```lisp
-(setq x 1) → 1 
-(boundp ’x) → true 
-(makunbound ’x) → X 
-(boundp ’x) → false 
-(let ((x 2)) (boundp ’x)) → false 
-(let ((x 2)) (declare (special x)) (boundp ’x)) → true 
+
+(setq x 1) *→* 1 
+(boundp ’x) *→ true* 
+(makunbound ’x) *→* X 
+(boundp ’x) *→ false* 
+(let ((x 2)) (boundp ’x)) *→ false* 
+(let ((x 2)) (declare (special x)) (boundp ’x)) *→ true* 
+
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -63,7 +65,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"set"}><b>set</b></ClLinks>, <ClLinks  term={"setq"}><b>setq</b></ClLinks>, <ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks>, <ClLinks  term={"makunbound"}><b>makunbound</b></ClLinks> 
+<DictionaryLink styled={true} term={"set"}><b>set</b></DictionaryLink>, <DictionaryLink styled={true} term={"setq"}><b>setq</b></DictionaryLink>, <DictionaryLink styled={true} term={"symbol-value"}><b>symbol-value</b></DictionaryLink>, <DictionaryLink styled={true} term={"makunbound"}><b>makunbound</b></DictionaryLink> 
 
 
 
@@ -71,7 +73,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> **bound** determines only whether a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> has a value in the *global environment*; any *lexical bindings* are ignored. 
+The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> **bound** determines only whether a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> has a value in the *global environment*; any *lexical bindings* are ignored. 
 
 
 

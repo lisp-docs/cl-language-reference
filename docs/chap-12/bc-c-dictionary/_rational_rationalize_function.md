@@ -1,4 +1,4 @@
-**rational, rationalize** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**rational, rationalize** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"rational"}><b>rational</b></ClLinks> *number → rational* 
+<DictionaryLink styled={true} term={"rational"}><b>rational</b></DictionaryLink> *number → rational* 
 
 
 
-<ClLinks  term={"rationalize"}><b>rationalize</b></ClLinks> *number → rational* 
+<DictionaryLink styled={true} term={"rationalize"}><b>rationalize</b></DictionaryLink> *number → rational* 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a *real*. 
+<GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>—a *real*. 
 
 
 
-<ClLinks  term={"rational"}><i>rational</i></ClLinks>—a <ClLinks  term={"rational"}><i>rational</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm>. 
 
 
 
@@ -30,38 +30,40 @@
 
 
 
-<ClLinks  term={"rational"}><b>rational</b></ClLinks> and <ClLinks  term={"rationalize"}><b>rationalize</b></ClLinks> convert *reals* to <ClLinks  term={"rational"}><i>rationals</i></ClLinks>. 
+<DictionaryLink styled={true} term={"rational"}><b>rational</b></DictionaryLink> and <DictionaryLink styled={true} term={"rationalize"}><b>rationalize</b></DictionaryLink> convert *reals* to <GlossaryTerm styled={true} term={"rational"}><i>rationals</i></GlossaryTerm>. 
 
 
 
-If <ClLinks  term={"number"}><i>number</i></ClLinks> is already <ClLinks  term={"rational"}><i>rational</i></ClLinks>, it is returned. 
+If <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> is already <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm>, it is returned. 
 
 
 
-If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"float"}><i>float</i></ClLinks>, <ClLinks  term={"rational"}><b>rational</b></ClLinks> returns a <ClLinks  term={"rational"}><i>rational</i></ClLinks> that is mathematically equal in value to the <ClLinks  term={"float"}><i>float</i></ClLinks>. <ClLinks  term={"rationalize"}><b>rationalize</b></ClLinks> returns a <ClLinks  term={"rational"}><i>rational</i></ClLinks> that approximates the <ClLinks  term={"float"}><i>float</i></ClLinks> to the accuracy of the underlying floating-point representation. 
+If <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm>, <DictionaryLink styled={true} term={"rational"}><b>rational</b></DictionaryLink> returns a <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm> that is mathematically equal in value to the <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm>. <DictionaryLink styled={true} term={"rationalize"}><b>rationalize</b></DictionaryLink> returns a <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm> that approximates the <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> to the accuracy of the underlying floating-point representation. 
 
 
 
-<ClLinks  term={"rational"}><b>rational</b></ClLinks> assumes that the <ClLinks  term={"float"}><i>float</i></ClLinks> is completely accurate. 
+<DictionaryLink styled={true} term={"rational"}><b>rational</b></DictionaryLink> assumes that the <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> is completely accurate. 
 
 
 
-<ClLinks  term={"rationalize"}><b>rationalize</b></ClLinks> assumes that the <ClLinks  term={"float"}><i>float</i></ClLinks> is accurate only to the precision of the floating-point representation. 
+<DictionaryLink styled={true} term={"rationalize"}><b>rationalize</b></DictionaryLink> assumes that the <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> is accurate only to the precision of the floating-point representation. 
 
 
 
 **Examples:**
 ```lisp
-(rational 0) → 0 
-(rationalize -11/100) → -11/100 
-(rational .1) → 13421773/134217728 ;implementation-dependent 
-(rationalize .1) → 1/10 
+
+(rational 0) *→* 0 
+(rationalize -11/100) *→* -11/100 
+(rational .1) *→* 13421773/134217728 ;implementation-dependent 
+(rationalize .1) *→* 1/10 
+
 ```
 **Affected By:** 
 
 
 
-The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 
@@ -69,7 +71,7 @@ The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>.
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a *real*. Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>. 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> is not a *real*. Might signal <DictionaryLink styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>. 
 
 
 
@@ -101,7 +103,7 @@ and
 
 
 
-That is, rationalizing a <ClLinks  term={"float"}><i>float</i></ClLinks> by either method and then converting it back to a <ClLinks  term={"float"}><i>float</i></ClLinks> of the same format produces the original <ClLinks  term={"number"}><i>number</i></ClLinks>. 
+That is, rationalizing a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> by either method and then converting it back to a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> of the same format produces the original <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"warning"}><b>warning</b></ClLinks>, <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"warning"}><b>warning</b></DictionaryLink>, <DictionaryLink styled={true} term={"condition"}><b>condition</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"warning"}><b>warning</b></ClLinks> consists of all types of warnings. 
+The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"warning"}><b>warning</b></DictionaryLink> consists of all types of warnings. 
 
 
 
@@ -34,7 +34,7 @@ The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={
 
 
 
-<ClLinks styled={true} term={"style-warning"}><b>style-warning</b></ClLinks> 
+<DictionaryLink styled={true} term={"style-warning"}><b>style-warning</b></DictionaryLink> 
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-<ClLinks styled={true} term={"list"}><i>Lists</i></ClLinks> are sometimes viewed as sets by considering their elements unordered and by assuming there is no duplication of elements. 
+<GlossaryTerm styled={true} term={"list"}><i>Lists</i></GlossaryTerm> are sometimes viewed as sets by considering their elements unordered and by assuming there is no duplication of elements. 
 
 
 

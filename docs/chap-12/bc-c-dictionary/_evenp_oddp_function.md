@@ -1,4 +1,4 @@
-**evenp, oddp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**evenp, oddp** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"evenp"}><b>evenp</b></ClLinks> *integer → generalized-boolean* 
+<DictionaryLink styled={true} term={"evenp"}><b>evenp</b></DictionaryLink> *integer → generalized-boolean* 
 
 
 
-<ClLinks  term={"oddp"}><b>oddp</b></ClLinks> *integer → generalized-boolean* 
+<DictionaryLink styled={true} term={"oddp"}><b>oddp</b></DictionaryLink> *integer → generalized-boolean* 
 
 
 
@@ -30,23 +30,23 @@
 
 
 
-<ClLinks  term={"evenp"}><b>evenp</b></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if *integer* is even (divisible by two); otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+<DictionaryLink styled={true} term={"evenp"}><b>evenp</b></DictionaryLink> returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if *integer* is even (divisible by two); otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"oddp"}><b>oddp</b></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if *integer* is odd (not divisible by two); otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
-
-**Examples:**
+<DictionaryLink styled={true} term={"oddp"}><b>oddp</b></DictionaryLink> returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if *integer* is odd (not divisible by two); otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. **Examples:**
 ```lisp
-(evenp 0) → true 
-(oddp 10000000000000000000000) → false 
-(oddp -1) → true 
+
+(evenp 0) *→ true* 
+(oddp 10000000000000000000000) *→ false* 
+(oddp -1) *→ true* 
+
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *integer* is not an *integer* . 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *integer* is not an *integer* . 
 
 
 

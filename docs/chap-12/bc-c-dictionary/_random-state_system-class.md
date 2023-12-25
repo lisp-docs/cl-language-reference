@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"random-state"}><b>random-state</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"random-state"}><b>random-state</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-A *random state object* contains state information used by the pseudo-random number generator. The nature of a *random state object* is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. It can be printed out and successfully read back in by the same <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>, but might not function correctly as a *random state* in another <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+A *random state object* contains state information used by the pseudo-random number generator. The nature of a *random state object* is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. It can be printed out and successfully read back in by the same <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>, but might not function correctly as a *random state* in another <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"implementation"}><i>Implementations</i></ClLinks> are required to provide a read syntax for <ClLinks  term={"object"}><i>objects</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"random-state"}><b>random-state</b></ClLinks>, but the specific nature of that syntax is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"implementation"}><i>Implementations</i></GlossaryTerm> are required to provide a read syntax for <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"random-state"}><b>random-state</b></DictionaryLink>, but the specific nature of that syntax is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@ A *random state object* contains state information used by the pseudo-random num
 
 
 
-<ClLinks  term={"random-state"}><b>\*random-state\*</b></ClLinks>, <ClLinks  term={"random"}><b>random</b></ClLinks>, Section 22.1.3.10 (Printing Random States) 
+<DictionaryLink styled={true} term={"random-state"}><b>\*random-state\*</b></DictionaryLink>, <DictionaryLink styled={true} term={"random"}><b>random</b></DictionaryLink>, Section 22.1.3.10 (Printing Random States) 
 
 
 

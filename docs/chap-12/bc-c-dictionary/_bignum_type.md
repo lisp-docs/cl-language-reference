@@ -1,4 +1,4 @@
-**bignum** <ClLinks  term={"type"}><i>Type</i></ClLinks> 
+**bignum** <GlossaryTerm styled={true} term={"type"}><i>Type</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"bignum"}><b>bignum</b></ClLinks>, <ClLinks  term={"integer"}><b>integer</b></ClLinks>, <ClLinks  term={"rational"}><b>rational</b></ClLinks>, <ClLinks  term={"real"}><b>real</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"bignum"}><b>bignum</b></DictionaryLink>, <DictionaryLink styled={true} term={"integer"}><b>integer</b></DictionaryLink>, <DictionaryLink styled={true} term={"rational"}><b>rational</b></DictionaryLink>, <DictionaryLink styled={true} term={"real"}><b>real</b></DictionaryLink>, <DictionaryLink styled={true} term={"number"}><b>number</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,8 +14,8 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"bignum"}><b>bignum</b></ClLinks> is defined to be exactly (and integer (not fixnum)). 
+The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"bignum"}><b>bignum</b></DictionaryLink> is defined to be exactly (and integer (not fixnum)). 
 
 
 
-**=, /=,** *&lt;***,** *&gt;***,** *&lt;***=,** *&gt;*
+**=, /=,** *&lt;***,** *&gt;***,** *&lt;***=,** *&gt;
