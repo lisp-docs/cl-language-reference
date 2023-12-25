@@ -21,11 +21,7 @@ If no <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are supplied, 
 **Examples:**
 
 ```lisp
-
 (if (and (>= n 0) 
-
-
-
   (< n (length a-simple-vector)) 
   (eq (elt a-simple-vector n) ’foo)) 
     (princ "Foo!")) 
