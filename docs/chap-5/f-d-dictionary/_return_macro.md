@@ -2,15 +2,15 @@
 
 **Syntax:**
 
-<ClLinks  term={"return"}><b>return</b></ClLinks> [*result*] →
+<DictionaryLink  term={"return"}><b>return</b></DictionaryLink> [*result*] →
 
 **Arguments and Values:**
 
-*result*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>.
+*result*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>.
 
 **Description:**
 
-Returns, as if by <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, from the <GlossaryTerm  term={"block"}><i>block</i></GlossaryTerm> named <ClLinks  term={"nil"}><b>nil</b></ClLinks>.
+Returns, as if by <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink>, from the <GlossaryTerm  term={"block"}><i>block</i></GlossaryTerm> named <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>.
 
 **Examples:**
 
@@ -25,7 +25,7 @@ Returns, as if by <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, f
 
 **See Also:**
 
-<ClLinks  term={"block"}><b>block</b></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, Section 3.1 (Evaluation)
+<DictionaryLink  term={"block"}><b>block</b></DictionaryLink>, <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink>, Section 3.1 (Evaluation)
 
 **Notes:**
 
@@ -33,4 +33,4 @@ Returns, as if by <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, f
 
 (return <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>) *≡* (return-from nil <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>)
 
-The *implicit blocks established* by <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm> such as <ClLinks  term={"do"}><b>do</b></ClLinks> are often named <ClLinks  term={"nil"}><b>nil</b></ClLinks>, so that <ClLinks  term={"return"}><b>return</b></ClLinks> can be used to exit from such <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>.
+The *implicit blocks established* by <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm> such as <DictionaryLink  term={"do"}><b>do</b></DictionaryLink> are often named <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, so that <DictionaryLink  term={"return"}><b>return</b></DictionaryLink> can be used to exit from such <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>.

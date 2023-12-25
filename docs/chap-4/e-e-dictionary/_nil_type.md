@@ -14,7 +14,7 @@ all <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm>
 
 
 
-The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <ClLinks  term={"nil"}><b>nil</b></ClLinks> contains no <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> and so is also called the *empty type*. The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <ClLinks  term={"nil"}><b>nil</b></ClLinks> is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of every <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>. No <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> contains no <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> and so is also called the *empty type*. The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of every <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>. No <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -22,7 +22,7 @@ The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <ClLinks  term={"nil
 
 
 
-The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> containing the <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> <ClLinks  term={"nil"}><b>nil</b></ClLinks> is the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <ClLinks  term={"null"}><b>null</b></ClLinks>, not the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> containing the <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"null"}><b>null</b></DictionaryLink>, not the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 

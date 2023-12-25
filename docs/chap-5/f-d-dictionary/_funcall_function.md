@@ -2,7 +2,7 @@
 
 **Syntax:**
 
-<ClLinks  term={"funcall"}><b>funcall</b></ClLinks> <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> &amp;rest *args → \{result\}*\*
+<DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink> <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> &amp;rest *args → \{result\}*\*
 
 **Arguments and Values:**
 
@@ -14,7 +14,7 @@
 
 **Description:**
 
-<ClLinks  term={"funcall"}><b>funcall</b></ClLinks> applies <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> to *args*. If <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, it is coerced to a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> as if by finding its *functional value* in the *global environment*.
+<DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink> applies <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> to *args*. If <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, it is coerced to a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> as if by finding its *functional value* in the *global environment*.
 
 **Examples:**
 
@@ -34,11 +34,11 @@
 
 **Exceptional Situations:**
 
-An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <ClLinks  term={"undefined-function"}><b>undefined-function</b></ClLinks> should be signaled if <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> that does not have a global definition as a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> or that has a global definition as a <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> or a *special operator* .
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"undefined-function"}><b>undefined-function</b></DictionaryLink> should be signaled if <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> that does not have a global definition as a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> or that has a global definition as a <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> or a *special operator* .
 
 **See Also:**
 
-<ClLinks  term={"apply"}><b>apply</b></ClLinks>, <ClLinks  term={"function"}><b>function</b></ClLinks>, Section 3.1 (Evaluation)
+<DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink>, <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>, Section 3.1 (Evaluation)
 
 **Notes:**
 
@@ -48,10 +48,10 @@ An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <ClLinks  te
 
 *≡* (apply <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> (list *arg1 arg2* ...))
 
-The difference between <ClLinks  term={"funcall"}><b>funcall</b></ClLinks> and an ordinary function call is that in the former case the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is obtained by ordinary <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, and in the latter case it is obtained by the special interpretation of the function position that normally occurs.
+The difference between <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink> and an ordinary function call is that in the former case the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is obtained by ordinary <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, and in the latter case it is obtained by the special interpretation of the function position that normally occurs.
 
 :::info
 
-We fixed the examples so that it is conforming, by not shadowing <ClLinks  term={"cons"}><b>cons</b></ClLinks> in the <ClLinks  term={"flet"}><b>flet</b></ClLinks> form.
+We fixed the examples so that it is conforming, by not shadowing <DictionaryLink  term={"cons"}><b>cons</b></DictionaryLink> in the <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> form.
 
 :::
