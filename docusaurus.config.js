@@ -46,19 +46,17 @@ const config = {
         },
         docs: {
           sidebarPath: "./sidebars.js",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          routeBasePath: '/',
           editUrl:
             "https://github.com/lisp-docs/cl-language-reference/tree/develop/",
           remarkPlugins: [remarkDefinitionList]
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/lisp-docs/cl-language-reference/tree/develop/",
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   editUrl:
+        //     "https://github.com/lisp-docs/cl-language-reference/tree/develop/",
+        // },
+        blog: false,
         theme: {
           customCss: "./src/css/custom.css",
         },
