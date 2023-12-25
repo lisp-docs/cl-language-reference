@@ -1,5 +1,4 @@
 ```lisp
-
 (loop for i of-type fixnum in ’(1 2 3 4 5) 
       sum i) 
 → 15 
@@ -8,5 +7,4 @@
 (loop for v in series 
       sum (\* 2.0 v)) 
 → 22.4 
-
 ```

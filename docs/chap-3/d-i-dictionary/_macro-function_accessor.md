@@ -1,4 +1,4 @@
-**macro-function** <GlossaryTerm styled={true} term={"accessor"}><i>Accessor</i></GlossaryTerm> 
+**macro-function** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,11 +6,12 @@
 
 
 
-<DictionaryLink styled={true} term={"macro-function"}><b>macro-function</b></DictionaryLink> <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> &amp;optional *environment → function* 
+<ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks> <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> &amp;optional *environment → function* 
 
 
 
-**(setf (macro-function** <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> &amp;optional *environment<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> *new-function***)** 
+<!-- **(setf (macro-function** <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> &amp;optional *environment<ClLinks  term={"t"}><b>*)</b></ClLinks> *new-function***)**  -->
+**(setf (macro-function** *symbol* &amp;optional *environment***)** *new-function***)** 
 
 
 
@@ -18,15 +19,15 @@
 
 
 
-<GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm>—an *environment object*. 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an *environment object*. 
 
 
 
-<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>—a *macro function* or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+<ClLinks  term={"function"}><i>function</i></ClLinks>—a *macro function* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -38,7 +39,7 @@
 
 
 
-Determines whether <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> has a function definition as a macro in the specified <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm>. 
+Determines whether <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> has a function definition as a macro in the specified <ClLinks  term={"environment"}><i>environment</i></ClLinks>. 
 
 
 
@@ -50,17 +51,16 @@ Determines whether <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></Gl
 
 
 
-If so, the macro expansion function, a function of two arguments, is returned. If <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> has no function definition in the lexical environment <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm>, or its definition is not a <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm>, <DictionaryLink styled={true} term={"macro-function"}><b>macro-function</b></DictionaryLink> returns <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+If so, the macro expansion function, a function of two arguments, is returned. If <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> has no function definition in the lexical environment <ClLinks  term={"environment"}><i>environment</i></ClLinks>, or its definition is not a <ClLinks  term={"macro"}><i>macro</i></ClLinks>, <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-It is possible for both <DictionaryLink styled={true} term={"macro-function"}><b>macro-function</b></DictionaryLink> and <DictionaryLink styled={true} term={"special-operator-p"}><b>special-operator-p</b></DictionaryLink> to return <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> definition must be available for use by programs that understand only the standard Common Lisp *special forms*. 
+It is possible for both <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks> and <ClLinks  term={"special-operator-p"}><b>special-operator-p</b></ClLinks> to return <ClLinks  term={"true"}><i>true</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. The <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition must be available for use by programs that understand only the standard Common Lisp *special forms*. 
 
 
 
 **Examples:**
 ```lisp
-
 (defmacro macfun (x) ’(macro-function ’macfun)) → MACFUN 
 (not (macro-function ’macfun)) → false 
 (macrolet ((foo (&environment env) 
@@ -71,13 +71,12 @@ It is possible for both <DictionaryLink styled={true} term={"macro-function"}><b
 	(macrolet ((bar () :beep)) 
 	  (foo)))) 
 → (NO YES) 
-
 ```
 **Affected By:** 
 
 
 
-(setf macro-function), <DictionaryLink styled={true} term={"defmacro"}><b>defmacro</b></DictionaryLink>, and <DictionaryLink styled={true} term={"macrolet"}><b>macrolet</b></DictionaryLink>. 
+(setf macro-function), <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks>, and <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>. 
 
 
 
@@ -85,7 +84,7 @@ It is possible for both <DictionaryLink styled={true} term={"macro-function"}><b
 
 
 
-The consequences are undefined if <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"non-nil"}><i>non-nil</i></GlossaryTerm> in a use of <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink styled={true} term={"macro-function"}><b>macro-function</b></DictionaryLink>. 
+The consequences are undefined if <ClLinks  term={"environment"}><i>environment</i></ClLinks> is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks> in a use of <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks>. 
 
 
 
@@ -93,7 +92,7 @@ The consequences are undefined if <GlossaryTerm styled={true} term={"environment
 
 
 
-<DictionaryLink styled={true} term={"defmacro"}><b>defmacro</b></DictionaryLink>, Section 3.1 (Evaluation) 
+<ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks>, Section 3.1 (Evaluation) 
 
 
 
@@ -101,11 +100,11 @@ The consequences are undefined if <GlossaryTerm styled={true} term={"environment
 
 
 
-<DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> can be used with <DictionaryLink styled={true} term={"macro-function"}><b>macro-function</b></DictionaryLink> to install a <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> as a symbol’s global function definition: (setf (macro-function symbol) fn) 
+<ClLinks  term={"setf"}><b>setf</b></ClLinks> can be used with <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks> to install a <ClLinks  term={"macro"}><i>macro</i></ClLinks> as a symbol’s global function definition: (setf (macro-function symbol) fn) 
 
 
 
-The value installed must be a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> that accepts two arguments, the entire macro call and an <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm>, and computes the expansion for that call. Performing this operation causes <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> to have only that macro definition as its global function definition; any previous definition, whether as a <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> or as a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>, is lost.  
+The value installed must be a <ClLinks  term={"function"}><i>function</i></ClLinks> that accepts two arguments, the entire macro call and an <ClLinks  term={"environment"}><i>environment</i></ClLinks>, and computes the expansion for that call. Performing this operation causes <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to have only that macro definition as its global function definition; any previous definition, whether as a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or as a <ClLinks  term={"function"}><i>function</i></ClLinks>, is lost.  
 
 
 

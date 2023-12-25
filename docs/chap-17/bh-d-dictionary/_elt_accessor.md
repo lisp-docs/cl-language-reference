@@ -1,4 +1,4 @@
-**elt** <GlossaryTerm styled={true} term={"accessor"}><i>Accessor</i></GlossaryTerm> 
+**elt** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,11 +6,12 @@
 
 
 
-<DictionaryLink styled={true} term={"elt"}><b>elt</b></DictionaryLink> *sequence index → object* 
+<ClLinks  term={"elt"}><b>elt</b></ClLinks> *sequence index → object* 
 
 
 
-**(setf (elt** *sequence index***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
+<!-- **(setf (elt** *sequence index***)** *new-object<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
+**(setf (elt** *sequence index***)** *new-object***)** 
 
 
 
@@ -26,11 +27,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*new-object*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+*new-object*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -38,24 +39,22 @@
 
 
 
-*Accesses* the <GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm> of *sequence* specified by *index*. 
+*Accesses* the <ClLinks  term={"element"}><i>element</i></ClLinks> of *sequence* specified by *index*. 
 
 
 
 **Examples:**
 ```lisp
-
 (setq str (copy-seq "0123456789")) → "0123456789" 
 (elt str 6) → #\6 
 (setf (elt str 0) #\#) → #\# 
 str → "#123456789" 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should be prepared to signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a *proper sequence*. Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *index* is not a *valid sequence index* for *sequence*. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *index* is not a *valid sequence index* for *sequence*. 
 
 
 
@@ -63,7 +62,7 @@ Should be prepared to signal an error of <GlossaryTerm styled={true} term={"type
 
 
 
-<DictionaryLink styled={true} term={"aref"}><b>aref</b></DictionaryLink>, <DictionaryLink styled={true} term={"nth"}><b>nth</b></DictionaryLink>, Section 3.2.1 (Compiler Terminology) 
+<ClLinks  term={"aref"}><b>aref</b></ClLinks>, <ClLinks  term={"nth"}><b>nth</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
 
 
 
@@ -71,7 +70,7 @@ Should be prepared to signal an error of <GlossaryTerm styled={true} term={"type
 
 
 
-<DictionaryLink styled={true} term={"aref"}><b>aref</b></DictionaryLink> may be used to *access vector* elements that are beyond the <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> ’s *fill pointer* . 
+<ClLinks  term={"aref"}><b>aref</b></ClLinks> may be used to *access vector* elements that are beyond the <ClLinks  term={"vector"}><i>vector</i></ClLinks> ’s *fill pointer* . 
 
 
 

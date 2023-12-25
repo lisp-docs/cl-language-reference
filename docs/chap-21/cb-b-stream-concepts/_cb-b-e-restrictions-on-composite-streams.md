@@ -2,11 +2,11 @@
 
 
 
-The consequences are undefined if any *component* of a *composite stream* is <GlossaryTerm styled={true} term={"closed"}><i>closed</i></GlossaryTerm> before the *composite stream* is <GlossaryTerm styled={true} term={"closed"}><i>closed</i></GlossaryTerm>. 
+The consequences are undefined if any *component* of a *composite stream* is <ClLinks  term={"closed"}><i>closed</i></ClLinks> before the *composite stream* is <ClLinks  term={"closed"}><i>closed</i></ClLinks>. 
 
 
 
-The consequences are undefined if the *synonym stream symbol* is not <GlossaryTerm styled={true} term={"bound"}><i>bound</i></GlossaryTerm> to an *open stream* from the time of the *synonym stream*’s creation until the time it is <GlossaryTerm styled={true} term={"closed"}><i>closed</i></GlossaryTerm>. 
+The consequences are undefined if the *synonym stream symbol* is not <ClLinks  term={"bound"}><i>bound</i></ClLinks> to an *open stream* from the time of the *synonym stream*’s creation until the time it is <ClLinks  term={"closed"}><i>closed</i></ClLinks>. 
 
 
 

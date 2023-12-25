@@ -6,11 +6,11 @@
 
 
 
-The <GlossaryTerm styled={true} term={"double-quote"}><i>double-quote</i></GlossaryTerm> is used to begin and end a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>. When a <GlossaryTerm styled={true} term={"double-quote"}><i>double-quote</i></GlossaryTerm> is encountered, <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> are read from the *input stream* and accumulated until another <GlossaryTerm styled={true} term={"double-quote"}><i>double-quote</i></GlossaryTerm> is encountered. If a *single escape character* is seen, the *single escape character* is discarded, the next <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> is accumulated, and accumulation continues. The accumulated <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> up to but not including the matching <GlossaryTerm styled={true} term={"double-quote"}><i>double-quote</i></GlossaryTerm> are made into a *simple string* and returned. It is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> which <GlossaryTerm styled={true} term={"attribute"}><i>attributes</i></GlossaryTerm> of the accumulated characters are removed in this process. 
+The <ClLinks  term={"double-quote"}><i>double-quote</i></ClLinks> is used to begin and end a <ClLinks  term={"string"}><i>string</i></ClLinks>. When a <ClLinks  term={"double-quote"}><i>double-quote</i></ClLinks> is encountered, <ClLinks  term={"character"}><i>characters</i></ClLinks> are read from the *input stream* and accumulated until another <ClLinks  term={"double-quote"}><i>double-quote</i></ClLinks> is encountered. If a *single escape character* is seen, the *single escape character* is discarded, the next <ClLinks  term={"character"}><i>character</i></ClLinks> is accumulated, and accumulation continues. The accumulated <ClLinks  term={"character"}><i>characters</i></ClLinks> up to but not including the matching <ClLinks  term={"double-quote"}><i>double-quote</i></ClLinks> are made into a *simple string* and returned. It is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> which <ClLinks  term={"attribute"}><i>attributes</i></ClLinks> of the accumulated characters are removed in this process. 
 
 
 
-Examples of the use of the <GlossaryTerm styled={true} term={"double-quote"}><i>double-quote</i></GlossaryTerm> character are in Figure 2–18. 
+Examples of the use of the <ClLinks  term={"double-quote"}><i>double-quote</i></ClLinks> character are in Figure 2–18. 
 
 
 
@@ -26,9 +26,9 @@ Examples of the use of the <GlossaryTerm styled={true} term={"double-quote"}><i>
 
 
 
-Note that to place a single escape character or a <GlossaryTerm styled={true} term={"double-quote"}><i>double-quote</i></GlossaryTerm> into a string, such a character must be preceded by a single escape character. Note, too, that a multiple escape character need not be quoted by a single escape character within a string. 
+Note that to place a single escape character or a <ClLinks  term={"double-quote"}><i>double-quote</i></ClLinks> into a string, such a character must be preceded by a single escape character. Note, too, that a multiple escape character need not be quoted by a single escape character within a string. 
 
 
 
-For information on how the *Lisp printer* prints <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm>, see Section 22.1.3.4 (Printing Strings).
+For information on how the *Lisp printer* prints <ClLinks  term={"string"}><i>strings</i></ClLinks>, see Section 22.1.3.4 (Printing Strings).
  

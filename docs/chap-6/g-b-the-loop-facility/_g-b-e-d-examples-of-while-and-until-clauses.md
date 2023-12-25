@@ -1,5 +1,4 @@
 ```lisp
-
 (loop while (hungry-p) do (eat)) 
 ;; UNTIL NOT is equivalent to WHILE. 
 (loop until (not (hungry-p)) do (eat)) 
@@ -15,5 +14,4 @@
       when (oddp i) collect i 
       while (< i 5)) 
 → (3 5) 
-
 ```

@@ -1,4 +1,4 @@
-**char-code** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**char-code** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"char-code"}><b>char-code</b></DictionaryLink> *character → code* 
+<ClLinks styled={true} term={"char-code"}><b>char-code</b></ClLinks> *character → code* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
+<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
-<GlossaryTerm styled={true} term={"code"}><i>code</i></GlossaryTerm>—a *character code*. 
+<ClLinks styled={true} term={"code"}><i>code</i></ClLinks>—a *character code*. 
 
 
 
@@ -26,24 +26,22 @@
 
 
 
-<DictionaryLink styled={true} term={"char-code"}><b>char-code</b></DictionaryLink> returns the *code attribute* of <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm>. 
+<ClLinks styled={true} term={"char-code"}><b>char-code</b></ClLinks> returns the *code attribute* of <ClLinks styled={true} term={"character"}><i>character</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 ;; An implementation using ASCII character encoding 
 ;; might return these values: 
 (char-code #\$) → 36 
 (char-code #\a) → 97 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is not a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -51,7 +49,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"char-code-limit"}><b>char-code-limit</b></DictionaryLink> 
+<ClLinks styled={true} term={"char-code-limit"}><b>char-code-limit</b></ClLinks> 
 
 
 

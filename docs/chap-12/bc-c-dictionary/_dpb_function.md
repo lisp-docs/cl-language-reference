@@ -1,4 +1,4 @@
-**dpb** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**dpb** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"dpb"}><b>dpb</b></DictionaryLink> *newbyte bytespec integer → result-integer* 
+<ClLinks  term={"dpb"}><b>dpb</b></ClLinks> *newbyte bytespec integer → result-integer* 
 
 
 
@@ -42,27 +42,25 @@
 
 
 
-<DictionaryLink styled={true} term={"dpb"}><b>dpb</b></DictionaryLink> (deposit byte) is used to replace a field of bits within *integer*. <DictionaryLink styled={true} term={"dpb"}><b>dpb</b></DictionaryLink> returns an *integer* that is the same as *integer* except in the bits specified by *bytespec*. 
+<ClLinks  term={"dpb"}><b>dpb</b></ClLinks> (deposit byte) is used to replace a field of bits within *integer*. <ClLinks  term={"dpb"}><b>dpb</b></ClLinks> returns an *integer* that is the same as *integer* except in the bits specified by *bytespec*. 
 
 
 
-Let s be the size specified by *bytespec*; then the low s bits of *newbyte* appear in the result in the byte specified by *bytespec*. *Newbyte* is interpreted as being right-justified, as if it were the result of <DictionaryLink styled={true} term={"ldb"}><b>ldb</b></DictionaryLink>. 
+Let s be the size specified by *bytespec*; then the low s bits of *newbyte* appear in the result in the byte specified by *bytespec*. *Newbyte* is interpreted as being right-justified, as if it were the result of <ClLinks  term={"ldb"}><b>ldb</b></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (dpb 1 (byte 1 10) 0) → 1024 
 (dpb -2 (byte 2 10) 0) → 2048 
 (dpb 1 (byte 2 10) 2048) → 1024 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"byte"}><b>byte</b></DictionaryLink>, <DictionaryLink styled={true} term={"deposit-field"}><b>deposit-field</b></DictionaryLink>, <DictionaryLink styled={true} term={"ldb"}><b>ldb</b></DictionaryLink> 
+<ClLinks  term={"byte"}><b>byte</b></ClLinks>, <ClLinks  term={"deposit-field"}><b>deposit-field</b></ClLinks>, <ClLinks  term={"ldb"}><b>ldb</b></ClLinks> 
 
 
 

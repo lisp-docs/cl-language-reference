@@ -1,4 +1,4 @@
-**nconc** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**nconc** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"nconc"}><b>nconc</b></DictionaryLink> &amp;rest *lists → concatenated-list* 
+<ClLinks styled={true} term={"nconc"}><b>nconc</b></ClLinks> &amp;rest *lists → concatenated-list* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>—each but the last must be a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> (which might be a *dotted list* but must not be a *circular list*); the last <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> may be any <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—each but the last must be a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> (which might be a *dotted list* but must not be a *circular list*); the last <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> may be any <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*concatenated-list*—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. 
+*concatenated-list*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> that is the concatenation of <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm>. If no <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm> are supplied, (nconc) returns <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. <DictionaryLink styled={true} term={"nconc"}><b>nconc</b></DictionaryLink> is defined using the following recursive relationship: 
+Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that is the concatenation of <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>. If no <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks> are supplied, (nconc) returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. <ClLinks styled={true} term={"nconc"}><b>nconc</b></ClLinks> is defined using the following recursive relationship: 
 
 
 
@@ -34,11 +34,11 @@ Returns a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> t
 
 
 
-(nconc nil . <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm>) *≡* (nconc . <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm>) 
+(nconc nil . <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>) *≡* (nconc . <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>) 
 
 
 
-(nconc <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>) → list 
+(nconc <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) → list 
 
 
 
@@ -46,7 +46,7 @@ Returns a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> t
 
 
 
-(nconc *list-1 list-2* . <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm>) *≡* (nconc (nconc *list-1 list-2*) . <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm>) 
+(nconc *list-1 list-2* . <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>) *≡* (nconc (nconc *list-1 list-2*) . <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>) 
 
 
 
@@ -64,7 +64,6 @@ Returns a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> t
 
 **Examples:**
 ```lisp
-
 (nconc) → NIL 
 (setq x ’(a b c)) → (A B C) 
 (setq y ’(d e f)) → (D E F) 
@@ -85,13 +84,12 @@ baz → (K L M)
 foo → (A B C D E F G H I J K L M) 
 bar → (F G H I J K L M) 
 baz → (K L M) 
-
 ```
 **Side Effects:** 
 
 
 
-The <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm> are modified rather than copied. 
+The <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks> are modified rather than copied. 
 
 
 
@@ -99,7 +97,7 @@ The <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm> are mo
 
 
 
-<DictionaryLink styled={true} term={"append"}><b>append</b></DictionaryLink>, <DictionaryLink styled={true} term={"concatenate"}><b>concatenate</b></DictionaryLink> 
+<ClLinks styled={true} term={"append"}><b>append</b></ClLinks>, <ClLinks styled={true} term={"concatenate"}><b>concatenate</b></ClLinks> 
 
 
 

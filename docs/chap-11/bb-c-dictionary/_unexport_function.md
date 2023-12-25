@@ -1,4 +1,4 @@
-**unexport** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**unexport** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"unexport"}><b>unexport</b></DictionaryLink> <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> &amp;optional *package →* <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
+<ClLinks  term={"unexport"}><b>unexport</b></ClLinks> <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> &amp;optional *package →* <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm>. 
+<ClLinks  term={"symbol"}><i>symbols</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>—a *package designator* . The default is the *current package*. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. 
 
 
 
@@ -26,17 +26,16 @@
 
 
 
-<DictionaryLink styled={true} term={"unexport"}><b>unexport</b></DictionaryLink> reverts external <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> to internal status; it undoes the effect of <DictionaryLink styled={true} term={"export"}><b>export</b></DictionaryLink>. 
+<ClLinks  term={"unexport"}><b>unexport</b></ClLinks> reverts external <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> to internal status; it undoes the effect of <ClLinks  term={"export"}><b>export</b></ClLinks>. 
 
 
 
-<DictionaryLink styled={true} term={"unexport"}><b>unexport</b></DictionaryLink> works only on *symbols present* in <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>, switching them back to internal status. If <DictionaryLink styled={true} term={"unexport"}><b>unexport</b></DictionaryLink> is given a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> that is already <GlossaryTerm styled={true} term={"accessible"}><i>accessible</i></GlossaryTerm> as an *internal symbol* in <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>, it does nothing. 
+<ClLinks  term={"unexport"}><b>unexport</b></ClLinks> works only on *symbols present* in <ClLinks  term={"package"}><i>package</i></ClLinks>, switching them back to internal status. If <ClLinks  term={"unexport"}><b>unexport</b></ClLinks> is given a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as an *internal symbol* in <ClLinks  term={"package"}><i>package</i></ClLinks>, it does nothing. 
 
 
 
 **Examples:**
 ```lisp
-
 (in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
 (export (intern "CONTRABAND" (make-package ’temp)) ’temp) → T 
 (find-symbol "CONTRABAND") → NIL, NIL 
@@ -44,7 +43,6 @@
 (find-symbol "CONTRABAND") → CONTRABAND, :INHERITED 
 (unexport ’contraband ’temp) → T 
 (find-symbol "CONTRABAND") → NIL, NIL 
-
 ```
 **Side Effects:** 
 
@@ -66,11 +64,11 @@ Current state of the package system.
 
 
 
-If <DictionaryLink styled={true} term={"unexport"}><b>unexport</b></DictionaryLink> is given a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> not <GlossaryTerm styled={true} term={"accessible"}><i>accessible</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> at all, an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"package-error"}><b>package-error</b></DictionaryLink> is signaled. 
+If <ClLinks  term={"unexport"}><b>unexport</b></ClLinks> is given a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> not <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> at all, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> is signaled. 
 
 
 
-The consequences are undefined if <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> is the KEYWORD <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> or the COMMON-LISP <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. 
+The consequences are undefined if <ClLinks  term={"package"}><i>package</i></ClLinks> is the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks> or the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -86,7 +84,7 @@ The consequences are undefined if <GlossaryTerm styled={true} term={"package"}><
 
 
 
-<DictionaryLink styled={true} term={"export"}><b>export</b></DictionaryLink>, Section 11.1 (Package Concepts) 
+<ClLinks  term={"export"}><b>export</b></ClLinks>, Section 11.1 (Package Concepts) 
 
 
 

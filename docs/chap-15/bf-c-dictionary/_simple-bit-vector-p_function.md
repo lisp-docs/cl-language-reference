@@ -1,4 +1,4 @@
-**simple-bit-vector-p** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**simple-bit-vector-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"simple-bit-vector-p"}><b>simple-bit-vector-p</b></DictionaryLink> *object → generalized-boolean* 
+<ClLinks  term={"simple-bit-vector-p"}><b>simple-bit-vector-p</b></ClLinks> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"simple-bit-vector"}><b>simple-bit-vector</b></DictionaryLink>; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"simple-bit-vector"}><b>simple-bit-vector</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -42,22 +42,20 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 
 
 
-<DictionaryLink styled={true} term={"simple-bit-vector-p"}><b>simple-bit-vector-p</b></DictionaryLink> 
+<ClLinks  term={"simple-bit-vector-p"}><b>simple-bit-vector-p</b></ClLinks> 
 
 
 
 **Examples:**
 ```lisp
-
 (simple-bit-vector-p (make-array 6)) → false 
 (simple-bit-vector-p #\*) → true 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"simple-vector-p"}><b>simple-vector-p</b></DictionaryLink> 
+<ClLinks  term={"simple-vector-p"}><b>simple-vector-p</b></ClLinks> 
 
 
 
@@ -65,5 +63,5 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 
 
 
-(simple-bit-vector-p <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>) *≡* (typep <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> ’simple-bit-vector) 
+(simple-bit-vector-p <ClLinks  term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks  term={"object"}><i>object</i></ClLinks> ’simple-bit-vector) 
 

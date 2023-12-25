@@ -1,4 +1,4 @@
-**interactive-stream-p** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**interactive-stream-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"interactive-stream-p"}><b>interactive-stream-p</b></DictionaryLink> *stream → generalized-boolean* 
+<ClLinks  term={"interactive-stream-p"}><b>interactive-stream-p</b></ClLinks> *stream → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -26,13 +26,12 @@
 
 
 
-Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is an *interactive stream*; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is an *interactive stream*; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (when (> measured limit) 
   (let ((error (round (\* (- measured limit) 100) 
 		      limit))) 
@@ -41,13 +40,12 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 Is it safe to proceed? " error) 
 		(< error 15)) ;15% is acceptable 
       (error "The frammis is out of tolerance by ~D%." error)))) 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 

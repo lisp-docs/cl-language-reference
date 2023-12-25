@@ -1,4 +1,4 @@
-**make-load-form-saving-slots** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**make-load-form-saving-slots** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"make-load-form-saving-slots"}><b>make-load-form-saving-slots</b></DictionaryLink> <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> &amp;key *slot-names environment* 
+<ClLinks  term={"make-load-form-saving-slots"}><b>make-load-form-saving-slots</b></ClLinks> <ClLinks  term={"object"}><i>object</i></ClLinks> &amp;key *slot-names environment* 
 
 
 
@@ -18,23 +18,23 @@
 
 
 
-<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-*slot-names*—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. 
+*slot-names*—a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm>—an *environment object*. 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an *environment object*. 
 
 
 
-*creation-form*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
+*creation-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*initialization-form*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
+*initialization-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-Returns <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> that, when *evaluated*, will construct an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> equivalent to <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>, without *executing initialization forms*. The <GlossaryTerm styled={true} term={"slot"}><i>slots</i></GlossaryTerm> in the new <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> that correspond to initialized <GlossaryTerm styled={true} term={"slot"}><i>slots</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> are initialized using the values from <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. Uninitialized <GlossaryTerm styled={true} term={"slot"}><i>slots</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> are not initialized in the new <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. <DictionaryLink styled={true} term={"make-load-form-saving-slots"}><b>make-load-form-saving-slots</b></DictionaryLink> works for any <GlossaryTerm styled={true} term={"instance"}><i>instance</i></GlossaryTerm> of <DictionaryLink styled={true} term={"standard-object"}><b>standard-object</b></DictionaryLink> or <DictionaryLink styled={true} term={"structure-object"}><b>structure-object</b></DictionaryLink>. 
+Returns <ClLinks  term={"form"}><i>forms</i></ClLinks> that, when *evaluated*, will construct an <ClLinks  term={"object"}><i>object</i></ClLinks> equivalent to <ClLinks  term={"object"}><i>object</i></ClLinks>, without *executing initialization forms*. The <ClLinks  term={"slot"}><i>slots</i></ClLinks> in the new <ClLinks  term={"object"}><i>object</i></ClLinks> that correspond to initialized <ClLinks  term={"slot"}><i>slots</i></ClLinks> in <ClLinks  term={"object"}><i>object</i></ClLinks> are initialized using the values from <ClLinks  term={"object"}><i>object</i></ClLinks>. Uninitialized <ClLinks  term={"slot"}><i>slots</i></ClLinks> in <ClLinks  term={"object"}><i>object</i></ClLinks> are not initialized in the new <ClLinks  term={"object"}><i>object</i></ClLinks>. <ClLinks  term={"make-load-form-saving-slots"}><b>make-load-form-saving-slots</b></ClLinks> works for any <ClLinks  term={"instance"}><i>instance</i></ClLinks> of <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks> or <ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks>. 
 
 
 
@@ -58,15 +58,15 @@ Returns <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> th
 
 
 
-*Slot-names* is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of the names of the <GlossaryTerm styled={true} term={"slot"}><i>slots</i></GlossaryTerm> to preserve. If *slot-names* is not supplied, its value is all of the *local slots*. 
+*Slot-names* is a <ClLinks  term={"list"}><i>list</i></ClLinks> of the names of the <ClLinks  term={"slot"}><i>slots</i></ClLinks> to preserve. If *slot-names* is not supplied, its value is all of the *local slots*. 
 
 
 
-<DictionaryLink styled={true} term={"make-load-form-saving-slots"}><b>make-load-form-saving-slots</b></DictionaryLink> returns two values, thus it can deal with circular structures. Whether the result is useful in an application depends on whether the <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>’s <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> and slot contents fully capture the application’s idea of the <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>’s state. 
+<ClLinks  term={"make-load-form-saving-slots"}><b>make-load-form-saving-slots</b></ClLinks> returns two values, thus it can deal with circular structures. Whether the result is useful in an application depends on whether the <ClLinks  term={"object"}><i>object</i></ClLinks>’s <ClLinks  term={"type"}><i>type</i></ClLinks> and slot contents fully capture the application’s idea of the <ClLinks  term={"object"}><i>object</i></ClLinks>’s state. 
 
 
 
-<GlossaryTerm styled={true} term={"environment"}><i>Environment</i></GlossaryTerm> is the environment in which the forms will be processed. 
+<ClLinks  term={"environment"}><i>Environment</i></ClLinks> is the environment in which the forms will be processed. 
 
 
 
@@ -74,7 +74,7 @@ Returns <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> th
 
 
 
-<DictionaryLink styled={true} term={"make-load-form"}><b>make-load-form</b></DictionaryLink>, <DictionaryLink styled={true} term={"make-instance"}><b>make-instance</b></DictionaryLink>, <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink>, <DictionaryLink styled={true} term={"slot-value"}><b>slot-value</b></DictionaryLink>, <DictionaryLink styled={true} term={"slot-makunbound"}><b>slot-makunbound</b></DictionaryLink> 
+<ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks>, <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks>, <ClLinks  term={"setf"}><b>setf</b></ClLinks>, <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks>, <ClLinks  term={"slot-makunbound"}><b>slot-makunbound</b></ClLinks> 
 
 
 
@@ -82,11 +82,11 @@ Returns <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> th
 
 
 
-<DictionaryLink styled={true} term={"make-load-form-saving-slots"}><b>make-load-form-saving-slots</b></DictionaryLink> can be useful in user-written <DictionaryLink styled={true} term={"make-load-form"}><b>make-load-form</b></DictionaryLink> methods. 
+<ClLinks  term={"make-load-form-saving-slots"}><b>make-load-form-saving-slots</b></ClLinks> can be useful in user-written <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> methods. 
 
 
 
-When the <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is an <GlossaryTerm styled={true} term={"instance"}><i>instance</i></GlossaryTerm> of <DictionaryLink styled={true} term={"standard-object"}><b>standard-object</b></DictionaryLink>, <DictionaryLink styled={true} term={"make-load-form-saving-slots"}><b>make-load-form-saving-slots</b></DictionaryLink> could return a creation form that <GlossaryTerm styled={true} term={"call"}><i>calls</i></GlossaryTerm> <DictionaryLink styled={true} term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> and an initialization form that contains <GlossaryTerm styled={true} term={"call"}><i>calls</i></GlossaryTerm> to <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink styled={true} term={"slot-value"}><b>slot-value</b></DictionaryLink> and <DictionaryLink styled={true} term={"slot-makunbound"}><b>slot-makunbound</b></DictionaryLink>, though other <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> of similar effect might actually be used. 
+When the <ClLinks  term={"object"}><i>object</i></ClLinks> is an <ClLinks  term={"instance"}><i>instance</i></ClLinks> of <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>, <ClLinks  term={"make-load-form-saving-slots"}><b>make-load-form-saving-slots</b></ClLinks> could return a creation form that <ClLinks  term={"call"}><i>calls</i></ClLinks> <ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks> and an initialization form that contains <ClLinks  term={"call"}><i>calls</i></ClLinks> to <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks> and <ClLinks  term={"slot-makunbound"}><b>slot-makunbound</b></ClLinks>, though other <ClLinks  term={"function"}><i>functions</i></ClLinks> of similar effect might actually be used. 
 
 
 

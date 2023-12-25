@@ -1,4 +1,4 @@
-**list-length** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**list-length** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"list-length"}><b>list-length</b></DictionaryLink> *list → length* 
+<ClLinks styled={true} term={"list-length"}><b>list-length</b></ClLinks> *list → length* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>—a *proper list* or a *circular list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a *proper list* or a *circular list*. 
 
 
 
-<GlossaryTerm styled={true} term={"length"}><i>length</i></GlossaryTerm>—a non-negative *integer* , or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+<ClLinks styled={true} term={"length"}><i>length</i></ClLinks>—a non-negative *integer* , or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,13 +26,12 @@
 
 
 
-Returns the <GlossaryTerm styled={true} term={"length"}><i>length</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> is a *proper list*. Returns <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> is a *circular list*. 
+Returns the <ClLinks styled={true} term={"length"}><i>length</i></ClLinks> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a *proper list*. Returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a *circular list*. 
 
 
 
 **Examples:**
 ```lisp
-
 (list-length ’(a b c d)) → 4 
 (list-length ’(a (b c) d)) → 3 
 (list-length ’()) → 0 
@@ -43,13 +42,12 @@ Returns the <GlossaryTerm styled={true} term={"length"}><i>length</i></GlossaryT
 (list-length (circular-list ’a ’b)) → NIL 
 (list-length (circular-list ’a)) → NIL 
 (list-length (circular-list)) → 0 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> is not a *proper list* or a *circular list*. 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is not a *proper list* or a *circular list*. 
 
 
 
@@ -57,7 +55,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"length"}><b>length</b></DictionaryLink> 
+<ClLinks styled={true} term={"length"}><b>length</b></ClLinks> 
 
 
 
@@ -65,7 +63,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"list-length"}><b>list-length</b></DictionaryLink> could be implemented as follows: 
+<ClLinks styled={true} term={"list-length"}><b>list-length</b></ClLinks> could be implemented as follows: 
 
 
 

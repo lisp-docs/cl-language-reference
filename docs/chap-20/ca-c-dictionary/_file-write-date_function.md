@@ -1,4 +1,4 @@
-**file-write-date** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**file-write-date** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"file-write-date"}><b>file-write-date</b></DictionaryLink> *pathspec → date* 
+<ClLinks  term={"file-write-date"}><b>file-write-date</b></ClLinks> *pathspec → date* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*date*—a *universal time* or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+*date*—a *universal time* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,18 +26,16 @@
 
 
 
-Returns a *universal time* representing the time at which the <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm> specified by *pathspec* was last written (or created), or returns <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if such a time cannot be determined. 
+Returns a *universal time* representing the time at which the <ClLinks  term={"file"}><i>file</i></ClLinks> specified by *pathspec* was last written (or created), or returns <ClLinks  term={"nil"}><b>nil</b></ClLinks> if such a time cannot be determined. 
 
 
 
 **Examples:**
 ```lisp
-
 (with-open-file (s "noel.text" 
 		   :direction :output :if-exists :error) 
   (format s "~&Dear Santa,~2%I was good this year. ~ 
 Please leave lots of toys.~2%Love, Sue~ 
-
  
  
 ~2%attachments: milk, cookies~%") 
@@ -46,7 +44,6 @@ Please leave lots of toys.~2%Love, Sue~
 (with-open-file (s "noel.text") 
   (file-write-date s)) 
 → 2902600800 
-
 ```
 **Affected By:** 
 
@@ -60,11 +57,11 @@ The host computer’s file system.
 
 
 
-An error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if *pathspec* is <GlossaryTerm styled={true} term={"wild"}><i>wild</i></GlossaryTerm>. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if *pathspec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
 
 
 
-An error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if the *file system* cannot perform the requested operation. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if the *file system* cannot perform the requested operation. 
 
 
 

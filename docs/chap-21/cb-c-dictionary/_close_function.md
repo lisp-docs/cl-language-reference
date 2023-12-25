@@ -1,4 +1,4 @@
-**close** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**close** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"close"}><b>close</b></DictionaryLink> <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> &amp;key *abort → result* 
+<ClLinks  term={"close"}><b>close</b></ClLinks> <ClLinks  term={"stream"}><i>stream</i></ClLinks> &amp;key *abort → result* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> (either <GlossaryTerm styled={true} term={"open"}><i>open</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"closed"}><i>closed</i></GlossaryTerm>). 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a <ClLinks  term={"stream"}><i>stream</i></ClLinks> (either <ClLinks  term={"open"}><i>open</i></ClLinks> or <ClLinks  term={"closed"}><i>closed</i></ClLinks>). 
 
 
 
-*abort*—a *generalized boolean*. The default is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+*abort*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-*result*—<DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> if the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> was <GlossaryTerm styled={true} term={"open"}><i>open</i></GlossaryTerm> at the time it was received as an <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm>, or *implementation dependent* otherwise. 
+*result*—<ClLinks  term={"t"}><b>t</b></ClLinks> if the <ClLinks  term={"stream"}><i>stream</i></ClLinks> was <ClLinks  term={"open"}><i>open</i></ClLinks> at the time it was received as an <ClLinks  term={"argument"}><i>argument</i></ClLinks>, or *implementation dependent* otherwise. 
 
 
 
@@ -30,27 +30,27 @@
 
 
 
-<DictionaryLink styled={true} term={"close"}><b>close</b></DictionaryLink> closes <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. Closing a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> means that it may no longer be used in input or output operations. The act of *closing* a *file stream* ends the association between the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> and its associated <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm>; the transaction with the *file system* is terminated, and input/output may no longer be performed on the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
+<ClLinks  term={"close"}><b>close</b></ClLinks> closes <ClLinks  term={"stream"}><i>stream</i></ClLinks>. Closing a <ClLinks  term={"stream"}><i>stream</i></ClLinks> means that it may no longer be used in input or output operations. The act of *closing* a *file stream* ends the association between the <ClLinks  term={"stream"}><i>stream</i></ClLinks> and its associated <ClLinks  term={"file"}><i>file</i></ClLinks>; the transaction with the *file system* is terminated, and input/output may no longer be performed on the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-If *abort* is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, an attempt is made to clean up any side effects of having created <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. If <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> performs output to a file that was created when the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> was created, the file is deleted and any previously existing file is not superseded. 
+If *abort* is <ClLinks  term={"true"}><i>true</i></ClLinks>, an attempt is made to clean up any side effects of having created <ClLinks  term={"stream"}><i>stream</i></ClLinks>. If <ClLinks  term={"stream"}><i>stream</i></ClLinks> performs output to a file that was created when the <ClLinks  term={"stream"}><i>stream</i></ClLinks> was created, the file is deleted and any previously existing file is not superseded. 
 
 
 
-It is permissible to close an already closed <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>, but in that case the *result* is *implementation dependent*. 
+It is permissible to close an already closed <ClLinks  term={"stream"}><i>stream</i></ClLinks>, but in that case the *result* is *implementation dependent*. 
 
 
 
-After <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is closed, it is still possible to perform the following query operations upon it: <DictionaryLink styled={true} term={"streamp"}><b>streamp</b></DictionaryLink>, <DictionaryLink styled={true} term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink styled={true} term={"truename"}><b>truename</b></DictionaryLink>, <DictionaryLink styled={true} term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink>, **pathname-host**, **pathname-device**, **pathname-directory**,**pathname-name**, **pathname-type**, **pathname-version**, <DictionaryLink styled={true} term={"namestring"}><b>namestring</b></DictionaryLink>, <DictionaryLink styled={true} term={"file-namestring"}><b>file-namestring</b></DictionaryLink>, <DictionaryLink styled={true} term={"directory-namestring"}><b>directory-namestring</b></DictionaryLink>, <DictionaryLink styled={true} term={"host-namestring"}><b>host-namestring</b></DictionaryLink>, <DictionaryLink styled={true} term={"enough-namestring"}><b>enough-namestring</b></DictionaryLink>, <DictionaryLink styled={true} term={"open"}><b>open</b></DictionaryLink>, <DictionaryLink styled={true} term={"probe-file"}><b>probe-file</b></DictionaryLink>, and <DictionaryLink styled={true} term={"directory"}><b>directory</b></DictionaryLink>. 
+After <ClLinks  term={"stream"}><i>stream</i></ClLinks> is closed, it is still possible to perform the following query operations upon it: <ClLinks  term={"streamp"}><b>streamp</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"truename"}><b>truename</b></ClLinks>, <ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks>, **pathname-host**, **pathname-device**, **pathname-directory**,**pathname-name**, **pathname-type**, **pathname-version**, <ClLinks  term={"namestring"}><b>namestring</b></ClLinks>, <ClLinks  term={"file-namestring"}><b>file-namestring</b></ClLinks>, <ClLinks  term={"directory-namestring"}><b>directory-namestring</b></ClLinks>, <ClLinks  term={"host-namestring"}><b>host-namestring</b></ClLinks>, <ClLinks  term={"enough-namestring"}><b>enough-namestring</b></ClLinks>, <ClLinks  term={"open"}><b>open</b></ClLinks>, <ClLinks  term={"probe-file"}><b>probe-file</b></ClLinks>, and <ClLinks  term={"directory"}><b>directory</b></ClLinks>. 
 
 
 
-The effect of <DictionaryLink styled={true} term={"close"}><b>close</b></DictionaryLink> on a *constructed stream* is to close the argument <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> only. There is no effect on the <GlossaryTerm styled={true} term={"constituent"}><i>constituents</i></GlossaryTerm> of *composite streams*. 
+The effect of <ClLinks  term={"close"}><b>close</b></ClLinks> on a *constructed stream* is to close the argument <ClLinks  term={"stream"}><i>stream</i></ClLinks> only. There is no effect on the <ClLinks  term={"constituent"}><i>constituents</i></ClLinks> of *composite streams*. 
 
 
 
-For a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> created with <DictionaryLink styled={true} term={"make-string-output-stream"}><b>make-string-output-stream</b></DictionaryLink>, the result of <DictionaryLink styled={true} term={"get-output-stream-string"}><b>get-output-stream-string</b></DictionaryLink> is unspecified after <DictionaryLink styled={true} term={"close"}><b>close</b></DictionaryLink>. 
+For a <ClLinks  term={"stream"}><i>stream</i></ClLinks> created with <ClLinks  term={"make-string-output-stream"}><b>make-string-output-stream</b></ClLinks>, the result of <ClLinks  term={"get-output-stream-string"}><b>get-output-stream-string</b></ClLinks> is unspecified after <ClLinks  term={"close"}><b>close</b></ClLinks>. 
 
 
 
@@ -68,17 +68,15 @@ For a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> c
 
 **Examples:**
 ```lisp
-
 (setq s (make-broadcast-stream)) → #<BROADCAST-STREAM> 
 (close s) → T 
 (output-stream-p s) → true 
-
 ```
 **Side Effects:** 
 
 
 
-The <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"closed"}><i>closed</i></GlossaryTerm> (if necessary). If *abort* is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> and the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is an *output file stream*, its associated <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm> might be deleted. 
+The <ClLinks  term={"stream"}><i>stream</i></ClLinks> is <ClLinks  term={"closed"}><i>closed</i></ClLinks> (if necessary). If *abort* is <ClLinks  term={"true"}><i>true</i></ClLinks> and the <ClLinks  term={"stream"}><i>stream</i></ClLinks> is an *output file stream*, its associated <ClLinks  term={"file"}><i>file</i></ClLinks> might be deleted. 
 
 
 
@@ -86,7 +84,7 @@ The <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is 
 
 
 
-<DictionaryLink styled={true} term={"open"}><b>open</b></DictionaryLink> 
+<ClLinks  term={"open"}><b>open</b></ClLinks> 
 
 
 

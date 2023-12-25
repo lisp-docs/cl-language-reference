@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"return-from"}><b>return-from</b></DictionaryLink> <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> [*result*] → 
+<ClLinks  term={"return-from"}><b>return-from</b></ClLinks> <ClLinks  term={"name"}><i>name</i></ClLinks> [*result*] → 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a *block tag*; not evaluated. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a *block tag*; not evaluated. 
 
 
 
-*result*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>; evaluated. The default is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+*result*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,21 +26,20 @@
 
 
 
-Returns control and *multiple values*<sub>2</sub> from a lexically enclosing <GlossaryTerm styled={true} term={"block"}><i>block</i></GlossaryTerm>. 
+Returns control and *multiple values*<sub>2</sub> from a lexically enclosing <ClLinks  term={"block"}><i>block</i></ClLinks>. 
 
 
 
-A <DictionaryLink styled={true} term={"block"}><b>block</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> named <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> must lexically enclose the occurrence of <DictionaryLink styled={true} term={"return-from"}><b>return-from</b></DictionaryLink>; any *values yielded* by the <GlossaryTerm styled={true} term={"evaluation"}><i>evaluation</i></GlossaryTerm> of *result* are immediately returned from the innermost such lexically enclosing <GlossaryTerm styled={true} term={"block"}><i>block</i></GlossaryTerm>. 
+A <ClLinks  term={"block"}><b>block</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> named <ClLinks  term={"name"}><i>name</i></ClLinks> must lexically enclose the occurrence of <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>; any *values yielded* by the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of *result* are immediately returned from the innermost such lexically enclosing <ClLinks  term={"block"}><i>block</i></ClLinks>. 
 
 
 
-The transfer of control initiated by <DictionaryLink styled={true} term={"return-from"}><b>return-from</b></DictionaryLink> is performed as described in Section 5.2 (Transfer of Control to an Exit Point). 
+The transfer of control initiated by <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> is performed as described in Section 5.2 (Transfer of Control to an Exit Point). 
 
 
 
 **Examples:**
 ```lisp
-
 (block alpha (return-from alpha) 1) → NIL 
 (block alpha (return-from alpha 1) 2) → 1 
 (block alpha (return-from alpha (values 1 2)) 3) → 1, 2 
@@ -48,7 +47,6 @@ The transfer of control initiated by <DictionaryLink styled={true} term={"return
   (dotimes (i 10) (incf a) (when (oddp i) (return))) 
   a) → 2 
 Data and Control 
-
 
 **return-from** 
 (defun temp (x) 
@@ -93,14 +91,12 @@ The following has undefined consequences because the **block** *form* exits norm
 (funcall (block nil #’(lambda () (return-from nil)))) is an error. 
 
 
-
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"block"}><b>block</b></DictionaryLink>, <DictionaryLink styled={true} term={"return"}><b>return</b></DictionaryLink>, Section 3.1 (Evaluation) 
+<ClLinks  term={"block"}><b>block</b></ClLinks>, <ClLinks  term={"return"}><b>return</b></ClLinks>, Section 3.1 (Evaluation) 
 
 
 

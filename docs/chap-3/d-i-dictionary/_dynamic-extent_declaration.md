@@ -1,4 +1,4 @@
-**dynamic-extent** <GlossaryTerm styled={true} term={"declaration"}><i>Declaration</i></GlossaryTerm> 
+**dynamic-extent** <ClLinks  term={"declaration"}><i>Declaration</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-(dynamic-extent [[ *\{var\}*\* | (<DictionaryLink styled={true} term={"function"}><b>function</b></DictionaryLink> *fn*)\* ]]) 
+(dynamic-extent [[ *\{var\}*\* | (<ClLinks  term={"function"}><b>function</b></ClLinks> *fn*)\* ]]) 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm> 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks> 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> 
+<ClLinks  term={"variable"}><i>variable</i></ClLinks>, <ClLinks  term={"function"}><i>function</i></ClLinks> 
 
 
 
@@ -58,25 +58,24 @@ Evaluation and
 
 
 
-<DictionaryLink styled={true} term={"dynamic-extent"}><b>dynamic-extent</b></DictionaryLink> 
+<ClLinks  term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> 
 
 
 
-The compiler is permitted to use this information in any way that is appropriate to the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> and that does not conflict with the semantics of Common Lisp. 
+The compiler is permitted to use this information in any way that is appropriate to the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> and that does not conflict with the semantics of Common Lisp. 
 
 
 
-<DictionaryLink styled={true} term={"dynamic-extent"}><b>dynamic-extent</b></DictionaryLink> declarations can be *free declarations* or *bound declarations*. 
+<ClLinks  term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> declarations can be *free declarations* or *bound declarations*. 
 
 
 
-The *vars* and *fns* named in a <DictionaryLink styled={true} term={"dynamic-extent"}><b>dynamic-extent</b></DictionaryLink> declaration must not refer to *symbol macro* or <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> bindings. 
+The *vars* and *fns* named in a <ClLinks  term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> declaration must not refer to *symbol macro* or <ClLinks  term={"macro"}><i>macro</i></ClLinks> bindings. 
 
 
 
 **Examples:**
 ```lisp
-
 Since stack allocation of the initial value entails knowing at the *object*’s creation time that the *object* can be *stack-allocated*, it is not generally useful to make a **dynamic-extent** *declaration* for *variables* which have no lexically apparent initial value. For example, it is probably useful to write: 
 (defun f () 
   (let ((x (list 1 2 3))) 
@@ -97,7 +96,6 @@ In the previous example, some compilers might determine that optimization was po
 A variant of this is the so-called “stack allocated rest list” that can be achieved (in implementations supporting the optimization) by: 
 (defun f (&rest x) 
   (declare (dynamic-extent x)) 
-
   
   
   **dynamic-extent** 
@@ -136,7 +134,6 @@ The *otherwise inaccessible parts* of x are three *conses*, and the *otherwise i
 ▷ "COMMON-LISP" 
 Evaluation and 
 
-
 ▷ "COMMON-LISP-USER" 
 *!* NIL 
 ;; Some implementations might have the ability to *stack allocate* 
@@ -166,13 +163,12 @@ The following are in error, since the value of x is used outside of its *extent*
 	 (declare (dynamic-extent x)) 
 	 x) 
        nil) 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink> 
+<ClLinks  term={"declare"}><b>declare</b></ClLinks> 
 
 
 
@@ -180,7 +176,7 @@ The following are in error, since the value of x is used outside of its *extent*
 
 
 
-The most common optimization is to *stack allocate* the initial value of the <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> named by the *vars*. 
+The most common optimization is to *stack allocate* the initial value of the <ClLinks  term={"object"}><i>objects</i></ClLinks> named by the *vars*. 
 
 
 
@@ -200,7 +196,7 @@ It is permissible for an implementation to simply ignore this declaration.
 
 
 
-<DictionaryLink styled={true} term={"type"}><b>type</b></DictionaryLink> 
+<ClLinks  term={"type"}><b>type</b></ClLinks> 
 
 
 

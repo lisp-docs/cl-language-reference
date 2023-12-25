@@ -2,7 +2,7 @@
 
 
 
-The *global environment* is that part of an <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm> that contains <GlossaryTerm styled={true} term={"binding"}><i>bindings</i></GlossaryTerm> with both *indefinite scope* and *indefinite extent*. The *global environment* contains, among other things, the following: 
+The *global environment* is that part of an <ClLinks  term={"environment"}><i>environment</i></ClLinks> that contains <ClLinks  term={"binding"}><i>bindings</i></ClLinks> with both *indefinite scope* and *indefinite extent*. The *global environment* contains, among other things, the following: 
 
 
 
@@ -10,7 +10,7 @@ The *global environment* is that part of an <GlossaryTerm styled={true} term={"e
 
 
 
-*• bindings* of <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"macro"}><i>macros</i></GlossaryTerm>, and *special operators*. 
+*• bindings* of <ClLinks  term={"function"}><i>functions</i></ClLinks>, <ClLinks  term={"macro"}><i>macros</i></ClLinks>, and *special operators*. 
 
 
 
@@ -18,11 +18,11 @@ The *global environment* is that part of an <GlossaryTerm styled={true} term={"e
 
 
 
-*• bindings* of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> and *class names* 
+*• bindings* of <ClLinks  term={"type"}><i>type</i></ClLinks> and *class names* 
 
 
 
-*•* information about <GlossaryTerm styled={true} term={"proclamation"}><i>proclamations</i></GlossaryTerm>.  
+*•* information about <ClLinks  term={"proclamation"}><i>proclamations</i></ClLinks>.  
 
 
 

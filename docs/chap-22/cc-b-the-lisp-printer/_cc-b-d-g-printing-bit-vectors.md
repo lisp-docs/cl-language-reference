@@ -2,7 +2,7 @@
 
 
 
-A *bit vector* is printed as #\* followed by the bits of the *bit vector* in order. If <DictionaryLink styled={true} term={"print-array"}><b>\*print-array\*</b></DictionaryLink> is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>, then the *bit vector* is printed in a format (using #&lt;) that is concise but not readable. Only the *active elements* of the *bit vector* are printed. 
+A *bit vector* is printed as #\* followed by the bits of the *bit vector* in order. If <ClLinks styled={true} term={"print-array"}><b>\*print-array\*</b></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, then the *bit vector* is printed in a format (using #&lt;) that is concise but not readable. Only the *active elements* of the *bit vector* are printed. 
 
 
 

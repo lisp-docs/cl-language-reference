@@ -1,4 +1,4 @@
-**upper-case-p, lower-case-p, both-case-p** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**upper-case-p, lower-case-p, both-case-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,15 +6,15 @@
 
 
 
-<DictionaryLink styled={true} term={"upper-case-p"}><b>upper-case-p</b></DictionaryLink> *character → generalized-boolean* 
+<ClLinks styled={true} term={"upper-case-p"}><b>upper-case-p</b></ClLinks> *character → generalized-boolean* 
 
 
 
-<DictionaryLink styled={true} term={"lower-case-p"}><b>lower-case-p</b></DictionaryLink> *character → generalized-boolean* 
+<ClLinks styled={true} term={"lower-case-p"}><b>lower-case-p</b></ClLinks> *character → generalized-boolean* 
 
 
 
-<DictionaryLink styled={true} term={"both-case-p"}><b>both-case-p</b></DictionaryLink> *character → generalized-boolean* 
+<ClLinks styled={true} term={"both-case-p"}><b>both-case-p</b></ClLinks> *character → generalized-boolean* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
+<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -34,13 +34,14 @@
 
 
 
-These functions test the case of a given <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm>. 
+These functions test the case of a given <ClLinks styled={true} term={"character"}><i>character</i></ClLinks>. 
 
 
 
-<DictionaryLink styled={true} term={"upper-case-p"}><b>upper-case-p</b></DictionaryLink> returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> is an *uppercase character* ; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. <DictionaryLink styled={true} term={"lower-case-p"}><b>lower-case-p</b></DictionaryLink> returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> is a *lowercase character* ; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. <DictionaryLink styled={true} term={"both-case-p"}><b>both-case-p</b></DictionaryLink> returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> with <GlossaryTerm styled={true} term={"case"}><i>case</i></GlossaryTerm>; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. **Examples:**
+<ClLinks styled={true} term={"upper-case-p"}><b>upper-case-p</b></ClLinks> returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is an *uppercase character* ; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. <ClLinks styled={true} term={"lower-case-p"}><b>lower-case-p</b></ClLinks> returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is a *lowercase character* ; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. <ClLinks styled={true} term={"both-case-p"}><b>both-case-p</b></ClLinks> returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> with <ClLinks styled={true} term={"case"}><i>case</i></ClLinks>; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+
+**Examples:**
 ```lisp
-
 (upper-case-p #\A) → true 
 (upper-case-p #\a) → false 
 (both-case-p #\a) → true 
@@ -52,14 +53,12 @@ These functions test the case of a given <GlossaryTerm styled={true} term={"char
 (lower-case-p #\Bell) → false 
 
 
-
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is not a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -67,7 +66,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"char-upcase"}><b>char-upcase</b></DictionaryLink>, <DictionaryLink styled={true} term={"char-downcase"}><b>char-downcase</b></DictionaryLink>, Section 13.1.4.3 (Characters With Case), Section 13.1.10 (Documentation of Implementation-Defined Scripts) 
+<ClLinks styled={true} term={"char-upcase"}><b>char-upcase</b></ClLinks>, <ClLinks styled={true} term={"char-downcase"}><b>char-downcase</b></ClLinks>, Section 13.1.4.3 (Characters With Case), Section 13.1.10 (Documentation of Implementation-Defined Scripts) 
 
 
 

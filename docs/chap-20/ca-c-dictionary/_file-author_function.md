@@ -1,4 +1,4 @@
-**file-author** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**file-author** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"file-author"}><b>file-author</b></DictionaryLink> *pathspec → author* 
+<ClLinks  term={"file-author"}><b>file-author</b></ClLinks> *pathspec → author* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*author*—a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+*author*—a <ClLinks  term={"string"}><i>string</i></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -38,17 +38,15 @@
 
 
 
-Returns a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> naming the author of the <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm> specified by *pathspec*, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if the author’s name cannot be determined. 
+Returns a <ClLinks  term={"string"}><i>string</i></ClLinks> naming the author of the <ClLinks  term={"file"}><i>file</i></ClLinks> specified by *pathspec*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if the author’s name cannot be determined. 
 
 
 
 **Examples:**
 ```lisp
-
 (with-open-file (stream ">relativity>general.text") 
   (file-author s)) 
 → "albert" 
-
 ```
 **Affected By:** 
 
@@ -58,7 +56,7 @@ The host computer’s file system.
 
 
 
-Other users of the <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm> named by *pathspec*. 
+Other users of the <ClLinks  term={"file"}><i>file</i></ClLinks> named by *pathspec*. 
 
 
 
@@ -66,11 +64,11 @@ Other users of the <GlossaryTerm styled={true} term={"file"}><i>file</i></Glossa
 
 
 
-An error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if *pathspec* is <GlossaryTerm styled={true} term={"wild"}><i>wild</i></GlossaryTerm>. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if *pathspec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
 
 
 
-An error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if the *file system* cannot perform the requested operation. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if the *file system* cannot perform the requested operation. 
 
 
 
@@ -78,7 +76,7 @@ An error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>
 
 
 
-<DictionaryLink styled={true} term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink styled={true} term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 

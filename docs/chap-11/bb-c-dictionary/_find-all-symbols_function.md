@@ -1,4 +1,4 @@
-**find-all-symbols** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**find-all-symbols** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"find-all-symbols"}><b>find-all-symbols</b></DictionaryLink> *string → symbols* 
+<ClLinks  term={"find-all-symbols"}><b>find-all-symbols</b></ClLinks> *string → symbols* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>—a *string designator* . 
+<ClLinks  term={"string"}><i>string</i></ClLinks>—a *string designator* . 
 
 
 
-<GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm>. 
+<ClLinks  term={"symbol"}><i>symbols</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 
@@ -26,13 +26,12 @@
 
 
 
-<DictionaryLink styled={true} term={"find-all-symbols"}><b>find-all-symbols</b></DictionaryLink> searches every *registered package* for <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> that have a <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> that is the <GlossaryTerm styled={true} term={"same"}><i>same</i></GlossaryTerm> (under <DictionaryLink styled={true} term={"string"}><b>string=</b></DictionaryLink>) as <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>. A <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of all such <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> is returned. Whether or how the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> is ordered is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
+<ClLinks  term={"find-all-symbols"}><b>find-all-symbols</b></ClLinks> searches every *registered package* for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that have a <ClLinks  term={"name"}><i>name</i></ClLinks> that is the <ClLinks  term={"same"}><i>same</i></ClLinks> (under <ClLinks  term={"string"}><b>string=</b></ClLinks>) as <ClLinks  term={"string"}><i>string</i></ClLinks>. A <ClLinks  term={"list"}><i>list</i></ClLinks> of all such <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is returned. Whether or how the <ClLinks  term={"list"}><i>list</i></ClLinks> is ordered is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (find-all-symbols ’car) 
 → (CAR) 
 <i><sup>or</sup>→</i> (CAR VEHICLES:CAR) 
@@ -43,13 +42,12 @@
 <i><sup>or</sup>→</i> (CAR TEMP::CAR) 
 <i><sup>or</sup>→</i> (TEMP::CAR CAR VEHICLES:CAR) 
 <i><sup>or</sup>→</i> (CAR TEMP::CAR VEHICLES:CAR) 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"find-symbol"}><b>find-symbol</b></DictionaryLink> 
+<ClLinks  term={"find-symbol"}><b>find-symbol</b></ClLinks> 
 
 
 

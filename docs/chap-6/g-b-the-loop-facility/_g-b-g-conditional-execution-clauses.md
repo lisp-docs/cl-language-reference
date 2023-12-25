@@ -2,7 +2,7 @@
 
 
 
-The if, when, and unless constructs establish conditional control in a <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink>. If the test passes, the succeeding loop clause is executed. If the test does not pass, the succeeding clause is skipped, and program control moves to the clause that follows the *loop keyword* else. If the test does not pass and no else clause is supplied, control is transferred to the clause or construct following the entire 
+The if, when, and unless constructs establish conditional control in a <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>. If the test passes, the succeeding loop clause is executed. If the test does not pass, the succeeding clause is skipped, and program control moves to the clause that follows the *loop keyword* else. If the test does not pass and no else clause is supplied, control is transferred to the clause or construct following the entire 
 
 
 
@@ -14,7 +14,7 @@ If conditional clauses are nested, each else is paired with the closest precedin
 
 
 
-In the if and when clauses, which are synonymous, the test passes if the value of <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>. In the unless clause, the test passes if the value of <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+In the if and when clauses, which are synonymous, the test passes if the value of <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. In the unless clause, the test passes if the value of <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 

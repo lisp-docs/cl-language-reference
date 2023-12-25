@@ -1,4 +1,4 @@
-**machine-type** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**machine-type** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"machine-type"}><b>machine-type</b></DictionaryLink> *hno argumentsi → description* 
+<ClLinks styled={true} term={"machine-type"}><b>machine-type</b></ClLinks> *⟨no arguments⟩ → description* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*description*—a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+*description*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -22,17 +22,15 @@
 
 
 
-Returns a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> that identifies the generic name of the computer hardware on which Common Lisp is running. 
+Returns a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that identifies the generic name of the computer hardware on which Common Lisp is running. 
 
 
 
 **Examples:**
 ```lisp
-
 (machine-type) 
 → "DEC PDP-10" 
 <i><sup>or</sup>→</i> "Symbolics LM-2" 
-
 ```
 **Affected By:** 
 
@@ -46,7 +44,7 @@ The machine type. The implementation.
 
 
 
-<DictionaryLink styled={true} term={"machine-version"}><b>machine-version</b></DictionaryLink> 
+<ClLinks styled={true} term={"machine-version"}><b>machine-version</b></ClLinks> 
 
 
 

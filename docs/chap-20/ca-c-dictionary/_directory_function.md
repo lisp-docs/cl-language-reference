@@ -1,4 +1,4 @@
-**directory** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**directory** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"directory"}><b>directory</b></DictionaryLink> *pathspec* &amp;key → pathnames 
+<ClLinks  term={"directory"}><b>directory</b></ClLinks> *pathspec* &amp;key → pathnames 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*pathspec*—a *pathname designator* , which may contain <GlossaryTerm styled={true} term={"wild"}><i>wild</i></GlossaryTerm> components. 
+*pathspec*—a *pathname designator* , which may contain <ClLinks  term={"wild"}><i>wild</i></ClLinks> components. 
 
 
 
-<GlossaryTerm styled={true} term={"pathname"}><i>pathnames</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of *physical pathnames*. 
+<ClLinks  term={"pathname"}><i>pathnames</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *physical pathnames*. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Determines which, if any, <GlossaryTerm styled={true} term={"file"}><i>files</i></GlossaryTerm> that are present in the file system have names matching *pathspec*, and returns a *fresh list* of <GlossaryTerm styled={true} term={"pathname"}><i>pathnames</i></GlossaryTerm> corresponding to the <GlossaryTerm styled={true} term={"truename"}><i>truenames</i></GlossaryTerm> of those <GlossaryTerm styled={true} term={"file"}><i>files</i></GlossaryTerm>. 
+Determines which, if any, <ClLinks  term={"file"}><i>files</i></ClLinks> that are present in the file system have names matching *pathspec*, and returns a *fresh list* of <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks> corresponding to the <ClLinks  term={"truename"}><i>truenames</i></ClLinks> of those <ClLinks  term={"file"}><i>files</i></ClLinks>. 
 
 
 
-An <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> may be extended to accept <GlossaryTerm styled={true} term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm> keyword arguments to <DictionaryLink styled={true} term={"directory"}><b>directory</b></DictionaryLink>. 
+An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> may be extended to accept <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> keyword arguments to <ClLinks  term={"directory"}><b>directory</b></ClLinks>. 
 
 
 
@@ -46,7 +46,7 @@ The host computer’s file system.
 
 
 
-If the attempt to obtain a directory listing is not successful, an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
+If the attempt to obtain a directory listing is not successful, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
 
 
 
@@ -54,7 +54,7 @@ If the attempt to obtain a directory listing is not successful, an error of <Glo
 
 
 
-<DictionaryLink styled={true} term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink styled={true} term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, <DictionaryLink styled={true} term={"ensure-directories-exist"}><b>ensure-directories-exist</b></DictionaryLink>, Section 20.1 (File System Concepts), Section 21.1.1.1.2 (Open and Closed Streams), Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, <ClLinks  term={"ensure-directories-exist"}><b>ensure-directories-exist</b></ClLinks>, Section 20.1 (File System Concepts), Section 21.1.1.1.2 (Open and Closed Streams), Section 19.1.2 (Pathnames as Filenames) 
 
 
 
@@ -62,11 +62,11 @@ If the attempt to obtain a directory listing is not successful, an error of <Glo
 
 
 
-If the *pathspec* is not <GlossaryTerm styled={true} term={"wild"}><i>wild</i></GlossaryTerm>, the resulting list will contain either zero or one elements. 
+If the *pathspec* is not <ClLinks  term={"wild"}><i>wild</i></ClLinks>, the resulting list will contain either zero or one elements. 
 
 
 
-Common Lisp specifies “&amp;key” in the argument list to <DictionaryLink styled={true} term={"directory"}><b>directory</b></DictionaryLink> even though no <GlossaryTerm styled={true} term={"standardized"}><i>standardized</i></GlossaryTerm> keyword arguments to <DictionaryLink styled={true} term={"directory"}><b>directory</b></DictionaryLink> are defined. “:allow-other-keys t” may be used in *conforming programs* in order to quietly ignore any additional keywords which are passed by the program but not supported by the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>. 
+Common Lisp specifies “&amp;key” in the argument list to <ClLinks  term={"directory"}><b>directory</b></ClLinks> even though no <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> keyword arguments to <ClLinks  term={"directory"}><b>directory</b></ClLinks> are defined. “:allow-other-keys t” may be used in *conforming programs* in order to quietly ignore any additional keywords which are passed by the program but not supported by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"progv"}><b>progv</b></DictionaryLink> *symbols values \{form\}*\* → \{result\}\* 
+<ClLinks  term={"progv"}><b>progv</b></ClLinks> *symbols values \{form\}*\* → \{result\}\* 
 
 
 
@@ -14,19 +14,19 @@
 
 
 
-<GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm>; evaluated. 
+<ClLinks  term={"symbol"}><i>symbols</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>; evaluated. 
 
 
 
-<GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm>; evaluated. 
+<ClLinks  term={"value"}><i>values</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"object"}><i>objects</i></ClLinks>; evaluated. 
 
 
 
-<GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -34,17 +34,16 @@
 
 
 
-<DictionaryLink styled={true} term={"progv"}><b>progv</b></DictionaryLink> creates new dynamic variable <GlossaryTerm styled={true} term={"binding"}><i>bindings</i></GlossaryTerm> and executes each <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> using those <GlossaryTerm styled={true} term={"binding"}><i>bindings</i></GlossaryTerm>. Each <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is evaluated in order. 
+<ClLinks  term={"progv"}><b>progv</b></ClLinks> creates new dynamic variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> and executes each <ClLinks  term={"form"}><i>form</i></ClLinks> using those <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. Each <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated in order. 
 
 
 
-<DictionaryLink styled={true} term={"progv"}><b>progv</b></DictionaryLink> allows <GlossaryTerm styled={true} term={"binding"}><i>binding</i></GlossaryTerm> one or more dynamic variables whose names may be determined at run time. Each <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is evaluated in order with the dynamic variables whose names are in <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> bound to corresponding <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm>. If too few <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> are supplied, the remaining <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> are bound and then made to have no value. If too many <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> are supplied, the excess values are ignored. The <GlossaryTerm styled={true} term={"binding"}><i>bindings</i></GlossaryTerm> of the dynamic variables are undone on exit from <DictionaryLink styled={true} term={"progv"}><b>progv</b></DictionaryLink>. 
+<ClLinks  term={"progv"}><b>progv</b></ClLinks> allows <ClLinks  term={"binding"}><i>binding</i></ClLinks> one or more dynamic variables whose names may be determined at run time. Each <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated in order with the dynamic variables whose names are in <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> bound to corresponding <ClLinks  term={"value"}><i>values</i></ClLinks>. If too few <ClLinks  term={"value"}><i>values</i></ClLinks> are supplied, the remaining <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are bound and then made to have no value. If too many <ClLinks  term={"value"}><i>values</i></ClLinks> are supplied, the excess values are ignored. The <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of the dynamic variables are undone on exit from <ClLinks  term={"progv"}><b>progv</b></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (setq \*x\* 1) → 1 
 (progv ’(\*x\*) ’(2) \*x\*) → 2 
 \*x\* → 1 
@@ -54,14 +53,12 @@ Assuming \*x\* is not globally special,
     (list \*x\* (symbol-value ’\*x\*)))) → (3 4) 
 
 
-
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"let"}><b>let</b></DictionaryLink>, Section 3.1 (Evaluation) 
+<ClLinks  term={"let"}><b>let</b></ClLinks>, Section 3.1 (Evaluation) 
 
 
 
@@ -69,7 +66,7 @@ Assuming \*x\* is not globally special,
 
 
 
-Among other things, <DictionaryLink styled={true} term={"progv"}><b>progv</b></DictionaryLink> is useful when writing interpreters for languages embedded in Lisp; it provides a handle on the mechanism for *binding dynamic variables*. 
+Among other things, <ClLinks  term={"progv"}><b>progv</b></ClLinks> is useful when writing interpreters for languages embedded in Lisp; it provides a handle on the mechanism for *binding dynamic variables*. 
 
 
 

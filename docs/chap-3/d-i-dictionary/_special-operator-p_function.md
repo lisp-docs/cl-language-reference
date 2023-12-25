@@ -1,4 +1,4 @@
-**special-operator-p** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**special-operator-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"special-operator-p"}><b>special-operator-p</b></DictionaryLink> *symbol ! generalized-boolean* 
+<ClLinks  term={"special-operator-p"}><b>special-operator-p</b></ClLinks> *symbol ! generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -26,23 +26,21 @@
 
 
 
-Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is a *special operator* ; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is a *special operator* ; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (special-operator-p ’if) *! true* 
 (special-operator-p ’car) *! false* 
 (special-operator-p ’one) *! false* 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -66,7 +64,7 @@ Historically, this function was called special-form-p. The name was finally decl
 
 
 
-<DictionaryLink styled={true} term={"constantp"}><b>constantp</b></DictionaryLink> 
+<ClLinks  term={"constantp"}><b>constantp</b></ClLinks> 
 
 
 

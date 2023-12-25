@@ -1,4 +1,4 @@
-**array-element-type** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**array-element-type** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"array-element-type"}><b>array-element-type</b></DictionaryLink> *array → typespec* 
+<ClLinks  term={"array-element-type"}><b>array-element-type</b></ClLinks> *array → typespec* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
+<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a *type specifier* which represents the *actual array element type* of the array, which is the set of <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> that such an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> can hold. (Because of *array upgrading*, this *type specifier* can in some cases denote a <GlossaryTerm styled={true} term={"supertype"}><i>supertype</i></GlossaryTerm> of the *expressed array element type* of the <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>.) 
+Returns a *type specifier* which represents the *actual array element type* of the array, which is the set of <ClLinks  term={"object"}><i>objects</i></ClLinks> that such an <ClLinks  term={"array"}><i>array</i></ClLinks> can hold. (Because of *array upgrading*, this *type specifier* can in some cases denote a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of the *expressed array element type* of the <ClLinks  term={"array"}><i>array</i></ClLinks>.) 
 
 
 
@@ -44,7 +44,6 @@ Returns a *type specifier* which represents the *actual array element type* of t
 
 **Examples:**
 ```lisp
-
 (array-element-type (make-array 4)) → T 
 (array-element-type (make-array 12 :element-type ’(unsigned-byte 8))) 
 → implementation-dependent 
@@ -52,13 +51,12 @@ Returns a *type specifier* which represents the *actual array element type* of t
 → implementation-dependent 
 (array-element-type (make-array 5 :element-type ’(mod 5))) 
 could be (mod 5), (mod 8), fixnum, t, or any other type of which (mod 5) is a *subtype*. 
-
 ```
 **Affected By:** 
 
 
 
-The <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>. 
+The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 
@@ -66,7 +64,7 @@ The <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></G
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -74,7 +72,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"array"}><b>array</b></DictionaryLink>, <DictionaryLink styled={true} term={"make-array"}><b>make-array</b></DictionaryLink>, <DictionaryLink styled={true} term={"subtypep"}><b>subtypep</b></DictionaryLink>, <DictionaryLink styled={true} term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></DictionaryLink> 
+<ClLinks  term={"array"}><b>array</b></ClLinks>, <ClLinks  term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks>, <ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks> 
 
 
 

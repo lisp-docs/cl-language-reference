@@ -1,4 +1,4 @@
-**minusp, plusp** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**minusp, plusp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<DictionaryLink styled={true} term={"minusp"}><b>minusp</b></DictionaryLink> *real → generalized-boolean* 
+<ClLinks  term={"minusp"}><b>minusp</b></ClLinks> *real → generalized-boolean* 
 
 
 
-<DictionaryLink styled={true} term={"plusp"}><b>plusp</b></DictionaryLink> *real → generalized-boolean* 
+<ClLinks  term={"plusp"}><b>plusp</b></ClLinks> *real → generalized-boolean* 
 
 
 
@@ -30,31 +30,29 @@
 
 
 
-<DictionaryLink styled={true} term={"minusp"}><b>minusp</b></DictionaryLink> returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if *real* is less than zero; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+<ClLinks  term={"minusp"}><b>minusp</b></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if *real* is less than zero; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-<DictionaryLink styled={true} term={"plusp"}><b>plusp</b></DictionaryLink> returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if *real* is greater than zero; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+<ClLinks  term={"plusp"}><b>plusp</b></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if *real* is greater than zero; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-Regardless of whether an <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> provides distinct representations for positive and negative <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> zeros, (minusp -0.0) always returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+Regardless of whether an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> provides distinct representations for positive and negative <ClLinks  term={"float"}><i>float</i></ClLinks> zeros, (minusp -0.0) always returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (minusp -1) → true 
 (plusp 0) → false 
 (plusp least-positive-single-float) → true 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *real* is not a *real*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *real* is not a *real*. 
 
 
 

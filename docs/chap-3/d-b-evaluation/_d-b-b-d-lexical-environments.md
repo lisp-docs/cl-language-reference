@@ -2,7 +2,7 @@
 
 
 
-A *lexical environment* for <GlossaryTerm styled={true} term={"evaluation"}><i>evaluation</i></GlossaryTerm> at some position in a <GlossaryTerm styled={true} term={"program"}><i>program</i></GlossaryTerm> is that part of the <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm> that contains information having *lexical scope* within the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> containing that position. A *lexical environment* contains, among other things, the following: 
+A *lexical environment* for <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> at some position in a <ClLinks  term={"program"}><i>program</i></ClLinks> is that part of the <ClLinks  term={"environment"}><i>environment</i></ClLinks> that contains information having *lexical scope* within the <ClLinks  term={"form"}><i>forms</i></ClLinks> containing that position. A *lexical environment* contains, among other things, the following: 
 
 
 
@@ -10,7 +10,7 @@ A *lexical environment* for <GlossaryTerm styled={true} term={"evaluation"}><i>e
 
 
 
-*• bindings* of <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"macro"}><i>macros</i></GlossaryTerm>. (Implicit in this is information about those *compiler macros* that are locally disabled.) 
+*• bindings* of <ClLinks  term={"function"}><i>functions</i></ClLinks> and <ClLinks  term={"macro"}><i>macros</i></ClLinks>. (Implicit in this is information about those *compiler macros* that are locally disabled.) 
 
 
 
@@ -22,15 +22,15 @@ A *lexical environment* for <GlossaryTerm styled={true} term={"evaluation"}><i>e
 
 
 
-*•* information about <GlossaryTerm styled={true} term={"declaration"}><i>declarations</i></GlossaryTerm>. 
+*•* information about <ClLinks  term={"declaration"}><i>declarations</i></ClLinks>. 
 
 
 
-The *lexical environment* that is active at any given position in a <GlossaryTerm styled={true} term={"program"}><i>program</i></GlossaryTerm> being semantically processed is referred to by definite reference as “the current *lexical environment*,” or sometimes as just “the *lexical environment*.” 
+The *lexical environment* that is active at any given position in a <ClLinks  term={"program"}><i>program</i></ClLinks> being semantically processed is referred to by definite reference as “the current *lexical environment*,” or sometimes as just “the *lexical environment*.” 
 
 
 
-Within a given <GlossaryTerm styled={true} term={"namespace"}><i>namespace</i></GlossaryTerm>, a <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is said to be <GlossaryTerm styled={true} term={"bound"}><i>bound</i></GlossaryTerm> in a *lexical environment* if there is a <GlossaryTerm styled={true} term={"binding"}><i>binding</i></GlossaryTerm> associated with its <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> in the *lexical environment* or, if not, there is a <GlossaryTerm styled={true} term={"binding"}><i>binding</i></GlossaryTerm> associated with its name in the *global environment*.  
+Within a given <ClLinks  term={"namespace"}><i>namespace</i></ClLinks>, a <ClLinks  term={"name"}><i>name</i></ClLinks> is said to be <ClLinks  term={"bound"}><i>bound</i></ClLinks> in a *lexical environment* if there is a <ClLinks  term={"binding"}><i>binding</i></ClLinks> associated with its <ClLinks  term={"name"}><i>name</i></ClLinks> in the *lexical environment* or, if not, there is a <ClLinks  term={"binding"}><i>binding</i></ClLinks> associated with its name in the *global environment*.  
 
 
 

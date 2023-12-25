@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"end-of-file"}><b>end-of-file</b></DictionaryLink>, **stream-error**, <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink>, <DictionaryLink styled={true} term={"serious-condition"}><b>serious-condition</b></DictionaryLink>, <DictionaryLink styled={true} term={"condition"}><b>condition</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
+<ClLinks  term={"end-of-file"}><b>end-of-file</b></ClLinks>, **stream-error**, <ClLinks  term={"error"}><b>error</b></ClLinks>, <ClLinks  term={"serious-condition"}><b>serious-condition</b></ClLinks>, <ClLinks  term={"condition"}><b>condition</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"end-of-file"}><b>end-of-file</b></DictionaryLink> consists of error conditions related to read operations that are done on <GlossaryTerm styled={true} term={"stream"}><i>streams</i></GlossaryTerm> that have no more data. 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"end-of-file"}><b>end-of-file</b></ClLinks> consists of error conditions related to read operations that are done on <ClLinks  term={"stream"}><i>streams</i></ClLinks> that have no more data. 
 
 
 
@@ -22,7 +22,7 @@ The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <Dictio
 
 
 
-<DictionaryLink styled={true} term={"stream-error-stream"}><b>stream-error-stream</b></DictionaryLink> 
+<ClLinks  term={"stream-error-stream"}><b>stream-error-stream</b></ClLinks> 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"unbound-variable"}><b>unbound-variable</b></DictionaryLink>, <DictionaryLink styled={true} term={"cell-error"}><b>cell-error</b></DictionaryLink>, <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink>, <DictionaryLink styled={true} term={"serious-condition"}><b>serious-condition</b></DictionaryLink>, <DictionaryLink styled={true} term={"condition"}><b>condition</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
+<ClLinks  term={"unbound-variable"}><b>unbound-variable</b></ClLinks>, <ClLinks  term={"cell-error"}><b>cell-error</b></ClLinks>, <ClLinks  term={"error"}><b>error</b></ClLinks>, <ClLinks  term={"serious-condition"}><b>serious-condition</b></ClLinks>, <ClLinks  term={"condition"}><b>condition</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"unbound-variable"}><b>unbound-variable</b></DictionaryLink> consists of *error conditions* that represent attempts to <GlossaryTerm styled={true} term={"read"}><i>read</i></GlossaryTerm> the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of an *unbound variable*. 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"unbound-variable"}><b>unbound-variable</b></ClLinks> consists of *error conditions* that represent attempts to <ClLinks  term={"read"}><i>read</i></ClLinks> the <ClLinks  term={"value"}><i>value</i></ClLinks> of an *unbound variable*. 
 
 
 
-The name of the cell (see <DictionaryLink styled={true} term={"cell-error"}><b>cell-error</b></DictionaryLink>) is the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm> that was <GlossaryTerm styled={true} term={"unbound"}><i>unbound</i></GlossaryTerm>. 
+The name of the cell (see <ClLinks  term={"cell-error"}><b>cell-error</b></ClLinks>) is the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"variable"}><i>variable</i></ClLinks> that was <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@ The name of the cell (see <DictionaryLink styled={true} term={"cell-error"}><b>c
 
 
 
-<DictionaryLink styled={true} term={"cell-error-name"}><b>cell-error-name</b></DictionaryLink> 
+<ClLinks  term={"cell-error-name"}><b>cell-error-name</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**symbol-package** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**symbol-package** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"symbol-package"}><b>symbol-package</b></DictionaryLink> *symbol → contents* 
+<ClLinks  term={"symbol-package"}><b>symbol-package</b></ClLinks> *symbol → contents* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*contents*—a *package object* or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+*contents*—a *package object* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,13 +26,12 @@
 
 
 
-Returns the *home package* of <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+Returns the *home package* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (in-package "CL-USER") → #<PACKAGE "COMMON-LISP-USER"> 
 (symbol-package ’car) → #<PACKAGE "COMMON-LISP"> 
 (symbol-package ’bus) → #<PACKAGE "COMMON-LISP-USER"> 
@@ -56,13 +55,12 @@ Returns the *home package* of <GlossaryTerm styled={true} term={"symbol"}><i>sym
 (unintern s3 ’pk1) → T 
 (symbol-package s3) → NIL 
 (eq s3 ’pk2::sample3) → T 
-
 ```
 **Affected By:** 
 
 
 
-<DictionaryLink styled={true} term={"import"}><b>import</b></DictionaryLink>, <DictionaryLink styled={true} term={"intern"}><b>intern</b></DictionaryLink>, <DictionaryLink styled={true} term={"unintern"}><b>unintern</b></DictionaryLink> 
+<ClLinks  term={"import"}><b>import</b></ClLinks>, <ClLinks  term={"intern"}><b>intern</b></ClLinks>, <ClLinks  term={"unintern"}><b>unintern</b></ClLinks> 
 
 
 
@@ -70,7 +68,7 @@ Returns the *home package* of <GlossaryTerm styled={true} term={"symbol"}><i>sym
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -90,7 +88,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"intern"}><b>intern</b></DictionaryLink> 
+<ClLinks  term={"intern"}><b>intern</b></ClLinks> 
 
 
 

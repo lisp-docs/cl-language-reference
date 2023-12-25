@@ -1,4 +1,4 @@
-**read-line** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**read-line** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"read-line"}><b>read-line</b></DictionaryLink> &amp;optional *input-stream eof-error-p eof-value recursive-p* 
+<ClLinks  term={"read-line"}><b>read-line</b></ClLinks> &amp;optional *input-stream eof-error-p eof-value recursive-p* 
 
 
 
@@ -22,19 +22,19 @@
 
 
 
-*eof-error-p*—a *generalized boolean*. The default is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>. 
+*eof-error-p*—a *generalized boolean*. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 
-*eof-value*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. The default is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*recursive-p*—a *generalized boolean*. The default is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+*recursive-p*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-*line*—a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> or the *eof-value*. 
+*line*—a <ClLinks  term={"string"}><i>string</i></ClLinks> or the *eof-value*. 
 
 
 
@@ -46,25 +46,24 @@
 
 
 
-Reads from *input-stream* a line of text that is terminated by a <GlossaryTerm styled={true} term={"newline"}><i>newline</i></GlossaryTerm> or *end of file*. 
+Reads from *input-stream* a line of text that is terminated by a <ClLinks  term={"newline"}><i>newline</i></ClLinks> or *end of file*. 
 
 
 
-If *recursive-p* is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, this call is expected to be embedded in a higher-level call to <DictionaryLink styled={true} term={"read"}><b>read</b></DictionaryLink> or a similar <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> used by the *Lisp reader* . 
+If *recursive-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, this call is expected to be embedded in a higher-level call to <ClLinks  term={"read"}><b>read</b></ClLinks> or a similar <ClLinks  term={"function"}><i>function</i></ClLinks> used by the *Lisp reader* . 
 
 
 
-The *primary value*, *line*, is the line that is read, represented as a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> (without the trailing <GlossaryTerm styled={true} term={"newline"}><i>newline</i></GlossaryTerm>, if any). If *eof-error-p* is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> and the *end of file* for *input-stream* is reached before any <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> are read, *eof-value* is returned as the *line*. 
+The *primary value*, *line*, is the line that is read, represented as a <ClLinks  term={"string"}><i>string</i></ClLinks> (without the trailing <ClLinks  term={"newline"}><i>newline</i></ClLinks>, if any). If *eof-error-p* is <ClLinks  term={"false"}><i>false</i></ClLinks> and the *end of file* for *input-stream* is reached before any <ClLinks  term={"character"}><i>characters</i></ClLinks> are read, *eof-value* is returned as the *line*. 
 
 
 
-The *secondary value*, *missing-newline-p*, is a *generalized boolean* that is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> if the *line* was terminated by a <GlossaryTerm styled={true} term={"newline"}><i>newline</i></GlossaryTerm>, or <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if the *line* was terminated by the *end of file* for *input-stream* (or if the *line* is the *eof-value*). 
+The *secondary value*, *missing-newline-p*, is a *generalized boolean* that is <ClLinks  term={"false"}><i>false</i></ClLinks> if the *line* was terminated by a <ClLinks  term={"newline"}><i>newline</i></ClLinks>, or <ClLinks  term={"true"}><i>true</i></ClLinks> if the *line* was terminated by the *end of file* for *input-stream* (or if the *line* is the *eof-value*). 
 
 
 
 **Examples:**
 ```lisp
-
 (setq a "line 1 
 line2") 
 → "line 1 
@@ -77,14 +76,12 @@ line2"
 → NIL, *true* 
 
 
-
-
 ```
 **Affected By:** 
 
 
 
-**\*standard-input\***, <DictionaryLink styled={true} term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>. 
+**\*standard-input\***, <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
 
 
 
@@ -92,7 +89,7 @@ line2"
 
 
 
-If an *end of file*<sub>2</sub> occurs before any characters are read in the line, an error is signaled if *eof-error-p* is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>. 
+If an *end of file*<sub>2</sub> occurs before any characters are read in the line, an error is signaled if *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 
@@ -100,7 +97,7 @@ If an *end of file*<sub>2</sub> occurs before any characters are read in the lin
 
 
 
-<DictionaryLink styled={true} term={"read"}><b>read</b></DictionaryLink> 
+<ClLinks  term={"read"}><b>read</b></ClLinks> 
 
 
 
@@ -108,7 +105,7 @@ If an *end of file*<sub>2</sub> occurs before any characters are read in the lin
 
 
 
-The corresponding output function is <DictionaryLink styled={true} term={"write-line"}><b>write-line</b></DictionaryLink>. 
+The corresponding output function is <ClLinks  term={"write-line"}><b>write-line</b></ClLinks>. 
 
 
 

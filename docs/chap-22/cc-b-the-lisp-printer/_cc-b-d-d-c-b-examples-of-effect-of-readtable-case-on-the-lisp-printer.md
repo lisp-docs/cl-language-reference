@@ -1,5 +1,4 @@
 ```lisp
-
 (defun test-readtable-case-printing () 
   (let ((\*readtable\* (copy-readtable nil)) 
 	(\*print-case\* \*print-case\*)) 
@@ -12,7 +11,6 @@
 	(dolist (symbol ’(|ZEBRA| |Zebra| |zebra|)) 
 	  (setq \*print-case\* print-case) 
 	  (format t "~&:~A~15T:~A~29T~A~42T~A" 
-
 		  
 		  
 		  (string-upcase readtable-case) 
@@ -58,8 +56,6 @@ READTABLE-CASE \*PRINT-CASE\* Symbol-name Output
 :INVERT :CAPITALIZE ZEBRA zebra 
 :INVERT :CAPITALIZE Zebra Zebra 
 :INVERT :CAPITALIZE zebra ZEBRA 
-
-
 
 
 ```

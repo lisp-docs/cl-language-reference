@@ -18,7 +18,7 @@
 
 
 
-The consequences are undefined if the token immediately following the #O does not have the syntax of an octal (*i.e.*, radix 8) <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm>.  
+The consequences are undefined if the token immediately following the #O does not have the syntax of an octal (*i.e.*, radix 8) <ClLinks  term={"rational"}><i>rational</i></ClLinks>.  
 
 
 

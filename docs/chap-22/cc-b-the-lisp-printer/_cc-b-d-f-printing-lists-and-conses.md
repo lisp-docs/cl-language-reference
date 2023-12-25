@@ -6,31 +6,31 @@ Wherever possible, list notation is preferred over dot notation. Therefore the f
 
 
 
-1\. A <GlossaryTerm styled={true} term={"left-parenthesis"}><i>left-parenthesis</i></GlossaryTerm> is printed. 
+1\. A <ClLinks styled={true} term={"left-parenthesis"}><i>left-parenthesis</i></ClLinks> is printed. 
 
 
 
-2\. The <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> of *x* is printed. 
+2\. The <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of *x* is printed. 
 
 
 
-3\. If the <GlossaryTerm styled={true} term={"cdr"}><i>cdr</i></GlossaryTerm> of *x* is itself a <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm>, it is made to be the current <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> (*i.e.*, *x* becomes that <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm>), a <GlossaryTerm styled={true} term={"space"}><i>space</i></GlossaryTerm> is printed, and step 2 is re-entered. 
+3\. If the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of *x* is itself a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>, it is made to be the current <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> (*i.e.*, *x* becomes that <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>), a <ClLinks styled={true} term={"space"}><i>space</i></ClLinks> is printed, and step 2 is re-entered. 
 
 
 
-4\. If the <GlossaryTerm styled={true} term={"cdr"}><i>cdr</i></GlossaryTerm> of *x* is not <GlossaryTerm styled={true} term={"null"}><i>null</i></GlossaryTerm>, a <GlossaryTerm styled={true} term={"space"}><i>space</i></GlossaryTerm>, a <GlossaryTerm styled={true} term={"dot"}><i>dot</i></GlossaryTerm>, a <GlossaryTerm styled={true} term={"space"}><i>space</i></GlossaryTerm>, and the <GlossaryTerm styled={true} term={"cdr"}><i>cdr</i></GlossaryTerm> of *x* are printed. 
+4\. If the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of *x* is not <ClLinks styled={true} term={"null"}><i>null</i></ClLinks>, a <ClLinks styled={true} term={"space"}><i>space</i></ClLinks>, a <ClLinks styled={true} term={"dot"}><i>dot</i></ClLinks>, a <ClLinks styled={true} term={"space"}><i>space</i></ClLinks>, and the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of *x* are printed. 
 
 
 
-5\. A <GlossaryTerm styled={true} term={"right-parenthesis"}><i>right-parenthesis</i></GlossaryTerm> is printed. 
+5\. A <ClLinks styled={true} term={"right-parenthesis"}><i>right-parenthesis</i></ClLinks> is printed. 
 
 
 
-Actually, the above algorithm is only used when <DictionaryLink styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></DictionaryLink> is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. When <DictionaryLink styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></DictionaryLink> is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> (or when <DictionaryLink styled={true} term={"pprint"}><b>pprint</b></DictionaryLink> is used), additional <GlossaryTerm styled={true} term={"whitespace"}><i>whitespace</i></GlossaryTerm><sub>1</sub> may replace the use of a single <GlossaryTerm styled={true} term={"space"}><i>space</i></GlossaryTerm>, and a more elaborate algorithm with similar goals but more presentational flexibility is used; see Section 22.1.2 (Printer Dispatching). 
+Actually, the above algorithm is only used when <ClLinks styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. When <ClLinks styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> (or when <ClLinks styled={true} term={"pprint"}><b>pprint</b></ClLinks> is used), additional <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> may replace the use of a single <ClLinks styled={true} term={"space"}><i>space</i></ClLinks>, and a more elaborate algorithm with similar goals but more presentational flexibility is used; see Section 22.1.2 (Printer Dispatching). 
 
 
 
-Although the two expressions below are equivalent, and the reader accepts either one and produces the same <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm>, the printer always prints such a <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> in the second form. 
+Although the two expressions below are equivalent, and the reader accepts either one and produces the same <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>, the printer always prints such a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> in the second form. 
 
 
 
@@ -42,7 +42,7 @@ Although the two expressions below are equivalent, and the reader accepts either
 
 
 
-The printing of *conses* is affected by **\*print-level\***, <DictionaryLink styled={true} term={"print-length"}><b>\*print-length\*</b></DictionaryLink>, and <DictionaryLink styled={true} term={"print-circle"}><b>\*print-circle\*</b></DictionaryLink>. Following are examples of printed representations of <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm>: 
+The printing of *conses* is affected by **\*print-level\***, <ClLinks styled={true} term={"print-length"}><b>\*print-length\*</b></ClLinks>, and <ClLinks styled={true} term={"print-circle"}><b>\*print-circle\*</b></ClLinks>. Following are examples of printed representations of <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>: 
 
 
 
@@ -122,7 +122,7 @@ The printing of *conses* is affected by **\*print-level\***, <DictionaryLink sty
 
 
 
-For information on how the *Lisp reader* parses <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm> and *conses*, see Section 2.4.1 (Left-Parenthesis). 
+For information on how the *Lisp reader* parses <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks> and *conses*, see Section 2.4.1 (Left-Parenthesis). 
 
 
 

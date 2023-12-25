@@ -1,4 +1,4 @@
-**pathname-match-p** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**pathname-match-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"pathname-match-p"}><b>pathname-match-p</b></DictionaryLink> *pathname wildcard → generalized-boolean* 
+<ClLinks  term={"pathname-match-p"}><b>pathname-match-p</b></ClLinks> *pathname wildcard → generalized-boolean* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm>—a *pathname designator* . 
+<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a *pathname designator* . 
 
 
 
-*wildcard*—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a *wild pathname*. 
+*wildcard*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a *wild pathname*. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<DictionaryLink styled={true} term={"pathname-match-p"}><b>pathname-match-p</b></DictionaryLink> returns true if <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> matches *wildcard*, otherwise <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. The matching rules are <GlossaryTerm styled={true} term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm> but should be consistent with <DictionaryLink styled={true} term={"directory"}><b>directory</b></DictionaryLink>. Missing components of *wildcard* default to :wild. 
+<ClLinks  term={"pathname-match-p"}><b>pathname-match-p</b></ClLinks> returns true if <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> matches *wildcard*, otherwise <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The matching rules are <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> but should be consistent with <ClLinks  term={"directory"}><b>directory</b></ClLinks>. Missing components of *wildcard* default to :wild. 
 
 
 
-It is valid for <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> to be a wild <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm>; a wildcard field in <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> only matches a wildcard field in *wildcard* (*i.e.*, <DictionaryLink styled={true} term={"pathname-match-p"}><b>pathname-match-p</b></DictionaryLink> is not commutative). It is valid for *wildcard* to be a non-wild <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm>. 
+It is valid for <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> to be a wild <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>; a wildcard field in <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> only matches a wildcard field in *wildcard* (*i.e.*, <ClLinks  term={"pathname-match-p"}><b>pathname-match-p</b></ClLinks> is not commutative). It is valid for *wildcard* to be a non-wild <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ It is valid for <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></G
 
 
 
-If <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> or *wildcard* is not a <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>, or *stream associated with a file* an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. 
+If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> or *wildcard* is not a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, <ClLinks  term={"string"}><i>string</i></ClLinks>, or *stream associated with a file* an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
 
 
 
@@ -50,7 +50,7 @@ If <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> 
 
 
 
-<DictionaryLink styled={true} term={"directory"}><b>directory</b></DictionaryLink>, <DictionaryLink styled={true} term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink styled={true} term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks  term={"directory"}><b>directory</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 
@@ -66,7 +66,7 @@ If <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> 
 
 
 
-<DictionaryLink styled={true} term={"translate-logical-pathname"}><b>translate-logical-pathname</b></DictionaryLink> 
+<ClLinks  term={"translate-logical-pathname"}><b>translate-logical-pathname</b></ClLinks> 
 
 
 

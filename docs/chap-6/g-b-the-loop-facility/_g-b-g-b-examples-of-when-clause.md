@@ -1,5 +1,4 @@
 ```lisp
-
 ;; Signal an exceptional condition. 
 (loop for item in ’(1 2 3 a 4 5) 
       when (not (numberp item)) 
@@ -30,5 +29,4 @@ collect i into number-list
 and count i into number-count 
 finally (return (values number-count number-list))) 
 → 5, (6 7 8 9 10) 
-
 ```

@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"ratio"}><b>ratio</b></DictionaryLink>, <DictionaryLink styled={true} term={"rational"}><b>rational</b></DictionaryLink>, <DictionaryLink styled={true} term={"real"}><b>real</b></DictionaryLink>, <DictionaryLink styled={true} term={"number"}><b>number</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
+<ClLinks  term={"ratio"}><b>ratio</b></ClLinks>, <ClLinks  term={"rational"}><b>rational</b></ClLinks>, <ClLinks  term={"real"}><b>real</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A <GlossaryTerm styled={true} term={"ratio"}><i>ratio</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> representing the mathematical ratio of two non-zero integers, the numerator and denominator, whose greatest common divisor is one, and of which the denominator is positive and greater than one. 
+A <ClLinks  term={"ratio"}><i>ratio</i></ClLinks> is a <ClLinks  term={"number"}><i>number</i></ClLinks> representing the mathematical ratio of two non-zero integers, the numerator and denominator, whose greatest common divisor is one, and of which the denominator is positive and greater than one. 
 
 
 

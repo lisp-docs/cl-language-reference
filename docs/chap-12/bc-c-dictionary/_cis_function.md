@@ -1,4 +1,4 @@
-**cis** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**cis** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"cis"}><b>cis</b></DictionaryLink> *radians → number* 
+<ClLinks  term={"cis"}><b>cis</b></ClLinks> *radians → number* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> . 
+<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"complex"}><i>complex</i></ClLinks> . 
 
 
 
@@ -32,9 +32,7 @@
 
 **Examples:**
 ```lisp
-
 (cis 0) → #C(1.0 0.0) 
-
 ```
 **See Also:** 
 

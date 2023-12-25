@@ -2,15 +2,15 @@
 
 
 
-A <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> can be “associated with” a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> explicitly by <DictionaryLink styled={true} term={"with-condition-restarts"}><b>with-condition-restarts</b></DictionaryLink>, or implicitly by <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink>. Such an assocation has *dynamic extent*. 
+A <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> can be “associated with” a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> explicitly by <ClLinks styled={true} term={"with-condition-restarts"}><b>with-condition-restarts</b></ClLinks>, or implicitly by <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>. Such an assocation has *dynamic extent*. 
 
 
 
-A single <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> may be associated with several <GlossaryTerm styled={true} term={"condition"}><i>conditions</i></GlossaryTerm> at the same time. A single <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> may have several associated <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> at the same time. 
+A single <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> may be associated with several <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> at the same time. A single <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> may have several associated <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> at the same time. 
 
 
 
-Active restarts associated with a particular <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> can be detected by *calling* a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> such as <DictionaryLink styled={true} term={"find-restart"}><b>find-restart</b></DictionaryLink>, supplying that <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> as the *condition argument*. Active restarts can also be detected without regard to any associated <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> by calling such a function without a *condition argument*, or by supplying a value of <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> for such an <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm>. 
+Active restarts associated with a particular <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> can be detected by *calling* a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> such as <ClLinks styled={true} term={"find-restart"}><b>find-restart</b></ClLinks>, supplying that <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> as the *condition argument*. Active restarts can also be detected without regard to any associated <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> by calling such a function without a *condition argument*, or by supplying a value of <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> for such an <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks>. 
 
 
 

@@ -1,4 +1,4 @@
-**shiftf** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
+**shiftf** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"shiftf"}><b>shiftf</b></DictionaryLink> <GlossaryTerm styled={true} term={"place"}><i>\{place\}</i></GlossaryTerm><sup>+</sup> *newvalue ! old-value-1* 
+<ClLinks  term={"shiftf"}><b>shiftf</b></ClLinks> <ClLinks  term={"place"}><i>\{place\}</i></ClLinks><sup>+</sup> *newvalue ! old-value-1* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>. 
+<ClLinks  term={"place"}><i>place</i></ClLinks>—a <ClLinks  term={"place"}><i>place</i></ClLinks>. 
 
 
 
-*newvalue*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>; evaluated. 
+*newvalue*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated. 
 
 
 
-*old-value-1*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> (the old <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of the first <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>). 
+*old-value-1*—an <ClLinks  term={"object"}><i>object</i></ClLinks> (the old <ClLinks  term={"value"}><i>value</i></ClLinks> of the first <ClLinks  term={"place"}><i>place</i></ClLinks>). 
 
 
 
@@ -30,31 +30,29 @@
 
 
 
-<DictionaryLink styled={true} term={"shiftf"}><b>shiftf</b></DictionaryLink> modifies the values of each <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> by storing *newvalue* into the last <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>, and shifting the values of the second through the last <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> into the remaining <GlossaryTerm styled={true} term={"place"}><i>places</i></GlossaryTerm>. 
+<ClLinks  term={"shiftf"}><b>shiftf</b></ClLinks> modifies the values of each <ClLinks  term={"place"}><i>place</i></ClLinks> by storing *newvalue* into the last <ClLinks  term={"place"}><i>place</i></ClLinks>, and shifting the values of the second through the last <ClLinks  term={"place"}><i>place</i></ClLinks> into the remaining <ClLinks  term={"place"}><i>places</i></ClLinks>. 
 
 
 
-If *newvalue* produces more values than there are store variables, the extra values are ignored. If *newvalue* produces fewer values than there are store variables, the missing values are set to <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+If *newvalue* produces more values than there are store variables, the extra values are ignored. If *newvalue* produces fewer values than there are store variables, the missing values are set to <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-In the form (shiftf *place1 place2* ... *placen newvalue*), the values in *place1* through *placen* are <GlossaryTerm styled={true} term={"read"}><i>read</i></GlossaryTerm> and saved, and *newvalue* is evaluated, for a total of n+1 values in all. Values 2 through n+1 are then stored into *place1* through *placen*, respectively. It is as if all the <GlossaryTerm styled={true} term={"place"}><i>places</i></GlossaryTerm> form a shift register; the *newvalue* is shifted in from the right, all values shift over to the left one place, and the value shifted out of *place1* is returned. 
+In the form (shiftf *place1 place2* ... *placen newvalue*), the values in *place1* through *placen* are <ClLinks  term={"read"}><i>read</i></ClLinks> and saved, and *newvalue* is evaluated, for a total of n+1 values in all. Values 2 through n+1 are then stored into *place1* through *placen*, respectively. It is as if all the <ClLinks  term={"place"}><i>places</i></ClLinks> form a shift register; the *newvalue* is shifted in from the right, all values shift over to the left one place, and the value shifted out of *place1* is returned. 
 
 
 
-For information about the <GlossaryTerm styled={true} term={"evaluation"}><i>evaluation</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"subform"}><i>subforms</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"place"}><i>places</i></GlossaryTerm>, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
+For information about the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of <ClLinks  term={"place"}><i>places</i></ClLinks>, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
 
 
 
 **Examples:**
 ```lisp
-
 (setq x (list 1 2 3) y ’trash) *!* TRASH 
 (shiftf y x (cdr x) ’(hi there)) *!* TRASH 
 x *!* (2 3) 
 y *!* (1 HI THERE) 
 Data and Control 
-
 
 (setq x (list ’a ’b ’c)) *!* (A B C) 
 (shiftf (cadr x) ’z) *!* B 
@@ -65,13 +63,12 @@ x *!* (A (C) . Q)
 (setq x (list ’a ’b ’c ’d)) *!* (A B C D) 
 (shiftf (nth (setq n (+ n 1)) x) ’z) *!* B 
 x *!* (A Z C D) 
-
 ```
 **Aected By:** 
 
 
 
-<DictionaryLink styled={true} term={"define-setf-expander"}><b>define-setf-expander</b></DictionaryLink>, <DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink>, **\*macroexpand-hook\*** 
+<ClLinks  term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>, <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks>, **\*macroexpand-hook\*** 
 
 
 
@@ -79,7 +76,7 @@ x *!* (A Z C D)
 
 
 
-<DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink>, <DictionaryLink styled={true} term={"rotatef"}><b>rotatef</b></DictionaryLink>, Section 5.1 (Generalized Reference) 
+<ClLinks  term={"setf"}><b>setf</b></ClLinks>, <ClLinks  term={"rotatef"}><b>rotatef</b></ClLinks>, Section 5.1 (Generalized Reference) 
 
 
 
@@ -131,7 +128,7 @@ var1)
 
 
 
-except that the latter would evaluate any <GlossaryTerm styled={true} term={"subform"}><i>subforms</i></GlossaryTerm> of each place twice, whereas <DictionaryLink styled={true} term={"shiftf"}><b>shiftf</b></DictionaryLink> evaluates them once. For example, 
+except that the latter would evaluate any <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of each place twice, whereas <ClLinks  term={"shiftf"}><b>shiftf</b></ClLinks> evaluates them once. For example, 
 
 
 
@@ -167,7 +164,7 @@ x *!* (A B Z D)
 
 
 
-<DictionaryLink styled={true} term={"rotatef"}><b>rotatef</b></DictionaryLink> 
+<ClLinks  term={"rotatef"}><b>rotatef</b></ClLinks> 
 
 
 

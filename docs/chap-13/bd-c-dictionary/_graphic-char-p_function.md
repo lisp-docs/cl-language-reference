@@ -1,4 +1,4 @@
-**graphic-char-p** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**graphic-char-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"graphic-char-p"}><b>graphic-char-p</b></DictionaryLink> *char → generalized-boolean* 
+<ClLinks styled={true} term={"graphic-char-p"}><b>graphic-char-p</b></ClLinks> *char → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*char*—a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
+*char*—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -38,24 +38,22 @@
 
 
 
-Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> is a *graphic character* ; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is a *graphic character* ; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (graphic-char-p #\G) → true 
 (graphic-char-p #\#) → true 
 (graphic-char-p #\Space) → true 
 (graphic-char-p #\Newline) → false 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is not a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -63,7 +61,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"read"}><b>read</b></DictionaryLink>, Section 2.1 (Character Syntax), Section 13.1.10 (Documentation of Implementation-Defined Scripts) 
+<ClLinks styled={true} term={"read"}><b>read</b></ClLinks>, Section 2.1 (Character Syntax), Section 13.1.10 (Documentation of Implementation-Defined Scripts) 
 
 
 

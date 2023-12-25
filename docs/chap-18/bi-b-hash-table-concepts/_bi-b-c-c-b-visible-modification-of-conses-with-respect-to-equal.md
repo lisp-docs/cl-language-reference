@@ -2,7 +2,7 @@
 
 
 
-Any visible change to the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> or the <GlossaryTerm styled={true} term={"cdr"}><i>cdr</i></GlossaryTerm> of a <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> is considered a visible modification with regard to <DictionaryLink styled={true} term={"equal"}><b>equal</b></DictionaryLink>. 
+Any visible change to the <ClLinks  term={"car"}><i>car</i></ClLinks> or the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> of a <ClLinks  term={"cons"}><i>cons</i></ClLinks> is considered a visible modification with regard to <ClLinks  term={"equal"}><b>equal</b></ClLinks>. 
 
 
 

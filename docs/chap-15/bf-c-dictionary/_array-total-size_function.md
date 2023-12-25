@@ -1,4 +1,4 @@
-**array-total-size** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**array-total-size** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"array-total-size"}><b>array-total-size</b></DictionaryLink> *array → size* 
+<ClLinks  term={"array-total-size"}><b>array-total-size</b></ClLinks> *array → size* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
+<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the *array total size* of the <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
+Returns the *array total size* of the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -44,20 +44,18 @@ Returns the *array total size* of the <GlossaryTerm styled={true} term={"array"}
 
 **Examples:**
 ```lisp
-
 (array-total-size (make-array 4)) → 4 
 (array-total-size (make-array 4 :fill-pointer 2)) → 4 
 (array-total-size (make-array 0)) → 0 
 (array-total-size (make-array ’(4 2))) → 8 
 (array-total-size (make-array ’(4 0))) → 0 
 (array-total-size (make-array ’())) → 1 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -65,7 +63,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"make-array"}><b>make-array</b></DictionaryLink>, <DictionaryLink styled={true} term={"array-dimensions"}><b>array-dimensions</b></DictionaryLink> 
+<ClLinks  term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks  term={"array-dimensions"}><b>array-dimensions</b></ClLinks> 
 
 
 
@@ -73,11 +71,11 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-If the <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> with a *fill pointer* , the *fill pointer* is ignored when calculating the *array total size*. 
+If the <ClLinks  term={"array"}><i>array</i></ClLinks> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , the *fill pointer* is ignored when calculating the *array total size*. 
 
 
 
-Since the product of no arguments is one, the *array total size* of a zero-dimensional <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> is one. 
+Since the product of no arguments is one, the *array total size* of a zero-dimensional <ClLinks  term={"array"}><i>array</i></ClLinks> is one. 
 
 
 

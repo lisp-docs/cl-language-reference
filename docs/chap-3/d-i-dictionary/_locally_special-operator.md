@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"locally"}><b>locally</b></DictionaryLink> <GlossaryTerm styled={true} term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* *! \{result\}*\* 
+<ClLinks  term={"locally"}><b>locally</b></ClLinks> <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* *! \{result\}*\* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<GlossaryTerm styled={true} term={"declaration"}><i>Declaration</i></GlossaryTerm>—a <DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
+<ClLinks  term={"declaration"}><i>Declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-<GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -30,13 +30,12 @@
 
 
 
-Sequentially evaluates a body of <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> in a *lexical environment* where the given <GlossaryTerm styled={true} term={"declaration"}><i>declarations</i></GlossaryTerm> have e↵ect. 
+Sequentially evaluates a body of <ClLinks  term={"form"}><i>forms</i></ClLinks> in a *lexical environment* where the given <ClLinks  term={"declaration"}><i>declarations</i></ClLinks> have e↵ect. 
 
 
 
 **Examples:**
 ```lisp
-
 (defun sample-function (y) ;this y is regarded as special 
   (declare (special y)) 
   Evaluation and 
@@ -66,13 +65,12 @@ Sequentially evaluates a body of <GlossaryTerm styled={true} term={"form"}><i>fo
 (defun frob (w x y &optional (z (foo x y))) 
   (mumble x y z w)) 
 *!* FROB 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink> 
+<ClLinks  term={"declare"}><b>declare</b></ClLinks> 
 
 
 
@@ -80,19 +78,15 @@ Sequentially evaluates a body of <GlossaryTerm styled={true} term={"form"}><i>fo
 
 
 
-The <DictionaryLink styled={true} term={"special"}><b>special</b></DictionaryLink> declaration may be used with <DictionaryLink styled={true} term={"locally"}><b>locally</b></DictionaryLink> to a↵ect references to, rather than <GlossaryTerm styled={true} term={"binding"}><i>bindings</i></GlossaryTerm> of, <GlossaryTerm styled={true} term={"variable"}><i>variables</i></GlossaryTerm>. 
+The <ClLinks  term={"special"}><b>special</b></ClLinks> declaration may be used with <ClLinks  term={"locally"}><b>locally</b></ClLinks> to a↵ect references to, rather than <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of, <ClLinks  term={"variable"}><i>variables</i></ClLinks>. 
 
 
 
-If a <DictionaryLink styled={true} term={"locally"}><b>locally</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is a *top level form*, the body <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are also processed as *top level forms*. See Section 3.2.3 (File Compilation). 
-
-
+If a <ClLinks  term={"locally"}><b>locally</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is a *top level form*, the body <ClLinks  term={"form"}><i>forms</i></ClLinks> are also processed as *top level forms*. See Section 3.2.3 (File Compilation). 
 
 
 
 
-
- 
 
 
 
@@ -100,7 +94,11 @@ If a <DictionaryLink styled={true} term={"locally"}><b>locally</b></DictionaryLi
 
 
 
-<DictionaryLink styled={true} term={"the"}><b>the</b></DictionaryLink> 
+ 
+
+
+
+<ClLinks  term={"the"}><b>the</b></ClLinks> 
 
 
 

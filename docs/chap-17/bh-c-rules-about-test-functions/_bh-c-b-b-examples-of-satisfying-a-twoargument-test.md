@@ -1,5 +1,4 @@
 ```lisp
-
 (remove "FOO" ’(foo bar "FOO" "BAR" "foo" "bar") :test #’equal) 
 → (foo bar "BAR" "foo" "bar") 
 (remove "FOO" ’(foo bar "FOO" "BAR" "foo" "bar") :test #’equalp) 
@@ -21,5 +20,4 @@
        :key #’pathname-name 
        :test #’equal) 
 → 2 
-
 ```

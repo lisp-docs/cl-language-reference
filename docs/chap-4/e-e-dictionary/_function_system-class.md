@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"function"}><b>function</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
+<ClLinks  term={"function"}><b>function</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> is an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> that represents code to be executed when an appropriate number of arguments is supplied. A <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> is produced by the <DictionaryLink styled={true} term={"function"}><b>function</b></DictionaryLink> *special form*, the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"coerce"}><b>coerce</b></DictionaryLink>, or the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"compile"}><b>compile</b></DictionaryLink>. A <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> can be directly invoked by using it as the first argument to <DictionaryLink styled={true} term={"funcall"}><b>funcall</b></DictionaryLink>, <DictionaryLink styled={true} term={"apply"}><b>apply</b></DictionaryLink>, or <DictionaryLink styled={true} term={"multiple-value-call"}><b>multiple-value-call</b></DictionaryLink>. 
+A <ClLinks  term={"function"}><i>function</i></ClLinks> is an <ClLinks  term={"object"}><i>object</i></ClLinks> that represents code to be executed when an appropriate number of arguments is supplied. A <ClLinks  term={"function"}><i>function</i></ClLinks> is produced by the <ClLinks  term={"function"}><b>function</b></ClLinks> *special form*, the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"coerce"}><b>coerce</b></ClLinks>, or the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"compile"}><b>compile</b></ClLinks>. A <ClLinks  term={"function"}><i>function</i></ClLinks> can be directly invoked by using it as the first argument to <ClLinks  term={"funcall"}><b>funcall</b></ClLinks>, <ClLinks  term={"apply"}><b>apply</b></ClLinks>, or <ClLinks  term={"multiple-value-call"}><b>multiple-value-call</b></ClLinks>. 
 
 
 
@@ -66,11 +66,11 @@ Specializing.
 
 
 
-The list form of the <DictionaryLink styled={true} term={"function"}><b>function</b></DictionaryLink> *type-specifier* can be used only for declaration and not for discrimination. Every element of this <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> that accepts arguments of the types specified by the *argj-types* and returns values that are members of the <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> specified by *value-type*. The **&amp;optional**, **&amp;rest**, **&amp;key**, and **&amp;allow-other-keys** markers can appear in the list of argument types. The *type specifier* provided with **&amp;rest** is the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> of each actual argument, not the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> of the corresponding variable. 
+The list form of the <ClLinks  term={"function"}><b>function</b></ClLinks> *type-specifier* can be used only for declaration and not for discrimination. Every element of this <ClLinks  term={"type"}><i>type</i></ClLinks> is a <ClLinks  term={"function"}><i>function</i></ClLinks> that accepts arguments of the types specified by the *argj-types* and returns values that are members of the <ClLinks  term={"type"}><i>types</i></ClLinks> specified by *value-type*. The **&amp;optional**, **&amp;rest**, **&amp;key**, and **&amp;allow-other-keys** markers can appear in the list of argument types. The *type specifier* provided with **&amp;rest** is the <ClLinks  term={"type"}><i>type</i></ClLinks> of each actual argument, not the <ClLinks  term={"type"}><i>type</i></ClLinks> of the corresponding variable. 
 
 
 
-The **&amp;key** parameters should be supplied as lists of the form (*keyword type*). The <GlossaryTerm styled={true} term={"keyword"}><i>keyword</i></GlossaryTerm> must be a valid keyword-name symbol as must be supplied in the actual arguments of a call. This is usually a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> in the KEYWORD <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> but can be any <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. When **&amp;key** is given in a <DictionaryLink styled={true} term={"function"}><b>function</b></DictionaryLink> *type specifier lambda list*, the *keyword parameters* given are exhaustive unless **&amp;allow-other-keys** is also present. **&amp;allow-other-keys** is an indication that other keyword arguments might actually be supplied and, if supplied, can be used. For example, the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"make-list"}><b>make-list</b></DictionaryLink> could be declared as follows:  
+The **&amp;key** parameters should be supplied as lists of the form (*keyword type*). The <ClLinks  term={"keyword"}><i>keyword</i></ClLinks> must be a valid keyword-name symbol as must be supplied in the actual arguments of a call. This is usually a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks> but can be any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. When **&amp;key** is given in a <ClLinks  term={"function"}><b>function</b></ClLinks> *type specifier lambda list*, the *keyword parameters* given are exhaustive unless **&amp;allow-other-keys** is also present. **&amp;allow-other-keys** is an indication that other keyword arguments might actually be supplied and, if supplied, can be used. For example, the <ClLinks  term={"type"}><i>type</i></ClLinks> of the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"make-list"}><b>make-list</b></ClLinks> could be declared as follows:  
 
 
 
@@ -82,7 +82,7 @@ The **&amp;key** parameters should be supplied as lists of the form (*keyword ty
 
 
 
-The *value-type* can be a <DictionaryLink styled={true} term={"values"}><b>values</b></DictionaryLink> *type specifier* in order to indicate the <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> of *multiple values*. Consider a declaration of the following form: 
+The *value-type* can be a <ClLinks  term={"values"}><b>values</b></ClLinks> *type specifier* in order to indicate the <ClLinks  term={"type"}><i>types</i></ClLinks> of *multiple values*. Consider a declaration of the following form: 
 
 
 
@@ -90,15 +90,15 @@ The *value-type* can be a <DictionaryLink styled={true} term={"values"}><b>value
 
 
 
-Any <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> (f arg0 arg1 ...) within the scope of that declaration is equivalent to the following: (the val-type (f (the arg0-type arg0) (the arg1-type arg1) ...)) 
+Any <ClLinks  term={"form"}><i>form</i></ClLinks> (f arg0 arg1 ...) within the scope of that declaration is equivalent to the following: (the val-type (f (the arg0-type arg0) (the arg1-type arg1) ...)) 
 
 
 
-That is, the consequences are undefined if any of the arguments are not of the specified <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> or the result is not of the specified <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>. In particular, if any argument is not of the correct <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>, the result is not guaranteed to be of the specified <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>. 
+That is, the consequences are undefined if any of the arguments are not of the specified <ClLinks  term={"type"}><i>types</i></ClLinks> or the result is not of the specified <ClLinks  term={"type"}><i>type</i></ClLinks>. In particular, if any argument is not of the correct <ClLinks  term={"type"}><i>type</i></ClLinks>, the result is not guaranteed to be of the specified <ClLinks  term={"type"}><i>type</i></ClLinks>. 
 
 
 
-Thus, an <DictionaryLink styled={true} term={"ftype"}><b>ftype</b></DictionaryLink> declaration for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> describes <GlossaryTerm styled={true} term={"call"}><i>calls</i></GlossaryTerm> to the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>, not the actual definition of the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>. 
+Thus, an <ClLinks  term={"ftype"}><b>ftype</b></ClLinks> declaration for a <ClLinks  term={"function"}><i>function</i></ClLinks> describes <ClLinks  term={"call"}><i>calls</i></ClLinks> to the <ClLinks  term={"function"}><i>function</i></ClLinks>, not the actual definition of the <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -110,15 +110,15 @@ Consider a declaration of the following form:
 
 
 
-This declaration has the interpretation that, within the scope of the declaration, the consequences are unspecified if the value of fn-valued-variable is called with arguments not of the specified <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm>; the value resulting from a valid call will be of type val-type. 
+This declaration has the interpretation that, within the scope of the declaration, the consequences are unspecified if the value of fn-valued-variable is called with arguments not of the specified <ClLinks  term={"type"}><i>types</i></ClLinks>; the value resulting from a valid call will be of type val-type. 
 
 
 
-As with variable type declarations, nested declarations imply intersections of <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm>, as follows: 
+As with variable type declarations, nested declarations imply intersections of <ClLinks  term={"type"}><i>types</i></ClLinks>, as follows: 
 
 
 
-*•* Consider the following two declarations of <DictionaryLink styled={true} term={"ftype"}><b>ftype</b></DictionaryLink>: 
+*•* Consider the following two declarations of <ClLinks  term={"ftype"}><b>ftype</b></ClLinks>: 
 
 
 
@@ -146,7 +146,7 @@ f))
 
 
 
-It is permitted to ignore one or all of the <DictionaryLink styled={true} term={"ftype"}><b>ftype</b></DictionaryLink> declarations in force. 
+It is permitted to ignore one or all of the <ClLinks  term={"ftype"}><b>ftype</b></ClLinks> declarations in force. 
 
 
 

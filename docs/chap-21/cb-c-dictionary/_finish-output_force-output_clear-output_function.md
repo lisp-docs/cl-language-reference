@@ -1,4 +1,4 @@
-**finish-output, force-output, clear-output** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**finish-output, force-output, clear-output** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,15 +6,15 @@
 
 
 
-<DictionaryLink styled={true} term={"finish-output"}><b>finish-output</b></DictionaryLink> &amp;optional *output-stream →* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
+<ClLinks  term={"finish-output"}><b>finish-output</b></ClLinks> &amp;optional *output-stream →* <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
 
 
 
-<DictionaryLink styled={true} term={"force-output"}><b>force-output</b></DictionaryLink> &amp;optional *output-stream →* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
+<ClLinks  term={"force-output"}><b>force-output</b></ClLinks> &amp;optional *output-stream →* <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
 
 
 
-<DictionaryLink styled={true} term={"clear-output"}><b>clear-output</b></DictionaryLink> &amp;optional *output-stream →* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
+<ClLinks  term={"clear-output"}><b>clear-output</b></ClLinks> &amp;optional *output-stream →* <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -30,23 +30,23 @@
 
 
 
-<DictionaryLink styled={true} term={"finish-output"}><b>finish-output</b></DictionaryLink>, <DictionaryLink styled={true} term={"force-output"}><b>force-output</b></DictionaryLink>, and <DictionaryLink styled={true} term={"clear-output"}><b>clear-output</b></DictionaryLink> exercise control over the internal handling of buffered stream output. 
+<ClLinks  term={"finish-output"}><b>finish-output</b></ClLinks>, <ClLinks  term={"force-output"}><b>force-output</b></ClLinks>, and <ClLinks  term={"clear-output"}><b>clear-output</b></ClLinks> exercise control over the internal handling of buffered stream output. 
 
 
 
-<DictionaryLink styled={true} term={"finish-output"}><b>finish-output</b></DictionaryLink> attempts to ensure that any buffered output sent to *output-stream* has reached its destination, and then returns. 
+<ClLinks  term={"finish-output"}><b>finish-output</b></ClLinks> attempts to ensure that any buffered output sent to *output-stream* has reached its destination, and then returns. 
 
 
 
-<DictionaryLink styled={true} term={"force-output"}><b>force-output</b></DictionaryLink> initiates the emptying of any internal buffers but does not wait for completion or acknowledgment to return. 
+<ClLinks  term={"force-output"}><b>force-output</b></ClLinks> initiates the emptying of any internal buffers but does not wait for completion or acknowledgment to return. 
 
 
 
-<DictionaryLink styled={true} term={"clear-output"}><b>clear-output</b></DictionaryLink> attempts to abort any outstanding output operation in progress in order to allow as little output as possible to continue to the destination. 
+<ClLinks  term={"clear-output"}><b>clear-output</b></ClLinks> attempts to abort any outstanding output operation in progress in order to allow as little output as possible to continue to the destination. 
 
 
 
-If any of these operations does not make sense for *output-stream*, then it does nothing. The precise actions of these <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> are <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
+If any of these operations does not make sense for *output-stream*, then it does nothing. The precise actions of these <ClLinks  term={"function"}><i>functions</i></ClLinks> are <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -64,7 +64,6 @@ If any of these operations does not make sense for *output-stream*, then it does
 
 **Examples:**
 ```lisp
-
 ;; Implementation A 
 (progn (princ "am i seen?") (clear-output)) 
 → NIL 
@@ -72,7 +71,6 @@ If any of these operations does not make sense for *output-stream*, then it does
 (progn (princ "am i seen?") (clear-output)) 
 ▷ am i seen? 
 → NIL 
-
 ```
 **Affected By:** 
 
@@ -86,7 +84,7 @@ If any of these operations does not make sense for *output-stream*, then it does
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *output-stream* is not a *stream designator* . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *output-stream* is not a *stream designator* . 
 
 
 
@@ -94,7 +92,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"clear-input"}><b>clear-input</b></DictionaryLink> 
+<ClLinks  term={"clear-input"}><b>clear-input</b></ClLinks> 
 
 
 

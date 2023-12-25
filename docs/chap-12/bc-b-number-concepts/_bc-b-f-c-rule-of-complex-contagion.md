@@ -2,7 +2,7 @@
 
 
 
-When a *real* and a <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> are both part of a computation, the *real* is first converted to a <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> by providing an imaginary part of 0. 
+When a *real* and a <ClLinks  term={"complex"}><i>complex</i></ClLinks> are both part of a computation, the *real* is first converted to a <ClLinks  term={"complex"}><i>complex</i></ClLinks> by providing an imaginary part of 0. 
 
 
 

@@ -2,11 +2,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"vector"}><i>Vectors</i></GlossaryTerm> whose <GlossaryTerm styled={true} term={"element"}><i>elements</i></GlossaryTerm> are restricted to <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink> or a <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> of <DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink> are called <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"string"}><i>Strings</i></GlossaryTerm> are of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"string"}><b>string</b></DictionaryLink>. Figure 15–2 lists some *defined names* related to <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm>. 
+<ClLinks  term={"vector"}><i>Vectors</i></ClLinks> whose <ClLinks  term={"element"}><i>elements</i></ClLinks> are restricted to <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks> or a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"character"}><b>character</b></ClLinks> are called <ClLinks  term={"string"}><i>strings</i></ClLinks>. <ClLinks  term={"string"}><i>Strings</i></ClLinks> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"string"}><b>string</b></ClLinks>. Figure 15–2 lists some *defined names* related to <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"string"}><i>Strings</i></GlossaryTerm> are *specialized arrays* and might logically have been included in this chapter. However, for purposes of readability most information about <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm> does not appear in this chapter; see instead Chapter 16 (Strings). 
+<ClLinks  term={"string"}><i>Strings</i></ClLinks> are *specialized arrays* and might logically have been included in this chapter. However, for purposes of readability most information about <ClLinks  term={"string"}><i>strings</i></ClLinks> does not appear in this chapter; see instead Chapter 16 (Strings). 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"vector"}><i>Vectors</i></GlossaryTerm> whose <GlossaryTerm styled={true} term={"element"}><i>elements</i></GlossaryTerm> are restricted to <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"bit"}><b>bit</b></DictionaryLink> are called *bit vectors*. *Bit vectors* are of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"bit-vector"}><b>bit-vector</b></DictionaryLink>. Figure 15–3 lists some *defined names* for operations on *bit arrays*. 
+<ClLinks  term={"vector"}><i>Vectors</i></ClLinks> whose <ClLinks  term={"element"}><i>elements</i></ClLinks> are restricted to <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"bit"}><b>bit</b></ClLinks> are called *bit vectors*. *Bit vectors* are of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"bit-vector"}><b>bit-vector</b></ClLinks>. Figure 15–3 lists some *defined names* for operations on *bit arrays*. 
 
 
 

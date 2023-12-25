@@ -1,4 +1,4 @@
-**intern** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**intern** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"intern"}><b>intern</b></DictionaryLink> <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> &amp;optional *package → symbol, status* 
+<ClLinks  term={"intern"}><b>intern</b></ClLinks> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *package → symbol, status* 
 
 
 
@@ -14,19 +14,19 @@
 
 
 
-<GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>. 
+<ClLinks  term={"string"}><i>string</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>—a *package designator* . The default is the *current package*. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. 
 
 
 
-<GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*status*—one of :inherited, :external, :internal, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+*status*—one of :inherited, :external, :internal, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<DictionaryLink styled={true} term={"intern"}><b>intern</b></DictionaryLink> enters a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> named <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> into <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. If a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> whose name is the same as <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> is already <GlossaryTerm styled={true} term={"accessible"}><i>accessible</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>, it is returned. If no such <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"accessible"}><i>accessible</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>, a new <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> with the given name is created and entered into <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> as an *internal symbol*, or as an *external symbol* if the <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> is the KEYWORD <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>; <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> becomes the *home package* of the created <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+<ClLinks  term={"intern"}><b>intern</b></ClLinks> enters a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> named <ClLinks  term={"string"}><i>string</i></ClLinks> into <ClLinks  term={"package"}><i>package</i></ClLinks>. If a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose name is the same as <ClLinks  term={"string"}><i>string</i></ClLinks> is already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, it is returned. If no such <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, a new <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> with the given name is created and entered into <ClLinks  term={"package"}><i>package</i></ClLinks> as an *internal symbol*, or as an *external symbol* if the <ClLinks  term={"package"}><i>package</i></ClLinks> is the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>; <ClLinks  term={"package"}><i>package</i></ClLinks> becomes the *home package* of the created <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-The first value returned by <DictionaryLink styled={true} term={"intern"}><b>intern</b></DictionaryLink>, <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>, is the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> that was found or created. The meaning of the *secondary value*, *status*, is as follows: 
+The first value returned by <ClLinks  term={"intern"}><b>intern</b></ClLinks>, <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that was found or created. The meaning of the *secondary value*, *status*, is as follows: 
 
 
 
@@ -46,7 +46,7 @@ The first value returned by <DictionaryLink styled={true} term={"intern"}><b>int
 
 
 
-The <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> was found and is <GlossaryTerm styled={true} term={"present"}><i>present</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> as an *internal symbol*. 
+The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> was found and is <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> as an *internal symbol*. 
 
 
 
@@ -54,7 +54,7 @@ The <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> was
 
 
 
-The <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> was found and is <GlossaryTerm styled={true} term={"present"}><i>present</i></GlossaryTerm> as an *external symbol*. 
+The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> was found and is <ClLinks  term={"present"}><i>present</i></ClLinks> as an *external symbol*. 
 
 
 
@@ -62,23 +62,19 @@ The <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> was
 
 
 
-The <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> was found and is inherited via <DictionaryLink styled={true} term={"use-package"}><b>use-package</b></DictionaryLink> (which implies that the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is internal). 
+The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> was found and is inherited via <ClLinks  term={"use-package"}><b>use-package</b></ClLinks> (which implies that the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is internal). 
 
 
 
-<DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
+<ClLinks  term={"nil"}><b>nil</b></ClLinks> 
 
 
 
-No pre-existing <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> was found, so one was created. 
-
-
+No pre-existing <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> was found, so one was created. 
 
 
 
 
-
- 
 
 
 
@@ -86,25 +82,27 @@ No pre-existing <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></Gloss
 
 
 
-It is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> whether the <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> that becomes the new <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>’s <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is the given <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> or a copy of it. Once a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> has been given as the *string argument* to <GlossaryTerm styled={true} term={"intern"}><i>intern</i></GlossaryTerm> in this situation where a new <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is created, the consequences are undefined if a subsequent attempt is made to alter that <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>. 
+ 
+
+
+
+It is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the <ClLinks  term={"string"}><i>string</i></ClLinks> that becomes the new <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks  term={"name"}><i>name</i></ClLinks> is the given <ClLinks  term={"string"}><i>string</i></ClLinks> or a copy of it. Once a <ClLinks  term={"string"}><i>string</i></ClLinks> has been given as the *string argument* to <ClLinks  term={"intern"}><i>intern</i></ClLinks> in this situation where a new <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is created, the consequences are undefined if a subsequent attempt is made to alter that <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
 (intern "Never-Before") → |Never-Before|, NIL 
 (intern "Never-Before") → |Never-Before|, :INTERNAL 
 (intern "NEVER-BEFORE" "KEYWORD") → :NEVER-BEFORE, NIL 
 (intern "NEVER-BEFORE" "KEYWORD") → :NEVER-BEFORE, :EXTERNAL 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"find-symbol"}><b>find-symbol</b></DictionaryLink>, <DictionaryLink styled={true} term={"read"}><b>read</b></DictionaryLink>, <DictionaryLink styled={true} term={"symbol"}><b>symbol</b></DictionaryLink>, <DictionaryLink styled={true} term={"unintern"}><b>unintern</b></DictionaryLink>, Section 2.3.4 (Symbols as Tokens) 
+<ClLinks  term={"find-symbol"}><b>find-symbol</b></ClLinks>, <ClLinks  term={"read"}><b>read</b></ClLinks>, <ClLinks  term={"symbol"}><b>symbol</b></ClLinks>, <ClLinks  term={"unintern"}><b>unintern</b></ClLinks>, Section 2.3.4 (Symbols as Tokens) 
 
 
 
@@ -112,7 +110,7 @@ It is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implement
 
 
 
-<DictionaryLink styled={true} term={"intern"}><b>intern</b></DictionaryLink> does not need to do any name conflict checking because it never creates a new <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> if there is already an *accessible symbol* with the name given. 
+<ClLinks  term={"intern"}><b>intern</b></ClLinks> does not need to do any name conflict checking because it never creates a new <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> if there is already an *accessible symbol* with the name given. 
 
 
 

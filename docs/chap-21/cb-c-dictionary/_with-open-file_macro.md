@@ -1,4 +1,4 @@
-**with-open-file** <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> 
+**with-open-file** <ClLinks  term={"macro"}><i>macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"with-open-file"}><b>with-open-file</b></DictionaryLink> (*stream filespec \{options\}*\*) <GlossaryTerm styled={true} term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* 
+<ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> (*stream filespec \{options\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> – a variable. 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks> – a variable. 
 
 
 
@@ -26,19 +26,19 @@
 
 
 
-*options* – <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>; evaluated. 
+*options* – <ClLinks  term={"form"}><i>forms</i></ClLinks>; evaluated. 
 
 
 
-<GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-<GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -46,27 +46,23 @@
 
 
 
-<DictionaryLink styled={true} term={"with-open-file"}><b>with-open-file</b></DictionaryLink> uses <DictionaryLink styled={true} term={"open"}><b>open</b></DictionaryLink> to create a *file stream* to <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm> named by *filespec*. *Filespec* is the name of the file to be opened. *Options* are used as keyword arguments to <DictionaryLink styled={true} term={"open"}><b>open</b></DictionaryLink>. 
+<ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> uses <ClLinks  term={"open"}><b>open</b></ClLinks> to create a *file stream* to <ClLinks  term={"file"}><i>file</i></ClLinks> named by *filespec*. *Filespec* is the name of the file to be opened. *Options* are used as keyword arguments to <ClLinks  term={"open"}><b>open</b></ClLinks>. 
 
 
 
-The *stream object* to which the *stream variable* is <GlossaryTerm styled={true} term={"bound"}><i>bound</i></GlossaryTerm> has *dynamic extent*; its <GlossaryTerm styled={true} term={"extent"}><i>extent</i></GlossaryTerm> ends when the <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is exited. 
+The *stream object* to which the *stream variable* is <ClLinks  term={"bound"}><i>bound</i></ClLinks> has *dynamic extent*; its <ClLinks  term={"extent"}><i>extent</i></ClLinks> ends when the <ClLinks  term={"form"}><i>form</i></ClLinks> is exited. 
 
 
 
-<DictionaryLink styled={true} term={"with-open-file"}><b>with-open-file</b></DictionaryLink> evaluates the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> as an *implicit progn* with <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> bound to the value returned by <DictionaryLink styled={true} term={"open"}><b>open</b></DictionaryLink>. 
+<ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> evaluates the <ClLinks  term={"form"}><i>forms</i></ClLinks> as an *implicit progn* with <ClLinks  term={"stream"}><i>stream</i></ClLinks> bound to the value returned by <ClLinks  term={"open"}><b>open</b></ClLinks>. 
 
 
 
-When control leaves the body, either normally or abnormally (such as by use of <DictionaryLink styled={true} term={"throw"}><b>throw</b></DictionaryLink>), the file is automatically closed. If a new output file is being written, and control leaves abnormally, the file is aborted and the file system is left, so far as possible, as if the file had never been opened. 
-
-
+When control leaves the body, either normally or abnormally (such as by use of <ClLinks  term={"throw"}><b>throw</b></ClLinks>), the file is automatically closed. If a new output file is being written, and control leaves abnormally, the file is aborted and the file system is left, so far as possible, as if the file had never been opened. 
 
 
 
 
-
- 
 
 
 
@@ -74,21 +70,24 @@ When control leaves the body, either normally or abnormally (such as by use of <
 
 
 
-<DictionaryLink styled={true} term={"with-open-file"}><b>with-open-file</b></DictionaryLink> 
+ 
 
 
 
-It is possible by the use of :if-exists nil or :if-does-not-exist nil for <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> to be bound to <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. Users of :if-does-not-exist nil should check for a valid <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
+<ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> 
 
 
 
-The consequences are undefined if an attempt is made to <GlossaryTerm styled={true} term={"assign"}><i>assign</i></GlossaryTerm> the *stream variable*. The compiler may choose to issue a warning if such an attempt is detected. 
+It is possible by the use of :if-exists nil or :if-does-not-exist nil for <ClLinks  term={"stream"}><i>stream</i></ClLinks> to be bound to <ClLinks  term={"nil"}><b>nil</b></ClLinks>. Users of :if-does-not-exist nil should check for a valid <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+
+
+
+The consequences are undefined if an attempt is made to <ClLinks  term={"assign"}><i>assign</i></ClLinks> the *stream variable*. The compiler may choose to issue a warning if such an attempt is detected. 
 
 
 
 **Examples:**
 ```lisp
-
 (setq p (merge-pathnames "test")) 
 → #<PATHNAME :HOST NIL :DEVICE *device-name* :DIRECTORY *directory-name* 
 :NAME "test" :TYPE NIL :VERSION :NEWEST> 
@@ -111,13 +110,12 @@ The consequences are undefined if an attempt is made to <GlossaryTerm styled={tr
 ;; Here’s another bug to avoid... 
 (with-open-file (foo "no-such-file" :direction :output :if-does-not-exist nil) (format foo "Hello")) 
 → "Hello" ;FORMAT got an argument of NIL! 
-
 ```
 **Side Effects:** 
 
 
 
-Creates a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> to the <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm> named by <GlossaryTerm styled={true} term={"filename"}><i>filename</i></GlossaryTerm> (upon entry), and closes the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> (upon exit). In some <GlossaryTerm styled={true} term={"implementation"}><i>implementations</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm> might be locked in some way while it is open. If the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is an *output stream*, a <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm> might be created. 
+Creates a <ClLinks  term={"stream"}><i>stream</i></ClLinks> to the <ClLinks  term={"file"}><i>file</i></ClLinks> named by <ClLinks  term={"filename"}><i>filename</i></ClLinks> (upon entry), and closes the <ClLinks  term={"stream"}><i>stream</i></ClLinks> (upon exit). In some <ClLinks  term={"implementation"}><i>implementations</i></ClLinks>, the <ClLinks  term={"file"}><i>file</i></ClLinks> might be locked in some way while it is open. If the <ClLinks  term={"stream"}><i>stream</i></ClLinks> is an *output stream*, a <ClLinks  term={"file"}><i>file</i></ClLinks> might be created. 
 
 
 
@@ -133,7 +131,7 @@ The host computer’s file system.
 
 
 
-See the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"open"}><b>open</b></DictionaryLink>. 
+See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"open"}><b>open</b></ClLinks>. 
 
 
 
@@ -153,4 +151,4 @@ See the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryT
 
 
 
-<DictionaryLink styled={true} term={"open"}><b>open</b></DictionaryLink>, <DictionaryLink styled={true} term={"close"}><b>close</b></DictionaryLink>, <DictionaryLink styled={true} term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink styled={true} term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks  term={"open"}><b>open</b></ClLinks>, <ClLinks  term={"close"}><b>close</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 19.1.2 (Pathnames as Filenames) 

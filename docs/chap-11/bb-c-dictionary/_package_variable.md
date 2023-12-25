@@ -1,4 +1,4 @@
-*∗<DictionaryLink styled={true} term={"package"}><b><GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm></b></DictionaryLink>∗ Variable* 
+*∗<ClLinks  term={"package"}><b><ClLinks  term={"package"}><i>package</i></ClLinks></b></ClLinks>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a *package object*.
 
 
 
-the COMMON-LISP-USER <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. 
+the COMMON-LISP-USER <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -22,15 +22,15 @@ the COMMON-LISP-USER <GlossaryTerm styled={true} term={"package"}><i>package</i>
 
 
 
-Whatever *package object* is currently the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"package"}><b>\*package\*</b></DictionaryLink> is referred to as the *current package*. **Examples:**
-```lisp
+Whatever *package object* is currently the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"package"}><b>\*package\*</b></ClLinks> is referred to as the *current package*. 
 
+**Examples:**
+```lisp
 (in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
 \*package\* → #<PACKAGE "COMMON-LISP-USER"> 
 (make-package "SAMPLE-PACKAGE" :use ’("COMMON-LISP")) 
 → #<PACKAGE "SAMPLE-PACKAGE"> 
 (list 
-
  
  
  (symbol-package 
@@ -45,13 +45,12 @@ Whatever *package object* is currently the <GlossaryTerm styled={true} term={"va
 (eq ’foo (let ((\*package\* (find-package ’sample-package))) 
 	   (intern "FOO"))) 
 → false 
-
 ```
 **Affected By:** 
 
 
 
-<DictionaryLink styled={true} term={"load"}><b>load</b></DictionaryLink>, <DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink>, <DictionaryLink styled={true} term={"in-package"}><b>in-package</b></DictionaryLink> 
+<ClLinks  term={"load"}><b>load</b></ClLinks>, <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks  term={"in-package"}><b>in-package</b></ClLinks> 
 
 
 
@@ -59,7 +58,7 @@ Whatever *package object* is currently the <GlossaryTerm styled={true} term={"va
 
 
 
-<DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink>, <DictionaryLink styled={true} term={"in-package"}><b>in-package</b></DictionaryLink>, <DictionaryLink styled={true} term={"load"}><b>load</b></DictionaryLink>, <DictionaryLink styled={true} term={"package"}><b>package</b></DictionaryLink> 
+<ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks  term={"in-package"}><b>in-package</b></ClLinks>, <ClLinks  term={"load"}><b>load</b></ClLinks>, <ClLinks  term={"package"}><b>package</b></ClLinks> 
 
 
 

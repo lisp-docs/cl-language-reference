@@ -2,7 +2,7 @@
 
 
 
-When using one of the <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> in Figure 17–3, the elements *E* of a *sequence S* are filtered not on the basis of the presence or absence of an object *O* under a two *argument predicate*, as with the <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> described in Section 17.2.1 (Satisfying a Two-Argument Test), but rather on the basis of a one *argument predicate*. 
+When using one of the <ClLinks  term={"function"}><i>functions</i></ClLinks> in Figure 17–3, the elements *E* of a *sequence S* are filtered not on the basis of the presence or absence of an object *O* under a two *argument predicate*, as with the <ClLinks  term={"function"}><i>functions</i></ClLinks> described in Section 17.2.1 (Satisfying a Two-Argument Test), but rather on the basis of a one *argument predicate*. 
 
 
 

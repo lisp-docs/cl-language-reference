@@ -2,11 +2,11 @@
 
 
 
-A <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> that is used as a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is called a *compound form*. 
+A <ClLinks  term={"cons"}><i>cons</i></ClLinks> that is used as a <ClLinks  term={"form"}><i>form</i></ClLinks> is called a *compound form*. 
 
 
 
-If the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> of that *compound form* is a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>, that <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> of an <GlossaryTerm styled={true} term={"operator"}><i>operator</i></GlossaryTerm> , and the <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is either a *special form*, a *macro form*, or a *function form*, depending on the *function binding* of the <GlossaryTerm styled={true} term={"operator"}><i>operator</i></GlossaryTerm> in the current *lexical environment*. If the <GlossaryTerm styled={true} term={"operator"}><i>operator</i></GlossaryTerm> is neither a *special operator*  
+If the <ClLinks  term={"car"}><i>car</i></ClLinks> of that *compound form* is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is the <ClLinks  term={"name"}><i>name</i></ClLinks> of an <ClLinks  term={"operator"}><i>operator</i></ClLinks> , and the <ClLinks  term={"form"}><i>form</i></ClLinks> is either a *special form*, a *macro form*, or a *function form*, depending on the *function binding* of the <ClLinks  term={"operator"}><i>operator</i></ClLinks> in the current *lexical environment*. If the <ClLinks  term={"operator"}><i>operator</i></ClLinks> is neither a *special operator*  
 
 
 
@@ -14,11 +14,11 @@ If the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> of tha
 
 
 
-nor a *macro name*, it is assumed to be a *function name* (even if there is no definition for such a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>). 
+nor a *macro name*, it is assumed to be a *function name* (even if there is no definition for such a <ClLinks  term={"function"}><i>function</i></ClLinks>). 
 
 
 
-If the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> of the *compound form* is not a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>, then that <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> must be a *lambda expression*, in which case the *compound form* is a *lambda form*. 
+If the <ClLinks  term={"car"}><i>car</i></ClLinks> of the *compound form* is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, then that <ClLinks  term={"car"}><i>car</i></ClLinks> must be a *lambda expression*, in which case the *compound form* is a *lambda form*. 
 
 
 

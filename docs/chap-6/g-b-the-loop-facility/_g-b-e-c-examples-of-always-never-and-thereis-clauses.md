@@ -1,5 +1,4 @@
 ```lisp
-
 ;; Make sure I is always less than 11 (two ways). 
 ;; The FOR construct terminates these loops. 
 (loop for i from 0 to 10 
@@ -37,7 +36,6 @@
 ;; only return T. But if Fermat is right, that won’t matter 
 ;; because this won’t terminate. 
 (loop for z upfrom 2 
-
       
       
       thereis 
@@ -48,5 +46,4 @@
 		  (loop for y below z 
 			thereis (= (+ (expt x n) (expt y n)) 
 				   (expt z n)))))) 
-
 ```

@@ -1,4 +1,4 @@
-**macroexpand, macroexpand-1** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**macroexpand, macroexpand-1** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<DictionaryLink styled={true} term={"macroexpand"}><b>macroexpand</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> &amp;optional *env → expansion, expanded-p* 
+<ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> &amp;optional *env → expansion, expanded-p* 
 
 
 
-<DictionaryLink styled={true} term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> &amp;optional *env → expansion, expanded-p* 
+<ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> &amp;optional *env → expansion, expanded-p* 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-<GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
+<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*env*—an *environment object*. The default is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+*env*—an *environment object*. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*expansion*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
+*expansion*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -38,33 +38,32 @@
 
 
 
-<DictionaryLink styled={true} term={"macroexpand"}><b>macroexpand</b></DictionaryLink> and <DictionaryLink styled={true} term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> expand <GlossaryTerm styled={true} term={"macro"}><i>macros</i></GlossaryTerm>. 
+<ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> and <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> expand <ClLinks  term={"macro"}><i>macros</i></ClLinks>. 
 
 
 
-If <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is a *macro form*, then <DictionaryLink styled={true} term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> expands the *macro form* call once. 
+If <ClLinks  term={"form"}><i>form</i></ClLinks> is a *macro form*, then <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> expands the *macro form* call once. 
 
 
 
-<DictionaryLink styled={true} term={"macroexpand"}><b>macroexpand</b></DictionaryLink> repeatedly expands <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> until it is no longer a *macro form*. In effect, <DictionaryLink styled={true} term={"macroexpand"}><b>macroexpand</b></DictionaryLink> calls <DictionaryLink styled={true} term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> repeatedly until the *secondary value* it returns is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+<ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> repeatedly expands <ClLinks  term={"form"}><i>form</i></ClLinks> until it is no longer a *macro form*. In effect, <ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> calls <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> repeatedly until the *secondary value* it returns is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-If <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is a *macro form*, then the *expansion* is a *macro expansion* and *expanded-p* is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>. Otherwise, the *expansion* is the given <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> and *expanded-p* is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+If <ClLinks  term={"form"}><i>form</i></ClLinks> is a *macro form*, then the *expansion* is a *macro expansion* and *expanded-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>. Otherwise, the *expansion* is the given <ClLinks  term={"form"}><i>form</i></ClLinks> and *expanded-p* is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-Macro expansion is carried out as follows. Once <DictionaryLink styled={true} term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> has determined that the <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is a *macro form*, it obtains an appropriate expansion <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> for the <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> or *symbol macro*. The value of **\*macroexpand-hook\*** is coerced to a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> and then called as a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of three arguments: the expansion <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>, and the *env*. The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> returned from this call is taken to be the expansion of the <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
+Macro expansion is carried out as follows. Once <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> has determined that the <ClLinks  term={"form"}><i>form</i></ClLinks> is a *macro form*, it obtains an appropriate expansion <ClLinks  term={"function"}><i>function</i></ClLinks> for the <ClLinks  term={"macro"}><i>macro</i></ClLinks> or *symbol macro*. The value of **\*macroexpand-hook\*** is coerced to a <ClLinks  term={"function"}><i>function</i></ClLinks> and then called as a <ClLinks  term={"function"}><i>function</i></ClLinks> of three arguments: the expansion <ClLinks  term={"function"}><i>function</i></ClLinks>, the <ClLinks  term={"form"}><i>form</i></ClLinks>, and the *env*. The <ClLinks  term={"value"}><i>value</i></ClLinks> returned from this call is taken to be the expansion of the <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-In addition to <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> definitions in the global environment, any local macro definitions established within *env* by <DictionaryLink styled={true} term={"macrolet"}><b>macrolet</b></DictionaryLink> or <DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> are considered. If only <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is supplied as an argument, then the environment is effectively null, and only global macro definitions as established by <DictionaryLink styled={true} term={"defmacro"}><b>defmacro</b></DictionaryLink> are considered. <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> definitions are shadowed by local <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> definitions. 
+In addition to <ClLinks  term={"macro"}><i>macro</i></ClLinks> definitions in the global environment, any local macro definitions established within *env* by <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> or <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> are considered. If only <ClLinks  term={"form"}><i>form</i></ClLinks> is supplied as an argument, then the environment is effectively null, and only global macro definitions as established by <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> are considered. <ClLinks  term={"macro"}><i>Macro</i></ClLinks> definitions are shadowed by local <ClLinks  term={"function"}><i>function</i></ClLinks> definitions. 
 
 
 
 **Examples:**
 ```lisp
-
 (defmacro alpha (x y) ‘(beta ,x ,y)) → ALPHA 
 (defmacro beta (x y) ‘(gamma ,x ,y)) → BETA 
 (defmacro delta (x y) ‘(gamma ,x ,y)) → EPSILON 
@@ -72,7 +71,6 @@ In addition to <GlossaryTerm styled={true} term={"macro"}><i>macro</i></Glossary
   (multiple-value-bind (expansion expanded-p) 
       (macroexpand form env) 
     ‘(values ’,expansion ’,expanded-p))) → EXPAND  
-
 **macroexpand, macroexpand-1** 
 (defmacro expand-1 (form &environment env) 
   (multiple-value-bind (expansion expanded-p) 
@@ -114,7 +112,6 @@ In addition to <GlossaryTerm styled={true} term={"macro"}><i>macro</i></Glossary
 (symbol-macrolet ((b (alpha x y)) 
 		  (a b)) 
   (expand a)) → (GAMMA X Y), *true*  
-
 ;; Examples of shadowing behavior 
 (flet ((beta (x y) (+ x y))) 
   (expand (alpha a b))) → (BETA A B), *true* 
@@ -125,13 +122,12 @@ In addition to <GlossaryTerm styled={true} term={"macro"}><i>macro</i></Glossary
   (symbol-macrolet ((a (first x))) 
     (let ((a x)) 
       (expand a)))) → A, *false* 
-
 ```
 **Affected By:** 
 
 
 
-<DictionaryLink styled={true} term={"defmacro"}><b>defmacro</b></DictionaryLink>, <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink styled={true} term={"macro-function"}><b>macro-function</b></DictionaryLink>, <DictionaryLink styled={true} term={"macrolet"}><b>macrolet</b></DictionaryLink>, <DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> 
+<ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks>, <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks>, <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>, <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> 
 
 
 
@@ -139,7 +135,7 @@ In addition to <GlossaryTerm styled={true} term={"macro"}><i>macro</i></Glossary
 
 
 
-**\*macroexpand-hook\***, <DictionaryLink styled={true} term={"defmacro"}><b>defmacro</b></DictionaryLink>, <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink styled={true} term={"macro-function"}><b>macro-function</b></DictionaryLink>, <DictionaryLink styled={true} term={"macrolet"}><b>macrolet</b></DictionaryLink>, <DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>, Section 3.1 (Evaluation) 
+**\*macroexpand-hook\***, <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks>, <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks>, <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>, <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>, Section 3.1 (Evaluation) 
 
 
 
@@ -147,7 +143,7 @@ In addition to <GlossaryTerm styled={true} term={"macro"}><i>macro</i></Glossary
 
 
 
-Neither <DictionaryLink styled={true} term={"macroexpand"}><b>macroexpand</b></DictionaryLink> nor <DictionaryLink styled={true} term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> makes any explicit attempt to expand *macro forms* that are either <GlossaryTerm styled={true} term={"subform"}><i>subforms</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"subform"}><i>subforms</i></GlossaryTerm> of the *expansion*. Such expansion might occur implicitly, however, due to the semantics or implementation of the *macro function*. 
+Neither <ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> nor <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> makes any explicit attempt to expand *macro forms* that are either <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the <ClLinks  term={"form"}><i>form</i></ClLinks> or <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the *expansion*. Such expansion might occur implicitly, however, due to the semantics or implementation of the *macro function*. 
 
 
 

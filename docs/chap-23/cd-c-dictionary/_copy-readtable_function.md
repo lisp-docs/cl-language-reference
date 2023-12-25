@@ -1,4 +1,4 @@
-**copy-readtable** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**copy-readtable** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"copy-readtable"}><b>copy-readtable</b></DictionaryLink> &amp;optional *from-readtable to-readtable → readtable* 
+<ClLinks  term={"copy-readtable"}><b>copy-readtable</b></ClLinks> &amp;optional *from-readtable to-readtable → readtable* 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-*to-readtable*—a <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm> or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. The default is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+*to-readtable*—a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm>—the *to-readtable* if it is <GlossaryTerm styled={true} term={"non-nil"}><i>non-nil</i></GlossaryTerm>, or else a *fresh readtable*. 
+<ClLinks  term={"readtable"}><i>readtable</i></ClLinks>—the *to-readtable* if it is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>, or else a *fresh readtable*. 
 
 
 
@@ -30,40 +30,36 @@
 
 
 
-<DictionaryLink styled={true} term={"copy-readtable"}><b>copy-readtable</b></DictionaryLink> copies *from-readtable*. 
+<ClLinks  term={"copy-readtable"}><b>copy-readtable</b></ClLinks> copies *from-readtable*. 
 
 
 
-If *to-readtable* is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, a new <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm> is created and returned. Otherwise the <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm> specified by *to-readtable* is modified and returned. 
+If *to-readtable* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, a new <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is created and returned. Otherwise the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> specified by *to-readtable* is modified and returned. 
 
 
 
-<DictionaryLink styled={true} term={"copy-readtable"}><b>copy-readtable</b></DictionaryLink> copies the setting of <DictionaryLink styled={true} term={"readtable-case"}><b>readtable-case</b></DictionaryLink>. 
+<ClLinks  term={"copy-readtable"}><b>copy-readtable</b></ClLinks> copies the setting of <ClLinks  term={"readtable-case"}><b>readtable-case</b></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (setq zvar 123) → 123 
 (set-syntax-from-char #\z #\’ (setq table2 (copy-readtable))) → T 
 zvar → 123 
 (copy-readtable table2 \*readtable\*) → #<READTABLE 614000277> 
-
-
 
 zvar → VAR 
 (setq \*readtable\* (copy-readtable)) → #<READTABLE 46210223> 
 zvar → VAR 
 (setq \*readtable\* (copy-readtable nil)) → #<READTABLE 46302670> 
 zvar → 123 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"readtable"}><b>readtable</b></DictionaryLink>, <DictionaryLink styled={true} term={"readtable"}><b>\*readtable\*</b></DictionaryLink> 
+<ClLinks  term={"readtable"}><b>readtable</b></ClLinks>, <ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks> 
 
 
 
@@ -87,7 +83,7 @@ On the other hand,
 
 
 
-replaces the current <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm> with a copy of itself. This is useful if you want to save a copy of a readtable for later use, protected from alteration in the meantime. It is also useful if you want to locally bind the readtable to a copy of itself, as in: 
+replaces the current <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> with a copy of itself. This is useful if you want to save a copy of a readtable for later use, protected from alteration in the meantime. It is also useful if you want to locally bind the readtable to a copy of itself, as in: 
 
 
 

@@ -1,4 +1,4 @@
-**compiled-function** <GlossaryTerm styled={true} term={"type"}><i>Type</i></GlossaryTerm> 
+**compiled-function** <ClLinks  term={"type"}><i>Type</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"compiled-function"}><b>compiled-function</b></DictionaryLink>, <DictionaryLink styled={true} term={"function"}><b>function</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
+<ClLinks  term={"compiled-function"}><b>compiled-function</b></ClLinks>, <ClLinks  term={"function"}><b>function</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-Any <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> may be considered by an <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> to be a a *compiled function* if it contains no references to <GlossaryTerm styled={true} term={"macro"}><i>macros</i></GlossaryTerm> that must be expanded at run time, and it contains no unresolved references to *load time values*. See Section 3.2.2 (Compilation Semantics). 
+Any <ClLinks  term={"function"}><i>function</i></ClLinks> may be considered by an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be a a *compiled function* if it contains no references to <ClLinks  term={"macro"}><i>macros</i></ClLinks> that must be expanded at run time, and it contains no unresolved references to *load time values*. See Section 3.2.2 (Compilation Semantics). 
 
 
 
-<GlossaryTerm styled={true} term={"function"}><i>Functions</i></GlossaryTerm> whose definitions appear lexically within a <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm> that has been *compiled* with <DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink> and then *loaded* with <DictionaryLink styled={true} term={"load"}><b>load</b></DictionaryLink> are of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"compiled-function"}><b>compiled-function</b></DictionaryLink>. <GlossaryTerm styled={true} term={"function"}><i>Functions</i></GlossaryTerm> produced by the <DictionaryLink styled={true} term={"compile"}><b>compile</b></DictionaryLink> function are of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"compiled-function"}><b>compiled-function</b></DictionaryLink>. Other <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> might also be of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"compiled-function"}><b>compiled-function</b></DictionaryLink>. 
+<ClLinks  term={"function"}><i>Functions</i></ClLinks> whose definitions appear lexically within a <ClLinks  term={"file"}><i>file</i></ClLinks> that has been *compiled* with <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> and then *loaded* with <ClLinks  term={"load"}><b>load</b></ClLinks> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"compiled-function"}><b>compiled-function</b></ClLinks>. <ClLinks  term={"function"}><i>Functions</i></ClLinks> produced by the <ClLinks  term={"compile"}><b>compile</b></ClLinks> function are of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"compiled-function"}><b>compiled-function</b></ClLinks>. Other <ClLinks  term={"function"}><i>functions</i></ClLinks> might also be of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"compiled-function"}><b>compiled-function</b></ClLinks>. 
 
 
 

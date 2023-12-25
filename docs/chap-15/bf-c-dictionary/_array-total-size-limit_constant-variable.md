@@ -6,7 +6,7 @@
 
 
 
-A positive <GlossaryTerm styled={true} term={"fixnum"}><i>fixnum</i></GlossaryTerm>, the exact magnitude of which is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>, but which is not less than 1024. 
+A positive <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>, the exact magnitude of which is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but which is not less than 1024. 
 
 
 
@@ -14,11 +14,11 @@ A positive <GlossaryTerm styled={true} term={"fixnum"}><i>fixnum</i></GlossaryTe
 
 
 
-The upper exclusive bound on the *array total size* of an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
+The upper exclusive bound on the *array total size* of an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
-The actual limit on the *array total size* imposed by the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> might vary according the *element type* of the <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>; in this case, the value of <DictionaryLink styled={true} term={"array-total-size-limit"}><b>array-total-size-limit</b></DictionaryLink> will be the smallest of these possible limits. 
+The actual limit on the *array total size* imposed by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might vary according the *element type* of the <ClLinks  term={"array"}><i>array</i></ClLinks>; in this case, the value of <ClLinks  term={"array-total-size-limit"}><b>array-total-size-limit</b></ClLinks> will be the smallest of these possible limits. 
 
 
 
@@ -26,7 +26,7 @@ The actual limit on the *array total size* imposed by the <GlossaryTerm styled={
 
 
 
-<DictionaryLink styled={true} term={"make-array"}><b>make-array</b></DictionaryLink>, <DictionaryLink styled={true} term={"array-element-type"}><b>array-element-type</b></DictionaryLink> 
+<ClLinks  term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks  term={"array-element-type"}><b>array-element-type</b></ClLinks> 
 
 
 

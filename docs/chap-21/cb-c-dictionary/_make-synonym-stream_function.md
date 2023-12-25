@@ -1,4 +1,4 @@
-**make-synonym-stream** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**make-synonym-stream** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"make-synonym-stream"}><b>make-synonym-stream</b></DictionaryLink> *symbol → synonym-stream* 
+<ClLinks  term={"make-synonym-stream"}><b>make-synonym-stream</b></ClLinks> *symbol → synonym-stream* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> that names a *dynamic variable*. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that names a *dynamic variable*. 
 
 
 
@@ -26,13 +26,12 @@
 
 
 
-Returns a *synonym stream* whose *synonym stream symbol* is <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+Returns a *synonym stream* whose *synonym stream symbol* is <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (setq a-stream (make-string-input-stream "a-stream") 
       b-stream (make-string-input-stream "b-stream")) 
 → #<String Input Stream> 
@@ -44,13 +43,12 @@ Returns a *synonym stream* whose *synonym stream symbol* is <GlossaryTerm styled
 (setq c-stream b-stream) 
 → #<String Input Stream> 
 (read s-stream) → B-STREAM 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 

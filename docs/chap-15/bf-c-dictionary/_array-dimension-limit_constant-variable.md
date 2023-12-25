@@ -6,7 +6,7 @@
 
 
 
-A positive <GlossaryTerm styled={true} term={"fixnum"}><i>fixnum</i></GlossaryTerm>, the exact magnitude of which is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>, but which is not less than 1024. 
+A positive <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>, the exact magnitude of which is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but which is not less than 1024. 
 
 
 
@@ -14,7 +14,7 @@ A positive <GlossaryTerm styled={true} term={"fixnum"}><i>fixnum</i></GlossaryTe
 
 
 
-The upper exclusive bound on each individual <GlossaryTerm styled={true} term={"dimension"}><i>dimension</i></GlossaryTerm> of an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
+The upper exclusive bound on each individual <ClLinks  term={"dimension"}><i>dimension</i></ClLinks> of an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ The upper exclusive bound on each individual <GlossaryTerm styled={true} term={"
 
 
 
-<DictionaryLink styled={true} term={"make-array"}><b>make-array</b></DictionaryLink> 
+<ClLinks  term={"make-array"}><b>make-array</b></ClLinks> 
 
 
 

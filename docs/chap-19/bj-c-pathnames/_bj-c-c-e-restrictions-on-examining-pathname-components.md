@@ -2,7 +2,7 @@
 
 
 
-The space of possible <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> that a *conforming program* must be prepared to <GlossaryTerm styled={true} term={"read"}><i>read</i></GlossaryTerm> <sub>1</sub> as the value of a <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> component is substantially larger than the space of possible <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> that a *conforming program* is permitted to <GlossaryTerm styled={true} term={"write"}><i>write</i></GlossaryTerm><sub>1</sub> into such a component. 
+The space of possible <ClLinks  term={"object"}><i>objects</i></ClLinks> that a *conforming program* must be prepared to <ClLinks  term={"read"}><i>read</i></ClLinks> <sub>1</sub> as the value of a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> component is substantially larger than the space of possible <ClLinks  term={"object"}><i>objects</i></ClLinks> that a *conforming program* is permitted to <ClLinks  term={"write"}><i>write</i></ClLinks><sub>1</sub> into such a component. 
 
 
 
@@ -10,7 +10,7 @@ While the values discussed in the subsections of this section, in Section 19.2.2
 
 
 
-When examining <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> components, *conforming programs* should be aware of the following restrictions. 
+When examining <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> components, *conforming programs* should be aware of the following restrictions. 
 
 
 

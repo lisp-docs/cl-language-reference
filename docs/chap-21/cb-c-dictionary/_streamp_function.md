@@ -1,4 +1,4 @@
-**streamp** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**streamp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"streamp"}><b>streamp</b></DictionaryLink> *object → generalized-boolean* 
+<ClLinks  term={"streamp"}><b>streamp</b></ClLinks> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,26 +26,24 @@
 
 
 
-Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"stream"}><b>stream</b></DictionaryLink>; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"stream"}><b>stream</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-<DictionaryLink styled={true} term={"streamp"}><b>streamp</b></DictionaryLink> is unaffected by whether <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>, if it is a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>, is <GlossaryTerm styled={true} term={"open"}><i>open</i></GlossaryTerm> or closed. 
+<ClLinks  term={"streamp"}><b>streamp</b></ClLinks> is unaffected by whether <ClLinks  term={"object"}><i>object</i></ClLinks>, if it is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, is <ClLinks  term={"open"}><i>open</i></ClLinks> or closed. 
 
 
 
 **Examples:**
 ```lisp
-
 (streamp \*terminal-io\*) → true 
 (streamp 1) → false 
-
 ```
 **Notes:** 
 
 
 
-(streamp <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>) *≡* (typep <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> ’stream) 
+(streamp <ClLinks  term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks  term={"object"}><i>object</i></ClLinks> ’stream) 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> (*\{*(*symbol expansion*)*\}*\*) <GlossaryTerm styled={true} term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* 
+<ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> (*\{*(*symbol expansion*)*\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -18,23 +18,23 @@
 
 
 
-<GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*expansion*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
+*expansion*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-<GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -42,27 +42,27 @@
 
 
 
-<DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> provides a mechanism for affecting the *macro expansion* environment for <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm>. 
+<ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> provides a mechanism for affecting the *macro expansion* environment for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 
-<DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> lexically establishes expansion functions for each of the *symbol macros* named by <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm>. The only guaranteed property of an expansion <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> for a *symbol macro* is that when it is applied to the <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> and the <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm> it returns the correct expansion. (In particular, it is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> whether the expansion is conceptually stored in the expansion function, the <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm>, or both.) 
+<ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> lexically establishes expansion functions for each of the *symbol macros* named by <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. The only guaranteed property of an expansion <ClLinks  term={"function"}><i>function</i></ClLinks> for a *symbol macro* is that when it is applied to the <ClLinks  term={"form"}><i>form</i></ClLinks> and the <ClLinks  term={"environment"}><i>environment</i></ClLinks> it returns the correct expansion. (In particular, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the expansion is conceptually stored in the expansion function, the <ClLinks  term={"environment"}><i>environment</i></ClLinks>, or both.) 
 
 
 
-Each reference to <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> as a variable within the lexical <GlossaryTerm styled={true} term={"scope"}><i>scope</i></GlossaryTerm> of <DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> is expanded by the normal macro expansion process; see Section 3.1.2.1.1 (Symbols as Forms). The expansion of a symbol macro is subject to further macro expansion in the same lexical environment as the symbol macro invocation, exactly analogous to normal <GlossaryTerm styled={true} term={"macro"}><i>macros</i></GlossaryTerm>. 
+Each reference to <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> as a variable within the lexical <ClLinks  term={"scope"}><i>scope</i></ClLinks> of <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> is expanded by the normal macro expansion process; see Section 3.1.2.1.1 (Symbols as Forms). The expansion of a symbol macro is subject to further macro expansion in the same lexical environment as the symbol macro invocation, exactly analogous to normal <ClLinks  term={"macro"}><i>macros</i></ClLinks>. 
 
 
 
-Exactly the same <GlossaryTerm styled={true} term={"declaration"}><i>declarations</i></GlossaryTerm> are allowed as for <DictionaryLink styled={true} term={"let"}><b>let</b></DictionaryLink> with one exception: <DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> signals an error if a <DictionaryLink styled={true} term={"special"}><b>special</b></DictionaryLink> declaration names one of the <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> being defined by <DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>. 
+Exactly the same <ClLinks  term={"declaration"}><i>declarations</i></ClLinks> are allowed as for <ClLinks  term={"let"}><b>let</b></ClLinks> with one exception: <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> signals an error if a <ClLinks  term={"special"}><b>special</b></ClLinks> declaration names one of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> being defined by <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>. 
 
 
 
-When the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> of the <DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> form are expanded, any use of <DictionaryLink styled={true} term={"setq"}><b>setq</b></DictionaryLink> to set the value of one of the specified variables is treated as if it were a <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink>. <DictionaryLink styled={true} term={"psetq"}><b>psetq</b></DictionaryLink> of a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> defined as a symbol macro is treated as if it were a <DictionaryLink styled={true} term={"psetf"}><b>psetf</b></DictionaryLink>, and <DictionaryLink styled={true} term={"multiple-value-setq"}><b>multiple-value-setq</b></DictionaryLink> is treated as if it were a <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink styled={true} term={"values"}><b>values</b></DictionaryLink>. 
+When the <ClLinks  term={"form"}><i>forms</i></ClLinks> of the <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> form are expanded, any use of <ClLinks  term={"setq"}><b>setq</b></ClLinks> to set the value of one of the specified variables is treated as if it were a <ClLinks  term={"setf"}><b>setf</b></ClLinks>. <ClLinks  term={"psetq"}><b>psetq</b></ClLinks> of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> defined as a symbol macro is treated as if it were a <ClLinks  term={"psetf"}><b>psetf</b></ClLinks>, and <ClLinks  term={"multiple-value-setq"}><b>multiple-value-setq</b></ClLinks> is treated as if it were a <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"values"}><b>values</b></ClLinks>. 
 
 
 
-The use of <DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> can be shadowed by <DictionaryLink styled={true} term={"let"}><b>let</b></DictionaryLink>. In other words, <DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> only substitutes for occurrences of <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> that would be in the <GlossaryTerm styled={true} term={"scope"}><i>scope</i></GlossaryTerm> of a lexical binding of <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> surrounding the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. 
+The use of <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> can be shadowed by <ClLinks  term={"let"}><b>let</b></ClLinks>. In other words, <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> only substitutes for occurrences of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that would be in the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of a lexical binding of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> surrounding the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -83,17 +83,16 @@ The use of <DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macr
 (symbol-macrolet ((x ’(foo x))) 
 (list x)) 
 *!* ((FOO X)) 
-
 ```
 **Exceptional Situations:** 
 
 
 
-If an attempt is made to bind a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> that is defined as a *global variable*, an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"program-error"}><b>program-error</b></DictionaryLink> is signaled. 
+If an attempt is made to bind a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is defined as a *global variable*, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> is signaled. 
 
 
 
-If <GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm> contains a <DictionaryLink styled={true} term={"special"}><b>special</b></DictionaryLink> declaration that names one of the <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> being bound by <DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>, an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"program-error"}><b>program-error</b></DictionaryLink> is signaled. 
+If <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> contains a <ClLinks  term={"special"}><b>special</b></ClLinks> declaration that names one of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> being bound by <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> is signaled. 
 
 
 
@@ -101,7 +100,7 @@ If <GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></Glossary
 
 
 
-<DictionaryLink styled={true} term={"with-slots"}><b>with-slots</b></DictionaryLink>, <DictionaryLink styled={true} term={"macroexpand"}><b>macroexpand</b></DictionaryLink> 
+<ClLinks  term={"with-slots"}><b>with-slots</b></ClLinks>, <ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> 
 
 
 
@@ -109,11 +108,11 @@ If <GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></Glossary
 
 
 
-The special form <DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> is the basic mechanism that is used to implement <DictionaryLink styled={true} term={"with-slots"}><b>with-slots</b></DictionaryLink>. 
+The special form <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> is the basic mechanism that is used to implement <ClLinks  term={"with-slots"}><b>with-slots</b></ClLinks>. 
 
 
 
-If a <DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is a *top level form*, the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are also processed as *top level forms*. See Section 3.2.3 (File Compilation). 
+If a <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is a *top level form*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are also processed as *top level forms*. See Section 3.2.3 (File Compilation). 
 
 
 
@@ -125,7 +124,7 @@ If a <DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</
 
 
 
-a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of three <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm>: a *macro function*, a *macro form*, and an *environment object*. 
+a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of three <ClLinks  term={"argument"}><i>arguments</i></ClLinks>: a *macro function*, a *macro form*, and an *environment object*. 
 
 
 
@@ -133,7 +132,7 @@ a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTer
 
 
 
-a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a function that is equivalent to the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"funcall"}><b>funcall</b></DictionaryLink>, but that might have additional <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> side-e↵ects. 
+a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a function that is equivalent to the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"funcall"}><b>funcall</b></ClLinks>, but that might have additional <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> side-e↵ects. 
 
 
 
@@ -141,7 +140,7 @@ a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTer
 
 
 
-Used as the expansion interface hook by <DictionaryLink styled={true} term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> to control the *macro expansion* process. When a *macro form* is to be expanded, this <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> is called with three arguments: the *macro function*, the *macro form*, and the <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm> in which the *macro form* is to be expanded. The *environment object* has *dynamic extent*; the consequences are undefined if the *environment object* is referred to outside the *dynamic extent* of the macro expansion function. 
+Used as the expansion interface hook by <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> to control the *macro expansion* process. When a *macro form* is to be expanded, this <ClLinks  term={"function"}><i>function</i></ClLinks> is called with three arguments: the *macro function*, the *macro form*, and the <ClLinks  term={"environment"}><i>environment</i></ClLinks> in which the *macro form* is to be expanded. The *environment object* has *dynamic extent*; the consequences are undefined if the *environment object* is referred to outside the *dynamic extent* of the macro expansion function. 
 
 
 
@@ -159,7 +158,6 @@ Evaluation and
 
 **Examples:**
 ```lisp
-
 (defun hook (expander form env) 
   (format t "Now expanding: ~S~%" form) 
   (funcall expander form env)) *!* HOOK 
@@ -168,13 +166,12 @@ Evaluation and
 (let ((\*macroexpand-hook\* #’hook)) (macroexpand ’(machook 1 2))) 
 ▷ Now expanding (MACHOOK 1 2) 
 *!* (/ (+ 1 2) 2), *true* 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"macroexpand"}><b>macroexpand</b></DictionaryLink>, <DictionaryLink styled={true} term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink>, <DictionaryLink styled={true} term={"funcall"}><b>funcall</b></DictionaryLink>, Section 3.1 (Evaluation) 
+<ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks>, <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks>, <ClLinks  term={"funcall"}><b>funcall</b></ClLinks>, Section 3.1 (Evaluation) 
 
 
 
@@ -182,11 +179,11 @@ Evaluation and
 
 
 
-The net e↵ect of the chosen initial value is to just invoke the *macro function*, giving it the *macro form* and <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm> as its two arguments. 
+The net e↵ect of the chosen initial value is to just invoke the *macro function*, giving it the *macro form* and <ClLinks  term={"environment"}><i>environment</i></ClLinks> as its two arguments. 
 
 
 
-Users or user programs can <GlossaryTerm styled={true} term={"assign"}><i>assign</i></GlossaryTerm> this <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm> to customize or trace the *macro expansion* mechanism. Note, however, that this <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm> is a global resource, potentially shared by multiple <GlossaryTerm styled={true} term={"program"}><i>programs</i></GlossaryTerm>; as such, if any two <GlossaryTerm styled={true} term={"program"}><i>programs</i></GlossaryTerm> depend for their correctness on the setting of this <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>, those <GlossaryTerm styled={true} term={"program"}><i>programs</i></GlossaryTerm> may not be able to run in the same *Lisp image*. For this reason, it is frequently best to confine its uses to debugging situations. 
+Users or user programs can <ClLinks  term={"assign"}><i>assign</i></ClLinks> this <ClLinks  term={"variable"}><i>variable</i></ClLinks> to customize or trace the *macro expansion* mechanism. Note, however, that this <ClLinks  term={"variable"}><i>variable</i></ClLinks> is a global resource, potentially shared by multiple <ClLinks  term={"program"}><i>programs</i></ClLinks>; as such, if any two <ClLinks  term={"program"}><i>programs</i></ClLinks> depend for their correctness on the setting of this <ClLinks  term={"variable"}><i>variable</i></ClLinks>, those <ClLinks  term={"program"}><i>programs</i></ClLinks> may not be able to run in the same *Lisp image*. For this reason, it is frequently best to confine its uses to debugging situations. 
 
 
 

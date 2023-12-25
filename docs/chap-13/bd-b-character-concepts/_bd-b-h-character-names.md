@@ -22,7 +22,7 @@ The space or blank character.
 
 
 
-The following names are <GlossaryTerm styled={true} term={"semi-standard"}><i>semi-standard</i></GlossaryTerm>; if an <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> supports them, they should be used for the described <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> and no others. 
+The following names are <ClLinks styled={true} term={"semi-standard"}><i>semi-standard</i></ClLinks>; if an <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> supports them, they should be used for the described <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> and no others. 
 
 
 
@@ -74,7 +74,7 @@ The line-feed character.
 
 
 
-In some <GlossaryTerm styled={true} term={"implementation"}><i>implementations</i></GlossaryTerm>, one or more of these *character names* might denote a *standard character* ; for example, #\Linefeed and #\Newline might be the *same character* in some <GlossaryTerm styled={true} term={"implementation"}><i>implementations</i></GlossaryTerm>. 
+In some <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>, one or more of these *character names* might denote a *standard character* ; for example, #\Linefeed and #\Newline might be the *same character* in some <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>. 
 
 
 

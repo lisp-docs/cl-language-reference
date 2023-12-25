@@ -1,4 +1,4 @@
-**pathnamep** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**pathnamep** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"pathnamep"}><b>pathnamep</b></DictionaryLink> *object → generalized-boolean* 
+<ClLinks  term={"pathnamep"}><b>pathnamep</b></ClLinks> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"pathname"}><b>pathname</b></DictionaryLink>; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -42,13 +42,12 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 (setq q (logical-pathname "SYS:SITE;FOO.SYSTEM")) 
 → #P"SYS:SITE;FOO.SYSTEM" 
 (pathnamep q) → true 
-
 ```
 **Notes:** 
 
 
 
-(pathnamep <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>) *≡* (typep <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> ’pathname) 
+(pathnamep <ClLinks  term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks  term={"object"}><i>object</i></ClLinks> ’pathname) 
 
 
 
@@ -72,23 +71,23 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 
 
 
-**pathname-host** <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> &amp;key *case → host* 
+**pathname-host** <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> &amp;key *case → host* 
 
 
 
-**pathname-device** <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> &amp;key *case → device* 
+**pathname-device** <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> &amp;key *case → device* 
 
 
 
-**pathname-directory** <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> &amp;key *case → directory* 
+**pathname-directory** <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> &amp;key *case → directory* 
 
 
 
-**pathname-name** <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> &amp;key *case → name* 
+**pathname-name** <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> &amp;key *case → name* 
 
 
 
-**pathname-type** <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> &amp;key *case → type* 
+**pathname-type** <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> &amp;key *case → type* 
 
 
 
@@ -100,11 +99,11 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 
 
 
-<GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm>—a *pathname designator* . 
+<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a *pathname designator* . 
 
 
 
-<GlossaryTerm styled={true} term={"case"}><i>case</i></GlossaryTerm>—one of :local or :common. The default is :local. 
+<ClLinks  term={"case"}><i>case</i></ClLinks>—one of :local or :common. The default is :local. 
 
 
 
@@ -120,11 +119,11 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 
 
 
-<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a *valid pathname name*. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a *valid pathname name*. 
 
 
 
-<GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>—a *valid pathname type*. 
+<ClLinks  term={"type"}><i>type</i></ClLinks>—a *valid pathname type*. 
 
 
 
@@ -136,18 +135,18 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 
 
 
-These functions return the components of <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm>. 
+These functions return the components of <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
 
 
 
-If the *pathname designator* is a <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm>, it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
+If the *pathname designator* is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
 
 
 
-If <GlossaryTerm styled={true} term={"case"}><i>case</i></GlossaryTerm> is supplied, it is treated as described in Section 19.2.2.1.2 (Case in Pathname Components). **Examples:**
+If <ClLinks  term={"case"}><i>case</i></ClLinks> is supplied, it is treated as described in Section 19.2.2.1.2 (Case in Pathname Components). 
+
+**Examples:**
 ```lisp
-
-
 
 
 **pathname-host, pathname-device,** *. . .* 
@@ -194,8 +193,6 @@ If <GlossaryTerm styled={true} term={"case"}><i>case</i></GlossaryTerm> is suppl
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/BAR/../Mum/baz")) 
 → (:ABSOLUTE "foo" "BAR" :UP "Mum") 
 
-
-
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/BAR/../Mum/baz") :case :common) 
 → (:ABSOLUTE "FOO" "bar" :UP "Mum") 
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/\*/bar/baz.l")) 
@@ -210,13 +207,12 @@ If <GlossaryTerm styled={true} term={"case"}><i>case</i></GlossaryTerm> is suppl
 (pathname-directory (parse-namestring ">foo>\*>bar>baz.lisp") :case :common) 
 → (:ABSOLUTE "FOO" :WILD "BAR") 
 (pathname-device (parse-namestring ">foo>baz.lisp")) → :UNSPECIFIC 
-
 ```
 **Affected By:** 
 
 
 
-The <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> and the host *file system*. 
+The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> and the host *file system*. 
 
 
 
@@ -224,7 +220,7 @@ The <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></G
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if its first argument is not a <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its first argument is not a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
 
 
 
@@ -232,7 +228,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink styled={true} term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-Figure 9–1 lists the *standardized condition types*. Additional *condition types* can be defined by using <DictionaryLink styled={true} term={"define-condition"}><b>define-condition</b></DictionaryLink>. 
+Figure 9–1 lists the *standardized condition types*. Additional *condition types* can be defined by using <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks>. 
 
 
 
@@ -18,7 +18,7 @@ Figure 9–1 lists the *standardized condition types*. Additional *condition typ
 
 
 
-All <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> types are <GlossaryTerm styled={true} term={"subtype"}><i>subtypes</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"condition"}><b>condition</b></DictionaryLink>. That is, 
+All <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> types are <ClLinks styled={true} term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>. That is, 
 
 
 
@@ -26,19 +26,19 @@ All <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTer
 
 
 
-if and only if *c* is a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>. 
+if and only if *c* is a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"implementation"}><i>Implementations</i></GlossaryTerm> must define all specified <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> relationships. Except where noted, all <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> relationships indicated in this document are not mutually exclusive. A <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> inherits the structure of its <GlossaryTerm styled={true} term={"supertype"}><i>supertypes</i></GlossaryTerm>. 
+<ClLinks styled={true} term={"implementation"}><i>Implementations</i></ClLinks> must define all specified <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> relationships. Except where noted, all <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> relationships indicated in this document are not mutually exclusive. A <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> inherits the structure of its <ClLinks styled={true} term={"supertype"}><i>supertypes</i></ClLinks>. 
 
 
 
-The metaclass of the <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink styled={true} term={"condition"}><b>condition</b></DictionaryLink> is not specified. <GlossaryTerm styled={true} term={"name"}><i>Names</i></GlossaryTerm> of *condition types* may be used to specify <GlossaryTerm styled={true} term={"supertype"}><i>supertype</i></GlossaryTerm> relationships in <DictionaryLink styled={true} term={"define-condition"}><b>define-condition</b></DictionaryLink>, but the consequences are not specified if an attempt is made to use a *condition type* as a <GlossaryTerm styled={true} term={"superclass"}><i>superclass</i></GlossaryTerm> in a <DictionaryLink styled={true} term={"defclass"}><b>defclass</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
+The metaclass of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks> is not specified. <ClLinks styled={true} term={"name"}><i>Names</i></ClLinks> of *condition types* may be used to specify <ClLinks styled={true} term={"supertype"}><i>supertype</i></ClLinks> relationships in <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks>, but the consequences are not specified if an attempt is made to use a *condition type* as a <ClLinks styled={true} term={"superclass"}><i>superclass</i></ClLinks> in a <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-Figure 9–2 shows <GlossaryTerm styled={true} term={"operator"}><i>operators</i></GlossaryTerm> that define *condition types* and creating <GlossaryTerm styled={true} term={"condition"}><i>conditions</i></GlossaryTerm>. 
+Figure 9–2 shows <ClLinks styled={true} term={"operator"}><i>operators</i></ClLinks> that define *condition types* and creating <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ Figure 9–2 shows <GlossaryTerm styled={true} term={"operator"}><i>operators</i
 
 
 
-Figure 9–3 shows <GlossaryTerm styled={true} term={"operator"}><i>operators</i></GlossaryTerm> that <GlossaryTerm styled={true} term={"read"}><i>read</i></GlossaryTerm> the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of *condition slots*. 
+Figure 9–3 shows <ClLinks styled={true} term={"operator"}><i>operators</i></ClLinks> that <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of *condition slots*. 
 
 
 

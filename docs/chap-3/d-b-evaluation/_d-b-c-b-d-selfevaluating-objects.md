@@ -2,11 +2,11 @@
 
 
 
-A <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> that is neither a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> nor a <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> is defined to be a *self-evaluating object<GlossaryTerm styled={true} term={"t"}><i>. </i></GlossaryTerm>Evaluating* such an *object yields* the *same object* as a result. 
+A <ClLinks  term={"form"}><i>form</i></ClLinks> that is neither a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> nor a <ClLinks  term={"cons"}><i>cons</i></ClLinks> is defined to be a *self-evaluating object<ClLinks  term={"t"}><i>. </i></ClLinks>Evaluating* such an *object yields* the *same object* as a result. 
 
 
 
-Certain specific <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> and *conses* might also happen to be “self-evaluating” but only as a special case of a more general set of rules for the <GlossaryTerm styled={true} term={"evaluation"}><i>evaluation</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> and *conses*; such <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> are not considered to be *self-evaluating objects*. 
+Certain specific <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> and *conses* might also happen to be “self-evaluating” but only as a special case of a more general set of rules for the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> and *conses*; such <ClLinks  term={"object"}><i>objects</i></ClLinks> are not considered to be *self-evaluating objects*. 
 
 
 

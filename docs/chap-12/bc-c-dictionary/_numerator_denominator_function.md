@@ -1,4 +1,4 @@
-**numerator, denominator** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**numerator, denominator** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<DictionaryLink styled={true} term={"numerator"}><b>numerator</b></DictionaryLink> *rational → numerator* 
+<ClLinks  term={"numerator"}><b>numerator</b></ClLinks> *rational → numerator* 
 
 
 
-<DictionaryLink styled={true} term={"denominator"}><b>denominator</b></DictionaryLink> *rational → denominator* 
+<ClLinks  term={"denominator"}><b>denominator</b></ClLinks> *rational → denominator* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm>. 
+<ClLinks  term={"rational"}><i>rational</i></ClLinks>—a <ClLinks  term={"rational"}><i>rational</i></ClLinks>. 
 
 
 
@@ -34,34 +34,32 @@
 
 
 
-<DictionaryLink styled={true} term={"numerator"}><b>numerator</b></DictionaryLink> and <DictionaryLink styled={true} term={"denominator"}><b>denominator</b></DictionaryLink> reduce <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm> to canonical form and compute the numerator or denominator of that number. 
+<ClLinks  term={"numerator"}><b>numerator</b></ClLinks> and <ClLinks  term={"denominator"}><b>denominator</b></ClLinks> reduce <ClLinks  term={"rational"}><i>rational</i></ClLinks> to canonical form and compute the numerator or denominator of that number. 
 
 
 
-<DictionaryLink styled={true} term={"numerator"}><b>numerator</b></DictionaryLink> and <DictionaryLink styled={true} term={"denominator"}><b>denominator</b></DictionaryLink> return the numerator or denominator of the canonical form of <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm>. 
+<ClLinks  term={"numerator"}><b>numerator</b></ClLinks> and <ClLinks  term={"denominator"}><b>denominator</b></ClLinks> return the numerator or denominator of the canonical form of <ClLinks  term={"rational"}><i>rational</i></ClLinks>. 
 
 
 
-If <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm> is an *integer* , <DictionaryLink styled={true} term={"numerator"}><b>numerator</b></DictionaryLink> returns <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm> and <DictionaryLink styled={true} term={"denominator"}><b>denominator</b></DictionaryLink> returns 1. 
+If <ClLinks  term={"rational"}><i>rational</i></ClLinks> is an *integer* , <ClLinks  term={"numerator"}><b>numerator</b></ClLinks> returns <ClLinks  term={"rational"}><i>rational</i></ClLinks> and <ClLinks  term={"denominator"}><b>denominator</b></ClLinks> returns 1. 
 
 
 
 **Examples:**
 ```lisp
-
 (numerator 1/2) → 1 
 (denominator 12/36) → 3 
 (numerator -1) → -1 
 (denominator (/ -33)) → 33 
 (numerator (/ 8 -6)) → -4 
 (denominator (/ 8 -6)) → 3 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink> 
+<ClLinks  term={"/"}><b>/</b></ClLinks> 
 
 
 

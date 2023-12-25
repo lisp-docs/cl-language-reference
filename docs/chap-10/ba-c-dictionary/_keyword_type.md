@@ -1,4 +1,4 @@
-**keyword** <GlossaryTerm styled={true} term={"type"}><i>Type</i></GlossaryTerm> 
+**keyword** <ClLinks  term={"type"}><i>Type</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"keyword"}><b>keyword</b></DictionaryLink>, <DictionaryLink styled={true} term={"symbol"}><b>symbol</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
+<ClLinks  term={"keyword"}><b>keyword</b></ClLinks>, <ClLinks  term={"symbol"}><b>symbol</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,23 +14,23 @@
 
 
 
-The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"keyword"}><b>keyword</b></DictionaryLink> includes all *symbols interned* the KEYWORD <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"keyword"}><b>keyword</b></ClLinks> includes all *symbols interned* the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-*Interning* a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> in the KEYWORD <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> has three automatic effects: 
+*Interning* a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks> has three automatic effects: 
 
 
 
-1\. It causes the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> to become <GlossaryTerm styled={true} term={"bound"}><i>bound</i></GlossaryTerm> to itself. 
+1\. It causes the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to become <ClLinks  term={"bound"}><i>bound</i></ClLinks> to itself. 
 
 
 
-2\. It causes the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> to become an *external symbol* of the KEYWORD <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. 
+2\. It causes the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to become an *external symbol* of the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-3\. It causes the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> to become a *constant variable*. 
+3\. It causes the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to become a *constant variable*. 
 
 
 
@@ -38,7 +38,7 @@ The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <Dictio
 
 
 
-<DictionaryLink styled={true} term={"keywordp"}><b>keywordp</b></DictionaryLink> 
+<ClLinks  term={"keywordp"}><b>keywordp</b></ClLinks> 
 
 
 

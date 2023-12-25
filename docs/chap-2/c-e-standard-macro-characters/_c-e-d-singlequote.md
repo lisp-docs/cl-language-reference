@@ -6,7 +6,7 @@
 
 
 
-A <GlossaryTerm styled={true} term={"single-quote"}><i>single-quote</i></GlossaryTerm> introduces an <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm> to be “quoted.” <GlossaryTerm styled={true} term={"single-quote"}><i>Single-quote</i></GlossaryTerm> followed by an *expression exp* is treated by the *Lisp reader* as an abbreviation for and is parsed identically to the <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm> (quote *exp*). See the *special operator* <DictionaryLink styled={true} term={"quote"}><b>quote</b></DictionaryLink>. 
+A <ClLinks  term={"single-quote"}><i>single-quote</i></ClLinks> introduces an <ClLinks  term={"expression"}><i>expression</i></ClLinks> to be “quoted.” <ClLinks  term={"single-quote"}><i>Single-quote</i></ClLinks> followed by an *expression exp* is treated by the *Lisp reader* as an abbreviation for and is parsed identically to the <ClLinks  term={"expression"}><i>expression</i></ClLinks> (quote *exp*). See the *special operator* <ClLinks  term={"quote"}><b>quote</b></ClLinks>. 
 
 
 

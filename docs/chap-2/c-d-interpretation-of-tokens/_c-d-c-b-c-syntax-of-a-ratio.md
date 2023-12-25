@@ -1,29 +1,18 @@
 
- 
+<ClLinks  term={"ratio"}><i>Ratios</i></ClLinks> can be written as an optional <ClLinks  term={"sign"}><i>sign</i></ClLinks> followed by two non-empty sequences of <ClLinks  term={"digit"}><i>digits</i></ClLinks> separated by a <ClLinks  term={"slash"}><i>slash</i></ClLinks>; see Figure 2–9. The second sequence may not consist entirely of zeros. Examples of <ClLinks  term={"ratio"}><i>ratios</i></ClLinks> are in Figure 2–13.  
 
-
-
-<GlossaryTerm styled={true} term={"ratio"}><i>Ratios</i></GlossaryTerm> can be written as an optional <GlossaryTerm styled={true} term={"sign"}><i>sign</i></GlossaryTerm> followed by two non-empty sequences of <GlossaryTerm styled={true} term={"digit"}><i>digits</i></GlossaryTerm> separated by a <GlossaryTerm styled={true} term={"slash"}><i>slash</i></GlossaryTerm>; see Figure 2–9. The second sequence may not consist entirely of zeros. Examples of <GlossaryTerm styled={true} term={"ratio"}><i>ratios</i></GlossaryTerm> are in Figure 2–13.  
-
-
-
-
-
-
-
-|<p>2/3 ;This is in canonical form </p><p>4/6 ;A non-canonical form for 2/3 </p><p>-17/23 ;A ratio preceded by a sign </p><p>-30517578125/32768 ;This is (*−*5*/*2)<sup>15</sup> </p><p>10/5 ;The canonical form for this is 2 </p><p>#o-101/75 ;Octal notation for *−*65*/*61 </p><p>#3r120/21 ;Ternary notation for 15*/*7 </p><p>#Xbc/ad ;Hexadecimal notation for 188*/*173 </p><p>#xFADED/FACADE ;Hexadecimal notation for 1027565*/*16435934</p>|
+|<p>2/3 ;This is in canonical form </p>
+<p>4/6 ;A non-canonical form for 2/3 </p>
+<p>-17/23 ;A ratio preceded by a sign </p>
+<p>-30517578125/32768 ;This is `(−5/2)`<sup>`15`</sup> </p>
+<p>10/5 ;The canonical form for this is `2` </p>
+<p>#o-101/75 ;Octal notation for `−65/61` </p>
+<p>#3r120/21 ;Ternary notation for `15/7` </p>
+<p>#Xbc/ad ;Hexadecimal notation for `188/173` </p>
+<p>#xFADED/FACADE ;Hexadecimal notation for` 1027565/16435934`</p>|
 
 | :- |
 
+**Figure 2–13. Examples of Ratios**
 
-
-
-
-**Figure 2–13. Examples of Ratios** 
-
-
-
-For information on how <GlossaryTerm styled={true} term={"ratio"}><i>ratios</i></GlossaryTerm> are printed, see Section 22.1.3.1.2 (Printing Ratios). 
-
-
-
+For information on how <ClLinks  term={"ratio"}><i>ratios</i></ClLinks> are printed, see Section 22.1.3.1.2 (Printing Ratios).

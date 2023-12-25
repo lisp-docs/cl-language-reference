@@ -1,4 +1,4 @@
-**clear-input** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**clear-input** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"clear-input"}><b>clear-input</b></DictionaryLink> &amp;optional *input-stream →* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
+<ClLinks  term={"clear-input"}><b>clear-input</b></ClLinks> &amp;optional *input-stream →* <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -26,9 +26,10 @@ Clears any available input from *input-stream*.
 
 
 
-If <DictionaryLink styled={true} term={"clear-input"}><b>clear-input</b></DictionaryLink> does not make sense for *input-stream*, then <DictionaryLink styled={true} term={"clear-input"}><b>clear-input</b></DictionaryLink> does nothing. **Examples:**
-```lisp
+If <ClLinks  term={"clear-input"}><b>clear-input</b></ClLinks> does not make sense for *input-stream*, then <ClLinks  term={"clear-input"}><b>clear-input</b></ClLinks> does nothing. 
 
+**Examples:**
+```lisp
 ;; The exact I/O behavior of this example might vary from implementation 
 ;; to implementation depending on the kind of interactive buffering that 
 ;; occurs. (The call to SLEEP here is intended to help even out the 
@@ -56,11 +57,8 @@ If <DictionaryLink styled={true} term={"clear-input"}><b>clear-input</b></Dictio
 ▷ > 10 
 ▷ > 20 ; Some implementations won’t echo typeahead here. 
 
-
-
 ▷ » 30 
 → (10 30) 
-
 ```
 **Side Effects:** 
 
@@ -82,7 +80,7 @@ The *input-stream* is modified.
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *input-stream* is not a *stream designator* . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *input-stream* is not a *stream designator* . 
 
 
 
@@ -90,7 +88,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"clear-output"}><b>clear-output</b></DictionaryLink> 
+<ClLinks  term={"clear-output"}><b>clear-output</b></ClLinks> 
 
 
 

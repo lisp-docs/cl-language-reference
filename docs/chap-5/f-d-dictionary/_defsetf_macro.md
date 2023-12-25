@@ -1,4 +1,4 @@
-**defsetf** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
+**defsetf** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -10,7 +10,7 @@ The “short form”:
 
 
 
-<DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink> *access-fn update-fn* [*documentation*] 
+<ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks> *access-fn update-fn* [*documentation*] 
 
 
 
@@ -22,7 +22,7 @@ The “long form”:
 
 
 
-<DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink> *access-fn lambda-list* (*\{store-variable\}*\*) [[ <GlossaryTerm styled={true} term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* *| documentation* ]] <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* *! access-fn* 
+<ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks> *access-fn lambda-list* (*\{store-variable\}*\*) [[ <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* *! access-fn* 
 
 
 
@@ -30,11 +30,11 @@ The “long form”:
 
 
 
-*access-fn*—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> which names a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm>. 
+*access-fn*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> which names a <ClLinks  term={"function"}><i>function</i></ClLinks> or a <ClLinks  term={"macro"}><i>macro</i></ClLinks>. 
 
 
 
-*update-fn*—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> naming a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm>. 
+*update-fn*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming a <ClLinks  term={"function"}><i>function</i></ClLinks> or <ClLinks  term={"macro"}><i>macro</i></ClLinks>. 
 
 
 
@@ -42,19 +42,19 @@ The “long form”:
 
 
 
-*store-variable*—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> (a *variable name*). 
+*store-variable*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> (a *variable name*). 
 
 
 
-<GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-*documentation*—a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>; not evaluated. 
+*documentation*—a <ClLinks  term={"string"}><i>string</i></ClLinks>; not evaluated. 
 
 
 
-<GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
+<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -70,7 +70,7 @@ Data and Control
 
 
 
-<DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink> 
+<ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks> 
 
 
 
@@ -78,53 +78,50 @@ Data and Control
 
 
 
-<DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink> defines how to <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> a <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> of the form (*access-fn* ...) for relatively simple cases. (See <DictionaryLink styled={true} term={"define-setf-expander"}><b>define-setf-expander</b></DictionaryLink> for more general access to this facility.) It must be the case that the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> named by *access-fn* evaluates all of its arguments. 
+<ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks> defines how to <ClLinks  term={"setf"}><b>setf</b></ClLinks> a <ClLinks  term={"place"}><i>place</i></ClLinks> of the form (*access-fn* ...) for relatively simple cases. (See <ClLinks  term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks> for more general access to this facility.) It must be the case that the <ClLinks  term={"function"}><i>function</i></ClLinks> or <ClLinks  term={"macro"}><i>macro</i></ClLinks> named by *access-fn* evaluates all of its arguments. 
 
 
 
-<DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink> may take one of two forms, called the “short form” and the “long form,” which are distinguished by the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> of the second <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm>. 
+<ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks> may take one of two forms, called the “short form” and the “long form,” which are distinguished by the <ClLinks  term={"type"}><i>type</i></ClLinks> of the second <ClLinks  term={"argument"}><i>argument</i></ClLinks>. 
 
 
 
-When the short form is used, *update-fn* must name a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> (or <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm>) that takes one more argument than *access-fn* takes. When <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> is given a <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> that is a call on *access-fn*, it expands into a call on *update-fn* that is given all the arguments to *access-fn* and also, as its last argument, the new value (which must be returned by *update-fn* as its value). 
+When the short form is used, *update-fn* must name a <ClLinks  term={"function"}><i>function</i></ClLinks> (or <ClLinks  term={"macro"}><i>macro</i></ClLinks>) that takes one more argument than *access-fn* takes. When <ClLinks  term={"setf"}><b>setf</b></ClLinks> is given a <ClLinks  term={"place"}><i>place</i></ClLinks> that is a call on *access-fn*, it expands into a call on *update-fn* that is given all the arguments to *access-fn* and also, as its last argument, the new value (which must be returned by *update-fn* as its value). 
 
 
 
-The long form <DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink> resembles <DictionaryLink styled={true} term={"defmacro"}><b>defmacro</b></DictionaryLink>. The *lambda-list* describes the arguments of *access-fn*. The *store-variables* describe the value or values to be stored into the <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>. The *body* must compute the expansion of a <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> of a call on *access-fn*. The expansion function is defined in the same *lexical environment* in which the <DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> appears. 
+The long form <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks> resembles <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks>. The *lambda-list* describes the arguments of *access-fn*. The *store-variables* describe the value or values to be stored into the <ClLinks  term={"place"}><i>place</i></ClLinks>. The *body* must compute the expansion of a <ClLinks  term={"setf"}><b>setf</b></ClLinks> of a call on *access-fn*. The expansion function is defined in the same *lexical environment* in which the <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears. 
 
 
 
-During the evaluation of the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>, the variables in the *lambda-list* and the *store-variables* are bound to names of temporary variables, generated as if by <DictionaryLink styled={true} term={"gensym"}><b>gensym</b></DictionaryLink> or <DictionaryLink styled={true} term={"gentemp"}><b>gentemp</b></DictionaryLink>, that will be bound by the expansion of <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> to the values of those <GlossaryTerm styled={true} term={"subform"}><i>subforms</i></GlossaryTerm>. This binding permits the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> to be written without regard for order-of-evaluation issues. <DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink> arranges for the temporary variables to be optimized out of the final result in cases where that is possible. 
+During the evaluation of the <ClLinks  term={"form"}><i>forms</i></ClLinks>, the variables in the *lambda-list* and the *store-variables* are bound to names of temporary variables, generated as if by <ClLinks  term={"gensym"}><b>gensym</b></ClLinks> or <ClLinks  term={"gentemp"}><b>gentemp</b></ClLinks>, that will be bound by the expansion of <ClLinks  term={"setf"}><b>setf</b></ClLinks> to the values of those <ClLinks  term={"subform"}><i>subforms</i></ClLinks>. This binding permits the <ClLinks  term={"form"}><i>forms</i></ClLinks> to be written without regard for order-of-evaluation issues. <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks> arranges for the temporary variables to be optimized out of the final result in cases where that is possible. 
 
 
 
-The body code in <DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink> is implicitly enclosed in a <GlossaryTerm styled={true} term={"block"}><i>block</i></GlossaryTerm> whose name is *access-fn* 
+The body code in <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks> is implicitly enclosed in a <ClLinks  term={"block"}><i>block</i></ClLinks> whose name is *access-fn* 
 
 
 
-<DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink> ensures that <GlossaryTerm styled={true} term={"subform"}><i>subforms</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> are evaluated exactly once. 
+<ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks> ensures that <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the <ClLinks  term={"place"}><i>place</i></ClLinks> are evaluated exactly once. 
 
 
 
-*Documentation* is attached to *access-fn* as a *documentation string* of kind <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink>. 
+*Documentation* is attached to *access-fn* as a *documentation string* of kind <ClLinks  term={"setf"}><b>setf</b></ClLinks>. 
 
 
 
-If a <DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> appears as a *top level form*, the <GlossaryTerm styled={true} term={"compiler"}><i>compiler</i></GlossaryTerm> must make the *setf expander* available so that it may be used to expand calls to <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> later on in the <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm>. Users must ensure that the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>, if any, can be evaluated at compile time if the *access-fn* is used in a <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> later in the same <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"compiler"}><i>compiler</i></GlossaryTerm> must make these *setf expanders* available to compile-time calls to <DictionaryLink styled={true} term={"get-setf-expansion"}><b>get-setf-expansion</b></DictionaryLink> when its <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm> argument is a value received as the *environment parameter* of a <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm>. 
+If a <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a *top level form*, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must make the *setf expander* available so that it may be used to expand calls to <ClLinks  term={"setf"}><b>setf</b></ClLinks> later on in the <ClLinks  term={"file"}><i>file</i></ClLinks>. Users must ensure that the <ClLinks  term={"form"}><i>forms</i></ClLinks>, if any, can be evaluated at compile time if the *access-fn* is used in a <ClLinks  term={"place"}><i>place</i></ClLinks> later in the same <ClLinks  term={"file"}><i>file</i></ClLinks>. The <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must make these *setf expanders* available to compile-time calls to <ClLinks  term={"get-setf-expansion"}><b>get-setf-expansion</b></ClLinks> when its <ClLinks  term={"environment"}><i>environment</i></ClLinks> argument is a value received as the *environment parameter* of a <ClLinks  term={"macro"}><i>macro</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 The e↵ect of 
 (defsetf symbol-value set) 
 is built into the Common Lisp system. This causes the form (setf (symbol-value foo) fu) to expand into (set foo fu). 
 Note that 
 (defsetf car rplaca) 
 would be incorrect because **rplaca** does not return its last argument. 
-
-
 
 **defsetf** 
 (defun middleguy (x) (nth (truncate (1- (list-length x)) 2) x)) *!* MIDDLEGUY 
@@ -172,14 +169,12 @@ An example of the use of the long form of **defsetf**:
 (xy ’x 1 ’y 2) *!* 3 
 Data and Control 
 
-
-
 ```
 **See Also:** 
 
 
 
-**documentation**, <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink>, <DictionaryLink styled={true} term={"define-setf-expander"}><b>define-setf-expander</b></DictionaryLink>, <DictionaryLink styled={true} term={"get-setf-expansion"}><b>get-setf-expansion</b></DictionaryLink>, Section 5.1 (Generalized Reference), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
+**documentation**, <ClLinks  term={"setf"}><b>setf</b></ClLinks>, <ClLinks  term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>, <ClLinks  term={"get-setf-expansion"}><b>get-setf-expansion</b></ClLinks>, Section 5.1 (Generalized Reference), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
 
 
 
@@ -187,11 +182,11 @@ Data and Control
 
 
 
-<GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> must include provision for returning the correct value (the value or values of *store-variable*). This is handled by <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> rather than by <DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink> because in many cases this value can be returned at no extra cost, by calling a function that simultaneously stores into the <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> and returns the correct value. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks> must include provision for returning the correct value (the value or values of *store-variable*). This is handled by <ClLinks  term={"form"}><i>forms</i></ClLinks> rather than by <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks> because in many cases this value can be returned at no extra cost, by calling a function that simultaneously stores into the <ClLinks  term={"place"}><i>place</i></ClLinks> and returns the correct value. 
 
 
 
-A <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> of a call on *access-fn* also evaluates all of *access-fn*’s arguments; it cannot treat any of them specially. This means that <DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink> cannot be used to describe how to store into a *generalized reference* to a byte, such as (ldb field reference). <DictionaryLink styled={true} term={"define-setf-expander"}><b>define-setf-expander</b></DictionaryLink> is used to handle situations that do not fit the restrictions imposed by <DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink> and gives the user additional control. 
+A <ClLinks  term={"setf"}><b>setf</b></ClLinks> of a call on *access-fn* also evaluates all of *access-fn*’s arguments; it cannot treat any of them specially. This means that <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks> cannot be used to describe how to store into a *generalized reference* to a byte, such as (ldb field reference). <ClLinks  term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks> is used to handle situations that do not fit the restrictions imposed by <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks> and gives the user additional control. 
 
 
 

@@ -2,11 +2,11 @@
 
 
 
-The *upgraded array element type* of a *type T*<sub>1</sub> is a *type T*<sub>2</sub> that is a <GlossaryTerm styled={true} term={"supertype"}><i>supertype</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"t"}><i>T</i></GlossaryTerm><sub>1</sub> and that is used instead of <GlossaryTerm styled={true} term={"t"}><i>T</i></GlossaryTerm><sub>1</sub> whenever <GlossaryTerm styled={true} term={"t"}><i>T</i></GlossaryTerm><sub>1</sub> is used as an *array element type* for object creation or type discrimination. 
+The *upgraded array element type* of a *type T*<sub>1</sub> is a *type T*<sub>2</sub> that is a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of <ClLinks  term={"t"}><i>T</i></ClLinks><sub>1</sub> and that is used instead of <ClLinks  term={"t"}><i>T</i></ClLinks><sub>1</sub> whenever <ClLinks  term={"t"}><i>T</i></ClLinks><sub>1</sub> is used as an *array element type* for object creation or type discrimination. 
 
 
 
-During creation of an <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>, the *element type* that was requested is called the *expressed array element type*. The *upgraded array element type* of the *expressed array element type* becomes the *actual array element type* of the <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> that is created. 
+During creation of an <ClLinks  term={"array"}><i>array</i></ClLinks>, the *element type* that was requested is called the *expressed array element type*. The *upgraded array element type* of the *expressed array element type* becomes the *actual array element type* of the <ClLinks  term={"array"}><i>array</i></ClLinks> that is created. 
 
 
 
@@ -14,7 +14,7 @@ During creation of an <GlossaryTerm styled={true} term={"array"}><i>array</i></G
 
 
 
-The *upgraded array element type T*<sub>2</sub> of a *type T*<sub>1</sub> is a function only of <GlossaryTerm styled={true} term={"t"}><i>T</i></GlossaryTerm><sub>1</sub> itself; that is, it is independent of any other property of the <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> for which <GlossaryTerm styled={true} term={"t"}><i>T</i></GlossaryTerm><sub>2</sub> will be used, such as <GlossaryTerm styled={true} term={"rank"}><i>rank</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"adjustability"}><i>adjustability</i></GlossaryTerm>, *fill pointers*, or displacement. The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></DictionaryLink> can be used by *conforming programs* to predict how the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> will <GlossaryTerm styled={true} term={"upgrade"}><i>upgrade</i></GlossaryTerm> a given <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>. 
+The *upgraded array element type T*<sub>2</sub> of a *type T*<sub>1</sub> is a function only of <ClLinks  term={"t"}><i>T</i></ClLinks><sub>1</sub> itself; that is, it is independent of any other property of the <ClLinks  term={"array"}><i>array</i></ClLinks> for which <ClLinks  term={"t"}><i>T</i></ClLinks><sub>2</sub> will be used, such as <ClLinks  term={"rank"}><i>rank</i></ClLinks>, <ClLinks  term={"adjustability"}><i>adjustability</i></ClLinks>, *fill pointers*, or displacement. The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks> can be used by *conforming programs* to predict how the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> will <ClLinks  term={"upgrade"}><i>upgrade</i></ClLinks> a given <ClLinks  term={"type"}><i>type</i></ClLinks>. 
 
 
 

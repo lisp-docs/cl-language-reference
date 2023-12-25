@@ -1,4 +1,4 @@
-**package-name** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**package-name** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"package-name"}><b>package-name</b></DictionaryLink> *package → name* 
+<ClLinks  term={"package-name"}><b>package-name</b></ClLinks> *package → name* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>—a *package designator* . 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . 
 
 
 
-<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,30 +26,26 @@
 
 
 
-<DictionaryLink styled={true} term={"package-name"}><b>package-name</b></DictionaryLink> returns the <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> that names <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if the *package designator* is a *package object* that has no name (see the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"delete-package"}><b>delete-package</b></DictionaryLink>). 
+<ClLinks  term={"package-name"}><b>package-name</b></ClLinks> returns the <ClLinks  term={"string"}><i>string</i></ClLinks> that names <ClLinks  term={"package"}><i>package</i></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if the *package designator* is a *package object* that has no name (see the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks>). 
 
 
 
 **Examples:**
 ```lisp
-
 (in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
 (package-name \*package\*) → "COMMON-LISP-USER" 
 (package-name (symbol-package :test)) → "KEYWORD" 
 (package-name (find-package ’common-lisp)) → "COMMON-LISP" 
 (defvar \*foo-package\* (make-package "FOO")) 
 
-
-
 (rename-package "FOO" "FOO0") 
 (package-name \*foo-package\*) → "FOO0" 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> is not a *package designator* . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a *package designator* . 
 
 
 

@@ -1,4 +1,4 @@
-**keywordp** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**keywordp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"keywordp"}><b>keywordp</b></DictionaryLink> *object → generalized-boolean* 
+<ClLinks  term={"keywordp"}><b>keywordp</b></ClLinks> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,13 +26,12 @@
 
 
 
-Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"keyword"}><i>keyword</i></GlossaryTerm> <sub>1</sub>; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is a <ClLinks  term={"keyword"}><i>keyword</i></ClLinks> <sub>1</sub>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (keywordp ’elephant) → false 
 (keywordp 12) → false 
 (keywordp :test) → true 
@@ -43,13 +42,12 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 (keywordp "hello") → false 
 (keywordp ":hello") → false 
 (keywordp ’&optional) → false 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"constantp"}><b>constantp</b></DictionaryLink>, <DictionaryLink styled={true} term={"keyword"}><b>keyword</b></DictionaryLink>, <DictionaryLink styled={true} term={"symbolp"}><b>symbolp</b></DictionaryLink>, <DictionaryLink styled={true} term={"symbol-package"}><b>symbol-package</b></DictionaryLink> 
+<ClLinks  term={"constantp"}><b>constantp</b></ClLinks>, <ClLinks  term={"keyword"}><b>keyword</b></ClLinks>, <ClLinks  term={"symbolp"}><b>symbolp</b></ClLinks>, <ClLinks  term={"symbol-package"}><b>symbol-package</b></ClLinks> 
 
 
 

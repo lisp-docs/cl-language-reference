@@ -2,15 +2,15 @@
 
 
 
-A *sequence* is an ordered collection of <GlossaryTerm styled={true} term={"element"}><i>elements</i></GlossaryTerm>, implemented as either a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. 
+A *sequence* is an ordered collection of <ClLinks  term={"element"}><i>elements</i></ClLinks>, implemented as either a <ClLinks  term={"vector"}><i>vector</i></ClLinks> or a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
-*Sequences* can be created by the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"make-sequence"}><b>make-sequence</b></DictionaryLink>, as well as other <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> that create <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> that are <GlossaryTerm styled={true} term={"subtype"}><i>subtypes</i></GlossaryTerm> of <DictionaryLink styled={true} term={"sequence"}><b>sequence</b></DictionaryLink> (*e.g.*, <DictionaryLink styled={true} term={"list"}><b>list</b></DictionaryLink>, <DictionaryLink styled={true} term={"make-list"}><b>make-list</b></DictionaryLink>, <DictionaryLink styled={true} term={"mapcar"}><b>mapcar</b></DictionaryLink>, and <DictionaryLink styled={true} term={"vector"}><b>vector</b></DictionaryLink>). 
+*Sequences* can be created by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"make-sequence"}><b>make-sequence</b></ClLinks>, as well as other <ClLinks  term={"function"}><i>functions</i></ClLinks> that create <ClLinks  term={"object"}><i>objects</i></ClLinks> of <ClLinks  term={"type"}><i>types</i></ClLinks> that are <ClLinks  term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks  term={"sequence"}><b>sequence</b></ClLinks> (*e.g.*, <ClLinks  term={"list"}><b>list</b></ClLinks>, <ClLinks  term={"make-list"}><b>make-list</b></ClLinks>, <ClLinks  term={"mapcar"}><b>mapcar</b></ClLinks>, and <ClLinks  term={"vector"}><b>vector</b></ClLinks>). 
 
 
 
-A *sequence function* is a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> defined by this specification or added as an extension by the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> that operates on one or more *sequences*. Whenever a *sequence function* must construct and return a new <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> , it always returns a *simple vector* . Similarly, any <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm> constructed will be *simple strings*. 
+A *sequence function* is a <ClLinks  term={"function"}><i>function</i></ClLinks> defined by this specification or added as an extension by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> that operates on one or more *sequences*. Whenever a *sequence function* must construct and return a new <ClLinks  term={"vector"}><i>vector</i></ClLinks> , it always returns a *simple vector* . Similarly, any <ClLinks  term={"string"}><i>strings</i></ClLinks> constructed will be *simple strings*. 
 
 
 

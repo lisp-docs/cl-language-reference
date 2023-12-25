@@ -2,7 +2,7 @@
 
 
 
-A *define-method-combination arguments lambda list* is used by the :arguments option to <DictionaryLink styled={true} term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink>. 
+A *define-method-combination arguments lambda list* is used by the :arguments option to <ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks>. 
 
 
 

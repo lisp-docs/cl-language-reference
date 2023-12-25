@@ -2,7 +2,7 @@
 
 
 
-An evaluation arrow “→” precedes a list of <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> to be returned. For example: 
+An evaluation arrow “→” precedes a list of <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> to be returned. For example: 
 
 
 
@@ -10,7 +10,7 @@ An evaluation arrow “→” precedes a list of <GlossaryTerm styled={true} ter
 
 
 
-indicates that F is an operator that has three *required parameters* (*i.e.*, *a*, *b*, and *c*) and that returns one <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> (*i.e.*, *x*). If more than one <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> is returned by an operator, the <GlossaryTerm styled={true} term={"name"}><i>names</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> are separated by commas, as in: 
+indicates that F is an operator that has three *required parameters* (*i.e.*, *a*, *b*, and *c*) and that returns one <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> (*i.e.*, *x*). If more than one <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is returned by an operator, the <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> of the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> are separated by commas, as in: 
 
 
 

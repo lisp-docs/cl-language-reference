@@ -1,4 +1,4 @@
-**with-open-stream** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
+**with-open-stream** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"with-open-stream"}><b>with-open-stream</b></DictionaryLink> (*var stream*) *\{declaration\}*\* <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* 
+<ClLinks  term={"with-open-stream"}><b>with-open-stream</b></ClLinks> (*var stream*) *\{declaration\}*\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -22,19 +22,19 @@
 
 
 
-<GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>; evaluated to produce a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated to produce a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-<GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -42,25 +42,22 @@
 
 
 
-<DictionaryLink styled={true} term={"with-open-stream"}><b>with-open-stream</b></DictionaryLink> performs a series of operations on <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>, returns a value, and then closes the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
+<ClLinks  term={"with-open-stream"}><b>with-open-stream</b></ClLinks> performs a series of operations on <ClLinks  term={"stream"}><i>stream</i></ClLinks>, returns a value, and then closes the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-*Var* is bound to the value of <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>, and then <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are executed as an *implicit progn*. *stream* is automatically closed on exit from <DictionaryLink styled={true} term={"with-open-stream"}><b>with-open-stream</b></DictionaryLink>, no matter whether the exit is normal or abnormal. The <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> has *dynamic extent*; its <GlossaryTerm styled={true} term={"extent"}><i>extent</i></GlossaryTerm> ends when the <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is exited. 
+*Var* is bound to the value of <ClLinks  term={"stream"}><i>stream</i></ClLinks>, and then <ClLinks  term={"form"}><i>forms</i></ClLinks> are executed as an *implicit progn*. *stream* is automatically closed on exit from <ClLinks  term={"with-open-stream"}><b>with-open-stream</b></ClLinks>, no matter whether the exit is normal or abnormal. The <ClLinks  term={"stream"}><i>stream</i></ClLinks> has *dynamic extent*; its <ClLinks  term={"extent"}><i>extent</i></ClLinks> ends when the <ClLinks  term={"form"}><i>form</i></ClLinks> is exited. 
 
 
 
-The consequences are undefined if an attempt is made to <GlossaryTerm styled={true} term={"assign"}><i>assign</i></GlossaryTerm> the the *variable var* with the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. 
+The consequences are undefined if an attempt is made to <ClLinks  term={"assign"}><i>assign</i></ClLinks> the the *variable var* with the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (with-open-stream (s (make-string-input-stream "1 2 3 4")) 
   (+ (read s) (read s) (read s))) → 6 
-
-
 
 
 ```
@@ -68,7 +65,7 @@ The consequences are undefined if an attempt is made to <GlossaryTerm styled={tr
 
 
 
-The <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is closed (upon exit). 
+The <ClLinks  term={"stream"}><i>stream</i></ClLinks> is closed (upon exit). 
 
 
 
@@ -76,7 +73,7 @@ The <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is 
 
 
 
-<DictionaryLink styled={true} term={"close"}><b>close</b></DictionaryLink> 
+<ClLinks  term={"close"}><b>close</b></ClLinks> 
 
 
 

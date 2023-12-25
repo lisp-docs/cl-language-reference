@@ -1,4 +1,4 @@
-**when, unless** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
+**when, unless** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<DictionaryLink styled={true} term={"when"}><b>when</b></DictionaryLink> *test-form \{form\}*\* → \{result\}\* 
+<ClLinks  term={"when"}><b>when</b></ClLinks> *test-form \{form\}*\* → \{result\}\* 
 
 
 
-<DictionaryLink styled={true} term={"unless"}><b>unless</b></DictionaryLink> *test-form \{form\}*\* → \{result\}\* 
+<ClLinks  term={"unless"}><b>unless</b></ClLinks> *test-form \{form\}*\* → \{result\}\* 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-*test-form*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
+*test-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> in a <DictionaryLink styled={true} term={"when"}><b>when</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> if the *test-form yields true* or in an <DictionaryLink styled={true} term={"unless"}><b>unless</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> if the *test-form yields false*; otherwise <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks> in a <ClLinks  term={"when"}><b>when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> if the *test-form yields true* or in an <ClLinks  term={"unless"}><b>unless</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> if the *test-form yields false*; otherwise <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<DictionaryLink styled={true} term={"when"}><b>when</b></DictionaryLink> and <DictionaryLink styled={true} term={"unless"}><b>unless</b></DictionaryLink> allow the execution of <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> to be dependent on a single *test-form*. 
+<ClLinks  term={"when"}><b>when</b></ClLinks> and <ClLinks  term={"unless"}><b>unless</b></ClLinks> allow the execution of <ClLinks  term={"form"}><i>forms</i></ClLinks> to be dependent on a single *test-form*. 
 
 
 
-In a <DictionaryLink styled={true} term={"when"}><b>when</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>, if the *test-form yields true*, the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are *evaluated* in order from left to right and the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are returned from the <DictionaryLink styled={true} term={"when"}><b>when</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. Otherwise, if the *test-form yields false*, the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are not *evaluated*, and the <DictionaryLink styled={true} term={"when"}><b>when</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> returns <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+In a <ClLinks  term={"when"}><b>when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>, if the *test-form yields true*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are *evaluated* in order from left to right and the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks> are returned from the <ClLinks  term={"when"}><b>when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. Otherwise, if the *test-form yields false*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are not *evaluated*, and the <ClLinks  term={"when"}><b>when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -58,13 +58,12 @@ In a <DictionaryLink styled={true} term={"when"}><b>when</b></DictionaryLink> <G
 
 
 
-In an <DictionaryLink styled={true} term={"unless"}><b>unless</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>, if the *test-form yields false*, the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are *evaluated* in order from left to right and the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are returned from the <DictionaryLink styled={true} term={"unless"}><b>unless</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. Otherwise, if the *test-form yields false*, the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are not *evaluated*, and the <DictionaryLink styled={true} term={"unless"}><b>unless</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> returns <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+In an <ClLinks  term={"unless"}><b>unless</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>, if the *test-form yields false*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are *evaluated* in order from left to right and the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks> are returned from the <ClLinks  term={"unless"}><b>unless</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. Otherwise, if the *test-form yields false*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are not *evaluated*, and the <ClLinks  term={"unless"}><b>unless</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (when t ’hello) → HELLO 
 (unless t ’hello) → NIL 
 (when nil ’hello) → NIL 
@@ -89,13 +88,12 @@ In an <DictionaryLink styled={true} term={"unless"}><b>unless</b></DictionaryLin
 	(if (not (oddp x)) (incf x) (list x)) 
 	(if (not (oddp x)) (incf x) (list x)))) 
 → ((4) NIL (5) NIL 6 (6) 7 (7)) 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"and"}><b>and</b></DictionaryLink>, <DictionaryLink styled={true} term={"cond"}><b>cond</b></DictionaryLink>, <DictionaryLink styled={true} term={"if"}><b>if</b></DictionaryLink>, <DictionaryLink styled={true} term={"or"}><b>or</b></DictionaryLink> 
+<ClLinks  term={"and"}><b>and</b></ClLinks>, <ClLinks  term={"cond"}><b>cond</b></ClLinks>, <ClLinks  term={"if"}><b>if</b></ClLinks>, <ClLinks  term={"or"}><b>or</b></ClLinks> 
 
 
 
@@ -103,7 +101,7 @@ In an <DictionaryLink styled={true} term={"unless"}><b>unless</b></DictionaryLin
 
 
 
-(when *test \{form\}*<sup>+</sup>) *≡* (and *test* (progn <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm><sup>+</sup>)) 
+(when *test \{form\}*<sup>+</sup>) *≡* (and *test* (progn <ClLinks  term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>)) 
 
 
 
@@ -111,23 +109,23 @@ In an <DictionaryLink styled={true} term={"unless"}><b>unless</b></DictionaryLin
 
 
 
-(when *test \{form\}*<sup>+</sup>) *≡* (if *test* (progn <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm><sup>+</sup>) nil) 
+(when *test \{form\}*<sup>+</sup>) *≡* (if *test* (progn <ClLinks  term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>) nil) 
 
 
 
-(when *test \{form\}*<sup>+</sup>) *≡* (unless (not *test*) <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm><sup>+</sup>) 
+(when *test \{form\}*<sup>+</sup>) *≡* (unless (not *test*) <ClLinks  term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>) 
 
 
 
-(unless *test \{form\}*<sup>+</sup>) *≡* (cond ((not *test*) <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm><sup>+</sup>)) 
+(unless *test \{form\}*<sup>+</sup>) *≡* (cond ((not *test*) <ClLinks  term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>)) 
 
 
 
-(unless *test \{form\}*<sup>+</sup>) *≡* (if *test* nil (progn <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm><sup>+</sup>)) 
+(unless *test \{form\}*<sup>+</sup>) *≡* (if *test* nil (progn <ClLinks  term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>)) 
 
 
 
-(unless *test \{form\}*<sup>+</sup>) *≡* (when (not *test*) <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm><sup>+</sup>) 
+(unless *test \{form\}*<sup>+</sup>) *≡* (when (not *test*) <ClLinks  term={"form"}><i>\{form\}</i></ClLinks><sup>+</sup>) 
 
 
 

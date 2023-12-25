@@ -1,4 +1,4 @@
-**room** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**room** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"room"}><b>room</b></DictionaryLink> &amp;optional *x → implementation-dependent* 
+<ClLinks styled={true} term={"room"}><b>room</b></ClLinks> &amp;optional *x → implementation-dependent* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*x*—one of <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>, <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, or :default. 
+*x*—one of <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, or :default. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<DictionaryLink styled={true} term={"room"}><b>room</b></DictionaryLink> prints, to *standard output*, information about the state of internal storage and its management. This might include descriptions of the amount of memory in use and the degree of memory compaction, possibly broken down by internal data type if that is appropriate. The nature and format of the printed information is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. The intent is to provide information that a <GlossaryTerm styled={true} term={"programmer"}><i>programmer</i></GlossaryTerm> might use to tune a <GlossaryTerm styled={true} term={"program"}><i>program</i></GlossaryTerm> for a particular <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>. 
+<ClLinks styled={true} term={"room"}><b>room</b></ClLinks> prints, to *standard output*, information about the state of internal storage and its management. This might include descriptions of the amount of memory in use and the degree of memory compaction, possibly broken down by internal data type if that is appropriate. The nature and format of the printed information is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. The intent is to provide information that a <ClLinks styled={true} term={"programmer"}><i>programmer</i></ClLinks> might use to tune a <ClLinks styled={true} term={"program"}><i>program</i></ClLinks> for a particular <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 

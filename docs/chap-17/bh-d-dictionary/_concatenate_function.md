@@ -1,4 +1,4 @@
-**concatenate** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**concatenate** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"concatenate"}><b>concatenate</b></DictionaryLink> *result-type* &amp;rest *sequences → result-sequence* 
+<ClLinks  term={"concatenate"}><b>concatenate</b></ClLinks> *result-type* &amp;rest *sequences → result-sequence* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*result-type*—a <DictionaryLink styled={true} term={"sequence"}><b>sequence</b></DictionaryLink> *type specifier* . 
+*result-type*—a <ClLinks  term={"sequence"}><b>sequence</b></ClLinks> *type specifier* . 
 
 
 
@@ -30,23 +30,19 @@
 
 
 
-<DictionaryLink styled={true} term={"concatenate"}><b>concatenate</b></DictionaryLink> returns a *sequence* that contains all the individual elements of all the *sequences* in the order that they are supplied. The *sequence* is of type *result-type*, which must be a <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"sequence"}><b>sequence</b></DictionaryLink>. 
+<ClLinks  term={"concatenate"}><b>concatenate</b></ClLinks> returns a *sequence* that contains all the individual elements of all the *sequences* in the order that they are supplied. The *sequence* is of type *result-type*, which must be a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"sequence"}><b>sequence</b></ClLinks>. 
 
 
 
-All of the *sequences* are copied from; the result does not share any structure with any of the *sequences*. Therefore, if only one *sequence* is provided and it is of type *result-type*, <DictionaryLink styled={true} term={"concatenate"}><b>concatenate</b></DictionaryLink> is required to copy *sequence* rather than simply returning it. 
+All of the *sequences* are copied from; the result does not share any structure with any of the *sequences*. Therefore, if only one *sequence* is provided and it is of type *result-type*, <ClLinks  term={"concatenate"}><b>concatenate</b></ClLinks> is required to copy *sequence* rather than simply returning it. 
 
 
 
-It is an error if any element of the *sequences* cannot be an element of the *sequence* result. If the *result-type* is a <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> of <DictionaryLink styled={true} term={"list"}><b>list</b></DictionaryLink>, the result will be a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. 
-
-
+It is an error if any element of the *sequences* cannot be an element of the *sequence* result. If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"list"}><b>list</b></ClLinks>, the result will be a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
 
-
- 
 
 
 
@@ -54,29 +50,31 @@ It is an error if any element of the *sequences* cannot be an element of the *se
 
 
 
-If the *result-type* is a <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> of <DictionaryLink styled={true} term={"vector"}><b>vector</b></DictionaryLink>, then if the implementation can determine the element type specified for the *result-type*, the element type of the resulting array is the result of *upgrading* that element type; or, if the implementation can determine that the element type is unspecified (or \*), the element type of the resulting array is <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>; otherwise, an error is signaled. 
+ 
+
+
+
+If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"vector"}><b>vector</b></ClLinks>, then if the implementation can determine the element type specified for the *result-type*, the element type of the resulting array is the result of *upgrading* that element type; or, if the implementation can determine that the element type is unspecified (or \*), the element type of the resulting array is <ClLinks  term={"t"}><b>t</b></ClLinks>; otherwise, an error is signaled. 
 
 
 
 **Examples:**
 ```lisp
-
 (concatenate ’string "all" " " "together" " " "now") → "all together now" 
 (concatenate ’list "ABC" ’(d e f) #(1 2 3) #\*1011) 
 → (#\A #\B #\C D E F 1 2 3 1 0 1 1) 
 (concatenate ’list) → NIL 
 (concatenate ’(vector \* 2) "a" "bc") should signal an error 
-
 ```
 **Exceptional Situations:** 
 
 
 
-An error is signaled if the *result-type* is neither a *recognizable subtype* of <DictionaryLink styled={true} term={"list"}><b>list</b></DictionaryLink>, nor a *recognizable subtype* of <DictionaryLink styled={true} term={"vector"}><b>vector</b></DictionaryLink>. 
+An error is signaled if the *result-type* is neither a *recognizable subtype* of <ClLinks  term={"list"}><b>list</b></ClLinks>, nor a *recognizable subtype* of <ClLinks  term={"vector"}><b>vector</b></ClLinks>. 
 
 
 
-An error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> should be signaled if *result-type* specifies the number of elements and the sum of *sequences* is different from that number. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> should be signaled if *result-type* specifies the number of elements and the sum of *sequences* is different from that number. 
 
 
 
@@ -84,7 +82,7 @@ An error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>
 
 
 
-<DictionaryLink styled={true} term={"append"}><b>append</b></DictionaryLink> 
+<ClLinks  term={"append"}><b>append</b></ClLinks> 
 
 
 

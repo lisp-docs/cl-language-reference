@@ -1,4 +1,4 @@
-**write-char** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**write-char** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"write-char"}><b>write-char</b></DictionaryLink> <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> &amp;optional *output-stream → character* 
+<ClLinks  term={"write-char"}><b>write-char</b></ClLinks> <ClLinks  term={"character"}><i>character</i></ClLinks> &amp;optional *output-stream → character* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
+<ClLinks  term={"character"}><i>character</i></ClLinks>—a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -26,13 +26,12 @@
 
 
 
-<DictionaryLink styled={true} term={"write-char"}><b>write-char</b></DictionaryLink> outputs <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> to *output-stream*. 
+<ClLinks  term={"write-char"}><b>write-char</b></ClLinks> outputs <ClLinks  term={"character"}><i>character</i></ClLinks> to *output-stream*. 
 
 
 
 **Examples:**
 ```lisp
-
 (write-char #\a) 
 ▷ a 
 → #\a 
@@ -41,7 +40,6 @@
   (write-char #\Space s) 
   (write-char #\b s)) 
 → "a b" 
-
 ```
 **Side Effects:** 
 
@@ -55,7 +53,7 @@ The *output-stream* is modified.
 
 
 
-**\*standard-output\***, <DictionaryLink styled={true} term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>. 
+**\*standard-output\***, <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
 
 
 
@@ -63,7 +61,7 @@ The *output-stream* is modified.
 
 
 
-<DictionaryLink styled={true} term={"read-char"}><b>read-char</b></DictionaryLink>, <DictionaryLink styled={true} term={"write-byte"}><b>write-byte</b></DictionaryLink>, <DictionaryLink styled={true} term={"write-sequence"}><b>write-sequence</b></DictionaryLink> 
+<ClLinks  term={"read-char"}><b>read-char</b></ClLinks>, <ClLinks  term={"write-byte"}><b>write-byte</b></ClLinks>, <ClLinks  term={"write-sequence"}><b>write-sequence</b></ClLinks> 
 
 
 
@@ -79,7 +77,7 @@ The *output-stream* is modified.
 
 
 
-<DictionaryLink styled={true} term={"read-line"}><b>read-line</b></DictionaryLink> 
+<ClLinks  term={"read-line"}><b>read-line</b></ClLinks> 
 
 
 

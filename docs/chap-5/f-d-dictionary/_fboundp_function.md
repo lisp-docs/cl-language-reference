@@ -1,4 +1,4 @@
-**fboundp** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**fboundp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"fboundp"}><b>fboundp</b></DictionaryLink> *name → generalized-boolean* 
+<ClLinks  term={"fboundp"}><b>fboundp</b></ClLinks> *name → generalized-boolean* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a *function name*. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a *function name*. 
 
 
 
@@ -34,13 +34,12 @@
 
 
 
-Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"fbound"}><i>fbound</i></GlossaryTerm>; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"name"}><i>name</i></ClLinks> is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (fboundp ’car) → true 
 (fboundp ’nth-value) → false 
 (fboundp ’with-open-file) → true 
@@ -59,13 +58,12 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 (fboundp ’my-function) → false 
 (flet ((my-function (x) x)) 
   (fboundp ’my-function)) → false 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is not a *function name*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"name"}><i>name</i></ClLinks> is not a *function name*. 
 
 
 
@@ -73,7 +71,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"symbol-function"}><b>symbol-function</b></DictionaryLink>, <DictionaryLink styled={true} term={"fmakunbound"}><b>fmakunbound</b></DictionaryLink>, <DictionaryLink styled={true} term={"fdefinition"}><b>fdefinition</b></DictionaryLink> 
+<ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks>, <ClLinks  term={"fmakunbound"}><b>fmakunbound</b></ClLinks>, <ClLinks  term={"fdefinition"}><b>fdefinition</b></ClLinks> 
 
 
 
@@ -93,11 +91,11 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-It is permissible to call <DictionaryLink styled={true} term={"symbol-function"}><b>symbol-function</b></DictionaryLink> on any <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> that is <GlossaryTerm styled={true} term={"fbound"}><i>fbound</i></GlossaryTerm>. 
+It is permissible to call <ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> on any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>. 
 
 
 
-<DictionaryLink styled={true} term={"fboundp"}><b>fboundp</b></DictionaryLink> is sometimes used to “guard” an access to the *function cell*, as in: (if (fboundp x) (symbol-function x)) 
+<ClLinks  term={"fboundp"}><b>fboundp</b></ClLinks> is sometimes used to “guard” an access to the *function cell*, as in: (if (fboundp x) (symbol-function x)) 
 
 
 

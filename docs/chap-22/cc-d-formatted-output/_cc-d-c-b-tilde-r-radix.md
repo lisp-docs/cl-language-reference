@@ -2,7 +2,7 @@
 
 
 
-&#126;*n*R prints *arg* in radix *n*. The modifier flags and any remaining parameters are used as for the &#126;D directive. &#126;D is the same as &#126;10R. The full form is &#126;<GlossaryTerm styled={true} term={"radix"}><i>radix</i></GlossaryTerm> ,*mincol*,*padchar*,*commachar*,*comma-interval*R. 
+&#126;*n*R prints *arg* in radix *n*. The modifier flags and any remaining parameters are used as for the &#126;D directive. &#126;D is the same as &#126;10R. The full form is &#126;<ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> ,*mincol*,*padchar*,*commachar*,*comma-interval*R. 
 
 
 
@@ -62,7 +62,7 @@ For example:
 
 
 
-If and only if the first parameter, *n*, is supplied, &#126;R binds <DictionaryLink styled={true} term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> to <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>, <DictionaryLink styled={true} term={"print-radix"}><b>\*print-radix\*</b></DictionaryLink> to <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>, **\*print-base\*** to *n*, and <DictionaryLink styled={true} term={"print-readably"}><b>\*print-readably\*</b></DictionaryLink> to <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+If and only if the first parameter, *n*, is supplied, &#126;R binds <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> to <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, <ClLinks styled={true} term={"print-radix"}><b>\*print-radix\*</b></ClLinks> to <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, **\*print-base\*** to *n*, and <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> to <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 

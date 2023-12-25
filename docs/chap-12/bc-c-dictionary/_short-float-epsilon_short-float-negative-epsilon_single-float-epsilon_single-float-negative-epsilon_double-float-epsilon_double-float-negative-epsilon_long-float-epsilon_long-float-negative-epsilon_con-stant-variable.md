@@ -6,7 +6,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
+<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The value of each of the constants <DictionaryLink styled={true} term={"short-float-epsilon"}><b>short-float-epsilon</b></DictionaryLink>, <DictionaryLink styled={true} term={"single-float-epsilon"}><b>single-float-epsilon</b></DictionaryLink>, <DictionaryLink styled={true} term={"double-float-epsilon"}><b>double-float-epsilon</b></DictionaryLink>, and <DictionaryLink styled={true} term={"long-float-epsilon"}><b>long-float-epsilon</b></DictionaryLink> is the smallest positive *float ε* of the given format, such that the following expression is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> when evaluated: 
+The value of each of the constants <ClLinks  term={"short-float-epsilon"}><b>short-float-epsilon</b></ClLinks>, <ClLinks  term={"single-float-epsilon"}><b>single-float-epsilon</b></ClLinks>, <ClLinks  term={"double-float-epsilon"}><b>double-float-epsilon</b></ClLinks>, and <ClLinks  term={"long-float-epsilon"}><b>long-float-epsilon</b></ClLinks> is the smallest positive *float ε* of the given format, such that the following expression is <ClLinks  term={"true"}><i>true</i></ClLinks> when evaluated: 
 
 
 
@@ -34,7 +34,7 @@ The value of each of the constants <DictionaryLink styled={true} term={"short-fl
 
 
 
-The value of each of the constants <DictionaryLink styled={true} term={"short-float-negative-epsilon"}><b>short-float-negative-epsilon</b></DictionaryLink>, <DictionaryLink styled={true} term={"single-float-negative-epsilon"}><b>single-float-negative-epsilon</b></DictionaryLink>, <DictionaryLink styled={true} term={"double-float-negative-epsilon"}><b>double-float-negative-epsilon</b></DictionaryLink>, and <DictionaryLink styled={true} term={"long-float-negative-epsilon"}><b>long-float-negative-epsilon</b></DictionaryLink> is the smallest positive *float ε* of the given format, such that the following expression is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> when evaluated: 
+The value of each of the constants <ClLinks  term={"short-float-negative-epsilon"}><b>short-float-negative-epsilon</b></ClLinks>, <ClLinks  term={"single-float-negative-epsilon"}><b>single-float-negative-epsilon</b></ClLinks>, <ClLinks  term={"double-float-negative-epsilon"}><b>double-float-negative-epsilon</b></ClLinks>, and <ClLinks  term={"long-float-negative-epsilon"}><b>long-float-negative-epsilon</b></ClLinks> is the smallest positive *float ε* of the given format, such that the following expression is <ClLinks  term={"true"}><i>true</i></ClLinks> when evaluated: 
 
 
 

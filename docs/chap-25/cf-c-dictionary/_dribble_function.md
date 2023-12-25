@@ -1,4 +1,4 @@
-**dribble** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**dribble** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"dribble"}><b>dribble</b></DictionaryLink> &amp;optional *pathname → implementation-dependent* 
+<ClLinks styled={true} term={"dribble"}><b>dribble</b></ClLinks> &amp;optional *pathname → implementation-dependent* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm>—a *pathname designator* . 
+<ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>—a *pathname designator* . 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-Either <GlossaryTerm styled={true} term={"bind"}><i>binds</i></GlossaryTerm> **\*standard-input\*** and **\*standard-output\*** or takes other appropriate action, so as to send a record of the input/output interaction to a file named by <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm>. <DictionaryLink styled={true} term={"dribble"}><b>dribble</b></DictionaryLink> is intended to create a readable record of an interactive session. 
+Either <ClLinks styled={true} term={"bind"}><i>binds</i></ClLinks> **\*standard-input\*** and **\*standard-output\*** or takes other appropriate action, so as to send a record of the input/output interaction to a file named by <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>. <ClLinks styled={true} term={"dribble"}><b>dribble</b></ClLinks> is intended to create a readable record of an interactive session. 
 
 
 
-If <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> is a *logical pathname*, it is translated into a physical pathname as if by calling <DictionaryLink styled={true} term={"translate-logical-pathname"}><b>translate-logical-pathname</b></DictionaryLink>. 
+If <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> is a *logical pathname*, it is translated into a physical pathname as if by calling <ClLinks styled={true} term={"translate-logical-pathname"}><b>translate-logical-pathname</b></ClLinks>. 
 
 
 
@@ -46,7 +46,7 @@ If <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> 
 
 
 
-If <DictionaryLink styled={true} term={"dribble"}><b>dribble</b></DictionaryLink> is *called* while a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> to a “dribble file” is still open from a previous <GlossaryTerm styled={true} term={"call"}><i>call</i></GlossaryTerm> to <DictionaryLink styled={true} term={"dribble"}><b>dribble</b></DictionaryLink>, the effect is <GlossaryTerm styled={true} term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>. For example, the already-*open stream* might be <GlossaryTerm styled={true} term={"closed"}><i>closed</i></GlossaryTerm>, or dribbling might occur both to the old <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> and to a new one, or the old <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> might stay open but not receive any further output, or the new request might be ignored, or some other action might be taken. 
+If <ClLinks styled={true} term={"dribble"}><b>dribble</b></ClLinks> is *called* while a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> to a “dribble file” is still open from a previous <ClLinks styled={true} term={"call"}><i>call</i></ClLinks> to <ClLinks styled={true} term={"dribble"}><b>dribble</b></ClLinks>, the effect is <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. For example, the already-*open stream* might be <ClLinks styled={true} term={"closed"}><i>closed</i></ClLinks>, or dribbling might occur both to the old <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> and to a new one, or the old <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> might stay open but not receive any further output, or the new request might be ignored, or some other action might be taken. 
 
 
 
@@ -54,7 +54,7 @@ If <DictionaryLink styled={true} term={"dribble"}><b>dribble</b></DictionaryLink
 
 
 
-The <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>. 
+The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 
@@ -62,11 +62,11 @@ The <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></G
 
 
 
-If a failure occurs when performing some operation on the *file system* while creating the dribble file, an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
+If a failure occurs when performing some operation on the *file system* while creating the dribble file, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
 
 
 
-An error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"file-error"}><b>file-error</b></DictionaryLink> might be signaled if <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a *wild pathname*. 
+An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> might be signaled if <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> is a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a *wild pathname*. 
 
 
 
@@ -82,11 +82,11 @@ Section 19.1.2 (Pathnames as Filenames)
 
 
 
-<DictionaryLink styled={true} term={"dribble"}><b>dribble</b></DictionaryLink> can return before subsequent <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are executed. It also can enter a recursive interaction loop, returning only when (dribble) is done. 
+<ClLinks styled={true} term={"dribble"}><b>dribble</b></ClLinks> can return before subsequent <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are executed. It also can enter a recursive interaction loop, returning only when (dribble) is done. 
 
 
 
-<DictionaryLink styled={true} term={"dribble"}><b>dribble</b></DictionaryLink> is intended primarily for interactive debugging; its effect cannot be relied upon when used in a program. 
+<ClLinks styled={true} term={"dribble"}><b>dribble</b></ClLinks> is intended primarily for interactive debugging; its effect cannot be relied upon when used in a program. 
 
 
 
@@ -98,7 +98,7 @@ Section 19.1.2 (Pathnames as Filenames)
 
 
 
-a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
+a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -106,7 +106,7 @@ a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>.
 
 
 
-<GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
+<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -126,13 +126,13 @@ a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>.
 
 
 
-The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"-"}><b>-</b></DictionaryLink> is the <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> that is currently being evaluated by the *Lisp read-eval-print loop*. **Examples:**
-```lisp
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"-"}><b>-</b></ClLinks> is the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that is currently being evaluated by the *Lisp read-eval-print loop*. 
 
+**Examples:**
+```lisp
 (format t "~&Evaluating ~S~%" -) 
 ▷ Evaluating (FORMAT T "~&Evaluating ~S~%" -) 
 → NIL 
-
 ```
 **Affected By:** 
 
@@ -146,7 +146,7 @@ The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <D
 
 
 
-<DictionaryLink styled={true} term={"+"}><b>+</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), **\*** (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), Section 25.1.1 (Top level loop) 
+<ClLinks styled={true} term={"+"}><b>+</b></ClLinks> (<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>), **\*** (<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>), <ClLinks styled={true} term={"/"}><b>/</b></ClLinks> (<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>), Section 25.1.1 (Top level loop) 
 
 
 

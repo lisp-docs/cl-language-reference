@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"sequence"}><b>sequence</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
+<ClLinks  term={"sequence"}><b>sequence</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*Sequences* are ordered collections of <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm>, called the <GlossaryTerm styled={true} term={"element"}><i>elements</i></GlossaryTerm> of the *sequence*. 
+*Sequences* are ordered collections of <ClLinks  term={"object"}><i>objects</i></ClLinks>, called the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the *sequence*. 
 
 
 
-The <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> <DictionaryLink styled={true} term={"vector"}><b>vector</b></DictionaryLink> and the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"list"}><b>list</b></DictionaryLink> are *disjoint subtypes* of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"sequence"}><b>sequence</b></DictionaryLink>, but are not necessarily an *exhaustive partition* of *sequence*. 
+The <ClLinks  term={"type"}><i>types</i></ClLinks> <ClLinks  term={"vector"}><b>vector</b></ClLinks> and the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"list"}><b>list</b></ClLinks> are *disjoint subtypes* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"sequence"}><b>sequence</b></ClLinks>, but are not necessarily an *exhaustive partition* of *sequence*. 
 
 
 
-When viewing a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> as a *sequence*, only the *active elements* of that <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> are considered <GlossaryTerm styled={true} term={"element"}><i>elements</i></GlossaryTerm> of the *sequence*; that is, *sequence* operations respect the *fill pointer* when given *sequences* represented as <GlossaryTerm styled={true} term={"vector"}><i>vectors</i></GlossaryTerm>. 
+When viewing a <ClLinks  term={"vector"}><i>vector</i></ClLinks> as a *sequence*, only the *active elements* of that <ClLinks  term={"vector"}><i>vector</i></ClLinks> are considered <ClLinks  term={"element"}><i>elements</i></ClLinks> of the *sequence*; that is, *sequence* operations respect the *fill pointer* when given *sequences* represented as <ClLinks  term={"vector"}><i>vectors</i></ClLinks>. 
 
 
 

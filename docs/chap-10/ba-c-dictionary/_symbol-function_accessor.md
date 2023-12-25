@@ -1,4 +1,4 @@
-**symbol-function** <GlossaryTerm styled={true} term={"accessor"}><i>Accessor</i></GlossaryTerm> 
+**symbol-function** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<DictionaryLink styled={true} term={"symbol-function"}><b>symbol-function</b></DictionaryLink> *symbol → contents* 
+<ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> *symbol → contents* 
 
 
 
-**(setf (symbol-function** <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>**)** *new-contents***)** 
+**(setf (symbol-function** <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>**)** *new-contents***)** 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-<GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-*contents*— If the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is globally defined as a <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> or a *special operator* , an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> nature and identity is returned. If the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is not globally defined as either a <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> or a *special operator* , and if the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"fbound"}><i>fbound</i></GlossaryTerm>, a *function object* is returned. 
+*contents*— If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is globally defined as a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or a *special operator* , an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> nature and identity is returned. If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not globally defined as either a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or a *special operator* , and if the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>, a *function object* is returned. 
 
 
 
-*new-contents*—a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>. 
+*new-contents*—a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-*Accesses* the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>’s *function cell*. 
+*Accesses* the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s *function cell*. 
 
 
 
@@ -50,13 +50,12 @@
 
 
 
-<DictionaryLink styled={true} term={"symbol-function"}><b>symbol-function</b></DictionaryLink> 
+<ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> 
 
 
 
 **Examples:**
 ```lisp
-
 (symbol-function ’car) → #<FUNCTION CAR> 
 (symbol-function ’twice) is an error ;because TWICE isn’t defined. 
 (defun twice (n) (\* n 2)) → TWICE 
@@ -89,13 +88,12 @@
       nil)) → SYMBOL-FUNCTION-OR-NIL 
 (symbol-function-or-nil ’car) → #<FUNCTION CAR> 
 (symbol-function-or-nil ’defun) → NIL 
-
 ```
 **Affected By:** 
 
 
 
-<DictionaryLink styled={true} term={"defun"}><b>defun</b></DictionaryLink> 
+<ClLinks  term={"defun"}><b>defun</b></ClLinks> 
 
 
 
@@ -103,11 +101,11 @@
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-Should signal <DictionaryLink styled={true} term={"undefined-function"}><b>undefined-function</b></DictionaryLink> if <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is not <GlossaryTerm styled={true} term={"fbound"}><i>fbound</i></GlossaryTerm> and an attempt is made to <GlossaryTerm styled={true} term={"read"}><i>read</i></GlossaryTerm> its definition. (No such error is signaled on an attempt to <GlossaryTerm styled={true} term={"write"}><i>write</i></GlossaryTerm> its definition.) 
+Should signal <ClLinks  term={"undefined-function"}><b>undefined-function</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> and an attempt is made to <ClLinks  term={"read"}><i>read</i></ClLinks> its definition. (No such error is signaled on an attempt to <ClLinks  term={"write"}><i>write</i></ClLinks> its definition.) 
 
 
 
@@ -115,7 +113,7 @@ Should signal <DictionaryLink styled={true} term={"undefined-function"}><b>undef
 
 
 
-<DictionaryLink styled={true} term={"fboundp"}><b>fboundp</b></DictionaryLink>, <DictionaryLink styled={true} term={"fmakunbound"}><b>fmakunbound</b></DictionaryLink>, <DictionaryLink styled={true} term={"macro-function"}><b>macro-function</b></DictionaryLink>, <DictionaryLink styled={true} term={"special-operator-p"}><b>special-operator-p</b></DictionaryLink> 
+<ClLinks  term={"fboundp"}><b>fboundp</b></ClLinks>, <ClLinks  term={"fmakunbound"}><b>fmakunbound</b></ClLinks>, <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks>, <ClLinks  term={"special-operator-p"}><b>special-operator-p</b></ClLinks> 
 
 
 
@@ -135,19 +133,19 @@ Should signal <DictionaryLink styled={true} term={"undefined-function"}><b>undef
 
 
 
-<DictionaryLink styled={true} term={"symbol-function"}><b>symbol-function</b></DictionaryLink> cannot <GlossaryTerm styled={true} term={"access"}><i>access</i></GlossaryTerm> the value of a lexical function name produced by <DictionaryLink styled={true} term={"flet"}><b>flet</b></DictionaryLink> or <DictionaryLink styled={true} term={"labels"}><b>labels</b></DictionaryLink>; it can <GlossaryTerm styled={true} term={"access"}><i>access</i></GlossaryTerm> only the global function value. 
+<ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> cannot <ClLinks  term={"access"}><i>access</i></ClLinks> the value of a lexical function name produced by <ClLinks  term={"flet"}><b>flet</b></ClLinks> or <ClLinks  term={"labels"}><b>labels</b></ClLinks>; it can <ClLinks  term={"access"}><i>access</i></ClLinks> only the global function value. 
 
 
 
-<DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> may be used with <DictionaryLink styled={true} term={"symbol-function"}><b>symbol-function</b></DictionaryLink> to replace a global function definition when the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>’s function definition does not represent a *special operator* . 
+<ClLinks  term={"setf"}><b>setf</b></ClLinks> may be used with <ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> to replace a global function definition when the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s function definition does not represent a *special operator* . 
 
 
 
-(symbol-function <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>) *≡* (fdefinition <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>) 
+(symbol-function <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) *≡* (fdefinition <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) 
 
 
 
-However, <DictionaryLink styled={true} term={"fdefinition"}><b>fdefinition</b></DictionaryLink> accepts arguments other than just <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm>. 
+However, <ClLinks  term={"fdefinition"}><b>fdefinition</b></ClLinks> accepts arguments other than just <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 

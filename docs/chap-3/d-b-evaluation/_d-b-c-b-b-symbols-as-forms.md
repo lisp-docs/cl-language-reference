@@ -2,19 +2,19 @@
 
 
 
-If a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>, then it is either a *symbol macro* or a <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>. 
+If a <ClLinks  term={"form"}><i>form</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, then it is either a *symbol macro* or a <ClLinks  term={"variable"}><i>variable</i></ClLinks>. 
 
 
 
-The <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> names a *symbol macro* if there is a <GlossaryTerm styled={true} term={"binding"}><i>binding</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> as a *symbol macro* in the current *lexical environment* (see <DictionaryLink styled={true} term={"define-symbol-macro"}><b>define-symbol-macro</b></DictionaryLink> and <DictionaryLink styled={true} term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>). If the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is a *symbol macro*, its expansion function is obtained. The expansion function is a function of two arguments, and is invoked by calling the *macroexpand hook* with the expansion function as its 
+The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> names a *symbol macro* if there is a <ClLinks  term={"binding"}><i>binding</i></ClLinks> of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> as a *symbol macro* in the current *lexical environment* (see <ClLinks  term={"define-symbol-macro"}><b>define-symbol-macro</b></ClLinks> and <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>). If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is a *symbol macro*, its expansion function is obtained. The expansion function is a function of two arguments, and is invoked by calling the *macroexpand hook* with the expansion function as its 
 
 
 
-first argument, the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> as its second argument, and an *environment object* (corresponding to the current *lexical environment*) as its third argument. The *macroexpand hook*, in turn, calls the expansion function with the <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> as its first argument and the <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm> as its second argument. The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of the expansion function, which is passed through by the *macroexpand hook*, is a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. This resulting <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is processed in place of the original <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+first argument, the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> as its second argument, and an *environment object* (corresponding to the current *lexical environment*) as its third argument. The *macroexpand hook*, in turn, calls the expansion function with the <ClLinks  term={"form"}><i>form</i></ClLinks> as its first argument and the <ClLinks  term={"environment"}><i>environment</i></ClLinks> as its second argument. The <ClLinks  term={"value"}><i>value</i></ClLinks> of the expansion function, which is passed through by the *macroexpand hook*, is a <ClLinks  term={"form"}><i>form</i></ClLinks>. This resulting <ClLinks  term={"form"}><i>form</i></ClLinks> is processed in place of the original <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-If a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> that is not a *symbol macro*, then it is the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> of a <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>, and the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of that <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm> is returned. There are three kinds of variables: *lexical variables*, *dynamic variables*,  
+If a <ClLinks  term={"form"}><i>form</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is not a *symbol macro*, then it is the <ClLinks  term={"name"}><i>name</i></ClLinks> of a <ClLinks  term={"variable"}><i>variable</i></ClLinks>, and the <ClLinks  term={"value"}><i>value</i></ClLinks> of that <ClLinks  term={"variable"}><i>variable</i></ClLinks> is returned. There are three kinds of variables: *lexical variables*, *dynamic variables*,  
 
 
 
@@ -22,15 +22,15 @@ If a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is a <
 
 
 
-and *constant variables*. A <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm> can store one <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. The main operations on a <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm> are to <GlossaryTerm styled={true} term={"read"}><i>read</i></GlossaryTerm> <sub>1</sub> and to <GlossaryTerm styled={true} term={"write"}><i>write</i></GlossaryTerm><sub>1</sub> its <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm>. 
+and *constant variables*. A <ClLinks  term={"variable"}><i>variable</i></ClLinks> can store one <ClLinks  term={"object"}><i>object</i></ClLinks>. The main operations on a <ClLinks  term={"variable"}><i>variable</i></ClLinks> are to <ClLinks  term={"read"}><i>read</i></ClLinks> <sub>1</sub> and to <ClLinks  term={"write"}><i>write</i></ClLinks><sub>1</sub> its <ClLinks  term={"value"}><i>value</i></ClLinks>. 
 
 
 
-An error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"unbound-variable"}><b>unbound-variable</b></DictionaryLink> should be signaled if an *unbound variable* is referenced. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"unbound-variable"}><b>unbound-variable</b></ClLinks> should be signaled if an *unbound variable* is referenced. 
 
 
 
-*Non-constant variables* can be *assigned* by using <DictionaryLink styled={true} term={"setq"}><b>setq</b></DictionaryLink> or <GlossaryTerm styled={true} term={"bound"}><i>bound</i></GlossaryTerm> <sub>3</sub> by using <DictionaryLink styled={true} term={"let"}><b>let</b></DictionaryLink>. Figure 3–1 lists some *defined names* that are applicable to assigning, binding, and defining <GlossaryTerm styled={true} term={"variable"}><i>variables</i></GlossaryTerm>. 
+*Non-constant variables* can be *assigned* by using <ClLinks  term={"setq"}><b>setq</b></ClLinks> or <ClLinks  term={"bound"}><i>bound</i></ClLinks> <sub>3</sub> by using <ClLinks  term={"let"}><b>let</b></ClLinks>. Figure 3–1 lists some *defined names* that are applicable to assigning, binding, and defining <ClLinks  term={"variable"}><i>variables</i></ClLinks>. 
 
 
 

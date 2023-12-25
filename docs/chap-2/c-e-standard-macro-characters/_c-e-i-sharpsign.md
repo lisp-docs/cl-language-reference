@@ -2,11 +2,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"sharpsign"}><i>Sharpsign</i></GlossaryTerm> is a *non-terminating dispatching macro character* . It reads an optional sequence of digits and then one more character, and uses that character to select a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> to run as a *reader macro function*. 
+<ClLinks  term={"sharpsign"}><i>Sharpsign</i></ClLinks> is a *non-terminating dispatching macro character* . It reads an optional sequence of digits and then one more character, and uses that character to select a <ClLinks  term={"function"}><i>function</i></ClLinks> to run as a *reader macro function*. 
 
 
 
-The *standard syntax* includes constructs introduced by the # character. The syntax of these constructs is as follows: a character that identifies the type of construct is followed by arguments in some form. If the character is a letter, its <GlossaryTerm styled={true} term={"case"}><i>case</i></GlossaryTerm> is not important; #O and #o are considered to be equivalent, for example. 
+The *standard syntax* includes constructs introduced by the # character. The syntax of these constructs is as follows: a character that identifies the type of construct is followed by arguments in some form. If the character is a letter, its <ClLinks  term={"case"}><i>case</i></ClLinks> is not important; #O and #o are considered to be equivalent, for example. 
 
 
 
@@ -40,7 +40,7 @@ The combinations marked by an asterisk (\*) are explicitly reserved to the user.
 
 
 
-Note also that <GlossaryTerm styled={true} term={"digit"}><i>digits</i></GlossaryTerm> do not appear in the preceding table. This is because the notations #0, #1, ..., #9 are reserved for another purpose which occupies the same syntactic space. When a <GlossaryTerm styled={true} term={"digit"}><i>digit</i></GlossaryTerm> follows a <GlossaryTerm styled={true} term={"sharpsign"}><i>sharpsign</i></GlossaryTerm>, it is not treated as a dispatch character. Instead, an unsigned integer argument is  
+Note also that <ClLinks  term={"digit"}><i>digits</i></ClLinks> do not appear in the preceding table. This is because the notations #0, #1, ..., #9 are reserved for another purpose which occupies the same syntactic space. When a <ClLinks  term={"digit"}><i>digit</i></ClLinks> follows a <ClLinks  term={"sharpsign"}><i>sharpsign</i></ClLinks>, it is not treated as a dispatch character. Instead, an unsigned integer argument is  
 
 
 
@@ -48,7 +48,7 @@ Note also that <GlossaryTerm styled={true} term={"digit"}><i>digits</i></Glossar
 
 
 
-accumulated and passed as an <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm> to the *reader macro* for the <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> that follows the digits. For example, #2A((1 2) (3 4)) is a use of #A with an argument of 2. 
+accumulated and passed as an <ClLinks  term={"argument"}><i>argument</i></ClLinks> to the *reader macro* for the <ClLinks  term={"character"}><i>character</i></ClLinks> that follows the digits. For example, #2A((1 2) (3 4)) is a use of #A with an argument of 2. 
 
 
 

@@ -1,4 +1,4 @@
-**/, //, ///** <GlossaryTerm styled={true} term={"variable"}><i>Variable</i></GlossaryTerm> 
+**/, //, ///** <ClLinks styled={true} term={"variable"}><i>Variable</i></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@ a *proper list*.
 
 
 
-<GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
+<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -22,15 +22,15 @@ a *proper list*.
 
 
 
-The <GlossaryTerm styled={true} term={"variable"}><i>variables</i></GlossaryTerm> <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink>, <DictionaryLink styled={true} term={"//"}><b>//</b></DictionaryLink>, and <DictionaryLink styled={true} term={"///"}><b>///</b></DictionaryLink> are maintained by the *Lisp read-eval-print loop* to save the values of results that were printed at the end of the loop. 
+The <ClLinks styled={true} term={"variable"}><i>variables</i></ClLinks> <ClLinks styled={true} term={"/"}><b>/</b></ClLinks>, <ClLinks styled={true} term={"//"}><b>//</b></ClLinks>, and <ClLinks styled={true} term={"///"}><b>///</b></ClLinks> are maintained by the *Lisp read-eval-print loop* to save the values of results that were printed at the end of the loop. 
 
 
 
-The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink> is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of the most recent <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> that were printed, the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"//"}><b>//</b></DictionaryLink> is the previous value of <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink>, and the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"///"}><b>///</b></DictionaryLink> is the previous value of <DictionaryLink styled={true} term={"//"}><b>//</b></DictionaryLink>. 
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"/"}><b>/</b></ClLinks> is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the most recent <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> that were printed, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"//"}><b>//</b></ClLinks> is the previous value of <ClLinks styled={true} term={"/"}><b>/</b></ClLinks>, and the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"///"}><b>///</b></ClLinks> is the previous value of <ClLinks styled={true} term={"//"}><b>//</b></ClLinks>. 
 
 
 
-The <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink>, <DictionaryLink styled={true} term={"//"}><b>//</b></DictionaryLink>, and <DictionaryLink styled={true} term={"///"}><b>///</b></DictionaryLink> are updated immediately prior to printing the *return value* of a top-level <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> by the *Lisp read-eval-print loop*. If the <GlossaryTerm styled={true} term={"evaluation"}><i>evaluation</i></GlossaryTerm> of such a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is aborted prior to its normal return, the values of <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink>, <DictionaryLink styled={true} term={"//"}><b>//</b></DictionaryLink>, and <DictionaryLink styled={true} term={"///"}><b>///</b></DictionaryLink> are not updated. 
+The <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of <ClLinks styled={true} term={"/"}><b>/</b></ClLinks>, <ClLinks styled={true} term={"//"}><b>//</b></ClLinks>, and <ClLinks styled={true} term={"///"}><b>///</b></ClLinks> are updated immediately prior to printing the *return value* of a top-level <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> by the *Lisp read-eval-print loop*. If the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of such a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is aborted prior to its normal return, the values of <ClLinks styled={true} term={"/"}><b>/</b></ClLinks>, <ClLinks styled={true} term={"//"}><b>//</b></ClLinks>, and <ClLinks styled={true} term={"///"}><b>///</b></ClLinks> are not updated. 
 
 
 
@@ -39,7 +39,6 @@ The <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of <
  
 (floor 22 7) → 3, 1 
 (+ (\* (car /) 7) (cadr /)) → 22 
-
 ```
 **Affected By:** 
 
@@ -53,7 +52,7 @@ The <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of <
 
 
 
-<DictionaryLink styled={true} term={"-"}><b>-</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), <DictionaryLink styled={true} term={"+"}><b>+</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), **\*** (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), Section 25.1.1 (Top level loop) 
+<ClLinks styled={true} term={"-"}><b>-</b></ClLinks> (<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>), <ClLinks styled={true} term={"+"}><b>+</b></ClLinks> (<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>), **\*** (<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>), Section 25.1.1 (Top level loop) 
 
 
 
@@ -77,11 +76,11 @@ The <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of <
 
 
 
-**lisp-implementation-type** *hno argumentsi → description* 
+**lisp-implementation-type** *⟨no arguments⟩ → description* 
 
 
 
-**lisp-implementation-version** *hno argumentsi → description* 
+**lisp-implementation-version** *⟨no arguments⟩ → description* 
 
 
 
@@ -89,7 +88,7 @@ The <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of <
 
 
 
-*description*—a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+*description*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -101,15 +100,17 @@ The <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of <
 
 
 
-**lisp-implementation-type** returns a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> that identifies the generic name of the particular Common Lisp implementation. 
+**lisp-implementation-type** returns a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that identifies the generic name of the particular Common Lisp implementation. 
 
 
 
-**lisp-implementation-version** returns a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> that identifies the version of the particular Common Lisp implementation. 
+**lisp-implementation-version** returns a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that identifies the version of the particular Common Lisp implementation. 
 
 
 
-If no appropriate and relevant result can be produced, <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is returned instead of a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>. **Examples:**
+If no appropriate and relevant result can be produced, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is returned instead of a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
+
+**Examples:**
 ```lisp
  
 (lisp-implementation-type) 
@@ -120,17 +121,16 @@ If no appropriate and relevant result can be produced, <DictionaryLink styled={t
 → "V2" 
 <i><sup>or</sup>→</i> "Release 17.3, ECO #6" 
 **short-site-name, long-site-name** *Function* 
-
 ```
 **Syntax:** 
 
 
 
-**short-site-name** *hno argumentsi → description* 
+**short-site-name** *⟨no arguments⟩ → description* 
 
 
 
-**long-site-name** *hno argumentsi → description* 
+**long-site-name** *⟨no arguments⟩ → description* 
 
 
 
@@ -150,7 +150,7 @@ If no appropriate and relevant result can be produced, <DictionaryLink styled={t
 
 
 
-*description*—a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+*description*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -158,20 +158,18 @@ If no appropriate and relevant result can be produced, <DictionaryLink styled={t
 
 
 
-**short-site-name** and **long-site-name** return a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> that identifies the physical location of the computer hardware, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if no appropriate *description* can be produced. 
+**short-site-name** and **long-site-name** return a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that identifies the physical location of the computer hardware, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if no appropriate *description* can be produced. 
 
 
 
 **Examples:**
 ```lisp
-
 (short-site-name) 
 → "MIT AI Lab" 
 <i><sup>or</sup>→</i> "CMU-CSD" 
 (long-site-name) 
 → "MIT Artificial Intelligence Laboratory" 
 <i><sup>or</sup>→</i> "CMU Computer Science Department" 
-
 ```
 **Affected By:** 
 

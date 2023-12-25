@@ -1,4 +1,4 @@
-**synonym-stream-symbol** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**synonym-stream-symbol** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"synonym-stream-symbol"}><b>synonym-stream-symbol</b></DictionaryLink> *synonym-stream → symbol* 
+<ClLinks  term={"synonym-stream-symbol"}><b>synonym-stream-symbol</b></ClLinks> *synonym-stream → symbol* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Returns the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> whose <DictionaryLink styled={true} term={"symbol-value"}><b>symbol-value</b></DictionaryLink> the *synonym-stream* is using. 
+Returns the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose <ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> the *synonym-stream* is using. 
 
 
 
@@ -46,7 +46,7 @@ Returns the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryT
 
 
 
-<DictionaryLink styled={true} term={"make-synonym-stream"}><b>make-synonym-stream</b></DictionaryLink> 
+<ClLinks  term={"make-synonym-stream"}><b>make-synonym-stream</b></ClLinks> 
 
 
 

@@ -2,11 +2,11 @@
 
 
 
-All <GlossaryTerm styled={true} term={"implementation"}><i>implementations</i></GlossaryTerm> must support a *character repertoire* called <DictionaryLink styled={true} term={"standard-char"}><b>standard-char</b></DictionaryLink>; <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> that are members of that <GlossaryTerm styled={true} term={"repertoire"}><i>repertoire</i></GlossaryTerm> are called *standard characters*. 
+All <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> must support a *character repertoire* called <ClLinks  term={"standard-char"}><b>standard-char</b></ClLinks>; <ClLinks  term={"character"}><i>characters</i></ClLinks> that are members of that <ClLinks  term={"repertoire"}><i>repertoire</i></ClLinks> are called *standard characters*. 
 
 
 
-The <DictionaryLink styled={true} term={"standard-char"}><b>standard-char</b></DictionaryLink> <GlossaryTerm styled={true} term={"repertoire"}><i>repertoire</i></GlossaryTerm> consists of the *non-graphic character newline*, the *graphic character space*, and the following additional ninety-four *graphic characters* or their equivalents:  
+The <ClLinks  term={"standard-char"}><b>standard-char</b></ClLinks> <ClLinks  term={"repertoire"}><i>repertoire</i></ClLinks> consists of the *non-graphic character newline*, the *graphic character space*, and the following additional ninety-four *graphic characters* or their equivalents:  
 
 
 

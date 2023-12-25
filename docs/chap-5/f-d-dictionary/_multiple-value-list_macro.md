@@ -1,4 +1,4 @@
-**multiple-value-list** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
+**multiple-value-list** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"multiple-value-list"}><b>multiple-value-list</b></DictionaryLink> *form ! list* 
+<ClLinks  term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks> *form ! list* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>; evaluated as described below. 
+<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
 
 
 
-<GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
+<ClLinks  term={"list"}><i>list</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -38,17 +38,17 @@ Data and Control
 
 
 
-<DictionaryLink styled={true} term={"multiple-value-list"}><b>multiple-value-list</b></DictionaryLink> evaluates <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> and creates a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of the *multiple values*<sub>2</sub> it returns. **Examples:**
+<ClLinks  term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks> evaluates <ClLinks  term={"form"}><i>form</i></ClLinks> and creates a <ClLinks  term={"list"}><i>list</i></ClLinks> of the *multiple values*<sub>2</sub> it returns. 
+
+**Examples:**
 ```lisp
-
 (multiple-value-list (floor -3 4)) *!* (-1 1) 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"values-list"}><b>values-list</b></DictionaryLink>, <DictionaryLink styled={true} term={"multiple-value-call"}><b>multiple-value-call</b></DictionaryLink> 
+<ClLinks  term={"values-list"}><b>values-list</b></ClLinks>, <ClLinks  term={"multiple-value-call"}><b>multiple-value-call</b></ClLinks> 
 
 
 
@@ -56,7 +56,7 @@ Data and Control
 
 
 
-<DictionaryLink styled={true} term={"multiple-value-list"}><b>multiple-value-list</b></DictionaryLink> and <DictionaryLink styled={true} term={"values-list"}><b>values-list</b></DictionaryLink> are inverses of each other. 
+<ClLinks  term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks> and <ClLinks  term={"values-list"}><b>values-list</b></ClLinks> are inverses of each other. 
 
 
 

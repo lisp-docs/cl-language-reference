@@ -1,5 +1,4 @@
 ```lisp
-
 (defun test-readtable-case-reading () 
   (let ((\*readtable\* (copy-readtable nil))) 
     (format t "READTABLE-CASE Input Symbol-name~ 
@@ -12,8 +11,6 @@
 		(string-upcase readtable-case) 
 		input 
 		(symbol-name (read-from-string input))))))) 
-
-
 
 The output from (test-readtable-case-reading) should be as follows: 
 READTABLE-CASE Input Symbol-name 
@@ -30,5 +27,4 @@ READTABLE-CASE Input Symbol-name
 :INVERT ZEBRA zebra 
 :INVERT Zebra Zebra 
 :INVERT zebra ZEBRA 
-
 ```

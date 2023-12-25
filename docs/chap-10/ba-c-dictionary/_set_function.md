@@ -1,4 +1,4 @@
-**set** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**set** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"set"}><b>set</b></DictionaryLink> *symbol value → value* 
+<ClLinks  term={"set"}><b>set</b></ClLinks> *symbol value → value* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+<ClLinks  term={"value"}><i>value</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,17 +26,16 @@
 
 
 
-<DictionaryLink styled={true} term={"set"}><b>set</b></DictionaryLink> changes the contents of the *value cell* of <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> to the given <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm>. 
+<ClLinks  term={"set"}><b>set</b></ClLinks> changes the contents of the *value cell* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to the given <ClLinks  term={"value"}><i>value</i></ClLinks>. 
 
 
 
-(set *symbol value*) *≡* (setf (symbol-value <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>) <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm>) 
+(set *symbol value*) *≡* (setf (symbol-value <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) <ClLinks  term={"value"}><i>value</i></ClLinks>) 
 
 
 
 **Examples:**
 ```lisp
-
 (setf (symbol-value ’n) 1) → 1 
 (set ’n 2) → 2 
 (symbol-value ’n) → 2 
@@ -61,8 +60,6 @@ n → 44
   \*n\*) → 80 
 \*n\* → 2 
 
-
-
 (defvar \*even-count\* 0) → \*EVEN-COUNT\* 
 (defvar \*odd-count\* 0) → \*ODD-COUNT\* 
 (defun tally-list (list) 
@@ -72,13 +69,12 @@ n → 44
 (tally-list ’(1 9 4 3 2 7)) → NIL 
 \*even-count\* → 6 
 \*odd-count\* → 20 
-
 ```
 **Side Effects:** 
 
 
 
-The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is changed. 
+The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is changed. 
 
 
 
@@ -86,7 +82,7 @@ The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <G
 
 
 
-<DictionaryLink styled={true} term={"setq"}><b>setq</b></DictionaryLink>, <DictionaryLink styled={true} term={"progv"}><b>progv</b></DictionaryLink>, <DictionaryLink styled={true} term={"symbol-value"}><b>symbol-value</b></DictionaryLink> 
+<ClLinks  term={"setq"}><b>setq</b></ClLinks>, <ClLinks  term={"progv"}><b>progv</b></ClLinks>, <ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> 
 
 
 
@@ -94,11 +90,11 @@ The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <G
 
 
 
-The function <DictionaryLink styled={true} term={"set"}><b>set</b></DictionaryLink> is deprecated. 
+The function <ClLinks  term={"set"}><b>set</b></ClLinks> is deprecated. 
 
 
 
-<DictionaryLink styled={true} term={"set"}><b>set</b></DictionaryLink> cannot change the value of a *lexical variable*. 
+<ClLinks  term={"set"}><b>set</b></ClLinks> cannot change the value of a *lexical variable*. 
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-A *define-modify-macro lambda list* is used by <DictionaryLink styled={true} term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink>. 
+A *define-modify-macro lambda list* is used by <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ A *define-modify-macro lambda list* can contain the *lambda list keywords* shown
 
 
 
-*Define-modify-macro lambda lists* are similar to *ordinary lambda lists*, but do not support keyword arguments. <DictionaryLink styled={true} term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink> has no need match keyword arguments, and a *rest parameter* is sufficient. *Aux variables* are also not supported, since <DictionaryLink styled={true} term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink> has no body <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> which could refer to such <GlossaryTerm styled={true} term={"binding"}><i>bindings</i></GlossaryTerm>. See the <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> <DictionaryLink styled={true} term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink>. 
+*Define-modify-macro lambda lists* are similar to *ordinary lambda lists*, but do not support keyword arguments. <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks> has no need match keyword arguments, and a *rest parameter* is sufficient. *Aux variables* are also not supported, since <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks> has no body <ClLinks  term={"form"}><i>forms</i></ClLinks> which could refer to such <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. See the <ClLinks  term={"macro"}><i>macro</i></ClLinks> <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks>. 
 
 
 

@@ -1,4 +1,4 @@
-**in-package** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
+**in-package** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"in-package"}><b>in-package</b></DictionaryLink> *name → package* 
+<ClLinks  term={"in-package"}><b>in-package</b></ClLinks> *name → package* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a *string designator* ; not evaluated. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a *string designator* ; not evaluated. 
 
 
 
-<GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>—the <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> named by <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—the <ClLinks  term={"package"}><i>package</i></ClLinks> named by <ClLinks  term={"name"}><i>name</i></ClLinks>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Causes the the <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> named by <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> to become the *current package*—that is, the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"package"}><b>\*package\*</b></DictionaryLink>. If no such <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> already exists, an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"package-error"}><b>package-error</b></DictionaryLink> is signaled. 
+Causes the the <ClLinks  term={"package"}><i>package</i></ClLinks> named by <ClLinks  term={"name"}><i>name</i></ClLinks> to become the *current package*—that is, the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"package"}><b>\*package\*</b></ClLinks>. If no such <ClLinks  term={"package"}><i>package</i></ClLinks> already exists, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> is signaled. 
 
 
 
-Everything <DictionaryLink styled={true} term={"in-package"}><b>in-package</b></DictionaryLink> does is also performed at compile time if the call appears as a *top level form*. 
+Everything <ClLinks  term={"in-package"}><b>in-package</b></ClLinks> does is also performed at compile time if the call appears as a *top level form*. 
 
 
 
@@ -38,7 +38,7 @@ Everything <DictionaryLink styled={true} term={"in-package"}><b>in-package</b></
 
 
 
-The <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm> <DictionaryLink styled={true} term={"package"}><b>\*package\*</b></DictionaryLink> is assigned. If the <DictionaryLink styled={true} term={"in-package"}><b>in-package</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is a *top level form*, this assignment also occurs at compile time. 
+The <ClLinks  term={"variable"}><i>variable</i></ClLinks> <ClLinks  term={"package"}><b>\*package\*</b></ClLinks> is assigned. If the <ClLinks  term={"in-package"}><b>in-package</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is a *top level form*, this assignment also occurs at compile time. 
 
 
 
@@ -46,7 +46,7 @@ The <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>
 
 
 
-An error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"package-error"}><b>package-error</b></DictionaryLink> is signaled if the specified <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> does not exist. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> is signaled if the specified <ClLinks  term={"package"}><i>package</i></ClLinks> does not exist. 
 
 
 
@@ -54,7 +54,7 @@ An error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>
 
 
 
-<DictionaryLink styled={true} term={"package"}><b>\*package\*</b></DictionaryLink> 
+<ClLinks  term={"package"}><b>\*package\*</b></ClLinks> 
 
 
 

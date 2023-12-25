@@ -1,5 +1,4 @@
 ```lisp
-
 Here is an example illustrating the *scope* of *bound declarations*. 
 (let ((x 1)) ;[1] 1st occurrence of x 
   (declare (special x)) ;[2] 2nd occurrence of x 
@@ -27,12 +26,10 @@ or, alternatively:
 Finally, here is an example that shows the *scope* of *declarations* in an *iteration form*. 
 (let ((x 1)) ;[1] 
   (declare (special x)) ;[2]  
-
   (let ((x 2)) ;[3] 
     (dotimes (i x x) ;[4] 
       (declare (special x))))) ;[5] 
 → 1 
 In this example, the first reference to x on the fourth line is to the *lexical binding* of x established on the third line. However, the second occurrence of x on the fourth line lies within the *scope* of the *free declaration* on the fifth line (because this is the *result-form* of the **dotimes**) and therefore refers to the *dynamic binding* of x.  
-
 
 ```

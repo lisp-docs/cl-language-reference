@@ -2,7 +2,7 @@
 
 
 
-A <DictionaryLink styled={true} term={"the"}><b>the</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> can be used as a <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>, in which case the declaration is transferred to the *newvalue* form, and the resulting <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> is analyzed. For example, 
+A <ClLinks  term={"the"}><b>the</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> can be used as a <ClLinks  term={"place"}><i>place</i></ClLinks>, in which case the declaration is transferred to the *newvalue* form, and the resulting <ClLinks  term={"setf"}><b>setf</b></ClLinks> is analyzed. For example, 
 
 
 

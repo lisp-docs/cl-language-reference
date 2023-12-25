@@ -1,4 +1,4 @@
-*∗<DictionaryLink styled={true} term={"print-pretty"}><b>*print-pretty*</b></DictionaryLink>∗ Variable* 
+*∗<ClLinks styled={true} term={"print-pretty"}><b>*print-pretty*</b></ClLinks>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a *generalized boolean*.
 
 
 
-<GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
+<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -26,15 +26,15 @@ Controls whether the *Lisp printer* calls the *pretty printer* .
 
 
 
-If it is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>, the *pretty printer* is not used and a minimum of <GlossaryTerm styled={true} term={"whitespace"}><i>whitespace</i></GlossaryTerm><sub>1</sub> is output when printing an expression. 
+If it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, the *pretty printer* is not used and a minimum of <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> is output when printing an expression. 
 
 
 
-If it is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, the *pretty printer* is used, and the *Lisp printer* will endeavor to insert extra <GlossaryTerm styled={true} term={"whitespace"}><i>whitespace</i></GlossaryTerm><sub>1</sub> where appropriate to make <GlossaryTerm styled={true} term={"expression"}><i>expressions</i></GlossaryTerm> more readable. 
+If it is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the *pretty printer* is used, and the *Lisp printer* will endeavor to insert extra <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> where appropriate to make <ClLinks styled={true} term={"expression"}><i>expressions</i></ClLinks> more readable. 
 
 
 
-<DictionaryLink styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></DictionaryLink> has an effect even when the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+<ClLinks styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks> has an effect even when the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -52,7 +52,6 @@ If it is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, t
 
 **Examples:**
 ```lisp
-
 (setq \*print-pretty\* ’nil) → NIL 
 (progn (write ’(let ((a 1) (b 2) (c 3)) (+ a b c))) nil) 
 ▷ (LET ((A 1) (B 2) (C 3)) (+ A B C)) 
@@ -82,13 +81,12 @@ If it is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, t
 ▷ #’(LAMBDA () 
       ▷ (LIST a b ’C #’D)) 
 → NIL 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"write"}><b>write</b></DictionaryLink> 
+<ClLinks styled={true} term={"write"}><b>write</b></ClLinks> 
 
 
 

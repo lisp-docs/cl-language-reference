@@ -1,4 +1,4 @@
-**getf** <GlossaryTerm styled={true} term={"accessor"}><i>Accessor</i></GlossaryTerm> 
+**getf** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,11 +6,12 @@
 
 
 
-<DictionaryLink styled={true} term={"getf"}><b>getf</b></DictionaryLink> *plist indicator* &amp;optional *default → value* 
+<ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> *plist indicator* &amp;optional *default → value* 
 
 
 
-**(setf (getf** *place indicator* &amp;optional *default<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> *new-value***)** 
+<!-- **(setf (getf** *place indicator* &amp;optional *default<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> *new-value***)**  -->
+**(setf (getf** *place indicator* &amp;optional *default***)** *new-value***)** 
 
 
 
@@ -18,19 +19,15 @@
 
 
 
-<GlossaryTerm styled={true} term={"plist"}><i>plist</i></GlossaryTerm>—a *property list*. 
+<ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks>—a *property list*. 
 
 
 
-<GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of which is a *property list*. 
-
-
+<ClLinks styled={true} term={"place"}><i>place</i></ClLinks>—a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of which is a *property list*. 
 
 
 
 
-
- 
 
 
 
@@ -38,23 +35,27 @@
 
 
 
-<DictionaryLink styled={true} term={"getf"}><b>getf</b></DictionaryLink> 
+ 
 
 
 
-<GlossaryTerm styled={true} term={"indicator"}><i>indicator</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+<ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> 
 
 
 
-*default*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. The default is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+<ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+*default*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*new-value*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+<ClLinks styled={true} term={"value"}><i>value</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+
+
+
+*new-value*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -62,21 +63,20 @@
 
 
 
-<DictionaryLink styled={true} term={"getf"}><b>getf</b></DictionaryLink> finds a <GlossaryTerm styled={true} term={"property"}><i>property</i></GlossaryTerm> on the <GlossaryTerm styled={true} term={"plist"}><i>plist</i></GlossaryTerm> whose *property indicator* is <GlossaryTerm styled={true} term={"identical"}><i>identical</i></GlossaryTerm> to <GlossaryTerm styled={true} term={"indicator"}><i>indicator</i></GlossaryTerm>, and returns its corresponding *property value*. If there are multiple *properties*<sub>1</sub> with that *property indicator* , <DictionaryLink styled={true} term={"getf"}><b>getf</b></DictionaryLink> uses the first such <GlossaryTerm styled={true} term={"property"}><i>property</i></GlossaryTerm>. If there is no <GlossaryTerm styled={true} term={"property"}><i>property</i></GlossaryTerm> with that *property indicator* , *default* is returned. 
+<ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> finds a <ClLinks styled={true} term={"property"}><i>property</i></ClLinks> on the <ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks> whose *property indicator* is <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> to <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks>, and returns its corresponding *property value*. If there are multiple *properties*<sub>1</sub> with that *property indicator* , <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> uses the first such <ClLinks styled={true} term={"property"}><i>property</i></ClLinks>. If there is no <ClLinks styled={true} term={"property"}><i>property</i></ClLinks> with that *property indicator* , *default* is returned. 
 
 
 
-<DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink styled={true} term={"getf"}><b>getf</b></DictionaryLink> may be used to associate a new <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> with an existing indicator in the *property list* held by <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>, or to create a new assocation if none exists. If there are multiple *properties*<sub>1</sub> with that *property indicator* , <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink styled={true} term={"getf"}><b>getf</b></DictionaryLink> associates the *new-value* with the first such <GlossaryTerm styled={true} term={"property"}><i>property</i></GlossaryTerm>. When a <DictionaryLink styled={true} term={"getf"}><b>getf</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is used as a <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> is ignored. 
+<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> may be used to associate a new <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> with an existing indicator in the *property list* held by <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, or to create a new assocation if none exists. If there are multiple *properties*<sub>1</sub> with that *property indicator* , <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> associates the *new-value* with the first such <ClLinks styled={true} term={"property"}><i>property</i></ClLinks>. When a <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is used as a <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is ignored. 
 
 
 
-<DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink styled={true} term={"getf"}><b>getf</b></DictionaryLink> is permitted to either <GlossaryTerm styled={true} term={"write"}><i>write</i></GlossaryTerm> the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> itself, or modify of any part, <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"cdr"}><i>cdr</i></GlossaryTerm> , of the *list structure* held by <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>. 
+<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> is permitted to either <ClLinks styled={true} term={"write"}><i>write</i></ClLinks> the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> itself, or modify of any part, <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> or <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> , of the *list structure* held by <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (setq x ’()) → NIL 
 (getf x ’prop1) → NIL 
 (getf x ’prop1 7) → 7 
@@ -99,14 +99,12 @@ bar
 <i><sup>or</sup>→</i> (C D) 
 
 
-
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"get"}><b>get</b></DictionaryLink>, <DictionaryLink styled={true} term={"get-properties"}><b>get-properties</b></DictionaryLink>, <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink>, Section 5.1.2.2 (Function Call Forms as Places) 
+<ClLinks styled={true} term={"get"}><b>get</b></ClLinks>, <ClLinks styled={true} term={"get-properties"}><b>get-properties</b></ClLinks>, <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>, Section 5.1.2.2 (Function Call Forms as Places) 
 
 
 
@@ -114,11 +112,11 @@ bar
 
 
 
-There is no way (using <DictionaryLink styled={true} term={"getf"}><b>getf</b></DictionaryLink>) to distinguish an absent property from one whose value is *default*; but see <DictionaryLink styled={true} term={"get-properties"}><b>get-properties</b></DictionaryLink>. 
+There is no way (using <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks>) to distinguish an absent property from one whose value is *default*; but see <ClLinks styled={true} term={"get-properties"}><b>get-properties</b></ClLinks>. 
 
 
 
-Note that while supplying a *default* argument to <DictionaryLink styled={true} term={"getf"}><b>getf</b></DictionaryLink> in a <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> situation is sometimes not very interesting, it is still important because some macros, such as <DictionaryLink styled={true} term={"push"}><b>push</b></DictionaryLink> and <DictionaryLink styled={true} term={"incf"}><b>incf</b></DictionaryLink>, require a <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> argument which data is both <GlossaryTerm styled={true} term={"read"}><i>read</i></GlossaryTerm> from and *written* to. In such a context, if a *default* argument is to be supplied for the <GlossaryTerm styled={true} term={"read"}><i>read</i></GlossaryTerm> situation, it must be syntactically valid for the <GlossaryTerm styled={true} term={"write"}><i>write</i></GlossaryTerm> situation as well. For example, 
+Note that while supplying a *default* argument to <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> in a <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> situation is sometimes not very interesting, it is still important because some macros, such as <ClLinks styled={true} term={"push"}><b>push</b></ClLinks> and <ClLinks styled={true} term={"incf"}><b>incf</b></ClLinks>, require a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> argument which data is both <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> from and *written* to. In such a context, if a *default* argument is to be supplied for the <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> situation, it must be syntactically valid for the <ClLinks styled={true} term={"write"}><i>write</i></ClLinks> situation as well. For example, 
 
 
 

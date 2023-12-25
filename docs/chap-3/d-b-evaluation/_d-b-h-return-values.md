@@ -2,15 +2,15 @@
 
 
 
-Ordinarily the result of calling a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> is a single <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. Sometimes, however, it is convenient for a function to compute several <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> and return them. 
+Ordinarily the result of calling a <ClLinks  term={"function"}><i>function</i></ClLinks> is a single <ClLinks  term={"object"}><i>object</i></ClLinks>. Sometimes, however, it is convenient for a function to compute several <ClLinks  term={"object"}><i>objects</i></ClLinks> and return them. 
 
 
 
-In order to receive other than exactly one value from a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>, one of several *special forms* or <GlossaryTerm styled={true} term={"macro"}><i>macros</i></GlossaryTerm> must be used to request those values. If a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> produces *multiple values* which were not requested in this way, then the first value is given to the caller and all others are discarded; if the <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> produces zero values, then the caller receives <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> as a value. 
+In order to receive other than exactly one value from a <ClLinks  term={"form"}><i>form</i></ClLinks>, one of several *special forms* or <ClLinks  term={"macro"}><i>macros</i></ClLinks> must be used to request those values. If a <ClLinks  term={"form"}><i>form</i></ClLinks> produces *multiple values* which were not requested in this way, then the first value is given to the caller and all others are discarded; if the <ClLinks  term={"form"}><i>form</i></ClLinks> produces zero values, then the caller receives <ClLinks  term={"nil"}><b>nil</b></ClLinks> as a value. 
 
 
 
-Figure 3–5 lists some <GlossaryTerm styled={true} term={"operator"}><i>operators</i></GlossaryTerm> for receiving *multiple values*<sub>2</sub>. These <GlossaryTerm styled={true} term={"operator"}><i>operators</i></GlossaryTerm> can be used to specify one or more <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> to <GlossaryTerm styled={true} term={"evaluate"}><i>evaluate</i></GlossaryTerm> and where to put the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by those <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. 
+Figure 3–5 lists some <ClLinks  term={"operator"}><i>operators</i></ClLinks> for receiving *multiple values*<sub>2</sub>. These <ClLinks  term={"operator"}><i>operators</i></ClLinks> can be used to specify one or more <ClLinks  term={"form"}><i>forms</i></ClLinks> to <ClLinks  term={"evaluate"}><i>evaluate</i></ClLinks> and where to put the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by those <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -26,11 +26,11 @@ Figure 3–5 lists some <GlossaryTerm styled={true} term={"operator"}><i>operato
 
 
 
-The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"values"}><b>values</b></DictionaryLink> can produce *multiple values*<sub>2</sub>. (values) returns zero values; (values <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>) returns the *primary value* returned by <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>; (values *form1 form2*) returns two values, the *primary value* of *form1* and the *primary value* of *form2*; and so on. 
+The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"values"}><b>values</b></ClLinks> can produce *multiple values*<sub>2</sub>. (values) returns zero values; (values <ClLinks  term={"form"}><i>form</i></ClLinks>) returns the *primary value* returned by <ClLinks  term={"form"}><i>form</i></ClLinks>; (values *form1 form2*) returns two values, the *primary value* of *form1* and the *primary value* of *form2*; and so on. 
 
 
 
-See <DictionaryLink styled={true} term={"multiple-values-limit"}><b>multiple-values-limit</b></DictionaryLink> and <DictionaryLink styled={true} term={"values-list"}><b>values-list</b></DictionaryLink>.  
+See <ClLinks  term={"multiple-values-limit"}><b>multiple-values-limit</b></ClLinks> and <ClLinks  term={"values-list"}><b>values-list</b></ClLinks>.  
 
 
 

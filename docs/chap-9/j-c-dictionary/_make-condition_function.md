@@ -1,4 +1,4 @@
-**make-condition** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**make-condition** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"make-condition"}><b>make-condition</b></DictionaryLink> <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> &amp;rest *slot-initializations → condition* 
+<ClLinks styled={true} term={"make-condition"}><b>make-condition</b></ClLinks> <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> &amp;rest *slot-initializations → condition* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>—a *type specifier* (for a <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> of <DictionaryLink styled={true} term={"condition"}><b>condition</b></DictionaryLink>). 
+<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>—a *type specifier* (for a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>). 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>. 
+<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
@@ -42,13 +42,12 @@
 
 
 
-Constructs and returns a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> of type <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> using *slot-initializations* for the initial values of the slots. The newly created <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is returned. 
+Constructs and returns a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of type <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> using *slot-initializations* for the initial values of the slots. The newly created <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is returned. 
 
 
 
 **Examples:**
 ```lisp
-
 (defvar \*oops-count\* 0) 
 (setq a (make-condition ’simple-error 
 			 :format-control "This is your ~:R error." 
@@ -62,7 +61,6 @@ Constructs and returns a <GlossaryTerm styled={true} term={"condition"}><i>condi
 ▷ To continue, type :CONTINUE followed by an option number: 
 ▷ 1: Return to Lisp Toplevel. 
 ▷ Debug> 
-
 ```
 **Affected By:** 
 
@@ -76,7 +74,7 @@ The set of defined *condition types*.
 
 
 
-<DictionaryLink styled={true} term={"define-condition"}><b>define-condition</b></DictionaryLink>, Section 9.1 (Condition System Concepts) 
+<ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks>, Section 9.1 (Condition System Concepts) 
 
 
 

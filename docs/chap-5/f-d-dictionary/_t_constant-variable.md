@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>. 
+<ClLinks  term={"t"}><b>t</b></ClLinks>. 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <GlossaryTerm styled={true} term={"boolean"}><i>boolean</i></GlossaryTerm> representing true, and the canonical *generalized boolean* representing true. Although any <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> other than <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is considered <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> is generally used when there is no special reason to prefer one such <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> over another. 
+The <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> representing true, and the canonical *generalized boolean* representing true. Although any <ClLinks  term={"object"}><i>object</i></ClLinks> other than <ClLinks  term={"nil"}><b>nil</b></ClLinks> is considered <ClLinks  term={"true"}><i>true</i></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> is generally used when there is no special reason to prefer one such <ClLinks  term={"object"}><i>object</i></ClLinks> over another. 
 
 
 
@@ -30,13 +30,12 @@ Data and Control
 
 
 
-The <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> is also sometimes used for other purposes as well. For example, as the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> of a <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm>, as a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> (*e.g.*, a *stream designator* ) or as a special symbol for some syntactic reason (*e.g.*, in <DictionaryLink styled={true} term={"case"}><b>case</b></DictionaryLink> and <DictionaryLink styled={true} term={"typecase"}><b>typecase</b></DictionaryLink> to label the *otherwise-clause*). 
+The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks> is also sometimes used for other purposes as well. For example, as the <ClLinks  term={"name"}><i>name</i></ClLinks> of a <ClLinks  term={"class"}><i>class</i></ClLinks>, as a <ClLinks  term={"designator"}><i>designator</i></ClLinks> (*e.g.*, a *stream designator* ) or as a special symbol for some syntactic reason (*e.g.*, in <ClLinks  term={"case"}><b>case</b></ClLinks> and <ClLinks  term={"typecase"}><b>typecase</b></ClLinks> to label the *otherwise-clause*). 
 
 
 
 **Examples:**
 ```lisp
-
 t → T 
 (eq t ’t) → true 
 (find-class ’t) → #<CLASS T 610703333> 
@@ -45,13 +44,12 @@ t → T
 (prin1 ’hello t) 
 ▷ HELLO 
 → HELLO 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
+<ClLinks  term={"nil"}><b>nil</b></ClLinks> 
 
 
 

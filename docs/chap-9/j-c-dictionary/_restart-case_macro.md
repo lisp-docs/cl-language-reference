@@ -1,4 +1,4 @@
-**restart-case** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
+**restart-case** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink> *restartable-form \{↓clause\} → \{result\}*\* 
+<ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> *restartable-form \{↓clause\} → \{result\}*\* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-[[ :interactive *interactive-expression |* :report *report-expression |* :test *test-expression* ]] <GlossaryTerm styled={true} term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\*) 
+[[ :interactive *interactive-expression |* :report *report-expression |* :test *test-expression* ]] <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\*) 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-*restartable-form*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
+*restartable-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*case-name*—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+*case-name*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -34,27 +34,27 @@
 
 
 
-*interactive-expression*—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> or a *lambda expression*. 
+*interactive-expression*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or a *lambda expression*. 
 
 
 
-*report-expression*—a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>, a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>, or a *lambda expression*. 
+*report-expression*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, or a *lambda expression*. 
 
 
 
-*test-expression*—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> or a *lambda expression*. 
+*test-expression*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or a *lambda expression*. 
 
 
 
-<GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
+<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-<GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-*results*—the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> resulting from the <GlossaryTerm styled={true} term={"evaluation"}><i>evaluation</i></GlossaryTerm> of *restartable-form*, or the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by the last <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> executed in a chosen *clause*, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> resulting from the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of *restartable-form*, or the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the last <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> executed in a chosen *clause*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-<DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink> evaluates *restartable-form* in a *dynamic environment* where the clauses have special meanings as points to which control may be transferred. If *restartable-form* finishes executing and returns any values, all values returned are returned by <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink> and processing has completed. While *restartable-form* is executing, any code may transfer control to one of the clauses (see 
+<ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> evaluates *restartable-form* in a *dynamic environment* where the clauses have special meanings as points to which control may be transferred. If *restartable-form* finishes executing and returns any values, all values returned are returned by <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> and processing has completed. While *restartable-form* is executing, any code may transfer control to one of the clauses (see 
 
 
 
@@ -78,35 +78,35 @@
 
 
 
-<DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink> 
+<ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> 
 
 
 
-<DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink>). If a transfer occurs, the forms in the body of that clause is evaluated and any values returned by the last such form are returned by <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink>. In this case, the dynamic state is unwound appropriately (so that the restarts established around the *restartable-form* are no longer active) prior to execution of the clause. 
+<ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>). If a transfer occurs, the forms in the body of that clause is evaluated and any values returned by the last such form are returned by <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>. In this case, the dynamic state is unwound appropriately (so that the restarts established around the *restartable-form* are no longer active) prior to execution of the clause. 
 
 
 
-If there are no <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> in a selected clause, <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink> returns <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+If there are no <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a selected clause, <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-If *case-name* is a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>, it names this restart. 
+If *case-name* is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, it names this restart. 
 
 
 
-It is possible to have more than one clause use the same *case-name*. In this case, the first clause with that name is found by <DictionaryLink styled={true} term={"find-restart"}><b>find-restart</b></DictionaryLink>. The other clauses are accessible using <DictionaryLink styled={true} term={"compute-restarts"}><b>compute-restarts</b></DictionaryLink>. 
+It is possible to have more than one clause use the same *case-name*. In this case, the first clause with that name is found by <ClLinks styled={true} term={"find-restart"}><b>find-restart</b></ClLinks>. The other clauses are accessible using <ClLinks styled={true} term={"compute-restarts"}><b>compute-restarts</b></ClLinks>. 
 
 
 
-Each *arglist* is an *ordinary lambda list* to be bound during the execution of its corresponding <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. These parameters are used by the <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink> clause to receive any necessary data from a call to <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink>. 
+Each *arglist* is an *ordinary lambda list* to be bound during the execution of its corresponding <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. These parameters are used by the <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> clause to receive any necessary data from a call to <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>. 
 
 
 
-By default, <DictionaryLink styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></DictionaryLink> passes no arguments and all arguments must be optional in order to accomodate interactive restarting. However, the arguments need not be optional if the :interactive keyword has been used to inform <DictionaryLink styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></DictionaryLink> about how to compute a proper argument list. 
+By default, <ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> passes no arguments and all arguments must be optional in order to accomodate interactive restarting. However, the arguments need not be optional if the :interactive keyword has been used to inform <ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> about how to compute a proper argument list. 
 
 
 
-<GlossaryTerm styled={true} term={"keyword"}><i>Keyword</i></GlossaryTerm> options have the following meaning. 
+<ClLinks styled={true} term={"keyword"}><i>Keyword</i></ClLinks> options have the following meaning. 
 
 
 
@@ -114,7 +114,7 @@ By default, <DictionaryLink styled={true} term={"invoke-restart-interactively"}>
 
 
 
-The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> supplied by :interactive <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> must be a suitable argument to <DictionaryLink styled={true} term={"function"}><b>function</b></DictionaryLink>. (function <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm>) is evaluated in the current lexical environment. It should return a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of no arguments which returns arguments to be used by <DictionaryLink styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></DictionaryLink> when it is invoked. <DictionaryLink styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></DictionaryLink> is called in the dynamic environment available prior to any restart attempt, and uses *query I/O* for user interaction. 
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> supplied by :interactive <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> must be a suitable argument to <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>. (function <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>) is evaluated in the current lexical environment. It should return a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of no arguments which returns arguments to be used by <ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> when it is invoked. <ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> is called in the dynamic environment available prior to any restart attempt, and uses *query I/O* for user interaction. 
 
 
 
@@ -126,11 +126,11 @@ If a restart is invoked interactively but no :interactive option was supplied, t
 
 
 
-If the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> supplied by :report <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> is a *lambda expression* or a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>, it must be acceptable to <DictionaryLink styled={true} term={"function"}><b>function</b></DictionaryLink>. (function <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm>) is evaluated in the current lexical environment. It should return a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of one argument, a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>, which prints on the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> a description of the restart. This <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> is called whenever the restart is printed while <DictionaryLink styled={true} term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+If the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> supplied by :report <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is a *lambda expression* or a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, it must be acceptable to <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>. (function <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>) is evaluated in the current lexical environment. It should return a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, which prints on the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> a description of the restart. This <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is called whenever the restart is printed while <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-If <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>, it is a shorthand for 
+If <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, it is a shorthand for 
 
 
 
@@ -154,11 +154,11 @@ If a named restart is asked to report but no report information has been supplie
 
 
 
-<DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink> 
+<ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> 
 
 
 
-When <DictionaryLink styled={true} term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, the printer uses the report information for a restart. For example, a debugger might announce the action of typing a “continue” command by: 
+When <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, the printer uses the report information for a restart. For example, a debugger might announce the action of typing a “continue” command by: 
 
 
 
@@ -182,11 +182,11 @@ The consequences are unspecified if an unnamed restart is specified but no :repo
 
 
 
-The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> supplied by :test <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> must be a suitable argument to <DictionaryLink styled={true} term={"function"}><b>function</b></DictionaryLink>. 
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> supplied by :test <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> must be a suitable argument to <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>. 
 
 
 
-(function <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm>) is evaluated in the current lexical environment. It should return a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of one <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>, that returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if the restart is to be considered visible. 
+(function <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>) is evaluated in the current lexical environment. It should return a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks>, the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>, that returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the restart is to be considered visible. 
 
 
 
@@ -194,13 +194,12 @@ The default for this option is equivalent to (lambda (c) (declare (ignore c)) t)
 
 
 
-If the *restartable-form* is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> whose <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> is any of the <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> <DictionaryLink styled={true} term={"signal"}><b>signal</b></DictionaryLink>, <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink>, <DictionaryLink styled={true} term={"cerror"}><b>cerror</b></DictionaryLink>, or <DictionaryLink styled={true} term={"warn"}><b>warn</b></DictionaryLink> (or is a *macro form* which macroexpands into such a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>), then <DictionaryLink styled={true} term={"with-condition-restarts"}><b>with-condition-restarts</b></DictionaryLink> is used implicitly to associate the indicated <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> with the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> to be signaled. 
+If the *restartable-form* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> whose <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> is any of the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks>, <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks>, or <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> (or is a *macro form* which macroexpands into such a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>), then <ClLinks styled={true} term={"with-condition-restarts"}><b>with-condition-restarts</b></ClLinks> is used implicitly to associate the indicated <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> with the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> to be signaled. 
 
 
 
 **Examples:**
 ```lisp
-
 (restart-case 
     (handler-bind ((error #’(lambda (c) 
 			      (declare (ignore condition)) 
@@ -221,7 +220,6 @@ If the *restartable-form* is a <GlossaryTerm styled={true} term={"list"}><i>list
 		     (bad-tasting-sundae-topping condition))))) 
 → BAD-TASTING-SUNDAE 
 (defun all-start-with-same-letter (symbol1 symbol2 symbol3) 
-
   
   
   **restart-case** 
@@ -233,8 +231,6 @@ If the *restartable-form* is a <GlossaryTerm styled={true} term={"list"}><i>list
   (format t "Enter a new value: ") 
   (multiple-value-list (eval (read)))) 
 → READ-NEW-VALUE 
-
-
 
 **restart-case** 
 (defun verify-or-fix-perfect-sundae (ice-cream sauce topping) (do () 
@@ -266,13 +262,12 @@ If the *restartable-form* is a <GlossaryTerm styled={true} term={"list"}><i>list
 ▷ Use a new ice cream. 
 ▷ Enter a new ice cream: ’chocolate 
 → CHOCOLATE, CARAMEL, CHERRY 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"restart-bind"}><b>restart-bind</b></DictionaryLink>, <DictionaryLink styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></DictionaryLink>. 
+<ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks>, <ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks>. 
 
 
 
@@ -280,7 +275,7 @@ If the *restartable-form* is a <GlossaryTerm styled={true} term={"list"}><i>list
 
 
 
-(restart-case <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm> 
+(restart-case <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> 
 
 
 
@@ -352,7 +347,7 @@ is essentially equivalent to
 
 
 
-(return-from #1# <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm>)) 
+(return-from #1# <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>)) 
 
 
 

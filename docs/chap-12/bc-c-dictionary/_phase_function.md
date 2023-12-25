@@ -1,4 +1,4 @@
-**phase** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**phase** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"phase"}><b>phase</b></DictionaryLink> *number → phase* 
+<ClLinks  term={"phase"}><b>phase</b></ClLinks> *number → phase* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . 
+<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 
-*phase*—a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . 
+*phase*—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -26,19 +26,19 @@
 
 
 
-<DictionaryLink styled={true} term={"phase"}><b>phase</b></DictionaryLink> returns the phase of <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> (the angle part of its polar representation) in radians, in the range *−π* (exclusive) if minus zero is not supported, or *−π* (inclusive) if minus zero is supported, to *π* (inclusive). The phase of a positive *real* number is zero; that of a negative *real* number is *π*. The phase of zero is defined to be zero. 
+<ClLinks  term={"phase"}><b>phase</b></ClLinks> returns the phase of <ClLinks  term={"number"}><i>number</i></ClLinks> (the angle part of its polar representation) in radians, in the range *−π* (exclusive) if minus zero is not supported, or *−π* (inclusive) if minus zero is supported, to *π* (inclusive). The phase of a positive *real* number is zero; that of a negative *real* number is *π*. The phase of zero is defined to be zero. 
 
 
 
-If <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> is a *complex float*, the result is a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> of the same <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> as the components of <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>. If <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm>, the result is a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> of the same <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>. If <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm> or a *complex rational*, the result is a *single float*. 
+If <ClLinks  term={"number"}><i>number</i></ClLinks> is a *complex float*, the result is a <ClLinks  term={"float"}><i>float</i></ClLinks> of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as the components of <ClLinks  term={"number"}><i>number</i></ClLinks>. If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"float"}><i>float</i></ClLinks>, the result is a <ClLinks  term={"float"}><i>float</i></ClLinks> of the same <ClLinks  term={"type"}><i>type</i></ClLinks>. If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> or a *complex rational*, the result is a *single float*. 
 
 
 
-The branch cut for <DictionaryLink styled={true} term={"phase"}><b>phase</b></DictionaryLink> lies along the negative real axis, continuous with quadrant II. The range consists of that portion of the real axis between *−π* (exclusive) and *π* (inclusive). 
+The branch cut for <ClLinks  term={"phase"}><b>phase</b></ClLinks> lies along the negative real axis, continuous with quadrant II. The range consists of that portion of the real axis between *−π* (exclusive) and *π* (inclusive). 
 
 
 
-The mathematical definition of <DictionaryLink styled={true} term={"phase"}><b>phase</b></DictionaryLink> is as follows: 
+The mathematical definition of <ClLinks  term={"phase"}><b>phase</b></ClLinks> is as follows: 
 
 
 
@@ -48,21 +48,17 @@ The mathematical definition of <DictionaryLink styled={true} term={"phase"}><b>p
 
 **Examples:**
 ```lisp
-
 (phase 1) → 0.0s0 
-
-
 
 (phase 0) → 0.0s0 
 (phase (cis 30)) → -1.4159266 
 (phase #c(0 1)) → 1.5707964 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . Might signal <DictionaryLink styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>. 
+Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>. 
 
 
 

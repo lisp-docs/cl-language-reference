@@ -2,11 +2,11 @@
 
 
 
-<DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> has a variety of meanings. It is a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> in the COMMON-LISP <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> with the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> "NIL", it is <GlossaryTerm styled={true} term={"boolean"}><i>boolean</i></GlossaryTerm> (and *generalized boolean*) *false*, it is the *empty list*, and it is the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> of the *empty type* (a <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> of all <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm>). 
+<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> has a variety of meanings. It is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> in the COMMON-LISP <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> with the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> "NIL", it is <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks> (and *generalized boolean*) *false*, it is the *empty list*, and it is the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the *empty type* (a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of all <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>). 
 
 
 
-Within Common Lisp, <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> can be notated interchangeably as either NIL or (). By convention, the choice of notation offers a hint as to which of its many roles it is playing.  
+Within Common Lisp, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> can be notated interchangeably as either NIL or (). By convention, the choice of notation offers a hint as to which of its many roles it is playing.  
 
 
 
@@ -18,7 +18,7 @@ Within Common Lisp, <DictionaryLink styled={true} term={"nil"}><b>nil</b></Dicti
 
 | :- |
 
-|<p>Yes nil use as a <GlossaryTerm styled={true} term={"boolean"}><i>boolean</i></GlossaryTerm>. </p><p>Yes ’nil use as a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. </p><p>Yes ’() use as an *empty list* </p><p>No nil use as a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"boolean"}><i>boolean</i></GlossaryTerm>. No () use as an *empty list*.</p>|
+|<p>Yes nil use as a <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks>. </p><p>Yes ’nil use as a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. </p><p>Yes ’() use as an *empty list* </p><p>No nil use as a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks>. No () use as an *empty list*.</p>|
 
 
 
@@ -28,7 +28,7 @@ Within Common Lisp, <DictionaryLink styled={true} term={"nil"}><b>nil</b></Dicti
 
 
 
-Within this document only, <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is also sometimes notated as <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> to emphasize its role as a <GlossaryTerm styled={true} term={"boolean"}><i>boolean</i></GlossaryTerm>. For example: 
+Within this document only, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is also sometimes notated as <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> to emphasize its role as a <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks>. For example: 
 
 
 
@@ -64,11 +64,11 @@ Within this document only, <DictionaryLink styled={true} term={"nil"}><b>nil</b>
 
 
 
-A <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> is sometimes said to “be <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>” or “be <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>” in some circumstance. Since no <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> object can be the same as <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> and all *function objects* represent <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> when viewed as <GlossaryTerm styled={true} term={"boolean"}><i>booleans</i></GlossaryTerm>, it would be meaningless to say that the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> was literally <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> and uninteresting to say that it was literally <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>. Instead, these phrases are just traditional alternative ways of saying that the 
+A <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is sometimes said to “be <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>” or “be <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>” in some circumstance. Since no <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> object can be the same as <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> and all *function objects* represent <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> when viewed as <ClLinks styled={true} term={"boolean"}><i>booleans</i></ClLinks>, it would be meaningless to say that the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> was literally <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> and uninteresting to say that it was literally <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. Instead, these phrases are just traditional alternative ways of saying that the 
 
 
 
-<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> “returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>” or “returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>,” respectively. 
+<ClLinks styled={true} term={"function"}><i>function</i></ClLinks> “returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>” or “returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>,” respectively. 
 
 
 

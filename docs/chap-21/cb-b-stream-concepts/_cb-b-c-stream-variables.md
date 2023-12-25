@@ -2,11 +2,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"variable"}><i>Variables</i></GlossaryTerm> whose <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> must be <GlossaryTerm styled={true} term={"stream"}><i>streams</i></GlossaryTerm> are sometimes called *stream variables*. 
+<ClLinks  term={"variable"}><i>Variables</i></ClLinks> whose <ClLinks  term={"value"}><i>values</i></ClLinks> must be <ClLinks  term={"stream"}><i>streams</i></ClLinks> are sometimes called *stream variables*. 
 
 
 
-Certain *stream variables* are defined by this specification to be the proper source of input or output in various <GlossaryTerm styled={true} term={"situation"}><i>situations</i></GlossaryTerm> where no specific <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> has been specified instead. A complete list of such *standardized stream variables* appears in Figure 21–6. The consequences are undefined if at any time the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of any of these <GlossaryTerm styled={true} term={"variable"}><i>variables</i></GlossaryTerm> is not an *open stream*. 
+Certain *stream variables* are defined by this specification to be the proper source of input or output in various <ClLinks  term={"situation"}><i>situations</i></ClLinks> where no specific <ClLinks  term={"stream"}><i>stream</i></ClLinks> has been specified instead. A complete list of such *standardized stream variables* appears in Figure 21–6. The consequences are undefined if at any time the <ClLinks  term={"value"}><i>value</i></ClLinks> of any of these <ClLinks  term={"variable"}><i>variables</i></ClLinks> is not an *open stream*. 
 
 
 
@@ -14,7 +14,7 @@ Certain *stream variables* are defined by this specification to be the proper so
 
 | :- |
 
-|<p>*debug I/O* **\*debug-io\*** </p><p>*error output<GlossaryTerm styled={true} term={"t"}><i> </i></GlossaryTerm>*\*error-output\*** </p><p>*query I/O* **\*query-io\*** </p><p>*standard input<GlossaryTerm styled={true} term={"t"}><i> </i></GlossaryTerm>*\*standard-input\*** </p><p>*standard output<GlossaryTerm styled={true} term={"t"}><i> </i></GlossaryTerm>*\*standard-output\*** </p><p>*terminal I/O* <DictionaryLink styled={true} term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink> </p><p>*trace output<GlossaryTerm styled={true} term={"t"}><i> </i></GlossaryTerm>*\*trace-output\***</p>|
+|<p>*debug I/O* **\*debug-io\*** </p><p>*error output<ClLinks  term={"t"}><i> </i></ClLinks>*\*error-output\*** </p><p>*query I/O* **\*query-io\*** </p><p>*standard input<ClLinks  term={"t"}><i> </i></ClLinks>*\*standard-input\*** </p><p>*standard output<ClLinks  term={"t"}><i> </i></ClLinks>*\*standard-output\*** </p><p>*terminal I/O* <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks> </p><p>*trace output<ClLinks  term={"t"}><i> </i></ClLinks>*\*trace-output\***</p>|
 
 
 
@@ -40,5 +40,5 @@ Note that, by convention, *standardized stream variables* have names ending in �
 
 
 
-User programs may <GlossaryTerm styled={true} term={"assign"}><i>assign</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"bind"}><i>bind</i></GlossaryTerm> any *standardized stream variable* except <DictionaryLink styled={true} term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>.
+User programs may <ClLinks  term={"assign"}><i>assign</i></ClLinks> or <ClLinks  term={"bind"}><i>bind</i></ClLinks> any *standardized stream variable* except <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>.
  

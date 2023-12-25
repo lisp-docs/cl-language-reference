@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"vector"}><b>vector</b></DictionaryLink>, <DictionaryLink styled={true} term={"array"}><b>array</b></DictionaryLink>, <DictionaryLink styled={true} term={"sequence"}><b>sequence</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
+<ClLinks  term={"vector"}><b>vector</b></ClLinks>, <ClLinks  term={"array"}><b>array</b></ClLinks>, <ClLinks  term={"sequence"}><b>sequence</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-Any one-dimensional <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> . 
+Any one-dimensional <ClLinks  term={"array"}><i>array</i></ClLinks> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> . 
 
 
 
-The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"vector"}><b>vector</b></DictionaryLink> is a <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"array"}><b>array</b></DictionaryLink>; for all <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> x, (vector x) is the same as (array x (\*)). The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> (vector t), the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"string"}><b>string</b></DictionaryLink>, and the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"bit-vector"}><b>bit-vector</b></DictionaryLink> are *disjoint subtypes* of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"vector"}><b>vector</b></DictionaryLink>. 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"vector"}><b>vector</b></ClLinks> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"array"}><b>array</b></ClLinks>; for all <ClLinks  term={"type"}><i>types</i></ClLinks> x, (vector x) is the same as (array x (\*)). The <ClLinks  term={"type"}><i>type</i></ClLinks> (vector t), the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"string"}><b>string</b></ClLinks>, and the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"bit-vector"}><b>bit-vector</b></ClLinks> are *disjoint subtypes* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"vector"}><b>vector</b></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ Specializing.
 
 
 
-*size*—a non-negative <GlossaryTerm styled={true} term={"fixnum"}><i>fixnum</i></GlossaryTerm>. 
+*size*—a non-negative <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>. 
 
 
 
@@ -54,19 +54,15 @@ Specializing.
 
 
 
-This denotes the set of specialized <GlossaryTerm styled={true} term={"vector"}><i>vectors</i></GlossaryTerm> whose *element type* and <GlossaryTerm styled={true} term={"dimension"}><i>dimension</i></GlossaryTerm> match the specified values. Specifically: 
+This denotes the set of specialized <ClLinks  term={"vector"}><i>vectors</i></ClLinks> whose *element type* and <ClLinks  term={"dimension"}><i>dimension</i></ClLinks> match the specified values. Specifically: 
 
 
 
-If *element-type* is the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> **\***, <GlossaryTerm styled={true} term={"vector"}><i>vectors</i></GlossaryTerm> are not excluded on the basis of their *element type*. Otherwise, only those <GlossaryTerm styled={true} term={"vector"}><i>vectors</i></GlossaryTerm> are included whose *actual array element type* is the result of *upgrading element-type*; see Section 15.1.2.1 (Array Upgrading). 
-
-
+If *element-type* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***, <ClLinks  term={"vector"}><i>vectors</i></ClLinks> are not excluded on the basis of their *element type*. Otherwise, only those <ClLinks  term={"vector"}><i>vectors</i></ClLinks> are included whose *actual array element type* is the result of *upgrading element-type*; see Section 15.1.2.1 (Array Upgrading). 
 
 
 
 
-
- 
 
 
 
@@ -74,7 +70,11 @@ If *element-type* is the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</
 
 
 
-If a *size* is specified, the set includes only those <GlossaryTerm styled={true} term={"vector"}><i>vectors</i></GlossaryTerm> whose only <GlossaryTerm styled={true} term={"dimension"}><i>dimension</i></GlossaryTerm> is *size*. If the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> **\*** is specified instead of a *size*, the set is not restricted on the basis of <GlossaryTerm styled={true} term={"dimension"}><i>dimension</i></GlossaryTerm>. 
+ 
+
+
+
+If a *size* is specified, the set includes only those <ClLinks  term={"vector"}><i>vectors</i></ClLinks> whose only <ClLinks  term={"dimension"}><i>dimension</i></ClLinks> is *size*. If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\*** is specified instead of a *size*, the set is not restricted on the basis of <ClLinks  term={"dimension"}><i>dimension</i></ClLinks>. 
 
 
 
@@ -90,19 +90,19 @@ Section 15.1.2.2 (Required Kinds of Specialized Arrays), Section 2.4.8.3 (Sharps
 
 
 
-The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> (vector *e s*) is equivalent to the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> (array *e* (*s*)). 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> (vector *e s*) is equivalent to the <ClLinks  term={"type"}><i>type</i></ClLinks> (array *e* (*s*)). 
 
 
 
-The type (vector bit) has the name <DictionaryLink styled={true} term={"bit-vector"}><b>bit-vector</b></DictionaryLink>. 
+The type (vector bit) has the name <ClLinks  term={"bit-vector"}><b>bit-vector</b></ClLinks>. 
 
 
 
-The union of all <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> (vector *C*), where *C* is any <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> of <DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink>, has the name <DictionaryLink styled={true} term={"string"}><b>string</b></DictionaryLink>. 
+The union of all <ClLinks  term={"type"}><i>types</i></ClLinks> (vector *C*), where *C* is any <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"character"}><b>character</b></ClLinks>, has the name <ClLinks  term={"string"}><b>string</b></ClLinks>. 
 
 
 
-(vector \*) refers to all <GlossaryTerm styled={true} term={"vector"}><i>vectors</i></GlossaryTerm> regardless of element type, (vector *type-specifier*) refers only to those <GlossaryTerm styled={true} term={"vector"}><i>vectors</i></GlossaryTerm> that can result from giving *type-specifier* as the :element-type argument to <DictionaryLink styled={true} term={"make-array"}><b>make-array</b></DictionaryLink>. 
+(vector \*) refers to all <ClLinks  term={"vector"}><i>vectors</i></ClLinks> regardless of element type, (vector *type-specifier*) refers only to those <ClLinks  term={"vector"}><i>vectors</i></ClLinks> that can result from giving *type-specifier* as the :element-type argument to <ClLinks  term={"make-array"}><b>make-array</b></ClLinks>. 
 
 
 

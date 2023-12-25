@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"class-name"}><b>class-name</b></DictionaryLink> *class ! name* 
+<ClLinks  term={"class-name"}><b>class-name</b></ClLinks> *class ! name* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<DictionaryLink styled={true} term={"class-name"}><b>class-name</b></DictionaryLink> (<GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink styled={true} term={"class"}><b>class</b></DictionaryLink>) 
+<ClLinks  term={"class-name"}><b>class-name</b></ClLinks> (<ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"class"}><b>class</b></ClLinks>) 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm>—a *class object*. 
+<ClLinks  term={"class"}><i>class</i></ClLinks>—a *class object*. 
 
 
 
-<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Returns the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> of the given <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm>. 
+Returns the <ClLinks  term={"name"}><i>name</i></ClLinks> of the given <ClLinks  term={"class"}><i>class</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ Returns the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>
 
 
 
-<DictionaryLink styled={true} term={"find-class"}><b>find-class</b></DictionaryLink>, Section 4.3 (Classes) 
+<ClLinks  term={"find-class"}><b>find-class</b></ClLinks>, Section 4.3 (Classes) 
 
 
 
@@ -50,11 +50,11 @@ Returns the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>
 
 
 
-If *S* is a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> such that *S* =(class-name *C*) and *C* =(find-class *S*), then *S* is the proper name of *C*. For further discussion, see Section 4.3 (Classes). 
+If *S* is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> such that *S* =(class-name *C*) and *C* =(find-class *S*), then *S* is the proper name of *C*. For further discussion, see Section 4.3 (Classes). 
 
 
 
-The name of an anonymous <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+The name of an anonymous <ClLinks  term={"class"}><i>class</i></ClLinks> is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -86,7 +86,7 @@ The name of an anonymous <GlossaryTerm styled={true} term={"class"}><i>class</i>
 
 
 
-**(setf class-name)** *new-value* (<GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink styled={true} term={"class"}><b>class</b></DictionaryLink>) 
+**(setf class-name)** *new-value* (<ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"class"}><b>class</b></ClLinks>) 
 
 
 
@@ -94,11 +94,11 @@ The name of an anonymous <GlossaryTerm styled={true} term={"class"}><i>class</i>
 
 
 
-*new-value*—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+*new-value*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm>. 
+<ClLinks  term={"class"}><i>class</i></ClLinks>—a <ClLinks  term={"class"}><i>class</i></ClLinks>. 
 
 
 
@@ -106,7 +106,7 @@ The name of an anonymous <GlossaryTerm styled={true} term={"class"}><i>class</i>
 
 
 
-The generic function (setf class-name) sets the name of a <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> object. 
+The generic function (setf class-name) sets the name of a <ClLinks  term={"class"}><i>class</i></ClLinks> object. 
 
 
 
@@ -114,7 +114,7 @@ The generic function (setf class-name) sets the name of a <GlossaryTerm styled={
 
 
 
-<DictionaryLink styled={true} term={"find-class"}><b>find-class</b></DictionaryLink>, *proper name*, Section 4.3 (Classes) 
+<ClLinks  term={"find-class"}><b>find-class</b></ClLinks>, *proper name*, Section 4.3 (Classes) 
 
 
 

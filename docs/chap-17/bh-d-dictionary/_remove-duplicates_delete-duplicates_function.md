@@ -1,4 +1,4 @@
-**remove-duplicates, delete-duplicates** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**remove-duplicates, delete-duplicates** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"remove-duplicates"}><b>remove-duplicates</b></DictionaryLink> *sequence* &amp;key *from-end test test-not* 
+<ClLinks  term={"remove-duplicates"}><b>remove-duplicates</b></ClLinks> *sequence* &amp;key *from-end test test-not* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<DictionaryLink styled={true} term={"delete-duplicates"}><b>delete-duplicates</b></DictionaryLink> *sequence* &amp;key *from-end test test-not* 
+<ClLinks  term={"delete-duplicates"}><b>delete-duplicates</b></ClLinks> *sequence* &amp;key *from-end test test-not* 
 
 
 
@@ -38,19 +38,19 @@
 
 
 
-*from-end*—a *generalized boolean*. The default is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+*from-end*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-*test*—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> that returns a *generalized boolean*. *test-not<GlossaryTerm styled={true} term={"t"}><i>—a </i></GlossaryTerm>designator* for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> that returns a *generalized boolean*. 
+*test*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks  term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. 
 
 
 
-*start*, *end*—*bounding index designators* of *sequence*. The defaults for *start* and *end* are 0 and <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
+*start*, *end*—*bounding index designators* of *sequence*. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
-<GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of one argument, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -78,37 +78,36 @@
 
 
 
-<DictionaryLink styled={true} term={"remove-duplicates"}><b>remove-duplicates</b></DictionaryLink> returns a modified copy of *sequence* from which any element that matches another element occurring in *sequence* has been removed. 
+<ClLinks  term={"remove-duplicates"}><b>remove-duplicates</b></ClLinks> returns a modified copy of *sequence* from which any element that matches another element occurring in *sequence* has been removed. 
 
 
 
-If *sequence* is a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> , the result is a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> that has the same *actual array element type* as *sequence*. If *sequence* is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>, the result is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. 
+If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the result is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> that has the same *actual array element type* as *sequence*. If *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, the result is a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
-<DictionaryLink styled={true} term={"delete-duplicates"}><b>delete-duplicates</b></DictionaryLink> is like <DictionaryLink styled={true} term={"remove-duplicates"}><b>remove-duplicates</b></DictionaryLink>, but <DictionaryLink styled={true} term={"delete-duplicates"}><b>delete-duplicates</b></DictionaryLink> may modify *sequence*. 
+<ClLinks  term={"delete-duplicates"}><b>delete-duplicates</b></ClLinks> is like <ClLinks  term={"remove-duplicates"}><b>remove-duplicates</b></ClLinks>, but <ClLinks  term={"delete-duplicates"}><b>delete-duplicates</b></ClLinks> may modify *sequence*. 
 
 
 
-The elements of *sequence* are compared <GlossaryTerm styled={true} term={"pairwise"}><i>pairwise</i></GlossaryTerm>, and if any two match, then the one occurring earlier in *sequence* is discarded, unless *from-end* is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, in which case the one later in *sequence* is discarded. 
+The elements of *sequence* are compared <ClLinks  term={"pairwise"}><i>pairwise</i></ClLinks>, and if any two match, then the one occurring earlier in *sequence* is discarded, unless *from-end* is <ClLinks  term={"true"}><i>true</i></ClLinks>, in which case the one later in *sequence* is discarded. 
 
 
 
-<DictionaryLink styled={true} term={"remove-duplicates"}><b>remove-duplicates</b></DictionaryLink> and <DictionaryLink styled={true} term={"delete-duplicates"}><b>delete-duplicates</b></DictionaryLink> return a *sequence* of the same <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> as *sequence* with enough elements removed so that no two of the remaining elements match. The order of the elements remaining in the result is the same as the order in which they appear in *sequence*. 
+<ClLinks  term={"remove-duplicates"}><b>remove-duplicates</b></ClLinks> and <ClLinks  term={"delete-duplicates"}><b>delete-duplicates</b></ClLinks> return a *sequence* of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *sequence* with enough elements removed so that no two of the remaining elements match. The order of the elements remaining in the result is the same as the order in which they appear in *sequence*. 
 
 
 
-<DictionaryLink styled={true} term={"remove-duplicates"}><b>remove-duplicates</b></DictionaryLink> returns a *sequence* that may share with *sequence* or may be <GlossaryTerm styled={true} term={"identical"}><i>identical</i></GlossaryTerm> to *sequence* if no elements need to be removed. 
+<ClLinks  term={"remove-duplicates"}><b>remove-duplicates</b></ClLinks> returns a *sequence* that may share with *sequence* or may be <ClLinks  term={"identical"}><i>identical</i></ClLinks> to *sequence* if no elements need to be removed. 
 
 
 
-<DictionaryLink styled={true} term={"delete-duplicates"}><b>delete-duplicates</b></DictionaryLink>, when *sequence* is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>, is permitted to <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> any part, <DictionaryLink styled={true} term={"car"}><b>car</b></DictionaryLink> or <DictionaryLink styled={true} term={"cdr"}><b>cdr</b></DictionaryLink>, of the top-level list structure in that *sequence*. When *sequence* is a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> , <DictionaryLink styled={true} term={"delete-duplicates"}><b>delete-duplicates</b></DictionaryLink> is permitted to change the dimensions of the <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> and to slide its elements into new positions without permuting them to produce the resulting <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> . 
+<ClLinks  term={"delete-duplicates"}><b>delete-duplicates</b></ClLinks>, when *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, is permitted to <ClLinks  term={"setf"}><b>setf</b></ClLinks> any part, <ClLinks  term={"car"}><b>car</b></ClLinks> or <ClLinks  term={"cdr"}><b>cdr</b></ClLinks>, of the top-level list structure in that *sequence*. When *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , <ClLinks  term={"delete-duplicates"}><b>delete-duplicates</b></ClLinks> is permitted to change the dimensions of the <ClLinks  term={"vector"}><i>vector</i></ClLinks> and to slide its elements into new positions without permuting them to produce the resulting <ClLinks  term={"vector"}><i>vector</i></ClLinks> . 
 
 
 
 **Examples:**
 ```lisp
-
 (remove-duplicates "aBcDAbCd" :test #’char-equal :from-end t) → "aBcD" 
 (remove-duplicates ’(a b c b d d e)) → (A C B D E) 
 (remove-duplicates ’(a b c b d d e) :from-end t) → (A B C D E) 
@@ -118,13 +117,12 @@ The elements of *sequence* are compared <GlossaryTerm styled={true} term={"pairw
 		    :test #’char-equal :key #’cadr :from-end t) → ((FOO #\a) (BAR #\%)) 
 (setq tester (list 0 1 2 3 4 5 6)) 
 (delete-duplicates tester :key #’oddp :start 1 :end 6) → (0 4 5 6) 
-
 ```
 **Side Effects:** 
 
 
 
-<DictionaryLink styled={true} term={"delete-duplicates"}><b>delete-duplicates</b></DictionaryLink> might destructively modify *sequence*. 
+<ClLinks  term={"delete-duplicates"}><b>delete-duplicates</b></ClLinks> might destructively modify *sequence*. 
 
 
 
@@ -132,7 +130,7 @@ The elements of *sequence* are compared <GlossaryTerm styled={true} term={"pairw
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a *proper sequence*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. 
 
 
 
@@ -160,11 +158,11 @@ Section 3.2.1 (Compiler Terminology), Section 3.6 (Traversal Rules and Side Effe
 
 
 
-If *sequence* is a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> , the result might or might not be simple, and might or might not be <GlossaryTerm styled={true} term={"identical"}><i>identical</i></GlossaryTerm> to *sequence*. 
+If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the result might or might not be simple, and might or might not be <ClLinks  term={"identical"}><i>identical</i></ClLinks> to *sequence*. 
 
 
 
-The :test-not <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm> is deprecated. 
+The :test-not <ClLinks  term={"argument"}><i>argument</i></ClLinks> is deprecated. 
 
 
 

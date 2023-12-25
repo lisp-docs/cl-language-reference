@@ -2,11 +2,11 @@
 
 
 
-All functions that operate on <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm> will operate on <GlossaryTerm styled={true} term={"subtype"}><i>subtypes</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> as well. 
+All functions that operate on <ClLinks  term={"string"}><i>strings</i></ClLinks> will operate on <ClLinks  term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks  term={"string"}><i>string</i></ClLinks> as well. 
 
 
 
-However, the consequences are undefined if a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> is inserted into a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> for which the *element type* of the <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> does not include that <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
+However, the consequences are undefined if a <ClLinks  term={"character"}><i>character</i></ClLinks> is inserted into a <ClLinks  term={"string"}><i>string</i></ClLinks> for which the *element type* of the <ClLinks  term={"string"}><i>string</i></ClLinks> does not include that <ClLinks  term={"character"}><i>character</i></ClLinks> . 
 
 
 

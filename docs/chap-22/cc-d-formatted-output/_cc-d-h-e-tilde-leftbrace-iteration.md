@@ -38,7 +38,7 @@ For example:
 
 
 
-&#126;:\{*str*&#126;\} is similar, but the argument should be a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of sublists. At each repetition step, one sublist is used as the set of arguments for processing *str* ; on the next repetition, a new sublist is used, whether or not all of the last sublist had been processed. For example: 
+&#126;:\{*str*&#126;\} is similar, but the argument should be a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of sublists. At each repetition step, one sublist is used as the set of arguments for processing *str* ; on the next repetition, a new sublist is used, whether or not all of the last sublist had been processed. For example: 
 
 
 
@@ -82,7 +82,7 @@ If the iteration is terminated before all the remaining arguments are consumed, 
 
 
 
-&#126;:@\{*str*&#126;\} combines the features of &#126;:\{*str*&#126;\} and &#126;@\{*str*&#126;\}. All the remaining arguments are used, and each one must be a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. On each iteration, the next argument is used as a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of arguments to *str* . Example: 
+&#126;:@\{*str*&#126;\} combines the features of &#126;:\{*str*&#126;\} and &#126;@\{*str*&#126;\}. All the remaining arguments are used, and each one must be a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. On each iteration, the next argument is used as a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of arguments to *str* . Example: 
 
 
 

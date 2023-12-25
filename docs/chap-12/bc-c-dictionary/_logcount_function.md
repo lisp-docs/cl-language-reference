@@ -1,4 +1,4 @@
-**logcount** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**logcount** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"logcount"}><b>logcount</b></DictionaryLink> *integer → number-of-on-bits* 
+<ClLinks  term={"logcount"}><b>logcount</b></ClLinks> *integer → number-of-on-bits* 
 
 
 
@@ -32,12 +32,9 @@ Computes and returns the number of bits in the two’s-complement binary represe
 
 **Examples:**
 ```lisp
-
 (logcount 0) → 0 
 (logcount -1) → 0 
 (logcount 7) → 3 
-
-
 
 (logcount 13) → 3 ;Two’s-complement binary: ...0001101 
 (logcount -13) → 2 ;Two’s-complement binary: ...1110011 
@@ -46,13 +43,12 @@ Computes and returns the number of bits in the two’s-complement binary represe
 (logcount (expt 2 100)) → 1 
 (logcount (- (expt 2 100))) → 100 
 (logcount (- (1+ (expt 2 100)))) → 1 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not an *integer* . 
+Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an *integer* . 
 
 
 
@@ -60,7 +56,7 @@ Should signal <DictionaryLink styled={true} term={"type-error"}><b>type-error</b
 
 
 
-Even if the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> does not represent *integers* internally in two’s complement binary, <DictionaryLink styled={true} term={"logcount"}><b>logcount</b></DictionaryLink> behaves as if it did. 
+Even if the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> does not represent *integers* internally in two’s complement binary, <ClLinks  term={"logcount"}><b>logcount</b></ClLinks> behaves as if it did. 
 
 
 

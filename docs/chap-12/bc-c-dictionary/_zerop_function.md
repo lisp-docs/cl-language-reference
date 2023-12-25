@@ -1,4 +1,4 @@
-**zerop** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**zerop** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"zerop"}><b>zerop</b></DictionaryLink> *number → generalized-boolean* 
+<ClLinks  term={"zerop"}><b>zerop</b></ClLinks> *number → generalized-boolean* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . 
+<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -34,29 +34,27 @@
 
 
 
-Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> is zero (*integer* , <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm>, or <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> ); otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"number"}><i>number</i></ClLinks> is zero (*integer* , <ClLinks  term={"float"}><i>float</i></ClLinks>, or <ClLinks  term={"complex"}><i>complex</i></ClLinks> ); otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-Regardless of whether an <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> provides distinct representations for positive and negative floating-point zeros, (zerop -0.0) always returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>. 
+Regardless of whether an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> provides distinct representations for positive and negative floating-point zeros, (zerop -0.0) always returns <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (zerop 0) → true 
 (zerop 1) → false 
 (zerop -0.0) → true 
 (zerop 0/100) → true 
 (zerop #c(0 0.0)) → true 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -64,7 +62,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-(zerop <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>) *≡* (= <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> 0) 
+(zerop <ClLinks  term={"number"}><i>number</i></ClLinks>) *≡* (= <ClLinks  term={"number"}><i>number</i></ClLinks> 0) 
 
 
 

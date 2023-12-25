@@ -1,298 +1,134 @@
-**loop** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
+**loop** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks>
 
+**Syntax:**
 
+The “simple” <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>:
 
-**Syntax:** 
+<ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> *\{compound-form\}*\* → \{result\}\*
 
+The “extended” <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>:
 
+<ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> [*↓name-clause*] *\{↓variable-clause\}*\* *\{↓main-clause\}*\* → \{result\}\*
 
-The “simple” <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>: 
+*name-clause::*=named <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>
 
+*variable-clause::*=*↓with-clause | ↓initial-final | ↓for-as-clause*
 
+*with-clause::*=with *var1* [*type-spec*] [= *form1*] *\{*and *var2* [*type-spec*] [= *form2*]*\}*\*
 
-<DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> *\{compound-form\}*\* → \{result\}\* 
+*main-clause::*=*↓unconditional | ↓accumulation | ↓conditional | ↓termination-test | ↓initial-final initial-final::*=initially *\{compound-form\}*<sup>+</sup>*|* finally *\{compound-form\}*<sup>+</sup>
 
+*unconditional::*=*\{*do *|* doing*\} \{compound-form\}*<sup>+</sup>*|* return *\{form |* it<ClLinks styled={true} term={"t"}><i>\}</i></ClLinks>
 
+*accumulation::*=*↓list-accumulation | ↓numeric-accumulation*
 
-The “extended” <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>: 
+*list-accumulation::*=*\{*collect *|* collecting *|* append *|* appending *|* nconc *|* nconcing*\} \{form |* it<ClLinks styled={true} term={"t"}><i>\}</i></ClLinks> [into *simple-var*]
 
+<ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>
 
+*numeric-accumulation::*=*\{*count *|* counting *|* sum *|* summing *|*
 
-<DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> [*↓name-clause*] *\{↓variable-clause\}*\* *\{↓main-clause\}*\* → \{result\}\* 
+maximize *|* maximizing *|* minimize *|* minimizing*\} \{form |* it<ClLinks styled={true} term={"t"}><i>\}</i></ClLinks>
 
+[into *simple-var*] [*type-spec*]
 
+*conditional::*=*\{*if *|* when *|* unless*\} form ↓selectable-clause \{*and *↓selectable-clause\}*\*
 
-*name-clause::*=named <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> 
+[else *↓selectable-clause \{*and *↓selectable-clause\}*\*]
 
+[end]
 
+*selectable-clause::*=*↓unconditional | ↓accumulation | ↓conditional*
 
-*variable-clause::*=*↓with-clause | ↓initial-final | ↓for-as-clause* 
+*termination-test::*=while *form |* until *form |* repeat *form |* always *form |* never *form |* thereis *form for-as-clause::*=*\{*for *|* as*\} ↓for-as-subclause \{*and *↓for-as-subclause\}*\*
 
+*for-as-subclause::*=*↓for-as-arithmetic | ↓for-as-in-list | ↓for-as-on-list | ↓for-as-equals-then | ↓for-as-across | ↓for-as-hash | ↓for-as-package*
 
+*for-as-arithmetic::*=*var* [*type-spec*] *↓for-as-arithmetic-subclause*
 
-*with-clause::*=with *var1* [*type-spec*] [= *form1*] *\{*and *var2* [*type-spec*] [= *form2*]*\}*\* 
+*for-as-arithmetic-subclause::*=*↓arithmetic-up | ↓arithmetic-downto | ↓arithmetic-downfrom arithmetic-up::*=[[ *\{*from *|* upfrom*\} form1 | \{*to *|* upto *|* below*\} form2 |* by *form3* ]]<sup>+</sup>
 
+*arithmetic-downto::*=[[ *\{*from *form1\}*<sup>1</sup>*| \{\{*downto *|* above*\} form2\}*<sup>1</sup>*|* by *form3* ]]
 
+*arithmetic-downfrom::*=[[ *\{*downfrom *form1\}*<sup>1</sup>*| \{*to *|* downto *|* above*\} form2 |* by *form3* ]] *for-as-in-list::*=*var* [*type-spec*] in *form1* [by *step-fun*]
 
-*main-clause::*=*↓unconditional | ↓accumulation | ↓conditional | ↓termination-test | ↓initial-final initial-final::*=initially *\{compound-form\}*<sup>+</sup>*|* finally *\{compound-form\}*<sup>+</sup> 
+*for-as-on-list::*=*var* [*type-spec*] on *form1* [by *step-fun*]
 
+*for-as-equals-then::*=*var* [*type-spec*] = *form1* [then *form2*]
 
+*for-as-across::*=*var* [*type-spec*] across <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>
 
-*unconditional::*=*\{*do *|* doing*\} \{compound-form\}*<sup>+</sup>*|* return *\{form |* it<GlossaryTerm styled={true} term={"t"}><i>\}</i></GlossaryTerm> 
+*for-as-hash::*=*var* [*type-spec*] being *\{*each *|* the*\}*
 
+*\{\{*hash-key *|* hash-keys*\} \{*in *|* of*\} hash-table*
 
+[using (hash-value *other-var*)] *|*
 
-*accumulation::*=*↓list-accumulation | ↓numeric-accumulation* 
+*\{*hash-value *|* hash-values*\} \{*in *|* of*\} hash-table*
 
+[using (hash-key *other-var*)]*\}*
 
+<ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>
 
-*list-accumulation::*=*\{*collect *|* collecting *|* append *|* appending *|* nconc *|* nconcing*\} \{form |* it<GlossaryTerm styled={true} term={"t"}><i>\}</i></GlossaryTerm> [into *simple-var*] 
+*for-as-package::*=*var* [*type-spec*] being *\{*each *|* the*\}*
 
+*\{*symbol *|* symbols *|*
 
+present-symbol *|* present-symbols *|*
 
+external-symbol *|* external-symbols*\}*
 
+[*\{*in *|* of*\} package*]
 
+*type-spec::*=*↓simple-type-spec | ↓destructured-type-spec*
 
+*simple-type-spec::*=<ClLinks styled={true} term={"fixnum"}><b>fixnum</b></ClLinks> *|* <ClLinks styled={true} term={"float"}><b>float</b></ClLinks> *|* <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> *|* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>
 
- 
+*destructured-type-spec::*=of-type *d-type-spec*
 
+*d-type-spec::*=*type-specifier |* (*d-type-spec* . *d-type-spec*)
 
+*var::*=*↓d-var-spec*
 
- 
+*var1::*=*↓d-var-spec*
 
+*var2::*=*↓d-var-spec*
 
+*other-var::*=*↓d-var-spec*
 
-<DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> 
+*d-var-spec::*=*simple-var |* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> *|* (*↓d-var-spec* . *↓d-var-spec*)
 
+**Arguments and Values:**
 
+*compound-form*—a *compound form*.
 
-*numeric-accumulation::*=*\{*count *|* counting *|* sum *|* summing *|* 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>.
 
+*simple-var*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> (a <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> name).
 
+<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, *form1*, *form2*, *form3*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>.
 
-maximize *|* maximizing *|* minimize *|* minimizing*\} \{form |* it<GlossaryTerm styled={true} term={"t"}><i>\}</i></GlossaryTerm> 
+*step-fun*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks>.
 
+<ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> .
 
+*hash-table*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a *hash table*.
 
-[into *simple-var*] [*type-spec*] 
+<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a *package designator* .
 
+*type-specifier*—a *type specifier* . This might be either an *atomic type specifier* or a *compound type specifier* , which introduces some additional complications to proper parsing in the face of destructuring; for further information, see Section 6.1.1.7 (Destructuring).
 
+*result*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>.
 
-*conditional::*=*\{*if *|* when *|* unless*\} form ↓selectable-clause \{*and *↓selectable-clause\}*\* 
+<ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>
 
+**Description:**
 
-
-[else *↓selectable-clause \{*and *↓selectable-clause\}*\*] 
-
-
-
-[end] 
-
-
-
-*selectable-clause::*=*↓unconditional | ↓accumulation | ↓conditional* 
-
-
-
-*termination-test::*=while *form |* until *form |* repeat *form |* always *form |* never *form |* thereis *form for-as-clause::*=*\{*for *|* as*\} ↓for-as-subclause \{*and *↓for-as-subclause\}*\* 
-
-
-
-*for-as-subclause::*=*↓for-as-arithmetic | ↓for-as-in-list | ↓for-as-on-list | ↓for-as-equals-then | ↓for-as-across | ↓for-as-hash | ↓for-as-package* 
-
-
-
-*for-as-arithmetic::*=*var* [*type-spec*] *↓for-as-arithmetic-subclause* 
-
-
-
-*for-as-arithmetic-subclause::*=*↓arithmetic-up | ↓arithmetic-downto | ↓arithmetic-downfrom arithmetic-up::*=[[ *\{*from *|* upfrom*\} form1 | \{*to *|* upto *|* below*\} form2 |* by *form3* ]]<sup>+</sup> 
-
-
-
-*arithmetic-downto::*=[[ *\{*from *form1\}*<sup>1</sup>*| \{\{*downto *|* above*\} form2\}*<sup>1</sup>*|* by *form3* ]] 
-
-
-
-*arithmetic-downfrom::*=[[ *\{*downfrom *form1\}*<sup>1</sup>*| \{*to *|* downto *|* above*\} form2 |* by *form3* ]] *for-as-in-list::*=*var* [*type-spec*] in *form1* [by *step-fun*] 
-
-
-
-*for-as-on-list::*=*var* [*type-spec*] on *form1* [by *step-fun*] 
-
-
-
-*for-as-equals-then::*=*var* [*type-spec*] = *form1* [then *form2*] 
-
-
-
-*for-as-across::*=*var* [*type-spec*] across <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> 
-
-
-
-*for-as-hash::*=*var* [*type-spec*] being *\{*each *|* the*\}* 
-
-
-
-*\{\{*hash-key *|* hash-keys*\} \{*in *|* of*\} hash-table* 
-
-
-
-[using (hash-value *other-var*)] *|* 
-
-
-
-*\{*hash-value *|* hash-values*\} \{*in *|* of*\} hash-table* 
-
-
-
-[using (hash-key *other-var*)]*\}* 
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
-<DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> 
-
-
-
-*for-as-package::*=*var* [*type-spec*] being *\{*each *|* the*\}* 
-
-
-
-*\{*symbol *|* symbols *|* 
-
-
-
-present-symbol *|* present-symbols *|* 
-
-
-
-external-symbol *|* external-symbols*\}* 
-
-
-
-[*\{*in *|* of*\} package*] 
-
-
-
-*type-spec::*=*↓simple-type-spec | ↓destructured-type-spec* 
-
-
-
-*simple-type-spec::*=<DictionaryLink styled={true} term={"fixnum"}><b>fixnum</b></DictionaryLink> *|* <DictionaryLink styled={true} term={"float"}><b>float</b></DictionaryLink> *|* <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> *|* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
-
-
-
-*destructured-type-spec::*=of-type *d-type-spec* 
-
-
-
-*d-type-spec::*=*type-specifier |* (*d-type-spec* . *d-type-spec*) 
-
-
-
-*var::*=*↓d-var-spec* 
-
-
-
-*var1::*=*↓d-var-spec* 
-
-
-
-*var2::*=*↓d-var-spec* 
-
-
-
-*other-var::*=*↓d-var-spec* 
-
-
-
-*d-var-spec::*=*simple-var |* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> *|* (*↓d-var-spec* . *↓d-var-spec*) 
-
-
-
-**Arguments and Values:** 
-
-
-
-*compound-form*—a *compound form*. 
-
-
-
-<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
-
-
-
-*simple-var*—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> (a <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm> name). 
-
-
-
-<GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>, *form1*, *form2*, *form3*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
-
-
-
-*step-fun*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> that evaluates to a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of one <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm>. 
-
-
-
-<GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> that evaluates to a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> . 
-
-
-
-*hash-table*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> that evaluates to a *hash table*. 
-
-
-
-<GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> that evaluates to a *package designator* . 
-
-
-
-*type-specifier*—a *type specifier* . This might be either an *atomic type specifier* or a *compound type specifier* , which introduces some additional complications to proper parsing in the face of destructuring; for further information, see Section 6.1.1.7 (Destructuring). 
-
-
-
-*result*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
-<DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> 
-
-
-
-**Description:** 
-
-
-
-For details, see Section 6.1 (The LOOP Facility). 
-
-
+For details, see Section 6.1 (The LOOP Facility).
 
 **Examples:**
-```lisp
 
+```lisp
 ;; An example of the simple form of LOOP. 
 (defun sqrt-advisor () 
   (loop (format t "~&Number: ") 
@@ -326,37 +162,14 @@ For details, see Section 6.1 (The LOOP Facility).
       when (oddp n) 
       collect n) 
 → (1 3 5 7 9) 
-
 ```
-**See Also:** 
 
+**See Also:**
 
+<ClLinks styled={true} term={"do"}><b>do</b></ClLinks>, <ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks>, <ClLinks styled={true} term={"dotimes"}><b>dotimes</b></ClLinks>, <ClLinks styled={true} term={"return"}><b>return</b></ClLinks>, <ClLinks styled={true} term={"go"}><b>go</b></ClLinks>, <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks>, Section 6.1.1.7 (Destructuring)
 
-<DictionaryLink styled={true} term={"do"}><b>do</b></DictionaryLink>, <DictionaryLink styled={true} term={"dolist"}><b>dolist</b></DictionaryLink>, <DictionaryLink styled={true} term={"dotimes"}><b>dotimes</b></DictionaryLink>, <DictionaryLink styled={true} term={"return"}><b>return</b></DictionaryLink>, <DictionaryLink styled={true} term={"go"}><b>go</b></DictionaryLink>, <DictionaryLink styled={true} term={"throw"}><b>throw</b></DictionaryLink>, Section 6.1.1.7 (Destructuring) 
+**Notes:**
 
+Except that <ClLinks styled={true} term={"loop-finish"}><b>loop-finish</b></ClLinks> cannot be used within a simple <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, a simple <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is related to an extended <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> in the following way:
 
-
-
-
-
-
- 
-
-
-
- 
-
-
-
-**Notes:** 
-
-
-
-Except that <DictionaryLink styled={true} term={"loop-finish"}><b>loop-finish</b></DictionaryLink> cannot be used within a simple <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>, a simple <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is related to an extended <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> in the following way: 
-
-
-
-(loop *\{compound-form\}*\*) *≡* (loop do *\{compound-form\}*\*) 
-
-
-
+(loop *\{compound-form\}*\*) *≡* (loop do *\{compound-form\}*\*)

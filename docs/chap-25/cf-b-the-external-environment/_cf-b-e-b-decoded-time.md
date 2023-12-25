@@ -78,7 +78,7 @@ An *integer* between 0 and 6, inclusive; 0 means Monday, 1 means Tuesday, and so
 
 
 
-A *generalized boolean* that, if <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, indicates that daylight saving time is in effect. 
+A *generalized boolean* that, if <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, indicates that daylight saving time is in effect. 
 
 
 

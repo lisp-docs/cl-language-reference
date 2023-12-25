@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"tagbody"}><b>tagbody</b></DictionaryLink> *\{tag | statement\}*\* → <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
+<ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> *\{tag | statement\}*\* → <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"tag"}><i>tag</i></GlossaryTerm>—a *go tag*; not evaluated. 
+<ClLinks  term={"tag"}><i>tag</i></ClLinks>—a *go tag*; not evaluated. 
 
 
 
@@ -26,25 +26,24 @@
 
 
 
-Executes zero or more *statements* in a *lexical environment* that provides for control transfers to labels indicated by the <GlossaryTerm styled={true} term={"tag"}><i>tags</i></GlossaryTerm>. 
+Executes zero or more *statements* in a *lexical environment* that provides for control transfers to labels indicated by the <ClLinks  term={"tag"}><i>tags</i></ClLinks>. 
 
 
 
-The *statements* in a <DictionaryLink styled={true} term={"tagbody"}><b>tagbody</b></DictionaryLink> are *evaluated* in order from left to right, and their <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> are discarded. If at any time there are no remaining *statements*, <DictionaryLink styled={true} term={"tagbody"}><b>tagbody</b></DictionaryLink> returns <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. However, if (go <GlossaryTerm styled={true} term={"tag"}><i>tag</i></GlossaryTerm>) is *evaluated*, control jumps to the part of the body labeled with the <GlossaryTerm styled={true} term={"tag"}><i>tag</i></GlossaryTerm>. (Tags are compared with <DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink>.) 
+The *statements* in a <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> are *evaluated* in order from left to right, and their <ClLinks  term={"value"}><i>values</i></ClLinks> are discarded. If at any time there are no remaining *statements*, <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. However, if (go <ClLinks  term={"tag"}><i>tag</i></ClLinks>) is *evaluated*, control jumps to the part of the body labeled with the <ClLinks  term={"tag"}><i>tag</i></ClLinks>. (Tags are compared with <ClLinks  term={"eql"}><b>eql</b></ClLinks>.) 
 
 
 
-A <GlossaryTerm styled={true} term={"tag"}><i>tag</i></GlossaryTerm> established by <DictionaryLink styled={true} term={"tagbody"}><b>tagbody</b></DictionaryLink> has *lexical scope* and has *dynamic extent*. Once <DictionaryLink styled={true} term={"tagbody"}><b>tagbody</b></DictionaryLink> has been exited, it is no longer valid to <DictionaryLink styled={true} term={"go"}><b>go</b></DictionaryLink> to a <GlossaryTerm styled={true} term={"tag"}><i>tag</i></GlossaryTerm> in its body. It is permissible for <DictionaryLink styled={true} term={"go"}><b>go</b></DictionaryLink> to jump to a <DictionaryLink styled={true} term={"tagbody"}><b>tagbody</b></DictionaryLink> that is not the innermost <DictionaryLink styled={true} term={"tagbody"}><b>tagbody</b></DictionaryLink> containing that <DictionaryLink styled={true} term={"go"}><b>go</b></DictionaryLink>; the <GlossaryTerm styled={true} term={"tag"}><i>tags</i></GlossaryTerm> established by a <DictionaryLink styled={true} term={"tagbody"}><b>tagbody</b></DictionaryLink> only shadow other <GlossaryTerm styled={true} term={"tag"}><i>tags</i></GlossaryTerm> of like name. 
+A <ClLinks  term={"tag"}><i>tag</i></ClLinks> established by <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> has *lexical scope* and has *dynamic extent*. Once <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> has been exited, it is no longer valid to <ClLinks  term={"go"}><b>go</b></ClLinks> to a <ClLinks  term={"tag"}><i>tag</i></ClLinks> in its body. It is permissible for <ClLinks  term={"go"}><b>go</b></ClLinks> to jump to a <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> that is not the innermost <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> containing that <ClLinks  term={"go"}><b>go</b></ClLinks>; the <ClLinks  term={"tag"}><i>tags</i></ClLinks> established by a <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> only shadow other <ClLinks  term={"tag"}><i>tags</i></ClLinks> of like name. 
 
 
 
-The determination of which elements of the body are <GlossaryTerm styled={true} term={"tag"}><i>tags</i></GlossaryTerm> and which are *statements* is made prior to any *macro expansion* of that element. If a *statement* is a *macro form* and its *macro expansion* is an <GlossaryTerm styled={true} term={"atom"}><i>atom</i></GlossaryTerm>, that <GlossaryTerm styled={true} term={"atom"}><i>atom</i></GlossaryTerm> is treated as a *statement*, not a <GlossaryTerm styled={true} term={"tag"}><i>tag</i></GlossaryTerm>. 
+The determination of which elements of the body are <ClLinks  term={"tag"}><i>tags</i></ClLinks> and which are *statements* is made prior to any *macro expansion* of that element. If a *statement* is a *macro form* and its *macro expansion* is an <ClLinks  term={"atom"}><i>atom</i></ClLinks>, that <ClLinks  term={"atom"}><i>atom</i></ClLinks> is treated as a *statement*, not a <ClLinks  term={"tag"}><i>tag</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (let (val) 
   (tagbody 
      (setq val 1) 
@@ -60,8 +59,6 @@ The determination of which elements of the body are <GlossaryTerm styled={true} 
      (incf val 64) 
    point-b 
      (incf val 08)) 
-
-
 
   val) 
 → 15 
@@ -81,13 +78,12 @@ The determination of which elements of the body are <GlossaryTerm styled={true} 
 (f1 t) 
 ▷ 1 
 → NIL 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"go"}><b>go</b></DictionaryLink> 
+<ClLinks  term={"go"}><b>go</b></ClLinks> 
 
 
 
@@ -95,7 +91,7 @@ The determination of which elements of the body are <GlossaryTerm styled={true} 
 
 
 
-The <GlossaryTerm styled={true} term={"macro"}><i>macros</i></GlossaryTerm> in Figure 5–10 have *implicit tagbodies*. 
+The <ClLinks  term={"macro"}><i>macros</i></ClLinks> in Figure 5–10 have *implicit tagbodies*. 
 
 
 

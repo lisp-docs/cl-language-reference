@@ -1,4 +1,4 @@
-**gensym** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**gensym** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"gensym"}><b>gensym</b></DictionaryLink> &amp;optional *x → new-symbol* 
+<ClLinks  term={"gensym"}><b>gensym</b></ClLinks> &amp;optional *x → new-symbol* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*x*—a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> or a non-negative *integer* . Complicated defaulting behavior; see below. *new-symbol*—a <GlossaryTerm styled={true} term={"fresh"}><i>fresh</i></GlossaryTerm>, *uninterned symbol*. 
+*x*—a <ClLinks  term={"string"}><i>string</i></ClLinks> or a non-negative *integer* . Complicated defaulting behavior; see below. *new-symbol*—a <ClLinks  term={"fresh"}><i>fresh</i></ClLinks>, *uninterned symbol*. 
 
 
 
@@ -22,25 +22,26 @@
 
 
 
-Creates and returns a <GlossaryTerm styled={true} term={"fresh"}><i>fresh</i></GlossaryTerm>, *uninterned symbol*, as if by calling <DictionaryLink styled={true} term={"make-symbol"}><b>make-symbol</b></DictionaryLink>. (The only difference between <DictionaryLink styled={true} term={"gensym"}><b>gensym</b></DictionaryLink> and <DictionaryLink styled={true} term={"make-symbol"}><b>make-symbol</b></DictionaryLink> is in how the *new-symbol*’s <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is determined.) 
+Creates and returns a <ClLinks  term={"fresh"}><i>fresh</i></ClLinks>, *uninterned symbol*, as if by calling <ClLinks  term={"make-symbol"}><b>make-symbol</b></ClLinks>. (The only difference between <ClLinks  term={"gensym"}><b>gensym</b></ClLinks> and <ClLinks  term={"make-symbol"}><b>make-symbol</b></ClLinks> is in how the *new-symbol*’s <ClLinks  term={"name"}><i>name</i></ClLinks> is determined.) 
 
 
 
-The <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> of the *new-symbol* is the concatenation of a prefix, which defaults to "G", and a suffix, which is the decimal representation of a number that defaults to the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"gensym-counter"}><b>\*gensym-counter\*</b></DictionaryLink>. 
+The <ClLinks  term={"name"}><i>name</i></ClLinks> of the *new-symbol* is the concatenation of a prefix, which defaults to "G", and a suffix, which is the decimal representation of a number that defaults to the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"gensym-counter"}><b>\*gensym-counter\*</b></ClLinks>. 
 
 
 
-If *x* is supplied, and is a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>, then that <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> is used as a prefix instead of "G" for this call to <DictionaryLink styled={true} term={"gensym"}><b>gensym</b></DictionaryLink> only. 
+If *x* is supplied, and is a <ClLinks  term={"string"}><i>string</i></ClLinks>, then that <ClLinks  term={"string"}><i>string</i></ClLinks> is used as a prefix instead of "G" for this call to <ClLinks  term={"gensym"}><b>gensym</b></ClLinks> only. 
 
 
 
-If *x* is supplied, and is an *integer* , then that *integer* , instead of the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"gensym-counter"}><b>\*gensym-counter\*</b></DictionaryLink>, is used as the suffix for this call to <DictionaryLink styled={true} term={"gensym"}><b>gensym</b></DictionaryLink> only. 
+If *x* is supplied, and is an *integer* , then that *integer* , instead of the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"gensym-counter"}><b>\*gensym-counter\*</b></ClLinks>, is used as the suffix for this call to <ClLinks  term={"gensym"}><b>gensym</b></ClLinks> only. 
 
 
 
-If and only if no explicit suffix is supplied, <DictionaryLink styled={true} term={"gensym-counter"}><b>\*gensym-counter\*</b></DictionaryLink> is incremented after it is used. **Examples:**
+If and only if no explicit suffix is supplied, <ClLinks  term={"gensym-counter"}><b>\*gensym-counter\*</b></ClLinks> is incremented after it is used. 
+
+**Examples:**
 ```lisp
-
 (setq sym1 (gensym)) → #:G3142 
 (symbol-package sym1) → NIL 
 (setq sym2 (gensym 100)) → #:G100 
@@ -48,17 +49,14 @@ If and only if no explicit suffix is supplied, <DictionaryLink styled={true} ter
 (eq sym2 sym3) → false 
 (find-symbol "G100") → NIL, NIL 
 
-
-
 (gensym "T") → #:T3143 
 (gensym) → #:G3144 
-
 ```
 **Side Effects:** 
 
 
 
-Might increment <DictionaryLink styled={true} term={"gensym-counter"}><b>\*gensym-counter\*</b></DictionaryLink>. 
+Might increment <ClLinks  term={"gensym-counter"}><b>\*gensym-counter\*</b></ClLinks>. 
 
 
 
@@ -66,7 +64,7 @@ Might increment <DictionaryLink styled={true} term={"gensym-counter"}><b>\*gensy
 
 
 
-<DictionaryLink styled={true} term={"gensym-counter"}><b>\*gensym-counter\*</b></DictionaryLink> 
+<ClLinks  term={"gensym-counter"}><b>\*gensym-counter\*</b></ClLinks> 
 
 
 
@@ -74,7 +72,7 @@ Might increment <DictionaryLink styled={true} term={"gensym-counter"}><b>\*gensy
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *x* is not a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> or a non-negative *integer* . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *x* is not a <ClLinks  term={"string"}><i>string</i></ClLinks> or a non-negative *integer* . 
 
 
 
@@ -82,7 +80,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"gentemp"}><b>gentemp</b></DictionaryLink>, <DictionaryLink styled={true} term={"gensym-counter"}><b>\*gensym-counter\*</b></DictionaryLink> 
+<ClLinks  term={"gentemp"}><b>gentemp</b></ClLinks>, <ClLinks  term={"gensym-counter"}><b>\*gensym-counter\*</b></ClLinks> 
 
 
 
@@ -90,7 +88,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-The ability to pass a numeric argument to <DictionaryLink styled={true} term={"gensym"}><b>gensym</b></DictionaryLink> has been deprecated; explicitly <GlossaryTerm styled={true} term={"binding"}><i>binding</i></GlossaryTerm> <DictionaryLink styled={true} term={"gensym-counter"}><b>\*gensym-counter\*</b></DictionaryLink> is now stylistically preferred. (The somewhat baroque conventions for the optional argument are historical in nature, and supported primarily for compatibility with older dialects of Lisp. In modern code, it is recommended that the only kind of argument used be a string prefix. In general, though, to obtain more flexible control of the *new-symbol*’s <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>, consider using <DictionaryLink styled={true} term={"make-symbol"}><b>make-symbol</b></DictionaryLink> instead.) 
+The ability to pass a numeric argument to <ClLinks  term={"gensym"}><b>gensym</b></ClLinks> has been deprecated; explicitly <ClLinks  term={"binding"}><i>binding</i></ClLinks> <ClLinks  term={"gensym-counter"}><b>\*gensym-counter\*</b></ClLinks> is now stylistically preferred. (The somewhat baroque conventions for the optional argument are historical in nature, and supported primarily for compatibility with older dialects of Lisp. In modern code, it is recommended that the only kind of argument used be a string prefix. In general, though, to obtain more flexible control of the *new-symbol*’s <ClLinks  term={"name"}><i>name</i></ClLinks>, consider using <ClLinks  term={"make-symbol"}><b>make-symbol</b></ClLinks> instead.) 
 
 
 

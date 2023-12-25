@@ -1,5 +1,4 @@
 ```lisp
-
 ;;;; Combining rationals with floats. 
 ;;; This example assumes an implementation in which 
 ;;; (float-radix 0.5) is 2 (as in IEEE) or 16 (as in IBM/360), 
@@ -15,5 +14,4 @@
 (< 5/7 (float 5/7)) → true 
 (< 5/7 (rational (float 5/7))) → true 
 (< (float 5/7) (float 5/7)) → false 
-
 ```

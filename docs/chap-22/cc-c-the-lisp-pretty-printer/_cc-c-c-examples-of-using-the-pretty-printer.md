@@ -1,10 +1,8 @@
 ```lisp
-
 As an example of the interaction of logical blocks, conditional newlines, and indentation, consider the function simple-pprint-defun below. This function prints out lists whose *cars* are **defun** in the standard way assuming that the list has exactly length 4. 
 (defun simple-pprint-defun (\*standard-output\* list) 
   (pprint-logical-block (\*standard-output\* list :prefix "(" :suffix ")") 
     (write (first list)) 
-
     
     
     (write-char #\Space) 
@@ -36,8 +34,6 @@ As an example of a per-line prefix, consider that evaluating the following produ
 (pprint-logical-block (\*standard-output\* nil :per-line-prefix ";;; ") 
   (simple-pprint-defun \*standard-output\* ’(defun prod (x y) (\* x y)))) 
 ;;; (DEFUN PROD 
-
-
 
 ;;; (X Y) 
 ;;; (\* X Y)) 
@@ -71,7 +67,6 @@ Suppose that one evaluates the following with **\*print-level\*** being 4, and *
 		  (setq x (sqrt z)) #1#)) 
 If the line length is greater than or equal to 77, the output produced appears on one line. However, 
 
-
 if the line length is 76, line breaks are inserted at the linear-style conditional newlines separating the forms in the body and the output below is produced. Note that, the degenerate binding pair x is printed readably even though it fails to be a list; a depth abbreviation marker is printed in place of (g 3); the binding pair (z . 2) is printed readably even though it is not a proper list; and appropriate circularity markers are printed. 
 #1=(LET (X (\*PRINT-LENGTH\* (F #)) (Z . 2) (K (CAR Y))) 
      (SETQ X (SQRT Z)) 
@@ -101,8 +96,6 @@ The next function prints a vector using “#(...)” notation.
 Evaluating the following with a line length of 15 produces the output shown. 
 (pprint-vector \*standard-output\* ’#(12 34 567 8 9012 34 567 89 0 1 23)) 
 
-
-
 #(12 34 567 8 
   9012 34 567 
   89 0 1 23) 
@@ -131,8 +124,6 @@ The following two *forms* illustrate the definition of pretty printing functions
 			      (funcall (formatter "’~W") s (cadr list)) 
 			      (pprint-fill s list)))) 
 
-
-
 (set-pprint-dispatch ’(cons (member my-let)) 
 		      (pprint-dispatch ’(let) nil)) 
 The next example specifies a default method for printing lists that do not correspond to function calls. Note that the functions **pprint-linear**, **pprint-fill**, and **pprint-tabular** are all defined with optional *colon-p* and *at-sign-p* arguments so that they can be used as **pprint dispatch functions** as well as ~/.../ functions. 
@@ -157,8 +148,6 @@ The pretty printing function for the structure family specifies how to adjust th
  #<Lucy and 
  Mark Bob . Dan>) 
 Note that a pretty printing function for a structure is different from the structure’s **print-object** *method*. While **print-object** *methods* are permanently associated with a structure, pretty printing functions are stored in *pprint dispatch tables* and can be rapidly changed to reflect different printing needs. If there is no pretty printing function for a structure in the current *pprint dispatch table*, its **print-object** *method* is used instead. 
-
-
 
 
 ```

@@ -1,4 +1,4 @@
-**multiple-value-bind** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
+**multiple-value-bind** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"multiple-value-bind"}><b>multiple-value-bind</b></DictionaryLink> (*\{var\}*\*) *values-form \{declaration\}*\* <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* 
+<ClLinks  term={"multiple-value-bind"}><b>multiple-value-bind</b></ClLinks> (*\{var\}*\*) *values-form \{declaration\}*\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -30,23 +30,23 @@ Data and Control
 
 
 
-*var*—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> naming a variable; not evaluated. 
+*var*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming a variable; not evaluated. 
 
 
 
-*values-form*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>; evaluated. 
+*values-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated. 
 
 
 
-<GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-<GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
 
 
 
-*results*—the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -54,31 +54,29 @@ Data and Control
 
 
 
-Creates new variable <GlossaryTerm styled={true} term={"binding"}><i>bindings</i></GlossaryTerm> for the *vars* and executes a series of <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> that use these <GlossaryTerm styled={true} term={"binding"}><i>bindings</i></GlossaryTerm>. The variable <GlossaryTerm styled={true} term={"binding"}><i>bindings</i></GlossaryTerm> created are lexical unless <DictionaryLink styled={true} term={"special"}><b>special</b></DictionaryLink> declarations are specified. 
+Creates new variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> for the *vars* and executes a series of <ClLinks  term={"form"}><i>forms</i></ClLinks> that use these <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. The variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> created are lexical unless <ClLinks  term={"special"}><b>special</b></ClLinks> declarations are specified. 
 
 
 
-*Values-form* is evaluated, and each of the *vars* is bound to the respective value returned by that <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. If there are more *vars* than values returned, extra values of <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> are given to the remaining *vars*. If there are more values than *vars*, the excess values are discarded. The *vars* are bound to the values over the execution of the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>, which make up an implicit <DictionaryLink styled={true} term={"progn"}><b>progn</b></DictionaryLink>. The consequences are unspecified if a type <GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm> is specified for a *var*, but the value to which that *var* is bound is not consistent with the type <GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm>. 
+*Values-form* is evaluated, and each of the *vars* is bound to the respective value returned by that <ClLinks  term={"form"}><i>form</i></ClLinks>. If there are more *vars* than values returned, extra values of <ClLinks  term={"nil"}><b>nil</b></ClLinks> are given to the remaining *vars*. If there are more values than *vars*, the excess values are discarded. The *vars* are bound to the values over the execution of the <ClLinks  term={"form"}><i>forms</i></ClLinks>, which make up an implicit <ClLinks  term={"progn"}><b>progn</b></ClLinks>. The consequences are unspecified if a type <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> is specified for a *var*, but the value to which that *var* is bound is not consistent with the type <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. 
 
 
 
-The <GlossaryTerm styled={true} term={"scope"}><i>scopes</i></GlossaryTerm> of the name binding and <GlossaryTerm styled={true} term={"declaration"}><i>declarations</i></GlossaryTerm> do not include the *values-form*. 
+The <ClLinks  term={"scope"}><i>scopes</i></ClLinks> of the name binding and <ClLinks  term={"declaration"}><i>declarations</i></ClLinks> do not include the *values-form*. 
 
 
 
 **Examples:**
 ```lisp
-
 (multiple-value-bind (f r) 
     (floor 130 11) 
   (list f r)) *!* (11 9) 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"let"}><b>let</b></DictionaryLink>, <DictionaryLink styled={true} term={"multiple-value-call"}><b>multiple-value-call</b></DictionaryLink> 
+<ClLinks  term={"let"}><b>let</b></ClLinks>, <ClLinks  term={"multiple-value-call"}><b>multiple-value-call</b></ClLinks> 
 
 
 
@@ -98,7 +96,7 @@ The <GlossaryTerm styled={true} term={"scope"}><i>scopes</i></GlossaryTerm> of t
 
 
 
-<GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\*) 
+<ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\*) 
 
 
 

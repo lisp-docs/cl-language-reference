@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> &amp;rest *initargs* &amp;key &amp;allow-other-keys → new-instance 
+<ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks> <ClLinks  term={"class"}><i>class</i></ClLinks> &amp;rest *initargs* &amp;key &amp;allow-other-keys → new-instance 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<DictionaryLink styled={true} term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> (<GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink styled={true} term={"standard-class"}><b>standard-class</b></DictionaryLink>) &amp;rest *initargs* 
+<ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks> (<ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks>) &amp;rest *initargs* 
 
 
 
-<DictionaryLink styled={true} term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> (<GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink styled={true} term={"structure-class"}><b>structure-class</b></DictionaryLink>) &amp;rest *initargs* 
+<ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks> (<ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"structure-class"}><b>structure-class</b></ClLinks>) &amp;rest *initargs* 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm>. 
+<ClLinks  term={"class"}><i>class</i></ClLinks>—a <ClLinks  term={"class"}><i>class</i></ClLinks>. 
 
 
 
-*initargs*—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of *keyword/value pairs* (initialization argument <GlossaryTerm styled={true} term={"name"}><i>names</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm>). *new-instance*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> whose <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm>. 
+*initargs*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *keyword/value pairs* (initialization argument <ClLinks  term={"name"}><i>names</i></ClLinks> and <ClLinks  term={"value"}><i>values</i></ClLinks>). *new-instance*—an <ClLinks  term={"object"}><i>object</i></ClLinks> whose <ClLinks  term={"class"}><i>class</i></ClLinks> is <ClLinks  term={"class"}><i>class</i></ClLinks>. 
 
 
 
@@ -50,15 +50,15 @@
 
 
 
-The generic function <DictionaryLink styled={true} term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> creates and returns a new instance of the <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm>, without initializing it. When the <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> is a *standard class*, this means that the <GlossaryTerm styled={true} term={"slot"}><i>slots</i></GlossaryTerm> are <GlossaryTerm styled={true} term={"unbound"}><i>unbound</i></GlossaryTerm>; when the <GlossaryTerm styled={true} term={"class"}><i>class</i></GlossaryTerm> is a *structure class*, this means the <GlossaryTerm styled={true} term={"slot"}><i>slots</i></GlossaryTerm>’ <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> are unspecified. 
+The generic function <ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks> creates and returns a new instance of the <ClLinks  term={"class"}><i>class</i></ClLinks>, without initializing it. When the <ClLinks  term={"class"}><i>class</i></ClLinks> is a *standard class*, this means that the <ClLinks  term={"slot"}><i>slots</i></ClLinks> are <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>; when the <ClLinks  term={"class"}><i>class</i></ClLinks> is a *structure class*, this means the <ClLinks  term={"slot"}><i>slots</i></ClLinks>’ <ClLinks  term={"value"}><i>values</i></ClLinks> are unspecified. 
 
 
 
-The caller of <DictionaryLink styled={true} term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> is expected to have already checked the initialization arguments. 
+The caller of <ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks> is expected to have already checked the initialization arguments. 
 
 
 
-The *generic function* <DictionaryLink styled={true} term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> is called by <DictionaryLink styled={true} term={"make-instance"}><b>make-instance</b></DictionaryLink>, as described in Section 7.1 (Object Creation and Initialization). 
+The *generic function* <ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks> is called by <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks>, as described in Section 7.1 (Object Creation and Initialization). 
 
 
 
@@ -66,7 +66,7 @@ The *generic function* <DictionaryLink styled={true} term={"allocate-instance"}>
 
 
 
-<DictionaryLink styled={true} term={"defclass"}><b>defclass</b></DictionaryLink>, <DictionaryLink styled={true} term={"make-instance"}><b>make-instance</b></DictionaryLink>, <DictionaryLink styled={true} term={"class-of"}><b>class-of</b></DictionaryLink>, Section 7.1 (Object Creation and Initialization) 
+<ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks>, <ClLinks  term={"class-of"}><b>class-of</b></ClLinks>, Section 7.1 (Object Creation and Initialization) 
 
 
 
@@ -74,7 +74,7 @@ The *generic function* <DictionaryLink styled={true} term={"allocate-instance"}>
 
 
 
-The consequences of adding <GlossaryTerm styled={true} term={"method"}><i>methods</i></GlossaryTerm> to <DictionaryLink styled={true} term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> is unspecified. This capability might be added by the *Metaobject Protocol*. 
+The consequences of adding <ClLinks  term={"method"}><i>methods</i></ClLinks> to <ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks> is unspecified. This capability might be added by the *Metaobject Protocol*. 
 
 
 

@@ -1,4 +1,4 @@
-**readtablep** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**readtablep** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"readtablep"}><b>readtablep</b></DictionaryLink> *object → generalized-boolean* 
+<ClLinks  term={"readtablep"}><b>readtablep</b></ClLinks> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"readtable"}><b>readtable</b></DictionaryLink>; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"readtable"}><b>readtable</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -36,13 +36,12 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 (readtablep \*readtable\*) → true 
 (readtablep (copy-readtable)) → true 
 (readtablep ’\*readtable\*) → false 
-
 ```
 **Notes:** 
 
 
 
-(readtablep <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>) *≡* (typep <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> ’readtable) 
+(readtablep <ClLinks  term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks  term={"object"}><i>object</i></ClLinks> ’readtable) 
 
 
 
@@ -74,7 +73,7 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 
 
 
-**set-dispatch-macro-character** *disp-char sub-char new-function* &amp;optional *readtable →* <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
+**set-dispatch-macro-character** *disp-char sub-char new-function* &amp;optional *readtable →* <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -82,19 +81,19 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 
 
 
-*disp-char*—a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
+*disp-char*—a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
 
 
 
-*sub-char*—a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
+*sub-char*—a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
 
 
 
-<GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm>—a *readtable designator* . The default is the *current readtable*. 
+<ClLinks  term={"readtable"}><i>readtable</i></ClLinks>—a *readtable designator* . The default is the *current readtable*. 
 
 
 
-<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>—a *function designator* or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+<ClLinks  term={"function"}><i>function</i></ClLinks>—a *function designator* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -110,7 +109,7 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 
 
 
-**set-dispatch-macro-character** installs a *new-function* to be called when a particular *dispatching macro character* pair is read. *New-function* is installed as the dispatch function to be called when <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm> is in use and when *disp-char* is followed by *sub-char*. 
+**set-dispatch-macro-character** installs a *new-function* to be called when a particular *dispatching macro character* pair is read. *New-function* is installed as the dispatch function to be called when <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is in use and when *disp-char* is followed by *sub-char*. 
 
 
 
@@ -118,17 +117,16 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 
 
 
-**get-dispatch-macro-character** retrieves the dispatch function associated with *disp-char* and *sub-char* in <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm>. 
+**get-dispatch-macro-character** retrieves the dispatch function associated with *disp-char* and *sub-char* in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
 
 
 
-**get-dispatch-macro-character** returns the macro-character function for *sub-char* under *disp char*, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if there is no function associated with *sub-char*. If *sub-char* is a decimal digit, **get-dispatch-macro-character** returns <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+**get-dispatch-macro-character** returns the macro-character function for *sub-char* under *disp char*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if there is no function associated with *sub-char*. If *sub-char* is a decimal digit, **get-dispatch-macro-character** returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (get-dispatch-macro-character #\# #\\&#123;) → NIL 
 			      (set-dispatch-macro-character #\# #\\&#123; ;dispatch on #\&#123; 
 							    #’(lambda(s c n) 
@@ -136,7 +134,6 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 								  (when (consp list) ;return nth element of list 
 								    (unless (and n (< 0 n (length list))) (setq n 0)) 
 								    (setq list (nth n list))) 
-
 								  
 								  
 								  list))) → T 
@@ -148,7 +145,6 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 				(declare (ignore subchar arg)) 
 				(list ’dollars (read stream t nil t))) → |#$-reader| 
 			      (set-dispatch-macro-character #\# #\$ #’|#$-reader|) → T 
-
 ```
 **See Also:** 
 
@@ -162,7 +158,7 @@ Section 2.1.4.4 (Macro Characters)
 
 
 
-The <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm> is modified. 
+The <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is modified. 
 
 
 
@@ -170,7 +166,7 @@ The <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTer
 
 
 
-<DictionaryLink styled={true} term={"readtable"}><b>\*readtable\*</b></DictionaryLink>. 
+<ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks>. 
 
 
 
@@ -178,7 +174,7 @@ The <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTer
 
 
 
-For either function, an error is signaled if *disp-char* is not a *dispatching macro character* in <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm>. 
+For either function, an error is signaled if *disp-char* is not a *dispatching macro character* in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
 
 
 
@@ -186,7 +182,7 @@ For either function, an error is signaled if *disp-char* is not a *dispatching m
 
 
 
-<DictionaryLink styled={true} term={"readtable"}><b>\*readtable\*</b></DictionaryLink> 
+<ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks> 
 
 
 
@@ -194,7 +190,7 @@ For either function, an error is signaled if *disp-char* is not a *dispatching m
 
 
 
-It is necessary to use <DictionaryLink styled={true} term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></DictionaryLink> to set up the dispatch character before specifying its sub-characters. 
+It is necessary to use <ClLinks  term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></ClLinks> to set up the dispatch character before specifying its sub-characters. 
 
 
 

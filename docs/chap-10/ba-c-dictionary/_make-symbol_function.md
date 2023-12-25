@@ -1,4 +1,4 @@
-**make-symbol** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**make-symbol** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"make-symbol"}><b>make-symbol</b></DictionaryLink> *name → new-symbol* 
+<ClLinks  term={"make-symbol"}><b>make-symbol</b></ClLinks> *name → new-symbol* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
-*new-symbol*—a <GlossaryTerm styled={true} term={"fresh"}><i>fresh</i></GlossaryTerm>, *uninterned symbol*. 
+*new-symbol*—a <ClLinks  term={"fresh"}><i>fresh</i></ClLinks>, *uninterned symbol*. 
 
 
 
@@ -26,30 +26,28 @@
 
 
 
-<DictionaryLink styled={true} term={"make-symbol"}><b>make-symbol</b></DictionaryLink> creates and returns a <GlossaryTerm styled={true} term={"fresh"}><i>fresh</i></GlossaryTerm>, *uninterned symbol* whose <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is the given <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>. The *new-symbol* is neither <GlossaryTerm styled={true} term={"bound"}><i>bound</i></GlossaryTerm> nor <GlossaryTerm styled={true} term={"fbound"}><i>fbound</i></GlossaryTerm> and has a *null property list*. 
+<ClLinks  term={"make-symbol"}><b>make-symbol</b></ClLinks> creates and returns a <ClLinks  term={"fresh"}><i>fresh</i></ClLinks>, *uninterned symbol* whose <ClLinks  term={"name"}><i>name</i></ClLinks> is the given <ClLinks  term={"name"}><i>name</i></ClLinks>. The *new-symbol* is neither <ClLinks  term={"bound"}><i>bound</i></ClLinks> nor <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> and has a *null property list*. 
 
 
 
-It is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> whether the <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> that becomes the *new-symbol*’s <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is the given <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> or a copy of it. Once a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> has been given as the *name argument* to *make-symbol*, the consequences are undefined if a subsequent attempt is made to alter that <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>. 
+It is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the <ClLinks  term={"string"}><i>string</i></ClLinks> that becomes the *new-symbol*’s <ClLinks  term={"name"}><i>name</i></ClLinks> is the given <ClLinks  term={"name"}><i>name</i></ClLinks> or a copy of it. Once a <ClLinks  term={"string"}><i>string</i></ClLinks> has been given as the *name argument* to *make-symbol*, the consequences are undefined if a subsequent attempt is made to alter that <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (setq temp-string "temp") → "temp" 
 (setq temp-symbol (make-symbol temp-string)) → #:|temp| 
 (symbol-name temp-symbol) → "temp" 
 (eq (symbol-name temp-symbol) temp-string) → implementation-dependent 
 (find-symbol "temp") → NIL, NIL 
 (eq (make-symbol temp-string) (make-symbol temp-string)) → false 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"name"}><i>name</i></ClLinks> is not a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -57,7 +55,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"copy-symbol"}><b>copy-symbol</b></DictionaryLink> 
+<ClLinks  term={"copy-symbol"}><b>copy-symbol</b></ClLinks> 
 
 
 
@@ -65,7 +63,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-No attempt is made by <DictionaryLink styled={true} term={"make-symbol"}><b>make-symbol</b></DictionaryLink> to convert the case of the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> to uppercase. The only case conversion which ever occurs for <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> is done by the *Lisp reader* . The program interface to <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> creation retains case, and the program interface to interning symbols is case-sensitive. 
+No attempt is made by <ClLinks  term={"make-symbol"}><b>make-symbol</b></ClLinks> to convert the case of the <ClLinks  term={"name"}><i>name</i></ClLinks> to uppercase. The only case conversion which ever occurs for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is done by the *Lisp reader* . The program interface to <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> creation retains case, and the program interface to interning symbols is case-sensitive. 
 
 
 
@@ -81,7 +79,7 @@ No attempt is made by <DictionaryLink styled={true} term={"make-symbol"}><b>make
 
 
 
-<DictionaryLink styled={true} term={"copy-symbol"}><b>copy-symbol</b></DictionaryLink> 
+<ClLinks  term={"copy-symbol"}><b>copy-symbol</b></ClLinks> 
 
 
 

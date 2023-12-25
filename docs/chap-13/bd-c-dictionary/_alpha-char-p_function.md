@@ -1,4 +1,4 @@
-**alpha-char-p** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**alpha-char-p** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"alpha-char-p"}><b>alpha-char-p</b></DictionaryLink> *character → generalized-boolean* 
+<ClLinks styled={true} term={"alpha-char-p"}><b>alpha-char-p</b></ClLinks> *character → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
+<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -26,20 +26,18 @@
 
 
 
-Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> is an <GlossaryTerm styled={true} term={"alphabetic"}><i>alphabetic</i></GlossaryTerm><sub>1</sub> <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> ; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is an <ClLinks styled={true} term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>1</sub> <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> ; otherwise, returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (alpha-char-p #\a) → true 
 (alpha-char-p #\5) → false 
 (alpha-char-p #\Newline) → false 
 ;; This next example presupposes an implementation 
 ;; in which #\*α* is a defined character. 
 (alpha-char-p #\*α*) → implementation-dependent 
-
 ```
 **Affected By:** 
 
@@ -53,7 +51,7 @@ None. (In particular, the results of this predicate are independent of any speci
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is not a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -61,7 +59,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"alphanumericp"}><b>alphanumericp</b></DictionaryLink>, Section 13.1.10 (Documentation of Implementation-Defined Scripts) 
+<ClLinks styled={true} term={"alphanumericp"}><b>alphanumericp</b></ClLinks>, Section 13.1.10 (Documentation of Implementation-Defined Scripts) 
 
 
 

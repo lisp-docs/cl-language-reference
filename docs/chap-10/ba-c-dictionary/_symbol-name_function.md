@@ -1,4 +1,4 @@
-**symbol-name** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**symbol-name** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"symbol-name"}><b>symbol-name</b></DictionaryLink> *symbol → name* 
+<ClLinks  term={"symbol-name"}><b>symbol-name</b></ClLinks> *symbol → name* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -26,23 +26,21 @@
 
 
 
-<DictionaryLink styled={true} term={"symbol-name"}><b>symbol-name</b></DictionaryLink> returns the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. The consequences are undefined if <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is ever modified. 
+<ClLinks  term={"symbol-name"}><b>symbol-name</b></ClLinks> returns the <ClLinks  term={"name"}><i>name</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. The consequences are undefined if <ClLinks  term={"name"}><i>name</i></ClLinks> is ever modified. 
 
 
 
 **Examples:**
 ```lisp
-
 (symbol-name ’temp) → "TEMP" 
 (symbol-name :start) → "START" 
 (symbol-name (gensym)) → "G1234" ;for example 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -58,7 +56,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"symbol-package"}><b>symbol-package</b></DictionaryLink> 
+<ClLinks  term={"symbol-package"}><b>symbol-package</b></ClLinks> 
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-A Common Lisp system evaluates <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> with respect to lexical, dynamic, and global <GlossaryTerm styled={true} term={"environment"}><i>environments</i></GlossaryTerm>. The following sections describe the components of the Common Lisp evaluation model. 
+A Common Lisp system evaluates <ClLinks  term={"form"}><i>forms</i></ClLinks> with respect to lexical, dynamic, and global <ClLinks  term={"environment"}><i>environments</i></ClLinks>. The following sections describe the components of the Common Lisp evaluation model. 
 
 
 

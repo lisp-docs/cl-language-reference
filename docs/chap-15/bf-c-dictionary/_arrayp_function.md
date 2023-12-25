@@ -1,4 +1,4 @@
-**arrayp** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**arrayp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"arrayp"}><b>arrayp</b></DictionaryLink> *object → generalized-boolean* 
+<ClLinks  term={"arrayp"}><b>arrayp</b></ClLinks> *object → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -26,29 +26,25 @@
 
 
 
-Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"array"}><b>array</b></DictionaryLink>; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"array"}><b>array</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (arrayp (make-array ’(2 3 4) :adjustable t)) → true 
 (arrayp (make-array 6)) → true 
 (arrayp #\*1011) → true 
 
-
-
 (arrayp "hi") → true 
 (arrayp ’hi) → false 
 (arrayp 12) → false 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"typep"}><b>typep</b></DictionaryLink> 
+<ClLinks  term={"typep"}><b>typep</b></ClLinks> 
 
 
 
@@ -56,7 +52,7 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 
 
 
-(arrayp <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>) *≡* (typep <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> ’array) 
+(arrayp <ClLinks  term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks  term={"object"}><i>object</i></ClLinks> ’array) 
 
 
 

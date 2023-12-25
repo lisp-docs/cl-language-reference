@@ -1,5 +1,4 @@
 ```lisp
-
 (format nil "foo") → "foo" 
 (setq x 5) → 5 
 (format nil "The answer is ~D." x) → "The answer is 5." 
@@ -40,7 +39,6 @@
 As an example of the effects of varying the scale factor, the code 
 (dotimes (k 13) 
   (format t "~%Scale factor ~2D: |~13,6,2,VE|" 
-
 	  
 	  
 	  (- k 5) (- k 5) 3.14159)) 
@@ -70,8 +68,6 @@ Scale factor 7: | 3141590.E-06|
 (format nil "~10:@<foobar~>") → " foobar " 
 (FORMAT NIL "Written to ~A." #P"foo.bin") 
 → "Written to foo.bin." 
-
-
 
 
 ```

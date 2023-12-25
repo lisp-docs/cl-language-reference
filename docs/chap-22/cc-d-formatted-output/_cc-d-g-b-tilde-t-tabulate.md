@@ -6,7 +6,7 @@ This spaces over to a given column. &#126;*colnum*,*colinc*T will output suffici
 
 
 
-If for some reason the current absolute column position cannot be determined by direct inquiry, <DictionaryLink styled={true} term={"format"}><b>format</b></DictionaryLink> may be able to deduce the current column position by noting that certain directives (such as &#126;%, or &#126;&amp;, or &#126;A with the argument being a string containing a newline) cause the column position to be reset to zero, and counting the number of characters emitted since that point. If that fails, <DictionaryLink styled={true} term={"format"}><b>format</b></DictionaryLink> may attempt a similar deduction on the riskier assumption that the destination was at column zero when <DictionaryLink styled={true} term={"format"}><b>format</b></DictionaryLink> was invoked. If even this heuristic fails or is implementationally inconvenient, at worst the &#126;T operation will simply output two spaces. 
+If for some reason the current absolute column position cannot be determined by direct inquiry, <ClLinks styled={true} term={"format"}><b>format</b></ClLinks> may be able to deduce the current column position by noting that certain directives (such as &#126;%, or &#126;&amp;, or &#126;A with the argument being a string containing a newline) cause the column position to be reset to zero, and counting the number of characters emitted since that point. If that fails, <ClLinks styled={true} term={"format"}><b>format</b></ClLinks> may attempt a similar deduction on the riskier assumption that the destination was at column zero when <ClLinks styled={true} term={"format"}><b>format</b></ClLinks> was invoked. If even this heuristic fails or is implementationally inconvenient, at worst the &#126;T operation will simply output two spaces. 
 
 
 
@@ -14,7 +14,7 @@ If for some reason the current absolute column position cannot be determined by 
 
 
 
-If the <GlossaryTerm styled={true} term={"colon"}><i>colon</i></GlossaryTerm> modifier is used with the &#126;T directive, the tabbing computation is done relative to the horizontal position where the section immediately containing the directive begins, rather than with respect to a horizontal position of zero. The numerical parameters are both interpreted as being in units of <GlossaryTerm styled={true} term={"em"}><i>ems</i></GlossaryTerm> and both default to 1. &#126;*n*,*m*:T is the same as (pprint-tab :section *n m*). &#126;*n*,*m*:@T 
+If the <ClLinks styled={true} term={"colon"}><i>colon</i></ClLinks> modifier is used with the &#126;T directive, the tabbing computation is done relative to the horizontal position where the section immediately containing the directive begins, rather than with respect to a horizontal position of zero. The numerical parameters are both interpreted as being in units of <ClLinks styled={true} term={"em"}><i>ems</i></ClLinks> and both default to 1. &#126;*n*,*m*:T is the same as (pprint-tab :section *n m*). &#126;*n*,*m*:@T 
 
 
 

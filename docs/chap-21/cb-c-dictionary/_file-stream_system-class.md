@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"file-stream"}><b>file-stream</b></DictionaryLink>, <DictionaryLink styled={true} term={"stream"}><b>stream</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
+<ClLinks  term={"file-stream"}><b>file-stream</b></ClLinks>, <ClLinks  term={"stream"}><b>stream</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-An <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"file-stream"}><b>file-stream</b></DictionaryLink> is a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> the direct source or sink of which is a <GlossaryTerm styled={true} term={"file"}><i>file</i></GlossaryTerm>. Such a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is created explicitly by <DictionaryLink styled={true} term={"open"}><b>open</b></DictionaryLink> and <DictionaryLink styled={true} term={"with-open-file"}><b>with-open-file</b></DictionaryLink>, and implicitly by <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> such as <DictionaryLink styled={true} term={"load"}><b>load</b></DictionaryLink> that process <GlossaryTerm styled={true} term={"file"}><i>files</i></GlossaryTerm>. 
+An <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-stream"}><b>file-stream</b></ClLinks> is a <ClLinks  term={"stream"}><i>stream</i></ClLinks> the direct source or sink of which is a <ClLinks  term={"file"}><i>file</i></ClLinks>. Such a <ClLinks  term={"stream"}><i>stream</i></ClLinks> is created explicitly by <ClLinks  term={"open"}><b>open</b></ClLinks> and <ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks>, and implicitly by <ClLinks  term={"function"}><i>functions</i></ClLinks> such as <ClLinks  term={"load"}><b>load</b></ClLinks> that process <ClLinks  term={"file"}><i>files</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ An <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> of <
 
 
 
-<DictionaryLink styled={true} term={"load"}><b>load</b></DictionaryLink>, <DictionaryLink styled={true} term={"open"}><b>open</b></DictionaryLink>, <DictionaryLink styled={true} term={"with-open-file"}><b>with-open-file</b></DictionaryLink> 
+<ClLinks  term={"load"}><b>load</b></ClLinks>, <ClLinks  term={"open"}><b>open</b></ClLinks>, <ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> 
 
 
 

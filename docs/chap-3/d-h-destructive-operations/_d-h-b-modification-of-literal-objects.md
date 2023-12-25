@@ -2,51 +2,51 @@
 
 
 
-The consequences are undefined if *literal objects* are destructively modified. For this purpose, the following operations are considered <GlossaryTerm styled={true} term={"destructive"}><i>destructive</i></GlossaryTerm>: 
+The consequences are undefined if *literal objects* are destructively modified. For this purpose, the following operations are considered <ClLinks  term={"destructive"}><i>destructive</i></ClLinks>: 
 
 
 
-<DictionaryLink styled={true} term={"random-state"}><b>random-state</b></DictionaryLink> 
+<ClLinks  term={"random-state"}><b>random-state</b></ClLinks> 
 
 
 
-Using it as an <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm> to the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"random"}><b>random</b></DictionaryLink>. 
+Using it as an <ClLinks  term={"argument"}><i>argument</i></ClLinks> to the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"random"}><b>random</b></ClLinks>. 
 
 
 
-<DictionaryLink styled={true} term={"cons"}><b>cons</b></DictionaryLink> 
+<ClLinks  term={"cons"}><b>cons</b></ClLinks> 
 
 
 
-Changing the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> <sub>1</sub> or <GlossaryTerm styled={true} term={"cdr"}><i>cdr</i></GlossaryTerm> <sub>1</sub> of the <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm>, or performing a <GlossaryTerm styled={true} term={"destructive"}><i>destructive</i></GlossaryTerm> operation on an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> which is either the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> <sub>2</sub> or the <GlossaryTerm styled={true} term={"cdr"}><i>cdr</i></GlossaryTerm> <sub>2</sub> of the <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm>. 
+Changing the <ClLinks  term={"car"}><i>car</i></ClLinks> <sub>1</sub> or <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> <sub>1</sub> of the <ClLinks  term={"cons"}><i>cons</i></ClLinks>, or performing a <ClLinks  term={"destructive"}><i>destructive</i></ClLinks> operation on an <ClLinks  term={"object"}><i>object</i></ClLinks> which is either the <ClLinks  term={"car"}><i>car</i></ClLinks> <sub>2</sub> or the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> <sub>2</sub> of the <ClLinks  term={"cons"}><i>cons</i></ClLinks>. 
 
 
 
-<DictionaryLink styled={true} term={"array"}><b>array</b></DictionaryLink> 
+<ClLinks  term={"array"}><b>array</b></ClLinks> 
 
 
 
-Storing a new value into some element of the <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>, or performing a <GlossaryTerm styled={true} term={"destructive"}><i>destructive</i></GlossaryTerm> operation on an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> that is already such an <GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm>. 
+Storing a new value into some element of the <ClLinks  term={"array"}><i>array</i></ClLinks>, or performing a <ClLinks  term={"destructive"}><i>destructive</i></ClLinks> operation on an <ClLinks  term={"object"}><i>object</i></ClLinks> that is already such an <ClLinks  term={"element"}><i>element</i></ClLinks>. 
 
 
 
-Changing the *fill pointer* , <GlossaryTerm styled={true} term={"dimension"}><i>dimensions</i></GlossaryTerm>, or displacement of the <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> (regardless of whether the <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> is *actually adjustable*). 
+Changing the *fill pointer* , <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>, or displacement of the <ClLinks  term={"array"}><i>array</i></ClLinks> (regardless of whether the <ClLinks  term={"array"}><i>array</i></ClLinks> is *actually adjustable*). 
 
 
 
-Performing a <GlossaryTerm styled={true} term={"destructive"}><i>destructive</i></GlossaryTerm> operation on another <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> that is displaced to the <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> or that otherwise shares its contents with the <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. 
+Performing a <ClLinks  term={"destructive"}><i>destructive</i></ClLinks> operation on another <ClLinks  term={"array"}><i>array</i></ClLinks> that is displaced to the <ClLinks  term={"array"}><i>array</i></ClLinks> or that otherwise shares its contents with the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
-<DictionaryLink styled={true} term={"hash-table"}><b>hash-table</b></DictionaryLink> 
+<ClLinks  term={"hash-table"}><b>hash-table</b></ClLinks> 
 
 
 
-Performing a <GlossaryTerm styled={true} term={"destructive"}><i>destructive</i></GlossaryTerm> operation on any <GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>. 
+Performing a <ClLinks  term={"destructive"}><i>destructive</i></ClLinks> operation on any <ClLinks  term={"key"}><i>key</i></ClLinks>. 
 
 
 
-Storing a new <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm><sub>4</sub> for any <GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>, or performing a <GlossaryTerm styled={true} term={"destructive"}><i>destructive</i></GlossaryTerm> operation on any <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> that is such a <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm>. 
+Storing a new <ClLinks  term={"value"}><i>value</i></ClLinks><sub>4</sub> for any <ClLinks  term={"key"}><i>key</i></ClLinks>, or performing a <ClLinks  term={"destructive"}><i>destructive</i></ClLinks> operation on any <ClLinks  term={"object"}><i>object</i></ClLinks> that is such a <ClLinks  term={"value"}><i>value</i></ClLinks>. 
 
 
 
@@ -54,23 +54,23 @@ Adding or removing entries from the *hash table*.
 
 
 
-<DictionaryLink styled={true} term={"structure-object"}><b>structure-object</b></DictionaryLink> 
+<ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks> 
 
 
 
-Storing a new value into any slot, or performing a <GlossaryTerm styled={true} term={"destructive"}><i>destructive</i></GlossaryTerm> operation on an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> that is the value of some slot. 
+Storing a new value into any slot, or performing a <ClLinks  term={"destructive"}><i>destructive</i></ClLinks> operation on an <ClLinks  term={"object"}><i>object</i></ClLinks> that is the value of some slot. 
 
 
 
-<DictionaryLink styled={true} term={"standard-object"}><b>standard-object</b></DictionaryLink> 
+<ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks> 
 
 
 
-Storing a new value into any slot, or performing a <GlossaryTerm styled={true} term={"destructive"}><i>destructive</i></GlossaryTerm> operation on an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> that is the value of some slot. 
+Storing a new value into any slot, or performing a <ClLinks  term={"destructive"}><i>destructive</i></ClLinks> operation on an <ClLinks  term={"object"}><i>object</i></ClLinks> that is the value of some slot. 
 
 
 
-Changing the class of the <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> (*e.g.*, using the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"change-class"}><b>change-class</b></DictionaryLink>).  
+Changing the class of the <ClLinks  term={"object"}><i>object</i></ClLinks> (*e.g.*, using the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"change-class"}><b>change-class</b></ClLinks>).  
 
 
 
@@ -78,7 +78,7 @@ Changing the class of the <GlossaryTerm styled={true} term={"object"}><i>object<
 
 
 
-<DictionaryLink styled={true} term={"readtable"}><b>readtable</b></DictionaryLink> 
+<ClLinks  term={"readtable"}><b>readtable</b></ClLinks> 
 
 
 
@@ -90,15 +90,15 @@ Altering the syntax type of any character in this readtable.
 
 
 
-Altering the *reader macro function* associated with any <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm>, or altering the *reader macro functions* associated with <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> defined as *dispatching macro characters* in the <GlossaryTerm styled={true} term={"readtable"}><i>readtable</i></GlossaryTerm>. 
+Altering the *reader macro function* associated with any <ClLinks  term={"character"}><i>character</i></ClLinks> in the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>, or altering the *reader macro functions* associated with <ClLinks  term={"character"}><i>characters</i></ClLinks> defined as *dispatching macro characters* in the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
 
 
 
-<DictionaryLink styled={true} term={"stream"}><b>stream</b></DictionaryLink> 
+<ClLinks  term={"stream"}><b>stream</b></ClLinks> 
 
 
 
-Performing I/O operations on the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>, or *closing* the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
+Performing I/O operations on the <ClLinks  term={"stream"}><i>stream</i></ClLinks>, or *closing* the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -106,11 +106,11 @@ All other standardized types
 
 
 
-[This category includes, for example, <DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink>, <DictionaryLink styled={true} term={"condition"}><b>condition</b></DictionaryLink>, <DictionaryLink styled={true} term={"function"}><b>function</b></DictionaryLink>, 
+[This category includes, for example, <ClLinks  term={"character"}><b>character</b></ClLinks>, <ClLinks  term={"condition"}><b>condition</b></ClLinks>, <ClLinks  term={"function"}><b>function</b></ClLinks>, 
 
 
 
-<DictionaryLink styled={true} term={"method-combination"}><b>method-combination</b></DictionaryLink>, <DictionaryLink styled={true} term={"method"}><b>method</b></DictionaryLink>, <DictionaryLink styled={true} term={"number"}><b>number</b></DictionaryLink>, <DictionaryLink styled={true} term={"package"}><b>package</b></DictionaryLink>, <DictionaryLink styled={true} term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink styled={true} term={"restart"}><b>restart</b></DictionaryLink>, and <DictionaryLink styled={true} term={"symbol"}><b>symbol</b></DictionaryLink>.] There are no *standardized destructive* operations defined on <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> of these <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm>. 
+<ClLinks  term={"method-combination"}><b>method-combination</b></ClLinks>, <ClLinks  term={"method"}><b>method</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"package"}><b>package</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"restart"}><b>restart</b></ClLinks>, and <ClLinks  term={"symbol"}><b>symbol</b></ClLinks>.] There are no *standardized destructive* operations defined on <ClLinks  term={"object"}><i>objects</i></ClLinks> of these <ClLinks  term={"type"}><i>types</i></ClLinks>. 
 
 
 

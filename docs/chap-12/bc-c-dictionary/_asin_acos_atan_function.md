@@ -1,4 +1,4 @@
-**asin, acos, atan** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**asin, acos, atan** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,15 +6,15 @@
 
 
 
-<DictionaryLink styled={true} term={"asin"}><b>asin</b></DictionaryLink> *number → radians* 
+<ClLinks  term={"asin"}><b>asin</b></ClLinks> *number → radians* 
 
 
 
-<DictionaryLink styled={true} term={"acos"}><b>acos</b></DictionaryLink> *number → radians* 
+<ClLinks  term={"acos"}><b>acos</b></ClLinks> *number → radians* 
 
 
 
-<DictionaryLink styled={true} term={"atan"}><b>atan</b></DictionaryLink> *number1* &amp;optional *number2 → radians* 
+<ClLinks  term={"atan"}><b>atan</b></ClLinks> *number1* &amp;optional *number2 → radians* 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . 
+<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 
-*number1*—a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> if *number2* is not supplied, or a *real* if *number2* is supplied. 
+*number1*—a <ClLinks  term={"number"}><i>number</i></ClLinks> if *number2* is not supplied, or a *real* if *number2* is supplied. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-*radians*—a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> (of radians). 
+*radians*—a <ClLinks  term={"number"}><i>number</i></ClLinks> (of radians). 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-<DictionaryLink styled={true} term={"asin"}><b>asin</b></DictionaryLink>, <DictionaryLink styled={true} term={"acos"}><b>acos</b></DictionaryLink>, and <DictionaryLink styled={true} term={"atan"}><b>atan</b></DictionaryLink> compute the arc sine, arc cosine, and arc tangent respectively. 
+<ClLinks  term={"asin"}><b>asin</b></ClLinks>, <ClLinks  term={"acos"}><b>acos</b></ClLinks>, and <ClLinks  term={"atan"}><b>atan</b></ClLinks> compute the arc sine, arc cosine, and arc tangent respectively. 
 
 
 
-The arc sine, arc cosine, and arc tangent (with only *number1* supplied) functions can be defined mathematically for <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> or *number1* specified as *x* as in Figure 12–14. 
+The arc sine, arc cosine, and arc tangent (with only *number1* supplied) functions can be defined mathematically for <ClLinks  term={"number"}><i>number</i></ClLinks> or *number1* specified as *x* as in Figure 12–14. 
 
 
 
@@ -68,11 +68,11 @@ These formulae are mathematically correct, assuming completely accurate computat
 
 
 
-If both *number1* and *number2* are supplied for <DictionaryLink styled={true} term={"atan"}><b>atan</b></DictionaryLink>, the result is the arc tangent of *number1*/*number2*. The value of <DictionaryLink styled={true} term={"atan"}><b>atan</b></DictionaryLink> is always between *−π* (exclusive) and *π* (inclusive) when minus zero is not supported. The range of the two-argument arc tangent when minus zero is supported includes *−π*. 
+If both *number1* and *number2* are supplied for <ClLinks  term={"atan"}><b>atan</b></ClLinks>, the result is the arc tangent of *number1*/*number2*. The value of <ClLinks  term={"atan"}><b>atan</b></ClLinks> is always between *−π* (exclusive) and *π* (inclusive) when minus zero is not supported. The range of the two-argument arc tangent when minus zero is supported includes *−π*. 
 
 
 
-For a *real number1*, the result is a *real* and lies between *−π/*2 and *π/*2 (both exclusive). *number1* can be a <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> if *number2* is not supplied. If both are supplied, *number2* can be zero provided *number1* is not zero. 
+For a *real number1*, the result is a *real* and lies between *−π/*2 and *π/*2 (both exclusive). *number1* can be a <ClLinks  term={"complex"}><i>complex</i></ClLinks> if *number2* is not supplied. If both are supplied, *number2* can be zero provided *number1* is not zero. 
 
 
 
@@ -180,7 +180,7 @@ arc tangent is identical to that of arc sine with the points *−π/*2 and *π/*
 
 
 
-For <DictionaryLink styled={true} term={"atan"}><b>atan</b></DictionaryLink>, the signs of *number1* (indicated as *x*) and *number2* (indicated as *y*) are used to derive quadrant information. Figure 12–15 details various special cases. The asterisk (\*) indicates that the entry in the figure applies to implementations that support minus zero. 
+For <ClLinks  term={"atan"}><b>atan</b></ClLinks>, the signs of *number1* (indicated as *x*) and *number2* (indicated as *y*) are used to derive quadrant information. Figure 12–15 details various special cases. The asterisk (\*) indicates that the entry in the figure applies to implementations that support minus zero. 
 
 
 
@@ -205,17 +205,16 @@ For <DictionaryLink styled={true} term={"atan"}><b>atan</b></DictionaryLink>, th
 (acos #c(0 1)) → #C(1.5707963267948966 -0.8813735870195432) 
 (/ (atan 1 (sqrt 3)) 6) → 0.087266 
 (atan #c(0 2)) → #C(-1.5707964 0.54930615) 
-
 ```
 **Exceptional Situations:** 
 
 
 
-<DictionaryLink styled={true} term={"acos"}><b>acos</b></DictionaryLink> and <DictionaryLink styled={true} term={"asin"}><b>asin</b></DictionaryLink> should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . <DictionaryLink styled={true} term={"atan"}><b>atan</b></DictionaryLink> should signal <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if one argument is supplied and that argument is not a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> , or if two arguments are supplied and both of those arguments are not *reals*. 
+<ClLinks  term={"acos"}><b>acos</b></ClLinks> and <ClLinks  term={"asin"}><b>asin</b></ClLinks> should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . <ClLinks  term={"atan"}><b>atan</b></ClLinks> should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if one argument is supplied and that argument is not a <ClLinks  term={"number"}><i>number</i></ClLinks> , or if two arguments are supplied and both of those arguments are not *reals*. 
 
 
 
-<DictionaryLink styled={true} term={"acos"}><b>acos</b></DictionaryLink>, <DictionaryLink styled={true} term={"asin"}><b>asin</b></DictionaryLink>, and <DictionaryLink styled={true} term={"atan"}><b>atan</b></DictionaryLink> might signal <DictionaryLink styled={true} term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>. 
+<ClLinks  term={"acos"}><b>acos</b></ClLinks>, <ClLinks  term={"asin"}><b>asin</b></ClLinks>, and <ClLinks  term={"atan"}><b>atan</b></ClLinks> might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>. 
 
 
 
@@ -223,7 +222,7 @@ For <DictionaryLink styled={true} term={"atan"}><b>atan</b></DictionaryLink>, th
 
 
 
-<DictionaryLink styled={true} term={"log"}><b>log</b></DictionaryLink>, <DictionaryLink styled={true} term={"sqrt"}><b>sqrt</b></DictionaryLink>, Section 12.1.3.3 (Rule of Float Substitutability) 
+<ClLinks  term={"log"}><b>log</b></ClLinks>, <ClLinks  term={"sqrt"}><b>sqrt</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability) 
 
 
 
@@ -243,7 +242,7 @@ For <DictionaryLink styled={true} term={"atan"}><b>atan</b></DictionaryLink>, th
 
 
 
-The result of either <DictionaryLink styled={true} term={"asin"}><b>asin</b></DictionaryLink> or <DictionaryLink styled={true} term={"acos"}><b>acos</b></DictionaryLink> can be a <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> even if <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> ; this occurs when the absolute value of <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> is greater than one. 
+The result of either <ClLinks  term={"asin"}><b>asin</b></ClLinks> or <ClLinks  term={"acos"}><b>acos</b></ClLinks> can be a <ClLinks  term={"complex"}><i>complex</i></ClLinks> even if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ; this occurs when the absolute value of <ClLinks  term={"number"}><i>number</i></ClLinks> is greater than one. 
 
 
 
@@ -269,7 +268,6 @@ The best *long float* approximation to the mathematical constant *π*.
 
 **Examples:**
 ```lisp
-
 ;; In each of the following computations, the precision depends 
 ;; on the implementation. Also, if ‘long float’ is treated by 
 ;; the implementation as equivalent to some other float format 
@@ -280,13 +278,12 @@ pi → 3.141592653589793L0
 (defun sin-of-degrees (degrees) 
   (let ((x (if (floatp degrees) degrees (float degrees pi)))) 
     (sin (\* x (/ (float pi x) 180))))) 
-
 ```
 **Notes:** 
 
 
 
-An approximation to *π* in some other precision can be obtained by writing (float pi x), where x is a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> of the desired precision, or by writing (coerce pi <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>), where <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> is the desired type, such as <DictionaryLink styled={true} term={"short-float"}><b>short-float</b></DictionaryLink>. 
+An approximation to *π* in some other precision can be obtained by writing (float pi x), where x is a <ClLinks  term={"float"}><i>float</i></ClLinks> of the desired precision, or by writing (coerce pi <ClLinks  term={"type"}><i>type</i></ClLinks>), where <ClLinks  term={"type"}><i>type</i></ClLinks> is the desired type, such as <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>. 
 
 
 

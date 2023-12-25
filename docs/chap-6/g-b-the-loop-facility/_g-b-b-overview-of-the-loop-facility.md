@@ -2,7 +2,7 @@
 
 
 
-The <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> performs iteration. 
+The <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> performs iteration. 
 
 
 

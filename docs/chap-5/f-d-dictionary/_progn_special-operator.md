@@ -2,45 +2,45 @@
 
 **Syntax:**
 
-<DictionaryLink styled={true} term={"progn"}><b>progn</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* *! \{result\}*\*
+<ClLinks  term={"progn"}><b>progn</b></ClLinks> <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* *! \{result\}*\*
 
 **Arguments and Values:**
 
-<GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>—an *implicit progn*.
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*.
 
-*results*—the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>.
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks>.
 
 **Description:**
 
-<DictionaryLink styled={true} term={"progn"}><b>progn</b></DictionaryLink> evaluates <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>, in the order in which they are given.
+<ClLinks  term={"progn"}><b>progn</b></ClLinks> evaluates <ClLinks  term={"form"}><i>forms</i></ClLinks>, in the order in which they are given.
 
-The values of each <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> but the last are discarded.
+The values of each <ClLinks  term={"form"}><i>form</i></ClLinks> but the last are discarded.
 
-If <DictionaryLink styled={true} term={"progn"}><b>progn</b></DictionaryLink> appears as a *top level form*, then all <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> within that <DictionaryLink styled={true} term={"progn"}><b>progn</b></DictionaryLink> are considered by the compiler to be *top level forms*.
+If <ClLinks  term={"progn"}><b>progn</b></ClLinks> appears as a *top level form*, then all <ClLinks  term={"form"}><i>forms</i></ClLinks> within that <ClLinks  term={"progn"}><b>progn</b></ClLinks> are considered by the compiler to be *top level forms*.
 
 **Examples:**
 
 ```lisp
-
 (progn) *!* NIL 
 (progn 1 2 3) *!* 3 
 (progn (values 1 2 3)) *!* 1, 2, 3 
-(setq a 1) *!* 1 
+(setf a 1) *!* 1 
 (if a 
-    (progn (setq a nil) ’here) 
-    (progn (setq a t) ’there)) *!* HERE 
+    (progn (setf a nil) ’here) 
+    (progn (setf a t) ’there)) *!* HERE 
 a *!* NIL 
-
 ```
 
 **See Also:**
 
-<DictionaryLink styled={true} term={"prog1"}><b>prog1</b></DictionaryLink>, <DictionaryLink styled={true} term={"prog2"}><b>prog2</b></DictionaryLink>, Section 3.1 (Evaluation)
+<ClLinks  term={"prog1"}><b>prog1</b></ClLinks>, <ClLinks  term={"prog2"}><b>prog2</b></ClLinks>, Section 3.1 (Evaluation)
 
 **Notes:**
 
-Many places in Common Lisp involve syntax that uses *implicit progns*. That is, part of their syntax allows many <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> to be written that are to be evaluated sequentially, discarding the results of all <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> but the last and returning the results of the last <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. Such places include, but are not limited to, the following: the body of a *lambda expression*; the bodies of various control and conditional <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> (*e.g.*, <DictionaryLink styled={true} term={"case"}><b>case</b></DictionaryLink>, <DictionaryLink styled={true} term={"catch"}><b>catch</b></DictionaryLink>, <DictionaryLink styled={true} term={"progn"}><b>progn</b></DictionaryLink>, and <DictionaryLink styled={true} term={"when"}><b>when</b></DictionaryLink>).
+Many places in Common Lisp involve syntax that uses *implicit progns*. That is, part of their syntax allows many <ClLinks  term={"form"}><i>forms</i></ClLinks> to be written that are to be evaluated sequentially, discarding the results of all <ClLinks  term={"form"}><i>forms</i></ClLinks> but the last and returning the results of the last <ClLinks  term={"form"}><i>form</i></ClLinks>. Such places include, but are not limited to, the following: the body of a *lambda expression*; the bodies of various control and conditional <ClLinks  term={"form"}><i>forms</i></ClLinks> (*e.g.*, <ClLinks  term={"case"}><b>case</b></ClLinks>, <ClLinks  term={"catch"}><b>catch</b></ClLinks>, <ClLinks  term={"progn"}><b>progn</b></ClLinks>, and <ClLinks  term={"when"}><b>when</b></ClLinks>).
 
-Data and Control
+:::info
 
-<DictionaryLink styled={true} term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink>
+The **example** above was modified replacing `SETQ` with `DEFPARAMETER` or `SETF` according to context. That is because the specification changed yet they did not update the example to fit the specification. This was a mistake in the original ANSI Reference and has been fixed here.
+
+:::

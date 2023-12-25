@@ -1,5 +1,4 @@
 ```lisp
-
 (let ((i 0)) ; no loop keywords are used 
   (loop (incf i) (if (= i 3) (return i)))) → 3 
 (let ((i 0)(j 0)) 
@@ -17,5 +16,4 @@ In this example, x and y are stepped in *parallel*:
       and y = nil then x 
       collect (list x y)) 
 → ((1 NIL) (2 1) (3 2) (4 3) (5 4) (6 5) (7 6) (8 7) (9 8) (10 9)) 
-
 ```

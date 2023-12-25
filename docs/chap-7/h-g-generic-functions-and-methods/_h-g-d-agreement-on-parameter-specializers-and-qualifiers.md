@@ -2,7 +2,7 @@
 
 
 
-Two <GlossaryTerm styled={true} term={"method"}><i>methods</i></GlossaryTerm> are said to agree with each other on *parameter specializers* and <GlossaryTerm styled={true} term={"qualifier"}><i>qualifiers</i></GlossaryTerm> if the following conditions hold: 
+Two <ClLinks  term={"method"}><i>methods</i></ClLinks> are said to agree with each other on *parameter specializers* and <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> if the following conditions hold: 
 
 
 
@@ -14,7 +14,7 @@ Two <GlossaryTerm styled={true} term={"method"}><i>methods</i></GlossaryTerm> ar
 
 
 
-3\. The two <GlossaryTerm styled={true} term={"list"}><i>lists</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"qualifier"}><i>qualifiers</i></GlossaryTerm> are the <GlossaryTerm styled={true} term={"same"}><i>same</i></GlossaryTerm> under <DictionaryLink styled={true} term={"equal"}><b>equal</b></DictionaryLink>. 
+3\. The two <ClLinks  term={"list"}><i>lists</i></ClLinks> of <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> are the <ClLinks  term={"same"}><i>same</i></ClLinks> under <ClLinks  term={"equal"}><b>equal</b></ClLinks>. 
 
 
 

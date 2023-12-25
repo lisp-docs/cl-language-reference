@@ -2,7 +2,7 @@
 
 
 
-The actions of the *pretty printer* when a piece of output is too large to fit in the space available can be precisely controlled. Three concepts underlie the way these operations work—*logical blocks*, *conditional newlines*, and <GlossaryTerm styled={true} term={"section"}><i>sections</i></GlossaryTerm>. Before proceeding further, it is important to define these terms. 
+The actions of the *pretty printer* when a piece of output is too large to fit in the space available can be precisely controlled. Three concepts underlie the way these operations work—*logical blocks*, *conditional newlines*, and <ClLinks styled={true} term={"section"}><i>sections</i></ClLinks>. Before proceeding further, it is important to define these terms. 
 
 
 
@@ -10,7 +10,7 @@ The first line of Figure 22–3 shows a schematic piece of output. Each of the c
 
 
 
-The output as a whole is a logical block and the outermost section. This section is indicated by the 0’s on the second line of Figure 1. Logical blocks nested within the output are specified by the macro <DictionaryLink styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></DictionaryLink>. Conditional newline positions are specified by calls to <DictionaryLink styled={true} term={"pprint-newline"}><b>pprint-newline</b></DictionaryLink>. Each conditional newline defines two sections (one before it and one after it) and is associated with a third (the section immediately containing it). 
+The output as a whole is a logical block and the outermost section. This section is indicated by the 0’s on the second line of Figure 1. Logical blocks nested within the output are specified by the macro <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks>. Conditional newline positions are specified by calls to <ClLinks styled={true} term={"pprint-newline"}><b>pprint-newline</b></ClLinks>. Each conditional newline defines two sections (one before it and one after it) and is associated with a third (the section immediately containing it). 
 
 
 

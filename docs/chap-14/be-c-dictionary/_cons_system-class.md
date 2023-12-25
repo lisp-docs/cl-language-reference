@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"cons"}><b>cons</b></DictionaryLink>, <DictionaryLink styled={true} term={"list"}><b>list</b></DictionaryLink>, <DictionaryLink styled={true} term={"sequence"}><b>sequence</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
+<ClLinks styled={true} term={"cons"}><b>cons</b></ClLinks>, <ClLinks styled={true} term={"list"}><b>list</b></ClLinks>, <ClLinks styled={true} term={"sequence"}><b>sequence</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> is a compound <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> having two components, called the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"cdr"}><i>cdr</i></GlossaryTerm> . These form a *dotted pair* . Each component can be any <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+A <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> is a compound <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> having two components, called the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> and <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> . These form a *dotted pair* . Each component can be any <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -38,11 +38,11 @@ Specializing.
 
 
 
-*car-typespec*—a *type specifier* , or the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> **\***. The default is the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> **\***. 
+*car-typespec*—a *type specifier* , or the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. The default is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 
-*cdr-typespec*—a *type specifier* , or the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> **\***. The default is the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> **\***. 
+*cdr-typespec*—a *type specifier* , or the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. The default is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 
@@ -50,7 +50,7 @@ Specializing.
 
 
 
-This denotes the set of *conses* whose <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> is constrained to be of *type car-typespec* and whose <GlossaryTerm styled={true} term={"cdr"}><i>cdr</i></GlossaryTerm> is constrained to be of *type cdr-typespec*. (If either *car-typespec* or *cdr-typespec* is **\***, it is as if the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> had been denoted.) 
+This denotes the set of *conses* whose <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> is constrained to be of *type car-typespec* and whose <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> is constrained to be of *type cdr-typespec*. (If either *car-typespec* or *cdr-typespec* is **\***, it is as if the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> had been denoted.) 
 
 
 

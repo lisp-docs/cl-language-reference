@@ -6,7 +6,7 @@
 
 
 
-An integer not smaller than 50 and at least as great as the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></DictionaryLink>, the exact magnitude of which is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
+An integer not smaller than 50 and at least as great as the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></ClLinks>, the exact magnitude of which is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -14,7 +14,7 @@ An integer not smaller than 50 and at least as great as the <GlossaryTerm styled
 
 
 
-The upper exclusive bound on the number of <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> that may be passed to a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>. 
+The upper exclusive bound on the number of <ClLinks  term={"argument"}><i>arguments</i></ClLinks> that may be passed to a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ The upper exclusive bound on the number of <GlossaryTerm styled={true} term={"ar
 
 
 
-<DictionaryLink styled={true} term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></DictionaryLink>, <DictionaryLink styled={true} term={"multiple-values-limit"}><b>multiple-values-limit</b></DictionaryLink> 
+<ClLinks  term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></ClLinks>, <ClLinks  term={"multiple-values-limit"}><b>multiple-values-limit</b></ClLinks> 
 
 
 

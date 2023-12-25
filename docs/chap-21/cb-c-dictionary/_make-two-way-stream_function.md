@@ -1,4 +1,4 @@
-**make-two-way-stream** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**make-two-way-stream** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"make-two-way-stream"}><b>make-two-way-stream</b></DictionaryLink> *input-stream output-stream → two-way-stream* 
+<ClLinks  term={"make-two-way-stream"}><b>make-two-way-stream</b></ClLinks> *input-stream output-stream → two-way-stream* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*input-stream*—a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
+*input-stream*—a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-*output-stream*—a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
+*output-stream*—a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -36,20 +36,18 @@ Returns a *two-way stream* that gets its input from *input-stream* and sends its
 
 **Examples:**
 ```lisp
-
 (with-output-to-string (out) 
   (with-input-from-string (in "input...") 
     (let ((two (make-two-way-stream in out))) 
       (format two "output...") 
       (setq what-is-read (read two))))) → "output..." 
 what-is-read → INPUT... 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *input-stream* is not an *input stream*. Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *output-stream* is not an *output stream*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *input-stream* is not an *input stream*. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *output-stream* is not an *output stream*. 
 
 
 
@@ -101,7 +99,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-**two-way-stream-input-stream** returns the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> from which *two-way-stream* receives input. **two-way-stream-output-stream** returns the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> to which *two-way-stream* sends output. 
+**two-way-stream-input-stream** returns the <ClLinks  term={"stream"}><i>stream</i></ClLinks> from which *two-way-stream* receives input. **two-way-stream-output-stream** returns the <ClLinks  term={"stream"}><i>stream</i></ClLinks> to which *two-way-stream* sends output. 
 
 
 

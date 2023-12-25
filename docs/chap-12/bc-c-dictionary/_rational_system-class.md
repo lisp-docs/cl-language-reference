@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"rational"}><b>rational</b></DictionaryLink>, <DictionaryLink styled={true} term={"real"}><b>real</b></DictionaryLink>, <DictionaryLink styled={true} term={"number"}><b>number</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
+<ClLinks  term={"rational"}><b>rational</b></ClLinks>, <ClLinks  term={"real"}><b>real</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-The canonical representation of a <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm> is as an *integer* if its value is integral, and otherwise as a <GlossaryTerm styled={true} term={"ratio"}><i>ratio</i></GlossaryTerm>. 
+The canonical representation of a <ClLinks  term={"rational"}><i>rational</i></ClLinks> is as an *integer* if its value is integral, and otherwise as a <ClLinks  term={"ratio"}><i>ratio</i></ClLinks>. 
 
 
 
-The <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> <DictionaryLink styled={true} term={"integer"}><b>integer</b></DictionaryLink> and <DictionaryLink styled={true} term={"ratio"}><b>ratio</b></DictionaryLink> are *disjoint subtypes* of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"rational"}><b>rational</b></DictionaryLink>. 
+The <ClLinks  term={"type"}><i>types</i></ClLinks> <ClLinks  term={"integer"}><b>integer</b></ClLinks> and <ClLinks  term={"ratio"}><b>ratio</b></ClLinks> are *disjoint subtypes* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"rational"}><b>rational</b></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ Abbreviating.
 
 
 
-*lower-limit*, *upper-limit*—*interval designators* for <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"rational"}><b>rational</b></DictionaryLink>. The defaults for each of *lower-limit* and *upper-limit* is the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> **\***. 
+*lower-limit*, *upper-limit*—*interval designators* for <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"rational"}><b>rational</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 
@@ -50,7 +50,7 @@ Abbreviating.
 
 
 
-This denotes the <GlossaryTerm styled={true} term={"rational"}><i>rationals</i></GlossaryTerm> on the interval described by *lower-limit* and *upper-limit*. 
+This denotes the <ClLinks  term={"rational"}><i>rationals</i></ClLinks> on the interval described by *lower-limit* and *upper-limit*. 
 
 
 

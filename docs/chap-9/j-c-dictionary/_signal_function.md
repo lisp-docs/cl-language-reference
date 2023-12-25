@@ -1,4 +1,4 @@
-**signal** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**signal** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"signal"}><b>signal</b></DictionaryLink> *datum* &amp;rest *arguments →* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
+<ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> *datum* &amp;rest *arguments →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*datum*, <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm>—<GlossaryTerm styled={true} term={"designator"}><i>designators</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> of default type <DictionaryLink styled={true} term={"simple-condition"}><b>simple-condition</b></DictionaryLink>. 
+*datum*, <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>—<ClLinks styled={true} term={"designator"}><i>designators</i></ClLinks> for a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of default type <ClLinks styled={true} term={"simple-condition"}><b>simple-condition</b></ClLinks>. 
 
 
 
@@ -22,13 +22,12 @@
 
 
 
-<GlossaryTerm styled={true} term={"signal"}><i>Signals</i></GlossaryTerm> the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> denoted by the given *datum* and <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm>. If the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is not handled, <DictionaryLink styled={true} term={"signal"}><b>signal</b></DictionaryLink> returns <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+<ClLinks styled={true} term={"signal"}><i>Signals</i></ClLinks> the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> denoted by the given *datum* and <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>. If the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is not handled, <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (defun handle-division-conditions (condition) 
   (format t "Considering condition for division condition handling~%") 
   (when (and (typep condition ’arithmetic-error) 
@@ -56,13 +55,12 @@ NIL
 Considering condition for division condition handling 
 Considering condition for arithmetic condition handling 
 Back to Lisp Toplevel 
-
 ```
 **Side Effects:** 
 
 
 
-The debugger might be entered due to <DictionaryLink styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></DictionaryLink>. 
+The debugger might be entered due to <ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks>. 
 
 
 
@@ -90,7 +88,7 @@ Existing handler bindings.
 
 
 
-<DictionaryLink styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></DictionaryLink> 
+<ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks> 
 
 
 
@@ -98,7 +96,7 @@ Existing handler bindings.
 
 
 
-<DictionaryLink styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></DictionaryLink>, <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink>, <DictionaryLink styled={true} term={"simple-condition"}><b>simple-condition</b></DictionaryLink>, Section 9.1.4 (Signaling and Handling Conditions) 
+<ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks>, <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"simple-condition"}><b>simple-condition</b></ClLinks>, Section 9.1.4 (Signaling and Handling Conditions) 
 
 
 
@@ -106,7 +104,7 @@ Existing handler bindings.
 
 
 
-If (typep *datum* \*break-on-signals\*) *yields true*, the debugger is entered prior to beginning the signaling process. The **continue** <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> can be used to continue with the signaling process. This is also true for all other <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"macro"}><i>macros</i></GlossaryTerm> that should, might, or must *signal conditions*. 
+If (typep *datum* \*break-on-signals\*) *yields true*, the debugger is entered prior to beginning the signaling process. The **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> can be used to continue with the signaling process. This is also true for all other <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> and <ClLinks styled={true} term={"macro"}><i>macros</i></ClLinks> that should, might, or must *signal conditions*. 
 
 
 

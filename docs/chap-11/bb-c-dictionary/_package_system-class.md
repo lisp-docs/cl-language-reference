@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"package"}><b>package</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
+<ClLinks  term={"package"}><b>package</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"namespace"}><i>namespace</i></GlossaryTerm> that maps *symbol names* to <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm>; see Section 11.1 (Package Concepts). 
+A <ClLinks  term={"package"}><i>package</i></ClLinks> is a <ClLinks  term={"namespace"}><i>namespace</i></ClLinks> that maps *symbol names* to <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>; see Section 11.1 (Package Concepts). 
 
 
 

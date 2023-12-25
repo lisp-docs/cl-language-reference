@@ -1,4 +1,4 @@
-**get-setf-expansion** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**get-setf-expansion** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"get-setf-expansion"}><b>get-setf-expansion</b></DictionaryLink> <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> &amp;optional <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm> 
+<ClLinks  term={"get-setf-expansion"}><b>get-setf-expansion</b></ClLinks> <ClLinks  term={"place"}><i>place</i></ClLinks> &amp;optional <ClLinks  term={"environment"}><i>environment</i></ClLinks> 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>. 
+<ClLinks  term={"place"}><i>place</i></ClLinks>—a <ClLinks  term={"place"}><i>place</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm>—an *environment object*. 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an *environment object*. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Determines five values constituting the *setf expansion* for <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm>; see Section 5.1.1.2 (Setf Expansions). 
+Determines five values constituting the *setf expansion* for <ClLinks  term={"place"}><i>place</i></ClLinks> in <ClLinks  term={"environment"}><i>environment</i></ClLinks>; see Section 5.1.1.2 (Setf Expansions). 
 
 
 
@@ -50,9 +50,10 @@ Determines five values constituting the *setf expansion* for <GlossaryTerm style
 
 
 
-If <GlossaryTerm styled={true} term={"environment"}><i>environment</i></GlossaryTerm> is not supplied or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, the environment is the *null lexical environment<GlossaryTerm styled={true} term={"t"}><i>. </i></GlossaryTerm>*Examples:**
+If <ClLinks  term={"environment"}><i>environment</i></ClLinks> is not supplied or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the environment is the *null lexical environment*. 
+
+**Examples:**
 ```lisp
-
 (get-setf-expansion ’x) 
 *!* NIL, NIL, (#:G0001), (SETQ X #:G0001), X 
 ;;; This macro is like POP 
@@ -68,13 +69,12 @@ If <GlossaryTerm styled={true} term={"environment"}><i>environment</i></Glossary
   ‘(setf (car ,x) ,value)) *!* FROB 
 ;;; The following is an error; an error might be signaled at macro expansion time (flet ((frob (x) (cdr x))) ;Invalid 
 (xpop (frob z))) 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink>, <DictionaryLink styled={true} term={"define-setf-expander"}><b>define-setf-expander</b></DictionaryLink>, <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> 
+<ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks>, <ClLinks  term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>, <ClLinks  term={"setf"}><b>setf</b></ClLinks> 
 
 
 
@@ -82,7 +82,7 @@ If <GlossaryTerm styled={true} term={"environment"}><i>environment</i></Glossary
 
 
 
-Any *compound form* is a valid <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>, since any *compound form* whose *operator f* has no *setf expander* are expanded into a call to (setf *f* ). 
+Any *compound form* is a valid <ClLinks  term={"place"}><i>place</i></ClLinks>, since any *compound form* whose *operator f* has no *setf expander* are expanded into a call to (setf *f* ). 
 
 
 

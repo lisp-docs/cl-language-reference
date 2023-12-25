@@ -1,4 +1,4 @@
-**unuse-package** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**unuse-package** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"unuse-package"}><b>unuse-package</b></DictionaryLink> *packages-to-unuse* &amp;optional *package →* <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
+<ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> *packages-to-unuse* &amp;optional *package →* <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*packages-to-unuse*—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of *package designators*. 
+*packages-to-unuse*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of *package designators*. 
 
 
 
-<GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>—a *package designator* . The default is the *current package*. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. 
 
 
 
@@ -26,13 +26,14 @@
 
 
 
-<DictionaryLink styled={true} term={"unuse-package"}><b>unuse-package</b></DictionaryLink> causes <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> to cease inheriting all the *external symbols* of *packages-to-unuse*; <DictionaryLink styled={true} term={"unuse-package"}><b>unuse-package</b></DictionaryLink> undoes the effects of <DictionaryLink styled={true} term={"use-package"}><b>use-package</b></DictionaryLink>. The *packages-to-unuse* are removed from the *use list* of <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. 
+<ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> causes <ClLinks  term={"package"}><i>package</i></ClLinks> to cease inheriting all the *external symbols* of *packages-to-unuse*; <ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> undoes the effects of <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>. The *packages-to-unuse* are removed from the *use list* of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-Any <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> that have been *imported* into <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> continue to be <GlossaryTerm styled={true} term={"present"}><i>present</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. **Examples:**
+Any <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that have been *imported* into <ClLinks  term={"package"}><i>package</i></ClLinks> continue to be <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+
+**Examples:**
 ```lisp
-
 (in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
 (export (intern "SHOES" (make-package ’temp)) ’temp) → T 
 (find-symbol "SHOES") → NIL, NIL 
@@ -40,13 +41,12 @@ Any <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> th
 (find-symbol "SHOES") → SHOES, :INHERITED 
 (find (find-package ’temp) (package-use-list ’common-lisp-user)) → #<PACKAGE "TEMP"> (unuse-package ’temp) → T 
 (find-symbol "SHOES") → NIL, NIL 
-
 ```
 **Side Effects:** 
 
 
 
-The *use list* of <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> is modified. 
+The *use list* of <ClLinks  term={"package"}><i>package</i></ClLinks> is modified. 
 
 
 
@@ -62,7 +62,7 @@ Current state of the package system.
 
 
 
-<DictionaryLink styled={true} term={"use-package"}><b>use-package</b></DictionaryLink>, <DictionaryLink styled={true} term={"package-use-list"}><b>package-use-list</b></DictionaryLink> 
+<ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks  term={"package-use-list"}><b>package-use-list</b></ClLinks> 
 
 
 

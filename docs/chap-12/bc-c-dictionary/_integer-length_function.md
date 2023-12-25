@@ -1,4 +1,4 @@
-**integer-length** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**integer-length** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"integer-length"}><b>integer-length</b></DictionaryLink> *integer → number-of-bits* 
+<ClLinks  term={"integer-length"}><b>integer-length</b></ClLinks> *integer → number-of-bits* 
 
 
 
@@ -26,9 +26,10 @@
 
 
 
-Returns the number of bits needed to represent *integer* in binary two’s-complement format. **Examples:**
-```lisp
+Returns the number of bits needed to represent *integer* in binary two’s-complement format. 
 
+**Examples:**
+```lisp
 (integer-length 0) → 0 
 (integer-length 1) → 1 
 (integer-length 3) → 2 
@@ -42,13 +43,12 @@ Returns the number of bits needed to represent *integer* in binary two’s-compl
 (integer-length (1- (expt 2 9))) → 9 
 (integer-length (- (expt 2 9))) → 9 
 (integer-length (- (1+ (expt 2 9)))) → 10 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *integer* is not an *integer* . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *integer* is not an *integer* . 
 
 
 

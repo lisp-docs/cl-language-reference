@@ -2,35 +2,31 @@
 
 
 
-A <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> becomes <GlossaryTerm styled={true} term={"accessible"}><i>accessible</i></GlossaryTerm> in a <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> if that is its *home package* when it is created, or if it is *imported* into that <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>, or by inheritance via <DictionaryLink styled={true} term={"use-package"}><b>use-package</b></DictionaryLink>. 
+A <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> becomes <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks> if that is its *home package* when it is created, or if it is *imported* into that <ClLinks  term={"package"}><i>package</i></ClLinks>, or by inheritance via <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>. 
 
 
 
-If a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"accessible"}><i>accessible</i></GlossaryTerm> in a <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>, it can be referred to when using the *Lisp reader* without a *package prefix* when that <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> is the *current package*, regardless of whether it is <GlossaryTerm styled={true} term={"present"}><i>present</i></GlossaryTerm> or inherited. 
+If a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>, it can be referred to when using the *Lisp reader* without a *package prefix* when that <ClLinks  term={"package"}><i>package</i></ClLinks> is the *current package*, regardless of whether it is <ClLinks  term={"present"}><i>present</i></ClLinks> or inherited. 
 
 
 
-<GlossaryTerm styled={true} term={"symbol"}><i>Symbols</i></GlossaryTerm> from one <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> can be made <GlossaryTerm styled={true} term={"accessible"}><i>accessible</i></GlossaryTerm> in another <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> in two ways. 
+<ClLinks  term={"symbol"}><i>Symbols</i></ClLinks> from one <ClLinks  term={"package"}><i>package</i></ClLinks> can be made <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in another <ClLinks  term={"package"}><i>package</i></ClLinks> in two ways. 
 
 
 
-– Any individual <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> can be added to a <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> by use of <DictionaryLink styled={true} term={"import"}><b>import</b></DictionaryLink>. After the call to <DictionaryLink styled={true} term={"import"}><b>import</b></DictionaryLink> the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"present"}><i>present</i></GlossaryTerm> in the importing <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. The status of the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> it came from (if any) is unchanged, and the *home package* for this <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is unchanged. Once *imported*, a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"present"}><i>present</i></GlossaryTerm> in the importing <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> and can be removed only by calling <DictionaryLink styled={true} term={"unintern"}><b>unintern</b></DictionaryLink>. 
+– Any individual <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> can be added to a <ClLinks  term={"package"}><i>package</i></ClLinks> by use of <ClLinks  term={"import"}><b>import</b></ClLinks>. After the call to <ClLinks  term={"import"}><b>import</b></ClLinks> the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"present"}><i>present</i></ClLinks> in the importing <ClLinks  term={"package"}><i>package</i></ClLinks>. The status of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks> it came from (if any) is unchanged, and the *home package* for this <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is unchanged. Once *imported*, a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"present"}><i>present</i></ClLinks> in the importing <ClLinks  term={"package"}><i>package</i></ClLinks> and can be removed only by calling <ClLinks  term={"unintern"}><b>unintern</b></ClLinks>. 
 
 
 
-A <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is *shadowed* <sub>3</sub> by another <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> in some <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> if the first <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> would be <GlossaryTerm styled={true} term={"accessible"}><i>accessible</i></GlossaryTerm> by inheritance if not for the presence of the second <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. See <DictionaryLink styled={true} term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink>. 
+A <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is *shadowed* <sub>3</sub> by another <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in some <ClLinks  term={"package"}><i>package</i></ClLinks> if the first <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> would be <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> by inheritance if not for the presence of the second <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. See <ClLinks  term={"shadowing-import"}><b>shadowing-import</b></ClLinks>. 
 
 
 
-– The second mechanism for making <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> from one *package accessible* in another is provided by <DictionaryLink styled={true} term={"use-package"}><b>use-package</b></DictionaryLink>. All of the *external symbols* of the used <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> are inherited 
-
-
+– The second mechanism for making <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> from one *package accessible* in another is provided by <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>. All of the *external symbols* of the used <ClLinks  term={"package"}><i>package</i></ClLinks> are inherited 
 
 
 
 
-
- 
 
 
 
@@ -38,7 +34,11 @@ A <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is *s
 
 
 
-by the using <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"unuse-package"}><b>unuse-package</b></DictionaryLink> undoes the effects of a previous <DictionaryLink styled={true} term={"use-package"}><b>use-package</b></DictionaryLink>. 
+ 
+
+
+
+by the using <ClLinks  term={"package"}><i>package</i></ClLinks>. The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> undoes the effects of a previous <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>. 
 
 
 

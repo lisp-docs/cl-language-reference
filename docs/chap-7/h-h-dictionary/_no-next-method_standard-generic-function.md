@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"no-next-method"}><b>no-next-method</b></DictionaryLink> *generic-function method* &amp;rest *args → \{result\}*\* 
+<ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> *generic-function method* &amp;rest *args → \{result\}*\* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<DictionaryLink styled={true} term={"no-next-method"}><b>no-next-method</b></DictionaryLink> (*generic-function* <DictionaryLink styled={true} term={"standard-generic-function"}><b>standard-generic-function</b></DictionaryLink>) 
+<ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> (*generic-function* <ClLinks  term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks>) 
 
 
 
-(<GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> <DictionaryLink styled={true} term={"standard-method"}><b>standard-method</b></DictionaryLink>) 
+(<ClLinks  term={"method"}><i>method</i></ClLinks> <ClLinks  term={"standard-method"}><b>standard-method</b></ClLinks>) 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-*generic-function* – *generic function* to which <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> belongs. 
+*generic-function* – *generic function* to which <ClLinks  term={"method"}><i>method</i></ClLinks> belongs. 
 
 
 
-<GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> – <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> that contained the call to <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> for which there is no next <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm>. *args* – arguments to <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink>. 
+<ClLinks  term={"method"}><i>method</i></ClLinks> – <ClLinks  term={"method"}><i>method</i></ClLinks> that contained the call to <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> for which there is no next <ClLinks  term={"method"}><i>method</i></ClLinks>. *args* – arguments to <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks>. 
 
 
 
-*result*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+*result*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-The *generic function* <DictionaryLink styled={true} term={"no-next-method"}><b>no-next-method</b></DictionaryLink> is called by <DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> when there is no *next method*. 
+The *generic function* <ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> is called by <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> when there is no *next method*. 
 
 
 
-The *generic function* <DictionaryLink styled={true} term={"no-next-method"}><b>no-next-method</b></DictionaryLink> is not intended to be called by programmers. Programmers may write <GlossaryTerm styled={true} term={"method"}><i>methods</i></GlossaryTerm> for it. 
+The *generic function* <ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> is not intended to be called by programmers. Programmers may write <ClLinks  term={"method"}><i>methods</i></ClLinks> for it. 
 
 
 
@@ -58,7 +58,7 @@ The *generic function* <DictionaryLink styled={true} term={"no-next-method"}><b>
 
 
 
-The system-supplied <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> on <DictionaryLink styled={true} term={"no-next-method"}><b>no-next-method</b></DictionaryLink> signals an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink>. 
+The system-supplied <ClLinks  term={"method"}><i>method</i></ClLinks> on <ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ The system-supplied <GlossaryTerm styled={true} term={"method"}><i>method</i></G
 
 
 
-<DictionaryLink styled={true} term={"call-next-method"}><b>call-next-method</b></DictionaryLink> 
+<ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> 
 
 
 

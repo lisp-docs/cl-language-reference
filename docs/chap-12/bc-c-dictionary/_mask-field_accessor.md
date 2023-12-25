@@ -1,4 +1,4 @@
-**mask-field** <GlossaryTerm styled={true} term={"accessor"}><i>Accessor</i></GlossaryTerm> 
+**mask-field** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"mask-field"}><b>mask-field</b></DictionaryLink> *bytespec integer ! masked-integer* 
+<ClLinks  term={"mask-field"}><b>mask-field</b></ClLinks> *bytespec integer ! masked-integer* 
 
 
 
@@ -34,30 +34,28 @@
 
 
 
-<DictionaryLink styled={true} term={"mask-field"}><b>mask-field</b></DictionaryLink> performs a “mask” operation on *integer*. It returns an *integer* that has the same bits as *integer* in the <GlossaryTerm styled={true} term={"byte"}><i>byte</i></GlossaryTerm> specified by *bytespec*, but that has zero-bits everywhere else. 
+<ClLinks  term={"mask-field"}><b>mask-field</b></ClLinks> performs a “mask” operation on *integer*. It returns an *integer* that has the same bits as *integer* in the <ClLinks  term={"byte"}><i>byte</i></ClLinks> specified by *bytespec*, but that has zero-bits everywhere else. 
 
 
 
-<DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> may be used with <DictionaryLink styled={true} term={"mask-field"}><b>mask-field</b></DictionaryLink> to modify a byte within the *integer* that is stored in a given <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>. The e↵ect is to perform a <DictionaryLink styled={true} term={"deposit-field"}><b>deposit-field</b></DictionaryLink> operation and then store the result back into the <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>. 
+<ClLinks  term={"setf"}><b>setf</b></ClLinks> may be used with <ClLinks  term={"mask-field"}><b>mask-field</b></ClLinks> to modify a byte within the *integer* that is stored in a given <ClLinks  term={"place"}><i>place</i></ClLinks>. The e↵ect is to perform a <ClLinks  term={"deposit-field"}><b>deposit-field</b></ClLinks> operation and then store the result back into the <ClLinks  term={"place"}><i>place</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (mask-field (byte 1 5) -1) *!* 32 
 (setq a 15) *!* 15 
 (mask-field (byte 2 0) a) *!* 3 
 a *!* 15 
 (setf (mask-field (byte 2 0) a) 1) *!* 1 
 a *!* 13 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"byte"}><b>byte</b></DictionaryLink>, <DictionaryLink styled={true} term={"ldb"}><b>ldb</b></DictionaryLink> 
+<ClLinks  term={"byte"}><b>byte</b></ClLinks>, <ClLinks  term={"ldb"}><b>ldb</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**simple-string** <GlossaryTerm styled={true} term={"type"}><i>Type</i></GlossaryTerm> 
+**simple-string** <ClLinks  term={"type"}><i>Type</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"simple-string"}><b>simple-string</b></DictionaryLink>, <DictionaryLink styled={true} term={"string"}><b>string</b></DictionaryLink>, <DictionaryLink styled={true} term={"vector"}><b>vector</b></DictionaryLink>, <DictionaryLink styled={true} term={"simple-array"}><b>simple-array</b></DictionaryLink>, <DictionaryLink styled={true} term={"array"}><b>array</b></DictionaryLink>, <DictionaryLink styled={true} term={"sequence"}><b>sequence</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
+<ClLinks  term={"simple-string"}><b>simple-string</b></ClLinks>, <ClLinks  term={"string"}><b>string</b></ClLinks>, <ClLinks  term={"vector"}><b>vector</b></ClLinks>, <ClLinks  term={"simple-array"}><b>simple-array</b></ClLinks>, <ClLinks  term={"array"}><b>array</b></ClLinks>, <ClLinks  term={"sequence"}><b>sequence</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A *simple string* is a specialized one-dimensional *simple array* whose <GlossaryTerm styled={true} term={"element"}><i>elements</i></GlossaryTerm> are of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink> or a <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink>. When used as a *type specifier* for object creation, <DictionaryLink styled={true} term={"simple-string"}><b>simple-string</b></DictionaryLink> means (simple-array character (*size*)). 
+A *simple string* is a specialized one-dimensional *simple array* whose <ClLinks  term={"element"}><i>elements</i></ClLinks> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks> or a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks>. When used as a *type specifier* for object creation, <ClLinks  term={"simple-string"}><b>simple-string</b></ClLinks> means (simple-array character (*size*)). 
 
 
 
@@ -38,7 +38,7 @@ Abbreviating.
 
 
 
-*size*—a non-negative <GlossaryTerm styled={true} term={"fixnum"}><i>fixnum</i></GlossaryTerm>, or the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> **\***. 
+*size*—a non-negative <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>, or the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 
@@ -46,7 +46,7 @@ Abbreviating.
 
 
 
-This denotes the union of all <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> (simple-array *c* (*size*)) for all *subtypes c* of <DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink>; that is, the set of *simple strings* of size *size*. 
+This denotes the union of all <ClLinks  term={"type"}><i>types</i></ClLinks> (simple-array *c* (*size*)) for all *subtypes c* of <ClLinks  term={"character"}><b>character</b></ClLinks>; that is, the set of *simple strings* of size *size*. 
 
 
 

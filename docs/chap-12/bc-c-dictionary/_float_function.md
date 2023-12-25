@@ -1,4 +1,4 @@
-**float** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**float** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"float"}><b>float</b></DictionaryLink> <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> &amp;optional *prototype ! float* 
+<ClLinks  term={"float"}><b>float</b></ClLinks> <ClLinks  term={"number"}><i>number</i></ClLinks> &amp;optional *prototype ! float* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm>—a *real*. 
+<ClLinks  term={"number"}><i>number</i></ClLinks>—a *real*. 
 
 
 
-*prototype*—a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm>. 
+*prototype*—a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm>. 
+<ClLinks  term={"float"}><i>float</i></ClLinks>—a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
 
 
 
@@ -30,21 +30,20 @@
 
 
 
-<DictionaryLink styled={true} term={"float"}><b>float</b></DictionaryLink> converts a *real* number to a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm>. 
+<ClLinks  term={"float"}><b>float</b></ClLinks> converts a *real* number to a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
 
 
 
-If a *prototype* is supplied, a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> is returned that is mathematically equal to <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> but has the same format as *prototype*. 
+If a *prototype* is supplied, a <ClLinks  term={"float"}><i>float</i></ClLinks> is returned that is mathematically equal to <ClLinks  term={"number"}><i>number</i></ClLinks> but has the same format as *prototype*. 
 
 
 
-If *prototype* is not supplied, then if the <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> is already a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm>, it is returned; otherwise, a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> is returned that is mathematically equal to <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> but is a *single float*. 
+If *prototype* is not supplied, then if the <ClLinks  term={"number"}><i>number</i></ClLinks> is already a <ClLinks  term={"float"}><i>float</i></ClLinks>, it is returned; otherwise, a <ClLinks  term={"float"}><i>float</i></ClLinks> is returned that is mathematically equal to <ClLinks  term={"number"}><i>number</i></ClLinks> but is a *single float*. 
 
 
 
 **Examples:**
 ```lisp
-
 (float 0) *!* 0.0 
 (float 1 .5) *!* 1.0 
 (float 1.0) *!* 1.0 
@@ -54,14 +53,12 @@ If *prototype* is not supplied, then if the <GlossaryTerm styled={true} term={"n
 (eql (float 1.0 1.0d0) 1.0d0) *! true* 
 
 
-
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"coerce"}><b>coerce</b></DictionaryLink> 
+<ClLinks  term={"coerce"}><b>coerce</b></ClLinks> 
 
 
 

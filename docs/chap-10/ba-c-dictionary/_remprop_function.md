@@ -1,4 +1,4 @@
-**remprop** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**remprop** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"remprop"}><b>remprop</b></DictionaryLink> *symbol indicator → generalized-boolean* 
+<ClLinks  term={"remprop"}><b>remprop</b></ClLinks> *symbol indicator → generalized-boolean* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"indicator"}><i>indicator</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+<ClLinks  term={"indicator"}><i>indicator</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<DictionaryLink styled={true} term={"remprop"}><b>remprop</b></DictionaryLink> removes from the *property list* <sub>2</sub> of <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> a <GlossaryTerm styled={true} term={"property"}><i>property</i></GlossaryTerm><sub>1</sub> with a *property indicator identical* to <GlossaryTerm styled={true} term={"indicator"}><i>indicator</i></GlossaryTerm>. If there are multiple *properties*<sub>1</sub> with the <GlossaryTerm styled={true} term={"identical"}><i>identical</i></GlossaryTerm> key, <DictionaryLink styled={true} term={"remprop"}><b>remprop</b></DictionaryLink> only removes the first such <GlossaryTerm styled={true} term={"property"}><i>property</i></GlossaryTerm>. <DictionaryLink styled={true} term={"remprop"}><b>remprop</b></DictionaryLink> returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> if no such <GlossaryTerm styled={true} term={"property"}><i>property</i></GlossaryTerm> was found, or <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if a property was found. 
+<ClLinks  term={"remprop"}><b>remprop</b></ClLinks> removes from the *property list* <sub>2</sub> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> a <ClLinks  term={"property"}><i>property</i></ClLinks><sub>1</sub> with a *property indicator identical* to <ClLinks  term={"indicator"}><i>indicator</i></ClLinks>. If there are multiple *properties*<sub>1</sub> with the <ClLinks  term={"identical"}><i>identical</i></ClLinks> key, <ClLinks  term={"remprop"}><b>remprop</b></ClLinks> only removes the first such <ClLinks  term={"property"}><i>property</i></ClLinks>. <ClLinks  term={"remprop"}><b>remprop</b></ClLinks> returns <ClLinks  term={"false"}><i>false</i></ClLinks> if no such <ClLinks  term={"property"}><i>property</i></ClLinks> was found, or <ClLinks  term={"true"}><i>true</i></ClLinks> if a property was found. 
 
 
 
-The *property indicator* and the corresponding *property value* are removed in an undefined order by destructively splicing the property list. The permissible side-effects correspond to those permitted for <DictionaryLink styled={true} term={"remf"}><b>remf</b></DictionaryLink>, such that: 
+The *property indicator* and the corresponding *property value* are removed in an undefined order by destructively splicing the property list. The permissible side-effects correspond to those permitted for <ClLinks  term={"remf"}><b>remf</b></ClLinks>, such that: 
 
 
 
@@ -44,7 +44,6 @@ The *property indicator* and the corresponding *property value* are removed in a
 
 **Examples:**
 ```lisp
-
 (setq test (make-symbol "PSEUDO-PI")) → #:PSEUDO-PI 
 (symbol-plist test) → () 
 (setf (get test ’constant) t) → T 
@@ -57,8 +56,6 @@ The *property indicator* and the corresponding *property value* are removed in a
 → (ERROR-RANGE NOTICEABLE APPROXIMATION NIL CONSTANT T) 
 (get test ’approximation) → NIL 
 
-
-
 (remprop test ’approximation) → true 
 (get test ’approximation) → NIL 
 (symbol-plist test) 
@@ -70,13 +67,12 @@ The *property indicator* and the corresponding *property value* are removed in a
 (setf (get test ’approximation) 3) → 3 
 (symbol-plist test) 
 → (APPROXIMATION 3 CONSTANT T) 
-
 ```
 **Side Effects:** 
 
 
 
-The *property list* of <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is modified. 
+The *property list* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is modified. 
 
 
 
@@ -84,7 +80,7 @@ The *property list* of <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i>
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -92,7 +88,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"remf"}><b>remf</b></DictionaryLink>, <DictionaryLink styled={true} term={"symbol-plist"}><b>symbol-plist</b></DictionaryLink> 
+<ClLinks  term={"remf"}><b>remf</b></ClLinks>, <ClLinks  term={"symbol-plist"}><b>symbol-plist</b></ClLinks> 
 
 
 
@@ -100,7 +96,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<GlossaryTerm styled={true} term={"number"}><i>Numbers</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> are not recommended for use as <GlossaryTerm styled={true} term={"indicator"}><i>indicators</i></GlossaryTerm> in portable code since <DictionaryLink styled={true} term={"remprop"}><b>remprop</b></DictionaryLink> tests with <DictionaryLink styled={true} term={"eq"}><b>eq</b></DictionaryLink> rather than <DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink>, and consequently the effect of using such <GlossaryTerm styled={true} term={"indicator"}><i>indicators</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. Of course, if you’ve gotten as far as needing to remove such a <GlossaryTerm styled={true} term={"property"}><i>property</i></GlossaryTerm>, you don’t have much choice—the time to have been thinking about this was when you used <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink styled={true} term={"get"}><b>get</b></DictionaryLink> to establish the <GlossaryTerm styled={true} term={"property"}><i>property</i></GlossaryTerm>. 
+<ClLinks  term={"number"}><i>Numbers</i></ClLinks> and <ClLinks  term={"character"}><i>characters</i></ClLinks> are not recommended for use as <ClLinks  term={"indicator"}><i>indicators</i></ClLinks> in portable code since <ClLinks  term={"remprop"}><b>remprop</b></ClLinks> tests with <ClLinks  term={"eq"}><b>eq</b></ClLinks> rather than <ClLinks  term={"eql"}><b>eql</b></ClLinks>, and consequently the effect of using such <ClLinks  term={"indicator"}><i>indicators</i></ClLinks> is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. Of course, if you’ve gotten as far as needing to remove such a <ClLinks  term={"property"}><i>property</i></ClLinks>, you don’t have much choice—the time to have been thinking about this was when you used <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"get"}><b>get</b></ClLinks> to establish the <ClLinks  term={"property"}><i>property</i></ClLinks>. 
 
 
 

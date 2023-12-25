@@ -1,4 +1,4 @@
-**values-list** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**values-list** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"values-list"}><b>values-list</b></DictionaryLink> *list ! \{element\}*\* 
+<ClLinks  term={"values-list"}><b>values-list</b></ClLinks> *list ! \{element\}*\* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. 
+<ClLinks  term={"list"}><i>list</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"element"}><i>elements</i></GlossaryTerm>—the <GlossaryTerm styled={true} term={"element"}><i>elements</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. 
+<ClLinks  term={"element"}><i>elements</i></ClLinks>—the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -26,24 +26,22 @@
 
 
 
-Returns the <GlossaryTerm styled={true} term={"element"}><i>elements</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> as *multiple values*<sub>2</sub>. 
+Returns the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks> as *multiple values*<sub>2</sub>. 
 
 
 
 **Examples:**
 ```lisp
-
-(values-list nil) *! hno valuesi* 
+(values-list nil) *! ⟨no values⟩* 
 (values-list ’(1)) *!* 1 
 (values-list ’(1 2)) *!* 1, 2 
 (values-list ’(1 2 3)) *!* 1, 2, 3 
-
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not a *proper list*. 
+Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a *proper list*. 
 
 
 
@@ -51,7 +49,7 @@ Should signal <DictionaryLink styled={true} term={"type-error"}><b>type-error</b
 
 
 
-<DictionaryLink styled={true} term={"multiple-value-bind"}><b>multiple-value-bind</b></DictionaryLink>, <DictionaryLink styled={true} term={"multiple-value-list"}><b>multiple-value-list</b></DictionaryLink>, <DictionaryLink styled={true} term={"multiple-values-limit"}><b>multiple-values-limit</b></DictionaryLink>, <DictionaryLink styled={true} term={"values"}><b>values</b></DictionaryLink> 
+<ClLinks  term={"multiple-value-bind"}><b>multiple-value-bind</b></ClLinks>, <ClLinks  term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks>, <ClLinks  term={"multiple-values-limit"}><b>multiple-values-limit</b></ClLinks>, <ClLinks  term={"values"}><b>values</b></ClLinks> 
 
 
 
@@ -59,11 +57,11 @@ Should signal <DictionaryLink styled={true} term={"type-error"}><b>type-error</b
 
 
 
-(values-list <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>) *⌘* (apply #’values <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>) 
+(values-list <ClLinks  term={"list"}><i>list</i></ClLinks>) *⌘* (apply #’values <ClLinks  term={"list"}><i>list</i></ClLinks>) 
 
 
 
-(equal *x* (multiple-value-list (values-list *x*))) returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> for all *lists x*. 
+(equal *x* (multiple-value-list (values-list *x*))) returns <ClLinks  term={"true"}><i>true</i></ClLinks> for all *lists x*. 
 
 
 

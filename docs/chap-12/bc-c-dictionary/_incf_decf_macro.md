@@ -1,4 +1,4 @@
-**incf, decf** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
+**incf, decf** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<DictionaryLink styled={true} term={"incf"}><b>incf</b></DictionaryLink> <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> [*delta-form*] → new-value 
+<ClLinks  term={"incf"}><b>incf</b></ClLinks> <ClLinks  term={"place"}><i>place</i></ClLinks> [*delta-form*] → new-value 
 
 
 
-<DictionaryLink styled={true} term={"decf"}><b>decf</b></DictionaryLink> <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> [*delta-form*] → new-value 
+<ClLinks  term={"decf"}><b>decf</b></ClLinks> <ClLinks  term={"place"}><i>place</i></ClLinks> [*delta-form*] → new-value 
 
 
 
@@ -18,19 +18,19 @@
 
 
 
-<GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>. 
+<ClLinks  term={"place"}><i>place</i></ClLinks>—a <ClLinks  term={"place"}><i>place</i></ClLinks>. 
 
 
 
-*delta-form*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>; evaluated to produce a *delta*. The default is 1. 
+*delta-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated to produce a *delta*. The default is 1. 
 
 
 
-*delta*—a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . 
+*delta*—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 
-*new-value*—a <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> . 
+*new-value*—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 
@@ -50,11 +50,11 @@
 
 
 
-<DictionaryLink styled={true} term={"incf"}><b>incf</b></DictionaryLink> and <DictionaryLink styled={true} term={"decf"}><b>decf</b></DictionaryLink> are used for incrementing and decrementing the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>, respectively. 
+<ClLinks  term={"incf"}><b>incf</b></ClLinks> and <ClLinks  term={"decf"}><b>decf</b></ClLinks> are used for incrementing and decrementing the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"place"}><i>place</i></ClLinks>, respectively. 
 
 
 
-The *delta* is added to (in the case of <DictionaryLink styled={true} term={"incf"}><b>incf</b></DictionaryLink>) or subtracted from (in the case of <DictionaryLink styled={true} term={"decf"}><b>decf</b></DictionaryLink>) the number in <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> and the result is stored in <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>. 
+The *delta* is added to (in the case of <ClLinks  term={"incf"}><b>incf</b></ClLinks>) or subtracted from (in the case of <ClLinks  term={"decf"}><b>decf</b></ClLinks>) the number in <ClLinks  term={"place"}><i>place</i></ClLinks> and the result is stored in <ClLinks  term={"place"}><i>place</i></ClLinks>. 
 
 
 
@@ -62,13 +62,12 @@ Any necessary type conversions are performed automatically.
 
 
 
-For information about the <GlossaryTerm styled={true} term={"evaluation"}><i>evaluation</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"subform"}><i>subforms</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"place"}><i>places</i></GlossaryTerm>, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
+For information about the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of <ClLinks  term={"place"}><i>places</i></ClLinks>, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
 
 
 
 **Examples:**
 ```lisp
-
 (setq n 0) 
 (incf n) → 1 
 n → 1 
@@ -79,13 +78,12 @@ n → -2
 (incf n 0.5) → 2.5 
 (decf n) → 1.5 
 n → 1.5 
-
 ```
 **Side Effects:** 
 
 
 
-<GlossaryTerm styled={true} term={"place"}><i>Place</i></GlossaryTerm> is modified. 
+<ClLinks  term={"place"}><i>Place</i></ClLinks> is modified. 
 
 
 
@@ -93,7 +91,7 @@ n → 1.5
 
 
 
-<DictionaryLink styled={true} term={"+"}><b>+</b></DictionaryLink>, <DictionaryLink styled={true} term={"-"}><b>-</b></DictionaryLink>, <DictionaryLink styled={true} term={"1+"}><b>1+</b></DictionaryLink>, **1-**, <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink> 
+<ClLinks  term={"+"}><b>+</b></ClLinks>, <ClLinks  term={"-"}><b>-</b></ClLinks>, <ClLinks  term={"1+"}><b>1+</b></ClLinks>, **1-**, <ClLinks  term={"setf"}><b>setf</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**char-int** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**char-int** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"char-int"}><b>char-int</b></DictionaryLink> *character → integer* 
+<ClLinks styled={true} term={"char-int"}><b>char-int</b></ClLinks> *character → integer* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
+<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Returns a non-negative *integer* encoding the <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> object. The manner in which the *integer* is computed is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. In contrast to <DictionaryLink styled={true} term={"sxhash"}><b>sxhash</b></DictionaryLink>, the result is not guaranteed to be independent of the particular *Lisp image*. 
+Returns a non-negative *integer* encoding the <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> object. The manner in which the *integer* is computed is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. In contrast to <ClLinks styled={true} term={"sxhash"}><b>sxhash</b></ClLinks>, the result is not guaranteed to be independent of the particular *Lisp image*. 
 
 
 
-If <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> has no *implementation-defined attributes*, the results of <DictionaryLink styled={true} term={"char-int"}><b>char-int</b></DictionaryLink> and <DictionaryLink styled={true} term={"char-code"}><b>char-code</b></DictionaryLink> are the same. 
+If <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> has no *implementation-defined attributes*, the results of <ClLinks styled={true} term={"char-int"}><b>char-int</b></ClLinks> and <ClLinks styled={true} term={"char-code"}><b>char-code</b></ClLinks> are the same. 
 
 
 
@@ -44,17 +44,15 @@ for characters *c1* and *c2*.
 
 **Examples:**
 ```lisp
-
 (char-int #\A) → 65 ; implementation A 
 (char-int #\A) → 577 ; implementation B 
 (char-int #\A) → 262145 ; implementation C 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"char-code"}><b>char-code</b></DictionaryLink> 
+<ClLinks styled={true} term={"char-code"}><b>char-code</b></ClLinks> 
 
 
 

@@ -1,4 +1,4 @@
-**error** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**error** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink> *datum* &amp;rest *arguments →* 
+<ClLinks styled={true} term={"error"}><b>error</b></ClLinks> *datum* &amp;rest *arguments →* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*datum*, <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm>—<GlossaryTerm styled={true} term={"designator"}><i>designators</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> of default type <DictionaryLink styled={true} term={"simple-error"}><b>simple-error</b></DictionaryLink>. 
+*datum*, <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>—<ClLinks styled={true} term={"designator"}><i>designators</i></ClLinks> for a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of default type <ClLinks styled={true} term={"simple-error"}><b>simple-error</b></ClLinks>. 
 
 
 
@@ -22,22 +22,20 @@
 
 
 
-<DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink> effectively invokes <DictionaryLink styled={true} term={"signal"}><b>signal</b></DictionaryLink> on the denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>. 
+<ClLinks styled={true} term={"error"}><b>error</b></ClLinks> effectively invokes <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> on the denoted <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
-If the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is not handled, (invoke-debugger <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>) is done. As a consequence of calling <DictionaryLink styled={true} term={"invoke-debugger"}><b>invoke-debugger</b></DictionaryLink>, <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink> cannot directly return; the only exit from <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink> can come by non-local transfer of control in a handler or by use of an interactive debugging command. 
+If the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is not handled, (invoke-debugger <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>) is done. As a consequence of calling <ClLinks styled={true} term={"invoke-debugger"}><b>invoke-debugger</b></ClLinks>, <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> cannot directly return; the only exit from <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> can come by non-local transfer of control in a handler or by use of an interactive debugging command. 
 
 
 
 **Examples:**
 ```lisp
-
 (defun factorial (x) 
   (cond ((or (not (typep x ’integer)) (minusp x)) 
 	 (error "~S is not a valid argument to FACTORIAL." x)) 
 	((zerop x) 1) 
-
 	
 	
 	**error** 
@@ -70,13 +68,12 @@ If the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></Glossary
 ▷ 1: Return to Lisp Toplevel. 
 ▷ Debug> :Continue 1 
 ▷ Return to Lisp Toplevel. 
-
 ```
 **Side Effects:** 
 
 
 
-<GlossaryTerm styled={true} term={"handler"}><i>Handlers</i></GlossaryTerm> for the specified condition, if any, are invoked and might have side effects. Program execution might stop, and the debugger might be entered. 
+<ClLinks styled={true} term={"handler"}><i>Handlers</i></ClLinks> for the specified condition, if any, are invoked and might have side effects. Program execution might stop, and the debugger might be entered. 
 
 
 
@@ -88,11 +85,11 @@ Existing handler bindings.
 
 
 
-<DictionaryLink styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></DictionaryLink> 
+<ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks> 
 
 
 
-Signals an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *datum* and <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> are not <GlossaryTerm styled={true} term={"designator"}><i>designators</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>. 
+Signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *datum* and <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> are not <ClLinks styled={true} term={"designator"}><i>designators</i></ClLinks> for a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
@@ -100,7 +97,7 @@ Signals an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></Gloss
 
 
 
-<DictionaryLink styled={true} term={"cerror"}><b>cerror</b></DictionaryLink>, <DictionaryLink styled={true} term={"signal"}><b>signal</b></DictionaryLink>, <DictionaryLink styled={true} term={"format"}><b>format</b></DictionaryLink>, <DictionaryLink styled={true} term={"ignore-errors"}><b>ignore-errors</b></DictionaryLink>, <DictionaryLink styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></DictionaryLink>, <DictionaryLink styled={true} term={"handler-bind"}><b>handler-bind</b></DictionaryLink>, Section 9.1 (Condition 
+<ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks>, <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks>, <ClLinks styled={true} term={"format"}><b>format</b></ClLinks>, <ClLinks styled={true} term={"ignore-errors"}><b>ignore-errors</b></ClLinks>, <ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks>, <ClLinks styled={true} term={"handler-bind"}><b>handler-bind</b></ClLinks>, Section 9.1 (Condition 
 
 
 
@@ -136,7 +133,7 @@ Some implementations may provide debugger commands for interactively returning f
 
 
 
-In this scenario, there should be no chance that <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink> will return and the button will get pushed. 
+In this scenario, there should be no chance that <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> will return and the button will get pushed. 
 
 
 

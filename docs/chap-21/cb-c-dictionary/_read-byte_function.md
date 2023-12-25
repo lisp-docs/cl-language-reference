@@ -1,4 +1,4 @@
-**read-byte** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**read-byte** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"read-byte"}><b>read-byte</b></DictionaryLink> <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> &amp;optional *eof-error-p eof-value → byte* 
+<ClLinks  term={"read-byte"}><b>read-byte</b></ClLinks> <ClLinks  term={"stream"}><i>stream</i></ClLinks> &amp;optional *eof-error-p eof-value → byte* 
 
 
 
@@ -14,19 +14,19 @@
 
 
 
-<GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>—a *binary input stream*. 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a *binary input stream*. 
 
 
 
-*eof-error-p*—a *generalized boolean*. The default is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>. 
+*eof-error-p*—a *generalized boolean*. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 
-*eof-value*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. The default is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"byte"}><i>byte</i></GlossaryTerm>—an *integer* , or the *eof-value*. 
+<ClLinks  term={"byte"}><i>byte</i></ClLinks>—an *integer* , or the *eof-value*. 
 
 
 
@@ -34,17 +34,16 @@
 
 
 
-<DictionaryLink styled={true} term={"read-byte"}><b>read-byte</b></DictionaryLink> reads and returns one byte from <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
+<ClLinks  term={"read-byte"}><b>read-byte</b></ClLinks> reads and returns one byte from <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>, the *eof-value* is returned. 
+If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <ClLinks  term={"false"}><i>false</i></ClLinks>, the *eof-value* is returned. 
 
 
 
 **Examples:**
 ```lisp
-
 (with-open-file (s "temp-bytes" 
 		   :direction :output 
 		   :element-type ’unsigned-byte) 
@@ -53,13 +52,12 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <GlossaryTerm styled
   (format t "~S ~S" (read-byte s) (read-byte s nil ’eof))) 
 ▷ 101 EOF 
 → NIL 
-
 ```
 **Side Effects:** 
 
 
 
-Modifies <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
+Modifies <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -67,15 +65,15 @@ Modifies <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is not a *binary input stream*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a *binary input stream*. 
 
 
 
-If there are no <GlossaryTerm styled={true} term={"byte"}><i>bytes</i></GlossaryTerm> remaining in the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> and *eof-error-p* is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled. 
+If there are no <ClLinks  term={"byte"}><i>bytes</i></ClLinks> remaining in the <ClLinks  term={"stream"}><i>stream</i></ClLinks> and *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled. 
 
 
 
@@ -83,7 +81,7 @@ If there are no <GlossaryTerm styled={true} term={"byte"}><i>bytes</i></Glossary
 
 
 
-<DictionaryLink styled={true} term={"read-char"}><b>read-char</b></DictionaryLink>, <DictionaryLink styled={true} term={"read-sequence"}><b>read-sequence</b></DictionaryLink>, <DictionaryLink styled={true} term={"write-byte"}><b>write-byte</b></DictionaryLink> 
+<ClLinks  term={"read-char"}><b>read-char</b></ClLinks>, <ClLinks  term={"read-sequence"}><b>read-sequence</b></ClLinks>, <ClLinks  term={"write-byte"}><b>write-byte</b></ClLinks> 
 
 
 

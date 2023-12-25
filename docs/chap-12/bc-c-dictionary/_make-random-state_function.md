@@ -1,4 +1,4 @@
-**make-random-state** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**make-random-state** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"make-random-state"}><b>make-random-state</b></DictionaryLink> &amp;optional *state → new-state* 
+<ClLinks  term={"make-random-state"}><b>make-random-state</b></ClLinks> &amp;optional *state → new-state* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*state*—a *random state*, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, or <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>. The default is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+*state*—a *random state*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, or <ClLinks  term={"t"}><b>t</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,17 +26,16 @@
 
 
 
-Creates a *fresh object* of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"random-state"}><b>random-state</b></DictionaryLink> suitable for use as the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"random-state"}><b>\*random-state\*</b></DictionaryLink>. 
+Creates a *fresh object* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"random-state"}><b>random-state</b></ClLinks> suitable for use as the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"random-state"}><b>\*random-state\*</b></ClLinks>. 
 
 
 
-If *state* is a *random state object*, the *new-state* is a <GlossaryTerm styled={true} term={"copy"}><i>copy</i></GlossaryTerm><sub>5</sub> of that <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. If *state* is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, the *new-state* is a <GlossaryTerm styled={true} term={"copy"}><i>copy</i></GlossaryTerm><sub>5</sub> of the *current random state*. If *state* is <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>, the *new-state* is a *fresh random state object* that has been randomly initialized by some means. 
+If *state* is a *random state object*, the *new-state* is a <ClLinks  term={"copy"}><i>copy</i></ClLinks><sub>5</sub> of that <ClLinks  term={"object"}><i>object</i></ClLinks>. If *state* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the *new-state* is a <ClLinks  term={"copy"}><i>copy</i></ClLinks><sub>5</sub> of the *current random state*. If *state* is <ClLinks  term={"t"}><b>t</b></ClLinks>, the *new-state* is a *fresh random state object* that has been randomly initialized by some means. 
 
 
 
 **Examples:**
 ```lisp
-
 (let\* ((rs1 (make-random-state nil)) 
 	(rs2 (make-random-state t)) 
 	(rs3 (make-random-state rs2)) 
@@ -50,17 +49,16 @@ If *state* is a *random state object*, the *new-state* is a <GlossaryTerm styled
 	     (loop for i from 1 to 10 collect (random 100 rs3)) 
 	     (loop for i from 1 to 10 collect (random 100 rs4)))) 
 → ((29 25 72 57 55 68 24 35 54 65) 
-     (29 25 72 57 55 68 24 35 54 65) 
-     (93 85 53 99 58 62 2 23 23 59) 
-     (93 85 53 99 58 62 2 23 23 59) 
-     (68 24 35 54 65 54 55 50 59 49)) 
-
+   (29 25 72 57 55 68 24 35 54 65) 
+   (93 85 53 99 58 62 2 23 23 59) 
+   (93 85 53 99 58 62 2 23 23 59) 
+   (68 24 35 54 65 54 55 50 59 49)) 
 ```
 **Exceptional Situations:** 
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *state* is not a *random state*, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, or <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *state* is not a *random state*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, or <ClLinks  term={"t"}><b>t</b></ClLinks>. 
 
 
 
@@ -68,7 +66,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-<DictionaryLink styled={true} term={"random"}><b>random</b></DictionaryLink>, <DictionaryLink styled={true} term={"random-state"}><b>\*random-state\*</b></DictionaryLink> 
+<ClLinks  term={"random"}><b>random</b></ClLinks>, <ClLinks  term={"random-state"}><b>\*random-state\*</b></ClLinks> 
 
 
 
@@ -88,7 +86,7 @@ Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i><
 
 
 
-One important use of <DictionaryLink styled={true} term={"make-random-state"}><b>make-random-state</b></DictionaryLink> is to allow the same series of pseudo-random <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm> to be generated many times within a single program. 
+One important use of <ClLinks  term={"make-random-state"}><b>make-random-state</b></ClLinks> is to allow the same series of pseudo-random <ClLinks  term={"number"}><i>numbers</i></ClLinks> to be generated many times within a single program. 
 
 
 

@@ -1,4 +1,4 @@
-**make-package** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**make-package** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"make-package"}><b>make-package</b></DictionaryLink> *package-name* &amp;key *nicknames use → package* 
+<ClLinks  term={"make-package"}><b>make-package</b></ClLinks> *package-name* &amp;key *nicknames use → package* 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-<GlossaryTerm styled={true} term={"nickname"}><i>nicknames</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of *string designators*. The default is the *empty list*. 
+<ClLinks  term={"nickname"}><i>nicknames</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *string designators*. The default is the *empty list*. 
 
 
 
-<GlossaryTerm styled={true} term={"use"}><i>use</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of *package designators*. The default is <GlossaryTerm styled={true} term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>. 
+<ClLinks  term={"use"}><i>use</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *package designators*. The default is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -34,31 +34,29 @@
 
 
 
-Creates a new <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> with the name *package-name*. 
+Creates a new <ClLinks  term={"package"}><i>package</i></ClLinks> with the name *package-name*. 
 
 
 
-<GlossaryTerm styled={true} term={"nickname"}><i>Nicknames</i></GlossaryTerm> are additional <GlossaryTerm styled={true} term={"name"}><i>names</i></GlossaryTerm> which may be used to refer to the new <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. 
+<ClLinks  term={"nickname"}><i>Nicknames</i></ClLinks> are additional <ClLinks  term={"name"}><i>names</i></ClLinks> which may be used to refer to the new <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-<GlossaryTerm styled={true} term={"use"}><i>use</i></GlossaryTerm> specifies zero or more <GlossaryTerm styled={true} term={"package"}><i>packages</i></GlossaryTerm> the *external symbols* of which are to be inherited by the new <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. See the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"use-package"}><b>use-package</b></DictionaryLink>. 
+<ClLinks  term={"use"}><i>use</i></ClLinks> specifies zero or more <ClLinks  term={"package"}><i>packages</i></ClLinks> the *external symbols* of which are to be inherited by the new <ClLinks  term={"package"}><i>package</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (make-package ’temporary :nicknames ’("TEMP" "temp")) → #<PACKAGE "TEMPORARY"> (make-package "OWNER" :use ’("temp")) → #<PACKAGE "OWNER"> 
 (package-used-by-list ’temp) → (#<PACKAGE "OWNER">) 
 (package-use-list ’owner) → (#<PACKAGE "TEMPORARY">) 
-
 ```
 **Affected By:** 
 
 
 
-The existence of other <GlossaryTerm styled={true} term={"package"}><i>packages</i></GlossaryTerm> in the system. 
+The existence of other <ClLinks  term={"package"}><i>packages</i></ClLinks> in the system. 
 
 
 
@@ -66,11 +64,11 @@ The existence of other <GlossaryTerm styled={true} term={"package"}><i>packages<
 
 
 
-The consequences are unspecified if <GlossaryTerm styled={true} term={"package"}><i>packages</i></GlossaryTerm> denoted by <GlossaryTerm styled={true} term={"use"}><i>use</i></GlossaryTerm> do not exist. 
+The consequences are unspecified if <ClLinks  term={"package"}><i>packages</i></ClLinks> denoted by <ClLinks  term={"use"}><i>use</i></ClLinks> do not exist. 
 
 
 
-A <GlossaryTerm styled={true} term={"correctable"}><i>correctable</i></GlossaryTerm> error is signaled if the *package-name* or any of the <GlossaryTerm styled={true} term={"nickname"}><i>nicknames</i></GlossaryTerm> is already the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"nickname"}><i>nickname</i></GlossaryTerm> of an existing <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. 
+A <ClLinks  term={"correctable"}><i>correctable</i></ClLinks> error is signaled if the *package-name* or any of the <ClLinks  term={"nickname"}><i>nicknames</i></ClLinks> is already the <ClLinks  term={"name"}><i>name</i></ClLinks> or <ClLinks  term={"nickname"}><i>nickname</i></ClLinks> of an existing <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -90,7 +88,7 @@ A <GlossaryTerm styled={true} term={"correctable"}><i>correctable</i></GlossaryT
 
 
 
-<DictionaryLink styled={true} term={"defpackage"}><b>defpackage</b></DictionaryLink>, <DictionaryLink styled={true} term={"use-package"}><b>use-package</b></DictionaryLink> 
+<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks>, <ClLinks  term={"use-package"}><b>use-package</b></ClLinks> 
 
 
 
@@ -98,11 +96,11 @@ A <GlossaryTerm styled={true} term={"correctable"}><i>correctable</i></GlossaryT
 
 
 
-In situations where the <GlossaryTerm styled={true} term={"package"}><i>packages</i></GlossaryTerm> to be used contain symbols which would conflict, it is necessary to first create the package with :use ’(), then to use <DictionaryLink styled={true} term={"shadow"}><b>shadow</b></DictionaryLink> or <DictionaryLink styled={true} term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink> to address the conflicts, and then after that to use <DictionaryLink styled={true} term={"use-package"}><b>use-package</b></DictionaryLink> once the conflicts have been addressed. 
+In situations where the <ClLinks  term={"package"}><i>packages</i></ClLinks> to be used contain symbols which would conflict, it is necessary to first create the package with :use ’(), then to use <ClLinks  term={"shadow"}><b>shadow</b></ClLinks> or <ClLinks  term={"shadowing-import"}><b>shadowing-import</b></ClLinks> to address the conflicts, and then after that to use <ClLinks  term={"use-package"}><b>use-package</b></ClLinks> once the conflicts have been addressed. 
 
 
 
-When packages are being created as part of the static definition of a program rather than dynamically by the program, it is generally considered more stylistically appropriate to use <DictionaryLink styled={true} term={"defpackage"}><b>defpackage</b></DictionaryLink> rather than <DictionaryLink styled={true} term={"make-package"}><b>make-package</b></DictionaryLink>. 
+When packages are being created as part of the static definition of a program rather than dynamically by the program, it is generally considered more stylistically appropriate to use <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> rather than <ClLinks  term={"make-package"}><b>make-package</b></ClLinks>. 
 
 
 

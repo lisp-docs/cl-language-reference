@@ -1,45 +1,44 @@
-**funcall** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm>
+**funcall** <ClLinks  term={"function"}><i>Function</i></ClLinks>
 
 **Syntax:**
 
-<DictionaryLink styled={true} term={"funcall"}><b>funcall</b></DictionaryLink> <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> &amp;rest *args → \{result\}*\*
+<ClLinks  term={"funcall"}><b>funcall</b></ClLinks> <ClLinks  term={"function"}><i>function</i></ClLinks> &amp;rest *args → \{result\}*\*
 
 **Arguments and Values:**
 
-<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>—a *function designator* .
+<ClLinks  term={"function"}><i>function</i></ClLinks>—a *function designator* .
 
-*args*—<GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> to the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>.
+*args*—<ClLinks  term={"argument"}><i>arguments</i></ClLinks> to the <ClLinks  term={"function"}><i>function</i></ClLinks>.
 
-*results*—the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>.
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"function"}><i>function</i></ClLinks>.
 
 **Description:**
 
-<DictionaryLink styled={true} term={"funcall"}><b>funcall</b></DictionaryLink> applies <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> to *args*. If <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>, it is coerced to a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> as if by finding its *functional value* in the *global environment*.
+<ClLinks  term={"funcall"}><b>funcall</b></ClLinks> applies <ClLinks  term={"function"}><i>function</i></ClLinks> to *args*. If <ClLinks  term={"function"}><i>function</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, it is coerced to a <ClLinks  term={"function"}><i>function</i></ClLinks> as if by finding its *functional value* in the *global environment*.
 
 **Examples:**
 
 ```lisp
-
-(funcall #’+ 1 2 3) *→* 6 
-(funcall ’car ’(1 2 3)) *→* 1 
-(funcall ’position 1 ’(1 2 3 2 1) :start 1) *→* 4 
-(cons 1 2) *→* (1 . 2) 
-(flet ((cons (x y) ‘(kons ,x ,y))) 
-  (let ((cons (symbol-function ’+))) 
-    (funcall #’cons 
-        (funcall ’cons 1 2) 
-        (funcall cons 1 2)))) 
-*→* (KONS (1 . 2) 3) 
-
+(funcall #’+ 1 2 3) → 6 
+(funcall ’car ’(1 2 3)) → 1 
+(funcall ’position 1 ’(1 2 3 2 1) :start 1) → 4 
+(defun foo (x y) (cons x y)) → FOO
+(foo 1 2) → (1 . 2) 
+(flet ((foo (x y) ‘(kons ,x ,y))) 
+  (let ((foo (symbol-function ’+))) 
+    (funcall #’foo 
+               (funcall ’foo 1 2) 
+               (funcall foo 1 2)))) 
+→ (KONS (1 . 2) 3) 
 ```
 
 **Exceptional Situations:**
 
-An error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"undefined-function"}><b>undefined-function</b></DictionaryLink> should be signaled if <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> that does not have a global definition as a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> or that has a global definition as a <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> or a *special operator* .
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"undefined-function"}><b>undefined-function</b></ClLinks> should be signaled if <ClLinks  term={"function"}><i>function</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that does not have a global definition as a <ClLinks  term={"function"}><i>function</i></ClLinks> or that has a global definition as a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or a *special operator* .
 
 **See Also:**
 
-<DictionaryLink styled={true} term={"apply"}><b>apply</b></DictionaryLink>, <DictionaryLink styled={true} term={"function"}><b>function</b></DictionaryLink>, Section 3.1 (Evaluation)
+<ClLinks  term={"apply"}><b>apply</b></ClLinks>, <ClLinks  term={"function"}><b>function</b></ClLinks>, Section 3.1 (Evaluation)
 
 **Notes:**
 
@@ -47,8 +46,12 @@ An error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>
 
 *≡* (apply *function arg1 arg2* ... nil)
 
-*≡* (apply <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> (list *arg1 arg2* ...))
+*≡* (apply <ClLinks  term={"function"}><i>function</i></ClLinks> (list *arg1 arg2* ...))
 
-The difference between <DictionaryLink styled={true} term={"funcall"}><b>funcall</b></DictionaryLink> and an ordinary function call is that in the former case the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>
+The difference between <ClLinks  term={"funcall"}><b>funcall</b></ClLinks> and an ordinary function call is that in the former case the <ClLinks  term={"function"}><i>function</i></ClLinks> is obtained by ordinary <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of a <ClLinks  term={"form"}><i>form</i></ClLinks>, and in the latter case it is obtained by the special interpretation of the function position that normally occurs.
 
-is obtained by ordinary <GlossaryTerm styled={true} term={"evaluation"}><i>evaluation</i></GlossaryTerm> of a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>, and in the latter case it is obtained by the special interpretation of the function position that normally occurs.
+:::info
+
+We fixed the examples so that it is conforming, by not shadowing <ClLinks  term={"cons"}><b>cons</b></ClLinks> in the <ClLinks  term={"flet"}><b>flet</b></ClLinks> form.
+
+:::

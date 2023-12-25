@@ -1,4 +1,4 @@
-**special** <GlossaryTerm styled={true} term={"declaration"}><i>Declaration</i></GlossaryTerm> 
+**special** <ClLinks  term={"declaration"}><i>Declaration</i></ClLinks> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*var*—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+*var*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"proclamation"}><i>proclamation</i></GlossaryTerm> 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks> or <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm> 
+<ClLinks  term={"variable"}><i>variable</i></ClLinks> 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Specifies that all of the *vars* named are dynamic. This specifier a↵ects variable <GlossaryTerm styled={true} term={"binding"}><i>bindings</i></GlossaryTerm> and a↵ects references. All variable <GlossaryTerm styled={true} term={"binding"}><i>bindings</i></GlossaryTerm> a↵ected are made to be dynamic <GlossaryTerm styled={true} term={"binding"}><i>bindings</i></GlossaryTerm>, and a↵ected variable references refer to the current dynamic <GlossaryTerm styled={true} term={"binding"}><i>binding</i></GlossaryTerm>. For example: 
+Specifies that all of the *vars* named are dynamic. This specifier a↵ects variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> and a↵ects references. All variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> a↵ected are made to be dynamic <ClLinks  term={"binding"}><i>bindings</i></ClLinks>, and a↵ected variable references refer to the current dynamic <ClLinks  term={"binding"}><i>binding</i></ClLinks>. For example: 
 
 
 
@@ -74,15 +74,15 @@ Specifies that all of the *vars* named are dynamic. This specifier a↵ects vari
 
 
 
-A <DictionaryLink styled={true} term={"special"}><b>special</b></DictionaryLink> declaration does not a↵ect inner <GlossaryTerm styled={true} term={"binding"}><i>bindings</i></GlossaryTerm> of a *var*; the inner <GlossaryTerm styled={true} term={"binding"}><i>bindings</i></GlossaryTerm> implicitly shadow a <DictionaryLink styled={true} term={"special"}><b>special</b></DictionaryLink> declaration and must be explicitly re-declared to be <DictionaryLink styled={true} term={"special"}><b>special</b></DictionaryLink>. <DictionaryLink styled={true} term={"special"}><b>special</b></DictionaryLink> declarations never apply to function <GlossaryTerm styled={true} term={"binding"}><i>bindings</i></GlossaryTerm>. 
+A <ClLinks  term={"special"}><b>special</b></ClLinks> declaration does not a↵ect inner <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of a *var*; the inner <ClLinks  term={"binding"}><i>bindings</i></ClLinks> implicitly shadow a <ClLinks  term={"special"}><b>special</b></ClLinks> declaration and must be explicitly re-declared to be <ClLinks  term={"special"}><b>special</b></ClLinks>. <ClLinks  term={"special"}><b>special</b></ClLinks> declarations never apply to function <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. 
 
 
 
-<DictionaryLink styled={true} term={"special"}><b>special</b></DictionaryLink> declarations can be either *bound declarations*, a↵ecting both a binding and references, or *free declarations*, a↵ecting only references, depending on whether the declaration is attached to a variable binding. 
+<ClLinks  term={"special"}><b>special</b></ClLinks> declarations can be either *bound declarations*, a↵ecting both a binding and references, or *free declarations*, a↵ecting only references, depending on whether the declaration is attached to a variable binding. 
 
 
 
-When used in a <GlossaryTerm styled={true} term={"proclamation"}><i>proclamation</i></GlossaryTerm>, a <DictionaryLink styled={true} term={"special"}><b>special</b></DictionaryLink> *declaration specifier* applies to all <GlossaryTerm styled={true} term={"binding"}><i>bindings</i></GlossaryTerm> as well as to all references of the mentioned variables. For example, after 
+When used in a <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks>, a <ClLinks  term={"special"}><b>special</b></ClLinks> *declaration specifier* applies to all <ClLinks  term={"binding"}><i>bindings</i></ClLinks> as well as to all references of the mentioned variables. For example, after 
 
 
 
@@ -102,7 +102,7 @@ Evaluation and
 
 
 
-<DictionaryLink styled={true} term={"special"}><b>special</b></DictionaryLink> 
+<ClLinks  term={"special"}><b>special</b></ClLinks> 
 
 
 
@@ -120,7 +120,6 @@ the parameter x is bound as a dynamic variable rather than as a lexical variable
 
 **Examples:**
 ```lisp
-
 (defun declare-eg (y) ;this y is special 
   (declare (special y)) 
   (let ((y t)) ;this y is lexical 
@@ -156,8 +155,6 @@ the parameter x is bound as a dynamic variable rather than as a lexical variable
 The reference to \*foo\* in the first line of this example is not **special** even though there is a **special** declaration in the second line. 
 (declaim (special prosp)) *! implementation-dependent* 
 
-
-
 (setq prosp 1 reg 1) *!* 1 
 (let ((prosp 2) (reg 2)) ;the binding of prosp is special 
   (set ’prosp 3) (set ’reg 3) ;due to the preceding proclamation, 
@@ -171,13 +168,12 @@ The reference to \*foo\* in the first line of this example is not **special** ev
     (print (+ y (locally (declare (special y)) y))) 
     (let ((y 4)) (declare (special y)) (foo x)))) *!* EXAMPLE 
 In the contorted code above, the outermost and innermost *bindings* of y are dynamic, but the middle binding is lexical. The two arguments to + are di↵erent, one being the value, which is 3, of the lexical variable y, and the other being the value of the dynamic variable named y (a *binding* of which happens, coincidentally, to lexically surround it at an outer level). All the *bindings* of x and references to x are dynamic, however, because of the proclamation that x is always **special**. 
-
 ```
 **See Also:** 
 
 
 
-<DictionaryLink styled={true} term={"defparameter"}><b>defparameter</b></DictionaryLink>, <DictionaryLink styled={true} term={"defvar"}><b>defvar</b></DictionaryLink> 
+<ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks>, <ClLinks  term={"defvar"}><b>defvar</b></ClLinks> 
 
 
 

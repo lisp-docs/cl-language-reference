@@ -2,7 +2,7 @@
 
 
 
-A *defsetf lambda list* is used by <DictionaryLink styled={true} term={"defsetf"}><b>defsetf</b></DictionaryLink>. 
+A *defsetf lambda list* is used by <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks>. 
 
 
 

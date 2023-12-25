@@ -1,4 +1,4 @@
-**open-stream-p** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**open-stream-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"open-stream-p"}><b>open-stream-p</b></DictionaryLink> *stream → generalized-boolean* 
+<ClLinks  term={"open-stream-p"}><b>open-stream-p</b></ClLinks> *stream → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is an *open stream*; otherwise, returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is an *open stream*; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -42,21 +42,19 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 
 
 
-<GlossaryTerm styled={true} term={"stream"}><i>Streams</i></GlossaryTerm> are open until they have been explicitly closed with <DictionaryLink styled={true} term={"close"}><b>close</b></DictionaryLink>, or until they are implicitly closed due to exit from a <DictionaryLink styled={true} term={"with-output-to-string"}><b>with-output-to-string</b></DictionaryLink>, <DictionaryLink styled={true} term={"with-open-file"}><b>with-open-file</b></DictionaryLink>, <DictionaryLink styled={true} term={"with-input-from-string"}><b>with-input-from-string</b></DictionaryLink>, or <DictionaryLink styled={true} term={"with-open-stream"}><b>with-open-stream</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
+<ClLinks  term={"stream"}><i>Streams</i></ClLinks> are open until they have been explicitly closed with <ClLinks  term={"close"}><b>close</b></ClLinks>, or until they are implicitly closed due to exit from a <ClLinks  term={"with-output-to-string"}><b>with-output-to-string</b></ClLinks>, <ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks>, <ClLinks  term={"with-input-from-string"}><b>with-input-from-string</b></ClLinks>, or <ClLinks  term={"with-open-stream"}><b>with-open-stream</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
 **Examples:**
 ```lisp
-
 (open-stream-p \*standard-input\*) → true 
-
 ```
 **Affected By:** 
 
 
 
-<DictionaryLink styled={true} term={"close"}><b>close</b></DictionaryLink>. 
+<ClLinks  term={"close"}><b>close</b></ClLinks>. 
 
 
 
@@ -64,7 +62,7 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 
 
 
-Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 

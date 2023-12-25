@@ -6,19 +6,19 @@ A number of the functions in the condition system take arguments which are ident
 
 
 
-*datum* &amp;rest <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> 
+*datum* &amp;rest <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> 
 
 
 
-Taken together, the *datum* and the <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> are “<GlossaryTerm styled={true} term={"designator"}><i>designators</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> of default type *default-type*.” How the denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is computed depends on the type of the *datum*: 
+Taken together, the *datum* and the <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> are “<ClLinks styled={true} term={"designator"}><i>designators</i></ClLinks> for a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of default type *default-type*.” How the denoted <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is computed depends on the type of the *datum*: 
 
 
 
-*•* If the *datum* is a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> naming a *condition type . . .* 
+*•* If the *datum* is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> naming a *condition type . . .* 
 
 
 
-The denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is the result of 
+The denoted <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is the result of 
 
 
 
@@ -42,7 +42,7 @@ The denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i></Glo
 
 
 
-The denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is the result of 
+The denoted <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is the result of 
 
 
 
@@ -54,11 +54,11 @@ The denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i></Glo
 
 
 
-:format-arguments <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm>) 
+:format-arguments <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>) 
 
 
 
-where the *defaulted-type* is a <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> of *default-type*. 
+where the *defaulted-type* is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of *default-type*. 
 
 
 
@@ -66,7 +66,7 @@ where the *defaulted-type* is a <GlossaryTerm styled={true} term={"subtype"}><i>
 
 
 
-The denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is the *datum* itself. In this case, unless otherwise specified by the description of the <GlossaryTerm styled={true} term={"operator"}><i>operator</i></GlossaryTerm> in question, the <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> must be <GlossaryTerm styled={true} term={"null"}><i>null</i></GlossaryTerm>; that is, the consequences are undefined if any <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> were supplied. 
+The denoted <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is the *datum* itself. In this case, unless otherwise specified by the description of the <ClLinks styled={true} term={"operator"}><i>operator</i></ClLinks> in question, the <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> must be <ClLinks styled={true} term={"null"}><i>null</i></ClLinks>; that is, the consequences are undefined if any <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> were supplied. 
 
 
 

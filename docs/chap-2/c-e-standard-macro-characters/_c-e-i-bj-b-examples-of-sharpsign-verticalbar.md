@@ -1,5 +1,4 @@
 ```lisp
-
 The following are some examples that exploit the #|...|# notation: 
 ;;; In this example, some debugging code is commented out with #|...|# 
 ;;; Note that this kind of comment can occur in the middle of a line 
@@ -32,7 +31,6 @@ The following are some examples that exploit the #|...|# notation:
 ▷ Don’t use |# unmatched or you’ll get in trouble! 
 → NIL 
 #| (defun mention-fun-fact-2b ()  
-
      (format t "Don’t use |\# unmatched or you’ll get in trouble!") |# 
 (fboundp ’mention-fun-fact-2b) → NIL 
 ;;; In this example, the programmer attacks the mismatch problem in a 
@@ -51,5 +49,4 @@ The following are some examples that exploit the #|...|# notation:
   (format t "Don’t use |# unmatched or you’ll get in trouble!")) 
 |# 
 (fboundp ’mention-fun-fact-3b) → NIL 
-
 ```

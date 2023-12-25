@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"no-applicable-method"}><b>no-applicable-method</b></DictionaryLink> *generic-function* &amp;rest *function-arguments → \{result\}*\* 
+<ClLinks  term={"no-applicable-method"}><b>no-applicable-method</b></ClLinks> *generic-function* &amp;rest *function-arguments → \{result\}*\* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<DictionaryLink styled={true} term={"no-applicable-method"}><b>no-applicable-method</b></DictionaryLink> (*generic-function* <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>) 
+<ClLinks  term={"no-applicable-method"}><b>no-applicable-method</b></ClLinks> (*generic-function* <ClLinks  term={"t"}><b>t</b></ClLinks>) 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-*function-arguments*—<GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> to the *generic-function*. 
+*function-arguments*—<ClLinks  term={"argument"}><i>arguments</i></ClLinks> to the *generic-function*. 
 
 
 
-*result*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+*result*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-The generic function <DictionaryLink styled={true} term={"no-applicable-method"}><b>no-applicable-method</b></DictionaryLink> is called when a *generic function* is invoked and no <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> on that *generic function* is applicable. The *default method* signals an error. 
+The generic function <ClLinks  term={"no-applicable-method"}><b>no-applicable-method</b></ClLinks> is called when a *generic function* is invoked and no <ClLinks  term={"method"}><i>method</i></ClLinks> on that *generic function* is applicable. The *default method* signals an error. 
 
 
 
-The generic function <DictionaryLink styled={true} term={"no-applicable-method"}><b>no-applicable-method</b></DictionaryLink> is not intended to be called by programmers. Programmers may write <GlossaryTerm styled={true} term={"method"}><i>methods</i></GlossaryTerm> for it. 
+The generic function <ClLinks  term={"no-applicable-method"}><b>no-applicable-method</b></ClLinks> is not intended to be called by programmers. Programmers may write <ClLinks  term={"method"}><i>methods</i></ClLinks> for it. 
 
 
 
@@ -66,7 +66,7 @@ The generic function <DictionaryLink styled={true} term={"no-applicable-method"}
 
 
 
-The default <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> signals an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink>. 
+The default <ClLinks  term={"method"}><i>method</i></ClLinks> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks>. 
 
 
 

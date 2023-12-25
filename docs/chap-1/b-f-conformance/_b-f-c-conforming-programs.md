@@ -10,7 +10,7 @@ Code conforming with the requirements of this standard shall adhere to the follo
 
 
 
-2\. *Conforming code* may use <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> features and values, but shall not rely upon any particular interpretation of these features and values other than those that are discovered by the execution of <GlossaryTerm styled={true} term={"code"}><i>code</i></GlossaryTerm>. 
+2\. *Conforming code* may use <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> features and values, but shall not rely upon any particular interpretation of these features and values other than those that are discovered by the execution of <ClLinks styled={true} term={"code"}><i>code</i></ClLinks>. 
 
 
 
