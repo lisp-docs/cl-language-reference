@@ -2,11 +2,11 @@
 
 
 
-Iteration control clauses allow direction of <ClLinks  term={"loop"}><b>loop</b></ClLinks> iteration. The *loop keywords* for and as designate iteration control clauses. Iteration control clauses differ with respect to the specification of termination tests and to the initialization and *stepping*<sub>1</sub> of loop variables. Iteration clauses by themselves do not cause the Loop Facility to return values, but they can be used in conjunction with value-accumulation clauses to return values. 
+Iteration control clauses allow direction of <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> iteration. The *loop keywords* for and as designate iteration control clauses. Iteration control clauses differ with respect to the specification of termination tests and to the initialization and *stepping*<sub>1</sub> of loop variables. Iteration clauses by themselves do not cause the Loop Facility to return values, but they can be used in conjunction with value-accumulation clauses to return values. 
 
 
 
-All variables are initialized in the loop prologue. A *variable binding* has *lexical scope* unless it is proclaimed <ClLinks  term={"special"}><b>special</b></ClLinks>; thus, by default, the variable can be *accessed* only by <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> that lie textually within the <ClLinks  term={"loop"}><b>loop</b></ClLinks>. Stepping assignments are made in the loop body before any other <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> are evaluated in the body. 
+All variables are initialized in the loop prologue. A *variable binding* has *lexical scope* unless it is proclaimed <DictionaryLink  term={"special"}><b>special</b></DictionaryLink>; thus, by default, the variable can be *accessed* only by <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> that lie textually within the <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink>. Stepping assignments are made in the loop body before any other <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> are evaluated in the body. 
 
 
 
@@ -14,11 +14,11 @@ The variable argument in iteration control clauses can be a destructuring list. 
 
 
 
-The iteration control clauses for, as, and repeat must precede any other loop clauses, except initially, with, and named, since they establish variable <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm>. When iteration control clauses are used in a <ClLinks  term={"loop"}><b>loop</b></ClLinks>, the corresponding termination tests in the loop body are evaluated before any other loop body code is executed. 
+The iteration control clauses for, as, and repeat must precede any other loop clauses, except initially, with, and named, since they establish variable <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm>. When iteration control clauses are used in a <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink>, the corresponding termination tests in the loop body are evaluated before any other loop body code is executed. 
 
 
 
-If multiple iteration clauses are used to control iteration, variable initialization and *stepping*<sub>1</sub> occur <GlossaryTerm  term={"sequentially"}><i>sequentially</i></GlossaryTerm> by default. The and construct can be used to connect two or more iteration clauses when *sequential binding* and *stepping*<sub>1</sub> are not necessary. The iteration behavior of clauses joined by and is analogous to the behavior of the macro <ClLinks  term={"do"}><b>do</b></ClLinks> with respect to <ClLinks  term={"do"}><b>do\*</b></ClLinks>. 
+If multiple iteration clauses are used to control iteration, variable initialization and *stepping*<sub>1</sub> occur <GlossaryTerm  term={"sequentially"}><i>sequentially</i></GlossaryTerm> by default. The and construct can be used to connect two or more iteration clauses when *sequential binding* and *stepping*<sub>1</sub> are not necessary. The iteration behavior of clauses joined by and is analogous to the behavior of the macro <DictionaryLink  term={"do"}><b>do</b></DictionaryLink> with respect to <DictionaryLink  term={"do"}><b>do\*</b></DictionaryLink>. 
 
 
 

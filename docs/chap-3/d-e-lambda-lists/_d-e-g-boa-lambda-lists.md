@@ -6,7 +6,7 @@ A *boa lambda list* is a *lambda list* that is syntactically like an *ordinary l
 
 
 
-A *boa lambda list* is used only in a <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, when explicitly specifying the *lambda list* of a constructor <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> (sometimes called a “boa constructor”). 
+A *boa lambda list* is used only in a <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, when explicitly specifying the *lambda list* of a constructor <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> (sometimes called a “boa constructor”). 
 
 
 
@@ -34,11 +34,11 @@ Consider this example, which describes how **destruct** processes its :construct
 
 
 
-This defines create-foo to be a constructor of one or more arguments. The first argument is used to initialize the a slot. The second argument is used to initialize the b slot. If there isn’t any second argument, then the default value given in the body of the <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks> (if given) is used instead. The third argument is used to initialize the c slot. If there isn’t any third argument, then the symbol 
+This defines create-foo to be a constructor of one or more arguments. The first argument is used to initialize the a slot. The second argument is used to initialize the b slot. If there isn’t any second argument, then the default value given in the body of the <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> (if given) is used instead. The third argument is used to initialize the c slot. If there isn’t any third argument, then the symbol 
 
 
 
-sea is used instead. Any arguments following the third argument are collected into a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> and used to initialize the d slot. If there are three or fewer arguments, then <ClLinks  term={"nil"}><b>nil</b></ClLinks> is placed in the d slot. The e slot is not initialized; its initial value is <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>. Finally, the f slot is initialized to contain the symbol eff. **&amp;key** and **&amp;allow-other-keys** arguments default in a manner similar to that of **&amp;optional** arguments: if no default is supplied in the *lambda list* then the default value given in the body of the <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks> (if given) is used instead. For example: 
+sea is used instead. Any arguments following the third argument are collected into a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> and used to initialize the d slot. If there are three or fewer arguments, then <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is placed in the d slot. The e slot is not initialized; its initial value is <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>. Finally, the f slot is initialized to contain the symbol eff. **&amp;key** and **&amp;allow-other-keys** arguments default in a manner similar to that of **&amp;optional** arguments: if no default is supplied in the *lambda list* then the default value given in the body of the <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> (if given) is used instead. For example: 
 
 
 

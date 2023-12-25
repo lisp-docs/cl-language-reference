@@ -2,13 +2,13 @@
 
 **Supertypes:**
 
-<ClLinks  term={"extended-char"}><b>extended-char</b></ClLinks>, <ClLinks  term={"character"}><b>character</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks>
+<DictionaryLink  term={"extended-char"}><b>extended-char</b></DictionaryLink>, <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>
 
 **Description:**
 
-The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <ClLinks  term={"extended-char"}><b>extended-char</b></ClLinks> is equivalent to the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> (and character (not base-char)).
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"extended-char"}><b>extended-char</b></DictionaryLink> is equivalent to the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> (and character (not base-char)).
 
 **Notes:**
 
-The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <ClLinks  term={"extended-char"}><b>extended-char</b></ClLinks> might have no <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm><sub>4</sub> in <GlossaryTerm  term={"implementation"}><i>implementations</i></GlossaryTerm> in which all <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> are of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <ClLinks  term={"base-char"}><b>base-char</b></ClLinks>.
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"extended-char"}><b>extended-char</b></DictionaryLink> might have no <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm><sub>4</sub> in <GlossaryTerm  term={"implementation"}><i>implementations</i></GlossaryTerm> in which all <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> are of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"base-char"}><b>base-char</b></DictionaryLink>.
 

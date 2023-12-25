@@ -1,4 +1,4 @@
-*∗<ClLinks  term={"print-lines"}><b>*print-lines*</b></ClLinks>∗ Variable* 
+*∗<DictionaryLink  term={"print-lines"}><b>*print-lines*</b></DictionaryLink>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-a non-negative *integer* , or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+a non-negative *integer* , or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -14,7 +14,7 @@ a non-negative *integer* , or <ClLinks  term={"nil"}><b>nil</b></ClLinks>.
 
 
 
-<ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -34,7 +34,7 @@ a non-negative *integer* , or <ClLinks  term={"nil"}><b>nil</b></ClLinks>.
 
 
 
-When the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <ClLinks  term={"print-lines"}><b>\*print-lines\*</b></ClLinks> is other than <ClLinks  term={"nil"}><b>nil</b></ClLinks>, it is a limit on the number of output lines produced when something is pretty printed. If an attempt is made to go beyond that many lines, “..” is printed at the end of the last line followed by all of the suffixes (closing delimiters) that are pending to be printed. 
+When the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink  term={"print-lines"}><b>\*print-lines\*</b></DictionaryLink> is other than <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, it is a limit on the number of output lines produced when something is pretty printed. If an attempt is made to go beyond that many lines, “..” is printed at the end of the last line followed by all of the suffixes (closing delimiters) that are pending to be printed. 
 
 
 

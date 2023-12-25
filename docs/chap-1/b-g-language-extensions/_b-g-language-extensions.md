@@ -38,11 +38,11 @@ No output can be produced by a function other than that specified in the standar
 
 
 
-Unsolicited output, such as garbage collection notifications and autoload heralds, should not go directly to the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> that is the value of a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> variable defined in this standard, but can go indirectly to *terminal I/O* by using a *synonym stream* to <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
+Unsolicited output, such as garbage collection notifications and autoload heralds, should not go directly to the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> that is the value of a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> variable defined in this standard, but can go indirectly to *terminal I/O* by using a *synonym stream* to <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>. 
 
 
 
-Progress reports from such functions as <ClLinks  term={"load"}><b>load</b></ClLinks> and <ClLinks  term={"compile"}><b>compile</b></ClLinks> are considered solicited, and are not covered by this prohibition. 
+Progress reports from such functions as <DictionaryLink  term={"load"}><b>load</b></DictionaryLink> and <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink> are considered solicited, and are not covered by this prohibition. 
 
 
 

@@ -14,13 +14,13 @@
 
 **Description:**
 
-The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <ClLinks  term={"-"}><b>-</b></ClLinks> performs arithmetic subtraction and negation.
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"-"}><b>-</b></DictionaryLink> performs arithmetic subtraction and negation.
 
 If only one <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is supplied, the negation of that <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is returned.
 
 If more than one <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> is given, it subtracts all of the *subtrahends* from the *minuend* and returns the result.
 
-The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <ClLinks  term={"-"}><b>-</b></ClLinks> performs necessary type conversions.
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"-"}><b>-</b></DictionaryLink> performs necessary type conversions.
 
 **Examples:**
 
@@ -35,7 +35,7 @@ The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <ClLinks  te
 
 **Exceptional Situations:**
 
-Might signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if some <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> is not a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
+Might signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if some <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> is not a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . Might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>.
 
 **See Also:**
 
