@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"handler-bind"}><b>handler-bind</b></DictionaryLink> (<GlossaryTerm styled={true} term={"binding"}><i>\{↓binding\}</i></GlossaryTerm>\*) <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"handler-bind"}><b>handler-bind</b></DictionaryLink> (<GlossaryTerm styled={true} term={"binding"}><i>\{↓binding\}</i></GlossaryTerm>\*) <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* → \{result\}\* 
 
 
 

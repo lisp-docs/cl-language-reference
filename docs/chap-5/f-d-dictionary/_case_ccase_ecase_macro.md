@@ -6,15 +6,15 @@
 
 
 
-<DictionaryLink styled={true} term={"case"}><b>case</b></DictionaryLink> *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"case"}><b>case</b></DictionaryLink> *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] → \{result\}\* 
 
 
 
-<DictionaryLink styled={true} term={"ccase"}><b>ccase</b></DictionaryLink> *keyplace \{↓normal-clause\}*\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"ccase"}><b>ccase</b></DictionaryLink> *keyplace \{↓normal-clause\}*\* → \{result\}\* 
 
 
 
-<DictionaryLink styled={true} term={"ecase"}><b>ecase</b></DictionaryLink> *keyform \{↓normal-clause\}*\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"ecase"}><b>ecase</b></DictionaryLink> *keyform \{↓normal-clause\}*\* → \{result\}\* 
 
 
 

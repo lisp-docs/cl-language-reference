@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"block"}><b>block</b></DictionaryLink> *name form*\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"block"}><b>block</b></DictionaryLink> *name form*\* → \{result\}\* 
 
 
 

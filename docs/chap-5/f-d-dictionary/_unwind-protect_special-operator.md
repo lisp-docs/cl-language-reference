@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> *protected-form \{cleanup-form\}*\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> *protected-form \{cleanup-form\}*\* → \{result\}\* 
 
 
 

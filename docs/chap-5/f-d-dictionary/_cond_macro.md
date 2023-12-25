@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"cond"}><b>cond</b></DictionaryLink> *\{↓clause\}*\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"cond"}><b>cond</b></DictionaryLink> *\{↓clause\}*\* → \{result\}\* 
 
 
 

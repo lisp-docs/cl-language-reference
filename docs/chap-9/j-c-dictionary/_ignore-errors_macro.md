@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"ignore-errors"}><b>ignore-errors</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"ignore-errors"}><b>ignore-errors</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* → \{result\}\* 
 
 
 

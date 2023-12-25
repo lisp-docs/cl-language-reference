@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></DictionaryLink> ([[ *↓option* ]]) <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></DictionaryLink> ([[ *↓option* ]]) <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* → \{result\}\* 
 
 
 

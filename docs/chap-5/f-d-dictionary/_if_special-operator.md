@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"if"}><b>if</b></DictionaryLink> *test-form then-form* [*else-form*] *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"if"}><b>if</b></DictionaryLink> *test-form then-form* [*else-form*] → \{result\}\* 
 
 
 

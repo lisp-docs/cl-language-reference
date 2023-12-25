@@ -6,11 +6,11 @@
 
 
 
-<DictionaryLink styled={true} term={"typecase"}><b>typecase</b></DictionaryLink> *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"typecase"}><b>typecase</b></DictionaryLink> *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] → \{result\}\* 
 
 
 
-<DictionaryLink styled={true} term={"ctypecase"}><b>ctypecase</b></DictionaryLink> *keyplace \{↓normal-clause\}*\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"ctypecase"}><b>ctypecase</b></DictionaryLink> *keyplace \{↓normal-clause\}*\* → \{result\}\* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<DictionaryLink styled={true} term={"etypecase"}><b>etypecase</b></DictionaryLink> *keyform \{↓normal-clause\}*\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"etypecase"}><b>etypecase</b></DictionaryLink> *keyform \{↓normal-clause\}*\* → \{result\}\* 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"eval-when"}><b>eval-when</b></DictionaryLink> (<GlossaryTerm styled={true} term={"situation"}><i>\{situation\}</i></GlossaryTerm>\*) <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"eval-when"}><b>eval-when</b></DictionaryLink> (<GlossaryTerm styled={true} term={"situation"}><i>\{situation\}</i></GlossaryTerm>\*) <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* → \{result\}\* 
 
 
 

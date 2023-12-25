@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"progv"}><b>progv</b></DictionaryLink> *symbols values \{form\}*\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"progv"}><b>progv</b></DictionaryLink> *symbols values \{form\}*\* → \{result\}\* 
 
 
 

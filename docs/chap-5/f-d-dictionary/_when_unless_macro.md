@@ -6,11 +6,11 @@
 
 
 
-<DictionaryLink styled={true} term={"when"}><b>when</b></DictionaryLink> *test-form \{form\}*\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"when"}><b>when</b></DictionaryLink> *test-form \{form\}*\* → \{result\}\* 
 
 
 
-<DictionaryLink styled={true} term={"unless"}><b>unless</b></DictionaryLink> *test-form \{form\}*\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"unless"}><b>unless</b></DictionaryLink> *test-form \{form\}*\* → \{result\}\* 
 
 
 

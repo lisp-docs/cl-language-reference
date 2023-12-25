@@ -10,7 +10,7 @@ The “simple” <DictionaryLink styled={true} term={"loop"}><b>loop</b></Dictio
 
 
 
-<DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> *\{compound-form\}*\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> *\{compound-form\}*\* → \{result\}\* 
 
 
 
@@ -18,7 +18,7 @@ The “extended” <DictionaryLink styled={true} term={"loop"}><b>loop</b></Dict
 
 
 
-<DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> [*↓name-clause*] *\{↓variable-clause\}*\* *\{↓main-clause\}*\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> [*↓name-clause*] *\{↓variable-clause\}*\* *\{↓main-clause\}*\* → \{result\}\* 
 
 
 

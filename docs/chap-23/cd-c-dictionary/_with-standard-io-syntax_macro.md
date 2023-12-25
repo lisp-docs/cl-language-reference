@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"with-standard-io-syntax"}><b>with-standard-io-syntax</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"with-standard-io-syntax"}><b>with-standard-io-syntax</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* → \{result\}\* 
 
 
 

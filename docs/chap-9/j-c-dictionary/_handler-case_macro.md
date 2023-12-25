@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"handler-case"}><b>handler-case</b></DictionaryLink> <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm> [[ *\{↓error-clause\}*\* *| ↓no-error-clause* ]] *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"handler-case"}><b>handler-case</b></DictionaryLink> <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm> [[ *\{↓error-clause\}*\* *| ↓no-error-clause* ]] → \{result\}\* 
 
 
 

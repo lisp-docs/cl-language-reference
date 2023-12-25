@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"or"}><b>or</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* *→ \{results\}*\* 
+<DictionaryLink styled={true} term={"or"}><b>or</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* → \{results\}\* 
 
 
 

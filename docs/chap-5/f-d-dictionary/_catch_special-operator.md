@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"catch"}><b>catch</b></DictionaryLink> *tag \{form\}*\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"catch"}><b>catch</b></DictionaryLink> *tag \{form\}*\* → \{result\}\* 
 
 
 

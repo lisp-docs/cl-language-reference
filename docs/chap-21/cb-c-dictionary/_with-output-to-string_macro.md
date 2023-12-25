@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"with-output-to-string"}><b>with-output-to-string</b></DictionaryLink> (*var* &amp;optional *string-form* &amp;key *element-type*) <GlossaryTerm styled={true} term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"with-output-to-string"}><b>with-output-to-string</b></DictionaryLink> (*var* &amp;optional *string-form* &amp;key *element-type*) <GlossaryTerm styled={true} term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* → \{result\}\* 
 
 
 

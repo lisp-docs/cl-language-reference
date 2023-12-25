@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> (*name package-list-form* &amp;rest *symbol-types*) <GlossaryTerm styled={true} term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* *→ \{result\}*\* 
+<DictionaryLink styled={true} term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> (*name package-list-form* &amp;rest *symbol-types*) <GlossaryTerm styled={true} term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* → \{result\}\* 
 
 
 
