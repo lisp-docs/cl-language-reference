@@ -179,7 +179,7 @@ const config = {
             items: [
               {
                 label: "Blog",
-                to: "/blog",
+                to: "https://lisp-docs.github.io//blog",
               },
               {
                 label: "GitHub",
