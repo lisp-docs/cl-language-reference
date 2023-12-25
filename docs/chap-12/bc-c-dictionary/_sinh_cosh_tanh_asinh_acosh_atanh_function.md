@@ -1,24 +1,24 @@
-**sinh, cosh, tanh, asinh, acosh, atanh** <ClLinks  term={"function"}><i>Function</i></ClLinks>
+**sinh, cosh, tanh, asinh, acosh, atanh** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm>
 
 **Syntax:**
 
-<ClLinks  term={"sinh"}><b>sinh</b></ClLinks> *number → result*
+<DictionaryLink  term={"sinh"}><b>sinh</b></DictionaryLink> *number → result*
 
-<ClLinks  term={"cosh"}><b>cosh</b></ClLinks> *number → result*
+<DictionaryLink  term={"cosh"}><b>cosh</b></DictionaryLink> *number → result*
 
-<ClLinks  term={"tanh"}><b>tanh</b></ClLinks> *number → result*
+<DictionaryLink  term={"tanh"}><b>tanh</b></DictionaryLink> *number → result*
 
-<ClLinks  term={"asinh"}><b>asinh</b></ClLinks> *number → result*
+<DictionaryLink  term={"asinh"}><b>asinh</b></DictionaryLink> *number → result*
 
-<ClLinks  term={"acosh"}><b>acosh</b></ClLinks> *number → result*
+<DictionaryLink  term={"acosh"}><b>acosh</b></DictionaryLink> *number → result*
 
-<ClLinks  term={"atanh"}><b>atanh</b></ClLinks> *number → result*
+<DictionaryLink  term={"atanh"}><b>atanh</b></DictionaryLink> *number → result*
 
 **Arguments and Values:**
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> .
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> .
 
-*result*—a <ClLinks  term={"number"}><i>number</i></ClLinks> .
+*result*—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> .
 
 **Description:**
 
@@ -77,14 +77,14 @@ The branch cut for the inverse hyperbolic tangent function is in two pieces: one
 
 **Exceptional Situations:**
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is not a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . Might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>.
 
 **See Also:**
 
-<ClLinks  term={"log"}><b>log</b></ClLinks>, <ClLinks  term={"sqrt"}><b>sqrt</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability)
+<DictionaryLink  term={"log"}><b>log</b></DictionaryLink>, <DictionaryLink  term={"sqrt"}><b>sqrt</b></DictionaryLink>, Section 12.1.3.3 (Rule of Float Substitutability)
 
 **Notes:**
 
-The result of <ClLinks  term={"acosh"}><b>acosh</b></ClLinks> may be a <ClLinks  term={"complex"}><i>complex</i></ClLinks> even if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ; this occurs when <ClLinks  term={"number"}><i>number</i></ClLinks> is less than one. Also, the result of <ClLinks  term={"atanh"}><b>atanh</b></ClLinks> may be a <ClLinks  term={"complex"}><i>complex</i></ClLinks> even if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ; this occurs when the absolute value of <ClLinks  term={"number"}><i>number</i></ClLinks> is greater than one.
+The result of <DictionaryLink  term={"acosh"}><b>acosh</b></DictionaryLink> may be a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> even if <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is not a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> ; this occurs when <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is less than one. Also, the result of <DictionaryLink  term={"atanh"}><b>atanh</b></DictionaryLink> may be a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> even if <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is not a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> ; this occurs when the absolute value of <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is greater than one.
 
 The branch cut formulae are mathematically correct, assuming completely accurate computation. Implementors should consult a good text on numerical analysis. The formulae given above are not necessarily the simplest ones for real-valued computations; they are chosen to define the branch cuts in desirable ways for the complex case.

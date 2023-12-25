@@ -1,4 +1,4 @@
-**\*** <ClLinks  term={"function"}><i>Function</i></ClLinks>
+**\*** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm>
 
 **Syntax:**
 
@@ -6,13 +6,13 @@
 
 **Arguments and Values:**
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> .
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> .
 
-*product*—a <ClLinks  term={"number"}><i>number</i></ClLinks> .
+*product*—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> .
 
 **Description:**
 
-Returns the product of <ClLinks  term={"number"}><i>numbers</i></ClLinks>, performing any necessary type conversions in the process. If no <ClLinks  term={"number"}><i>numbers</i></ClLinks> are supplied, 1 is returned.
+Returns the product of <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm>, performing any necessary type conversions in the process. If no <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm> are supplied, 1 is returned.
 
 **Examples:**
 
@@ -24,7 +24,7 @@ Returns the product of <ClLinks  term={"number"}><i>numbers</i></ClLinks>, perfo
 
 **Exceptional Situations:**
 
-Might signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if some <ClLinks  term={"argument"}><i>argument</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
+Might signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if some <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> is not a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . Might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>.
 
 **See Also:**
 

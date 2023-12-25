@@ -1,14 +1,14 @@
-**extended-char** <ClLinks styled={true} term={"type"}><i>Type</i></ClLinks>
+**extended-char** <GlossaryTerm  term={"type"}><i>Type</i></GlossaryTerm>
 
 **Supertypes:**
 
-<ClLinks styled={true} term={"extended-char"}><b>extended-char</b></ClLinks>, <ClLinks styled={true} term={"character"}><b>character</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>
+<DictionaryLink  term={"extended-char"}><b>extended-char</b></DictionaryLink>, <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>
 
 **Description:**
 
-The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"extended-char"}><b>extended-char</b></ClLinks> is equivalent to the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> (and character (not base-char)).
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"extended-char"}><b>extended-char</b></DictionaryLink> is equivalent to the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> (and character (not base-char)).
 
 **Notes:**
 
-The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"extended-char"}><b>extended-char</b></ClLinks> might have no <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks><sub>4</sub> in <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> in which all <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> are of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"base-char"}><b>base-char</b></ClLinks>.
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"extended-char"}><b>extended-char</b></DictionaryLink> might have no <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm><sub>4</sub> in <GlossaryTerm  term={"implementation"}><i>implementations</i></GlossaryTerm> in which all <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> are of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"base-char"}><b>base-char</b></DictionaryLink>.
 

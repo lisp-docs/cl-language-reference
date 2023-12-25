@@ -2,21 +2,21 @@
 
 **Syntax:**
 
-<ClLinks  term={"progn"}><b>progn</b></ClLinks> <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* *! \{result\}*\*
+<DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\* *! \{result\}*\*
 
 **Arguments and Values:**
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*.
+<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>—an *implicit progn*.
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks>.
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> of the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>.
 
 **Description:**
 
-<ClLinks  term={"progn"}><b>progn</b></ClLinks> evaluates <ClLinks  term={"form"}><i>forms</i></ClLinks>, in the order in which they are given.
+<DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink> evaluates <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>, in the order in which they are given.
 
-The values of each <ClLinks  term={"form"}><i>form</i></ClLinks> but the last are discarded.
+The values of each <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> but the last are discarded.
 
-If <ClLinks  term={"progn"}><b>progn</b></ClLinks> appears as a *top level form*, then all <ClLinks  term={"form"}><i>forms</i></ClLinks> within that <ClLinks  term={"progn"}><b>progn</b></ClLinks> are considered by the compiler to be *top level forms*.
+If <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink> appears as a *top level form*, then all <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> within that <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink> are considered by the compiler to be *top level forms*.
 
 **Examples:**
 
@@ -33,11 +33,11 @@ a *!* NIL
 
 **See Also:**
 
-<ClLinks  term={"prog1"}><b>prog1</b></ClLinks>, <ClLinks  term={"prog2"}><b>prog2</b></ClLinks>, Section 3.1 (Evaluation)
+<DictionaryLink  term={"prog1"}><b>prog1</b></DictionaryLink>, <DictionaryLink  term={"prog2"}><b>prog2</b></DictionaryLink>, Section 3.1 (Evaluation)
 
 **Notes:**
 
-Many places in Common Lisp involve syntax that uses *implicit progns*. That is, part of their syntax allows many <ClLinks  term={"form"}><i>forms</i></ClLinks> to be written that are to be evaluated sequentially, discarding the results of all <ClLinks  term={"form"}><i>forms</i></ClLinks> but the last and returning the results of the last <ClLinks  term={"form"}><i>form</i></ClLinks>. Such places include, but are not limited to, the following: the body of a *lambda expression*; the bodies of various control and conditional <ClLinks  term={"form"}><i>forms</i></ClLinks> (*e.g.*, <ClLinks  term={"case"}><b>case</b></ClLinks>, <ClLinks  term={"catch"}><b>catch</b></ClLinks>, <ClLinks  term={"progn"}><b>progn</b></ClLinks>, and <ClLinks  term={"when"}><b>when</b></ClLinks>).
+Many places in Common Lisp involve syntax that uses *implicit progns*. That is, part of their syntax allows many <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> to be written that are to be evaluated sequentially, discarding the results of all <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> but the last and returning the results of the last <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. Such places include, but are not limited to, the following: the body of a *lambda expression*; the bodies of various control and conditional <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> (*e.g.*, <DictionaryLink  term={"case"}><b>case</b></DictionaryLink>, <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink>, <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink>, and <DictionaryLink  term={"when"}><b>when</b></DictionaryLink>).
 
 :::info
 

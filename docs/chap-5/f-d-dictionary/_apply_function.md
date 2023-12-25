@@ -1,46 +1,27 @@
-**apply** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**apply** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm>
 
+**Syntax:**
 
+<DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> &amp;rest *args*<sup>+</sup> → \{result\}\*
 
-**Syntax:** 
+**Arguments and Values:**
 
+<GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>—a *function designator* .
 
+*args*—a *spreadable argument list designator* .
 
-<ClLinks  term={"apply"}><b>apply</b></ClLinks> <ClLinks  term={"function"}><i>function</i></ClLinks> &amp;rest *args*<sup>+</sup> → \{result\}\* 
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>.
 
+**Description:**
 
+*Applies* the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> to the *args*.
 
-**Arguments and Values:** 
+When the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> receives its arguments via **&amp;rest**, it is permissible (but not required) for the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> to <GlossaryTerm  term={"bind"}><i>bind</i></GlossaryTerm> the *rest parameter* to an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> that shares structure with the last argument to <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink>. Because a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> can neither detect whether it was called via <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> nor whether (if so) the last argument to <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> was a <GlossaryTerm  term={"constant"}><i>constant</i></GlossaryTerm>, *conforming programs* must neither rely on the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> structure of a *rest list* to be freshly consed, nor modify that <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> structure.
 
-
-
-<ClLinks  term={"function"}><i>function</i></ClLinks>—a *function designator* . 
-
-
-
-*args*—a *spreadable argument list designator* . 
-
-
-
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by <ClLinks  term={"function"}><i>function</i></ClLinks>. 
-
-
-
-**Description:** 
-
-
-
-*Applies* the <ClLinks  term={"function"}><i>function</i></ClLinks> to the *args*. 
-
-
-
-When the <ClLinks  term={"function"}><i>function</i></ClLinks> receives its arguments via **&amp;rest**, it is permissible (but not required) for the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to <ClLinks  term={"bind"}><i>bind</i></ClLinks> the *rest parameter* to an <ClLinks  term={"object"}><i>object</i></ClLinks> that shares structure with the last argument to <ClLinks  term={"apply"}><b>apply</b></ClLinks>. Because a <ClLinks  term={"function"}><i>function</i></ClLinks> can neither detect whether it was called via <ClLinks  term={"apply"}><b>apply</b></ClLinks> nor whether (if so) the last argument to <ClLinks  term={"apply"}><b>apply</b></ClLinks> was a <ClLinks  term={"constant"}><i>constant</i></ClLinks>, *conforming programs* must neither rely on the <ClLinks  term={"list"}><i>list</i></ClLinks> structure of a *rest list* to be freshly consed, nor modify that <ClLinks  term={"list"}><i>list</i></ClLinks> structure. 
-
-
-
-<ClLinks  term={"setf"}><b>setf</b></ClLinks> can be used with <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> in certain circumstances; see Section 5.1.2.5 (APPLY Forms as Places). 
+<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> can be used with <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> in certain circumstances; see Section 5.1.2.5 (APPLY Forms as Places).
 
 **Examples:**
+
 ```lisp
 (setq f ’+) → + 
 (apply f ’(1 2)) → 3 
@@ -62,8 +43,7 @@ When the <ClLinks  term={"function"}><i>function</i></ClLinks> receives its argu
 
 → #(A B C D A B C D) 
 ```
-**See Also:** 
 
+**See Also:**
 
-
-<ClLinks  term={"funcall"}><b>funcall</b></ClLinks>, <ClLinks  term={"fdefinition"}><b>fdefinition</b></ClLinks>, <ClLinks  term={"function"}><b>function</b></ClLinks>, Section 3.1 (Evaluation), Section 5.1.2.5 (APPLY Forms as Places) 
+<DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink>, <DictionaryLink  term={"fdefinition"}><b>fdefinition</b></DictionaryLink>, <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>, Section 3.1 (Evaluation), Section 5.1.2.5 (APPLY Forms as Places)
