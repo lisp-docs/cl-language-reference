@@ -3,7 +3,7 @@ import { ReferenceAid, getLink, DefinitionTooltips, isDefinition, isDictionaryIt
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import 'tippy.js/dist/tippy.css'; // optional
 
-export function GlossaryTerm({ children, styled, term }) {
+export function GlossaryTermAsync({ children, styled, term }) {
   
   function getLispDocsLink() {
     if (term !== null && term !== undefined && typeof term === "string") {
@@ -73,10 +73,10 @@ export function GlossaryTerm({ children, styled, term }) {
   return getDisplay();
 }
 
-export default function ClLinks({ children, styled, term }) {
+export default function GlossaryTerm({ children, styled, term }) {
   return (
     <BrowserOnly fallback={<span>{children}</span>}>
-      {() => <GlossaryTerm term={term} styled={styled}>{children}</GlossaryTerm>}
+      {() => <GlossaryTermAsync term={term} styled={styled}>{children}</GlossaryTermAsync>}
     </BrowserOnly>
   );
 }
