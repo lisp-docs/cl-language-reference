@@ -210,7 +210,7 @@ The use of this notation is intended to disguise small differences in interactiv
 
 
 
-Sometimes, the non-interactive stream model calls for a <GlossaryTerm styled={true} term={"newline"}><i>newline</i></GlossaryTerm>. How that <GlossaryTerm styled={true} term={"newline"}><i>newline</i></GlossaryTerm> character is interactively entered is an <GlossaryTerm styled={true} term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm> detail of the user interface, but in that case, either the notation “*hNewlinei*” or “*←-*” might be used. 
+Sometimes, the non-interactive stream model calls for a <GlossaryTerm styled={true} term={"newline"}><i>newline</i></GlossaryTerm>. How that <GlossaryTerm styled={true} term={"newline"}><i>newline</i></GlossaryTerm> character is interactively entered is an <GlossaryTerm styled={true} term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm> detail of the user interface, but in that case, either the notation “*⟨Newline⟩*” or “*←-*” might be used. 
 
 
 

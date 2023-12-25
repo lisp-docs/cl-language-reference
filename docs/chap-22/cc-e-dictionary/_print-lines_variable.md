@@ -46,7 +46,7 @@ When the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> 
 ▷ (PROGN (SETQ A 1 
 	       ▷ B 2 
 	       ▷ C 3 ..)) 
-*→ hno valuesi* 
+*→ ⟨no values⟩* 
 
 ```
 **Notes:** 
