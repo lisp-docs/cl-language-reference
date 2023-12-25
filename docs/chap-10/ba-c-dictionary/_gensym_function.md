@@ -42,7 +42,6 @@ If and only if no explicit suffix is supplied, <ClLinks styled={true} term={"gen
 
 **Examples:**
 ```lisp
-
 (setq sym1 (gensym)) → #:G3142 
 (symbol-package sym1) → NIL 
 (setq sym2 (gensym 100)) → #:G100 
@@ -50,11 +49,8 @@ If and only if no explicit suffix is supplied, <ClLinks styled={true} term={"gen
 (eq sym2 sym3) → false 
 (find-symbol "G100") → NIL, NIL 
 
-
-
 (gensym "T") → #:T3143 
 (gensym) → #:G3144 
-
 ```
 **Side Effects:** 
 

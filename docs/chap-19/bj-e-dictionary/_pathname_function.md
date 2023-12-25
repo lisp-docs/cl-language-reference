@@ -56,7 +56,6 @@ If the *pathspec designator* is a *file stream* created by opening a *logical pa
 
 **Examples:**
 ```lisp
-
 ;; There is a great degree of variability permitted here. The next 
 ;; several examples are intended to illustrate just a few of the many 
 ;; possibilities. Whether the name is canonicalized to a particular 
@@ -91,7 +90,6 @@ If the *pathspec designator* is a *file stream* created by opening a *logical pa
 (with-open-file (stream "test" :direction :output) 
   (pathname stream)) 
 → #P"ORANGE-CHOCOLATE:>Gus>test.lisp.newest" 
-
 ```
 **See Also:** 
 

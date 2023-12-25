@@ -48,17 +48,13 @@ where *arguments-tail* is either the tail of <ClLinks styled={true} term={"argum
 
 **Examples:**
 ```lisp
-
 (funcall (formatter "~&~A~A") \*standard-output\* ’a ’b ’c) 
 ▷ AB 
 → (C) 
 
-
-
 (format t (formatter "~&~A~A") ’a ’b ’c) 
 ▷ AB 
 → NIL 
-
 ```
 **Exceptional Situations:** 
 

@@ -40,7 +40,6 @@ If *n* is zero, the atom that terminates <ClLinks styled={true} term={"list"}><i
 
 **Examples:**
 ```lisp
-
 (last nil) → NIL 
 (last ’(1 2 3)) → (3) 
 (last ’(1 2 . 3)) → (2 . 3) 
@@ -52,15 +51,12 @@ If *n* is zero, the atom that terminates <ClLinks styled={true} term={"list"}><i
 (last ’(a b c) 0) → () 
 (last ’(a b c) 1) → (C) 
 
-
-
 (last ’(a b c) 2) → (B C) 
 (last ’(a b c) 3) → (A B C) 
 (last ’(a b c) 4) → (A B C) 
 (last ’(a . b) 0) → B 
 (last ’(a . b) 1) → (A . B) 
 (last ’(a . b) 2) → (A . B) 
-
 ```
 **Exceptional Situations:** 
 

@@ -80,7 +80,6 @@ sequence) and other aspects of the implementation. For a binary file, every <ClL
 
 **Examples:**
 ```lisp
-
 (defun tester () 
   (let ((noticed ’()) file-written) 
     (flet ((notice (x) (push x noticed) x)) 
@@ -112,7 +111,6 @@ sequence) and other aspects of the implementation. For a binary file, every <ClL
 → (0 2 T 2 0 2 5 7) 
 <i><sup>or</sup>→</i> (0 2 NIL 3 0 3 5 6 7) 
 <i><sup>or</sup>→</i> (NIL NIL NIL NIL NIL NIL) 
-
 ```
 **Side Effects:** 
 

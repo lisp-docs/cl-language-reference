@@ -52,7 +52,6 @@ For a one-dimensional <ClLinks styled={true} term={"array"}><i>array</i></ClLink
 
 **Examples:**
 ```lisp
-
 (setq a (make-array ’(4 7) :element-type ’(unsigned-byte 8))) 
 (array-row-major-index a 1 2) → 9 
 (array-row-major-index 
@@ -61,7 +60,6 @@ For a one-dimensional <ClLinks styled={true} term={"array"}><i>array</i></ClLink
 	      :displaced-to a 
 	      :displaced-index-offset 4) 
  0 2 1) → 9 
-
 ```
 **Notes:** 
 

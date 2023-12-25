@@ -40,7 +40,6 @@ If the **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLi
 
 **Examples:**
 ```lisp
-
 (break "You got here with arguments: ~:S." ’(FOO 37 A)) 
 ▷ BREAK: You got here with these arguments: FOO, 37, A. 
 ▷ To continue, type :CONTINUE followed by an option number: 
@@ -49,7 +48,6 @@ If the **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLi
 ▷ Debug> :CONTINUE 1 
 ▷ Return from BREAK. 
 → NIL 
-
 ```
 **Side Effects:** 
 

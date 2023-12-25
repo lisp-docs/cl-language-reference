@@ -54,7 +54,6 @@ If <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> is n
 
 **Examples:**
 ```lisp
-
 (get-setf-expansion ’x) 
 *!* NIL, NIL, (#:G0001), (SETQ X #:G0001), X 
 ;;; This macro is like POP 
@@ -70,7 +69,6 @@ If <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> is n
   ‘(setf (car ,x) ,value)) *!* FROB 
 ;;; The following is an error; an error might be signaled at macro expansion time (flet ((frob (x) (cdr x))) ;Invalid 
 (xpop (frob z))) 
-
 ```
 **See Also:** 
 

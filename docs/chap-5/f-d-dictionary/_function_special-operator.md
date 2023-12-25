@@ -23,7 +23,6 @@ It is an error to use <ClLinks styled={true} term={"function"}><b>function</b></
 **Examples:**
 
 ```lisp
-
 (defun adder (x) (function (lambda (y) (+ x y)))) 
 ```
 

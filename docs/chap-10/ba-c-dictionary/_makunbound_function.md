@@ -28,13 +28,11 @@ Makes the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> be <ClL
 
 **Examples:**
 ```lisp
-
 (setf (symbol-value ’a) 1) 
 (boundp ’a) → true 
 a → 1 
 (makunbound ’a) → A 
 (boundp ’a) → false 
-
 ```
 **Side Effects:** 
 

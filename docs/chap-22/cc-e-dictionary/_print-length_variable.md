@@ -40,7 +40,6 @@ to be recursively printed has components and is at a level equal to or greater t
 
 **Examples:**
 ```lisp
-
 (setq a ’(1 (2 (3 (4 (5 (6))))))) → (1 (2 (3 (4 (5 (6)))))) 
 (dotimes (i 8) 
   (let ((\*print-level\* i)) 
@@ -57,7 +56,6 @@ to be recursively printed has components and is at a level equal to or greater t
 (setq a ’(1 2 3 4 5 6)) → (1 2 3 4 5 6) 
 (dotimes (i 7) 
   (let ((\*print-length\* i)) 
-
     
     
     (format t "~&~D – ~S~%" i a))) 
@@ -88,7 +86,6 @@ to be recursively printed has components and is at a level equal to or greater t
 ▷ 3 3 – (IF (MEMBER X Y) (+ (CAR X) 3) ...) 
 ▷ 3 4 – (IF (MEMBER X Y) (+ (CAR X) 3) ’(FOO . #(A B C D ...))) 
 → NIL 
-
 ```
 **See Also:** 
 

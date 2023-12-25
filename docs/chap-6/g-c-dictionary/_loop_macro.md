@@ -129,7 +129,6 @@ For details, see Section 6.1 (The LOOP Facility).
 **Examples:**
 
 ```lisp
-
 ;; An example of the simple form of LOOP. 
 (defun sqrt-advisor () 
   (loop (format t "~&Number: ") 
@@ -147,9 +146,9 @@ For details, see Section 6.1 (The LOOP Facility).
 ;; An example of the extended form of LOOP. 
 (defun square-advisor () 
   (loop as n = (progn (format t "~&Number: ") 
-        (parse-integer (read-line) :junk-allowed t)) 
- while n 
- do (format t "~&The square of ~D is ~D.~%" n (\* n n)))) 
+		      (parse-integer (read-line) :junk-allowed t)) 
+	while n 
+	do (format t "~&The square of ~D is ~D.~%" n (\* n n)))) 
 → SQUARE-ADVISOR 
 (square-advisor) 
 ▷ Number: 4← 
@@ -163,7 +162,6 @@ For details, see Section 6.1 (The LOOP Facility).
       when (oddp n) 
       collect n) 
 → (1 3 5 7 9) 
-
 ```
 
 **See Also:**

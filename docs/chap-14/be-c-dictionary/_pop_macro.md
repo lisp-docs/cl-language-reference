@@ -44,14 +44,12 @@ For information about the <ClLinks styled={true} term={"evaluation"}><i>evaluati
 
 **Examples:**
 ```lisp
-
 (setq stack ’(a b c)) → (A B C) 
 (pop stack) → A 
 stack → (B C) 
 (setq llst ’((1 2 3 4))) → ((1 2 3 4)) 
 (pop (car llst)) → 1 
 llst → ((2 3 4)) 
-
 ```
 **Side Effects:** 
 

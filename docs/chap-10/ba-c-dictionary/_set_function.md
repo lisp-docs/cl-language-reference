@@ -36,7 +36,6 @@
 
 **Examples:**
 ```lisp
-
 (setf (symbol-value ’n) 1) → 1 
 (set ’n 2) → 2 
 (symbol-value ’n) → 2 
@@ -61,8 +60,6 @@ n → 44
   \*n\*) → 80 
 \*n\* → 2 
 
-
-
 (defvar \*even-count\* 0) → \*EVEN-COUNT\* 
 (defvar \*odd-count\* 0) → \*ODD-COUNT\* 
 (defun tally-list (list) 
@@ -72,7 +69,6 @@ n → 44
 (tally-list ’(1 9 4 3 2 7)) → NIL 
 \*even-count\* → 6 
 \*odd-count\* → 20 
-
 ```
 **Side Effects:** 
 

@@ -19,7 +19,6 @@
 **Examples:**
 
 ```lisp
-
 (funcall #’+ 1 2 3) → 6 
 (funcall ’car ’(1 2 3)) → 1 
 (funcall ’position 1 ’(1 2 3 2 1) :start 1) → 4 
@@ -28,10 +27,9 @@
 (flet ((foo (x y) ‘(kons ,x ,y))) 
   (let ((foo (symbol-function ’+))) 
     (funcall #’foo 
-        (funcall ’foo 1 2) 
-        (funcall foo 1 2)))) 
+               (funcall ’foo 1 2) 
+               (funcall foo 1 2)))) 
 → (KONS (1 . 2) 3) 
-
 ```
 
 **Exceptional Situations:**

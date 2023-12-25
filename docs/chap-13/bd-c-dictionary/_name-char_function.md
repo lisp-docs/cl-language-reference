@@ -32,13 +32,11 @@ Returns the *character object* whose <ClLinks styled={true} term={"name"}><i>nam
 
 **Examples:**
 ```lisp
-
 (name-char ’space) → #\Space 
 (name-char "space") → #\Space 
 (name-char "Space") → #\Space 
 (let ((x (char-name #\a))) 
   (or (not x) (eql (name-char x) #\a))) → true 
-
 ```
 **Exceptional Situations:** 
 

@@ -32,14 +32,12 @@ Returns <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> if *x* is <ClLinks 
 
 **Examples:**
 ```lisp
-
 (not nil) → T 
 (not ’()) → T 
 (not (integerp ’sss)) → T 
 (not (integerp 1)) → NIL 
 (not 3.7) → NIL 
 (not ’apple) → NIL 
-
 ```
 **See Also:** 
 

@@ -27,13 +27,12 @@ Once one *test-form* has *yielded true*, no additional *test-forms* are *evaluat
 **Examples:**
 
 ```lisp
-
 (defvar a) → a
 (defun select-options () 
   (cond ((= a 1) (setf a 2)) 
- ((= a 2) (setf a 3)) 
- ((and (= a 3) (floor a 2))) 
- (t (floor a 3)))) → SELECT-OPTIONS 
+	((= a 2) (setf a 3)) 
+	((and (= a 3) (floor a 2))) 
+	(t (floor a 3)))) → SELECT-OPTIONS 
 (setf a 1) → 1 
 (select-options) → 2 
 a → 2 
@@ -42,7 +41,6 @@ a → 3
 (select-options) → 1 
 (setf a 5) → 5 
 (select-options) → 1, 2 
-
 ```
 
 **See Also:**

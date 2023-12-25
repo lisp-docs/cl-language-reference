@@ -100,7 +100,6 @@ This defines the *principal values* precisely. The range of the two-argument log
 
 **Examples:**
 ```lisp
-
 (log 100 10) 
 → 2.0 
 → 2 
@@ -111,7 +110,6 @@ This defines the *principal values* precisely. The range of the two-argument log
 (log 8.0 2) → 3.0 
 (log #c(-16 16) #c(2 2)) → 3 or approximately #c(3.0 0.0) 
 or approximately 3.0 (unlikely) 
-
 ```
 **Affected By:** 
 

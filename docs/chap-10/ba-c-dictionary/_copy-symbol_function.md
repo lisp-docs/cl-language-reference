@@ -40,7 +40,6 @@ If *copy-properties* is <ClLinks styled={true} term={"false"}><i>false</i></ClLi
 
 **Examples:**
 ```lisp
-
 (setq fred ’fred-smith) → FRED-SMITH 
 (setf (symbol-value fred) 3) → 3 
 (setq fred-clone-1a (copy-symbol fred nil)) → #:FRED-SMITH 
@@ -63,8 +62,6 @@ If *copy-properties* is <ClLinks styled={true} term={"false"}><i>false</i></ClLi
 (fboundp fred) → true 
 (fboundp fred-clone-1a) → false 
 (fboundp fred-clone-2a) → false 
-
-
 
 
 ```

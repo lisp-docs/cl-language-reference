@@ -40,9 +40,7 @@ If <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> is not a <ClLinks 
 
 **Examples:**
 ```lisp
-
 (setq object (list (cons 1 "one") 
-
 		   
 		   
 		   (cons 2 (list ’a ’b ’c)))) 
@@ -63,7 +61,6 @@ object-too → ((ONE . 1) ("two" "a" B C))
 copy-as-list → ((1 . "one") ("two" "a" B C)) 
 copy-as-alist → ((1 . "one") (2 "a" B C)) 
 copy-as-tree → ((1 . "one") (2 A B C)) 
-
 ```
 **See Also:** 
 

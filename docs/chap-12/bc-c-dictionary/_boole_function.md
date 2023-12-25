@@ -47,7 +47,6 @@ The operation to be performed and the return value are determined by *op*.
 (dolist (symbol ’(boole-1 boole-2 boole-and boole-andc1 
 boole-andc2 boole-c1 boole-c2 boole-clr 
 boole-eqv boole-ior boole-nand boole-nor 
-
  
  
 **boole** 
@@ -74,7 +73,6 @@ symbol result (logand result #b1111)))))
 ▷ BOOLE-SET -1 -1 ...1111 
 ▷ BOOLE-XOR 6 110 ...0110 
 → NIL 
-
 ```
 
 **Exceptional Situations:**
@@ -97,38 +95,21 @@ In general,
 
 ```lisp
 ;; The order of the values in this ‘table’ are such that
-
 ;; (logand (boole (elt boole-n-vector n) #b0101 #b0011) #b1111) =&gt; n
-
 (defconstant boole-n-vector
-
-(vector boole-clr boole-and boole-andc1 boole-2
-
-boole-andc2 boole-1 boole-xor boole-ior
-
-boole-nor boole-eqv boole-c1 boole-orc1
-
-boole-c2 boole-orc2 boole-nand boole-set))
-
+  (vector boole-clr boole-and boole-andc1 boole-2
+	  boole-andc2 boole-1 boole-xor boole-ior
+	  boole-nor boole-eqv boole-c1 boole-orc1
+	  boole-c2 boole-orc2 boole-nand boole-set))
 → BOOLE-N-VECTOR
-
 (proclaim ’(inline boole-n))
-
 → implementation-dependent
-
 (defun boole-n (n integer &amp;rest more-integers)
-
-(apply #’boole (elt boole-n-vector n) integer more-integers))
-
-→ BOOLE-N
-
-(boole-n #b0111 5 3) → 7
-
-(boole-n #b0001 5 3) → 1
-
-(boole-n #b1101 5 3) → -3
-
-(loop for n from #b0000 to #b1111 collect (boole-n n 5 3))
-
-→ (0 1 2 3 4 5 6 7 -8 -7 -6 -5 -4 -3 -2 -1)
+		(apply #’boole (elt boole-n-vector n) integer more-integers))
+  → BOOLE-N
+  (boole-n #b0111 5 3) → 7
+  (boole-n #b0001 5 3) → 1
+  (boole-n #b1101 5 3) → -3
+  (loop for n from #b0000 to #b1111 collect (boole-n n 5 3))
+  → (0 1 2 3 4 5 6 7 -8 -7 -6 -5 -4 -3 -2 -1)
 ```

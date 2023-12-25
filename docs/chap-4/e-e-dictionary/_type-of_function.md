@@ -76,7 +76,6 @@ b. the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> returned does 
 
 **Examples:**
 ```lisp
-
 (type-of ’a) → SYMBOL 
 (type-of ’(1 . 2)) 
 → CONS 
@@ -99,11 +98,9 @@ b. the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> returned does 
 (subtypep (type-of 112312) ’integer) → true, *true* 
 (defvar \*foo\* (make-array 5 :element-type t)) → \*FOO\* 
 (class-name (class-of \*foo\*)) → VECTOR  
-
 (type-of \*foo\*) 
 → VECTOR 
 <i><sup>or</sup>→</i> (VECTOR T 5) 
-
 ```
 **See Also:** 
 

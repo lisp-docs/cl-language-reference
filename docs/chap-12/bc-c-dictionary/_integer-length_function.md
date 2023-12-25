@@ -30,7 +30,6 @@ Returns the number of bits needed to represent *integer* in binary two’s-compl
 
 **Examples:**
 ```lisp
-
 (integer-length 0) → 0 
 (integer-length 1) → 1 
 (integer-length 3) → 2 
@@ -44,7 +43,6 @@ Returns the number of bits needed to represent *integer* in binary two’s-compl
 (integer-length (1- (expt 2 9))) → 9 
 (integer-length (- (expt 2 9))) → 9 
 (integer-length (- (1+ (expt 2 9)))) → 10 
-
 ```
 **Exceptional Situations:** 
 

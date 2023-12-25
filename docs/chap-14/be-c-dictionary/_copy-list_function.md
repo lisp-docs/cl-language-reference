@@ -36,7 +36,6 @@ Only the *list structure* of <ClLinks styled={true} term={"list"}><i>list</i></C
 
 **Examples:**
 ```lisp
-
 (setq lst (list 1 (list 2 3))) → (1 (2 3)) 
 (setq slst lst) → (1 (2 3)) 
 (setq clst (copy-list lst)) → (1 (2 3)) 
@@ -50,7 +49,6 @@ clst → (1 (2 3))
 lst → ("one" ("two" 3)) 
 slst → ("one" ("two" 3)) 
 clst → (1 ("two" 3)) 
-
 ```
 **Exceptional Situations:** 
 

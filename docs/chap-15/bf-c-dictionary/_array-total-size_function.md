@@ -44,14 +44,12 @@ Returns the *array total size* of the <ClLinks styled={true} term={"array"}><i>a
 
 **Examples:**
 ```lisp
-
 (array-total-size (make-array 4)) → 4 
 (array-total-size (make-array 4 :fill-pointer 2)) → 4 
 (array-total-size (make-array 0)) → 0 
 (array-total-size (make-array ’(4 2))) → 8 
 (array-total-size (make-array ’(4 0))) → 0 
 (array-total-size (make-array ’())) → 1 
-
 ```
 **Exceptional Situations:** 
 

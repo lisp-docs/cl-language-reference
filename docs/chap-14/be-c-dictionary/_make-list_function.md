@@ -34,13 +34,11 @@ Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks
 
 **Examples:**
 ```lisp
-
 (make-list 5) → (NIL NIL NIL NIL NIL) 
 (make-list 3 :initial-element ’rah) → (RAH RAH RAH) 
 (make-list 2 :initial-element ’(1 2 3)) → ((1 2 3) (1 2 3)) 
 (make-list 0) → NIL ;*i.e.*, () 
 (make-list 0 :initial-element ’new-element) → NIL 
-
 ```
 **Exceptional Situations:** 
 

@@ -132,11 +132,9 @@ both of them are removed. This removal of redundant :back <ClLinks styled={true}
 
 **Examples:**
 ```lisp
-
 (merge-pathnames "CMUC::FORMAT" 
 		 "CMUC::PS:<LISPIO>.FASL") 
 → #P"CMUC::PS:<LISPIO>FORMAT.FASL.0" 
-
 ```
 **See Also:** 
 

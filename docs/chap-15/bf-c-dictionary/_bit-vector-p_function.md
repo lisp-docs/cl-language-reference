@@ -32,13 +32,11 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (bit-vector-p (make-array 6 
 			  :element-type ’bit 
 			  :fill-pointer t)) → true 
 (bit-vector-p #\*) → true 
 (bit-vector-p (make-array 6)) → false 
-
 ```
 **See Also:** 
 

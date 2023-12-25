@@ -64,7 +64,6 @@ In an <ClLinks styled={true} term={"unless"}><b>unless</b></ClLinks> <ClLinks st
 
 **Examples:**
 ```lisp
-
 (when t ’hello) → HELLO 
 (unless t ’hello) → NIL 
 (when nil ’hello) → NIL 
@@ -89,7 +88,6 @@ In an <ClLinks styled={true} term={"unless"}><b>unless</b></ClLinks> <ClLinks st
 	(if (not (oddp x)) (incf x) (list x)) 
 	(if (not (oddp x)) (incf x) (list x)))) 
 → ((4) NIL (5) NIL 6 (6) 7 (7)) 
-
 ```
 **See Also:** 
 

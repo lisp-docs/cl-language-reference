@@ -58,7 +58,6 @@ Once established, a <ClLinks styled={true} term={"block"}><i>block</i></ClLinks>
 
 **Examples:**
 ```lisp
-
 (block empty) → NIL 
 (block whocares (values 1 2) (values 3 4)) → 3, 4 
 (let ((x 1)) 
@@ -72,7 +71,6 @@ Once established, a <ClLinks styled={true} term={"block"}><i>block</i></ClLinks>
   (flet ((b1 () (return-from b 1))) 
     (block b (b1) (print ’unreachable)) 
     2)) → 1 
-
 ```
 **See Also:** 
 

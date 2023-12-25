@@ -40,14 +40,12 @@ When the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLink
 
 **Examples:**
 ```lisp
-
 (let ((\*print-right-margin\* 25) (\*print-lines\* 3)) 
   (pprint ’(progn (setq a 1 b 2 c 3 d 4)))) 
 ▷ (PROGN (SETQ A 1 
 	       ▷ B 2 
 	       ▷ C 3 ..)) 
 *→ ⟨no values⟩* 
-
 ```
 **Notes:** 
 

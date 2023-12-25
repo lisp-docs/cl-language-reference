@@ -44,10 +44,8 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (stringp "aaaaaa") → true 
 (stringp #\a) → false 
-
 ```
 **See Also:** 
 

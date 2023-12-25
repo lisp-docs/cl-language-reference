@@ -68,7 +68,6 @@ If some element *satisfies the test*, the tail of <ClLinks styled={true} term={"
 
 **Examples:**
 ```lisp
-
 (member 2 ’(1 2 3)) → (2 3) 
 (member 2 ’((1 . 2) (3 . 4)) :test-not #’= :key #’cdr) → ((3 . 4)) 
 (member ’e ’(a b c d)) → NIL 
@@ -77,7 +76,6 @@ If some element *satisfies the test*, the tail of <ClLinks styled={true} term={"
 (member-if-not #’zerop 
 		 ’(3 6 9 11 . 12) 
 		 :key #’(lambda (x) (mod x 3))) → (11 . 12) 
-
 ```
 **Exceptional Situations:** 
 

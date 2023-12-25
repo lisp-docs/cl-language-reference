@@ -32,7 +32,6 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (functionp ’append) → false 
 (functionp #’append) → true 
 (functionp (symbol-function ’append)) → true 
@@ -42,7 +41,6 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 (functionp 12) → false 
 (functionp ’(lambda (x) (\* x x))) → false 
 (functionp #’(lambda (x) (\* x x))) → true 
-
 ```
 **Notes:** 
 

@@ -40,7 +40,6 @@ Causes execution to cease and become dormant for approximately the seconds of re
 
 **Examples:**
 ```lisp
-
 (sleep 1) → NIL 
 ;; Actually, since SLEEP is permitted to use approximate timing, 
 ;; this might not always yield true, but it will often enough that 
@@ -49,7 +48,6 @@ Causes execution to cease and become dormant for approximately the seconds of re
       (now (progn (sleep 10) (get-universal-time)))) 
   (>= (- now then) 10)) 
 → true 
-
 ```
 **Side Effects:** 
 

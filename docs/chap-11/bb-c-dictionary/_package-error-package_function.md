@@ -30,12 +30,10 @@ Returns a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks>
 
 **Examples:**
 ```lisp
-
 (package-error-package 
  (make-condition ’package-error 
 		  :package (find-package "COMMON-LISP"))) 
 → #<Package "COMMON-LISP"> 
-
 ```
 **See Also:** 
 

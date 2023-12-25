@@ -32,12 +32,10 @@ Returns the number of <ClLinks styled={true} term={"dimension"}><i>dimensions</i
 
 **Examples:**
 ```lisp
-
 (array-rank (make-array ’())) → 0 
 (array-rank (make-array 4)) → 1 
 (array-rank (make-array ’(4))) → 1 
 (array-rank (make-array ’(2 3))) → 2 
-
 ```
 **Exceptional Situations:** 
 

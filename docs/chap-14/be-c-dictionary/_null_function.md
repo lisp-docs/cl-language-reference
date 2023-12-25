@@ -44,12 +44,10 @@ Returns <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> if <ClLinks styled=
 
 **Examples:**
 ```lisp
-
 (null ’()) → T 
 (null nil) → T 
 (null t) → NIL 
 (null 1) → NIL 
-
 ```
 **See Also:** 
 

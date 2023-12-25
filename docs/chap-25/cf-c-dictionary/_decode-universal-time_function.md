@@ -44,7 +44,6 @@ If *time-zone* is not supplied, it defaults to the current time zone adjusted fo
 
 **Examples:**
 ```lisp
-
 (decode-universal-time 0 0) → 0, 0, 0, 1, 1, 1900, 0, *false*, 0 
 ;; The next two examples assume Eastern Daylight Time. 
 (decode-universal-time 2414296800 5) → 0, 0, 1, 4, 7, 1976, 6, *false*, 5 
@@ -56,7 +55,6 @@ If *time-zone* is not supplied, it defaults to the current time zone adjusted fo
 	(a (nthcdr 7 (multiple-value-list (decode-universal-time recently)))) 
 	(b (nthcdr 7 (multiple-value-list (decode-universal-time recently here))))) 
        (list a b (equal a b))) → ((T 5) (NIL 5) NIL) 
-
 ```
 **Affected By:** 
 

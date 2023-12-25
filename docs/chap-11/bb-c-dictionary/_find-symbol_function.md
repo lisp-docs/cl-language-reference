@@ -80,7 +80,6 @@ If the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is inherit
 
 **Examples:**
 ```lisp
-
 (find-symbol "NEVER-BEFORE-USED") → NIL, NIL 
 (find-symbol "NEVER-BEFORE-USED") → NIL, NIL 
 (intern "NEVER-BEFORE-USED") → NEVER-BEFORE-USED, NIL 
@@ -100,7 +99,6 @@ If the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is inherit
 → NIL, NIL 
 <i><sup>or</sup>→</i> :NIL, :EXTERNAL 
 (find-symbol (symbol-name :nil) "KEYWORD") → :NIL, :EXTERNAL 
-
 ```
 **Affected By:** 
 

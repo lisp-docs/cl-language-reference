@@ -44,7 +44,6 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (defun f (x) x) → F 
 (compiled-function-p #’f) 
 → false 
@@ -59,7 +58,6 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 → false 
 <i><sup>or</sup>→ true</i> 
 (compiled-function-p ’(lambda (x) x)) → false 
-
 ```
 **See Also:** 
 

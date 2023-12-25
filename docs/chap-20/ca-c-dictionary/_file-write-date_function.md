@@ -32,12 +32,10 @@ Returns a *universal time* representing the time at which the <ClLinks styled={t
 
 **Examples:**
 ```lisp
-
 (with-open-file (s "noel.text" 
 		   :direction :output :if-exists :error) 
   (format s "~&Dear Santa,~2%I was good this year. ~ 
 Please leave lots of toys.~2%Love, Sue~ 
-
  
  
 ~2%attachments: milk, cookies~%") 
@@ -46,7 +44,6 @@ Please leave lots of toys.~2%Love, Sue~
 (with-open-file (s "noel.text") 
   (file-write-date s)) 
 → 2902600800 
-
 ```
 **Affected By:** 
 

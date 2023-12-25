@@ -144,17 +144,16 @@ Both *conforming implementations* and *conforming programs* may further <ClLinks
 
 **Examples:**
 ```lisp
-
 (defclass obj () 
   ((x :initarg :x :reader obj-x) 
    (y :initarg :y :reader obj-y) 
    (dist :accessor obj-dist))) 
 → #<STANDARD-CLASS OBJ 250020030> 
 (defmethod shared-initialize :after ((self obj) slot-names &rest keys) 
-	   (declare (ignore slot-names keys)) 
-	   (unless (slot-boundp self ’dist) 
-	     (setf (obj-dist self) 
-		   (sqrt (+ (expt (obj-x self) 2) (expt (obj-y self) 2)))))) 
+  (declare (ignore slot-names keys)) 
+  (unless (slot-boundp self ’dist) 
+    (setf (obj-dist self) 
+	  (sqrt (+ (expt (obj-x self) 2) (expt (obj-y self) 2)))))) 
 → #<STANDARD-METHOD SHARED-INITIALIZE (:AFTER) (OBJ T) 26266714> 
 (defmethod make-load-form ((self obj) &optional environment) 
   (declare (ignore environment)) 
@@ -171,12 +170,10 @@ In the above example, an equivalent *instance* of obj is reconstructed by using 
 Another way to write the **make-load-form** *method* in that example is to use **make-load-form-saving-slots**. The code it generates might yield a slightly different result from the **make-load-form** *method* shown above, but the operational effect will be the same. For example: 
 ;; Redefine method defined above. 
 (defmethod make-load-form ((self obj) &optional environment) 
-    (make-load-form-saving-slots self 
-				 :slot-names ’(x y) 
-				 :environment environment)) 
+  (make-load-form-saving-slots self 
+			       :slot-names ’(x y) 
+			       :environment environment)) 
 → #<STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 42755655> 
-
-
 
 **make-load-form** 
 ;; Try MAKE-LOAD-FORM on object created above. 
@@ -206,9 +203,7 @@ At this point none of the parent *slots* have been filled in. The initialization
 In the following example, the data structure to be dumped has no special properties and an equivalent structure can be reconstructed simply by reconstructing the *slots*’ contents. 
 (defstruct my-struct a b c) 
 (defmethod make-load-form ((s my-struct) &optional environment) 
-    (make-load-form-saving-slots s :environment environment)) 
-
-
+  (make-load-form-saving-slots s :environment environment)) 
 
 
 ```

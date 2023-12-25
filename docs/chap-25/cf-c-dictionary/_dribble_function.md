@@ -130,11 +130,9 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks sty
 
 **Examples:**
 ```lisp
-
 (format t "~&Evaluating ~S~%" -) 
 ▷ Evaluating (FORMAT T "~&Evaluating ~S~%" -) 
 → NIL 
-
 ```
 **Affected By:** 
 

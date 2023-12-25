@@ -44,14 +44,12 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (setq x 1) → 1 
 (boundp ’x) → true 
 (makunbound ’x) → X 
 (boundp ’x) → false 
 (let ((x 2)) (boundp ’x)) → false 
 (let ((x 2)) (declare (special x)) (boundp ’x)) → true 
-
 ```
 **Exceptional Situations:** 
 

@@ -32,11 +32,9 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (random-state-p \*random-state\*) → true 
 (random-state-p (make-random-state)) → true 
 (random-state-p ’test-function) → false 
-
 ```
 **See Also:** 
 

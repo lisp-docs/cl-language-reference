@@ -61,7 +61,6 @@ It is possible for both <ClLinks styled={true} term={"macro-function"}><b>macro-
 
 **Examples:**
 ```lisp
-
 (defmacro macfun (x) ’(macro-function ’macfun)) → MACFUN 
 (not (macro-function ’macfun)) → false 
 (macrolet ((foo (&environment env) 
@@ -72,7 +71,6 @@ It is possible for both <ClLinks styled={true} term={"macro-function"}><b>macro-
 	(macrolet ((bar () :beep)) 
 	  (foo)))) 
 → (NO YES) 
-
 ```
 **Affected By:** 
 

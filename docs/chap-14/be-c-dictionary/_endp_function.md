@@ -32,11 +32,9 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (endp nil) → true 
 (endp ’(1 2)) → false 
 (endp (cddr ’(1 2))) → true 
-
 ```
 **Exceptional Situations:** 
 

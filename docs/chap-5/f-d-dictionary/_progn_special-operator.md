@@ -21,7 +21,6 @@ If <ClLinks styled={true} term={"progn"}><b>progn</b></ClLinks> appears as a *to
 **Examples:**
 
 ```lisp
-
 (progn) *!* NIL 
 (progn 1 2 3) *!* 3 
 (progn (values 1 2 3)) *!* 1, 2, 3 
@@ -30,7 +29,6 @@ If <ClLinks styled={true} term={"progn"}><b>progn</b></ClLinks> appears as a *to
     (progn (setf a nil) ’here) 
     (progn (setf a t) ’there)) *!* HERE 
 a *!* NIL 
-
 ```
 
 **See Also:**

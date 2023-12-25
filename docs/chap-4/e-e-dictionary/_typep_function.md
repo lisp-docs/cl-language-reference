@@ -68,7 +68,6 @@ See the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLi
 
 **Examples:**
 ```lisp
-
 (typep 12 ’integer) → true 
 (typep (1+ most-positive-fixnum) ’fixnum) → false 
 (typep nil t) → true 
@@ -86,7 +85,6 @@ denote the same *type*. Notice that
 (typep (make-array 0 :element-type ’A<i><sub>y</sub></i>) ’(array A<i><sub>y</sub></i>)) <i>→ true</i> 
 (typep (make-array 0 :element-type ’A<i><sub>x</sub></i>) ’(array A<i><sub>y</sub></i>)) <i>→ true</i> 
 (typep (make-array 0 :element-type ’A<i><sub>y</sub></i>) ’(array A<i><sub>x</sub></i>)) <i>→ true</i> 
-
 ```
 **Exceptional Situations:** 
 

@@ -36,12 +36,10 @@
 
 **Examples:**
 ```lisp
-
 (realpart #c(23 41)) → 23 
 (imagpart #c(23 41.0)) → 41.0 
 (realpart #c(23 41.0)) → 23.0 
 (imagpart 23.0) → 0.0 
-
 ```
 **Exceptional Situations:** 
 

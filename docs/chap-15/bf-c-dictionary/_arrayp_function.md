@@ -32,17 +32,13 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (arrayp (make-array ’(2 3 4) :adjustable t)) → true 
 (arrayp (make-array 6)) → true 
 (arrayp #\*1011) → true 
 
-
-
 (arrayp "hi") → true 
 (arrayp ’hi) → false 
 (arrayp 12) → false 
-
 ```
 **See Also:** 
 

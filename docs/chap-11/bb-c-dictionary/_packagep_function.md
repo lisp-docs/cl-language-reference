@@ -32,11 +32,9 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (packagep \*package\*) → true 
 (packagep ’common-lisp) → false 
 (packagep (find-package ’common-lisp)) → true 
-
 ```
 **Notes:** 
 

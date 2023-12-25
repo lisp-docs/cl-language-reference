@@ -80,7 +80,6 @@ If there is no such <ClLinks styled={true} term={"method"}><i>method</i></ClLink
 
 **Examples:**
 ```lisp
-
 (defmethod some-operation ((a integer) (b float)) (list a b)) 
 *!* #<STANDARD-METHOD SOME-OPERATION (INTEGER FLOAT) 26723357> 
 (find-method #’some-operation ’() (mapcar #’find-class ’(integer float))) 
@@ -88,7 +87,6 @@ If there is no such <ClLinks styled={true} term={"method"}><i>method</i></ClLink
 (find-method #’some-operation ’() (mapcar #’find-class ’(integer integer))) 
 ▷ Error: No matching method 
 (find-method #’some-operation ’() (mapcar #’find-class ’(integer integer)) nil) *!* NIL 
-
 ```
 **Aected By:** 
 

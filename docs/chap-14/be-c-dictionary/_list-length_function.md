@@ -32,7 +32,6 @@ Returns the <ClLinks styled={true} term={"length"}><i>length</i></ClLinks> of <C
 
 **Examples:**
 ```lisp
-
 (list-length ’(a b c d)) → 4 
 (list-length ’(a (b c) d)) → 3 
 (list-length ’()) → 0 
@@ -43,7 +42,6 @@ Returns the <ClLinks styled={true} term={"length"}><i>length</i></ClLinks> of <C
 (list-length (circular-list ’a ’b)) → NIL 
 (list-length (circular-list ’a)) → NIL 
 (list-length (circular-list)) → 0 
-
 ```
 **Exceptional Situations:** 
 

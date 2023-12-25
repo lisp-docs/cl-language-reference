@@ -42,14 +42,12 @@ Evaluates *n* and then <ClLinks styled={true} term={"form"}><i>form</i></ClLinks
 (nth-value 2 (values ’a ’b)) *!* NIL 
 (let\* ((x 83927472397238947423879243432432432) 
 (y 32423489732) 
-
  
  
 (a (nth-value 1 (floor x y))) 
 (b (mod x y))) 
 (values a b (= a b))) 
 *!* 3332987528, 3332987528, *true* 
-
 ```
 **See Also:** 
 
@@ -209,7 +207,6 @@ The di↵erence between **prog\*** and **prog** is that in **prog\*** the <ClLin
 
 **Examples:**
 ```lisp
-
 (prog\* ((y z) (x (car y))) 
 	(return x)) 
 returns the *car* of the value of z. 
@@ -230,7 +227,6 @@ Think of this function as being like a zipper."
      (setq y (cdr y) z (cdr z)) 
      (go loop) 
    err 
-
      
      
      (cerror "Will self-pair extraneous items" 
@@ -249,7 +245,6 @@ Think of this function as being like a zipper."
       (cerror "Will self-pair extraneous items" 
 	      "Mismatch - gleep! ~S" y) 
       (setq z y)))) *!* PRINCE-OF-CLARITY 
-
 ```
 **See Also:** 
 

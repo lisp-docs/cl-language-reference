@@ -32,14 +32,11 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (atom ’sss) → true 
 (atom (cons 1 2)) → false 
 (atom nil) → true 
 (atom ’()) → true 
 (atom 3) → true 
-
-
 
 
 ```

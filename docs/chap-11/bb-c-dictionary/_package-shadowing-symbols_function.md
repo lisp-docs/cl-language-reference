@@ -32,14 +32,12 @@ Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks
 
 **Examples:**
 ```lisp
-
 (package-shadowing-symbols (make-package ’temp)) → () 
 (shadow ’cdr ’temp) → T 
 (package-shadowing-symbols ’temp) → (TEMP::CDR) 
 (intern "PILL" ’temp) → TEMP::PILL, NIL 
 (shadowing-import ’pill ’temp) → T 
 (package-shadowing-symbols ’temp) → (PILL TEMP::CDR) 
-
 ```
 **Exceptional Situations:** 
 

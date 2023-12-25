@@ -122,7 +122,6 @@ Negative *integers* are treated as if they were in two’s-complement notation.
 
 **Examples:**
 ```lisp
-
 (logior 1 2 4 8) → 15 
 (logxor 1 3 7 15) → 10 
 (logeqv) → -1 
@@ -148,8 +147,6 @@ Negative *integers* are treated as if they were in two’s-complement notation.
       (show m x y)))) 
 ▷ m = #o007750 
 
-
-
 ▷ x = #o452576 
 ▷ y = #o317407 
 ▷ 
@@ -157,7 +154,6 @@ Negative *integers* are treated as if they were in two’s-complement notation.
 ▷ x = #o457426 
 ▷ y = #o312557 
 → NIL 
-
 ```
 **Exceptional Situations:** 
 

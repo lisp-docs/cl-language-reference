@@ -44,14 +44,12 @@ Applies <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> to a 
 
 **Examples:**
 ```lisp
-
 (multiple-value-call #’list 1 ’/ (values 2 3) ’/ (values) ’/ (floor 2.5)) 
 *!* (1 / 2 3 / / 2 0.5) 
 (+ (floor 5 3) (floor 19 4)) *⌘* (+ 1 4) 
 *!* 5 
 (multiple-value-call #’+ (floor 5 3) (floor 19 4)) *⌘* (+ 1 2 4 3) 
 *!* 10 
-
 ```
 **See Also:** 
 

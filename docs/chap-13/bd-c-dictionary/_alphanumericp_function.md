@@ -32,12 +32,10 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (alphanumericp #\Z) → true 
 (alphanumericp #\9) → true 
 (alphanumericp #\Newline) → false 
 (alphanumericp #\#) → false 
-
 ```
 **Affected By:** 
 

@@ -68,7 +68,6 @@ All input and output are performed using *query I/O*.
 
 **Examples:**
 ```lisp
-
 (y-or-n-p "(t or nil) given by") 
 ▷ (t or nil) given by (Y or N) Y 
 → true 
@@ -79,7 +78,6 @@ All input and output are performed using *query I/O*.
 ▷ Produce listing file? 
 ▷ Please respond with Y or N. n 
 → false 
-
 ```
 **Side Effects:** 
 

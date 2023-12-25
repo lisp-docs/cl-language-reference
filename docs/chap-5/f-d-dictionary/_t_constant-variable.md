@@ -36,7 +36,6 @@ The <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> <ClLinks styl
 
 **Examples:**
 ```lisp
-
 t → T 
 (eq t ’t) → true 
 (find-class ’t) → #<CLASS T 610703333> 
@@ -45,7 +44,6 @@ t → T
 (prin1 ’hello t) 
 ▷ HELLO 
 → HELLO 
-
 ```
 **See Also:** 
 

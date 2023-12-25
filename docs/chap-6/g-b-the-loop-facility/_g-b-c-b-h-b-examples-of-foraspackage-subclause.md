@@ -1,5 +1,4 @@
 ```lisp
-
 (let ((\*package\* (make-package "TEST-PACKAGE-1"))) 
   ;; For effect, intern some symbols 
   (read-from-string "(THIS IS A TEST)") 
@@ -11,5 +10,4 @@
 ▷ THIS 
 ▷ IS 
 → NIL 
-
 ```

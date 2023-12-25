@@ -32,7 +32,6 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks sty
 
 **Examples:**
 ```lisp
-
 (defun test-print-case () 
   (dolist (\*print-case\* ’(:upcase :downcase :capitalize)) 
     (format t "~&~S ~S~%" ’this-and-that ’|And-something-elSE|))) 
@@ -42,8 +41,6 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks sty
 ;; (i.e., whether single escapes or multiple escapes are used) 
 ;; is implementation-dependent. The examples here show two of the 
 ;; many valid ways in which escaping might appear. 
-
-
 
 (test-print-case) ;Implementation A 
 ▷ THIS-AND-THAT |And-something-elSE| 
@@ -55,7 +52,6 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks sty
 ▷ this-and-that a|nd-something-el|se 
 ▷ This-And-That A|nd-something-el|se 
 → NIL 
-
 ```
 **See Also:** 
 

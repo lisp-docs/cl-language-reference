@@ -48,7 +48,6 @@ Tests whether *char* is a digit in the specified <ClLinks styled={true} term={"r
 
 **Examples:**
 ```lisp
-
 (digit-char-p #\5) → 5 
 (digit-char-p #\5 2) → false 
 (digit-char-p #\A) → false 
@@ -60,11 +59,10 @@ Tests whether *char* is a digit in the specified <ClLinks styled={true} term={"r
 		  "059AaFGZ")) 
 	  ’(2 8 10 16 36)) 
 → ((0 NIL NIL NIL NIL NIL NIL NIL) 
-     (0 5 NIL NIL NIL NIL NIL NIL) 
-     (0 5 9 NIL NIL NIL NIL NIL) 
-     (0 5 9 10 10 15 NIL NIL) 
-     (0 5 9 10 10 15 16 35)) 
-
+   (0 5 NIL NIL NIL NIL NIL NIL) 
+   (0 5 9 NIL NIL NIL NIL NIL) 
+   (0 5 9 10 10 15 NIL NIL) 
+   (0 5 9 10 10 15 16 35)) 
 ```
 **Affected By:** 
 

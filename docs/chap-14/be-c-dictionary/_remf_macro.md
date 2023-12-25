@@ -56,12 +56,10 @@ For information about the <ClLinks styled={true} term={"evaluation"}><i>evaluati
 
 **Examples:**
 ```lisp
-
 (setq x (cons () ())) → (NIL) 
 (setf (getf (car x) ’prop1) ’val1) → VAL1 
 (remf (car x) ’prop1) → true 
 (remf (car x) ’prop1) → false 
-
 ```
 **Side Effects:** 
 

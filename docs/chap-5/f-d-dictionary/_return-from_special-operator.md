@@ -40,7 +40,6 @@ The transfer of control initiated by <ClLinks styled={true} term={"return-from"}
 
 **Examples:**
 ```lisp
-
 (block alpha (return-from alpha) 1) → NIL 
 (block alpha (return-from alpha 1) 2) → 1 
 (block alpha (return-from alpha (values 1 2)) 3) → 1, 2 
@@ -48,7 +47,6 @@ The transfer of control initiated by <ClLinks styled={true} term={"return-from"}
   (dotimes (i 10) (incf a) (when (oddp i) (return))) 
   a) → 2 
 Data and Control 
-
 
 **return-from** 
 (defun temp (x) 
@@ -91,8 +89,6 @@ Data and Control
 → NIL 
 The following has undefined consequences because the **block** *form* exits normally before the **return-from** *form* is attempted. 
 (funcall (block nil #’(lambda () (return-from nil)))) is an error. 
-
-
 
 
 ```

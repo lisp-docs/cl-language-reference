@@ -48,7 +48,6 @@ If the *result-type* is a <ClLinks styled={true} term={"subtype"}><i>subtype</i>
 
 **Examples:**
 ```lisp
-
 (make-sequence ’list 0) → () 
 (make-sequence ’string 26 :initial-element #\.) 
 → ".........................." 
@@ -57,7 +56,6 @@ If the *result-type* is a <ClLinks styled={true} term={"subtype"}><i>subtype</i>
 → #(1.0d0 1.0d0) 
 (make-sequence ’(vector \* 2) 3) should signal an error 
 (make-sequence ’(vector \* 4) 3) should signal an error 
-
 ```
 **Affected By:** 
 

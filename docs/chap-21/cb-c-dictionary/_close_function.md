@@ -68,11 +68,9 @@ For a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> created wit
 
 **Examples:**
 ```lisp
-
 (setq s (make-broadcast-stream)) → #<BROADCAST-STREAM> 
 (close s) → T 
 (output-stream-p s) → true 
-
 ```
 **Side Effects:** 
 

@@ -36,10 +36,7 @@ The *list structure* of <ClLinks styled={true} term={"alist"}><i>alist</i></ClLi
 
 **Examples:**
 ```lisp
-
 (defparameter \*alist\* (acons 1 "one" (acons 2 "two" ’()))) 
-
-
 
 \*alist\* → ((1 . "one") (2 . "two")) 
 (defparameter \*list-copy\* (copy-list \*alist\*)) 
@@ -52,7 +49,6 @@ The *list structure* of <ClLinks styled={true} term={"alist"}><i>alist</i></ClLi
 (setf (cdr (assoc 1 \*list-copy\*)) "uno") → "uno" 
 \*list-copy\* → ((1 . "uno") (2 . "two")) 
 \*alist\* → ((1 . "uno") (2 . "two")) 
-
 ```
 **See Also:** 
 

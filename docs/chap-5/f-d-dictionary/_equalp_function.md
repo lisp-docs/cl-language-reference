@@ -118,7 +118,6 @@ If two *structures S*<sub>1</sub> and *S*<sub>2</sub> have the same <ClLinks sty
 
 **Examples:**
 ```lisp
-
 (equalp ’a ’b) → false 
 (equalp ’a ’a) → true 
 (equalp 3 3) → true 
@@ -134,7 +133,6 @@ If two *structures S*<sub>1</sub> and *S*<sub>2</sub> have the same <ClLinks sty
 (equalp "Foo" (copy-seq "Foo")) → true 
 Data and Control 
 
-
 (equalp "FOO" "foo") → true 
 (setq array1 (make-array 6 :element-type ’integer 
 			 :initial-contents ’(1 1 1 3 5 7))) 
@@ -146,7 +144,6 @@ Data and Control
 (equalp array1 array2) → true 
 (setq vector1 (vector 1 1 1 3 5 7)) → #(1 1 1 3 5 7) 
 (equalp array1 vector1) → true 
-
 ```
 **See Also:** 
 

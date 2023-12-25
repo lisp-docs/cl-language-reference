@@ -80,7 +80,6 @@ Note that <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> which has t
 
 **Examples:**
 ```lisp
-
 (defun often-used-subroutine (x y) 
   (declare (optimize (safety 2))) 
   (error-check x y) 
@@ -92,7 +91,6 @@ Note that <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> which has t
     (declare (optimize speed)) 
     (declare (fixnum i)) 
     )) 
-
 ```
 **See Also:** 
 

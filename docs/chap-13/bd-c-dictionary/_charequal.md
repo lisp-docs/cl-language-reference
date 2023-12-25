@@ -59,7 +59,6 @@ If two <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> hav
 **Examples:**
 
 ```lisp
-
 (char= #\d #\d) → true 
 (char= #\A #\a) → false 
 (char= #\d #\x) → false 
@@ -95,8 +94,6 @@ If two <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> hav
 (char> #\Z #\a) → implementation-dependent 
 (char-equal #\A #\a) → true 
 
-
-
 (stable-sort (list #\b #\A #\B #\a #\c #\C) #’char-lessp) 
 → (#\A #\a #\b #\B #\c #\C) 
 (stable-sort (list #\b #\A #\B #\a #\c #\C) #’char<) 
@@ -105,7 +102,6 @@ If two <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> hav
 → (#\a #\A #\b #\B #\c #\C) ;Implementation C 
 → (#\A #\a #\B #\b #\C #\c) ;Implementation D 
 → (#\A #\B #\a #\b #\C #\c) ;Implementation E 
-
 ```
 
 **Exceptional Situations:**

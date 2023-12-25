@@ -48,7 +48,6 @@ Constructs and returns a <ClLinks styled={true} term={"condition"}><i>condition<
 
 **Examples:**
 ```lisp
-
 (defvar \*oops-count\* 0) 
 (setq a (make-condition ’simple-error 
 			 :format-control "This is your ~:R error." 
@@ -62,7 +61,6 @@ Constructs and returns a <ClLinks styled={true} term={"condition"}><i>condition<
 ▷ To continue, type :CONTINUE followed by an option number: 
 ▷ 1: Return to Lisp Toplevel. 
 ▷ Debug> 
-
 ```
 **Affected By:** 
 

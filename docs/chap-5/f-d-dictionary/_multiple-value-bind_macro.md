@@ -68,11 +68,9 @@ The <ClLinks styled={true} term={"scope"}><i>scopes</i></ClLinks> of the name bi
 
 **Examples:**
 ```lisp
-
 (multiple-value-bind (f r) 
     (floor 130 11) 
   (list f r)) *!* (11 9) 
-
 ```
 **See Also:** 
 

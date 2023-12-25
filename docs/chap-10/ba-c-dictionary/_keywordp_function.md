@@ -32,7 +32,6 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (keywordp ’elephant) → false 
 (keywordp 12) → false 
 (keywordp :test) → true 
@@ -43,7 +42,6 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 (keywordp "hello") → false 
 (keywordp ":hello") → false 
 (keywordp ’&optional) → false 
-
 ```
 **See Also:** 
 

@@ -32,13 +32,11 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if there is a
 
 **Examples:**
 ```lisp
-
 (progn (unread-char (read-char)) (list (listen) (read-char))) 
 ▷ 1 
 → (T #\1) 
 (progn (clear-input) (listen)) 
 → NIL ;Unless you’re a very fast typist! 
-
 ```
 **Affected By:** 
 

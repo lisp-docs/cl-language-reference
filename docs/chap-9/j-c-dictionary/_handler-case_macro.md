@@ -136,7 +136,6 @@ If there are no <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a
 
 **Examples:**
 ```lisp
-
 (defun assess-condition (condition) 
   (handler-case (signal condition) 
     (warning () "Lots of smoke, but no fire.") 
@@ -155,7 +154,6 @@ If there are no <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a
 → RANDOM-CONDITION 
 (assess-condition (make-condition ’random-condition)) 
 → "Hardly worth mentioning." 
-
 ```
 **See Also:** 
 

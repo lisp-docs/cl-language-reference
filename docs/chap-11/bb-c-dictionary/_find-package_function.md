@@ -36,11 +36,9 @@ If <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is a *package obje
 
 **Examples:**
 ```lisp
-
 (find-package ’common-lisp) → #<PACKAGE "COMMON-LISP"> 
 (find-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
 (find-package ’not-there) → NIL 
-
 ```
 **Affected By:** 
 

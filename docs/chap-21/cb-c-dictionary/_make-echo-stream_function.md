@@ -36,7 +36,6 @@ Creates and returns an *echo stream* that takes input from *input-stream* and se
 
 **Examples:**
 ```lisp
-
 (let ((out (make-string-output-stream))) 
   (with-open-stream 
       (s (make-echo-stream 
@@ -46,7 +45,6 @@ Creates and returns an *echo stream* that takes input from *input-stream* and se
     (format s " \* this-is-direct-output") 
     (get-output-stream-string out))) 
 → "this-is-read-and-echoed \* this-is-direct-output" 
-
 ```
 **See Also:** 
 

@@ -36,7 +36,6 @@ If *state* is a *random state object*, the *new-state* is a <ClLinks styled={tru
 
 **Examples:**
 ```lisp
-
 (let\* ((rs1 (make-random-state nil)) 
 	(rs2 (make-random-state t)) 
 	(rs3 (make-random-state rs2)) 
@@ -50,11 +49,10 @@ If *state* is a *random state object*, the *new-state* is a <ClLinks styled={tru
 	     (loop for i from 1 to 10 collect (random 100 rs3)) 
 	     (loop for i from 1 to 10 collect (random 100 rs4)))) 
 → ((29 25 72 57 55 68 24 35 54 65) 
-     (29 25 72 57 55 68 24 35 54 65) 
-     (93 85 53 99 58 62 2 23 23 59) 
-     (93 85 53 99 58 62 2 23 23 59) 
-     (68 24 35 54 65 54 55 50 59 49)) 
-
+   (29 25 72 57 55 68 24 35 54 65) 
+   (93 85 53 99 58 62 2 23 23 59) 
+   (93 85 53 99 58 62 2 23 23 59) 
+   (68 24 35 54 65 54 55 50 59 49)) 
 ```
 **Exceptional Situations:** 
 

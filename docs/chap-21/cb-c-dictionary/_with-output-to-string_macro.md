@@ -99,7 +99,6 @@ The consequences are undefined if an attempt is made to <ClLinks styled={true} t
 (format s "here’s some output") 
 (input-stream-p s)) → false 
 fstr → "here’s some output" 
-
 ```
 **Side Effects:** 
 
@@ -211,7 +210,6 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*trace-ou
 
 **Examples:**
 ```lisp
-
 (with-output-to-string (\*error-output\*) 
   (warn "this string is sent to \*error-output\*")) 
 → "Warning: this string is sent to \*error-output\* 
@@ -240,7 +238,6 @@ out
 | 3 Exit FACT 1 
 | 2 Exit FACT 2 
 1 Exit FACT 6" 
-
 ```
 **See Also:** 
 

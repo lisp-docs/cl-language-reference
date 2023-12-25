@@ -68,7 +68,6 @@ The <ClLinks styled={true} term={"place"}><i>places</i></ClLinks> are *generaliz
 
 **Examples:**
 ```lisp
-
 (setq x (make-array ’(3 5) :initial-element 3)) 
 → #2A((3 3 3 3 3) (3 3 3 3 3) (3 3 3 3 3)) 
 (setq y (make-array ’(3 5) :initial-element 7)) 
@@ -90,15 +89,13 @@ The <ClLinks styled={true} term={"place"}><i>places</i></ClLinks> are *generaliz
 ▷ Value for A: x 
 ▷ Value for B: (make-array ’(5 3) :initial-element 6) 
 → #2A((54 54 54 54 54) 
-	(54 54 54 54 54) 
-	(54 54 54 54 54) 
-	(54 54 54 54 54) 
-	(54 54 54 54 54)) 
+      (54 54 54 54 54) 
+      (54 54 54 54 54) 
+      (54 54 54 54 54) 
+      (54 54 54 54 54)) 
 (defun double-safely (x) (assert (numberp x) (x)) (+ x x)) 
 (double-safely 4) 
 → 8 
-
-
 
 (double-safely t) 
 ▷ Correctable error in DOUBLE-SAFELY: The value of (NUMBERP X) must be non-NIL. ▷ Restart options: 
@@ -107,7 +104,6 @@ The <ClLinks styled={true} term={"place"}><i>places</i></ClLinks> are *generaliz
 ▷ Debug> :continue 1 
 ▷ Value for X: 7 
 → 14 
-
 ```
 **Affected By:** 
 

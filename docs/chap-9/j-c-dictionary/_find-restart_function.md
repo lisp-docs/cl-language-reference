@@ -58,7 +58,6 @@ If <ClLinks styled={true} term={"identifier"}><i>identifier</i></ClLinks> is a c
 
 **Examples:**
 ```lisp
-
 (restart-case 
     (let ((r (find-restart ’my-restart))) 
       (format t "~S is named ~S" r (restart-name r))) 
@@ -67,7 +66,6 @@ If <ClLinks styled={true} term={"identifier"}><i>identifier</i></ClLinks> is a c
 → NIL 
 (find-restart ’my-restart) 
 → NIL 
-
 ```
 **Affected By:** 
 

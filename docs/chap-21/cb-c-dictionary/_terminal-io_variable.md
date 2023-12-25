@@ -32,10 +32,7 @@ The effect of changing the <ClLinks styled={true} term={"value"}><i>value</i></C
 
 **Examples:**
 ```lisp
-
 (progn (prin1 ’foo) (prin1 ’bar \*terminal-io\*)) 
-
-
 
 ▷ FOOBAR 
 → BAR 
@@ -44,7 +41,6 @@ The effect of changing the <ClLinks styled={true} term={"value"}><i>value</i></C
   (prin1 ’bar \*terminal-io\*)) 
 ▷ BAR 
 → "FOO" 
-
 ```
 **See Also:** 
 

@@ -1,5 +1,4 @@
 ```lisp
-
 ;; Collect successive tails of a list. 
 (loop for sublist on ’(a b c d) 
       collect sublist) 
@@ -11,5 +10,4 @@
 ▷ 2 
 ▷ 3 
 → NIL 
-
 ```

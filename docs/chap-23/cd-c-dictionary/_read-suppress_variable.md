@@ -84,14 +84,12 @@ No matter what the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> 
 
 **Examples:**
 ```lisp
-
 (let ((\*read-suppress\* t)) 
   (mapcar #’read-from-string 
 	    ’("#(foo bar baz)" "#P(:type :lisp)" "#c1.2" 
 			       "#.(PRINT ’FOO)" "#3AHELLO" "#S(INTEGER)" 
 			       "#\*ABC" "#\GARBAGE" "#RALPHA" "#3R444"))) 
 → (NIL NIL NIL NIL NIL NIL NIL NIL NIL NIL) 
-
 ```
 **See Also:** 
 

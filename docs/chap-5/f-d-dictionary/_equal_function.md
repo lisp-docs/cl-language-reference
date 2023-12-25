@@ -57,7 +57,6 @@ Any two <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> that are
 **Examples:**
 
 ```lisp
-
 (equal ’a ’b) → false 
 (equal ’a ’a) → true 
 (equal 3 3) → true 
@@ -74,7 +73,6 @@ Any two <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> that are
 (equal "FOO" "foo") → false 
 (equal "This-string" "This-string") → true 
 (equal "This-string" "this-string") → false 
-
 ```
 
 **See Also:**

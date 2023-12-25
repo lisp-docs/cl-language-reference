@@ -42,7 +42,6 @@ These functions test the case of a given <ClLinks styled={true} term={"character
 
 **Examples:**
 ```lisp
-
 (upper-case-p #\A) → true 
 (upper-case-p #\a) → false 
 (both-case-p #\a) → true 
@@ -52,8 +51,6 @@ These functions test the case of a given <ClLinks styled={true} term={"character
 ;; This next example presupposes an implementation 
 ;; in which #\Bell is an implementation-defined character. 
 (lower-case-p #\Bell) → false 
-
-
 
 
 ```

@@ -40,7 +40,6 @@
 
 **Examples:**
 ```lisp
-
 (prog1 (write-string "books" nil :end 4) (write-string "worms")) 
 ▷ bookworms 
 → "books" 
@@ -51,12 +50,9 @@
        nil) 
 ▷ \*test1 
 
-
-
 ▷ \*test2 
 ▷ \* 
 → NIL 
-
 ```
 **Affected By:** 
 

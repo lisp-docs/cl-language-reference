@@ -34,14 +34,12 @@ Removes the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> o
 
 **Examples:**
 ```lisp
-
 (defun add-some (x) (+ x 19)) → ADD-SOME 
 (fboundp ’add-some) → true 
 (flet ((add-some (x) (+ x 37))) 
   (fmakunbound ’add-some) 
   (add-some 1)) → 38 
 (fboundp ’add-some) → false 
-
 ```
 **Exceptional Situations:** 
 

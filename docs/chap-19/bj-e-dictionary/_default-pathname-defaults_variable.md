@@ -28,7 +28,6 @@ a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>, used as th
 
 **Examples:**
 ```lisp
-
 ;; This example illustrates a possible usage for a hypothetical Lisp running on a ;; DEC TOPS-20 file system. Since pathname conventions vary between Lisp 
 ;; implementations and host file system types, it is not possible to provide a ;; general-purpose, conforming example. 
 \*default-pathname-defaults\* → #P"PS:<FRED>" 
@@ -37,7 +36,6 @@ a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>, used as th
 (let ((\*default-pathname-defaults\* (pathname "<MARY>"))) 
   (merge-pathnames (make-pathname :name "CALENDAR"))) 
 → #P"<MARY>CALENDAR" 
-
 ```
 **Affected By:** 
 

@@ -60,7 +60,6 @@ After this operation completes, the *home package* of any <ClLinks styled={true}
 
 **Examples:**
 ```lisp
-
 (setq \*foo-package\* (make-package "FOO" :use nil)) 
 (setq \*foo-symbol\* (intern "FOO" \*foo-package\*)) 
 (export \*foo-symbol\* \*foo-package\*) 
@@ -85,8 +84,6 @@ After this operation completes, the *home package* of any <ClLinks styled={true}
 (package-use-list \*foo-package\*) → () 
 (package-use-list \*bar-package\*) → (#<PACKAGE "FOO">) 
 (package-use-list \*baz-package\*) → (#<PACKAGE "BAR">) 
-
-
 
 **delete-package** 
 (package-used-by-list \*foo-package\*) → (#<PACKAGE "BAR">) 
@@ -118,7 +115,6 @@ After this operation completes, the *home package* of any <ClLinks styled={true}
 (package-used-by-list \*foo-package\*) → () 
 (package-used-by-list \*bar-package\*) is unspecified 
 (package-used-by-list \*baz-package\*) → () 
-
 ```
 **Exceptional Situations:** 
 

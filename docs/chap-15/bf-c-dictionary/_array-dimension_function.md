@@ -30,10 +30,8 @@
 
 **Examples:**
 ```lisp
-
 (array-dimension (make-array 4) 0) → 4 
 (array-dimension (make-array ’(2 3)) 1) → 3 
-
 ```
 **Affected By:** 
 

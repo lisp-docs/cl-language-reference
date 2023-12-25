@@ -60,7 +60,6 @@ A <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> for a *symbol
 
 **Examples:**
 ```lisp
-
 (defvar \*things\* (list ’alpha ’beta ’gamma)) → \*THINGS\* 
 (define-symbol-macro thing1 (first \*things\*)) → THING1 
 (define-symbol-macro thing2 (second \*things\*)) → THING2 
@@ -72,7 +71,6 @@ thing1 → ALPHA
 thing3 → THREE 
 \*things\* → (ONE TWO THREE) 
 (list thing2 (let ((thing2 2)) thing2)) → (TWO 2) 
-
 ```
 **Exceptional Situations:** 
 

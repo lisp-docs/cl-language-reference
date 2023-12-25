@@ -44,7 +44,6 @@ If *prototype* is not supplied, then if the <ClLinks styled={true} term={"number
 
 **Examples:**
 ```lisp
-
 (float 0) *!* 0.0 
 (float 1 .5) *!* 1.0 
 (float 1.0) *!* 1.0 
@@ -52,8 +51,6 @@ If *prototype* is not supplied, then if the <ClLinks styled={true} term={"number
 <i>!</i> 1.0d0 <i><sub>or</sub></i> 
 *!* 1.0 
 (eql (float 1.0 1.0d0) 1.0d0) *! true* 
-
-
 
 
 ```

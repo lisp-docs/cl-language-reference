@@ -40,9 +40,7 @@ Returns a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that id
 
 **Examples:**
 ```lisp
-
 (machine-version) → "KL-10, microcode 9" 
-
 ```
 **Affected By:** 
 

@@ -36,7 +36,6 @@ If the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks 
 
 **Examples:**
 ```lisp
-
 (let ((\*print-base\* 24.) (\*print-radix\* t)) 
   (print 23.)) 
 ▷ #24rN 
@@ -54,7 +53,6 @@ If the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks 
 ▷ 17 16 15 14 
 → NIL 
 (dolist (pb ’(2 3 8 10 16)) 
-
   
   
   (let ((\*print-radix\* t) ;print the integer 10 and 
@@ -66,7 +64,6 @@ If the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks 
 ▷ 10. #10r1/10 
 ▷ #xA #x1/A 
 → NIL 
-
 ```
 **Affected By:** 
 

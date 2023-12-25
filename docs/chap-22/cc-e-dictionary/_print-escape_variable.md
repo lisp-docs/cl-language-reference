@@ -36,17 +36,13 @@ For more specific details of how the <ClLinks styled={true} term={"value"}><i>va
 
 **Examples:**
 ```lisp
-
 (let ((\*print-escape\* t)) (write #\a)) 
-
-
 
 ▷ #\a 
 → #\a 
 (let ((\*print-escape\* nil)) (write #\a)) 
 ▷ a 
 → #\a 
-
 ```
 **Affected By:** 
 

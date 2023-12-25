@@ -1,5 +1,4 @@
 ```lisp
-
 ;;; The caller can supply :ALLOW-OTHER-KEYS T to suppress checking. 
 ((lambda (&key x) x) :x 1 :y 2 :allow-other-keys t) → 1 
 ;;; The callee can use &ALLOW-OTHER-KEYS to suppress checking. 
@@ -16,5 +15,4 @@
 ;;; debugger). In unsafe code, the consequences are undefined. 
 ((lambda (&key x) x) ;This call is not valid 
  :x 1 :y 2 :allow-other-keys nil :allow-other-keys t) 
-
 ```

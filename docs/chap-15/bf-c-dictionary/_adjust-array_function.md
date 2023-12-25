@@ -236,7 +236,6 @@ Note that if an *array A* is displaced to another *array B*, and *B* is displace
 (1 2 3 NIL NIL NIL) 
 (NIL NIL NIL NIL NIL NIL) 
 (NIL NIL NIL NIL NIL NIL)) 
-
  
  
 (array-dimensions beta) → (4 6) 
@@ -252,7 +251,6 @@ is a 3-by-5 array with contents
 #2A(( alpha beta gamma delta baz ) 
 ( epsilon zeta eta theta baz ) 
 ( iota kappa lambda mu baz )) 
-
 ```
 **Exceptional Situations:** 
 
@@ -300,17 +298,14 @@ Returns true if and only if <ClLinks styled={true} term={"adjust-array"}><b>adju
 
 **Examples:**
 ```lisp
-
 (adjustable-array-p 
  (make-array 5 
 	     :element-type ’character 
-
 	     
 	     
 	     :adjustable t 
 	     :fill-pointer 3)) → true 
 (adjustable-array-p (make-array 4)) → implementation-dependent 
-
 ```
 **Exceptional Situations:** 
 

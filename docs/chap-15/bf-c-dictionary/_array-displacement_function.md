@@ -40,7 +40,6 @@ If <ClLinks styled={true} term={"array-displacement"}><b>array-displacement</b><
 
 **Examples:**
 ```lisp
-
 (setq a1 (make-array 5)) → #<ARRAY 5 simple 46115576> 
 (setq a2 (make-array 4 :displaced-to a1 
 		     :displaced-index-offset 1)) 
@@ -51,11 +50,8 @@ If <ClLinks styled={true} term={"array-displacement"}><b>array-displacement</b><
 		     :displaced-index-offset 2)) 
 → #<ARRAY 2 indirect 46122527> 
 
-
-
 (array-displacement a3) 
 → #<ARRAY 4 indirect 46117134>, 2 
-
 ```
 **Exceptional Situations:** 
 

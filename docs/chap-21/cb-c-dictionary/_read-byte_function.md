@@ -44,7 +44,6 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <ClLinks styled={tru
 
 **Examples:**
 ```lisp
-
 (with-open-file (s "temp-bytes" 
 		   :direction :output 
 		   :element-type ’unsigned-byte) 
@@ -53,7 +52,6 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <ClLinks styled={tru
   (format t "~S ~S" (read-byte s) (read-byte s nil ’eof))) 
 ▷ 101 EOF 
 → NIL 
-
 ```
 **Side Effects:** 
 

@@ -32,12 +32,10 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (listp nil) → true 
 (listp (cons 1 2)) → true 
 (listp (make-array 6)) → false 
 (listp t) → false 
-
 ```
 **See Also:** 
 

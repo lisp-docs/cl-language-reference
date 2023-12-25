@@ -52,9 +52,7 @@ There are no specified keyword arguments for <ClLinks styled={true} term={"trans
 
 **Examples:**
 ```lisp
-
 See **logical-pathname-translations**. 
-
 ```
 **Exceptional Situations:** 
 

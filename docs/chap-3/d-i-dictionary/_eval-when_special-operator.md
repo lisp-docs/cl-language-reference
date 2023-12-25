@@ -48,10 +48,8 @@ The use of the <ClLinks styled={true} term={"situation"}><i>situation</i></ClLin
 
 **Examples:**
 ```lisp
-
 One example of the use of **eval-when** is that for the compiler to be able to read a file properly when it uses user-defined *reader macros*, it is necessary to write 
 (eval-when (:compile-toplevel :load-toplevel :execute)  
-
   **eval-when** 
   (set-macro-character #\$ #’(lambda (stream char) 
 			       (declare (ignore char)) 
@@ -91,14 +89,12 @@ This causes the call to **set-macro-character** to be executed in the compiler�
     (print ’foo5))) 
 ;;; If this form occurs at toplevel of a file to be compiled, FOO6 is 
 ;;; printed at compile time. If this form occurs in a non-top-level  
-
 **eval-when** 
 ;;; position, nothing is printed at compile time. Regardless of context, 
 ;;; nothing is ever printed at load time or execution time. 
 (eval-when (:execute :load-toplevel) 
   (eval-when (:compile-toplevel) 
     (print ’foo6))) 
-
 ```
 **See Also:** 
 

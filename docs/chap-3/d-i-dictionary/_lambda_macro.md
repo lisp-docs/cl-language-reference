@@ -60,9 +60,7 @@ Provides a shorthand notation for a <ClLinks styled={true} term={"function"}><b>
 
 **Examples:**
 ```lisp
-
 (funcall (lambda (x) (+ x 3)) 4) → 7 
-
 ```
 **See Also:** 
 

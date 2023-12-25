@@ -60,7 +60,6 @@ The consequences are undefined if *filespec* has a <ClLinks styled={true} term={
 
 **Examples:**
 ```lisp
-
 (with-open-file (s "delete-me.text" :direction :output :if-exists :error)) 
 → NIL 
 (setq p (probe-file "delete-me.text")) → #P"R:>fred>delete-me.text.1" 
@@ -70,7 +69,6 @@ The consequences are undefined if *filespec* has a <ClLinks styled={true} term={
   (delete-file s)) 
 → T 
 (probe-file "delete-me.text") → false 
-
 ```
 **Exceptional Situations:** 
 

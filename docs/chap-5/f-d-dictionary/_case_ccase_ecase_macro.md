@@ -132,7 +132,6 @@ Note that in contrast with <ClLinks styled={true} term={"ccase"}><b>ccase</b></C
 
 **Examples:**
 ```lisp
-
 (dolist (k ’(1 2 3 :four #\v () t ’other)) 
   (format t "~S " 
 	  (case k ((1 2) ’clause1) 
@@ -155,7 +154,6 @@ Note that in contrast with <ClLinks styled={true} term={"ccase"}><b>ccase</b></C
 → DECODE 
 Data and Control 
 
-
 (add-em ’(uno iii)) → 4 
 (add-em ’(uno iiii)) 
 ▷ Error: The value of X, IIII, is not I, UNO, II, DOS, III, 
@@ -165,7 +163,6 @@ Data and Control
 ▷ Debug> :CONTINUE 1 
 ▷ Value to evaluate and use for X: ’IV 
 → 5 
-
 ```
 **Side Effects:** 
 

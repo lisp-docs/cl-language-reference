@@ -32,7 +32,6 @@
 
 **Examples:**
 ```lisp
-
 (write-char #\a) 
 ▷ a 
 → #\a 
@@ -41,7 +40,6 @@
   (write-char #\Space s) 
   (write-char #\b s)) 
 → "a b" 
-
 ```
 **Side Effects:** 
 

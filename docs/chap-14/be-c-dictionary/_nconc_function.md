@@ -64,7 +64,6 @@ Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that is the
 
 **Examples:**
 ```lisp
-
 (nconc) → NIL 
 (setq x ’(a b c)) → (A B C) 
 (setq y ’(d e f)) → (D E F) 
@@ -85,7 +84,6 @@ baz → (K L M)
 foo → (A B C D E F G H I J K L M) 
 bar → (F G H I J K L M) 
 baz → (K L M) 
-
 ```
 **Side Effects:** 
 

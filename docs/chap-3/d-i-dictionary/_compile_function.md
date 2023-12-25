@@ -76,7 +76,6 @@ The *tertiary value*, *failure-p*, is <ClLinks styled={true} term={"false"}><i>f
 
 **Examples:**
 ```lisp
-
 (defun foo () "bar") → FOO 
 (compiled-function-p #’foo) → implementation-dependent 
 (compile ’foo) → FOO 
@@ -84,7 +83,6 @@ The *tertiary value*, *failure-p*, is <ClLinks styled={true} term={"false"}><i>f
 (setf (symbol-function ’foo) 
       (compile nil ’(lambda () "replaced"))) → #<Compiled-Function> 
 (foo) → "replaced" 
-
 ```
 **Affected By:** 
 

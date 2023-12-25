@@ -28,11 +28,9 @@ Returns a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that id
 
 **Examples:**
 ```lisp
-
 (machine-type) 
 → "DEC PDP-10" 
 <i><sup>or</sup>→</i> "Symbolics LM-2" 
-
 ```
 **Affected By:** 
 

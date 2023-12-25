@@ -110,9 +110,7 @@ Any <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> can be *coerc
 
 **Examples:**
 ```lisp
-
 (coerce ’(a b c) ’vector) → #(A B C)  
-
 (coerce ’a ’character) → #\A 
 (coerce 4.56 ’complex) → #C(4.56 0.0) 
 (coerce 4.5s0 ’complex) → #C(4.5s0 0.0s0) 
@@ -129,7 +127,6 @@ All the following *forms* should signal an error:
 (coerce "foo" ’(string 2)) 
 (coerce #(#\a #\b #\c) ’(string 2)) 
 (coerce ’(0 1) ’(simple-bit-vector 3)) 
-
 ```
 **Exceptional Situations:** 
 

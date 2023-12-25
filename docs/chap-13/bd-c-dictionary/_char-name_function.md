@@ -40,7 +40,6 @@ The *standard characters ⟨Newline⟩* and <ClLinks styled={true} term={"space"
 
 **Examples:**
 ```lisp
-
 (char-name #\ ) → "Space" 
 (char-name #\Space) → "Space" 
 (char-name #\Page) → "Page" 
@@ -56,8 +55,6 @@ The *standard characters ⟨Newline⟩* and <ClLinks styled={true} term={"space"
 <i><sup>or</sup>→</i> "LA02" 
 ;; Even though its CHAR-NAME can vary, #\A prints as #\A 
 (prin1-to-string (read-from-string (format nil "#\\~A" (or (char-name #\A) "A")))) → "#\\A" 
-
-
 
 
 ```

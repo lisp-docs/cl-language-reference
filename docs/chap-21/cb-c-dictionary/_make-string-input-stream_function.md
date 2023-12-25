@@ -36,14 +36,12 @@ Returns an *input string stream*. This <ClLinks styled={true} term={"stream"}><i
 
 **Examples:**
 ```lisp
-
 (let ((string-stream (make-string-input-stream "1 one "))) 
   (list (read string-stream nil nil) 
 	(read string-stream nil nil) 
 	(read string-stream nil nil))) 
 → (1 ONE NIL) 
 (read (make-string-input-stream "prefixtargetsuffix" 6 12)) → TARGET 
-
 ```
 **See Also:** 
 

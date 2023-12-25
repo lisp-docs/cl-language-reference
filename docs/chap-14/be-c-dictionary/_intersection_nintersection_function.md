@@ -80,7 +80,6 @@ There is no guarantee that the order of elements in the result will reflect the 
 
 **Examples:**
 ```lisp
-
 (setq list1 (list 1 1 2 3 4 a b c "A" "B" "C" "d") 
       list2 (list 1 4 5 b c d "a" "B" "c" "D")) 
 → (1 4 5 B C D "a" "B" "c" "D") 
@@ -97,7 +96,6 @@ list2 → implementation-dependent ;*e.g.*, (1 4 5 B C D "a" "B" "c" "D")
 (nintersection list1 list2 :key #’cdr) → ((2 . 3) (3 . 4)) 
 list1 → implementation-dependent ;*e.g.*, ((1 . 2) (2 . 3) (3 . 4)) 
 list2 → implementation-dependent ;*e.g.*, ((1 . 3) (2 . 4) (3 . 6) (4 . 8)) 
-
 ```
 **Side Effects:** 
 

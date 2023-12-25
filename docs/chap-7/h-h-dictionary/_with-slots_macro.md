@@ -64,9 +64,7 @@ The macro <ClLinks styled={true} term={"with-slots"}><b>with-slots</b></ClLinks>
 
 **Examples:**
 ```lisp
-
 (defclass thing () 
-
   
   
   **with-slots** 
@@ -74,8 +72,8 @@ The macro <ClLinks styled={true} term={"with-slots"}><b>with-slots</b></ClLinks>
    (y :initarg :y :accessor thing-y))) 
 → #<STANDARD-CLASS THING 250020173> 
 (defmethod (setf thing-x) :before (new-x (thing thing)) 
-	   (format t "~&Changing X from ~D to ~D in ~S.~%" 
-		   (thing-x thing) new-x thing)) 
+  (format t "~&Changing X from ~D to ~D in ~S.~%" 
+	  (thing-x thing) new-x thing)) 
 (setq thing (make-instance ’thing :x 0 :y 1)) → #<THING 62310540> 
 (with-slots (x y) thing (incf x) (incf y)) → 2 
 (values (thing-x thing) (thing-y thing)) → 1, 2 
@@ -95,11 +93,10 @@ The macro <ClLinks styled={true} term={"with-slots"}><b>with-slots</b></ClLinks>
 		x2 (thing-x thing2) y2 (thing-y thing2))))) 
 ▷ Changing X from 7 to (9) in #<THING 43147374>. 
 → ((1 1 2 2 7 7 8 8) 
-     9 
-     (9 9 2 2 7 7 8 8) 
-     (9) 
-     (9 9 2 2 (9) (9) 8 8)) 
-
+   9 
+   (9 9 2 2 7 7 8 8) 
+   (9) 
+   (9 9 2 2 (9) (9) 8 8)) 
 ```
 **Affected By:** 
 

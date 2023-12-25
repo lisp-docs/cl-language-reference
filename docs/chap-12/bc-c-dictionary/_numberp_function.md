@@ -44,13 +44,11 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (numberp 12) → true 
 (numberp (expt 2 130)) → true 
 (numberp #c(5/3 7.2)) → true 
 (numberp nil) → false 
 (numberp (cons 1 2)) → false 
-
 ```
 **Notes:** 
 

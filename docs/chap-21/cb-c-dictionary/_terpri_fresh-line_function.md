@@ -40,7 +40,6 @@
 
 **Examples:**
 ```lisp
-
 (with-output-to-string (s) 
   (write-string "some text" s) 
   (terpri s) 
@@ -55,7 +54,6 @@ more text"
   (write-string "more text" s)) 
 → "some text 
 more text" 
-
 ```
 **Side Effects:** 
 

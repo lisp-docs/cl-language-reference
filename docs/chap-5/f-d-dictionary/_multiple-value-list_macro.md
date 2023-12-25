@@ -42,9 +42,7 @@ Data and Control
 
 **Examples:**
 ```lisp
-
 (multiple-value-list (floor -3 4)) *!* (-1 1) 
-
 ```
 **See Also:** 
 

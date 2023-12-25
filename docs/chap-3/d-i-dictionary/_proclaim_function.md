@@ -62,7 +62,6 @@ An implementation is free to support other (<ClLinks styled={true} term={"implem
 
 **Examples:**
 ```lisp
-
 (defun declare-variable-types-globally (type vars) 
   (proclaim ‘(type ,type ,@vars)) 
   type) 
@@ -70,7 +69,6 @@ An implementation is free to support other (<ClLinks styled={true} term={"implem
 ;; must always contain a float. 
 (declare-variable-types-globally ’float ’(\*tolerance\*)) 
 *!* FLOAT 
-
 ```
 **See Also:** 
 

@@ -88,7 +88,6 @@ The consequences are undefined if an attempt is made to <ClLinks styled={true} t
 
 **Examples:**
 ```lisp
-
 (setq p (merge-pathnames "test")) 
 → #<PATHNAME :HOST NIL :DEVICE *device-name* :DIRECTORY *directory-name* 
 :NAME "test" :TYPE NIL :VERSION :NEWEST> 
@@ -111,7 +110,6 @@ The consequences are undefined if an attempt is made to <ClLinks styled={true} t
 ;; Here’s another bug to avoid... 
 (with-open-file (foo "no-such-file" :direction :output :if-does-not-exist nil) (format foo "Hello")) 
 → "Hello" ;FORMAT got an argument of NIL! 
-
 ```
 **Side Effects:** 
 

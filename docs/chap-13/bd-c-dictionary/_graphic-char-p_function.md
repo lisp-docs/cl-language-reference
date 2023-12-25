@@ -44,12 +44,10 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (graphic-char-p #\G) → true 
 (graphic-char-p #\#) → true 
 (graphic-char-p #\Space) → true 
 (graphic-char-p #\Newline) → false 
-
 ```
 **Exceptional Situations:** 
 

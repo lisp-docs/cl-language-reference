@@ -200,7 +200,6 @@ If the *restartable-form* is a <ClLinks styled={true} term={"list"}><i>list</i><
 
 **Examples:**
 ```lisp
-
 (restart-case 
     (handler-bind ((error #’(lambda (c) 
 			      (declare (ignore condition)) 
@@ -221,7 +220,6 @@ If the *restartable-form* is a <ClLinks styled={true} term={"list"}><i>list</i><
 		     (bad-tasting-sundae-topping condition))))) 
 → BAD-TASTING-SUNDAE 
 (defun all-start-with-same-letter (symbol1 symbol2 symbol3) 
-
   
   
   **restart-case** 
@@ -233,8 +231,6 @@ If the *restartable-form* is a <ClLinks styled={true} term={"list"}><i>list</i><
   (format t "Enter a new value: ") 
   (multiple-value-list (eval (read)))) 
 → READ-NEW-VALUE 
-
-
 
 **restart-case** 
 (defun verify-or-fix-perfect-sundae (ice-cream sauce topping) (do () 
@@ -266,7 +262,6 @@ If the *restartable-form* is a <ClLinks styled={true} term={"list"}><i>list</i><
 ▷ Use a new ice cream. 
 ▷ Enter a new ice cream: ’chocolate 
 → CHOCOLATE, CARAMEL, CHERRY 
-
 ```
 **See Also:** 
 

@@ -42,10 +42,8 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks sty
 (list a b c) → (4 5 6) 
 (eval +++) → (1 2 3) 
 #.‘(,@++ d) → (1 2 3 (1 2 3)) 
-
  
  
-
 ```
 **Affected By:** 
 
@@ -105,7 +103,6 @@ The <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of **\***, **\
 
 **Examples:**
 ```lisp
-
 (values ’a1 ’a2) → A1, A2 
 ’b → B 
 (values ’c1 ’c2 ’c3) → C1, C2, C3 
@@ -114,7 +111,6 @@ The <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of **\***, **\
 (compile \*) → CUBE-ROOT 
 (setq a (cube-root 27.0)) → 3.0 
 (\* \* 9.0) → 27.0 
-
 ```
 **Affected By:** 
 

@@ -40,7 +40,6 @@ The result only ever differs from <ClLinks styled={true} term={"character"}><i>c
 
 **Examples:**
 ```lisp
-
 (char-upcase #\a) → #\A 
 (char-upcase #\A) → #\A 
 (char-downcase #\a) → #\a 
@@ -60,7 +59,6 @@ The result only ever differs from <ClLinks styled={true} term={"character"}><i>c
 			    (char= (char-downcase (char-upcase char)) char)))) 
 	(return char))))) 
 → NIL 
-
 ```
 **Exceptional Situations:** 
 

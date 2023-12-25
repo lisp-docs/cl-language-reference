@@ -48,10 +48,8 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (simple-bit-vector-p (make-array 6)) → false 
 (simple-bit-vector-p #\*) → true 
-
 ```
 **See Also:** 
 

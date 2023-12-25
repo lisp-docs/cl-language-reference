@@ -29,7 +29,7 @@ If any <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> is a <
 **Examples:**
 
 ```lisp
- 
+
 (/ 12 4) → 3 
 (/ 13 4) → 13/4 
 (/ -8) → -1/8 
@@ -39,7 +39,6 @@ If any <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> is a <
 (/ 5 20) → 1/4 
 (/ 60 -2 3 5.0) → -2.0 
 (/ 2 #c(2 2)) → #C(1/2 -1/2) 
-
 ```
 
 **Exceptional Situations:**

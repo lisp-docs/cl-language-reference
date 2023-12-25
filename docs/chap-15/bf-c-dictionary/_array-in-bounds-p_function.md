@@ -36,14 +36,12 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the *subsc
 
 **Examples:**
 ```lisp
-
 (setq a (make-array ’(7 11) :element-type ’string-char)) 
 (array-in-bounds-p a 0 0) → true 
 (array-in-bounds-p a 6 10) → true 
 (array-in-bounds-p a 0 -1) → false 
 (array-in-bounds-p a 0 11) → false 
 (array-in-bounds-p a 7 0) → false 
-
 ```
 **See Also:** 
 

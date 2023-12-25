@@ -36,10 +36,8 @@
 
 **Examples:**
 ```lisp
-
 (software-type) → "Multics" 
 (software-version) → "1.3x" 
-
 ```
 **Affected By:** 
 

@@ -60,7 +60,6 @@ If **\*read-eval\*** is <ClLinks styled={true} term={"false"}><i>false</i></ClLi
 
 **Examples:**
 ```lisp
-
 (let ((x (list "a" ’\a (gensym) ’((a (b (c))) d e f g))) 
       (\*print-escape\* nil) 
       (\*print-gensym\* nil) 
@@ -77,8 +76,6 @@ If **\*read-eval\*** is <ClLinks styled={true} term={"false"}><i>false</i></ClLi
 ;; This is setup code is shared between the examples 
 ;; of three hypothetical implementations which follow. 
 (setq table (make-hash-table)) → #<HASH-TABLE EQL 0/120 32005763> 
-
-
 
 (setf (gethash table 1) ’one) → ONE 
 (setf (gethash table 2) ’two) → TWO 
@@ -102,7 +99,6 @@ Error: Can’t print #<HASH-TABLE EQL 0/120 32005763> readably.
       ▷ (SETF (GETHASH 2 HASH-TABLE) TWO) 
       ▷ HASH-TABLE) 
 → #<HASH-TABLE EQL 0/120 32005763> 
-
 ```
 **See Also:** 
 

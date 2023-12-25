@@ -68,14 +68,12 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <ClLinks styled={tru
 
 **Examples:**
 ```lisp
-
 (with-input-from-string (is "0123") 
   (do ((c (read-char is) (read-char is nil ’the-end))) 
       ((not (characterp c))) 
     (format t "~S " c))) 
 ▷ #\0 #\1 #\2 #\3 
 → NIL 
-
 ```
 **Affected By:** 
 

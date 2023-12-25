@@ -56,7 +56,6 @@
 
 **Examples:**
 ```lisp
-
 (symbol-function ’car) → #<FUNCTION CAR> 
 (symbol-function ’twice) is an error ;because TWICE isn’t defined. 
 (defun twice (n) (\* n 2)) → TWICE 
@@ -89,7 +88,6 @@
       nil)) → SYMBOL-FUNCTION-OR-NIL 
 (symbol-function-or-nil ’car) → #<FUNCTION CAR> 
 (symbol-function-or-nil ’defun) → NIL 
-
 ```
 **Affected By:** 
 

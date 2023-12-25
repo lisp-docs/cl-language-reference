@@ -68,16 +68,13 @@ If <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a <ClLinks 
 
 **Examples:**
 ```lisp
-
 Evaluating the following with a line length of 25 produces the output shown. 
 (progn (princ "Roads ") 
-
        
        
        (pprint-tabular \*standard-output\* ’(elm main maple center) nil nil 8)) 
 Roads ELM MAIN 
 MAPLE CENTER 
-
 ```
 **Side Effects:** 
 

@@ -70,10 +70,9 @@ The branch cut for the inverse hyperbolic tangent function is in two pieces: one
 **Examples:**
 
 ```lisp
- 
+
 (sinh 0) → 0.0 
 (cosh (complex 0 -1)) → #C(0.540302 -0.0) 
-
 ```
 
 **Exceptional Situations:**

@@ -44,7 +44,6 @@
 
 **Examples:**
 ```lisp
-
 (setq \*x\* 1) → 1 
 (progv ’(\*x\*) ’(2) \*x\*) → 2 
 \*x\* → 1 
@@ -52,8 +51,6 @@ Assuming \*x\* is not globally special,
 (let ((\*x\* 3)) 
   (progv ’(\*x\*) ’(4) 
     (list \*x\* (symbol-value ’\*x\*)))) → (3 4) 
-
-
 
 
 ```

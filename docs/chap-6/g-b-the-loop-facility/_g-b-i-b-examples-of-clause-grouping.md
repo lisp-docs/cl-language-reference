@@ -1,5 +1,4 @@
 ```lisp
-
 ;; Group conditional clauses. 
 (loop for i in ’(1 324 2345 323 2 4 235 252) 
       when (oddp i) 
@@ -18,8 +17,6 @@
 ▷ 
 ▷ 235 
 → (1 2345 323 235), (324 2 4 252) 
-
-
 
 ;; Collect numbers larger than 3. 
 (loop for i in ’(1 2 3 4 5 6) 
@@ -59,7 +56,6 @@
       and if (zerop (floor x 2)) 
       do (princ " b") 
       end 
-
       
       
       and do (princ " c")) 
@@ -68,5 +64,4 @@
 ▷ 2 a c 
 ▷ 3 
 → NIL 
-
 ```

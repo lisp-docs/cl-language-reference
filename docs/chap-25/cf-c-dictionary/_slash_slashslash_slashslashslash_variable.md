@@ -39,7 +39,6 @@ The <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of <ClLinks st
  
 (floor 22 7) → 3, 1 
 (+ (\* (car /) 7) (cadr /)) → 22 
-
 ```
 **Affected By:** 
 
@@ -122,7 +121,6 @@ If no appropriate and relevant result can be produced, <ClLinks styled={true} te
 → "V2" 
 <i><sup>or</sup>→</i> "Release 17.3, ECO #6" 
 **short-site-name, long-site-name** *Function* 
-
 ```
 **Syntax:** 
 
@@ -166,14 +164,12 @@ If no appropriate and relevant result can be produced, <ClLinks styled={true} te
 
 **Examples:**
 ```lisp
-
 (short-site-name) 
 → "MIT AI Lab" 
 <i><sup>or</sup>→</i> "CMU-CSD" 
 (long-site-name) 
 → "MIT Artificial Intelligence Laboratory" 
 <i><sup>or</sup>→</i> "CMU Computer Science Department" 
-
 ```
 **Affected By:** 
 

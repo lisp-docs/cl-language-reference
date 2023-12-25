@@ -32,10 +32,8 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (complexp 1.2d2) → false 
 (complexp #c(5/3 7.2)) → true 
-
 ```
 **See Also:** 
 

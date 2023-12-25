@@ -19,12 +19,10 @@
 **Examples:**
 
 ```lisp
-
 (1+ 99) → 100 
 (1- 100) → 99 
 (1+ (complex 0.0)) → #C(1.0 0.0) 
 (1- 5/3) → 2/3 
-
 ```
 
 **Exceptional Situations:**

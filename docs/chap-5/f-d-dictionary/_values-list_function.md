@@ -32,12 +32,10 @@ Returns the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of
 
 **Examples:**
 ```lisp
-
 (values-list nil) *! ⟨no values⟩* 
 (values-list ’(1)) *!* 1 
 (values-list ’(1 2)) *!* 1, 2 
 (values-list ’(1 2 3)) *!* 1, 2, 3 
-
 ```
 **Exceptional Situations:** 
 

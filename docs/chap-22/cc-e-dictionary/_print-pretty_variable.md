@@ -52,7 +52,6 @@ If it is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the *pretty
 
 **Examples:**
 ```lisp
-
 (setq \*print-pretty\* ’nil) → NIL 
 (progn (write ’(let ((a 1) (b 2) (c 3)) (+ a b c))) nil) 
 ▷ (LET ((A 1) (B 2) (C 3)) (+ A B C)) 
@@ -82,7 +81,6 @@ If it is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the *pretty
 ▷ #’(LAMBDA () 
       ▷ (LIST a b ’C #’D)) 
 → NIL 
-
 ```
 **See Also:** 
 

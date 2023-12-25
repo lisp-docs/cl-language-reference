@@ -64,7 +64,6 @@ If <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> appears in <ClLinks 
 
 **Examples:**
 ```lisp
-
 (setq alist ’((1 . "one") (2 . "two") (3 . 3))) 
 → ((1 . "one") (2 . "two") (3 . 3)) 
 (rassoc 3 alist) → (3 . 3) 
@@ -74,7 +73,6 @@ If <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> appears in <ClLinks 
 (rassoc ’a ’((a . b) (b . c) (c . a) (z . a))) → (C . A) 
 (rassoc-if #’stringp alist) → (1 . "one") 
 (rassoc-if-not #’vectorp alist) → (3 . 3) 
-
 ```
 **See Also:** 
 

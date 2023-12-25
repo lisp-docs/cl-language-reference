@@ -1,5 +1,4 @@
 ```lisp
-
 ;; Print numbers and their squares. 
 ;; The DO construct applies to multiple forms. 
 (loop for i from 1 to 3 
@@ -12,5 +11,4 @@
 ▷ 3 
 ▷ 9 
 → NIL 
-
 ```

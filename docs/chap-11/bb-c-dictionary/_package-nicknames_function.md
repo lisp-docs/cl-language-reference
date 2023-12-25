@@ -30,11 +30,9 @@ Returns the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of nickna
 
 **Examples:**
 ```lisp
-
 (package-nicknames (make-package ’temporary 
 				  :nicknames ’("TEMP" "temp"))) 
 → ("temp" "TEMP") 
-
 ```
 **Exceptional Situations:** 
 

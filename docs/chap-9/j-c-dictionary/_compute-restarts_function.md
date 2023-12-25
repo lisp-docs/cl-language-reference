@@ -48,7 +48,6 @@ Implementations are permitted, but not required, to return *distinct lists* from
 
 **Examples:**
 ```lisp
-
 ;; One possible way in which an interactive debugger might present 
 ;; restarts to the user. 
 (defun invoke-a-restart () 
@@ -62,8 +61,6 @@ Implementations are permitted, but not required, to return *distinct lists* from
        (setq n (read)) 
        (fresh-line)) 
       (invoke-restart-interactively (nth n restarts))))) 
-
-
 
 (restart-case (invoke-a-restart) 
   (one () 1) 
@@ -82,7 +79,6 @@ Implementations are permitted, but not required, to return *distinct lists* from
 ;; Note that in addition to user-defined restart points, COMPUTE-RESTARTS 
 ;; also returns information about any system-supplied restarts, such as 
 ;; the "Return to Lisp Toplevel" restart offered above. 
-
 ```
 **Affected By:** 
 

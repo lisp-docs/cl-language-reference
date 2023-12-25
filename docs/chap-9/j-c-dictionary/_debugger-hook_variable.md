@@ -28,7 +28,6 @@ When the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLink
 
 **Examples:**
 ```lisp
-
 (defun one-of (choices &optional (prompt "Choice")) 
   (let ((n (length choices)) (i)) 
     (do ((c choices (cdr c)) (i 1 (+ i 1))) 
@@ -37,7 +36,6 @@ When the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLink
     (do () ((typep i ‘(integer 1 ,n))) 
       (format t "~&~A: " prompt) 
       (setq i (read)) 
-
       
       
       (fresh-line)) 
@@ -62,7 +60,6 @@ When the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLink
 ▷ Choice: 1 
 ▷ Form to evaluate and use: 1 
 → 9 
-
 ```
 **Affected By:** 
 

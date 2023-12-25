@@ -32,11 +32,9 @@ Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the <ClL
 
 **Examples:**
 ```lisp
-
 (array-dimensions (make-array 4)) → (4) 
 (array-dimensions (make-array ’(2 3))) → (2 3) 
 (array-dimensions (make-array 4 :fill-pointer 2)) → (4) 
-
 ```
 **Exceptional Situations:** 
 

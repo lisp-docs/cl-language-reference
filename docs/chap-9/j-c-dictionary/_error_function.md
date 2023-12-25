@@ -32,12 +32,10 @@ If the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is n
 
 **Examples:**
 ```lisp
-
 (defun factorial (x) 
   (cond ((or (not (typep x ’integer)) (minusp x)) 
 	 (error "~S is not a valid argument to FACTORIAL." x)) 
 	((zerop x) 1) 
-
 	
 	
 	**error** 
@@ -70,7 +68,6 @@ If the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is n
 ▷ 1: Return to Lisp Toplevel. 
 ▷ Debug> :Continue 1 
 ▷ Return to Lisp Toplevel. 
-
 ```
 **Side Effects:** 
 

@@ -36,12 +36,10 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (floatp 1.2d2) *! true* 
 (floatp 1.212) *! true* 
 (floatp 1.2s2) *! true* 
 (floatp (expt 2 130)) *! false* 
-
 ```
 **Notes:** 
 

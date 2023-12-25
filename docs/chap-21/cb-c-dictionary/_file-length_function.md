@@ -34,9 +34,7 @@ For a binary file, the length is measured in units of the *element type* of the 
 
 **Examples:**
 ```lisp
-
 (with-open-file (s "decimal-digits.text" 
-
 		   
 		   
 		   :direction :output :if-exists :error) 
@@ -46,7 +44,6 @@ For a binary file, the length is measured in units of the *element type* of the 
 (with-open-file (s "decimal-digits.text") 
   (file-length s)) 
 → 10 
-
 ```
 **Exceptional Situations:** 
 

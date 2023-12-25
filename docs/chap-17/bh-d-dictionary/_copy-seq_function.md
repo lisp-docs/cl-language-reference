@@ -36,11 +36,9 @@ If *sequence* is a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks
 
 **Examples:**
 ```lisp
-
 (setq str "a string") → "a string" 
 (equalp str (copy-seq str)) → true 
 (eql str (copy-seq str)) → false 
-
 ```
 **Exceptional Situations:** 
 

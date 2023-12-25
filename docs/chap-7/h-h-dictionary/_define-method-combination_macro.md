@@ -448,14 +448,12 @@ If a <ClLinks styled={true} term={"define-method-combination"}><b>define-method-
 
 **Examples:**
 ```lisp
-
 Most examples of the long form of **define-method-combination** also illustrate the use of the related *functions* that are provided as part of the declarative method combination facility. 
 ;;; Examples of the short form of define-method-combination 
 (define-method-combination and :identity-with-one-argument t) 
 (defmethod func and ((x class1) y) ...) 
 ;;; The equivalent of this example in the long form is: 
 (define-method-combination and 
-
     
     
     **define-method-combination** 
@@ -502,8 +500,6 @@ Most examples of the long form of **define-method-combination** also illustrate 
 		     ‘(call-method ,method)) 
 		   methods))) 
 
-
-
 **define-method-combination** 
 					;A more complete version of the preceding 
 (define-method-combination or 
@@ -547,8 +543,6 @@ Most examples of the long form of **define-method-combination** also illustrate 
 			 (make-method ,form))) 
 	 form))) 
 
-
-
 **define-method-combination** 
 					;This short-form call is behaviorally identical to the preceding 
 (define-method-combination or :identity-with-one-argument t) 
@@ -574,7 +568,6 @@ Most examples of the long form of **define-method-combination** also illustrate 
 			     ‘(call-method ,method)) 
 			   methods)) 
      (unlock (object-lock ,object)))) 
-
 ```
 **Side Eects:** 
 

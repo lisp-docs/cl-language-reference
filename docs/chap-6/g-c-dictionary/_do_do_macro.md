@@ -140,12 +140,9 @@ An *implicit block* named <ClLinks styled={true} term={"nil"}><b>nil</b></ClLink
 
 **Examples:**
 ```lisp
-
 (do ((temp-one 1 (1+ temp-one)) 
      (temp-two 0 (1- temp-two))) 
     ((> (- temp-one temp-two) 5) temp-one)) → 4 
-
-
 
 **do, do***∗* 
 (do ((temp-one 1 (1+ temp-one)) 
@@ -185,8 +182,6 @@ is an example of parallel assignment to index variables. On the first iteration,
      (nreverse z))) 
 does the same thing as (mapcar #’f foo bar). The step computation for z is an example of the fact that variables are stepped in parallel. Also, the body of the loop is empty. 
 
-
-
 **do, do***∗* 
 (defun list-reverse (list) 
   (do ((x list (cdr x)) 
@@ -201,7 +196,6 @@ As an example of nested iterations, consider a data structure that is a *list* o
 	((null s)) 
       (when (eq (car s) sym) 
 	(return-from ribcage-lookup (car v)))))) → RIBCAGE-LOOKUP 
-
 ```
 **See Also:** 
 

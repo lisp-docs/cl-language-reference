@@ -32,13 +32,11 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (standard-char-p #\Space) → true 
 (standard-char-p #\~) → true 
 ;; This next example presupposes an implementation 
 ;; in which #\Bell is a defined character. 
 (standard-char-p #\Bell) → false 
-
 ```
 **Exceptional Situations:** 
 

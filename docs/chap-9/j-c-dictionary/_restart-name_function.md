@@ -44,7 +44,6 @@ Returns the name of the <ClLinks styled={true} term={"restart"}><i>restart</i></
 
 **Examples:**
 ```lisp
-
 (restart-case 
     (loop for restart in (compute-restarts) 
 	  collect (restart-name restart)) 
@@ -55,7 +54,6 @@ Returns the name of the <ClLinks styled={true} term={"restart"}><i>restart</i></
 → (CASE1 NIL CASE3 CASE1 ABORT) 
 ;; In the example above the restart named ABORT was not created 
 ;; explicitly, but was implicitly supplied by the system. 
-
 ```
 **See Also:** 
 

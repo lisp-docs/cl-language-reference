@@ -44,11 +44,9 @@ Returns a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> naming 
 
 **Examples:**
 ```lisp
-
 (with-open-file (stream ">relativity>general.text") 
   (file-author s)) 
 → "albert" 
-
 ```
 **Affected By:** 
 

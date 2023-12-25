@@ -72,7 +72,6 @@ If two lists (load-time-value <ClLinks styled={true} term={"form"}><i>form</i></
 
 **Examples:**
 ```lisp
-
 ;;; The function INCR1 always returns the same value, even in different images. ;;; The function INCR2 always returns the same value in a given image, 
 ;;; but the value it returns might vary from image to image. 
 (defun incr1 (x) (+ x #.(random 17))) 
@@ -95,14 +94,12 @@ If two lists (load-time-value <ClLinks styled={true} term={"form"}><i>form</i></
 ;;; even though NIL was specified, because the object was already read-only 
 ;;; when it was written as a literal vector rather than created by a constructor. ;;; User programs must treat the vector v as read-only. 
 (defun baz-ref (n)  
-
   (let ((v (load-time-value #(A B C) nil))) 
     (values (svref v n) v))) 
 ;;; This use of LOAD-TIME-VALUE permits the indicated vector to be coalesced 
 ;;; even though NIL was specified in the outer situation because T was specified ;;; in the inner situation. User programs must treat the vector v as read-only. (defun baz-ref (n) 
 (let ((v (load-time-value (load-time-value (vector 1 2 3) t) nil))) 
   (values (svref v n) v))) 
-
 ```
 **See Also:** 
 

@@ -56,14 +56,12 @@ A name conflict in <ClLinks styled={true} term={"export"}><b>export</b></ClLinks
 
 **Examples:**
 ```lisp
-
 (make-package ’temp :use nil) → #<PACKAGE "TEMP"> 
 (use-package ’temp) → T 
 (intern "TEMP-SYM" ’temp) → TEMP::TEMP-SYM, NIL 
 (find-symbol "TEMP-SYM") → NIL, NIL 
 (export (find-symbol "TEMP-SYM" ’temp) ’temp) → T 
 (find-symbol "TEMP-SYM") → TEMP-SYM, :INHERITED 
-
 ```
 **Side Effects:** 
 

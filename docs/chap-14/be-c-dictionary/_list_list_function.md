@@ -50,7 +50,6 @@ If <ClLinks styled={true} term={"list"}><b>list\*</b></ClLinks> receives only on
 
 **Examples:**
 ```lisp
-
 (list 1) → (1) 
 (list\* 1) → 1 
 (setq a 1) → 1 
@@ -64,7 +63,6 @@ If <ClLinks styled={true} term={"list"}><b>list\*</b></ClLinks> receives only on
 (list 3 4 ’a (car ’(b . c)) (+ 6 -2)) → (3 4 A B 4) 
 (list\* ’a ’b ’c ’d) *≡* (cons ’a (cons ’b (cons ’c ’d))) → (A B C . D) 
 (list\* ’a ’b ’c ’(d e f)) → (A B C D E F) 
-
 ```
 **See Also:** 
 

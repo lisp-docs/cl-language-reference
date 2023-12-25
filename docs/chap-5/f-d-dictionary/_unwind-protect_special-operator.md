@@ -48,11 +48,9 @@ Undoing of <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> and 
 
 **Examples:**
 ```lisp
-
 (tagbody 
    (let ((x 3)) 
      Data and Control 
-
 
      **unwind-protect** 
      (unwind-protect 
@@ -91,8 +89,6 @@ If an exit occurs before completion of **incf**, the **decf** *form* is executed
 (block a 
   (block b 
     (unwind-protect (return-from a 1) 
-
-
 
       **unwind-protect** 
       (return-from b 2)))) 
@@ -133,7 +129,6 @@ If an exit occurs before completion of **incf**, the **decf** *form* is executed
       (print ’xxx)))) 
 Data and Control 
 
-
 ;;; The following returns 4; XXX is not printed. 
 ;;; The (THROW ’FOO ...) has no effect on the scope of the BAR 
 ;;; catch tag or the extent of the (CATCH ’BAR ...) exit. 
@@ -148,7 +143,6 @@ Data and Control
     (declare (special x)) 
     (unwind-protect (return) 
       (print x)))) 
-
 ```
 **See Also:** 
 

@@ -88,7 +88,6 @@ If a <ClLinks styled={true} term={"defmacro"}><b>defmacro</b></ClLinks> <ClLinks
 
 **Examples:**
 ```lisp
-
 (defmacro mac1 (a b) "Mac1 multiplies and adds" 
 	  ‘(+ ,a (\* ,b 3))) → MAC1 
 (mac1 4 5) → 19 
@@ -99,7 +98,6 @@ If a <ClLinks styled={true} term={"defmacro"}><b>defmacro</b></ClLinks> <ClLinks
   ‘’(,r ,a ,b ,c ,d ,x)) → MAC3 
 (mac3 1 6 :d 8 :c 9 :d 10) → ((MAC3 1 6 :D 8 :C 9 :D 10) 1 6 9 8 (:D 8 :C 9 :D 10)) 
 The stipulation that an embedded *destructuring lambda list* is permitted only where *ordinary lambda list* syntax would permit a parameter name but not a *list* is made to prevent ambiguity. For example, the following is not valid:  
-
 **defmacro** 
 (defmacro loser (x &optional (a b &rest c) &rest z) 
   ...) 
@@ -128,22 +126,20 @@ would be a valid call for the second definition but not for the first.
 (dm2a x y) → (FORM (DM2A X Y) A X B Y) 
 (defmacro dm2b (&whole form a (&whole b (c . d) &optional (e 5)) 
 		&body f &environment env)  
-
   “(,’,form „a ,’,b ,’,(macroexpand c env) ,’,d ,’,e ,’,f)) 
 					;Note that because backquote is involved, implementations may differ 
 					;slightly in the nature (though not the functionality) of the expansion. 
 (macroexpand ’(dm2b x1 (((incf x2) x3 x4)) x5 x6)) 
 → (LIST\* ’(DM2B X1 (((INCF X2) X3 X4)) 
-		   X5 X6) 
-	     X1 
-	     ’((((INCF X2) X3 X4)) (SETQ X2 (+ X2 1)) (X3 X4) 5 (X5 X6))), 
+		 X5 X6) 
+	   X1 
+	   ’((((INCF X2) X3 X4)) (SETQ X2 (+ X2 1)) (X3 X4) 5 (X5 X6))), 
 T 
 (let ((x1 5)) 
   (macrolet ((segundo (x) ‘(cadr ,x))) 
     (dm2b x1 (((segundo x2) x3 x4)) x5 x6))) 
 → ((DM2B X1 (((SEGUNDO X2) X3 X4)) X5 X6) 
-     5 (((SEGUNDO X2) X3 X4)) (CADR X2) (X3 X4) 5 (X5 X6)) 
-
+   5 (((SEGUNDO X2) X3 X4)) (CADR X2) (X3 X4) 5 (X5 X6)) 
 ```
 **See Also:** 
 

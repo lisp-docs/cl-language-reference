@@ -52,7 +52,6 @@ If a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> to be tr
 
 **Examples:**
 ```lisp
-
 (defun fact (n) (if (zerop n) 1 (\* n (fact (- n 1))))) 
 → FACT 
 (trace fact) 
@@ -67,11 +66,8 @@ If a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> to be tr
 ▷ | 3 Exit FACT 1 
 ▷ | 2 Exit FACT 2 
 
-
-
 ▷ 1 Exit FACT 6 
 → 6 
-
 ```
 **Side Effects:** 
 

@@ -52,11 +52,9 @@ Returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the <ClL
 
 **Examples:**
 ```lisp
-
 (defmethod some-gf :before ((a integer)) a) 
 → #<STANDARD-METHOD SOME-GF (:BEFORE) (INTEGER) 42736540> 
 (method-qualifiers \*) → (:BEFORE) 
-
 ```
 **See Also:** 
 

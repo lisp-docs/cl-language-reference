@@ -32,7 +32,6 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (characterp #\a) → true 
 (characterp ’a) → false 
 (characterp "a") → false 
@@ -41,8 +40,6 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 ;; This next example presupposes an implementation 
 ;; in which #\Rubout is an implementation-defined character. 
 (characterp #\Rubout) → true 
-
-
 
 
 ```

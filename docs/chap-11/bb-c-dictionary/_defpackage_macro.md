@@ -220,7 +220,6 @@ If a defpackage <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> appea
 
 **Examples:**
 ```lisp
-
 (defpackage "MY-PACKAGE" 
   (:nicknames "MYPKG" "MY-PKG") 
   (:use "COMMON-LISP") 
@@ -235,7 +234,6 @@ If a defpackage <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> appea
   (:shadow CAR :cdr #:cons) 
   (:export "CONS") ; this is the shadowed one. 
   ) 
-
 ```
 **Affected By:** 
 

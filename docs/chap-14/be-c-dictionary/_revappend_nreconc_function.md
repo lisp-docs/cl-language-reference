@@ -64,7 +64,6 @@ The resulting <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> shares 
 
 **Examples:**
 ```lisp
-
 (let ((list-1 (list 1 2 3)) 
       (list-2 (list ’a ’b ’c))) 
   (print (revappend list-1 list-2)) 
@@ -88,7 +87,6 @@ The resulting <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> shares 
 ▷ NIL 
 ▷ T 
 → T 
-
 ```
 **Side Effects:** 
 

@@ -28,13 +28,11 @@ Returns a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that id
 
 **Examples:**
 ```lisp
-
 (machine-instance) 
 → "ACME.COM" 
 <i><sup>or</sup>→</i> "S/N 123231" 
 <i><sup>or</sup>→</i> "18.26.0.179" 
 <i><sup>or</sup>→</i> "AA-00-04-00-A7-A4" 
-
 ```
 **Affected By:** 
 

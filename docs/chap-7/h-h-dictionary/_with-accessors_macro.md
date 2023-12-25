@@ -72,14 +72,13 @@ Creates a lexical environment in which the slots specified by *slot-entry* are l
 
 **Examples:**
 ```lisp
-
 (defclass thing () 
   ((x :initarg :x :accessor thing-x) 
    (y :initarg :y :accessor thing-y))) 
 → #<STANDARD-CLASS THING 250020173> 
 (defmethod (setf thing-x) :before (new-x (thing thing)) 
-	   (format t "~&Changing X from ~D to ~D in ~S.~%" 
-		   (thing-x thing) new-x thing)) 
+  (format t "~&Changing X from ~D to ~D in ~S.~%" 
+	  (thing-x thing) new-x thing)) 
 (setq thing1 (make-instance ’thing :x 1 :y 2)) → #<THING 43135676> 
 (setq thing2 (make-instance ’thing :x 7 :y 8)) → #<THING 43147374> 
 (with-accessors ((x1 thing-x) (y1 thing-y)) 
@@ -97,11 +96,10 @@ Creates a lexical environment in which the slots specified by *slot-entry* are l
 ▷ Changing X from 1 to 9 in #<THING 43135676>. 
 ▷ Changing X from 7 to (9) in #<THING 43147374>. 
 → ((1 1 2 2 7 7 8 8) 
-     9 
-     (9 9 2 2 7 7 8 8) 
-     (9) 
-     (9 9 2 2 (9) (9) 8 8)) 
-
+   9 
+   (9 9 2 2 7 7 8 8) 
+   (9) 
+   (9 9 2 2 (9) (9) 8 8)) 
 ```
 **Affected By:** 
 

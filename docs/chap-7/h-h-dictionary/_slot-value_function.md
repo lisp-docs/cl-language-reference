@@ -40,7 +40,6 @@ The macro <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> can be used
 
 **Examples:**
 ```lisp
-
 (defclass foo () 
   ((a :accessor foo-a :initarg :a :initform 1) 
    (b :accessor foo-b :initarg :b) 
@@ -57,8 +56,6 @@ The macro <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> can be used
   (slot-value x ’a)) 
 → #<STANDARD-METHOD FOO-METHOD (FOO) 42720573> 
 (foo-method foo1) → UNO 
-
-
 
 
 ```

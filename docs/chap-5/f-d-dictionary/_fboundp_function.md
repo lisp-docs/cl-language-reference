@@ -40,7 +40,6 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (fboundp ’car) → true 
 (fboundp ’nth-value) → false 
 (fboundp ’with-open-file) → true 
@@ -59,7 +58,6 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 (fboundp ’my-function) → false 
 (flet ((my-function (x) x)) 
   (fboundp ’my-function)) → false 
-
 ```
 **Exceptional Situations:** 
 

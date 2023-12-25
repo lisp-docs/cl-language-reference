@@ -148,13 +148,9 @@ The meanings and defaults for the keyword arguments to <ClLinks styled={true} te
 
 **Examples:**
 ```lisp
-
 (prin1-to-string "abc") → "\"abc\"" 
 
-
-
 (princ-to-string "abc") → "abc" 
-
 ```
 **Affected By:** 
 

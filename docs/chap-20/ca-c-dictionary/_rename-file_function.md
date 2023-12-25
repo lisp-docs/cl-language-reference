@@ -68,7 +68,6 @@ If the *filespec designator* is an open <ClLinks styled={true} term={"stream"}><
 
 **Examples:**
 ```lisp
-
 ;; An example involving logical pathnames. 
 (with-open-file (stream "sys:chemistry;lead.text" 
 			:direction :output :if-exists :error) 
@@ -79,7 +78,6 @@ If the *filespec designator* is an open <ClLinks styled={true} term={"stream"}><
 → #P"SYS:CHEMISTRY;GOLD.TEXT.NEWEST", 
 #P"Q:>sys>chem>lead.text.1", 
 #P"Q:>sys>chem>gold.text.1" 
-
 ```
 **Exceptional Situations:** 
 

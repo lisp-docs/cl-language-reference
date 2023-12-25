@@ -40,7 +40,6 @@ If *weight* is greater than or equal to <ClLinks styled={true} term={"radix"}><i
 
 **Examples:**
 ```lisp
-
 (digit-char 0) → #\0 
 (digit-char 10 11) → #\A 
 (digit-char 10 10) → false 
@@ -49,7 +48,6 @@ If *weight* is greater than or equal to <ClLinks styled={true} term={"radix"}><i
 (digit-char 12 16) → #\C ;not #\c 
 (digit-char 6 2) → false 
 (digit-char 1 2) → #\1 
-
 ```
 **See Also:** 
 

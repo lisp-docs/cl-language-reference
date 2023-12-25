@@ -36,10 +36,8 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (streamp \*terminal-io\*) → true 
 (streamp 1) → false 
-
 ```
 **Notes:** 
 

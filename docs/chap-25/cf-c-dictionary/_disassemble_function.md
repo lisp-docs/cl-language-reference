@@ -36,12 +36,10 @@ If the *fn designator* is a *function name*, the <ClLinks styled={true} term={"f
 
 **Examples:**
 ```lisp
-
 (defun f (a) (1+ a)) → F 
 (eq (symbol-function ’f) 
     (progn (disassemble ’f) 
 	   (symbol-function ’f))) → true 
-
 ```
 **Affected By:** 
 

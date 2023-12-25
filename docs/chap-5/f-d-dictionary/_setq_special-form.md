@@ -56,7 +56,6 @@ If any *var* refers to a <ClLinks styled={true} term={"binding"}><i>binding</i><
 
 **Examples:**
 ```lisp
-
 ;; A simple use of SETQ to establish values for variables. 
 (setq a 1 b 2 c 3) → 3 
 a → 1 
@@ -64,7 +63,6 @@ b → 2
 c → 3 
 ;; Use of SETQ to update values by sequential assignment. 
 Data and Control 
-
 
 (setq a (1+ b) b (1+ a) c (+ a b)) → 7 
 a → 3 
@@ -76,7 +74,6 @@ c → 7
     (setq y (1+ z) z (1+ y)) 
     (list x y z))) 
 → ((21 22 30) 21 22) 
-
 ```
 **Side Effects:** 
 

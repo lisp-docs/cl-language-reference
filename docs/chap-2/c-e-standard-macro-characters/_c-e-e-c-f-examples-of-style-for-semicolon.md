@@ -1,5 +1,4 @@
 ```lisp
-
 ;;;; Math Utilities 
 ;;; FIB computes the the Fibonacci function in the traditional 
 ;;; recursive way. 
@@ -16,6 +15,5 @@
 	;; Nothing more to do but recurse. 
 	(t (+ (fib (- n 1)) ;The traditional formula 
 	      (fib (- n 2)))))) ; is fib[n-1]+fib[n-2].  
-
 
 ```

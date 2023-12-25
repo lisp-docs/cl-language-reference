@@ -70,7 +70,6 @@ If <ClLinks styled={true} term={"sublis"}><b>sublis</b></ClLinks> succeeds, a ne
 
 **Examples:**
 ```lisp
-
 (sublis ’((x . 100) (z . zprime)) 
 	 ’(plus x (minus g z x p) 4 . x)) 
 → (PLUS 100 (MINUS G ZPRIME 100 P) 4 . 100) 
@@ -98,8 +97,6 @@ tree2 → ("one" ("one" "two") (("one" "Two" "three")))
 	  tree1 
 	  :key #’(lambda (x) (or (atom x) (< (list-length x) 3)))) 
 → ((QUOTE TEMP) (QUOTE TEMP) QUOTE TEMP) 
-
-
 
 
 ```

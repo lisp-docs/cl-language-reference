@@ -63,10 +63,8 @@ All of these <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks>
 → "three (silly) words\* ) " 
 (string-right-trim " (\*)" " ( \*three (silly) words\* ) ") 
 → " ( \*three (silly) words" 
-
  
  
-
 ```
 **Affected By:** 
 
@@ -270,7 +268,6 @@ The comparison has one of the following results:
 
 **Examples:**
 ```lisp
-
 (string= "foo" "foo") → true 
 (string= "foo" "Foo") → false 
 (string= "foo" "bar") → false 
@@ -283,7 +280,6 @@ The comparison has one of the following results:
 (string-lessp "012AAAA789" "01aaab6" :start1 3 :end1 7 
 	      :start2 2 :end2 6) → 6 
 (string-not-equal "AAAA" "aaaA") → false 
-
 ```
 **See Also:** 
 

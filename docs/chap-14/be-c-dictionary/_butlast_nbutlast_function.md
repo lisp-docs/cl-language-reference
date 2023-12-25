@@ -44,7 +44,6 @@
 
 **Examples:**
 ```lisp
-
 (setq lst ’(1 2 3 4 5 6 7 8 9)) → (1 2 3 4 5 6 7 8 9) 
 (butlast lst) → (1 2 3 4 5 6 7 8) 
 (butlast lst 5) → (1 2 3 4) 
@@ -62,11 +61,8 @@ lst → (1 2 3 4 5 6)
 (nbutlast foo) → (A B C) 
 foo → (A B C) 
 
-
-
 (nbutlast (list ’a)) → NIL 
 (nbutlast ’()) → NIL 
-
 ```
 **Exceptional Situations:** 
 

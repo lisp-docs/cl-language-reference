@@ -205,7 +205,6 @@ For <ClLinks styled={true} term={"atan"}><b>atan</b></ClLinks>, the signs of *nu
 (acos #c(0 1)) → #C(1.5707963267948966 -0.8813735870195432) 
 (/ (atan 1 (sqrt 3)) 6) → 0.087266 
 (atan #c(0 2)) → #C(-1.5707964 0.54930615) 
-
 ```
 **Exceptional Situations:** 
 
@@ -269,7 +268,6 @@ The best *long float* approximation to the mathematical constant *π*.
 
 **Examples:**
 ```lisp
-
 ;; In each of the following computations, the precision depends 
 ;; on the implementation. Also, if ‘long float’ is treated by 
 ;; the implementation as equivalent to some other float format 
@@ -280,7 +278,6 @@ pi → 3.141592653589793L0
 (defun sin-of-degrees (degrees) 
   (let ((x (if (floatp degrees) degrees (float degrees pi)))) 
     (sin (\* x (/ (float pi x) 180))))) 
-
 ```
 **Notes:** 
 

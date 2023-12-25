@@ -48,9 +48,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (open-stream-p \*standard-input\*) → true 
-
 ```
 **Affected By:** 
 

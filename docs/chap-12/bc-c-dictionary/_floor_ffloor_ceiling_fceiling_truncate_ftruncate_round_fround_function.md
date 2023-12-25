@@ -152,7 +152,6 @@ The *remainder* is an *integer* if both x and y are *integers*, is a <ClLinks st
 
 **Examples:**
 ```lisp
-
 (floor 3/2) → 1, 1/2 
 (ceiling 3 2) → 2, -1 
 (ffloor 3 2) → 1.0, 1 
@@ -178,7 +177,6 @@ The *remainder* is an *integer* if both x and y are *integers*, is a <ClLinks st
 ▷ -2.5 -3 -2 -2 -2 
 ▷ -2.6 -3 -2 -2 -3 
 → NIL 
-
 ```
 **Notes:** 
 

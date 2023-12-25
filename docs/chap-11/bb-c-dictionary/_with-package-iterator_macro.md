@@ -172,7 +172,6 @@ Any number of invocations of <ClLinks styled={true} term={"with-package-iterator
 
 **Examples:**
 ```lisp
-
 The following function should return **t** on any *package*, and signal an error if the usage of **with-package-iterator** does not agree with the corresponding usage of **do-symbols**. 
 (defun test-package-iterator (package) 
   (unless (packagep package) 
@@ -208,7 +207,6 @@ The following function prints out every *present symbol* (possibly more than onc
        (if more? 
 	   (print symbol) 
 	   (return)))))) 
-
 ```
 **Exceptional Situations:** 
 

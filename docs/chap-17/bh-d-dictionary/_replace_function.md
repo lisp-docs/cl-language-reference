@@ -70,7 +70,6 @@ If *sequence-1* and *sequence-2* are the *same object* and the region being modi
 (setq lst "012345678") → "012345678" 
 (replace lst lst :start1 2 :start2 0) → "010123456" 
 lst → "010123456" 
-
 ```
 **Side Effects:** 
 
@@ -262,7 +261,6 @@ The result of all these functions is a *sequence* of the same <ClLinks styled={t
 
 **Examples:**
 ```lisp
-
 (substitute #\. #\SPACE "0 2 4 6") → "0.2.4.6" 
 (substitute 9 4 ’(1 2 4 1 3 4 5)) → (1 2 9 1 3 9 5) 
 (substitute 9 4 ’(1 2 4 1 3 4 5) :count 1) → (1 2 9 1 3 4 5) 
@@ -281,7 +279,6 @@ some-things → (A CAR B "function was here" C)
 (setq alpha-tester (copy-seq "ab ")) → "ab " 
 (nsubstitute-if-not #\z #’alpha-char-p alpha-tester) → "abz" 
 alpha-tester → "abz" 
-
 ```
 **Side Effects:** 
 

@@ -44,11 +44,9 @@ Regardless of whether an <ClLinks styled={true} term={"implementation"}><i>imple
 
 **Examples:**
 ```lisp
-
 (minusp -1) → true 
 (plusp 0) → false 
 (plusp least-positive-single-float) → true 
-
 ```
 **Exceptional Situations:** 
 

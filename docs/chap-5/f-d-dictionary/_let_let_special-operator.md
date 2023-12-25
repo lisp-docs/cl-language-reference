@@ -188,7 +188,6 @@ The special form <ClLinks styled={true} term={"let"}><b>let</b></ClLinks> has th
 
 **Examples:**
 ```lisp
-
 (setq a ’top) → TOP 
 (defun dummy-function () a) → DUMMY-FUNCTION 
 (let ((a ’inside) (b a)) 
@@ -202,12 +201,10 @@ The code
 (let (x) 
   Data and Control 
 
-
   (declare (integer x)) 
   (setq x (gcd y z)) 
   ...) 
 is incorrect; although x is indeed set before it is used, and is set to a value of the declared type *integer* , nevertheless x initially takes on the value **nil** in violation of the type declaration. 
-
 ```
 **See Also:** 
 

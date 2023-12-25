@@ -48,13 +48,11 @@ For information about the <ClLinks styled={true} term={"evaluation"}><i>evaluati
 
 **Examples:**
 ```lisp
-
 (setq x (list 1 2 3) y ’trash) *!* TRASH 
 (shiftf y x (cdr x) ’(hi there)) *!* TRASH 
 x *!* (2 3) 
 y *!* (1 HI THERE) 
 Data and Control 
-
 
 (setq x (list ’a ’b ’c)) *!* (A B C) 
 (shiftf (cadr x) ’z) *!* B 
@@ -65,7 +63,6 @@ x *!* (A (C) . Q)
 (setq x (list ’a ’b ’c ’d)) *!* (A B C D) 
 (shiftf (nth (setq n (+ n 1)) x) ’z) *!* B 
 x *!* (A Z C D) 
-
 ```
 **Aected By:** 
 

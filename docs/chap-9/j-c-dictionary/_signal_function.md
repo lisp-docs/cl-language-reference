@@ -28,7 +28,6 @@
 
 **Examples:**
 ```lisp
-
 (defun handle-division-conditions (condition) 
   (format t "Considering condition for division condition handling~%") 
   (when (and (typep condition ’arithmetic-error) 
@@ -56,7 +55,6 @@ NIL
 Considering condition for division condition handling 
 Considering condition for arithmetic condition handling 
 Back to Lisp Toplevel 
-
 ```
 **Side Effects:** 
 

@@ -64,7 +64,6 @@ In addition to <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> defi
 
 **Examples:**
 ```lisp
-
 (defmacro alpha (x y) ‘(beta ,x ,y)) → ALPHA 
 (defmacro beta (x y) ‘(gamma ,x ,y)) → BETA 
 (defmacro delta (x y) ‘(gamma ,x ,y)) → EPSILON 
@@ -72,7 +71,6 @@ In addition to <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> defi
   (multiple-value-bind (expansion expanded-p) 
       (macroexpand form env) 
     ‘(values ’,expansion ’,expanded-p))) → EXPAND  
-
 **macroexpand, macroexpand-1** 
 (defmacro expand-1 (form &environment env) 
   (multiple-value-bind (expansion expanded-p) 
@@ -114,7 +112,6 @@ In addition to <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> defi
 (symbol-macrolet ((b (alpha x y)) 
 		  (a b)) 
   (expand a)) → (GAMMA X Y), *true*  
-
 ;; Examples of shadowing behavior 
 (flet ((beta (x y) (+ x y))) 
   (expand (alpha a b))) → (BETA A B), *true* 
@@ -125,7 +122,6 @@ In addition to <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> defi
   (symbol-macrolet ((a (first x))) 
     (let ((a x)) 
       (expand a)))) → A, *false* 
-
 ```
 **Affected By:** 
 

@@ -32,11 +32,9 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (special-operator-p ’if) *! true* 
 (special-operator-p ’car) *! false* 
 (special-operator-p ’one) *! false* 
-
 ```
 **Exceptional Situations:** 
 

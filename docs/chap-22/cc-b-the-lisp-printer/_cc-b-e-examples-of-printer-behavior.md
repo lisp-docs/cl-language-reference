@@ -1,5 +1,4 @@
 ```lisp
-
 (let ((\*print-escape\* t)) (fresh-line) (write #\a)) 
 ▷ #\a 
 → #\a 
@@ -26,8 +25,6 @@
     (write #\a))) 
 ▷ #\a #\a a #\a 
 
-
-
 ▷ #\a #\a a a 
 → NIL 
 (progn (fresh-line) (write ’(let ((a 1) (b 2)) (+ a b)))) 
@@ -48,8 +45,6 @@
   (write ’write :stream s) 
   (prin1 ’prin1 s)) 
 → "WRITEPRIN1" 
-
-
 
 
 ```

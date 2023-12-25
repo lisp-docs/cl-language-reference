@@ -36,14 +36,12 @@ Advises the compiler that each <ClLinks styled={true} term={"name"}><i>name</i><
 
 **Examples:**
 ```lisp
-
 (declaim (declaration author target-language target-machine)) 
 (declaim (target-language ada)) 
 (declaim (target-machine IBM-650)) 
 (defun strangep (x) 
   (declare (author "Harry Tweeker")) 
   (member x ’(strange weird odd peculiar))) 
-
 ```
 **See Also:** 
 

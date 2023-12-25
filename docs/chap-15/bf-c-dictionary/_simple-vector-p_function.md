@@ -32,11 +32,9 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (simple-vector-p (make-array 6)) → true 
 (simple-vector-p "aaaaaa") → false 
 (simple-vector-p (make-array 6 :fill-pointer t)) → false 
-
 ```
 **See Also:** 
 

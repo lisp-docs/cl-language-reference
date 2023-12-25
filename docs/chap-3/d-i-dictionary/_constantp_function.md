@@ -60,13 +60,11 @@ If an <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLi
 
 **Examples:**
 ```lisp
-
 (constantp 1) *! true* 
 (constantp ’temp) *! false* 
 (constantp ”temp)) *! true* 
 (defconstant this-is-a-constant ’never-changing) *!* THIS-IS-A-CONSTANT 
 Evaluation and 
-
 
 **constantp** 
 (constantp ’this-is-a-constant) *! true* 
@@ -81,7 +79,6 @@ Evaluation and
 (constantp ’(values this-is-a-constant)) *! implementation-dependent* 
 (constantp ’(values ’x ’y)) *! implementation-dependent* 
 (constantp ’(let ((a ’(a b c))) (+ (length a) 6))) *! implementation-dependent* 
-
 ```
 **Aected By:** 
 

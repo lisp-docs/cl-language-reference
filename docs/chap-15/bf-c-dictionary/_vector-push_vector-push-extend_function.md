@@ -56,11 +56,9 @@
 
 **Examples:**
 ```lisp
-
 (vector-push (setq fable (list ’fable)) 
 	     (setq fa (make-array 8 
 				  :fill-pointer 2 
-
 				  
 				  
 				  :initial-element ’first-one))) → 2 
@@ -77,7 +75,6 @@
 (array-total-size aa) → at least 5 
 (vector-push-extend #\Z aa 4) → 5 
 (array-total-size aa) → 9 ;(or more) 
-
 ```
 **Affected By:** 
 

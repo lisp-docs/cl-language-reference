@@ -32,13 +32,10 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (simple-string-p "aaaaaa") → true 
 (simple-string-p (make-array 6 
 			     :element-type ’character 
 			     :fill-pointer t)) → false 
-
-
 
 
 ```

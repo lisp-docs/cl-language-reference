@@ -1268,7 +1268,6 @@ If a <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> <ClLin
 
 **Examples:**
 ```lisp
-
 An example of a structure definition follows: 
 (defstruct ship 
   x-position 
@@ -1283,7 +1282,6 @@ This declares that every ship is an *object* with five named components. The eva
 4\. A function called make-ship is defined that, when invoked, creates a data structure with five components, suitable for use with the *access* functions. Thus executing 
 (setq ship2 (make-ship)) 
 sets ship2 to a newly created ship *object*. One can supply the initial values of any desired 
-
 
 **defstruct** 
 component in the call to make-ship by using keyword arguments in this way: 
@@ -1323,8 +1321,6 @@ This alters the x-position of ship2 to be 100. This works because **defstruct** 
 (= (town-population town1) (town-population town2)) → true 
 					;since elevation is a read-only slot, its value can be set only 
 
-
-
 **defstruct** 
 					;when the structure is created 
 (setq town3 (make-town :area 0 :watertowers 3 :elevation 1200)) → #S(TOWN...) 
@@ -1351,8 +1347,8 @@ This alters the x-position of ship2 to be 100. This works because **defstruct** 
 ;;; the vehicle structure 
 ;;; 
 (defstruct vehicle name year (diesel t :read-only t)) → VEHICLE (defstruct (truck (:include vehicle (year 79))) 
-								    load-limit 
-								    (axles 6)) → TRUCK 
+								  load-limit 
+								  (axles 6)) → TRUCK 
 (setq x (make-truck :name ’mac :diesel t :load-limit 17)) 
 → #S(TRUCK...) 
 					;vehicle readers work on trucks 
@@ -1366,7 +1362,6 @@ This alters the x-position of ship2 to be 100. This works because **defstruct** 
   (pickup-year x) → 79 
 ;;; 
 ;;; Example 4 
-
   
   
 ;;; use of BOA constructors 
@@ -1386,7 +1381,6 @@ This alters the x-position of ship2 to be 100. This works because **defstruct** 
 					;a, b, and c set, and the rest are collected into d 
   (setq x (create-dfs-boa 1 2 3 4 5 6)) → #(DFS-BOA...) 
   (dfs-boa-d x) → (4 5 6) 
-
 ```
 **Exceptional Situations:** 
 

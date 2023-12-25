@@ -84,7 +84,6 @@ The sorting operation can be destructive in all cases. In the case of a <ClLinks
 
 **Examples:**
 ```lisp
-
 (setq tester (copy-seq "lkjashd")) → "lkjashd" 
 (sort tester #’char-lessp) → "adhjkls" 
 (setq tester (list ’(1 2 3) ’(4 5 6) ’(7 8 9))) → ((1 2 3) (4 5 6) (7 8 9)) 
@@ -104,31 +103,29 @@ The sorting operation can be destructive in all cases. In the case of a <ClLinks
 		    (list (list "Sandra" "Loosemore") "Compiler"))) 
       #’string-lessp :key #’cadar) 
 → #((("Kathy" "Chapman") "Editorial") 
-      (("Dick" "Gabriel") "Objects") 
-      (("Gregor" "Kiczales") "Objects") 
-      (("Sandra" "Loosemore") "Compiler") 
-      (("Larry" "Masinter") "Cleanup") 
-      (("David" "Moon") "Objects") 
-      (("Kent" "Pitman") "Conditions") 
-      (("Dick" "Waters") "Iteration") 
-      (("JonL" "White") "Iteration")) 
+    (("Dick" "Gabriel") "Objects") 
+    (("Gregor" "Kiczales") "Objects") 
+    (("Sandra" "Loosemore") "Compiler") 
+    (("Larry" "Masinter") "Cleanup") 
+    (("David" "Moon") "Objects") 
+    (("Kent" "Pitman") "Conditions") 
+    (("Dick" "Waters") "Iteration") 
+    (("JonL" "White") "Iteration")) 
 ;; Note that individual alphabetical order within ‘committees’ 
 ;; is preserved. 
 (setq committee-data 
       (stable-sort committee-data #’string-lessp :key #’cadr)) 
 → #((("Larry" "Masinter") "Cleanup") 
-      (("Sandra" "Loosemore") "Compiler") 
-      (("Kent" "Pitman") "Conditions") 
-      (("Kathy" "Chapman") "Editorial") 
-
-      
-      
-      (("Dick" "Waters") "Iteration") 
-      (("JonL" "White") "Iteration") 
-      (("Dick" "Gabriel") "Objects") 
-      (("Gregor" "Kiczales") "Objects") 
-      (("David" "Moon") "Objects")) 
-
+    (("Sandra" "Loosemore") "Compiler") 
+    (("Kent" "Pitman") "Conditions") 
+    (("Kathy" "Chapman") "Editorial") 
+    
+    
+    (("Dick" "Waters") "Iteration") 
+    (("JonL" "White") "Iteration") 
+    (("Dick" "Gabriel") "Objects") 
+    (("Gregor" "Kiczales") "Objects") 
+    (("David" "Moon") "Objects")) 
 ```
 **Exceptional Situations:** 
 

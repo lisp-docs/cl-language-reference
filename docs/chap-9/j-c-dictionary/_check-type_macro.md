@@ -64,7 +64,6 @@ The first time <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> is *
 
 **Examples:**
 ```lisp
-
 (setq aardvarks ’(sam harry fred)) 
 → (SAM HARRY FRED) 
 (check-type aardvarks (array \* (3))) 
@@ -87,8 +86,6 @@ aardvarks
 ▷ To continue, type :CONTINUE followed by an option number: 
 ▷ 1: Specify a value to use instead. 
 ▷ 2: Top level. 
-
-
 
 **check-type** 
 ▷ Debug> :CONTINUE 2 
@@ -114,7 +111,6 @@ aardvarks
 ▷ Type a form to be evaluated and used instead: 5 
 → (defun add5 (x) (+ x 5)) 
 Control is transferred to a handler. 
-
 ```
 **Side Effects:** 
 

@@ -48,11 +48,9 @@ Creates a new <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> w
 
 **Examples:**
 ```lisp
-
 (make-package ’temporary :nicknames ’("TEMP" "temp")) → #<PACKAGE "TEMPORARY"> (make-package "OWNER" :use ’("temp")) → #<PACKAGE "OWNER"> 
 (package-used-by-list ’temp) → (#<PACKAGE "OWNER">) 
 (package-use-list ’owner) → (#<PACKAGE "TEMPORARY">) 
-
 ```
 **Affected By:** 
 

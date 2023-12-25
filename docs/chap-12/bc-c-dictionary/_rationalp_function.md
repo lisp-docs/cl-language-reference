@@ -32,11 +32,9 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (rationalp 12) → true 
 (rationalp 6/5) → true 
 (rationalp 1.212) → false 
-
 ```
 **See Also:** 
 

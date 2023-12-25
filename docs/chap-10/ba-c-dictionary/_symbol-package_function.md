@@ -32,7 +32,6 @@ Returns the *home package* of <ClLinks styled={true} term={"symbol"}><i>symbol</
 
 **Examples:**
 ```lisp
-
 (in-package "CL-USER") → #<PACKAGE "COMMON-LISP-USER"> 
 (symbol-package ’car) → #<PACKAGE "COMMON-LISP"> 
 (symbol-package ’bus) → #<PACKAGE "COMMON-LISP-USER"> 
@@ -56,7 +55,6 @@ Returns the *home package* of <ClLinks styled={true} term={"symbol"}><i>symbol</
 (unintern s3 ’pk1) → T 
 (symbol-package s3) → NIL 
 (eq s3 ’pk2::sample3) → T 
-
 ```
 **Affected By:** 
 

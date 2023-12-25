@@ -32,9 +32,7 @@ Returns an *external file format designator* for the <ClLinks styled={true} term
 
 **Examples:**
 ```lisp
-
 (with-open-file (stream "test" :direction :output) 
-
   
   
   (stream-external-format stream)) 
@@ -43,7 +41,6 @@ Returns an *external file format designator* for the <ClLinks styled={true} term
 <i><sup>or</sup>→</i> (:ASCII :SAIL) 
 <i><sup>or</sup>→</i> ACME::PROPRIETARY-FILE-FORMAT-17 
 <i><sup>or</sup>→</i> #<FILE-FORMAT :ISO646-1983 2343673> 
-
 ```
 **See Also:** 
 

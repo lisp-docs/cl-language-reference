@@ -26,13 +26,11 @@ Whatever *package object* is currently the <ClLinks styled={true} term={"value"}
 
 **Examples:**
 ```lisp
-
 (in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
 \*package\* → #<PACKAGE "COMMON-LISP-USER"> 
 (make-package "SAMPLE-PACKAGE" :use ’("COMMON-LISP")) 
 → #<PACKAGE "SAMPLE-PACKAGE"> 
 (list 
-
  
  
  (symbol-package 
@@ -47,7 +45,6 @@ Whatever *package object* is currently the <ClLinks styled={true} term={"value"}
 (eq ’foo (let ((\*package\* (find-package ’sample-package))) 
 	   (intern "FOO"))) 
 → false 
-
 ```
 **Affected By:** 
 

@@ -65,7 +65,6 @@
 
 **Examples:**
 ```lisp
-
 (defun make-person (first-name last-name) 
   (let ((person (gensym "PERSON"))) 
     (setf (get person ’first-name) first-name) 
@@ -94,7 +93,6 @@
 (setf (age \*john\*) 25) → 25 
 (age \*john\*) → 25 
 (age \*john\* 20) → 25 
-
 ```
 **Exceptional Situations:** 
 

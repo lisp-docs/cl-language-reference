@@ -32,12 +32,10 @@ Returns a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> tha
 
 **Examples:**
 ```lisp
-
 (funcall (complement #’zerop) 1) → true 
 (funcall (complement #’characterp) #\A) → false 
 (funcall (complement #’member) ’a ’(a b c)) → false 
 (funcall (complement #’member) ’d ’(a b c)) → true 
-
 ```
 **See Also:** 
 

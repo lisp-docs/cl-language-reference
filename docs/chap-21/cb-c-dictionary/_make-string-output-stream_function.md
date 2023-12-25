@@ -48,14 +48,12 @@ The *element-type* names the <ClLinks styled={true} term={"type"}><i>type</i></C
 
 **Examples:**
 ```lisp
-
 (let ((s (make-string-output-stream))) 
   (write-string "testing... " s) 
   (prin1 1234 s) 
   (get-output-stream-string s)) 
 → "testing... 1234" 
 None.. 
-
 ```
 **See Also:** 
 

@@ -48,7 +48,6 @@ The **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks
 
 **Examples:**
 ```lisp
-
 \*break-on-signals\* → NIL 
 (ignore-errors (error ’simple-error :format-control "Fooey!")) 
 → NIL, #<SIMPLE-ERROR 32207172> 
@@ -76,7 +75,6 @@ The **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks
 ▷ 1: Top level. 
 ▷ Debug> :CONTINUE 1 
 ▷ Top level. 
-
 ```
 **See Also:** 
 

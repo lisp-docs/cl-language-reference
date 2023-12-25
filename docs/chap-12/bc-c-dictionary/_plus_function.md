@@ -17,12 +17,11 @@ Returns the sum of <ClLinks styled={true} term={"number"}><i>numbers</i></ClLink
 **Examples:**
 
 ```lisp
- 
+
 (+) → 0 
 (+ 1) → 1 
 (+ 31/100 69/100) → 1 
 (+ 1/5 0.8) → 1.0 
-
 ```
 
 **Exceptional Situations:**

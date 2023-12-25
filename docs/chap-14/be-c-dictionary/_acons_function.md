@@ -40,14 +40,12 @@ Creates a *fresh cons*, the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLi
 
 **Examples:**
 ```lisp
-
 (setq alist ’()) → NIL 
 (acons 1 "one" alist) → ((1 . "one")) 
 alist → NIL 
 (setq alist (acons 1 "one" (acons 2 "two" alist))) → ((1 . "one") (2 . "two")) (assoc 1 alist) → (1 . "one") 
 (setq alist (acons 1 "uno" alist)) → ((1 . "uno") (1 . "one") (2 . "two")) 
 (assoc 1 alist) → (1 . "uno") 
-
 ```
 **See Also:** 
 

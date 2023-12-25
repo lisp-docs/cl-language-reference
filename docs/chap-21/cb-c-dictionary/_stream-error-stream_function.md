@@ -32,16 +32,13 @@ Returns the offending <ClLinks styled={true} term={"stream"}><i>stream</i></ClLi
 
 **Examples:**
 ```lisp
-
 (with-input-from-string (s "(FOO") 
   (handler-case (read s) 
-
     
     
     (end-of-file (c) 
       (format nil "~&End of file on ~S." (stream-error-stream c))))) 
 "End of file on #<String Stream>." 
-
 ```
 **See Also:** 
 

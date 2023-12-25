@@ -1,5 +1,4 @@
 ```lisp
-
 This example determines a *class precedence list* for the class pie. The following *classes* are defined: (defclass pie (apple cinnamon) ()) 
 (defclass apple (fruit) ()) 
 (defclass cinnamon (spice) ()) 
@@ -11,7 +10,6 @@ The set <i>S<sub>pie</sub></i> = <i>\&#123;</i>pie, apple, cinnamon, fruit, spic
 The class pie is not preceded by anything, so it comes first; the result so far is (pie). Remove pie from *S* and pairs mentioning pie from *R* to get *S* = *\&#123;*apple, cinnamon, fruit, spice, food, standard-object, t*\&#125;* and *R* = *\&#123;*(apple, cinnamon), (apple, fruit), (cinnamon, spice), (fruit, food), (spice, food), (food, standard-object), (standard-object, t)*\&#125;*. 
 The class apple is not preceded by anything, so it is next; the result is (pie apple). Removing apple and the relevant pairs results in *S* = *\&#123;*cinnamon, fruit, spice, food, standard-object, t*\&#125;* and *R* = *\&#123;*(cinnamon, spice), (fruit, food), (spice, food), (food, standard-object), (standard-object, t)*\&#125;*. 
 The classes cinnamon and fruit are not preceded by anything, so the one with a direct *subclass* rightmost in the *class precedence list* computed so far goes next. The class apple is a direct *subclass*  
-
 of fruit, and the class pie is a direct *subclass* of cinnamon. Because apple appears to the right of pie in the *class precedence list*, fruit goes next, and the result so far is (pie apple fruit). *S* = *\&#123;*cinnamon, spice, food, standard-object, t*\&#125;*; *R* = *\&#123;*(cinnamon, spice), (spice, food), (food, standard-object), (standard-object, t)*\&#125;*. 
 The class cinnamon is next, giving the result so far as (pie apple fruit cinnamon). At this point *S* = *\&#123;*spice, food, standard-object, t*\&#125;*; *R* = *\&#123;*(spice, food), (food, standard-object), (standard-object, t)*\&#125;*. 
 The classes spice, food, **standard-object**, and **t** are added in that order, and the *class precedence list* is (pie apple fruit cinnamon spice food standard-object t). 
@@ -26,5 +24,4 @@ The following might appear to be a conflicting set of definitions:
 The *class precedence list* for pie is (pie apple cinnamon standard-object t). 
 The *class precedence list* for pastry is (pastry cinnamon apple standard-object t). 
 It is not a problem for apple to precede cinnamon in the ordering of the *superclasses* of pie but not in the ordering for pastry. However, it is not possible to build a new *class* that has both pie and pastry as *superclasses*. 
-
 ```

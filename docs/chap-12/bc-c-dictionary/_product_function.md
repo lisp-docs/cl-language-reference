@@ -17,11 +17,9 @@ Returns the product of <ClLinks styled={true} term={"number"}><i>numbers</i></Cl
 **Examples:**
 
 ```lisp
-
 (\*) → 1 
 (\* 3 5) → 15 
 (\* 1.0 #c(22 33) 55/98) → #C(12.346938775510203 18.520408163265305) 
-
 ```
 
 **Exceptional Situations:**

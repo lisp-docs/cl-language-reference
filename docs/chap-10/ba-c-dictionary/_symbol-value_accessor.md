@@ -36,7 +36,6 @@
 
 **Examples:**
 ```lisp
-
 (setf (symbol-value ’a) 1) → 1 
 (symbol-value ’a) → 1 
 ;; SYMBOL-VALUE cannot see lexical variables. 
@@ -65,11 +64,8 @@ a → 3
 (symbol-value ’nil) → NIL 
 (symbol-value ’()) → NIL 
 
-
-
 ;; The precision of this next one is *implementation-dependent*. 
 (symbol-value ’pi) → 3.141592653589793d0 
-
 ```
 **Affected By:** 
 

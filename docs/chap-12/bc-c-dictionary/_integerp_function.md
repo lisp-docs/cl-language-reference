@@ -32,12 +32,10 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (integerp 1) → true 
 (integerp (expt 2 130)) → true 
 (integerp 6/5) → false 
 (integerp nil) → false 
-
 ```
 **Notes:** 
 

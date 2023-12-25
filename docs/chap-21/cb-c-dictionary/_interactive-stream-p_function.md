@@ -32,7 +32,6 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (when (> measured limit) 
   (let ((error (round (\* (- measured limit) 100) 
 		      limit))) 
@@ -41,7 +40,6 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 Is it safe to proceed? " error) 
 		(< error 15)) ;15% is acceptable 
       (error "The frammis is out of tolerance by ~D%." error)))) 
-
 ```
 **Exceptional Situations:** 
 

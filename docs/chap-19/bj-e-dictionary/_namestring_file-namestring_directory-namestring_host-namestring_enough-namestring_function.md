@@ -96,7 +96,6 @@ It is not necessarily possible to construct a valid <ClLinks styled={true} term=
 
 **Examples:**
 ```lisp
-
 (namestring "getty") 
 → "getty" 
 (setq q (make-pathname :host "kathy" 
@@ -104,14 +103,12 @@ It is not necessarily possible to construct a valid <ClLinks styled={true} term=
 		       (pathname-directory \*default-pathname-defaults\*) 
 		       :name "getty")) 
 → #S(PATHNAME :HOST "kathy" :DEVICE NIL :DIRECTORY *directory-name* 
-		:NAME "getty" :TYPE NIL :VERSION NIL) 
+	      :NAME "getty" :TYPE NIL :VERSION NIL) 
 (file-namestring q) → "getty" 
 (directory-namestring q) → directory-name 
 (host-namestring q) → "kathy" 
 ;;;Using Unix syntax and the wildcard conventions used by the 
 ;;;particular version of Unix on which this example was created: 
-
-
 
 (namestring 
  (translate-pathname "/usr/dmr/hacks/frob.l" 
@@ -136,7 +133,6 @@ It is not necessarily possible to construct a valid <ClLinks styled={true} term=
 		     "U:/usr/d\*/hacks/fr\*.l" 
 		     "V:SYS$DISK:[D\*.BACKUP.HACKS]BACKUP-\*.\*")) 
 → "V:SYS$DISK:[DMR.BACKUP.HACKS]BACKUP-OB.LSP" 
-
 ```
 **See Also:** 
 

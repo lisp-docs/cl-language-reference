@@ -13,11 +13,9 @@ Each of these <ClLinks styled={true} term={"constant"}><i>constants</i></ClLinks
 **Examples:**
 
 ```lisp
-
 (boole boole-ior 1 16) → 17 
 (boole boole-and -2 5) → 4 
 (boole boole-eqv 17 15) → -31 
-
 ```
 
 **See Also:**

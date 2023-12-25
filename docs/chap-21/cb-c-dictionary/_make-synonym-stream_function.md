@@ -32,7 +32,6 @@ Returns a *synonym stream* whose *synonym stream symbol* is <ClLinks styled={tru
 
 **Examples:**
 ```lisp
-
 (setq a-stream (make-string-input-stream "a-stream") 
       b-stream (make-string-input-stream "b-stream")) 
 → #<String Input Stream> 
@@ -44,7 +43,6 @@ Returns a *synonym stream* whose *synonym stream symbol* is <ClLinks styled={tru
 (setq c-stream b-stream) 
 → #<String Input Stream> 
 (read s-stream) → B-STREAM 
-
 ```
 **Exceptional Situations:** 
 

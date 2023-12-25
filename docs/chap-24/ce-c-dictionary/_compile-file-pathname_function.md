@@ -48,9 +48,7 @@ If an implementation supports additional keyword arguments to <ClLinks styled={t
 
 **Examples:**
 ```lisp
-
 See **logical-pathname-translations**. 
-
 ```
 **Exceptional Situations:** 
 

@@ -36,11 +36,9 @@ If *datum* is a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLi
 
 **Examples:**
 ```lisp
-
 (defun real-sqrt (n) 
   (when (minusp n) 
     (setq n (- n)) 
-
     
     
     **cerror** 
@@ -82,8 +80,6 @@ If *datum* is a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLi
    (setq n (read)) 
    (fresh-line))) 
 
-
-
 **cerror** 
 (assure-large-number 10000) 
 → 10000 
@@ -124,8 +120,6 @@ If *datum* is a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLi
 ▷ Restart options: 
 ▷ 1: Enter a number. 
 
-
-
 ▷ 2: Top level. 
 ▷ Debug> :continue 1 
 ▷ Type a large number: 88 
@@ -138,7 +132,6 @@ If *datum* is a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLi
 ▷ Debug> :continue 1 
 ▷ Type a large number: 259 
 → 259 
-
 ```
 **Affected By:** 
 

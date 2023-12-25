@@ -56,7 +56,6 @@ If an implementation supports positive and negative zeros as <ClLinks styled={tr
 
 **Examples:**
 ```lisp
-
 (eql ’a ’b) → false 
 (eql ’a ’a) → true 
 (eql 3 3) → true 
@@ -65,8 +64,6 @@ If an implementation supports positive and negative zeros as <ClLinks styled={tr
 (eql #c(3 -4) #c(3 -4)) → true 
 (eql #c(3 -4.0) #c(3 -4)) → false 
 (eql (cons ’a ’b) (cons ’a ’c)) → false 
-
-
 
 (eql (cons ’a ’b) (cons ’a ’b)) → false 
 (eql ’(a . b) ’(a . b)) 
@@ -81,7 +78,6 @@ If an implementation supports positive and negative zeros as <ClLinks styled={tr
 (eql "Foo" (copy-seq "Foo")) → false 
 (eql "FOO" "foo") → false 
 Normally (eql 1.0s0 1.0d0) is false, under the assumption that 1.0s0 and 1.0d0 are of distinct data types. However, implementations that do not provide four distinct floating-point formats are permitted to “collapse” the four formats into some smaller number of them; in such an implementation (eql 1.0s0 1.0d0) might be true. 
-
 ```
 **See Also:** 
 

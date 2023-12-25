@@ -58,14 +58,12 @@ A *bidirectional composite stream* that receives its input from an associated *i
 
 **Examples:**
 ```lisp
-
 (input-stream-p \*standard-input\*) → true 
 (input-stream-p \*terminal-io\*) → true 
 (input-stream-p (make-string-output-stream)) → false 
 (output-stream-p \*standard-output\*) → true 
 (output-stream-p \*terminal-io\*) → true 
 (output-stream-p (make-string-input-stream "jr")) → false 
-
 ```
 **Exceptional Situations:** 
 

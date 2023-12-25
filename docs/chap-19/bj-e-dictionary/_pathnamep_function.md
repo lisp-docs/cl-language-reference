@@ -42,7 +42,6 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 (setq q (logical-pathname "SYS:SITE;FOO.SYSTEM")) 
 → #P"SYS:SITE;FOO.SYSTEM" 
 (pathnamep q) → true 
-
 ```
 **Notes:** 
 
@@ -150,8 +149,6 @@ If <ClLinks styled={true} term={"case"}><i>case</i></ClLinks> is supplied, it is
 ```lisp
 
 
-
-
 **pathname-host, pathname-device,** *. . .* 
 (setq q (make-pathname :host "KATHY" 
 		       :directory "CHAPMAN" 
@@ -196,8 +193,6 @@ If <ClLinks styled={true} term={"case"}><i>case</i></ClLinks> is supplied, it is
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/BAR/../Mum/baz")) 
 → (:ABSOLUTE "foo" "BAR" :UP "Mum") 
 
-
-
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/BAR/../Mum/baz") :case :common) 
 → (:ABSOLUTE "FOO" "bar" :UP "Mum") 
 (PATHNAME-DIRECTORY (PARSE-NAMESTRING "/foo/\*/bar/baz.l")) 
@@ -212,7 +207,6 @@ If <ClLinks styled={true} term={"case"}><i>case</i></ClLinks> is supplied, it is
 (pathname-directory (parse-namestring ">foo>\*>bar>baz.lisp") :case :common) 
 → (:ABSOLUTE "FOO" :WILD "BAR") 
 (pathname-device (parse-namestring ">foo>baz.lisp")) → :UNSPECIFIC 
-
 ```
 **Affected By:** 
 

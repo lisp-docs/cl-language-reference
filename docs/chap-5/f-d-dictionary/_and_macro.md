@@ -39,7 +39,6 @@ The above expression prints Foo! if element n of a-simple-vector is the symbol f
 (and (decf temp1) (decf temp2) (eq temp3 ’nil) (decf temp3)) → NIL 
 (and (eql temp1 temp2) (eql temp2 temp3)) → true 
 (and) → T 
-
 ```
 
 **See Also:**

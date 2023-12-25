@@ -84,7 +84,6 @@ The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={
 
 **Examples:**
 ```lisp
-
 (setq foo (make-condition ’simple-condition 
 			   :format-control "Hi ~S" 
 			   :format-arguments ’(ho))) 
@@ -92,7 +91,6 @@ The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={
 (apply #’format nil (simple-condition-format-control foo) 
 	 (simple-condition-format-arguments foo)) 
 → "Hi HO" 
-
 ```
 **See Also:** 
 

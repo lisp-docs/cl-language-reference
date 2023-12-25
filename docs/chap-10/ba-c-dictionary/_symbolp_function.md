@@ -32,14 +32,12 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 **Examples:**
 ```lisp
-
 (symbolp ’elephant) → true 
 (symbolp 12) → false 
 (symbolp nil) → true 
 (symbolp ’()) → true 
 (symbolp :test) → true 
 (symbolp "hello") → false 
-
 ```
 **See Also:** 
 

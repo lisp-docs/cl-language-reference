@@ -116,7 +116,6 @@ The *external-format* specifies the *external file format* to be used when openi
 
 **Examples:**
 ```lisp
-
 					;Establish a data file... 
 (with-open-file (str "data.in" :direction :output :if-exists :error) 
   (print 1 str) (print ’(setq a 888) str) t) 
@@ -135,7 +134,6 @@ a → 888
 → true 
 System 
 
-
 					;––[Begin file SETUP]–– 
 (in-package "MY-STUFF") 
 (defmacro compile-truename () ‘’,\*compile-file-truename\*) 
@@ -147,7 +145,6 @@ System
 					;––[End of file SETUP]–– 
 (load "SETUP") 
 (load-my-system) 
-
 ```
 **Affected By:** 
 

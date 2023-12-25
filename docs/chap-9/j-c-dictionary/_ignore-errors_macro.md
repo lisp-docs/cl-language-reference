@@ -38,7 +38,6 @@ If a *normal return* from the <ClLinks styled={true} term={"form"}><i>forms</i><
 
 **Examples:**
 ```lisp
-
 (defun load-init-file (program) 
   (let ((win nil)) 
     (ignore-errors ;if this fails, don’t enter debugger 
@@ -48,12 +47,9 @@ If a *normal return* from the <ClLinks styled={true} term={"form"}><i>forms</i><
     (unless win (format t "~&Init file failed to load.~%")) 
     win)) 
 
-
-
 (load-init-file "no-such-program") 
 ▷ Init file failed to load. 
 NIL 
-
 ```
 **See Also:** 
 

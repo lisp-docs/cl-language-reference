@@ -48,7 +48,6 @@ Calls the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> ass
 
 **Examples:**
 ```lisp
-
 (defun add3 (x) (check-type x number) (+ x 3)) 
 (foo ’seven) 
 ▷ Error: The value SEVEN was not of type NUMBER. 
@@ -57,7 +56,6 @@ Calls the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> ass
 ▷ 2: Return to Lisp Toplevel. 
 ▷ Debug> (invoke-restart ’store-value 7) 
 → 10 
-
 ```
 **Side Effects:** 
 

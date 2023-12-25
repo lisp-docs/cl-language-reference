@@ -72,7 +72,6 @@ The value returned by <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks>
 
 **Examples:**
 ```lisp
-
 (defun foo (x) 
   (let ((result (\* x 2))) 
     (if (not (typep result ’fixnum)) 
@@ -93,11 +92,8 @@ The value returned by <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks>
 ▷ 2: Abort to Lisp Toplevel. 
 ▷ Debug> :continue 1 
 
-
-
 ▷ Warning: You’re using very big numbers. 
 → 4294967294 
-
 ```
 **Side Effects:** 
 

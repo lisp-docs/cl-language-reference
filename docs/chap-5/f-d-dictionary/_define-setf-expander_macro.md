@@ -96,7 +96,6 @@ If a <ClLinks styled={true} term={"define-setf-expander"}><b>define-setf-expande
 
 **Examples:**
 ```lisp
-
 (defun lastguy (x) (car (last x))) *!* LASTGUY 
 (define-setf-expander lastguy (x &environment env) 
   "Set the last element in a list to the given value." 
@@ -139,7 +138,6 @@ c *!* (1 2 3 (4 5 LASTGUY-SYMBOL))
 		 ,store) ;Storing form. 
 	      ‘(ldb ,btemp ,access-form) ;Accessing form. 
 	      )))) 
-
 ```
 **See Also:** 
 

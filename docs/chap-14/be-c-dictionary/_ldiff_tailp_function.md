@@ -64,7 +64,6 @@ If <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is the <ClLink
 
 **Examples:**
 ```lisp
-
 (let ((lists ’#((a b c) (a b c . d)))) 
   (dotimes (i (length lists)) () 
 	   (let ((list (aref lists i))) 
@@ -95,7 +94,6 @@ If <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is the <ClLink
 ▷ object=D T (A B C) 
 ▷ object=X NIL (A B C . D) 
 → NIL 
-
 ```
 **Side Effects:** 
 

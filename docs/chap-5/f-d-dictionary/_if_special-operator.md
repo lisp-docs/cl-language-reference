@@ -56,7 +56,6 @@ First *test-form* is evaluated. If the result is <ClLinks styled={true} term={"t
 
 **Examples:**
 ```lisp
-
 (if t 1) → 1 
 (if nil 1 2) → 2 
 (defun test () 
@@ -69,7 +68,6 @@ First *test-form* is evaluated. If the result is <ClLinks styled={true} term={"t
 ▷ TRUE 1 
 ▷ TRUE (A B C) 
 → NIL 
-
 ```
 **See Also:** 
 

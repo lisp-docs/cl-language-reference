@@ -44,10 +44,8 @@ Returns a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> w
 
 **Examples:**
 ```lisp
-
 (code-char 65.) → #\A ;in an implementation using ASCII codes 
 (code-char (char-code #\Space)) → #\Space ;in any implementation 
-
 ```
 **Affected By:** 
 

@@ -60,7 +60,6 @@ Note that implementations should not use #*n*# notation when the *Lisp reader* w
 
 **Examples:**
 ```lisp
-
 (let ((a (list 1 2 3))) 
   (setf (cdddr a) a) 
   (let ((\*print-circle\* t)) 
@@ -68,7 +67,6 @@ Note that implementations should not use #*n*# notation when the *Lisp reader* w
     :done)) 
 ▷ #1=(1 2 3 . #1#) 
 → :DONE 
-
 ```
 **See Also:** 
 

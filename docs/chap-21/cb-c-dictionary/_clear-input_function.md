@@ -30,7 +30,6 @@ If <ClLinks styled={true} term={"clear-input"}><b>clear-input</b></ClLinks> does
 
 **Examples:**
 ```lisp
-
 ;; The exact I/O behavior of this example might vary from implementation 
 ;; to implementation depending on the kind of interactive buffering that 
 ;; occurs. (The call to SLEEP here is intended to help even out the 
@@ -58,11 +57,8 @@ If <ClLinks styled={true} term={"clear-input"}><b>clear-input</b></ClLinks> does
 ▷ > 10 
 ▷ > 20 ; Some implementations won’t echo typeahead here. 
 
-
-
 ▷ » 30 
 → (10 30) 
-
 ```
 **Side Effects:** 
 

@@ -56,12 +56,10 @@ If *non-terminating-p* is <ClLinks styled={true} term={"true"}><i>true</i></ClLi
 
 **Examples:**
 ```lisp
-
 (get-macro-character #\\&#123;) → NIL, *false* 
 		     (make-dispatch-macro-character #\\&#123;) → T 
 						    (not (get-macro-character #\\&#123;)) → false 
 									      The *readtable* is altered. 
-
 ```
 **See Also:** 
 

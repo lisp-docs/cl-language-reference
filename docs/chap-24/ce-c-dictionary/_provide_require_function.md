@@ -48,7 +48,6 @@ Both functions use <ClLinks styled={true} term={"string"}><b>string=</b></ClLink
 
 **Examples:**
 ```lisp
-
 ;;; This illustrates a nonportable use of REQUIRE, because it 
 ;;; depends on the implementation-dependent file-loading mechanism. 
 (require "CALCULUS") 
@@ -62,11 +61,9 @@ Both functions use <ClLinks styled={true} term={"string"}><b>string=</b></ClLink
 ;;; table lookup function to determine the pathname, which again 
 System 
 
-
 **provide, require** 
 ;;; must be initialized elsewhere. 
 (require "CALCULUS" \*calculus-module-pathname\*) 
-
 ```
 **Side Effects:** 
 

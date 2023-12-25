@@ -64,7 +64,6 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <ClLinks styled={tru
 
 **Examples:**
 ```lisp
-
 ;; This code assumes an implementation in which a newline is not 
 ;; required to terminate input from the console. 
 (defun test-it () 
@@ -84,7 +83,6 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <ClLinks styled={tru
 (test-it) 
 ▷ a← 
 → (#\a #\Newline NIL) 
-
 ```
 **Affected By:** 
 

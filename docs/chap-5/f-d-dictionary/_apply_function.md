@@ -42,7 +42,6 @@ When the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> rece
 
 **Examples:**
 ```lisp
-
 (setq f ’+) → + 
 (apply f ’(1 2)) → 3 
 (setq f #’-) → #<FUNCTION -> 
@@ -61,10 +60,7 @@ When the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> rece
     (if double (concatenate (type-of v) v v) v))) 
 (foo 4 :initial-contents ’(a b c d) :double t) 
 
-
-
 → #(A B C D A B C D) 
-
 ```
 **See Also:** 
 

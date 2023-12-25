@@ -112,7 +112,6 @@ COMPUTE-POWER-OF-2
 ▷ 2: Return to Lisp Toplevel 
 ▷ Debug> :continue 1 
 → SOMETHING-BIG 
-
 ```
 **See Also:** 
 
@@ -253,7 +252,6 @@ The **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks
 (cerror "Try floating it." "~D is not a float." x) 
 (float x)) 
 (t x)))) → 3.0 
-
 ```
 **See Also:** 
 
@@ -291,7 +289,6 @@ This <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is establi
 (defun quiet-warning-handler (c) 
 (when \*all-quiet\* 
 (let ((r (find-restart ’muffle-warning c))) 
-
  
  
 (when r 
@@ -317,7 +314,6 @@ This <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is establi
 ▷ Situation #3. 
 ▷ Situation #1. 
 → NIL 
-
 ```
 **See Also:** 
 
@@ -354,7 +350,6 @@ The **store-value** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLi
 (when (typep c ’type-error) 
 (let ((r (find-restart ’store-value c))) 
 (handler-case (let ((v (coerce (type-error-datum c) 
-
  
  
 (type-error-expected-type c)))) 
@@ -364,7 +359,6 @@ The **store-value** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLi
 (handler-bind ((type-error #’type-error-auto-coerce)) 
 (check-type x float) 
 x)) → 3.0 
-
 ```
 **See Also:** 
 
@@ -476,7 +470,6 @@ When <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is <Cl
 
 **Examples:**
 ```lisp
-
 ;;; Example of the ABORT retart 
 (defmacro abort-on-error (&body forms) 
   ‘(handler-bind ((error #’abort)) 
@@ -499,8 +492,6 @@ When <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is <Cl
 ▷ Debug> (continue) 
 ▷ Return sqrt(9) instead. 
 → 3 
-
-
 
 **abort, continue, muffle-warning, store-value, use-value** 
 (handler-bind ((error #’(lambda (c) (continue)))) 
@@ -543,7 +534,6 @@ When <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is <Cl
     (use-value (value) 
       :report "Specify a value to use this time." 
       value) 
-
     
     
     **abort, continue, muffle-warning, store-value, use-value** 
@@ -581,7 +571,6 @@ When <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is <Cl
 → ADD-SYMBOLS-WITH-DEFAULT 
 (setq x 1 y 2) → 2 
 (add-symbols-with-default 3 ’x ’y ’z) → 6 
-
 ```
 **Side Effects:** 
 

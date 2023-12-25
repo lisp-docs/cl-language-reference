@@ -34,7 +34,6 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if its <ClLin
 
 **Examples:**
 ```lisp
-
 (eq ’a ’b) → false 
 (eq ’a ’a) → true 
 (eq 3 3) 
@@ -44,8 +43,6 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if its <ClLin
 (eq 3.0 3.0) 
 → true 
 <i><sup>or</sup>→ false</i> 
-
-
 
 **eq** 
 (eq #c(3 -4) #c(3 -4)) 
@@ -72,7 +69,6 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if its <ClLin
 (let ((x 5)) (eq x x)) 
 → true 
 <i><sup>or</sup>→ false</i> 
-
 ```
 **See Also:** 
 

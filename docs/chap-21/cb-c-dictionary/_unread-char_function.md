@@ -40,7 +40,6 @@ Invoking <ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks> or
 
 **Examples:**
 ```lisp
-
 (with-input-from-string (is "0123") 
   (dotimes (i 6) 
     (let ((c (read-char is))) 
@@ -49,8 +48,6 @@ Invoking <ClLinks styled={true} term={"peek-char"}><b>peek-char</b></ClLinks> or
 ▷ 2 #\1 
 ▷ 4 #\2 
 → NIL 
-
-
 
 
 ```

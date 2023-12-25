@@ -32,13 +32,11 @@ Returns a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> contain
 
 **Examples:**
 ```lisp
-
 (setq a-stream (make-string-output-stream) 
       a-string "abcdefghijklm") → "abcdefghijklm" 
 (write-string a-string a-stream) → "abcdefghijklm" 
 (get-output-stream-string a-stream) → "abcdefghijklm" 
 (get-output-stream-string a-stream) → "" 
-
 ```
 **Side Effects:** 
 
