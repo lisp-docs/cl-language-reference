@@ -78,7 +78,7 @@ and with serial number ~D.~%"
 (make-instance ’federation-starship 
 		:captain "Rachel Garrett" 
 		:serial-number "NCC-1701-C") 
-*→* #<FEDERATION-STARSHIP 26312465> 
+→ #<FEDERATION-STARSHIP 26312465> 
 (describe \*) 
 ▷ #<FEDERATION-STARSHIP 26312465> is a spaceship of type FEDERATION-STARSHIP, ▷ with Rachel Garrett at the helm and with serial number NCC-1701-C. 
 *→ hno valuesi* 

@@ -143,20 +143,20 @@ Note that in contrast with <DictionaryLink styled={true} term={"ccase"}><b>ccase
 		((t) ’tslot) 
 		(otherwise ’others)))) 
 ▷ CLAUSE1 CLAUSE1 CLAUSE2 CLAUSE4 CLAUSE4 NILSLOT TSLOT OTHERS 
-*→* NIL 
+→ NIL 
 (defun add-em (x) (apply #’+ (mapcar #’decode x))) 
-*→* ADD-EM 
+→ ADD-EM 
 (defun decode (x) 
   (ccase x 
     ((i uno) 1) 
     ((ii dos) 2) 
     ((iii tres) 3) 
     ((iv cuatro) 4))) 
-*→* DECODE 
+→ DECODE 
 Data and Control 
 
 
-(add-em ’(uno iii)) *→* 4 
+(add-em ’(uno iii)) → 4 
 (add-em ’(uno iiii)) 
 ▷ Error: The value of X, IIII, is not I, UNO, II, DOS, III, 
 ▷ TRES, IV, or CUATRO. 
@@ -164,7 +164,7 @@ Data and Control
 ▷ 2: Return to Lisp Toplevel. 
 ▷ Debug> :CONTINUE 1 
 ▷ Value to evaluate and use for X: ’IV 
-*→* 5 
+→ 5 
 
 ```
 **Side Effects:** 

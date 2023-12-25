@@ -33,13 +33,13 @@
 Any <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> that have been *imported* into <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> continue to be <GlossaryTerm styled={true} term={"present"}><i>present</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. **Examples:**
 ```lisp
 
-(in-package "COMMON-LISP-USER") *→* #<PACKAGE "COMMON-LISP-USER"> 
-(export (intern "SHOES" (make-package ’temp)) ’temp) *→* T 
-(find-symbol "SHOES") *→* NIL, NIL 
-(use-package ’temp) *→* T 
-(find-symbol "SHOES") *→* SHOES, :INHERITED 
-(find (find-package ’temp) (package-use-list ’common-lisp-user)) *→* #<PACKAGE "TEMP"> (unuse-package ’temp) *→* T 
-(find-symbol "SHOES") *→* NIL, NIL 
+(in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
+(export (intern "SHOES" (make-package ’temp)) ’temp) → T 
+(find-symbol "SHOES") → NIL, NIL 
+(use-package ’temp) → T 
+(find-symbol "SHOES") → SHOES, :INHERITED 
+(find (find-package ’temp) (package-use-list ’common-lisp-user)) → #<PACKAGE "TEMP"> (unuse-package ’temp) → T 
+(find-symbol "SHOES") → NIL, NIL 
 
 ```
 **Side Effects:** 

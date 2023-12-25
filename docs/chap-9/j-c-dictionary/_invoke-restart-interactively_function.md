@@ -53,7 +53,7 @@ Once the arguments have been determined, <DictionaryLink styled={true} term={"in
 ▷ 2: Return to Lisp Toplevel. 
 ▷ Debug> (invoke-restart-interactively ’store-value) 
 ▷ Type a form to evaluate and use: 7 
-*→* 10 
+→ 10 
 
 ```
 **Side Effects:** 

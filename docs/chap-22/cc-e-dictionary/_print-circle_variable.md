@@ -67,7 +67,7 @@ Note that implementations should not use #*n*# notation when the *Lisp reader* w
     (write a) 
     :done)) 
 ▷ #1=(1 2 3 . #1#) 
-*→* :DONE 
+→ :DONE 
 
 ```
 **See Also:** 

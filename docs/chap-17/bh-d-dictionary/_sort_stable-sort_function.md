@@ -85,13 +85,13 @@ The sorting operation can be destructive in all cases. In the case of a <Glossar
 **Examples:**
 ```lisp
 
-(setq tester (copy-seq "lkjashd")) *→* "lkjashd" 
-(sort tester #’char-lessp) *→* "adhjkls" 
-(setq tester (list ’(1 2 3) ’(4 5 6) ’(7 8 9))) *→* ((1 2 3) (4 5 6) (7 8 9)) 
-(sort tester #’> :key #’car) *→* ((7 8 9) (4 5 6) (1 2 3)) 
-(setq tester (list 1 2 3 4 5 6 7 8 9 0)) *→* (1 2 3 4 5 6 7 8 9 0) 
+(setq tester (copy-seq "lkjashd")) → "lkjashd" 
+(sort tester #’char-lessp) → "adhjkls" 
+(setq tester (list ’(1 2 3) ’(4 5 6) ’(7 8 9))) → ((1 2 3) (4 5 6) (7 8 9)) 
+(sort tester #’> :key #’car) → ((7 8 9) (4 5 6) (1 2 3)) 
+(setq tester (list 1 2 3 4 5 6 7 8 9 0)) → (1 2 3 4 5 6 7 8 9 0) 
 (stable-sort tester #’(lambda (x y) (and (oddp x) (evenp y)))) 
-*→* (1 3 5 7 9 2 4 6 8 0) 
+→ (1 3 5 7 9 2 4 6 8 0) 
 (sort (setq committee-data 
 	    (vector (list (list "JonL" "White") "Iteration") 
 		    (list (list "Dick" "Waters") "Iteration") 
@@ -103,7 +103,7 @@ The sorting operation can be destructive in all cases. In the case of a <Glossar
 		    (list (list "Larry" "Masinter") "Cleanup") 
 		    (list (list "Sandra" "Loosemore") "Compiler"))) 
       #’string-lessp :key #’cadar) 
-*→* #((("Kathy" "Chapman") "Editorial") 
+→ #((("Kathy" "Chapman") "Editorial") 
       (("Dick" "Gabriel") "Objects") 
       (("Gregor" "Kiczales") "Objects") 
       (("Sandra" "Loosemore") "Compiler") 
@@ -116,7 +116,7 @@ The sorting operation can be destructive in all cases. In the case of a <Glossar
 ;; is preserved. 
 (setq committee-data 
       (stable-sort committee-data #’string-lessp :key #’cadr)) 
-*→* #((("Larry" "Masinter") "Cleanup") 
+→ #((("Larry" "Masinter") "Cleanup") 
       (("Sandra" "Loosemore") "Compiler") 
       (("Kent" "Pitman") "Conditions") 
       (("Kathy" "Chapman") "Editorial") 

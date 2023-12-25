@@ -74,9 +74,9 @@ If the *filespec designator* is an open <GlossaryTerm styled={true} term={"strea
 			:direction :output :if-exists :error) 
   (princ "eureka" stream) 
   (values (pathname stream) (truename stream))) 
-*→* #P"SYS:CHEMISTRY;LEAD.TEXT.NEWEST", #P"Q:>sys>chem>lead.text.1" 
+→ #P"SYS:CHEMISTRY;LEAD.TEXT.NEWEST", #P"Q:>sys>chem>lead.text.1" 
 (rename-file "sys:chemistry;lead.text" "gold.text") 
-*→* #P"SYS:CHEMISTRY;GOLD.TEXT.NEWEST", 
+→ #P"SYS:CHEMISTRY;GOLD.TEXT.NEWEST", 
 #P"Q:>sys>chem>lead.text.1", 
 #P"Q:>sys>chem>gold.text.1" 
 

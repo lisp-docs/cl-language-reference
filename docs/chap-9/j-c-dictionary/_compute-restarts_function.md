@@ -78,7 +78,7 @@ Implementations are permitted, but not required, to return *distinct lists* from
 ▷ 4: TWO 
 ▷ 5: Return to Lisp Toplevel. 
 ▷ Option: 4 
-*→* II 
+→ II 
 ;; Note that in addition to user-defined restart points, COMPUTE-RESTARTS 
 ;; also returns information about any system-supplied restarts, such as 
 ;; the "Return to Lisp Toplevel" restart offered above. 

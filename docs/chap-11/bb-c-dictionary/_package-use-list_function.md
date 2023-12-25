@@ -45,9 +45,9 @@ Returns a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> o
 **Examples:**
 ```lisp
 
-(package-use-list (make-package ’temp)) *→* (#<PACKAGE "COMMON-LISP">) 
-(use-package ’common-lisp-user ’temp) *→* T 
-(package-use-list ’temp) *→* (#<PACKAGE "COMMON-LISP"> #<PACKAGE "COMMON-LISP-USER">) 
+(package-use-list (make-package ’temp)) → (#<PACKAGE "COMMON-LISP">) 
+(use-package ’common-lisp-user ’temp) → T 
+(package-use-list ’temp) → (#<PACKAGE "COMMON-LISP"> #<PACKAGE "COMMON-LISP-USER">) 
 
 ```
 **Exceptional Situations:** 

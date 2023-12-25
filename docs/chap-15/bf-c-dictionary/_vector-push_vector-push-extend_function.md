@@ -63,20 +63,20 @@
 
 				  
 				  
-				  :initial-element ’first-one))) *→* 2 
-(fill-pointer fa) *→* 3 
+				  :initial-element ’first-one))) → 2 
+(fill-pointer fa) → 3 
 (eq (aref fa 2) fable) *→ true* 
 (vector-push-extend #\X 
 		    (setq aa 
 			  (make-array 5 
 				      :element-type ’character 
 				      :adjustable t 
-				      :fill-pointer 3))) *→* 3 
-(fill-pointer aa) *→* 4 
-(vector-push-extend #\Y aa 4) *→* 4 
-(array-total-size aa) *→* at least 5 
-(vector-push-extend #\Z aa 4) *→* 5 
-(array-total-size aa) *→* 9 ;(or more) 
+				      :fill-pointer 3))) → 3 
+(fill-pointer aa) → 4 
+(vector-push-extend #\Y aa 4) → 4 
+(array-total-size aa) → at least 5 
+(vector-push-extend #\Z aa 4) → 5 
+(array-total-size aa) → 9 ;(or more) 
 
 ```
 **Affected By:** 

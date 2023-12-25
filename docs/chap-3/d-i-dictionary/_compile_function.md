@@ -77,13 +77,13 @@ The *tertiary value*, *failure-p*, is <GlossaryTerm styled={true} term={"false"}
 **Examples:**
 ```lisp
 
-(defun foo () "bar") *→* FOO 
+(defun foo () "bar") → FOO 
 (compiled-function-p #’foo) *→ implementation-dependent* 
-(compile ’foo) *→* FOO 
+(compile ’foo) → FOO 
 (compiled-function-p #’foo) *→ true* 
 (setf (symbol-function ’foo) 
-      (compile nil ’(lambda () "replaced"))) *→* #<Compiled-Function> 
-(foo) *→* "replaced" 
+      (compile nil ’(lambda () "replaced"))) → #<Compiled-Function> 
+(foo) → "replaced" 
 
 ```
 **Affected By:** 

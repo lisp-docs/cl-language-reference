@@ -98,16 +98,16 @@ It is not necessarily possible to construct a valid <GlossaryTerm styled={true} 
 ```lisp
 
 (namestring "getty") 
-*→* "getty" 
+→ "getty" 
 (setq q (make-pathname :host "kathy" 
 		       :directory 
 		       (pathname-directory \*default-pathname-defaults\*) 
 		       :name "getty")) 
-*→* #S(PATHNAME :HOST "kathy" :DEVICE NIL :DIRECTORY *directory-name* 
+→ #S(PATHNAME :HOST "kathy" :DEVICE NIL :DIRECTORY *directory-name* 
 		:NAME "getty" :TYPE NIL :VERSION NIL) 
-(file-namestring q) *→* "getty" 
+(file-namestring q) → "getty" 
 (directory-namestring q) *→ directory-name* 
-(host-namestring q) *→* "kathy" 
+(host-namestring q) → "kathy" 
 ;;;Using Unix syntax and the wildcard conventions used by the 
 ;;;particular version of Unix on which this example was created: 
 
@@ -117,12 +117,12 @@ It is not necessarily possible to construct a valid <GlossaryTerm styled={true} 
  (translate-pathname "/usr/dmr/hacks/frob.l" 
 		     "/usr/d\*/hacks/\*.l" 
 		     "/usr/d\*/backup/hacks/backup-\*.\*")) 
-*→* "/usr/dmr/backup/hacks/backup-frob.l" 
+→ "/usr/dmr/backup/hacks/backup-frob.l" 
 (namestring 
  (translate-pathname "/usr/dmr/hacks/frob.l" 
 		     "/usr/d\*/hacks/fr\*.l" 
 		     "/usr/d\*/backup/hacks/backup-\*.\*")) 
-*→* "/usr/dmr/backup/hacks/backup-ob.l" 
+→ "/usr/dmr/backup/hacks/backup-ob.l" 
 ;;;This is similar to the above example but uses two different hosts, 
 ;;;U: which is a Unix and V: which is a VMS. Note the translation 
 ;;;of file type and alphabetic case conventions. 
@@ -130,12 +130,12 @@ It is not necessarily possible to construct a valid <GlossaryTerm styled={true} 
  (translate-pathname "U:/usr/dmr/hacks/frob.l" 
 		     "U:/usr/d\*/hacks/\*.l" 
 		     "V:SYS$DISK:[D\*.BACKUP.HACKS]BACKUP-\*.\*")) 
-*→* "V:SYS$DISK:[DMR.BACKUP.HACKS]BACKUP-FROB.LSP" 
+→ "V:SYS$DISK:[DMR.BACKUP.HACKS]BACKUP-FROB.LSP" 
 (namestring 
  (translate-pathname "U:/usr/dmr/hacks/frob.l" 
 		     "U:/usr/d\*/hacks/fr\*.l" 
 		     "V:SYS$DISK:[D\*.BACKUP.HACKS]BACKUP-\*.\*")) 
-*→* "V:SYS$DISK:[DMR.BACKUP.HACKS]BACKUP-OB.LSP" 
+→ "V:SYS$DISK:[DMR.BACKUP.HACKS]BACKUP-OB.LSP" 
 
 ```
 **See Also:** 

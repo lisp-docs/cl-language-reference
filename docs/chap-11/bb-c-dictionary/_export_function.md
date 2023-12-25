@@ -57,12 +57,12 @@ A name conflict in <DictionaryLink styled={true} term={"export"}><b>export</b></
 **Examples:**
 ```lisp
 
-(make-package ’temp :use nil) *→* #<PACKAGE "TEMP"> 
-(use-package ’temp) *→* T 
-(intern "TEMP-SYM" ’temp) *→* TEMP::TEMP-SYM, NIL 
-(find-symbol "TEMP-SYM") *→* NIL, NIL 
-(export (find-symbol "TEMP-SYM" ’temp) ’temp) *→* T 
-(find-symbol "TEMP-SYM") *→* TEMP-SYM, :INHERITED 
+(make-package ’temp :use nil) → #<PACKAGE "TEMP"> 
+(use-package ’temp) → T 
+(intern "TEMP-SYM" ’temp) → TEMP::TEMP-SYM, NIL 
+(find-symbol "TEMP-SYM") → NIL, NIL 
+(export (find-symbol "TEMP-SYM" ’temp) ’temp) → T 
+(find-symbol "TEMP-SYM") → TEMP-SYM, :INHERITED 
 
 ```
 **Side Effects:** 

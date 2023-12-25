@@ -64,14 +64,14 @@ When **go** is executed, the call to **print** is executed first, and then the t
 (defun dummy-function (x) 
   (setq state ’running) 
   (unless (numberp x) (throw ’abort ’not-a-number)) 
-  (setq state (1+ x))) *→* DUMMY-FUNCTION 
-(catch ’abort (dummy-function 1)) *→* 2 
-state *→* 2 
-(catch ’abort (dummy-function ’trash)) *→* NOT-A-NUMBER 
-state *→* RUNNING 
+  (setq state (1+ x))) → DUMMY-FUNCTION 
+(catch ’abort (dummy-function 1)) → 2 
+state → 2 
+(catch ’abort (dummy-function ’trash)) → NOT-A-NUMBER 
+state → RUNNING 
 (catch ’abort (unwind-protect (dummy-function ’trash) 
-		(setq state ’aborted))) *→* NOT-A-NUMBER 
-state *→* ABORTED 
+		(setq state ’aborted))) → NOT-A-NUMBER 
+state → ABORTED 
 The following code is not correct: 
 (unwind-protect 
      (progn (incf \*access-count\*) 

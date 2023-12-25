@@ -53,17 +53,17 @@ If it is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, t
 **Examples:**
 ```lisp
 
-(setq \*print-pretty\* ’nil) *→* NIL 
+(setq \*print-pretty\* ’nil) → NIL 
 (progn (write ’(let ((a 1) (b 2) (c 3)) (+ a b c))) nil) 
 ▷ (LET ((A 1) (B 2) (C 3)) (+ A B C)) 
-*→* NIL 
+→ NIL 
 (let ((\*print-pretty\* t)) 
   (progn (write ’(let ((a 1) (b 2) (c 3)) (+ a b c))) nil)) 
 ▷ (LET ((A 1) 
 	▷ (B 2) 
 	▷ (C 3)) 
     ▷ (+ A B C)) 
-*→* NIL 
+→ NIL 
 ;; Note that the first two expressions printed by this next form 
 ;; differ from the second two only in whether escape characters are printed. ;; In all four cases, extra whitespace is inserted by the pretty printer. 
 (flet ((test (x) 
@@ -81,7 +81,7 @@ If it is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, t
       ▷ (LIST a b ’C #’D)) 
 ▷ #’(LAMBDA () 
       ▷ (LIST a b ’C #’D)) 
-*→* NIL 
+→ NIL 
 
 ```
 **See Also:** 

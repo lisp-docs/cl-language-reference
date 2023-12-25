@@ -94,11 +94,11 @@ The consequences are undefined if an attempt is made to <GlossaryTerm styled={tr
 ```lisp
  
 (setq fstr (make-array ’(0) :element-type ’base-char 
-:fill-pointer 0 :adjustable t)) *→* "" 
+:fill-pointer 0 :adjustable t)) → "" 
 (with-output-to-string (s fstr) 
 (format s "here’s some output") 
 (input-stream-p s)) *→ false* 
-fstr *→* "here’s some output" 
+fstr → "here’s some output" 
 
 ```
 **Side Effects:** 
@@ -214,26 +214,26 @@ The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of **
 
 (with-output-to-string (\*error-output\*) 
   (warn "this string is sent to \*error-output\*")) 
-*→* "Warning: this string is sent to \*error-output\* 
+→ "Warning: this string is sent to \*error-output\* 
 " ;The exact format of this string is *implementation-dependent*. 
 (with-input-from-string (\*standard-input\* "1001") 
-  (+ 990 (read))) *→* 1991 
+  (+ 990 (read))) → 1991 
 (progn (setq out (with-output-to-string (\*standard-output\*) 
 		   (print "print and format t send things to") 
 		   (format t "\*standard-output\* now going to a string"))) 
        :done) 
-*→* :DONE 
+→ :DONE 
 out 
-*→* " 
+→ " 
 \"print and format t send things to\" \*standard-output\* now going to a string" 
 (defun fact (n) (if (< n 2) 1 (\* n (fact (- n 1))))) 
-*→* FACT 
+→ FACT 
 (trace fact) 
-*→* (FACT) 
+→ (FACT) 
 ;; Of course, the format of traced output is implementation-dependent. 
 (with-output-to-string (\*trace-output\*) 
   (fact 3)) 
-*→* " 
+→ " 
 1 Enter FACT 3 
 | 2 Enter FACT 2 
 | 3 Enter FACT 1 

@@ -33,10 +33,10 @@ Returns the number of <GlossaryTerm styled={true} term={"dimension"}><i>dimensio
 **Examples:**
 ```lisp
 
-(array-rank (make-array ’())) *→* 0 
-(array-rank (make-array 4)) *→* 1 
-(array-rank (make-array ’(4))) *→* 1 
-(array-rank (make-array ’(2 3))) *→* 2 
+(array-rank (make-array ’())) → 0 
+(array-rank (make-array 4)) → 1 
+(array-rank (make-array ’(4))) → 1 
+(array-rank (make-array ’(2 3))) → 2 
 
 ```
 **Exceptional Situations:** 

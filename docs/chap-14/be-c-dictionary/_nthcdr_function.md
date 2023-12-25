@@ -45,12 +45,12 @@ Returns the <GlossaryTerm styled={true} term={"tail"}><i>tail</i></GlossaryTerm>
 **Examples:**
 ```lisp
 
-(nthcdr 0 ’()) *→* NIL 
-(nthcdr 3 ’()) *→* NIL 
-(nthcdr 0 ’(a b c)) *→* (A B C) 
-(nthcdr 2 ’(a b c)) *→* (C) 
-(nthcdr 4 ’(a b c)) *→* () 
-(nthcdr 1 ’(0 . 1)) *→* 1 
+(nthcdr 0 ’()) → NIL 
+(nthcdr 3 ’()) → NIL 
+(nthcdr 0 ’(a b c)) → (A B C) 
+(nthcdr 2 ’(a b c)) → (C) 
+(nthcdr 4 ’(a b c)) → () 
+(nthcdr 1 ’(0 . 1)) → 1 
 (locally (declare (optimize (safety 3))) 
   (nthcdr 3 ’(0 . 1))) 
 Error: Attempted to take CDR of 1. 

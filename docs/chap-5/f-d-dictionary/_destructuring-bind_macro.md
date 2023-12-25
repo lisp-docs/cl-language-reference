@@ -52,7 +52,7 @@ The *lambda-list* supports destructuring as described in Section 3.4.5 (Destruct
 (defun iota (n) (loop for i from 1 to n collect i)) ;helper 
 (destructuring-bind ((a &optional (b ’bee)) one two three) 
     ‘((alpha) ,@(iota 3)) 
-  (list a b three two one)) *→* (ALPHA BEE 3 2 1) 
+  (list a b three two one)) → (ALPHA BEE 3 2 1) 
 Data and Control 
 
 

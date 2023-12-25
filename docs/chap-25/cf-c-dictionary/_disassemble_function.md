@@ -37,7 +37,7 @@ If the *fn designator* is a *function name*, the <GlossaryTerm styled={true} ter
 **Examples:**
 ```lisp
 
-(defun f (a) (1+ a)) *→* F 
+(defun f (a) (1+ a)) → F 
 (eq (symbol-function ’f) 
     (progn (disassemble ’f) 
 	   (symbol-function ’f))) *→ true* 

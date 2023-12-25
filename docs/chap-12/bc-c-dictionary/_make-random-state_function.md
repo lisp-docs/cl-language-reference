@@ -49,7 +49,7 @@ If *state* is a *random state object*, the *new-state* is a <GlossaryTerm styled
 	     (loop for i from 1 to 10 collect (random 100 rs2)) 
 	     (loop for i from 1 to 10 collect (random 100 rs3)) 
 	     (loop for i from 1 to 10 collect (random 100 rs4)))) 
-*→* ((29 25 72 57 55 68 24 35 54 65) 
+→ ((29 25 72 57 55 68 24 35 54 65) 
      (29 25 72 57 55 68 24 35 54 65) 
      (93 85 53 99 58 62 2 23 23 59) 
      (93 85 53 99 58 62 2 23 23 59) 

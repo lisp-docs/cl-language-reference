@@ -410,7 +410,7 @@ Note that no matter what is supplied for :conc-name, slot keywords that match th
 
 
 
-(defstruct (door (:conc-name dr-)) knob-color width material) *→* DOOR 
+(defstruct (door (:conc-name dr-)) knob-color width material) → DOOR 
 
 
 
@@ -418,19 +418,19 @@ Note that no matter what is supplied for :conc-name, slot keywords that match th
 
 
 
-*→* #S(DOOR :KNOB-COLOR RED :WIDTH 5.0 :MATERIAL NIL) 
+→ #S(DOOR :KNOB-COLOR RED :WIDTH 5.0 :MATERIAL NIL) 
 
 
 
-(dr-width my-door) *→* 5.0 
+(dr-width my-door) → 5.0 
 
 
 
-(setf (dr-width my-door) 43.7) *→* 43.7 
+(setf (dr-width my-door) 43.7) → 43.7 
 
 
 
-(dr-width my-door) *→* 43.7 
+(dr-width my-door) → 43.7 
 
 
 
@@ -578,15 +578,15 @@ defined by the person structure. The following examples illustrate the use of as
 
 
 
-(person-name x) *→* BUZZ 
+(person-name x) → BUZZ 
 
 
 
-(astro-name x) *→* BUZZ 
+(astro-name x) → BUZZ 
 
 
 
-(astro-favorite-beverage x) *→* TANG 
+(astro-favorite-beverage x) → TANG 
 
 
 
@@ -682,7 +682,7 @@ operand-1
 
 
 
-operand-2) *→* BINOP 
+operand-2) → BINOP 
 
 
 
@@ -698,7 +698,7 @@ operand-2) *→* BINOP
 
 
 
-commutative associative identity) *→* ANNOTATED-BINOP 
+commutative associative identity) → ANNOTATED-BINOP 
 
 
 
@@ -726,7 +726,7 @@ commutative associative identity) *→* ANNOTATED-BINOP
 
 
 
-*→* (NIL NIL BINOP \* X 5 NIL NIL NIL T T 1) 
+→ (NIL NIL BINOP \* X 5 NIL NIL NIL T T 1) 
 
 
 
@@ -758,7 +758,7 @@ operand-1
 
 
 
-operand-2) *→* BINOP 
+operand-2) → BINOP 
 
 
 
@@ -786,7 +786,7 @@ would result in the following behavior for make-binop:
 
 
 
-*→* (NIL NIL + X 5) 
+→ (NIL NIL + X 5) 
 
 
 
@@ -794,7 +794,7 @@ would result in the following behavior for make-binop:
 
 
 
-*→* (NIL NIL \* NIL 4) 
+→ (NIL NIL \* NIL 4) 
 
 
 
@@ -814,7 +814,7 @@ operand-1
 
 
 
-operand-2) *→* BINOP 
+operand-2) → BINOP 
 
 
 
@@ -822,7 +822,7 @@ would result in the following behavior for make-binop:
 
 
 
-(make-binop :operator ’+ :operand-1 ’x :operand-2 5) *→* (NIL NIL BINOP + X 5) (make-binop :operand-2 4 :operator ’\*) *→* (NIL NIL BINOP \* NIL 4) 
+(make-binop :operator ’+ :operand-1 ’x :operand-2 5) → (NIL NIL BINOP + X 5) (make-binop :operand-2 4 :operator ’\*) → (NIL NIL BINOP \* NIL 4) 
 
 
 
@@ -854,7 +854,7 @@ operand-1
 
 
 
-operand-2) *→* BINOP 
+operand-2) → BINOP 
 
 
 
@@ -866,11 +866,11 @@ The effect of make-binop is simply to construct a list of length three:
 
 
 
-(make-binop :operator ’+ :operand-1 ’x :operand-2 5) *→* (+ X 5) 
+(make-binop :operator ’+ :operand-1 ’x :operand-2 5) → (+ X 5) 
 
 
 
-(make-binop :operand-2 4 :operator ’\*) *→* (\* NIL 4) 
+(make-binop :operand-2 4 :operator ’\*) → (\* NIL 4) 
 
 
 
@@ -922,7 +922,7 @@ operand-1
 
 
 
-operand-2) *→* BINOP 
+operand-2) → BINOP 
 
 
 
@@ -930,11 +930,11 @@ As before, this defines a constructor function make-binop and three selector fun
 
 
 
-(make-binop :operator ’+ :operand-1 ’x :operand-2 5) *→* (BINOP + X 5) 
+(make-binop :operator ’+ :operand-1 ’x :operand-2 5) → (BINOP + X 5) 
 
 
 
-(make-binop :operand-2 4 :operator ’\*) *→* (BINOP \* NIL 4) 
+(make-binop :operand-2 4 :operator ’\*) → (BINOP \* NIL 4) 
 
 
 
@@ -946,7 +946,7 @@ The structure has the same layout as before except that the structure name binop
 
 
 
-(and (consp x) (eq (car x) ’binop))) *→* BINOP-P 
+(and (consp x) (eq (car x) ’binop))) → BINOP-P 
 
 
 
@@ -1306,20 +1306,20 @@ This alters the x-position of ship2 to be 100. This works because **defstruct** 
   (firetrucks 1 :type fixnum) ;an initialized slot 
   population 
   (elevation 5128 :read-only t)) ;a slot that can’t be changed 
-*→* TOWN 
+→ TOWN 
 					;create a town instance 
-(setq town1 (make-town :area 0 :watertowers 0)) *→* #S(TOWN...) 
+(setq town1 (make-town :area 0 :watertowers 0)) → #S(TOWN...) 
 					;town’s predicate recognizes the new instance 
 (town-p town1) *→ true* 
 					;new town’s area is as specified by make-town 
-(town-area town1) *→* 0 
+(town-area town1) → 0 
 					;new town’s elevation has initial value 
-(town-elevation town1) *→* 5128 
+(town-elevation town1) → 5128 
 					;setf recognizes reader function 
-(setf (town-population town1) 99) *→* 99 
-(town-population town1) *→* 99 
+(setf (town-population town1) 99) → 99 
+(town-population town1) → 99 
 					;copier function makes a copy of town1 
-(setq town2 (copy-town town1)) *→* #S(TOWN...) 
+(setq town2 (copy-town town1)) → #S(TOWN...) 
 (= (town-population town1) (town-population town2)) *→ true* 
 					;since elevation is a read-only slot, its value can be set only 
 
@@ -1327,7 +1327,7 @@ This alters the x-position of ship2 to be 100. This works because **defstruct** 
 
 **defstruct** 
 					;when the structure is created 
-(setq town3 (make-town :area 0 :watertowers 3 :elevation 1200)) *→* #S(TOWN...) 
+(setq town3 (make-town :area 0 :watertowers 3 :elevation 1200)) → #S(TOWN...) 
 ;;; 
 ;;; Example 2 
 ;;; define clown structure type 
@@ -1335,13 +1335,13 @@ This alters the x-position of ship2 to be 100. This works because **defstruct** 
 ;;; 
 (defstruct (clown (:conc-name bozo-)) 
   (nose-color ’red) 
-  frizzy-hair-p polkadots) *→* CLOWN 
-(setq funny-clown (make-clown)) *→* #S(CLOWN) 
+  frizzy-hair-p polkadots) → CLOWN 
+(setq funny-clown (make-clown)) → #S(CLOWN) 
 					;use non-default reader name 
-(bozo-nose-color funny-clown) *→* RED 
+(bozo-nose-color funny-clown) → RED 
 (defstruct (klown (:constructor make-up-klown) ;similar def using other (:copier clone-klown) ;customizing keywords 
 		  (:predicate is-a-bozo-p)) 
-  nose-color frizzy-hair-p polkadots) *→* klown 
+  nose-color frizzy-hair-p polkadots) → klown 
 					;custom constructor now exists 
 (fboundp ’make-up-klown) *→ true* 
 ;;; 
@@ -1350,20 +1350,20 @@ This alters the x-position of ship2 to be 100. This works because **defstruct** 
 ;;; then define a truck structure type that includes 
 ;;; the vehicle structure 
 ;;; 
-(defstruct vehicle name year (diesel t :read-only t)) *→* VEHICLE (defstruct (truck (:include vehicle (year 79))) 
+(defstruct vehicle name year (diesel t :read-only t)) → VEHICLE (defstruct (truck (:include vehicle (year 79))) 
 								    load-limit 
-								    (axles 6)) *→* TRUCK 
+								    (axles 6)) → TRUCK 
 (setq x (make-truck :name ’mac :diesel t :load-limit 17)) 
-*→* #S(TRUCK...) 
+→ #S(TRUCK...) 
 					;vehicle readers work on trucks 
 (vehicle-name x) 
-*→* MAC 
+→ MAC 
 					;default taken from :include clause 
 (vehicle-year x) 
-*→* 79 
-(defstruct (pickup (:include truck)) ;pickup type includes truck camper long-bed four-wheel-drive) *→* PICKUP 
-  (setq x (make-pickup :name ’king :long-bed t)) *→* #S(PICKUP...) ;:include default inherited 
-  (pickup-year x) *→* 79 
+→ 79 
+(defstruct (pickup (:include truck)) ;pickup type includes truck camper long-bed four-wheel-drive) → PICKUP 
+  (setq x (make-pickup :name ’king :long-bed t)) → #S(PICKUP...) ;:include default inherited 
+  (pickup-year x) → 79 
 ;;; 
 ;;; Example 4 
 
@@ -1375,17 +1375,17 @@ This alters the x-position of ship2 to be 100. This works because **defstruct** 
 	       (:constructor make-dfs-boa (a b c)) 
 	       (:constructor create-dfs-boa 
 			     (a &optional b (c ’cc) &rest d &aux e (f ’ff)))) 
-    a b c d e f) *→* DFS-BOA 
+    a b c d e f) → DFS-BOA 
 					;a, b, and c set by position, and the rest are uninitialized 
-  (setq x (make-dfs-boa 1 2 3)) *→* #(DFS-BOA...) 
-  (dfs-boa-a x) *→* 1 
+  (setq x (make-dfs-boa 1 2 3)) → #(DFS-BOA...) 
+  (dfs-boa-a x) → 1 
 					;a and b set, c and f defaulted 
-  (setq x (create-dfs-boa 1 2)) *→* #(DFS-BOA...) 
-  (dfs-boa-b x) *→* 2 
+  (setq x (create-dfs-boa 1 2)) → #(DFS-BOA...) 
+  (dfs-boa-b x) → 2 
   (eq (dfs-boa-c x) ’cc) *→ true* 
 					;a, b, and c set, and the rest are collected into d 
-  (setq x (create-dfs-boa 1 2 3 4 5 6)) *→* #(DFS-BOA...) 
-  (dfs-boa-d x) *→* (4 5 6) 
+  (setq x (create-dfs-boa 1 2 3 4 5 6)) → #(DFS-BOA...) 
+  (dfs-boa-d x) → (4 5 6) 
 
 ```
 **Exceptional Situations:** 

@@ -33,11 +33,11 @@
 Returns a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"length"}><i>length</i></GlossaryTerm> given by *size*, each of the <GlossaryTerm styled={true} term={"element"}><i>elements</i></GlossaryTerm> of which is *initial-element*. **Examples:**
 ```lisp
 
-(make-list 5) *→* (NIL NIL NIL NIL NIL) 
-(make-list 3 :initial-element ’rah) *→* (RAH RAH RAH) 
-(make-list 2 :initial-element ’(1 2 3)) *→* ((1 2 3) (1 2 3)) 
-(make-list 0) *→* NIL ;*i.e.*, () 
-(make-list 0 :initial-element ’new-element) *→* NIL 
+(make-list 5) → (NIL NIL NIL NIL NIL) 
+(make-list 3 :initial-element ’rah) → (RAH RAH RAH) 
+(make-list 2 :initial-element ’(1 2 3)) → ((1 2 3) (1 2 3)) 
+(make-list 0) → NIL ;*i.e.*, () 
+(make-list 0 :initial-element ’new-element) → NIL 
 
 ```
 **Exceptional Situations:** 

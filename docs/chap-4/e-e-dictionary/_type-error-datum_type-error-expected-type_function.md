@@ -58,7 +58,7 @@
     (check-type x number) 
     (+ x 3))) 
 (foo ’seven) 
-*→* 10 
+→ 10 
 
 ```
 **See Also:** 

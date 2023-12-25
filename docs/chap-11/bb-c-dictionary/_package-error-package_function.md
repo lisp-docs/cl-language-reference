@@ -32,7 +32,7 @@ Returns a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></Glo
 (package-error-package 
  (make-condition ’package-error 
 		  :package (find-package "COMMON-LISP"))) 
-*→* #<Package "COMMON-LISP"> 
+→ #<Package "COMMON-LISP"> 
 
 ```
 **See Also:** 

@@ -77,31 +77,31 @@ b. the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> retu
 **Examples:**
 ```lisp
 
-(type-of ’a) *→* SYMBOL 
+(type-of ’a) → SYMBOL 
 (type-of ’(1 . 2)) 
-*→* CONS 
+→ CONS 
 <i><sup>or</sup>→</i> (CONS FIXNUM FIXNUM) 
 (type-of #c(0 1)) 
-*→* COMPLEX 
+→ COMPLEX 
 <i><sup>or</sup>→</i> (COMPLEX INTEGER) 
-(defstruct temp-struct x y z) *→* TEMP-STRUCT 
-(type-of (make-temp-struct)) *→* TEMP-STRUCT 
+(defstruct temp-struct x y z) → TEMP-STRUCT 
+(type-of (make-temp-struct)) → TEMP-STRUCT 
 (type-of "abc") 
-*→* STRING 
+→ STRING 
 <i><sup>or</sup>→</i> (STRING 3) 
 (subtypep (type-of "abc") ’string) *→ true*, *true* 
 (type-of (expt 2 40)) 
-*→* BIGNUM 
+→ BIGNUM 
 <i><sup>or</sup>→</i> INTEGER 
 <i><sup>or</sup>→</i> (INTEGER 1099511627776 1099511627776) 
 <i><sup>or</sup>→</i> SYSTEM::TWO-WORD-BIGNUM 
 <i><sup>or</sup>→</i> FIXNUM 
 (subtypep (type-of 112312) ’integer) *→ true*, *true* 
-(defvar \*foo\* (make-array 5 :element-type t)) *→* \*FOO\* 
-(class-name (class-of \*foo\*)) *→* VECTOR  
+(defvar \*foo\* (make-array 5 :element-type t)) → \*FOO\* 
+(class-name (class-of \*foo\*)) → VECTOR  
 
 (type-of \*foo\*) 
-*→* VECTOR 
+→ VECTOR 
 <i><sup>or</sup>→</i> (VECTOR T 5) 
 
 ```

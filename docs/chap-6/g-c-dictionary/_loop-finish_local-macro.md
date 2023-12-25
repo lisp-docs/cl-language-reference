@@ -25,12 +25,12 @@ The <DictionaryLink styled={true} term={"loop-finish"}><b>loop-finish</b></Dicti
 (loop for i in ’(1 2 3 stop-here 4 5 6) 
       when (symbolp i) do (loop-finish) 
       count i) 
-*→* 3 
+→ 3 
 ;; The preceding loop is equivalent to: 
 (loop for i in ’(1 2 3 stop-here 4 5 6) 
       until (symbolp i) 
       count i) 
-*→* 3 
+→ 3 
 ;; While LOOP-FINISH can be used can be used in a variety of 
 ;; situations it is really most needed in a situation where a need 
 ;; to exit is detected at other than the loop’s ‘top level’ 
@@ -55,11 +55,11 @@ The <DictionaryLink styled={true} term={"loop-finish"}><b>loop-finish</b></Dicti
 		 (otherwise (push char word)))) 
 	  finally (add-word word sentence) 
 	  (return (values (nreverse sentence) endpos))))) 
-*→* TOKENIZE-SENTENCE 
+→ TOKENIZE-SENTENCE 
 (tokenize-sentence "this is a sentence. this is another sentence.") 
-*→* ("this" "is" "a" "sentence"), 19 
+→ ("this" "is" "a" "sentence"), 19 
 (tokenize-sentence "this is a sentence") 
-*→* ("this" "is" "a" "sentence"), NIL 
+→ ("this" "is" "a" "sentence"), NIL 
 
 ```
 **Side Effects:** 

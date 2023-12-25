@@ -41,10 +41,10 @@
 **Examples:**
 ```lisp
 
-(encode-universal-time 0 0 0 1 1 1900 0) *→* 0 
-(encode-universal-time 0 0 1 4 7 1976 5) *→* 2414296800 
+(encode-universal-time 0 0 0 1 1 1900 0) → 0 
+(encode-universal-time 0 0 1 4 7 1976 5) → 2414296800 
 ;; The next example assumes Eastern Daylight Time. 
-(encode-universal-time 0 0 1 4 7 1976) *→* 2414293200 
+(encode-universal-time 0 0 1 4 7 1976) → 2414293200 
 
 ```
 **See Also:** 

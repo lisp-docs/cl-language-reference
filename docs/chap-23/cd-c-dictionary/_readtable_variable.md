@@ -33,13 +33,13 @@ The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <D
 
 
 
-(setq zvar 123) *→* 123 
-(set-syntax-from-char #\z #\’ (setq table2 (copy-readtable))) *→* T 
-zvar *→* 123 
-(setq \*readtable\* table2) *→* #<READTABLE> 
-zvar *→* VAR 
-(setq \*readtable\* (copy-readtable nil)) *→* #<READTABLE> 
-zvar *→* 123 
+(setq zvar 123) → 123 
+(set-syntax-from-char #\z #\’ (setq table2 (copy-readtable))) → T 
+zvar → 123 
+(setq \*readtable\* table2) → #<READTABLE> 
+zvar → VAR 
+(setq \*readtable\* (copy-readtable nil)) → #<READTABLE> 
+zvar → 123 
 
 ```
 **Affected By:** 

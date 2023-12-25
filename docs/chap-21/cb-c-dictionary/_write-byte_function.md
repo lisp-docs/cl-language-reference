@@ -36,7 +36,7 @@
 (with-open-file (s "temp-bytes" 
 		   :direction :output 
 		   :element-type ’unsigned-byte) 
-  (write-byte 101 s)) *→* 101 
+  (write-byte 101 s)) → 101 
 
 ```
 **Side Effects:** 

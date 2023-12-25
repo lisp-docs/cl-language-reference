@@ -49,8 +49,8 @@ A macro definition from a character such as " can be copied to another character
 **Examples:**
 ```lisp
 
-(set-syntax-from-char #\7 #\;) *→* T 
-123579 *→* 1235 
+(set-syntax-from-char #\7 #\;) → T 
+123579 → 1235 
 
 ```
 **Side Effects:** 

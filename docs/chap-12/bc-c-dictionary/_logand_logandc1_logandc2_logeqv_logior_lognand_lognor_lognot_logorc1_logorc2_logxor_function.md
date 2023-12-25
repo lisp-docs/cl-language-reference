@@ -123,14 +123,14 @@ Negative *integers* are treated as if they were in two’s-complement notation.
 **Examples:**
 ```lisp
 
-(logior 1 2 4 8) *→* 15 
-(logxor 1 3 7 15) *→* 10 
-(logeqv) *→* -1 
-(logand 16 31) *→* 16 
-(lognot 0) *→* -1 
-(lognot 1) *→* -2 
-(lognot -1) *→* 0 
-(lognot (1+ (lognot 1000))) *→* 999 
+(logior 1 2 4 8) → 15 
+(logxor 1 3 7 15) → 10 
+(logeqv) → -1 
+(logand 16 31) → 16 
+(lognot 0) → -1 
+(lognot 1) → -2 
+(lognot -1) → 0 
+(lognot (1+ (lognot 1000))) → 999 
 ;;; In the following example, m is a mask. For each bit in 
 ;;; the mask that is a 1, the corresponding bits in x and y are 
 ;;; exchanged. For each bit in the mask that is a 0, the 
@@ -156,7 +156,7 @@ Negative *integers* are treated as if they were in two’s-complement notation.
 ▷ m = #o007750 
 ▷ x = #o457426 
 ▷ y = #o312557 
-*→* NIL 
+→ NIL 
 
 ```
 **Exceptional Situations:** 

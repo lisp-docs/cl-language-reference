@@ -48,7 +48,7 @@ Invoking <DictionaryLink styled={true} term={"peek-char"}><b>peek-char</b></Dict
 ▷ 0 #\0 
 ▷ 2 #\1 
 ▷ 4 #\2 
-*→* NIL 
+→ NIL 
 
 
 

@@ -45,8 +45,8 @@ The *element-type* names the <GlossaryTerm styled={true} term={"type"}><i>type</
 **Examples:**
 ```lisp
 
-(make-string 10 :initial-element #\5) *→* "5555555555" 
-(length (make-string 10)) *→* 10 
+(make-string 10 :initial-element #\5) → "5555555555" 
+(length (make-string 10)) → 10 
 
 ```
 **Affected By:** 

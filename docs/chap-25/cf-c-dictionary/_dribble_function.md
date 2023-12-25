@@ -131,7 +131,7 @@ The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <D
 
 (format t "~&Evaluating ~S~%" -) 
 ▷ Evaluating (FORMAT T "~&Evaluating ~S~%" -) 
-*→* NIL 
+→ NIL 
 
 ```
 **Affected By:** 

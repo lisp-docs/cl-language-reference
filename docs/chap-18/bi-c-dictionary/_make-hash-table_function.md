@@ -73,13 +73,13 @@ The <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of *
 **Examples:**
 ```lisp
 
-(setq table (make-hash-table)) *→* #<HASH-TABLE EQL 0/120 46142754> 
-(setf (gethash "one" table) 1) *→* 1 
-(gethash "one" table) *→* NIL, *false* 
-(setq table (make-hash-table :test ’equal)) *→* #<HASH-TABLE EQUAL 0/139 46145547> (setf (gethash "one" table) 1) *→* 1 
-(gethash "one" table) *→* 1, T 
+(setq table (make-hash-table)) → #<HASH-TABLE EQL 0/120 46142754> 
+(setf (gethash "one" table) 1) → 1 
+(gethash "one" table) → NIL, *false* 
+(setq table (make-hash-table :test ’equal)) → #<HASH-TABLE EQUAL 0/139 46145547> (setf (gethash "one" table) 1) → 1 
+(gethash "one" table) → 1, T 
 (make-hash-table :rehash-size 1.5 :rehash-threshold 0.7) 
-*→* #<HASH-TABLE EQL 0/120 46156620> 
+→ #<HASH-TABLE EQL 0/120 46156620> 
 
 ```
 **See Also:** 

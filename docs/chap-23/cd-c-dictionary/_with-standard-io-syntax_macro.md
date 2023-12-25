@@ -117,7 +117,7 @@ The effect of **\*read-base\*** on the reading of any particular <GlossaryTerm s
 ▷ (13 (DAD DAD BEE BEE 123 198)) 
 ▷ (14 (DAD 2701 BEE BEE 123 227)) 
 ▷ (15 (DAD 3088 BEE 2699 123 258)) 
-*→* NIL 
+→ NIL 
 
 ```
 **Notes:** 

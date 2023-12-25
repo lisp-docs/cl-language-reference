@@ -50,7 +50,7 @@ The *arg*th clause is selected, where the first clause is number 0. If a prefix 
 
 
 
-*→* " print length = 5" 
+→ " print length = 5" 
 
 
 
@@ -90,23 +90,23 @@ The combination of &#126;[ and # is useful, for example, for dealing with Englis
 
 
 
-(format nil foo) *→* "Items: none." 
+(format nil foo) → "Items: none." 
 
 
 
-(format nil foo ’foo) *→* "Items: FOO." 
+(format nil foo ’foo) → "Items: FOO." 
 
 
 
-(format nil foo ’foo ’bar) *→* "Items: FOO and BAR." 
+(format nil foo ’foo ’bar) → "Items: FOO and BAR." 
 
 
 
-(format nil foo ’foo ’bar ’baz) *→* "Items: FOO, BAR, and BAZ." 
+(format nil foo ’foo ’bar ’baz) → "Items: FOO, BAR, and BAZ." 
 
 
 
-(format nil foo ’foo ’bar ’baz ’quux) *→* "Items: FOO, BAR, BAZ, and QUUX." 
+(format nil foo ’foo ’bar ’baz ’quux) → "Items: FOO, BAR, BAZ, and QUUX." 
 
 
 

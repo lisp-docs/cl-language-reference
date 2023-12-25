@@ -62,13 +62,13 @@ The consequences are undefined if *filespec* has a <GlossaryTerm styled={true} t
 ```lisp
 
 (with-open-file (s "delete-me.text" :direction :output :if-exists :error)) 
-*→* NIL 
-(setq p (probe-file "delete-me.text")) *→* #P"R:>fred>delete-me.text.1" 
-(delete-file p) *→* T 
+→ NIL 
+(setq p (probe-file "delete-me.text")) → #P"R:>fred>delete-me.text.1" 
+(delete-file p) → T 
 (probe-file "delete-me.text") *→ false* 
 (with-open-file (s "delete-me.text" :direction :output :if-exists :error) 
   (delete-file s)) 
-*→* T 
+→ T 
 (probe-file "delete-me.text") *→ false* 
 
 ```

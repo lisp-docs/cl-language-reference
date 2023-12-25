@@ -57,8 +57,8 @@ If *non-terminating-p* is <GlossaryTerm styled={true} term={"true"}><i>true</i><
 **Examples:**
 ```lisp
 
-(get-macro-character #\\&#123;) *→* NIL, *false* 
-		     (make-dispatch-macro-character #\\&#123;) *→* T 
+(get-macro-character #\\&#123;) → NIL, *false* 
+		     (make-dispatch-macro-character #\\&#123;) → T 
 						    (not (get-macro-character #\\&#123;)) *→ false* 
 									      The *readtable* is altered. 
 

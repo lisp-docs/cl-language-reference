@@ -207,9 +207,9 @@ If the *restartable-form* is a <GlossaryTerm styled={true} term={"list"}><i>list
 			      (invoke-restart ’my-restart 7)))) 
       (error "Foo.")) 
   (my-restart (&optional v) v)) 
-*→* 7 
+→ 7 
 (define-condition food-error (error) ()) 
-*→* FOOD-ERROR 
+→ FOOD-ERROR 
 (define-condition bad-tasting-sundae (food-error) 
   ((ice-cream :initarg :ice-cream :reader bad-tasting-sundae-ice-cream) 
    (sauce :initarg :sauce :reader bad-tasting-sundae-sauce) 
@@ -219,7 +219,7 @@ If the *restartable-form* is a <GlossaryTerm styled={true} term={"list"}><i>list
 		     (bad-tasting-sundae-ice-cream condition) 
 		     (bad-tasting-sundae-sauce condition) 
 		     (bad-tasting-sundae-topping condition))))) 
-*→* BAD-TASTING-SUNDAE 
+→ BAD-TASTING-SUNDAE 
 (defun all-start-with-same-letter (symbol1 symbol2 symbol3) 
 
   
@@ -228,11 +228,11 @@ If the *restartable-form* is a <GlossaryTerm styled={true} term={"list"}><i>list
   (let ((first-letter (char (symbol-name symbol1) 0))) 
     (and (eql first-letter (char (symbol-name symbol2) 0)) 
 	 (eql first-letter (char (symbol-name symbol3) 0))))) 
-*→* ALL-START-WITH-SAME-LETTER 
+→ ALL-START-WITH-SAME-LETTER 
 (defun read-new-value () 
   (format t "Enter a new value: ") 
   (multiple-value-list (eval (read)))) 
-*→* READ-NEW-VALUE 
+→ READ-NEW-VALUE 
 
 
 
@@ -257,7 +257,7 @@ If the *restartable-form* is a <GlossaryTerm styled={true} term={"list"}><i>list
 								    :interactive read-new-value 
 								    (setq topping new-topping)))) 
        (values ice-cream sauce topping)) 
-*→* VERIFY-OR-FIX-PERFECT-SUNDAE 
+→ VERIFY-OR-FIX-PERFECT-SUNDAE 
 (verify-or-fix-perfect-sundae ’vanilla ’caramel ’cherry) ▷ Error: Bad tasting sundae with VANILLA, CARAMEL, and CHERRY. ▷ To continue, type :CONTINUE followed by an option number: ▷ 1: Use a new ice cream. 
 ▷ 2: Use a new sauce. 
 ▷ 3: Use a new topping. 
@@ -265,7 +265,7 @@ If the *restartable-form* is a <GlossaryTerm styled={true} term={"list"}><i>list
 ▷ Debug> :continue 1 
 ▷ Use a new ice cream. 
 ▷ Enter a new ice cream: ’chocolate 
-*→* CHOCOLATE, CARAMEL, CHERRY 
+→ CHOCOLATE, CARAMEL, CHERRY 
 
 ```
 **See Also:** 

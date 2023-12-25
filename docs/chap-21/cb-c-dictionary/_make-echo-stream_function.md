@@ -45,7 +45,7 @@ Creates and returns an *echo stream* that takes input from *input-stream* and se
     (read s) 
     (format s " \* this-is-direct-output") 
     (get-output-stream-string out))) 
-*→* "this-is-read-and-echoed \* this-is-direct-output" 
+→ "this-is-read-and-echoed \* this-is-direct-output" 
 
 ```
 **See Also:** 

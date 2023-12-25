@@ -201,10 +201,10 @@ For <DictionaryLink styled={true} term={"atan"}><b>atan</b></DictionaryLink>, th
 **Examples:**
 ```lisp
  
-(asin 0) *→* 0.0 
-(acos #c(0 1)) *→* #C(1.5707963267948966 -0.8813735870195432) 
-(/ (atan 1 (sqrt 3)) 6) *→* 0.087266 
-(atan #c(0 2)) *→* #C(-1.5707964 0.54930615) 
+(asin 0) → 0.0 
+(acos #c(0 1)) → #C(1.5707963267948966 -0.8813735870195432) 
+(/ (atan 1 (sqrt 3)) 6) → 0.087266 
+(atan #c(0 2)) → #C(-1.5707964 0.54930615) 
 
 ```
 **Exceptional Situations:** 
@@ -275,8 +275,8 @@ The best *long float* approximation to the mathematical constant *π*.
 ;; the implementation as equivalent to some other float format 
 ;; (e.g., ‘double float’) the exponent marker might be the marker 
 ;; for that equivalent (e.g., ‘D’ instead of ‘L’). 
-pi *→* 3.141592653589793L0 
-(cos pi) *→* -1.0L0 
+pi → 3.141592653589793L0 
+(cos pi) → -1.0L0 
 (defun sin-of-degrees (degrees) 
   (let ((x (if (floatp degrees) degrees (float degrees pi)))) 
     (sin (\* x (/ (float pi x) 180))))) 

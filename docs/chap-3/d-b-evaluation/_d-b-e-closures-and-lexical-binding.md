@@ -26,15 +26,15 @@ Consider this code, where x is not declared <DictionaryLink styled={true} term={
 
 
 
-(funcall (car funs)) *→* 6 
+(funcall (car funs)) → 6 
 
 
 
-(funcall (cadr funs) 43) *→* 43 
+(funcall (cadr funs) 43) → 43 
 
 
 
-(funcall (car funs)) *→* 43 
+(funcall (car funs)) → 43 
 
 
 

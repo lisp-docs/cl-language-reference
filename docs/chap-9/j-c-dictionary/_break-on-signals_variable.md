@@ -49,9 +49,9 @@ The **continue** <GlossaryTerm styled={true} term={"restart"}><i>restart</i></Gl
 **Examples:**
 ```lisp
 
-\*break-on-signals\* *→* NIL 
+\*break-on-signals\* → NIL 
 (ignore-errors (error ’simple-error :format-control "Fooey!")) 
-*→* NIL, #<SIMPLE-ERROR 32207172> 
+→ NIL, #<SIMPLE-ERROR 32207172> 
 (let ((\*break-on-signals\* ’error)) 
   (ignore-errors (error ’simple-error :format-control "Fooey!"))) 
 ▷ Break: Fooey! 
@@ -61,7 +61,7 @@ The **continue** <GlossaryTerm styled={true} term={"restart"}><i>restart</i></Gl
 ▷ 2: Top level. 
 ▷ Debug> :CONTINUE 1 
 ▷ Continue to signal. 
-*→* NIL, #<SIMPLE-ERROR 32212257> 
+→ NIL, #<SIMPLE-ERROR 32212257> 
 (let ((\*break-on-signals\* ’error)) 
   (error ’simple-error :format-control "Fooey!")) 
 ▷ Break: Fooey! 

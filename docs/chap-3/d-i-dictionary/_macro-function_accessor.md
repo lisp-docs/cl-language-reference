@@ -61,7 +61,7 @@ It is possible for both <DictionaryLink styled={true} term={"macro-function"}><b
 **Examples:**
 ```lisp
 
-(defmacro macfun (x) ’(macro-function ’macfun)) *→* MACFUN 
+(defmacro macfun (x) ’(macro-function ’macfun)) → MACFUN 
 (not (macro-function ’macfun)) *→ false* 
 (macrolet ((foo (&environment env) 
 	     (if (macro-function ’bar env) 
@@ -70,7 +70,7 @@ It is possible for both <DictionaryLink styled={true} term={"macro-function"}><b
   (list (foo) 
 	(macrolet ((bar () :beep)) 
 	  (foo)))) 
-*→* (NO YES) 
+→ (NO YES) 
 
 ```
 **Affected By:** 

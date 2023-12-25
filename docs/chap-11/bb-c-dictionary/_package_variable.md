@@ -25,10 +25,10 @@ the COMMON-LISP-USER <GlossaryTerm styled={true} term={"package"}><i>package</i>
 Whatever *package object* is currently the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"package"}><b>\*package\*</b></DictionaryLink> is referred to as the *current package*. **Examples:**
 ```lisp
 
-(in-package "COMMON-LISP-USER") *→* #<PACKAGE "COMMON-LISP-USER"> 
-\*package\* *→* #<PACKAGE "COMMON-LISP-USER"> 
+(in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
+\*package\* → #<PACKAGE "COMMON-LISP-USER"> 
 (make-package "SAMPLE-PACKAGE" :use ’("COMMON-LISP")) 
-*→* #<PACKAGE "SAMPLE-PACKAGE"> 
+→ #<PACKAGE "SAMPLE-PACKAGE"> 
 (list 
 
  
@@ -37,10 +37,10 @@ Whatever *package object* is currently the <GlossaryTerm styled={true} term={"va
   (let ((\*package\* (find-package ’sample-package))) 
     (setq \*some-symbol\* (read-from-string "just-testing")))) 
  \*package\*) 
-*→* (#<PACKAGE "SAMPLE-PACKAGE"> #<PACKAGE "COMMON-LISP-USER">) 
+→ (#<PACKAGE "SAMPLE-PACKAGE"> #<PACKAGE "COMMON-LISP-USER">) 
 (list (symbol-package (read-from-string "just-testing")) 
       \*package\*) 
-*→* (#<PACKAGE "COMMON-LISP-USER"> #<PACKAGE "COMMON-LISP-USER">) 
+→ (#<PACKAGE "COMMON-LISP-USER"> #<PACKAGE "COMMON-LISP-USER">) 
 (eq ’foo (intern "FOO")) *→ true* 
 (eq ’foo (let ((\*package\* (find-package ’sample-package))) 
 	   (intern "FOO"))) 

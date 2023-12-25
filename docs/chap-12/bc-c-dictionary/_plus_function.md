@@ -33,10 +33,10 @@ Returns the sum of <GlossaryTerm styled={true} term={"number"}><i>numbers</i></G
 **Examples:**
 ```lisp
  
-(+) *→* 0 
-(+ 1) *→* 1 
-(+ 31/100 69/100) *→* 1 
-(+ 1/5 0.8) *→* 1.0 
+(+) → 0 
+(+ 1) → 1 
+(+ 31/100 69/100) → 1 
+(+ 1/5 0.8) → 1.0 
 
 ```
 **Exceptional Situations:** 
@@ -118,12 +118,12 @@ The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>
 **Examples:**
 ```lisp
 
-(- 55.55) *→* -55.55 
-(- #c(3 -5)) *→* #C(-3 5) 
-(- 0) *→* 0 
+(- 55.55) → -55.55 
+(- #c(3 -5)) → #C(-3 5) 
+(- 0) → 0 
 (eql (- 0.0) -0.0) *→ true* 
-(- #c(100 45) #c(0 45)) *→* 100 
-(- 10 1 2 3 4) *→* 0 
+(- #c(100 45) #c(0 45)) → 100 
+(- 10 1 2 3 4) → 0 
 
 ```
 **Exceptional Situations:** 

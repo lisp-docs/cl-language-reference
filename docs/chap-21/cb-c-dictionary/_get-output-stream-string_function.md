@@ -34,10 +34,10 @@ Returns a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTer
 ```lisp
 
 (setq a-stream (make-string-output-stream) 
-      a-string "abcdefghijklm") *→* "abcdefghijklm" 
-(write-string a-string a-stream) *→* "abcdefghijklm" 
-(get-output-stream-string a-stream) *→* "abcdefghijklm" 
-(get-output-stream-string a-stream) *→* "" 
+      a-string "abcdefghijklm") → "abcdefghijklm" 
+(write-string a-string a-stream) → "abcdefghijklm" 
+(get-output-stream-string a-stream) → "abcdefghijklm" 
+(get-output-stream-string a-stream) → "" 
 
 ```
 **Side Effects:** 

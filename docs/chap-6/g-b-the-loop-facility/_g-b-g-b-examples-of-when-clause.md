@@ -16,19 +16,19 @@ Error: non-numeric value: A
 		    (loop-finish)) 
 	for i of-type fixnum from 1 below (length (the string buffer)) when (char= (char buffer i) #\") 
 	return i)) 
-*→* 2 
+→ 2 
 ;; The collected value is returned. 
 (loop for i from 1 to 10 
       when (> i 5) 
       collect i 
       finally (prin1 ’got-here)) 
 ▷ GOT-HERE 
-*→* (6 7 8 9 10) 
+→ (6 7 8 9 10) 
 ;; Return both the count of collected numbers and the numbers. (loop for i from 1 to 10 
 when (> i 5) 
 collect i into number-list 
 and count i into number-count 
 finally (return (values number-count number-list))) 
-*→* 5, (6 7 8 9 10) 
+→ 5, (6 7 8 9 10) 
 
 ```

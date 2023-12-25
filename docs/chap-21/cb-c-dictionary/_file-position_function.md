@@ -107,9 +107,9 @@ sequence) and other aspects of the implementation. For a binary file, every <Dic
 	    (dotimes (i length) 
 	      (notice (read-byte s)))))) ;7,... 
       (nreverse noticed)))) 
-*→* tester 
+→ tester 
 (tester) 
-*→* (0 2 T 2 0 2 5 7) 
+→ (0 2 T 2 0 2 5 7) 
 <i><sup>or</sup>→</i> (0 2 NIL 3 0 3 5 6 7) 
 <i><sup>or</sup>→</i> (NIL NIL NIL NIL NIL NIL) 
 

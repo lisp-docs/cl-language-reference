@@ -53,10 +53,10 @@ Constructs and returns a <GlossaryTerm styled={true} term={"condition"}><i>condi
 (setq a (make-condition ’simple-error 
 			 :format-control "This is your ~:R error." 
 			 :format-arguments (list (incf \*oops-count\*)))) 
-*→* #<SIMPLE-ERROR 32245104> 
+→ #<SIMPLE-ERROR 32245104> 
 (format t "~&~A~%" a) 
 ▷ This is your first error. 
-*→* NIL 
+→ NIL 
 (error a) 
 ▷ Error: This is your first error. 
 ▷ To continue, type :CONTINUE followed by an option number: 

@@ -48,7 +48,7 @@ If the **continue** <GlossaryTerm styled={true} term={"restart"}><i>restart</i><
 ▷ 2: Top level. 
 ▷ Debug> :CONTINUE 1 
 ▷ Return from BREAK. 
-*→* NIL 
+→ NIL 
 
 ```
 **Side Effects:** 

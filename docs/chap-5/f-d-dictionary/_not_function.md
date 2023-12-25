@@ -33,12 +33,12 @@ Returns <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> if *x
 **Examples:**
 ```lisp
 
-(not nil) *→* T 
-(not ’()) *→* T 
-(not (integerp ’sss)) *→* T 
-(not (integerp 1)) *→* NIL 
-(not 3.7) *→* NIL 
-(not ’apple) *→* NIL 
+(not nil) → T 
+(not ’()) → T 
+(not (integerp ’sss)) → T 
+(not (integerp 1)) → NIL 
+(not 3.7) → NIL 
+(not ’apple) → NIL 
 
 ```
 **See Also:** 

@@ -31,7 +31,7 @@
 
 (let ((before (list-all-packages))) 
   (make-package ’temp) 
-  (set-difference (list-all-packages) before)) *→* (#<PACKAGE "TEMP">) 
+  (set-difference (list-all-packages) before)) → (#<PACKAGE "TEMP">) 
 
 ```
 **Affected By:** 

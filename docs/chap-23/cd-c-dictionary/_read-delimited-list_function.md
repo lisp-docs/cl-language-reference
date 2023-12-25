@@ -70,7 +70,7 @@ The consequences are undefined if *char* has a *syntax type* of <GlossaryTerm st
 ```lisp
 
 (read-delimited-list #\]) 1 2 3 4 5 6 ] 
-*→* (1 2 3 4 5 6) 
+→ (1 2 3 4 5 6) 
 Suppose you wanted #\&#123;*a b c . . . z*\&#125; to read as a list of all pairs of the elements *a*, *b*, *c*, *. . .*, *z*, for example. 
 #\&#123;p q z a\&#125; reads as ((p q) (p z) (p a) (q z) (q a) (z a)) 
 This can be done by specifying a macro-character definition for #\&#123; that does two things: reads in all the items up to the \&#125;, and constructs the pairs. **read-delimited-list** performs the first task. 
@@ -78,8 +78,8 @@ This can be done by specifying a macro-character definition for #\&#123; that do
   (declare (ignore char arg)) 
   (mapcon #’(lambda (x) 
 	      (mapcar #’(lambda (y) (list (car x) y)) (cdr x))) 
-	    (read-delimited-list #\\&#125; stream t))) *→* |#\&#123;-reader| 
-				 (set-dispatch-macro-character #\# #\\&#123; #’|#\&#123;-reader|) *→* T 
+	    (read-delimited-list #\\&#125; stream t))) → |#\&#123;-reader| 
+				 (set-dispatch-macro-character #\# #\\&#123; #’|#\&#123;-reader|) → T 
 							       (set-macro-character #\\&#125; (get-macro-character #\) **nil**)) 
 										    Note that *true* is supplied for the *recursive-p* argument. 
 										    It is necessary here to give a definition to the character \&#125; as well to prevent it from being a constituent. If the line 

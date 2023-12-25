@@ -251,15 +251,15 @@ The argument *x* is permitted to be a *dotted list* or a *circular list*.
 **Examples:**
 ```lisp
 
-(car nil) *→* NIL 
-(cdr ’(1 . 2)) *→* 2 
-(cdr ’(1 2)) *→* (2) 
+(car nil) → NIL 
+(cdr ’(1 . 2)) → 2 
+(cdr ’(1 2)) → (2) 
 
 
 
-(cadr ’(1 2)) *→* 2 
-(car ’(a b c)) *→* A 
-(cdr ’(a b c)) *→* (B C) 
+(cadr ’(1 2)) → 2 
+(car ’(a b c)) → A 
+(cdr ’(a b c)) → (B C) 
 
 ```
 **Exceptional Situations:** 

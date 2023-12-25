@@ -53,16 +53,16 @@ All of these <GlossaryTerm styled={true} term={"function"}><i>functions</i></Glo
 **Examples:**
 ```lisp
  
-(string-trim "abc" "abcaakaaakabcaaa") *→* "kaaak" 
+(string-trim "abc" "abcaakaaakabcaaa") → "kaaak" 
 (string-trim ’(#\Space #\Tab #\Newline) " garbanzo beans 
-") *→* "garbanzo beans" 
+") → "garbanzo beans" 
 (string-trim " (\*)" " ( \*three (silly) words\* ) ") 
-*→* "three (silly) words" 
-(string-left-trim "abc" "labcabcabc") *→* "labcabcabc" 
+→ "three (silly) words" 
+(string-left-trim "abc" "labcabcabc") → "labcabcabc" 
 (string-left-trim " (\*)" " ( \*three (silly) words\* ) ") 
-*→* "three (silly) words\* ) " 
+→ "three (silly) words\* ) " 
 (string-right-trim " (\*)" " ( \*three (silly) words\* ) ") 
-*→* " ( \*three (silly) words" 
+→ " ( \*three (silly) words" 
 
  
  
@@ -277,11 +277,11 @@ The comparison has one of the following results:
 (string= "together" "frog" :start1 1 :end1 3 :start2 2) *→ true* 
 (string-equal "foo" "Foo") *→ true* 
 (string= "abcd" "01234abcd9012" :start2 5 :end2 9) *→ true* 
-(string< "aaaa" "aaab") *→* 3 
-(string>= "aaaaa" "aaaa") *→* 4 
-(string-not-greaterp "Abcde" "abcdE") *→* 5 
+(string< "aaaa" "aaab") → 3 
+(string>= "aaaaa" "aaaa") → 4 
+(string-not-greaterp "Abcde" "abcdE") → 5 
 (string-lessp "012AAAA789" "01aaab6" :start1 3 :end1 7 
-	      :start2 2 :end2 6) *→* 6 
+	      :start2 2 :end2 6) → 6 
 (string-not-equal "AAAA" "aaaA") *→ false* 
 
 ```

@@ -73,12 +73,12 @@ The resulting <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTer
 ▷ (3 2 1 A B C) 
 ▷ T 
 ▷ T 
-*→* T 
-(revappend ’(1 2 3) ’()) *→* (3 2 1) 
-(revappend ’(1 2 3) ’(a . b)) *→* (3 2 1 A . B) 
-(revappend ’() ’(a b c)) *→* (A B C) 
-(revappend ’(1 2 3) ’a) *→* (3 2 1 . A) 
-(revappend ’() ’a) *→* A ;degenerate case 
+→ T 
+(revappend ’(1 2 3) ’()) → (3 2 1) 
+(revappend ’(1 2 3) ’(a . b)) → (3 2 1 A . B) 
+(revappend ’() ’(a b c)) → (A B C) 
+(revappend ’(1 2 3) ’a) → (3 2 1 . A) 
+(revappend ’() ’a) → A ;degenerate case 
 (let ((list-1 ’(1 2 3)) 
       (list-2 ’(a b c))) 
   (print (nreconc list-1 list-2)) 
@@ -87,7 +87,7 @@ The resulting <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTer
 ▷ (3 2 1 A B C) 
 ▷ NIL 
 ▷ T 
-*→* T 
+→ T 
 
 ```
 **Side Effects:** 

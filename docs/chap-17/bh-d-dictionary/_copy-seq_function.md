@@ -37,7 +37,7 @@ If *sequence* is a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></Gl
 **Examples:**
 ```lisp
 
-(setq str "a string") *→* "a string" 
+(setq str "a string") → "a string" 
 (equalp str (copy-seq str)) *→ true* 
 (eql str (copy-seq str)) *→ false* 
 

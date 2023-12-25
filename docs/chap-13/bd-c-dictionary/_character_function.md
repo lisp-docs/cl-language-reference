@@ -45,10 +45,10 @@ Returns the <GlossaryTerm styled={true} term={"character"}><i>character</i></Glo
 **Examples:**
 ```lisp
 
-(character #\a) *→* #\a 
-(character "a") *→* #\a 
-(character ’a) *→* #\A 
-(character ’\a) *→* #\a 
+(character #\a) → #\a 
+(character "a") → #\a 
+(character ’a) → #\A 
+(character ’\a) → #\a 
 (character 65.) is an error. 
 (character ’apple) is an error. 
 

@@ -51,7 +51,7 @@ The *current random state*, which is used, for example, by the <GlossaryTerm sty
       (loop for i from 1 to 10 collect (random)) 
       (let ((\*random-state\* snap-shot)) 
 	(loop for i from 1 to 10 collect (random)))) 
-*→* ((19 16 44 19 96 15 76 96 13 61) 
+→ ((19 16 44 19 96 15 76 96 13 61) 
      (19 16 44 19 96 15 76 96 13 61) 
      (16 67 0 43 70 79 58 5 63 50) 
      (16 67 0 43 70 79 58 5 63 50)) 

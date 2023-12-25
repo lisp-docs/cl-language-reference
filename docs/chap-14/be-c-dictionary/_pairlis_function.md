@@ -79,11 +79,11 @@ or
 
 (setq keys ’(1 2 3) 
       data ’("one" "two" "three") 
-      alist ’((4 . "four"))) *→* ((4 . "four")) 
-(pairlis keys data) *→* ((3 . "three") (2 . "two") (1 . "one")) 
+      alist ’((4 . "four"))) → ((4 . "four")) 
+(pairlis keys data) → ((3 . "three") (2 . "two") (1 . "one")) 
 (pairlis keys data alist) 
-*→* ((3 . "three") (2 . "two") (1 . "one") (4 . "four")) 
-alist *→* ((4 . "four")) 
+→ ((3 . "three") (2 . "two") (1 . "one") (4 . "four")) 
+alist → ((4 . "four")) 
 
 ```
 **Exceptional Situations:** 

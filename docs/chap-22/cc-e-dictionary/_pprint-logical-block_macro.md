@@ -14,7 +14,7 @@
 
 
 
-*→* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
+→ <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 

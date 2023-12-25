@@ -45,18 +45,18 @@ If *to-readtable* is <DictionaryLink styled={true} term={"nil"}><b>nil</b></Dict
 **Examples:**
 ```lisp
 
-(setq zvar 123) *→* 123 
-(set-syntax-from-char #\z #\’ (setq table2 (copy-readtable))) *→* T 
-zvar *→* 123 
-(copy-readtable table2 \*readtable\*) *→* #<READTABLE 614000277> 
+(setq zvar 123) → 123 
+(set-syntax-from-char #\z #\’ (setq table2 (copy-readtable))) → T 
+zvar → 123 
+(copy-readtable table2 \*readtable\*) → #<READTABLE 614000277> 
 
 
 
-zvar *→* VAR 
-(setq \*readtable\* (copy-readtable)) *→* #<READTABLE 46210223> 
-zvar *→* VAR 
-(setq \*readtable\* (copy-readtable nil)) *→* #<READTABLE 46302670> 
-zvar *→* 123 
+zvar → VAR 
+(setq \*readtable\* (copy-readtable)) → #<READTABLE 46210223> 
+zvar → VAR 
+(setq \*readtable\* (copy-readtable nil)) → #<READTABLE 46302670> 
+zvar → 123 
 
 ```
 **See Also:** 

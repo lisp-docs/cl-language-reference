@@ -43,7 +43,7 @@
 
 (prog1 (write-string "books" nil :end 4) (write-string "worms")) 
 ▷ bookworms 
-*→* "books" 
+→ "books" 
 (progn (write-char #\\*) 
        (write-line "test12" \*standard-output\* :end 5) 
        (write-line "\*test2") 
@@ -55,7 +55,7 @@
 
 ▷ \*test2 
 ▷ \* 
-*→* NIL 
+→ NIL 
 
 ```
 **Affected By:** 

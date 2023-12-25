@@ -56,7 +56,7 @@ Calls the <GlossaryTerm styled={true} term={"function"}><i>function</i></Glossar
 ▷ 1: Specify a different value to use. 
 ▷ 2: Return to Lisp Toplevel. 
 ▷ Debug> (invoke-restart ’store-value 7) 
-*→* 10 
+→ 10 
 
 ```
 **Side Effects:** 

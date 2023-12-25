@@ -41,14 +41,14 @@ The result only ever differs from <GlossaryTerm styled={true} term={"character"}
 **Examples:**
 ```lisp
 
-(char-upcase #\a) *→* #\A 
-(char-upcase #\A) *→* #\A 
-(char-downcase #\a) *→* #\a 
-(char-downcase #\A) *→* #\a 
-(char-upcase #\9) *→* #\9 
-(char-downcase #\9) *→* #\9 
-(char-upcase #\@) *→* #\@ 
-(char-downcase #\@) *→* #\@ 
+(char-upcase #\a) → #\A 
+(char-upcase #\A) → #\A 
+(char-downcase #\a) → #\a 
+(char-downcase #\A) → #\a 
+(char-upcase #\9) → #\9 
+(char-downcase #\9) → #\9 
+(char-upcase #\@) → #\@ 
+(char-downcase #\@) → #\@ 
 ;; Note that this next example might run for a very long time in 
 ;; some implementations if CHAR-CODE-LIMIT happens to be very large 
 ;; for that implementation. 
@@ -59,7 +59,7 @@ The result only ever differs from <GlossaryTerm styled={true} term={"character"}
 		    (t (and (char= (char-upcase (char-downcase char)) char) 
 			    (char= (char-downcase (char-upcase char)) char)))) 
 	(return char))))) 
-*→* NIL 
+→ NIL 
 
 ```
 **Exceptional Situations:** 

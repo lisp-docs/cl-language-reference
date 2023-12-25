@@ -42,10 +42,10 @@ Please leave lots of toys.~2%Love, Sue~
  
 ~2%attachments: milk, cookies~%") 
   (truename s)) 
-*→* #P"CUPID:/susan/noel.text" 
+→ #P"CUPID:/susan/noel.text" 
 (with-open-file (s "noel.text") 
   (file-write-date s)) 
-*→* 2902600800 
+→ 2902600800 
 
 ```
 **Affected By:** 

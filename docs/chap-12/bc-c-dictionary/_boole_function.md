@@ -79,9 +79,9 @@ The operation to be performed and the return value are determined by *op*.
 **Examples:**
 ```lisp
  
-(boole boole-ior 1 16) *→* 17 
-(boole boole-and -2 5) *→* 4 
-(boole boole-eqv 17 15) *→* -31 
+(boole boole-ior 1 16) → 17 
+(boole boole-and -2 5) → 4 
+(boole boole-eqv 17 15) → -31 
 ;;; These examples illustrate the result of applying BOOLE and each 
 ;;; of the possible values of OP to each possible combination of bits. 
 (progn 
@@ -116,7 +116,7 @@ symbol result (logand result #b1111)))))
 ▷ BOOLE-ORC2 -5 -101 ...1011 
 ▷ BOOLE-SET -1 -1 ...1111 
 ▷ BOOLE-XOR 6 110 ...0110 
-*→* NIL 
+→ NIL 
 
 ```
 **Exceptional Situations:** 
@@ -191,7 +191,7 @@ boole-c2 boole-orc2 boole-nand boole-set))
 
 
 
-*→* BOOLE-N-VECTOR 
+→ BOOLE-N-VECTOR 
 
 
 
@@ -211,19 +211,19 @@ boole-c2 boole-orc2 boole-nand boole-set))
 
 
 
-*→* BOOLE-N 
+→ BOOLE-N 
 
 
 
-(boole-n #b0111 5 3) *→* 7 
+(boole-n #b0111 5 3) → 7 
 
 
 
-(boole-n #b0001 5 3) *→* 1 
+(boole-n #b0001 5 3) → 1 
 
 
 
-(boole-n #b1101 5 3) *→* -3 
+(boole-n #b1101 5 3) → -3 
 
 
 
@@ -231,7 +231,7 @@ boole-c2 boole-orc2 boole-nand boole-set))
 
 
 
-*→* (0 1 2 3 4 5 6 7 -8 -7 -6 -5 -4 -3 -2 -1) 
+→ (0 1 2 3 4 5 6 7 -8 -7 -6 -5 -4 -3 -2 -1) 
 
 
 
@@ -258,9 +258,9 @@ Each of these <GlossaryTerm styled={true} term={"constant"}><i>constants</i></Gl
 **Examples:**
 ```lisp
 
-(boole boole-ior 1 16) *→* 17 
-(boole boole-and -2 5) *→* 4 
-(boole boole-eqv 17 15) *→* -31 
+(boole boole-ior 1 16) → 17 
+(boole boole-and -2 5) → 4 
+(boole boole-eqv 17 15) → -31 
 
 ```
 **See Also:** 

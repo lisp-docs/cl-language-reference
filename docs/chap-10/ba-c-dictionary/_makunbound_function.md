@@ -31,8 +31,8 @@ Makes the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTer
 
 (setf (symbol-value ’a) 1) 
 (boundp ’a) *→ true* 
-a *→* 1 
-(makunbound ’a) *→* A 
+a → 1 
+(makunbound ’a) → A 
 (boundp ’a) *→ false* 
 
 ```

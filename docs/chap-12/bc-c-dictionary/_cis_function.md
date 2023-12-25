@@ -33,7 +33,7 @@
 **Examples:**
 ```lisp
 
-(cis 0) *→* #C(1.0 0.0) 
+(cis 0) → #C(1.0 0.0) 
 
 ```
 **See Also:** 

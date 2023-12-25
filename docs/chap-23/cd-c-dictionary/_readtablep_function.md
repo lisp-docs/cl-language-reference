@@ -129,7 +129,7 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 **Examples:**
 ```lisp
 
-(get-dispatch-macro-character #\# #\\&#123;) *→* NIL 
+(get-dispatch-macro-character #\# #\\&#123;) → NIL 
 			      (set-dispatch-macro-character #\# #\\&#123; ;dispatch on #\&#123; 
 							    #’(lambda(s c n) 
 								(let ((list (read s nil (values) t))) ;list is object after #n\&#123; 
@@ -139,15 +139,15 @@ For more information about how the *new-function* is invoked, see Section 2.1.4.
 
 								  
 								  
-								  list))) *→* T 
-			      #\&#123;(1 2 3 4) *→* 1 
-			      #3\&#123;(0 1 2 3) *→* 3 
-			      #\&#123;123 *→* 123 
+								  list))) → T 
+			      #\&#123;(1 2 3 4) → 1 
+			      #3\&#123;(0 1 2 3) → 3 
+			      #\&#123;123 → 123 
 			      If it is desired that #$*foo* : as if it were (dollars *foo*). 
 			      (defun |#$-reader| (stream subchar arg) 
 				(declare (ignore subchar arg)) 
-				(list ’dollars (read stream t nil t))) *→* |#$-reader| 
-			      (set-dispatch-macro-character #\# #\$ #’|#$-reader|) *→* T 
+				(list ’dollars (read stream t nil t))) → |#$-reader| 
+			      (set-dispatch-macro-character #\# #\$ #’|#$-reader|) → T 
 
 ```
 **See Also:** 

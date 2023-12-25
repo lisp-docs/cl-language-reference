@@ -29,8 +29,8 @@
 <DictionaryLink styled={true} term={"array-dimension"}><b>array-dimension</b></DictionaryLink> returns the *axis-number dimension*<sub>1</sub> of <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>. (Any *fill pointer* is ignored.) **Examples:**
 ```lisp
 
-(array-dimension (make-array 4) 0) *→* 4 
-(array-dimension (make-array ’(2 3)) 1) *→* 3 
+(array-dimension (make-array 4) 0) → 4 
+(array-dimension (make-array ’(2 3)) 1) → 3 
 
 ```
 **Affected By:** 

@@ -391,7 +391,7 @@ Note that since no :report clause was given, the information inherited from mach
    (weight :initarg :weight :reader ate-too-much-weight) 
    (kind-of-food :initarg :kind-of-food 
 		 :reader :ate-too-much-kind-of-food))) 
-*→* ATE-TOO-MUCH 
+→ ATE-TOO-MUCH 
 (define-condition ate-too-much-ice-cream (ate-too-much) 
   ((kind-of-food :initform ’ice-cream) 
    (flavor :initarg :flavor 
@@ -401,15 +401,15 @@ Note that since no :report clause was given, the information inherited from mach
 	     (format stream "~A ate too much ~A ice-cream" 
 		     (ate-too-much-person condition) 
 		     (ate-too-much-ice-cream-flavor condition))))) 
-*→* ATE-TOO-MUCH-ICE-CREAM 
+→ ATE-TOO-MUCH-ICE-CREAM 
 (make-condition ’ate-too-much-ice-cream 
 		 :person ’fred 
 		 :weight 300 
 		 :flavor ’chocolate) 
-*→* #<ATE-TOO-MUCH-ICE-CREAM 32236101> 
+→ #<ATE-TOO-MUCH-ICE-CREAM 32236101> 
 (format t "~A" \*) 
 ▷ FRED ate too much CHOCOLATE ice-cream 
-*→* NIL 
+→ NIL 
 
 ```
 **See Also:** 

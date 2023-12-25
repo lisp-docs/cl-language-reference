@@ -45,8 +45,8 @@ Returns a <GlossaryTerm styled={true} term={"character"}><i>character</i></Gloss
 **Examples:**
 ```lisp
 
-(code-char 65.) *→* #\A ;in an implementation using ASCII codes 
-(code-char (char-code #\Space)) *→* #\Space ;in any implementation 
+(code-char 65.) → #\A ;in an implementation using ASCII codes 
+(code-char (char-code #\Space)) → #\Space ;in any implementation 
 
 ```
 **Affected By:** 

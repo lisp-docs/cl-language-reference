@@ -2,7 +2,7 @@
 
 
 
-An evaluation arrow “*→*” precedes a list of <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> to be returned. For example: 
+An evaluation arrow “→” precedes a list of <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> to be returned. For example: 
 
 
 

@@ -6,11 +6,11 @@ The next *arg* must be a *format control*, and the one after it a <GlossaryTerm 
 
 
 
-(format nil "&#126;? &#126;D" "&lt;&#126;A &#126;D&gt;" ’("Foo" 5) 7) *→* "<foo 5=""> 7" 
+(format nil "&#126;? &#126;D" "&lt;&#126;A &#126;D&gt;" ’("Foo" 5) 7) → "<foo 5=""> 7" 
 
 
 
-(format nil "&#126;? &#126;D" "&lt;&#126;A &#126;D&gt;" ’("Foo" 5 14) 7) *→* "<foo 5=""> 7" 
+(format nil "&#126;? &#126;D" "&lt;&#126;A &#126;D&gt;" ’("Foo" 5 14) 7) → "<foo 5=""> 7" 
 
 
 
@@ -22,11 +22,11 @@ With the @ modifier, only one *arg* is directly consumed. The *arg* must be a <G
 
 
 
-(format nil "&#126;@? &#126;D" "&lt;&#126;A &#126;D&gt;" "Foo" 5 7) *→* "<foo 5=""> 7" 
+(format nil "&#126;@? &#126;D" "&lt;&#126;A &#126;D&gt;" "Foo" 5 7) → "<foo 5=""> 7" 
 
 
 
-(format nil "&#126;@? &#126;D" "&lt;&#126;A &#126;D&gt;" "Foo" 5 14 7) *→* "<foo 5=""> 14" 
+(format nil "&#126;@? &#126;D" "&lt;&#126;A &#126;D&gt;" "Foo" 5 14 7) → "<foo 5=""> 14" 
 
 
 

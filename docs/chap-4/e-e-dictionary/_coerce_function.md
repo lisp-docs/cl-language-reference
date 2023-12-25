@@ -109,16 +109,16 @@ If the *result-type* is <DictionaryLink styled={true} term={"function"}><b>funct
 Any <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> can be *coerced* to an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>. In this case, the <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is simply returned. **Examples:**
 ```lisp
 
-(coerce ’(a b c) ’vector) *→* #(A B C)  
+(coerce ’(a b c) ’vector) → #(A B C)  
 
-(coerce ’a ’character) *→* #\A 
-(coerce 4.56 ’complex) *→* #C(4.56 0.0) 
-(coerce 4.5s0 ’complex) *→* #C(4.5s0 0.0s0) 
-(coerce 7/2 ’complex) *→* 7/2 
-(coerce 0 ’short-float) *→* 0.0s0 
-(coerce 3.5L0 ’float) *→* 3.5L0 
-(coerce 7/2 ’float) *→* 3.5 
-(coerce (cons 1 2) t) *→* (1 . 2) 
+(coerce ’a ’character) → #\A 
+(coerce 4.56 ’complex) → #C(4.56 0.0) 
+(coerce 4.5s0 ’complex) → #C(4.5s0 0.0s0) 
+(coerce 7/2 ’complex) → 7/2 
+(coerce 0 ’short-float) → 0.0s0 
+(coerce 3.5L0 ’float) → 3.5L0 
+(coerce 7/2 ’float) → 3.5 
+(coerce (cons 1 2) t) → (1 . 2) 
 All the following *forms* should signal an error: 
 (coerce ’(a b c) ’(vector \* 4)) 
 (coerce #(a b c) ’(vector \* 4)) 

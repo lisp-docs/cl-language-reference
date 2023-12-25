@@ -170,16 +170,16 @@ In all three cases, is permissible for more than one *clause* to specify a match
 	      (null "a symbol, boolean false, or the empty list") 
 	      (list "a list") 
 	      (t (format nil "a(n) ~(~A~)" (type-of x)))))) 
-*→* WHAT-IS-IT 
+→ WHAT-IS-IT 
 (map ’nil #’what-is-it ’(nil (a b) 7.0 7 box)) 
 ▷ NIL is a symbol, boolean false, or the empty list. 
 ▷ (A B) is a list. 
 ▷ 7.0 is a float. 
 ▷ 7 is a(n) integer. 
 ▷ BOX is a(n) symbol. 
-*→* NIL 
+→ NIL 
 (setq x 1/3) 
-*→* 1/3 
+→ 1/3 
 (ctypecase x 
   (integer (\* x 4)) 
   (symbol (symbol-value x))) 

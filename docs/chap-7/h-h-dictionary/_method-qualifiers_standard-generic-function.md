@@ -54,8 +54,8 @@ Returns a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> o
 ```lisp
 
 (defmethod some-gf :before ((a integer)) a) 
-*→* #<STANDARD-METHOD SOME-GF (:BEFORE) (INTEGER) 42736540> 
-(method-qualifiers \*) *→* (:BEFORE) 
+→ #<STANDARD-METHOD SOME-GF (:BEFORE) (INTEGER) 42736540> 
+(method-qualifiers \*) → (:BEFORE) 
 
 ```
 **See Also:** 

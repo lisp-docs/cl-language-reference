@@ -73,8 +73,8 @@ If *from-end* is <GlossaryTerm styled={true} term={"true"}><i>true</i></Glossary
 **Examples:**
 ```lisp
 
-(search "dog" "it’s a dog’s life") *→* 7 
-(search ’(0 1) ’(2 4 6 1 3 5) :key #’oddp) *→* 2 
+(search "dog" "it’s a dog’s life") → 7 
+(search ’(0 1) ’(2 4 6 1 3 5) :key #’oddp) → 2 
 
 
 

@@ -45,9 +45,9 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(setq x 1) *→* 1 
+(setq x 1) → 1 
 (boundp ’x) *→ true* 
-(makunbound ’x) *→* X 
+(makunbound ’x) → X 
 (boundp ’x) *→ false* 
 (let ((x 2)) (boundp ’x)) *→ false* 
 (let ((x 2)) (declare (special x)) (boundp ’x)) *→ true* 

@@ -49,20 +49,20 @@
 <DictionaryLink styled={true} term={"mod"}><b>mod</b></DictionaryLink> and <DictionaryLink styled={true} term={"rem"}><b>rem</b></DictionaryLink> are the modulus and remainder functions when <GlossaryTerm styled={true} term={"number"}><i>number</i></GlossaryTerm> and *divisor* are *integers*. **Examples:**
 ```lisp
 
-(rem -1 5) *→* -1 
-(mod -1 5) *→* 4 
-(mod 13 4) *→* 1 
-(rem 13 4) *→* 1 
-(mod -13 4) *→* 3 
-(rem -13 4) *→* -1 
-(mod 13 -4) *→* -3 
-(rem 13 -4) *→* 1 
-(mod -13 -4) *→* -1 
-(rem -13 -4) *→* -1 
-(mod 13.4 1) *→* 0.4 
-(rem 13.4 1) *→* 0.4 
-(mod -13.4 1) *→* 0.6 
-(rem -13.4 1) *→* -0.4 
+(rem -1 5) → -1 
+(mod -1 5) → 4 
+(mod 13 4) → 1 
+(rem 13 4) → 1 
+(mod -13 4) → 3 
+(rem -13 4) → -1 
+(mod 13 -4) → -3 
+(rem 13 -4) → 1 
+(mod -13 -4) → -1 
+(rem -13 -4) → -1 
+(mod 13.4 1) → 0.4 
+(rem 13.4 1) → 0.4 
+(mod -13.4 1) → 0.6 
+(rem -13.4 1) → -0.4 
 
 
 

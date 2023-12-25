@@ -90,14 +90,14 @@ If a <DictionaryLink styled={true} term={"defmacro"}><b>defmacro</b></Dictionary
 ```lisp
 
 (defmacro mac1 (a b) "Mac1 multiplies and adds" 
-	  ‘(+ ,a (\* ,b 3))) *→* MAC1 
-(mac1 4 5) *→* 19 
-(documentation ’mac1 ’function) *→* "Mac1 multiplies and adds" 
-(defmacro mac2 (&optional (a 2 b) (c 3 d) &rest x) ‘’(,a ,b ,c ,d ,x)) *→* MAC2 (mac2 6) *→* (6 T 3 NIL NIL) 
-(mac2 6 3 8) *→* (6 T 3 T (8)) 
+	  ‘(+ ,a (\* ,b 3))) → MAC1 
+(mac1 4 5) → 19 
+(documentation ’mac1 ’function) → "Mac1 multiplies and adds" 
+(defmacro mac2 (&optional (a 2 b) (c 3 d) &rest x) ‘’(,a ,b ,c ,d ,x)) → MAC2 (mac2 6) → (6 T 3 NIL NIL) 
+(mac2 6 3 8) → (6 T 3 T (8)) 
 (defmacro mac3 (&whole r a &optional (b 3) &rest x &key c (d a)) 
-  ‘’(,r ,a ,b ,c ,d ,x)) *→* MAC3 
-(mac3 1 6 :d 8 :c 9 :d 10) *→* ((MAC3 1 6 :D 8 :C 9 :D 10) 1 6 9 8 (:D 8 :C 9 :D 10)) 
+  ‘’(,r ,a ,b ,c ,d ,x)) → MAC3 
+(mac3 1 6 :d 8 :c 9 :d 10) → ((MAC3 1 6 :D 8 :C 9 :D 10) 1 6 9 8 (:D 8 :C 9 :D 10)) 
 The stipulation that an embedded *destructuring lambda list* is permitted only where *ordinary lambda list* syntax would permit a parameter name but not a *list* is made to prevent ambiguity. For example, the following is not valid:  
 
 **defmacro** 
@@ -116,16 +116,16 @@ These differ slightly: the first requires that if the macro call specifies a exp
 (loser (car pool) ((+ x 1))) 
 would be a valid call for the second definition but not for the first. 
 (defmacro dm1a (&whole x) ‘’,x) 
-(macroexpand ’(dm1a)) *→* (QUOTE (DM1A)) 
+(macroexpand ’(dm1a)) → (QUOTE (DM1A)) 
 (macroexpand ’(dm1a a)) is an error. 
 (defmacro dm1b (&whole x a &optional b) ‘’(,x ,a ,b)) 
 (macroexpand ’(dm1b)) is an error. 
-(macroexpand ’(dm1b q)) *→* (QUOTE ((DM1B Q) Q NIL)) 
-(macroexpand ’(dm1b q r)) *→* (QUOTE ((DM1B Q R) Q R)) 
+(macroexpand ’(dm1b q)) → (QUOTE ((DM1B Q) Q NIL)) 
+(macroexpand ’(dm1b q r)) → (QUOTE ((DM1B Q R) Q R)) 
 (macroexpand ’(dm1b q r s)) is an error. 
 (defmacro dm2a (&whole form a b) ‘’(form ,form a ,a b ,b)) 
-(macroexpand ’(dm2a x y)) *→* (QUOTE (FORM (DM2A X Y) A X B Y)) 
-(dm2a x y) *→* (FORM (DM2A X Y) A X B Y) 
+(macroexpand ’(dm2a x y)) → (QUOTE (FORM (DM2A X Y) A X B Y)) 
+(dm2a x y) → (FORM (DM2A X Y) A X B Y) 
 (defmacro dm2b (&whole form a (&whole b (c . d) &optional (e 5)) 
 		&body f &environment env)  
 
@@ -133,7 +133,7 @@ would be a valid call for the second definition but not for the first.
 					;Note that because backquote is involved, implementations may differ 
 					;slightly in the nature (though not the functionality) of the expansion. 
 (macroexpand ’(dm2b x1 (((incf x2) x3 x4)) x5 x6)) 
-*→* (LIST\* ’(DM2B X1 (((INCF X2) X3 X4)) 
+→ (LIST\* ’(DM2B X1 (((INCF X2) X3 X4)) 
 		   X5 X6) 
 	     X1 
 	     ’((((INCF X2) X3 X4)) (SETQ X2 (+ X2 1)) (X3 X4) 5 (X5 X6))), 
@@ -141,7 +141,7 @@ T
 (let ((x1 5)) 
   (macrolet ((segundo (x) ‘(cadr ,x))) 
     (dm2b x1 (((segundo x2) x3 x4)) x5 x6))) 
-*→* ((DM2B X1 (((SEGUNDO X2) X3 X4)) X5 X6) 
+→ ((DM2B X1 (((SEGUNDO X2) X3 X4)) X5 X6) 
      5 (((SEGUNDO X2) X3 X4)) (CADR X2) (X3 X4) 5 (X5 X6)) 
 
 ```

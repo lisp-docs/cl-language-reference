@@ -54,9 +54,9 @@ If a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm
 ```lisp
 
 (defun fact (n) (if (zerop n) 1 (\* n (fact (- n 1))))) 
-*→* FACT 
+→ FACT 
 (trace fact) 
-*→* (FACT) 
+→ (FACT) 
 ;; Of course, the format of traced output is implementation-dependent. 
 (fact 3) 
 ▷ 1 Enter FACT 3 
@@ -70,7 +70,7 @@ If a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm
 
 
 ▷ 1 Exit FACT 6 
-*→* 6 
+→ 6 
 
 ```
 **Side Effects:** 

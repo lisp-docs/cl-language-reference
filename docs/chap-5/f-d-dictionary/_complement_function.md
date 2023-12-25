@@ -71,7 +71,7 @@ For example,
 
 
 
-(find-if (complement #’zerop) ’(0 0 3)) *→* 3 
+(find-if (complement #’zerop) ’(0 0 3)) → 3 
 
 
 

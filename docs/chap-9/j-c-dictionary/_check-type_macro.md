@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"check-type"}><b>check-type</b></DictionaryLink> *place typespec* [<GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>] *→* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
+<DictionaryLink styled={true} term={"check-type"}><b>check-type</b></DictionaryLink> *place typespec* [<GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>] → <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -66,7 +66,7 @@ The first time <GlossaryTerm styled={true} term={"place"}><i>place</i></Glossary
 ```lisp
 
 (setq aardvarks ’(sam harry fred)) 
-*→* (SAM HARRY FRED) 
+→ (SAM HARRY FRED) 
 (check-type aardvarks (array \* (3))) 
 ▷ Error: The value of AARDVARKS, (SAM HARRY FRED), 
 ▷ is not a 3-long array. 
@@ -75,13 +75,13 @@ The first time <GlossaryTerm styled={true} term={"place"}><i>place</i></Glossary
 ▷ 2: Return to Lisp Toplevel. 
 ▷ Debug> :CONTINUE 1 
 ▷ Use Value: #(SAM FRED HARRY) 
-*→* NIL 
+→ NIL 
 aardvarks 
-*→* #<ARRAY-T-3 13571> 
+→ #<ARRAY-T-3 13571> 
 (map ’list #’identity aardvarks) 
-*→* (SAM FRED HARRY) 
+→ (SAM FRED HARRY) 
 (setq aardvark-count ’foo) 
-*→* FOO 
+→ FOO 
 (check-type aardvark-count (integer 0 \*) "A positive integer") 
 ▷ Error: The value of AARDVARK-COUNT, FOO, is not a positive integer. 
 ▷ To continue, type :CONTINUE followed by an option number: 
@@ -96,7 +96,7 @@ aardvarks
   (check-type name (and symbol (not null)) "a name for an adder function") (check-type amount integer) 
   ‘(defun ,name (x) (+ x ,amount))) 
 (macroexpand ’(define-adder add3 3)) 
-*→* (defun add3 (x) (+ x 3)) 
+→ (defun add3 (x) (+ x 3)) 
 (macroexpand ’(define-adder 7 7)) 
 ▷ Error: The value of NAME, 7, is not a name for an adder function. ▷ To continue, type :CONTINUE followed by an option number: 
 ▷ 1: Specify a value to use instead. 
@@ -104,7 +104,7 @@ aardvarks
 ▷ Debug> :Continue 1 
 ▷ Specify a value to use instead. 
 ▷ Type a form to be evaluated and used instead: ’ADD7 
-*→* (defun add7 (x) (+ x 7)) 
+→ (defun add7 (x) (+ x 7)) 
 (macroexpand ’(define-adder add5 something)) 
 ▷ Error: The value of AMOUNT, SOMETHING, is not an integer. 
 ▷ To continue, type :CONTINUE followed by an option number: 
@@ -112,7 +112,7 @@ aardvarks
 ▷ 2: Top level. 
 ▷ Debug> :Continue 1 
 ▷ Type a form to be evaluated and used instead: 5 
-*→* (defun add5 (x) (+ x 5)) 
+→ (defun add5 (x) (+ x 5)) 
 Control is transferred to a handler. 
 
 ```

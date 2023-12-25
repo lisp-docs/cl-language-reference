@@ -146,15 +146,15 @@ If there are no <GlossaryTerm styled={true} term={"form"}><i>forms</i></Glossary
     (serious-condition (condition) 
       (format nil "~S looks serious." condition)) 
     (condition () "Hardly worth mentioning."))) 
-*→* ASSESS-CONDITION 
-(assess-condition (make-condition ’stream-error :stream \*terminal-io\*)) *→* "#<STREAM-ERROR 12352256> looks especially bad." 
+→ ASSESS-CONDITION 
+(assess-condition (make-condition ’stream-error :stream \*terminal-io\*)) → "#<STREAM-ERROR 12352256> looks especially bad." 
 (define-condition random-condition (condition) () 
   (:report (lambda (condition stream) 
 	     (declare (ignore condition)) 
 	     (princ "Yow" stream)))) 
-*→* RANDOM-CONDITION 
+→ RANDOM-CONDITION 
 (assess-condition (make-condition ’random-condition)) 
-*→* "Hardly worth mentioning." 
+→ "Hardly worth mentioning." 
 
 ```
 **See Also:** 

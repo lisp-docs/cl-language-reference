@@ -35,9 +35,9 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 
 (progn (unread-char (read-char)) (list (listen) (read-char))) 
 ▷ 1 
-*→* (T #\1) 
+→ (T #\1) 
 (progn (clear-input) (listen)) 
-*→* NIL ;Unless you’re a very fast typist! 
+→ NIL ;Unless you’re a very fast typist! 
 
 ```
 **Affected By:** 

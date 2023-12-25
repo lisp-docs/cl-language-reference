@@ -98,7 +98,7 @@ If the *directory* is a <GlossaryTerm styled={true} term={"string"}><i>string</i
 ;; the ‘host’ information in a namestring, since there is only one host. 
 (make-pathname :directory ’(:absolute "public" "games") 
 	       :name "chess" :type "db") 
-*→* #P"/public/games/chess.db" 
+→ #P"/public/games/chess.db" 
 ;; Implementation B – an implementation with access to one or more 
 ;; VMS file systems. This implementation displays ‘host’ information 
 ;; in the namestring only when the host is not the local host. 
@@ -106,11 +106,11 @@ If the *directory* is a <GlossaryTerm styled={true} term={"string"}><i>string</i
 ;; file name. 
 (make-pathname :directory ’(:absolute "PUBLIC" "GAMES") 
 	       :name "CHESS" :type "DB") 
-*→* #P"SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
+→ #P"SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
 (make-pathname :host "BOBBY" 
 	       :directory ’(:absolute "PUBLIC" "GAMES") 
 	       :name "CHESS" :type "DB") 
-*→* #P"BOBBY::SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
+→ #P"BOBBY::SYS$DISK:[PUBLIC.GAMES]CHESS.DB" 
 ;; Implementation C – an implementation with simultaneous access to 
 ;; multiple file systems from the same Lisp image. In this 
 ;; implementation, there is a convention that any text preceding the 
@@ -129,7 +129,7 @@ If the *directory* is a <GlossaryTerm styled={true} term={"string"}><i>string</i
 
 
 ▷ #P"MY-UNIX:/PUBLIC/GAMES/CHESS.DB" 
-*→* NIL 
+→ NIL 
 
 ```
 **Affected By:** 

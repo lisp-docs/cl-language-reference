@@ -149,11 +149,11 @@ The meanings and defaults for the keyword arguments to <DictionaryLink styled={t
 **Examples:**
 ```lisp
 
-(prin1-to-string "abc") *→* "\"abc\"" 
+(prin1-to-string "abc") → "\"abc\"" 
 
 
 
-(princ-to-string "abc") *→* "abc" 
+(princ-to-string "abc") → "abc" 
 
 ```
 **Affected By:** 

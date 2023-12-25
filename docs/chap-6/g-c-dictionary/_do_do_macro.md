@@ -143,17 +143,17 @@ An *implicit block* named <DictionaryLink styled={true} term={"nil"}><b>nil</b><
 
 (do ((temp-one 1 (1+ temp-one)) 
      (temp-two 0 (1- temp-two))) 
-    ((> (- temp-one temp-two) 5) temp-one)) *→* 4 
+    ((> (- temp-one temp-two) 5) temp-one)) → 4 
 
 
 
 **do, do***∗* 
 (do ((temp-one 1 (1+ temp-one)) 
      (temp-two 0 (1+ temp-one))) 
-    ((= 3 temp-two) temp-one)) *→* 3 
+    ((= 3 temp-two) temp-one)) → 3 
 (do\* ((temp-one 1 (1+ temp-one)) 
        (temp-two 0 (1+ temp-one))) 
-      ((= 3 temp-two) temp-one)) *→* 2 
+      ((= 3 temp-two) temp-one)) → 2 
 (do ((j 0 (+ j 1))) 
     (nil) ;Do forever. 
   (format t "~%Input ~D:" j) 
@@ -165,14 +165,14 @@ An *implicit block* named <DictionaryLink styled={true} term={"nil"}><b>nil</b><
 ▷ Input 1: (57 boxes) 
 ▷ Output 1: (57 BOXES) 
 ▷ Input 2: NIL 
-*→* NIL 
+→ NIL 
 (setq a-vector (vector 1 nil 3 nil)) 
 (do ((i 0 (+ i 1)) ;Sets every null element of a-vector to zero. 
      (n (array-dimension a-vector 0))) 
     ((= i n)) 
   (when (null (aref a-vector i)) 
-    (setf (aref a-vector i) 0))) *→* NIL 
-a-vector *→* #(1 0 3 0) 
+    (setf (aref a-vector i) 0))) → NIL 
+a-vector → #(1 0 3 0) 
 (do ((x e (cdr x)) 
      (oldx x x)) 
     ((null x)) 
@@ -200,7 +200,7 @@ As an example of nested iterations, consider a data structure that is a *list* o
 	 (v (cdar r) (cdr v))) 
 	((null s)) 
       (when (eq (car s) sym) 
-	(return-from ribcage-lookup (car v)))))) *→* RIBCAGE-LOOKUP 
+	(return-from ribcage-lookup (car v)))))) → RIBCAGE-LOOKUP 
 
 ```
 **See Also:** 

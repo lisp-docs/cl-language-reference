@@ -61,7 +61,7 @@ When the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> 
 ▷ [3] Return to Cloe Toplevel. 
 ▷ Choice: 1 
 ▷ Form to evaluate and use: 1 
-*→* 9 
+→ 9 
 
 ```
 **Affected By:** 

@@ -73,23 +73,23 @@ If *documentation* is supplied, it is attached to <GlossaryTerm styled={true} te
 **Examples:**
 ```lisp
 
-(defparameter \*p\* 1) *→* \*P\* 
-\*p\* *→* 1 
+(defparameter \*p\* 1) → \*P\* 
+\*p\* → 1 
 (constantp ’\*p\*) *→ false* 
-(setq \*p\* 2) *→* 2 
-(defparameter \*p\* 3) *→* \*P\* 
-\*p\* *→* 3 
-(defvar \*v\* 1) *→* \*V\* 
-\*v\* *→* 1 
+(setq \*p\* 2) → 2 
+(defparameter \*p\* 3) → \*P\* 
+\*p\* → 3 
+(defvar \*v\* 1) → \*V\* 
+\*v\* → 1 
 (constantp ’\*v\*) *→ false* 
-(setq \*v\* 2) *→* 2 
-(defvar \*v\* 3) *→* \*V\* 
-\*v\* *→* 2 
+(setq \*v\* 2) → 2 
+(defvar \*v\* 3) → \*V\* 
+\*v\* → 2 
 (defun foo () 
   (let ((\*p\* ’p) (\*v\* ’v)) 
-    (bar))) *→* FOO 
-(defun bar () (list \*p\* \*v\*)) *→* BAR 
-(foo) *→* (P V) 
+    (bar))) → FOO 
+(defun bar () (list \*p\* \*v\*)) → BAR 
+(foo) → (P V) 
 The principal operational distinction between **defparameter** and **defvar** is that **defparameter** makes an unconditional assignment to *name*, while **defvar** makes a conditional one. In practice, this means that **defparameter** is useful in situations where loading or reloading the definition would want to pick up a new value of the variable, while **defvar** is used in situations where the old value would want to be retained if the file were loaded or reloaded. For example, one might create a file which contained: 
 (defvar \*the-interesting-numbers\* ’()) 
 (defmacro define-interesting-number (name n) 

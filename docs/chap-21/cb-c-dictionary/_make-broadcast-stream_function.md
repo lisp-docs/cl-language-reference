@@ -34,14 +34,14 @@ Returns a *broadcast stream*.
 ```lisp
 
 (setq a-stream (make-string-output-stream) 
-      b-stream (make-string-output-stream)) *→* #<String Output Stream> 
+      b-stream (make-string-output-stream)) → #<String Output Stream> 
 (format (make-broadcast-stream a-stream b-stream) 
-	"this will go to both streams") *→* NIL 
-(get-output-stream-string a-stream) *→* "this will go to both streams" 
+	"this will go to both streams") → NIL 
+(get-output-stream-string a-stream) → "this will go to both streams" 
 
 
 
-(get-output-stream-string b-stream) *→* "this will go to both streams" 
+(get-output-stream-string b-stream) → "this will go to both streams" 
 
 ```
 **Exceptional Situations:** 

@@ -203,13 +203,13 @@ If two <GlossaryTerm styled={true} term={"character"}><i>characters</i></Glossar
 
 
 (stable-sort (list #\b #\A #\B #\a #\c #\C) #’char-lessp) 
-*→* (#\A #\a #\b #\B #\c #\C) 
+→ (#\A #\a #\b #\B #\c #\C) 
 (stable-sort (list #\b #\A #\B #\a #\c #\C) #’char<) 
-*→* (#\A #\B #\C #\a #\b #\c) ;Implementation A 
-*→* (#\a #\b #\c #\A #\B #\C) ;Implementation B 
-*→* (#\a #\A #\b #\B #\c #\C) ;Implementation C 
-*→* (#\A #\a #\B #\b #\C #\c) ;Implementation D 
-*→* (#\A #\B #\a #\b #\C #\c) ;Implementation E 
+→ (#\A #\B #\C #\a #\b #\c) ;Implementation A 
+→ (#\a #\b #\c #\A #\B #\C) ;Implementation B 
+→ (#\a #\A #\b #\B #\c #\C) ;Implementation C 
+→ (#\A #\a #\B #\b #\C #\c) ;Implementation D 
+→ (#\A #\B #\a #\b #\C #\c) ;Implementation E 
 
 ```
 **Exceptional Situations:** 

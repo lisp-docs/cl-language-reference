@@ -62,9 +62,9 @@ If <GlossaryTerm styled={true} term={"identifier"}><i>identifier</i></GlossaryTe
       (format t "~S is named ~S" r (restart-name r))) 
   (my-restart () nil)) 
 ▷ #<RESTART 32307325> is named MY-RESTART 
-*→* NIL 
+→ NIL 
 (find-restart ’my-restart) 
-*→* NIL 
+→ NIL 
 
 ```
 **Affected By:** 

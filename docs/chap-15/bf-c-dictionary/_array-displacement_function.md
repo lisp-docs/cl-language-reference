@@ -41,20 +41,20 @@ If <DictionaryLink styled={true} term={"array-displacement"}><b>array-displaceme
 **Examples:**
 ```lisp
 
-(setq a1 (make-array 5)) *→* #<ARRAY 5 simple 46115576> 
+(setq a1 (make-array 5)) → #<ARRAY 5 simple 46115576> 
 (setq a2 (make-array 4 :displaced-to a1 
 		     :displaced-index-offset 1)) 
-*→* #<ARRAY 4 indirect 46117134> 
+→ #<ARRAY 4 indirect 46117134> 
 (array-displacement a2) 
-*→* #<ARRAY 5 simple 46115576>, 1 
+→ #<ARRAY 5 simple 46115576>, 1 
 (setq a3 (make-array 2 :displaced-to a2 
 		     :displaced-index-offset 2)) 
-*→* #<ARRAY 2 indirect 46122527> 
+→ #<ARRAY 2 indirect 46122527> 
 
 
 
 (array-displacement a3) 
-*→* #<ARRAY 4 indirect 46117134>, 2 
+→ #<ARRAY 4 indirect 46117134>, 2 
 
 ```
 **Exceptional Situations:** 

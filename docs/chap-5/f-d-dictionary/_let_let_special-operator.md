@@ -189,15 +189,15 @@ The special form <DictionaryLink styled={true} term={"let"}><b>let</b></Dictiona
 **Examples:**
 ```lisp
 
-(setq a ’top) *→* TOP 
-(defun dummy-function () a) *→* DUMMY-FUNCTION 
+(setq a ’top) → TOP 
+(defun dummy-function () a) → DUMMY-FUNCTION 
 (let ((a ’inside) (b a)) 
-  (format nil "~S ~S ~S" a b (dummy-function))) *→* "INSIDE TOP TOP" 
+  (format nil "~S ~S ~S" a b (dummy-function))) → "INSIDE TOP TOP" 
 (let\* ((a ’inside) (b a)) 
-       (format nil "~S ~S ~S" a b (dummy-function))) *→* "INSIDE INSIDE TOP" 
+       (format nil "~S ~S ~S" a b (dummy-function))) → "INSIDE INSIDE TOP" 
 (let ((a ’inside) (b a)) 
   (declare (special a)) 
-  (format nil "~S ~S ~S" a b (dummy-function))) *→* "INSIDE TOP INSIDE" 
+  (format nil "~S ~S ~S" a b (dummy-function))) → "INSIDE TOP INSIDE" 
 The code 
 (let (x) 
   Data and Control 

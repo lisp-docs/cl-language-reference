@@ -34,8 +34,8 @@ Returns the current rehash size of *hash-table*, suitable for use in a call to <
 ```lisp
 
 (setq table (make-hash-table :size 100 :rehash-size 1.4)) 
-*→* #<HASH-TABLE EQL 0/100 2556371> 
-(hash-table-rehash-size table) *→* 1.4 
+→ #<HASH-TABLE EQL 0/100 2556371> 
+(hash-table-rehash-size table) → 1.4 
 
 ```
 **Exceptional Situations:** 

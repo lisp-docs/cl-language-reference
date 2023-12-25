@@ -83,7 +83,7 @@ The *format-control* and *format-arguments* are used report the <GlossaryTerm st
 (with-simple-restart (abort "Return to command level ~D." level) 
 (let ((form (prog2 (fresh-line) (read) (fresh-line)))) 
 (prin1 (eval form))))))) 
-*→* READ-EVAL-PRINT-LOOP 
+→ READ-EVAL-PRINT-LOOP 
 (read-eval-print-loop 1) 
 (+ ’a 3) 
 ▷ Error: The argument, A, to the function + was of the wrong type. ▷ The function expected a number. 
@@ -111,7 +111,7 @@ COMPUTE-POWER-OF-2
 <i>.</i> 1: Give up on computing 2<i><sup>∧</sup></i>10000. 
 ▷ 2: Return to Lisp Toplevel 
 ▷ Debug> :continue 1 
-*→* SOMETHING-BIG 
+→ SOMETHING-BIG 
 
 ```
 **See Also:** 
@@ -252,7 +252,7 @@ The **continue** <GlossaryTerm styled={true} term={"restart"}><i>restart</i></Gl
 (cond ((not (floatp x)) 
 (cerror "Try floating it." "~D is not a float." x) 
 (float x)) 
-(t x)))) *→* 3.0 
+(t x)))) → 3.0 
 
 ```
 **See Also:** 
@@ -286,8 +286,8 @@ This <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> 
 **Examples:**
 ```lisp
  
-(defvar \*all-quiet\* nil) *→* \*ALL-QUIET\* 
-(defvar \*saved-warnings\* ’()) *→* \*SAVED-WARNINGS\* 
+(defvar \*all-quiet\* nil) → \*ALL-QUIET\* 
+(defvar \*saved-warnings\* ’()) → \*SAVED-WARNINGS\* 
 (defun quiet-warning-handler (c) 
 (when \*all-quiet\* 
 (let ((r (find-restart ’muffle-warning c))) 
@@ -297,14 +297,14 @@ This <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> 
 (when r 
 (push c \*saved-warnings\*) 
 (invoke-restart r))))) 
-*→* CUSTOM-WARNING-HANDLER 
+→ CUSTOM-WARNING-HANDLER 
 (defmacro with-quiet-warnings (&body forms) 
 ‘(let ((\*all-quiet\* t) 
 (\*saved-warnings\* ’())) 
 (handler-bind ((warning #’quiet-warning-handler)) 
 ,@forms 
 \*saved-warnings\*))) 
-*→* WITH-QUIET-WARNINGS 
+→ WITH-QUIET-WARNINGS 
 (setq saved 
 (with-quiet-warnings 
 (warn "Situation #1.") 
@@ -312,11 +312,11 @@ This <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> 
 (warn "Situation #2.")) 
 (warn "Situation #3."))) 
 ▷ Warning: Situation #2. 
-*→* (#<SIMPLE-WARNING 42744421> #<SIMPLE-WARNING 42744365>) 
+→ (#<SIMPLE-WARNING 42744421> #<SIMPLE-WARNING 42744365>) 
 (dolist (s saved) (format t "~&~A~%" s)) 
 ▷ Situation #3. 
 ▷ Situation #1. 
-*→* NIL 
+→ NIL 
 
 ```
 **See Also:** 
@@ -359,11 +359,11 @@ The **store-value** <GlossaryTerm styled={true} term={"restart"}><i>restart</i><
  
 (type-error-expected-type c)))) 
 (invoke-restart r v)) 
-(error ()))))) *→* TYPE-ERROR-AUTO-COERCE 
+(error ()))))) → TYPE-ERROR-AUTO-COERCE 
 (let ((x 3)) 
 (handler-bind ((type-error #’type-error-auto-coerce)) 
 (check-type x float) 
-x)) *→* 3.0 
+x)) → 3.0 
 
 ```
 **See Also:** 
@@ -480,8 +480,8 @@ When <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTe
 ;;; Example of the ABORT retart 
 (defmacro abort-on-error (&body forms) 
   ‘(handler-bind ((error #’abort)) 
-     ,@forms)) *→* ABORT-ON-ERROR 
-(abort-on-error (+ 3 5)) *→* 8 
+     ,@forms)) → ABORT-ON-ERROR 
+(abort-on-error (+ 3 5)) → 8 
 (abort-on-error (error "You lose.")) 
 ▷ Returned to Lisp Top Level. 
 ;;; Example of the CONTINUE restart 
@@ -490,7 +490,7 @@ When <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTe
     (setq n (- n)) 
     (cerror "Return sqrt(~D) instead." "Tried to take sqrt(-~D)." n)) 
   (sqrt n)) 
-(real-sqrt 4) *→* 2 
+(real-sqrt 4) → 2 
 (real-sqrt -9) 
 ▷ Error: Tried to take sqrt(-9). 
 ▷ To continue, type :CONTINUE followed by an option number: 
@@ -498,13 +498,13 @@ When <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTe
 ▷ 2: Return to Lisp Toplevel. 
 ▷ Debug> (continue) 
 ▷ Return sqrt(9) instead. 
-*→* 3 
+→ 3 
 
 
 
 **abort, continue, muffle-warning, store-value, use-value** 
 (handler-bind ((error #’(lambda (c) (continue)))) 
-  (real-sqrt -9)) *→* 3 
+  (real-sqrt -9)) → 3 
 ;;; Example of the MUFFLE-WARNING restart 
 (defun count-down (x) 
   (do ((counter x (1- counter))) 
@@ -512,26 +512,26 @@ When <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTe
     (when (= counter 1) 
       (warn "Almost done")) 
     (format t "~&~D~%" counter))) 
-*→* COUNT-DOWN 
+→ COUNT-DOWN 
 (count-down 3) 
 ▷ 3 
 ▷ 2 
 ▷ Warning: Almost done 
 ▷ 1 
-*→* DONE 
+→ DONE 
 (defun ignore-warnings-while-counting (x) 
   (handler-bind ((warning #’ignore-warning)) 
     (count-down x))) 
-*→* IGNORE-WARNINGS-WHILE-COUNTING 
+→ IGNORE-WARNINGS-WHILE-COUNTING 
 (defun ignore-warning (condition) 
   (declare (ignore condition)) 
   (muffle-warning)) 
-*→* IGNORE-WARNING 
+→ IGNORE-WARNING 
 (ignore-warnings-while-counting 3) 
 ▷ 3 
 ▷ 2 
 ▷ 1 
-*→* DONE 
+→ DONE 
 ;;; Example of the STORE-VALUE and USE-VALUE restarts 
 (defun careful-symbol-value (symbol) 
   (check-type symbol symbol) 
@@ -550,9 +550,9 @@ When <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTe
     (store-value (value) 
       :report "Specify a value to store and use in the future." 
       (setf (symbol-value symbol) value)))) 
-(setq a 1234) *→* 1234 
-(careful-symbol-value ’a) *→* 1234 
-(makunbound ’a) *→* A 
+(setq a 1234) → 1234 
+(careful-symbol-value ’a) → 1234 
+(makunbound ’a) → A 
 (careful-symbol-value ’a) 
 ▷ Error: A is not bound. 
 ▷ To continue, type :CONTINUE followed by an option number. 
@@ -560,7 +560,7 @@ When <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTe
 ▷ 2: Specify a value to store and use in the future. 
 ▷ 3: Return to Lisp Toplevel. 
 ▷ Debug> (use-value 12) 
-*→* 12 
+→ 12 
 (careful-symbol-value ’a) 
 ▷ Error: A is not bound. 
 ▷ To continue, type :CONTINUE followed by an option number. 
@@ -568,9 +568,9 @@ When <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTe
 ▷ 2: Specify a value to store and use in the future. 
 ▷ 3: Return to Lisp Toplevel. 
 ▷ Debug> (store-value 24) 
-*→* 24 
+→ 24 
 (careful-symbol-value ’a) 
-*→* 24 
+→ 24 
 ;;; Example of the USE-VALUE restart 
 (defun add-symbols-with-default (default &rest symbols) 
   (handler-bind ((sys:unbound-symbol 
@@ -578,9 +578,9 @@ When <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTe
 		      (declare (ignore c)) 
 		      (use-value default)))) 
     (apply #’+ (mapcar #’careful-symbol-value symbols)))) 
-*→* ADD-SYMBOLS-WITH-DEFAULT 
-(setq x 1 y 2) *→* 2 
-(add-symbols-with-default 3 ’x ’y ’z) *→* 6 
+→ ADD-SYMBOLS-WITH-DEFAULT 
+(setq x 1 y 2) → 2 
+(add-symbols-with-default 3 ’x ’y ’z) → 6 
 
 ```
 **Side Effects:** 

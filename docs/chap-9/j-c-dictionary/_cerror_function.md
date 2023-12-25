@@ -46,14 +46,14 @@ If *datum* is a <GlossaryTerm styled={true} term={"condition"}><i>condition</i><
     **cerror** 
     (cerror "Return sqrt(~D) instead." "Tried to take sqrt(-~D)." n)) (sqrt n)) 
 (real-sqrt 4) 
-*→* 2.0 
+→ 2.0 
 (real-sqrt -9) 
 ▷ Correctable error in REAL-SQRT: Tried to take sqrt(-9). 
 ▷ Restart options: 
 ▷ 1: Return sqrt(9) instead. 
 ▷ 2: Top level. 
 ▷ Debug> :continue 1 
-*→* 3.0 
+→ 3.0 
 (define-condition not-a-number (error) 
   ((argument :reader not-a-number-argument :initarg :argument)) (:report (lambda (condition stream) 
 									   (format stream "~S is not a number." 
@@ -72,7 +72,7 @@ If *datum* is a <GlossaryTerm styled={true} term={"condition"}><i>condition</i><
 ▷ 2: Top level. 
 ▷ Debug> :continue 1 
 ▷ Type a number: 1/2 
-*→* 1/2 
+→ 1/2 
 (defun assure-large-number (n) 
   (loop (when (and (numberp n) (> n 73)) (return n)) 
    (cerror "Enter a number~:[~; a bit larger than ~D~]." 
@@ -86,7 +86,7 @@ If *datum* is a <GlossaryTerm styled={true} term={"condition"}><i>condition</i><
 
 **cerror** 
 (assure-large-number 10000) 
-*→* 10000 
+→ 10000 
 (assure-large-number ’a) 
 ▷ Correctable error in ASSURE-LARGE-NUMBER: A is not a large number. 
 ▷ Restart options: 
@@ -94,7 +94,7 @@ If *datum* is a <GlossaryTerm styled={true} term={"condition"}><i>condition</i><
 ▷ 2: Top level. 
 ▷ Debug> :continue 1 
 ▷ Type a large number: 88 
-*→* 88 
+→ 88 
 (assure-large-number 37) 
 ▷ Correctable error in ASSURE-LARGE-NUMBER: 37 is not a large number. 
 ▷ Restart options: 
@@ -102,7 +102,7 @@ If *datum* is a <GlossaryTerm styled={true} term={"condition"}><i>condition</i><
 ▷ 2: Top level. 
 ▷ Debug> :continue 1 
 ▷ Type a large number: 259 
-*→* 259 
+→ 259 
 (define-condition not-a-large-number (error) 
   ((argument :reader not-a-large-number-argument :initarg :argument)) 
   (:report (lambda (condition stream) 
@@ -129,7 +129,7 @@ If *datum* is a <GlossaryTerm styled={true} term={"condition"}><i>condition</i><
 ▷ 2: Top level. 
 ▷ Debug> :continue 1 
 ▷ Type a large number: 88 
-*→* 88 
+→ 88 
 (assure-large-number 37) 
 ▷ Correctable error in ASSURE-LARGE-NUMBER: A is not a large number. 
 ▷ Restart options: 
@@ -137,7 +137,7 @@ If *datum* is a <GlossaryTerm styled={true} term={"condition"}><i>condition</i><
 ▷ 2: Top level. 
 ▷ Debug> :continue 1 
 ▷ Type a large number: 259 
-*→* 259 
+→ 259 
 
 ```
 **Affected By:** 

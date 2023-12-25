@@ -55,7 +55,7 @@ One example of the use of **eval-when** is that for the compiler to be able to r
   **eval-when** 
   (set-macro-character #\$ #’(lambda (stream char) 
 			       (declare (ignore char)) 
-			       (list ’dollar (read stream))))) *→* T 
+			       (list ’dollar (read stream))))) → T 
 This causes the call to **set-macro-character** to be executed in the compiler’s execution environment, thereby modifying its reader syntax table. 
 ;;; The EVAL-WHEN in this case is not at toplevel, so only the :EXECUTE 
 ;;; keyword is considered. At compile time, this has no effect. 

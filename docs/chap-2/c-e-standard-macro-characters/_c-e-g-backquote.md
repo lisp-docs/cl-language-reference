@@ -35,7 +35,7 @@ If a comma is immediately followed by an <GlossaryTerm styled={true} term={"at-s
 
 
 
-*→* (x (a b c) a b c foo b bar (b c) baz b c)  
+→ (x (a b c) a b c foo b bar (b c) baz b c)  
 
 
 

@@ -72,13 +72,13 @@ If the *pathspec designator* is a *file stream* created by opening a *logical pa
 ;; situation where no appropriate namestring could be constructed for use 
 ;; with #P. 
 (setq p1 (pathname "test")) 
-*→* #P"CHOCOLATE:TEST" ; with case canonicalization (e.g., VMS) 
+→ #P"CHOCOLATE:TEST" ; with case canonicalization (e.g., VMS) 
 <i><sup>or</sup>→</i> #P"VANILLA:test" ; without case canonicalization (e.g., Unix) 
 <i><sup>or</sup>→</i> #P"test" 
 <i><sup>or</sup>→</i> #S(PATHNAME :HOST "STRAWBERRY" :NAME "TEST") 
 <i><sup>or</sup>→</i> #S(PATHNAME :HOST "BELGIAN-CHOCOLATE" :NAME "test") 
 (setq p2 (pathname "test")) 
-*→* #P"CHOCOLATE:TEST" 
+→ #P"CHOCOLATE:TEST" 
 <i><sup>or</sup>→</i> #P"VANILLA:test" 
 <i><sup>or</sup>→</i> #P"test" 
 <i><sup>or</sup>→</i> #S(PATHNAME :HOST "STRAWBERRY" :NAME "TEST") 
@@ -90,7 +90,7 @@ If the *pathspec designator* is a *file stream* created by opening a *logical pa
 <i><sup>or</sup>→ false</i> 
 (with-open-file (stream "test" :direction :output) 
   (pathname stream)) 
-*→* #P"ORANGE-CHOCOLATE:>Gus>test.lisp.newest" 
+→ #P"ORANGE-CHOCOLATE:>Gus>test.lisp.newest" 
 
 ```
 **See Also:** 

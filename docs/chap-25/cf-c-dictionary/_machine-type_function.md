@@ -30,7 +30,7 @@ Returns a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTer
 ```lisp
 
 (machine-type) 
-*→* "DEC PDP-10" 
+→ "DEC PDP-10" 
 <i><sup>or</sup>→</i> "Symbolics LM-2" 
 
 ```

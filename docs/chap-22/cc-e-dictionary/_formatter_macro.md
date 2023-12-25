@@ -51,13 +51,13 @@ where *arguments-tail* is either the tail of <GlossaryTerm styled={true} term={"
 
 (funcall (formatter "~&~A~A") \*standard-output\* ’a ’b ’c) 
 ▷ AB 
-*→* (C) 
+→ (C) 
 
 
 
 (format t (formatter "~&~A~A") ’a ’b ’c) 
 ▷ AB 
-*→* NIL 
+→ NIL 
 
 ```
 **Exceptional Situations:** 

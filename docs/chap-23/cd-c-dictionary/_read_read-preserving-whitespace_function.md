@@ -95,16 +95,16 @@ Both functions return the <GlossaryTerm styled={true} term={"object"}><i>object<
 
 (read) 
 ▷ ’a 
-*→* (QUOTE A) 
-(with-input-from-string (is " ") (read is nil ’the-end)) *→* THE-END 
+→ (QUOTE A) 
+(with-input-from-string (is " ") (read is nil ’the-end)) → THE-END 
 (defun skip-then-read-char (s c n) 
   (if (char= c #\\&#123;) (read s t nil t) (read-preserving-whitespace s)) 
-	     (read-char-no-hang s)) *→* SKIP-THEN-READ-CHAR 
+	     (read-char-no-hang s)) → SKIP-THEN-READ-CHAR 
 	     (let ((\*readtable\* (copy-readtable nil))) 
 	       (set-dispatch-macro-character #\# #\\&#123; #’skip-then-read-char) 
 					     (set-dispatch-macro-character #\# #\\&#125; #’skip-then-read-char) 
 									   (with-input-from-string (is "#\&#123;123 x #\&#125;123 y") 
-									     (format t "~S ~S" (read is) (read is)))) *→* #\x, #\Space, NIL 
+									     (format t "~S ~S" (read is) (read is)))) → #\x, #\Space, NIL 
 					     As an example, consider this *reader macro* definition: 
 					     (defun slash-reader (stream char) 
 					       (declare (ignore char)) 

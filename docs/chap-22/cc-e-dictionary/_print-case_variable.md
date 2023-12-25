@@ -36,7 +36,7 @@ The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <D
 (defun test-print-case () 
   (dolist (\*print-case\* ’(:upcase :downcase :capitalize)) 
     (format t "~&~S ~S~%" ’this-and-that ’|And-something-elSE|))) 
-*→* TEST-PC 
+→ TEST-PC 
 ;; Although the choice of which characters to escape is specified by 
 ;; \*PRINT-CASE\*, the choice of how to escape those characters 
 ;; (i.e., whether single escapes or multiple escapes are used) 
@@ -49,12 +49,12 @@ The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <D
 ▷ THIS-AND-THAT |And-something-elSE| 
 ▷ this-and-that a\n\d-\s\o\m\e\t\h\i\n\g-\e\lse 
 ▷ This-And-That A\n\d-\s\o\m\e\t\h\i\n\g-\e\lse 
-*→* NIL 
+→ NIL 
 (test-print-case) ;Implementation B 
 ▷ THIS-AND-THAT |And-something-elSE| 
 ▷ this-and-that a|nd-something-el|se 
 ▷ This-And-That A|nd-something-el|se 
-*→* NIL 
+→ NIL 
 
 ```
 **See Also:** 

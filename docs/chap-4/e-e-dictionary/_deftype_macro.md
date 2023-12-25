@@ -91,10 +91,10 @@ expansion of a *type specifier* is not defined fully at compile time (perhaps be
 
 (defun equidimensional (a) 
   (or (< (array-rank a) 2) 
-      (apply #’= (array-dimensions a)))) *→* EQUIDIMENSIONAL 
+      (apply #’= (array-dimensions a)))) → EQUIDIMENSIONAL 
 (deftype square-matrix (&optional type size) 
   ‘(and (array ,type (,size ,size)) 
-	(satisfies equidimensional))) *→* SQUARE-MATRIX 
+	(satisfies equidimensional))) → SQUARE-MATRIX 
 
 ```
 **See Also:** 

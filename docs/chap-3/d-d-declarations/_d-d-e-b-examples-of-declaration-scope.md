@@ -8,7 +8,7 @@ Here is an example illustrating the *scope* of *bound declarations*.
 	  (x 3)) ;[5] 5th occurrence of x 
       (declare (special x)) ;[6] 6th occurrence of x 
       (list old-x x)))) ;[7] 7th occurrence of x 
-*→* (2 3) 
+→ (2 3) 
 The first occurrence of x *establishes* a *dynamic binding* of x because of the **special** *declaration* for x in the second line. The third occurrence of x *establishes* a *lexical binding* of x (because there is no **special** *declaration* in the corresponding **let** *form*). The fourth occurrence of x *x* is a reference to the *lexical binding* of x established in the third line. The fifth occurrence of x *establishes* a *dynamic binding* of *x* for the body of the **let** *form* that begins on that line because of the **special** *declaration* for x in the sixth line. The reference to x in the fourth line is not affected by the **special** *declaration* in the sixth line because that reference is not within the “would-be *lexical scope*” of the *variable* x in the fifth line. The reference to x in the seventh line is a reference to the *dynamic binding* of *x established* in the fifth line. 
 Here is another example, to illustrate the *scope* of a *free declaration*. In the following: 
 (lambda (&optional (x (foo 1))) ;[1] 
@@ -31,7 +31,7 @@ Finally, here is an example that shows the *scope* of *declarations* in an *iter
   (let ((x 2)) ;[3] 
     (dotimes (i x x) ;[4] 
       (declare (special x))))) ;[5] 
-*→* 1 
+→ 1 
 In this example, the first reference to x on the fourth line is to the *lexical binding* of x established on the third line. However, the second occurrence of x on the fourth line lies within the *scope* of the *free declaration* on the fifth line (because this is the *result-form* of the **dotimes**) and therefore refers to the *dynamic binding* of x.  
 
 

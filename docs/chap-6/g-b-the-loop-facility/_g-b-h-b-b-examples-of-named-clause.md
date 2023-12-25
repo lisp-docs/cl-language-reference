@@ -6,6 +6,6 @@
       do (print i) 
       do (return-from max ’done)) 
 ▷ 1 
-*→* DONE 
+→ DONE 
 
 ```

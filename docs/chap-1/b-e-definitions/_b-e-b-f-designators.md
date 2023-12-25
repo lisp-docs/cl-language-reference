@@ -38,7 +38,7 @@ For example, <DictionaryLink styled={true} term={"mapcar"}><b>mapcar</b></Dictio
 
 
 
-(+ x 1)) *→* ADD-SOME 
+(+ x 1)) → ADD-SOME 
 
 
 
@@ -46,7 +46,7 @@ For example, <DictionaryLink styled={true} term={"mapcar"}><b>mapcar</b></Dictio
 
 
 
-*→* (2 3 4 5) 
+→ (2 3 4 5) 
 
 
 

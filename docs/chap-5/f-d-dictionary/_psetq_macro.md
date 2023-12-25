@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"psetq"}><b>psetq</b></DictionaryLink> *\{↓pair\}*\* *→* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
+<DictionaryLink styled={true} term={"psetq"}><b>psetq</b></DictionaryLink> *\{↓pair\}*\* → <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -69,27 +69,27 @@ If any *var* refers to a <GlossaryTerm styled={true} term={"binding"}><i>binding
 ;; As a matter of style, many programmers would prefer SETQ 
 ;; in a simple situation like this where parallel assignment 
 ;; is not needed, but the two have equivalent effect. 
-(psetq a 1 b 2 c 3) *→* NIL 
-a *→* 1 
-b *→* 2 
-c *→* 3 
+(psetq a 1 b 2 c 3) → NIL 
+a → 1 
+b → 2 
+c → 3 
 ;; Use of PSETQ to update values by parallel assignment. 
 ;; The effect here is very different than if SETQ had been used. 
-(psetq a (1+ b) b (1+ a) c (+ a b)) *→* NIL 
-a *→* 3 
-b *→* 2 
-c *→* 3 
+(psetq a (1+ b) b (1+ a) c (+ a b)) → NIL 
+a → 3 
+b → 2 
+c → 3 
 ;; Use of PSETQ on a symbol macro. 
 (let ((x (list 10 20 30))) 
   (symbol-macrolet ((y (car x)) (z (cadr x))) 
     (psetq y (1+ z) z (1+ y)) 
     (list x y z))) 
-*→* ((21 11 30) 21 11) 
+→ ((21 11 30) 21 11) 
 ;; Use of parallel assignment to swap values of A and B. 
 (let ((a 1) (b 2)) 
   (psetq a b b a) 
   (values a b)) 
-*→* 2, 1 
+→ 2, 1 
 
 ```
 **Side Effects:** 

@@ -45,12 +45,12 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 **Examples:**
 ```lisp
 
-(defun f (x) x) *→* F 
+(defun f (x) x) → F 
 (compiled-function-p #’f) 
 *→ false* 
 <i><sup>or</sup>→ true</i> 
 (compiled-function-p ’f) *→ false* 
-(compile ’f) *→* F 
+(compile ’f) → F 
 (compiled-function-p #’f) *→ true* 
 (compiled-function-p ’f) *→ false* 
 (compiled-function-p (compile nil ’(lambda (x) x))) 

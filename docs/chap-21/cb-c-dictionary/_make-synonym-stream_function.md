@@ -35,15 +35,15 @@ Returns a *synonym stream* whose *synonym stream symbol* is <GlossaryTerm styled
 
 (setq a-stream (make-string-input-stream "a-stream") 
       b-stream (make-string-input-stream "b-stream")) 
-*→* #<String Input Stream> 
+→ #<String Input Stream> 
 (setq s-stream (make-synonym-stream ’c-stream)) 
-*→* #<SYNONYM-STREAM for C-STREAM> 
+→ #<SYNONYM-STREAM for C-STREAM> 
 (setq c-stream a-stream) 
-*→* #<String Input Stream> 
-(read s-stream) *→* A-STREAM 
+→ #<String Input Stream> 
+(read s-stream) → A-STREAM 
 (setq c-stream b-stream) 
-*→* #<String Input Stream> 
-(read s-stream) *→* B-STREAM 
+→ #<String Input Stream> 
+(read s-stream) → B-STREAM 
 
 ```
 **Exceptional Situations:** 

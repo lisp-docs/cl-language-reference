@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"tagbody"}><b>tagbody</b></DictionaryLink> *\{tag | statement\}*\* *→* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
+<DictionaryLink styled={true} term={"tagbody"}><b>tagbody</b></DictionaryLink> *\{tag | statement\}*\* → <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -64,23 +64,23 @@ The determination of which elements of the body are <GlossaryTerm styled={true} 
 
 
   val) 
-*→* 15 
+→ 15 
 (defun f1 (flag) 
   (let ((n 1)) 
     (tagbody 
        (setq n (f2 flag #’(lambda () (go out)))) 
      out 
        (prin1 n)))) 
-*→* F1 
+→ F1 
 (defun f2 (flag escape) 
   (if flag (funcall escape) 2)) 
-*→* F2 
+→ F2 
 (f1 nil) 
 ▷ 2 
-*→* NIL 
+→ NIL 
 (f1 t) 
 ▷ 1 
-*→* NIL 
+→ NIL 
 
 ```
 **See Also:** 

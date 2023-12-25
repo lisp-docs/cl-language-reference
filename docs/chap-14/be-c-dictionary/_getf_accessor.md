@@ -77,22 +77,22 @@
 **Examples:**
 ```lisp
 
-(setq x ’()) *→* NIL 
-(getf x ’prop1) *→* NIL 
-(getf x ’prop1 7) *→* 7 
-(getf x ’prop1) *→* NIL 
-(setf (getf x ’prop1) ’val1) *→* VAL1 
+(setq x ’()) → NIL 
+(getf x ’prop1) → NIL 
+(getf x ’prop1 7) → 7 
+(getf x ’prop1) → NIL 
+(setf (getf x ’prop1) ’val1) → VAL1 
 (eq (getf x ’prop1) ’val1) *→ true* 
-(getf x ’prop1) *→* VAL1 
-(getf x ’prop1 7) *→* VAL1 
-x *→* (PROP1 VAL1) 
+(getf x ’prop1) → VAL1 
+(getf x ’prop1 7) → VAL1 
+x → (PROP1 VAL1) 
 ;; Examples of implementation variation permitted. 
-(setq foo (list ’a ’b ’c ’d ’e ’f)) *→* (A B C D E F) 
-(setq bar (cddr foo)) *→* (C D E F) 
+(setq foo (list ’a ’b ’c ’d ’e ’f)) → (A B C D E F) 
+(setq bar (cddr foo)) → (C D E F) 
 (remf foo ’c) *→ true* 
-foo *→* (A B E F) 
+foo → (A B E F) 
 bar 
-*→* (C D E F) 
+→ (C D E F) 
 <i><sup>or</sup>→</i> (C) 
 <i><sup>or</sup>→</i> (NIL) 
 <i><sup>or</sup>→</i> (C NIL) 
@@ -130,7 +130,7 @@ Note that while supplying a *default* argument to <DictionaryLink styled={true} 
 
 
 
-plist) *→* (COUNT 1) 
+plist) → (COUNT 1) 
 
 
 

@@ -133,24 +133,24 @@ Any <GlossaryTerm styled={true} term={"tag"}><i>tag</i></GlossaryTerm> in the bo
 **Examples:**
 ```lisp
 
-(make-package ’temp :use nil) *→* #<PACKAGE "TEMP"> 
-(intern "SHY" ’temp) *→* TEMP::SHY, NIL ;SHY will be an internal symbol 
+(make-package ’temp :use nil) → #<PACKAGE "TEMP"> 
+(intern "SHY" ’temp) → TEMP::SHY, NIL ;SHY will be an internal symbol 
 					;in the package TEMP 
-(export (intern "BOLD" ’temp) ’temp) *→* T ;BOLD will be external 
+(export (intern "BOLD" ’temp) ’temp) → T ;BOLD will be external 
 (let ((lst ())) 
   (do-symbols (s (find-package ’temp)) (push s lst)) 
   lst) 
-*→* (TEMP::SHY TEMP:BOLD) 
+→ (TEMP::SHY TEMP:BOLD) 
 <i><sup>or</sup>→</i> (TEMP:BOLD TEMP::SHY) 
 (let ((lst ())) 
   (do-external-symbols (s (find-package ’temp) lst) (push s lst)) 
   lst) 
-*→* (TEMP:BOLD) 
+→ (TEMP:BOLD) 
 (let ((lst ())) 
   (do-all-symbols (s lst) 
     (when (eq (find-package ’temp) (symbol-package s)) (push s lst))) 
   lst) 
-*→* (TEMP::SHY TEMP:BOLD) 
+→ (TEMP::SHY TEMP:BOLD) 
 <i><sup>or</sup>→</i> (TEMP:BOLD TEMP::SHY) 
 
 

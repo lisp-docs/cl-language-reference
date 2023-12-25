@@ -153,17 +153,17 @@ The *remainder* is an *integer* if both x and y are *integers*, is a <GlossaryTe
 **Examples:**
 ```lisp
 
-(floor 3/2) *→* 1, 1/2 
-(ceiling 3 2) *→* 2, -1 
-(ffloor 3 2) *→* 1.0, 1 
-(ffloor -4.7) *→* -5.0, 0.3 
-(ffloor 3.5d0) *→* 3.0d0, 0.5d0 
-(fceiling 3/2) *→* 2.0, -1/2 
-(truncate 1) *→* 1, 0 
-(truncate .5) *→* 0, 0.5 
-(round .5) *→* 0, 0.5 
-(ftruncate -7 2) *→* -3.0, -1 
-(fround -7 2) *→* -4.0, 1 
+(floor 3/2) → 1, 1/2 
+(ceiling 3 2) → 2, -1 
+(ffloor 3 2) → 1.0, 1 
+(ffloor -4.7) → -5.0, 0.3 
+(ffloor 3.5d0) → 3.0d0, 0.5d0 
+(fceiling 3/2) → 2.0, -1/2 
+(truncate 1) → 1, 0 
+(truncate .5) → 0, 0.5 
+(round .5) → 0, 0.5 
+(ftruncate -7 2) → -3.0, -1 
+(fround -7 2) → -4.0, 1 
 (dolist (n ’(2.6 2.5 2.4 0.7 0.3 -0.3 -0.7 -2.4 -2.5 -2.6)) 
   (format t "~&~4,1@F ~2,’ D ~2,’ D ~2,’ D ~2,’ D" 
 	  n (floor n) (ceiling n) (truncate n) (round n))) 
@@ -177,7 +177,7 @@ The *remainder* is an *integer* if both x and y are *integers*, is a <GlossaryTe
 ▷ -2.4 -3 -2 -2 -2 
 ▷ -2.5 -3 -2 -2 -2 
 ▷ -2.6 -3 -2 -2 -3 
-*→* NIL 
+→ NIL 
 
 ```
 **Notes:** 
@@ -208,11 +208,11 @@ but they return different remainders as the second value. For example:
 
 
 
-(floor 5 2) *→* 2, 1 
+(floor 5 2) → 2, 1 
 
 
 
-(floor (/ 5 2)) *→* 2, 1/2 
+(floor (/ 5 2)) → 2, 1/2 
 
 
 

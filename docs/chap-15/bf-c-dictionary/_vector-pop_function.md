@@ -36,11 +36,11 @@ Decreases the *fill pointer* of <GlossaryTerm styled={true} term={"vector"}><i>v
 (vector-push (setq fable (list ’fable)) 
 	     (setq fa (make-array 8 
 				  :fill-pointer 2 
-				  :initial-element ’sisyphus))) *→* 2 
-(fill-pointer fa) *→* 3 
+				  :initial-element ’sisyphus))) → 2 
+(fill-pointer fa) → 3 
 (eq (vector-pop fa) fable) *→ true* 
-(vector-pop fa) *→* SISYPHUS 
-(fill-pointer fa) *→* 1 
+(vector-pop fa) → SISYPHUS 
+(fill-pointer fa) → 1 
 
 ```
 **Side Effects:** 

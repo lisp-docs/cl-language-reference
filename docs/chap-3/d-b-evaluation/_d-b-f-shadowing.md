@@ -94,7 +94,7 @@ Consider the call (contorted-example nil nil 2). This produces 4. During the cou
 
 
 
-where f *→* #’(lambda () (return-from here<sub>1</sub> 4))  
+where f → #’(lambda () (return-from here<sub>1</sub> 4))  
 
 
 

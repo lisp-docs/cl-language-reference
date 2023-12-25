@@ -41,8 +41,8 @@ Returns an *input string stream*. This <GlossaryTerm styled={true} term={"stream
   (list (read string-stream nil nil) 
 	(read string-stream nil nil) 
 	(read string-stream nil nil))) 
-*→* (1 ONE NIL) 
-(read (make-string-input-stream "prefixtargetsuffix" 6 12)) *→* TARGET 
+→ (1 ONE NIL) 
+(read (make-string-input-stream "prefixtargetsuffix" 6 12)) → TARGET 
 
 ```
 **See Also:** 

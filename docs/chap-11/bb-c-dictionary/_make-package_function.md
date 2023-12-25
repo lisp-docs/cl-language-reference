@@ -49,9 +49,9 @@ Creates a new <GlossaryTerm styled={true} term={"package"}><i>package</i></Gloss
 **Examples:**
 ```lisp
 
-(make-package ’temporary :nicknames ’("TEMP" "temp")) *→* #<PACKAGE "TEMPORARY"> (make-package "OWNER" :use ’("temp")) *→* #<PACKAGE "OWNER"> 
-(package-used-by-list ’temp) *→* (#<PACKAGE "OWNER">) 
-(package-use-list ’owner) *→* (#<PACKAGE "TEMPORARY">) 
+(make-package ’temporary :nicknames ’("TEMP" "temp")) → #<PACKAGE "TEMPORARY"> (make-package "OWNER" :use ’("temp")) → #<PACKAGE "OWNER"> 
+(package-used-by-list ’temp) → (#<PACKAGE "OWNER">) 
+(package-use-list ’owner) → (#<PACKAGE "TEMPORARY">) 
 
 ```
 **Affected By:** 

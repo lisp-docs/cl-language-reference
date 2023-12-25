@@ -21,7 +21,7 @@
 **Examples:**
 ```lisp
 
-nil *→* NIL 
+nil → NIL 
 
 ```
 **See Also:** 

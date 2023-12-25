@@ -90,7 +90,7 @@ No matter what the <GlossaryTerm styled={true} term={"value"}><i>value</i></Glos
 	    ’("#(foo bar baz)" "#P(:type :lisp)" "#c1.2" 
 			       "#.(PRINT ’FOO)" "#3AHELLO" "#S(INTEGER)" 
 			       "#\*ABC" "#\GARBAGE" "#RALPHA" "#3R444"))) 
-*→* (NIL NIL NIL NIL NIL NIL NIL NIL NIL NIL) 
+→ (NIL NIL NIL NIL NIL NIL NIL NIL NIL NIL) 
 
 ```
 **See Also:** 

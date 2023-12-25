@@ -4,15 +4,15 @@ Although the following examples are possible to execute only in *implementations
 (pathname-type 
  (merge-pathnames (make-pathname :type "LISP") 
 		  (make-pathname :type "TEXT"))) 
-*→* "LISP" 
+→ "LISP" 
 (pathname-type 
  (merge-pathnames (make-pathname :type nil) 
 		  (make-pathname :type "LISP"))) 
-*→* "LISP" 
+→ "LISP" 
 (pathname-type 
  (merge-pathnames (make-pathname :type :unspecific) 
 		  (make-pathname :type "LISP"))) 
-*→* :UNSPECIFIC 
+→ :UNSPECIFIC 
 
 
 

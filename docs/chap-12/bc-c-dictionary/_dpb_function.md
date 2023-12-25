@@ -53,9 +53,9 @@ Let s be the size specified by *bytespec*; then the low s bits of *newbyte* appe
 **Examples:**
 ```lisp
 
-(dpb 1 (byte 1 10) 0) *→* 1024 
-(dpb -2 (byte 2 10) 0) *→* 2048 
-(dpb 1 (byte 2 10) 2048) *→* 1024 
+(dpb 1 (byte 1 10) 0) → 1024 
+(dpb -2 (byte 2 10) 0) → 2048 
+(dpb 1 (byte 2 10) 2048) → 1024 
 
 ```
 **See Also:** 

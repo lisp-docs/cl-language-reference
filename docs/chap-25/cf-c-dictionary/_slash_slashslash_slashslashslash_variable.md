@@ -37,8 +37,8 @@ The <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of <
 **Examples:**
 ```lisp
  
-(floor 22 7) *→* 3, 1 
-(+ (\* (car /) 7) (cadr /)) *→* 22 
+(floor 22 7) → 3, 1 
+(+ (\* (car /) 7) (cadr /)) → 22 
 
 ```
 **Affected By:** 
@@ -113,11 +113,11 @@ If no appropriate and relevant result can be produced, <DictionaryLink styled={t
 ```lisp
  
 (lisp-implementation-type) 
-*→* "ACME Lisp" 
+→ "ACME Lisp" 
 <i><sup>or</sup>→</i> "Joe’s Common Lisp" 
 (lisp-implementation-version) 
-*→* "1.3a" 
-*→* "V2" 
+→ "1.3a" 
+→ "V2" 
 <i><sup>or</sup>→</i> "Release 17.3, ECO #6" 
 **short-site-name, long-site-name** *Function* 
 
@@ -166,10 +166,10 @@ If no appropriate and relevant result can be produced, <DictionaryLink styled={t
 ```lisp
 
 (short-site-name) 
-*→* "MIT AI Lab" 
+→ "MIT AI Lab" 
 <i><sup>or</sup>→</i> "CMU-CSD" 
 (long-site-name) 
-*→* "MIT Artificial Intelligence Laboratory" 
+→ "MIT Artificial Intelligence Laboratory" 
 <i><sup>or</sup>→</i> "CMU Computer Science Department" 
 
 ```

@@ -52,7 +52,7 @@ Returns the name of the <GlossaryTerm styled={true} term={"restart"}><i>restart<
   (nil () :report "Return 2." 2) 
   (case3 () :report "Return 3." 3) 
   (case1 () :report "Return 4." 4)) 
-*→* (CASE1 NIL CASE3 CASE1 ABORT) 
+→ (CASE1 NIL CASE3 CASE1 ABORT) 
 ;; In the example above the restart named ABORT was not created 
 ;; explicitly, but was implicitly supplied by the system. 
 

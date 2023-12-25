@@ -10,6 +10,6 @@
 ▷ TEST 
 ▷ THIS 
 ▷ IS 
-*→* NIL 
+→ NIL 
 
 ```

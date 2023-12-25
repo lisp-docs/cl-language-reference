@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"print-unreadable-object"}><b>print-unreadable-object</b></DictionaryLink> (*object stream* &amp;key *type identity*) *\{form\}*\* *→* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
+<DictionaryLink styled={true} term={"print-unreadable-object"}><b>print-unreadable-object</b></DictionaryLink> (*object stream* &amp;key *type identity*) *\{form\}*\* → <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -66,7 +66,7 @@ If either <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> o
     (print-unreadable-object (obj stream :type t :identity t) 
       (princ (tail-number obj) stream))) 
 (prin1-to-string my-airplane) 
-*→* "#<Airplane NW0773 36000123135>" 
+→ "#<Airplane NW0773 36000123135>" 
 <i><sup>or</sup>→</i> "#<FAA:AIRPLANE NW0773 17>" 
 
 ```

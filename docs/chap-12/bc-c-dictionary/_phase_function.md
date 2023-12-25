@@ -49,13 +49,13 @@ The mathematical definition of <DictionaryLink styled={true} term={"phase"}><b>p
 **Examples:**
 ```lisp
 
-(phase 1) *→* 0.0s0 
+(phase 1) → 0.0s0 
 
 
 
-(phase 0) *→* 0.0s0 
-(phase (cis 30)) *→* -1.4159266 
-(phase #c(0 1)) *→* 1.5707964 
+(phase 0) → 0.0s0 
+(phase (cis 30)) → -1.4159266 
+(phase #c(0 1)) → 1.5707964 
 
 ```
 **Exceptional Situations:** 

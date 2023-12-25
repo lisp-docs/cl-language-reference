@@ -31,7 +31,7 @@ Returns the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>
 
 (package-nicknames (make-package ’temporary 
 				  :nicknames ’("TEMP" "temp"))) 
-*→* ("temp" "TEMP") 
+→ ("temp" "TEMP") 
 
 ```
 **Exceptional Situations:** 

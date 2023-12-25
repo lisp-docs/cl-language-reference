@@ -37,13 +37,13 @@
 **Examples:**
 ```lisp
 
-(in-package "COMMON-LISP-USER") *→* #<PACKAGE "COMMON-LISP-USER"> 
-(export (intern "CONTRABAND" (make-package ’temp)) ’temp) *→* T 
-(find-symbol "CONTRABAND") *→* NIL, NIL 
-(use-package ’temp) *→* T 
-(find-symbol "CONTRABAND") *→* CONTRABAND, :INHERITED 
-(unexport ’contraband ’temp) *→* T 
-(find-symbol "CONTRABAND") *→* NIL, NIL 
+(in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
+(export (intern "CONTRABAND" (make-package ’temp)) ’temp) → T 
+(find-symbol "CONTRABAND") → NIL, NIL 
+(use-package ’temp) → T 
+(find-symbol "CONTRABAND") → CONTRABAND, :INHERITED 
+(unexport ’contraband ’temp) → T 
+(find-symbol "CONTRABAND") → NIL, NIL 
 
 ```
 **Side Effects:** 

@@ -57,14 +57,14 @@ is a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> , 
 **Examples:**
 ```lisp
 
-(setq str "abc") *→* "abc" 
-(reverse str) *→* "cba" 
-str *→* "abc" 
-(setq str (copy-seq str)) *→* "abc" 
-(nreverse str) *→* "cba" 
+(setq str "abc") → "abc" 
+(reverse str) → "cba" 
+str → "abc" 
+(setq str (copy-seq str)) → "abc" 
+(nreverse str) → "cba" 
 str *→ implementation-dependent* 
-(setq l (list 1 2 3)) *→* (1 2 3) 
-(nreverse l) *→* (3 2 1) 
+(setq l (list 1 2 3)) → (1 2 3) 
+(nreverse l) → (3 2 1) 
 l *→ implementation-dependent* 
 
 ```

@@ -29,8 +29,8 @@ Returns its argument <GlossaryTerm styled={true} term={"object"}><i>object</i></
 **Examples:**
 ```lisp
 
-(identity 101) *→* 101 
-(mapcan #’identity (list (list 1 2 3) ’(4 5 6))) *→* (1 2 3 4 5 6) 
+(identity 101) → 101 
+(mapcan #’identity (list (list 1 2 3) ’(4 5 6))) → (1 2 3 4 5 6) 
 
 ```
 **Notes:** 

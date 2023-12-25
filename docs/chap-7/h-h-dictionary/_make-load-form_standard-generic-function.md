@@ -149,13 +149,13 @@ Both *conforming implementations* and *conforming programs* may further <Glossar
   ((x :initarg :x :reader obj-x) 
    (y :initarg :y :reader obj-y) 
    (dist :accessor obj-dist))) 
-*→* #<STANDARD-CLASS OBJ 250020030> 
+→ #<STANDARD-CLASS OBJ 250020030> 
 (defmethod shared-initialize :after ((self obj) slot-names &rest keys) 
 	   (declare (ignore slot-names keys)) 
 	   (unless (slot-boundp self ’dist) 
 	     (setf (obj-dist self) 
 		   (sqrt (+ (expt (obj-x self) 2) (expt (obj-y self) 2)))))) 
-*→* #<STANDARD-METHOD SHARED-INITIALIZE (:AFTER) (OBJ T) 26266714> 
+→ #<STANDARD-METHOD SHARED-INITIALIZE (:AFTER) (OBJ T) 26266714> 
 (defmethod make-load-form ((self obj) &optional environment) 
   (declare (ignore environment)) 
   ;; Note that this definition only works because X and Y do not 
@@ -163,10 +163,10 @@ Both *conforming implementations* and *conforming programs* may further <Glossar
   ;; For a more general solution to this problem, see revised example below. 
   ‘(make-instance ’,(class-of self) 
 		   :x ’,(obj-x self) :y ’,(obj-y self))) 
-*→* #<STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 26267532> 
-(setq obj1 (make-instance ’obj :x 3.0 :y 4.0)) *→* #<OBJ 26274136> 
-(obj-dist obj1) *→* 5.0 
-(make-load-form obj1) *→* (MAKE-INSTANCE ’OBJ :X ’3.0 :Y ’4.0) 
+→ #<STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 26267532> 
+(setq obj1 (make-instance ’obj :x 3.0 :y 4.0)) → #<OBJ 26274136> 
+(obj-dist obj1) → 5.0 
+(make-load-form obj1) → (MAKE-INSTANCE ’OBJ :X ’3.0 :Y ’4.0) 
 In the above example, an equivalent *instance* of obj is reconstructed by using the values of two of its *slots*. The value of the third *slot* is derived from those two values. 
 Another way to write the **make-load-form** *method* in that example is to use **make-load-form-saving-slots**. The code it generates might yield a slightly different result from the **make-load-form** *method* shown above, but the operational effect will be the same. For example: 
 ;; Redefine method defined above. 
@@ -174,14 +174,14 @@ Another way to write the **make-load-form** *method* in that example is to use *
     (make-load-form-saving-slots self 
 				 :slot-names ’(x y) 
 				 :environment environment)) 
-*→* #<STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 42755655> 
+→ #<STANDARD-METHOD MAKE-LOAD-FORM (OBJ) 42755655> 
 
 
 
 **make-load-form** 
 ;; Try MAKE-LOAD-FORM on object created above. 
 (make-load-form obj1) 
-*→* (ALLOCATE-INSTANCE ’#<STANDARD-CLASS OBJ 250020030>), 
+→ (ALLOCATE-INSTANCE ’#<STANDARD-CLASS OBJ 250020030>), 
 (PROGN 
   (SETF (SLOT-VALUE ’#<OBJ 26274136> ’X) ’3.0) 
   (SETF (SLOT-VALUE ’#<OBJ 26274136> ’Y) ’4.0) 

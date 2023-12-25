@@ -26,7 +26,7 @@ The prepositional phrases in each subclause may appear in any order. For example
 
 
 
-*→* (1 3 5 7 9) 
+→ (1 3 5 7 9) 
 
 
 
@@ -34,7 +34,7 @@ The prepositional phrases in each subclause may appear in any order. For example
 
 
 
-*→* (2 4 6 8 10) 
+→ (2 4 6 8 10) 
 
 
 

@@ -72,18 +72,18 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <GlossaryTerm styled
   (list (read-char-no-hang) 
 	(read-char-no-hang) 
 	(read-char-no-hang))) 
-*→* TEST-IT 
+→ TEST-IT 
 ;; Implementation A, where a Newline is not required to terminate 
 ;; interactive input on the console. 
 (test-it) 
 ▷ a 
-*→* (#\a NIL NIL) 
+→ (#\a NIL NIL) 
 ;; Implementation B, where a Newline is required to terminate 
 ;; interactive input on the console, and where that Newline remains 
 ;; on the input stream. 
 (test-it) 
 ▷ a*←-* 
-*→* (#\a #\Newline NIL) 
+→ (#\a #\Newline NIL) 
 
 ```
 **Affected By:** 

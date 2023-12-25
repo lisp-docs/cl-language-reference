@@ -61,7 +61,7 @@ Provides a shorthand notation for a <DictionaryLink styled={true} term={"functio
 **Examples:**
 ```lisp
 
-(funcall (lambda (x) (+ x 3)) 4) *→* 7 
+(funcall (lambda (x) (+ x 3)) 4) → 7 
 
 ```
 **See Also:** 

@@ -146,20 +146,20 @@ If *thing* contains an explicit host name and no explicit device name, then it i
 ```lisp
 
 (setq q (parse-namestring "test")) 
-*→* #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME "test" 
+→ #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME "test" 
 		:TYPE NIL :VERSION NIL) 
 (pathnamep q) *→ true* 
 (parse-namestring "test") 
-*→* #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME "test" 
+→ #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME "test" 
 		:TYPE NIL :VERSION NIL), 4 
-(setq s (open *xxx*)) *→* #<Input File Stream...> 
+(setq s (open *xxx*)) → #<Input File Stream...> 
 (parse-namestring s) 
-*→* #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME *xxx* 
+→ #S(PATHNAME :HOST NIL :DEVICE NIL :DIRECTORY NIL :NAME *xxx* 
 		:TYPE NIL :VERSION NIL), 0 
 (parse-namestring "test" nil nil :start 2 :end 4 ) 
-*→* #S(PATHNAME ...), 15 
+→ #S(PATHNAME ...), 15 
 (parse-namestring "foo.lisp") 
-*→* #P"foo.lisp" 
+→ #P"foo.lisp" 
 
 ```
 **Exceptional Situations:** 

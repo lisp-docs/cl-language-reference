@@ -45,7 +45,7 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
 (fboundp ’nth-value) *→ false* 
 (fboundp ’with-open-file) *→ true* 
 (fboundp ’unwind-protect) *→ true* 
-(defun my-function (x) x) *→* MY-FUNCTION 
+(defun my-function (x) x) → MY-FUNCTION 
 (fboundp ’my-function) *→ true* 
 (let ((saved-definition (symbol-function ’my-function))) 
   (unwind-protect (progn (fmakunbound ’my-function) 
@@ -53,9 +53,9 @@ Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if 
     (setf (symbol-function ’my-function) saved-definition))) 
 *→ false* 
 (fboundp ’my-function) *→ true* 
-(defmacro my-macro (x) ‘’,x) *→* MY-MACRO 
+(defmacro my-macro (x) ‘’,x) → MY-MACRO 
 (fboundp ’my-macro) *→ true* 
-(fmakunbound ’my-function) *→* MY-FUNCTION 
+(fmakunbound ’my-function) → MY-FUNCTION 
 (fboundp ’my-function) *→ false* 
 (flet ((my-function (x) x)) 
   (fboundp ’my-function)) *→ false* 

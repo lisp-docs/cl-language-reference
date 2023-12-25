@@ -74,7 +74,7 @@ When *input-stream* is an *echo stream*, characters that are only peeked at are 
 	  (peek-char #\4 input-stream) 
 	  (peek-char nil input-stream))) 
 ▷ #\1 #\4 #\4 
-*→* NIL 
+→ NIL 
 
 ```
 **Affected By:** 

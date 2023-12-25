@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"return-from"}><b>return-from</b></DictionaryLink> <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> [*result*] *→* 
+<DictionaryLink styled={true} term={"return-from"}><b>return-from</b></DictionaryLink> <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> [*result*] → 
 
 
 
@@ -41,29 +41,29 @@ The transfer of control initiated by <DictionaryLink styled={true} term={"return
 **Examples:**
 ```lisp
 
-(block alpha (return-from alpha) 1) *→* NIL 
-(block alpha (return-from alpha 1) 2) *→* 1 
-(block alpha (return-from alpha (values 1 2)) 3) *→* 1, 2 
+(block alpha (return-from alpha) 1) → NIL 
+(block alpha (return-from alpha 1) 2) → 1 
+(block alpha (return-from alpha (values 1 2)) 3) → 1, 2 
 (let ((a 0)) 
   (dotimes (i 10) (incf a) (when (oddp i) (return))) 
-  a) *→* 2 
+  a) → 2 
 Data and Control 
 
 
 **return-from** 
 (defun temp (x) 
   (if x (return-from temp ’dummy)) 
-  \44) *→* TEMP 
-(temp nil) *→* 44 
-(temp t) *→* DUMMY 
+  \44) → TEMP 
+(temp nil) → 44 
+(temp t) → DUMMY 
 (block out 
   (flet ((exit (n) (return-from out n))) 
     (block out (exit 1))) 
-  \2) *→* 1 
+  \2) → 1 
 (block nil 
   (unwind-protect (return-from nil 1) 
     (return-from nil 2))) 
-*→* 2 
+→ 2 
 (dolist (flag ’(nil t)) 
   (block nil 
     (let ((x 5)) 
@@ -75,7 +75,7 @@ Data and Control
 ▷ HERE 
 ▷ 5 
 ▷ HERE 
-*→* NIL 
+→ NIL 
 (dolist (flag ’(nil t)) 
   (block nil 
     (let ((x 5)) 
@@ -88,7 +88,7 @@ Data and Control
 ▷ HERE 
 ▷ 5 
 ▷ HERE 
-*→* NIL 
+→ NIL 
 The following has undefined consequences because the **block** *form* exits normally before the **return-from** *form* is attempted. 
 (funcall (block nil #’(lambda () (return-from nil)))) is an error. 
 

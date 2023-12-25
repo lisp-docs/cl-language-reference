@@ -46,7 +46,7 @@ A name conflict in <DictionaryLink styled={true} term={"import"}><b>import</b></
 
 
 
-The imported <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is not automatically exported from the *current package*, but if it is already <GlossaryTerm styled={true} term={"present"}><i>present</i></GlossaryTerm> and external, then the fact that it is external is not changed. If any <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> to be *imported* has no home package (*i.e.*, (symbol-package <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>) *→* nil), <DictionaryLink styled={true} term={"import"}><b>import</b></DictionaryLink> sets the *home package* of the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> to <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. 
+The imported <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is not automatically exported from the *current package*, but if it is already <GlossaryTerm styled={true} term={"present"}><i>present</i></GlossaryTerm> and external, then the fact that it is external is not changed. If any <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> to be *imported* has no home package (*i.e.*, (symbol-package <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>) → nil), <DictionaryLink styled={true} term={"import"}><b>import</b></DictionaryLink> sets the *home package* of the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> to <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
@@ -57,9 +57,9 @@ If the <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> 
 **Examples:**
 ```lisp
 
-(import ’common-lisp::car (make-package ’temp :use nil)) *→* T 
-(find-symbol "CAR" ’temp) *→* CAR, :INTERNAL 
-(find-symbol "CDR" ’temp) *→* NIL, NIL 
+(import ’common-lisp::car (make-package ’temp :use nil)) → T 
+(find-symbol "CAR" ’temp) → CAR, :INTERNAL 
+(find-symbol "CDR" ’temp) → NIL, NIL 
 The form (import ’editor:buffer) takes the external symbol named buffer in the EDITOR *package* (this symbol was located when the form was read by the *Lisp reader* ) and adds it to the *current package* as an *internal symbol*. The symbol buffer is then *present* in the *current package*. 
 
 ```

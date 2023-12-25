@@ -74,7 +74,7 @@ If an *end of file*<sub>2</sub> occurs and *eof-error-p* is <GlossaryTerm styled
       ((not (characterp c))) 
     (format t "~S " c))) 
 ▷ #\0 #\1 #\2 #\3 
-*→* NIL 
+→ NIL 
 
 ```
 **Affected By:** 

@@ -45,11 +45,11 @@ Use of <DictionaryLink styled={true} term={"unintern"}><b>unintern</b></Dictiona
 **Examples:**
 ```lisp
 
-(in-package "COMMON-LISP-USER") *→* #<PACKAGE "COMMON-LISP-USER"> 
-(setq temps-unpack (intern "UNPACK" (make-package ’temp))) *→* TEMP::UNPACK 
-(unintern temps-unpack ’temp) *→* T 
-(find-symbol "UNPACK" ’temp) *→* NIL, NIL 
-temps-unpack *→* #:UNPACK 
+(in-package "COMMON-LISP-USER") → #<PACKAGE "COMMON-LISP-USER"> 
+(setq temps-unpack (intern "UNPACK" (make-package ’temp))) → TEMP::UNPACK 
+(unintern temps-unpack ’temp) → T 
+(find-symbol "UNPACK" ’temp) → NIL, NIL 
+temps-unpack → #:UNPACK 
 
 ```
 **Side Effects:** 

@@ -34,7 +34,7 @@ x)))) ;Reads a special variable X
 
 
 
-*→* 3 
+→ 3 
 
 
 

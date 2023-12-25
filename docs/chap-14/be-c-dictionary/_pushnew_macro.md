@@ -81,16 +81,16 @@ It is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implement
 **Examples:**
 ```lisp
 
-(setq x ’(a (b c) d)) *→* (A (B C) D) 
-(pushnew 5 (cadr x)) *→* (5 B C) 
-x *→* (A (5 B C) D) 
-(pushnew ’b (cadr x)) *→* (5 B C) 
-x *→* (A (5 B C) D) 
-(setq lst ’((1) (1 2) (1 2 3))) *→* ((1) (1 2) (1 2 3)) 
-(pushnew ’(2) lst) *→* ((2) (1) (1 2) (1 2 3)) 
-(pushnew ’(1) lst) *→* ((1) (2) (1) (1 2) (1 2 3)) 
-(pushnew ’(1) lst :test ’equal) *→* ((1) (2) (1) (1 2) (1 2 3)) 
-(pushnew ’(1) lst :key #’car) *→* ((1) (2) (1) (1 2) (1 2 3)) 
+(setq x ’(a (b c) d)) → (A (B C) D) 
+(pushnew 5 (cadr x)) → (5 B C) 
+x → (A (5 B C) D) 
+(pushnew ’b (cadr x)) → (5 B C) 
+x → (A (5 B C) D) 
+(setq lst ’((1) (1 2) (1 2 3))) → ((1) (1 2) (1 2 3)) 
+(pushnew ’(2) lst) → ((2) (1) (1 2) (1 2 3)) 
+(pushnew ’(1) lst) → ((1) (2) (1) (1 2) (1 2 3)) 
+(pushnew ’(1) lst :test ’equal) → ((1) (2) (1) (1 2) (1 2 3)) 
+(pushnew ’(1) lst :key #’car) → ((1) (2) (1) (1 2) (1 2 3)) 
 
 ```
 **Side Effects:** 

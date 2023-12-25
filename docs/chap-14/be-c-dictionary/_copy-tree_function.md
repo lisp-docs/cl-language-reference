@@ -46,8 +46,8 @@ If <GlossaryTerm styled={true} term={"tree"}><i>tree</i></GlossaryTerm> is not a
 		   
 		   
 		   (cons 2 (list ’a ’b ’c)))) 
-*→* ((1 . "one") (2 A B C)) 
-(setq object-too object) *→* ((1 . "one") (2 A B C)) 
+→ ((1 . "one") (2 A B C)) 
+(setq object-too object) → ((1 . "one") (2 A B C)) 
 (setq copy-as-list (copy-list object)) 
 (setq copy-as-alist (copy-alist object)) 
 (setq copy-as-tree (copy-tree object)) 
@@ -57,12 +57,12 @@ If <GlossaryTerm styled={true} term={"tree"}><i>tree</i></GlossaryTerm> is not a
 (equal copy-as-tree object) *→ true* 
 (setf (first (cdr (second object))) "a" 
       (car (second object)) "two" 
-      (car object) ’(one . 1)) *→* (ONE . 1) 
-object *→* ((ONE . 1) ("two" "a" B C)) 
-object-too *→* ((ONE . 1) ("two" "a" B C)) 
-copy-as-list *→* ((1 . "one") ("two" "a" B C)) 
-copy-as-alist *→* ((1 . "one") (2 "a" B C)) 
-copy-as-tree *→* ((1 . "one") (2 A B C)) 
+      (car object) ’(one . 1)) → (ONE . 1) 
+object → ((ONE . 1) ("two" "a" B C)) 
+object-too → ((ONE . 1) ("two" "a" B C)) 
+copy-as-list → ((1 . "one") ("two" "a" B C)) 
+copy-as-alist → ((1 . "one") (2 "a" B C)) 
+copy-as-tree → ((1 . "one") (2 A B C)) 
 
 ```
 **See Also:** 

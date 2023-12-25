@@ -45,10 +45,10 @@ Returns <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> if <G
 **Examples:**
 ```lisp
 
-(null ’()) *→* T 
-(null nil) *→* T 
-(null t) *→* NIL 
-(null 1) *→* NIL 
+(null ’()) → T 
+(null nil) → T 
+(null t) → NIL 
+(null 1) → NIL 
 
 ```
 **See Also:** 

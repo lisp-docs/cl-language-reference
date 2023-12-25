@@ -58,13 +58,13 @@
 ```lisp
 
 ;; At noon on July 4, 1976 in Eastern Daylight Time. 
-(get-decoded-time) *→* 0, 0, 12, 4, 7, 1976, 6, *true*, 5 
+(get-decoded-time) → 0, 0, 12, 4, 7, 1976, 6, *true*, 5 
 ;; At exactly the same instant. 
-(get-universal-time) *→* 2414332800 
+(get-universal-time) → 2414332800 
 ;; Exactly five minutes later. 
-(get-universal-time) *→* 2414333100 
+(get-universal-time) → 2414333100 
 ;; The difference is 300 seconds (five minutes) 
-(- \* \*\*) *→* 300 
+(- \* \*\*) → 300 
 
 ```
 **Affected By:** 

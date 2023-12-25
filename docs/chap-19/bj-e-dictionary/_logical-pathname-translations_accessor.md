@@ -75,7 +75,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 ;;;Sample use of that logical pathname. The return value 
 ;;;is implementation-dependent. 
 (translate-logical-pathname "foo:bar;baz;mum.quux.3") 
-*→* #P"MY-LISPM:>library>foo>bar>baz>mum.quux.3" 
+→ #P"MY-LISPM:>library>foo>bar>baz>mum.quux.3" 
 ;;;A more complex example, dividing the files among two file servers 
 ;;;and several different directories. This Unix doesn’t support 
 ;;;:WILD-INFERIORS in the directory, so each directory level must 
@@ -97,7 +97,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 ;;;Sample use of that logical pathname. The return value 
 ;;;is implementation-dependent. 
 (translate-logical-pathname "prog:mail;save;ideas.mail.3") 
-*→* #P"MY-VAX:SYS$DISK:[JOE.MAIL.PROG.SAVE]IDEAS.MBX.3" 
+→ #P"MY-VAX:SYS$DISK:[JOE.MAIL.PROG.SAVE]IDEAS.MBX.3" 
 ;;;Example translations for a program that uses three files main.lisp, 
 ;;;auxiliary.lisp, and documentation.lisp. These translations might be 
 ;;;supplied by a software supplier as examples. 
@@ -107,7 +107,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 ;;;Sample use of that logical pathname. The return value 
 ;;;is implementation-dependent. 
 (translate-logical-pathname "prog:code;documentation.lisp") 
-*→* #P"/lib/prog/documentation.lisp" 
+→ #P"/lib/prog/documentation.lisp" 
 ;;;For Unix with 14-character file names, using .lisp as the type 
 (setf (logical-pathname-translations "prog") 
       ’(("CODE;DOCUMENTATION.\*.\*" "/lib/prog/docum.\*") 
@@ -115,7 +115,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 ;;;Sample use of that logical pathname. The return value 
 ;;;is implementation-dependent. 
 (translate-logical-pathname "prog:code;documentation.lisp") 
-*→* #P"/lib/prog/docum.lisp" 
+→ #P"/lib/prog/docum.lisp" 
 ;;;For Unix with 14-character file names, using .l as the type 
 ;;;The second translation shortens the compiled file type to .b 
 (setf (logical-pathname-translations "prog") 
@@ -131,7 +131,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 ;;;Sample use of that logical pathname. The return value 
 ;;;is implementation-dependent. 
 (translate-logical-pathname "prog:code;documentation.lisp") 
-*→* #P"/lib/prog/documentatio.l" 
+→ #P"/lib/prog/documentatio.l" 
 ;;;For a Cray with 6 character names and no directories, types, or versions. (setf (logical-pathname-translations "prog") 
 (let ((l ’(("MAIN" "PGMN") 
 	   ("AUXILIARY" "PGAUX") 
@@ -170,7 +170,7 @@ When setting the translations list, each *from-wildcard* can be a *logical pathn
 ;;;Sample use of that logical pathname. The return value 
 ;;;is implementation-dependent. 
 (translate-logical-pathname "prog:code;documentation.lisp") 
-*→* #P"PGDOC" 
+→ #P"PGDOC" 
 
 ```
 **Exceptional Situations:** 

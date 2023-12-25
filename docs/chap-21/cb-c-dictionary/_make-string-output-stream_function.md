@@ -53,7 +53,7 @@ The *element-type* names the <GlossaryTerm styled={true} term={"type"}><i>type</
   (write-string "testing... " s) 
   (prin1 1234 s) 
   (get-output-stream-string s)) 
-*→* "testing... 1234" 
+→ "testing... 1234" 
 None.. 
 
 ```

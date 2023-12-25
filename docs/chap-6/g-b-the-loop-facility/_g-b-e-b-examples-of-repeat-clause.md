@@ -5,10 +5,10 @@
 ▷ What I say three times is true. 
 ▷ What I say three times is true. 
 ▷ What I say three times is true. 
-*→* NIL 
+→ NIL 
 (loop repeat -15 
       do (format t "What you see is what you expect~%")) 
-*→* NIL 
+→ NIL 
 
 
 

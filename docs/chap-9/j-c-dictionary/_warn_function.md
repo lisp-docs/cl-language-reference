@@ -78,14 +78,14 @@ The value returned by <DictionaryLink styled={true} term={"warn"}><b>warn</b></D
     (if (not (typep result ’fixnum)) 
 	(warn "You’re using very big numbers.")) 
     result)) 
-*→* FOO 
+→ FOO 
 (foo 3) 
-*→* 6 
+→ 6 
 (foo most-positive-fixnum) 
 ▷ Warning: You’re using very big numbers. 
-*→* 4294967294 
+→ 4294967294 
 (setq \*break-on-signals\* t) 
-*→* T 
+→ T 
 (foo most-positive-fixnum) 
 ▷ Break: Caveat emptor. 
 ▷ To continue, type :CONTINUE followed by an option number. 
@@ -96,7 +96,7 @@ The value returned by <DictionaryLink styled={true} term={"warn"}><b>warn</b></D
 
 
 ▷ Warning: You’re using very big numbers. 
-*→* 4294967294 
+→ 4294967294 
 
 ```
 **Side Effects:** 

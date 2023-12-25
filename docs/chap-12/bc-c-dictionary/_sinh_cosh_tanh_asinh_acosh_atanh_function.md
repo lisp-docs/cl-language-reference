@@ -143,8 +143,8 @@ The branch cut for the inverse hyperbolic tangent function is in two pieces: one
 **Examples:**
 ```lisp
  
-(sinh 0) *→* 0.0 
-(cosh (complex 0 -1)) *→* #C(0.540302 -0.0) 
+(sinh 0) → 0.0 
+(cosh (complex 0 -1)) → #C(0.540302 -0.0) 
 
 ```
 **Exceptional Situations:** 
@@ -222,9 +222,9 @@ Returns the product of <GlossaryTerm styled={true} term={"number"}><i>numbers</i
 **Examples:**
 ```lisp
 
-(\*) *→* 1 
-(\* 3 5) *→* 15 
-(\* 1.0 #c(22 33) 55/98) *→* #C(12.346938775510203 18.520408163265305) 
+(\*) → 1 
+(\* 3 5) → 15 
+(\* 1.0 #c(22 33) 55/98) → #C(12.346938775510203 18.520408163265305) 
 
 ```
 **Exceptional Situations:** 

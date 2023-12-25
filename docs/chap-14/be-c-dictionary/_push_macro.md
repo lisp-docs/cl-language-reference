@@ -53,14 +53,14 @@ For information about the <GlossaryTerm styled={true} term={"evaluation"}><i>eva
 **Examples:**
 ```lisp
 
-(setq llst ’(nil)) *→* (NIL) 
-(push 1 (car llst)) *→* (1) 
-llst *→* ((1)) 
-(push 1 (car llst)) *→* (1 1) 
-llst *→* ((1 1)) 
-(setq x ’(a (b c) d)) *→* (A (B C) D) 
-(push 5 (cadr x)) *→* (5 B C) 
-x *→* (A (5 B C) D) 
+(setq llst ’(nil)) → (NIL) 
+(push 1 (car llst)) → (1) 
+llst → ((1)) 
+(push 1 (car llst)) → (1 1) 
+llst → ((1 1)) 
+(setq x ’(a (b c) d)) → (A (B C) D) 
+(push 5 (cadr x)) → (5 B C) 
+x → (A (5 B C) D) 
 
 ```
 **Side Effects:** 

@@ -49,19 +49,19 @@ If the last <GlossaryTerm styled={true} term={"argument"}><i>argument</i></Gloss
 If <DictionaryLink styled={true} term={"list"}><b>list\*</b></DictionaryLink> receives only one <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>, that <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is returned, regardless of whether or not it is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. **Examples:**
 ```lisp
 
-(list 1) *→* (1) 
-(list\* 1) *→* 1 
-(setq a 1) *→* 1 
-(list a 2) *→* (1 2) 
-’(a 2) *→* (A 2) 
-(list ’a 2) *→* (A 2) 
-(list\* a 2) *→* (1 . 2) 
-(list) *→* NIL ;*i.e.*, () 
-(setq a ’(1 2)) *→* (1 2) 
+(list 1) → (1) 
+(list\* 1) → 1 
+(setq a 1) → 1 
+(list a 2) → (1 2) 
+’(a 2) → (A 2) 
+(list ’a 2) → (A 2) 
+(list\* a 2) → (1 . 2) 
+(list) → NIL ;*i.e.*, () 
+(setq a ’(1 2)) → (1 2) 
 (eq a (list\* a)) *→ true* 
-(list 3 4 ’a (car ’(b . c)) (+ 6 -2)) *→* (3 4 A B 4) 
-(list\* ’a ’b ’c ’d) *≡* (cons ’a (cons ’b (cons ’c ’d))) *→* (A B C . D) 
-(list\* ’a ’b ’c ’(d e f)) *→* (A B C D E F) 
+(list 3 4 ’a (car ’(b . c)) (+ 6 -2)) → (3 4 A B 4) 
+(list\* ’a ’b ’c ’d) *≡* (cons ’a (cons ’b (cons ’c ’d))) → (A B C . D) 
+(list\* ’a ’b ’c ’(d e f)) → (A B C D E F) 
 
 ```
 **See Also:** 

@@ -58,24 +58,24 @@ If any *var* refers to a <GlossaryTerm styled={true} term={"binding"}><i>binding
 ```lisp
 
 ;; A simple use of SETQ to establish values for variables. 
-(setq a 1 b 2 c 3) *→* 3 
-a *→* 1 
-b *→* 2 
-c *→* 3 
+(setq a 1 b 2 c 3) → 3 
+a → 1 
+b → 2 
+c → 3 
 ;; Use of SETQ to update values by sequential assignment. 
 Data and Control 
 
 
-(setq a (1+ b) b (1+ a) c (+ a b)) *→* 7 
-a *→* 3 
-b *→* 4 
-c *→* 7 
+(setq a (1+ b) b (1+ a) c (+ a b)) → 7 
+a → 3 
+b → 4 
+c → 7 
 ;; This illustrates the use of SETQ on a symbol macro. 
 (let ((x (list 10 20 30))) 
   (symbol-macrolet ((y (car x)) (z (cadr x))) 
     (setq y (1+ z) z (1+ y)) 
     (list x y z))) 
-*→* ((21 22 30) 21 22) 
+→ ((21 22 30) 21 22) 
 
 ```
 **Side Effects:** 

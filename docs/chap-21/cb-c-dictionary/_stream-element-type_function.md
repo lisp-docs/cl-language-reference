@@ -44,7 +44,7 @@
   
   
   (stream-element-type s)) 
-*→* INTEGER 
+→ INTEGER 
 <i><sup>or</sup>→</i> (UNSIGNED-BYTE 16) 
 <i><sup>or</sup>→</i> (UNSIGNED-BYTE 8) 
 <i><sup>or</sup>→</i> BIT 

@@ -47,7 +47,7 @@ Returns a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTer
 
 (with-open-file (stream ">relativity>general.text") 
   (file-author s)) 
-*→* "albert" 
+→ "albert" 
 
 ```
 **Affected By:** 

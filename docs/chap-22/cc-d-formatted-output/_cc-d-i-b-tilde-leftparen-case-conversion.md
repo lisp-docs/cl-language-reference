@@ -26,23 +26,23 @@ In this example &#126;@( is used to cause the first word produced by &#126;@R to
 
 
 
-*→* "XIV xiv" 
+→ "XIV xiv" 
 
 
 
-(defun f (n) (format nil "&#126;@(&#126;R&#126;) error&#126;:P detected." n)) *→* F 
+(defun f (n) (format nil "&#126;@(&#126;R&#126;) error&#126;:P detected." n)) → F 
 
 
 
-(f 0) *→* "Zero errors detected." 
+(f 0) → "Zero errors detected." 
 
 
 
-(f 1) *→* "One error detected." 
+(f 1) → "One error detected." 
 
 
 
-(f 23) *→* "Twenty-three errors detected." 
+(f 23) → "Twenty-three errors detected." 
 
 
 
@@ -54,7 +54,7 @@ When case conversions appear nested, the outer conversion dominates, as illustra
 
 
 
-*→* "How is bob smith?" 
+→ "How is bob smith?" 
 
 
 

@@ -138,13 +138,13 @@ Data and Control
 (equalp "FOO" "foo") *→ true* 
 (setq array1 (make-array 6 :element-type ’integer 
 			 :initial-contents ’(1 1 1 3 5 7))) 
-*→* #(1 1 1 3 5 7) 
+→ #(1 1 1 3 5 7) 
 (setq array2 (make-array 8 :element-type ’integer 
 			 :initial-contents ’(1 1 1 3 5 7 2 6) 
 			 :fill-pointer 6)) 
-*→* #(1 1 1 3 5 7) 
+→ #(1 1 1 3 5 7) 
 (equalp array1 array2) *→ true* 
-(setq vector1 (vector 1 1 1 3 5 7)) *→* #(1 1 1 3 5 7) 
+(setq vector1 (vector 1 1 1 3 5 7)) → #(1 1 1 3 5 7) 
 (equalp array1 vector1) *→ true* 
 
 ```

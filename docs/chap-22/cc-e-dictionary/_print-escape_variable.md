@@ -42,10 +42,10 @@ For more specific details of how the <GlossaryTerm styled={true} term={"value"}>
 
 
 ▷ #\a 
-*→* #\a 
+→ #\a 
 (let ((\*print-escape\* nil)) (write #\a)) 
 ▷ a 
-*→* #\a 
+→ #\a 
 
 ```
 **Affected By:** 

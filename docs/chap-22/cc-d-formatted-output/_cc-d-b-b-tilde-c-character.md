@@ -10,11 +10,11 @@ The next *arg* should be a <GlossaryTerm styled={true} term={"character"}><i>cha
 
 
 
-(format nil "&#126;C" #\A) *→* "A" 
+(format nil "&#126;C" #\A) → "A" 
 
 
 
-(format nil "&#126;C" #\Space) *→* " " 
+(format nil "&#126;C" #\Space) → " " 
 
 
 
@@ -22,11 +22,11 @@ The next *arg* should be a <GlossaryTerm styled={true} term={"character"}><i>cha
 
 
 
-(format nil "&#126;:C" #\A) *→* "A" 
+(format nil "&#126;:C" #\A) → "A" 
 
 
 
-(format nil "&#126;:C" #\Space) *→* "Space" 
+(format nil "&#126;:C" #\Space) → "Space" 
 
 
 
@@ -38,7 +38,7 @@ The next *arg* should be a <GlossaryTerm styled={true} term={"character"}><i>cha
 
 
 
-*→* "Control-Space" 
+→ "Control-Space" 
 
 
 
@@ -50,7 +50,7 @@ The next *arg* should be a <GlossaryTerm styled={true} term={"character"}><i>cha
 
 
 
-(format nil "&#126;:@C" #\Control-Partial) *→* "Control-*∂* (Top-F)" 
+(format nil "&#126;:@C" #\Control-Partial) → "Control-*∂* (Top-F)" 
 
 
 

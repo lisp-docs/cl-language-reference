@@ -54,13 +54,13 @@ For a one-dimensional <GlossaryTerm styled={true} term={"array"}><i>array</i></G
 ```lisp
 
 (setq a (make-array ’(4 7) :element-type ’(unsigned-byte 8))) 
-(array-row-major-index a 1 2) *→* 9 
+(array-row-major-index a 1 2) → 9 
 (array-row-major-index 
  (make-array ’(2 3 4) 
 	      :element-type ’(unsigned-byte 8) 
 	      :displaced-to a 
 	      :displaced-index-offset 4) 
- 0 2 1) *→* 9 
+ 0 2 1) → 9 
 
 ```
 **Notes:** 

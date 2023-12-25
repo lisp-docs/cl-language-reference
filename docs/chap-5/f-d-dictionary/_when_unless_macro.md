@@ -65,20 +65,20 @@ In an <DictionaryLink styled={true} term={"unless"}><b>unless</b></DictionaryLin
 **Examples:**
 ```lisp
 
-(when t ’hello) *→* HELLO 
-(unless t ’hello) *→* NIL 
-(when nil ’hello) *→* NIL 
-(unless nil ’hello) *→* HELLO 
-(when t) *→* NIL 
-(unless nil) *→* NIL 
+(when t ’hello) → HELLO 
+(unless t ’hello) → NIL 
+(when nil ’hello) → NIL 
+(unless nil ’hello) → HELLO 
+(when t) → NIL 
+(unless nil) → NIL 
 (when t (prin1 1) (prin1 2) (prin1 3)) 
 ▷ 123 
-*→* 3 
-(unless t (prin1 1) (prin1 2) (prin1 3)) *→* NIL 
-(when nil (prin1 1) (prin1 2) (prin1 3)) *→* NIL 
+→ 3 
+(unless t (prin1 1) (prin1 2) (prin1 3)) → NIL 
+(when nil (prin1 1) (prin1 2) (prin1 3)) → NIL 
 (unless nil (prin1 1) (prin1 2) (prin1 3)) 
 ▷ 123 
-*→* 3 
+→ 3 
 (let ((x 3)) 
   (list (when (oddp x) (incf x) (list x)) 
 	(when (oddp x) (incf x) (list x)) 
@@ -88,7 +88,7 @@ In an <DictionaryLink styled={true} term={"unless"}><b>unless</b></DictionaryLin
 	(if (oddp x) (incf x) (list x)) 
 	(if (not (oddp x)) (incf x) (list x)) 
 	(if (not (oddp x)) (incf x) (list x)))) 
-*→* ((4) NIL (5) NIL 6 (6) 7 (7)) 
+→ ((4) NIL (5) NIL 6 (6) 7 (7)) 
 
 ```
 **See Also:** 

@@ -37,13 +37,13 @@ If *sequence* is a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></Gl
 **Examples:**
 ```lisp
 
-(length "abc") *→* 3 
+(length "abc") → 3 
 (setq str (make-array ’(3) :element-type ’character 
 		       :initial-contents "abc" 
-		       :fill-pointer t)) *→* "abc" 
-(length str) *→* 3 
-(setf (fill-pointer str) 2) *→* 2 
-(length str) *→* 2 
+		       :fill-pointer t)) → "abc" 
+(length str) → 3 
+(setf (fill-pointer str) 2) → 2 
+(length str) → 2 
 
 ```
 **Exceptional Situations:** 

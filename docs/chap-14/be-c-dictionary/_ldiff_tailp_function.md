@@ -94,7 +94,7 @@ If <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> is t
 ▷ object=NIL NIL (A B C . D) 
 ▷ object=D T (A B C) 
 ▷ object=X NIL (A B C . D) 
-*→* NIL 
+→ NIL 
 
 ```
 **Side Effects:** 

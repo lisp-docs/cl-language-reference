@@ -41,17 +41,17 @@ If *x* is supplied, and is an *integer* , then that *integer* , instead of the <
 If and only if no explicit suffix is supplied, <DictionaryLink styled={true} term={"gensym-counter"}><b>\*gensym-counter\*</b></DictionaryLink> is incremented after it is used. **Examples:**
 ```lisp
 
-(setq sym1 (gensym)) *→* #:G3142 
-(symbol-package sym1) *→* NIL 
-(setq sym2 (gensym 100)) *→* #:G100 
-(setq sym3 (gensym 100)) *→* #:G100 
+(setq sym1 (gensym)) → #:G3142 
+(symbol-package sym1) → NIL 
+(setq sym2 (gensym 100)) → #:G100 
+(setq sym3 (gensym 100)) → #:G100 
 (eq sym2 sym3) *→ false* 
-(find-symbol "G100") *→* NIL, NIL 
+(find-symbol "G100") → NIL, NIL 
 
 
 
-(gensym "T") *→* #:T3143 
-(gensym) *→* #:G3144 
+(gensym "T") → #:T3143 
+(gensym) → #:G3144 
 
 ```
 **Side Effects:** 

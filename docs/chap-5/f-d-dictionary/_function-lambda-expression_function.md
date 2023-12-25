@@ -59,7 +59,7 @@ The *tertiary value*, *name*, is the “name” of <GlossaryTerm styled={true} t
 
 The following examples illustrate some possible return values, but are not intended to be exhaustive: 
 (function-lambda-expression #’(lambda (x) x)) 
-*→* NIL, *false*, NIL 
+→ NIL, *false*, NIL 
 <i><sup>or</sup>→</i> NIL, <i>true</i>, NIL 
 <i><sup>or</sup>→</i> (LAMBDA (X) X), <i>true</i>, NIL 
 <i><sup>or</sup>→</i> (LAMBDA (X) X), <i>false</i>, NIL 
@@ -68,20 +68,20 @@ The following examples illustrate some possible return values, but are not inten
 
 (function-lambda-expression 
  (funcall #’(lambda () #’(lambda (x) x)))) 
-*→* NIL, *false*, NIL 
+→ NIL, *false*, NIL 
 <i><sup>or</sup>→</i> NIL, <i>true</i>, NIL 
 <i><sup>or</sup>→</i> (LAMBDA (X) X), <i>true</i>, NIL 
 <i><sup>or</sup>→</i> (LAMBDA (X) X), <i>false</i>, NIL 
 (function-lambda-expression 
  (funcall #’(lambda (x) #’(lambda () x)) nil)) 
-*→* NIL, *true*, NIL 
+→ NIL, *true*, NIL 
 <i><sup>or</sup>→</i> (LAMBDA () X), <i>true</i>, NIL 
 <i><sup>not</sup> →</i> NIL, <i>false</i>, NIL 
 <i><sup>not</sup> →</i> (LAMBDA () X), <i>false</i>, NIL 
 (flet ((foo (x) x)) 
   (setf (symbol-function ’bar) #’foo) 
   (function-lambda-expression #’bar)) 
-*→* NIL, *false*, NIL 
+→ NIL, *false*, NIL 
 <i><sup>or</sup>→</i> NIL, <i>true</i>, NIL 
 <i><sup>or</sup>→</i> (LAMBDA (X) (BLOCK FOO X)), <i>true</i>, NIL 
 <i><sup>or</sup>→</i> (LAMBDA (X) (BLOCK FOO X)), <i>false</i>, FOO 
@@ -90,7 +90,7 @@ The following examples illustrate some possible return values, but are not inten
   (flet ((bar (x) x)) 
     #’bar)) 
 (function-lambda-expression (foo)) 
-*→* NIL, *false*, NIL 
+→ NIL, *false*, NIL 
 <i><sup>or</sup>→</i> NIL, <i>true</i>, NIL 
 <i><sup>or</sup>→</i> (LAMBDA (X) (BLOCK BAR X)), <i>true</i>, NIL 
 <i><sup>or</sup>→</i> (LAMBDA (X) (BLOCK BAR X)), <i>true</i>, (:INTERNAL FOO 0 BAR) 

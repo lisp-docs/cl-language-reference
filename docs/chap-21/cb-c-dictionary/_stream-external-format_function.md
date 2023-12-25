@@ -38,7 +38,7 @@ Returns an *external file format designator* for the <GlossaryTerm styled={true}
   
   
   (stream-external-format stream)) 
-*→* :DEFAULT 
+→ :DEFAULT 
 <i><sup>or</sup>→</i> :ISO8859/1-1987 
 <i><sup>or</sup>→</i> (:ASCII :SAIL) 
 <i><sup>or</sup>→</i> ACME::PROPRIETARY-FILE-FORMAT-17 

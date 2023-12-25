@@ -38,7 +38,7 @@ Similarly,
 
 
 
-(cons ’this-one ’that-one) *→* (this-one . that-one) 
+(cons ’this-one ’that-one) → (this-one . that-one) 
 
 
 

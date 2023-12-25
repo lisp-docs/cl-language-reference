@@ -33,16 +33,16 @@ Returns the <GlossaryTerm styled={true} term={"length"}><i>length</i></GlossaryT
 **Examples:**
 ```lisp
 
-(list-length ’(a b c d)) *→* 4 
-(list-length ’(a (b c) d)) *→* 3 
-(list-length ’()) *→* 0 
-(list-length nil) *→* 0 
+(list-length ’(a b c d)) → 4 
+(list-length ’(a (b c) d)) → 3 
+(list-length ’()) → 0 
+(list-length nil) → 0 
 (defun circular-list (&rest elements) 
   (let ((cycle (copy-list elements))) 
     (nconc cycle cycle))) 
-(list-length (circular-list ’a ’b)) *→* NIL 
-(list-length (circular-list ’a)) *→* NIL 
-(list-length (circular-list)) *→* 0 
+(list-length (circular-list ’a ’b)) → NIL 
+(list-length (circular-list ’a)) → NIL 
+(list-length (circular-list)) → 0 
 
 ```
 **Exceptional Situations:** 

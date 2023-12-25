@@ -38,12 +38,12 @@ The effect of changing the <GlossaryTerm styled={true} term={"value"}><i>value</
 
 
 ▷ FOOBAR 
-*→* BAR 
+→ BAR 
 (with-output-to-string (\*standard-output\*) 
   (prin1 ’foo) 
   (prin1 ’bar \*terminal-io\*)) 
 ▷ BAR 
-*→* "FOO" 
+→ "FOO" 
 
 ```
 **See Also:** 

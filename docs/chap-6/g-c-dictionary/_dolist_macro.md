@@ -77,16 +77,16 @@ It is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implement
 **Examples:**
 ```lisp
 
-(setq temp-two ’()) *→* NIL 
-(dolist (temp-one ’(1 2 3 4) temp-two) (push temp-one temp-two)) *→* (4 3 2 1) (setq temp-two 0) *→* 0 
+(setq temp-two ’()) → NIL 
+(dolist (temp-one ’(1 2 3 4) temp-two) (push temp-one temp-two)) → (4 3 2 1) (setq temp-two 0) → 0 
 
 
 
-(dolist (temp-one ’(1 2 3 4)) (incf temp-two)) *→* NIL 
-temp-two *→* 4 
+(dolist (temp-one ’(1 2 3 4)) (incf temp-two)) → NIL 
+temp-two → 4 
 (dolist (x ’(a b c d)) (prin1 x) (princ " ")) 
 ▷ A B C D 
-*→* NIL 
+→ NIL 
 
 ```
 **See Also:** 

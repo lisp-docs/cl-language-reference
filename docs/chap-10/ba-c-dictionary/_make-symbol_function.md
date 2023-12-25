@@ -37,11 +37,11 @@ It is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implement
 **Examples:**
 ```lisp
 
-(setq temp-string "temp") *→* "temp" 
-(setq temp-symbol (make-symbol temp-string)) *→* #:|temp| 
-(symbol-name temp-symbol) *→* "temp" 
+(setq temp-string "temp") → "temp" 
+(setq temp-symbol (make-symbol temp-string)) → #:|temp| 
+(symbol-name temp-symbol) → "temp" 
 (eq (symbol-name temp-symbol) temp-string) *→ implementation-dependent* 
-(find-symbol "temp") *→* NIL, NIL 
+(find-symbol "temp") → NIL, NIL 
 (eq (make-symbol temp-string) (make-symbol temp-string)) *→ false* 
 
 ```

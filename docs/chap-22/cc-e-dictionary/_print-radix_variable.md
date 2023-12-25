@@ -40,9 +40,9 @@ If the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of
 (let ((\*print-base\* 24.) (\*print-radix\* t)) 
   (print 23.)) 
 ▷ #24rN 
-*→* 23 
-(setq \*print-base\* 10) *→* 10 
-(setq \*print-radix\* nil) *→* NIL 
+→ 23 
+(setq \*print-base\* 10) → 10 
+(setq \*print-radix\* nil) → NIL 
 (dotimes (i 35) 
   (let ((\*print-base\* (+ i 2))) ;print the decimal number 40 
     (write 40) ;in each base from 2 to 36 
@@ -52,7 +52,7 @@ If the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of
 ▷ 31 2C 2A 28 26 24 22 20 1J 1I 
 ▷ 1H 1G 1F 1E 1D 1C 1B 1A 19 18 
 ▷ 17 16 15 14 
-*→* NIL 
+→ NIL 
 (dolist (pb ’(2 3 8 10 16)) 
 
   
@@ -65,7 +65,7 @@ If the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of
 ▷ #o12 #o1/12 
 ▷ 10. #10r1/10 
 ▷ #xA #x1/A 
-*→* NIL 
+→ NIL 
 
 ```
 **Affected By:** 

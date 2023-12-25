@@ -45,7 +45,7 @@ Returns a *type specifier* which represents the *actual array element type* of t
 **Examples:**
 ```lisp
 
-(array-element-type (make-array 4)) *→* T 
+(array-element-type (make-array 4)) → T 
 (array-element-type (make-array 12 :element-type ’(unsigned-byte 8))) 
 *→ implementation-dependent* 
 (array-element-type (make-array 12 :element-type ’(unsigned-byte 5))) 

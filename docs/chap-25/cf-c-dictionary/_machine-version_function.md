@@ -41,7 +41,7 @@ Returns a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTer
 **Examples:**
 ```lisp
 
-(machine-version) *→* "KL-10, microcode 9" 
+(machine-version) → "KL-10, microcode 9" 
 
 ```
 **Affected By:** 

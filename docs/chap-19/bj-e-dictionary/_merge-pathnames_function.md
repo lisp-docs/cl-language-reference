@@ -135,7 +135,7 @@ both of them are removed. This removal of redundant :back <GlossaryTerm styled={
 
 (merge-pathnames "CMUC::FORMAT" 
 		 "CMUC::PS:<LISPIO>.FASL") 
-*→* #P"CMUC::PS:<LISPIO>FORMAT.FASL.0" 
+→ #P"CMUC::PS:<LISPIO>FORMAT.FASL.0" 
 
 ```
 **See Also:** 

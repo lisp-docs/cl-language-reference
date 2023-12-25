@@ -73,15 +73,15 @@ If **\*read-eval\*** is <GlossaryTerm styled={true} term={"false"}><i>false</i><
     :done)) 
 ▷ (a a G4581 ((A #) D E ...)) 
 ▷ ("a" |a| #:G4581 ((A (B (C))) D E F G)) 
-*→* :DONE 
+→ :DONE 
 ;; This is setup code is shared between the examples 
 ;; of three hypothetical implementations which follow. 
-(setq table (make-hash-table)) *→* #<HASH-TABLE EQL 0/120 32005763> 
+(setq table (make-hash-table)) → #<HASH-TABLE EQL 0/120 32005763> 
 
 
 
-(setf (gethash table 1) ’one) *→* ONE 
-(setf (gethash table 2) ’two) *→* TWO 
+(setf (gethash table 1) ’one) → ONE 
+(setf (gethash table 2) ’two) → TWO 
 ;; Implementation A 
 (let ((\*print-readably\* t)) (print table)) 
 Error: Can’t print #<HASH-TABLE EQL 0/120 32005763> readably. 
@@ -90,7 +90,7 @@ Error: Can’t print #<HASH-TABLE EQL 0/120 32005763> readably.
 ;; but there might be an implementation-defined notation. 
 (let ((\*print-readably\* t)) (print table)) 
 ▷ #S(HASH-TABLE :TEST EQL :SIZE 120 :CONTENTS (1 ONE 2 TWO)) 
-*→* #<HASH-TABLE EQL 0/120 32005763> 
+→ #<HASH-TABLE EQL 0/120 32005763> 
 ;; Implementation C 
 ;; Note that #. notation can only be used if \*READ-EVAL\* is true. 
 ;; If \*READ-EVAL\* were false, this same implementation might have to 
@@ -101,7 +101,7 @@ Error: Can’t print #<HASH-TABLE EQL 0/120 32005763> readably.
       ▷ (SETF (GETHASH 1 HASH-TABLE) ONE) 
       ▷ (SETF (GETHASH 2 HASH-TABLE) TWO) 
       ▷ HASH-TABLE) 
-*→* #<HASH-TABLE EQL 0/120 32005763> 
+→ #<HASH-TABLE EQL 0/120 32005763> 
 
 ```
 **See Also:** 

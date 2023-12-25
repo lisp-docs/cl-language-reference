@@ -46,12 +46,12 @@ If <DictionaryLink styled={true} term={"clear-input"}><b>clear-input</b></Dictio
 ▷ > 10 
 ▷ > 
 ▷ » 20 
-*→* (10 20) 
+→ (10 20) 
 (read-sleepily t) 
 ▷ > 10 
 ▷ > 
 ▷ » 20 
-*→* (10 20) 
+→ (10 20) 
 (read-sleepily t 10) 
 ▷ > 10 
 ▷ > 20 ; Some implementations won’t echo typeahead here. 
@@ -59,7 +59,7 @@ If <DictionaryLink styled={true} term={"clear-input"}><b>clear-input</b></Dictio
 
 
 ▷ » 30 
-*→* (10 30) 
+→ (10 30) 
 
 ```
 **Side Effects:** 

@@ -33,11 +33,11 @@
 Removes the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"macro"}><i>macro</i></GlossaryTerm> definition, if any, of <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> in the *global environment<GlossaryTerm styled={true} term={"t"}><i>. </i></GlossaryTerm>*Examples:**
 ```lisp
 
-(defun add-some (x) (+ x 19)) *→* ADD-SOME 
+(defun add-some (x) (+ x 19)) → ADD-SOME 
 (fboundp ’add-some) *→ true* 
 (flet ((add-some (x) (+ x 37))) 
   (fmakunbound ’add-some) 
-  (add-some 1)) *→* 38 
+  (add-some 1)) → 38 
 (fboundp ’add-some) *→ false* 
 
 ```

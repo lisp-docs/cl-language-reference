@@ -46,14 +46,14 @@
   (terpri s) 
   (terpri s) 
   (write-string "more text" s)) 
-*→* "some text 
+→ "some text 
 more text" 
 (with-output-to-string (s) 
   (write-string "some text" s) 
   (fresh-line s) 
   (fresh-line s) 
   (write-string "more text" s)) 
-*→* "some text 
+→ "some text 
 more text" 
 
 ```

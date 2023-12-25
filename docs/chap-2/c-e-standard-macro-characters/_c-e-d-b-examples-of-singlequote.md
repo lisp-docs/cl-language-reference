@@ -1,7 +1,7 @@
 ```lisp
 
-’foo *→* FOO 
-”foo *→* (QUOTE FOO) 
-(car ”foo) *→* QUOTE 
+’foo → FOO 
+”foo → (QUOTE FOO) 
+(car ”foo) → QUOTE 
 
 ```

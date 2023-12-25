@@ -52,7 +52,7 @@ Within this document only, <DictionaryLink styled={true} term={"nil"}><b>nil</b>
 
 
 
-(append ’() ’()) *→* () ;Emphasize use of empty lists 
+(append ’() ’()) → () ;Emphasize use of empty lists 
 
 
 

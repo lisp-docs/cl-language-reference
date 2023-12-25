@@ -67,11 +67,11 @@ If any of these operations does not make sense for *output-stream*, then it does
 
 ;; Implementation A 
 (progn (princ "am i seen?") (clear-output)) 
-*→* NIL 
+→ NIL 
 ;; Implementation B 
 (progn (princ "am i seen?") (clear-output)) 
 ▷ am i seen? 
-*→* NIL 
+→ NIL 
 
 ```
 **Affected By:** 

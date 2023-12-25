@@ -41,21 +41,21 @@ The *standard characters hNewlinei* and *hSpacei* have the respective names "New
 **Examples:**
 ```lisp
 
-(char-name #\ ) *→* "Space" 
-(char-name #\Space) *→* "Space" 
-(char-name #\Page) *→* "Page" 
+(char-name #\ ) → "Space" 
+(char-name #\Space) → "Space" 
+(char-name #\Page) → "Page" 
 (char-name #\a) 
-*→* NIL 
+→ NIL 
 <i><sup>or</sup>→</i> "LOWERCASE-a" 
 <i><sup>or</sup>→</i> "Small-A" 
 <i><sup>or</sup>→</i> "LA01" 
 (char-name #\A) 
-*→* NIL 
+→ NIL 
 <i><sup>or</sup>→</i> "UPPERCASE-A" 
 <i><sup>or</sup>→</i> "Capital-A" 
 <i><sup>or</sup>→</i> "LA02" 
 ;; Even though its CHAR-NAME can vary, #\A prints as #\A 
-(prin1-to-string (read-from-string (format nil "#\\~A" (or (char-name #\A) "A")))) *→* "#\\A" 
+(prin1-to-string (read-from-string (format nil "#\\~A" (or (char-name #\A) "A")))) → "#\\A" 
 
 
 

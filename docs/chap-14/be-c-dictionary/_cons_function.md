@@ -37,14 +37,14 @@ Creates a *fresh cons*, the <GlossaryTerm styled={true} term={"car"}><i>car</i><
 **Examples:**
 ```lisp
 
-(cons 1 2) *→* (1 . 2) 
-(cons 1 nil) *→* (1) 
-(cons nil 2) *→* (NIL . 2) 
-(cons nil nil) *→* (NIL) 
-(cons 1 (cons 2 (cons 3 (cons 4 nil)))) *→* (1 2 3 4) 
-(cons ’a ’b) *→* (A . B) 
-(cons ’a (cons ’b (cons ’c ’()))) *→* (A B C) 
-(cons ’a ’(b c d)) *→* (A B C D) 
+(cons 1 2) → (1 . 2) 
+(cons 1 nil) → (1) 
+(cons nil 2) → (NIL . 2) 
+(cons nil nil) → (NIL) 
+(cons 1 (cons 2 (cons 3 (cons 4 nil)))) → (1 2 3 4) 
+(cons ’a ’b) → (A . B) 
+(cons ’a (cons ’b (cons ’c ’()))) → (A B C) 
+(cons ’a ’(b c d)) → (A B C D) 
 
 ```
 **See Also:** 
