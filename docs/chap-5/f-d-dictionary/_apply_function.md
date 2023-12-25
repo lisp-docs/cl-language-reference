@@ -1,22 +1,22 @@
-**apply** <ClLinks  term={"function"}><i>Function</i></ClLinks>
+**apply** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm>
 
 **Syntax:**
 
-<DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> <ClLinks  term={"function"}><i>function</i></ClLinks> &amp;rest *args*<sup>+</sup> → \{result\}\*
+<DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> &amp;rest *args*<sup>+</sup> → \{result\}\*
 
 **Arguments and Values:**
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—a *function designator* .
+<GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>—a *function designator* .
 
 *args*—a *spreadable argument list designator* .
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by <ClLinks  term={"function"}><i>function</i></ClLinks>.
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>.
 
 **Description:**
 
-*Applies* the <ClLinks  term={"function"}><i>function</i></ClLinks> to the *args*.
+*Applies* the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> to the *args*.
 
-When the <ClLinks  term={"function"}><i>function</i></ClLinks> receives its arguments via **&amp;rest**, it is permissible (but not required) for the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to <ClLinks  term={"bind"}><i>bind</i></ClLinks> the *rest parameter* to an <ClLinks  term={"object"}><i>object</i></ClLinks> that shares structure with the last argument to <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink>. Because a <ClLinks  term={"function"}><i>function</i></ClLinks> can neither detect whether it was called via <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> nor whether (if so) the last argument to <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> was a <ClLinks  term={"constant"}><i>constant</i></ClLinks>, *conforming programs* must neither rely on the <ClLinks  term={"list"}><i>list</i></ClLinks> structure of a *rest list* to be freshly consed, nor modify that <ClLinks  term={"list"}><i>list</i></ClLinks> structure.
+When the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> receives its arguments via **&amp;rest**, it is permissible (but not required) for the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> to <GlossaryTerm  term={"bind"}><i>bind</i></GlossaryTerm> the *rest parameter* to an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> that shares structure with the last argument to <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink>. Because a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> can neither detect whether it was called via <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> nor whether (if so) the last argument to <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> was a <GlossaryTerm  term={"constant"}><i>constant</i></GlossaryTerm>, *conforming programs* must neither rely on the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> structure of a *rest list* to be freshly consed, nor modify that <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> structure.
 
 <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> can be used with <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> in certain circumstances; see Section 5.1.2.5 (APPLY Forms as Places).
 

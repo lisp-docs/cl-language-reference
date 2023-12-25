@@ -2,7 +2,7 @@
 
 **Syntax:**
 
-<DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink> <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* *! \{result\}*\*
+<DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\* *! \{result\}*\*
 
 **Arguments and Values:**
 
