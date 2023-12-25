@@ -1,20 +1,20 @@
-**funcall** <ClLinks  term={"function"}><i>Function</i></ClLinks>
+**funcall** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm>
 
 **Syntax:**
 
-<ClLinks  term={"funcall"}><b>funcall</b></ClLinks> <ClLinks  term={"function"}><i>function</i></ClLinks> &amp;rest *args → \{result\}*\*
+<ClLinks  term={"funcall"}><b>funcall</b></ClLinks> <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> &amp;rest *args → \{result\}*\*
 
 **Arguments and Values:**
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—a *function designator* .
+<GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>—a *function designator* .
 
-*args*—<ClLinks  term={"argument"}><i>arguments</i></ClLinks> to the <ClLinks  term={"function"}><i>function</i></ClLinks>.
+*args*—<GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> to the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>.
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"function"}><i>function</i></ClLinks>.
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>.
 
 **Description:**
 
-<ClLinks  term={"funcall"}><b>funcall</b></ClLinks> applies <ClLinks  term={"function"}><i>function</i></ClLinks> to *args*. If <ClLinks  term={"function"}><i>function</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, it is coerced to a <ClLinks  term={"function"}><i>function</i></ClLinks> as if by finding its *functional value* in the *global environment*.
+<ClLinks  term={"funcall"}><b>funcall</b></ClLinks> applies <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> to *args*. If <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, it is coerced to a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> as if by finding its *functional value* in the *global environment*.
 
 **Examples:**
 
@@ -34,7 +34,7 @@
 
 **Exceptional Situations:**
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"undefined-function"}><b>undefined-function</b></ClLinks> should be signaled if <ClLinks  term={"function"}><i>function</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that does not have a global definition as a <ClLinks  term={"function"}><i>function</i></ClLinks> or that has a global definition as a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or a *special operator* .
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <ClLinks  term={"undefined-function"}><b>undefined-function</b></ClLinks> should be signaled if <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> that does not have a global definition as a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> or that has a global definition as a <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> or a *special operator* .
 
 **See Also:**
 
@@ -46,9 +46,9 @@ An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"undef
 
 *≡* (apply *function arg1 arg2* ... nil)
 
-*≡* (apply <ClLinks  term={"function"}><i>function</i></ClLinks> (list *arg1 arg2* ...))
+*≡* (apply <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> (list *arg1 arg2* ...))
 
-The difference between <ClLinks  term={"funcall"}><b>funcall</b></ClLinks> and an ordinary function call is that in the former case the <ClLinks  term={"function"}><i>function</i></ClLinks> is obtained by ordinary <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of a <ClLinks  term={"form"}><i>form</i></ClLinks>, and in the latter case it is obtained by the special interpretation of the function position that normally occurs.
+The difference between <ClLinks  term={"funcall"}><b>funcall</b></ClLinks> and an ordinary function call is that in the former case the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is obtained by ordinary <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, and in the latter case it is obtained by the special interpretation of the function position that normally occurs.
 
 :::info
 
