@@ -18,7 +18,7 @@
 
 
 
-*typespec*—a *type specifier* . 
+*typespec*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -50,7 +50,7 @@ A↵ects only variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> and 
 
 
 
-A type declaration of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> defined by <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> is equivalent to wrapping a <ClLinks  term={"the"}><b>the</b></ClLinks> expression around the expansion of that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, although the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s *macro expansion* is not actually a↵ected. 
+A type declaration of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> defined by <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> is equivalent to wrapping a <ClLinks  term={"the"}><b>the</b></ClLinks> expression around the expansion of that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, although the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> is not actually a↵ected. 
 
 
 
@@ -102,7 +102,7 @@ If there is a local type declaration for a dynamic variable, and there is also a
 
 
 
-<ClLinks  term={"type"}><b>type</b></ClLinks> declarations can be *free declarations* or *bound declarations*. 
+<ClLinks  term={"type"}><b>type</b></ClLinks> declarations can be <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. 
 
 
 
@@ -110,7 +110,7 @@ A <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> cannot be both the name of a
 
 
 
-Within the *lexical scope* of an <ClLinks  term={"array"}><b>array</b></ClLinks> type declaration, all references to *array elements* are assumed to satisfy the *expressed array element type* (as opposed to the *upgraded array element type*). A compiler can treat the code within the scope of the <ClLinks  term={"array"}><b>array</b></ClLinks> type declaration as if each <ClLinks  term={"access"}><i>access</i></ClLinks> of an *array element* were surrounded by an appropriate <ClLinks  term={"the"}><b>the</b></ClLinks> form. 
+Within the <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> of an <ClLinks  term={"array"}><b>array</b></ClLinks> type declaration, all references to *array elements* are assumed to satisfy the <GlossaryTerm styled={true} term={"expressed array element type"}><i>expressed array element type</i></GlossaryTerm> (as opposed to the <GlossaryTerm styled={true} term={"upgraded array element type"}><i>upgraded array element type</i></GlossaryTerm>). A compiler can treat the code within the scope of the <ClLinks  term={"array"}><b>array</b></ClLinks> type declaration as if each <ClLinks  term={"access"}><i>access</i></ClLinks> of an *array element* were surrounded by an appropriate <ClLinks  term={"the"}><b>the</b></ClLinks> form. 
 
 
 

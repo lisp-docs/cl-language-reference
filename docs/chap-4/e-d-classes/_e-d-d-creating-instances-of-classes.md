@@ -6,7 +6,7 @@ The generic function <ClLinks  term={"make-instance"}><b>make-instance</b></ClLi
 
 
 
-activities can be performed by <ClLinks  term={"method"}><i>methods</i></ClLinks> written for *generic functions* that are part of the initialization protocol. The complete initialization protocol is described in Section 7.1 (Object Creation and Initialization). 
+activities can be performed by <ClLinks  term={"method"}><i>methods</i></ClLinks> written for <GlossaryTerm styled={true} term={"generic function"}><i>generic functions</i></GlossaryTerm> that are part of the initialization protocol. The complete initialization protocol is described in Section 7.1 (Object Creation and Initialization). 
 
 
 

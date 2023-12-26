@@ -14,7 +14,7 @@
 
 
 
-*declaration-specifier*—a *declaration specifier* ; not evaluated. 
+*declaration-specifier*—a <GlossaryTerm styled={true} term={"declaration specifier"}><i>declaration specifier</i></GlossaryTerm> ; not evaluated. 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-A <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>, sometimes called a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, can occur only at the beginning of the bodies of certain <ClLinks  term={"form"}><i>forms</i></ClLinks>; that is, it may be preceded only by other <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expressions</i></ClLinks>, or by a *documentation string* if the context permits. 
+A <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>, sometimes called a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, can occur only at the beginning of the bodies of certain <ClLinks  term={"form"}><i>forms</i></ClLinks>; that is, it may be preceded only by other <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expressions</i></ClLinks>, or by a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> if the context permits. 
 
 
 
-A <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks> can occur in a *lambda expression* or in any of the <ClLinks  term={"form"}><i>forms</i></ClLinks> listed in Figure 3–23. 
+A <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks> can occur in a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> or in any of the <ClLinks  term={"form"}><i>forms</i></ClLinks> listed in Figure 3–23. 
 
 
 
@@ -54,11 +54,11 @@ A <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expressio
 
 
 
-*Macro forms* cannot expand into declarations; <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expressions</i></ClLinks> must appear as actual <ClLinks  term={"subexpression"}><i>subexpressions</i></ClLinks> of the <ClLinks  term={"form"}><i>form</i></ClLinks> to which they refer. 
+<GlossaryTerm styled={true} term={"macro form"}><i>Macro forms</i></GlossaryTerm> cannot expand into declarations; <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expressions</i></ClLinks> must appear as actual <ClLinks  term={"subexpression"}><i>subexpressions</i></ClLinks> of the <ClLinks  term={"form"}><i>form</i></ClLinks> to which they refer. 
 
 
 
-Figure 3–24 shows a list of *declaration identifiers* that can be used with <ClLinks  term={"declare"}><b>declare</b></ClLinks>. 
+Figure 3–24 shows a list of <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifiers</i></GlossaryTerm> that can be used with <ClLinks  term={"declare"}><b>declare</b></ClLinks>. 
 
 
 
@@ -70,7 +70,7 @@ Figure 3–24 shows a list of *declaration identifiers* that can be used with <C
 
 
 
-An implementation is free to support other (<ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>) *declaration identifiers* as well. 
+An implementation is free to support other (<ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>) <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifiers</i></GlossaryTerm> as well. 
 
 **Examples:**
 ```lisp

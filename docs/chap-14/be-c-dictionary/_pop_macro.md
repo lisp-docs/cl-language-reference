@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"place"}><i>place</i></ClLinks>—a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of which is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> (possibly, but necessarily, a *dotted list* or *circular list<ClLinks styled={true} term={"t"}><i>). </i></ClLinks>element<ClLinks styled={true} term={"t"}><i>—an </i></ClLinks>object* (the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of the contents of <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>). 
+<ClLinks styled={true} term={"place"}><i>place</i></ClLinks>—a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of which is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> (possibly, but necessarily, a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm> or *circular list<ClLinks styled={true} term={"t"}><i>). </i></ClLinks>element<ClLinks styled={true} term={"t"}><i>—an </i></ClLinks>object* (the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of the contents of <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>). 
 
 
 

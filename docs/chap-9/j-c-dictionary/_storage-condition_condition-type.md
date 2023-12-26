@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"storage-condition"}><b>storage-condition</b></ClLinks> consists of serious conditions that relate to problems with memory management that are potentially due to <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> limits rather than semantic errors in *conforming programs*, and that typically warrant entry to the debugger if not handled. 
+The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"storage-condition"}><b>storage-condition</b></ClLinks> consists of serious conditions that relate to problems with memory management that are potentially due to <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> limits rather than semantic errors in <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm>, and that typically warrant entry to the debugger if not handled. 
 
 
 

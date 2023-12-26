@@ -2,7 +2,7 @@
 
 
 
-The <ClLinks styled={true} term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>1</sub> <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> are a subset of the *graphic characters*. Of the *standard characters*, only these are the <ClLinks styled={true} term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>1</sub> <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks>: 
+The <ClLinks styled={true} term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>1</sub> <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> are a subset of the *graphic characters*. Of the <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>, only these are the <ClLinks styled={true} term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>1</sub> <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks>: 
 
 
 

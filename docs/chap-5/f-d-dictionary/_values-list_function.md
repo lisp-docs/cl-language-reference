@@ -26,7 +26,7 @@
 
 
 
-Returns the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks> as *multiple values*<sub>2</sub>. 
+Returns the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks> as <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub>. 
 
 
 
@@ -41,7 +41,7 @@ Returns the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks
 
 
 
-Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a *proper list*. 
+Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
 
 
 

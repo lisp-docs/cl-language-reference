@@ -1,4 +1,4 @@
-**array-rank-limit** *Constant Variable* 
+**array-rank-limit** <GlossaryTerm styled={true} term={"constant variable"}><i>Constant Variable</i></GlossaryTerm> 
 
 
 

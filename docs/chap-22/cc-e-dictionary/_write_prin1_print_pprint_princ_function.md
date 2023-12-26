@@ -62,11 +62,11 @@
 
 
 
-*output-stream*—an *output stream designator* . The default is *standard output*. 
+*output-stream*—an *output stream designator* . The default is <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—a *generalized boolean*. 
+<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -78,15 +78,15 @@
 
 
 
-*circle*—a *generalized boolean*. 
+*circle*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"escape"}><i>escape</i></ClLinks>—a *generalized boolean*. 
+<ClLinks styled={true} term={"escape"}><i>escape</i></ClLinks>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"gensym"}><i>gensym</i></ClLinks>—a *generalized boolean*. 
+<ClLinks styled={true} term={"gensym"}><i>gensym</i></ClLinks>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -106,19 +106,19 @@
 
 
 
-*pprint-dispatch*—a *pprint dispatch table*. 
+*pprint-dispatch*—a <GlossaryTerm styled={true} term={"pprint dispatch table"}><i>pprint dispatch table</i></GlossaryTerm>. 
 
 
 
-*pretty*—a *generalized boolean*. 
+*pretty*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks>—a *generalized boolean*. 
+<ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"readably"}><i>readably</i></ClLinks>—a *generalized boolean*. 
+<ClLinks styled={true} term={"readably"}><i>readably</i></ClLinks>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -126,7 +126,7 @@
 
 
 
-<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—an *output stream designator* . The default is *standard output*. 
+<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—an *output stream designator* . The default is <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>. 
 
 
 
@@ -138,7 +138,7 @@
 
 
 
-<ClLinks styled={true} term={"write"}><b>write</b></ClLinks> is the general entry point to the *Lisp printer* . For each explicitly supplied *keyword parameter* named in Figure 22–7, the corresponding *printer control variable* is dynamically bound to its <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> while printing goes on; for each *keyword parameter* in Figure 22–7 that is not explicitly supplied, the value of the corresponding *printer control variable* is the same as it was at the time <ClLinks styled={true} term={"write"}><b>write</b></ClLinks> was invoked. Once the appropriate <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks> are *established*, the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is output by the *Lisp printer* . 
+<ClLinks styled={true} term={"write"}><b>write</b></ClLinks> is the general entry point to the *Lisp printer* . For each explicitly supplied <GlossaryTerm styled={true} term={"keyword parameter"}><i>keyword parameter</i></GlossaryTerm> named in Figure 22–7, the corresponding <GlossaryTerm styled={true} term={"printer control variable"}><i>printer control variable</i></GlossaryTerm> is dynamically bound to its <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> while printing goes on; for each <GlossaryTerm styled={true} term={"keyword parameter"}><i>keyword parameter</i></GlossaryTerm> in Figure 22–7 that is not explicitly supplied, the value of the corresponding <GlossaryTerm styled={true} term={"printer control variable"}><i>printer control variable</i></GlossaryTerm> is the same as it was at the time <ClLinks styled={true} term={"write"}><b>write</b></ClLinks> was invoked. Once the appropriate <ClLinks styled={true} term={"binding"}><i>bindings</i></ClLinks> are *established*, the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is output by the *Lisp printer* . 
 
 
 

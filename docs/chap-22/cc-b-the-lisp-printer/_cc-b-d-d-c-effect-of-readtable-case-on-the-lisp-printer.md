@@ -2,7 +2,7 @@
 
 
 
-When *printer escaping* is disabled, or the characters under consideration are not already quoted specifically by *single escape* or *multiple escape* syntax, the *readtable case* of the *current readtable* affects the way the *Lisp printer* writes <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> in the following ways: 
+When <GlossaryTerm styled={true} term={"printer escaping"}><i>printer escaping</i></GlossaryTerm> is disabled, or the characters under consideration are not already quoted specifically by <GlossaryTerm styled={true} term={"single escape"}><i>single escape</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"multiple escape"}><i>multiple escape</i></GlossaryTerm> syntax, the <GlossaryTerm styled={true} term={"readtable case"}><i>readtable case</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm> affects the way the *Lisp printer* writes <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> in the following ways: 
 
 
 
@@ -10,7 +10,7 @@ When *printer escaping* is disabled, or the characters under consideration are n
 
 
 
-When the *readtable case* is :upcase, *uppercase characters* are printed in the case specified by <ClLinks styled={true} term={"print-case"}><b>\*print-case\*</b></ClLinks>, and *lowercase characters* are printed in their own case. 
+When the <GlossaryTerm styled={true} term={"readtable case"}><i>readtable case</i></GlossaryTerm> is :upcase, *uppercase characters* are printed in the case specified by <ClLinks styled={true} term={"print-case"}><b>\*print-case\*</b></ClLinks>, and *lowercase characters* are printed in their own case. 
 
 
 
@@ -30,7 +30,7 @@ When the *readtable case* is :upcase, *uppercase characters* are printed in the 
 
 
 
-When the *readtable case* is :downcase, *uppercase characters* are printed in their own case, and *lowercase characters* are printed in the case specified by <ClLinks styled={true} term={"print-case"}><b>\*print-case\*</b></ClLinks>. 
+When the <GlossaryTerm styled={true} term={"readtable case"}><i>readtable case</i></GlossaryTerm> is :downcase, *uppercase characters* are printed in their own case, and *lowercase characters* are printed in the case specified by <ClLinks styled={true} term={"print-case"}><b>\*print-case\*</b></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@ When the *readtable case* is :downcase, *uppercase characters* are printed in th
 
 
 
-When the *readtable case* is :preserve, all *alphabetic characters* are printed in their own case. 
+When the <GlossaryTerm styled={true} term={"readtable case"}><i>readtable case</i></GlossaryTerm> is :preserve, all *alphabetic characters* are printed in their own case. 
 
 
 
@@ -46,11 +46,11 @@ When the *readtable case* is :preserve, all *alphabetic characters* are printed 
 
 
 
-When the *readtable case* is :invert, the case of all *alphabetic characters* in single case symbol names is inverted. Mixed-case symbol names are printed as is. 
+When the <GlossaryTerm styled={true} term={"readtable case"}><i>readtable case</i></GlossaryTerm> is :invert, the case of all *alphabetic characters* in single case symbol names is inverted. Mixed-case symbol names are printed as is. 
 
 
 
-The rules for escaping *alphabetic characters* in symbol names are affected by the <ClLinks styled={true} term={"readtable-case"}><b>readtable-case</b></ClLinks> if *printer escaping* is enabled. *Alphabetic characters* are escaped as follows: 
+The rules for escaping *alphabetic characters* in symbol names are affected by the <ClLinks styled={true} term={"readtable-case"}><b>readtable-case</b></ClLinks> if <GlossaryTerm styled={true} term={"printer escaping"}><i>printer escaping</i></GlossaryTerm> is enabled. *Alphabetic characters* are escaped as follows: 
 
 
 
@@ -58,7 +58,7 @@ The rules for escaping *alphabetic characters* in symbol names are affected by t
 
 
 
-When the *readtable case* is :upcase, all *lowercase characters* must be escaped. 
+When the <GlossaryTerm styled={true} term={"readtable case"}><i>readtable case</i></GlossaryTerm> is :upcase, all *lowercase characters* must be escaped. 
 
 
 
@@ -66,7 +66,7 @@ When the *readtable case* is :upcase, all *lowercase characters* must be escaped
 
 
 
-When the *readtable case* is :downcase, all *uppercase characters* must be escaped. 
+When the <GlossaryTerm styled={true} term={"readtable case"}><i>readtable case</i></GlossaryTerm> is :downcase, all *uppercase characters* must be escaped. 
 
 
 
@@ -74,7 +74,7 @@ When the *readtable case* is :downcase, all *uppercase characters* must be escap
 
 
 
-When the *readtable case* is :preserve, no *alphabetic characters* need be escaped. 
+When the <GlossaryTerm styled={true} term={"readtable case"}><i>readtable case</i></GlossaryTerm> is :preserve, no *alphabetic characters* need be escaped. 
 
 
 
@@ -82,7 +82,7 @@ When the *readtable case* is :preserve, no *alphabetic characters* need be escap
 
 
 
-When the *readtable case* is :invert, no *alphabetic characters* need be escaped. 
+When the <GlossaryTerm styled={true} term={"readtable case"}><i>readtable case</i></GlossaryTerm> is :invert, no *alphabetic characters* need be escaped. 
 
 
 

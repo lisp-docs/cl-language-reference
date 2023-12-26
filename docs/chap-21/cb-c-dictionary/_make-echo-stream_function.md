@@ -22,7 +22,7 @@
 
 
 
-*echo-stream*—an *echo stream*. 
+*echo-stream*—an <GlossaryTerm styled={true} term={"echo stream"}><i>echo stream</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Creates and returns an *echo stream* that takes input from *input-stream* and sends output to *output-stream*. 
+Creates and returns an <GlossaryTerm styled={true} term={"echo stream"}><i>echo stream</i></GlossaryTerm> that takes input from *input-stream* and sends output to *output-stream*. 
 
 
 
@@ -66,7 +66,7 @@ Creates and returns an *echo stream* that takes input from *input-stream* and se
 
 
 
-*concatenated-stream* – a *concatenated stream*. 
+*concatenated-stream* – a <GlossaryTerm styled={true} term={"concatenated stream"}><i>concatenated stream</i></GlossaryTerm>. 
 
 
 
@@ -94,4 +94,4 @@ Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of *input streams* that 
 
 
 
-The consequences are undefined if the *list structure* of the <ClLinks  term={"stream"}><i>streams</i></ClLinks> is ever modified. 
+The consequences are undefined if the <GlossaryTerm styled={true} term={"list structure"}><i>list structure</i></GlossaryTerm> of the <ClLinks  term={"stream"}><i>streams</i></ClLinks> is ever modified. 

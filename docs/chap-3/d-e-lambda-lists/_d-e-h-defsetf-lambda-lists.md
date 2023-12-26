@@ -2,11 +2,11 @@
 
 
 
-A *defsetf lambda list* is used by <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks>. 
+A <GlossaryTerm styled={true} term={"defsetf lambda list"}><i>defsetf lambda list</i></GlossaryTerm> is used by <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks>. 
 
 
 
-A *defsetf lambda list* has the following syntax: 
+A <GlossaryTerm styled={true} term={"defsetf lambda list"}><i>defsetf lambda list</i></GlossaryTerm> has the following syntax: 
 
 
 
@@ -34,7 +34,7 @@ A *defsetf lambda list* has the following syntax:
 
 
 
-A *defsetf lambda list* can contain the *lambda list keywords* shown in Figure 3–19. 
+A <GlossaryTerm styled={true} term={"defsetf lambda list"}><i>defsetf lambda list</i></GlossaryTerm> can contain the <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm> shown in Figure 3–19. 
 
 
 
@@ -50,7 +50,7 @@ A *defsetf lambda list* can contain the *lambda list keywords* shown in Figure 3
 
 
 
-A *defsetf lambda list* differs from an *ordinary lambda list* only in that it does not permit the use of **&amp;aux**, and that it permits use of **&amp;environment**, which introduces an *environment parameter* . 
+A <GlossaryTerm styled={true} term={"defsetf lambda list"}><i>defsetf lambda list</i></GlossaryTerm> differs from an <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm> only in that it does not permit the use of **&amp;aux**, and that it permits use of **&amp;environment**, which introduces an <GlossaryTerm styled={true} term={"environment parameter"}><i>environment parameter</i></GlossaryTerm> . 
 
 
 

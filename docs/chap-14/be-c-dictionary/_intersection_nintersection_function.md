@@ -18,15 +18,15 @@
 
 
 
-*list-1*—a *proper list*. 
+*list-1*—a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
 
 
 
-*list-2*—a *proper list*. 
+*list-2*—a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
 
 
 
-*test*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *key*—a *designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*test*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-The intersection operation is described as follows. For all possible ordered pairs consisting of one <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> from *list-1* and one <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> from *list-2*, :test or :test-not are used to determine whether they *satisfy the test*. The first argument to the :test or :test-not function is an element of *list-1*; the second argument is an element of *list-2*. If :test or :test-not is not supplied, <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks> is used. It is an error if :test and :test-not are supplied in the same function call. 
+The intersection operation is described as follows. For all possible ordered pairs consisting of one <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> from *list-1* and one <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> from *list-2*, :test or :test-not are used to determine whether they <GlossaryTerm styled={true} term={"satisfy the test"}><i>satisfy the test</i></GlossaryTerm>. The first argument to the :test or :test-not function is an element of *list-1*; the second argument is an element of *list-2*. If :test or :test-not is not supplied, <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks> is used. It is an error if :test and :test-not are supplied in the same function call. 
 
 
 
@@ -62,7 +62,7 @@ The intersection operation is described as follows. For all possible ordered pai
 
 
 
-**intersection, nintersection** 
+<DictionaryLink styled={true} term={"intersection, nintersection"}><b>intersection, nintersection</b></DictionaryLink> 
 
 
 
@@ -70,7 +70,7 @@ If :key is supplied (and not <ClLinks styled={true} term={"nil"}><b>nil</b></ClL
 
 
 
-For every pair that *satifies the test*, exactly one of the two elements of the pair will be put in the result. No element from either <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> appears in the result that does not *satisfy the test* for an element from the other <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. If one of the <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks> contains duplicate elements, there may be duplication in the result. 
+For every pair that *satifies the test*, exactly one of the two elements of the pair will be put in the result. No element from either <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> appears in the result that does not <GlossaryTerm styled={true} term={"satisfy the test"}><i>satisfy the test</i></GlossaryTerm> for an element from the other <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. If one of the <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks> contains duplicate elements, there may be duplication in the result. 
 
 
 
@@ -109,7 +109,7 @@ list2 → implementation-dependent ;*e.g.*, ((1 . 3) (2 . 4) (3 . 6) (4 . 8))
 
 
 
-Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *list-1* and *list-2* are not *proper lists*. 
+Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *list-1* and *list-2* are not <GlossaryTerm styled={true} term={"proper list"}><i>proper lists</i></GlossaryTerm>. 
 
 
 

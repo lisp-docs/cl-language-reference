@@ -22,11 +22,11 @@
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an *environment object*. 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. 
 
 
 
-*vars, vals, store-vars, writer-form, reader-form*—a *setf expansion*. 
+*vars, vals, store-vars, writer-form, reader-form*—a <GlossaryTerm styled={true} term={"setf expansion"}><i>setf expansion</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Determines five values constituting the *setf expansion* for <ClLinks  term={"place"}><i>place</i></ClLinks> in <ClLinks  term={"environment"}><i>environment</i></ClLinks>; see Section 5.1.1.2 (Setf Expansions). 
+Determines five values constituting the <GlossaryTerm styled={true} term={"setf expansion"}><i>setf expansion</i></GlossaryTerm> for <ClLinks  term={"place"}><i>place</i></ClLinks> in <ClLinks  term={"environment"}><i>environment</i></ClLinks>; see Section 5.1.1.2 (Setf Expansions). 
 
 
 
@@ -50,7 +50,7 @@ Determines five values constituting the *setf expansion* for <ClLinks  term={"pl
 
 
 
-If <ClLinks  term={"environment"}><i>environment</i></ClLinks> is not supplied or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the environment is the *null lexical environment*. 
+If <ClLinks  term={"environment"}><i>environment</i></ClLinks> is not supplied or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the environment is the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>. 
 
 **Examples:**
 ```lisp

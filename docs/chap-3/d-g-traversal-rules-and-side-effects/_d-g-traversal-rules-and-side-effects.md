@@ -18,7 +18,7 @@ For <ClLinks  term={"list"}><i>list</i></ClLinks> traversal operations, the <ClL
 
 
 
-For <ClLinks  term={"array"}><i>array</i></ClLinks> traversal operations, the <ClLinks  term={"array"}><i>array</i></ClLinks> is not allowed to be adjusted and its *fill pointer* , if any, is not allowed to be changed. 
+For <ClLinks  term={"array"}><i>array</i></ClLinks> traversal operations, the <ClLinks  term={"array"}><i>array</i></ClLinks> is not allowed to be adjusted and its <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , if any, is not allowed to be changed. 
 
 
 
@@ -26,7 +26,7 @@ For <ClLinks  term={"array"}><i>array</i></ClLinks> traversal operations, the <C
 
 
 
-For *hash table* traversal operations, new elements may not be added or deleted except that the element corresponding to the current hash key may be changed or removed. 
+For <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> traversal operations, new elements may not be added or deleted except that the element corresponding to the current hash key may be changed or removed. 
 
 
 

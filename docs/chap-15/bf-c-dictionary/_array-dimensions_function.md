@@ -26,7 +26,7 @@
 
 
 
-Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> of <ClLinks  term={"array"}><i>array</i></ClLinks>. (If <ClLinks  term={"array"}><i>array</i></ClLinks> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , that *fill pointer* is ignored.) 
+Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> of <ClLinks  term={"array"}><i>array</i></ClLinks>. (If <ClLinks  term={"array"}><i>array</i></ClLinks> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , that <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is ignored.) 
 
 
 

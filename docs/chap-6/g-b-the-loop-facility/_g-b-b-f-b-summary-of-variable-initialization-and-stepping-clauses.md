@@ -6,7 +6,7 @@ The for and as constructs provide iteration control clauses that establish a var
 
 
 
-The with construct is similar to a single <ClLinks styled={true} term={"let"}><b>let</b></ClLinks> clause. with clauses can be combined using the *loop keyword* and to get <ClLinks styled={true} term={"parallel"}><i>parallel</i></ClLinks> initialization. 
+The with construct is similar to a single <ClLinks styled={true} term={"let"}><b>let</b></ClLinks> clause. with clauses can be combined using the <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> and to get <ClLinks styled={true} term={"parallel"}><i>parallel</i></ClLinks> initialization. 
 
 
 

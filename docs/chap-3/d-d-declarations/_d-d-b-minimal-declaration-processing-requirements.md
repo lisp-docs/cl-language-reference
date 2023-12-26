@@ -3,7 +3,7 @@
 
 
 
-In general, an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is free to ignore *declaration specifiers* except for the <ClLinks  term={"declaration"}><b>declaration</b></ClLinks>, <ClLinks  term={"notinline"}><b>notinline</b></ClLinks>, **safety**, and <ClLinks  term={"special"}><b>special</b></ClLinks> *declaration specifiers*. 
+In general, an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is free to ignore <GlossaryTerm styled={true} term={"declaration specifier"}><i>declaration specifiers</i></GlossaryTerm> except for the <ClLinks  term={"declaration"}><b>declaration</b></ClLinks>, <ClLinks  term={"notinline"}><b>notinline</b></ClLinks>, **safety**, and <ClLinks  term={"special"}><b>special</b></ClLinks> <GlossaryTerm styled={true} term={"declaration specifier"}><i>declaration specifiers</i></GlossaryTerm>. 
 
 
 
@@ -11,7 +11,7 @@ A <ClLinks  term={"declaration"}><b>declaration</b></ClLinks> <ClLinks  term={"d
 
 
 
-A <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> must be recognized by any <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> that supports inline functions or *compiler macros* in order to disable those facilities. An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> that does not use inline functions or *compiler macros* may safely ignore this <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. 
+A <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> must be recognized by any <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> that supports inline functions or <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macros</i></GlossaryTerm> in order to disable those facilities. An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> that does not use inline functions or <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macros</i></GlossaryTerm> may safely ignore this <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. 
 
 
 

@@ -1,4 +1,4 @@
-**setq** *Special Form* 
+**setq** <GlossaryTerm styled={true} term={"special form"}><i>Special Form</i></GlossaryTerm> 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*var*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming a <ClLinks  term={"variable"}><i>variable</i></ClLinks> other than a *constant variable*. 
+*var*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming a <ClLinks  term={"variable"}><i>variable</i></ClLinks> other than a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-*result*—the *primary value* of the last <ClLinks  term={"form"}><i>form</i></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if no *pairs* were supplied. 
+*result*—the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> of the last <ClLinks  term={"form"}><i>form</i></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if no *pairs* were supplied. 
 
 
 
@@ -79,7 +79,7 @@ c → 7
 
 
 
-The *primary value* of each <ClLinks  term={"form"}><i>form</i></ClLinks> is assigned to the corresponding *var*. 
+The <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> of each <ClLinks  term={"form"}><i>form</i></ClLinks> is assigned to the corresponding *var*. 
 
 
 

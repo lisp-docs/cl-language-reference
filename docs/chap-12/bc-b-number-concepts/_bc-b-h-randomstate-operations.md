@@ -2,7 +2,7 @@
 
 
 
-Figure 12–11 lists some *defined names* that are applicable to *random states*. 
+Figure 12–11 lists some <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> that are applicable to <GlossaryTerm styled={true} term={"random state"}><i>random states</i></GlossaryTerm>. 
 
 
 

@@ -1,4 +1,4 @@
-**broadcast-stream** *System Class* 
+**broadcast-stream** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-A *broadcast stream* is an *output stream* which has associated with it a set of zero or more *output streams* such that any output sent to the *broadcast stream* gets passed on as output to each of the associated *output streams*. (If a *broadcast stream* has no *component streams*, then all output to the *broadcast stream* is discarded.) 
+A <GlossaryTerm styled={true} term={"broadcast stream"}><i>broadcast stream</i></GlossaryTerm> is an *output stream* which has associated with it a set of zero or more *output streams* such that any output sent to the <GlossaryTerm styled={true} term={"broadcast stream"}><i>broadcast stream</i></GlossaryTerm> gets passed on as output to each of the associated *output streams*. (If a <GlossaryTerm styled={true} term={"broadcast stream"}><i>broadcast stream</i></GlossaryTerm> has no *component streams*, then all output to the <GlossaryTerm styled={true} term={"broadcast stream"}><i>broadcast stream</i></GlossaryTerm> is discarded.) 
 
 
 
-The set of operations that may be performed on a *broadcast stream* is the intersection of those for its associated *output streams*. 
+The set of operations that may be performed on a <GlossaryTerm styled={true} term={"broadcast stream"}><i>broadcast stream</i></GlossaryTerm> is the intersection of those for its associated *output streams*. 
 
 
 
@@ -54,19 +54,19 @@ streams, <ClLinks  term={"file-length"}><b>file-length</b></ClLinks> and <ClLink
 
 
 
-*•* The functions <ClLinks  term={"streamp"}><b>streamp</b></ClLinks> and **output-stream-p** always return <ClLinks  term={"true"}><i>true</i></ClLinks> for *broadcast streams*. 
+*•* The functions <ClLinks  term={"streamp"}><b>streamp</b></ClLinks> and **output-stream-p** always return <ClLinks  term={"true"}><i>true</i></ClLinks> for <GlossaryTerm styled={true} term={"broadcast stream"}><i>broadcast streams</i></GlossaryTerm>. 
 
 
 
-*•* The functions <ClLinks  term={"open-stream-p"}><b>open-stream-p</b></ClLinks> tests whether the *broadcast stream* is <ClLinks  term={"open"}><i>open</i></ClLinks><sub>2</sub>, not whether its component streams are <ClLinks  term={"open"}><i>open</i></ClLinks>. 
+*•* The functions <ClLinks  term={"open-stream-p"}><b>open-stream-p</b></ClLinks> tests whether the <GlossaryTerm styled={true} term={"broadcast stream"}><i>broadcast stream</i></GlossaryTerm> is <ClLinks  term={"open"}><i>open</i></ClLinks><sub>2</sub>, not whether its component streams are <ClLinks  term={"open"}><i>open</i></ClLinks>. 
 
 
 
-*•* The functions **input-stream-p** and *interactive-stream-p* return an <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>, *generalized boolean* value. 
+*•* The functions **input-stream-p** and *interactive-stream-p* return an <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>, <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> value. 
 
 
 
-*•* For the input operations **clear-input listen**, **peek-char**, **read-byte**, **read-char-no-hang**, **read-char**, **read-line**, and <ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks>, the consequences are undefined if the indicated operation is performed. However, an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is permitted to define such a behavior as an <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> extension. 
+*•* For the input operations **clear-input listen**, <DictionaryLink styled={true} term={"peek-char"}><b>peek-char</b></DictionaryLink>, <DictionaryLink styled={true} term={"read-byte"}><b>read-byte</b></DictionaryLink>, <DictionaryLink styled={true} term={"read-char-no-hang"}><b>read-char-no-hang</b></DictionaryLink>, <DictionaryLink styled={true} term={"read-char"}><b>read-char</b></DictionaryLink>, <DictionaryLink styled={true} term={"read-line"}><b>read-line</b></DictionaryLink>, and <ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks>, the consequences are undefined if the indicated operation is performed. However, an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is permitted to define such a behavior as an <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> extension. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-The <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*load-pathname\*** must always be a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"load-truename"}><b>\*load-truename\*</b></ClLinks> must always be a *physical pathname* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+The <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*load-pathname\*** must always be a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"load-truename"}><b>\*load-truename\*</b></ClLinks> must always be a <GlossaryTerm styled={true} term={"physical pathname"}><i>physical pathname</i></GlossaryTerm> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@ At other times, the <ClLinks  term={"value"}><i>value</i></ClLinks> of these <Cl
 
 
 
-If a *break loop* is entered while <ClLinks  term={"load"}><b>load</b></ClLinks> is ongoing, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether these <ClLinks  term={"variable"}><i>variables</i></ClLinks> retain the <ClLinks  term={"value"}><i>values</i></ClLinks> they had just prior to entering the *break loop* or whether they are <ClLinks  term={"bound"}><i>bound</i></ClLinks> to <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+If a <GlossaryTerm styled={true} term={"break loop"}><i>break loop</i></GlossaryTerm> is entered while <ClLinks  term={"load"}><b>load</b></ClLinks> is ongoing, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether these <ClLinks  term={"variable"}><i>variables</i></ClLinks> retain the <ClLinks  term={"value"}><i>values</i></ClLinks> they had just prior to entering the <GlossaryTerm styled={true} term={"break loop"}><i>break loop</i></GlossaryTerm> or whether they are <ClLinks  term={"bound"}><i>bound</i></ClLinks> to <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ The consequences are unspecified if an attempt is made to <ClLinks  term={"assig
 
 
 
-The *file system*. 
+The <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. 
 
 
 

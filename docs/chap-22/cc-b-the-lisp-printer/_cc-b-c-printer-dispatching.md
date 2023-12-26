@@ -6,7 +6,7 @@ The *Lisp printer* makes its determination of how to print an <ClLinks styled={t
 
 
 
-If the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, printing is controlled by the *current pprint dispatch table*; see Section 22.2.1.4 (Pretty Print Dispatch Tables). 
+If the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, printing is controlled by the <GlossaryTerm styled={true} term={"current pprint dispatch table"}><i>current pprint dispatch table</i></GlossaryTerm>; see Section 22.2.1.4 (Pretty Print Dispatch Tables). 
 
 
 

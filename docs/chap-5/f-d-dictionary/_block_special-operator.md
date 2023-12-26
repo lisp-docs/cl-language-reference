@@ -1,4 +1,4 @@
-**block** *Special Operator* 
+**block** <GlossaryTerm styled={true} term={"special operator"}><i>Special Operator</i></GlossaryTerm> 
 
 
 
@@ -34,7 +34,7 @@ Data and Control
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks> if a *normal return* occurs, or else, if an *explicit return* occurs, the <ClLinks  term={"value"}><i>values</i></ClLinks> that were transferred. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks> if a <GlossaryTerm styled={true} term={"normal return"}><i>normal return</i></GlossaryTerm> occurs, or else, if an <GlossaryTerm styled={true} term={"explicit return"}><i>explicit return</i></GlossaryTerm> occurs, the <ClLinks  term={"value"}><i>values</i></ClLinks> that were transferred. 
 
 
 
@@ -42,19 +42,19 @@ Data and Control
 
 
 
-<ClLinks  term={"block"}><b>block</b></ClLinks> *establishes* a <ClLinks  term={"block"}><i>block</i></ClLinks> named <ClLinks  term={"name"}><i>name</i></ClLinks> and then evaluates <ClLinks  term={"form"}><i>forms</i></ClLinks> as an *implicit progn*. 
+<ClLinks  term={"block"}><b>block</b></ClLinks> *establishes* a <ClLinks  term={"block"}><i>block</i></ClLinks> named <ClLinks  term={"name"}><i>name</i></ClLinks> and then evaluates <ClLinks  term={"form"}><i>forms</i></ClLinks> as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
-The *special operators* <ClLinks  term={"block"}><b>block</b></ClLinks> and <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> work together to provide a structured, lexical, non-local exit facility. At any point lexically contained within <ClLinks  term={"form"}><i>forms</i></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> can be used with the given <ClLinks  term={"name"}><i>name</i></ClLinks> to return control and values from the <ClLinks  term={"block"}><b>block</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>, except when an intervening <ClLinks  term={"block"}><i>block</i></ClLinks> with the same name has been *established*, in which case the outer <ClLinks  term={"block"}><i>block</i></ClLinks> is shadowed by the inner one. 
+The <GlossaryTerm styled={true} term={"special operator"}><i>special operators</i></GlossaryTerm> <ClLinks  term={"block"}><b>block</b></ClLinks> and <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> work together to provide a structured, lexical, non-local exit facility. At any point lexically contained within <ClLinks  term={"form"}><i>forms</i></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> can be used with the given <ClLinks  term={"name"}><i>name</i></ClLinks> to return control and values from the <ClLinks  term={"block"}><b>block</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>, except when an intervening <ClLinks  term={"block"}><i>block</i></ClLinks> with the same name has been *established*, in which case the outer <ClLinks  term={"block"}><i>block</i></ClLinks> is shadowed by the inner one. 
 
 
 
-The <ClLinks  term={"block"}><i>block</i></ClLinks> named <ClLinks  term={"name"}><i>name</i></ClLinks> has *lexical scope* and *dynamic extent*. 
+The <ClLinks  term={"block"}><i>block</i></ClLinks> named <ClLinks  term={"name"}><i>name</i></ClLinks> has <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>. 
 
 
 
-Once established, a <ClLinks  term={"block"}><i>block</i></ClLinks> may only be exited once, whether by *normal return* or *explicit return*. 
+Once established, a <ClLinks  term={"block"}><i>block</i></ClLinks> may only be exited once, whether by <GlossaryTerm styled={true} term={"normal return"}><i>normal return</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"explicit return"}><i>explicit return</i></GlossaryTerm>. 
 
 **Examples:**
 ```lisp

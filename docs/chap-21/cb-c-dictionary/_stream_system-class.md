@@ -1,4 +1,4 @@
-**stream** *System Class* 
+**stream** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 

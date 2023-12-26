@@ -18,7 +18,7 @@
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -43,7 +43,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 
 
-None. (In particular, the results of this predicate are independent of any special syntax which might have been enabled in the *current readtable*.) 
+None. (In particular, the results of this predicate are independent of any special syntax which might have been enabled in the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>.) 
 
 
 

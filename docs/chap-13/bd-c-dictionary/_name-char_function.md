@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a *string designator* . 
+<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
 
 
 
@@ -42,7 +42,7 @@ Returns the *character object* whose <ClLinks styled={true} term={"name"}><i>nam
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is not a *string designator* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is not a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
 
 
 

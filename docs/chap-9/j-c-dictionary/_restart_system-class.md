@@ -1,4 +1,4 @@
-**restart** *System Class* 
+**restart** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@ An <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> of <ClLinks st
 
 
 
-An <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> is free to implement a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> in whatever manner is most convenient; a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> has only *dynamic extent* relative to the scope of the binding <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> which *establishes* it. 
+An <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> is free to implement a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> in whatever manner is most convenient; a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> has only <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm> relative to the scope of the binding <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> which *establishes* it. 
 
 
 

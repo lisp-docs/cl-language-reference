@@ -2,7 +2,7 @@
 
 
 
-<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> has a variety of meanings. It is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> in the COMMON-LISP <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> with the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> "NIL", it is <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks> (and *generalized boolean*) *false*, it is the *empty list*, and it is the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the *empty type* (a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of all <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>). 
+<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> has a variety of meanings. It is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> in the COMMON-LISP <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> with the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> "NIL", it is <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks> (and <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>) <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>, it is the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>, and it is the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the <GlossaryTerm styled={true} term={"empty type"}><i>empty type</i></GlossaryTerm> (a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of all <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>). 
 
 
 
@@ -18,7 +18,7 @@ Within Common Lisp, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> can
 
 | :- |
 
-|<p>Yes nil use as a <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks>. </p><p>Yes ’nil use as a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. </p><p>Yes ’() use as an *empty list* </p><p>No nil use as a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks>. No () use as an *empty list*.</p>|
+|<p>Yes nil use as a <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks>. </p><p>Yes ’nil use as a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. </p><p>Yes ’() use as an <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm> </p><p>No nil use as a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks>. No () use as an <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>.</p>|
 
 
 

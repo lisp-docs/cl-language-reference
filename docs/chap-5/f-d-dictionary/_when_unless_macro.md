@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -54,7 +54,7 @@ In a <ClLinks  term={"when"}><b>when</b></ClLinks> <ClLinks  term={"form"}><i>fo
 
 
 
-**when, unless** 
+<DictionaryLink styled={true} term={"when, unless"}><b>when, unless</b></DictionaryLink> 
 
 
 

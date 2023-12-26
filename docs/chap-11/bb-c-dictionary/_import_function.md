@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-<ClLinks  term={"import"}><b>import</b></ClLinks> adds <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> or <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> to the internals of <ClLinks  term={"package"}><i>package</i></ClLinks>, checking for name conflicts with existing <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> either <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> or <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> to it. Once the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> have been *imported*, they may be referenced in the *importing package* without the use of a *package prefix* when using the *Lisp reader* . 
+<ClLinks  term={"import"}><b>import</b></ClLinks> adds <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> or <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> to the internals of <ClLinks  term={"package"}><i>package</i></ClLinks>, checking for name conflicts with existing <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> either <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> or <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> to it. Once the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> have been *imported*, they may be referenced in the *importing package* without the use of a <GlossaryTerm styled={true} term={"package prefix"}><i>package prefix</i></GlossaryTerm> when using the *Lisp reader* . 
 
 
 
@@ -46,7 +46,7 @@ A name conflict in <ClLinks  term={"import"}><b>import</b></ClLinks> between the
 
 
 
-The imported <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not automatically exported from the *current package*, but if it is already <ClLinks  term={"present"}><i>present</i></ClLinks> and external, then the fact that it is external is not changed. If any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to be *imported* has no home package (*i.e.*, (symbol-package <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) → nil), <ClLinks  term={"import"}><b>import</b></ClLinks> sets the *home package* of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+The imported <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not automatically exported from the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>, but if it is already <ClLinks  term={"present"}><i>present</i></ClLinks> and external, then the fact that it is external is not changed. If any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to be *imported* has no home package (*i.e.*, (symbol-package <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) → nil), <ClLinks  term={"import"}><b>import</b></ClLinks> sets the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -81,7 +81,7 @@ Current state of the package system.
 
 
 
-<ClLinks  term={"import"}><b>import</b></ClLinks> signals a <ClLinks  term={"correctable"}><i>correctable</i></ClLinks> error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> if any of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> to be *imported* has the *same name* (under <ClLinks  term={"string"}><b>string=</b></ClLinks>) as some distinct <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> (under <ClLinks  term={"eql"}><b>eql</b></ClLinks>) already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>, even if the conflict is with a *shadowing symbol* of the <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<ClLinks  term={"import"}><b>import</b></ClLinks> signals a <ClLinks  term={"correctable"}><i>correctable</i></ClLinks> error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> if any of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> to be *imported* has the *same name* (under <ClLinks  term={"string"}><b>string=</b></ClLinks>) as some distinct <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> (under <ClLinks  term={"eql"}><b>eql</b></ClLinks>) already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>, even if the conflict is with a <GlossaryTerm styled={true} term={"shadowing symbol"}><i>shadowing symbol</i></GlossaryTerm> of the <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 

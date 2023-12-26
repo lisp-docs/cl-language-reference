@@ -1,4 +1,4 @@
-**remove-method** *Standard Generic Function* 
+**remove-method** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*generic-function*—a *generic function*. 
+*generic-function*—a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-The *generic function* <ClLinks  term={"remove-method"}><b>remove-method</b></ClLinks> removes a <ClLinks  term={"method"}><i>method</i></ClLinks> from *generic-function* by modifying the *generic-function* (if necessary). 
+The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <ClLinks  term={"remove-method"}><b>remove-method</b></ClLinks> removes a <ClLinks  term={"method"}><i>method</i></ClLinks> from *generic-function* by modifying the *generic-function* (if necessary). 
 
 
 

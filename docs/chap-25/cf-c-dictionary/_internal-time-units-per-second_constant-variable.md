@@ -1,4 +1,4 @@
-**internal-time-units-per-second** *Constant Variable* 
+**internal-time-units-per-second** <GlossaryTerm styled={true} term={"constant variable"}><i>Constant Variable</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@ A positive *integer* , the magnitude of which is <ClLinks styled={true} term={"i
 
 
 
-The number of *internal time units* in one second. 
+The number of <GlossaryTerm styled={true} term={"internal time unit"}><i>internal time units</i></GlossaryTerm> in one second. 
 
 
 

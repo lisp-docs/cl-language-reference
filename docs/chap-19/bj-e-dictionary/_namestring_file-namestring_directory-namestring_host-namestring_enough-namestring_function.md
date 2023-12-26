@@ -46,11 +46,11 @@
 
 
 
-<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a *pathname designator* . 
+<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
-*defaults*—a *pathname designator* . The default is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></ClLinks>. <ClLinks  term={"namestring"}><i>namestring</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*defaults*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . The default is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></ClLinks>. <ClLinks  term={"namestring"}><i>namestring</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 

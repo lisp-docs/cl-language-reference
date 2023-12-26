@@ -1,4 +1,4 @@
-**float** *System Class* 
+**float** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -46,7 +46,7 @@ Abbreviating.
 
 
 
-*lower-limit*, *upper-limit*—*interval designators* for <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"float"}><b>float</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*lower-limit*, *upper-limit*—<GlossaryTerm styled={true} term={"interval designator"}><i>interval designators</i></GlossaryTerm> for <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"float"}><b>float</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 
@@ -82,7 +82,7 @@ Figure 2–9, Section 2.3.2 (Constructing Numbers from Tokens), Section 22.1.3.1
 
 
 
-Note that all mathematical integers are representable not only as Common Lisp *reals*, but also as *complex floats*. For example, possible representations of the mathematical number 1 include the *integer* 1, the <ClLinks  term={"float"}><i>float</i></ClLinks> 1.0, or the <ClLinks  term={"complex"}><i>complex</i></ClLinks> #C(1.0 0.0). 
+Note that all mathematical integers are representable not only as Common Lisp *reals*, but also as <GlossaryTerm styled={true} term={"complex float"}><i>complex floats</i></GlossaryTerm>. For example, possible representations of the mathematical number 1 include the *integer* 1, the <ClLinks  term={"float"}><i>float</i></ClLinks> 1.0, or the <ClLinks  term={"complex"}><i>complex</i></ClLinks> #C(1.0 0.0). 
 
 
 

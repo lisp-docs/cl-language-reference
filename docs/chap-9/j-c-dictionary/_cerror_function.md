@@ -14,7 +14,7 @@
 
 
 
-*Continue-format-control*—a *format control*. 
+*Continue-format-control*—a <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm>. 
 
 
 
@@ -157,7 +157,7 @@ Existing handler bindings.
 
 
 
-If *datum* is a *condition type* rather than a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, the <ClLinks styled={true} term={"format"}><b>format</b></ClLinks> directive &#126;\* may be especially useful in the *continue-format-control* in order to ignore the <ClLinks styled={true} term={"keyword"}><i>keywords</i></ClLinks> in the *initialization argument list*. For example: 
+If *datum* is a *condition type* rather than a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, the <ClLinks styled={true} term={"format"}><b>format</b></ClLinks> directive &#126;\* may be especially useful in the *continue-format-control* in order to ignore the <ClLinks styled={true} term={"keyword"}><i>keywords</i></ClLinks> in the <GlossaryTerm styled={true} term={"initialization argument list"}><i>initialization argument list</i></GlossaryTerm>. For example: 
 
 
 

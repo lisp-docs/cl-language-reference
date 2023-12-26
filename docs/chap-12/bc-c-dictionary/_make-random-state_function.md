@@ -14,7 +14,7 @@
 
 
 
-*state*—a *random state*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, or <ClLinks  term={"t"}><b>t</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*state*—a <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, or <ClLinks  term={"t"}><b>t</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@ Creates a *fresh object* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLin
 
 
 
-If *state* is a *random state object*, the *new-state* is a <ClLinks  term={"copy"}><i>copy</i></ClLinks><sub>5</sub> of that <ClLinks  term={"object"}><i>object</i></ClLinks>. If *state* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the *new-state* is a <ClLinks  term={"copy"}><i>copy</i></ClLinks><sub>5</sub> of the *current random state*. If *state* is <ClLinks  term={"t"}><b>t</b></ClLinks>, the *new-state* is a *fresh random state object* that has been randomly initialized by some means. 
+If *state* is a *random state object*, the *new-state* is a <ClLinks  term={"copy"}><i>copy</i></ClLinks><sub>5</sub> of that <ClLinks  term={"object"}><i>object</i></ClLinks>. If *state* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the *new-state* is a <ClLinks  term={"copy"}><i>copy</i></ClLinks><sub>5</sub> of the <GlossaryTerm styled={true} term={"current random state"}><i>current random state</i></GlossaryTerm>. If *state* is <ClLinks  term={"t"}><b>t</b></ClLinks>, the *new-state* is a *fresh random state object* that has been randomly initialized by some means. 
 
 
 
@@ -58,7 +58,7 @@ If *state* is a *random state object*, the *new-state* is a <ClLinks  term={"cop
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *state* is not a *random state*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, or <ClLinks  term={"t"}><b>t</b></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *state* is not a <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, or <ClLinks  term={"t"}><b>t</b></ClLinks>. 
 
 
 

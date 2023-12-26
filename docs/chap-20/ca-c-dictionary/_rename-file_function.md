@@ -14,11 +14,11 @@
 
 
 
-*filespec*—a *pathname designator* . 
+*filespec*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
-*new-name*—a *pathname designator* other than a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+*new-name*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> other than a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-*old-truename*—a *physical pathname*. 
+*old-truename*—a <GlossaryTerm styled={true} term={"physical pathname"}><i>physical pathname</i></GlossaryTerm>. 
 
 
 
-*new-truename*—a *physical pathname*. 
+*new-truename*—a <GlossaryTerm styled={true} term={"physical pathname"}><i>physical pathname</i></GlossaryTerm>. 
 
 
 
@@ -46,7 +46,7 @@ It is an error to specify a filename containing a <ClLinks  term={"wild"}><i>wil
 
 
 
-If *new-name* is a *logical pathname*, <ClLinks  term={"rename-file"}><b>rename-file</b></ClLinks> returns a *logical pathname* as its *primary value*. 
+If *new-name* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, <ClLinks  term={"rename-file"}><b>rename-file</b></ClLinks> returns a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>. 
 
 
 
@@ -58,11 +58,11 @@ If *new-name* is a *logical pathname*, <ClLinks  term={"rename-file"}><b>rename-
 
 
 
-<ClLinks  term={"rename-file"}><b>rename-file</b></ClLinks> returns three values if successful. The *primary value*, *defaulted-new-name*, is the resulting name which is composed of *new-name* with any missing components filled in by performing a <ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks> operation using *filespec* as the defaults. The *secondary value*, *old-truename*, is the <ClLinks  term={"truename"}><i>truename</i></ClLinks> of the <ClLinks  term={"file"}><i>file</i></ClLinks> before it was renamed. The *tertiary value*, *new-truename*, is the <ClLinks  term={"truename"}><i>truename</i></ClLinks> of the <ClLinks  term={"file"}><i>file</i></ClLinks> after it was renamed. 
+<ClLinks  term={"rename-file"}><b>rename-file</b></ClLinks> returns three values if successful. The <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>, *defaulted-new-name*, is the resulting name which is composed of *new-name* with any missing components filled in by performing a <ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks> operation using *filespec* as the defaults. The <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *old-truename*, is the <ClLinks  term={"truename"}><i>truename</i></ClLinks> of the <ClLinks  term={"file"}><i>file</i></ClLinks> before it was renamed. The <GlossaryTerm styled={true} term={"tertiary value"}><i>tertiary value</i></GlossaryTerm>, *new-truename*, is the <ClLinks  term={"truename"}><i>truename</i></ClLinks> of the <ClLinks  term={"file"}><i>file</i></ClLinks> after it was renamed. 
 
 
 
-If the *filespec designator* is an open <ClLinks  term={"stream"}><i>stream</i></ClLinks>, then the <ClLinks  term={"stream"}><i>stream</i></ClLinks> itself and the file associated with it are affected (if the *file system* permits). 
+If the *filespec designator* is an open <ClLinks  term={"stream"}><i>stream</i></ClLinks>, then the <ClLinks  term={"stream"}><i>stream</i></ClLinks> itself and the file associated with it are affected (if the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> permits). 
 
 
 

@@ -1,4 +1,4 @@
-**array-total-size-limit** *Constant Variable* 
+**array-total-size-limit** <GlossaryTerm styled={true} term={"constant variable"}><i>Constant Variable</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@ A positive <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>, the exact magnitud
 
 
 
-The upper exclusive bound on the *array total size* of an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+The upper exclusive bound on the <GlossaryTerm styled={true} term={"array total size"}><i>array total size</i></GlossaryTerm> of an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
-The actual limit on the *array total size* imposed by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might vary according the *element type* of the <ClLinks  term={"array"}><i>array</i></ClLinks>; in this case, the value of <ClLinks  term={"array-total-size-limit"}><b>array-total-size-limit</b></ClLinks> will be the smallest of these possible limits. 
+The actual limit on the <GlossaryTerm styled={true} term={"array total size"}><i>array total size</i></GlossaryTerm> imposed by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might vary according the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of the <ClLinks  term={"array"}><i>array</i></ClLinks>; in this case, the value of <ClLinks  term={"array-total-size-limit"}><b>array-total-size-limit</b></ClLinks> will be the smallest of these possible limits. 
 
 
 

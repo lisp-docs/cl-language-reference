@@ -18,15 +18,15 @@
 
 
 
-*universal-time*—a *universal time*. 
+*universal-time*—a <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm>. 
 
 
 
-*time-zone*—a *time zone*. 
+*time-zone*—a <GlossaryTerm styled={true} term={"time zone"}><i>time zone</i></GlossaryTerm>. 
 
 
 
-*second*, *minute*, *hour*, *date*, *month*, *year*, *day*, *daylight-p*, *zone*—a *decoded time*. 
+*second*, *minute*, *hour*, *date*, *month*, *year*, *day*, *daylight-p*, *zone*—a <GlossaryTerm styled={true} term={"decoded time"}><i>decoded time</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Returns the *decoded time* represented by the given *universal time*. 
+Returns the <GlossaryTerm styled={true} term={"decoded time"}><i>decoded time</i></GlossaryTerm> represented by the given <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm>. 
 
 
 

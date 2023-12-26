@@ -1,4 +1,4 @@
-**slot-unbound** *Standard Generic Function* 
+**slot-unbound** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -50,7 +50,7 @@ The generic function <ClLinks  term={"slot-unbound"}><b>slot-unbound</b></ClLink
 
 
 
-If <ClLinks  term={"slot-unbound"}><b>slot-unbound</b></ClLinks> returns, only the *primary value* will be used by the caller, and all other values will be ignored. 
+If <ClLinks  term={"slot-unbound"}><b>slot-unbound</b></ClLinks> returns, only the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> will be used by the caller, and all other values will be ignored. 
 
 
 

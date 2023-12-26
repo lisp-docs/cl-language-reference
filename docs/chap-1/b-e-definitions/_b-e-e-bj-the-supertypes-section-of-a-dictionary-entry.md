@@ -6,7 +6,7 @@ This appears in the dictionary entry for a <ClLinks styled={true} term={"type"}>
 
 
 
-In <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> where there is a corresponding <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>, the order of the *classes* in the *class precedence list* is consistent with the order presented in this section. 
+In <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> where there is a corresponding <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>, the order of the *classes* in the <GlossaryTerm styled={true} term={"class precedence list"}><i>class precedence list</i></GlossaryTerm> is consistent with the order presented in this section. 
 
 
 

@@ -22,7 +22,7 @@ The evaluation of each such <ClLinks  term={"form"}><i>form</i></ClLinks> procee
 
 
 
-2\. <ClLinks  term={"evaluate"}><i>Evaluate</i></ClLinks> the <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the <ClLinks  term={"place"}><i>place</i></ClLinks>, in the order specified by the second value of the *setf expansion* for that <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+2\. <ClLinks  term={"evaluate"}><i>Evaluate</i></ClLinks> the <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the <ClLinks  term={"place"}><i>place</i></ClLinks>, in the order specified by the second value of the <GlossaryTerm styled={true} term={"setf expansion"}><i>setf expansion</i></GlossaryTerm> for that <ClLinks  term={"place"}><i>place</i></ClLinks>. 
 
 
 

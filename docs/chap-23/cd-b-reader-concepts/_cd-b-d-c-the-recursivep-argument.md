@@ -2,7 +2,7 @@
 
 
 
-If *recursive-p* is supplied and not <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, it specifies that this function call is not an outermost call to <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> but an embedded call, typically from a *reader macro function*. It is important to distinguish such recursive calls for three reasons. 
+If *recursive-p* is supplied and not <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, it specifies that this function call is not an outermost call to <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> but an embedded call, typically from a <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro function</i></GlossaryTerm>. It is important to distinguish such recursive calls for three reasons. 
 
 
 

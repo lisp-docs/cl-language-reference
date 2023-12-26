@@ -22,7 +22,7 @@
 
 
 
-*contents*— If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is globally defined as a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or a *special operator* , an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> nature and identity is returned. If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not globally defined as either a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or a *special operator* , and if the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>, a *function object* is returned. 
+*contents*— If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is globally defined as a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> , an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> nature and identity is returned. If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not globally defined as either a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> , and if the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>, a *function object* is returned. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-*Accesses* the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s *function cell*. 
+*Accesses* the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <GlossaryTerm styled={true} term={"function cell"}><i>function cell</i></GlossaryTerm>. 
 
 
 
@@ -137,7 +137,7 @@ Should signal <ClLinks  term={"undefined-function"}><b>undefined-function</b></C
 
 
 
-<ClLinks  term={"setf"}><b>setf</b></ClLinks> may be used with <ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> to replace a global function definition when the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s function definition does not represent a *special operator* . 
+<ClLinks  term={"setf"}><b>setf</b></ClLinks> may be used with <ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> to replace a global function definition when the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s function definition does not represent a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> . 
 
 
 

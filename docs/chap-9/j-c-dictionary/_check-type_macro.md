@@ -18,7 +18,7 @@
 
 
 
-*typespec*—a *type specifier* . 
+*typespec*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 

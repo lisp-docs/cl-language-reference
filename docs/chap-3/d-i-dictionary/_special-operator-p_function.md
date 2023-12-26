@@ -18,7 +18,7 @@
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is a *special operator* ; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> ; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -48,7 +48,7 @@ Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its a
 
 
 
-Historically, this function was called special-form-p. The name was finally declared a misnomer and changed, since it returned true for *special operators*, not *special forms*. 
+Historically, this function was called special-form-p. The name was finally declared a misnomer and changed, since it returned true for <GlossaryTerm styled={true} term={"special operator"}><i>special operators</i></GlossaryTerm>, not <GlossaryTerm styled={true} term={"special form"}><i>special forms</i></GlossaryTerm>. 
 
 
 

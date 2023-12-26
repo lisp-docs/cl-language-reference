@@ -18,11 +18,11 @@
 
 
 
-*input-stream*—an *input stream designator* . The default is *standard input*. 
+*input-stream*—an *input stream designator* . The default is <GlossaryTerm styled={true} term={"standard input"}><i>standard input</i></GlossaryTerm>. 
 
 
 
-*eof-error-p*—a *generalized boolean*. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+*eof-error-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*recursive-p*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*recursive-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-*missing-newline-p*—a *generalized boolean*. 
+*missing-newline-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-Reads from *input-stream* a line of text that is terminated by a <ClLinks  term={"newline"}><i>newline</i></ClLinks> or *end of file*. 
+Reads from *input-stream* a line of text that is terminated by a <ClLinks  term={"newline"}><i>newline</i></ClLinks> or <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm>. 
 
 
 
@@ -54,11 +54,11 @@ If *recursive-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, this call is 
 
 
 
-The *primary value*, *line*, is the line that is read, represented as a <ClLinks  term={"string"}><i>string</i></ClLinks> (without the trailing <ClLinks  term={"newline"}><i>newline</i></ClLinks>, if any). If *eof-error-p* is <ClLinks  term={"false"}><i>false</i></ClLinks> and the *end of file* for *input-stream* is reached before any <ClLinks  term={"character"}><i>characters</i></ClLinks> are read, *eof-value* is returned as the *line*. 
+The <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>, *line*, is the line that is read, represented as a <ClLinks  term={"string"}><i>string</i></ClLinks> (without the trailing <ClLinks  term={"newline"}><i>newline</i></ClLinks>, if any). If *eof-error-p* is <ClLinks  term={"false"}><i>false</i></ClLinks> and the <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm> for *input-stream* is reached before any <ClLinks  term={"character"}><i>characters</i></ClLinks> are read, *eof-value* is returned as the *line*. 
 
 
 
-The *secondary value*, *missing-newline-p*, is a *generalized boolean* that is <ClLinks  term={"false"}><i>false</i></ClLinks> if the *line* was terminated by a <ClLinks  term={"newline"}><i>newline</i></ClLinks>, or <ClLinks  term={"true"}><i>true</i></ClLinks> if the *line* was terminated by the *end of file* for *input-stream* (or if the *line* is the *eof-value*). 
+The <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *missing-newline-p*, is a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> that is <ClLinks  term={"false"}><i>false</i></ClLinks> if the *line* was terminated by a <ClLinks  term={"newline"}><i>newline</i></ClLinks>, or <ClLinks  term={"true"}><i>true</i></ClLinks> if the *line* was terminated by the <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm> for *input-stream* (or if the *line* is the *eof-value*). 
 
 
 
@@ -89,7 +89,7 @@ line2"
 
 
 
-If an *end of file*<sub>2</sub> occurs before any characters are read in the line, an error is signaled if *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>2</sub> occurs before any characters are read in the line, an error is signaled if *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 

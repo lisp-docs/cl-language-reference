@@ -50,11 +50,11 @@
 
 
 
-<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> that must take as many <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> as there are <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>. <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a *proper list*. 
+<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> that must take as many <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> as there are <ClLinks styled={true} term={"list"}><i>lists</i></ClLinks>. <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
 
 
 
-*list-1*—the first <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> (which must be a *proper list*). 
+*list-1*—the first <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> (which must be a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>). 
 
 
 
@@ -144,7 +144,7 @@ In this case the function serves as a filter; this is a standard Lisp idiom usin
 
 
 
-Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if any <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is not a *proper list*. 
+Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if any <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is not a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
 
 
 

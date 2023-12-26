@@ -18,7 +18,7 @@
 
 
 
-*hash-table*—a *hash table*. 
+*hash-table*—a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
 
 
 

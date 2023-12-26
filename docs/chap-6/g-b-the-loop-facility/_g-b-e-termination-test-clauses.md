@@ -10,7 +10,7 @@ The constructs always, never, thereis, while, until, and the macro <ClLinks styl
 
 
 
-The constructs always, never, and thereis provide specific values to be returned when a <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> terminates. Using always, never, or thereis in a loop with value accumulation clauses that are not into causes an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"program-error"}><b>program-error</b></ClLinks> to be signaled (at macro expansion time). Since always, never, and thereis use the <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks> *special operator* to terminate iteration, any finally clause that is supplied is not evaluated when exit occurs due to any of these constructs. In all other respects these constructs behave like the while and until constructs. 
+The constructs always, never, and thereis provide specific values to be returned when a <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> terminates. Using always, never, or thereis in a loop with value accumulation clauses that are not into causes an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"program-error"}><b>program-error</b></ClLinks> to be signaled (at macro expansion time). Since always, never, and thereis use the <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks> <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> to terminate iteration, any finally clause that is supplied is not evaluated when exit occurs due to any of these constructs. In all other respects these constructs behave like the while and until constructs. 
 
 
 
@@ -42,7 +42,7 @@ There are two differences between the thereis and until constructs:
 
 
 
-*•* The until construct executes any finally clause. Since thereis uses the <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks> *special operator* to terminate iteration, any finally clause that is supplied is not evaluated when exit occurs due to thereis. 
+*•* The until construct executes any finally clause. Since thereis uses the <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks> <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> to terminate iteration, any finally clause that is supplied is not evaluated when exit occurs due to thereis. 
 
 
 
@@ -66,7 +66,7 @@ There are two differences between the never and until constructs:
 
 
 
-*•* The until construct does not bypass any finally clauses. Since never uses the <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks> *special operator* to terminate iteration, any finally clause that is supplied is not evaluated when exit occurs due to never. 
+*•* The until construct does not bypass any finally clauses. Since never uses the <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks> <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> to terminate iteration, any finally clause that is supplied is not evaluated when exit occurs due to never. 
 
 
 

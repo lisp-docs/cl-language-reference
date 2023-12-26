@@ -1,4 +1,4 @@
-**multiple-value-prog1** *Special Operator* 
+**multiple-value-prog1** <GlossaryTerm styled={true} term={"special operator"}><i>Special Operator</i></GlossaryTerm> 
 
 
 

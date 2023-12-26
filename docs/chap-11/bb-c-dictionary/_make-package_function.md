@@ -14,15 +14,15 @@
 
 
 
-*package-name*—a *string designator* . 
+*package-name*—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
 
 
 
-<ClLinks  term={"nickname"}><i>nicknames</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *string designators*. The default is the *empty list*. 
+<ClLinks  term={"nickname"}><i>nicknames</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"string designator"}><i>string designators</i></GlossaryTerm>. The default is the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"use"}><i>use</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *package designators*. The default is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
+<ClLinks  term={"use"}><i>use</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"package designator"}><i>package designators</i></GlossaryTerm>. The default is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ Creates a new <ClLinks  term={"package"}><i>package</i></ClLinks> with the name 
 
 
 
-<ClLinks  term={"use"}><i>use</i></ClLinks> specifies zero or more <ClLinks  term={"package"}><i>packages</i></ClLinks> the *external symbols* of which are to be inherited by the new <ClLinks  term={"package"}><i>package</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>. 
+<ClLinks  term={"use"}><i>use</i></ClLinks> specifies zero or more <ClLinks  term={"package"}><i>packages</i></ClLinks> the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of which are to be inherited by the new <ClLinks  term={"package"}><i>package</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>. 
 
 
 

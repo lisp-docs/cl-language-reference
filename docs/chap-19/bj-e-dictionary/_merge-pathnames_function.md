@@ -18,11 +18,11 @@
 
 
 
-<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a *pathname designator* . 
+<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
-*default-pathname*—a *pathname designator* . The default is the <ClLinks  term={"value"}><i>value</i></ClLinks> of 
+*default-pathname*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . The default is the <ClLinks  term={"value"}><i>value</i></ClLinks> of 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*default-version*—a *valid pathname version*. The default is :newest. 
+*default-version*—a <GlossaryTerm styled={true} term={"valid pathname version"}><i>valid pathname version</i></GlossaryTerm>. The default is :newest. 
 
 
 
@@ -82,11 +82,11 @@ If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a <ClLinks  term={"p
 
 
 
-<ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks> recognizes a *logical pathname namestring* when *default-pathname* is a *logical pathname*, or when the <ClLinks  term={"namestring"}><i>namestring</i></ClLinks> begins with the name of a defined *logical host* followed by a <ClLinks  term={"colon"}><i>colon</i></ClLinks>. In the first of these two cases, the host portion of the *logical pathname namestring* and its following <ClLinks  term={"colon"}><i>colon</i></ClLinks> are optional. 
+<ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks> recognizes a *logical pathname namestring* when *default-pathname* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, or when the <ClLinks  term={"namestring"}><i>namestring</i></ClLinks> begins with the name of a defined <GlossaryTerm styled={true} term={"logical host"}><i>logical host</i></GlossaryTerm> followed by a <ClLinks  term={"colon"}><i>colon</i></ClLinks>. In the first of these two cases, the host portion of the *logical pathname namestring* and its following <ClLinks  term={"colon"}><i>colon</i></ClLinks> are optional. 
 
 
 
-<ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks> returns a *logical pathname* if and only if its first argument is a *logical pathname*, or its first argument is a *logical pathname namestring* with an explicit host, or its first argument does not specify a host and the *default-pathname* is a *logical pathname*. 
+<ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks> returns a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> if and only if its first argument is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, or its first argument is a *logical pathname namestring* with an explicit host, or its first argument does not specify a host and the *default-pathname* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>. 
 
 
 

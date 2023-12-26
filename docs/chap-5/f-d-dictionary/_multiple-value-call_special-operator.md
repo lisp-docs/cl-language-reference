@@ -1,4 +1,4 @@
-**multiple-value-call** *Special Operator* 
+**multiple-value-call** <GlossaryTerm styled={true} term={"special operator"}><i>Special Operator</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—a *function designator* resulting from the evaluation of *function-form*. 
+<ClLinks  term={"function"}><i>function</i></ClLinks>—a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> resulting from the evaluation of *function-form*. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Applies <ClLinks  term={"function"}><i>function</i></ClLinks> to a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"object"}><i>objects</i></ClLinks> collected from groups of *multiple values*<sub>2</sub>. 
+Applies <ClLinks  term={"function"}><i>function</i></ClLinks> to a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"object"}><i>objects</i></ClLinks> collected from groups of <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub>. 
 
 
 

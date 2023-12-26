@@ -2,7 +2,7 @@
 
 
 
-In the simple case—if standard method combination is used and all applicable methods are primary methods—the effective method is the most specific method. That method can call the next most specific method by using the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks>. The method that <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> will call is referred to as the *next method*. The predicate <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> tests whether a next method exists. If <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is called and there is no next most specific method, the generic function <ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> is invoked. 
+In the simple case—if standard method combination is used and all applicable methods are primary methods—the effective method is the most specific method. That method can call the next most specific method by using the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks>. The method that <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> will call is referred to as the <GlossaryTerm styled={true} term={"next method"}><i>next method</i></GlossaryTerm>. The predicate <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> tests whether a next method exists. If <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is called and there is no next most specific method, the generic function <ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> is invoked. 
 
 
 

@@ -14,11 +14,11 @@
 
 
 
-*symbol-names*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of *string designators*. 
+*symbol-names*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"string designator"}><i>string designators</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Specifically, <ClLinks  term={"package"}><i>package</i></ClLinks> is searched for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> with the <ClLinks  term={"name"}><i>names</i></ClLinks> supplied by *symbol-names*. For each such <ClLinks  term={"name"}><i>name</i></ClLinks>, if a corresponding <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> (directly, not by inheritance), then a corresponding <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is created with that <ClLinks  term={"name"}><i>name</i></ClLinks>, and inserted into <ClLinks  term={"package"}><i>package</i></ClLinks> as an *internal symbol*. The corresponding <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, whether pre-existing or newly created, is then added, if not already present, to the *shadowing symbols list* of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+Specifically, <ClLinks  term={"package"}><i>package</i></ClLinks> is searched for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> with the <ClLinks  term={"name"}><i>names</i></ClLinks> supplied by *symbol-names*. For each such <ClLinks  term={"name"}><i>name</i></ClLinks>, if a corresponding <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> (directly, not by inheritance), then a corresponding <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is created with that <ClLinks  term={"name"}><i>name</i></ClLinks>, and inserted into <ClLinks  term={"package"}><i>package</i></ClLinks> as an <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm>. The corresponding <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, whether pre-existing or newly created, is then added, if not already present, to the <GlossaryTerm styled={true} term={"shadowing symbols list"}><i>shadowing symbols list</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -81,7 +81,7 @@ Current state of the package system.
 
 
 
-If a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> with a name in *symbol-names* already exists in <ClLinks  term={"package"}><i>package</i></ClLinks>, but by inheritance, the inherited symbol becomes *shadowed* <sub>3</sub> by a newly created *internal symbol*. 
+If a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> with a name in *symbol-names* already exists in <ClLinks  term={"package"}><i>package</i></ClLinks>, but by inheritance, the inherited symbol becomes *shadowed* <sub>3</sub> by a newly created <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm>. 
 
 
 

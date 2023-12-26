@@ -32,7 +32,7 @@
 
 
 
-*bit-array*—for <ClLinks  term={"bit"}><b>bit</b></ClLinks>, a *bit array*; for <ClLinks  term={"sbit"}><b>sbit</b></ClLinks>, a *simple bit array*. 
+*bit-array*—for <ClLinks  term={"bit"}><b>bit</b></ClLinks>, a <GlossaryTerm styled={true} term={"bit array"}><i>bit array</i></GlossaryTerm>; for <ClLinks  term={"sbit"}><b>sbit</b></ClLinks>, a <GlossaryTerm styled={true} term={"simple bit array"}><i>simple bit array</i></GlossaryTerm>. 
 
 
 
@@ -52,7 +52,7 @@
 
 
 
-These <ClLinks  term={"function"}><i>functions</i></ClLinks> ignore the *fill pointer* when *accessing elements*. 
+These <ClLinks  term={"function"}><i>functions</i></ClLinks> ignore the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> when *accessing elements*. 
 
 
 
@@ -83,7 +83,7 @@ These <ClLinks  term={"function"}><i>functions</i></ClLinks> ignore the *fill po
 
 
 
-<ClLinks  term={"bit"}><b>bit</b></ClLinks> and <ClLinks  term={"sbit"}><b>sbit</b></ClLinks> are like <ClLinks  term={"aref"}><b>aref</b></ClLinks> except that they require <ClLinks  term={"array"}><i>arrays</i></ClLinks> to be a *bit array* and a *simple bit array*, respectively. 
+<ClLinks  term={"bit"}><b>bit</b></ClLinks> and <ClLinks  term={"sbit"}><b>sbit</b></ClLinks> are like <ClLinks  term={"aref"}><b>aref</b></ClLinks> except that they require <ClLinks  term={"array"}><i>arrays</i></ClLinks> to be a <GlossaryTerm styled={true} term={"bit array"}><i>bit array</i></GlossaryTerm> and a <GlossaryTerm styled={true} term={"simple bit array"}><i>simple bit array</i></GlossaryTerm>, respectively. 
 
 
 
@@ -147,11 +147,11 @@ These <ClLinks  term={"function"}><i>functions</i></ClLinks> ignore the *fill po
 
 
 
-*bit-array*, *bit-array1*, *bit-array2*—a *bit array*. 
+*bit-array*, *bit-array1*, *bit-array2*—a <GlossaryTerm styled={true} term={"bit array"}><i>bit array</i></GlossaryTerm>. 
 
 
 
-*Opt-arg*—a *bit array*, or <ClLinks  term={"t"}><b>t</b></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*Opt-arg*—a <GlossaryTerm styled={true} term={"bit array"}><i>bit array</i></GlossaryTerm>, or <ClLinks  term={"t"}><b>t</b></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -159,7 +159,7 @@ These <ClLinks  term={"function"}><i>functions</i></ClLinks> ignore the *fill po
 
 
 
-*resulting-bit-array*—a *bit array*. 
+*resulting-bit-array*—a <GlossaryTerm styled={true} term={"bit array"}><i>bit array</i></GlossaryTerm>. 
 
 
 

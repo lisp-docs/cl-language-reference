@@ -2,7 +2,7 @@
 
 
 
-There are several (overlapping) categories of <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> that have no formally associated <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> but that are nevertheless useful to name. They include *graphic characters*, *alphabetic*<sub>1</sub> *characters*, *characters* with <ClLinks styled={true} term={"case"}><i>case</i></ClLinks> (<ClLinks styled={true} term={"uppercase"}><i>uppercase</i></ClLinks> and *lowercase characters*), *numeric characters*, *alphanumeric characters*, and <ClLinks styled={true} term={"digit"}><i>digits</i></ClLinks> (in a given <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> ). 
+There are several (overlapping) categories of <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> that have no formally associated <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> but that are nevertheless useful to name. They include *graphic characters*, <GlossaryTerm styled={true} term={"alphabetic"}><i>alphabetic</i></GlossaryTerm><sub>1</sub> <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> with <ClLinks styled={true} term={"case"}><i>case</i></ClLinks> (<ClLinks styled={true} term={"uppercase"}><i>uppercase</i></ClLinks> and *lowercase characters*), *numeric characters*, *alphanumeric characters*, and <ClLinks styled={true} term={"digit"}><i>digits</i></ClLinks> (in a given <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> ). 
 
 
 
@@ -10,7 +10,7 @@ For each *implementation-defined attribute* of a <ClLinks styled={true} term={"c
 
 
 
-Note that these terms are defined independently of any special syntax which might have been enabled in the *current readtable*. 
+Note that these terms are defined independently of any special syntax which might have been enabled in the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. 
 
 
 

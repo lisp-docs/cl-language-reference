@@ -12,7 +12,7 @@
 
 *y*—an <ClLinks  term={"object"}><i>object</i></ClLinks>.
 
-*generalized-boolean*—a *generalized boolean*.
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>.
 
 **Description:**
 
@@ -28,7 +28,7 @@ For *conses*, <ClLinks  term={"equal"}><b>equal</b></ClLinks> is defined recursi
 
 <ClLinks  term={"array"}><i>Arrays</i></ClLinks>
 
-Two <ClLinks  term={"array"}><i>arrays</i></ClLinks> are <ClLinks  term={"equal"}><b>equal</b></ClLinks> only if they are <ClLinks  term={"eq"}><b>eq</b></ClLinks>, with one exception: <ClLinks  term={"string"}><i>strings</i></ClLinks> and *bit vectors* are compared element-by-element (using <ClLinks  term={"eql"}><b>eql</b></ClLinks>). If either *x* or *y* has a *fill pointer* , the *fill pointer* limits the number of elements examined by <ClLinks  term={"equal"}><b>equal</b></ClLinks>. Uppercase and lowercase letters in <ClLinks  term={"string"}><i>strings</i></ClLinks> are considered by <ClLinks  term={"equal"}><b>equal</b></ClLinks> to be different.
+Two <ClLinks  term={"array"}><i>arrays</i></ClLinks> are <ClLinks  term={"equal"}><b>equal</b></ClLinks> only if they are <ClLinks  term={"eq"}><b>eq</b></ClLinks>, with one exception: <ClLinks  term={"string"}><i>strings</i></ClLinks> and <GlossaryTerm styled={true} term={"bit vector"}><i>bit vectors</i></GlossaryTerm> are compared element-by-element (using <ClLinks  term={"eql"}><b>eql</b></ClLinks>). If either *x* or *y* has a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> limits the number of elements examined by <ClLinks  term={"equal"}><b>equal</b></ClLinks>. Uppercase and lowercase letters in <ClLinks  term={"string"}><i>strings</i></ClLinks> are considered by <ClLinks  term={"equal"}><b>equal</b></ClLinks> to be different.
 
 <ClLinks  term={"pathname"}><i>Pathnames</i></ClLinks>
 
@@ -46,7 +46,7 @@ Two other <ClLinks  term={"object"}><i>objects</i></ClLinks> are <ClLinks  term=
 
 | :- |
 
-|<p><ClLinks  term={"number"}><i>number</i></ClLinks> uses <ClLinks  term={"eql"}><b>eql</b></ClLinks> </p><p><ClLinks  term={"character"}><i>character</i></ClLinks> uses <ClLinks  term={"eql"}><b>eql</b></ClLinks> </p><p><ClLinks  term={"cons"}><i>cons</i></ClLinks> descends </p><p>*bit vector* descends </p><p><ClLinks  term={"string"}><i>string</i></ClLinks> descends </p><p><ClLinks  term={"pathname"}><i>pathname</i></ClLinks> “functionally equivalent” </p><p><ClLinks  term={"structure"}><i>structure</i></ClLinks> uses <ClLinks  term={"eq"}><b>eq</b></ClLinks> </p><p>Other <ClLinks  term={"array"}><i>array</i></ClLinks> uses <ClLinks  term={"eq"}><b>eq</b></ClLinks> </p><p>*hash table* uses <ClLinks  term={"eq"}><b>eq</b></ClLinks> </p><p>Other <ClLinks  term={"object"}><i>object</i></ClLinks> uses <ClLinks  term={"eq"}><b>eq</b></ClLinks></p>|
+|<p><ClLinks  term={"number"}><i>number</i></ClLinks> uses <ClLinks  term={"eql"}><b>eql</b></ClLinks> </p><p><ClLinks  term={"character"}><i>character</i></ClLinks> uses <ClLinks  term={"eql"}><b>eql</b></ClLinks> </p><p><ClLinks  term={"cons"}><i>cons</i></ClLinks> descends </p><p><GlossaryTerm styled={true} term={"bit vector"}><i>bit vector</i></GlossaryTerm> descends </p><p><ClLinks  term={"string"}><i>string</i></ClLinks> descends </p><p><ClLinks  term={"pathname"}><i>pathname</i></ClLinks> “functionally equivalent” </p><p><ClLinks  term={"structure"}><i>structure</i></ClLinks> uses <ClLinks  term={"eq"}><b>eq</b></ClLinks> </p><p>Other <ClLinks  term={"array"}><i>array</i></ClLinks> uses <ClLinks  term={"eq"}><b>eq</b></ClLinks> </p><p><GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> uses <ClLinks  term={"eq"}><b>eq</b></ClLinks> </p><p>Other <ClLinks  term={"object"}><i>object</i></ClLinks> uses <ClLinks  term={"eq"}><b>eq</b></ClLinks></p>|
 
 **Figure 5–12. Summary and priorities of behavior of equal**
 

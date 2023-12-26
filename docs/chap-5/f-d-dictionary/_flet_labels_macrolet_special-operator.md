@@ -114,7 +114,7 @@ The <ClLinks  term={"scope"}><i>scope</i></ClLinks> of the name <ClLinks  term={
 
 
 
-The names of <ClLinks  term={"function"}><i>functions</i></ClLinks> defined by <ClLinks  term={"flet"}><b>flet</b></ClLinks> are in the *lexical environment*; they retain their local definitions only within the body of <ClLinks  term={"flet"}><b>flet</b></ClLinks>. The function definition bindings are visible only in the body of <ClLinks  term={"flet"}><b>flet</b></ClLinks>, not the definitions themselves. Within the function definitions, 
+The names of <ClLinks  term={"function"}><i>functions</i></ClLinks> defined by <ClLinks  term={"flet"}><b>flet</b></ClLinks> are in the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm>; they retain their local definitions only within the body of <ClLinks  term={"flet"}><b>flet</b></ClLinks>. The function definition bindings are visible only in the body of <ClLinks  term={"flet"}><b>flet</b></ClLinks>, not the definitions themselves. Within the function definitions, 
 
 
 
@@ -122,7 +122,7 @@ local function names that match those being defined refer to <ClLinks  term={"fu
 
 
 
-Any *local-documentation* is attached to the corresponding local <ClLinks  term={"function"}><i>function</i></ClLinks> (if one is actually created) as a *documentation string*. 
+Any *local-documentation* is attached to the corresponding local <ClLinks  term={"function"}><i>function</i></ClLinks> (if one is actually created) as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm>. 
 
 
 
@@ -142,15 +142,15 @@ Any *local-documentation* is attached to the corresponding local <ClLinks  term=
 
 
 
-Within the body of <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>, global *setf expander* definitions of the <ClLinks  term={"name"}><i>names</i></ClLinks> defined by the <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> do not apply; rather, <ClLinks  term={"setf"}><b>setf</b></ClLinks> expands the *macro form* and recursively process the resulting <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+Within the body of <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>, global <GlossaryTerm styled={true} term={"setf expander"}><i>setf expander</i></GlossaryTerm> definitions of the <ClLinks  term={"name"}><i>names</i></ClLinks> defined by the <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> do not apply; rather, <ClLinks  term={"setf"}><b>setf</b></ClLinks> expands the <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> and recursively process the resulting <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-The macro-expansion functions defined by <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> are defined in the *lexical environment* in which the <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> form appears. Declarations and <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> and <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> definitions affect the local macro definitions in a <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>, but the consequences are undefined if the local macro definitions reference any local <ClLinks  term={"variable"}><i>variable</i></ClLinks> or *function bindings* that are visible in that *lexical environment*. 
+The macro-expansion functions defined by <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> are defined in the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> in which the <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> form appears. Declarations and <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> and <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> definitions affect the local macro definitions in a <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>, but the consequences are undefined if the local macro definitions reference any local <ClLinks  term={"variable"}><i>variable</i></ClLinks> or *function bindings* that are visible in that <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm>. 
 
 
 
-Any *local-documentation* is attached to the corresponding local *macro function* as a *documentation string*. 
+Any *local-documentation* is attached to the corresponding local <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm> as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm>. 
 
 
 
@@ -166,7 +166,7 @@ Data and Control
 
 
 
-**flet, labels, macrolet** 
+<DictionaryLink styled={true} term={"flet, labels, macrolet"}><b>flet, labels, macrolet</b></DictionaryLink> 
 
 
 
@@ -257,7 +257,7 @@ It is not possible to define recursive <ClLinks  term={"function"}><i>functions<
 
 
 
-If a <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is a *top level form*, the body <ClLinks  term={"form"}><i>forms</i></ClLinks> are also processed as *top level forms*. See Section 3.2.3 (File Compilation). 
+If a <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the body <ClLinks  term={"form"}><i>forms</i></ClLinks> are also processed as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>. See Section 3.2.3 (File Compilation). 
 
 
 

@@ -14,11 +14,11 @@
 
 
 
-*filespec*—a *pathname designator* . 
+*filespec*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
-<ClLinks  term={"truename"}><i>truename</i></ClLinks>—a *physical pathname*. 
+<ClLinks  term={"truename"}><i>truename</i></ClLinks>—a <GlossaryTerm styled={true} term={"physical pathname"}><i>physical pathname</i></GlossaryTerm>. 
 
 
 
@@ -61,7 +61,7 @@
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if an appropriate <ClLinks  term={"file"}><i>file</i></ClLinks> cannot be located within the *file system* for the given *filespec*, or if the *file system* cannot perform the requested operation. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if an appropriate <ClLinks  term={"file"}><i>file</i></ClLinks> cannot be located within the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> for the given *filespec*, or if the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> cannot perform the requested operation. 
 
 
 
@@ -81,4 +81,4 @@ An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-
 
 
 
-<ClLinks  term={"truename"}><b>truename</b></ClLinks> may be used to account for any <ClLinks  term={"filename"}><i>filename</i></ClLinks> translations performed by the *file system*. 
+<ClLinks  term={"truename"}><b>truename</b></ClLinks> may be used to account for any <ClLinks  term={"filename"}><i>filename</i></ClLinks> translations performed by the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. 

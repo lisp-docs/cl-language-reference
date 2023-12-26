@@ -22,15 +22,15 @@
 
 
 
-*format-control*—a *format control*. 
+*format-control*—a <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm>. 
 
 
 
-*format-argument*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> (*i.e.*, a *format argument*). 
+*format-argument*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> (*i.e.*, a <GlossaryTerm styled={true} term={"format argument"}><i>format argument</i></GlossaryTerm>). 
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -456,7 +456,7 @@ Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks
 
 
 
-Transfers control to the most recently established *applicable restart* having the same name as the function. That is, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> **abort** searches for an <ClLinks styled={true} term={"applicable"}><i>applicable</i></ClLinks> **abort** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> **continue** searches for an <ClLinks styled={true} term={"applicable"}><i>applicable</i></ClLinks> **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, and so on. 
+Transfers control to the most recently established <GlossaryTerm styled={true} term={"applicable restart"}><i>applicable restart</i></GlossaryTerm> having the same name as the function. That is, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> **abort** searches for an <ClLinks styled={true} term={"applicable"}><i>applicable</i></ClLinks> **abort** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> **continue** searches for an <ClLinks styled={true} term={"applicable"}><i>applicable</i></ClLinks> **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, and so on. 
 
 
 

@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>—a *pathname designator* . 
+<ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
@@ -38,7 +38,7 @@ Either <ClLinks styled={true} term={"bind"}><i>binds</i></ClLinks> **\*standard-
 
 
 
-If <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> is a *logical pathname*, it is translated into a physical pathname as if by calling <ClLinks styled={true} term={"translate-logical-pathname"}><b>translate-logical-pathname</b></ClLinks>. 
+If <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, it is translated into a physical pathname as if by calling <ClLinks styled={true} term={"translate-logical-pathname"}><b>translate-logical-pathname</b></ClLinks>. 
 
 
 
@@ -62,7 +62,7 @@ The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLink
 
 
 
-If a failure occurs when performing some operation on the *file system* while creating the dribble file, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
+If a failure occurs when performing some operation on the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> while creating the dribble file, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
 
 
 

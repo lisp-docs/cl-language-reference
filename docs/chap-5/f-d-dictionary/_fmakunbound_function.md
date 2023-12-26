@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a *function name*. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Removes the <ClLinks  term={"function"}><i>function</i></ClLinks> or <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition, if any, of <ClLinks  term={"name"}><i>name</i></ClLinks> in the *global environment*. 
+Removes the <ClLinks  term={"function"}><i>function</i></ClLinks> or <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition, if any, of <ClLinks  term={"name"}><i>name</i></ClLinks> in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. 
 
 **Examples:**
 ```lisp
@@ -45,11 +45,11 @@ Removes the <ClLinks  term={"function"}><i>function</i></ClLinks> or <ClLinks  t
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"name"}><i>name</i></ClLinks> is not a *function name*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"name"}><i>name</i></ClLinks> is not a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>. 
 
 
 
-The consequences are undefined if <ClLinks  term={"name"}><i>name</i></ClLinks> is a *special operator* . 
+The consequences are undefined if <ClLinks  term={"name"}><i>name</i></ClLinks> is a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> . 
 
 
 
@@ -73,7 +73,7 @@ Data and Control
 
 
 
-**flet, labels, macrolet** 
+<DictionaryLink styled={true} term={"flet, labels, macrolet"}><b>flet, labels, macrolet</b></DictionaryLink> 
 
 
 

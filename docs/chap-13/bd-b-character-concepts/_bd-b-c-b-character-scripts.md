@@ -2,7 +2,7 @@
 
 
 
-A <ClLinks styled={true} term={"script"}><i>script</i></ClLinks> is one of possibly several sets that form an *exhaustive partition* of the type <ClLinks styled={true} term={"character"}><b>character</b></ClLinks>. 
+A <ClLinks styled={true} term={"script"}><i>script</i></ClLinks> is one of possibly several sets that form an <GlossaryTerm styled={true} term={"exhaustive partition"}><i>exhaustive partition</i></GlossaryTerm> of the type <ClLinks styled={true} term={"character"}><b>character</b></ClLinks>. 
 
 
 
@@ -10,7 +10,7 @@ The number of such sets and boundaries between them is <ClLinks styled={true} te
 
 
 
-Although the term “<ClLinks styled={true} term={"script"}><i>script</i></ClLinks>” is chosen for definitional compatibility with ISO terminology, no *conforming implementation* is required to use any particular <ClLinks styled={true} term={"script"}><i>scripts</i></ClLinks> standardized by ISO or by any other standards organization. 
+Although the term “<ClLinks styled={true} term={"script"}><i>script</i></ClLinks>” is chosen for definitional compatibility with ISO terminology, no <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> is required to use any particular <ClLinks styled={true} term={"script"}><i>scripts</i></ClLinks> standardized by ISO or by any other standards organization. 
 
 
 

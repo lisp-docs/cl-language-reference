@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—each but the last must be a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> (which might be a *dotted list* but must not be a *circular list*); the last <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> may be any <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—each but the last must be a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> (which might be a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm> but must not be a <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm>); the last <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> may be any <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 

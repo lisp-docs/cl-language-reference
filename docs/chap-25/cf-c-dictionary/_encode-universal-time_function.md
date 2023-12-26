@@ -22,11 +22,11 @@
 
 
 
-*second*, *minute*, *hour*, *date*, *month*, *year*, *time-zone*—the corresponding parts of a *decoded time*. (Note that some of the nine values in a full *decoded time* are redundant, and so are not used as inputs to this function.) 
+*second*, *minute*, *hour*, *date*, *month*, *year*, *time-zone*—the corresponding parts of a <GlossaryTerm styled={true} term={"decoded time"}><i>decoded time</i></GlossaryTerm>. (Note that some of the nine values in a full <GlossaryTerm styled={true} term={"decoded time"}><i>decoded time</i></GlossaryTerm> are redundant, and so are not used as inputs to this function.) 
 
 
 
-*universal-time*—a *universal time*. 
+*universal-time*—a <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks styled={true} term={"encode-universal-time"}><b>encode-universal-time</b></ClLinks> converts a time from Decoded Time format to a *universal time*. If *time-zone* is supplied, no adjustment for daylight savings time is performed. 
+<ClLinks styled={true} term={"encode-universal-time"}><b>encode-universal-time</b></ClLinks> converts a time from Decoded Time format to a <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm>. If *time-zone* is supplied, no adjustment for daylight savings time is performed. 
 
 
 

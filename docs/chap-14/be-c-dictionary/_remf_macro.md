@@ -22,7 +22,7 @@
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<ClLinks styled={true} term={"remf"}><b>remf</b></ClLinks> removes from the *property list* stored in <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> a <ClLinks styled={true} term={"property"}><i>property</i></ClLinks><sub>1</sub> with a *property indicator identical* to <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks>. If there are multiple *properties*<sub>1</sub> with the <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> key, <ClLinks styled={true} term={"remf"}><b>remf</b></ClLinks> only removes the first such <ClLinks styled={true} term={"property"}><i>property</i></ClLinks>. <ClLinks styled={true} term={"remf"}><b>remf</b></ClLinks> returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> if no such <ClLinks styled={true} term={"property"}><i>property</i></ClLinks> was found, or <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if a property was found. 
+<ClLinks styled={true} term={"remf"}><b>remf</b></ClLinks> removes from the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> stored in <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> a <ClLinks styled={true} term={"property"}><i>property</i></ClLinks><sub>1</sub> with a *property indicator identical* to <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks>. If there are multiple *properties*<sub>1</sub> with the <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> key, <ClLinks styled={true} term={"remf"}><b>remf</b></ClLinks> only removes the first such <ClLinks styled={true} term={"property"}><i>property</i></ClLinks>. <ClLinks styled={true} term={"remf"}><b>remf</b></ClLinks> returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> if no such <ClLinks styled={true} term={"property"}><i>property</i></ClLinks> was found, or <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if a property was found. 
 
 
 
-The *property indicator* and the corresponding *property value* are removed in an undefined order by destructively splicing the property list. <ClLinks styled={true} term={"remf"}><b>remf</b></ClLinks> is permitted to either <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> or to <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> any part, <ClLinks styled={true} term={"car"}><b>car</b></ClLinks> or <ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks>, of the *list structure* held by that <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> and the corresponding <GlossaryTerm styled={true} term={"property value"}><i>property value</i></GlossaryTerm> are removed in an undefined order by destructively splicing the property list. <ClLinks styled={true} term={"remf"}><b>remf</b></ClLinks> is permitted to either <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> or to <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> any part, <ClLinks styled={true} term={"car"}><b>car</b></ClLinks> or <ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks>, of the <GlossaryTerm styled={true} term={"list structure"}><i>list structure</i></GlossaryTerm> held by that <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. 
 
 
 

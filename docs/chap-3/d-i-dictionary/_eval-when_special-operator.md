@@ -1,4 +1,4 @@
-**eval-when** *Special Operator* 
+**eval-when** <GlossaryTerm styled={true} term={"special operator"}><i>Special Operator</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -30,19 +30,19 @@
 
 
 
-The body of an <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> form is processed as an *implicit progn*, but only in the <ClLinks  term={"situation"}><i>situations</i></ClLinks> listed. 
+The body of an <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> form is processed as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>, but only in the <ClLinks  term={"situation"}><i>situations</i></ClLinks> listed. 
 
 
 
-The use of the <ClLinks  term={"situation"}><i>situations</i></ClLinks> :compile-toplevel (or compile) and :load-toplevel (or load) controls whether and when <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> occurs when <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> appears as a *top level form* in code processed by <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>. See Section 3.2.3 (File Compilation). 
+The use of the <ClLinks  term={"situation"}><i>situations</i></ClLinks> :compile-toplevel (or compile) and :load-toplevel (or load) controls whether and when <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> occurs when <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in code processed by <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>. See Section 3.2.3 (File Compilation). 
 
 
 
-The use of the <ClLinks  term={"situation"}><i>situation</i></ClLinks> :execute (or eval) controls whether evaluation occurs for other <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> <ClLinks  term={"form"}><i>forms</i></ClLinks>; that is, those that are not *top level forms*, or those in code processed by <ClLinks  term={"eval"}><b>eval</b></ClLinks> or <ClLinks  term={"compile"}><b>compile</b></ClLinks>. If the :execute situation is specified in such a <ClLinks  term={"form"}><i>form</i></ClLinks>, then the body <ClLinks  term={"form"}><i>forms</i></ClLinks> are processed as an *implicit progn*; otherwise, the <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+The use of the <ClLinks  term={"situation"}><i>situation</i></ClLinks> :execute (or eval) controls whether evaluation occurs for other <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> <ClLinks  term={"form"}><i>forms</i></ClLinks>; that is, those that are not <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>, or those in code processed by <ClLinks  term={"eval"}><b>eval</b></ClLinks> or <ClLinks  term={"compile"}><b>compile</b></ClLinks>. If the :execute situation is specified in such a <ClLinks  term={"form"}><i>form</i></ClLinks>, then the body <ClLinks  term={"form"}><i>forms</i></ClLinks> are processed as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>; otherwise, the <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-<ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> normally appears as a *top level form*, but it is meaningful for it to appear as a *non-top-level form*. However, the compile-time side effects described in Section 3.2 (Compilation) only take place when <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> appears as a *top level form*. 
+<ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> normally appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, but it is meaningful for it to appear as a <GlossaryTerm styled={true} term={"non-top-level form"}><i>non-top-level form</i></GlossaryTerm>. However, the compile-time side effects described in Section 3.2 (Compilation) only take place when <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>. 
 
 
 
@@ -212,7 +212,7 @@ which would be treated by the above rules the same as
 
 
 
-when the definition of bar is not a *top level form*. 
+when the definition of bar is not a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>. 
 
 
 

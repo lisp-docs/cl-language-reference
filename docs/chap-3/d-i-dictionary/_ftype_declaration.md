@@ -14,11 +14,11 @@
 
 
 
-*function-name*—a *function name*. 
+*function-name*—a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"type"}><i>type</i></ClLinks>—a *type specifier* . 
+<ClLinks  term={"type"}><i>type</i></ClLinks>—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -58,11 +58,11 @@ If one of the <ClLinks  term={"function"}><i>functions</i></ClLinks> mentioned h
 
 
 
-The lexically apparent bindings of *function-names* must not be <ClLinks  term={"macro"}><i>macro</i></ClLinks> definitions. (This is because <ClLinks  term={"ftype"}><b>ftype</b></ClLinks> declares the functional definition of each *function name* to be of a particular subtype of <ClLinks  term={"function"}><b>function</b></ClLinks>, and <ClLinks  term={"macro"}><i>macros</i></ClLinks> do not denote <ClLinks  term={"function"}><i>functions</i></ClLinks>.) 
+The lexically apparent bindings of *function-names* must not be <ClLinks  term={"macro"}><i>macro</i></ClLinks> definitions. (This is because <ClLinks  term={"ftype"}><b>ftype</b></ClLinks> declares the functional definition of each <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> to be of a particular subtype of <ClLinks  term={"function"}><b>function</b></ClLinks>, and <ClLinks  term={"macro"}><i>macros</i></ClLinks> do not denote <ClLinks  term={"function"}><i>functions</i></ClLinks>.) 
 
 
 
-<ClLinks  term={"ftype"}><b>ftype</b></ClLinks> declarations can be *free declarations* or *bound declarations*. <ClLinks  term={"ftype"}><b>ftype</b></ClLinks> declarations of functions that appear before the body of a <ClLinks  term={"flet"}><b>flet</b></ClLinks> or <ClLinks  term={"labels"}><b>labels</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> that defines that function are *bound declarations*. Such declarations in other contexts are *free declarations*. 
+<ClLinks  term={"ftype"}><b>ftype</b></ClLinks> declarations can be <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. <ClLinks  term={"ftype"}><b>ftype</b></ClLinks> declarations of functions that appear before the body of a <ClLinks  term={"flet"}><b>flet</b></ClLinks> or <ClLinks  term={"labels"}><b>labels</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> that defines that function are <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. Such declarations in other contexts are <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm>. 
 
 
 

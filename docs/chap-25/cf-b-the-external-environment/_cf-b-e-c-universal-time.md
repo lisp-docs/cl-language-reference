@@ -2,7 +2,7 @@
 
 
 
-*Universal time* is an *absolute time* represented as a single non-negative *integer*—the number of seconds since midnight, January 1, 1900 GMT (ignoring *leap seconds*). Thus the time 1 is 00:00:01 (that is, 12:00:01 a.m.) on January 1, 1900 GMT. Similarly, the time 2398291201 corresponds to 
+<GlossaryTerm styled={true} term={"universal time"}><i>Universal time</i></GlossaryTerm> is an *absolute time* represented as a single non-negative *integer*—the number of seconds since midnight, January 1, 1900 GMT (ignoring <GlossaryTerm styled={true} term={"leap seconds"}><i>leap seconds</i></GlossaryTerm>). Thus the time 1 is 00:00:01 (that is, 12:00:01 a.m.) on January 1, 1900 GMT. Similarly, the time 2398291201 corresponds to 
 
 
 
@@ -22,7 +22,7 @@ time 00:00:01 on January 1, 1976 GMT. Recall that the year 1900 was not a leap y
 
 
 
-Therefore the year 2000 will be a leap year. Because *universal time* must be a non-negative *integer* , times before the base time of midnight, January 1, 1900 GMT cannot be processed by Common Lisp. 
+Therefore the year 2000 will be a leap year. Because <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm> must be a non-negative *integer* , times before the base time of midnight, January 1, 1900 GMT cannot be processed by Common Lisp. 
 
 
 

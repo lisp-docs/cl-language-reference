@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<ClLinks  term={"export"}><b>export</b></ClLinks> makes one or more <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> (whether directly or by inheritance) be *external symbols* of that <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<ClLinks  term={"export"}><b>export</b></ClLinks> makes one or more <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> (whether directly or by inheritance) be <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of that <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-If any of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as an *external symbol* of <ClLinks  term={"package"}><i>package</i></ClLinks>, <ClLinks  term={"export"}><b>export</b></ClLinks> has no effect on that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> as an internal symbol, it is simply changed to external status. If it is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as an *internal symbol* via <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, it is first *imported* into <ClLinks  term={"package"}><i>package</i></ClLinks>, then <ClLinks  term={"exported"}><i>exported</i></ClLinks>. (The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is then <ClLinks  term={"present"}><i>present</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks> whether or not <ClLinks  term={"package"}><i>package</i></ClLinks> continues to use the <ClLinks  term={"package"}><i>package</i></ClLinks> through which the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> was originally inherited.) 
+If any of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks>, <ClLinks  term={"export"}><b>export</b></ClLinks> has no effect on that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> as an internal symbol, it is simply changed to external status. If it is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as an <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm> via <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, it is first *imported* into <ClLinks  term={"package"}><i>package</i></ClLinks>, then <ClLinks  term={"exported"}><i>exported</i></ClLinks>. (The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is then <ClLinks  term={"present"}><i>present</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks> whether or not <ClLinks  term={"package"}><i>package</i></ClLinks> continues to use the <ClLinks  term={"package"}><i>package</i></ClLinks> through which the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> was originally inherited.) 
 
 
 

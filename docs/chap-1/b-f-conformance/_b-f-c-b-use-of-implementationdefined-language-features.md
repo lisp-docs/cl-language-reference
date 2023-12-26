@@ -2,7 +2,7 @@
 
 
 
-Note that *conforming code* may rely on particular <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks> values or features. Also note that the requirements for *conforming code* and *conforming implementations* do not require that the results produced by conforming code always be the same when processed by a *conforming implementation*. The results may be the same, or they may differ. 
+Note that <GlossaryTerm styled={true} term={"conforming code"}><i>conforming code</i></GlossaryTerm> may rely on particular <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks> values or features. Also note that the requirements for <GlossaryTerm styled={true} term={"conforming code"}><i>conforming code</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementations</i></GlossaryTerm> do not require that the results produced by conforming code always be the same when processed by a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm>. The results may be the same, or they may differ. 
 
 
 

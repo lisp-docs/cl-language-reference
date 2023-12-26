@@ -2,11 +2,11 @@
 
 
 
-Syntax information for use by the *Lisp reader* is embodied in an <ClLinks  term={"object"}><i>object</i></ClLinks> called a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. Among other things, the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> contains the association between <ClLinks  term={"character"}><i>characters</i></ClLinks> and *syntax types*. 
+Syntax information for use by the *Lisp reader* is embodied in an <ClLinks  term={"object"}><i>object</i></ClLinks> called a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. Among other things, the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> contains the association between <ClLinks  term={"character"}><i>characters</i></ClLinks> and <GlossaryTerm styled={true} term={"syntax type"}><i>syntax types</i></GlossaryTerm>. 
 
 
 
-Figure 2–1 lists some *defined names* that are applicable to <ClLinks  term={"readtable"}><i>readtables</i></ClLinks>. 
+Figure 2–1 lists some <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> that are applicable to <ClLinks  term={"readtable"}><i>readtables</i></ClLinks>. 
 
 
 

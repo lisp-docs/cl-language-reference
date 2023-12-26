@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a *string designator* or a *package object*. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> or a *package object*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-If <ClLinks  term={"name"}><i>name</i></ClLinks> is a *string designator* , <ClLinks  term={"find-package"}><b>find-package</b></ClLinks> locates and returns the <ClLinks  term={"package"}><i>package</i></ClLinks> whose name or nickname is <ClLinks  term={"name"}><i>name</i></ClLinks>. This search is case sensitive. If there is no such <ClLinks  term={"package"}><i>package</i></ClLinks>, <ClLinks  term={"find-package"}><b>find-package</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+If <ClLinks  term={"name"}><i>name</i></ClLinks> is a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> , <ClLinks  term={"find-package"}><b>find-package</b></ClLinks> locates and returns the <ClLinks  term={"package"}><i>package</i></ClLinks> whose name or nickname is <ClLinks  term={"name"}><i>name</i></ClLinks>. This search is case sensitive. If there is no such <ClLinks  term={"package"}><i>package</i></ClLinks>, <ClLinks  term={"find-package"}><b>find-package</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 

@@ -34,7 +34,7 @@ Of these, the <ClLinks  term={"function"}><i>functions</i></ClLinks> in Figure 2
 
 
 
-Since treatment of *open streams* by the *file system* may vary considerably between <ClLinks  term={"implementation"}><i>implementations</i></ClLinks>, however, a *closed stream* might be the most reliable kind of <ClLinks  term={"argument"}><i>argument</i></ClLinks> for some of these functions—in particular, those in Figure 20–3. For example, in some *file systems*, *open files* are written under temporary names and not renamed until <ClLinks  term={"closed"}><i>closed</i></ClLinks> and/or are held invisible until <ClLinks  term={"closed"}><i>closed</i></ClLinks>. In general, any code that is intended to be portable should use such <ClLinks  term={"function"}><i>functions</i></ClLinks> carefully. 
+Since treatment of *open streams* by the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> may vary considerably between <ClLinks  term={"implementation"}><i>implementations</i></ClLinks>, however, a *closed stream* might be the most reliable kind of <ClLinks  term={"argument"}><i>argument</i></ClLinks> for some of these functions—in particular, those in Figure 20–3. For example, in some <GlossaryTerm styled={true} term={"file system"}><i>file systems</i></GlossaryTerm>, *open files* are written under temporary names and not renamed until <ClLinks  term={"closed"}><i>closed</i></ClLinks> and/or are held invisible until <ClLinks  term={"closed"}><i>closed</i></ClLinks>. In general, any code that is intended to be portable should use such <ClLinks  term={"function"}><i>functions</i></ClLinks> carefully. 
 
 
 

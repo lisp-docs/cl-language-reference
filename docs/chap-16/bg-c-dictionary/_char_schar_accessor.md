@@ -26,11 +26,11 @@
 
 
 
-<ClLinks  term={"string"}><i>string</i></ClLinks>—for <ClLinks  term={"char"}><b>char</b></ClLinks>, a <ClLinks  term={"string"}><i>string</i></ClLinks>; for <ClLinks  term={"schar"}><b>schar</b></ClLinks>, a *simple string*. 
+<ClLinks  term={"string"}><i>string</i></ClLinks>—for <ClLinks  term={"char"}><b>char</b></ClLinks>, a <ClLinks  term={"string"}><i>string</i></ClLinks>; for <ClLinks  term={"schar"}><b>schar</b></ClLinks>, a <GlossaryTerm styled={true} term={"simple string"}><i>simple string</i></GlossaryTerm>. 
 
 
 
-*index*—a *valid array index* for the <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+*index*—a <GlossaryTerm styled={true} term={"valid array index"}><i>valid array index</i></GlossaryTerm> for the <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-<ClLinks  term={"char"}><b>char</b></ClLinks> ignores *fill pointers* when *accessing elements*. 
+<ClLinks  term={"char"}><b>char</b></ClLinks> ignores <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm> when *accessing elements*. 
 
 
 

@@ -1,4 +1,4 @@
-**most-positive-fixnum, most-negative-fixnum** *Constant Variable*
+**most-positive-fixnum, most-negative-fixnum** <GlossaryTerm styled={true} term={"constant variable"}><i>Constant Variable</i></GlossaryTerm>
 
 **Constant Value:**
 

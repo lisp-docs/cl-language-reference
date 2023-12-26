@@ -1,4 +1,4 @@
-**lambda-parameters-limit** *Constant Variable* 
+**lambda-parameters-limit** <GlossaryTerm styled={true} term={"constant variable"}><i>Constant Variable</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A positive *integer* that is the upper exclusive bound on the number of *parameter names* that can appear in a single *lambda list*. 
+A positive *integer* that is the upper exclusive bound on the number of *parameter names* that can appear in a single <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm>. 
 
 
 

@@ -1,4 +1,4 @@
-**null** *System Class* 
+**null** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The only <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"null"}><b>null</b></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, which represents the *empty list* and can also be notated (). 
+The only <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"null"}><b>null</b></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, which represents the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm> and can also be notated (). 
 
 
 

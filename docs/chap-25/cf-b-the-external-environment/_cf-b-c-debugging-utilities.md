@@ -2,7 +2,7 @@
 
 
 
-Figure 25–2 shows *defined names* relating to debugging. 
+Figure 25–2 shows <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> relating to debugging. 
 
 
 

@@ -1,4 +1,4 @@
-**t** *System Class* 
+**t** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@ The set of all <ClLinks  term={"object"}><i>objects</i></ClLinks>. The <ClLinks 
 
 
 
-**satisfies** *Type Specifier* 
+**satisfies** <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
 
 
 
@@ -50,7 +50,7 @@ Predicating.
 
 
 
-This denotes the set of all <ClLinks  term={"object"}><i>objects</i></ClLinks> that satisfy the *predicate predicate-name*, which must be a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose global <ClLinks  term={"function"}><i>function</i></ClLinks> definition is a one-argument predicate. A name is required for *predicate-name*; *lambda expressions* are not allowed. For example, the *type specifier* (and integer (satisfies evenp)) denotes the set of all even integers. The form (typep *x* ’(satisfies *p*)) is equivalent to (if (*p x*) t nil).  
+This denotes the set of all <ClLinks  term={"object"}><i>objects</i></ClLinks> that satisfy the *predicate predicate-name*, which must be a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose global <ClLinks  term={"function"}><i>function</i></ClLinks> definition is a one-argument predicate. A name is required for *predicate-name*; <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expressions</i></GlossaryTerm> are not allowed. For example, the <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> (and integer (satisfies evenp)) denotes the set of all even integers. The form (typep *x* ’(satisfies *p*)) is equivalent to (if (*p x*) t nil).  
 
 
 
@@ -62,11 +62,11 @@ The argument is required. The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> 
 
 
 
-The symbol **satisfies** is not valid as a *type specifier* . 
+The symbol **satisfies** is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
-<ClLinks  term={"member"}><b>member</b></ClLinks> *Type Specifier* 
+<ClLinks  term={"member"}><b>member</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
 
 
 
@@ -102,7 +102,7 @@ This denotes the set containing the named <ClLinks  term={"object"}><i>objects</
 
 
 
-The *type specifiers* (member) and <ClLinks  term={"nil"}><b>nil</b></ClLinks> are equivalent. **\*** can be among the <ClLinks  term={"object"}><i>objects</i></ClLinks>, but if so it denotes itself (the symbol **\***) and does not represent an unspecified value. The symbol <ClLinks  term={"member"}><b>member</b></ClLinks> is not valid as a *type specifier* ; and, specifically, it is not an abbreviation for either (member) or (member \*). 
+The <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> (member) and <ClLinks  term={"nil"}><b>nil</b></ClLinks> are equivalent. **\*** can be among the <ClLinks  term={"object"}><i>objects</i></ClLinks>, but if so it denotes itself (the symbol **\***) and does not represent an unspecified value. The symbol <ClLinks  term={"member"}><b>member</b></ClLinks> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ; and, specifically, it is not an abbreviation for either (member) or (member \*). 
 
 
 
@@ -114,7 +114,7 @@ the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"eql"}><b>eql<
 
 
 
-<ClLinks  term={"not"}><b>not</b></ClLinks> *Type Specifier* 
+<ClLinks  term={"not"}><b>not</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
 
 
 
@@ -138,7 +138,7 @@ Combining.
 
 
 
-*typespec*—a *type specifier* .  
+*typespec*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> .  
 
 
 
@@ -158,11 +158,11 @@ The argument is required, and cannot be **\***.
 
 
 
-The symbol <ClLinks  term={"not"}><b>not</b></ClLinks> is not valid as a *type specifier* . 
+The symbol <ClLinks  term={"not"}><b>not</b></ClLinks> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
-<ClLinks  term={"and"}><b>and</b></ClLinks> *Type Specifier* 
+<ClLinks  term={"and"}><b>and</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
 
 
 
@@ -186,7 +186,7 @@ Combining.
 
 
 
-*typespec*—a *type specifier* . 
+*typespec*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -198,11 +198,11 @@ This denotes the set of all <ClLinks  term={"object"}><i>objects</i></ClLinks> o
 
 
 
-The *type specifiers* (and) and <ClLinks  term={"t"}><b>t</b></ClLinks> are equivalent. The symbol <ClLinks  term={"and"}><b>and</b></ClLinks> is not valid as a *type specifier* , and, specifically, it is not an abbreviation for (and). 
+The <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> (and) and <ClLinks  term={"t"}><b>t</b></ClLinks> are equivalent. The symbol <ClLinks  term={"and"}><b>and</b></ClLinks> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> , and, specifically, it is not an abbreviation for (and). 
 
 
 
-<ClLinks  term={"or"}><b>or</b></ClLinks> *Type Specifier* 
+<ClLinks  term={"or"}><b>or</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
 
 
 
@@ -226,7 +226,7 @@ Combining.
 
 
 
-*typespec*—a *type specifier* .  
+*typespec*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> .  
 
 
 
@@ -246,11 +246,11 @@ This denotes the set of all <ClLinks  term={"object"}><i>objects</i></ClLinks> o
 
 
 
-The *type specifiers* (or) and <ClLinks  term={"nil"}><b>nil</b></ClLinks> are equivalent. The symbol <ClLinks  term={"or"}><b>or</b></ClLinks> is not valid as a *type specifier* ; and, specifically, it is not an abbreviation for (or). 
+The <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> (or) and <ClLinks  term={"nil"}><b>nil</b></ClLinks> are equivalent. The symbol <ClLinks  term={"or"}><b>or</b></ClLinks> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ; and, specifically, it is not an abbreviation for (or). 
 
 
 
-<ClLinks  term={"values"}><b>values</b></ClLinks> *Type Specifier* 
+<ClLinks  term={"values"}><b>values</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
 
 
 
@@ -278,7 +278,7 @@ Specializing.
 
 
 
-*typespec*—a *type specifier* . 
+*typespec*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -286,7 +286,7 @@ Specializing.
 
 
 
-This *type specifier* can be used only as the *value-type* in a <ClLinks  term={"function"}><b>function</b></ClLinks> *type specifier* or a <ClLinks  term={"the"}><b>the</b></ClLinks> *special form*. It is used to specify individual <ClLinks  term={"type"}><i>types</i></ClLinks> when *multiple values* are involved. The **&amp;optional** and **&amp;rest** markers can appear in the *value-type* list; they indicate the parameter list of a <ClLinks  term={"function"}><i>function</i></ClLinks> that, when given to <ClLinks  term={"multiple-value-call"}><b>multiple-value-call</b></ClLinks> along with the values, would correctly receive those values. 
+This <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> can be used only as the *value-type* in a <ClLinks  term={"function"}><b>function</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> or a <ClLinks  term={"the"}><b>the</b></ClLinks> <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm>. It is used to specify individual <ClLinks  term={"type"}><i>types</i></ClLinks> when <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm> are involved. The **&amp;optional** and **&amp;rest** markers can appear in the *value-type* list; they indicate the parameter list of a <ClLinks  term={"function"}><i>function</i></ClLinks> that, when given to <ClLinks  term={"multiple-value-call"}><b>multiple-value-call</b></ClLinks> along with the values, would correctly receive those values. 
 
 
 
@@ -294,7 +294,7 @@ The symbol **\*** may not be among the *value-types*.
 
 
 
-The symbol <ClLinks  term={"values"}><b>values</b></ClLinks> is not valid as a *type specifier* ; and, specifically, it is not an abbreviation for (values).  
+The symbol <ClLinks  term={"values"}><b>values</b></ClLinks> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ; and, specifically, it is not an abbreviation for (values).  
 
 
 
@@ -302,7 +302,7 @@ The symbol <ClLinks  term={"values"}><b>values</b></ClLinks> is not valid as a *
 
 
 
-<ClLinks  term={"eql"}><b>eql</b></ClLinks> *Type Specifier* 
+<ClLinks  term={"eql"}><b>eql</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
 
 
 
@@ -338,7 +338,7 @@ Represents the <ClLinks  term={"type"}><i>type</i></ClLinks> of all *x* for whic
 
 
 
-The argument <ClLinks  term={"object"}><i>object</i></ClLinks> is required. The <ClLinks  term={"object"}><i>object</i></ClLinks> can be **\***, but if so it denotes itself (the symbol **\***) and does not represent an unspecified value. The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <ClLinks  term={"eql"}><b>eql</b></ClLinks> is not valid as an *atomic type specifier* . 
+The argument <ClLinks  term={"object"}><i>object</i></ClLinks> is required. The <ClLinks  term={"object"}><i>object</i></ClLinks> can be **\***, but if so it denotes itself (the symbol **\***) and does not represent an unspecified value. The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <ClLinks  term={"eql"}><b>eql</b></ClLinks> is not valid as an <GlossaryTerm styled={true} term={"atomic type specifier"}><i>atomic type specifier</i></GlossaryTerm> . 
 
 
 

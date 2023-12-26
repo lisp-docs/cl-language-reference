@@ -1,4 +1,4 @@
-**no-applicable-method** *Standard Generic Function* 
+**no-applicable-method** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*generic-function*—a *generic function* on which no *applicable method* was found. 
+*generic-function*—a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> on which no <GlossaryTerm styled={true} term={"applicable method"}><i>applicable method</i></GlossaryTerm> was found. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-The generic function <ClLinks  term={"no-applicable-method"}><b>no-applicable-method</b></ClLinks> is called when a *generic function* is invoked and no <ClLinks  term={"method"}><i>method</i></ClLinks> on that *generic function* is applicable. The *default method* signals an error. 
+The generic function <ClLinks  term={"no-applicable-method"}><b>no-applicable-method</b></ClLinks> is called when a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> is invoked and no <ClLinks  term={"method"}><i>method</i></ClLinks> on that <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> is applicable. The <GlossaryTerm styled={true} term={"default method"}><i>default method</i></GlossaryTerm> signals an error. 
 
 
 

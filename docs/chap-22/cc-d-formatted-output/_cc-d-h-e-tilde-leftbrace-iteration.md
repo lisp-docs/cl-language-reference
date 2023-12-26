@@ -102,7 +102,7 @@ Terminating the repetition construct with &#126;:\} instead of &#126;\} forces *
 
 
 
-If *str* is empty, then an argument is used as *str* . It must be a *format control* and precede any arguments processed by the iteration. As an example, the following are equivalent: 
+If *str* is empty, then an argument is used as *str* . It must be a <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm> and precede any arguments processed by the iteration. As an example, the following are equivalent: 
 
 
 

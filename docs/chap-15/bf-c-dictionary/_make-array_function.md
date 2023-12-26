@@ -42,11 +42,11 @@
 
 
 
-<ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of *valid array dimensions*. 
+<ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"valid array dimension"}><i>valid array dimensions</i></GlossaryTerm>. 
 
 
 
-*element-type*—a *type specifier* . The default is <ClLinks  term={"t"}><b>t</b></ClLinks>. 
+*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . The default is <ClLinks  term={"t"}><b>t</b></ClLinks>. 
 
 
 
@@ -58,11 +58,11 @@
 
 
 
-<ClLinks  term={"adjustable"}><i>adjustable</i></ClLinks>—a *generalized boolean*. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"adjustable"}><i>adjustable</i></ClLinks>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*fill-pointer*—a *valid fill pointer* for the <ClLinks  term={"array"}><i>array</i></ClLinks> to be created, or <ClLinks  term={"t"}><b>t</b></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*fill-pointer*—a <GlossaryTerm styled={true} term={"valid fill pointer"}><i>valid fill pointer</i></GlossaryTerm> for the <ClLinks  term={"array"}><i>array</i></ClLinks> to be created, or <ClLinks  term={"t"}><b>t</b></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -70,7 +70,7 @@
 
 
 
-*displaced-index-offset*—a *valid array row-major index* for *displaced-to*. The default is 0. This option must not be supplied unless a *non-nil displaced-to* is supplied. 
+*displaced-index-offset*—a <GlossaryTerm styled={true} term={"valid array row-major index"}><i>valid array row-major index</i></GlossaryTerm> for *displaced-to*. The default is 0. This option must not be supplied unless a *non-nil displaced-to* is supplied. 
 
 
 
@@ -142,15 +142,15 @@ If *initial-element* is supplied, it is used to initialize each <ClLinks  term={
 
 
 
-If <ClLinks  term={"adjustable"}><i>adjustable</i></ClLinks> is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>, the array is *expressly adjustable* (and so *actually adjustable*); otherwise, the array is not *expressly adjustable* (and it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the array is *actually adjustable*). 
+If <ClLinks  term={"adjustable"}><i>adjustable</i></ClLinks> is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>, the array is <GlossaryTerm styled={true} term={"expressly adjustable"}><i>expressly adjustable</i></GlossaryTerm> (and so <GlossaryTerm styled={true} term={"actually adjustable"}><i>actually adjustable</i></GlossaryTerm>); otherwise, the array is not <GlossaryTerm styled={true} term={"expressly adjustable"}><i>expressly adjustable</i></GlossaryTerm> (and it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the array is <GlossaryTerm styled={true} term={"actually adjustable"}><i>actually adjustable</i></GlossaryTerm>). 
 
 
 
-If *fill-pointer* is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>, the <ClLinks  term={"array"}><i>array</i></ClLinks> must be one-dimensional; that is, the <ClLinks  term={"array"}><i>array</i></ClLinks> must be a <ClLinks  term={"vector"}><i>vector</i></ClLinks> . If *fill-pointer* is <ClLinks  term={"t"}><b>t</b></ClLinks>, the length of the <ClLinks  term={"vector"}><i>vector</i></ClLinks> is used to initialize the *fill pointer* . If *fill-pointer* is an *integer* , it becomes the initial *fill pointer* for the <ClLinks  term={"vector"}><i>vector</i></ClLinks> . 
+If *fill-pointer* is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>, the <ClLinks  term={"array"}><i>array</i></ClLinks> must be one-dimensional; that is, the <ClLinks  term={"array"}><i>array</i></ClLinks> must be a <ClLinks  term={"vector"}><i>vector</i></ClLinks> . If *fill-pointer* is <ClLinks  term={"t"}><b>t</b></ClLinks>, the length of the <ClLinks  term={"vector"}><i>vector</i></ClLinks> is used to initialize the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . If *fill-pointer* is an *integer* , it becomes the initial <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> for the <ClLinks  term={"vector"}><i>vector</i></ClLinks> . 
 
 
 
-If *displaced-to* is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>, <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> will create a *displaced array* and *displaced-to* is the <ClLinks  term={"target"}><i>target</i></ClLinks> of that *displaced array*. In that case, the consequences are undefined if the *actual array element type* of *displaced-to* is not *type equivalent* to the *actual array element type* of the <ClLinks  term={"array"}><i>array</i></ClLinks> being created. If *displaced-to* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the <ClLinks  term={"array"}><i>array</i></ClLinks> is not a *displaced array*. 
+If *displaced-to* is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>, <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> will create a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm> and *displaced-to* is the <ClLinks  term={"target"}><i>target</i></ClLinks> of that <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>. In that case, the consequences are undefined if the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of *displaced-to* is not <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of the <ClLinks  term={"array"}><i>array</i></ClLinks> being created. If *displaced-to* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the <ClLinks  term={"array"}><i>array</i></ClLinks> is not a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>. 
 
 
 
@@ -178,7 +178,7 @@ displaced to array A. The total number of elements in an <ClLinks  term={"array"
 
 
 
-If <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> is called with <ClLinks  term={"adjustable"}><i>adjustable</i></ClLinks>, *fill-pointer*, and *displaced-to* each <ClLinks  term={"nil"}><b>nil</b></ClLinks>, then the result is a *simple array*. If <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> is called with one or more of <ClLinks  term={"adjustable"}><i>adjustable</i></ClLinks>, *fill-pointer*, or *displaced-to* being <ClLinks  term={"true"}><i>true</i></ClLinks>, whether the resulting <ClLinks  term={"array"}><i>array</i></ClLinks> is a *simple array* is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+If <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> is called with <ClLinks  term={"adjustable"}><i>adjustable</i></ClLinks>, *fill-pointer*, and *displaced-to* each <ClLinks  term={"nil"}><b>nil</b></ClLinks>, then the result is a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm>. If <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> is called with one or more of <ClLinks  term={"adjustable"}><i>adjustable</i></ClLinks>, *fill-pointer*, or *displaced-to* being <ClLinks  term={"true"}><i>true</i></ClLinks>, whether the resulting <ClLinks  term={"array"}><i>array</i></ClLinks> is a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm> is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -260,7 +260,7 @@ The last example depends on the fact that *arrays* are, in effect, stored in row
 
 
 
-There is no specified way to create an <ClLinks  term={"array"}><i>array</i></ClLinks> for which **adjustable-array-p** definitely returns <ClLinks  term={"false"}><i>false</i></ClLinks>. There is no specified way to create an <ClLinks  term={"array"}><i>array</i></ClLinks> that is not a *simple array*. 
+There is no specified way to create an <ClLinks  term={"array"}><i>array</i></ClLinks> for which **adjustable-array-p** definitely returns <ClLinks  term={"false"}><i>false</i></ClLinks>. There is no specified way to create an <ClLinks  term={"array"}><i>array</i></ClLinks> that is not a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm>. 
 
 
 

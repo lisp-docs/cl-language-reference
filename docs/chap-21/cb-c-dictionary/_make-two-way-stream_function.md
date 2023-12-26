@@ -22,7 +22,7 @@
 
 
 
-*two-way-stream*—a *two-way stream*. 
+*two-way-stream*—a <GlossaryTerm styled={true} term={"two-way stream"}><i>two-way stream</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns a *two-way stream* that gets its input from *input-stream* and sends its output to *output-stream*. 
+Returns a <GlossaryTerm styled={true} term={"two-way stream"}><i>two-way stream</i></GlossaryTerm> that gets its input from *input-stream* and sends its output to *output-stream*. 
 
 
 
@@ -83,7 +83,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-*two-way-stream*—a *two-way stream*. 
+*two-way-stream*—a <GlossaryTerm styled={true} term={"two-way stream"}><i>two-way stream</i></GlossaryTerm>. 
 
 
 
@@ -123,7 +123,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-*echo-stream*—an *echo stream*. 
+*echo-stream*—an <GlossaryTerm styled={true} term={"echo stream"}><i>echo stream</i></GlossaryTerm>. 
 
 
 

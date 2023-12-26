@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-Specifically, <ClLinks styled={true} term={"ignore-errors"}><b>ignore-errors</b></ClLinks> *executes forms* in a *dynamic environment* where a <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> for <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> has been established; if invoked, it <ClLinks styled={true} term={"handle"}><i>handles</i></ClLinks> such <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> by returning two <ClLinks styled={true} term={"value"}><i>values</i></ClLinks>, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> and the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> that was *signaled*, from the <ClLinks styled={true} term={"ignore-errors"}><b>ignore-errors</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+Specifically, <ClLinks styled={true} term={"ignore-errors"}><b>ignore-errors</b></ClLinks> *executes forms* in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> where a <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> for <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> has been established; if invoked, it <ClLinks styled={true} term={"handle"}><i>handles</i></ClLinks> such <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> by returning two <ClLinks styled={true} term={"value"}><i>values</i></ClLinks>, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> and the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> that was *signaled*, from the <ClLinks styled={true} term={"ignore-errors"}><b>ignore-errors</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
 
 
 
-If a *normal return* from the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> occurs, any <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned are returned by <ClLinks styled={true} term={"ignore-errors"}><b>ignore-errors</b></ClLinks>. 
+If a <GlossaryTerm styled={true} term={"normal return"}><i>normal return</i></GlossaryTerm> from the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> occurs, any <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned are returned by <ClLinks styled={true} term={"ignore-errors"}><b>ignore-errors</b></ClLinks>. 
 
 **Examples:**
 ```lisp

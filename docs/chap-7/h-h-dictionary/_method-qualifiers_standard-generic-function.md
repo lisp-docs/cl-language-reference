@@ -1,4 +1,4 @@
-**method-qualifiers** *Standard Generic Function* 
+**method-qualifiers** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-<ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>—a *proper list*. 
+<ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>—a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
 
 
 

@@ -14,11 +14,11 @@
 
 
 
-*pathspec*—a *pathname designator* , which may contain <ClLinks  term={"wild"}><i>wild</i></ClLinks> components. 
+*pathspec*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> , which may contain <ClLinks  term={"wild"}><i>wild</i></ClLinks> components. 
 
 
 
-<ClLinks  term={"pathname"}><i>pathnames</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *physical pathnames*. 
+<ClLinks  term={"pathname"}><i>pathnames</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"physical pathname"}><i>physical pathnames</i></GlossaryTerm>. 
 
 
 
@@ -66,7 +66,7 @@ If the *pathspec* is not <ClLinks  term={"wild"}><i>wild</i></ClLinks>, the resu
 
 
 
-Common Lisp specifies “&amp;key” in the argument list to <ClLinks  term={"directory"}><b>directory</b></ClLinks> even though no <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> keyword arguments to <ClLinks  term={"directory"}><b>directory</b></ClLinks> are defined. “:allow-other-keys t” may be used in *conforming programs* in order to quietly ignore any additional keywords which are passed by the program but not supported by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+Common Lisp specifies “&amp;key” in the argument list to <ClLinks  term={"directory"}><b>directory</b></ClLinks> even though no <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> keyword arguments to <ClLinks  term={"directory"}><b>directory</b></ClLinks> are defined. “:allow-other-keys t” may be used in <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm> in order to quietly ignore any additional keywords which are passed by the program but not supported by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 

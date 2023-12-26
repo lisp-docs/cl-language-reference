@@ -46,7 +46,7 @@
 
 
 
-<ClLinks  term={"expt"}><b>expt</b></ClLinks> returns *base-number* raised to the power *power-number*. If the *base-number* is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> and *power-number* is an *integer* , the calculation is exact and the result will be of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"rational"}><b>rational</b></ClLinks>; otherwise a floating-point approximation might result. For <ClLinks  term={"expt"}><b>expt</b></ClLinks> of a *complex rational* to an *integer* power, the calculation must be exact and the result is of type (or rational (complex rational)). 
+<ClLinks  term={"expt"}><b>expt</b></ClLinks> returns *base-number* raised to the power *power-number*. If the *base-number* is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> and *power-number* is an *integer* , the calculation is exact and the result will be of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"rational"}><b>rational</b></ClLinks>; otherwise a floating-point approximation might result. For <ClLinks  term={"expt"}><b>expt</b></ClLinks> of a <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm> to an *integer* power, the calculation must be exact and the result is of type (or rational (complex rational)). 
 
 
 

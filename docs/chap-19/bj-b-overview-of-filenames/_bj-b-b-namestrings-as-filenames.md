@@ -6,11 +6,11 @@ A <ClLinks  term={"namestring"}><i>namestring</i></ClLinks> is a <ClLinks  term=
 
 
 
-In general, the syntax of <ClLinks  term={"namestring"}><i>namestrings</i></ClLinks> involves the use of <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> conventions, usually those customary for the *file system* in which the named <ClLinks  term={"file"}><i>file</i></ClLinks> resides. The only exception is the syntax of a *logical pathname namestring*, which is defined in this specification; see Section 19.3.1 (Syntax of Logical Pathname Namestrings). 
+In general, the syntax of <ClLinks  term={"namestring"}><i>namestrings</i></ClLinks> involves the use of <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> conventions, usually those customary for the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> in which the named <ClLinks  term={"file"}><i>file</i></ClLinks> resides. The only exception is the syntax of a *logical pathname namestring*, which is defined in this specification; see Section 19.3.1 (Syntax of Logical Pathname Namestrings). 
 
 
 
-A *conforming program* must never unconditionally use a *literal namestring* other than a *logical pathname namestring* because Common Lisp does not define any <ClLinks  term={"namestring"}><i>namestring</i></ClLinks> syntax other than that for *logical pathnames* that would be guaranteed to be portable. However, a *conforming program* can, if it is careful, successfully manipulate user-supplied data which contains or refers to non-portable <ClLinks  term={"namestring"}><i>namestrings</i></ClLinks>. 
+A <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> must never unconditionally use a *literal namestring* other than a *logical pathname namestring* because Common Lisp does not define any <ClLinks  term={"namestring"}><i>namestring</i></ClLinks> syntax other than that for <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathnames</i></GlossaryTerm> that would be guaranteed to be portable. However, a <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> can, if it is careful, successfully manipulate user-supplied data which contains or refers to non-portable <ClLinks  term={"namestring"}><i>namestrings</i></ClLinks>. 
 
 
 

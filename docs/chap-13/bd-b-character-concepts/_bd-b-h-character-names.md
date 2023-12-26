@@ -2,7 +2,7 @@
 
 
 
-The following *character names* must be present in all *conforming implementations*: 
+The following *character names* must be present in all <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementations</i></GlossaryTerm>: 
 
 
 
@@ -74,7 +74,7 @@ The line-feed character.
 
 
 
-In some <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>, one or more of these *character names* might denote a *standard character* ; for example, #\Linefeed and #\Newline might be the *same character* in some <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>. 
+In some <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>, one or more of these *character names* might denote a <GlossaryTerm styled={true} term={"standard character"}><i>standard character</i></GlossaryTerm> ; for example, #\Linefeed and #\Newline might be the *same character* in some <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>. 
 
 
 

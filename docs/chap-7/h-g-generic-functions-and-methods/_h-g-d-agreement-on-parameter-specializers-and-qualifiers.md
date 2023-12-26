@@ -2,7 +2,7 @@
 
 
 
-Two <ClLinks  term={"method"}><i>methods</i></ClLinks> are said to agree with each other on *parameter specializers* and <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> if the following conditions hold: 
+Two <ClLinks  term={"method"}><i>methods</i></ClLinks> are said to agree with each other on <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> and <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> if the following conditions hold: 
 
 
 

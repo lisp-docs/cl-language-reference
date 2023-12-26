@@ -38,7 +38,7 @@
 
 
 
-<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—a *generalized boolean*. 
+<ClLinks styled={true} term={"array"}><i>array</i></ClLinks>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -66,15 +66,15 @@
 
 
 
-*circle*—a *generalized boolean*. 
+*circle*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"escape"}><i>escape</i></ClLinks>—a *generalized boolean*. 
+<ClLinks styled={true} term={"escape"}><i>escape</i></ClLinks>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"gensym"}><i>gensym</i></ClLinks>—a *generalized boolean*. 
+<ClLinks styled={true} term={"gensym"}><i>gensym</i></ClLinks>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -94,19 +94,19 @@
 
 
 
-*pprint-dispatch*—a *pprint dispatch table*. 
+*pprint-dispatch*—a <GlossaryTerm styled={true} term={"pprint dispatch table"}><i>pprint dispatch table</i></GlossaryTerm>. 
 
 
 
-*pretty*—a *generalized boolean*. 
+*pretty*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks>—a *generalized boolean*. 
+<ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"readably"}><i>readably</i></ClLinks>—a *generalized boolean*. 
+<ClLinks styled={true} term={"readably"}><i>readably</i></ClLinks>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 

@@ -6,7 +6,7 @@ The :default-initargs class option is inherited. The set of defaulted initializa
 
 
 
-for a given initialization argument, the default initial value <ClLinks  term={"form"}><i>form</i></ClLinks> that is used is the one supplied by the <ClLinks  term={"class"}><i>class</i></ClLinks> that is most specific according to the *class precedence list*. 
+for a given initialization argument, the default initial value <ClLinks  term={"form"}><i>form</i></ClLinks> that is used is the one supplied by the <ClLinks  term={"class"}><i>class</i></ClLinks> that is most specific according to the <GlossaryTerm styled={true} term={"class precedence list"}><i>class precedence list</i></GlossaryTerm>. 
 
 
 

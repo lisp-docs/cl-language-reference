@@ -14,7 +14,7 @@ An <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks
 
 
 
-*•* The impact on <ClLinks styled={true} term={"char-upcase"}><b>char-upcase</b></ClLinks>, <ClLinks styled={true} term={"char-downcase"}><b>char-downcase</b></ClLinks>, and the case-sensitive *format directives*. In particular, for each <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> with <ClLinks styled={true} term={"case"}><i>case</i></ClLinks>, whether it is <ClLinks styled={true} term={"uppercase"}><i>uppercase</i></ClLinks> or <ClLinks styled={true} term={"lowercase"}><i>lowercase</i></ClLinks>, and which <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is its equivalent in the opposite case. 
+*•* The impact on <ClLinks styled={true} term={"char-upcase"}><b>char-upcase</b></ClLinks>, <ClLinks styled={true} term={"char-downcase"}><b>char-downcase</b></ClLinks>, and the case-sensitive <GlossaryTerm styled={true} term={"format directive"}><i>format directives</i></GlossaryTerm>. In particular, for each <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> with <ClLinks styled={true} term={"case"}><i>case</i></ClLinks>, whether it is <ClLinks styled={true} term={"uppercase"}><i>uppercase</i></ClLinks> or <ClLinks styled={true} term={"lowercase"}><i>lowercase</i></ClLinks>, and which <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is its equivalent in the opposite case. 
 
 
 

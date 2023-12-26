@@ -23,15 +23,15 @@
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an *environment object*. 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—a *macro function* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"function"}><i>function</i></ClLinks>—a <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*new-function*—a *macro function*. 
+*new-function*—a <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>. 
 
 
 
@@ -55,7 +55,7 @@ If so, the macro expansion function, a function of two arguments, is returned. I
 
 
 
-It is possible for both <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks> and <ClLinks  term={"special-operator-p"}><b>special-operator-p</b></ClLinks> to return <ClLinks  term={"true"}><i>true</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. The <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition must be available for use by programs that understand only the standard Common Lisp *special forms*. 
+It is possible for both <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks> and <ClLinks  term={"special-operator-p"}><b>special-operator-p</b></ClLinks> to return <ClLinks  term={"true"}><i>true</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. The <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition must be available for use by programs that understand only the standard Common Lisp <GlossaryTerm styled={true} term={"special form"}><i>special forms</i></GlossaryTerm>. 
 
 
 
@@ -112,7 +112,7 @@ The value installed must be a <ClLinks  term={"function"}><i>function</i></ClLin
 
 
 
-**macroexpand, macroexpand-1** 
+<DictionaryLink styled={true} term={"macroexpand, macroexpand-1"}><b>macroexpand, macroexpand-1</b></DictionaryLink> 
 
 
 

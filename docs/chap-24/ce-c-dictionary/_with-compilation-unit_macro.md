@@ -18,11 +18,11 @@
 
 
 
-*override*—a *generalized boolean*; evaluated. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*override*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>; evaluated. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-Executes <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> from left to right. Within the *dynamic environment* of <ClLinks styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></ClLinks>, actions deferred by the compiler until the end of compilation will be deferred until the end of the outermost call to <ClLinks styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></ClLinks>. 
+Executes <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> from left to right. Within the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> of <ClLinks styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></ClLinks>, actions deferred by the compiler until the end of compilation will be deferred until the end of the outermost call to <ClLinks styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></ClLinks>. 
 
 
 

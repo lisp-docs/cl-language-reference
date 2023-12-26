@@ -10,7 +10,7 @@ The object system supplies a set of meta-objects, called standard meta-objects. 
 
 
 
-*•* The <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks> is the default <ClLinks  term={"class"}><i>class</i></ClLinks> of *generic functions* defined by the forms <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks>, <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks>, and <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>. 
+*•* The <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks> is the default <ClLinks  term={"class"}><i>class</i></ClLinks> of <GlossaryTerm styled={true} term={"generic function"}><i>generic functions</i></GlossaryTerm> defined by the forms <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks>, <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks>, and <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>. 
 
 
 

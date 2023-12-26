@@ -18,7 +18,7 @@
 
 
 
-*pathspec*—a *pathname designator* . 
+*pathspec*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 

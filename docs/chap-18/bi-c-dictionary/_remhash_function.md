@@ -18,11 +18,11 @@
 
 
 
-*hash-table*—a *hash table*. 
+*hash-table*—a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 

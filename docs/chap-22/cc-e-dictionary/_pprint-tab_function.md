@@ -46,7 +46,7 @@
 
 
 
-Specifies tabbing to <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> as performed by the standard &#126;T format directive. If <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is a *pretty printing stream* and the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, tabbing is performed; otherwise, <ClLinks styled={true} term={"pprint-tab"}><b>pprint-tab</b></ClLinks> has no effect. 
+Specifies tabbing to <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> as performed by the standard &#126;T format directive. If <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is a <GlossaryTerm styled={true} term={"pretty printing stream"}><i>pretty printing stream</i></GlossaryTerm> and the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, tabbing is performed; otherwise, <ClLinks styled={true} term={"pprint-tab"}><b>pprint-tab</b></ClLinks> has no effect. 
 
 
 

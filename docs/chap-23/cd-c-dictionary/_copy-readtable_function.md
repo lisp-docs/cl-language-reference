@@ -14,7 +14,7 @@
 
 
 
-*from-readtable*—a *readtable designator* . The default is the *current readtable*. 
+*from-readtable*—a <GlossaryTerm styled={true} term={"readtable designator"}><i>readtable designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. 
 
 
 
@@ -71,7 +71,7 @@ zvar → 123
 
 
 
-restores the input syntax to standard Common Lisp syntax, even if the *initial readtable* has been clobbered (assuming it is not so badly clobbered that you cannot type in the above expression). 
+restores the input syntax to standard Common Lisp syntax, even if the <GlossaryTerm styled={true} term={"initial readtable"}><i>initial readtable</i></GlossaryTerm> has been clobbered (assuming it is not so badly clobbered that you cannot type in the above expression). 
 
 
 

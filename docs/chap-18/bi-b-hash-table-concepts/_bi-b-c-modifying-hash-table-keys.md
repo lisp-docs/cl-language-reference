@@ -2,7 +2,7 @@
 
 
 
-The function supplied as the :test argument to <ClLinks  term={"make-hash-table"}><b>make-hash-table</b></ClLinks> specifies the ‘equivalence test’ for the *hash table* it creates. 
+The function supplied as the :test argument to <ClLinks  term={"make-hash-table"}><b>make-hash-table</b></ClLinks> specifies the ‘equivalence test’ for the <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> it creates. 
 
 
 
@@ -18,7 +18,7 @@ modified and then later modified again in such a way as to undo the visible modi
 
 
 
-Following are specifications of the modifications which are visible to the equivalence tests which must be supported by *hash tables*. The modifications are described in terms of modification of components, and are defined recursively. Visible modifications of components of the <ClLinks  term={"object"}><i>object</i></ClLinks> are visible modifications of the <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+Following are specifications of the modifications which are visible to the equivalence tests which must be supported by <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>. The modifications are described in terms of modification of components, and are defined recursively. Visible modifications of components of the <ClLinks  term={"object"}><i>object</i></ClLinks> are visible modifications of the <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 

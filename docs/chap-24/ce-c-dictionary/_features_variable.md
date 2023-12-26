@@ -6,7 +6,7 @@
 
 
 
-a *proper list*. 
+a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@ a *proper list*.
 
 
 
-The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"features"}><b>\*features\*</b></ClLinks> is called the *features list*. It is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>, called <ClLinks styled={true} term={"feature"}><i>features</i></ClLinks>, that correspond to some aspect of the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> or <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>. 
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"features"}><b>\*features\*</b></ClLinks> is called the <GlossaryTerm styled={true} term={"features list"}><i>features list</i></GlossaryTerm>. It is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>, called <ClLinks styled={true} term={"feature"}><i>features</i></ClLinks>, that correspond to some aspect of the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> or <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks>. 
 
 
 
@@ -34,7 +34,7 @@ Most <ClLinks styled={true} term={"feature"}><i>features</i></ClLinks> have <ClL
 
 
 
-If present, indicates that the LISP *package purports to conform* to the 1984 specification *Common Lisp: The Language*. It is possible, but not required, for a *conforming implementation* to have this feature because this specification specifies that its <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> are to be in the COMMON-LISP <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, not the LISP package. 
+If present, indicates that the LISP *package purports to conform* to the 1984 specification *Common Lisp: The Language*. It is possible, but not required, for a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> to have this feature because this specification specifies that its <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> are to be in the COMMON-LISP <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, not the LISP package. 
 
 
 
@@ -42,7 +42,7 @@ If present, indicates that the LISP *package purports to conform* to the 1984 sp
 
 
 
-If present, indicates that the implementation *purports to conform* to *Common Lisp: The Language, Second Edition*. This feature must not be present in any *conforming implementation*, since conformance to that document is not compatible with conformance to this specification. The name, however, is reserved by this specification in order to help programs distinguish implementations which conform to that document from implementations which conform to this specification. 
+If present, indicates that the implementation <GlossaryTerm styled={true} term={"purports to conform"}><i>purports to conform</i></GlossaryTerm> to *Common Lisp: The Language, Second Edition*. This feature must not be present in any <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm>, since conformance to that document is not compatible with conformance to this specification. The name, however, is reserved by this specification in order to help programs distinguish implementations which conform to that document from implementations which conform to this specification. 
 
 
 
@@ -50,7 +50,7 @@ If present, indicates that the implementation *purports to conform* to *Common L
 
 
 
-If present, indicates that the implementation *purports to conform* to the requirements of *IEEE Standard for Binary Floating-Point Arithmetic*. 
+If present, indicates that the implementation <GlossaryTerm styled={true} term={"purports to conform"}><i>purports to conform</i></GlossaryTerm> to the requirements of *IEEE Standard for Binary Floating-Point Arithmetic*. 
 
 
 
@@ -58,7 +58,7 @@ If present, indicates that the implementation *purports to conform* to the requi
 
 
 
-If present, indicates that the implementation conforms to some particular working draft of this specification, or to some subset of features that approximates a belief about what this specification might turn out to contain. A *conforming implementation* might or might not contain such a feature. (This feature is intended primarily as a stopgap in order to provide implementors something to use prior to the availability of a draft standard, in order to 
+If present, indicates that the implementation conforms to some particular working draft of this specification, or to some subset of features that approximates a belief about what this specification might turn out to contain. A <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> might or might not contain such a feature. (This feature is intended primarily as a stopgap in order to provide implementors something to use prior to the availability of a draft standard, in order to 
 
 
 
@@ -82,7 +82,7 @@ discourage them from introducing the :draft-ansi-cl and :ansi-cl <ClLinks styled
 
 
 
-If present, indicates that the *implementation purports to conform* to the first full draft of this specification, which went to public review in 1992. A *conforming implementation* which has the :draft-ansi-cl-2 or :ansi-cl <ClLinks styled={true} term={"feature"}><i>feature</i></ClLinks> is not permitted to retain the :draft-ansi-cl <ClLinks styled={true} term={"feature"}><i>feature</i></ClLinks> since incompatible changes were made subsequent to the first draft. 
+If present, indicates that the *implementation purports to conform* to the first full draft of this specification, which went to public review in 1992. A <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> which has the :draft-ansi-cl-2 or :ansi-cl <ClLinks styled={true} term={"feature"}><i>feature</i></ClLinks> is not permitted to retain the :draft-ansi-cl <ClLinks styled={true} term={"feature"}><i>feature</i></ClLinks> since incompatible changes were made subsequent to the first draft. 
 
 
 
@@ -90,7 +90,7 @@ If present, indicates that the *implementation purports to conform* to the first
 
 
 
-If present, indicates that a second full draft of this specification has gone to public review, and that the *implementation purports to conform* to that specification. (If additional public review drafts are produced, this keyword will continue to refer to the second draft, and additional keywords will be added to identify conformance with such later drafts. As such, the meaning of this keyword can be relied upon not to change over time.) A *conforming implementation* which has the :ansi-cl <ClLinks styled={true} term={"feature"}><i>feature</i></ClLinks> is only permitted to retain the :draft-ansi-cl <ClLinks styled={true} term={"feature"}><i>feature</i></ClLinks> if the finally approved standard is not incompatible with the draft standard. 
+If present, indicates that a second full draft of this specification has gone to public review, and that the *implementation purports to conform* to that specification. (If additional public review drafts are produced, this keyword will continue to refer to the second draft, and additional keywords will be added to identify conformance with such later drafts. As such, the meaning of this keyword can be relied upon not to change over time.) A <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> which has the :ansi-cl <ClLinks styled={true} term={"feature"}><i>feature</i></ClLinks> is only permitted to retain the :draft-ansi-cl <ClLinks styled={true} term={"feature"}><i>feature</i></ClLinks> if the finally approved standard is not incompatible with the draft standard. 
 
 
 
@@ -126,7 +126,7 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks sty
 
 
 
-<ClLinks styled={true} term={"symbol"}><i>Symbols</i></ClLinks> in the *features list* may be in any <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, but in practice they are generally in the KEYWORD <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. This is because KEYWORD is the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> used by default when *reading*<sub>2</sub> *feature expressions* in the #+ and #- *reader macros*. *Code* that needs to name a <ClLinks styled={true} term={"feature"}><i>feature</i></ClLinks><sub>2</sub> in a *package P* (other than KEYWORD) can do so by making explicit use of a *package prefix* for *P*, but note that such <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> must also assure that the *package P* exists in order for the *feature expression* to be <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> <sub>2</sub>—even in cases where the *feature expression* is expected to fail. 
+<ClLinks styled={true} term={"symbol"}><i>Symbols</i></ClLinks> in the <GlossaryTerm styled={true} term={"features list"}><i>features list</i></GlossaryTerm> may be in any <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, but in practice they are generally in the KEYWORD <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>. This is because KEYWORD is the <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> used by default when *reading*<sub>2</sub> <GlossaryTerm styled={true} term={"feature expression"}><i>feature expressions</i></GlossaryTerm> in the #+ and #- <GlossaryTerm styled={true} term={"reader macro"}><i>reader macros</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"code"}><i>Code</i></GlossaryTerm> that needs to name a <ClLinks styled={true} term={"feature"}><i>feature</i></ClLinks><sub>2</sub> in a *package P* (other than KEYWORD) can do so by making explicit use of a <GlossaryTerm styled={true} term={"package prefix"}><i>package prefix</i></GlossaryTerm> for *P*, but note that such <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> must also assure that the *package P* exists in order for the <GlossaryTerm styled={true} term={"feature expression"}><i>feature expression</i></GlossaryTerm> to be <ClLinks styled={true} term={"read"}><i>read</i></ClLinks> <sub>2</sub>—even in cases where the <GlossaryTerm styled={true} term={"feature expression"}><i>feature expression</i></GlossaryTerm> is expected to fail. 
 
 
 

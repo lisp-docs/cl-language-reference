@@ -38,7 +38,7 @@ If a *prototype* is supplied, a <ClLinks  term={"float"}><i>float</i></ClLinks> 
 
 
 
-If *prototype* is not supplied, then if the <ClLinks  term={"number"}><i>number</i></ClLinks> is already a <ClLinks  term={"float"}><i>float</i></ClLinks>, it is returned; otherwise, a <ClLinks  term={"float"}><i>float</i></ClLinks> is returned that is mathematically equal to <ClLinks  term={"number"}><i>number</i></ClLinks> but is a *single float*. 
+If *prototype* is not supplied, then if the <ClLinks  term={"number"}><i>number</i></ClLinks> is already a <ClLinks  term={"float"}><i>float</i></ClLinks>, it is returned; otherwise, a <ClLinks  term={"float"}><i>float</i></ClLinks> is returned that is mathematically equal to <ClLinks  term={"number"}><i>number</i></ClLinks> but is a <GlossaryTerm styled={true} term={"single float"}><i>single float</i></GlossaryTerm>. 
 
 
 

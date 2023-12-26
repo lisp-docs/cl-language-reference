@@ -2,11 +2,11 @@
 
 
 
-Iteration control clauses allow direction of <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> iteration. The *loop keywords* for and as designate iteration control clauses. Iteration control clauses differ with respect to the specification of termination tests and to the initialization and *stepping*<sub>1</sub> of loop variables. Iteration clauses by themselves do not cause the Loop Facility to return values, but they can be used in conjunction with value-accumulation clauses to return values. 
+Iteration control clauses allow direction of <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> iteration. The <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keywords</i></GlossaryTerm> for and as designate iteration control clauses. Iteration control clauses differ with respect to the specification of termination tests and to the initialization and *stepping*<sub>1</sub> of loop variables. Iteration clauses by themselves do not cause the Loop Facility to return values, but they can be used in conjunction with value-accumulation clauses to return values. 
 
 
 
-All variables are initialized in the loop prologue. A *variable binding* has *lexical scope* unless it is proclaimed <DictionaryLink  term={"special"}><b>special</b></DictionaryLink>; thus, by default, the variable can be *accessed* only by <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> that lie textually within the <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink>. Stepping assignments are made in the loop body before any other <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> are evaluated in the body. 
+All variables are initialized in the loop prologue. A *variable binding* has <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> unless it is proclaimed <DictionaryLink  term={"special"}><b>special</b></DictionaryLink>; thus, by default, the variable can be *accessed* only by <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> that lie textually within the <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink>. Stepping assignments are made in the loop body before any other <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> are evaluated in the body. 
 
 
 

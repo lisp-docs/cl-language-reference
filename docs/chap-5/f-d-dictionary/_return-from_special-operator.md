@@ -1,4 +1,4 @@
-**return-from** *Special Operator* 
+**return-from** <GlossaryTerm styled={true} term={"special operator"}><i>Special Operator</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a *block tag*; not evaluated. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a <GlossaryTerm styled={true} term={"block tag"}><i>block tag</i></GlossaryTerm>; not evaluated. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns control and *multiple values*<sub>2</sub> from a lexically enclosing <ClLinks  term={"block"}><i>block</i></ClLinks>. 
+Returns control and <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub> from a lexically enclosing <ClLinks  term={"block"}><i>block</i></ClLinks>. 
 
 
 

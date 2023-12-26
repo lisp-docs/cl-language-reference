@@ -14,7 +14,7 @@
 
 
 
-*hash-table*—a *hash table*. 
+*hash-table*—a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Removes all entries from *hash-table*, and then returns that empty *hash table*. 
+Removes all entries from *hash-table*, and then returns that empty <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
 
 
 

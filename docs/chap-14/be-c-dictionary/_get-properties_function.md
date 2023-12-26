@@ -26,11 +26,11 @@
 
 
 
-<ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks>—a *property list*. 
+<ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks>—a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>. 
 
 
 
-*indicator-list*—a *proper list* (of <ClLinks styled={true} term={"indicator"}><i>indicators</i></ClLinks>). 
+*indicator-list*—a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm> (of <ClLinks styled={true} term={"indicator"}><i>indicators</i></ClLinks>). 
 
 
 
@@ -50,11 +50,11 @@
 
 
 
-<ClLinks styled={true} term={"get-properties"}><b>get-properties</b></ClLinks> is used to look up any of several *property list* entries all at once. 
+<ClLinks styled={true} term={"get-properties"}><b>get-properties</b></ClLinks> is used to look up any of several <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> entries all at once. 
 
 
 
-It searches the <ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks> for the first entry whose <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks> is <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> to one of the <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> in *indicator-list*. If such an entry is found, the <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks> and <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> returned are the *property indicator* and its associated *property value*, and the <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> returned is the <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> of the <ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks> that begins with the found entry (*i.e.*, whose <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> is the <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks>). If no such entry is found, the <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks>, <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>, and <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> are all <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+It searches the <ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks> for the first entry whose <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks> is <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> to one of the <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> in *indicator-list*. If such an entry is found, the <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks> and <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> returned are the <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> and its associated <GlossaryTerm styled={true} term={"property value"}><i>property value</i></GlossaryTerm>, and the <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> returned is the <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> of the <ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks> that begins with the found entry (*i.e.*, whose <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> is the <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks>). If no such entry is found, the <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks>, <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>, and <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> are all <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 

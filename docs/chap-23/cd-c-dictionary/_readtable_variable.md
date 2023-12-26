@@ -22,7 +22,7 @@ A <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> that conforms to the d
 
 
 
-The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks> is called the *current readtable*. It controls the parsing behavior of the *Lisp reader* , and can also influence the *Lisp printer* (*e.g.*, see the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"readtable-case"}><b>readtable-case</b></ClLinks>). 
+The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks> is called the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. It controls the parsing behavior of the *Lisp reader* , and can also influence the *Lisp printer* (*e.g.*, see the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"readtable-case"}><b>readtable-case</b></ClLinks>). 
 
 
 

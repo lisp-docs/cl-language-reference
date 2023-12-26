@@ -18,7 +18,7 @@
 
 
 
-*fn*—a *function name*. 
+*fn*—a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>. 
 
 
 
@@ -66,11 +66,11 @@ The compiler is permitted to use this information in any way that is appropriate
 
 
 
-<ClLinks  term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> declarations can be *free declarations* or *bound declarations*. 
+<ClLinks  term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> declarations can be <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. 
 
 
 
-The *vars* and *fns* named in a <ClLinks  term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> declaration must not refer to *symbol macro* or <ClLinks  term={"macro"}><i>macro</i></ClLinks> bindings. 
+The *vars* and *fns* named in a <ClLinks  term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> declaration must not refer to <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> or <ClLinks  term={"macro"}><i>macro</i></ClLinks> bindings. 
 
 
 
@@ -176,7 +176,7 @@ The following are in error, since the value of x is used outside of its *extent*
 
 
 
-The most common optimization is to *stack allocate* the initial value of the <ClLinks  term={"object"}><i>objects</i></ClLinks> named by the *vars*. 
+The most common optimization is to <GlossaryTerm styled={true} term={"stack allocate"}><i>stack allocate</i></GlossaryTerm> the initial value of the <ClLinks  term={"object"}><i>objects</i></ClLinks> named by the *vars*. 
 
 
 

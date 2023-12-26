@@ -18,15 +18,15 @@
 
 
 
-*list-1*—a *proper list*. 
+*list-1*—a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
 
 
 
-*list-2*—a *proper list*. 
+*list-2*—a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
 
 
 
-*test*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *key*—a *designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*test*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-For all possible ordered pairs consisting of one element from *list-1* and one element from *list-2*, :test or :test-not is used to determine whether they *satisfy the test*. The first argument to the :test or :test-not function is the part of the element of *list-1* extracted by the :key function (if supplied); the second argument is the part of the element of *list-2* extracted by the :key function (if supplied). 
+For all possible ordered pairs consisting of one element from *list-1* and one element from *list-2*, :test or :test-not is used to determine whether they <GlossaryTerm styled={true} term={"satisfy the test"}><i>satisfy the test</i></GlossaryTerm>. The first argument to the :test or :test-not function is the part of the element of *list-1* extracted by the :key function (if supplied); the second argument is the part of the element of *list-2* extracted by the :key function (if supplied). 
 
 
 
@@ -74,7 +74,7 @@ The order of elements in the result do not have to reflect the ordering of *list
 
 
 
-**union, nunion** 
+<DictionaryLink styled={true} term={"union, nunion"}><b>union, nunion</b></DictionaryLink> 
 
 
 
@@ -98,7 +98,7 @@ The order of elements in the result do not have to reflect the ordering of *list
 
 
 
-<ClLinks styled={true} term={"nunion"}><b>nunion</b></ClLinks> is permitted to modify any part, <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> or <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> , of the *list structure* of *list-1* or *list-2*. 
+<ClLinks styled={true} term={"nunion"}><b>nunion</b></ClLinks> is permitted to modify any part, <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> or <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> , of the <GlossaryTerm styled={true} term={"list structure"}><i>list structure</i></GlossaryTerm> of *list-1* or *list-2*. 
 
 
 
@@ -106,7 +106,7 @@ The order of elements in the result do not have to reflect the ordering of *list
 
 
 
-Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *list-1* and *list-2* are not *proper lists*. 
+Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *list-1* and *list-2* are not <GlossaryTerm styled={true} term={"proper list"}><i>proper lists</i></GlossaryTerm>. 
 
 
 

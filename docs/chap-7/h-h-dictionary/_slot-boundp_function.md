@@ -22,7 +22,7 @@
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -58,7 +58,7 @@ If no <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the *name slot-name* exis
 
 
 
-(If <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> is invoked and returns a value, a *boolean equivalent* to its *primary value* is returned by <ClLinks  term={"slot-boundp"}><b>slot-boundp</b></ClLinks>.) 
+(If <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> is invoked and returns a value, a <GlossaryTerm styled={true} term={"boolean equivalent"}><i>boolean equivalent</i></GlossaryTerm> to its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> is returned by <ClLinks  term={"slot-boundp"}><b>slot-boundp</b></ClLinks>.) 
 
 
 
@@ -90,7 +90,7 @@ The specific behavior depends on <ClLinks  term={"instance"}><i>instance</i></Cl
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"slot-boundp"}><b>slot-boundp</b></ClLinks> allows for writing *after methods* on <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks> in order to initialize only those <ClLinks  term={"slot"}><i>slots</i></ClLinks> that have not already been bound. 
+The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"slot-boundp"}><b>slot-boundp</b></ClLinks> allows for writing <GlossaryTerm styled={true} term={"after method"}><i>after methods</i></GlossaryTerm> on <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks> in order to initialize only those <ClLinks  term={"slot"}><i>slots</i></ClLinks> that have not already been bound. 
 
 
 

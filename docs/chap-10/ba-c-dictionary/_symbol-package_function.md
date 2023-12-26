@@ -26,7 +26,7 @@
 
 
 
-Returns the *home package* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Returns the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 

@@ -14,15 +14,15 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 
-*new-name*—a *package designator* . 
+*new-name*—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 
-*new-nicknames*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *string designators*. The default is the *empty list*. 
+*new-nicknames*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"string designator"}><i>string designators</i></GlossaryTerm>. The default is the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. 
 
 
 

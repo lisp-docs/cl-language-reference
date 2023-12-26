@@ -1,4 +1,4 @@
-**standard-generic-function** *System Class* 
+**standard-generic-function** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 

@@ -50,7 +50,7 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* ; evaluated. The default in <ClLinks  term={"do-symbols"}><b>do-symbols</b></ClLinks> and <ClLinks  term={"do-external-symbols"}><b>do-external-symbols</b></ClLinks> is the *current package*. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> ; evaluated. The default in <ClLinks  term={"do-symbols"}><b>do-symbols</b></ClLinks> and <ClLinks  term={"do-external-symbols"}><b>do-external-symbols</b></ClLinks> is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
@@ -62,15 +62,15 @@
 
 
 
-<ClLinks  term={"tag"}><i>tag</i></ClLinks>—a *go tag*; not evaluated. 
+<ClLinks  term={"tag"}><i>tag</i></ClLinks>—a <GlossaryTerm styled={true} term={"go tag"}><i>go tag</i></GlossaryTerm>; not evaluated. 
 
 
 
-*statement*—a *compound form*; evaluated as described below. 
+*statement*—a <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm>; evaluated as described below. 
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the *result-form* if a *normal return* occurs, or else, if an *explicit return* occurs, the <ClLinks  term={"value"}><i>values</i></ClLinks> that were transferred. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the *result-form* if a <GlossaryTerm styled={true} term={"normal return"}><i>normal return</i></GlossaryTerm> occurs, or else, if an <GlossaryTerm styled={true} term={"explicit return"}><i>explicit return</i></GlossaryTerm> occurs, the <ClLinks  term={"value"}><i>values</i></ClLinks> that were transferred. 
 
 
 
@@ -102,7 +102,7 @@
 
 
 
-<ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> iterates on every *registered package*. <ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> will not process every <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whatsoever, because a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> not <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in any *registered package* will not be processed. <ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> may cause a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is <ClLinks  term={"present"}><i>present</i></ClLinks> in several <ClLinks  term={"package"}><i>packages</i></ClLinks> to be processed more than once. 
+<ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> iterates on every <GlossaryTerm styled={true} term={"registered package"}><i>registered package</i></GlossaryTerm>. <ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> will not process every <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whatsoever, because a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> not <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in any <GlossaryTerm styled={true} term={"registered package"}><i>registered package</i></GlossaryTerm> will not be processed. <ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> may cause a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is <ClLinks  term={"present"}><i>present</i></ClLinks> in several <ClLinks  term={"package"}><i>packages</i></ClLinks> to be processed more than once. 
 
 
 
@@ -114,7 +114,7 @@ When *result-form* is evaluated, *var* is bound and has the value <ClLinks  term
 
 
 
-An *implicit block* named <ClLinks  term={"nil"}><b>nil</b></ClLinks> surrounds the entire <ClLinks  term={"do-symbols"}><b>do-symbols</b></ClLinks>, <ClLinks  term={"do-external-symbols"}><b>do-external-symbols</b></ClLinks>, or <ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. <ClLinks  term={"return"}><b>return</b></ClLinks> or <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> may be used to terminate the iteration prematurely. 
+An <GlossaryTerm styled={true} term={"implicit block"}><i>implicit block</i></GlossaryTerm> named <ClLinks  term={"nil"}><b>nil</b></ClLinks> surrounds the entire <ClLinks  term={"do-symbols"}><b>do-symbols</b></ClLinks>, <ClLinks  term={"do-external-symbols"}><b>do-external-symbols</b></ClLinks>, or <ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. <ClLinks  term={"return"}><b>return</b></ClLinks> or <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> may be used to terminate the iteration prematurely. 
 
 
 

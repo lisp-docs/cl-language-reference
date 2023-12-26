@@ -54,7 +54,7 @@ The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"arithmetic-er
 
 
 
-*operation*—a *function designator* . 
+*operation*—a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> . 
 
 
 

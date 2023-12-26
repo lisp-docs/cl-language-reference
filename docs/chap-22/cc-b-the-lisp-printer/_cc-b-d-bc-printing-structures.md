@@ -10,7 +10,7 @@ Different structures might print out in different ways; the default notation for
 
 
 
-where #S indicates structure syntax, *structure-name* is a *structure name*, each *slot-key* is an initialization argument <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> for a <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> in the <ClLinks styled={true} term={"structure"}><i>structure</i></ClLinks>, and each corresponding *slot-value* is a representation of the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> in that <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 
+where #S indicates structure syntax, *structure-name* is a <GlossaryTerm styled={true} term={"structure name"}><i>structure name</i></GlossaryTerm>, each *slot-key* is an initialization argument <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> for a <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> in the <ClLinks styled={true} term={"structure"}><i>structure</i></ClLinks>, and each corresponding *slot-value* is a representation of the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> in that <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 
 
 
 

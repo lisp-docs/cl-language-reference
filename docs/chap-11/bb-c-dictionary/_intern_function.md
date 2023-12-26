@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<ClLinks  term={"intern"}><b>intern</b></ClLinks> enters a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> named <ClLinks  term={"string"}><i>string</i></ClLinks> into <ClLinks  term={"package"}><i>package</i></ClLinks>. If a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose name is the same as <ClLinks  term={"string"}><i>string</i></ClLinks> is already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, it is returned. If no such <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, a new <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> with the given name is created and entered into <ClLinks  term={"package"}><i>package</i></ClLinks> as an *internal symbol*, or as an *external symbol* if the <ClLinks  term={"package"}><i>package</i></ClLinks> is the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>; <ClLinks  term={"package"}><i>package</i></ClLinks> becomes the *home package* of the created <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<ClLinks  term={"intern"}><b>intern</b></ClLinks> enters a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> named <ClLinks  term={"string"}><i>string</i></ClLinks> into <ClLinks  term={"package"}><i>package</i></ClLinks>. If a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose name is the same as <ClLinks  term={"string"}><i>string</i></ClLinks> is already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, it is returned. If no such <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, a new <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> with the given name is created and entered into <ClLinks  term={"package"}><i>package</i></ClLinks> as an <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm>, or as an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm> if the <ClLinks  term={"package"}><i>package</i></ClLinks> is the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>; <ClLinks  term={"package"}><i>package</i></ClLinks> becomes the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of the created <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-The first value returned by <ClLinks  term={"intern"}><b>intern</b></ClLinks>, <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that was found or created. The meaning of the *secondary value*, *status*, is as follows: 
+The first value returned by <ClLinks  term={"intern"}><b>intern</b></ClLinks>, <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that was found or created. The meaning of the <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *status*, is as follows: 
 
 
 
@@ -46,7 +46,7 @@ The first value returned by <ClLinks  term={"intern"}><b>intern</b></ClLinks>, <
 
 
 
-The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> was found and is <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> as an *internal symbol*. 
+The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> was found and is <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> as an <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm>. 
 
 
 
@@ -54,7 +54,7 @@ The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> was found and is <ClLinks 
 
 
 
-The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> was found and is <ClLinks  term={"present"}><i>present</i></ClLinks> as an *external symbol*. 
+The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> was found and is <ClLinks  term={"present"}><i>present</i></ClLinks> as an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm>. 
 
 
 

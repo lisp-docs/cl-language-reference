@@ -2,7 +2,7 @@
 
 
 
-A <ClLinks  term={"binding"}><i>binding</i></ClLinks> is an association between a <ClLinks  term={"name"}><i>name</i></ClLinks> and that which the name denotes. <ClLinks  term={"binding"}><i>Bindings</i></ClLinks> are *established* in a *lexical environment* or a *dynamic environment* by particular *special operators*. 
+A <ClLinks  term={"binding"}><i>binding</i></ClLinks> is an association between a <ClLinks  term={"name"}><i>name</i></ClLinks> and that which the name denotes. <ClLinks  term={"binding"}><i>Bindings</i></ClLinks> are *established* in a <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> by particular <GlossaryTerm styled={true} term={"special operator"}><i>special operators</i></GlossaryTerm>. 
 
 
 

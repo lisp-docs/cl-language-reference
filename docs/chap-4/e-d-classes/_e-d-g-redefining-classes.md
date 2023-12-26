@@ -2,7 +2,7 @@
 
 
 
-A <ClLinks  term={"class"}><i>class</i></ClLinks> that is a *direct instance* of <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks> can be redefined if the new <ClLinks  term={"class"}><i>class</i></ClLinks> is also a *direct instance* of <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks>. Redefining a <ClLinks  term={"class"}><i>class</i></ClLinks> modifies the existing *class object* to reflect the new <ClLinks  term={"class"}><i>class</i></ClLinks> definition; it does not create a new *class object* for the <ClLinks  term={"class"}><i>class</i></ClLinks>. Any *method object* created by a :reader, :writer, or :accessor option specified by the old <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form is removed from the corresponding *generic function*. *Methods* specified by the new <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form are added.  
+A <ClLinks  term={"class"}><i>class</i></ClLinks> that is a <GlossaryTerm styled={true} term={"direct instance"}><i>direct instance</i></GlossaryTerm> of <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks> can be redefined if the new <ClLinks  term={"class"}><i>class</i></ClLinks> is also a <GlossaryTerm styled={true} term={"direct instance"}><i>direct instance</i></GlossaryTerm> of <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks>. Redefining a <ClLinks  term={"class"}><i>class</i></ClLinks> modifies the existing *class object* to reflect the new <ClLinks  term={"class"}><i>class</i></ClLinks> definition; it does not create a new *class object* for the <ClLinks  term={"class"}><i>class</i></ClLinks>. Any *method object* created by a :reader, :writer, or :accessor option specified by the old <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form is removed from the corresponding <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"method"}><i>Methods</i></GlossaryTerm> specified by the new <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form are added.  
 
 
 
@@ -18,11 +18,11 @@ Note that redefining a <ClLinks  term={"class"}><i>class</i></ClLinks> may cause
 
 
 
-The value of a <ClLinks  term={"slot"}><i>slot</i></ClLinks> that is specified as shared both in the old <ClLinks  term={"class"}><i>class</i></ClLinks> and in the new <ClLinks  term={"class"}><i>class</i></ClLinks> is retained. If such a *shared slot* was unbound in the old <ClLinks  term={"class"}><i>class</i></ClLinks>, it is unbound in the new <ClLinks  term={"class"}><i>class</i></ClLinks>. <ClLinks  term={"slot"}><i>Slots</i></ClLinks> that were local in the old <ClLinks  term={"class"}><i>class</i></ClLinks> and that are shared in the new <ClLinks  term={"class"}><i>class</i></ClLinks> are initialized. Newly added *shared slots* are initialized. 
+The value of a <ClLinks  term={"slot"}><i>slot</i></ClLinks> that is specified as shared both in the old <ClLinks  term={"class"}><i>class</i></ClLinks> and in the new <ClLinks  term={"class"}><i>class</i></ClLinks> is retained. If such a <GlossaryTerm styled={true} term={"shared slot"}><i>shared slot</i></GlossaryTerm> was unbound in the old <ClLinks  term={"class"}><i>class</i></ClLinks>, it is unbound in the new <ClLinks  term={"class"}><i>class</i></ClLinks>. <ClLinks  term={"slot"}><i>Slots</i></ClLinks> that were local in the old <ClLinks  term={"class"}><i>class</i></ClLinks> and that are shared in the new <ClLinks  term={"class"}><i>class</i></ClLinks> are initialized. Newly added <GlossaryTerm styled={true} term={"shared slot"}><i>shared slots</i></GlossaryTerm> are initialized. 
 
 
 
-Each newly added *shared slot* is set to the result of evaluating the *captured initialization form* for the <ClLinks  term={"slot"}><i>slot</i></ClLinks> that was specified in the <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> for the new <ClLinks  term={"class"}><i>class</i></ClLinks>. If there was no *initialization form*, the <ClLinks  term={"slot"}><i>slot</i></ClLinks> is unbound. 
+Each newly added <GlossaryTerm styled={true} term={"shared slot"}><i>shared slot</i></GlossaryTerm> is set to the result of evaluating the <GlossaryTerm styled={true} term={"captured initialization form"}><i>captured initialization form</i></GlossaryTerm> for the <ClLinks  term={"slot"}><i>slot</i></ClLinks> that was specified in the <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> for the new <ClLinks  term={"class"}><i>class</i></ClLinks>. If there was no <GlossaryTerm styled={true} term={"initialization form"}><i>initialization form</i></GlossaryTerm>, the <ClLinks  term={"slot"}><i>slot</i></ClLinks> is unbound. 
 
 
 
@@ -30,7 +30,7 @@ If a <ClLinks  term={"class"}><i>class</i></ClLinks> is redefined in such a way 
 
 
 
-The first step modifies the structure of the <ClLinks  term={"instance"}><i>instance</i></ClLinks> by adding new *local slots* and discarding *local slots* that are not defined in the new version of the <ClLinks  term={"class"}><i>class</i></ClLinks>. The second step initializes the newly-added *local slots* and performs any other user-defined actions. These two steps are further specified in the next two sections. 
+The first step modifies the structure of the <ClLinks  term={"instance"}><i>instance</i></ClLinks> by adding new <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm> and discarding <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm> that are not defined in the new version of the <ClLinks  term={"class"}><i>class</i></ClLinks>. The second step initializes the newly-added <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm> and performs any other user-defined actions. These two steps are further specified in the next two sections. 
 
 
 

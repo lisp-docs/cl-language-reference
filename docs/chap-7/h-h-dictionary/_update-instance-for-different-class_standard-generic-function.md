@@ -1,4 +1,4 @@
-**update-instance-for-different-class** *Standard Generic Function* 
+**update-instance-for-different-class** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-*initargs*—an *initialization argument list*. 
+*initargs*—an <GlossaryTerm styled={true} term={"initialization argument list"}><i>initialization argument list</i></GlossaryTerm>. 
 
 
 
@@ -50,11 +50,11 @@ The generic function **update-instance-for-different-class** is not intended to 
 
 
 
-The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> on **update-instance-for-different-class** checks the validity of *initargs* and signals an error if an *initarg* is supplied that is not declared as valid. This <ClLinks  term={"method"}><i>method</i></ClLinks> then initializes <ClLinks  term={"slot"}><i>slots</i></ClLinks> with values according to the *initargs*, and initializes the newly added <ClLinks  term={"slot"}><i>slots</i></ClLinks> with values according to their :initform forms. It does this by calling the generic function <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> with the following arguments: the instance (*current*), a list of <ClLinks  term={"name"}><i>names</i></ClLinks> of the newly added <ClLinks  term={"slot"}><i>slots</i></ClLinks>, and the *initargs* it received. Newly added <ClLinks  term={"slot"}><i>slots</i></ClLinks> are those *local slots* for which no <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the same name exists in the *previous* class. 
+The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> on **update-instance-for-different-class** checks the validity of *initargs* and signals an error if an *initarg* is supplied that is not declared as valid. This <ClLinks  term={"method"}><i>method</i></ClLinks> then initializes <ClLinks  term={"slot"}><i>slots</i></ClLinks> with values according to the *initargs*, and initializes the newly added <ClLinks  term={"slot"}><i>slots</i></ClLinks> with values according to their :initform forms. It does this by calling the generic function <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> with the following arguments: the instance (*current*), a list of <ClLinks  term={"name"}><i>names</i></ClLinks> of the newly added <ClLinks  term={"slot"}><i>slots</i></ClLinks>, and the *initargs* it received. Newly added <ClLinks  term={"slot"}><i>slots</i></ClLinks> are those <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm> for which no <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the same name exists in the *previous* class. 
 
 
 
-<ClLinks  term={"method"}><i>Methods</i></ClLinks> for **update-instance-for-different-class** can be defined to specify actions to be taken when an <ClLinks  term={"instance"}><i>instance</i></ClLinks> is updated. If only *after methods* for **update-instance-for-different-class** are defined, they will be run after the system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> for initialization and therefore will not interfere with the default behavior of **update-instance-for-different-class**. 
+<ClLinks  term={"method"}><i>Methods</i></ClLinks> for **update-instance-for-different-class** can be defined to specify actions to be taken when an <ClLinks  term={"instance"}><i>instance</i></ClLinks> is updated. If only <GlossaryTerm styled={true} term={"after method"}><i>after methods</i></GlossaryTerm> for **update-instance-for-different-class** are defined, they will be run after the system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> for initialization and therefore will not interfere with the default behavior of **update-instance-for-different-class**. 
 
 
 
@@ -102,7 +102,7 @@ The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> on
 
 
 
-*Initargs* are declared as valid by using the :initarg option to <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, or by defining <ClLinks  term={"method"}><i>methods</i></ClLinks> for **update-instance-for-different-class** or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. The keyword name of each keyword parameter specifier in the *lambda list* of any <ClLinks  term={"method"}><i>method</i></ClLinks> defined on **update-instance-for-different-class** or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> is declared as a valid *initarg* name for all *classes* for which that <ClLinks  term={"method"}><i>method</i></ClLinks> is applicable. 
+*Initargs* are declared as valid by using the :initarg option to <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, or by defining <ClLinks  term={"method"}><i>methods</i></ClLinks> for **update-instance-for-different-class** or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. The keyword name of each keyword parameter specifier in the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of any <ClLinks  term={"method"}><i>method</i></ClLinks> defined on **update-instance-for-different-class** or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> is declared as a valid *initarg* name for all *classes* for which that <ClLinks  term={"method"}><i>method</i></ClLinks> is applicable. 
 
 
 

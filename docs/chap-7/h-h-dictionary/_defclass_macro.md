@@ -202,7 +202,7 @@ The following slot options are available:
 
 
 
-– If *allocation-type* is :instance, a *local slot* of the name *slot-name* is allocated in each instance of the <ClLinks  term={"class"}><i>class</i></ClLinks>. 
+– If *allocation-type* is :instance, a <GlossaryTerm styled={true} term={"local slot"}><i>local slot</i></GlossaryTerm> of the name *slot-name* is allocated in each instance of the <ClLinks  term={"class"}><i>class</i></ClLinks>. 
 
 
 
@@ -210,7 +210,7 @@ The following slot options are available:
 
 
 
-<ClLinks  term={"instance"}><i>instances</i></ClLinks> of the <ClLinks  term={"class"}><i>class</i></ClLinks>. If a class *C*<sub>1</sub> defines such a *shared slot*, any subclass *C*<sub>2</sub> of 
+<ClLinks  term={"instance"}><i>instances</i></ClLinks> of the <ClLinks  term={"class"}><i>class</i></ClLinks>. If a class *C*<sub>1</sub> defines such a <GlossaryTerm styled={true} term={"shared slot"}><i>shared slot</i></GlossaryTerm>, any subclass *C*<sub>2</sub> of 
 
 
 
@@ -246,7 +246,7 @@ list of *C*<sub>2</sub> and that defines a <ClLinks  term={"slot"}><i>slot</i></
 
 
 
-and to functions. For *local slots*, the dynamic environment is the dynamic environment in which <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> is called; for shared <ClLinks  term={"slot"}><i>slots</i></ClLinks>, the dynamic environment is the dynamic environment in which the <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form was evaluated. See Section 7.1 (Object Creation and Initialization). 
+and to functions. For <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm>, the dynamic environment is the dynamic environment in which <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> is called; for shared <ClLinks  term={"slot"}><i>slots</i></ClLinks>, the dynamic environment is the dynamic environment in which the <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form was evaluated. See Section 7.1 (Object Creation and Initialization). 
 
 
 
@@ -262,7 +262,7 @@ No implementation is permitted to extend the syntax of <ClLinks  term={"defclass
 
 
 
-*•* The :documentation slot option provides a *documentation string* for the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. :documentation can be supplied once at most for a given <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
+*•* The :documentation slot option provides a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> for the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. :documentation can be supplied once at most for a given <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
 
 
 
@@ -274,7 +274,7 @@ Each class option is an option that refers to the <ClLinks  term={"class"}><i>cl
 
 
 
-*•* The :documentation class option causes a *documentation string* to be attached with the *class object*, and attached with kind <ClLinks  term={"type"}><b>type</b></ClLinks> to the *class-name*. :documentation can be supplied once at most. 
+*•* The :documentation class option causes a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to be attached with the *class object*, and attached with kind <ClLinks  term={"type"}><b>type</b></ClLinks> to the *class-name*. :documentation can be supplied once at most. 
 
 
 
@@ -334,7 +334,7 @@ If no reader, writer, or accessor is specified for a <ClLinks  term={"slot"}><i>
 
 
 
-If a <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a *top level form*, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must make the *class name* be recognized as a valid *type name* in subsequent declarations (as for <ClLinks  term={"deftype"}><b>deftype</b></ClLinks>) and be recognized as a valid *class name* for <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> *parameter specializers* and for use as the :metaclass option of a subsequent <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>. The <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must make the <ClLinks  term={"class"}><i>class</i></ClLinks> definition available to be returned by <ClLinks  term={"find-class"}><b>find-class</b></ClLinks> when its *environment argument* is a value received as the *environment parameter* of a <ClLinks  term={"macro"}><i>macro</i></ClLinks>. 
+If a <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must make the *class name* be recognized as a valid *type name* in subsequent declarations (as for <ClLinks  term={"deftype"}><b>deftype</b></ClLinks>) and be recognized as a valid *class name* for <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> and for use as the :metaclass option of a subsequent <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>. The <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must make the <ClLinks  term={"class"}><i>class</i></ClLinks> definition available to be returned by <ClLinks  term={"find-class"}><b>find-class</b></ClLinks> when its *environment argument* is a value received as the <GlossaryTerm styled={true} term={"environment parameter"}><i>environment parameter</i></GlossaryTerm> of a <ClLinks  term={"macro"}><i>macro</i></ClLinks>. 
 
 
 

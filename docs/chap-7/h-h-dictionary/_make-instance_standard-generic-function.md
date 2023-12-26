@@ -1,4 +1,4 @@
-**make-instance** *Standard Generic Function* 
+**make-instance** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*initargs*—an *initialization argument list*. 
+*initargs*—an <GlossaryTerm styled={true} term={"initialization argument list"}><i>initialization argument list</i></GlossaryTerm>. 
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-The *generic function* <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> creates and returns a new <ClLinks  term={"instance"}><i>instance</i></ClLinks> of the given <ClLinks  term={"class"}><i>class</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> creates and returns a new <ClLinks  term={"instance"}><i>instance</i></ClLinks> of the given <ClLinks  term={"class"}><i>class</i></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ The initialization arguments are checked within <ClLinks  term={"make-instance"}
 
 
 
-The *generic function* <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> may be used as described in Section 7.1 (Object Creation and Initialization). 
+The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> may be used as described in Section 7.1 (Object Creation and Initialization). 
 
 
 

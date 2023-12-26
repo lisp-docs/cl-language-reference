@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>—a *restart designator* . 
+<ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>—a <GlossaryTerm styled={true} term={"restart designator"}><i>restart designator</i></GlossaryTerm> . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> calls the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> associated with <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, prompting for any necessary arguments. If <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is a name, it must be valid in the current *dynamic environment*. 
+<ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> calls the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> associated with <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, prompting for any necessary arguments. If <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is a name, it must be valid in the current <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm>. 
 
 
 

@@ -106,15 +106,15 @@ where f → #’(lambda () (return-from here<sub>1</sub> 4))
 
 
 
-At the time the funcall is executed there are two <ClLinks  term={"block"}><b>block</b></ClLinks> *exit points* outstanding, each apparently named here. The <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> executed as a result of the funcall operation refers to the outer outstanding *exit point* (here<sub>1</sub>), not the inner one (here<sub>2</sub>). It refers to that *exit point* textually visible at the point of execution of <ClLinks  term={"function"}><b>function</b></ClLinks> (here abbreviated by the #’ syntax) that resulted in creation of the *function object* actually invoked by <ClLinks  term={"funcall"}><b>funcall</b></ClLinks>. 
+At the time the funcall is executed there are two <ClLinks  term={"block"}><b>block</b></ClLinks> <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> outstanding, each apparently named here. The <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> executed as a result of the funcall operation refers to the outer outstanding <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> (here<sub>1</sub>), not the inner one (here<sub>2</sub>). It refers to that <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> textually visible at the point of execution of <ClLinks  term={"function"}><b>function</b></ClLinks> (here abbreviated by the #’ syntax) that resulted in creation of the *function object* actually invoked by <ClLinks  term={"funcall"}><b>funcall</b></ClLinks>. 
 
 
 
-If, in this example, one were to change the (funcall f) to (funcall g), then the value of the call (contorted-example nil nil 2) would be 9. The value would change because <ClLinks  term={"funcall"}><b>funcall</b></ClLinks> would cause the execution of (return-from here<sub>2</sub> 4), thereby causing a return from the inner *exit point* (here<sub>2</sub>). 
+If, in this example, one were to change the (funcall f) to (funcall g), then the value of the call (contorted-example nil nil 2) would be 9. The value would change because <ClLinks  term={"funcall"}><b>funcall</b></ClLinks> would cause the execution of (return-from here<sub>2</sub> 4), thereby causing a return from the inner <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> (here<sub>2</sub>). 
 
 
 
-When that occurs, the value 4 is returned from the middle invocation of contorted-example, 5 is added to that to get 9, and that value is returned from the outer block and the outermost call to contorted-example. The point is that the choice of *exit point* returned from has nothing to do with its being innermost or outermost; rather, it depends on the lexical environment that is packaged up with a *lambda expression* when <ClLinks  term={"function"}><b>function</b></ClLinks> is executed. 
+When that occurs, the value 4 is returned from the middle invocation of contorted-example, 5 is added to that to get 9, and that value is returned from the outer block and the outermost call to contorted-example. The point is that the choice of <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> returned from has nothing to do with its being innermost or outermost; rather, it depends on the lexical environment that is packaged up with a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> when <ClLinks  term={"function"}><b>function</b></ClLinks> is executed. 
 
 
 

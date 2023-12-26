@@ -34,27 +34,23 @@
 
 
 
-<ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks> and <ClLinks  term={"defvar"}><b>defvar</b></ClLinks> *establish name* as a *dynamic variable*. 
+<ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks> and <ClLinks  term={"defvar"}><b>defvar</b></ClLinks> *establish name* as a <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks> unconditionally <ClLinks  term={"assign"}><i>assigns</i></ClLinks> the *initial-value* to the *dynamic variable* named <ClLinks  term={"name"}><i>name</i></ClLinks>. <ClLinks  term={"defvar"}><b>defvar</b></ClLinks>, by contrast, *assigns initial-value* (if supplied) to the *dynamic variable* named <ClLinks  term={"name"}><i>name</i></ClLinks> only if <ClLinks  term={"name"}><i>name</i></ClLinks> is not already <ClLinks  term={"bound"}><i>bound</i></ClLinks>. 
+<ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks> unconditionally <ClLinks  term={"assign"}><i>assigns</i></ClLinks> the *initial-value* to the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> named <ClLinks  term={"name"}><i>name</i></ClLinks>. <ClLinks  term={"defvar"}><b>defvar</b></ClLinks>, by contrast, *assigns initial-value* (if supplied) to the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> named <ClLinks  term={"name"}><i>name</i></ClLinks> only if <ClLinks  term={"name"}><i>name</i></ClLinks> is not already <ClLinks  term={"bound"}><i>bound</i></ClLinks>. 
 
 
 
-If no *initial-value* is supplied, <ClLinks  term={"defvar"}><b>defvar</b></ClLinks> leaves the *value cell* of the *dynamic variable* named <ClLinks  term={"name"}><i>name</i></ClLinks> undisturbed; if <ClLinks  term={"name"}><i>name</i></ClLinks> was previously <ClLinks  term={"bound"}><i>bound</i></ClLinks>, its old <ClLinks  term={"value"}><i>value</i></ClLinks> persists, and if it was previously <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>, it remains <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>. 
+If no *initial-value* is supplied, <ClLinks  term={"defvar"}><b>defvar</b></ClLinks> leaves the <GlossaryTerm styled={true} term={"value cell"}><i>value cell</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> named <ClLinks  term={"name"}><i>name</i></ClLinks> undisturbed; if <ClLinks  term={"name"}><i>name</i></ClLinks> was previously <ClLinks  term={"bound"}><i>bound</i></ClLinks>, its old <ClLinks  term={"value"}><i>value</i></ClLinks> persists, and if it was previously <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>, it remains <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>. 
 
 
 
-If *documentation* is supplied, it is attached to <ClLinks  term={"name"}><i>name</i></ClLinks> as a *documentation string* of kind **variable**. 
+If *documentation* is supplied, it is attached to <ClLinks  term={"name"}><i>name</i></ClLinks> as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> of kind **variable**. 
 
 
 
-<ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks> and <ClLinks  term={"defvar"}><b>defvar</b></ClLinks> normally appear as a *top level form*, but it is meaningful for them to appear as *non-top-level forms*. However, the compile-time side effects described below only take place when they appear as *top level forms*. 
-
-
-
-
+<ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks> and <ClLinks  term={"defvar"}><b>defvar</b></ClLinks> normally appear as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, but it is meaningful for them to appear as <GlossaryTerm styled={true} term={"non-top-level form"}><i>non-top-level forms</i></GlossaryTerm>. However, the compile-time side effects described below only take place when they appear as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>. 
 
 
 
@@ -66,7 +62,11 @@ If *documentation* is supplied, it is attached to <ClLinks  term={"name"}><i>nam
 
 
 
-**defparameter, defvar** 
+
+
+
+
+<DictionaryLink styled={true} term={"defparameter, defvar"}><b>defparameter, defvar</b></DictionaryLink> 
 
 
 

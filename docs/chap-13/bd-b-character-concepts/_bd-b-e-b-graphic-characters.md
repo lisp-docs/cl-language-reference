@@ -10,7 +10,7 @@ A *graphic character* is one that has a standard textual representation as a sin
 
 
 
-Of the *standard characters*, *newline* is <ClLinks styled={true} term={"non-graphic"}><i>non-graphic</i></ClLinks> and all others are <ClLinks styled={true} term={"graphic"}><i>graphic</i></ClLinks>; see Section 2.1.3 (Standard Characters). 
+Of the <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"newline"}><i>newline</i></GlossaryTerm> is <ClLinks styled={true} term={"non-graphic"}><i>non-graphic</i></ClLinks> and all others are <ClLinks styled={true} term={"graphic"}><i>graphic</i></ClLinks>; see Section 2.1.3 (Standard Characters). 
 
 
 

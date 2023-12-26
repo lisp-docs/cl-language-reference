@@ -2,7 +2,7 @@
 
 
 
-<ClLinks  term={"method"}><i>Methods</i></ClLinks> for <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> may be defined to specify actions to be taken when an <ClLinks  term={"instance"}><i>instance</i></ClLinks> is updated. If only *after methods* for <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> are defined, they will be run after the system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> for initialization and therefore will not interfere with the default behavior of <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks>. 
+<ClLinks  term={"method"}><i>Methods</i></ClLinks> for <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> may be defined to specify actions to be taken when an <ClLinks  term={"instance"}><i>instance</i></ClLinks> is updated. If only <GlossaryTerm styled={true} term={"after method"}><i>after methods</i></GlossaryTerm> for <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> are defined, they will be run after the system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> for initialization and therefore will not interfere with the default behavior of <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks>. 
 
 
 

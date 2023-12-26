@@ -14,7 +14,7 @@
 
 
 
-*sequence*—a *proper sequence*. 
+*sequence*—a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@ Returns the number of <ClLinks  term={"element"}><i>elements</i></ClLinks> in *s
 
 
 
-If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , the active length as specified by the *fill pointer* is returned. 
+If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , the active length as specified by the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is returned. 
 
 
 
@@ -48,7 +48,7 @@ If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fil
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
@@ -72,7 +72,7 @@ Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-**reverse, nreverse** 
+<DictionaryLink styled={true} term={"reverse, nreverse"}><b>reverse, nreverse</b></DictionaryLink> 
 
 
 

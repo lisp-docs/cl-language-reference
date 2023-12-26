@@ -8,13 +8,13 @@
 
 <ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>.
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> or *primary value* (see below) resulting from the evaluation of the last <ClLinks  term={"form"}><i>form</i></ClLinks> executed or <ClLinks  term={"nil"}><b>nil</b></ClLinks>.
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> or <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> (see below) resulting from the evaluation of the last <ClLinks  term={"form"}><i>form</i></ClLinks> executed or <ClLinks  term={"nil"}><b>nil</b></ClLinks>.
 
 **Description:**
 
 <ClLinks  term={"or"}><b>or</b></ClLinks> evaluates each <ClLinks  term={"form"}><i>form</i></ClLinks>, one at a time, from left to right. The evaluation of all <ClLinks  term={"form"}><i>forms</i></ClLinks> terminates when a <ClLinks  term={"form"}><i>form</i></ClLinks> evaluates to <ClLinks  term={"true"}><i>true</i></ClLinks> (*i.e.*, something other than <ClLinks  term={"nil"}><b>nil</b></ClLinks>).
 
-If the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of any <ClLinks  term={"form"}><i>form</i></ClLinks> other than the last returns a *primary value* that is <ClLinks  term={"true"}><i>true</i></ClLinks>, <ClLinks  term={"or"}><b>or</b></ClLinks> immediately returns that <ClLinks  term={"value"}><i>value</i></ClLinks> (but no additional <ClLinks  term={"value"}><i>values</i></ClLinks>) without evaluating the remaining <ClLinks  term={"form"}><i>forms</i></ClLinks>. If every <ClLinks  term={"form"}><i>form</i></ClLinks> but the last returns <ClLinks  term={"false"}><i>false</i></ClLinks> as its *primary value*, <ClLinks  term={"or"}><b>or</b></ClLinks> returns all <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the last <ClLinks  term={"form"}><i>form</i></ClLinks>. If no <ClLinks  term={"form"}><i>forms</i></ClLinks> are supplied, <ClLinks  term={"or"}><b>or</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>.
+If the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of any <ClLinks  term={"form"}><i>form</i></ClLinks> other than the last returns a <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> that is <ClLinks  term={"true"}><i>true</i></ClLinks>, <ClLinks  term={"or"}><b>or</b></ClLinks> immediately returns that <ClLinks  term={"value"}><i>value</i></ClLinks> (but no additional <ClLinks  term={"value"}><i>values</i></ClLinks>) without evaluating the remaining <ClLinks  term={"form"}><i>forms</i></ClLinks>. If every <ClLinks  term={"form"}><i>form</i></ClLinks> but the last returns <ClLinks  term={"false"}><i>false</i></ClLinks> as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>, <ClLinks  term={"or"}><b>or</b></ClLinks> returns all <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the last <ClLinks  term={"form"}><i>form</i></ClLinks>. If no <ClLinks  term={"form"}><i>forms</i></ClLinks> are supplied, <ClLinks  term={"or"}><b>or</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>.
 
 **Examples:**
 

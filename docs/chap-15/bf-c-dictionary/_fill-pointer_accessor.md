@@ -18,11 +18,11 @@
 
 
 
-<ClLinks  term={"vector"}><i>vector</i></ClLinks>—a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* . 
+<ClLinks  term={"vector"}><i>vector</i></ClLinks>—a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
 
 
 
-*fill-pointer*, *new-fill-pointer*—a *valid fill pointer* for the <ClLinks  term={"vector"}><i>vector</i></ClLinks>. 
+*fill-pointer*, *new-fill-pointer*—a <GlossaryTerm styled={true} term={"valid fill pointer"}><i>valid fill pointer</i></GlossaryTerm> for the <ClLinks  term={"vector"}><i>vector</i></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*Accesses* the *fill pointer* of <ClLinks  term={"vector"}><i>vector</i></ClLinks>. 
+*Accesses* the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> of <ClLinks  term={"vector"}><i>vector</i></ClLinks>. 
 
 
 
@@ -50,7 +50,7 @@ a → #(0 1 4 9 NIL NIL NIL NIL)
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"vector"}><i>vector</i></ClLinks> is not a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"vector"}><i>vector</i></ClLinks> is not a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
 
 
 
@@ -74,7 +74,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-There is no <ClLinks  term={"operator"}><i>operator</i></ClLinks> that will remove a <ClLinks  term={"vector"}><i>vector</i></ClLinks> ’s *fill pointer* . 
+There is no <ClLinks  term={"operator"}><i>operator</i></ClLinks> that will remove a <ClLinks  term={"vector"}><i>vector</i></ClLinks> ’s <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
 
 
 

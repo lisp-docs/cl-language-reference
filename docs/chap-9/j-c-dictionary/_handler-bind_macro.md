@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>—a *type specifier* . 
+<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-Executes <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a *dynamic environment* where the indicated *handler bindings* are in effect. 
+Executes <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> where the indicated *handler bindings* are in effect. 
 
 
 
@@ -50,7 +50,7 @@ Each <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> should eva
 
 
 
-If more than one *handler binding* is supplied, the *handler bindings* are searched sequentially from top to bottom in search of a match (by visual analogy with <ClLinks styled={true} term={"typecase"}><b>typecase</b></ClLinks>). If an appropriate <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> is found, the associated handler is run in a *dynamic environment* where none of these <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> bindings are visible (to avoid recursive errors). If the *handler declines*, the search continues for another <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> . 
+If more than one *handler binding* is supplied, the *handler bindings* are searched sequentially from top to bottom in search of a match (by visual analogy with <ClLinks styled={true} term={"typecase"}><b>typecase</b></ClLinks>). If an appropriate <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> is found, the associated handler is run in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> where none of these <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> bindings are visible (to avoid recursive errors). If the *handler declines*, the search continues for another <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> . 
 
 
 

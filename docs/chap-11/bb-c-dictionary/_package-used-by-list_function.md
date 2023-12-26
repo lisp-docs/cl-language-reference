@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 

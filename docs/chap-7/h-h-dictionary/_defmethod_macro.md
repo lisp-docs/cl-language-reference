@@ -158,31 +158,31 @@ The <ClLinks  term={"form"}><i>form</i></ClLinks> arguments specify the method b
 
 
 
-The <ClLinks  term={"class"}><i>class</i></ClLinks> of the *method object* that is created is that given by the method class option of the *generic function* on which the <ClLinks  term={"method"}><i>method</i></ClLinks> is defined. 
+The <ClLinks  term={"class"}><i>class</i></ClLinks> of the *method object* that is created is that given by the method class option of the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> on which the <ClLinks  term={"method"}><i>method</i></ClLinks> is defined. 
 
 
 
-If the *generic function* already has a <ClLinks  term={"method"}><i>method</i></ClLinks> that agrees with the <ClLinks  term={"method"}><i>method</i></ClLinks> being defined on *parameter specializers* and <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>, <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> replaces the existing <ClLinks  term={"method"}><i>method</i></ClLinks> with the one now being defined. For a definition of agreement in this context. see Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers). 
+If the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> already has a <ClLinks  term={"method"}><i>method</i></ClLinks> that agrees with the <ClLinks  term={"method"}><i>method</i></ClLinks> being defined on <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> and <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>, <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> replaces the existing <ClLinks  term={"method"}><i>method</i></ClLinks> with the one now being defined. For a definition of agreement in this context. see Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers). 
 
 
 
-The *parameter specializers* are derived from the *parameter specializer names* as described in Section 7.6.2 (Introduction to Methods). 
+The <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> are derived from the <GlossaryTerm styled={true} term={"parameter specializer name"}><i>parameter specializer names</i></GlossaryTerm> as described in Section 7.6.2 (Introduction to Methods). 
 
 
 
-The expansion of the <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> macro “refers to” each specialized parameter (see the description of <ClLinks  term={"ignore"}><b>ignore</b></ClLinks> within the description of <ClLinks  term={"declare"}><b>declare</b></ClLinks>). This includes parameters that have an explicit *parameter specializer name* of <ClLinks  term={"t"}><b>t</b></ClLinks>. This means that a compiler warning does not occur if the body of the <ClLinks  term={"method"}><i>method</i></ClLinks> does not refer to a specialized parameter, while a warning might occur if the body of the <ClLinks  term={"method"}><i>method</i></ClLinks> does not refer to an unspecialized parameter. For this reason, a parameter that specializes on <ClLinks  term={"t"}><b>t</b></ClLinks> is not quite synonymous with an unspecialized parameter in this context. 
+The expansion of the <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> macro “refers to” each specialized parameter (see the description of <ClLinks  term={"ignore"}><b>ignore</b></ClLinks> within the description of <ClLinks  term={"declare"}><b>declare</b></ClLinks>). This includes parameters that have an explicit <GlossaryTerm styled={true} term={"parameter specializer name"}><i>parameter specializer name</i></GlossaryTerm> of <ClLinks  term={"t"}><b>t</b></ClLinks>. This means that a compiler warning does not occur if the body of the <ClLinks  term={"method"}><i>method</i></ClLinks> does not refer to a specialized parameter, while a warning might occur if the body of the <ClLinks  term={"method"}><i>method</i></ClLinks> does not refer to an unspecialized parameter. For this reason, a parameter that specializes on <ClLinks  term={"t"}><b>t</b></ClLinks> is not quite synonymous with an unspecialized parameter in this context. 
 
 
 
-Declarations at the head of the method body that apply to the method’s *lambda variables* are treated as *bound declarations* whose <ClLinks  term={"scope"}><i>scope</i></ClLinks> is the same as the corresponding <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. 
+Declarations at the head of the method body that apply to the method’s <GlossaryTerm styled={true} term={"lambda variable"}><i>lambda variables</i></GlossaryTerm> are treated as <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm> whose <ClLinks  term={"scope"}><i>scope</i></ClLinks> is the same as the corresponding <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. 
 
 
 
-Declarations at the head of the method body that apply to the functional bindings of <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> or <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> apply to references to those functions within the method body <ClLinks  term={"form"}><i>forms</i></ClLinks>. Any outer <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of the *function names* <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> and <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks>, and declarations associated with such <ClLinks  term={"binding"}><i>bindings</i></ClLinks> are *shadowed* <sub>2</sub> within the method body <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+Declarations at the head of the method body that apply to the functional bindings of <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> or <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> apply to references to those functions within the method body <ClLinks  term={"form"}><i>forms</i></ClLinks>. Any outer <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of the <GlossaryTerm styled={true} term={"function name"}><i>function names</i></GlossaryTerm> <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> and <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks>, and declarations associated with such <ClLinks  term={"binding"}><i>bindings</i></ClLinks> are *shadowed* <sub>2</sub> within the method body <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
-The <ClLinks  term={"scope"}><i>scope</i></ClLinks> of *free declarations* at the head of the method body is the entire method body, which includes any implicit local function definitions but excludes *initialization forms* for the *lambda variables*. 
+The <ClLinks  term={"scope"}><i>scope</i></ClLinks> of <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm> at the head of the method body is the entire method body, which includes any implicit local function definitions but excludes <GlossaryTerm styled={true} term={"initialization form"}><i>initialization forms</i></GlossaryTerm> for the <GlossaryTerm styled={true} term={"lambda variable"}><i>lambda variables</i></GlossaryTerm>. 
 
 
 
@@ -198,11 +198,11 @@ The <ClLinks  term={"scope"}><i>scope</i></ClLinks> of *free declarations* at th
 
 
 
-are not installed for invocation during compilation. An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> may choose to store information about the *generic function* for the purposes of compile-time error-checking (such as checking the number of arguments on calls, or noting that a definition for the function name has been seen). 
+are not installed for invocation during compilation. An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> may choose to store information about the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> for the purposes of compile-time error-checking (such as checking the number of arguments on calls, or noting that a definition for the function name has been seen). 
 
 
 
-*Documentation* is attached as a *documentation string* to the *method object*. 
+*Documentation* is attached as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to the *method object*. 
 
 
 
@@ -210,7 +210,7 @@ are not installed for invocation during compilation. An <ClLinks  term={"impleme
 
 
 
-The definition of the referenced *generic function*. 
+The definition of the referenced <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 
 
 
 
@@ -218,11 +218,11 @@ The definition of the referenced *generic function*.
 
 
 
-If *function-name* names an *ordinary function*, a <ClLinks  term={"macro"}><i>macro</i></ClLinks>, or a *special operator* , an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If *function-name* names an <GlossaryTerm styled={true} term={"ordinary function"}><i>ordinary function</i></GlossaryTerm>, a <ClLinks  term={"macro"}><i>macro</i></ClLinks>, or a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> , an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
 
 
 
-If a *generic function* is currently named by *function-name*, the *lambda list* of the <ClLinks  term={"method"}><i>method</i></ClLinks> must be congruent with the *lambda list* of the *generic function*, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> is currently named by *function-name*, the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of the <ClLinks  term={"method"}><i>method</i></ClLinks> must be congruent with the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
 
 
 

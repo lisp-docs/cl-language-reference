@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a *pathname designator* , or a *logical pathname namestring*. 
+<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> , or a *logical pathname namestring*. 
 
 
 
-*physical-pathname*—a *physical pathname*. 
+*physical-pathname*—a <GlossaryTerm styled={true} term={"physical pathname"}><i>physical pathname</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Translates <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> to a *physical pathname*, which it returns. 
+Translates <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> to a <GlossaryTerm styled={true} term={"physical pathname"}><i>physical pathname</i></GlossaryTerm>, which it returns. 
 
 
 
@@ -34,11 +34,11 @@ If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a <ClLinks  term={"s
 
 
 
-If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a *logical pathname* namestring, the host portion of the *logical pathname* namestring and its following <ClLinks  term={"colon"}><i>colon</i></ClLinks> are required. 
+If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> namestring, the host portion of the <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> namestring and its following <ClLinks  term={"colon"}><i>colon</i></ClLinks> are required. 
 
 
 
-<ClLinks  term={"pathname"}><i>Pathname</i></ClLinks> is first coerced to a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. If the coerced <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a physical pathname, it is returned. If the coerced <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a *logical pathname*, the first matching translation (according to <ClLinks  term={"pathname-match-p"}><b>pathname-match-p</b></ClLinks>) of the *logical pathname* host is applied, as if by calling <ClLinks  term={"translate-pathname"}><b>translate-pathname</b></ClLinks>. If the result is a *logical pathname*, this process is repeated. When the result is finally a physical pathname, it is returned. If no translation matches, an error is signaled. 
+<ClLinks  term={"pathname"}><i>Pathname</i></ClLinks> is first coerced to a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. If the coerced <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a physical pathname, it is returned. If the coerced <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, the first matching translation (according to <ClLinks  term={"pathname-match-p"}><b>pathname-match-p</b></ClLinks>) of the <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> host is applied, as if by calling <ClLinks  term={"translate-pathname"}><b>translate-pathname</b></ClLinks>. If the result is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, this process is repeated. When the result is finally a physical pathname, it is returned. If no translation matches, an error is signaled. 
 
 
 

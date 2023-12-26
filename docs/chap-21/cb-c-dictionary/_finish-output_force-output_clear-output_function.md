@@ -22,7 +22,7 @@
 
 
 
-*output-stream*—an *output stream designator* . The default is *standard output*. 
+*output-stream*—an *output stream designator* . The default is <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>. 
 
 
 
@@ -84,7 +84,7 @@ If any of these operations does not make sense for *output-stream*, then it does
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *output-stream* is not a *stream designator* . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *output-stream* is not a <GlossaryTerm styled={true} term={"stream designator"}><i>stream designator</i></GlossaryTerm> . 
 
 
 

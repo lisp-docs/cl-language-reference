@@ -58,7 +58,7 @@
 
 
 
-*result-forms*—an *implicit progn*. 
+*result-forms*—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -66,11 +66,11 @@
 
 
 
-<ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>—a *go tag*; not evaluated. 
+<ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>—a <GlossaryTerm styled={true} term={"go tag"}><i>go tag</i></GlossaryTerm>; not evaluated. 
 
 
 
-*statement*—a *compound form*; evaluated as described below. 
+*statement*—a <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm>; evaluated as described below. 
 
 
 
@@ -114,7 +114,7 @@ any *var* is bound. The *init-forms* can refer to the <ClLinks styled={true} ter
 
 
 
-At the beginning of each iteration, after processing the variables, the *end-test-form* is evaluated. If the result is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, execution proceeds with the body of the <ClLinks styled={true} term={"do"}><b>do</b></ClLinks> (or <ClLinks styled={true} term={"do"}><b>do\*</b></ClLinks>) form. If the result is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the *result-forms* are evaluated in order as an *implicit progn*, and then <ClLinks styled={true} term={"do"}><b>do</b></ClLinks> or <ClLinks styled={true} term={"do"}><b>do\*</b></ClLinks> returns. 
+At the beginning of each iteration, after processing the variables, the *end-test-form* is evaluated. If the result is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, execution proceeds with the body of the <ClLinks styled={true} term={"do"}><b>do</b></ClLinks> (or <ClLinks styled={true} term={"do"}><b>do\*</b></ClLinks>) form. If the result is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the *result-forms* are evaluated in order as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>, and then <ClLinks styled={true} term={"do"}><b>do</b></ClLinks> or <ClLinks styled={true} term={"do"}><b>do\*</b></ClLinks> returns. 
 
 
 
@@ -122,11 +122,11 @@ At the beginning of each iteration other than the first, *vars* are updated as f
 
 
 
-The remainder of the <ClLinks styled={true} term={"do"}><b>do</b></ClLinks> (or <ClLinks styled={true} term={"do"}><b>do\*</b></ClLinks>) form constitutes an *implicit tagbody*. *Tags* may appear within the body of a <ClLinks styled={true} term={"do"}><b>do</b></ClLinks> loop for use by <ClLinks styled={true} term={"go"}><b>go</b></ClLinks> statements appearing in the body (but such <ClLinks styled={true} term={"go"}><b>go</b></ClLinks> statements may not appear in the variable specifiers, the *end-test-form*, or the *result-forms*). When the end of a <ClLinks styled={true} term={"do"}><b>do</b></ClLinks> body is reached, the next iteration cycle (beginning with the evaluation of *step-forms*) occurs. 
+The remainder of the <ClLinks styled={true} term={"do"}><b>do</b></ClLinks> (or <ClLinks styled={true} term={"do"}><b>do\*</b></ClLinks>) form constitutes an <GlossaryTerm styled={true} term={"implicit tagbody"}><i>implicit tagbody</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"tag"}><i>Tags</i></GlossaryTerm> may appear within the body of a <ClLinks styled={true} term={"do"}><b>do</b></ClLinks> loop for use by <ClLinks styled={true} term={"go"}><b>go</b></ClLinks> statements appearing in the body (but such <ClLinks styled={true} term={"go"}><b>go</b></ClLinks> statements may not appear in the variable specifiers, the *end-test-form*, or the *result-forms*). When the end of a <ClLinks styled={true} term={"do"}><b>do</b></ClLinks> body is reached, the next iteration cycle (beginning with the evaluation of *step-forms*) occurs. 
 
 
 
-An *implicit block* named <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> surrounds the entire <ClLinks styled={true} term={"do"}><b>do</b></ClLinks> (or <ClLinks styled={true} term={"do"}><b>do\*</b></ClLinks>) form. A <ClLinks styled={true} term={"return"}><b>return</b></ClLinks> statement may be used at any point to exit the loop immediately. 
+An <GlossaryTerm styled={true} term={"implicit block"}><i>implicit block</i></GlossaryTerm> named <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> surrounds the entire <ClLinks styled={true} term={"do"}><b>do</b></ClLinks> (or <ClLinks styled={true} term={"do"}><b>do\*</b></ClLinks>) form. A <ClLinks styled={true} term={"return"}><b>return</b></ClLinks> statement may be used at any point to exit the loop immediately. 
 
 
 

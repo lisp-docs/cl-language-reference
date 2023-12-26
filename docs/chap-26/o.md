@@ -35,15 +35,15 @@ object-traversing operations.”
 
 
 
-**optional parameter** *n.* A <ClLinks  term={"parameter"}><i>parameter</i></ClLinks> for which a corresponding positional <ClLinks  term={"argument"}><i>argument</i></ClLinks> is optional. If the <ClLinks  term={"argument"}><i>argument</i></ClLinks> is not supplied, a default value is used. See also *supplied-p parameter* . 
+**optional parameter** *n.* A <ClLinks  term={"parameter"}><i>parameter</i></ClLinks> for which a corresponding positional <ClLinks  term={"argument"}><i>argument</i></ClLinks> is optional. If the <ClLinks  term={"argument"}><i>argument</i></ClLinks> is not supplied, a default value is used. See also <GlossaryTerm styled={true} term={"supplied-p parameter"}><i>supplied-p parameter</i></GlossaryTerm> . 
 
 
 
-**ordinary function** *n.* a <ClLinks  term={"function"}><i>function</i></ClLinks> that is not a *generic function*. 
+**ordinary function** *n.* a <ClLinks  term={"function"}><i>function</i></ClLinks> that is not a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 
 
 
 
-**ordinary lambda list** *n.* the kind of *lambda list* used by <ClLinks  term={"lambda"}><b>lambda</b></ClLinks>. See *modified lambda list* and *extended lambda list*. “<ClLinks  term={"defun"}><b>defun</b></ClLinks> uses an ordinary lambda list.” 
+**ordinary lambda list** *n.* the kind of <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> used by <ClLinks  term={"lambda"}><b>lambda</b></ClLinks>. See <GlossaryTerm styled={true} term={"modified lambda list"}><i>modified lambda list</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"extended lambda list"}><i>extended lambda list</i></GlossaryTerm>. “<ClLinks  term={"defun"}><b>defun</b></ClLinks> uses an ordinary lambda list.” 
 
 
 
@@ -63,7 +63,7 @@ object-traversing operations.”
 
 
 
-be made <ClLinks  term={"inaccessible"}><i>inaccessible</i></ClLinks> if *O*<sub>1</sub> were made <ClLinks  term={"inaccessible"}><i>inaccessible</i></ClLinks>. (Every <ClLinks  term={"object"}><i>object</i></ClLinks> is an *otherwise inaccessible part* of itself.) 
+be made <ClLinks  term={"inaccessible"}><i>inaccessible</i></ClLinks> if *O*<sub>1</sub> were made <ClLinks  term={"inaccessible"}><i>inaccessible</i></ClLinks>. (Every <ClLinks  term={"object"}><i>object</i></ClLinks> is an <GlossaryTerm styled={true} term={"otherwise inaccessible part"}><i>otherwise inaccessible part</i></GlossaryTerm> of itself.) 
 
 
 

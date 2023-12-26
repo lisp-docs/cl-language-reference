@@ -1,4 +1,4 @@
-**call-arguments-limit** *Constant Variable* 
+**call-arguments-limit** <GlossaryTerm styled={true} term={"constant variable"}><i>Constant Variable</i></GlossaryTerm> 
 
 
 

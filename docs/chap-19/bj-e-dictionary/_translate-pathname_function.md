@@ -18,15 +18,15 @@
 
 
 
-*source*—a *pathname designator* . 
+*source*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
-*from-wildcard*—a *pathname designator* . 
+*from-wildcard*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
-*to-wildcard*—a *pathname designator* . 
+*to-wildcard*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
@@ -125,7 +125,7 @@ There are no specified keyword arguments for <ClLinks  term={"translate-pathname
 
 
 
-If any of *source*, *from-wildcard*, or *to-wildcard* is not a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, a <ClLinks  term={"string"}><i>string</i></ClLinks>, or a *stream associated with a file* an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
+If any of *source*, *from-wildcard*, or *to-wildcard* is not a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, a <ClLinks  term={"string"}><i>string</i></ClLinks>, or a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm> an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
 
 
 

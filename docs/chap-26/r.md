@@ -39,7 +39,7 @@ sidebar_position: 114
 
 
 
-**ratio marker** *n.* a character which is used in the textual notation for a <ClLinks  term={"ratio"}><i>ratio</i></ClLinks> to separate the numerator from the denominator, and which is <ClLinks  term={"slash"}><i>slash</i></ClLinks> in the *standard readtable*. See Section 2.1 (Character Syntax). 
+**ratio marker** *n.* a character which is used in the textual notation for a <ClLinks  term={"ratio"}><i>ratio</i></ClLinks> to separate the numerator from the denominator, and which is <ClLinks  term={"slash"}><i>slash</i></ClLinks> in the <GlossaryTerm styled={true} term={"standard readtable"}><i>standard readtable</i></GlossaryTerm>. See Section 2.1 (Character Syntax). 
 
 
 
@@ -63,19 +63,19 @@ sidebar_position: 114
 
 
 
-<ClLinks  term={"character"}><i>characters</i></ClLinks> that defines special-purpose syntax for use by the *Lisp reader* , and that is implemented by a *reader macro function*. See Section 2.2 (Reader Algorithm). 2. the <ClLinks  term={"character"}><i>character</i></ClLinks> or <ClLinks  term={"character"}><i>characters</i></ClLinks> that introduce a *reader macro*<sub>1</sub>; that is, a *macro character* or the conceptual pairing of a *dispatching macro character* and the <ClLinks  term={"character"}><i>character</i></ClLinks> that follows 
+<ClLinks  term={"character"}><i>characters</i></ClLinks> that defines special-purpose syntax for use by the *Lisp reader* , and that is implemented by a <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro function</i></GlossaryTerm>. See Section 2.2 (Reader Algorithm). 2. the <ClLinks  term={"character"}><i>character</i></ClLinks> or <ClLinks  term={"character"}><i>characters</i></ClLinks> that introduce a <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm><sub>1</sub>; that is, a <GlossaryTerm styled={true} term={"macro character"}><i>macro character</i></GlossaryTerm> or the conceptual pairing of a <GlossaryTerm styled={true} term={"dispatching macro character"}><i>dispatching macro character</i></GlossaryTerm> and the <ClLinks  term={"character"}><i>character</i></ClLinks> that follows 
 
 
 
-it. (A *reader macro* is not a kind of <ClLinks  term={"macro"}><i>macro</i></ClLinks>.) 
+it. (A <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm> is not a kind of <ClLinks  term={"macro"}><i>macro</i></ClLinks>.) 
 
 
 
-**reader macro function** *n.* a *function designator* that denotes a <ClLinks  term={"function"}><i>function</i></ClLinks> 
+**reader macro function** *n.* a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> that denotes a <ClLinks  term={"function"}><i>function</i></ClLinks> 
 
 
 
-that implements a *reader macro*<sub>2</sub>. See the <ClLinks  term={"function"}><i>functions</i></ClLinks> <ClLinks  term={"set-macro-character"}><b>set-macro-character</b></ClLinks> and 
+that implements a <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm><sub>2</sub>. See the <ClLinks  term={"function"}><i>functions</i></ClLinks> <ClLinks  term={"set-macro-character"}><b>set-macro-character</b></ClLinks> and 
 
 
 
@@ -87,7 +87,7 @@ that implements a *reader macro*<sub>2</sub>. See the <ClLinks  term={"function"
 
 
 
-**readtable case** *n.* an attribute of a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> whose value is a *case sensitivity mode*, and that selects the manner in which <ClLinks  term={"character"}><i>characters</i></ClLinks> in a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks  term={"name"}><i>name</i></ClLinks> are to be treated by the *Lisp reader* and the *Lisp printer* . See Section 23.1.2 (Effect of Readtable Case on the Lisp Reader) and Section 22.1.3.3.2 (Effect of Readtable Case on the Lisp 
+**readtable case** *n.* an attribute of a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> whose value is a <GlossaryTerm styled={true} term={"case sensitivity mode"}><i>case sensitivity mode</i></GlossaryTerm>, and that selects the manner in which <ClLinks  term={"character"}><i>characters</i></ClLinks> in a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks  term={"name"}><i>name</i></ClLinks> are to be treated by the *Lisp reader* and the *Lisp printer* . See Section 23.1.2 (Effect of Readtable Case on the Lisp Reader) and Section 22.1.3.3.2 (Effect of Readtable Case on the Lisp 
 
 
 
@@ -95,7 +95,7 @@ Printer).
 
 
 
-**readtable designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> and that is one of: <ClLinks  term={"nil"}><b>nil</b></ClLinks> (denoting the *standard readtable*), or a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> (denoting itself). 
+**readtable designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> and that is one of: <ClLinks  term={"nil"}><b>nil</b></ClLinks> (denoting the <GlossaryTerm styled={true} term={"standard readtable"}><i>standard readtable</i></GlossaryTerm>), or a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> (denoting itself). 
 
 
 
@@ -103,7 +103,7 @@ Printer).
 
 
 
-**reference** *n.*, *v.t.* 1. *n.* an act or occurrence of referring to an <ClLinks  term={"object"}><i>object</i></ClLinks>, a <ClLinks  term={"binding"}><i>binding</i></ClLinks>, an *exit point*, a <ClLinks  term={"tag"}><i>tag</i></ClLinks>, or an <ClLinks  term={"environment"}><i>environment</i></ClLinks>. 2. *v.t.* to refer to an <ClLinks  term={"object"}><i>object</i></ClLinks>, a <ClLinks  term={"binding"}><i>binding</i></ClLinks>, an *exit point*, a <ClLinks  term={"tag"}><i>tag</i></ClLinks>, or an <ClLinks  term={"environment"}><i>environment</i></ClLinks>, usually by <ClLinks  term={"name"}><i>name</i></ClLinks>. 
+**reference** *n.*, *v.t.* 1. *n.* an act or occurrence of referring to an <ClLinks  term={"object"}><i>object</i></ClLinks>, a <ClLinks  term={"binding"}><i>binding</i></ClLinks>, an <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm>, a <ClLinks  term={"tag"}><i>tag</i></ClLinks>, or an <ClLinks  term={"environment"}><i>environment</i></ClLinks>. 2. *v.t.* to refer to an <ClLinks  term={"object"}><i>object</i></ClLinks>, a <ClLinks  term={"binding"}><i>binding</i></ClLinks>, an <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm>, a <ClLinks  term={"tag"}><i>tag</i></ClLinks>, or an <ClLinks  term={"environment"}><i>environment</i></ClLinks>, usually by <ClLinks  term={"name"}><i>name</i></ClLinks>. 
 
 
 
@@ -119,7 +119,7 @@ Printer).
 
 
 
-**registered package** *n.* a *package object* that is installed in the *package registry*. (Every *registered package* has a <ClLinks  term={"name"}><i>name</i></ClLinks> that is a <ClLinks  term={"string"}><i>string</i></ClLinks>, as well as zero or more <ClLinks  term={"string"}><i>string</i></ClLinks> nicknames. All <ClLinks  term={"package"}><i>packages</i></ClLinks> that are initially specified by Common Lisp or created by <ClLinks  term={"make-package"}><b>make-package</b></ClLinks> or <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> are *registered packages*. *Registered packages* can be turned into *unregistered packages* by <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks>.) 
+**registered package** *n.* a *package object* that is installed in the <GlossaryTerm styled={true} term={"package registry"}><i>package registry</i></GlossaryTerm>. (Every <GlossaryTerm styled={true} term={"registered package"}><i>registered package</i></GlossaryTerm> has a <ClLinks  term={"name"}><i>name</i></ClLinks> that is a <ClLinks  term={"string"}><i>string</i></ClLinks>, as well as zero or more <ClLinks  term={"string"}><i>string</i></ClLinks> nicknames. All <ClLinks  term={"package"}><i>packages</i></ClLinks> that are initially specified by Common Lisp or created by <ClLinks  term={"make-package"}><b>make-package</b></ClLinks> or <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> are <GlossaryTerm styled={true} term={"registered package"}><i>registered packages</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"registered package"}><i>Registered packages</i></GlossaryTerm> can be turned into <GlossaryTerm styled={true} term={"unregistered package"}><i>unregistered packages</i></GlossaryTerm> by <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks>.) 
 
 
 
@@ -127,7 +127,7 @@ Printer).
 
 
 
-units appropriate to that time. For example, a *relative internal time* is the difference between two *absolute internal times*, and is measured in *internal time units*. 2. (of a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>) representing a position in a directory hierarchy by motion from a position other than the root, which might therefore vary. “The notation #P"../foo.text" 
+units appropriate to that time. For example, a *relative internal time* is the difference between two *absolute internal times*, and is measured in <GlossaryTerm styled={true} term={"internal time unit"}><i>internal time units</i></GlossaryTerm>. 2. (of a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>) representing a position in a directory hierarchy by motion from a position other than the root, which might therefore vary. “The notation #P"../foo.text" 
 
 
 
@@ -147,7 +147,7 @@ Repertoires).
 
 
 
-**report message** *n.* the text that is output by a *condition reporter* . 
+**report message** *n.* the text that is output by a <GlossaryTerm styled={true} term={"condition reporter"}><i>condition reporter</i></GlossaryTerm> . 
 
 
 
@@ -155,7 +155,7 @@ Repertoires).
 
 
 
-**rest list** *n.* (of a <ClLinks  term={"function"}><i>function</i></ClLinks> having a *rest parameter* ) The <ClLinks  term={"list"}><i>list</i></ClLinks> to which the *rest parameter* is <ClLinks  term={"bound"}><i>bound</i></ClLinks> on some particular <ClLinks  term={"call"}><i>call</i></ClLinks> to the <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+**rest list** *n.* (of a <ClLinks  term={"function"}><i>function</i></ClLinks> having a <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameter</i></GlossaryTerm> ) The <ClLinks  term={"list"}><i>list</i></ClLinks> to which the <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameter</i></GlossaryTerm> is <ClLinks  term={"bound"}><i>bound</i></ClLinks> on some particular <ClLinks  term={"call"}><i>call</i></ClLinks> to the <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -175,7 +175,7 @@ Repertoires).
 
 
 
-The primary purpose of a *restart function* is to provide an alternate interface. By convention, a *restart function* usually has the same name as the <ClLinks  term={"restart"}><i>restart</i></ClLinks> which it invokes. Figure 26–4 shows a list of the *standardized restart functions*. 
+The primary purpose of a <GlossaryTerm styled={true} term={"restart function"}><i>restart function</i></GlossaryTerm> is to provide an alternate interface. By convention, a <GlossaryTerm styled={true} term={"restart function"}><i>restart function</i></GlossaryTerm> usually has the same name as the <ClLinks  term={"restart"}><i>restart</i></ClLinks> which it invokes. Figure 26–4 shows a list of the *standardized restart functions*. 
 
 
 
@@ -211,7 +211,7 @@ The primary purpose of a *restart function* is to provide an alternate interface
 
 
 
-**right-parenthesis** *n.* the *standard character* “)”, that is variously called “right 
+**right-parenthesis** *n.* the <GlossaryTerm styled={true} term={"standard character"}><i>standard character</i></GlossaryTerm> “)”, that is variously called “right 
 
 
 
@@ -219,15 +219,15 @@ parenthesis” or “close parenthesis” See Figure 2–5.
 
 
 
-**run time** *n.* 1. *load time* 2. *execution time* 
+**run time** *n.* 1. <GlossaryTerm styled={true} term={"load time"}><i>load time</i></GlossaryTerm> 2. *execution time* 
 
 
 
-**run-time compiler** *n.* refers to the <ClLinks  term={"compile"}><b>compile</b></ClLinks> function or to *implicit compilation*, for which the compilation and run-time <ClLinks  term={"environment"}><i>environments</i></ClLinks> are maintained in the same *Lisp image*. 
+**run-time compiler** *n.* refers to the <ClLinks  term={"compile"}><b>compile</b></ClLinks> function or to <GlossaryTerm styled={true} term={"implicit compilation"}><i>implicit compilation</i></GlossaryTerm>, for which the compilation and run-time <ClLinks  term={"environment"}><i>environments</i></ClLinks> are maintained in the same *Lisp image*. 
 
 
 
-**run-time definition** *n.* a definition in the *run-time environment*. 
+**run-time definition** *n.* a definition in the <GlossaryTerm styled={true} term={"run-time environment"}><i>run-time environment</i></GlossaryTerm>. 
 
 
 

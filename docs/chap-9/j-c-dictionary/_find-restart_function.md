@@ -34,7 +34,7 @@ restart
 
 
 
-<ClLinks styled={true} term={"find-restart"}><b>find-restart</b></ClLinks> searches for a particular <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> in the current *dynamic environment*. 
+<ClLinks styled={true} term={"find-restart"}><b>find-restart</b></ClLinks> searches for a particular <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> in the current <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm>. 
 
 
 
@@ -50,7 +50,7 @@ When <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is <Cl
 
 
 
-If <ClLinks styled={true} term={"identifier"}><i>identifier</i></ClLinks> is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, then the innermost (most recently established) *applicable restart* with that <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is returned. <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is returned if no such restart is found. 
+If <ClLinks styled={true} term={"identifier"}><i>identifier</i></ClLinks> is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, then the innermost (most recently established) <GlossaryTerm styled={true} term={"applicable restart"}><i>applicable restart</i></GlossaryTerm> with that <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is returned. <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is returned if no such restart is found. 
 
 
 

@@ -22,7 +22,7 @@
 
 
 
-*filespec*—a *pathname designator* . 
+*filespec*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*element-type*—a *type specifier* for *recognizable subtype* of <ClLinks  term={"character"}><b>character</b></ClLinks>; or a *type specifier* for a *finite recognizable subtype* of *integer* ; or one of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> <ClLinks  term={"signed-byte"}><b>signed-byte</b></ClLinks>, <ClLinks  term={"unsigned-byte"}><b>unsigned-byte</b></ClLinks>, or :default. The default is <ClLinks  term={"character"}><b>character</b></ClLinks>. 
+*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <ClLinks  term={"character"}><b>character</b></ClLinks>; or a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for a *finite recognizable subtype* of *integer* ; or one of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> <ClLinks  term={"signed-byte"}><b>signed-byte</b></ClLinks>, <ClLinks  term={"unsigned-byte"}><b>unsigned-byte</b></ClLinks>, or :default. The default is <ClLinks  term={"character"}><b>character</b></ClLinks>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-*external-format*—an *external file format designator* . The default is :default. 
+*external-format*—an <GlossaryTerm styled={true} term={"external file format designator"}><i>external file format designator</i></GlossaryTerm> . The default is :default. 
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a *file stream* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -54,11 +54,11 @@
 
 
 
-<ClLinks  term={"open"}><b>open</b></ClLinks> creates, opens, and returns a *file stream* that is connected to the file specified by *filespec*. *Filespec* is the name of the file to be opened. If the *filespec designator* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, that <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not closed first or otherwise affected. 
+<ClLinks  term={"open"}><b>open</b></ClLinks> creates, opens, and returns a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> that is connected to the file specified by *filespec*. *Filespec* is the name of the file to be opened. If the *filespec designator* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, that <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not closed first or otherwise affected. 
 
 
 
-The keyword arguments to <ClLinks  term={"open"}><b>open</b></ClLinks> specify the characteristics of the *file stream* that is returned, and how to handle errors. 
+The keyword arguments to <ClLinks  term={"open"}><b>open</b></ClLinks> specify the characteristics of the <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> that is returned, and how to handle errors. 
 
 
 
@@ -122,7 +122,7 @@ Causes the creation of a *bidirectional file stream*.
 
 
 
-Causes the creation of a “no-directional” *file stream*; in effect, the *file stream* is 
+Causes the creation of a “no-directional” <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm>; in effect, the <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> is 
 
 
 
@@ -134,7 +134,7 @@ created and then closed prior to being returned by <ClLinks  term={"open"}><b>op
 
 
 
-The *element-type* specifies the unit of transaction for the *file stream*. If it is :default, the unit is determined by *file system*, possibly based on the <ClLinks  term={"file"}><i>file</i></ClLinks>. 
+The *element-type* specifies the unit of transaction for the <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm>. If it is :default, the unit is determined by <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>, possibly based on the <ClLinks  term={"file"}><i>file</i></ClLinks>. 
 
 
 
@@ -302,7 +302,7 @@ No file or <ClLinks  term={"stream"}><i>stream</i></ClLinks> is created; instead
 
 
 
-This option selects an *external file format* for the <ClLinks  term={"file"}><i>file</i></ClLinks>: The only <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> value for this option is :default, although <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> are permitted to define additional *external file formats* and <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> values returned by <ClLinks  term={"stream-external-format"}><b>stream-external-format</b></ClLinks> can also be used by *conforming programs*. 
+This option selects an <GlossaryTerm styled={true} term={"external file format"}><i>external file format</i></GlossaryTerm> for the <ClLinks  term={"file"}><i>file</i></ClLinks>: The only <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> value for this option is :default, although <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> are permitted to define additional <GlossaryTerm styled={true} term={"external file format"}><i>external file formats</i></GlossaryTerm> and <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> values returned by <ClLinks  term={"stream-external-format"}><b>stream-external-format</b></ClLinks> can also be used by <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm>. 
 
 
 
@@ -322,11 +322,11 @@ This option selects an *external file format* for the <ClLinks  term={"file"}><i
 
 
 
-The *external-format* is meaningful for any kind of *file stream* whose *element type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"character"}><i>character</i></ClLinks> . This option is ignored for <ClLinks  term={"stream"}><i>streams</i></ClLinks> for which it is not meaningful; however, <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> may define other *element types* for which it is meaningful. The consequences are unspecified if a <ClLinks  term={"character"}><i>character</i></ClLinks> is written that cannot be represented by the given *external file format*. 
+The *external-format* is meaningful for any kind of <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> whose <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"character"}><i>character</i></ClLinks> . This option is ignored for <ClLinks  term={"stream"}><i>streams</i></ClLinks> for which it is not meaningful; however, <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> may define other <GlossaryTerm styled={true} term={"element type"}><i>element types</i></GlossaryTerm> for which it is meaningful. The consequences are unspecified if a <ClLinks  term={"character"}><i>character</i></ClLinks> is written that cannot be represented by the given <GlossaryTerm styled={true} term={"external file format"}><i>external file format</i></GlossaryTerm>. 
 
 
 
-When a file is opened, a *file stream* is constructed to serve as the file system’s ambassador to the Lisp environment; operations on the *file stream* are reflected by operations on the file in the file system. 
+When a file is opened, a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> is constructed to serve as the file system’s ambassador to the Lisp environment; operations on the <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> are reflected by operations on the file in the file system. 
 
 
 
@@ -352,7 +352,7 @@ For information about opening relative pathnames, see Section 19.2.3 (Merging Pa
 
 
 
-The nature and state of the host computer’s *file system*. 
+The nature and state of the host computer’s <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. 
 
 
 
@@ -380,7 +380,7 @@ An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error
 
 
 
-The various *file systems* in existence today have widely differing capabilities, and some aspects of the *file system* are beyond the scope of this specification to define. A given <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might not be able to support all of these options in exactly the manner stated. An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is required to recognize all of these option keywords and to try to do something “reasonable” in the context of the host *file system*. Where necessary to accomodate the *file system*, an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> 
+The various <GlossaryTerm styled={true} term={"file system"}><i>file systems</i></GlossaryTerm> in existence today have widely differing capabilities, and some aspects of the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> are beyond the scope of this specification to define. A given <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might not be able to support all of these options in exactly the manner stated. An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is required to recognize all of these option keywords and to try to do something “reasonable” in the context of the host <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. Where necessary to accomodate the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>, an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> 
 
 
 
@@ -396,11 +396,11 @@ The various *file systems* in existence today have widely differing capabilities
 
 
 
-deviate slightly from the semantics specified here without being disqualified for consideration as a *conforming implementation*. If it is utterly impossible for an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to handle some option in a manner similar to what is specified here, it may simply signal an error. 
+deviate slightly from the semantics specified here without being disqualified for consideration as a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm>. If it is utterly impossible for an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to handle some option in a manner similar to what is specified here, it may simply signal an error. 
 
 
 
-With regard to the :element-type option, if a <ClLinks  term={"type"}><i>type</i></ClLinks> is requested that is not supported by the *file system*, a substitution of types such as that which goes on in *upgrading* is permissible. As a minimum requirement, it should be the case that opening an *output stream* to a <ClLinks  term={"file"}><i>file</i></ClLinks> in a given *element type* and later opening an *input stream* to the same <ClLinks  term={"file"}><i>file</i></ClLinks> in the same *element type* should work compatibly. 
+With regard to the :element-type option, if a <ClLinks  term={"type"}><i>type</i></ClLinks> is requested that is not supported by the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>, a substitution of types such as that which goes on in *upgrading* is permissible. As a minimum requirement, it should be the case that opening an *output stream* to a <ClLinks  term={"file"}><i>file</i></ClLinks> in a given <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> and later opening an *input stream* to the same <ClLinks  term={"file"}><i>file</i></ClLinks> in the same <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> should work compatibly. 
 
 
 
@@ -420,11 +420,11 @@ With regard to the :element-type option, if a <ClLinks  term={"type"}><i>type</i
 
 
 
-When *element-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"character"}><b>character</b></ClLinks>, <ClLinks  term={"read-char"}><b>read-char</b></ClLinks> and/or <ClLinks  term={"write-char"}><b>write-char</b></ClLinks> can be used on the resulting *file stream*. 
+When *element-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"character"}><b>character</b></ClLinks>, <ClLinks  term={"read-char"}><b>read-char</b></ClLinks> and/or <ClLinks  term={"write-char"}><b>write-char</b></ClLinks> can be used on the resulting <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm>. 
 
 
 
-When *element-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of *integer* , <ClLinks  term={"read-byte"}><b>read-byte</b></ClLinks> and/or <ClLinks  term={"write-byte"}><b>write-byte</b></ClLinks> can be used on the resulting *file stream*. 
+When *element-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of *integer* , <ClLinks  term={"read-byte"}><b>read-byte</b></ClLinks> and/or <ClLinks  term={"write-byte"}><b>write-byte</b></ClLinks> can be used on the resulting <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm>. 
 
 
 

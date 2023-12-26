@@ -18,7 +18,7 @@
 
 
 
-*abort*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*abort*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"close"}><b>close</b></ClLinks> closes <ClLinks  term={"stream"}><i>stream</i></ClLinks>. Closing a <ClLinks  term={"stream"}><i>stream</i></ClLinks> means that it may no longer be used in input or output operations. The act of *closing* a *file stream* ends the association between the <ClLinks  term={"stream"}><i>stream</i></ClLinks> and its associated <ClLinks  term={"file"}><i>file</i></ClLinks>; the transaction with the *file system* is terminated, and input/output may no longer be performed on the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<ClLinks  term={"close"}><b>close</b></ClLinks> closes <ClLinks  term={"stream"}><i>stream</i></ClLinks>. Closing a <ClLinks  term={"stream"}><i>stream</i></ClLinks> means that it may no longer be used in input or output operations. The act of *closing* a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> ends the association between the <ClLinks  term={"stream"}><i>stream</i></ClLinks> and its associated <ClLinks  term={"file"}><i>file</i></ClLinks>; the transaction with the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> is terminated, and input/output may no longer be performed on the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -46,7 +46,7 @@ After <ClLinks  term={"stream"}><i>stream</i></ClLinks> is closed, it is still p
 
 
 
-The effect of <ClLinks  term={"close"}><b>close</b></ClLinks> on a *constructed stream* is to close the argument <ClLinks  term={"stream"}><i>stream</i></ClLinks> only. There is no effect on the <ClLinks  term={"constituent"}><i>constituents</i></ClLinks> of *composite streams*. 
+The effect of <ClLinks  term={"close"}><b>close</b></ClLinks> on a <GlossaryTerm styled={true} term={"constructed stream"}><i>constructed stream</i></GlossaryTerm> is to close the argument <ClLinks  term={"stream"}><i>stream</i></ClLinks> only. There is no effect on the <ClLinks  term={"constituent"}><i>constituents</i></ClLinks> of <GlossaryTerm styled={true} term={"composite stream"}><i>composite streams</i></GlossaryTerm>. 
 
 
 

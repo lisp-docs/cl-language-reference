@@ -14,15 +14,15 @@
 
 
 
-*result-type* – a <ClLinks  term={"sequence"}><b>sequence</b></ClLinks> *type specifier* , or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*result-type* – a <ClLinks  term={"sequence"}><b>sequence</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> , or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—a *function designator* . <ClLinks  term={"function"}><i>function</i></ClLinks> must take as many arguments as there are *sequences*. *sequence*—a *proper sequence*. 
+<ClLinks  term={"function"}><i>function</i></ClLinks>—a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> . <ClLinks  term={"function"}><i>function</i></ClLinks> must take as many arguments as there are *sequences*. *sequence*—a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
-*result*—if *result-type* is a *type specifier* other than <ClLinks  term={"nil"}><b>nil</b></ClLinks>, then a *sequence* of the <ClLinks  term={"type"}><i>type</i></ClLinks> it denotes; otherwise (if the *result-type* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>), <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*result*—if *result-type* is a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> other than <ClLinks  term={"nil"}><b>nil</b></ClLinks>, then a *sequence* of the <ClLinks  term={"type"}><i>type</i></ClLinks> it denotes; otherwise (if the *result-type* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>), <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -81,11 +81,11 @@ seq → ("LOWER" "UPPER" "" "123")
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> must be signaled if the *result-type* is not a *recognizable subtype* of <ClLinks  term={"list"}><b>list</b></ClLinks>, not a *recognizable subtype* of <ClLinks  term={"vector"}><b>vector</b></ClLinks>, and not <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> must be signaled if the *result-type* is not a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <ClLinks  term={"list"}><b>list</b></ClLinks>, not a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <ClLinks  term={"vector"}><b>vector</b></ClLinks>, and not <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if any *sequence* is not a *proper sequence*. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if any *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 

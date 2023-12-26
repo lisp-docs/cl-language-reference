@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"simple-warning"}><b>simple-warning</b></ClLinks> represents <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> that are signaled by <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> whenever a *format control* is supplied as the function’s first argument. 
+The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"simple-warning"}><b>simple-warning</b></ClLinks> represents <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> that are signaled by <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> whenever a <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm> is supplied as the function’s first argument. 
 
 
 

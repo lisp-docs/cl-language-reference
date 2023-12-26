@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"string"}><i>string</i></ClLinks>—a *string designator* . 
+<ClLinks  term={"string"}><i>string</i></ClLinks>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"find-all-symbols"}><b>find-all-symbols</b></ClLinks> searches every *registered package* for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that have a <ClLinks  term={"name"}><i>name</i></ClLinks> that is the <ClLinks  term={"same"}><i>same</i></ClLinks> (under <ClLinks  term={"string"}><b>string=</b></ClLinks>) as <ClLinks  term={"string"}><i>string</i></ClLinks>. A <ClLinks  term={"list"}><i>list</i></ClLinks> of all such <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is returned. Whether or how the <ClLinks  term={"list"}><i>list</i></ClLinks> is ordered is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<ClLinks  term={"find-all-symbols"}><b>find-all-symbols</b></ClLinks> searches every <GlossaryTerm styled={true} term={"registered package"}><i>registered package</i></GlossaryTerm> for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that have a <ClLinks  term={"name"}><i>name</i></ClLinks> that is the <ClLinks  term={"same"}><i>same</i></ClLinks> (under <ClLinks  term={"string"}><b>string=</b></ClLinks>) as <ClLinks  term={"string"}><i>string</i></ClLinks>. A <ClLinks  term={"list"}><i>list</i></ClLinks> of all such <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is returned. Whether or how the <ClLinks  term={"list"}><i>list</i></ClLinks> is ordered is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 

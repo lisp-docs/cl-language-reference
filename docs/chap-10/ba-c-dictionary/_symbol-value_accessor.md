@@ -30,7 +30,7 @@
 
 
 
-*Accesses* the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s *value cell*. 
+*Accesses* the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <GlossaryTerm styled={true} term={"value cell"}><i>value cell</i></GlossaryTerm>. 
 
 
 
@@ -99,7 +99,7 @@ Should signal <ClLinks  term={"unbound-variable"}><b>unbound-variable</b></ClLin
 
 
 
-<ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> can be used to get the value of a *constant variable*. <ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> cannot <ClLinks  term={"access"}><i>access</i></ClLinks> the value of a *lexical variable*. 
+<ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> can be used to get the value of a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. <ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> cannot <ClLinks  term={"access"}><i>access</i></ClLinks> the value of a <GlossaryTerm styled={true} term={"lexical variable"}><i>lexical variable</i></GlossaryTerm>. 
 
 
 

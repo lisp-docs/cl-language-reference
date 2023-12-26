@@ -2,11 +2,11 @@
 
 
 
-An *interactive stream* is one on which it makes sense to perform interactive querying. 
+An <GlossaryTerm styled={true} term={"interactive stream"}><i>interactive stream</i></GlossaryTerm> is one on which it makes sense to perform interactive querying. 
 
 
 
-The precise meaning of an *interactive stream* is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>, and may depend on the underlying operating system. Some examples of the things that an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might choose to use as identifying characteristics of an *interactive stream* include: 
+The precise meaning of an <GlossaryTerm styled={true} term={"interactive stream"}><i>interactive stream</i></GlossaryTerm> is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>, and may depend on the underlying operating system. Some examples of the things that an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might choose to use as identifying characteristics of an <GlossaryTerm styled={true} term={"interactive stream"}><i>interactive stream</i></GlossaryTerm> include: 
 
 
 
@@ -34,11 +34,11 @@ The precise meaning of an *interactive stream* is <ClLinks  term={"implementatio
 
 
 
-The general intent of having some <ClLinks  term={"stream"}><i>streams</i></ClLinks> be classified as *interactive streams* is to allow them to be distinguished from streams containing batch (or background or command-file) input. Output to batch streams is typically discarded or saved for later viewing, so interactive queries to such streams might not have the expected effect. 
+The general intent of having some <ClLinks  term={"stream"}><i>streams</i></ClLinks> be classified as <GlossaryTerm styled={true} term={"interactive stream"}><i>interactive streams</i></GlossaryTerm> is to allow them to be distinguished from streams containing batch (or background or command-file) input. Output to batch streams is typically discarded or saved for later viewing, so interactive queries to such streams might not have the expected effect. 
 
 
 
-*Terminal I/O* might or might not be an *interactive stream*. 
+*Terminal I/O* might or might not be an <GlossaryTerm styled={true} term={"interactive stream"}><i>interactive stream</i></GlossaryTerm>. 
 
 
 

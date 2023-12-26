@@ -59,7 +59,7 @@ Words in *this font* are words with entries in the glossary. Words in example se
 
 
 
-When an ambiguity arises, the longest matching substring has precedence. For example, “*complex float*” refers to a single glossary entry for “*complex float*” rather than the combined meaning of the glossary terms “<ClLinks  term={"complex"}><i>complex</i></ClLinks>” and “<ClLinks  term={"float"}><i>float</i></ClLinks>.” 
+When an ambiguity arises, the longest matching substring has precedence. For example, “<GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>” refers to a single glossary entry for “<GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>” rather than the combined meaning of the glossary terms “<ClLinks  term={"complex"}><i>complex</i></ClLinks>” and “<ClLinks  term={"float"}><i>float</i></ClLinks>.” 
 
 
 
@@ -99,7 +99,7 @@ The following are abbreviations used in the glossary:
 
 
 
-**()** [ <ClLinks  term={"nil"}><b>nil</b></ClLinks> ], *n.* an alternative notation for writing the symbol <ClLinks  term={"nil"}><b>nil</b></ClLinks>, used to emphasize the use of <ClLinks  term={"nil"}><i>nil</i></ClLinks> as an *empty list*. 
+**()** [ <ClLinks  term={"nil"}><b>nil</b></ClLinks> ], *n.* an alternative notation for writing the symbol <ClLinks  term={"nil"}><b>nil</b></ClLinks>, used to emphasize the use of <ClLinks  term={"nil"}><i>nil</i></ClLinks> as an <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. 
 
 
 

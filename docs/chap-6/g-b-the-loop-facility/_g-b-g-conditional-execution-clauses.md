@@ -2,7 +2,7 @@
 
 
 
-The if, when, and unless constructs establish conditional control in a <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>. If the test passes, the succeeding loop clause is executed. If the test does not pass, the succeeding clause is skipped, and program control moves to the clause that follows the *loop keyword* else. If the test does not pass and no else clause is supplied, control is transferred to the clause or construct following the entire 
+The if, when, and unless constructs establish conditional control in a <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>. If the test passes, the succeeding loop clause is executed. If the test does not pass, the succeeding clause is skipped, and program control moves to the clause that follows the <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> else. If the test does not pass and no else clause is supplied, control is transferred to the clause or construct following the entire 
 
 
 
@@ -18,15 +18,15 @@ In the if and when clauses, which are synonymous, the test passes if the value o
 
 
 
-Clauses that follow the test expression can be grouped by using the *loop keyword* and to produce a conditional block consisting of a compound clause. 
+Clauses that follow the test expression can be grouped by using the <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> and to produce a conditional block consisting of a compound clause. 
 
 
 
-The *loop keyword* it can be used to refer to the result of the test expression in a clause. Use the *loop keyword* it in place of the form in a return clause or an *accumulation* clause that is inside a conditional execution clause. If multiple clauses are connected with and, the it construct must be in the first clause in the block. 
+The <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> it can be used to refer to the result of the test expression in a clause. Use the <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> it in place of the form in a return clause or an *accumulation* clause that is inside a conditional execution clause. If multiple clauses are connected with and, the it construct must be in the first clause in the block. 
 
 
 
-The optional *loop keyword* end marks the end of the clause. If this keyword is not supplied, the next *loop keyword* marks the end. The construct end can be used to distinguish the scoping of compound clauses. 
+The optional <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> end marks the end of the clause. If this keyword is not supplied, the next <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> marks the end. The construct end can be used to distinguish the scoping of compound clauses. 
 
 
 

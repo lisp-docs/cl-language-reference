@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"string"}><i>string</i></ClLinks>—a *string designator* . 
+<ClLinks  term={"string"}><i>string</i></ClLinks>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
 
 
 
@@ -46,7 +46,7 @@ If no <ClLinks  term={"character"}><i>characters</i></ClLinks> need to be trimme
 
 
 
-All of these <ClLinks  term={"function"}><i>functions</i></ClLinks> observe the *fill pointer* . 
+All of these <ClLinks  term={"function"}><i>functions</i></ClLinks> observe the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
 
 
 
@@ -118,27 +118,27 @@ The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>.
 
 
 
-*string1*—a *string designator* . 
+*string1*—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
 
 
 
-*string2*—a *string designator* . 
+*string2*—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
 
 
 
-*start1*, *end1*—*bounding index designators* of *string1*. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start1*, *end1*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *string1*. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
-*start2*, *end2*—*bounding index designators* of *string2*. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start2*, *end2*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *string2*. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
-*mismatch-index*—a *bounding index* of *string1*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*mismatch-index*—a <GlossaryTerm styled={true} term={"bounding index"}><i>bounding index</i></GlossaryTerm> of *string1*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -178,7 +178,7 @@ A string *a* is less than a string *b* if in the first position in which they di
 
 
 
-The equality functions return a *generalized boolean* that is <ClLinks  term={"true"}><i>true</i></ClLinks> if the strings are equal, or <ClLinks  term={"false"}><i>false</i></ClLinks> otherwise. 
+The equality functions return a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> that is <ClLinks  term={"true"}><i>true</i></ClLinks> if the strings are equal, or <ClLinks  term={"false"}><i>false</i></ClLinks> otherwise. 
 
 
 

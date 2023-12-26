@@ -214,7 +214,7 @@ Implementations can extend <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLi
 
 
 
-information about the *generic function* for the purposes of compile-time error-checking (such as checking the number of arguments on calls, or noting that a definition for the function name has been seen). 
+information about the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> for the purposes of compile-time error-checking (such as checking the number of arguments on calls, or noting that a definition for the function name has been seen). 
 
 
 
@@ -226,7 +226,7 @@ information about the *generic function* for the purposes of compile-time error-
 
 
 
-If *function-name* names an *ordinary function*, a <ClLinks  term={"macro"}><i>macro</i></ClLinks>, or a *special operator* , an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> is signaled. 
+If *function-name* names an <GlossaryTerm styled={true} term={"ordinary function"}><i>ordinary function</i></GlossaryTerm>, a <ClLinks  term={"macro"}><i>macro</i></ClLinks>, or a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> , an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> is signaled. 
 
 
 
@@ -234,11 +234,11 @@ Each required argument, as specified in the *gf-lambda-list* argument, must be i
 
 
 
-The *lambda list* of each <ClLinks  term={"method"}><i>method</i></ClLinks> specified by a *method-description* must be congruent with the *lambda list* specified by the *gf-lambda-list* option, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+The <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of each <ClLinks  term={"method"}><i>method</i></ClLinks> specified by a *method-description* must be congruent with the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> specified by the *gf-lambda-list* option, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
 
 
 
-If a <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> form is evaluated and some <ClLinks  term={"method"}><i>methods</i></ClLinks> for that *generic function* have *lambda lists* that are not congruent with that given in the <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> form, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If a <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> form is evaluated and some <ClLinks  term={"method"}><i>methods</i></ClLinks> for that <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> have <GlossaryTerm styled={true} term={"lambda list"}><i>lambda lists</i></GlossaryTerm> that are not congruent with that given in the <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> form, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
 
 
 
@@ -246,7 +246,7 @@ A given *option* may occur only once, or an error of <ClLinks  term={"type"}><i>
 
 
 
-If *function-name* specifies an existing *generic function* that has a different value for the :generic-function-class argument and the new generic function <ClLinks  term={"class"}><i>class</i></ClLinks> is compatible with the old, <ClLinks  term={"change-class"}><b>change-class</b></ClLinks> is called to change the <ClLinks  term={"class"}><i>class</i></ClLinks> of the *generic function*; otherwise an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If *function-name* specifies an existing <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> that has a different value for the :generic-function-class argument and the new generic function <ClLinks  term={"class"}><i>class</i></ClLinks> is compatible with the old, <ClLinks  term={"change-class"}><b>change-class</b></ClLinks> is called to change the <ClLinks  term={"class"}><i>class</i></ClLinks> of the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>; otherwise an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
 
 
 

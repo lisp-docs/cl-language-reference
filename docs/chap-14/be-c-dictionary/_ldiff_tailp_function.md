@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, which might be a *dotted list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, which might be a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-**ldiff, tailp** 
+<DictionaryLink styled={true} term={"ldiff, tailp"}><b>ldiff, tailp</b></DictionaryLink> 
 
 
 
@@ -58,7 +58,7 @@ If <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is the <ClLink
 
 
 
-If <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> as some <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, <ClLinks styled={true} term={"ldiff"}><b>ldiff</b></ClLinks> returns a *fresh list* of the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that precede **object** in the *list structure* of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>; otherwise, it returns a <ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks><sub>2</sub> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+If <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> as some <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, <ClLinks styled={true} term={"ldiff"}><b>ldiff</b></ClLinks> returns a *fresh list* of the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that precede **object** in the <GlossaryTerm styled={true} term={"list structure"}><i>list structure</i></GlossaryTerm> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>; otherwise, it returns a <ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks><sub>2</sub> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -107,7 +107,7 @@ Neither <ClLinks styled={true} term={"ldiff"}><b>ldiff</b></ClLinks> nor <ClLink
 
 
 
-Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is not a *proper list* or a *dotted list*. 
+Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is not a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>. 
 
 
 
@@ -131,7 +131,7 @@ Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i
 
 
 
-If the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a *circular list*, <ClLinks styled={true} term={"tailp"}><b>tailp</b></ClLinks> will reliably <ClLinks styled={true} term={"yield"}><i>yield</i></ClLinks> a <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> only if the given <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is in fact a <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. Otherwise, the consequences are unspecified: a given <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> which detects the circularity must return <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, but since an <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> is not obliged to detect such a <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks>, <ClLinks styled={true} term={"tailp"}><b>tailp</b></ClLinks> might just loop indefinitely without returning in that case. 
+If the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm>, <ClLinks styled={true} term={"tailp"}><b>tailp</b></ClLinks> will reliably <ClLinks styled={true} term={"yield"}><i>yield</i></ClLinks> a <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> only if the given <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is in fact a <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. Otherwise, the consequences are unspecified: a given <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> which detects the circularity must return <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, but since an <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> is not obliged to detect such a <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks>, <ClLinks styled={true} term={"tailp"}><b>tailp</b></ClLinks> might just loop indefinitely without returning in that case. 
 
 
 

@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> of a *bit vector* that is not displaced to another <ClLinks  term={"array"}><i>array</i></ClLinks>, has no *fill pointer* , and is not *expressly adjustable* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"simple-bit-vector"}><b>simple-bit-vector</b></ClLinks>. 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> of a <GlossaryTerm styled={true} term={"bit vector"}><i>bit vector</i></GlossaryTerm> that is not displaced to another <ClLinks  term={"array"}><i>array</i></ClLinks>, has no <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , and is not <GlossaryTerm styled={true} term={"expressly adjustable"}><i>expressly adjustable</i></GlossaryTerm> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"simple-bit-vector"}><b>simple-bit-vector</b></ClLinks>. 
 
 
 
@@ -58,7 +58,7 @@ Abbreviating.
 
 
 
-This denotes the same type as the <ClLinks  term={"type"}><i>type</i></ClLinks> (simple-array bit (*size*)); that is, the set of *simple bit vectors* of size *size*. 
+This denotes the same type as the <ClLinks  term={"type"}><i>type</i></ClLinks> (simple-array bit (*size*)); that is, the set of <GlossaryTerm styled={true} term={"simple bit vector"}><i>simple bit vectors</i></GlossaryTerm> of size *size*. 
 
 
 

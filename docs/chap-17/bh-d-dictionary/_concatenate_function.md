@@ -14,7 +14,7 @@
 
 
 
-*result-type*—a <ClLinks  term={"sequence"}><b>sequence</b></ClLinks> *type specifier* . 
+*result-type*—a <ClLinks  term={"sequence"}><b>sequence</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*result-sequence*—a *proper sequence* of *type result-type*. 
+*result-sequence*—a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm> of *type result-type*. 
 
 
 
@@ -70,7 +70,7 @@ If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of
 
 
 
-An error is signaled if the *result-type* is neither a *recognizable subtype* of <ClLinks  term={"list"}><b>list</b></ClLinks>, nor a *recognizable subtype* of <ClLinks  term={"vector"}><b>vector</b></ClLinks>. 
+An error is signaled if the *result-type* is neither a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <ClLinks  term={"list"}><b>list</b></ClLinks>, nor a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <ClLinks  term={"vector"}><b>vector</b></ClLinks>. 
 
 
 

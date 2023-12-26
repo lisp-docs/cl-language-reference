@@ -26,11 +26,11 @@ The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"keyword"}><b>
 
 
 
-2\. It causes the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to become an *external symbol* of the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+2\. It causes the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to become an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm> of the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-3\. It causes the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to become a *constant variable*. 
+3\. It causes the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to become a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. 
 
 
 

@@ -107,7 +107,7 @@ where the brackets indicate a transformation of an xj as described above.
 
 
 
-Anywhere “,@” may be used, the syntax “,.” may be used instead to indicate that it is permissible to operate *destructively* on the *list structure* produced by the form following the “,.” (in effect, to use <ClLinks  term={"nconc"}><b>nconc</b></ClLinks> instead of <ClLinks  term={"append"}><b>append</b></ClLinks>). 
+Anywhere “,@” may be used, the syntax “,.” may be used instead to indicate that it is permissible to operate *destructively* on the <GlossaryTerm styled={true} term={"list structure"}><i>list structure</i></GlossaryTerm> produced by the form following the “,.” (in effect, to use <ClLinks  term={"nconc"}><b>nconc</b></ClLinks> instead of <ClLinks  term={"append"}><b>append</b></ClLinks>). 
 
 
 

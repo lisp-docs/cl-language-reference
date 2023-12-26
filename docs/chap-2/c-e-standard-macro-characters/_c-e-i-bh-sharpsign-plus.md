@@ -6,7 +6,7 @@
 
 
 
-For a detailed description of success and failure in *feature expressions*, see Section 24.1.2.1 (Feature Expressions). 
+For a detailed description of success and failure in <GlossaryTerm styled={true} term={"feature expression"}><i>feature expressions</i></GlossaryTerm>, see Section 24.1.2.1 (Feature Expressions). 
 
 
 

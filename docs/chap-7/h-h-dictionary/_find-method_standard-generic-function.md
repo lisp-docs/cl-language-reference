@@ -1,4 +1,4 @@
-**find-method** *Standard Generic Function* 
+**find-method** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*generic-function*—a *generic function*. 
+*generic-function*—a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-*errorp*—a *generalized boolean*. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+*errorp*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 
@@ -54,11 +54,11 @@
 
 
 
-The *generic function* <ClLinks  term={"find-method"}><b>find-method</b></ClLinks> takes a *generic function* and returns the *method object* that agrees on <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> and *parameter specializers* with the *method-qualifiers* and *specializers* arguments of <ClLinks  term={"find-method"}><b>find-method</b></ClLinks>. *Method-qualifiers* contains the method <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> for the <ClLinks  term={"method"}><i>method</i></ClLinks>. The order of the method <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> is significant. For a definition of agreement in this context, see Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers). 
+The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <ClLinks  term={"find-method"}><b>find-method</b></ClLinks> takes a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> and returns the *method object* that agrees on <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> and <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> with the *method-qualifiers* and *specializers* arguments of <ClLinks  term={"find-method"}><b>find-method</b></ClLinks>. *Method-qualifiers* contains the method <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> for the <ClLinks  term={"method"}><i>method</i></ClLinks>. The order of the method <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> is significant. For a definition of agreement in this context, see Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers). 
 
 
 
-The *specializers* argument contains the parameter specializers for the <ClLinks  term={"method"}><i>method</i></ClLinks>. It must correspond in length to the number of required arguments of the *generic function*, or an error is signaled. This means that to obtain the default <ClLinks  term={"method"}><i>method</i></ClLinks> on a given *generic-function*, a <ClLinks  term={"list"}><i>list</i></ClLinks> whose elements are the <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks> must be given. 
+The *specializers* argument contains the parameter specializers for the <ClLinks  term={"method"}><i>method</i></ClLinks>. It must correspond in length to the number of required arguments of the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>, or an error is signaled. This means that to obtain the default <ClLinks  term={"method"}><i>method</i></ClLinks> on a given *generic-function*, a <ClLinks  term={"list"}><i>list</i></ClLinks> whose elements are the <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks> must be given. 
 
 
 

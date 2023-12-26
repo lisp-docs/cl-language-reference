@@ -1,4 +1,4 @@
-**bit-vector** *System Class* 
+**bit-vector** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A *bit vector* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> the *element type* of which is <ClLinks  term={"bit"}><i>bit</i></ClLinks>. 
+A <GlossaryTerm styled={true} term={"bit vector"}><i>bit vector</i></GlossaryTerm> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of which is <ClLinks  term={"bit"}><i>bit</i></ClLinks>. 
 
 
 
@@ -50,7 +50,7 @@ Abbreviating.
 
 
 
-This denotes the same <ClLinks  term={"type"}><i>type</i></ClLinks> as the <ClLinks  term={"type"}><i>type</i></ClLinks> (array bit (*size*)); that is, the set of *bit vectors* of size *size*. 
+This denotes the same <ClLinks  term={"type"}><i>type</i></ClLinks> as the <ClLinks  term={"type"}><i>type</i></ClLinks> (array bit (*size*)); that is, the set of <GlossaryTerm styled={true} term={"bit vector"}><i>bit vectors</i></GlossaryTerm> of size *size*. 
 
 
 

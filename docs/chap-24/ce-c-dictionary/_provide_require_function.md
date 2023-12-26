@@ -18,11 +18,11 @@
 
 
 
-*module-name*—a *string designator* . 
+*module-name*—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
 
 
 
-*pathname-list*—<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, or a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a *non-empty list* of *pathname designators*. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*pathname-list*—<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, or a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a *non-empty list* of <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designators</i></GlossaryTerm>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -85,11 +85,11 @@ The specific action taken by <ClLinks styled={true} term={"require"}><b>require<
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *module-name* is not a *string designator* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *module-name* is not a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
 
 
 
-If <ClLinks styled={true} term={"require"}><b>require</b></ClLinks> fails to perform the requested operation due to a problem while interacting with the *file system*, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
+If <ClLinks styled={true} term={"require"}><b>require</b></ClLinks> fails to perform the requested operation due to a problem while interacting with the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
 
 
 

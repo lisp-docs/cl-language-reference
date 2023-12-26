@@ -18,7 +18,7 @@
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"array"}><i>array</i></ClLinks> has a *fill pointer* ; otherwise returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"array"}><i>array</i></ClLinks> has a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> ; otherwise returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -61,7 +61,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-Since <ClLinks  term={"array"}><i>arrays</i></ClLinks> of <ClLinks  term={"rank"}><i>rank</i></ClLinks> other than one cannot have a *fill pointer* , <ClLinks  term={"array-has-fill-pointer-p"}><b>array-has-fill-pointer-p</b></ClLinks> always returns <ClLinks  term={"nil"}><b>nil</b></ClLinks> when its argument is such an array. 
+Since <ClLinks  term={"array"}><i>arrays</i></ClLinks> of <ClLinks  term={"rank"}><i>rank</i></ClLinks> other than one cannot have a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , <ClLinks  term={"array-has-fill-pointer-p"}><b>array-has-fill-pointer-p</b></ClLinks> always returns <ClLinks  term={"nil"}><b>nil</b></ClLinks> when its argument is such an array. 
 
 
 

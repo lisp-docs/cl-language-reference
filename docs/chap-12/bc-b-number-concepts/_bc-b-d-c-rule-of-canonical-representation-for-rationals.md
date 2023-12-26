@@ -10,7 +10,7 @@ If the denominator does not evenly divide the numerator, the canonical represent
 
 
 
-When used as input (in the default syntax), the notation -0 always denotes the *integer* 0. A *conforming implementation* must not have a representation of “minus zero” for *integers* that is distinct from its representation of zero for *integers*. However, such a distinction is possible for <ClLinks  term={"float"}><i>floats</i></ClLinks>; see the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"float"}><b>float</b></ClLinks>. 
+When used as input (in the default syntax), the notation -0 always denotes the *integer* 0. A <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> must not have a representation of “minus zero” for *integers* that is distinct from its representation of zero for *integers*. However, such a distinction is possible for <ClLinks  term={"float"}><i>floats</i></ClLinks>; see the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"float"}><b>float</b></ClLinks>. 
 
 
 

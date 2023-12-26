@@ -22,7 +22,7 @@
 
 
 
-*package-list*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a list of *package designators*. 
+*package-list*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a list of <GlossaryTerm styled={true} term={"package designator"}><i>package designators</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -228,7 +228,7 @@ The consequences are undefined if the local function named *name established* by
 
 
 
-<ClLinks  term={"with-package-iterator"}><b>with-package-iterator</b></ClLinks> is called after it has returned <ClLinks  term={"false"}><i>false</i></ClLinks> as its *primary value*. 
+<ClLinks  term={"with-package-iterator"}><b>with-package-iterator</b></ClLinks> is called after it has returned <ClLinks  term={"false"}><i>false</i></ClLinks> as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>. 
 
 
 

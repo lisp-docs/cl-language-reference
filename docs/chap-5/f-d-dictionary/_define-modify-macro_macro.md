@@ -66,7 +66,7 @@ Except for the issue of avoiding multiple evaluation (see below), the expansion 
 
 
 
-where *arg1*, *arg2*, ..., are the parameters appearing in *lambda-list*; appropriate provision is made for a *rest parameter* . 
+where *arg1*, *arg2*, ..., are the parameters appearing in *lambda-list*; appropriate provision is made for a <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameter</i></GlossaryTerm> . 
 
 
 
@@ -74,11 +74,11 @@ The <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the macro calls defi
 
 
 
-*Documentation* is attached as a *documentation string* to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind <ClLinks  term={"function"}><b>function</b></ClLinks>) and to the *macro function*. 
+*Documentation* is attached as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind <ClLinks  term={"function"}><b>function</b></ClLinks>) and to the <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>. 
 
 
 
-If a <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a *top level form*, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must store the <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition at compile time, so that occurrences of the macro later on in the file can be expanded correctly. 
+If a <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must store the <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition at compile time, so that occurrences of the macro later on in the file can be expanded correctly. 
 
 
 

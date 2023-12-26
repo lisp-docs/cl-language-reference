@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"unexport"}><b>unexport</b></ClLinks> works only on *symbols present* in <ClLinks  term={"package"}><i>package</i></ClLinks>, switching them back to internal status. If <ClLinks  term={"unexport"}><b>unexport</b></ClLinks> is given a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as an *internal symbol* in <ClLinks  term={"package"}><i>package</i></ClLinks>, it does nothing. 
+<ClLinks  term={"unexport"}><b>unexport</b></ClLinks> works only on *symbols present* in <ClLinks  term={"package"}><i>package</i></ClLinks>, switching them back to internal status. If <ClLinks  term={"unexport"}><b>unexport</b></ClLinks> is given a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as an <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm> in <ClLinks  term={"package"}><i>package</i></ClLinks>, it does nothing. 
 
 
 

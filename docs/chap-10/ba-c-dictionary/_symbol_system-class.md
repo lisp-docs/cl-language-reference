@@ -1,4 +1,4 @@
-**symbol** *System Class* 
+**symbol** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -42,19 +42,19 @@ The <ClLinks  term={"name"}><i>name</i></ClLinks> of a <ClLinks  term={"symbol"}
 
 
 
-The <ClLinks  term={"object"}><i>object</i></ClLinks> in this <ClLinks  term={"cell"}><i>cell</i></ClLinks> is called the *home package* of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. If the *home package* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is sometimes said to have no *home package*. 
+The <ClLinks  term={"object"}><i>object</i></ClLinks> in this <ClLinks  term={"cell"}><i>cell</i></ClLinks> is called the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. If the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is sometimes said to have no <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm>. 
 
 
 
-When a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is first created, it has no *home package*. When it is first <ClLinks  term={"interned"}><i>interned</i></ClLinks>, the <ClLinks  term={"package"}><i>package</i></ClLinks> in which it is initially <ClLinks  term={"interned"}><i>interned</i></ClLinks> becomes its *home package*. The *home package* of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> can be *accessed* by using the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"symbol-package"}><b>symbol-package</b></ClLinks>. 
+When a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is first created, it has no <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm>. When it is first <ClLinks  term={"interned"}><i>interned</i></ClLinks>, the <ClLinks  term={"package"}><i>package</i></ClLinks> in which it is initially <ClLinks  term={"interned"}><i>interned</i></ClLinks> becomes its <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> can be *accessed* by using the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"symbol-package"}><b>symbol-package</b></ClLinks>. 
 
 
 
-If a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> from the <ClLinks  term={"package"}><i>package</i></ClLinks> which is its *home package*, its *home package* is set to <ClLinks  term={"nil"}><b>nil</b></ClLinks>. Depending on whether there is another <ClLinks  term={"package"}><i>package</i></ClLinks> in which the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"interned"}><i>interned</i></ClLinks>, the symbol might or might not really be an *uninterned symbol*. A <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> with no *home package* is therefore called *apparently uninterned*. 
+If a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> from the <ClLinks  term={"package"}><i>package</i></ClLinks> which is its <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm>, its <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> is set to <ClLinks  term={"nil"}><b>nil</b></ClLinks>. Depending on whether there is another <ClLinks  term={"package"}><i>package</i></ClLinks> in which the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"interned"}><i>interned</i></ClLinks>, the symbol might or might not really be an *uninterned symbol*. A <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> with no <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> is therefore called <GlossaryTerm styled={true} term={"apparently uninterned"}><i>apparently uninterned</i></GlossaryTerm>. 
 
 
 
-The consequences are undefined if an attempt is made to alter the *home package* of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> external in the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks> or the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+The consequences are undefined if an attempt is made to alter the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> external in the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks> or the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -62,7 +62,7 @@ The consequences are undefined if an attempt is made to alter the *home package*
 
 
 
-The *property list* of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> provides a mechanism for associating named attributes 
+The <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> provides a mechanism for associating named attributes 
 
 
 
@@ -74,7 +74,7 @@ The *property list* of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> provi
 
 
 
-with that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. The operations for adding and removing entries are <ClLinks  term={"destructive"}><i>destructive</i></ClLinks> to the *property list*. Common Lisp provides <ClLinks  term={"operator"}><i>operators</i></ClLinks> both for direct manipulation of *property list objects* (*e.g.*, see <ClLinks  term={"getf"}><b>getf</b></ClLinks>, <ClLinks  term={"remf"}><b>remf</b></ClLinks>, and <ClLinks  term={"symbol-plist"}><b>symbol-plist</b></ClLinks>) and for implicit manipulation of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s *property list* by reference to the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> (*e.g.*, see <ClLinks  term={"get"}><b>get</b></ClLinks> and <ClLinks  term={"remprop"}><b>remprop</b></ClLinks>). The *property list* associated with a *fresh symbol* is initially <ClLinks  term={"null"}><i>null</i></ClLinks>. 
+with that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. The operations for adding and removing entries are <ClLinks  term={"destructive"}><i>destructive</i></ClLinks> to the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>. Common Lisp provides <ClLinks  term={"operator"}><i>operators</i></ClLinks> both for direct manipulation of *property list objects* (*e.g.*, see <ClLinks  term={"getf"}><b>getf</b></ClLinks>, <ClLinks  term={"remf"}><b>remf</b></ClLinks>, and <ClLinks  term={"symbol-plist"}><b>symbol-plist</b></ClLinks>) and for implicit manipulation of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> by reference to the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> (*e.g.*, see <ClLinks  term={"get"}><b>get</b></ClLinks> and <ClLinks  term={"remprop"}><b>remprop</b></ClLinks>). The <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> associated with a *fresh symbol* is initially <ClLinks  term={"null"}><i>null</i></ClLinks>. 
 
 
 
@@ -82,11 +82,11 @@ with that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. The operations for 
 
 
 
-If a symbol has a value attribute, it is said to be <ClLinks  term={"bound"}><i>bound</i></ClLinks>, and that fact can be detected by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"boundp"}><b>boundp</b></ClLinks>. The <ClLinks  term={"object"}><i>object</i></ClLinks> contained in the *value cell* of a *bound symbol* is the <ClLinks  term={"value"}><i>value</i></ClLinks> of the *global variable* named by that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, and can be *accessed* by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks>. A <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> can be made to be <ClLinks  term={"unbound"}><i>unbound</i></ClLinks> by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"makunbound"}><b>makunbound</b></ClLinks>. 
+If a symbol has a value attribute, it is said to be <ClLinks  term={"bound"}><i>bound</i></ClLinks>, and that fact can be detected by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"boundp"}><b>boundp</b></ClLinks>. The <ClLinks  term={"object"}><i>object</i></ClLinks> contained in the <GlossaryTerm styled={true} term={"value cell"}><i>value cell</i></GlossaryTerm> of a *bound symbol* is the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <GlossaryTerm styled={true} term={"global variable"}><i>global variable</i></GlossaryTerm> named by that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, and can be *accessed* by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks>. A <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> can be made to be <ClLinks  term={"unbound"}><i>unbound</i></ClLinks> by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"makunbound"}><b>makunbound</b></ClLinks>. 
 
 
 
-The consequences are undefined if an attempt is made to change the <ClLinks  term={"value"}><i>value</i></ClLinks> of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that names a *constant variable*, or to make such a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> be <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>. 
+The consequences are undefined if an attempt is made to change the <ClLinks  term={"value"}><i>value</i></ClLinks> of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that names a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>, or to make such a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> be <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>. 
 
 
 
@@ -94,19 +94,19 @@ The consequences are undefined if an attempt is made to change the <ClLinks  ter
 
 
 
-If a symbol has a function attribute, it is said to be <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>, and that fact can be detected by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"fboundp"}><b>fboundp</b></ClLinks>. If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is the <ClLinks  term={"name"}><i>name</i></ClLinks> of a <ClLinks  term={"function"}><i>function</i></ClLinks> in the *global environment*, the *function cell* contains the <ClLinks  term={"function"}><i>function</i></ClLinks>, and can be *accessed* by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks>. If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is the <ClLinks  term={"name"}><i>name</i></ClLinks> of either a <ClLinks  term={"macro"}><i>macro</i></ClLinks> in the *global environment* (see <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks>) or a *special operator* (see <ClLinks  term={"special-operator-p"}><b>special-operator-p</b></ClLinks>), the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>, and can be *accessed* by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks>, but the <ClLinks  term={"object"}><i>object</i></ClLinks> which the *function cell* contains is of *implementation-dependent type* and purpose. A <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> can be made to be <ClLinks  term={"funbound"}><i>funbound</i></ClLinks> by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"fmakunbound"}><b>fmakunbound</b></ClLinks>. 
+If a symbol has a function attribute, it is said to be <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>, and that fact can be detected by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"fboundp"}><b>fboundp</b></ClLinks>. If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is the <ClLinks  term={"name"}><i>name</i></ClLinks> of a <ClLinks  term={"function"}><i>function</i></ClLinks> in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"function cell"}><i>function cell</i></GlossaryTerm> contains the <ClLinks  term={"function"}><i>function</i></ClLinks>, and can be *accessed* by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks>. If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is the <ClLinks  term={"name"}><i>name</i></ClLinks> of either a <ClLinks  term={"macro"}><i>macro</i></ClLinks> in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm> (see <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks>) or a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> (see <ClLinks  term={"special-operator-p"}><b>special-operator-p</b></ClLinks>), the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>, and can be *accessed* by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks>, but the <ClLinks  term={"object"}><i>object</i></ClLinks> which the <GlossaryTerm styled={true} term={"function cell"}><i>function cell</i></GlossaryTerm> contains is of *implementation-dependent type* and purpose. A <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> can be made to be <ClLinks  term={"funbound"}><i>funbound</i></ClLinks> by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"fmakunbound"}><b>fmakunbound</b></ClLinks>. 
 
 
 
-The consequences are undefined if an attempt is made to change the *functional value* of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that names a *special form*. 
+The consequences are undefined if an attempt is made to change the <GlossaryTerm styled={true} term={"functional value"}><i>functional value</i></GlossaryTerm> of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that names a <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm>. 
 
 
 
-Operations on a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s *value cell* and *function cell* are sometimes described in terms of their effect on the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> itself, but the user should keep in mind that there is an intimate relationship between the contents of those <ClLinks  term={"cell"}><i>cells</i></ClLinks> and the *global variable* or global <ClLinks  term={"function"}><i>function</i></ClLinks> definition, respectively. 
+Operations on a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <GlossaryTerm styled={true} term={"value cell"}><i>value cell</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"function cell"}><i>function cell</i></GlossaryTerm> are sometimes described in terms of their effect on the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> itself, but the user should keep in mind that there is an intimate relationship between the contents of those <ClLinks  term={"cell"}><i>cells</i></ClLinks> and the <GlossaryTerm styled={true} term={"global variable"}><i>global variable</i></GlossaryTerm> or global <ClLinks  term={"function"}><i>function</i></ClLinks> definition, respectively. 
 
 
 
-<ClLinks  term={"symbol"}><i>Symbols</i></ClLinks> are used as identifiers for *lexical variables* and lexical <ClLinks  term={"function"}><i>function</i></ClLinks> definitions, but in that role, only their <ClLinks  term={"object"}><i>object</i></ClLinks> identity is significant. Common Lisp provides no operation on a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that can have any effect on a *lexical variable* or on a lexical <ClLinks  term={"function"}><i>function</i></ClLinks> definition. 
+<ClLinks  term={"symbol"}><i>Symbols</i></ClLinks> are used as identifiers for <GlossaryTerm styled={true} term={"lexical variable"}><i>lexical variables</i></GlossaryTerm> and lexical <ClLinks  term={"function"}><i>function</i></ClLinks> definitions, but in that role, only their <ClLinks  term={"object"}><i>object</i></ClLinks> identity is significant. Common Lisp provides no operation on a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that can have any effect on a <GlossaryTerm styled={true} term={"lexical variable"}><i>lexical variable</i></GlossaryTerm> or on a lexical <ClLinks  term={"function"}><i>function</i></ClLinks> definition. 
 
 
 

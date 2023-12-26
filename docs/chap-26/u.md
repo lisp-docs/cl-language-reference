@@ -43,7 +43,7 @@ sidebar_position: 117
 
 
 
-**universal time** *n. time*, represented as a non-negative *integer* number of seconds. *Absolute universal time* is measured as an offset from the beginning of the year 1900 (ignoring *leap seconds*). See Section 25.1.4.2 (Universal Time). 
+**universal time** *n. time*, represented as a non-negative *integer* number of seconds. *Absolute universal time* is measured as an offset from the beginning of the year 1900 (ignoring <GlossaryTerm styled={true} term={"leap seconds"}><i>leap seconds</i></GlossaryTerm>). See Section 25.1.4.2 (Universal Time). 
 
 
 
@@ -55,7 +55,7 @@ sidebar_position: 117
 
 
 
-*registry*. An *unregistered package* has no <ClLinks  term={"name"}><i>name</i></ClLinks>; *i.e.*, its <ClLinks  term={"name"}><i>name</i></ClLinks> is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks>. 
+*registry*. An <GlossaryTerm styled={true} term={"unregistered package"}><i>unregistered package</i></GlossaryTerm> has no <ClLinks  term={"name"}><i>name</i></ClLinks>; *i.e.*, its <ClLinks  term={"name"}><i>name</i></ClLinks> is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks>. 
 
 
 
@@ -67,7 +67,7 @@ context as <ClLinks  term={"unsafe"}><i>unsafe</i></ClLinks> means that certain 
 
 
 
-**unsafe call** *n.* a <ClLinks  term={"call"}><i>call</i></ClLinks> that is not a *safe call*. For more detailed information, see Section 3.5.1.1 (Safe and Unsafe Calls). 
+**unsafe call** *n.* a <ClLinks  term={"call"}><i>call</i></ClLinks> that is not a <GlossaryTerm styled={true} term={"safe call"}><i>safe call</i></GlossaryTerm>. For more detailed information, see Section 3.5.1.1 (Safe and Unsafe Calls). 
 
 
 
@@ -75,27 +75,23 @@ context as <ClLinks  term={"unsafe"}><i>unsafe</i></ClLinks> means that certain 
 
 
 
-to substitute an *actual array element type* for an *expressed array element type* 
+to substitute an <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> for an <GlossaryTerm styled={true} term={"expressed array element type"}><i>expressed array element type</i></GlossaryTerm> 
 
 
 
-when choosing an appropriately *specialized array* representation. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks>. 2. (when creating a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ) to substitute an *actual complex part type* for an *expressed complex part type* when choosing an appropriately *specialized complex* representation. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></ClLinks>. 
+when choosing an appropriately *specialized array* representation. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks>. 2. (when creating a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ) to substitute an <GlossaryTerm styled={true} term={"actual complex part type"}><i>actual complex part type</i></GlossaryTerm> for an <GlossaryTerm styled={true} term={"expressed complex part type"}><i>expressed complex part type</i></GlossaryTerm> when choosing an appropriately *specialized complex* representation. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></ClLinks>. 
 
 
 
-**upgraded array element type** *n.* (of a <ClLinks  term={"type"}><i>type</i></ClLinks>) a <ClLinks  term={"type"}><i>type</i></ClLinks> that is a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> and that is used instead of the <ClLinks  term={"type"}><i>type</i></ClLinks> whenever the <ClLinks  term={"type"}><i>type</i></ClLinks> is used as an *array element type* for object creation or type discrimination. See Section 15.1.2.1 (Array Upgrading). 
+**upgraded array element type** *n.* (of a <ClLinks  term={"type"}><i>type</i></ClLinks>) a <ClLinks  term={"type"}><i>type</i></ClLinks> that is a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> and that is used instead of the <ClLinks  term={"type"}><i>type</i></ClLinks> whenever the <ClLinks  term={"type"}><i>type</i></ClLinks> is used as an <GlossaryTerm styled={true} term={"array element type"}><i>array element type</i></GlossaryTerm> for object creation or type discrimination. See Section 15.1.2.1 (Array Upgrading). 
 
 
 
-**upgraded complex part type** *n.* (of a <ClLinks  term={"type"}><i>type</i></ClLinks>) a <ClLinks  term={"type"}><i>type</i></ClLinks> that is a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> and that is used instead of the <ClLinks  term={"type"}><i>type</i></ClLinks> whenever the <ClLinks  term={"type"}><i>type</i></ClLinks> is used as a *complex part type* for object creation or type discrimination. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></ClLinks>. 
-
-
+**upgraded complex part type** *n.* (of a <ClLinks  term={"type"}><i>type</i></ClLinks>) a <ClLinks  term={"type"}><i>type</i></ClLinks> that is a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> and that is used instead of the <ClLinks  term={"type"}><i>type</i></ClLinks> whenever the <ClLinks  term={"type"}><i>type</i></ClLinks> is used as a <GlossaryTerm styled={true} term={"complex part type"}><i>complex part type</i></GlossaryTerm> for object creation or type discrimination. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></ClLinks>. 
 
 
 
 
-
- 
 
 
 
@@ -103,11 +99,15 @@ when choosing an appropriately *specialized array* representation. See the <ClLi
 
 
 
-**uppercase** *adj.* (of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) being among *standard characters* corresponding to the capital letters A through Z, or being some other *implementation-defined character* that is defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be <ClLinks  term={"uppercase"}><i>uppercase</i></ClLinks>. See Section 13.1.4.3 (Characters With Case). 
+ 
 
 
 
-**use** *v.t.* (a *package P*<sub>1</sub>) to <ClLinks  term={"inherit"}><i>inherit</i></ClLinks> the *external symbols* of *P*<sub>1</sub>. (If a package *P*<sub>2</sub> uses *P*<sub>1</sub>, the *external symbols* of *P*<sub>1</sub> become *internal symbols* of *P*<sub>2</sub> unless they are explicitly <ClLinks  term={"exported"}><i>exported</i></ClLinks>.) “The package CL-USER uses the package CL.” 
+**uppercase** *adj.* (of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) being among <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm> corresponding to the capital letters A through Z, or being some other *implementation-defined character* that is defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be <ClLinks  term={"uppercase"}><i>uppercase</i></ClLinks>. See Section 13.1.4.3 (Characters With Case). 
+
+
+
+**use** *v.t.* (a *package P*<sub>1</sub>) to <ClLinks  term={"inherit"}><i>inherit</i></ClLinks> the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of *P*<sub>1</sub>. (If a package *P*<sub>2</sub> uses *P*<sub>1</sub>, the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of *P*<sub>1</sub> become <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbols</i></GlossaryTerm> of *P*<sub>2</sub> unless they are explicitly <ClLinks  term={"exported"}><i>exported</i></ClLinks>.) “The package CL-USER uses the package CL.” 
 
 
 

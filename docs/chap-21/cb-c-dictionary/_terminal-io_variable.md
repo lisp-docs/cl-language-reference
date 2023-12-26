@@ -14,7 +14,7 @@ a *bidirectional stream*.
 
 
 
-<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but it must be an *open stream* that is not a *generalized synonym stream* to an *I/O customization variables* but that might be a *generalized synonym stream* to the <ClLinks  term={"value"}><i>value</i></ClLinks> of some *I/O customization variable*. 
+<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but it must be an *open stream* that is not a <GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to an *I/O customization variables* but that might be a <GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to the <ClLinks  term={"value"}><i>value</i></ClLinks> of some *I/O customization variable*. 
 
 
 

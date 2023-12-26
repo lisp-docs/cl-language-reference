@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an *environment object*. 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. 
 
 
 
@@ -58,7 +58,7 @@ Returns <ClLinks  term={"form"}><i>forms</i></ClLinks> that, when *evaluated*, w
 
 
 
-*Slot-names* is a <ClLinks  term={"list"}><i>list</i></ClLinks> of the names of the <ClLinks  term={"slot"}><i>slots</i></ClLinks> to preserve. If *slot-names* is not supplied, its value is all of the *local slots*. 
+*Slot-names* is a <ClLinks  term={"list"}><i>list</i></ClLinks> of the names of the <ClLinks  term={"slot"}><i>slots</i></ClLinks> to preserve. If *slot-names* is not supplied, its value is all of the <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm>. 
 
 
 

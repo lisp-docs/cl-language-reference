@@ -610,7 +610,7 @@ At most one :include can be supplied in a single <ClLinks styled={true} term={"d
 
 
 
-If no :type option is involved, then the structure name of the including structure definition becomes the name of a *data type*, and therefore a valid *type specifier* recognizable by <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks>; it becomes a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of the included structure. In the above example, astronaut is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of person; hence 
+If no :type option is involved, then the structure name of the including structure definition becomes the name of a <GlossaryTerm styled={true} term={"data type"}><i>data type</i></GlossaryTerm>, and therefore a valid <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> recognizable by <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks>; it becomes a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of the included structure. In the above example, astronaut is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of person; hence 
 
 
 
@@ -894,15 +894,15 @@ It is just like the function list except that it takes keyword arguments and per
 
 
 
-binop is a conceptual data type in that it is not made a part of the Common Lisp type system. <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks> does not recognize binop as a *type specifier* , and <ClLinks styled={true} term={"type-of"}><b>type-of</b></ClLinks> returns list when given a binop structure. There is no way to distinguish a data structure constructed by make-binop from any other <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that happens to have the correct structure. 
+binop is a conceptual data type in that it is not made a part of the Common Lisp type system. <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks> does not recognize binop as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> , and <ClLinks styled={true} term={"type-of"}><b>type-of</b></ClLinks> returns list when given a binop structure. There is no way to distinguish a data structure constructed by make-binop from any other <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that happens to have the correct structure. 
 
 
 
-There is not any way to recover the structure name binop from a structure created by make-binop. This can only be done if the structure is named. A named structure has the property that, given an instance of the structure, the structure name (that names the type) can be reliably recovered. For structures defined with no :type option, the structure name actually becomes part of the Common Lisp data-type system. <ClLinks styled={true} term={"type-of"}><b>type-of</b></ClLinks>, when applied to such a structure, returns the structure name as the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> of the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>; <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks> recognizes the structure name as a valid *type specifier* . 
+There is not any way to recover the structure name binop from a structure created by make-binop. This can only be done if the structure is named. A named structure has the property that, given an instance of the structure, the structure name (that names the type) can be reliably recovered. For structures defined with no :type option, the structure name actually becomes part of the Common Lisp data-type system. <ClLinks styled={true} term={"type-of"}><b>type-of</b></ClLinks>, when applied to such a structure, returns the structure name as the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> of the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>; <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks> recognizes the structure name as a valid <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
-For structures defined with a :type option, <ClLinks styled={true} term={"type-of"}><b>type-of</b></ClLinks> returns a *type specifier* such as list or (vector t), depending on the type supplied to the :type option. The structure name does not become a valid *type specifier* . However, if the :named option is also supplied, then the first component of the structure (as created by a <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> constructor function) always contains the structure name. This allows the structure name to be recovered from an instance of the structure and allows a reasonable predicate for the conceptual type to be defined: the automatically defined *name-p* predicate for the structure operates by first checking that its argument is of the proper type (<ClLinks styled={true} term={"list"}><b>list</b></ClLinks>, (vector t), or whatever) and then checking whether the first component contains the appropriate type name. 
+For structures defined with a :type option, <ClLinks styled={true} term={"type-of"}><b>type-of</b></ClLinks> returns a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> such as list or (vector t), depending on the type supplied to the :type option. The structure name does not become a valid <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . However, if the :named option is also supplied, then the first component of the structure (as created by a <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> constructor function) always contains the structure name. This allows the structure name to be recovered from an instance of the structure and allows a reasonable predicate for the conceptual type to be defined: the automatically defined *name-p* predicate for the structure operates by first checking that its argument is of the proper type (<ClLinks styled={true} term={"list"}><b>list</b></ClLinks>, (vector t), or whatever) and then checking whether the first component contains the appropriate type name. 
 
 
 
@@ -950,7 +950,7 @@ The structure has the same layout as before except that the structure name binop
 
 
 
-The name binop is still not a valid *type specifier* recognizable to <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks>, but at least there is a way of distinguishing binop structures from other similarly defined structures. 
+The name binop is still not a valid <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> recognizable to <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks>, but at least there is a way of distinguishing binop structures from other similarly defined structures. 
 
 
 
@@ -990,7 +990,7 @@ If the :print-function option is used, then when a structure of type *structure-
 
 
 
-– the structure to be printed (a *generalized instance* of *structure-name*). 
+– the structure to be printed (a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm> of *structure-name*). 
 
 
 
@@ -1158,7 +1158,7 @@ Specifying this option has the effect of forcing a specific representation and o
 
 
 
-a valid *type specifier* recognizable by <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks>. 
+a valid <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> recognizable by <ClLinks styled={true} term={"typep"}><b>typep</b></ClLinks>. 
 
 
 
@@ -1262,7 +1262,7 @@ A copier function with the name copy-*structure-name* is defined. The copier fun
 
 
 
-If a <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> appears as a *top level form*, the <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> must make the *structure type* name recognized as a valid <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> name in subsequent declarations (as for <ClLinks styled={true} term={"deftype"}><b>deftype</b></ClLinks>) and make the structure slot readers known to <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>. In addition, the <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> must save enough information about the *structure type* so that further <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> definitions can use :include in a subsequent <ClLinks styled={true} term={"deftype"}><b>deftype</b></ClLinks> in the same <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> to refer to the *structure type* name. The functions which <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> generates are not defined in the compile time environment, although the <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> may save enough information about the functions to code subsequent calls inline. The #S *reader macro* might or might not recognize the newly defined *structure type* name at compile time. 
+If a <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> must make the *structure type* name recognized as a valid <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> name in subsequent declarations (as for <ClLinks styled={true} term={"deftype"}><b>deftype</b></ClLinks>) and make the structure slot readers known to <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>. In addition, the <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> must save enough information about the *structure type* so that further <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> definitions can use :include in a subsequent <ClLinks styled={true} term={"deftype"}><b>deftype</b></ClLinks> in the same <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> to refer to the *structure type* name. The functions which <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> generates are not defined in the compile time environment, although the <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> may save enough information about the functions to code subsequent calls inline. The #S <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm> might or might not recognize the newly defined *structure type* name at compile time. 
 
 
 
@@ -1414,7 +1414,7 @@ The restriction against issuing a warning for type mismatches between a *slot-in
 
 
 
-The mechanism by which <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> arranges for slot accessors to be usable with <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>; for example, it may use *setf functions*, *setf expanders*, or some other <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> mechanism known to that <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>’s <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> for <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>. 
+The mechanism by which <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> arranges for slot accessors to be usable with <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>; for example, it may use <GlossaryTerm styled={true} term={"setf function"}><i>setf functions</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"setf expander"}><i>setf expanders</i></GlossaryTerm>, or some other <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> mechanism known to that <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>’s <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> for <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>. 
 
 
 

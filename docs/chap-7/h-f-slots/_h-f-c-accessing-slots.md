@@ -38,7 +38,7 @@ the <ClLinks  term={"slot"}><i>slot</i></ClLinks> is the symbol name, and the <C
 
 
 
-A *generic function* created or modified by supplying :reader, :writer, or :accessor <ClLinks  term={"slot"}><i>slot</i></ClLinks> options can be treated exactly as an ordinary *generic function*. 
+A <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> created or modified by supplying :reader, :writer, or :accessor <ClLinks  term={"slot"}><i>slot</i></ClLinks> options can be treated exactly as an ordinary <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 
 
 
 
@@ -46,7 +46,7 @@ Note that <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks> can be used 
 
 
 
-The macro <ClLinks  term={"with-slots"}><b>with-slots</b></ClLinks> can be used to establish a *lexical environment* in which specified <ClLinks  term={"slot"}><i>slots</i></ClLinks> are lexically available as if they were variables. The macro <ClLinks  term={"with-slots"}><b>with-slots</b></ClLinks> invokes the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks> to <ClLinks  term={"access"}><i>access</i></ClLinks> the specified <ClLinks  term={"slot"}><i>slots</i></ClLinks>. 
+The macro <ClLinks  term={"with-slots"}><b>with-slots</b></ClLinks> can be used to establish a <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> in which specified <ClLinks  term={"slot"}><i>slots</i></ClLinks> are lexically available as if they were variables. The macro <ClLinks  term={"with-slots"}><b>with-slots</b></ClLinks> invokes the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks> to <ClLinks  term={"access"}><i>access</i></ClLinks> the specified <ClLinks  term={"slot"}><i>slots</i></ClLinks>. 
 
 
 

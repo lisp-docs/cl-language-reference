@@ -34,7 +34,7 @@ Unsafe code might do error checking. Implementations are permitted to treat all 
 
 
 
-This means that an error is signaled in both safe and unsafe code. *Conforming code* may rely on the fact that the error is signaled in both safe and unsafe code. Every implementation is required to detect the error in both safe and unsafe code. For example, “an error is signaled if <ClLinks styled={true} term={"unexport"}><b>unexport</b></ClLinks> is given a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> not <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in the *current package*.” 
+This means that an error is signaled in both safe and unsafe code. <GlossaryTerm styled={true} term={"conforming code"}><i>Conforming code</i></GlossaryTerm> may rely on the fact that the error is signaled in both safe and unsafe code. Every implementation is required to detect the error in both safe and unsafe code. For example, “an error is signaled if <ClLinks styled={true} term={"unexport"}><b>unexport</b></ClLinks> is given a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> not <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>.” 
 
 
 
@@ -46,7 +46,7 @@ If an explicit error type is not specified, the default is <ClLinks styled={true
 
 
 
-This means that an error is signaled in safe code, and an error might be signaled in unsafe code. *Conforming code* may rely on the fact that the error is signaled in safe code. Every implementation is required to detect the error at least in safe code. When the error is not signaled, the “consequences are undefined” (see below). For example, “<ClLinks styled={true} term={"+"}><b>+</b></ClLinks> should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if any argument is not of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"number"}><b>number</b></ClLinks>.” 
+This means that an error is signaled in safe code, and an error might be signaled in unsafe code. <GlossaryTerm styled={true} term={"conforming code"}><i>Conforming code</i></GlossaryTerm> may rely on the fact that the error is signaled in safe code. Every implementation is required to detect the error at least in safe code. When the error is not signaled, the “consequences are undefined” (see below). For example, “<ClLinks styled={true} term={"+"}><b>+</b></ClLinks> should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if any argument is not of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"number"}><b>number</b></ClLinks>.” 
 
 
 
@@ -58,7 +58,7 @@ This is similar to “should be signaled” except that it does not imply that �
 
 
 
-For example, defining that “<ClLinks styled={true} term={"find"}><b>find</b></ClLinks> should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its second <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> is not a *proper list*” does not imply that an error is always signaled. The <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> 
+For example, defining that “<ClLinks styled={true} term={"find"}><b>find</b></ClLinks> should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if its second <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> is not a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>” does not imply that an error is always signaled. The <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> 
 
 
 
@@ -102,7 +102,7 @@ Typically, the “should be prepared to signal” terminology is used in type ch
 
 
 
-This means that the consequences are unpredictable but harmless. Implementations are permitted to specify the consequences of this situation. No *conforming code* may depend on the results or effects of this situation, and all *conforming code* is required to treat the 
+This means that the consequences are unpredictable but harmless. Implementations are permitted to specify the consequences of this situation. No <GlossaryTerm styled={true} term={"conforming code"}><i>conforming code</i></GlossaryTerm> may depend on the results or effects of this situation, and all <GlossaryTerm styled={true} term={"conforming code"}><i>conforming code</i></GlossaryTerm> is required to treat the 
 
 
 
@@ -114,7 +114,7 @@ results and effects of this situation as unpredictable but harmless. For example
 
 
 
-This means that the consequences are unpredictable. The consequences may range from harmless to fatal. No *conforming code* may depend on the results or effects. *Conforming code* must treat the consequences as unpredictable. In places where the words “must,” “must not,” or “may not” are used, then “the consequences are undefined” if the stated requirement is not met and no specific consequence is explicitly stated. An implementation is permitted to signal an error in this case. 
+This means that the consequences are unpredictable. The consequences may range from harmless to fatal. No <GlossaryTerm styled={true} term={"conforming code"}><i>conforming code</i></GlossaryTerm> may depend on the results or effects. <GlossaryTerm styled={true} term={"conforming code"}><i>Conforming code</i></GlossaryTerm> must treat the consequences as unpredictable. In places where the words “must,” “must not,” or “may not” are used, then “the consequences are undefined” if the stated requirement is not met and no specific consequence is explicitly stated. An implementation is permitted to signal an error in this case. 
 
 
 
@@ -162,7 +162,7 @@ This means that the <ClLinks styled={true} term={"situation"}><i>situation</i></
 
 
 
-No *conforming code* may depend on the consequences of such a <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks>; all *conforming code* must treat the consequences of the situation as undefined. <ClLinks styled={true} term={"implementation"}><i>Implementations</i></ClLinks> are required to document how the situation is treated. 
+No <GlossaryTerm styled={true} term={"conforming code"}><i>conforming code</i></GlossaryTerm> may depend on the consequences of such a <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks>; all <GlossaryTerm styled={true} term={"conforming code"}><i>conforming code</i></GlossaryTerm> must treat the consequences of the situation as undefined. <ClLinks styled={true} term={"implementation"}><i>Implementations</i></ClLinks> are required to document how the situation is treated. 
 
 
 
@@ -174,11 +174,11 @@ For example, “implementations may be extended to define other type specifiers 
 
 
 
-This means that in this situation implementations are permitted to define unambiguous extensions to the syntax of the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> being described. No *conforming code* may depend on this extension. Implementations are required to document each such extension. All 
+This means that in this situation implementations are permitted to define unambiguous extensions to the syntax of the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> being described. No <GlossaryTerm styled={true} term={"conforming code"}><i>conforming code</i></GlossaryTerm> may depend on this extension. Implementations are required to document each such extension. All 
 
 
 
-*conforming code* is required to treat the syntax as meaningless. The standard might disallow certain extensions while allowing others. For example, “no implementation is free to extend the syntax of <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks>.” 
+<GlossaryTerm styled={true} term={"conforming code"}><i>conforming code</i></GlossaryTerm> is required to treat the syntax as meaningless. The standard might disallow certain extensions while allowing others. For example, “no implementation is free to extend the syntax of <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks>.” 
 
 
 

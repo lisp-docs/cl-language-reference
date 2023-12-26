@@ -18,11 +18,11 @@
 
 
 
-*input-stream*—an *input stream designator* . The default is *standard input*. 
+*input-stream*—an *input stream designator* . The default is <GlossaryTerm styled={true} term={"standard input"}><i>standard input</i></GlossaryTerm>. 
 
 
 
-*recursive-p*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*recursive-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<ClLinks  term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks> looks ahead at each step for the next non-<ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks  term={"character"}><i>character</i></ClLinks> and peeks at it as if with <ClLinks  term={"peek-char"}><b>peek-char</b></ClLinks>. If it is *char*, then the <ClLinks  term={"character"}><i>character</i></ClLinks> is consumed and the <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"object"}><i>objects</i></ClLinks> is returned. If it is a <ClLinks  term={"constituent"}><i>constituent</i></ClLinks> or *escape character* , then <ClLinks  term={"read"}><b>read</b></ClLinks> is used to read an <ClLinks  term={"object"}><i>object</i></ClLinks>, which is added to the end of the <ClLinks  term={"list"}><i>list</i></ClLinks>. If it is a *macro character* , its *reader macro function* is called; if the function returns a <ClLinks  term={"value"}><i>value</i></ClLinks>, that <ClLinks  term={"value"}><i>value</i></ClLinks> is added to the <ClLinks  term={"list"}><i>list</i></ClLinks>. The peek-ahead process is then repeated. 
+<ClLinks  term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks> looks ahead at each step for the next non-<ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks  term={"character"}><i>character</i></ClLinks> and peeks at it as if with <ClLinks  term={"peek-char"}><b>peek-char</b></ClLinks>. If it is *char*, then the <ClLinks  term={"character"}><i>character</i></ClLinks> is consumed and the <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"object"}><i>objects</i></ClLinks> is returned. If it is a <ClLinks  term={"constituent"}><i>constituent</i></ClLinks> or *escape character* , then <ClLinks  term={"read"}><b>read</b></ClLinks> is used to read an <ClLinks  term={"object"}><i>object</i></ClLinks>, which is added to the end of the <ClLinks  term={"list"}><i>list</i></ClLinks>. If it is a <GlossaryTerm styled={true} term={"macro character"}><i>macro character</i></GlossaryTerm> , its <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro function</i></GlossaryTerm> is called; if the function returns a <ClLinks  term={"value"}><i>value</i></ClLinks>, that <ClLinks  term={"value"}><i>value</i></ClLinks> is added to the <ClLinks  term={"list"}><i>list</i></ClLinks>. The peek-ahead process is then repeated. 
 
 
 
@@ -66,7 +66,7 @@ It is an error to reach end-of-file during the operation of <ClLinks  term={"rea
 
 
 
-The consequences are undefined if *char* has a *syntax type* of <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> in the *current readtable*. 
+The consequences are undefined if *char* has a <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm> of <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> in the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. 
 
 **Examples:**
 ```lisp
@@ -112,7 +112,7 @@ This can be done by specifying a macro-character definition for #\&#123; that do
 
 
 
-<ClLinks  term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks> is intended for use in implementing *reader macros*. Usually it is desirable for *char* to be a *terminating macro character* so that it can be used to delimit tokens; however, <ClLinks  term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks> makes no attempt to alter the syntax specified for *char* by the current readtable. The caller must make any necessary changes to the readtable syntax explicitly. 
+<ClLinks  term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks> is intended for use in implementing <GlossaryTerm styled={true} term={"reader macro"}><i>reader macros</i></GlossaryTerm>. Usually it is desirable for *char* to be a *terminating macro character* so that it can be used to delimit tokens; however, <ClLinks  term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks> makes no attempt to alter the syntax specified for *char* by the current readtable. The caller must make any necessary changes to the readtable syntax explicitly. 
 
 
 

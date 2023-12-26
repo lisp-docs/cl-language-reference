@@ -22,7 +22,7 @@
 
 
 
-*rehash-threshold*—a *real* of <ClLinks  term={"type"}><i>type</i></ClLinks> (real 0 1). The default is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. *hash-table*—a *hash table*. 
+*rehash-threshold*—a *real* of <ClLinks  term={"type"}><i>type</i></ClLinks> (real 0 1). The default is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. *hash-table*—a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Creates and returns a new *hash table*. 
+Creates and returns a new <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
 
 
 

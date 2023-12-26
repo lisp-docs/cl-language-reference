@@ -18,7 +18,7 @@
 
 
 
-*output-stream* – an *output stream designator* . The default is *standard output*. 
+*output-stream* – an *output stream designator* . The default is <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>. 
 
 
 

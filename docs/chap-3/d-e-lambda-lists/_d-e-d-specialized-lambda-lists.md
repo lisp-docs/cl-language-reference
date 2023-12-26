@@ -2,7 +2,7 @@
 
 
 
-A *specialized lambda list* is used to <ClLinks  term={"specialize"}><i>specialize</i></ClLinks> a <ClLinks  term={"method"}><i>method</i></ClLinks> for a particular <ClLinks  term={"signature"}><i>signature</i></ClLinks> and to describe how <ClLinks  term={"argument"}><i>arguments</i></ClLinks> matching that <ClLinks  term={"signature"}><i>signature</i></ClLinks> are received by the <ClLinks  term={"method"}><i>method</i></ClLinks>. The *defined names* in Figure 3–15 use *specialized lambda lists* in some way; see the dictionary entry for each for information about how. 
+A <GlossaryTerm styled={true} term={"specialized lambda list"}><i>specialized lambda list</i></GlossaryTerm> is used to <ClLinks  term={"specialize"}><i>specialize</i></ClLinks> a <ClLinks  term={"method"}><i>method</i></ClLinks> for a particular <ClLinks  term={"signature"}><i>signature</i></ClLinks> and to describe how <ClLinks  term={"argument"}><i>arguments</i></ClLinks> matching that <ClLinks  term={"signature"}><i>signature</i></ClLinks> are received by the <ClLinks  term={"method"}><i>method</i></ClLinks>. The <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> in Figure 3–15 use <GlossaryTerm styled={true} term={"specialized lambda list"}><i>specialized lambda lists</i></GlossaryTerm> in some way; see the dictionary entry for each for information about how. 
 
 
 
@@ -18,7 +18,7 @@ A *specialized lambda list* is used to <ClLinks  term={"specialize"}><i>speciali
 
 
 
-A *specialized lambda list* can contain the *lambda list keywords* shown in Figure 3–16. 
+A <GlossaryTerm styled={true} term={"specialized lambda list"}><i>specialized lambda list</i></GlossaryTerm> can contain the <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm> shown in Figure 3–16. 
 
 
 
@@ -34,7 +34,7 @@ A *specialized lambda list* can contain the *lambda list keywords* shown in Figu
 
 
 
-A *specialized lambda list* is syntactically the same as an *ordinary lambda list* except that each *required parameter* may optionally be associated with a <ClLinks  term={"class"}><i>class</i></ClLinks> or <ClLinks  term={"object"}><i>object</i></ClLinks> for which that <ClLinks  term={"parameter"}><i>parameter</i></ClLinks> is <ClLinks  term={"specialized"}><i>specialized</i></ClLinks>. 
+A <GlossaryTerm styled={true} term={"specialized lambda list"}><i>specialized lambda list</i></GlossaryTerm> is syntactically the same as an <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm> except that each <GlossaryTerm styled={true} term={"required parameter"}><i>required parameter</i></GlossaryTerm> may optionally be associated with a <ClLinks  term={"class"}><i>class</i></ClLinks> or <ClLinks  term={"object"}><i>object</i></ClLinks> for which that <ClLinks  term={"parameter"}><i>parameter</i></ClLinks> is <ClLinks  term={"specialized"}><i>specialized</i></ClLinks>. 
 
 
 

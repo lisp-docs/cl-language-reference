@@ -18,7 +18,7 @@
 
 
 
-*hash-table*—a <ClLinks  term={"form"}><i>form</i></ClLinks>, evaluated once, that should produce a *hash table*. 
+*hash-table*—a <ClLinks  term={"form"}><i>form</i></ClLinks>, evaluated once, that should produce a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Within the lexical scope of the body, <ClLinks  term={"name"}><i>name</i></ClLinks> is defined via <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> such that successive invocations of (<ClLinks  term={"name"}><i>name</i></ClLinks>) return the items, one by one, from the *hash table* that is obtained by evaluating *hash-table* only once. 
+Within the lexical scope of the body, <ClLinks  term={"name"}><i>name</i></ClLinks> is defined via <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> such that successive invocations of (<ClLinks  term={"name"}><i>name</i></ClLinks>) return the items, one by one, from the <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> that is obtained by evaluating *hash-table* only once. 
 
 
 
@@ -46,7 +46,7 @@ An invocation (<ClLinks  term={"name"}><i>name</i></ClLinks>) returns three valu
 
 
 
-1\. A *generalized boolean* that is <ClLinks  term={"true"}><i>true</i></ClLinks> if an entry is returned. 
+1\. A <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> that is <ClLinks  term={"true"}><i>true</i></ClLinks> if an entry is returned. 
 
 
 
@@ -105,7 +105,7 @@ The following could be an acceptable definition of **maphash**, implemented by *
 
 
 
-The consequences are undefined if the local function named *name established* by <ClLinks  term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></ClLinks> is called after it has returned <ClLinks  term={"false"}><i>false</i></ClLinks> as its *primary value*. 
+The consequences are undefined if the local function named *name established* by <ClLinks  term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></ClLinks> is called after it has returned <ClLinks  term={"false"}><i>false</i></ClLinks> as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>. 
 
 
 

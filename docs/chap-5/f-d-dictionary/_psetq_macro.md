@@ -26,7 +26,7 @@
 
 
 
-*var*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming a <ClLinks  term={"variable"}><i>variable</i></ClLinks> other than a *constant variable*. 
+*var*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming a <ClLinks  term={"variable"}><i>variable</i></ClLinks> other than a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. 
 
 
 

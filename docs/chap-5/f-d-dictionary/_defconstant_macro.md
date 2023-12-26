@@ -66,7 +66,7 @@ The side effects of the execution of <ClLinks  term={"defconstant"}><b>defconsta
 
 
 
-If a <ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a *top level form*, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must recognize that <ClLinks  term={"name"}><i>name</i></ClLinks> names a *constant variable*. An implementation may choose to evaluate the value-form at compile time, load time, or both. Therefore, users must ensure that the *initial-value* can be *evaluated* at compile time (regardless of whether or not references to <ClLinks  term={"name"}><i>name</i></ClLinks> appear in the file) and that it always <ClLinks  term={"evaluate"}><i>evaluates</i></ClLinks> to the same value. 
+If a <ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must recognize that <ClLinks  term={"name"}><i>name</i></ClLinks> names a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. An implementation may choose to evaluate the value-form at compile time, load time, or both. Therefore, users must ensure that the *initial-value* can be *evaluated* at compile time (regardless of whether or not references to <ClLinks  term={"name"}><i>name</i></ClLinks> appear in the file) and that it always <ClLinks  term={"evaluate"}><i>evaluates</i></ClLinks> to the same value. 
 
 
 

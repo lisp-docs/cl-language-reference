@@ -2,7 +2,7 @@
 
 
 
-The *compound type specifier* form of the numeric *type specifiers* permit the user to specify an interval on the real number line which describe a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> which would be described by the corresponding *atomic type specifier* . A <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of some *type T* is specified using an ordered pair of <ClLinks  term={"object"}><i>objects</i></ClLinks> called *interval designators* for *type T*. 
+The <GlossaryTerm styled={true} term={"compound type specifier"}><i>compound type specifier</i></GlossaryTerm> form of the numeric <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> permit the user to specify an interval on the real number line which describe a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> which would be described by the corresponding <GlossaryTerm styled={true} term={"atomic type specifier"}><i>atomic type specifier</i></GlossaryTerm> . A <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of some *type T* is specified using an ordered pair of <ClLinks  term={"object"}><i>objects</i></ClLinks> called <GlossaryTerm styled={true} term={"interval designator"}><i>interval designators</i></GlossaryTerm> for *type T*. 
 
 
 
@@ -18,7 +18,7 @@ The *compound type specifier* form of the numeric *type specifiers* permit the u
 
 
 
-The first of the two *interval designators* for *type T* can be any of the following: 
+The first of the two <GlossaryTerm styled={true} term={"interval designator"}><i>interval designators</i></GlossaryTerm> for *type T* can be any of the following: 
 
 
 
@@ -46,7 +46,7 @@ This denotes the absence of a lower bound on the interval.
 
 
 
-The second of the two *interval designators* for *type T* can be any of the following: 
+The second of the two <GlossaryTerm styled={true} term={"interval designator"}><i>interval designators</i></GlossaryTerm> for *type T* can be any of the following: 
 
 
 

@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a *file stream*. 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"format"}><i>format</i></ClLinks>—an *external file format*. 
+<ClLinks  term={"format"}><i>format</i></ClLinks>—an <GlossaryTerm styled={true} term={"external file format"}><i>external file format</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns an *external file format designator* for the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Returns an <GlossaryTerm styled={true} term={"external file format designator"}><i>external file format designator</i></GlossaryTerm> for the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 

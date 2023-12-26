@@ -26,7 +26,7 @@
 
 
 
-Returns the *array total size* of the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+Returns the <GlossaryTerm styled={true} term={"array total size"}><i>array total size</i></GlossaryTerm> of the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -71,11 +71,11 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-If the <ClLinks  term={"array"}><i>array</i></ClLinks> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , the *fill pointer* is ignored when calculating the *array total size*. 
+If the <ClLinks  term={"array"}><i>array</i></ClLinks> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is ignored when calculating the <GlossaryTerm styled={true} term={"array total size"}><i>array total size</i></GlossaryTerm>. 
 
 
 
-Since the product of no arguments is one, the *array total size* of a zero-dimensional <ClLinks  term={"array"}><i>array</i></ClLinks> is one. 
+Since the product of no arguments is one, the <GlossaryTerm styled={true} term={"array total size"}><i>array total size</i></GlossaryTerm> of a zero-dimensional <ClLinks  term={"array"}><i>array</i></ClLinks> is one. 
 
 
 

@@ -18,7 +18,7 @@
 
 
 
-*concatenated-stream*—a *concatenated stream*. 
+*concatenated-stream*—a <GlossaryTerm styled={true} term={"concatenated stream"}><i>concatenated stream</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a *concatenated stream* that has the indicated *input-streams* initially associated with it. 
+Returns a <GlossaryTerm styled={true} term={"concatenated stream"}><i>concatenated stream</i></GlossaryTerm> that has the indicated *input-streams* initially associated with it. 
 
 **Examples:**
 ```lisp

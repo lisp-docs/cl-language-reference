@@ -2,23 +2,23 @@
 
 
 
-Processing of *top level forms* in the file compiler is defined as follows: 
+Processing of <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> in the file compiler is defined as follows: 
 
 
 
-1\. If the <ClLinks  term={"form"}><i>form</i></ClLinks> is a *compiler macro form* (not disabled by a <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>), the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might or might not choose to compute the *compiler macro expansion* of the <ClLinks  term={"form"}><i>form</i></ClLinks> and, having performed the expansion, might or might not choose to process the result as a *top level form* in the same processing mode (compile-time-too or not-compile time). If it declines to obtain or use the expansion, it must process the original <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+1\. If the <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"compiler macro form"}><i>compiler macro form</i></GlossaryTerm> (not disabled by a <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>), the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might or might not choose to compute the <GlossaryTerm styled={true} term={"compiler macro expansion"}><i>compiler macro expansion</i></GlossaryTerm> of the <ClLinks  term={"form"}><i>form</i></ClLinks> and, having performed the expansion, might or might not choose to process the result as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in the same processing mode (compile-time-too or not-compile time). If it declines to obtain or use the expansion, it must process the original <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-2\. If the form is a *macro form*, its *macro expansion* is computed and processed as a *top level form* in the same processing mode (compile-time-too or not-compile-time). 
+2\. If the form is a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>, its <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> is computed and processed as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in the same processing mode (compile-time-too or not-compile-time). 
 
 
 
-3\. If the form is a <ClLinks  term={"progn"}><b>progn</b></ClLinks> form, each of its body <ClLinks  term={"form"}><i>forms</i></ClLinks> is sequentially processed as a *top level form* in the same processing mode. 
+3\. If the form is a <ClLinks  term={"progn"}><b>progn</b></ClLinks> form, each of its body <ClLinks  term={"form"}><i>forms</i></ClLinks> is sequentially processed as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in the same processing mode. 
 
 
 
-4\. If the form is a <ClLinks  term={"locally"}><b>locally</b></ClLinks>, <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>, or <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>, <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> establishes the appropriate bindings and processes the body forms as *top level forms* with those bindings in effect in the same processing mode. (Note that this implies that the lexical <ClLinks  term={"environment"}><i>environment</i></ClLinks> in which *top level forms* are processed is not necessarily the *null lexical environment*.) 
+4\. If the form is a <ClLinks  term={"locally"}><b>locally</b></ClLinks>, <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>, or <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>, <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> establishes the appropriate bindings and processes the body forms as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> with those bindings in effect in the same processing mode. (Note that this implies that the lexical <ClLinks  term={"environment"}><i>environment</i></ClLinks> in which <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> are processed is not necessarily the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>.) 
 
 
 
@@ -54,11 +54,11 @@ The
 
 
 
-**Process:** process the body as *top level forms* in the specified mode. 
+**Process:** process the body as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> in the specified mode. 
 
 
 
-**Evaluate:** evaluate the body in the dynamic execution context of the compiler, using the *evaluation environment* as the global environment and the *lexical environment* in which the <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> appears. 
+**Evaluate:** evaluate the body in the dynamic execution context of the compiler, using the <GlossaryTerm styled={true} term={"evaluation environment"}><i>evaluation environment</i></GlossaryTerm> as the global environment and the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> in which the <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> appears. 
 
 
 
@@ -70,11 +70,11 @@ The **New Mode** column indicates the new processing mode. A dash (—) indicate
 
 
 
-6\. Otherwise, the form is a *top level form* that is not one of the special cases. In compile time-too mode, the compiler first evaluates the form in the evaluation <ClLinks  term={"environment"}><i>environment</i></ClLinks> and then minimally compiles it. In not-compile-time mode, the <ClLinks  term={"form"}><i>form</i></ClLinks> is simply minimally compiled. All <ClLinks  term={"subform"}><i>subforms</i></ClLinks> are treated as *non-top-level forms*. 
+6\. Otherwise, the form is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> that is not one of the special cases. In compile time-too mode, the compiler first evaluates the form in the evaluation <ClLinks  term={"environment"}><i>environment</i></ClLinks> and then minimally compiles it. In not-compile-time mode, the <ClLinks  term={"form"}><i>form</i></ClLinks> is simply minimally compiled. All <ClLinks  term={"subform"}><i>subforms</i></ClLinks> are treated as <GlossaryTerm styled={true} term={"non-top-level form"}><i>non-top-level forms</i></GlossaryTerm>. 
 
 
 
-Note that *top level forms* are processed in the order in which they textually appear in the file and that each *top level form* read by the compiler is processed before the next is read. However, the order of processing (including macro expansion) of <ClLinks  term={"subform"}><i>subforms</i></ClLinks> that are not *top level forms* and the order of further compilation is unspecified as long as Common Lisp 
+Note that <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> are processed in the order in which they textually appear in the file and that each <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> read by the compiler is processed before the next is read. However, the order of processing (including macro expansion) of <ClLinks  term={"subform"}><i>subforms</i></ClLinks> that are not <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> and the order of further compilation is unspecified as long as Common Lisp 
 
 
 
@@ -82,7 +82,7 @@ semantics are preserved.
 
 
 
-<ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> forms cause compile-time evaluation only at top level. Both :compile-toplevel and :load-toplevel situation specifications are ignored for *non-top-level forms*. For *non-top-level*  
+<ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> forms cause compile-time evaluation only at top level. Both :compile-toplevel and :load-toplevel situation specifications are ignored for <GlossaryTerm styled={true} term={"non-top-level form"}><i>non-top-level forms</i></GlossaryTerm>. For *non-top-level*  
 
 
 
@@ -90,7 +90,7 @@ semantics are preserved.
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>, an <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> specifying the :execute situation is treated as an *implicit progn* including the <ClLinks  term={"form"}><i>forms</i></ClLinks> in the body of the <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>; otherwise, the <ClLinks  term={"form"}><i>forms</i></ClLinks> in the body are ignored. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>, an <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> specifying the :execute situation is treated as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm> including the <ClLinks  term={"form"}><i>forms</i></ClLinks> in the body of the <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>; otherwise, the <ClLinks  term={"form"}><i>forms</i></ClLinks> in the body are ignored. 
 
 
 

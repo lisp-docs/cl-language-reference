@@ -14,7 +14,7 @@
 
 
 
-This field does not include conditions that could be signaled by <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> passed to and called by this <ClLinks styled={true} term={"operator"}><i>operator</i></ClLinks> as arguments or through dynamic variables, nor by executing subforms of this operator if it is a <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> or *special operator* .  
+This field does not include conditions that could be signaled by <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> passed to and called by this <ClLinks styled={true} term={"operator"}><i>operator</i></ClLinks> as arguments or through dynamic variables, nor by executing subforms of this operator if it is a <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks> or <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> .  
 
 
 

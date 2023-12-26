@@ -2,11 +2,11 @@
 
 
 
-When the arguments to an irrational mathematical <ClLinks  term={"function"}><i>function</i></ClLinks> are all <ClLinks  term={"rational"}><i>rational</i></ClLinks> and the true mathe matical result is also (mathematically) rational, then unless otherwise noted an implementation is free to return either an accurate <ClLinks  term={"rational"}><i>rational</i></ClLinks> result or a *single float* approximation. If the arguments 
+When the arguments to an irrational mathematical <ClLinks  term={"function"}><i>function</i></ClLinks> are all <ClLinks  term={"rational"}><i>rational</i></ClLinks> and the true mathe matical result is also (mathematically) rational, then unless otherwise noted an implementation is free to return either an accurate <ClLinks  term={"rational"}><i>rational</i></ClLinks> result or a <GlossaryTerm styled={true} term={"single float"}><i>single float</i></GlossaryTerm> approximation. If the arguments 
 
 
 
-are all <ClLinks  term={"rational"}><i>rational</i></ClLinks> but the result cannot be expressed as a <ClLinks  term={"rational"}><i>rational</i></ClLinks> number, then a *single float* approximation is always returned. 
+are all <ClLinks  term={"rational"}><i>rational</i></ClLinks> but the result cannot be expressed as a <ClLinks  term={"rational"}><i>rational</i></ClLinks> number, then a <GlossaryTerm styled={true} term={"single float"}><i>single float</i></GlossaryTerm> approximation is always returned. 
 
 
 
@@ -14,7 +14,7 @@ If the arguments to an irrational mathematical <ClLinks  term={"function"}><i>fu
 
 
 
-(or rational (complex rational)) and the true mathematical result is (mathematically) a complex number with rational real and imaginary parts, then unless otherwise noted an imple mentation is free to return either an accurate result of type (or rational (complex rational)) or a *single float* (permissible only if the imaginary part of the true mathematical result is zero) or (complex single-float). If the arguments are all of type (or rational (complex rational)) but the result cannot be expressed as a <ClLinks  term={"rational"}><i>rational</i></ClLinks> or *complex rational*, then the returned value will be of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks> (permissible only if the imaginary part of the true mathematical result is zero) or (complex single-float). 
+(or rational (complex rational)) and the true mathematical result is (mathematically) a complex number with rational real and imaginary parts, then unless otherwise noted an imple mentation is free to return either an accurate result of type (or rational (complex rational)) or a <GlossaryTerm styled={true} term={"single float"}><i>single float</i></GlossaryTerm> (permissible only if the imaginary part of the true mathematical result is zero) or (complex single-float). If the arguments are all of type (or rational (complex rational)) but the result cannot be expressed as a <ClLinks  term={"rational"}><i>rational</i></ClLinks> or <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm>, then the returned value will be of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks> (permissible only if the imaginary part of the true mathematical result is zero) or (complex single-float). 
 
 
 

@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -54,7 +54,7 @@ If <ClLinks  term={"package"}><i>package</i></ClLinks> is a *package object* tha
 
 
 
-After this operation completes, the *home package* of any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose *home package* had previously been <ClLinks  term={"package"}><i>package</i></ClLinks> is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. Except for this, *symbols accessible* in <ClLinks  term={"package"}><i>package</i></ClLinks> are not modified in any other way; <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> whose *home package* is not <ClLinks  term={"package"}><i>package</i></ClLinks> remain unchanged. 
+After this operation completes, the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> had previously been <ClLinks  term={"package"}><i>package</i></ClLinks> is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. Except for this, *symbols accessible* in <ClLinks  term={"package"}><i>package</i></ClLinks> are not modified in any other way; <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> whose <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> is not <ClLinks  term={"package"}><i>package</i></ClLinks> remain unchanged. 
 
 
 
@@ -120,7 +120,7 @@ After this operation completes, the *home package* of any <ClLinks  term={"symbo
 
 
 
-If the *package designator* is a <ClLinks  term={"name"}><i>name</i></ClLinks> that does not currently name a <ClLinks  term={"package"}><i>package</i></ClLinks>, a <ClLinks  term={"correctable"}><i>correctable</i></ClLinks> error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> is signaled. If correction is attempted, no deletion action is attempted; instead, <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks> immediately returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+If the <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> is a <ClLinks  term={"name"}><i>name</i></ClLinks> that does not currently name a <ClLinks  term={"package"}><i>package</i></ClLinks>, a <ClLinks  term={"correctable"}><i>correctable</i></ClLinks> error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> is signaled. If correction is attempted, no deletion action is attempted; instead, <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks> immediately returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -136,7 +136,7 @@ If <ClLinks  term={"package"}><i>package</i></ClLinks> is used by other <ClLinks
 
 
 
-If correction is attempted, <ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> is effectively called to remove any dependencies, causing <ClLinks  term={"package"}><i>package</i></ClLinks>’s *external symbols* to cease being <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> to those <ClLinks  term={"package"}><i>packages</i></ClLinks> that use <ClLinks  term={"package"}><i>package</i></ClLinks>. <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks> then deletes <ClLinks  term={"package"}><i>package</i></ClLinks> just as it would have had there been no <ClLinks  term={"package"}><i>packages</i></ClLinks> that used it. 
+If correction is attempted, <ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> is effectively called to remove any dependencies, causing <ClLinks  term={"package"}><i>package</i></ClLinks>’s <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> to cease being <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> to those <ClLinks  term={"package"}><i>packages</i></ClLinks> that use <ClLinks  term={"package"}><i>package</i></ClLinks>. <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks> then deletes <ClLinks  term={"package"}><i>package</i></ClLinks> just as it would have had there been no <ClLinks  term={"package"}><i>packages</i></ClLinks> that used it. 
 
 
 

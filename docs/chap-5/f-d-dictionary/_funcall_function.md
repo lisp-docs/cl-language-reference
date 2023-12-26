@@ -6,7 +6,7 @@
 
 **Arguments and Values:**
 
-<GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>—a *function designator* .
+<GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> .
 
 *args*—<GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> to the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>.
 
@@ -14,7 +14,7 @@
 
 **Description:**
 
-<DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink> applies <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> to *args*. If <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, it is coerced to a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> as if by finding its *functional value* in the *global environment*.
+<DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink> applies <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> to *args*. If <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, it is coerced to a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> as if by finding its <GlossaryTerm styled={true} term={"functional value"}><i>functional value</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>.
 
 **Examples:**
 
@@ -34,7 +34,7 @@
 
 **Exceptional Situations:**
 
-An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"undefined-function"}><b>undefined-function</b></DictionaryLink> should be signaled if <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> that does not have a global definition as a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> or that has a global definition as a <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> or a *special operator* .
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"undefined-function"}><b>undefined-function</b></DictionaryLink> should be signaled if <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> that does not have a global definition as a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> or that has a global definition as a <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> .
 
 **See Also:**
 

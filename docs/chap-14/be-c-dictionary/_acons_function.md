@@ -22,11 +22,11 @@
 
 
 
-<ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>—an *association list*. 
+<ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>—an <GlossaryTerm styled={true} term={"association list"}><i>association list</i></GlossaryTerm>. 
 
 
 
-*new-alist*—an *association list*. 
+*new-alist*—an <GlossaryTerm styled={true} term={"association list"}><i>association list</i></GlossaryTerm>. 
 
 
 
@@ -59,7 +59,7 @@ alist → NIL
 
 
 
-(acons *key datum alist<ClLinks styled={true} term={"t"}><i>) </i></ClLinks>≡* (cons (cons *key datum*) *alist*) 
+(acons *key datum alist<ClLinks styled={true} term={"t"}><i>) </i></ClLinks>≡* (cons (cons *key datum*) <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm>) 
 
 
 

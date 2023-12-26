@@ -2,7 +2,7 @@
 
 
 
-The actions of the *pretty printer* when a piece of output is too large to fit in the space available can be precisely controlled. Three concepts underlie the way these operations work—*logical blocks*, *conditional newlines*, and <ClLinks styled={true} term={"section"}><i>sections</i></ClLinks>. Before proceeding further, it is important to define these terms. 
+The actions of the <GlossaryTerm styled={true} term={"pretty printer"}><i>pretty printer</i></GlossaryTerm> when a piece of output is too large to fit in the space available can be precisely controlled. Three concepts underlie the way these operations work—<GlossaryTerm styled={true} term={"logical block"}><i>logical blocks</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"conditional newline"}><i>conditional newlines</i></GlossaryTerm>, and <ClLinks styled={true} term={"section"}><i>sections</i></ClLinks>. Before proceeding further, it is important to define these terms. 
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-An *ordinary lambda list* is used to describe how a set of <ClLinks  term={"argument"}><i>arguments</i></ClLinks> is received by an *ordinary function*. The *defined names* in Figure 3–12 are those which use *ordinary lambda lists*:  
+An <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm> is used to describe how a set of <ClLinks  term={"argument"}><i>arguments</i></ClLinks> is received by an <GlossaryTerm styled={true} term={"ordinary function"}><i>ordinary function</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> in Figure 3–12 are those which use <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda lists</i></GlossaryTerm>:  
 
 
 
@@ -22,7 +22,7 @@ An *ordinary lambda list* is used to describe how a set of <ClLinks  term={"argu
 
 
 
-An *ordinary lambda list* can contain the *lambda list keywords* shown in Figure 3–13. 
+An <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm> can contain the <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm> shown in Figure 3–13. 
 
 
 
@@ -38,11 +38,11 @@ An *ordinary lambda list* can contain the *lambda list keywords* shown in Figure
 
 
 
-Each <ClLinks  term={"element"}><i>element</i></ClLinks> of a *lambda list* is either a parameter specifier or a *lambda list keyword*. Implementations are free to provide additional *lambda list keywords*. For a list of all *lambda list keywords* used by the implementation, see <ClLinks  term={"lambda-list-keywords"}><b>lambda-list-keywords</b></ClLinks>. 
+Each <ClLinks  term={"element"}><i>element</i></ClLinks> of a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> is either a parameter specifier or a <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keyword</i></GlossaryTerm>. Implementations are free to provide additional <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm>. For a list of all <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm> used by the implementation, see <ClLinks  term={"lambda-list-keywords"}><b>lambda-list-keywords</b></ClLinks>. 
 
 
 
-The syntax for *ordinary lambda lists* is as follows: 
+The syntax for <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda lists</i></GlossaryTerm> is as follows: 
 
 
 
@@ -70,7 +70,7 @@ The syntax for *ordinary lambda lists* is as follows:
 
 
 
-A *var* or *supplied-p-parameter* must be a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is not the name of a *constant variable*. 
+A *var* or *supplied-p-parameter* must be a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is not the name of a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. 
 
 
 
@@ -82,7 +82,7 @@ A *keyword-name* can be any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, b
 
 
 
-An *ordinary lambda list* has five parts, any or all of which may be empty. For information about the treatment of argument mismatches, see Section 3.5 (Error Checking in Function Calls).  
+An <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm> has five parts, any or all of which may be empty. For information about the treatment of argument mismatches, see Section 3.5 (Error Checking in Function Calls).  
 
 
 

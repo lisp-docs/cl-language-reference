@@ -18,7 +18,7 @@
 
 
 
-*broadcast-stream*—a *broadcast stream*. 
+*broadcast-stream*—a <GlossaryTerm styled={true} term={"broadcast stream"}><i>broadcast stream</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a *broadcast stream*. 
+Returns a <GlossaryTerm styled={true} term={"broadcast stream"}><i>broadcast stream</i></GlossaryTerm>. 
 
 
 

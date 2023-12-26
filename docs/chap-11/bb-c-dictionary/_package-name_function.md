@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"package-name"}><b>package-name</b></ClLinks> returns the <ClLinks  term={"string"}><i>string</i></ClLinks> that names <ClLinks  term={"package"}><i>package</i></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if the *package designator* is a *package object* that has no name (see the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks>). 
+<ClLinks  term={"package-name"}><b>package-name</b></ClLinks> returns the <ClLinks  term={"string"}><i>string</i></ClLinks> that names <ClLinks  term={"package"}><i>package</i></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if the <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> is a *package object* that has no name (see the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks>). 
 
 
 
@@ -45,7 +45,7 @@
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a *package designator* . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 

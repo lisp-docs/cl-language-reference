@@ -7,7 +7,7 @@ sidebar_position: 105
 
 
 
-**I/O customization variable** *n.* one of the *stream variables* in Figure 26–2, or some other (<ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>) *stream variable* that is defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be an *I/O customization variable*. 
+**I/O customization variable** *n.* one of the <GlossaryTerm styled={true} term={"stream variable"}><i>stream variables</i></GlossaryTerm> in Figure 26–2, or some other (<ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>) <GlossaryTerm styled={true} term={"stream variable"}><i>stream variable</i></GlossaryTerm> that is defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be an *I/O customization variable*. 
 
 
 
@@ -63,7 +63,7 @@ modification are undefined. “Numbers are immutable.”
 
 
 
-specification to be defined by each *conforming implementation* and to be documented by the corresponding implementor. 
+specification to be defined by each <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> and to be documented by the corresponding implementor. 
 
 
 
@@ -75,7 +75,7 @@ Lisp which has been deliberately left unspecified, that might be defined in some
 
 
 
-*conforming implementations* but not in others, and whose details may differ between <ClLinks  term={"implementation"}><i>implementations</i></ClLinks>. A *conforming implementation* is encouraged (but not required) to document its treatment of each item in this specification which is marked 
+<GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementations</i></GlossaryTerm> but not in others, and whose details may differ between <ClLinks  term={"implementation"}><i>implementations</i></ClLinks>. A <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> is encouraged (but not required) to document its treatment of each item in this specification which is marked 
 
 
 
@@ -83,11 +83,11 @@ Lisp which has been deliberately left unspecified, that might be defined in some
 
 
 
-**implementation-independent** *adj.* used to identify or emphasize a behavior or aspect of Common Lisp which does not vary between *conforming implementations*. 
+**implementation-independent** *adj.* used to identify or emphasize a behavior or aspect of Common Lisp which does not vary between <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementations</i></GlossaryTerm>. 
 
 
 
-**implicit block** *n.* a <ClLinks  term={"block"}><i>block</i></ClLinks> introduced by a *macro form* rather than by an explicit <ClLinks  term={"block"}><b>block</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+**implicit block** *n.* a <ClLinks  term={"block"}><i>block</i></ClLinks> introduced by a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> rather than by an explicit <ClLinks  term={"block"}><b>block</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -115,7 +115,7 @@ Lisp which has been deliberately left unspecified, that might be defined in some
 
 
 
-<ClLinks  term={"import"}><b>import</b></ClLinks> *v.t.* (a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> into a <ClLinks  term={"package"}><i>package</i></ClLinks>) to make the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> be <ClLinks  term={"present"}><i>present</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>. **improper list** *n.* a <ClLinks  term={"list"}><i>list</i></ClLinks> which is not a *proper list*: a *circular list* or a *dotted list*. 
+<ClLinks  term={"import"}><b>import</b></ClLinks> *v.t.* (a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> into a <ClLinks  term={"package"}><i>package</i></ClLinks>) to make the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> be <ClLinks  term={"present"}><i>present</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>. **improper list** *n.* a <ClLinks  term={"list"}><i>list</i></ClLinks> which is not a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>: a <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>. 
 
 
 
@@ -131,7 +131,7 @@ Lisp which has been deliberately left unspecified, that might be defined in some
 
 
 
-**indicator** *n.* a *property indicator* . 
+**indicator** *n.* a <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> . 
 
 
 
@@ -151,7 +151,7 @@ Lisp which has been deliberately left unspecified, that might be defined in some
 
 
 
-**initialization argument list** *n.* a *property list* of initialization argument <ClLinks  term={"name"}><i>names</i></ClLinks> and <ClLinks  term={"value"}><i>values</i></ClLinks> used in the protocol for initializing and reinitializing <ClLinks  term={"instance"}><i>instances</i></ClLinks> of *classes*. See Section 7.1 (Object Creation and Initialization). 
+**initialization argument list** *n.* a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> of initialization argument <ClLinks  term={"name"}><i>names</i></ClLinks> and <ClLinks  term={"value"}><i>values</i></ClLinks> used in the protocol for initializing and reinitializing <ClLinks  term={"instance"}><i>instances</i></ClLinks> of *classes*. See Section 7.1 (Object Creation and Initialization). 
 
 
 
@@ -163,7 +163,7 @@ Lisp which has been deliberately left unspecified, that might be defined in some
 
 
 
-**instance** *n.* 1. a *direct instance*. 2. a *generalized instance*. 3. an *indirect instance*. <ClLinks  term={"integer"}><b>integer</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"integer"}><b>integer</b></ClLinks>, which represents a mathematical integer. 
+**instance** *n.* 1. a <GlossaryTerm styled={true} term={"direct instance"}><i>direct instance</i></GlossaryTerm>. 2. a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm>. 3. an <GlossaryTerm styled={true} term={"indirect instance"}><i>indirect instance</i></GlossaryTerm>. <ClLinks  term={"integer"}><b>integer</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"integer"}><b>integer</b></ClLinks>, which represents a mathematical integer. 
 
 
 
@@ -187,15 +187,15 @@ querying. See Section 21.1.1.1.3 (Interactive Streams).
 
 
 
-<ClLinks  term={"intern"}><b>intern</b></ClLinks> *v.t.* 1. (a <ClLinks  term={"string"}><i>string</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>) to look up the <ClLinks  term={"string"}><i>string</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>, returning either a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> with that <ClLinks  term={"name"}><i>name</i></ClLinks> which was already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks> or a newly created *internal symbol* of the <ClLinks  term={"package"}><i>package</i></ClLinks> with that <ClLinks  term={"name"}><i>name</i></ClLinks>. 2. *Idiom.* generally, to observe a protocol whereby objects which are equivalent or have equivalent names under some predicate defined by the protocol are mapped to a single canonical object. 
+<ClLinks  term={"intern"}><b>intern</b></ClLinks> *v.t.* 1. (a <ClLinks  term={"string"}><i>string</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>) to look up the <ClLinks  term={"string"}><i>string</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>, returning either a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> with that <ClLinks  term={"name"}><i>name</i></ClLinks> which was already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks> or a newly created <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm> of the <ClLinks  term={"package"}><i>package</i></ClLinks> with that <ClLinks  term={"name"}><i>name</i></ClLinks>. 2. *Idiom.* generally, to observe a protocol whereby objects which are equivalent or have equivalent names under some predicate defined by the protocol are mapped to a single canonical object. 
 
 
 
-**internal symbol** *n.* (of a <ClLinks  term={"package"}><i>package</i></ClLinks>) a symbol which is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>, but which is not an *external symbol* of the <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+**internal symbol** *n.* (of a <ClLinks  term={"package"}><i>package</i></ClLinks>) a symbol which is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>, but which is not an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm> of the <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-**internal time** *n. time*, represented as an *integer* number of *internal time units*. *Absolute internal time* is measured as an offset from an arbitrarily chosen, 
+**internal time** *n. time*, represented as an *integer* number of <GlossaryTerm styled={true} term={"internal time unit"}><i>internal time units</i></GlossaryTerm>. *Absolute internal time* is measured as an offset from an arbitrarily chosen, 
 
 
 
@@ -211,11 +211,11 @@ querying. See Section 21.1.1.1.3 (Interactive Streams).
 
 
 
-**interpreted function** *n.* a <ClLinks  term={"function"}><i>function</i></ClLinks> that is not a *compiled function*. (It is possible for there to be a *conforming implementation* which has no *interpreted functions*, but a *conforming program* must not assume that all <ClLinks  term={"function"}><i>functions</i></ClLinks> are *compiled functions*.) 
+**interpreted function** *n.* a <ClLinks  term={"function"}><i>function</i></ClLinks> that is not a <GlossaryTerm styled={true} term={"compiled function"}><i>compiled function</i></GlossaryTerm>. (It is possible for there to be a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> which has no <GlossaryTerm styled={true} term={"interpreted function"}><i>interpreted functions</i></GlossaryTerm>, but a <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> must not assume that all <ClLinks  term={"function"}><i>functions</i></ClLinks> are <GlossaryTerm styled={true} term={"compiled function"}><i>compiled functions</i></GlossaryTerm>.) 
 
 
 
-**interpreted implementation** *n.* an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> that uses an execution strategy for *interpreted functions* that does not involve a one-time semantic analysis pre-pass, and instead uses “lazy” (and sometimes repetitious) semantic analysis of <ClLinks  term={"form"}><i>forms</i></ClLinks> as they are encountered during execution. 
+**interpreted implementation** *n.* an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> that uses an execution strategy for <GlossaryTerm styled={true} term={"interpreted function"}><i>interpreted functions</i></GlossaryTerm> that does not involve a one-time semantic analysis pre-pass, and instead uses “lazy” (and sometimes repetitious) semantic analysis of <ClLinks  term={"form"}><i>forms</i></ClLinks> as they are encountered during execution. 
 
 
 
@@ -223,11 +223,11 @@ querying. See Section 21.1.1.1.3 (Interactive Streams).
 
 
 
-**invalid** *n.*, *adj.* 1. *n.* a possible *constituent trait* of a <ClLinks  term={"character"}><i>character</i></ClLinks> which if present signifies that the <ClLinks  term={"character"}><i>character</i></ClLinks> cannot ever appear in a <ClLinks  term={"token"}><i>token</i></ClLinks> except under the control of a *single escape character* . For details, see Section 2.1.4.1 (Constituent Characters). 2. *adj.* (of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) being a <ClLinks  term={"character"}><i>character</i></ClLinks> that has *syntax type constituent* in the *current readtable* and that has the *constituent trait invalid* <sub>1</sub>. See Figure 2–8. 
+**invalid** *n.*, *adj.* 1. *n.* a possible <GlossaryTerm styled={true} term={"constituent trait"}><i>constituent trait</i></GlossaryTerm> of a <ClLinks  term={"character"}><i>character</i></ClLinks> which if present signifies that the <ClLinks  term={"character"}><i>character</i></ClLinks> cannot ever appear in a <ClLinks  term={"token"}><i>token</i></ClLinks> except under the control of a *single escape character* . For details, see Section 2.1.4.1 (Constituent Characters). 2. *adj.* (of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) being a <ClLinks  term={"character"}><i>character</i></ClLinks> that has *syntax type constituent* in the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm> and that has the *constituent trait invalid* <sub>1</sub>. See Figure 2–8. 
 
 
 
-**iteration form** *n.* a *compound form* whose <ClLinks  term={"operator"}><i>operator</i></ClLinks> is named in Figure 26–3, or a *compound form* that has an *implementation-defined operator* and that is defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be an *iteration form*. 
+**iteration form** *n.* a <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm> whose <ClLinks  term={"operator"}><i>operator</i></ClLinks> is named in Figure 26–3, or a <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm> that has an *implementation-defined operator* and that is defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be an <GlossaryTerm styled={true} term={"iteration form"}><i>iteration form</i></GlossaryTerm>. 
 
 
 
@@ -255,7 +255,7 @@ querying. See Section 21.1.1.1.3 (Interactive Streams).
 
 
 
-**iteration variable** *n.* a *variable V* , the <ClLinks  term={"binding"}><i>binding</i></ClLinks> for which was created by an *explicit use* of *V* in an *iteration form*. 
+**iteration variable** *n.* a *variable V* , the <ClLinks  term={"binding"}><i>binding</i></ClLinks> for which was created by an <GlossaryTerm styled={true} term={"explicit use"}><i>explicit use</i></GlossaryTerm> of *V* in an <GlossaryTerm styled={true} term={"iteration form"}><i>iteration form</i></GlossaryTerm>. 
 
 
 

@@ -38,7 +38,7 @@ Data and Control
 
 
 
-<ClLinks  term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks> evaluates <ClLinks  term={"form"}><i>form</i></ClLinks> and creates a <ClLinks  term={"list"}><i>list</i></ClLinks> of the *multiple values*<sub>2</sub> it returns. 
+<ClLinks  term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks> evaluates <ClLinks  term={"form"}><i>form</i></ClLinks> and creates a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub> it returns. 
 
 **Examples:**
 ```lisp

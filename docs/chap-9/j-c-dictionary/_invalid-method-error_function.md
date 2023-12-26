@@ -18,11 +18,11 @@
 
 
 
-*format-control*—a *format control*. 
+*format-control*—a <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm>. 
 
 
 
-*args*—*format arguments* for the *format-control*. 
+*args*—<GlossaryTerm styled={true} term={"format argument"}><i>format arguments</i></GlossaryTerm> for the *format-control*. 
 
 
 

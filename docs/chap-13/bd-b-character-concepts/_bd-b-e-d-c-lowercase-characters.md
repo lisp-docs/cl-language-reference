@@ -6,7 +6,7 @@ A lowercase <ClLinks styled={true} term={"character"}><i>character</i></ClLinks>
 
 
 
-Of the *standard characters*, only these are *lowercase characters*: 
+Of the <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>, only these are *lowercase characters*: 
 
 
 

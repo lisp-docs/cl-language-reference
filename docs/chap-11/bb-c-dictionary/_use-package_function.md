@@ -14,11 +14,11 @@
 
 
 
-*packages-to-use*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of *package designators*. The KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks> may not be supplied. 
+*packages-to-use*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"package designator"}><i>package designators</i></GlossaryTerm>. The KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks> may not be supplied. 
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. The <ClLinks  term={"package"}><i>package</i></ClLinks> cannot be the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. The <ClLinks  term={"package"}><i>package</i></ClLinks> cannot be the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<ClLinks  term={"use-package"}><b>use-package</b></ClLinks> causes <ClLinks  term={"package"}><i>package</i></ClLinks> to inherit all the *external symbols* of *packages-to-use*. The inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> become <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as *internal symbols* of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<ClLinks  term={"use-package"}><b>use-package</b></ClLinks> causes <ClLinks  term={"package"}><i>package</i></ClLinks> to inherit all the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of *packages-to-use*. The inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> become <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbols</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-*Packages-to-use* are added to the *use list* of <ClLinks  term={"package"}><i>package</i></ClLinks> if they are not there already. All *external symbols* in *packages-to-use* become <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> as *internal symbols*. <ClLinks  term={"use-package"}><b>use-package</b></ClLinks> does not cause any new <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> to be <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> but only makes them <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> by inheritance. 
+*Packages-to-use* are added to the <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks> if they are not there already. All <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> in *packages-to-use* become <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> as <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbols</i></GlossaryTerm>. <ClLinks  term={"use-package"}><b>use-package</b></ClLinks> does not cause any new <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> to be <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> but only makes them <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> by inheritance. 
 
 
 
@@ -51,7 +51,7 @@
 
 
 
-The *use list* of <ClLinks  term={"package"}><i>package</i></ClLinks> may be modified. 
+The <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks> may be modified. 
 
 
 

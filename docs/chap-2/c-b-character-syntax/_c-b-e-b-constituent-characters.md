@@ -6,7 +6,7 @@
 
 
 
-Letters in symbol names are sometimes converted to letters in the opposite <ClLinks  term={"case"}><i>case</i></ClLinks> when the name is read; see Section 23.1.2 (Effect of Readtable Case on the Lisp Reader). <ClLinks  term={"case"}><i>Case</i></ClLinks> conversion can be suppressed by the use of *single escape* or *multiple escape* characters. 
+Letters in symbol names are sometimes converted to letters in the opposite <ClLinks  term={"case"}><i>case</i></ClLinks> when the name is read; see Section 23.1.2 (Effect of Readtable Case on the Lisp Reader). <ClLinks  term={"case"}><i>Case</i></ClLinks> conversion can be suppressed by the use of <GlossaryTerm styled={true} term={"single escape"}><i>single escape</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"multiple escape"}><i>multiple escape</i></GlossaryTerm> characters. 
 
 
 

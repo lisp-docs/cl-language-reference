@@ -2,7 +2,7 @@
 
 
 
-If **&amp;key** is present, all specifiers up to the next *lambda list keyword* or the end of the <ClLinks  term={"list"}><i>list</i></ClLinks> are keyword parameter specifiers. When keyword parameters are processed, the same arguments are processed that would be made into a <ClLinks  term={"list"}><i>list</i></ClLinks> for a *rest parameter* . It is permitted to specify both **&amp;rest** and **&amp;key**. In this case the remaining arguments are used for both purposes; that is, all remaining arguments are made into a <ClLinks  term={"list"}><i>list</i></ClLinks> for the *rest parameter* , and are also processed for the **&amp;key** parameters. If **&amp;key** is specified, there must remain an even number of arguments; see Section 3.5.1.6 (Odd Number of Keyword Arguments). These arguments are considered as pairs, the first argument in each pair being interpreted as a name and the second as the corresponding value. The first <ClLinks  term={"object"}><i>object</i></ClLinks> of each pair must be a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>; see Section 3.5.1.5 (Invalid Keyword  
+If **&amp;key** is present, all specifiers up to the next <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keyword</i></GlossaryTerm> or the end of the <ClLinks  term={"list"}><i>list</i></ClLinks> are keyword parameter specifiers. When keyword parameters are processed, the same arguments are processed that would be made into a <ClLinks  term={"list"}><i>list</i></ClLinks> for a <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameter</i></GlossaryTerm> . It is permitted to specify both **&amp;rest** and **&amp;key**. In this case the remaining arguments are used for both purposes; that is, all remaining arguments are made into a <ClLinks  term={"list"}><i>list</i></ClLinks> for the <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameter</i></GlossaryTerm> , and are also processed for the **&amp;key** parameters. If **&amp;key** is specified, there must remain an even number of arguments; see Section 3.5.1.6 (Odd Number of Keyword Arguments). These arguments are considered as pairs, the first argument in each pair being interpreted as a name and the second as the corresponding value. The first <ClLinks  term={"object"}><i>object</i></ClLinks> of each pair must be a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>; see Section 3.5.1.5 (Invalid Keyword  
 
 
 
@@ -10,7 +10,7 @@ If **&amp;key** is present, all specifiers up to the next *lambda list keyword* 
 
 
 
-Arguments). The keyword parameter specifiers may optionally be followed by the *lambda list keyword* **&amp;allow-other-keys**. 
+Arguments). The keyword parameter specifiers may optionally be followed by the <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keyword</i></GlossaryTerm> **&amp;allow-other-keys**. 
 
 
 
@@ -42,7 +42,7 @@ Unless keyword argument checking is suppressed, an argument pair must a name mat
 
 
 
-If keyword argument checking is suppressed, then it is permitted for an argument pair to match no parameter specifier, and the argument pair is ignored, but such an argument pair is accessible through the *rest parameter* if one was supplied. The purpose of these mechanisms is to allow sharing of argument lists among several *lambda expressions* and to allow either the caller or the called *lambda expression* to specify that such sharing may be taking place. 
+If keyword argument checking is suppressed, then it is permitted for an argument pair to match no parameter specifier, and the argument pair is ignored, but such an argument pair is accessible through the <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameter</i></GlossaryTerm> if one was supplied. The purpose of these mechanisms is to allow sharing of argument lists among several <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expressions</i></GlossaryTerm> and to allow either the caller or the called <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> to specify that such sharing may be taking place. 
 
 
 

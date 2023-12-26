@@ -7,7 +7,7 @@ sidebar_position: 110
 
 
 
-**name** *n.*, *v.t.* 1. *n.* an <ClLinks  term={"identifier"}><i>identifier</i></ClLinks> by which an <ClLinks  term={"object"}><i>object</i></ClLinks>, a <ClLinks  term={"binding"}><i>binding</i></ClLinks>, or an *exit point* is referred to by association using a <ClLinks  term={"binding"}><i>binding</i></ClLinks>. 2. *v.t.* to give a <ClLinks  term={"name"}><i>name</i></ClLinks> to. 3. *n.* (of an <ClLinks  term={"object"}><i>object</i></ClLinks> having a name component) the <ClLinks  term={"object"}><i>object</i></ClLinks> which is that component. “The string 
+**name** *n.*, *v.t.* 1. *n.* an <ClLinks  term={"identifier"}><i>identifier</i></ClLinks> by which an <ClLinks  term={"object"}><i>object</i></ClLinks>, a <ClLinks  term={"binding"}><i>binding</i></ClLinks>, or an <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> is referred to by association using a <ClLinks  term={"binding"}><i>binding</i></ClLinks>. 2. *v.t.* to give a <ClLinks  term={"name"}><i>name</i></ClLinks> to. 3. *n.* (of an <ClLinks  term={"object"}><i>object</i></ClLinks> having a name component) the <ClLinks  term={"object"}><i>object</i></ClLinks> which is that component. “The string 
 
 
 
@@ -39,11 +39,11 @@ has <ClLinks  term={"length"}><i>length</i></ClLinks> greater than one. (All *no
 
 
 
-<ClLinks  term={"namestring"}><b>namestring</b></ClLinks> *n.* a <ClLinks  term={"string"}><i>string</i></ClLinks> that represents a <ClLinks  term={"filename"}><i>filename</i></ClLinks> using either the <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> notation for naming *logical pathnames* described in Section 19.3.1 (Syntax of Logical Pathname Namestrings), or some <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> notation for naming a 
+<ClLinks  term={"namestring"}><b>namestring</b></ClLinks> *n.* a <ClLinks  term={"string"}><i>string</i></ClLinks> that represents a <ClLinks  term={"filename"}><i>filename</i></ClLinks> using either the <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> notation for naming <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathnames</i></GlossaryTerm> described in Section 19.3.1 (Syntax of Logical Pathname Namestrings), or some <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> notation for naming a 
 
 
 
-*physical pathname*. 
+<GlossaryTerm styled={true} term={"physical pathname"}><i>physical pathname</i></GlossaryTerm>. 
 
 
 
@@ -59,7 +59,7 @@ has <ClLinks  term={"length"}><i>length</i></ClLinks> greater than one. (All *no
 
 
 
-<ClLinks  term={"nil"}><b>nil</b></ClLinks> *n.* the <ClLinks  term={"object"}><i>object</i></ClLinks> that is at once the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> named "NIL" in the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks>, the *empty list*, the <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> (or *generalized boolean*) representing <ClLinks  term={"false"}><i>false</i></ClLinks>, and the <ClLinks  term={"name"}><i>name</i></ClLinks> of the *empty type*. 
+<ClLinks  term={"nil"}><b>nil</b></ClLinks> *n.* the <ClLinks  term={"object"}><i>object</i></ClLinks> that is at once the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> named "NIL" in the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks>, the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>, the <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> (or <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>) representing <ClLinks  term={"false"}><i>false</i></ClLinks>, and the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <GlossaryTerm styled={true} term={"empty type"}><i>empty type</i></GlossaryTerm>. 
 
 
 
@@ -67,7 +67,7 @@ has <ClLinks  term={"length"}><i>length</i></ClLinks> greater than one. (All *no
 
 
 
-**non-constant variable** *n.* a <ClLinks  term={"variable"}><i>variable</i></ClLinks> that is not a *constant variable*. 
+**non-constant variable** *n.* a <ClLinks  term={"variable"}><i>variable</i></ClLinks> that is not a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. 
 
 
 
@@ -75,7 +75,7 @@ has <ClLinks  term={"length"}><i>length</i></ClLinks> greater than one. (All *no
 
 
 
-intent that no special effort should be made by <ClLinks  term={"code"}><i>code</i></ClLinks> signaling an <ClLinks  term={"error"}><i>error</i></ClLinks> to make that *error correctable*; however, there is no actual requirement on *conforming programs* or *conforming implementations* imposed by this term.) 
+intent that no special effort should be made by <ClLinks  term={"code"}><i>code</i></ClLinks> signaling an <ClLinks  term={"error"}><i>error</i></ClLinks> to make that *error correctable*; however, there is no actual requirement on <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementations</i></GlossaryTerm> imposed by this term.) 
 
 
 
@@ -83,7 +83,7 @@ intent that no special effort should be made by <ClLinks  term={"code"}><i>code<
 
 
 
-**non-generic function** *n.* a <ClLinks  term={"function"}><i>function</i></ClLinks> that is not a *generic function*. 
+**non-generic function** *n.* a <ClLinks  term={"function"}><i>function</i></ClLinks> that is not a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 
 
 
 
@@ -111,19 +111,19 @@ Characters).
 
 
 
-**non-local exit** *n.* a transfer of control (and sometimes <ClLinks  term={"value"}><i>values</i></ClLinks>) to an *exit point* for reasons other than a *normal return*. “The operators <ClLinks  term={"go"}><b>go</b></ClLinks>, <ClLinks  term={"throw"}><b>throw</b></ClLinks>, and <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> cause a non-local exit.” 
+**non-local exit** *n.* a transfer of control (and sometimes <ClLinks  term={"value"}><i>values</i></ClLinks>) to an <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> for reasons other than a <GlossaryTerm styled={true} term={"normal return"}><i>normal return</i></GlossaryTerm>. “The operators <ClLinks  term={"go"}><b>go</b></ClLinks>, <ClLinks  term={"throw"}><b>throw</b></ClLinks>, and <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> cause a non-local exit.” 
 
 
 
-**non-nil** *n.*, *adj.* not <ClLinks  term={"nil"}><b>nil</b></ClLinks>. Technically, any <ClLinks  term={"object"}><i>object</i></ClLinks> which is not <ClLinks  term={"nil"}><b>nil</b></ClLinks> can be referred to as <ClLinks  term={"true"}><i>true</i></ClLinks>, but that would tend to imply a unique view of the <ClLinks  term={"object"}><i>object</i></ClLinks> as a *generalized boolean*. Referring to such an <ClLinks  term={"object"}><i>object</i></ClLinks> as <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks> avoids this implication. 
+**non-nil** *n.*, *adj.* not <ClLinks  term={"nil"}><b>nil</b></ClLinks>. Technically, any <ClLinks  term={"object"}><i>object</i></ClLinks> which is not <ClLinks  term={"nil"}><b>nil</b></ClLinks> can be referred to as <ClLinks  term={"true"}><i>true</i></ClLinks>, but that would tend to imply a unique view of the <ClLinks  term={"object"}><i>object</i></ClLinks> as a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. Referring to such an <ClLinks  term={"object"}><i>object</i></ClLinks> as <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks> avoids this implication. 
 
 
 
-**non-null lexical environment** *n.* a *lexical environment* that has additional 
+**non-null lexical environment** *n.* a <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> that has additional 
 
 
 
-information not present in the *global environment*, such as one or more <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. 
+information not present in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>, such as one or more <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. 
 
 
 
@@ -131,7 +131,7 @@ information not present in the *global environment*, such as one or more <ClLink
 
 
 
-**non-terminating** *adj.* (of a *macro character* ) being such that it is treated as a 
+**non-terminating** *adj.* (of a <GlossaryTerm styled={true} term={"macro character"}><i>macro character</i></GlossaryTerm> ) being such that it is treated as a 
 
 
 
@@ -139,7 +139,7 @@ constituent <ClLinks  term={"character"}><i>character</i></ClLinks> when it appe
 
 
 
-**non-top-level form** *n.* a <ClLinks  term={"form"}><i>form</i></ClLinks> that, by virtue of its position as a <ClLinks  term={"subform"}><i>subform</i></ClLinks> of another <ClLinks  term={"form"}><i>form</i></ClLinks>, is not a *top level form*. See Section 3.2.3.1 (Processing of Top Level Forms). 
+**non-top-level form** *n.* a <ClLinks  term={"form"}><i>form</i></ClLinks> that, by virtue of its position as a <ClLinks  term={"subform"}><i>subform</i></ClLinks> of another <ClLinks  term={"form"}><i>form</i></ClLinks>, is not a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>. See Section 3.2.3.1 (Processing of Top Level Forms). 
 
 
 
@@ -155,11 +155,11 @@ constituent <ClLinks  term={"character"}><i>character</i></ClLinks> when it appe
 
 
 
-<ClLinks  term={"null"}><b>null</b></ClLinks> *adj.*, *n.* 1. *adj.* a. (of a <ClLinks  term={"list"}><i>list</i></ClLinks>) having no <ClLinks  term={"element"}><i>elements</i></ClLinks>: empty. See *empty list*. b. (of a <ClLinks  term={"string"}><i>string</i></ClLinks>) having a <ClLinks  term={"length"}><i>length</i></ClLinks> of zero. (It is common, both within this document and in observed spoken behavior, to refer to an empty string by an apparent definite reference, as in “the *null string*” even though no attempt is made to <ClLinks  term={"intern"}><i>intern</i></ClLinks><sub>2</sub> null strings. The phrase “a *null string*” is technically more correct, but is generally considered awkward by most Lisp programmers. As such, the phrase “the *null string*” should be treated as an indefinite reference in all cases except for anaphoric references.) c. (of an *implementation-defined attribute* of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) An <ClLinks  term={"object"}><i>object</i></ClLinks> to which the value of that <ClLinks  term={"attribute"}><i>attribute</i></ClLinks> defaults if no specific value was requested. 2. *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"null"}><b>null</b></ClLinks> (the only such <ClLinks  term={"object"}><i>object</i></ClLinks> being <ClLinks  term={"nil"}><b>nil</b></ClLinks>). 
+<ClLinks  term={"null"}><b>null</b></ClLinks> *adj.*, *n.* 1. *adj.* a. (of a <ClLinks  term={"list"}><i>list</i></ClLinks>) having no <ClLinks  term={"element"}><i>elements</i></ClLinks>: empty. See <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. b. (of a <ClLinks  term={"string"}><i>string</i></ClLinks>) having a <ClLinks  term={"length"}><i>length</i></ClLinks> of zero. (It is common, both within this document and in observed spoken behavior, to refer to an empty string by an apparent definite reference, as in “the *null string*” even though no attempt is made to <ClLinks  term={"intern"}><i>intern</i></ClLinks><sub>2</sub> null strings. The phrase “a *null string*” is technically more correct, but is generally considered awkward by most Lisp programmers. As such, the phrase “the *null string*” should be treated as an indefinite reference in all cases except for anaphoric references.) c. (of an *implementation-defined attribute* of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) An <ClLinks  term={"object"}><i>object</i></ClLinks> to which the value of that <ClLinks  term={"attribute"}><i>attribute</i></ClLinks> defaults if no specific value was requested. 2. *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"null"}><b>null</b></ClLinks> (the only such <ClLinks  term={"object"}><i>object</i></ClLinks> being <ClLinks  term={"nil"}><b>nil</b></ClLinks>). 
 
 
 
-**null lexical environment** *n.* the *lexical environment* which has no <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. 
+**null lexical environment** *n.* the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> which has no <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. 
 
 
 
@@ -179,7 +179,7 @@ constituent <ClLinks  term={"character"}><i>character</i></ClLinks> when it appe
 
 
 
-**numeric** *adj.* (of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) being one of the *standard characters* 0 through *9* , or being some other *graphic character* defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be <ClLinks  term={"numeric"}><i>numeric</i></ClLinks>. 
+**numeric** *adj.* (of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) being one of the <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm> 0 through *9* , or being some other *graphic character* defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be <ClLinks  term={"numeric"}><i>numeric</i></ClLinks>. 
 
 
 

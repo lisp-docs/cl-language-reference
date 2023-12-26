@@ -78,11 +78,11 @@ A <ClLinks  term={"special"}><b>special</b></ClLinks> declaration does not a↵e
 
 
 
-<ClLinks  term={"special"}><b>special</b></ClLinks> declarations can be either *bound declarations*, a↵ecting both a binding and references, or *free declarations*, a↵ecting only references, depending on whether the declaration is attached to a variable binding. 
+<ClLinks  term={"special"}><b>special</b></ClLinks> declarations can be either <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>, a↵ecting both a binding and references, or <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm>, a↵ecting only references, depending on whether the declaration is attached to a variable binding. 
 
 
 
-When used in a <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks>, a <ClLinks  term={"special"}><b>special</b></ClLinks> *declaration specifier* applies to all <ClLinks  term={"binding"}><i>bindings</i></ClLinks> as well as to all references of the mentioned variables. For example, after 
+When used in a <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks>, a <ClLinks  term={"special"}><b>special</b></ClLinks> <GlossaryTerm styled={true} term={"declaration specifier"}><i>declaration specifier</i></GlossaryTerm> applies to all <ClLinks  term={"binding"}><i>bindings</i></ClLinks> as well as to all references of the mentioned variables. For example, after 
 
 
 

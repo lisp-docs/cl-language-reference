@@ -2,7 +2,7 @@
 
 
 
-In the *for-as-hash* subclause the for or as construct iterates over the elements, keys, and values of a *hash-table*. In this syntax, a compound preposition is used to designate access to a *hash table*. The variable *var* takes on the value of each hash key or hash value in the supplied *hash-table*. The following *loop keywords* serve as valid prepositions within this syntax: 
+In the *for-as-hash* subclause the for or as construct iterates over the elements, keys, and values of a *hash-table*. In this syntax, a compound preposition is used to designate access to a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. The variable *var* takes on the value of each hash key or hash value in the supplied *hash-table*. The following <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keywords</i></GlossaryTerm> serve as valid prepositions within this syntax: 
 
 
 
@@ -18,7 +18,7 @@ each, the
 
 
 
-The *loop keyword* each follows the *loop keyword* being when hash-key or hash-value is used. The *loop keyword* the is used with hash-keys and hash-values only for ease of reading. This agreement isn’t required. 
+The <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> each follows the <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> being when hash-key or hash-value is used. The <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> the is used with hash-keys and hash-values only for ease of reading. This agreement isn’t required. 
 
 
 
@@ -26,7 +26,7 @@ hash-key, hash-keys
 
 
 
-These *loop keywords* access each key entry of the *hash table*. If the name hash-value is supplied in a using construct with one of these Loop schemas, the iteration can optionally access the keyed value. The order in which the keys are accessed is undefined; empty slots in the *hash table* are ignored. 
+These <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keywords</i></GlossaryTerm> access each key entry of the <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. If the name hash-value is supplied in a using construct with one of these Loop schemas, the iteration can optionally access the keyed value. The order in which the keys are accessed is undefined; empty slots in the <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> are ignored. 
 
 
 
@@ -34,7 +34,7 @@ hash-value, hash-values
 
 
 
-These *loop keywords* access each value entry of a *hash table*. If the name hash-key is supplied in a using construct with one of these Loop schemas, the iteration can optionally access the key that corresponds to the value. The order in which the keys are accessed is undefined; empty slots in the *hash table* are ignored. 
+These <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keywords</i></GlossaryTerm> access each value entry of a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. If the name hash-key is supplied in a using construct with one of these Loop schemas, the iteration can optionally access the key that corresponds to the value. The order in which the keys are accessed is undefined; empty slots in the <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> are ignored. 
 
 
 
@@ -42,7 +42,7 @@ using
 
 
 
-The *loop keyword* using introduces the optional key or the keyed value to be accessed. It allows access to the hash key if iteration is over the hash values, and the hash value if iteration is over the hash keys. 
+The <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> using introduces the optional key or the keyed value to be accessed. It allows access to the hash key if iteration is over the hash values, and the hash value if iteration is over the hash keys. 
 
 
 

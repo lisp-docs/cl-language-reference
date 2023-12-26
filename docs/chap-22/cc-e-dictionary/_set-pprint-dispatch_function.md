@@ -14,11 +14,11 @@
 
 
 
-*type-specifier*—a *type specifier* . 
+*type-specifier*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
-<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, a *function name*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*table*—a *pprint dispatch table*. The default is the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></ClLinks>. 
+*table*—a <GlossaryTerm styled={true} term={"pprint dispatch table"}><i>pprint dispatch table</i></GlossaryTerm>. The default is the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></ClLinks>. 
 
 
 
@@ -42,15 +42,15 @@
 
 
 
-Installs an entry into the *pprint dispatch table* which is *table*. 
+Installs an entry into the <GlossaryTerm styled={true} term={"pprint dispatch table"}><i>pprint dispatch table</i></GlossaryTerm> which is *table*. 
 
 
 
-*Type-specifier* is the <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> of the entry. The first action of <ClLinks styled={true} term={"set-pprint-dispatch"}><b>set-pprint-dispatch</b></ClLinks> is to remove any pre-existing entry associated with *type-specifier*. This guarantees that there will never be two entries associated with the same *type specifier* in a given *pprint dispatch table*. Equality of *type specifiers* is tested by <ClLinks styled={true} term={"equal"}><b>equal</b></ClLinks>. 
+*Type-specifier* is the <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> of the entry. The first action of <ClLinks styled={true} term={"set-pprint-dispatch"}><b>set-pprint-dispatch</b></ClLinks> is to remove any pre-existing entry associated with *type-specifier*. This guarantees that there will never be two entries associated with the same <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> in a given <GlossaryTerm styled={true} term={"pprint dispatch table"}><i>pprint dispatch table</i></GlossaryTerm>. Equality of <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> is tested by <ClLinks styled={true} term={"equal"}><b>equal</b></ClLinks>. 
 
 
 
-Two values are associated with each *type specifier* in a *pprint dispatch table*: a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> and a *priority*. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> must accept two arguments: the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> to which output is sent and the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> to be printed. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> should *pretty print* the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> to the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> can assume that object satisfies the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> given by *type-specifier* . The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> must obey <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks>. Any values returned by the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> are ignored. 
+Two values are associated with each <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> in a <GlossaryTerm styled={true} term={"pprint dispatch table"}><i>pprint dispatch table</i></GlossaryTerm>: a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> and a *priority*. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> must accept two arguments: the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> to which output is sent and the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> to be printed. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> should <GlossaryTerm styled={true} term={"pretty print"}><i>pretty print</i></GlossaryTerm> the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> to the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> can assume that object satisfies the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> given by *type-specifier* . The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> must obey <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks>. Any values returned by the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> are ignored. 
 
 
 
@@ -74,7 +74,7 @@ An error is signaled if *priority* is not a *real*.
 
 
 
-Since *pprint dispatch tables* are often used to control the pretty printing of Lisp code, it is common for the *type-specifier* to be an <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> of the form 
+Since <GlossaryTerm styled={true} term={"pprint dispatch table"}><i>pprint dispatch tables</i></GlossaryTerm> are often used to control the pretty printing of Lisp code, it is common for the *type-specifier* to be an <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> of the form 
 
 
 

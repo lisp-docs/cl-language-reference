@@ -98,7 +98,7 @@
 
 
 
-*default-initargs*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *keyword/value pairs*. 
+*default-initargs*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"keyword/value pair"}><i>keyword/value pairs</i></GlossaryTerm>. 
 
 
 
@@ -122,7 +122,7 @@
 
 
 
-:writer can be supplied more than once for a given <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> and must name a *generic function*. :accessor 
+:writer can be supplied more than once for a given <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> and must name a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. :accessor 
 
 
 
@@ -222,11 +222,11 @@ A description of *slot-options* follows:
 
 
 
-The :reader slot option specifies that an *unqualified method* is to be defined on the *generic function* named by the argument to :reader to read the value of the given <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 
+The :reader slot option specifies that an <GlossaryTerm styled={true} term={"unqualified method"}><i>unqualified method</i></GlossaryTerm> is to be defined on the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> named by the argument to :reader to read the value of the given <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 
 
 
 
-*•* The :initform slot option is used to provide a default initial value form to be used in the initialization of the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. This <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is evaluated every time it is used to initialize the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. The *lexical environment* in which this <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is evaluated is the lexical <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> in which the <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks> form was evaluated. Note that the *lexical environment* refers both to variables and to <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks>. For *local slots*, the *dynamic environment* is the dynamic <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> in which <ClLinks styled={true} term={"make-condition"}><b>make-condition</b></ClLinks> was called; for *shared slots*, the *dynamic environment* is the *dynamic environment* in which the <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks> form was evaluated. 
+*•* The :initform slot option is used to provide a default initial value form to be used in the initialization of the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. This <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is evaluated every time it is used to initialize the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. The <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> in which this <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is evaluated is the lexical <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> in which the <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks> form was evaluated. Note that the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> refers both to variables and to <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks>. For <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> is the dynamic <ClLinks styled={true} term={"environment"}><i>environment</i></ClLinks> in which <ClLinks styled={true} term={"make-condition"}><b>make-condition</b></ClLinks> was called; for <GlossaryTerm styled={true} term={"shared slot"}><i>shared slots</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> is the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> in which the <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks> form was evaluated. 
 
 
 
@@ -282,7 +282,7 @@ This option is treated the same as it would be <ClLinks styled={true} term={"def
 
 
 
-The :documentation slot option provides a *documentation string* for the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 
+The :documentation slot option provides a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> for the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks>. 
 
 
 
@@ -302,7 +302,7 @@ The :documentation slot option provides a *documentation string* for the <ClLink
 
 
 
-If the value supplied by the argument to :report (*report-name*) is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or a *lambda expression*, it must be acceptable to <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>. (function *report-name*) is evaluated in the current *lexical environment*. It should return a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two arguments, a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> and a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, that prints on the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> a description of the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. This <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is called whenever the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is printed while <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+If the value supplied by the argument to :report (*report-name*) is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>, it must be acceptable to <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>. (function *report-name*) is evaluated in the current <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm>. It should return a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two arguments, a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> and a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, that prints on the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> a description of the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. This <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is called whenever the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is printed while <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -346,7 +346,7 @@ The consequences are unspecified if an attempt is made to assign the <ClLinks st
 
 
 
-If a <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> appears as a *top level form*, the <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> must make <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> recognizable as a valid <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> name, and it must be possible to reference the *condition type* as the *parent-type* of another *condition type* in a subsequent <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> in the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> being compiled. 
+If a <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks styled={true} term={"compiler"}><i>compiler</i></ClLinks> must make <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> recognizable as a valid <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> name, and it must be possible to reference the *condition type* as the *parent-type* of another *condition type* in a subsequent <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> in the <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> being compiled. 
 
 
 

@@ -14,7 +14,7 @@
 
 
 
-*x*—a *generalized boolean* (*i.e.*, any <ClLinks  term={"object"}><i>object</i></ClLinks>). 
+*x*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> (*i.e.*, any <ClLinks  term={"object"}><i>object</i></ClLinks>). 
 
 
 
@@ -51,7 +51,7 @@ Returns <ClLinks  term={"t"}><b>t</b></ClLinks> if *x* is <ClLinks  term={"false
 
 
 
-<ClLinks  term={"not"}><b>not</b></ClLinks> is intended to be used to invert the ‘truth value’ of a <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> (or *generalized boolean*) whereas <ClLinks  term={"null"}><b>null</b></ClLinks> is intended to be used to test for the *empty list*. Operationally, <ClLinks  term={"not"}><b>not</b></ClLinks> and <ClLinks  term={"null"}><b>null</b></ClLinks> compute the same result; which to use is a matter of style. 
+<ClLinks  term={"not"}><b>not</b></ClLinks> is intended to be used to invert the ‘truth value’ of a <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> (or <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>) whereas <ClLinks  term={"null"}><b>null</b></ClLinks> is intended to be used to test for the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. Operationally, <ClLinks  term={"not"}><b>not</b></ClLinks> and <ClLinks  term={"null"}><b>null</b></ClLinks> compute the same result; which to use is a matter of style. 
 
 
 

@@ -14,11 +14,11 @@
 
 
 
-A fixed set of 96 <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> required to be present in all *conforming implementations*. *Standard characters* are defined in Section 2.1.3 (Standard Characters). 
+A fixed set of 96 <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> required to be present in all <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementations</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"standard character"}><i>Standard characters</i></GlossaryTerm> are defined in Section 2.1.3 (Standard Characters). 
 
 
 
-Any <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> that is not <ClLinks styled={true} term={"simple"}><i>simple</i></ClLinks> is not a *standard character* . 
+Any <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> that is not <ClLinks styled={true} term={"simple"}><i>simple</i></ClLinks> is not a <GlossaryTerm styled={true} term={"standard character"}><i>standard character</i></GlossaryTerm> . 
 
 
 

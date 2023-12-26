@@ -50,19 +50,19 @@
 
 
 
-*defined-package-name*—a *string designator* . 
+*defined-package-name*—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
 
 
 
-*package-name*—a *package designator* . 
+*package-name*—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 
-<ClLinks  term={"nickname"}><i>nickname</i></ClLinks>—a *string designator* . 
+<ClLinks  term={"nickname"}><i>nickname</i></ClLinks>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
 
 
 
-*symbol-name*—a *string designator* . 
+*symbol-name*—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
 
 
 
@@ -98,7 +98,7 @@ The arguments to :nicknames set the <ClLinks  term={"package"}><i>package</i></C
 
 
 
-The argument to :documentation specifies a *documentation string*; it is attached as a 
+The argument to :documentation specifies a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm>; it is attached as a 
 
 
 
@@ -114,7 +114,7 @@ The argument to :documentation specifies a *documentation string*; it is attache
 
 
 
-*documentation string* to the <ClLinks  term={"package"}><i>package</i></ClLinks>. At most one :documentation option can appear in a single <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to the <ClLinks  term={"package"}><i>package</i></ClLinks>. At most one :documentation option can appear in a single <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -154,7 +154,7 @@ The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *sy
 
 
 
-The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found or created in the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined and <ClLinks  term={"exported"}><i>exported</i></ClLinks>. The :export option interacts with the :use option, since inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> can be used rather than new ones created. The :export option interacts with the :import-from and :shadowing-import-from options, since *imported* symbols can be used rather than new ones created. If an argument to the :export option is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as an (inherited) *internal symbol* via <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, that the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> named by *symbol-name* is first *imported* into the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined, and is then <ClLinks  term={"exported"}><i>exported</i></ClLinks> from that <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found or created in the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined and <ClLinks  term={"exported"}><i>exported</i></ClLinks>. The :export option interacts with the :use option, since inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> can be used rather than new ones created. The :export option interacts with the :import-from and :shadowing-import-from options, since *imported* symbols can be used rather than new ones created. If an argument to the :export option is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as an (inherited) <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm> via <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, that the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> named by *symbol-name* is first *imported* into the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined, and is then <ClLinks  term={"exported"}><i>exported</i></ClLinks> from that <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -210,11 +210,11 @@ The order in which the options appear in a <ClLinks  term={"defpackage"}><b>defp
 
 
 
-Shadows are established first, since they might be necessary to block spurious name conflicts when the :use option is processed. The :use option is executed next so that :intern and :export options can refer to normally inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. The :export option is executed last so that it can refer to <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> created by any of the other options; in particular, *shadowing symbols* and *imported symbols* can be made external. 
+Shadows are established first, since they might be necessary to block spurious name conflicts when the :use option is processed. The :use option is executed next so that :intern and :export options can refer to normally inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. The :export option is executed last so that it can refer to <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> created by any of the other options; in particular, <GlossaryTerm styled={true} term={"shadowing symbol"}><i>shadowing symbols</i></GlossaryTerm> and *imported symbols* can be made external. 
 
 
 
-If a defpackage <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a *top level form*, all of the actions normally performed by this <ClLinks  term={"macro"}><i>macro</i></ClLinks> at load time must also be performed at compile time. 
+If a defpackage <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, all of the actions normally performed by this <ClLinks  term={"macro"}><i>macro</i></ClLinks> at load time must also be performed at compile time. 
 
 
 

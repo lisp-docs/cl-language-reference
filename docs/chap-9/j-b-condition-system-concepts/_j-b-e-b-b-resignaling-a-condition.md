@@ -2,7 +2,7 @@
 
 
 
-During the *dynamic extent* of the *signaling* process for a particular *condition object<ClLinks styled={true} term={"t"}><i>, </i></ClLinks>*signaling** the same *condition object* again is permitted if and only if the <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks> represented in both cases are the same. 
+During the <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm> of the *signaling* process for a particular *condition object<ClLinks styled={true} term={"t"}><i>, </i></ClLinks>*signaling** the same *condition object* again is permitted if and only if the <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks> represented in both cases are the same. 
 
 
 

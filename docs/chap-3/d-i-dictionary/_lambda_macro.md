@@ -14,7 +14,7 @@
 
 
 
-*lambda-list*—an *ordinary lambda list*.  
+*lambda-list*—an <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm>.  
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-Provides a shorthand notation for a <ClLinks  term={"function"}><b>function</b></ClLinks> *special form* involving a *lambda expression* such that: 
+Provides a shorthand notation for a <ClLinks  term={"function"}><b>function</b></ClLinks> <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm> involving a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> such that: 
 
 
 

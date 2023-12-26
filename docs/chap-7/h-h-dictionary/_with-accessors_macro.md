@@ -26,7 +26,7 @@
 
 
 
-*accessor-name*—a *function name*; not evaluated. 
+*accessor-name*—a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>; not evaluated. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 

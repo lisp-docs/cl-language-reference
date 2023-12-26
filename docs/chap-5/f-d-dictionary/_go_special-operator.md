@@ -1,4 +1,4 @@
-**go** *Special Operator* 
+**go** <GlossaryTerm styled={true} term={"special operator"}><i>Special Operator</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"tag"}><i>tag</i></ClLinks>—a *go tag*. 
+<ClLinks  term={"tag"}><i>tag</i></ClLinks>—a <GlossaryTerm styled={true} term={"go tag"}><i>go tag</i></GlossaryTerm>. 
 
 
 

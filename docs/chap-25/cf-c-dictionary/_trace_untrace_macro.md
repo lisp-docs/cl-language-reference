@@ -18,11 +18,11 @@
 
 
 
-*function-name*—a *function name*. 
+*function-name*—a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>. 
 
 
 
-*trace-result*—<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, unless no *function-names* are supplied, in which case *trace-result* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of *function names*. 
+*trace-result*—<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, unless no *function-names* are supplied, in which case *trace-result* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"function name"}><i>function names</i></GlossaryTerm>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Invoking <ClLinks styled={true} term={"trace"}><b>trace</b></ClLinks> with one or more *function-names* causes the denoted <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> to be “traced.” Whenever a traced <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is invoked, information about the call, about the arguments passed, and about any eventually returned values is printed to *trace output*. If <ClLinks styled={true} term={"trace"}><b>trace</b></ClLinks> is used with no *function-names*, no tracing action is performed; instead, a list of the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> currently being traced is returned. 
+Invoking <ClLinks styled={true} term={"trace"}><b>trace</b></ClLinks> with one or more *function-names* causes the denoted <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> to be “traced.” Whenever a traced <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is invoked, information about the call, about the arguments passed, and about any eventually returned values is printed to <GlossaryTerm styled={true} term={"trace output"}><i>trace output</i></GlossaryTerm>. If <ClLinks styled={true} term={"trace"}><b>trace</b></ClLinks> is used with no *function-names*, no tracing action is performed; instead, a list of the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> currently being traced is returned. 
 
 
 

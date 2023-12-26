@@ -58,7 +58,7 @@
 
 
 
-<ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that names a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, or a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument that returns a *generalized boolean* value. 
+<ClLinks styled={true} term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that names a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, or a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> value. 
 
 
 
@@ -66,7 +66,7 @@
 
 
 
-*test*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *key*—a *designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*test*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -86,11 +86,11 @@
 
 
 
-<ClLinks styled={true} term={"subst"}><b>subst</b></ClLinks> makes a copy of <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks>, substituting *new* for every subtree or leaf of <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> (whether the subtree or leaf is a <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> or a <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of its parent) such that *old* and the subtree or leaf *satisfy the test*. 
+<ClLinks styled={true} term={"subst"}><b>subst</b></ClLinks> makes a copy of <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks>, substituting *new* for every subtree or leaf of <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> (whether the subtree or leaf is a <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> or a <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of its parent) such that *old* and the subtree or leaf <GlossaryTerm styled={true} term={"satisfy the test"}><i>satisfy the test</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"nsubst"}><b>nsubst</b></ClLinks> is a destructive version of <ClLinks styled={true} term={"subst"}><b>subst</b></ClLinks>. The list structure of <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> is altered by destructively replacing with *new* each leaf of the <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> such that *old* and the leaf *satisfy the test*. 
+<ClLinks styled={true} term={"nsubst"}><b>nsubst</b></ClLinks> is a destructive version of <ClLinks styled={true} term={"subst"}><b>subst</b></ClLinks>. The list structure of <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> is altered by destructively replacing with *new* each leaf of the <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> such that *old* and the leaf <GlossaryTerm styled={true} term={"satisfy the test"}><i>satisfy the test</i></GlossaryTerm>. 
 
 
 
@@ -131,7 +131,7 @@ tree1 → (1 (1 2) X X)
 
 
 
-<ClLinks styled={true} term={"nsubst"}><b>nsubst</b></ClLinks>, <ClLinks styled={true} term={"nsubst-if"}><b>nsubst-if</b></ClLinks>, and <ClLinks styled={true} term={"nsubst-if-not"}><b>nsubst-if-not</b></ClLinks> might alter the *tree structure* of <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks>. 
+<ClLinks styled={true} term={"nsubst"}><b>nsubst</b></ClLinks>, <ClLinks styled={true} term={"nsubst-if"}><b>nsubst-if</b></ClLinks>, and <ClLinks styled={true} term={"nsubst-if-not"}><b>nsubst-if-not</b></ClLinks> might alter the <GlossaryTerm styled={true} term={"tree structure"}><i>tree structure</i></GlossaryTerm> of <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks>. 
 
 
 

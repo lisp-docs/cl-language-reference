@@ -42,7 +42,7 @@
 
 
 
-If <ClLinks  term={"number"}><i>number</i></ClLinks> is a positive <ClLinks  term={"rational"}><i>rational</i></ClLinks>, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether *root* is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> or a <ClLinks  term={"float"}><i>float</i></ClLinks>. If <ClLinks  term={"number"}><i>number</i></ClLinks> is a negative <ClLinks  term={"rational"}><i>rational</i></ClLinks>, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether *root* is a *complex rational* or a *complex float*. 
+If <ClLinks  term={"number"}><i>number</i></ClLinks> is a positive <ClLinks  term={"rational"}><i>rational</i></ClLinks>, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether *root* is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> or a <ClLinks  term={"float"}><i>float</i></ClLinks>. If <ClLinks  term={"number"}><i>number</i></ClLinks> is a negative <ClLinks  term={"rational"}><i>rational</i></ClLinks>, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether *root* is a <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>. 
 
 
 

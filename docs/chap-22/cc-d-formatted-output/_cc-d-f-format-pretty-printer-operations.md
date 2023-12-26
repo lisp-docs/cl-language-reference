@@ -2,7 +2,7 @@
 
 
 
-The following constructs provide access to the *pretty printer* : 
+The following constructs provide access to the <GlossaryTerm styled={true} term={"pretty printer"}><i>pretty printer</i></GlossaryTerm> : 
 
 
 

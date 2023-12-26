@@ -1,4 +1,4 @@
-**change-class** *Standard Generic Function* 
+**change-class** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-*new-class*—a *class designator* . 
+*new-class*—a <GlossaryTerm styled={true} term={"class designator"}><i>class designator</i></GlossaryTerm> . 
 
 
 
-*initargs*—an *initialization argument list*. 
+*initargs*—an <GlossaryTerm styled={true} term={"initialization argument list"}><i>initialization argument list</i></GlossaryTerm>. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-The *generic function* <ClLinks  term={"change-class"}><b>change-class</b></ClLinks> changes the <ClLinks  term={"class"}><i>class</i></ClLinks> of an <ClLinks  term={"instance"}><i>instance</i></ClLinks> to *new-class*. It destructively modifies and returns the <ClLinks  term={"instance"}><i>instance</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <ClLinks  term={"change-class"}><b>change-class</b></ClLinks> changes the <ClLinks  term={"class"}><i>class</i></ClLinks> of an <ClLinks  term={"instance"}><i>instance</i></ClLinks> to *new-class*. It destructively modifies and returns the <ClLinks  term={"instance"}><i>instance</i></ClLinks>. 
 
 
 

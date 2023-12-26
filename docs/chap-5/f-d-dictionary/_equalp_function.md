@@ -22,7 +22,7 @@
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -90,7 +90,7 @@ If two *structures S*<sub>1</sub> and *S*<sub>2</sub> have the same <ClLinks  te
 
 
 
-*Hash Tables* 
+<GlossaryTerm styled={true} term={"hash table"}><i>Hash Tables</i></GlossaryTerm> 
 
 
 
@@ -106,7 +106,7 @@ If two *structures S*<sub>1</sub> and *S*<sub>2</sub> have the same <ClLinks  te
 
 | :- |
 
-|<p><ClLinks  term={"number"}><i>number</i></ClLinks> uses <ClLinks  term={"="}><b>=</b></ClLinks> </p><p><ClLinks  term={"character"}><i>character</i></ClLinks> uses <ClLinks  term={"char-equal"}><b>char-equal</b></ClLinks> </p><p><ClLinks  term={"cons"}><i>cons</i></ClLinks> descends </p><p>*bit vector* descends </p><p><ClLinks  term={"string"}><i>string</i></ClLinks> descends </p><p><ClLinks  term={"pathname"}><i>pathname</i></ClLinks> same as <ClLinks  term={"equal"}><b>equal</b></ClLinks> </p><p><ClLinks  term={"structure"}><i>structure</i></ClLinks> descends, as described above </p><p>Other <ClLinks  term={"array"}><i>array</i></ClLinks> descends </p><p>*hash table* descends, as described above </p><p>Other <ClLinks  term={"object"}><i>object</i></ClLinks> uses <ClLinks  term={"eq"}><b>eq</b></ClLinks></p>|
+|<p><ClLinks  term={"number"}><i>number</i></ClLinks> uses <ClLinks  term={"="}><b>=</b></ClLinks> </p><p><ClLinks  term={"character"}><i>character</i></ClLinks> uses <ClLinks  term={"char-equal"}><b>char-equal</b></ClLinks> </p><p><ClLinks  term={"cons"}><i>cons</i></ClLinks> descends </p><p><GlossaryTerm styled={true} term={"bit vector"}><i>bit vector</i></GlossaryTerm> descends </p><p><ClLinks  term={"string"}><i>string</i></ClLinks> descends </p><p><ClLinks  term={"pathname"}><i>pathname</i></ClLinks> same as <ClLinks  term={"equal"}><b>equal</b></ClLinks> </p><p><ClLinks  term={"structure"}><i>structure</i></ClLinks> descends, as described above </p><p>Other <ClLinks  term={"array"}><i>array</i></ClLinks> descends </p><p><GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> descends, as described above </p><p>Other <ClLinks  term={"object"}><i>object</i></ClLinks> uses <ClLinks  term={"eq"}><b>eq</b></ClLinks></p>|
 
 
 

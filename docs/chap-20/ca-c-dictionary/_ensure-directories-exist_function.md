@@ -14,15 +14,15 @@
 
 
 
-*pathspec*—a *pathname designator* . 
+*pathspec*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
-*verbose*—a *generalized boolean*. 
+*verbose*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
-*created*—a *generalized boolean*. 
+*created*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@ Tests whether the directories containing the specified <ClLinks  term={"file"}><
 
 
 
-If the containing directories do not exist and if *verbose* is <ClLinks  term={"true"}><i>true</i></ClLinks>, then the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is permitted (but not required) to perform output to *standard output* saying what directories were created. If the containing directories exist, or if *verbose* is <ClLinks  term={"false"}><i>false</i></ClLinks>, this function performs no output. 
+If the containing directories do not exist and if *verbose* is <ClLinks  term={"true"}><i>true</i></ClLinks>, then the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is permitted (but not required) to perform output to <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm> saying what directories were created. If the containing directories exist, or if *verbose* is <ClLinks  term={"false"}><i>false</i></ClLinks>, this function performs no output. 
 
 
 
@@ -50,7 +50,7 @@ If the containing directories do not exist and if *verbose* is <ClLinks  term={"
 
 
 
-The *primary value* is the given *pathspec* so that this operation can be straightforwardly composed with other file manipulation expressions. The *secondary value*, *created*, is <ClLinks  term={"true"}><i>true</i></ClLinks> if any directories were created. 
+The <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> is the given *pathspec* so that this operation can be straightforwardly composed with other file manipulation expressions. The <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *created*, is <ClLinks  term={"true"}><i>true</i></ClLinks> if any directories were created. 
 
 
 
@@ -70,7 +70,7 @@ An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-
 
 
 
-If the directory creation attempt is not successful, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled; if this occurs, it might be the case that none, some, or all of the requested creations have actually occurred within the *file system*. 
+If the directory creation attempt is not successful, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled; if this occurs, it might be the case that none, some, or all of the requested creations have actually occurred within the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. 
 
 
 

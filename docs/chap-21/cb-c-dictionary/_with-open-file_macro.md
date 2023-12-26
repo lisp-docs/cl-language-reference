@@ -22,7 +22,7 @@
 
 
 
-*filespec*—a *pathname designator* . 
+*filespec*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -46,15 +46,15 @@
 
 
 
-<ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> uses <ClLinks  term={"open"}><b>open</b></ClLinks> to create a *file stream* to <ClLinks  term={"file"}><i>file</i></ClLinks> named by *filespec*. *Filespec* is the name of the file to be opened. *Options* are used as keyword arguments to <ClLinks  term={"open"}><b>open</b></ClLinks>. 
+<ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> uses <ClLinks  term={"open"}><b>open</b></ClLinks> to create a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> to <ClLinks  term={"file"}><i>file</i></ClLinks> named by *filespec*. *Filespec* is the name of the file to be opened. *Options* are used as keyword arguments to <ClLinks  term={"open"}><b>open</b></ClLinks>. 
 
 
 
-The *stream object* to which the *stream variable* is <ClLinks  term={"bound"}><i>bound</i></ClLinks> has *dynamic extent*; its <ClLinks  term={"extent"}><i>extent</i></ClLinks> ends when the <ClLinks  term={"form"}><i>form</i></ClLinks> is exited. 
+The *stream object* to which the <GlossaryTerm styled={true} term={"stream variable"}><i>stream variable</i></GlossaryTerm> is <ClLinks  term={"bound"}><i>bound</i></ClLinks> has <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>; its <ClLinks  term={"extent"}><i>extent</i></ClLinks> ends when the <ClLinks  term={"form"}><i>form</i></ClLinks> is exited. 
 
 
 
-<ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> evaluates the <ClLinks  term={"form"}><i>forms</i></ClLinks> as an *implicit progn* with <ClLinks  term={"stream"}><i>stream</i></ClLinks> bound to the value returned by <ClLinks  term={"open"}><b>open</b></ClLinks>. 
+<ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> evaluates the <ClLinks  term={"form"}><i>forms</i></ClLinks> as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm> with <ClLinks  term={"stream"}><i>stream</i></ClLinks> bound to the value returned by <ClLinks  term={"open"}><b>open</b></ClLinks>. 
 
 
 
@@ -82,7 +82,7 @@ It is possible by the use of :if-exists nil or :if-does-not-exist nil for <ClLin
 
 
 
-The consequences are undefined if an attempt is made to <ClLinks  term={"assign"}><i>assign</i></ClLinks> the *stream variable*. The compiler may choose to issue a warning if such an attempt is detected. 
+The consequences are undefined if an attempt is made to <ClLinks  term={"assign"}><i>assign</i></ClLinks> the <GlossaryTerm styled={true} term={"stream variable"}><i>stream variable</i></GlossaryTerm>. The compiler may choose to issue a warning if such an attempt is detected. 
 
 
 

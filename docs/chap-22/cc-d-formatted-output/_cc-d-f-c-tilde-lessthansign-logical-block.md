@@ -26,7 +26,7 @@ The body segment can be any arbitrary <i>format string</i>. This <i>format strin
 
 
 
-If the <ClLinks styled={true} term={"at-sign"}><i>at-sign</i></ClLinks> modifier is used with &#126;&lt;...&#126;:&gt;, the entire remaining argument list is passed to the directive as its argument. All of the remaining arguments are always consumed by &#126;@&lt;...&#126;:&gt;, even if they are not all used by the *format string* nested in the directive. Other than the difference in its argument, &#126;@&lt;...&#126;:&gt; is exactly the same as &#126;&lt;...&#126;:&gt; except that circularity detection is not applied if &#126;@&lt;...&#126;:&gt; is encountered at top level in a *format string*. This ensures that circularity detection is applied only to data lists, not to *format argument lists*. 
+If the <ClLinks styled={true} term={"at-sign"}><i>at-sign</i></ClLinks> modifier is used with &#126;&lt;...&#126;:&gt;, the entire remaining argument list is passed to the directive as its argument. All of the remaining arguments are always consumed by &#126;@&lt;...&#126;:&gt;, even if they are not all used by the <GlossaryTerm styled={true} term={"format string"}><i>format string</i></GlossaryTerm> nested in the directive. Other than the difference in its argument, &#126;@&lt;...&#126;:&gt; is exactly the same as &#126;&lt;...&#126;:&gt; except that circularity detection is not applied if &#126;@&lt;...&#126;:&gt; is encountered at top level in a <GlossaryTerm styled={true} term={"format string"}><i>format string</i></GlossaryTerm>. This ensures that circularity detection is applied only to data lists, not to *format argument lists*. 
 
 
 
@@ -42,7 +42,7 @@ If the <ClLinks styled={true} term={"at-sign"}><i>at-sign</i></ClLinks> modifier
 
 
 
-To a considerable extent, the basic form of the directive &#126;&lt;...&#126;&gt; is incompatible with the dynamic control of the arrangement of output by &#126;W, &#126; , &#126;&lt;...&#126;:&gt;, &#126;I, and &#126;:T. As a result, an error is signaled if any of these directives is nested within &#126;&lt;...&#126;&gt;. Beyond this, an error is also signaled if the &#126;&lt;...&#126;:;...&#126;&gt; form of &#126;&lt;...&#126;&gt; is used in the same *format string* with &#126;W, &#126; , &#126;&lt;...&#126;:&gt;, &#126;I, or &#126;:T. 
+To a considerable extent, the basic form of the directive &#126;&lt;...&#126;&gt; is incompatible with the dynamic control of the arrangement of output by &#126;W, &#126; , &#126;&lt;...&#126;:&gt;, &#126;I, and &#126;:T. As a result, an error is signaled if any of these directives is nested within &#126;&lt;...&#126;&gt;. Beyond this, an error is also signaled if the &#126;&lt;...&#126;:;...&#126;&gt; form of &#126;&lt;...&#126;&gt; is used in the same <GlossaryTerm styled={true} term={"format string"}><i>format string</i></GlossaryTerm> with &#126;W, &#126; , &#126;&lt;...&#126;:&gt;, &#126;I, or &#126;:T. 
 
 
 

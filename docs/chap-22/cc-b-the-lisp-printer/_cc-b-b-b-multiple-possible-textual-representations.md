@@ -30,7 +30,7 @@ B
 
 
 
-In general, from the point of view of the *Lisp reader* , wherever <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks> is permissible in a textual representation, any number of <ClLinks styled={true} term={"space"}><i>spaces</i></ClLinks> and <ClLinks styled={true} term={"newline"}><i>newlines</i></ClLinks> can appear in *standard syntax* . 
+In general, from the point of view of the *Lisp reader* , wherever <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks> is permissible in a textual representation, any number of <ClLinks styled={true} term={"space"}><i>spaces</i></ClLinks> and <ClLinks styled={true} term={"newline"}><i>newlines</i></ClLinks> can appear in <GlossaryTerm styled={true} term={"standard syntax"}><i>standard syntax</i></GlossaryTerm> . 
 
 
 
@@ -38,7 +38,7 @@ When a function such as <ClLinks styled={true} term={"print"}><b>print</b></ClLi
 
 
 
-A number of option variables, called *printer control variables*, are provided to permit control of individual aspects of the printed representation of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>. Figure 22–1 shows the *standardized printer control variables*; there might also be *implementation-defined printer control variables*. 
+A number of option variables, called <GlossaryTerm styled={true} term={"printer control variable"}><i>printer control variables</i></GlossaryTerm>, are provided to permit control of individual aspects of the printed representation of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>. Figure 22–1 shows the *standardized printer control variables*; there might also be *implementation-defined printer control variables*. 
 
 
 
@@ -66,7 +66,7 @@ A number of option variables, called *printer control variables*, are provided t
 
 
 
-In addition to the *printer control variables*, the following additional *defined names* relate to or affect the behavior of the *Lisp printer* : 
+In addition to the <GlossaryTerm styled={true} term={"printer control variable"}><i>printer control variables</i></GlossaryTerm>, the following additional <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> relate to or affect the behavior of the *Lisp printer* : 
 
 
 

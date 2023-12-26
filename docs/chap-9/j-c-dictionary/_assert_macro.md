@@ -62,7 +62,7 @@
 
 
 
-The <ClLinks styled={true} term={"place"}><i>places</i></ClLinks> are *generalized references* to data upon which *test-form* depends, whose values can be changed by the user in attempting to correct the error. <ClLinks styled={true} term={"subform"}><i>Subforms</i></ClLinks> of each <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> are only evaluated if an error is signaled, and might be re-evaluated if the error is re-signaled (after continuing without actually fixing the problem). The order of evaluation of the <ClLinks styled={true} term={"place"}><i>places</i></ClLinks> is not specified; see Section 5.1.1.1 (Evaluation of Subforms to Places). If a *place form* is supplied that produces more values than there are store variables, the extra values are ignored. If the supplied <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> produces fewer values than there are store variables, the missing values are set to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+The <ClLinks styled={true} term={"place"}><i>places</i></ClLinks> are <GlossaryTerm styled={true} term={"generalized reference"}><i>generalized references</i></GlossaryTerm> to data upon which *test-form* depends, whose values can be changed by the user in attempting to correct the error. <ClLinks styled={true} term={"subform"}><i>Subforms</i></ClLinks> of each <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> are only evaluated if an error is signaled, and might be re-evaluated if the error is re-signaled (after continuing without actually fixing the problem). The order of evaluation of the <ClLinks styled={true} term={"place"}><i>places</i></ClLinks> is not specified; see Section 5.1.1.1 (Evaluation of Subforms to Places). If a *place form* is supplied that produces more values than there are store variables, the extra values are ignored. If the supplied <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> produces fewer values than there are store variables, the missing values are set to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -113,7 +113,7 @@ The <ClLinks styled={true} term={"place"}><i>places</i></ClLinks> are *generaliz
 
 
 
-The set of active *condition handlers*. 
+The set of active <GlossaryTerm styled={true} term={"condition handler"}><i>condition handlers</i></GlossaryTerm>. 
 
 
 

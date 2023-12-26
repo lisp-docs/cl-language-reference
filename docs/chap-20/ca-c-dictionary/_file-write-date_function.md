@@ -14,11 +14,11 @@
 
 
 
-*pathspec*—a *pathname designator* . 
+*pathspec*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
-*date*—a *universal time* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*date*—a <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a *universal time* representing the time at which the <ClLinks  term={"file"}><i>file</i></ClLinks> specified by *pathspec* was last written (or created), or returns <ClLinks  term={"nil"}><b>nil</b></ClLinks> if such a time cannot be determined. 
+Returns a <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm> representing the time at which the <ClLinks  term={"file"}><i>file</i></ClLinks> specified by *pathspec* was last written (or created), or returns <ClLinks  term={"nil"}><b>nil</b></ClLinks> if such a time cannot be determined. 
 
 
 
@@ -61,7 +61,7 @@ An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if the *file system* cannot perform the requested operation. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> cannot perform the requested operation. 
 
 
 

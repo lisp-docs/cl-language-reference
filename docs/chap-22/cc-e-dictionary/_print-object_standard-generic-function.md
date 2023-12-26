@@ -1,4 +1,4 @@
-**print-object** *Standard Generic Function* 
+**print-object** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-The *generic function* <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> writes the printed representation of <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> to <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> is called by the *Lisp printer* ; it should not be called by the user. 
+The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> writes the printed representation of <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> to <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> is called by the *Lisp printer* ; it should not be called by the user. 
 
 
 
@@ -66,7 +66,7 @@ The <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> on the <ClLin
 
 
 
-<ClLinks styled={true} term={"method"}><i>Methods</i></ClLinks> on <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> are responsible for implementing their part of the semantics of the *printer control variables*, as follows: 
+<ClLinks styled={true} term={"method"}><i>Methods</i></ClLinks> on <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> are responsible for implementing their part of the semantics of the <GlossaryTerm styled={true} term={"printer control variable"}><i>printer control variables</i></GlossaryTerm>, as follows: 
 
 
 
@@ -74,7 +74,7 @@ The <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> on the <ClLin
 
 
 
-All methods for <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> must obey <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks>. This includes both user-defined methods and <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks> methods. Readable printing of <ClLinks styled={true} term={"structure"}><i>structures</i></ClLinks> and *standard objects* is controlled by their <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> method, not by their <ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks> <ClLinks styled={true} term={"method"}><i>method</i></ClLinks>. <ClLinks styled={true} term={"similarity"}><i>Similarity</i></ClLinks> for these <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> is application dependent and hence is defined to be whatever these <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> do; see Section 3.2.4.2 (Similarity of Literal Objects). 
+All methods for <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> must obey <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks>. This includes both user-defined methods and <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks> methods. Readable printing of <ClLinks styled={true} term={"structure"}><i>structures</i></ClLinks> and <GlossaryTerm styled={true} term={"standard object"}><i>standard objects</i></GlossaryTerm> is controlled by their <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> method, not by their <ClLinks styled={true} term={"make-load-form"}><b>make-load-form</b></ClLinks> <ClLinks styled={true} term={"method"}><i>method</i></ClLinks>. <ClLinks styled={true} term={"similarity"}><i>Similarity</i></ClLinks> for these <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> is application dependent and hence is defined to be whatever these <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> do; see Section 3.2.4.2 (Similarity of Literal Objects). 
 
 
 
@@ -138,7 +138,7 @@ When the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLink
 
 
 
-These *printer control variables* apply to specific types of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> and are handled by the <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> for those <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>. 
+These <GlossaryTerm styled={true} term={"printer control variable"}><i>printer control variables</i></GlossaryTerm> apply to specific types of <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> and are handled by the <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> for those <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks>. 
 
 
 

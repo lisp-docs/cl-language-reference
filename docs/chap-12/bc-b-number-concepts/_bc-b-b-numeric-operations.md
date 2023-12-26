@@ -22,7 +22,7 @@ Figure 12–1 shows <ClLinks  term={"operator"}><i>operators</i></ClLinks> relat
 
 
 
-Figure 12–2 shows *defined names* relating to exponential, logarithmic, and trigonometric operations. 
+Figure 12–2 shows <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> relating to exponential, logarithmic, and trigonometric operations. 
 
 
 
@@ -62,7 +62,7 @@ Figure 12–2 shows *defined names* relating to exponential, logarithmic, and tr
 
 
 
-Figure 12–4 shows *defined names* relating to numeric type manipulation and coercion. 
+Figure 12–4 shows <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> relating to numeric type manipulation and coercion. 
 
 
 

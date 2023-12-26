@@ -92,7 +92,7 @@ The following definition for arc sine determines the range and branch cuts:
 
 
 
-**asin, acos, atan** 
+<DictionaryLink styled={true} term={"asin, acos, atan"}><b>asin, acos, atan</b></DictionaryLink> 
 
 
 
@@ -176,7 +176,7 @@ arc tangent is identical to that of arc sine with the points *−π/*2 and *π/*
 
 
 
-**asin, acos, atan** 
+<DictionaryLink styled={true} term={"asin, acos, atan"}><b>asin, acos, atan</b></DictionaryLink> 
 
 
 
@@ -246,7 +246,7 @@ The result of either <ClLinks  term={"asin"}><b>asin</b></ClLinks> or <ClLinks  
 
 
 
-**pi** *Constant Variable* 
+**pi** <GlossaryTerm styled={true} term={"constant variable"}><i>Constant Variable</i></GlossaryTerm> 
 
 
 
@@ -262,7 +262,7 @@ an *implementation-dependent long float*.
 
 
 
-The best *long float* approximation to the mathematical constant *π*. 
+The best <GlossaryTerm styled={true} term={"long float"}><i>long float</i></GlossaryTerm> approximation to the mathematical constant *π*. 
 
 
 

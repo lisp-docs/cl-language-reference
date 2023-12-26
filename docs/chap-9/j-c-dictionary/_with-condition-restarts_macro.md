@@ -34,7 +34,7 @@
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*; evaluated. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>; evaluated. 
 
 
 
@@ -58,11 +58,11 @@
 
 
 
-First, the *condition-form* and *restarts-form* are *evaluated* in normal left-to-right order; the *primary values* yielded by these <ClLinks styled={true} term={"evaluation"}><i>evaluations</i></ClLinks> are respectively called the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> and the *restart-list*. 
+First, the *condition-form* and *restarts-form* are *evaluated* in normal left-to-right order; the <GlossaryTerm styled={true} term={"primary value"}><i>primary values</i></GlossaryTerm> yielded by these <ClLinks styled={true} term={"evaluation"}><i>evaluations</i></ClLinks> are respectively called the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> and the *restart-list*. 
 
 
 
-Next, the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are *evaluated* in a *dynamic environment* in which each <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> in *restart-list* is associated with the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. See Section 9.1.4.2.4 (Associating a Restart with a Condition). 
+Next, the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are *evaluated* in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> in which each <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> in *restart-list* is associated with the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. See Section 9.1.4.2.4 (Associating a Restart with a Condition). 
 
 
 

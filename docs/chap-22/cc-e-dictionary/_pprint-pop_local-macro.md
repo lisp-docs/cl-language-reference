@@ -54,7 +54,7 @@ Each time <ClLinks styled={true} term={"pprint-pop"}><b>pprint-pop</b></ClLinks>
 
 
 
-If either of the three conditions above occurs, the indicated output is printed on the *pretty printing stream* created by the immediately containing <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks> and the execution of the immediately containing <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks> is terminated except for the printing of the suffix. 
+If either of the three conditions above occurs, the indicated output is printed on the <GlossaryTerm styled={true} term={"pretty printing stream"}><i>pretty printing stream</i></GlossaryTerm> created by the immediately containing <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks> and the execution of the immediately containing <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks> is terminated except for the printing of the suffix. 
 
 
 
@@ -62,7 +62,7 @@ If <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block<
 
 
 
-Whether or not <ClLinks styled={true} term={"pprint-pop"}><b>pprint-pop</b></ClLinks> is <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks> in the *global environment* is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>; however, the restrictions on redefinition and *shadowing* of <ClLinks styled={true} term={"pprint-pop"}><b>pprint-pop</b></ClLinks> are the same as for <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> in the COMMON-LISP <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> which are <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks> in the *global environment*. The consequences of attempting to use <ClLinks styled={true} term={"pprint-pop"}><b>pprint-pop</b></ClLinks> outside of <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks> are undefined. 
+Whether or not <ClLinks styled={true} term={"pprint-pop"}><b>pprint-pop</b></ClLinks> is <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks> in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm> is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>; however, the restrictions on redefinition and *shadowing* of <ClLinks styled={true} term={"pprint-pop"}><b>pprint-pop</b></ClLinks> are the same as for <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> in the COMMON-LISP <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> which are <ClLinks styled={true} term={"fbound"}><i>fbound</i></ClLinks> in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. The consequences of attempting to use <ClLinks styled={true} term={"pprint-pop"}><b>pprint-pop</b></ClLinks> outside of <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks> are undefined. 
 
 
 
@@ -70,7 +70,7 @@ Whether or not <ClLinks styled={true} term={"pprint-pop"}><b>pprint-pop</b></ClL
 
 
 
-Might cause output to the *pretty printing stream* associated with the lexically current logical block. 
+Might cause output to the <GlossaryTerm styled={true} term={"pretty printing stream"}><i>pretty printing stream</i></GlossaryTerm> associated with the lexically current logical block. 
 
 
 
@@ -90,7 +90,7 @@ An error is signaled (either at macro expansion time or at run time) if a usage 
 
 
 
-The consequences are undefined if <ClLinks styled={true} term={"pprint-pop"}><b>pprint-pop</b></ClLinks> is executed outside of the *dynamic extent* of this <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks>. 
+The consequences are undefined if <ClLinks styled={true} term={"pprint-pop"}><b>pprint-pop</b></ClLinks> is executed outside of the <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm> of this <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks>. 
 
 
 

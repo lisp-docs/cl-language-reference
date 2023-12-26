@@ -1,4 +1,4 @@
-**array** *System Class* 
+**array** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@ An <i>array</i> contains <i>objects</i> arranged according to a Cartesian coordi
 
 
 
-When an <ClLinks  term={"array"}><i>array</i></ClLinks> is created, the program requesting its creation may declare that all <ClLinks  term={"element"}><i>elements</i></ClLinks> are of a particular <ClLinks  term={"type"}><i>type</i></ClLinks>, called the *expressed array element type*. The implementation is permitted to <ClLinks  term={"upgrade"}><i>upgrade</i></ClLinks> this type in order to produce the *actual array element type*, which is the *element type* for the <ClLinks  term={"array"}><i>array</i></ClLinks> is actually <ClLinks  term={"specialized"}><i>specialized</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks>. 
+When an <ClLinks  term={"array"}><i>array</i></ClLinks> is created, the program requesting its creation may declare that all <ClLinks  term={"element"}><i>elements</i></ClLinks> are of a particular <ClLinks  term={"type"}><i>type</i></ClLinks>, called the <GlossaryTerm styled={true} term={"expressed array element type"}><i>expressed array element type</i></GlossaryTerm>. The implementation is permitted to <ClLinks  term={"upgrade"}><i>upgrade</i></ClLinks> this type in order to produce the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm>, which is the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> for the <ClLinks  term={"array"}><i>array</i></ClLinks> is actually <ClLinks  term={"specialized"}><i>specialized</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks>. 
 
 
 
@@ -46,11 +46,11 @@ Specializing.
 
 
 
-<ClLinks  term={"dimension"}><i>dimension</i></ClLinks>—a *valid array dimension*. 
+<ClLinks  term={"dimension"}><i>dimension</i></ClLinks>—a <GlossaryTerm styled={true} term={"valid array dimension"}><i>valid array dimension</i></GlossaryTerm>. 
 
 
 
-*element-type*—a *type specifier* . 
+*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -62,11 +62,11 @@ Specializing.
 
 
 
-This denotes the set of <ClLinks  term={"array"}><i>arrays</i></ClLinks> whose *element type*, *rank*, and <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> match any given *element-type*, <ClLinks  term={"rank"}><i>rank</i></ClLinks>, and <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>. Specifically: 
+This denotes the set of <ClLinks  term={"array"}><i>arrays</i></ClLinks> whose <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"rank"}><i>rank</i></GlossaryTerm>, and <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> match any given *element-type*, <ClLinks  term={"rank"}><i>rank</i></ClLinks>, and <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>. Specifically: 
 
 
 
-If *element-type* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***, <ClLinks  term={"array"}><i>arrays</i></ClLinks> are not excluded on the basis of their *element type*. Otherwise, only those <ClLinks  term={"array"}><i>arrays</i></ClLinks> are included whose *actual array element type* is the result of *upgrading element-type*; see Section 15.1.2.1 (Array Upgrading). 
+If *element-type* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***, <ClLinks  term={"array"}><i>arrays</i></ClLinks> are not excluded on the basis of their <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm>. Otherwise, only those <ClLinks  term={"array"}><i>arrays</i></ClLinks> are included whose <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> is the result of *upgrading element-type*; see Section 15.1.2.1 (Array Upgrading). 
 
 
 

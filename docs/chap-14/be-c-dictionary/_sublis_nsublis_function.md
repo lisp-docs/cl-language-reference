@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>—an *association list*. 
+<ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>—an <GlossaryTerm styled={true} term={"association list"}><i>association list</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*test*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a *generalized boolean*. *key*—a *designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*test*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of two <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-**sublis, nsublis** 
+<DictionaryLink styled={true} term={"sublis, nsublis"}><b>sublis, nsublis</b></DictionaryLink> 
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-<ClLinks styled={true} term={"sublis"}><b>sublis</b></ClLinks> looks at all subtrees and leaves of <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks>; if a subtree or leaf appears as a key in <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> (that is, the key and the subtree or leaf *satisfy the test*), it is replaced by the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> with which that key is associated. This operation is non-destructive. In effect, <ClLinks styled={true} term={"sublis"}><b>sublis</b></ClLinks> can perform several <ClLinks styled={true} term={"subst"}><b>subst</b></ClLinks> operations simultaneously. 
+<ClLinks styled={true} term={"sublis"}><b>sublis</b></ClLinks> looks at all subtrees and leaves of <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks>; if a subtree or leaf appears as a key in <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> (that is, the key and the subtree or leaf <GlossaryTerm styled={true} term={"satisfy the test"}><i>satisfy the test</i></GlossaryTerm>), it is replaced by the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> with which that key is associated. This operation is non-destructive. In effect, <ClLinks styled={true} term={"sublis"}><b>sublis</b></ClLinks> can perform several <ClLinks styled={true} term={"subst"}><b>subst</b></ClLinks> operations simultaneously. 
 
 
 

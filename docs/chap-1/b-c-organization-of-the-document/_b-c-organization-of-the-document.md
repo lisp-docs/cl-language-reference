@@ -10,7 +10,7 @@ This document is divided into chapters by topic. Any given chapter might contain
 
 
 
-*Defined names* within the dictionary portion of a chapter are grouped in a way that brings related topics into physical proximity. Many such groupings were possible, and no deep significance should be inferred from the particular grouping that was chosen. To see *defined names* grouped alphabetically, consult the index. For a complete list of *defined names*, see Section 1.9 (Symbols in the COMMON-LISP Package). 
+<GlossaryTerm styled={true} term={"defined name"}><i>Defined names</i></GlossaryTerm> within the dictionary portion of a chapter are grouped in a way that brings related topics into physical proximity. Many such groupings were possible, and no deep significance should be inferred from the particular grouping that was chosen. To see <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> grouped alphabetically, consult the index. For a complete list of <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm>, see Section 1.9 (Symbols in the COMMON-LISP Package). 
 
 
 

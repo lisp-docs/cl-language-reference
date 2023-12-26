@@ -1,4 +1,4 @@
-**the** *Special Operator* 
+**the** <GlossaryTerm styled={true} term={"special operator"}><i>Special Operator</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*value-type*—a *type specifier* ; not evaluated. 
+*value-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ; not evaluated. 
 
 
 
@@ -38,7 +38,7 @@ It is permissible for <ClLinks  term={"form"}><i>form</i></ClLinks> to <ClLinks 
 
 
 
-Regardless of number of <ClLinks  term={"value"}><i>values</i></ClLinks> declared by *value-type*, the number of <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"the"}><b>the</b></ClLinks> *special form* is the same as the number of <ClLinks  term={"value"}><i>values</i></ClLinks> returned by <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+Regardless of number of <ClLinks  term={"value"}><i>values</i></ClLinks> declared by *value-type*, the number of <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"the"}><b>the</b></ClLinks> <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm> is the same as the number of <ClLinks  term={"value"}><i>values</i></ClLinks> returned by <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -83,7 +83,7 @@ The consequences are undefined if the *values yielded* by the <ClLinks  term={"f
 
 
 
-The <ClLinks  term={"values"}><b>values</b></ClLinks> *type specifier* can be used to indicate the types of *multiple values*: 
+The <ClLinks  term={"values"}><b>values</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> can be used to indicate the types of <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm>: 
 
 
 

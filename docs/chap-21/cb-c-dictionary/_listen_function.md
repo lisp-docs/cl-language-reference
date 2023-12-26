@@ -14,11 +14,11 @@
 
 
 
-*input-stream*—an *input stream designator* . The default is *standard input*. 
+*input-stream*—an *input stream designator* . The default is <GlossaryTerm styled={true} term={"standard input"}><i>standard input</i></GlossaryTerm>. 
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if there is a character immediately available from *input-stream*; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. On a non-interactive *input-stream*, <ClLinks  term={"listen"}><b>listen</b></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks> except when at *end of file*<sub>1</sub>. If an *end of file* is encountered, <ClLinks  term={"listen"}><b>listen</b></ClLinks> returns <ClLinks  term={"false"}><i>false</i></ClLinks>. <ClLinks  term={"listen"}><b>listen</b></ClLinks> is intended to be used when *input-stream* obtains characters from an interactive device such as a keyboard. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if there is a character immediately available from *input-stream*; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. On a non-interactive *input-stream*, <ClLinks  term={"listen"}><b>listen</b></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks> except when at <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>1</sub>. If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm> is encountered, <ClLinks  term={"listen"}><b>listen</b></ClLinks> returns <ClLinks  term={"false"}><i>false</i></ClLinks>. <ClLinks  term={"listen"}><b>listen</b></ClLinks> is intended to be used when *input-stream* obtains characters from an interactive device such as a keyboard. 
 
 
 

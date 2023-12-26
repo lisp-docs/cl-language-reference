@@ -2,7 +2,7 @@
 
 
 
-Two *objects S* (in *source code*) and *C* (in *compiled code*) are defined to be <ClLinks  term={"similar"}><i>similar</i></ClLinks> if and only if they are both of one of the <ClLinks  term={"type"}><i>types</i></ClLinks> listed here (or defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>) and they both satisfy all additional requirements of <ClLinks  term={"similarity"}><i>similarity</i></ClLinks> indicated for that <ClLinks  term={"type"}><i>type</i></ClLinks>. 
+Two *objects S* (in <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm>) and *C* (in <GlossaryTerm styled={true} term={"compiled code"}><i>compiled code</i></GlossaryTerm>) are defined to be <ClLinks  term={"similar"}><i>similar</i></ClLinks> if and only if they are both of one of the <ClLinks  term={"type"}><i>types</i></ClLinks> listed here (or defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>) and they both satisfy all additional requirements of <ClLinks  term={"similarity"}><i>similarity</i></ClLinks> indicated for that <ClLinks  term={"type"}><i>type</i></ClLinks>. 
 
 
 
@@ -34,11 +34,11 @@ Two *apparently uninterned symbols S* and *C* are <ClLinks  term={"similar"}><i>
 
 
 
-Two <ClLinks  term={"interned"}><i>interned</i></ClLinks> symbols *S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if their <ClLinks  term={"name"}><i>names</i></ClLinks> are <ClLinks  term={"similar"}><i>similar</i></ClLinks> , and if either *S* is accessible in the *current package* at compile time and *C* is accessible in the *current package* at load time, or *C* is accessible in the <ClLinks  term={"package"}><i>package</i></ClLinks> that is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the *home package* of *S*. 
+Two <ClLinks  term={"interned"}><i>interned</i></ClLinks> symbols *S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if their <ClLinks  term={"name"}><i>names</i></ClLinks> are <ClLinks  term={"similar"}><i>similar</i></ClLinks> , and if either *S* is accessible in the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> at compile time and *C* is accessible in the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> at load time, or *C* is accessible in the <ClLinks  term={"package"}><i>package</i></ClLinks> that is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of *S*. 
 
 
 
-(Note that <ClLinks  term={"similarity"}><i>similarity</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is dependent on neither the *current readtable* nor how the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"read"}><b>read</b></ClLinks> would parse the <ClLinks  term={"character"}><i>characters</i></ClLinks> in the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>.) 
+(Note that <ClLinks  term={"similarity"}><i>similarity</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is dependent on neither the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm> nor how the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"read"}><b>read</b></ClLinks> would parse the <ClLinks  term={"character"}><i>characters</i></ClLinks> in the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>.) 
 
 
 
@@ -50,7 +50,7 @@ Two *packages S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks>
 
 
 
-Note that although a *package object* is an *externalizable object*, the programmer is responsible for ensuring that the corresponding <ClLinks  term={"package"}><i>package</i></ClLinks> is already in existence when code  
+Note that although a *package object* is an <GlossaryTerm styled={true} term={"externalizable object"}><i>externalizable object</i></GlossaryTerm>, the programmer is responsible for ensuring that the corresponding <ClLinks  term={"package"}><i>package</i></ClLinks> is already in existence when code  
 
 
 
@@ -70,7 +70,7 @@ Two *random states S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClL
 
 
 
-(Note that since *C* has been processed by the *file compiler* , it cannot be used directly as an <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <ClLinks  term={"random"}><b>random</b></ClLinks> because <ClLinks  term={"random"}><b>random</b></ClLinks> would perform a side effect.) 
+(Note that since *C* has been processed by the <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></GlossaryTerm> , it cannot be used directly as an <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <ClLinks  term={"random"}><b>random</b></ClLinks> because <ClLinks  term={"random"}><b>random</b></ClLinks> would perform a side effect.) 
 
 
 
@@ -86,15 +86,15 @@ Two *conses*, *S* and *C*, are <ClLinks  term={"similar"}><i>similar</i></ClLink
 
 
 
-Two one-dimensional <ClLinks  term={"array"}><i>arrays</i></ClLinks>, *S* and *C*, are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if the <ClLinks  term={"length"}><i>length</i></ClLinks> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the <ClLinks  term={"length"}><i>length</i></ClLinks> of *C*, the *actual array element type* of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the *actual array element type* of *C*, and each *active element* of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the corresponding <ClLinks  term={"element"}><i>element</i></ClLinks> of *C*. 
+Two one-dimensional <ClLinks  term={"array"}><i>arrays</i></ClLinks>, *S* and *C*, are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if the <ClLinks  term={"length"}><i>length</i></ClLinks> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the <ClLinks  term={"length"}><i>length</i></ClLinks> of *C*, the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of *C*, and each *active element* of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the corresponding <ClLinks  term={"element"}><i>element</i></ClLinks> of *C*. 
 
 
 
-Two <ClLinks  term={"array"}><i>arrays</i></ClLinks> of <ClLinks  term={"rank"}><i>rank</i></ClLinks> other than one, *S* and *C*, are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if the <ClLinks  term={"rank"}><i>rank</i></ClLinks> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the <ClLinks  term={"rank"}><i>rank</i></ClLinks> of *C*, each <ClLinks  term={"dimension"}><i>dimension</i></ClLinks><sub>1</sub> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the corresponding <ClLinks  term={"dimension"}><i>dimension</i></ClLinks><sub>1</sub> of *C*, the *actual array element type* of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the *actual array element type* of *C*, and each <ClLinks  term={"element"}><i>element</i></ClLinks> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the corresponding <ClLinks  term={"element"}><i>element</i></ClLinks> of *C*. 
+Two <ClLinks  term={"array"}><i>arrays</i></ClLinks> of <ClLinks  term={"rank"}><i>rank</i></ClLinks> other than one, *S* and *C*, are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if the <ClLinks  term={"rank"}><i>rank</i></ClLinks> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the <ClLinks  term={"rank"}><i>rank</i></ClLinks> of *C*, each <ClLinks  term={"dimension"}><i>dimension</i></ClLinks><sub>1</sub> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the corresponding <ClLinks  term={"dimension"}><i>dimension</i></ClLinks><sub>1</sub> of *C*, the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of *C*, and each <ClLinks  term={"element"}><i>element</i></ClLinks> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the corresponding <ClLinks  term={"element"}><i>element</i></ClLinks> of *C*. 
 
 
 
-In addition, if *S* is a *simple array*, then *C* must also be a *simple array*. If *S* is a *displaced array*, has a *fill pointer* , or is *actually adjustable*, *C* is permitted to lack any or all of these qualities. 
+In addition, if *S* is a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm>, then *C* must also be a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm>. If *S* is a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>, has a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , or is <GlossaryTerm styled={true} term={"actually adjustable"}><i>actually adjustable</i></GlossaryTerm>, *C* is permitted to lack any or all of these qualities. 
 
 
 
@@ -102,11 +102,11 @@ In addition, if *S* is a *simple array*, then *C* must also be a *simple array*.
 
 
 
-Two *hash tables S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if they meet the following three requirements: 1. They both have the same test (*e.g.*, they are both <ClLinks  term={"eql"}><b>eql</b></ClLinks> *hash tables*). 
+Two *hash tables S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if they meet the following three requirements: 1. They both have the same test (*e.g.*, they are both <ClLinks  term={"eql"}><b>eql</b></ClLinks> <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>). 
 
 
 
-2\. There is a unique one-to-one correspondence between the keys of the two *hash tables*, such that the corresponding keys are <ClLinks  term={"similar"}><i>similar</i></ClLinks> . 
+2\. There is a unique one-to-one correspondence between the keys of the two <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>, such that the corresponding keys are <ClLinks  term={"similar"}><i>similar</i></ClLinks> . 
 
 
 
@@ -114,7 +114,7 @@ Two *hash tables S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLin
 
 
 
-If there is more than one possible one-to-one correspondence between the keys of *S* and *C*, the consequences are unspecified. A *conforming program* cannot use a table such as *S* as an *externalizable constant*.  
+If there is more than one possible one-to-one correspondence between the keys of *S* and *C*, the consequences are unspecified. A <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> cannot use a table such as *S* as an *externalizable constant*.  
 
 
 
@@ -134,7 +134,7 @@ Two *pathnames S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks
 
 
 
-<ClLinks  term={"function"}><i>Functions</i></ClLinks> are not *externalizable objects*. 
+<ClLinks  term={"function"}><i>Functions</i></ClLinks> are not <GlossaryTerm styled={true} term={"externalizable object"}><i>externalizable objects</i></GlossaryTerm>. 
 
 
 
@@ -142,7 +142,7 @@ Two *pathnames S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks
 
 
 
-A general-purpose concept of <ClLinks  term={"similarity"}><i>similarity</i></ClLinks> does not exist for <ClLinks  term={"structure"}><i>structures</i></ClLinks> and *standard objects*. However, a *conforming program* is permitted to define a <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> <ClLinks  term={"method"}><i>method</i></ClLinks> for any *class K* defined by that <ClLinks  term={"program"}><i>program</i></ClLinks> that is a <ClLinks  term={"subclass"}><i>subclass</i></ClLinks> of either <ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks> or <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>. The effect of such a <ClLinks  term={"method"}><i>method</i></ClLinks> is to define that an *object S* of *type K* in *source code* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to an *object C* of *type K* in *compiled code* if *C* was constructed from <ClLinks  term={"code"}><i>code</i></ClLinks> produced by calling <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> on *S*. 
+A general-purpose concept of <ClLinks  term={"similarity"}><i>similarity</i></ClLinks> does not exist for <ClLinks  term={"structure"}><i>structures</i></ClLinks> and <GlossaryTerm styled={true} term={"standard object"}><i>standard objects</i></GlossaryTerm>. However, a <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> is permitted to define a <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> <ClLinks  term={"method"}><i>method</i></ClLinks> for any *class K* defined by that <ClLinks  term={"program"}><i>program</i></ClLinks> that is a <ClLinks  term={"subclass"}><i>subclass</i></ClLinks> of either <ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks> or <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>. The effect of such a <ClLinks  term={"method"}><i>method</i></ClLinks> is to define that an *object S* of *type K* in <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm> is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to an *object C* of *type K* in <GlossaryTerm styled={true} term={"compiled code"}><i>compiled code</i></GlossaryTerm> if *C* was constructed from <ClLinks  term={"code"}><i>code</i></ClLinks> produced by calling <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> on *S*. 
 
 
 

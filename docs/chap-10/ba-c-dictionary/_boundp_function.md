@@ -18,7 +18,7 @@
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -71,7 +71,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> **bound** determines only whether a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> has a value in the *global environment*; any *lexical bindings* are ignored. 
+The <ClLinks  term={"function"}><i>function</i></ClLinks> **bound** determines only whether a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> has a value in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>; any <GlossaryTerm styled={true} term={"lexical binding"}><i>lexical bindings</i></GlossaryTerm> are ignored. 
 
 
 

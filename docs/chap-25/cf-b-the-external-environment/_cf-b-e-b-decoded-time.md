@@ -2,7 +2,7 @@
 
 
 
-A *decoded time* is an ordered series of nine values that, taken together, represent a point in calendar time (ignoring *leap seconds*): 
+A <GlossaryTerm styled={true} term={"decoded time"}><i>decoded time</i></GlossaryTerm> is an ordered series of nine values that, taken together, represent a point in calendar time (ignoring <GlossaryTerm styled={true} term={"leap seconds"}><i>leap seconds</i></GlossaryTerm>): 
 
 
 
@@ -78,7 +78,7 @@ An *integer* between 0 and 6, inclusive; 0 means Monday, 1 means Tuesday, and so
 
 
 
-A *generalized boolean* that, if <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, indicates that daylight saving time is in effect. 
+A <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> that, if <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, indicates that daylight saving time is in effect. 
 
 
 
@@ -86,11 +86,11 @@ A *generalized boolean* that, if <ClLinks styled={true} term={"true"}><i>true</i
 
 
 
-A *time zone*. 
+A <GlossaryTerm styled={true} term={"time zone"}><i>time zone</i></GlossaryTerm>. 
 
 
 
-Figure 25–5 shows *defined names* relating to *decoded time*. 
+Figure 25–5 shows <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> relating to <GlossaryTerm styled={true} term={"decoded time"}><i>decoded time</i></GlossaryTerm>. 
 
 
 

@@ -18,11 +18,11 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<ClLinks  term={"unintern"}><b>unintern</b></ClLinks> removes <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> from <ClLinks  term={"package"}><i>package</i></ClLinks>. If <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, it is removed from <ClLinks  term={"package"}><i>package</i></ClLinks> and also from <ClLinks  term={"package"}><i>package</i></ClLinks>’s *shadowing symbols list* if it is present there. If <ClLinks  term={"package"}><i>package</i></ClLinks> is the *home package* for <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is made to have no *home package*. *Symbol* may continue to be <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> by inheritance. 
+<ClLinks  term={"unintern"}><b>unintern</b></ClLinks> removes <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> from <ClLinks  term={"package"}><i>package</i></ClLinks>. If <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, it is removed from <ClLinks  term={"package"}><i>package</i></ClLinks> and also from <ClLinks  term={"package"}><i>package</i></ClLinks>’s <GlossaryTerm styled={true} term={"shadowing symbols list"}><i>shadowing symbols list</i></GlossaryTerm> if it is present there. If <ClLinks  term={"package"}><i>package</i></ClLinks> is the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> for <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is made to have no <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"symbol"}><i>Symbol</i></GlossaryTerm> may continue to be <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> by inheritance. 
 
 
 
-Use of <ClLinks  term={"unintern"}><b>unintern</b></ClLinks> can result in a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that has no recorded *home package*, but that in fact is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in some <ClLinks  term={"package"}><i>package</i></ClLinks>. Common Lisp does not check for this pathological case, and such <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are always printed preceded by #:. 
+Use of <ClLinks  term={"unintern"}><b>unintern</b></ClLinks> can result in a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that has no recorded <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm>, but that in fact is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in some <ClLinks  term={"package"}><i>package</i></ClLinks>. Common Lisp does not check for this pathological case, and such <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are always printed preceded by #:. 
 
 
 

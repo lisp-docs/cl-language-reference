@@ -2,7 +2,7 @@
 
 
 
-A *lexical closure* is a <ClLinks  term={"function"}><i>function</i></ClLinks> that can refer to and alter the values of *lexical bindings established* by *binding forms* that textually include the function definition. 
+A <GlossaryTerm styled={true} term={"lexical closure"}><i>lexical closure</i></GlossaryTerm> is a <ClLinks  term={"function"}><i>function</i></ClLinks> that can refer to and alter the values of *lexical bindings established* by *binding forms* that textually include the function definition. 
 
 
 
@@ -38,11 +38,11 @@ Consider this code, where x is not declared <ClLinks  term={"special"}><b>specia
 
 
 
-The <ClLinks  term={"function"}><b>function</b></ClLinks> *special form* coerces a *lambda expression* into a <ClLinks  term={"closure"}><i>closure</i></ClLinks> in which the *lexical environment* in effect when the *special form* is evaluated is captured along with the *lambda expression*. 
+The <ClLinks  term={"function"}><b>function</b></ClLinks> <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm> coerces a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> into a <ClLinks  term={"closure"}><i>closure</i></ClLinks> in which the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> in effect when the <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm> is evaluated is captured along with the <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>. 
 
 
 
-The function two-funs returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of two <ClLinks  term={"function"}><i>functions</i></ClLinks>, each of which refers to the <ClLinks  term={"binding"}><i>binding</i></ClLinks> of the variable x created on entry to the function two-funs when it was called. This variable has the value 6 initially, but <ClLinks  term={"setq"}><b>setq</b></ClLinks> can alter this <ClLinks  term={"binding"}><i>binding</i></ClLinks>. The *lexical closure* created for the first *lambda expression* does not “snapshot” the <ClLinks  term={"value"}><i>value</i></ClLinks> 6 for x when the <ClLinks  term={"closure"}><i>closure</i></ClLinks> is created; rather it captures the <ClLinks  term={"binding"}><i>binding</i></ClLinks> of x. The second <ClLinks  term={"function"}><i>function</i></ClLinks> can be used to alter the <ClLinks  term={"value"}><i>value</i></ClLinks> in the same (captured) <ClLinks  term={"binding"}><i>binding</i></ClLinks> (to 43, in the example), and this altered variable binding then affects the value returned by the first <ClLinks  term={"function"}><i>function</i></ClLinks>.  
+The function two-funs returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of two <ClLinks  term={"function"}><i>functions</i></ClLinks>, each of which refers to the <ClLinks  term={"binding"}><i>binding</i></ClLinks> of the variable x created on entry to the function two-funs when it was called. This variable has the value 6 initially, but <ClLinks  term={"setq"}><b>setq</b></ClLinks> can alter this <ClLinks  term={"binding"}><i>binding</i></ClLinks>. The <GlossaryTerm styled={true} term={"lexical closure"}><i>lexical closure</i></GlossaryTerm> created for the first <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> does not “snapshot” the <ClLinks  term={"value"}><i>value</i></ClLinks> 6 for x when the <ClLinks  term={"closure"}><i>closure</i></ClLinks> is created; rather it captures the <ClLinks  term={"binding"}><i>binding</i></ClLinks> of x. The second <ClLinks  term={"function"}><i>function</i></ClLinks> can be used to alter the <ClLinks  term={"value"}><i>value</i></ClLinks> in the same (captured) <ClLinks  term={"binding"}><i>binding</i></ClLinks> (to 43, in the example), and this altered variable binding then affects the value returned by the first <ClLinks  term={"function"}><i>function</i></ClLinks>.  
 
 
 
@@ -50,7 +50,7 @@ The function two-funs returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of
 
 
 
-In situations where a <ClLinks  term={"closure"}><i>closure</i></ClLinks> of a *lambda expression* over the same set of <ClLinks  term={"binding"}><i>bindings</i></ClLinks> may be produced more than once, the various resulting <ClLinks  term={"closure"}><i>closures</i></ClLinks> may or may not be <ClLinks  term={"identical"}><i>identical</i></ClLinks>, at the discretion of the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. That is, two <ClLinks  term={"function"}><i>functions</i></ClLinks> that are behaviorally indistinguishable might or might not be <ClLinks  term={"identical"}><i>identical</i></ClLinks>. Two <ClLinks  term={"function"}><i>functions</i></ClLinks> that are behaviorally distinguishable are <ClLinks  term={"distinct"}><i>distinct</i></ClLinks>. For example: 
+In situations where a <ClLinks  term={"closure"}><i>closure</i></ClLinks> of a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> over the same set of <ClLinks  term={"binding"}><i>bindings</i></ClLinks> may be produced more than once, the various resulting <ClLinks  term={"closure"}><i>closures</i></ClLinks> may or may not be <ClLinks  term={"identical"}><i>identical</i></ClLinks>, at the discretion of the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. That is, two <ClLinks  term={"function"}><i>functions</i></ClLinks> that are behaviorally indistinguishable might or might not be <ClLinks  term={"identical"}><i>identical</i></ClLinks>. Two <ClLinks  term={"function"}><i>functions</i></ClLinks> that are behaviorally distinguishable are <ClLinks  term={"distinct"}><i>distinct</i></ClLinks>. For example: 
 
 
 

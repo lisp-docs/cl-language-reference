@@ -22,7 +22,7 @@
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the *subscripts* are all in bounds for <ClLinks  term={"array"}><i>array</i></ClLinks>; otherwise returns <ClLinks  term={"false"}><i>false</i></ClLinks>. (If <ClLinks  term={"array"}><i>array</i></ClLinks> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , that *fill pointer* is ignored.) 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the *subscripts* are all in bounds for <ClLinks  term={"array"}><i>array</i></ClLinks>; otherwise returns <ClLinks  term={"false"}><i>false</i></ClLinks>. (If <ClLinks  term={"array"}><i>array</i></ClLinks> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , that <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is ignored.) 
 
 
 

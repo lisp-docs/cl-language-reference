@@ -1,4 +1,4 @@
-**describe-object** *Standard Generic Function* 
+**describe-object** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -114,7 +114,7 @@ The reason for making the return values for <ClLinks styled={true} term={"descri
 
 
 
-**trace, untrace** 
+<DictionaryLink styled={true} term={"trace, untrace"}><b>trace, untrace</b></DictionaryLink> 
 
 
 

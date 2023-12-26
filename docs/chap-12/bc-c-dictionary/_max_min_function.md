@@ -22,7 +22,7 @@
 
 
 
-**max, min** 
+<DictionaryLink styled={true} term={"max, min"}><b>max, min</b></DictionaryLink> 
 
 
 

@@ -22,7 +22,7 @@ The characters <ClLinks styled={true} term={"backslash"}><i>backslash</i></ClLin
 
 
 
-The <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> that correspond to Common Lisp *defined names* have <ClLinks styled={true} term={"uppercase"}><i>uppercase</i></ClLinks> names even though their names generally appear in <ClLinks styled={true} term={"lowercase"}><i>lowercase</i></ClLinks> in this document. 
+The <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> that correspond to Common Lisp <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> have <ClLinks styled={true} term={"uppercase"}><i>uppercase</i></ClLinks> names even though their names generally appear in <ClLinks styled={true} term={"lowercase"}><i>lowercase</i></ClLinks> in this document. 
 
 
 

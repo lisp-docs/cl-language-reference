@@ -14,23 +14,23 @@
 
 
 
-*type-1*—a *type specifier* . 
+*type-1*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
-*type-2*—a *type specifier* . 
+*type-2*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an *environment object*. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, denoting the *null lexical environment* and the current *global environment*. 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, denoting the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> and the current <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. 
 
 
 
-*subtype-p*—a *generalized boolean*. 
+*subtype-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
-*valid-p*—a *generalized boolean*. 
+*valid-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-If *type-1* is a *recognizable subtype* of *type-2*, the first <ClLinks  term={"value"}><i>value</i></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks>. Otherwise, the first <ClLinks  term={"value"}><i>value</i></ClLinks> is <ClLinks  term={"false"}><i>false</i></ClLinks>, indicating that either *type-1* is not a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of *type-2*, or else *type-1* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of *type-2* but is not a *recognizable subtype*. 
+If *type-1* is a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of *type-2*, the first <ClLinks  term={"value"}><i>value</i></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks>. Otherwise, the first <ClLinks  term={"value"}><i>value</i></ClLinks> is <ClLinks  term={"false"}><i>false</i></ClLinks>, indicating that either *type-1* is not a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of *type-2*, or else *type-1* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of *type-2* but is not a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm>. 
 
 
 
@@ -72,11 +72,11 @@ Figure 4–9 summarizes the possible combinations of <ClLinks  term={"value"}><i
 
 
 
-<ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> is permitted to return the *values false* and <ClLinks  term={"false"}><i>false</i></ClLinks> only when at least one argument involves one of these *type specifiers*: <ClLinks  term={"and"}><b>and</b></ClLinks>, <ClLinks  term={"eql"}><b>eql</b></ClLinks>, the list form of <ClLinks  term={"function"}><b>function</b></ClLinks>, <ClLinks  term={"member"}><b>member</b></ClLinks>, <ClLinks  term={"not"}><b>not</b></ClLinks>, <ClLinks  term={"or"}><b>or</b></ClLinks>, **satisfies**, or <ClLinks  term={"values"}><b>values</b></ClLinks>. (A *type specifier* ‘involves’ such a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> if, after being *type expanded*, it contains that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in a position that would call for its meaning as a *type specifier* to be used.) One consequence of this is that if neither *type-1* nor *type-2* involves any of these *type specifiers*, then <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> is obliged to determine the relationship accurately. In particular, <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> returns the *values true* and <ClLinks  term={"true"}><i>true</i></ClLinks> if the arguments are <ClLinks  term={"equal"}><b>equal</b></ClLinks> and do not involve any of these *type specifiers*. 
+<ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> is permitted to return the *values false* and <ClLinks  term={"false"}><i>false</i></ClLinks> only when at least one argument involves one of these <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm>: <ClLinks  term={"and"}><b>and</b></ClLinks>, <ClLinks  term={"eql"}><b>eql</b></ClLinks>, the list form of <ClLinks  term={"function"}><b>function</b></ClLinks>, <ClLinks  term={"member"}><b>member</b></ClLinks>, <ClLinks  term={"not"}><b>not</b></ClLinks>, <ClLinks  term={"or"}><b>or</b></ClLinks>, **satisfies**, or <ClLinks  term={"values"}><b>values</b></ClLinks>. (A <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ‘involves’ such a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> if, after being *type expanded*, it contains that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in a position that would call for its meaning as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> to be used.) One consequence of this is that if neither *type-1* nor *type-2* involves any of these <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm>, then <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> is obliged to determine the relationship accurately. In particular, <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> returns the *values true* and <ClLinks  term={"true"}><i>true</i></ClLinks> if the arguments are <ClLinks  term={"equal"}><b>equal</b></ClLinks> and do not involve any of these <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> never returns a second value of <ClLinks  term={"nil"}><b>nil</b></ClLinks> when both *type-1* and *type-2* involve only the names in Figure 4–2, or names of <ClLinks  term={"type"}><i>types</i></ClLinks> defined by <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks>, <ClLinks  term={"define-condition"}><b>define-condition</b></ClLinks>, or <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, or *derived types* that expand into only those names. While *type specifiers* listed in Figure 4–2 and names of <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> and <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks> can in some cases be implemented as *derived types*, <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> regards them as primitive. 
+<ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> never returns a second value of <ClLinks  term={"nil"}><b>nil</b></ClLinks> when both *type-1* and *type-2* involve only the names in Figure 4–2, or names of <ClLinks  term={"type"}><i>types</i></ClLinks> defined by <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks>, <ClLinks  term={"define-condition"}><b>define-condition</b></ClLinks>, or <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, or <GlossaryTerm styled={true} term={"derived type"}><i>derived types</i></GlossaryTerm> that expand into only those names. While <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> listed in Figure 4–2 and names of <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> and <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks> can in some cases be implemented as <GlossaryTerm styled={true} term={"derived type"}><i>derived types</i></GlossaryTerm>, <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> regards them as primitive. 
 
 
 
@@ -84,7 +84,7 @@ The relationships between <ClLinks  term={"type"}><i>types</i></ClLinks> reflect
 
 
 
-For all *T1* and *T2* other than \*, (array *T1*) and (array *T2*) are two different *type spec ifiers* that always refer to the same sets of things if and only if they refer to <ClLinks  term={"array"}><i>arrays</i></ClLinks> of exactly the same specialized representation, *i.e.*, if (upgraded-array-element-type ’*T1*) and (upgraded-array-element-type ’*T2*) return two different *type specifiers* that always refer to the same sets of <ClLinks  term={"object"}><i>objects</i></ClLinks>. This is another way of saying that ‘(array *type-specifier*) and ‘(array ,(upgraded-array-element-type ’*type-specifier*)) refer to the same set of specialized <ClLinks  term={"array"}><i>array</i></ClLinks> representations. For all *T1* and *T2* other than \*, the intersection of (array *T1*) and (array *T2*) is the empty set if and only if they refer to <ClLinks  term={"array"}><i>arrays</i></ClLinks> of different, distinct specialized representations. 
+For all *T1* and *T2* other than \*, (array *T1*) and (array *T2*) are two different *type spec ifiers* that always refer to the same sets of things if and only if they refer to <ClLinks  term={"array"}><i>arrays</i></ClLinks> of exactly the same specialized representation, *i.e.*, if (upgraded-array-element-type ’*T1*) and (upgraded-array-element-type ’*T2*) return two different <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> that always refer to the same sets of <ClLinks  term={"object"}><i>objects</i></ClLinks>. This is another way of saying that ‘(array *type-specifier*) and ‘(array ,(upgraded-array-element-type ’*type-specifier*)) refer to the same set of specialized <ClLinks  term={"array"}><i>array</i></ClLinks> representations. For all *T1* and *T2* other than \*, the intersection of (array *T1*) and (array *T2*) is the empty set if and only if they refer to <ClLinks  term={"array"}><i>arrays</i></ClLinks> of different, distinct specialized representations. 
 
 
 
@@ -116,7 +116,7 @@ if and only if
 
 
 
-return two different *type specifiers* that always refer to the same sets of <ClLinks  term={"object"}><i>objects</i></ClLinks>. 
+return two different <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> that always refer to the same sets of <ClLinks  term={"object"}><i>objects</i></ClLinks>. 
 
 
 
@@ -136,7 +136,7 @@ if:
 
 
 
-2\. (upgraded-complex-part-type ’*T1*) and (upgraded-complex-part-type ’*T2*) return two different *type specifiers* that always refer to the same sets of <ClLinks  term={"object"}><i>objects</i></ClLinks>; in this case, (complex *T1*) and (complex *T2*) both refer to the same specialized representation. 
+2\. (upgraded-complex-part-type ’*T1*) and (upgraded-complex-part-type ’*T2*) return two different <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> that always refer to the same sets of <ClLinks  term={"object"}><i>objects</i></ClLinks>; in this case, (complex *T1*) and (complex *T2*) both refer to the same specialized representation. 
 
 
 
@@ -160,7 +160,7 @@ must return <ClLinks  term={"true"}><i>true</i></ClLinks> in all implementations
 
 
 
-returns <ClLinks  term={"true"}><i>true</i></ClLinks> only in implementations that do not have a specialized <ClLinks  term={"array"}><i>array</i></ClLinks> representation for *single floats* distinct from that for other <ClLinks  term={"float"}><i>floats</i></ClLinks>. 
+returns <ClLinks  term={"true"}><i>true</i></ClLinks> only in implementations that do not have a specialized <ClLinks  term={"array"}><i>array</i></ClLinks> representation for <GlossaryTerm styled={true} term={"single float"}><i>single floats</i></GlossaryTerm> distinct from that for other <ClLinks  term={"float"}><i>floats</i></ClLinks>. 
 
 
 

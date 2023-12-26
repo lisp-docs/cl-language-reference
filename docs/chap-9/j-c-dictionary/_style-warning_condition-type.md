@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"style-warning"}><b>style-warning</b></ClLinks> includes those <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> that represent <ClLinks styled={true} term={"situation"}><i>situations</i></ClLinks> involving <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> that is *conforming code* but that is nevertheless considered to be faulty or substandard. 
+The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"style-warning"}><b>style-warning</b></ClLinks> includes those <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> that represent <ClLinks styled={true} term={"situation"}><i>situations</i></ClLinks> involving <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> that is <GlossaryTerm styled={true} term={"conforming code"}><i>conforming code</i></GlossaryTerm> but that is nevertheless considered to be faulty or substandard. 
 
 
 

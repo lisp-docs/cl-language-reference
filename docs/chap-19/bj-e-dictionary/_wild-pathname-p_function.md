@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a *pathname designator* . 
+<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -58,7 +58,7 @@ If *field-key* is not supplied or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, <
 
 
 
-If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is not a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, a <ClLinks  term={"string"}><i>string</i></ClLinks>, or a *stream associated with a file* an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
+If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is not a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, a <ClLinks  term={"string"}><i>string</i></ClLinks>, or a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm> an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
 
 
 

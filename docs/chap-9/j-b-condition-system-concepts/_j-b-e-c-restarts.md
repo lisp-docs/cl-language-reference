@@ -18,7 +18,7 @@ The name of a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> i
 
 
 
-The *restarts established* by a <ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, a <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, or a <ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> have *dynamic extent* which extends for the duration of that <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>’s execution. 
+The *restarts established* by a <ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, a <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, or a <ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> have <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm> which extends for the duration of that <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>’s execution. 
 
 
 

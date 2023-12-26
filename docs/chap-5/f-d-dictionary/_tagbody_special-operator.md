@@ -1,4 +1,4 @@
-**tagbody** *Special Operator* 
+**tagbody** <GlossaryTerm styled={true} term={"special operator"}><i>Special Operator</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"tag"}><i>tag</i></ClLinks>—a *go tag*; not evaluated. 
+<ClLinks  term={"tag"}><i>tag</i></ClLinks>—a <GlossaryTerm styled={true} term={"go tag"}><i>go tag</i></GlossaryTerm>; not evaluated. 
 
 
 
-*statement*—a *compound form*; evaluated as described below. 
+*statement*—a <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm>; evaluated as described below. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Executes zero or more *statements* in a *lexical environment* that provides for control transfers to labels indicated by the <ClLinks  term={"tag"}><i>tags</i></ClLinks>. 
+Executes zero or more *statements* in a <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> that provides for control transfers to labels indicated by the <ClLinks  term={"tag"}><i>tags</i></ClLinks>. 
 
 
 
@@ -34,11 +34,11 @@ The *statements* in a <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> are *e
 
 
 
-A <ClLinks  term={"tag"}><i>tag</i></ClLinks> established by <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> has *lexical scope* and has *dynamic extent*. Once <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> has been exited, it is no longer valid to <ClLinks  term={"go"}><b>go</b></ClLinks> to a <ClLinks  term={"tag"}><i>tag</i></ClLinks> in its body. It is permissible for <ClLinks  term={"go"}><b>go</b></ClLinks> to jump to a <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> that is not the innermost <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> containing that <ClLinks  term={"go"}><b>go</b></ClLinks>; the <ClLinks  term={"tag"}><i>tags</i></ClLinks> established by a <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> only shadow other <ClLinks  term={"tag"}><i>tags</i></ClLinks> of like name. 
+A <ClLinks  term={"tag"}><i>tag</i></ClLinks> established by <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> has <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> and has <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>. Once <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> has been exited, it is no longer valid to <ClLinks  term={"go"}><b>go</b></ClLinks> to a <ClLinks  term={"tag"}><i>tag</i></ClLinks> in its body. It is permissible for <ClLinks  term={"go"}><b>go</b></ClLinks> to jump to a <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> that is not the innermost <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> containing that <ClLinks  term={"go"}><b>go</b></ClLinks>; the <ClLinks  term={"tag"}><i>tags</i></ClLinks> established by a <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> only shadow other <ClLinks  term={"tag"}><i>tags</i></ClLinks> of like name. 
 
 
 
-The determination of which elements of the body are <ClLinks  term={"tag"}><i>tags</i></ClLinks> and which are *statements* is made prior to any *macro expansion* of that element. If a *statement* is a *macro form* and its *macro expansion* is an <ClLinks  term={"atom"}><i>atom</i></ClLinks>, that <ClLinks  term={"atom"}><i>atom</i></ClLinks> is treated as a *statement*, not a <ClLinks  term={"tag"}><i>tag</i></ClLinks>. 
+The determination of which elements of the body are <ClLinks  term={"tag"}><i>tags</i></ClLinks> and which are *statements* is made prior to any <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> of that element. If a *statement* is a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> and its <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> is an <ClLinks  term={"atom"}><i>atom</i></ClLinks>, that <ClLinks  term={"atom"}><i>atom</i></ClLinks> is treated as a *statement*, not a <ClLinks  term={"tag"}><i>tag</i></ClLinks>. 
 
 
 

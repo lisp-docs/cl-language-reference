@@ -55,11 +55,11 @@ Returns the host’s <ClLinks  term={"list"}><i>list</i></ClLinks> of translatio
 
 
 
-When setting the translations list, each *from-wildcard* can be a *logical pathname* whose host is *host* or a *logical pathname* namestring parseable by (parse-namestring *string host*), where *host* represents the appropriate <ClLinks  term={"object"}><i>object</i></ClLinks> as defined by <ClLinks  term={"parse-namestring"}><b>parse-namestring</b></ClLinks>. Each *to-wildcard* can be anything coercible to a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> by (pathname *to-wildcard*). If *to-wildcard* coerces to a *logical pathname*, <ClLinks  term={"translate-logical-pathname"}><b>translate-logical-pathname</b></ClLinks> will perform repeated translation steps when it uses it. 
+When setting the translations list, each *from-wildcard* can be a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> whose host is *host* or a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> namestring parseable by (parse-namestring *string host*), where *host* represents the appropriate <ClLinks  term={"object"}><i>object</i></ClLinks> as defined by <ClLinks  term={"parse-namestring"}><b>parse-namestring</b></ClLinks>. Each *to-wildcard* can be anything coercible to a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> by (pathname *to-wildcard*). If *to-wildcard* coerces to a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, <ClLinks  term={"translate-logical-pathname"}><b>translate-logical-pathname</b></ClLinks> will perform repeated translation steps when it uses it. 
 
 
 
-*host* is either the host component of a *logical pathname* or a <ClLinks  term={"string"}><i>string</i></ClLinks> that has been defined as a *logical pathname* host name by <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"logical-pathname-translations"}><b>logical-pathname-translations</b></ClLinks>. 
+*host* is either the host component of a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> or a <ClLinks  term={"string"}><i>string</i></ClLinks> that has been defined as a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> host name by <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"logical-pathname-translations"}><b>logical-pathname-translations</b></ClLinks>. 
 
 
 
@@ -188,7 +188,7 @@ If *host* is incorrectly supplied, an error of <ClLinks  term={"type"}><i>type</
 
 
 
-Implementations can define additional <ClLinks  term={"function"}><i>functions</i></ClLinks> that operate on *logical pathname* hosts, for example to specify additional translation rules or options. 
+Implementations can define additional <ClLinks  term={"function"}><i>functions</i></ClLinks> that operate on <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> hosts, for example to specify additional translation rules or options. 
 
 
 

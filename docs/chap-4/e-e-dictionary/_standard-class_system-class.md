@@ -1,4 +1,4 @@
-**standard-class** *System Class* 
+**standard-class** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 

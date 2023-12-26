@@ -22,7 +22,7 @@
 
 
 
-Returns as an *integer* the current run time in *internal time units*. The precise meaning of this quantity is <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>; it may measure real time, run time, CPU cycles, or some other quantity. The intent is that the difference between the values of two calls to this function be the amount of time between the two calls during which computational effort was expended on behalf of the executing program. 
+Returns as an *integer* the current run time in <GlossaryTerm styled={true} term={"internal time unit"}><i>internal time units</i></GlossaryTerm>. The precise meaning of this quantity is <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>; it may measure real time, run time, CPU cycles, or some other quantity. The intent is that the difference between the values of two calls to this function be the amount of time between the two calls during which computational effort was expended on behalf of the executing program. 
 
 
 

@@ -2,11 +2,11 @@
 
 
 
-*Package prefixes* are printed if necessary. The rules for *package prefixes* are as follows. When the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is printed, if it is in the KEYWORD <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, then it is printed with a preceding <ClLinks styled={true} term={"colon"}><i>colon</i></ClLinks>; otherwise, if it is <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in the *current package*, it is printed without any *package prefix* ; otherwise, it is printed with a *package prefix* . 
+*Package prefixes* are printed if necessary. The rules for *package prefixes* are as follows. When the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is printed, if it is in the KEYWORD <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, then it is printed with a preceding <ClLinks styled={true} term={"colon"}><i>colon</i></ClLinks>; otherwise, if it is <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>, it is printed without any <GlossaryTerm styled={true} term={"package prefix"}><i>package prefix</i></GlossaryTerm> ; otherwise, it is printed with a <GlossaryTerm styled={true} term={"package prefix"}><i>package prefix</i></GlossaryTerm> . 
 
 
 
-A <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that is *apparently uninterned* is printed preceded by “#:” if <ClLinks styled={true} term={"print-gensym"}><b>\*print-gensym\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> and *printer escaping* is enabled; if <ClLinks styled={true} term={"print-gensym"}><b>\*print-gensym\*</b></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> or *printer escaping* is disabled, then the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is printed without a prefix, as if it were in the *current package*. 
+A <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> that is <GlossaryTerm styled={true} term={"apparently uninterned"}><i>apparently uninterned</i></GlossaryTerm> is printed preceded by “#:” if <ClLinks styled={true} term={"print-gensym"}><b>\*print-gensym\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> and <GlossaryTerm styled={true} term={"printer escaping"}><i>printer escaping</i></GlossaryTerm> is enabled; if <ClLinks styled={true} term={"print-gensym"}><b>\*print-gensym\*</b></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> or <GlossaryTerm styled={true} term={"printer escaping"}><i>printer escaping</i></GlossaryTerm> is disabled, then the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is printed without a prefix, as if it were in the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@ foo:bar
 
 
 
-foo:bar is printed when <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> bar is external in its *home package* foo and is not <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in the *current package*. 
+foo:bar is printed when <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> bar is external in its <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> foo and is not <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
@@ -38,7 +38,7 @@ foo::bar
 
 
 
-foo::bar is printed when bar is internal in its *home package* foo and is not <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in the *current package*. 
+foo::bar is printed when bar is internal in its <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> foo and is not <ClLinks styled={true} term={"accessible"}><i>accessible</i></ClLinks> in the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 

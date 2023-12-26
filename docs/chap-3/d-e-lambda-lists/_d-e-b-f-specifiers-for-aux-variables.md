@@ -2,7 +2,7 @@
 
 
 
-These are not really parameters. If the *lambda list keyword* **&amp;aux** is present, all specifiers after it are auxiliary variable specifiers. After all parameter specifiers have been processed, the auxiliary variable specifiers (those following &amp;aux) are processed from left to right. For each one, *init-form* is 
+These are not really parameters. If the <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keyword</i></GlossaryTerm> **&amp;aux** is present, all specifiers after it are auxiliary variable specifiers. After all parameter specifiers have been processed, the auxiliary variable specifiers (those following &amp;aux) are processed from left to right. For each one, *init-form* is 
 
 
 

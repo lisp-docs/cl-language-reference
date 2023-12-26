@@ -30,7 +30,7 @@
 
 
 
-*start*, *end*—*bounding index designators* of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-Creates an *input string stream*, provides an opportunity to perform operations on the <ClLinks  term={"stream"}><i>stream</i></ClLinks> (returning zero or more <ClLinks  term={"value"}><i>values</i></ClLinks>), and then closes the *string stream*. 
+Creates an *input string stream*, provides an opportunity to perform operations on the <ClLinks  term={"stream"}><i>stream</i></ClLinks> (returning zero or more <ClLinks  term={"value"}><i>values</i></ClLinks>), and then closes the <GlossaryTerm styled={true} term={"string stream"}><i>string stream</i></GlossaryTerm>. 
 
 
 
@@ -66,11 +66,11 @@ Creates an *input string stream*, provides an opportunity to perform operations 
 
 
 
-<ClLinks  term={"string"}><i>String</i></ClLinks> is evaluated first, and *var* is bound to a character *input string stream* that supplies <ClLinks  term={"character"}><i>characters</i></ClLinks> from the subsequence of the resulting *string bounded* by *start* and *end*. The body is executed as an *implicit progn*. 
+<ClLinks  term={"string"}><i>String</i></ClLinks> is evaluated first, and *var* is bound to a character *input string stream* that supplies <ClLinks  term={"character"}><i>characters</i></ClLinks> from the subsequence of the resulting *string bounded* by *start* and *end*. The body is executed as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
-The *input string stream* is automatically closed on exit from <ClLinks  term={"with-input-from-string"}><b>with-input-from-string</b></ClLinks>, no matter whether the exit is normal or abnormal. The *input string stream* to which the *variable var* is <ClLinks  term={"bound"}><i>bound</i></ClLinks> has *dynamic extent*; its <ClLinks  term={"extent"}><i>extent</i></ClLinks> ends when the <ClLinks  term={"form"}><i>form</i></ClLinks> is exited. 
+The *input string stream* is automatically closed on exit from <ClLinks  term={"with-input-from-string"}><b>with-input-from-string</b></ClLinks>, no matter whether the exit is normal or abnormal. The *input string stream* to which the *variable var* is <ClLinks  term={"bound"}><i>bound</i></ClLinks> has <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>; its <ClLinks  term={"extent"}><i>extent</i></ClLinks> ends when the <ClLinks  term={"form"}><i>form</i></ClLinks> is exited. 
 
 
 

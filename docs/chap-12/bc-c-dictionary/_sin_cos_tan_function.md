@@ -72,7 +72,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-**asin, acos, atan** 
+<DictionaryLink styled={true} term={"asin, acos, atan"}><b>asin, acos, atan</b></DictionaryLink> 
 
 
 

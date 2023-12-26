@@ -39,7 +39,7 @@
 
 
 
-<ClLinks  term={"aref"}><b>aref</b></ClLinks> ignores *fill pointers*. It is permissible to use <ClLinks  term={"aref"}><b>aref</b></ClLinks> to <ClLinks  term={"access"}><i>access</i></ClLinks> any *array element*, whether <ClLinks  term={"active"}><i>active</i></ClLinks> or not. 
+<ClLinks  term={"aref"}><b>aref</b></ClLinks> ignores <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm>. It is permissible to use <ClLinks  term={"aref"}><b>aref</b></ClLinks> to <ClLinks  term={"access"}><i>access</i></ClLinks> any *array element*, whether <ClLinks  term={"active"}><i>active</i></ClLinks> or not. 
 
 
 

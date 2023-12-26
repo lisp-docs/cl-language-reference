@@ -1,4 +1,4 @@
-**allocate-instance** *Standard Generic Function* 
+**allocate-instance** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*initargs*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *keyword/value pairs* (initialization argument <ClLinks  term={"name"}><i>names</i></ClLinks> and <ClLinks  term={"value"}><i>values</i></ClLinks>). *new-instance*—an <ClLinks  term={"object"}><i>object</i></ClLinks> whose <ClLinks  term={"class"}><i>class</i></ClLinks> is <ClLinks  term={"class"}><i>class</i></ClLinks>. 
+*initargs*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"keyword/value pair"}><i>keyword/value pairs</i></GlossaryTerm> (initialization argument <ClLinks  term={"name"}><i>names</i></ClLinks> and <ClLinks  term={"value"}><i>values</i></ClLinks>). *new-instance*—an <ClLinks  term={"object"}><i>object</i></ClLinks> whose <ClLinks  term={"class"}><i>class</i></ClLinks> is <ClLinks  term={"class"}><i>class</i></ClLinks>. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-The generic function <ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks> creates and returns a new instance of the <ClLinks  term={"class"}><i>class</i></ClLinks>, without initializing it. When the <ClLinks  term={"class"}><i>class</i></ClLinks> is a *standard class*, this means that the <ClLinks  term={"slot"}><i>slots</i></ClLinks> are <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>; when the <ClLinks  term={"class"}><i>class</i></ClLinks> is a *structure class*, this means the <ClLinks  term={"slot"}><i>slots</i></ClLinks>’ <ClLinks  term={"value"}><i>values</i></ClLinks> are unspecified. 
+The generic function <ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks> creates and returns a new instance of the <ClLinks  term={"class"}><i>class</i></ClLinks>, without initializing it. When the <ClLinks  term={"class"}><i>class</i></ClLinks> is a <GlossaryTerm styled={true} term={"standard class"}><i>standard class</i></GlossaryTerm>, this means that the <ClLinks  term={"slot"}><i>slots</i></ClLinks> are <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>; when the <ClLinks  term={"class"}><i>class</i></ClLinks> is a <GlossaryTerm styled={true} term={"structure class"}><i>structure class</i></GlossaryTerm>, this means the <ClLinks  term={"slot"}><i>slots</i></ClLinks>’ <ClLinks  term={"value"}><i>values</i></ClLinks> are unspecified. 
 
 
 
@@ -58,7 +58,7 @@ The caller of <ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClL
 
 
 
-The *generic function* <ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks> is called by <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks>, as described in Section 7.1 (Object Creation and Initialization). 
+The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks> is called by <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks>, as described in Section 7.1 (Object Creation and Initialization). 
 
 
 

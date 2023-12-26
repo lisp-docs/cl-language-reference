@@ -3,11 +3,11 @@
 
 
 
-Although it is technically permissible, as described above, for <ClLinks  term={"eval"}><b>eval</b></ClLinks> to treat *compiler macros* in the same situations as <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> might, this is not necessarily a good idea in *interpreted implementations*. 
+Although it is technically permissible, as described above, for <ClLinks  term={"eval"}><b>eval</b></ClLinks> to treat <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macros</i></GlossaryTerm> in the same situations as <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> might, this is not necessarily a good idea in <GlossaryTerm styled={true} term={"interpreted implementation"}><i>interpreted implementations</i></GlossaryTerm>. 
 
 
 
-*Compiler macros* exist for the purpose of trading compile-time speed for run-time speed. Programmers who write *compiler macros* tend to assume that the *compiler macros* can take more time than normal <ClLinks  term={"function"}><i>functions</i></ClLinks> and <ClLinks  term={"macro"}><i>macros</i></ClLinks> in order to produce code which is especially optimal for use at run time. Since <ClLinks  term={"eval"}><b>eval</b></ClLinks> in an *interpreted implementation* might perform semantic analysis of the same form multiple times, it might be inefficient in general for the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to choose to call *compiler macros* on every such <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"compiler macro"}><i>Compiler macros</i></GlossaryTerm> exist for the purpose of trading compile-time speed for run-time speed. Programmers who write <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macros</i></GlossaryTerm> tend to assume that the <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macros</i></GlossaryTerm> can take more time than normal <ClLinks  term={"function"}><i>functions</i></ClLinks> and <ClLinks  term={"macro"}><i>macros</i></ClLinks> in order to produce code which is especially optimal for use at run time. Since <ClLinks  term={"eval"}><b>eval</b></ClLinks> in an <GlossaryTerm styled={true} term={"interpreted implementation"}><i>interpreted implementation</i></GlossaryTerm> might perform semantic analysis of the same form multiple times, it might be inefficient in general for the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to choose to call <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macros</i></GlossaryTerm> on every such <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks>. 
 
 
 

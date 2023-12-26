@@ -62,7 +62,7 @@ The variable <ClLinks  term={"modules"}><b>\*modules\*</b></ClLinks> is deprecat
 
 
 
-**provide, require** 
+<DictionaryLink styled={true} term={"provide, require"}><b>provide, require</b></DictionaryLink> 
 
 
 

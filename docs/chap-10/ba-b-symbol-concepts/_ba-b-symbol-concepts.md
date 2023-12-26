@@ -2,7 +2,7 @@
 
 
 
-Figure 10–1 lists some *defined names* that are applicable to the *property lists* of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
+Figure 10–1 lists some <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> that are applicable to the <GlossaryTerm styled={true} term={"property list"}><i>property lists</i></GlossaryTerm> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 
@@ -18,7 +18,7 @@ Figure 10–1 lists some *defined names* that are applicable to the *property li
 
 
 
-Figure 10–2 lists some *defined names* that are applicable to the creation of and inquiry about <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
+Figure 10–2 lists some <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> that are applicable to the creation of and inquiry about <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 

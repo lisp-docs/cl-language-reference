@@ -2,7 +2,7 @@
 
 
 
-For functions that are mathematically associative (and possibly commutative), a *conforming implementation* may process the <ClLinks  term={"argument"}><i>arguments</i></ClLinks> in any manner consistent with associative (and possibly commutative) rearrangement. This does not affect the order in which the <ClLinks  term={"argument"}><i>argument</i></ClLinks> 
+For functions that are mathematically associative (and possibly commutative), a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> may process the <ClLinks  term={"argument"}><i>arguments</i></ClLinks> in any manner consistent with associative (and possibly commutative) rearrangement. This does not affect the order in which the <ClLinks  term={"argument"}><i>argument</i></ClLinks> 
 
 
 
@@ -10,7 +10,7 @@ For functions that are mathematically associative (and possibly commutative), a 
 
 
 
-A *conforming program* can control the order of processing explicitly by separating the operations into separate (possibly nested) *function forms*, or by writing explicit calls to <ClLinks  term={"function"}><i>functions</i></ClLinks> that perform coercions. 
+A <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> can control the order of processing explicitly by separating the operations into separate (possibly nested) <GlossaryTerm styled={true} term={"function form"}><i>function forms</i></GlossaryTerm>, or by writing explicit calls to <ClLinks  term={"function"}><i>functions</i></ClLinks> that perform coercions. 
 
 
 

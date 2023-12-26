@@ -14,11 +14,11 @@
 
 
 
-*format-control*—a *format control*. The default is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+*format-control*—a <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm>. The default is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
-*format-arguments*—*format arguments* for the *format-control*. 
+*format-arguments*—<GlossaryTerm styled={true} term={"format argument"}><i>format arguments</i></GlossaryTerm> for the *format-control*. 
 
 
 

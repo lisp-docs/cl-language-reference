@@ -6,7 +6,7 @@ Parsing is the operation used to convert a <ClLinks  term={"namestring"}><i>name
 
 
 
-A *conforming implementation* is free to accommodate other *file system* features in its <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> representation and provides a parser that can process such specifications in <ClLinks  term={"namestring"}><i>namestrings</i></ClLinks>. *Conforming programs* must not depend on any such features, since those features will not be portable. 
+A <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> is free to accommodate other <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> features in its <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> representation and provides a parser that can process such specifications in <ClLinks  term={"namestring"}><i>namestrings</i></ClLinks>. <GlossaryTerm styled={true} term={"conforming program"}><i>Conforming programs</i></GlossaryTerm> must not depend on any such features, since those features will not be portable. 
 
 
 

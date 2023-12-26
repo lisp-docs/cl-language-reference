@@ -114,7 +114,7 @@ The generic function (setf class-name) sets the name of a <ClLinks  term={"class
 
 
 
-<ClLinks  term={"find-class"}><b>find-class</b></ClLinks>, *proper name*, Section 4.3 (Classes) 
+<ClLinks  term={"find-class"}><b>find-class</b></ClLinks>, <GlossaryTerm styled={true} term={"proper name"}><i>proper name</i></GlossaryTerm>, Section 4.3 (Classes) 
 
 
 

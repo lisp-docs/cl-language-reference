@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, which might be a *dotted list* or a *circular list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, which might be a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm>. 
 
 
 

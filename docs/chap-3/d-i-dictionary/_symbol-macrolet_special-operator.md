@@ -1,4 +1,4 @@
-**symbol-macrolet** *Special Operator* 
+**symbol-macrolet** <GlossaryTerm styled={true} term={"special operator"}><i>Special Operator</i></GlossaryTerm> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-<ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> provides a mechanism for affecting the *macro expansion* environment for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
+<ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> provides a mechanism for affecting the <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> environment for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 
-<ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> lexically establishes expansion functions for each of the *symbol macros* named by <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. The only guaranteed property of an expansion <ClLinks  term={"function"}><i>function</i></ClLinks> for a *symbol macro* is that when it is applied to the <ClLinks  term={"form"}><i>form</i></ClLinks> and the <ClLinks  term={"environment"}><i>environment</i></ClLinks> it returns the correct expansion. (In particular, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the expansion is conceptually stored in the expansion function, the <ClLinks  term={"environment"}><i>environment</i></ClLinks>, or both.) 
+<ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> lexically establishes expansion functions for each of the <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macros</i></GlossaryTerm> named by <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. The only guaranteed property of an expansion <ClLinks  term={"function"}><i>function</i></ClLinks> for a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> is that when it is applied to the <ClLinks  term={"form"}><i>form</i></ClLinks> and the <ClLinks  term={"environment"}><i>environment</i></ClLinks> it returns the correct expansion. (In particular, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the expansion is conceptually stored in the expansion function, the <ClLinks  term={"environment"}><i>environment</i></ClLinks>, or both.) 
 
 
 
@@ -88,7 +88,7 @@ The use of <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> c
 
 
 
-If an attempt is made to bind a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is defined as a *global variable*, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> is signaled. 
+If an attempt is made to bind a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is defined as a <GlossaryTerm styled={true} term={"global variable"}><i>global variable</i></GlossaryTerm>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> is signaled. 
 
 
 
@@ -112,7 +112,7 @@ The special form <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLi
 
 
 
-If a <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is a *top level form*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are also processed as *top level forms*. See Section 3.2.3 (File Compilation). 
+If a <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are also processed as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>. See Section 3.2.3 (File Compilation). 
 
 
 
@@ -124,7 +124,7 @@ If a <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> <ClLink
 
 
 
-a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of three <ClLinks  term={"argument"}><i>arguments</i></ClLinks>: a *macro function*, a *macro form*, and an *environment object*. 
+a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of three <ClLinks  term={"argument"}><i>arguments</i></ClLinks>: a <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>, a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>, and an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. 
 
 
 
@@ -140,7 +140,7 @@ a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a function that 
 
 
 
-Used as the expansion interface hook by <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> to control the *macro expansion* process. When a *macro form* is to be expanded, this <ClLinks  term={"function"}><i>function</i></ClLinks> is called with three arguments: the *macro function*, the *macro form*, and the <ClLinks  term={"environment"}><i>environment</i></ClLinks> in which the *macro form* is to be expanded. The *environment object* has *dynamic extent*; the consequences are undefined if the *environment object* is referred to outside the *dynamic extent* of the macro expansion function. 
+Used as the expansion interface hook by <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> to control the <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> process. When a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> is to be expanded, this <ClLinks  term={"function"}><i>function</i></ClLinks> is called with three arguments: the <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>, and the <ClLinks  term={"environment"}><i>environment</i></ClLinks> in which the <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> is to be expanded. The <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm> has <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>; the consequences are undefined if the <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm> is referred to outside the <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm> of the macro expansion function. 
 
 
 
@@ -179,11 +179,11 @@ Evaluation and
 
 
 
-The net e↵ect of the chosen initial value is to just invoke the *macro function*, giving it the *macro form* and <ClLinks  term={"environment"}><i>environment</i></ClLinks> as its two arguments. 
+The net e↵ect of the chosen initial value is to just invoke the <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>, giving it the <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> and <ClLinks  term={"environment"}><i>environment</i></ClLinks> as its two arguments. 
 
 
 
-Users or user programs can <ClLinks  term={"assign"}><i>assign</i></ClLinks> this <ClLinks  term={"variable"}><i>variable</i></ClLinks> to customize or trace the *macro expansion* mechanism. Note, however, that this <ClLinks  term={"variable"}><i>variable</i></ClLinks> is a global resource, potentially shared by multiple <ClLinks  term={"program"}><i>programs</i></ClLinks>; as such, if any two <ClLinks  term={"program"}><i>programs</i></ClLinks> depend for their correctness on the setting of this <ClLinks  term={"variable"}><i>variable</i></ClLinks>, those <ClLinks  term={"program"}><i>programs</i></ClLinks> may not be able to run in the same *Lisp image*. For this reason, it is frequently best to confine its uses to debugging situations. 
+Users or user programs can <ClLinks  term={"assign"}><i>assign</i></ClLinks> this <ClLinks  term={"variable"}><i>variable</i></ClLinks> to customize or trace the <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> mechanism. Note, however, that this <ClLinks  term={"variable"}><i>variable</i></ClLinks> is a global resource, potentially shared by multiple <ClLinks  term={"program"}><i>programs</i></ClLinks>; as such, if any two <ClLinks  term={"program"}><i>programs</i></ClLinks> depend for their correctness on the setting of this <ClLinks  term={"variable"}><i>variable</i></ClLinks>, those <ClLinks  term={"program"}><i>programs</i></ClLinks> may not be able to run in the same *Lisp image*. For this reason, it is frequently best to confine its uses to debugging situations. 
 
 
 

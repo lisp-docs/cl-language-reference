@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a *proper list* or a *dotted list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Returns a <ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. If <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a *dotted list*, the resulting <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> will also be a *dotted list*. 
+Returns a <ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. If <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>, the resulting <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> will also be a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>. 
 
 
 
-Only the *list structure* of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is copied; the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the resulting list are the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> as the corresponding <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the given <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+Only the <GlossaryTerm styled={true} term={"list structure"}><i>list structure</i></GlossaryTerm> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is copied; the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the resulting list are the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> as the corresponding <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of the given <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -54,7 +54,7 @@ clst → (1 ("two" 3))
 
 
 
-The consequences are undefined if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a *circular list*. 
+The consequences are undefined if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm>. 
 
 
 

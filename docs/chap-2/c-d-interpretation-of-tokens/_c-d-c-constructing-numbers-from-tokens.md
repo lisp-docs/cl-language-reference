@@ -10,7 +10,7 @@ A <ClLinks  term={"complex"}><i>complex</i></ClLinks> is notated as a #C (or #c)
 
 
 
-The *reader macros* #B, #O, #X, and #R may also be useful in controlling the input <ClLinks  term={"radix"}><i>radix</i></ClLinks> in which <ClLinks  term={"rational"}><i>rationals</i></ClLinks> are parsed; see Section 2.4.8.7 (Sharpsign B), Section 2.4.8.8 (Sharpsign O), Section 2.4.8.9 (Sharpsign X), and Section 2.4.8.10 (Sharpsign R). 
+The <GlossaryTerm styled={true} term={"reader macro"}><i>reader macros</i></GlossaryTerm> #B, #O, #X, and #R may also be useful in controlling the input <ClLinks  term={"radix"}><i>radix</i></ClLinks> in which <ClLinks  term={"rational"}><i>rationals</i></ClLinks> are parsed; see Section 2.4.8.7 (Sharpsign B), Section 2.4.8.8 (Sharpsign O), Section 2.4.8.9 (Sharpsign X), and Section 2.4.8.10 (Sharpsign R). 
 
 
 

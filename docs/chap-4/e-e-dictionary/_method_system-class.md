@@ -1,4 +1,4 @@
-**method** *System Class* 
+**method** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-A <ClLinks  term={"method"}><i>method</i></ClLinks> is an <ClLinks  term={"object"}><i>object</i></ClLinks> that represents a modular part of the behavior of a *generic function*. 
+A <ClLinks  term={"method"}><i>method</i></ClLinks> is an <ClLinks  term={"object"}><i>object</i></ClLinks> that represents a modular part of the behavior of a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 
 
 
 
-A <ClLinks  term={"method"}><i>method</i></ClLinks> contains <ClLinks  term={"code"}><i>code</i></ClLinks> to implement the <ClLinks  term={"method"}><i>method</i></ClLinks>’s behavior, a sequence of *parameter specializers* that specify when the given <ClLinks  term={"method"}><i>method</i></ClLinks> is applicable, and a sequence of <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> that is used by the method combination facility to distinguish among <ClLinks  term={"method"}><i>methods</i></ClLinks>. Each required parameter of each <ClLinks  term={"method"}><i>method</i></ClLinks> has an associated *parameter specializer* , and the <ClLinks  term={"method"}><i>method</i></ClLinks> will be invoked only on arguments that satisfy its *parameter specializers*. 
+A <ClLinks  term={"method"}><i>method</i></ClLinks> contains <ClLinks  term={"code"}><i>code</i></ClLinks> to implement the <ClLinks  term={"method"}><i>method</i></ClLinks>’s behavior, a sequence of <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> that specify when the given <ClLinks  term={"method"}><i>method</i></ClLinks> is applicable, and a sequence of <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> that is used by the method combination facility to distinguish among <ClLinks  term={"method"}><i>methods</i></ClLinks>. Each required parameter of each <ClLinks  term={"method"}><i>method</i></ClLinks> has an associated <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializer</i></GlossaryTerm> , and the <ClLinks  term={"method"}><i>method</i></ClLinks> will be invoked only on arguments that satisfy its <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm>. 
 
 
 

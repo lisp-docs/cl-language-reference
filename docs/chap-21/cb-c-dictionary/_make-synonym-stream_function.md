@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that names a *dynamic variable*. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that names a <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm>. 
 
 
 
-*synonym-stream*—a *synonym stream*. 
+*synonym-stream*—a <GlossaryTerm styled={true} term={"synonym stream"}><i>synonym stream</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a *synonym stream* whose *synonym stream symbol* is <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Returns a <GlossaryTerm styled={true} term={"synonym stream"}><i>synonym stream</i></GlossaryTerm> whose <GlossaryTerm styled={true} term={"synonym stream symbol"}><i>synonym stream symbol</i></GlossaryTerm> is <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 

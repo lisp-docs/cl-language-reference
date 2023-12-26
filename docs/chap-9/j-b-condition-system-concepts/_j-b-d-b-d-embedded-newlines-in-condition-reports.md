@@ -2,7 +2,7 @@
 
 
 
-Especially if it is long, it is permissible and appropriate for a *report message* to contain one or more embedded <ClLinks styled={true} term={"newline"}><i>newlines</i></ClLinks>. 
+Especially if it is long, it is permissible and appropriate for a <GlossaryTerm styled={true} term={"report message"}><i>report message</i></GlossaryTerm> to contain one or more embedded <ClLinks styled={true} term={"newline"}><i>newlines</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ If the calling routine conventionally inserts some additional prefix (such as â€
 
 
 
-be added to each subsequent line of the output, so that the left edge of the message output by the *condition reporter* will still be properly aligned. 
+be added to each subsequent line of the output, so that the left edge of the message output by the <GlossaryTerm styled={true} term={"condition reporter"}><i>condition reporter</i></GlossaryTerm> will still be properly aligned. 
 
 
 

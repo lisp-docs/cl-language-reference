@@ -22,7 +22,7 @@ All <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> seriou
 
 
 
-Signaling a *serious condition* does not itself force entry into the debugger. However, except in the unusual situation where the programmer can assure that no harm will come from failing to <ClLinks styled={true} term={"handle"}><i>handle</i></ClLinks> 
+Signaling a <GlossaryTerm styled={true} term={"serious condition"}><i>serious condition</i></GlossaryTerm> does not itself force entry into the debugger. However, except in the unusual situation where the programmer can assure that no harm will come from failing to <ClLinks styled={true} term={"handle"}><i>handle</i></ClLinks> 
 
 
 
@@ -38,7 +38,7 @@ Signaling a *serious condition* does not itself force entry into the debugger. H
 
 
 
-a *serious condition*, such a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is usually signaled with <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> rather than <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> in order to assure that the program does not continue without *handling* the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. (And conversely, it is conventional to use <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> rather than <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> to signal conditions which are not *serious conditions*, since normally the failure to handle a non-serious condition is not reason enough for the debugger to be entered.) 
+a <GlossaryTerm styled={true} term={"serious condition"}><i>serious condition</i></GlossaryTerm>, such a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is usually signaled with <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> rather than <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> in order to assure that the program does not continue without *handling* the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. (And conversely, it is conventional to use <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> rather than <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> to signal conditions which are not <GlossaryTerm styled={true} term={"serious condition"}><i>serious conditions</i></GlossaryTerm>, since normally the failure to handle a non-serious condition is not reason enough for the debugger to be entered.) 
 
 
 

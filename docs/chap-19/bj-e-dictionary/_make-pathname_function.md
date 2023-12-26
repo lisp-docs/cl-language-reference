@@ -18,23 +18,23 @@
 
 
 
-*host*—a *valid physical pathname host*. Complicated defaulting behavior; see below. *device*—a *valid pathname device*. Complicated defaulting behavior; see below. 
+*host*—a <GlossaryTerm styled={true} term={"valid physical pathname host"}><i>valid physical pathname host</i></GlossaryTerm>. Complicated defaulting behavior; see below. *device*—a <GlossaryTerm styled={true} term={"valid pathname device"}><i>valid pathname device</i></GlossaryTerm>. Complicated defaulting behavior; see below. 
 
 
 
-*directory*—a *valid pathname directory*. Complicated defaulting behavior; see below. <ClLinks  term={"name"}><i>name</i></ClLinks>—a *valid pathname name*. Complicated defaulting behavior; see below. 
+*directory*—a <GlossaryTerm styled={true} term={"valid pathname directory"}><i>valid pathname directory</i></GlossaryTerm>. Complicated defaulting behavior; see below. <ClLinks  term={"name"}><i>name</i></ClLinks>—a <GlossaryTerm styled={true} term={"valid pathname name"}><i>valid pathname name</i></GlossaryTerm>. Complicated defaulting behavior; see below. 
 
 
 
-<ClLinks  term={"type"}><i>type</i></ClLinks>—a *valid pathname type*. Complicated defaulting behavior; see below. 
+<ClLinks  term={"type"}><i>type</i></ClLinks>—a <GlossaryTerm styled={true} term={"valid pathname type"}><i>valid pathname type</i></GlossaryTerm>. Complicated defaulting behavior; see below. 
 
 
 
-*version*—a *valid pathname version*. Complicated defaulting behavior; see below. 
+*version*—a <GlossaryTerm styled={true} term={"valid pathname version"}><i>valid pathname version</i></GlossaryTerm>. Complicated defaulting behavior; see below. 
 
 
 
-*defaults*—a *pathname designator* . The default is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> whose host component is the same as the host component of the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></ClLinks>, and whose other components are all <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*defaults*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . The default is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> whose host component is the same as the host component of the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></ClLinks>, and whose other components are all <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ If <ClLinks  term={"case"}><i>case</i></ClLinks> is supplied, it is treated as d
 
 
 
-The resulting <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a *logical pathname* if and only its host component is a *logical host* or a <ClLinks  term={"string"}><i>string</i></ClLinks> that names a defined *logical host*. 
+The resulting <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> if and only its host component is a <GlossaryTerm styled={true} term={"logical host"}><i>logical host</i></GlossaryTerm> or a <ClLinks  term={"string"}><i>string</i></ClLinks> that names a defined <GlossaryTerm styled={true} term={"logical host"}><i>logical host</i></GlossaryTerm>. 
 
 
 
@@ -132,7 +132,7 @@ If the *directory* is a <ClLinks  term={"string"}><i>string</i></ClLinks>, it sh
 
 
 
-The *file system*. 
+The <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. 
 
 
 

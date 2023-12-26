@@ -2,7 +2,7 @@
 
 
 
-This information describes any <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> restrictions on a *dynamic variable*. 
+This information describes any <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> restrictions on a <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm>. 
 
 
 

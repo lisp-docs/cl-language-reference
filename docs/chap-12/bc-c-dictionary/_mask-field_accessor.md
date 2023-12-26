@@ -18,7 +18,7 @@
 
 
 
-*bytespec*—a *byte specifier* . 
+*bytespec*—a <GlossaryTerm styled={true} term={"byte specifier"}><i>byte specifier</i></GlossaryTerm> . 
 
 
 

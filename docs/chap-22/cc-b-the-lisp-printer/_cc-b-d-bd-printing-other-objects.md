@@ -6,7 +6,7 @@ Other <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> are printe
 
 
 
-For example, *hash tables*, *readtables*, *packages*, *streams*, and <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> might not print <ClLinks styled={true} term={"readably"}><i>readably</i></ClLinks>. 
+For example, <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"readtable"}><i>readtables</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"package"}><i>packages</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"stream"}><i>streams</i></GlossaryTerm>, and <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> might not print <ClLinks styled={true} term={"readably"}><i>readably</i></ClLinks>. 
 
 
 

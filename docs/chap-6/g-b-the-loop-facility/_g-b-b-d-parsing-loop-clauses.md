@@ -34,7 +34,7 @@ finally (format t "About to exit!")) ; sixth clause
 
 
 
-Each *loop keyword* introduces either a compound loop clause or a simple loop clause that can consist of a *loop keyword* followed by a single <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. The number of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a clause is determined by the *loop keyword* that begins the clause and by the auxiliary keywords in the clause. The keywords do, doing, initially, and finally are the only loop keywords that can take any number of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> and group them as an *implicit progn*. 
+Each <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> introduces either a compound loop clause or a simple loop clause that can consist of a <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> followed by a single <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. The number of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a clause is determined by the <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> that begins the clause and by the auxiliary keywords in the clause. The keywords do, doing, initially, and finally are the only loop keywords that can take any number of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> and group them as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 

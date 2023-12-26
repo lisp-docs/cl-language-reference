@@ -1,4 +1,4 @@
-**char-code-limit** *Constant Variable* 
+**char-code-limit** <GlossaryTerm styled={true} term={"constant variable"}><i>Constant Variable</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-A non-negative *integer* , the exact magnitude of which is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but which is not less than 96 (the number of *standard characters*). 
+A non-negative *integer* , the exact magnitude of which is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but which is not less than 96 (the number of <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>). 
 
 
 
