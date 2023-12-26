@@ -51,7 +51,7 @@ A value of <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> denotes the
 
 
 
-The consequences are undefined if <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm> is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks> in a use of <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"compiler-macro-function"}><b>compiler-macro-function</b></DictionaryLink>. 
+The consequences are undefined if <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm> is <GlossaryTerm  term={"non-nil"}><i>non-nil</i></GlossaryTerm> in a use of <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"compiler-macro-function"}><b>compiler-macro-function</b></DictionaryLink>. 
 
 
 
