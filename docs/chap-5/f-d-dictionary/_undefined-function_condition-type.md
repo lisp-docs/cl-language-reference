@@ -14,11 +14,11 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"undefined-function"}><b>undefined-function</b></DictionaryLink> consists of *error conditions* that represent attempts to <ClLinks  term={"read"}><i>read</i></ClLinks> the definition of an <GlossaryTerm styled={true} term={"undefined function"}><i>undefined function</i></GlossaryTerm>. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"undefined-function"}><b>undefined-function</b></DictionaryLink> consists of *error conditions* that represent attempts to <GlossaryTerm  term={"read"}><i>read</i></GlossaryTerm> the definition of an <GlossaryTerm styled={true} term={"undefined function"}><i>undefined function</i></GlossaryTerm>. 
 
 
 
-The name of the cell (see <DictionaryLink  term={"cell-error"}><b>cell-error</b></DictionaryLink>) is the <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> which was <ClLinks  term={"funbound"}><i>funbound</i></ClLinks>. 
+The name of the cell (see <DictionaryLink  term={"cell-error"}><b>cell-error</b></DictionaryLink>) is the <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> which was <GlossaryTerm  term={"funbound"}><i>funbound</i></GlossaryTerm>. 
 
 
 

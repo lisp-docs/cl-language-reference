@@ -6,7 +6,7 @@ Processing of <GlossaryTerm styled={true} term={"top level form"}><i>top level f
 
 
 
-1\. If the <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"compiler macro form"}><i>compiler macro form</i></GlossaryTerm> (not disabled by a <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>), the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might or might not choose to compute the <GlossaryTerm styled={true} term={"compiler macro expansion"}><i>compiler macro expansion</i></GlossaryTerm> of the <ClLinks  term={"form"}><i>form</i></ClLinks> and, having performed the expansion, might or might not choose to process the result as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in the same processing mode (compile-time-too or not-compile time). If it declines to obtain or use the expansion, it must process the original <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+1\. If the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"compiler macro form"}><i>compiler macro form</i></GlossaryTerm> (not disabled by a <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink> <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>), the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> might or might not choose to compute the <GlossaryTerm styled={true} term={"compiler macro expansion"}><i>compiler macro expansion</i></GlossaryTerm> of the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> and, having performed the expansion, might or might not choose to process the result as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in the same processing mode (compile-time-too or not-compile time). If it declines to obtain or use the expansion, it must process the original <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -14,11 +14,11 @@ Processing of <GlossaryTerm styled={true} term={"top level form"}><i>top level f
 
 
 
-3\. If the form is a <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink> form, each of its body <ClLinks  term={"form"}><i>forms</i></ClLinks> is sequentially processed as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in the same processing mode. 
+3\. If the form is a <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink> form, each of its body <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> is sequentially processed as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in the same processing mode. 
 
 
 
-4\. If the form is a <DictionaryLink  term={"locally"}><b>locally</b></DictionaryLink>, <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink>, or <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>, <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> establishes the appropriate bindings and processes the body forms as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> with those bindings in effect in the same processing mode. (Note that this implies that the lexical <ClLinks  term={"environment"}><i>environment</i></ClLinks> in which <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> are processed is not necessarily the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>.) 
+4\. If the form is a <DictionaryLink  term={"locally"}><b>locally</b></DictionaryLink>, <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink>, or <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>, <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> establishes the appropriate bindings and processes the body forms as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> with those bindings in effect in the same processing mode. (Note that this implies that the lexical <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm> in which <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> are processed is not necessarily the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>.) 
 
 
 
@@ -62,7 +62,7 @@ The
 
 
 
-**Discard:** ignore the <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+**Discard:** ignore the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -70,11 +70,11 @@ The **New Mode** column indicates the new processing mode. A dash (—) indicate
 
 
 
-6\. Otherwise, the form is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> that is not one of the special cases. In compile time-too mode, the compiler first evaluates the form in the evaluation <ClLinks  term={"environment"}><i>environment</i></ClLinks> and then minimally compiles it. In not-compile-time mode, the <ClLinks  term={"form"}><i>form</i></ClLinks> is simply minimally compiled. All <ClLinks  term={"subform"}><i>subforms</i></ClLinks> are treated as <GlossaryTerm styled={true} term={"non-top-level form"}><i>non-top-level forms</i></GlossaryTerm>. 
+6\. Otherwise, the form is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> that is not one of the special cases. In compile time-too mode, the compiler first evaluates the form in the evaluation <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm> and then minimally compiles it. In not-compile-time mode, the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is simply minimally compiled. All <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> are treated as <GlossaryTerm styled={true} term={"non-top-level form"}><i>non-top-level forms</i></GlossaryTerm>. 
 
 
 
-Note that <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> are processed in the order in which they textually appear in the file and that each <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> read by the compiler is processed before the next is read. However, the order of processing (including macro expansion) of <ClLinks  term={"subform"}><i>subforms</i></ClLinks> that are not <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> and the order of further compilation is unspecified as long as Common Lisp 
+Note that <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> are processed in the order in which they textually appear in the file and that each <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> read by the compiler is processed before the next is read. However, the order of processing (including macro expansion) of <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> that are not <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> and the order of further compilation is unspecified as long as Common Lisp 
 
 
 
@@ -90,7 +90,7 @@ semantics are preserved.
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>, an <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> specifying the :execute situation is treated as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm> including the <ClLinks  term={"form"}><i>forms</i></ClLinks> in the body of the <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>; otherwise, the <ClLinks  term={"form"}><i>forms</i></ClLinks> in the body are ignored. 
+<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>, an <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> specifying the :execute situation is treated as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm> including the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in the body of the <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; otherwise, the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in the body are ignored. 
 
 
 

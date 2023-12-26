@@ -1,4 +1,4 @@
-**macroexpand, macroexpand-1** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**macroexpand, macroexpand-1** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<DictionaryLink  term={"macroexpand"}><b>macroexpand</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> &amp;optional *env → expansion, expanded-p* 
+<DictionaryLink  term={"macroexpand"}><b>macroexpand</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> &amp;optional *env → expansion, expanded-p* 
 
 
 
-<DictionaryLink  term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> &amp;optional *env → expansion, expanded-p* 
+<DictionaryLink  term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> &amp;optional *env → expansion, expanded-p* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*expansion*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+*expansion*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -38,27 +38,27 @@
 
 
 
-<DictionaryLink  term={"macroexpand"}><b>macroexpand</b></DictionaryLink> and <DictionaryLink  term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> expand <ClLinks  term={"macro"}><i>macros</i></ClLinks>. 
+<DictionaryLink  term={"macroexpand"}><b>macroexpand</b></DictionaryLink> and <DictionaryLink  term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> expand <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm>. 
 
 
 
-If <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>, then <DictionaryLink  term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> expands the <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> call once. 
+If <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>, then <DictionaryLink  term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> expands the <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> call once. 
 
 
 
-<DictionaryLink  term={"macroexpand"}><b>macroexpand</b></DictionaryLink> repeatedly expands <ClLinks  term={"form"}><i>form</i></ClLinks> until it is no longer a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>. In effect, <DictionaryLink  term={"macroexpand"}><b>macroexpand</b></DictionaryLink> calls <DictionaryLink  term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> repeatedly until the <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm> it returns is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+<DictionaryLink  term={"macroexpand"}><b>macroexpand</b></DictionaryLink> repeatedly expands <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> until it is no longer a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>. In effect, <DictionaryLink  term={"macroexpand"}><b>macroexpand</b></DictionaryLink> calls <DictionaryLink  term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> repeatedly until the <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm> it returns is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-If <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>, then the *expansion* is a <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> and *expanded-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>. Otherwise, the *expansion* is the given <ClLinks  term={"form"}><i>form</i></ClLinks> and *expanded-p* is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+If <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>, then the *expansion* is a <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> and *expanded-p* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. Otherwise, the *expansion* is the given <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> and *expanded-p* is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-Macro expansion is carried out as follows. Once <DictionaryLink  term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> has determined that the <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>, it obtains an appropriate expansion <ClLinks  term={"function"}><i>function</i></ClLinks> for the <ClLinks  term={"macro"}><i>macro</i></ClLinks> or <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm>. The value of **\*macroexpand-hook\*** is coerced to a <ClLinks  term={"function"}><i>function</i></ClLinks> and then called as a <ClLinks  term={"function"}><i>function</i></ClLinks> of three arguments: the expansion <ClLinks  term={"function"}><i>function</i></ClLinks>, the <ClLinks  term={"form"}><i>form</i></ClLinks>, and the *env*. The <ClLinks  term={"value"}><i>value</i></ClLinks> returned from this call is taken to be the expansion of the <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+Macro expansion is carried out as follows. Once <DictionaryLink  term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> has determined that the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>, it obtains an appropriate expansion <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> for the <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm>. The value of **\*macroexpand-hook\*** is coerced to a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> and then called as a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of three arguments: the expansion <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>, the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, and the *env*. The <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> returned from this call is taken to be the expansion of the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-In addition to <ClLinks  term={"macro"}><i>macro</i></ClLinks> definitions in the global environment, any local macro definitions established within *env* by <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> or <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> are considered. If only <ClLinks  term={"form"}><i>form</i></ClLinks> is supplied as an argument, then the environment is effectively null, and only global macro definitions as established by <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> are considered. <ClLinks  term={"macro"}><i>Macro</i></ClLinks> definitions are shadowed by local <ClLinks  term={"function"}><i>function</i></ClLinks> definitions. 
+In addition to <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> definitions in the global environment, any local macro definitions established within *env* by <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> or <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> are considered. If only <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is supplied as an argument, then the environment is effectively null, and only global macro definitions as established by <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> are considered. <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> definitions are shadowed by local <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> definitions. 
 
 
 
@@ -143,7 +143,7 @@ In addition to <ClLinks  term={"macro"}><i>macro</i></ClLinks> definitions in th
 
 
 
-Neither <DictionaryLink  term={"macroexpand"}><b>macroexpand</b></DictionaryLink> nor <DictionaryLink  term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> makes any explicit attempt to expand <GlossaryTerm styled={true} term={"macro form"}><i>macro forms</i></GlossaryTerm> that are either <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the <ClLinks  term={"form"}><i>form</i></ClLinks> or <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the *expansion*. Such expansion might occur implicitly, however, due to the semantics or implementation of the <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>. 
+Neither <DictionaryLink  term={"macroexpand"}><b>macroexpand</b></DictionaryLink> nor <DictionaryLink  term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> makes any explicit attempt to expand <GlossaryTerm styled={true} term={"macro form"}><i>macro forms</i></GlossaryTerm> that are either <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> of the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> or <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> of the *expansion*. Such expansion might occur implicitly, however, due to the semantics or implementation of the <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>. 
 
 
 

@@ -6,7 +6,7 @@ A <GlossaryTerm styled={true} term={"lambda form"}><i>lambda form</i></GlossaryT
 
 
 
-A <GlossaryTerm styled={true} term={"lambda form"}><i>lambda form</i></GlossaryTerm> is equivalent to using *funcall* of a <GlossaryTerm styled={true} term={"lexical closure"}><i>lexical closure</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> on the given <ClLinks  term={"argument"}><i>arguments</i></ClLinks>. (In practice, some compilers are more likely to produce inline code for a <GlossaryTerm styled={true} term={"lambda form"}><i>lambda form</i></GlossaryTerm> than for an arbitrary named function that has been declared <DictionaryLink  term={"inline"}><b>inline</b></DictionaryLink>; however, such a difference is not semantic.) 
+A <GlossaryTerm styled={true} term={"lambda form"}><i>lambda form</i></GlossaryTerm> is equivalent to using *funcall* of a <GlossaryTerm styled={true} term={"lexical closure"}><i>lexical closure</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> on the given <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm>. (In practice, some compilers are more likely to produce inline code for a <GlossaryTerm styled={true} term={"lambda form"}><i>lambda form</i></GlossaryTerm> than for an arbitrary named function that has been declared <DictionaryLink  term={"inline"}><b>inline</b></DictionaryLink>; however, such a difference is not semantic.) 
 
 
 

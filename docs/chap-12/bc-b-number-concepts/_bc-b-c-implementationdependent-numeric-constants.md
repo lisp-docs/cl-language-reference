@@ -1,4 +1,4 @@
- Figure 12–7 shows <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> relating to <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> details about <ClLinks  term={"number"}><i>numbers</i></ClLinks>. 
+ Figure 12–7 shows <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> relating to <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> details about <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm>. 
 
 
 

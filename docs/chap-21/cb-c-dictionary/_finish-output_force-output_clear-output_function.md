@@ -1,4 +1,4 @@
-**finish-output, force-output, clear-output** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**finish-output, force-output, clear-output** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-If any of these operations does not make sense for *output-stream*, then it does nothing. The precise actions of these <ClLinks  term={"function"}><i>functions</i></ClLinks> are <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+If any of these operations does not make sense for *output-stream*, then it does nothing. The precise actions of these <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> are <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
@@ -84,7 +84,7 @@ If any of these operations does not make sense for *output-stream*, then it does
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *output-stream* is not a <GlossaryTerm styled={true} term={"stream designator"}><i>stream designator</i></GlossaryTerm> . 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *output-stream* is not a <GlossaryTerm styled={true} term={"stream designator"}><i>stream designator</i></GlossaryTerm> . 
 
 
 

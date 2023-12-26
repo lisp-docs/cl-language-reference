@@ -14,7 +14,7 @@
 
 
 
-The set of all <ClLinks  term={"object"}><i>objects</i></ClLinks>. The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> is a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of every <ClLinks  term={"type"}><i>type</i></ClLinks>, including itself. Every <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>. 
+The set of all <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm>. The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> is a <GlossaryTerm  term={"supertype"}><i>supertype</i></GlossaryTerm> of every <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>, including itself. Every <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>. 
 
 
 
@@ -42,7 +42,7 @@ Predicating.
 
 
 
-*predicate-name*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+*predicate-name*—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -50,7 +50,7 @@ Predicating.
 
 
 
-This denotes the set of all <ClLinks  term={"object"}><i>objects</i></ClLinks> that satisfy the *predicate predicate-name*, which must be a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose global <ClLinks  term={"function"}><i>function</i></ClLinks> definition is a one-argument predicate. A name is required for *predicate-name*; <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expressions</i></GlossaryTerm> are not allowed. For example, the <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> (and integer (satisfies evenp)) denotes the set of all even integers. The form (typep *x* ’(satisfies *p*)) is equivalent to (if (*p x*) t nil).  
+This denotes the set of all <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> that satisfy the *predicate predicate-name*, which must be a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> whose global <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> definition is a one-argument predicate. A name is required for *predicate-name*; <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expressions</i></GlossaryTerm> are not allowed. For example, the <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> (and integer (satisfies evenp)) denotes the set of all even integers. The form (typep *x* ’(satisfies *p*)) is equivalent to (if (*p x*) t nil).  
 
 
 
@@ -58,7 +58,7 @@ This denotes the set of all <ClLinks  term={"object"}><i>objects</i></ClLinks> t
 
 
 
-The argument is required. The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\*** can be the argument, but it denotes itself (the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***), and does not represent an unspecified value. 
+The argument is required. The <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> **\*** can be the argument, but it denotes itself (the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> **\***), and does not represent an unspecified value. 
 
 
 
@@ -82,7 +82,7 @@ Combining.
 
 
 
-(member <ClLinks  term={"object"}><i>\{object\}</i></ClLinks>\*) 
+(member <GlossaryTerm  term={"object"}><i>\{object\}</i></GlossaryTerm>\*) 
 
 
 
@@ -90,7 +90,7 @@ Combining.
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -98,11 +98,11 @@ Combining.
 
 
 
-This denotes the set containing the named <ClLinks  term={"object"}><i>objects</i></ClLinks>. An <ClLinks  term={"object"}><i>object</i></ClLinks> is of this <ClLinks  term={"type"}><i>type</i></ClLinks> if and only if it is <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> to one of the specified <ClLinks  term={"object"}><i>objects</i></ClLinks>. 
+This denotes the set containing the named <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm>. An <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> is of this <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> if and only if it is <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> to one of the specified <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm>. 
 
 
 
-The <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> (member) and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> are equivalent. **\*** can be among the <ClLinks  term={"object"}><i>objects</i></ClLinks>, but if so it denotes itself (the symbol **\***) and does not represent an unspecified value. The symbol <DictionaryLink  term={"member"}><b>member</b></DictionaryLink> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ; and, specifically, it is not an abbreviation for either (member) or (member \*). 
+The <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> (member) and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> are equivalent. **\*** can be among the <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm>, but if so it denotes itself (the symbol **\***) and does not represent an unspecified value. The symbol <DictionaryLink  term={"member"}><b>member</b></DictionaryLink> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ; and, specifically, it is not an abbreviation for either (member) or (member \*). 
 
 
 
@@ -110,7 +110,7 @@ The <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></
 
 
 
-the <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> 
+the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> 
 
 
 
@@ -150,7 +150,7 @@ Combining.
 
 
 
-This denotes the set of all <ClLinks  term={"object"}><i>objects</i></ClLinks> that are not of the *type typespec*. 
+This denotes the set of all <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> that are not of the *type typespec*. 
 
 
 
@@ -194,7 +194,7 @@ Combining.
 
 
 
-This denotes the set of all <ClLinks  term={"object"}><i>objects</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> determined by the intersection of the *typespecs*. **\*** is not permitted as an argument. 
+This denotes the set of all <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> of the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> determined by the intersection of the *typespecs*. **\*** is not permitted as an argument. 
 
 
 
@@ -238,7 +238,7 @@ Combining.
 
 
 
-This denotes the set of all <ClLinks  term={"object"}><i>objects</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> determined by the union of the *typespecs*. For example, the <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"list"}><b>list</b></DictionaryLink> by definition is the same as (or null cons). Also, the value returned by <DictionaryLink  term={"position"}><b>position</b></DictionaryLink> is an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> (or null (integer 0 \*)); *i.e.*, either <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> or a non-negative *integer* . 
+This denotes the set of all <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> of the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> determined by the union of the *typespecs*. For example, the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"list"}><b>list</b></DictionaryLink> by definition is the same as (or null cons). Also, the value returned by <DictionaryLink  term={"position"}><b>position</b></DictionaryLink> is an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> (or null (integer 0 \*)); *i.e.*, either <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> or a non-negative *integer* . 
 
 
 
@@ -286,7 +286,7 @@ Specializing.
 
 
 
-This <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> can be used only as the *value-type* in a <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> or a <DictionaryLink  term={"the"}><b>the</b></DictionaryLink> <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm>. It is used to specify individual <ClLinks  term={"type"}><i>types</i></ClLinks> when <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm> are involved. The **&amp;optional** and **&amp;rest** markers can appear in the *value-type* list; they indicate the parameter list of a <ClLinks  term={"function"}><i>function</i></ClLinks> that, when given to <DictionaryLink  term={"multiple-value-call"}><b>multiple-value-call</b></DictionaryLink> along with the values, would correctly receive those values. 
+This <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> can be used only as the *value-type* in a <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> or a <DictionaryLink  term={"the"}><b>the</b></DictionaryLink> <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm>. It is used to specify individual <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> when <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm> are involved. The **&amp;optional** and **&amp;rest** markers can appear in the *value-type* list; they indicate the parameter list of a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> that, when given to <DictionaryLink  term={"multiple-value-call"}><b>multiple-value-call</b></DictionaryLink> along with the values, would correctly receive those values. 
 
 
 
@@ -318,7 +318,7 @@ Combining.
 
 
 
-(eql <ClLinks  term={"object"}><i>object</i></ClLinks>) 
+(eql <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>) 
 
 
 
@@ -326,7 +326,7 @@ Combining.
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -334,11 +334,11 @@ Combining.
 
 
 
-Represents the <ClLinks  term={"type"}><i>type</i></ClLinks> of all *x* for which (eql *object x*) is true. 
+Represents the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> of all *x* for which (eql *object x*) is true. 
 
 
 
-The argument <ClLinks  term={"object"}><i>object</i></ClLinks> is required. The <ClLinks  term={"object"}><i>object</i></ClLinks> can be **\***, but if so it denotes itself (the symbol **\***) and does not represent an unspecified value. The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> is not valid as an <GlossaryTerm styled={true} term={"atomic type specifier"}><i>atomic type specifier</i></GlossaryTerm> . 
+The argument <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> is required. The <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> can be **\***, but if so it denotes itself (the symbol **\***) and does not represent an unspecified value. The <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> is not valid as an <GlossaryTerm styled={true} term={"atomic type specifier"}><i>atomic type specifier</i></GlossaryTerm> . 
 
 
 

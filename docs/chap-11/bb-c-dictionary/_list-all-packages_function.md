@@ -1,4 +1,4 @@
-**list-all-packages** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**list-all-packages** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"package"}><i>packages</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *package objects*. 
+<GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm>—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of *package objects*. 
 
 
 

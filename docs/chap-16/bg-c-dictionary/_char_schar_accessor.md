@@ -1,4 +1,4 @@
-**char, schar** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**char, schar** <GlossaryTerm  term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-<ClLinks  term={"string"}><i>string</i></ClLinks>—for <DictionaryLink  term={"char"}><b>char</b></DictionaryLink>, a <ClLinks  term={"string"}><i>string</i></ClLinks>; for <DictionaryLink  term={"schar"}><b>schar</b></DictionaryLink>, a <GlossaryTerm styled={true} term={"simple string"}><i>simple string</i></GlossaryTerm>. 
+<GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>—for <DictionaryLink  term={"char"}><b>char</b></DictionaryLink>, a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>; for <DictionaryLink  term={"schar"}><b>schar</b></DictionaryLink>, a <GlossaryTerm styled={true} term={"simple string"}><i>simple string</i></GlossaryTerm>. 
 
 
 
-*index*—a <GlossaryTerm styled={true} term={"valid array index"}><i>valid array index</i></GlossaryTerm> for the <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+*index*—a <GlossaryTerm styled={true} term={"valid array index"}><i>valid array index</i></GlossaryTerm> for the <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"character"}><i>character</i></ClLinks>, *new-character*—a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
+<GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm>, *new-character*—a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> . 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<DictionaryLink  term={"char"}><b>char</b></DictionaryLink> and <DictionaryLink  term={"schar"}><b>schar</b></DictionaryLink> <ClLinks  term={"access"}><i>access</i></ClLinks> the <ClLinks  term={"element"}><i>element</i></ClLinks> of <ClLinks  term={"string"}><i>string</i></ClLinks> specified by *index*. 
+<DictionaryLink  term={"char"}><b>char</b></DictionaryLink> and <DictionaryLink  term={"schar"}><b>schar</b></DictionaryLink> <GlossaryTerm  term={"access"}><i>access</i></GlossaryTerm> the <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> specified by *index*. 
 
 
 

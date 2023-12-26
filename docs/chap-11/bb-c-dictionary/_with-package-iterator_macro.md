@@ -1,4 +1,4 @@
-**with-package-iterator** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**with-package-iterator** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> (*name package-list-form* &amp;rest *symbol-types*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
+<DictionaryLink  term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> (*name package-list-form* &amp;rest *symbol-types*) <GlossaryTerm  term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\* → \{result\}\* 
 
 
 
@@ -14,31 +14,31 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-*package-list-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated once to produce a *package-list*. 
+*package-list-form*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated once to produce a *package-list*. 
 
 
 
-*package-list*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a list of <GlossaryTerm styled={true} term={"package designator"}><i>package designators</i></GlossaryTerm>. 
+*package-list*—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a list of <GlossaryTerm styled={true} term={"package designator"}><i>package designators</i></GlossaryTerm>. 
 
 
 
-*symbol-type*—one of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> :internal, :external, or :inherited. 
+*symbol-type*—one of the <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> :internal, :external, or :inherited. 
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
+<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> of the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. 
 
 
 
@@ -46,15 +46,15 @@
 
 
 
-Within the lexical scope of the body <ClLinks  term={"form"}><i>forms</i></ClLinks>, the <ClLinks  term={"name"}><i>name</i></ClLinks> is defined via <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> such that successive invocations of (<ClLinks  term={"name"}><i>name</i></ClLinks>) will return the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>, one by one, from the <ClLinks  term={"package"}><i>packages</i></ClLinks> in *package-list*. 
+Within the lexical scope of the body <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>, the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> is defined via <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> such that successive invocations of (<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>) will return the <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>, one by one, from the <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> in *package-list*. 
 
 
 
-It is unspecified whether <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> inherited from multiple <ClLinks  term={"package"}><i>packages</i></ClLinks> are returned more than once. The order of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> returned does not necessarily reflect the order of <ClLinks  term={"package"}><i>packages</i></ClLinks> in *package-list*. When *package-list* has more than one element, it is unspecified whether duplicate <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are returned once or more than once. 
+It is unspecified whether <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> inherited from multiple <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> are returned more than once. The order of <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> returned does not necessarily reflect the order of <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> in *package-list*. When *package-list* has more than one element, it is unspecified whether duplicate <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> are returned once or more than once. 
 
 
 
-*Symbol-types* controls which <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks> are returned as follows: 
+*Symbol-types* controls which <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> that are <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> in a <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> are returned as follows: 
 
 
 
@@ -74,7 +74,7 @@ It is unspecified whether <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> inh
 
 
 
-The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are <ClLinks  term={"present"}><i>present</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>, but that are not <ClLinks  term={"exported"}><i>exported</i></ClLinks>. 
+The <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> that are <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> in the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, but that are not <GlossaryTerm  term={"exported"}><i>exported</i></GlossaryTerm>. 
 
 
 
@@ -82,7 +82,7 @@ The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are <ClLinks  term={
 
 
 
-The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are <ClLinks  term={"present"}><i>present</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks> and are <ClLinks  term={"exported"}><i>exported</i></ClLinks>. 
+The <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> that are <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> in the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> and are <GlossaryTerm  term={"exported"}><i>exported</i></GlossaryTerm>. 
 
 
 
@@ -90,35 +90,35 @@ The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are <ClLinks  term={
 
 
 
-The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are <ClLinks  term={"exported"}><i>exported</i></ClLinks> by used <ClLinks  term={"package"}><i>packages</i></ClLinks> and that are not *shadowed*. 
+The <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> that are <GlossaryTerm  term={"exported"}><i>exported</i></GlossaryTerm> by used <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> and that are not *shadowed*. 
 
 
 
-When more than one argument is supplied for *symbol-types*, a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is returned if its <ClLinks  term={"accessibility"}><i>accessibility</i></ClLinks> matches any one of the *symbol-types* supplied. Implementations may extend this syntax by recognizing additional symbol accessibility types. 
+When more than one argument is supplied for *symbol-types*, a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is returned if its <GlossaryTerm  term={"accessibility"}><i>accessibility</i></GlossaryTerm> matches any one of the *symbol-types* supplied. Implementations may extend this syntax by recognizing additional symbol accessibility types. 
 
 
 
-An invocation of (<ClLinks  term={"name"}><i>name</i></ClLinks>) returns four values as follows: 
+An invocation of (<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>) returns four values as follows: 
 
 
 
-1\. A flag that indicates whether a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is returned (true means that a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is returned). 2. A <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in one the indicated <ClLinks  term={"package"}><i>packages</i></ClLinks>. 
+1\. A flag that indicates whether a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is returned (true means that a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is returned). 2. A <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> that is <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> in one the indicated <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm>. 
 
 
 
-3\. The accessibility type for that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>; *i.e.*, one of the symbols :internal, :external, or :inherited. 
+3\. The accessibility type for that <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>; *i.e.*, one of the symbols :internal, :external, or :inherited. 
 
 
 
-4\. The <ClLinks  term={"package"}><i>package</i></ClLinks> from which the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> was obtained. The <ClLinks  term={"package"}><i>package</i></ClLinks> is one of the <ClLinks  term={"package"}><i>packages</i></ClLinks> present or named in *package-list*. 
+4\. The <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> from which the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> was obtained. The <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> is one of the <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> present or named in *package-list*. 
 
 
 
-After all <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> have been returned by successive invocations of (<ClLinks  term={"name"}><i>name</i></ClLinks>), then only one value is returned, namely <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+After all <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> have been returned by successive invocations of (<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>), then only one value is returned, namely <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-The meaning of the second, third, and fourth <ClLinks  term={"value"}><i>values</i></ClLinks> is that the returned <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in the returned <ClLinks  term={"package"}><i>package</i></ClLinks> in the way indicated by the second return value as follows: 
+The meaning of the second, third, and fourth <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> is that the returned <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> in the returned <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> in the way indicated by the second return value as follows: 
 
 
 
@@ -126,7 +126,7 @@ The meaning of the second, third, and fourth <ClLinks  term={"value"}><i>values<
 
 
 
-Means <ClLinks  term={"present"}><i>present</i></ClLinks> and not <ClLinks  term={"exported"}><i>exported</i></ClLinks>. 
+Means <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> and not <GlossaryTerm  term={"exported"}><i>exported</i></GlossaryTerm>. 
 
 
 
@@ -134,7 +134,7 @@ Means <ClLinks  term={"present"}><i>present</i></ClLinks> and not <ClLinks  term
 
 
 
-Means <ClLinks  term={"present"}><i>present</i></ClLinks> and <ClLinks  term={"exported"}><i>exported</i></ClLinks>. 
+Means <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> and <GlossaryTerm  term={"exported"}><i>exported</i></GlossaryTerm>. 
 
 
 
@@ -142,15 +142,15 @@ Means <ClLinks  term={"present"}><i>present</i></ClLinks> and <ClLinks  term={"e
 
 
 
-Means not <ClLinks  term={"present"}><i>present</i></ClLinks> (thus not *shadowed*) but inherited from some used <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+Means not <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> (thus not *shadowed*) but inherited from some used <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
-It is unspecified what happens if any of the implicit interior state of an iteration is returned outside the dynamic extent of the <DictionaryLink  term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> form such as by returning some <ClLinks  term={"closure"}><i>closure</i></ClLinks> over the invocation <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+It is unspecified what happens if any of the implicit interior state of an iteration is returned outside the dynamic extent of the <DictionaryLink  term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> form such as by returning some <GlossaryTerm  term={"closure"}><i>closure</i></GlossaryTerm> over the invocation <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-Any number of invocations of <DictionaryLink  term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> can be nested, and the body of the innermost one can invoke all of the locally *established macros*, provided all those <ClLinks  term={"macro"}><i>macros</i></ClLinks> have distinct names. 
+Any number of invocations of <DictionaryLink  term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> can be nested, and the body of the innermost one can invoke all of the locally *established macros*, provided all those <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm> have distinct names. 
 
 
 
@@ -212,7 +212,7 @@ The following function prints out every *present symbol* (possibly more than onc
 
 
 
-<DictionaryLink  term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> if no *symbol-types* are supplied or if a *symbol-type* is not recognized by the implementation is supplied. 
+<DictionaryLink  term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> signals an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> if no *symbol-types* are supplied or if a *symbol-type* is not recognized by the implementation is supplied. 
 
 
 
@@ -228,7 +228,7 @@ The consequences are undefined if the local function named *name established* by
 
 
 
-<DictionaryLink  term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> is called after it has returned <ClLinks  term={"false"}><i>false</i></ClLinks> as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>. 
+<DictionaryLink  term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> is called after it has returned <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>. 
 
 
 

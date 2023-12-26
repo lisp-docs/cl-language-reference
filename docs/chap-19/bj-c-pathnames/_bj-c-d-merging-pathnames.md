@@ -2,7 +2,7 @@
 
 
 
-Merging takes a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> with unfilled components and supplies values for those components from a source of defaults. 
+Merging takes a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> with unfilled components and supplies values for those components from a source of defaults. 
 
 
 
@@ -10,7 +10,7 @@ If a component’s value is <DictionaryLink  term={"nil"}><b>nil</b></Dictionary
 
 
 
-Except as explicitly specified otherwise, for functions that manipulate or inquire about <ClLinks  term={"file"}><i>files</i></ClLinks> in the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>, the pathname argument to such a function is merged with <DictionaryLink  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></DictionaryLink> before accessing the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> (as if by <DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink>). 
+Except as explicitly specified otherwise, for functions that manipulate or inquire about <GlossaryTerm  term={"file"}><i>files</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>, the pathname argument to such a function is merged with <DictionaryLink  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></DictionaryLink> before accessing the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> (as if by <DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink>). 
 
 
 

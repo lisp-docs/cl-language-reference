@@ -1,4 +1,4 @@
-**package-used-by-list** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**package-used-by-list** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 
-*used-by-list*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *package objects*. 
+*used-by-list*—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of *package objects*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<DictionaryLink  term={"package-used-by-list"}><b>package-used-by-list</b></DictionaryLink> returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of other <ClLinks  term={"package"}><i>packages</i></ClLinks> that use <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<DictionaryLink  term={"package-used-by-list"}><b>package-used-by-list</b></DictionaryLink> returns a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of other <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> that use <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
@@ -40,7 +40,7 @@
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> is not a <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 

@@ -1,4 +1,4 @@
-**integer-length** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**integer-length** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -48,7 +48,7 @@ Returns the number of bits needed to represent *integer* in binary two’s-compl
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *integer* is not an *integer* . 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *integer* is not an *integer* . 
 
 
 

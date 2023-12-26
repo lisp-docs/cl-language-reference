@@ -1,4 +1,4 @@
-**rename-file** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**rename-file** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-*new-name*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> other than a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+*new-name*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> other than a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
-*defaulted-new-name*—a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> 
+*defaulted-new-name*—a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-It is an error to specify a filename containing a <ClLinks  term={"wild"}><i>wild</i></ClLinks> component, for *filespec* to contain a <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> component where the file system does not permit a <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> component, or for the result of defaulting missing components of *new-name* from *filespec* to contain a <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> component where the file system does not permit a <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> component. 
+It is an error to specify a filename containing a <GlossaryTerm  term={"wild"}><i>wild</i></GlossaryTerm> component, for *filespec* to contain a <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> component where the file system does not permit a <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> component, or for the result of defaulting missing components of *new-name* from *filespec* to contain a <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> component where the file system does not permit a <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> component. 
 
 
 
@@ -58,11 +58,11 @@ If *new-name* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logi
 
 
 
-<DictionaryLink  term={"rename-file"}><b>rename-file</b></DictionaryLink> returns three values if successful. The <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>, *defaulted-new-name*, is the resulting name which is composed of *new-name* with any missing components filled in by performing a <DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> operation using *filespec* as the defaults. The <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *old-truename*, is the <ClLinks  term={"truename"}><i>truename</i></ClLinks> of the <ClLinks  term={"file"}><i>file</i></ClLinks> before it was renamed. The <GlossaryTerm styled={true} term={"tertiary value"}><i>tertiary value</i></GlossaryTerm>, *new-truename*, is the <ClLinks  term={"truename"}><i>truename</i></ClLinks> of the <ClLinks  term={"file"}><i>file</i></ClLinks> after it was renamed. 
+<DictionaryLink  term={"rename-file"}><b>rename-file</b></DictionaryLink> returns three values if successful. The <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>, *defaulted-new-name*, is the resulting name which is composed of *new-name* with any missing components filled in by performing a <DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> operation using *filespec* as the defaults. The <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *old-truename*, is the <GlossaryTerm  term={"truename"}><i>truename</i></GlossaryTerm> of the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> before it was renamed. The <GlossaryTerm styled={true} term={"tertiary value"}><i>tertiary value</i></GlossaryTerm>, *new-truename*, is the <GlossaryTerm  term={"truename"}><i>truename</i></GlossaryTerm> of the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> after it was renamed. 
 
 
 
-If the *filespec designator* is an open <ClLinks  term={"stream"}><i>stream</i></ClLinks>, then the <ClLinks  term={"stream"}><i>stream</i></ClLinks> itself and the file associated with it are affected (if the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> permits). 
+If the *filespec designator* is an open <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>, then the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> itself and the file associated with it are affected (if the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> permits). 
 
 
 
@@ -83,11 +83,11 @@ If the *filespec designator* is an open <ClLinks  term={"stream"}><i>stream</i><
 
 
 
-If the renaming operation is not successful, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
+If the renaming operation is not successful, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> might be signaled if *filespec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> might be signaled if *filespec* is <GlossaryTerm  term={"wild"}><i>wild</i></GlossaryTerm>. 
 
 
 

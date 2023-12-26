@@ -26,11 +26,11 @@
 
 
 
-*function-arguments*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of arguments for the *generic-function*. 
+*function-arguments*—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of arguments for the *generic-function*. 
 
 
 
-<ClLinks  term={"method"}><i>methods</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *method objects*. 
+<GlossaryTerm  term={"method"}><i>methods</i></GlossaryTerm>—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of *method objects*. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Given a *generic-function* and a set of *function-arguments*, the function <DictionaryLink  term={"compute-applicable-methods"}><b>compute-applicable-methods</b></DictionaryLink> returns the set of <ClLinks  term={"method"}><i>methods</i></ClLinks> that are applicable for those arguments sorted according to precedence order. See Section 7.6.6 (Method Selection and Combination). 
+Given a *generic-function* and a set of *function-arguments*, the function <DictionaryLink  term={"compute-applicable-methods"}><b>compute-applicable-methods</b></DictionaryLink> returns the set of <GlossaryTerm  term={"method"}><i>methods</i></GlossaryTerm> that are applicable for those arguments sorted according to precedence order. See Section 7.6.6 (Method Selection and Combination). 
 
 
 

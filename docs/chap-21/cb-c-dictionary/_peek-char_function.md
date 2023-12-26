@@ -1,4 +1,4 @@
-**peek-char** <ClLinks  term={"function"}><i>Function</i></ClLinks> **Syntax:** 
+**peek-char** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> **Syntax:** 
 
 
 
@@ -10,7 +10,7 @@
 
 
 
-*peek-type*—a <ClLinks  term={"character"}><i>character</i></ClLinks> or <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+*peek-type*—a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> or <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -22,19 +22,19 @@
 
 
 
-*eof-error-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+*eof-error-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. 
 
 
 
-*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+*eof-value*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-*recursive-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*recursive-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-*char*—a <ClLinks  term={"character"}><i>character</i></ClLinks> or the *eof-value*. 
+*char*—a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> or the *eof-value*. 
 
 
 
@@ -46,15 +46,15 @@
 
 
 
-If *peek-type* is not supplied or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, <DictionaryLink  term={"peek-char"}><b>peek-char</b></DictionaryLink> returns the next character to be read from *input-stream*, without actually removing it from *input-stream*. The next time input is done from *input-stream*, the character will still be there. If *peek-type* is <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, then <DictionaryLink  term={"peek-char"}><b>peek-char</b></DictionaryLink> skips over <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks  term={"character"}><i>characters</i></ClLinks>, but not comments, and then performs the peeking operation on the next character. The last character examined, the one that starts an <ClLinks  term={"object"}><i>object</i></ClLinks>, is not removed from *input-stream*. If *peek-type* is a <ClLinks  term={"character"}><i>character</i></ClLinks> , then <DictionaryLink  term={"peek-char"}><b>peek-char</b></DictionaryLink> skips over input characters until a character that is <ClLinks  term={"char="}><b>char=</b></ClLinks> to that <ClLinks  term={"character"}><i>character</i></ClLinks> is found; that character is left in *input-stream*. 
+If *peek-type* is not supplied or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, <DictionaryLink  term={"peek-char"}><b>peek-char</b></DictionaryLink> returns the next character to be read from *input-stream*, without actually removing it from *input-stream*. The next time input is done from *input-stream*, the character will still be there. If *peek-type* is <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, then <DictionaryLink  term={"peek-char"}><b>peek-char</b></DictionaryLink> skips over <GlossaryTerm  term={"whitespace"}><i>whitespace</i></GlossaryTerm><sub>2</sub> <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm>, but not comments, and then performs the peeking operation on the next character. The last character examined, the one that starts an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>, is not removed from *input-stream*. If *peek-type* is a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> , then <DictionaryLink  term={"peek-char"}><b>peek-char</b></DictionaryLink> skips over input characters until a character that is <ClLinks  term={"char="}><b>char=</b></ClLinks> to that <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> is found; that character is left in *input-stream*. 
 
 
 
-If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>2</sub> occurs and *eof-error-p* is <ClLinks  term={"false"}><i>false</i></ClLinks>, *eof-value* is returned. 
+If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>2</sub> occurs and *eof-error-p* is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>, *eof-value* is returned. 
 
 
 
-If *recursive-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, this call is expected to be embedded in a higher-level call to <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> or a similar <ClLinks  term={"function"}><i>function</i></ClLinks> used by the *Lisp reader* . 
+If *recursive-p* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, this call is expected to be embedded in a higher-level call to <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> or a similar <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> used by the *Lisp reader* . 
 
 
 
@@ -86,12 +86,12 @@ When *input-stream* is an <GlossaryTerm styled={true} term={"echo stream"}><i>ec
 
 
 
-If *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks> and an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>2</sub> occurs an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled. 
+If *eof-error-p* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> and an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>2</sub> occurs an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled. 
 
 
 
-If *peek-type* is a <ClLinks  term={"character"}><i>character</i></ClLinks> , an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>2</sub> occurs, and *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled. 
+If *peek-type* is a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> , an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>2</sub> occurs, and *eof-error-p* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled. 
 
 
 
-If *recursive-p* is <ClLinks  term={"true"}><i>true</i></ClLinks> and an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>2</sub> occurs, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled. 
+If *recursive-p* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> and an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>2</sub> occurs, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled. 

@@ -1,4 +1,4 @@
-**set-syntax-from-char** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**set-syntax-from-char** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*to-char*—a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
+*to-char*—a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> . 
 
 
 
-*from-char*—a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
+*from-char*—a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> . 
 
 
 
-*to-readtable*—a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. The default is the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. 
+*to-readtable*—a <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm>. The default is the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-A macro definition from a character such as " can be copied to another character; the standard definition for " looks for another character that is the same as the character that invoked it. The definition of ( can not be meaningfully copied to \{, on the other hand. The result is that <ClLinks  term={"list"}><i>lists</i></ClLinks> are of the form \{a b c), not \{a b c\}, because the definition always looks for a closing parenthesis, not a closing brace. 
+A macro definition from a character such as " can be copied to another character; the standard definition for " looks for another character that is the same as the character that invoked it. The definition of ( can not be meaningfully copied to \{, on the other hand. The result is that <GlossaryTerm  term={"list"}><i>lists</i></GlossaryTerm> are of the form \{a b c), not \{a b c\}, because the definition always looks for a closing parenthesis, not a closing brace. 
 
 
 
@@ -87,7 +87,7 @@ The existing values in the *from-readtable*.
 
 
 
-The <GlossaryTerm styled={true} term={"constituent trait"}><i>constituent traits</i></GlossaryTerm> of a <ClLinks  term={"character"}><i>character</i></ClLinks> are “hard wired” into the parser for extended <ClLinks  term={"token"}><i>tokens</i></ClLinks>. For example, if the definition of S is copied to \*, then \* will become a <ClLinks  term={"constituent"}><i>constituent</i></ClLinks> that is <ClLinks  term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>2</sub> but that cannot be used as a *short float exponent marker* . For further information, see Section 2.1.4.2 (Constituent Traits). 
+The <GlossaryTerm styled={true} term={"constituent trait"}><i>constituent traits</i></GlossaryTerm> of a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> are “hard wired” into the parser for extended <GlossaryTerm  term={"token"}><i>tokens</i></GlossaryTerm>. For example, if the definition of S is copied to \*, then \* will become a <GlossaryTerm  term={"constituent"}><i>constituent</i></GlossaryTerm> that is <GlossaryTerm  term={"alphabetic"}><i>alphabetic</i></GlossaryTerm><sub>2</sub> but that cannot be used as a *short float exponent marker* . For further information, see Section 2.1.4.2 (Constituent Traits). 
 
 
 

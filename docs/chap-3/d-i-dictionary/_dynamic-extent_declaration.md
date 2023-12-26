@@ -1,4 +1,4 @@
-**dynamic-extent** <ClLinks  term={"declaration"}><i>Declaration</i></ClLinks> 
+**dynamic-extent** <GlossaryTerm  term={"declaration"}><i>Declaration</i></GlossaryTerm> 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks> 
+<GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm> 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks  term={"variable"}><i>variable</i></ClLinks>, <ClLinks  term={"function"}><i>function</i></ClLinks> 
+<GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm>, <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> 
 
 
 
@@ -62,7 +62,7 @@ Evaluation and
 
 
 
-The compiler is permitted to use this information in any way that is appropriate to the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> and that does not conflict with the semantics of Common Lisp. 
+The compiler is permitted to use this information in any way that is appropriate to the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> and that does not conflict with the semantics of Common Lisp. 
 
 
 
@@ -70,7 +70,7 @@ The compiler is permitted to use this information in any way that is appropriate
 
 
 
-The *vars* and *fns* named in a <DictionaryLink  term={"dynamic-extent"}><b>dynamic-extent</b></DictionaryLink> declaration must not refer to <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> or <ClLinks  term={"macro"}><i>macro</i></ClLinks> bindings. 
+The *vars* and *fns* named in a <DictionaryLink  term={"dynamic-extent"}><b>dynamic-extent</b></DictionaryLink> declaration must not refer to <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> or <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> bindings. 
 
 
 
@@ -176,7 +176,7 @@ The following are in error, since the value of x is used outside of its *extent*
 
 
 
-The most common optimization is to <GlossaryTerm styled={true} term={"stack allocate"}><i>stack allocate</i></GlossaryTerm> the initial value of the <ClLinks  term={"object"}><i>objects</i></ClLinks> named by the *vars*. 
+The most common optimization is to <GlossaryTerm styled={true} term={"stack allocate"}><i>stack allocate</i></GlossaryTerm> the initial value of the <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> named by the *vars*. 
 
 
 

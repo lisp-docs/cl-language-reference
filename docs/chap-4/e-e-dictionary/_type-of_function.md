@@ -1,4 +1,4 @@
-**type-of** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**type-of** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -26,19 +26,19 @@
 
 
 
-Returns a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> , *typespec*, for a <ClLinks  term={"type"}><i>type</i></ClLinks> that has the <ClLinks  term={"object"}><i>object</i></ClLinks> as an <ClLinks  term={"element"}><i>element</i></ClLinks>. The *typespec* satisfies the following: 
+Returns a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> , *typespec*, for a <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> that has the <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> as an <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm>. The *typespec* satisfies the following: 
 
 
 
-1\. For any <ClLinks  term={"object"}><i>object</i></ClLinks> that is an <ClLinks  term={"element"}><i>element</i></ClLinks> of some <GlossaryTerm styled={true} term={"built-in type"}><i>built-in type</i></GlossaryTerm>: 
+1\. For any <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> that is an <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of some <GlossaryTerm styled={true} term={"built-in type"}><i>built-in type</i></GlossaryTerm>: 
 
 
 
-a. the <ClLinks  term={"type"}><i>type</i></ClLinks> returned is a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of that <GlossaryTerm styled={true} term={"built-in type"}><i>built-in type</i></GlossaryTerm>. 
+a. the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> returned is a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of that <GlossaryTerm styled={true} term={"built-in type"}><i>built-in type</i></GlossaryTerm>. 
 
 
 
-b. the <ClLinks  term={"type"}><i>type</i></ClLinks> returned does not involve and, eql, member, not, or, satisfies, or values. 
+b. the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> returned does not involve and, eql, member, not, or, satisfies, or values. 
 
 
 
@@ -54,23 +54,23 @@ b. the <ClLinks  term={"type"}><i>type</i></ClLinks> returned does not involve a
 
 
 
-2\. For all <ClLinks  term={"object"}><i>objects</i></ClLinks>, (typep <ClLinks  term={"object"}><i>object</i></ClLinks> (type-of <ClLinks  term={"object"}><i>object</i></ClLinks>)) returns <ClLinks  term={"true"}><i>true</i></ClLinks>. Implicit in this is that <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> which are not valid for use with <DictionaryLink  term={"typep"}><b>typep</b></DictionaryLink>, such as the <ClLinks  term={"list"}><i>list</i></ClLinks> form of the <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> , are never returned by <DictionaryLink  term={"type-of"}><b>type-of</b></DictionaryLink>. 
+2\. For all <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm>, (typep <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> (type-of <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>)) returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. Implicit in this is that <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> which are not valid for use with <DictionaryLink  term={"typep"}><b>typep</b></DictionaryLink>, such as the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> form of the <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> , are never returned by <DictionaryLink  term={"type-of"}><b>type-of</b></DictionaryLink>. 
 
 
 
-3\. The <ClLinks  term={"type"}><i>type</i></ClLinks> returned by <DictionaryLink  term={"type-of"}><b>type-of</b></DictionaryLink> is always a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of the <ClLinks  term={"class"}><i>class</i></ClLinks> returned by <DictionaryLink  term={"class-of"}><b>class-of</b></DictionaryLink>. That is, 
+3\. The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> returned by <DictionaryLink  term={"type-of"}><b>type-of</b></DictionaryLink> is always a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> returned by <DictionaryLink  term={"class-of"}><b>class-of</b></DictionaryLink>. That is, 
 
 
 
-(subtypep (type-of <ClLinks  term={"object"}><i>object</i></ClLinks>) (class-of <ClLinks  term={"object"}><i>object</i></ClLinks>)) → true, <ClLinks  term={"true"}><i>true</i></ClLinks> 
+(subtypep (type-of <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>) (class-of <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>)) → true, <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> 
 
 
 
-4\. For <ClLinks  term={"object"}><i>objects</i></ClLinks> of metaclass <DictionaryLink  term={"structure-class"}><b>structure-class</b></DictionaryLink> or <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>, and for <ClLinks  term={"condition"}><i>conditions</i></ClLinks>, <DictionaryLink  term={"type-of"}><b>type-of</b></DictionaryLink> returns the <GlossaryTerm styled={true} term={"proper name"}><i>proper name</i></GlossaryTerm> of the <ClLinks  term={"class"}><i>class</i></ClLinks> returned by <DictionaryLink  term={"class-of"}><b>class-of</b></DictionaryLink> if it has a <GlossaryTerm styled={true} term={"proper name"}><i>proper name</i></GlossaryTerm>, and otherwise returns the <ClLinks  term={"class"}><i>class</i></ClLinks> itself. In particular, for <ClLinks  term={"object"}><i>objects</i></ClLinks> created by the constructor function of a structure defined with <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> without a :type option, <DictionaryLink  term={"type-of"}><b>type-of</b></DictionaryLink> returns the structure name; and for <ClLinks  term={"object"}><i>objects</i></ClLinks> created by <DictionaryLink  term={"make-condition"}><b>make-condition</b></DictionaryLink>, the *typespec* is the <ClLinks  term={"name"}><i>name</i></ClLinks> of the *condition type*. 
+4\. For <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> of metaclass <DictionaryLink  term={"structure-class"}><b>structure-class</b></DictionaryLink> or <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>, and for <GlossaryTerm  term={"condition"}><i>conditions</i></GlossaryTerm>, <DictionaryLink  term={"type-of"}><b>type-of</b></DictionaryLink> returns the <GlossaryTerm styled={true} term={"proper name"}><i>proper name</i></GlossaryTerm> of the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> returned by <DictionaryLink  term={"class-of"}><b>class-of</b></DictionaryLink> if it has a <GlossaryTerm styled={true} term={"proper name"}><i>proper name</i></GlossaryTerm>, and otherwise returns the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> itself. In particular, for <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> created by the constructor function of a structure defined with <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> without a :type option, <DictionaryLink  term={"type-of"}><b>type-of</b></DictionaryLink> returns the structure name; and for <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> created by <DictionaryLink  term={"make-condition"}><b>make-condition</b></DictionaryLink>, the *typespec* is the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of the *condition type*. 
 
 
 
-5\. For each of the <ClLinks  term={"type"}><i>types</i></ClLinks> <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>, <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>, <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink>, or <DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink> of which the <ClLinks  term={"object"}><i>object</i></ClLinks> is an <ClLinks  term={"element"}><i>element</i></ClLinks>, the *typespec* is a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of that <ClLinks  term={"type"}><i>type</i></ClLinks>. 
+5\. For each of the <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>, <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>, <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink>, or <DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink> of which the <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> is an <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm>, the *typespec* is a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of that <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>. 
 
 
 

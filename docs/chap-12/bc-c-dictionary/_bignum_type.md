@@ -1,4 +1,4 @@
-**bignum** <ClLinks  term={"type"}><i>Type</i></ClLinks>
+**bignum** <GlossaryTerm  term={"type"}><i>Type</i></GlossaryTerm>
 
 **Supertypes:**
 
@@ -6,6 +6,6 @@
 
 **Description:**
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"bignum"}><b>bignum</b></DictionaryLink> is defined to be exactly (and integer (not fixnum)).
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"bignum"}><b>bignum</b></DictionaryLink> is defined to be exactly (and integer (not fixnum)).
 
 **=, /=,** *&lt;***,** *&gt;***,** *&lt;***=,** *&gt;*

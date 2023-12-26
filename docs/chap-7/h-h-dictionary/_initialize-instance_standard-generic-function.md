@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink> <ClLinks  term={"instance"}><i>instance</i></ClLinks> &amp;rest *initargs* &amp;key &amp;allow-other-keys *! instance* 
+<DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink> <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm> &amp;rest *initargs* &amp;key &amp;allow-other-keys *! instance* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink> (<ClLinks  term={"instance"}><i>instance</i></ClLinks> <DictionaryLink  term={"standard-object"}><b>standard-object</b></DictionaryLink>) &amp;rest *initargs* 
+<DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink> (<GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm> <DictionaryLink  term={"standard-object"}><b>standard-object</b></DictionaryLink>) &amp;rest *initargs* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"instance"}><i>instance</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -34,15 +34,15 @@
 
 
 
-Called by <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> to initialize a newly created <ClLinks  term={"instance"}><i>instance</i></ClLinks>. The generic function is called with the new <ClLinks  term={"instance"}><i>instance</i></ClLinks> and the *defaulted initialization argument list*. 
+Called by <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> to initialize a newly created <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm>. The generic function is called with the new <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm> and the *defaulted initialization argument list*. 
 
 
 
-The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> on <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink> initializes the <ClLinks  term={"slot"}><i>slots</i></ClLinks> of the <ClLinks  term={"instance"}><i>instance</i></ClLinks> with values according to the *initargs* and the :initform forms of the <ClLinks  term={"slot"}><i>slots</i></ClLinks>. It does this by calling the generic function <DictionaryLink  term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink> with the following arguments: the <ClLinks  term={"instance"}><i>instance</i></ClLinks>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> (this indicates that all <ClLinks  term={"slot"}><i>slots</i></ClLinks> for which no initialization arguments are provided should be initialized according to their :initform forms), and the *initargs*. 
+The system-supplied primary <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> on <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink> initializes the <GlossaryTerm  term={"slot"}><i>slots</i></GlossaryTerm> of the <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm> with values according to the *initargs* and the :initform forms of the <GlossaryTerm  term={"slot"}><i>slots</i></GlossaryTerm>. It does this by calling the generic function <DictionaryLink  term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink> with the following arguments: the <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> (this indicates that all <GlossaryTerm  term={"slot"}><i>slots</i></GlossaryTerm> for which no initialization arguments are provided should be initialized according to their :initform forms), and the *initargs*. 
 
 
 
-Programmers can define <ClLinks  term={"method"}><i>methods</i></ClLinks> for <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink> to specify actions to be taken when an instance is initialized. If only <GlossaryTerm styled={true} term={"after method"}><i>after methods</i></GlossaryTerm> are defined, they will be run after the system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> for initialization and therefore will not interfere with the default behavior of <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink>. 
+Programmers can define <GlossaryTerm  term={"method"}><i>methods</i></GlossaryTerm> for <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink> to specify actions to be taken when an instance is initialized. If only <GlossaryTerm styled={true} term={"after method"}><i>after methods</i></GlossaryTerm> are defined, they will be run after the system-supplied primary <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> for initialization and therefore will not interfere with the default behavior of <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink>. 
 
 
 

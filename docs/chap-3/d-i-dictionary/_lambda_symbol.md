@@ -1,4 +1,4 @@
-**lambda** <ClLinks  term={"symbol"}><i>Symbol</i></ClLinks> 
+**lambda** <GlossaryTerm  term={"symbol"}><i>Symbol</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"lambda"}><b>lambda</b></DictionaryLink> *lambda-list* [[ <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink  term={"lambda"}><b>lambda</b></DictionaryLink> *lambda-list* [[ <GlossaryTerm  term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* *| documentation* ]] <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\* 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
 
 
 
-*documentation*—a <ClLinks  term={"string"}><i>string</i></ClLinks>; not evaluated. 
+*documentation*—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>; not evaluated. 
 
 
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-A <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> is a <ClLinks  term={"list"}><i>list</i></ClLinks> that can be used in place of a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> in certain contexts to denote a <ClLinks  term={"function"}><i>function</i></ClLinks> by directly describing its behavior rather than indirectly by referring to the name of an *established function*. 
+A <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> is a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> that can be used in place of a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> in certain contexts to denote a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> by directly describing its behavior rather than indirectly by referring to the name of an *established function*. 
 
 
 
-*Documentation* is attached to the denoted <ClLinks  term={"function"}><i>function</i></ClLinks> (if any is actually created) as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm>. 
+*Documentation* is attached to the denoted <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> (if any is actually created) as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm>. 
 
 
 
@@ -58,7 +58,7 @@ The <GlossaryTerm styled={true} term={"lambda form"}><i>lambda form</i></Glossar
 
 
 
-((lambda *lambda-list* . *body*) . <ClLinks  term={"argument"}><i>arguments</i></ClLinks>) 
+((lambda *lambda-list* . *body*) . <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm>) 
 
 
 
@@ -66,7 +66,7 @@ is semantically equivalent to the <GlossaryTerm styled={true} term={"function fo
 
 
 
-(funcall #’(lambda *lambda-list* . *body*) . <ClLinks  term={"argument"}><i>arguments</i></ClLinks>) 
+(funcall #’(lambda *lambda-list* . *body*) . <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm>) 
 
 
 

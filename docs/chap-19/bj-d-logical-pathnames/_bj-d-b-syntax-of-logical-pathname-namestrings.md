@@ -2,7 +2,7 @@
 
 
 
-The syntax of a *logical pathname namestring* is as follows. (Note that unlike many notational descriptions in this document, this is a syntactic description of character sequences, not a structural description of <ClLinks  term={"object"}><i>objects</i></ClLinks>.) 
+The syntax of a *logical pathname namestring* is as follows. (Note that unlike many notational descriptions in this document, this is a syntactic description of character sequences, not a structural description of <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm>.) 
 
 
 
@@ -38,35 +38,35 @@ The syntax of a *logical pathname namestring* is as follows. (Note that unlike m
 
 
 
-*host-marker*—a <ClLinks  term={"colon"}><i>colon</i></ClLinks>. 
+*host-marker*—a <GlossaryTerm  term={"colon"}><i>colon</i></GlossaryTerm>. 
 
 
 
-*relative-directory-marker*—a <ClLinks  term={"semicolon"}><i>semicolon</i></ClLinks>. 
+*relative-directory-marker*—a <GlossaryTerm  term={"semicolon"}><i>semicolon</i></GlossaryTerm>. 
 
 
 
-*directory-marker*—a <ClLinks  term={"semicolon"}><i>semicolon</i></ClLinks>. 
+*directory-marker*—a <GlossaryTerm  term={"semicolon"}><i>semicolon</i></GlossaryTerm>. 
 
 
 
-*type-marker*—a <ClLinks  term={"dot"}><i>dot</i></ClLinks>. 
+*type-marker*—a <GlossaryTerm  term={"dot"}><i>dot</i></GlossaryTerm>. 
 
 
 
-*version-marker*—a <ClLinks  term={"dot"}><i>dot</i></ClLinks>. 
+*version-marker*—a <GlossaryTerm  term={"dot"}><i>dot</i></GlossaryTerm>. 
 
 
 
-*wild-inferiors-word*—The two character sequence “\*\*” (two <ClLinks  term={"asterisk"}><i>asterisks</i></ClLinks>). 
+*wild-inferiors-word*—The two character sequence “\*\*” (two <GlossaryTerm  term={"asterisk"}><i>asterisks</i></GlossaryTerm>). 
 
 
 
-*newest-word*—The six character sequence “newest” or the six character sequence “NEWEST”. *wildcard-version*—an <ClLinks  term={"asterisk"}><i>asterisk</i></ClLinks>. 
+*newest-word*—The six character sequence “newest” or the six character sequence “NEWEST”. *wildcard-version*—an <GlossaryTerm  term={"asterisk"}><i>asterisk</i></GlossaryTerm>. 
 
 
 
-*wildcard-word*—one or more <ClLinks  term={"asterisk"}><i>asterisks</i></ClLinks>, uppercase letters, digits, and hyphens, including at least one <ClLinks  term={"asterisk"}><i>asterisk</i></ClLinks>, with no two <ClLinks  term={"asterisk"}><i>asterisks</i></ClLinks> adjacent. 
+*wildcard-word*—one or more <GlossaryTerm  term={"asterisk"}><i>asterisks</i></GlossaryTerm>, uppercase letters, digits, and hyphens, including at least one <GlossaryTerm  term={"asterisk"}><i>asterisk</i></GlossaryTerm>, with no two <GlossaryTerm  term={"asterisk"}><i>asterisks</i></GlossaryTerm> adjacent. 
 
 
 

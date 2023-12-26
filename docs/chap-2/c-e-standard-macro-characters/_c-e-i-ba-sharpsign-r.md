@@ -30,7 +30,7 @@ Figure 2–20 contains examples of the use of #B, #O, #X, and #R.
 
 
 
-The consequences are undefined if the token immediately following the #*n*R does not have the syntax of a <ClLinks  term={"rational"}><i>rational</i></ClLinks> in radix *n*. 
+The consequences are undefined if the token immediately following the #*n*R does not have the syntax of a <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm> in radix *n*. 
 
 
 

@@ -1,4 +1,4 @@
-**package-name** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**package-name** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<DictionaryLink  term={"package-name"}><b>package-name</b></DictionaryLink> returns the <ClLinks  term={"string"}><i>string</i></ClLinks> that names <ClLinks  term={"package"}><i>package</i></ClLinks>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if the <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> is a *package object* that has no name (see the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"delete-package"}><b>delete-package</b></DictionaryLink>). 
+<DictionaryLink  term={"package-name"}><b>package-name</b></DictionaryLink> returns the <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> that names <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if the <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> is a *package object* that has no name (see the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"delete-package"}><b>delete-package</b></DictionaryLink>). 
 
 
 
@@ -45,7 +45,7 @@
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 

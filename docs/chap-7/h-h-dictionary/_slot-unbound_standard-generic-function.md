@@ -14,7 +14,7 @@
 
 
 
-<DictionaryLink  term={"slot-unbound"}><b>slot-unbound</b></DictionaryLink> (<ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>) *instance slot-name* 
+<DictionaryLink  term={"slot-unbound"}><b>slot-unbound</b></DictionaryLink> (<GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>) *instance slot-name* 
 
 
 
@@ -22,19 +22,19 @@
 
 
 
-<ClLinks  term={"class"}><i>class</i></ClLinks>—the <ClLinks  term={"class"}><i>class</i></ClLinks> of the <ClLinks  term={"instance"}><i>instance</i></ClLinks>. 
+<GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>—the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> of the <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"instance"}><i>instance</i></ClLinks>—the <ClLinks  term={"instance"}><i>instance</i></ClLinks> in which an attempt was made to <ClLinks  term={"read"}><i>read</i></ClLinks> the *unbound slot*. 
+<GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm>—the <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm> in which an attempt was made to <GlossaryTerm  term={"read"}><i>read</i></GlossaryTerm> the *unbound slot*. 
 
 
 
-*slot-name*—the <ClLinks  term={"name"}><i>name</i></ClLinks> of the *unbound slot*. 
+*slot-name*—the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of the *unbound slot*. 
 
 
 
-*result*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*result*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-The generic function <DictionaryLink  term={"slot-unbound"}><b>slot-unbound</b></DictionaryLink> is called when an unbound <ClLinks  term={"slot"}><i>slot</i></ClLinks> is read in an <ClLinks  term={"instance"}><i>instance</i></ClLinks> whose metaclass is <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>. The default <ClLinks  term={"method"}><i>method</i></ClLinks> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"unbound-slot"}><b>unbound-slot</b></DictionaryLink>. The name slot of the <DictionaryLink  term={"unbound-slot"}><b>unbound-slot</b></DictionaryLink> <ClLinks  term={"condition"}><i>condition</i></ClLinks> is initialized to the name of the offending variable, and the instance slot of the <DictionaryLink  term={"unbound-slot"}><b>unbound-slot</b></DictionaryLink> <ClLinks  term={"condition"}><i>condition</i></ClLinks> is initialized to the offending instance. 
+The generic function <DictionaryLink  term={"slot-unbound"}><b>slot-unbound</b></DictionaryLink> is called when an unbound <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm> is read in an <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm> whose metaclass is <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>. The default <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> signals an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"unbound-slot"}><b>unbound-slot</b></DictionaryLink>. The name slot of the <DictionaryLink  term={"unbound-slot"}><b>unbound-slot</b></DictionaryLink> <GlossaryTerm  term={"condition"}><i>condition</i></GlossaryTerm> is initialized to the name of the offending variable, and the instance slot of the <DictionaryLink  term={"unbound-slot"}><b>unbound-slot</b></DictionaryLink> <GlossaryTerm  term={"condition"}><i>condition</i></GlossaryTerm> is initialized to the offending instance. 
 
 
 
-The generic function <DictionaryLink  term={"slot-unbound"}><b>slot-unbound</b></DictionaryLink> is not intended to be called by programmers. Programmers may write <ClLinks  term={"method"}><i>methods</i></ClLinks> for it. The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"slot-unbound"}><b>slot-unbound</b></DictionaryLink> is called only indirectly by <DictionaryLink  term={"slot-value"}><b>slot-value</b></DictionaryLink>. 
+The generic function <DictionaryLink  term={"slot-unbound"}><b>slot-unbound</b></DictionaryLink> is not intended to be called by programmers. Programmers may write <GlossaryTerm  term={"method"}><i>methods</i></GlossaryTerm> for it. The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"slot-unbound"}><b>slot-unbound</b></DictionaryLink> is called only indirectly by <DictionaryLink  term={"slot-value"}><b>slot-value</b></DictionaryLink>. 
 
 
 
@@ -58,7 +58,7 @@ If <DictionaryLink  term={"slot-unbound"}><b>slot-unbound</b></DictionaryLink> r
 
 
 
-The default <ClLinks  term={"method"}><i>method</i></ClLinks> on <DictionaryLink  term={"slot-unbound"}><b>slot-unbound</b></DictionaryLink> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"unbound-slot"}><b>unbound-slot</b></DictionaryLink>. 
+The default <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> on <DictionaryLink  term={"slot-unbound"}><b>slot-unbound</b></DictionaryLink> signals an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"unbound-slot"}><b>unbound-slot</b></DictionaryLink>. 
 
 
 
@@ -86,7 +86,7 @@ The default <ClLinks  term={"method"}><i>method</i></ClLinks> on <DictionaryLink
 
 
 
-An unbound <ClLinks  term={"slot"}><i>slot</i></ClLinks> may occur if no :initform form was specified for the <ClLinks  term={"slot"}><i>slot</i></ClLinks> and the <ClLinks  term={"slot"}><i>slot</i></ClLinks> value has not been set, or if <DictionaryLink  term={"slot-makunbound"}><b>slot-makunbound</b></DictionaryLink> has been called on the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
+An unbound <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm> may occur if no :initform form was specified for the <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm> and the <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm> value has not been set, or if <DictionaryLink  term={"slot-makunbound"}><b>slot-makunbound</b></DictionaryLink> has been called on the <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm>. 
 
 
 

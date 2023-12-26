@@ -1,8 +1,8 @@
- The directory might be a <ClLinks  term={"string"}><i>string</i></ClLinks>, :wild, :unspecific, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+ The directory might be a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>, :wild, :unspecific, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-The directory can be a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"string"}><i>strings</i></ClLinks> and <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. The <ClLinks  term={"car"}><i>car</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks> is one of the symbols :absolute or :relative, meaning: 
+The directory can be a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm  term={"string"}><i>strings</i></GlossaryTerm> and <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>. The <GlossaryTerm  term={"car"}><i>car</i></GlossaryTerm> of the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> is one of the symbols :absolute or :relative, meaning: 
 
 
 
@@ -10,7 +10,7 @@ The directory can be a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks
 
 
 
-A <ClLinks  term={"list"}><i>list</i></ClLinks> whose <ClLinks  term={"car"}><i>car</i></ClLinks> is the symbol :absolute represents a directory path starting from the root direc tory. The list (:absolute) represents the root directory. The list (:absolute "foo" "bar" "baz") represents the directory called "/foo/bar/baz" in Unix (except possibly for <ClLinks  term={"case"}><i>case</i></ClLinks>). 
+A <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> whose <GlossaryTerm  term={"car"}><i>car</i></GlossaryTerm> is the symbol :absolute represents a directory path starting from the root direc tory. The list (:absolute) represents the root directory. The list (:absolute "foo" "bar" "baz") represents the directory called "/foo/bar/baz" in Unix (except possibly for <GlossaryTerm  term={"case"}><i>case</i></GlossaryTerm>). 
 
 
 
@@ -18,19 +18,15 @@ A <ClLinks  term={"list"}><i>list</i></ClLinks> whose <ClLinks  term={"car"}><i>
 
 
 
-A <ClLinks  term={"list"}><i>list</i></ClLinks> whose <ClLinks  term={"car"}><i>car</i></ClLinks> is the symbol :relative represents a directory path starting from a default directory. The list (:relative) has the same meaning as <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> and hence is not used. The list (:relative "foo" "bar") represents the directory named "bar" in the directory named "foo" in the default directory. 
+A <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> whose <GlossaryTerm  term={"car"}><i>car</i></GlossaryTerm> is the symbol :relative represents a directory path starting from a default directory. The list (:relative) has the same meaning as <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> and hence is not used. The list (:relative "foo" "bar") represents the directory named "bar" in the directory named "foo" in the default directory. 
 
 
 
-Each remaining element of the <ClLinks  term={"list"}><i>list</i></ClLinks> is a <ClLinks  term={"string"}><i>string</i></ClLinks> or a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
-
-
+Each remaining element of the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> is a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> or a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
 
-
- 
 
 
 
@@ -38,15 +34,19 @@ Each remaining element of the <ClLinks  term={"list"}><i>list</i></ClLinks> is a
 
 
 
-Each <ClLinks  term={"string"}><i>string</i></ClLinks> names a single level of directory structure. The <ClLinks  term={"string"}><i>strings</i></ClLinks> should contain only the directory names themselves—no punctuation characters. 
+ 
 
 
 
-In place of a <ClLinks  term={"string"}><i>string</i></ClLinks>, at any point in the <ClLinks  term={"list"}><i>list</i></ClLinks>, <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> can occur to indicate special file notations. Figure 19–3 lists the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that have standard meanings. Implementations are permitted to add additional <ClLinks  term={"object"}><i>objects</i></ClLinks> of any <ClLinks  term={"type"}><i>type</i></ClLinks> that is disjoint from <DictionaryLink  term={"string"}><b>string</b></DictionaryLink> if necessary to represent features of their file systems that cannot be represented with the standard <ClLinks  term={"string"}><i>strings</i></ClLinks> and <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
+Each <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> names a single level of directory structure. The <GlossaryTerm  term={"string"}><i>strings</i></GlossaryTerm> should contain only the directory names themselves—no punctuation characters. 
 
 
 
-Supplying any non-<ClLinks  term={"string"}><i>string</i></ClLinks>, including any of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> listed below, to a file system for which it does not make sense signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink>. For example, Unix does not support :wild-inferiors in most implementations. 
+In place of a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>, at any point in the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>, <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> can occur to indicate special file notations. Figure 19–3 lists the <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> that have standard meanings. Implementations are permitted to add additional <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> of any <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> that is disjoint from <DictionaryLink  term={"string"}><b>string</b></DictionaryLink> if necessary to represent features of their file systems that cannot be represented with the standard <GlossaryTerm  term={"string"}><i>strings</i></GlossaryTerm> and <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>. 
+
+
+
+Supplying any non-<GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>, including any of the <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> listed below, to a file system for which it does not make sense signals an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink>. For example, Unix does not support :wild-inferiors in most implementations. 
 
 
 
@@ -72,7 +72,7 @@ Invalid Combinations
 
 
 
-Using :absolute or :wild-inferiors immediately followed by :up or :back signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink>. 
+Using :absolute or :wild-inferiors immediately followed by :up or :back signals an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink>. 
 
 
 
@@ -80,11 +80,11 @@ Syntactic vs Semantic
 
 
 
-“Syntactic” means that the action of :back depends only on the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> and not on the contents of the file system. 
+“Syntactic” means that the action of :back depends only on the <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> and not on the contents of the file system. 
 
 
 
-“Semantic” means that the action of :up depends on the contents of the file system; to resolve a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> containing :up to a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> whose directory component contains only :absolute and <ClLinks  term={"string"}><i>strings</i></ClLinks> requires probing the file system. 
+“Semantic” means that the action of :up depends on the contents of the file system; to resolve a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> containing :up to a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> whose directory component contains only :absolute and <GlossaryTerm  term={"string"}><i>strings</i></GlossaryTerm> requires probing the file system. 
 
 
 

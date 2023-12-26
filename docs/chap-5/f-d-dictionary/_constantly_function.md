@@ -1,4 +1,4 @@
-**constantly** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**constantly** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"value"}><i>value</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+<GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>—a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<DictionaryLink  term={"constantly"}><b>constantly</b></DictionaryLink> returns a <ClLinks  term={"function"}><i>function</i></ClLinks> that accepts any number of arguments, that has no side-effects, and that always returns <ClLinks  term={"value"}><i>value</i></ClLinks>. 
+<DictionaryLink  term={"constantly"}><b>constantly</b></DictionaryLink> returns a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> that accepts any number of arguments, that has no side-effects, and that always returns <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>. 
 
 
 

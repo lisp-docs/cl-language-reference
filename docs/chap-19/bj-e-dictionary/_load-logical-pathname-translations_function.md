@@ -1,4 +1,4 @@
-**load-logical-pathname-translations** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**load-logical-pathname-translations** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*host*—a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+*host*—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Searches for and loads the definition of a <GlossaryTerm styled={true} term={"logical host"}><i>logical host</i></GlossaryTerm> named *host*, if it is not already defined. The specific nature of the search is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
+Searches for and loads the definition of a <GlossaryTerm styled={true} term={"logical host"}><i>logical host</i></GlossaryTerm> named *host*, if it is not already defined. The specific nature of the search is <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>. 
 
 
 
@@ -42,7 +42,7 @@ Searches for and loads the definition of a <GlossaryTerm styled={true} term={"lo
 
 
 
-If the *host* is already defined, no attempt to find or load a definition is attempted, and <ClLinks  term={"false"}><i>false</i></ClLinks> is returned. If the *host* is not already defined, but a definition is successfully found and loaded, <ClLinks  term={"true"}><i>true</i></ClLinks> is returned. Otherwise, an error is signaled. 
+If the *host* is already defined, no attempt to find or load a definition is attempted, and <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> is returned. If the *host* is not already defined, but a definition is successfully found and loaded, <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> is returned. Otherwise, an error is signaled. 
 
 
 
@@ -63,7 +63,7 @@ If the *host* is already defined, no attempt to find or load a definition is att
 
 
 
-If no definition is found, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
+If no definition is found, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
@@ -79,7 +79,7 @@ If no definition is found, an error of <ClLinks  term={"type"}><i>type</i></ClLi
 
 
 
-<GlossaryTerm styled={true} term={"logical pathname"}><i>Logical pathname</i></GlossaryTerm> definitions will be created not just by *implementors* but also by <ClLinks  term={"programmer"}><i>programmers</i></ClLinks>. As such, it is important that the search strategy be documented. For example, an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might define that the definition of a *host* is to be found in a file called “*host*.translations” in some specifically named directory. 
+<GlossaryTerm styled={true} term={"logical pathname"}><i>Logical pathname</i></GlossaryTerm> definitions will be created not just by *implementors* but also by <GlossaryTerm  term={"programmer"}><i>programmers</i></GlossaryTerm>. As such, it is important that the search strategy be documented. For example, an <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> might define that the definition of a *host* is to be found in a file called “*host*.translations” in some specifically named directory. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but not smaller than 50. 
+<GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>, but not smaller than 50. 
 
 
 
@@ -30,7 +30,7 @@ A positive *integer* that is the upper exclusive bound on the number of *paramet
 
 
 
-Implementors are encouraged to make the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></DictionaryLink> as large as possible. 
+Implementors are encouraged to make the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink  term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></DictionaryLink> as large as possible. 
 
 
 

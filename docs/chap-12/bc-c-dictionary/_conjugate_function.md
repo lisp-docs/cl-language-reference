@@ -1,4 +1,4 @@
-**conjugate** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**conjugate** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
-*conjugate*—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+*conjugate*—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the complex conjugate of <ClLinks  term={"number"}><i>number</i></ClLinks>. The conjugate of a *real* number is itself. 
+Returns the complex conjugate of <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>. The conjugate of a *real* number is itself. 
 
 
 
@@ -51,7 +51,7 @@ Returns the complex conjugate of <ClLinks  term={"number"}><i>number</i></ClLink
 
 
 
-For a <ClLinks  term={"complex"}><i>complex</i></ClLinks> number z, 
+For a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> number z, 
 
 
 

@@ -2,11 +2,11 @@
 
 
 
-Common Lisp provides a large variety of operations related to <ClLinks  term={"number"}><i>numbers</i></ClLinks>. This section provides an overview of those operations by grouping them into categories that emphasize some of the relationships among them. 
+Common Lisp provides a large variety of operations related to <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm>. This section provides an overview of those operations by grouping them into categories that emphasize some of the relationships among them. 
 
 
 
-Figure 12–1 shows <ClLinks  term={"operator"}><i>operators</i></ClLinks> relating to arithmetic operations. 
+Figure 12–1 shows <GlossaryTerm  term={"operator"}><i>operators</i></GlossaryTerm> relating to arithmetic operations. 
 
 
 
@@ -34,7 +34,7 @@ Figure 12–2 shows <GlossaryTerm styled={true} term={"defined name"}><i>defined
 
 
 
-**Figure 12–2. Defined names relating to Exponentials, Logarithms, and Trigonometry.** Figure 12–3 shows <ClLinks  term={"operator"}><i>operators</i></ClLinks> relating to numeric comparison and predication. 
+**Figure 12–2. Defined names relating to Exponentials, Logarithms, and Trigonometry.** Figure 12–3 shows <GlossaryTerm  term={"operator"}><i>operators</i></GlossaryTerm> relating to numeric comparison and predication. 
 
 
 

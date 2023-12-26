@@ -1,4 +1,4 @@
-**aref** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**aref** <GlossaryTerm  term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> <ClLinks  term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → element* 
+<DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> &amp;rest *subscripts → element* 
 
 
 
-<!-- **(setf (aref** <ClLinks  term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts***)** *new-element<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
+<!-- **(setf (aref** <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> &amp;rest *subscripts***)** *new-element<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
 **(setf (aref** *array* &amp;rest *subscripts***)** *new-element***)** 
 
 
@@ -19,15 +19,15 @@
 
 
 
-<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+<GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>—an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-*subscripts*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *valid array indices* for the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+*subscripts*—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of *valid array indices* for the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"element"}><i>element</i></ClLinks>, *new-element*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm>, *new-element*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -35,11 +35,11 @@
 
 
 
-*Accesses* the *array element* specified by the *subscripts*. If no *subscripts* are supplied and <ClLinks  term={"array"}><i>array</i></ClLinks> is zero rank, <DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> *accesses* the sole element of <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+*Accesses* the *array element* specified by the *subscripts*. If no *subscripts* are supplied and <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> is zero rank, <DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> *accesses* the sole element of <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> ignores <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm>. It is permissible to use <DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> to <ClLinks  term={"access"}><i>access</i></ClLinks> any *array element*, whether <ClLinks  term={"active"}><i>active</i></ClLinks> or not. 
+<DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> ignores <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm>. It is permissible to use <DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> to <GlossaryTerm  term={"access"}><i>access</i></GlossaryTerm> any *array element*, whether <GlossaryTerm  term={"active"}><i>active</i></GlossaryTerm> or not. 
 
 
 

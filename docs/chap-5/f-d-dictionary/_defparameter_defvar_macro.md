@@ -1,4 +1,4 @@
-**defparameter, defvar** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**defparameter, defvar** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -10,7 +10,7 @@
 
 
 
-<DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink> <ClLinks  term={"name"}><i>name</i></ClLinks> [*initial-value* [*documentation*]] → name 
+<DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink> <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> [*initial-value* [*documentation*]] → name 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>; not evaluated. 
+<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>; not evaluated. 
 
 
 
-*initial-value*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; for <DictionaryLink  term={"defparameter"}><b>defparameter</b></DictionaryLink>, it is always *evaluated*, but for <DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink> it is *evaluated* only if <ClLinks  term={"name"}><i>name</i></ClLinks> is not already <ClLinks  term={"bound"}><i>bound</i></ClLinks>. 
+*initial-value*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; for <DictionaryLink  term={"defparameter"}><b>defparameter</b></DictionaryLink>, it is always *evaluated*, but for <DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink> it is *evaluated* only if <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> is not already <GlossaryTerm  term={"bound"}><i>bound</i></GlossaryTerm>. 
 
 
 
-*documentation*—a <ClLinks  term={"string"}><i>string</i></ClLinks>; not evaluated. 
+*documentation*—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>; not evaluated. 
 
 
 
@@ -38,15 +38,15 @@
 
 
 
-<DictionaryLink  term={"defparameter"}><b>defparameter</b></DictionaryLink> unconditionally <ClLinks  term={"assign"}><i>assigns</i></ClLinks> the *initial-value* to the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> named <ClLinks  term={"name"}><i>name</i></ClLinks>. <DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink>, by contrast, *assigns initial-value* (if supplied) to the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> named <ClLinks  term={"name"}><i>name</i></ClLinks> only if <ClLinks  term={"name"}><i>name</i></ClLinks> is not already <ClLinks  term={"bound"}><i>bound</i></ClLinks>. 
+<DictionaryLink  term={"defparameter"}><b>defparameter</b></DictionaryLink> unconditionally <GlossaryTerm  term={"assign"}><i>assigns</i></GlossaryTerm> the *initial-value* to the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> named <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>. <DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink>, by contrast, *assigns initial-value* (if supplied) to the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> named <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> only if <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> is not already <GlossaryTerm  term={"bound"}><i>bound</i></GlossaryTerm>. 
 
 
 
-If no *initial-value* is supplied, <DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink> leaves the <GlossaryTerm styled={true} term={"value cell"}><i>value cell</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> named <ClLinks  term={"name"}><i>name</i></ClLinks> undisturbed; if <ClLinks  term={"name"}><i>name</i></ClLinks> was previously <ClLinks  term={"bound"}><i>bound</i></ClLinks>, its old <ClLinks  term={"value"}><i>value</i></ClLinks> persists, and if it was previously <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>, it remains <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>. 
+If no *initial-value* is supplied, <DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink> leaves the <GlossaryTerm styled={true} term={"value cell"}><i>value cell</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> named <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> undisturbed; if <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> was previously <GlossaryTerm  term={"bound"}><i>bound</i></GlossaryTerm>, its old <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> persists, and if it was previously <GlossaryTerm  term={"unbound"}><i>unbound</i></GlossaryTerm>, it remains <GlossaryTerm  term={"unbound"}><i>unbound</i></GlossaryTerm>. 
 
 
 
-If *documentation* is supplied, it is attached to <ClLinks  term={"name"}><i>name</i></ClLinks> as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> of kind **variable**. 
+If *documentation* is supplied, it is attached to <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> of kind **variable**. 
 
 
 
@@ -112,11 +112,11 @@ The choice of whether to use **defparameter** or **defvar** has visible conseque
 
 
 
-If a <DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink> or <DictionaryLink  term={"defparameter"}><b>defparameter</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a *top level form*, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must recognize that the <ClLinks  term={"name"}><i>name</i></ClLinks> has been proclaimed <DictionaryLink  term={"special"}><b>special</b></DictionaryLink>. However, it must neither <ClLinks  term={"evaluate"}><i>evaluate</i></ClLinks> the *initial-value form* nor <ClLinks  term={"assign"}><i>assign</i></ClLinks> the *dynamic variable* named <ClLinks  term={"name"}><i>name</i></ClLinks> at compile time. 
+If a <DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink> or <DictionaryLink  term={"defparameter"}><b>defparameter</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> appears as a *top level form*, the <GlossaryTerm  term={"compiler"}><i>compiler</i></GlossaryTerm> must recognize that the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> has been proclaimed <DictionaryLink  term={"special"}><b>special</b></DictionaryLink>. However, it must neither <GlossaryTerm  term={"evaluate"}><i>evaluate</i></GlossaryTerm> the *initial-value form* nor <GlossaryTerm  term={"assign"}><i>assign</i></GlossaryTerm> the *dynamic variable* named <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> at compile time. 
 
 
 
-There may be additional (<ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>) compile-time or run-time side effects, as long as such effects do not interfere with the correct operation of *conforming programs*. 
+There may be additional (<GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>) compile-time or run-time side effects, as long as such effects do not interfere with the correct operation of *conforming programs*. 
 
 
 
@@ -124,7 +124,7 @@ There may be additional (<ClLinks  term={"implementation-defined"}><i>implementa
 
 
 
-<DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink> is affected by whether <ClLinks  term={"name"}><i>name</i></ClLinks> is already <ClLinks  term={"bound"}><i>bound</i></ClLinks>. 
+<DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink> is affected by whether <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> is already <GlossaryTerm  term={"bound"}><i>bound</i></GlossaryTerm>. 
 
 
 
@@ -140,11 +140,11 @@ There may be additional (<ClLinks  term={"implementation-defined"}><i>implementa
 
 
 
-It is customary to name *dynamic variables* with an <ClLinks  term={"asterisk"}><i>asterisk</i></ClLinks> at the beginning and end of the name. e.g., \*foo\* is a good name for a *dynamic variable*, but not for a *lexical variable*; foo is a good name for a *lexical variable*, but not for a *dynamic variable*. This naming convention is observed for all *defined names* in Common Lisp; however, neither *conforming programs* nor *conforming implementations* are obliged to adhere to this convention. 
+It is customary to name *dynamic variables* with an <GlossaryTerm  term={"asterisk"}><i>asterisk</i></GlossaryTerm> at the beginning and end of the name. e.g., \*foo\* is a good name for a *dynamic variable*, but not for a *lexical variable*; foo is a good name for a *lexical variable*, but not for a *dynamic variable*. This naming convention is observed for all *defined names* in Common Lisp; however, neither *conforming programs* nor *conforming implementations* are obliged to adhere to this convention. 
 
 
 
-The intent of the permission for additional side effects is to allow <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> to do normal “bookkeeping” that accompanies definitions. For example, the *macro expansion* of a <DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink> or <DictionaryLink  term={"defparameter"}><b>defparameter</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> might include code that arranges to record the name of the source file in which the definition occurs. 
+The intent of the permission for additional side effects is to allow <GlossaryTerm  term={"implementation"}><i>implementations</i></GlossaryTerm> to do normal “bookkeeping” that accompanies definitions. For example, the *macro expansion* of a <DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink> or <DictionaryLink  term={"defparameter"}><b>defparameter</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> might include code that arranges to record the name of the source file in which the definition occurs. 
 
 
 

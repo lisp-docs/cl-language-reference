@@ -1,4 +1,4 @@
-**evenp, oddp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**evenp, oddp** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<DictionaryLink  term={"evenp"}><b>evenp</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if *integer* is even (divisible by two); otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+<DictionaryLink  term={"evenp"}><b>evenp</b></DictionaryLink> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if *integer* is even (divisible by two); otherwise, returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"oddp"}><b>oddp</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if *integer* is odd (not divisible by two); otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+<DictionaryLink  term={"oddp"}><b>oddp</b></DictionaryLink> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if *integer* is odd (not divisible by two); otherwise, returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 **Examples:**
 ```lisp
@@ -46,7 +46,7 @@
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *integer* is not an *integer* . 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *integer* is not an *integer* . 
 
 
 

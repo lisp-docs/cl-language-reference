@@ -26,7 +26,7 @@
 
 
 
-<DictionaryLink  term={"method-qualifiers"}><b>method-qualifiers</b></DictionaryLink> (<ClLinks  term={"method"}><i>method</i></ClLinks> <DictionaryLink  term={"standard-method"}><b>standard-method</b></DictionaryLink>) 
+<DictionaryLink  term={"method-qualifiers"}><b>method-qualifiers</b></DictionaryLink> (<GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> <DictionaryLink  term={"standard-method"}><b>standard-method</b></DictionaryLink>) 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<ClLinks  term={"method"}><i>method</i></ClLinks>—a <ClLinks  term={"method"}><i>method</i></ClLinks>. 
+<GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm>—a <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>—a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
+<GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> of the <ClLinks  term={"method"}><i>method</i></ClLinks>. 
+Returns a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of the <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm> of the <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm>. 
 
 
 

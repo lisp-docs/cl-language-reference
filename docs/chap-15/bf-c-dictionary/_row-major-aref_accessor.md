@@ -1,4 +1,4 @@
-**row-major-aref** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**row-major-aref** <GlossaryTerm  term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -19,15 +19,15 @@
 
 
 
-<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+<GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>—an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-*index*—a <GlossaryTerm styled={true} term={"valid array row-major index"}><i>valid array row-major index</i></GlossaryTerm> for the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+*index*—a <GlossaryTerm styled={true} term={"valid array row-major index"}><i>valid array row-major index</i></GlossaryTerm> for the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"element"}><i>element</i></ClLinks>, *new-element*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm>, *new-element*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -35,7 +35,7 @@
 
 
 
-Considers <ClLinks  term={"array"}><i>array</i></ClLinks> as a <ClLinks  term={"vector"}><i>vector</i></ClLinks> by viewing its <ClLinks  term={"element"}><i>elements</i></ClLinks> in row-major order, and returns the <ClLinks  term={"element"}><i>element</i></ClLinks> of that <ClLinks  term={"vector"}><i>vector</i></ClLinks> which is referred to by the given *index*. 
+Considers <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> as a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> by viewing its <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> in row-major order, and returns the <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of that <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> which is referred to by the given *index*. 
 
 
 

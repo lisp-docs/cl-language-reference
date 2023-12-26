@@ -1,4 +1,4 @@
-**set** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**set** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"value"}><i>value</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<DictionaryLink  term={"set"}><b>set</b></DictionaryLink> changes the contents of the *value cell* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to the given <ClLinks  term={"value"}><i>value</i></ClLinks>. 
+<DictionaryLink  term={"set"}><b>set</b></DictionaryLink> changes the contents of the *value cell* of <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> to the given <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>. 
 
 
 
-(set *symbol value*) *≡* (setf (symbol-value <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) <ClLinks  term={"value"}><i>value</i></ClLinks>) 
+(set *symbol value*) *≡* (setf (symbol-value <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>) <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>) 
 
 
 
@@ -74,7 +74,7 @@ n → 44
 
 
 
-The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is changed. 
+The <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is changed. 
 
 
 

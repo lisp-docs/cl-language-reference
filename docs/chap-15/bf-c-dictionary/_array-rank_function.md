@@ -1,4 +1,4 @@
-**array-rank** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**array-rank** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+<GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>—an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"rank"}><i>rank</i></ClLinks>—a non-negative *integer* . 
+<GlossaryTerm  term={"rank"}><i>rank</i></GlossaryTerm>—a non-negative *integer* . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the number of <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> of <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+Returns the number of <GlossaryTerm  term={"dimension"}><i>dimensions</i></GlossaryTerm> of <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
@@ -41,7 +41,7 @@ Returns the number of <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> o
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 

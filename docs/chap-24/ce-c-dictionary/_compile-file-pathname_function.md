@@ -1,4 +1,4 @@
-**compile-file-pathname** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**compile-file-pathname** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-*output-file*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . The default is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
+*output-file*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . The default is <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+<GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>—a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>. 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-Returns the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> that <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> would write into, if given the same arguments. 
+Returns the <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> that <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> would write into, if given the same arguments. 
 
 
 
-The defaults for the *output-file* are taken from the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> that results from merging the *input-file* with the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></DictionaryLink>, except that the type component should default to the appropriate <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> default type for <GlossaryTerm styled={true} term={"compiled file"}><i>compiled files</i></GlossaryTerm>. 
+The defaults for the *output-file* are taken from the <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> that results from merging the *input-file* with the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></DictionaryLink>, except that the type component should default to the appropriate <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm> default type for <GlossaryTerm styled={true} term={"compiled file"}><i>compiled files</i></GlossaryTerm>. 
 
 
 
-If *input-file* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> and *output-file* is unsupplied, the result is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>. If *input-file* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, it is translated into a physical pathname as if by calling <DictionaryLink  term={"translate-logical-pathname"}><b>translate-logical-pathname</b></DictionaryLink>. If *input-file* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, the <ClLinks  term={"stream"}><i>stream</i></ClLinks> can be either open or closed. <DictionaryLink  term={"compile-file-pathname"}><b>compile-file-pathname</b></DictionaryLink> returns the same <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> after a file is closed as it did when the file was open. It is an error if *input-file* is a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> that is created with <ClLinks styled={true} term={"make-two-way-stream"}><b>make-two-way-stream</b></ClLinks>, <ClLinks styled={true} term={"make-echo-stream"}><b>make-echo-stream</b></ClLinks>, <ClLinks styled={true} term={"make-broadcast-stream"}><b>make-broadcast-stream</b></ClLinks>, <ClLinks styled={true} term={"make-concatenated-stream"}><b>make-concatenated-stream</b></ClLinks>, <ClLinks styled={true} term={"make-string-input-stream"}><b>make-string-input-stream</b></ClLinks>, <ClLinks styled={true} term={"make-string-output-stream"}><b>make-string-output-stream</b></ClLinks>. 
+If *input-file* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> and *output-file* is unsupplied, the result is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>. If *input-file* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, it is translated into a physical pathname as if by calling <DictionaryLink  term={"translate-logical-pathname"}><b>translate-logical-pathname</b></DictionaryLink>. If *input-file* is a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>, the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> can be either open or closed. <DictionaryLink  term={"compile-file-pathname"}><b>compile-file-pathname</b></DictionaryLink> returns the same <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> after a file is closed as it did when the file was open. It is an error if *input-file* is a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> that is created with <ClLinks styled={true} term={"make-two-way-stream"}><b>make-two-way-stream</b></ClLinks>, <ClLinks styled={true} term={"make-echo-stream"}><b>make-echo-stream</b></ClLinks>, <ClLinks styled={true} term={"make-broadcast-stream"}><b>make-broadcast-stream</b></ClLinks>, <ClLinks styled={true} term={"make-concatenated-stream"}><b>make-concatenated-stream</b></ClLinks>, <ClLinks styled={true} term={"make-string-input-stream"}><b>make-string-input-stream</b></ClLinks>, <ClLinks styled={true} term={"make-string-output-stream"}><b>make-string-output-stream</b></ClLinks>. 
 
 
 

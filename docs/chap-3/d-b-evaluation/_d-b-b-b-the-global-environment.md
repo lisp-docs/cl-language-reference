@@ -2,7 +2,7 @@
 
 
 
-The <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm> is that part of an <ClLinks  term={"environment"}><i>environment</i></ClLinks> that contains <ClLinks  term={"binding"}><i>bindings</i></ClLinks> with both <GlossaryTerm styled={true} term={"indefinite scope"}><i>indefinite scope</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"indefinite extent"}><i>indefinite extent</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm> contains, among other things, the following: 
+The <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm> is that part of an <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm> that contains <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm> with both <GlossaryTerm styled={true} term={"indefinite scope"}><i>indefinite scope</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"indefinite extent"}><i>indefinite extent</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm> contains, among other things, the following: 
 
 
 
@@ -10,7 +10,7 @@ The <GlossaryTerm styled={true} term={"global environment"}><i>global environmen
 
 
 
-*• bindings* of <ClLinks  term={"function"}><i>functions</i></ClLinks>, <ClLinks  term={"macro"}><i>macros</i></ClLinks>, and <GlossaryTerm styled={true} term={"special operator"}><i>special operators</i></GlossaryTerm>. 
+*• bindings* of <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm>, <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm>, and <GlossaryTerm styled={true} term={"special operator"}><i>special operators</i></GlossaryTerm>. 
 
 
 
@@ -18,11 +18,11 @@ The <GlossaryTerm styled={true} term={"global environment"}><i>global environmen
 
 
 
-*• bindings* of <ClLinks  term={"type"}><i>type</i></ClLinks> and *class names* 
+*• bindings* of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> and *class names* 
 
 
 
-*•* information about <ClLinks  term={"proclamation"}><i>proclamations</i></ClLinks>.  
+*•* information about <GlossaryTerm  term={"proclamation"}><i>proclamations</i></GlossaryTerm>.  
 
 
 

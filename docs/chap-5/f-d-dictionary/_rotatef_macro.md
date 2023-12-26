@@ -1,4 +1,4 @@
-**rotatef** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**rotatef** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"rotatef"}><b>rotatef</b></DictionaryLink> <ClLinks  term={"place"}><i>\{place\}</i></ClLinks>\* *!* <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
+<DictionaryLink  term={"rotatef"}><b>rotatef</b></DictionaryLink> <GlossaryTerm  term={"place"}><i>\{place\}</i></GlossaryTerm>\* *!* <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"place"}><i>place</i></ClLinks>—a <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+<GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>—a <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>. 
 
 
 
@@ -22,19 +22,19 @@
 
 
 
-<DictionaryLink  term={"rotatef"}><b>rotatef</b></DictionaryLink> modifies the values of each <ClLinks  term={"place"}><i>place</i></ClLinks> by rotating values from one <ClLinks  term={"place"}><i>place</i></ClLinks> into another. 
+<DictionaryLink  term={"rotatef"}><b>rotatef</b></DictionaryLink> modifies the values of each <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> by rotating values from one <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> into another. 
 
 
 
-If a <ClLinks  term={"place"}><i>place</i></ClLinks> produces more values than there are store variables, the extra values are ignored. If a <ClLinks  term={"place"}><i>place</i></ClLinks> produces fewer values than there are store variables, the missing values are set to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+If a <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> produces more values than there are store variables, the extra values are ignored. If a <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> produces fewer values than there are store variables, the missing values are set to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-In the form (rotatef *place1 place2* ... *placen*), the values in *place1* through *placen* are <ClLinks  term={"read"}><i>read</i></ClLinks> and *written*. Values 2 through *n* and value 1 are then stored into *place1* through *placen*. It is as if all the places form an end-around shift register that is rotated one place to the left, with the value of *place1* being shifted around the end to *placen*. 
+In the form (rotatef *place1 place2* ... *placen*), the values in *place1* through *placen* are <GlossaryTerm  term={"read"}><i>read</i></GlossaryTerm> and *written*. Values 2 through *n* and value 1 are then stored into *place1* through *placen*. It is as if all the places form an end-around shift register that is rotated one place to the left, with the value of *place1* being shifted around the end to *placen*. 
 
 
 
-For information about the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of <ClLinks  term={"place"}><i>places</i></ClLinks>, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
+For information about the <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> of <GlossaryTerm  term={"place"}><i>places</i></GlossaryTerm>, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
 
 
 
@@ -79,7 +79,7 @@ The e↵ect of (rotatef *place1 place2* ... *placen*) is roughly equivalent to
 
 
 
-except that the latter would evaluate any <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of each place twice, whereas <DictionaryLink  term={"rotatef"}><b>rotatef</b></DictionaryLink> evaluates them once. 
+except that the latter would evaluate any <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> of each place twice, whereas <DictionaryLink  term={"rotatef"}><b>rotatef</b></DictionaryLink> evaluates them once. 
 
 
 

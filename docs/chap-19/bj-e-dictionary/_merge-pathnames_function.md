@@ -1,4 +1,4 @@
-**merge-pathnames** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**merge-pathnames** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> &amp;optional *default-pathname default-version* 
+<DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> &amp;optional *default-pathname default-version* 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
+<GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
-*default-pathname*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . The default is the <ClLinks  term={"value"}><i>value</i></ClLinks> of 
+*default-pathname*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . The default is the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-*merged-pathname*—a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+*merged-pathname*—a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>. 
 
 
 
@@ -58,11 +58,11 @@
 
 
 
-Constructs a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> from <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> by filling in any unsupplied components with the corresponding values from *default-pathname* and *default-version*. 
+Constructs a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> from <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> by filling in any unsupplied components with the corresponding values from *default-pathname* and *default-version*. 
 
 
 
-Defaulting of pathname components is done by filling in components taken from another <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. This is especially useful for cases such as a program that has an input file and an output file. Unspecified components of the output pathname will come from the input pathname, except that the type should not default to the type of the input pathname but rather to the appropriate default type for output from the program; for example, see the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"compile-file-pathname"}><b>compile-file-pathname</b></DictionaryLink>. 
+Defaulting of pathname components is done by filling in components taken from another <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>. This is especially useful for cases such as a program that has an input file and an output file. Unspecified components of the output pathname will come from the input pathname, except that the type should not default to the type of the input pathname but rather to the appropriate default type for output from the program; for example, see the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"compile-file-pathname"}><b>compile-file-pathname</b></DictionaryLink>. 
 
 
 
@@ -70,19 +70,19 @@ If no version is supplied, *default-version* is used. If *default-version* is <D
 
 
 
-If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> explicitly specifies a host and not a device, and if the host component of *default-pathname* matches the host component of <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, then the device is taken from the *default-pathname*; otherwise the device will be the default file device for that host. If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> does not specify a host, device, directory, name, or type, each such component is copied from *default-pathname*. If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> does not specify a name, then the version, if not provided, will come from *default-pathname*, just like the other components. If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> does specify a name, then the version is not affected by *default-pathname*. If this process leaves the version missing, the *default-version* is used. If the host’s file name syntax provides a way to input a version without a name or type, the user can let the name and type default but supply a version different from the one in *default-pathname*. 
+If <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> explicitly specifies a host and not a device, and if the host component of *default-pathname* matches the host component of <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>, then the device is taken from the *default-pathname*; otherwise the device will be the default file device for that host. If <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> does not specify a host, device, directory, name, or type, each such component is copied from *default-pathname*. If <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> does not specify a name, then the version, if not provided, will come from *default-pathname*, just like the other components. If <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> does specify a name, then the version is not affected by *default-pathname*. If this process leaves the version missing, the *default-version* is used. If the host’s file name syntax provides a way to input a version without a name or type, the user can let the name and type default but supply a version different from the one in *default-pathname*. 
 
 
 
-If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> effectively becomes (pathname <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>). <DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> can be used on either an open or a closed <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+If <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> is a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>, <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> effectively becomes (pathname <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>). <DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> can be used on either an open or a closed <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
-If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
+If <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> is a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
 
 
 
-<DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> recognizes a *logical pathname namestring* when *default-pathname* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, or when the <ClLinks  term={"namestring"}><i>namestring</i></ClLinks> begins with the name of a defined <GlossaryTerm styled={true} term={"logical host"}><i>logical host</i></GlossaryTerm> followed by a <ClLinks  term={"colon"}><i>colon</i></ClLinks>. In the first of these two cases, the host portion of the *logical pathname namestring* and its following <ClLinks  term={"colon"}><i>colon</i></ClLinks> are optional. 
+<DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> recognizes a *logical pathname namestring* when *default-pathname* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, or when the <GlossaryTerm  term={"namestring"}><i>namestring</i></GlossaryTerm> begins with the name of a defined <GlossaryTerm styled={true} term={"logical host"}><i>logical host</i></GlossaryTerm> followed by a <GlossaryTerm  term={"colon"}><i>colon</i></GlossaryTerm>. In the first of these two cases, the host portion of the *logical pathname namestring* and its following <GlossaryTerm  term={"colon"}><i>colon</i></GlossaryTerm> are optional. 
 
 
 
@@ -90,7 +90,7 @@ If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a <ClLinks  term={"p
 
 
 
-<ClLinks  term={"pathname"}><i>Pathname</i></ClLinks> merging treats a relative directory specially. If (pathname-directory <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>) is a <ClLinks  term={"list"}><i>list</i></ClLinks> whose <ClLinks  term={"car"}><i>car</i></ClLinks> is :relative, and (pathname-directory *default-pathname*) is a <ClLinks  term={"list"}><i>list</i></ClLinks>, then the merged directory is the value of 
+<GlossaryTerm  term={"pathname"}><i>Pathname</i></GlossaryTerm> merging treats a relative directory specially. If (pathname-directory <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>) is a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> whose <GlossaryTerm  term={"car"}><i>car</i></GlossaryTerm> is :relative, and (pathname-directory *default-pathname*) is a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>, then the merged directory is the value of 
 
 
 
@@ -102,11 +102,11 @@ If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a <ClLinks  term={"p
 
 
 
-(pathname-directory <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>))) 
+(pathname-directory <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>))) 
 
 
 
-except that if the resulting <ClLinks  term={"list"}><i>list</i></ClLinks> contains a <ClLinks  term={"string"}><i>string</i></ClLinks> or :wild immediately followed by :back, 
+except that if the resulting <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> contains a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> or :wild immediately followed by :back, 
 
 
 
@@ -122,11 +122,11 @@ except that if the resulting <ClLinks  term={"list"}><i>list</i></ClLinks> conta
 
 
 
-both of them are removed. This removal of redundant :back <ClLinks  term={"keyword"}><i>keywords</i></ClLinks> is repeated as many times as possible. If (pathname-directory *default-pathname*) is not a <ClLinks  term={"list"}><i>list</i></ClLinks> or (pathname-directory <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>) is not a <ClLinks  term={"list"}><i>list</i></ClLinks> whose <ClLinks  term={"car"}><i>car</i></ClLinks> is :relative, the merged directory is (or (pathname-directory <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>) (pathname-directory *default-pathname*)) 
+both of them are removed. This removal of redundant :back <GlossaryTerm  term={"keyword"}><i>keywords</i></GlossaryTerm> is repeated as many times as possible. If (pathname-directory *default-pathname*) is not a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> or (pathname-directory <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>) is not a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> whose <GlossaryTerm  term={"car"}><i>car</i></GlossaryTerm> is :relative, the merged directory is (or (pathname-directory <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>) (pathname-directory *default-pathname*)) 
 
 
 
-<DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> maps customary case in <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> into customary case in the output <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+<DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> maps customary case in <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> into customary case in the output <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>. 
 
 
 

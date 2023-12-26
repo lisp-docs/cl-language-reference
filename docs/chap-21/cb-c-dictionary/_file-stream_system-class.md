@@ -14,7 +14,7 @@
 
 
 
-An <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-stream"}><b>file-stream</b></DictionaryLink> is a <ClLinks  term={"stream"}><i>stream</i></ClLinks> the direct source or sink of which is a <ClLinks  term={"file"}><i>file</i></ClLinks>. Such a <ClLinks  term={"stream"}><i>stream</i></ClLinks> is created explicitly by <DictionaryLink  term={"open"}><b>open</b></DictionaryLink> and <DictionaryLink  term={"with-open-file"}><b>with-open-file</b></DictionaryLink>, and implicitly by <ClLinks  term={"function"}><i>functions</i></ClLinks> such as <DictionaryLink  term={"load"}><b>load</b></DictionaryLink> that process <ClLinks  term={"file"}><i>files</i></ClLinks>. 
+An <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-stream"}><b>file-stream</b></DictionaryLink> is a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> the direct source or sink of which is a <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm>. Such a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is created explicitly by <DictionaryLink  term={"open"}><b>open</b></DictionaryLink> and <DictionaryLink  term={"with-open-file"}><b>with-open-file</b></DictionaryLink>, and implicitly by <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> such as <DictionaryLink  term={"load"}><b>load</b></DictionaryLink> that process <GlossaryTerm  term={"file"}><i>files</i></GlossaryTerm>. 
 
 
 

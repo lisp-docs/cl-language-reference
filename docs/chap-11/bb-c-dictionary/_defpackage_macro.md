@@ -1,4 +1,4 @@
-**defpackage** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**defpackage** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -10,11 +10,11 @@
 
 
 
-*option::*=*\{*(:nicknames <ClLinks  term={"nickname"}><i>\{nickname\}</i></ClLinks>\*)*\}*\* *|* 
+*option::*=*\{*(:nicknames <GlossaryTerm  term={"nickname"}><i>\{nickname\}</i></GlossaryTerm>\*)*\}*\* *|* 
 
 
 
-(:documentation <ClLinks  term={"string"}><i>string</i></ClLinks>) *|* 
+(:documentation <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>) *|* 
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-<ClLinks  term={"nickname"}><i>nickname</i></ClLinks>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
+<GlossaryTerm  term={"nickname"}><i>nickname</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
 
 
 
@@ -66,7 +66,7 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—the <ClLinks  term={"package"}><i>package</i></ClLinks> named *package-name*. 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>—the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> named *package-name*. 
 
 
 
@@ -74,11 +74,11 @@
 
 
 
-<DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> creates a <ClLinks  term={"package"}><i>package</i></ClLinks> as specified and returns the <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> creates a <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> as specified and returns the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
-If *defined-package-name* already refers to an existing <ClLinks  term={"package"}><i>package</i></ClLinks>, the name-to-package mapping for that name is not changed. If the new definition is at variance with the current state of that <ClLinks  term={"package"}><i>package</i></ClLinks>, the consequences are undefined; an implementation might choose to modify the existing <ClLinks  term={"package"}><i>package</i></ClLinks> to reflect the new definition. If *defined-package-name* is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, its <ClLinks  term={"name"}><i>name</i></ClLinks> is used. 
+If *defined-package-name* already refers to an existing <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, the name-to-package mapping for that name is not changed. If the new definition is at variance with the current state of that <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, the consequences are undefined; an implementation might choose to modify the existing <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> to reflect the new definition. If *defined-package-name* is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, its <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> is used. 
 
 
 
@@ -90,7 +90,7 @@ The standard *options* are described below.
 
 
 
-The arguments to :nicknames set the <ClLinks  term={"package"}><i>package</i></ClLinks>’s nicknames to the supplied names. 
+The arguments to :nicknames set the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>’s nicknames to the supplied names. 
 
 
 
@@ -114,7 +114,7 @@ The argument to :documentation specifies a <GlossaryTerm styled={true} term={"do
 
 
 
-<GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to the <ClLinks  term={"package"}><i>package</i></ClLinks>. At most one :documentation option can appear in a single <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. At most one :documentation option can appear in a single <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -122,7 +122,7 @@ The argument to :documentation specifies a <GlossaryTerm styled={true} term={"do
 
 
 
-The arguments to :use set the <ClLinks  term={"package"}><i>packages</i></ClLinks> that the <ClLinks  term={"package"}><i>package</i></ClLinks> named by *package-name* will inherit from. If :use is not supplied, it defaults to the same <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> value as the :use <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <DictionaryLink  term={"make-package"}><b>make-package</b></DictionaryLink>. 
+The arguments to :use set the <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> that the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> named by *package-name* will inherit from. If :use is not supplied, it defaults to the same <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> value as the :use <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> to <DictionaryLink  term={"make-package"}><b>make-package</b></DictionaryLink>. 
 
 
 
@@ -130,7 +130,7 @@ The arguments to :use set the <ClLinks  term={"package"}><i>packages</i></ClLink
 
 
 
-The arguments to :shadow, *symbol-names*, name <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are to be created in the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined. These <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are added to the list of shadowing <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> effectively as if by <DictionaryLink  term={"shadow"}><b>shadow</b></DictionaryLink>. 
+The arguments to :shadow, *symbol-names*, name <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> that are to be created in the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> being defined. These <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> are added to the list of shadowing <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> effectively as if by <DictionaryLink  term={"shadow"}><b>shadow</b></DictionaryLink>. 
 
 
 
@@ -138,7 +138,7 @@ The arguments to :shadow, *symbol-names*, name <ClLinks  term={"symbol"}><i>symb
 
 
 
-The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found (involving a lookup as if by <DictionaryLink  term={"find-symbol"}><b>find-symbol</b></DictionaryLink>) in the specified *package-name*. The resulting <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are *imported* into the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined, and placed on the shadowing symbols list as if by <DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink>. In no case are <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> created in any <ClLinks  term={"package"}><i>package</i></ClLinks> other than the one being defined. 
+The <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> named by the argument *symbol-names* are found (involving a lookup as if by <DictionaryLink  term={"find-symbol"}><b>find-symbol</b></DictionaryLink>) in the specified *package-name*. The resulting <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> are *imported* into the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> being defined, and placed on the shadowing symbols list as if by <DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink>. In no case are <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> created in any <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> other than the one being defined. 
 
 
 
@@ -146,7 +146,7 @@ The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *sy
 
 
 
-The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found in the <ClLinks  term={"package"}><i>package</i></ClLinks> named by *package-name* and they are *imported* into the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined. In no case are <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> created in any <ClLinks  term={"package"}><i>package</i></ClLinks> other than the one being defined. 
+The <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> named by the argument *symbol-names* are found in the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> named by *package-name* and they are *imported* into the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> being defined. In no case are <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> created in any <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> other than the one being defined. 
 
 
 
@@ -154,7 +154,7 @@ The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *sy
 
 
 
-The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found or created in the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined and <ClLinks  term={"exported"}><i>exported</i></ClLinks>. The :export option interacts with the :use option, since inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> can be used rather than new ones created. The :export option interacts with the :import-from and :shadowing-import-from options, since *imported* symbols can be used rather than new ones created. If an argument to the :export option is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as an (inherited) <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm> via <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>, that the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> named by *symbol-name* is first *imported* into the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined, and is then <ClLinks  term={"exported"}><i>exported</i></ClLinks> from that <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+The <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> named by the argument *symbol-names* are found or created in the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> being defined and <GlossaryTerm  term={"exported"}><i>exported</i></GlossaryTerm>. The :export option interacts with the :use option, since inherited <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> can be used rather than new ones created. The :export option interacts with the :import-from and :shadowing-import-from options, since *imported* symbols can be used rather than new ones created. If an argument to the :export option is <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> as an (inherited) <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm> via <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>, that the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> named by *symbol-name* is first *imported* into the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> being defined, and is then <GlossaryTerm  term={"exported"}><i>exported</i></GlossaryTerm> from that <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
@@ -162,7 +162,7 @@ The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *sy
 
 
 
-The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found or created in the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined. The :intern option interacts with the :use option, since inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> can be used rather than new ones created. 
+The <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> named by the argument *symbol-names* are found or created in the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> being defined. The :intern option interacts with the :use option, since inherited <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> can be used rather than new ones created. 
 
 
 
@@ -170,7 +170,7 @@ The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *sy
 
 
 
-The argument to the :size option declares the approximate number of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> expected in the <ClLinks  term={"package"}><i>package</i></ClLinks>. This is an efficiency hint only and might be ignored by an implementation. 
+The argument to the :size option declares the approximate number of <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> expected in the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. This is an efficiency hint only and might be ignored by an implementation. 
 
 
 
@@ -210,11 +210,11 @@ The order in which the options appear in a <DictionaryLink  term={"defpackage"}>
 
 
 
-Shadows are established first, since they might be necessary to block spurious name conflicts when the :use option is processed. The :use option is executed next so that :intern and :export options can refer to normally inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. The :export option is executed last so that it can refer to <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> created by any of the other options; in particular, <GlossaryTerm styled={true} term={"shadowing symbol"}><i>shadowing symbols</i></GlossaryTerm> and *imported symbols* can be made external. 
+Shadows are established first, since they might be necessary to block spurious name conflicts when the :use option is processed. The :use option is executed next so that :intern and :export options can refer to normally inherited <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>. The :export option is executed last so that it can refer to <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> created by any of the other options; in particular, <GlossaryTerm styled={true} term={"shadowing symbol"}><i>shadowing symbols</i></GlossaryTerm> and *imported symbols* can be made external. 
 
 
 
-If a defpackage <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, all of the actions normally performed by this <ClLinks  term={"macro"}><i>macro</i></ClLinks> at load time must also be performed at compile time. 
+If a defpackage <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, all of the actions normally performed by this <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> at load time must also be performed at compile time. 
 
 
 
@@ -239,7 +239,7 @@ If a defpackage <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <Glos
 
 
 
-Existing <ClLinks  term={"package"}><i>packages</i></ClLinks>. 
+Existing <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm>. 
 
 
 
@@ -247,11 +247,11 @@ Existing <ClLinks  term={"package"}><i>packages</i></ClLinks>.
 
 
 
-If one of the supplied :nicknames already refers to an existing <ClLinks  term={"package"}><i>package</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink> is signaled. 
+If one of the supplied :nicknames already refers to an existing <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink> is signaled. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> should be signaled if :size or :documentation appears more than once. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> should be signaled if :size or :documentation appears more than once. 
 
 
 
@@ -271,15 +271,15 @@ An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term=
 
 
 
-Since <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> might allow extended *options* an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> should be signaled if an *option* is present that is not actually supported in the host <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+Since <GlossaryTerm  term={"implementation"}><i>implementations</i></GlossaryTerm> might allow extended *options* an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> should be signaled if an *option* is present that is not actually supported in the host <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 
-The collection of *symbol-name* arguments given to the options :shadow, :intern, :import-from, and :shadowing-import-from must all be disjoint; additionally, the *symbol-name* arguments given to :export and :intern must be disjoint. Disjoint in this context is defined as no two of the *symbol-names* being <ClLinks  term={"string"}><b>string=</b></ClLinks> with each other. If either condition is violated, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> should be signaled. 
+The collection of *symbol-name* arguments given to the options :shadow, :intern, :import-from, and :shadowing-import-from must all be disjoint; additionally, the *symbol-name* arguments given to :export and :intern must be disjoint. Disjoint in this context is defined as no two of the *symbol-names* being <ClLinks  term={"string"}><b>string=</b></ClLinks> with each other. If either condition is violated, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> should be signaled. 
 
 
 
-For the :shadowing-import-from and :import-from options, a *correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink> is signaled if no <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks> named by *package-name* for one of the argument *symbol-names*. 
+For the :shadowing-import-from and :import-from options, a *correctable error* of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink> is signaled if no <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> in the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> named by *package-name* for one of the argument *symbol-names*. 
 
 
 
@@ -299,11 +299,11 @@ Name conflict errors are handled by the underlying calls to <DictionaryLink  ter
 
 
 
-The :intern option is useful if an :import-from or a :shadowing-import-from option in a subsequent call to <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> (for some other <ClLinks  term={"package"}><i>package</i></ClLinks>) expects to find these *symbols accessible* but not necessarily external. 
+The :intern option is useful if an :import-from or a :shadowing-import-from option in a subsequent call to <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> (for some other <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>) expects to find these *symbols accessible* but not necessarily external. 
 
 
 
-It is recommended that the entire <ClLinks  term={"package"}><i>package</i></ClLinks> definition is put in a single place, and that all the <ClLinks  term={"package"}><i>package</i></ClLinks> definitions of a program are in a single file. This file can be *loaded* before *loading* or compiling anything else that depends on those <ClLinks  term={"package"}><i>packages</i></ClLinks>. Such a file can be read in the COMMON-LISP-USER <ClLinks  term={"package"}><i>package</i></ClLinks>, avoiding any initial state issues. 
+It is recommended that the entire <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> definition is put in a single place, and that all the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> definitions of a program are in a single file. This file can be *loaded* before *loading* or compiling anything else that depends on those <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm>. Such a file can be read in the COMMON-LISP-USER <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, avoiding any initial state issues. 
 
 
 
@@ -339,15 +339,15 @@ It is recommended that the entire <ClLinks  term={"package"}><i>package</i></ClL
 
 
 
-However, nothing prevents the user from using the <ClLinks  term={"package"}><i>package</i></ClLinks>-affecting functions such as <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>, <DictionaryLink  term={"import"}><b>import</b></DictionaryLink>, and <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> to establish such links after a more standard use of <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink>. 
+However, nothing prevents the user from using the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>-affecting functions such as <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>, <DictionaryLink  term={"import"}><b>import</b></DictionaryLink>, and <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> to establish such links after a more standard use of <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink>. 
 
 
 
-The macroexpansion of <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> could usefully canonicalize the names into <ClLinks  term={"string"}><i>strings</i></ClLinks>, so that even if a source file has random <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> in the <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> form, the compiled file would only contain <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
+The macroexpansion of <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> could usefully canonicalize the names into <GlossaryTerm  term={"string"}><i>strings</i></GlossaryTerm>, so that even if a source file has random <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> in the <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> form, the compiled file would only contain <GlossaryTerm  term={"string"}><i>strings</i></GlossaryTerm>. 
 
 
 
-Frequently additional <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> options take the form of a <ClLinks  term={"keyword"}><i>keyword</i></ClLinks> standing by itself as an abbreviation for a list (keyword T); this syntax should be properly reported as an 
+Frequently additional <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> options take the form of a <GlossaryTerm  term={"keyword"}><i>keyword</i></GlossaryTerm> standing by itself as an abbreviation for a list (keyword T); this syntax should be properly reported as an 
 
 
 

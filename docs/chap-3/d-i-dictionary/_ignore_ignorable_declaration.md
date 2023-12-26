@@ -1,4 +1,4 @@
-**ignore, ignorable** <ClLinks  term={"declaration"}><i>Declaration</i></ClLinks> 
+**ignore, ignorable** <GlossaryTerm  term={"declaration"}><i>Declaration</i></GlossaryTerm> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks> 
+<GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm> 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-<ClLinks  term={"variable"}><i>variable</i></ClLinks>, <ClLinks  term={"function"}><i>function</i></ClLinks> 
+<GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm>, <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> 
 
 
 
@@ -50,7 +50,7 @@ The <DictionaryLink  term={"ignore"}><b>ignore</b></DictionaryLink> and <Diction
 
 
 
-An <DictionaryLink  term={"ignore"}><b>ignore</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> specifies that *for-value references* to the indicated <ClLinks  term={"binding"}><i>bindings</i></ClLinks> will not occur within the scope of the <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. Within the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of such a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, it is desirable for a compiler to issue a warning about the presence of either a *for-value reference* to any *var* or *fn*, or a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> for any *var*. 
+An <DictionaryLink  term={"ignore"}><b>ignore</b></DictionaryLink> <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm> specifies that *for-value references* to the indicated <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm> will not occur within the scope of the <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>. Within the <GlossaryTerm  term={"scope"}><i>scope</i></GlossaryTerm> of such a <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>, it is desirable for a compiler to issue a warning about the presence of either a *for-value reference* to any *var* or *fn*, or a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm> for any *var*. 
 
 
 
@@ -66,15 +66,15 @@ An <DictionaryLink  term={"ignore"}><b>ignore</b></DictionaryLink> <ClLinks  ter
 
 
 
-An <DictionaryLink  term={"ignorable"}><b>ignorable</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> specifies that *for-value references* to the indicated <ClLinks  term={"binding"}><i>bindings</i></ClLinks> might or might not occur within the scope of the <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. Within the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of such a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, it is not desirable for a compiler to issue a warning about the presence or absence of either a *for-value reference* to any *var* or *fn*, or a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> for any *var*. 
+An <DictionaryLink  term={"ignorable"}><b>ignorable</b></DictionaryLink> <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm> specifies that *for-value references* to the indicated <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm> might or might not occur within the scope of the <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>. Within the <GlossaryTerm  term={"scope"}><i>scope</i></GlossaryTerm> of such a <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>, it is not desirable for a compiler to issue a warning about the presence or absence of either a *for-value reference* to any *var* or *fn*, or a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm> for any *var*. 
 
 
 
-When not within the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of a <DictionaryLink  term={"ignore"}><b>ignore</b></DictionaryLink> or <DictionaryLink  term={"ignorable"}><b>ignorable</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, it is desirable for a compiler to issue a warning about any *var* for which there is neither a *for-value reference* nor a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, or about any *fn* for which there is no *for-value reference*. 
+When not within the <GlossaryTerm  term={"scope"}><i>scope</i></GlossaryTerm> of a <DictionaryLink  term={"ignore"}><b>ignore</b></DictionaryLink> or <DictionaryLink  term={"ignorable"}><b>ignorable</b></DictionaryLink> <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>, it is desirable for a compiler to issue a warning about any *var* for which there is neither a *for-value reference* nor a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>, or about any *fn* for which there is no *for-value reference*. 
 
 
 
-Any warning about a “used” or “unused” <ClLinks  term={"binding"}><i>binding</i></ClLinks> must be of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"style-warning"}><b>style-warning</b></DictionaryLink>, and may not a↵ect program semantics. 
+Any warning about a “used” or “unused” <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> must be of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"style-warning"}><b>style-warning</b></DictionaryLink>, and may not a↵ect program semantics. 
 
 
 

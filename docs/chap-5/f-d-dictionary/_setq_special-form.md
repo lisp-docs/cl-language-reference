@@ -26,15 +26,15 @@
 
 
 
-*var*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming a <ClLinks  term={"variable"}><i>variable</i></ClLinks> other than a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. 
+*var*—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> naming a <GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm> other than a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-*result*—the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> of the last <ClLinks  term={"form"}><i>form</i></ClLinks>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if no *pairs* were supplied. 
+*result*—the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> of the last <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if no *pairs* were supplied. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-Assigns values to <ClLinks  term={"variable"}><i>variables</i></ClLinks>. 
+Assigns values to <GlossaryTerm  term={"variable"}><i>variables</i></GlossaryTerm>. 
 
 
 
@@ -50,7 +50,7 @@ Assigns values to <ClLinks  term={"variable"}><i>variables</i></ClLinks>.
 
 
 
-If any *var* refers to a <ClLinks  term={"binding"}><i>binding</i></ClLinks> made by <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>, then that *var* is treated as if <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> (not <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink>) had been used. 
+If any *var* refers to a <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> made by <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>, then that *var* is treated as if <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> (not <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink>) had been used. 
 
 
 
@@ -79,7 +79,7 @@ c → 7
 
 
 
-The <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> of each <ClLinks  term={"form"}><i>form</i></ClLinks> is assigned to the corresponding *var*. 
+The <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> of each <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is assigned to the corresponding *var*. 
 
 
 

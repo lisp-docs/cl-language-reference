@@ -1,4 +1,4 @@
-**upgraded-array-element-type** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**upgraded-array-element-type** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, denoting the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> and the current <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. 
+<GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, denoting the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> and the current <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-Returns the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of the most *specialized array* representation capable of holding items of the <ClLinks  term={"type"}><i>type</i></ClLinks> denoted by *typespec*. 
+Returns the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of the most *specialized array* representation capable of holding items of the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> denoted by *typespec*. 
 
 
 
-The *typespec* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of (and possibly <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to) the *upgraded-typespec*. 
+The *typespec* is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of (and possibly <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to) the *upgraded-typespec*. 
 
 
 
@@ -46,7 +46,7 @@ The purpose of <DictionaryLink  term={"upgraded-array-element-type"}><b>upgraded
 
 
 
-The <ClLinks  term={"environment"}><i>environment</i></ClLinks> is used to expand any <GlossaryTerm styled={true} term={"derived type specifier"}><i>derived type specifiers</i></GlossaryTerm> that are mentioned in the *typespec*. 
+The <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm> is used to expand any <GlossaryTerm styled={true} term={"derived type specifier"}><i>derived type specifiers</i></GlossaryTerm> that are mentioned in the *typespec*. 
 
 
 

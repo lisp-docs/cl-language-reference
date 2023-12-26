@@ -1,4 +1,4 @@
-**truename** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**truename** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"truename"}><i>truename</i></ClLinks>—a <GlossaryTerm styled={true} term={"physical pathname"}><i>physical pathname</i></GlossaryTerm>. 
+<GlossaryTerm  term={"truename"}><i>truename</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"physical pathname"}><i>physical pathname</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<DictionaryLink  term={"truename"}><b>truename</b></DictionaryLink> tries to find the <ClLinks  term={"file"}><i>file</i></ClLinks> indicated by *filespec* and returns its <ClLinks  term={"truename"}><i>truename</i></ClLinks>. If the *filespec designator* is an open <ClLinks  term={"stream"}><i>stream</i></ClLinks>, its associated <ClLinks  term={"file"}><i>file</i></ClLinks> is used. If *filespec* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, <DictionaryLink  term={"truename"}><b>truename</b></DictionaryLink> can be used whether the <ClLinks  term={"stream"}><i>stream</i></ClLinks> is open or closed. It is permissible for <DictionaryLink  term={"truename"}><b>truename</b></DictionaryLink> to return more specific information after the <ClLinks  term={"stream"}><i>stream</i></ClLinks> is closed than when the <ClLinks  term={"stream"}><i>stream</i></ClLinks> was open. If *filespec* is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
+<DictionaryLink  term={"truename"}><b>truename</b></DictionaryLink> tries to find the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> indicated by *filespec* and returns its <GlossaryTerm  term={"truename"}><i>truename</i></GlossaryTerm>. If the *filespec designator* is an open <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>, its associated <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> is used. If *filespec* is a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>, <DictionaryLink  term={"truename"}><b>truename</b></DictionaryLink> can be used whether the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is open or closed. It is permissible for <DictionaryLink  term={"truename"}><b>truename</b></DictionaryLink> to return more specific information after the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is closed than when the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> was open. If *filespec* is a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
 
 
 
@@ -61,11 +61,11 @@
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if an appropriate <ClLinks  term={"file"}><i>file</i></ClLinks> cannot be located within the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> for the given *filespec*, or if the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> cannot perform the requested operation. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if an appropriate <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> cannot be located within the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> for the given *filespec*, or if the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> cannot perform the requested operation. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> is <GlossaryTerm  term={"wild"}><i>wild</i></GlossaryTerm>. 
 
 
 
@@ -81,4 +81,4 @@ An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term=
 
 
 
-<DictionaryLink  term={"truename"}><b>truename</b></DictionaryLink> may be used to account for any <ClLinks  term={"filename"}><i>filename</i></ClLinks> translations performed by the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. 
+<DictionaryLink  term={"truename"}><b>truename</b></DictionaryLink> may be used to account for any <GlossaryTerm  term={"filename"}><i>filename</i></GlossaryTerm> translations performed by the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. 

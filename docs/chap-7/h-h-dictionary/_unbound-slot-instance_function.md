@@ -1,4 +1,4 @@
-**unbound-slot-instance** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**unbound-slot-instance** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"unbound-slot"}><b>unbound-slot</b></DictionaryLink>. 
+<GlossaryTerm  term={"condition"}><i>condition</i></GlossaryTerm>—a <GlossaryTerm  term={"condition"}><i>condition</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"unbound-slot"}><b>unbound-slot</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"instance"}><i>instance</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the instance which had the unbound slot in the <ClLinks  term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks  term={"condition"}><i>condition</i></ClLinks>. 
+Returns the instance which had the unbound slot in the <GlossaryTerm  term={"situation"}><i>situation</i></GlossaryTerm> represented by the <GlossaryTerm  term={"condition"}><i>condition</i></GlossaryTerm>. 
 
 
 

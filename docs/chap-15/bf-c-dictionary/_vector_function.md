@@ -1,4 +1,4 @@
-**vector** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**vector** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"vector"}><i>vector</i></ClLinks>—a <ClLinks  term={"vector"}><i>vector</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> (vector t \*). 
+<GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm>—a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> (vector t \*). 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Creates a *fresh simple general vector* whose size corresponds to the number of <ClLinks  term={"object"}><i>objects</i></ClLinks>. The <ClLinks  term={"vector"}><i>vector</i></ClLinks> is initialized to contain the <ClLinks  term={"object"}><i>objects</i></ClLinks>. 
+Creates a *fresh simple general vector* whose size corresponds to the number of <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm>. The <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> is initialized to contain the <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm>. 
 
 
 

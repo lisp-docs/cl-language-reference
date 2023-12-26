@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> consists of error conditions related to incorrect program syntax. The errors that result from naming a <GlossaryTerm styled={true} term={"go tag"}><i>go tag</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"block tag"}><i>block tag</i></GlossaryTerm> that is not lexically apparent are of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink>. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> consists of error conditions related to incorrect program syntax. The errors that result from naming a <GlossaryTerm styled={true} term={"go tag"}><i>go tag</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"block tag"}><i>block tag</i></GlossaryTerm> that is not lexically apparent are of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink>. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> <ClLinks  term={"class"}><i>class</i></ClLinks> &amp;rest *initargs* &amp;key &amp;allow-other-keys → instance 
+<DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> &amp;rest *initargs* &amp;key &amp;allow-other-keys → instance 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> (<ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>) &amp;rest *initargs* 
+<DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> (<GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>) &amp;rest *initargs* 
 
 
 
-<DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> (<ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"symbol"}><b>symbol</b></DictionaryLink>) &amp;rest *initargs* 
+<DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> (<GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink  term={"symbol"}><b>symbol</b></DictionaryLink>) &amp;rest *initargs* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"class"}><i>class</i></ClLinks>—a <ClLinks  term={"class"}><i>class</i></ClLinks>, or a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that names a <ClLinks  term={"class"}><i>class</i></ClLinks>. 
+<GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>—a <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>, or a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> that names a <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks  term={"instance"}><i>instance</i></ClLinks>—a *fresh instance* of *class class*. 
+<GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm>—a *fresh instance* of *class class*. 
 
 
 
@@ -54,11 +54,11 @@
 
 
 
-The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> creates and returns a new <ClLinks  term={"instance"}><i>instance</i></ClLinks> of the given <ClLinks  term={"class"}><i>class</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> creates and returns a new <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm> of the given <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>. 
 
 
 
-If the second of the above <ClLinks  term={"method"}><i>methods</i></ClLinks> is selected, that <ClLinks  term={"method"}><i>method</i></ClLinks> invokes <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> on the arguments (find-class <ClLinks  term={"class"}><i>class</i></ClLinks>) and *initargs*. 
+If the second of the above <GlossaryTerm  term={"method"}><i>methods</i></GlossaryTerm> is selected, that <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> invokes <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> on the arguments (find-class <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>) and *initargs*. 
 
 
 
@@ -74,7 +74,7 @@ The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i
 
 
 
-If any of the initialization arguments has not been declared as valid, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
+If any of the initialization arguments has not been declared as valid, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 

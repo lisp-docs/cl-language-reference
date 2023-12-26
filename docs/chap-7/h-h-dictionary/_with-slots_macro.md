@@ -1,4 +1,4 @@
-**with-slots** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**with-slots** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"with-slots"}><b>with-slots</b></DictionaryLink> (*\{slot-entry\}*\*) *instance-form \{declaration\}*\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink  term={"with-slots"}><b>with-slots</b></DictionaryLink> (*\{slot-entry\}*\*) *instance-form \{declaration\}*\* <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\* 
 
 
 
@@ -30,23 +30,23 @@
 
 
 
-*instance-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluted to produce <ClLinks  term={"instance"}><i>instance</i></ClLinks>. 
+*instance-form*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluted to produce <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"instance"}><i>instance</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
+<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. 
 
 
 
@@ -54,11 +54,11 @@
 
 
 
-The macro <DictionaryLink  term={"with-slots"}><b>with-slots</b></DictionaryLink> *establishes* a <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> for referring to the <ClLinks  term={"slot"}><i>slots</i></ClLinks> in the <ClLinks  term={"instance"}><i>instance</i></ClLinks> named by the given *slot-names* as though they were <ClLinks  term={"variable"}><i>variables</i></ClLinks>. Within such a context the value of the <ClLinks  term={"slot"}><i>slot</i></ClLinks> can be specified by using its slot name, as if it were a lexically bound variable. Both <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> and <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> can be used to set the value of the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
+The macro <DictionaryLink  term={"with-slots"}><b>with-slots</b></DictionaryLink> *establishes* a <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> for referring to the <GlossaryTerm  term={"slot"}><i>slots</i></GlossaryTerm> in the <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm> named by the given *slot-names* as though they were <GlossaryTerm  term={"variable"}><i>variables</i></GlossaryTerm>. Within such a context the value of the <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm> can be specified by using its slot name, as if it were a lexically bound variable. Both <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> and <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> can be used to set the value of the <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm>. 
 
 
 
-The macro <DictionaryLink  term={"with-slots"}><b>with-slots</b></DictionaryLink> translates an appearance of the slot name as a <ClLinks  term={"variable"}><i>variable</i></ClLinks> into a call to <DictionaryLink  term={"slot-value"}><b>slot-value</b></DictionaryLink>. 
+The macro <DictionaryLink  term={"with-slots"}><b>with-slots</b></DictionaryLink> translates an appearance of the slot name as a <GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm> into a call to <DictionaryLink  term={"slot-value"}><b>slot-value</b></DictionaryLink>. 
 
 
 
@@ -110,7 +110,7 @@ The macro <DictionaryLink  term={"with-slots"}><b>with-slots</b></DictionaryLink
 
 
 
-The consequences are undefined if any *slot-name* is not the name of a <ClLinks  term={"slot"}><i>slot</i></ClLinks> in the <ClLinks  term={"instance"}><i>instance</i></ClLinks>. 
+The consequences are undefined if any *slot-name* is not the name of a <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm> in the <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm>. 
 
 
 

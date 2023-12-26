@@ -1,4 +1,4 @@
-**length** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**length** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Returns the number of <ClLinks  term={"element"}><i>elements</i></ClLinks> in *sequence*. 
+Returns the number of <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> in *sequence*. 
 
 
 
-If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , the active length as specified by the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is returned. 
+If *sequence* is a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , the active length as specified by the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is returned. 
 
 
 
@@ -48,7 +48,7 @@ If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <Glo
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should be prepared to signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 

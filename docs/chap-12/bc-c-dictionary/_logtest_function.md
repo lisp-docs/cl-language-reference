@@ -1,4 +1,4 @@
-**logtest** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**logtest** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if any of the bits designated by the 1’s in *integer-1* is 1 in *integer-2*; otherwise it is <ClLinks  term={"false"}><i>false</i></ClLinks>. *integer-1* and *integer-2* are treated as if they were binary. 
+Returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if any of the bits designated by the 1’s in *integer-1* is 1 in *integer-2*; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. *integer-1* and *integer-2* are treated as if they were binary. 
 
 
 
@@ -48,7 +48,7 @@ Negative *integer-1* and *integer-2* are treated as if they were represented in 
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *integer-1* is not an *integer* . Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *integer-2* is not an *integer* . 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *integer-1* is not an *integer* . Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *integer-2* is not an *integer* . 
 
 
 

@@ -1,4 +1,4 @@
-**multiple-value-setq** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**multiple-value-setq** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*vars*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are either *variable names* or <ClLinks  term={"name"}><i>names</i></ClLinks> of *symbol macros*. 
+*vars*—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> that are either *variable names* or <GlossaryTerm  term={"name"}><i>names</i></GlossaryTerm> of *symbol macros*. 
 
 
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-*result*—The *primary value* returned by the <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+*result*—The *primary value* returned by the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-The <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated, and each *var* is *assigned* to the corresponding <ClLinks  term={"value"}><i>value</i></ClLinks> returned by that <ClLinks  term={"form"}><i>form</i></ClLinks>. If there are more *vars* than <ClLinks  term={"value"}><i>values</i></ClLinks> returned, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is *assigned* to the extra *vars*. If there are more <ClLinks  term={"value"}><i>values</i></ClLinks> than *vars*, the extra <ClLinks  term={"value"}><i>values</i></ClLinks> are discarded. 
+The <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is evaluated, and each *var* is *assigned* to the corresponding <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> returned by that <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. If there are more *vars* than <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is *assigned* to the extra *vars*. If there are more <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> than *vars*, the extra <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> are discarded. 
 
 
 

@@ -1,4 +1,4 @@
-**slot-makunbound** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**slot-makunbound** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"instance"}><i>instance</i></ClLinks> – instance. 
+<GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm> – instance. 
 
 
 
-*Slot-name*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+*Slot-name*—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"slot-makunbound"}><b>slot-makunbound</b></DictionaryLink> restores a <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the name *slot-name* in an <ClLinks  term={"instance"}><i>instance</i></ClLinks> to the unbound state. 
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"slot-makunbound"}><b>slot-makunbound</b></DictionaryLink> restores a <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm> of the name *slot-name* in an <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm> to the unbound state. 
 
 
 
@@ -34,15 +34,15 @@ The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term=
 
 
 
-If no <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the name *slot-name* exists in the <ClLinks  term={"instance"}><i>instance</i></ClLinks>, <DictionaryLink  term={"slot-missing"}><b>slot-missing</b></DictionaryLink> is called as follows: 
+If no <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm> of the name *slot-name* exists in the <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm>, <DictionaryLink  term={"slot-missing"}><b>slot-missing</b></DictionaryLink> is called as follows: 
 
 
 
-(slot-missing (class-of <ClLinks  term={"instance"}><i>instance</i></ClLinks>) 
+(slot-missing (class-of <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm>) 
 
 
 
-<ClLinks  term={"instance"}><i>instance</i></ClLinks> 
+<GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm> 
 
 
 
@@ -58,7 +58,7 @@ If no <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the name *slot-name* exis
 
 
 
-The specific behavior depends on <ClLinks  term={"instance"}><i>instance</i></ClLinks>’s <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks>. An error is never signaled if <ClLinks  term={"instance"}><i>instance</i></ClLinks> has <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks> <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>. An error is always signaled if <ClLinks  term={"instance"}><i>instance</i></ClLinks> has <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks> <DictionaryLink  term={"built-in-class"}><b>built-in-class</b></DictionaryLink>. The consequences are undefined if <ClLinks  term={"instance"}><i>instance</i></ClLinks> has any other <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks>–an error might or might not be signaled in this situation. Note in particular that the behavior for <ClLinks  term={"condition"}><i>conditions</i></ClLinks> and <ClLinks  term={"structure"}><i>structures</i></ClLinks> is not specified. 
+The specific behavior depends on <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm>’s <GlossaryTerm  term={"metaclass"}><i>metaclass</i></GlossaryTerm>. An error is never signaled if <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm> has <GlossaryTerm  term={"metaclass"}><i>metaclass</i></GlossaryTerm> <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>. An error is always signaled if <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm> has <GlossaryTerm  term={"metaclass"}><i>metaclass</i></GlossaryTerm> <DictionaryLink  term={"built-in-class"}><b>built-in-class</b></DictionaryLink>. The consequences are undefined if <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm> has any other <GlossaryTerm  term={"metaclass"}><i>metaclass</i></GlossaryTerm>–an error might or might not be signaled in this situation. Note in particular that the behavior for <GlossaryTerm  term={"condition"}><i>conditions</i></GlossaryTerm> and <GlossaryTerm  term={"structure"}><i>structures</i></GlossaryTerm> is not specified. 
 
 
 
@@ -74,7 +74,7 @@ The specific behavior depends on <ClLinks  term={"instance"}><i>instance</i></Cl
 
 
 
-Although no <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is required to do so, implementors are strongly encouraged to implement the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"slot-makunbound"}><b>slot-makunbound</b></DictionaryLink> using the <ClLinks  term={"function"}><i>function</i></ClLinks> slot-makunbound-using-class described in the *Metaobject Protocol*. 
+Although no <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> is required to do so, implementors are strongly encouraged to implement the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"slot-makunbound"}><b>slot-makunbound</b></DictionaryLink> using the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> slot-makunbound-using-class described in the *Metaobject Protocol*. 
 
 
 

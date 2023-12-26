@@ -1,4 +1,4 @@
-**log** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**log** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"log"}><b>log</b></DictionaryLink> <ClLinks  term={"number"}><i>number</i></ClLinks> &amp;optional *base → logarithm* 
+<DictionaryLink  term={"log"}><b>log</b></DictionaryLink> <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> &amp;optional *base → logarithm* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a non-zero <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>—a non-zero <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
-*base*—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+*base*—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
-*logarithm*—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+*logarithm*—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<DictionaryLink  term={"log"}><b>log</b></DictionaryLink> returns the logarithm of <ClLinks  term={"number"}><i>number</i></ClLinks> in base *base*. If *base* is not supplied its value is *e*, the base of the natural logarithms. 
+<DictionaryLink  term={"log"}><b>log</b></DictionaryLink> returns the logarithm of <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> in base *base*. If *base* is not supplied its value is *e*, the base of the natural logarithms. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-<DictionaryLink  term={"log"}><b>log</b></DictionaryLink> may return a <ClLinks  term={"complex"}><i>complex</i></ClLinks> when given a *real* negative <ClLinks  term={"number"}><i>number</i></ClLinks>. 
+<DictionaryLink  term={"log"}><b>log</b></DictionaryLink> may return a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> when given a *real* negative <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>. 
 
 
 
@@ -90,7 +90,7 @@ The two-argument logarithm function is defined as
 
 
 
-*≡* (/ (log <ClLinks  term={"number"}><i>number</i></ClLinks>) (log *base*)) 
+*≡* (/ (log <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>) (log *base*)) 
 
 
 

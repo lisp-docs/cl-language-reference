@@ -1,4 +1,4 @@
-**array-row-major-index** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**array-row-major-index** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"array-row-major-index"}><b>array-row-major-index</b></DictionaryLink> <ClLinks  term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → index* 
+<DictionaryLink  term={"array-row-major-index"}><b>array-row-major-index</b></DictionaryLink> <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> &amp;rest *subscripts → index* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+<GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>—an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-*subscripts*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *valid array indices* for the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+*subscripts*—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of *valid array indices* for the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-*index*—a <GlossaryTerm styled={true} term={"valid array row-major index"}><i>valid array row-major index</i></GlossaryTerm> for the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+*index*—a <GlossaryTerm styled={true} term={"valid array row-major index"}><i>valid array row-major index</i></GlossaryTerm> for the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-Computes the position according to the row-major ordering of <ClLinks  term={"array"}><i>array</i></ClLinks> for the element that is specified by *subscripts*, and returns the offset of the element in the computed position from the beginning of <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+Computes the position according to the row-major ordering of <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> for the element that is specified by *subscripts*, and returns the offset of the element in the computed position from the beginning of <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-For a one-dimensional <ClLinks  term={"array"}><i>array</i></ClLinks>, the result of <DictionaryLink  term={"array-row-major-index"}><b>array-row-major-index</b></DictionaryLink> equals *subscript*. <DictionaryLink  term={"array-row-major-index"}><b>array-row-major-index</b></DictionaryLink> ignores <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm>. 
+For a one-dimensional <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>, the result of <DictionaryLink  term={"array-row-major-index"}><b>array-row-major-index</b></DictionaryLink> equals *subscript*. <DictionaryLink  term={"array-row-major-index"}><b>array-row-major-index</b></DictionaryLink> ignores <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm>. 
 
 
 

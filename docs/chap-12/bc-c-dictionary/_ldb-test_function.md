@@ -1,4 +1,4 @@
-**ldb-test** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**ldb-test** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if any of the bits of the byte in *integer* specified by *bytespec* is non-zero; otherwise returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if any of the bits of the byte in *integer* specified by *bytespec* is non-zero; otherwise returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 

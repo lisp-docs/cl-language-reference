@@ -2,7 +2,7 @@
 
 
 
-The <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"stream"}><b>stream</b></DictionaryLink> has a number of *subclasses* defined by this specification. Figure 21–5 shows some information about these subclasses. 
+The <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink  term={"stream"}><b>stream</b></DictionaryLink> has a number of *subclasses* defined by this specification. Figure 21–5 shows some information about these subclasses. 
 
 
 

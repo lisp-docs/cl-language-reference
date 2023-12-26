@@ -1,4 +1,4 @@
-**package-error-package** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**package-error-package** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink>. 
+<GlossaryTerm  term={"condition"}><i>condition</i></GlossaryTerm>—a <GlossaryTerm  term={"condition"}><i>condition</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for the offending <ClLinks  term={"package"}><i>package</i></ClLinks> in the <ClLinks  term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks  term={"condition"}><i>condition</i></ClLinks>. 
+Returns a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for the offending <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> in the <GlossaryTerm  term={"situation"}><i>situation</i></GlossaryTerm> represented by the <GlossaryTerm  term={"condition"}><i>condition</i></GlossaryTerm>. 
 
 **Examples:**
 ```lisp

@@ -22,7 +22,7 @@ foo 2 (hot dog)
 
 
 
-In contrast, #1A((0 1 5) (foo 2 (hot dog))) represents a <ClLinks  term={"vector"}><i>vector</i></ClLinks> of <ClLinks  term={"length"}><i>length</i></ClLinks> 2 whose <ClLinks  term={"element"}><i>elements</i></ClLinks> are <ClLinks  term={"list"}><i>lists</i></ClLinks>: 
+In contrast, #1A((0 1 5) (foo 2 (hot dog))) represents a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> of <GlossaryTerm  term={"length"}><i>length</i></GlossaryTerm> 2 whose <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> are <GlossaryTerm  term={"list"}><i>lists</i></GlossaryTerm>: 
 
 
 
@@ -38,11 +38,11 @@ In contrast, #1A((0 1 5) (foo 2 (hot dog))) represents a <ClLinks  term={"vector
 
 
 
-If some <ClLinks  term={"dimension"}><i>dimension</i></ClLinks> of the <ClLinks  term={"array"}><i>array</i></ClLinks> whose representation is being parsed is found to be 0, all <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> to the right (*i.e.*, the higher numbered <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>) are also considered to be 0. 
+If some <GlossaryTerm  term={"dimension"}><i>dimension</i></GlossaryTerm> of the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> whose representation is being parsed is found to be 0, all <GlossaryTerm  term={"dimension"}><i>dimensions</i></GlossaryTerm> to the right (*i.e.*, the higher numbered <GlossaryTerm  term={"dimension"}><i>dimensions</i></GlossaryTerm>) are also considered to be 0. 
 
 
 
-For information on how the *Lisp printer* prints <ClLinks  term={"array"}><i>arrays</i></ClLinks>, see Section 22.1.3.4 (Printing Strings), Section 22.1.3.6 (Printing Bit Vectors), Section 22.1.3.7 (Printing Other Vectors), or Section 22.1.3.8 (Printing Other Arrays).  
+For information on how the *Lisp printer* prints <GlossaryTerm  term={"array"}><i>arrays</i></GlossaryTerm>, see Section 22.1.3.4 (Printing Strings), Section 22.1.3.6 (Printing Bit Vectors), Section 22.1.3.7 (Printing Other Vectors), or Section 22.1.3.8 (Printing Other Arrays).  
 
 
 

@@ -1,4 +1,4 @@
-**string** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**string** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*x*—a <ClLinks  term={"string"}><i>string</i></ClLinks>, a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, or a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
+*x*—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>, a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, or a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> . 
 
 
 
-<ClLinks  term={"string"}><i>string</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+<GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. 
 
 
 
@@ -26,23 +26,23 @@
 
 
 
-Returns a <ClLinks  term={"string"}><i>string</i></ClLinks> described by *x*; specifically: 
+Returns a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> described by *x*; specifically: 
 
 
 
-*•* If *x* is a <ClLinks  term={"string"}><i>string</i></ClLinks>, it is returned. 
+*•* If *x* is a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>, it is returned. 
 
 
 
-*•* If *x* is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, its <ClLinks  term={"name"}><i>name</i></ClLinks> is returned. 
+*•* If *x* is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, its <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> is returned. 
 
 
 
-*•* If *x* is a <ClLinks  term={"character"}><i>character</i></ClLinks> , then a <ClLinks  term={"string"}><i>string</i></ClLinks> containing that one <ClLinks  term={"character"}><i>character</i></ClLinks> is returned. 
+*•* If *x* is a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> , then a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> containing that one <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> is returned. 
 
 
 
-*•* <DictionaryLink  term={"string"}><b>string</b></DictionaryLink> might perform additional, <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> conversions. 
+*•* <DictionaryLink  term={"string"}><b>string</b></DictionaryLink> might perform additional, <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm> conversions. 
 
 
 
@@ -57,7 +57,7 @@ Returns a <ClLinks  term={"string"}><i>string</i></ClLinks> described by *x*; sp
 
 
 
-In the case where a conversion is defined neither by this specification nor by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. 
+In the case where a conversion is defined neither by this specification nor by the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -65,7 +65,7 @@ In the case where a conversion is defined neither by this specification nor by t
 
 
 
-<DictionaryLink  term={"coerce"}><b>coerce</b></DictionaryLink>, <DictionaryLink  term={"string"}><b>string</b></DictionaryLink> (<ClLinks  term={"type"}><i>type</i></ClLinks>). 
+<DictionaryLink  term={"coerce"}><b>coerce</b></DictionaryLink>, <DictionaryLink  term={"string"}><b>string</b></DictionaryLink> (<GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>). 
 
 
 
@@ -73,7 +73,7 @@ In the case where a conversion is defined neither by this specification nor by t
 
 
 
-<DictionaryLink  term={"coerce"}><b>coerce</b></DictionaryLink> can be used to convert a *sequence* of <ClLinks  term={"character"}><i>characters</i></ClLinks> to a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+<DictionaryLink  term={"coerce"}><b>coerce</b></DictionaryLink> can be used to convert a *sequence* of <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> to a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. 
 
 
 
@@ -89,7 +89,7 @@ In the case where a conversion is defined neither by this specification nor by t
 
 
 
-<DictionaryLink  term={"prin1-to-string"}><b>prin1-to-string</b></DictionaryLink>, <DictionaryLink  term={"princ-to-string"}><b>princ-to-string</b></DictionaryLink>, <DictionaryLink  term={"write-to-string"}><b>write-to-string</b></DictionaryLink>, or <DictionaryLink  term={"format"}><b>format</b></DictionaryLink> (with a first argument of <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>) can be used to get a <ClLinks  term={"string"}><i>string</i></ClLinks> representation of a <ClLinks  term={"number"}><i>number</i></ClLinks> or any other <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<DictionaryLink  term={"prin1-to-string"}><b>prin1-to-string</b></DictionaryLink>, <DictionaryLink  term={"princ-to-string"}><b>princ-to-string</b></DictionaryLink>, <DictionaryLink  term={"write-to-string"}><b>write-to-string</b></DictionaryLink>, or <DictionaryLink  term={"format"}><b>format</b></DictionaryLink> (with a first argument of <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>) can be used to get a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> representation of a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> or any other <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -101,27 +101,27 @@ In the case where a conversion is defined neither by this specification nor by t
 
 
 
-**string-upcase** <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;key *start end → cased-string* 
+**string-upcase** <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> &amp;key *start end → cased-string* 
 
 
 
-**string-downcase** <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;key *start end → cased-string* 
+**string-downcase** <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> &amp;key *start end → cased-string* 
 
 
 
-**string-capitalize** <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;key *start end → cased-string* 
+**string-capitalize** <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> &amp;key *start end → cased-string* 
 
 
 
-**nstring-upcase** <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;key *start end → string* 
+**nstring-upcase** <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> &amp;key *start end → string* 
 
 
 
-**nstring-downcase** <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;key *start end → string* 
+**nstring-downcase** <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> &amp;key *start end → string* 
 
 
 
-**nstring-capitalize** <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;key *start end → string* 
+**nstring-capitalize** <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> &amp;key *start end → string* 
 
 
 
@@ -129,15 +129,15 @@ In the case where a conversion is defined neither by this specification nor by t
 
 
 
-<ClLinks  term={"string"}><i>string</i></ClLinks>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . For **nstring-upcase**, **nstring-downcase**, and **nstring-capitalize**, the <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> must be a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+<GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . For **nstring-upcase**, **nstring-downcase**, and **nstring-capitalize**, the <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> must be a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. 
 
 
 
-*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. The defaults for *start* and *end* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
-*cased-string*—a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+*cased-string*—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. 
 
 
 
@@ -153,7 +153,7 @@ In the case where a conversion is defined neither by this specification nor by t
 
 
 
-**string-upcase** returns a <ClLinks  term={"string"}><i>string</i></ClLinks> just like <ClLinks  term={"string"}><i>string</i></ClLinks> with all lowercase characters replaced by the corresponding uppercase characters. More precisely, each character of the result <ClLinks  term={"string"}><i>string</i></ClLinks> is produced by applying the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"char-upcase"}><b>char-upcase</b></DictionaryLink> to the corresponding character of <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+**string-upcase** returns a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> just like <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> with all lowercase characters replaced by the corresponding uppercase characters. More precisely, each character of the result <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> is produced by applying the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"char-upcase"}><b>char-upcase</b></DictionaryLink> to the corresponding character of <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. 
 
 
 
@@ -185,7 +185,7 @@ In the case where a conversion is defined neither by this specification nor by t
 
 
 
-**string-capitalize** produces a copy of <ClLinks  term={"string"}><i>string</i></ClLinks> such that, for every word in the copy, the first <ClLinks  term={"character"}><i>character</i></ClLinks> of the “word,” if it has <ClLinks  term={"case"}><i>case</i></ClLinks>, is <ClLinks  term={"uppercase"}><i>uppercase</i></ClLinks> and any other <ClLinks  term={"character"}><i>characters</i></ClLinks> with <ClLinks  term={"case"}><i>case</i></ClLinks> in the word are <ClLinks  term={"lowercase"}><i>lowercase</i></ClLinks>. For the purposes of **string-capitalize**, a “word” is defined to be a consecutive subsequence consisting of *alphanumeric characters*, delimited at each end either by a non-*alphanumeric character* or by an end of the <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+**string-capitalize** produces a copy of <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> such that, for every word in the copy, the first <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> of the “word,” if it has <GlossaryTerm  term={"case"}><i>case</i></GlossaryTerm>, is <GlossaryTerm  term={"uppercase"}><i>uppercase</i></GlossaryTerm> and any other <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> with <GlossaryTerm  term={"case"}><i>case</i></GlossaryTerm> in the word are <GlossaryTerm  term={"lowercase"}><i>lowercase</i></GlossaryTerm>. For the purposes of **string-capitalize**, a “word” is defined to be a consecutive subsequence consisting of *alphanumeric characters*, delimited at each end either by a non-*alphanumeric character* or by an end of the <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. 
 
 
 
@@ -193,11 +193,11 @@ In the case where a conversion is defined neither by this specification nor by t
 
 
 
-**nstring-upcase**, **nstring-downcase**, and **nstring-capitalize** are identical to **string-upcase**, **string-downcase**, and **string-capitalize** respectively except that they modify <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+**nstring-upcase**, **nstring-downcase**, and **nstring-capitalize** are identical to **string-upcase**, **string-downcase**, and **string-capitalize** respectively except that they modify <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. 
 
 
 
-For **string-upcase**, **string-downcase**, and **string-capitalize**, <ClLinks  term={"string"}><i>string</i></ClLinks> is not modified. However, if no characters in <ClLinks  term={"string"}><i>string</i></ClLinks> require conversion, the result may be either <ClLinks  term={"string"}><i>string</i></ClLinks> or a copy of it, at the implementation’s discretion. 
+For **string-upcase**, **string-downcase**, and **string-capitalize**, <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> is not modified. However, if no characters in <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> require conversion, the result may be either <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> or a copy of it, at the implementation’s discretion. 
 
 
 
@@ -224,7 +224,7 @@ str → "0123AbcD890a"
 
 
 
-**nstring-upcase**, **nstring-downcase**, and **nstring-capitalize** modify <ClLinks  term={"string"}><i>string</i></ClLinks> as appropriate rather than constructing a new <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+**nstring-upcase**, **nstring-downcase**, and **nstring-capitalize** modify <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> as appropriate rather than constructing a new <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. 
 
 
 
@@ -252,7 +252,7 @@ str → "0123AbcD890a"
 
 
 
-The result is always of the same length as <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+The result is always of the same length as <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. 
 
 
 

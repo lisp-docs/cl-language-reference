@@ -34,19 +34,19 @@
 
 
 
-*method-qualifiers*—a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
+*method-qualifiers*—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
-*specializers*—a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
+*specializers*—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
-*errorp*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+*errorp*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"method"}><i>method</i></ClLinks>—a *method object*, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+<GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm>—a *method object*, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -54,19 +54,15 @@
 
 
 
-The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <DictionaryLink  term={"find-method"}><b>find-method</b></DictionaryLink> takes a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> and returns the *method object* that agrees on <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> and <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> with the *method-qualifiers* and *specializers* arguments of <DictionaryLink  term={"find-method"}><b>find-method</b></DictionaryLink>. *Method-qualifiers* contains the method <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> for the <ClLinks  term={"method"}><i>method</i></ClLinks>. The order of the method <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> is significant. For a definition of agreement in this context, see Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers). 
+The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <DictionaryLink  term={"find-method"}><b>find-method</b></DictionaryLink> takes a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> and returns the *method object* that agrees on <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> with the *method-qualifiers* and *specializers* arguments of <DictionaryLink  term={"find-method"}><b>find-method</b></DictionaryLink>. *Method-qualifiers* contains the method <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm> for the <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm>. The order of the method <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm> is significant. For a definition of agreement in this context, see Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers). 
 
 
 
-The *specializers* argument contains the parameter specializers for the <ClLinks  term={"method"}><i>method</i></ClLinks>. It must correspond in length to the number of required arguments of the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>, or an error is signaled. This means that to obtain the default <ClLinks  term={"method"}><i>method</i></ClLinks> on a given *generic-function*, a <ClLinks  term={"list"}><i>list</i></ClLinks> whose elements are the <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> must be given. 
-
-
+The *specializers* argument contains the parameter specializers for the <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm>. It must correspond in length to the number of required arguments of the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>, or an error is signaled. This means that to obtain the default <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> on a given *generic-function*, a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> whose elements are the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> must be given. 
 
 
 
 
-
- 
 
 
 
@@ -74,7 +70,11 @@ The *specializers* argument contains the parameter specializers for the <ClLinks
 
 
 
-If there is no such <ClLinks  term={"method"}><i>method</i></ClLinks> and *errorp* is <ClLinks  term={"true"}><i>true</i></ClLinks>, <DictionaryLink  term={"find-method"}><b>find-method</b></DictionaryLink> signals an error. If there is no such <ClLinks  term={"method"}><i>method</i></ClLinks> and *errorp* is <ClLinks  term={"false"}><i>false</i></ClLinks>, <DictionaryLink  term={"find-method"}><b>find-method</b></DictionaryLink> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+ 
+
+
+
+If there is no such <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> and *errorp* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, <DictionaryLink  term={"find-method"}><b>find-method</b></DictionaryLink> signals an error. If there is no such <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> and *errorp* is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>, <DictionaryLink  term={"find-method"}><b>find-method</b></DictionaryLink> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -100,11 +100,11 @@ If there is no such <ClLinks  term={"method"}><i>method</i></ClLinks> and *error
 
 
 
-If the *specializers* argument does not correspond in length to the number of required arguments of the *generic-function*, an an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
+If the *specializers* argument does not correspond in length to the number of required arguments of the *generic-function*, an an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
-If there is no such <ClLinks  term={"method"}><i>method</i></ClLinks> and *errorp* is <ClLinks  term={"true"}><i>true</i></ClLinks>, <DictionaryLink  term={"find-method"}><b>find-method</b></DictionaryLink> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink>. 
+If there is no such <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> and *errorp* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, <DictionaryLink  term={"find-method"}><b>find-method</b></DictionaryLink> signals an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink>. 
 
 
 

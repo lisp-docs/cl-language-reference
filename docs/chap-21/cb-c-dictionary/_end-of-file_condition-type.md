@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> consists of error conditions related to read operations that are done on <ClLinks  term={"stream"}><i>streams</i></ClLinks> that have no more data. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> consists of error conditions related to read operations that are done on <GlossaryTerm  term={"stream"}><i>streams</i></GlossaryTerm> that have no more data. 
 
 
 

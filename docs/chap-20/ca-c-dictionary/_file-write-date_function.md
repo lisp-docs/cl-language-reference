@@ -1,4 +1,4 @@
-**file-write-date** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**file-write-date** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm> representing the time at which the <ClLinks  term={"file"}><i>file</i></ClLinks> specified by *pathspec* was last written (or created), or returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if such a time cannot be determined. 
+Returns a <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm> representing the time at which the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> specified by *pathspec* was last written (or created), or returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if such a time cannot be determined. 
 
 
 
@@ -57,11 +57,11 @@ The host computer’s file system.
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if *pathspec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if *pathspec* is <GlossaryTerm  term={"wild"}><i>wild</i></GlossaryTerm>. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> cannot perform the requested operation. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> cannot perform the requested operation. 
 
 
 

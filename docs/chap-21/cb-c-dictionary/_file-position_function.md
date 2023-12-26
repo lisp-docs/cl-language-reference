@@ -1,4 +1,4 @@
-**file-position** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**file-position** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>—a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
@@ -38,15 +38,15 @@
 
 
 
-Returns or changes the current position within a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Returns or changes the current position within a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
-When *position-spec* is not supplied, <DictionaryLink  term={"file-position"}><b>file-position</b></DictionaryLink> returns the current <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> in the <ClLinks  term={"stream"}><i>stream</i></ClLinks>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if this cannot be determined. 
+When *position-spec* is not supplied, <DictionaryLink  term={"file-position"}><b>file-position</b></DictionaryLink> returns the current <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> in the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if this cannot be determined. 
 
 
 
-When *position-spec* is supplied, the <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> in <ClLinks  term={"stream"}><i>stream</i></ClLinks> is set to that <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> (if possible). <DictionaryLink  term={"file-position"}><b>file-position</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the repositioning is performed successfully, or <ClLinks  term={"false"}><i>false</i></ClLinks> if it is not. 
+When *position-spec* is supplied, the <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> in <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is set to that <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> (if possible). <DictionaryLink  term={"file-position"}><b>file-position</b></DictionaryLink> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if the repositioning is performed successfully, or <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> if it is not. 
 
 
 
@@ -116,7 +116,7 @@ sequence) and other aspects of the implementation. For a binary file, every <Dic
 
 
 
-When the *position-spec* argument is supplied, the <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> in the <ClLinks  term={"stream"}><i>stream</i></ClLinks> might be moved. 
+When the *position-spec* argument is supplied, the <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> in the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> might be moved. 
 
 
 

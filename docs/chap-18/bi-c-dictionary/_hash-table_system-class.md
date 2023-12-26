@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"hash table"}><i>Hash tables</i></GlossaryTerm> provide a way of mapping any <ClLinks  term={"object"}><i>object</i></ClLinks> (a <ClLinks  term={"key"}><i>key</i></ClLinks>) to an associated <ClLinks  term={"object"}><i>object</i></ClLinks> (a <ClLinks  term={"value"}><i>value</i></ClLinks>). 
+<GlossaryTerm styled={true} term={"hash table"}><i>Hash tables</i></GlossaryTerm> provide a way of mapping any <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> (a <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm>) to an associated <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> (a <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>). 
 
 
 

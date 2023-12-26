@@ -1,4 +1,4 @@
-**read-byte** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**read-byte** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"read-byte"}><b>read-byte</b></DictionaryLink> <ClLinks  term={"stream"}><i>stream</i></ClLinks> &amp;optional *eof-error-p eof-value → byte* 
+<DictionaryLink  term={"read-byte"}><b>read-byte</b></DictionaryLink> <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> &amp;optional *eof-error-p eof-value → byte* 
 
 
 
@@ -14,19 +14,19 @@
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a *binary input stream*. 
+<GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>—a *binary input stream*. 
 
 
 
-*eof-error-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+*eof-error-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. 
 
 
 
-*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+*eof-value*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"byte"}><i>byte</i></ClLinks>—an *integer* , or the *eof-value*. 
+<GlossaryTerm  term={"byte"}><i>byte</i></GlossaryTerm>—an *integer* , or the *eof-value*. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<DictionaryLink  term={"read-byte"}><b>read-byte</b></DictionaryLink> reads and returns one byte from <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<DictionaryLink  term={"read-byte"}><b>read-byte</b></DictionaryLink> reads and returns one byte from <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
-If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>2</sub> occurs and *eof-error-p* is <ClLinks  term={"false"}><i>false</i></ClLinks>, the *eof-value* is returned. 
+If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>2</sub> occurs and *eof-error-p* is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>, the *eof-value* is returned. 
 
 
 
@@ -57,7 +57,7 @@ If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></Gloss
 
 
 
-Modifies <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Modifies <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
@@ -65,15 +65,15 @@ Modifies <ClLinks  term={"stream"}><i>stream</i></ClLinks>.
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is not a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a *binary input stream*. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> if <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is not a *binary input stream*. 
 
 
 
-If there are no <ClLinks  term={"byte"}><i>bytes</i></ClLinks> remaining in the <ClLinks  term={"stream"}><i>stream</i></ClLinks> and *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled. 
+If there are no <GlossaryTerm  term={"byte"}><i>bytes</i></GlossaryTerm> remaining in the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> and *eof-error-p* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled. 
 
 
 

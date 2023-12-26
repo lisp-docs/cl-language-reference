@@ -1,4 +1,4 @@
-**hash-table-rehash-threshold** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**hash-table-rehash-threshold** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*rehash-threshold*—a *real* of <ClLinks  term={"type"}><i>type</i></ClLinks> (real 0 1). 
+*rehash-threshold*—a *real* of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> (real 0 1). 
 
 
 
@@ -40,7 +40,7 @@ Returns the current rehash threshold of *hash-table*, which is suitable for use 
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *hash-table* is not a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *hash-table* is not a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
 
 
 

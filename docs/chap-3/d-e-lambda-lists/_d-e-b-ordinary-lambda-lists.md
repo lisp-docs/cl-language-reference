@@ -2,7 +2,7 @@
 
 
 
-An <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm> is used to describe how a set of <ClLinks  term={"argument"}><i>arguments</i></ClLinks> is received by an <GlossaryTerm styled={true} term={"ordinary function"}><i>ordinary function</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> in Figure 3–12 are those which use <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda lists</i></GlossaryTerm>:  
+An <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm> is used to describe how a set of <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> is received by an <GlossaryTerm styled={true} term={"ordinary function"}><i>ordinary function</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> in Figure 3–12 are those which use <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda lists</i></GlossaryTerm>:  
 
 
 
@@ -38,7 +38,7 @@ An <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda 
 
 
 
-Each <ClLinks  term={"element"}><i>element</i></ClLinks> of a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> is either a parameter specifier or a <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keyword</i></GlossaryTerm>. Implementations are free to provide additional <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm>. For a list of all <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm> used by the implementation, see <DictionaryLink  term={"lambda-list-keywords"}><b>lambda-list-keywords</b></DictionaryLink>. 
+Each <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> is either a parameter specifier or a <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keyword</i></GlossaryTerm>. Implementations are free to provide additional <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm>. For a list of all <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm> used by the implementation, see <DictionaryLink  term={"lambda-list-keywords"}><b>lambda-list-keywords</b></DictionaryLink>. 
 
 
 
@@ -70,15 +70,15 @@ The syntax for <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordi
 
 
 
-A *var* or *supplied-p-parameter* must be a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is not the name of a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. 
+A *var* or *supplied-p-parameter* must be a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> that is not the name of a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. 
 
 
 
-An *init-form* can be any <ClLinks  term={"form"}><i>form</i></ClLinks>. Whenever any *init-form* is evaluated for any parameter specifier, that <ClLinks  term={"form"}><i>form</i></ClLinks> may refer to any parameter variable to the left of the specifier in which the *init-form* appears, including any *supplied-p-parameter* variables, and may rely on the fact that no other parameter variable has yet been bound (including its own parameter variable). 
+An *init-form* can be any <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. Whenever any *init-form* is evaluated for any parameter specifier, that <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> may refer to any parameter variable to the left of the specifier in which the *init-form* appears, including any *supplied-p-parameter* variables, and may rely on the fact that no other parameter variable has yet been bound (including its own parameter variable). 
 
 
 
-A *keyword-name* can be any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, but by convention is normally a <ClLinks  term={"keyword"}><i>keyword</i></ClLinks> <sub>1</sub>; all *standardized functions* follow that convention. 
+A *keyword-name* can be any <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, but by convention is normally a <GlossaryTerm  term={"keyword"}><i>keyword</i></GlossaryTerm> <sub>1</sub>; all *standardized functions* follow that convention. 
 
 
 

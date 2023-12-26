@@ -1,4 +1,4 @@
-**unuse-package** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**unuse-package** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*packages-to-unuse*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"package designator"}><i>package designators</i></GlossaryTerm>. 
+*packages-to-unuse*—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"package designator"}><i>package designators</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<DictionaryLink  term={"unuse-package"}><b>unuse-package</b></DictionaryLink> causes <ClLinks  term={"package"}><i>package</i></ClLinks> to cease inheriting all the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of *packages-to-unuse*; <DictionaryLink  term={"unuse-package"}><b>unuse-package</b></DictionaryLink> undoes the effects of <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>. The *packages-to-unuse* are removed from the <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<DictionaryLink  term={"unuse-package"}><b>unuse-package</b></DictionaryLink> causes <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> to cease inheriting all the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of *packages-to-unuse*; <DictionaryLink  term={"unuse-package"}><b>unuse-package</b></DictionaryLink> undoes the effects of <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>. The *packages-to-unuse* are removed from the <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm> of <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
-Any <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that have been *imported* into <ClLinks  term={"package"}><i>package</i></ClLinks> continue to be <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+Any <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> that have been *imported* into <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> continue to be <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 **Examples:**
 ```lisp
@@ -46,7 +46,7 @@ Any <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that have been *imported*
 
 
 
-The <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks> is modified. 
+The <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm> of <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> is modified. 
 
 
 

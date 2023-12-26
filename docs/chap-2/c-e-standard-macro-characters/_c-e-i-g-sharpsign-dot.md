@@ -6,11 +6,11 @@
 
 
 
-The normal effect of #. is inhibited when the <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*read-eval\*** is <ClLinks  term={"false"}><i>false</i></ClLinks>. In that situation, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"reader-error"}><b>reader-error</b></DictionaryLink> is signaled. 
+The normal effect of #. is inhibited when the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of **\*read-eval\*** is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. In that situation, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"reader-error"}><b>reader-error</b></DictionaryLink> is signaled. 
 
 
 
-For an <ClLinks  term={"object"}><i>object</i></ClLinks> that does not have a convenient printed representation, a <ClLinks  term={"form"}><i>form</i></ClLinks> that computes the <ClLinks  term={"object"}><i>object</i></ClLinks> can be given using the #. notation. 
+For an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> that does not have a convenient printed representation, a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> that computes the <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> can be given using the #. notation. 
 
 
 

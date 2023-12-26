@@ -2,7 +2,7 @@
 
 
 
-The first step modifies the structure of <ClLinks  term={"instance"}><i>instances</i></ClLinks> of the redefined <ClLinks  term={"class"}><i>class</i></ClLinks> to conform to its new <ClLinks  term={"class"}><i>class</i></ClLinks> definition. <GlossaryTerm styled={true} term={"local slot"}><i>Local slots</i></GlossaryTerm> specified by the new <ClLinks  term={"class"}><i>class</i></ClLinks> definition that are not specified as either local or shared by the old <ClLinks  term={"class"}><i>class</i></ClLinks> are added, and <ClLinks  term={"slot"}><i>slots</i></ClLinks> not specified as either local or shared by the new <ClLinks  term={"class"}><i>class</i></ClLinks> definition that are specified as local by the old <ClLinks  term={"class"}><i>class</i></ClLinks> are discarded. The <ClLinks  term={"name"}><i>names</i></ClLinks> of these added and discarded <ClLinks  term={"slot"}><i>slots</i></ClLinks> are passed as arguments to **update-instance-for-redefined-class** as described in 
+The first step modifies the structure of <GlossaryTerm  term={"instance"}><i>instances</i></GlossaryTerm> of the redefined <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> to conform to its new <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> definition. <GlossaryTerm styled={true} term={"local slot"}><i>Local slots</i></GlossaryTerm> specified by the new <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> definition that are not specified as either local or shared by the old <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> are added, and <GlossaryTerm  term={"slot"}><i>slots</i></GlossaryTerm> not specified as either local or shared by the new <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> definition that are specified as local by the old <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> are discarded. The <GlossaryTerm  term={"name"}><i>names</i></GlossaryTerm> of these added and discarded <GlossaryTerm  term={"slot"}><i>slots</i></GlossaryTerm> are passed as arguments to **update-instance-for-redefined-class** as described in 
 
 
 
@@ -14,7 +14,7 @@ The values of <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i>
 
 
 
-The value of a <ClLinks  term={"slot"}><i>slot</i></ClLinks> that is specified as shared in the old <ClLinks  term={"class"}><i>class</i></ClLinks> and as local in the new <ClLinks  term={"class"}><i>class</i></ClLinks> is retained. If such a <GlossaryTerm styled={true} term={"shared slot"}><i>shared slot</i></GlossaryTerm> was unbound, the <GlossaryTerm styled={true} term={"local slot"}><i>local slot</i></GlossaryTerm> is unbound.  
+The value of a <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm> that is specified as shared in the old <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> and as local in the new <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> is retained. If such a <GlossaryTerm styled={true} term={"shared slot"}><i>shared slot</i></GlossaryTerm> was unbound, the <GlossaryTerm styled={true} term={"local slot"}><i>local slot</i></GlossaryTerm> is unbound.  
 
 
 

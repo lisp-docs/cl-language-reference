@@ -1,4 +1,4 @@
-**typecase, ctypecase, etypecase** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**typecase, ctypecase, etypecase** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -50,11 +50,11 @@
 
 
 
-*keyform*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated to produce a *test-key*. 
+*keyform*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated to produce a *test-key*. 
 
 
 
-*keyplace*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated initially to produce a *test-key*. Possibly also used later as a <ClLinks  term={"place"}><i>place</i></ClLinks> if no <ClLinks  term={"type"}><i>types</i></ClLinks> match. 
+*keyplace*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated initially to produce a *test-key*. Possibly also used later as a <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> if no <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> match. 
 
 
 
@@ -62,15 +62,15 @@
 
 
 
-<ClLinks  term={"type"}><i>type</i></ClLinks>—a *type specifier* . 
+<GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>—a *type specifier* . 
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>—an *implicit progn*. 
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks> in the matching *clause*. 
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in the matching *clause*. 
 
 
 
@@ -78,7 +78,7 @@
 
 
 
-These <ClLinks  term={"macro"}><i>macros</i></ClLinks> allow the conditional execution of a body of <ClLinks  term={"form"}><i>forms</i></ClLinks> in a *clause* that is selected by matching the *test-key* on the basis of its <ClLinks  term={"type"}><i>type</i></ClLinks>. 
+These <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm> allow the conditional execution of a body of <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in a *clause* that is selected by matching the *test-key* on the basis of its <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>. 
 
 
 
@@ -86,11 +86,11 @@ The *keyform* or *keyplace* is *evaluated* to produce the *test-key*.
 
 
 
-Each of the *normal-clauses* is then considered in turn. If the *test-key* is of the <ClLinks  term={"type"}><i>type</i></ClLinks> given by the *clauses*’s <ClLinks  term={"type"}><i>type</i></ClLinks>, the <ClLinks  term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks  term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <DictionaryLink  term={"typecase"}><b>typecase</b></DictionaryLink>, <DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink>, or <DictionaryLink  term={"etypecase"}><b>etypecase</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+Each of the *normal-clauses* is then considered in turn. If the *test-key* is of the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> given by the *clauses*’s <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>, the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in that *clause* are *evaluated* as an *implicit progn*, and the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> it returns are returned as the value of the <DictionaryLink  term={"typecase"}><b>typecase</b></DictionaryLink>, <DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink>, or <DictionaryLink  term={"etypecase"}><b>etypecase</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-These <ClLinks  term={"macro"}><i>macros</i></ClLinks> differ only in their *behavior* when no *normal-clause* matches; specifically: 
+These <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm> differ only in their *behavior* when no *normal-clause* matches; specifically: 
 
 
 
@@ -98,7 +98,7 @@ These <ClLinks  term={"macro"}><i>macros</i></ClLinks> differ only in their *beh
 
 
 
-If no *normal-clause* matches, and there is an *otherwise-clause*, then that *otherwise-clause* automatically matches; the <ClLinks  term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks  term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <DictionaryLink  term={"typecase"}><b>typecase</b></DictionaryLink>. 
+If no *normal-clause* matches, and there is an *otherwise-clause*, then that *otherwise-clause* automatically matches; the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in that *clause* are *evaluated* as an *implicit progn*, and the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> it returns are returned as the value of the <DictionaryLink  term={"typecase"}><b>typecase</b></DictionaryLink>. 
 
 
 
@@ -110,11 +110,11 @@ If there is no *otherwise-clause*, <DictionaryLink  term={"typecase"}><b>typecas
 
 
 
-If no *normal-clause* matches, a *correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (or *type1 type2* ...). The **store-value** <ClLinks  term={"restart"}><i>restart</i></ClLinks> can be used to correct the error. 
+If no *normal-clause* matches, a *correctable error* of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (or *type1 type2* ...). The **store-value** <GlossaryTerm  term={"restart"}><i>restart</i></GlossaryTerm> can be used to correct the error. 
 
 
 
-If the **store-value** <ClLinks  term={"restart"}><i>restart</i></ClLinks> is invoked, its <ClLinks  term={"argument"}><i>argument</i></ClLinks> becomes the new *test-key*, and is stored Data and Control 
+If the **store-value** <GlossaryTerm  term={"restart"}><i>restart</i></GlossaryTerm> is invoked, its <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> becomes the new *test-key*, and is stored Data and Control 
 
 
 
@@ -134,7 +134,7 @@ in *keyplace* as if by (setf *keyplace test-key*). Then <DictionaryLink  term={"
 
 
 
-If the **store-value** <ClLinks  term={"restart"}><i>restart</i></ClLinks> is invoked interactively, the user is prompted for a new *test-key* to use. 
+If the **store-value** <GlossaryTerm  term={"restart"}><i>restart</i></GlossaryTerm> is invoked interactively, the user is prompted for a new *test-key* to use. 
 
 
 
@@ -146,7 +146,7 @@ The subforms of *keyplace* might be evaluated again if none of the cases holds.
 
 
 
-If no *normal-clause* matches, a *non-correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. The offending datum is the *test-key* and the expected type is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to (or *type1 type2* ...). 
+If no *normal-clause* matches, a *non-correctable error* of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. The offending datum is the *test-key* and the expected type is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to (or *type1 type2* ...). 
 
 
 
@@ -154,7 +154,7 @@ Note that in contrast with <DictionaryLink  term={"ctypecase"}><b>ctypecase</b><
 
 
 
-In all three cases, is permissible for more than one *clause* to specify a matching <ClLinks  term={"type"}><i>type</i></ClLinks>, particularly if one is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of another; the earliest applicable *clause* is chosen. 
+In all three cases, is permissible for more than one *clause* to specify a matching <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>, particularly if one is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of another; the earliest applicable *clause* is chosen. 
 
 
 
@@ -202,7 +202,7 @@ x *!* 12
 
 
 
-<DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink> and <DictionaryLink  term={"etypecase"}><b>etypecase</b></DictionaryLink>, since they might signal an error, are potentially a↵ected by existing <ClLinks  term={"handler"}><i>handlers</i></ClLinks> and **\*debug-io\***. 
+<DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink> and <DictionaryLink  term={"etypecase"}><b>etypecase</b></DictionaryLink>, since they might signal an error, are potentially a↵ected by existing <GlossaryTerm  term={"handler"}><i>handlers</i></GlossaryTerm> and **\*debug-io\***. 
 
 
 
@@ -210,11 +210,11 @@ x *!* 12
 
 
 
-<DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink> and <DictionaryLink  term={"etypecase"}><b>etypecase</b></DictionaryLink> signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if no *normal-clause* matches. 
+<DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink> and <DictionaryLink  term={"etypecase"}><b>etypecase</b></DictionaryLink> signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if no *normal-clause* matches. 
 
 
 
-The <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> may choose to issue a warning of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"style-warning"}><b>style-warning</b></DictionaryLink> if a *clause* will never be selected because it is completely shadowed by earlier clauses. 
+The <GlossaryTerm  term={"compiler"}><i>compiler</i></GlossaryTerm> may choose to issue a warning of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"style-warning"}><b>style-warning</b></DictionaryLink> if a *clause* will never be selected because it is completely shadowed by earlier clauses. 
 
 
 
@@ -246,7 +246,7 @@ The <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> may choose to issue a 
 
 
 
-(cond *\{*((typep #1# ’<ClLinks  term={"type"}><i>type</i></ClLinks>) <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\*)*\}*\*)) 
+(cond *\{*((typep #1# ’<GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>) <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\*)*\}*\*)) 
 
 
 

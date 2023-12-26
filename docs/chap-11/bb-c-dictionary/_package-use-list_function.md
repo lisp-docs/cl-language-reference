@@ -1,4 +1,4 @@
-**package-use-list** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**package-use-list** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 
-*use-list*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *package objects*. 
+*use-list*—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of *package objects*. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of other <ClLinks  term={"package"}><i>packages</i></ClLinks> used by <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+Returns a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of other <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> used by <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
@@ -52,7 +52,7 @@ Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of other <ClLinks  term=
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 

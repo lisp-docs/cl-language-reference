@@ -1,4 +1,4 @@
-**make-sequence** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**make-sequence** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*initial-element*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+*initial-element*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. The default is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
@@ -34,15 +34,15 @@
 
 
 
-Returns a *sequence* of the type *result-type* and of length *size*, each of the <ClLinks  term={"element"}><i>elements</i></ClLinks> of which has been initialized to *initial-element*. 
+Returns a *sequence* of the type *result-type* and of length *size*, each of the <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of which has been initialized to *initial-element*. 
 
 
 
-If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>, the result will be a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
+If the *result-type* is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>, the result will be a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
-If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>, then if the implementation can determine the element type specified for the *result-type*, the element type of the resulting array is the result of *upgrading* that element type; or, if the implementation can determine that the element type is unspecified (or \*), the element type of the resulting array is <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>; otherwise, an error is signaled. 
+If the *result-type* is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>, then if the implementation can determine the element type specified for the *result-type*, the element type of the resulting array is the result of *upgrading* that element type; or, if the implementation can determine that the element type is unspecified (or \*), the element type of the resulting array is <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>; otherwise, an error is signaled. 
 
 
 
@@ -61,7 +61,7 @@ If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of
 
 
 
-The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+The <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 
@@ -69,7 +69,7 @@ The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>.
 
 
 
-The consequences are unspecified if *initial-element* is not an <ClLinks  term={"object"}><i>object</i></ClLinks> which can be stored in the resulting *sequence*. 
+The consequences are unspecified if *initial-element* is not an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> which can be stored in the resulting *sequence*. 
 
 
 
@@ -85,11 +85,11 @@ The consequences are unspecified if *initial-element* is not an <ClLinks  term={
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> must be signaled if the *result-type* is neither a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>, nor a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> must be signaled if the *result-type* is neither a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>, nor a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> should be signaled if *result-type* specifies the number of elements and *size* is different from that number. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> should be signaled if *result-type* specifies the number of elements and *size* is different from that number. 
 
 
 

@@ -18,7 +18,7 @@ An <i>array</i> contains <i>objects</i> arranged according to a Cartesian coordi
 
 
 
-When an <ClLinks  term={"array"}><i>array</i></ClLinks> is created, the program requesting its creation may declare that all <ClLinks  term={"element"}><i>elements</i></ClLinks> are of a particular <ClLinks  term={"type"}><i>type</i></ClLinks>, called the <GlossaryTerm styled={true} term={"expressed array element type"}><i>expressed array element type</i></GlossaryTerm>. The implementation is permitted to <ClLinks  term={"upgrade"}><i>upgrade</i></ClLinks> this type in order to produce the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm>, which is the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> for the <ClLinks  term={"array"}><i>array</i></ClLinks> is actually <ClLinks  term={"specialized"}><i>specialized</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></DictionaryLink>. 
+When an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> is created, the program requesting its creation may declare that all <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> are of a particular <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>, called the <GlossaryTerm styled={true} term={"expressed array element type"}><i>expressed array element type</i></GlossaryTerm>. The implementation is permitted to <GlossaryTerm  term={"upgrade"}><i>upgrade</i></GlossaryTerm> this type in order to produce the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm>, which is the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> for the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> is actually <GlossaryTerm  term={"specialized"}><i>specialized</i></GlossaryTerm>. See the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></DictionaryLink>. 
 
 
 
@@ -46,7 +46,7 @@ Specializing.
 
 
 
-<ClLinks  term={"dimension"}><i>dimension</i></ClLinks>—a <GlossaryTerm styled={true} term={"valid array dimension"}><i>valid array dimension</i></GlossaryTerm>. 
+<GlossaryTerm  term={"dimension"}><i>dimension</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"valid array dimension"}><i>valid array dimension</i></GlossaryTerm>. 
 
 
 
@@ -54,7 +54,7 @@ Specializing.
 
 
 
-<ClLinks  term={"rank"}><i>rank</i></ClLinks>—a non-negative <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>. 
+<GlossaryTerm  term={"rank"}><i>rank</i></GlossaryTerm>—a non-negative <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm>. 
 
 
 
@@ -62,15 +62,15 @@ Specializing.
 
 
 
-This denotes the set of <ClLinks  term={"array"}><i>arrays</i></ClLinks> whose <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"rank"}><i>rank</i></GlossaryTerm>, and <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> match any given *element-type*, <ClLinks  term={"rank"}><i>rank</i></ClLinks>, and <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>. Specifically: 
+This denotes the set of <GlossaryTerm  term={"array"}><i>arrays</i></GlossaryTerm> whose <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"rank"}><i>rank</i></GlossaryTerm>, and <GlossaryTerm  term={"dimension"}><i>dimensions</i></GlossaryTerm> match any given *element-type*, <GlossaryTerm  term={"rank"}><i>rank</i></GlossaryTerm>, and <GlossaryTerm  term={"dimension"}><i>dimensions</i></GlossaryTerm>. Specifically: 
 
 
 
-If *element-type* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***, <ClLinks  term={"array"}><i>arrays</i></ClLinks> are not excluded on the basis of their <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm>. Otherwise, only those <ClLinks  term={"array"}><i>arrays</i></ClLinks> are included whose <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> is the result of *upgrading element-type*; see Section 15.1.2.1 (Array Upgrading). 
+If *element-type* is the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> **\***, <GlossaryTerm  term={"array"}><i>arrays</i></GlossaryTerm> are not excluded on the basis of their <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm>. Otherwise, only those <GlossaryTerm  term={"array"}><i>arrays</i></GlossaryTerm> are included whose <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> is the result of *upgrading element-type*; see Section 15.1.2.1 (Array Upgrading). 
 
 
 
-If the *dimension-spec* is a <ClLinks  term={"rank"}><i>rank</i></ClLinks>, the set includes only those <ClLinks  term={"array"}><i>arrays</i></ClLinks> having that <ClLinks  term={"rank"}><i>rank</i></ClLinks>. If the *dimension-spec* is a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>, the set includes only those <ClLinks  term={"array"}><i>arrays</i></ClLinks> having a <ClLinks  term={"rank"}><i>rank</i></ClLinks> given by the <ClLinks  term={"length"}><i>length</i></ClLinks> of the <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>, and having the indicated <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>; in this case, **\*** matches any value for the corresponding <ClLinks  term={"dimension"}><i>dimension</i></ClLinks>. If the *dimension-spec* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***, the set is not restricted on the basis of <ClLinks  term={"rank"}><i>rank</i></ClLinks> or <ClLinks  term={"dimension"}><i>dimension</i></ClLinks>. 
+If the *dimension-spec* is a <GlossaryTerm  term={"rank"}><i>rank</i></GlossaryTerm>, the set includes only those <GlossaryTerm  term={"array"}><i>arrays</i></GlossaryTerm> having that <GlossaryTerm  term={"rank"}><i>rank</i></GlossaryTerm>. If the *dimension-spec* is a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm  term={"dimension"}><i>dimensions</i></GlossaryTerm>, the set includes only those <GlossaryTerm  term={"array"}><i>arrays</i></GlossaryTerm> having a <GlossaryTerm  term={"rank"}><i>rank</i></GlossaryTerm> given by the <GlossaryTerm  term={"length"}><i>length</i></GlossaryTerm> of the <GlossaryTerm  term={"dimension"}><i>dimensions</i></GlossaryTerm>, and having the indicated <GlossaryTerm  term={"dimension"}><i>dimensions</i></GlossaryTerm>; in this case, **\*** matches any value for the corresponding <GlossaryTerm  term={"dimension"}><i>dimension</i></GlossaryTerm>. If the *dimension-spec* is the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> **\***, the set is not restricted on the basis of <GlossaryTerm  term={"rank"}><i>rank</i></GlossaryTerm> or <GlossaryTerm  term={"dimension"}><i>dimension</i></GlossaryTerm>. 
 
 
 
@@ -98,11 +98,11 @@ If the *dimension-spec* is a <ClLinks  term={"rank"}><i>rank</i></ClLinks>, the 
 
 
 
-Note that the type (array t) is a proper <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the type (array \*). The reason is that the type (array t) is the set of <ClLinks  term={"array"}><i>arrays</i></ClLinks> that can hold any <ClLinks  term={"object"}><i>object</i></ClLinks> (the <ClLinks  term={"element"}><i>elements</i></ClLinks> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, which includes all <ClLinks  term={"object"}><i>objects</i></ClLinks>). On the other hand, the type (array \*) is the set of all <ClLinks  term={"array"}><i>arrays</i></ClLinks> whatsoever, 
+Note that the type (array t) is a proper <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of the type (array \*). The reason is that the type (array t) is the set of <GlossaryTerm  term={"array"}><i>arrays</i></GlossaryTerm> that can hold any <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> (the <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> are of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, which includes all <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm>). On the other hand, the type (array \*) is the set of all <GlossaryTerm  term={"array"}><i>arrays</i></GlossaryTerm> whatsoever, 
 
 
 
-including for example <ClLinks  term={"array"}><i>arrays</i></ClLinks> that can hold only <ClLinks  term={"character"}><i>characters</i></ClLinks>. The type (array character) is not a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the type (array t); the two sets are <ClLinks  term={"disjoint"}><i>disjoint</i></ClLinks> because the type (array character) is not the set of all <ClLinks  term={"array"}><i>arrays</i></ClLinks> that can hold <ClLinks  term={"character"}><i>characters</i></ClLinks>, but rather the set of <ClLinks  term={"array"}><i>arrays</i></ClLinks> that are specialized to hold precisely <ClLinks  term={"character"}><i>characters</i></ClLinks> and no other <ClLinks  term={"object"}><i>objects</i></ClLinks>. 
+including for example <GlossaryTerm  term={"array"}><i>arrays</i></GlossaryTerm> that can hold only <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm>. The type (array character) is not a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of the type (array t); the two sets are <GlossaryTerm  term={"disjoint"}><i>disjoint</i></GlossaryTerm> because the type (array character) is not the set of all <GlossaryTerm  term={"array"}><i>arrays</i></GlossaryTerm> that can hold <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm>, but rather the set of <GlossaryTerm  term={"array"}><i>arrays</i></GlossaryTerm> that are specialized to hold precisely <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> and no other <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm>. 
 
 
 

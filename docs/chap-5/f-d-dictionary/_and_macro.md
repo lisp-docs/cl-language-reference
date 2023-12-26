@@ -1,22 +1,22 @@
-**and** <ClLinks  term={"macro"}><i>Macro</i></ClLinks>
+**and** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm>
 
 **Syntax:**
 
-<DictionaryLink  term={"and"}><b>and</b></DictionaryLink> <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\*
+<DictionaryLink  term={"and"}><b>and</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\* → \{result\}\*
 
 **Arguments and Values:**
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>.
+<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>.
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> resulting from the evaluation of the last <ClLinks  term={"form"}><i>form</i></ClLinks>, or the symbols <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> or <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>.
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> resulting from the evaluation of the last <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, or the symbols <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> or <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>.
 
 **Description:**
 
-The macro <DictionaryLink  term={"and"}><b>and</b></DictionaryLink> evaluates each <ClLinks  term={"form"}><i>form</i></ClLinks> one at a time from left to right. As soon as any <ClLinks  term={"form"}><i>form</i></ClLinks> evaluates to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, <DictionaryLink  term={"and"}><b>and</b></DictionaryLink> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> without evaluating the remaining <ClLinks  term={"form"}><i>forms</i></ClLinks>. If all <ClLinks  term={"form"}><i>forms</i></ClLinks> but the last evaluate to <ClLinks  term={"true"}><i>true</i></ClLinks> values, <DictionaryLink  term={"and"}><b>and</b></DictionaryLink> returns the results produced by evaluating the last <ClLinks  term={"form"}><i>form</i></ClLinks>.
+The macro <DictionaryLink  term={"and"}><b>and</b></DictionaryLink> evaluates each <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> one at a time from left to right. As soon as any <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> evaluates to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, <DictionaryLink  term={"and"}><b>and</b></DictionaryLink> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> without evaluating the remaining <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. If all <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> but the last evaluate to <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> values, <DictionaryLink  term={"and"}><b>and</b></DictionaryLink> returns the results produced by evaluating the last <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>.
 
-If no <ClLinks  term={"form"}><i>forms</i></ClLinks> are supplied, (and) returns <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>.
+If no <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> are supplied, (and) returns <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>.
 
-<DictionaryLink  term={"and"}><b>and</b></DictionaryLink> passes back multiple values from the last <ClLinks  term={"subform"}><i>subform</i></ClLinks> but not from subforms other than the last.
+<DictionaryLink  term={"and"}><b>and</b></DictionaryLink> passes back multiple values from the last <GlossaryTerm  term={"subform"}><i>subform</i></GlossaryTerm> but not from subforms other than the last.
 
 **Examples:**
 

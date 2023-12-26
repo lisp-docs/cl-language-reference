@@ -14,11 +14,11 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"floating-point-inexact"}><b>floating-point-inexact</b></DictionaryLink> consists of error conditions that occur because of certain floating point traps. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"floating-point-inexact"}><b>floating-point-inexact</b></DictionaryLink> consists of error conditions that occur because of certain floating point traps. 
 
 
 
-It is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether floating point traps occur, and whether or how they may be enabled or disabled. Therefore, conforming code may establish handlers for this condition, but must not depend on its being *signaled*. 
+It is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> whether floating point traps occur, and whether or how they may be enabled or disabled. Therefore, conforming code may establish handlers for this condition, but must not depend on its being *signaled*. 
 
 
 

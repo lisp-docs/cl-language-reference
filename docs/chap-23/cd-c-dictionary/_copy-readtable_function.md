@@ -1,4 +1,4 @@
-**copy-readtable** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**copy-readtable** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-*to-readtable*—a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+*to-readtable*—a <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"readtable"}><i>readtable</i></ClLinks>—the *to-readtable* if it is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>, or else a *fresh readtable*. 
+<GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm>—the *to-readtable* if it is <GlossaryTerm  term={"non-nil"}><i>non-nil</i></GlossaryTerm>, or else a *fresh readtable*. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-If *to-readtable* is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, a new <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is created and returned. Otherwise the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> specified by *to-readtable* is modified and returned. 
+If *to-readtable* is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, a new <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm> is created and returned. Otherwise the <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm> specified by *to-readtable* is modified and returned. 
 
 
 
@@ -83,7 +83,7 @@ On the other hand,
 
 
 
-replaces the current <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> with a copy of itself. This is useful if you want to save a copy of a readtable for later use, protected from alteration in the meantime. It is also useful if you want to locally bind the readtable to a copy of itself, as in: 
+replaces the current <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm> with a copy of itself. This is useful if you want to save a copy of a readtable for later use, protected from alteration in the meantime. It is also useful if you want to locally bind the readtable to a copy of itself, as in: 
 
 
 

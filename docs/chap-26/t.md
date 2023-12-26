@@ -7,15 +7,15 @@ sidebar_position: 116
 
 
 
-<DictionaryLink  term={"t"}><b>t</b></DictionaryLink> *n.* 1. a. the <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> representing true. b. the canonical <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> 
+<DictionaryLink  term={"t"}><b>t</b></DictionaryLink> *n.* 1. a. the <GlossaryTerm  term={"boolean"}><i>boolean</i></GlossaryTerm> representing true. b. the canonical <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> 
 
 
 
-representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLinks> other than <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is considered <ClLinks  term={"true"}><i>true</i></ClLinks> as a 
+representing true. (Although any <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> other than <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is considered <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> as a 
 
 
 
-<GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>, t is generally used when there is no special reason to prefer one such <ClLinks  term={"object"}><i>object</i></ClLinks> over another.) 2. the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> to which all <ClLinks  term={"object"}><i>objects</i></ClLinks> belong—the <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of all <ClLinks  term={"type"}><i>types</i></ClLinks> (including itself). 3. the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"superclass"}><i>superclass</i></ClLinks> of all *classes* except itself. 
+<GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>, t is generally used when there is no special reason to prefer one such <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> over another.) 2. the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> to which all <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> belong—the <GlossaryTerm  term={"supertype"}><i>supertype</i></GlossaryTerm> of all <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> (including itself). 3. the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of the <GlossaryTerm  term={"superclass"}><i>superclass</i></GlossaryTerm> of all *classes* except itself. 
 
 
 
@@ -35,15 +35,15 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-**tail** *n.* (of a <ClLinks  term={"list"}><i>list</i></ClLinks>) an <ClLinks  term={"object"}><i>object</i></ClLinks> that is the <ClLinks  term={"same"}><i>same</i></ClLinks> as either some <ClLinks  term={"cons"}><i>cons</i></ClLinks> which makes up that <ClLinks  term={"list"}><i>list</i></ClLinks> or the <ClLinks  term={"atom"}><i>atom</i></ClLinks> (if any) which terminates the <ClLinks  term={"list"}><i>list</i></ClLinks>. “The empty list is a tail of every proper list.” 
+**tail** *n.* (of a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>) an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> that is the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> as either some <GlossaryTerm  term={"cons"}><i>cons</i></GlossaryTerm> which makes up that <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> or the <GlossaryTerm  term={"atom"}><i>atom</i></GlossaryTerm> (if any) which terminates the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. “The empty list is a tail of every proper list.” 
 
 
 
-**target** *n.* 1. (of a <GlossaryTerm styled={true} term={"constructed stream"}><i>constructed stream</i></GlossaryTerm>) a <ClLinks  term={"constituent"}><i>constituent</i></ClLinks> of the <GlossaryTerm styled={true} term={"constructed stream"}><i>constructed stream</i></GlossaryTerm>. “The target of a synonym stream is the value of its synonym stream symbol.” 2. (of a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>) the <ClLinks  term={"array"}><i>array</i></ClLinks> to which the <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm> is displaced. (In the case of a chain of <GlossaryTerm styled={true} term={"constructed stream"}><i>constructed streams</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"displaced array"}><i>displaced arrays</i></GlossaryTerm>, the unqualified term “<ClLinks  term={"target"}><i>target</i></ClLinks>” always refers to the immediate <ClLinks  term={"target"}><i>target</i></ClLinks> of the first item in the chain, not the immediate target of the last item.) 
+**target** *n.* 1. (of a <GlossaryTerm styled={true} term={"constructed stream"}><i>constructed stream</i></GlossaryTerm>) a <GlossaryTerm  term={"constituent"}><i>constituent</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"constructed stream"}><i>constructed stream</i></GlossaryTerm>. “The target of a synonym stream is the value of its synonym stream symbol.” 2. (of a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>) the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> to which the <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm> is displaced. (In the case of a chain of <GlossaryTerm styled={true} term={"constructed stream"}><i>constructed streams</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"displaced array"}><i>displaced arrays</i></GlossaryTerm>, the unqualified term “<GlossaryTerm  term={"target"}><i>target</i></GlossaryTerm>” always refers to the immediate <GlossaryTerm  term={"target"}><i>target</i></GlossaryTerm> of the first item in the chain, not the immediate target of the last item.) 
 
 
 
-**terminal I/O** *n.* the *bidirectional stream* that is the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"variable"}><i>variable</i></ClLinks> 
+**terminal I/O** *n.* the *bidirectional stream* that is the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of the <GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm> 
 
 
 
@@ -55,11 +55,11 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-**tertiary value** *n.* (of <ClLinks  term={"value"}><i>values</i></ClLinks> resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of a <ClLinks  term={"form"}><i>form</i></ClLinks>) the third <ClLinks  term={"value"}><i>value</i></ClLinks>, if any, or else <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if there are fewer than three <ClLinks  term={"value"}><i>values</i></ClLinks>. 
+**tertiary value** *n.* (of <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> resulting from the <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>) the third <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>, if any, or else <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if there are fewer than three <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink> *v.* to transfer control and <ClLinks  term={"value"}><i>values</i></ClLinks> to a <ClLinks  term={"catch"}><i>catch</i></ClLinks>. See the <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink>. **tilde** *n.* the <GlossaryTerm styled={true} term={"standard character"}><i>standard character</i></GlossaryTerm> that is called “tilde” (&#126;). See Figure 2–5. 
+<DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink> *v.* to transfer control and <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> to a <GlossaryTerm  term={"catch"}><i>catch</i></GlossaryTerm>. See the <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink>. **tilde** *n.* the <GlossaryTerm styled={true} term={"standard character"}><i>standard character</i></GlossaryTerm> that is called “tilde” (&#126;). See Figure 2–5. 
 
 
 
@@ -67,11 +67,11 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-**time zone** *n.* a <ClLinks  term={"rational"}><i>rational</i></ClLinks> multiple of 1/3600 between -24 (inclusive) and 24 (inclusive) that represents a time zone as a number of hours offset from Greenwich Mean Time. Time zone values increase with motion to the west, so Massachusetts, U.S.A. is in time zone 5, California, U.S.A. is time zone 8, and Moscow, Russia is time zone *-3* . (When “daylight savings time” is separately represented as an <ClLinks  term={"argument"}><i>argument</i></ClLinks> or <GlossaryTerm styled={true} term={"return value"}><i>return value</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"time zone"}><i>time zone</i></GlossaryTerm> that accompanies it does not depend on whether daylight savings time is in effect.) 
+**time zone** *n.* a <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm> multiple of 1/3600 between -24 (inclusive) and 24 (inclusive) that represents a time zone as a number of hours offset from Greenwich Mean Time. Time zone values increase with motion to the west, so Massachusetts, U.S.A. is in time zone 5, California, U.S.A. is time zone 8, and Moscow, Russia is time zone *-3* . (When “daylight savings time” is separately represented as an <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"return value"}><i>return value</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"time zone"}><i>time zone</i></GlossaryTerm> that accompanies it does not depend on whether daylight savings time is in effect.) 
 
 
 
-**token** *n.* a textual representation for a <ClLinks  term={"number"}><i>number</i></ClLinks> or a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. See Section 2.3 
+**token** *n.* a textual representation for a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> or a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. See Section 2.3 
 
 
 
@@ -79,11 +79,11 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-**top level form** *n.* a <ClLinks  term={"form"}><i>form</i></ClLinks> which is processed specially by <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> for the purposes of enabling *compile time evaluation* of that <ClLinks  term={"form"}><i>form</i></ClLinks>. <GlossaryTerm styled={true} term={"top level form"}><i>Top level forms</i></GlossaryTerm> include those <ClLinks  term={"form"}><i>forms</i></ClLinks> which are not <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of any other <ClLinks  term={"form"}><i>form</i></ClLinks>, and certain other cases. See Section 3.2.3.1 (Processing of Top Level Forms). 
+**top level form** *n.* a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> which is processed specially by <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> for the purposes of enabling *compile time evaluation* of that <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"top level form"}><i>Top level forms</i></GlossaryTerm> include those <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> which are not <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> of any other <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, and certain other cases. See Section 3.2.3.1 (Processing of Top Level Forms). 
 
 
 
-**trace output** *n.* the *output stream* which is the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> 
+**trace output** *n.* the *output stream* which is the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> 
 
 
 
@@ -103,7 +103,7 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-**tree** *n.* 1. a binary recursive data structure made up of *conses* and <ClLinks  term={"atom"}><i>atoms</i></ClLinks>: the *conses* are themselves also <ClLinks  term={"tree"}><i>trees</i></ClLinks> (sometimes called “subtrees” or “branches”), and the <ClLinks  term={"atom"}><i>atoms</i></ClLinks> are terminal nodes (sometimes called *leaves*). Typically, the *leaves* represent data while the branches establish some relationship among that data. 2. in general, any recursive data structure that has some notion of “branches” and *leaves*. 
+**tree** *n.* 1. a binary recursive data structure made up of *conses* and <GlossaryTerm  term={"atom"}><i>atoms</i></GlossaryTerm>: the *conses* are themselves also <GlossaryTerm  term={"tree"}><i>trees</i></GlossaryTerm> (sometimes called “subtrees” or “branches”), and the <GlossaryTerm  term={"atom"}><i>atoms</i></GlossaryTerm> are terminal nodes (sometimes called *leaves*). Typically, the *leaves* represent data while the branches establish some relationship among that data. 2. in general, any recursive data structure that has some notion of “branches” and *leaves*. 
 
 
 
@@ -111,15 +111,15 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-**true** *n.* any <ClLinks  term={"object"}><i>object</i></ClLinks> that is not <ClLinks  term={"false"}><i>false</i></ClLinks> and that is used to represent the success of a <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> test. See <ClLinks  term={"t"}><i>t</i></ClLinks><sub>1</sub>. 
+**true** *n.* any <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> that is not <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> and that is used to represent the success of a <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> test. See <GlossaryTerm  term={"t"}><i>t</i></GlossaryTerm><sub>1</sub>. 
 
 
 
-<DictionaryLink  term={"truename"}><b>truename</b></DictionaryLink> *n.* 1. the canonical <ClLinks  term={"filename"}><i>filename</i></ClLinks> of a <ClLinks  term={"file"}><i>file</i></ClLinks> in the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. See Section 20.1.3 (Truenames). 2. a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> representing a <ClLinks  term={"truename"}><i>truename</i></ClLinks><sub>1</sub>. 
+<DictionaryLink  term={"truename"}><b>truename</b></DictionaryLink> *n.* 1. the canonical <GlossaryTerm  term={"filename"}><i>filename</i></GlossaryTerm> of a <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. See Section 20.1.3 (Truenames). 2. a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> representing a <GlossaryTerm  term={"truename"}><i>truename</i></GlossaryTerm><sub>1</sub>. 
 
 
 
-**two-way stream** *n.* a <ClLinks  term={"stream"}><i>stream</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"two-way-stream"}><b>two-way-stream</b></DictionaryLink>, which is a <ClLinks  term={"bidirectional"}><i>bidirectional</i></ClLinks> 
+**two-way stream** *n.* a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"two-way-stream"}><b>two-way-stream</b></DictionaryLink>, which is a <GlossaryTerm  term={"bidirectional"}><i>bidirectional</i></GlossaryTerm> 
 
 
 
@@ -131,15 +131,15 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-**type declaration** *n.* a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> that asserts that every reference to a specified <ClLinks  term={"binding"}><i>binding</i></ClLinks> within the scope of the <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> results in some <ClLinks  term={"object"}><i>object</i></ClLinks> of the specified <ClLinks  term={"type"}><i>type</i></ClLinks>. 
+**type declaration** *n.* a <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm> that asserts that every reference to a specified <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> within the scope of the <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm> results in some <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> of the specified <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>. 
 
 
 
-**type equivalent** *adj.* (of two *types X* and *Y* ) having the same <ClLinks  term={"element"}><i>elements</i></ClLinks>; that is, *X* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of *Y* and *Y* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of *X*. 
+**type equivalent** *adj.* (of two *types X* and *Y* ) having the same <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm>; that is, *X* is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of *Y* and *Y* is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of *X*. 
 
 
 
-**type expand** *n.* to fully expand a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> , removing any references to <GlossaryTerm styled={true} term={"derived type"}><i>derived types</i></GlossaryTerm>. (Common Lisp provides no program interface to cause this to occur, but the semantics of Common Lisp are such that every <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> must be able to do 
+**type expand** *n.* to fully expand a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> , removing any references to <GlossaryTerm styled={true} term={"derived type"}><i>derived types</i></GlossaryTerm>. (Common Lisp provides no program interface to cause this to occur, but the semantics of Common Lisp are such that every <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> must be able to do 
 
 
 
@@ -147,7 +147,7 @@ this internally, and some situations involving <GlossaryTerm styled={true} term=
 
 
 
-**type specifier** *n.* an <ClLinks  term={"expression"}><i>expression</i></ClLinks> that denotes a <ClLinks  term={"type"}><i>type</i></ClLinks>. “The symbol random-state, the list (integer 3 5), the list (and list (not null)), and the class named standard-class are type specifiers.” 
+**type specifier** *n.* an <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm> that denotes a <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>. “The symbol random-state, the list (integer 3 5), the list (and list (not null)), and the class named standard-class are type specifiers.” 
 
 
 

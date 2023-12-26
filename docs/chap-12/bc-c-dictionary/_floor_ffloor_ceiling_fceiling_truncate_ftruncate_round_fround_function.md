@@ -1,4 +1,4 @@
-**floor, ffloor, ceiling, fceiling, truncate, ftruncate, round, fround** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**floor, ffloor, ceiling, fceiling, truncate, ftruncate, round, fround** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,15 +6,15 @@
 
 
 
-<DictionaryLink  term={"floor"}><b>floor</b></DictionaryLink> <ClLinks  term={"number"}><i>number</i></ClLinks> &amp;optional *divisor → quotient, remainder* 
+<DictionaryLink  term={"floor"}><b>floor</b></DictionaryLink> <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> &amp;optional *divisor → quotient, remainder* 
 
 
 
-<DictionaryLink  term={"ffloor"}><b>ffloor</b></DictionaryLink> <ClLinks  term={"number"}><i>number</i></ClLinks> &amp;optional *divisor → quotient, remainder* 
+<DictionaryLink  term={"ffloor"}><b>ffloor</b></DictionaryLink> <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> &amp;optional *divisor → quotient, remainder* 
 
 
 
-<DictionaryLink  term={"ceiling"}><b>ceiling</b></DictionaryLink> <ClLinks  term={"number"}><i>number</i></ClLinks> &amp;optional *divisor → quotient, remainder* 
+<DictionaryLink  term={"ceiling"}><b>ceiling</b></DictionaryLink> <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> &amp;optional *divisor → quotient, remainder* 
 
 
 
@@ -34,23 +34,23 @@
 
 
 
-<DictionaryLink  term={"fceiling"}><b>fceiling</b></DictionaryLink> <ClLinks  term={"number"}><i>number</i></ClLinks> &amp;optional *divisor → quotient, remainder* 
+<DictionaryLink  term={"fceiling"}><b>fceiling</b></DictionaryLink> <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> &amp;optional *divisor → quotient, remainder* 
 
 
 
-<DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink> <ClLinks  term={"number"}><i>number</i></ClLinks> &amp;optional *divisor → quotient, remainder* 
+<DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink> <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> &amp;optional *divisor → quotient, remainder* 
 
 
 
-<DictionaryLink  term={"ftruncate"}><b>ftruncate</b></DictionaryLink> <ClLinks  term={"number"}><i>number</i></ClLinks> &amp;optional *divisor → quotient, remainder* 
+<DictionaryLink  term={"ftruncate"}><b>ftruncate</b></DictionaryLink> <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> &amp;optional *divisor → quotient, remainder* 
 
 
 
-<DictionaryLink  term={"round"}><b>round</b></DictionaryLink> <ClLinks  term={"number"}><i>number</i></ClLinks> &amp;optional *divisor → quotient, remainder* 
+<DictionaryLink  term={"round"}><b>round</b></DictionaryLink> <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> &amp;optional *divisor → quotient, remainder* 
 
 
 
-<DictionaryLink  term={"fround"}><b>fround</b></DictionaryLink> <ClLinks  term={"number"}><i>number</i></ClLinks> &amp;optional *divisor → quotient, remainder* 
+<DictionaryLink  term={"fround"}><b>fround</b></DictionaryLink> <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> &amp;optional *divisor → quotient, remainder* 
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a *real*. 
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>—a *real*. 
 
 
 
@@ -66,7 +66,7 @@
 
 
 
-*quotient*—for <DictionaryLink  term={"floor"}><b>floor</b></DictionaryLink>, <DictionaryLink  term={"ceiling"}><b>ceiling</b></DictionaryLink>, <DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink>, and <DictionaryLink  term={"round"}><b>round</b></DictionaryLink>: an *integer* ; for <DictionaryLink  term={"ffloor"}><b>ffloor</b></DictionaryLink>, <DictionaryLink  term={"fceiling"}><b>fceiling</b></DictionaryLink>, <DictionaryLink  term={"ftruncate"}><b>ftruncate</b></DictionaryLink>, and <DictionaryLink  term={"fround"}><b>fround</b></DictionaryLink>: a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
+*quotient*—for <DictionaryLink  term={"floor"}><b>floor</b></DictionaryLink>, <DictionaryLink  term={"ceiling"}><b>ceiling</b></DictionaryLink>, <DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink>, and <DictionaryLink  term={"round"}><b>round</b></DictionaryLink>: an *integer* ; for <DictionaryLink  term={"ffloor"}><b>ffloor</b></DictionaryLink>, <DictionaryLink  term={"fceiling"}><b>fceiling</b></DictionaryLink>, <DictionaryLink  term={"ftruncate"}><b>ftruncate</b></DictionaryLink>, and <DictionaryLink  term={"fround"}><b>fround</b></DictionaryLink>: a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>. 
 
 
 
@@ -78,11 +78,11 @@
 
 
 
-These functions divide <ClLinks  term={"number"}><i>number</i></ClLinks> by *divisor*, returning a *quotient* and *remainder*, such that *quotient·divisor*+*remainder*=<ClLinks  term={"number"}><i>number</i></ClLinks> 
+These functions divide <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> by *divisor*, returning a *quotient* and *remainder*, such that *quotient·divisor*+*remainder*=<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> 
 
 
 
-The *quotient* always represents a mathematical integer. When more than one mathematical integer might be possible (*i.e.*, when the remainder is not zero), the kind of rounding or truncation depends on the <ClLinks  term={"operator"}><i>operator</i></ClLinks> : 
+The *quotient* always represents a mathematical integer. When more than one mathematical integer might be possible (*i.e.*, when the remainder is not zero), the kind of rounding or truncation depends on the <GlossaryTerm  term={"operator"}><i>operator</i></GlossaryTerm> : 
 
 
 
@@ -138,15 +138,15 @@ has the form *integer*+<sup>1</sup><sub>2</sub>), then the *quotient* has been r
 
 
 
-All of these functions perform type conversion operations on <ClLinks  term={"number"}><i>numbers</i></ClLinks>. 
+All of these functions perform type conversion operations on <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm>. 
 
 
 
-The *remainder* is an *integer* if both x and y are *integers*, is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> if both x and y are <ClLinks  term={"rational"}><i>rationals</i></ClLinks>, and is a <ClLinks  term={"float"}><i>float</i></ClLinks> if either x or y is a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
+The *remainder* is an *integer* if both x and y are *integers*, is a <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm> if both x and y are <GlossaryTerm  term={"rational"}><i>rationals</i></GlossaryTerm>, and is a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> if either x or y is a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"ffloor"}><b>ffloor</b></DictionaryLink>, <DictionaryLink  term={"fceiling"}><b>fceiling</b></DictionaryLink>, <DictionaryLink  term={"ftruncate"}><b>ftruncate</b></DictionaryLink>, and <DictionaryLink  term={"fround"}><b>fround</b></DictionaryLink> handle arguments of different <ClLinks  term={"type"}><i>types</i></ClLinks> in the following way: If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"float"}><i>float</i></ClLinks>, and *divisor* is not a <ClLinks  term={"float"}><i>float</i></ClLinks> of longer format, then the first result is a <ClLinks  term={"float"}><i>float</i></ClLinks> of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as <ClLinks  term={"number"}><i>number</i></ClLinks>. Otherwise, the first result is of the <ClLinks  term={"type"}><i>type</i></ClLinks> determined by <ClLinks  term={"contagion"}><i>contagion</i></ClLinks> rules; see Section 12.1.1.2 (Contagion in Numeric Operations). 
+<DictionaryLink  term={"ffloor"}><b>ffloor</b></DictionaryLink>, <DictionaryLink  term={"fceiling"}><b>fceiling</b></DictionaryLink>, <DictionaryLink  term={"ftruncate"}><b>ftruncate</b></DictionaryLink>, and <DictionaryLink  term={"fround"}><b>fround</b></DictionaryLink> handle arguments of different <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> in the following way: If <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>, and *divisor* is not a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> of longer format, then the first result is a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> of the same <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> as <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>. Otherwise, the first result is of the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> determined by <GlossaryTerm  term={"contagion"}><i>contagion</i></GlossaryTerm> rules; see Section 12.1.1.2 (Contagion in Numeric Operations). 
 
 
 
@@ -182,11 +182,11 @@ The *remainder* is an *integer* if both x and y are *integers*, is a <ClLinks  t
 
 
 
-When only <ClLinks  term={"number"}><i>number</i></ClLinks> is given, the two results are exact; the mathematical sum of the two results is always equal to the mathematical value of <ClLinks  term={"number"}><i>number</i></ClLinks>. 
+When only <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is given, the two results are exact; the mathematical sum of the two results is always equal to the mathematical value of <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>. 
 
 
 
-(*function number divisor*) and (<ClLinks  term={"function"}><i>function</i></ClLinks> (/ *number divisor*)) (where <ClLinks  term={"function"}><i>function</i></ClLinks> is any of one of <DictionaryLink  term={"floor"}><b>floor</b></DictionaryLink>, <DictionaryLink  term={"ceiling"}><b>ceiling</b></DictionaryLink>, <DictionaryLink  term={"ffloor"}><b>ffloor</b></DictionaryLink>, <DictionaryLink  term={"fceiling"}><b>fceiling</b></DictionaryLink>, <DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink>, <DictionaryLink  term={"round"}><b>round</b></DictionaryLink>, <DictionaryLink  term={"ftruncate"}><b>ftruncate</b></DictionaryLink>, and <DictionaryLink  term={"fround"}><b>fround</b></DictionaryLink>) return the same first value, 
+(*function number divisor*) and (<GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> (/ *number divisor*)) (where <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is any of one of <DictionaryLink  term={"floor"}><b>floor</b></DictionaryLink>, <DictionaryLink  term={"ceiling"}><b>ceiling</b></DictionaryLink>, <DictionaryLink  term={"ffloor"}><b>ffloor</b></DictionaryLink>, <DictionaryLink  term={"fceiling"}><b>fceiling</b></DictionaryLink>, <DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink>, <DictionaryLink  term={"round"}><b>round</b></DictionaryLink>, <DictionaryLink  term={"ftruncate"}><b>ftruncate</b></DictionaryLink>, and <DictionaryLink  term={"fround"}><b>fround</b></DictionaryLink>) return the same first value, 
 
 
 

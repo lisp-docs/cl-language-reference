@@ -1,4 +1,4 @@
-**array-dimension** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**array-dimension** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+<GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>—an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-*axis-number*—an *integer* greater than or equal to zero and less than the <ClLinks  term={"rank"}><i>rank</i></ClLinks> of the <ClLinks  term={"array"}><i>array</i></ClLinks>. <ClLinks  term={"dimension"}><i>dimension</i></ClLinks>—a non-negative *integer* . 
+*axis-number*—an *integer* greater than or equal to zero and less than the <GlossaryTerm  term={"rank"}><i>rank</i></GlossaryTerm> of the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. <GlossaryTerm  term={"dimension"}><i>dimension</i></GlossaryTerm>—a non-negative *integer* . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<DictionaryLink  term={"array-dimension"}><b>array-dimension</b></DictionaryLink> returns the *axis-number dimension*<sub>1</sub> of <ClLinks  term={"array"}><i>array</i></ClLinks>. (Any <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is ignored.) 
+<DictionaryLink  term={"array-dimension"}><b>array-dimension</b></DictionaryLink> returns the *axis-number dimension*<sub>1</sub> of <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. (Any <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is ignored.) 
 
 **Examples:**
 ```lisp

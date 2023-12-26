@@ -1,4 +1,4 @@
-**remprop** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**remprop** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"indicator"}><i>indicator</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"indicator"}><i>indicator</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<DictionaryLink  term={"remprop"}><b>remprop</b></DictionaryLink> removes from the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> <sub>2</sub> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> a <ClLinks  term={"property"}><i>property</i></ClLinks><sub>1</sub> with a *property indicator identical* to <ClLinks  term={"indicator"}><i>indicator</i></ClLinks>. If there are multiple *properties*<sub>1</sub> with the <ClLinks  term={"identical"}><i>identical</i></ClLinks> key, <DictionaryLink  term={"remprop"}><b>remprop</b></DictionaryLink> only removes the first such <ClLinks  term={"property"}><i>property</i></ClLinks>. <DictionaryLink  term={"remprop"}><b>remprop</b></DictionaryLink> returns <ClLinks  term={"false"}><i>false</i></ClLinks> if no such <ClLinks  term={"property"}><i>property</i></ClLinks> was found, or <ClLinks  term={"true"}><i>true</i></ClLinks> if a property was found. 
+<DictionaryLink  term={"remprop"}><b>remprop</b></DictionaryLink> removes from the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> <sub>2</sub> of <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> a <GlossaryTerm  term={"property"}><i>property</i></GlossaryTerm><sub>1</sub> with a *property indicator identical* to <GlossaryTerm  term={"indicator"}><i>indicator</i></GlossaryTerm>. If there are multiple *properties*<sub>1</sub> with the <GlossaryTerm  term={"identical"}><i>identical</i></GlossaryTerm> key, <DictionaryLink  term={"remprop"}><b>remprop</b></DictionaryLink> only removes the first such <GlossaryTerm  term={"property"}><i>property</i></GlossaryTerm>. <DictionaryLink  term={"remprop"}><b>remprop</b></DictionaryLink> returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> if no such <GlossaryTerm  term={"property"}><i>property</i></GlossaryTerm> was found, or <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if a property was found. 
 
 
 
@@ -72,7 +72,7 @@ The <GlossaryTerm styled={true} term={"property indicator"}><i>property indicato
 
 
 
-The <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is modified. 
+The <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> of <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is modified. 
 
 
 
@@ -80,7 +80,7 @@ The <GlossaryTerm styled={true} term={"property list"}><i>property list</i></Glo
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is not a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -96,7 +96,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <Diction
 
 
 
-<ClLinks  term={"number"}><i>Numbers</i></ClLinks> and <ClLinks  term={"character"}><i>characters</i></ClLinks> are not recommended for use as <ClLinks  term={"indicator"}><i>indicators</i></ClLinks> in portable code since <DictionaryLink  term={"remprop"}><b>remprop</b></DictionaryLink> tests with <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> rather than <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>, and consequently the effect of using such <ClLinks  term={"indicator"}><i>indicators</i></ClLinks> is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. Of course, if you’ve gotten as far as needing to remove such a <ClLinks  term={"property"}><i>property</i></ClLinks>, you don’t have much choice—the time to have been thinking about this was when you used <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> to establish the <ClLinks  term={"property"}><i>property</i></ClLinks>. 
+<GlossaryTerm  term={"number"}><i>Numbers</i></GlossaryTerm> and <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> are not recommended for use as <GlossaryTerm  term={"indicator"}><i>indicators</i></GlossaryTerm> in portable code since <DictionaryLink  term={"remprop"}><b>remprop</b></DictionaryLink> tests with <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> rather than <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>, and consequently the effect of using such <GlossaryTerm  term={"indicator"}><i>indicators</i></GlossaryTerm> is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. Of course, if you’ve gotten as far as needing to remove such a <GlossaryTerm  term={"property"}><i>property</i></GlossaryTerm>, you don’t have much choice—the time to have been thinking about this was when you used <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> to establish the <GlossaryTerm  term={"property"}><i>property</i></GlossaryTerm>. 
 
 
 

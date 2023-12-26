@@ -1,4 +1,4 @@
-**pathnamep** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**pathnamep** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>; otherwise, returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
@@ -47,7 +47,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-(pathnamep <ClLinks  term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks  term={"object"}><i>object</i></ClLinks> ’pathname) 
+(pathnamep <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>) *≡* (typep <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> ’pathname) 
 
 
 
@@ -71,23 +71,23 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-**pathname-host** <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> &amp;key *case → host* 
+**pathname-host** <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> &amp;key *case → host* 
 
 
 
-**pathname-device** <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> &amp;key *case → device* 
+**pathname-device** <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> &amp;key *case → device* 
 
 
 
-**pathname-directory** <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> &amp;key *case → directory* 
+**pathname-directory** <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> &amp;key *case → directory* 
 
 
 
-**pathname-name** <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> &amp;key *case → name* 
+**pathname-name** <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> &amp;key *case → name* 
 
 
 
-**pathname-type** <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> &amp;key *case → type* 
+**pathname-type** <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> &amp;key *case → type* 
 
 
 
@@ -99,11 +99,11 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
+<GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
-<ClLinks  term={"case"}><i>case</i></ClLinks>—one of :local or :common. The default is :local. 
+<GlossaryTerm  term={"case"}><i>case</i></GlossaryTerm>—one of :local or :common. The default is :local. 
 
 
 
@@ -119,11 +119,11 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a <GlossaryTerm styled={true} term={"valid pathname name"}><i>valid pathname name</i></GlossaryTerm>. 
+<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"valid pathname name"}><i>valid pathname name</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"type"}><i>type</i></ClLinks>—a <GlossaryTerm styled={true} term={"valid pathname type"}><i>valid pathname type</i></GlossaryTerm>. 
+<GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"valid pathname type"}><i>valid pathname type</i></GlossaryTerm>. 
 
 
 
@@ -135,15 +135,15 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-These functions return the components of <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+These functions return the components of <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>. 
 
 
 
-If the <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
+If the <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> is a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>, it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
 
 
 
-If <ClLinks  term={"case"}><i>case</i></ClLinks> is supplied, it is treated as described in Section 19.2.2.1.2 (Case in Pathname Components). 
+If <GlossaryTerm  term={"case"}><i>case</i></GlossaryTerm> is supplied, it is treated as described in Section 19.2.2.1.2 (Case in Pathname Components). 
 
 **Examples:**
 ```lisp
@@ -212,7 +212,7 @@ If <ClLinks  term={"case"}><i>case</i></ClLinks> is supplied, it is treated as d
 
 
 
-The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> and the host <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. 
+The <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> and the host <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. 
 
 
 
@@ -220,7 +220,7 @@ The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> and the ho
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its first argument is not a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its first argument is not a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>. 
 
 
 

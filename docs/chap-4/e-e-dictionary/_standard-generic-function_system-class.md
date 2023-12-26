@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"standard-generic-function"}><b>standard-generic-function</b></DictionaryLink> is the default <ClLinks  term={"class"}><i>class</i></ClLinks> of *generic functions established* by <DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink>, <DictionaryLink  term={"ensure-generic-function"}><b>ensure-generic-function</b></DictionaryLink>, <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink>, and <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+The <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink  term={"standard-generic-function"}><b>standard-generic-function</b></DictionaryLink> is the default <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> of *generic functions established* by <DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink>, <DictionaryLink  term={"ensure-generic-function"}><b>ensure-generic-function</b></DictionaryLink>, <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink>, and <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. 
 
 
 

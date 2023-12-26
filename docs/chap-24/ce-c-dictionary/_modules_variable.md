@@ -6,7 +6,7 @@
 
 
 
-a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
+a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm  term={"string"}><i>strings</i></GlossaryTerm>. 
 
 
 
@@ -14,7 +14,7 @@ a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"string"}><i>
 
 
 
-<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@ a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"string"}><i>
 
 
 
-The <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"modules"}><b>\*modules\*</b></DictionaryLink> is a list of names of the modules that have been loaded into the current *Lisp image*. 
+The <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink  term={"modules"}><b>\*modules\*</b></DictionaryLink> is a list of names of the modules that have been loaded into the current *Lisp image*. 
 
 
 

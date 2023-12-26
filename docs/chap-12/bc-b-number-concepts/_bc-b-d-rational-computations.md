@@ -2,7 +2,7 @@
 
 
 
-The rules in this section apply to <ClLinks  term={"rational"}><i>rational</i></ClLinks> computations. 
+The rules in this section apply to <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm> computations. 
 
 
 

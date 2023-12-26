@@ -2,7 +2,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"type specifier"}><i>Type specifiers</i></GlossaryTerm> can be <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>, *classes*, or <ClLinks  term={"list"}><i>lists</i></ClLinks>. Figure 4–2 lists <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are *standardized atomic type specifiers*, and Figure 4–3 lists *standardized compound type specifier names*. For syntax information, see the dictionary entry for the corresponding <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . It is possible to define new <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> using <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>, <DictionaryLink  term={"define-condition"}><b>define-condition</b></DictionaryLink>, <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink>, or <DictionaryLink  term={"deftype"}><b>deftype</b></DictionaryLink>.  
+<GlossaryTerm styled={true} term={"type specifier"}><i>Type specifiers</i></GlossaryTerm> can be <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>, *classes*, or <GlossaryTerm  term={"list"}><i>lists</i></GlossaryTerm>. Figure 4–2 lists <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> that are *standardized atomic type specifiers*, and Figure 4–3 lists *standardized compound type specifier names*. For syntax information, see the dictionary entry for the corresponding <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . It is possible to define new <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> using <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>, <DictionaryLink  term={"define-condition"}><b>define-condition</b></DictionaryLink>, <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink>, or <DictionaryLink  term={"deftype"}><b>deftype</b></DictionaryLink>.  
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-If a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> is a <ClLinks  term={"list"}><i>list</i></ClLinks>, the <ClLinks  term={"car"}><i>car</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, and the rest of the <ClLinks  term={"list"}><i>list</i></ClLinks> is subsidiary <ClLinks  term={"type"}><i>type</i></ClLinks> information. Such a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> is called a <GlossaryTerm styled={true} term={"compound type specifier"}><i>compound type specifier</i></GlossaryTerm>. Except as explicitly stated otherwise, the subsidiary items can be unspecified. The unspecified subsidiary items are indicated by writing \*. For example, to completely specify a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the <ClLinks  term={"type"}><i>type</i></ClLinks> of the elements and the length of the <ClLinks  term={"vector"}><i>vector</i></ClLinks> must be present. 
+If a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> is a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>, the <GlossaryTerm  term={"car"}><i>car</i></GlossaryTerm> of the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, and the rest of the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> is subsidiary <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> information. Such a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> is called a <GlossaryTerm styled={true} term={"compound type specifier"}><i>compound type specifier</i></GlossaryTerm>. Except as explicitly stated otherwise, the subsidiary items can be unspecified. The unspecified subsidiary items are indicated by writing \*. For example, to completely specify a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> , the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> of the elements and the length of the <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> must be present. 
 
 
 
@@ -50,11 +50,11 @@ The following leaves the element type unspecified:
 
 
 
-Suppose that two <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> are the same except that the first has a \* where the second has a more explicit specification. Then the second denotes a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> denoted by the first. 
+Suppose that two <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> are the same except that the first has a \* where the second has a more explicit specification. Then the second denotes a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> denoted by the first. 
 
 
 
-If a <ClLinks  term={"list"}><i>list</i></ClLinks> has one or more unspecified items at the end, those items can be dropped. If dropping all occurrences of \* results in a *singleton list*, then the parentheses can be dropped as well (the list can be replaced by the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in its <ClLinks  term={"car"}><i>car</i></ClLinks> ). For example, (vector double-float \*) can be abbreviated to (vector double-float), and (vector \* \*) can be abbreviated to (vector) and then to vector. 
+If a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> has one or more unspecified items at the end, those items can be dropped. If dropping all occurrences of \* results in a *singleton list*, then the parentheses can be dropped as well (the list can be replaced by the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> in its <GlossaryTerm  term={"car"}><i>car</i></GlossaryTerm> ). For example, (vector double-float \*) can be abbreviated to (vector double-float), and (vector \* \*) can be abbreviated to (vector) and then to vector. 
 
 
 
@@ -90,7 +90,7 @@ New <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></
 
 
 
-*•* Defining a structure by using <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> without using the :type specifier or defining a <ClLinks  term={"class"}><i>class</i></ClLinks> by using <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> or <DictionaryLink  term={"define-condition"}><b>define-condition</b></DictionaryLink> automatically causes the name of the structure or class to be a new *type specifier symbol*. 
+*•* Defining a structure by using <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> without using the :type specifier or defining a <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> by using <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> or <DictionaryLink  term={"define-condition"}><b>define-condition</b></DictionaryLink> automatically causes the name of the structure or class to be a new *type specifier symbol*. 
 
 
 
@@ -110,11 +110,11 @@ A *class object* can be used as a <GlossaryTerm styled={true} term={"type specif
 
 
 
-of that <ClLinks  term={"class"}><i>class</i></ClLinks>. 
+of that <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>. 
 
 
 
-Figure 4–5 shows some <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> relating to <ClLinks  term={"type"}><i>types</i></ClLinks> and <ClLinks  term={"declaration"}><i>declarations</i></ClLinks>. 
+Figure 4–5 shows some <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> relating to <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> and <GlossaryTerm  term={"declaration"}><i>declarations</i></GlossaryTerm>. 
 
 
 

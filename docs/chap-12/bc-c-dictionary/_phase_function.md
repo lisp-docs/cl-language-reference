@@ -1,4 +1,4 @@
-**phase** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**phase** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
-*phase*—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+*phase*—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<DictionaryLink  term={"phase"}><b>phase</b></DictionaryLink> returns the phase of <ClLinks  term={"number"}><i>number</i></ClLinks> (the angle part of its polar representation) in radians, in the range *−π* (exclusive) if minus zero is not supported, or *−π* (inclusive) if minus zero is supported, to *π* (inclusive). The phase of a positive *real* number is zero; that of a negative *real* number is *π*. The phase of zero is defined to be zero. 
+<DictionaryLink  term={"phase"}><b>phase</b></DictionaryLink> returns the phase of <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> (the angle part of its polar representation) in radians, in the range *−π* (exclusive) if minus zero is not supported, or *−π* (inclusive) if minus zero is supported, to *π* (inclusive). The phase of a positive *real* number is zero; that of a negative *real* number is *π*. The phase of zero is defined to be zero. 
 
 
 
-If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>, the result is a <ClLinks  term={"float"}><i>float</i></ClLinks> of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as the components of <ClLinks  term={"number"}><i>number</i></ClLinks>. If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"float"}><i>float</i></ClLinks>, the result is a <ClLinks  term={"float"}><i>float</i></ClLinks> of the same <ClLinks  term={"type"}><i>type</i></ClLinks>. If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> or a <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm>, the result is a <GlossaryTerm styled={true} term={"single float"}><i>single float</i></GlossaryTerm>. 
+If <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>, the result is a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> of the same <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> as the components of <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>. If <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>, the result is a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> of the same <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>. If <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is a <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm>, the result is a <GlossaryTerm styled={true} term={"single float"}><i>single float</i></GlossaryTerm>. 
 
 
 
@@ -58,7 +58,7 @@ The mathematical definition of <DictionaryLink  term={"phase"}><b>phase</b></Dic
 
 
 
-Should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>. 
+Should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . Might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>. 
 
 
 

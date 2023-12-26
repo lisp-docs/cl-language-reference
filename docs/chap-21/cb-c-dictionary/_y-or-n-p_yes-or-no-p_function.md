@@ -1,4 +1,4 @@
-**y-or-n-p, yes-or-no-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**y-or-n-p, yes-or-no-p** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"argument"}><i>arguments</i></ClLinks>—<GlossaryTerm styled={true} term={"format argument"}><i>format arguments</i></GlossaryTerm> for *control*. 
+<GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm>—<GlossaryTerm styled={true} term={"format argument"}><i>format arguments</i></GlossaryTerm> for *control*. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-These functions ask a question and parse a response from the user. They return <ClLinks  term={"true"}><i>true</i></ClLinks> if the answer is affirmative, or <ClLinks  term={"false"}><i>false</i></ClLinks> if the answer is negative. 
+These functions ask a question and parse a response from the user. They return <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if the answer is affirmative, or <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> if the answer is negative. 
 
 
 
@@ -54,11 +54,11 @@ These functions ask a question and parse a response from the user. They return <
 
 
 
-<DictionaryLink  term={"y-or-n-p"}><b>y-or-n-p</b></DictionaryLink> types out a message (if supplied), reads an answer in some <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> manner (intended to be short and simple, such as reading a single character such as Y or N). <DictionaryLink  term={"yes-or-no-p"}><b>yes-or-no-p</b></DictionaryLink> types out a message (if supplied), attracts the user’s attention (for example, by ringing the terminal’s bell), and reads an answer in some <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> manner (intended to be multiple characters, such as YES or NO). 
+<DictionaryLink  term={"y-or-n-p"}><b>y-or-n-p</b></DictionaryLink> types out a message (if supplied), reads an answer in some <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> manner (intended to be short and simple, such as reading a single character such as Y or N). <DictionaryLink  term={"yes-or-no-p"}><b>yes-or-no-p</b></DictionaryLink> types out a message (if supplied), attracts the user’s attention (for example, by ringing the terminal’s bell), and reads an answer in some <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> manner (intended to be multiple characters, such as YES or NO). 
 
 
 
-If *format-control* is supplied and not <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, then a <DictionaryLink  term={"fresh-line"}><b>fresh-line</b></DictionaryLink> operation is performed; then a message is printed as if *format-control* and <ClLinks  term={"argument"}><i>arguments</i></ClLinks> were given to <DictionaryLink  term={"format"}><b>format</b></DictionaryLink>. In any case, <DictionaryLink  term={"yes-or-no-p"}><b>yes-or-no-p</b></DictionaryLink> and <DictionaryLink  term={"y-or-n-p"}><b>y-or-n-p</b></DictionaryLink> will provide a prompt such as “(Y or N)” or “(Yes or No)” if appropriate. 
+If *format-control* is supplied and not <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, then a <DictionaryLink  term={"fresh-line"}><b>fresh-line</b></DictionaryLink> operation is performed; then a message is printed as if *format-control* and <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> were given to <DictionaryLink  term={"format"}><b>format</b></DictionaryLink>. In any case, <DictionaryLink  term={"yes-or-no-p"}><b>yes-or-no-p</b></DictionaryLink> and <DictionaryLink  term={"y-or-n-p"}><b>y-or-n-p</b></DictionaryLink> will provide a prompt such as “(Y or N)” or “(Yes or No)” if appropriate. 
 
 
 

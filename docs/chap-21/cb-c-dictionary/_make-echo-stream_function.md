@@ -1,4 +1,4 @@
-**make-echo-stream** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**make-echo-stream** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -50,7 +50,7 @@ Creates and returns an <GlossaryTerm styled={true} term={"echo stream"}><i>echo 
 
 
 
-**echo-stream-input-stream**, **echo-stream-output-stream**, **make-two-way-stream concatenated-stream-streams** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**echo-stream-input-stream**, **echo-stream-output-stream**, **make-two-way-stream concatenated-stream-streams** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -70,7 +70,7 @@ Creates and returns an <GlossaryTerm styled={true} term={"echo stream"}><i>echo 
 
 
 
-<ClLinks  term={"stream"}><i>streams</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *input streams*. 
+<GlossaryTerm  term={"stream"}><i>streams</i></GlossaryTerm>—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of *input streams*. 
 
 
 
@@ -90,8 +90,8 @@ Creates and returns an <GlossaryTerm styled={true} term={"echo stream"}><i>echo 
 
 
 
-Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of *input streams* that constitute the ordered set of <ClLinks  term={"stream"}><i>streams</i></ClLinks> the *concatenated-stream* still has to read from, starting with the current one it is reading from. The list may be *empty* if no more <ClLinks  term={"stream"}><i>streams</i></ClLinks> remain to be read. 
+Returns a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of *input streams* that constitute the ordered set of <GlossaryTerm  term={"stream"}><i>streams</i></GlossaryTerm> the *concatenated-stream* still has to read from, starting with the current one it is reading from. The list may be *empty* if no more <GlossaryTerm  term={"stream"}><i>streams</i></GlossaryTerm> remain to be read. 
 
 
 
-The consequences are undefined if the <GlossaryTerm styled={true} term={"list structure"}><i>list structure</i></GlossaryTerm> of the <ClLinks  term={"stream"}><i>streams</i></ClLinks> is ever modified. 
+The consequences are undefined if the <GlossaryTerm styled={true} term={"list structure"}><i>list structure</i></GlossaryTerm> of the <GlossaryTerm  term={"stream"}><i>streams</i></GlossaryTerm> is ever modified. 

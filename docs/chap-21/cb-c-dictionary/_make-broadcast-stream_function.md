@@ -1,4 +1,4 @@
-**make-broadcast-stream** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**make-broadcast-stream** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks>—an *output stream*. 
+<GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>—an *output stream*. 
 
 
 
@@ -44,7 +44,7 @@ Returns a <GlossaryTerm styled={true} term={"broadcast stream"}><i>broadcast str
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if any <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not an *output stream*. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if any <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is not an *output stream*. 
 
 
 

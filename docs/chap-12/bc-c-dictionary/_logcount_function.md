@@ -1,4 +1,4 @@
-**logcount** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**logcount** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -56,7 +56,7 @@ Should signal <DictionaryLink  term={"type-error"}><b>type-error</b></Dictionary
 
 
 
-Even if the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> does not represent *integers* internally in two’s complement binary, <DictionaryLink  term={"logcount"}><b>logcount</b></DictionaryLink> behaves as if it did. 
+Even if the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> does not represent *integers* internally in two’s complement binary, <DictionaryLink  term={"logcount"}><b>logcount</b></DictionaryLink> behaves as if it did. 
 
 
 

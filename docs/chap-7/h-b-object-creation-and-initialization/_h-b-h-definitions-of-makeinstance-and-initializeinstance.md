@@ -50,7 +50,7 @@ The elided code in the definition of <DictionaryLink  term={"make-instance"}><b>
 
 
 
-an initialization argument was supplied that neither filled a <ClLinks  term={"slot"}><i>slot</i></ClLinks> nor supplied an argument to an applicable <ClLinks  term={"method"}><i>method</i></ClLinks>. 
+an initialization argument was supplied that neither filled a <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm> nor supplied an argument to an applicable <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm>. 
 
 
 
@@ -70,7 +70,7 @@ These procedures can be customized.
 
 
 
-Customizing at the Programmer Interface level includes using the :initform, :initarg, and :default-initargs options to <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>, as well as defining <ClLinks  term={"method"}><i>methods</i></ClLinks> for <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink>, <DictionaryLink  term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink>, and <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink>. It is also possible to define <ClLinks  term={"method"}><i>methods</i></ClLinks> for <DictionaryLink  term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink>, which would be invoked by the generic functions <DictionaryLink  term={"reinitialize-instance"}><b>reinitialize-instance</b></DictionaryLink>, **update-instance-for-redefined-class**, **update-instance-for-different-class**, and <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink>. The meta-object level supports additional customization. 
+Customizing at the Programmer Interface level includes using the :initform, :initarg, and :default-initargs options to <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>, as well as defining <GlossaryTerm  term={"method"}><i>methods</i></GlossaryTerm> for <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink>, <DictionaryLink  term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink>, and <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink>. It is also possible to define <GlossaryTerm  term={"method"}><i>methods</i></GlossaryTerm> for <DictionaryLink  term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink>, which would be invoked by the generic functions <DictionaryLink  term={"reinitialize-instance"}><b>reinitialize-instance</b></DictionaryLink>, **update-instance-for-redefined-class**, **update-instance-for-different-class**, and <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink>. The meta-object level supports additional customization. 
 
 
 

@@ -1,4 +1,4 @@
-**decode-float, scale-float, float-radix, float-sign, float-digits, float-precision, integer-decode-float** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**decode-float, scale-float, float-radix, float-sign, float-digits, float-precision, integer-decode-float** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -50,15 +50,15 @@
 
 
 
-<ClLinks  term={"float"}><i>float</i></ClLinks>—a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
+<GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>—a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>. 
 
 
 
-*float-1*—a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
+*float-1*—a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>. 
 
 
 
-*float-2*—a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
+*float-2*—a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>. 
 
 
 
@@ -90,19 +90,19 @@
 
 
 
-*scaled-float*—a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
+*scaled-float*—a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"sign"}><i>sign</i></ClLinks>—A <ClLinks  term={"float"}><i>float</i></ClLinks> of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as <ClLinks  term={"float"}><i>float</i></ClLinks> but numerically equal to 1.0 or -1.0. 
+<GlossaryTerm  term={"sign"}><i>sign</i></GlossaryTerm>—A <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> of the same <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> as <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> but numerically equal to 1.0 or -1.0. 
 
 
 
-*signed-float*—a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
+*signed-float*—a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>. 
 
 
 
-*significand*—a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
+*significand*—a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>. 
 
 
 
@@ -110,19 +110,19 @@
 
 
 
-<DictionaryLink  term={"decode-float"}><b>decode-float</b></DictionaryLink> computes three values that characterize <ClLinks  term={"float"}><i>float</i></ClLinks>. The first value is of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as <ClLinks  term={"float"}><i>float</i></ClLinks> and represents the significand. The second value represents the exponent to which the radix (notated in this description by *b*) must be raised to obtain the value that, when multiplied with the first result, produces the absolute value of <ClLinks  term={"float"}><i>float</i></ClLinks>. If <ClLinks  term={"float"}><i>float</i></ClLinks> is zero, any *integer* value may be returned, provided that the identity shown for <DictionaryLink  term={"scale-float"}><b>scale-float</b></DictionaryLink> holds. The third value is of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as <ClLinks  term={"float"}><i>float</i></ClLinks> and is 1.0 if <ClLinks  term={"float"}><i>float</i></ClLinks> is greater than or equal to zero or -1.0 otherwise. 
+<DictionaryLink  term={"decode-float"}><b>decode-float</b></DictionaryLink> computes three values that characterize <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>. The first value is of the same <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> as <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> and represents the significand. The second value represents the exponent to which the radix (notated in this description by *b*) must be raised to obtain the value that, when multiplied with the first result, produces the absolute value of <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>. If <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> is zero, any *integer* value may be returned, provided that the identity shown for <DictionaryLink  term={"scale-float"}><b>scale-float</b></DictionaryLink> holds. The third value is of the same <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> as <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> and is 1.0 if <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> is greater than or equal to zero or -1.0 otherwise. 
 
 
 
-<DictionaryLink  term={"decode-float"}><b>decode-float</b></DictionaryLink> divides <ClLinks  term={"float"}><i>float</i></ClLinks> by an integral power of *b* so as to bring its value between 1*/b* (inclusive) and 1 (exclusive), and returns the quotient as the first value. If <ClLinks  term={"float"}><i>float</i></ClLinks> is zero, however, the result equals the absolute value of <ClLinks  term={"float"}><i>float</i></ClLinks> (that is, if there is a negative zero, its significand is considered to be a positive zero). 
+<DictionaryLink  term={"decode-float"}><b>decode-float</b></DictionaryLink> divides <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> by an integral power of *b* so as to bring its value between 1*/b* (inclusive) and 1 (exclusive), and returns the quotient as the first value. If <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> is zero, however, the result equals the absolute value of <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> (that is, if there is a negative zero, its significand is considered to be a positive zero). 
 
 
 
-<DictionaryLink  term={"scale-float"}><b>scale-float</b></DictionaryLink> returns (\* <ClLinks  term={"float"}><i>float</i></ClLinks> (expt (float *b float<ClLinks  term={"t"}><i>) </i></ClLinks>integer*)), where *b* is the radix of the floating point representation. <ClLinks  term={"float"}><i>float</i></ClLinks> is not necessarily between 1*/b* and 1. 
+<DictionaryLink  term={"scale-float"}><b>scale-float</b></DictionaryLink> returns (\* <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> (expt (float *b float<ClLinks  term={"t"}><i>) </i></ClLinks>integer*)), where *b* is the radix of the floating point representation. <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> is not necessarily between 1*/b* and 1. 
 
 
 
-<DictionaryLink  term={"float-radix"}><b>float-radix</b></DictionaryLink> returns the radix of <ClLinks  term={"float"}><i>float</i></ClLinks>. 
+<DictionaryLink  term={"float-radix"}><b>float-radix</b></DictionaryLink> returns the radix of <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>. 
 
 
 
@@ -130,19 +130,19 @@
 
 
 
-<DictionaryLink  term={"float-digits"}><b>float-digits</b></DictionaryLink> returns the number of radix *b* digits used in the representation of <ClLinks  term={"float"}><i>float</i></ClLinks> (including any implicit digits, such as a “hidden bit”). 
+<DictionaryLink  term={"float-digits"}><b>float-digits</b></DictionaryLink> returns the number of radix *b* digits used in the representation of <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> (including any implicit digits, such as a “hidden bit”). 
 
 
 
-<DictionaryLink  term={"float-precision"}><b>float-precision</b></DictionaryLink> returns the number of significant radix *b* digits present in <ClLinks  term={"float"}><i>float</i></ClLinks>; if <ClLinks  term={"float"}><i>float</i></ClLinks> is a <ClLinks  term={"float"}><i>float</i></ClLinks> zero, then the result is an *integer* zero. 
+<DictionaryLink  term={"float-precision"}><b>float-precision</b></DictionaryLink> returns the number of significant radix *b* digits present in <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>; if <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> is a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> zero, then the result is an *integer* zero. 
 
 
 
-For *normalized floats*, the results of <DictionaryLink  term={"float-digits"}><b>float-digits</b></DictionaryLink> and <DictionaryLink  term={"float-precision"}><b>float-precision</b></DictionaryLink> are the same, but the precision is less than the number of representation digits for a <ClLinks  term={"denormalized"}><i>denormalized</i></ClLinks> or zero number. 
+For *normalized floats*, the results of <DictionaryLink  term={"float-digits"}><b>float-digits</b></DictionaryLink> and <DictionaryLink  term={"float-precision"}><b>float-precision</b></DictionaryLink> are the same, but the precision is less than the number of representation digits for a <GlossaryTerm  term={"denormalized"}><i>denormalized</i></GlossaryTerm> or zero number. 
 
 
 
-<DictionaryLink  term={"integer-decode-float"}><b>integer-decode-float</b></DictionaryLink> computes three values that characterize <ClLinks  term={"float"}><i>float</i></ClLinks> - the significand scaled so as to be an *integer* , and the same last two values that are returned by <DictionaryLink  term={"decode-float"}><b>decode-float</b></DictionaryLink>. If <ClLinks  term={"float"}><i>float</i></ClLinks> is zero, <DictionaryLink  term={"integer-decode-float"}><b>integer-decode-float</b></DictionaryLink> returns zero as the first value. The second value bears the same relationship 
+<DictionaryLink  term={"integer-decode-float"}><b>integer-decode-float</b></DictionaryLink> computes three values that characterize <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> - the significand scaled so as to be an *integer* , and the same last two values that are returned by <DictionaryLink  term={"decode-float"}><b>decode-float</b></DictionaryLink>. If <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> is zero, <DictionaryLink  term={"integer-decode-float"}><b>integer-decode-float</b></DictionaryLink> returns zero as the first value. The second value bears the same relationship 
 
 
 
@@ -204,7 +204,7 @@ to the first value as for <DictionaryLink  term={"decode-float"}><b>decode-float
 
 
 
-The implementation’s representation for <ClLinks  term={"float"}><i>floats</i></ClLinks>. 
+The implementation’s representation for <GlossaryTerm  term={"float"}><i>floats</i></GlossaryTerm>. 
 
 
 
@@ -212,15 +212,15 @@ The implementation’s representation for <ClLinks  term={"float"}><i>floats</i>
 
 
 
-The functions <DictionaryLink  term={"decode-float"}><b>decode-float</b></DictionaryLink>, <DictionaryLink  term={"float-radix"}><b>float-radix</b></DictionaryLink>, <DictionaryLink  term={"float-digits"}><b>float-digits</b></DictionaryLink>, <DictionaryLink  term={"float-precision"}><b>float-precision</b></DictionaryLink>, and <DictionaryLink  term={"integer-decode-float"}><b>integer-decode-float</b></DictionaryLink> should signal an error if their only argument is not a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
+The functions <DictionaryLink  term={"decode-float"}><b>decode-float</b></DictionaryLink>, <DictionaryLink  term={"float-radix"}><b>float-radix</b></DictionaryLink>, <DictionaryLink  term={"float-digits"}><b>float-digits</b></DictionaryLink>, <DictionaryLink  term={"float-precision"}><b>float-precision</b></DictionaryLink>, and <DictionaryLink  term={"integer-decode-float"}><b>integer-decode-float</b></DictionaryLink> should signal an error if their only argument is not a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>. 
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"scale-float"}><b>scale-float</b></DictionaryLink> should signal an error if its first argument is not a <ClLinks  term={"float"}><i>float</i></ClLinks> or if its second argument is not an *integer* . 
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"scale-float"}><b>scale-float</b></DictionaryLink> should signal an error if its first argument is not a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> or if its second argument is not an *integer* . 
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"float-sign"}><b>float-sign</b></DictionaryLink> should signal an error if its first argument is not a <ClLinks  term={"float"}><i>float</i></ClLinks> or if its second argument is supplied but is not a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"float-sign"}><b>float-sign</b></DictionaryLink> should signal an error if its first argument is not a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> or if its second argument is supplied but is not a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>. 
 
 
 
@@ -228,7 +228,7 @@ The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term=
 
 
 
-The product of the first result of <DictionaryLink  term={"decode-float"}><b>decode-float</b></DictionaryLink> or <DictionaryLink  term={"integer-decode-float"}><b>integer-decode-float</b></DictionaryLink>, of the radix raised to the power of the second result, and of the third result is exactly equal to the value of <ClLinks  term={"float"}><i>float</i></ClLinks>. 
+The product of the first result of <DictionaryLink  term={"decode-float"}><b>decode-float</b></DictionaryLink> or <DictionaryLink  term={"integer-decode-float"}><b>integer-decode-float</b></DictionaryLink>, of the radix raised to the power of the second result, and of the third result is exactly equal to the value of <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>. 
 
 
 

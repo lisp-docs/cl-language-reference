@@ -1,4 +1,4 @@
-**make-random-state** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**make-random-state** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Creates a *fresh object* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"random-state"}><b>random-state</b></DictionaryLink> suitable for use as the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"random-state"}><b>\*random-state\*</b></DictionaryLink>. 
+Creates a *fresh object* of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"random-state"}><b>random-state</b></DictionaryLink> suitable for use as the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink  term={"random-state"}><b>\*random-state\*</b></DictionaryLink>. 
 
 
 
-If *state* is a *random state object*, the *new-state* is a <ClLinks  term={"copy"}><i>copy</i></ClLinks><sub>5</sub> of that <ClLinks  term={"object"}><i>object</i></ClLinks>. If *state* is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the *new-state* is a <ClLinks  term={"copy"}><i>copy</i></ClLinks><sub>5</sub> of the <GlossaryTerm styled={true} term={"current random state"}><i>current random state</i></GlossaryTerm>. If *state* is <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, the *new-state* is a *fresh random state object* that has been randomly initialized by some means. 
+If *state* is a *random state object*, the *new-state* is a <GlossaryTerm  term={"copy"}><i>copy</i></GlossaryTerm><sub>5</sub> of that <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. If *state* is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the *new-state* is a <GlossaryTerm  term={"copy"}><i>copy</i></GlossaryTerm><sub>5</sub> of the <GlossaryTerm styled={true} term={"current random state"}><i>current random state</i></GlossaryTerm>. If *state* is <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, the *new-state* is a *fresh random state object* that has been randomly initialized by some means. 
 
 
 
@@ -58,7 +58,7 @@ If *state* is a *random state object*, the *new-state* is a <ClLinks  term={"cop
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *state* is not a <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, or <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *state* is not a <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, or <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>. 
 
 
 
@@ -86,7 +86,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <Diction
 
 
 
-One important use of <DictionaryLink  term={"make-random-state"}><b>make-random-state</b></DictionaryLink> is to allow the same series of pseudo-random <ClLinks  term={"number"}><i>numbers</i></ClLinks> to be generated many times within a single program. 
+One important use of <DictionaryLink  term={"make-random-state"}><b>make-random-state</b></DictionaryLink> is to allow the same series of pseudo-random <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm> to be generated many times within a single program. 
 
 
 

@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"condition"}><i>Conditions</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"simple-type-error"}><b>simple-type-error</b></DictionaryLink> are like <ClLinks  term={"condition"}><i>conditions</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink>, except that they provide an alternate mechanism for specifying how the <ClLinks  term={"condition"}><i>condition</i></ClLinks> is to be *reported*; see the <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"simple-condition"}><b>simple-condition</b></DictionaryLink>. 
+<GlossaryTerm  term={"condition"}><i>Conditions</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"simple-type-error"}><b>simple-type-error</b></DictionaryLink> are like <GlossaryTerm  term={"condition"}><i>conditions</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink>, except that they provide an alternate mechanism for specifying how the <GlossaryTerm  term={"condition"}><i>condition</i></GlossaryTerm> is to be *reported*; see the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"simple-condition"}><b>simple-condition</b></DictionaryLink>. 
 
 
 

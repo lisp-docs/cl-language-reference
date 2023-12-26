@@ -1,4 +1,4 @@
-**mismatch** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**mismatch** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-*from-end*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*from-end*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-*test*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. *test-not<ClLinks  term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
+*test*—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. *test-not<ClLinks  term={"t"}><i>—a </i></ClLinks>designator* for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+<GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -50,19 +50,15 @@
 
 
 
-The specified subsequences of *sequence-1* and *sequence-2* are compared element-wise. The <ClLinks  term={"key"}><i>key</i></ClLinks> argument is used for both the *sequence-1* and the *sequence-2*. 
+The specified subsequences of *sequence-1* and *sequence-2* are compared element-wise. The <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> argument is used for both the *sequence-1* and the *sequence-2*. 
 
 
 
-If *sequence-1* and *sequence-2* are of equal length and match in every element, the result is <ClLinks  term={"false"}><i>false</i></ClLinks>. Otherwise, the result is a non-negative *integer* , the index within *sequence-1* of the leftmost or rightmost position, depending on *from-end*, at which the two subsequences fail to match. If one subsequence is shorter than and a matching prefix of the other, the result is the index relative to *sequence-1* beyond the last position tested. 
-
-
+If *sequence-1* and *sequence-2* are of equal length and match in every element, the result is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. Otherwise, the result is a non-negative *integer* , the index within *sequence-1* of the leftmost or rightmost position, depending on *from-end*, at which the two subsequences fail to match. If one subsequence is shorter than and a matching prefix of the other, the result is the index relative to *sequence-1* beyond the last position tested. 
 
 
 
 
-
- 
 
 
 
@@ -70,7 +66,11 @@ If *sequence-1* and *sequence-2* are of equal length and match in every element,
 
 
 
-If *from-end* is <ClLinks  term={"true"}><i>true</i></ClLinks>, then one plus the index of the rightmost position in which the *sequences* differ is returned. In effect, the subsequences are aligned at their right-hand ends; then, the last elements are compared, the penultimate elements, and so on. The index returned is an index relative to *sequence-1*. 
+ 
+
+
+
+If *from-end* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, then one plus the index of the rightmost position in which the *sequences* differ is returned. In effect, the subsequences are aligned at their right-hand ends; then, the last elements are compared, the penultimate elements, and so on. The index returned is an index relative to *sequence-1*. 
 
 
 
@@ -93,7 +93,7 @@ Section 3.6 (Traversal Rules and Side Effects)
 
 
 
-The :test-not <ClLinks  term={"argument"}><i>argument</i></ClLinks> is deprecated. 
+The :test-not <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> is deprecated. 
 
 
 

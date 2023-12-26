@@ -2,7 +2,7 @@
 
 
 
-To allow implementors and future Common Lisp standards to extend the syntax of numbers, a syntax for <GlossaryTerm styled={true} term={"potential number"}><i>potential numbers</i></GlossaryTerm> is defined that is more general than the syntax for numbers. A <ClLinks  term={"token"}><i>token</i></ClLinks> is a <GlossaryTerm styled={true} term={"potential number"}><i>potential number</i></GlossaryTerm> if it satisfies all of the following requirements: 
+To allow implementors and future Common Lisp standards to extend the syntax of numbers, a syntax for <GlossaryTerm styled={true} term={"potential number"}><i>potential numbers</i></GlossaryTerm> is defined that is more general than the syntax for numbers. A <GlossaryTerm  term={"token"}><i>token</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"potential number"}><i>potential number</i></GlossaryTerm> if it satisfies all of the following requirements: 
 
 
 
@@ -10,7 +10,7 @@ To allow implementors and future Common Lisp standards to extend the syntax of n
 
 
 
-2\. The <ClLinks  term={"token"}><i>token</i></ClLinks> contains at least one digit. Letters may be considered to be digits, depending on the <GlossaryTerm styled={true} term={"current input base"}><i>current input base</i></GlossaryTerm>, but only in <ClLinks  term={"token"}><i>tokens</i></ClLinks> containing no decimal points. 
+2\. The <GlossaryTerm  term={"token"}><i>token</i></GlossaryTerm> contains at least one digit. Letters may be considered to be digits, depending on the <GlossaryTerm styled={true} term={"current input base"}><i>current input base</i></GlossaryTerm>, but only in <GlossaryTerm  term={"token"}><i>tokens</i></GlossaryTerm> containing no decimal points. 
 
 
 
@@ -22,11 +22,11 @@ To allow implementors and future Common Lisp standards to extend the syntax of n
 
 
 
-4\. The <ClLinks  term={"token"}><i>token</i></ClLinks> does not end with a sign. 
+4\. The <GlossaryTerm  term={"token"}><i>token</i></GlossaryTerm> does not end with a sign. 
 
 
 
-If a <GlossaryTerm styled={true} term={"potential number"}><i>potential number</i></GlossaryTerm> has number syntax, a <ClLinks  term={"number"}><i>number</i></ClLinks> of the appropriate type is constructed and returned, if the <ClLinks  term={"number"}><i>number</i></ClLinks> is representable in an implementation. A <ClLinks  term={"number"}><i>number</i></ClLinks> will not be representable in an implementation if it is outside the boundaries set by the <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> constants for <ClLinks  term={"number"}><i>numbers</i></ClLinks>. For example, specifying too large or too small an exponent for a <ClLinks  term={"float"}><i>float</i></ClLinks> may make the <ClLinks  term={"number"}><i>number</i></ClLinks> impossible to represent in the implementation. A <ClLinks  term={"ratio"}><i>ratio</i></ClLinks> with denominator zero (such as -35/000) is not represented in any implementation. When a <ClLinks  term={"token"}><i>token</i></ClLinks> with the syntax of a number cannot be converted to an internal <ClLinks  term={"number"}><i>number</i></ClLinks> , an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"reader-error"}><b>reader-error</b></DictionaryLink> is signaled. An error must not be signaled for specifying too many significant digits for a <ClLinks  term={"float"}><i>float</i></ClLinks>; a truncated or rounded value should be produced. 
+If a <GlossaryTerm styled={true} term={"potential number"}><i>potential number</i></GlossaryTerm> has number syntax, a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> of the appropriate type is constructed and returned, if the <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is representable in an implementation. A <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> will not be representable in an implementation if it is outside the boundaries set by the <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> constants for <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm>. For example, specifying too large or too small an exponent for a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> may make the <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> impossible to represent in the implementation. A <GlossaryTerm  term={"ratio"}><i>ratio</i></GlossaryTerm> with denominator zero (such as -35/000) is not represented in any implementation. When a <GlossaryTerm  term={"token"}><i>token</i></GlossaryTerm> with the syntax of a number cannot be converted to an internal <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> , an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"reader-error"}><b>reader-error</b></DictionaryLink> is signaled. An error must not be signaled for specifying too many significant digits for a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>; a truncated or rounded value should be produced. 
 
 
 

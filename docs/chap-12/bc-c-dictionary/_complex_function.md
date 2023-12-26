@@ -1,4 +1,4 @@
-**complex** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**complex** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"complex"}><i>complex</i></ClLinks>—a <ClLinks  term={"rational"}><i>rational</i></ClLinks> or a <ClLinks  term={"complex"}><i>complex</i></ClLinks> . 
+<GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm>—a <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm> or a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> . 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-<DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> returns a <ClLinks  term={"number"}><i>number</i></ClLinks> whose real part is *realpart* and whose imaginary part is *imagpart*. 
+<DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> returns a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> whose real part is *realpart* and whose imaginary part is *imagpart*. 
 
 
 
-If *realpart* is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> and *imagpart* is the <ClLinks  term={"rational"}><i>rational</i></ClLinks> number zero, the result of <DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> is *realpart*, a <ClLinks  term={"rational"}><i>rational</i></ClLinks>. Otherwise, the result is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> . 
+If *realpart* is a <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm> and *imagpart* is the <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm> number zero, the result of <DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> is *realpart*, a <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm>. Otherwise, the result is a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> . 
 
 
 
-If either *realpart* or *imagpart* is a <ClLinks  term={"float"}><i>float</i></ClLinks>, the non-<ClLinks  term={"float"}><i>float</i></ClLinks> is converted to a <ClLinks  term={"float"}><i>float</i></ClLinks> before the <ClLinks  term={"complex"}><i>complex</i></ClLinks> is created. If *imagpart* is not supplied, the imaginary part is a zero of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *realpart*; *i.e.*, (coerce 0 (type-of *realpart*)) is effectively used. 
+If either *realpart* or *imagpart* is a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>, the non-<GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> is converted to a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> before the <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> is created. If *imagpart* is not supplied, the imaginary part is a zero of the same <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> as *realpart*; *i.e.*, (coerce 0 (type-of *realpart*)) is effectively used. 
 
 
 

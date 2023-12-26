@@ -2,7 +2,7 @@
 
 
 
-An extension of data-directed destructuring of <ClLinks  term={"tree"}><i>trees</i></ClLinks> is lambda-list-directed destructuring. This derives from the analogy between the three-element destructuring pattern 
+An extension of data-directed destructuring of <GlossaryTerm  term={"tree"}><i>trees</i></GlossaryTerm> is lambda-list-directed destructuring. This derives from the analogy between the three-element destructuring pattern 
 
 
 
@@ -50,7 +50,7 @@ to match against this destructuring (sub)-pattern, the default form is evaluated
 
 
 
-The next element is a destructuring pattern that matches the rest of the list. **&amp;body** is identical to **&amp;rest** but declares that what is being matched is a list of forms that constitutes the body of <ClLinks  term={"form"}><i>form</i></ClLinks>. This next element must be the last unless a <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keyword</i></GlossaryTerm> follows it. 
+The next element is a destructuring pattern that matches the rest of the list. **&amp;body** is identical to **&amp;rest** but declares that what is being matched is a list of forms that constitutes the body of <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. This next element must be the last unless a <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keyword</i></GlossaryTerm> follows it. 
 
 
 
@@ -66,7 +66,7 @@ The remaining elements are not destructuring patterns at all, but are auxiliary 
 
 
 
-The next element is a destructuring pattern that matches the entire form in a macro, or the entire <ClLinks  term={"subexpression"}><i>subexpression</i></ClLinks> at inner levels. 
+The next element is a destructuring pattern that matches the entire form in a macro, or the entire <GlossaryTerm  term={"subexpression"}><i>subexpression</i></GlossaryTerm> at inner levels. 
 
 
 
@@ -78,7 +78,7 @@ Each following element is one of
 
 
 
-a <ClLinks  term={"variable"}><i>variable</i></ClLinks>, 
+a <GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm>, 
 
 
 

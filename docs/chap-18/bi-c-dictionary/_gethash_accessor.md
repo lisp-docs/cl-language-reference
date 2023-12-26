@@ -1,4 +1,4 @@
-**gethash** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**gethash** <GlossaryTerm  term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -19,7 +19,7 @@
 
 
 
-<ClLinks  term={"key"}><i>key</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -27,11 +27,11 @@
 
 
 
-*default*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+*default*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"value"}><i>value</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -43,15 +43,15 @@
 
 
 
-<ClLinks  term={"value"}><i>Value</i></ClLinks> is the <ClLinks  term={"object"}><i>object</i></ClLinks> in *hash-table* whose <ClLinks  term={"key"}><i>key</i></ClLinks> is the <ClLinks  term={"same"}><i>same</i></ClLinks> as <ClLinks  term={"key"}><i>key</i></ClLinks> under the *hash-table*’s equivalence test. If there is no such entry, <ClLinks  term={"value"}><i>value</i></ClLinks> is the *default*. 
+<GlossaryTerm  term={"value"}><i>Value</i></GlossaryTerm> is the <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> in *hash-table* whose <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> is the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> as <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> under the *hash-table*’s equivalence test. If there is no such entry, <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> is the *default*. 
 
 
 
-*Present-p* is <ClLinks  term={"true"}><i>true</i></ClLinks> if an entry is found; otherwise, it is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*Present-p* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if an entry is found; otherwise, it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> may be used with <DictionaryLink  term={"gethash"}><b>gethash</b></DictionaryLink> to modify the <ClLinks  term={"value"}><i>value</i></ClLinks> associated with a given <ClLinks  term={"key"}><i>key</i></ClLinks>, or to add a new entry. When a <DictionaryLink  term={"gethash"}><b>gethash</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> is used as a <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> <ClLinks  term={"place"}><i>place</i></ClLinks>, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its <ClLinks  term={"value"}><i>value</i></ClLinks> is ignored. 
+<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> may be used with <DictionaryLink  term={"gethash"}><b>gethash</b></DictionaryLink> to modify the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> associated with a given <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm>, or to add a new entry. When a <DictionaryLink  term={"gethash"}><b>gethash</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is used as a <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> is ignored. 
 
 
 

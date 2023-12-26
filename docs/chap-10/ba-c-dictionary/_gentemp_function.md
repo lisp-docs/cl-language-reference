@@ -1,4 +1,4 @@
-**gentemp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**gentemp** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-*prefix*—a <ClLinks  term={"string"}><i>string</i></ClLinks>. The default is "T". 
+*prefix*—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. The default is "T". 
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
-*new-symbol*—a <ClLinks  term={"fresh"}><i>fresh</i></ClLinks>, *interned symbol*. 
+*new-symbol*—a <GlossaryTerm  term={"fresh"}><i>fresh</i></GlossaryTerm>, *interned symbol*. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<DictionaryLink  term={"gentemp"}><b>gentemp</b></DictionaryLink> creates and returns a *fresh symbol*, <GlossaryTerm styled={true} term={"interned"}><i>interned</i></GlossaryTerm> in the indicated <ClLinks  term={"package"}><i>package</i></ClLinks>. The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is guaranteed to be one that was not previously <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. It is neither <ClLinks  term={"bound"}><i>bound</i></ClLinks> nor <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>, and has a *null property list*. 
+<DictionaryLink  term={"gentemp"}><b>gentemp</b></DictionaryLink> creates and returns a *fresh symbol*, <GlossaryTerm styled={true} term={"interned"}><i>interned</i></GlossaryTerm> in the indicated <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. The <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is guaranteed to be one that was not previously <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. It is neither <GlossaryTerm  term={"bound"}><i>bound</i></GlossaryTerm> nor <GlossaryTerm  term={"fbound"}><i>fbound</i></GlossaryTerm>, and has a *null property list*. 
 
 
 
-The <ClLinks  term={"name"}><i>name</i></ClLinks> of the *new-symbol* is the concatenation of the *prefix* and a suffix, which is taken from an internal counter used only by <DictionaryLink  term={"gentemp"}><b>gentemp</b></DictionaryLink>. (If a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by that name is already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, the counter is incremented as many times as is necessary to produce a <ClLinks  term={"name"}><i>name</i></ClLinks> that is not already the <ClLinks  term={"name"}><i>name</i></ClLinks> of a *symbol accessible* in <ClLinks  term={"package"}><i>package</i></ClLinks>.) 
+The <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of the *new-symbol* is the concatenation of the *prefix* and a suffix, which is taken from an internal counter used only by <DictionaryLink  term={"gentemp"}><b>gentemp</b></DictionaryLink>. (If a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> by that name is already <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, the counter is incremented as many times as is necessary to produce a <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> that is not already the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of a *symbol accessible* in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>.) 
 
 
 
@@ -57,7 +57,7 @@ Its internal counter is incremented one or more times.
 
 
 
-<ClLinks  term={"intern"}><i>Interns</i></ClLinks> the *new-symbol* in <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<GlossaryTerm  term={"intern"}><i>Interns</i></GlossaryTerm> the *new-symbol* in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
@@ -65,7 +65,7 @@ Its internal counter is incremented one or more times.
 
 
 
-The current state of its internal counter, and the current state of the <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+The current state of its internal counter, and the current state of the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
@@ -85,7 +85,7 @@ The current state of its internal counter, and the current state of the <ClLinks
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *prefix* is not a <ClLinks  term={"string"}><i>string</i></ClLinks>. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *prefix* is not a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 
@@ -105,7 +105,7 @@ The function <DictionaryLink  term={"gentemp"}><b>gentemp</b></DictionaryLink> i
 
 
 
-If <ClLinks  term={"package"}><i>package</i></ClLinks> is the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>, the result is an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks>. Otherwise, the result is an <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+If <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> is the KEYWORD <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, the result is an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm> of <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. Otherwise, the result is an <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm> of <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
@@ -113,7 +113,7 @@ The <DictionaryLink  term={"gentemp"}><b>gentemp</b></DictionaryLink> internal c
 
 
 
-Just because <DictionaryLink  term={"gentemp"}><b>gentemp</b></DictionaryLink> creates a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> which did not previously exist does not mean that such a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> might not be seen in the future (*e.g.*, in a data file—perhaps even created by the same program in another session). As such, this symbol is not truly unique in the same sense as a <ClLinks  term={"gensym"}><i>gensym</i></ClLinks> would be. In particular, programs which do automatic code generation should be careful not to attach global attributes to such generated <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> (*e.g.*, <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declarations</i></ClLinks>) and then write them into a file because such global attributes might, in a different session, end up applying to other <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that were automatically generated on another day for some other purpose. 
+Just because <DictionaryLink  term={"gentemp"}><b>gentemp</b></DictionaryLink> creates a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> which did not previously exist does not mean that such a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> might not be seen in the future (*e.g.*, in a data file—perhaps even created by the same program in another session). As such, this symbol is not truly unique in the same sense as a <GlossaryTerm  term={"gensym"}><i>gensym</i></GlossaryTerm> would be. In particular, programs which do automatic code generation should be careful not to attach global attributes to such generated <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> (*e.g.*, <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> <GlossaryTerm  term={"declaration"}><i>declarations</i></GlossaryTerm>) and then write them into a file because such global attributes might, in a different session, end up applying to other <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> that were automatically generated on another day for some other purpose. 
 
 
 

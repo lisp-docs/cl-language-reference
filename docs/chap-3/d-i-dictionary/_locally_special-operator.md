@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"locally"}><b>locally</b></DictionaryLink> <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* *! \{result\}*\* 
+<DictionaryLink  term={"locally"}><b>locally</b></DictionaryLink> <GlossaryTerm  term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\* *! \{result\}*\* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks  term={"declaration"}><i>Declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<GlossaryTerm  term={"declaration"}><i>Declaration</i></GlossaryTerm>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
+<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> of the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Sequentially evaluates a body of <ClLinks  term={"form"}><i>forms</i></ClLinks> in a <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> where the given <ClLinks  term={"declaration"}><i>declarations</i></ClLinks> have e↵ect. 
+Sequentially evaluates a body of <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in a <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> where the given <GlossaryTerm  term={"declaration"}><i>declarations</i></GlossaryTerm> have e↵ect. 
 
 
 
@@ -78,11 +78,11 @@ Sequentially evaluates a body of <ClLinks  term={"form"}><i>forms</i></ClLinks> 
 
 
 
-The <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declaration may be used with <DictionaryLink  term={"locally"}><b>locally</b></DictionaryLink> to a↵ect references to, rather than <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of, <ClLinks  term={"variable"}><i>variables</i></ClLinks>. 
+The <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declaration may be used with <DictionaryLink  term={"locally"}><b>locally</b></DictionaryLink> to a↵ect references to, rather than <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm> of, <GlossaryTerm  term={"variable"}><i>variables</i></GlossaryTerm>. 
 
 
 
-If a <DictionaryLink  term={"locally"}><b>locally</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the body <ClLinks  term={"form"}><i>forms</i></ClLinks> are also processed as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>. See Section 3.2.3 (File Compilation). 
+If a <DictionaryLink  term={"locally"}><b>locally</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the body <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> are also processed as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>. See Section 3.2.3 (File Compilation). 
 
 
 

@@ -1,4 +1,4 @@
-**declaration** <ClLinks  term={"declaration"}><i>Declaration</i></ClLinks> 
+**declaration** <GlossaryTerm  term={"declaration"}><i>Declaration</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-(declaration <ClLinks  term={"name"}><i>\{name\}</i></ClLinks>\*) 
+(declaration <GlossaryTerm  term={"name"}><i>\{name\}</i></GlossaryTerm>\*) 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks> only 
+<GlossaryTerm  term={"proclamation"}><i>proclamation</i></GlossaryTerm> only 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Advises the compiler that each <ClLinks  term={"name"}><i>name</i></ClLinks> is a valid but potentially non-standard declaration name. The purpose of this is to tell one compiler not to issue warnings for declarations meant for another compiler or other program processor. 
+Advises the compiler that each <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> is a valid but potentially non-standard declaration name. The purpose of this is to tell one compiler not to issue warnings for declarations meant for another compiler or other program processor. 
 
 
 

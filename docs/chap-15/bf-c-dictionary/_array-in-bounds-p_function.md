@@ -1,4 +1,4 @@
-**array-in-bounds-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**array-in-bounds-p** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"array-in-bounds-p"}><b>array-in-bounds-p</b></DictionaryLink> <ClLinks  term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → generalized-boolean* 
+<DictionaryLink  term={"array-in-bounds-p"}><b>array-in-bounds-p</b></DictionaryLink> <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> &amp;rest *subscripts → generalized-boolean* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"array"}><i>array</i></ClLinks>—an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+<GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>—an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-*subscripts*—a list of *integers* of length equal to the <ClLinks  term={"rank"}><i>rank</i></ClLinks> of the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+*subscripts*—a list of *integers* of length equal to the <GlossaryTerm  term={"rank"}><i>rank</i></GlossaryTerm> of the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the *subscripts* are all in bounds for <ClLinks  term={"array"}><i>array</i></ClLinks>; otherwise returns <ClLinks  term={"false"}><i>false</i></ClLinks>. (If <ClLinks  term={"array"}><i>array</i></ClLinks> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , that <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is ignored.) 
+Returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if the *subscripts* are all in bounds for <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>; otherwise returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. (If <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> is a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , that <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is ignored.) 
 
 
 

@@ -1,4 +1,4 @@
-**rename-package** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**rename-package** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*new-nicknames*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"string designator"}><i>string designators</i></GlossaryTerm>. The default is the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. 
+*new-nicknames*—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"string designator"}><i>string designators</i></GlossaryTerm>. The default is the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Replaces the name and nicknames of <ClLinks  term={"package"}><i>package</i></ClLinks>. The old name and all of the old nicknames of <ClLinks  term={"package"}><i>package</i></ClLinks> are eliminated and are replaced by *new-name* and *new-nicknames*. 
+Replaces the name and nicknames of <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. The old name and all of the old nicknames of <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> are eliminated and are replaced by *new-name* and *new-nicknames*. 
 
 
 

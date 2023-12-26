@@ -14,7 +14,7 @@
 
 
 
-A <ClLinks  term={"function"}><i>function</i></ClLinks> is an <ClLinks  term={"object"}><i>object</i></ClLinks> that represents code to be executed when an appropriate number of arguments is supplied. A <ClLinks  term={"function"}><i>function</i></ClLinks> is produced by the <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm>, the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"coerce"}><b>coerce</b></DictionaryLink>, or the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink>. A <ClLinks  term={"function"}><i>function</i></ClLinks> can be directly invoked by using it as the first argument to <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink>, <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink>, or <DictionaryLink  term={"multiple-value-call"}><b>multiple-value-call</b></DictionaryLink>. 
+A <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> that represents code to be executed when an appropriate number of arguments is supplied. A <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is produced by the <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm>, the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"coerce"}><b>coerce</b></DictionaryLink>, or the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink>. A <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> can be directly invoked by using it as the first argument to <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink>, <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink>, or <DictionaryLink  term={"multiple-value-call"}><b>multiple-value-call</b></DictionaryLink>. 
 
 
 
@@ -66,11 +66,11 @@ Specializing.
 
 
 
-The list form of the <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> *type-specifier* can be used only for declaration and not for discrimination. Every element of this <ClLinks  term={"type"}><i>type</i></ClLinks> is a <ClLinks  term={"function"}><i>function</i></ClLinks> that accepts arguments of the types specified by the *argj-types* and returns values that are members of the <ClLinks  term={"type"}><i>types</i></ClLinks> specified by *value-type*. The **&amp;optional**, **&amp;rest**, **&amp;key**, and **&amp;allow-other-keys** markers can appear in the list of argument types. The <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> provided with **&amp;rest** is the <ClLinks  term={"type"}><i>type</i></ClLinks> of each actual argument, not the <ClLinks  term={"type"}><i>type</i></ClLinks> of the corresponding variable. 
+The list form of the <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> *type-specifier* can be used only for declaration and not for discrimination. Every element of this <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> that accepts arguments of the types specified by the *argj-types* and returns values that are members of the <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> specified by *value-type*. The **&amp;optional**, **&amp;rest**, **&amp;key**, and **&amp;allow-other-keys** markers can appear in the list of argument types. The <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> provided with **&amp;rest** is the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> of each actual argument, not the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> of the corresponding variable. 
 
 
 
-The **&amp;key** parameters should be supplied as lists of the form (*keyword type*). The <ClLinks  term={"keyword"}><i>keyword</i></ClLinks> must be a valid keyword-name symbol as must be supplied in the actual arguments of a call. This is usually a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks> but can be any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. When **&amp;key** is given in a <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> *type specifier lambda list*, the <GlossaryTerm styled={true} term={"keyword parameter"}><i>keyword parameters</i></GlossaryTerm> given are exhaustive unless **&amp;allow-other-keys** is also present. **&amp;allow-other-keys** is an indication that other keyword arguments might actually be supplied and, if supplied, can be used. For example, the <ClLinks  term={"type"}><i>type</i></ClLinks> of the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"make-list"}><b>make-list</b></DictionaryLink> could be declared as follows:  
+The **&amp;key** parameters should be supplied as lists of the form (*keyword type*). The <GlossaryTerm  term={"keyword"}><i>keyword</i></GlossaryTerm> must be a valid keyword-name symbol as must be supplied in the actual arguments of a call. This is usually a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> in the KEYWORD <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> but can be any <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. When **&amp;key** is given in a <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> *type specifier lambda list*, the <GlossaryTerm styled={true} term={"keyword parameter"}><i>keyword parameters</i></GlossaryTerm> given are exhaustive unless **&amp;allow-other-keys** is also present. **&amp;allow-other-keys** is an indication that other keyword arguments might actually be supplied and, if supplied, can be used. For example, the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> of the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"make-list"}><b>make-list</b></DictionaryLink> could be declared as follows:  
 
 
 
@@ -82,7 +82,7 @@ The **&amp;key** parameters should be supplied as lists of the form (*keyword ty
 
 
 
-The *value-type* can be a <DictionaryLink  term={"values"}><b>values</b></DictionaryLink> <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> in order to indicate the <ClLinks  term={"type"}><i>types</i></ClLinks> of <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm>. Consider a declaration of the following form: 
+The *value-type* can be a <DictionaryLink  term={"values"}><b>values</b></DictionaryLink> <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> in order to indicate the <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm>. Consider a declaration of the following form: 
 
 
 
@@ -90,15 +90,15 @@ The *value-type* can be a <DictionaryLink  term={"values"}><b>values</b></Dictio
 
 
 
-Any <ClLinks  term={"form"}><i>form</i></ClLinks> (f arg0 arg1 ...) within the scope of that declaration is equivalent to the following: (the val-type (f (the arg0-type arg0) (the arg1-type arg1) ...)) 
+Any <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> (f arg0 arg1 ...) within the scope of that declaration is equivalent to the following: (the val-type (f (the arg0-type arg0) (the arg1-type arg1) ...)) 
 
 
 
-That is, the consequences are undefined if any of the arguments are not of the specified <ClLinks  term={"type"}><i>types</i></ClLinks> or the result is not of the specified <ClLinks  term={"type"}><i>type</i></ClLinks>. In particular, if any argument is not of the correct <ClLinks  term={"type"}><i>type</i></ClLinks>, the result is not guaranteed to be of the specified <ClLinks  term={"type"}><i>type</i></ClLinks>. 
+That is, the consequences are undefined if any of the arguments are not of the specified <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> or the result is not of the specified <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>. In particular, if any argument is not of the correct <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>, the result is not guaranteed to be of the specified <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>. 
 
 
 
-Thus, an <DictionaryLink  term={"ftype"}><b>ftype</b></DictionaryLink> declaration for a <ClLinks  term={"function"}><i>function</i></ClLinks> describes <ClLinks  term={"call"}><i>calls</i></ClLinks> to the <ClLinks  term={"function"}><i>function</i></ClLinks>, not the actual definition of the <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+Thus, an <DictionaryLink  term={"ftype"}><b>ftype</b></DictionaryLink> declaration for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> describes <GlossaryTerm  term={"call"}><i>calls</i></GlossaryTerm> to the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>, not the actual definition of the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 
@@ -110,11 +110,11 @@ Consider a declaration of the following form:
 
 
 
-This declaration has the interpretation that, within the scope of the declaration, the consequences are unspecified if the value of fn-valued-variable is called with arguments not of the specified <ClLinks  term={"type"}><i>types</i></ClLinks>; the value resulting from a valid call will be of type val-type. 
+This declaration has the interpretation that, within the scope of the declaration, the consequences are unspecified if the value of fn-valued-variable is called with arguments not of the specified <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm>; the value resulting from a valid call will be of type val-type. 
 
 
 
-As with variable type declarations, nested declarations imply intersections of <ClLinks  term={"type"}><i>types</i></ClLinks>, as follows: 
+As with variable type declarations, nested declarations imply intersections of <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm>, as follows: 
 
 
 

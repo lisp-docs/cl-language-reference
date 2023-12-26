@@ -1,4 +1,4 @@
-**every, some, notevery, notany** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**every, some, notevery, notany** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,19 +6,19 @@
 
 
 
-<DictionaryLink  term={"every"}><b>every</b></DictionaryLink> <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> &amp;rest *sequences*<sup>+</sup> → generalized-boolean 
+<DictionaryLink  term={"every"}><b>every</b></DictionaryLink> <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> &amp;rest *sequences*<sup>+</sup> → generalized-boolean 
 
 
 
-<DictionaryLink  term={"some"}><b>some</b></DictionaryLink> <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> &amp;rest *sequences*<sup>+</sup> → result 
+<DictionaryLink  term={"some"}><b>some</b></DictionaryLink> <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> &amp;rest *sequences*<sup>+</sup> → result 
 
 
 
-<DictionaryLink  term={"notevery"}><b>notevery</b></DictionaryLink> <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> &amp;rest *sequences*<sup>+</sup> → generalized-boolean 
+<DictionaryLink  term={"notevery"}><b>notevery</b></DictionaryLink> <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> &amp;rest *sequences*<sup>+</sup> → generalized-boolean 
 
 
 
-<DictionaryLink  term={"notany"}><b>notany</b></DictionaryLink> <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> &amp;rest *sequences*<sup>+</sup> → generalized-boolean 
+<DictionaryLink  term={"notany"}><b>notany</b></DictionaryLink> <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> &amp;rest *sequences*<sup>+</sup> → generalized-boolean 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<ClLinks  term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of as many <ClLinks  term={"argument"}><i>arguments</i></ClLinks> as there are *sequences*. *sequence*—a *sequence*. 
+<GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm>—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of as many <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> as there are *sequences*. *sequence*—a *sequence*. 
 
 
 
-*result*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*result*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -42,27 +42,27 @@
 
 
 
-<DictionaryLink  term={"every"}><b>every</b></DictionaryLink>, <DictionaryLink  term={"some"}><b>some</b></DictionaryLink>, <DictionaryLink  term={"notevery"}><b>notevery</b></DictionaryLink>, and <DictionaryLink  term={"notany"}><b>notany</b></DictionaryLink> test <ClLinks  term={"element"}><i>elements</i></ClLinks> of *sequences* for satisfaction of a given <ClLinks  term={"predicate"}><i>predicate</i></ClLinks>. The first argument to <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> is an <ClLinks  term={"element"}><i>element</i></ClLinks> of the first *sequence*; each succeeding argument is an <ClLinks  term={"element"}><i>element</i></ClLinks> of a succeeding *sequence*. 
+<DictionaryLink  term={"every"}><b>every</b></DictionaryLink>, <DictionaryLink  term={"some"}><b>some</b></DictionaryLink>, <DictionaryLink  term={"notevery"}><b>notevery</b></DictionaryLink>, and <DictionaryLink  term={"notany"}><b>notany</b></DictionaryLink> test <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of *sequences* for satisfaction of a given <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm>. The first argument to <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> is an <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of the first *sequence*; each succeeding argument is an <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of a succeeding *sequence*. 
 
 
 
-<ClLinks  term={"predicate"}><i>Predicate</i></ClLinks> is first applied to the elements with index 0 in each of the *sequences*, and possibly then to the elements with index 1, and so on, until a termination criterion is met or the end of the shortest of the *sequences* is reached. 
+<GlossaryTerm  term={"predicate"}><i>Predicate</i></GlossaryTerm> is first applied to the elements with index 0 in each of the *sequences*, and possibly then to the elements with index 1, and so on, until a termination criterion is met or the end of the shortest of the *sequences* is reached. 
 
 
 
-<DictionaryLink  term={"every"}><b>every</b></DictionaryLink> returns <ClLinks  term={"false"}><i>false</i></ClLinks> as soon as any invocation of <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> returns <ClLinks  term={"false"}><i>false</i></ClLinks>. If the end of a *sequence* is reached, <DictionaryLink  term={"every"}><b>every</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks>. Thus, <DictionaryLink  term={"every"}><b>every</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if and only if every invocation of <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+<DictionaryLink  term={"every"}><b>every</b></DictionaryLink> returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> as soon as any invocation of <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. If the end of a *sequence* is reached, <DictionaryLink  term={"every"}><b>every</b></DictionaryLink> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. Thus, <DictionaryLink  term={"every"}><b>every</b></DictionaryLink> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if and only if every invocation of <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"some"}><b>some</b></DictionaryLink> returns the first <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks> value which is returned by an invocation of <ClLinks  term={"predicate"}><i>predicate</i></ClLinks>. If the end of a *sequence* is reached without any invocation of the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> returning <ClLinks  term={"true"}><i>true</i></ClLinks>, <DictionaryLink  term={"some"}><b>some</b></DictionaryLink> returns <ClLinks  term={"false"}><i>false</i></ClLinks>. Thus, <DictionaryLink  term={"some"}><b>some</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if and only if some invocation of <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+<DictionaryLink  term={"some"}><b>some</b></DictionaryLink> returns the first <GlossaryTerm  term={"non-nil"}><i>non-nil</i></GlossaryTerm> value which is returned by an invocation of <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm>. If the end of a *sequence* is reached without any invocation of the <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> returning <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, <DictionaryLink  term={"some"}><b>some</b></DictionaryLink> returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. Thus, <DictionaryLink  term={"some"}><b>some</b></DictionaryLink> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if and only if some invocation of <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"notany"}><b>notany</b></DictionaryLink> returns <ClLinks  term={"false"}><i>false</i></ClLinks> as soon as any invocation of <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks>. If the end of a *sequence* is reached, <DictionaryLink  term={"notany"}><b>notany</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks>. Thus, <DictionaryLink  term={"notany"}><b>notany</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if and only if it is not the case that any invocation of <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+<DictionaryLink  term={"notany"}><b>notany</b></DictionaryLink> returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> as soon as any invocation of <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. If the end of a *sequence* is reached, <DictionaryLink  term={"notany"}><b>notany</b></DictionaryLink> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. Thus, <DictionaryLink  term={"notany"}><b>notany</b></DictionaryLink> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if and only if it is not the case that any invocation of <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"notevery"}><b>notevery</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> as soon as any invocation of <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> returns <ClLinks  term={"false"}><i>false</i></ClLinks>. If the end of a *sequence* is reached, <DictionaryLink  term={"notevery"}><b>notevery</b></DictionaryLink> returns <ClLinks  term={"false"}><i>false</i></ClLinks>. Thus, <DictionaryLink  term={"notevery"}><b>notevery</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if and only if it is not the case that every invocation of <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+<DictionaryLink  term={"notevery"}><b>notevery</b></DictionaryLink> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> as soon as any invocation of <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. If the end of a *sequence* is reached, <DictionaryLink  term={"notevery"}><b>notevery</b></DictionaryLink> returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. Thus, <DictionaryLink  term={"notevery"}><b>notevery</b></DictionaryLink> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if and only if it is not the case that every invocation of <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. 
 
 
 
@@ -89,11 +89,11 @@ Data and Control
 
 
 
-Should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its first argument is neither a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> nor a <ClLinks  term={"function"}><i>function</i></ClLinks> or if any subsequent argument is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its first argument is neither a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> nor a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> or if any subsequent argument is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
-Other exceptional situations are possible, depending on the nature of the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks>. 
+Other exceptional situations are possible, depending on the nature of the <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm>. 
 
 
 

@@ -1,4 +1,4 @@
-**shadowing-import** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**shadowing-import** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink> <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> &amp;optional *package →* <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
+<DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink> <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> &amp;optional *package →* <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"symbol"}><i>symbols</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
+<GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks> —a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> —a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
@@ -26,19 +26,15 @@
 
 
 
-<DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink> is like <DictionaryLink  term={"import"}><b>import</b></DictionaryLink>, but it does not signal an error even if the importation of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> would shadow some <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink> is like <DictionaryLink  term={"import"}><b>import</b></DictionaryLink>, but it does not signal an error even if the importation of a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> would shadow some <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> already <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink> inserts each of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> into <ClLinks  term={"package"}><i>package</i></ClLinks> as an internal symbol, regardless of whether another <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> of the same name is shadowed by this action. If a different <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> of the same name is already <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is first <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> from <ClLinks  term={"package"}><i>package</i></ClLinks>. The new <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is added to <ClLinks  term={"package"}><i>package</i></ClLinks>’s shadowing-symbols list. 
-
-
+<DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink> inserts each of <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> into <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> as an internal symbol, regardless of whether another <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> of the same name is shadowed by this action. If a different <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> of the same name is already <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, that <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is first <GlossaryTerm  term={"uninterned"}><i>uninterned</i></GlossaryTerm> from <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. The new <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is added to <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>’s shadowing-symbols list. 
 
 
 
 
-
- 
 
 
 
@@ -46,7 +42,11 @@
 
 
 
-<DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink> does name-conflict checking to the extent that it checks whether a distinct existing <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> with the same name is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks>; if so, it is shadowed by the new <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, which implies that it must be uninterned if it was <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+ 
+
+
+
+<DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink> does name-conflict checking to the extent that it checks whether a distinct existing <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> with the same name is <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm>; if so, it is shadowed by the new <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, which implies that it must be uninterned if it was <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
@@ -67,7 +67,7 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>’s shadowing-symbols list is modified. 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>’s shadowing-symbols list is modified. 
 
 
 

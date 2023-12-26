@@ -1,4 +1,4 @@
-**stream-external-format** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**stream-external-format** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm>. 
+<GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"format"}><i>format</i></ClLinks>—an <GlossaryTerm styled={true} term={"external file format"}><i>external file format</i></GlossaryTerm>. 
+<GlossaryTerm  term={"format"}><i>format</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"external file format"}><i>external file format</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns an <GlossaryTerm styled={true} term={"external file format designator"}><i>external file format designator</i></GlossaryTerm> for the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Returns an <GlossaryTerm styled={true} term={"external file format designator"}><i>external file format designator</i></GlossaryTerm> for the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
@@ -46,7 +46,7 @@ Returns an <GlossaryTerm styled={true} term={"external file format designator"}>
 
 
 
-the :external-format <ClLinks  term={"argument"}><i>argument</i></ClLinks> to the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"open"}><b>open</b></DictionaryLink> and the <DictionaryLink  term={"with-open-file"}><b>with-open-file</b></DictionaryLink> <ClLinks  term={"macro"}><i>macro</i></ClLinks>. 
+the :external-format <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> to the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"open"}><b>open</b></DictionaryLink> and the <DictionaryLink  term={"with-open-file"}><b>with-open-file</b></DictionaryLink> <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm>. 
 
 
 
@@ -54,7 +54,7 @@ the :external-format <ClLinks  term={"argument"}><i>argument</i></ClLinks> to th
 
 
 
-The <ClLinks  term={"format"}><i>format</i></ClLinks> returned is not necessarily meaningful to other <ClLinks  term={"implementation"}><i>implementations</i></ClLinks>. 
+The <GlossaryTerm  term={"format"}><i>format</i></GlossaryTerm> returned is not necessarily meaningful to other <GlossaryTerm  term={"implementation"}><i>implementations</i></GlossaryTerm>. 
 
 
 

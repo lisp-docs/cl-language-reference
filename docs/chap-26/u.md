@@ -7,7 +7,7 @@ sidebar_position: 117
 
 
 
-**unbound** *adj.* not having an associated denotation in a <ClLinks  term={"binding"}><i>binding</i></ClLinks>. See <ClLinks  term={"bound"}><i>bound</i></ClLinks>. 
+**unbound** *adj.* not having an associated denotation in a <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm>. See <GlossaryTerm  term={"bound"}><i>bound</i></GlossaryTerm>. 
 
 
 
@@ -23,23 +23,23 @@ sidebar_position: 117
 
 
 
-**unbound variable** *n.* a <ClLinks  term={"name"}><i>name</i></ClLinks> that is syntactically plausible as the name of a <ClLinks  term={"variable"}><i>variable</i></ClLinks> but which is not <ClLinks  term={"bound"}><i>bound</i></ClLinks> in the *variable namespace*. 
+**unbound variable** *n.* a <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> that is syntactically plausible as the name of a <GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm> but which is not <GlossaryTerm  term={"bound"}><i>bound</i></GlossaryTerm> in the *variable namespace*. 
 
 
 
-**undefined function** *n.* a <ClLinks  term={"name"}><i>name</i></ClLinks> that is syntactically plausible as the name of a 
+**undefined function** *n.* a <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> that is syntactically plausible as the name of a 
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks> but which is not <ClLinks  term={"bound"}><i>bound</i></ClLinks> in the *function namespace*. 
+<GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> but which is not <GlossaryTerm  term={"bound"}><i>bound</i></GlossaryTerm> in the *function namespace*. 
 
 
 
-<DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> *v.t.* (a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>) to make the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> not be <ClLinks  term={"present"}><i>present</i></ClLinks> in that <ClLinks  term={"package"}><i>package</i></ClLinks>. (The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> might continue to be <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> by inheritance.) 
+<DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> *v.t.* (a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> in a <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>) to make the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> not be <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> in that <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. (The <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> might continue to be <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> by inheritance.) 
 
 
 
-**uninterned** *adj.* (of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) not <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in any <ClLinks  term={"package"}><i>package</i></ClLinks>; *i.e.*, not <ClLinks  term={"interned"}><i>interned</i></ClLinks> <sub>1</sub>. 
+**uninterned** *adj.* (of a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>) not <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> in any <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>; *i.e.*, not <GlossaryTerm  term={"interned"}><i>interned</i></GlossaryTerm> <sub>1</sub>. 
 
 
 
@@ -47,31 +47,31 @@ sidebar_position: 117
 
 
 
-**unqualified method** *n.* a <ClLinks  term={"method"}><i>method</i></ClLinks> with no <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>. 
+**unqualified method** *n.* a <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> with no <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm>. 
 
 
 
-**unregistered package** *n.* a *package object* that is not present in the <ClLinks  term={"package"}><i>package</i></ClLinks> 
+**unregistered package** *n.* a *package object* that is not present in the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> 
 
 
 
-*registry*. An <GlossaryTerm styled={true} term={"unregistered package"}><i>unregistered package</i></GlossaryTerm> has no <ClLinks  term={"name"}><i>name</i></ClLinks>; *i.e.*, its <ClLinks  term={"name"}><i>name</i></ClLinks> is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"delete-package"}><b>delete-package</b></DictionaryLink>. 
+*registry*. An <GlossaryTerm styled={true} term={"unregistered package"}><i>unregistered package</i></GlossaryTerm> has no <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>; *i.e.*, its <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. See the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"delete-package"}><b>delete-package</b></DictionaryLink>. 
 
 
 
-**unsafe** *adj.* (of <ClLinks  term={"code"}><i>code</i></ClLinks>) not <ClLinks  term={"safe"}><i>safe</i></ClLinks>. (Note that, unless explicitly specified otherwise, if a particular kind of error checking is guaranteed only in a <ClLinks  term={"safe"}><i>safe</i></ClLinks> context, the same checking might or might not occur in that context if it were <ClLinks  term={"unsafe"}><i>unsafe</i></ClLinks>; describing a 
+**unsafe** *adj.* (of <GlossaryTerm  term={"code"}><i>code</i></GlossaryTerm>) not <GlossaryTerm  term={"safe"}><i>safe</i></GlossaryTerm>. (Note that, unless explicitly specified otherwise, if a particular kind of error checking is guaranteed only in a <GlossaryTerm  term={"safe"}><i>safe</i></GlossaryTerm> context, the same checking might or might not occur in that context if it were <GlossaryTerm  term={"unsafe"}><i>unsafe</i></GlossaryTerm>; describing a 
 
 
 
-context as <ClLinks  term={"unsafe"}><i>unsafe</i></ClLinks> means that certain kinds of error checking are not reliably enabled but does not guarantee that error checking is definitely disabled.) 
+context as <GlossaryTerm  term={"unsafe"}><i>unsafe</i></GlossaryTerm> means that certain kinds of error checking are not reliably enabled but does not guarantee that error checking is definitely disabled.) 
 
 
 
-**unsafe call** *n.* a <ClLinks  term={"call"}><i>call</i></ClLinks> that is not a <GlossaryTerm styled={true} term={"safe call"}><i>safe call</i></GlossaryTerm>. For more detailed information, see Section 3.5.1.1 (Safe and Unsafe Calls). 
+**unsafe call** *n.* a <GlossaryTerm  term={"call"}><i>call</i></GlossaryTerm> that is not a <GlossaryTerm styled={true} term={"safe call"}><i>safe call</i></GlossaryTerm>. For more detailed information, see Section 3.5.1.1 (Safe and Unsafe Calls). 
 
 
 
-**upgrade** *v.t.* (a declared <ClLinks  term={"type"}><i>type</i></ClLinks> to an actual <ClLinks  term={"type"}><i>type</i></ClLinks>) 1. (when creating an <ClLinks  term={"array"}><i>array</i></ClLinks>) 
+**upgrade** *v.t.* (a declared <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> to an actual <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>) 1. (when creating an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>) 
 
 
 
@@ -79,23 +79,19 @@ to substitute an <GlossaryTerm styled={true} term={"actual array element type"}>
 
 
 
-when choosing an appropriately *specialized array* representation. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></DictionaryLink>. 2. (when creating a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ) to substitute an <GlossaryTerm styled={true} term={"actual complex part type"}><i>actual complex part type</i></GlossaryTerm> for an <GlossaryTerm styled={true} term={"expressed complex part type"}><i>expressed complex part type</i></GlossaryTerm> when choosing an appropriately *specialized complex* representation. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></DictionaryLink>. 
+when choosing an appropriately *specialized array* representation. See the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></DictionaryLink>. 2. (when creating a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> ) to substitute an <GlossaryTerm styled={true} term={"actual complex part type"}><i>actual complex part type</i></GlossaryTerm> for an <GlossaryTerm styled={true} term={"expressed complex part type"}><i>expressed complex part type</i></GlossaryTerm> when choosing an appropriately *specialized complex* representation. See the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></DictionaryLink>. 
 
 
 
-**upgraded array element type** *n.* (of a <ClLinks  term={"type"}><i>type</i></ClLinks>) a <ClLinks  term={"type"}><i>type</i></ClLinks> that is a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> and that is used instead of the <ClLinks  term={"type"}><i>type</i></ClLinks> whenever the <ClLinks  term={"type"}><i>type</i></ClLinks> is used as an <GlossaryTerm styled={true} term={"array element type"}><i>array element type</i></GlossaryTerm> for object creation or type discrimination. See Section 15.1.2.1 (Array Upgrading). 
+**upgraded array element type** *n.* (of a <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>) a <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> that is a <GlossaryTerm  term={"supertype"}><i>supertype</i></GlossaryTerm> of the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> and that is used instead of the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> whenever the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is used as an <GlossaryTerm styled={true} term={"array element type"}><i>array element type</i></GlossaryTerm> for object creation or type discrimination. See Section 15.1.2.1 (Array Upgrading). 
 
 
 
-**upgraded complex part type** *n.* (of a <ClLinks  term={"type"}><i>type</i></ClLinks>) a <ClLinks  term={"type"}><i>type</i></ClLinks> that is a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> and that is used instead of the <ClLinks  term={"type"}><i>type</i></ClLinks> whenever the <ClLinks  term={"type"}><i>type</i></ClLinks> is used as a <GlossaryTerm styled={true} term={"complex part type"}><i>complex part type</i></GlossaryTerm> for object creation or type discrimination. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></DictionaryLink>. 
-
-
+**upgraded complex part type** *n.* (of a <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>) a <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> that is a <GlossaryTerm  term={"supertype"}><i>supertype</i></GlossaryTerm> of the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> and that is used instead of the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> whenever the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is used as a <GlossaryTerm styled={true} term={"complex part type"}><i>complex part type</i></GlossaryTerm> for object creation or type discrimination. See the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></DictionaryLink>. 
 
 
 
 
-
- 
 
 
 
@@ -103,19 +99,23 @@ when choosing an appropriately *specialized array* representation. See the <ClLi
 
 
 
-**uppercase** *adj.* (of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) being among <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm> corresponding to the capital letters A through Z, or being some other *implementation-defined character* that is defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be <ClLinks  term={"uppercase"}><i>uppercase</i></ClLinks>. See Section 13.1.4.3 (Characters With Case). 
+ 
 
 
 
-**use** *v.t.* (a *package P*<sub>1</sub>) to <ClLinks  term={"inherit"}><i>inherit</i></ClLinks> the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of *P*<sub>1</sub>. (If a package *P*<sub>2</sub> uses *P*<sub>1</sub>, the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of *P*<sub>1</sub> become <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbols</i></GlossaryTerm> of *P*<sub>2</sub> unless they are explicitly <ClLinks  term={"exported"}><i>exported</i></ClLinks>.) “The package CL-USER uses the package CL.” 
+**uppercase** *adj.* (of a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> ) being among <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm> corresponding to the capital letters A through Z, or being some other *implementation-defined character* that is defined by the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> to be <GlossaryTerm  term={"uppercase"}><i>uppercase</i></GlossaryTerm>. See Section 13.1.4.3 (Characters With Case). 
 
 
 
-**use list** *n.* (of a <ClLinks  term={"package"}><i>package</i></ClLinks>) a (possibly empty) <ClLinks  term={"list"}><i>list</i></ClLinks> associated with each <ClLinks  term={"package"}><i>package</i></ClLinks> which determines what other <ClLinks  term={"package"}><i>packages</i></ClLinks> are currently being *used* by that <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+**use** *v.t.* (a *package P*<sub>1</sub>) to <GlossaryTerm  term={"inherit"}><i>inherit</i></GlossaryTerm> the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of *P*<sub>1</sub>. (If a package *P*<sub>2</sub> uses *P*<sub>1</sub>, the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of *P*<sub>1</sub> become <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbols</i></GlossaryTerm> of *P*<sub>2</sub> unless they are explicitly <GlossaryTerm  term={"exported"}><i>exported</i></GlossaryTerm>.) “The package CL-USER uses the package CL.” 
 
 
 
-**user** *n.* an active entity, typically a human, that invokes or interacts with a <ClLinks  term={"program"}><i>program</i></ClLinks> at run time, but that is not necessarily a <ClLinks  term={"programmer"}><i>programmer</i></ClLinks> . 
+**use list** *n.* (of a <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>) a (possibly empty) <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> associated with each <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> which determines what other <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> are currently being *used* by that <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
+
+
+
+**user** *n.* an active entity, typically a human, that invokes or interacts with a <GlossaryTerm  term={"program"}><i>program</i></GlossaryTerm> at run time, but that is not necessarily a <GlossaryTerm  term={"programmer"}><i>programmer</i></GlossaryTerm> . 
 
 
 

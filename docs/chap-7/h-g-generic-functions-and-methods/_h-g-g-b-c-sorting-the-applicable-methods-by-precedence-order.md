@@ -6,7 +6,7 @@ To compare the precedence of two methods, their <GlossaryTerm styled={true} term
 
 
 
-The corresponding <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> from each method are compared. When a pair of <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> agree, the next pair are compared for agreement. If all corresponding parameter specializers agree, the two methods must have different <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>; in this case, either method can be selected to precede the other. For information about agreement, see Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers). 
+The corresponding <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> from each method are compared. When a pair of <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> agree, the next pair are compared for agreement. If all corresponding parameter specializers agree, the two methods must have different <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm>; in this case, either method can be selected to precede the other. For information about agreement, see Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers). 
 
 
 
@@ -14,11 +14,11 @@ If some corresponding <GlossaryTerm styled={true} term={"parameter specializer"}
 
 
 
-If just one of a pair of corresponding <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> is (eql <ClLinks  term={"object"}><i>object</i></ClLinks>), the <ClLinks  term={"method"}><i>method</i></ClLinks> with that <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializer</i></GlossaryTerm> precedes the other <ClLinks  term={"method"}><i>method</i></ClLinks>. If both <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> are <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> <ClLinks  term={"expression"}><i>expressions</i></ClLinks>, the specializers must agree (otherwise the two <ClLinks  term={"method"}><i>methods</i></ClLinks> would not both have been applicable to this argument). 
+If just one of a pair of corresponding <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> is (eql <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>), the <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> with that <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializer</i></GlossaryTerm> precedes the other <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm>. If both <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> are <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expressions</i></GlossaryTerm>, the specializers must agree (otherwise the two <GlossaryTerm  term={"method"}><i>methods</i></GlossaryTerm> would not both have been applicable to this argument). 
 
 
 
-The resulting list of <GlossaryTerm styled={true} term={"applicable method"}><i>applicable methods</i></GlossaryTerm> has the most specific <ClLinks  term={"method"}><i>method</i></ClLinks> first and the least specific <ClLinks  term={"method"}><i>method</i></ClLinks> last. 
+The resulting list of <GlossaryTerm styled={true} term={"applicable method"}><i>applicable methods</i></GlossaryTerm> has the most specific <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> first and the least specific <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> last. 
 
 
 

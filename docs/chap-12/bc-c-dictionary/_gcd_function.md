@@ -1,4 +1,4 @@
-**gcd** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**gcd** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -57,7 +57,7 @@ Returns the greatest common divisor of *integers*. If only one *integer* is supp
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if any *integer* is not an *integer* . 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if any *integer* is not an *integer* . 
 
 
 

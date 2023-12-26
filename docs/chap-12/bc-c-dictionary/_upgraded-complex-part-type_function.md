@@ -1,4 +1,4 @@
-**upgraded-complex-part-type** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**upgraded-complex-part-type** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, denoting the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> and the and current <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. 
+<GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, denoting the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> and the and current <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<DictionaryLink  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></DictionaryLink> returns the part type of the most specialized <ClLinks  term={"complex"}><i>complex</i></ClLinks> number representation that can hold parts of *type typespec*. 
+<DictionaryLink  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></DictionaryLink> returns the part type of the most specialized <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> number representation that can hold parts of *type typespec*. 
 
 
 
-The *typespec* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of (and possibly <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to) the *upgraded-typespec*. 
+The *typespec* is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of (and possibly <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to) the *upgraded-typespec*. 
 
 
 
@@ -46,7 +46,7 @@ The purpose of <DictionaryLink  term={"upgraded-complex-part-type"}><b>upgraded-
 
 
 
-<DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> (<ClLinks  term={"function"}><i>function</i></ClLinks> and <ClLinks  term={"type"}><i>type</i></ClLinks>) 
+<DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> (<GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> and <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>) 
 
 
 

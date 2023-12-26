@@ -1,4 +1,4 @@
-**realpart, imagpart** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**realpart, imagpart** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<DictionaryLink  term={"realpart"}><b>realpart</b></DictionaryLink> and <DictionaryLink  term={"imagpart"}><b>imagpart</b></DictionaryLink> return the real and imaginary parts of <ClLinks  term={"number"}><i>number</i></ClLinks> respectively. If <ClLinks  term={"number"}><i>number</i></ClLinks> is *real*, then <DictionaryLink  term={"realpart"}><b>realpart</b></DictionaryLink> returns <ClLinks  term={"number"}><i>number</i></ClLinks> and <DictionaryLink  term={"imagpart"}><b>imagpart</b></DictionaryLink> returns (\* 0 <ClLinks  term={"number"}><i>number</i></ClLinks>), which has the effect that the imaginary part of a <ClLinks  term={"rational"}><i>rational</i></ClLinks> is 0 and that of a <ClLinks  term={"float"}><i>float</i></ClLinks> is a floating-point zero of the same format. 
+<DictionaryLink  term={"realpart"}><b>realpart</b></DictionaryLink> and <DictionaryLink  term={"imagpart"}><b>imagpart</b></DictionaryLink> return the real and imaginary parts of <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> respectively. If <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is *real*, then <DictionaryLink  term={"realpart"}><b>realpart</b></DictionaryLink> returns <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> and <DictionaryLink  term={"imagpart"}><b>imagpart</b></DictionaryLink> returns (\* 0 <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>), which has the effect that the imaginary part of a <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm> is 0 and that of a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> is a floating-point zero of the same format. 
 
 
 
@@ -45,7 +45,7 @@
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is not a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 

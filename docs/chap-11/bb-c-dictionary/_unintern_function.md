@@ -1,4 +1,4 @@
-**unintern** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**unintern** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> &amp;optional *package → generalized-boolean* 
+<DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> &amp;optional *package → generalized-boolean* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-<DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> removes <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> from <ClLinks  term={"package"}><i>package</i></ClLinks>. If <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, it is removed from <ClLinks  term={"package"}><i>package</i></ClLinks> and also from <ClLinks  term={"package"}><i>package</i></ClLinks>’s <GlossaryTerm styled={true} term={"shadowing symbols list"}><i>shadowing symbols list</i></GlossaryTerm> if it is present there. If <ClLinks  term={"package"}><i>package</i></ClLinks> is the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> for <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is made to have no <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"symbol"}><i>Symbol</i></GlossaryTerm> may continue to be <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> by inheritance. 
+<DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> removes <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> from <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. If <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, it is removed from <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> and also from <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>’s <GlossaryTerm styled={true} term={"shadowing symbols list"}><i>shadowing symbols list</i></GlossaryTerm> if it is present there. If <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> is the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> for <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is made to have no <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"symbol"}><i>Symbol</i></GlossaryTerm> may continue to be <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> by inheritance. 
 
 
 
-Use of <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> can result in a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that has no recorded <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm>, but that in fact is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in some <ClLinks  term={"package"}><i>package</i></ClLinks>. Common Lisp does not check for this pathological case, and such <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are always printed preceded by #:. 
+Use of <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> can result in a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> that has no recorded <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm>, but that in fact is <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> in some <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. Common Lisp does not check for this pathological case, and such <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> are always printed preceded by #:. 
 
 
 
-<DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if it removes <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> otherwise. 
+<DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if it removes <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> otherwise. 
 
 
 
@@ -82,7 +82,7 @@ Current state of the package system.
 
 
 
-Giving a shadowing symbol to <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> can uncover a name conflict that had previously been resolved by the shadowing. If package A uses packages B and C, A contains a shadowing symbol x, and B and C each contain external symbols named x, then removing the shadowing symbol x from A will reveal a name conflict between b:x and c:x if those two <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are distinct. In this case <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> will signal an error. 
+Giving a shadowing symbol to <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> can uncover a name conflict that had previously been resolved by the shadowing. If package A uses packages B and C, A contains a shadowing symbol x, and B and C each contain external symbols named x, then removing the shadowing symbol x from A will reveal a name conflict between b:x and c:x if those two <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> are distinct. In this case <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> will signal an error. 
 
 
 

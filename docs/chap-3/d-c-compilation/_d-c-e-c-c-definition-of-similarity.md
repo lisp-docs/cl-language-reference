@@ -2,7 +2,7 @@
 
 
 
-Two *objects S* (in <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm>) and *C* (in <GlossaryTerm styled={true} term={"compiled code"}><i>compiled code</i></GlossaryTerm>) are defined to be <ClLinks  term={"similar"}><i>similar</i></ClLinks> if and only if they are both of one of the <ClLinks  term={"type"}><i>types</i></ClLinks> listed here (or defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>) and they both satisfy all additional requirements of <ClLinks  term={"similarity"}><i>similarity</i></ClLinks> indicated for that <ClLinks  term={"type"}><i>type</i></ClLinks>. 
+Two *objects S* (in <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm>) and *C* (in <GlossaryTerm styled={true} term={"compiled code"}><i>compiled code</i></GlossaryTerm>) are defined to be <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if and only if they are both of one of the <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> listed here (or defined by the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>) and they both satisfy all additional requirements of <GlossaryTerm  term={"similarity"}><i>similarity</i></GlossaryTerm> indicated for that <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>. 
 
 
 
@@ -10,7 +10,7 @@ Two *objects S* (in <GlossaryTerm styled={true} term={"source code"}><i>source c
 
 
 
-Two *numbers S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if they are of the same <ClLinks  term={"type"}><i>type</i></ClLinks> and represent the same mathematical value. 
+Two *numbers S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if they are of the same <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> and represent the same mathematical value. 
 
 
 
@@ -18,11 +18,11 @@ Two *numbers S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> 
 
 
 
-Two *simple characters S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if they have *similar code attributes*. 
+Two *simple characters S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if they have *similar code attributes*. 
 
 
 
-<ClLinks  term={"implementation"}><i>Implementations</i></ClLinks> providing additional, *implementation-defined attributes* must define whether and how *non-simple characters* can be regarded as <ClLinks  term={"similar"}><i>similar</i></ClLinks> . 
+<GlossaryTerm  term={"implementation"}><i>Implementations</i></GlossaryTerm> providing additional, *implementation-defined attributes* must define whether and how *non-simple characters* can be regarded as <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> . 
 
 
 
@@ -30,15 +30,15 @@ Two *simple characters S* and *C* are <ClLinks  term={"similar"}><i>similar</i><
 
 
 
-Two *apparently uninterned symbols S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if their <ClLinks  term={"name"}><i>names</i></ClLinks> are <ClLinks  term={"similar"}><i>similar</i></ClLinks> . 
+Two *apparently uninterned symbols S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if their <GlossaryTerm  term={"name"}><i>names</i></GlossaryTerm> are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> . 
 
 
 
-Two <ClLinks  term={"interned"}><i>interned</i></ClLinks> symbols *S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if their <ClLinks  term={"name"}><i>names</i></ClLinks> are <ClLinks  term={"similar"}><i>similar</i></ClLinks> , and if either *S* is accessible in the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> at compile time and *C* is accessible in the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> at load time, or *C* is accessible in the <ClLinks  term={"package"}><i>package</i></ClLinks> that is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of *S*. 
+Two <GlossaryTerm  term={"interned"}><i>interned</i></GlossaryTerm> symbols *S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if their <GlossaryTerm  term={"name"}><i>names</i></GlossaryTerm> are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> , and if either *S* is accessible in the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> at compile time and *C* is accessible in the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> at load time, or *C* is accessible in the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> that is <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> to the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of *S*. 
 
 
 
-(Note that <ClLinks  term={"similarity"}><i>similarity</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is dependent on neither the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm> nor how the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> would parse the <ClLinks  term={"character"}><i>characters</i></ClLinks> in the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>.) 
+(Note that <GlossaryTerm  term={"similarity"}><i>similarity</i></GlossaryTerm> of <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> is dependent on neither the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm> nor how the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> would parse the <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> in the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>.) 
 
 
 
@@ -46,11 +46,11 @@ Two <ClLinks  term={"interned"}><i>interned</i></ClLinks> symbols *S* and *C* ar
 
 
 
-Two *packages S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if their <ClLinks  term={"name"}><i>names</i></ClLinks> are <ClLinks  term={"similar"}><i>similar</i></ClLinks> . 
+Two *packages S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if their <GlossaryTerm  term={"name"}><i>names</i></GlossaryTerm> are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> . 
 
 
 
-Note that although a *package object* is an <GlossaryTerm styled={true} term={"externalizable object"}><i>externalizable object</i></GlossaryTerm>, the programmer is responsible for ensuring that the corresponding <ClLinks  term={"package"}><i>package</i></ClLinks> is already in existence when code  
+Note that although a *package object* is an <GlossaryTerm styled={true} term={"externalizable object"}><i>externalizable object</i></GlossaryTerm>, the programmer is responsible for ensuring that the corresponding <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> is already in existence when code  
 
 
 
@@ -58,7 +58,7 @@ Note that although a *package object* is an <GlossaryTerm styled={true} term={"e
 
 
 
-referencing it as a *literal object* is *loaded*. The <ClLinks  term={"loader"}><i>loader</i></ClLinks> finds the corresponding *package object* as if by calling <DictionaryLink  term={"find-package"}><b>find-package</b></DictionaryLink> with that <ClLinks  term={"name"}><i>name</i></ClLinks> as an <ClLinks  term={"argument"}><i>argument</i></ClLinks>. An error is signaled by the <ClLinks  term={"loader"}><i>loader</i></ClLinks> if no <ClLinks  term={"package"}><i>package</i></ClLinks> exists at load time. 
+referencing it as a *literal object* is *loaded*. The <GlossaryTerm  term={"loader"}><i>loader</i></GlossaryTerm> finds the corresponding *package object* as if by calling <DictionaryLink  term={"find-package"}><b>find-package</b></DictionaryLink> with that <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> as an <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm>. An error is signaled by the <GlossaryTerm  term={"loader"}><i>loader</i></GlossaryTerm> if no <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> exists at load time. 
 
 
 
@@ -66,11 +66,11 @@ referencing it as a *literal object* is *loaded*. The <ClLinks  term={"loader"}>
 
 
 
-Two *random states S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if *S* would always produce the same sequence of pseudo-random numbers as a <ClLinks  term={"copy"}><i>copy</i></ClLinks><sub>5</sub> of *C* when given as the *random-state argument* to the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"random"}><b>random</b></DictionaryLink>, assuming equivalent *limit arguments* in each case. 
+Two *random states S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if *S* would always produce the same sequence of pseudo-random numbers as a <GlossaryTerm  term={"copy"}><i>copy</i></GlossaryTerm><sub>5</sub> of *C* when given as the *random-state argument* to the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"random"}><b>random</b></DictionaryLink>, assuming equivalent *limit arguments* in each case. 
 
 
 
-(Note that since *C* has been processed by the <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></GlossaryTerm> , it cannot be used directly as an <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> because <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> would perform a side effect.) 
+(Note that since *C* has been processed by the <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></GlossaryTerm> , it cannot be used directly as an <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> to <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> because <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> would perform a side effect.) 
 
 
 
@@ -78,7 +78,7 @@ Two *random states S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClL
 
 
 
-Two *conses*, *S* and *C*, are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if the <ClLinks  term={"car"}><i>car</i></ClLinks> <sub>2</sub> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the <ClLinks  term={"car"}><i>car</i></ClLinks> <sub>2</sub> of *C*, and the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> <sub>2</sub> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> <sub>2</sub> of *C*. 
+Two *conses*, *S* and *C*, are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if the <GlossaryTerm  term={"car"}><i>car</i></GlossaryTerm> <sub>2</sub> of *S* is <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> to the <GlossaryTerm  term={"car"}><i>car</i></GlossaryTerm> <sub>2</sub> of *C*, and the <GlossaryTerm  term={"cdr"}><i>cdr</i></GlossaryTerm> <sub>2</sub> of *S* is <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> to the <GlossaryTerm  term={"cdr"}><i>cdr</i></GlossaryTerm> <sub>2</sub> of *C*. 
 
 
 
@@ -86,11 +86,11 @@ Two *conses*, *S* and *C*, are <ClLinks  term={"similar"}><i>similar</i></ClLink
 
 
 
-Two one-dimensional <ClLinks  term={"array"}><i>arrays</i></ClLinks>, *S* and *C*, are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if the <ClLinks  term={"length"}><i>length</i></ClLinks> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the <ClLinks  term={"length"}><i>length</i></ClLinks> of *C*, the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of *C*, and each *active element* of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the corresponding <ClLinks  term={"element"}><i>element</i></ClLinks> of *C*. 
+Two one-dimensional <GlossaryTerm  term={"array"}><i>arrays</i></GlossaryTerm>, *S* and *C*, are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if the <GlossaryTerm  term={"length"}><i>length</i></GlossaryTerm> of *S* is <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> to the <GlossaryTerm  term={"length"}><i>length</i></GlossaryTerm> of *C*, the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of *S* is <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> to the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of *C*, and each *active element* of *S* is <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> to the corresponding <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of *C*. 
 
 
 
-Two <ClLinks  term={"array"}><i>arrays</i></ClLinks> of <ClLinks  term={"rank"}><i>rank</i></ClLinks> other than one, *S* and *C*, are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if the <ClLinks  term={"rank"}><i>rank</i></ClLinks> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the <ClLinks  term={"rank"}><i>rank</i></ClLinks> of *C*, each <ClLinks  term={"dimension"}><i>dimension</i></ClLinks><sub>1</sub> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the corresponding <ClLinks  term={"dimension"}><i>dimension</i></ClLinks><sub>1</sub> of *C*, the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of *C*, and each <ClLinks  term={"element"}><i>element</i></ClLinks> of *S* is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to the corresponding <ClLinks  term={"element"}><i>element</i></ClLinks> of *C*. 
+Two <GlossaryTerm  term={"array"}><i>arrays</i></GlossaryTerm> of <GlossaryTerm  term={"rank"}><i>rank</i></GlossaryTerm> other than one, *S* and *C*, are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if the <GlossaryTerm  term={"rank"}><i>rank</i></GlossaryTerm> of *S* is <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> to the <GlossaryTerm  term={"rank"}><i>rank</i></GlossaryTerm> of *C*, each <GlossaryTerm  term={"dimension"}><i>dimension</i></GlossaryTerm><sub>1</sub> of *S* is <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> to the corresponding <GlossaryTerm  term={"dimension"}><i>dimension</i></GlossaryTerm><sub>1</sub> of *C*, the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of *S* is <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> to the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of *C*, and each <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of *S* is <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> to the corresponding <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of *C*. 
 
 
 
@@ -102,15 +102,15 @@ In addition, if *S* is a <GlossaryTerm styled={true} term={"simple array"}><i>si
 
 
 
-Two *hash tables S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if they meet the following three requirements: 1. They both have the same test (*e.g.*, they are both <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>). 
+Two *hash tables S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if they meet the following three requirements: 1. They both have the same test (*e.g.*, they are both <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>). 
 
 
 
-2\. There is a unique one-to-one correspondence between the keys of the two <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>, such that the corresponding keys are <ClLinks  term={"similar"}><i>similar</i></ClLinks> . 
+2\. There is a unique one-to-one correspondence between the keys of the two <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>, such that the corresponding keys are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> . 
 
 
 
-3\. For all keys, the values associated with two corresponding keys are <ClLinks  term={"similar"}><i>similar</i></ClLinks> . 
+3\. For all keys, the values associated with two corresponding keys are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> . 
 
 
 
@@ -126,7 +126,7 @@ If there is more than one possible one-to-one correspondence between the keys of
 
 
 
-Two *pathnames S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if all corresponding *pathname components* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> . 
+Two *pathnames S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if all corresponding *pathname components* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> . 
 
 
 
@@ -134,7 +134,7 @@ Two *pathnames S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks
 
 
 
-<ClLinks  term={"function"}><i>Functions</i></ClLinks> are not <GlossaryTerm styled={true} term={"externalizable object"}><i>externalizable objects</i></GlossaryTerm>. 
+<GlossaryTerm  term={"function"}><i>Functions</i></GlossaryTerm> are not <GlossaryTerm styled={true} term={"externalizable object"}><i>externalizable objects</i></GlossaryTerm>. 
 
 
 
@@ -142,7 +142,7 @@ Two *pathnames S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks
 
 
 
-A general-purpose concept of <ClLinks  term={"similarity"}><i>similarity</i></ClLinks> does not exist for <ClLinks  term={"structure"}><i>structures</i></ClLinks> and <GlossaryTerm styled={true} term={"standard object"}><i>standard objects</i></GlossaryTerm>. However, a <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> is permitted to define a <DictionaryLink  term={"make-load-form"}><b>make-load-form</b></DictionaryLink> <ClLinks  term={"method"}><i>method</i></ClLinks> for any *class K* defined by that <ClLinks  term={"program"}><i>program</i></ClLinks> that is a <ClLinks  term={"subclass"}><i>subclass</i></ClLinks> of either <DictionaryLink  term={"structure-object"}><b>structure-object</b></DictionaryLink> or <DictionaryLink  term={"standard-object"}><b>standard-object</b></DictionaryLink>. The effect of such a <ClLinks  term={"method"}><i>method</i></ClLinks> is to define that an *object S* of *type K* in <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm> is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to an *object C* of *type K* in <GlossaryTerm styled={true} term={"compiled code"}><i>compiled code</i></GlossaryTerm> if *C* was constructed from <ClLinks  term={"code"}><i>code</i></ClLinks> produced by calling <DictionaryLink  term={"make-load-form"}><b>make-load-form</b></DictionaryLink> on *S*. 
+A general-purpose concept of <GlossaryTerm  term={"similarity"}><i>similarity</i></GlossaryTerm> does not exist for <GlossaryTerm  term={"structure"}><i>structures</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"standard object"}><i>standard objects</i></GlossaryTerm>. However, a <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> is permitted to define a <DictionaryLink  term={"make-load-form"}><b>make-load-form</b></DictionaryLink> <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> for any *class K* defined by that <GlossaryTerm  term={"program"}><i>program</i></GlossaryTerm> that is a <GlossaryTerm  term={"subclass"}><i>subclass</i></GlossaryTerm> of either <DictionaryLink  term={"structure-object"}><b>structure-object</b></DictionaryLink> or <DictionaryLink  term={"standard-object"}><b>standard-object</b></DictionaryLink>. The effect of such a <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> is to define that an *object S* of *type K* in <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm> is <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> to an *object C* of *type K* in <GlossaryTerm styled={true} term={"compiled code"}><i>compiled code</i></GlossaryTerm> if *C* was constructed from <GlossaryTerm  term={"code"}><i>code</i></GlossaryTerm> produced by calling <DictionaryLink  term={"make-load-form"}><b>make-load-form</b></DictionaryLink> on *S*. 
 
 
 

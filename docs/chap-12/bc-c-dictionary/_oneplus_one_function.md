@@ -8,13 +8,13 @@
 
 **Arguments and Values:**
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> .
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> .
 
-*successor*, *predecessor*—a <ClLinks  term={"number"}><i>number</i></ClLinks> .
+*successor*, *predecessor*—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> .
 
 **Description:**
 
-<ClLinks  term={"1+"}><b>1+</b></ClLinks> returns a <ClLinks  term={"number"}><i>number</i></ClLinks> that is one more than its argument <ClLinks  term={"number"}><i>number</i></ClLinks>. **1-** returns a <ClLinks  term={"number"}><i>number</i></ClLinks> that is one less than its argument <ClLinks  term={"number"}><i>number</i></ClLinks>.
+<ClLinks  term={"1+"}><b>1+</b></ClLinks> returns a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> that is one more than its argument <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>. **1-** returns a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> that is one less than its argument <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>.
 
 **Examples:**
 
@@ -27,7 +27,7 @@
 
 **Exceptional Situations:**
 
-Might signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its <ClLinks  term={"argument"}><i>argument</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>.
+Might signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> is not a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . Might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>.
 
 **See Also:**
 
@@ -35,8 +35,8 @@ Might signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryL
 
 **Notes:**
 
-(1+ <ClLinks  term={"number"}><i>number</i></ClLinks>) *≡* (+ <ClLinks  term={"number"}><i>number</i></ClLinks> 1)
+(1+ <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>) *≡* (+ <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> 1)
 
-(1- <ClLinks  term={"number"}><i>number</i></ClLinks>) *≡* (- <ClLinks  term={"number"}><i>number</i></ClLinks> 1)
+(1- <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>) *≡* (- <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> 1)
 
 Implementors are encouraged to make the performance of both the previous expressions be the same.

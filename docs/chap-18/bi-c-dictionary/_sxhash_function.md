@@ -1,4 +1,4 @@
-**sxhash** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**sxhash** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-*hash-code*—a non-negative <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>. 
+*hash-code*—a non-negative <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<DictionaryLink  term={"sxhash"}><b>sxhash</b></DictionaryLink> returns a hash code for <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<DictionaryLink  term={"sxhash"}><b>sxhash</b></DictionaryLink> returns a hash code for <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-The manner in which the hash code is computed is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but subject to certain constraints: 
+The manner in which the hash code is computed is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>, but subject to certain constraints: 
 
 
 
@@ -38,11 +38,11 @@ The manner in which the hash code is computed is <ClLinks  term={"implementation
 
 
 
-2\. For any two <ClLinks  term={"object"}><i>objects</i></ClLinks>, *x* and *y*, both of which are <GlossaryTerm styled={true} term={"bit vector"}><i>bit vectors</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm>, *conses*, <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"pathname"}><i>pathnames</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm>, or <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>, and which are <ClLinks  term={"similar"}><i>similar</i></ClLinks> , (sxhash *x*) and (sxhash *y*) <ClLinks  term={"yield"}><i>yield</i></ClLinks> the same mathematical value even if *x* and *y* exist in different *Lisp images* of the same <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. See Section 3.2.4 (Literal Objects in Compiled Files). 
+2\. For any two <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm>, *x* and *y*, both of which are <GlossaryTerm styled={true} term={"bit vector"}><i>bit vectors</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm>, *conses*, <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"pathname"}><i>pathnames</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm>, or <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>, and which are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> , (sxhash *x*) and (sxhash *y*) <GlossaryTerm  term={"yield"}><i>yield</i></GlossaryTerm> the same mathematical value even if *x* and *y* exist in different *Lisp images* of the same <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>. See Section 3.2.4 (Literal Objects in Compiled Files). 
 
 
 
-3\. The *hash-code* for an <ClLinks  term={"object"}><i>object</i></ClLinks> is always the <ClLinks  term={"same"}><i>same</i></ClLinks> within a single <ClLinks  term={"session"}><i>session</i></ClLinks> provided that the <ClLinks  term={"object"}><i>object</i></ClLinks> is not visibly modified with regard to the equivalence test <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink>. See Section 18.1.2 (Modifying Hash Table Keys). 
+3\. The *hash-code* for an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> is always the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> within a single <GlossaryTerm  term={"session"}><i>session</i></GlossaryTerm> provided that the <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> is not visibly modified with regard to the equivalence test <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink>. See Section 18.1.2 (Modifying Hash Table Keys). 
 
 
 
@@ -62,11 +62,11 @@ Hash
 
 
 
-4\. The *hash-code* is intended for hashing. This places no verifiable constraint on a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm>, but the intent is that an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> should make a good-faith effort to produce *hash-codes* that are well distributed within the range of non-negative <ClLinks  term={"fixnum"}><i>fixnums</i></ClLinks>. 
+4\. The *hash-code* is intended for hashing. This places no verifiable constraint on a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm>, but the intent is that an <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> should make a good-faith effort to produce *hash-codes* that are well distributed within the range of non-negative <GlossaryTerm  term={"fixnum"}><i>fixnums</i></GlossaryTerm>. 
 
 
 
-5\. Computation of the *hash-code* must terminate, even if the <ClLinks  term={"object"}><i>object</i></ClLinks> contains circularities. 
+5\. Computation of the *hash-code* must terminate, even if the <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> contains circularities. 
 
 **Examples:**
 ```lisp
@@ -80,7 +80,7 @@ Hash
 
 
 
-The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+The <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 
@@ -92,15 +92,15 @@ Many common hashing needs are satisfied by <DictionaryLink  term={"make-hash-tab
 
 
 
-The hash codes returned by <DictionaryLink  term={"sxhash"}><b>sxhash</b></DictionaryLink> are not necessarily related to any hashing strategy used by any other <ClLinks  term={"function"}><i>function</i></ClLinks> in Common Lisp. 
+The hash codes returned by <DictionaryLink  term={"sxhash"}><b>sxhash</b></DictionaryLink> are not necessarily related to any hashing strategy used by any other <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> in Common Lisp. 
 
 
 
-For <ClLinks  term={"object"}><i>objects</i></ClLinks> of <ClLinks  term={"type"}><i>types</i></ClLinks> that <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> compares with <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink>, item 3 requires that the *hash-code* be based on some immutable quality of the identity of the object. Another legitimate implementation technique would be to have <DictionaryLink  term={"sxhash"}><b>sxhash</b></DictionaryLink> assign (and cache) a random hash code for these <ClLinks  term={"object"}><i>objects</i></ClLinks>, since there is no requirement that <ClLinks  term={"similar"}><i>similar</i></ClLinks> but non-<DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> objects have the same hash code. 
+For <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> that <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> compares with <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink>, item 3 requires that the *hash-code* be based on some immutable quality of the identity of the object. Another legitimate implementation technique would be to have <DictionaryLink  term={"sxhash"}><b>sxhash</b></DictionaryLink> assign (and cache) a random hash code for these <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm>, since there is no requirement that <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> but non-<DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> objects have the same hash code. 
 
 
 
-Although <ClLinks  term={"similarity"}><i>similarity</i></ClLinks> is defined for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> in terms of both the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks  term={"name"}><i>name</i></ClLinks> and the <ClLinks  term={"package"}><i>packages</i></ClLinks> in which the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks>, item 3 disallows using <ClLinks  term={"package"}><i>package</i></ClLinks> information to compute the hash code, since changes to the package status of a symbol are not visible to *equal*. 
+Although <GlossaryTerm  term={"similarity"}><i>similarity</i></GlossaryTerm> is defined for <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> in terms of both the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>’s <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> and the <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> in which the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm>, item 3 disallows using <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> information to compute the hash code, since changes to the package status of a symbol are not visible to *equal*. 
 
 
 

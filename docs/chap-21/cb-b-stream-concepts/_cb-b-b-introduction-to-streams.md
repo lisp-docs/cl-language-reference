@@ -2,11 +2,11 @@
 
 
 
-A <ClLinks  term={"stream"}><i>stream</i></ClLinks> is an <ClLinks  term={"object"}><i>object</i></ClLinks> that can be used with an input or output function to identify an appropriate source or sink of <ClLinks  term={"character"}><i>characters</i></ClLinks> or <ClLinks  term={"byte"}><i>bytes</i></ClLinks> for that operation. A *character stream* is a source or sink of <ClLinks  term={"character"}><i>characters</i></ClLinks>. A *binary stream* is a source or sink of <ClLinks  term={"byte"}><i>bytes</i></ClLinks>. 
+A <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> that can be used with an input or output function to identify an appropriate source or sink of <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> or <GlossaryTerm  term={"byte"}><i>bytes</i></GlossaryTerm> for that operation. A *character stream* is a source or sink of <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm>. A *binary stream* is a source or sink of <GlossaryTerm  term={"byte"}><i>bytes</i></GlossaryTerm>. 
 
 
 
-Some operations may be performed on any kind of <ClLinks  term={"stream"}><i>stream</i></ClLinks>; Figure 21–1 provides a list of <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> operations that are potentially useful with any kind of <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Some operations may be performed on any kind of <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>; Figure 21–1 provides a list of <GlossaryTerm  term={"standardized"}><i>standardized</i></GlossaryTerm> operations that are potentially useful with any kind of <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 

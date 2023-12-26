@@ -1,4 +1,4 @@
-**unread-char** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**unread-char** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink> <ClLinks  term={"character"}><i>character</i></ClLinks> &amp;optional *input-stream →* <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
+<DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink> <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> &amp;optional *input-stream →* <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"character"}><i>character</i></ClLinks>—a <ClLinks  term={"character"}><i>character</i></ClLinks> ; must be the last <ClLinks  term={"character"}><i>character</i></ClLinks> that was read from *input-stream*. *input-stream*—an *input stream designator* . The default is <GlossaryTerm styled={true} term={"standard input"}><i>standard input</i></GlossaryTerm>. 
+<GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm>—a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> ; must be the last <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> that was read from *input-stream*. *input-stream*—an *input stream designator* . The default is <GlossaryTerm styled={true} term={"standard input"}><i>standard input</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink> places <ClLinks  term={"character"}><i>character</i></ClLinks> back onto the front of *input-stream* so that it will again be the next character in *input-stream*. 
+<DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink> places <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> back onto the front of *input-stream* so that it will again be the next character in *input-stream*. 
 
 
 
@@ -30,7 +30,7 @@ When *input-stream* is an <GlossaryTerm styled={true} term={"echo stream"}><i>ec
 
 
 
-It is an error to invoke <DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink> twice consecutively on the same <ClLinks  term={"stream"}><i>stream</i></ClLinks> without an intervening call to <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink> (or some other input operation which implicitly reads characters) on that <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+It is an error to invoke <DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink> twice consecutively on the same <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> without an intervening call to <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink> (or some other input operation which implicitly reads characters) on that <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 

@@ -1,4 +1,4 @@
-**wild-pathname-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**wild-pathname-p** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"wild-pathname-p"}><b>wild-pathname-p</b></DictionaryLink> <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> &amp;optional *field-key → generalized-boolean* 
+<DictionaryLink  term={"wild-pathname-p"}><b>wild-pathname-p</b></DictionaryLink> <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> &amp;optional *field-key → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
+<GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-<DictionaryLink  term={"wild-pathname-p"}><b>wild-pathname-p</b></DictionaryLink> tests <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> for the presence of wildcard components. 
+<DictionaryLink  term={"wild-pathname-p"}><b>wild-pathname-p</b></DictionaryLink> tests <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> for the presence of wildcard components. 
 
 
 
-If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> (as returned by <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>) it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
+If <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> is a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> (as returned by <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>) it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
 
 
 
-If *field-key* is not supplied or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, <DictionaryLink  term={"wild-pathname-p"}><b>wild-pathname-p</b></DictionaryLink> returns true if <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> has any wildcard components, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> has none. If *field-key* is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>, <DictionaryLink  term={"wild-pathname-p"}><b>wild-pathname-p</b></DictionaryLink> returns true if the indicated component of <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a wildcard, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if the component is not a wildcard. 
+If *field-key* is not supplied or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, <DictionaryLink  term={"wild-pathname-p"}><b>wild-pathname-p</b></DictionaryLink> returns true if <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> has any wildcard components, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> has none. If *field-key* is <GlossaryTerm  term={"non-nil"}><i>non-nil</i></GlossaryTerm>, <DictionaryLink  term={"wild-pathname-p"}><b>wild-pathname-p</b></DictionaryLink> returns true if the indicated component of <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> is a wildcard, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if the component is not a wildcard. 
 
 
 
@@ -58,7 +58,7 @@ If *field-key* is not supplied or <DictionaryLink  term={"nil"}><b>nil</b></Dict
 
 
 
-If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is not a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, a <ClLinks  term={"string"}><i>string</i></ClLinks>, or a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm> an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. 
+If <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> is not a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>, a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>, or a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm> an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. 
 
 
 

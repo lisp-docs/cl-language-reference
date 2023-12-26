@@ -14,19 +14,19 @@
 
 
 
-*Test-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+*Test-form*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-*Then-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+*Then-form*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-*Else-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+*Else-form*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-*results*—if the *test-form yielded true*, the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the *then-form*; otherwise, the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the *else-form*. 
+*results*—if the *test-form yielded true*, the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by the *then-form*; otherwise, the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by the *else-form*. 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-<DictionaryLink  term={"if"}><b>if</b></DictionaryLink> allows the execution of a <ClLinks  term={"form"}><i>form</i></ClLinks> to be dependent on a single *test-form*. 
+<DictionaryLink  term={"if"}><b>if</b></DictionaryLink> allows the execution of a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> to be dependent on a single *test-form*. 
 
 
 
-First *test-form* is evaluated. If the result is <ClLinks  term={"true"}><i>true</i></ClLinks>, then *then-form* is selected; otherwise *else-form* is selected. Whichever form is selected is then evaluated. 
+First *test-form* is evaluated. If the result is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, then *then-form* is selected; otherwise *else-form* is selected. Whichever form is selected is then evaluated. 
 
 
 

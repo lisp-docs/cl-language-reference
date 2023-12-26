@@ -1,4 +1,4 @@
-**type-error-datum, type-error-expected-type** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**type-error-datum, type-error-expected-type** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink>. 
+<GlossaryTerm  term={"condition"}><i>condition</i></GlossaryTerm>—a <GlossaryTerm  term={"condition"}><i>condition</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink>. 
 
 
 
-*datum*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*datum*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<DictionaryLink  term={"type-error-datum"}><b>type-error-datum</b></DictionaryLink> returns the offending datum in the <ClLinks  term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks  term={"condition"}><i>condition</i></ClLinks>. 
+<DictionaryLink  term={"type-error-datum"}><b>type-error-datum</b></DictionaryLink> returns the offending datum in the <GlossaryTerm  term={"situation"}><i>situation</i></GlossaryTerm> represented by the <GlossaryTerm  term={"condition"}><i>condition</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"type-error-expected-type"}><b>type-error-expected-type</b></DictionaryLink> returns the expected type of the offending datum in the <ClLinks  term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks  term={"condition"}><i>condition</i></ClLinks>. 
+<DictionaryLink  term={"type-error-expected-type"}><b>type-error-expected-type</b></DictionaryLink> returns the expected type of the offending datum in the <GlossaryTerm  term={"situation"}><i>situation</i></GlossaryTerm> represented by the <GlossaryTerm  term={"condition"}><i>condition</i></GlossaryTerm>. 
 
 
 

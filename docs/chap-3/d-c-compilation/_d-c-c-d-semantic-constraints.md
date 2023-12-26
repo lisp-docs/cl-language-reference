@@ -6,11 +6,11 @@ All <GlossaryTerm styled={true} term={"conforming program"}><i>conforming progra
 
 
 
-*•* Definitions of any referenced <ClLinks  term={"macro"}><i>macros</i></ClLinks> must be present in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm>. Any <ClLinks  term={"form"}><i>form</i></ClLinks> that is a <ClLinks  term={"list"}><i>list</i></ClLinks> beginning with a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that does not name a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> or a <ClLinks  term={"macro"}><i>macro</i></ClLinks> defined in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> is treated by the compiler as a function call. 
+*•* Definitions of any referenced <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm> must be present in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm>. Any <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> that is a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> beginning with a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> that does not name a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> or a <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> defined in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> is treated by the compiler as a function call. 
 
 
 
-*•* **Special** proclamations for <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variables</i></GlossaryTerm> must be made in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm>. Any <ClLinks  term={"binding"}><i>binding</i></ClLinks> for which there is no <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declaration or proclamation in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> is treated by the compiler as a <GlossaryTerm styled={true} term={"lexical binding"}><i>lexical binding</i></GlossaryTerm>. 
+*•* **Special** proclamations for <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variables</i></GlossaryTerm> must be made in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm>. Any <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> for which there is no <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declaration or proclamation in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> is treated by the compiler as a <GlossaryTerm styled={true} term={"lexical binding"}><i>lexical binding</i></GlossaryTerm>. 
 
 
 
@@ -18,7 +18,7 @@ All <GlossaryTerm styled={true} term={"conforming program"}><i>conforming progra
 
 
 
-*•* Within a <ClLinks  term={"function"}><i>function</i></ClLinks> named *F*, the compiler may (but is not required to) assume that an apparent recursive call to a <ClLinks  term={"function"}><i>function</i></ClLinks> named *F* refers to the same definition of *F*, unless that function has been declared <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink>. The consequences of redefining such a recursively defined *function F* while it is executing are undefined. 
+*•* Within a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> named *F*, the compiler may (but is not required to) assume that an apparent recursive call to a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> named *F* refers to the same definition of *F*, unless that function has been declared <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink>. The consequences of redefining such a recursively defined *function F* while it is executing are undefined. 
 
 
 
@@ -34,27 +34,27 @@ All <GlossaryTerm styled={true} term={"conforming program"}><i>conforming progra
 
 
 
-*• Constant variables* defined in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> must have a <ClLinks  term={"similar"}><i>similar</i></ClLinks> value at run time. A reference to a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm> is equivalent to a reference to a *literal object* that is the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. 
+*• Constant variables* defined in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> must have a <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> value at run time. A reference to a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm> is equivalent to a reference to a *literal object* that is the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. 
 
 
 
-*•* Type definitions made with <DictionaryLink  term={"deftype"}><b>deftype</b></DictionaryLink> or <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> must retain the same definition at run time. Classes defined by <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> must be defined at run time to have the same *superclasses* and same <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks>. 
+*•* Type definitions made with <DictionaryLink  term={"deftype"}><b>deftype</b></DictionaryLink> or <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> must retain the same definition at run time. Classes defined by <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> must be defined at run time to have the same *superclasses* and same <GlossaryTerm  term={"metaclass"}><i>metaclass</i></GlossaryTerm>. 
 
 
 
-This implies that <ClLinks  term={"subtype"}><i>subtype</i></ClLinks>/<ClLinks  term={"supertype"}><i>supertype</i></ClLinks> relationships of <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> must not change between <GlossaryTerm styled={true} term={"compile time"}><i>compile time</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"run time"}><i>run time</i></GlossaryTerm>. 
+This implies that <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm>/<GlossaryTerm  term={"supertype"}><i>supertype</i></GlossaryTerm> relationships of <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> must not change between <GlossaryTerm styled={true} term={"compile time"}><i>compile time</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"run time"}><i>run time</i></GlossaryTerm>. 
 
 
 
-*•* Type declarations present in the compilation <ClLinks  term={"environment"}><i>environment</i></ClLinks> must accurately describe the corresponding values at run time; otherwise, the consequences are undefined. It is permissible for an unknown <ClLinks  term={"type"}><i>type</i></ClLinks> to appear in a declaration at compile time, though a warning might be signaled in such a case. 
+*•* Type declarations present in the compilation <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm> must accurately describe the corresponding values at run time; otherwise, the consequences are undefined. It is permissible for an unknown <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> to appear in a declaration at compile time, though a warning might be signaled in such a case. 
 
 
 
-*•* Except in the situations explicitly listed above, a <ClLinks  term={"function"}><i>function</i></ClLinks> defined in the <GlossaryTerm styled={true} term={"evaluation environment"}><i>evaluation environment</i></GlossaryTerm> is permitted to have a different definition or a different <ClLinks  term={"signature"}><i>signature</i></ClLinks> at run time, and the run-time definition prevails. 
+*•* Except in the situations explicitly listed above, a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> defined in the <GlossaryTerm styled={true} term={"evaluation environment"}><i>evaluation environment</i></GlossaryTerm> is permitted to have a different definition or a different <GlossaryTerm  term={"signature"}><i>signature</i></GlossaryTerm> at run time, and the run-time definition prevails. 
 
 
 
-<GlossaryTerm styled={true} term={"conforming program"}><i>Conforming programs</i></GlossaryTerm> should not be written using any additional assumptions about consistency between the run-time <ClLinks  term={"environment"}><i>environment</i></ClLinks> and the startup, evaluation, and compilation <ClLinks  term={"environment"}><i>environments</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"conforming program"}><i>Conforming programs</i></GlossaryTerm> should not be written using any additional assumptions about consistency between the run-time <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm> and the startup, evaluation, and compilation <GlossaryTerm  term={"environment"}><i>environments</i></GlossaryTerm>. 
 
 
 
@@ -62,7 +62,7 @@ Except where noted, when a compile-time and a run-time definition are different,
 
 
 
-*•* an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled 
+*•* an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled 
 
 
 
@@ -74,7 +74,7 @@ Except where noted, when a compile-time and a run-time definition are different,
 
 
 
-If the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> processes a <GlossaryTerm styled={true} term={"function form"}><i>function form</i></GlossaryTerm> whose <ClLinks  term={"operator"}><i>operator</i></ClLinks> is not defined at compile time, no error is signaled at compile time. 
+If the <GlossaryTerm  term={"compiler"}><i>compiler</i></GlossaryTerm> processes a <GlossaryTerm styled={true} term={"function form"}><i>function form</i></GlossaryTerm> whose <GlossaryTerm  term={"operator"}><i>operator</i></GlossaryTerm> is not defined at compile time, no error is signaled at compile time. 
 
 
 

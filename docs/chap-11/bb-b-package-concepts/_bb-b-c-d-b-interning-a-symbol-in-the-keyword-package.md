@@ -2,7 +2,7 @@
 
 
 
-The KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks> is treated differently than other <ClLinks  term={"package"}><i>packages</i></ClLinks> in that special actions are taken when a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"interned"}><i>interned</i></ClLinks> in it. In particular, when a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"interned"}><i>interned</i></ClLinks> in the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>, it is automatically made to be an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm> and is automatically made to be a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm> with itself as a <ClLinks  term={"value"}><i>value</i></ClLinks>. 
+The KEYWORD <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> is treated differently than other <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> in that special actions are taken when a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm  term={"interned"}><i>interned</i></GlossaryTerm> in it. In particular, when a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm  term={"interned"}><i>interned</i></GlossaryTerm> in the KEYWORD <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, it is automatically made to be an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm> and is automatically made to be a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm> with itself as a <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>. 
 
 
 

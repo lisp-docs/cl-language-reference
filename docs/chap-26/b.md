@@ -19,59 +19,55 @@ sidebar_position: 98
 
 
 
-**base character** *n.* a <ClLinks  term={"character"}><i>character</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"base-char"}><b>base-char</b></DictionaryLink>. 
+**base character** *n.* a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"base-char"}><b>base-char</b></DictionaryLink>. 
 
 
 
-**base string** *n.* a <ClLinks  term={"string"}><i>string</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"base-string"}><b>base-string</b></DictionaryLink>. 
+**base string** *n.* a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"base-string"}><b>base-string</b></DictionaryLink>. 
 
 
 
-**before method** *n.* a <ClLinks  term={"method"}><i>method</i></ClLinks> having the <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> :before. 
+**before method** *n.* a <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> having the <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> :before. 
 
 
 
-**bidirectional** *adj.* (of a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) being both an *input stream* and an *output stream*. 
+**bidirectional** *adj.* (of a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>) being both an *input stream* and an *output stream*. 
 
 
 
-**binary** *adj.* 1. (of a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) being a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that has an <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> that is a 
+**binary** *adj.* 1. (of a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>) being a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> that has an <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> that is a 
 
 
 
-<ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink>. The most fundamental operation on a *binary input stream* is <DictionaryLink  term={"read-byte"}><b>read-byte</b></DictionaryLink> and on a *binary output stream* is <DictionaryLink  term={"write-byte"}><b>write-byte</b></DictionaryLink>. See <ClLinks  term={"character"}><i>character</i></ClLinks> . 2. (of a <ClLinks  term={"file"}><i>file</i></ClLinks>) having been created by opening a *binary stream*. (It is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether this is an detectable aspect of the <ClLinks  term={"file"}><i>file</i></ClLinks>, or whether any given *character file* can be treated as a *binary file*.) 
+<GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink>. The most fundamental operation on a *binary input stream* is <DictionaryLink  term={"read-byte"}><b>read-byte</b></DictionaryLink> and on a *binary output stream* is <DictionaryLink  term={"write-byte"}><b>write-byte</b></DictionaryLink>. See <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> . 2. (of a <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm>) having been created by opening a *binary stream*. (It is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> whether this is an detectable aspect of the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm>, or whether any given *character file* can be treated as a *binary file*.) 
 
 
 
-**bind** *v.t.* (a <ClLinks  term={"variable"}><i>variable</i></ClLinks>) to establish a <ClLinks  term={"binding"}><i>binding</i></ClLinks> for the <ClLinks  term={"variable"}><i>variable</i></ClLinks>. 
+**bind** *v.t.* (a <GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm>) to establish a <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> for the <GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm>. 
 
 
 
-**binding** *n.* an association between a <ClLinks  term={"name"}><i>name</i></ClLinks> and that which the <ClLinks  term={"name"}><i>name</i></ClLinks> denotes. “A lexical binding is a lexical association between a name and its value.” When the term <ClLinks  term={"binding"}><i>binding</i></ClLinks> is qualified by the name of a <ClLinks  term={"namespace"}><i>namespace</i></ClLinks>, such as “variable” or “function,” it restricts the binding to the indicated namespace, as in: “<DictionaryLink  term={"let"}><b>let</b></DictionaryLink> establishes variable bindings.” or “<DictionaryLink  term={"let"}><b>let</b></DictionaryLink> establishes bindings of variables.” 
+**binding** *n.* an association between a <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> and that which the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> denotes. “A lexical binding is a lexical association between a name and its value.” When the term <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> is qualified by the name of a <GlossaryTerm  term={"namespace"}><i>namespace</i></GlossaryTerm>, such as “variable” or “function,” it restricts the binding to the indicated namespace, as in: “<DictionaryLink  term={"let"}><b>let</b></DictionaryLink> establishes variable bindings.” or “<DictionaryLink  term={"let"}><b>let</b></DictionaryLink> establishes bindings of variables.” 
 
 
 
-<DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink>; that is, the *integer* 0 or the *integer* 1. 
+<DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink> *n.* an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink>; that is, the *integer* 0 or the *integer* 1. 
 
 
 
-**bit array** *n.* a specialized <ClLinks  term={"array"}><i>array</i></ClLinks> that is of <ClLinks  term={"type"}><i>type</i></ClLinks> (array bit), and whose elements are of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink>. 
+**bit array** *n.* a specialized <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> that is of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> (array bit), and whose elements are of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink>. 
 
 
 
-**bit vector** *n.* a specialized <ClLinks  term={"vector"}><i>vector</i></ClLinks> that is of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"bit-vector"}><b>bit-vector</b></DictionaryLink>, and whose elements are of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink>. 
+**bit vector** *n.* a specialized <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> that is of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"bit-vector"}><b>bit-vector</b></DictionaryLink>, and whose elements are of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink>. 
 
 
 
-**bit-wise logical operation specifier** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> which names one of the sixteen possible bit-wise logical operations that can be performed by the <DictionaryLink  term={"boole"}><b>boole</b></DictionaryLink> function, and which is the <ClLinks  term={"value"}><i>value</i></ClLinks> of exactly one of the <GlossaryTerm styled={true} term={"constant variable"}><i>constant variables</i></GlossaryTerm> <DictionaryLink  term={"boole-clr"}><b>boole-clr</b></DictionaryLink>, <DictionaryLink  term={"boole-set"}><b>boole-set</b></DictionaryLink>, <DictionaryLink  term={"boole-1"}><b>boole-1</b></DictionaryLink>, <DictionaryLink  term={"boole-2"}><b>boole-2</b></DictionaryLink>, <DictionaryLink  term={"boole-c1"}><b>boole-c1</b></DictionaryLink>, <DictionaryLink  term={"boole-c2"}><b>boole-c2</b></DictionaryLink>, <DictionaryLink  term={"boole-and"}><b>boole-and</b></DictionaryLink>, <DictionaryLink  term={"boole-ior"}><b>boole-ior</b></DictionaryLink>, <DictionaryLink  term={"boole-xor"}><b>boole-xor</b></DictionaryLink>, <DictionaryLink  term={"boole-eqv"}><b>boole-eqv</b></DictionaryLink>, <DictionaryLink  term={"boole-nand"}><b>boole-nand</b></DictionaryLink>, <DictionaryLink  term={"boole-nor"}><b>boole-nor</b></DictionaryLink>, <DictionaryLink  term={"boole-andc1"}><b>boole-andc1</b></DictionaryLink>, <DictionaryLink  term={"boole-andc2"}><b>boole-andc2</b></DictionaryLink>, <DictionaryLink  term={"boole-orc1"}><b>boole-orc1</b></DictionaryLink>, or <DictionaryLink  term={"boole-orc2"}><b>boole-orc2</b></DictionaryLink>. 
-
-
+**bit-wise logical operation specifier** *n.* an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> which names one of the sixteen possible bit-wise logical operations that can be performed by the <DictionaryLink  term={"boole"}><b>boole</b></DictionaryLink> function, and which is the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of exactly one of the <GlossaryTerm styled={true} term={"constant variable"}><i>constant variables</i></GlossaryTerm> <DictionaryLink  term={"boole-clr"}><b>boole-clr</b></DictionaryLink>, <DictionaryLink  term={"boole-set"}><b>boole-set</b></DictionaryLink>, <DictionaryLink  term={"boole-1"}><b>boole-1</b></DictionaryLink>, <DictionaryLink  term={"boole-2"}><b>boole-2</b></DictionaryLink>, <DictionaryLink  term={"boole-c1"}><b>boole-c1</b></DictionaryLink>, <DictionaryLink  term={"boole-c2"}><b>boole-c2</b></DictionaryLink>, <DictionaryLink  term={"boole-and"}><b>boole-and</b></DictionaryLink>, <DictionaryLink  term={"boole-ior"}><b>boole-ior</b></DictionaryLink>, <DictionaryLink  term={"boole-xor"}><b>boole-xor</b></DictionaryLink>, <DictionaryLink  term={"boole-eqv"}><b>boole-eqv</b></DictionaryLink>, <DictionaryLink  term={"boole-nand"}><b>boole-nand</b></DictionaryLink>, <DictionaryLink  term={"boole-nor"}><b>boole-nor</b></DictionaryLink>, <DictionaryLink  term={"boole-andc1"}><b>boole-andc1</b></DictionaryLink>, <DictionaryLink  term={"boole-andc2"}><b>boole-andc2</b></DictionaryLink>, <DictionaryLink  term={"boole-orc1"}><b>boole-orc1</b></DictionaryLink>, or <DictionaryLink  term={"boole-orc2"}><b>boole-orc2</b></DictionaryLink>. 
 
 
 
 
-
- 
 
 
 
@@ -79,11 +75,15 @@ sidebar_position: 98
 
 
 
-<DictionaryLink  term={"block"}><b>block</b></DictionaryLink> *n.* a named lexical *exit point<ClLinks  term={"t"}><i>, </i></ClLinks>established* explicitly by <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> or implicitly by <ClLinks  term={"operator"}><i>operators</i></ClLinks> such as <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink>, <DictionaryLink  term={"do"}><b>do</b></DictionaryLink> and **prog**, to which control and values may be transfered by using a <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> with the name of the <ClLinks  term={"block"}><i>block</i></ClLinks>. 
+ 
 
 
 
-**block tag** *n.* the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that, within the <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> of a <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>, names the *block established* by that <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. See <DictionaryLink  term={"return"}><b>return</b></DictionaryLink> or <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink>. 
+<DictionaryLink  term={"block"}><b>block</b></DictionaryLink> *n.* a named lexical *exit point<ClLinks  term={"t"}><i>, </i></ClLinks>established* explicitly by <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> or implicitly by <GlossaryTerm  term={"operator"}><i>operators</i></GlossaryTerm> such as <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink>, <DictionaryLink  term={"do"}><b>do</b></DictionaryLink> and **prog**, to which control and values may be transfered by using a <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> with the name of the <GlossaryTerm  term={"block"}><i>block</i></GlossaryTerm>. 
+
+
+
+**block tag** *n.* the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> that, within the <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> of a <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, names the *block established* by that <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. See <DictionaryLink  term={"return"}><b>return</b></DictionaryLink> or <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink>. 
 
 
 
@@ -91,15 +91,15 @@ sidebar_position: 98
 
 
 
-**body parameter** *n.* a <ClLinks  term={"parameter"}><i>parameter</i></ClLinks> available in certain <GlossaryTerm styled={true} term={"lambda list"}><i>lambda lists</i></GlossaryTerm> which from the point of view of <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm> is like a <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameter</i></GlossaryTerm> in every way except that it is introduced by **&amp;body** instead of **&amp;rest**. (<ClLinks  term={"implementation"}><i>Implementations</i></ClLinks> are permitted to provide extensions which distinguish <GlossaryTerm styled={true} term={"body parameter"}><i>body parameters</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameters</i></GlossaryTerm>—*e.g.*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> for <ClLinks  term={"operator"}><i>operators</i></ClLinks> which were defined using a <GlossaryTerm styled={true} term={"body parameter"}><i>body parameter</i></GlossaryTerm> might be pretty printed slightly differently than <ClLinks  term={"form"}><i>forms</i></ClLinks> for <ClLinks  term={"operator"}><i>operators</i></ClLinks> which were defined using <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameters</i></GlossaryTerm>.) 
+**body parameter** *n.* a <GlossaryTerm  term={"parameter"}><i>parameter</i></GlossaryTerm> available in certain <GlossaryTerm styled={true} term={"lambda list"}><i>lambda lists</i></GlossaryTerm> which from the point of view of <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm> is like a <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameter</i></GlossaryTerm> in every way except that it is introduced by **&amp;body** instead of **&amp;rest**. (<GlossaryTerm  term={"implementation"}><i>Implementations</i></GlossaryTerm> are permitted to provide extensions which distinguish <GlossaryTerm styled={true} term={"body parameter"}><i>body parameters</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameters</i></GlossaryTerm>—*e.g.*, the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> for <GlossaryTerm  term={"operator"}><i>operators</i></GlossaryTerm> which were defined using a <GlossaryTerm styled={true} term={"body parameter"}><i>body parameter</i></GlossaryTerm> might be pretty printed slightly differently than <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> for <GlossaryTerm  term={"operator"}><i>operators</i></GlossaryTerm> which were defined using <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameters</i></GlossaryTerm>.) 
 
 
 
-<DictionaryLink  term={"boolean"}><b>boolean</b></DictionaryLink> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"boolean"}><b>boolean</b></DictionaryLink>; that is, one of the following <ClLinks  term={"object"}><i>objects</i></ClLinks>: the 
+<DictionaryLink  term={"boolean"}><b>boolean</b></DictionaryLink> *n.* an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"boolean"}><b>boolean</b></DictionaryLink>; that is, one of the following <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm>: the 
 
 
 
-symbol <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> (representing <ClLinks  term={"true"}><i>true</i></ClLinks>), or the symbol <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> (representing <ClLinks  term={"false"}><i>false</i></ClLinks>). See <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
+symbol <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> (representing <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>), or the symbol <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> (representing <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>). See <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -107,15 +107,15 @@ symbol <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> (representing <ClLi
 
 
 
-**bound** *adj.*, *v.t.* 1. *adj.* having an associated denotation in a <ClLinks  term={"binding"}><i>binding</i></ClLinks>. “The variables named by a <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> are bound within its body.” See <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>. 2. *adj.* having a local <ClLinks  term={"binding"}><i>binding</i></ClLinks> which <ClLinks  term={"shadow"}><i>shadows</i></ClLinks><sub>2</sub> another. “The variable <DictionaryLink  term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> is bound while in the <DictionaryLink  term={"princ"}><b>princ</b></DictionaryLink> function.” 3. *v.t.* the past tense of <ClLinks  term={"bind"}><i>bind</i></ClLinks>. 
+**bound** *adj.*, *v.t.* 1. *adj.* having an associated denotation in a <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm>. “The variables named by a <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> are bound within its body.” See <GlossaryTerm  term={"unbound"}><i>unbound</i></GlossaryTerm>. 2. *adj.* having a local <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> which <GlossaryTerm  term={"shadow"}><i>shadows</i></GlossaryTerm><sub>2</sub> another. “The variable <DictionaryLink  term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> is bound while in the <DictionaryLink  term={"princ"}><b>princ</b></DictionaryLink> function.” 3. *v.t.* the past tense of <GlossaryTerm  term={"bind"}><i>bind</i></GlossaryTerm>. 
 
 
 
-**bound declaration** *n.* a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> that refers to or is associated with a <ClLinks  term={"variable"}><i>variable</i></ClLinks> or <ClLinks  term={"function"}><i>function</i></ClLinks> and that appears within the <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm> that *establishes* the <ClLinks  term={"variable"}><i>variable</i></ClLinks> or <ClLinks  term={"function"}><i>function</i></ClLinks>, but before the body of that <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm> (specifically, at the head of that <ClLinks  term={"form"}><i>form</i></ClLinks>’s body). (If a <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declaration</i></GlossaryTerm> refers to a *function binding* or a *lexical variable binding*, the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of the <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> is exactly the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of that <ClLinks  term={"binding"}><i>binding</i></ClLinks>. If the 
+**bound declaration** *n.* a <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm> that refers to or is associated with a <GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm> or <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> and that appears within the <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm> that *establishes* the <GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm> or <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>, but before the body of that <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm> (specifically, at the head of that <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>’s body). (If a <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declaration</i></GlossaryTerm> refers to a *function binding* or a *lexical variable binding*, the <GlossaryTerm  term={"scope"}><i>scope</i></GlossaryTerm> of the <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm> is exactly the <GlossaryTerm  term={"scope"}><i>scope</i></GlossaryTerm> of that <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm>. If the 
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks> refers to a *dynamic variable binding*, the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of the <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> is what the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of the <ClLinks  term={"binding"}><i>binding</i></ClLinks> would have been if it were lexical rather than dynamic.) 
+<GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm> refers to a *dynamic variable binding*, the <GlossaryTerm  term={"scope"}><i>scope</i></GlossaryTerm> of the <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm> is what the <GlossaryTerm  term={"scope"}><i>scope</i></GlossaryTerm> of the <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> would have been if it were lexical rather than dynamic.) 
 
 
 
@@ -143,35 +143,35 @@ bounding index”, such that 0 <i>≤ i<sub>start</sub> ≤ i<sub>end</sub> ≤ 
 
 
 
-**bounding index designator** (for a *sequence*) one of two <ClLinks  term={"object"}><i>objects</i></ClLinks> that, taken together as an ordered pair, behave as a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for *bounding indices* of the *sequence*; that is, they denote *bounding indices* of the *sequence*, and are either: an *integer* (denoting 
+**bounding index designator** (for a *sequence*) one of two <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> that, taken together as an ordered pair, behave as a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for *bounding indices* of the *sequence*; that is, they denote *bounding indices* of the *sequence*, and are either: an *integer* (denoting 
 
 
 
-itself) and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> (denoting the <ClLinks  term={"length"}><i>length</i></ClLinks> of the *sequence*), or two *integers* (each denoting themselves). 
+itself) and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> (denoting the <GlossaryTerm  term={"length"}><i>length</i></GlossaryTerm> of the *sequence*), or two *integers* (each denoting themselves). 
 
 
 
-**break loop** *n.* A variant of the normal *Lisp read-eval-print loop* that is recursively entered, usually because the ongoing <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of some other <ClLinks  term={"form"}><i>form</i></ClLinks> has been suspended for the purpose of debugging. Often, a <GlossaryTerm styled={true} term={"break loop"}><i>break loop</i></GlossaryTerm> provides the ability to exit in such a way as to continue the suspended computation. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"break"}><b>break</b></DictionaryLink>. 
+**break loop** *n.* A variant of the normal *Lisp read-eval-print loop* that is recursively entered, usually because the ongoing <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of some other <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> has been suspended for the purpose of debugging. Often, a <GlossaryTerm styled={true} term={"break loop"}><i>break loop</i></GlossaryTerm> provides the ability to exit in such a way as to continue the suspended computation. See the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"break"}><b>break</b></DictionaryLink>. 
 
 
 
-**broadcast stream** *n.* an *output stream* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"broadcast-stream"}><b>broadcast-stream</b></DictionaryLink>. 
+**broadcast stream** *n.* an *output stream* of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"broadcast-stream"}><b>broadcast-stream</b></DictionaryLink>. 
 
 
 
-**built-in class** *n.* a <ClLinks  term={"class"}><i>class</i></ClLinks> that is a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm> of <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"built-in-class"}><b>built-in-class</b></DictionaryLink>. 
+**built-in class** *n.* a <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> that is a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm> of <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink  term={"built-in-class"}><b>built-in-class</b></DictionaryLink>. 
 
 
 
-**built-in type** *n.* one of the <ClLinks  term={"type"}><i>types</i></ClLinks> in Figure 4–2. 
+**built-in type** *n.* one of the <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> in Figure 4–2. 
 
 
 
-<DictionaryLink  term={"byte"}><b>byte</b></DictionaryLink> *n.* 1. adjacent bits within an *integer* . (The specific number of bits can vary from point to point in the program; see the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"byte"}><b>byte</b></DictionaryLink>.) 2. an integer in a specified range. (The specific range can vary from point to point in the program; see the <ClLinks  term={"function"}><i>functions</i></ClLinks> <DictionaryLink  term={"open"}><b>open</b></DictionaryLink> and <DictionaryLink  term={"write-byte"}><b>write-byte</b></DictionaryLink>.) 
+<DictionaryLink  term={"byte"}><b>byte</b></DictionaryLink> *n.* 1. adjacent bits within an *integer* . (The specific number of bits can vary from point to point in the program; see the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"byte"}><b>byte</b></DictionaryLink>.) 2. an integer in a specified range. (The specific range can vary from point to point in the program; see the <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> <DictionaryLink  term={"open"}><b>open</b></DictionaryLink> and <DictionaryLink  term={"write-byte"}><b>write-byte</b></DictionaryLink>.) 
 
 
 
-**byte specifier** *n.* An <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> nature that is returned by the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"byte"}><b>byte</b></DictionaryLink> and that specifies the range of bits in an *integer* to be used as a <ClLinks  term={"byte"}><i>byte</i></ClLinks> by <ClLinks  term={"function"}><i>functions</i></ClLinks> such as <DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink>. 
+**byte specifier** *n.* An <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> of <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> nature that is returned by the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"byte"}><b>byte</b></DictionaryLink> and that specifies the range of bits in an *integer* to be used as a <GlossaryTerm  term={"byte"}><i>byte</i></GlossaryTerm> by <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> such as <DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink>. 
 
 
 

@@ -1,4 +1,4 @@
-**boole** <ClLinks  term={"function"}><i>Function</i></ClLinks>
+**boole** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm>
 
 **Syntax:**
 
@@ -91,7 +91,7 @@ In general,
 (boole boole-and x y) *≡* (logand x y)
 ```
 
-<ClLinks  term={"programmer"}><i>Programmers</i></ClLinks> who would prefer to use numeric indices rather than *bit-wise logical operation specifiers* can get an equivalent effect by a technique such as the following:
+<GlossaryTerm  term={"programmer"}><i>Programmers</i></GlossaryTerm> who would prefer to use numeric indices rather than *bit-wise logical operation specifiers* can get an equivalent effect by a technique such as the following:
 
 ```lisp
 ;; The order of the values in this ‘table’ are such that

@@ -6,7 +6,7 @@ An <GlossaryTerm styled={true} term={"interactive stream"}><i>interactive stream
 
 
 
-The precise meaning of an <GlossaryTerm styled={true} term={"interactive stream"}><i>interactive stream</i></GlossaryTerm> is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>, and may depend on the underlying operating system. Some examples of the things that an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might choose to use as identifying characteristics of an <GlossaryTerm styled={true} term={"interactive stream"}><i>interactive stream</i></GlossaryTerm> include: 
+The precise meaning of an <GlossaryTerm styled={true} term={"interactive stream"}><i>interactive stream</i></GlossaryTerm> is <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>, and may depend on the underlying operating system. Some examples of the things that an <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> might choose to use as identifying characteristics of an <GlossaryTerm styled={true} term={"interactive stream"}><i>interactive stream</i></GlossaryTerm> include: 
 
 
 
@@ -22,7 +22,7 @@ The precise meaning of an <GlossaryTerm styled={true} term={"interactive stream"
 
 
 
-*•* The <ClLinks  term={"stream"}><i>stream</i></ClLinks> is connected to a person (or equivalent) in such a way that the program can prompt for information and expect to receive different input depending on the prompt. 
+*•* The <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is connected to a person (or equivalent) in such a way that the program can prompt for information and expect to receive different input depending on the prompt. 
 
 
 
@@ -34,7 +34,7 @@ The precise meaning of an <GlossaryTerm styled={true} term={"interactive stream"
 
 
 
-The general intent of having some <ClLinks  term={"stream"}><i>streams</i></ClLinks> be classified as <GlossaryTerm styled={true} term={"interactive stream"}><i>interactive streams</i></GlossaryTerm> is to allow them to be distinguished from streams containing batch (or background or command-file) input. Output to batch streams is typically discarded or saved for later viewing, so interactive queries to such streams might not have the expected effect. 
+The general intent of having some <GlossaryTerm  term={"stream"}><i>streams</i></GlossaryTerm> be classified as <GlossaryTerm styled={true} term={"interactive stream"}><i>interactive streams</i></GlossaryTerm> is to allow them to be distinguished from streams containing batch (or background or command-file) input. Output to batch streams is typically discarded or saved for later viewing, so interactive queries to such streams might not have the expected effect. 
 
 
 

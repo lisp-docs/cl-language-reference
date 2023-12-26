@@ -22,7 +22,7 @@ An *implementation-dependent pathname*, typically in the working directory that 
 
 
 
-a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, used as the default whenever a <ClLinks  term={"function"}><i>function</i></ClLinks> needs a default <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> and one is not supplied. 
+a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>, used as the default whenever a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> needs a default <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> and one is not supplied. 
 
 
 
@@ -41,7 +41,7 @@ a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, used as the default whe
 
 
 
-The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+The <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 

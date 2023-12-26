@@ -6,7 +6,7 @@
 
 
 
-a <ClLinks  term={"list"}><i>list</i></ClLinks>, the <ClLinks  term={"element"}><i>elements</i></ClLinks> of which are <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but which must contain at least the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> **&amp;allow-other-keys**, **&amp;aux**, **&amp;body**, **&amp;environment**, **&amp;key**, **&amp;optional**, **&amp;rest**, and **&amp;whole**. 
+a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>, the <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of which are <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>, but which must contain at least the <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> **&amp;allow-other-keys**, **&amp;aux**, **&amp;body**, **&amp;environment**, **&amp;key**, **&amp;optional**, **&amp;rest**, and **&amp;whole**. 
 
 
 
@@ -14,7 +14,7 @@ a <ClLinks  term={"list"}><i>list</i></ClLinks>, the <ClLinks  term={"element"}>
 
 
 
-A <ClLinks  term={"list"}><i>list</i></ClLinks> of all the <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm> used in the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>, including the additional ones used only by <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+A <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of all the <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm> used in the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>, including the additional ones used only by <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> definition <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. 
 
 
 

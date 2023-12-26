@@ -1,4 +1,4 @@
-**signum** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**signum** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
-*signed-prototype*—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+*signed-prototype*—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<DictionaryLink  term={"signum"}><b>signum</b></DictionaryLink> determines a numerical value that indicates whether <ClLinks  term={"number"}><i>number</i></ClLinks> is negative, zero, or positive. 
+<DictionaryLink  term={"signum"}><b>signum</b></DictionaryLink> determines a numerical value that indicates whether <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is negative, zero, or positive. 
 
 
 
-For a <ClLinks  term={"rational"}><i>rational</i></ClLinks>, <DictionaryLink  term={"signum"}><b>signum</b></DictionaryLink> returns one of -1, 0, or 1 according to whether <ClLinks  term={"number"}><i>number</i></ClLinks> is negative, zero, or positive. For a <ClLinks  term={"float"}><i>float</i></ClLinks>, the result is a <ClLinks  term={"float"}><i>float</i></ClLinks> of the same format whose value is minus one, zero, or one. For a <ClLinks  term={"complex"}><i>complex</i></ClLinks> number z, (signum *z*) is a complex number of the same phase but with unit magnitude, unless z is a complex zero, in which case the result is z. 
+For a <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm>, <DictionaryLink  term={"signum"}><b>signum</b></DictionaryLink> returns one of -1, 0, or 1 according to whether <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is negative, zero, or positive. For a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>, the result is a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> of the same format whose value is minus one, zero, or one. For a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> number z, (signum *z*) is a complex number of the same phase but with unit magnitude, unless z is a complex zero, in which case the result is z. 
 
 
 
@@ -38,7 +38,7 @@ For *rational arguments*, <DictionaryLink  term={"signum"}><b>signum</b></Dictio
 
 
 
-If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"float"}><i>float</i></ClLinks>, the result is a <ClLinks  term={"float"}><i>float</i></ClLinks>. If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"rational"}><i>rational</i></ClLinks>, the result is a <ClLinks  term={"rational"}><i>rational</i></ClLinks>. If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>, the result is a <GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>. If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm>, the result is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> , but it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether that result is a <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>. 
+If <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>, the result is a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>. If <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is a <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm>, the result is a <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm>. If <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>, the result is a <GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>. If <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm>, the result is a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> , but it is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> whether that result is a <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>. 
 
 
 

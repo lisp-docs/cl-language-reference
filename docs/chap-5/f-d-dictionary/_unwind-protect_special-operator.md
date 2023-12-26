@@ -14,15 +14,15 @@
 
 
 
-*protected-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+*protected-form*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-*cleanup-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+*cleanup-form*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the *protected-form*. 
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> of the *protected-form*. 
 
 
 
@@ -42,7 +42,7 @@ If a <GlossaryTerm styled={true} term={"non-local exit"}><i>non-local exit</i></
 
 
 
-Undoing of <ClLinks  term={"handler"}><i>handler</i></ClLinks> and *restart bindings* during an exit happens in parallel with the undoing of the bindings of <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variables</i></GlossaryTerm> and <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> tags, in the reverse order in which they were established. The effect of this is that *cleanup-form* sees the same <ClLinks  term={"handler"}><i>handler</i></ClLinks> and *restart bindings*, as well as *dynamic variable bindings* and <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> tags, as were visible when the <DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> was entered. 
+Undoing of <GlossaryTerm  term={"handler"}><i>handler</i></GlossaryTerm> and *restart bindings* during an exit happens in parallel with the undoing of the bindings of <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variables</i></GlossaryTerm> and <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> tags, in the reverse order in which they were established. The effect of this is that *cleanup-form* sees the same <GlossaryTerm  term={"handler"}><i>handler</i></GlossaryTerm> and *restart bindings*, as well as *dynamic variable bindings* and <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> tags, as were visible when the <DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> was entered. 
 
 
 

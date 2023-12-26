@@ -1,4 +1,4 @@
-**concatenate** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**concatenate** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<DictionaryLink  term={"concatenate"}><b>concatenate</b></DictionaryLink> returns a *sequence* that contains all the individual elements of all the *sequences* in the order that they are supplied. The *sequence* is of type *result-type*, which must be a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"sequence"}><b>sequence</b></DictionaryLink>. 
+<DictionaryLink  term={"concatenate"}><b>concatenate</b></DictionaryLink> returns a *sequence* that contains all the individual elements of all the *sequences* in the order that they are supplied. The *sequence* is of type *result-type*, which must be a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"sequence"}><b>sequence</b></DictionaryLink>. 
 
 
 
@@ -38,7 +38,7 @@ All of the *sequences* are copied from; the result does not share any structure 
 
 
 
-It is an error if any element of the *sequences* cannot be an element of the *sequence* result. If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>, the result will be a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
+It is an error if any element of the *sequences* cannot be an element of the *sequence* result. If the *result-type* is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>, the result will be a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
@@ -54,7 +54,7 @@ It is an error if any element of the *sequences* cannot be an element of the *se
 
 
 
-If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>, then if the implementation can determine the element type specified for the *result-type*, the element type of the resulting array is the result of *upgrading* that element type; or, if the implementation can determine that the element type is unspecified (or \*), the element type of the resulting array is <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>; otherwise, an error is signaled. 
+If the *result-type* is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>, then if the implementation can determine the element type specified for the *result-type*, the element type of the resulting array is the result of *upgrading* that element type; or, if the implementation can determine that the element type is unspecified (or \*), the element type of the resulting array is <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>; otherwise, an error is signaled. 
 
 
 
@@ -74,7 +74,7 @@ An error is signaled if the *result-type* is neither a <GlossaryTerm styled={tru
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> should be signaled if *result-type* specifies the number of elements and the sum of *sequences* is different from that number. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> should be signaled if *result-type* specifies the number of elements and the sum of *sequences* is different from that number. 
 
 
 

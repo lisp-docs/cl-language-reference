@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"method"}><i>method</i></ClLinks> 
+<GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"method"}><i>method</i></ClLinks>—a <ClLinks  term={"method"}><i>method</i></ClLinks>. 
+<GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm>—a <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm>. 
 
 
 
@@ -38,11 +38,11 @@
 
 
 
-The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <DictionaryLink  term={"remove-method"}><b>remove-method</b></DictionaryLink> removes a <ClLinks  term={"method"}><i>method</i></ClLinks> from *generic-function* by modifying the *generic-function* (if necessary). 
+The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <DictionaryLink  term={"remove-method"}><b>remove-method</b></DictionaryLink> removes a <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> from *generic-function* by modifying the *generic-function* (if necessary). 
 
 
 
-<DictionaryLink  term={"remove-method"}><b>remove-method</b></DictionaryLink> must not signal an error if the <ClLinks  term={"method"}><i>method</i></ClLinks> is not one of the <ClLinks  term={"method"}><i>methods</i></ClLinks> on the *generic-function*. 
+<DictionaryLink  term={"remove-method"}><b>remove-method</b></DictionaryLink> must not signal an error if the <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> is not one of the <GlossaryTerm  term={"method"}><i>methods</i></GlossaryTerm> on the *generic-function*. 
 
 
 

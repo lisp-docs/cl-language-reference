@@ -1,4 +1,4 @@
-**boundp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**boundp** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"bound"}><i>bound</i></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm  term={"bound"}><i>bound</i></GlossaryTerm>; otherwise, returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
@@ -55,7 +55,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"symbol
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is not a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -71,7 +71,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <Diction
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> **bound** determines only whether a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> has a value in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>; any <GlossaryTerm styled={true} term={"lexical binding"}><i>lexical bindings</i></GlossaryTerm> are ignored. 
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> **bound** determines only whether a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> has a value in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>; any <GlossaryTerm styled={true} term={"lexical binding"}><i>lexical bindings</i></GlossaryTerm> are ignored. 
 
 
 

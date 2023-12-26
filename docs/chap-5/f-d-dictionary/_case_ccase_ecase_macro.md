@@ -1,4 +1,4 @@
-**case, ccase, ecase** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**case, ccase, ecase** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-*keyform*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated to produce a *test-key*. 
+*keyform*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated to produce a *test-key*. 
 
 
 
-*keyplace*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated initially to produce a *test-key*. Possibly also used later as a <ClLinks  term={"place"}><i>place</i></ClLinks> if no <ClLinks  term={"key"}><i>keys</i></ClLinks> match. 
+*keyplace*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated initially to produce a *test-key*. Possibly also used later as a <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> if no <GlossaryTerm  term={"key"}><i>keys</i></GlossaryTerm> match. 
 
 
 
@@ -46,15 +46,15 @@
 
 
 
-<ClLinks  term={"key"}><i>keys</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"object"}><i>objects</i></ClLinks>. In the case of <DictionaryLink  term={"case"}><b>case</b></DictionaryLink>, the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> and **otherwise** may not be used as the *keys designator* . To refer to these <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> by themselves as <ClLinks  term={"key"}><i>keys</i></ClLinks>, the designators (t) and (otherwise), respectively, must be used instead. 
+<GlossaryTerm  term={"key"}><i>keys</i></GlossaryTerm>—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm>. In the case of <DictionaryLink  term={"case"}><b>case</b></DictionaryLink>, the <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> and **otherwise** may not be used as the *keys designator* . To refer to these <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> by themselves as <GlossaryTerm  term={"key"}><i>keys</i></GlossaryTerm>, the designators (t) and (otherwise), respectively, must be used instead. 
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>—an *implicit progn*. 
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks> in the matching *clause*. 
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in the matching *clause*. 
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-These <ClLinks  term={"macro"}><i>macros</i></ClLinks> allow the conditional execution of a body of <ClLinks  term={"form"}><i>forms</i></ClLinks> in a *clause* that is selected by matching the *test-key* on the basis of its identity. 
+These <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm> allow the conditional execution of a body of <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in a *clause* that is selected by matching the *test-key* on the basis of its identity. 
 
 
 
@@ -70,11 +70,11 @@ The *keyform* or *keyplace* is *evaluated* to produce the *test-key*.
 
 
 
-Each of the *normal-clauses* is then considered in turn. If the *test-key* is the <ClLinks  term={"same"}><i>same</i></ClLinks> as any <ClLinks  term={"key"}><i>key</i></ClLinks> for that *clause*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks  term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <DictionaryLink  term={"case"}><b>case</b></DictionaryLink>, <DictionaryLink  term={"ccase"}><b>ccase</b></DictionaryLink>, or <DictionaryLink  term={"ecase"}><b>ecase</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+Each of the *normal-clauses* is then considered in turn. If the *test-key* is the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> as any <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> for that *clause*, the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in that *clause* are *evaluated* as an *implicit progn*, and the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> it returns are returned as the value of the <DictionaryLink  term={"case"}><b>case</b></DictionaryLink>, <DictionaryLink  term={"ccase"}><b>ccase</b></DictionaryLink>, or <DictionaryLink  term={"ecase"}><b>ecase</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-These <ClLinks  term={"macro"}><i>macros</i></ClLinks> differ only in their *behavior* when no *normal-clause* matches; specifically: <DictionaryLink  term={"case"}><b>case</b></DictionaryLink> 
+These <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm> differ only in their *behavior* when no *normal-clause* matches; specifically: <DictionaryLink  term={"case"}><b>case</b></DictionaryLink> 
 
 
 
@@ -94,7 +94,7 @@ If no *normal-clause* matches, and there is an *otherwise-clause*, then that *ot
 
 
 
-automatically matches; the <ClLinks  term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks  term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <DictionaryLink  term={"case"}><b>case</b></DictionaryLink>. 
+automatically matches; the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in that *clause* are *evaluated* as an *implicit progn*, and the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> it returns are returned as the value of the <DictionaryLink  term={"case"}><b>case</b></DictionaryLink>. 
 
 
 
@@ -106,11 +106,11 @@ If there is no *otherwise-clause*, <DictionaryLink  term={"case"}><b>case</b></D
 
 
 
-If no *normal-clause* matches, a *correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (member *key1 key2* ...). The **store-value** <ClLinks  term={"restart"}><i>restart</i></ClLinks> can be used to correct the error. 
+If no *normal-clause* matches, a *correctable error* of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (member *key1 key2* ...). The **store-value** <GlossaryTerm  term={"restart"}><i>restart</i></GlossaryTerm> can be used to correct the error. 
 
 
 
-If the **store-value** <ClLinks  term={"restart"}><i>restart</i></ClLinks> is invoked, its <ClLinks  term={"argument"}><i>argument</i></ClLinks> becomes the new *test-key*, and is stored in *keyplace* as if by (setf *keyplace test-key*). Then <DictionaryLink  term={"ccase"}><b>ccase</b></DictionaryLink> starts over, considering each *clause* anew. 
+If the **store-value** <GlossaryTerm  term={"restart"}><i>restart</i></GlossaryTerm> is invoked, its <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> becomes the new *test-key*, and is stored in *keyplace* as if by (setf *keyplace test-key*). Then <DictionaryLink  term={"ccase"}><b>ccase</b></DictionaryLink> starts over, considering each *clause* anew. 
 
 
 
@@ -122,7 +122,7 @@ The subforms of *keyplace* might be evaluated again if none of the cases holds.
 
 
 
-If no *normal-clause* matches, a *non-correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. The offending datum is the *test-key* and the expected type is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to (member *key1 key2* ...). 
+If no *normal-clause* matches, a *non-correctable error* of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. The offending datum is the *test-key* and the expected type is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to (member *key1 key2* ...). 
 
 
 
@@ -168,7 +168,7 @@ Data and Control
 
 
 
-The debugger might be entered. If the **store-value** <ClLinks  term={"restart"}><i>restart</i></ClLinks> is invoked, the <ClLinks  term={"value"}><i>value</i></ClLinks> of *keyplace* might be changed. 
+The debugger might be entered. If the **store-value** <GlossaryTerm  term={"restart"}><i>restart</i></GlossaryTerm> is invoked, the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of *keyplace* might be changed. 
 
 
 
@@ -176,7 +176,7 @@ The debugger might be entered. If the **store-value** <ClLinks  term={"restart"}
 
 
 
-<DictionaryLink  term={"ccase"}><b>ccase</b></DictionaryLink> and <DictionaryLink  term={"ecase"}><b>ecase</b></DictionaryLink>, since they might signal an error, are potentially affected by existing <ClLinks  term={"handler"}><i>handlers</i></ClLinks> and **\*debug-io\***. 
+<DictionaryLink  term={"ccase"}><b>ccase</b></DictionaryLink> and <DictionaryLink  term={"ecase"}><b>ecase</b></DictionaryLink>, since they might signal an error, are potentially affected by existing <GlossaryTerm  term={"handler"}><i>handlers</i></GlossaryTerm> and **\*debug-io\***. 
 
 
 
@@ -184,7 +184,7 @@ The debugger might be entered. If the **store-value** <ClLinks  term={"restart"}
 
 
 
-<DictionaryLink  term={"ccase"}><b>ccase</b></DictionaryLink> and <DictionaryLink  term={"ecase"}><b>ecase</b></DictionaryLink> signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if no *normal-clause* matches. 
+<DictionaryLink  term={"ccase"}><b>ccase</b></DictionaryLink> and <DictionaryLink  term={"ecase"}><b>ecase</b></DictionaryLink> signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if no *normal-clause* matches. 
 
 
 
@@ -204,7 +204,7 @@ The debugger might be entered. If the **store-value** <ClLinks  term={"restart"}
 
 
 
-*\{*((<ClLinks  term={"key"}><i>\{key\}</i></ClLinks>\*) <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\*)*\}*\*) 
+*\{*((<GlossaryTerm  term={"key"}><i>\{key\}</i></GlossaryTerm>\*) <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\*)*\}*\*) 
 
 
 
@@ -216,7 +216,7 @@ The debugger might be entered. If the **store-value** <ClLinks  term={"restart"}
 
 
 
-(cond *\{*((member #1# ’(<ClLinks  term={"key"}><i>\{key\}</i></ClLinks>\*)) <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\*)*\}*\*)) 
+(cond *\{*((member #1# ’(<GlossaryTerm  term={"key"}><i>\{key\}</i></GlossaryTerm>\*)) <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\*)*\}*\*)) 
 
 
 

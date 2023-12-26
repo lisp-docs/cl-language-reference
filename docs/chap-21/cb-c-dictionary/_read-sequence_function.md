@@ -1,4 +1,4 @@
-**read-sequence** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**read-sequence** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks>—an *input stream*. 
+<GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>—an *input stream*. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*position*—an *integer* greater than or equal to zero, and less than or equal to the <ClLinks  term={"length"}><i>length</i></ClLinks> of the *sequence*. 
+*position*—an *integer* greater than or equal to zero, and less than or equal to the <GlossaryTerm  term={"length"}><i>length</i></GlossaryTerm> of the *sequence*. 
 
 
 
@@ -30,19 +30,15 @@
 
 
 
-Destructively modifies *sequence* by replacing the <ClLinks  term={"element"}><i>elements</i></ClLinks> of *sequence bounded* by *start* and *end* with <ClLinks  term={"element"}><i>elements</i></ClLinks> read from <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Destructively modifies *sequence* by replacing the <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of *sequence bounded* by *start* and *end* with <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> read from <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
-*Sequence* is destructively modified by copying successive <ClLinks  term={"element"}><i>elements</i></ClLinks> into it from <ClLinks  term={"stream"}><i>stream</i></ClLinks>. If the <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm> for <ClLinks  term={"stream"}><i>stream</i></ClLinks> is reached before copying all <ClLinks  term={"element"}><i>elements</i></ClLinks> of the subsequence, then the extra <ClLinks  term={"element"}><i>elements</i></ClLinks> near the end of *sequence* are not updated. 
-
-
+*Sequence* is destructively modified by copying successive <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> into it from <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. If the <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm> for <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is reached before copying all <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of the subsequence, then the extra <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> near the end of *sequence* are not updated. 
 
 
 
 
-
- 
 
 
 
@@ -50,7 +46,11 @@ Destructively modifies *sequence* by replacing the <ClLinks  term={"element"}><i
 
 
 
-*Position* is the index of the first <ClLinks  term={"element"}><i>element</i></ClLinks> of *sequence* that was not updated, which might be less than *end* because the <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm> was reached. 
+ 
+
+
+
+*Position* is the index of the first <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of *sequence* that was not updated, which might be less than *end* because the <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm> was reached. 
 
 
 
@@ -63,7 +63,7 @@ Destructively modifies *sequence* by replacing the <ClLinks  term={"element"}><i
 
 
 
-Modifies <ClLinks  term={"stream"}><i>stream</i></ClLinks> and *sequence*. 
+Modifies <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> and *sequence*. 
 
 
 
@@ -71,11 +71,11 @@ Modifies <ClLinks  term={"stream"}><i>stream</i></ClLinks> and *sequence*.
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *start* is not a non-negative *integer* . Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *end* is not a non-negative *integer* or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+Should be prepared to signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *start* is not a non-negative *integer* . Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *end* is not a non-negative *integer* or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-Might signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if an <ClLinks  term={"element"}><i>element</i></ClLinks> read from the <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a member of the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of the *sequence*. 
+Might signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if an <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> read from the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is not a member of the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of the *sequence*. 
 
 
 
@@ -91,7 +91,7 @@ Section 3.2.1 (Compiler Terminology), <DictionaryLink  term={"write-sequence"}><
 
 
 
-<DictionaryLink  term={"read-sequence"}><b>read-sequence</b></DictionaryLink> is identical in effect to iterating over the indicated subsequence and reading one <ClLinks  term={"element"}><i>element</i></ClLinks> at a time from <ClLinks  term={"stream"}><i>stream</i></ClLinks> and storing it into *sequence*, but may be more efficient than the equivalent loop. An efficient implementation is more likely to exist for the case where the *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with the same <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> as the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<DictionaryLink  term={"read-sequence"}><b>read-sequence</b></DictionaryLink> is identical in effect to iterating over the indicated subsequence and reading one <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> at a time from <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> and storing it into *sequence*, but may be more efficient than the equivalent loop. An efficient implementation is more likely to exist for the case where the *sequence* is a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> with the same <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> as the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 

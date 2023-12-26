@@ -1,4 +1,4 @@
-**shadow** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**shadow** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*symbol-names*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"string designator"}><i>string designators</i></GlossaryTerm>. 
+*symbol-names*—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"string designator"}><i>string designators</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<DictionaryLink  term={"shadow"}><b>shadow</b></DictionaryLink> assures that <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> with names given by *symbol-names* are <ClLinks  term={"present"}><i>present</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<DictionaryLink  term={"shadow"}><b>shadow</b></DictionaryLink> assures that <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> with names given by *symbol-names* are <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> in the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
-Specifically, <ClLinks  term={"package"}><i>package</i></ClLinks> is searched for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> with the <ClLinks  term={"name"}><i>names</i></ClLinks> supplied by *symbol-names*. For each such <ClLinks  term={"name"}><i>name</i></ClLinks>, if a corresponding <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> (directly, not by inheritance), then a corresponding <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is created with that <ClLinks  term={"name"}><i>name</i></ClLinks>, and inserted into <ClLinks  term={"package"}><i>package</i></ClLinks> as an <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm>. The corresponding <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, whether pre-existing or newly created, is then added, if not already present, to the <GlossaryTerm styled={true} term={"shadowing symbols list"}><i>shadowing symbols list</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+Specifically, <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> is searched for <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> with the <GlossaryTerm  term={"name"}><i>names</i></GlossaryTerm> supplied by *symbol-names*. For each such <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>, if a corresponding <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is not <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> (directly, not by inheritance), then a corresponding <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is created with that <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>, and inserted into <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> as an <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm>. The corresponding <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, whether pre-existing or newly created, is then added, if not already present, to the <GlossaryTerm styled={true} term={"shadowing symbols list"}><i>shadowing symbols list</i></GlossaryTerm> of <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
@@ -81,7 +81,7 @@ Current state of the package system.
 
 
 
-If a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> with a name in *symbol-names* already exists in <ClLinks  term={"package"}><i>package</i></ClLinks>, but by inheritance, the inherited symbol becomes *shadowed* <sub>3</sub> by a newly created <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm>. 
+If a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> with a name in *symbol-names* already exists in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, but by inheritance, the inherited symbol becomes *shadowed* <sub>3</sub> by a newly created <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm>. 
 
 
 

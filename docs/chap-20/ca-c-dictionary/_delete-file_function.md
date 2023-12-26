@@ -1,4 +1,4 @@
-**delete-file** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**delete-file** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-Deletes the <ClLinks  term={"file"}><i>file</i></ClLinks> specified by *filespec*. 
+Deletes the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> specified by *filespec*. 
 
 
 
-If the *filespec designator* is an open <ClLinks  term={"stream"}><i>stream</i></ClLinks>, then *filespec* and the file associated with it are affected (if the file system permits), in which case *filespec* might be closed immediately, and the deletion 
+If the *filespec designator* is an open <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>, then *filespec* and the file associated with it are affected (if the file system permits), in which case *filespec* might be closed immediately, and the deletion 
 
 
 
@@ -46,15 +46,15 @@ might be immediate or delayed until *filespec* is explicitly closed, depending o
 
 
 
-It is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether an attempt to delete a nonexistent file is considered to be successful. 
+It is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> whether an attempt to delete a nonexistent file is considered to be successful. 
 
 
 
-<DictionaryLink  term={"delete-file"}><b>delete-file</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if it succeeds, or signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> if it does not. 
+<DictionaryLink  term={"delete-file"}><b>delete-file</b></DictionaryLink> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if it succeeds, or signals an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> if it does not. 
 
 
 
-The consequences are undefined if *filespec* has a <ClLinks  term={"wild"}><i>wild</i></ClLinks> component, or if *filespec* has a <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> component and the file system does not permit a <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> component. 
+The consequences are undefined if *filespec* has a <GlossaryTerm  term={"wild"}><i>wild</i></GlossaryTerm> component, or if *filespec* has a <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> component and the file system does not permit a <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> component. 
 
 
 
@@ -74,11 +74,11 @@ The consequences are undefined if *filespec* has a <ClLinks  term={"wild"}><i>wi
 
 
 
-If the deletion operation is not successful, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
+If the deletion operation is not successful, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> might be signaled if *filespec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> might be signaled if *filespec* is <GlossaryTerm  term={"wild"}><i>wild</i></GlossaryTerm>. 
 
 
 

@@ -1,4 +1,4 @@
-**read-delimited-list** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**read-delimited-list** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*char*—a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
+*char*—a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> . 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-*recursive-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*recursive-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"list"}><i>list</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"object"}><i>objects</i></ClLinks> read. 
+<GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of the <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> read. 
 
 
 
@@ -50,15 +50,15 @@
 
 
 
-<DictionaryLink  term={"read-delimited-list"}><b>read-delimited-list</b></DictionaryLink> reads <ClLinks  term={"object"}><i>objects</i></ClLinks> from *input-stream* until the next character after an <ClLinks  term={"object"}><i>object</i></ClLinks>’s representation (ignoring <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> characters and comments) is *char*. 
+<DictionaryLink  term={"read-delimited-list"}><b>read-delimited-list</b></DictionaryLink> reads <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> from *input-stream* until the next character after an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>’s representation (ignoring <GlossaryTerm  term={"whitespace"}><i>whitespace</i></GlossaryTerm><sub>2</sub> characters and comments) is *char*. 
 
 
 
-<DictionaryLink  term={"read-delimited-list"}><b>read-delimited-list</b></DictionaryLink> looks ahead at each step for the next non-<ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks  term={"character"}><i>character</i></ClLinks> and peeks at it as if with <DictionaryLink  term={"peek-char"}><b>peek-char</b></DictionaryLink>. If it is *char*, then the <ClLinks  term={"character"}><i>character</i></ClLinks> is consumed and the <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"object"}><i>objects</i></ClLinks> is returned. If it is a <ClLinks  term={"constituent"}><i>constituent</i></ClLinks> or *escape character* , then <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> is used to read an <ClLinks  term={"object"}><i>object</i></ClLinks>, which is added to the end of the <ClLinks  term={"list"}><i>list</i></ClLinks>. If it is a <GlossaryTerm styled={true} term={"macro character"}><i>macro character</i></GlossaryTerm> , its <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro function</i></GlossaryTerm> is called; if the function returns a <ClLinks  term={"value"}><i>value</i></ClLinks>, that <ClLinks  term={"value"}><i>value</i></ClLinks> is added to the <ClLinks  term={"list"}><i>list</i></ClLinks>. The peek-ahead process is then repeated. 
+<DictionaryLink  term={"read-delimited-list"}><b>read-delimited-list</b></DictionaryLink> looks ahead at each step for the next non-<GlossaryTerm  term={"whitespace"}><i>whitespace</i></GlossaryTerm><sub>2</sub> <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> and peeks at it as if with <DictionaryLink  term={"peek-char"}><b>peek-char</b></DictionaryLink>. If it is *char*, then the <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> is consumed and the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> is returned. If it is a <GlossaryTerm  term={"constituent"}><i>constituent</i></GlossaryTerm> or *escape character* , then <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> is used to read an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>, which is added to the end of the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. If it is a <GlossaryTerm styled={true} term={"macro character"}><i>macro character</i></GlossaryTerm> , its <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro function</i></GlossaryTerm> is called; if the function returns a <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>, that <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> is added to the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. The peek-ahead process is then repeated. 
 
 
 
-If *recursive-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, this call is expected to be embedded in a higher-level call to <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> or a similar function. 
+If *recursive-p* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, this call is expected to be embedded in a higher-level call to <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> or a similar function. 
 
 
 
@@ -66,7 +66,7 @@ It is an error to reach end-of-file during the operation of <DictionaryLink  ter
 
 
 
-The consequences are undefined if *char* has a <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm> of <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> in the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. 
+The consequences are undefined if *char* has a <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm> of <GlossaryTerm  term={"whitespace"}><i>whitespace</i></GlossaryTerm><sub>2</sub> in the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. 
 
 **Examples:**
 ```lisp

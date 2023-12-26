@@ -1,4 +1,4 @@
-**signed-byte** <ClLinks  term={"type"}><i>Type</i></ClLinks> 
+**signed-byte** <GlossaryTerm  term={"type"}><i>Type</i></GlossaryTerm> 
 
 
 

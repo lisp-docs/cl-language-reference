@@ -1,4 +1,4 @@
-**optimize** <ClLinks  term={"declaration"}><i>Declaration</i></ClLinks> 
+**optimize** <GlossaryTerm  term={"declaration"}><i>Declaration</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"value"}><i>value</i></ClLinks>—one of the *integers* 0, 1, 2, or 3. 
+<GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>—one of the *integers* 0, 1, 2, or 3. 
 
 
 
@@ -42,7 +42,7 @@ Evaluation and
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks> or <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks> 
+<GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm> or <GlossaryTerm  term={"proclamation"}><i>proclamation</i></GlossaryTerm> 
 
 
 
@@ -50,7 +50,7 @@ Evaluation and
 
 
 
-Advises the compiler that each *quality* should be given attention according to the specified corresponding <ClLinks  term={"value"}><i>value</i></ClLinks>. Each *quality* must be a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming an <GlossaryTerm styled={true} term={"optimize quality"}><i>optimize quality</i></GlossaryTerm>; the names and meanings of the standard *optimize qualities* are shown in Figure 3–25. 
+Advises the compiler that each *quality* should be given attention according to the specified corresponding <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>. Each *quality* must be a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> naming an <GlossaryTerm styled={true} term={"optimize quality"}><i>optimize quality</i></GlossaryTerm>; the names and meanings of the standard *optimize qualities* are shown in Figure 3–25. 
 
 
 
@@ -72,11 +72,11 @@ There may be other, *implementation-defined optimize qualities*.
 
 
 
-A <ClLinks  term={"value"}><i>value</i></ClLinks> 0 means that the corresponding *quality* is totally unimportant, and 3 that the *quality* is extremely important; 1 and 2 are intermediate values, with 1 the neutral value. (*quality* 3) can be abbreviated to *quality*. 
+A <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> 0 means that the corresponding *quality* is totally unimportant, and 3 that the *quality* is extremely important; 1 and 2 are intermediate values, with 1 the neutral value. (*quality* 3) can be abbreviated to *quality*. 
 
 
 
-Note that <ClLinks  term={"code"}><i>code</i></ClLinks> which has the optimization (safety 3), or just **safety**, is called *safe code*. The consequences are unspecified if a *quality* appears more than once with *di↵erent values*. 
+Note that <GlossaryTerm  term={"code"}><i>code</i></GlossaryTerm> which has the optimization (safety 3), or just **safety**, is called *safe code*. The consequences are unspecified if a *quality* appears more than once with *di↵erent values*. 
 
 **Examples:**
 ```lisp
@@ -104,7 +104,7 @@ Note that <ClLinks  term={"code"}><i>code</i></ClLinks> which has the optimizati
 
 
 
-An <DictionaryLink  term={"optimize"}><b>optimize</b></DictionaryLink> declaration never applies to either a <ClLinks  term={"variable"}><i>variable</i></ClLinks> or a *function binding*. An **optimize 3–96** Programming Language—Common Lisp
+An <DictionaryLink  term={"optimize"}><b>optimize</b></DictionaryLink> declaration never applies to either a <GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm> or a *function binding*. An **optimize 3–96** Programming Language—Common Lisp
 
 
 

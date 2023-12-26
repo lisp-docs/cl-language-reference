@@ -1,4 +1,4 @@
-**bit** <ClLinks  term={"type"}><i>Type</i></ClLinks> 
+**bit** <GlossaryTerm  term={"type"}><i>Type</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink> is equivalent to the <ClLinks  term={"type"}><i>type</i></ClLinks> (integer 0 1) and (unsigned-byte 1). 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink> is equivalent to the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> (integer 0 1) and (unsigned-byte 1). 
 
 
 

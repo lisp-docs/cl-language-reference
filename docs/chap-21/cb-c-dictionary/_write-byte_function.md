@@ -1,4 +1,4 @@
-**write-byte** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**write-byte** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"byte"}><i>byte</i></ClLinks>—an *integer* of the <GlossaryTerm styled={true} term={"stream element type"}><i>stream element type</i></GlossaryTerm> of <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<GlossaryTerm  term={"byte"}><i>byte</i></GlossaryTerm>—an *integer* of the <GlossaryTerm styled={true} term={"stream element type"}><i>stream element type</i></GlossaryTerm> of <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a *binary output stream*. 
+<GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>—a *binary output stream*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<DictionaryLink  term={"write-byte"}><b>write-byte</b></DictionaryLink> writes one byte, <ClLinks  term={"byte"}><i>byte</i></ClLinks>, to <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<DictionaryLink  term={"write-byte"}><b>write-byte</b></DictionaryLink> writes one byte, <GlossaryTerm  term={"byte"}><i>byte</i></GlossaryTerm>, to <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks> is modified. 
+<GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is modified. 
 
 
 
@@ -49,7 +49,7 @@
 
 
 
-The <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
@@ -57,11 +57,11 @@ The <GlossaryTerm styled={true} term={"element type"}><i>element type</i></Gloss
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a *binary output stream*. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is not a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> if <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is not a *binary output stream*. 
 
 
 
-Might signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"byte"}><i>byte</i></ClLinks> is not an *integer* of the <GlossaryTerm styled={true} term={"stream element type"}><i>stream element type</i></GlossaryTerm> of <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Might signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"byte"}><i>byte</i></GlossaryTerm> is not an *integer* of the <GlossaryTerm styled={true} term={"stream element type"}><i>stream element type</i></GlossaryTerm> of <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 

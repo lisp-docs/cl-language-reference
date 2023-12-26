@@ -1,4 +1,4 @@
-**mod, rem** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**mod, rem** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a *real*. 
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>—a *real*. 
 
 
 
@@ -38,15 +38,15 @@
 
 
 
-<DictionaryLink  term={"mod"}><b>mod</b></DictionaryLink> performs the operation <DictionaryLink  term={"floor"}><b>floor</b></DictionaryLink> on <ClLinks  term={"number"}><i>number</i></ClLinks> and *divisor* and returns the remainder of the <DictionaryLink  term={"floor"}><b>floor</b></DictionaryLink> operation. 
+<DictionaryLink  term={"mod"}><b>mod</b></DictionaryLink> performs the operation <DictionaryLink  term={"floor"}><b>floor</b></DictionaryLink> on <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> and *divisor* and returns the remainder of the <DictionaryLink  term={"floor"}><b>floor</b></DictionaryLink> operation. 
 
 
 
-<DictionaryLink  term={"rem"}><b>rem</b></DictionaryLink> performs the operation <DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink> on <ClLinks  term={"number"}><i>number</i></ClLinks> and *divisor* and returns the remainder of the <DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink> operation. 
+<DictionaryLink  term={"rem"}><b>rem</b></DictionaryLink> performs the operation <DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink> on <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> and *divisor* and returns the remainder of the <DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink> operation. 
 
 
 
-<DictionaryLink  term={"mod"}><b>mod</b></DictionaryLink> and <DictionaryLink  term={"rem"}><b>rem</b></DictionaryLink> are the modulus and remainder functions when <ClLinks  term={"number"}><i>number</i></ClLinks> and *divisor* are *integers*. 
+<DictionaryLink  term={"mod"}><b>mod</b></DictionaryLink> and <DictionaryLink  term={"rem"}><b>rem</b></DictionaryLink> are the modulus and remainder functions when <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> and *divisor* are *integers*. 
 
 **Examples:**
 ```lisp

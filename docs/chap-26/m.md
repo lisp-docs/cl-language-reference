@@ -11,55 +11,51 @@ sidebar_position: 109
 
 
 
-**macro character** *n.* a <ClLinks  term={"character"}><i>character</i></ClLinks> which, when encountered by the *Lisp reader* in its main dispatch loop, introduces a <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm><sub>1</sub>. (<GlossaryTerm styled={true} term={"macro character"}><i>Macro characters</i></GlossaryTerm> have nothing to do with <ClLinks  term={"macro"}><i>macros</i></ClLinks>.) 
+**macro character** *n.* a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> which, when encountered by the *Lisp reader* in its main dispatch loop, introduces a <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm><sub>1</sub>. (<GlossaryTerm styled={true} term={"macro character"}><i>Macro characters</i></GlossaryTerm> have nothing to do with <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm>.) 
 
 
 
-**macro expansion** *n.* 1. the process of translating a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> into another <ClLinks  term={"form"}><i>form</i></ClLinks>. 2. the <ClLinks  term={"form"}><i>form</i></ClLinks> resulting from this process. 
+**macro expansion** *n.* 1. the process of translating a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> into another <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 2. the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> resulting from this process. 
 
 
 
-**macro form** *n.* a <ClLinks  term={"form"}><i>form</i></ClLinks> that stands for another <ClLinks  term={"form"}><i>form</i></ClLinks> (*e.g.*, for the purposes of 
+**macro form** *n.* a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> that stands for another <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> (*e.g.*, for the purposes of 
 
 
 
-abstraction, information hiding, or syntactic convenience); that is, either a <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm> whose first element is a <GlossaryTerm styled={true} term={"macro name"}><i>macro name</i></GlossaryTerm>, or a <ClLinks  term={"form"}><i>form</i></ClLinks> that is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that names a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm>. 
+abstraction, information hiding, or syntactic convenience); that is, either a <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm> whose first element is a <GlossaryTerm styled={true} term={"macro name"}><i>macro name</i></GlossaryTerm>, or a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> that is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> that names a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm>. 
 
 
 
-**macro function** *n.* a <ClLinks  term={"function"}><i>function</i></ClLinks> of two arguments, a <ClLinks  term={"form"}><i>form</i></ClLinks> and an <ClLinks  term={"environment"}><i>environment</i></ClLinks>, that implements <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> by producing a <ClLinks  term={"form"}><i>form</i></ClLinks> to be evaluated in place of the original argument <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+**macro function** *n.* a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of two arguments, a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> and an <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm>, that implements <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> by producing a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> to be evaluated in place of the original argument <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-**macro lambda list** *n.* an <GlossaryTerm styled={true} term={"extended lambda list"}><i>extended lambda list</i></GlossaryTerm> used in <ClLinks  term={"form"}><i>forms</i></ClLinks> that *establish macro* definitions, such as <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> and <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink>. See Section 3.4.4 (Macro Lambda Lists). 
+**macro lambda list** *n.* an <GlossaryTerm styled={true} term={"extended lambda list"}><i>extended lambda list</i></GlossaryTerm> used in <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> that *establish macro* definitions, such as <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> and <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink>. See Section 3.4.4 (Macro Lambda Lists). 
 
 
 
-**macro name** *n.* a <ClLinks  term={"name"}><i>name</i></ClLinks> for which <DictionaryLink  term={"macro-function"}><b>macro-function</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> and which when used as the first element of a <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm> identifies that <ClLinks  term={"form"}><i>form</i></ClLinks> as a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>. 
+**macro name** *n.* a <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> for which <DictionaryLink  term={"macro-function"}><b>macro-function</b></DictionaryLink> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> and which when used as the first element of a <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm> identifies that <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> as a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>. 
 
 
 
-**macroexpand hook** *n.* the <ClLinks  term={"function"}><i>function</i></ClLinks> that is the <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*macroexpand-hook\***. 
+**macroexpand hook** *n.* the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> that is the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of **\*macroexpand-hook\***. 
 
 
 
-**mapping** *n.* 1. a type of iteration in which a <ClLinks  term={"function"}><i>function</i></ClLinks> is successively applied to <ClLinks  term={"object"}><i>objects</i></ClLinks> taken from corresponding entries in collections such as *sequences* or <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>. 2. *Math.* a relation between two sets in which each element of the first set (the “domain”) is assigned one element of the second set (the “range”). 
+**mapping** *n.* 1. a type of iteration in which a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is successively applied to <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> taken from corresponding entries in collections such as *sequences* or <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>. 2. *Math.* a relation between two sets in which each element of the first set (the “domain”) is assigned one element of the second set (the “range”). 
 
 
 
-**metaclass** *n.* 1. a <ClLinks  term={"class"}><i>class</i></ClLinks> whose instances are *classes*. 2. (of an <ClLinks  term={"object"}><i>object</i></ClLinks>) the <ClLinks  term={"class"}><i>class</i></ClLinks> of the <ClLinks  term={"class"}><i>class</i></ClLinks> of the <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+**metaclass** *n.* 1. a <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> whose instances are *classes*. 2. (of an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>) the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> of the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> of the <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-**Metaobject Protocol** *n.* one of many possible descriptions of how a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> might implement various aspects of the object system. This description is beyond the scope of this document, and no <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> is required to adhere to it except as noted explicitly in this specification. Nevertheless, its existence helps to establish normative practice, and implementors with no reason to diverge from it are encouraged to consider making their <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> adhere to it where possible. It is described in detail in *The Art of the Metaobject Protocol*. 
-
-
+**Metaobject Protocol** *n.* one of many possible descriptions of how a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> might implement various aspects of the object system. This description is beyond the scope of this document, and no <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> is required to adhere to it except as noted explicitly in this specification. Nevertheless, its existence helps to establish normative practice, and implementors with no reason to diverge from it are encouraged to consider making their <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> adhere to it where possible. It is described in detail in *The Art of the Metaobject Protocol*. 
 
 
 
 
-
- 
 
 
 
@@ -67,23 +63,27 @@ abstraction, information hiding, or syntactic convenience); that is, either a <G
 
 
 
-<DictionaryLink  term={"method"}><b>method</b></DictionaryLink> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> that is part of a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> and which provides information about how that <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> should behave when its <ClLinks  term={"argument"}><i>arguments</i></ClLinks> are <ClLinks  term={"object"}><i>objects</i></ClLinks> of certain *classes* or with certain identities. 
+ 
 
 
 
-**method combination** *n.* 1. generally, the composition of a set of <ClLinks  term={"method"}><i>methods</i></ClLinks> to produce an <GlossaryTerm styled={true} term={"effective method"}><i>effective method</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 2. an object of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"method-combination"}><b>method-combination</b></DictionaryLink>, which represents the details of how the <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm><sub>1</sub> for one or more specific <GlossaryTerm styled={true} term={"generic function"}><i>generic functions</i></GlossaryTerm> is to be performed. 
+<DictionaryLink  term={"method"}><b>method</b></DictionaryLink> *n.* an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> that is part of a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> and which provides information about how that <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> should behave when its <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> are <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> of certain *classes* or with certain identities. 
 
 
 
-**method-defining form** *n.* a <ClLinks  term={"form"}><i>form</i></ClLinks> that defines a <ClLinks  term={"method"}><i>method</i></ClLinks> for a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>, whether explicitly or implicitly. See Section 7.6.1 (Introduction to Generic Functions). 
+**method combination** *n.* 1. generally, the composition of a set of <GlossaryTerm  term={"method"}><i>methods</i></GlossaryTerm> to produce an <GlossaryTerm styled={true} term={"effective method"}><i>effective method</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 2. an object of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"method-combination"}><b>method-combination</b></DictionaryLink>, which represents the details of how the <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm><sub>1</sub> for one or more specific <GlossaryTerm styled={true} term={"generic function"}><i>generic functions</i></GlossaryTerm> is to be performed. 
 
 
 
-**method-defining operator** *n.* an <ClLinks  term={"operator"}><i>operator</i></ClLinks> corresponding to a <GlossaryTerm styled={true} term={"method-defining form"}><i>method-defining form</i></GlossaryTerm>. See Figure 7–1. 
+**method-defining form** *n.* a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> that defines a <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>, whether explicitly or implicitly. See Section 7.6.1 (Introduction to Generic Functions). 
 
 
 
-**minimal compilation** *n.* actions the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must take at compile time. See Section 3.2.2 (Compilation Semantics). 
+**method-defining operator** *n.* an <GlossaryTerm  term={"operator"}><i>operator</i></GlossaryTerm> corresponding to a <GlossaryTerm styled={true} term={"method-defining form"}><i>method-defining form</i></GlossaryTerm>. See Figure 7–1. 
+
+
+
+**minimal compilation** *n.* actions the <GlossaryTerm  term={"compiler"}><i>compiler</i></GlossaryTerm> must take at compile time. See Section 3.2.2 (Compilation Semantics). 
 
 
 
@@ -107,11 +107,11 @@ purpose, but which deviates in syntax or functionality from the definition of an
 
 
 
-**multiple escape** *n.*, *adj.* 1. *n.* the <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm> of a <ClLinks  term={"character"}><i>character</i></ClLinks> that is used in pairs to indicate that the enclosed <ClLinks  term={"character"}><i>characters</i></ClLinks> are to be treated as <ClLinks  term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>2</sub> <ClLinks  term={"character"}><i>characters</i></ClLinks> with their <ClLinks  term={"case"}><i>case</i></ClLinks> preserved. For details, see Section 2.1.4.5 (Multiple Escape Characters). 2. *adj.* (of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) having the *multiple escape syntax type*. 3. *n.* a <GlossaryTerm styled={true} term={"multiple escape"}><i>multiple escape</i></GlossaryTerm><sub>2</sub> <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . (In the <GlossaryTerm styled={true} term={"standard readtable"}><i>standard readtable</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"vertical-bar"}><i>vertical-bar</i></GlossaryTerm> is a *multiple escape character* .) 
+**multiple escape** *n.*, *adj.* 1. *n.* the <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm> of a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> that is used in pairs to indicate that the enclosed <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> are to be treated as <GlossaryTerm  term={"alphabetic"}><i>alphabetic</i></GlossaryTerm><sub>2</sub> <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> with their <GlossaryTerm  term={"case"}><i>case</i></GlossaryTerm> preserved. For details, see Section 2.1.4.5 (Multiple Escape Characters). 2. *adj.* (of a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> ) having the *multiple escape syntax type*. 3. *n.* a <GlossaryTerm styled={true} term={"multiple escape"}><i>multiple escape</i></GlossaryTerm><sub>2</sub> <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . (In the <GlossaryTerm styled={true} term={"standard readtable"}><i>standard readtable</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"vertical-bar"}><i>vertical-bar</i></GlossaryTerm> is a *multiple escape character* .) 
 
 
 
-**multiple values** *n.* 1. more than one <ClLinks  term={"value"}><i>value</i></ClLinks>. “The function <DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink> returns multiple values.” 2. a variable number of <ClLinks  term={"value"}><i>values</i></ClLinks>, possibly including zero or one. “The function <DictionaryLink  term={"values"}><b>values</b></DictionaryLink> returns multiple values.” 3. a fixed number of values other than one. “The macro <DictionaryLink  term={"multiple-value-bind"}><b>multiple-value-bind</b></DictionaryLink> is among the few operators in Common Lisp which can detect and manipulate multiple values.” 
+**multiple values** *n.* 1. more than one <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>. “The function <DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink> returns multiple values.” 2. a variable number of <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm>, possibly including zero or one. “The function <DictionaryLink  term={"values"}><b>values</b></DictionaryLink> returns multiple values.” 3. a fixed number of values other than one. “The macro <DictionaryLink  term={"multiple-value-bind"}><b>multiple-value-bind</b></DictionaryLink> is among the few operators in Common Lisp which can detect and manipulate multiple values.” 
 
 
 

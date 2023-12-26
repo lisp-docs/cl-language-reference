@@ -18,7 +18,7 @@ The macro <DictionaryLink  term={"define-method-combination"}><b>define-method-c
 
 
 
-There are two forms of <DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink>. The short form is a simple facility while the long form is more powerful and more verbose. The long form resembles <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> in that the body is an expression that computes a Lisp form; it provides mechanisms for implementing arbitrary control structures within method combination and for arbitrary processing of method <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>. 
+There are two forms of <DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink>. The short form is a simple facility while the long form is more powerful and more verbose. The long form resembles <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> in that the body is an expression that computes a Lisp form; it provides mechanisms for implementing arbitrary control structures within method combination and for arbitrary processing of method <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm>. 
 
 
 

@@ -2,11 +2,11 @@
 
 
 
-The generic function <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> creates and returns a new <ClLinks  term={"instance"}><i>instance</i></ClLinks> of a <ClLinks  term={"class"}><i>class</i></ClLinks>. The object system provides several mechanisms for specifying how a new <ClLinks  term={"instance"}><i>instance</i></ClLinks> is to be initialized. For example, it is possible to specify the initial values for <ClLinks  term={"slot"}><i>slots</i></ClLinks> in newly created <ClLinks  term={"instance"}><i>instances</i></ClLinks> either by giving arguments to <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> or by providing default initial values. Further initialization 
+The generic function <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> creates and returns a new <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm> of a <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>. The object system provides several mechanisms for specifying how a new <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm> is to be initialized. For example, it is possible to specify the initial values for <GlossaryTerm  term={"slot"}><i>slots</i></GlossaryTerm> in newly created <GlossaryTerm  term={"instance"}><i>instances</i></GlossaryTerm> either by giving arguments to <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> or by providing default initial values. Further initialization 
 
 
 
-activities can be performed by <ClLinks  term={"method"}><i>methods</i></ClLinks> written for <GlossaryTerm styled={true} term={"generic function"}><i>generic functions</i></GlossaryTerm> that are part of the initialization protocol. The complete initialization protocol is described in Section 7.1 (Object Creation and Initialization). 
+activities can be performed by <GlossaryTerm  term={"method"}><i>methods</i></GlossaryTerm> written for <GlossaryTerm styled={true} term={"generic function"}><i>generic functions</i></GlossaryTerm> that are part of the initialization protocol. The complete initialization protocol is described in Section 7.1 (Object Creation and Initialization). 
 
 
 

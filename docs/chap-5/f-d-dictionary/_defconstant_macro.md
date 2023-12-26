@@ -1,4 +1,4 @@
-**defconstant** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**defconstant** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>; not evaluated. 
+<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>; not evaluated. 
 
 
 
-*initial-value*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated. 
+*initial-value*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated. 
 
 
 
-*documentation*—a <ClLinks  term={"string"}><i>string</i></ClLinks>; not evaluated. 
+*documentation*—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>; not evaluated. 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-<DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> causes the global variable named by <ClLinks  term={"name"}><i>name</i></ClLinks> to be given a value that is the result of evaluating *initial-value*. 
+<DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> causes the global variable named by <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> to be given a value that is the result of evaluating *initial-value*. 
 
 
 
-A constant defined by <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> can be redefined with <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink>. However, the consequences are undefined if an attempt is made to assign a <ClLinks  term={"value"}><i>value</i></ClLinks> to the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> using another operator, or to assign it to a *different value* using a subsequent <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink>. 
+A constant defined by <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> can be redefined with <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink>. However, the consequences are undefined if an attempt is made to assign a <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> to the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> using another operator, or to assign it to a *different value* using a subsequent <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink>. 
 
 
 
-If *documentation* is supplied, it is attached to <ClLinks  term={"name"}><i>name</i></ClLinks> as a *documentation string* of kind **variable**. 
+If *documentation* is supplied, it is attached to <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> as a *documentation string* of kind **variable**. 
 
 
 
@@ -46,11 +46,11 @@ If *documentation* is supplied, it is attached to <ClLinks  term={"name"}><i>nam
 
 
 
-The consequences are undefined if there are any <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of the variable named by <ClLinks  term={"name"}><i>name</i></ClLinks> at the time <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> is executed or if the value is not <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> to the value of *initial-value*. 
+The consequences are undefined if there are any <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm> of the variable named by <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> at the time <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> is executed or if the value is not <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> to the value of *initial-value*. 
 
 
 
-The consequences are undefined when constant <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are rebound as either lexical or dynamic variables. In other words, a reference to a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> declared with <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> always refers to its global value. 
+The consequences are undefined when constant <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> are rebound as either lexical or dynamic variables. In other words, a reference to a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> declared with <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> always refers to its global value. 
 
 
 
@@ -58,15 +58,15 @@ The side effects of the execution of <DictionaryLink  term={"defconstant"}><b>de
 
 
 
-(setf (symbol-value ’<ClLinks  term={"name"}><i>name</i></ClLinks>) *initial-value*) 
+(setf (symbol-value ’<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>) *initial-value*) 
 
 
 
-(setf (documentation ’<ClLinks  term={"name"}><i>name</i></ClLinks> ’variable) ’*documentation*) 
+(setf (documentation ’<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> ’variable) ’*documentation*) 
 
 
 
-If a <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must recognize that <ClLinks  term={"name"}><i>name</i></ClLinks> names a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. An implementation may choose to evaluate the value-form at compile time, load time, or both. Therefore, users must ensure that the *initial-value* can be *evaluated* at compile time (regardless of whether or not references to <ClLinks  term={"name"}><i>name</i></ClLinks> appear in the file) and that it always <ClLinks  term={"evaluate"}><i>evaluates</i></ClLinks> to the same value. 
+If a <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <GlossaryTerm  term={"compiler"}><i>compiler</i></GlossaryTerm> must recognize that <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> names a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. An implementation may choose to evaluate the value-form at compile time, load time, or both. Therefore, users must ensure that the *initial-value* can be *evaluated* at compile time (regardless of whether or not references to <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> appear in the file) and that it always <GlossaryTerm  term={"evaluate"}><i>evaluates</i></GlossaryTerm> to the same value. 
 
 
 

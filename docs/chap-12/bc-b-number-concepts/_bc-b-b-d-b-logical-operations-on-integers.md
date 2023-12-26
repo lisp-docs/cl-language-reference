@@ -2,7 +2,7 @@
 
 
 
-Logical operations require *integers* as arguments; an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> should be signaled if an argument is supplied that is not an *integer* . *Integer* arguments to logical operations are treated as if they were represented in two’s-complement notation. 
+Logical operations require *integers* as arguments; an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> should be signaled if an argument is supplied that is not an *integer* . *Integer* arguments to logical operations are treated as if they were represented in two’s-complement notation. 
 
 
 

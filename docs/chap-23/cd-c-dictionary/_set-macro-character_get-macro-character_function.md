@@ -1,4 +1,4 @@
-**set-macro-character, get-macro-character** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**set-macro-character, get-macro-character** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-*char*—a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
+*char*—a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> . 
 
 
 
-*non-terminating-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*non-terminating-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-<ClLinks  term={"readtable"}><i>readtable</i></ClLinks>—a <GlossaryTerm styled={true} term={"readtable designator"}><i>readtable designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. 
+<GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"readtable designator"}><i>readtable designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—<DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, or a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks>. 
+<GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>—<DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, or a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm>. 
 
 
 
@@ -58,11 +58,11 @@
 
 
 
-<DictionaryLink  term={"get-macro-character"}><b>get-macro-character</b></DictionaryLink> returns as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro function</i></GlossaryTerm> associated with *char* in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> (if any), or else <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if *char* is not a <GlossaryTerm styled={true} term={"macro character"}><i>macro character</i></GlossaryTerm> in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. The <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *non-terminating-p*, is <ClLinks  term={"true"}><i>true</i></ClLinks> if *char* is a *non-terminating macro character* ; otherwise, it is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+<DictionaryLink  term={"get-macro-character"}><b>get-macro-character</b></DictionaryLink> returns as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro function</i></GlossaryTerm> associated with *char* in <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm> (if any), or else <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if *char* is not a <GlossaryTerm styled={true} term={"macro character"}><i>macro character</i></GlossaryTerm> in <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *non-terminating-p*, is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if *char* is a *non-terminating macro character* ; otherwise, it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"set-macro-character"}><b>set-macro-character</b></DictionaryLink> causes *char* to be a <GlossaryTerm styled={true} term={"macro character"}><i>macro character</i></GlossaryTerm> associated with the *reader macro function new-function* (or the <ClLinks  term={"designator"}><i>designator</i></ClLinks> for *new-function*) in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. If *non-terminating-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, *char* becomes a *non-terminating macro character* ; otherwise it becomes a *terminating macro character* . 
+<DictionaryLink  term={"set-macro-character"}><b>set-macro-character</b></DictionaryLink> causes *char* to be a <GlossaryTerm styled={true} term={"macro character"}><i>macro character</i></GlossaryTerm> associated with the *reader macro function new-function* (or the <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for *new-function*) in <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm>. If *non-terminating-p* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, *char* becomes a *non-terminating macro character* ; otherwise it becomes a *terminating macro character* . 
 
 
 
@@ -90,7 +90,7 @@
 
 
 
-The <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is modified. 
+The <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm> is modified. 
 
 
 

@@ -1,4 +1,4 @@
-**base-string** <ClLinks  term={"type"}><i>Type</i></ClLinks> 
+**base-string** <GlossaryTerm  term={"type"}><i>Type</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"base-string"}><b>base-string</b></DictionaryLink> is equivalent to (vector base-char). The <GlossaryTerm styled={true} term={"base string"}><i>base string</i></GlossaryTerm> representation is the most efficient <ClLinks  term={"string"}><i>string</i></ClLinks> representation that can hold an arbitrary sequence of <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"base-string"}><b>base-string</b></DictionaryLink> is equivalent to (vector base-char). The <GlossaryTerm styled={true} term={"base string"}><i>base string</i></GlossaryTerm> representation is the most efficient <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> representation that can hold an arbitrary sequence of <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>. 
 
 
 
@@ -50,7 +50,7 @@ Abbreviating.
 
 
 
-*size*—a non-negative <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>, or the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*size*—a non-negative <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm>, or the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> **\***. 
 
 
 

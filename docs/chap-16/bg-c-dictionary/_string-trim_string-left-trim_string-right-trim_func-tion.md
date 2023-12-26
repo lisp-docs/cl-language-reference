@@ -22,15 +22,15 @@
 
 
 
-*character-bag*—a *sequence* containing <ClLinks  term={"character"}><i>characters</i></ClLinks>. 
+*character-bag*—a *sequence* containing <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"string"}><i>string</i></ClLinks>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
+<GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
 
 
 
-*trimmed-string*—a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+*trimmed-string*—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. 
 
 
 
@@ -38,15 +38,15 @@
 
 
 
-<DictionaryLink  term={"string-trim"}><b>string-trim</b></DictionaryLink> returns a substring of <ClLinks  term={"string"}><i>string</i></ClLinks>, with all characters in *character-bag* stripped off the beginning and end. <DictionaryLink  term={"string-left-trim"}><b>string-left-trim</b></DictionaryLink> is similar but strips characters off only the beginning; <DictionaryLink  term={"string-right-trim"}><b>string-right-trim</b></DictionaryLink> strips off only the end. 
+<DictionaryLink  term={"string-trim"}><b>string-trim</b></DictionaryLink> returns a substring of <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>, with all characters in *character-bag* stripped off the beginning and end. <DictionaryLink  term={"string-left-trim"}><b>string-left-trim</b></DictionaryLink> is similar but strips characters off only the beginning; <DictionaryLink  term={"string-right-trim"}><b>string-right-trim</b></DictionaryLink> strips off only the end. 
 
 
 
-If no <ClLinks  term={"character"}><i>characters</i></ClLinks> need to be trimmed from the <ClLinks  term={"string"}><i>string</i></ClLinks>, then either <ClLinks  term={"string"}><i>string</i></ClLinks> itself or a copy of it may be returned, at the discretion of the implementation. 
+If no <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> need to be trimmed from the <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>, then either <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> itself or a copy of it may be returned, at the discretion of the implementation. 
 
 
 
-All of these <ClLinks  term={"function"}><i>functions</i></ClLinks> observe the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
+All of these <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> observe the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
 
 
 
@@ -70,7 +70,7 @@ All of these <ClLinks  term={"function"}><i>functions</i></ClLinks> observe the 
 
 
 
-The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+The <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 
@@ -166,11 +166,11 @@ These functions perform lexicographic comparisons on *string1* and *string2*. <C
 
 
 
-comparison operations these <ClLinks  term={"function"}><i>functions</i></ClLinks> perform are restricted to the subsequence of *string1 bounded* by *start1* and *end1* and to the subsequence of *string2 bounded* by *start2* and *end2*. 
+comparison operations these <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> perform are restricted to the subsequence of *string1 bounded* by *start1* and *end1* and to the subsequence of *string2 bounded* by *start2* and *end2*. 
 
 
 
-A string *a* is equal to a string *b* if it contains the same number of characters, and the corresponding characters are the <ClLinks  term={"same"}><i>same</i></ClLinks> under <ClLinks  term={"char="}><b>char=</b></ClLinks> or <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink>, as appropriate. 
+A string *a* is equal to a string *b* if it contains the same number of characters, and the corresponding characters are the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> under <ClLinks  term={"char="}><b>char=</b></ClLinks> or <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink>, as appropriate. 
 
 
 
@@ -178,11 +178,11 @@ A string *a* is less than a string *b* if in the first position in which they di
 
 
 
-The equality functions return a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> that is <ClLinks  term={"true"}><i>true</i></ClLinks> if the strings are equal, or <ClLinks  term={"false"}><i>false</i></ClLinks> otherwise. 
+The equality functions return a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> that is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if the strings are equal, or <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> otherwise. 
 
 
 
-The inequality functions return a *mismatch-index* that is <ClLinks  term={"true"}><i>true</i></ClLinks> if the strings are not equal, or <ClLinks  term={"false"}><i>false</i></ClLinks> otherwise. When the *mismatch-index* is <ClLinks  term={"true"}><i>true</i></ClLinks>, it is an *integer* representing the first character position at which the two substrings differ, as an offset from the beginning of *string1*. 
+The inequality functions return a *mismatch-index* that is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if the strings are not equal, or <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> otherwise. When the *mismatch-index* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, it is an *integer* representing the first character position at which the two substrings differ, as an offset from the beginning of *string1*. 
 
 
 
@@ -194,7 +194,7 @@ The comparison has one of the following results:
 
 
 
-<ClLinks  term={"string"}><b>string=</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks> if the supplied substrings are of the same length and contain the <ClLinks  term={"same"}><i>same</i></ClLinks> characters in corresponding positions; otherwise it is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+<ClLinks  term={"string"}><b>string=</b></ClLinks> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if the supplied substrings are of the same length and contain the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> characters in corresponding positions; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
@@ -202,7 +202,7 @@ The comparison has one of the following results:
 
 
 
-<ClLinks  term={"string"}><b>string/=</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks> if the supplied substrings are different; otherwise it is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+<ClLinks  term={"string"}><b>string/=</b></ClLinks> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if the supplied substrings are different; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
@@ -210,7 +210,7 @@ The comparison has one of the following results:
 
 
 
-**string-equal** is just like <ClLinks  term={"string"}><b>string=</b></ClLinks> except that differences in case are ignored; two characters are considered to be the same if <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink> is <ClLinks  term={"true"}><i>true</i></ClLinks> of them. 
+**string-equal** is just like <ClLinks  term={"string"}><b>string=</b></ClLinks> except that differences in case are ignored; two characters are considered to be the same if <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> of them. 
 
 
 
@@ -218,7 +218,7 @@ The comparison has one of the following results:
 
 
 
-<DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&lt; is <ClLinks  term={"true"}><i>true</i></ClLinks> if substring1 is less than substring2; otherwise it is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+<DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&lt; is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if substring1 is less than substring2; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
@@ -226,7 +226,7 @@ The comparison has one of the following results:
 
 
 
-<DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&gt; is <ClLinks  term={"true"}><i>true</i></ClLinks> if substring1 is greater than substring2; otherwise it is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+<DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&gt; is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if substring1 is greater than substring2; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
@@ -242,7 +242,7 @@ The comparison has one of the following results:
 
 
 
-<DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&lt;<ClLinks  term={"="}><b>=</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks> if substring1 is less than or equal to substring2; otherwise it is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+<DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&lt;<ClLinks  term={"="}><b>=</b></ClLinks> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if substring1 is less than or equal to substring2; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
@@ -258,7 +258,7 @@ The comparison has one of the following results:
 
 
 
-<DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&gt;<ClLinks  term={"="}><b>=</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks> if substring1 is greater than or equal to substring2; otherwise it is <ClLinks  term={"false"}><i>false</i></ClLinks>. **string-not-greaterp**, **string-not-lessp** 
+<DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&gt;<ClLinks  term={"="}><b>=</b></ClLinks> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if substring1 is greater than or equal to substring2; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. **string-not-greaterp**, **string-not-lessp** 
 
 
 
@@ -293,7 +293,7 @@ The comparison has one of the following results:
 
 
 
-<DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> calls <ClLinks  term={"string"}><b>string=</b></ClLinks> if applied to two <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
+<DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> calls <ClLinks  term={"string"}><b>string=</b></ClLinks> if applied to two <GlossaryTerm  term={"string"}><i>strings</i></GlossaryTerm>. 
 
 
 

@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"floating-point-overflow"}><b>floating-point-overflow</b></DictionaryLink> consists of error conditions that occur because of floating-point overflow. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"floating-point-overflow"}><b>floating-point-overflow</b></DictionaryLink> consists of error conditions that occur because of floating-point overflow. 
 
 
 

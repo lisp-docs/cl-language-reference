@@ -14,11 +14,11 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"unbound-variable"}><b>unbound-variable</b></DictionaryLink> consists of *error conditions* that represent attempts to <ClLinks  term={"read"}><i>read</i></ClLinks> the <ClLinks  term={"value"}><i>value</i></ClLinks> of an <GlossaryTerm styled={true} term={"unbound variable"}><i>unbound variable</i></GlossaryTerm>. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"unbound-variable"}><b>unbound-variable</b></DictionaryLink> consists of *error conditions* that represent attempts to <GlossaryTerm  term={"read"}><i>read</i></GlossaryTerm> the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of an <GlossaryTerm styled={true} term={"unbound variable"}><i>unbound variable</i></GlossaryTerm>. 
 
 
 
-The name of the cell (see <DictionaryLink  term={"cell-error"}><b>cell-error</b></DictionaryLink>) is the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"variable"}><i>variable</i></ClLinks> that was <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>. 
+The name of the cell (see <DictionaryLink  term={"cell-error"}><b>cell-error</b></DictionaryLink>) is the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of the <GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm> that was <GlossaryTerm  term={"unbound"}><i>unbound</i></GlossaryTerm>. 
 
 
 

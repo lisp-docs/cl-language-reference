@@ -18,11 +18,11 @@
 
 
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated. 
+<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated. 
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks  term={"form"}><i>form</i></ClLinks>. These <ClLinks  term={"value"}><i>values</i></ClLinks> must conform to the <ClLinks  term={"type"}><i>type</i></ClLinks> supplied by *value-type*; see below. 
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> resulting from the <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. These <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> must conform to the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> supplied by *value-type*; see below. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-It is permissible for <ClLinks  term={"form"}><i>form</i></ClLinks> to <ClLinks  term={"yield"}><i>yield</i></ClLinks> a di↵erent number of <ClLinks  term={"value"}><i>values</i></ClLinks> than are specified by *value-type*, provided that the values for which <ClLinks  term={"type"}><i>types</i></ClLinks> are declared are indeed of those <ClLinks  term={"type"}><i>types</i></ClLinks>. Missing values are treated as <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> for the purposes of checking their <ClLinks  term={"type"}><i>types</i></ClLinks>. 
+It is permissible for <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> to <GlossaryTerm  term={"yield"}><i>yield</i></GlossaryTerm> a di↵erent number of <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> than are specified by *value-type*, provided that the values for which <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> are declared are indeed of those <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm>. Missing values are treated as <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> for the purposes of checking their <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm>. 
 
 
 
-Regardless of number of <ClLinks  term={"value"}><i>values</i></ClLinks> declared by *value-type*, the number of <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <DictionaryLink  term={"the"}><b>the</b></DictionaryLink> <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm> is the same as the number of <ClLinks  term={"value"}><i>values</i></ClLinks> returned by <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+Regardless of number of <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> declared by *value-type*, the number of <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by the <DictionaryLink  term={"the"}><b>the</b></DictionaryLink> <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm> is the same as the number of <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -67,7 +67,7 @@ Evaluation and
 
 
 
-The consequences are undefined if the *values yielded* by the <ClLinks  term={"form"}><i>form</i></ClLinks> are not of the <ClLinks  term={"type"}><i>type</i></ClLinks> specified by *value-type*. 
+The consequences are undefined if the *values yielded* by the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> are not of the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> specified by *value-type*. 
 
 
 
@@ -99,7 +99,7 @@ The <DictionaryLink  term={"values"}><b>values</b></DictionaryLink> <GlossaryTer
 
 
 
-<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> can be used with <DictionaryLink  term={"the"}><b>the</b></DictionaryLink> type declarations. In this case the declaration is transferred to the form that specifies the new value. The resulting <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> is then analyzed. 
+<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> can be used with <DictionaryLink  term={"the"}><b>the</b></DictionaryLink> type declarations. In this case the declaration is transferred to the form that specifies the new value. The resulting <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is then analyzed. 
 
 
 

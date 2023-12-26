@@ -1,4 +1,4 @@
-**defmacro** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**defmacro** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> *name lambda-list* [[ <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> *name lambda-list* [[ <GlossaryTerm  term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* *| documentation* ]] <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
 
 
 
-*documentation*—a <ClLinks  term={"string"}><i>string</i></ClLinks>; not evaluated. 
+*documentation*—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>; not evaluated. 
 
 
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>.  
+<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>.  
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-Defines <ClLinks  term={"name"}><i>name</i></ClLinks> as a <ClLinks  term={"macro"}><i>macro</i></ClLinks> by associating a <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm> with that <ClLinks  term={"name"}><i>name</i></ClLinks> in the global environment. The <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm> is defined in the same <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> in which the <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> appears. 
+Defines <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> as a <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> by associating a <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm> with that <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> in the global environment. The <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm> is defined in the same <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> in which the <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> appears. 
 
 
 
@@ -58,7 +58,7 @@ The parameter variables in *lambda-list* are bound to destructured portions of t
 
 
 
-The expansion function accepts two arguments, a <ClLinks  term={"form"}><i>form</i></ClLinks> and an <ClLinks  term={"environment"}><i>environment</i></ClLinks>. The expansion function returns a <ClLinks  term={"form"}><i>form</i></ClLinks>. The body of the expansion function is specified by <ClLinks  term={"form"}><i>forms</i></ClLinks>. <ClLinks  term={"form"}><i>Forms</i></ClLinks> are executed in order. The value of the last <ClLinks  term={"form"}><i>form</i></ClLinks> executed is returned as the expansion of the <ClLinks  term={"macro"}><i>macro</i></ClLinks>. The body <ClLinks  term={"form"}><i>forms</i></ClLinks> of the expansion function (but not the *lambda-list*) are implicitly enclosed in a <ClLinks  term={"block"}><i>block</i></ClLinks> whose name is <ClLinks  term={"name"}><i>name</i></ClLinks>. 
+The expansion function accepts two arguments, a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> and an <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm>. The expansion function returns a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. The body of the expansion function is specified by <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. <GlossaryTerm  term={"form"}><i>Forms</i></GlossaryTerm> are executed in order. The value of the last <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> executed is returned as the expansion of the <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm>. The body <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> of the expansion function (but not the *lambda-list*) are implicitly enclosed in a <GlossaryTerm  term={"block"}><i>block</i></GlossaryTerm> whose name is <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>. 
 
 
 
@@ -66,23 +66,23 @@ The *lambda-list* conforms to the requirements described in Section 3.4.4 (Macro
 
 
 
-*Documentation* is attached as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>) and to the <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>. 
+*Documentation* is attached as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> (as kind <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>) and to the <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> can be used to redefine a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or to replace a <ClLinks  term={"function"}><i>function</i></ClLinks> definition with a <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition. 
+<DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> can be used to redefine a <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> or to replace a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> definition with a <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> definition. 
 
 
 
-Recursive expansion of the <ClLinks  term={"form"}><i>form</i></ClLinks> returned must terminate, including the expansion of other <ClLinks  term={"macro"}><i>macros</i></ClLinks> which are <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of other <ClLinks  term={"form"}><i>forms</i></ClLinks> returned. 
+Recursive expansion of the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> returned must terminate, including the expansion of other <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm> which are <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> of other <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> returned. 
 
 
 
-The consequences are undefined if the result of fully macroexpanding a <ClLinks  term={"form"}><i>form</i></ClLinks> contains any *circular list structure* except in *literal objects*. 
+The consequences are undefined if the result of fully macroexpanding a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> contains any *circular list structure* except in *literal objects*. 
 
 
 
-If a <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must store the <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition at compile time, so that occurrences of the macro later on in the file can be expanded correctly. Users must ensure that the body of the <ClLinks  term={"macro"}><i>macro</i></ClLinks> can be evaluated at compile time if it is referenced within the <ClLinks  term={"file"}><i>file</i></ClLinks> being *compiled*. 
+If a <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <GlossaryTerm  term={"compiler"}><i>compiler</i></GlossaryTerm> must store the <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> definition at compile time, so that occurrences of the macro later on in the file can be expanded correctly. Users must ensure that the body of the <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> can be evaluated at compile time if it is referenced within the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> being *compiled*. 
 
 
 

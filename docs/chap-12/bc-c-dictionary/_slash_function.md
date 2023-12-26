@@ -1,4 +1,4 @@
-**/** <ClLinks  term={"function"}><i>Function</i></ClLinks>
+**/** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm>
 
 **Syntax:**
 
@@ -8,23 +8,23 @@
 
 **Arguments and Values:**
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>, *denominator*—a non-zero <ClLinks  term={"number"}><i>number</i></ClLinks> .
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>, *denominator*—a non-zero <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> .
 
-*numerator*, *quotient*, *reciprocal*—a <ClLinks  term={"number"}><i>number</i></ClLinks> .
+*numerator*, *quotient*, *reciprocal*—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> .
 
 **Description:**
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"/"}><b>/</b></ClLinks> performs division or reciprocation.
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <ClLinks  term={"/"}><b>/</b></ClLinks> performs division or reciprocation.
 
-If no *denominators* are supplied, the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"/"}><b>/</b></ClLinks> returns the reciprocal of <ClLinks  term={"number"}><i>number</i></ClLinks>.
+If no *denominators* are supplied, the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <ClLinks  term={"/"}><b>/</b></ClLinks> returns the reciprocal of <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>.
 
-If at least one *denominator* is supplied, the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"/"}><b>/</b></ClLinks> divides the *numerator* by all of the *denominators* and returns the resulting *quotient*.
+If at least one *denominator* is supplied, the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <ClLinks  term={"/"}><b>/</b></ClLinks> divides the *numerator* by all of the *denominators* and returns the resulting *quotient*.
 
-If each <ClLinks  term={"argument"}><i>argument</i></ClLinks> is either an *integer* or a <ClLinks  term={"ratio"}><i>ratio</i></ClLinks>, and the result is not an *integer* , then it is a <ClLinks  term={"ratio"}><i>ratio</i></ClLinks>.
+If each <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> is either an *integer* or a <GlossaryTerm  term={"ratio"}><i>ratio</i></GlossaryTerm>, and the result is not an *integer* , then it is a <GlossaryTerm  term={"ratio"}><i>ratio</i></GlossaryTerm>.
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"/"}><b>/</b></ClLinks> performs necessary type conversions.
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <ClLinks  term={"/"}><b>/</b></ClLinks> performs necessary type conversions.
 
-If any <ClLinks  term={"argument"}><i>argument</i></ClLinks> is a <ClLinks  term={"float"}><i>float</i></ClLinks> then the rules of floating-point contagion apply; see Section 12.1.4 (Floating-point Computations).
+If any <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> is a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> then the rules of floating-point contagion apply; see Section 12.1.4 (Floating-point Computations).
 
 **Examples:**
 
@@ -43,9 +43,9 @@ If any <ClLinks  term={"argument"}><i>argument</i></ClLinks> is a <ClLinks  term
 
 **Exceptional Situations:**
 
-The consequences are unspecified if any <ClLinks  term={"argument"}><i>argument</i></ClLinks> other than the first is zero. If there is only one <ClLinks  term={"argument"}><i>argument</i></ClLinks>, the consequences are unspecified if it is zero.
+The consequences are unspecified if any <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> other than the first is zero. If there is only one <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm>, the consequences are unspecified if it is zero.
 
-Might signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if some <ClLinks  term={"argument"}><i>argument</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <DictionaryLink  term={"division-by-zero"}><b>division-by-zero</b></DictionaryLink> if division by zero is attempted. Might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>.
+Might signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if some <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> is not a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . Might signal <DictionaryLink  term={"division-by-zero"}><b>division-by-zero</b></DictionaryLink> if division by zero is attempted. Might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>.
 
 **See Also:**
 

@@ -14,7 +14,7 @@
 
 
 
-<DictionaryLink  term={"class-name"}><b>class-name</b></DictionaryLink> (<ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"class"}><b>class</b></DictionaryLink>) 
+<DictionaryLink  term={"class-name"}><b>class-name</b></DictionaryLink> (<GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink  term={"class"}><b>class</b></DictionaryLink>) 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-<ClLinks  term={"class"}><i>class</i></ClLinks>—a *class object*. 
+<GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>—a *class object*. 
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Returns the <ClLinks  term={"name"}><i>name</i></ClLinks> of the given <ClLinks  term={"class"}><i>class</i></ClLinks>. 
+Returns the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of the given <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>. 
 
 
 
@@ -50,11 +50,11 @@ Returns the <ClLinks  term={"name"}><i>name</i></ClLinks> of the given <ClLinks 
 
 
 
-If *S* is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> such that *S* =(class-name *C*) and *C* =(find-class *S*), then *S* is the proper name of *C*. For further discussion, see Section 4.3 (Classes). 
+If *S* is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> such that *S* =(class-name *C*) and *C* =(find-class *S*), then *S* is the proper name of *C*. For further discussion, see Section 4.3 (Classes). 
 
 
 
-The name of an anonymous <ClLinks  term={"class"}><i>class</i></ClLinks> is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+The name of an anonymous <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -86,7 +86,7 @@ The name of an anonymous <ClLinks  term={"class"}><i>class</i></ClLinks> is <Dic
 
 
 
-**(setf class-name)** *new-value* (<ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"class"}><b>class</b></DictionaryLink>) 
+**(setf class-name)** *new-value* (<GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink  term={"class"}><b>class</b></DictionaryLink>) 
 
 
 
@@ -94,11 +94,11 @@ The name of an anonymous <ClLinks  term={"class"}><i>class</i></ClLinks> is <Dic
 
 
 
-*new-value*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+*new-value*—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"class"}><i>class</i></ClLinks>—a <ClLinks  term={"class"}><i>class</i></ClLinks>. 
+<GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>—a <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>. 
 
 
 
@@ -106,7 +106,7 @@ The name of an anonymous <ClLinks  term={"class"}><i>class</i></ClLinks> is <Dic
 
 
 
-The generic function (setf class-name) sets the name of a <ClLinks  term={"class"}><i>class</i></ClLinks> object. 
+The generic function (setf class-name) sets the name of a <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> object. 
 
 
 

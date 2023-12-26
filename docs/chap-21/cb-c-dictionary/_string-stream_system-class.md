@@ -14,7 +14,7 @@
 
 
 
-A <GlossaryTerm styled={true} term={"string stream"}><i>string stream</i></GlossaryTerm> is a <ClLinks  term={"stream"}><i>stream</i></ClLinks> which reads input from or writes output to an associated <ClLinks  term={"string"}><i>string</i></ClLinks>. The <GlossaryTerm styled={true} term={"stream element type"}><i>stream element type</i></GlossaryTerm> of a <GlossaryTerm styled={true} term={"string stream"}><i>string stream</i></GlossaryTerm> is always a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>. 
+A <GlossaryTerm styled={true} term={"string stream"}><i>string stream</i></GlossaryTerm> is a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> which reads input from or writes output to an associated <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"stream element type"}><i>stream element type</i></GlossaryTerm> of a <GlossaryTerm styled={true} term={"string stream"}><i>string stream</i></GlossaryTerm> is always a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>. 
 
 
 

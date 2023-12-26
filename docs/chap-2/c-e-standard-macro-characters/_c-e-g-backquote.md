@@ -3,7 +3,7 @@
 
 
 
-The <ClLinks  term={"backquote"}><i>backquote</i></ClLinks> introduces a template of a data structure to be built. For example, writing ‘(cond ((numberp ,x) ,@y) (t (print ,x) ,@y)) 
+The <GlossaryTerm  term={"backquote"}><i>backquote</i></GlossaryTerm> introduces a template of a data structure to be built. For example, writing ‘(cond ((numberp ,x) ,@y) (t (print ,x) ,@y)) 
 
 
 
@@ -23,11 +23,11 @@ is roughly equivalent to writing
 
 
 
-Where a comma occurs in the template, the <ClLinks  term={"expression"}><i>expression</i></ClLinks> following the comma is to be evaluated to produce an <ClLinks  term={"object"}><i>object</i></ClLinks> to be inserted at that point. Assume b has the value 3, for example, then evaluating the <ClLinks  term={"form"}><i>form</i></ClLinks> denoted by ‘(a b ,b ,(+ b 1) b) produces the result (a b 3 4 b). 
+Where a comma occurs in the template, the <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm> following the comma is to be evaluated to produce an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> to be inserted at that point. Assume b has the value 3, for example, then evaluating the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> denoted by ‘(a b ,b ,(+ b 1) b) produces the result (a b 3 4 b). 
 
 
 
-If a comma is immediately followed by an <ClLinks  term={"at-sign"}><i>at-sign</i></ClLinks>, then the <ClLinks  term={"form"}><i>form</i></ClLinks> following the <ClLinks  term={"at-sign"}><i>at-sign</i></ClLinks> is evaluated to produce a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"object"}><i>objects</i></ClLinks>. These <ClLinks  term={"object"}><i>objects</i></ClLinks> are then “spliced” into place in the template. For example, if x has the value (a b c), then 
+If a comma is immediately followed by an <GlossaryTerm  term={"at-sign"}><i>at-sign</i></GlossaryTerm>, then the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> following the <GlossaryTerm  term={"at-sign"}><i>at-sign</i></GlossaryTerm> is evaluated to produce a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm>. These <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> are then “spliced” into place in the template. For example, if x has the value (a b c), then 
 
 
 
@@ -47,15 +47,15 @@ The backquote syntax can be summarized formally as follows.
 
 
 
-*•* ‘*basic* is the same as ’*basic*, that is, (quote *basic*), for any *expression basic* that is not a <ClLinks  term={"list"}><i>list</i></ClLinks> or a general <ClLinks  term={"vector"}><i>vector</i></ClLinks> . 
+*•* ‘*basic* is the same as ’*basic*, that is, (quote *basic*), for any *expression basic* that is not a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> or a general <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> . 
 
 
 
-*•* ‘,<ClLinks  term={"form"}><i>form</i></ClLinks> is the same as <ClLinks  term={"form"}><i>form</i></ClLinks>, for any <ClLinks  term={"form"}><i>form</i></ClLinks>, provided that the representation of <ClLinks  term={"form"}><i>form</i></ClLinks> does not begin with <ClLinks  term={"at-sign"}><i>at-sign</i></ClLinks> or <ClLinks  term={"dot"}><i>dot</i></ClLinks>. (A similar caveat holds for all occurrences of a form after a <ClLinks  term={"comma"}><i>comma</i></ClLinks>.) 
+*•* ‘,<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is the same as <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, for any <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, provided that the representation of <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> does not begin with <GlossaryTerm  term={"at-sign"}><i>at-sign</i></GlossaryTerm> or <GlossaryTerm  term={"dot"}><i>dot</i></GlossaryTerm>. (A similar caveat holds for all occurrences of a form after a <GlossaryTerm  term={"comma"}><i>comma</i></GlossaryTerm>.) 
 
 
 
-*•* ‘,@<ClLinks  term={"form"}><i>form</i></ClLinks> has undefined consequences. 
+*•* ‘,@<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> has undefined consequences. 
 
 
 
@@ -71,15 +71,15 @@ where the brackets are used to indicate a transformation of an *xj* as follows:
 
 
 
-– [<ClLinks  term={"form"}><i>form</i></ClLinks>] is interpreted as (list ‘<ClLinks  term={"form"}><i>form</i></ClLinks>), which contains a backquoted form that must then be further interpreted. 
+– [<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>] is interpreted as (list ‘<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>), which contains a backquoted form that must then be further interpreted. 
 
 
 
-– [,<ClLinks  term={"form"}><i>form</i></ClLinks>] is interpreted as (list <ClLinks  term={"form"}><i>form</i></ClLinks>). 
+– [,<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>] is interpreted as (list <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>). 
 
 
 
-– [,@<ClLinks  term={"form"}><i>form</i></ClLinks>] is interpreted as <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+– [,@<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>] is interpreted as <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -111,11 +111,11 @@ Anywhere “,@” may be used, the syntax “,.” may be used instead to indica
 
 
 
-If the backquote syntax is nested, the innermost backquoted form should be expanded first. This means that if several commas occur in a row, the leftmost one belongs to the innermost <ClLinks  term={"backquote"}><i>backquote</i></ClLinks>. 
+If the backquote syntax is nested, the innermost backquoted form should be expanded first. This means that if several commas occur in a row, the leftmost one belongs to the innermost <GlossaryTerm  term={"backquote"}><i>backquote</i></GlossaryTerm>. 
 
 
 
-An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is free to interpret a backquoted *form F*<sub>1</sub> as any *form F*<sub>2</sub> that, when evaluated, will produce a result that is the <ClLinks  term={"same"}><i>same</i></ClLinks> under <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> as the result implied by the above definition, provided that the side-effect behavior of the substitute *form F*<sub>2</sub> is also consistent with the  
+An <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> is free to interpret a backquoted *form F*<sub>1</sub> as any *form F*<sub>2</sub> that, when evaluated, will produce a result that is the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> under <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> as the result implied by the above definition, provided that the side-effect behavior of the substitute *form F*<sub>2</sub> is also consistent with the  
 
 
 
@@ -123,7 +123,7 @@ An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is free to 
 
 
 
-description given above. The constructed copy of the template might or might not share <ClLinks  term={"list"}><i>list</i></ClLinks> structure with the template itself. As an example, the above definition implies that 
+description given above. The constructed copy of the template might or might not share <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> structure with the template itself. As an example, the above definition implies that 
 
 
 

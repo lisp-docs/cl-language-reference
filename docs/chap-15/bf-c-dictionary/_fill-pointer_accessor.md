@@ -1,4 +1,4 @@
-**fill-pointer** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**fill-pointer** <GlossaryTerm  term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -10,7 +10,7 @@
 
 
 
-**(setf (fill-pointer** <ClLinks  term={"vector"}><i>vector</i></ClLinks>**)** *new-fill-pointer***)** 
+**(setf (fill-pointer** <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm>**)** *new-fill-pointer***)** 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-<ClLinks  term={"vector"}><i>vector</i></ClLinks>—a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
+<GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm>—a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
 
 
 
-*fill-pointer*, *new-fill-pointer*—a <GlossaryTerm styled={true} term={"valid fill pointer"}><i>valid fill pointer</i></GlossaryTerm> for the <ClLinks  term={"vector"}><i>vector</i></ClLinks>. 
+*fill-pointer*, *new-fill-pointer*—a <GlossaryTerm styled={true} term={"valid fill pointer"}><i>valid fill pointer</i></GlossaryTerm> for the <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*Accesses* the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> of <ClLinks  term={"vector"}><i>vector</i></ClLinks>. 
+*Accesses* the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> of <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm>. 
 
 
 
@@ -50,7 +50,7 @@ a → #(0 1 4 9 NIL NIL NIL NIL)
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"vector"}><i>vector</i></ClLinks> is not a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> is not a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
 
 
 
@@ -74,7 +74,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <Diction
 
 
 
-There is no <ClLinks  term={"operator"}><i>operator</i></ClLinks> that will remove a <ClLinks  term={"vector"}><i>vector</i></ClLinks> ’s <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
+There is no <GlossaryTerm  term={"operator"}><i>operator</i></GlossaryTerm> that will remove a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> ’s <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
 
 
 

@@ -14,19 +14,19 @@
 
 
 
-*function-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated to produce <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+*function-form*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated to produce <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> resulting from the evaluation of *function-form*. 
+<GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> resulting from the evaluation of *function-form*. 
 
 
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-Applies <ClLinks  term={"function"}><i>function</i></ClLinks> to a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"object"}><i>objects</i></ClLinks> collected from groups of <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub>. 
+Applies <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> to a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of the <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> collected from groups of <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub>. 
 
 
 
-<DictionaryLink  term={"multiple-value-call"}><b>multiple-value-call</b></DictionaryLink> first evaluates the *function-form* to obtain <ClLinks  term={"function"}><i>function</i></ClLinks>, and then evaluates each <ClLinks  term={"form"}><i>form</i></ClLinks>. All the values of each <ClLinks  term={"form"}><i>form</i></ClLinks> are gathered together (not just one value from each) and given as arguments to the <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+<DictionaryLink  term={"multiple-value-call"}><b>multiple-value-call</b></DictionaryLink> first evaluates the *function-form* to obtain <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>, and then evaluates each <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. All the values of each <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> are gathered together (not just one value from each) and given as arguments to the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 

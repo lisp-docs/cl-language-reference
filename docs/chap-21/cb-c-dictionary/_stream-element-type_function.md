@@ -1,4 +1,4 @@
-**stream-element-type** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**stream-element-type** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>—a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<DictionaryLink  term={"stream-element-type"}><b>stream-element-type</b></DictionaryLink> returns a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> that indicates the <ClLinks  term={"type"}><i>types</i></ClLinks> of <ClLinks  term={"object"}><i>objects</i></ClLinks> that may be read from or written to <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<DictionaryLink  term={"stream-element-type"}><b>stream-element-type</b></DictionaryLink> returns a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> that indicates the <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> of <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> that may be read from or written to <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"stream"}><i>Streams</i></ClLinks> created by <DictionaryLink  term={"open"}><b>open</b></DictionaryLink> have an <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> restricted to <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink> or a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>. 
+<GlossaryTerm  term={"stream"}><i>Streams</i></GlossaryTerm> created by <DictionaryLink  term={"open"}><b>open</b></DictionaryLink> have an <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> restricted to <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink> or a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>. 
 
 **Examples:**
 ```lisp
@@ -56,7 +56,7 @@
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is not a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 

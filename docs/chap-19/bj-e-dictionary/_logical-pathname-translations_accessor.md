@@ -1,4 +1,4 @@
-**logical-pathname-translations** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**logical-pathname-translations** <GlossaryTerm  term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -23,7 +23,7 @@
 
 
 
-*translations*, *new-translations*—a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
+*translations*, *new-translations*—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
@@ -47,19 +47,19 @@
 
 
 
-Returns the host’s <ClLinks  term={"list"}><i>list</i></ClLinks> of translations. Each translation is a <ClLinks  term={"list"}><i>list</i></ClLinks> of at least two elements: *from-wildcard* and *to-wildcard*. Any additional elements are <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. *From-wildcard* is a *logical pathname* whose host is *host*. *To-wildcard* is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+Returns the host’s <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of translations. Each translation is a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of at least two elements: *from-wildcard* and *to-wildcard*. Any additional elements are <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>. *From-wildcard* is a *logical pathname* whose host is *host*. *To-wildcard* is a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>. 
 
 
 
-(setf (logical-pathname-translations *host*) *translations*) sets a *logical pathname* host’s <ClLinks  term={"list"}><i>list</i></ClLinks> of *translations*. If *host* is a <ClLinks  term={"string"}><i>string</i></ClLinks> that has not been previously used as a *logical pathname* host, a new *logical pathname* host is defined; otherwise an existing host’s translations are replaced. *logical pathname* host names are compared with **string-equal**. 
+(setf (logical-pathname-translations *host*) *translations*) sets a *logical pathname* host’s <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of *translations*. If *host* is a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> that has not been previously used as a *logical pathname* host, a new *logical pathname* host is defined; otherwise an existing host’s translations are replaced. *logical pathname* host names are compared with **string-equal**. 
 
 
 
-When setting the translations list, each *from-wildcard* can be a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> whose host is *host* or a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> namestring parseable by (parse-namestring *string host*), where *host* represents the appropriate <ClLinks  term={"object"}><i>object</i></ClLinks> as defined by <DictionaryLink  term={"parse-namestring"}><b>parse-namestring</b></DictionaryLink>. Each *to-wildcard* can be anything coercible to a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> by (pathname *to-wildcard*). If *to-wildcard* coerces to a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, <DictionaryLink  term={"translate-logical-pathname"}><b>translate-logical-pathname</b></DictionaryLink> will perform repeated translation steps when it uses it. 
+When setting the translations list, each *from-wildcard* can be a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> whose host is *host* or a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> namestring parseable by (parse-namestring *string host*), where *host* represents the appropriate <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> as defined by <DictionaryLink  term={"parse-namestring"}><b>parse-namestring</b></DictionaryLink>. Each *to-wildcard* can be anything coercible to a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> by (pathname *to-wildcard*). If *to-wildcard* coerces to a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, <DictionaryLink  term={"translate-logical-pathname"}><b>translate-logical-pathname</b></DictionaryLink> will perform repeated translation steps when it uses it. 
 
 
 
-*host* is either the host component of a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> or a <ClLinks  term={"string"}><i>string</i></ClLinks> that has been defined as a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> host name by <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"logical-pathname-translations"}><b>logical-pathname-translations</b></DictionaryLink>. 
+*host* is either the host component of a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> or a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> that has been defined as a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> host name by <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"logical-pathname-translations"}><b>logical-pathname-translations</b></DictionaryLink>. 
 
 
 
@@ -172,7 +172,7 @@ When setting the translations list, each *from-wildcard* can be a <GlossaryTerm 
 
 
 
-If *host* is incorrectly supplied, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. 
+If *host* is incorrectly supplied, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -188,7 +188,7 @@ If *host* is incorrectly supplied, an error of <ClLinks  term={"type"}><i>type</
 
 
 
-Implementations can define additional <ClLinks  term={"function"}><i>functions</i></ClLinks> that operate on <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> hosts, for example to specify additional translation rules or options. 
+Implementations can define additional <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> that operate on <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> hosts, for example to specify additional translation rules or options. 
 
 
 

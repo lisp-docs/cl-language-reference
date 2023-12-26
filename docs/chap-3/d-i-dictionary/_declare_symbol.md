@@ -1,4 +1,4 @@
-**declare** <ClLinks  term={"symbol"}><i>Symbol</i></ClLinks> 
+**declare** <GlossaryTerm  term={"symbol"}><i>Symbol</i></GlossaryTerm> 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-A <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>, sometimes called a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, can occur only at the beginning of the bodies of certain <ClLinks  term={"form"}><i>forms</i></ClLinks>; that is, it may be preceded only by other <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expressions</i></ClLinks>, or by a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> if the context permits. 
+A <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm>, sometimes called a <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>, can occur only at the beginning of the bodies of certain <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>; that is, it may be preceded only by other <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expressions</i></GlossaryTerm>, or by a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> if the context permits. 
 
 
 
-A <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks> can occur in a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> or in any of the <ClLinks  term={"form"}><i>forms</i></ClLinks> listed in Figure 3–23. 
+A <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm> can occur in a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> or in any of the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> listed in Figure 3–23. 
 
 
 
@@ -50,11 +50,11 @@ A <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  te
 
 
 
-A <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks> can only occur where specified by the syntax of these <ClLinks  term={"form"}><i>forms</i></ClLinks>. The consequences of attempting to evaluate a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks> are undefined. In situations where such <ClLinks  term={"expression"}><i>expressions</i></ClLinks> can appear, explicit checks are made for their presence and they are never actually evaluated; it is for this reason that they are called “<DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expressions</i></ClLinks>” rather than “<DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"form"}><i>forms</i></ClLinks>.” 
+A <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm> can only occur where specified by the syntax of these <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. The consequences of attempting to evaluate a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm> are undefined. In situations where such <GlossaryTerm  term={"expression"}><i>expressions</i></GlossaryTerm> can appear, explicit checks are made for their presence and they are never actually evaluated; it is for this reason that they are called “<DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expressions</i></GlossaryTerm>” rather than “<DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>.” 
 
 
 
-<GlossaryTerm styled={true} term={"macro form"}><i>Macro forms</i></GlossaryTerm> cannot expand into declarations; <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expressions</i></ClLinks> must appear as actual <ClLinks  term={"subexpression"}><i>subexpressions</i></ClLinks> of the <ClLinks  term={"form"}><i>form</i></ClLinks> to which they refer. 
+<GlossaryTerm styled={true} term={"macro form"}><i>Macro forms</i></GlossaryTerm> cannot expand into declarations; <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expressions</i></GlossaryTerm> must appear as actual <GlossaryTerm  term={"subexpression"}><i>subexpressions</i></GlossaryTerm> of the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> to which they refer. 
 
 
 
@@ -70,7 +70,7 @@ Figure 3–24 shows a list of <GlossaryTerm styled={true} term={"declaration ide
 
 
 
-An implementation is free to support other (<ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>) <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifiers</i></GlossaryTerm> as well. 
+An implementation is free to support other (<GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>) <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifiers</i></GlossaryTerm> as well. 
 
 **Examples:**
 ```lisp
@@ -90,7 +90,7 @@ reference to z in the third call to foo to be a dynamic reference; it does not r
 
 
 
-The consequences of trying to use a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks> as a <ClLinks  term={"form"}><i>form</i></ClLinks> to be *evaluated* are undefined. 
+The consequences of trying to use a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm> as a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> to be *evaluated* are undefined. 
 
 
 

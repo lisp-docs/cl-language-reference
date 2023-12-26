@@ -6,7 +6,7 @@ The *host* must have been defined as a <GlossaryTerm styled={true} term={"logica
 
 
 
-The <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> host name "SYS" is reserved for the implementation. The existence and meaning of SYS: <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathnames</i></GlossaryTerm> is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> host name "SYS" is reserved for the implementation. The existence and meaning of SYS: <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathnames</i></GlossaryTerm> is <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>. 
 
 
 

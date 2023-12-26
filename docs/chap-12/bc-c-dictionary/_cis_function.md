@@ -1,4 +1,4 @@
-**cis** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**cis** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"complex"}><i>complex</i></ClLinks> . 
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> . 
 
 
 

@@ -1,4 +1,4 @@
-**sort, stable-sort** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**sort, stable-sort** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two arguments that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+<GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm>—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of two arguments that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -34,27 +34,27 @@
 
 
 
-<DictionaryLink  term={"sort"}><b>sort</b></DictionaryLink> and <DictionaryLink  term={"stable-sort"}><b>stable-sort</b></DictionaryLink> destructively sort *sequences* according to the order determined by the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> function. 
+<DictionaryLink  term={"sort"}><b>sort</b></DictionaryLink> and <DictionaryLink  term={"stable-sort"}><b>stable-sort</b></DictionaryLink> destructively sort *sequences* according to the order determined by the <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> function. 
 
 
 
-If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the result is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> that has the same <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> as *sequence*. If *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, the result is a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
+If *sequence* is a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> , the result is a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> that has the same <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> as *sequence*. If *sequence* is a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>, the result is a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"sort"}><b>sort</b></DictionaryLink> determines the relationship between two elements by giving keys extracted from the elements to the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks>. The first argument to the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> function is the part of one element of *sequence* extracted by the <ClLinks  term={"key"}><i>key</i></ClLinks> function (if supplied); the second argument is the part of another element of *sequence* extracted by the <ClLinks  term={"key"}><i>key</i></ClLinks> function (if supplied). <ClLinks  term={"predicate"}><i>Predicate</i></ClLinks> should return <ClLinks  term={"true"}><i>true</i></ClLinks> if and only if the first argument is strictly less than the second (in some appropriate sense). If the first argument is 
+<DictionaryLink  term={"sort"}><b>sort</b></DictionaryLink> determines the relationship between two elements by giving keys extracted from the elements to the <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm>. The first argument to the <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> function is the part of one element of *sequence* extracted by the <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> function (if supplied); the second argument is the part of another element of *sequence* extracted by the <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> function (if supplied). <GlossaryTerm  term={"predicate"}><i>Predicate</i></GlossaryTerm> should return <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if and only if the first argument is strictly less than the second (in some appropriate sense). If the first argument is 
 
 
 
-greater than or equal to the second (in the appropriate sense), then the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> should return <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+greater than or equal to the second (in the appropriate sense), then the <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> should return <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-The argument to the <ClLinks  term={"key"}><i>key</i></ClLinks> function is the *sequence* element. The return value of the <ClLinks  term={"key"}><i>key</i></ClLinks> function becomes an argument to <ClLinks  term={"predicate"}><i>predicate</i></ClLinks>. If <ClLinks  term={"key"}><i>key</i></ClLinks> is not supplied or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the *sequence* element itself is used. There is no guarantee on the number of times the <ClLinks  term={"key"}><i>key</i></ClLinks> will be called. 
+The argument to the <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> function is the *sequence* element. The return value of the <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> function becomes an argument to <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm>. If <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> is not supplied or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the *sequence* element itself is used. There is no guarantee on the number of times the <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> will be called. 
 
 
 
-If the <ClLinks  term={"key"}><i>key</i></ClLinks> and <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> always return, then the sorting operation will always terminate, producing a *sequence* containing the same <ClLinks  term={"element"}><i>elements</i></ClLinks> as *sequence* (that is, the result is a permutation of *sequence*). This is guaranteed even if the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> does not really consistently represent a total order (in which case the <ClLinks  term={"element"}><i>elements</i></ClLinks> will be scrambled in some unpredictable way, but no <ClLinks  term={"element"}><i>element</i></ClLinks> will be lost). If the <ClLinks  term={"key"}><i>key</i></ClLinks> consistently returns meaningful keys, and the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> does reflect some total ordering criterion on those keys, then the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the *sorted-sequence* will be properly sorted according to that ordering. 
+If the <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> and <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> always return, then the sorting operation will always terminate, producing a *sequence* containing the same <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> as *sequence* (that is, the result is a permutation of *sequence*). This is guaranteed even if the <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> does not really consistently represent a total order (in which case the <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> will be scrambled in some unpredictable way, but no <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> will be lost). If the <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> consistently returns meaningful keys, and the <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> does reflect some total ordering criterion on those keys, then the <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of the *sorted-sequence* will be properly sorted according to that ordering. 
 
 
 
@@ -74,11 +74,11 @@ If the <ClLinks  term={"key"}><i>key</i></ClLinks> and <ClLinks  term={"predicat
 
 
 
-The sorting operation performed by <DictionaryLink  term={"sort"}><b>sort</b></DictionaryLink> is not guaranteed stable. Elements considered equal by the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> might or might not stay in their original order. The <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> is assumed to consider two elements x and y to be equal if (funcall *predicate x y*) and (funcall *predicate y x*) are both <ClLinks  term={"false"}><i>false</i></ClLinks>. <DictionaryLink  term={"stable-sort"}><b>stable-sort</b></DictionaryLink> guarantees stability. 
+The sorting operation performed by <DictionaryLink  term={"sort"}><b>sort</b></DictionaryLink> is not guaranteed stable. Elements considered equal by the <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> might or might not stay in their original order. The <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> is assumed to consider two elements x and y to be equal if (funcall *predicate x y*) and (funcall *predicate y x*) are both <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. <DictionaryLink  term={"stable-sort"}><b>stable-sort</b></DictionaryLink> guarantees stability. 
 
 
 
-The sorting operation can be destructive in all cases. In the case of a <ClLinks  term={"vector"}><i>vector</i></ClLinks> argument, this is accomplished by permuting the elements in place. In the case of a <ClLinks  term={"list"}><i>list</i></ClLinks>, the <ClLinks  term={"list"}><i>list</i></ClLinks> is destructively reordered in the same manner as for <DictionaryLink  term={"nreverse"}><b>nreverse</b></DictionaryLink>. 
+The sorting operation can be destructive in all cases. In the case of a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> argument, this is accomplished by permuting the elements in place. In the case of a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>, the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> is destructively reordered in the same manner as for <DictionaryLink  term={"nreverse"}><b>nreverse</b></DictionaryLink>. 
 
 
 
@@ -131,7 +131,7 @@ The sorting operation can be destructive in all cases. In the case of a <ClLinks
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should be prepared to signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
@@ -147,7 +147,7 @@ Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the result might or might not be simple, and might or might not be <ClLinks  term={"identical"}><i>identical</i></ClLinks> to *sequence*. 
+If *sequence* is a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> , the result might or might not be simple, and might or might not be <GlossaryTerm  term={"identical"}><i>identical</i></GlossaryTerm> to *sequence*. 
 
 
 

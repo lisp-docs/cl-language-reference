@@ -1,4 +1,4 @@
-**declaim** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**declaim** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -34,11 +34,11 @@ Evaluation and
 
 
 
-Establishes the <ClLinks  term={"declaration"}><i>declarations</i></ClLinks> specified by the *declaration-specifiers*. 
+Establishes the <GlossaryTerm  term={"declaration"}><i>declarations</i></GlossaryTerm> specified by the *declaration-specifiers*. 
 
 
 
-If a use of this macro appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in a <ClLinks  term={"file"}><i>file</i></ClLinks> being processed by the <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></GlossaryTerm> , the proclamations are also made at compile-time. As with other defining macros, it is unspecified whether or not the compile-time side-e↵ects of a <DictionaryLink  term={"declaim"}><b>declaim</b></DictionaryLink> persist after the <ClLinks  term={"file"}><i>file</i></ClLinks> has been *compiled*. 
+If a use of this macro appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in a <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> being processed by the <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></GlossaryTerm> , the proclamations are also made at compile-time. As with other defining macros, it is unspecified whether or not the compile-time side-e↵ects of a <DictionaryLink  term={"declaim"}><b>declaim</b></DictionaryLink> persist after the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> has been *compiled*. 
 
 
 

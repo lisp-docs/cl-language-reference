@@ -14,11 +14,11 @@
 
 
 
-The canonical representation of a <ClLinks  term={"rational"}><i>rational</i></ClLinks> is as an *integer* if its value is integral, and otherwise as a <ClLinks  term={"ratio"}><i>ratio</i></ClLinks>. 
+The canonical representation of a <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm> is as an *integer* if its value is integral, and otherwise as a <GlossaryTerm  term={"ratio"}><i>ratio</i></GlossaryTerm>. 
 
 
 
-The <ClLinks  term={"type"}><i>types</i></ClLinks> <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink> and <DictionaryLink  term={"ratio"}><b>ratio</b></DictionaryLink> are *disjoint subtypes* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"rational"}><b>rational</b></DictionaryLink>. 
+The <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink> and <DictionaryLink  term={"ratio"}><b>ratio</b></DictionaryLink> are *disjoint subtypes* of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"rational"}><b>rational</b></DictionaryLink>. 
 
 
 
@@ -42,7 +42,7 @@ Abbreviating.
 
 
 
-*lower-limit*, *upper-limit*—<GlossaryTerm styled={true} term={"interval designator"}><i>interval designators</i></GlossaryTerm> for <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"rational"}><b>rational</b></DictionaryLink>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*lower-limit*, *upper-limit*—<GlossaryTerm styled={true} term={"interval designator"}><i>interval designators</i></GlossaryTerm> for <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"rational"}><b>rational</b></DictionaryLink>. The defaults for each of *lower-limit* and *upper-limit* is the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> **\***. 
 
 
 
@@ -50,7 +50,7 @@ Abbreviating.
 
 
 
-This denotes the <ClLinks  term={"rational"}><i>rationals</i></ClLinks> on the interval described by *lower-limit* and *upper-limit*. 
+This denotes the <GlossaryTerm  term={"rational"}><i>rationals</i></GlossaryTerm> on the interval described by *lower-limit* and *upper-limit*. 
 
 
 

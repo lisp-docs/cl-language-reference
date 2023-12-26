@@ -1,4 +1,4 @@
-**make-string** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**make-string** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*initial-element*—a <ClLinks  term={"character"}><i>character</i></ClLinks> . The default is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+*initial-element*—a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> . The default is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"string"}><i>string</i></ClLinks>—a <GlossaryTerm styled={true} term={"simple string"}><i>simple string</i></GlossaryTerm>. 
+<GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"simple string"}><i>simple string</i></GlossaryTerm>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-The *element-type* names the <ClLinks  term={"type"}><i>type</i></ClLinks> of the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"string"}><i>string</i></ClLinks>; a <ClLinks  term={"string"}><i>string</i></ClLinks> is constructed of the most *specialized type* that can accommodate <ClLinks  term={"element"}><i>elements</i></ClLinks> of the given <ClLinks  term={"type"}><i>type</i></ClLinks>. 
+The *element-type* names the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> of the <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of the <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>; a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> is constructed of the most *specialized type* that can accommodate <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of the given <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>. 
 
 
 
@@ -51,7 +51,7 @@ The *element-type* names the <ClLinks  term={"type"}><i>type</i></ClLinks> of th
 
 
 
-The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+The <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 

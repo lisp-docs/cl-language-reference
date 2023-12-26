@@ -1,4 +1,4 @@
-**merge** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**merge** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two arguments that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+<GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm>—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of two arguments that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -54,27 +54,27 @@
 
 
 
-Destructively merges *sequence-1* with *sequence-2* according to an order determined by the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks>. <DictionaryLink  term={"merge"}><b>merge</b></DictionaryLink> determines the relationship between two elements by giving keys extracted from the sequence elements to the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks>. 
+Destructively merges *sequence-1* with *sequence-2* according to an order determined by the <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm>. <DictionaryLink  term={"merge"}><b>merge</b></DictionaryLink> determines the relationship between two elements by giving keys extracted from the sequence elements to the <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm>. 
 
 
 
-The first argument to the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> function is an element of *sequence-1* as returned by the <ClLinks  term={"key"}><i>key</i></ClLinks> (if supplied); the second argument is an element of *sequence-2* as returned by the <ClLinks  term={"key"}><i>key</i></ClLinks> (if supplied). <ClLinks  term={"predicate"}><i>Predicate</i></ClLinks> should return <ClLinks  term={"true"}><i>true</i></ClLinks> if and only if its first argument is strictly less than the second (in some appropriate sense). If the first argument is greater than or equal to the second (in the appropriate sense), then <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> should return <ClLinks  term={"false"}><i>false</i></ClLinks>. <DictionaryLink  term={"merge"}><b>merge</b></DictionaryLink> considers two elements x and y to be equal if (funcall predicate x y) and (funcall predicate y x) both *yield false*. 
+The first argument to the <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> function is an element of *sequence-1* as returned by the <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> (if supplied); the second argument is an element of *sequence-2* as returned by the <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> (if supplied). <GlossaryTerm  term={"predicate"}><i>Predicate</i></GlossaryTerm> should return <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if and only if its first argument is strictly less than the second (in some appropriate sense). If the first argument is greater than or equal to the second (in the appropriate sense), then <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> should return <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. <DictionaryLink  term={"merge"}><b>merge</b></DictionaryLink> considers two elements x and y to be equal if (funcall predicate x y) and (funcall predicate y x) both *yield false*. 
 
 
 
-The argument to the <ClLinks  term={"key"}><i>key</i></ClLinks> is the *sequence* element. Typically, the return value of the <ClLinks  term={"key"}><i>key</i></ClLinks> becomes the argument to <ClLinks  term={"predicate"}><i>predicate</i></ClLinks>. If <ClLinks  term={"key"}><i>key</i></ClLinks> is not supplied or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the sequence element itself is used. The <ClLinks  term={"key"}><i>key</i></ClLinks> may be executed more than once for each *sequence element*, and its side effects may occur in any order. 
+The argument to the <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> is the *sequence* element. Typically, the return value of the <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> becomes the argument to <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm>. If <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> is not supplied or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the sequence element itself is used. The <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> may be executed more than once for each *sequence element*, and its side effects may occur in any order. 
 
 
 
-If <ClLinks  term={"key"}><i>key</i></ClLinks> and <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> return, then the merging operation will terminate. The result of merging two *sequences* x and y is a new *sequence* of type *result-type* z, such that the length of z is the sum of the lengths of x and y, and z contains all the elements of x and y. If x1 and x2 are two elements of x, and x1 precedes x2 in x, then x1 precedes x2 in z, and similarly for elements of y. In short, z is an interleaving of x and y. 
+If <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> and <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm> return, then the merging operation will terminate. The result of merging two *sequences* x and y is a new *sequence* of type *result-type* z, such that the length of z is the sum of the lengths of x and y, and z contains all the elements of x and y. If x1 and x2 are two elements of x, and x1 precedes x2 in x, then x1 precedes x2 in z, and similarly for elements of y. In short, z is an interleaving of x and y. 
 
 
 
-If x and y were correctly sorted according to the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks>, then z will also be correctly sorted. If x or y is not so sorted, then z will not be sorted, but will nevertheless be an interleaving of x and y. 
+If x and y were correctly sorted according to the <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm>, then z will also be correctly sorted. If x or y is not so sorted, then z will not be sorted, but will nevertheless be an interleaving of x and y. 
 
 
 
-The merging operation is guaranteed stable; if two or more elements are considered equal by the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks>, then the elements from *sequence-1* will precede those from *sequence-2* in the result. 
+The merging operation is guaranteed stable; if two or more elements are considered equal by the <GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm>, then the elements from *sequence-1* will precede those from *sequence-2* in the result. 
 
 
 
@@ -82,11 +82,11 @@ The merging operation is guaranteed stable; if two or more elements are consider
 
 
 
-If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>, the result will be a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
+If the *result-type* is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>, the result will be a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
-If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>, then if the implementation can determine the element type specified for the *result-type*, the element type of the resulting array is the result of *upgrading* that element type; or, if the implementation can determine that the element type is unspecified (or \*), the element type of the resulting array is <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>; otherwise, an error is signaled. 
+If the *result-type* is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>, then if the implementation can determine the element type specified for the *result-type*, the element type of the resulting array is the result of *upgrading* that element type; or, if the implementation can determine that the element type is unspecified (or \*), the element type of the resulting array is <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>; otherwise, an error is signaled. 
 
 
 
@@ -114,7 +114,7 @@ An error must be signaled if the *result-type* is neither a <GlossaryTerm styled
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> should be signaled if *result-type* specifies the number of elements and the sum of the lengths of *sequence-1* and *sequence-2* is different from that number. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> should be signaled if *result-type* specifies the number of elements and the sum of the lengths of *sequence-1* and *sequence-2* is different from that number. 
 
 
 

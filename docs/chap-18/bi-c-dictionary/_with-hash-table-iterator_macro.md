@@ -1,4 +1,4 @@
-**with-hash-table-iterator** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**with-hash-table-iterator** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></DictionaryLink> (*name hash-table*) *\{declaration\}*\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
+<DictionaryLink  term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></DictionaryLink> (*name hash-table*) *\{declaration\}*\* <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\* → \{result\}\* 
 
 
 
@@ -14,23 +14,23 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a name suitable for the first argument to <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink>. 
+<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>—a name suitable for the first argument to <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink>. 
 
 
 
-*hash-table*—a <ClLinks  term={"form"}><i>form</i></ClLinks>, evaluated once, that should produce a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
+*hash-table*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, evaluated once, that should produce a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
+<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. 
 
 
 
@@ -38,15 +38,15 @@
 
 
 
-Within the lexical scope of the body, <ClLinks  term={"name"}><i>name</i></ClLinks> is defined via <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> such that successive invocations of (<ClLinks  term={"name"}><i>name</i></ClLinks>) return the items, one by one, from the <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> that is obtained by evaluating *hash-table* only once. 
+Within the lexical scope of the body, <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> is defined via <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> such that successive invocations of (<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>) return the items, one by one, from the <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> that is obtained by evaluating *hash-table* only once. 
 
 
 
-An invocation (<ClLinks  term={"name"}><i>name</i></ClLinks>) returns three values as follows: 
+An invocation (<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>) returns three values as follows: 
 
 
 
-1\. A <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> that is <ClLinks  term={"true"}><i>true</i></ClLinks> if an entry is returned. 
+1\. A <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> that is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if an entry is returned. 
 
 
 
@@ -58,15 +58,15 @@ An invocation (<ClLinks  term={"name"}><i>name</i></ClLinks>) returns three valu
 
 
 
-After all entries have been returned by successive invocations of (<ClLinks  term={"name"}><i>name</i></ClLinks>), then only one value is returned, namely <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+After all entries have been returned by successive invocations of (<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>), then only one value is returned, namely <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-It is unspecified what happens if any of the implicit interior state of an iteration is returned outside the dynamic extent of the <DictionaryLink  term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> such as by returning some <ClLinks  term={"closure"}><i>closure</i></ClLinks> over the invocation <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+It is unspecified what happens if any of the implicit interior state of an iteration is returned outside the dynamic extent of the <DictionaryLink  term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> such as by returning some <GlossaryTerm  term={"closure"}><i>closure</i></GlossaryTerm> over the invocation <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-Any number of invocations of <DictionaryLink  term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></DictionaryLink> can be nested, and the body of the innermost one can invoke all of the locally *established macros*, provided all of those <ClLinks  term={"macro"}><i>macros</i></ClLinks> have <ClLinks  term={"distinct"}><i>distinct</i></ClLinks> names. 
+Any number of invocations of <DictionaryLink  term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></DictionaryLink> can be nested, and the body of the innermost one can invoke all of the locally *established macros*, provided all of those <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm> have <GlossaryTerm  term={"distinct"}><i>distinct</i></GlossaryTerm> names. 
 
 
 
@@ -105,7 +105,7 @@ The following could be an acceptable definition of **maphash**, implemented by *
 
 
 
-The consequences are undefined if the local function named *name established* by <DictionaryLink  term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></DictionaryLink> is called after it has returned <ClLinks  term={"false"}><i>false</i></ClLinks> as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>. 
+The consequences are undefined if the local function named *name established* by <DictionaryLink  term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></DictionaryLink> is called after it has returned <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>. 
 
 
 

@@ -26,15 +26,15 @@ Data and Control
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks> if a <GlossaryTerm styled={true} term={"normal return"}><i>normal return</i></GlossaryTerm> occurs, or else, if an <GlossaryTerm styled={true} term={"explicit return"}><i>explicit return</i></GlossaryTerm> occurs, the <ClLinks  term={"value"}><i>values</i></ClLinks> that were transferred. 
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> of the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> if a <GlossaryTerm styled={true} term={"normal return"}><i>normal return</i></GlossaryTerm> occurs, or else, if an <GlossaryTerm styled={true} term={"explicit return"}><i>explicit return</i></GlossaryTerm> occurs, the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> that were transferred. 
 
 
 
@@ -42,19 +42,19 @@ Data and Control
 
 
 
-<DictionaryLink  term={"block"}><b>block</b></DictionaryLink> *establishes* a <ClLinks  term={"block"}><i>block</i></ClLinks> named <ClLinks  term={"name"}><i>name</i></ClLinks> and then evaluates <ClLinks  term={"form"}><i>forms</i></ClLinks> as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
+<DictionaryLink  term={"block"}><b>block</b></DictionaryLink> *establishes* a <GlossaryTerm  term={"block"}><i>block</i></GlossaryTerm> named <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> and then evaluates <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
-The <GlossaryTerm styled={true} term={"special operator"}><i>special operators</i></GlossaryTerm> <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> and <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> work together to provide a structured, lexical, non-local exit facility. At any point lexically contained within <ClLinks  term={"form"}><i>forms</i></ClLinks>, <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> can be used with the given <ClLinks  term={"name"}><i>name</i></ClLinks> to return control and values from the <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>, except when an intervening <ClLinks  term={"block"}><i>block</i></ClLinks> with the same name has been *established*, in which case the outer <ClLinks  term={"block"}><i>block</i></ClLinks> is shadowed by the inner one. 
+The <GlossaryTerm styled={true} term={"special operator"}><i>special operators</i></GlossaryTerm> <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> and <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> work together to provide a structured, lexical, non-local exit facility. At any point lexically contained within <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>, <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> can be used with the given <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> to return control and values from the <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, except when an intervening <GlossaryTerm  term={"block"}><i>block</i></GlossaryTerm> with the same name has been *established*, in which case the outer <GlossaryTerm  term={"block"}><i>block</i></GlossaryTerm> is shadowed by the inner one. 
 
 
 
-The <ClLinks  term={"block"}><i>block</i></ClLinks> named <ClLinks  term={"name"}><i>name</i></ClLinks> has <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>. 
+The <GlossaryTerm  term={"block"}><i>block</i></GlossaryTerm> named <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> has <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>. 
 
 
 
-Once established, a <ClLinks  term={"block"}><i>block</i></ClLinks> may only be exited once, whether by <GlossaryTerm styled={true} term={"normal return"}><i>normal return</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"explicit return"}><i>explicit return</i></GlossaryTerm>. 
+Once established, a <GlossaryTerm  term={"block"}><i>block</i></GlossaryTerm> may only be exited once, whether by <GlossaryTerm styled={true} term={"normal return"}><i>normal return</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"explicit return"}><i>explicit return</i></GlossaryTerm>. 
 
 **Examples:**
 ```lisp

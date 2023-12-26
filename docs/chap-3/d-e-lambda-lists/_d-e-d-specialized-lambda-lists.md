@@ -2,7 +2,7 @@
 
 
 
-A <GlossaryTerm styled={true} term={"specialized lambda list"}><i>specialized lambda list</i></GlossaryTerm> is used to <ClLinks  term={"specialize"}><i>specialize</i></ClLinks> a <ClLinks  term={"method"}><i>method</i></ClLinks> for a particular <ClLinks  term={"signature"}><i>signature</i></ClLinks> and to describe how <ClLinks  term={"argument"}><i>arguments</i></ClLinks> matching that <ClLinks  term={"signature"}><i>signature</i></ClLinks> are received by the <ClLinks  term={"method"}><i>method</i></ClLinks>. The <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> in Figure 3–15 use <GlossaryTerm styled={true} term={"specialized lambda list"}><i>specialized lambda lists</i></GlossaryTerm> in some way; see the dictionary entry for each for information about how. 
+A <GlossaryTerm styled={true} term={"specialized lambda list"}><i>specialized lambda list</i></GlossaryTerm> is used to <GlossaryTerm  term={"specialize"}><i>specialize</i></GlossaryTerm> a <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> for a particular <GlossaryTerm  term={"signature"}><i>signature</i></GlossaryTerm> and to describe how <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> matching that <GlossaryTerm  term={"signature"}><i>signature</i></GlossaryTerm> are received by the <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> in Figure 3–15 use <GlossaryTerm styled={true} term={"specialized lambda list"}><i>specialized lambda lists</i></GlossaryTerm> in some way; see the dictionary entry for each for information about how. 
 
 
 
@@ -34,7 +34,7 @@ A <GlossaryTerm styled={true} term={"specialized lambda list"}><i>specialized la
 
 
 
-A <GlossaryTerm styled={true} term={"specialized lambda list"}><i>specialized lambda list</i></GlossaryTerm> is syntactically the same as an <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm> except that each <GlossaryTerm styled={true} term={"required parameter"}><i>required parameter</i></GlossaryTerm> may optionally be associated with a <ClLinks  term={"class"}><i>class</i></ClLinks> or <ClLinks  term={"object"}><i>object</i></ClLinks> for which that <ClLinks  term={"parameter"}><i>parameter</i></ClLinks> is <ClLinks  term={"specialized"}><i>specialized</i></ClLinks>. 
+A <GlossaryTerm styled={true} term={"specialized lambda list"}><i>specialized lambda list</i></GlossaryTerm> is syntactically the same as an <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm> except that each <GlossaryTerm styled={true} term={"required parameter"}><i>required parameter</i></GlossaryTerm> may optionally be associated with a <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> or <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> for which that <GlossaryTerm  term={"parameter"}><i>parameter</i></GlossaryTerm> is <GlossaryTerm  term={"specialized"}><i>specialized</i></GlossaryTerm>. 
 
 
 

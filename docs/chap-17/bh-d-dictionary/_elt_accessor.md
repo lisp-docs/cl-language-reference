@@ -1,4 +1,4 @@
-**elt** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**elt** <GlossaryTerm  term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -27,11 +27,11 @@
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-*new-object*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*new-object*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -39,7 +39,7 @@
 
 
 
-*Accesses* the <ClLinks  term={"element"}><i>element</i></ClLinks> of *sequence* specified by *index*. 
+*Accesses* the <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of *sequence* specified by *index*. 
 
 
 
@@ -54,7 +54,7 @@ str → "#123456789"
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *index* is not a <GlossaryTerm styled={true} term={"valid sequence index"}><i>valid sequence index</i></GlossaryTerm> for *sequence*. 
+Should be prepared to signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *index* is not a <GlossaryTerm styled={true} term={"valid sequence index"}><i>valid sequence index</i></GlossaryTerm> for *sequence*. 
 
 
 
@@ -70,7 +70,7 @@ Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-<DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> may be used to *access vector* elements that are beyond the <ClLinks  term={"vector"}><i>vector</i></ClLinks> ’s <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
+<DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> may be used to *access vector* elements that are beyond the <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> ’s <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
 
 
 

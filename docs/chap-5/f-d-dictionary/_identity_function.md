@@ -1,4 +1,4 @@
-**identity** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**identity** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-Returns its argument <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+Returns its argument <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -35,11 +35,11 @@ Returns its argument <ClLinks  term={"object"}><i>object</i></ClLinks>.
 
 
 
-<DictionaryLink  term={"identity"}><b>identity</b></DictionaryLink> is intended for use with functions that require a <ClLinks  term={"function"}><i>function</i></ClLinks> as an argument. 
+<DictionaryLink  term={"identity"}><b>identity</b></DictionaryLink> is intended for use with functions that require a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> as an argument. 
 
 
 
-(eql x (identity x)) returns <ClLinks  term={"true"}><i>true</i></ClLinks> for all possible values of *x*, but (eq x (identity x)) might return <ClLinks  term={"false"}><i>false</i></ClLinks> when *x* is a <ClLinks  term={"number"}><i>number</i></ClLinks> or <ClLinks  term={"character"}><i>character</i></ClLinks> . 
+(eql x (identity x)) returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> for all possible values of *x*, but (eq x (identity x)) might return <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> when *x* is a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> or <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> . 
 
 
 

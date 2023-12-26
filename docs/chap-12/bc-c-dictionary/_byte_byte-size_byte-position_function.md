@@ -1,4 +1,4 @@
-**byte, byte-size, byte-position** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**byte, byte-size, byte-position** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -84,7 +84,7 @@
 
 
 
-A <ClLinks  term={"byte"}><i>byte</i></ClLinks> of *size* of 0 is permissible; it refers to a <ClLinks  term={"byte"}><i>byte</i></ClLinks> of width zero. For example, 
+A <GlossaryTerm  term={"byte"}><i>byte</i></GlossaryTerm> of *size* of 0 is permissible; it refers to a <GlossaryTerm  term={"byte"}><i>byte</i></GlossaryTerm> of width zero. For example, 
 
 
 

@@ -22,7 +22,7 @@ The object <i>O</i> might not be compared directly to <i>E<sub>i</sub></i>. If a
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> designated by the :key <ClLinks  term={"argument"}><i>argument</i></ClLinks> is never called on *O* itself. However, if the function operates on multiple sequences (*e.g.*, as happens in <DictionaryLink  term={"set-difference"}><b>set-difference</b></DictionaryLink>), *O* will be the result of calling the :key function on an <ClLinks  term={"element"}><i>element</i></ClLinks> of the other sequence. 
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> designated by the :key <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> is never called on *O* itself. However, if the function operates on multiple sequences (*e.g.*, as happens in <DictionaryLink  term={"set-difference"}><b>set-difference</b></DictionaryLink>), *O* will be the result of calling the :key function on an <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of the other sequence. 
 
 
 
@@ -34,11 +34,11 @@ A :test-not <i>argument</i>, if supplied to <i>F</i>, is <i>designator</i> for a
 
 
 
-If neither a :test nor a :test-not <ClLinks  term={"argument"}><i>argument</i></ClLinks> is supplied, it is as if a :test argument of #’eql was supplied. 
+If neither a :test nor a :test-not <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> is supplied, it is as if a :test argument of #’eql was supplied. 
 
 
 
-The consequences are unspecified if both a :test and a :test-not <ClLinks  term={"argument"}><i>argument</i></ClLinks> are supplied in the same <ClLinks  term={"call"}><i>call</i></ClLinks> to *F*. 
+The consequences are unspecified if both a :test and a :test-not <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> are supplied in the same <GlossaryTerm  term={"call"}><i>call</i></GlossaryTerm> to *F*. 
 
 
 

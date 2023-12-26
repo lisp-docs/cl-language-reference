@@ -18,7 +18,7 @@ Figure 18–1 lists some <GlossaryTerm styled={true} term={"defined name"}><i>de
 
 In this example, the symbols color and name are being used as keys, and the symbols brown and fred are being used as the associated values. The <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> has two items in it, one of which associates from color to brown, and the other of which associates from name to fred.
 
-– A key or a value may be any <ClLinks  term={"object"}><i>object</i></ClLinks>.
+– A key or a value may be any <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>.
 
 – The existence of an entry in the <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> can be determined from the <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm> returned by <DictionaryLink  term={"gethash"}><b>gethash</b></DictionaryLink>.
 

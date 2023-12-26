@@ -1,4 +1,4 @@
-**logand, logandc1, logandc2, logeqv, logior, lognand, lognor, lognot, logorc1, logorc2, logxor** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**logand, logandc1, logandc2, logeqv, logior, lognand, lognor, lognot, logorc1, logorc2, logxor** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -78,11 +78,11 @@
 
 
 
-The <ClLinks  term={"function"}><i>functions</i></ClLinks> <DictionaryLink  term={"logandc1"}><b>logandc1</b></DictionaryLink>, <DictionaryLink  term={"logandc2"}><b>logandc2</b></DictionaryLink>, <DictionaryLink  term={"logand"}><b>logand</b></DictionaryLink>, <DictionaryLink  term={"logeqv"}><b>logeqv</b></DictionaryLink>, <DictionaryLink  term={"logior"}><b>logior</b></DictionaryLink>, <DictionaryLink  term={"lognand"}><b>lognand</b></DictionaryLink>, <DictionaryLink  term={"lognor"}><b>lognor</b></DictionaryLink>, <DictionaryLink  term={"lognot"}><b>lognot</b></DictionaryLink>, <DictionaryLink  term={"logorc1"}><b>logorc1</b></DictionaryLink>, <DictionaryLink  term={"logorc2"}><b>logorc2</b></DictionaryLink>, and <DictionaryLink  term={"logxor"}><b>logxor</b></DictionaryLink> perform bit-wise logical operations on their <ClLinks  term={"argument"}><i>arguments</i></ClLinks>, that are treated as if they were binary. 
+The <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> <DictionaryLink  term={"logandc1"}><b>logandc1</b></DictionaryLink>, <DictionaryLink  term={"logandc2"}><b>logandc2</b></DictionaryLink>, <DictionaryLink  term={"logand"}><b>logand</b></DictionaryLink>, <DictionaryLink  term={"logeqv"}><b>logeqv</b></DictionaryLink>, <DictionaryLink  term={"logior"}><b>logior</b></DictionaryLink>, <DictionaryLink  term={"lognand"}><b>lognand</b></DictionaryLink>, <DictionaryLink  term={"lognor"}><b>lognor</b></DictionaryLink>, <DictionaryLink  term={"lognot"}><b>lognot</b></DictionaryLink>, <DictionaryLink  term={"logorc1"}><b>logorc1</b></DictionaryLink>, <DictionaryLink  term={"logorc2"}><b>logorc2</b></DictionaryLink>, and <DictionaryLink  term={"logxor"}><b>logxor</b></DictionaryLink> perform bit-wise logical operations on their <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm>, that are treated as if they were binary. 
 
 
 
-Figure 12–18 lists the meaning of each of the <ClLinks  term={"function"}><i>functions</i></ClLinks>. Where an ‘identity’ is shown, it indicates the *value yielded* by the <ClLinks  term={"function"}><i>function</i></ClLinks> when no <ClLinks  term={"argument"}><i>arguments</i></ClLinks> are supplied. 
+Figure 12–18 lists the meaning of each of the <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm>. Where an ‘identity’ is shown, it indicates the *value yielded* by the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> when no <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> are supplied. 
 
 
 
@@ -175,7 +175,7 @@ Should signal <DictionaryLink  term={"type-error"}><b>type-error</b></Dictionary
 
 
 
-(logbitp *k* -1) returns <ClLinks  term={"true"}><i>true</i></ClLinks> for all values of *k*. 
+(logbitp *k* -1) returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> for all values of *k*. 
 
 
 

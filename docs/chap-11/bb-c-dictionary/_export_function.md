@@ -1,4 +1,4 @@
-**export** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**export** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"export"}><b>export</b></DictionaryLink> <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> &amp;optional *package →* <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
+<DictionaryLink  term={"export"}><b>export</b></DictionaryLink> <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> &amp;optional *package →* <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"symbol"}><i>symbols</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
+<GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
@@ -26,23 +26,19 @@
 
 
 
-<DictionaryLink  term={"export"}><b>export</b></DictionaryLink> makes one or more <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> (whether directly or by inheritance) be <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of that <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<DictionaryLink  term={"export"}><b>export</b></DictionaryLink> makes one or more <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> that are <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> (whether directly or by inheritance) be <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of that <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
-If any of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks>, <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> has no effect on that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> as an internal symbol, it is simply changed to external status. If it is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as an <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm> via <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>, it is first *imported* into <ClLinks  term={"package"}><i>package</i></ClLinks>, then <ClLinks  term={"exported"}><i>exported</i></ClLinks>. (The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is then <ClLinks  term={"present"}><i>present</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks> whether or not <ClLinks  term={"package"}><i>package</i></ClLinks> continues to use the <ClLinks  term={"package"}><i>package</i></ClLinks> through which the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> was originally inherited.) 
+If any of the <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> is already <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> as an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm> of <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> has no effect on that <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. If the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> as an internal symbol, it is simply changed to external status. If it is <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> as an <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm> via <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>, it is first *imported* into <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, then <GlossaryTerm  term={"exported"}><i>exported</i></GlossaryTerm>. (The <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is then <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> in the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> whether or not <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> continues to use the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> through which the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> was originally inherited.) 
 
 
 
-<DictionaryLink  term={"export"}><b>export</b></DictionaryLink> makes each *symbol accessible* to all the <ClLinks  term={"package"}><i>packages</i></ClLinks> that use <ClLinks  term={"package"}><i>package</i></ClLinks>. All of these <ClLinks  term={"package"}><i>packages</i></ClLinks> are checked for name conflicts: (export *s p*) does (find-symbol (symbol-name *s*) *q*) for each package *q* in (package-used-by-list *p*). Note that in the usual case of an <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> during the initial definition of a <ClLinks  term={"package"}><i>package</i></ClLinks>, the result of <DictionaryLink  term={"package-used-by-list"}><b>package-used-by-list</b></DictionaryLink> is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> and the name-conflict checking takes negligible time. When multiple changes are to be made, for example when <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> is given a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>, it is permissible for the implementation to process each change separately, so that aborting from a name conflict caused by any but the first <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in the <ClLinks  term={"list"}><i>list</i></ClLinks> does not unexport the first <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in the <ClLinks  term={"list"}><i>list</i></ClLinks>. However, aborting from a name-conflict error caused by <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> of one of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> does not leave that *symbol accessible* to some <ClLinks  term={"package"}><i>packages</i></ClLinks> and <ClLinks  term={"inaccessible"}><i>inaccessible</i></ClLinks> to others; with respect to each of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> processed, <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> behaves as if it were as an atomic operation. 
-
-
+<DictionaryLink  term={"export"}><b>export</b></DictionaryLink> makes each *symbol accessible* to all the <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> that use <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. All of these <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> are checked for name conflicts: (export *s p*) does (find-symbol (symbol-name *s*) *q*) for each package *q* in (package-used-by-list *p*). Note that in the usual case of an <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> during the initial definition of a <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, the result of <DictionaryLink  term={"package-used-by-list"}><b>package-used-by-list</b></DictionaryLink> is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> and the name-conflict checking takes negligible time. When multiple changes are to be made, for example when <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> is given a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>, it is permissible for the implementation to process each change separately, so that aborting from a name conflict caused by any but the first <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> in the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> does not unexport the first <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> in the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. However, aborting from a name-conflict error caused by <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> of one of <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> does not leave that *symbol accessible* to some <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> and <GlossaryTerm  term={"inaccessible"}><i>inaccessible</i></GlossaryTerm> to others; with respect to each of <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> processed, <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> behaves as if it were as an atomic operation. 
 
 
 
 
-
- 
 
 
 
@@ -50,7 +46,11 @@ If any of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is already <ClL
 
 
 
-A name conflict in <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> between one of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> being exported and a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> already <ClLinks  term={"present"}><i>present</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks> that would inherit the newly-exported <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> may be resolved in favor of the exported <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by uninterning the other one, or in favor of the already-present <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by making it a shadowing symbol. 
+ 
+
+
+
+A name conflict in <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> between one of <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> being exported and a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> already <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> in a <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> that would inherit the newly-exported <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> may be resolved in favor of the exported <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> by uninterning the other one, or in favor of the already-present <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> by making it a shadowing symbol. 
 
 
 
@@ -83,7 +83,7 @@ The package system is modified.
 
 
 
-If any of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is not <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> at all in <ClLinks  term={"package"}><i>package</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink> is signaled that is <ClLinks  term={"correctable"}><i>correctable</i></ClLinks> by permitting the <ClLinks  term={"user"}><i>user</i></ClLinks> to interactively specify whether that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> should be *imported*. 
+If any of the <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> is not <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> at all in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink> is signaled that is <GlossaryTerm  term={"correctable"}><i>correctable</i></GlossaryTerm> by permitting the <GlossaryTerm  term={"user"}><i>user</i></GlossaryTerm> to interactively specify whether that <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> should be *imported*. 
 
 
 

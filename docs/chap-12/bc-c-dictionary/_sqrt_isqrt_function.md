@@ -1,4 +1,4 @@
-**sqrt, isqrt** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**sqrt, isqrt** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>, *root*—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>, *root*—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<DictionaryLink  term={"sqrt"}><b>sqrt</b></DictionaryLink> returns the <ClLinks  term={"principal"}><i>principal</i></ClLinks> square root of <ClLinks  term={"number"}><i>number</i></ClLinks>. If the <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"complex"}><i>complex</i></ClLinks> but is negative, then the result is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> . 
+<DictionaryLink  term={"sqrt"}><b>sqrt</b></DictionaryLink> returns the <GlossaryTerm  term={"principal"}><i>principal</i></GlossaryTerm> square root of <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>. If the <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is not a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> but is negative, then the result is a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> . 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-If <ClLinks  term={"number"}><i>number</i></ClLinks> is a positive <ClLinks  term={"rational"}><i>rational</i></ClLinks>, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether *root* is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> or a <ClLinks  term={"float"}><i>float</i></ClLinks>. If <ClLinks  term={"number"}><i>number</i></ClLinks> is a negative <ClLinks  term={"rational"}><i>rational</i></ClLinks>, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether *root* is a <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>. 
+If <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is a positive <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm>, it is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> whether *root* is a <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm> or a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>. If <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is a negative <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm>, it is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> whether *root* is a <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>. 
 
 
 
@@ -79,11 +79,11 @@ The branch cut for square root lies along the negative real axis, continuous wit
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"sqrt"}><b>sqrt</b></DictionaryLink> should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"sqrt"}><b>sqrt</b></DictionaryLink> should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"isqrt"}><b>isqrt</b></DictionaryLink> should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not a non-negative *integer* . The functions <DictionaryLink  term={"sqrt"}><b>sqrt</b></DictionaryLink> and <DictionaryLink  term={"isqrt"}><b>isqrt</b></DictionaryLink> might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>. 
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"isqrt"}><b>isqrt</b></DictionaryLink> should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not a non-negative *integer* . The functions <DictionaryLink  term={"sqrt"}><b>sqrt</b></DictionaryLink> and <DictionaryLink  term={"isqrt"}><b>isqrt</b></DictionaryLink> might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>. 
 
 
 

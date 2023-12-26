@@ -1,4 +1,4 @@
-**file-author** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**file-author** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*author*—a <ClLinks  term={"string"}><i>string</i></ClLinks> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+*author*—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Returns a <ClLinks  term={"string"}><i>string</i></ClLinks> naming the author of the <ClLinks  term={"file"}><i>file</i></ClLinks> specified by *pathspec*, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if the author’s name cannot be determined. 
+Returns a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> naming the author of the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> specified by *pathspec*, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if the author’s name cannot be determined. 
 
 
 
@@ -56,7 +56,7 @@ The host computer’s file system.
 
 
 
-Other users of the <ClLinks  term={"file"}><i>file</i></ClLinks> named by *pathspec*. 
+Other users of the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> named by *pathspec*. 
 
 
 
@@ -64,11 +64,11 @@ Other users of the <ClLinks  term={"file"}><i>file</i></ClLinks> named by *paths
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if *pathspec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if *pathspec* is <GlossaryTerm  term={"wild"}><i>wild</i></GlossaryTerm>. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> cannot perform the requested operation. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> cannot perform the requested operation. 
 
 
 

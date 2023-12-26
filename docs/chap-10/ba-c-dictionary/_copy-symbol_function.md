@@ -1,4 +1,4 @@
-**copy-symbol** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**copy-symbol** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"copy-symbol"}><b>copy-symbol</b></DictionaryLink> <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> &amp;optional *copy-properties → new-symbol* 
+<DictionaryLink  term={"copy-symbol"}><b>copy-symbol</b></DictionaryLink> <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> &amp;optional *copy-properties → new-symbol* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-*copy-properties*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*copy-properties*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-*new-symbol*—a <ClLinks  term={"fresh"}><i>fresh</i></ClLinks>, *uninterned symbol*. 
+*new-symbol*—a <GlossaryTerm  term={"fresh"}><i>fresh</i></GlossaryTerm>, *uninterned symbol*. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<DictionaryLink  term={"copy-symbol"}><b>copy-symbol</b></DictionaryLink> returns a <ClLinks  term={"fresh"}><i>fresh</i></ClLinks>, *uninterned symbol*, the <ClLinks  term={"name"}><i>name</i></ClLinks> of which is <ClLinks  term={"string"}><b>string=</b></ClLinks> to and possibly the <ClLinks  term={"same"}><i>same</i></ClLinks> as the <ClLinks  term={"name"}><i>name</i></ClLinks> of the given <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<DictionaryLink  term={"copy-symbol"}><b>copy-symbol</b></DictionaryLink> returns a <GlossaryTerm  term={"fresh"}><i>fresh</i></GlossaryTerm>, *uninterned symbol*, the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of which is <ClLinks  term={"string"}><b>string=</b></ClLinks> to and possibly the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> as the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of the given <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-If *copy-properties* is <ClLinks  term={"false"}><i>false</i></ClLinks>, the *new-symbol* is neither <ClLinks  term={"bound"}><i>bound</i></ClLinks> nor <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> and has a *null property list*. If *copy-properties* is <ClLinks  term={"true"}><i>true</i></ClLinks>, then the initial <ClLinks  term={"value"}><i>value</i></ClLinks> of *new-symbol* is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, the initial <ClLinks  term={"function"}><i>function</i></ClLinks> definition of *new-symbol* is the <GlossaryTerm styled={true} term={"functional value"}><i>functional value</i></GlossaryTerm> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, and the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> of *new-symbol* is a <ClLinks  term={"copy"}><i>copy</i></ClLinks><sub>2</sub> of the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+If *copy-properties* is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>, the *new-symbol* is neither <GlossaryTerm  term={"bound"}><i>bound</i></GlossaryTerm> nor <GlossaryTerm  term={"fbound"}><i>fbound</i></GlossaryTerm> and has a *null property list*. If *copy-properties* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, then the initial <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of *new-symbol* is the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, the initial <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> definition of *new-symbol* is the <GlossaryTerm styled={true} term={"functional value"}><i>functional value</i></GlossaryTerm> of <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, and the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> of *new-symbol* is a <GlossaryTerm  term={"copy"}><i>copy</i></GlossaryTerm><sub>2</sub> of the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> of <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -69,7 +69,7 @@ If *copy-properties* is <ClLinks  term={"false"}><i>false</i></ClLinks>, the *ne
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is not a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -85,7 +85,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <Diction
 
 
 
-Implementors are encouraged not to copy the <ClLinks  term={"string"}><i>string</i></ClLinks> which is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks  term={"name"}><i>name</i></ClLinks> unnecessarily. Unless there is a good reason to do so, the normal implementation strategy is for the *new-symbol*’s <ClLinks  term={"name"}><i>name</i></ClLinks> to be <ClLinks  term={"identical"}><i>identical</i></ClLinks> to the given <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks  term={"name"}><i>name</i></ClLinks>. 
+Implementors are encouraged not to copy the <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> which is the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>’s <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> unnecessarily. Unless there is a good reason to do so, the normal implementation strategy is for the *new-symbol*’s <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> to be <GlossaryTerm  term={"identical"}><i>identical</i></GlossaryTerm> to the given <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>’s <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>. 
 
 
 

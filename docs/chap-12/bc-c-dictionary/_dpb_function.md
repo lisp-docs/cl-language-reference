@@ -1,4 +1,4 @@
-**dpb** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**dpb** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 

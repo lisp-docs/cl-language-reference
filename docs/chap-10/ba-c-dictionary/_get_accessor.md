@@ -1,4 +1,4 @@
-**get** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**get** <GlossaryTerm  term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -19,19 +19,19 @@
 
 
 
-<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"indicator"}><i>indicator</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"indicator"}><i>indicator</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-*default*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+*default*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"value"}><i>value</i></ClLinks>—if the indicated property exists, the <ClLinks  term={"object"}><i>object</i></ClLinks> that is its <ClLinks  term={"value"}><i>value</i></ClLinks>; otherwise, the specified *default*. *new-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>—if the indicated property exists, the <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> that is its <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>; otherwise, the specified *default*. *new-value*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -39,7 +39,7 @@
 
 
 
-<DictionaryLink  term={"get"}><b>get</b></DictionaryLink> finds a <ClLinks  term={"property"}><i>property</i></ClLinks> on the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> <sub>2</sub> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> is <ClLinks  term={"identical"}><i>identical</i></ClLinks> to <ClLinks  term={"indicator"}><i>indicator</i></ClLinks>, and returns its corresponding <GlossaryTerm styled={true} term={"property value"}><i>property value</i></GlossaryTerm>. If there are multiple *properties*<sub>1</sub> with that <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> , <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> uses the first such <ClLinks  term={"property"}><i>property</i></ClLinks>. If there is no <ClLinks  term={"property"}><i>property</i></ClLinks> with that <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> , *default* is returned. 
+<DictionaryLink  term={"get"}><b>get</b></DictionaryLink> finds a <GlossaryTerm  term={"property"}><i>property</i></GlossaryTerm> on the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> <sub>2</sub> of <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> whose <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> is <GlossaryTerm  term={"identical"}><i>identical</i></GlossaryTerm> to <GlossaryTerm  term={"indicator"}><i>indicator</i></GlossaryTerm>, and returns its corresponding <GlossaryTerm styled={true} term={"property value"}><i>property value</i></GlossaryTerm>. If there are multiple *properties*<sub>1</sub> with that <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> , <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> uses the first such <GlossaryTerm  term={"property"}><i>property</i></GlossaryTerm>. If there is no <GlossaryTerm  term={"property"}><i>property</i></GlossaryTerm> with that <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> , *default* is returned. 
 
 
 
@@ -59,7 +59,7 @@
 
 
 
-<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> may be used to associate a new <ClLinks  term={"object"}><i>object</i></ClLinks> with an existing indicator already on the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>, or to create a new assocation if none exists. If there are multiple *properties*<sub>1</sub> with that <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> , <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> associates the *new-value* with the first such <ClLinks  term={"property"}><i>property</i></ClLinks>. When a <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> is used as a <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> <ClLinks  term={"place"}><i>place</i></ClLinks>, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its <ClLinks  term={"value"}><i>value</i></ClLinks> is ignored. 
+<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> may be used to associate a new <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> with an existing indicator already on the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>’s <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>, or to create a new assocation if none exists. If there are multiple *properties*<sub>1</sub> with that <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> , <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> associates the *new-value* with the first such <GlossaryTerm  term={"property"}><i>property</i></GlossaryTerm>. When a <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is used as a <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> is ignored. 
 
 
 
@@ -98,7 +98,7 @@
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is not a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -130,7 +130,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <Diction
 
 
 
-<ClLinks  term={"number"}><i>Numbers</i></ClLinks> and <ClLinks  term={"character"}><i>characters</i></ClLinks> are not recommended for use as <ClLinks  term={"indicator"}><i>indicators</i></ClLinks> in portable code since <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> tests with <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> rather than <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>, and consequently the effect of using such <ClLinks  term={"indicator"}><i>indicators</i></ClLinks> is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<GlossaryTerm  term={"number"}><i>Numbers</i></GlossaryTerm> and <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> are not recommended for use as <GlossaryTerm  term={"indicator"}><i>indicators</i></GlossaryTerm> in portable code since <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> tests with <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> rather than <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>, and consequently the effect of using such <GlossaryTerm  term={"indicator"}><i>indicators</i></GlossaryTerm> is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 

@@ -1,4 +1,4 @@
-**ldb** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**ldb** <GlossaryTerm  term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks  term={"byte"}><i>byte</i></ClLinks>, *new-byte*—a non-negative *integer* . 
+<GlossaryTerm  term={"byte"}><i>byte</i></GlossaryTerm>, *new-byte*—a non-negative *integer* . 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink> extracts and returns the <ClLinks  term={"byte"}><i>byte</i></ClLinks> of *integer* specified by *bytespec*. 
+<DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink> extracts and returns the <GlossaryTerm  term={"byte"}><i>byte</i></GlossaryTerm> of *integer* specified by *bytespec*. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> may be used with <DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink> to modify a byte within the *integer* that is stored in a given <ClLinks  term={"place"}><i>place</i></ClLinks>. The order of evaluation, when an <DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink> form is supplied to <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink>, is exactly left-to-right. The e↵ect is to perform a <DictionaryLink  term={"dpb"}><b>dpb</b></DictionaryLink> operation and then store the result back into the <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> may be used with <DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink> to modify a byte within the *integer* that is stored in a given <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>. The order of evaluation, when an <DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink> form is supplied to <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink>, is exactly left-to-right. The e↵ect is to perform a <DictionaryLink  term={"dpb"}><b>dpb</b></DictionaryLink> operation and then store the result back into the <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>. 
 
 
 

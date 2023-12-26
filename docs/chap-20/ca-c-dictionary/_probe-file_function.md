@@ -1,4 +1,4 @@
-**probe-file** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**probe-file** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"truename"}><i>truename</i></ClLinks>—a <GlossaryTerm styled={true} term={"physical pathname"}><i>physical pathname</i></GlossaryTerm> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+<GlossaryTerm  term={"truename"}><i>truename</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"physical pathname"}><i>physical pathname</i></GlossaryTerm> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-<DictionaryLink  term={"probe-file"}><b>probe-file</b></DictionaryLink> returns <ClLinks  term={"false"}><i>false</i></ClLinks> if there is no file named *pathspec*, and otherwise returns the <ClLinks  term={"truename"}><i>truename</i></ClLinks> of *pathspec*. 
+<DictionaryLink  term={"probe-file"}><b>probe-file</b></DictionaryLink> returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> if there is no file named *pathspec*, and otherwise returns the <GlossaryTerm  term={"truename"}><i>truename</i></GlossaryTerm> of *pathspec*. 
 
 
 
-If the *pathspec designator* is an open <ClLinks  term={"stream"}><i>stream</i></ClLinks>, then <DictionaryLink  term={"probe-file"}><b>probe-file</b></DictionaryLink> produces the <ClLinks  term={"truename"}><i>truename</i></ClLinks> of its associated <ClLinks  term={"file"}><i>file</i></ClLinks>. If *pathspec* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, whether open or closed, it is coerced to a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> as if by the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>. 
+If the *pathspec designator* is an open <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>, then <DictionaryLink  term={"probe-file"}><b>probe-file</b></DictionaryLink> produces the <GlossaryTerm  term={"truename"}><i>truename</i></GlossaryTerm> of its associated <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm>. If *pathspec* is a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>, whether open or closed, it is coerced to a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> as if by the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>. 
 
 
 
@@ -62,11 +62,11 @@ The host computer’s file system.
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if *pathspec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if *pathspec* is <GlossaryTerm  term={"wild"}><i>wild</i></GlossaryTerm>. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> cannot perform the requested operation. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> cannot perform the requested operation. 
 
 
 

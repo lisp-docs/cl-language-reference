@@ -2,15 +2,15 @@
 
 
 
-A *sequence* is an ordered collection of <ClLinks  term={"element"}><i>elements</i></ClLinks>, implemented as either a <ClLinks  term={"vector"}><i>vector</i></ClLinks> or a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
+A *sequence* is an ordered collection of <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm>, implemented as either a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> or a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
-*Sequences* can be created by the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"make-sequence"}><b>make-sequence</b></DictionaryLink>, as well as other <ClLinks  term={"function"}><i>functions</i></ClLinks> that create <ClLinks  term={"object"}><i>objects</i></ClLinks> of <ClLinks  term={"type"}><i>types</i></ClLinks> that are <ClLinks  term={"subtype"}><i>subtypes</i></ClLinks> of <DictionaryLink  term={"sequence"}><b>sequence</b></DictionaryLink> (*e.g.*, <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>, <DictionaryLink  term={"make-list"}><b>make-list</b></DictionaryLink>, <DictionaryLink  term={"mapcar"}><b>mapcar</b></DictionaryLink>, and <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>). 
+*Sequences* can be created by the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"make-sequence"}><b>make-sequence</b></DictionaryLink>, as well as other <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> that create <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> that are <GlossaryTerm  term={"subtype"}><i>subtypes</i></GlossaryTerm> of <DictionaryLink  term={"sequence"}><b>sequence</b></DictionaryLink> (*e.g.*, <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>, <DictionaryLink  term={"make-list"}><b>make-list</b></DictionaryLink>, <DictionaryLink  term={"mapcar"}><b>mapcar</b></DictionaryLink>, and <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>). 
 
 
 
-A <GlossaryTerm styled={true} term={"sequence function"}><i>sequence function</i></GlossaryTerm> is a <ClLinks  term={"function"}><i>function</i></ClLinks> defined by this specification or added as an extension by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> that operates on one or more *sequences*. Whenever a <GlossaryTerm styled={true} term={"sequence function"}><i>sequence function</i></GlossaryTerm> must construct and return a new <ClLinks  term={"vector"}><i>vector</i></ClLinks> , it always returns a <GlossaryTerm styled={true} term={"simple vector"}><i>simple vector</i></GlossaryTerm> . Similarly, any <ClLinks  term={"string"}><i>strings</i></ClLinks> constructed will be <GlossaryTerm styled={true} term={"simple string"}><i>simple strings</i></GlossaryTerm>. 
+A <GlossaryTerm styled={true} term={"sequence function"}><i>sequence function</i></GlossaryTerm> is a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> defined by this specification or added as an extension by the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> that operates on one or more *sequences*. Whenever a <GlossaryTerm styled={true} term={"sequence function"}><i>sequence function</i></GlossaryTerm> must construct and return a new <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> , it always returns a <GlossaryTerm styled={true} term={"simple vector"}><i>simple vector</i></GlossaryTerm> . Similarly, any <GlossaryTerm  term={"string"}><i>strings</i></GlossaryTerm> constructed will be <GlossaryTerm styled={true} term={"simple string"}><i>simple strings</i></GlossaryTerm>. 
 
 
 

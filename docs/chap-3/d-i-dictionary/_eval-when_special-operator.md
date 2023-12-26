@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> (<ClLinks  term={"situation"}><i>\{situation\}</i></ClLinks>\*) <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
+<DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> (<GlossaryTerm  term={"situation"}><i>\{situation\}</i></GlossaryTerm>\*) <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\* → \{result\}\* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks  term={"situation"}><i>situation</i></ClLinks>—One of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> :compile-toplevel, :load-toplevel, :execute, <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink>, <DictionaryLink  term={"load"}><b>load</b></DictionaryLink>, or <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink>. The use of <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink>, <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink>, and <DictionaryLink  term={"load"}><b>load</b></DictionaryLink> is deprecated. 
+<GlossaryTerm  term={"situation"}><i>situation</i></GlossaryTerm>—One of the <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> :compile-toplevel, :load-toplevel, :execute, <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink>, <DictionaryLink  term={"load"}><b>load</b></DictionaryLink>, or <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink>. The use of <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink>, <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink>, and <DictionaryLink  term={"load"}><b>load</b></DictionaryLink> is deprecated. 
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
+<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks> if they are executed, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if they are not. 
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> of the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> if they are executed, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if they are not. 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-The body of an <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> form is processed as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>, but only in the <ClLinks  term={"situation"}><i>situations</i></ClLinks> listed. 
+The body of an <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> form is processed as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>, but only in the <GlossaryTerm  term={"situation"}><i>situations</i></GlossaryTerm> listed. 
 
 
 
-The use of the <ClLinks  term={"situation"}><i>situations</i></ClLinks> :compile-toplevel (or compile) and :load-toplevel (or load) controls whether and when <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> occurs when <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in code processed by <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink>. See Section 3.2.3 (File Compilation). 
+The use of the <GlossaryTerm  term={"situation"}><i>situations</i></GlossaryTerm> :compile-toplevel (or compile) and :load-toplevel (or load) controls whether and when <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> occurs when <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in code processed by <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink>. See Section 3.2.3 (File Compilation). 
 
 
 
-The use of the <ClLinks  term={"situation"}><i>situation</i></ClLinks> :execute (or eval) controls whether evaluation occurs for other <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> <ClLinks  term={"form"}><i>forms</i></ClLinks>; that is, those that are not <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>, or those in code processed by <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> or <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink>. If the :execute situation is specified in such a <ClLinks  term={"form"}><i>form</i></ClLinks>, then the body <ClLinks  term={"form"}><i>forms</i></ClLinks> are processed as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>; otherwise, the <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+The use of the <GlossaryTerm  term={"situation"}><i>situation</i></GlossaryTerm> :execute (or eval) controls whether evaluation occurs for other <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>; that is, those that are not <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>, or those in code processed by <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> or <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink>. If the :execute situation is specified in such a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, then the body <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> are processed as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>; otherwise, the <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -116,7 +116,7 @@ The following effects are logical consequences of the definition of <DictionaryL
 
 
 
-*• Macros* intended for use in *top level forms* should be written so that side-effects are done by the <ClLinks  term={"form"}><i>forms</i></ClLinks> in the macro expansion. The macro-expander itself should not do the side-effects. 
+*• Macros* intended for use in *top level forms* should be written so that side-effects are done by the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in the macro expansion. The macro-expander itself should not do the side-effects. 
 
 
 
@@ -152,7 +152,7 @@ Right:
 
 
 
-Adherence to this convention means that such <ClLinks  term={"macro"}><i>macros</i></ClLinks> behave intuitively when appearing as *non-top-level forms*. 
+Adherence to this convention means that such <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm> behave intuitively when appearing as *non-top-level forms*. 
 
 
 

@@ -1,4 +1,4 @@
-**subseq** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**subseq** <GlossaryTerm  term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -46,23 +46,19 @@
 
 
 
-<DictionaryLink  term={"subseq"}><b>subseq</b></DictionaryLink> always allocates a new *sequence* for a result; it never shares storage with an old *sequence*. The result subsequence is always of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *sequence*. 
+<DictionaryLink  term={"subseq"}><b>subseq</b></DictionaryLink> always allocates a new *sequence* for a result; it never shares storage with an old *sequence*. The result subsequence is always of the same <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> as *sequence*. 
 
 
 
-If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the result is a *fresh simple array* of <ClLinks  term={"rank"}><i>rank</i></ClLinks> one that has the same <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> as *sequence*. If *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, the result is a *fresh list*. 
+If *sequence* is a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> , the result is a *fresh simple array* of <GlossaryTerm  term={"rank"}><i>rank</i></GlossaryTerm> one that has the same <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> as *sequence*. If *sequence* is a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>, the result is a *fresh list*. 
 
 
 
-<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> may be used with <DictionaryLink  term={"subseq"}><b>subseq</b></DictionaryLink> to destructively replace <ClLinks  term={"element"}><i>elements</i></ClLinks> of a subsequence with <ClLinks  term={"element"}><i>elements</i></ClLinks> taken from a *sequence* of new values. If the subsequence and the new sequence are not of equal 
-
-
+<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> may be used with <DictionaryLink  term={"subseq"}><b>subseq</b></DictionaryLink> to destructively replace <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of a subsequence with <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> taken from a *sequence* of new values. If the subsequence and the new sequence are not of equal 
 
 
 
 
-
- 
 
 
 
@@ -70,7 +66,11 @@ If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the resul
 
 
 
-length, the shorter length determines the number of elements that are replaced. The remaining <ClLinks  term={"element"}><i>elements</i></ClLinks> at the end of the longer sequence are not modified in the operation. 
+ 
+
+
+
+length, the shorter length determines the number of elements that are replaced. The remaining <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> at the end of the longer sequence are not modified in the operation. 
 
 
 
@@ -88,7 +88,7 @@ str → "A123ab"
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *new-subsequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should be prepared to signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. Should be prepared to signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *new-subsequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 

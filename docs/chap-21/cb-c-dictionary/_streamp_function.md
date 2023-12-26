@@ -1,4 +1,4 @@
-**streamp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**streamp** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"stream"}><b>stream</b></DictionaryLink>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"stream"}><b>stream</b></DictionaryLink>; otherwise, returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"streamp"}><b>streamp</b></DictionaryLink> is unaffected by whether <ClLinks  term={"object"}><i>object</i></ClLinks>, if it is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, is <ClLinks  term={"open"}><i>open</i></ClLinks> or closed. 
+<DictionaryLink  term={"streamp"}><b>streamp</b></DictionaryLink> is unaffected by whether <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>, if it is a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>, is <GlossaryTerm  term={"open"}><i>open</i></GlossaryTerm> or closed. 
 
 
 
@@ -43,7 +43,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-(streamp <ClLinks  term={"object"}><i>object</i></ClLinks>) *≡* (typep <ClLinks  term={"object"}><i>object</i></ClLinks> ’stream) 
+(streamp <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>) *≡* (typep <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> ’stream) 
 
 
 

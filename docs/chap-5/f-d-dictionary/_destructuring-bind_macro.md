@@ -1,4 +1,4 @@
-**destructuring-bind** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**destructuring-bind** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"destructuring-bind"}><b>destructuring-bind</b></DictionaryLink> *lambda-list expression \{declaration\}*\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink  term={"destructuring-bind"}><b>destructuring-bind</b></DictionaryLink> *lambda-list expression \{declaration\}*\* <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\* 
 
 
 
@@ -22,19 +22,19 @@
 
 
 
-<ClLinks  term={"expression"}><i>expression</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm>—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
+<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<DictionaryLink  term={"destructuring-bind"}><b>destructuring-bind</b></DictionaryLink> binds the variables specified in *lambda-list* to the corresponding values in the tree structure resulting from the evaluation of <ClLinks  term={"expression"}><i>expression</i></ClLinks>; then <DictionaryLink  term={"destructuring-bind"}><b>destructuring-bind</b></DictionaryLink> evaluates <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+<DictionaryLink  term={"destructuring-bind"}><b>destructuring-bind</b></DictionaryLink> binds the variables specified in *lambda-list* to the corresponding values in the tree structure resulting from the evaluation of <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm>; then <DictionaryLink  term={"destructuring-bind"}><b>destructuring-bind</b></DictionaryLink> evaluates <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. 
 
 
 
@@ -61,7 +61,7 @@ Data and Control
 
 
 
-If the result of evaluating the <ClLinks  term={"expression"}><i>expression</i></ClLinks> does not match the destructuring pattern, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> should be signaled. 
+If the result of evaluating the <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm> does not match the destructuring pattern, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> should be signaled. 
 
 
 

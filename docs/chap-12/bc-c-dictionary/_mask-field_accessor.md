@@ -1,4 +1,4 @@
-**mask-field** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**mask-field** <GlossaryTerm  term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<DictionaryLink  term={"mask-field"}><b>mask-field</b></DictionaryLink> performs a “mask” operation on *integer*. It returns an *integer* that has the same bits as *integer* in the <ClLinks  term={"byte"}><i>byte</i></ClLinks> specified by *bytespec*, but that has zero-bits everywhere else. 
+<DictionaryLink  term={"mask-field"}><b>mask-field</b></DictionaryLink> performs a “mask” operation on *integer*. It returns an *integer* that has the same bits as *integer* in the <GlossaryTerm  term={"byte"}><i>byte</i></GlossaryTerm> specified by *bytespec*, but that has zero-bits everywhere else. 
 
 
 
-<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> may be used with <DictionaryLink  term={"mask-field"}><b>mask-field</b></DictionaryLink> to modify a byte within the *integer* that is stored in a given <ClLinks  term={"place"}><i>place</i></ClLinks>. The e↵ect is to perform a <DictionaryLink  term={"deposit-field"}><b>deposit-field</b></DictionaryLink> operation and then store the result back into the <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> may be used with <DictionaryLink  term={"mask-field"}><b>mask-field</b></DictionaryLink> to modify a byte within the *integer* that is stored in a given <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>. The e↵ect is to perform a <DictionaryLink  term={"deposit-field"}><b>deposit-field</b></DictionaryLink> operation and then store the result back into the <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>. 
 
 
 

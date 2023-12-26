@@ -1,4 +1,4 @@
-**svref** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**svref** <GlossaryTerm  term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -39,7 +39,7 @@
 
 
 
-<ClLinks  term={"element"}><i>element</i></ClLinks>, *new-element*—an <ClLinks  term={"object"}><i>object</i></ClLinks> (whose <ClLinks  term={"type"}><i>type</i></ClLinks> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the <GlossaryTerm styled={true} term={"array element type"}><i>array element type</i></GlossaryTerm> of the *simple-vector*). 
+<GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm>, *new-element*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> (whose <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"array element type"}><i>array element type</i></GlossaryTerm> of the *simple-vector*). 
 
 
 
@@ -47,7 +47,7 @@
 
 
 
-*Accesses* the <ClLinks  term={"element"}><i>element</i></ClLinks> of *simple-vector* specified by *index*. 
+*Accesses* the <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of *simple-vector* specified by *index*. 
 
 
 

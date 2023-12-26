@@ -1,4 +1,4 @@
-**translate-pathname** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**translate-pathname** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*translated-pathname*—a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+*translated-pathname*—a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>. 
 
 
 
@@ -38,23 +38,23 @@
 
 
 
-<DictionaryLink  term={"translate-pathname"}><b>translate-pathname</b></DictionaryLink> translates *source* (that matches *from-wildcard*) into a corresponding <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> that matches *to-wildcard*, and returns the corresponding <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+<DictionaryLink  term={"translate-pathname"}><b>translate-pathname</b></DictionaryLink> translates *source* (that matches *from-wildcard*) into a corresponding <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> that matches *to-wildcard*, and returns the corresponding <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>. 
 
 
 
-The resulting <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is *to-wildcard* with each wildcard or missing field replaced by a portion of *source*. A “wildcard field” is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> component with a value of :wild, a :wild element of a <ClLinks  term={"list"}><i>list</i></ClLinks>-valued directory component, or an <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> portion of a component, such as the "\*" in the complex wildcard string "foo\*bar" that some implementations support. An implementation that adds other wildcard features, such as regular expressions, must define how <DictionaryLink  term={"translate-pathname"}><b>translate-pathname</b></DictionaryLink> extends to those features. A “missing field” is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> component with a value of <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+The resulting <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> is *to-wildcard* with each wildcard or missing field replaced by a portion of *source*. A “wildcard field” is a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> component with a value of :wild, a :wild element of a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>-valued directory component, or an <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm> portion of a component, such as the "\*" in the complex wildcard string "foo\*bar" that some implementations support. An implementation that adds other wildcard features, such as regular expressions, must define how <DictionaryLink  term={"translate-pathname"}><b>translate-pathname</b></DictionaryLink> extends to those features. A “missing field” is a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> component with a value of <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-The portion of *source* that is copied into the resulting <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. Typically it is determined by the user interface conventions of the file systems involved. Usually it is the portion of *source* that matches a wildcard field of *from-wildcard* that is in the same position as the wildcard or missing field of *to-wildcard*. If there is no wildcard field in *from-wildcard* at that position, then usually it is the entire corresponding <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> component of *source*, or in the case of a <ClLinks  term={"list"}><i>list</i></ClLinks>-valued directory component, the entire corresponding <ClLinks  term={"list"}><i>list</i></ClLinks> element. 
+The portion of *source* that is copied into the resulting <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> is <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>. Typically it is determined by the user interface conventions of the file systems involved. Usually it is the portion of *source* that matches a wildcard field of *from-wildcard* that is in the same position as the wildcard or missing field of *to-wildcard*. If there is no wildcard field in *from-wildcard* at that position, then usually it is the entire corresponding <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> component of *source*, or in the case of a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>-valued directory component, the entire corresponding <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> element. 
 
 
 
-During the copying of a portion of *source* into the resulting <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, additional *implementation defined* translations of <ClLinks  term={"case"}><i>case</i></ClLinks> or file naming conventions might occur, especially when *from-wildcard* and *to-wildcard* are for different hosts. 
+During the copying of a portion of *source* into the resulting <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>, additional *implementation defined* translations of <GlossaryTerm  term={"case"}><i>case</i></GlossaryTerm> or file naming conventions might occur, especially when *from-wildcard* and *to-wildcard* are for different hosts. 
 
 
 
-It is valid for *source* to be a wild <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>; in general this will produce a wild result. It is valid for *from-wildcard* and/or *to-wildcard* to be non-wild <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks>. 
+It is valid for *source* to be a wild <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>; in general this will produce a wild result. It is valid for *from-wildcard* and/or *to-wildcard* to be non-wild <GlossaryTerm  term={"pathname"}><i>pathnames</i></GlossaryTerm>. 
 
 
 
@@ -78,7 +78,7 @@ There are no specified keyword arguments for <DictionaryLink  term={"translate-p
 
 
 
-<DictionaryLink  term={"translate-pathname"}><b>translate-pathname</b></DictionaryLink> maps customary case in *source* into customary case in the output <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+<DictionaryLink  term={"translate-pathname"}><b>translate-pathname</b></DictionaryLink> maps customary case in *source* into customary case in the output <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>. 
 
 **Examples:**
 ```lisp
@@ -125,11 +125,11 @@ There are no specified keyword arguments for <DictionaryLink  term={"translate-p
 
 
 
-If any of *source*, *from-wildcard*, or *to-wildcard* is not a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, a <ClLinks  term={"string"}><i>string</i></ClLinks>, or a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm> an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. 
+If any of *source*, *from-wildcard*, or *to-wildcard* is not a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>, a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>, or a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm> an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. 
 
 
 
-(pathname-match-p *source from-wildcard*) must be true or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
+(pathname-match-p *source from-wildcard*) must be true or an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
@@ -149,7 +149,7 @@ The exact behavior of <DictionaryLink  term={"translate-pathname"}><b>translate-
 
 
 
-The following is an implementation guideline. One file system performs this operation by examining each piece of the three <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks> in turn, where a piece is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> component or a <ClLinks  term={"list"}><i>list</i></ClLinks> element of a structured component such as a hierarchical directory. Hierarchical directory elements in *from-wildcard* and *to-wildcard* are matched by whether they are wildcards, not by depth in the directory hierarchy. If the piece in *to-wildcard* is present and not wild, it is copied into the result. If the piece in *to-wildcard* is :wild or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the piece in *source* is copied into the result. Otherwise, the piece in *to-wildcard* might be a complex wildcard such as "foo\*bar" and the piece in *from-wildcard* should be wild; the portion of the piece in *source* that matches the wildcard portion of the piece in *from-wildcard* replaces the wildcard portion of the piece in *to-wildcard* and the value produced is used in the result. 
+The following is an implementation guideline. One file system performs this operation by examining each piece of the three <GlossaryTerm  term={"pathname"}><i>pathnames</i></GlossaryTerm> in turn, where a piece is a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> component or a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> element of a structured component such as a hierarchical directory. Hierarchical directory elements in *from-wildcard* and *to-wildcard* are matched by whether they are wildcards, not by depth in the directory hierarchy. If the piece in *to-wildcard* is present and not wild, it is copied into the result. If the piece in *to-wildcard* is :wild or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the piece in *source* is copied into the result. Otherwise, the piece in *to-wildcard* might be a complex wildcard such as "foo\*bar" and the piece in *from-wildcard* should be wild; the portion of the piece in *source* that matches the wildcard portion of the piece in *from-wildcard* replaces the wildcard portion of the piece in *to-wildcard* and the value produced is used in the result. 
 
 
 

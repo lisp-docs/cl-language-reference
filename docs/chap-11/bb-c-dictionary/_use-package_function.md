@@ -1,4 +1,4 @@
-**use-package** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**use-package** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*packages-to-use*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"package designator"}><i>package designators</i></GlossaryTerm>. The KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks> may not be supplied. 
+*packages-to-use*—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"package designator"}><i>package designators</i></GlossaryTerm>. The KEYWORD <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> may not be supplied. 
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. The <ClLinks  term={"package"}><i>package</i></ClLinks> cannot be the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. The <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> cannot be the KEYWORD <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-<DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink> causes <ClLinks  term={"package"}><i>package</i></ClLinks> to inherit all the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of *packages-to-use*. The inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> become <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbols</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink> causes <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> to inherit all the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of *packages-to-use*. The inherited <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> become <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> as <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbols</i></GlossaryTerm> of <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
-*Packages-to-use* are added to the <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks> if they are not there already. All <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> in *packages-to-use* become <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> as <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbols</i></GlossaryTerm>. <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink> does not cause any new <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> to be <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> but only makes them <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> by inheritance. 
+*Packages-to-use* are added to the <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm> of <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> if they are not there already. All <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> in *packages-to-use* become <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> as <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbols</i></GlossaryTerm>. <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink> does not cause any new <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> to be <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> but only makes them <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> by inheritance. 
 
 
 
-<DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink> checks for name conflicts between the newly imported symbols and those already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. A name conflict in <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink> between two external symbols inherited by <ClLinks  term={"package"}><i>package</i></ClLinks> from *packages-to-use* may be resolved in favor of either <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by *importing* one of them into <ClLinks  term={"package"}><i>package</i></ClLinks> and making it a shadowing symbol. 
+<DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink> checks for name conflicts between the newly imported symbols and those already <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. A name conflict in <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink> between two external symbols inherited by <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> from *packages-to-use* may be resolved in favor of either <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> by *importing* one of them into <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> and making it a shadowing symbol. 
 
 
 
@@ -51,7 +51,7 @@
 
 
 
-The <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks> may be modified. 
+The <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm> of <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> may be modified. 
 
 
 
@@ -67,7 +67,7 @@ The <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm>
 
 
 
-It is permissible for a *package P*<sub>1</sub> to <ClLinks  term={"use"}><i>use</i></ClLinks> a *package P*<sub>2</sub> even if *P*<sub>2</sub> already uses *P*<sub>1</sub>. The using of <ClLinks  term={"package"}><i>packages</i></ClLinks> is not transitive, so no problem results from the apparent circularity. 
+It is permissible for a *package P*<sub>1</sub> to <GlossaryTerm  term={"use"}><i>use</i></GlossaryTerm> a *package P*<sub>2</sub> even if *P*<sub>2</sub> already uses *P*<sub>1</sub>. The using of <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> is not transitive, so no problem results from the apparent circularity. 
 
 
 

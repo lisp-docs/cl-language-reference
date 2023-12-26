@@ -1,4 +1,4 @@
-**clrhash** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**clrhash** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 

@@ -14,7 +14,7 @@ a *bidirectional stream*.
 
 
 
-<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but it must be an *open stream* that is not a <GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to an *I/O customization variables* but that might be a <GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to the <ClLinks  term={"value"}><i>value</i></ClLinks> of some *I/O customization variable*. 
+<GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>, but it must be an *open stream* that is not a <GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to an *I/O customization variables* but that might be a <GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of some *I/O customization variable*. 
 
 
 
@@ -22,11 +22,11 @@ a *bidirectional stream*.
 
 
 
-The <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>, called *terminal I/O*, is ordinarily a *bidirectional stream* that connects to the user’s console. Typically, writing to this <ClLinks  term={"stream"}><i>stream</i></ClLinks> would cause the output to appear on a display screen, for example, and reading from the <ClLinks  term={"stream"}><i>stream</i></ClLinks> would accept input from a keyboard. It is intended that standard input functions such as <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> and <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink>, when used with this <ClLinks  term={"stream"}><i>stream</i></ClLinks>, cause echoing of the input into the output side of the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. The means by which this is accomplished are <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+The <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>, called *terminal I/O*, is ordinarily a *bidirectional stream* that connects to the user’s console. Typically, writing to this <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> would cause the output to appear on a display screen, for example, and reading from the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> would accept input from a keyboard. It is intended that standard input functions such as <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> and <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink>, when used with this <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>, cause echoing of the input into the output side of the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. The means by which this is accomplished are <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
-The effect of changing the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>, either by <ClLinks  term={"binding"}><i>binding</i></ClLinks> or *assignment*, is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
+The effect of changing the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>, either by <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> or *assignment*, is <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>. 
 
 
 
@@ -62,7 +62,7 @@ The effect of changing the <ClLinks  term={"value"}><i>value</i></ClLinks> of <D
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> **stream-error** consists of error conditions that are related to receiving input from or sending output to a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. The “offending stream” is initialized by the :stream initialization argument to <DictionaryLink  term={"make-condition"}><b>make-condition</b></DictionaryLink>, and is *accessed* by the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"stream-error-stream"}><b>stream-error-stream</b></DictionaryLink>. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> **stream-error** consists of error conditions that are related to receiving input from or sending output to a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. The “offending stream” is initialized by the :stream initialization argument to <DictionaryLink  term={"make-condition"}><b>make-condition</b></DictionaryLink>, and is *accessed* by the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"stream-error-stream"}><b>stream-error-stream</b></DictionaryLink>. 
 
 
 

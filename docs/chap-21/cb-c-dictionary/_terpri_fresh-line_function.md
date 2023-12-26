@@ -1,4 +1,4 @@
-**terpri, fresh-line** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**terpri, fresh-line** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<DictionaryLink  term={"terpri"}><b>terpri</b></DictionaryLink> outputs a <ClLinks  term={"newline"}><i>newline</i></ClLinks> to *output-stream*. 
+<DictionaryLink  term={"terpri"}><b>terpri</b></DictionaryLink> outputs a <GlossaryTerm  term={"newline"}><i>newline</i></GlossaryTerm> to *output-stream*. 
 
 
 
-<DictionaryLink  term={"fresh-line"}><b>fresh-line</b></DictionaryLink> is similar to <DictionaryLink  term={"terpri"}><b>terpri</b></DictionaryLink> but outputs a <ClLinks  term={"newline"}><i>newline</i></ClLinks> only if the *output-stream* is not already at the start of a line. If for some reason this cannot be determined, then a <ClLinks  term={"newline"}><i>newline</i></ClLinks> is output anyway. <DictionaryLink  term={"fresh-line"}><b>fresh-line</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if it outputs a <ClLinks  term={"newline"}><i>newline</i></ClLinks>; otherwise it returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+<DictionaryLink  term={"fresh-line"}><b>fresh-line</b></DictionaryLink> is similar to <DictionaryLink  term={"terpri"}><b>terpri</b></DictionaryLink> but outputs a <GlossaryTerm  term={"newline"}><i>newline</i></GlossaryTerm> only if the *output-stream* is not already at the start of a line. If for some reason this cannot be determined, then a <GlossaryTerm  term={"newline"}><i>newline</i></GlossaryTerm> is output anyway. <DictionaryLink  term={"fresh-line"}><b>fresh-line</b></DictionaryLink> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if it outputs a <GlossaryTerm  term={"newline"}><i>newline</i></GlossaryTerm>; otherwise it returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 

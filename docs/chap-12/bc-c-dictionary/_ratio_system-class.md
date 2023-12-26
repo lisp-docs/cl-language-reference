@@ -14,7 +14,7 @@
 
 
 
-A <ClLinks  term={"ratio"}><i>ratio</i></ClLinks> is a <ClLinks  term={"number"}><i>number</i></ClLinks> representing the mathematical ratio of two non-zero integers, the numerator and denominator, whose greatest common divisor is one, and of which the denominator is positive and greater than one. 
+A <GlossaryTerm  term={"ratio"}><i>ratio</i></GlossaryTerm> is a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> representing the mathematical ratio of two non-zero integers, the numerator and denominator, whose greatest common divisor is one, and of which the denominator is positive and greater than one. 
 
 
 

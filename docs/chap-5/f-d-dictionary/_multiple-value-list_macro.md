@@ -1,4 +1,4 @@
-**multiple-value-list** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**multiple-value-list** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
+<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated as described below. 
 
 
 
-<ClLinks  term={"list"}><i>list</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -38,7 +38,7 @@ Data and Control
 
 
 
-<DictionaryLink  term={"multiple-value-list"}><b>multiple-value-list</b></DictionaryLink> evaluates <ClLinks  term={"form"}><i>form</i></ClLinks> and creates a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub> it returns. 
+<DictionaryLink  term={"multiple-value-list"}><b>multiple-value-list</b></DictionaryLink> evaluates <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> and creates a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub> it returns. 
 
 **Examples:**
 ```lisp

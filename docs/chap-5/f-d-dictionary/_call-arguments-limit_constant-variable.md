@@ -6,7 +6,7 @@
 
 
 
-An integer not smaller than 50 and at least as great as the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></DictionaryLink>, the exact magnitude of which is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+An integer not smaller than 50 and at least as great as the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink  term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></DictionaryLink>, the exact magnitude of which is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
@@ -14,7 +14,7 @@ An integer not smaller than 50 and at least as great as the <ClLinks  term={"val
 
 
 
-The upper exclusive bound on the number of <ClLinks  term={"argument"}><i>arguments</i></ClLinks> that may be passed to a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+The upper exclusive bound on the number of <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> that may be passed to a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 

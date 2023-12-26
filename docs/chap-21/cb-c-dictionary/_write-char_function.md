@@ -1,4 +1,4 @@
-**write-char** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**write-char** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"write-char"}><b>write-char</b></DictionaryLink> <ClLinks  term={"character"}><i>character</i></ClLinks> &amp;optional *output-stream → character* 
+<DictionaryLink  term={"write-char"}><b>write-char</b></DictionaryLink> <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> &amp;optional *output-stream → character* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"character"}><i>character</i></ClLinks>—a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
+<GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm>—a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<DictionaryLink  term={"write-char"}><b>write-char</b></DictionaryLink> outputs <ClLinks  term={"character"}><i>character</i></ClLinks> to *output-stream*. 
+<DictionaryLink  term={"write-char"}><b>write-char</b></DictionaryLink> outputs <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> to *output-stream*. 
 
 
 

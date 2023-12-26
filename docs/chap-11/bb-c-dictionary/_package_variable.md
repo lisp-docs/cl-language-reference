@@ -1,4 +1,4 @@
-*∗<ClLinks  term={"package"}><b><ClLinks  term={"package"}><i>package</i></ClLinks></b></ClLinks>∗ Variable* 
+*∗<ClLinks  term={"package"}><b><GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm></b></ClLinks>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a *package object*.
 
 
 
-the COMMON-LISP-USER <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+the COMMON-LISP-USER <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@ the COMMON-LISP-USER <ClLinks  term={"package"}><i>package</i></ClLinks>.
 
 
 
-Whatever *package object* is currently the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"package"}><b>\*package\*</b></DictionaryLink> is referred to as the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
+Whatever *package object* is currently the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink  term={"package"}><b>\*package\*</b></DictionaryLink> is referred to as the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 **Examples:**
 ```lisp

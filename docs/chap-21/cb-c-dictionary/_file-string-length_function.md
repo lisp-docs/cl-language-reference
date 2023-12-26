@@ -1,4 +1,4 @@
-**file-string-length** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**file-string-length** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks>—an *output character file stream*. 
+<GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>—an *output character file stream*. 
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks> or a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
+<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> or a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> . 
 
 
 
-<ClLinks  term={"length"}><i>length</i></ClLinks>—a non-negative *integer* , or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+<GlossaryTerm  term={"length"}><i>length</i></GlossaryTerm>—a non-negative *integer* , or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<DictionaryLink  term={"file-string-length"}><b>file-string-length</b></DictionaryLink> returns the difference between what (file-position <ClLinks  term={"stream"}><i>stream</i></ClLinks>) would be after writing <ClLinks  term={"object"}><i>object</i></ClLinks> and its current value, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if this cannot be determined. 
+<DictionaryLink  term={"file-string-length"}><b>file-string-length</b></DictionaryLink> returns the difference between what (file-position <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>) would be after writing <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> and its current value, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if this cannot be determined. 
 
 
 
-The returned value corresponds to the current state of <ClLinks  term={"stream"}><i>stream</i></ClLinks> at the time of the call and might not be the same if it is called again when the state of the <ClLinks  term={"stream"}><i>stream</i></ClLinks> has changed. 
+The returned value corresponds to the current state of <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> at the time of the call and might not be the same if it is called again when the state of the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> has changed. 
 
 
 

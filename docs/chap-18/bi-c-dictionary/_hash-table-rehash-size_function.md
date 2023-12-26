@@ -1,4 +1,4 @@
-**hash-table-rehash-size** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**hash-table-rehash-size** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*rehash-size*—a *real* of <ClLinks  term={"type"}><i>type</i></ClLinks> (or (integer 1 \*) (float (1.0) \*)). 
+*rehash-size*—a *real* of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> (or (integer 1 \*) (float (1.0) \*)). 
 
 
 
@@ -40,7 +40,7 @@ Returns the current rehash size of *hash-table*, suitable for use in a call to <
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *hash-table* is not a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *hash-table* is not a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
 
 
 
@@ -72,7 +72,7 @@ Hash
 
 
 
-is a <ClLinks  term={"float"}><i>float</i></ClLinks>, indicating that the rate of growth of the *hash-table* when rehashed is intended to be multiplicative. However, this value is only advice to the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>; the actual amount by which the *hash-table* will grow upon rehash is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+is a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>, indicating that the rate of growth of the *hash-table* when rehashed is intended to be multiplicative. However, this value is only advice to the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>; the actual amount by which the *hash-table* will grow upon rehash is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 

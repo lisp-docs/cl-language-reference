@@ -1,4 +1,4 @@
-**proclaim** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**proclaim** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -22,15 +22,15 @@
 
 
 
-*Establishes* the <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> specified by *declaration-specifier* in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. 
+*Establishes* the <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm> specified by *declaration-specifier* in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. 
 
 
 
-Such a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, sometimes called a <GlossaryTerm styled={true} term={"global declaration"}><i>global declaration</i></GlossaryTerm> or a <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks>, is always in force unless locally *shadowed*. 
+Such a <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>, sometimes called a <GlossaryTerm styled={true} term={"global declaration"}><i>global declaration</i></GlossaryTerm> or a <GlossaryTerm  term={"proclamation"}><i>proclamation</i></GlossaryTerm>, is always in force unless locally *shadowed*. 
 
 
 
-<ClLinks  term={"name"}><i>Names</i></ClLinks> of <ClLinks  term={"variable"}><i>variables</i></ClLinks> and <ClLinks  term={"function"}><i>functions</i></ClLinks> within *declaration-specifier* refer to <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variables</i></GlossaryTerm> and global <ClLinks  term={"function"}><i>function</i></ClLinks> definitions, respectively. 
+<GlossaryTerm  term={"name"}><i>Names</i></GlossaryTerm> of <GlossaryTerm  term={"variable"}><i>variables</i></GlossaryTerm> and <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> within *declaration-specifier* refer to <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variables</i></GlossaryTerm> and global <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> definitions, respectively. 
 
 
 
@@ -58,7 +58,7 @@ Figure 3–22 shows a list of <GlossaryTerm styled={true} term={"declaration ide
 
 
 
-An implementation is free to support other (<ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>) <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifiers</i></GlossaryTerm> as well. 
+An implementation is free to support other (<GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>) <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifiers</i></GlossaryTerm> as well. 
 
 **Examples:**
 ```lisp
@@ -82,7 +82,7 @@ An implementation is free to support other (<ClLinks  term={"implementation-defi
 
 
 
-Although the *execution* of a <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> has e↵ects that might a↵ect compilation, the compiler does not make any attempt to recognize and specially process <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> <ClLinks  term={"form"}><i>forms</i></ClLinks>. A <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks> such as the following, even if a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, does not have any e↵ect until it is executed: 
+Although the *execution* of a <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> has e↵ects that might a↵ect compilation, the compiler does not make any attempt to recognize and specially process <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. A <GlossaryTerm  term={"proclamation"}><i>proclamation</i></GlossaryTerm> such as the following, even if a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, does not have any e↵ect until it is executed: 
 
 
 
@@ -106,4 +106,4 @@ In most such cases, however, it is preferrable to use <DictionaryLink  term={"de
 
 
 
-Since <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> <ClLinks  term={"form"}><i>forms</i></ClLinks> are ordinary <GlossaryTerm styled={true} term={"function form"}><i>function forms</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"macro form"}><i>macro forms</i></GlossaryTerm> can expand into them. 
+Since <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> are ordinary <GlossaryTerm styled={true} term={"function form"}><i>function forms</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"macro form"}><i>macro forms</i></GlossaryTerm> can expand into them. 

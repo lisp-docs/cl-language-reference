@@ -1,4 +1,4 @@
-**shiftf** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**shiftf** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"shiftf"}><b>shiftf</b></DictionaryLink> <ClLinks  term={"place"}><i>\{place\}</i></ClLinks><sup>+</sup> *newvalue ! old-value-1* 
+<DictionaryLink  term={"shiftf"}><b>shiftf</b></DictionaryLink> <GlossaryTerm  term={"place"}><i>\{place\}</i></GlossaryTerm><sup>+</sup> *newvalue ! old-value-1* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks  term={"place"}><i>place</i></ClLinks>—a <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+<GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>—a <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>. 
 
 
 
-*newvalue*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated. 
+*newvalue*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated. 
 
 
 
-*old-value-1*—an <ClLinks  term={"object"}><i>object</i></ClLinks> (the old <ClLinks  term={"value"}><i>value</i></ClLinks> of the first <ClLinks  term={"place"}><i>place</i></ClLinks>). 
+*old-value-1*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> (the old <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of the first <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>). 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<DictionaryLink  term={"shiftf"}><b>shiftf</b></DictionaryLink> modifies the values of each <ClLinks  term={"place"}><i>place</i></ClLinks> by storing *newvalue* into the last <ClLinks  term={"place"}><i>place</i></ClLinks>, and shifting the values of the second through the last <ClLinks  term={"place"}><i>place</i></ClLinks> into the remaining <ClLinks  term={"place"}><i>places</i></ClLinks>. 
+<DictionaryLink  term={"shiftf"}><b>shiftf</b></DictionaryLink> modifies the values of each <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> by storing *newvalue* into the last <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>, and shifting the values of the second through the last <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> into the remaining <GlossaryTerm  term={"place"}><i>places</i></GlossaryTerm>. 
 
 
 
@@ -38,11 +38,11 @@ If *newvalue* produces more values than there are store variables, the extra val
 
 
 
-In the form (shiftf *place1 place2* ... *placen newvalue*), the values in *place1* through *placen* are <ClLinks  term={"read"}><i>read</i></ClLinks> and saved, and *newvalue* is evaluated, for a total of n+1 values in all. Values 2 through n+1 are then stored into *place1* through *placen*, respectively. It is as if all the <ClLinks  term={"place"}><i>places</i></ClLinks> form a shift register; the *newvalue* is shifted in from the right, all values shift over to the left one place, and the value shifted out of *place1* is returned. 
+In the form (shiftf *place1 place2* ... *placen newvalue*), the values in *place1* through *placen* are <GlossaryTerm  term={"read"}><i>read</i></GlossaryTerm> and saved, and *newvalue* is evaluated, for a total of n+1 values in all. Values 2 through n+1 are then stored into *place1* through *placen*, respectively. It is as if all the <GlossaryTerm  term={"place"}><i>places</i></GlossaryTerm> form a shift register; the *newvalue* is shifted in from the right, all values shift over to the left one place, and the value shifted out of *place1* is returned. 
 
 
 
-For information about the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of <ClLinks  term={"place"}><i>places</i></ClLinks>, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
+For information about the <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> of <GlossaryTerm  term={"place"}><i>places</i></GlossaryTerm>, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
 
 
 
@@ -128,7 +128,7 @@ var1)
 
 
 
-except that the latter would evaluate any <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of each place twice, whereas <DictionaryLink  term={"shiftf"}><b>shiftf</b></DictionaryLink> evaluates them once. For example, 
+except that the latter would evaluate any <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> of each place twice, whereas <DictionaryLink  term={"shiftf"}><b>shiftf</b></DictionaryLink> evaluates them once. For example, 
 
 
 

@@ -14,11 +14,11 @@
 
 
 
-A <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a structured <ClLinks  term={"object"}><i>object</i></ClLinks> which represents a <ClLinks  term={"filename"}><i>filename</i></ClLinks>. 
+A <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> is a structured <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> which represents a <GlossaryTerm  term={"filename"}><i>filename</i></GlossaryTerm>. 
 
 
 
-There are two kinds of <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks>—<GlossaryTerm styled={true} term={"physical pathname"}><i>physical pathnames</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathnames</i></GlossaryTerm>. 
+There are two kinds of <GlossaryTerm  term={"pathname"}><i>pathnames</i></GlossaryTerm>—<GlossaryTerm styled={true} term={"physical pathname"}><i>physical pathnames</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathnames</i></GlossaryTerm>. 
 
 
 

@@ -1,4 +1,4 @@
-**reduce** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**reduce** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> that might be called with either zero or two <ClLinks  term={"argument"}><i>arguments</i></ClLinks>. *sequence*—a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+<GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> that might be called with either zero or two <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm>. *sequence*—a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+<GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-*from-end*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*from-end*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-*initial-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*initial-value*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-*result*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*result*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -42,23 +42,19 @@
 
 
 
-<DictionaryLink  term={"reduce"}><b>reduce</b></DictionaryLink> uses a binary operation, <ClLinks  term={"function"}><i>function</i></ClLinks>, to combine the <ClLinks  term={"element"}><i>elements</i></ClLinks> of *sequence bounded* by *start* and *end*. 
+<DictionaryLink  term={"reduce"}><b>reduce</b></DictionaryLink> uses a binary operation, <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>, to combine the <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of *sequence bounded* by *start* and *end*. 
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> must accept as <ClLinks  term={"argument"}><i>arguments</i></ClLinks> two <ClLinks  term={"element"}><i>elements</i></ClLinks> of *sequence* or the results from combining those <ClLinks  term={"element"}><i>elements</i></ClLinks>. The <ClLinks  term={"function"}><i>function</i></ClLinks> must also be able to accept no arguments. 
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> must accept as <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> two <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of *sequence* or the results from combining those <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm>. The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> must also be able to accept no arguments. 
 
 
 
-If <ClLinks  term={"key"}><i>key</i></ClLinks> is supplied, it is used is used to extract the values to reduce. The <ClLinks  term={"key"}><i>key</i></ClLinks> function is applied exactly once to each element of *sequence* in the order implied by the reduction order but not to 
-
-
+If <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> is supplied, it is used is used to extract the values to reduce. The <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> function is applied exactly once to each element of *sequence* in the order implied by the reduction order but not to 
 
 
 
 
-
- 
 
 
 
@@ -66,19 +62,23 @@ If <ClLinks  term={"key"}><i>key</i></ClLinks> is supplied, it is used is used t
 
 
 
-the value of *initial-value*, if supplied. The <ClLinks  term={"key"}><i>key</i></ClLinks> function typically returns part of the <ClLinks  term={"element"}><i>element</i></ClLinks> of *sequence*. If <ClLinks  term={"key"}><i>key</i></ClLinks> is not supplied or is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the *sequence element* itself is used. 
+ 
 
 
 
-The reduction is left-associative, unless *from-end* is <ClLinks  term={"true"}><i>true</i></ClLinks> in which case it is right-associative. 
+the value of *initial-value*, if supplied. The <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> function typically returns part of the <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of *sequence*. If <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> is not supplied or is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the *sequence element* itself is used. 
 
 
 
-If *initial-value* is supplied, it is logically placed before the subsequence (or after it if *from-end* is <ClLinks  term={"true"}><i>true</i></ClLinks>) and included in the reduction operation. 
+The reduction is left-associative, unless *from-end* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> in which case it is right-associative. 
 
 
 
-In the normal case, the result of <DictionaryLink  term={"reduce"}><b>reduce</b></DictionaryLink> is the combined result of <ClLinks  term={"function"}><i>function</i></ClLinks>’s being applied to successive pairs of <ClLinks  term={"element"}><i>elements</i></ClLinks> of *sequence*. If the subsequence contains exactly one <ClLinks  term={"element"}><i>element</i></ClLinks> and no *initial-value* is given, then that <ClLinks  term={"element"}><i>element</i></ClLinks> is returned and <ClLinks  term={"function"}><i>function</i></ClLinks> is not called. If the subsequence is empty and an *initial-value* is given, then the *initial-value* is returned and <ClLinks  term={"function"}><i>function</i></ClLinks> is not called. If the subsequence is empty and no *initial-value* is given, then the <ClLinks  term={"function"}><i>function</i></ClLinks> is called with zero arguments, and <DictionaryLink  term={"reduce"}><b>reduce</b></DictionaryLink> returns whatever <ClLinks  term={"function"}><i>function</i></ClLinks> does. This is the only case where the <ClLinks  term={"function"}><i>function</i></ClLinks> is called with other than two arguments. 
+If *initial-value* is supplied, it is logically placed before the subsequence (or after it if *from-end* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>) and included in the reduction operation. 
+
+
+
+In the normal case, the result of <DictionaryLink  term={"reduce"}><b>reduce</b></DictionaryLink> is the combined result of <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>’s being applied to successive pairs of <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of *sequence*. If the subsequence contains exactly one <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> and no *initial-value* is given, then that <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> is returned and <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is not called. If the subsequence is empty and an *initial-value* is given, then the *initial-value* is returned and <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is not called. If the subsequence is empty and no *initial-value* is given, then the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is called with zero arguments, and <DictionaryLink  term={"reduce"}><b>reduce</b></DictionaryLink> returns whatever <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> does. This is the only case where the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is called with other than two arguments. 
 
 
 
@@ -104,7 +104,7 @@ In the normal case, the result of <DictionaryLink  term={"reduce"}><b>reduce</b>
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should be prepared to signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 

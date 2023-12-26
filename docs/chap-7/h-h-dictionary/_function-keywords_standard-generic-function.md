@@ -14,7 +14,7 @@
 
 
 
-<DictionaryLink  term={"function-keywords"}><b>function-keywords</b></DictionaryLink> (<ClLinks  term={"method"}><i>method</i></ClLinks> <DictionaryLink  term={"standard-method"}><b>standard-method</b></DictionaryLink>) 
+<DictionaryLink  term={"function-keywords"}><b>function-keywords</b></DictionaryLink> (<GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> <DictionaryLink  term={"standard-method"}><b>standard-method</b></DictionaryLink>) 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-<ClLinks  term={"method"}><i>method</i></ClLinks>—a <ClLinks  term={"method"}><i>method</i></ClLinks>. 
+<GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm>—a <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"key"}><i>keys</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
+<GlossaryTerm  term={"key"}><i>keys</i></GlossaryTerm>—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
@@ -38,11 +38,11 @@
 
 
 
-Returns the keyword parameter specifiers for a <ClLinks  term={"method"}><i>method</i></ClLinks>. 
+Returns the keyword parameter specifiers for a <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm>. 
 
 
 
-Two values are returned: a <ClLinks  term={"list"}><i>list</i></ClLinks> of the explicitly named keywords and a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> that states whether **&amp;allow-other-keys** had been specified in the <ClLinks  term={"method"}><i>method</i></ClLinks> definition. 
+Two values are returned: a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of the explicitly named keywords and a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> that states whether **&amp;allow-other-keys** had been specified in the <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> definition. 
 
 
 

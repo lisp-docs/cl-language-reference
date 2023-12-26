@@ -1,4 +1,4 @@
-**symbol-plist** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**symbol-plist** <GlossaryTerm  term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -10,7 +10,7 @@
 
 
 
-<!-- **(setf (symbol-plist** <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>**)** *new-plist<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
+<!-- **(setf (symbol-plist** <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>**)** *new-plist<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
 **(setf (symbol-plist** *symbol***)** *new-plist***)** 
 
 
@@ -19,11 +19,11 @@
 
 
 
-<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"plist"}><i>plist</i></ClLinks>, *new-plist*—a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>. 
+<GlossaryTerm  term={"plist"}><i>plist</i></GlossaryTerm>, *new-plist*—a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>. 
 
 
 
@@ -31,7 +31,7 @@
 
 
 
-*Accesses* the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+*Accesses* the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> of <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is not a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -66,7 +66,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <Diction
 
 
 
-The use of <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> should be avoided, since a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> is a global resource that can contain information established and depended upon by unrelated programs in the same *Lisp image*. 
+The use of <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> should be avoided, since a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>’s <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> is a global resource that can contain information established and depended upon by unrelated programs in the same *Lisp image*. 
 
 
 

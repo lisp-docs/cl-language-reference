@@ -7,35 +7,31 @@ sidebar_position: 118
 
 
 
-**valid array dimension** *n.* a <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks> suitable for use as an *array dimension*. 
+**valid array dimension** *n.* a <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm> suitable for use as an *array dimension*. 
 
 
 
-Such a <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks> must be greater than or equal to zero, and less than the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"array-dimension-limit"}><b>array-dimension-limit</b></DictionaryLink>. When multiple *array dimensions* are to be used together to specify a multi-dimensional <ClLinks  term={"array"}><i>array</i></ClLinks>, there is also an implied constraint that the product of all of the <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> be less than the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"array-total-size-limit"}><b>array-total-size-limit</b></DictionaryLink>. 
+Such a <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm> must be greater than or equal to zero, and less than the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink  term={"array-dimension-limit"}><b>array-dimension-limit</b></DictionaryLink>. When multiple *array dimensions* are to be used together to specify a multi-dimensional <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>, there is also an implied constraint that the product of all of the <GlossaryTerm  term={"dimension"}><i>dimensions</i></GlossaryTerm> be less than the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink  term={"array-total-size-limit"}><b>array-total-size-limit</b></DictionaryLink>. 
 
 
 
-**valid array index** *n.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) a <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks> suitable for use as one of possibly several indices needed to name an <ClLinks  term={"element"}><i>element</i></ClLinks> of the <ClLinks  term={"array"}><i>array</i></ClLinks> according to a multi-dimensional Cartesian coordinate system. Such a <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks> must be greater than or equal to zero, and must be less than the corresponding <ClLinks  term={"dimension"}><i>dimension</i></ClLinks><sub>1</sub> of the <ClLinks  term={"array"}><i>array</i></ClLinks>. (Unless otherwise explicitly specified, the phrase “a <ClLinks  term={"list"}><i>list</i></ClLinks> of *valid array indices*” further implies that the <ClLinks  term={"length"}><i>length</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks> must be the same as the <ClLinks  term={"rank"}><i>rank</i></ClLinks> of the <ClLinks  term={"array"}><i>array</i></ClLinks>.) “For a 2 by 3 array, valid array indices for the first dimension are 0 and 1, and valid array indices for the second dimension are 0, 1 and 2.” 
+**valid array index** *n.* (of an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>) a <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm> suitable for use as one of possibly several indices needed to name an <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> according to a multi-dimensional Cartesian coordinate system. Such a <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm> must be greater than or equal to zero, and must be less than the corresponding <GlossaryTerm  term={"dimension"}><i>dimension</i></GlossaryTerm><sub>1</sub> of the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. (Unless otherwise explicitly specified, the phrase “a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of *valid array indices*” further implies that the <GlossaryTerm  term={"length"}><i>length</i></GlossaryTerm> of the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> must be the same as the <GlossaryTerm  term={"rank"}><i>rank</i></GlossaryTerm> of the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>.) “For a 2 by 3 array, valid array indices for the first dimension are 0 and 1, and valid array indices for the second dimension are 0, 1 and 2.” 
 
 
 
-**valid array row-major index** *n.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>, which might have any number of <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks><sub>2</sub>) a single <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks> suitable for use in naming any <ClLinks  term={"element"}><i>element</i></ClLinks> of the <ClLinks  term={"array"}><i>array</i></ClLinks>, by viewing the array’s storage as a linear series of <ClLinks  term={"element"}><i>elements</i></ClLinks> in row-major order. Such a <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks> must be greater than or equal to zero, and less than the <GlossaryTerm styled={true} term={"array total size"}><i>array total size</i></GlossaryTerm> of the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+**valid array row-major index** *n.* (of an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>, which might have any number of <GlossaryTerm  term={"dimension"}><i>dimensions</i></GlossaryTerm><sub>2</sub>) a single <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm> suitable for use in naming any <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>, by viewing the array’s storage as a linear series of <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> in row-major order. Such a <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm> must be greater than or equal to zero, and less than the <GlossaryTerm styled={true} term={"array total size"}><i>array total size</i></GlossaryTerm> of the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-**valid fill pointer** *n.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) a <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks> suitable for use as a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> for the <ClLinks  term={"array"}><i>array</i></ClLinks>. Such a <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks> must be greater than or equal to zero, and less than or equal to the <GlossaryTerm styled={true} term={"array total size"}><i>array total size</i></GlossaryTerm> of the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+**valid fill pointer** *n.* (of an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>) a <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm> suitable for use as a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> for the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. Such a <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm> must be greater than or equal to zero, and less than or equal to the <GlossaryTerm styled={true} term={"array total size"}><i>array total size</i></GlossaryTerm> of the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 
-**valid logical pathname host** *n.* a <ClLinks  term={"string"}><i>string</i></ClLinks> that has been defined as the name of a <GlossaryTerm styled={true} term={"logical host"}><i>logical host</i></GlossaryTerm>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> **load-logical-pathname-translations**. 
-
-
+**valid logical pathname host** *n.* a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> that has been defined as the name of a <GlossaryTerm styled={true} term={"logical host"}><i>logical host</i></GlossaryTerm>. See the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> **load-logical-pathname-translations**. 
 
 
 
 
-
- 
 
 
 
@@ -43,11 +39,15 @@ Such a <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks> must be greater than or
 
 
 
-**valid pathname device** *n.* a <ClLinks  term={"string"}><i>string</i></ClLinks>, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, :unspecific, or some other <ClLinks  term={"object"}><i>object</i></ClLinks> defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be a <GlossaryTerm styled={true} term={"valid pathname device"}><i>valid pathname device</i></GlossaryTerm>. 
+ 
 
 
 
-**valid pathname directory** *n.* a <ClLinks  term={"string"}><i>string</i></ClLinks>, a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"string"}><i>strings</i></ClLinks>, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, :wild, :unspecific, or some other <ClLinks  term={"object"}><i>object</i></ClLinks> defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be a *valid directory component*. 
+**valid pathname device** *n.* a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, :unspecific, or some other <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> defined by the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> to be a <GlossaryTerm styled={true} term={"valid pathname device"}><i>valid pathname device</i></GlossaryTerm>. 
+
+
+
+**valid pathname directory** *n.* a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>, a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm  term={"string"}><i>strings</i></GlossaryTerm>, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, :wild, :unspecific, or some other <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> defined by the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> to be a *valid directory component*. 
 
 
 
@@ -55,11 +55,11 @@ Such a <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks> must be greater than or
 
 
 
-**valid pathname name** *n.* a <ClLinks  term={"string"}><i>string</i></ClLinks>, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, :wild, :unspecific, or some other <ClLinks  term={"object"}><i>object</i></ClLinks> defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be a <GlossaryTerm styled={true} term={"valid pathname name"}><i>valid pathname name</i></GlossaryTerm>. 
+**valid pathname name** *n.* a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, :wild, :unspecific, or some other <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> defined by the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> to be a <GlossaryTerm styled={true} term={"valid pathname name"}><i>valid pathname name</i></GlossaryTerm>. 
 
 
 
-**valid pathname type** *n.* a <ClLinks  term={"string"}><i>string</i></ClLinks>, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, :wild, :unspecific. 
+**valid pathname type** *n.* a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, :wild, :unspecific. 
 
 
 
@@ -75,31 +75,31 @@ Such a <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks> must be greater than or
 
 
 
-**valid physical pathname host** *n.* any of a <ClLinks  term={"string"}><i>string</i></ClLinks>, a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"string"}><i>strings</i></ClLinks>, or the symbol :unspecific, that is recognized by the implementation as the name of a host. 
+**valid physical pathname host** *n.* any of a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>, a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm  term={"string"}><i>strings</i></GlossaryTerm>, or the symbol :unspecific, that is recognized by the implementation as the name of a host. 
 
 
 
-**valid sequence index** *n.* (of a *sequence*) an *integer* suitable for use to name an <ClLinks  term={"element"}><i>element</i></ClLinks> of the *sequence*. Such an *integer* must be greater than or equal to zero, and must be less than the <ClLinks  term={"length"}><i>length</i></ClLinks> of the *sequence*. (If the *sequence* is an <ClLinks  term={"array"}><i>array</i></ClLinks>, the <GlossaryTerm styled={true} term={"valid sequence index"}><i>valid sequence index</i></GlossaryTerm> is further constrained to be a <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>.) 
+**valid sequence index** *n.* (of a *sequence*) an *integer* suitable for use to name an <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of the *sequence*. Such an *integer* must be greater than or equal to zero, and must be less than the <GlossaryTerm  term={"length"}><i>length</i></GlossaryTerm> of the *sequence*. (If the *sequence* is an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"valid sequence index"}><i>valid sequence index</i></GlossaryTerm> is further constrained to be a <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm>.) 
 
 
 
-**value** *n.* 1. a. one of possibly several <ClLinks  term={"object"}><i>objects</i></ClLinks> that are the result of an <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks>. b. (in a situation where exactly one value is expected from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of a <ClLinks  term={"form"}><i>form</i></ClLinks>) the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> returned by the <ClLinks  term={"form"}><i>form</i></ClLinks>. c. (of <ClLinks  term={"form"}><i>forms</i></ClLinks> in an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>) one of possibly 
+**value** *n.* 1. a. one of possibly several <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> that are the result of an <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm>. b. (in a situation where exactly one value is expected from the <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>) the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> returned by the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. c. (of <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>) one of possibly 
 
 
 
-several <ClLinks  term={"object"}><i>objects</i></ClLinks> that result from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of the last <ClLinks  term={"form"}><i>form</i></ClLinks>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if there are no <ClLinks  term={"form"}><i>forms</i></ClLinks>. 2. an <ClLinks  term={"object"}><i>object</i></ClLinks> associated with a <ClLinks  term={"name"}><i>name</i></ClLinks> in a <ClLinks  term={"binding"}><i>binding</i></ClLinks>. 3. (of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> named by that symbol. 4. an <ClLinks  term={"object"}><i>object</i></ClLinks> associated with a <ClLinks  term={"key"}><i>key</i></ClLinks> in an <GlossaryTerm styled={true} term={"association list"}><i>association list</i></GlossaryTerm>, a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>, or a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
+several <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> that result from the <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of the last <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if there are no <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. 2. an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> associated with a <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> in a <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm>. 3. (of a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>) the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> named by that symbol. 4. an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> associated with a <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> in an <GlossaryTerm styled={true} term={"association list"}><i>association list</i></GlossaryTerm>, a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>, or a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
 
 
 
-**value cell** *n. Trad.* (of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) The <ClLinks  term={"place"}><i>place</i></ClLinks> which holds the <ClLinks  term={"value"}><i>value</i></ClLinks>, if any, of the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> named by that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, and which is *accessed* by <DictionaryLink  term={"symbol-value"}><b>symbol-value</b></DictionaryLink>. See <ClLinks  term={"cell"}><i>cell</i></ClLinks>. 
+**value cell** *n. Trad.* (of a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>) The <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> which holds the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>, if any, of the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> named by that <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, and which is *accessed* by <DictionaryLink  term={"symbol-value"}><b>symbol-value</b></DictionaryLink>. See <GlossaryTerm  term={"cell"}><i>cell</i></GlossaryTerm>. 
 
 
 
-**variable** *n.* a <ClLinks  term={"binding"}><i>binding</i></ClLinks> in the “variable” <ClLinks  term={"namespace"}><i>namespace</i></ClLinks>. See Section 3.1.2.1.1 (Symbols as Forms). 
+**variable** *n.* a <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> in the “variable” <GlossaryTerm  term={"namespace"}><i>namespace</i></GlossaryTerm>. See Section 3.1.2.1.1 (Symbols as Forms). 
 
 
 
-<DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink> *n.* a one-dimensional <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+<DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink> *n.* a one-dimensional <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>. 
 
 
 

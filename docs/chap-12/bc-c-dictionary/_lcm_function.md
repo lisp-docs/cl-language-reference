@@ -1,4 +1,4 @@
-**lcm** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**lcm** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 

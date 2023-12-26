@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink> consists of error conditions that occur during arithmetic operations. The operation and operands are initialized with the initialization arguments named :operation and :operands to <DictionaryLink  term={"make-condition"}><b>make-condition</b></DictionaryLink>, and are *accessed* by the functions **arithmetic-error-operation** and **arithmetic-error-operands**. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink> consists of error conditions that occur during arithmetic operations. The operation and operands are initialized with the initialization arguments named :operation and :operands to <DictionaryLink  term={"make-condition"}><b>make-condition</b></DictionaryLink>, and are *accessed* by the functions **arithmetic-error-operation** and **arithmetic-error-operands**. 
 
 
 
@@ -46,11 +46,11 @@ The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"arithm
 
 
 
-<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>. 
+<GlossaryTerm  term={"condition"}><i>condition</i></GlossaryTerm>—a <GlossaryTerm  term={"condition"}><i>condition</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>. 
 
 
 
-*operands*—a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
+*operands*—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
@@ -62,7 +62,7 @@ The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"arithm
 
 
 
-**arithmetic-error-operands** returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of the operands which were used in the o↵ending call to the operation that signaled the <ClLinks  term={"condition"}><i>condition</i></ClLinks>. 
+**arithmetic-error-operands** returns a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of the operands which were used in the o↵ending call to the operation that signaled the <GlossaryTerm  term={"condition"}><i>condition</i></GlossaryTerm>. 
 
 
 
@@ -78,7 +78,7 @@ The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"arithm
 
 
 
-**arithmetic-error-operation** returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of the o↵ending operation in the o↵ending call that signaled the <ClLinks  term={"condition"}><i>condition</i></ClLinks>. 
+**arithmetic-error-operation** returns a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of the o↵ending operation in the o↵ending call that signaled the <GlossaryTerm  term={"condition"}><i>condition</i></GlossaryTerm>. 
 
 
 

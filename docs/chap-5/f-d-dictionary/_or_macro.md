@@ -1,20 +1,20 @@
-**or** <ClLinks  term={"macro"}><i>Macro</i></ClLinks>
+**or** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm>
 
 **Syntax:**
 
-<DictionaryLink  term={"or"}><b>or</b></DictionaryLink> <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{results\}\*
+<DictionaryLink  term={"or"}><b>or</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\* → \{results\}\*
 
 **Arguments and Values:**
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>.
+<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>.
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> or <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> (see below) resulting from the evaluation of the last <ClLinks  term={"form"}><i>form</i></ClLinks> executed or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>.
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> (see below) resulting from the evaluation of the last <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> executed or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>.
 
 **Description:**
 
-<DictionaryLink  term={"or"}><b>or</b></DictionaryLink> evaluates each <ClLinks  term={"form"}><i>form</i></ClLinks>, one at a time, from left to right. The evaluation of all <ClLinks  term={"form"}><i>forms</i></ClLinks> terminates when a <ClLinks  term={"form"}><i>form</i></ClLinks> evaluates to <ClLinks  term={"true"}><i>true</i></ClLinks> (*i.e.*, something other than <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>).
+<DictionaryLink  term={"or"}><b>or</b></DictionaryLink> evaluates each <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, one at a time, from left to right. The evaluation of all <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> terminates when a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> evaluates to <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> (*i.e.*, something other than <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>).
 
-If the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of any <ClLinks  term={"form"}><i>form</i></ClLinks> other than the last returns a <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> that is <ClLinks  term={"true"}><i>true</i></ClLinks>, <DictionaryLink  term={"or"}><b>or</b></DictionaryLink> immediately returns that <ClLinks  term={"value"}><i>value</i></ClLinks> (but no additional <ClLinks  term={"value"}><i>values</i></ClLinks>) without evaluating the remaining <ClLinks  term={"form"}><i>forms</i></ClLinks>. If every <ClLinks  term={"form"}><i>form</i></ClLinks> but the last returns <ClLinks  term={"false"}><i>false</i></ClLinks> as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>, <DictionaryLink  term={"or"}><b>or</b></DictionaryLink> returns all <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the last <ClLinks  term={"form"}><i>form</i></ClLinks>. If no <ClLinks  term={"form"}><i>forms</i></ClLinks> are supplied, <DictionaryLink  term={"or"}><b>or</b></DictionaryLink> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>.
+If the <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of any <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> other than the last returns a <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> that is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, <DictionaryLink  term={"or"}><b>or</b></DictionaryLink> immediately returns that <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> (but no additional <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm>) without evaluating the remaining <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. If every <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> but the last returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>, <DictionaryLink  term={"or"}><b>or</b></DictionaryLink> returns all <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by the last <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. If no <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> are supplied, <DictionaryLink  term={"or"}><b>or</b></DictionaryLink> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>.
 
 **Examples:**
 

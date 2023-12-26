@@ -1,4 +1,4 @@
-**package-nicknames** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**package-nicknames** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 
-<ClLinks  term={"nickname"}><i>nicknames</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
+<GlossaryTerm  term={"nickname"}><i>nicknames</i></GlossaryTerm>—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm  term={"string"}><i>strings</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the <ClLinks  term={"list"}><i>list</i></ClLinks> of nickname <ClLinks  term={"string"}><i>strings</i></ClLinks> for <ClLinks  term={"package"}><i>package</i></ClLinks>, not including the name of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+Returns the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of nickname <GlossaryTerm  term={"string"}><i>strings</i></GlossaryTerm> for <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, not including the name of <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 **Examples:**
 ```lisp
@@ -38,7 +38,7 @@ Returns the <ClLinks  term={"list"}><i>list</i></ClLinks> of nickname <ClLinks  
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 

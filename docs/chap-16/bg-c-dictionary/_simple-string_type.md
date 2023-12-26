@@ -1,4 +1,4 @@
-**simple-string** <ClLinks  term={"type"}><i>Type</i></ClLinks> 
+**simple-string** <GlossaryTerm  term={"type"}><i>Type</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A <GlossaryTerm styled={true} term={"simple string"}><i>simple string</i></GlossaryTerm> is a specialized one-dimensional <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm> whose <ClLinks  term={"element"}><i>elements</i></ClLinks> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"character"}><b>character</b></DictionaryLink> or a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>. When used as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for object creation, <DictionaryLink  term={"simple-string"}><b>simple-string</b></DictionaryLink> means (simple-array character (*size*)). 
+A <GlossaryTerm styled={true} term={"simple string"}><i>simple string</i></GlossaryTerm> is a specialized one-dimensional <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm> whose <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> are of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"character"}><b>character</b></DictionaryLink> or a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>. When used as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for object creation, <DictionaryLink  term={"simple-string"}><b>simple-string</b></DictionaryLink> means (simple-array character (*size*)). 
 
 
 
@@ -38,7 +38,7 @@ Abbreviating.
 
 
 
-*size*—a non-negative <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>, or the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*size*—a non-negative <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm>, or the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> **\***. 
 
 
 
@@ -46,7 +46,7 @@ Abbreviating.
 
 
 
-This denotes the union of all <ClLinks  term={"type"}><i>types</i></ClLinks> (simple-array *c* (*size*)) for all *subtypes c* of <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>; that is, the set of <GlossaryTerm styled={true} term={"simple string"}><i>simple strings</i></GlossaryTerm> of size *size*. 
+This denotes the union of all <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> (simple-array *c* (*size*)) for all *subtypes c* of <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>; that is, the set of <GlossaryTerm styled={true} term={"simple string"}><i>simple strings</i></GlossaryTerm> of size *size*. 
 
 
 

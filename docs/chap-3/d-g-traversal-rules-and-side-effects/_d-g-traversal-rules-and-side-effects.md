@@ -2,7 +2,7 @@
 
 
 
-The consequences are undefined when <ClLinks  term={"code"}><i>code</i></ClLinks> executed during an <ClLinks  term={"object-traversing"}><i>object-traversing</i></ClLinks> operation destructively modifies the <ClLinks  term={"object"}><i>object</i></ClLinks> in a way that might affect the ongoing traversal operation. In particular, the following rules apply. 
+The consequences are undefined when <GlossaryTerm  term={"code"}><i>code</i></GlossaryTerm> executed during an <GlossaryTerm  term={"object-traversing"}><i>object-traversing</i></GlossaryTerm> operation destructively modifies the <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> in a way that might affect the ongoing traversal operation. In particular, the following rules apply. 
 
 
 
@@ -10,7 +10,7 @@ The consequences are undefined when <ClLinks  term={"code"}><i>code</i></ClLinks
 
 
 
-For <ClLinks  term={"list"}><i>list</i></ClLinks> traversal operations, the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> chain of the <ClLinks  term={"list"}><i>list</i></ClLinks> is not allowed to be destructively modified. 
+For <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> traversal operations, the <GlossaryTerm  term={"cdr"}><i>cdr</i></GlossaryTerm> chain of the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> is not allowed to be destructively modified. 
 
 
 
@@ -18,7 +18,7 @@ For <ClLinks  term={"list"}><i>list</i></ClLinks> traversal operations, the <ClL
 
 
 
-For <ClLinks  term={"array"}><i>array</i></ClLinks> traversal operations, the <ClLinks  term={"array"}><i>array</i></ClLinks> is not allowed to be adjusted and its <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , if any, is not allowed to be changed. 
+For <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> traversal operations, the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> is not allowed to be adjusted and its <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , if any, is not allowed to be changed. 
 
 
 
@@ -34,7 +34,7 @@ For <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryT
 
 
 
-For <ClLinks  term={"package"}><i>package</i></ClLinks> traversal operations (*e.g.*, <DictionaryLink  term={"do-symbols"}><b>do-symbols</b></DictionaryLink>), new <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> may not be <ClLinks  term={"interned"}><i>interned</i></ClLinks> in or <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> from the <ClLinks  term={"package"}><i>package</i></ClLinks> being traversed or any <ClLinks  term={"package"}><i>package</i></ClLinks> that it uses except that the current <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> may be <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> from the <ClLinks  term={"package"}><i>package</i></ClLinks> being traversed.  
+For <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> traversal operations (*e.g.*, <DictionaryLink  term={"do-symbols"}><b>do-symbols</b></DictionaryLink>), new <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> may not be <GlossaryTerm  term={"interned"}><i>interned</i></GlossaryTerm> in or <GlossaryTerm  term={"uninterned"}><i>uninterned</i></GlossaryTerm> from the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> being traversed or any <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> that it uses except that the current <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> may be <GlossaryTerm  term={"uninterned"}><i>uninterned</i></GlossaryTerm> from the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> being traversed.  
 
 
 

@@ -1,4 +1,4 @@
-**position, position-if, position-if-not** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**position, position-if, position-if-not** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*item*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*item*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
+<GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm>—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of one argument that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-*from-end*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*from-end*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-*test*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. *test-not<ClLinks  term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
+*test*—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. *test-not<ClLinks  term={"t"}><i>—a </i></ClLinks>designator* for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+<GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -66,11 +66,11 @@
 
 
 
-<DictionaryLink  term={"position"}><b>position</b></DictionaryLink>, <DictionaryLink  term={"position-if"}><b>position-if</b></DictionaryLink>, and <DictionaryLink  term={"position-if-not"}><b>position-if-not</b></DictionaryLink> each search *sequence* for an <ClLinks  term={"element"}><i>element</i></ClLinks> that *satisfies the test*. 
+<DictionaryLink  term={"position"}><b>position</b></DictionaryLink>, <DictionaryLink  term={"position-if"}><b>position-if</b></DictionaryLink>, and <DictionaryLink  term={"position-if-not"}><b>position-if-not</b></DictionaryLink> each search *sequence* for an <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> that *satisfies the test*. 
 
 
 
-The *position* returned is the index within *sequence* of the leftmost (if *from-end* is <ClLinks  term={"true"}><i>true</i></ClLinks>) or of the rightmost (if *from-end* is <ClLinks  term={"false"}><i>false</i></ClLinks>) <ClLinks  term={"element"}><i>element</i></ClLinks> that *satisfies the test*; otherwise <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is returned. The index returned is relative to the left-hand end of the entire *sequence*, regardless of the value of *start*, *end*, or *from-end*. 
+The *position* returned is the index within *sequence* of the leftmost (if *from-end* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>) or of the rightmost (if *from-end* is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>) <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> that *satisfies the test*; otherwise <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is returned. The index returned is relative to the left-hand end of the entire *sequence*, regardless of the value of *start*, *end*, or *from-end*. 
 
 
 
@@ -85,7 +85,7 @@ The *position* returned is the index within *sequence* of the leftmost (if *from
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should be prepared to signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
@@ -101,11 +101,11 @@ Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-The :test-not <ClLinks  term={"argument"}><i>argument</i></ClLinks> is deprecated. 
+The :test-not <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> is deprecated. 
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"position-if-not"}><b>position-if-not</b></DictionaryLink> is deprecated. 
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"position-if-not"}><b>position-if-not</b></DictionaryLink> is deprecated. 
 
 
 

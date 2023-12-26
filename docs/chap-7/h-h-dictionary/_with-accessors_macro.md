@@ -1,4 +1,4 @@
-**with-accessors** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**with-accessors** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"with-accessors"}><b>with-accessors</b></DictionaryLink> (*\{slot-entry\}*\*) *instance-form \{declaration\}*\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink  term={"with-accessors"}><b>with-accessors</b></DictionaryLink> (*\{slot-entry\}*\*) *instance-form \{declaration\}*\* <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\* 
 
 
 
@@ -30,19 +30,19 @@
 
 
 
-*instance-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated. 
+*instance-form*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated. 
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
+<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-Creates a lexical environment in which the slots specified by *slot-entry* are lexically available through their accessors as if they were variables. The macro <DictionaryLink  term={"with-accessors"}><b>with-accessors</b></DictionaryLink> invokes the appropriate accessors to <ClLinks  term={"access"}><i>access</i></ClLinks> the <ClLinks  term={"slot"}><i>slots</i></ClLinks> specified by *slot-entry*. Both <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> and <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> can be used to set the value of the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
+Creates a lexical environment in which the slots specified by *slot-entry* are lexically available through their accessors as if they were variables. The macro <DictionaryLink  term={"with-accessors"}><b>with-accessors</b></DictionaryLink> invokes the appropriate accessors to <GlossaryTerm  term={"access"}><i>access</i></GlossaryTerm> the <GlossaryTerm  term={"slot"}><i>slots</i></GlossaryTerm> specified by *slot-entry*. Both <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> and <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> can be used to set the value of the <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm>. 
 
 
 
@@ -113,7 +113,7 @@ Creates a lexical environment in which the slots specified by *slot-entry* are l
 
 
 
-The consequences are undefined if any *accessor-name* is not the name of an accessor for the <ClLinks  term={"instance"}><i>instance</i></ClLinks>. 
+The consequences are undefined if any *accessor-name* is not the name of an accessor for the <GlossaryTerm  term={"instance"}><i>instance</i></GlossaryTerm>. 
 
 
 

@@ -1,4 +1,4 @@
-**prog1, prog2** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**prog1, prog2** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -18,19 +18,19 @@
 
 
 
-*first-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
+*first-form*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated as described below. 
 
 
 
-*second-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
+*second-form*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated as described below. 
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>; evaluated as described below. 
+<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>; evaluated as described below. 
 
 
 
-*result-1*—the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of *first-form*. 
+*result-1*—the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> resulting from the <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of *first-form*. 
 
 
 
@@ -50,7 +50,7 @@ Data and Control
 
 
 
-*result-2*—the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of *second-form*. 
+*result-2*—the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> resulting from the <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of *second-form*. 
 
 
 
@@ -58,11 +58,11 @@ Data and Control
 
 
 
-<DictionaryLink  term={"prog1"}><b>prog1</b></DictionaryLink> *evaluates first-form* and then <ClLinks  term={"form"}><i>forms</i></ClLinks>, *yielding* as its only <ClLinks  term={"value"}><i>value</i></ClLinks> the *primary value yielded* by *first-form*. 
+<DictionaryLink  term={"prog1"}><b>prog1</b></DictionaryLink> *evaluates first-form* and then <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>, *yielding* as its only <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> the *primary value yielded* by *first-form*. 
 
 
 
-<DictionaryLink  term={"prog2"}><b>prog2</b></DictionaryLink> *evaluates first-form*, then *second-form*, and then <ClLinks  term={"form"}><i>forms</i></ClLinks>, *yielding* as its only <ClLinks  term={"value"}><i>value</i></ClLinks> the *primary value yielded* by *first-form*. 
+<DictionaryLink  term={"prog2"}><b>prog2</b></DictionaryLink> *evaluates first-form*, then *second-form*, and then <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>, *yielding* as its only <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> the *primary value yielded* by *first-form*. 
 
 
 
@@ -105,15 +105,15 @@ temp *!* 4
 
 
 
-<DictionaryLink  term={"prog1"}><b>prog1</b></DictionaryLink> and <DictionaryLink  term={"prog2"}><b>prog2</b></DictionaryLink> are typically used to <ClLinks  term={"evaluate"}><i>evaluate</i></ClLinks> one or more <ClLinks  term={"form"}><i>forms</i></ClLinks> with side e↵ects and return a <ClLinks  term={"value"}><i>value</i></ClLinks> that must be computed before some or all of the side e↵ects happen. 
+<DictionaryLink  term={"prog1"}><b>prog1</b></DictionaryLink> and <DictionaryLink  term={"prog2"}><b>prog2</b></DictionaryLink> are typically used to <GlossaryTerm  term={"evaluate"}><i>evaluate</i></GlossaryTerm> one or more <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> with side e↵ects and return a <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> that must be computed before some or all of the side e↵ects happen. 
 
 
 
-(prog1 <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\*) *⌘* (values (multiple-value-prog1 <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\*)) 
+(prog1 <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\*) *⌘* (values (multiple-value-prog1 <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\*)) 
 
 
 
-(prog2 *form1 \{form\}*\*) *⌘* (let () *form1* (prog1 <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\*)) 
+(prog2 *form1 \{form\}*\*) *⌘* (let () *form1* (prog1 <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\*)) 
 
 
 

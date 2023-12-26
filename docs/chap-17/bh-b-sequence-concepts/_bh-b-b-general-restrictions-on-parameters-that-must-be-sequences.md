@@ -2,7 +2,7 @@
 
 
 
-In general, <ClLinks  term={"list"}><i>lists</i></ClLinks> (including <GlossaryTerm styled={true} term={"association list"}><i>association lists</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"property list"}><i>property lists</i></GlossaryTerm>) that are treated as *sequences* must be <GlossaryTerm styled={true} term={"proper list"}><i>proper lists</i></GlossaryTerm>. 
+In general, <GlossaryTerm  term={"list"}><i>lists</i></GlossaryTerm> (including <GlossaryTerm styled={true} term={"association list"}><i>association lists</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"property list"}><i>property lists</i></GlossaryTerm>) that are treated as *sequences* must be <GlossaryTerm styled={true} term={"proper list"}><i>proper lists</i></GlossaryTerm>. 
 
 
 

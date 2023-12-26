@@ -1,4 +1,4 @@
-**parse-namestring** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**parse-namestring** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*thing*—a <ClLinks  term={"string"}><i>string</i></ClLinks>, a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, or a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm>. 
+*thing*—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>, a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>, or a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*default-pathname*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . The default is the <ClLinks  term={"value"}><i>value</i></ClLinks> of 
+*default-pathname*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . The default is the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of 
 
 
 
@@ -50,11 +50,11 @@
 
 
 
-*junk-allowed*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*junk-allowed*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+<GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>—a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -66,7 +66,7 @@
 
 
 
-Converts *thing* into a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+Converts *thing* into a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>. 
 
 
 
@@ -74,19 +74,19 @@ The *host* supplies a host name with respect to which the parsing occurs.
 
 
 
-If *thing* is a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm>, processing proceeds as if the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> used to open that <ClLinks  term={"file"}><i>file</i></ClLinks> had been supplied instead. 
+If *thing* is a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm>, processing proceeds as if the <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> used to open that <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> had been supplied instead. 
 
 
 
-If *thing* is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, the *host* and the host component of *thing* are compared. If they match, two values are immediately returned: *thing* and *start*; otherwise (if they do not match), an error is signaled. 
+If *thing* is a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>, the *host* and the host component of *thing* are compared. If they match, two values are immediately returned: *thing* and *start*; otherwise (if they do not match), an error is signaled. 
 
 
 
-Otherwise (if *thing* is a <ClLinks  term={"string"}><i>string</i></ClLinks>), <DictionaryLink  term={"parse-namestring"}><b>parse-namestring</b></DictionaryLink> parses the name of a <ClLinks  term={"file"}><i>file</i></ClLinks> within the substring of *thing* bounded by *start* and *end*. 
+Otherwise (if *thing* is a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>), <DictionaryLink  term={"parse-namestring"}><b>parse-namestring</b></DictionaryLink> parses the name of a <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> within the substring of *thing* bounded by *start* and *end*. 
 
 
 
-If *thing* is a <ClLinks  term={"string"}><i>string</i></ClLinks> then the substring of *thing bounded* by *start* and *end* is parsed into a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> as follows: 
+If *thing* is a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> then the substring of *thing bounded* by *start* and *end* is parsed into a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> as follows: 
 
 
 
@@ -102,11 +102,11 @@ If *thing* is a <ClLinks  term={"string"}><i>string</i></ClLinks> then the subst
 
 
 
-*•* Otherwise, the parsing of *thing* is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
+*•* Otherwise, the parsing of *thing* is <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>. 
 
 
 
-In the first of these cases, the host portion of the <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> namestring and its following <ClLinks  term={"colon"}><i>colon</i></ClLinks> are optional. 
+In the first of these cases, the host portion of the <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> namestring and its following <GlossaryTerm  term={"colon"}><i>colon</i></GlossaryTerm> are optional. 
 
 
 
@@ -114,7 +114,7 @@ If the host portion of the namestring and *host* are both present and do not mat
 
 
 
-If *junk-allowed* is <ClLinks  term={"true"}><i>true</i></ClLinks>, then the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> is the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> parsed or, if no syntactically correct <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> was seen, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. If *junk-allowed* is <ClLinks  term={"false"}><i>false</i></ClLinks>, then the entire substring is scanned, and the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> is the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> parsed. 
+If *junk-allowed* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, then the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> is the <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> parsed or, if no syntactically correct <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> was seen, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. If *junk-allowed* is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>, then the entire substring is scanned, and the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> is the <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> parsed. 
 
 
 
@@ -130,15 +130,15 @@ In either case, the <GlossaryTerm styled={true} term={"secondary value"}><i>seco
 
 
 
-parse, or the index beyond the substring if the parse terminated at the end of the substring (as will always be the case if *junk-allowed* is <ClLinks  term={"false"}><i>false</i></ClLinks>). 
+parse, or the index beyond the substring if the parse terminated at the end of the substring (as will always be the case if *junk-allowed* is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>). 
 
 
 
-Parsing a *null string* always succeeds, producing a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> with all components (except the host) equal to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+Parsing a *null string* always succeeds, producing a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> with all components (except the host) equal to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-If *thing* contains an explicit host name and no explicit device name, then it is *implementation defined* whether <DictionaryLink  term={"parse-namestring"}><b>parse-namestring</b></DictionaryLink> will supply the standard default device for that host as the device component of the resulting <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+If *thing* contains an explicit host name and no explicit device name, then it is *implementation defined* whether <DictionaryLink  term={"parse-namestring"}><b>parse-namestring</b></DictionaryLink> will supply the standard default device for that host as the device component of the resulting <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>. 
 
 
 
@@ -164,15 +164,15 @@ If *thing* contains an explicit host name and no explicit device name, then it i
 
 
 
-If *junk-allowed* is <ClLinks  term={"false"}><i>false</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"parse-error"}><b>parse-error</b></DictionaryLink> is signaled if *thing* does not consist entirely of the representation of a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, possibly surrounded on either side by <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> characters if that is appropriate to the cultural conventions of the implementation. 
+If *junk-allowed* is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"parse-error"}><b>parse-error</b></DictionaryLink> is signaled if *thing* does not consist entirely of the representation of a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>, possibly surrounded on either side by <GlossaryTerm  term={"whitespace"}><i>whitespace</i></GlossaryTerm><sub>1</sub> characters if that is appropriate to the cultural conventions of the implementation. 
 
 
 
-If *host* is supplied and not <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, and *thing* contains a manifest host name, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled if the hosts do not match. 
+If *host* is supplied and not <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, and *thing* contains a manifest host name, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled if the hosts do not match. 
 
 
 
-If *thing* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> namestring and if the host portion of the namestring and *host* are both present and do not match, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
+If *thing* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> namestring and if the host portion of the namestring and *host* are both present and do not match, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 

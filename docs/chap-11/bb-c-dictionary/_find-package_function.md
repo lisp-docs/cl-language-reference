@@ -1,4 +1,4 @@
-**find-package** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**find-package** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> or a *package object*. 
+<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> or a *package object*. 
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package object* or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>—a *package object* or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-If <ClLinks  term={"name"}><i>name</i></ClLinks> is a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> , <DictionaryLink  term={"find-package"}><b>find-package</b></DictionaryLink> locates and returns the <ClLinks  term={"package"}><i>package</i></ClLinks> whose name or nickname is <ClLinks  term={"name"}><i>name</i></ClLinks>. This search is case sensitive. If there is no such <ClLinks  term={"package"}><i>package</i></ClLinks>, <DictionaryLink  term={"find-package"}><b>find-package</b></DictionaryLink> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+If <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> , <DictionaryLink  term={"find-package"}><b>find-package</b></DictionaryLink> locates and returns the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> whose name or nickname is <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>. This search is case sensitive. If there is no such <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, <DictionaryLink  term={"find-package"}><b>find-package</b></DictionaryLink> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-If <ClLinks  term={"name"}><i>name</i></ClLinks> is a *package object*, that *package object* is returned. 
+If <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> is a *package object*, that *package object* is returned. 
 
 
 
@@ -44,7 +44,7 @@ If <ClLinks  term={"name"}><i>name</i></ClLinks> is a *package object*, that *pa
 
 
 
-The set of <ClLinks  term={"package"}><i>packages</i></ClLinks> created by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+The set of <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> created by the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 

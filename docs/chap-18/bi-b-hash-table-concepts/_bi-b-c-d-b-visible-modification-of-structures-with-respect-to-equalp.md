@@ -2,7 +2,7 @@
 
 
 
-Any visible change to a <ClLinks  term={"slot"}><i>slot</i></ClLinks> of a <ClLinks  term={"structure"}><i>structure</i></ClLinks> is considered a visible modification with regard to <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink>. 
+Any visible change to a <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm> of a <GlossaryTerm  term={"structure"}><i>structure</i></GlossaryTerm> is considered a visible modification with regard to <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink>. 
 
 
 

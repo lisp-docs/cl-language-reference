@@ -1,4 +1,4 @@
-**minusp, plusp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**minusp, plusp** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-<DictionaryLink  term={"minusp"}><b>minusp</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if *real* is less than zero; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+<DictionaryLink  term={"minusp"}><b>minusp</b></DictionaryLink> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if *real* is less than zero; otherwise, returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"plusp"}><b>plusp</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if *real* is greater than zero; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+<DictionaryLink  term={"plusp"}><b>plusp</b></DictionaryLink> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if *real* is greater than zero; otherwise, returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-Regardless of whether an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> provides distinct representations for positive and negative <ClLinks  term={"float"}><i>float</i></ClLinks> zeros, (minusp -0.0) always returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Regardless of whether an <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> provides distinct representations for positive and negative <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> zeros, (minusp -0.0) always returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
@@ -52,7 +52,7 @@ Regardless of whether an <ClLinks  term={"implementation"}><i>implementation</i>
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *real* is not a *real*. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *real* is not a *real*. 
 
 
 

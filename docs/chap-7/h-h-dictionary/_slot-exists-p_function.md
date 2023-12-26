@@ -1,4 +1,4 @@
-**slot-exists-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**slot-exists-p** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-*slot-name*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+*slot-name*—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the <ClLinks  term={"object"}><i>object</i></ClLinks> has a <ClLinks  term={"slot"}><i>slot</i></ClLinks> named *slot-name*. 
+Returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if the <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> has a <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm> named *slot-name*. 
 
 
 
@@ -54,7 +54,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the <ClLinks  term={"ob
 
 
 
-Although no <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is required to do so, implementors are strongly encouraged to implement the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"slot-exists-p"}><b>slot-exists-p</b></DictionaryLink> using the <ClLinks  term={"function"}><i>function</i></ClLinks> slot-exists-p-using-class described in the *Metaobject Protocol*. 
+Although no <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> is required to do so, implementors are strongly encouraged to implement the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"slot-exists-p"}><b>slot-exists-p</b></DictionaryLink> using the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> slot-exists-p-using-class described in the *Metaobject Protocol*. 
 
 
 

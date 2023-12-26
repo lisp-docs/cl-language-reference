@@ -1,4 +1,4 @@
-**random** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**random** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*limit*—a positive *integer* , or a positive <ClLinks  term={"float"}><i>float</i></ClLinks>. 
+*limit*—a positive *integer* , or a positive <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*random-number*—a non-negative <ClLinks  term={"number"}><i>number</i></ClLinks> less than *limit* and of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *limit*. 
+*random-number*—a non-negative <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> less than *limit* and of the same <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> as *limit*. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns a pseudo-random number that is a non-negative <ClLinks  term={"number"}><i>number</i></ClLinks> less than *limit* and of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *limit*. 
+Returns a pseudo-random number that is a non-negative <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> less than *limit* and of the same <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> as *limit*. 
 
 
 
@@ -61,7 +61,7 @@ The *random-state* is modified.
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *limit* is not a positive *integer* or a positive *real*. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *limit* is not a positive *integer* or a positive *real*. 
 
 
 

@@ -1,4 +1,4 @@
-**get-setf-expansion** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**get-setf-expansion** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"get-setf-expansion"}><b>get-setf-expansion</b></DictionaryLink> <ClLinks  term={"place"}><i>place</i></ClLinks> &amp;optional <ClLinks  term={"environment"}><i>environment</i></ClLinks> 
+<DictionaryLink  term={"get-setf-expansion"}><b>get-setf-expansion</b></DictionaryLink> <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> &amp;optional <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm> 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-<ClLinks  term={"place"}><i>place</i></ClLinks>—a <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+<GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>—a <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. 
+<GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Determines five values constituting the <GlossaryTerm styled={true} term={"setf expansion"}><i>setf expansion</i></GlossaryTerm> for <ClLinks  term={"place"}><i>place</i></ClLinks> in <ClLinks  term={"environment"}><i>environment</i></ClLinks>; see Section 5.1.1.2 (Setf Expansions). 
+Determines five values constituting the <GlossaryTerm styled={true} term={"setf expansion"}><i>setf expansion</i></GlossaryTerm> for <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> in <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm>; see Section 5.1.1.2 (Setf Expansions). 
 
 
 
@@ -50,7 +50,7 @@ Determines five values constituting the <GlossaryTerm styled={true} term={"setf 
 
 
 
-If <ClLinks  term={"environment"}><i>environment</i></ClLinks> is not supplied or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the environment is the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>. 
+If <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm> is not supplied or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the environment is the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>. 
 
 **Examples:**
 ```lisp
@@ -82,7 +82,7 @@ If <ClLinks  term={"environment"}><i>environment</i></ClLinks> is not supplied o
 
 
 
-Any *compound form* is a valid <ClLinks  term={"place"}><i>place</i></ClLinks>, since any *compound form* whose *operator f* has no *setf expander* are expanded into a call to (setf *f* ). 
+Any *compound form* is a valid <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>, since any *compound form* whose *operator f* has no *setf expander* are expanded into a call to (setf *f* ). 
 
 
 

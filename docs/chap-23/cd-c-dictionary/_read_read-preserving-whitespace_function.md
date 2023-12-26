@@ -1,4 +1,4 @@
-**read, read-preserving-whitespace** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**read, read-preserving-whitespace** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -30,19 +30,19 @@
 
 
 
-*eof-error-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+*eof-error-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. 
 
 
 
-*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+*eof-value*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-*recursive-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*recursive-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks> (parsed by the *Lisp reader* ) or the *eof-value*. 
+<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> (parsed by the *Lisp reader* ) or the *eof-value*. 
 
 
 
@@ -50,11 +50,11 @@
 
 
 
-<DictionaryLink  term={"read"}><b>read</b></DictionaryLink> parses the printed representation of an <ClLinks  term={"object"}><i>object</i></ClLinks> from *input-stream* and builds such an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<DictionaryLink  term={"read"}><b>read</b></DictionaryLink> parses the printed representation of an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> from *input-stream* and builds such an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></DictionaryLink> is like <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> but preserves any <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks  term={"character"}><i>character</i></ClLinks> that delimits the printed representation of the <ClLinks  term={"object"}><i>object</i></ClLinks>. <DictionaryLink  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></DictionaryLink> is exactly like <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> when the *recursive-p argument* to <DictionaryLink  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></DictionaryLink> is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+<DictionaryLink  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></DictionaryLink> is like <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> but preserves any <GlossaryTerm  term={"whitespace"}><i>whitespace</i></GlossaryTerm><sub>2</sub> <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> that delimits the printed representation of the <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. <DictionaryLink  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></DictionaryLink> is exactly like <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> when the *recursive-p argument* to <DictionaryLink  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></DictionaryLink> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. 
 
 
 
@@ -74,19 +74,19 @@
 
 
 
-When <DictionaryLink  term={"read-suppress"}><b>\*read-suppress\*</b></DictionaryLink> is <ClLinks  term={"false"}><i>false</i></ClLinks>, <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> throws away the delimiting <ClLinks  term={"character"}><i>character</i></ClLinks> required by certain printed representations if it is a <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks  term={"character"}><i>character</i></ClLinks> ; but <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> preserves the character (using <DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink>) if it is syntactically meaningful, because it could be the start of the next expression. 
+When <DictionaryLink  term={"read-suppress"}><b>\*read-suppress\*</b></DictionaryLink> is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>, <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> throws away the delimiting <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> required by certain printed representations if it is a <GlossaryTerm  term={"whitespace"}><i>whitespace</i></GlossaryTerm><sub>2</sub> <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> ; but <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> preserves the character (using <DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink>) if it is syntactically meaningful, because it could be the start of the next expression. 
 
 
 
-If a file ends in a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> or a <ClLinks  term={"number"}><i>number</i></ClLinks> immediately followed by an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>1</sub>, <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> reads the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> or <ClLinks  term={"number"}><i>number</i></ClLinks> successfully; when called again, it sees the <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>1</sub> and only then acts according to *eof-error-p*. If a file contains ignorable text at the end, such as blank lines and comments, <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> does not consider it to end in the middle of an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+If a file ends in a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> or a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> immediately followed by an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>1</sub>, <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> reads the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> or <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> successfully; when called again, it sees the <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>1</sub> and only then acts according to *eof-error-p*. If a file contains ignorable text at the end, such as blank lines and comments, <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> does not consider it to end in the middle of an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-If *recursive-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, the call to <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> is expected to be made from within some function that itself has been called from <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> or from a similar input function, rather than from the top level. 
+If *recursive-p* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, the call to <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> is expected to be made from within some function that itself has been called from <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> or from a similar input function, rather than from the top level. 
 
 
 
-Both functions return the <ClLinks  term={"object"}><i>object</i></ClLinks> read from *input-stream*. *Eof-value* is returned if *eof-error-p* is <ClLinks  term={"false"}><i>false</i></ClLinks> and end of file is reached before the beginning of an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+Both functions return the <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> read from *input-stream*. *Eof-value* is returned if *eof-error-p* is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> and end of file is reached before the beginning of an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -135,11 +135,11 @@ Both functions return the <ClLinks  term={"object"}><i>object</i></ClLinks> read
 
 
 
-<DictionaryLink  term={"read"}><b>read</b></DictionaryLink> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink>, regardless of *eof-error-p*, if the file ends in the middle of an <ClLinks  term={"object"}><i>object</i></ClLinks> representation. For example, if a file does not contain enough right parentheses to balance the left parentheses in it, <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> signals an error. This is detected when <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> or <DictionaryLink  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></DictionaryLink> is called with *recursive-p* and *eof-error-p non-nil*, and end-of-file is reached before the beginning of an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<DictionaryLink  term={"read"}><b>read</b></DictionaryLink> signals an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink>, regardless of *eof-error-p*, if the file ends in the middle of an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> representation. For example, if a file does not contain enough right parentheses to balance the left parentheses in it, <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> signals an error. This is detected when <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> or <DictionaryLink  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></DictionaryLink> is called with *recursive-p* and *eof-error-p non-nil*, and end-of-file is reached before the beginning of an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-If *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled at the end of file. 
+If *eof-error-p* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled at the end of file. 
 
 
 

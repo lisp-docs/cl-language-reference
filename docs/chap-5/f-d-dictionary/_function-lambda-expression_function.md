@@ -1,4 +1,4 @@
-**function-lambda-expression** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**function-lambda-expression** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"function-lambda-expression"}><b>function-lambda-expression</b></DictionaryLink> <ClLinks  term={"function"}><i>function</i></ClLinks> 
+<DictionaryLink  term={"function-lambda-expression"}><b>function-lambda-expression</b></DictionaryLink> <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+<GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>—a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -38,19 +38,19 @@
 
 
 
-Returns information about <ClLinks  term={"function"}><i>function</i></ClLinks> as follows: 
+Returns information about <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> as follows: 
 
 
 
-The <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>, *lambda-expression*, is <ClLinks  term={"function"}><i>function</i></ClLinks>’s defining <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if the information is not available. The <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> may have been pre-processed in some ways, but it should remain a suitable argument to <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink> or <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>. Any <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> may legitimately return <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> as the *lambda-expression* of any <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>, *lambda-expression*, is <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>’s defining <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if the information is not available. The <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> may have been pre-processed in some ways, but it should remain a suitable argument to <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink> or <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>. Any <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> may legitimately return <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> as the *lambda-expression* of any <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 
-The <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *closure-p*, is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if <ClLinks  term={"function"}><i>function</i></ClLinks>’s definition was enclosed in the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> or something <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks> if <ClLinks  term={"function"}><i>function</i></ClLinks>’s definition might have been enclosed in some <GlossaryTerm styled={true} term={"non-null lexical environment"}><i>non-null lexical environment</i></GlossaryTerm>. Any <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> may legitimately return <ClLinks  term={"true"}><i>true</i></ClLinks> as the *closure-p* of any <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *closure-p*, is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>’s definition was enclosed in the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> or something <GlossaryTerm  term={"non-nil"}><i>non-nil</i></GlossaryTerm> if <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>’s definition might have been enclosed in some <GlossaryTerm styled={true} term={"non-null lexical environment"}><i>non-null lexical environment</i></GlossaryTerm>. Any <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> may legitimately return <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> as the *closure-p* of any <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 
-The <GlossaryTerm styled={true} term={"tertiary value"}><i>tertiary value</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>, is the “name” of <ClLinks  term={"function"}><i>function</i></ClLinks>. The name is intended for debugging only and is not necessarily one that would be valid for use as a name in <DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink> or <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>, for example. By convention, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is used to mean that <ClLinks  term={"function"}><i>function</i></ClLinks> has no name. Any <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> may legitimately return <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> as the <ClLinks  term={"name"}><i>name</i></ClLinks> of any <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"tertiary value"}><i>tertiary value</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>, is the “name” of <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>. The name is intended for debugging only and is not necessarily one that would be valid for use as a name in <DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink> or <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>, for example. By convention, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is used to mean that <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> has no name. Any <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> may legitimately return <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> as the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of any <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 
@@ -97,7 +97,7 @@ The following examples illustrate some possible return values, but are not inten
 
 
 
-Although <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> are free to return “<DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, <ClLinks  term={"true"}><i>true</i></ClLinks>, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>” in all cases, they are encouraged to return a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> as the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> in the case where the argument was created by a call to <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink> or <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> (as opposed to being created by *loading* a <GlossaryTerm styled={true} term={"compiled file"}><i>compiled file</i></GlossaryTerm>). 
+Although <GlossaryTerm  term={"implementation"}><i>implementations</i></GlossaryTerm> are free to return “<DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>” in all cases, they are encouraged to return a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> as the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> in the case where the argument was created by a call to <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink> or <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> (as opposed to being created by *loading* a <GlossaryTerm styled={true} term={"compiled file"}><i>compiled file</i></GlossaryTerm>). 
 
 
 

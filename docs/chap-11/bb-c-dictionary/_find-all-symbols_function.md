@@ -1,4 +1,4 @@
-**find-all-symbols** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**find-all-symbols** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"string"}><i>string</i></ClLinks>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
+<GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
 
 
 
-<ClLinks  term={"symbol"}><i>symbols</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
+<GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<DictionaryLink  term={"find-all-symbols"}><b>find-all-symbols</b></DictionaryLink> searches every <GlossaryTerm styled={true} term={"registered package"}><i>registered package</i></GlossaryTerm> for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that have a <ClLinks  term={"name"}><i>name</i></ClLinks> that is the <ClLinks  term={"same"}><i>same</i></ClLinks> (under <ClLinks  term={"string"}><b>string=</b></ClLinks>) as <ClLinks  term={"string"}><i>string</i></ClLinks>. A <ClLinks  term={"list"}><i>list</i></ClLinks> of all such <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is returned. Whether or how the <ClLinks  term={"list"}><i>list</i></ClLinks> is ordered is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<DictionaryLink  term={"find-all-symbols"}><b>find-all-symbols</b></DictionaryLink> searches every <GlossaryTerm styled={true} term={"registered package"}><i>registered package</i></GlossaryTerm> for <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> that have a <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> that is the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> (under <ClLinks  term={"string"}><b>string=</b></ClLinks>) as <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. A <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of all such <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> is returned. Whether or how the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> is ordered is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 

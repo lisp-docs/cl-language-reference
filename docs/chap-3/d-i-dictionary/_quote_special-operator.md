@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>; not evaluated. 
+<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>; not evaluated. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-The <DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink> <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> just returns <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+The <DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink> <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> just returns <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -62,11 +62,11 @@ Section 3.1 (Evaluation), Section 2.4.3 (Single-Quote), Section 3.2.1 (Compiler 
 
 
 
-The textual notation ’<ClLinks  term={"object"}><i>object</i></ClLinks> is equivalent to (quote <ClLinks  term={"object"}><i>object</i></ClLinks>); see Section 3.2.1 (Compiler Terminology). 
+The textual notation ’<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> is equivalent to (quote <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>); see Section 3.2.1 (Compiler Terminology). 
 
 
 
-Some <ClLinks  term={"object"}><i>objects</i></ClLinks>, called <GlossaryTerm styled={true} term={"self-evaluating object"}><i>self-evaluating objects</i></GlossaryTerm>, do not require quotation by <DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink>. However, <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> and <ClLinks  term={"list"}><i>lists</i></ClLinks> are used to represent parts of programs, and so would not be useable as constant data in a program without <DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink>. Since <DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink> suppresses the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of these <ClLinks  term={"object"}><i>objects</i></ClLinks>, they become data rather than program. 
+Some <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm>, called <GlossaryTerm styled={true} term={"self-evaluating object"}><i>self-evaluating objects</i></GlossaryTerm>, do not require quotation by <DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink>. However, <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> and <GlossaryTerm  term={"list"}><i>lists</i></GlossaryTerm> are used to represent parts of programs, and so would not be useable as constant data in a program without <DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink>. Since <DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink> suppresses the <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of these <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm>, they become data rather than program. 
 
 
 

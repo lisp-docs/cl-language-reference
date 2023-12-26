@@ -1,4 +1,4 @@
-**namestring, file-namestring, directory-namestring, host-namestring, enough-namestring** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**namestring, file-namestring, directory-namestring, host-namestring, enough-namestring** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<DictionaryLink  term={"enough-namestring"}><b>enough-namestring</b></DictionaryLink> <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> &amp;optional *defaults → namestring* 
+<DictionaryLink  term={"enough-namestring"}><b>enough-namestring</b></DictionaryLink> <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> &amp;optional *defaults → namestring* 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
+<GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
-*defaults*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . The default is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></DictionaryLink>. <ClLinks  term={"namestring"}><i>namestring</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+*defaults*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . The default is the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></DictionaryLink>. <GlossaryTerm  term={"namestring"}><i>namestring</i></GlossaryTerm>—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -58,15 +58,15 @@
 
 
 
-These functions convert <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> into a namestring. The name represented by <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is returned as a <ClLinks  term={"namestring"}><i>namestring</i></ClLinks> in an <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> canonical form. 
+These functions convert <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> into a namestring. The name represented by <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> is returned as a <GlossaryTerm  term={"namestring"}><i>namestring</i></GlossaryTerm> in an <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> canonical form. 
 
 
 
-<DictionaryLink  term={"namestring"}><b>namestring</b></DictionaryLink> returns the full form of <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+<DictionaryLink  term={"namestring"}><b>namestring</b></DictionaryLink> returns the full form of <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"file-namestring"}><b>file-namestring</b></DictionaryLink> returns just the name, type, and version components of <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. <DictionaryLink  term={"directory-namestring"}><b>directory-namestring</b></DictionaryLink> returns the directory name portion. 
+<DictionaryLink  term={"file-namestring"}><b>file-namestring</b></DictionaryLink> returns just the name, type, and version components of <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>. <DictionaryLink  term={"directory-namestring"}><b>directory-namestring</b></DictionaryLink> returns the directory name portion. 
 
 
 
@@ -74,7 +74,7 @@ These functions convert <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> in
 
 
 
-<DictionaryLink  term={"enough-namestring"}><b>enough-namestring</b></DictionaryLink> returns an abbreviated namestring that is just sufficient to identify the file named by <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> when considered relative to the *defaults*. It is required that 
+<DictionaryLink  term={"enough-namestring"}><b>enough-namestring</b></DictionaryLink> returns an abbreviated namestring that is just sufficient to identify the file named by <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> when considered relative to the *defaults*. It is required that 
 
 
 
@@ -86,11 +86,11 @@ These functions convert <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> in
 
 
 
-in all cases, and the result of <DictionaryLink  term={"enough-namestring"}><b>enough-namestring</b></DictionaryLink> is the shortest reasonable <ClLinks  term={"string"}><i>string</i></ClLinks> that will satisfy this criterion. 
+in all cases, and the result of <DictionaryLink  term={"enough-namestring"}><b>enough-namestring</b></DictionaryLink> is the shortest reasonable <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> that will satisfy this criterion. 
 
 
 
-It is not necessarily possible to construct a valid <ClLinks  term={"namestring"}><i>namestring</i></ClLinks> by concatenating some of the three shorter <ClLinks  term={"namestring"}><i>namestrings</i></ClLinks> in some order. 
+It is not necessarily possible to construct a valid <GlossaryTerm  term={"namestring"}><i>namestring</i></GlossaryTerm> by concatenating some of the three shorter <GlossaryTerm  term={"namestring"}><i>namestrings</i></GlossaryTerm> in some order. 
 
 
 

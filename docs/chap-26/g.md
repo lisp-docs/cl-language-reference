@@ -7,39 +7,39 @@ sidebar_position: 103
 
 
 
-**general** *adj.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) having <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, and consequently able to have any <ClLinks  term={"object"}><i>object</i></ClLinks> as an <ClLinks  term={"element"}><i>element</i></ClLinks>. 
+**general** *adj.* (of an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>) having <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, and consequently able to have any <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> as an <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm>. 
 
 
 
-**generalized boolean** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> used as a truth value, where the symbol <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
+**generalized boolean** *n.* an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> used as a truth value, where the symbol <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
-represents <ClLinks  term={"false"}><i>false</i></ClLinks> and all other <ClLinks  term={"object"}><i>objects</i></ClLinks> represent <ClLinks  term={"true"}><i>true</i></ClLinks>. See <ClLinks  term={"boolean"}><i>boolean</i></ClLinks>. 
+represents <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> and all other <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> represent <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. See <GlossaryTerm  term={"boolean"}><i>boolean</i></GlossaryTerm>. 
 
 
 
-**generalized instance** *n.* (of a <ClLinks  term={"class"}><i>class</i></ClLinks>) an <ClLinks  term={"object"}><i>object</i></ClLinks> the <ClLinks  term={"class"}><i>class</i></ClLinks> of which is either that <ClLinks  term={"class"}><i>class</i></ClLinks> itself, or some subclass of that <ClLinks  term={"class"}><i>class</i></ClLinks>. (Because of the correspondence between types and classes, the term “generalized instance of *X*” implies “object of type *X*” and in cases where *X* is a <ClLinks  term={"class"}><i>class</i></ClLinks> (or *class name*) the reverse is also true. The former terminology emphasizes the view of *X* as a <ClLinks  term={"class"}><i>class</i></ClLinks> while the latter emphasizes the view of *X* as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> .) 
+**generalized instance** *n.* (of a <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>) an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> of which is either that <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> itself, or some subclass of that <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>. (Because of the correspondence between types and classes, the term “generalized instance of *X*” implies “object of type *X*” and in cases where *X* is a <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> (or *class name*) the reverse is also true. The former terminology emphasizes the view of *X* as a <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> while the latter emphasizes the view of *X* as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> .) 
 
 
 
-**generalized reference** *n.* a reference to a location storing an <ClLinks  term={"object"}><i>object</i></ClLinks> as if to a 
+**generalized reference** *n.* a reference to a location storing an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> as if to a 
 
 
 
-<ClLinks  term={"variable"}><i>variable</i></ClLinks>. (Such a reference can be either to <ClLinks  term={"read"}><i>read</i></ClLinks> or <ClLinks  term={"write"}><i>write</i></ClLinks> the location.) See Section 5.1 (Generalized Reference). See also <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+<GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm>. (Such a reference can be either to <GlossaryTerm  term={"read"}><i>read</i></GlossaryTerm> or <GlossaryTerm  term={"write"}><i>write</i></GlossaryTerm> the location.) See Section 5.1 (Generalized Reference). See also <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>. 
 
 
 
-**generalized synonym stream** *n.* (with a <GlossaryTerm styled={true} term={"synonym stream symbol"}><i>synonym stream symbol</i></GlossaryTerm>) 1. (to a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) a <GlossaryTerm styled={true} term={"synonym stream"}><i>synonym stream</i></GlossaryTerm> to the <ClLinks  term={"stream"}><i>stream</i></ClLinks>, or a <GlossaryTerm styled={true} term={"composite stream"}><i>composite stream</i></GlossaryTerm> which has as a target a 
+**generalized synonym stream** *n.* (with a <GlossaryTerm styled={true} term={"synonym stream symbol"}><i>synonym stream symbol</i></GlossaryTerm>) 1. (to a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>) a <GlossaryTerm styled={true} term={"synonym stream"}><i>synonym stream</i></GlossaryTerm> to the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>, or a <GlossaryTerm styled={true} term={"composite stream"}><i>composite stream</i></GlossaryTerm> which has as a target a 
 
 
 
-<GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 2. (to a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) a <GlossaryTerm styled={true} term={"synonym stream"}><i>synonym stream</i></GlossaryTerm> to the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, or a <GlossaryTerm styled={true} term={"composite stream"}><i>composite stream</i></GlossaryTerm> which has as a target a <GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 2. (to a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>) a <GlossaryTerm styled={true} term={"synonym stream"}><i>synonym stream</i></GlossaryTerm> to the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, or a <GlossaryTerm styled={true} term={"composite stream"}><i>composite stream</i></GlossaryTerm> which has as a target a <GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-**generic function** *n.* a <ClLinks  term={"function"}><i>function</i></ClLinks> whose behavior depends on the *classes* or identities of the arguments supplied to it and whose parts include, among other things, a set of <ClLinks  term={"method"}><i>methods</i></ClLinks>, a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm>, and a <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm> type. 
+**generic function** *n.* a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> whose behavior depends on the *classes* or identities of the arguments supplied to it and whose parts include, among other things, a set of <GlossaryTerm  term={"method"}><i>methods</i></GlossaryTerm>, a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm>, and a <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm> type. 
 
 
 
@@ -47,7 +47,7 @@ represents <ClLinks  term={"false"}><i>false</i></ClLinks> and all other <ClLink
 
 
 
-<DictionaryLink  term={"gensym"}><b>gensym</b></DictionaryLink> *n. Trad.* an *uninterned symbol*. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"gensym"}><b>gensym</b></DictionaryLink>. 
+<DictionaryLink  term={"gensym"}><b>gensym</b></DictionaryLink> *n. Trad.* an *uninterned symbol*. See the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"gensym"}><b>gensym</b></DictionaryLink>. 
 
 
 
@@ -63,11 +63,11 @@ represents <ClLinks  term={"false"}><i>false</i></ClLinks> and all other <ClLink
 
 
 
-**global declaration** *n.* a <ClLinks  term={"form"}><i>form</i></ClLinks> that makes certain kinds of information about code globally available; that is, a <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> or a <DictionaryLink  term={"declaim"}><b>declaim</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+**global declaration** *n.* a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> that makes certain kinds of information about code globally available; that is, a <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> or a <DictionaryLink  term={"declaim"}><b>declaim</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-**global environment** *n.* that part of an <ClLinks  term={"environment"}><i>environment</i></ClLinks> that contains <ClLinks  term={"binding"}><i>bindings</i></ClLinks> with <GlossaryTerm styled={true} term={"indefinite scope"}><i>indefinite scope</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"indefinite extent"}><i>indefinite extent</i></GlossaryTerm>. 
+**global environment** *n.* that part of an <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm> that contains <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm> with <GlossaryTerm styled={true} term={"indefinite scope"}><i>indefinite scope</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"indefinite extent"}><i>indefinite extent</i></GlossaryTerm>. 
 
 
 
@@ -87,11 +87,11 @@ represents <ClLinks  term={"false"}><i>false</i></ClLinks> and all other <ClLink
 
 
 
-**go tag** *n.* the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> or *integer* that, within the <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> of a <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>, names an *exit point established* by that <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+**go tag** *n.* the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> or *integer* that, within the <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> of a <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, names an *exit point established* by that <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-**graphic** *adj.* (of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) being a “printing” or “displayable” <ClLinks  term={"character"}><i>character</i></ClLinks> that has a standard visual representation as a single <ClLinks  term={"glyph"}><i>glyph</i></ClLinks>, such as A or \* or =. <ClLinks  term={"space"}><i>Space</i></ClLinks> is defined to be <ClLinks  term={"graphic"}><i>graphic</i></ClLinks>. Of the <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>, all but <ClLinks  term={"newline"}><i>newline</i></ClLinks> are <ClLinks  term={"graphic"}><i>graphic</i></ClLinks>. See <ClLinks  term={"non-graphic"}><i>non-graphic</i></ClLinks>. 
+**graphic** *adj.* (of a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> ) being a “printing” or “displayable” <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> that has a standard visual representation as a single <GlossaryTerm  term={"glyph"}><i>glyph</i></GlossaryTerm>, such as A or \* or =. <GlossaryTerm  term={"space"}><i>Space</i></GlossaryTerm> is defined to be <GlossaryTerm  term={"graphic"}><i>graphic</i></GlossaryTerm>. Of the <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>, all but <GlossaryTerm  term={"newline"}><i>newline</i></GlossaryTerm> are <GlossaryTerm  term={"graphic"}><i>graphic</i></GlossaryTerm>. See <GlossaryTerm  term={"non-graphic"}><i>non-graphic</i></GlossaryTerm>. 
 
 
 

@@ -1,4 +1,4 @@
-**find-symbol** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**find-symbol** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"find-symbol"}><b>find-symbol</b></DictionaryLink> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *package → symbol, status* 
+<DictionaryLink  term={"find-symbol"}><b>find-symbol</b></DictionaryLink> <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> &amp;optional *package → symbol, status* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks  term={"string"}><i>string</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+<GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> accessible in the <ClLinks  term={"package"}><i>package</i></ClLinks>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+<GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> accessible in the <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-<DictionaryLink  term={"find-symbol"}><b>find-symbol</b></DictionaryLink> locates a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose <ClLinks  term={"name"}><i>name</i></ClLinks> is <ClLinks  term={"string"}><i>string</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>. If a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> named <ClLinks  term={"string"}><i>string</i></ClLinks> is found in <ClLinks  term={"package"}><i>package</i></ClLinks>, directly or by inheritance, the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> found is returned as the first value; the second value is as follows: 
+<DictionaryLink  term={"find-symbol"}><b>find-symbol</b></DictionaryLink> locates a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> whose <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> is <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> in a <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. If a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> named <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> is found in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, directly or by inheritance, the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> found is returned as the first value; the second value is as follows: 
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> as an <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm>. 
+If the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> as an <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm>. 
 
 
 
@@ -66,7 +66,7 @@ If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"pre
 
 
 
-If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> as an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm>. 
+If the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> as an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm>. 
 
 
 
@@ -74,7 +74,7 @@ If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"pre
 
 
 
-If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is inherited by <ClLinks  term={"package"}><i>package</i></ClLinks> through <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>, but is not <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. If no such <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, both values are <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+If the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is inherited by <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> through <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>, but is not <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. If no such <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, both values are <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -132,4 +132,4 @@ If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is inherited by <ClLink
 
 
 
-<DictionaryLink  term={"find-symbol"}><b>find-symbol</b></DictionaryLink> is operationally equivalent to <DictionaryLink  term={"intern"}><b>intern</b></DictionaryLink>, except that it never creates a new <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<DictionaryLink  term={"find-symbol"}><b>find-symbol</b></DictionaryLink> is operationally equivalent to <DictionaryLink  term={"intern"}><b>intern</b></DictionaryLink>, except that it never creates a new <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 

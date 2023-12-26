@@ -2,11 +2,11 @@
 
 
 
-An axis of an <ClLinks  term={"array"}><i>array</i></ClLinks> is called a <ClLinks  term={"dimension"}><i>dimension</i></ClLinks>. 
+An axis of an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> is called a <GlossaryTerm  term={"dimension"}><i>dimension</i></GlossaryTerm>. 
 
 
 
-Each <ClLinks  term={"dimension"}><i>dimension</i></ClLinks> is a non-negative <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>; if any dimension of an <ClLinks  term={"array"}><i>array</i></ClLinks> is zero, the <ClLinks  term={"array"}><i>array</i></ClLinks> has no elements. It is permissible for a <ClLinks  term={"dimension"}><i>dimension</i></ClLinks> to be zero, in which case the <ClLinks  term={"array"}><i>array</i></ClLinks> has no elements, and any attempt to <ClLinks  term={"access"}><i>access</i></ClLinks> an <ClLinks  term={"element"}><i>element</i></ClLinks> is an error. However, other properties of the <ClLinks  term={"array"}><i>array</i></ClLinks>, such as the <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> themselves, may be used. 
+Each <GlossaryTerm  term={"dimension"}><i>dimension</i></GlossaryTerm> is a non-negative <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm>; if any dimension of an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> is zero, the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> has no elements. It is permissible for a <GlossaryTerm  term={"dimension"}><i>dimension</i></GlossaryTerm> to be zero, in which case the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> has no elements, and any attempt to <GlossaryTerm  term={"access"}><i>access</i></GlossaryTerm> an <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> is an error. However, other properties of the <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>, such as the <GlossaryTerm  term={"dimension"}><i>dimensions</i></GlossaryTerm> themselves, may be used. 
 
 
 

@@ -1,4 +1,4 @@
-**simple-array** <ClLinks  term={"type"}><i>Type</i></ClLinks> 
+**simple-array** <GlossaryTerm  term={"type"}><i>Type</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> of an <ClLinks  term={"array"}><i>array</i></ClLinks> that is not displaced to another <ClLinks  term={"array"}><i>array</i></ClLinks>, has no <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , and is not <GlossaryTerm styled={true} term={"expressly adjustable"}><i>expressly adjustable</i></GlossaryTerm> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"simple-array"}><b>simple-array</b></DictionaryLink>. The concept of a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm> exists to allow the implementation to use a specialized representation and to allow the user to declare that certain values will always be <GlossaryTerm styled={true} term={"simple array"}><i>simple arrays</i></GlossaryTerm>. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> of an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> that is not displaced to another <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>, has no <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , and is not <GlossaryTerm styled={true} term={"expressly adjustable"}><i>expressly adjustable</i></GlossaryTerm> is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"simple-array"}><b>simple-array</b></DictionaryLink>. The concept of a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm> exists to allow the implementation to use a specialized representation and to allow the user to declare that certain values will always be <GlossaryTerm styled={true} term={"simple array"}><i>simple arrays</i></GlossaryTerm>. 
 
 
 
-The <ClLinks  term={"type"}><i>types</i></ClLinks> <DictionaryLink  term={"simple-vector"}><b>simple-vector</b></DictionaryLink>, <DictionaryLink  term={"simple-string"}><b>simple-string</b></DictionaryLink>, and <DictionaryLink  term={"simple-bit-vector"}><b>simple-bit-vector</b></DictionaryLink> are *disjoint subtypes* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"simple-array"}><b>simple-array</b></DictionaryLink>, for they respectively mean (simple-array t (\*)), the union of all (simple-array *c* (\*)) for any *c* being a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>, and (simple-array bit (\*)). 
+The <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> <DictionaryLink  term={"simple-vector"}><b>simple-vector</b></DictionaryLink>, <DictionaryLink  term={"simple-string"}><b>simple-string</b></DictionaryLink>, and <DictionaryLink  term={"simple-bit-vector"}><b>simple-bit-vector</b></DictionaryLink> are *disjoint subtypes* of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"simple-array"}><b>simple-array</b></DictionaryLink>, for they respectively mean (simple-array t (\*)), the union of all (simple-array *c* (\*)) for any *c* being a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>, and (simple-array bit (\*)). 
 
 
 
@@ -46,7 +46,7 @@ Specializing.
 
 
 
-<ClLinks  term={"dimension"}><i>dimension</i></ClLinks>—a <GlossaryTerm styled={true} term={"valid array dimension"}><i>valid array dimension</i></GlossaryTerm>. 
+<GlossaryTerm  term={"dimension"}><i>dimension</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"valid array dimension"}><i>valid array dimension</i></GlossaryTerm>. 
 
 
 
@@ -54,7 +54,7 @@ Specializing.
 
 
 
-<ClLinks  term={"rank"}><i>rank</i></ClLinks>—a non-negative <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>. 
+<GlossaryTerm  term={"rank"}><i>rank</i></GlossaryTerm>—a non-negative <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm>. 
 
 
 
@@ -74,7 +74,7 @@ Specializing.
 
 
 
-This <GlossaryTerm styled={true} term={"compound type specifier"}><i>compound type specifier</i></GlossaryTerm> is treated exactly as the corresponding <GlossaryTerm styled={true} term={"compound type specifier"}><i>compound type specifier</i></GlossaryTerm> for <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"array"}><b>array</b></DictionaryLink> would be treated, except that the set is further constrained to include only <GlossaryTerm styled={true} term={"simple array"}><i>simple arrays</i></GlossaryTerm>. 
+This <GlossaryTerm styled={true} term={"compound type specifier"}><i>compound type specifier</i></GlossaryTerm> is treated exactly as the corresponding <GlossaryTerm styled={true} term={"compound type specifier"}><i>compound type specifier</i></GlossaryTerm> for <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"array"}><b>array</b></DictionaryLink> would be treated, except that the set is further constrained to include only <GlossaryTerm styled={true} term={"simple array"}><i>simple arrays</i></GlossaryTerm>. 
 
 
 
@@ -82,7 +82,7 @@ This <GlossaryTerm styled={true} term={"compound type specifier"}><i>compound ty
 
 
 
-It is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether <GlossaryTerm styled={true} term={"displaced array"}><i>displaced arrays</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"vector"}><i>vectors</i></GlossaryTerm> with <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm>, or arrays that are <GlossaryTerm styled={true} term={"actually adjustable"}><i>actually adjustable</i></GlossaryTerm> are <GlossaryTerm styled={true} term={"simple array"}><i>simple arrays</i></GlossaryTerm>. 
+It is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> whether <GlossaryTerm styled={true} term={"displaced array"}><i>displaced arrays</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"vector"}><i>vectors</i></GlossaryTerm> with <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm>, or arrays that are <GlossaryTerm styled={true} term={"actually adjustable"}><i>actually adjustable</i></GlossaryTerm> are <GlossaryTerm styled={true} term={"simple array"}><i>simple arrays</i></GlossaryTerm>. 
 
 
 

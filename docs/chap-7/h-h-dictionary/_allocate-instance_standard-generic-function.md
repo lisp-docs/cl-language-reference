@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> <ClLinks  term={"class"}><i>class</i></ClLinks> &amp;rest *initargs* &amp;key &amp;allow-other-keys → new-instance 
+<DictionaryLink  term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> &amp;rest *initargs* &amp;key &amp;allow-other-keys → new-instance 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<DictionaryLink  term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> (<ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>) &amp;rest *initargs* 
+<DictionaryLink  term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> (<GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>) &amp;rest *initargs* 
 
 
 
-<DictionaryLink  term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> (<ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"structure-class"}><b>structure-class</b></DictionaryLink>) &amp;rest *initargs* 
+<DictionaryLink  term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> (<GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink  term={"structure-class"}><b>structure-class</b></DictionaryLink>) &amp;rest *initargs* 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<ClLinks  term={"class"}><i>class</i></ClLinks>—a <ClLinks  term={"class"}><i>class</i></ClLinks>. 
+<GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>—a <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>. 
 
 
 
-*initargs*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"keyword/value pair"}><i>keyword/value pairs</i></GlossaryTerm> (initialization argument <ClLinks  term={"name"}><i>names</i></ClLinks> and <ClLinks  term={"value"}><i>values</i></ClLinks>). *new-instance*—an <ClLinks  term={"object"}><i>object</i></ClLinks> whose <ClLinks  term={"class"}><i>class</i></ClLinks> is <ClLinks  term={"class"}><i>class</i></ClLinks>. 
+*initargs*—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"keyword/value pair"}><i>keyword/value pairs</i></GlossaryTerm> (initialization argument <GlossaryTerm  term={"name"}><i>names</i></GlossaryTerm> and <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm>). *new-instance*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> whose <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> is <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-The generic function <DictionaryLink  term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> creates and returns a new instance of the <ClLinks  term={"class"}><i>class</i></ClLinks>, without initializing it. When the <ClLinks  term={"class"}><i>class</i></ClLinks> is a <GlossaryTerm styled={true} term={"standard class"}><i>standard class</i></GlossaryTerm>, this means that the <ClLinks  term={"slot"}><i>slots</i></ClLinks> are <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>; when the <ClLinks  term={"class"}><i>class</i></ClLinks> is a <GlossaryTerm styled={true} term={"structure class"}><i>structure class</i></GlossaryTerm>, this means the <ClLinks  term={"slot"}><i>slots</i></ClLinks>’ <ClLinks  term={"value"}><i>values</i></ClLinks> are unspecified. 
+The generic function <DictionaryLink  term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> creates and returns a new instance of the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>, without initializing it. When the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"standard class"}><i>standard class</i></GlossaryTerm>, this means that the <GlossaryTerm  term={"slot"}><i>slots</i></GlossaryTerm> are <GlossaryTerm  term={"unbound"}><i>unbound</i></GlossaryTerm>; when the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"structure class"}><i>structure class</i></GlossaryTerm>, this means the <GlossaryTerm  term={"slot"}><i>slots</i></GlossaryTerm>’ <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> are unspecified. 
 
 
 
@@ -74,7 +74,7 @@ The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i
 
 
 
-The consequences of adding <ClLinks  term={"method"}><i>methods</i></ClLinks> to <DictionaryLink  term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> is unspecified. This capability might be added by the *Metaobject Protocol*. 
+The consequences of adding <GlossaryTerm  term={"method"}><i>methods</i></GlossaryTerm> to <DictionaryLink  term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> is unspecified. This capability might be added by the *Metaobject Protocol*. 
 
 
 

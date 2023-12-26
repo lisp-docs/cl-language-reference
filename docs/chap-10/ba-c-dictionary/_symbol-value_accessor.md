@@ -1,4 +1,4 @@
-**symbol-value** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**symbol-value** <GlossaryTerm  term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -10,7 +10,7 @@
 
 
 
-**(setf (symbol-value** <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>**)** *new-value***)** 
+**(setf (symbol-value** <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>**)** *new-value***)** 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that must have a <ClLinks  term={"value"}><i>value</i></ClLinks>. 
+<GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> that must have a <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"value"}><i>value</i></ClLinks>, *new-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>, *new-value*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*Accesses* the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <GlossaryTerm styled={true} term={"value cell"}><i>value cell</i></GlossaryTerm>. 
+*Accesses* the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>’s <GlossaryTerm styled={true} term={"value cell"}><i>value cell</i></GlossaryTerm>. 
 
 
 
@@ -79,11 +79,11 @@ a → 3
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is not a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-Should signal <DictionaryLink  term={"unbound-variable"}><b>unbound-variable</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"unbound"}><i>unbound</i></ClLinks> and an attempt is made to <ClLinks  term={"read"}><i>read</i></ClLinks> its <ClLinks  term={"value"}><i>value</i></ClLinks>. (No such error is signaled on an attempt to <ClLinks  term={"write"}><i>write</i></ClLinks> its <ClLinks  term={"value"}><i>value</i></ClLinks>.) 
+Should signal <DictionaryLink  term={"unbound-variable"}><b>unbound-variable</b></DictionaryLink> if <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is <GlossaryTerm  term={"unbound"}><i>unbound</i></GlossaryTerm> and an attempt is made to <GlossaryTerm  term={"read"}><i>read</i></GlossaryTerm> its <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>. (No such error is signaled on an attempt to <GlossaryTerm  term={"write"}><i>write</i></GlossaryTerm> its <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>.) 
 
 
 
@@ -99,7 +99,7 @@ Should signal <DictionaryLink  term={"unbound-variable"}><b>unbound-variable</b>
 
 
 
-<DictionaryLink  term={"symbol-value"}><b>symbol-value</b></DictionaryLink> can be used to get the value of a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. <DictionaryLink  term={"symbol-value"}><b>symbol-value</b></DictionaryLink> cannot <ClLinks  term={"access"}><i>access</i></ClLinks> the value of a <GlossaryTerm styled={true} term={"lexical variable"}><i>lexical variable</i></GlossaryTerm>. 
+<DictionaryLink  term={"symbol-value"}><b>symbol-value</b></DictionaryLink> can be used to get the value of a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. <DictionaryLink  term={"symbol-value"}><b>symbol-value</b></DictionaryLink> cannot <GlossaryTerm  term={"access"}><i>access</i></GlossaryTerm> the value of a <GlossaryTerm styled={true} term={"lexical variable"}><i>lexical variable</i></GlossaryTerm>. 
 
 
 

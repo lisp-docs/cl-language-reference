@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"reader-error"}><b>reader-error</b></DictionaryLink> consists of error conditions that are related to tokenization and parsing done by the *Lisp reader* . 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"reader-error"}><b>reader-error</b></DictionaryLink> consists of error conditions that are related to tokenization and parsing done by the *Lisp reader* . 
 
 
 

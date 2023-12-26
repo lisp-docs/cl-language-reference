@@ -2,7 +2,7 @@
 
 
 
-If two <ClLinks  term={"form"}><i>forms</i></ClLinks> that *establish lexical bindings* with the same *name N* are textually nested, then references to *N* within the inner <ClLinks  term={"form"}><i>form</i></ClLinks> refer to the <ClLinks  term={"binding"}><i>binding</i></ClLinks> established by the inner <ClLinks  term={"form"}><i>form</i></ClLinks>; the inner <ClLinks  term={"binding"}><i>binding</i></ClLinks> for *N shadows* the outer <ClLinks  term={"binding"}><i>binding</i></ClLinks> for *N*. Outside the inner <ClLinks  term={"form"}><i>form</i></ClLinks> but inside the outer one, references to *N* refer to the <ClLinks  term={"binding"}><i>binding</i></ClLinks> established by the outer <ClLinks  term={"form"}><i>form</i></ClLinks>. For example: 
+If two <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> that *establish lexical bindings* with the same *name N* are textually nested, then references to *N* within the inner <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> refer to the <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> established by the inner <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; the inner <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> for *N shadows* the outer <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> for *N*. Outside the inner <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> but inside the outer one, references to *N* refer to the <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> established by the outer <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. For example: 
 
 
 
@@ -22,11 +22,11 @@ z)
 
 
 
-The <ClLinks  term={"binding"}><i>binding</i></ClLinks> of the variable z by <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> shadows the <ClLinks  term={"parameter"}><i>parameter</i></ClLinks> binding for the function test. The reference to the variable z in the <DictionaryLink  term={"print"}><b>print</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> refers to the <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> binding. The reference to z at the end of the function test refers to the <ClLinks  term={"parameter"}><i>parameter</i></ClLinks> named z. 
+The <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> of the variable z by <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> shadows the <GlossaryTerm  term={"parameter"}><i>parameter</i></GlossaryTerm> binding for the function test. The reference to the variable z in the <DictionaryLink  term={"print"}><b>print</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> refers to the <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> binding. The reference to z at the end of the function test refers to the <GlossaryTerm  term={"parameter"}><i>parameter</i></GlossaryTerm> named z. 
 
 
 
-Constructs that are lexically scoped act as if new names were generated for each <ClLinks  term={"object"}><i>object</i></ClLinks> on each execution. Therefore, dynamic shadowing cannot occur. For example: 
+Constructs that are lexically scoped act as if new names were generated for each <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> on each execution. Therefore, dynamic shadowing cannot occur. For example: 
 
 
 
@@ -106,7 +106,7 @@ where f → #’(lambda () (return-from here<sub>1</sub> 4))
 
 
 
-At the time the funcall is executed there are two <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> outstanding, each apparently named here. The <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> executed as a result of the funcall operation refers to the outer outstanding <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> (here<sub>1</sub>), not the inner one (here<sub>2</sub>). It refers to that <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> textually visible at the point of execution of <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> (here abbreviated by the #’ syntax) that resulted in creation of the *function object* actually invoked by <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink>. 
+At the time the funcall is executed there are two <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> outstanding, each apparently named here. The <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> executed as a result of the funcall operation refers to the outer outstanding <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> (here<sub>1</sub>), not the inner one (here<sub>2</sub>). It refers to that <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> textually visible at the point of execution of <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> (here abbreviated by the #’ syntax) that resulted in creation of the *function object* actually invoked by <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink>. 
 
 
 

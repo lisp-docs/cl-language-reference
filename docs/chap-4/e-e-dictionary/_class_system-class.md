@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"class"}><b>class</b></DictionaryLink> represents <ClLinks  term={"object"}><i>objects</i></ClLinks> that determine the structure and behavior of their <ClLinks  term={"instance"}><i>instances</i></ClLinks>. Associated with an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"class"}><b>class</b></DictionaryLink> is information describing its place in the directed acyclic graph of *classes*, its <ClLinks  term={"slot"}><i>slots</i></ClLinks>, and its options. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"class"}><b>class</b></DictionaryLink> represents <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> that determine the structure and behavior of their <GlossaryTerm  term={"instance"}><i>instances</i></GlossaryTerm>. Associated with an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"class"}><b>class</b></DictionaryLink> is information describing its place in the directed acyclic graph of *classes*, its <GlossaryTerm  term={"slot"}><i>slots</i></GlossaryTerm>, and its options. 
 
 
 

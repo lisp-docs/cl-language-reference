@@ -1,4 +1,4 @@
-**special** <ClLinks  term={"declaration"}><i>Declaration</i></ClLinks> 
+**special** <GlossaryTerm  term={"declaration"}><i>Declaration</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*var*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+*var*—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks> or <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks> 
+<GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm> or <GlossaryTerm  term={"proclamation"}><i>proclamation</i></GlossaryTerm> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"variable"}><i>variable</i></ClLinks> 
+<GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm> 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Specifies that all of the *vars* named are dynamic. This specifier a↵ects variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> and a↵ects references. All variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> a↵ected are made to be dynamic <ClLinks  term={"binding"}><i>bindings</i></ClLinks>, and a↵ected variable references refer to the current dynamic <ClLinks  term={"binding"}><i>binding</i></ClLinks>. For example: 
+Specifies that all of the *vars* named are dynamic. This specifier a↵ects variable <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm> and a↵ects references. All variable <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm> a↵ected are made to be dynamic <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm>, and a↵ected variable references refer to the current dynamic <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm>. For example: 
 
 
 
@@ -74,7 +74,7 @@ Specifies that all of the *vars* named are dynamic. This specifier a↵ects vari
 
 
 
-A <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declaration does not a↵ect inner <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of a *var*; the inner <ClLinks  term={"binding"}><i>bindings</i></ClLinks> implicitly shadow a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declaration and must be explicitly re-declared to be <DictionaryLink  term={"special"}><b>special</b></DictionaryLink>. <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declarations never apply to function <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. 
+A <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declaration does not a↵ect inner <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm> of a *var*; the inner <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm> implicitly shadow a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declaration and must be explicitly re-declared to be <DictionaryLink  term={"special"}><b>special</b></DictionaryLink>. <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declarations never apply to function <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm>. 
 
 
 
@@ -82,7 +82,7 @@ A <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declaration 
 
 
 
-When used in a <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks>, a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> <GlossaryTerm styled={true} term={"declaration specifier"}><i>declaration specifier</i></GlossaryTerm> applies to all <ClLinks  term={"binding"}><i>bindings</i></ClLinks> as well as to all references of the mentioned variables. For example, after 
+When used in a <GlossaryTerm  term={"proclamation"}><i>proclamation</i></GlossaryTerm>, a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> <GlossaryTerm styled={true} term={"declaration specifier"}><i>declaration specifier</i></GlossaryTerm> applies to all <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm> as well as to all references of the mentioned variables. For example, after 
 
 
 

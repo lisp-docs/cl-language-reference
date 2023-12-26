@@ -14,4 +14,4 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"division-by-zero"}><b>division-by-zero</b></DictionaryLink> consists of error conditions that occur because of division by zero. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"division-by-zero"}><b>division-by-zero</b></DictionaryLink> consists of error conditions that occur because of division by zero. 

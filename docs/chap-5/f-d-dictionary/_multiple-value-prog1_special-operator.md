@@ -14,15 +14,15 @@
 
 
 
-*first-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
+*first-form*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated as described below. 
 
 
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
+<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated as described below. 
 
 
 
-*first-form-results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of *first-form*. 
+*first-form-results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> resulting from the <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of *first-form*. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<DictionaryLink  term={"multiple-value-prog1"}><b>multiple-value-prog1</b></DictionaryLink> evaluates *first-form* and saves all the values produced by that <ClLinks  term={"form"}><i>form</i></ClLinks>. It then evaluates each <ClLinks  term={"form"}><i>form</i></ClLinks> from left to right, discarding their values. 
+<DictionaryLink  term={"multiple-value-prog1"}><b>multiple-value-prog1</b></DictionaryLink> evaluates *first-form* and saves all the values produced by that <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. It then evaluates each <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> from left to right, discarding their values. 
 
 
 

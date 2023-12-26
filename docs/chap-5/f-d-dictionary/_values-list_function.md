@@ -1,4 +1,4 @@
-**values-list** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**values-list** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"list"}><i>list</i></ClLinks>—a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
+<GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>—a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"element"}><i>elements</i></ClLinks>—the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks>. 
+<GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm>—the <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks> as <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub>. 
+Returns the <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> as <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub>. 
 
 
 
@@ -57,11 +57,11 @@ Should signal <DictionaryLink  term={"type-error"}><b>type-error</b></Dictionary
 
 
 
-(values-list <ClLinks  term={"list"}><i>list</i></ClLinks>) *⌘* (apply #’values <ClLinks  term={"list"}><i>list</i></ClLinks>) 
+(values-list <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>) *⌘* (apply #’values <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>) 
 
 
 
-(equal *x* (multiple-value-list (values-list *x*))) returns <ClLinks  term={"true"}><i>true</i></ClLinks> for all *lists x*. 
+(equal *x* (multiple-value-list (values-list *x*))) returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> for all *lists x*. 
 
 
 

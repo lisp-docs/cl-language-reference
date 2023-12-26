@@ -1,4 +1,4 @@
-**write-sequence** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**write-sequence** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks>—an *output stream*. 
+<GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>—an *output stream*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<DictionaryLink  term={"write-sequence"}><b>write-sequence</b></DictionaryLink> writes the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the subsequence of *sequence bounded* by *start* and *end* to <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<DictionaryLink  term={"write-sequence"}><b>write-sequence</b></DictionaryLink> writes the <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of the subsequence of *sequence bounded* by *start* and *end* to <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
@@ -52,7 +52,7 @@
 
 
 
-Modifies <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Modifies <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
@@ -60,11 +60,11 @@ Modifies <ClLinks  term={"stream"}><i>stream</i></ClLinks>.
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *start* is not a non-negative *integer* . Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *end* is not a non-negative *integer* or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+Should be prepared to signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *start* is not a non-negative *integer* . Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *end* is not a non-negative *integer* or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-Might signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if an <ClLinks  term={"element"}><i>element</i></ClLinks> of the *bounded sequence* is not a member of the <GlossaryTerm styled={true} term={"stream element type"}><i>stream element type</i></GlossaryTerm> of the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Might signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if an <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of the *bounded sequence* is not a member of the <GlossaryTerm styled={true} term={"stream element type"}><i>stream element type</i></GlossaryTerm> of the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
@@ -80,7 +80,7 @@ Section 3.2.1 (Compiler Terminology), <DictionaryLink  term={"read-sequence"}><b
 
 
 
-<DictionaryLink  term={"write-sequence"}><b>write-sequence</b></DictionaryLink> is identical in effect to iterating over the indicated subsequence and writing one <ClLinks  term={"element"}><i>element</i></ClLinks> at a time to <ClLinks  term={"stream"}><i>stream</i></ClLinks>, but may be more efficient than the equivalent loop. An efficient implementation is more likely to exist for the case where the *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with the same <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> as the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<DictionaryLink  term={"write-sequence"}><b>write-sequence</b></DictionaryLink> is identical in effect to iterating over the indicated subsequence and writing one <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> at a time to <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>, but may be more efficient than the equivalent loop. An efficient implementation is more likely to exist for the case where the *sequence* is a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> with the same <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> as the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 

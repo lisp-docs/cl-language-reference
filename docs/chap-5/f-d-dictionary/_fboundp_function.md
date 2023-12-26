@@ -1,4 +1,4 @@
-**fboundp** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**fboundp** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>. 
+<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"name"}><i>name</i></ClLinks> is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> is <GlossaryTerm  term={"fbound"}><i>fbound</i></GlossaryTerm>; otherwise, returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
@@ -63,7 +63,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"name"}
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"name"}><i>name</i></ClLinks> is not a *function name*. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> is not a *function name*. 
 
 
 
@@ -91,7 +91,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <Diction
 
 
 
-It is permissible to call <DictionaryLink  term={"symbol-function"}><b>symbol-function</b></DictionaryLink> on any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>. 
+It is permissible to call <DictionaryLink  term={"symbol-function"}><b>symbol-function</b></DictionaryLink> on any <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> that is <GlossaryTerm  term={"fbound"}><i>fbound</i></GlossaryTerm>. 
 
 
 

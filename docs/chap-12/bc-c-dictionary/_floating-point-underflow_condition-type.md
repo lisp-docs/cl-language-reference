@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"floating-point-underflow"}><b>floating-point-underflow</b></DictionaryLink> consists of error conditions that occur because of floating-point underflow. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"floating-point-underflow"}><b>floating-point-underflow</b></DictionaryLink> consists of error conditions that occur because of floating-point underflow. 
 
 
 

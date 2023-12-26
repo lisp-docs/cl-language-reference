@@ -2,15 +2,15 @@
 
 
 
-Except where explicitly allowed, the consequences are undefined if any of the following actions are performed on an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm> of the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks>: 
+Except where explicitly allowed, the consequences are undefined if any of the following actions are performed on an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm> of the COMMON-LISP <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>: 
 
 
 
-1\. <ClLinks  term={"binding"}><i>Binding</i></ClLinks> or altering its value (lexically or dynamically). (Some exceptions are noted below.) 2. Defining, undefining, or <ClLinks  term={"binding"}><i>binding</i></ClLinks> it as a <ClLinks  term={"function"}><i>function</i></ClLinks>. (Some exceptions are noted below.) 
+1\. <GlossaryTerm  term={"binding"}><i>Binding</i></GlossaryTerm> or altering its value (lexically or dynamically). (Some exceptions are noted below.) 2. Defining, undefining, or <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> it as a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>. (Some exceptions are noted below.) 
 
 
 
-3\. Defining, undefining, or <ClLinks  term={"binding"}><i>binding</i></ClLinks> it as a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm>. (Some exceptions are noted below.) 
+3\. Defining, undefining, or <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> it as a <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm>. (Some exceptions are noted below.) 
 
 
 
@@ -18,7 +18,7 @@ Except where explicitly allowed, the consequences are undefined if any of the fo
 
 
 
-6\. Defining it as a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> with a <DictionaryLink  term={"declaration"}><b>declaration</b></DictionaryLink> <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks>. 
+6\. Defining it as a <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm> with a <DictionaryLink  term={"declaration"}><b>declaration</b></DictionaryLink> <GlossaryTerm  term={"proclamation"}><i>proclamation</i></GlossaryTerm>. 
 
 
 
@@ -54,7 +54,7 @@ Except where explicitly allowed, the consequences are undefined if any of the fo
 
 
 
-12\. Removing it from the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+12\. Removing it from the COMMON-LISP <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
@@ -82,7 +82,7 @@ Except where explicitly allowed, the consequences are undefined if any of the fo
 
 
 
-19\. Defining a <ClLinks  term={"method"}><i>method</i></ClLinks> for a *standardized generic function* which is <ClLinks  term={"applicable"}><i>applicable</i></ClLinks> when all of the <ClLinks  term={"argument"}><i>arguments</i></ClLinks> are <GlossaryTerm styled={true} term={"direct instance"}><i>direct instances</i></GlossaryTerm> of *standardized classes*. 
+19\. Defining a <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> for a *standardized generic function* which is <GlossaryTerm  term={"applicable"}><i>applicable</i></GlossaryTerm> when all of the <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> are <GlossaryTerm styled={true} term={"direct instance"}><i>direct instances</i></GlossaryTerm> of *standardized classes*. 
 
 
 

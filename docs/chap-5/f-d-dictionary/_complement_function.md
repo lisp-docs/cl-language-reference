@@ -1,4 +1,4 @@
-**complement** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**complement** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+<GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>—a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 
-*complement-function*—a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+*complement-function*—a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a <ClLinks  term={"function"}><i>function</i></ClLinks> that takes the same <ClLinks  term={"argument"}><i>arguments</i></ClLinks> as <ClLinks  term={"function"}><i>function</i></ClLinks>, and has the same side-effect behavior as <ClLinks  term={"function"}><i>function</i></ClLinks>, but returns only a single value: a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> with the opposite truth value of that which would be returned as the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> of <ClLinks  term={"function"}><i>function</i></ClLinks>. That is, when the <ClLinks  term={"function"}><i>function</i></ClLinks> would have returned <ClLinks  term={"true"}><i>true</i></ClLinks> as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> the *complement-function* returns <ClLinks  term={"false"}><i>false</i></ClLinks>, and when the <ClLinks  term={"function"}><i>function</i></ClLinks> would have returned <ClLinks  term={"false"}><i>false</i></ClLinks> as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> the *complement-function* returns <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+Returns a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> that takes the same <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> as <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>, and has the same side-effect behavior as <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>, but returns only a single value: a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> with the opposite truth value of that which would be returned as the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> of <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>. That is, when the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> would have returned <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> the *complement-function* returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>, and when the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> would have returned <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> the *complement-function* returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. 
 
 
 
@@ -57,7 +57,7 @@ In Common Lisp, functions with names like “*xxx*-if-not” are related to func
 
 
 
-(*xxx*-if-not *f* . <ClLinks  term={"argument"}><i>arguments</i></ClLinks>) *≡* (*xxx*-if (complement *f*) . <ClLinks  term={"argument"}><i>arguments</i></ClLinks>) 
+(*xxx*-if-not *f* . <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm>) *≡* (*xxx*-if (complement *f*) . <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm>) 
 
 
 
@@ -85,7 +85,7 @@ Data and Control
 
 
 
-Note that since the “*xxx*-if-not” <ClLinks  term={"function"}><i>functions</i></ClLinks> and the :test-not arguments have been deprecated, uses of “*xxx*-if” <ClLinks  term={"function"}><i>functions</i></ClLinks> or :test arguments with <DictionaryLink  term={"complement"}><b>complement</b></DictionaryLink> are preferred. 
+Note that since the “*xxx*-if-not” <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> and the :test-not arguments have been deprecated, uses of “*xxx*-if” <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> or :test arguments with <DictionaryLink  term={"complement"}><b>complement</b></DictionaryLink> are preferred. 
 
 
 

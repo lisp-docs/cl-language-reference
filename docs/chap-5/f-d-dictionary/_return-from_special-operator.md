@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> <ClLinks  term={"name"}><i>name</i></ClLinks> [*result*] → 
+<DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> [*result*] → 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a <GlossaryTerm styled={true} term={"block tag"}><i>block tag</i></GlossaryTerm>; not evaluated. 
+<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"block tag"}><i>block tag</i></GlossaryTerm>; not evaluated. 
 
 
 
-*result*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+*result*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Returns control and <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub> from a lexically enclosing <ClLinks  term={"block"}><i>block</i></ClLinks>. 
+Returns control and <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub> from a lexically enclosing <GlossaryTerm  term={"block"}><i>block</i></GlossaryTerm>. 
 
 
 
-A <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> named <ClLinks  term={"name"}><i>name</i></ClLinks> must lexically enclose the occurrence of <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink>; any *values yielded* by the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of *result* are immediately returned from the innermost such lexically enclosing <ClLinks  term={"block"}><i>block</i></ClLinks>. 
+A <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> named <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> must lexically enclose the occurrence of <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink>; any *values yielded* by the <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of *result* are immediately returned from the innermost such lexically enclosing <GlossaryTerm  term={"block"}><i>block</i></GlossaryTerm>. 
 
 
 

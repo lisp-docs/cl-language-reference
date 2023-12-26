@@ -2,7 +2,7 @@
 
 
 
-A <GlossaryTerm styled={true} term={"potential number"}><i>potential number</i></GlossaryTerm> cannot contain any *escape characters*. An *escape character* robs the following <ClLinks  term={"character"}><i>character</i></ClLinks> of all syntactic qualities, forcing it to be strictly <ClLinks  term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>2</sub> and therefore unsuitable for use in a <GlossaryTerm styled={true} term={"potential number"}><i>potential number</i></GlossaryTerm> . For example, all of the following representations are interpreted as <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>, not <ClLinks  term={"number"}><i>numbers</i></ClLinks>: 
+A <GlossaryTerm styled={true} term={"potential number"}><i>potential number</i></GlossaryTerm> cannot contain any *escape characters*. An *escape character* robs the following <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> of all syntactic qualities, forcing it to be strictly <GlossaryTerm  term={"alphabetic"}><i>alphabetic</i></GlossaryTerm><sub>2</sub> and therefore unsuitable for use in a <GlossaryTerm styled={true} term={"potential number"}><i>potential number</i></GlossaryTerm> . For example, all of the following representations are interpreted as <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>, not <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm>: 
 
 
 
@@ -10,7 +10,7 @@ A <GlossaryTerm styled={true} term={"potential number"}><i>potential number</i><
 
 
 
-In each case, removing the *escape character* (or <ClLinks  term={"character"}><i>characters</i></ClLinks>) would cause the token to be a <GlossaryTerm styled={true} term={"potential number"}><i>potential number</i></GlossaryTerm> . 
+In each case, removing the *escape character* (or <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm>) would cause the token to be a <GlossaryTerm styled={true} term={"potential number"}><i>potential number</i></GlossaryTerm> . 
 
 
 

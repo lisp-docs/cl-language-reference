@@ -1,4 +1,4 @@
-**do-symbols, do-external-symbols, do-all-symbols** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**do-symbols, do-external-symbols, do-all-symbols** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<DictionaryLink  term={"do-symbols"}><b>do-symbols</b></DictionaryLink> (*var* [<ClLinks  term={"package"}><i>package</i></ClLinks> [*result-form*]]) 
+<DictionaryLink  term={"do-symbols"}><b>do-symbols</b></DictionaryLink> (*var* [<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> [*result-form*]]) 
 
 
 
-<ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *\{tag | statement\}*\* 
+<GlossaryTerm  term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* *\{tag | statement\}*\* 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-<DictionaryLink  term={"do-external-symbols"}><b>do-external-symbols</b></DictionaryLink> (*var* [<ClLinks  term={"package"}><i>package</i></ClLinks> [*result-form*]]) 
+<DictionaryLink  term={"do-external-symbols"}><b>do-external-symbols</b></DictionaryLink> (*var* [<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> [*result-form*]]) 
 
 
 
-<ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *\{tag | statement\}*\* 
+<GlossaryTerm  term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* *\{tag | statement\}*\* 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *\{tag | statement\}*\* 
+<GlossaryTerm  term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* *\{tag | statement\}*\* 
 
 
 
@@ -50,19 +50,19 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> ; evaluated. The default in <DictionaryLink  term={"do-symbols"}><b>do-symbols</b></DictionaryLink> and <DictionaryLink  term={"do-external-symbols"}><b>do-external-symbols</b></DictionaryLink> is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
+<GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> ; evaluated. The default in <DictionaryLink  term={"do-symbols"}><b>do-symbols</b></DictionaryLink> and <DictionaryLink  term={"do-external-symbols"}><b>do-external-symbols</b></DictionaryLink> is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
-*result-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated as described below. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+*result-form*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated as described below. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
 
 
 
-<ClLinks  term={"tag"}><i>tag</i></ClLinks>—a <GlossaryTerm styled={true} term={"go tag"}><i>go tag</i></GlossaryTerm>; not evaluated. 
+<GlossaryTerm  term={"tag"}><i>tag</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"go tag"}><i>go tag</i></GlossaryTerm>; not evaluated. 
 
 
 
@@ -70,7 +70,7 @@
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the *result-form* if a <GlossaryTerm styled={true} term={"normal return"}><i>normal return</i></GlossaryTerm> occurs, or else, if an <GlossaryTerm styled={true} term={"explicit return"}><i>explicit return</i></GlossaryTerm> occurs, the <ClLinks  term={"value"}><i>values</i></ClLinks> that were transferred. 
+*results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by the *result-form* if a <GlossaryTerm styled={true} term={"normal return"}><i>normal return</i></GlossaryTerm> occurs, or else, if an <GlossaryTerm styled={true} term={"explicit return"}><i>explicit return</i></GlossaryTerm> occurs, the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> that were transferred. 
 
 
 
@@ -78,7 +78,7 @@
 
 
 
-<DictionaryLink  term={"do-symbols"}><b>do-symbols</b></DictionaryLink>, <DictionaryLink  term={"do-external-symbols"}><b>do-external-symbols</b></DictionaryLink>, and <DictionaryLink  term={"do-all-symbols"}><b>do-all-symbols</b></DictionaryLink> iterate over the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> of <ClLinks  term={"package"}><i>packages</i></ClLinks>. For each <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in the set of <ClLinks  term={"package"}><i>packages</i></ClLinks> chosen, the *var* is bound to the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, and the *statements* in the body are executed. When all the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> have been processed, *result-form* is evaluated and returned as the value of the macro. 
+<DictionaryLink  term={"do-symbols"}><b>do-symbols</b></DictionaryLink>, <DictionaryLink  term={"do-external-symbols"}><b>do-external-symbols</b></DictionaryLink>, and <DictionaryLink  term={"do-all-symbols"}><b>do-all-symbols</b></DictionaryLink> iterate over the <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> of <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm>. For each <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> in the set of <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> chosen, the *var* is bound to the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, and the *statements* in the body are executed. When all the <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> have been processed, *result-form* is evaluated and returned as the value of the macro. 
 
 
 
@@ -98,15 +98,15 @@
 
 
 
-<DictionaryLink  term={"do-symbols"}><b>do-symbols</b></DictionaryLink> iterates over the *symbols accessible* in <ClLinks  term={"package"}><i>package</i></ClLinks>. *Statements* may execute more than once for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are inherited from multiple <ClLinks  term={"package"}><i>packages</i></ClLinks>. 
+<DictionaryLink  term={"do-symbols"}><b>do-symbols</b></DictionaryLink> iterates over the *symbols accessible* in <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. *Statements* may execute more than once for <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> that are inherited from multiple <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm>. 
 
 
 
-<DictionaryLink  term={"do-all-symbols"}><b>do-all-symbols</b></DictionaryLink> iterates on every <GlossaryTerm styled={true} term={"registered package"}><i>registered package</i></GlossaryTerm>. <DictionaryLink  term={"do-all-symbols"}><b>do-all-symbols</b></DictionaryLink> will not process every <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whatsoever, because a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> not <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in any <GlossaryTerm styled={true} term={"registered package"}><i>registered package</i></GlossaryTerm> will not be processed. <DictionaryLink  term={"do-all-symbols"}><b>do-all-symbols</b></DictionaryLink> may cause a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is <ClLinks  term={"present"}><i>present</i></ClLinks> in several <ClLinks  term={"package"}><i>packages</i></ClLinks> to be processed more than once. 
+<DictionaryLink  term={"do-all-symbols"}><b>do-all-symbols</b></DictionaryLink> iterates on every <GlossaryTerm styled={true} term={"registered package"}><i>registered package</i></GlossaryTerm>. <DictionaryLink  term={"do-all-symbols"}><b>do-all-symbols</b></DictionaryLink> will not process every <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> whatsoever, because a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> not <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> in any <GlossaryTerm styled={true} term={"registered package"}><i>registered package</i></GlossaryTerm> will not be processed. <DictionaryLink  term={"do-all-symbols"}><b>do-all-symbols</b></DictionaryLink> may cause a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> that is <GlossaryTerm  term={"present"}><i>present</i></GlossaryTerm> in several <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> to be processed more than once. 
 
 
 
-<DictionaryLink  term={"do-external-symbols"}><b>do-external-symbols</b></DictionaryLink> iterates on the external symbols of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<DictionaryLink  term={"do-external-symbols"}><b>do-external-symbols</b></DictionaryLink> iterates on the external symbols of <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
 
 
 
@@ -114,19 +114,19 @@ When *result-form* is evaluated, *var* is bound and has the value <DictionaryLin
 
 
 
-An <GlossaryTerm styled={true} term={"implicit block"}><i>implicit block</i></GlossaryTerm> named <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> surrounds the entire <DictionaryLink  term={"do-symbols"}><b>do-symbols</b></DictionaryLink>, <DictionaryLink  term={"do-external-symbols"}><b>do-external-symbols</b></DictionaryLink>, or <DictionaryLink  term={"do-all-symbols"}><b>do-all-symbols</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. <DictionaryLink  term={"return"}><b>return</b></DictionaryLink> or <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> may be used to terminate the iteration prematurely. 
+An <GlossaryTerm styled={true} term={"implicit block"}><i>implicit block</i></GlossaryTerm> named <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> surrounds the entire <DictionaryLink  term={"do-symbols"}><b>do-symbols</b></DictionaryLink>, <DictionaryLink  term={"do-external-symbols"}><b>do-external-symbols</b></DictionaryLink>, or <DictionaryLink  term={"do-all-symbols"}><b>do-all-symbols</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. <DictionaryLink  term={"return"}><b>return</b></DictionaryLink> or <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> may be used to terminate the iteration prematurely. 
 
 
 
-If execution of the body affects which <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are contained in the set of <ClLinks  term={"package"}><i>packages</i></ClLinks> over which iteration is occurring, other than to remove the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> currently the value of *var* by using <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink>, the consequences are undefined. 
+If execution of the body affects which <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> are contained in the set of <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> over which iteration is occurring, other than to remove the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> currently the value of *var* by using <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink>, the consequences are undefined. 
 
 
 
-For each of these macros, the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of the name binding does not include any initial value form, but the optional result forms are included. 
+For each of these macros, the <GlossaryTerm  term={"scope"}><i>scope</i></GlossaryTerm> of the name binding does not include any initial value form, but the optional result forms are included. 
 
 
 
-Any <ClLinks  term={"tag"}><i>tag</i></ClLinks> in the body is treated as with <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink>. 
+Any <GlossaryTerm  term={"tag"}><i>tag</i></GlossaryTerm> in the body is treated as with <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink>. 
 
 
 

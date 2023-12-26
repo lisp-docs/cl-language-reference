@@ -10,7 +10,7 @@ A <GlossaryTerm styled={true} term={"deftype lambda list"}><i>deftype lambda lis
 
 
 
-A <GlossaryTerm styled={true} term={"deftype lambda list"}><i>deftype lambda list</i></GlossaryTerm> differs from a <GlossaryTerm styled={true} term={"macro lambda list"}><i>macro lambda list</i></GlossaryTerm> only in that if no *init-form* is supplied for an <GlossaryTerm styled={true} term={"optional parameter"}><i>optional parameter</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"keyword parameter"}><i>keyword parameter</i></GlossaryTerm> in the *lambda-list*, the default <ClLinks  term={"value"}><i>value</i></ClLinks> for that <ClLinks  term={"parameter"}><i>parameter</i></ClLinks> is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\*** (rather than <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>).  
+A <GlossaryTerm styled={true} term={"deftype lambda list"}><i>deftype lambda list</i></GlossaryTerm> differs from a <GlossaryTerm styled={true} term={"macro lambda list"}><i>macro lambda list</i></GlossaryTerm> only in that if no *init-form* is supplied for an <GlossaryTerm styled={true} term={"optional parameter"}><i>optional parameter</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"keyword parameter"}><i>keyword parameter</i></GlossaryTerm> in the *lambda-list*, the default <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> for that <GlossaryTerm  term={"parameter"}><i>parameter</i></GlossaryTerm> is the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> **\*** (rather than <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>).  
 
 
 

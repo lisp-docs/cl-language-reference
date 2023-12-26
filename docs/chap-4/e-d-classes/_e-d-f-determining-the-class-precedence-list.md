@@ -2,11 +2,11 @@
 
 
 
-The <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> form for a <ClLinks  term={"class"}><i>class</i></ClLinks> provides a total ordering on that <ClLinks  term={"class"}><i>class</i></ClLinks> and its direct *superclasses*. This ordering is called the <GlossaryTerm styled={true} term={"local precedence order"}><i>local precedence order</i></GlossaryTerm>. It is an ordered list of the <ClLinks  term={"class"}><i>class</i></ClLinks> and its direct *superclasses*. The <GlossaryTerm styled={true} term={"class precedence list"}><i>class precedence list</i></GlossaryTerm> for a class *C* is a total ordering on *C* and its *superclasses* that is consistent with the <GlossaryTerm styled={true} term={"local precedence order"}><i>local precedence orders</i></GlossaryTerm> for each of *C* and its *superclasses*. 
+The <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> form for a <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> provides a total ordering on that <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> and its direct *superclasses*. This ordering is called the <GlossaryTerm styled={true} term={"local precedence order"}><i>local precedence order</i></GlossaryTerm>. It is an ordered list of the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> and its direct *superclasses*. The <GlossaryTerm styled={true} term={"class precedence list"}><i>class precedence list</i></GlossaryTerm> for a class *C* is a total ordering on *C* and its *superclasses* that is consistent with the <GlossaryTerm styled={true} term={"local precedence order"}><i>local precedence orders</i></GlossaryTerm> for each of *C* and its *superclasses*. 
 
 
 
-A <ClLinks  term={"class"}><i>class</i></ClLinks> precedes its direct *superclasses*, and a direct <ClLinks  term={"superclass"}><i>superclass</i></ClLinks> precedes all other direct *superclasses* specified to its right in the *superclasses* list of the <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> form. For every class *C*, define 
+A <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> precedes its direct *superclasses*, and a direct <GlossaryTerm  term={"superclass"}><i>superclass</i></GlossaryTerm> precedes all other direct *superclasses* specified to its right in the *superclasses* list of the <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> form. For every class *C*, define 
 
 
 

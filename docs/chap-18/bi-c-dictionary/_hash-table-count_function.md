@@ -1,4 +1,4 @@
-**hash-table-count** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**hash-table-count** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 

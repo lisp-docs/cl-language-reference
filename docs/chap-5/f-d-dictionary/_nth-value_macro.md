@@ -1,4 +1,4 @@
-**nth-value** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**nth-value** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
+<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated as described below. 
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Evaluates *n* and then <ClLinks  term={"form"}><i>form</i></ClLinks>, returning as its only value the *n*th value *yielded* by <ClLinks  term={"form"}><i>form</i></ClLinks>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if *n* is greater than or equal to the number of <ClLinks  term={"value"}><i>values</i></ClLinks> returned by <ClLinks  term={"form"}><i>form</i></ClLinks>. (The first returned value is numbered 0.) 
+Evaluates *n* and then <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, returning as its only value the *n*th value *yielded* by <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if *n* is greater than or equal to the number of <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> returned by <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. (The first returned value is numbered 0.) 
 
 
 
@@ -61,11 +61,11 @@ Evaluates *n* and then <ClLinks  term={"form"}><i>form</i></ClLinks>, returning 
 
 
 
-Operationally, the following relationship is true, although <DictionaryLink  term={"nth-value"}><b>nth-value</b></DictionaryLink> might be more ecient in some <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> because, for example, some *consing* might be avoided. 
+Operationally, the following relationship is true, although <DictionaryLink  term={"nth-value"}><b>nth-value</b></DictionaryLink> might be more ecient in some <GlossaryTerm  term={"implementation"}><i>implementations</i></GlossaryTerm> because, for example, some *consing* might be avoided. 
 
 
 
-(nth-value *n form*) *⌘* (nth *n* (multiple-value-list <ClLinks  term={"form"}><i>form</i></ClLinks>)) 
+(nth-value *n form*) *⌘* (nth *n* (multiple-value-list <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>)) 
 
 
 
@@ -77,7 +77,7 @@ Operationally, the following relationship is true, although <DictionaryLink  ter
 
 
 
-**prog** (*\{var |* (*var* [*init-form*])*\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *\{tag | statement\}*\* 
+**prog** (*\{var |* (*var* [*init-form*])*\}*\*) <GlossaryTerm  term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* *\{tag | statement\}*\* 
 
 
 
@@ -85,7 +85,7 @@ Operationally, the following relationship is true, although <DictionaryLink  ter
 
 
 
-**prog\*** (*\{var |* (*var* [*init-form*])*\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *\{tag | statement\}*\* 
+**prog\*** (*\{var |* (*var* [*init-form*])*\}*\*) <GlossaryTerm  term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* *\{tag | statement\}*\* 
 
 
 
@@ -101,15 +101,15 @@ Operationally, the following relationship is true, although <DictionaryLink  ter
 
 
 
-*init-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+*init-form*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
 
 
 
-<ClLinks  term={"tag"}><i>tag</i></ClLinks>—a <GlossaryTerm styled={true} term={"go tag"}><i>go tag</i></GlossaryTerm>; not evaluated. 
+<GlossaryTerm  term={"tag"}><i>tag</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"go tag"}><i>go tag</i></GlossaryTerm>; not evaluated. 
 
 
 
@@ -117,7 +117,7 @@ Operationally, the following relationship is true, although <DictionaryLink  ter
 
 
 
-*results*—<DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if a <GlossaryTerm styled={true} term={"normal return"}><i>normal return</i></GlossaryTerm> occurs, or else, if an <GlossaryTerm styled={true} term={"explicit return"}><i>explicit return</i></GlossaryTerm> occurs, the <ClLinks  term={"value"}><i>values</i></ClLinks> that were transferred. 
+*results*—<DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if a <GlossaryTerm styled={true} term={"normal return"}><i>normal return</i></GlossaryTerm> occurs, or else, if an <GlossaryTerm styled={true} term={"explicit return"}><i>explicit return</i></GlossaryTerm> occurs, the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> that were transferred. 
 
 
 
@@ -133,7 +133,7 @@ Three distinct operations are performed by **prog** and **prog\***: they bind lo
 
 
 
-<ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* 
+<GlossaryTerm  term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* 
 
 
 
@@ -193,15 +193,15 @@ For **prog**, *init-forms* are evaluated first, in the order in which they are s
 
 
 
-The body of **prog** is executed as if it were a <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>; the <DictionaryLink  term={"go"}><b>go</b></DictionaryLink> statement can be used to transfer control to a <ClLinks  term={"tag"}><i>tag</i></ClLinks>. <ClLinks  term={"tag"}><i>Tags</i></ClLinks> label *statements*. 
+The body of **prog** is executed as if it were a <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; the <DictionaryLink  term={"go"}><b>go</b></DictionaryLink> statement can be used to transfer control to a <GlossaryTerm  term={"tag"}><i>tag</i></GlossaryTerm>. <GlossaryTerm  term={"tag"}><i>Tags</i></GlossaryTerm> label *statements*. 
 
 
 
-**prog** implicitly establishes a <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> named <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> around the entire **prog** <ClLinks  term={"form"}><i>form</i></ClLinks>, so that <DictionaryLink  term={"return"}><b>return</b></DictionaryLink> can be used at any time to exit from the **prog** <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+**prog** implicitly establishes a <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> named <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> around the entire **prog** <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, so that <DictionaryLink  term={"return"}><b>return</b></DictionaryLink> can be used at any time to exit from the **prog** <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-The di↵erence between **prog\*** and **prog** is that in **prog\*** the <ClLinks  term={"binding"}><i>binding</i></ClLinks> and initialization of the *vars* is done <ClLinks  term={"sequentially"}><i>sequentially</i></ClLinks>, so that the *init-form* for each one can use the values of previous ones. 
+The di↵erence between **prog\*** and **prog** is that in **prog\*** the <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> and initialization of the *vars* is done <GlossaryTerm  term={"sequentially"}><i>sequentially</i></GlossaryTerm>, so that the *init-form* for each one can use the values of previous ones. 
 
 
 

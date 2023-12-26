@@ -1,4 +1,4 @@
-**make-string-output-stream** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**make-string-output-stream** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -38,11 +38,11 @@
 
 
 
-Returns an *output string stream* that accepts <ClLinks  term={"character"}><i>characters</i></ClLinks> and makes available (via <DictionaryLink  term={"get-output-stream-string"}><b>get-output-stream-string</b></DictionaryLink>) a <ClLinks  term={"string"}><i>string</i></ClLinks> that contains the <ClLinks  term={"character"}><i>characters</i></ClLinks> that were actually output. 
+Returns an *output string stream* that accepts <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> and makes available (via <DictionaryLink  term={"get-output-stream-string"}><b>get-output-stream-string</b></DictionaryLink>) a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> that contains the <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> that were actually output. 
 
 
 
-The *element-type* names the <ClLinks  term={"type"}><i>type</i></ClLinks> of the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"string"}><i>string</i></ClLinks>; a <ClLinks  term={"string"}><i>string</i></ClLinks> is constructed of the most specialized <ClLinks  term={"type"}><i>type</i></ClLinks> that can accommodate <ClLinks  term={"element"}><i>elements</i></ClLinks> of that *element-type*. 
+The *element-type* names the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> of the <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of the <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>; a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> is constructed of the most specialized <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> that can accommodate <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of that *element-type*. 
 
 
 

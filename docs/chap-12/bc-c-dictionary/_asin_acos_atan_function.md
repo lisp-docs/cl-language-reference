@@ -1,4 +1,4 @@
-**asin, acos, atan** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**asin, acos, atan** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
-*number1*—a <ClLinks  term={"number"}><i>number</i></ClLinks> if *number2* is not supplied, or a *real* if *number2* is supplied. 
+*number1*—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> if *number2* is not supplied, or a *real* if *number2* is supplied. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-*radians*—a <ClLinks  term={"number"}><i>number</i></ClLinks> (of radians). 
+*radians*—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> (of radians). 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-The arc sine, arc cosine, and arc tangent (with only *number1* supplied) functions can be defined mathematically for <ClLinks  term={"number"}><i>number</i></ClLinks> or *number1* specified as *x* as in Figure 12–14. 
+The arc sine, arc cosine, and arc tangent (with only *number1* supplied) functions can be defined mathematically for <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> or *number1* specified as *x* as in Figure 12–14. 
 
 
 
@@ -72,7 +72,7 @@ If both *number1* and *number2* are supplied for <DictionaryLink  term={"atan"}>
 
 
 
-For a *real number1*, the result is a *real* and lies between *−π/*2 and *π/*2 (both exclusive). *number1* can be a <ClLinks  term={"complex"}><i>complex</i></ClLinks> if *number2* is not supplied. If both are supplied, *number2* can be zero provided *number1* is not zero. 
+For a *real number1*, the result is a *real* and lies between *−π/*2 and *π/*2 (both exclusive). *number1* can be a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> if *number2* is not supplied. If both are supplied, *number2* can be zero provided *number1* is not zero. 
 
 
 
@@ -210,7 +210,7 @@ For <DictionaryLink  term={"atan"}><b>atan</b></DictionaryLink>, the signs of *n
 
 
 
-<DictionaryLink  term={"acos"}><b>acos</b></DictionaryLink> and <DictionaryLink  term={"asin"}><b>asin</b></DictionaryLink> should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . <DictionaryLink  term={"atan"}><b>atan</b></DictionaryLink> should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if one argument is supplied and that argument is not a <ClLinks  term={"number"}><i>number</i></ClLinks> , or if two arguments are supplied and both of those arguments are not *reals*. 
+<DictionaryLink  term={"acos"}><b>acos</b></DictionaryLink> and <DictionaryLink  term={"asin"}><b>asin</b></DictionaryLink> should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is not a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . <DictionaryLink  term={"atan"}><b>atan</b></DictionaryLink> should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if one argument is supplied and that argument is not a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> , or if two arguments are supplied and both of those arguments are not *reals*. 
 
 
 
@@ -242,7 +242,7 @@ For <DictionaryLink  term={"atan"}><b>atan</b></DictionaryLink>, the signs of *n
 
 
 
-The result of either <DictionaryLink  term={"asin"}><b>asin</b></DictionaryLink> or <DictionaryLink  term={"acos"}><b>acos</b></DictionaryLink> can be a <ClLinks  term={"complex"}><i>complex</i></ClLinks> even if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ; this occurs when the absolute value of <ClLinks  term={"number"}><i>number</i></ClLinks> is greater than one. 
+The result of either <DictionaryLink  term={"asin"}><b>asin</b></DictionaryLink> or <DictionaryLink  term={"acos"}><b>acos</b></DictionaryLink> can be a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> even if <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is not a <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> ; this occurs when the absolute value of <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is greater than one. 
 
 
 
@@ -283,7 +283,7 @@ pi → 3.141592653589793L0
 
 
 
-An approximation to *π* in some other precision can be obtained by writing (float pi x), where x is a <ClLinks  term={"float"}><i>float</i></ClLinks> of the desired precision, or by writing (coerce pi <ClLinks  term={"type"}><i>type</i></ClLinks>), where <ClLinks  term={"type"}><i>type</i></ClLinks> is the desired type, such as <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>. 
+An approximation to *π* in some other precision can be obtained by writing (float pi x), where x is a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> of the desired precision, or by writing (coerce pi <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>), where <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is the desired type, such as <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>. 
 
 
 

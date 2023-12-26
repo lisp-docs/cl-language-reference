@@ -2,7 +2,7 @@
 
 
 
-A reference to a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that has been *established* as a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> can be used as a <ClLinks  term={"place"}><i>place</i></ClLinks>. In this case, <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> expands the reference and then analyzes the resulting <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+A reference to a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> that has been *established* as a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> can be used as a <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>. In this case, <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> expands the reference and then analyzes the resulting <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 

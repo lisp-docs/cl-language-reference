@@ -1,4 +1,4 @@
-**eq** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**eq** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*x*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*x*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-*y*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*y*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if its <ClLinks  term={"argument"}><i>arguments</i></ClLinks> are the same, identical <ClLinks  term={"object"}><i>object</i></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if its <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> are the same, identical <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>; otherwise, returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 **Examples:**
 ```lisp
@@ -82,15 +82,15 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if its <ClLinks  term={"ar
 
 
 
-<ClLinks  term={"object"}><i>Objects</i></ClLinks> that appear the same when printed are not necessarily <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> to each other. <ClLinks  term={"symbol"}><i>Symbols</i></ClLinks> that print the same usually are <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> to each other because of the use of the <DictionaryLink  term={"intern"}><b>intern</b></DictionaryLink> function. However, <ClLinks  term={"number"}><i>numbers</i></ClLinks> with the same value need not be <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink>, and two similar <ClLinks  term={"list"}><i>lists</i></ClLinks> are usually not <ClLinks  term={"identical"}><i>identical</i></ClLinks>. 
+<GlossaryTerm  term={"object"}><i>Objects</i></GlossaryTerm> that appear the same when printed are not necessarily <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> to each other. <GlossaryTerm  term={"symbol"}><i>Symbols</i></GlossaryTerm> that print the same usually are <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> to each other because of the use of the <DictionaryLink  term={"intern"}><b>intern</b></DictionaryLink> function. However, <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm> with the same value need not be <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink>, and two similar <GlossaryTerm  term={"list"}><i>lists</i></GlossaryTerm> are usually not <GlossaryTerm  term={"identical"}><i>identical</i></GlossaryTerm>. 
 
 
 
-An implementation is permitted to make “copies” of <ClLinks  term={"character"}><i>characters</i></ClLinks> and <ClLinks  term={"number"}><i>numbers</i></ClLinks> at any time. The effect is that Common Lisp makes no guarantee that <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> is true even when both its arguments are “the same thing” if that thing is a <ClLinks  term={"character"}><i>character</i></ClLinks> or <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+An implementation is permitted to make “copies” of <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> and <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm> at any time. The effect is that Common Lisp makes no guarantee that <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> is true even when both its arguments are “the same thing” if that thing is a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> or <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
-Most Common Lisp <ClLinks  term={"operator"}><i>operators</i></ClLinks> use <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> rather than <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> to compare objects, or else they default to <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> and only use <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> if specifically requested to do so. However, the following <ClLinks  term={"operator"}><i>operators</i></ClLinks> are defined to use <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> rather than <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> in a way that cannot be overridden by the <ClLinks  term={"code"}><i>code</i></ClLinks> which employs them: 
+Most Common Lisp <GlossaryTerm  term={"operator"}><i>operators</i></GlossaryTerm> use <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> rather than <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> to compare objects, or else they default to <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> and only use <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> if specifically requested to do so. However, the following <GlossaryTerm  term={"operator"}><i>operators</i></GlossaryTerm> are defined to use <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> rather than <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> in a way that cannot be overridden by the <GlossaryTerm  term={"code"}><i>code</i></GlossaryTerm> which employs them: 
 
 
 

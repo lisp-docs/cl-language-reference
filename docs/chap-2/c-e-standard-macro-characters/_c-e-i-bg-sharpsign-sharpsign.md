@@ -38,7 +38,7 @@ Without this notation, but with <DictionaryLink  term={"print-length"}><b>\*prin
 
 
 
-A reference #*n*# may only occur after a label #*n*=; forward references are not permitted. The reference may not appear as the labeled object itself (that is, #*n*=#*n*#) may not be written because the <ClLinks  term={"object"}><i>object</i></ClLinks> labeled by #*n*= is not well defined in this case. 
+A reference #*n*# may only occur after a label #*n*=; forward references are not permitted. The reference may not appear as the labeled object itself (that is, #*n*=#*n*#) may not be written because the <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> labeled by #*n*= is not well defined in this case. 
 
 
 

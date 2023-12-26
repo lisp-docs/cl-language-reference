@@ -15,19 +15,19 @@ sidebar_position: 119
 
 
 
-**wild** *adj.* 1. (of a <ClLinks  term={"namestring"}><i>namestring</i></ClLinks>) using an <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> syntax for naming files, which might “match” any of possibly several possible <ClLinks  term={"filename"}><i>filenames</i></ClLinks>, and which can therefore be used to refer to the aggregate of the <ClLinks  term={"file"}><i>files</i></ClLinks> named by those <ClLinks  term={"filename"}><i>filenames</i></ClLinks>. 2. (of a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>) a structured representation of a name which might “match” any of 
+**wild** *adj.* 1. (of a <GlossaryTerm  term={"namestring"}><i>namestring</i></GlossaryTerm>) using an <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm> syntax for naming files, which might “match” any of possibly several possible <GlossaryTerm  term={"filename"}><i>filenames</i></GlossaryTerm>, and which can therefore be used to refer to the aggregate of the <GlossaryTerm  term={"file"}><i>files</i></GlossaryTerm> named by those <GlossaryTerm  term={"filename"}><i>filenames</i></GlossaryTerm>. 2. (of a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>) a structured representation of a name which might “match” any of 
 
 
 
-possibly several <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks>, and which can therefore be used to refer to the aggregate of the <ClLinks  term={"file"}><i>files</i></ClLinks> named by those <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks>. The set of *wild pathnames* includes, but is not restricted to, <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks> which have a component which is :wild, or which have a directory component which contains :wild or :wild-inferors. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"wild-pathname-p"}><b>wild-pathname-p</b></DictionaryLink>. 
+possibly several <GlossaryTerm  term={"pathname"}><i>pathnames</i></GlossaryTerm>, and which can therefore be used to refer to the aggregate of the <GlossaryTerm  term={"file"}><i>files</i></GlossaryTerm> named by those <GlossaryTerm  term={"pathname"}><i>pathnames</i></GlossaryTerm>. The set of *wild pathnames* includes, but is not restricted to, <GlossaryTerm  term={"pathname"}><i>pathnames</i></GlossaryTerm> which have a component which is :wild, or which have a directory component which contains :wild or :wild-inferors. See the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"wild-pathname-p"}><b>wild-pathname-p</b></DictionaryLink>. 
 
 
 
-<DictionaryLink  term={"write"}><b>write</b></DictionaryLink> *v.t.* 1. (a <ClLinks  term={"binding"}><i>binding</i></ClLinks> or <ClLinks  term={"slot"}><i>slot</i></ClLinks> or component) to change the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"binding"}><i>binding</i></ClLinks> or <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 2. (an <ClLinks  term={"object"}><i>object</i></ClLinks> to a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) to output a representation of the <ClLinks  term={"object"}><i>object</i></ClLinks> to the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<DictionaryLink  term={"write"}><b>write</b></DictionaryLink> *v.t.* 1. (a <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> or <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm> or component) to change the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of the <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> or <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm>. 2. (an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> to a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>) to output a representation of the <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> to the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>. 
 
 
 
-**writer** *n.* a <ClLinks  term={"function"}><i>function</i></ClLinks> that <ClLinks  term={"write"}><i>writes</i></ClLinks><sub>1</sub> a <ClLinks  term={"variable"}><i>variable</i></ClLinks> or <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
+**writer** *n.* a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> that <GlossaryTerm  term={"write"}><i>writes</i></GlossaryTerm><sub>1</sub> a <GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm> or <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm>. 
 
 
 

@@ -1,4 +1,4 @@
-**find, find-if, find-if-not** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**find, find-if, find-if-not** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*item*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*item*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<ClLinks  term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one <ClLinks  term={"argument"}><i>argument</i></ClLinks> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. *from-end*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+<GlossaryTerm  term={"predicate"}><i>predicate</i></GlossaryTerm>—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of one <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. *from-end*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-*test*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. *test-not<ClLinks  term={"t"}><i>—a </i></ClLinks>designator* for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
+*test*—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. *test-not<ClLinks  term={"t"}><i>—a </i></ClLinks>designator* for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+<GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"element"}><i>element</i></ClLinks>—an <ClLinks  term={"element"}><i>element</i></ClLinks> of the *sequence*, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+<GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm>—an <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of the *sequence*, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -66,15 +66,15 @@
 
 
 
-<DictionaryLink  term={"find"}><b>find</b></DictionaryLink>, <DictionaryLink  term={"find-if"}><b>find-if</b></DictionaryLink>, and <DictionaryLink  term={"find-if-not"}><b>find-if-not</b></DictionaryLink> each search for an <ClLinks  term={"element"}><i>element</i></ClLinks> of the *sequence bounded* by *start* and *end* that *satisfies the predicate predicate* or that *satisfies the test test* or *test-not*, as appropriate. 
+<DictionaryLink  term={"find"}><b>find</b></DictionaryLink>, <DictionaryLink  term={"find-if"}><b>find-if</b></DictionaryLink>, and <DictionaryLink  term={"find-if-not"}><b>find-if-not</b></DictionaryLink> each search for an <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> of the *sequence bounded* by *start* and *end* that *satisfies the predicate predicate* or that *satisfies the test test* or *test-not*, as appropriate. 
 
 
 
-If *from-end* is <ClLinks  term={"true"}><i>true</i></ClLinks>, then the result is the rightmost <ClLinks  term={"element"}><i>element</i></ClLinks> that *satisfies the test*. 
+If *from-end* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, then the result is the rightmost <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> that *satisfies the test*. 
 
 
 
-If the *sequence* contains an <ClLinks  term={"element"}><i>element</i></ClLinks> that *satisfies the test*, then the leftmost or rightmost *sequence* element, depending on *from-end*, is returned; otherwise <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is returned. 
+If the *sequence* contains an <GlossaryTerm  term={"element"}><i>element</i></GlossaryTerm> that *satisfies the test*, then the leftmost or rightmost *sequence* element, depending on *from-end*, is returned; otherwise <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is returned. 
 
 
 
@@ -91,7 +91,7 @@ If the *sequence* contains an <ClLinks  term={"element"}><i>element</i></ClLinks
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should be prepared to signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
@@ -107,11 +107,11 @@ Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-The :test-not <ClLinks  term={"argument"}><i>argument</i></ClLinks> is deprecated. 
+The :test-not <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> is deprecated. 
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"find-if-not"}><b>find-if-not</b></DictionaryLink> is deprecated. 
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"find-if-not"}><b>find-if-not</b></DictionaryLink> is deprecated. 
 
 
 

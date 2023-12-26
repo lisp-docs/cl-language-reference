@@ -1,4 +1,4 @@
-**incf, decf** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**incf, decf** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<DictionaryLink  term={"incf"}><b>incf</b></DictionaryLink> <ClLinks  term={"place"}><i>place</i></ClLinks> [*delta-form*] → new-value 
+<DictionaryLink  term={"incf"}><b>incf</b></DictionaryLink> <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> [*delta-form*] → new-value 
 
 
 
-<DictionaryLink  term={"decf"}><b>decf</b></DictionaryLink> <ClLinks  term={"place"}><i>place</i></ClLinks> [*delta-form*] → new-value 
+<DictionaryLink  term={"decf"}><b>decf</b></DictionaryLink> <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> [*delta-form*] → new-value 
 
 
 
@@ -18,19 +18,19 @@
 
 
 
-<ClLinks  term={"place"}><i>place</i></ClLinks>—a <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+<GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>—a <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>. 
 
 
 
-*delta-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated to produce a *delta*. The default is 1. 
+*delta-form*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated to produce a *delta*. The default is 1. 
 
 
 
-*delta*—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+*delta*—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
-*new-value*—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+*new-value*—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
@@ -50,11 +50,11 @@
 
 
 
-<DictionaryLink  term={"incf"}><b>incf</b></DictionaryLink> and <DictionaryLink  term={"decf"}><b>decf</b></DictionaryLink> are used for incrementing and decrementing the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"place"}><i>place</i></ClLinks>, respectively. 
+<DictionaryLink  term={"incf"}><b>incf</b></DictionaryLink> and <DictionaryLink  term={"decf"}><b>decf</b></DictionaryLink> are used for incrementing and decrementing the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>, respectively. 
 
 
 
-The *delta* is added to (in the case of <DictionaryLink  term={"incf"}><b>incf</b></DictionaryLink>) or subtracted from (in the case of <DictionaryLink  term={"decf"}><b>decf</b></DictionaryLink>) the number in <ClLinks  term={"place"}><i>place</i></ClLinks> and the result is stored in <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+The *delta* is added to (in the case of <DictionaryLink  term={"incf"}><b>incf</b></DictionaryLink>) or subtracted from (in the case of <DictionaryLink  term={"decf"}><b>decf</b></DictionaryLink>) the number in <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> and the result is stored in <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>. 
 
 
 
@@ -62,7 +62,7 @@ Any necessary type conversions are performed automatically.
 
 
 
-For information about the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of <ClLinks  term={"place"}><i>places</i></ClLinks>, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
+For information about the <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> of <GlossaryTerm  term={"place"}><i>places</i></GlossaryTerm>, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
 
 
 
@@ -83,7 +83,7 @@ n → 1.5
 
 
 
-<ClLinks  term={"place"}><i>Place</i></ClLinks> is modified. 
+<GlossaryTerm  term={"place"}><i>Place</i></GlossaryTerm> is modified. 
 
 
 

@@ -1,4 +1,4 @@
-**define-compiler-macro** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**define-compiler-macro** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"define-compiler-macro"}><b>define-compiler-macro</b></DictionaryLink> *name lambda-list* [[ <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → name 
+<DictionaryLink  term={"define-compiler-macro"}><b>define-compiler-macro</b></DictionaryLink> *name lambda-list* [[ <GlossaryTerm  term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* *| documentation* ]] <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\* → name 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>. 
+<GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>. 
 
 
 
@@ -22,15 +22,15 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm  term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
 
 
 
-*documentation*—a <ClLinks  term={"string"}><i>string</i></ClLinks>; not evaluated. 
+*documentation*—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>; not evaluated. 
 
 
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -42,19 +42,19 @@ This is the normal mechanism for defining a <GlossaryTerm styled={true} term={"c
 
 
 
-*•* The <ClLinks  term={"name"}><i>name</i></ClLinks> can be a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> naming any <ClLinks  term={"function"}><i>function</i></ClLinks> or <ClLinks  term={"macro"}><i>macro</i></ClLinks>. 
+*•* The <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> can be a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> naming any <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> or <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm>. 
 
 
 
-*•* The expander function is installed as a <GlossaryTerm styled={true} term={"compiler macro function"}><i>compiler macro function</i></GlossaryTerm> for the <ClLinks  term={"name"}><i>name</i></ClLinks>, rather than as a <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>. 
+*•* The expander function is installed as a <GlossaryTerm styled={true} term={"compiler macro function"}><i>compiler macro function</i></GlossaryTerm> for the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>, rather than as a <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>. 
 
 
 
-*•* The **&amp;whole** argument is bound to the form argument that is passed to the <GlossaryTerm styled={true} term={"compiler macro function"}><i>compiler macro function</i></GlossaryTerm>. The remaining lambda-list parameters are specified as if this form contained the function name in the <ClLinks  term={"car"}><i>car</i></ClLinks> and the actual arguments in the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> , but if the <ClLinks  term={"car"}><i>car</i></ClLinks> of the actual form is the symbol <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink>, then the destructuring of the arguments is actually performed using its <ClLinks  term={"cddr"}><i>cddr</i></ClLinks> instead. 
+*•* The **&amp;whole** argument is bound to the form argument that is passed to the <GlossaryTerm styled={true} term={"compiler macro function"}><i>compiler macro function</i></GlossaryTerm>. The remaining lambda-list parameters are specified as if this form contained the function name in the <GlossaryTerm  term={"car"}><i>car</i></GlossaryTerm> and the actual arguments in the <GlossaryTerm  term={"cdr"}><i>cdr</i></GlossaryTerm> , but if the <GlossaryTerm  term={"car"}><i>car</i></GlossaryTerm> of the actual form is the symbol <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink>, then the destructuring of the arguments is actually performed using its <GlossaryTerm  term={"cddr"}><i>cddr</i></GlossaryTerm> instead. 
 
 
 
-*• Documentation* is attached as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind **compiler-macro**) and to the <GlossaryTerm styled={true} term={"compiler macro function"}><i>compiler macro function</i></GlossaryTerm>.  
+*• Documentation* is attached as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> (as kind **compiler-macro**) and to the <GlossaryTerm styled={true} term={"compiler macro function"}><i>compiler macro function</i></GlossaryTerm>.  
 
 
 
@@ -66,7 +66,7 @@ This is the normal mechanism for defining a <GlossaryTerm styled={true} term={"c
 
 
 
-*•* Unlike an ordinary <ClLinks  term={"macro"}><i>macro</i></ClLinks>, a <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> can decline to provide an expansion merely by returning a form that is the <ClLinks  term={"same"}><i>same</i></ClLinks> as the original (which can be obtained by using **&amp;whole**). 
+*•* Unlike an ordinary <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm>, a <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> can decline to provide an expansion merely by returning a form that is the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> as the original (which can be obtained by using **&amp;whole**). 
 
 
 
@@ -182,7 +182,7 @@ This is the normal mechanism for defining a <GlossaryTerm styled={true} term={"c
 
 
 
-The consequences of writing a <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> definition for a function in the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks> are undefined; it is quite possible that in some <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> such an attempt would override an equivalent or equally important definition. In general, it is recommended that a programmer only write <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> definitions for <ClLinks  term={"function"}><i>functions</i></ClLinks> he or she personally maintains–writing a <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> definition for a function maintained elsewhere is normally considered a violation of traditional rules of modularity and data abstraction. 
+The consequences of writing a <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> definition for a function in the COMMON-LISP <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> are undefined; it is quite possible that in some <GlossaryTerm  term={"implementation"}><i>implementations</i></GlossaryTerm> such an attempt would override an equivalent or equally important definition. In general, it is recommended that a programmer only write <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> definitions for <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> he or she personally maintains–writing a <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> definition for a function maintained elsewhere is normally considered a violation of traditional rules of modularity and data abstraction. 
 
 
 

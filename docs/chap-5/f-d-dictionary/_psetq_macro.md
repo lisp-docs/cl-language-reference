@@ -1,4 +1,4 @@
-**psetq** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**psetq** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-*var*—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming a <ClLinks  term={"variable"}><i>variable</i></ClLinks> other than a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. 
+*var*—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> naming a <GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm> other than a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Assigns values to <ClLinks  term={"variable"}><i>variables</i></ClLinks>. 
+Assigns values to <GlossaryTerm  term={"variable"}><i>variables</i></GlossaryTerm>. 
 
 
 
@@ -46,7 +46,7 @@ This is just like <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink>, e
 
 
 
-If any *var* refers to a <ClLinks  term={"binding"}><i>binding</i></ClLinks> made by <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>, then that *var* is treated as if <DictionaryLink  term={"psetf"}><b>psetf</b></DictionaryLink> (not <DictionaryLink  term={"psetq"}><b>psetq</b></DictionaryLink>) had been used. 
+If any *var* refers to a <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> made by <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>, then that *var* is treated as if <DictionaryLink  term={"psetf"}><b>psetf</b></DictionaryLink> (not <DictionaryLink  term={"psetq"}><b>psetq</b></DictionaryLink>) had been used. 
 
 
 
@@ -94,7 +94,7 @@ c → 3
 
 
 
-The values of <ClLinks  term={"form"}><i>forms</i></ClLinks> are assigned to *vars*. 
+The values of <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> are assigned to *vars*. 
 
 
 

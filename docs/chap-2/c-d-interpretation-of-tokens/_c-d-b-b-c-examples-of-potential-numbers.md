@@ -2,7 +2,7 @@
 
 
 
-As examples, the <ClLinks  term={"token"}><i>tokens</i></ClLinks> in Figure 2–10 are <GlossaryTerm styled={true} term={"potential number"}><i>potential numbers</i></GlossaryTerm>, but they are not actually numbers, and so are reserved <ClLinks  term={"token"}><i>tokens</i></ClLinks>; a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> is permitted, but not required, to define their meaning. 
+As examples, the <GlossaryTerm  term={"token"}><i>tokens</i></GlossaryTerm> in Figure 2–10 are <GlossaryTerm styled={true} term={"potential number"}><i>potential numbers</i></GlossaryTerm>, but they are not actually numbers, and so are reserved <GlossaryTerm  term={"token"}><i>tokens</i></GlossaryTerm>; a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> is permitted, but not required, to define their meaning. 
 
 
 
@@ -14,7 +14,7 @@ As examples, the <ClLinks  term={"token"}><i>tokens</i></ClLinks> in Figure 2–
 
 
 
-The <ClLinks  term={"token"}><i>tokens</i></ClLinks> in Figure 2–11 are not <GlossaryTerm styled={true} term={"potential number"}><i>potential numbers</i></GlossaryTerm>; they are always treated as <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>: 
+The <GlossaryTerm  term={"token"}><i>tokens</i></GlossaryTerm> in Figure 2–11 are not <GlossaryTerm styled={true} term={"potential number"}><i>potential numbers</i></GlossaryTerm>; they are always treated as <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>: 
 
 
 
@@ -30,7 +30,7 @@ The <ClLinks  term={"token"}><i>tokens</i></ClLinks> in Figure 2–11 are not <G
 
 
 
-The <ClLinks  term={"token"}><i>tokens</i></ClLinks> in Figure 2–12 are <GlossaryTerm styled={true} term={"potential number"}><i>potential numbers</i></GlossaryTerm> if the <GlossaryTerm styled={true} term={"current input base"}><i>current input base</i></GlossaryTerm> is 16, but they are always treated as <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> if the <GlossaryTerm styled={true} term={"current input base"}><i>current input base</i></GlossaryTerm> is 10. 
+The <GlossaryTerm  term={"token"}><i>tokens</i></GlossaryTerm> in Figure 2–12 are <GlossaryTerm styled={true} term={"potential number"}><i>potential numbers</i></GlossaryTerm> if the <GlossaryTerm styled={true} term={"current input base"}><i>current input base</i></GlossaryTerm> is 16, but they are always treated as <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> if the <GlossaryTerm styled={true} term={"current input base"}><i>current input base</i></GlossaryTerm> is 10. 
 
 
 

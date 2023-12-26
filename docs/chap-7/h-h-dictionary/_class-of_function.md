@@ -1,4 +1,4 @@
-**class-of** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**class-of** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"class"}><i>class</i></ClLinks>—a *class object*. 
+<GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>—a *class object*. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the <ClLinks  term={"class"}><i>class</i></ClLinks> of which the <ClLinks  term={"object"}><i>object</i></ClLinks> is a <GlossaryTerm styled={true} term={"direct instance"}><i>direct instance</i></GlossaryTerm>. 
+Returns the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> of which the <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"direct instance"}><i>direct instance</i></GlossaryTerm>. 
 
 
 

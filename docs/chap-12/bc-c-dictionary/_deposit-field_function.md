@@ -1,4 +1,4 @@
-**deposit-field** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**deposit-field** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Replaces a field of bits within *integer*; specifically, returns an *integer* that contains the bits of *newbyte* within the <ClLinks  term={"byte"}><i>byte</i></ClLinks> specified by *bytespec*, and elsewhere contains the bits of *integer*. 
+Replaces a field of bits within *integer*; specifically, returns an *integer* that contains the bits of *newbyte* within the <GlossaryTerm  term={"byte"}><i>byte</i></GlossaryTerm> specified by *bytespec*, and elsewhere contains the bits of *integer*. 
 
 
 

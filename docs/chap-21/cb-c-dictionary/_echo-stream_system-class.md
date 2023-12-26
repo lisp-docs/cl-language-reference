@@ -18,7 +18,7 @@ An <GlossaryTerm styled={true} term={"echo stream"}><i>echo stream</i></Glossary
 
 
 
-All input taken from the *input stream* is echoed to the *output stream*. Whether the input is echoed immediately after it is encountered, or after it has been read from the *input stream* is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+All input taken from the *input stream* is echoed to the *output stream*. Whether the input is echoed immediately after it is encountered, or after it has been read from the *input stream* is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 

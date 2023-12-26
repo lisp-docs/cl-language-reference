@@ -1,4 +1,4 @@
-**maphash** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**maphash** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two <ClLinks  term={"argument"}><i>arguments</i></ClLinks>, the <ClLinks  term={"key"}><i>key</i></ClLinks> and the <ClLinks  term={"value"}><i>value</i></ClLinks>. 
+<GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>—a <GlossaryTerm  term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm>, the <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> and the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Iterates over all entries in the *hash-table*. For each entry, the <ClLinks  term={"function"}><i>function</i></ClLinks> is called with two <ClLinks  term={"argument"}><i>arguments</i></ClLinks>–the <ClLinks  term={"key"}><i>key</i></ClLinks> and the <ClLinks  term={"value"}><i>value</i></ClLinks> of that entry. 
+Iterates over all entries in the *hash-table*. For each entry, the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> is called with two <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm>–the <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> and the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of that entry. 
 
 
 
-The consequences are unspecified if any attempt is made to add or remove an entry from the *hash-table* while a <DictionaryLink  term={"maphash"}><b>maphash</b></DictionaryLink> is in progress, with two exceptions: the <ClLinks  term={"function"}><i>function</i></ClLinks> can use can use <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"gethash"}><b>gethash</b></DictionaryLink> to change the <ClLinks  term={"value"}><i>value</i></ClLinks> part of the entry currently being processed, or it can use <DictionaryLink  term={"remhash"}><b>remhash</b></DictionaryLink> to remove that entry. 
+The consequences are unspecified if any attempt is made to add or remove an entry from the *hash-table* while a <DictionaryLink  term={"maphash"}><b>maphash</b></DictionaryLink> is in progress, with two exceptions: the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> can use can use <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"gethash"}><b>gethash</b></DictionaryLink> to change the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> part of the entry currently being processed, or it can use <DictionaryLink  term={"remhash"}><b>remhash</b></DictionaryLink> to remove that entry. 
 
 
 
@@ -62,7 +62,7 @@ The consequences are unspecified if any attempt is made to add or remove an entr
 
 
 
-None, other than any which might be done by the <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+None, other than any which might be done by the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 

@@ -1,4 +1,4 @@
-**ensure-directories-exist** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**ensure-directories-exist** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -30,19 +30,15 @@
 
 
 
-Tests whether the directories containing the specified <ClLinks  term={"file"}><i>file</i></ClLinks> actually exist, and attempts to create them if they do not. 
+Tests whether the directories containing the specified <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> actually exist, and attempts to create them if they do not. 
 
 
 
-If the containing directories do not exist and if *verbose* is <ClLinks  term={"true"}><i>true</i></ClLinks>, then the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is permitted (but not required) to perform output to <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm> saying what directories were created. If the containing directories exist, or if *verbose* is <ClLinks  term={"false"}><i>false</i></ClLinks>, this function performs no output. 
-
-
+If the containing directories do not exist and if *verbose* is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, then the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> is permitted (but not required) to perform output to <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm> saying what directories were created. If the containing directories exist, or if *verbose* is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>, this function performs no output. 
 
 
 
 
-
- 
 
 
 
@@ -50,7 +46,11 @@ If the containing directories do not exist and if *verbose* is <ClLinks  term={"
 
 
 
-The <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> is the given *pathspec* so that this operation can be straightforwardly composed with other file manipulation expressions. The <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *created*, is <ClLinks  term={"true"}><i>true</i></ClLinks> if any directories were created. 
+ 
+
+
+
+The <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> is the given *pathspec* so that this operation can be straightforwardly composed with other file manipulation expressions. The <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *created*, is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if any directories were created. 
 
 
 
@@ -66,11 +66,11 @@ The host computer’s file system.
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if the host, device, or directory part of *pathspec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if the host, device, or directory part of *pathspec* is <GlossaryTerm  term={"wild"}><i>wild</i></GlossaryTerm>. 
 
 
 
-If the directory creation attempt is not successful, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled; if this occurs, it might be the case that none, some, or all of the requested creations have actually occurred within the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. 
+If the directory creation attempt is not successful, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled; if this occurs, it might be the case that none, some, or all of the requested creations have actually occurred within the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. 
 
 
 

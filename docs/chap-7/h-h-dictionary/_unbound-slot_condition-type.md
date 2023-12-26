@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"object"}><i>object</i></ClLinks> having the unbound slot is initialized by the :instance initialization argument to <DictionaryLink  term={"make-condition"}><b>make-condition</b></DictionaryLink>, and is *accessed* by the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"unbound-slot-instance"}><b>unbound-slot-instance</b></DictionaryLink>. 
+The <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> having the unbound slot is initialized by the :instance initialization argument to <DictionaryLink  term={"make-condition"}><b>make-condition</b></DictionaryLink>, and is *accessed* by the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"unbound-slot-instance"}><b>unbound-slot-instance</b></DictionaryLink>. 
 
 
 

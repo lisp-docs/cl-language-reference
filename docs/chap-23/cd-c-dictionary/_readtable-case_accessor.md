@@ -1,4 +1,4 @@
-**readtable-case** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**readtable-case** <GlossaryTerm  term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -10,7 +10,7 @@
 
 
 
-**(setf (readtable-case** <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>**)** *mode***)** 
+**(setf (readtable-case** <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm>**)** *mode***)** 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"readtable"}><i>readtable</i></ClLinks>—a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
+<GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm>—a <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm>. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-*Accesses* the <GlossaryTerm styled={true} term={"readtable case"}><i>readtable case</i></GlossaryTerm> of <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>, which affects the way in which the *Lisp Reader* reads <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> and the way in which the *Lisp Printer* writes <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
+*Accesses* the <GlossaryTerm styled={true} term={"readtable case"}><i>readtable case</i></GlossaryTerm> of <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm>, which affects the way in which the *Lisp Reader* reads <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> and the way in which the *Lisp Printer* writes <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>. 
 
 
 
@@ -54,7 +54,7 @@ See Section 23.1.2.1 (Examples of Effect of Readtable Case on the Lisp Reader) a
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is not a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *mode* is not a <GlossaryTerm styled={true} term={"case sensitivity mode"}><i>case sensitivity mode</i></GlossaryTerm>. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm> is not a <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm>. Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *mode* is not a <GlossaryTerm styled={true} term={"case sensitivity mode"}><i>case sensitivity mode</i></GlossaryTerm>. 
 
 
 
@@ -70,7 +70,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <Diction
 
 
 
-<DictionaryLink  term={"copy-readtable"}><b>copy-readtable</b></DictionaryLink> copies the <GlossaryTerm styled={true} term={"readtable case"}><i>readtable case</i></GlossaryTerm> of the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
+<DictionaryLink  term={"copy-readtable"}><b>copy-readtable</b></DictionaryLink> copies the <GlossaryTerm styled={true} term={"readtable case"}><i>readtable case</i></GlossaryTerm> of the <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm>. 
 
 
 

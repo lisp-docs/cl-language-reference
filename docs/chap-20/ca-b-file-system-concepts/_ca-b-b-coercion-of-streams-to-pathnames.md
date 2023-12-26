@@ -6,11 +6,11 @@ A <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream a
 
 
 
-Normally, when a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm> is used as a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> , it denotes the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> used to open the <ClLinks  term={"file"}><i>file</i></ClLinks>; this may be, but is not required to be, the actual name of the <ClLinks  term={"file"}><i>file</i></ClLinks>. 
+Normally, when a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm> is used as a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> , it denotes the <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> used to open the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm>; this may be, but is not required to be, the actual name of the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm>. 
 
 
 
-Some functions, such as <DictionaryLink  term={"truename"}><b>truename</b></DictionaryLink> and <DictionaryLink  term={"delete-file"}><b>delete-file</b></DictionaryLink>, coerce <ClLinks  term={"stream"}><i>streams</i></ClLinks> to <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks> in a different way that involves referring to the actual <ClLinks  term={"file"}><i>file</i></ClLinks> that is open, which might or might not be the file whose name was opened originally. Such special situations are always notated specifically and are not the default. 
+Some functions, such as <DictionaryLink  term={"truename"}><b>truename</b></DictionaryLink> and <DictionaryLink  term={"delete-file"}><b>delete-file</b></DictionaryLink>, coerce <GlossaryTerm  term={"stream"}><i>streams</i></GlossaryTerm> to <GlossaryTerm  term={"pathname"}><i>pathnames</i></GlossaryTerm> in a different way that involves referring to the actual <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> that is open, which might or might not be the file whose name was opened originally. Such special situations are always notated specifically and are not the default. 
 
 
 

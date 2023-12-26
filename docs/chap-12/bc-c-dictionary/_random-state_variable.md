@@ -14,7 +14,7 @@ a <GlossaryTerm styled={true} term={"random state"}><i>random state</i></Glossar
 
 
 
-<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@ a <GlossaryTerm styled={true} term={"random state"}><i>random state</i></Glossar
 
 
 
-The <GlossaryTerm styled={true} term={"current random state"}><i>current random state</i></GlossaryTerm>, which is used, for example, by the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> when a <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm> is not explicitly supplied. 
+The <GlossaryTerm styled={true} term={"current random state"}><i>current random state</i></GlossaryTerm>, which is used, for example, by the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> when a <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm> is not explicitly supplied. 
 
 
 
@@ -59,7 +59,7 @@ The <GlossaryTerm styled={true} term={"current random state"}><i>current random 
 
 
 
-The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+The <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 
@@ -79,7 +79,7 @@ The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>.
 
 
 
-<ClLinks  term={"binding"}><i>Binding</i></ClLinks> <DictionaryLink  term={"random-state"}><b>\*random-state\*</b></DictionaryLink> to a different *random state object* correctly saves and restores the old *random state object*. 
+<GlossaryTerm  term={"binding"}><i>Binding</i></GlossaryTerm> <DictionaryLink  term={"random-state"}><b>\*random-state\*</b></DictionaryLink> to a different *random state object* correctly saves and restores the old *random state object*. 
 
 
 

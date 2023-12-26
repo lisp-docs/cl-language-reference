@@ -1,4 +1,4 @@
-**make-concatenated-stream** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**make-concatenated-stream** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 

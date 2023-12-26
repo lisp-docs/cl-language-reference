@@ -1,4 +1,4 @@
-**listen** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**listen** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if there is a character immediately available from *input-stream*; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. On a non-interactive *input-stream*, <DictionaryLink  term={"listen"}><b>listen</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> except when at <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>1</sub>. If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm> is encountered, <DictionaryLink  term={"listen"}><b>listen</b></DictionaryLink> returns <ClLinks  term={"false"}><i>false</i></ClLinks>. <DictionaryLink  term={"listen"}><b>listen</b></DictionaryLink> is intended to be used when *input-stream* obtains characters from an interactive device such as a keyboard. 
+Returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if there is a character immediately available from *input-stream*; otherwise, returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. On a non-interactive *input-stream*, <DictionaryLink  term={"listen"}><b>listen</b></DictionaryLink> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> except when at <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>1</sub>. If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm> is encountered, <DictionaryLink  term={"listen"}><b>listen</b></DictionaryLink> returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. <DictionaryLink  term={"listen"}><b>listen</b></DictionaryLink> is intended to be used when *input-stream* obtains characters from an interactive device such as a keyboard. 
 
 
 

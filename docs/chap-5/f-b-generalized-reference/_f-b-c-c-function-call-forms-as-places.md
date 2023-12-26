@@ -2,7 +2,7 @@
 
 
 
-A *function form* can be used as a <ClLinks  term={"place"}><i>place</i></ClLinks> if it falls into one of the following categories: 
+A *function form* can be used as a <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> if it falls into one of the following categories: 
 
 
 
@@ -34,19 +34,15 @@ Data and Control
 
 
 
-In the case of <DictionaryLink  term={"subseq"}><b>subseq</b></DictionaryLink>, the replacement value must be a *sequence* whose elements might be contained by the sequence argument to <DictionaryLink  term={"subseq"}><b>subseq</b></DictionaryLink>, but does not have to be a *sequence* of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as the *sequence* of which the subsequence is specified. If the length of the replacement value does not equal the length of the subsequence to be replaced, then the shorter length determines the number of elements to be stored, as for <DictionaryLink  term={"replace"}><b>replace</b></DictionaryLink>. 
+In the case of <DictionaryLink  term={"subseq"}><b>subseq</b></DictionaryLink>, the replacement value must be a *sequence* whose elements might be contained by the sequence argument to <DictionaryLink  term={"subseq"}><b>subseq</b></DictionaryLink>, but does not have to be a *sequence* of the same <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> as the *sequence* of which the subsequence is specified. If the length of the replacement value does not equal the length of the subsequence to be replaced, then the shorter length determines the number of elements to be stored, as for <DictionaryLink  term={"replace"}><b>replace</b></DictionaryLink>. 
 
 
 
-*•* A function call form whose first element is the name of a selector function constructed by <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink>. The function name must refer to the global function definition, rather than a locally defined <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+*•* A function call form whose first element is the name of a selector function constructed by <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink>. The function name must refer to the global function definition, rather than a locally defined <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 
-*•* A function call form whose first element is the name of any one of the functions in Figure 5–8, provided that the supplied argument to that function is in turn a <ClLinks  term={"place"}><i>place</i></ClLinks> form; in this case the new <ClLinks  term={"place"}><i>place</i></ClLinks> has stored back into it the result of applying the supplied “update” function. 
-
-
-
-
+*•* A function call form whose first element is the name of any one of the functions in Figure 5–8, provided that the supplied argument to that function is in turn a <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> form; in this case the new <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> has stored back into it the result of applying the supplied “update” function. 
 
 
 
@@ -58,11 +54,15 @@ In the case of <DictionaryLink  term={"subseq"}><b>subseq</b></DictionaryLink>, 
 
 
 
-|**Function name Argument that is a** <ClLinks  term={"place"}><i>place</i></ClLinks> **Update function used**|
+
+
+
+
+|**Function name Argument that is a** <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> **Update function used**|
 
 | :- |
 
-|<p><DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink> second <DictionaryLink  term={"dpb"}><b>dpb</b></DictionaryLink> </p><p><DictionaryLink  term={"mask-field"}><b>mask-field</b></DictionaryLink> second <DictionaryLink  term={"deposit-field"}><b>deposit-field</b></DictionaryLink> </p><p><DictionaryLink  term={"getf"}><b>getf</b></DictionaryLink> first <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks></p>|
+|<p><DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink> second <DictionaryLink  term={"dpb"}><b>dpb</b></DictionaryLink> </p><p><DictionaryLink  term={"mask-field"}><b>mask-field</b></DictionaryLink> second <DictionaryLink  term={"deposit-field"}><b>deposit-field</b></DictionaryLink> </p><p><DictionaryLink  term={"getf"}><b>getf</b></DictionaryLink> first <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm></p>|
 
 
 
@@ -72,7 +72,7 @@ In the case of <DictionaryLink  term={"subseq"}><b>subseq</b></DictionaryLink>, 
 
 
 
-During the <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> expansion of these <ClLinks  term={"form"}><i>forms</i></ClLinks>, it is necessary to call <DictionaryLink  term={"get-setf-expansion"}><b>get-setf-expansion</b></DictionaryLink> in order to figure out how the inner, nested generalized variable must be treated. 
+During the <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> expansion of these <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>, it is necessary to call <DictionaryLink  term={"get-setf-expansion"}><b>get-setf-expansion</b></DictionaryLink> in order to figure out how the inner, nested generalized variable must be treated. 
 
 
 
@@ -92,7 +92,7 @@ In a form such as:
 
 
 
-the place referred to by the *place-form* must always be both <ClLinks  term={"read"}><i>read</i></ClLinks> and *written*; note 
+the place referred to by the *place-form* must always be both <GlossaryTerm  term={"read"}><i>read</i></GlossaryTerm> and *written*; note 
 
 
 
@@ -100,7 +100,7 @@ that the update is to the generalized variable specified by *place-form*, not to
 
 
 
-object of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink>. 
+object of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink>. 
 
 
 
@@ -120,11 +120,11 @@ Thus this <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> should gen
 
 
 
-4\. Do the <ClLinks  term={"read"}><i>read</i></ClLinks> from *place-form*. 
+4\. Do the <GlossaryTerm  term={"read"}><i>read</i></GlossaryTerm> from *place-form*. 
 
 
 
-5\. Do the <ClLinks  term={"write"}><i>write</i></ClLinks> into *place-form* with the given bits of the *integer* fetched in 
+5\. Do the <GlossaryTerm  term={"write"}><i>write</i></GlossaryTerm> into *place-form* with the given bits of the *integer* fetched in 
 
 
 
@@ -144,7 +144,7 @@ is to that altered *integer* , because step 4 is done after the *value-form* eva
 
 
 
-Nevertheless, the evaluations required for <ClLinks  term={"binding"}><i>binding</i></ClLinks> the temporary variables are 
+Nevertheless, the evaluations required for <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> the temporary variables are 
 
 
 
@@ -220,7 +220,7 @@ In a form such as:
 
 
 
-the place referred to by *place-form* must always be both <ClLinks  term={"read"}><i>read</i></ClLinks> and *written*; note that 
+the place referred to by *place-form* must always be both <GlossaryTerm  term={"read"}><i>read</i></GlossaryTerm> and *written*; note that 
 
 
 
@@ -228,7 +228,7 @@ the update is to the generalized variable specified by *place-form*, not necessa
 
 
 
-the particular <ClLinks  term={"list"}><i>list</i></ClLinks> that is the property list in question. 
+the particular <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> that is the property list in question. 
 
 
 
@@ -248,11 +248,11 @@ Thus this <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> should gen
 
 
 
-4\. Do the <ClLinks  term={"read"}><i>read</i></ClLinks> from *place-form*. 
+4\. Do the <GlossaryTerm  term={"read"}><i>read</i></GlossaryTerm> from *place-form*. 
 
 
 
-5\. Do the <ClLinks  term={"write"}><i>write</i></ClLinks> into *place-form* with a possibly-new property list obtained 
+5\. Do the <GlossaryTerm  term={"write"}><i>write</i></GlossaryTerm> into *place-form* with a possibly-new property list obtained 
 
 
 
@@ -296,7 +296,7 @@ denoted by *ind-form* is to that altered list, because step 4 is done after the
 
 
 
-*value-form* evaluation. Nevertheless, the evaluations required for <ClLinks  term={"binding"}><i>binding</i></ClLinks> the 
+*value-form* evaluation. Nevertheless, the evaluations required for <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> the 
 
 
 

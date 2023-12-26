@@ -1,4 +1,4 @@
-**remhash** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**remhash** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"key"}><i>key</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Removes the entry for <ClLinks  term={"key"}><i>key</i></ClLinks> in *hash-table*, if any. Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if there was such an entry, or <ClLinks  term={"false"}><i>false</i></ClLinks> otherwise. 
+Removes the entry for <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm> in *hash-table*, if any. Returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if there was such an entry, or <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> otherwise. 
 
 
 

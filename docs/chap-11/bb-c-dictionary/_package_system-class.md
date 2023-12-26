@@ -14,7 +14,7 @@
 
 
 
-A <ClLinks  term={"package"}><i>package</i></ClLinks> is a <ClLinks  term={"namespace"}><i>namespace</i></ClLinks> that maps *symbol names* to <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>; see Section 11.1 (Package Concepts). 
+A <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> is a <GlossaryTerm  term={"namespace"}><i>namespace</i></GlossaryTerm> that maps *symbol names* to <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>; see Section 11.1 (Package Concepts). 
 
 
 

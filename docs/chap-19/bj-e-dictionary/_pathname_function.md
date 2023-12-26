@@ -1,4 +1,4 @@
-**pathname** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**pathname** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+<GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>—a <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> denoted by *pathspec*. 
+Returns the <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> denoted by *pathspec*. 
 
 
 
@@ -46,7 +46,7 @@ Returns the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> denoted by *pa
 
 
 
-If the *pathspec designator* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, the <ClLinks  term={"stream"}><i>stream</i></ClLinks> can be either open or closed; in both cases, the <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink> returned corresponds to the <ClLinks  term={"filename"}><i>filename</i></ClLinks> used to open the <ClLinks  term={"file"}><i>file</i></ClLinks>. <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink> returns the same <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> for a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> after it is closed as it did when it was open. 
+If the *pathspec designator* is a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>, the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> can be either open or closed; in both cases, the <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink> returned corresponds to the <GlossaryTerm  term={"filename"}><i>filename</i></GlossaryTerm> used to open the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm>. <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink> returns the same <GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> after it is closed as it did when it was open. 
 
 
 

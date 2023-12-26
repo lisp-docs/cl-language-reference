@@ -1,4 +1,4 @@
-**makunbound** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**makunbound** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> 
+<GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>—a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-Makes the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> be <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>, regardless of whether it was previously <ClLinks  term={"bound"}><i>bound</i></ClLinks>. 
+Makes the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> be <GlossaryTerm  term={"unbound"}><i>unbound</i></GlossaryTerm>, regardless of whether it was previously <GlossaryTerm  term={"bound"}><i>bound</i></GlossaryTerm>. 
 
 
 
@@ -38,7 +38,7 @@ a → 1
 
 
 
-The <GlossaryTerm styled={true} term={"value cell"}><i>value cell</i></GlossaryTerm> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is modified. 
+The <GlossaryTerm styled={true} term={"value cell"}><i>value cell</i></GlossaryTerm> of <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is modified. 
 
 
 
@@ -46,7 +46,7 @@ The <GlossaryTerm styled={true} term={"value cell"}><i>value cell</i></GlossaryT
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> is not a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 

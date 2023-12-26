@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink> is the default <ClLinks  term={"class"}><i>class</i></ClLinks> of *classes* defined by <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>. 
+The <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink> is the default <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> of *classes* defined by <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>. 
 
 
 

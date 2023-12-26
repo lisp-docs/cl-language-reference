@@ -1,4 +1,4 @@
-**open** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**open** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>; or a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for a *finite recognizable subtype* of *integer* ; or one of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> <DictionaryLink  term={"signed-byte"}><b>signed-byte</b></DictionaryLink>, <DictionaryLink  term={"unsigned-byte"}><b>unsigned-byte</b></DictionaryLink>, or :default. The default is <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>. 
+*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>; or a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for a *finite recognizable subtype* of *integer* ; or one of the <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> <DictionaryLink  term={"signed-byte"}><b>signed-byte</b></DictionaryLink>, <DictionaryLink  term={"unsigned-byte"}><b>unsigned-byte</b></DictionaryLink>, or :default. The default is <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+<GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<DictionaryLink  term={"open"}><b>open</b></DictionaryLink> creates, opens, and returns a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> that is connected to the file specified by *filespec*. *Filespec* is the name of the file to be opened. If the *filespec designator* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, that <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not closed first or otherwise affected. 
+<DictionaryLink  term={"open"}><b>open</b></DictionaryLink> creates, opens, and returns a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> that is connected to the file specified by *filespec*. *Filespec* is the name of the file to be opened. If the *filespec designator* is a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm>, that <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is not closed first or otherwise affected. 
 
 
 
@@ -90,7 +90,7 @@ An implementation is required to recognize all of the <DictionaryLink  term={"op
 
 
 
-These are the possible values for *direction*, and how they affect the nature of the <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is created: 
+These are the possible values for *direction*, and how they affect the nature of the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> that is created: 
 
 
 
@@ -134,7 +134,7 @@ created and then closed prior to being returned by <DictionaryLink  term={"open"
 
 
 
-The *element-type* specifies the unit of transaction for the <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm>. If it is :default, the unit is determined by <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>, possibly based on the <ClLinks  term={"file"}><i>file</i></ClLinks>. 
+The *element-type* specifies the unit of transaction for the <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm>. If it is :default, the unit is determined by <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>, possibly based on the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm>. 
 
 
 
@@ -150,7 +150,7 @@ The *element-type* specifies the unit of transaction for the <GlossaryTerm style
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -202,7 +202,7 @@ expunged, and then a new file is created.
 
 
 
-Output operations on the <ClLinks  term={"stream"}><i>stream</i></ClLinks> destructively modify the existing file. If *direction* 
+Output operations on the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> destructively modify the existing file. If *direction* 
 
 
 
@@ -222,7 +222,7 @@ the file is not truncated back to length zero when it is opened.
 
 
 
-Output operations on the <ClLinks  term={"stream"}><i>stream</i></ClLinks> destructively modify the existing file. The file 
+Output operations on the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> destructively modify the existing file. The file 
 
 
 
@@ -250,7 +250,7 @@ one is created. If possible, the implementation should not destroy the old file 
 
 
 
-the new <ClLinks  term={"stream"}><i>stream</i></ClLinks> is closed. 
+the new <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is closed. 
 
 
 
@@ -258,7 +258,7 @@ the new <ClLinks  term={"stream"}><i>stream</i></ClLinks> is closed.
 
 
 
-No file or <ClLinks  term={"stream"}><i>stream</i></ClLinks> is created; instead, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is returned to indicate failure. 
+No file or <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is created; instead, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is returned to indicate failure. 
 
 
 
@@ -274,7 +274,7 @@ No file or <ClLinks  term={"stream"}><i>stream</i></ClLinks> is created; instead
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -294,7 +294,7 @@ no processing as directed by *if-exists* is performed.
 
 
 
-No file or <ClLinks  term={"stream"}><i>stream</i></ClLinks> is created; instead, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is returned to indicate failure. 
+No file or <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> is created; instead, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is returned to indicate failure. 
 
 
 
@@ -302,7 +302,7 @@ No file or <ClLinks  term={"stream"}><i>stream</i></ClLinks> is created; instead
 
 
 
-This option selects an <GlossaryTerm styled={true} term={"external file format"}><i>external file format</i></GlossaryTerm> for the <ClLinks  term={"file"}><i>file</i></ClLinks>: The only <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> value for this option is :default, although <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> are permitted to define additional <GlossaryTerm styled={true} term={"external file format"}><i>external file formats</i></GlossaryTerm> and <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> values returned by <DictionaryLink  term={"stream-external-format"}><b>stream-external-format</b></DictionaryLink> can also be used by <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm>. 
+This option selects an <GlossaryTerm styled={true} term={"external file format"}><i>external file format</i></GlossaryTerm> for the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm>: The only <GlossaryTerm  term={"standardized"}><i>standardized</i></GlossaryTerm> value for this option is :default, although <GlossaryTerm  term={"implementation"}><i>implementations</i></GlossaryTerm> are permitted to define additional <GlossaryTerm styled={true} term={"external file format"}><i>external file formats</i></GlossaryTerm> and <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> values returned by <DictionaryLink  term={"stream-external-format"}><b>stream-external-format</b></DictionaryLink> can also be used by <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm>. 
 
 
 
@@ -322,7 +322,7 @@ This option selects an <GlossaryTerm styled={true} term={"external file format"}
 
 
 
-The *external-format* is meaningful for any kind of <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> whose <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"character"}><i>character</i></ClLinks> . This option is ignored for <ClLinks  term={"stream"}><i>streams</i></ClLinks> for which it is not meaningful; however, <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> may define other <GlossaryTerm styled={true} term={"element type"}><i>element types</i></GlossaryTerm> for which it is meaningful. The consequences are unspecified if a <ClLinks  term={"character"}><i>character</i></ClLinks> is written that cannot be represented by the given <GlossaryTerm styled={true} term={"external file format"}><i>external file format</i></GlossaryTerm>. 
+The *external-format* is meaningful for any kind of <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> whose <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> . This option is ignored for <GlossaryTerm  term={"stream"}><i>streams</i></GlossaryTerm> for which it is not meaningful; however, <GlossaryTerm  term={"implementation"}><i>implementations</i></GlossaryTerm> may define other <GlossaryTerm styled={true} term={"element type"}><i>element types</i></GlossaryTerm> for which it is meaningful. The consequences are unspecified if a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> is written that cannot be represented by the given <GlossaryTerm styled={true} term={"external file format"}><i>external file format</i></GlossaryTerm>. 
 
 
 
@@ -360,35 +360,31 @@ The nature and state of the host computer’s <GlossaryTerm styled={true} term={
 
 
 
-If *if-exists* is :error, (subject to the constraints on the meaning of *if-exists* listed above), an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
+If *if-exists* is :error, (subject to the constraints on the meaning of *if-exists* listed above), an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
 
 
 
-If *if-does-not-exist* is :error (subject to the constraints on the meaning of *if-does-not-exist* listed above), an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
+If *if-does-not-exist* is :error (subject to the constraints on the meaning of *if-does-not-exist* listed above), an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
 
 
 
-If it is impossible for an implementation to handle some option in a manner close to what is specified here, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> might be signaled. 
+If it is impossible for an implementation to handle some option in a manner close to what is specified here, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> might be signaled. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if (wild-pathname-p *filespec*) returns true. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if (wild-pathname-p *filespec*) returns true. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled if the *external-format* is not understood by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled if the *external-format* is not understood by the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 
-The various <GlossaryTerm styled={true} term={"file system"}><i>file systems</i></GlossaryTerm> in existence today have widely differing capabilities, and some aspects of the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> are beyond the scope of this specification to define. A given <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might not be able to support all of these options in exactly the manner stated. An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is required to recognize all of these option keywords and to try to do something “reasonable” in the context of the host <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. Where necessary to accomodate the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>, an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> 
-
-
+The various <GlossaryTerm styled={true} term={"file system"}><i>file systems</i></GlossaryTerm> in existence today have widely differing capabilities, and some aspects of the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> are beyond the scope of this specification to define. A given <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> might not be able to support all of these options in exactly the manner stated. An <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> is required to recognize all of these option keywords and to try to do something “reasonable” in the context of the host <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. Where necessary to accomodate the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>, an <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> 
 
 
 
 
-
- 
 
 
 
@@ -396,11 +392,15 @@ The various <GlossaryTerm styled={true} term={"file system"}><i>file systems</i>
 
 
 
-deviate slightly from the semantics specified here without being disqualified for consideration as a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm>. If it is utterly impossible for an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to handle some option in a manner similar to what is specified here, it may simply signal an error. 
+ 
 
 
 
-With regard to the :element-type option, if a <ClLinks  term={"type"}><i>type</i></ClLinks> is requested that is not supported by the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>, a substitution of types such as that which goes on in *upgrading* is permissible. As a minimum requirement, it should be the case that opening an *output stream* to a <ClLinks  term={"file"}><i>file</i></ClLinks> in a given <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> and later opening an *input stream* to the same <ClLinks  term={"file"}><i>file</i></ClLinks> in the same <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> should work compatibly. 
+deviate slightly from the semantics specified here without being disqualified for consideration as a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm>. If it is utterly impossible for an <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> to handle some option in a manner similar to what is specified here, it may simply signal an error. 
+
+
+
+With regard to the :element-type option, if a <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is requested that is not supported by the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>, a substitution of types such as that which goes on in *upgrading* is permissible. As a minimum requirement, it should be the case that opening an *output stream* to a <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> in a given <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> and later opening an *input stream* to the same <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> in the same <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> should work compatibly. 
 
 
 
@@ -420,12 +420,12 @@ With regard to the :element-type option, if a <ClLinks  term={"type"}><i>type</i
 
 
 
-When *element-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>, <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink> and/or <DictionaryLink  term={"write-char"}><b>write-char</b></DictionaryLink> can be used on the resulting <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm>. 
+When *element-type* is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>, <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink> and/or <DictionaryLink  term={"write-char"}><b>write-char</b></DictionaryLink> can be used on the resulting <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm>. 
 
 
 
-When *element-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of *integer* , <DictionaryLink  term={"read-byte"}><b>read-byte</b></DictionaryLink> and/or <DictionaryLink  term={"write-byte"}><b>write-byte</b></DictionaryLink> can be used on the resulting <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm>. 
+When *element-type* is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of *integer* , <DictionaryLink  term={"read-byte"}><b>read-byte</b></DictionaryLink> and/or <DictionaryLink  term={"write-byte"}><b>write-byte</b></DictionaryLink> can be used on the resulting <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm>. 
 
 
 
-When *element-type* is :default, the <ClLinks  term={"type"}><i>type</i></ClLinks> can be determined by using <DictionaryLink  term={"stream-element-type"}><b>stream-element-type</b></DictionaryLink>. 
+When *element-type* is :default, the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> can be determined by using <DictionaryLink  term={"stream-element-type"}><b>stream-element-type</b></DictionaryLink>. 

@@ -1,4 +1,4 @@
-**make-string-input-stream** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**make-string-input-stream** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"make-string-input-stream"}><b>make-string-input-stream</b></DictionaryLink> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *start end → string-stream* 
+<DictionaryLink  term={"make-string-input-stream"}><b>make-string-input-stream</b></DictionaryLink> <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> &amp;optional *start end → string-stream* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"string"}><i>string</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+<GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>—a <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. 
 
 
 
-*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. The defaults for *start* and *end* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns an *input string stream*. This <ClLinks  term={"stream"}><i>stream</i></ClLinks> will supply, in order, the <ClLinks  term={"character"}><i>characters</i></ClLinks> in the substring of *string bounded* by *start* and *end*. After the last <ClLinks  term={"character"}><i>character</i></ClLinks> has been supplied, the <GlossaryTerm styled={true} term={"string stream"}><i>string stream</i></GlossaryTerm> will then be at <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm>. 
+Returns an *input string stream*. This <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> will supply, in order, the <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> in the substring of *string bounded* by *start* and *end*. After the last <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> has been supplied, the <GlossaryTerm styled={true} term={"string stream"}><i>string stream</i></GlossaryTerm> will then be at <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm>. 
 
 
 

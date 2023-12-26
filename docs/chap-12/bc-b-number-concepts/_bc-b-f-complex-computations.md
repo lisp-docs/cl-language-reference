@@ -2,7 +2,7 @@
 
 
 
-The following rules apply to <ClLinks  term={"complex"}><i>complex</i></ClLinks> computations: 
+The following rules apply to <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> computations: 
 
 
 

@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"tag"}><i>tag</i></ClLinks>—a <GlossaryTerm styled={true} term={"catch tag"}><i>catch tag</i></GlossaryTerm>; evaluated. 
+<GlossaryTerm  term={"tag"}><i>tag</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"catch tag"}><i>catch tag</i></GlossaryTerm>; evaluated. 
 
 
 
-*result-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
+*result-form*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated as described below. 
 
 
 
@@ -42,11 +42,11 @@ Data and Control
 
 
 
-<DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink> causes a non-local control transfer to a <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> whose tag is <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> to <ClLinks  term={"tag"}><i>tag</i></ClLinks>. 
+<DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink> causes a non-local control transfer to a <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> whose tag is <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> to <GlossaryTerm  term={"tag"}><i>tag</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"tag"}><i>Tag</i></ClLinks> is evaluated first to produce an <ClLinks  term={"object"}><i>object</i></ClLinks> called the throw tag; then *result-form* is evaluated, and its results are saved. If the *result-form* produces multiple values, then all the values are saved. The most recent outstanding <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> whose <ClLinks  term={"tag"}><i>tag</i></ClLinks> is <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> to the throw tag is exited; the saved results are returned as the value or values of <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink>. 
+<GlossaryTerm  term={"tag"}><i>Tag</i></GlossaryTerm> is evaluated first to produce an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> called the throw tag; then *result-form* is evaluated, and its results are saved. If the *result-form* produces multiple values, then all the values are saved. The most recent outstanding <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> whose <GlossaryTerm  term={"tag"}><i>tag</i></GlossaryTerm> is <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> to the throw tag is exited; the saved results are returned as the value or values of <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink>. 
 
 
 
@@ -94,7 +94,7 @@ If there is no outstanding <GlossaryTerm styled={true} term={"catch tag"}><i>cat
 
 
 
-performed, and an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"control-error"}><b>control-error</b></DictionaryLink> is signaled. When the error is signaled, the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> is that which was in force at the point of the <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink>. 
+performed, and an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"control-error"}><b>control-error</b></DictionaryLink> is signaled. When the error is signaled, the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> is that which was in force at the point of the <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink>. 
 
 
 

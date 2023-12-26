@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> &amp;optional *read-only-p → object* 
+<DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> &amp;optional *read-only-p → object* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks  term={"form"}><i>form</i></ClLinks>—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated as described below. 
+<GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; evaluated as described below. 
 
 
 
-*read-only-p*—a <ClLinks  term={"boolean"}><i>boolean</i></ClLinks>; not evaluated. 
+*read-only-p*—a <GlossaryTerm  term={"boolean"}><i>boolean</i></GlossaryTerm>; not evaluated. 
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> resulting from evaluating <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>—the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> resulting from evaluating <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -30,23 +30,23 @@
 
 
 
-<DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink> provides a mechanism for delaying evaluation of <ClLinks  term={"form"}><i>form</i></ClLinks> until the expression is in the run-time environment; see Section 3.2 (Compilation). 
+<DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink> provides a mechanism for delaying evaluation of <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> until the expression is in the run-time environment; see Section 3.2 (Compilation). 
 
 
 
-*Read-only-p* designates whether the result can be considered a <GlossaryTerm styled={true} term={"constant object"}><i>constant object</i></GlossaryTerm>. If <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, the result is a read-only quantity that can, if appropriate to the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>, be copied into read-only space and/or *coalesced* with *similar constant objects* from other <ClLinks  term={"program"}><i>programs</i></ClLinks>. If <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> (the default), the result must be neither copied nor coalesced; it must be considered to be potentially modifiable data. 
+*Read-only-p* designates whether the result can be considered a <GlossaryTerm styled={true} term={"constant object"}><i>constant object</i></GlossaryTerm>. If <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, the result is a read-only quantity that can, if appropriate to the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>, be copied into read-only space and/or *coalesced* with *similar constant objects* from other <GlossaryTerm  term={"program"}><i>programs</i></GlossaryTerm>. If <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> (the default), the result must be neither copied nor coalesced; it must be considered to be potentially modifiable data. 
 
 
 
-If a <DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink> expression is processed by <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink>, the compiler performs its normal semantic processing (such as macro expansion and translation into machine code) on <ClLinks  term={"form"}><i>form</i></ClLinks>, but arranges for the execution of <ClLinks  term={"form"}><i>form</i></ClLinks> to occur at load time in a <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>, with the result of this <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> then being treated as a *literal object* at run time. It is guaranteed that 
+If a <DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink> expression is processed by <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink>, the compiler performs its normal semantic processing (such as macro expansion and translation into machine code) on <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, but arranges for the execution of <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> to occur at load time in a <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>, with the result of this <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> then being treated as a *literal object* at run time. It is guaranteed that 
 
 
 
-the evaluation of <ClLinks  term={"form"}><i>form</i></ClLinks> will take place only once when the <ClLinks  term={"file"}><i>file</i></ClLinks> is *loaded*, but the order of evaluation with respect to the evaluation of <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> in the file is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+the evaluation of <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> will take place only once when the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> is *loaded*, but the order of evaluation with respect to the evaluation of <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> in the file is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
-If a <DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink> expression appears within a function compiled with <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink>, the <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated at compile time in a <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>. The result of this compile-time evaluation is treated as a *literal object* in the compiled code.  
+If a <DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink> expression appears within a function compiled with <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink>, the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is evaluated at compile time in a <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>. The result of this compile-time evaluation is treated as a *literal object* in the compiled code.  
 
 
 
@@ -58,15 +58,15 @@ If a <DictionaryLink  term={"load-time-value"}><b>load-time-value</b></Dictionar
 
 
 
-If a <DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink> expression is processed by <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink>, <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated in a <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>, and one value is returned. Implementations that implicitly compile (or partially compile) expressions processed by <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> might evaluate <ClLinks  term={"form"}><i>form</i></ClLinks> only once, at the time this compilation is performed. 
+If a <DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink> expression is processed by <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink>, <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is evaluated in a <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>, and one value is returned. Implementations that implicitly compile (or partially compile) expressions processed by <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> might evaluate <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> only once, at the time this compilation is performed. 
 
 
 
-If the *same list* (load-time-value <ClLinks  term={"form"}><i>form</i></ClLinks>) is evaluated or compiled more than once, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated only once or is evaluated more than once. This can happen both when an expression being evaluated or compiled shares substructure, and when the *same form* is processed by <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> or <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink> multiple times. Since a <DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink> expression can be referenced in more than one place and can be evaluated multiple times by <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink>, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether each execution returns a fresh <ClLinks  term={"object"}><i>object</i></ClLinks> or returns the same <ClLinks  term={"object"}><i>object</i></ClLinks> as some other execution. Users must use caution when destructively modifying the resulting <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+If the *same list* (load-time-value <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>) is evaluated or compiled more than once, it is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> whether <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is evaluated only once or is evaluated more than once. This can happen both when an expression being evaluated or compiled shares substructure, and when the *same form* is processed by <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> or <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink> multiple times. Since a <DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink> expression can be referenced in more than one place and can be evaluated multiple times by <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink>, it is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> whether each execution returns a fresh <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> or returns the same <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> as some other execution. Users must use caution when destructively modifying the resulting <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-If two lists (load-time-value <ClLinks  term={"form"}><i>form</i></ClLinks>) that are the <ClLinks  term={"same"}><i>same</i></ClLinks> under <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> but are not <ClLinks  term={"identical"}><i>identical</i></ClLinks> are evaluated or compiled, their values always come from distinct evaluations of <ClLinks  term={"form"}><i>form</i></ClLinks>. Their <ClLinks  term={"value"}><i>values</i></ClLinks> may not be coalesced unless *read-only-p* is <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>. 
+If two lists (load-time-value <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>) that are the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> under <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> but are not <GlossaryTerm  term={"identical"}><i>identical</i></GlossaryTerm> are evaluated or compiled, their values always come from distinct evaluations of <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. Their <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> may not be coalesced unless *read-only-p* is <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>. 
 
 
 
@@ -113,7 +113,7 @@ If two lists (load-time-value <ClLinks  term={"form"}><i>form</i></ClLinks>) tha
 
 
 
-<DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink> must appear outside of quoted structure in a “for <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks>” position. In situations which would appear to call for use of <DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink> within a quoted structure, the *backquote reader macro* is probably called for; see Section 2.4.6 (Backquote). 
+<DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink> must appear outside of quoted structure in a “for <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm>” position. In situations which would appear to call for use of <DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink> within a quoted structure, the *backquote reader macro* is probably called for; see Section 2.4.6 (Backquote). 
 
 
 

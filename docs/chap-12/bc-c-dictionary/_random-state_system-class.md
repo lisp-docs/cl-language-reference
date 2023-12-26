@@ -14,11 +14,11 @@
 
 
 
-A *random state object* contains state information used by the pseudo-random number generator. The nature of a *random state object* is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. It can be printed out and successfully read back in by the same <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>, but might not function correctly as a <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm> in another <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+A *random state object* contains state information used by the pseudo-random number generator. The nature of a *random state object* is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. It can be printed out and successfully read back in by the same <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>, but might not function correctly as a <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm> in another <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"implementation"}><i>Implementations</i></ClLinks> are required to provide a read syntax for <ClLinks  term={"object"}><i>objects</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"random-state"}><b>random-state</b></DictionaryLink>, but the specific nature of that syntax is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<GlossaryTerm  term={"implementation"}><i>Implementations</i></GlossaryTerm> are required to provide a read syntax for <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"random-state"}><b>random-state</b></DictionaryLink>, but the specific nature of that syntax is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 

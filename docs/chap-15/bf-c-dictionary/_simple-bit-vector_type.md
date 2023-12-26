@@ -1,4 +1,4 @@
-**simple-bit-vector** <ClLinks  term={"type"}><i>Type</i></ClLinks> 
+**simple-bit-vector** <GlossaryTerm  term={"type"}><i>Type</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> of a <GlossaryTerm styled={true} term={"bit vector"}><i>bit vector</i></GlossaryTerm> that is not displaced to another <ClLinks  term={"array"}><i>array</i></ClLinks>, has no <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , and is not <GlossaryTerm styled={true} term={"expressly adjustable"}><i>expressly adjustable</i></GlossaryTerm> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"simple-bit-vector"}><b>simple-bit-vector</b></DictionaryLink>. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> of a <GlossaryTerm styled={true} term={"bit vector"}><i>bit vector</i></GlossaryTerm> that is not displaced to another <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm>, has no <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , and is not <GlossaryTerm styled={true} term={"expressly adjustable"}><i>expressly adjustable</i></GlossaryTerm> is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"simple-bit-vector"}><b>simple-bit-vector</b></DictionaryLink>. 
 
 
 
@@ -50,7 +50,7 @@ Abbreviating.
 
 
 
-*size*—a non-negative <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>, or the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. The default is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*size*—a non-negative <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm>, or the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> **\***. The default is the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> **\***. 
 
 
 
@@ -58,7 +58,7 @@ Abbreviating.
 
 
 
-This denotes the same type as the <ClLinks  term={"type"}><i>type</i></ClLinks> (simple-array bit (*size*)); that is, the set of <GlossaryTerm styled={true} term={"simple bit vector"}><i>simple bit vectors</i></GlossaryTerm> of size *size*. 
+This denotes the same type as the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> (simple-array bit (*size*)); that is, the set of <GlossaryTerm styled={true} term={"simple bit vector"}><i>simple bit vectors</i></GlossaryTerm> of size *size*. 
 
 
 

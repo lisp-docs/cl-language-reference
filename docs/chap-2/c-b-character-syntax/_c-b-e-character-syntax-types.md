@@ -2,7 +2,7 @@
 
 
 
-The *Lisp reader* constructs an <ClLinks  term={"object"}><i>object</i></ClLinks> from the input text by interpreting each <ClLinks  term={"character"}><i>character</i></ClLinks> according to its <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm>. The *Lisp reader* cannot accept as input everything that the *Lisp printer*  
+The *Lisp reader* constructs an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> from the input text by interpreting each <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> according to its <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm>. The *Lisp reader* cannot accept as input everything that the *Lisp printer*  
 
 
 
@@ -14,7 +14,7 @@ produces, and the *Lisp reader* has features that are not used by the *Lisp prin
 
 
 
-When the *Lisp reader* is invoked, it reads a single character from the *input stream* and dispatches according to the <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm> of that <ClLinks  term={"character"}><i>character</i></ClLinks> . Every <ClLinks  term={"character"}><i>character</i></ClLinks> that can appear in the *input stream* is of one of the <GlossaryTerm styled={true} term={"syntax type"}><i>syntax types</i></GlossaryTerm> shown in Figure 2–6. 
+When the *Lisp reader* is invoked, it reads a single character from the *input stream* and dispatches according to the <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm> of that <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> . Every <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> that can appear in the *input stream* is of one of the <GlossaryTerm styled={true} term={"syntax type"}><i>syntax types</i></GlossaryTerm> shown in Figure 2–6. 
 
 
 
@@ -30,11 +30,11 @@ When the *Lisp reader* is invoked, it reads a single character from the *input s
 
 
 
-The <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm> of a <ClLinks  term={"character"}><i>character</i></ClLinks> in a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> determines how that character is interpreted by the *Lisp reader* while that <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. At any given time, every character has exactly one <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm>. 
+The <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm> of a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> in a <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm> determines how that character is interpreted by the *Lisp reader* while that <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm> is the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. At any given time, every character has exactly one <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm>. 
 
 
 
-Figure 2–7 lists the <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm> of each <ClLinks  term={"character"}><i>character</i></ClLinks> in <GlossaryTerm styled={true} term={"standard syntax"}><i>standard syntax</i></GlossaryTerm> . 
+Figure 2–7 lists the <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm> of each <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"standard syntax"}><i>standard syntax</i></GlossaryTerm> . 
 
 
 
@@ -56,15 +56,15 @@ Figure 2–7 lists the <GlossaryTerm styled={true} term={"syntax type"}><i>synta
 
 
 
-The characters marked with an asterisk (\*) are initially <ClLinks  term={"constituent"}><i>constituents</i></ClLinks>, but they are not used in any standard Common Lisp notations. These characters are explicitly reserved to the <ClLinks  term={"programmer"}><i>programmer</i></ClLinks> . &#126; is not used in Common Lisp, and reserved to implementors. $ and % are <ClLinks  term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>2</sub> <ClLinks  term={"character"}><i>characters</i></ClLinks>, but are not used in the names of any standard Common Lisp <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm>. 
+The characters marked with an asterisk (\*) are initially <GlossaryTerm  term={"constituent"}><i>constituents</i></GlossaryTerm>, but they are not used in any standard Common Lisp notations. These characters are explicitly reserved to the <GlossaryTerm  term={"programmer"}><i>programmer</i></GlossaryTerm> . &#126; is not used in Common Lisp, and reserved to implementors. $ and % are <GlossaryTerm  term={"alphabetic"}><i>alphabetic</i></GlossaryTerm><sub>2</sub> <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm>, but are not used in the names of any standard Common Lisp <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"whitespace"}><i>Whitespace</i></ClLinks><sub>2</sub> characters serve as separators but are otherwise ignored. <ClLinks  term={"constituent"}><i>Constituent</i></ClLinks> and *escape characters* are accumulated to make a <ClLinks  term={"token"}><i>token</i></ClLinks>, which is then interpreted as a <ClLinks  term={"number"}><i>number</i></ClLinks> or <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. <GlossaryTerm styled={true} term={"macro character"}><i>Macro characters</i></GlossaryTerm> trigger the invocation of <ClLinks  term={"function"}><i>functions</i></ClLinks> (possibly user-supplied) that can perform arbitrary parsing actions. <GlossaryTerm styled={true} term={"macro character"}><i>Macro characters</i></GlossaryTerm> are divided into two kinds, <ClLinks  term={"terminating"}><i>terminating</i></ClLinks> and *non* 
+<GlossaryTerm  term={"whitespace"}><i>Whitespace</i></GlossaryTerm><sub>2</sub> characters serve as separators but are otherwise ignored. <GlossaryTerm  term={"constituent"}><i>Constituent</i></GlossaryTerm> and *escape characters* are accumulated to make a <GlossaryTerm  term={"token"}><i>token</i></GlossaryTerm>, which is then interpreted as a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> or <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"macro character"}><i>Macro characters</i></GlossaryTerm> trigger the invocation of <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> (possibly user-supplied) that can perform arbitrary parsing actions. <GlossaryTerm styled={true} term={"macro character"}><i>Macro characters</i></GlossaryTerm> are divided into two kinds, <GlossaryTerm  term={"terminating"}><i>terminating</i></GlossaryTerm> and *non* 
 
 
 
-<ClLinks  term={"terminating"}><i>terminating</i></ClLinks>, depending on whether or not they terminate a <ClLinks  term={"token"}><i>token</i></ClLinks>. The following are descriptions of each kind of <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm>. 
+<GlossaryTerm  term={"terminating"}><i>terminating</i></GlossaryTerm>, depending on whether or not they terminate a <GlossaryTerm  term={"token"}><i>token</i></GlossaryTerm>. The following are descriptions of each kind of <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm>. 
 
 
 

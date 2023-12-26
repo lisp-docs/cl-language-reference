@@ -1,4 +1,4 @@
-**zerop** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**zerop** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"number"}><i>number</i></ClLinks>—a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>—a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"number"}><i>number</i></ClLinks> is zero (*integer* , <ClLinks  term={"float"}><i>float</i></ClLinks>, or <ClLinks  term={"complex"}><i>complex</i></ClLinks> ); otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is zero (*integer* , <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>, or <GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm> ); otherwise, returns <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-Regardless of whether an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> provides distinct representations for positive and negative floating-point zeros, (zerop -0.0) always returns <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+Regardless of whether an <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> provides distinct representations for positive and negative floating-point zeros, (zerop -0.0) always returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. 
 
 
 
@@ -54,7 +54,7 @@ Regardless of whether an <ClLinks  term={"implementation"}><i>implementation</i>
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+Should signal an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> is not a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> . 
 
 
 
@@ -62,7 +62,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <Diction
 
 
 
-(zerop <ClLinks  term={"number"}><i>number</i></ClLinks>) *≡* (= <ClLinks  term={"number"}><i>number</i></ClLinks> 0) 
+(zerop <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>) *≡* (= <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> 0) 
 
 
 

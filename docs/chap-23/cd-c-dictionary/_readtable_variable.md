@@ -1,4 +1,4 @@
-*∗<ClLinks  term={"readtable"}><b><ClLinks  term={"readtable"}><i>readtable</i></ClLinks></b></ClLinks>∗ Variable* 
+*∗<ClLinks  term={"readtable"}><b><GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm></b></ClLinks>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
+a <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm>. 
 
 
 
@@ -14,7 +14,7 @@ a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>.
 
 
 
-A <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> that conforms to the description of Common Lisp syntax in Chapter 2 (Syntax). 
+A <GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm> that conforms to the description of Common Lisp syntax in Chapter 2 (Syntax). 
 
 
 
@@ -22,7 +22,7 @@ A <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> that conforms to the d
 
 
 
-The <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"readtable"}><b>\*readtable\*</b></DictionaryLink> is called the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. It controls the parsing behavior of the *Lisp reader* , and can also influence the *Lisp printer* (*e.g.*, see the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"readtable-case"}><b>readtable-case</b></DictionaryLink>). 
+The <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink  term={"readtable"}><b>\*readtable\*</b></DictionaryLink> is called the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. It controls the parsing behavior of the *Lisp reader* , and can also influence the *Lisp printer* (*e.g.*, see the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"readtable-case"}><b>readtable-case</b></DictionaryLink>). 
 
 
 

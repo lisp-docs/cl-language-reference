@@ -1,4 +1,4 @@
-**values** <ClLinks  term={"accessor"}><i>Accessor</i></ClLinks> 
+**values** <GlossaryTerm  term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -10,7 +10,7 @@
 
 
 
-**(setf (values** &amp;rest <ClLinks  term={"place"}><i>place</i></ClLinks>**)** *new-values***)** 
+**(setf (values** &amp;rest <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>**)** *new-values***)** 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"place"}><i>place</i></ClLinks>—a <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+<GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>—a <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>. 
 
 
 
-*new-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+*new-value*—an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<DictionaryLink  term={"values"}><b>values</b></DictionaryLink> returns the <ClLinks  term={"object"}><i>objects</i></ClLinks> as <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub>. 
+<DictionaryLink  term={"values"}><b>values</b></DictionaryLink> returns the <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> as <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub>. 
 
 
 
-<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"values"}><b>values</b></DictionaryLink> is used to store the <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub> *new-values* into the <ClLinks  term={"place"}><i>places</i></ClLinks>. See Section 5.1.2.3 (VALUES Forms as Places). 
+<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"values"}><b>values</b></DictionaryLink> is used to store the <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub> *new-values* into the <GlossaryTerm  term={"place"}><i>places</i></GlossaryTerm>. See Section 5.1.2.3 (VALUES Forms as Places). 
 
 
 
@@ -75,7 +75,7 @@ This works because **values** returns exactly one value for each of *args*; as f
 
 
 
-Since <DictionaryLink  term={"values"}><b>values</b></DictionaryLink> is a <ClLinks  term={"function"}><i>function</i></ClLinks>, not a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm>, it receives as <ClLinks  term={"argument"}><i>arguments</i></ClLinks> only the <GlossaryTerm styled={true} term={"primary value"}><i>primary values</i></GlossaryTerm> of its *argument forms*. 
+Since <DictionaryLink  term={"values"}><b>values</b></DictionaryLink> is a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>, not a <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm>, it receives as <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> only the <GlossaryTerm styled={true} term={"primary value"}><i>primary values</i></GlossaryTerm> of its *argument forms*. 
 
 
 

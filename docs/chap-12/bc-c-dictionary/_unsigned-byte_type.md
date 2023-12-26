@@ -1,4 +1,4 @@
-**unsigned-byte** <ClLinks  term={"type"}><i>Type</i></ClLinks> 
+**unsigned-byte** <GlossaryTerm  term={"type"}><i>Type</i></GlossaryTerm> 
 
 
 
@@ -54,7 +54,7 @@ This denotes the set of non-negative <i>integers</i> that can be represented in 
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> (unsigned-byte 1) is also called <DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink>. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> (unsigned-byte 1) is also called <DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink>. 
 
 
 

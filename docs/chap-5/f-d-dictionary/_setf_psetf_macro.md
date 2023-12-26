@@ -1,4 +1,4 @@
-**setf, psetf** <ClLinks  term={"macro"}><i>Macro</i></ClLinks> 
+**setf, psetf** <GlossaryTerm  term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -38,15 +38,15 @@ Data and Control
 
 
 
-<ClLinks  term={"place"}><i>place</i></ClLinks>—a <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+<GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>—a <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>. 
 
 
 
-*newvalue*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+*newvalue*—a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-*results*—the *multiple values*<sub>2</sub> returned by the storing form for the last <ClLinks  term={"place"}><i>place</i></ClLinks>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if there are no *pairs*. 
+*results*—the *multiple values*<sub>2</sub> returned by the storing form for the last <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if there are no *pairs*. 
 
 
 
@@ -54,11 +54,11 @@ Data and Control
 
 
 
-<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> changes the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"place"}><i>place</i></ClLinks> to be *newvalue*. 
+<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> changes the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> to be *newvalue*. 
 
 
 
-(setf place newvalue) expands into an update form that stores the result of evaluating *newvalue* into the location referred to by <ClLinks  term={"place"}><i>place</i></ClLinks>. Some <ClLinks  term={"place"}><i>place</i></ClLinks> forms involve uses of accessors that take optional arguments. Whether those optional arguments are permitted by <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink>, or what their use is, is up to the <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> expander function and is not under the control of <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink>. The documentation for any <ClLinks  term={"function"}><i>function</i></ClLinks> that accepts **&amp;optional**, **&amp;rest**, or &amp;key arguments and that claims to be usable with <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> must specify how those arguments are treated. 
+(setf place newvalue) expands into an update form that stores the result of evaluating *newvalue* into the location referred to by <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>. Some <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> forms involve uses of accessors that take optional arguments. Whether those optional arguments are permitted by <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink>, or what their use is, is up to the <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> expander function and is not under the control of <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink>. The documentation for any <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> that accepts **&amp;optional**, **&amp;rest**, or &amp;key arguments and that claims to be usable with <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> must specify how those arguments are treated. 
 
 
 
@@ -102,7 +102,7 @@ is precisely equivalent to
 
 
 
-For <DictionaryLink  term={"psetf"}><b>psetf</b></DictionaryLink>, if more than one *pair* is supplied then the assignments of new values to places are done in parallel. More precisely, all <ClLinks  term={"subform"}><i>subforms</i></ClLinks> (in both the <ClLinks  term={"place"}><i>place</i></ClLinks> and *newvalue forms*) that are to be evaluated are evaluated from left to right; after all evaluations have been performed, all of the assignments are performed in an unpredictable order. 
+For <DictionaryLink  term={"psetf"}><b>psetf</b></DictionaryLink>, if more than one *pair* is supplied then the assignments of new values to places are done in parallel. More precisely, all <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> (in both the <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> and *newvalue forms*) that are to be evaluated are evaluated from left to right; after all evaluations have been performed, all of the assignments are performed in an unpredictable order. 
 
 
 

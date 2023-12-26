@@ -1,4 +1,4 @@
-**simple-base-string** <ClLinks  term={"type"}><i>Type</i></ClLinks> 
+**simple-base-string** <GlossaryTerm  term={"type"}><i>Type</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"simple-base-string"}><b>simple-base-string</b></DictionaryLink> is equivalent to (simple-array base-char (\*)). 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"simple-base-string"}><b>simple-base-string</b></DictionaryLink> is equivalent to (simple-array base-char (\*)). 
 
 
 
@@ -38,7 +38,7 @@ Abbreviating.
 
 
 
-*size*—a non-negative <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>, or the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*size*—a non-negative <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm>, or the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> **\***. 
 
 
 

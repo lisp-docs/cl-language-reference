@@ -39,7 +39,7 @@ Each entry in this glossary has the following parts:
 
 
 
-– an optional context, present if this definition is meaningful only in that context. For example, “(of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>)”. 
+– an optional context, present if this definition is meaningful only in that context. For example, “(of a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>)”. 
 
 
 
@@ -59,7 +59,7 @@ Words in *this font* are words with entries in the glossary. Words in example se
 
 
 
-When an ambiguity arises, the longest matching substring has precedence. For example, “<GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>” refers to a single glossary entry for “<GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>” rather than the combined meaning of the glossary terms “<ClLinks  term={"complex"}><i>complex</i></ClLinks>” and “<ClLinks  term={"float"}><i>float</i></ClLinks>.” 
+When an ambiguity arises, the longest matching substring has precedence. For example, “<GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>” refers to a single glossary entry for “<GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>” rather than the combined meaning of the glossary terms “<GlossaryTerm  term={"complex"}><i>complex</i></GlossaryTerm>” and “<GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm>.” 
 
 
 
@@ -99,7 +99,7 @@ The following are abbreviations used in the glossary:
 
 
 
-**()** [ <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> ], *n.* an alternative notation for writing the symbol <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, used to emphasize the use of <ClLinks  term={"nil"}><i>nil</i></ClLinks> as an <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. 
+**()** [ <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> ], *n.* an alternative notation for writing the symbol <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, used to emphasize the use of <GlossaryTerm  term={"nil"}><i>nil</i></GlossaryTerm> as an <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. 
 
 
 

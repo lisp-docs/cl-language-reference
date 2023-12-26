@@ -6,7 +6,7 @@
 
 
 
-one of the <GlossaryTerm styled={true} term={"atomic type specifier"}><i>atomic type specifiers</i></GlossaryTerm> <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>, <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>, <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink>, or <DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink>, or else some other <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be acceptable. 
+one of the <GlossaryTerm styled={true} term={"atomic type specifier"}><i>atomic type specifiers</i></GlossaryTerm> <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>, <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>, <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink>, or <DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink>, or else some other <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> defined by the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> to be acceptable. 
 
 
 
@@ -26,7 +26,7 @@ one of the <GlossaryTerm styled={true} term={"atomic type specifier"}><i>atomic 
 
 
 
-The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>. 
+The <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>. 
 
 
 
@@ -62,7 +62,7 @@ a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolea
 
 
 
-<ClLinks  term={"true"}><i>true</i></ClLinks>. 
+<GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. 
 
 
 
@@ -70,7 +70,7 @@ a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolea
 
 
 
-If it is <ClLinks  term={"true"}><i>true</i></ClLinks>, the #. <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm> has its normal effect. Otherwise, that <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"reader-error"}><b>reader-error</b></DictionaryLink>. 
+If it is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, the #. <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm> has its normal effect. Otherwise, that <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm> signals an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"reader-error"}><b>reader-error</b></DictionaryLink>. 
 
 
 
@@ -86,7 +86,7 @@ If it is <ClLinks  term={"true"}><i>true</i></ClLinks>, the #. <GlossaryTerm sty
 
 
 
-If **\*read-eval\*** is <ClLinks  term={"false"}><i>false</i></ClLinks> and <DictionaryLink  term={"print-readably"}><b>\*print-readably\*</b></DictionaryLink> is <ClLinks  term={"true"}><i>true</i></ClLinks>, any <ClLinks  term={"method"}><i>method</i></ClLinks> for <DictionaryLink  term={"print-object"}><b>print-object</b></DictionaryLink> that would output a reference to the #. <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm> either outputs something different or signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"print-not-readable"}><b>print-not-readable</b></DictionaryLink>. 
+If **\*read-eval\*** is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm> and <DictionaryLink  term={"print-readably"}><b>\*print-readably\*</b></DictionaryLink> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, any <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm> for <DictionaryLink  term={"print-object"}><b>print-object</b></DictionaryLink> that would output a reference to the #. <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm> either outputs something different or signals an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"print-not-readable"}><b>print-not-readable</b></DictionaryLink>. 
 
 
 

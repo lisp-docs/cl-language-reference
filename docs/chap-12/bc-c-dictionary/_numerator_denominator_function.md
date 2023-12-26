@@ -1,4 +1,4 @@
-**numerator, denominator** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+**numerator, denominator** <GlossaryTerm  term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"rational"}><i>rational</i></ClLinks>—a <ClLinks  term={"rational"}><i>rational</i></ClLinks>. 
+<GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm>—a <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm>. 
 
 
 
@@ -34,15 +34,15 @@
 
 
 
-<DictionaryLink  term={"numerator"}><b>numerator</b></DictionaryLink> and <DictionaryLink  term={"denominator"}><b>denominator</b></DictionaryLink> reduce <ClLinks  term={"rational"}><i>rational</i></ClLinks> to canonical form and compute the numerator or denominator of that number. 
+<DictionaryLink  term={"numerator"}><b>numerator</b></DictionaryLink> and <DictionaryLink  term={"denominator"}><b>denominator</b></DictionaryLink> reduce <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm> to canonical form and compute the numerator or denominator of that number. 
 
 
 
-<DictionaryLink  term={"numerator"}><b>numerator</b></DictionaryLink> and <DictionaryLink  term={"denominator"}><b>denominator</b></DictionaryLink> return the numerator or denominator of the canonical form of <ClLinks  term={"rational"}><i>rational</i></ClLinks>. 
+<DictionaryLink  term={"numerator"}><b>numerator</b></DictionaryLink> and <DictionaryLink  term={"denominator"}><b>denominator</b></DictionaryLink> return the numerator or denominator of the canonical form of <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm>. 
 
 
 
-If <ClLinks  term={"rational"}><i>rational</i></ClLinks> is an *integer* , <DictionaryLink  term={"numerator"}><b>numerator</b></DictionaryLink> returns <ClLinks  term={"rational"}><i>rational</i></ClLinks> and <DictionaryLink  term={"denominator"}><b>denominator</b></DictionaryLink> returns 1. 
+If <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm> is an *integer* , <DictionaryLink  term={"numerator"}><b>numerator</b></DictionaryLink> returns <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm> and <DictionaryLink  term={"denominator"}><b>denominator</b></DictionaryLink> returns 1. 
 
 
 

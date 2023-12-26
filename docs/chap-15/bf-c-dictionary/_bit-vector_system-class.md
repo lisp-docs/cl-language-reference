@@ -14,11 +14,11 @@
 
 
 
-A <GlossaryTerm styled={true} term={"bit vector"}><i>bit vector</i></GlossaryTerm> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of which is <ClLinks  term={"bit"}><i>bit</i></ClLinks>. 
+A <GlossaryTerm styled={true} term={"bit vector"}><i>bit vector</i></GlossaryTerm> is a <GlossaryTerm  term={"vector"}><i>vector</i></GlossaryTerm> the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of which is <GlossaryTerm  term={"bit"}><i>bit</i></GlossaryTerm>. 
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"bit-vector"}><b>bit-vector</b></DictionaryLink> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>, for <DictionaryLink  term={"bit-vector"}><b>bit-vector</b></DictionaryLink> means (vector bit). 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"bit-vector"}><b>bit-vector</b></DictionaryLink> is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>, for <DictionaryLink  term={"bit-vector"}><b>bit-vector</b></DictionaryLink> means (vector bit). 
 
 
 
@@ -42,7 +42,7 @@ Abbreviating.
 
 
 
-*size*—a non-negative <ClLinks  term={"fixnum"}><i>fixnum</i></ClLinks>, or the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*size*—a non-negative <GlossaryTerm  term={"fixnum"}><i>fixnum</i></GlossaryTerm>, or the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> **\***. 
 
 
 
@@ -50,7 +50,7 @@ Abbreviating.
 
 
 
-This denotes the same <ClLinks  term={"type"}><i>type</i></ClLinks> as the <ClLinks  term={"type"}><i>type</i></ClLinks> (array bit (*size*)); that is, the set of <GlossaryTerm styled={true} term={"bit vector"}><i>bit vectors</i></GlossaryTerm> of size *size*. 
+This denotes the same <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> as the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> (array bit (*size*)); that is, the set of <GlossaryTerm styled={true} term={"bit vector"}><i>bit vectors</i></GlossaryTerm> of size *size*. 
 
 
 

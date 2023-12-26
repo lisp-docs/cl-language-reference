@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"standard-method"}><b>standard-method</b></DictionaryLink> is the default <ClLinks  term={"class"}><i>class</i></ClLinks> of <ClLinks  term={"method"}><i>methods</i></ClLinks> defined by the <DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> and <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink> <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+The <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink  term={"standard-method"}><b>standard-method</b></DictionaryLink> is the default <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> of <GlossaryTerm  term={"method"}><i>methods</i></GlossaryTerm> defined by the <DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> and <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. 
 
 
 

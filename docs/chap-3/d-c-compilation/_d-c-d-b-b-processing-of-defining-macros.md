@@ -2,7 +2,7 @@
 
 
 
-Defining <ClLinks  term={"macro"}><i>macros</i></ClLinks> (such as <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> or <DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink>) appearing within a file being processed by <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> normally have compile-time side effects which affect how subsequent <ClLinks  term={"form"}><i>forms</i></ClLinks> in the same <ClLinks  term={"file"}><i>file</i></ClLinks> are compiled. A convenient model for explaining how these side effects happen is that the defining macro expands into one or more <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> <ClLinks  term={"form"}><i>forms</i></ClLinks>, and that the calls which cause the compile-time side effects to happen appear in the body of an (eval-when (:compile-toplevel) ...) <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+Defining <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm> (such as <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> or <DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink>) appearing within a file being processed by <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> normally have compile-time side effects which affect how subsequent <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in the same <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> are compiled. A convenient model for explaining how these side effects happen is that the defining macro expands into one or more <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>, and that the calls which cause the compile-time side effects to happen appear in the body of an (eval-when (:compile-toplevel) ...) <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -10,7 +10,7 @@ The compile-time side effects may cause information about the definition to be s
 
 
 
-In particular, the information stored by the defining <ClLinks  term={"macro"}><i>macros</i></ClLinks> at compile time might or might not be available to the interpreter (either during or after compilation), or during subsequent calls to the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> . For example, the following code is nonportable because it assumes that the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> stores the macro definition of foo where it is available to the interpreter: 
+In particular, the information stored by the defining <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm> at compile time might or might not be available to the interpreter (either during or after compilation), or during subsequent calls to the <GlossaryTerm  term={"compiler"}><i>compiler</i></GlossaryTerm> . For example, the following code is nonportable because it assumes that the <GlossaryTerm  term={"compiler"}><i>compiler</i></GlossaryTerm> stores the macro definition of foo where it is available to the interpreter: 
 
 
 
@@ -26,7 +26,7 @@ In particular, the information stored by the defining <ClLinks  term={"macro"}><
 
 
 
-A portable way to do the same thing would be to include the macro definition inside the <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>, as in: 
+A portable way to do the same thing would be to include the macro definition inside the <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, as in: 
 
 
 
@@ -42,7 +42,7 @@ A portable way to do the same thing would be to include the macro definition ins
 
 
 
-Figure 3–8 lists macros that make definitions available both in the compilation and run-time <ClLinks  term={"environment"}><i>environments</i></ClLinks>. It is not specified whether definitions made available in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> are available in the evaluation <ClLinks  term={"environment"}><i>environment</i></ClLinks>, nor is it specified whether they are available in subsequent compilation units or subsequent invocations of the compiler. As with <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink>, these compile-time side effects happen only when the defining macros appear at top level. 
+Figure 3–8 lists macros that make definitions available both in the compilation and run-time <GlossaryTerm  term={"environment"}><i>environments</i></GlossaryTerm>. It is not specified whether definitions made available in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> are available in the evaluation <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm>, nor is it specified whether they are available in subsequent compilation units or subsequent invocations of the compiler. As with <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink>, these compile-time side effects happen only when the defining macros appear at top level. 
 
 
 

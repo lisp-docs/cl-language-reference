@@ -14,4 +14,4 @@
 
 
 
-All *classes* defined by means of <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> are <ClLinks  term={"instance"}><i>instances</i></ClLinks> of the <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"structure-class"}><b>structure-class</b></DictionaryLink>. 
+All *classes* defined by means of <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> are <GlossaryTerm  term={"instance"}><i>instances</i></GlossaryTerm> of the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink  term={"structure-class"}><b>structure-class</b></DictionaryLink>. 

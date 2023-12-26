@@ -7,7 +7,7 @@ sidebar_position: 121
 
 
 
-**yield** *v.t.* (<ClLinks  term={"value"}><i>values</i></ClLinks>) to produce the <ClLinks  term={"value"}><i>values</i></ClLinks> as the result of <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks>. “The form (+ 2 3) yields 5.” 
+**yield** *v.t.* (<GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm>) to produce the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> as the result of <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm>. “The form (+ 2 3) yields 5.” 
 
 
 
